@@ -1,0 +1,155 @@
+@prefix :       <https://noordergraf.rug.nl/pred/> .
+@prefix t:      <https://noordergraf.rug.nl/type/> .
+@prefix u:      <https://noordergraf.rug.nl/unit/> .
+@prefix pic:    <https://noordergraf.rug.nl/pic/> .
+@prefix place:  <https://noordergraf.rug.nl/place/> .
+@prefix site:   <https://noordergraf.rug.nl/site/> .
+@prefix item:   <https://noordergraf.rug.nl/item/> .
+@prefix cc:     <https://creativecommons.org/licenses/> .
+@prefix schema: <https://schema.org/> .
+
+site:gr9722esserveld a t:burial_site.n.01 ;
+  :unit u:site ;
+  :sitename "Esserveld" ;
+  :osm <https://www.openstreetmap.org/way/94706315> ;
+  :wikidata <https://www.wikidata.org/entity/Q2334369> ;
+  :geonames <https://www.geonames.org/6951304/esserveld.html> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Esserweg 22" ;
+    schema:addressLocality "Groningen" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9722 SN"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.190563 ;
+    schema:longitude 6.593812
+  ] .
+
+place:Garnwerd2755726 a <https://www.geonames.org/ontology#P.PPL> ;
+  :unit u:place ;
+  :placename "Garnwerd" ;
+  :geonames <https://www.geonames.org/2755726/garnwerd.html> ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.3042 ;
+    schema:longitude 6.4931
+  ] .
+
+place:Groningen2755251 a <https://www.geonames.org/ontology#P.PPLA> ;
+  :unit u:place ;
+  :placename "Groningen" ;
+  :geonames <https://www.geonames.org/2755251/groningen.html> ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2192 ;
+    schema:longitude 6.5667
+  ] .
+
+place:SintAnnen2747294 a <https://www.geonames.org/ontology#P.PPL> ;
+  :unit u:place ;
+  :placename "Sint Annen" ;
+  :geonames <https://www.geonames.org/2747294/sint-annen.html> ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2975 ;
+    schema:longitude 6.6653
+  ] .
+
+###
+### t00011
+###
+
+item:t00011 a t:tombstone.n.01 ;
+  :unit u:item ;
+  :image pic:p00011 ;
+  :site site:gr9722esserveld ;
+  :text "rustplaats / van / lammert leertouwer / geb. 1 maart 1877 / overl. 4 dec. 1938 / echtegenoot van g. krol / en / geesje krol / geb. 8 maart 1876 / overl. 28 sept. 1961" ;
+  :sym item:t00011.s1 ;
+  :ent item:t00011.p1 ,
+       item:t00011.p2 .
+
+item:t00011.s1 a t:frond.n.01 .
+
+item:t00011.p1 a t:male.n.02 ;
+  :unit u:person ;
+  :nam "LAMMERT LEERTOUWER" ;
+  :dob "1877-03-01" ;
+  :dod "1938-12-04" ;
+  :rol [
+    a t:husband.n.01 ;
+    :tgt item:t00011.p2
+  ] .
+
+item:t00011.p2 a t:female.n.02 ;
+  :unit u:person ;
+  :nam "GEESJE KROL" ;
+  :dob "1876-03-08" ;
+  :dod "1961-09-28" .
+
+pic:p00011 a t:photo.n.1 ;
+  :unit u:pic ;
+  :file "t00011.jpg" ;
+  :mime "image/jpeg" ;
+  :date "2019-09-25 16:38:17" ;
+  :lat 53.1910 ;
+  :lon 6.5930 ;
+  :credit "J. Doe" ;
+  :license cc:by\/4.0\/ .
+
+###
+### t00013
+###
+
+item:t00013 a t:tombstone.n.01 ;
+  :unit u:item ;
+  :image pic:p00013 ;
+  :site site:gr9722esserveld ;
+  :text "rustplaats / van / anje smit / geb. 14 dec. 1895 / te garnwerd / overl. 10 juni. 1931 / te groningen / en / helena reitsema / geb. 19 maart 1864 / te garnwerd / overl. 11 mei 1936 / te groningen / echtg. van / baltus smit / geb. 11 nov. 1862 / te sint annen / overl. 9 febr. 1948 / te groningen" ;
+  :ent item:t00013.p1 ,
+       item:t00013.p2 ,
+       item:t00013.p3 ;
+  :sym item:t00013.s1 .
+
+item:t00013.p1 a t:female.n.02 ;
+  :unit u:person ;
+  :dob "1895-12-14" ;
+  :dod "1931-06-10" ;
+  :nam "ANJE SMIT" ;
+  :pob place:Garnwerd2755726 ;
+  :pod place:Groningen2755251 .
+
+item:t00013.p2 a t:female.n.02 ;
+  :unit u:person ;
+  :dob "1864-03-19" ;
+  :dod "1936-05-11" ;
+  :nam "HELENA REITSMA" ;
+  :pob place:Garnwerd2755726 ;
+  :pod place:Groningen2755251 ;
+  :rol item:t00013.r1 .
+
+item:t00013.p3 a t:male.n.02 ;
+  :unit u:person ;
+  :dob "1862-11-11" ;
+  :dod "1948-02-09" ;
+  :nam "BALTUS SMIT" ;
+  :pob place:SintAnnen2747294 ;
+  :pod place:Groningen2755251 .
+
+item:t00013.r1 a t:wife.n.01 ;
+  :tgt item:t00013.p3 .
+
+item:t00013.s1 a t:frond.n.01 .
+
+pic:p00013 a t:photo.n.1 ;
+  :unit u:pic ;
+  :file "t00013.jpg" ;
+  :mime "image/jpeg" ;
+  :date "2019-09-25 16:48:54" ;
+  :lat 53.1901 ;
+  :lon 6.5927 ;
+  :credit "J. Doe" ;
+  :license cc:by\/4.0\/ .
+

@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+
+'''
+
+import installeren:
+
+    pip3 install --user penman
+
+'''
+
+import re, os, sys
+
+reDatum = re.compile('(\d\d)-(\d\d)-(\d\d\d\d)')
+
+sys.stdout.write('''
+@prefix :     <https://noordergraf.rug.nl/pred/> .
+@prefix t:    <https://noordergraf.rug.nl/type/> .
+@prefix u:    <https://noordergraf.rug.nl/unit/> .
+@prefix item: <https://noordergraf.rug.nl/item/> .
+@prefix pic:  <https://noordergraf.rug.nl/pic/> .
+@prefix site: <https://noordergraf.rug.nl/site/> .
+@prefix schema: <https://schema.org/> .
+
+''')
+
+import penman
+from penman import constant
+
+def process(txt):
+    base = txt.split(maxsplit=1)[0][1:]
+    sys.stdout.write('###\n### ' + base + '\n###\n\n')
+
+    hasPic = False
+    try:
+        fp = open('../../pics/p' + base[1:] + '.ttl')
+        pic = fp.read()
+        fp.close()
+        hasPic = True
+    except:
+        pass
+
+    g = penman.decode(txt)
+
+    base = g.instances()[0].source
+
+    lines = []
+
+    for src, _, tgt in g.instances():
+        if src != base:
+            src = base + '.' + src
+        lines.append('item:{}  a t:{}'.format(src, tgt))
+
+    for src, role, tgt in g.attributes():
+        if src != base:
+            src = base + '.' + src
+        if constant.type(tgt) == constant.SYMBOL:
+            tgt = 'item:{}.{}'.format(base, tgt)
+        elif constant.type(tgt) == constant.STRING:
+            tgt = tgt.replace('\\', '\\\\')
+            if role == ':dob' or role == ':dod':
+                tgt = reDatum.sub('\\3-\\2-\\1', tgt)
+        lines.append('item:{} {} {}'.format(src, role, tgt))
+
+    for src, role, tgt in g.edges():
+        if src != base:
+            src = base + '.' + src
+        if tgt != base:
+            tgt = base + '.' + tgt
+        lines.append('item:{} {} item:{}'.format(src, role, tgt))
+
+    lines.sort()
+    prev = ''
+    prev2 = ''
+    first = True
+    for line in  lines:
+        a, b, c = line.split(maxsplit=2)
+        if a == prev:
+            if b == prev2:
+                sys.stdout.write(' ,\n       ' + c)
+            else:
+                sys.stdout.write(' ;\n  ' + b + ' ' + c)
+            prev2 = b
+        else:
+            prev2 = ''
+            if prev != '':
+                sys.stdout.write(' .\n\n')
+            sys.stdout.write(a + ' ' + b + ' ' + c)
+            prev = a
+        if first:
+            first = False
+            sys.stdout.write(' ;\n  :unit u:item')
+            if hasPic:
+                sys.stdout.write(' ;\n  :image pic:p' + base[1:])
+            prev2 = ''
+        else:
+            if b == 'a':
+                if c == 't:person.n.01' or c == 't:male.n.02' or c == 't:female.n.02':
+                    sys.stdout.write(' ;\n  :unit u:person')
+                    prev2 = ''
+    sys.stdout.write(' .\n\n')
+
+    #if hasPic:
+    #    sys.stdout.write(pic)
+
+
+fp = open(sys.argv[1])
+lines = []
+for line in fp:
+    if line.strip() == '':
+        if len(lines) > 0:
+            process(''.join(lines))
+        lines = []
+    else:
+        lines.append(' '.join(line.split()) + '\n')
+fp.close()
+if len(lines) > 0:
+    process(''.join(lines))
