@@ -5,6 +5,7 @@
 # Kerkhoflaan                       Emmen                Drenthe
 
 site:dr7811emmen a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Kerkhoflaan, Emmen" ;
   :osm <https://www.openstreetmap.org/way/6410897> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -26,6 +27,7 @@ site:dr7811emmen a t:burial_site.n.01 ;
 # Zuiderweg                         Hoogeveen            Drenthe
 
 site:dr7907hoogeveen a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Zuiderweg, Hoogeveen" ;
   schema:address [
     a schema:PostalAddress ;
@@ -45,6 +47,7 @@ site:dr7907hoogeveen a t:burial_site.n.01 ;
 # Boerdijk                          Nieuw-Amsterdam      Drenthe
 
 site:dr7844veenoord a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Boerdijk, Veenoord" ;
   schema:address [
     a schema:PostalAddress ;
@@ -64,6 +67,7 @@ site:dr7844veenoord a t:burial_site.n.01 ;
 # Boterakkersweg                    Sleen                Drenthe
 
 site:dr7841sleen a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Algemene Begraafplaats Sleen" ;
   schema:address [
     a schema:PostalAddress ;
@@ -82,6 +86,7 @@ site:dr7841sleen a t:burial_site.n.01 ;
 # Eswal                             Vries                Drenthe
 
 site:dr9481vries a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Esakkers, Vries" ;
   #:osm <https://www.openstreetmap.org/way/> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -103,6 +108,7 @@ site:dr9481vries a t:burial_site.n.01 ;
 # Kerkstraat                        Beerta               Groningen
 
 site:gr9686beerta a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Kerkstraat, Beerta" ;
   #:osm <https://www.openstreetmap.org/way/> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -125,6 +131,7 @@ site:gr9686beerta a t:burial_site.n.01 ;
 # Sebastiaankerk                    Bierum               Groningen
 
 site:gr9906bierum a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Sebastiaankerk, Bierum" ;
   #:osm <https://www.openstreetmap.org/way/> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -146,6 +153,7 @@ site:gr9906bierum a t:burial_site.n.01 ;
 # Engelberterweg                    Engelbert            Groningen
 
 site:gr9723engelbert a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Engelberterweg, Engelbert" ;
   #:osm <https://www.openstreetmap.org/way/> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -167,6 +175,7 @@ site:gr9723engelbert a t:burial_site.n.01 ;
 # Kerk van Heveskes                 Farmsum              Groningen
 
 site:gr9936farmsum a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Kerk van Heveskes, Farmsum" ;
   #:osm <https://www.openstreetmap.org/way/> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -188,6 +197,7 @@ site:gr9936farmsum a t:burial_site.n.01 ;
 # Kerk Garmerwolde                  Garmerwolde          Groningen
 
 site:gr9798garmerwolde a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Kerk Garmerwolde" ;
   #:osm <https://www.openstreetmap.org/way/> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -209,6 +219,7 @@ site:gr9798garmerwolde a t:burial_site.n.01 ;
 # Esserveld                         Groningen            Groningen
 
 site:gr9722groningen a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Esserveld, Groningen" ;
   :osm <https://www.openstreetmap.org/way/94706315> ;
   :wikidata <https://www.wikidata.org/entity/Q2334369> ;
@@ -229,133 +240,140 @@ site:gr9722groningen a t:burial_site.n.01 ;
 
 # Zuiderbegraafplaats               Groningen            Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9725groningen a t:burial_site.n.01 ;
+  :unit u:site ;
+  :sitename "Zuiderbegraafplaats, Groningen" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Hereweg 87" ;
+    schema:addressLocality "Groningen" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9725 AC"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2061 ;
+    schema:longitude 6.5719
+  ] .
 
 # Noorderbegraafplaats              Groningen            Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9741acgroningen a t:burial_site.n.01 ;
+  :unit u:site ;
+  :sitename "Noorderbegraafplaats, Groningen" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Moesstraat 98" ;
+    schema:addressLocality "Groningen" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9741 AC"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2308 ;
+    schema:longitude 6.5506
+  ] .
 
 # Selwerderhof                      Groningen            Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9741ghgroningen a t:burial_site.n.01 ;
+  :unit u:site ;
+  :sitename "Selwerderhof, Groningen" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Iepenlaan 204" ;
+    schema:addressLocality "Groningen" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9741 GH"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2404 ;
+    schema:longitude 6.5495
+  ] .
 
 # Eshof                             Haren                Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9752haren a t:burial_site.n.01 ;
+  :unit u:site ;
+  :sitename "Eshof, Haren" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Rijksstraatweg 290" ;
+    schema:addressLocality "Haren" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9752 CM"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.1625 ;
+    schema:longitude 6.6129
+  ] .
 
 # Kerkstraat                        Haren                Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9751haren a t:burial_site.n.01 ;
+  :unit u:site ;
+  :sitename "Kerkstraat, Haren" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Kerkstraat" ;
+    schema:addressLocality "Haren" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9751 BB"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.1727 ;
+    schema:longitude 6.6069
+  ] .
 
 # De Stille Hof                     Hoogezand            Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9601hoogezand a t:burial_site.n.01 ;
+  :unit u:site ;
+  :sitename "De Stille Hof, Hoogezand" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Knijpslaan 3" ;
+    schema:addressLocality "Hoogezand" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9601 KA"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.1659 ;
+    schema:longitude 6.7531
+  ] .
 
 # Middelberterweg                   Middelbert           Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -377,6 +395,7 @@ site:gr9722groningen a t:burial_site.n.01 ;
 # Kerkhof Stefanuskerk              Noorddijk            Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -398,6 +417,7 @@ site:gr9722groningen a t:burial_site.n.01 ;
 # Noorderweg                        Noordhorn            Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -419,6 +439,7 @@ site:gr9722groningen a t:burial_site.n.01 ;
 # Pollseweg                         Noordlaren           Groningen
 
 site:gr9479noordlaren a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Pollseweg, Noordlaren" ;
   #:osm <https://www.openstreetmap.org/way/> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -440,6 +461,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Ranumerweg                        Obergum              Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -461,6 +483,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Oosternielandsterweg              Oosternieland        Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -482,6 +505,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Valgenweg                         Oterdum              Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -503,6 +527,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Voorstraat                        Oudeschans           Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -524,6 +549,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Kerklaan                          Scheemda             Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -545,6 +571,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Stadsweg                          Ten Boer             Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -566,6 +593,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Oldebertweg                       Tolbert              Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -587,6 +615,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Leensterweg                       Ulrum                Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -608,6 +637,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # J.G. Pinksterstraat               Veendam              Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -629,6 +659,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Hoofdstraat                       Vierhuizen           Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -650,6 +681,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Klokkentoren Westerdijkshorn      Westerdijkshorn      Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -671,6 +703,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Schilligeham                      Winsum               Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -692,6 +725,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Klinckemalaan                     Zuidhorn             Groningen
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -713,6 +747,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Franekerstraat                    Bolsward             Friesland
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -734,6 +769,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Mariakerk                         Buitenpost           Friesland
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -755,6 +791,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Noorder Begraafplaats             Leeuwarden           Friesland
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -776,6 +813,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Dominee H.W. Hundlingiuspad       Schiermonnikoog      Friesland
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -797,6 +835,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Kerkplein                         Vlieland             Friesland
 
 # site: a t:burial_site.n.01 ;
+#   :unit u:site ;
 #   :sitename "" ;
 #   #:osm <https://www.openstreetmap.org/way/> ;
 #   #:wikidata <https://www.wikidata.org/entity/> ;
@@ -818,6 +857,7 @@ site:gr9479noordlaren a t:burial_site.n.01 ;
 # Kirchring                         Bunde                Ostfriesland
 
 site:de26831bunde a t:burial_site.n.01 ;
+  :unit u:site ;
   :sitename "Kirchring, Bunde" ;
   #:osm <https://www.openstreetmap.org/way/> ;
   #:wikidata <https://www.wikidata.org/entity/> ;
