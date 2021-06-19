@@ -15,7 +15,6 @@ reDatum = re.compile('(\d\d)-(\d\d)-(\d\d\d\d)')
 sys.stdout.write('''
 @prefix :     <https://noordergraf.rug.nl/pred/> .
 @prefix t:    <https://noordergraf.rug.nl/type/> .
-@prefix u:    <https://noordergraf.rug.nl/unit/> .
 @prefix item: <https://noordergraf.rug.nl/item/> .
 @prefix pic:  <https://noordergraf.rug.nl/pic/> .
 @prefix site: <https://noordergraf.rug.nl/site/> .
@@ -88,14 +87,13 @@ def process(txt):
             prev = a
         if first:
             first = False
-            sys.stdout.write(' ;\n  :unit u:item')
             if hasPic:
                 sys.stdout.write(' ;\n  :image pic:p' + base[1:])
             prev2 = ''
         else:
             if b == 'a':
-                if c == 't:person.n.01' or c == 't:male.n.02' or c == 't:female.n.02':
-                    sys.stdout.write(' ;\n  :unit u:person')
+                if c == 't:male.n.02' or c == 't:female.n.02':
+                    sys.stdout.write(' ,\n      t:person.n.01')
                     prev2 = ''
     sys.stdout.write(' .\n\n')
 

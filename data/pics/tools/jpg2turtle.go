@@ -75,8 +75,7 @@ func main() {
 	} else if strings.HasSuffix(lower, ".jpeg") {
 		name = name[:len(name)-5]
 	}
-	fmt.Printf(`pic:p%s a t:photo.n.1 ;
-  :unit u:pic ;
+	fmt.Printf(`pic:p%s a t:photo.n.01 ;
   :file "%s" ;
   :mime "image/jpeg"`, name[1:], os.Args[1])
 	if datetime != "" {
