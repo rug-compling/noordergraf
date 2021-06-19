@@ -37,6 +37,15 @@ def process(txt):
         hasPic = True
     except:
         pass
+    hasLoc = False
+    try:
+        fp = open('../../pics/p' + base[1:] + '.loc')
+        loc = fp.read()
+        fp.close()
+        hasLoc = True
+        loc = loc.strip()
+    except:
+        pass
 
     g = penman.decode(txt)
 
@@ -89,6 +98,8 @@ def process(txt):
             first = False
             if hasPic:
                 sys.stdout.write(' ;\n  :image pic:p' + base[1:])
+            if hasLoc:
+                sys.stdout.write(' ;\n  :site site:' + loc)
             prev2 = ''
         else:
             if b == 'a':

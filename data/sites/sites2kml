@@ -10,7 +10,7 @@ sys.stdout.write('''<?xml version="1.0" encoding="UTF-8"?>
 
 fp = open('sites.csv', 'rt')
 for line in fp:
-    lat, lon, name = line.strip().split(',', maxsplit=2)
+    lat, lon, _, name = line.strip().split(',', maxsplit=3)
     if lat == 'lat':
         continue
     lat1, lat2 = lat.split('/')
