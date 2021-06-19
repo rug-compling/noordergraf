@@ -22,7 +22,7 @@ func main() {
 	fmt.Print(`<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<name>tombreader</name>
+<name>graven</name>
 `)
 
 	for _, file := range os.Args[1:] {

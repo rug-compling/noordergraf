@@ -1,6 +1,11 @@
-# https://www.postcode.nl/
-
-
+@prefix :       <https://noordergraf.rug.nl/pred/> .
+@prefix t:      <https://noordergraf.rug.nl/type/> .
+@prefix pic:    <https://noordergraf.rug.nl/pic/> .
+@prefix place:  <https://noordergraf.rug.nl/place/> .
+@prefix site:   <https://noordergraf.rug.nl/site/> .
+@prefix item:   <https://noordergraf.rug.nl/item/> .
+@prefix cc:     <https://creativecommons.org/licenses/> .
+@prefix schema: <https://schema.org/> .
 
 # Kerkhoflaan                       Emmen                Drenthe
 
@@ -19,8 +24,8 @@ site:dr7811HEemmen a t:burial_site.n.01 ;
   ] ;
   schema:geo [
     a schema:GeoCoordinates ;
-    schema:latitude 52.78163 ;
-    schema:longitude 6.900401
+    schema:latitude 52.7816 ;
+    schema:longitude 6.9004
   ] .
 
 # Zuiderweg                         Hoogeveen            Drenthe
@@ -37,8 +42,8 @@ site:dr7907CHhoogeveen a t:burial_site.n.01 ;
   ] ;
   schema:geo [
     a schema:GeoCoordinates ;
-    schema:latitude 52.715274 ;
-    schema:longitude 6,469521
+    schema:latitude 52.7153 ;
+    schema:longitude 6.4695
   ] .
 
 
@@ -223,8 +228,8 @@ site:gr9722SNgroningen a t:burial_site.n.01 ;
   ] ;
   schema:geo [
     a schema:GeoCoordinates ;
-    schema:latitude 53.190563 ;
-    schema:longitude 6.593812
+    schema:latitude 53.1906 ;
+    schema:longitude 6.5938
   ] .
 
 # Zuiderbegraafplaats               Groningen            Groningen
@@ -376,66 +381,66 @@ site:gr9601KAhoogezand a t:burial_site.n.01 ;
 
 # Middelberterweg                   Middelbert           Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9723EWgroningen a t:burial_site.n.01 ;
+  :sitename "Middelberterweg, Groningen" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Middelberterweg 42" ;
+    schema:addressLocality "Groningen" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9723 EW"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2226 ;
+    schema:longitude 6.6371
+  ] .
 
 # Kerkhof Stefanuskerk              Noorddijk            Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9734ATgroningen a t:burial_site.n.01 ;
+  :sitename "Stefanuskerk, Groningen" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Noorddijkerweg 16" ;
+    schema:addressLocality "Groningen" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9734 AT"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2443 ;
+    schema:longitude 6.6279
+  ] .
 
 # Noorderweg                        Noordhorn            Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9804TEnoordhorn a t:burial_site.n.01 ;
+  :sitename "Noorderweg, Noordhorn" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Noorderweg" ;
+    schema:addressLocality "Noordhorn" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9804 TE"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2647 ;
+    schema:longitude 6.3938
+  ] .
 
 # Pollseweg                         Noordlaren           Groningen
 
@@ -460,381 +465,381 @@ site:gr9479TNnoordlaren a t:burial_site.n.01 ;
 
 # Ranumerweg                        Obergum              Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9951STwinsum a t:burial_site.n.01 ;
+  :sitename "Ranumerweg, Winsum" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Ranumerweg" ;
+    schema:addressLocality "Winsum" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9951 ST"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.3356 ;
+    schema:longitude 6.5127
+  ] .
 
 # Oosternielandsterweg              Oosternieland        Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9985SCoosternieland a t:burial_site.n.01 ;
+  :sitename "Oosternielandsterweg, Oosternieland" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Oosternielandsterweg 12" ;
+    schema:addressLocality "Oosternieland" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9985 SC"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.4040 ;
+    schema:longitude 6.7490
+  ] .
 
 # Valgenweg                         Oterdum              Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9936BTfarmsum a t:burial_site.n.01 ;
+  :sitename "Oterdum" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Valgenweg" ;
+    schema:addressLocality "Farmsum" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9936 BT"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.3111 ;
+    schema:longitude 6.9973
+  ] .
 
 # Voorstraat                        Oudeschans           Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9696XGoudeschans a t:burial_site.n.01 ;
+  :sitename "Schanspad, Oudeschans" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Schanspad" ;
+    schema:addressLocality "Oudeschans" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9696 XG"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.1384 ;
+    schema:longitude 7.1432
+  ] .
 
 # Kerklaan                          Scheemda             Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9679ADscheemda a t:burial_site.n.01 ;
+  :sitename "Kerklaan, Scheemda" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Kerklaan" ;
+    schema:addressLocality "Scheemda" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9679 AD"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.1748 ;
+    schema:longitude 6.9624
+  ] .
 
 # Stadsweg                          Ten Boer             Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9791KEten_boer a t:burial_site.n.01 ;
+  :sitename "Stadsweg, Ten Boer" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Stadsweg 40" ;
+    schema:addressLocality "Ten Boer" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9791 KE"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2775 ;
+    schema:longitude 6.6939
+  ] .
 
 # Oldebertweg                       Tolbert              Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9351RLtolbert a t:burial_site.n.01 ;
+  :sitename "Oldebertweg, Tolbert" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Oldebertweg" ;
+    schema:addressLocality "Tolbert" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9351 RL"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.1721 ;
+    schema:longitude 6.3657
+  ] .
 
 # Leensterweg                       Ulrum                Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9971EBulrum a t:burial_site.n.01 ;
+  :sitename "Leensterweg, Ulrum" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Leensterweg" ;
+    schema:addressLocality "Ulrum" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9971 EB"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.3606 ;
+    schema:longitude 6.3441
+  ] .
 
 # J.G. Pinksterstraat               Veendam              Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9641ANveendam a t:burial_site.n.01 ;
+  :sitename "Pinksterstraat, Veendam" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "J.G. Pinksterstraat" ;
+    schema:addressLocality "Veendam" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9641 AN"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.1045 ;
+    schema:longitude 6.8748
+  ] .
 
 # Hoofdstraat                       Vierhuizen           Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9975VRvierhuizen a t:burial_site.n.01 ;
+  :sitename "Hoofdstraat, Vierhuizen" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Hoofdstraat" ;
+    schema:addressLocality "Vierhuizen" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9975 VR"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.3608 ;
+    schema:longitude 6.2932
+  ] .
 
 # Klokkentoren Westerdijkshorn      Westerdijkshorn      Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9781THbedum a t:burial_site.n.01 ;
+  :sitename "Klokkentoren Westerdijkshorn" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Westerdijkshorn" ;
+    schema:addressLocality "Bedum" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9781 TH"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.3085 ;
+    schema:longitude 6.5756
+  ] .
 
 # Schilligeham                      Winsum               Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9951TNwinsum a t:burial_site.n.01 ;
+  :sitename "Schilligeham, Winsum" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Schilligeham" ;
+    schema:addressLocality "Winsum" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9951 TN"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.3276 ;
+    schema:longitude 6.5117
+  ] .
 
 # Klinckemalaan                     Zuidhorn             Groningen
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:gr9801CAzuidhorn a t:burial_site.n.01 ;
+  :sitename "Klinckemalaan, Zuidhorn" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Klinckemalaan 25" ;
+    schema:addressLocality "Zuidhorn" ;
+    schema:addressRegion "Groningen" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9801 CA"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2395 ;
+    schema:longitude 6.4103
+  ] .
 
 # Franekerstraat                    Bolsward             Friesland
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:fr8701DWbolsward a t:burial_site.n.01 ;
+  :sitename "Franekerstraat, Bolsward" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Samuel van Haringhouckstraat 1A" ;
+    schema:addressLocality "Bolsward" ;
+    schema:addressRegion "Friesland" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "8701 DW"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.0685 ;
+    schema:longitude 5.5228
+  ] .
 
 # Mariakerk                         Buitenpost           Friesland
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:fr9285TCbuitenpost a t:burial_site.n.01 ;
+  :sitename "Mariakerk Buitenpost" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Oude Havenstraat 1" ;
+    schema:addressLocality "Buitenpost" ;
+    schema:addressRegion "Friesland" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9285 TC"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2518 ;
+    schema:longitude 6.1450
+  ] .
 
 # Noorder Begraafplaats             Leeuwarden           Friesland
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:fr8915ABleeuwarden a t:burial_site.n.01 ;
+  :sitename "Noorder Begraafplaats, Leeuwarden" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Schapendijkje 4" ;
+    schema:addressLocality "Leeuwarden" ;
+    schema:addressRegion "Friesland" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "8915 AB"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2135 ;
+    schema:longitude 5.7734
+  ] .
 
 # Dominee H.W. Hundlingiuspad       Schiermonnikoog      Friesland
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:fr9166NAschiermonnikoog a t:burial_site.n.01 ;
+  :sitename "Hundlingiuspad, Schiermonnikoog" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Dominee H.W. Hundlingiuspad 8" ;
+    schema:addressLocality "Schiermonnikoog" ;
+    schema:addressRegion "Friesland" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "9166 NA"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.4791 ;
+    schema:longitude 6.1605
+  ] .
 
 # Kerkplein                         Vlieland             Friesland
 
-# site: a t:burial_site.n.01 ;
-#   :sitename "" ;
-#   #:osm <https://www.openstreetmap.org/way/> ;
-#   #:wikidata <https://www.wikidata.org/entity/> ;
-#   #:geonames <https://www.geonames.org/> ;
-#   schema:address [
-#     a schema:PostalAddress ;
-#     schema:streetAddress "" ;
-#     schema:addressLocality "" ;
-#     schema:addressRegion "" ;
-#     schema:addressCountry "NL" ;
-#     schema:postalCode ""
-#   ] ;
-#   schema:geo [
-#     a schema:GeoCoordinates ;
-#     schema:latitude ;
-#     schema:longitude
-#   ] .
+site:fr8899AWoost_vlieland a t:burial_site.n.01 ;
+  :sitename "Kerkplein, Vlieland" ;
+  #:osm <https://www.openstreetmap.org/way/> ;
+  #:wikidata <https://www.wikidata.org/entity/> ;
+  #:geonames <https://www.geonames.org/> ;
+  schema:address [
+    a schema:PostalAddress ;
+    schema:streetAddress "Kerkplein 7" ;
+    schema:addressLocality "Oost-Vlieland" ;
+    schema:addressRegion "Friesland" ;
+    schema:addressCountry "NL" ;
+    schema:postalCode "8899 AW"
+  ] ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude 53.2960 ;
+    schema:longitude 5.0655
+  ] .
 
 # Kirchring                         Bunde                Ostfriesland
 
