@@ -9,6 +9,74 @@ import installeren:
 '''
 
 import re, os, sys
+import penman
+from penman import constant
+
+placemap = {
+    "11746820": "LagelandGN11746820",
+    "1545739": "IndianOcean1545739",
+    "1651591": "Amahai1651591",
+    "2743583": "Zwagerveen2743583",
+    "2743608": "Zutphen2743608",
+    "2743800": "Zuidbroek2743800",
+    "2744228": "Woldendorp2744228",
+    "2744436": "Wilderhof2744436",
+    "2744744": "Westergeest2744744",
+    "2744757": "Westerdijkshorn2744757",
+    "2744891": "Weidum2744891",
+    "2745054": "Wamel2745054",
+    "2745090": "Wagenborgen2745090",
+    "2745094": "Wadenoijen2745094",
+    "2745471": "Visvliet2745471",
+    "2745783": "Veendam2745783",
+    "2746832": "Startenhuizen2746832",
+    "2747294": "SintAnnen2747294",
+    "2747343": "Siddeburen2747343",
+    "2747984": "Rohel2747984",
+    "2749251": "Oranjewoud2749251",
+    "2749325": "Oostwold2749325",
+    "2749660": "Oldehove2749660",
+    "2750067": "Nijhuizum2750067",
+    "2750380": "Nietap2750380",
+    "2750390": "Niekerk2750390",
+    "2750391": "Niehove2750391",
+    "2750396": "Niebert2750396",
+    "2750798": "Millingen2750798",
+    "2751097": "DeMaten2751097",
+    "2751364": "Lutkewierum2751364",
+    "2751365": "Lutkepost2751365",
+    "2751792": "Leeuwarden2751792",
+    "2752275": "Krewerd2752275",
+    "2752510": "Kommerzijl2752510",
+    "2752522": "Kollumerpomp2752522",
+    "2752695": "KleinGarnwerd2752695",
+    "2752727": "Kleinemeer2752727",
+    "2753130": "Kalkwijk2753130",
+    "2753738": "Hoogemeeden2753738",
+    "2755249": "Groningen2755249",
+    "2755251": "Groningen2755251",
+    "2755317": "Grijpskerk2755317",
+    "2755429": "Gorredijk2755429",
+    "2755726": "Garnwerd2755726",
+    "2755812": "Friesland2755812",
+    "2755850": "Foxwolde2755850",
+    "2755982": "Euvelgunne2755982",
+    "2756036": "Ermerveen2756036",
+    "2756128": "Emmerhout2756128",
+    "2756763": "Doezum2756763",
+    "2756789": "Diphoorn2756789",
+    "2756869": "Diepswal2756869",
+    "2756932": "DeWilp2756932",
+    "2757195": "DenOever2757195",
+    "2757340": "Delfzijl2757340",
+    "2757523": "DeHolm2757523",
+    "2758626": "Borculo2758626",
+    "2759103": "Burgum2759103",
+    "2759698": "Appelscha2759698",
+    "2759766": "Angelslo2759766",
+    "2910831": "Hanover2910831",
+    "3382998": "Suriname3382998"
+}
 
 reDatum = re.compile('(\d\d)-(\d\d)-(\d\d\d\d)')
 
@@ -22,8 +90,7 @@ sys.stdout.write('''
 
 ''')
 
-import penman
-from penman import constant
+
 
 def process(txt):
     base = txt.split(maxsplit=1)[0][1:]
@@ -77,6 +144,39 @@ def process(txt):
         lines.append('item:{} {} item:{}'.format(src, role, tgt))
 
     lines.sort()
+
+    # # plaatsen: werkt niet voor geneste plaatsen, zoals dorp in gemeente
+    # replace = []
+    # for line in lines:
+    #     a = line.split()
+    #     if a[1] != ":geo":
+    #         continue
+    #     subj = a[0]
+    #     obj = " ".join(a[2:]).strip('"').strip()
+    #     place = ''
+    #     if obj in placemap:
+    #         place = placemap[obj]
+    #     else:
+    #         for line2 in lines:
+    #             a = line.split()
+    #             if a[0] == subj:
+    #                 place = ' '.join(a[2:]).strip('"').strip()
+    #                 break
+    #     if place != '':
+    #         replace.append((subj, place))
+    # for lbl, place in replace:
+    #     i = 0
+    #     while i < len(lines):
+    #         line = lines[i]
+    #         a = line.split()
+    #         if a[0] == lbl:
+    #             lines.pop(i)
+    #             continue
+    #         if a[2] == lbl:
+    #             a[2] = "place:" + place
+    #             lines[i] = ' '.join(a)
+    #         i += 1
+
     prev = ''
     prev2 = ''
     first = True
