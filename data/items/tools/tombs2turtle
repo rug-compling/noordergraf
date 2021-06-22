@@ -83,8 +83,8 @@ reDatum = re.compile('(\d\d)-(\d\d)-(\d\d\d\d)')
 sys.stdout.write('''
 @prefix :     <https://noordergraf.rug.nl/pred/> .
 @prefix t:    <https://noordergraf.rug.nl/type/> .
+@prefix img:  <https://noordergraf.rug.nl/img/> .
 @prefix item: <https://noordergraf.rug.nl/item/> .
-@prefix pic:  <https://noordergraf.rug.nl/pic/> .
 @prefix site: <https://noordergraf.rug.nl/site/> .
 @prefix schema: <https://schema.org/> .
 
@@ -96,17 +96,19 @@ def process(txt):
     base = txt.split(maxsplit=1)[0][1:]
     sys.stdout.write('###\n### ' + base + '\n###\n\n')
 
-    hasPic = False
+    jbase = 'j' + base[1:]
+
+    hasImg = False
     try:
-        fp = open('../../pics/p' + base[1:] + '.ttl')
-        pic = fp.read()
+        fp = open('../../img/' + jbase + '.ttl')
+        img = fp.read()
         fp.close()
-        hasPic = True
+        hasImg = True
     except:
         pass
     hasLoc = False
     try:
-        fp = open('../../pics/p' + base[1:] + '.loc')
+        fp = open('../../img/' + jbase + '.loc')
         loc = fp.read()
         fp.close()
         hasLoc = True
@@ -196,8 +198,8 @@ def process(txt):
             prev = a
         if first:
             first = False
-            if hasPic:
-                sys.stdout.write(' ;\n  :image pic:p' + base[1:])
+            if hasImg:
+                sys.stdout.write(' ;\n  :image img:' + jbase)
             if hasLoc:
                 sys.stdout.write(' ;\n  :site site:' + loc)
             prev2 = ''
@@ -208,8 +210,8 @@ def process(txt):
                     prev2 = ''
     sys.stdout.write(' .\n\n')
 
-    #if hasPic:
-    #    sys.stdout.write(pic)
+    #if hasImg:
+    #    sys.stdout.write(img)
 
 
 fp = open(sys.argv[1])

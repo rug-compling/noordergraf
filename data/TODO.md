@@ -8,12 +8,6 @@ Datum zonder/met tijd
 "2014-02-23T03:18:59"^^xsd:dateTime
 ```
 
-Coördinaten
-
-```
-"+53.2192+6.5667"^^<[spherical type]>
-```
-
 Tekst met taalcode
 
 ```

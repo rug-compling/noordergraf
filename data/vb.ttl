@@ -1,11 +1,13 @@
 @prefix :       <https://noordergraf.rug.nl/pred/> .
 @prefix t:      <https://noordergraf.rug.nl/type/> .
-@prefix pic:    <https://noordergraf.rug.nl/pic/> .
+@prefix img:    <https://noordergraf.rug.nl/img/> .
 @prefix place:  <https://noordergraf.rug.nl/place/> .
 @prefix site:   <https://noordergraf.rug.nl/site/> .
 @prefix item:   <https://noordergraf.rug.nl/item/> .
 @prefix cc:     <https://creativecommons.org/licenses/> .
 @prefix schema: <https://schema.org/> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix geo:    <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 site:gr9722SNgroningen a t:burial_site.n.01 ;
   :sitename "Esserveld, Groningen" ;
@@ -20,49 +22,37 @@ site:gr9722SNgroningen a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9722 SN"
   ] ;
-  schema:geo [
-    a schema:GeoCoordinates ;
-    schema:latitude 53.190563 ;
-    schema:longitude 6.593812
-  ] .
+  geo:lat 53.190563 ;
+  geo:long 6.593812 .
 
 place:Garnwerd2755726 a <https://www.geonames.org/ontology#P.PPL> ,
       t:place.n.01 ;
   :placename "Garnwerd" ;
   :geonames <https://www.geonames.org/2755726/garnwerd.html> ;
-  schema:geo [
-    a schema:GeoCoordinates ;
-    schema:latitude 53.3042 ;
-    schema:longitude 6.4931
-  ] .
+  geo:lat 53.3042 ;
+  geo:long 6.4931 .
 
 place:Groningen2755251 a <https://www.geonames.org/ontology#P.PPLA> ,
       t:place.n.01 ;
   :placename "Groningen" ;
   :geonames <https://www.geonames.org/2755251/groningen.html> ;
-  schema:geo [
-    a schema:GeoCoordinates ;
-    schema:latitude 53.2192 ;
-    schema:longitude 6.5667
-  ] .
+  geo:lat 53.2192 ;
+  geo:long 6.5667 .
 
 place:SintAnnen2747294 a <https://www.geonames.org/ontology#P.PPL> ,
       t:place.n.01 ;
   :placename "Sint Annen" ;
   :geonames <https://www.geonames.org/2747294/sint-annen.html> ;
-  schema:geo [
-    a schema:GeoCoordinates ;
-    schema:latitude 53.2975 ;
-    schema:longitude 6.6653
-  ] .
+  geo:lat 53.2975 ;
+  geo:long 6.6653 .
 
 ###
 ### t00011
 ###
 
 item:t00011 a t:tombstone.n.01 ;
-  :image pic:p00011 ;
-  :site site:gr9722esserveld ;
+  :image img:p00011 ;
+  :site site:gr9722SNgroningen ;
   :text "rustplaats / van / lammert leertouwer / geb. 1 maart 1877 / overl. 4 dec. 1938 / echtegenoot van g. krol / en / geesje krol / geb. 8 maart 1876 / overl. 28 sept. 1961" ;
   :sym item:t00011.s1 ;
   :ent item:t00011.p1 ,
@@ -86,12 +76,12 @@ item:t00011.p2 a t:female.n.02 ,
   :dob "1876-03-08" ;
   :dod "1961-09-28" .
 
-pic:p00011 a t:photo.n.01 ;
+img:p00011 a t:photo.n.01 ;
   :file "t00011.jpg" ;
   :mime "image/jpeg" ;
-  :date "2019-09-25 16:38:17" ;
-  :lat 53.1910 ;
-  :lon 6.5930 ;
+  :date "2019-09-25T16:38:17"^^xsd:dateTime ;
+  geo:lat 53.1910 ;
+  geo:long 6.5930 ;
   :credit "J. Doe" ;
   :license cc:by\/4.0\/ .
 
@@ -100,8 +90,8 @@ pic:p00011 a t:photo.n.01 ;
 ###
 
 item:t00013 a t:tombstone.n.01 ;
-  :image pic:p00013 ;
-  :site site:gr9722esserveld ;
+  :image img:p00013 ;
+  :site site:gr9722SNgroningen ;
   :text "rustplaats / van / anje smit / geb. 14 dec. 1895 / te garnwerd / overl. 10 juni. 1931 / te groningen / en / helena reitsema / geb. 19 maart 1864 / te garnwerd / overl. 11 mei 1936 / te groningen / echtg. van / baltus smit / geb. 11 nov. 1862 / te sint annen / overl. 9 febr. 1948 / te groningen" ;
   :ent item:t00013.p1 ,
        item:t00013.p2 ,
@@ -138,12 +128,12 @@ item:t00013.r1 a t:wife.n.01 ;
 
 item:t00013.s1 a t:frond.n.01 .
 
-pic:p00013 a t:photo.n.01 ;
+img:p00013 a t:photo.n.01 ;
   :file "t00013.jpg" ;
   :mime "image/jpeg" ;
-  :date "2019-09-25 16:48:54" ;
-  :lat 53.1901 ;
-  :lon 6.5927 ;
+  :date "2019-09-25T16:48:54"^^xsd:dateTime ;
+  geo:lat 53.1901 ;
+  geo:long 6.5927 ;
   :credit "J. Doe" ;
   :license cc:by\/4.0\/ .
 
