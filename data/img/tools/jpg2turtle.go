@@ -88,12 +88,17 @@ img:%s a t:photo.n.01 ;
 	if datetime != "" {
 		fmt.Printf(" ;\n  :date \"%s\"^^xsd:dateTime", datetime)
 	}
-	if lat != 0 {
-		fmt.Printf(" ;\n  geo:lat %.4f", lat*latv)
+	if lat != 0 && lon != 0 {
+		fmt.Printf(` ;
+  geo:lat %.4f ;
+  geo:long %.4f ;
+  :nd "%+08.4f%+09.4f"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4>`,
+			lat*latv,
+			lon*lonv,
+			lat*latv,
+			lon*lonv)
 	}
-	if lon != 0 {
-		fmt.Printf(" ;\n  geo:long %.4f", lon*lonv)
-	}
+
 	fmt.Print(" .\n\n")
 
 }
