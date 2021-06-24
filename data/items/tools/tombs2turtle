@@ -147,6 +147,46 @@ def process(txt):
 
     lines.sort()
 
+    # language tags
+    i = 0
+    while i < len(lines):
+        a = lines[i].split(maxsplit=3)
+        if a[1] != ':lan':
+            i += 1
+            continue
+        lan = a[2].strip('"').lower()
+        #if lan == 'nld':
+        #    continue
+
+        # check dubbele taaltag
+        dubbel = False
+        for j in range(len(lines)):
+            if i == j:
+                continue
+            b = lines[j].split(maxsplit=3)
+            if b[0] == a[0] and b[1] == ':lan':
+                dubbel = True
+                break
+        if dubbel:
+            i += 1
+            continue
+
+        found = False
+        for j in range(len(lines)):
+            if i == j:
+                continue
+            b = lines[j].split(maxsplit=3)
+            if b[0] != a[0]:
+                continue
+            if lines[j].endswith('"'):
+                lines[j] += '@'+lan
+                found = True
+        if found:
+            lines.pop(i)
+        else:
+            i += 1
+
+
     # # plaatsen: werkt niet voor geneste plaatsen, zoals dorp in gemeente
     # replace = []
     # for line in lines:
