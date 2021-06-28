@@ -178,6 +178,8 @@ def process(txt):
             b = lines[j].split(maxsplit=3)
             if b[0] != a[0]:
                 continue
+            if b[1] == ':geo':
+                continue
             if lines[j].endswith('"'):
                 lines[j] += '@'+lan
                 found = True
