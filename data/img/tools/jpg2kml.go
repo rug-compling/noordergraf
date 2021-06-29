@@ -5,7 +5,9 @@ import (
 	"github.com/dsoprea/go-exif/v3/common"
 	"github.com/pebbe/util"
 
+	"bufio"
 	"fmt"
+	"html"
 	"io/ioutil"
 	"math"
 	"os"
@@ -19,13 +21,56 @@ var (
 
 func main() {
 
+	linked := true
+	unlinked := true
+	title := "graven"
+
+	var files []string
+
+	if os.Args[1] == "-y" {
+		unlinked = false
+		title = "gelinkte graven"
+		files = os.Args[2:]
+	} else if os.Args[1] == "-n" {
+		linked = false
+		title = "vrije graven"
+		files = os.Args[2:]
+	} else {
+		files = os.Args[1:]
+	}
+
+	sitemap := make(map[string]string)
+
+	fp, err := os.Open("../../sites/sites.csv")
+	x(err)
+	scanner := bufio.NewScanner(fp)
+	for scanner.Scan() {
+		a := strings.Split(scanner.Text(), `>","`)
+		if len(a) != 2 {
+			continue
+		}
+		sitemap[a[0][strings.LastIndex(a[0], "/")+1:]] = strings.Trim(a[1], `"`)
+	}
+	x(scanner.Err())
+	fp.Close()
+
 	fmt.Print(`<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<name>graven</name>
+<name>` + title + `</name>
 `)
 
-	for _, file := range os.Args[1:] {
+	for _, file := range files {
+
+		var loc bool
+		var desc string
+		if b, err := ioutil.ReadFile("../" + strings.Replace(file, ".jpg", ".loc", 1)); err == nil {
+			loc = true
+			desc = sitemap[strings.TrimSpace(string(b))]
+		}
+		if !(loc && linked || !loc && unlinked) {
+			continue
+		}
 
 		b, err := ioutil.ReadFile(file)
 		x(err)
@@ -75,12 +120,14 @@ func main() {
 		}
 		fmt.Printf(`<Placemark>
   <name>%s</name>
+  <description>%s</description>
   <Point>
     <coordinates>%.4f,%.4f,0</coordinates>
   </Point>
 </Placemark>
 `,
 			name,
+			html.EscapeString(desc),
 			lon*lonv,
 			lat*latv)
 	}
