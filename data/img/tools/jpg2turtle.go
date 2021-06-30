@@ -76,13 +76,9 @@ func main() {
 	} else if strings.HasSuffix(lower, ".jpeg") {
 		name = name[:len(name)-5]
 	}
-	fmt.Printf(`@prefix :       <https://noordergraf.rug.nl/pred/> .
-@prefix img:    <https://noordergraf.rug.nl/img/> .
-@prefix t:      <https://noordergraf.rug.nl/type/> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix geo:    <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-
-img:%s a t:photo.n.01 ;
+	fmt.Printf(`img:%s a t:photo.n.01 ;
+  # :credit "J. Doe" ;
+  # :license cc:by\/4.0\/ ;
   :file "%s" ;
   :mime "image/jpeg"`, name, os.Args[1])
 	if datetime != "" {

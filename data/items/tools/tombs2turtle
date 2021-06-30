@@ -21,19 +21,6 @@ fp.close()
 
 reDatum = re.compile('(\d\d)-(\d\d)-(\d\d\d\d)')
 
-sys.stdout.write('''
-@prefix :       <https://noordergraf.rug.nl/pred/> .
-@prefix t:      <https://noordergraf.rug.nl/type/> .
-@prefix img:    <https://noordergraf.rug.nl/img/> .
-@prefix item:   <https://noordergraf.rug.nl/item/> .
-@prefix place:  <https://noordergraf.rug.nl/place/> .
-@prefix site:   <https://noordergraf.rug.nl/site/> .
-@prefix schema: <https://schema.org/> .
-
-''')
-
-
-
 def process(txt):
     base = txt.split(maxsplit=1)[0][1:]
     sys.stdout.write('###\n### ' + base + '\n###\n\n')
