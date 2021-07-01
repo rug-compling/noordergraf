@@ -54,25 +54,25 @@ def process(txt):
     for src, _, tgt in g.instances():
         if src != base:
             src = base + '.' + src
-        lines.append('item:{}  a t:{}'.format(src, tgt))
+        lines.append('tomb:{}  a t:{}'.format(src, tgt))
 
     for src, role, tgt in g.attributes():
         if src != base:
             src = base + '.' + src
         if constant.type(tgt) == constant.SYMBOL:
-            tgt = 'item:{}.{}'.format(base, tgt)
+            tgt = 'tomb:{}.{}'.format(base, tgt)
         elif constant.type(tgt) == constant.STRING:
             tgt = tgt.replace('\\', '\\\\')
             if role == ':dob' or role == ':dod':
                 tgt = reDatum.sub('\\3-\\2-\\1', tgt)
-        lines.append('item:{} {} {}'.format(src, role, tgt))
+        lines.append('tomb:{} {} {}'.format(src, role, tgt))
 
     for src, role, tgt in g.edges():
         if src != base:
             src = base + '.' + src
         if tgt != base:
             tgt = base + '.' + tgt
-        lines.append('item:{} {} item:{}'.format(src, role, tgt))
+        lines.append('tomb:{} {} tomb:{}'.format(src, role, tgt))
 
     lines.sort()
 
@@ -158,8 +158,8 @@ def process(txt):
                     prev2 = ''
     sys.stdout.write(' .\n\n')
 
-    #if hasImg:
-    #    sys.stdout.write(img)
+    if hasImg:
+        sys.stdout.write(img)
 
 
 fp = open(sys.argv[1])

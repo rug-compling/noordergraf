@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+lines = []
+site = ''
+
+def output():
+    global lines
+    if len(lines) == 0 or site == '':
+        return
+    fp1 = open("site/"+site+".ttl", "wt", encoding="utf-8")
+    fp1.write(''.join(lines))
+    fp1.close()
+    lines = []
+
+fp = open("sites.ttl", "rt", encoding="utf-8")
+for line in fp:
+    if line.startswith('#'):
+        continue
+    if line.startswith('site:'):
+        output()
+        a = line.split()
+        site = a[0][5:]
+    lines.append(line)
+output()
+fp.close()
