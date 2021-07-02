@@ -76,7 +76,7 @@ func main() {
 	} else if strings.HasSuffix(lower, ".jpeg") {
 		name = name[:len(name)-5]
 	}
-	fmt.Printf(`img:%s a t:photo.n.01 ;
+	fmt.Printf(`tomb:%s.im1 a t:photo.n.01 ;
   # :credit "J. Doe" ;
   # :license cc:by\/4.0\/ ;
   :file "%s" ;

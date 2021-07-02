@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
 
+lines = []
+tomb = ''
 def output():
-    if len(lines) == 0:
+    global lines
+    global tomb
+    if len(lines) == 0 or tomb == '':
         return
-    fp1 = open("tomb/"+file+".ttl", "wt", encoding="utf-8")
+    fp1 = open("tomb/"+tomb+".ttl", "wt", encoding="utf-8")
     fp1.write(''.join(lines))
     fp1.close()
     lines = []
-        
+    tomb = ''
 
-fp = open("tombs.txt", "rt", encoding="utf-8")
+fp = open("tombs.ttl", "rt", encoding="utf-8")
 lines = []
 for line in fp:
     if line.startswith('###'):
         output()
         a = line.split()
         if len(a) == 2:
-            file = a[1]
+            tomb = a[1]
     else:
         lines.append(line)
 output()

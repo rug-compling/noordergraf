@@ -25,11 +25,9 @@ def process(txt):
     base = txt.split(maxsplit=1)[0][1:]
     sys.stdout.write('###\n### ' + base + '\n###\n\n')
 
-    jbase = 'j' + base[1:]
-
     hasImg = False
     try:
-        fp = open('../../img/' + jbase + '.ttl')
+        fp = open('../../img/' + base + '.ttl')
         img = fp.read()
         fp.close()
         hasImg = True
@@ -37,7 +35,7 @@ def process(txt):
         pass
     hasLoc = False
     try:
-        fp = open('../../img/' + jbase + '.loc')
+        fp = open('../../img/' + base + '.loc')
         loc = fp.read()
         fp.close()
         hasLoc = True
@@ -117,15 +115,24 @@ def process(txt):
         else:
             i += 1
 
+    subj = {}
     for i in range(len(lines)):
         a = lines[i].split()
         if a[1] != ":geo":
             continue
+        subj[a[0]] = True
         try:
             a[2] = placemap[a[2].strip('"').strip()]
             lines[i] = ' '.join(a)
         except:
             sys.stderr.write(lines[i] + '\n')
+    for i in range(len(lines)):
+        a = lines[i].split()
+        if a[1] != ":nam":
+            continue
+        if a[0] in subj:
+            a[1] = ":place"
+            lines[i] = ' '.join(a)
 
     prev = ''
     prev2 = ''
@@ -147,7 +154,7 @@ def process(txt):
         if first:
             first = False
             if hasImg:
-                sys.stdout.write(' ;\n  :image img:' + jbase)
+                sys.stdout.write(' ;\n  :image tomb:' + base + '.im1')
             if hasLoc:
                 sys.stdout.write(' ;\n  :site site:' + loc)
             prev2 = ''
