@@ -149,7 +149,13 @@ def process(txt):
             prev2 = ''
             if prev != '':
                 sys.stdout.write(' .\n\n')
-            sys.stdout.write(a + ' ' + b + ' ' + c)
+            if b == 'a':
+                if c == 't:male.n.02' or c == 't:female.n.02':
+                    sys.stdout.write(a + ' a t:person.n.01 ;\n  :gender ' + c)
+                else:
+                    sys.stdout.write(a + ' ' + b + ' ' + c)
+            else:
+                sys.stdout.write(a + ' ' + b + ' ' + c)
             prev = a
         if first:
             first = False
@@ -158,11 +164,6 @@ def process(txt):
             if hasLoc:
                 sys.stdout.write(' ;\n  :site site:' + loc)
             prev2 = ''
-        else:
-            if b == 'a':
-                if c == 't:male.n.02' or c == 't:female.n.02':
-                    sys.stdout.write(' ,\n      t:person.n.01')
-                    prev2 = ''
     sys.stdout.write(' .\n\n')
 
     if hasImg:

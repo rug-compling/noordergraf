@@ -77,13 +77,13 @@ func main() {
 		name = name[:len(name)-5]
 	}
 	fmt.Printf(`tomb:%s.im1 a t:photo.n.01 ;
-  # :credit "J. Doe" ;
-  :license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # :license <https://creativecommons.org/licenses/by/4.0/> ;
-  # :license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # :license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # :license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # :license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "%s" ;
   :mime "image/jpeg"`, name, os.Args[1])
 	if datetime != "" {
