@@ -84,8 +84,7 @@ func main() {
   # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
   # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
   # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "%s" ;
-  :mime "image/jpeg"`, name, os.Args[1])
+  :file "%s"`, name, os.Args[1])
 	if datetime != "" {
 		fmt.Printf(" ;\n  :date \"%s\"^^xsd:dateTime", datetime)
 	}
