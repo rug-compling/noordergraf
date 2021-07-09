@@ -4,13 +4,14 @@ lines = []
 place = ''
 
 def output():
-    global lines
+    global lines, place
     if len(lines) == 0 or place == '':
         return
     fp1 = open("place/"+place+".ttl", "wt", encoding="utf-8")
     fp1.write(''.join(lines))
     fp1.close()
     lines = []
+    place = ''
 
 for f in ('places1.ttl','places2.ttl','places3.ttl'):
     fp = open(f, "rt", encoding="utf-8")
