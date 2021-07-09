@@ -1,0 +1,83 @@
+
+tomb:t00447 a t:tombstone.n.01 ;
+  :image tomb:t00447.im1 ;
+  :site site:fr9166NAschiermonnikoog ;
+  :ent tomb:t00447.p1 ,
+       tomb:t00447.p2 .
+
+tomb:t00447.c1 a t:town.n.01 ;
+  :geo place:ZwettlStadt2760416 ;
+  :place "ZWETTL" .
+
+tomb:t00447.c2 a t:country.n.02 ;
+  :geo place:Oostenrijk2782113 ;
+  :mem tomb:t00447.c1 ;
+  :place "OOSTENRIJK" .
+
+tomb:t00447.c3 a t:island.n.01 ;
+  :geo place:Schiermonnikoog2747591 ;
+  :place "SCHIERMONNIKOOG" .
+
+tomb:t00447.c4 a t:island.n.01 ;
+  :geo place:Terschelling2746414 ;
+  :place "TERSCHELLING" .
+
+tomb:t00447.c5 a t:village.n.02 ;
+  :geo place:Metslawier2750919 ;
+  :place "METSLAWIER" .
+
+tomb:t00447.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1912-08-04" ;
+  :dod "1982-03-08" ;
+  :nam "JUSTINA WUTSCHER" ;
+  :pob tomb:t00447.c1 ;
+  :pod tomb:t00447.c3 ;
+  :rol tomb:t00447.r1 ,
+       tomb:t00447.r2 ,
+       tomb:t00447.r3 .
+
+tomb:t00447.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1912-01-25" ;
+  :dod "2003-01-31" ;
+  :nam "DOUWE HEK" ;
+  :pob tomb:t00447.c4 ;
+  :pod tomb:t00447.c5 ;
+  :rol tomb:t00447.r4 ,
+       tomb:t00447.r5 ,
+       tomb:t00447.r6 .
+
+tomb:t00447.r1 a t:wife.n.01 ;
+  :tgt tomb:t00447.p2 .
+
+tomb:t00447.r2 a t:mother.n.01 ;
+  :att "ZORGZAME" ;
+  :tgt tomb:t00447.p3 .
+
+tomb:t00447.r3 a t:grandmother.n.01 ;
+  :tgt tomb:t00447.p4 .
+
+tomb:t00447.r4 a t:father.n.01 ;
+  :tgt tomb:t00447.p3 .
+
+tomb:t00447.r5 a t:grandfather.n.01 ;
+  :tgt tomb:t00447.p4 .
+
+tomb:t00447.r6 a t:great_grandfather.n.01 ;
+  :tgt tomb:t00447.p5 .
+
+tomb:t00447.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00447.jpg" ;
+  :date "2019-11-02T11:29:17"^^xsd:dateTime ;
+  geo:lat 53.4789 ;
+  geo:long 6.1603 ;
+  :nd "+53.4789+006.1603"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

@@ -1,0 +1,44 @@
+
+tomb:t00136 a t:tombstone.n.01 ;
+  :image tomb:t00136.im1 ;
+  :site site:gr9725ACgroningen ;
+  :ent tomb:t00136.p1 ,
+       tomb:t00136.p2 ;
+  :sym tomb:t00136.s1 ,
+       tomb:t00136.s2 .
+
+tomb:t00136.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1874-11-08" ;
+  :dod "1942-05-14" ;
+  :nam "SIMON SIESLING" ;
+  :ref "GEZANG 223:1" ;
+  :rol tomb:t00136.r1 .
+
+tomb:t00136.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1882-12-28" ;
+  :dod "1954-01-12" ;
+  :nam "TALLEGIEN DE RAAD" .
+
+tomb:t00136.r1 a t:spouse.n.01 ;
+  :tgt tomb:t00136.p2 .
+
+tomb:t00136.s1 a t:frond.n.01 .
+
+tomb:t00136.s2 a t:anchor.n.01 .
+
+tomb:t00136.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00136.jpg" ;
+  :date "2019-10-02T10:35:09"^^xsd:dateTime ;
+  geo:lat 53.2060 ;
+  geo:long 6.5701 ;
+  :nd "+53.2060+006.5701"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

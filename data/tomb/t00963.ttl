@@ -1,0 +1,37 @@
+
+tomb:t00963 a t:tombstone.n.01 ;
+  :image tomb:t00963.im1 ;
+  :site site:dr9765paterswolde ;
+  :ent tomb:t00963.p1 ;
+  :lan "NLD" .
+
+tomb:t00963.c1 a t:city.n.01 ;
+  :geo place:Winschoten2744344 ;
+  :place "WINSCHOTEN" .
+
+tomb:t00963.c2 a t:village.n.02 ;
+  :geo place:Paterswolde2748702 ;
+  :place "PATERSWOLDE" .
+
+tomb:t00963.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1886-11-21" ;
+  :dod "1917-04-19" ;
+  :nam "WILLEMIENE HENRIETTE JANSEN" ;
+  :pob tomb:t00963.c1 ;
+  :pod tomb:t00963.c2 .
+
+tomb:t00963.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00963.jpg" ;
+  :date "2020-03-27T17:55:38"^^xsd:dateTime ;
+  geo:lat 53.1632 ;
+  geo:long 6.5544 ;
+  :nd "+53.1632+006.5544"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

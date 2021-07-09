@@ -1,0 +1,89 @@
+
+tomb:t00068 a t:tombstone.n.01 ;
+  :image tomb:t00068.im1 ;
+  :site site:gr9722SNgroningen ;
+  :ent tomb:t00068.g1 ,
+       tomb:t00068.p1 ,
+       tomb:t00068.p2 ,
+       tomb:t00068.p3 ,
+       tomb:t00068.p4 .
+
+tomb:t00068.c1 a t:city.n.01 ;
+  :geo place:Groningen2755251 ;
+  :place "GRONINGEN" .
+
+tomb:t00068.c2 a t:village.n.02 ;
+  :geo place:Steenwijkerwold2746761 ;
+  :place "STEENWIJKERWOLD" .
+
+tomb:t00068.c3 a t:village.n.02 ;
+  :geo place:Nijeveen2750075 ;
+  :place "NIJEVEEN" .
+
+tomb:t00068.g1 a t:group.n.01 ;
+  :mem tomb:t00068.p2 ,
+       tomb:t00068.p3 .
+
+tomb:t00068.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1920-07-13" ;
+  :dod "1943-07-20" ;
+  :nam "JANTINA" ,
+       "TINI" ;
+  :rol tomb:t00068.r1 ,
+       tomb:t00068.r3 .
+
+tomb:t00068.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1891-04-09" ;
+  :dod "1943-12-08" ;
+  :nam "CORNELIA M.DE JONG" ;
+  :pob tomb:t00068.c2 ;
+  :pod tomb:t00068.c1 ;
+  :rol tomb:t00068.r4 ,
+       tomb:t00068.r5 .
+
+tomb:t00068.p3 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1886-06-09" ;
+  :dod "1954-02-12" ;
+  :nam "JAN MULDER" ;
+  :pob tomb:t00068.c3 ;
+  :pod tomb:t00068.c1 ;
+  :rol tomb:t00068.r6 .
+
+tomb:t00068.p4 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "CORNELIS PIETER" .
+
+tomb:t00068.r1 a t:daughter.n.01 ;
+  :tgt tomb:t00068.g1 .
+
+tomb:t00068.r3 a t:sister.n.01 ;
+  :tgt tomb:t00068.p4 .
+
+tomb:t00068.r4 a t:wife.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00068.p3 .
+
+tomb:t00068.r5 a t:mother.n.01 ;
+  :tgt tomb:t00068.p5 .
+
+tomb:t00068.r6 a t:father.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00068.p4 .
+
+tomb:t00068.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00068.jpg" ;
+  :date "2019-09-25T16:10:13"^^xsd:dateTime ;
+  geo:lat 53.1908 ;
+  geo:long 6.5951 ;
+  :nd "+53.1908+006.5951"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

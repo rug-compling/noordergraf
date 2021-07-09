@@ -1,0 +1,46 @@
+
+tomb:t00141 a t:tombstone.n.01 ;
+  :image tomb:t00141.im1 ;
+  :site site:gr9725ACgroningen ;
+  :ent tomb:t00141.p1 ,
+       tomb:t00141.p2 ;
+  :quo "RUST ZACHT LIEVE OUDERS" .
+
+tomb:t00141.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1886-08-23" ;
+  :dod "1954-11-25" ;
+  :nam "HARM GOOYERT" ;
+  :rol tomb:t00141.r1 ,
+       tomb:t00141.r2 .
+
+tomb:t00141.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1888-04-15" ;
+  :dod "1967-09-16" ;
+  :nam "HINDERKJE STEENHUIS" ;
+  :rol tomb:t00141.r3 .
+
+tomb:t00141.r1 a t:father.n.01 .
+
+tomb:t00141.r2 a t:husband.n.01 ;
+  :att "GELIEFD" ,
+       "LIEVE" ;
+  :tgt tomb:t00141.p2 .
+
+tomb:t00141.r3 a t:mother.n.01 .
+
+tomb:t00141.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00141.jpg" ;
+  :date "2019-10-02T10:32:33"^^xsd:dateTime ;
+  geo:lat 53.2065 ;
+  geo:long 6.5694 ;
+  :nd "+53.2065+006.5694"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

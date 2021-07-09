@@ -1,0 +1,67 @@
+
+tomb:t00128 a t:tombstone.n.01 ;
+  :image tomb:t00128.im1 ;
+  :site site:gr9725ACgroningen ;
+  :ent tomb:t00128.p1 ,
+       tomb:t00128.p2 ;
+  :sym tomb:t00128.s1 ,
+       tomb:t00128.s4 .
+
+tomb:t00128.c1 a t:village.n.02 ;
+  :geo place:Muntendam2750535 ;
+  :place "MUNTENDAM" .
+
+tomb:t00128.c2 a t:city.n.01 ;
+  :geo place:Groningen2755251 ;
+  :place "GRONINGEN" .
+
+tomb:t00128.c3 a t:village.n.02 ;
+  :geo place:Tolbert2746234 ;
+  :place "TOLBERT" .
+
+tomb:t00128.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1862-10-13" ;
+  :dod "1945-09-01" ;
+  :nam "HEINE HEININGA" ;
+  :pob tomb:t00128.c1 ;
+  :pod tomb:t00128.c2 ;
+  :rol tomb:t00128.r1 .
+
+tomb:t00128.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1865-07-17" ;
+  :dod "1915-09-28" ;
+  :nam "SIEPKE TEN HOOR" ;
+  :pob tomb:t00128.c3 ;
+  :pod tomb:t00128.c2 ;
+  :rol tomb:t00128.r2 .
+
+tomb:t00128.r1 a t:father.n.01 .
+
+tomb:t00128.r2 a t:mother.n.01 .
+
+tomb:t00128.s1 a t:composite.n.01 ;
+  :prt tomb:t00128.s2 ,
+       tomb:t00128.s3 .
+
+tomb:t00128.s2 a t:frond.n.01 .
+
+tomb:t00128.s3 a t:ribbon.n.01 .
+
+tomb:t00128.s4 a t:frond.n.01 .
+
+tomb:t00128.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00128.jpg" ;
+  :date "2019-10-01T09:57:48"^^xsd:dateTime ;
+  geo:lat 53.2059 ;
+  geo:long 6.5714 ;
+  :nd "+53.2059+006.5714"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

@@ -1,0 +1,45 @@
+
+tomb:t01016 a t:tombstone.n.01 ;
+  :image tomb:t01016.im1 ;
+  :site site:gr9686RSbeerta ;
+  :ent tomb:t01016.p1 ,
+       tomb:t01016.p2 ;
+  :lan "NLD" ;
+  :sym tomb:t01016.s1 ,
+       tomb:t01016.s2 ,
+       tomb:t01016.s3 .
+
+tomb:t01016.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1811-08-10" ;
+  :dod "1852-02-19" ;
+  :nam "GIESEL J. ELSINGA" ;
+  :rol tomb:t01016.r1 .
+
+tomb:t01016.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "REINDER A. GEERTSEMA" .
+
+tomb:t01016.r1 a t:spouse.n.01 ;
+  :tgt tomb:t01016.p2 .
+
+tomb:t01016.s1 a t:frond.n.01 .
+
+tomb:t01016.s2 a t:frond.n.01 .
+
+tomb:t01016.s3 a t:ribbon.n.01 .
+
+tomb:t01016.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t01016.jpg" ;
+  :date "2020-04-04T10:44:03"^^xsd:dateTime ;
+  geo:lat 53.1755 ;
+  geo:long 7.0967 ;
+  :nd "+53.1755+007.0967"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

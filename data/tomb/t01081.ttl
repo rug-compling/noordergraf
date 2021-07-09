@@ -1,0 +1,43 @@
+
+tomb:t01081 a t:tombstone.n.01 ;
+  :image tomb:t01081.im1 ;
+  :ent tomb:t01081.p1 ,
+       tomb:t01081.p2 ;
+  :lan "NLD" .
+
+tomb:t01081.c1 a t:village.n.02 ;
+  :geo place:BadNieuweschans2750250 ;
+  :place "BAD NIEUWESCHANS" .
+
+tomb:t01081.c2 a t:town.n.01 ;
+  :geo place:Vries2745189 ;
+  :place "VRIES" .
+
+tomb:t01081.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1892-10-08" ;
+  :dod "1963-03-28" ;
+  :nam "JANTJE BRUL" ;
+  :pob tomb:t01081.c1 ;
+  :pod tomb:t01081.c2 ;
+  :rol tomb:t01081.r1 .
+
+tomb:t01081.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "PIETER WIERENGA" .
+
+tomb:t01081.r1 a t:spouse.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t01081.p2 .
+
+tomb:t01081.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t01081.jpg" ;
+  :date "2020-05-20T19:32:56"^^xsd:dateTime .
+

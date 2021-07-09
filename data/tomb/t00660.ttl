@@ -1,0 +1,58 @@
+
+tomb:t00660 a t:tombstone.n.01 ;
+  :image tomb:t00660.im1 ;
+  :site site:fr8701DWbolsward ;
+  :ent tomb:t00660.p1 ,
+       tomb:t00660.p2 ;
+  :quo "JEZUS ANTWOORDDE: \\ IK ZAL U TOT MIJ NEMEN \\ OP DAT OOK GIJ \\ ZIJN MOOGT WAAR IK BEN"@nld ;
+  :ref tomb:t00660.v1 ;
+  :sym tomb:t00660.s1 .
+
+tomb:t00660.b1 a t:John.n.05 ;
+  :prt tomb:t00660.c3 .
+
+tomb:t00660.c3 a t:chapter.n.01 ;
+  :ord 14 ;
+  :prt tomb:t00660.v1 .
+
+tomb:t00660.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1887-07-06" ;
+  :dod "1938-02-02" ;
+  :nam "PEITER LAUTENBACH" ;
+  :rol tomb:t00660.r1 .
+
+tomb:t00660.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1893-07-25" ;
+  :dod "1971-04-02" ;
+  :nam "TJITSKE HESLINGA" ;
+  :rol tomb:t00660.r2 .
+
+tomb:t00660.r1 a t:parent.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t00660.p3 .
+
+tomb:t00660.r2 a t:parent.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t00660.p3 .
+
+tomb:t00660.s1 a t:frond.n.01 .
+
+tomb:t00660.v1 a t:verse.n.01 ;
+  :ord 3 .
+
+tomb:t00660.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00660.jpg" ;
+  :date "2019-12-14T13:59:38"^^xsd:dateTime ;
+  geo:lat 53.0671 ;
+  geo:long 5.5250 ;
+  :nd "+53.0671+005.5250"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

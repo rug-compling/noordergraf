@@ -1,0 +1,36 @@
+
+tomb:t00500 a t:tombstone.n.01 ;
+  :image tomb:t00500.im1 ;
+  :site site:fr8917AVleeuwarden ;
+  :ent tomb:t00500.p1 .
+
+tomb:t00500.c1 a t:village.n.02 ;
+  :geo place:Stiens2746705 ;
+  :place "STIENS" .
+
+tomb:t00500.c2 a t:village.n.02 ;
+  :geo place:Grou2755052 ;
+  :place "GROUW" .
+
+tomb:t00500.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1888-10-21" ;
+  :dod "1919-10-11" ;
+  :nam "IJPE RAUWERDA" ;
+  :pob tomb:t00500.c1 ;
+  :pod tomb:t00500.c2 .
+
+tomb:t00500.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00500.jpg" ;
+  :date "2019-11-16T13:53:09"^^xsd:dateTime ;
+  geo:lat 53.2091 ;
+  geo:long 5.7906 ;
+  :nd "+53.2091+005.7906"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

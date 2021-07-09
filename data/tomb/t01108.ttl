@@ -1,0 +1,56 @@
+
+tomb:t01108 a t:tombstone.n.01 ;
+  :ent tomb:t01108.p1 ,
+       tomb:t01108.p2 ;
+  :quo "RUST ZACHT!"@nld ;
+  :sym tomb:t01108.s1 .
+
+tomb:t01108.c1 a t:village.n.02 ;
+  :geo place:Grijpskerk2755317 ;
+  :place "GRIJPSKERK" .
+
+tomb:t01108.c2 a t:village.n.02 ;
+  :geo place:Westergeest2744744 ;
+  :place "WESTERGEEST" .
+
+tomb:t01108.c3 a t:province.n.01 ;
+  :geo place:ProvincieFriesland2755812 ;
+  :mem tomb:t01108.c2 ;
+  :place "FRIESLAND" .
+
+tomb:t01108.g1 a t:group.n.01 .
+
+tomb:t01108.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1843-10-05" ;
+  :dod "1910-10-31" ;
+  :nam "AALTJE DE POEL" ;
+  :pob tomb:t01108.c1 ;
+  :pod tomb:t01108.c1 ;
+  :rol tomb:t01108.r1 .
+
+tomb:t01108.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1846-07-31" ;
+  :dod "1917-01-20" ;
+  :nam "SIERK KOOISTER" ;
+  :pob tomb:t01108.c2 ;
+  :pod tomb:t01108.c1 ;
+  :rol tomb:t01108.r2 .
+
+tomb:t01108.r1 a t:parent.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t01108.g1 .
+
+tomb:t01108.r2 a t:parent.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t01108.g1 .
+
+tomb:t01108.s1 a t:composite.n.01 ;
+  :prt tomb:t01108.s2 ,
+       tomb:t01108.s3 .
+
+tomb:t01108.s2 a t:frond.n.01 .
+
+tomb:t01108.s3 a t:ribbon.n.01 .
+

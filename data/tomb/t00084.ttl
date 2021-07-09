@@ -1,0 +1,63 @@
+
+tomb:t00084 a t:tombstone.n.01 ;
+  :image tomb:t00084.im1 ;
+  :site site:gr9721AAgroningen ;
+  :ent tomb:t00084.p1 ,
+       tomb:t00084.p2 ,
+       tomb:t00084.p3 ;
+  :sym tomb:t00084.s1 .
+
+tomb:t00084.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1893-06-28" ;
+  :dod "1964-11-12" ;
+  :nam "JAN KORSMAN" ;
+  :rol tomb:t00084.r1 ,
+       tomb:t00084.r2 ,
+       tomb:t00084.r3 ,
+       tomb:t00084.r4 .
+
+tomb:t00084.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1905-07-07" ;
+  :dod "1986-04-01" ;
+  :nam "JOHANNA S.M. FISCHER" ;
+  :rol tomb:t00084.r5 ,
+       tomb:t00084.r6 .
+
+tomb:t00084.p3 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "F.P. VRIESE" .
+
+tomb:t00084.r1 a t:father.n.01 .
+
+tomb:t00084.r2 a t:grandfather.n.01 .
+
+tomb:t00084.r3 a t:husband.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00084.p2 .
+
+tomb:t00084.r4 a t:widower.n.01 ;
+  :tgt tomb:t00084.p3 .
+
+tomb:t00084.r5 a t:mother.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00084.r6 a t:grandmother.n.01 .
+
+tomb:t00084.s1 a t:cross.n.03 .
+
+tomb:t00084.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00084.jpg" ;
+  :date "2019-09-25T10:58:02"^^xsd:dateTime ;
+  geo:lat 53.2035 ;
+  geo:long 6.5731 ;
+  :nd "+53.2035+006.5731"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

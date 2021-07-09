@@ -1,0 +1,52 @@
+
+tomb:t00731 a t:tombstone.n.01 ;
+  :image tomb:t00731.im1 ;
+  :site site:dr7811HEemmen ;
+  :ent tomb:t00731.p1 ,
+       tomb:t00731.p2 ;
+  :quo "RUST ZACHT"@nld .
+
+tomb:t00731.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1873-02-24" ;
+  :dod "1959-04-24" ;
+  :nam "BEREND HENDRIKS" ;
+  :rol tomb:t00731.r1 ,
+       tomb:t00731.r2 .
+
+tomb:t00731.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1882-09-29" ;
+  :dod "1971-04-12" ;
+  :nam "HENDREKIEN HILBRANDS" ;
+  :rol tomb:t00731.r3 ,
+       tomb:t00731.r4 .
+
+tomb:t00731.r1 a t:parent.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00731.p3 .
+
+tomb:t00731.r2 a t:father.n.01 ;
+  :tgt tomb:t00731.p3 .
+
+tomb:t00731.r3 a t:parent.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00731.p3 .
+
+tomb:t00731.r4 a t:mother.n.01 ;
+  :tgt tomb:t00731.p3 .
+
+tomb:t00731.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00731.jpg" ;
+  :date "2019-12-21T13:07:45"^^xsd:dateTime ;
+  geo:lat 52.7821 ;
+  geo:long 6.8974 ;
+  :nd "+52.7821+006.8974"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

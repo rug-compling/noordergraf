@@ -1,0 +1,42 @@
+
+tomb:t01082 a t:tombstone.n.01 ;
+  :image tomb:t01082.im1 ;
+  :ent tomb:t01082.p1 ,
+       tomb:t01082.p2 ;
+  :lan "NLD" .
+
+tomb:t01082.c1 a t:village.n.02 ;
+  :geo place:Garmerwolde2755728 ;
+  :place "GARMERWOLDE" .
+
+tomb:t01082.c2 a t:town.n.01 ;
+  :geo place:Vries2745189 ;
+  :place "VRIES" .
+
+tomb:t01082.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1890-06-06" ;
+  :dod "1965-05-04" ;
+  :nam "PIETER WIERENGA" ;
+  :pob tomb:t01082.c1 ;
+  :pod tomb:t01082.c2 ;
+  :rol tomb:t01082.r1 .
+
+tomb:t01082.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "JANTJE BRUL" .
+
+tomb:t01082.r1 a t:widower.n.01 ;
+  :tgt tomb:t01082.p2 .
+
+tomb:t01082.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t01082.jpg" ;
+  :date "2020-05-20T19:32:51"^^xsd:dateTime .
+

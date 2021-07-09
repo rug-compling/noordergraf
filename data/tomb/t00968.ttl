@@ -1,0 +1,46 @@
+
+tomb:t00968 a t:tombstone.n.01 ;
+  :image tomb:t00968.im1 ;
+  :site site:gr9752CMharen ;
+  :ent tomb:t00968.p1 ,
+       tomb:t00968.p2 ;
+  :quo "JEZUS ZEIDE DIE IN \\ MIJ GELOOFT ZAL LEVEN AL \\ WARE HIJ OOK GESTORVEN"@nld ;
+  :sym tomb:t00968.s1 .
+
+tomb:t00968.a1 a t:weeping.a.02 .
+
+tomb:t00968.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dod "1932-10-06" ;
+  :nam "JACOB VOS" ;
+  :rol tomb:t00968.r1 ,
+       tomb:t00968.r2 .
+
+tomb:t00968.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "TRIJNE BOS" .
+
+tomb:t00968.r1 a t:widower.n.01 ;
+  :beg "XX-XX-1916" ;
+  :tgt tomb:t00968.p2 .
+
+tomb:t00968.r2 a t:father.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00968.s1 a t:willow.n.01 ;
+  :att tomb:t00968.a1 .
+
+tomb:t00968.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00968.jpg" ;
+  :date "2020-03-27T16:56:33"^^xsd:dateTime ;
+  geo:lat 53.1620 ;
+  geo:long 6.6131 ;
+  :nd "+53.1620+006.6131"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

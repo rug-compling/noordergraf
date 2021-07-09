@@ -1,0 +1,71 @@
+
+tomb:t00191 a t:tombstone.n.01 ;
+  :image tomb:t00191.im1 ;
+  :site site:gr9722SNgroningen ;
+  :ent tomb:t00191.g1 ,
+       tomb:t00191.p1 ,
+       tomb:t00191.p2 ,
+       tomb:t00191.p3 ;
+  :sym tomb:t00191.s1 .
+
+tomb:t00191.a1 a t:weeping.a.02 .
+
+tomb:t00191.c1 a t:village.n.02 ;
+  :geo place:Mildam2750805 ;
+  :place "MILDAM" .
+
+tomb:t00191.c2 a t:village.n.02 ;
+  :geo place:Oudeschoot2749007 ;
+  :place "OUDESCHOOT" .
+
+tomb:t00191.c3 a t:city.n.01 ;
+  :geo place:Groningen2755251 ;
+  :place "GRONINGEN" .
+
+tomb:t00191.g1 a t:group.n.01 ;
+  :mem tomb:t00191.p1 ,
+       tomb:t00191.p2 ;
+  :rol tomb:t00191.r1 .
+
+tomb:t00191.p1 a t:person.n.01 ;
+  :dob "1898-03-06" ;
+  :dod "1944-04-15" ;
+  :nam "R. SOETENDAL" ;
+  :pob tomb:t00191.c1 ;
+  :pod tomb:t00191.c2 .
+
+tomb:t00191.p2 a t:person.n.01 ;
+  :dob "1905-01-10" ;
+  :dod "1939-12-11" ;
+  :nam "A. VAN DER SCHOOT" ;
+  :pob tomb:t00191.c2 ;
+  :pod tomb:t00191.c3 .
+
+tomb:t00191.p3 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "HENDRIK" ;
+  :rol tomb:t00191.r3 .
+
+tomb:t00191.r1 a t:parent.n.01 ;
+  :tgt tomb:t00191.p3 .
+
+tomb:t00191.r3 a t:son.n.01 ;
+  :tgt tomb:t00191.g1 .
+
+tomb:t00191.s1 a t:willow.n.01 ;
+  :att tomb:t00191.a1 .
+
+tomb:t00191.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00191.jpg" ;
+  :date "2019-10-05T09:58:27"^^xsd:dateTime ;
+  geo:lat 53.1899 ;
+  geo:long 6.5930 ;
+  :nd "+53.1899+006.5930"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

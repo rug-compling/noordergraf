@@ -1,0 +1,45 @@
+
+tomb:t01126 a t:tombstone.n.01 ;
+  :ent tomb:t01126.p1 ;
+  :lan "NLD" ;
+  :ref tomb:t01126.v1 .
+
+tomb:t01126.b1 a t:Epistle_to_the_Romans.n.04 ;
+  :prt tomb:t01126.c3 .
+
+tomb:t01126.c3 a t:chapter.n.01 ;
+  :ord 8 ;
+  :prt tomb:t01126.v1 .
+
+tomb:t01126.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1927-05-01" ;
+  :dod "1999-07-23" ;
+  :nam "JELTE GEERT HAAKSEMA" ;
+  :rol tomb:t01126.r1 ,
+       tomb:t01126.r2 ,
+       tomb:t01126.r3 ,
+       tomb:t01126.r4 .
+
+tomb:t01126.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "W. BULTENA" .
+
+tomb:t01126.p3 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "B. DIJKINGA" .
+
+tomb:t01126.r1 a t:father.n.01 .
+
+tomb:t01126.r2 a t:grandfather.n.01 .
+
+tomb:t01126.r3 a t:spouse.n.01 ;
+  :tgt tomb:t01126.p2 .
+
+tomb:t01126.r4 a t:spouse.n.01 ;
+  :bef tomb:t01126.r3 ;
+  :tgt tomb:t01126.p3 .
+
+tomb:t01126.v1 a t:verse.n.01 ;
+  :ord 37 .
+

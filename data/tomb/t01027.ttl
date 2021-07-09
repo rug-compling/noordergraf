@@ -1,0 +1,67 @@
+
+tomb:t01027 a t:tombstone.n.01 ;
+  :image tomb:t01027.im1 ;
+  :site site:gr9906PPbierum ;
+  :ent tomb:t01027.p1 ,
+       tomb:t01027.p2 ,
+       tomb:t01027.p3 ;
+  :quo "WAT DE MENSCH ZAAIT, DAT ZAL HIJ OOK MAAIJEN"@nld ;
+  :ref tomb:t01027.v1 ;
+  :sym tomb:t01027.s1 ,
+       tomb:t01027.s2 ,
+       tomb:t01027.s3 ,
+       tomb:t01027.s4 .
+
+tomb:t01027.b1 a t:Galations.n.02 ;
+  :prt tomb:t01027.c3 .
+
+tomb:t01027.c3 a t:chapter.n.01 ;
+  :ord 6 ;
+  :prt tomb:t01027.v1 .
+
+tomb:t01027.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1841-07-29" ;
+  :dod "1878-04-30" ;
+  :nam "MARTJE PRINCIPAAL" ;
+  :rol tomb:t01027.r1 .
+
+tomb:t01027.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "P. DAM" .
+
+tomb:t01027.p3 a t:person.n.01 ;
+  :nam "W. MEIJER" ;
+  :occ tomb:t01027.r2 .
+
+tomb:t01027.r1 a t:spouse.n.01 ;
+  :tgt tomb:t01027.p2 .
+
+tomb:t01027.r2 a t:designer.n.01 ;
+  :tgt tomb:t01027 .
+
+tomb:t01027.s1 a t:butterfly.n.01 .
+
+tomb:t01027.s2 a t:scythe.n.01 .
+
+tomb:t01027.s3 a t:entity.n.01 .
+
+tomb:t01027.s4 a t:ribbon.n.01 .
+
+tomb:t01027.v1 a t:verse.n.01 ;
+  :ord 7 .
+
+tomb:t01027.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t01027.jpg" ;
+  :date "2020-04-17T18:28:50"^^xsd:dateTime ;
+  geo:lat 53.3809 ;
+  geo:long 6.8595 ;
+  :nd "+53.3809+006.8595"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

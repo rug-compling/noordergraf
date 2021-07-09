@@ -1,0 +1,94 @@
+
+tomb:t00845 a t:tombstone.n.01 ;
+  :image tomb:t00845.im1 ;
+  :site site:fr8899AWoost_vlieland ;
+  :ent tomb:t00845.p1 ,
+       tomb:t00845.p2 ,
+       tomb:t00845.p3 ,
+       tomb:t00845.p4 ;
+  :lan "NLD" ;
+  :sym tomb:t00845.s1 ,
+       tomb:t00845.s2 .
+
+tomb:t00845.m1 a t:measure.n.02 ;
+  :mem tomb:t00845.u1 ;
+  :qua 88 .
+
+tomb:t00845.m2 a t:measure.n.02 ;
+  :mem tomb:t00845.u2 ;
+  :qua 74 .
+
+tomb:t00845.m3 a t:measure.n.02 ;
+  :mem tomb:t00845.u3 ;
+  :qua 24 .
+
+tomb:t00845.m4 a t:measure.n.02 ;
+  :mem tomb:t00845.u4 ;
+  :qua 84 .
+
+tomb:t00845.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :age tomb:t00845.m1 ;
+  :nam "CORNELIS DE LANGE" ;
+  :rol tomb:t00845.r1 .
+
+tomb:t00845.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :age tomb:t00845.m2 ;
+  :nam "ENGELTJE PEESCH" ;
+  :rol tomb:t00845.r2 .
+
+tomb:t00845.p3 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :age tomb:t00845.m3 ;
+  :nam "TRIJNTJE" ;
+  :rol tomb:t00845.r3 .
+
+tomb:t00845.p4 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :age tomb:t00845.m4 ;
+  :nam "FROUWTJE" ;
+  :rol tomb:t00845.r4 .
+
+tomb:t00845.r1 a t:parent.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t00845.p5 .
+
+tomb:t00845.r2 a t:parent.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t00845.p5 .
+
+tomb:t00845.r3 a t:sister.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00845.p5 .
+
+tomb:t00845.r4 a t:sister.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00845.p5 .
+
+tomb:t00845.s1 a t:oak.n.01 .
+
+tomb:t00845.s2 a t:branch.n.02 .
+
+tomb:t00845.u1 a t:year.n.01 .
+
+tomb:t00845.u2 a t:year.n.01 .
+
+tomb:t00845.u3 a t:year.n.01 .
+
+tomb:t00845.u4 a t:year.n.01 .
+
+tomb:t00845.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00845.jpg" ;
+  :date "2020-02-20T14:42:45"^^xsd:dateTime ;
+  geo:lat 53.2956 ;
+  geo:long 5.0650 ;
+  :nd "+53.2956+005.0650"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

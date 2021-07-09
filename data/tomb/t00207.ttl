@@ -1,0 +1,58 @@
+
+tomb:t00207 a t:tombstone.n.01 ;
+  :image tomb:t00207.im1 ;
+  :site site:gr9723EWgroningen ;
+  :ent tomb:t00207.p1 ;
+  :sym tomb:t00207.s1 .
+
+tomb:t00207.a1 a t:inverted.a.01 .
+
+tomb:t00207.a2 a t:inverted.a.01 .
+
+tomb:t00207.c1 a t:village.n.02 ;
+  :geo place:Middelbert2750902 ;
+  :place "MIDDELBERT" .
+
+tomb:t00207.o1 a t:principal.n.02 ;
+  :beg "XX-11-1836" ;
+  :end "XX-XX-1883" ;
+  :hco "13320" ;
+  :loc tomb:t00207.c1 .
+
+tomb:t00207.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1810-03-17" ;
+  :dod "1884-02-03" ;
+  :nam "B.J. ZIJLSTRA" ;
+  :occ tomb:t00207.o1 .
+
+tomb:t00207.s1 a t:composite.n.01 ;
+  :prt tomb:t00207.s2 ,
+       tomb:t00207.s3 ,
+       tomb:t00207.s4 ,
+       tomb:t00207.s5 .
+
+tomb:t00207.s2 a t:ribbon.n.01 .
+
+tomb:t00207.s3 a t:wreath.n.01 .
+
+tomb:t00207.s4 a t:torch.n.01 ;
+  :att tomb:t00207.a1 .
+
+tomb:t00207.s5 a t:torch.n.01 ;
+  :att tomb:t00207.a2 .
+
+tomb:t00207.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00207.jpg" ;
+  :date "2019-10-08T14:57:44"^^xsd:dateTime ;
+  geo:lat 53.2223 ;
+  geo:long 6.6365 ;
+  :nd "+53.2223+006.6365"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

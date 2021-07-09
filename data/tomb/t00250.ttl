@@ -1,0 +1,55 @@
+
+tomb:t00250 a t:tombstone.n.01 ;
+  :image tomb:t00250.im1 ;
+  :site site:gr9725ACgroningen ;
+  :ent tomb:t00250.p1 ,
+       tomb:t00250.p2 ,
+       tomb:t00250.p3 ,
+       tomb:t00250.p4 .
+
+tomb:t00250.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1841-06-17" ;
+  :dod "1874-05-10" ;
+  :nam "EGBERTIEN BOVENSCHULTE" ;
+  :rol tomb:t00250.r1 .
+
+tomb:t00250.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1841-06-17" ;
+  :dod "1874-05-10" ;
+  :nam "JANTJE NIEWOLD" ;
+  :rol tomb:t00250.r2 .
+
+tomb:t00250.p3 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1841-09-02" ;
+  :dod "1929-03-14" ;
+  :nam "BEREND RICHIE" .
+
+tomb:t00250.p4 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1870-11-22" ;
+  :dod "1937-05-01" ;
+  :nam "KOOSJE RICHIE" .
+
+tomb:t00250.r1 a t:wife.n.01 ;
+  :tgt tomb:t00250.p3 .
+
+tomb:t00250.r2 a t:wife.n.01 ;
+  :tgt tomb:t00250.p3 .
+
+tomb:t00250.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00250.jpg" ;
+  :date "2019-10-10T09:48:35"^^xsd:dateTime ;
+  geo:lat 53.2064 ;
+  geo:long 6.5720 ;
+  :nd "+53.2064+006.5720"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

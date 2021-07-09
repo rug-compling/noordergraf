@@ -1,0 +1,48 @@
+
+tomb:t00619 a t:tombstone.n.01 ;
+  :image tomb:t00619.im1 ;
+  :site site:gr9601KAhoogezand ;
+  :ent tomb:t00619.p1 ,
+       tomb:t00619.p2 ;
+  :lan "NLD" .
+
+tomb:t00619.c1 a t:village.n.02 ;
+  :geo place:Borgercompagnie2758618 ;
+  :place "BORGERCOMPAGNIE" .
+
+tomb:t00619.c2 a t:village.n.02 ;
+  :geo place:Zuidlaren2743680 ;
+  :place "ZUIDLAREN" .
+
+tomb:t00619.c3 a t:village.n.02 ;
+  :geo place:Glimmen2755495 ;
+  :place "GLIMMEN" .
+
+tomb:t00619.p1 a t:person.n.01 ;
+  :dob "1900-11-04" ;
+  :dod "1993-01-08" ;
+  :nam "J.W. MULDER" ;
+  :pob tomb:t00619.c1 ;
+  :pod tomb:t00619.c2 .
+
+tomb:t00619.p2 a t:person.n.01 ;
+  :dob "1903-07-26" ;
+  :dod "2002-06-29" ;
+  :nam "L. MULDER" ;
+  :pob tomb:t00619.c3 ;
+  :pod tomb:t00619.c2 .
+
+tomb:t00619.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00619.jpg" ;
+  :date "2019-11-23T10:03:11"^^xsd:dateTime ;
+  geo:lat 53.1643 ;
+  geo:long 6.7541 ;
+  :nd "+53.1643+006.7541"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

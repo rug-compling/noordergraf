@@ -1,0 +1,57 @@
+
+tomb:t01004 a t:tombstone.n.01 ;
+  :image tomb:t01004.im1 ;
+  :site site:gr9686RSbeerta ;
+  :ent tomb:t01004.g1 ,
+       tomb:t01004.p1 ,
+       tomb:t01004.p2 ,
+       tomb:t01004.p3 ;
+  :quo "ZOEKT DEN HEER EN LEEFT"@nld ;
+  :ref "AMOS 5:6"@nld ;
+  :sym tomb:t01004.s1 ,
+       tomb:t01004.s2 ,
+       tomb:t01004.s3 .
+
+tomb:t01004.a1 a t:weeping.a.02 .
+
+tomb:t01004.g1 a t:group.n.01 ;
+  :mem tomb:t01004.p2 ,
+       tomb:t01004.p3 .
+
+tomb:t01004.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1871-10-23" ;
+  :dod "1892-02-15" ;
+  :nam "STIENTJE WANMAKER" ;
+  :rol tomb:t01004.r1 .
+
+tomb:t01004.p2 a t:person.n.01 ;
+  :nam "J. WANMAKER" .
+
+tomb:t01004.p3 a t:person.n.01 ;
+  :nam "F. HEIKENS" .
+
+tomb:t01004.r1 a t:daughter.n.01 ;
+  :tgt tomb:t01004.g1 .
+
+tomb:t01004.s1 a t:willow.n.01 ;
+  :att tomb:t01004.a1 .
+
+tomb:t01004.s2 a t:scythe.n.01 .
+
+tomb:t01004.s3 a t:butterfly.n.01 .
+
+tomb:t01004.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t01004.jpg" ;
+  :date "2020-04-04T10:50:13"^^xsd:dateTime ;
+  geo:lat 53.1757 ;
+  geo:long 7.0949 ;
+  :nd "+53.1757+007.0949"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

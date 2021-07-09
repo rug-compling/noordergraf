@@ -1,0 +1,38 @@
+
+tomb:t00093 a t:tombstone.n.01 ;
+  :image tomb:t00093.im1 ;
+  :site site:gr9721AAgroningen ;
+  :ent tomb:t00093.p1 ,
+       tomb:t00093.p2 ;
+  :quo "REQUIESCAT IN PACE@lat" .
+
+tomb:t00093.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1910-02-05" ;
+  :dod "1965-02-26" ;
+  :nam "FREDERICUS H. HALSEMA" ;
+  :rol tomb:t00093.r1 .
+
+tomb:t00093.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1916-02-27" ;
+  :dod "1989-11-11" ;
+  :nam "WILHELMINA J. FRANKENA" .
+
+tomb:t00093.r1 a t:wife.n.01 ;
+  :tgt tomb:t00093.p2 .
+
+tomb:t00093.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00093.jpg" ;
+  :date "2019-09-25T10:56:28"^^xsd:dateTime ;
+  geo:lat 53.2035 ;
+  geo:long 6.5731 ;
+  :nd "+53.2035+006.5731"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

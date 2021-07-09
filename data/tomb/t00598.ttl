@@ -1,0 +1,78 @@
+
+tomb:t00598 a t:tombstone.n.01 ;
+  :image tomb:t00598.im1 ;
+  :site site:gr9951TNwinsum ;
+  :ent tomb:t00598.p1 ,
+       tomb:t00598.p2 ,
+       tomb:t00598.p3 ;
+  :ref "PSALM 37:5"@nld ;
+  :sym tomb:t00598.s1 .
+
+tomb:t00598.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1917-11-19" ;
+  :dod "1989-11-15" ;
+  :nam "HERMAN JOHAN POORT" ;
+  :rol tomb:t00598.r1 ,
+       tomb:t00598.r2 ,
+       tomb:t00598.r3 .
+
+tomb:t00598.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1913-11-21" ;
+  :dod "2004-03-19" ;
+  :nam "ANTJE BREMER" ;
+  :rol tomb:t00598.r4 ,
+       tomb:t00598.r5 .
+
+tomb:t00598.p3 a t:person.n.01 ;
+  :rol tomb:t00598.r6 ,
+       tomb:t00598.r7 ,
+       tomb:t00598.r8 ,
+       tomb:t00598.r9 .
+
+tomb:t00598.r1 a t:husband.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00598.p2 .
+
+tomb:t00598.r2 a t:father.n.01 ;
+  :tgt tomb:t00598.p3 .
+
+tomb:t00598.r3 a t:grandfather.n.01 ;
+  :tgt tomb:t00598.p3 .
+
+tomb:t00598.r4 a t:mother.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00598.p3 .
+
+tomb:t00598.r5 a t:grandmother.n.01 ;
+  :tgt tomb:t00598.p3 .
+
+tomb:t00598.r6 a t:child.n.02 ;
+  :tgt tomb:t00598.p1 .
+
+tomb:t00598.r7 a t:child.n.02 ;
+  :tgt tomb:t00598.p2 .
+
+tomb:t00598.r8 a t:grandchild.n.01 ;
+  :tgt tomb:t00598.p1 .
+
+tomb:t00598.r9 a t:grandchild.n.01 ;
+  :tgt tomb:t00598.p2 .
+
+tomb:t00598.s1 a t:treble_clef.n.01 .
+
+tomb:t00598.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00598.jpg" ;
+  :date "2019-11-30T14:13:18"^^xsd:dateTime ;
+  geo:lat 53.3266 ;
+  geo:long 6.5117 ;
+  :nd "+53.3266+006.5117"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

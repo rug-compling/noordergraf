@@ -1,0 +1,63 @@
+
+tomb:t00678 a t:tombstone.n.01 ;
+  :image tomb:t00678.im1 ;
+  :site site:fr8701DWbolsward ;
+  :ent tomb:t00678.p1 ,
+       tomb:t00678.p2 ;
+  :lan "NLD" ;
+  :ref tomb:t00678.v2 .
+
+tomb:t00678.b1 a t:John.n.05 ;
+  :prt tomb:t00678.c3 .
+
+tomb:t00678.c3 a t:chapter.n.01 ;
+  :ord 25 ;
+  :prt tomb:t00678.v2 .
+
+tomb:t00678.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1905-08-27" ;
+  :dod "1974-06-07" ;
+  :nam "DATE DIJKSTRA" ;
+  :rol tomb:t00678.r1 ,
+       tomb:t00678.r2 ,
+       tomb:t00678.r3 .
+
+tomb:t00678.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1908-09-19" ;
+  :dod "1989-03-15" ;
+  :nam "BERBER BROUWER" ;
+  :rol tomb:t00678.r4 ,
+       tomb:t00678.r5 .
+
+tomb:t00678.r1 a t:husband.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00678.p2 .
+
+tomb:t00678.r2 a t:father.n.01 .
+
+tomb:t00678.r3 a t:grandfather.n.01 .
+
+tomb:t00678.r4 a t:mother.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00678.r5 a t:grandmother.n.01 .
+
+tomb:t00678.v2 a t:verse.n.01 ;
+  :ord 11 .
+
+tomb:t00678.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00678.jpg" ;
+  :date "2019-12-14T13:30:38"^^xsd:dateTime ;
+  geo:lat 53.0687 ;
+  geo:long 5.5221 ;
+  :nd "+53.0687+005.5221"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

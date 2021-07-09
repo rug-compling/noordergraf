@@ -1,0 +1,43 @@
+
+tomb:t00860 a t:tombstone.n.01 ;
+  :image tomb:t00860.im1 ;
+  :site site:dr7841CDsleen ;
+  :ent tomb:t00860.p1 ;
+  :quo "RUST ZACHT GELIEFDE ZUSTER"@nld ;
+  :sym tomb:t00860.s1 .
+
+tomb:t00860.a1 a t:weeping.a.02 .
+
+tomb:t00860.c1 a t:village.n.02 ;
+  :geo place:Erm2756040 ;
+  :place "ERM" .
+
+tomb:t00860.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1878-06-25" ;
+  :dod "1905-12-19" ;
+  :nam "HENDRIKJE KAMPING" ;
+  :pob tomb:t00860.c1 ;
+  :pod tomb:t00860.c1 ;
+  :rol tomb:t00860.r1 .
+
+tomb:t00860.r1 a t:sister.n.01 ;
+  :att "GELIEFDE" .
+
+tomb:t00860.s1 a t:willow.n.01 ;
+  :att tomb:t00860.a1 .
+
+tomb:t00860.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00860.jpg" ;
+  :date "2020-02-15T15:34:24"^^xsd:dateTime ;
+  geo:lat 52.7756 ;
+  geo:long 6.8027 ;
+  :nd "+52.7756+006.8027"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

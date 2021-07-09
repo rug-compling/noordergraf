@@ -1,0 +1,45 @@
+
+tomb:t00893 a t:tombstone.n.01 ;
+  :image tomb:t00893.im1 ;
+  :site site:gr9351RLtolbert ;
+  :ent tomb:t00893.p1 ,
+       tomb:t00893.p2 ;
+  :quo "MIJNE HOOP IS \\ OP U, O HEERE!"@nld ;
+  :sym tomb:t00893.s1 ,
+       tomb:t00893.s2 ,
+       tomb:t00893.s3 .
+
+tomb:t00893.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1792-01-16" ;
+  :dod "1862-02-28" ;
+  :nam "HINDERKIEN WILLEMS" ;
+  :rol tomb:t00893.r1 .
+
+tomb:t00893.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "JAN M. TEN HOOR" .
+
+tomb:t00893.r1 a t:spouse.n.01 ;
+  :tgt tomb:t00893.p2 .
+
+tomb:t00893.s1 a t:skull.n.01 .
+
+tomb:t00893.s2 a t:bone.n.01 .
+
+tomb:t00893.s3 a t:bone.n.01 .
+
+tomb:t00893.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00893.jpg" ;
+  :date "2020-03-07T14:35:32"^^xsd:dateTime ;
+  geo:lat 53.1726 ;
+  geo:long 6.3613 ;
+  :nd "+53.1726+006.3613"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

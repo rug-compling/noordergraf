@@ -1,0 +1,72 @@
+
+tomb:t00077 a t:tombstone.n.01 ;
+  :image tomb:t00077.im1 ;
+  :site site:gr9721AAgroningen ;
+  :ent tomb:t00077.p1 ,
+       tomb:t00077.p2 ,
+       tomb:t00077.p3 ,
+       tomb:t00077.p4 ,
+       tomb:t00077.p5 .
+
+tomb:t00077.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1898-10-30" ;
+  :dod "1963-01-01" ;
+  :nam "MAGERMANS" ,
+       "RIE VAN VEEN" ;
+  :rol tomb:t00077.r2 ,
+       tomb:t00077.r3 .
+
+tomb:t00077.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1922-04-13" ;
+  :dod "1986-04-29" ;
+  :nam "LEO SMIT" ;
+  :rol tomb:t00077.r1 ,
+       tomb:t00077.r4 ,
+       tomb:t00077.r5 .
+
+tomb:t00077.p3 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "JETTIE VAN VEEN" .
+
+tomb:t00077.p4 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "BARTH" .
+
+tomb:t00077.p5 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "RIEKJE" .
+
+tomb:t00077.r1 a t:husband.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00077.p3 .
+
+tomb:t00077.r2 a t:mother.n.01 ;
+  :tgt tomb:t00077.p3 .
+
+tomb:t00077.r3 a t:wife.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00077.r4 a t:dad.n.01 ;
+  :att "ZORGZAME" ;
+  :tgt tomb:t00077.p4 .
+
+tomb:t00077.r5 a t:dad.n.01 ;
+  :att "ZORGZAME" ;
+  :tgt tomb:t00077.p5 .
+
+tomb:t00077.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00077.jpg" ;
+  :date "2019-09-25T11:39:08"^^xsd:dateTime ;
+  geo:lat 53.2038 ;
+  geo:long 6.5701 ;
+  :nd "+53.2038+006.5701"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

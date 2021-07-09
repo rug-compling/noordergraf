@@ -1,0 +1,36 @@
+
+tomb:t01136 a t:tombstone.n.01 ;
+  :ent tomb:t01136.p1 ;
+  :lan "NLD" ;
+  :sym tomb:t01136.s1 .
+
+tomb:t01136.c1 a t:village.n.02 ;
+  :geo place:Niehove2750391 ;
+  :place "NIEHOVE" .
+
+tomb:t01136.c2 a t:village.n.02 ;
+  :geo place:Kommerzijl2752510 ;
+  :place "KOMMERZIJL" .
+
+tomb:t01136.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1830-08-27" ;
+  :dod "1872-01-22" ;
+  :nam "GEERTRUIDA BANSEMA" ;
+  :pob tomb:t01136.c1 ;
+  :pod tomb:t01136.c2 .
+
+tomb:t01136.s1 a t:composite.n.01 ;
+  :prt tomb:t01136.s2 ,
+       tomb:t01136.s4 .
+
+tomb:t01136.s2 a t:branch.n.02 .
+
+tomb:t01136.s3 a t:olive.n.02 ;
+  :prt tomb:t01136.s2 .
+
+tomb:t01136.s4 a t:branch.n.02 .
+
+tomb:t01136.s5 a t:olive.n.02 ;
+  :prt tomb:t01136.s4 .
+

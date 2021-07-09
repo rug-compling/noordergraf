@@ -1,0 +1,42 @@
+
+tomb:t00476 a t:tombstone.n.01 ;
+  :image tomb:t00476.im1 ;
+  :site site:fr8915CPleeuwarden ;
+  :ent tomb:t00476.p1 ,
+       tomb:t00476.p2 ;
+  :quo "MIJN JEZUS BARMHARTIGHEID"@nld ,
+       "REQUIESCAT IN PACE"@lat ;
+  :sym tomb:t00476.s1 .
+
+tomb:t00476.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1885-04-16" ;
+  :dod "1940-12-10" ;
+  :nam "THECLA DOMINICA KAMSTRA" ;
+  :rol tomb:t00476.r1 .
+
+tomb:t00476.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1878-08-08" ;
+  :dod "1965-12-01" ;
+  :nam "SJOERD BIJL" .
+
+tomb:t00476.r1 a t:spouse.n.01 ;
+  :tgt tomb:t00476.p2 .
+
+tomb:t00476.s1 a t:cross.n.03 .
+
+tomb:t00476.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00476.jpg" ;
+  :date "2019-11-09T14:42:13"^^xsd:dateTime ;
+  geo:lat 53.2073 ;
+  geo:long 5.7690 ;
+  :nd "+53.2073+005.7690"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

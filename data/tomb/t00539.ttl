@@ -1,0 +1,97 @@
+
+tomb:t00539 a t:tombstone.n.01 ;
+  :image tomb:t00539.im1 ;
+  :site site:gr9641ANveendam ;
+  :ent tomb:t00539.p1 ,
+       tomb:t00539.p2 ;
+  :lan "NLD" ;
+  :sym tomb:t00539.s1 .
+
+tomb:t00539.a1 a t:inverted.a.01 .
+
+tomb:t00539.a2 a t:inverted.a.01 .
+
+tomb:t00539.a3 a t:retired.a.01 .
+
+tomb:t00539.c1 a t:town.n.01 ;
+  :geo place:Hoogezand2753706 ;
+  :place "HOOGEZAND" .
+
+tomb:t00539.c2 a t:city.n.01 ;
+  :geo place:Veendam2745783 ;
+  :place "VEENDAM" .
+
+tomb:t00539.c3 a t:colony.n.05 ;
+  :geo place:Indonesie1643084 ;
+  :place "NEDERLANDS-INDIË" .
+
+tomb:t00539.o1 a t:principal.n.02 ;
+  :att tomb:t00539.a3 ;
+  :hco "13320" ;
+  :loc tomb:t00539.c3 .
+
+tomb:t00539.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1817-08-24" ;
+  :dod "1880-06-19" ;
+  :nam "JAN EPPES VAN DER WIJK" ;
+  :occ tomb:t00539.o1 ;
+  :pob tomb:t00539.c1 ;
+  :pod tomb:t00539.c2 ;
+  :rol tomb:t00539.r1 .
+
+tomb:t00539.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "THEODORA HENRICA MULLER" .
+
+tomb:t00539.r1 a t:spouse.n.01 ;
+  :tgt tomb:t00539.p2 .
+
+tomb:t00539.s1 a t:composite.n.01 ;
+  :prt tomb:t00539.s10 ,
+       tomb:t00539.s11 ,
+       tomb:t00539.s2 ,
+       tomb:t00539.s3 ,
+       tomb:t00539.s4 ,
+       tomb:t00539.s5 ,
+       tomb:t00539.s6 ,
+       tomb:t00539.s7 ,
+       tomb:t00539.s9 .
+
+tomb:t00539.s10 a t:frond.n.01 .
+
+tomb:t00539.s11 a t:frond.n.01 .
+
+tomb:t00539.s2 a t:bird.n.01 .
+
+tomb:t00539.s3 a t:butterfly.n.01 .
+
+tomb:t00539.s4 a t:cocoon.n.01 .
+
+tomb:t00539.s5 a t:torch.n.01 ;
+  :att tomb:t00539.a1 .
+
+tomb:t00539.s6 a t:torch.n.01 ;
+  :att tomb:t00539.a2 .
+
+tomb:t00539.s7 a t:branch.n.02 .
+
+tomb:t00539.s8 a t:oak.n.02 ;
+  :prt tomb:t00539.s7 .
+
+tomb:t00539.s9 a t:frond.n.01 .
+
+tomb:t00539.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00539.jpg" ;
+  :date "2019-11-24T14:19:33"^^xsd:dateTime ;
+  geo:lat 53.1042 ;
+  geo:long 6.8758 ;
+  :nd "+53.1042+006.8758"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

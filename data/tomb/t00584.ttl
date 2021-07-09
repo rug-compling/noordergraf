@@ -1,0 +1,76 @@
+
+tomb:t00584 a t:tombstone.n.01 ;
+  :image tomb:t00584.im1 ;
+  :site site:gr9951STwinsum ;
+  :ent tomb:t00584.p1 ,
+       tomb:t00584.p2 ,
+       tomb:t00584.p3 ,
+       tomb:t00584.p4 ;
+  :sym tomb:t00584.s1 .
+
+tomb:t00584.a1 a t:weeping.a.02 .
+
+tomb:t00584.c1 a t:village.n.02 ;
+  :geo place:Noorddijk2749981 ;
+  :place "NOORDDIJK" .
+
+tomb:t00584.c2 a t:village.n.02 ;
+  :geo place:Obergum2749742 ;
+  :place "OBERGUM" .
+
+tomb:t00584.c3 a t:village.n.02 ;
+  :geo place:Ezinge2755938 ;
+  :place "EZINGE" .
+
+tomb:t00584.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1824-04-05" ;
+  :dod "1912-02-11" ;
+  :nam "GEERTJE VAN DER SCHANS" ;
+  :pob tomb:t00584.c1 ;
+  :pod tomb:t00584.c2 ;
+  :rol tomb:t00584.r1 ,
+       tomb:t00584.r2 .
+
+tomb:t00584.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "LEENDER P. BOS" .
+
+tomb:t00584.p3 a t:person.n.01 ;
+  :qua 3 ;
+  :rol tomb:t00584.r3 .
+
+tomb:t00584.p4 a t:person.n.01 ;
+  :loc tomb:t00584.c3 ;
+  :nam "K.J. MOES" ;
+  :occ tomb:t00584.r4 .
+
+tomb:t00584.r1 a t:spouse.n.01 ;
+  :tgt tomb:t00584.p2 .
+
+tomb:t00584.r2 a t:mother.n.01 ;
+  :tgt tomb:t00584.p3 .
+
+tomb:t00584.r3 a t:child.n.02 ;
+  :tgt tomb:t00584.p1 .
+
+tomb:t00584.r4 a t:designer.n.01 ;
+  :tgt tomb:t00584 .
+
+tomb:t00584.s1 a t:willow.n.01 ;
+  :att tomb:t00584.a1 .
+
+tomb:t00584.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00584.jpg" ;
+  :date "2019-11-30T14:48:16"^^xsd:dateTime ;
+  geo:lat 53.3353 ;
+  geo:long 6.5128 ;
+  :nd "+53.3353+006.5128"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

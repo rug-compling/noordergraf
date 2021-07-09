@@ -1,0 +1,40 @@
+
+tomb:t00307 a t:tombstone.n.01 ;
+  :image tomb:t00307.im1 ;
+  :site site:dr7907CHhoogeveen ;
+  :ent tomb:t00307.p1 ;
+  :ref "PSALM 103:8" ;
+  :sym tomb:t00307.s1 .
+
+tomb:t00307.a1 a t:weeping.a.02 .
+
+tomb:t00307.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1908-12-22" ;
+  :dod "1932-05-11" ;
+  :nam "DERK JAN OOSTERHUIS" ;
+  :rol tomb:t00307.r1 ,
+       tomb:t00307.r2 .
+
+tomb:t00307.r1 a t:son.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00307.r2 a t:brother.n.01 .
+
+tomb:t00307.s1 a t:willow.n.01 ;
+  :att tomb:t00307.a1 .
+
+tomb:t00307.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00307.jpg" ;
+  :date "2019-10-19T14:21:53"^^xsd:dateTime ;
+  geo:lat 52.7157 ;
+  geo:long 6.4737 ;
+  :nd "+52.7157+006.4737"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

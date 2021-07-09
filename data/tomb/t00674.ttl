@@ -1,0 +1,45 @@
+
+tomb:t00674 a t:tombstone.n.01 ;
+  :image tomb:t00674.im1 ;
+  :site site:fr8701DWbolsward ;
+  :ent tomb:t00674.g2 ,
+       tomb:t00674.p1 ;
+  :lan "NLD" ;
+  :sym tomb:t00674.s1 .
+
+tomb:t00674.g2 a t:group.n.01 ;
+  :rol tomb:t00674.r3 .
+
+tomb:t00674.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1914-06-05" ;
+  :dod "1962-12-22" ;
+  :nam "FETTJE DE HAAN" ;
+  :rol tomb:t00674.r1 ,
+       tomb:t00674.r2 .
+
+tomb:t00674.r1 a t:parent.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00674.g2 .
+
+tomb:t00674.r2 a t:grandmother.n.01 .
+
+tomb:t00674.r3 a t:child.n.02 ;
+  :tgt tomb:t00674.p1 .
+
+tomb:t00674.s1 a t:frond.n.01 .
+
+tomb:t00674.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00674.jpg" ;
+  :date "2019-12-14T13:39:28"^^xsd:dateTime ;
+  geo:lat 53.0683 ;
+  geo:long 5.5218 ;
+  :nd "+53.0683+005.5218"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

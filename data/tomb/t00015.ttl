@@ -1,0 +1,49 @@
+
+tomb:t00015 a t:tombstone.n.01 ;
+  :image tomb:t00015.im1 ;
+  :ent tomb:t00015.g1 ,
+       tomb:t00015.p1 ,
+       tomb:t00015.p2 .
+
+tomb:t00015.g1 a t:group.n.01 ;
+  :mem tomb:t00015.p2 ;
+  :rol tomb:t00015.r1 .
+
+tomb:t00015.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1888-12-01" ;
+  :dod "1933-06-12" ;
+  :nam "MARIA BUINING" ;
+  :rol tomb:t00015.r2 ,
+       tomb:t00015.r3 .
+
+tomb:t00015.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1885-09-30" ;
+  :dod "1956-12-21" ;
+  :nam "JOHANNES KLAVER" .
+
+tomb:t00015.r1 a t:commemorator.n.01 ;
+  :tgt tomb:t00015.p1 .
+
+tomb:t00015.r2 a t:wife.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00015.p2 .
+
+tomb:t00015.r3 a t:mother.n.01 ;
+  :tgt tomb:t00015.p3 .
+
+tomb:t00015.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00015.jpg" ;
+  :date "2019-09-25T16:40:55"^^xsd:dateTime ;
+  geo:lat 53.1807 ;
+  geo:long 6.5963 ;
+  :nd "+53.1807+006.5963"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

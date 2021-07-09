@@ -1,0 +1,54 @@
+
+tomb:t01123 a t:tombstone.n.01 ;
+  :ent tomb:t01123.p1 ;
+  :quo "Gij die mijn graf, Voorbij komt treden, Gedenk dan ook aan mij Dat ik eens hier beneden Zoo bent geweest als gij"@nld ;
+  :sym tomb:t01123.s1 .
+
+tomb:t01123.c1 a t:village.n.02 ;
+  :geo place:Nietap2750380 ;
+  :place "NIETAP" .
+
+tomb:t01123.m1 a t:measure.n.02 ;
+  :sub tomb:t01123.m2 ,
+       tomb:t01123.m3 .
+
+tomb:t01123.m2 a t:measure.n.02 ;
+  :mem tomb:t01123.u1 ;
+  :qua 55 .
+
+tomb:t01123.m3 a t:measure.n.02 ;
+  :mem tomb:t01123.u2 ;
+  :qua 11 .
+
+tomb:t01123.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :age tomb:t01123.m1 ;
+  :dod "1861-03-05" ;
+  :nam "DERK PIETERS WIERENGA" ;
+  :pod tomb:t01123.c1 ;
+  :rol tomb:t01123.r1 .
+
+tomb:t01123.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "TRIENTJE HINDRIKS DIJKSTRA" .
+
+tomb:t01123.r1 a t:spouse.n.01 ;
+  :tgt tomb:t01123.p2 .
+
+tomb:t01123.s1 a t:composite.n.01 ;
+  :prt tomb:t01123.s2 ,
+       tomb:t01123.s3 .
+
+tomb:t01123.s2 a t:branch.n.02 .
+
+tomb:t01123.s3 a t:branch.n.02 ;
+  a t:oak.n.02 ;
+  :prt tomb:t01123.s2 .
+
+tomb:t01123.s7 a t:olive.n.02 ;
+  :prt tomb:t01123.s3 .
+
+tomb:t01123.u1 a t:year.n.01 .
+
+tomb:t01123.u2 a t:month.n.01 .
+

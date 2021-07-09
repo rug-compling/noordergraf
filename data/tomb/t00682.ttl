@@ -1,0 +1,101 @@
+
+tomb:t00682 a t:tombstone.n.01 ;
+  :image tomb:t00682.im1 ;
+  :site site:fr8701DWbolsward ;
+  :ent tomb:t00682.g1 ,
+       tomb:t00682.p1 ,
+       tomb:t00682.p2 ,
+       tomb:t00682.p3 ;
+  :quo "IN JEZUS ONTSLAPEN"@nld ;
+  :ref tomb:t00682.v2 ;
+  :sym tomb:t00682.s1 .
+
+tomb:t00682.a1 a t:weeping.a.02 .
+
+tomb:t00682.b1 a t:Revelation.n.04 ;
+  :prt tomb:t00682.c5 .
+
+tomb:t00682.c1 a t:village.n.02 ;
+  :geo place:Abbega2760080 ;
+  :place "ABBEGA" .
+
+tomb:t00682.c2 a t:city.n.01 ;
+  :geo place:Bolsward2758682 ;
+  :place "BOLSWARD" .
+
+tomb:t00682.c3 a t:village.n.02 ;
+  :geo place:Arum2759652 ;
+  :place "ARUM" .
+
+tomb:t00682.c4 a t:city.n.01 ;
+  :geo place:Assen2759633 ;
+  :place "ASSEN" .
+
+tomb:t00682.c5 a t:chapter.n.01 ;
+  :ord 14 ;
+  :prt tomb:t00682.v2 .
+
+tomb:t00682.c6 a t:town.n.01 ;
+  :geo place:Bodegraven2758765 ;
+  :place "BODEGRAVEN" .
+
+tomb:t00682.c7 a t:city.n.01 ;
+  :geo place:Heerenveen2754669 ;
+  :place "HEERENVEEN" .
+
+tomb:t00682.g1 a t:group.n.01 ;
+  :mem tomb:t00682.p1 ,
+       tomb:t00682.p2 ;
+  :rol tomb:t00682.r1 .
+
+tomb:t00682.g2 a t:group.n.01 ;
+  :mem tomb:t00682.p3 .
+
+tomb:t00682.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1871-03-10" ;
+  :dod "1936-12-26" ;
+  :nam "PIER PLANTINGA" ;
+  :pob tomb:t00682.c1 ;
+  :pod tomb:t00682.c2 .
+
+tomb:t00682.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1870-03-24" ;
+  :dod "1949-03-19" ;
+  :nam "TRIJNTJE KINGMA" ;
+  :pob tomb:t00682.c3 ;
+  :pod tomb:t00682.c4 .
+
+tomb:t00682.p3 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1901-12-23" ;
+  :dod "1981-04-11" ;
+  :nam "EVERT PLANTINGA" ;
+  :pob tomb:t00682.c6 ;
+  :pod tomb:t00682.c7 .
+
+tomb:t00682.r1 a t:parent.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t00682.g2 .
+
+tomb:t00682.s1 a t:willow.n.01 ;
+  :att tomb:t00682.a1 .
+
+tomb:t00682.v2 a t:verse.n.01 ;
+  :ord 13 .
+
+tomb:t00682.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00682.jpg" ;
+  :date "2019-12-14T13:25:57"^^xsd:dateTime ;
+  geo:lat 53.0686 ;
+  geo:long 5.5224 ;
+  :nd "+53.0686+005.5224"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

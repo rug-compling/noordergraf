@@ -1,0 +1,40 @@
+
+tomb:t00948 a t:tombstone.n.01 ;
+  :image tomb:t00948.im1 ;
+  :site site:gr9696XGoudeschans ;
+  :ent tomb:t00948.p1 ,
+       tomb:t00948.p2 ;
+  :quo "GELOOF, HOOP EN LIEFDE BLIJFT, \\ DOCH DE MEESTR IS DE LIEFDE."@nld ;
+  :sym tomb:t00948.s1 .
+
+tomb:t00948.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1849-05-30" ;
+  :dod "1893-11-20" ;
+  :nam "MARTJE BRINK" ;
+  :rol tomb:t00948.r1 .
+
+tomb:t00948.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "JAN H. DIJKHUIS" .
+
+tomb:t00948.r1 a t:spouse.n.01 ;
+  :att "DIEP BETREURDE" ;
+  :tgt tomb:t00948.p2 .
+
+tomb:t00948.s1 a t:entity.n.01 .
+
+tomb:t00948.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00948.jpg" ;
+  :date "2020-03-21T13:25:03"^^xsd:dateTime ;
+  geo:lat 53.1384 ;
+  geo:long 7.1430 ;
+  :nd "+53.1384+007.1430"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

@@ -1,0 +1,35 @@
+
+tomb:t00935 a t:tombstone.n.01 ;
+  :image tomb:t00935.im1 ;
+  :site site:gr9741GHgroningen ;
+  :ent tomb:t00935.p1 ;
+  :ref "JOHANNES 3:16"@nld ;
+  :txt "HIER RUST ONZE LIEVE MOEDER EN OMA"@nld .
+
+tomb:t00935.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1916-08-27" ;
+  :dod "1974-06-27" ;
+  :nam "MARTJE BROUWER" ;
+  :rol tomb:t00935.r1 ,
+       tomb:t00935.r2 .
+
+tomb:t00935.r1 a t:mother.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00935.r2 a t:grandmother.n.01 .
+
+tomb:t00935.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00935.jpg" ;
+  :date "2020-03-18T09:11:10"^^xsd:dateTime ;
+  geo:lat 53.2404 ;
+  geo:long 6.5476 ;
+  :nd "+53.2404+006.5476"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

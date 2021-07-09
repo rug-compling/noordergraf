@@ -1,0 +1,55 @@
+
+tomb:t00689 a t:tombstone.n.01 ;
+  :image tomb:t00689.im1 ;
+  :site site:fr8701DWbolsward ;
+  :ent tomb:t00689.p1 ,
+       tomb:t00689.p2 ;
+  :img tomb:t00689.i1 ;
+  :lan "NLD" ;
+  :sym tomb:t00689.s1 ,
+       tomb:t00689.s2 ,
+       tomb:t00689.s3 .
+
+tomb:t00689.i1 a t:portrait.n.02 ;
+  :thm tomb:t00689.p3 .
+
+tomb:t00689.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1870-11-19" ;
+  :dod "1919-03-05" ;
+  :nam "CLAZINA VRONICA HETTINGA" ;
+  :rol tomb:t00689.r1 .
+
+tomb:t00689.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1860-11-09" ;
+  :dod "1949-07-10" ;
+  :nam "TAEKE TAEKES POPMA" .
+
+tomb:t00689.p3 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "JEZUS" .
+
+tomb:t00689.r1 a t:spouse.n.01 ;
+  :tgt tomb:t00689.p2 .
+
+tomb:t00689.s1 a t:frond.n.01 .
+
+tomb:t00689.s2 a t:flower.n.01 .
+
+tomb:t00689.s3 a t:ribbon.n.01 .
+
+tomb:t00689.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00689.jpg" ;
+  :date "2019-12-14T13:18:47"^^xsd:dateTime ;
+  geo:lat 53.0684 ;
+  geo:long 5.5234 ;
+  :nd "+53.0684+005.5234"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

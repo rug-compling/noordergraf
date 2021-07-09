@@ -1,0 +1,82 @@
+
+tomb:t00888 a t:tombstone.n.01 ;
+  :image tomb:t00888.im1 ;
+  :site site:gr9741ACgroningen ;
+  :ent tomb:t00888.p1 ,
+       tomb:t00888.p2 ,
+       tomb:t00888.p3 ,
+       tomb:t00888.p4 ;
+  :lan "NLD" ;
+  :ref tomb:t00888.v1 ;
+  :sym tomb:t00888.s1 .
+
+tomb:t00888.a1 a t:weeping.a.02 .
+
+tomb:t00888.b1 a t:John.n.05 ;
+  :prt tomb:t00888.c1 .
+
+tomb:t00888.c1 a t:chapter.n.01 ;
+  :ord 14 ;
+  :prt tomb:t00888.v1 .
+
+tomb:t00888.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1864-05-04" ;
+  :dod "1901-10-17" ;
+  :nam "ROBERTA MARGARETHA WOLTJER" ;
+  :rol tomb:t00888.r1 ,
+       tomb:t00888.r2 ,
+       tomb:t00888.r3 .
+
+tomb:t00888.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "S.C. SIMAN" .
+
+tomb:t00888.p3 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "P.J. MEIJER" .
+
+tomb:t00888.p4 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1887-07-13" ;
+  :dod "1955-06-24" ;
+  :nam "ROBERT MEIJER" ;
+  :rol tomb:t00888.r4 ,
+       tomb:t00888.r5 .
+
+tomb:t00888.r1 a t:mother.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00888.r2 a t:spouse.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t00888.p2 .
+
+tomb:t00888.r3 a t:widow.n.01 ;
+  :bef tomb:t00888.r2 ;
+  :tgt tomb:t00888.p3 .
+
+tomb:t00888.r4 a t:brother.n.01 .
+
+tomb:t00888.r5 a t:uncle.n.01 .
+
+tomb:t00888.s1 a t:willow.n.01 ;
+  :att tomb:t00888.a1 .
+
+tomb:t00888.v1 a t:verse.n.01 ;
+  :ord 2 ;
+  :txt "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN" .
+
+tomb:t00888.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00888.jpg" ;
+  :date "2020-02-01T12:41:16"^^xsd:dateTime ;
+  geo:lat 53.2296 ;
+  geo:long 6.5504 ;
+  :nd "+53.2296+006.5504"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

@@ -1,0 +1,51 @@
+
+tomb:t00587 a t:tombstone.n.01 ;
+  :image tomb:t00587.im1 ;
+  :site site:gr9951STwinsum ;
+  :dob "1874-09-20" ;
+  :dod "1919-01-26" ;
+  :ent tomb:t00587.p1 ;
+  :occ tomb:t00587.o1 ;
+  :pod tomb:t00587.c2 ;
+  :sym tomb:t00587.s1 .
+
+tomb:t00587.a1 a t:weeping.a.02 .
+
+tomb:t00587.c1 a t:village.n.02 ;
+  :geo place:Obergum2749742 ;
+  :place "OBERGUM" .
+
+tomb:t00587.c2 a t:city.n.01 ;
+  :geo place:Groningen2755251 ;
+  :place "GRONINGEN" .
+
+tomb:t00587.c3 a t:village.n.02 ;
+  :geo place:Winsum2744337 ;
+  :place "WINSUM" .
+
+tomb:t00587.o1 a t:visting_nurse.n.01 ;
+  :hco "07130" ;
+  :loc tomb:t00587.c3 .
+
+tomb:t00587.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "JANTJE KLADDER" ;
+  :pob tomb:t00587.c1 .
+
+tomb:t00587.s1 a t:willow.n.01 ;
+  :att tomb:t00587.a1 .
+
+tomb:t00587.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00587.jpg" ;
+  :date "2019-11-30T14:46:00"^^xsd:dateTime ;
+  geo:lat 53.3354 ;
+  geo:long 6.5127 ;
+  :nd "+53.3354+006.5127"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

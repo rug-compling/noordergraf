@@ -1,0 +1,40 @@
+
+tomb:t00993 a t:tombstone.n.01 ;
+  :image tomb:t00993.im1 ;
+  :site site:gr9686RSbeerta ;
+  :ent tomb:t00993.p1 ,
+       tomb:t00993.p2 ;
+  :quo "RUST ZACHT"@nld ;
+  :sym tomb:t00993.s1 ,
+       tomb:t00993.s2 .
+
+tomb:t00993.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1876-12-03" ;
+  :dod "1936-04-15" ;
+  :nam "ENGEL VEGT" .
+
+tomb:t00993.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1872-03-17" ;
+  :dod "1963-11-28" ;
+  :nam "EPKE MULDER" .
+
+tomb:t00993.s1 a t:frond.n.01 .
+
+tomb:t00993.s2 a t:ribbon.n.01 .
+
+tomb:t00993.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00993.jpg" ;
+  :date "2020-04-04T10:51:23"^^xsd:dateTime ;
+  geo:lat 53.1762 ;
+  geo:long 7.0951 ;
+  :nd "+53.1762+007.0951"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

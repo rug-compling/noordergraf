@@ -1,0 +1,72 @@
+
+tomb:t00666 a t:tombstone.n.01 ;
+  :image tomb:t00666.im1 ;
+  :site site:fr8701DWbolsward ;
+  :ent tomb:t00666.g1 ,
+       tomb:t00666.p1 ,
+       tomb:t00666.p2 ;
+  :quo "ZALIG ZIJN ZIJ DIE NIET ZULLEN \\ GEZIEN HEBBEN EN NOCHTANS \\ ZULLEN GELOOFD HEBBEN"@nld ;
+  :ref tomb:t00666.v1 ;
+  :sym tomb:t00666.s1 .
+
+tomb:t00666.a1 a t:weeping.a.02 .
+
+tomb:t00666.b1 a t:John.n.05 ;
+  :prt tomb:t00666.c3 .
+
+tomb:t00666.c3 a t:chapter.n.01 ;
+  :ord 20 ;
+  :prt tomb:t00666.v2 .
+
+tomb:t00666.g1 a t:group.n.01 ;
+  :mem tomb:t00666.p3 .
+
+tomb:t00666.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1851-10-19" ;
+  :dod "1915-04-25" ;
+  :nam "TRIJNTJE D. DE JONG" ;
+  :rol tomb:t00666.r1 ,
+       tomb:t00666.r2 .
+
+tomb:t00666.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "T.IJ. DE BOER" .
+
+tomb:t00666.p3 a t:person.n.01 ;
+  :rol tomb:t00666.r3 .
+
+tomb:t00666.r1 a t:wife.n.01 ;
+  :att "GELIEFDE" ;
+  :tgt tomb:t00666.p2 .
+
+tomb:t00666.r2 a t:mother.n.01 ;
+  :tgt tomb:t00666.g1 .
+
+tomb:t00666.r3 a t:child.n.02 ;
+  :tgt tomb:t00666.p1 .
+
+tomb:t00666.s1 a t:willow.n.01 ;
+  :att tomb:t00666.a1 .
+
+tomb:t00666.v1 a t:part.n.09 ;
+  :nam "B" .
+
+tomb:t00666.v2 a t:verse.n.01 ;
+  :ord 29 ;
+  :prt tomb:t00666.v1 .
+
+tomb:t00666.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00666.jpg" ;
+  :date "2019-12-14T13:53:35"^^xsd:dateTime ;
+  geo:lat 53.0688 ;
+  geo:long 5.5239 ;
+  :nd "+53.0688+005.5239"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

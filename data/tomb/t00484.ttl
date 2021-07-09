@@ -1,0 +1,61 @@
+
+tomb:t00484 a t:tombstone.n.01 ;
+  :image tomb:t00484.im1 ;
+  :site site:fr8915CPleeuwarden ;
+  :ent tomb:t00484.p1 ,
+       tomb:t00484.p2 ;
+  :img tomb:t00484.i1 ;
+  :quo "REQUIESCAT IN PACE"@lat ;
+  :sym tomb:t00484.s1 ,
+       tomb:t00484.s2 ,
+       tomb:t00484.s3 .
+
+tomb:t00484.c1 a t:town.n.01 ;
+  :geo place:Heerenveen2754669 ;
+  :place "HEERENVEEN" .
+
+tomb:t00484.c2 a t:city.n.01 ;
+  :geo place:Leeuwarden2751792 ;
+  :place "LEEUWARDEN" .
+
+tomb:t00484.i1 a t:portrait.n.02 ;
+  :thm tomb:t00484.p3 .
+
+tomb:t00484.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1855-06-30" ;
+  :dod "1927-05-24" ;
+  :nam "TEKELA SCHROOR" .
+
+tomb:t00484.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1854-06-07" ;
+  :dod "1934-06-18" ;
+  :nam "ANDRIES KOOPAL" ;
+  :pob tomb:t00484.c1 ;
+  :pod tomb:t00484.c2 .
+
+tomb:t00484.p3 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "JEZUS" .
+
+tomb:t00484.s1 a t:cross.n.03 .
+
+tomb:t00484.s2 a t:frond.n.01 .
+
+tomb:t00484.s3 a t:frond.n.01 .
+
+tomb:t00484.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00484.jpg" ;
+  :date "2019-11-09T14:34:09"^^xsd:dateTime ;
+  geo:lat 53.2064 ;
+  geo:long 5.7691 ;
+  :nd "+53.2064+005.7691"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

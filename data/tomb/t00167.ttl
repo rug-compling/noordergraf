@@ -1,0 +1,53 @@
+
+tomb:t00167 a t:tombstone.n.01 ;
+  :image tomb:t00167.im1 ;
+  :site site:gr9725ACgroningen ;
+  :ent tomb:t00167.p1 ,
+       tomb:t00167.p2 ;
+  :sym tomb:t00167.s1 .
+
+tomb:t00167.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1864-04-02" ;
+  :dod "1942-01-14" ;
+  :nam "MARIA HENDRIKS" ;
+  :rol tomb:t00167.r1 ,
+       tomb:t00167.r2 .
+
+tomb:t00167.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1872-11-29" ;
+  :dod "1962-05-15" ;
+  :nam "DINA HENDRIKS" ;
+  :rol tomb:t00167.r3 .
+
+tomb:t00167.r1 a t:sister.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00167.r2 a t:aunt.n.01 .
+
+tomb:t00167.r3 a t:aunt.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00167.s1 a t:composite.n.01 ;
+  :prt tomb:t00167.s2 ,
+       tomb:t00167.s3 .
+
+tomb:t00167.s2 a t:frond.n.01 .
+
+tomb:t00167.s3 a t:ribbon.n.01 .
+
+tomb:t00167.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00167.jpg" ;
+  :date "2019-10-02T10:20:28"^^xsd:dateTime ;
+  geo:lat 53.2059 ;
+  geo:long 6.5699 ;
+  :nd "+53.2059+006.5699"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

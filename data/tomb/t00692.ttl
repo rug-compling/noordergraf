@@ -1,0 +1,61 @@
+
+tomb:t00692 a t:tombstone.n.01 ;
+  :image tomb:t00692.im1 ;
+  :site site:fr8701DWbolsward ;
+  :ent tomb:t00692.g1 ,
+       tomb:t00692.g2 ,
+       tomb:t00692.p1 ,
+       tomb:t00692.p2 ;
+  :img tomb:t00692.i1 ;
+  :lan "NLD" .
+
+tomb:t00692.g1 a t:group.n.01 ;
+  :mem tomb:t00692.p1 ,
+       tomb:t00692.p2 ;
+  :rol tomb:t00692.r1 .
+
+tomb:t00692.g2 a t:group.n.01 ;
+  :rol tomb:t00692.r4 .
+
+tomb:t00692.i1 a t:portrait.n.02 ;
+  :thm tomb:t00692.g1 .
+
+tomb:t00692.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1918-08-03" ;
+  :dod "1971-03-27" ;
+  :nam "KLAAS BOERSMA" ;
+  :rol tomb:t00692.r2 .
+
+tomb:t00692.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1929-09-29" ;
+  :dod "1978-02-17" ;
+  :nam "GRIETJE ANDELA" ;
+  :rol tomb:t00692.r3 .
+
+tomb:t00692.r1 a t:parent.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00692.g2 .
+
+tomb:t00692.r2 a t:grandfather.n.01 .
+
+tomb:t00692.r3 a t:grandmother.n.01 .
+
+tomb:t00692.r4 a t:child.n.02 ;
+  :tgt tomb:t00692.g1 .
+
+tomb:t00692.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00692.jpg" ;
+  :date "2019-12-14T13:30:06"^^xsd:dateTime ;
+  geo:lat 53.0675 ;
+  geo:long 5.5223 ;
+  :nd "+53.0675+005.5223"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

@@ -1,0 +1,86 @@
+
+tomb:t01019 a t:tombstone.n.01 ;
+  :image tomb:t01019.im1 ;
+  :site site:gr9722SNgroningen ;
+  :ent tomb:t01019.p1 ,
+       tomb:t01019.p2 ;
+  :lan "NLD" .
+
+tomb:t01019.b1 a t:Epistle_to_the_Romans.n.04 ;
+  :prt tomb:t01019.c2 ,
+       tomb:t01019.c3 .
+
+tomb:t01019.c1 a t:city.n.01 ;
+  :geo place:Groningen2755251 ;
+  :place "GRONINGEN" .
+
+tomb:t01019.c2 a t:chapter.n.01 ;
+  :ord 8 ;
+  :prt tomb:t01019.v1 ,
+       tomb:t01019.v2 .
+
+tomb:t01019.c3 a t:chapter.n.01 ;
+  :ord 5 ;
+  :prt tomb:t01019.v3 ,
+       tomb:t01019.v4 .
+
+tomb:t01019.g1 a t:group.n.01 ;
+  :mem tomb:t01019.v1 ,
+       tomb:t01019.v2 .
+
+tomb:t01019.g2 a t:group.n.01 ;
+  :mem tomb:t01019.v3 ,
+       tomb:t01019.v4 .
+
+tomb:t01019.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1876-12-29" ;
+  :dod "1938-02-16" ;
+  :nam "GEERT JAN DRENT" ;
+  :pob tomb:t01019.c1 ;
+  :pod tomb:t01019.c1 ;
+  :ref tomb:t01019.g1 ;
+  :rol tomb:t01019.r1 .
+
+tomb:t01019.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1874-03-12" ;
+  :dod "1946-06-05" ;
+  :nam "JOHANNA KLOOSTER" ;
+  :pob tomb:t01019.c1 ;
+  :pod tomb:t01019.c1 ;
+  :ref tomb:t01019.g2 ;
+  :rol tomb:t01019.r2 .
+
+tomb:t01019.r1 a t:spouse.n.01 ;
+  :tgt tomb:t01019.p2 .
+
+tomb:t01019.r2 a t:widow.n.01 ;
+  :tgt tomb:t01019.p1 .
+
+tomb:t01019.v1 a t:verse.n.01 ;
+  :ord 38 .
+
+tomb:t01019.v2 a t:verse.n.01 ;
+  :ord 39 .
+
+tomb:t01019.v3 a t:verse.n.01 ;
+  :ord 1 .
+
+tomb:t01019.v4 a t:verse.n.01 ;
+  :ord 2 .
+
+tomb:t01019.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t01019.jpg" ;
+  :date "2020-04-03T14:31:14"^^xsd:dateTime ;
+  geo:lat 53.1911 ;
+  geo:long 6.5931 ;
+  :nd "+53.1911+006.5931"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

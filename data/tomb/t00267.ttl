@@ -1,0 +1,52 @@
+
+tomb:t00267 a t:tombstone.n.01 ;
+  :image tomb:t00267.im1 ;
+  :site site:gr9723EWgroningen ;
+  :ent tomb:t00267.p1 ,
+       tomb:t00267.p2 ;
+  :sym tomb:t00267.s1 .
+
+tomb:t00267.a1 a t:weeping.a.02 .
+
+tomb:t00267.c1 a t:hamlet.n.03 ;
+  :geo place:Lageland11746820 ;
+  :place "LAGELAND" .
+
+tomb:t00267.c2 a t:hamlet.n.03 ;
+  :geo place:Euvelgunne2755982 ;
+  :place "EUVELGUNNE" .
+
+tomb:t00267.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1827-08-28" ;
+  :dod "1912-01-14" ;
+  :nam "ALBERT UITHAM" ;
+  :pob tomb:t00267.c1 ;
+  :pod tomb:t00267.c2 ;
+  :rol tomb:t00267.r1 .
+
+tomb:t00267.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "AALTJE WOLDHUIS" .
+
+tomb:t00267.r1 a t:widower.n.01 ;
+  :beg "XX-XX-1874" ;
+  :tgt tomb:t00267.p2 .
+
+tomb:t00267.s1 a t:willow.n.01 ;
+  :att tomb:t00267.a1 .
+
+tomb:t00267.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00267.jpg" ;
+  :date "2019-10-14T11:05:07"^^xsd:dateTime ;
+  geo:lat 53.2224 ;
+  geo:long 6.6367 ;
+  :nd "+53.2224+006.6367"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

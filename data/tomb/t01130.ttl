@@ -1,0 +1,32 @@
+
+tomb:t01130 a t:tombstone.n.01 ;
+  :ent tomb:t01130.p1 ,
+       tomb:t01130.p2 ,
+       tomb:t01130.p3 ;
+  :quo "RUST ZACHT LIEVE LIENA"@nld ;
+  :ref "PSALM 103:8"@nld ;
+  :sym tomb:t01130.s1 .
+
+tomb:t01130.g1 a t:group.n.01 ;
+  :mem tomb:t01130.p2 ,
+       tomb:t01130.p3 .
+
+tomb:t01130.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1919-10-14" ;
+  :dod "1926-08-22" ;
+  :nam "LIENA WASSENAAR" ;
+  :rol tomb:t01130.r1 .
+
+tomb:t01130.p2 a t:person.n.01 ;
+  :nam "B. WASSENAAR" .
+
+tomb:t01130.p3 a t:person.n.01 ;
+  :nam "T. FOKKENS" .
+
+tomb:t01130.r1 a t:daughter.n.01 ;
+  :att "GELIEFD" ;
+  :tgt tomb:t01130.g1 .
+
+tomb:t01130.s1 a t:butterfly.n.01 .
+

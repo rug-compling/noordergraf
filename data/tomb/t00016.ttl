@@ -1,0 +1,76 @@
+
+tomb:t00016 a t:tombstone.n.01 ;
+  :image tomb:t00016.im1 ;
+  :site site:gr9722SNgroningen ;
+  :ent tomb:t00016.g1 ,
+       tomb:t00016.g2 ,
+       tomb:t00016.p1 ,
+       tomb:t00016.p2 ;
+  :sym tomb:t00016.s1 .
+
+tomb:t00016.g1 a t:group.n.01 ;
+  :mem tomb:t00016.p2 ;
+  :rol tomb:t00016.r1 .
+
+tomb:t00016.g2 a t:group.n.01 ;
+  :mem tomb:t00016.p3 ;
+  :rol tomb:t00016.r5 .
+
+tomb:t00016.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1859-09-06" ;
+  :dod "1939-01-17" ;
+  :nam "HENDRIKUS JACOBUS DU FLOO" ;
+  :rol tomb:t00016.r2 ,
+       tomb:t00016.r3 ,
+       tomb:t00016.r4 .
+
+tomb:t00016.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1855-09-06" ;
+  :dod "1942-12-30" ;
+  :nam "HELENA TENEIJS" ;
+  :rol tomb:t00016.r6 .
+
+tomb:t00016.r1 a t:commemorator.n.01 ;
+  :tgt tomb:t00016.p1 .
+
+tomb:t00016.r2 a t:husband.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00016.p2 .
+
+tomb:t00016.r3 a t:father.n.01 ;
+  :tgt tomb:t00016.g1 .
+
+tomb:t00016.r4 a t:spouse.n.01 ;
+  :tgt tomb:t00016.p2 .
+
+tomb:t00016.r5 a t:commemorator.n.01 ;
+  :tgt tomb:t00016.p2 .
+
+tomb:t00016.r6 a t:mother.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00016.g2 .
+
+tomb:t00016.s1 a t:composite.n.01 ;
+  :prt tomb:t00016.s2 ,
+       tomb:t00016.s3 .
+
+tomb:t00016.s2 a t:frond.n.01 .
+
+tomb:t00016.s3 a t:ribbon.n.01 .
+
+tomb:t00016.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00016.jpg" ;
+  :date "2019-09-25T16:38:01"^^xsd:dateTime ;
+  geo:lat 53.1910 ;
+  geo:long 6.5930 ;
+  :nd "+53.1910+006.5930"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

@@ -1,0 +1,51 @@
+
+tomb:t00215 a t:tombstone.n.01 ;
+  :image tomb:t00215.im1 ;
+  :site site:gr9723EWgroningen ;
+  :ent tomb:t00215.p1 ,
+       tomb:t00215.p2 ;
+  :sym tomb:t00215.s1 .
+
+tomb:t00215.a1 a t:weeping.a.02 .
+
+tomb:t00215.c1 a t:village.n.02 ;
+  :geo place:TenBoer2746491 ;
+  :place "TEN BOER" .
+
+tomb:t00215.c2 a t:town.n.01 ;
+  :geo place:Middenmeer2750850 ;
+  :place "MIDDENMEER" .
+
+tomb:t00215.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1876-07-17" ;
+  :dod "1963-03-17" ;
+  :nam "EEUWKE WOLDRING" ;
+  :pob tomb:t00215.c1 ;
+  :pod tomb:t00215.c2 ;
+  :rol tomb:t00215.r1 .
+
+tomb:t00215.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "A. ZWANEVELD" .
+
+tomb:t00215.r1 a t:widower.n.01 ;
+  :tgt tomb:t00215.p2 .
+
+tomb:t00215.s1 a t:willow.n.01 ;
+  :att tomb:t00215.a1 .
+
+tomb:t00215.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00215.jpg" ;
+  :date "2019-10-08T14:47:20"^^xsd:dateTime ;
+  geo:lat 53.2226 ;
+  geo:long 6.6371 ;
+  :nd "+53.2226+006.6371"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

@@ -1,0 +1,74 @@
+
+tomb:t00028 a t:tombstone.n.01 ;
+  :image tomb:t00028.im1 ;
+  :site site:gr9722SNgroningen ;
+  :ent tomb:t00028.g1 ,
+       tomb:t00028.g2 ,
+       tomb:t00028.p1 ,
+       tomb:t00028.p2 .
+
+tomb:t00028.c1 a t:village.n.02 ;
+  :geo place:Thesinge2746361 ;
+  :place "THESINGE" .
+
+tomb:t00028.c2 a t:city.n.01 ;
+  :geo place:Groningen2755251 ;
+  :place "GRONINGEN" .
+
+tomb:t00028.c3 a t:city.n.01 ;
+  :geo place:Appingedam2759687 ;
+  :place "APPINGEDAM" .
+
+tomb:t00028.g1 a t:group.n.01 ;
+  :mem tomb:t00028.p2 .
+
+tomb:t00028.g2 a t:group.n.01 .
+
+tomb:t00028.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1883-02-06" ;
+  :dod "1936-07-29" ;
+  :nam "TRIENTJE BIERLING" ;
+  :pob tomb:t00028.c1 ;
+  :pod tomb:t00028.c2 ;
+  :rol tomb:t00028.r1 ,
+       tomb:t00028.r2 ,
+       tomb:t00028.r3 .
+
+tomb:t00028.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1876-06-19" ;
+  :dod "1952-01-28" ;
+  :nam "MARTINUS ALBERTUS SICCAMA" ;
+  :pob tomb:t00028.c3 ;
+  :pod tomb:t00028.c1 ;
+  :rol tomb:t00028.r4 .
+
+tomb:t00028.r1 a t:wife.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00028.p2 .
+
+tomb:t00028.r2 a t:mother.n.01 ;
+  :tgt tomb:t00028.g1 .
+
+tomb:t00028.r3 a t:spouse.n.01 ;
+  :tgt tomb:t00028.p2 .
+
+tomb:t00028.r4 a t:father.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00028.g2 .
+
+tomb:t00028.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00028.jpg" ;
+  :date "2019-09-25T16:18:19"^^xsd:dateTime ;
+  geo:lat 53.1909 ;
+  geo:long 6.5946 ;
+  :nd "+53.1909+006.5946"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

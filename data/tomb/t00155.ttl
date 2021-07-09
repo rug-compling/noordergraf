@@ -1,0 +1,70 @@
+
+tomb:t00155 a t:tombstone.n.01 ;
+  :image tomb:t00155.im1 ;
+  :site site:gr9725ACgroningen ;
+  :ent tomb:t00155.p1 ,
+       tomb:t00155.p2 ,
+       tomb:t00155.p3 ,
+       tomb:t00155.p4 ;
+  :sym tomb:t00155.s1 .
+
+tomb:t00155.g1 a t:group.n.01 .
+
+tomb:t00155.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1859-08-22" ;
+  :dod "1941-04-07" ;
+  :nam "ROELINA ONSTWEDDER" ;
+  :rol tomb:t00155.r1 ,
+       tomb:t00155.r2 .
+
+tomb:t00155.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :nam "ALE KOENES" .
+
+tomb:t00155.p3 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1878-12-27" ;
+  :dod "1955-02-11" ;
+  :nam "BENDERT KLOOSTERMAN" ;
+  :rol tomb:t00155.r3 ,
+       tomb:t00155.r4 ,
+       tomb:t00155.r5 .
+
+tomb:t00155.p4 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :nam "A. KOENES" .
+
+tomb:t00155.r1 a t:mother.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00155.g1 .
+
+tomb:t00155.r2 a t:widow.n.01 ;
+  :tgt tomb:t00155.p2 .
+
+tomb:t00155.r3 a t:father.n.01 ;
+  :tgt tomb:t00155.g1 .
+
+tomb:t00155.r4 a t:husband.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00155.p4 .
+
+tomb:t00155.r5 a t:spouse.n.01 ;
+  :tgt tomb:t00155.p4 .
+
+tomb:t00155.s1 a t:frond.n.01 .
+
+tomb:t00155.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00155.jpg" ;
+  :date "2019-10-02T10:22:41"^^xsd:dateTime ;
+  geo:lat 53.2061 ;
+  geo:long 6.5698 ;
+  :nd "+53.2061+006.5698"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

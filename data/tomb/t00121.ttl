@@ -1,0 +1,42 @@
+
+tomb:t00121 a t:tombstone.n.01 ;
+  :image tomb:t00121.im1 ;
+  :site site:gr9752CMharen ;
+  :ent tomb:t00121.p1 ,
+       tomb:t00121.p2 ;
+  :quo "MAAR IK EN MIJN HUIS, WIJ ZULLEN DEN HERE DIENEN!" .
+
+tomb:t00121.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1913-05-19" ;
+  :dod "1972-11-19" ;
+  :nam "IMEGINUS A. VOS" ;
+  :rol tomb:t00121.r1 .
+
+tomb:t00121.p2 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1918-03-27" ;
+  :dod "2005-12-16" ;
+  :nam "JOHANNA VAN GIJSSEL" ;
+  :rol tomb:t00121.r2 .
+
+tomb:t00121.r1 a t:father.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00121.r2 a t:mother.n.01 ;
+  :att "LIEVE" .
+
+tomb:t00121.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00121.jpg" ;
+  :date "2019-09-20T17:44:31"^^xsd:dateTime ;
+  geo:lat 53.1628 ;
+  geo:long 6.6162 ;
+  :nd "+53.1628+006.6162"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

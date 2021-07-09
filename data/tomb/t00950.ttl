@@ -1,0 +1,57 @@
+
+tomb:t00950 a t:tombstone.n.01 ;
+  :image tomb:t00950.im1 ;
+  :site site:gr9479TNnoordlaren ;
+  :ent tomb:t00950.g1 ,
+       tomb:t00950.p1 ,
+       tomb:t00950.p2 ,
+       tomb:t00950.p3 ;
+  :lan "NLD" ;
+  :sym tomb:t00950.s1 .
+
+tomb:t00950.c1 a t:village.n.02 ;
+  :geo place:Glimmen2755495 ;
+  :place "GLIMMEN" .
+
+tomb:t00950.c2 a t:village.n.02 ;
+  :geo place:Noordlaren2749857 ;
+  :place "NOORDLAREN" .
+
+tomb:t00950.g1 a t:group.n.01 ;
+  :mem tomb:t00950.p2 ,
+       tomb:t00950.p3 .
+
+tomb:t00950.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1892-12-30" ;
+  :dod "1918-11-06" ;
+  :nam "TIEME HEMMES" ;
+  :pob tomb:t00950.c1 ;
+  :pod tomb:t00950.c2 ;
+  :rol tomb:t00950.r1 .
+
+tomb:t00950.p2 a t:person.n.01 ;
+  :nam "H. HEMMES" .
+
+tomb:t00950.p3 a t:person.n.01 ;
+  :nam "E. BORGMAN" .
+
+tomb:t00950.r1 a t:son.n.01 ;
+  :tgt tomb:t00950.g1 .
+
+tomb:t00950.s1 a t:butterfly.n.01 .
+
+tomb:t00950.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00950.jpg" ;
+  :date "2020-03-25T09:30:51"^^xsd:dateTime ;
+  geo:lat 53.1200 ;
+  geo:long 6.6584 ;
+  :nd "+53.1200+006.6584"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

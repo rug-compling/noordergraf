@@ -1,0 +1,38 @@
+
+tomb:t00278 a t:tombstone.n.01 ;
+  :image tomb:t00278.im1 ;
+  :site site:gr9985SCoosternieland ;
+  :ent tomb:t00278.p1 ,
+       tomb:t00278.p2 .
+
+tomb:t00278.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1933-05-10" ;
+  :dod "1972-10-27" ;
+  :nam "EELJE LIER" ;
+  :rol tomb:t00278.r1 ,
+       tomb:t00278.r2 .
+
+tomb:t00278.p2 a t:family.n.04 ;
+  :nam "E.H. LUBBERS" .
+
+tomb:t00278.r1 a t:wife.n.01 ;
+  :att "LIEVE" ;
+  :tgt tomb:t00278.p2 .
+
+tomb:t00278.r2 a t:mother.n.01 .
+
+tomb:t00278.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00278.jpg" ;
+  :date "2019-10-16T16:54:48"^^xsd:dateTime ;
+  geo:lat 53.4036 ;
+  geo:long 6.7490 ;
+  :nd "+53.4036+006.7490"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

@@ -1,0 +1,53 @@
+
+tomb:t00991 a t:tombstone.n.01 ;
+  :image tomb:t00991.im1 ;
+  :site site:gr9686RSbeerta ;
+  :ent tomb:t00991.p1 ,
+       tomb:t00991.p2 ;
+  :quo "RUST ZACHT LIEVE OUDERS"@nld ;
+  :ref tomb:t00991.v1 .
+
+tomb:t00991.b1 a t:Job.n.12 ;
+  :prt tomb:t00991.c3 .
+
+tomb:t00991.c3 a t:chapter.n.01 ;
+  :ord 1 ;
+  :prt tomb:t00991.v1 .
+
+tomb:t00991.p1 a t:person.n.01 ;
+  :gender t:female.n.02 ;
+  :dob "1862-04-22" ;
+  :dod "1928-11-03" ;
+  :nam "MARTJE SCHUURKE" ;
+  :rol tomb:t00991.r1 .
+
+tomb:t00991.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1879-01-04" ;
+  :dod "28-09-193" ;
+  :nam "FILIPPUS MOERKER" ;
+  :rol tomb:t00991.r2 .
+
+tomb:t00991.r1 a t:parent.n.01 ;
+  :tgt tomb:t00991.p3 .
+
+tomb:t00991.r2 a t:parent.n.01 ;
+  :tgt tomb:t00991.p3 .
+
+tomb:t00991.v1 a t:verse.n.01 ;
+  :ord 21 .
+
+tomb:t00991.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00991.jpg" ;
+  :date "2020-04-04T10:58:00"^^xsd:dateTime ;
+  geo:lat 53.1758 ;
+  geo:long 7.0953 ;
+  :nd "+53.1758+007.0953"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+

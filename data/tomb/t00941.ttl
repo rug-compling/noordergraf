@@ -1,0 +1,62 @@
+
+tomb:t00941 a t:tombstone.n.01 ;
+  :image tomb:t00941.im1 ;
+  :site site:gr9696XGoudeschans ;
+  :ent tomb:t00941.g1 ,
+       tomb:t00941.g2 ,
+       tomb:t00941.p1 ,
+       tomb:t00941.p2 ,
+       tomb:t00941.p3 ,
+       tomb:t00941.p4 ;
+  :lan "NLD" ;
+  :sym tomb:t00941.s1 .
+
+tomb:t00941.a1 a t:weeping.a.02 .
+
+tomb:t00941.g1 a t:group.n.01 ;
+  :mem tomb:t00941.p1 ,
+       tomb:t00941.p2 ;
+  :rol tomb:t00941.r1 .
+
+tomb:t00941.g2 a t:group.n.01 ;
+  :mem tomb:t00941.p3 ,
+       tomb:t00941.p4 .
+
+tomb:t00941.p1 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1898-03-09" ;
+  :dod "1898-04-12" ;
+  :nam "GEERT FEKKO" .
+
+tomb:t00941.p2 a t:person.n.01 ;
+  :gender t:male.n.02 ;
+  :dob "1900-07-10" ;
+  :dod "1900-07-25" ;
+  :nam "GEERT FEKKO" .
+
+tomb:t00941.p3 a t:person.n.01 ;
+  :nam "B. HINDRIKS" .
+
+tomb:t00941.p4 a t:person.n.01 ;
+  :nam "M. FEKKERS" .
+
+tomb:t00941.r1 a t:son.n.01 ;
+  :tgt tomb:t00941.g2 .
+
+tomb:t00941.s1 a t:willow.n.01 ;
+  :att tomb:t00941.a1 .
+
+tomb:t00941.im1 a t:photo.n.01 ;
+  # cc:attributionName "J. Doe" ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  :file "t00941.jpg" ;
+  :date "2020-03-21T13:24:06"^^xsd:dateTime ;
+  geo:lat 53.1383 ;
+  geo:long 7.1431 ;
+  :nd "+53.1383+007.1431"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4> .
+
