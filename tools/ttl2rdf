@@ -1,0 +1,29 @@
+#!/bin/bash
+
+f=ntriples
+case `basename $0` in
+    ttl2rdf)
+        f=rdfxml
+        ;;
+    ttl2xml)
+        f=rdfxml-abbrev
+        ;;
+    ttl2json)
+        f=json
+        ;;
+    ttl2jsont)
+        f=json-triples
+        ;;
+esac
+
+if [ -d /net/noordergraf ]
+then
+    data=/net/noordergraf/data
+else
+    data=/noordergraf/data
+fi
+
+(
+    cat $data/prefix.ttl
+    cat "$@"
+) |  rapper -i turtle -o $f -I https://noordergraf.rug.nl/pred/ -q -
