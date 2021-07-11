@@ -1,0 +1,88 @@
+#!/usr/bin/env python3
+
+'''
+
+import installeren:
+
+    pip3 install --user penman
+
+'''
+
+#
+# PREFIXEN:
+#
+
+Item      = 'tomb'
+Predicate = ''
+Type      = 't'
+
+################################################################
+
+import re, os, sys
+import penman
+from penman import constant
+
+def process(txt):
+    base = txt.split(maxsplit=1)[0][1:]
+    sys.stdout.write('###\n### ' + base + '\n###\n\n')
+
+    g = penman.decode(txt)
+
+    base = g.instances()[0].source
+
+    lines = []
+
+    for src, _, tgt in g.instances():
+        if src != base:
+            src = base + '.' + src
+        lines.append('{}:{}  a {}:{}'.format(Item, src, Type, tgt))
+
+    for src, role, tgt in g.attributes():
+        if src != base:
+            src = base + '.' + src
+        if constant.type(tgt) == constant.SYMBOL:
+            tgt = '{}:{}.{}'.format(Item, base, tgt)
+        elif constant.type(tgt) == constant.STRING:
+            tgt = tgt.replace('\\', '\\\\')
+        lines.append('{}:{} {}{} {}'.format(Item, src, Predicate, role, tgt))
+
+    for src, role, tgt in g.edges():
+        if src != base:
+            src = base + '.' + src
+        if tgt != base:
+            tgt = base + '.' + tgt
+        lines.append('{}:{} {}{} {}:{}'.format(Item, src, Predicate, role, Item, tgt))
+
+    lines.sort()
+
+    prev = ''
+    prev2 = ''
+    first = True
+    for line in  lines:
+        a, b, c = line.split(maxsplit=2)
+        if a == prev:
+            if b == prev2:
+                sys.stdout.write(' ,\n       ' + c)
+            else:
+                sys.stdout.write(' ;\n  ' + b + ' ' + c)
+            prev2 = b
+        else:
+            prev2 = ''
+            if prev != '':
+                sys.stdout.write(' .\n\n')
+            sys.stdout.write(a + ' ' + b + ' ' + c)
+            prev = a
+    sys.stdout.write(' .\n\n')
+
+fp = open(sys.argv[1])
+lines = []
+for line in fp:
+    if line.strip() == '':
+        if len(lines) > 0:
+            process(''.join(lines))
+        lines = []
+    else:
+        lines.append(' '.join(line.split()) + '\n')
+fp.close()
+if len(lines) > 0:
+    process(''.join(lines))
