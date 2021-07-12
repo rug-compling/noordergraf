@@ -92,7 +92,7 @@ func main() {
 		fmt.Printf(` ;
   geo:lat %.4f ;
   geo:long %.4f ;
-  :nd "%+08.4f%+09.4f"^^<http://franz.com/ns/allegrograph/5.0/geo/nd#_lat_la_-9.+1_+9.+1_+1.-4_+1.-3_lon_lo_-1.8+2_+1.8+2_+1.-4>`,
+  :nd "%+08.4f%+09.4f"^^ll:`,
 			lat*latv,
 			lon*lonv,
 			lat*latv,
