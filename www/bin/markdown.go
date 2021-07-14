@@ -70,7 +70,7 @@ func main() {
 
 	file := os.Getenv("PATH_TRANSLATED")
 
-	if !strings.HasPrefix(file, "/noordergraf/www/") {
+	if !strings.HasPrefix(file, "/net/noordergraf/www/") {
 		fmt.Print("Status: 404\n\n")
 		return
 	}

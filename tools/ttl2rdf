@@ -16,14 +16,7 @@ case `basename $0` in
         ;;
 esac
 
-if [ -d /net/noordergraf ]
-then
-    data=/net/noordergraf/data
-else
-    data=/noordergraf/data
-fi
-
 (
-    cat $data/prefix.ttl
+    cat /net/noordergraf/data/prefix.ttl
     cat "$@"
 ) |  rapper -i turtle -o $f -I https://noordergraf.rug.nl/ -q -

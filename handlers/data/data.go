@@ -11,7 +11,12 @@ import (
 func main() {
 	fmt.Print("Content-type: text/plain\n\n")
 	b, err := exec.Command("id").CombinedOutput()
-	fmt.Println(err, string(b))
+	if err == nil {
+		fmt.Println(string(b))
+	} else {
+		fmt.Println(err)
+		fmt.Println()
+	}
 
 	env := os.Environ()
 	sort.Strings(env)
