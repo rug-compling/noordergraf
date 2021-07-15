@@ -2,23 +2,162 @@ package main
 
 import (
 	"fmt"
+	"html"
+	"io"
+	"io/ioutil"
 	"os"
 	"os/exec"
-	"sort"
+	"path"
+	"strconv"
 	"strings"
 )
 
+const (
+	HTML = iota
+	TURTLE
+	TRIPLE
+	RDF
+)
+
+var (
+	format   = HTML
+	language = "en"
+	uri      string
+	data     string
+	prefix   string
+	exts     = map[int]string{
+		HTML:   "",
+		TURTLE: ".ttl",
+		TRIPLE: ".nt",
+		RDF:    ".rdf",
+	}
+)
+
 func main() {
-	fmt.Print("Content-type: text/plain\n\n")
-	b, err := exec.Command("id").CombinedOutput()
-	if err == nil {
-		fmt.Println(string(b))
-	} else {
-		fmt.Println(err)
-		fmt.Println()
+
+	getLanguage()
+
+	// zou niet nodig moeten zijn
+	uri = path.Clean(os.Getenv("REQUEST_URI"))
+	i := strings.Index(uri, "#")
+	if i > 0 {
+		uri = uri[:i]
 	}
 
-	env := os.Environ()
-	sort.Strings(env)
-	fmt.Println(strings.Join(env, "\n"))
+	i = strings.LastIndex(uri, ".")
+	if i > 0 {
+		switch uri[i:] {
+		case ".ttl":
+			format = TURTLE
+			uri = uri[:i]
+		case ".nt":
+			format = TRIPLE
+			uri = uri[:i]
+		case ".rdf":
+			format = RDF
+			uri = uri[:i]
+		}
+	}
+
+	b, err := ioutil.ReadFile("/net/noordergraf/data" + uri + ".ttl")
+	if err != nil {
+		fmt.Print("Status: 404 Not Found\n\n")
+		return
+	}
+	data = string(b)
+	b, _ = ioutil.ReadFile("/net/noordergraf/data/prefix.ttl")
+	prefix = string(b)
+
+	switch format {
+	case HTML:
+		doHTML()
+	case TURTLE:
+		fmt.Print("Content-type: text/turtle; charset=UTF-8\n\n")
+		fmt.Println(prefix)
+		fmt.Print(data)
+	case TRIPLE:
+		fmt.Print("Content-type: application/n-triples; charset=UTF-8\n\n")
+		fmt.Print(convert("ntriples"))
+	case RDF:
+		fmt.Print("Content-type: application/rdf+xml; charset=UTF-8\n\n")
+		fmt.Print(convert("rdfxml"))
+	}
+}
+
+func getLanguage() {
+	// HTTP_ACCEPT_LANGUAGE=nl-NL,nl;q=0.9,en;q=0.8
+
+	langs := make(map[string]float64)
+	maxval := 0.0
+	for _, lang := range strings.Split(os.Getenv("HTTP_ACCEPT_LANGUAGE"), ",") {
+		v := 1.0
+		aa := strings.Split(lang, ";")
+		for _, a := range aa[1:] {
+			bb := strings.Split(a, "=")
+			if len(bb) == 2 && strings.TrimSpace(bb[0]) == "q" {
+				v1, err := strconv.ParseFloat(bb[1], 64)
+				if err == nil {
+					v = v1
+				}
+			}
+		}
+		if v <= maxval {
+			continue
+		}
+		lang1 := strings.ToLower(strings.Split(aa[0], "-")[0])
+		langs[lang1] = v
+		maxval = v
+	}
+	if langs["nl"] > langs["en"] {
+		language = "nl"
+	}
+}
+
+func convert(output string) string {
+	cmd := exec.Command("rapper", "-i", "turtle", "-o", output, "-I", "https://noordergraf.rug.nl/", "-q", "-")
+	stdin, err := cmd.StdinPipe()
+	if err != nil {
+		panic(err)
+	}
+	go func() {
+		defer stdin.Close()
+		io.WriteString(stdin, prefix)
+		io.WriteString(stdin, data)
+	}()
+
+	out, err := cmd.Output()
+	if err != nil {
+		panic(err)
+	}
+	return string(out)
+}
+
+func doHTML() {
+	title := html.EscapeString(uri[1:])
+	fmt.Printf(`Content-type: text/html; charset=UTF-8
+
+<html lang="nl">
+  <head>
+    <title>Noordergraf -- %s</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/ico">
+    <link rel="stylesheet" type="text/css" href="/md.css">
+    <link rel="alternate" href="https://noordergraf.rug.nl%s.ttl" type="text/turtle"/>
+    <link rel="alternate" href="https://noordergraf.rug.nl%s.nt"  type="application/n-triples"/>
+    <link rel="alternate" href="https://noordergraf.rug.nl%s.rdf" type="application/rdf+xml"/>
+  </head>
+  <body class="">
+    <div id="container">
+      <h1>%s</h1>
+`, title, uri, uri, uri, title)
+
+	fmt.Printf("<pre>\n%s</pre>\n", html.EscapeString(strings.TrimSpace(data)))
+
+	fmt.Print(`
+    </div>
+  </body>
+</html>
+`)
+
 }
