@@ -11,6 +11,7 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+	"time"
 )
 
 const (
@@ -21,12 +22,13 @@ const (
 )
 
 var (
-	format   = HTML
-	language = "en"
-	uri      string
-	data     string
-	prefix   string
-	exts     = map[int]string{
+	format       = HTML
+	language     = "en"
+	uri          string
+	data         string
+	prefix       string
+	lastModified string
+	exts         = map[int]string{
 		HTML:   "",
 		TURTLE: ".ttl",
 		TRIPLE: ".nt",
@@ -61,7 +63,8 @@ func main() {
 		}
 	}
 
-	b, err := ioutil.ReadFile("/net/noordergraf/data" + uri + ".ttl")
+	filename := "/net/noordergraf/data" + uri + ".ttl"
+	b, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Print("Status: 404 Not Found\n\n")
 		return
@@ -69,19 +72,25 @@ func main() {
 	data = string(b)
 	b, _ = ioutil.ReadFile("/net/noordergraf/data/prefix.ttl")
 	prefix = string(b)
+	fi, err := os.Stat(filename)
+	if err != nil {
+		fmt.Print("Status: 404 Not Found\n\n")
+		return
+	}
+	lastModified = fi.ModTime().UTC().Format(time.RFC1123)
 
 	switch format {
 	case HTML:
 		doHTML()
 	case TURTLE:
-		fmt.Print("Content-type: text/turtle; charset=UTF-8\n\n")
+		fmt.Print("Content-type: text/turtle; charset=UTF-8\nLast-Modified: " + lastModified + "\n\n")
 		fmt.Println(prefix)
 		fmt.Print(reComment.ReplaceAllLiteralString(data, ""))
 	case TRIPLE:
-		fmt.Print("Content-type: application/n-triples; charset=UTF-8\n\n")
+		fmt.Print("Content-type: application/n-triples; charset=UTF-8\nLast-Modified: " + lastModified + "\n\n")
 		fmt.Print(convert("ntriples"))
 	case RDF:
-		fmt.Print("Content-type: application/rdf+xml; charset=UTF-8\n\n")
+		fmt.Print("Content-type: application/rdf+xml; charset=UTF-8\nLast-Modified: " + lastModified + "\n\n")
 		fmt.Print(convert("rdfxml"))
 	}
 }
@@ -137,6 +146,7 @@ func convert(output string) string {
 func doHTML() {
 	title := html.EscapeString(uri[1:])
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
+Last-Modified: %s
 
 <html lang="nl">
   <head>
@@ -152,7 +162,7 @@ func doHTML() {
   <body class="">
     <div id="container">
       <h1>%s</h1>
-`, title, uri, uri, uri, title)
+`, lastModified, title, uri, uri, uri, title)
 
 	fmt.Printf("<pre>\n%s</pre>\n", html.EscapeString(strings.TrimSpace(reComment.ReplaceAllLiteralString(data, ""))))
 
