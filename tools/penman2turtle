@@ -25,6 +25,7 @@ from penman import constant
 def process(txt):
     base = txt.split(maxsplit=1)[0][1:]
     sys.stdout.write('###\n### ' + base + '\n###\n\n')
+    sys.stdout.write('@prefix ' + base + ': <https://noordergraf.rug.nl/tomb/' + base + '#> .\n\n')
 
     g = penman.decode(txt)
 
@@ -33,25 +34,33 @@ def process(txt):
     lines = []
 
     for src, _, tgt in g.instances():
-        if src != base:
-            src = base + '.' + src
-        lines.append('{}:{}  a {}:{}'.format(Item, src, Type, tgt))
+        if src == base:
+            src = ' {}:{}'.format(Item , src)
+        else:
+            src = base + ':' + src
+        lines.append('{}  a {}:{}'.format(src, Type, tgt))
 
     for src, role, tgt in g.attributes():
-        if src != base:
-            src = base + '.' + src
+        if src == base:
+            src = ' {}:{}'.format(Item , src)
+        else:
+            src = base + ':' + src
         if constant.type(tgt) == constant.SYMBOL:
-            tgt = '{}:{}.{}'.format(Item, base, tgt)
+            tgt = '{}:{}'.format(base, tgt)
         elif constant.type(tgt) == constant.STRING:
             tgt = tgt.replace('\\', '\\\\')
-        lines.append('{}:{} {}{} {}'.format(Item, src, Predicate, role, tgt))
+        lines.append('{} {}{} {}'.format(src, Predicate, role, tgt))
 
     for src, role, tgt in g.edges():
-        if src != base:
-            src = base + '.' + src
-        if tgt != base:
-            tgt = base + '.' + tgt
-        lines.append('{}:{} {}{} {}:{}'.format(Item, src, Predicate, role, Item, tgt))
+        if src == base:
+            src = ' {}:{}'.format(Item , src)
+        else:
+            src = base + ':' + src
+        if tgt == base:
+            tgt = '{}:{}'.format(Item , tgt)
+        else:
+            tgt = base + ':' + tgt
+        lines.append('{} {}{} {}'.format(src, Predicate, role, tgt))
 
     lines.sort()
 

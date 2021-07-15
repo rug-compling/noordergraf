@@ -8,6 +8,7 @@ import (
 	"os"
 	"os/exec"
 	"path"
+	"regexp"
 	"strconv"
 	"strings"
 )
@@ -31,6 +32,7 @@ var (
 		TRIPLE: ".nt",
 		RDF:    ".rdf",
 	}
+	reComment = regexp.MustCompile("(?m:^[ \t]*#.*\n?)")
 )
 
 func main() {
@@ -74,7 +76,7 @@ func main() {
 	case TURTLE:
 		fmt.Print("Content-type: text/turtle; charset=UTF-8\n\n")
 		fmt.Println(prefix)
-		fmt.Print(data)
+		fmt.Print(reComment.ReplaceAllLiteralString(data, ""))
 	case TRIPLE:
 		fmt.Print("Content-type: application/n-triples; charset=UTF-8\n\n")
 		fmt.Print(convert("ntriples"))
@@ -152,7 +154,7 @@ func doHTML() {
       <h1>%s</h1>
 `, title, uri, uri, uri, title)
 
-	fmt.Printf("<pre>\n%s</pre>\n", html.EscapeString(strings.TrimSpace(data)))
+	fmt.Printf("<pre>\n%s</pre>\n", html.EscapeString(strings.TrimSpace(reComment.ReplaceAllLiteralString(data, ""))))
 
 	fmt.Print(`
     </div>
