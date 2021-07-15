@@ -1,37 +1,38 @@
+@prefix t00575: <https://noordergraf.rug.nl/tomb/t00575#> .
 
 tomb:t00575 a t:tombstone.n.01 ;
-  :image tomb:t00575.im1 ;
+  :image t00575:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00575.p1 ;
-  :img tomb:t00575.i1 ;
+  :ent t00575:p1 ;
+  :img t00575:i1 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00575.s1 .
+  :sym t00575:s1 .
 
-tomb:t00575.i1 a t:portrait.n.02 ;
-  :thm tomb:t00575.p1 .
+t00575:i1 a t:portrait.n.02 ;
+  :thm t00575:p1 .
 
-tomb:t00575.p1 a t:person.n.01 ;
+t00575:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1945-04-14" ;
   :dod "1993-02-14" ;
   :nam "GEGER FREDERIK RASIDI" ;
-  :rol tomb:t00575.r1 ,
-       tomb:t00575.r2 ,
-       tomb:t00575.r3 ,
-       tomb:t00575.r4 .
+  :rol t00575:r1 ,
+       t00575:r2 ,
+       t00575:r3 ,
+       t00575:r4 .
 
-tomb:t00575.r1 a t:father.n.01 ;
+t00575:r1 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00575.r2 a t:brother.n.01 .
+t00575:r2 a t:brother.n.01 .
 
-tomb:t00575.r3 a t:brother-in-law.n.01 .
+t00575:r3 a t:brother-in-law.n.01 .
 
-tomb:t00575.r4 a t:uncle.n.01 .
+t00575:r4 a t:uncle.n.01 .
 
-tomb:t00575.s1 a t:frond.n.01 .
+t00575:s1 a t:frond.n.01 .
 
-tomb:t00575.im1 a t:photo.n.01 ;
+t00575:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

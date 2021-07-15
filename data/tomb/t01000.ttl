@@ -1,35 +1,36 @@
+@prefix t01000: <https://noordergraf.rug.nl/tomb/t01000#> .
 
 tomb:t01000 a t:tombstone.n.01 ;
-  :image tomb:t01000.im1 ;
+  :image t01000:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t01000.g1 ,
-       tomb:t01000.p1 ,
-       tomb:t01000.p2 ,
-       tomb:t01000.p3 ;
+  :ent t01000:g1 ,
+       t01000:p1 ,
+       t01000:p2 ,
+       t01000:p3 ;
   :lan "NLD" .
 
-tomb:t01000.g1 a t:group.n.01 ;
-  :mem tomb:t01000.p2 ,
-       tomb:t01000.p3 .
+t01000:g1 a t:group.n.01 ;
+  :mem t01000:p2 ,
+       t01000:p3 .
 
-tomb:t01000.p1 a t:person.n.01 ;
+t01000:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1857-10-29" ;
   :dod "1887-01-13" ;
   :nam "TRIENTJE H. BOER" ;
-  :rol tomb:t01000.r1 .
+  :rol t01000:r1 .
 
-tomb:t01000.p2 a t:person.n.01 ;
+t01000:p2 a t:person.n.01 ;
   :nam "H.H. BOER" .
 
-tomb:t01000.p3 a t:person.n.01 ;
+t01000:p3 a t:person.n.01 ;
   :nam "A. DE VRIES" .
 
-tomb:t01000.r1 a t:daughter.n.01 ;
+t01000:r1 a t:daughter.n.01 ;
   :att "OUDSTE" ;
-  :tgt tomb:t01000.g1 .
+  :tgt t01000:g1 .
 
-tomb:t01000.im1 a t:photo.n.01 ;
+t01000:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,40 +1,41 @@
+@prefix t00367: <https://noordergraf.rug.nl/tomb/t00367#> .
 
 tomb:t00367 a t:tombstone.n.01 ;
-  :image tomb:t00367.im1 ;
+  :image t00367:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00367.p1 ,
-       tomb:t00367.p2 ;
+  :ent t00367:p1 ,
+       t00367:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym tomb:t00367.s1 .
+  :sym t00367:s1 .
 
-tomb:t00367.c1 a t:village.n.02 ;
+t00367:c1 a t:village.n.02 ;
   :geo place:Tynaarlo2746038 ;
   :place "TYNAARLO" .
 
-tomb:t00367.p1 a t:person.n.01 ;
+t00367:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1893-02-22" ;
   :dod "1956-06-13" ;
   :nam "ALBERDINA VENEKAMP" ;
-  :pob tomb:t00367.c1 ;
-  :pod tomb:t00367.c1 ;
-  :rol tomb:t00367.r1 .
+  :pob t00367:c1 ;
+  :pod t00367:c1 ;
+  :rol t00367:r1 .
 
-tomb:t00367.p2 a t:person.n.01 ;
+t00367:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1896-02-25" ;
   :dod "1960-03-15" ;
   :nam "ALBERT KLAASSENS" ;
-  :pob tomb:t00367.c1 ;
-  :pod tomb:t00367.c1 .
+  :pob t00367:c1 ;
+  :pod t00367:c1 .
 
-tomb:t00367.r1 a t:spouse.n.01 ;
+t00367:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00367.p2 .
+  :tgt t00367:p2 .
 
-tomb:t00367.s1 a t:frond.n.01 .
+t00367:s1 a t:frond.n.01 .
 
-tomb:t00367.im1 a t:photo.n.01 ;
+t00367:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

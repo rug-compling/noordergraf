@@ -1,57 +1,58 @@
+@prefix t01006: <https://noordergraf.rug.nl/tomb/t01006#> .
 
 tomb:t01006 a t:tombstone.n.01 ;
-  :image tomb:t01006.im1 ;
+  :image t01006:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t01006.p1 ,
-       tomb:t01006.p2 ;
+  :ent t01006:p1 ,
+       t01006:p2 ;
   :lan "NLD" ;
-  :sym tomb:t01006.s1 ,
-       tomb:t01006.s2 ,
-       tomb:t01006.s3 ,
-       tomb:t01006.s6 ,
-       tomb:t01006.s7 .
+  :sym t01006:s1 ,
+       t01006:s2 ,
+       t01006:s3 ,
+       t01006:s6 ,
+       t01006:s7 .
 
-tomb:t01006.c1 a t:town.n.01 ;
+t01006:c1 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t01006.c2 a t:village.n.02 ;
+t01006:c2 a t:village.n.02 ;
   :geo place:Noorddijk2749981 ;
   :place "NOORDDIJK" .
 
-tomb:t01006.p1 a t:person.n.01 ;
+t01006:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1780-05-12" ;
   :dod "1869-06-07" ;
   :nam "TRIENTJE JANS KORT" ;
-  :pob tomb:t01006.c1 ;
-  :pod tomb:t01006.c2 ;
-  :rol tomb:t01006.r1 .
+  :pob t01006:c1 ;
+  :pod t01006:c2 ;
+  :rol t01006:r1 .
 
-tomb:t01006.p2 a t:person.n.01 ;
+t01006:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "HINDERK TJAPKES DE BOER" .
 
-tomb:t01006.r1 a t:widow.n.01 ;
-  :tgt tomb:t01006.p2 .
+t01006:r1 a t:widow.n.01 ;
+  :tgt t01006:p2 .
 
-tomb:t01006.s1 a t:sandglass.n.01 .
+t01006:s1 a t:sandglass.n.01 .
 
-tomb:t01006.s2 a t:wing.n.01 .
+t01006:s2 a t:wing.n.01 .
 
-tomb:t01006.s3 a t:wing.n.01 .
+t01006:s3 a t:wing.n.01 .
 
-tomb:t01006.s4 a t:bat.n.01 ;
-  :mem tomb:t01006.s2 .
+t01006:s4 a t:bat.n.01 ;
+  :mem t01006:s2 .
 
-tomb:t01006.s5 a t:bird.n.01 ;
-  :mem tomb:t01006.s3 .
+t01006:s5 a t:bird.n.01 ;
+  :mem t01006:s3 .
 
-tomb:t01006.s6 a t:frond.n.01 .
+t01006:s6 a t:frond.n.01 .
 
-tomb:t01006.s7 a t:frond.n.01 .
+t01006:s7 a t:frond.n.01 .
 
-tomb:t01006.im1 a t:photo.n.01 ;
+t01006:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

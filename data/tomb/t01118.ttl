@@ -1,34 +1,35 @@
+@prefix t01118: <https://noordergraf.rug.nl/tomb/t01118#> .
 
 tomb:t01118 a t:tombstone.n.01 ;
-  :ent tomb:t01118.p1 ;
+  :ent t01118:p1 ;
   :quo "Rust zacht lieve moeder!"@nld ;
-  :sym tomb:t01118.s1 .
+  :sym t01118:s1 .
 
-tomb:t01118.a1 a t:weeping.a.02 .
+t01118:a1 a t:weeping.a.02 .
 
-tomb:t01118.c1 a t:village.n.02 ;
+t01118:c1 a t:village.n.02 ;
   :geo place:Siddeburen2747343 ;
   :place "SIDDEBUREN" .
 
-tomb:t01118.p1 a t:person.n.01 ;
+t01118:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1866-04-13" ;
   :dod "1921-09-03" ;
   :nam "JOHANNA EDELER" ;
-  :pob tomb:t01118.c1 ;
-  :pod tomb:t01118.c1 ;
-  :rol tomb:t01118.r1 ,
-       tomb:t01118.r2 .
+  :pob t01118:c1 ;
+  :pod t01118:c1 ;
+  :rol t01118:r1 ,
+       t01118:r2 .
 
-tomb:t01118.p2 a t:person.n.01 ;
+t01118:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "G. DORINGA" .
 
-tomb:t01118.r1 a t:widow.n.01 ;
-  :tgt tomb:t01118.p2 .
+t01118:r1 a t:widow.n.01 ;
+  :tgt t01118:p2 .
 
-tomb:t01118.r2 a t:mother.n.01 .
+t01118:r2 a t:mother.n.01 .
 
-tomb:t01118.s1 a t:willow.n.01 ;
-  :att tomb:t01118.a1 .
+t01118:s1 a t:willow.n.01 ;
+  :att t01118:a1 .
 

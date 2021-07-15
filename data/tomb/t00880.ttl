@@ -1,34 +1,35 @@
+@prefix t00880: <https://noordergraf.rug.nl/tomb/t00880#> .
 
 tomb:t00880 a t:tombstone.n.01 ;
-  :image tomb:t00880.im1 ;
+  :image t00880:im1 ;
   :site site:dr7844TCveenoord ;
-  :ent tomb:t00880.p1 ;
+  :ent t00880:p1 ;
   :quo "LIEVE VADER, GIJ ZIJT \\ VER VAN ONS VERWIJDERT, \\ MAAR IN ONS HART BENT \\ U ONS DICHT BIJ. \\ TOT WIERZIENS"@nld ,
        "RUST ZACHT"@nld ;
-  :sym tomb:t00880.s1 ,
-       tomb:t00880.s2 .
+  :sym t00880:s1 ,
+       t00880:s2 .
 
-tomb:t00880.c1 a t:village.n.02 ;
+t00880:c1 a t:village.n.02 ;
   :geo place:Odoornerveen2749730 ;
   :place "ODOORNERVEEN" .
 
-tomb:t00880.c2 a t:village.n.02 ;
+t00880:c2 a t:village.n.02 ;
   :geo place:NieuwAmsterdam2750375 ;
   :place "NIEUW-AMSTERDAM" .
 
-tomb:t00880.p1 a t:person.n.01 ;
+t00880:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1879-01-20" ;
   :dod "1929-10-08" ;
   :nam "ALBERT KOENS" ;
-  :pob tomb:t00880.c1 ;
-  :pod tomb:t00880.c2 .
+  :pob t00880:c1 ;
+  :pod t00880:c2 .
 
-tomb:t00880.s1 a t:entity.n.01 .
+t00880:s1 a t:entity.n.01 .
 
-tomb:t00880.s2 a t:entity.n.01 .
+t00880:s2 a t:entity.n.01 .
 
-tomb:t00880.im1 a t:photo.n.01 ;
+t00880:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

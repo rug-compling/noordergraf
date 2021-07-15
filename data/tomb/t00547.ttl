@@ -1,35 +1,36 @@
+@prefix t00547: <https://noordergraf.rug.nl/tomb/t00547#> .
 
 tomb:t00547 a t:tombstone.n.01 ;
-  :image tomb:t00547.im1 ;
+  :image t00547:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00547.p1 ,
-       tomb:t00547.p2 ;
+  :ent t00547:p1 ,
+       t00547:p2 ;
   :lan "NLD" .
 
-tomb:t00547.p1 a t:person.n.01 ;
+t00547:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1834-09-19" ;
   :dod "1906-04-14" ;
   :nam "JAN MULDER" ;
-  :rol tomb:t00547.r1 ;
+  :rol t00547:r1 ;
   :sfx "TZN" .
 
-tomb:t00547.p2 a t:person.n.01 ;
+t00547:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1834-04-08" ;
   :dod "1913-03-30" ;
   :nam "GEESJEN VENEMA" ;
-  :rol tomb:t00547.r2 .
+  :rol t00547:r2 .
 
-tomb:t00547.r1 a t:parent.n.01 ;
+t00547:r1 a t:parent.n.01 ;
   :att "DIERBARE" ;
-  :tgt tomb:t00547.p3 .
+  :tgt t00547:p3 .
 
-tomb:t00547.r2 a t:parent.n.01 ;
+t00547:r2 a t:parent.n.01 ;
   :att "DIERBARE" ;
-  :tgt tomb:t00547.p3 .
+  :tgt t00547:p3 .
 
-tomb:t00547.im1 a t:photo.n.01 ;
+t00547:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

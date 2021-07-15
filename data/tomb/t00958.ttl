@@ -1,39 +1,40 @@
+@prefix t00958: <https://noordergraf.rug.nl/tomb/t00958#> .
 
 tomb:t00958 a t:tombstone.n.01 ;
-  :image tomb:t00958.im1 ;
+  :image t00958:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00958.p1 ,
-       tomb:t00958.p2 ;
+  :ent t00958:p1 ,
+       t00958:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00958.s1 .
+  :sym t00958:s1 .
 
-tomb:t00958.a1 a t:weeping.a.02 .
+t00958:a1 a t:weeping.a.02 .
 
-tomb:t00958.c1 a t:village.n.02 ;
+t00958:c1 a t:village.n.02 ;
   :geo place:Glimmen2755495 ;
   :place "GLIMMEN" .
 
-tomb:t00958.p1 a t:person.n.01 ;
+t00958:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1880-08-05" ;
   :dod "1928-06-21" ;
   :nam "LAMMECHIEN HOUWING" ;
-  :pob tomb:t00958.c1 ;
-  :pod tomb:t00958.c1 ;
-  :rol tomb:t00958.r1 .
+  :pob t00958:c1 ;
+  :pod t00958:c1 ;
+  :rol t00958:r1 .
 
-tomb:t00958.p2 a t:person.n.01 ;
+t00958:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JANS LUTGERS" .
 
-tomb:t00958.r1 a t:spouse.n.01 ;
+t00958:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00958.p2 .
+  :tgt t00958:p2 .
 
-tomb:t00958.s1 a t:willow.n.01 ;
-  :att tomb:t00958.a1 .
+t00958:s1 a t:willow.n.01 ;
+  :att t00958:a1 .
 
-tomb:t00958.im1 a t:photo.n.01 ;
+t00958:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

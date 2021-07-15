@@ -1,46 +1,47 @@
+@prefix t00246: <https://noordergraf.rug.nl/tomb/t00246#> .
 
 tomb:t00246 a t:tombstone.n.01 ;
-  :image tomb:t00246.im1 ;
+  :image t00246:im1 ;
   :site site:gr9751BBharen ;
-  :ent tomb:t00246.p1 .
+  :ent t00246:p1 .
 
-tomb:t00246.c1 a t:village.n.02 ;
+t00246:c1 a t:village.n.02 ;
   :geo place:Oudeschans2749010 ;
   :place "OUDESCHANS" .
 
-tomb:t00246.c2 a t:province.n.01 ;
+t00246:c2 a t:province.n.01 ;
   :geo place:ProvincieGroningen2755249 ;
-  :mem tomb:t00246.c1 ;
+  :mem t00246:c1 ;
   :place "GRONINGEN" .
 
-tomb:t00246.c3 a t:city.n.01 ;
+t00246:c3 a t:city.n.01 ;
   :geo place:Apeldoorn2759706 ;
   :place "APELDOORN" .
 
-tomb:t00246.c4 a t:province.n.01 ;
+t00246:c4 a t:province.n.01 ;
   :geo place:ProvincieGelderland2755634 ;
-  :mem tomb:t00246.c3 ;
+  :mem t00246:c3 ;
   :place "GELDERLAND" .
 
-tomb:t00246.p1 a t:person.n.01 ;
+t00246:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1900-01-15" ;
   :dod "1968-12-21" ;
   :nam "TJAATJE MEIJER" ;
-  :pob tomb:t00246.c1 ;
-  :pod tomb:t00246.c3 ;
-  :rol tomb:t00246.r1 ,
-       tomb:t00246.r2 ,
-       tomb:t00246.r3 .
+  :pob t00246:c1 ;
+  :pod t00246:c3 ;
+  :rol t00246:r1 ,
+       t00246:r2 ,
+       t00246:r3 .
 
-tomb:t00246.r1 a t:sister.n.01 ;
+t00246:r1 a t:sister.n.01 ;
   :att "LIEVE" .
 
-tomb:t00246.r2 a t:aunt.n.01 .
+t00246:r2 a t:aunt.n.01 .
 
-tomb:t00246.r3 a t:grandaunt.n.01 .
+t00246:r3 a t:grandaunt.n.01 .
 
-tomb:t00246.im1 a t:photo.n.01 ;
+t00246:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

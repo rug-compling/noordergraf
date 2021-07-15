@@ -1,36 +1,37 @@
+@prefix t00968: <https://noordergraf.rug.nl/tomb/t00968#> .
 
 tomb:t00968 a t:tombstone.n.01 ;
-  :image tomb:t00968.im1 ;
+  :image t00968:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00968.p1 ,
-       tomb:t00968.p2 ;
+  :ent t00968:p1 ,
+       t00968:p2 ;
   :quo "JEZUS ZEIDE DIE IN \\ MIJ GELOOFT ZAL LEVEN AL \\ WARE HIJ OOK GESTORVEN"@nld ;
-  :sym tomb:t00968.s1 .
+  :sym t00968:s1 .
 
-tomb:t00968.a1 a t:weeping.a.02 .
+t00968:a1 a t:weeping.a.02 .
 
-tomb:t00968.p1 a t:person.n.01 ;
+t00968:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dod "1932-10-06" ;
   :nam "JACOB VOS" ;
-  :rol tomb:t00968.r1 ,
-       tomb:t00968.r2 .
+  :rol t00968:r1 ,
+       t00968:r2 .
 
-tomb:t00968.p2 a t:person.n.01 ;
+t00968:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TRIJNE BOS" .
 
-tomb:t00968.r1 a t:widower.n.01 ;
+t00968:r1 a t:widower.n.01 ;
   :beg "XX-XX-1916" ;
-  :tgt tomb:t00968.p2 .
+  :tgt t00968:p2 .
 
-tomb:t00968.r2 a t:father.n.01 ;
+t00968:r2 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00968.s1 a t:willow.n.01 ;
-  :att tomb:t00968.a1 .
+t00968:s1 a t:willow.n.01 ;
+  :att t00968:a1 .
 
-tomb:t00968.im1 a t:photo.n.01 ;
+t00968:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

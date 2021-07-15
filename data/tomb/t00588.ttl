@@ -1,33 +1,34 @@
+@prefix t00588: <https://noordergraf.rug.nl/tomb/t00588#> .
 
 tomb:t00588 a t:tombstone.n.01 ;
-  :image tomb:t00588.im1 ;
+  :image t00588:im1 ;
   :site site:gr9951TNwinsum ;
-  :ent tomb:t00588.p1 ;
-  :sym tomb:t00588.s1 ,
-       tomb:t00588.s2 .
+  :ent t00588:p1 ;
+  :sym t00588:s1 ,
+       t00588:s2 .
 
-tomb:t00588.c1 a t:village.n.02 ;
+t00588:c1 a t:village.n.02 ;
   :geo place:Winsum2744337 ;
   :place "WINSUM" .
 
-tomb:t00588.c2 a t:city.n.01 ;
+t00588:c2 a t:city.n.01 ;
   :geo place:sHertogenbosch2747351 ;
   :place "'S-HERTOGENBOSCH" .
 
-tomb:t00588.p1 a t:person.n.01 ;
+t00588:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1924-01-16" ;
   :dod "2010-10-30" ;
   :nam "BERENDINUS JAN BRUINS" ;
-  :pob tomb:t00588.c1 ;
-  :pod tomb:t00588.c2 ;
+  :pob t00588:c1 ;
+  :pod t00588:c2 ;
   :sfx "B.ZOON" .
 
-tomb:t00588.s1 a t:square.n.08 .
+t00588:s1 a t:square.n.08 .
 
-tomb:t00588.s2 a t:compass.n.04 .
+t00588:s2 a t:compass.n.04 .
 
-tomb:t00588.im1 a t:photo.n.01 ;
+t00588:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

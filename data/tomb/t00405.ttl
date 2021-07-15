@@ -1,64 +1,65 @@
+@prefix t00405: <https://noordergraf.rug.nl/tomb/t00405#> .
 
 tomb:t00405 a t:tombstone.n.01 ;
-  :image tomb:t00405.im1 ;
+  :image t00405:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00405.p1 ,
-       tomb:t00405.p2 ;
-  :sym tomb:t00405.s1 .
+  :ent t00405:p1 ,
+       t00405:p2 ;
+  :sym t00405:s1 .
 
-tomb:t00405.c1 a t:village.n.02 ;
+t00405:c1 a t:village.n.02 ;
   :geo place:Buitenpost2758131 ;
   :place "BUITENPOST" .
 
-tomb:t00405.c2 a t:city.n.01 ;
+t00405:c2 a t:city.n.01 ;
   :geo place:Franeker2755845 ;
   :place "FRANEKER" .
 
-tomb:t00405.c3 a t:village.n.02 ;
+t00405:c3 a t:village.n.02 ;
   :geo place:Stroobos2746589 ;
   :place "STROOBOS" .
 
-tomb:t00405.c4 a t:province.n.01 ;
+t00405:c4 a t:province.n.01 ;
   :geo place:ProvincieFriesland2755812 ;
-  :mem tomb:t00405.c3 ;
+  :mem t00405:c3 ;
   :place "FRIESLAND" .
 
-tomb:t00405.p1 a t:person.n.01 ;
+t00405:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1847-09-26" ;
   :dod "1929-06-05" ;
   :nam "HENDRIK A. BRUINSMA" ;
-  :pob tomb:t00405.c1 ;
-  :pod tomb:t00405.c2 ;
-  :rol tomb:t00405.r1 .
+  :pob t00405:c1 ;
+  :pod t00405:c2 ;
+  :rol t00405:r1 .
 
-tomb:t00405.p2 a t:person.n.01 ;
+t00405:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1857-11-23" ;
   :dod "1931-12-15" ;
   :nam "RENSKJE VISSER" ;
-  :pob tomb:t00405.c3 ;
-  :pod tomb:t00405.c1 ;
-  :rol tomb:t00405.r2 .
+  :pob t00405:c3 ;
+  :pod t00405:c1 ;
+  :rol t00405:r2 .
 
-tomb:t00405.r1 a t:parent.n.01 ;
+t00405:r1 a t:parent.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00405.r2 a t:parent.n.01 ;
+t00405:r2 a t:parent.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00405.s1 a t:composite.n.01 ;
-  :prt tomb:t00405.s2 ,
-       tomb:t00405.s3 ,
-       tomb:t00405.s4 .
+t00405:s1 a t:composite.n.01 ;
+  :prt t00405:s2 ,
+       t00405:s3 ,
+       t00405:s4 .
 
-tomb:t00405.s2 a t:frond.n.01 .
+t00405:s2 a t:frond.n.01 .
 
-tomb:t00405.s3 a t:frond.n.01 .
+t00405:s3 a t:frond.n.01 .
 
-tomb:t00405.s4 a t:ribbon.n.01 .
+t00405:s4 a t:ribbon.n.01 .
 
-tomb:t00405.im1 a t:photo.n.01 ;
+t00405:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

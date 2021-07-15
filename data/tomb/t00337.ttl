@@ -1,61 +1,62 @@
+@prefix t00337: <https://noordergraf.rug.nl/tomb/t00337#> .
 
 tomb:t00337 a t:tombstone.n.01 ;
-  :image tomb:t00337.im1 ;
+  :image t00337:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00337.p1 ,
-       tomb:t00337.p2 ;
-  :sym tomb:t00337.s1 .
+  :ent t00337:p1 ,
+       t00337:p2 ;
+  :sym t00337:s1 .
 
-tomb:t00337.c1 a t:town.n.01 ;
+t00337:c1 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00337.c2 a t:city.n.01 ;
+t00337:c2 a t:city.n.01 ;
   :geo place:Meppel2750947 ;
   :place "MEPPEL" .
 
-tomb:t00337.p1 a t:person.n.01 ;
+t00337:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1856-01-07" ;
   :dod "1916-04-15" ;
   :nam "JAN VERMEULEN" ;
-  :pob tomb:t00337.c1 ;
-  :pod tomb:t00337.c1 ;
-  :rol tomb:t00337.r1 .
+  :pob t00337:c1 ;
+  :pod t00337:c1 ;
+  :rol t00337:r1 .
 
-tomb:t00337.p2 a t:person.n.01 ;
+t00337:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1860-01-21" ;
   :dod "1925-07-22" ;
   :nam "ANNIGJE WESTENBERG" ;
-  :pob tomb:t00337.c2 ;
-  :pod tomb:t00337.c1 .
+  :pob t00337:c2 ;
+  :pod t00337:c1 .
 
-tomb:t00337.r1 a t:spouse.n.01 ;
+t00337:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00337.p2 .
+  :tgt t00337:p2 .
 
-tomb:t00337.s1 a t:composite.n.01 ;
-  :prt tomb:t00337.s2 ,
-       tomb:t00337.s3 ,
-       tomb:t00337.s5 ,
-       tomb:t00337.s7 .
+t00337:s1 a t:composite.n.01 ;
+  :prt t00337:s2 ,
+       t00337:s3 ,
+       t00337:s5 ,
+       t00337:s7 .
 
-tomb:t00337.s2 a t:butterfly.n.01 .
+t00337:s2 a t:butterfly.n.01 .
 
-tomb:t00337.s3 a t:branch.n.02 .
+t00337:s3 a t:branch.n.02 .
 
-tomb:t00337.s4 a t:oak.n.01 ;
-  :prt tomb:t00337.s3 .
+t00337:s4 a t:oak.n.01 ;
+  :prt t00337:s3 .
 
-tomb:t00337.s5 a t:branch.n.02 .
+t00337:s5 a t:branch.n.02 .
 
-tomb:t00337.s6 a t:oak.n.01 ;
-  :prt tomb:t00337.s5 .
+t00337:s6 a t:oak.n.01 ;
+  :prt t00337:s5 .
 
-tomb:t00337.s7 a t:ribbon.n.01 .
+t00337:s7 a t:ribbon.n.01 .
 
-tomb:t00337.im1 a t:photo.n.01 ;
+t00337:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

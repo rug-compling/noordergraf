@@ -1,50 +1,51 @@
+@prefix t00672: <https://noordergraf.rug.nl/tomb/t00672#> .
 
 tomb:t00672 a t:tombstone.n.01 ;
-  :image tomb:t00672.im1 ;
+  :image t00672:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00672.g1 ,
-       tomb:t00672.p1 ,
-       tomb:t00672.p2 ;
+  :ent t00672:g1 ,
+       t00672:p1 ,
+       t00672:p2 ;
   :lan "NLD" ;
-  :ref tomb:t00672.v1 ;
-  :sym tomb:t00672.s1 .
+  :ref t00672:v1 ;
+  :sym t00672:s1 .
 
-tomb:t00672.b1 a t:First_Epistle_of_John.n.01 ;
-  :prt tomb:t00672.c1 .
+t00672:b1 a t:First_Epistle_of_John.n.01 ;
+  :prt t00672:c1 .
 
-tomb:t00672.c1 a t:chapter.n.01 ;
+t00672:c1 a t:chapter.n.01 ;
   :ord 2 ;
-  :prt tomb:t00672.v1 .
+  :prt t00672:v1 .
 
-tomb:t00672.g1 a t:group.n.01 ;
-  :mem tomb:t00672.p1 ,
-       tomb:t00672.p2 ;
-  :rol tomb:t00672.r1 ,
-       tomb:t00672.r2 .
+t00672:g1 a t:group.n.01 ;
+  :mem t00672:p1 ,
+       t00672:p2 ;
+  :rol t00672:r1 ,
+       t00672:r2 .
 
-tomb:t00672.p1 a t:person.n.01 ;
+t00672:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1887-02-26" ;
   :dod "1958-12-07" ;
   :nam "TRIJNTJE W. VISSER" .
 
-tomb:t00672.p2 a t:person.n.01 ;
+t00672:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1885-10-08" ;
   :dod "1978-09-05" ;
   :nam "AUKE SIKMA" .
 
-tomb:t00672.r1 a t:parent.n.01 ;
+t00672:r1 a t:parent.n.01 ;
   :att "LIEVE" .
 
-tomb:t00672.r2 a t:grandparent.n.01 .
+t00672:r2 a t:grandparent.n.01 .
 
-tomb:t00672.s1 a t:frond.n.01 .
+t00672:s1 a t:frond.n.01 .
 
-tomb:t00672.v1 a t:verse.n.01 ;
+t00672:v1 a t:verse.n.01 ;
   :ord 25 .
 
-tomb:t00672.im1 a t:photo.n.01 ;
+t00672:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

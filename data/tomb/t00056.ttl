@@ -1,55 +1,56 @@
+@prefix t00056: <https://noordergraf.rug.nl/tomb/t00056#> .
 
 tomb:t00056 a t:tombstone.n.01 ;
-  :image tomb:t00056.im1 ;
+  :image t00056:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00056.p1 ,
-       tomb:t00056.p2 ,
-       tomb:t00056.p3 ,
-       tomb:t00056.p4 ,
-       tomb:t00056.p5 ;
-  :ref tomb:t00056.v1 .
+  :ent t00056:p1 ,
+       t00056:p2 ,
+       t00056:p3 ,
+       t00056:p4 ,
+       t00056:p5 ;
+  :ref t00056:v1 .
 
-tomb:t00056.b1 a t:Luke.n.02 ;
-  :prt tomb:t00056.c1 .
+t00056:b1 a t:Luke.n.02 ;
+  :prt t00056:c1 .
 
-tomb:t00056.c1 a t:chapter.n.01 ;
+t00056:c1 a t:chapter.n.01 ;
   :ord 18 ;
-  :prt tomb:t00056.v1 .
+  :prt t00056:v1 .
 
-tomb:t00056.p1 a t:person.n.01 ;
+t00056:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1881-05-21" ;
   :dod "1949-12-15" ;
   :nam "LAMMECHIENA VAN DER VEEN" ;
-  :rol tomb:t00056.r1 .
+  :rol t00056:r1 .
 
-tomb:t00056.p2 a t:person.n.01 ;
+t00056:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1874-09-04" ;
   :dod "1962-01-18" ;
   :nam "GEERT MULDER" .
 
-tomb:t00056.p3 a t:person.n.01 ;
+t00056:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1947-08-07" ;
   :dod "1954-05-05" ;
   :nam "GERARDUS AVERES" .
 
-tomb:t00056.p4 a t:person.n.01 ;
+t00056:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "A. AVERES" .
 
-tomb:t00056.p5 a t:person.n.01 ;
+t00056:p5 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "H.J. AVERES-MULDER" .
 
-tomb:t00056.r1 a t:wife.n.01 ;
-  :tgt tomb:t00056.p2 .
+t00056:r1 a t:wife.n.01 ;
+  :tgt t00056:p2 .
 
-tomb:t00056.v1 a t:verse.n.01 ;
+t00056:v1 a t:verse.n.01 ;
   :ord 16 .
 
-tomb:t00056.im1 a t:photo.n.01 ;
+t00056:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

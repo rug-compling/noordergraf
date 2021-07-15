@@ -1,32 +1,33 @@
+@prefix t00789: <https://noordergraf.rug.nl/tomb/t00789#> .
 
 tomb:t00789 a t:tombstone.n.01 ;
-  :image tomb:t00789.im1 ;
+  :image t00789:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00789.p1 ,
-       tomb:t00789.p2 ;
+  :ent t00789:p1 ,
+       t00789:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld .
 
-tomb:t00789.p1 a t:person.n.01 ;
+t00789:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1864-04-02" ;
   :dod "1930-05-23" ;
   :nam "WILLEM FRIELING" ;
-  :rol tomb:t00789.r1 .
+  :rol t00789:r1 .
 
-tomb:t00789.p2 a t:person.n.01 ;
+t00789:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1866-11-16" ;
   :dod "1924-05-08" ;
   :nam "ROLINA WEURING" ;
-  :rol tomb:t00789.r2 .
+  :rol t00789:r2 .
 
-tomb:t00789.r1 a t:parent.n.01 ;
-  :tgt tomb:t00789.p3 .
+t00789:r1 a t:parent.n.01 ;
+  :tgt t00789:p3 .
 
-tomb:t00789.r2 a t:parent.n.01 ;
-  :tgt tomb:t00789.p3 .
+t00789:r2 a t:parent.n.01 ;
+  :tgt t00789:p3 .
 
-tomb:t00789.im1 a t:photo.n.01 ;
+t00789:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

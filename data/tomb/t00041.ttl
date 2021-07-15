@@ -1,54 +1,55 @@
+@prefix t00041: <https://noordergraf.rug.nl/tomb/t00041#> .
 
 tomb:t00041 a t:tombstone.n.01 ;
-  :image tomb:t00041.im1 ;
+  :image t00041:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00041.p1 ,
-       tomb:t00041.p2 ;
+  :ent t00041:p1 ,
+       t00041:p2 ;
   :quo "RUST IN VREDE" ;
-  :sym tomb:t00041.s1 .
+  :sym t00041:s1 .
 
-tomb:t00041.a1 a t:weeping.a.02 .
+t00041:a1 a t:weeping.a.02 .
 
-tomb:t00041.a2 a t:inverted.a.01 .
+t00041:a2 a t:inverted.a.01 .
 
-tomb:t00041.c1 a t:village.n.02 ;
+t00041:c1 a t:village.n.02 ;
   :geo place:Onnen2749588 ;
   :place "ONNEN" .
 
-tomb:t00041.c2 a t:town.n.01 ;
+t00041:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00041.p1 a t:person.n.01 ;
+t00041:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1874-09-17" ;
   :dod "1926-12-21" ;
   :nam "HENDERKIEN MANNES" ;
-  :pob tomb:t00041.c1 ;
-  :pod tomb:t00041.c2 ;
-  :rol tomb:t00041.r1 .
+  :pob t00041:c1 ;
+  :pod t00041:c2 ;
+  :rol t00041:r1 .
 
-tomb:t00041.p2 a t:person.n.01 ;
+t00041:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JOHANNES REEDER" .
 
-tomb:t00041.r1 a t:wife.n.01 ;
-  :tgt tomb:t00041.p2 .
+t00041:r1 a t:wife.n.01 ;
+  :tgt t00041:p2 .
 
-tomb:t00041.s1 a t:composite.n.01 ;
-  :prt tomb:t00041.s2 ,
-       tomb:t00041.s3 ,
-       tomb:t00041.s4 .
+t00041:s1 a t:composite.n.01 ;
+  :prt t00041:s2 ,
+       t00041:s3 ,
+       t00041:s4 .
 
-tomb:t00041.s2 a t:willow.n.01 ;
-  :att tomb:t00041.a1 .
+t00041:s2 a t:willow.n.01 ;
+  :att t00041:a1 .
 
-tomb:t00041.s3 a t:scythe.n.01 .
+t00041:s3 a t:scythe.n.01 .
 
-tomb:t00041.s4 a t:torch.n.01 ;
-  :att tomb:t00041.a2 .
+t00041:s4 a t:torch.n.01 ;
+  :att t00041:a2 .
 
-tomb:t00041.im1 a t:photo.n.01 ;
+t00041:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

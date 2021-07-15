@@ -1,38 +1,39 @@
+@prefix t00887: <https://noordergraf.rug.nl/tomb/t00887#> .
 
 tomb:t00887 a t:tombstone.n.01 ;
-  :image tomb:t00887.im1 ;
+  :image t00887:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00887.p1 ;
+  :ent t00887:p1 ;
   :quo "HIJ RUSTE IN VREDE"@nld ,
        "TER NAGEDACHTENIS AAN \\ DEN VOOR HET VADERLAND \\ GEVALLEN MILITAIR \\ VAN HET VIERDE R.V.A."@nld ;
-  :sym tomb:t00887.s1 ,
-       tomb:t00887.s2 .
+  :sym t00887:s1 ,
+       t00887:s2 .
 
-tomb:t00887.c1 a t:city.n.01 ;
+t00887:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00887.c2 a t:town.n.01 ;
+t00887:c2 a t:town.n.01 ;
   :geo place:Dubbeldam2756537 ;
   :place "DUBBELDAM" .
 
-tomb:t00887.o1 a t:soldier.n.01 ;
+t00887:o1 a t:soldier.n.01 ;
   :hco "58340" .
 
-tomb:t00887.p1 a t:person.n.01 ;
+t00887:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1916-01-11" ;
   :dod "1940-05-10" ;
   :nam "HILBERT LOOMULDER" ;
-  :occ tomb:t00887.o1 ;
-  :pob tomb:t00887.c1 ;
-  :pod tomb:t00887.c2 .
+  :occ t00887:o1 ;
+  :pob t00887:c1 ;
+  :pod t00887:c2 .
 
-tomb:t00887.s1 a t:entity.n.01 .
+t00887:s1 a t:entity.n.01 .
 
-tomb:t00887.s2 a t:entity.n.01 .
+t00887:s2 a t:entity.n.01 .
 
-tomb:t00887.im1 a t:photo.n.01 ;
+t00887:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

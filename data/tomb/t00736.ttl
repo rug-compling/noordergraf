@@ -1,25 +1,26 @@
+@prefix t00736: <https://noordergraf.rug.nl/tomb/t00736#> .
 
 tomb:t00736 a t:tombstone.n.01 ;
-  :image tomb:t00736.im1 ;
+  :image t00736:im1 ;
   :site site:gr9936BTfarmsum ;
-  :ent tomb:t00736.p1 ,
-       tomb:t00736.p2 ;
+  :ent t00736:p1 ,
+       t00736:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00736.s1 .
+  :sym t00736:s1 .
 
-tomb:t00736.p1 a t:person.n.01 ;
+t00736:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1815-02-06" ;
   :dod "1885-08-30" ;
   :nam "ALBERTJE JAN MULDER" .
 
-tomb:t00736.p2 a t:person.n.01 ;
+t00736:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "R.A. BOS" .
 
-tomb:t00736.s1 a t:butterfly.n.01 .
+t00736:s1 a t:butterfly.n.01 .
 
-tomb:t00736.im1 a t:photo.n.01 ;
+t00736:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

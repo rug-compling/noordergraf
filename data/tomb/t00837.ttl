@@ -1,51 +1,52 @@
+@prefix t00837: <https://noordergraf.rug.nl/tomb/t00837#> .
 
 tomb:t00837 a t:tombstone.n.01 ;
-  :image tomb:t00837.im1 ;
+  :image t00837:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00837.p1 ,
-       tomb:t00837.p2 ;
+  :ent t00837:p1 ,
+       t00837:p2 ;
   :quo "'K HEB MIJN TRANEN \\ ONDER'T KLAGEN, ENZ"@nld ;
   :ref "PSALM 42:2"@nld ;
-  :sym tomb:t00837.s1 .
+  :sym t00837:s1 .
 
-tomb:t00837.a1 a t:weeping.a.02 .
+t00837:a1 a t:weeping.a.02 .
 
-tomb:t00837.c1 a t:village.n.02 ;
+t00837:c1 a t:village.n.02 ;
   :geo place:Dalen2757857 ;
   :place "DALEN" .
 
-tomb:t00837.c2 a t:hamlet.n.03 ;
+t00837:c2 a t:hamlet.n.03 ;
   :geo place:Ermerveen2756036 ;
   :place "ERMERVEEN" .
 
-tomb:t00837.p1 a t:person.n.01 ;
+t00837:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1876-04-11" ;
   :dod "1910-06-09" ;
   :nam "JACOBA HIDDING" ;
-  :pob tomb:t00837.c1 ;
-  :pod tomb:t00837.c2 ;
-  :rol tomb:t00837.r1 ,
-       tomb:t00837.r2 ,
-       tomb:t00837.r3 .
+  :pob t00837:c1 ;
+  :pod t00837:c2 ;
+  :rol t00837:r1 ,
+       t00837:r2 ,
+       t00837:r3 .
 
-tomb:t00837.p2 a t:person.n.01 ;
+t00837:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H.J. MASSELINK" .
 
-tomb:t00837.r1 a t:wife.n.01 ;
+t00837:r1 a t:wife.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00837.r2 a t:mother.n.01 ;
+t00837:r2 a t:mother.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00837.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00837.p2 .
+t00837:r3 a t:spouse.n.01 ;
+  :tgt t00837:p2 .
 
-tomb:t00837.s1 a t:willow.n.01 ;
-  :att tomb:t00837.a1 .
+t00837:s1 a t:willow.n.01 ;
+  :att t00837:a1 .
 
-tomb:t00837.im1 a t:photo.n.01 ;
+t00837:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

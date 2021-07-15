@@ -1,46 +1,47 @@
+@prefix t00494: <https://noordergraf.rug.nl/tomb/t00494#> .
 
 tomb:t00494 a t:tombstone.n.01 ;
-  :image tomb:t00494.im1 ;
+  :image t00494:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00494.p1 ,
-       tomb:t00494.p2 ;
-  :sym tomb:t00494.s1 .
+  :ent t00494:p1 ,
+       t00494:p2 ;
+  :sym t00494:s1 .
 
-tomb:t00494.c1 a t:city.n.01 ;
+t00494:c1 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00494.c2 a t:city.n.01 ;
+t00494:c2 a t:city.n.01 ;
   :geo place:Sneek2747063 ;
   :place "SNEEK" .
 
-tomb:t00494.p1 a t:person.n.01 ;
+t00494:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1834-07-04" ;
   :dod "1923-04-18" ;
   :nam "GOUKE BOONSTRA" ;
-  :pob tomb:t00494.c1 ;
-  :pod tomb:t00494.c1 ;
-  :rol tomb:t00494.r1 .
+  :pob t00494:c1 ;
+  :pod t00494:c1 ;
+  :rol t00494:r1 .
 
-tomb:t00494.p2 a t:person.n.01 ;
+t00494:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1842-08-28" ;
   :dod "1917-04-09" ;
   :nam "BAUKJE ALBERTS DE JONG" ;
-  :pob tomb:t00494.c2 ;
-  :pod tomb:t00494.c1 ;
-  :rol tomb:t00494.r2 .
+  :pob t00494:c2 ;
+  :pod t00494:c1 ;
+  :rol t00494:r2 .
 
-tomb:t00494.r1 a t:parent.n.01 ;
-  :tgt tomb:t00494.p3 .
+t00494:r1 a t:parent.n.01 ;
+  :tgt t00494:p3 .
 
-tomb:t00494.r2 a t:parent.n.01 ;
-  :tgt tomb:t00494.p3 .
+t00494:r2 a t:parent.n.01 ;
+  :tgt t00494:p3 .
 
-tomb:t00494.s1 a t:frond.n.01 .
+t00494:s1 a t:frond.n.01 .
 
-tomb:t00494.im1 a t:photo.n.01 ;
+t00494:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

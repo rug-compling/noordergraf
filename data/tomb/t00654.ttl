@@ -1,51 +1,52 @@
+@prefix t00654: <https://noordergraf.rug.nl/tomb/t00654#> .
 
 tomb:t00654 a t:tombstone.n.01 ;
-  :image tomb:t00654.im1 ;
+  :image t00654:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00654.p1 ,
-       tomb:t00654.p2 ;
+  :ent t00654:p1 ,
+       t00654:p2 ;
   :lan "NLD" ;
-  :ref tomb:t00654.v1 ;
-  :sym tomb:t00654.s1 .
+  :ref t00654:v1 ;
+  :sym t00654:s1 .
 
-tomb:t00654.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00654.c3 .
+t00654:b1 a t:Revelation.n.04 ;
+  :prt t00654:c3 .
 
-tomb:t00654.c1 a t:village.n.02 ;
+t00654:c1 a t:village.n.02 ;
   :geo place:Hornhuizen2753604 ;
   :place "HORNHUIZEN" .
 
-tomb:t00654.c2 a t:town.n.01 ;
+t00654:c2 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00654.c3 a t:chapter.n.01 ;
+t00654:c3 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00654.v1 .
+  :prt t00654:v1 .
 
-tomb:t00654.p1 a t:person.n.01 ;
+t00654:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1868-01-20" ;
   :dod "1931-05-17" ;
   :nam "GRIETJE KLEVERINGA" ;
-  :pob tomb:t00654.c1 ;
-  :pod tomb:t00654.c2 ;
-  :rol tomb:t00654.r1 .
+  :pob t00654:c1 ;
+  :pod t00654:c2 ;
+  :rol t00654:r1 .
 
-tomb:t00654.p2 a t:person.n.01 ;
+t00654:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ANDRIES BLAAK" .
 
-tomb:t00654.r1 a t:widow.n.01 ;
-  :tgt tomb:t00654.p2 .
+t00654:r1 a t:widow.n.01 ;
+  :tgt t00654:p2 .
 
-tomb:t00654.s1 a t:rose.n.01 .
+t00654:s1 a t:rose.n.01 .
 
-tomb:t00654.v1 a t:verse.n.01 ;
+t00654:v1 a t:verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN." .
 
-tomb:t00654.im1 a t:photo.n.01 ;
+t00654:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,31 +1,32 @@
+@prefix t00118: <https://noordergraf.rug.nl/tomb/t00118#> .
 
 tomb:t00118 a t:tombstone.n.01 ;
-  :image tomb:t00118.im1 ;
+  :image t00118:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00118.p1 ,
-       tomb:t00118.p2 .
+  :ent t00118:p1 ,
+       t00118:p2 .
 
-tomb:t00118.p1 a t:person.n.01 ;
+t00118:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1879-09-11" ;
   :dod "1959-05-01" ;
   :nam "BORGERT VRIELING" ;
-  :rol tomb:t00118.r1 .
+  :rol t00118:r1 .
 
-tomb:t00118.p2 a t:person.n.01 ;
+t00118:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1875-06-14" ;
   :dod "1960-01-03" ;
   :nam "LAMMECHIEN KOEKOEK" ;
-  :rol tomb:t00118.r2 .
+  :rol t00118:r2 .
 
-tomb:t00118.r1 a t:father.n.01 ;
+t00118:r1 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00118.r2 a t:mother.n.01 ;
+t00118:r2 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00118.im1 a t:photo.n.01 ;
+t00118:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

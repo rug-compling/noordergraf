@@ -1,57 +1,58 @@
+@prefix t00555: <https://noordergraf.rug.nl/tomb/t00555#> .
 
 tomb:t00555 a t:tombstone.n.01 ;
-  :image tomb:t00555.im1 ;
+  :image t00555:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00555.p1 ,
-       tomb:t00555.p2 ;
+  :ent t00555:p1 ,
+       t00555:p2 ;
   :quo "RUST ZACHT \\ GELIEFDE MAN \\ EN VADER"@nld ;
-  :sym tomb:t00555.s1 .
+  :sym t00555:s1 .
 
-tomb:t00555.c1 a t:village.n.02 ;
+t00555:c1 a t:village.n.02 ;
   :geo place:Borgercompagnie2758618 ;
   :place "BORGERCOMPAGNIE" .
 
-tomb:t00555.o1 a t:farmer.n.01 ;
+t00555:o1 a t:farmer.n.01 ;
   :hco "61220" .
 
-tomb:t00555.p1 a t:person.n.01 ;
+t00555:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1850-01-21" ;
   :dod "1911-01-03" ;
   :nam "GEUCHIEN R. VOS" ;
-  :occ tomb:t00555.o1 ;
-  :pob tomb:t00555.c1 ;
-  :pod tomb:t00555.c1 ;
-  :rol tomb:t00555.r1 ,
-       tomb:t00555.r2 ,
-       tomb:t00555.r3 .
+  :occ t00555:o1 ;
+  :pob t00555:c1 ;
+  :pod t00555:c1 ;
+  :rol t00555:r1 ,
+       t00555:r2 ,
+       t00555:r3 .
 
-tomb:t00555.p2 a t:person.n.01 ;
+t00555:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "MARCHIENA F. SLIM" .
 
-tomb:t00555.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00555.p2 .
+t00555:r1 a t:spouse.n.01 ;
+  :tgt t00555:p2 .
 
-tomb:t00555.r2 a t:husband.n.01 .
+t00555:r2 a t:husband.n.01 .
 
-tomb:t00555.r3 a t:father.n.01 .
+t00555:r3 a t:father.n.01 .
 
-tomb:t00555.s1 a t:composite.n.01 ;
-  :prt tomb:t00555.s2 ,
-       tomb:t00555.s3 ,
-       tomb:t00555.s4 ,
-       tomb:t00555.s5 .
+t00555:s1 a t:composite.n.01 ;
+  :prt t00555:s2 ,
+       t00555:s3 ,
+       t00555:s4 ,
+       t00555:s5 .
 
-tomb:t00555.s2 a t:anchor.n.01 .
+t00555:s2 a t:anchor.n.01 .
 
-tomb:t00555.s3 a t:cross.n.03 .
+t00555:s3 a t:cross.n.03 .
 
-tomb:t00555.s4 a t:heart.n.01 .
+t00555:s4 a t:heart.n.01 .
 
-tomb:t00555.s5 a t:curtain.n.01 .
+t00555:s5 a t:curtain.n.01 .
 
-tomb:t00555.im1 a t:photo.n.01 ;
+t00555:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

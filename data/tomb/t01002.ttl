@@ -1,42 +1,43 @@
+@prefix t01002: <https://noordergraf.rug.nl/tomb/t01002#> .
 
 tomb:t01002 a t:tombstone.n.01 ;
-  :image tomb:t01002.im1 ;
+  :image t01002:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t01002.p1 ,
-       tomb:t01002.p2 ;
+  :ent t01002:p1 ,
+       t01002:p2 ;
   :ref "PSALM 145:6 BERIJMDT"@nld ;
-  :sym tomb:t01002.s1 .
+  :sym t01002:s1 .
 
-tomb:t01002.a1 a t:weeping.a.02 .
+t01002:a1 a t:weeping.a.02 .
 
-tomb:t01002.c1 a t:village.n.02 ;
+t01002:c1 a t:village.n.02 ;
   :geo place:Garsthuizen2755720 ;
   :place "GARSTHUIZEN" .
 
-tomb:t01002.c2 a t:village.n.02 ;
+t01002:c2 a t:village.n.02 ;
   :geo place:Noorderhoogebrug2749931 ;
   :place "NOORDERHOOGEBRUG" .
 
-tomb:t01002.p1 a t:person.n.01 ;
+t01002:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1824-09-19" ;
   :dod "1902-09-29" ;
   :nam "JAN GEERTS NIENHUIS" ;
-  :pob tomb:t01002.c1 ;
-  :pod tomb:t01002.c2 ;
-  :rol tomb:t01002.r1 .
+  :pob t01002:c1 ;
+  :pod t01002:c2 ;
+  :rol t01002:r1 .
 
-tomb:t01002.p2 a t:person.n.01 ;
+t01002:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANJE EISSES BOLHUIS" .
 
-tomb:t01002.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01002.p2 .
+t01002:r1 a t:spouse.n.01 ;
+  :tgt t01002:p2 .
 
-tomb:t01002.s1 a t:willow.n.01 ;
-  :att tomb:t01002.a1 .
+t01002:s1 a t:willow.n.01 ;
+  :att t01002:a1 .
 
-tomb:t01002.im1 a t:photo.n.01 ;
+t01002:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

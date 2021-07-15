@@ -1,26 +1,27 @@
+@prefix t00624: <https://noordergraf.rug.nl/tomb/t00624#> .
 
 tomb:t00624 a t:tombstone.n.01 ;
-  :image tomb:t00624.im1 ;
+  :image t00624:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00624.p1 ,
-       tomb:t00624.p2 ;
+  :ent t00624:p1 ,
+       t00624:p2 ;
   :lan "NLD" .
 
-tomb:t00624.p1 a t:person.n.01 ;
+t00624:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1866-02-08" ;
   :dod "1892-08-15" ;
   :nam "PIETER KORNELIS BOON" ;
-  :rol tomb:t00624.r1 .
+  :rol t00624:r1 .
 
-tomb:t00624.p2 a t:person.n.01 ;
+t00624:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "LOUISE EMMA BUCAILLE" .
 
-tomb:t00624.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00624.p2 .
+t00624:r1 a t:spouse.n.01 ;
+  :tgt t00624:p2 .
 
-tomb:t00624.im1 a t:photo.n.01 ;
+t00624:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

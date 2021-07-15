@@ -1,16 +1,17 @@
+@prefix t00050: <https://noordergraf.rug.nl/tomb/t00050#> .
 
 tomb:t00050 a t:tombstone.n.01 ;
-  :image tomb:t00050.im1 ;
+  :image t00050:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00050.p1 .
+  :ent t00050:p1 .
 
-tomb:t00050.p1 a t:person.n.01 ;
+t00050:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1875-12-14" ;
   :dod "1949-12-29" ;
   :nam "JOHANNA M. RICHTERS" .
 
-tomb:t00050.im1 a t:photo.n.01 ;
+t00050:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

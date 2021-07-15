@@ -1,48 +1,49 @@
+@prefix t01078: <https://noordergraf.rug.nl/tomb/t01078#> .
 
 tomb:t01078 a t:tombstone.n.01 ;
-  :image tomb:t01078.im1 ;
+  :image t01078:im1 ;
   :site site:gr9906PPbierum ;
-  :ent tomb:t01078.p1 ,
-       tomb:t01078.p2 ;
+  :ent t01078:p1 ,
+       t01078:p2 ;
   :lan "NLD" .
 
-tomb:t01078.c1 a t:village.n.02 ;
+t01078:c1 a t:village.n.02 ;
   :geo place:Zuidbroek2743800 ;
   :place "ZUIDBROEK" .
 
-tomb:t01078.c2 a t:village.n.02 ;
+t01078:c2 a t:village.n.02 ;
   :geo place:Bierum2758983 ;
   :place "BIERUM" .
 
-tomb:t01078.c3 a t:village.n.02 ;
+t01078:c3 a t:village.n.02 ;
   :geo place:Oostwold2749325 ;
   :place "OOSTWOLD" .
 
-tomb:t01078.p1 a t:person.n.01 ;
+t01078:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1805-10-21" ;
   :dod "1870-07-19" ;
   :nam "MELLE ENGELS" ;
-  :pob tomb:t01078.c1 ;
-  :pod tomb:t01078.c2 ;
-  :rol tomb:t01078.r1 .
+  :pob t01078:c1 ;
+  :pod t01078:c2 ;
+  :rol t01078:r1 .
 
-tomb:t01078.p2 a t:person.n.01 ;
+t01078:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1804-03-26" ;
   :dod "1894-10-08" ;
   :nam "MARIA BOS" ;
-  :pob tomb:t01078.c3 ;
-  :pod tomb:t01078.c2 ;
-  :rol tomb:t01078.r2 .
+  :pob t01078:c3 ;
+  :pod t01078:c2 ;
+  :rol t01078:r2 .
 
-tomb:t01078.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01078.p2 .
+t01078:r1 a t:spouse.n.01 ;
+  :tgt t01078:p2 .
 
-tomb:t01078.r2 a t:spouse.n.01 ;
-  :tgt tomb:t01078.p1 .
+t01078:r2 a t:spouse.n.01 ;
+  :tgt t01078:p1 .
 
-tomb:t01078.im1 a t:photo.n.01 ;
+t01078:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

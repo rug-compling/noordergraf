@@ -1,36 +1,37 @@
+@prefix t00694: <https://noordergraf.rug.nl/tomb/t00694#> .
 
 tomb:t00694 a t:tombstone.n.01 ;
-  :image tomb:t00694.im1 ;
+  :image t00694:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00694.p1 ,
-       tomb:t00694.p2 ;
+  :ent t00694:p1 ,
+       t00694:p2 ;
   :quo "VITA MUTATUR NON TOLLITUR"@nld ;
-  :sym tomb:t00694.s1 ,
-       tomb:t00694.s2 .
+  :sym t00694:s1 ,
+       t00694:s2 .
 
-tomb:t00694.o1 a t:baker.n.02 ;
+t00694:o1 a t:baker.n.02 ;
   :hco "77610" .
 
-tomb:t00694.p1 a t:person.n.01 ;
+t00694:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1910-12-23" ;
   :dod "1966-07-29" ;
   :nam "CORNEEL JAN DAEMS" .
 
-tomb:t00694.p2 a t:person.n.01 ;
+t00694:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1908-03-21" ;
   :dod "2004-11-23" ;
   :nam "WILHELMINA HELENA DAEMS-VISSER" .
 
-tomb:t00694.s1 a t:person.n.01 ;
+t00694:s1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :occ tomb:t00694.o1 .
+  :occ t00694:o1 .
 
-tomb:t00694.s2 a t:person.n.01 ;
+t00694:s2 a t:person.n.01 ;
   :gender t:female.n.02 .
 
-tomb:t00694.im1 a t:photo.n.01 ;
+t00694:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

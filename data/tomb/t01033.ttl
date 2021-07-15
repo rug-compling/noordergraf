@@ -1,44 +1,45 @@
+@prefix t01033: <https://noordergraf.rug.nl/tomb/t01033#> .
 
 tomb:t01033 a t:tombstone.n.01 ;
-  :image tomb:t01033.im1 ;
+  :image t01033:im1 ;
   :site site:gr9804TEnoordhorn ;
-  :ent tomb:t01033.p1 ,
-       tomb:t01033.p2 ;
+  :ent t01033:p1 ,
+       t01033:p2 ;
   :lan "NLD" ;
-  :ref tomb:t01033.v1 ;
-  :sym tomb:t01033.s1 .
+  :ref t01033:v1 ;
+  :sym t01033:s1 .
 
-tomb:t01033.a1 a t:weeping.a.02 .
+t01033:a1 a t:weeping.a.02 .
 
-tomb:t01033.b1 a t:Revelation.n.04 ;
-  :prt tomb:t01033.c1 .
+t01033:b1 a t:Revelation.n.04 ;
+  :prt t01033:c1 .
 
-tomb:t01033.c1 a t:chapter.n.01 ;
+t01033:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t01033.v1 .
+  :prt t01033:v1 .
 
-tomb:t01033.p1 a t:person.n.01 ;
+t01033:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1844-11-28" ;
   :dod "1922-12-30" ;
   :nam "GERRIT FERINGA" ;
-  :rol tomb:t01033.r1 .
+  :rol t01033:r1 .
 
-tomb:t01033.p2 a t:person.n.01 ;
+t01033:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TRIENTJE SCHEERINGA" .
 
-tomb:t01033.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01033.p2 .
+t01033:r1 a t:spouse.n.01 ;
+  :tgt t01033:p2 .
 
-tomb:t01033.s1 a t:willow.n.01 ;
-  :att tomb:t01033.a1 .
+t01033:s1 a t:willow.n.01 ;
+  :att t01033:a1 .
 
-tomb:t01033.v1 a t:verse.n.01 ;
+t01033:v1 a t:verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
 
-tomb:t01033.im1 a t:photo.n.01 ;
+t01033:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

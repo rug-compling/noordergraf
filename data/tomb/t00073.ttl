@@ -1,31 +1,32 @@
+@prefix t00073: <https://noordergraf.rug.nl/tomb/t00073#> .
 
 tomb:t00073 a t:tombstone.n.01 ;
-  :image tomb:t00073.im1 ;
+  :image t00073:im1 ;
   :site site:gr9721AAgroningen ;
-  :ent tomb:t00073.p1 ,
-       tomb:t00073.p2 ;
-  :sym tomb:t00073.s1 .
+  :ent t00073:p1 ,
+       t00073:p2 ;
+  :sym t00073:s1 .
 
-tomb:t00073.o1 a t:operator.n.03 ;
+t00073:o1 a t:operator.n.03 ;
   :hco "21490" ;
-  :org tomb:t00073.o2 .
+  :org t00073:o2 .
 
-tomb:t00073.o2 a t:funfair.n.01 .
+t00073:o2 a t:funfair.n.01 .
 
-tomb:t00073.p1 a t:person.n.01 ;
+t00073:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dod "1955-09-13" ;
   :nam "JOHN SIPKEMA" ;
-  :occ tomb:t00073.o1 .
+  :occ t00073:o1 .
 
-tomb:t00073.p2 a t:person.n.01 ;
+t00073:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dod "1955-09-13" ;
   :nam "ABELDINE FOGERTIJ" .
 
-tomb:t00073.s1 a t:cross.n.03 .
+t00073:s1 a t:cross.n.03 .
 
-tomb:t00073.im1 a t:photo.n.01 ;
+t00073:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

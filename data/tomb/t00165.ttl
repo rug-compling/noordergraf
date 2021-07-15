@@ -1,64 +1,65 @@
+@prefix t00165: <https://noordergraf.rug.nl/tomb/t00165#> .
 
 tomb:t00165 a t:tombstone.n.01 ;
-  :image tomb:t00165.im1 ;
+  :image t00165:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00165.p1 ,
-       tomb:t00165.p2 ,
-       tomb:t00165.p3 ;
+  :ent t00165:p1 ,
+       t00165:p2 ,
+       t00165:p3 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00165.s1 .
+  :sym t00165:s1 .
 
-tomb:t00165.c1 a t:city.n.01 ;
+t00165:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00165.c2 a t:village.n.02 ;
+t00165:c2 a t:village.n.02 ;
   :geo place:Wildervank2744431 ;
   :place "WILDERVANK" .
 
-tomb:t00165.c3 a t:city.n.01 ;
+t00165:c3 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00165.p1 a t:person.n.01 ;
+t00165:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1861-02-25" ;
   :dod "1922-01-21" ;
   :nam "JANTINA FREDERIKA BAKKER" ;
-  :pob tomb:t00165.c2 ;
-  :pod tomb:t00165.c1 ;
-  :rol tomb:t00165.r1 .
+  :pob t00165:c2 ;
+  :pod t00165:c1 ;
+  :rol t00165:r1 .
 
-tomb:t00165.p2 a t:person.n.01 ;
+t00165:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1863-03-05" ;
   :dod "1941-05-09" ;
   :nam "HINDRIK KAMPHUIS" ;
-  :pob tomb:t00165.c3 ;
-  :pod tomb:t00165.c1 ;
-  :rol tomb:t00165.r2 .
+  :pob t00165:c3 ;
+  :pod t00165:c1 ;
+  :rol t00165:r2 .
 
-tomb:t00165.p3 a t:person.n.01 ;
+t00165:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1903-05-26" ;
   :dod "1960-02-02" ;
   :nam "GRIETJE BAKKER" ;
-  :pob tomb:t00165.c3 ;
-  :pod tomb:t00165.c1 ;
-  :rol tomb:t00165.r3 .
+  :pob t00165:c3 ;
+  :pod t00165:c1 ;
+  :rol t00165:r3 .
 
-tomb:t00165.r1 a t:mother.n.01 ;
+t00165:r1 a t:mother.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00165.r2 a t:father.n.01 ;
+t00165:r2 a t:father.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00165.r3 a t:niece.n.01 ;
+t00165:r3 a t:niece.n.01 ;
   :att "LIEVE" .
 
-tomb:t00165.s1 a t:frond.n.01 .
+t00165:s1 a t:frond.n.01 .
 
-tomb:t00165.im1 a t:photo.n.01 ;
+t00165:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,34 +1,35 @@
+@prefix t01060: <https://noordergraf.rug.nl/tomb/t01060#> .
 
 tomb:t01060 a t:tombstone.n.01 ;
-  :image tomb:t01060.im1 ;
+  :image t01060:im1 ;
   :site site:gr9975VRvierhuizen ;
-  :ent tomb:t01060.p1 ,
-       tomb:t01060.p2 ;
+  :ent t01060:p1 ,
+       t01060:p2 ;
   :lan "NLD" ;
-  :sym tomb:t01060.s1 .
+  :sym t01060:s1 .
 
-tomb:t01060.c1 a t:hamlet.n.03 ;
+t01060:c1 a t:hamlet.n.03 ;
   :geo place:Menneweer12253656 ;
   :place "MENNEWEER" .
 
-tomb:t01060.o1 a t:farmer.n.01 ;
+t01060:o1 a t:farmer.n.01 ;
   :hco "61220" ;
-  :loc tomb:t01060.c1 .
+  :loc t01060:c1 .
 
-tomb:t01060.p1 a t:person.n.01 ;
+t01060:p1 a t:person.n.01 ;
   :dob "1902-09-11" ;
   :dod "1960-05-26" ;
   :nam "J.J. DIJKHUIS" .
 
-tomb:t01060.p2 a t:person.n.01 ;
+t01060:p2 a t:person.n.01 ;
   :dob "1903-06-24" ;
   :dod "1981-01-21" ;
   :nam "J. DIJKHUIS" ;
-  :occ tomb:t01060.o1 .
+  :occ t01060:o1 .
 
-tomb:t01060.s1 a t:pigeon.n.01 .
+t01060:s1 a t:pigeon.n.01 .
 
-tomb:t01060.im1 a t:photo.n.01 ;
+t01060:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

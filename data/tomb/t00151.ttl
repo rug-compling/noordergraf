@@ -1,41 +1,42 @@
+@prefix t00151: <https://noordergraf.rug.nl/tomb/t00151#> .
 
 tomb:t00151 a t:tombstone.n.01 ;
-  :image tomb:t00151.im1 ;
+  :image t00151:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00151.p1 ,
-       tomb:t00151.p2 ,
-       tomb:t00151.p3 ;
-  :sym tomb:t00151.s1 .
+  :ent t00151:p1 ,
+       t00151:p2 ,
+       t00151:p3 ;
+  :sym t00151:s1 .
 
-tomb:t00151.p1 a t:person.n.01 ;
+t00151:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1869-09-19" ;
   :dod "1941-02-10" ;
   :nam "HARM LUIKEN" ;
-  :rol tomb:t00151.r1 ,
-       tomb:t00151.r2 .
+  :rol t00151:r1 ,
+       t00151:r2 .
 
-tomb:t00151.p2 a t:person.n.01 ;
+t00151:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1866-01-16" ;
   :dod "1952-01-08" ;
   :nam "AALTJE WOLTERS" .
 
-tomb:t00151.p3 a t:person.n.01 ;
+t00151:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1899-11-30" ;
   :dod "1969-09-21" ;
   :nam "KORNELIA LUIKEN" .
 
-tomb:t00151.r1 a t:father.n.01 .
+t00151:r1 a t:father.n.01 .
 
-tomb:t00151.r2 a t:husband.n.01 ;
+t00151:r2 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00151.p2 .
+  :tgt t00151:p2 .
 
-tomb:t00151.s1 a t:frond.n.01 .
+t00151:s1 a t:frond.n.01 .
 
-tomb:t00151.im1 a t:photo.n.01 ;
+t00151:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

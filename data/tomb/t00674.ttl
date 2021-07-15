@@ -1,35 +1,36 @@
+@prefix t00674: <https://noordergraf.rug.nl/tomb/t00674#> .
 
 tomb:t00674 a t:tombstone.n.01 ;
-  :image tomb:t00674.im1 ;
+  :image t00674:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00674.g2 ,
-       tomb:t00674.p1 ;
+  :ent t00674:g2 ,
+       t00674:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00674.s1 .
+  :sym t00674:s1 .
 
-tomb:t00674.g2 a t:group.n.01 ;
-  :rol tomb:t00674.r3 .
+t00674:g2 a t:group.n.01 ;
+  :rol t00674:r3 .
 
-tomb:t00674.p1 a t:person.n.01 ;
+t00674:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1914-06-05" ;
   :dod "1962-12-22" ;
   :nam "FETTJE DE HAAN" ;
-  :rol tomb:t00674.r1 ,
-       tomb:t00674.r2 .
+  :rol t00674:r1 ,
+       t00674:r2 .
 
-tomb:t00674.r1 a t:parent.n.01 ;
+t00674:r1 a t:parent.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00674.g2 .
+  :tgt t00674:g2 .
 
-tomb:t00674.r2 a t:grandmother.n.01 .
+t00674:r2 a t:grandmother.n.01 .
 
-tomb:t00674.r3 a t:child.n.02 ;
-  :tgt tomb:t00674.p1 .
+t00674:r3 a t:child.n.02 ;
+  :tgt t00674:p1 .
 
-tomb:t00674.s1 a t:frond.n.01 .
+t00674:s1 a t:frond.n.01 .
 
-tomb:t00674.im1 a t:photo.n.01 ;
+t00674:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

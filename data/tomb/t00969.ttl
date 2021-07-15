@@ -1,32 +1,33 @@
+@prefix t00969: <https://noordergraf.rug.nl/tomb/t00969#> .
 
 tomb:t00969 a t:tombstone.n.01 ;
-  :image tomb:t00969.im1 ;
+  :image t00969:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00969.p1 ,
-       tomb:t00969.p2 ;
+  :ent t00969:p1 ,
+       t00969:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00969.s1 ,
-       tomb:t00969.s2 .
+  :sym t00969:s1 ,
+       t00969:s2 .
 
-tomb:t00969.p1 a t:person.n.01 ;
+t00969:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1796-06-02" ;
   :dod "1872-08-11" ;
   :nam "OTTO KLOOTS" ;
-  :rol tomb:t00969.r1 .
+  :rol t00969:r1 .
 
-tomb:t00969.p2 a t:person.n.01 ;
+t00969:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "JANTIEN HOVING" .
 
-tomb:t00969.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00969.p2 .
+t00969:r1 a t:spouse.n.01 ;
+  :tgt t00969:p2 .
 
-tomb:t00969.s1 a t:frond.n.01 .
+t00969:s1 a t:frond.n.01 .
 
-tomb:t00969.s2 a t:frond.n.01 .
+t00969:s2 a t:frond.n.01 .
 
-tomb:t00969.im1 a t:photo.n.01 ;
+t00969:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

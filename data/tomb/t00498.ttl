@@ -1,57 +1,58 @@
+@prefix t00498: <https://noordergraf.rug.nl/tomb/t00498#> .
 
 tomb:t00498 a t:tombstone.n.01 ;
-  :image tomb:t00498.im1 ;
+  :image t00498:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00498.g1 ,
-       tomb:t00498.p1 ,
-       tomb:t00498.p2 ,
-       tomb:t00498.p3 ,
-       tomb:t00498.p4 ;
+  :ent t00498:g1 ,
+       t00498:p1 ,
+       t00498:p2 ,
+       t00498:p3 ,
+       t00498:p4 ;
   :lan "FRY" .
 
-tomb:t00498.c1 a t:village.n.02 ;
+t00498:c1 a t:village.n.02 ;
   :geo place:Nijhuizum2750067 ;
   :place "NIJHUZUM"@fry .
 
-tomb:t00498.c2 a t:city.n.01 ;
+t00498:c2 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LJOUWERT"@fry .
 
-tomb:t00498.e1 a t:set.v.01 ;
-  :agt tomb:t00498.g1 ;
+t00498:e1 a t:set.v.01 ;
+  :agt t00498:g1 ;
   :beg "14-03-1996" ;
   :thm tomb:t00498 .
 
-tomb:t00498.g1 a t:neikommeling.n.01 ;
-  :mem tomb:t00498.p2 ,
-       tomb:t00498.p3 ,
-       tomb:t00498.p4 .
+t00498:g1 a t:neikommeling.n.01 ;
+  :mem t00498:p2 ,
+       t00498:p3 ,
+       t00498:p4 .
 
-tomb:t00498.p1 a t:person.n.01 ;
+t00498:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1825-03-14" ;
   :dod "1876-03-28" ;
   :nam "PIETER FOPPES BRUINSMA" ;
-  :pob tomb:t00498.c1 ;
-  :pod tomb:t00498.c2 ;
-  :rol tomb:t00498.r1 .
+  :pob t00498:c1 ;
+  :pod t00498:c2 ;
+  :rol t00498:r1 .
 
-tomb:t00498.p2 a t:person.n.01 ;
+t00498:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "FOPPE" .
 
-tomb:t00498.p3 a t:person.n.01 ;
+t00498:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ALDERT" .
 
-tomb:t00498.p4 a t:person.n.01 ;
+t00498:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "WICHERT" .
 
-tomb:t00498.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00498.p2 .
+t00498:r1 a t:spouse.n.01 ;
+  :tgt t00498:p2 .
 
-tomb:t00498.im1 a t:photo.n.01 ;
+t00498:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

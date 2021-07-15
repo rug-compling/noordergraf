@@ -1,24 +1,25 @@
+@prefix t00677: <https://noordergraf.rug.nl/tomb/t00677#> .
 
 tomb:t00677 a t:tombstone.n.01 ;
-  :image tomb:t00677.im1 ;
+  :image t00677:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00677.p1 ,
-       tomb:t00677.p2 ;
+  :ent t00677:p1 ,
+       t00677:p2 ;
   :lan "NLD" .
 
-tomb:t00677.p1 a t:person.n.01 ;
+t00677:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "XX-XX-1894" ;
   :dod "XX-XX-1974" ;
   :nam "SIBBELTJE VAN DER WERFF-TIMMER" .
 
-tomb:t00677.p2 a t:person.n.01 ;
+t00677:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "XX-XX-1894" ;
   :dod "XX-XX-1979" ;
   :nam "WIETZE VAN DER WERFF" .
 
-tomb:t00677.im1 a t:photo.n.01 ;
+t00677:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

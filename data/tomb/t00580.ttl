@@ -1,40 +1,41 @@
+@prefix t00580: <https://noordergraf.rug.nl/tomb/t00580#> .
 
 tomb:t00580 a t:tombstone.n.01 ;
-  :image tomb:t00580.im1 ;
+  :image t00580:im1 ;
   :site site:gr9951STwinsum ;
-  :ent tomb:t00580.p1 ;
-  :ref tomb:t00580.v1 .
+  :ent t00580:p1 ;
+  :ref t00580:v1 .
 
-tomb:t00580.b1 a t:John.n.05 ;
-  :prt tomb:t00580.c3 .
+t00580:b1 a t:John.n.05 ;
+  :prt t00580:c3 .
 
-tomb:t00580.c1 a t:village.n.02 ;
+t00580:c1 a t:village.n.02 ;
   :geo place:Winsum2744337 ;
   :place "WINSUM" .
 
-tomb:t00580.c3 a t:chapter.n.01 ;
+t00580:c3 a t:chapter.n.01 ;
   :ord 11 ;
-  :prt tomb:t00580.v1 .
+  :prt t00580:v1 .
 
-tomb:t00580.p1 a t:person.n.01 ;
+t00580:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1856-07-15" ;
   :dod "1936-01-09" ;
   :nam "GRIETJE VERMAAS" ;
-  :pob tomb:t00580.c1 ;
-  :pod tomb:t00580.c1 ;
-  :rol tomb:t00580.r1 ,
-       tomb:t00580.r2 .
+  :pob t00580:c1 ;
+  :pod t00580:c1 ;
+  :rol t00580:r1 ,
+       t00580:r2 .
 
-tomb:t00580.r1 a t:mother.n.01 ;
+t00580:r1 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00580.r2 a t:grandmother.n.01 .
+t00580:r2 a t:grandmother.n.01 .
 
-tomb:t00580.v1 a t:verse.n.01 ;
+t00580:v1 a t:verse.n.01 ;
   :ord 25 .
 
-tomb:t00580.im1 a t:photo.n.01 ;
+t00580:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

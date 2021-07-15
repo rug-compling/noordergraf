@@ -1,36 +1,37 @@
+@prefix t00914: <https://noordergraf.rug.nl/tomb/t00914#> .
 
 tomb:t00914 a t:tombstone.n.01 ;
-  :image tomb:t00914.im1 ;
+  :image t00914:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00914.p1 ,
-       tomb:t00914.p2 ;
+  :ent t00914:p1 ,
+       t00914:p2 ;
   :quo "RUST ZACHT"@nld .
 
-tomb:t00914.c1 a t:village.n.02 ;
+t00914:c1 a t:village.n.02 ;
   :geo place:Lucaswolde2751404 ;
   :place "LUCASWOLDE" .
 
-tomb:t00914.c2 a t:village.n.02 ;
+t00914:c2 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00914.p1 a t:person.n.01 ;
+t00914:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1897-08-21" ;
   :dod "1924-08-29" ;
   :nam "FROUKJE VAN DER DONK" ;
-  :pob tomb:t00914.c1 ;
-  :pod tomb:t00914.c2 ;
-  :rol tomb:t00914.r1 .
+  :pob t00914:c1 ;
+  :pod t00914:c2 ;
+  :rol t00914:r1 .
 
-tomb:t00914.p2 a t:person.n.01 ;
+t00914:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "SIKKE JAN CAZEMIER" .
 
-tomb:t00914.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00914.p2 .
+t00914:r1 a t:spouse.n.01 ;
+  :tgt t00914:p2 .
 
-tomb:t00914.im1 a t:photo.n.01 ;
+t00914:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

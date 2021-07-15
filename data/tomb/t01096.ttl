@@ -1,27 +1,28 @@
+@prefix t01096: <https://noordergraf.rug.nl/tomb/t01096#> .
 
 tomb:t01096 a t:tombstone.n.01 ;
-  :image tomb:t01096.im1 ;
+  :image t01096:im1 ;
   :site site:gr9628TKsiddeburen ;
-  :ent tomb:t01096.p1 ;
+  :ent t01096:p1 ;
   :quo "DAT GIJ NU ZIJT WAS IK VOOR DEZEN DAT IK NU BEN ZULT GIJ HAAST WEZEN"@nld ;
-  :sym tomb:t01096.s1 ,
-       tomb:t01096.s2 .
+  :sym t01096:s1 ,
+       t01096:s2 .
 
-tomb:t01096.c1 a t:village.n.02 ;
+t01096:c1 a t:village.n.02 ;
   :geo place:Siddeburen2747343 ;
   :place "SIDDEBUREN" .
 
-tomb:t01096.p1 a t:person.n.01 ;
+t01096:p1 a t:person.n.01 ;
   :dob "1767-05-20" ;
   :dod "1854-11-12" ;
   :nam "J.H. BRONDIJK" ;
-  :pob tomb:t01096.c1 .
+  :pob t01096:c1 .
 
-tomb:t01096.s1 a t:skull.n.01 .
+t01096:s1 a t:skull.n.01 .
 
-tomb:t01096.s2 a t:bone.n.01 .
+t01096:s2 a t:bone.n.01 .
 
-tomb:t01096.im1 a t:photo.n.01 ;
+t01096:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

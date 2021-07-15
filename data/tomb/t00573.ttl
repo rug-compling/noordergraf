@@ -1,45 +1,46 @@
+@prefix t00573: <https://noordergraf.rug.nl/tomb/t00573#> .
 
 tomb:t00573 a t:tombstone.n.01 ;
-  :image tomb:t00573.im1 ;
+  :image t00573:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00573.p1 ;
+  :ent t00573:p1 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00573.s1 ,
-       tomb:t00573.s2 ,
-       tomb:t00573.s3 ,
-       tomb:t00573.s4 ,
-       tomb:t00573.s5 ,
-       tomb:t00573.s6 .
+  :sym t00573:s1 ,
+       t00573:s2 ,
+       t00573:s3 ,
+       t00573:s4 ,
+       t00573:s5 ,
+       t00573:s6 .
 
-tomb:t00573.c1 a t:city.n.01 ;
+t00573:c1 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00573.c2 a t:city.n.01 ;
+t00573:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00573.p1 a t:person.n.01 ;
+t00573:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1858-09-19" ;
   :dod "1921-05-15" ;
   :nam "GEERT PIJBES" ;
-  :pob tomb:t00573.c1 ;
-  :pod tomb:t00573.c2 .
+  :pob t00573:c1 ;
+  :pod t00573:c2 .
 
-tomb:t00573.s1 a t:cross.n.03 .
+t00573:s1 a t:cross.n.03 .
 
-tomb:t00573.s2 a t:anchor.n.01 .
+t00573:s2 a t:anchor.n.01 .
 
-tomb:t00573.s3 a t:heart.n.07 .
+t00573:s3 a t:heart.n.07 .
 
-tomb:t00573.s4 a t:entity.n.01 .
+t00573:s4 a t:entity.n.01 .
 
-tomb:t00573.s5 a t:frond.n.01 .
+t00573:s5 a t:frond.n.01 .
 
-tomb:t00573.s6 a t:oak.n.02 .
+t00573:s6 a t:oak.n.02 .
 
-tomb:t00573.im1 a t:photo.n.01 ;
+t00573:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

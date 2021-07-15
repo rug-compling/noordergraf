@@ -1,44 +1,45 @@
+@prefix t00268: <https://noordergraf.rug.nl/tomb/t00268#> .
 
 tomb:t00268 a t:tombstone.n.01 ;
-  :image tomb:t00268.im1 ;
+  :image t00268:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00268.p1 ,
-       tomb:t00268.p2 ,
-       tomb:t00268.p3 ;
-  :sym tomb:t00268.s1 .
+  :ent t00268:p1 ,
+       t00268:p2 ,
+       t00268:p3 ;
+  :sym t00268:s1 .
 
-tomb:t00268.c1 a t:hamlet.n.03 ;
+t00268:c1 a t:hamlet.n.03 ;
   :geo place:Lageland11746820 ;
   :place "LAGELAND" .
 
-tomb:t00268.p1 a t:person.n.01 ;
+t00268:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1934-03-20" ;
   :dod "1968-10-24" ;
   :nam "GASTON-AUGUST VANFRACHEM" ;
-  :pob tomb:t00268.c1 ;
-  :rol tomb:t00268.r1 ,
-       tomb:t00268.r2 ,
-       tomb:t00268.r3 .
+  :pob t00268:c1 ;
+  :rol t00268:r1 ,
+       t00268:r2 ,
+       t00268:r3 .
 
-tomb:t00268.p2 a t:family.n.04 ;
+t00268:p2 a t:family.n.04 ;
   :nam "VANFRACHEM" .
 
-tomb:t00268.p3 a t:family.n.04 ;
+t00268:p3 a t:family.n.04 ;
   :nam "STEL" .
 
-tomb:t00268.r1 a t:son.n.01 ;
-  :tgt tomb:t00268.p2 .
+t00268:r1 a t:son.n.01 ;
+  :tgt t00268:p2 .
 
-tomb:t00268.r2 a t:brother.n.01 ;
-  :tgt tomb:t00268.p2 .
+t00268:r2 a t:brother.n.01 ;
+  :tgt t00268:p2 .
 
-tomb:t00268.r3 a t:housemate.n.01 ;
-  :tgt tomb:t00268.p3 .
+t00268:r3 a t:housemate.n.01 ;
+  :tgt t00268:p3 .
 
-tomb:t00268.s1 a t:cross.n.03 .
+t00268:s1 a t:cross.n.03 .
 
-tomb:t00268.im1 a t:photo.n.01 ;
+t00268:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

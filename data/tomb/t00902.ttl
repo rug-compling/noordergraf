@@ -1,48 +1,49 @@
+@prefix t00902: <https://noordergraf.rug.nl/tomb/t00902#> .
 
 tomb:t00902 a t:tombstone.n.01 ;
-  :image tomb:t00902.im1 ;
+  :image t00902:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00902.p1 ,
-       tomb:t00902.p2 ;
+  :ent t00902:p1 ,
+       t00902:p2 ;
   :quo "IN MEMORIAN"@nld ,
        "REQUIEM AETERNAM \\ DONE EIS \\ DOMINE"@nld ;
   :ref "PREDIKER `12:7"@nld ;
-  :sym tomb:t00902.s1 ,
-       tomb:t00902.s2 .
+  :sym t00902:s1 ,
+       t00902:s2 .
 
-tomb:t00902.c1 a t:hamlet.n.03 ;
+t00902:c1 a t:hamlet.n.03 ;
   :geo place:Diepswal2756869 ;
   :place "DIEPSWAL" .
 
-tomb:t00902.c2 a t:city.n.01 ;
+t00902:c2 a t:city.n.01 ;
   :geo place:Rotterdam2747891 ;
   :place "ROTTERDAM" .
 
-tomb:t00902.c3 a t:city.n.01 ;
+t00902:c3 a t:city.n.01 ;
   :geo place:Enschede2756071 ;
   :place "ENSCHEDE" .
 
-tomb:t00902.p1 a t:person.n.01 ;
+t00902:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1891-05-05" ;
   :dod "1940-08-04" ;
   :nam "GRIETJE WILLEMINA HOENDERKEN" ;
-  :pob tomb:t00902.c1 ;
-  :pod tomb:t00902.c2 .
+  :pob t00902:c1 ;
+  :pod t00902:c2 .
 
-tomb:t00902.p2 a t:person.n.01 ;
+t00902:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1896-11-13" ;
   :dod "1946-12-18" ;
   :nam "REINDER CLUIVING HOENDERKEN" ;
-  :pob tomb:t00902.c1 ;
-  :pod tomb:t00902.c3 .
+  :pob t00902:c1 ;
+  :pod t00902:c3 .
 
-tomb:t00902.s1 a t:cross.n.03 .
+t00902:s1 a t:cross.n.03 .
 
-tomb:t00902.s2 a t:frond.n.01 .
+t00902:s2 a t:frond.n.01 .
 
-tomb:t00902.im1 a t:photo.n.01 ;
+t00902:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

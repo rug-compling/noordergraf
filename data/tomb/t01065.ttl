@@ -1,80 +1,81 @@
+@prefix t01065: <https://noordergraf.rug.nl/tomb/t01065#> .
 
 tomb:t01065 a t:tombstone.n.01 ;
-  :image tomb:t01065.im1 ;
+  :image t01065:im1 ;
   :site site:gr9975VRvierhuizen ;
-  :ent tomb:t01065.p1 ,
-       tomb:t01065.p2 ;
+  :ent t01065:p1 ,
+       t01065:p2 ;
   :lan "NLD" .
 
-tomb:t01065.b1 a t:Revelation.n.04 ;
-  :prt tomb:t01065.c3 .
+t01065:b1 a t:Revelation.n.04 ;
+  :prt t01065:c3 .
 
-tomb:t01065.b2 a t:Epistle_to_the_Romans.n.04 ;
-  :prt tomb:t01065.c6 .
+t01065:b2 a t:Epistle_to_the_Romans.n.04 ;
+  :prt t01065:c6 .
 
-tomb:t01065.c1 a t:village.n.02 ;
+t01065:c1 a t:village.n.02 ;
   :geo place:Engwierum2756081 ;
   :place "ENGWIERUM" .
 
-tomb:t01065.c2 a t:city.n.01 ;
+t01065:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t01065.c3 a t:chapter.n.01 ;
+t01065:c3 a t:chapter.n.01 ;
   :ord 22 ;
-  :prt tomb:t01065.v1 .
+  :prt t01065:v1 .
 
-tomb:t01065.c4 a t:village.n.02 ;
+t01065:c4 a t:village.n.02 ;
   :geo place:Lutjegast2751376 ;
   :place "LUTJEGAST" .
 
-tomb:t01065.c5 a t:village.n.02 ;
+t01065:c5 a t:village.n.02 ;
   :geo place:Ulrum2745944 ;
   :place "ULRUM" .
 
-tomb:t01065.c6 a t:chapter.n.01 ;
+t01065:c6 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t01065.v3 .
+  :prt t01065:v3 .
 
-tomb:t01065.p1 a t:person.n.01 ;
+t01065:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1888-05-31" ;
   :dod "1932-06-20" ;
   :nam "LUBBE DE BRAAK" ;
-  :pob tomb:t01065.c1 ;
-  :pod tomb:t01065.c2 ;
-  :ref tomb:t01065.v1 ;
-  :rol tomb:t01065.r1 .
+  :pob t01065:c1 ;
+  :pod t01065:c2 ;
+  :ref t01065:v1 ;
+  :rol t01065:r1 .
 
-tomb:t01065.p2 a t:person.n.01 ;
+t01065:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1887-10-05" ;
   :dod "1975-07-28" ;
   :nam "JANTJE RENKEMA" ;
-  :pob tomb:t01065.c4 ;
-  :pod tomb:t01065.c5 ;
-  :ref tomb:t01065.v2 ;
-  :rol tomb:t01065.r2 .
+  :pob t01065:c4 ;
+  :pod t01065:c5 ;
+  :ref t01065:v2 ;
+  :rol t01065:r2 .
 
-tomb:t01065.r1 a t:spouse.n.01 ;
+t01065:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t01065.p2 .
+  :tgt t01065:p2 .
 
-tomb:t01065.r2 a t:spouse.n.01 ;
+t01065:r2 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t01065.p1 .
+  :tgt t01065:p1 .
 
-tomb:t01065.v1 a t:verse.n.01 ;
+t01065:v1 a t:verse.n.01 ;
   :ord 20 .
 
-tomb:t01065.v2 a t:part.n.09 ;
+t01065:v2 a t:part.n.09 ;
   :nam "B" .
 
-tomb:t01065.v3 a t:verse.n.01 ;
+t01065:v3 a t:verse.n.01 ;
   :ord 8 ;
-  :prt tomb:t01065.v2 .
+  :prt t01065:v2 .
 
-tomb:t01065.im1 a t:photo.n.01 ;
+t01065:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

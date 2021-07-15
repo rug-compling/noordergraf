@@ -1,48 +1,49 @@
+@prefix t00501: <https://noordergraf.rug.nl/tomb/t00501#> .
 
 tomb:t00501 a t:tombstone.n.01 ;
-  :image tomb:t00501.im1 ;
+  :image t00501:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00501.p1 ,
-       tomb:t00501.p2 ;
-  :sym tomb:t00501.s1 .
+  :ent t00501:p1 ,
+       t00501:p2 ;
+  :sym t00501:s1 .
 
-tomb:t00501.c1 a t:village.n.02 ;
+t00501:c1 a t:village.n.02 ;
   :geo place:Boksum2758458 ;
   :place "BOKSUM" .
 
-tomb:t00501.c2 a t:city.n.01 ;
+t00501:c2 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00501.c3 a t:city.n.01 ;
+t00501:c3 a t:city.n.01 ;
   :geo place:Vlissingen2745392 ;
   :place "VLISSINGEN" .
 
-tomb:t00501.p1 a t:person.n.01 ;
+t00501:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1855-05-24" ;
   :dod "1918-05-01" ;
   :nam "JOHANNES FRANSBERGEN" ;
-  :pob tomb:t00501.c1 ;
-  :pod tomb:t00501.c2 .
+  :pob t00501:c1 ;
+  :pod t00501:c2 .
 
-tomb:t00501.p2 a t:person.n.01 ;
+t00501:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1847-12-10" ;
   :dod "1932-03-25" ;
   :nam "MARIA LOUISA ELDERMANS" ;
-  :pob tomb:t00501.c3 ;
-  :pod tomb:t00501.c2 .
+  :pob t00501:c3 ;
+  :pod t00501:c2 .
 
-tomb:t00501.s1 a t:composite.n.01 ;
-  :prt tomb:t00501.s2 ,
-       tomb:t00501.s3 .
+t00501:s1 a t:composite.n.01 ;
+  :prt t00501:s2 ,
+       t00501:s3 .
 
-tomb:t00501.s2 a t:frond.n.01 .
+t00501:s2 a t:frond.n.01 .
 
-tomb:t00501.s3 a t:ribbon.n.02 .
+t00501:s3 a t:ribbon.n.02 .
 
-tomb:t00501.im1 a t:photo.n.01 ;
+t00501:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

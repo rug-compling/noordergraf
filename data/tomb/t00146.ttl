@@ -1,47 +1,48 @@
+@prefix t00146: <https://noordergraf.rug.nl/tomb/t00146#> .
 
 tomb:t00146 a t:tombstone.n.01 ;
-  :image tomb:t00146.im1 ;
+  :image t00146:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00146.p1 ,
-       tomb:t00146.p2 ,
-       tomb:t00146.p3 ;
-  :sym tomb:t00146.s1 .
+  :ent t00146:p1 ,
+       t00146:p2 ,
+       t00146:p3 ;
+  :sym t00146:s1 .
 
-tomb:t00146.p1 a t:person.n.01 ;
+t00146:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1857-04-08" ;
   :dod "1941-01-04" ;
   :nam "JACOB HUIZINGA" ;
-  :rol tomb:t00146.r1 .
+  :rol t00146:r1 .
 
-tomb:t00146.p2 a t:person.n.01 ;
+t00146:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1869-11-05" ;
   :dod "1961-07-04" ;
   :nam "BOUWINA LUBBERS" ;
-  :rol tomb:t00146.r2 .
+  :rol t00146:r2 .
 
-tomb:t00146.p3 a t:person.n.01 ;
+t00146:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1880-09-08" ;
   :dod "1962-03-05" ;
   :nam "JAN MIDDEL" .
 
-tomb:t00146.r1 a t:husband.n.01 ;
-  :tgt tomb:t00146.p2 .
+t00146:r1 a t:husband.n.01 ;
+  :tgt t00146:p2 .
 
-tomb:t00146.r2 a t:wife.n.01 ;
-  :tgt tomb:t00146.p3 .
+t00146:r2 a t:wife.n.01 ;
+  :tgt t00146:p3 .
 
-tomb:t00146.s1 a t:composite.n.01 ;
-  :prt tomb:t00146.s2 ,
-       tomb:t00146.s3 .
+t00146:s1 a t:composite.n.01 ;
+  :prt t00146:s2 ,
+       t00146:s3 .
 
-tomb:t00146.s2 a t:frond.n.01 .
+t00146:s2 a t:frond.n.01 .
 
-tomb:t00146.s3 a t:ribbon.n.01 .
+t00146:s3 a t:ribbon.n.01 .
 
-tomb:t00146.im1 a t:photo.n.01 ;
+t00146:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

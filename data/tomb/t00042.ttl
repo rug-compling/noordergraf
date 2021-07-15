@@ -1,54 +1,55 @@
+@prefix t00042: <https://noordergraf.rug.nl/tomb/t00042#> .
 
 tomb:t00042 a t:tombstone.n.01 ;
-  :image tomb:t00042.im1 ;
+  :image t00042:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00042.p1 ,
-       tomb:t00042.p2 ;
+  :ent t00042:p1 ,
+       t00042:p2 ;
   :quo "RUST IN VREDE" ;
-  :sym tomb:t00042.s1 .
+  :sym t00042:s1 .
 
-tomb:t00042.a1 a t:weeping.a.02 .
+t00042:a1 a t:weeping.a.02 .
 
-tomb:t00042.a2 a t:inverted.a.01 .
+t00042:a2 a t:inverted.a.01 .
 
-tomb:t00042.c1 a t:town.n.01 ;
+t00042:c1 a t:town.n.01 ;
   :geo place:Eelde2756408 ;
   :place "EELDE" .
 
-tomb:t00042.c2 a t:town.n.01 ;
+t00042:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00042.p1 a t:person.n.01 ;
+t00042:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1849-12-18" ;
   :dod "1939-10-05" ;
   :nam "JOHANNES REEDER" ;
-  :pob tomb:t00042.c1 ;
-  :pod tomb:t00042.c2 ;
-  :rol tomb:t00042.r1 .
+  :pob t00042:c1 ;
+  :pod t00042:c2 ;
+  :rol t00042:r1 .
 
-tomb:t00042.p2 a t:person.n.01 ;
+t00042:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "H. MANNES" .
 
-tomb:t00042.r1 a t:widower.n.01 ;
-  :tgt tomb:t00042.p2 .
+t00042:r1 a t:widower.n.01 ;
+  :tgt t00042:p2 .
 
-tomb:t00042.s1 a t:composite.n.01 ;
-  :prt tomb:t00042.s2 ,
-       tomb:t00042.s3 ,
-       tomb:t00042.s4 .
+t00042:s1 a t:composite.n.01 ;
+  :prt t00042:s2 ,
+       t00042:s3 ,
+       t00042:s4 .
 
-tomb:t00042.s2 a t:willow.n.01 ;
-  :att tomb:t00042.a1 .
+t00042:s2 a t:willow.n.01 ;
+  :att t00042:a1 .
 
-tomb:t00042.s3 a t:scythe.n.01 .
+t00042:s3 a t:scythe.n.01 .
 
-tomb:t00042.s4 a t:torch.n.01 ;
-  :att tomb:t00042.a2 .
+t00042:s4 a t:torch.n.01 ;
+  :att t00042:a2 .
 
-tomb:t00042.im1 a t:photo.n.01 ;
+t00042:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

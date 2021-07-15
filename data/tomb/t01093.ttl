@@ -1,26 +1,27 @@
+@prefix t01093: <https://noordergraf.rug.nl/tomb/t01093#> .
 
 tomb:t01093 a t:tombstone.n.01 ;
-  :image tomb:t01093.im1 ;
+  :image t01093:im1 ;
   :site site:gr9628TKsiddeburen ;
-  :ent tomb:t01093.p1 ;
+  :ent t01093:p1 ;
   :lan "NLD" .
 
-tomb:t01093.c1 a t:village.n.02 ;
+t01093:c1 a t:village.n.02 ;
   :geo place:Siddeburen2747343 ;
   :place "SIDDEBUREN" .
 
-tomb:t01093.o1 a t:pastor.n.01 ;
+t01093:o1 a t:pastor.n.01 ;
   :hco "14120" ;
-  :loc tomb:t01093.c1 .
+  :loc t01093:c1 .
 
-tomb:t01093.p1 a t:person.n.01 ;
+t01093:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1817-03-21" ;
   :dod "1884-03-18" ;
   :nam "HESSO VERSTEEGH" ;
-  :occ tomb:t01093.o1 .
+  :occ t01093:o1 .
 
-tomb:t01093.im1 a t:photo.n.01 ;
+t01093:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

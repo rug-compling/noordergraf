@@ -1,53 +1,54 @@
+@prefix t00134: <https://noordergraf.rug.nl/tomb/t00134#> .
 
 tomb:t00134 a t:tombstone.n.01 ;
-  :image tomb:t00134.im1 ;
+  :image t00134:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00134.p1 ,
-       tomb:t00134.p2 ,
-       tomb:t00134.p3 .
+  :ent t00134:p1 ,
+       t00134:p2 ,
+       t00134:p3 .
 
-tomb:t00134.c1 a t:city.n.01 ;
+t00134:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00134.c2 a t:village.n.02 ;
+t00134:c2 a t:village.n.02 ;
   :geo place:Warffum2745024 ;
   :place "WARFFUM" .
 
-tomb:t00134.c3 a t:town.n.01 ;
+t00134:c3 a t:town.n.01 ;
   :geo place:Grootegast2755204 ;
   :place "GROOTEGAST" .
 
-tomb:t00134.p1 a t:person.n.01 ;
+t00134:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1881-11-20" ;
   :dod "1942-01-25" ;
   :nam "AKE SIKKEMA" ;
-  :pob tomb:t00134.c2 ;
-  :pod tomb:t00134.c1 .
+  :pob t00134:c2 ;
+  :pod t00134:c1 .
 
-tomb:t00134.p2 a t:person.n.01 ;
+t00134:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-03-19" ;
   :dod "1951-04-25" ;
   :nam "BENTJE WESTERBRINK" ;
-  :pob tomb:t00134.c3 ;
-  :pod tomb:t00134.c1 ;
-  :rol tomb:t00134.r1 ,
-       tomb:t00134.r2 .
+  :pob t00134:c3 ;
+  :pod t00134:c1 ;
+  :rol t00134:r1 ,
+       t00134:r2 .
 
-tomb:t00134.p3 a t:person.n.01 ;
+t00134:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "J. DOFF" .
 
-tomb:t00134.r1 a t:wife.n.01 ;
-  :bef tomb:t00134.r2 ;
-  :tgt tomb:t00134.p1 .
+t00134:r1 a t:wife.n.01 ;
+  :bef t00134:r2 ;
+  :tgt t00134:p1 .
 
-tomb:t00134.r2 a t:wife.n.01 ;
-  :tgt tomb:t00134.p3 .
+t00134:r2 a t:wife.n.01 ;
+  :tgt t00134:p3 .
 
-tomb:t00134.im1 a t:photo.n.01 ;
+t00134:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

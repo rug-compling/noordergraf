@@ -1,50 +1,51 @@
+@prefix t00393: <https://noordergraf.rug.nl/tomb/t00393#> .
 
 tomb:t00393 a t:tombstone.n.01 ;
-  :image tomb:t00393.im1 ;
+  :image t00393:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00393.p1 ,
-       tomb:t00393.p2 .
+  :ent t00393:p1 ,
+       t00393:p2 .
 
-tomb:t00393.c1 a t:village.n.02 ;
+t00393:c1 a t:village.n.02 ;
   :geo place:Minnertsga2750790 ;
   :place "MINNERTSGA" .
 
-tomb:t00393.c2 a t:village.n.02 ;
+t00393:c2 a t:village.n.02 ;
   :geo place:Bitgum2759283 ;
   :place "BEETGUM" .
 
-tomb:t00393.c3 a t:village.n.02 ;
+t00393:c3 a t:village.n.02 ;
   :geo place:Weidum2744891 ;
   :place "WEIDUM" .
 
-tomb:t00393.o1 a t:doctor.n.01 ;
-  :bef tomb:t00393.o2 ;
+t00393:o1 a t:doctor.n.01 ;
+  :bef t00393:o2 ;
   :hco "06105" ;
-  :loc tomb:t00393.c1 .
+  :loc t00393:c1 .
 
-tomb:t00393.o2 a t:doctor.n.01 ;
+t00393:o2 a t:doctor.n.01 ;
   :hco "06105" ;
-  :loc tomb:t00393.c2 .
+  :loc t00393:c2 .
 
-tomb:t00393.p1 a t:person.n.01 ;
+t00393:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1838-03-19" ;
   :dod "1900-07-12" ;
   :nam "CONRADUS ALBERTUS KUIPERS DIJKEN" ;
-  :occ tomb:t00393.o1 ,
-       tomb:t00393.o2 ;
-  :pob tomb:t00393.c3 ;
-  :pod tomb:t00393.c2 ;
-  :rol tomb:t00393.r1 .
+  :occ t00393:o1 ,
+       t00393:o2 ;
+  :pob t00393:c3 ;
+  :pod t00393:c2 ;
+  :rol t00393:r1 .
 
-tomb:t00393.p2 a t:person.n.01 ;
+t00393:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANTJE KUIPERS" .
 
-tomb:t00393.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00393.p2 .
+t00393:r1 a t:spouse.n.01 ;
+  :tgt t00393:p2 .
 
-tomb:t00393.im1 a t:photo.n.01 ;
+t00393:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

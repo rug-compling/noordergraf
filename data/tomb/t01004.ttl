@@ -1,47 +1,48 @@
+@prefix t01004: <https://noordergraf.rug.nl/tomb/t01004#> .
 
 tomb:t01004 a t:tombstone.n.01 ;
-  :image tomb:t01004.im1 ;
+  :image t01004:im1 ;
   :site site:gr9686RSbeerta ;
-  :ent tomb:t01004.g1 ,
-       tomb:t01004.p1 ,
-       tomb:t01004.p2 ,
-       tomb:t01004.p3 ;
+  :ent t01004:g1 ,
+       t01004:p1 ,
+       t01004:p2 ,
+       t01004:p3 ;
   :quo "ZOEKT DEN HEER EN LEEFT"@nld ;
   :ref "AMOS 5:6"@nld ;
-  :sym tomb:t01004.s1 ,
-       tomb:t01004.s2 ,
-       tomb:t01004.s3 .
+  :sym t01004:s1 ,
+       t01004:s2 ,
+       t01004:s3 .
 
-tomb:t01004.a1 a t:weeping.a.02 .
+t01004:a1 a t:weeping.a.02 .
 
-tomb:t01004.g1 a t:group.n.01 ;
-  :mem tomb:t01004.p2 ,
-       tomb:t01004.p3 .
+t01004:g1 a t:group.n.01 ;
+  :mem t01004:p2 ,
+       t01004:p3 .
 
-tomb:t01004.p1 a t:person.n.01 ;
+t01004:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1871-10-23" ;
   :dod "1892-02-15" ;
   :nam "STIENTJE WANMAKER" ;
-  :rol tomb:t01004.r1 .
+  :rol t01004:r1 .
 
-tomb:t01004.p2 a t:person.n.01 ;
+t01004:p2 a t:person.n.01 ;
   :nam "J. WANMAKER" .
 
-tomb:t01004.p3 a t:person.n.01 ;
+t01004:p3 a t:person.n.01 ;
   :nam "F. HEIKENS" .
 
-tomb:t01004.r1 a t:daughter.n.01 ;
-  :tgt tomb:t01004.g1 .
+t01004:r1 a t:daughter.n.01 ;
+  :tgt t01004:g1 .
 
-tomb:t01004.s1 a t:willow.n.01 ;
-  :att tomb:t01004.a1 .
+t01004:s1 a t:willow.n.01 ;
+  :att t01004:a1 .
 
-tomb:t01004.s2 a t:scythe.n.01 .
+t01004:s2 a t:scythe.n.01 .
 
-tomb:t01004.s3 a t:butterfly.n.01 .
+t01004:s3 a t:butterfly.n.01 .
 
-tomb:t01004.im1 a t:photo.n.01 ;
+t01004:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

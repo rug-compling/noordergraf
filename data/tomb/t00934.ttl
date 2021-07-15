@@ -1,52 +1,53 @@
+@prefix t00934: <https://noordergraf.rug.nl/tomb/t00934#> .
 
 tomb:t00934 a t:tombstone.n.01 ;
-  :image tomb:t00934.im1 ;
+  :image t00934:im1 ;
   :site site:gr9741GHgroningen ;
-  :ent tomb:t00934.g1 ,
-       tomb:t00934.p1 ,
-       tomb:t00934.p2 ,
-       tomb:t00934.p3 ;
+  :ent t00934:g1 ,
+       t00934:p1 ,
+       t00934:p2 ,
+       t00934:p3 ;
   :lan "NLD" ;
-  :ref tomb:t00934.v1 .
+  :ref t00934:v1 .
 
-tomb:t00934.b1 a t:John.n.05 ;
-  :prt tomb:t00934.c1 .
+t00934:b1 a t:John.n.05 ;
+  :prt t00934:c1 .
 
-tomb:t00934.c1 a t:chapter.n.01 ;
+t00934:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00934.v1 .
+  :prt t00934:v1 .
 
-tomb:t00934.g1 a t:group.n.01 ;
-  :mem tomb:t00934.p2 ,
-       tomb:t00934.p3 ;
-  :rol tomb:t00934.r1 .
+t00934:g1 a t:group.n.01 ;
+  :mem t00934:p2 ,
+       t00934:p3 ;
+  :rol t00934:r1 .
 
-tomb:t00934.p1 a t:person.n.01 ;
+t00934:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1952-09-27" ;
   :dod "1956-11-13" ;
   :nam "CATIE SNIP" .
 
-tomb:t00934.p2 a t:person.n.01 ;
+t00934:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1914-08-13" ;
   :dod "1997-11-05" ;
   :nam "SJACOBUS SNIP" .
 
-tomb:t00934.p3 a t:person.n.01 ;
+t00934:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1916-01-07" ;
   :dod "2000-11-23" ;
   :nam "GEESJE SNIP-LEEUWE" .
 
-tomb:t00934.r1 a t:parent.n.01 ;
-  :tgt tomb:t00934.p1 .
+t00934:r1 a t:parent.n.01 ;
+  :tgt t00934:p1 .
 
-tomb:t00934.v1 a t:verse.n.01 ;
+t00934:v1 a t:verse.n.01 ;
   :ord 2 ;
   :txt "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN" .
 
-tomb:t00934.im1 a t:photo.n.01 ;
+t00934:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

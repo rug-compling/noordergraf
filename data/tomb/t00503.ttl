@@ -1,50 +1,51 @@
+@prefix t00503: <https://noordergraf.rug.nl/tomb/t00503#> .
 
 tomb:t00503 a t:tombstone.n.01 ;
-  :image tomb:t00503.im1 ;
+  :image t00503:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00503.p1 ,
-       tomb:t00503.p2 ;
-  :ref tomb:t00503.v1 ;
-  :sym tomb:t00503.s1 .
+  :ent t00503:p1 ,
+       t00503:p2 ;
+  :ref t00503:v1 ;
+  :sym t00503:s1 .
 
-tomb:t00503.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00503.c3 .
+t00503:b1 a t:Revelation.n.04 ;
+  :prt t00503:c3 .
 
-tomb:t00503.c1 a t:city.n.01 ;
+t00503:c1 a t:city.n.01 ;
   :geo place:Amsterdam2759794 ;
   :place "AMSTERDAM" .
 
-tomb:t00503.c2 a t:city.n.01 ;
+t00503:c2 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00503.c3 a t:chapter.n.01 ;
+t00503:c3 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00503.v1 .
+  :prt t00503:v1 .
 
-tomb:t00503.p1 a t:person.n.01 ;
+t00503:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1876-12-28" ;
   :dod "1918-07-31" ;
   :nam "JENTJE HOOGEVEEN" ;
-  :pob tomb:t00503.c1 ;
-  :pod tomb:t00503.c2 ;
-  :rol tomb:t00503.r1 .
+  :pob t00503:c1 ;
+  :pod t00503:c2 ;
+  :rol t00503:r1 .
 
-tomb:t00503.p2 a t:person.n.01 ;
+t00503:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "A. BAKKER" .
 
-tomb:t00503.r1 a t:wife.n.01 ;
-  :tgt tomb:t00503.p2 .
+t00503:r1 a t:wife.n.01 ;
+  :tgt t00503:p2 .
 
-tomb:t00503.s1 a t:frond.n.01 .
+t00503:s1 a t:frond.n.01 .
 
-tomb:t00503.v1 a t:verse.n.01 ;
+t00503:v1 a t:verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
 
-tomb:t00503.im1 a t:photo.n.01 ;
+t00503:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

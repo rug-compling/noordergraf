@@ -1,47 +1,48 @@
+@prefix t00965: <https://noordergraf.rug.nl/tomb/t00965#> .
 
 tomb:t00965 a t:tombstone.n.01 ;
-  :image tomb:t00965.im1 ;
+  :image t00965:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00965.g1 ,
-       tomb:t00965.p1 ,
-       tomb:t00965.p2 ,
-       tomb:t00965.p3 ;
+  :ent t00965:g1 ,
+       t00965:p1 ,
+       t00965:p2 ,
+       t00965:p3 ;
   :lan "NLD" ;
-  :ref tomb:t00965.v1 .
+  :ref t00965:v1 .
 
-tomb:t00965.b1 a t:Galations.n.02 ;
-  :prt tomb:t00965.c3 .
+t00965:b1 a t:Galations.n.02 ;
+  :prt t00965:c3 .
 
-tomb:t00965.c3 a t:chapter.n.01 ;
+t00965:c3 a t:chapter.n.01 ;
   :ord 3 ;
-  :prt tomb:t00965.v1 .
+  :prt t00965:v1 .
 
-tomb:t00965.g1 a t:group.n.01 ;
-  :mem tomb:t00965.p2 ,
-       tomb:t00965.p3 .
+t00965:g1 a t:group.n.01 ;
+  :mem t00965:p2 ,
+       t00965:p3 .
 
-tomb:t00965.p1 a t:person.n.01 ;
+t00965:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1946-05-09" ;
   :dod "1960-02-29" ;
   :nam "ALEIDA HIDDING" ;
-  :rol tomb:t00965.r1 .
+  :rol t00965:r1 .
 
-tomb:t00965.p2 a t:person.n.01 ;
+t00965:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "J. HIDDING" .
 
-tomb:t00965.p3 a t:person.n.01 ;
+t00965:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. HIDDING-BALLAST" .
 
-tomb:t00965.r1 a t:daughter.n.01 ;
-  :tgt tomb:t00965.g1 .
+t00965:r1 a t:daughter.n.01 ;
+  :tgt t00965:g1 .
 
-tomb:t00965.v1 a t:verse.n.01 ;
+t00965:v1 a t:verse.n.01 ;
   :ord 27 .
 
-tomb:t00965.im1 a t:photo.n.01 ;
+t00965:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

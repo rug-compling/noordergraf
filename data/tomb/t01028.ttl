@@ -1,69 +1,70 @@
+@prefix t01028: <https://noordergraf.rug.nl/tomb/t01028#> .
 
 tomb:t01028 a t:tombstone.n.01 ;
-  :image tomb:t01028.im1 ;
+  :image t01028:im1 ;
   :site site:gr9906PPbierum ;
-  :ent tomb:t01028.g1 ,
-       tomb:t01028.p1 ,
-       tomb:t01028.p2 ,
-       tomb:t01028.p3 ,
-       tomb:t01028.p4 ,
-       tomb:t01028.p5 ;
+  :ent t01028:g1 ,
+       t01028:p1 ,
+       t01028:p2 ,
+       t01028:p3 ,
+       t01028:p4 ,
+       t01028:p5 ;
   :lan "NLD" ;
-  :sym tomb:t01028.s1 ,
-       tomb:t01028.s2 ,
-       tomb:t01028.s3 ,
-       tomb:t01028.s4 .
+  :sym t01028:s1 ,
+       t01028:s2 ,
+       t01028:s3 ,
+       t01028:s4 .
 
-tomb:t01028.g1 a t:group.n.01 ;
-  :mem tomb:t01028.p3 ,
-       tomb:t01028.p4 ,
-       tomb:t01028.p5 ;
-  :rol tomb:t01028.r2 .
+t01028:g1 a t:group.n.01 ;
+  :mem t01028:p3 ,
+       t01028:p4 ,
+       t01028:p5 ;
+  :rol t01028:r2 .
 
-tomb:t01028.p1 a t:person.n.01 ;
+t01028:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1851-05-10" ;
   :dod "1884-09-09" ;
   :nam "JAN T. MEDEMA" ;
-  :rol tomb:t01028.r1 .
+  :rol t01028:r1 .
 
-tomb:t01028.p2 a t:person.n.01 ;
+t01028:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "M.J. DE VRIES" .
 
-tomb:t01028.p3 a t:person.n.01 ;
+t01028:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-03-18" ;
   :dod "1885-09-25" ;
   :nam "EKKE" .
 
-tomb:t01028.p4 a t:person.n.01 ;
+t01028:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1880-04-02" ;
   :dod "1886-02-25" ;
   :nam "SIEMEN" .
 
-tomb:t01028.p5 a t:person.n.01 ;
+t01028:p5 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1882-06-07" ;
   :dod "1886-03-03" ;
   :nam "ANJE" .
 
-tomb:t01028.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01028.p2 .
+t01028:r1 a t:spouse.n.01 ;
+  :tgt t01028:p2 .
 
-tomb:t01028.r2 a t:child.n.02 ;
-  :tgt tomb:t01028.p1 .
+t01028:r2 a t:child.n.02 ;
+  :tgt t01028:p1 .
 
-tomb:t01028.s1 a t:butterfly.n.01 .
+t01028:s1 a t:butterfly.n.01 .
 
-tomb:t01028.s2 a t:scythe.n.01 .
+t01028:s2 a t:scythe.n.01 .
 
-tomb:t01028.s3 a t:entity.n.01 .
+t01028:s3 a t:entity.n.01 .
 
-tomb:t01028.s4 a t:ribbon.n.01 .
+t01028:s4 a t:ribbon.n.01 .
 
-tomb:t01028.im1 a t:photo.n.01 ;
+t01028:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

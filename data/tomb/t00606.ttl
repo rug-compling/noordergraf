@@ -1,42 +1,43 @@
+@prefix t00606: <https://noordergraf.rug.nl/tomb/t00606#> .
 
 tomb:t00606 a t:tombstone.n.01 ;
-  :image tomb:t00606.im1 ;
+  :image t00606:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00606.p1 ,
-       tomb:t00606.p2 ;
+  :ent t00606:p1 ,
+       t00606:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00606.s1 .
+  :sym t00606:s1 .
 
-tomb:t00606.a1 a t:weeping.a.02 .
+t00606:a1 a t:weeping.a.02 .
 
-tomb:t00606.c1 a t:town.n.01 ;
+t00606:c1 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00606.c2 a t:village.n.02 ;
+t00606:c2 a t:village.n.02 ;
   :geo place:Sappemeer2747758 ;
   :place "SAPPEMEER" .
 
-tomb:t00606.p1 a t:person.n.01 ;
+t00606:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1822-03-02" ;
   :dod "1913-06-05" ;
   :nam "JACOB BOERMA HZ" ;
-  :pob tomb:t00606.c1 ;
-  :pod tomb:t00606.c1 .
+  :pob t00606:c1 ;
+  :pod t00606:c1 .
 
-tomb:t00606.p2 a t:person.n.01 ;
-  :loc tomb:t00606.c2 ;
+t00606:p2 a t:person.n.01 ;
+  :loc t00606:c2 ;
   :nam "LESTERHUIS" ;
-  :occ tomb:t00606.r3 .
+  :occ t00606:r3 .
 
-tomb:t00606.r3 a t:designer.n.01 ;
+t00606:r3 a t:designer.n.01 ;
   :tgt tomb:t00606 .
 
-tomb:t00606.s1 a t:willow.n.01 ;
-  :att tomb:t00606.a1 .
+t00606:s1 a t:willow.n.01 ;
+  :att t00606:a1 .
 
-tomb:t00606.im1 a t:photo.n.01 ;
+t00606:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

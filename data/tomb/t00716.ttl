@@ -1,36 +1,37 @@
+@prefix t00716: <https://noordergraf.rug.nl/tomb/t00716#> .
 
 tomb:t00716 a t:tombstone.n.01 ;
-  :image tomb:t00716.im1 ;
+  :image t00716:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00716.p1 ,
-       tomb:t00716.p2 ;
+  :ent t00716:p1 ,
+       t00716:p2 ;
   :lan "NLD" .
 
-tomb:t00716.a1 a t:retired.a.01 .
+t00716:a1 a t:retired.a.01 .
 
-tomb:t00716.c1 a t:colony.n.05 ;
+t00716:c1 a t:colony.n.05 ;
   :geo place:Indonesie1643084 ;
   :place "NEDERLANDS-INDIË" .
 
-tomb:t00716.o1 a t:clerk.n.01 ;
-  :att tomb:t00716.a1 ;
+t00716:o1 a t:clerk.n.01 ;
+  :att t00716:a1 ;
   :hco "30000" ;
-  :loc tomb:t00716.c1 .
+  :loc t00716:c1 .
 
-tomb:t00716.p1 a t:person.n.01 ;
+t00716:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1876-12-18" ;
   :dod "1939-11-07" ;
   :nam "RUDOLF HERMAN VAN OTTERLOO" ;
-  :occ tomb:t00716.o1 .
+  :occ t00716:o1 .
 
-tomb:t00716.p2 a t:person.n.01 ;
+t00716:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-05-01" ;
   :dod "1964-04-14" ;
   :nam "ELISABETH JOHANNA VAN OTTERLOO" .
 
-tomb:t00716.im1 a t:photo.n.01 ;
+t00716:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

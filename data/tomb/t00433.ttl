@@ -1,54 +1,55 @@
+@prefix t00433: <https://noordergraf.rug.nl/tomb/t00433#> .
 
 tomb:t00433 a t:tombstone.n.01 ;
-  :image tomb:t00433.im1 ;
+  :image t00433:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00433.p1 ,
-       tomb:t00433.p2 ;
-  :sym tomb:t00433.s1 .
+  :ent t00433:p1 ,
+       t00433:p2 ;
+  :sym t00433:s1 .
 
-tomb:t00433.c1 a t:island.n.01 ;
+t00433:c1 a t:island.n.01 ;
   :geo place:Schiermonnikoog2747591 ;
   :place "SCHIERMONNIKOOG" .
 
-tomb:t00433.c2 a t:city.n.01 ;
+t00433:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00433.p1 a t:person.n.01 ;
+t00433:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1877-05-06" ;
   :dod "1933-10-18" ;
   :nam "TJEERD SCHAAFSMA" ;
-  :pob tomb:t00433.c1 ;
-  :pod tomb:t00433.c2 ;
-  :rol tomb:t00433.r1 .
+  :pob t00433:c1 ;
+  :pod t00433:c2 ;
+  :rol t00433:r1 .
 
-tomb:t00433.p2 a t:person.n.01 ;
+t00433:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1877-05-26" ;
   :dod "1951-12-14" ;
   :nam "HENDERIKA BECHERER" ;
-  :pob tomb:t00433.c2 ;
-  :pod tomb:t00433.c1 ;
-  :rol tomb:t00433.r2 .
+  :pob t00433:c2 ;
+  :pod t00433:c1 ;
+  :rol t00433:r2 .
 
-tomb:t00433.r1 a t:parent.n.01 ;
+t00433:r1 a t:parent.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00433.p3 .
+  :tgt t00433:p3 .
 
-tomb:t00433.r2 a t:parent.n.01 ;
+t00433:r2 a t:parent.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00433.p3 .
+  :tgt t00433:p3 .
 
-tomb:t00433.s1 a t:composite.n.01 ;
-  :prt tomb:t00433.s2 ,
-       tomb:t00433.s3 .
+t00433:s1 a t:composite.n.01 ;
+  :prt t00433:s2 ,
+       t00433:s3 .
 
-tomb:t00433.s2 a t:frond.n.01 .
+t00433:s2 a t:frond.n.01 .
 
-tomb:t00433.s3 a t:ribbon.n.01 .
+t00433:s3 a t:ribbon.n.01 .
 
-tomb:t00433.im1 a t:photo.n.01 ;
+t00433:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

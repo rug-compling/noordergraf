@@ -1,45 +1,46 @@
+@prefix t00364: <https://noordergraf.rug.nl/tomb/t00364#> .
 
 tomb:t00364 a t:tombstone.n.01 ;
-  :image tomb:t00364.im1 ;
+  :image t00364:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00364.p1 ,
-       tomb:t00364.p2 ;
+  :ent t00364:p1 ,
+       t00364:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER" .
 
-tomb:t00364.c1 a t:village.n.02 ;
+t00364:c1 a t:village.n.02 ;
   :geo place:Kropswolde2752217 ;
   :place "KROPSWOLDE" .
 
-tomb:t00364.c2 a t:village.n.02 ;
+t00364:c2 a t:village.n.02 ;
   :geo place:Tynaarlo2746038 ;
   :place "TYNAARLOO" .
 
-tomb:t00364.p1 a t:person.n.01 ;
+t00364:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1852-04-05" ;
   :dod "1927-02-21" ;
   :nam "HENDRIK BLAAUW" ;
-  :pob tomb:t00364.c1 ;
-  :pod tomb:t00364.c2 ;
-  :rol tomb:t00364.r1 ,
-       tomb:t00364.r2 ,
-       tomb:t00364.r3 .
+  :pob t00364:c1 ;
+  :pod t00364:c2 ;
+  :rol t00364:r1 ,
+       t00364:r2 ,
+       t00364:r3 .
 
-tomb:t00364.p2 a t:person.n.01 ;
+t00364:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "JANTJE SPEELMAN" .
 
-tomb:t00364.r1 a t:spouse.n.01 ;
+t00364:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00364.p2 .
+  :tgt t00364:p2 .
 
-tomb:t00364.r2 a t:husband.n.01 ;
+t00364:r2 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00364.p2 .
+  :tgt t00364:p2 .
 
-tomb:t00364.r3 a t:father.n.01 .
+t00364:r3 a t:father.n.01 .
 
-tomb:t00364.im1 a t:photo.n.01 ;
+t00364:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

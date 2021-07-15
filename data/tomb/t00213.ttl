@@ -1,23 +1,24 @@
+@prefix t00213: <https://noordergraf.rug.nl/tomb/t00213#> .
 
 tomb:t00213 a t:tombstone.n.01 ;
-  :image tomb:t00213.im1 ;
+  :image t00213:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00213.p1 ,
-       tomb:t00213.p2 .
+  :ent t00213:p1 ,
+       t00213:p2 .
 
-tomb:t00213.p1 a t:person.n.01 ;
+t00213:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1860-08-27" ;
   :dod "1918-10-31" ;
   :nam "ALBERT BAKKER" .
 
-tomb:t00213.p2 a t:person.n.01 ;
+t00213:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1863-11-18" ;
   :dod "1965-02-01" ;
   :nam "GEERTJE MULDER" .
 
-tomb:t00213.im1 a t:photo.n.01 ;
+t00213:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

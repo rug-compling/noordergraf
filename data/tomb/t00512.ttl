@@ -1,21 +1,22 @@
+@prefix t00512: <https://noordergraf.rug.nl/tomb/t00512#> .
 
 tomb:t00512 a t:tombstone.n.01 ;
-  :image tomb:t00512.im1 ;
+  :image t00512:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00512.p1 ;
+  :ent t00512:p1 ;
   :quo "GONE, BUT NOT FORGOTTEN"@eng ,
        "IN LOVING MEMORY OF"@eng ;
-  :sym tomb:t00512.s1 .
+  :sym t00512:s1 .
 
-tomb:t00512.p1 a t:person.n.01 ;
+t00512:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "XX-XX-1921" ;
   :dod "XX-XX-1993" ;
   :nam "JOZUA VOS" .
 
-tomb:t00512.s1 a t:cross.n.03 .
+t00512:s1 a t:cross.n.03 .
 
-tomb:t00512.im1 a t:photo.n.01 ;
+t00512:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

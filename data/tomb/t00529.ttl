@@ -1,39 +1,40 @@
+@prefix t00529: <https://noordergraf.rug.nl/tomb/t00529#> .
 
 tomb:t00529 a t:tombstone.n.01 ;
-  :image tomb:t00529.im1 ;
+  :image t00529:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00529.p1 ,
-       tomb:t00529.p2 ;
+  :ent t00529:p1 ,
+       t00529:p2 ;
   :quo "SOMEWHERE I'LL FIND YOU"@nld ;
-  :sym tomb:t00529.s1 .
+  :sym t00529:s1 .
 
-tomb:t00529.c1 a t:city.n.01 ;
+t00529:c1 a t:city.n.01 ;
   :geo place:Jombang1642414 ;
   :place "JOMBANG" .
 
-tomb:t00529.c2 a t:town.n.01 ;
+t00529:c2 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00529.p1 a t:person.n.01 ;
+t00529:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1932-08-31" ;
   :dod "1997-05-28" ;
   :nam "LOEK STRAUBE" ;
-  :pob tomb:t00529.c1 ;
-  :pod tomb:t00529.c2 ;
-  :rol tomb:t00529.r1 .
+  :pob t00529:c1 ;
+  :pod t00529:c2 ;
+  :rol t00529:r1 .
 
-tomb:t00529.p2 a t:person.n.01 ;
+t00529:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "MARY STRAUBE" .
 
-tomb:t00529.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00529.p2 .
+t00529:r1 a t:spouse.n.01 ;
+  :tgt t00529:p2 .
 
-tomb:t00529.s1 a t:sailboat.n.01 .
+t00529:s1 a t:sailboat.n.01 .
 
-tomb:t00529.im1 a t:photo.n.01 ;
+t00529:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,48 +1,49 @@
+@prefix t00871: <https://noordergraf.rug.nl/tomb/t00871#> .
 
 tomb:t00871 a t:tombstone.n.01 ;
-  :image tomb:t00871.im1 ;
+  :image t00871:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00871.p1 ,
-       tomb:t00871.p2 ;
+  :ent t00871:p1 ,
+       t00871:p2 ;
   :quo "HIER RUSTEN TOT DEN DAG DER OPSTANDING"@nld ;
-  :ref tomb:t00871.v1 .
+  :ref t00871:v1 .
 
-tomb:t00871.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00871.c3 .
+t00871:b1 a t:Revelation.n.04 ;
+  :prt t00871:c3 .
 
-tomb:t00871.c1 a t:village.n.02 ;
+t00871:c1 a t:village.n.02 ;
   :geo place:Gees2755664 ;
   :place "GEES" .
 
-tomb:t00871.c2 a t:village.n.02 ;
+t00871:c2 a t:village.n.02 ;
   :geo place:Erm2756040 ;
   :place "ERM" .
 
-tomb:t00871.c3 a t:chapter.n.01 ;
+t00871:c3 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00871.v1 .
+  :prt t00871:v1 .
 
-tomb:t00871.p1 a t:person.n.01 ;
+t00871:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1859-09-01" ;
   :dod "1927-01-08" ;
   :nam "JANTIEN BRINKS" ;
-  :pob tomb:t00871.c1 ;
-  :pod tomb:t00871.c2 .
+  :pob t00871:c1 ;
+  :pod t00871:c2 .
 
-tomb:t00871.p2 a t:person.n.01 ;
+t00871:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1857-02-26" ;
   :dod "1932-03-22" ;
   :nam "J.S. WILTING" ;
-  :pob tomb:t00871.c2 ;
-  :pod tomb:t00871.c2 .
+  :pob t00871:c2 ;
+  :pod t00871:c2 .
 
-tomb:t00871.v1 a t:verse.n.01 ;
+t00871:v1 a t:verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN DIE IN DEN HEERE STERVEN" .
 
-tomb:t00871.im1 a t:photo.n.01 ;
+t00871:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

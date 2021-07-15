@@ -1,42 +1,43 @@
+@prefix t00766: <https://noordergraf.rug.nl/tomb/t00766#> .
 
 tomb:t00766 a t:tombstone.n.01 ;
-  :image tomb:t00766.im1 ;
+  :image t00766:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00766.p1 ,
-       tomb:t00766.p2 ;
+  :ent t00766:p1 ,
+       t00766:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00766.s1 .
+  :sym t00766:s1 .
 
-tomb:t00766.a1 a t:weeping.a.02 .
+t00766:a1 a t:weeping.a.02 .
 
-tomb:t00766.c1 a t:village.n.02 ;
+t00766:c1 a t:village.n.02 ;
   :geo place:Roswinkel2747903 ;
   :place "ROSWINKEL" .
 
-tomb:t00766.c2 a t:village.n.02 ;
+t00766:c2 a t:village.n.02 ;
   :geo place:Westenesch2744776 ;
   :place "WESTENESCH" .
 
-tomb:t00766.p1 a t:person.n.01 ;
+t00766:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1846-10-02" ;
   :dod "1915-07-19" ;
   :nam "JANTIEN LIEFSTING" ;
-  :pob tomb:t00766.c1 ;
-  :pod tomb:t00766.c2 ;
-  :rol tomb:t00766.r1 .
+  :pob t00766:c1 ;
+  :pod t00766:c2 ;
+  :rol t00766:r1 .
 
-tomb:t00766.p2 a t:person.n.01 ;
+t00766:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN HOUWING" .
 
-tomb:t00766.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00766.p2 .
+t00766:r1 a t:spouse.n.01 ;
+  :tgt t00766:p2 .
 
-tomb:t00766.s1 a t:willow.n.01 ;
-  :att tomb:t00766.a1 .
+t00766:s1 a t:willow.n.01 ;
+  :att t00766:a1 .
 
-tomb:t00766.im1 a t:photo.n.01 ;
+t00766:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

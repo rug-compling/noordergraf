@@ -1,23 +1,24 @@
+@prefix t00509: <https://noordergraf.rug.nl/tomb/t00509#> .
 
 tomb:t00509 a t:tombstone.n.01 ;
-  :image tomb:t00509.im1 ;
+  :image t00509:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00509.p1 ,
-       tomb:t00509.p2 .
+  :ent t00509:p1 ,
+       t00509:p2 .
 
-tomb:t00509.p1 a t:person.n.01 ;
+t00509:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1898-09-20" ;
   :dod "1990-11-13" ;
   :nam "TEKELA CATHARINA LAMBOOIJ-MULDER" .
 
-tomb:t00509.p2 a t:person.n.01 ;
+t00509:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1901-02-18" ;
   :dod "1995-05-10" ;
   :nam "THEODIRUS PETRUS ANTONIUS LAMBOOIJ" .
 
-tomb:t00509.im1 a t:photo.n.01 ;
+t00509:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

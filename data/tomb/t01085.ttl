@@ -1,45 +1,46 @@
+@prefix t01085: <https://noordergraf.rug.nl/tomb/t01085#> .
 
 tomb:t01085 a t:tombstone.n.01 ;
-  :image tomb:t01085.im1 ;
+  :image t01085:im1 ;
   :site site:gr9798PDgarmerwolde ;
-  :ent tomb:t01085.g1 ,
-       tomb:t01085.p1 ,
-       tomb:t01085.p2 ;
+  :ent t01085:g1 ,
+       t01085:p1 ,
+       t01085:p2 ;
   :lan "NLD" .
 
-tomb:t01085.g1 a t:people.n.01 ;
-  :mem tomb:t01085.p2 ,
-       tomb:t01085.p3 ;
-  :sub tomb:t01085.g2 .
+t01085:g1 a t:people.n.01 ;
+  :mem t01085:p2 ,
+       t01085:p3 ;
+  :sub t01085:g2 .
 
-tomb:t01085.g2 a t:people.n.01 ;
+t01085:g2 a t:people.n.01 ;
   :qua 5 ;
-  :tgt tomb:t01085.g3 .
+  :tgt t01085:g3 .
 
-tomb:t01085.g3 a t:people.n.01 ;
-  :mem tomb:t01085.p1 ,
-       tomb:t01085.p2 .
+t01085:g3 a t:people.n.01 ;
+  :mem t01085:p1 ,
+       t01085:p2 .
 
-tomb:t01085.p1 a t:person.n.01 ;
+t01085:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1815-05-20" ;
   :dod "1880-02-22" ;
   :nam "JAKOB GERRITS SCHUTTER" ;
   :occ "KERKVOOGD DEZER GEMEENTE" ;
-  :rol tomb:t01085.r1 .
+  :rol t01085:r1 .
 
-tomb:t01085.p2 a t:person.n.01 ;
+t01085:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "S.D. VAN DIJK" .
 
-tomb:t01085.p3 a t:son-in-law.n.01 ;
-  :tgt tomb:t01085.g2 .
+t01085:p3 a t:son-in-law.n.01 ;
+  :tgt t01085:g2 .
 
-tomb:t01085.r1 a t:husband.n.01 ;
+t01085:r1 a t:husband.n.01 ;
   :beg "29-04-1849" ;
-  :tgt tomb:t01085.p2 .
+  :tgt t01085:p2 .
 
-tomb:t01085.im1 a t:photo.n.01 ;
+t01085:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,42 +1,43 @@
+@prefix t00506: <https://noordergraf.rug.nl/tomb/t00506#> .
 
 tomb:t00506 a t:tombstone.n.01 ;
-  :image tomb:t00506.im1 ;
+  :image t00506:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00506.p1 ,
-       tomb:t00506.p2 ;
+  :ent t00506:p1 ,
+       t00506:p2 ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :sym tomb:t00506.s1 .
+  :sym t00506:s1 .
 
-tomb:t00506.c1 a t:city.n.01 ;
+t00506:c1 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00506.c2 a t:village.n.02 ;
+t00506:c2 a t:village.n.02 ;
   :geo place:sGravenmoer2747371 ;
   :place "'S GRAVENMOER" .
 
-tomb:t00506.p1 a t:person.n.01 ;
+t00506:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1891-03-14" ;
   :dod "1916-11-09" ;
   :nam "JOHANNES DIJKHOFF" ;
-  :pob tomb:t00506.c1 ;
-  :pod tomb:t00506.c2 ;
+  :pob t00506:c1 ;
+  :pod t00506:c2 ;
   :quo "NOODLOTTIG OM HET LEVEN GEKOMEN BIJ EEN MILITAIRE OEFENING" ;
-  :rol tomb:t00506.r1 .
+  :rol t00506:r1 .
 
-tomb:t00506.p2 a t:person.n.01 ;
+t00506:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-10-05" ;
   :dod "1962-10-18" ;
   :nam "SARA KINDERMANS" .
 
-tomb:t00506.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00506.p2 .
+t00506:r1 a t:spouse.n.01 ;
+  :tgt t00506:p2 .
 
-tomb:t00506.s1 a t:cross.n.03 .
+t00506:s1 a t:cross.n.03 .
 
-tomb:t00506.im1 a t:photo.n.01 ;
+t00506:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

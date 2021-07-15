@@ -1,18 +1,19 @@
+@prefix t00515: <https://noordergraf.rug.nl/tomb/t00515#> .
 
 tomb:t00515 a t:tombstone.n.01 ;
-  :image tomb:t00515.im1 ;
+  :image t00515:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00515.p1 ;
+  :ent t00515:p1 ;
   :quo "RUST ZACHT"@nld .
 
-tomb:t00515.p1 a t:person.n.01 ;
+t00515:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1922-07-24" ;
   :dod "1992-12-04" ;
   :nam "KLAARTJE EGGENS" ,
        "KLARIE" .
 
-tomb:t00515.im1 a t:photo.n.01 ;
+t00515:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

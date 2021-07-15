@@ -1,33 +1,34 @@
+@prefix t00627: <https://noordergraf.rug.nl/tomb/t00627#> .
 
 tomb:t00627 a t:tombstone.n.01 ;
-  :image tomb:t00627.im1 ;
+  :image t00627:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00627.p1 ,
-       tomb:t00627.p2 ;
+  :ent t00627:p1 ,
+       t00627:p2 ;
   :lan "NLD" .
 
-tomb:t00627.c1 a t:town.n.01 ;
+t00627:c1 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00627.o1 a t:preacher.n.01 ;
+t00627:o1 a t:preacher.n.01 ;
   :hco "14120" ;
-  :loc tomb:t00627.c1 .
+  :loc t00627:c1 .
 
-tomb:t00627.p1 a t:person.n.01 ;
+t00627:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1864-10-24" ;
   :dod "1899-01-19" ;
   :nam "JAKOBUS BLEEKER" ;
-  :occ tomb:t00627.o1 .
+  :occ t00627:o1 .
 
-tomb:t00627.p2 a t:person.n.01 ;
+t00627:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1873-04-17" ;
   :dod "1959-04-18" ;
   :nam "FROUWINA G. EVERS" .
 
-tomb:t00627.im1 a t:photo.n.01 ;
+t00627:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

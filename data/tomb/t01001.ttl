@@ -1,53 +1,54 @@
+@prefix t01001: <https://noordergraf.rug.nl/tomb/t01001#> .
 
 tomb:t01001 a t:tombstone.n.01 ;
-  :image tomb:t01001.im1 ;
+  :image t01001:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t01001.p1 ,
-       tomb:t01001.p2 ;
+  :ent t01001:p1 ,
+       t01001:p2 ;
   :lan "NLD" ;
-  :ref tomb:t01001.v1 ;
-  :sym tomb:t01001.s1 .
+  :ref t01001:v1 ;
+  :sym t01001:s1 .
 
-tomb:t01001.a1 a t:weeping.a.02 .
+t01001:a1 a t:weeping.a.02 .
 
-tomb:t01001.b1 a t:Job.n.12 ;
-  :prt tomb:t01001.c3 .
+t01001:b1 a t:Job.n.12 ;
+  :prt t01001:c3 .
 
-tomb:t01001.c1 a t:hamlet.n.03 ;
+t01001:c1 a t:hamlet.n.03 ;
   :geo place:Startenhuizen2746832 ;
   :place "STARTENHUIZEN" .
 
-tomb:t01001.c2 a t:city.n.01 ;
+t01001:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t01001.c3 a t:chapter.n.01 ;
+t01001:c3 a t:chapter.n.01 ;
   :ord 19 ;
-  :prt tomb:t01001.v1 .
+  :prt t01001:v1 .
 
-tomb:t01001.p1 a t:person.n.01 ;
+t01001:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1830-12-09" ;
   :dod "1921-03-05" ;
   :nam "ANJE EISSES BOLHUIS" ;
-  :pob tomb:t01001.c1 ;
-  :pod tomb:t01001.c2 ;
-  :rol tomb:t01001.r1 .
+  :pob t01001:c1 ;
+  :pod t01001:c2 ;
+  :rol t01001:r1 .
 
-tomb:t01001.p2 a t:person.n.01 ;
+t01001:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN GEERTS NIENHUIS" .
 
-tomb:t01001.r1 a t:widow.n.01 ;
-  :tgt tomb:t01001.p2 .
+t01001:r1 a t:widow.n.01 ;
+  :tgt t01001:p2 .
 
-tomb:t01001.s1 a t:willow.n.01 ;
-  :att tomb:t01001.a1 .
+t01001:s1 a t:willow.n.01 ;
+  :att t01001:a1 .
 
-tomb:t01001.v1 a t:verse.n.01 ;
+t01001:v1 a t:verse.n.01 ;
   :ord 25 .
 
-tomb:t01001.im1 a t:photo.n.01 ;
+t01001:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

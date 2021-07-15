@@ -1,49 +1,50 @@
+@prefix t00499: <https://noordergraf.rug.nl/tomb/t00499#> .
 
 tomb:t00499 a t:tombstone.n.01 ;
-  :image tomb:t00499.im1 ;
+  :image t00499:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00499.p1 ,
-       tomb:t00499.p2 ;
-  :sym tomb:t00499.s1 .
+  :ent t00499:p1 ,
+       t00499:p2 ;
+  :sym t00499:s1 .
 
-tomb:t00499.a1 a t:weeping.a.02 .
+t00499:a1 a t:weeping.a.02 .
 
-tomb:t00499.c1 a t:village.n.02 ;
+t00499:c1 a t:village.n.02 ;
   :geo place:Bozum2758452 ;
   :place "BOZUM" .
 
-tomb:t00499.c2 a t:city.n.01 ;
+t00499:c2 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00499.c3 a t:village.n.02 ;
+t00499:c3 a t:village.n.02 ;
   :geo place:Sexbierum2747380 ;
   :place "SEXBIERUM" .
 
-tomb:t00499.c4 a t:village.n.02 ;
+t00499:c4 a t:village.n.02 ;
   :geo place:Huizum2753470 ;
   :place "HUIZUM" .
 
-tomb:t00499.p1 a t:person.n.01 ;
+t00499:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1851-02-05" ;
   :dod "1917-09-04" ;
   :nam "ANTJE WIERINGA" ;
-  :pob tomb:t00499.c1 ;
-  :pod tomb:t00499.c2 .
+  :pob t00499:c1 ;
+  :pod t00499:c2 .
 
-tomb:t00499.p2 a t:person.n.01 ;
+t00499:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1851-07-06" ;
   :dod "1933-12-26" ;
   :nam "KLAAS D. VAN EGTEN" ;
-  :pob tomb:t00499.c3 ;
-  :pod tomb:t00499.c4 .
+  :pob t00499:c3 ;
+  :pod t00499:c4 .
 
-tomb:t00499.s1 a t:willow.n.01 ;
-  :att tomb:t00499.a1 .
+t00499:s1 a t:willow.n.01 ;
+  :att t00499:a1 .
 
-tomb:t00499.im1 a t:photo.n.01 ;
+t00499:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

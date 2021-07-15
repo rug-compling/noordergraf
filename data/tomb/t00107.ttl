@@ -1,39 +1,40 @@
+@prefix t00107: <https://noordergraf.rug.nl/tomb/t00107#> .
 
 tomb:t00107 a t:tombstone.n.01 ;
-  :image tomb:t00107.im1 ;
+  :image t00107:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00107.p1 ,
-       tomb:t00107.p2 .
+  :ent t00107:p1 ,
+       t00107:p2 .
 
-tomb:t00107.c1 a t:city.n.01 ;
+t00107:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00107.c2 a t:village.n.02 ;
+t00107:c2 a t:village.n.02 ;
   :geo place:Scharmer2747677 ;
   :place "SCHARMER" .
 
-tomb:t00107.c3 a t:town.n.01 ;
+t00107:c3 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00107.p1 a t:person.n.01 ;
+t00107:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1905-07-08" ;
   :dod "1964-12-23" ;
   :nam "SIEBOLT FOCKO FOCKENS" ;
-  :pob tomb:t00107.c2 ;
-  :pod tomb:t00107.c3 .
+  :pob t00107:c2 ;
+  :pod t00107:c3 .
 
-tomb:t00107.p2 a t:person.n.01 ;
+t00107:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1907-04-26" ;
   :dod "2003-10-22" ;
   :nam "ZWAANTINE TALLINE FOCKENS" ;
-  :pob tomb:t00107.c2 ;
-  :pod tomb:t00107.c1 .
+  :pob t00107:c2 ;
+  :pod t00107:c1 .
 
-tomb:t00107.im1 a t:photo.n.01 ;
+t00107:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

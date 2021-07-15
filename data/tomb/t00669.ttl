@@ -1,47 +1,48 @@
+@prefix t00669: <https://noordergraf.rug.nl/tomb/t00669#> .
 
 tomb:t00669 a t:tombstone.n.01 ;
-  :image tomb:t00669.im1 ;
+  :image t00669:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00669.g1 ,
-       tomb:t00669.p1 ,
-       tomb:t00669.p2 ;
+  :ent t00669:g1 ,
+       t00669:p1 ,
+       t00669:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t00669.s1 .
+  :sym t00669:s1 .
 
-tomb:t00669.g1 a t:group.n.01 ;
-  :mem tomb:t00669.p3 .
+t00669:g1 a t:group.n.01 ;
+  :mem t00669:p3 .
 
-tomb:t00669.p1 a t:person.n.01 ;
+t00669:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1876-06-08" ;
   :dod "1965-01-02" ;
   :nam "HENDRIKJE DE JONG" ;
-  :rol tomb:t00669.r1 ,
-       tomb:t00669.r2 .
+  :rol t00669:r1 ,
+       t00669:r2 .
 
-tomb:t00669.p2 a t:person.n.01 ;
+t00669:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1886-04-16" ;
   :dod "1966-08-26" ;
   :nam "EEKE DE JONG" ;
-  :rol tomb:t00669.r3 .
+  :rol t00669:r3 .
 
-tomb:t00669.p3 a t:person.n.01 .
+t00669:p3 a t:person.n.01 .
 
-tomb:t00669.r1 a t:mother.n.01 ;
+t00669:r1 a t:mother.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00669.g1 .
+  :tgt t00669:g1 .
 
-tomb:t00669.r2 a t:grandmother.n.01 ;
-  :tgt tomb:t00669.g1 .
+t00669:r2 a t:grandmother.n.01 ;
+  :tgt t00669:g1 .
 
-tomb:t00669.r3 a t:aunt.n.01 ;
+t00669:r3 a t:aunt.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00669.g1 .
+  :tgt t00669:g1 .
 
-tomb:t00669.s1 a t:frond.n.01 .
+t00669:s1 a t:frond.n.01 .
 
-tomb:t00669.im1 a t:photo.n.01 ;
+t00669:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

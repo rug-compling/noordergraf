@@ -1,23 +1,24 @@
+@prefix t00873: <https://noordergraf.rug.nl/tomb/t00873#> .
 
 tomb:t00873 a t:tombstone.n.01 ;
-  :image tomb:t00873.im1 ;
+  :image t00873:im1 ;
   :site site:dr7844TCveenoord ;
-  :ent tomb:t00873.p1 ;
+  :ent t00873:p1 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t00873.s1 .
+  :sym t00873:s1 .
 
-tomb:t00873.a1 a t:weeping.a.02 .
+t00873:a1 a t:weeping.a.02 .
 
-tomb:t00873.p1 a t:person.n.01 ;
+t00873:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1889-06-03" ;
   :dod "1966-09-16" ;
   :nam "A. POSTUMA" .
 
-tomb:t00873.s1 a t:willow.n.01 ;
-  :att tomb:t00873.a1 .
+t00873:s1 a t:willow.n.01 ;
+  :att t00873:a1 .
 
-tomb:t00873.im1 a t:photo.n.01 ;
+t00873:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

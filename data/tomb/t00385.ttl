@@ -1,51 +1,52 @@
+@prefix t00385: <https://noordergraf.rug.nl/tomb/t00385#> .
 
 tomb:t00385 a t:tombstone.n.01 ;
-  :image tomb:t00385.im1 ;
+  :image t00385:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00385.p1 ,
-       tomb:t00385.p2 ;
-  :sym tomb:t00385.s1 .
+  :ent t00385:p1 ,
+       t00385:p2 ;
+  :sym t00385:s1 .
 
-tomb:t00385.c1 a t:village.n.02 ;
+t00385:c1 a t:village.n.02 ;
   :geo place:Buitenpost2758131 ;
   :place "BUITENPOST" .
 
-tomb:t00385.m1 a t:measure.n.02 ;
-  :mem tomb:t00385.u1 ;
+t00385:m1 a t:measure.n.02 ;
+  :mem t00385:u1 ;
   :qua 82 .
 
-tomb:t00385.p1 a t:person.n.01 ;
+t00385:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t00385.m1 ;
+  :age t00385:m1 ;
   :dod "1929-03-08" ;
   :nam "ANDRIES HAAGSMA" ;
-  :pod tomb:t00385.c1 ;
-  :rol tomb:t00385.r1 ,
-       tomb:t00385.r2 .
+  :pod t00385:c1 ;
+  :rol t00385:r1 ,
+       t00385:r2 .
 
-tomb:t00385.p2 a t:family.n.04 ;
+t00385:p2 a t:family.n.04 ;
   :nam "HAAGSMA" .
 
-tomb:t00385.r1 a t:father.n.01 ;
+t00385:r1 a t:father.n.01 ;
   :att "BEHUWD" ,
        "GELIEFDE" .
 
-tomb:t00385.r2 a t:grandfather.n.01 .
+t00385:r2 a t:grandfather.n.01 .
 
-tomb:t00385.s1 a t:composite.n.01 ;
-  :prt tomb:t00385.s2 ,
-       tomb:t00385.s3 ,
-       tomb:t00385.s4 .
+t00385:s1 a t:composite.n.01 ;
+  :prt t00385:s2 ,
+       t00385:s3 ,
+       t00385:s4 .
 
-tomb:t00385.s2 a t:frond.n.01 .
+t00385:s2 a t:frond.n.01 .
 
-tomb:t00385.s3 a t:frond.n.01 .
+t00385:s3 a t:frond.n.01 .
 
-tomb:t00385.s4 a t:ribbon.n.01 .
+t00385:s4 a t:ribbon.n.01 .
 
-tomb:t00385.u1 a t:year.n.01 .
+t00385:u1 a t:year.n.01 .
 
-tomb:t00385.im1 a t:photo.n.01 ;
+t00385:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

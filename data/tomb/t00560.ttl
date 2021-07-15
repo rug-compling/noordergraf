@@ -1,43 +1,44 @@
+@prefix t00560: <https://noordergraf.rug.nl/tomb/t00560#> .
 
 tomb:t00560 a t:tombstone.n.01 ;
-  :image tomb:t00560.im1 ;
+  :image t00560:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00560.p1 ,
-       tomb:t00560.p2 ;
+  :ent t00560:p1 ,
+       t00560:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00560.s1 .
+  :sym t00560:s1 .
 
-tomb:t00560.c1 a t:city.n.01 ;
+t00560:c1 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00560.o1 a t:preacher.n.01 ;
+t00560:o1 a t:preacher.n.01 ;
   :hco "14120" ;
-  :loc tomb:t00560.c1 ;
-  :org tomb:t00560.o2 .
+  :loc t00560:c1 ;
+  :org t00560:o2 .
 
-tomb:t00560.o2 a t:community.n.02 ;
+t00560:o2 a t:community.n.02 ;
   :nam "VRIJE EVANGELISCHE GEMEENTE" .
 
-tomb:t00560.p1 a t:person.n.01 ;
+t00560:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1842-01-21" ;
   :dod "1914-03-29" ;
   :nam "J. VAN PETEGEM" ;
-  :occ tomb:t00560.o1 ;
+  :occ t00560:o1 ;
   :pfx "DS" ;
-  :rol tomb:t00560.r1 .
+  :rol t00560:r1 .
 
-tomb:t00560.p2 a t:person.n.01 ;
+t00560:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "S.M. VAN DER PEIJL" .
 
-tomb:t00560.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00560.p2 .
+t00560:r1 a t:spouse.n.01 ;
+  :tgt t00560:p2 .
 
-tomb:t00560.s1 a t:book.n.02 .
+t00560:s1 a t:book.n.02 .
 
-tomb:t00560.im1 a t:photo.n.01 ;
+t00560:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

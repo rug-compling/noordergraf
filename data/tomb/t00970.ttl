@@ -1,57 +1,58 @@
+@prefix t00970: <https://noordergraf.rug.nl/tomb/t00970#> .
 
 tomb:t00970 a t:tombstone.n.01 ;
-  :image tomb:t00970.im1 ;
+  :image t00970:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00970.g1 ,
-       tomb:t00970.p1 ,
-       tomb:t00970.p2 ,
-       tomb:t00970.p3 ;
+  :ent t00970:g1 ,
+       t00970:p1 ,
+       t00970:p2 ,
+       t00970:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00970.s1 ,
-       tomb:t00970.s2 ,
-       tomb:t00970.s3 .
+  :sym t00970:s1 ,
+       t00970:s2 ,
+       t00970:s3 .
 
-tomb:t00970.g1 a t:group.n.01 ;
-  :rol tomb:t00970.r4 .
+t00970:g1 a t:group.n.01 ;
+  :rol t00970:r4 .
 
-tomb:t00970.p1 a t:person.n.01 ;
+t00970:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1900-07-19" ;
   :dod "1941-11-11" ;
   :nam "HARMANNUS C.P. VENEMA" ;
-  :rol tomb:t00970.r1 ,
-       tomb:t00970.r2 ,
-       tomb:t00970.r3 .
+  :rol t00970:r1 ,
+       t00970:r2 ,
+       t00970:r3 .
 
-tomb:t00970.p2 a t:person.n.01 ;
+t00970:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "L. ELEMA" .
 
-tomb:t00970.p3 a t:person.n.01 ;
+t00970:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "E.KOLSTEIN" .
 
-tomb:t00970.r1 a t:widower.n.01 ;
-  :bef tomb:t00970.r2 ;
-  :tgt tomb:t00970.p2 .
+t00970:r1 a t:widower.n.01 ;
+  :bef t00970:r2 ;
+  :tgt t00970:p2 .
 
-tomb:t00970.r2 a t:husband.n.01 ;
+t00970:r2 a t:husband.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00970.p3 .
+  :tgt t00970:p3 .
 
-tomb:t00970.r3 a t:father.n.01 ;
-  :tgt tomb:t00970.g1 .
+t00970:r3 a t:father.n.01 ;
+  :tgt t00970:g1 .
 
-tomb:t00970.r4 a t:child.n.02 ;
-  :tgt tomb:t00970.p1 .
+t00970:r4 a t:child.n.02 ;
+  :tgt t00970:p1 .
 
-tomb:t00970.s1 a t:frond.n.01 .
+t00970:s1 a t:frond.n.01 .
 
-tomb:t00970.s2 a t:frond.n.01 .
+t00970:s2 a t:frond.n.01 .
 
-tomb:t00970.s3 a t:ribbon.n.01 .
+t00970:s3 a t:ribbon.n.01 .
 
-tomb:t00970.im1 a t:photo.n.01 ;
+t00970:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

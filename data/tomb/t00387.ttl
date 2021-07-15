@@ -1,61 +1,62 @@
+@prefix t00387: <https://noordergraf.rug.nl/tomb/t00387#> .
 
 tomb:t00387 a t:tombstone.n.01 ;
-  :image tomb:t00387.im1 ;
+  :image t00387:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00387.p1 ,
-       tomb:t00387.p2 ,
-       tomb:t00387.p3 ;
-  :ref tomb:t00387.v1 ;
-  :sym tomb:t00387.s1 ,
-       tomb:t00387.s2 .
+  :ent t00387:p1 ,
+       t00387:p2 ,
+       t00387:p3 ;
+  :ref t00387:v1 ;
+  :sym t00387:s1 ,
+       t00387:s2 .
 
-tomb:t00387.a1 a t:weeping.a.02 .
+t00387:a1 a t:weeping.a.02 .
 
-tomb:t00387.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00387.c3 .
+t00387:b1 a t:Revelation.n.04 ;
+  :prt t00387:c3 .
 
-tomb:t00387.c1 a t:village.n.02 ;
+t00387:c1 a t:village.n.02 ;
   :geo place:AugsbuurtLutjewoude2759614 ;
   :place "LUTJEWOUDE" .
 
-tomb:t00387.c2 a t:village.n.02 ;
+t00387:c2 a t:village.n.02 ;
   :geo place:Buitenpost2758131 ;
   :place "BUITENPOST" .
 
-tomb:t00387.c3 a t:chapter.n.01 ;
+t00387:c3 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00387.v1 .
+  :prt t00387:v1 .
 
-tomb:t00387.p1 a t:person.n.01 ;
+t00387:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1838-09-13" ;
   :dod "1908-05-04" ;
   :nam "BETSKE J. SPOELMAN" ;
-  :pob tomb:t00387.c1 ;
-  :pod tomb:t00387.c2 ;
-  :rol tomb:t00387.r1 .
+  :pob t00387:c1 ;
+  :pod t00387:c2 ;
+  :rol t00387:r1 .
 
-tomb:t00387.p2 a t:person.n.01 ;
+t00387:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "A.G. HEIDEMA" .
 
-tomb:t00387.p3 a t:person.n.01 ;
+t00387:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN R. LUINSTRA" .
 
-tomb:t00387.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00387.p2 .
+t00387:r1 a t:spouse.n.01 ;
+  :tgt t00387:p2 .
 
-tomb:t00387.s1 a t:willow.n.01 ;
-  :att tomb:t00387.a1 .
+t00387:s1 a t:willow.n.01 ;
+  :att t00387:a1 .
 
-tomb:t00387.s2 a t:branch.n.02 ;
+t00387:s2 a t:branch.n.02 ;
   :qua 2 .
 
-tomb:t00387.v1 a t:verse.n.01 ;
+t00387:v1 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00387.im1 a t:photo.n.01 ;
+t00387:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

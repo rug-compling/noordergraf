@@ -1,49 +1,50 @@
+@prefix t00846: <https://noordergraf.rug.nl/tomb/t00846#> .
 
 tomb:t00846 a t:tombstone.n.01 ;
-  :image tomb:t00846.im1 ;
+  :image t00846:im1 ;
   :site site:fr8899AWoost_vlieland ;
-  :ent tomb:t00846.p1 ,
-       tomb:t00846.p2 ;
+  :ent t00846:p1 ,
+       t00846:p2 ;
   :quo "RUST ZACHT! GELIEFDE DOODEN!"@nld ;
-  :sym tomb:t00846.s1 .
+  :sym t00846:s1 .
 
-tomb:t00846.m1 a t:measure.n.02 ;
-  :mem tomb:t00846.u1 ;
+t00846:m1 a t:measure.n.02 ;
+  :mem t00846:u1 ;
   :qua 69 .
 
-tomb:t00846.m2 a t:measure.n.02 ;
-  :mem tomb:t00846.u2 ;
+t00846:m2 a t:measure.n.02 ;
+  :mem t00846:u2 ;
   :qua 72 .
 
-tomb:t00846.p1 a t:person.n.01 ;
+t00846:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t00846.m1 ;
+  :age t00846:m1 ;
   :dod "1897-03-22" ;
   :nam "WILLEM SIEBEN" ;
-  :rol tomb:t00846.r1 .
+  :rol t00846:r1 .
 
-tomb:t00846.p2 a t:person.n.01 ;
+t00846:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
-  :age tomb:t00846.m2 ;
+  :age t00846:m2 ;
   :dod "1898-12-07" ;
   :nam "MAAIKE BAKKER" ;
-  :rol tomb:t00846.r3 .
+  :rol t00846:r3 .
 
-tomb:t00846.r1 a t:parent.n.01 ;
+t00846:r1 a t:parent.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00846.p3 .
+  :tgt t00846:p3 .
 
-tomb:t00846.r3 a t:parent.n.01 ;
+t00846:r3 a t:parent.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00846.p3 .
+  :tgt t00846:p3 .
 
-tomb:t00846.s1 a t:sandglass.n.01 .
+t00846:s1 a t:sandglass.n.01 .
 
-tomb:t00846.u1 a t:year.n.01 .
+t00846:u1 a t:year.n.01 .
 
-tomb:t00846.u2 a t:year.n.01 .
+t00846:u2 a t:year.n.01 .
 
-tomb:t00846.im1 a t:photo.n.01 ;
+t00846:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

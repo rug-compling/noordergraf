@@ -1,36 +1,37 @@
+@prefix t00916: <https://noordergraf.rug.nl/tomb/t00916#> .
 
 tomb:t00916 a t:tombstone.n.01 ;
-  :image tomb:t00916.im1 ;
+  :image t00916:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00916.p1 ,
-       tomb:t00916.p2 ;
+  :ent t00916:p1 ,
+       t00916:p2 ;
   :lan "NLD" .
 
-tomb:t00916.c1 a t:village.n.02 ;
+t00916:c1 a t:village.n.02 ;
   :geo place:Niebert2750396 ;
   :place "NIEBERT" .
 
-tomb:t00916.c2 a t:village.n.02 ;
+t00916:c2 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00916.p1 a t:person.n.01 ;
+t00916:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1862-12-08" ;
   :dod "1942-01-17" ;
   :nam "HENDRIKJE KONING" ;
-  :pob tomb:t00916.c1 ;
-  :pod tomb:t00916.c2 .
+  :pob t00916:c1 ;
+  :pod t00916:c2 .
 
-tomb:t00916.p2 a t:person.n.01 ;
+t00916:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1862-12-23" ;
   :dod "1943-06-07" ;
   :nam "JANNES SNIP" ;
-  :pob tomb:t00916.c1 ;
-  :pod tomb:t00916.c2 .
+  :pob t00916:c1 ;
+  :pod t00916:c2 .
 
-tomb:t00916.im1 a t:photo.n.01 ;
+t00916:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,34 +1,35 @@
+@prefix t00795: <https://noordergraf.rug.nl/tomb/t00795#> .
 
 tomb:t00795 a t:tombstone.n.01 ;
-  :image tomb:t00795.im1 ;
+  :image t00795:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00795.p1 ,
-       tomb:t00795.p2 ;
+  :ent t00795:p1 ,
+       t00795:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00795.s1 ,
-       tomb:t00795.s2 ,
-       tomb:t00795.s3 .
+  :sym t00795:s1 ,
+       t00795:s2 ,
+       t00795:s3 .
 
-tomb:t00795.p1 a t:person.n.01 ;
+t00795:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1931-07-07" ;
   :dod "1994-04-27" ;
   :nam "HARM WIENKE" .
 
-tomb:t00795.p2 a t:person.n.01 ;
+t00795:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1930-09-12" ;
   :dod "2010-03-09" ;
   :nam "BERTHA WIENKE-DE BLÉCOURT" .
 
-tomb:t00795.s1 a t:pigeon.n.01 ;
-  :sup tomb:t00795.s2 .
+t00795:s1 a t:pigeon.n.01 ;
+  :sup t00795:s2 .
 
-tomb:t00795.s2 a t:branch.n.02 .
+t00795:s2 a t:branch.n.02 .
 
-tomb:t00795.s3 a t:entity.n.01 .
+t00795:s3 a t:entity.n.01 .
 
-tomb:t00795.im1 a t:photo.n.01 ;
+t00795:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

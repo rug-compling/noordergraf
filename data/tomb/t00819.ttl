@@ -1,77 +1,78 @@
+@prefix t00819: <https://noordergraf.rug.nl/tomb/t00819#> .
 
 tomb:t00819 a t:tombstone.n.01 ;
-  :image tomb:t00819.im1 ;
+  :image t00819:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00819.p1 ,
-       tomb:t00819.p2 ,
-       tomb:t00819.p3 ,
-       tomb:t00819.p4 ;
+  :ent t00819:p1 ,
+       t00819:p2 ,
+       t00819:p3 ,
+       t00819:p4 ;
   :lan "NLD" ;
-  :ref tomb:t00819.v1 ;
-  :sym tomb:t00819.s1 .
+  :ref t00819:v1 ;
+  :sym t00819:s1 .
 
-tomb:t00819.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00819.c1 .
+t00819:b1 a t:Revelation.n.04 ;
+  :prt t00819:c1 .
 
-tomb:t00819.c1 a t:chapter.n.01 ;
+t00819:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00819.v1 .
+  :prt t00819:v1 .
 
-tomb:t00819.p1 a t:person.n.01 ;
+t00819:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-06-18" ;
   :dod "1945-02-03" ;
   :nam "HIEKTJE HUIZINGA" ;
-  :rol tomb:t00819.r1 ,
-       tomb:t00819.r2 ,
-       tomb:t00819.r3 ,
-       tomb:t00819.r4 .
+  :rol t00819:r1 ,
+       t00819:r2 ,
+       t00819:r3 ,
+       t00819:r4 .
 
-tomb:t00819.p2 a t:person.n.01 ;
+t00819:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-01-17" ;
   :dod "1959-08-27" ;
   :nam "P. DIJKHUIS" ,
        "PIETER DIJKHUIS" ;
-  :rol tomb:t00819.r5 ,
-       tomb:t00819.r6 .
+  :rol t00819:r5 ,
+       t00819:r6 .
 
-tomb:t00819.p3 a t:person.n.01 ;
+t00819:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "T. DREXHAGE" .
 
-tomb:t00819.p4 a t:person.n.01 ;
+t00819:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "S. OOSTERHUIS" .
 
-tomb:t00819.r1 a t:wife.n.01 ;
+t00819:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00819.p2 .
+  :tgt t00819:p2 .
 
-tomb:t00819.r2 a t:mother.n.01 ;
-  :tgt tomb:t00819.p5 .
+t00819:r2 a t:mother.n.01 ;
+  :tgt t00819:p5 .
 
-tomb:t00819.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00819.p2 .
+t00819:r3 a t:spouse.n.01 ;
+  :tgt t00819:p2 .
 
-tomb:t00819.r4 a t:spouse.n.01 ;
-  :bef tomb:t00819.r3 ;
-  :tgt tomb:t00819.p3 .
+t00819:r4 a t:spouse.n.01 ;
+  :bef t00819:r3 ;
+  :tgt t00819:p3 .
 
-tomb:t00819.r5 a t:father.n.01 ;
+t00819:r5 a t:father.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00819.p5 .
+  :tgt t00819:p5 .
 
-tomb:t00819.r6 a t:widower.n.01 ;
-  :bef tomb:t00819.r3 ;
-  :tgt tomb:t00819.p4 .
+t00819:r6 a t:widower.n.01 ;
+  :bef t00819:r3 ;
+  :tgt t00819:p4 .
 
-tomb:t00819.s1 a t:frond.n.01 .
+t00819:s1 a t:frond.n.01 .
 
-tomb:t00819.v1 a t:verse.n.01 ;
+t00819:v1 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00819.im1 a t:photo.n.01 ;
+t00819:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

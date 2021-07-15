@@ -1,55 +1,56 @@
+@prefix t00119: <https://noordergraf.rug.nl/tomb/t00119#> .
 
 tomb:t00119 a t:tombstone.n.01 ;
-  :image tomb:t00119.im1 ;
+  :image t00119:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00119.p1 ,
-       tomb:t00119.p2 .
+  :ent t00119:p1 ,
+       t00119:p2 .
 
-tomb:t00119.c1 a t:town.n.01 ;
+t00119:c1 a t:town.n.01 ;
   :geo place:Eelde2756408 ;
   :place "EELDE" .
 
-tomb:t00119.c2 a t:town.n.01 ;
+t00119:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00119.c3 a t:village.n.02 ;
+t00119:c3 a t:village.n.02 ;
   :geo place:Kollumerzwaag2752520 ;
   :place "KOLLUMERZWAAG" .
 
-tomb:t00119.c4 a t:city.n.01 ;
+t00119:c4 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00119.p1 a t:person.n.01 ;
+t00119:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1885-06-12" ;
   :dod "1961-06-13" ;
   :nam "HENDRIK BODDEVELD" ;
-  :pob tomb:t00119.c1 ;
-  :pod tomb:t00119.c2 ;
-  :rol tomb:t00119.r1 ,
-       tomb:t00119.r2 .
+  :pob t00119:c1 ;
+  :pod t00119:c2 ;
+  :rol t00119:r1 ,
+       t00119:r2 .
 
-tomb:t00119.p2 a t:person.n.01 ;
+t00119:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-05-10" ;
   :dod "1969-05-08" ;
   :nam "EELKJE POSTMA" ;
-  :pob tomb:t00119.c3 ;
-  :pod tomb:t00119.c4 ;
-  :rol tomb:t00119.r3 .
+  :pob t00119:c3 ;
+  :pod t00119:c4 ;
+  :rol t00119:r3 .
 
-tomb:t00119.r1 a t:father.n.01 .
+t00119:r1 a t:father.n.01 .
 
-tomb:t00119.r2 a t:husband.n.01 ;
+t00119:r2 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00119.p2 .
+  :tgt t00119:p2 .
 
-tomb:t00119.r3 a t:mother.n.01 ;
+t00119:r3 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00119.im1 a t:photo.n.01 ;
+t00119:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

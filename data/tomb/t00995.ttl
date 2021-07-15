@@ -1,41 +1,42 @@
+@prefix t00995: <https://noordergraf.rug.nl/tomb/t00995#> .
 
 tomb:t00995 a t:tombstone.n.01 ;
-  :image tomb:t00995.im1 ;
+  :image t00995:im1 ;
   :site site:gr9686RSbeerta ;
-  :ent tomb:t00995.p1 ,
-       tomb:t00995.p2 ;
+  :ent t00995:p1 ,
+       t00995:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER"@nld ;
-  :sym tomb:t00995.s1 .
+  :sym t00995:s1 .
 
-tomb:t00995.a1 a t:weeping.a.02 .
+t00995:a1 a t:weeping.a.02 .
 
-tomb:t00995.p1 a t:person.n.01 ;
+t00995:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1863-03-06" ;
   :dod "1927-05-25" ;
   :nam "NANNO JACOB BONESCHANSKER" ;
-  :rol tomb:t00995.r1 ,
-       tomb:t00995.r2 ,
-       tomb:t00995.r3 .
+  :rol t00995:r1 ,
+       t00995:r2 ,
+       t00995:r3 .
 
-tomb:t00995.p2 a t:person.n.01 ;
+t00995:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "JANTJE DE VRIES" .
 
-tomb:t00995.r1 a t:spouse.n.01 ;
+t00995:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00995.p2 .
+  :tgt t00995:p2 .
 
-tomb:t00995.r2 a t:husband.n.01 ;
+t00995:r2 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00995.p2 .
+  :tgt t00995:p2 .
 
-tomb:t00995.r3 a t:father.n.01 .
+t00995:r3 a t:father.n.01 .
 
-tomb:t00995.s1 a t:willow.n.01 ;
-  :att tomb:t00995.a1 .
+t00995:s1 a t:willow.n.01 ;
+  :att t00995:a1 .
 
-tomb:t00995.im1 a t:photo.n.01 ;
+t00995:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

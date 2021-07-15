@@ -1,42 +1,43 @@
+@prefix t00363: <https://noordergraf.rug.nl/tomb/t00363#> .
 
 tomb:t00363 a t:tombstone.n.01 ;
-  :image tomb:t00363.im1 ;
+  :image t00363:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00363.p1 ,
-       tomb:t00363.p2 ;
+  :ent t00363:p1 ,
+       t00363:p2 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00363.s1 .
+  :sym t00363:s1 .
 
-tomb:t00363.a1 a t:weeping.a.02 .
+t00363:a1 a t:weeping.a.02 .
 
-tomb:t00363.c1 a t:village.n.02 ;
+t00363:c1 a t:village.n.02 ;
   :geo place:Westerbork2744769 ;
   :place "WESTERBORK" .
 
-tomb:t00363.c2 a t:village.n.02 ;
+t00363:c2 a t:village.n.02 ;
   :geo place:Tynaarlo2746038 ;
   :place "TYNAARLO" .
 
-tomb:t00363.p1 a t:person.n.01 ;
+t00363:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1858-04-28" ;
   :dod "1942-03-05" ;
   :nam "JANTJE DARWINKEL" ;
-  :pob tomb:t00363.c1 ;
-  :pod tomb:t00363.c2 ;
-  :rol tomb:t00363.r1 .
+  :pob t00363:c1 ;
+  :pod t00363:c2 ;
+  :rol t00363:r1 .
 
-tomb:t00363.p2 a t:person.n.01 ;
+t00363:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAKOB SMEENGE" .
 
-tomb:t00363.r1 a t:widow.n.01 ;
-  :tgt tomb:t00363.p2 .
+t00363:r1 a t:widow.n.01 ;
+  :tgt t00363:p2 .
 
-tomb:t00363.s1 a t:willow.n.01 ;
-  :att tomb:t00363.a1 .
+t00363:s1 a t:willow.n.01 ;
+  :att t00363:a1 .
 
-tomb:t00363.im1 a t:photo.n.01 ;
+t00363:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

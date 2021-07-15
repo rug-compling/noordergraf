@@ -1,40 +1,41 @@
+@prefix t00861: <https://noordergraf.rug.nl/tomb/t00861#> .
 
 tomb:t00861 a t:tombstone.n.01 ;
-  :image tomb:t00861.im1 ;
+  :image t00861:im1 ;
   :site site:dr7844TCveenoord ;
-  :ent tomb:t00861.p1 ,
-       tomb:t00861.p2 ;
+  :ent t00861:p1 ,
+       t00861:p2 ;
   :lan "NLD" .
 
-tomb:t00861.c1 a t:village.n.02 ;
+t00861:c1 a t:village.n.02 ;
   :geo place:Zevenhuizen2743926 ;
   :place "ZEVENHUIZEN" .
 
-tomb:t00861.c2 a t:village.n.02 ;
+t00861:c2 a t:village.n.02 ;
   :geo place:Veenoord2745753 ;
   :place "VEENOORD" .
 
-tomb:t00861.c3 a t:village.n.02 ;
+t00861:c3 a t:village.n.02 ;
   :geo place:Leek2751834 ;
   :place "LEEK" .
 
-tomb:t00861.p1 a t:person.n.01 ;
+t00861:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1852-02-27" ;
   :dod "1954-04-18" ;
   :nam "JAC. LOUWES" ;
-  :pob tomb:t00861.c1 ;
-  :pod tomb:t00861.c2 .
+  :pob t00861:c1 ;
+  :pod t00861:c2 .
 
-tomb:t00861.p2 a t:person.n.01 ;
+t00861:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1858-01-14" ;
   :dod "1938-11-19" ;
   :nam "JANNA GORT" ;
-  :pob tomb:t00861.c3 ;
-  :pod tomb:t00861.c2 .
+  :pob t00861:c3 ;
+  :pod t00861:c2 .
 
-tomb:t00861.im1 a t:photo.n.01 ;
+t00861:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

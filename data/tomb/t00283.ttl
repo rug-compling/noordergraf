@@ -1,62 +1,63 @@
+@prefix t00283: <https://noordergraf.rug.nl/tomb/t00283#> .
 
 tomb:t00283 a t:tombstone.n.01 ;
-  :image tomb:t00283.im1 ;
+  :image t00283:im1 ;
   :site site:gr9985SCoosternieland ;
-  :ent tomb:t00283.g1 ,
-       tomb:t00283.p1 ,
-       tomb:t00283.p2 ,
-       tomb:t00283.p3 ;
-  :ref tomb:t00283.v1 ;
-  :sym tomb:t00283.s1 .
+  :ent t00283:g1 ,
+       t00283:p1 ,
+       t00283:p2 ,
+       t00283:p3 ;
+  :ref t00283:v1 ;
+  :sym t00283:s1 .
 
-tomb:t00283.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00283.c1 .
+t00283:b1 a t:Revelation.n.04 ;
+  :prt t00283:c1 .
 
-tomb:t00283.c1 a t:chapter.n.01 ;
+t00283:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00283.v1 .
+  :prt t00283:v1 .
 
-tomb:t00283.g1 a t:group.n.01 ;
-  :mem tomb:t00283.p2 ,
-       tomb:t00283.p3 .
+t00283:g1 a t:group.n.01 ;
+  :mem t00283:p2 ,
+       t00283:p3 .
 
-tomb:t00283.p1 a t:person.n.01 ;
+t00283:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1916-08-28" ;
   :dod "1956-10-16" ;
   :nam "WILLEMINA KUIPER" ;
-  :rol tomb:t00283.r1 .
+  :rol t00283:r1 .
 
-tomb:t00283.p2 a t:person.n.01 ;
+t00283:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1884-02-25" ;
   :dod "1961-04-14" ;
   :nam "HARMINA ZUIDERVELD" ;
-  :rol tomb:t00283.r2 .
+  :rol t00283:r2 .
 
-tomb:t00283.p3 a t:person.n.01 ;
+t00283:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1871-05-23" ;
   :dod "1952-07-16" ;
   :nam "HENDERICUS KUIPER" ;
-  :rol tomb:t00283.r3 .
+  :rol t00283:r3 .
 
-tomb:t00283.r1 a t:daughter.n.01 ;
-  :tgt tomb:t00283.g1 .
+t00283:r1 a t:daughter.n.01 ;
+  :tgt t00283:g1 .
 
-tomb:t00283.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00283.p3 .
+t00283:r2 a t:spouse.n.01 ;
+  :tgt t00283:p3 .
 
-tomb:t00283.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00283.p2 .
+t00283:r3 a t:spouse.n.01 ;
+  :tgt t00283:p2 .
 
-tomb:t00283.s1 a t:frond.n.01 .
+t00283:s1 a t:frond.n.01 .
 
-tomb:t00283.v1 a t:verse.n.01 ;
+t00283:v1 a t:verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN ZIJ, DIE IN DEN HEERE STERVEN." .
 
-tomb:t00283.im1 a t:photo.n.01 ;
+t00283:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

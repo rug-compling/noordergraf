@@ -1,29 +1,30 @@
+@prefix t00927: <https://noordergraf.rug.nl/tomb/t00927#> .
 
 tomb:t00927 a t:tombstone.n.01 ;
-  :image tomb:t00927.im1 ;
+  :image t00927:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00927.p1 ;
+  :ent t00927:p1 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
-  :sym tomb:t00927.s1 ,
-       tomb:t00927.s2 .
+  :sym t00927:s1 ,
+       t00927:s2 .
 
-tomb:t00927.c1 a t:village.n.02 ;
+t00927:c1 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00927.p1 a t:person.n.01 ;
+t00927:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1846-05-15" ;
   :dod "1899-02-04" ;
   :nam "JAN WIERENGA" ;
-  :pob tomb:t00927.c1 ;
-  :pod tomb:t00927.c1 .
+  :pob t00927:c1 ;
+  :pod t00927:c1 .
 
-tomb:t00927.s1 a t:oak.n.01 .
+t00927:s1 a t:oak.n.01 .
 
-tomb:t00927.s2 a t:frond.n.01 .
+t00927:s2 a t:frond.n.01 .
 
-tomb:t00927.im1 a t:photo.n.01 ;
+t00927:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,32 +1,33 @@
+@prefix t00339: <https://noordergraf.rug.nl/tomb/t00339#> .
 
 tomb:t00339 a t:tombstone.n.01 ;
-  :image tomb:t00339.im1 ;
+  :image t00339:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00339.p1 ,
-       tomb:t00339.p2 ;
+  :ent t00339:p1 ,
+       t00339:p2 ;
   :ref "PSALM 90" .
 
-tomb:t00339.p1 a t:person.n.01 ;
+t00339:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1846-12-17" ;
   :dod "1917-06-27" ;
   :nam "LAMMIGJE VELDMAN" ;
-  :rol tomb:t00339.r1 .
+  :rol t00339:r1 .
 
-tomb:t00339.p2 a t:person.n.01 ;
+t00339:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1844-10-08" ;
   :dod "1932-03-19" ;
   :nam "WOLTER KLEINE" ;
-  :rol tomb:t00339.r2 .
+  :rol t00339:r2 .
 
-tomb:t00339.r1 a t:parent.n.01 ;
-  :tgt tomb:t00339.p3 .
+t00339:r1 a t:parent.n.01 ;
+  :tgt t00339:p3 .
 
-tomb:t00339.r2 a t:parent.n.01 ;
-  :tgt tomb:t00339.p3 .
+t00339:r2 a t:parent.n.01 ;
+  :tgt t00339:p3 .
 
-tomb:t00339.im1 a t:photo.n.01 ;
+t00339:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

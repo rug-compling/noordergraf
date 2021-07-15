@@ -1,36 +1,37 @@
+@prefix t00641: <https://noordergraf.rug.nl/tomb/t00641#> .
 
 tomb:t00641 a t:tombstone.n.01 ;
-  :image tomb:t00641.im1 ;
+  :image t00641:im1 ;
   :site site:gr9723EJgroningen ;
-  :ent tomb:t00641.p1 ,
-       tomb:t00641.p2 ;
+  :ent t00641:p1 ,
+       t00641:p2 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld .
 
-tomb:t00641.c1 a t:village.n.02 ;
+t00641:c1 a t:village.n.02 ;
   :geo place:Westerbroek2744764 ;
   :place "WESTERBROEK" .
 
-tomb:t00641.c2 a t:village.n.02 ;
+t00641:c2 a t:village.n.02 ;
   :geo place:Peizermade2748669 ;
   :place "PEIZERMADE" .
 
-tomb:t00641.p1 a t:person.n.01 ;
+t00641:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1843-03-13" ;
   :dod "1917-11-25" ;
   :nam "HENDERIKA BRONSEMA" ;
-  :pob tomb:t00641.c1 ;
-  :pod tomb:t00641.c2 ;
-  :rol tomb:t00641.r1 .
+  :pob t00641:c1 ;
+  :pod t00641:c2 ;
+  :rol t00641:r1 .
 
-tomb:t00641.p2 a t:person.n.01 ;
+t00641:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H. REINDERS" .
 
-tomb:t00641.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00641.p2 .
+t00641:r1 a t:spouse.n.01 ;
+  :tgt t00641:p2 .
 
-tomb:t00641.im1 a t:photo.n.01 ;
+t00641:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

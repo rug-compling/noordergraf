@@ -1,42 +1,43 @@
+@prefix t00036: <https://noordergraf.rug.nl/tomb/t00036#> .
 
 tomb:t00036 a t:tombstone.n.01 ;
-  :image tomb:t00036.im1 ;
+  :image t00036:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00036.p1 ,
-       tomb:t00036.p2 ;
-  :sym tomb:t00036.s1 ;
+  :ent t00036:p1 ,
+       t00036:p2 ;
+  :sym t00036:s1 ;
   :txt "HIJ WAS EEN TROUW EN IJVERIG HOOFD VAN ZIJN GEZIN" .
 
-tomb:t00036.a1 a t:weeping.a.02 .
+t00036:a1 a t:weeping.a.02 .
 
-tomb:t00036.c1 a t:city.n.01 ;
+t00036:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00036.c2 a t:town.n.01 ;
+t00036:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00036.p1 a t:person.n.01 ;
+t00036:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1864-06-12" ;
   :dod "1904-06-09" ;
   :nam "ROELOF DOLFIN" ;
-  :pob tomb:t00036.c1 ;
-  :pod tomb:t00036.c2 ;
-  :rol tomb:t00036.r1 .
+  :pob t00036:c1 ;
+  :pod t00036:c2 ;
+  :rol t00036:r1 .
 
-tomb:t00036.p2 a t:person.n.01 ;
+t00036:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "MARGRIETA VAN BERGEN" .
 
-tomb:t00036.r1 a t:husband.n.01 ;
-  :tgt tomb:t00036.p2 .
+t00036:r1 a t:husband.n.01 ;
+  :tgt t00036:p2 .
 
-tomb:t00036.s1 a t:willow.n.01 ;
-  :att tomb:t00036.a1 .
+t00036:s1 a t:willow.n.01 ;
+  :att t00036:a1 .
 
-tomb:t00036.im1 a t:photo.n.01 ;
+t00036:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,35 +1,36 @@
+@prefix t00667: <https://noordergraf.rug.nl/tomb/t00667#> .
 
 tomb:t00667 a t:tombstone.n.01 ;
-  :image tomb:t00667.im1 ;
+  :image t00667:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00667.p1 ,
-       tomb:t00667.p2 ;
+  :ent t00667:p1 ,
+       t00667:p2 ;
   :quo "HUN LEVEN WAS EENVOUD"@nld ;
-  :sym tomb:t00667.s1 ,
-       tomb:t00667.s2 .
+  :sym t00667:s1 ,
+       t00667:s2 .
 
-tomb:t00667.p1 a t:person.n.01 ;
+t00667:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1849-01-10" ;
   :dod "1922-02-01" ;
   :nam "HENDRIK JACOBS BOERSMA" ;
-  :rol tomb:t00667.r1 .
+  :rol t00667:r1 .
 
-tomb:t00667.p2 a t:person.n.01 ;
+t00667:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1849-05-30" ;
   :dod "1928-01-09" ;
   :nam "TRIJNTJE ZELLE" .
 
-tomb:t00667.r1 a t:spouse.n.01 ;
+t00667:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00667.p2 .
+  :tgt t00667:p2 .
 
-tomb:t00667.s1 a t:frond.n.01 .
+t00667:s1 a t:frond.n.01 .
 
-tomb:t00667.s2 a t:ribbon.n.01 .
+t00667:s2 a t:ribbon.n.01 .
 
-tomb:t00667.im1 a t:photo.n.01 ;
+t00667:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

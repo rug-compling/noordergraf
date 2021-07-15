@@ -1,21 +1,22 @@
+@prefix t00842: <https://noordergraf.rug.nl/tomb/t00842#> .
 
 tomb:t00842 a t:tombstone.n.01 ;
-  :image tomb:t00842.im1 ;
+  :image t00842:im1 ;
   :site site:fr8899AWoost_vlieland ;
-  :ent tomb:t00842.p1 ;
+  :ent t00842:p1 ;
   :lan "NLD" .
 
-tomb:t00842.o1 a t:biologist.n.01 ;
+t00842:o1 a t:biologist.n.01 ;
   :hco "05110" .
 
-tomb:t00842.p1 a t:person.n.01 ;
+t00842:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1914-12-09" ;
   :dod "1997-03-09" ;
   :nam "SIENTJE DE BOER" ;
-  :occ tomb:t00842.o1 .
+  :occ t00842:o1 .
 
-tomb:t00842.im1 a t:photo.n.01 ;
+t00842:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

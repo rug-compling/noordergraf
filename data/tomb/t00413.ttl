@@ -1,52 +1,53 @@
+@prefix t00413: <https://noordergraf.rug.nl/tomb/t00413#> .
 
 tomb:t00413 a t:tombstone.n.01 ;
-  :image tomb:t00413.im1 ;
+  :image t00413:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00413.g1 ,
-       tomb:t00413.p1 ,
-       tomb:t00413.p2 ,
-       tomb:t00413.p3 ;
-  :sym tomb:t00413.s1 .
+  :ent t00413:g1 ,
+       t00413:p1 ,
+       t00413:p2 ,
+       t00413:p3 ;
+  :sym t00413:s1 .
 
-tomb:t00413.c1 a t:village.n.02 ;
+t00413:c1 a t:village.n.02 ;
   :geo place:Smilde2747076 ;
   :place "SMILDE" .
 
-tomb:t00413.c2 a t:city.n.01 ;
+t00413:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00413.g1 a t:group.n.01 ;
-  :mem tomb:t00413.p2 ,
-       tomb:t00413.p3 .
+t00413:g1 a t:group.n.01 ;
+  :mem t00413:p2 ,
+       t00413:p3 .
 
-tomb:t00413.p1 a t:person.n.01 ;
+t00413:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1939-07-25" ;
   :dod "1958-09-05" ;
   :nam "FRANCISCUS BOERS" ;
-  :pob tomb:t00413.c1 ;
-  :pod tomb:t00413.c2 ;
-  :rol tomb:t00413.r1 ,
-       tomb:t00413.r2 .
+  :pob t00413:c1 ;
+  :pod t00413:c2 ;
+  :rol t00413:r1 ,
+       t00413:r2 .
 
-tomb:t00413.p2 a t:person.n.01 ;
+t00413:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "W. BOERS" .
 
-tomb:t00413.p3 a t:person.n.01 ;
+t00413:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. BOERS-BODENSTAFF" .
 
-tomb:t00413.r1 a t:son.n.01 ;
+t00413:r1 a t:son.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00413.g1 .
+  :tgt t00413:g1 .
 
-tomb:t00413.r2 a t:brother.n.01 .
+t00413:r2 a t:brother.n.01 .
 
-tomb:t00413.s1 a t:frond.n.01 .
+t00413:s1 a t:frond.n.01 .
 
-tomb:t00413.im1 a t:photo.n.01 ;
+t00413:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

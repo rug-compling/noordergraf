@@ -1,55 +1,56 @@
+@prefix t00277: <https://noordergraf.rug.nl/tomb/t00277#> .
 
 tomb:t00277 a t:tombstone.n.01 ;
-  :image tomb:t00277.im1 ;
+  :image t00277:im1 ;
   :site site:gr9985SCoosternieland ;
-  :ent tomb:t00277.p1 ,
-       tomb:t00277.p2 ;
-  :sym tomb:t00277.s1 .
+  :ent t00277:p1 ,
+       t00277:p2 ;
+  :sym t00277:s1 .
 
-tomb:t00277.c1 a t:village.n.02 ;
+t00277:c1 a t:village.n.02 ;
   :geo place:Godlinze2755489 ;
   :place "GODLINZE" .
 
-tomb:t00277.c2 a t:village.n.02 ;
+t00277:c2 a t:village.n.02 ;
   :geo place:Oosternieland2749429 ;
   :place "OOSTERNIELAND" .
 
-tomb:t00277.c3 a t:village.n.02 ;
+t00277:c3 a t:village.n.02 ;
   :geo place:tZandt2746027 ;
   :place "'T ZANDT" .
 
-tomb:t00277.p1 a t:person.n.01 ;
+t00277:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1901-05-04" ;
   :dod "1960-07-08" ;
   :nam "BARBERTJE BOUMA" ;
-  :pob tomb:t00277.c1 ;
-  :pod tomb:t00277.c2 ;
-  :rol tomb:t00277.r1 ,
-       tomb:t00277.r2 ,
-       tomb:t00277.r3 .
+  :pob t00277:c1 ;
+  :pod t00277:c2 ;
+  :rol t00277:r1 ,
+       t00277:r2 ,
+       t00277:r3 .
 
-tomb:t00277.p2 a t:person.n.01 ;
+t00277:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1899-09-21" ;
   :dod "1978-02-05" ;
   :nam "EGBERT DE VRIES" ;
-  :pob tomb:t00277.c3 ;
-  :pod tomb:t00277.c2 .
+  :pob t00277:c3 ;
+  :pod t00277:c2 .
 
-tomb:t00277.r1 a t:wife.n.01 ;
+t00277:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00277.p2 .
+  :tgt t00277:p2 .
 
-tomb:t00277.r2 a t:mother.n.01 .
+t00277:r2 a t:mother.n.01 .
 
-tomb:t00277.r3 a t:spouse.n.01 ;
+t00277:r3 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00277.p2 .
+  :tgt t00277:p2 .
 
-tomb:t00277.s1 a t:frond.n.02 .
+t00277:s1 a t:frond.n.02 .
 
-tomb:t00277.im1 a t:photo.n.01 ;
+t00277:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

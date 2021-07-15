@@ -1,40 +1,41 @@
+@prefix t00487: <https://noordergraf.rug.nl/tomb/t00487#> .
 
 tomb:t00487 a t:tombstone.n.01 ;
-  :image tomb:t00487.im1 ;
+  :image t00487:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00487.p1 ,
-       tomb:t00487.p2 ,
-       tomb:t00487.p3 ;
+  :ent t00487:p1 ,
+       t00487:p2 ,
+       t00487:p3 ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :sym tomb:t00487.s1 .
+  :sym t00487:s1 .
 
-tomb:t00487.p1 a t:person.n.01 ;
+t00487:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1870-10-28" ;
   :dod "1945-02-14" ;
   :nam "TEKELA MARIA RUURDA" ;
-  :rol tomb:t00487.r1 .
+  :rol t00487:r1 .
 
-tomb:t00487.p2 a t:person.n.01 ;
+t00487:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "FREDERIK WIEMERS" .
 
-tomb:t00487.p3 a t:person.n.01 ;
+t00487:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1897-08-18" ;
   :dod "1959-10-26" ;
   :nam "CHRISTINA WIEMERS" ;
-  :rol tomb:t00487.r2 .
+  :rol t00487:r2 .
 
-tomb:t00487.r1 a t:widow.n.01 ;
-  :tgt tomb:t00487.p2 .
+t00487:r1 a t:widow.n.01 ;
+  :tgt t00487:p2 .
 
-tomb:t00487.r2 a t:daughter.n.01 ;
-  :tgt tomb:t00487.p1 .
+t00487:r2 a t:daughter.n.01 ;
+  :tgt t00487:p1 .
 
-tomb:t00487.s1 a t:cross.n.03 .
+t00487:s1 a t:cross.n.03 .
 
-tomb:t00487.im1 a t:photo.n.01 ;
+t00487:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

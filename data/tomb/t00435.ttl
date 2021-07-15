@@ -1,46 +1,47 @@
+@prefix t00435: <https://noordergraf.rug.nl/tomb/t00435#> .
 
 tomb:t00435 a t:tombstone.n.01 ;
-  :image tomb:t00435.im1 ;
+  :image t00435:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00435.p1 ,
-       tomb:t00435.p2 ;
+  :ent t00435:p1 ,
+       t00435:p2 ;
   :ref "GEZANG 199" ;
-  :sym tomb:t00435.s1 .
+  :sym t00435:s1 .
 
-tomb:t00435.c1 a t:island.n.01 ;
+t00435:c1 a t:island.n.01 ;
   :geo place:Schiermonnikoog2747591 ;
   :place "SCHIERMONNIKOOG" .
 
-tomb:t00435.p1 a t:person.n.01 ;
+t00435:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1866-07-08" ;
   :dod "1948-10-20" ;
   :nam "THOMAS KLONTJE" ;
-  :pob tomb:t00435.c1 ;
-  :pod tomb:t00435.c1 ;
-  :rol tomb:t00435.r1 ,
-       tomb:t00435.r2 ,
-       tomb:t00435.r3 ,
-       tomb:t00435.r4 .
+  :pob t00435:c1 ;
+  :pod t00435:c1 ;
+  :rol t00435:r1 ,
+       t00435:r2 ,
+       t00435:r3 ,
+       t00435:r4 .
 
-tomb:t00435.p2 a t:person.n.01 ;
+t00435:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "AALTJE JANSJE VISSER" .
 
-tomb:t00435.r1 a t:husband.n.01 ;
+t00435:r1 a t:husband.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00435.p2 .
+  :tgt t00435:p2 .
 
-tomb:t00435.r2 a t:father.n.01 .
+t00435:r2 a t:father.n.01 .
 
-tomb:t00435.r3 a t:grandfather.n.01 .
+t00435:r3 a t:grandfather.n.01 .
 
-tomb:t00435.r4 a t:spouse.n.01 ;
-  :tgt tomb:t00435.p2 .
+t00435:r4 a t:spouse.n.01 ;
+  :tgt t00435:p2 .
 
-tomb:t00435.s1 a t:frond.n.01 .
+t00435:s1 a t:frond.n.01 .
 
-tomb:t00435.im1 a t:photo.n.01 ;
+t00435:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,54 +1,55 @@
+@prefix t00365: <https://noordergraf.rug.nl/tomb/t00365#> .
 
 tomb:t00365 a t:tombstone.n.01 ;
-  :image tomb:t00365.im1 ;
+  :image t00365:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00365.g1 ,
-       tomb:t00365.p1 ,
-       tomb:t00365.p2 ,
-       tomb:t00365.p3 ;
+  :ent t00365:g1 ,
+       t00365:p1 ,
+       t00365:p2 ,
+       t00365:p3 ;
   :quo "RUST ZACHT LIEVE FROUKJE" ;
-  :sym tomb:t00365.s1 .
+  :sym t00365:s1 .
 
-tomb:t00365.c1 a t:village.n.02 ;
+t00365:c1 a t:village.n.02 ;
   :geo place:Zuidlaren2743680 ;
   :place "ZUIDLAREN" .
 
-tomb:t00365.c2 a t:village.n.02 ;
+t00365:c2 a t:village.n.02 ;
   :geo place:Tynaarlo2746038 ;
   :place "TYNAARLO" .
 
-tomb:t00365.g1 a t:group.n.01 ;
-  :mem tomb:t00365.p2 ,
-       tomb:t00365.p3 .
+t00365:g1 a t:group.n.01 ;
+  :mem t00365:p2 ,
+       t00365:p3 .
 
-tomb:t00365.p1 a t:person.n.01 ;
+t00365:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1918-10-02" ;
   :dod "1946-06-18" ;
   :nam "FROUKJE SMEENGE" ;
-  :pob tomb:t00365.c1 ;
-  :pod tomb:t00365.c2 ;
-  :rol tomb:t00365.r1 ,
-       tomb:t00365.r3 .
+  :pob t00365:c1 ;
+  :pod t00365:c2 ;
+  :rol t00365:r1 ,
+       t00365:r3 .
 
-tomb:t00365.p2 a t:person.n.01 ;
+t00365:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :att "OVERLEDEN" ;
   :nam "R. SMEENGE" .
 
-tomb:t00365.p3 a t:person.n.01 ;
+t00365:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "E. SMEENGE-VAN DALEN" .
 
-tomb:t00365.r1 a t:daughter.n.01 ;
+t00365:r1 a t:daughter.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00365.g1 .
+  :tgt t00365:g1 .
 
-tomb:t00365.r3 a t:sister.n.01 .
+t00365:r3 a t:sister.n.01 .
 
-tomb:t00365.s1 a t:rose.n.01 .
+t00365:s1 a t:rose.n.01 .
 
-tomb:t00365.im1 a t:photo.n.01 ;
+t00365:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

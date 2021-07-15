@@ -1,44 +1,45 @@
+@prefix t00831: <https://noordergraf.rug.nl/tomb/t00831#> .
 
 tomb:t00831 a t:tombstone.n.01 ;
-  :image tomb:t00831.im1 ;
+  :image t00831:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00831.p1 ,
-       tomb:t00831.p2 ;
+  :ent t00831:p1 ,
+       t00831:p2 ;
   :quo "ZIJ WAS EEN ZORGZAME MOEDER"@nld .
 
-tomb:t00831.c1 a t:village.n.02 ;
+t00831:c1 a t:village.n.02 ;
   :geo place:Orvelte2749247 ;
   :place "ORVELTE" .
 
-tomb:t00831.c2 a t:municipality.n.01 ;
+t00831:c2 a t:municipality.n.01 ;
   :geo place:Westerbork2744769 ;
-  :mem tomb:t00831.c1 ;
+  :mem t00831:c1 ;
   :place "WESTERBORK" .
 
-tomb:t00831.c3 a t:village.n.02 ;
+t00831:c3 a t:village.n.02 ;
   :geo place:NoordSleen2749830 ;
   :place "NOORD-SLEEN" .
 
-tomb:t00831.p1 a t:person.n.01 ;
+t00831:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1871-12-01" ;
   :dod "1940-11-09" ;
   :nam "HENDRIKJE KOK" ;
-  :pob tomb:t00831.c1 ;
-  :pod tomb:t00831.c3 ;
-  :rol tomb:t00831.r1 ,
-       tomb:t00831.r2 .
+  :pob t00831:c1 ;
+  :pod t00831:c3 ;
+  :rol t00831:r1 ,
+       t00831:r2 .
 
-tomb:t00831.p2 a t:person.n.01 ;
+t00831:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "RUDOLF SMIT" .
 
-tomb:t00831.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00831.p2 .
+t00831:r1 a t:spouse.n.01 ;
+  :tgt t00831:p2 .
 
-tomb:t00831.r2 a t:mother.n.01 .
+t00831:r2 a t:mother.n.01 .
 
-tomb:t00831.im1 a t:photo.n.01 ;
+t00831:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

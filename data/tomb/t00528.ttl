@@ -1,40 +1,41 @@
+@prefix t00528: <https://noordergraf.rug.nl/tomb/t00528#> .
 
 tomb:t00528 a t:tombstone.n.01 ;
-  :image tomb:t00528.im1 ;
+  :image t00528:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00528.p1 ,
-       tomb:t00528.p2 ;
+  :ent t00528:p1 ,
+       t00528:p2 ;
   :quo "GOD HEEFT ONS GEEN KALME \\ REIS BELOOFD MAAR WEL \\ EEN BEHOUDEN THUISHAVEN."@nld ;
-  :sym tomb:t00528.s1 .
+  :sym t00528:s1 .
 
-tomb:t00528.p1 a t:person.n.01 ;
+t00528:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1932-03-27" ;
   :dod "1993-11-25" ;
   :nam "JOHANNES VAN DER MEULEN" ;
-  :rol tomb:t00528.r1 ,
-       tomb:t00528.r2 ,
-       tomb:t00528.r3 ,
-       tomb:t00528.r4 .
+  :rol t00528:r1 ,
+       t00528:r2 ,
+       t00528:r3 ,
+       t00528:r4 .
 
-tomb:t00528.p2 a t:person.n.01 ;
+t00528:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "HILTJE TIMMERMAN" .
 
-tomb:t00528.r1 a t:husband.n.01 ;
+t00528:r1 a t:husband.n.01 ;
   :att "ZORGZAME" ;
-  :tgt tomb:t00528.p2 .
+  :tgt t00528:p2 .
 
-tomb:t00528.r2 a t:father.n.01 .
+t00528:r2 a t:father.n.01 .
 
-tomb:t00528.r3 a t:grandfather.n.01 .
+t00528:r3 a t:grandfather.n.01 .
 
-tomb:t00528.r4 a t:spouse.n.01 ;
-  :tgt tomb:t00528.p2 .
+t00528:r4 a t:spouse.n.01 ;
+  :tgt t00528:p2 .
 
-tomb:t00528.s1 a t:anchor.n.01 .
+t00528:s1 a t:anchor.n.01 .
 
-tomb:t00528.im1 a t:photo.n.01 ;
+t00528:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

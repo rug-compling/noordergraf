@@ -1,27 +1,28 @@
+@prefix t01052: <https://noordergraf.rug.nl/tomb/t01052#> .
 
 tomb:t01052 a t:tombstone.n.01 ;
-  :image tomb:t01052.im1 ;
+  :image t01052:im1 ;
   :site site:gr9971EBulrum ;
-  :ent tomb:t01052.p1 ;
+  :ent t01052:p1 ;
   :quo "ZIJNDE DE EERSTE, DIE OP DEZE BEGRAAFPLAATS IS TER AARDE BESTELD"@nld .
 
-tomb:t01052.c1 a t:village.n.02 ;
+t01052:c1 a t:village.n.02 ;
   :geo place:Weener2813433 ;
   :place "WEENER" .
 
-tomb:t01052.c2 a t:village.n.02 ;
+t01052:c2 a t:village.n.02 ;
   :geo place:Ulrum2745944 ;
   :place "ULRUM" .
 
-tomb:t01052.p1 a t:person.n.01 ;
+t01052:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1815-11-15" ;
   :dod "1905-04-21" ;
   :nam "WUBBERTUS KRÖEGER" ;
-  :pob tomb:t01052.c1 ;
-  :pod tomb:t01052.c2 .
+  :pob t01052:c1 ;
+  :pod t01052:c2 .
 
-tomb:t01052.im1 a t:photo.n.01 ;
+t01052:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

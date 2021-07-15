@@ -1,29 +1,30 @@
+@prefix t00420: <https://noordergraf.rug.nl/tomb/t00420#> .
 
 tomb:t00420 a t:tombstone.n.01 ;
-  :image tomb:t00420.im1 ;
+  :image t00420:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00420.p1 ;
-  :sym tomb:t00420.s1 .
+  :ent t00420:p1 ;
+  :sym t00420:s1 .
 
-tomb:t00420.c1 a t:city.n.01 ;
+t00420:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00420.c2 a t:village.n.02 ;
+t00420:c2 a t:village.n.02 ;
   :geo place:Zuidlaren2743680 ;
   :place "ZUIDLAREN" .
 
-tomb:t00420.p1 a t:person.n.01 ;
+t00420:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1931-10-07" ;
   :dod "2014-05-04" ;
   :nam "AAFKE TEENSMA" ;
-  :pob tomb:t00420.c1 ;
-  :pod tomb:t00420.c2 .
+  :pob t00420:c1 ;
+  :pod t00420:c2 .
 
-tomb:t00420.s1 a t:wren.n.02 .
+t00420:s1 a t:wren.n.02 .
 
-tomb:t00420.im1 a t:photo.n.01 ;
+t00420:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

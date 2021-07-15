@@ -1,20 +1,21 @@
+@prefix t00930: <https://noordergraf.rug.nl/tomb/t00930#> .
 
 tomb:t00930 a t:tombstone.n.01 ;
-  :image tomb:t00930.im1 ;
+  :image t00930:im1 ;
   :site site:gr9741GHgroningen ;
-  :ent tomb:t00930.p1 ;
+  :ent t00930:p1 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
-  :sym tomb:t00930.s1 .
+  :sym t00930:s1 .
 
-tomb:t00930.p1 a t:person.n.01 ;
+t00930:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1913-10-02" ;
   :dod "1966-09-18" ;
   :nam "ROELF KUIPER" .
 
-tomb:t00930.s1 a t:frond.n.01 .
+t00930:s1 a t:frond.n.01 .
 
-tomb:t00930.im1 a t:photo.n.01 ;
+t00930:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

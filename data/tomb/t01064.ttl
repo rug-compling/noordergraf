@@ -1,42 +1,43 @@
+@prefix t01064: <https://noordergraf.rug.nl/tomb/t01064#> .
 
 tomb:t01064 a t:tombstone.n.01 ;
-  :image tomb:t01064.im1 ;
+  :image t01064:im1 ;
   :site site:gr9367PAde_wilp ;
-  :ent tomb:t01064.p1 ,
-       tomb:t01064.p2 ;
+  :ent t01064:p1 ,
+       t01064:p2 ;
   :lan "NLD" ;
-  :sym tomb:t01064.s1 ,
-       tomb:t01064.s2 .
+  :sym t01064:s1 ,
+       t01064:s2 .
 
-tomb:t01064.c1 a t:town.n.01 ;
+t01064:c1 a t:town.n.01 ;
   :geo place:Drachten2756644 ;
   :place "DRACHTEN" .
 
-tomb:t01064.c2 a t:village.n.02 ;
+t01064:c2 a t:village.n.02 ;
   :geo place:Siegerswoude2747339 ;
   :place "SIEGERSWOUDE" .
 
-tomb:t01064.p1 a t:person.n.01 ;
+t01064:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1869-01-26" ;
   :dod "1945-05-10" ;
   :nam "WOLTER POSTMA" ;
-  :pob tomb:t01064.c1 ;
-  :pod tomb:t01064.c2 .
+  :pob t01064:c1 ;
+  :pod t01064:c2 .
 
-tomb:t01064.p2 a t:person.n.01 ;
+t01064:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1873-09-08" ;
   :dod "1962-01-03" ;
   :nam "JITSKE VAN DER WAL" ;
-  :pob tomb:t01064.c2 ;
-  :pod tomb:t01064.c2 .
+  :pob t01064:c2 ;
+  :pod t01064:c2 .
 
-tomb:t01064.s1 a t:branch.n.02 .
+t01064:s1 a t:branch.n.02 .
 
-tomb:t01064.s2 a t:branch.n.02 .
+t01064:s2 a t:branch.n.02 .
 
-tomb:t01064.im1 a t:photo.n.01 ;
+t01064:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

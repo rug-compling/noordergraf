@@ -1,52 +1,53 @@
+@prefix t00485: <https://noordergraf.rug.nl/tomb/t00485#> .
 
 tomb:t00485 a t:tombstone.n.01 ;
-  :image tomb:t00485.im1 ;
+  :image t00485:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00485.p1 ,
-       tomb:t00485.p2 ,
-       tomb:t00485.p3 ;
+  :ent t00485:p1 ,
+       t00485:p2 ,
+       t00485:p3 ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :sym tomb:t00485.s1 .
+  :sym t00485:s1 .
 
-tomb:t00485.c1 a t:city.n.01 ;
+t00485:c1 a t:city.n.01 ;
   :geo place:Leiden2751773 ;
   :place "LEIDEN" .
 
-tomb:t00485.c2 a t:city.n.01 ;
+t00485:c2 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00485.c3 a t:village.n.02 ;
+t00485:c3 a t:village.n.02 ;
   :geo place:Greonterp2755343 ;
   :place "GREONTERP" .
 
-tomb:t00485.p1 a t:person.n.01 ;
+t00485:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-12-06" ;
   :dod "1906-06-25" ;
   :nam "ADRIANUS WILLEM NICOLAAS HOFSTEDE" ;
-  :pob tomb:t00485.c1 ;
-  :pod tomb:t00485.c2 .
+  :pob t00485:c1 ;
+  :pod t00485:c2 .
 
-tomb:t00485.p2 a t:person.n.01 ;
+t00485:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1859-09-27" ;
   :dod "1914-05-12" ;
   :nam "CATHARINA FLAPPER" ;
-  :pob tomb:t00485.c3 ;
-  :pod tomb:t00485.c2 ;
-  :rol tomb:t00485.r1 .
+  :pob t00485:c3 ;
+  :pod t00485:c2 ;
+  :rol t00485:r1 .
 
-tomb:t00485.p3 a t:person.n.01 ;
+t00485:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "F.B. HOFSTEDE" .
 
-tomb:t00485.r1 a t:widow.n.01 ;
-  :tgt tomb:t00485.p3 .
+t00485:r1 a t:widow.n.01 ;
+  :tgt t00485:p3 .
 
-tomb:t00485.s1 a t:cross.n.03 .
+t00485:s1 a t:cross.n.03 .
 
-tomb:t00485.im1 a t:photo.n.01 ;
+t00485:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

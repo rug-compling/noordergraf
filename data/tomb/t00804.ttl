@@ -1,32 +1,33 @@
+@prefix t00804: <https://noordergraf.rug.nl/tomb/t00804#> .
 
 tomb:t00804 a t:tombstone.n.01 ;
-  :image tomb:t00804.im1 ;
+  :image t00804:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00804.p1 ,
-       tomb:t00804.p2 ;
+  :ent t00804:p1 ,
+       t00804:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00804.s1 .
+  :sym t00804:s1 .
 
-tomb:t00804.p1 a t:person.n.01 ;
+t00804:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-09-09" ;
   :dod "1943-07-07" ;
   :nam "RIENO MOEDT" ;
-  :rol tomb:t00804.r1 .
+  :rol t00804:r1 .
 
-tomb:t00804.p2 a t:person.n.01 ;
+t00804:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1889-09-23" ;
   :dod "1945-08-06" ;
   :nam "BERENDJE DE WITT" .
 
-tomb:t00804.r1 a t:spouse.n.01 ;
+t00804:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00804.p2 .
+  :tgt t00804:p2 .
 
-tomb:t00804.s1 a t:frond.n.01 .
+t00804:s1 a t:frond.n.01 .
 
-tomb:t00804.im1 a t:photo.n.01 ;
+t00804:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

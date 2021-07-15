@@ -1,40 +1,41 @@
+@prefix t00953: <https://noordergraf.rug.nl/tomb/t00953#> .
 
 tomb:t00953 a t:tombstone.n.01 ;
-  :image tomb:t00953.im1 ;
+  :image t00953:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00953.g1 ,
-       tomb:t00953.p1 ,
-       tomb:t00953.p2 ,
-       tomb:t00953.p3 ;
+  :ent t00953:g1 ,
+       t00953:p1 ,
+       t00953:p2 ,
+       t00953:p3 ;
   :lan "NLD" .
 
-tomb:t00953.c1 a t:village.n.02 ;
+t00953:c1 a t:village.n.02 ;
   :geo place:Noordlaren2749857 ;
   :place "NOORDLAREN" .
 
-tomb:t00953.g1 a t:group.n.01 ;
-  :mem tomb:t00953.p2 ,
-       tomb:t00953.p3 .
+t00953:g1 a t:group.n.01 ;
+  :mem t00953:p2 ,
+       t00953:p3 .
 
-tomb:t00953.p1 a t:person.n.01 ;
+t00953:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1896-01-24" ;
   :dod "1896-02-21" ;
   :nam "REINA JANTINA" ;
-  :pob tomb:t00953.c1 ;
-  :pod tomb:t00953.c1 ;
-  :rol tomb:t00953.r1 .
+  :pob t00953:c1 ;
+  :pod t00953:c1 ;
+  :rol t00953:r1 .
 
-tomb:t00953.p2 a t:person.n.01 ;
+t00953:p2 a t:person.n.01 ;
   :nam "J. DE LANGE" .
 
-tomb:t00953.p3 a t:person.n.01 ;
+t00953:p3 a t:person.n.01 ;
   :nam "M. HOMMES" .
 
-tomb:t00953.r1 a t:daughter.n.01 ;
-  :tgt tomb:t00953.g1 .
+t00953:r1 a t:daughter.n.01 ;
+  :tgt t00953:g1 .
 
-tomb:t00953.im1 a t:photo.n.01 ;
+t00953:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

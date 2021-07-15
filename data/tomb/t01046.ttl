@@ -1,54 +1,55 @@
+@prefix t01046: <https://noordergraf.rug.nl/tomb/t01046#> .
 
 tomb:t01046 a t:tombstone.n.01 ;
-  :image tomb:t01046.im1 ;
+  :image t01046:im1 ;
   :site site:gr9367PAde_wilp ;
-  :ent tomb:t01046.p1 ,
-       tomb:t01046.p2 ,
-       tomb:t01046.p3 ,
-       tomb:t01046.p4 ;
+  :ent t01046:p1 ,
+       t01046:p2 ,
+       t01046:p3 ,
+       t01046:p4 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t01046.s1 .
+  :sym t01046:s1 .
 
-tomb:t01046.g1 a t:group.n.01 ;
-  :mem tomb:t01046.p1 ,
-       tomb:t01046.p3 .
+t01046:g1 a t:group.n.01 ;
+  :mem t01046:p1 ,
+       t01046:p3 .
 
-tomb:t01046.p1 a t:person.n.01 ;
+t01046:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1873-09-28" ;
   :dod "1955-03-22" ;
   :nam "TRIENTJE DE HAAN" ;
-  :rol tomb:t01046.r1 ,
-       tomb:t01046.r2 .
+  :rol t01046:r1 ,
+       t01046:r2 .
 
-tomb:t01046.p2 a t:person.n.01 ;
+t01046:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "S. HUIZINGA" .
 
-tomb:t01046.p3 a t:person.n.01 ;
+t01046:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "W. NIJHOF" .
 
-tomb:t01046.p4 a t:person.n.01 ;
+t01046:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1902-05-23" ;
   :dod "1903-06-22" ;
   :nam "MARTJE NIJHOF" ;
-  :rol tomb:t01046.r3 .
+  :rol t01046:r3 .
 
-tomb:t01046.r1 a t:widow.n.01 ;
-  :tgt tomb:t01046.p2 .
+t01046:r1 a t:widow.n.01 ;
+  :tgt t01046:p2 .
 
-tomb:t01046.r2 a t:widow.n.01 ;
-  :bef tomb:t01046.r1 ;
-  :tgt tomb:t01046.p3 .
+t01046:r2 a t:widow.n.01 ;
+  :bef t01046:r1 ;
+  :tgt t01046:p3 .
 
-tomb:t01046.r3 a t:daughter.n.01 ;
-  :tgt tomb:t01046.g1 .
+t01046:r3 a t:daughter.n.01 ;
+  :tgt t01046:g1 .
 
-tomb:t01046.s1 a t:oak.n.01 .
+t01046:s1 a t:oak.n.01 .
 
-tomb:t01046.im1 a t:photo.n.01 ;
+t01046:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,50 +1,51 @@
+@prefix t00018: <https://noordergraf.rug.nl/tomb/t00018#> .
 
 tomb:t00018 a t:tombstone.n.01 ;
-  :image tomb:t00018.im1 ;
+  :image t00018:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00018.p1 ,
-       tomb:t00018.p2 ;
-  :sym tomb:t00018.s1 .
+  :ent t00018:p1 ,
+       t00018:p2 ;
+  :sym t00018:s1 .
 
-tomb:t00018.c1 a t:city.n.01 ;
+t00018:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00018.c2 a t:village.n.02 ;
+t00018:c2 a t:village.n.02 ;
   :geo place:Middelbert2750902 ;
   :place "MIDDELBERT" .
 
-tomb:t00018.c3 a t:village.n.02 ;
+t00018:c3 a t:village.n.02 ;
   :geo place:Middelstum2750868 ;
   :place "MIDDELSTUM" .
 
-tomb:t00018.c4 a t:town.n.01 ;
+t00018:c4 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00018.p1 a t:person.n.01 ;
+t00018:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1873-03-08" ;
   :dod "1934-01-05" ;
   :nam "TRIENTJE HUISMAN" ;
-  :pob tomb:t00018.c2 ;
-  :pod tomb:t00018.c1 ;
-  :rol tomb:t00018.r1 .
+  :pob t00018:c2 ;
+  :pod t00018:c1 ;
+  :rol t00018:r1 .
 
-tomb:t00018.p2 a t:person.n.01 ;
+t00018:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1873-06-20" ;
   :dod "1950-01-18" ;
   :nam "KRIENO HUIZINGA" ;
-  :pob tomb:t00018.c3 ;
-  :pod tomb:t00018.c4 .
+  :pob t00018:c3 ;
+  :pod t00018:c4 .
 
-tomb:t00018.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00018.p2 .
+t00018:r1 a t:spouse.n.01 ;
+  :tgt t00018:p2 .
 
-tomb:t00018.s1 a t:frond.n.01 .
+t00018:s1 a t:frond.n.01 .
 
-tomb:t00018.im1 a t:photo.n.01 ;
+t00018:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

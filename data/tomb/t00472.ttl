@@ -1,60 +1,61 @@
+@prefix t00472: <https://noordergraf.rug.nl/tomb/t00472#> .
 
 tomb:t00472 a t:tombstone.n.01 ;
-  :image tomb:t00472.im1 ;
+  :image t00472:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00472.p1 ,
-       tomb:t00472.p2 ,
-       tomb:t00472.p3 ,
-       tomb:t00472.p4 ;
-  :sym tomb:t00472.s1 .
+  :ent t00472:p1 ,
+       t00472:p2 ,
+       t00472:p3 ,
+       t00472:p4 ;
+  :sym t00472:s1 .
 
-tomb:t00472.c1 a t:city.n.01 ;
+t00472:c1 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00472.p1 a t:person.n.01 ;
+t00472:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1909-03-24" ;
   :dod "1947-01-10" ;
   :nam "AGATHA SCHOFFELMEER" ;
-  :pob tomb:t00472.c1 ;
-  :pod tomb:t00472.c1 ;
-  :rol tomb:t00472.r1 ,
-       tomb:t00472.r2 ,
-       tomb:t00472.r3 .
+  :pob t00472:c1 ;
+  :pod t00472:c1 ;
+  :rol t00472:r1 ,
+       t00472:r2 ,
+       t00472:r3 .
 
-tomb:t00472.p2 a t:person.n.01 ;
+t00472:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANTONIUS PETERS" .
 
-tomb:t00472.p3 a t:person.n.01 ;
+t00472:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1885-02-19" ;
   :dod "1952-04-16" ;
   :nam "ANNA SCHOFFELMEER-DE JONG" .
 
-tomb:t00472.p4 a t:person.n.01 ;
+t00472:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "C. SCHOFFELMEER" .
 
-tomb:t00472.r1 a t:wife.n.01 ;
+t00472:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00472.p2 .
+  :tgt t00472:p2 .
 
-tomb:t00472.r2 a t:mother.n.01 .
+t00472:r2 a t:mother.n.01 .
 
-tomb:t00472.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00472.p2 .
+t00472:r3 a t:spouse.n.01 ;
+  :tgt t00472:p2 .
 
-tomb:t00472.s1 a t:composite.n.01 ;
-  :prt tomb:t00472.s2 ,
-       tomb:t00472.s3 .
+t00472:s1 a t:composite.n.01 ;
+  :prt t00472:s2 ,
+       t00472:s3 .
 
-tomb:t00472.s2 a t:cross.n.03 .
+t00472:s2 a t:cross.n.03 .
 
-tomb:t00472.s3 a t:chrismon.n.01 .
+t00472:s3 a t:chrismon.n.01 .
 
-tomb:t00472.im1 a t:photo.n.01 ;
+t00472:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

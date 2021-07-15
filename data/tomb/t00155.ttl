@@ -1,60 +1,61 @@
+@prefix t00155: <https://noordergraf.rug.nl/tomb/t00155#> .
 
 tomb:t00155 a t:tombstone.n.01 ;
-  :image tomb:t00155.im1 ;
+  :image t00155:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00155.p1 ,
-       tomb:t00155.p2 ,
-       tomb:t00155.p3 ,
-       tomb:t00155.p4 ;
-  :sym tomb:t00155.s1 .
+  :ent t00155:p1 ,
+       t00155:p2 ,
+       t00155:p3 ,
+       t00155:p4 ;
+  :sym t00155:s1 .
 
-tomb:t00155.g1 a t:group.n.01 .
+t00155:g1 a t:group.n.01 .
 
-tomb:t00155.p1 a t:person.n.01 ;
+t00155:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1859-08-22" ;
   :dod "1941-04-07" ;
   :nam "ROELINA ONSTWEDDER" ;
-  :rol tomb:t00155.r1 ,
-       tomb:t00155.r2 .
+  :rol t00155:r1 ,
+       t00155:r2 .
 
-tomb:t00155.p2 a t:person.n.01 ;
+t00155:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ALE KOENES" .
 
-tomb:t00155.p3 a t:person.n.01 ;
+t00155:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1878-12-27" ;
   :dod "1955-02-11" ;
   :nam "BENDERT KLOOSTERMAN" ;
-  :rol tomb:t00155.r3 ,
-       tomb:t00155.r4 ,
-       tomb:t00155.r5 .
+  :rol t00155:r3 ,
+       t00155:r4 ,
+       t00155:r5 .
 
-tomb:t00155.p4 a t:person.n.01 ;
+t00155:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. KOENES" .
 
-tomb:t00155.r1 a t:mother.n.01 ;
+t00155:r1 a t:mother.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00155.g1 .
+  :tgt t00155:g1 .
 
-tomb:t00155.r2 a t:widow.n.01 ;
-  :tgt tomb:t00155.p2 .
+t00155:r2 a t:widow.n.01 ;
+  :tgt t00155:p2 .
 
-tomb:t00155.r3 a t:father.n.01 ;
-  :tgt tomb:t00155.g1 .
+t00155:r3 a t:father.n.01 ;
+  :tgt t00155:g1 .
 
-tomb:t00155.r4 a t:husband.n.01 ;
+t00155:r4 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00155.p4 .
+  :tgt t00155:p4 .
 
-tomb:t00155.r5 a t:spouse.n.01 ;
-  :tgt tomb:t00155.p4 .
+t00155:r5 a t:spouse.n.01 ;
+  :tgt t00155:p4 .
 
-tomb:t00155.s1 a t:frond.n.01 .
+t00155:s1 a t:frond.n.01 .
 
-tomb:t00155.im1 a t:photo.n.01 ;
+t00155:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

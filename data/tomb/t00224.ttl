@@ -1,34 +1,35 @@
+@prefix t00224: <https://noordergraf.rug.nl/tomb/t00224#> .
 
 tomb:t00224 a t:tombstone.n.01 ;
-  :image tomb:t00224.im1 ;
+  :image t00224:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00224.p1 ,
-       tomb:t00224.p2 ;
-  :sym tomb:t00224.s1 .
+  :ent t00224:p1 ,
+       t00224:p2 ;
+  :sym t00224:s1 .
 
-tomb:t00224.p1 a t:person.n.01 ;
+t00224:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1840-01-31" ;
   :dod "1879-10-01" ;
   :nam "ETJE JANS EMMELKAMP" ;
-  :rol tomb:t00224.r1 .
+  :rol t00224:r1 .
 
-tomb:t00224.p2 a t:person.n.01 ;
+t00224:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "KLAAS KRUIJER" .
 
-tomb:t00224.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00224.p2 .
+t00224:r1 a t:spouse.n.01 ;
+  :tgt t00224:p2 .
 
-tomb:t00224.s1 a t:composite.n.01 ;
-  :prt tomb:t00224.s2 ,
-       tomb:t00224.s3 .
+t00224:s1 a t:composite.n.01 ;
+  :prt t00224:s2 ,
+       t00224:s3 .
 
-tomb:t00224.s2 a t:butterfly.n.01 .
+t00224:s2 a t:butterfly.n.01 .
 
-tomb:t00224.s3 a t:flower.n.01 .
+t00224:s3 a t:flower.n.01 .
 
-tomb:t00224.im1 a t:photo.n.01 ;
+t00224:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

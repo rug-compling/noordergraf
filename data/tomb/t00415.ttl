@@ -1,48 +1,49 @@
+@prefix t00415: <https://noordergraf.rug.nl/tomb/t00415#> .
 
 tomb:t00415 a t:tombstone.n.01 ;
-  :image tomb:t00415.im1 ;
+  :image t00415:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00415.p1 ,
-       tomb:t00415.p2 ;
+  :ent t00415:p1 ,
+       t00415:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym tomb:t00415.s1 .
+  :sym t00415:s1 .
 
-tomb:t00415.c1 a t:village.n.02 ;
+t00415:c1 a t:village.n.02 ;
   :geo place:Tynaarlo2746038 ;
   :place "TYNAARLO" .
 
-tomb:t00415.c2 a t:village.n.02 ;
+t00415:c2 a t:village.n.02 ;
   :geo place:Yde2744130 ;
   :place "YDE" .
 
-tomb:t00415.c3 a t:town.n.01 ;
+t00415:c3 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00415.p1 a t:person.n.01 ;
+t00415:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1880-12-10" ;
   :dod "1952-11-12" ;
   :nam "GEESSIEN ROSSING" ;
-  :pob tomb:t00415.c1 ;
-  :pod tomb:t00415.c1 ;
-  :rol tomb:t00415.r1 .
+  :pob t00415:c1 ;
+  :pod t00415:c1 ;
+  :rol t00415:r1 .
 
-tomb:t00415.p2 a t:person.n.01 ;
+t00415:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1880-03-31" ;
   :dod "1968-06-11" ;
   :nam "HENDRIK KOOPS" ;
-  :pob tomb:t00415.c2 ;
-  :pod tomb:t00415.c3 .
+  :pob t00415:c2 ;
+  :pod t00415:c3 .
 
-tomb:t00415.r1 a t:spouse.n.01 ;
+t00415:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00415.p2 .
+  :tgt t00415:p2 .
 
-tomb:t00415.s1 a t:frond.n.01 .
+t00415:s1 a t:frond.n.01 .
 
-tomb:t00415.im1 a t:photo.n.01 ;
+t00415:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

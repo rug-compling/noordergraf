@@ -1,23 +1,24 @@
+@prefix t01128: <https://noordergraf.rug.nl/tomb/t01128#> .
 
 tomb:t01128 a t:tombstone.n.01 ;
-  :ent tomb:t01128.p1 ;
+  :ent t01128:p1 ;
   :quo "DIEP BETREURD DOOR HAAR ECHTGENOOT MET VIER KINDEREN, TWEE ZIJN HAAR IN DE EEUWIGHEID VOORGEGAAN"@nld .
 
-tomb:t01128.p1 a t:person.n.01 ;
+t01128:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1812-04-08" ;
   :dod "1877-03-24" ;
   :nam "LUTGERDINA W. HOFSTEDE" ;
-  :rol tomb:t01128.r1 ,
-       tomb:t01128.r2 .
+  :rol t01128:r1 ,
+       t01128:r2 .
 
-tomb:t01128.p2 a t:person.n.01 ;
+t01128:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "E.J. VAN DER MOLEN" .
 
-tomb:t01128.r1 a t:spouse.n.01 ;
+t01128:r1 a t:spouse.n.01 ;
   :beg "09-09-1833" ;
-  :tgt tomb:t01128.p2 .
+  :tgt t01128:p2 .
 
-tomb:t01128.r2 a t:mother.n.01 .
+t01128:r2 a t:mother.n.01 .
 

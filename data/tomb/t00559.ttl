@@ -1,28 +1,29 @@
+@prefix t00559: <https://noordergraf.rug.nl/tomb/t00559#> .
 
 tomb:t00559 a t:tombstone.n.01 ;
-  :image tomb:t00559.im1 ;
+  :image t00559:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00559.p1 ,
-       tomb:t00559.p2 ;
+  :ent t00559:p1 ,
+       t00559:p2 ;
   :lan "NLD" .
 
-tomb:t00559.p1 a t:person.n.01 ;
+t00559:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1846-01-12" ;
   :dod "1920-04-13" ;
   :nam "MARCHINA LUCIA ENGELSMAN" ;
-  :rol tomb:t00559.r1 .
+  :rol t00559:r1 .
 
-tomb:t00559.p2 a t:person.n.01 ;
+t00559:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1844-05-26" ;
   :dod "1929-09-26" ;
   :nam "ROELF BOSSCHER" .
 
-tomb:t00559.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00559.p2 .
+t00559:r1 a t:spouse.n.01 ;
+  :tgt t00559:p2 .
 
-tomb:t00559.im1 a t:photo.n.01 ;
+t00559:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

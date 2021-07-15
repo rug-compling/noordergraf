@@ -1,47 +1,48 @@
+@prefix t00646: <https://noordergraf.rug.nl/tomb/t00646#> .
 
 tomb:t00646 a t:tombstone.n.01 ;
-  :image tomb:t00646.im1 ;
+  :image t00646:im1 ;
   :site site:gr9723EJgroningen ;
-  :ent tomb:t00646.g1 ,
-       tomb:t00646.p1 ,
-       tomb:t00646.p2 ,
-       tomb:t00646.p3 ;
+  :ent t00646:g1 ,
+       t00646:p1 ,
+       t00646:p2 ,
+       t00646:p3 ;
   :lan "NLD" .
 
-tomb:t00646.c1 a t:village.n.02 ;
+t00646:c1 a t:village.n.02 ;
   :geo place:Harkstede2754819 ;
   :place "HARKSTEDE" .
 
-tomb:t00646.c2 a t:village.n.02 ;
+t00646:c2 a t:village.n.02 ;
   :geo place:Engelbert2756097 ;
   :place "ENGELBERT" .
 
-tomb:t00646.g1 a t:group.n.01 ;
-  :mem tomb:t00646.p2 ,
-       tomb:t00646.p3 .
+t00646:g1 a t:group.n.01 ;
+  :mem t00646:p2 ,
+       t00646:p3 .
 
-tomb:t00646.p1 a t:person.n.01 ;
+t00646:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1898-06-21" ;
   :dod "1919-03-10" ;
   :nam "BEREND ZONDERMAN" ;
-  :pob tomb:t00646.c1 ;
-  :pod tomb:t00646.c2 ;
-  :rol tomb:t00646.r3 .
+  :pob t00646:c1 ;
+  :pod t00646:c2 ;
+  :rol t00646:r3 .
 
-tomb:t00646.p2 a t:person.n.01 ;
+t00646:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "HENDRIK ZONDERMAN" .
 
-tomb:t00646.p3 a t:person.n.01 ;
+t00646:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "JANTJE KNOLLEMA" .
 
-tomb:t00646.r3 a t:son.n.01 ;
+t00646:r3 a t:son.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00646.g1 .
+  :tgt t00646:g1 .
 
-tomb:t00646.im1 a t:photo.n.01 ;
+t00646:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

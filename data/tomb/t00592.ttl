@@ -1,23 +1,24 @@
+@prefix t00592: <https://noordergraf.rug.nl/tomb/t00592#> .
 
 tomb:t00592 a t:tombstone.n.01 ;
-  :image tomb:t00592.im1 ;
+  :image t00592:im1 ;
   :site site:gr9951TNwinsum ;
-  :ent tomb:t00592.p1 ;
+  :ent t00592:p1 ;
   :quo "ADIEU MON PÈRE, OPA"@fra ;
-  :sym tomb:t00592.s1 ,
-       tomb:t00592.s2 .
+  :sym t00592:s1 ,
+       t00592:s2 .
 
-tomb:t00592.p1 a t:person.n.01 ;
+t00592:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1934-07-11" ;
   :dod "2001-02-06" ;
   :nam "KORNELIS SIEGERS" .
 
-tomb:t00592.s1 a t:mountain.n.01 .
+t00592:s1 a t:mountain.n.01 .
 
-tomb:t00592.s2 a t:staff.n.06 .
+t00592:s2 a t:staff.n.06 .
 
-tomb:t00592.im1 a t:photo.n.01 ;
+t00592:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

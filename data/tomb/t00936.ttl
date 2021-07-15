@@ -1,40 +1,41 @@
+@prefix t00936: <https://noordergraf.rug.nl/tomb/t00936#> .
 
 tomb:t00936 a t:tombstone.n.01 ;
-  :image tomb:t00936.im1 ;
+  :image t00936:im1 ;
   :site site:gr9741GHgroningen ;
-  :ent tomb:t00936.p1 ,
-       tomb:t00936.p2 ,
-       tomb:t00936.p3 ;
+  :ent t00936:p1 ,
+       t00936:p2 ,
+       t00936:p3 ;
   :quo "DE HEER IS RECHT \\ IN AL ZIJN WEG EN WERK"@nld .
 
-tomb:t00936.o1 a t:mercenary.n.01 ;
+t00936:o1 a t:mercenary.n.01 ;
   :hco "19300" ;
-  :org tomb:t00936.o2 ;
+  :org t00936:o2 ;
   :ttl "SERGEANT-MAJOOR" .
 
-tomb:t00936.o2 a t:organization.n.01 ;
+t00936:o2 a t:organization.n.01 ;
   :nam "LEGER DES HEILS" .
 
-tomb:t00936.p1 a t:person.n.01 ;
+t00936:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1902-03-03" ;
   :dod "1955-07-31" ;
   :nam "LAMBERTHA C. BOS" ;
-  :occ tomb:t00936.o1 .
+  :occ t00936:o1 .
 
-tomb:t00936.p2 a t:person.n.01 ;
+t00936:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1898-10-04" ;
   :dod "1963-12-13" ;
   :nam "GEERTJE DIJKSTERHUIS-BOS" .
 
-tomb:t00936.p3 a t:person.n.01 ;
+t00936:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1897-07-28" ;
   :dod "1964-09-09" ;
   :nam "WIEBRAND DIJKSTERHUIS" .
 
-tomb:t00936.im1 a t:photo.n.01 ;
+t00936:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,95 +1,96 @@
+@prefix t00850: <https://noordergraf.rug.nl/tomb/t00850#> .
 
 tomb:t00850 a t:tombstone.n.01 ;
-  :image tomb:t00850.im1 ;
+  :image t00850:im1 ;
   :site site:fr8899AWoost_vlieland ;
-  :ent tomb:t00850.p1 ,
-       tomb:t00850.p2 ,
-       tomb:t00850.p3 ;
+  :ent t00850:p1 ,
+       t00850:p2 ,
+       t00850:p3 ;
   :quo "DAT ZIJ RUSTEN IN VREDE"@nld ;
-  :ref tomb:t00850.v1 ;
-  :sym tomb:t00850.s1 ,
-       tomb:t00850.s2 ,
-       tomb:t00850.s3 .
+  :ref t00850:v1 ;
+  :sym t00850:s1 ,
+       t00850:s2 ,
+       t00850:s3 .
 
-tomb:t00850.b1 a t:First_Epistle_to_the_Corinthians.n.01 ;
-  :prt tomb:t00850.c4 .
+t00850:b1 a t:First_Epistle_to_the_Corinthians.n.01 ;
+  :prt t00850:c4 .
 
-tomb:t00850.c1 a t:island.n.01 ;
+t00850:c1 a t:island.n.01 ;
   :geo place:Terschelling2746414 ;
   :place "TERSCHELLING" .
 
-tomb:t00850.c2 a t:city.n.01 ;
+t00850:c2 a t:city.n.01 ;
   :geo place:Harlingen2754817 ;
   :place "HARLINGEN" .
 
-tomb:t00850.c3 a t:island.n.01 ;
+t00850:c3 a t:island.n.01 ;
   :geo place:Vlieland2745420 ;
   :place "VLIELAND" .
 
-tomb:t00850.c4 a t:chapter.n.01 ;
+t00850:c4 a t:chapter.n.01 ;
   :ord 13 ;
-  :prt tomb:t00850.v1 .
+  :prt t00850:v1 .
 
-tomb:t00850.p1 a t:person.n.01 ;
+t00850:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :att "INNIG GELIEFDE" ;
   :dob "1862-03-08" ;
   :dod "1925-08-11" ;
   :nam "MARTJE BOER" ;
-  :pob tomb:t00850.c1 ;
-  :pod tomb:t00850.c2 ;
-  :rol tomb:t00850.r1 ,
-       tomb:t00850.r2 ,
-       tomb:t00850.r3 .
+  :pob t00850:c1 ;
+  :pod t00850:c2 ;
+  :rol t00850:r1 ,
+       t00850:r2 ,
+       t00850:r3 .
 
-tomb:t00850.p2 a t:person.n.01 ;
+t00850:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :att "GELIEFDE" ;
   :dob "1895-05-26" ;
   :dod "1908-03-17" ;
   :nam "MINA" ;
-  :pob tomb:t00850.c1 ;
-  :pod tomb:t00850.c3 ;
-  :rol tomb:t00850.r4 ,
-       tomb:t00850.r5 .
+  :pob t00850:c1 ;
+  :pod t00850:c3 ;
+  :rol t00850:r4 ,
+       t00850:r5 .
 
-tomb:t00850.p3 a t:person.n.01 ;
+t00850:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1852-06-15" ;
   :dod "1937-03-19" ;
   :nam "PIETER KOOIJMAN" ;
-  :pob tomb:t00850.c1 ;
-  :pod tomb:t00850.c3 ;
-  :rol tomb:t00850.r6 .
+  :pob t00850:c1 ;
+  :pod t00850:c3 ;
+  :rol t00850:r6 .
 
-tomb:t00850.r1 a t:wife.n.01 ;
-  :tgt tomb:t00850.p3 .
+t00850:r1 a t:wife.n.01 ;
+  :tgt t00850:p3 .
 
-tomb:t00850.r2 a t:mother.n.01 ;
-  :tgt tomb:t00850.p2 .
+t00850:r2 a t:mother.n.01 ;
+  :tgt t00850:p2 .
 
-tomb:t00850.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00850.p3 .
+t00850:r3 a t:spouse.n.01 ;
+  :tgt t00850:p3 .
 
-tomb:t00850.r4 a t:daughter.n.01 ;
-  :tgt tomb:t00850.p3 .
+t00850:r4 a t:daughter.n.01 ;
+  :tgt t00850:p3 .
 
-tomb:t00850.r5 a t:sister.n.01 .
+t00850:r5 a t:sister.n.01 .
 
-tomb:t00850.r6 a t:father.n.01 ;
+t00850:r6 a t:father.n.01 ;
   :att "BESTEN" ;
-  :tgt tomb:t00850.p2 .
+  :tgt t00850:p2 .
 
-tomb:t00850.s1 a t:cross.n.03 .
+t00850:s1 a t:cross.n.03 .
 
-tomb:t00850.s2 a t:heart.n.07 .
+t00850:s2 a t:heart.n.07 .
 
-tomb:t00850.s3 a t:anchor.n.01 .
+t00850:s3 a t:anchor.n.01 .
 
-tomb:t00850.v1 a t:verse.n.01 ;
+t00850:v1 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00850.im1 a t:photo.n.01 ;
+t00850:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

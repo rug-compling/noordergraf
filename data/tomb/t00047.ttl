@@ -1,33 +1,34 @@
+@prefix t00047: <https://noordergraf.rug.nl/tomb/t00047#> .
 
 tomb:t00047 a t:tombstone.n.01 ;
-  :image tomb:t00047.im1 ;
+  :image t00047:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00047.p1 ;
-  :sym tomb:t00047.s1 .
+  :ent t00047:p1 ;
+  :sym t00047:s1 .
 
-tomb:t00047.c1 a t:hamlet.n.03 ;
+t00047:c1 a t:hamlet.n.03 ;
   :geo place:LutkeSaaxum12253640 ;
   :place "LUTKE SAAXUM" .
 
-tomb:t00047.c2 a t:town.n.01 ;
+t00047:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00047.p1 a t:person.n.01 ;
+t00047:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1849-11-03" ;
   :dod "1926-04-21" ;
   :nam "PIETER ELLENS" ;
-  :pob tomb:t00047.c1 ;
-  :pod tomb:t00047.c2 ;
-  :rol tomb:t00047.r2 .
+  :pob t00047:c1 ;
+  :pod t00047:c2 ;
+  :rol t00047:r2 .
 
-tomb:t00047.r2 a t:husband.n.01 ;
-  :tgt tomb:t00047.p2 .
+t00047:r2 a t:husband.n.01 ;
+  :tgt t00047:p2 .
 
-tomb:t00047.s1 a t:frond.n.01 .
+t00047:s1 a t:frond.n.01 .
 
-tomb:t00047.im1 a t:photo.n.01 ;
+t00047:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,40 +1,41 @@
+@prefix t00300: <https://noordergraf.rug.nl/tomb/t00300#> .
 
 tomb:t00300 a t:tombstone.n.01 ;
-  :image tomb:t00300.im1 ;
+  :image t00300:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00300.p1 ,
-       tomb:t00300.p2 ,
-       tomb:t00300.p3 ;
-  :sym tomb:t00300.s1 .
+  :ent t00300:p1 ,
+       t00300:p2 ,
+       t00300:p3 ;
+  :sym t00300:s1 .
 
-tomb:t00300.c1 a t:town.n.01 ;
+t00300:c1 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00300.p1 a t:person.n.01 ;
+t00300:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1871-10-03" ;
   :dod "1937-02-23" ;
   :nam "ROELOFJE REMKEN" ;
-  :pob tomb:t00300.c1 ;
-  :pod tomb:t00300.c1 .
+  :pob t00300:c1 ;
+  :pod t00300:c1 .
 
-tomb:t00300.p2 a t:person.n.01 ;
+t00300:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1866-05-31" ;
   :dod "1948-02-21" ;
   :nam "JAN BORK" ;
-  :rol tomb:t00300.r1 .
+  :rol t00300:r1 .
 
-tomb:t00300.p3 a t:family.n.04 ;
+t00300:p3 a t:family.n.04 ;
   :nam "BORK" .
 
-tomb:t00300.r1 a t:father.n.01 ;
+t00300:r1 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00300.s1 a t:flower.n.01 .
+t00300:s1 a t:flower.n.01 .
 
-tomb:t00300.im1 a t:photo.n.01 ;
+t00300:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

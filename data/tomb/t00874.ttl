@@ -1,23 +1,24 @@
+@prefix t00874: <https://noordergraf.rug.nl/tomb/t00874#> .
 
 tomb:t00874 a t:tombstone.n.01 ;
-  :image tomb:t00874.im1 ;
+  :image t00874:im1 ;
   :site site:dr7844TCveenoord ;
-  :ent tomb:t00874.p1 ;
+  :ent t00874:p1 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t00874.s1 .
+  :sym t00874:s1 .
 
-tomb:t00874.a1 a t:weeping.a.02 .
+t00874:a1 a t:weeping.a.02 .
 
-tomb:t00874.p1 a t:person.n.01 ;
+t00874:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1886-10-09" ;
   :dod "1959-02-28" ;
   :nam "G. POSTUMA-DE VRIES" .
 
-tomb:t00874.s1 a t:willow.n.01 ;
-  :att tomb:t00874.a1 .
+t00874:s1 a t:willow.n.01 ;
+  :att t00874:a1 .
 
-tomb:t00874.im1 a t:photo.n.01 ;
+t00874:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

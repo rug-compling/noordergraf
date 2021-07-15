@@ -1,55 +1,56 @@
+@prefix t00782: <https://noordergraf.rug.nl/tomb/t00782#> .
 
 tomb:t00782 a t:tombstone.n.01 ;
-  :image tomb:t00782.im1 ;
+  :image t00782:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00782.p1 ,
-       tomb:t00782.p2 ;
+  :ent t00782:p1 ,
+       t00782:p2 ;
   :quo "RUST ZACHT LIEVE VADER"@nld ;
-  :sym tomb:t00782.s1 ,
-       tomb:t00782.s2 ,
-       tomb:t00782.s3 ,
-       tomb:t00782.s4 .
+  :sym t00782:s1 ,
+       t00782:s2 ,
+       t00782:s3 ,
+       t00782:s4 .
 
-tomb:t00782.a1 a t:weeping.a.02 .
+t00782:a1 a t:weeping.a.02 .
 
-tomb:t00782.c1 a t:hamlet.n.03 ;
+t00782:c1 a t:hamlet.n.03 ;
   :geo place:DeMaten2751097 ;
   :place "DE MATEN" .
 
-tomb:t00782.c2 a t:city.n.01 ;
+t00782:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00782.p1 a t:person.n.01 ;
+t00782:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1852-03-19" ;
   :dod "1930-04-26" ;
   :nam "HEIJE CHRISTIAANS" ;
-  :pob tomb:t00782.c1 ;
-  :pod tomb:t00782.c2 ;
-  :rol tomb:t00782.r1 ,
-       tomb:t00782.r2 .
+  :pob t00782:c1 ;
+  :pod t00782:c2 ;
+  :rol t00782:r1 ,
+       t00782:r2 .
 
-tomb:t00782.p2 a t:person.n.01 ;
+t00782:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "LAMMECHIEN STRATING" .
 
-tomb:t00782.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00782.p2 .
+t00782:r1 a t:spouse.n.01 ;
+  :tgt t00782:p2 .
 
-tomb:t00782.r2 a t:father.n.01 ;
+t00782:r2 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00782.s1 a t:willow.n.01 ;
-  :att tomb:t00782.a1 .
+t00782:s1 a t:willow.n.01 ;
+  :att t00782:a1 .
 
-tomb:t00782.s2 a t:scythe.n.01 .
+t00782:s2 a t:scythe.n.01 .
 
-tomb:t00782.s3 a t:frond.n.01 .
+t00782:s3 a t:frond.n.01 .
 
-tomb:t00782.s4 a t:frond.n.01 .
+t00782:s4 a t:frond.n.01 .
 
-tomb:t00782.im1 a t:photo.n.01 ;
+t00782:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

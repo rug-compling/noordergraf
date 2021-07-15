@@ -1,32 +1,33 @@
+@prefix t00065: <https://noordergraf.rug.nl/tomb/t00065#> .
 
 tomb:t00065 a t:tombstone.n.01 ;
-  :image tomb:t00065.im1 ;
+  :image t00065:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00065.p1 ,
-       tomb:t00065.p2 ;
-  :sym tomb:t00065.s1 .
+  :ent t00065:p1 ,
+       t00065:p2 ;
+  :sym t00065:s1 .
 
-tomb:t00065.p1 a t:person.n.01 ;
+t00065:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1881-11-29" ;
   :dod "1943-09-02" ;
   :nam "HARM LAMBECK" ;
-  :rol tomb:t00065.r1 ,
-       tomb:t00065.r2 .
+  :rol t00065:r1 ,
+       t00065:r2 .
 
-tomb:t00065.p2 a t:person.n.01 ;
+t00065:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "WILHELMINE JOHANNA SCHRECK" .
 
-tomb:t00065.r1 a t:husband.n.01 ;
+t00065:r1 a t:husband.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00065.p2 .
+  :tgt t00065:p2 .
 
-tomb:t00065.r2 a t:father.n.01 .
+t00065:r2 a t:father.n.01 .
 
-tomb:t00065.s1 a t:frond.n.01 .
+t00065:s1 a t:frond.n.01 .
 
-tomb:t00065.im1 a t:photo.n.01 ;
+t00065:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

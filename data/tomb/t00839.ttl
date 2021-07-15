@@ -1,38 +1,39 @@
+@prefix t00839: <https://noordergraf.rug.nl/tomb/t00839#> .
 
 tomb:t00839 a t:tombstone.n.01 ;
-  :image tomb:t00839.im1 ;
+  :image t00839:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00839.p1 ,
-       tomb:t00839.p2 ;
+  :ent t00839:p1 ,
+       t00839:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t00839.s1 .
+  :sym t00839:s1 .
 
-tomb:t00839.a1 a t:weeping.a.02 .
+t00839:a1 a t:weeping.a.02 .
 
-tomb:t00839.c1 a t:village.n.02 ;
+t00839:c1 a t:village.n.02 ;
   :geo place:Erm2756040 ;
   :place "ERM" .
 
-tomb:t00839.p1 a t:person.n.01 ;
+t00839:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-10-20" ;
   :dod "1926-02-24" ;
   :nam "K. ANNINGA" ;
-  :pob tomb:t00839.c1 ;
-  :pod tomb:t00839.c1 ;
-  :rol tomb:t00839.r1 .
+  :pob t00839:c1 ;
+  :pod t00839:c1 ;
+  :rol t00839:r1 .
 
-tomb:t00839.p2 a t:person.n.01 ;
+t00839:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "F. HABING" .
 
-tomb:t00839.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00839.p2 .
+t00839:r1 a t:spouse.n.01 ;
+  :tgt t00839:p2 .
 
-tomb:t00839.s1 a t:willow.n.01 ;
-  :att tomb:t00839.a1 .
+t00839:s1 a t:willow.n.01 ;
+  :att t00839:a1 .
 
-tomb:t00839.im1 a t:photo.n.01 ;
+t00839:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,72 +1,73 @@
+@prefix t01014: <https://noordergraf.rug.nl/tomb/t01014#> .
 
 tomb:t01014 a t:tombstone.n.01 ;
-  :image tomb:t01014.im1 ;
+  :image t01014:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t01014.g1 ,
-       tomb:t01014.g2 ,
-       tomb:t01014.p1 ,
-       tomb:t01014.p2 ,
-       tomb:t01014.p4 ;
+  :ent t01014:g1 ,
+       t01014:g2 ,
+       t01014:p1 ,
+       t01014:p2 ,
+       t01014:p4 ;
   :lan "NLD" ;
-  :sym tomb:t01014.s1 ,
-       tomb:t01014.s2 .
+  :sym t01014:s1 ,
+       t01014:s2 .
 
-tomb:t01014.c1 a t:village.n.02 ;
+t01014:c1 a t:village.n.02 ;
   :geo place:Garmerwolde2755728 ;
   :place "GARMERWOLDE" .
 
-tomb:t01014.c2 a t:village.n.02 ;
+t01014:c2 a t:village.n.02 ;
   :geo place:Noorddijk2749981 ;
   :place "NOORDDIJK" .
 
-tomb:t01014.g1 a t:group.n.01 ;
-  :mem tomb:t01014.p3 ;
+t01014:g1 a t:group.n.01 ;
+  :mem t01014:p3 ;
   :qua 4 .
 
-tomb:t01014.g2 a t:group.n.01 ;
-  :mem tomb:t01014.p5 ;
+t01014:g2 a t:group.n.01 ;
+  :mem t01014:p5 ;
   :qua 3 .
 
-tomb:t01014.p1 a t:person.n.01 ;
+t01014:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1816-06-12" ;
   :dod "1882-01-28" ;
   :nam "IMKE JANS NIEHOF" ;
-  :pob tomb:t01014.c1 ;
-  :pod tomb:t01014.c2 ;
-  :rol tomb:t01014.r1 .
+  :pob t01014:c1 ;
+  :pod t01014:c2 ;
+  :rol t01014:r1 .
 
-tomb:t01014.p2 a t:person.n.01 ;
+t01014:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "HEIKE GEERTS WIERENGA" .
 
-tomb:t01014.p3 a t:person.n.01 ;
-  :rol tomb:t01014.r2 .
+t01014:p3 a t:person.n.01 ;
+  :rol t01014:r2 .
 
-tomb:t01014.p4 a t:person.n.01 ;
+t01014:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
-  :rol tomb:t01014.r3 .
+  :rol t01014:r3 .
 
-tomb:t01014.p5 a t:person.n.01 ;
+t01014:p5 a t:person.n.01 ;
   :att "WIJLEN" ;
-  :rol tomb:t01014.r4 .
+  :rol t01014:r4 .
 
-tomb:t01014.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01014.p2 .
+t01014:r1 a t:spouse.n.01 ;
+  :tgt t01014:p2 .
 
-tomb:t01014.r2 a t:child.n.02 ;
-  :tgt tomb:t01014.p1 .
+t01014:r2 a t:child.n.02 ;
+  :tgt t01014:p1 .
 
-tomb:t01014.r3 a t:daughter-in-law.n.01 .
+t01014:r3 a t:daughter-in-law.n.01 .
 
-tomb:t01014.r4 a t:child.n.02 ;
-  :tgt tomb:t01014.p1 .
+t01014:r4 a t:child.n.02 ;
+  :tgt t01014:p1 .
 
-tomb:t01014.s1 a t:frond.n.01 .
+t01014:s1 a t:frond.n.01 .
 
-tomb:t01014.s2 a t:frond.n.01 .
+t01014:s2 a t:frond.n.01 .
 
-tomb:t01014.im1 a t:photo.n.01 ;
+t01014:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

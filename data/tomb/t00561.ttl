@@ -1,62 +1,63 @@
+@prefix t00561: <https://noordergraf.rug.nl/tomb/t00561#> .
 
 tomb:t00561 a t:tombstone.n.01 ;
-  :image tomb:t00561.im1 ;
+  :image t00561:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00561.p1 ,
-       tomb:t00561.p2 ,
-       tomb:t00561.p3 ;
+  :ent t00561:p1 ,
+       t00561:p2 ,
+       t00561:p3 ;
   :lan "NLD" .
 
-tomb:t00561.b1 a t:Epistle_to_the_Romans.n.04 ;
-  :prt tomb:t00561.c3 .
+t00561:b1 a t:Epistle_to_the_Romans.n.04 ;
+  :prt t00561:c3 .
 
-tomb:t00561.c1 a t:city.n.01 ;
+t00561:c1 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00561.c2 a t:city.n.01 ;
+t00561:c2 a t:city.n.01 ;
   :geo place:Schiedam2747596 ;
   :place "SCHIEDAM" .
 
-tomb:t00561.c3 a t:chapter.n.01 ;
+t00561:c3 a t:chapter.n.01 ;
   :ord 6 ;
-  :prt tomb:t00561.v1 .
+  :prt t00561:v1 .
 
-tomb:t00561.p1 a t:person.n.01 ;
+t00561:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1856-01-04" ;
   :dod "1933-01-30" ;
   :nam "DERK STUTVOET" ;
-  :pob tomb:t00561.c1 ;
-  :pod tomb:t00561.c2 ;
-  :ref tomb:t00561.v1 ;
-  :rol tomb:t00561.r1 ,
-       tomb:t00561.r2 .
+  :pob t00561:c1 ;
+  :pod t00561:c2 ;
+  :ref t00561:v1 ;
+  :rol t00561:r1 ,
+       t00561:r2 .
 
-tomb:t00561.p2 a t:person.n.01 ;
+t00561:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1858-12-01" ;
   :dod "1916-12-16" ;
   :nam "AALTJE LOOTS" ;
-  :pob tomb:t00561.c1 ;
-  :pod tomb:t00561.c1 ;
+  :pob t00561:c1 ;
+  :pod t00561:c1 ;
   :ref "PSALM 103:15-22" .
 
-tomb:t00561.p3 a t:person.n.01 ;
+t00561:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. HEUVING" .
 
-tomb:t00561.r1 a t:widower.n.01 ;
-  :tgt tomb:t00561.p2 .
+t00561:r1 a t:widower.n.01 ;
+  :tgt t00561:p2 .
 
-tomb:t00561.r2 a t:widower.n.01 ;
-  :aft tomb:t00561.r1 ;
-  :tgt tomb:t00561.p3 .
+t00561:r2 a t:widower.n.01 ;
+  :aft t00561:r1 ;
+  :tgt t00561:p3 .
 
-tomb:t00561.v1 a t:verse.n.01 ;
+t00561:v1 a t:verse.n.01 ;
   :ord 23 .
 
-tomb:t00561.im1 a t:photo.n.01 ;
+t00561:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

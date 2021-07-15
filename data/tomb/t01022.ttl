@@ -1,22 +1,23 @@
+@prefix t01022: <https://noordergraf.rug.nl/tomb/t01022#> .
 
 tomb:t01022 a t:tombstone.n.01 ;
-  :image tomb:t01022.im1 ;
+  :image t01022:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t01022.p1 ;
+  :ent t01022:p1 ;
   :lan "HEB" ,
        "NLD" ;
   :quo "SHALOM LE OLAM" ;
-  :sym tomb:t01022.s1 .
+  :sym t01022:s1 .
 
-tomb:t01022.p1 a t:person.n.01 ;
+t01022:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1917-07-15" ;
   :dod "1995-04-24" ;
   :nam "MAX GOSSCHALK" .
 
-tomb:t01022.s1 a t:star_of_david.n.01 .
+t01022:s1 a t:star_of_david.n.01 .
 
-tomb:t01022.im1 a t:photo.n.01 ;
+t01022:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

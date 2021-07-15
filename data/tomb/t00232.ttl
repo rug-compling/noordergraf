@@ -1,37 +1,38 @@
+@prefix t00232: <https://noordergraf.rug.nl/tomb/t00232#> .
 
 tomb:t00232 a t:tombstone.n.01 ;
-  :image tomb:t00232.im1 ;
+  :image t00232:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00232.p1 ,
-       tomb:t00232.p2 ;
-  :sym tomb:t00232.s1 .
+  :ent t00232:p1 ,
+       t00232:p2 ;
+  :sym t00232:s1 .
 
-tomb:t00232.a1 a t:winged.a.01 .
+t00232:a1 a t:winged.a.01 .
 
-tomb:t00232.c1 a t:hamlet.n.03 ;
+t00232:c1 a t:hamlet.n.03 ;
   :geo place:Euvelgunne2755982 ;
   :place "EUVELGUNNE" .
 
-tomb:t00232.p1 a t:person.n.01 ;
+t00232:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1851-08-26" ;
   :dod "1893-11-16" ;
   :nam "P.P. BOLHUIS" ;
-  :pob tomb:t00232.c1 ;
-  :pod tomb:t00232.c1 ;
-  :rol tomb:t00232.r1 .
+  :pob t00232:c1 ;
+  :pod t00232:c1 ;
+  :rol t00232:r1 .
 
-tomb:t00232.p2 a t:person.n.01 ;
+t00232:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "L.P. WIGBOLDUS" .
 
-tomb:t00232.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00232.p2 .
+t00232:r1 a t:spouse.n.01 ;
+  :tgt t00232:p2 .
 
-tomb:t00232.s1 a t:sandglass.n.01 ;
-  :att tomb:t00232.a1 .
+t00232:s1 a t:sandglass.n.01 ;
+  :att t00232:a1 .
 
-tomb:t00232.im1 a t:photo.n.01 ;
+t00232:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

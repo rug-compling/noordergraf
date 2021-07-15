@@ -1,41 +1,42 @@
+@prefix t00471: <https://noordergraf.rug.nl/tomb/t00471#> .
 
 tomb:t00471 a t:tombstone.n.01 ;
-  :image tomb:t00471.im1 ;
+  :image t00471:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00471.p1 ,
-       tomb:t00471.p2 ;
+  :ent t00471:p1 ,
+       t00471:p2 ;
   :quo "BID VOOR DE ZIEL"@nld ,
        "REQUIESCAT IN PACE"@lat ;
-  :sym tomb:t00471.s1 ,
-       tomb:t00471.s2 .
+  :sym t00471:s1 ,
+       t00471:s2 .
 
-tomb:t00471.p1 a t:person.n.01 ;
+t00471:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1882-07-01" ;
   :dod "1946-12-11" ;
   :nam "JOZEPH WEITENBERG" ;
-  :rol tomb:t00471.r1 .
+  :rol t00471:r1 .
 
-tomb:t00471.p2 a t:person.n.01 ;
+t00471:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-07-19" ;
   :dod "1971-07-28" ;
   :nam "JELTJE DIKMANS" .
 
-tomb:t00471.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00471.p2 .
+t00471:r1 a t:spouse.n.01 ;
+  :tgt t00471:p2 .
 
-tomb:t00471.s1 a t:cross.n.03 .
+t00471:s1 a t:cross.n.03 .
 
-tomb:t00471.s2 a t:composite.n.01 ;
-  :prt tomb:t00471.s3 ,
-       tomb:t00471.s4 .
+t00471:s2 a t:composite.n.01 ;
+  :prt t00471:s3 ,
+       t00471:s4 .
 
-tomb:t00471.s3 a t:frond.n.01 .
+t00471:s3 a t:frond.n.01 .
 
-tomb:t00471.s4 a t:frond.n.01 .
+t00471:s4 a t:frond.n.01 .
 
-tomb:t00471.im1 a t:photo.n.01 ;
+t00471:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

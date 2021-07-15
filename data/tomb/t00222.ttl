@@ -1,34 +1,35 @@
+@prefix t00222: <https://noordergraf.rug.nl/tomb/t00222#> .
 
 tomb:t00222 a t:tombstone.n.01 ;
-  :image tomb:t00222.im1 ;
+  :image t00222:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00222.p1 ,
-       tomb:t00222.p2 ;
-  :sym tomb:t00222.s1 .
+  :ent t00222:p1 ,
+       t00222:p2 ;
+  :sym t00222:s1 .
 
-tomb:t00222.c1 a t:hamlet.n.03 ;
+t00222:c1 a t:hamlet.n.03 ;
   :geo place:Euvelgunne2755982 ;
   :place "EUVELGUNNE" .
 
-tomb:t00222.p1 a t:person.n.01 ;
+t00222:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1845-03-19" ;
   :dod "1938-01-15" ;
   :nam "HINDRIK ELLES KONING" ;
-  :pob tomb:t00222.c1 ;
-  :pod tomb:t00222.c1 ;
-  :rol tomb:t00222.r1 .
+  :pob t00222:c1 ;
+  :pod t00222:c1 ;
+  :rol t00222:r1 .
 
-tomb:t00222.p2 a t:person.n.01 ;
+t00222:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "FREDERIKA WITKOP" .
 
-tomb:t00222.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00222.p2 .
+t00222:r1 a t:spouse.n.01 ;
+  :tgt t00222:p2 .
 
-tomb:t00222.s1 a t:horse.n.01 .
+t00222:s1 a t:horse.n.01 .
 
-tomb:t00222.im1 a t:photo.n.01 ;
+t00222:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

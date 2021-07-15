@@ -1,31 +1,32 @@
+@prefix t00247: <https://noordergraf.rug.nl/tomb/t00247#> .
 
 tomb:t00247 a t:tombstone.n.01 ;
-  :image tomb:t00247.im1 ;
+  :image t00247:im1 ;
   :site site:gr9751BBharen ;
-  :ent tomb:t00247.p1 ,
-       tomb:t00247.p2 .
+  :ent t00247:p1 ,
+       t00247:p2 .
 
-tomb:t00247.c1 a t:town.n.01 ;
+t00247:c1 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00247.p1 a t:person.n.01 ;
+t00247:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1858-09-09" ;
   :dod "1933-08-23" ;
   :nam "HENDRIKJE BAZUIN" ;
-  :pob tomb:t00247.c1 ;
-  :pod tomb:t00247.c1 .
+  :pob t00247:c1 ;
+  :pod t00247:c1 .
 
-tomb:t00247.p2 a t:person.n.01 ;
+t00247:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-10-25" ;
   :dod "1947-03-25" ;
   :nam "JAN BERENDS" ;
-  :pob tomb:t00247.c1 ;
-  :pod tomb:t00247.c1 .
+  :pob t00247:c1 ;
+  :pod t00247:c1 .
 
-tomb:t00247.im1 a t:photo.n.01 ;
+t00247:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

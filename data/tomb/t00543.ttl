@@ -1,29 +1,30 @@
+@prefix t00543: <https://noordergraf.rug.nl/tomb/t00543#> .
 
 tomb:t00543 a t:tombstone.n.01 ;
-  :image tomb:t00543.im1 ;
+  :image t00543:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00543.p1 ,
-       tomb:t00543.p2 ;
+  :ent t00543:p1 ,
+       t00543:p2 ;
   :lan "NLD" .
 
-tomb:t00543.p1 a t:person.n.01 ;
+t00543:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1809-09-03" ;
   :dod "1882-03-28" ;
   :nam "JAN A. MUNTENDAM" ;
   :sfx "PZ" .
 
-tomb:t00543.p2 a t:person.n.01 ;
+t00543:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1821-11-11" ;
   :dod "1874-07-28" ;
   :nam "MARTHA J. PUISTER" ;
-  :rol tomb:t00543.r1 .
+  :rol t00543:r1 .
 
-tomb:t00543.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00543.p1 .
+t00543:r1 a t:spouse.n.01 ;
+  :tgt t00543:p1 .
 
-tomb:t00543.im1 a t:photo.n.01 ;
+t00543:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

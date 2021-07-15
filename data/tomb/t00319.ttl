@@ -1,50 +1,51 @@
+@prefix t00319: <https://noordergraf.rug.nl/tomb/t00319#> .
 
 tomb:t00319 a t:tombstone.n.01 ;
-  :image tomb:t00319.im1 ;
+  :image t00319:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00319.p1 ,
-       tomb:t00319.p2 ,
-       tomb:t00319.p3 ;
-  :sym tomb:t00319.s1 .
+  :ent t00319:p1 ,
+       t00319:p2 ,
+       t00319:p3 ;
+  :sym t00319:s1 .
 
-tomb:t00319.p1 a t:person.n.01 ;
+t00319:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1911-06-05" ;
   :dod "1999-09-21" ;
   :nam "GRIET JANSEN-SLOMP" ;
-  :rol tomb:t00319.r1 ,
-       tomb:t00319.r2 ,
-       tomb:t00319.r3 ,
-       tomb:t00319.r4 .
+  :rol t00319:r1 ,
+       t00319:r2 ,
+       t00319:r3 ,
+       t00319:r4 .
 
-tomb:t00319.p2 a t:person.n.01 ;
+t00319:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "G. JANSEN" .
 
-tomb:t00319.p3 a t:person.n.01 ;
+t00319:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "G. RUNDERVOORT" .
 
-tomb:t00319.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00319.p2 .
+t00319:r1 a t:spouse.n.01 ;
+  :tgt t00319:p2 .
 
-tomb:t00319.r2 a t:spouse.n.01 ;
-  :bef tomb:t00319.r1 ;
-  :tgt tomb:t00319.p3 .
+t00319:r2 a t:spouse.n.01 ;
+  :bef t00319:r1 ;
+  :tgt t00319:p3 .
 
-tomb:t00319.r3 a t:mother.n.01 .
+t00319:r3 a t:mother.n.01 .
 
-tomb:t00319.r4 a t:grandmother.n.01 .
+t00319:r4 a t:grandmother.n.01 .
 
-tomb:t00319.s1 a t:composite.n.01 ;
-  :prt tomb:t00319.s2 ,
-       tomb:t00319.s3 .
+t00319:s1 a t:composite.n.01 ;
+  :prt t00319:s2 ,
+       t00319:s3 .
 
-tomb:t00319.s2 a t:frond.n.01 .
+t00319:s2 a t:frond.n.01 .
 
-tomb:t00319.s3 a t:ribbon.n.01 .
+t00319:s3 a t:ribbon.n.01 .
 
-tomb:t00319.im1 a t:photo.n.01 ;
+t00319:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

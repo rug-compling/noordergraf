@@ -1,47 +1,48 @@
+@prefix t00284: <https://noordergraf.rug.nl/tomb/t00284#> .
 
 tomb:t00284 a t:tombstone.n.01 ;
-  :image tomb:t00284.im1 ;
+  :image t00284:im1 ;
   :site site:gr9985SCoosternieland ;
-  :ent tomb:t00284.p1 ,
-       tomb:t00284.p2 .
+  :ent t00284:p1 ,
+       t00284:p2 .
 
-tomb:t00284.c1 a t:village.n.02 ;
+t00284:c1 a t:village.n.02 ;
   :geo place:Zijldijk2743893 ;
   :place "ZIJLDIJK" .
 
-tomb:t00284.c2 a t:village.n.02 ;
+t00284:c2 a t:village.n.02 ;
   :geo place:Uithuizen2745970 ;
   :place "UITHUIZEN" .
 
-tomb:t00284.c3 a t:village.n.02 ;
+t00284:c3 a t:village.n.02 ;
   :geo place:Oosternieland2749429 ;
   :place "OOSTERNIELAND" .
 
-tomb:t00284.p1 a t:person.n.01 ;
+t00284:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1874-01-24" ;
   :dod "1944-10-25" ;
   :nam "ANNA RIJPLOEG" ;
-  :pob tomb:t00284.c1 ;
-  :pod tomb:t00284.c2 ;
+  :pob t00284:c1 ;
+  :pod t00284:c2 ;
   :quo "ZALIG ZIJN ZIJ, DIE ONTSLAPEN VROMEN, VOOR ONS TE VROEG AAN DE AARD ONTNOMEN." ;
-  :rol tomb:t00284.r1 .
+  :rol t00284:r1 .
 
-tomb:t00284.p2 a t:person.n.01 ;
+t00284:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1872-03-07" ;
   :dod "1941-07-03" ;
   :nam "EPPE WIERENGA" ;
-  :pob tomb:t00284.c3 ;
-  :pod tomb:t00284.c3 ;
+  :pob t00284:c3 ;
+  :pod t00284:c3 ;
   :quo "ZIJN VERLANGEN WAS, DAT HIJ NAAR JEZUS GING" ;
-  :rol tomb:t00284.r2 .
+  :rol t00284:r2 .
 
-tomb:t00284.r1 a t:parent.n.01 .
+t00284:r1 a t:parent.n.01 .
 
-tomb:t00284.r2 a t:parent.n.01 .
+t00284:r2 a t:parent.n.01 .
 
-tomb:t00284.im1 a t:photo.n.01 ;
+t00284:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

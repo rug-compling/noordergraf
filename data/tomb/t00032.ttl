@@ -1,32 +1,33 @@
+@prefix t00032: <https://noordergraf.rug.nl/tomb/t00032#> .
 
 tomb:t00032 a t:tombstone.n.01 ;
-  :image tomb:t00032.im1 ;
+  :image t00032:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00032.p1 ;
-  :sym tomb:t00032.s1 .
+  :ent t00032:p1 ;
+  :sym t00032:s1 .
 
-tomb:t00032.a1 a t:weeping.a.02 .
+t00032:a1 a t:weeping.a.02 .
 
-tomb:t00032.c1 a t:village.n.02 ;
+t00032:c1 a t:village.n.02 ;
   :geo place:Noorddijk2749981 ;
   :place "NOORDDIJK" .
 
-tomb:t00032.c2 a t:town.n.01 ;
+t00032:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00032.p1 a t:person.n.01 ;
+t00032:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1919-02-10" ;
   :dod "1936-03-31" ;
   :nam "ADOLF EISSES" ;
-  :pob tomb:t00032.c1 ;
-  :pod tomb:t00032.c2 .
+  :pob t00032:c1 ;
+  :pod t00032:c2 .
 
-tomb:t00032.s1 a t:willow.n.01 ;
-  :att tomb:t00032.a1 .
+t00032:s1 a t:willow.n.01 ;
+  :att t00032:a1 .
 
-tomb:t00032.im1 a t:photo.n.01 ;
+t00032:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

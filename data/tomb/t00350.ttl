@@ -1,29 +1,30 @@
+@prefix t00350: <https://noordergraf.rug.nl/tomb/t00350#> .
 
 tomb:t00350 a t:tombstone.n.01 ;
-  :image tomb:t00350.im1 ;
+  :image t00350:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00350.p1 ,
-       tomb:t00350.p2 ;
+  :ent t00350:p1 ,
+       t00350:p2 ;
   :ref "PSALM 23:1 BERIJMD" .
 
-tomb:t00350.p1 a t:person.n.01 ;
+t00350:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1895-09-09" ;
   :dod "1967-11-04" ;
   :nam "JANSJE JANSSEN" ;
-  :rol tomb:t00350.r1 .
+  :rol t00350:r1 .
 
-tomb:t00350.p2 a t:person.n.01 ;
+t00350:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1895-05-27" ;
   :dod "1977-10-16" ;
   :nam "AREND SMIT" .
 
-tomb:t00350.r1 a t:spouse.n.01 ;
+t00350:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00350.p2 .
+  :tgt t00350:p2 .
 
-tomb:t00350.im1 a t:photo.n.01 ;
+t00350:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

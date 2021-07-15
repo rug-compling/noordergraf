@@ -1,52 +1,53 @@
+@prefix t00862: <https://noordergraf.rug.nl/tomb/t00862#> .
 
 tomb:t00862 a t:tombstone.n.01 ;
-  :image tomb:t00862.im1 ;
+  :image t00862:im1 ;
   :site site:dr7844TCveenoord ;
-  :ent tomb:t00862.p1 ,
-       tomb:t00862.p2 ;
+  :ent t00862:p1 ,
+       t00862:p2 ;
   :lan "NLD" .
 
-tomb:t00862.c1 a t:village.n.02 ;
+t00862:c1 a t:village.n.02 ;
   :geo place:Aalden2760142 ;
   :place "AALDEN" .
 
-tomb:t00862.c2 a t:village.n.02 ;
+t00862:c2 a t:village.n.02 ;
   :geo place:Veenoord2745753 ;
   :place "VEENOORD" .
 
-tomb:t00862.c3 a t:village.n.02 ;
+t00862:c3 a t:village.n.02 ;
   :geo place:Hijken2754092 ;
   :place "HIJKEN" .
 
-tomb:t00862.c4 a t:village.n.02 ;
+t00862:c4 a t:village.n.02 ;
   :geo place:NieuwAmsterdam2750375 ;
   :place "NIEUW-AMSTERDAM" .
 
-tomb:t00862.p1 a t:person.n.01 ;
+t00862:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1847-05-09" ;
   :dod "1926-07-10" ;
   :nam "WILLEM BONNEN" ;
-  :pob tomb:t00862.c1 ;
-  :pod tomb:t00862.c2 ;
-  :rol tomb:t00862.r1 .
+  :pob t00862:c1 ;
+  :pod t00862:c2 ;
+  :rol t00862:r1 .
 
-tomb:t00862.p2 a t:person.n.01 ;
+t00862:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1845-01-25" ;
   :dod "1926-11-01" ;
   :nam "EVERDINA BOS" ;
-  :pob tomb:t00862.c3 ;
-  :pod tomb:t00862.c4 ;
-  :rol tomb:t00862.r2 .
+  :pob t00862:c3 ;
+  :pod t00862:c4 ;
+  :rol t00862:r2 .
 
-tomb:t00862.r1 a t:parent.n.01 ;
-  :tgt tomb:t00862.p3 .
+t00862:r1 a t:parent.n.01 ;
+  :tgt t00862:p3 .
 
-tomb:t00862.r2 a t:parent.n.01 ;
-  :tgt tomb:t00862.p3 .
+t00862:r2 a t:parent.n.01 ;
+  :tgt t00862:p3 .
 
-tomb:t00862.im1 a t:photo.n.01 ;
+t00862:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

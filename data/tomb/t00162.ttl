@@ -1,43 +1,44 @@
+@prefix t00162: <https://noordergraf.rug.nl/tomb/t00162#> .
 
 tomb:t00162 a t:tombstone.n.01 ;
-  :image tomb:t00162.im1 ;
+  :image t00162:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00162.p1 ,
-       tomb:t00162.p2 ,
-       tomb:t00162.p3 ;
-  :sym tomb:t00162.s1 .
+  :ent t00162:p1 ,
+       t00162:p2 ,
+       t00162:p3 ;
+  :sym t00162:s1 .
 
-tomb:t00162.p1 a t:person.n.01 ;
+t00162:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1891-04-06" ;
   :dod "1929-10-19" ;
   :nam "JOHANNES JAGER" .
 
-tomb:t00162.p2 a t:person.n.01 ;
+t00162:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1882-02-27" ;
   :dod "1950-05-18" ;
   :nam "JAN JAGER" ;
-  :rol tomb:t00162.r1 .
+  :rol t00162:r1 .
 
-tomb:t00162.p3 a t:person.n.01 ;
+t00162:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1878-12-13" ;
   :dod "1951-02-20" ;
   :nam "ANTJE BULTJE" .
 
-tomb:t00162.r1 a t:husband.n.01 ;
-  :tgt tomb:t00162.p3 .
+t00162:r1 a t:husband.n.01 ;
+  :tgt t00162:p3 .
 
-tomb:t00162.s1 a t:composite.n.01 ;
-  :prt tomb:t00162.s2 ,
-       tomb:t00162.s3 .
+t00162:s1 a t:composite.n.01 ;
+  :prt t00162:s2 ,
+       t00162:s3 .
 
-tomb:t00162.s2 a t:frond.n.01 .
+t00162:s2 a t:frond.n.01 .
 
-tomb:t00162.s3 a t:ribbon.n.01 .
+t00162:s3 a t:ribbon.n.01 .
 
-tomb:t00162.im1 a t:photo.n.01 ;
+t00162:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

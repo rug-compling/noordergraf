@@ -1,27 +1,28 @@
+@prefix t00466: <https://noordergraf.rug.nl/tomb/t00466#> .
 
 tomb:t00466 a t:tombstone.n.01 ;
-  :image tomb:t00466.im1 ;
+  :image t00466:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00466.p1 ,
-       tomb:t00466.p2 ;
-  :img tomb:t00466.i1 .
+  :ent t00466:p1 ,
+       t00466:p2 ;
+  :img t00466:i1 .
 
-tomb:t00466.i1 a t:portrait.n.02 ;
-  :thm tomb:t00466.p1 .
+t00466:i1 a t:portrait.n.02 ;
+  :thm t00466:p1 .
 
-tomb:t00466.p1 a t:person.n.01 ;
+t00466:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1903-06-26" ;
   :dod "1964-02-10" ;
   :nam "CORNELIA ADEMA DE VRIES" .
 
-tomb:t00466.p2 a t:person.n.01 ;
+t00466:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1998-12-26" ;
   :dod "1981-12-15" ;
   :nam "GERHARDUS J. ADEMA" .
 
-tomb:t00466.im1 a t:photo.n.01 ;
+t00466:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

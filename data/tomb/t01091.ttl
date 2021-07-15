@@ -1,53 +1,54 @@
+@prefix t01091: <https://noordergraf.rug.nl/tomb/t01091#> .
 
 tomb:t01091 a t:tombstone.n.01 ;
-  :image tomb:t01091.im1 ;
+  :image t01091:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t01091.g1 ,
-       tomb:t01091.p1 ,
-       tomb:t01091.p2 ;
+  :ent t01091:g1 ,
+       t01091:p1 ,
+       t01091:p2 ;
   :quo "IN JEZUS ONTSLAPEN"@nld .
 
-tomb:t01091.g1 a t:group.n.01 ;
-  :rol tomb:t01091.r1 .
+t01091:g1 a t:group.n.01 ;
+  :rol t01091:r1 .
 
-tomb:t01091.p1 a t:person.n.01 ;
+t01091:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1905-02-03" ;
   :dod "1983-09-04" ;
   :nam "JANTJE STOKJE-NEEF" ;
-  :rol tomb:t01091.r2 ,
-       tomb:t01091.r3 ,
-       tomb:t01091.r4 .
+  :rol t01091:r2 ,
+       t01091:r3 ,
+       t01091:r4 .
 
-tomb:t01091.p2 a t:person.n.01 ;
+t01091:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1900-10-10" ;
   :dod "1993-11-13" ;
   :nam "JAN STOKJE" ;
-  :rol tomb:t01091.r5 ,
-       tomb:t01091.r6 .
+  :rol t01091:r5 ,
+       t01091:r6 .
 
-tomb:t01091.r1 a t:commemorator.n.01 ;
-  :tgt tomb:t01091.p1 ,
-       tomb:t01091.p2 .
+t01091:r1 a t:commemorator.n.01 ;
+  :tgt t01091:p1 ,
+       t01091:p2 .
 
-tomb:t01091.r2 a t:wife.n.01 ;
+t01091:r2 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t01091.p2 .
+  :tgt t01091:p2 .
 
-tomb:t01091.r3 a t:mother.n.01 ;
-  :tgt tomb:t01091.g1 .
+t01091:r3 a t:mother.n.01 ;
+  :tgt t01091:g1 .
 
-tomb:t01091.r4 a t:grandmother.n.01 ;
-  :tgt tomb:t01091.g1 .
+t01091:r4 a t:grandmother.n.01 ;
+  :tgt t01091:g1 .
 
-tomb:t01091.r5 a t:father.n.01 ;
-  :tgt tomb:t01091.g1 .
+t01091:r5 a t:father.n.01 ;
+  :tgt t01091:g1 .
 
-tomb:t01091.r6 a t:grandfather.n.01 ;
-  :tgt tomb:t01091.g1 .
+t01091:r6 a t:grandfather.n.01 ;
+  :tgt t01091:g1 .
 
-tomb:t01091.im1 a t:photo.n.01 ;
+t01091:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

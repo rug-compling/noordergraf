@@ -1,45 +1,46 @@
+@prefix t00530: <https://noordergraf.rug.nl/tomb/t00530#> .
 
 tomb:t00530 a t:tombstone.n.01 ;
-  :image tomb:t00530.im1 ;
+  :image t00530:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00530.g1 ,
-       tomb:t00530.p1 ,
-       tomb:t00530.p2 ,
-       tomb:t00530.p3 ;
+  :ent t00530:g1 ,
+       t00530:p1 ,
+       t00530:p2 ,
+       t00530:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00530.s1 .
+  :sym t00530:s1 .
 
-tomb:t00530.a1 a t:weeping.a.02 .
+t00530:a1 a t:weeping.a.02 .
 
-tomb:t00530.g1 a t:group.n.01 ;
-  :mem tomb:t00530.p2 ,
-       tomb:t00530.p3 .
+t00530:g1 a t:group.n.01 ;
+  :mem t00530:p2 ,
+       t00530:p3 .
 
-tomb:t00530.p1 a t:person.n.01 ;
+t00530:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1877-05-14" ;
   :dod "1934-12-06" ;
   :nam "HIERONIMUS HERWIG" ;
-  :rol tomb:t00530.r1 ;
+  :rol t00530:r1 ;
   :sfx "GZN" .
 
-tomb:t00530.p2 a t:person.n.01 ;
+t00530:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :att "WIJLEN" ;
   :nam "G. HERWIG" ;
   :sfx "HZN" .
 
-tomb:t00530.p3 a t:person.n.01 ;
+t00530:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANNA DE BOER" .
 
-tomb:t00530.r1 a t:son.n.01 ;
-  :tgt tomb:t00530.g1 .
+t00530:r1 a t:son.n.01 ;
+  :tgt t00530:g1 .
 
-tomb:t00530.s1 a t:willow.n.01 ;
-  :att tomb:t00530.a1 .
+t00530:s1 a t:willow.n.01 ;
+  :att t00530:a1 .
 
-tomb:t00530.im1 a t:photo.n.01 ;
+t00530:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

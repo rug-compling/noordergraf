@@ -1,48 +1,49 @@
+@prefix t00920: <https://noordergraf.rug.nl/tomb/t00920#> .
 
 tomb:t00920 a t:tombstone.n.01 ;
-  :image tomb:t00920.im1 ;
+  :image t00920:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00920.p1 ,
-       tomb:t00920.p2 ;
+  :ent t00920:p1 ,
+       t00920:p2 ;
   :lan "NLD" .
 
-tomb:t00920.c1 a t:village.n.02 ;
+t00920:c1 a t:village.n.02 ;
   :geo place:Nieuwenhoorn2750280 ;
   :place "NIEUWENHOORN" .
 
-tomb:t00920.c2 a t:city.n.01 ;
+t00920:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00920.c3 a t:town.n.01 ;
+t00920:c3 a t:town.n.01 ;
   :nam "BOSKOOP" .
 
-tomb:t00920.o1 a t:gynaecologist.n.01 ;
+t00920:o1 a t:gynaecologist.n.01 ;
   :hco "06120" .
 
-tomb:t00920.o2 a t:notary.n.01 ;
+t00920:o2 a t:notary.n.01 ;
   :hco "12310" ;
-  :loc tomb:t00920.c3 .
+  :loc t00920:c3 .
 
-tomb:t00920.p1 a t:person.n.01 ;
+t00920:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1902-08-15" ;
   :dod "1930-11-28" ;
   :nam "WILLEM DIRK NICOLAAS SMEENK" ;
-  :occ tomb:t00920.o1 ;
-  :pob tomb:t00920.c1 ;
-  :pod tomb:t00920.c2 .
+  :occ t00920:o1 ;
+  :pob t00920:c1 ;
+  :pod t00920:c2 .
 
-tomb:t00920.p2 a t:person.n.01 ;
+t00920:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1901-07-30" ;
   :dod "1972-07-26" ;
   :nam "GERARD JAN SMEENK" ;
-  :occ tomb:t00920.o2 ;
-  :pob tomb:t00920.c1 ;
-  :pod tomb:t00920.c3 .
+  :occ t00920:o2 ;
+  :pob t00920:c1 ;
+  :pod t00920:c3 .
 
-tomb:t00920.im1 a t:photo.n.01 ;
+t00920:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

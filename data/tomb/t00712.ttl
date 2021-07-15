@@ -1,17 +1,18 @@
+@prefix t00712: <https://noordergraf.rug.nl/tomb/t00712#> .
 
 tomb:t00712 a t:tombstone.n.01 ;
-  :image tomb:t00712.im1 ;
+  :image t00712:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00712.p1 ;
+  :ent t00712:p1 ;
   :quo "IN LOVING MEMORY"@eng .
 
-tomb:t00712.p1 a t:person.n.01 ;
+t00712:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1936-08-12" ;
   :dod "2001-01-13" ;
   :nam "ALICE BOS" .
 
-tomb:t00712.im1 a t:photo.n.01 ;
+t00712:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

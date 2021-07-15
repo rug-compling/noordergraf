@@ -1,41 +1,42 @@
+@prefix t00942: <https://noordergraf.rug.nl/tomb/t00942#> .
 
 tomb:t00942 a t:tombstone.n.01 ;
-  :image tomb:t00942.im1 ;
+  :image t00942:im1 ;
   :site site:gr9696XGoudeschans ;
-  :ent tomb:t00942.p1 ,
-       tomb:t00942.p2 ;
+  :ent t00942:p1 ,
+       t00942:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00942.s1 ,
-       tomb:t00942.s2 ,
-       tomb:t00942.s3 .
+  :sym t00942:s1 ,
+       t00942:s2 ,
+       t00942:s3 .
 
-tomb:t00942.c1 a t:village.n.02 ;
+t00942:c1 a t:village.n.02 ;
   :geo place:Oudeschans2749010 ;
   :place "OUDESCHANS" .
 
-tomb:t00942.p1 a t:person.n.01 ;
+t00942:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1864-06-24" ;
   :dod "1949-02-10" ;
   :nam "GEERTRUIDA CHRISTINA DIETERMAN" ;
-  :pod tomb:t00942.c1 ;
-  :rol tomb:t00942.r1 .
+  :pod t00942:c1 ;
+  :rol t00942:r1 .
 
-tomb:t00942.p2 a t:person.n.01 ;
+t00942:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "BEREND JAGER" .
 
-tomb:t00942.r1 a t:spouse.n.01 ;
+t00942:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00942.p2 .
+  :tgt t00942:p2 .
 
-tomb:t00942.s1 a t:frond.n.01 .
+t00942:s1 a t:frond.n.01 .
 
-tomb:t00942.s2 a t:oak.n.03 .
+t00942:s2 a t:oak.n.03 .
 
-tomb:t00942.s3 a t:ribbon.n.01 .
+t00942:s3 a t:ribbon.n.01 .
 
-tomb:t00942.im1 a t:photo.n.01 ;
+t00942:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

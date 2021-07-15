@@ -1,42 +1,43 @@
+@prefix t00092: <https://noordergraf.rug.nl/tomb/t00092#> .
 
 tomb:t00092 a t:tombstone.n.01 ;
-  :image tomb:t00092.im1 ;
+  :image t00092:im1 ;
   :site site:gr9721AAgroningen ;
-  :ent tomb:t00092.p1 ,
-       tomb:t00092.p2 .
+  :ent t00092:p1 ,
+       t00092:p2 .
 
-tomb:t00092.c1 a t:city.n.01 ;
+t00092:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00092.c2 a t:village.n.02 ;
+t00092:c2 a t:village.n.02 ;
   :geo place:Wahn3208447 ;
   :place "WAHN" .
 
-tomb:t00092.c3 a t:country.n.02 ;
+t00092:c3 a t:country.n.02 ;
   :geo place:Duitsland2921044 ;
-  :mem tomb:t00092.c2 ;
+  :mem t00092:c2 ;
   :place "DUITSLAND" .
 
-tomb:t00092.p1 a t:person.n.01 ;
+t00092:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1891-10-05" ;
   :dod "1947-06-26" ;
   :nam "HEINRICH JANSEN" ;
-  :pob tomb:t00092.c2 ;
-  :pod tomb:t00092.c1 ;
-  :rol tomb:t00092.r1 .
+  :pob t00092:c2 ;
+  :pod t00092:c1 ;
+  :rol t00092:r1 .
 
-tomb:t00092.p2 a t:person.n.01 ;
+t00092:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-07-15" ;
   :dod "1967-08-31" ;
   :nam "JOANNA M. BOELENS" .
 
-tomb:t00092.r1 a t:wife.n.01 ;
-  :tgt tomb:t00092.p2 .
+t00092:r1 a t:wife.n.01 ;
+  :tgt t00092:p2 .
 
-tomb:t00092.im1 a t:photo.n.01 ;
+t00092:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

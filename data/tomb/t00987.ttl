@@ -1,50 +1,51 @@
+@prefix t00987: <https://noordergraf.rug.nl/tomb/t00987#> .
 
 tomb:t00987 a t:tombstone.n.01 ;
-  :image tomb:t00987.im1 ;
+  :image t00987:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00987.g1 ,
-       tomb:t00987.p1 ,
-       tomb:t00987.p2 ,
-       tomb:t00987.p3 ;
+  :ent t00987:g1 ,
+       t00987:p1 ,
+       t00987:p2 ,
+       t00987:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00987.s1 .
+  :sym t00987:s1 .
 
-tomb:t00987.c1 a t:village.n.02 ;
+t00987:c1 a t:village.n.02 ;
   :geo place:DePunt2757124 ;
   :place "DE PUNT" .
 
-tomb:t00987.c2 a t:hospital.n.01 ;
-  :loc tomb:t00987.c3 .
+t00987:c2 a t:hospital.n.01 ;
+  :loc t00987:c3 .
 
-tomb:t00987.c3 a t:city.n.01 ;
+t00987:c3 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00987.g1 a t:group.n.01 ;
-  :mem tomb:t00987.p2 ,
-       tomb:t00987.p3 .
+t00987:g1 a t:group.n.01 ;
+  :mem t00987:p2 ,
+       t00987:p3 .
 
-tomb:t00987.p1 a t:person.n.01 ;
+t00987:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1912-02-05" ;
   :dod "1912-05-13" ;
   :nam "JANTJE SUICHIES" ;
-  :pob tomb:t00987.c1 ;
-  :pod tomb:t00987.c2 ;
-  :rol tomb:t00987.r1 .
+  :pob t00987:c1 ;
+  :pod t00987:c2 ;
+  :rol t00987:r1 .
 
-tomb:t00987.p2 a t:person.n.01 ;
+t00987:p2 a t:person.n.01 ;
   :nam "R. SUICHIES" .
 
-tomb:t00987.p3 a t:person.n.01 ;
+t00987:p3 a t:person.n.01 ;
   :nam "K. VAN BERGEN" .
 
-tomb:t00987.r1 a t:daughter.n.01 ;
-  :tgt tomb:t00987.g1 .
+t00987:r1 a t:daughter.n.01 ;
+  :tgt t00987:g1 .
 
-tomb:t00987.s1 a t:rose.n.01 .
+t00987:s1 a t:rose.n.01 .
 
-tomb:t00987.im1 a t:photo.n.01 ;
+t00987:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

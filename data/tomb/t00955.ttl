@@ -1,38 +1,39 @@
+@prefix t00955: <https://noordergraf.rug.nl/tomb/t00955#> .
 
 tomb:t00955 a t:tombstone.n.01 ;
-  :image tomb:t00955.im1 ;
+  :image t00955:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00955.p1 ,
-       tomb:t00955.p2 ;
+  :ent t00955:p1 ,
+       t00955:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00955.s1 .
+  :sym t00955:s1 .
 
-tomb:t00955.a1 a t:weeping.a.02 .
+t00955:a1 a t:weeping.a.02 .
 
-tomb:t00955.c1 a t:village.n.02 ;
+t00955:c1 a t:village.n.02 ;
   :geo place:Glimmen2755495 ;
   :place "GLIMMEN" .
 
-tomb:t00955.p1 a t:person.n.01 ;
+t00955:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1831-03-20" ;
   :dod "1915-03-22" ;
   :nam "JAN HOUWING" ;
-  :pob tomb:t00955.c1 ;
-  :pod tomb:t00955.c1 ;
-  :rol tomb:t00955.r1 .
+  :pob t00955:c1 ;
+  :pod t00955:c1 ;
+  :rol t00955:r1 .
 
-tomb:t00955.p2 a t:person.n.01 ;
+t00955:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "BERENDINA KOERS" .
 
-tomb:t00955.r1 a t:widower.n.01 ;
-  :tgt tomb:t00955.p2 .
+t00955:r1 a t:widower.n.01 ;
+  :tgt t00955:p2 .
 
-tomb:t00955.s1 a t:willow.n.01 ;
-  :att tomb:t00955.a1 .
+t00955:s1 a t:willow.n.01 ;
+  :att t00955:a1 .
 
-tomb:t00955.im1 a t:photo.n.01 ;
+t00955:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

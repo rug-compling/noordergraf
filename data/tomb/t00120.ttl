@@ -1,54 +1,55 @@
+@prefix t00120: <https://noordergraf.rug.nl/tomb/t00120#> .
 
 tomb:t00120 a t:tombstone.n.01 ;
-  :image tomb:t00120.im1 ;
+  :image t00120:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00120.p1 ,
-       tomb:t00120.p2 ;
-  :ref tomb:t00120.v1 .
+  :ent t00120:p1 ,
+       t00120:p2 ;
+  :ref t00120:v1 .
 
-tomb:t00120.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00120.c2 .
+t00120:b1 a t:Revelation.n.04 ;
+  :prt t00120:c2 .
 
-tomb:t00120.c1 a t:town.n.01 ;
+t00120:c1 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00120.c2 a t:chapter.n.01 ;
+t00120:c2 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00120.v1 .
+  :prt t00120:v1 .
 
-tomb:t00120.o1 a t:principal.n.02 ;
+t00120:o1 a t:principal.n.02 ;
   :beg "XX-XX-1943" ;
   :end "XX-XX-1963" ;
   :hco "13940" ;
-  :loc tomb:t00120.c1 ;
-  :org tomb:t00120.o2 .
+  :loc t00120:c1 ;
+  :org t00120:o2 .
 
-tomb:t00120.o2 a t:school.n.01 ;
+t00120:o2 a t:school.n.01 ;
   :nam "CHRISTELIJKE NATIONALE ULO SCHOOL" .
 
-tomb:t00120.p1 a t:person.n.01 ;
+t00120:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1898-06-27" ;
   :dod "1966-07-05" ;
   :nam "WILLEM BOLT" ;
-  :occ tomb:t00120.o1 ;
-  :rol tomb:t00120.r1 .
+  :occ t00120:o1 ;
+  :rol t00120:r1 .
 
-tomb:t00120.p2 a t:person.n.01 ;
+t00120:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1898-01-21" ;
   :dod "1970-01-31" ;
   :nam "ROELINA EIKELBOOM" .
 
-tomb:t00120.r1 a t:husband.n.01 ;
+t00120:r1 a t:husband.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00120.p2 .
+  :tgt t00120:p2 .
 
-tomb:t00120.v1 a t:verse.n.01 ;
+t00120:v1 a t:verse.n.01 ;
   :ord 3 .
 
-tomb:t00120.im1 a t:photo.n.01 ;
+t00120:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,25 +1,26 @@
+@prefix t00664: <https://noordergraf.rug.nl/tomb/t00664#> .
 
 tomb:t00664 a t:tombstone.n.01 ;
-  :image tomb:t00664.im1 ;
+  :image t00664:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00664.p1 ;
+  :ent t00664:p1 ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :sym tomb:t00664.s1 .
+  :sym t00664:s1 .
 
-tomb:t00664.c1 a t:city.n.01 ;
+t00664:c1 a t:city.n.01 ;
   :geo place:Bolsward2758682 ;
   :place "BOLSWARD" .
 
-tomb:t00664.p1 a t:person.n.01 ;
+t00664:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1873-05-11" ;
   :dod "1962-06-04" ;
   :nam "BERNARD JULIUS STOCKMANN" ;
-  :pod tomb:t00664.c1 .
+  :pod t00664:c1 .
 
-tomb:t00664.s1 a t:cross.n.03 .
+t00664:s1 a t:cross.n.03 .
 
-tomb:t00664.im1 a t:photo.n.01 ;
+t00664:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

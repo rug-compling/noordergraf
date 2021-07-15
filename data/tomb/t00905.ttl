@@ -1,43 +1,44 @@
+@prefix t00905: <https://noordergraf.rug.nl/tomb/t00905#> .
 
 tomb:t00905 a t:tombstone.n.01 ;
-  :image tomb:t00905.im1 ;
+  :image t00905:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00905.p1 ,
-       tomb:t00905.p2 ;
+  :ent t00905:p1 ,
+       t00905:p2 ;
   :quo "RUSTPLAATS VAN ONZE LIEVE OUDERS"@nld ;
-  :ref tomb:t00905.v1 .
+  :ref t00905:v1 .
 
-tomb:t00905.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00905.c1 .
+t00905:b1 a t:Revelation.n.04 ;
+  :prt t00905:c1 .
 
-tomb:t00905.c1 a t:chapter.n.01 ;
+t00905:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00905.v1 .
+  :prt t00905:v1 .
 
-tomb:t00905.p1 a t:person.n.01 ;
+t00905:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1900-04-29" ;
   :dod "1954-09-12" ;
   :nam "LEFFERT BETHLEHEM" ;
-  :rol tomb:t00905.r1 .
+  :rol t00905:r1 .
 
-tomb:t00905.p2 a t:person.n.01 ;
+t00905:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1897-11-22" ;
   :dod "1963-08-26" ;
   :nam "TITIA VAN DER BOOM" ;
-  :rol tomb:t00905.r2 .
+  :rol t00905:r2 .
 
-tomb:t00905.r1 a t:parent.n.01 ;
-  :tgt tomb:t00905.p3 .
+t00905:r1 a t:parent.n.01 ;
+  :tgt t00905:p3 .
 
-tomb:t00905.r2 a t:parent.n.01 ;
-  :tgt tomb:t00905.p3 .
+t00905:r2 a t:parent.n.01 ;
+  :tgt t00905:p3 .
 
-tomb:t00905.v1 a t:verse.n.01 ;
+t00905:v1 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00905.im1 a t:photo.n.01 ;
+t00905:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

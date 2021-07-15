@@ -1,46 +1,47 @@
+@prefix t00157: <https://noordergraf.rug.nl/tomb/t00157#> .
 
 tomb:t00157 a t:tombstone.n.01 ;
-  :image tomb:t00157.im1 ;
+  :image t00157:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00157.p1 ,
-       tomb:t00157.p2 ,
-       tomb:t00157.p3 ,
-       tomb:t00157.p4 ;
-  :sym tomb:t00157.s1 .
+  :ent t00157:p1 ,
+       t00157:p2 ,
+       t00157:p3 ,
+       t00157:p4 ;
+  :sym t00157:s1 .
 
-tomb:t00157.p1 a t:person.n.01 ;
+t00157:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1854-08-10" ;
   :dod "1941-04-22" ;
   :nam "ELIZABETH DENEKAMP" ;
-  :rol tomb:t00157.r1 .
+  :rol t00157:r1 .
 
-tomb:t00157.p2 a t:person.n.01 ;
+t00157:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "WIEBE BOERSMA" .
 
-tomb:t00157.p3 a t:person.n.01 ;
+t00157:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1897-08-05" ;
   :dod "1953-12-24" ;
   :nam "JOHANNA WUBBIENA BOERSMA" ;
-  :rol tomb:t00157.r2 .
+  :rol t00157:r2 .
 
-tomb:t00157.p4 a t:person.n.01 ;
+t00157:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "P. GERRITS" .
 
-tomb:t00157.r1 a t:widow.n.01 ;
-  :tgt tomb:t00157.p2 .
+t00157:r1 a t:widow.n.01 ;
+  :tgt t00157:p2 .
 
-tomb:t00157.r2 a t:wife.n.01 ;
+t00157:r2 a t:wife.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00157.p4 .
+  :tgt t00157:p4 .
 
-tomb:t00157.s1 a t:organization.n.01 ;
+t00157:s1 a t:organization.n.01 ;
   :nam "LEGER DES HEILS" .
 
-tomb:t00157.im1 a t:photo.n.01 ;
+t00157:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

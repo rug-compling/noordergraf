@@ -1,32 +1,33 @@
+@prefix t00087: <https://noordergraf.rug.nl/tomb/t00087#> .
 
 tomb:t00087 a t:tombstone.n.01 ;
-  :image tomb:t00087.im1 ;
+  :image t00087:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00087.p1 ,
-       tomb:t00087.p2 .
+  :ent t00087:p1 ,
+       t00087:p2 .
 
-tomb:t00087.o1 a t:director.n.01 ;
+t00087:o1 a t:director.n.01 ;
   :hco "13940" ;
-  :org tomb:t00087.o2 .
+  :org t00087:o2 .
 
-tomb:t00087.o2 a t:school.n.01 ;
+t00087:o2 a t:school.n.01 ;
   :nam "MIDDELBARE TECHNISCHE KUNSTNIJVERHEIDS EN ZEEVAARTSCHOOL" .
 
-tomb:t00087.p1 a t:person.n.01 ;
+t00087:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1899-02-24" ;
   :dod "1944-01-01" ;
   :nam "P.H.E. VAN DOOREN" ;
-  :occ tomb:t00087.o1 ;
+  :occ t00087:o1 ;
   :pfx "IR" .
 
-tomb:t00087.p2 a t:person.n.01 ;
+t00087:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1899-02-22" ;
   :dod "1983-03-01" ;
   :nam "MARIA DEKKER" .
 
-tomb:t00087.im1 a t:photo.n.01 ;
+t00087:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

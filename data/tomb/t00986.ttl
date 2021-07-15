@@ -1,46 +1,47 @@
+@prefix t00986: <https://noordergraf.rug.nl/tomb/t00986#> .
 
 tomb:t00986 a t:tombstone.n.01 ;
-  :image tomb:t00986.im1 ;
+  :image t00986:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00986.p1 ,
-       tomb:t00986.p2 ,
-       tomb:t00986.p3 ,
-       tomb:t00986.p4 ;
+  :ent t00986:p1 ,
+       t00986:p2 ,
+       t00986:p3 ,
+       t00986:p4 ;
   :lan "NLD" .
 
-tomb:t00986.p1 a t:person.n.01 ;
+t00986:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1847-07-06" ;
   :dod "1938-02-23" ;
   :nam "GEERTRUIDA JOHANNA VAN ENGEN" ;
-  :rol tomb:t00986.r1 .
+  :rol t00986:r1 .
 
-tomb:t00986.p2 a t:person.n.01 ;
+t00986:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "G. KOETSIER" .
 
-tomb:t00986.p3 a t:person.n.01 ;
+t00986:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1891-07-24" ;
   :dod "1964-03-27" ;
   :nam "GERARDIENA KOETSIER" ;
-  :rol tomb:t00986.r2 .
+  :rol t00986:r2 .
 
-tomb:t00986.p4 a t:person.n.01 ;
+t00986:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1897-08-10" ;
   :dod "1971-07-25" ;
   :nam "HARM PIETER MAKKEN" .
 
-tomb:t00986.r1 a t:widow.n.01 ;
+t00986:r1 a t:widow.n.01 ;
   :beg "02-07-1908" ;
-  :tgt tomb:t00986.p2 .
+  :tgt t00986:p2 .
 
-tomb:t00986.r2 a t:spouse.n.01 ;
+t00986:r2 a t:spouse.n.01 ;
   :beg "02-07-1908" ;
-  :tgt tomb:t00986.p4 .
+  :tgt t00986:p4 .
 
-tomb:t00986.im1 a t:photo.n.01 ;
+t00986:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

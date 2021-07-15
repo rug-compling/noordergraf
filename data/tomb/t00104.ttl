@@ -1,50 +1,51 @@
+@prefix t00104: <https://noordergraf.rug.nl/tomb/t00104#> .
 
 tomb:t00104 a t:tombstone.n.01 ;
-  :image tomb:t00104.im1 ;
+  :image t00104:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00104.p1 ,
-       tomb:t00104.p2 ;
+  :ent t00104:p1 ,
+       t00104:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym tomb:t00104.s1 .
+  :sym t00104:s1 .
 
-tomb:t00104.c1 a t:city.n.01 ;
+t00104:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00104.c2 a t:city.n.01 ;
+t00104:c2 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00104.p1 a t:person.n.01 ;
+t00104:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1859-12-24" ;
   :dod "1938-11-15" ;
   :nam "JAN POMPER" ;
-  :pob tomb:t00104.c2 ;
-  :pod tomb:t00104.c1 ;
-  :rol tomb:t00104.r1 .
+  :pob t00104:c2 ;
+  :pod t00104:c1 ;
+  :rol t00104:r1 .
 
-tomb:t00104.p2 a t:person.n.01 ;
+t00104:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1867-12-06" ;
   :dod "1949-04-29" ;
   :nam "ALBERDINA VEENEMA" ;
-  :pob tomb:t00104.c2 ;
-  :pod tomb:t00104.c1 .
+  :pob t00104:c2 ;
+  :pod t00104:c1 .
 
-tomb:t00104.r1 a t:husband.n.01 ;
+t00104:r1 a t:husband.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00104.p2 .
+  :tgt t00104:p2 .
 
-tomb:t00104.s1 a t:composite.n.01 ;
-  :prt tomb:t00104.s2 ,
-       tomb:t00104.s3 .
+t00104:s1 a t:composite.n.01 ;
+  :prt t00104:s2 ,
+       t00104:s3 .
 
-tomb:t00104.s2 a t:frond.n.01 .
+t00104:s2 a t:frond.n.01 .
 
-tomb:t00104.s3 a t:ribbon.n.01 .
+t00104:s3 a t:ribbon.n.01 .
 
-tomb:t00104.im1 a t:photo.n.01 ;
+t00104:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

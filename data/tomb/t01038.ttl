@@ -1,33 +1,34 @@
+@prefix t01038: <https://noordergraf.rug.nl/tomb/t01038#> .
 
 tomb:t01038 a t:tombstone.n.01 ;
-  :image tomb:t01038.im1 ;
+  :image t01038:im1 ;
   :site site:gr9804TEnoordhorn ;
-  :ent tomb:t01038.p1 ;
+  :ent t01038:p1 ;
   :lan "NLD" ;
-  :sym tomb:t01038.s1 .
+  :sym t01038:s1 .
 
-tomb:t01038.a1 a t:weeping.a.02 .
+t01038:a1 a t:weeping.a.02 .
 
-tomb:t01038.c1 a t:village.n.02 ;
+t01038:c1 a t:village.n.02 ;
   :geo place:Hoogkerk2753688 ;
   :place "HOOGKERK" .
 
-tomb:t01038.c2 a t:city.n.01 ;
+t01038:c2 a t:city.n.01 ;
   :geo place:Amsterdam2759794 ;
   :place "AMSTERDAM" .
 
-tomb:t01038.p1 a t:person.n.01 ;
+t01038:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1858-04-26" ;
   :dod "1945-11-30" ;
   :nam "GRIETJE DE BOER" ;
-  :pob tomb:t01038.c1 ;
-  :pod tomb:t01038.c2 .
+  :pob t01038:c1 ;
+  :pod t01038:c2 .
 
-tomb:t01038.s1 a t:willow.n.01 ;
-  :att tomb:t01038.a1 .
+t01038:s1 a t:willow.n.01 ;
+  :att t01038:a1 .
 
-tomb:t01038.im1 a t:photo.n.01 ;
+t01038:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

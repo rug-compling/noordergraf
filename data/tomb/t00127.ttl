@@ -1,45 +1,46 @@
+@prefix t00127: <https://noordergraf.rug.nl/tomb/t00127#> .
 
 tomb:t00127 a t:tombstone.n.01 ;
-  :image tomb:t00127.im1 ;
+  :image t00127:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00127.p1 ,
-       tomb:t00127.p2 ;
-  :sym tomb:t00127.s1 .
+  :ent t00127:p1 ,
+       t00127:p2 ;
+  :sym t00127:s1 .
 
-tomb:t00127.c1 a t:city.n.01 ;
+t00127:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00127.p1 a t:person.n.01 ;
+t00127:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1849-03-26" ;
   :dod "1923-03-05" ;
   :nam "PIETER REINTS" ;
-  :pob tomb:t00127.c1 ;
-  :pod tomb:t00127.c1 ;
-  :rol tomb:t00127.r3 .
+  :pob t00127:c1 ;
+  :pod t00127:c1 ;
+  :rol t00127:r3 .
 
-tomb:t00127.p2 a t:person.n.01 ;
+t00127:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1859-10-19" ;
   :dod "1958-04-23" ;
   :nam "JURRENDINA MOESKER" .
 
-tomb:t00127.r3 a t:husband.n.01 ;
-  :tgt tomb:t00127.p2 .
+t00127:r3 a t:husband.n.01 ;
+  :tgt t00127:p2 .
 
-tomb:t00127.s1 a t:composite.n.01 ;
-  :prt tomb:t00127.s2 ,
-       tomb:t00127.s3 ,
-       tomb:t00127.s4 .
+t00127:s1 a t:composite.n.01 ;
+  :prt t00127:s2 ,
+       t00127:s3 ,
+       t00127:s4 .
 
-tomb:t00127.s2 a t:frond.n.01 .
+t00127:s2 a t:frond.n.01 .
 
-tomb:t00127.s3 a t:frond.n.01 .
+t00127:s3 a t:frond.n.01 .
 
-tomb:t00127.s4 a t:ribbon.n.01 .
+t00127:s4 a t:ribbon.n.01 .
 
-tomb:t00127.im1 a t:photo.n.01 ;
+t00127:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

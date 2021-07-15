@@ -1,23 +1,24 @@
+@prefix t01010: <https://noordergraf.rug.nl/tomb/t01010#> .
 
 tomb:t01010 a t:tombstone.n.01 ;
-  :image tomb:t01010.im1 ;
+  :image t01010:im1 ;
   :site site:gr9781THbedum ;
-  :ent tomb:t01010.p1 ;
+  :ent t01010:p1 ;
   :quo "LIFE IS SHORT \\ DEATH IS NOUGHT \\ LOVE IS ALL"@eng ;
-  :sym tomb:t01010.s1 .
+  :sym t01010:s1 .
 
-tomb:t01010.a1 a t:weeping.a.02 .
+t01010:a1 a t:weeping.a.02 .
 
-tomb:t01010.p1 a t:person.n.01 ;
+t01010:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1949-02-01" ;
   :dod "2000-12-19" ;
   :nam "MARJA ROZEMOND" .
 
-tomb:t01010.s1 a t:willow.n.01 ;
-  :att tomb:t01010.a1 .
+t01010:s1 a t:willow.n.01 ;
+  :att t01010:a1 .
 
-tomb:t01010.im1 a t:photo.n.01 ;
+t01010:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

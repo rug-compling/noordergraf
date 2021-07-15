@@ -1,35 +1,36 @@
+@prefix t00198: <https://noordergraf.rug.nl/tomb/t00198#> .
 
 tomb:t00198 a t:tombstone.n.01 ;
-  :image tomb:t00198.im1 ;
+  :image t00198:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00198.p1 ,
-       tomb:t00198.p2 ;
+  :ent t00198:p1 ,
+       t00198:p2 ;
   :ref "PSALM 23" ;
-  :sym tomb:t00198.s1 .
+  :sym t00198:s1 .
 
-tomb:t00198.p1 a t:person.n.01 ;
+t00198:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1878-12-04" ;
   :dod "1941-02-20" ;
   :nam "JAN VELDSEMA" ;
-  :rol tomb:t00198.r2 .
+  :rol t00198:r2 .
 
-tomb:t00198.p2 a t:person.n.01 ;
+t00198:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1879-01-14" ;
   :dod "1966-06-23" ;
   :nam "MARTJE OLLING" ;
-  :rol tomb:t00198.r3 .
+  :rol t00198:r3 .
 
-tomb:t00198.r2 a t:spouse.n.01 ;
+t00198:r2 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00198.p2 .
+  :tgt t00198:p2 .
 
-tomb:t00198.r3 a t:son.n.01 .
+t00198:r3 a t:son.n.01 .
 
-tomb:t00198.s1 a t:frond.n.01 .
+t00198:s1 a t:frond.n.01 .
 
-tomb:t00198.im1 a t:photo.n.01 ;
+t00198:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

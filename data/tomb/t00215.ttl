@@ -1,41 +1,42 @@
+@prefix t00215: <https://noordergraf.rug.nl/tomb/t00215#> .
 
 tomb:t00215 a t:tombstone.n.01 ;
-  :image tomb:t00215.im1 ;
+  :image t00215:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00215.p1 ,
-       tomb:t00215.p2 ;
-  :sym tomb:t00215.s1 .
+  :ent t00215:p1 ,
+       t00215:p2 ;
+  :sym t00215:s1 .
 
-tomb:t00215.a1 a t:weeping.a.02 .
+t00215:a1 a t:weeping.a.02 .
 
-tomb:t00215.c1 a t:village.n.02 ;
+t00215:c1 a t:village.n.02 ;
   :geo place:TenBoer2746491 ;
   :place "TEN BOER" .
 
-tomb:t00215.c2 a t:town.n.01 ;
+t00215:c2 a t:town.n.01 ;
   :geo place:Middenmeer2750850 ;
   :place "MIDDENMEER" .
 
-tomb:t00215.p1 a t:person.n.01 ;
+t00215:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1876-07-17" ;
   :dod "1963-03-17" ;
   :nam "EEUWKE WOLDRING" ;
-  :pob tomb:t00215.c1 ;
-  :pod tomb:t00215.c2 ;
-  :rol tomb:t00215.r1 .
+  :pob t00215:c1 ;
+  :pod t00215:c2 ;
+  :rol t00215:r1 .
 
-tomb:t00215.p2 a t:person.n.01 ;
+t00215:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. ZWANEVELD" .
 
-tomb:t00215.r1 a t:widower.n.01 ;
-  :tgt tomb:t00215.p2 .
+t00215:r1 a t:widower.n.01 ;
+  :tgt t00215:p2 .
 
-tomb:t00215.s1 a t:willow.n.01 ;
-  :att tomb:t00215.a1 .
+t00215:s1 a t:willow.n.01 ;
+  :att t00215:a1 .
 
-tomb:t00215.im1 a t:photo.n.01 ;
+t00215:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

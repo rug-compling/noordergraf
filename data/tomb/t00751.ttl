@@ -1,30 +1,31 @@
+@prefix t00751: <https://noordergraf.rug.nl/tomb/t00751#> .
 
 tomb:t00751 a t:tombstone.n.01 ;
-  :image tomb:t00751.im1 ;
+  :image t00751:im1 ;
   :site site:gr9936BTfarmsum ;
-  :ent tomb:t00751.p1 ,
-       tomb:t00751.p2 ;
+  :ent t00751:p1 ,
+       t00751:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00751.s1 ,
-       tomb:t00751.s2 .
+  :sym t00751:s1 ,
+       t00751:s2 .
 
-tomb:t00751.p1 a t:person.n.01 ;
+t00751:p1 a t:person.n.01 ;
   :dob "1818-10-27" ;
   :dod "1874-01-15" ;
   :nam "A.R. VAN ZANTEN" ;
-  :rol tomb:t00751.r1 .
+  :rol t00751:r1 .
 
-tomb:t00751.p2 a t:person.n.01 ;
+t00751:p2 a t:person.n.01 ;
   :nam "E.C. BEKENKAMP" .
 
-tomb:t00751.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00751.p2 .
+t00751:r1 a t:spouse.n.01 ;
+  :tgt t00751:p2 .
 
-tomb:t00751.s1 a t:skull.n.01 .
+t00751:s1 a t:skull.n.01 .
 
-tomb:t00751.s2 a t:bone.n.01 .
+t00751:s2 a t:bone.n.01 .
 
-tomb:t00751.im1 a t:photo.n.01 ;
+t00751:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

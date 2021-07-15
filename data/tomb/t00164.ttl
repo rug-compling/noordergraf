@@ -1,43 +1,44 @@
+@prefix t00164: <https://noordergraf.rug.nl/tomb/t00164#> .
 
 tomb:t00164 a t:tombstone.n.01 ;
-  :image tomb:t00164.im1 ;
+  :image t00164:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00164.p1 ,
-       tomb:t00164.p2 ,
-       tomb:t00164.p3 ;
-  :sym tomb:t00164.s1 .
+  :ent t00164:p1 ,
+       t00164:p2 ,
+       t00164:p3 ;
+  :sym t00164:s1 .
 
-tomb:t00164.p1 a t:person.n.01 ;
+t00164:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1898-07-02" ;
   :dod "1910-01-31" ;
   :nam "FREDERIK MENNO EDENS" .
 
-tomb:t00164.p2 a t:person.n.01 ;
+t00164:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1871-02-22" ;
   :dod "1935-08-02" ;
   :nam "TAMMO EDENS" .
 
-tomb:t00164.p3 a t:person.n.01 ;
+t00164:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1873-02-21" ;
   :dod "1955-03-02" ;
   :nam "JELTJE PARÉ" ;
-  :rol tomb:t00164.r1 .
+  :rol t00164:r1 .
 
-tomb:t00164.r1 a t:widow.n.01 ;
-  :tgt tomb:t00164.p2 .
+t00164:r1 a t:widow.n.01 ;
+  :tgt t00164:p2 .
 
-tomb:t00164.s1 a t:composite.n.01 ;
-  :prt tomb:t00164.s2 ,
-       tomb:t00164.s3 .
+t00164:s1 a t:composite.n.01 ;
+  :prt t00164:s2 ,
+       t00164:s3 .
 
-tomb:t00164.s2 a t:frond.n.01 .
+t00164:s2 a t:frond.n.01 .
 
-tomb:t00164.s3 a t:ribbon.n.01 .
+t00164:s3 a t:ribbon.n.01 .
 
-tomb:t00164.im1 a t:photo.n.01 ;
+t00164:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

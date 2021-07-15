@@ -1,49 +1,50 @@
+@prefix t00866: <https://noordergraf.rug.nl/tomb/t00866#> .
 
 tomb:t00866 a t:tombstone.n.01 ;
-  :image tomb:t00866.im1 ;
+  :image t00866:im1 ;
   :site site:dr7844TCveenoord ;
-  :ent tomb:t00866.g1 ,
-       tomb:t00866.p1 ,
-       tomb:t00866.p2 ;
+  :ent t00866:g1 ,
+       t00866:p1 ,
+       t00866:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t00866.s1 .
+  :sym t00866:s1 .
 
-tomb:t00866.a1 a t:weeping.a.02 .
+t00866:a1 a t:weeping.a.02 .
 
-tomb:t00866.g1 a t:group.n.01 ;
-  :mem tomb:t00866.p3 ;
+t00866:g1 a t:group.n.01 ;
+  :mem t00866:p3 ;
   :qua 3 .
 
-tomb:t00866.p1 a t:person.n.01 ;
+t00866:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1881-02-20" ;
   :dod "1935-12-23" ;
   :nam "TRIJNTJE KOENS" ;
-  :rol tomb:t00866.r1 ,
-       tomb:t00866.r2 .
+  :rol t00866:r1 ,
+       t00866:r2 .
 
-tomb:t00866.p2 a t:person.n.01 ;
+t00866:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "R. SIEBEN" .
 
-tomb:t00866.p3 a t:person.n.01 ;
+t00866:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
-  :rol tomb:t00866.r3 .
+  :rol t00866:r3 .
 
-tomb:t00866.r1 a t:sister.n.01 ;
+t00866:r1 a t:sister.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00866.g1 .
+  :tgt t00866:g1 .
 
-tomb:t00866.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00866.p2 .
+t00866:r2 a t:spouse.n.01 ;
+  :tgt t00866:p2 .
 
-tomb:t00866.r3 a t:sister.n.01 ;
-  :tgt tomb:t00866.p1 .
+t00866:r3 a t:sister.n.01 ;
+  :tgt t00866:p1 .
 
-tomb:t00866.s1 a t:willow.n.01 ;
-  :att tomb:t00866.a1 .
+t00866:s1 a t:willow.n.01 ;
+  :att t00866:a1 .
 
-tomb:t00866.im1 a t:photo.n.01 ;
+t00866:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,36 +1,37 @@
+@prefix t00967: <https://noordergraf.rug.nl/tomb/t00967#> .
 
 tomb:t00967 a t:tombstone.n.01 ;
-  :image tomb:t00967.im1 ;
+  :image t00967:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00967.p1 ;
+  :ent t00967:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00967.s1 .
+  :sym t00967:s1 .
 
-tomb:t00967.a1 a t:weeping.a.02 .
+t00967:a1 a t:weeping.a.02 .
 
-tomb:t00967.c1 a t:village.n.02 ;
+t00967:c1 a t:village.n.02 ;
   :geo place:Onnen2749588 ;
   :place "ONNEN" .
 
-tomb:t00967.p1 a t:person.n.01 ;
+t00967:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1864-07-07" ;
   :dod "1936-01-25" ;
   :nam "HENDRIK HEKMAN" ;
-  :pob tomb:t00967.c1 ;
-  :pod tomb:t00967.c1 ;
-  :rol tomb:t00967.r1 ,
-       tomb:t00967.r2 .
+  :pob t00967:c1 ;
+  :pod t00967:c1 ;
+  :rol t00967:r1 ,
+       t00967:r2 .
 
-tomb:t00967.r1 a t:husband.n.01 ;
+t00967:r1 a t:husband.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00967.r2 a t:father.n.01 .
+t00967:r2 a t:father.n.01 .
 
-tomb:t00967.s1 a t:willow.n.01 ;
-  :att tomb:t00967.a1 .
+t00967:s1 a t:willow.n.01 ;
+  :att t00967:a1 .
 
-tomb:t00967.im1 a t:photo.n.01 ;
+t00967:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

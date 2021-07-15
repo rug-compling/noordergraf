@@ -1,27 +1,28 @@
+@prefix t00963: <https://noordergraf.rug.nl/tomb/t00963#> .
 
 tomb:t00963 a t:tombstone.n.01 ;
-  :image tomb:t00963.im1 ;
+  :image t00963:im1 ;
   :site site:dr9765paterswolde ;
-  :ent tomb:t00963.p1 ;
+  :ent t00963:p1 ;
   :lan "NLD" .
 
-tomb:t00963.c1 a t:city.n.01 ;
+t00963:c1 a t:city.n.01 ;
   :geo place:Winschoten2744344 ;
   :place "WINSCHOTEN" .
 
-tomb:t00963.c2 a t:village.n.02 ;
+t00963:c2 a t:village.n.02 ;
   :geo place:Paterswolde2748702 ;
   :place "PATERSWOLDE" .
 
-tomb:t00963.p1 a t:person.n.01 ;
+t00963:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1886-11-21" ;
   :dod "1917-04-19" ;
   :nam "WILLEMIENE HENRIETTE JANSEN" ;
-  :pob tomb:t00963.c1 ;
-  :pod tomb:t00963.c2 .
+  :pob t00963:c1 ;
+  :pod t00963:c2 .
 
-tomb:t00963.im1 a t:photo.n.01 ;
+t00963:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

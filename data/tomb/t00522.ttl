@@ -1,38 +1,39 @@
+@prefix t00522: <https://noordergraf.rug.nl/tomb/t00522#> .
 
 tomb:t00522 a t:tombstone.n.01 ;
-  :image tomb:t00522.im1 ;
+  :image t00522:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00522.p1 ;
+  :ent t00522:p1 ;
   :quo "LA-ILAHA.ILL-ALLAH \\ MUHAMMAD-UR-RASOOLULLAH"@nld ;
-  :sym tomb:t00522.s1 .
+  :sym t00522:s1 .
 
-tomb:t00522.p1 a t:person.n.01 ;
+t00522:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1945-06-24" ;
   :dod "2006-02-05" ;
   :nam "HARRY MOHAMED HOESEIN KARIM" ;
-  :rol tomb:t00522.r1 ,
-       tomb:t00522.r2 ,
-       tomb:t00522.r3 ,
-       tomb:t00522.r4 .
+  :rol t00522:r1 ,
+       t00522:r2 ,
+       t00522:r3 ,
+       t00522:r4 .
 
-tomb:t00522.r1 a t:father.n.01 .
+t00522:r1 a t:father.n.01 .
 
-tomb:t00522.r2 a t:brother.n.01 .
+t00522:r2 a t:brother.n.01 .
 
-tomb:t00522.r3 a t:grandfather.n.01 .
+t00522:r3 a t:grandfather.n.01 .
 
-tomb:t00522.r4 a t:husband.n.01 .
+t00522:r4 a t:husband.n.01 .
 
-tomb:t00522.s1 a t:composite.n.01 ;
-  :prt tomb:t00522.s2 ,
-       tomb:t00522.s3 .
+t00522:s1 a t:composite.n.01 ;
+  :prt t00522:s2 ,
+       t00522:s3 .
 
-tomb:t00522.s2 a t:crescent.n.01 .
+t00522:s2 a t:crescent.n.01 .
 
-tomb:t00522.s3 a t:star.n.01 .
+t00522:s3 a t:star.n.01 .
 
-tomb:t00522.im1 a t:photo.n.01 ;
+t00522:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

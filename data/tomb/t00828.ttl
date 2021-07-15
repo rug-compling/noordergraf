@@ -1,36 +1,37 @@
+@prefix t00828: <https://noordergraf.rug.nl/tomb/t00828#> .
 
 tomb:t00828 a t:tombstone.n.01 ;
-  :image tomb:t00828.im1 ;
+  :image t00828:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00828.p1 ,
-       tomb:t00828.p2 ;
+  :ent t00828:p1 ,
+       t00828:p2 ;
   :lan "NLD" .
 
-tomb:t00828.c1 a t:city.n.01 ;
+t00828:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00828.p1 a t:person.n.01 ;
+t00828:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1825-01-16" ;
   :dod "1902-04-09" ;
   :nam "FREDRIK RASKER" ;
-  :pob tomb:t00828.c1 ;
-  :pod tomb:t00828.c1 ;
-  :rol tomb:t00828.r1 .
+  :pob t00828:c1 ;
+  :pod t00828:c1 ;
+  :rol t00828:r1 .
 
-tomb:t00828.p2 a t:person.n.01 ;
+t00828:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1830-09-16" ;
   :dod "1918-08-09" ;
   :nam "LEENTJE DOST" ;
-  :pob tomb:t00828.c1 ;
-  :pod tomb:t00828.c1 .
+  :pob t00828:c1 ;
+  :pod t00828:c1 .
 
-tomb:t00828.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00828.p2 .
+t00828:r1 a t:spouse.n.01 ;
+  :tgt t00828:p2 .
 
-tomb:t00828.im1 a t:photo.n.01 ;
+t00828:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

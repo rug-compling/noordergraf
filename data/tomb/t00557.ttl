@@ -1,34 +1,35 @@
+@prefix t00557: <https://noordergraf.rug.nl/tomb/t00557#> .
 
 tomb:t00557 a t:tombstone.n.01 ;
-  :image tomb:t00557.im1 ;
+  :image t00557:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00557.p1 ,
-       tomb:t00557.p2 ;
+  :ent t00557:p1 ,
+       t00557:p2 ;
   :quo "HIER RUST, O WANDELAAR \\ MIJN TEER BEMINDE VROUW; \\ ZIJ DIE MIJ HEEFT VERZELD, \\ MET LIEFDE, DEUGD EN TROUW; \\ OP 'T ZEEMANS MOEILIJK PAD \\ DER WOESTE ZOUTE BAREN; DAAR IS HAAR ZIEL VERHUISD, \\ EN VAN MIJ HEEN GEVAREN. \\ HAAR LIJK BRAGT IK NAAR HIER, \\ NAAR DEZEN DOODENAKKER. \\ GOD, HOOP IK, MAAKT MIJ EENS AAN HARE ZIJDE WAKKER!"@nld ;
-  :sym tomb:t00557.s1 .
+  :sym t00557:s1 .
 
-tomb:t00557.c1 a t:ocean.n.01 ;
+t00557:c1 a t:ocean.n.01 ;
   :geo place:IndischeOceaan1545739 ;
   :place "INDISCHE OCEAAN" .
 
-tomb:t00557.p1 a t:person.n.01 ;
+t00557:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1823-08-04" ;
   :dod "1856-01-19" ;
   :nam "JANTJE A. HAZEWINKEL" ;
-  :pod tomb:t00557.c1 ;
-  :rol tomb:t00557.r1 .
+  :pod t00557:c1 ;
+  :rol t00557:r1 .
 
-tomb:t00557.p2 a t:person.n.01 ;
+t00557:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "BEREND J. JONKER" .
 
-tomb:t00557.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00557.p2 .
+t00557:r1 a t:spouse.n.01 ;
+  :tgt t00557:p2 .
 
-tomb:t00557.s1 a t:galleon.n.01 .
+t00557:s1 a t:galleon.n.01 .
 
-tomb:t00557.im1 a t:photo.n.01 ;
+t00557:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

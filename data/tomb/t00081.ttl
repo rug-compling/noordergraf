@@ -1,40 +1,41 @@
+@prefix t00081: <https://noordergraf.rug.nl/tomb/t00081#> .
 
 tomb:t00081 a t:tombstone.n.01 ;
-  :image tomb:t00081.im1 ;
+  :image t00081:im1 ;
   :site site:gr9721AAgroningen ;
-  :ent tomb:t00081.p1 ,
-       tomb:t00081.p2 ;
+  :ent t00081:p1 ,
+       t00081:p2 ;
   :quo "REQUIESCAT IN PACE"@lat .
 
-tomb:t00081.c1 a t:city.n.01 ;
+t00081:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00081.c2 a t:city.n.01 ;
+t00081:c2 a t:city.n.01 ;
   :geo place:Enkhuizen2756077 ;
   :place "ENKHUIZEN" .
 
-tomb:t00081.p1 a t:person.n.01 ;
+t00081:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1882-09-07" ;
   :dod "1953-11-27" ;
   :nam "GEORGE W. PADBERG" ;
-  :pob tomb:t00081.c2 ;
-  :pod tomb:t00081.c1 ;
-  :rol tomb:t00081.r1 .
+  :pob t00081:c2 ;
+  :pod t00081:c1 ;
+  :rol t00081:r1 .
 
-tomb:t00081.p2 a t:person.n.01 ;
+t00081:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1891-03-25" ;
   :dod "1963-08-23" ;
   :nam "GEERTRUIDA M.M. SCHOLTE" ;
-  :pob tomb:t00081.c1 ;
-  :pod tomb:t00081.c1 .
+  :pob t00081:c1 ;
+  :pod t00081:c1 .
 
-tomb:t00081.r1 a t:husband.n.01 ;
-  :tgt tomb:t00081.p2 .
+t00081:r1 a t:husband.n.01 ;
+  :tgt t00081:p2 .
 
-tomb:t00081.im1 a t:photo.n.01 ;
+t00081:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

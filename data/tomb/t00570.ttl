@@ -1,50 +1,51 @@
+@prefix t00570: <https://noordergraf.rug.nl/tomb/t00570#> .
 
 tomb:t00570 a t:tombstone.n.01 ;
-  :image tomb:t00570.im1 ;
+  :image t00570:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00570.p1 ,
-       tomb:t00570.p2 ;
-  :sym tomb:t00570.s1 ,
-       tomb:t00570.s2 ,
-       tomb:t00570.s3 ,
-       tomb:t00570.s4 .
+  :ent t00570:p1 ,
+       t00570:p2 ;
+  :sym t00570:s1 ,
+       t00570:s2 ,
+       t00570:s3 ,
+       t00570:s4 .
 
-tomb:t00570.c1 a t:more.r.01 ;
-  :op1 tomb:t00570.m1 ;
-  :op2 tomb:t00570.m2 .
+t00570:c1 a t:more.r.01 ;
+  :op1 t00570:m1 ;
+  :op2 t00570:m2 .
 
-tomb:t00570.m1 a t:measure.n.02 .
+t00570:m1 a t:measure.n.02 .
 
-tomb:t00570.m2 a t:measure.n.02 ;
-  :mem tomb:t00570.u1 ;
+t00570:m2 a t:measure.n.02 ;
+  :mem t00570:u1 ;
   :qua 62 .
 
-tomb:t00570.p1 a t:person.n.01 ;
+t00570:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t00570.m1 ;
+  :age t00570:m1 ;
   :dob "1865-08-29" ;
   :nam "AREND VAN LINGE" ;
-  :rol tomb:t00570.r1 ;
+  :rol t00570:r1 ;
   :sfx "EZ" .
 
-tomb:t00570.p2 a t:person.n.01 ;
+t00570:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "AFIEN R. GIEZEN" .
 
-tomb:t00570.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00570.p2 .
+t00570:r1 a t:spouse.n.01 ;
+  :tgt t00570:p2 .
 
-tomb:t00570.s1 a t:butterfly.n.01 .
+t00570:s1 a t:butterfly.n.01 .
 
-tomb:t00570.s2 a t:frond.n.01 .
+t00570:s2 a t:frond.n.01 .
 
-tomb:t00570.s3 a t:oak.n.02 .
+t00570:s3 a t:oak.n.02 .
 
-tomb:t00570.s4 a t:scythe.n.01 .
+t00570:s4 a t:scythe.n.01 .
 
-tomb:t00570.u1 a t:year.n.01 .
+t00570:u1 a t:year.n.01 .
 
-tomb:t00570.im1 a t:photo.n.01 ;
+t00570:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

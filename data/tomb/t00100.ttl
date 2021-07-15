@@ -1,45 +1,46 @@
+@prefix t00100: <https://noordergraf.rug.nl/tomb/t00100#> .
 
 tomb:t00100 a t:tombstone.n.01 ;
-  :image tomb:t00100.im1 ;
+  :image t00100:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00100.p1 ,
-       tomb:t00100.p2 ;
-  :sym tomb:t00100.s1 .
+  :ent t00100:p1 ,
+       t00100:p2 ;
+  :sym t00100:s1 .
 
-tomb:t00100.c1 a t:city.n.01 ;
+t00100:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00100.o1 a t:archivist.n.01 ;
+t00100:o1 a t:archivist.n.01 ;
   :hco "19130" ;
-  :loc tomb:t00100.c1 ;
-  :org tomb:t00100.o2 .
+  :loc t00100:c1 ;
+  :org t00100:o2 .
 
-tomb:t00100.o2 a t:state.n.04 ;
+t00100:o2 a t:state.n.04 ;
   :nam "NEDERLAND" .
 
-tomb:t00100.p1 a t:person.n.01 ;
+t00100:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1858-09-25" ;
   :dod "1913-01-28" ;
   :nam "JOHAN ADRIAAN FEITH" ;
-  :occ tomb:t00100.o1 ;
+  :occ t00100:o1 ;
   :pfx "JHR MR" .
 
-tomb:t00100.p2 a t:person.n.01 ;
+t00100:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1856-02-05" ;
   :dod "1935-03-06" ;
   :nam "HENRIËTTE PAULINE GOCKINGA" ;
   :pfx "JNKV" ;
-  :rol tomb:t00100.r1 .
+  :rol t00100:r1 .
 
-tomb:t00100.r1 a t:wife.n.01 ;
-  :tgt tomb:t00100.p1 .
+t00100:r1 a t:wife.n.01 ;
+  :tgt t00100:p1 .
 
-tomb:t00100.s1 a t:frond.n.01 .
+t00100:s1 a t:frond.n.01 .
 
-tomb:t00100.im1 a t:photo.n.01 ;
+t00100:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,47 +1,48 @@
+@prefix t00737: <https://noordergraf.rug.nl/tomb/t00737#> .
 
 tomb:t00737 a t:tombstone.n.01 ;
-  :image tomb:t00737.im1 ;
+  :image t00737:im1 ;
   :site site:gr9936TCfarmsum ;
-  :ent tomb:t00737.g1 ,
-       tomb:t00737.p1 ,
-       tomb:t00737.p2 ,
-       tomb:t00737.p3 ;
+  :ent t00737:g1 ,
+       t00737:p1 ,
+       t00737:p2 ,
+       t00737:p3 ;
   :lan "NLD" .
 
-tomb:t00737.c1 a t:village.n.02 ;
+t00737:c1 a t:village.n.02 ;
   :geo place:Termunterzijl2746426 ;
   :place "TERMUNTERZIJL" .
 
-tomb:t00737.c2 a t:town.n.01 ;
+t00737:c2 a t:town.n.01 ;
   :geo place:Heveskes2754114 ;
   :place "HEVESKES" .
 
-tomb:t00737.g1 a t:group.n.01 ;
-  :mem tomb:t00737.p2 ,
-       tomb:t00737.p3 .
+t00737:g1 a t:group.n.01 ;
+  :mem t00737:p2 ,
+       t00737:p3 .
 
-tomb:t00737.p1 a t:person.n.01 ;
+t00737:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1862-11-26" ;
   :dod "1892-10-25" ;
   :nam "ELIZABETH SMITH" ;
-  :pob tomb:t00737.c1 ;
-  :pod tomb:t00737.c2 ;
-  :rol tomb:t00737.r1 .
+  :pob t00737:c1 ;
+  :pod t00737:c2 ;
+  :rol t00737:r1 .
 
-tomb:t00737.p2 a t:person.n.01 ;
+t00737:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :att "WIJLEN" ;
   :nam "P.M. SMITH" .
 
-tomb:t00737.p3 a t:person.n.01 ;
+t00737:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A.H. GEERTSEMA" .
 
-tomb:t00737.r1 a t:daughter.n.01 ;
-  :tgt tomb:t00737.g1 .
+t00737:r1 a t:daughter.n.01 ;
+  :tgt t00737:g1 .
 
-tomb:t00737.im1 a t:photo.n.01 ;
+t00737:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

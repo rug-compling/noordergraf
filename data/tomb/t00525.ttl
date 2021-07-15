@@ -1,53 +1,54 @@
+@prefix t00525: <https://noordergraf.rug.nl/tomb/t00525#> .
 
 tomb:t00525 a t:tombstone.n.01 ;
-  :image tomb:t00525.im1 ;
+  :image t00525:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00525.p1 ,
-       tomb:t00525.p2 ;
+  :ent t00525:p1 ,
+       t00525:p2 ;
   :quo "VEILIG IN JEZUS ARMEN"@nld ;
-  :sym tomb:t00525.s1 ,
-       tomb:t00525.s2 .
+  :sym t00525:s1 ,
+       t00525:s2 .
 
-tomb:t00525.p1 a t:person.n.01 ;
+t00525:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1937-06-29" ;
   :dod "2001-04-11" ;
   :nam "EPPO RUITER" ;
-  :rol tomb:t00525.r1 ,
-       tomb:t00525.r2 ,
-       tomb:t00525.r3 .
+  :rol t00525:r1 ,
+       t00525:r2 ,
+       t00525:r3 .
 
-tomb:t00525.p2 a t:person.n.01 ;
+t00525:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1935-05-01" ;
   :dod "2011-04-12" ;
   :nam "GEERTJE STAAL" ;
-  :rol tomb:t00525.r4 ,
-       tomb:t00525.r5 .
+  :rol t00525:r4 ,
+       t00525:r5 .
 
-tomb:t00525.r1 a t:husband.n.01 ;
+t00525:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00525.p2 .
+  :tgt t00525:p2 .
 
-tomb:t00525.r2 a t:father.n.01 ;
+t00525:r2 a t:father.n.01 ;
   :att "ZORGZAME" ;
-  :tgt tomb:t00525.p3 .
+  :tgt t00525:p3 .
 
-tomb:t00525.r3 a t:grandfather.n.01 ;
-  :tgt tomb:t00525.p3 .
+t00525:r3 a t:grandfather.n.01 ;
+  :tgt t00525:p3 .
 
-tomb:t00525.r4 a t:mother.n.01 ;
+t00525:r4 a t:mother.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00525.p3 .
+  :tgt t00525:p3 .
 
-tomb:t00525.r5 a t:grandmother.n.01 ;
-  :tgt tomb:t00525.p3 .
+t00525:r5 a t:grandmother.n.01 ;
+  :tgt t00525:p3 .
 
-tomb:t00525.s1 a t:yacht.n.01 .
+t00525:s1 a t:yacht.n.01 .
 
-tomb:t00525.s2 a t:flower.n.01 .
+t00525:s2 a t:flower.n.01 .
 
-tomb:t00525.im1 a t:photo.n.01 ;
+t00525:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

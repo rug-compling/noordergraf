@@ -1,38 +1,39 @@
+@prefix t00061: <https://noordergraf.rug.nl/tomb/t00061#> .
 
 tomb:t00061 a t:tombstone.n.01 ;
-  :image tomb:t00061.im1 ;
+  :image t00061:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00061.p1 ,
-       tomb:t00061.p2 ;
-  :sym tomb:t00061.s1 .
+  :ent t00061:p1 ,
+       t00061:p2 ;
+  :sym t00061:s1 .
 
-tomb:t00061.p1 a t:person.n.01 ;
+t00061:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1914-02-01" ;
   :dod "1980-05-25" ;
   :nam "EGBERT VAN DALEN" ;
-  :rol tomb:t00061.r1 ,
-       tomb:t00061.r2 ,
-       tomb:t00061.r3 .
+  :rol t00061:r1 ,
+       t00061:r2 ,
+       t00061:r3 .
 
-tomb:t00061.p2 a t:person.n.01 ;
+t00061:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1918-10-28" ;
   :dod "1994-04-27" ;
   :nam "GERRIDINA GEERLINGS" .
 
-tomb:t00061.r1 a t:father.n.01 .
+t00061:r1 a t:father.n.01 .
 
-tomb:t00061.r2 a t:grandfather.n.01 .
+t00061:r2 a t:grandfather.n.01 .
 
-tomb:t00061.r3 a t:husband.n.01 ;
+t00061:r3 a t:husband.n.01 ;
   :att "GELIEFD" ,
        "LIEVE" ;
-  :tgt tomb:t00061.p2 .
+  :tgt t00061:p2 .
 
-tomb:t00061.s1 a t:frond.n.01 .
+t00061:s1 a t:frond.n.01 .
 
-tomb:t00061.im1 a t:photo.n.01 ;
+t00061:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

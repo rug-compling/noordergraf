@@ -1,23 +1,24 @@
+@prefix t00199: <https://noordergraf.rug.nl/tomb/t00199#> .
 
 tomb:t00199 a t:tombstone.n.01 ;
-  :image tomb:t00199.im1 ;
+  :image t00199:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00199.p1 ,
-       tomb:t00199.p2 .
+  :ent t00199:p1 ,
+       t00199:p2 .
 
-tomb:t00199.p1 a t:person.n.01 ;
+t00199:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1886-01-24" ;
   :dod "1965-09-01" ;
   :nam "HEIKA SCHREUDER" .
 
-tomb:t00199.p2 a t:person.n.01 ;
+t00199:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1885-09-12" ;
   :dod "1969-09-19" ;
   :nam "REGNERUS DANTUMA" .
 
-tomb:t00199.im1 a t:photo.n.01 ;
+t00199:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

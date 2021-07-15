@@ -1,58 +1,59 @@
+@prefix t00770: <https://noordergraf.rug.nl/tomb/t00770#> .
 
 tomb:t00770 a t:tombstone.n.01 ;
-  :image tomb:t00770.im1 ;
+  :image t00770:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00770.g1 ,
-       tomb:t00770.p1 ,
-       tomb:t00770.p2 ,
-       tomb:t00770.p3 ;
+  :ent t00770:g1 ,
+       t00770:p1 ,
+       t00770:p2 ,
+       t00770:p3 ;
   :lan "NLD" .
 
-tomb:t00770.c1 a t:village.n.02 ;
+t00770:c1 a t:village.n.02 ;
   :geo place:Weerdinge2744927 ;
   :place "WEERDINGE" .
 
-tomb:t00770.g1 a t:group.n.01 ;
-  :mem tomb:t00770.p1 ,
-       tomb:t00770.p2 .
+t00770:g1 a t:group.n.01 ;
+  :mem t00770:p1 ,
+       t00770:p2 .
 
-tomb:t00770.p1 a t:person.n.01 ;
+t00770:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1845-11-24" ;
   :dod "1911-06-05" ;
   :nam "JAN SIKKEN" ;
-  :pob tomb:t00770.c1 ;
-  :pod tomb:t00770.c1 ;
-  :rol tomb:t00770.r1 .
+  :pob t00770:c1 ;
+  :pod t00770:c1 ;
+  :rol t00770:r1 .
 
-tomb:t00770.p2 a t:person.n.01 ;
+t00770:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1855-04-21" ;
   :dod "1909-08-15" ;
   :nam "LAMMEGIEN JOLING" ;
-  :pob tomb:t00770.c1 ;
-  :pod tomb:t00770.c1 ;
-  :rol tomb:t00770.r2 .
+  :pob t00770:c1 ;
+  :pod t00770:c1 ;
+  :rol t00770:r2 .
 
-tomb:t00770.p3 a t:person.n.01 ;
+t00770:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1881-09-28" ;
   :dod "1900-09-28" ;
   :nam "JAN JOLING SIKKEN" ;
-  :pob tomb:t00770.c1 ;
-  :pod tomb:t00770.c1 ;
-  :rol tomb:t00770.r3 .
+  :pob t00770:c1 ;
+  :pod t00770:c1 ;
+  :rol t00770:r3 .
 
-tomb:t00770.r1 a t:widower.n.01 ;
-  :tgt tomb:t00770.p2 .
+t00770:r1 a t:widower.n.01 ;
+  :tgt t00770:p2 .
 
-tomb:t00770.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00770.p1 .
+t00770:r2 a t:spouse.n.01 ;
+  :tgt t00770:p1 .
 
-tomb:t00770.r3 a t:son.n.01 ;
-  :tgt tomb:t00770.g1 .
+t00770:r3 a t:son.n.01 ;
+  :tgt t00770:g1 .
 
-tomb:t00770.im1 a t:photo.n.01 ;
+t00770:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

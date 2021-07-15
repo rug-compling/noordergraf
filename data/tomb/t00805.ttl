@@ -1,35 +1,36 @@
+@prefix t00805: <https://noordergraf.rug.nl/tomb/t00805#> .
 
 tomb:t00805 a t:tombstone.n.01 ;
-  :image tomb:t00805.im1 ;
+  :image t00805:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00805.p1 ,
-       tomb:t00805.p2 ;
+  :ent t00805:p1 ,
+       t00805:p2 ;
   :quo "HIER LIGT HAAR STOFFE \\ LIJK OVERSCHOT INT KILLE \\ GRAF TER NEDER. MOCHT \\ TOCH HAAR ZIELE ZIJN BIJ \\ GOD DAN WAS HAAR \\ HEENGAAN VREDE!"@nld ;
-  :sym tomb:t00805.s1 .
+  :sym t00805:s1 .
 
-tomb:t00805.c1 a t:village.n.02 ;
+t00805:c1 a t:village.n.02 ;
   :geo place:TenBoer2746491 ;
   :place "TEN BOER" .
 
-tomb:t00805.p1 a t:person.n.01 ;
+t00805:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1835-05-16" ;
   :dod "1911-09-21" ;
   :nam "ETJE DERKS BOER" ;
-  :pob tomb:t00805.c1 ;
-  :pod tomb:t00805.c1 ;
-  :rol tomb:t00805.r1 .
+  :pob t00805:c1 ;
+  :pod t00805:c1 ;
+  :rol t00805:r1 .
 
-tomb:t00805.p2 a t:person.n.01 ;
+t00805:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "J.P. VINK" .
 
-tomb:t00805.r1 a t:widow.n.01 ;
-  :tgt tomb:t00805.p2 .
+t00805:r1 a t:widow.n.01 ;
+  :tgt t00805:p2 .
 
-tomb:t00805.s1 a t:butterfly.n.01 .
+t00805:s1 a t:butterfly.n.01 .
 
-tomb:t00805.im1 a t:photo.n.01 ;
+t00805:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

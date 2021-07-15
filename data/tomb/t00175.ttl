@@ -1,23 +1,24 @@
+@prefix t00175: <https://noordergraf.rug.nl/tomb/t00175#> .
 
 tomb:t00175 a t:tombstone.n.01 ;
-  :image tomb:t00175.im1 ;
+  :image t00175:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00175.p1 ,
-       tomb:t00175.p2 .
+  :ent t00175:p1 ,
+       t00175:p2 .
 
-tomb:t00175.p1 a t:person.n.01 ;
+t00175:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1850-05-09" ;
   :dod "1932-06-26" ;
   :nam "H.J. BOSMA" .
 
-tomb:t00175.p2 a t:person.n.01 ;
+t00175:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1866-09-01" ;
   :dod "1940-07-26" ;
   :nam "B. BOSMA-HAVERBULT" .
 
-tomb:t00175.im1 a t:photo.n.01 ;
+t00175:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

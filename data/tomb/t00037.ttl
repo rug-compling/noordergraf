@@ -1,26 +1,27 @@
+@prefix t00037: <https://noordergraf.rug.nl/tomb/t00037#> .
 
 tomb:t00037 a t:tombstone.n.01 ;
-  :image tomb:t00037.im1 ;
+  :image t00037:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00037.p1 ;
+  :ent t00037:p1 ;
   :quo "ZALIG IS DER KINDREN LOT, JONG GESTORVEN VROEG BIJ GOD" ;
-  :sym tomb:t00037.s1 .
+  :sym t00037:s1 .
 
-tomb:t00037.c1 a t:village.n.02 ;
+t00037:c1 a t:village.n.02 ;
   :geo place:Helpman2754444 ;
   :place "HELPMAN" .
 
-tomb:t00037.p1 a t:person.n.01 ;
+t00037:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1878-03-19" ;
   :dod "1890-12-30" ;
   :nam "TJEERT PIETER BOUWMAN" ;
-  :pob tomb:t00037.c1 ;
-  :pod tomb:t00037.c1 .
+  :pob t00037:c1 ;
+  :pod t00037:c1 .
 
-tomb:t00037.s1 a t:rose.n.01 .
+t00037:s1 a t:rose.n.01 .
 
-tomb:t00037.im1 a t:photo.n.01 ;
+t00037:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

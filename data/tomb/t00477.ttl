@@ -1,47 +1,48 @@
+@prefix t00477: <https://noordergraf.rug.nl/tomb/t00477#> .
 
 tomb:t00477 a t:tombstone.n.01 ;
-  :image tomb:t00477.im1 ;
+  :image t00477:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00477.p1 ,
-       tomb:t00477.p2 ;
-  :sym tomb:t00477.s1 .
+  :ent t00477:p1 ,
+       t00477:p2 ;
+  :sym t00477:s1 .
 
-tomb:t00477.c1 a t:city.n.01 ;
+t00477:c1 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00477.p1 a t:person.n.01 ;
+t00477:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1876-07-02" ;
   :dod "1950-12-19" ;
   :nam "FRANCINA MARIA LANGENDIJK" ;
-  :pob tomb:t00477.c1 ;
-  :pod tomb:t00477.c1 ;
-  :rol tomb:t00477.r1 .
+  :pob t00477:c1 ;
+  :pod t00477:c1 ;
+  :rol t00477:r1 .
 
-tomb:t00477.p2 a t:person.n.01 ;
+t00477:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1874-06-24" ;
   :dod "1955-08-01" ;
   :nam "JOHANNES HOLLENGA" ;
-  :pob tomb:t00477.c1 ;
-  :pod tomb:t00477.c1 .
+  :pob t00477:c1 ;
+  :pod t00477:c1 .
 
-tomb:t00477.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00477.p2 .
+t00477:r1 a t:spouse.n.01 ;
+  :tgt t00477:p2 .
 
-tomb:t00477.s1 a t:composite.n.01 ;
-  :prt tomb:t00477.s2 ,
-       tomb:t00477.s3 ,
-       tomb:t00477.s4 .
+t00477:s1 a t:composite.n.01 ;
+  :prt t00477:s2 ,
+       t00477:s3 ,
+       t00477:s4 .
 
-tomb:t00477.s2 a t:frond.n.02 .
+t00477:s2 a t:frond.n.02 .
 
-tomb:t00477.s3 a t:cross.n.03 .
+t00477:s3 a t:cross.n.03 .
 
-tomb:t00477.s4 a t:ribbon.n.01 .
+t00477:s4 a t:ribbon.n.01 .
 
-tomb:t00477.im1 a t:photo.n.01 ;
+t00477:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

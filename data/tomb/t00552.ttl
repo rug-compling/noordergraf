@@ -1,35 +1,36 @@
+@prefix t00552: <https://noordergraf.rug.nl/tomb/t00552#> .
 
 tomb:t00552 a t:tombstone.n.01 ;
-  :image tomb:t00552.im1 ;
+  :image t00552:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00552.p1 ,
-       tomb:t00552.p2 ;
+  :ent t00552:p1 ,
+       t00552:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00552.s1 .
+  :sym t00552:s1 .
 
-tomb:t00552.c1 a t:city.n.01 ;
+t00552:c1 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00552.o1 a t:goldsmith.n.01 ;
+t00552:o1 a t:goldsmith.n.01 ;
   :hco "88050" ;
-  :loc tomb:t00552.c1 .
+  :loc t00552:c1 .
 
-tomb:t00552.o2 a t:designer.n.01 ;
+t00552:o2 a t:designer.n.01 ;
   :tgt tomb:t00552 .
 
-tomb:t00552.p1 a t:person.n.01 ;
+t00552:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "BARENDS" ;
-  :occ tomb:t00552.o1 .
+  :occ t00552:o1 .
 
-tomb:t00552.p2 a t:person.n.01 ;
+t00552:p2 a t:person.n.01 ;
   :nam "H. HOEKSEMA" ;
-  :occ tomb:t00552.o2 .
+  :occ t00552:o2 .
 
-tomb:t00552.s1 a t:butterfly.n.01 .
+t00552:s1 a t:butterfly.n.01 .
 
-tomb:t00552.im1 a t:photo.n.01 ;
+t00552:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

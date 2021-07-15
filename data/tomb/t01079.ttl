@@ -1,36 +1,37 @@
+@prefix t01079: <https://noordergraf.rug.nl/tomb/t01079#> .
 
 tomb:t01079 a t:tombstone.n.01 ;
-  :image tomb:t01079.im1 ;
+  :image t01079:im1 ;
   :site site:gr9906PPbierum ;
-  :ent tomb:t01079.p1 ;
+  :ent t01079:p1 ;
   :lan "NLD" ;
-  :sym tomb:t01079.s1 ,
-       tomb:t01079.s2 ,
-       tomb:t01079.s3 .
+  :sym t01079:s1 ,
+       t01079:s2 ,
+       t01079:s3 .
 
-tomb:t01079.c1 a t:village.n.02 ;
+t01079:c1 a t:village.n.02 ;
   :geo place:Bierum2758983 ;
   :place "BIERUM" .
 
-tomb:t01079.c2 a t:village.n.02 ;
+t01079:c2 a t:village.n.02 ;
   :geo place:Uithuizermeeden2745968 ;
   :place "UITHUIZERMEEDEN" .
 
-tomb:t01079.p1 a t:person.n.01 ;
+t01079:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1830-08-30" ;
   :dod "1880-02-09" ;
   :nam "KLAAS K. HOFSTEE" ;
-  :pob tomb:t01079.c1 ;
-  :pod tomb:t01079.c2 .
+  :pob t01079:c1 ;
+  :pod t01079:c2 .
 
-tomb:t01079.s1 a t:butterfly.n.01 .
+t01079:s1 a t:butterfly.n.01 .
 
-tomb:t01079.s2 a t:scythe.n.01 .
+t01079:s2 a t:scythe.n.01 .
 
-tomb:t01079.s3 a t:oak.n.01 .
+t01079:s3 a t:oak.n.01 .
 
-tomb:t01079.im1 a t:photo.n.01 ;
+t01079:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

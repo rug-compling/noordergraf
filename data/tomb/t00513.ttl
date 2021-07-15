@@ -1,37 +1,38 @@
+@prefix t00513: <https://noordergraf.rug.nl/tomb/t00513#> .
 
 tomb:t00513 a t:tombstone.n.01 ;
-  :image tomb:t00513.im1 ;
+  :image t00513:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00513.p1 ;
-  :img tomb:t00513.i1 ;
+  :ent t00513:p1 ;
+  :img t00513:i1 ;
   :quo "DISINI KUBERHENTILAH \\ TA'LAGI SAKIT DAN LELAH \\ KU TINGGALKANLAH SEMUA \\ DAN PULANG KERUMAN HUA"@msa ;
   :ref "WAHJU 1:17,18"@msa .
 
-tomb:t00513.c1 a t:village.n.02 ;
+t00513:c1 a t:village.n.02 ;
   :geo place:Amahai1651591 ;
   :place "AMAHEI" .
 
-tomb:t00513.c2 a t:province.n.01 ;
+t00513:c2 a t:province.n.01 ;
   :geo place:Molukken1636629 ;
-  :mem tomb:t00513.c1 ;
+  :mem t00513:c1 ;
   :place "MOLUKKEN" .
 
-tomb:t00513.c3 a t:village.n.02 ;
+t00513:c3 a t:village.n.02 ;
   :geo place:Foxhol2755853 ;
   :place "FOXHOL" .
 
-tomb:t00513.i1 a t:portrait.n.02 ;
-  :thm tomb:t00513.p1 .
+t00513:i1 a t:portrait.n.02 ;
+  :thm t00513:p1 .
 
-tomb:t00513.p1 a t:person.n.01 ;
+t00513:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1926-10-12" ;
   :dod "1984-02-15" ;
   :nam "JOHANNES SIMON TALARIMA" ;
-  :pob tomb:t00513.c1 ;
-  :pod tomb:t00513.c3 .
+  :pob t00513:c1 ;
+  :pod t00513:c3 .
 
-tomb:t00513.im1 a t:photo.n.01 ;
+t00513:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

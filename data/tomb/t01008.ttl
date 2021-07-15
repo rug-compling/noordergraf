@@ -1,35 +1,36 @@
+@prefix t01008: <https://noordergraf.rug.nl/tomb/t01008#> .
 
 tomb:t01008 a t:tombstone.n.01 ;
-  :image tomb:t01008.im1 ;
+  :image t01008:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t01008.p1 ,
-       tomb:t01008.p2 ;
+  :ent t01008:p1 ,
+       t01008:p2 ;
   :quo "WAT OOK OP AARD MOOG HEEN \\ GAAN OF VERDERVEN, \\ DE LIEFDE, DIE DE HARTENSAÂM \\ VERBINDT, \\ IS EEUWIG ALS GOD ZELF, ZIJ \\ KAN NIET STERVEN, MAAR HOOPT DAT Z'EENS DE \\ DIERBREN WEDERVINDT."@nld ;
-  :sym tomb:t01008.s1 ,
-       tomb:t01008.s2 ,
-       tomb:t01008.s3 .
+  :sym t01008:s1 ,
+       t01008:s2 ,
+       t01008:s3 .
 
-tomb:t01008.p1 a t:person.n.01 ;
+t01008:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1817-11-12" ;
   :dod "1875-06-20" ;
   :nam "THIJS SJABBES DIJKHUIS" ;
-  :rol tomb:t01008.r1 .
+  :rol t01008:r1 .
 
-tomb:t01008.p2 a t:person.n.01 ;
+t01008:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "J.J. ZWAAN" .
 
-tomb:t01008.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01008.p2 .
+t01008:r1 a t:spouse.n.01 ;
+  :tgt t01008:p2 .
 
-tomb:t01008.s1 a t:frond.n.01 .
+t01008:s1 a t:frond.n.01 .
 
-tomb:t01008.s2 a t:frond.n.01 .
+t01008:s2 a t:frond.n.01 .
 
-tomb:t01008.s3 a t:ribbon.n.01 .
+t01008:s3 a t:ribbon.n.01 .
 
-tomb:t01008.im1 a t:photo.n.01 ;
+t01008:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

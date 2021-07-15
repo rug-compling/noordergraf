@@ -1,29 +1,30 @@
+@prefix t01036: <https://noordergraf.rug.nl/tomb/t01036#> .
 
 tomb:t01036 a t:tombstone.n.01 ;
-  :image tomb:t01036.im1 ;
+  :image t01036:im1 ;
   :site site:gr9804TEnoordhorn ;
-  :ent tomb:t01036.p1 ;
+  :ent t01036:p1 ;
   :lan "NLD" ;
-  :sym tomb:t01036.s1 .
+  :sym t01036:s1 .
 
-tomb:t01036.a1 a t:weeping.a.02 .
+t01036:a1 a t:weeping.a.02 .
 
-tomb:t01036.c1 a t:village.n.02 ;
+t01036:c1 a t:village.n.02 ;
   :geo place:Noordhorn2749875 ;
   :place "NOORDHORN" .
 
-tomb:t01036.p1 a t:person.n.01 ;
+t01036:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1847-06-10" ;
   :dod "1926-03-10" ;
   :nam "JANTJE VOS" ;
-  :pob tomb:t01036.c1 ;
-  :pod tomb:t01036.c1 .
+  :pob t01036:c1 ;
+  :pod t01036:c1 .
 
-tomb:t01036.s1 a t:willow.n.01 ;
-  :att tomb:t01036.a1 .
+t01036:s1 a t:willow.n.01 ;
+  :att t01036:a1 .
 
-tomb:t01036.im1 a t:photo.n.01 ;
+t01036:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

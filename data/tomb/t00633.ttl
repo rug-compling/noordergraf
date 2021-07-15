@@ -1,38 +1,39 @@
+@prefix t00633: <https://noordergraf.rug.nl/tomb/t00633#> .
 
 tomb:t00633 a t:tombstone.n.01 ;
-  :image tomb:t00633.im1 ;
+  :image t00633:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00633.p1 ,
-       tomb:t00633.p2 ;
+  :ent t00633:p1 ,
+       t00633:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00633.s1 ,
-       tomb:t00633.s2 ,
-       tomb:t00633.s3 ,
-       tomb:t00633.s4 .
+  :sym t00633:s1 ,
+       t00633:s2 ,
+       t00633:s3 ,
+       t00633:s4 .
 
-tomb:t00633.p1 a t:person.n.01 ;
+t00633:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1832-05-29" ;
   :dod "1894-05-27" ;
   :nam "ELIZA MEIHUIZEN" ;
-  :rol tomb:t00633.r1 .
+  :rol t00633:r1 .
 
-tomb:t00633.p2 a t:person.n.01 ;
+t00633:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ENNO BRONSEMA" .
 
-tomb:t00633.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00633.p2 .
+t00633:r1 a t:spouse.n.01 ;
+  :tgt t00633:p2 .
 
-tomb:t00633.s1 a t:butterfly.n.01 .
+t00633:s1 a t:butterfly.n.01 .
 
-tomb:t00633.s2 a t:oak.n.02 .
+t00633:s2 a t:oak.n.02 .
 
-tomb:t00633.s3 a t:oak.n.02 .
+t00633:s3 a t:oak.n.02 .
 
-tomb:t00633.s4 a t:ribbon.n.01 .
+t00633:s4 a t:ribbon.n.01 .
 
-tomb:t00633.im1 a t:photo.n.01 ;
+t00633:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

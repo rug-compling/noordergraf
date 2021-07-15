@@ -1,45 +1,46 @@
+@prefix t00760: <https://noordergraf.rug.nl/tomb/t00760#> .
 
 tomb:t00760 a t:tombstone.n.01 ;
-  :image tomb:t00760.im1 ;
+  :image t00760:im1 ;
   :site site:gr9936BTfarmsum ;
-  :ent tomb:t00760.p1 ,
-       tomb:t00760.p2 ;
+  :ent t00760:p1 ,
+       t00760:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00760.s0 ,
-       tomb:t00760.s1 ,
-       tomb:t00760.s2 .
+  :sym t00760:s0 ,
+       t00760:s1 ,
+       t00760:s2 .
 
-tomb:t00760.c1 a t:village.n.02 ;
+t00760:c1 a t:village.n.02 ;
   :geo place:Termunten2746428 ;
   :place "TERMUNTEN" .
 
-tomb:t00760.c2 a t:village.n.02 ;
+t00760:c2 a t:village.n.02 ;
   :geo place:Oterdum2749209 ;
   :place "OTERDUM" .
 
-tomb:t00760.p1 a t:person.n.01 ;
+t00760:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1835-11-09" ;
   :dod "1870-05-14" ;
   :nam "GRIETJE H. STEENHUIS" ;
-  :pob tomb:t00760.c1 ;
-  :pod tomb:t00760.c2 ;
-  :rol tomb:t00760.r1 .
+  :pob t00760:c1 ;
+  :pod t00760:c2 ;
+  :rol t00760:r1 .
 
-tomb:t00760.p2 a t:person.n.01 ;
+t00760:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "G.P. TOXOPEUS" .
 
-tomb:t00760.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00760.p2 .
+t00760:r1 a t:spouse.n.01 ;
+  :tgt t00760:p2 .
 
-tomb:t00760.s0 a t:entity.n.01 .
+t00760:s0 a t:entity.n.01 .
 
-tomb:t00760.s1 a t:skull.n.01 .
+t00760:s1 a t:skull.n.01 .
 
-tomb:t00760.s2 a t:bone.n.01 .
+t00760:s2 a t:bone.n.01 .
 
-tomb:t00760.im1 a t:photo.n.01 ;
+t00760:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,54 +1,55 @@
+@prefix t00240: <https://noordergraf.rug.nl/tomb/t00240#> .
 
 tomb:t00240 a t:tombstone.n.01 ;
-  :image tomb:t00240.im1 ;
+  :image t00240:im1 ;
   :site site:gr9751BBharen ;
-  :ent tomb:t00240.p1 ,
-       tomb:t00240.p2 ,
-       tomb:t00240.p3 ;
+  :ent t00240:p1 ,
+       t00240:p2 ,
+       t00240:p3 ;
   :ref "PSALM 68:10-B" ;
-  :sym tomb:t00240.s1 .
+  :sym t00240:s1 .
 
-tomb:t00240.a1 a t:weeping.a.02 .
+t00240:a1 a t:weeping.a.02 .
 
-tomb:t00240.c1 a t:village.n.02 ;
+t00240:c1 a t:village.n.02 ;
   :geo place:Onnen2749588 ;
   :place "ONNEN" .
 
-tomb:t00240.p1 a t:person.n.01 ;
+t00240:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1869-10-18" ;
   :dod "1951-08-19" ;
   :nam "BEREND HEKMAN" ;
-  :pob tomb:t00240.c1 ;
-  :pod tomb:t00240.c1 ;
-  :rol tomb:t00240.r1 ,
-       tomb:t00240.r2 ,
-       tomb:t00240.r3 .
+  :pob t00240:c1 ;
+  :pod t00240:c1 ;
+  :rol t00240:r1 ,
+       t00240:r2 ,
+       t00240:r3 .
 
-tomb:t00240.p2 a t:person.n.01 ;
+t00240:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANNECHIEN TAKENS" .
 
-tomb:t00240.p3 a t:person.n.01 ;
+t00240:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "GEERTRUIDA VAN DALEN" .
 
-tomb:t00240.r1 a t:father.n.01 ;
+t00240:r1 a t:father.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00240.p2 .
+  :tgt t00240:p2 .
 
-tomb:t00240.r2 a t:widower.n.01 ;
+t00240:r2 a t:widower.n.01 ;
   :beg "02-11-1918" ;
-  :tgt tomb:t00240.p2 .
+  :tgt t00240:p2 .
 
-tomb:t00240.r3 a t:widower.n.01 ;
-  :bef tomb:t00240.r2 ;
-  :tgt tomb:t00240.p3 .
+t00240:r3 a t:widower.n.01 ;
+  :bef t00240:r2 ;
+  :tgt t00240:p3 .
 
-tomb:t00240.s1 a t:willow.n.01 ;
-  :att tomb:t00240.a1 .
+t00240:s1 a t:willow.n.01 ;
+  :att t00240:a1 .
 
-tomb:t00240.im1 a t:photo.n.01 ;
+t00240:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,31 +1,32 @@
+@prefix t00332: <https://noordergraf.rug.nl/tomb/t00332#> .
 
 tomb:t00332 a t:tombstone.n.01 ;
-  :image tomb:t00332.im1 ;
+  :image t00332:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00332.p1 ,
-       tomb:t00332.p2 .
+  :ent t00332:p1 ,
+       t00332:p2 .
 
-tomb:t00332.p1 a t:person.n.01 ;
+t00332:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1823-03-10" ;
   :dod "1889-11-03" ;
   :nam "AREND J. SEINEN" ;
-  :rol tomb:t00332.r1 ,
-       tomb:t00332.r2 .
+  :rol t00332:r1 ,
+       t00332:r2 .
 
-tomb:t00332.p2 a t:person.n.01 ;
+t00332:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1831-09-30" ;
   :dod "1906-08-08" ;
   :nam "DINA REGINA DE HAAN" .
 
-tomb:t00332.r1 a t:spouse.n.01 ;
-  :bef tomb:t00332.r2 .
+t00332:r1 a t:spouse.n.01 ;
+  :bef t00332:r2 .
 
-tomb:t00332.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00332.p2 .
+t00332:r2 a t:spouse.n.01 ;
+  :tgt t00332:p2 .
 
-tomb:t00332.im1 a t:photo.n.01 ;
+t00332:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

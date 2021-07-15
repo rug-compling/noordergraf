@@ -1,36 +1,37 @@
+@prefix t00578: <https://noordergraf.rug.nl/tomb/t00578#> .
 
 tomb:t00578 a t:tombstone.n.01 ;
-  :image tomb:t00578.im1 ;
+  :image t00578:im1 ;
   :site site:gr9951STwinsum ;
-  :ent tomb:t00578.p1 ;
+  :ent t00578:p1 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00578.s1 ,
-       tomb:t00578.s2 ,
-       tomb:t00578.s3 .
+  :sym t00578:s1 ,
+       t00578:s2 ,
+       t00578:s3 .
 
-tomb:t00578.c1 a t:city.n.01 ;
+t00578:c1 a t:city.n.01 ;
   :geo place:Assen2759633 ;
   :place "ASSEN" .
 
-tomb:t00578.c2 a t:village.n.02 ;
+t00578:c2 a t:village.n.02 ;
   :geo place:Obergum2749742 ;
   :place "OBERGUM" .
 
-tomb:t00578.p1 a t:person.n.01 ;
+t00578:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1825-09-07" ;
   :dod "1886-11-28" ;
   :nam "EVERT VAN VEEN" ;
-  :pob tomb:t00578.c1 ;
-  :pod tomb:t00578.c2 .
+  :pob t00578:c1 ;
+  :pod t00578:c2 .
 
-tomb:t00578.s1 a t:frond.n.01 .
+t00578:s1 a t:frond.n.01 .
 
-tomb:t00578.s2 a t:frond.n.01 .
+t00578:s2 a t:frond.n.01 .
 
-tomb:t00578.s3 a t:ribbon.n.01 .
+t00578:s3 a t:ribbon.n.01 .
 
-tomb:t00578.im1 a t:photo.n.01 ;
+t00578:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

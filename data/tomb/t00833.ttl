@@ -1,46 +1,47 @@
+@prefix t00833: <https://noordergraf.rug.nl/tomb/t00833#> .
 
 tomb:t00833 a t:tombstone.n.01 ;
-  :image tomb:t00833.im1 ;
+  :image t00833:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00833.p1 ,
-       tomb:t00833.p2 ;
+  :ent t00833:p1 ,
+       t00833:p2 ;
   :quo "RUST ZACHT, LIEVE VADER"@nld ;
   :ref "GEZANG 201:1"@nld ;
-  :sym tomb:t00833.s1 .
+  :sym t00833:s1 .
 
-tomb:t00833.a1 a t:weeping.a.02 .
+t00833:a1 a t:weeping.a.02 .
 
-tomb:t00833.c1 a t:village.n.02 ;
+t00833:c1 a t:village.n.02 ;
   :geo place:Dalen2757857 ;
   :place "DALEN" .
 
-tomb:t00833.c2 a t:town.n.01 ;
+t00833:c2 a t:town.n.01 ;
   :nam "HOLSLOOTBRUG" .
 
-tomb:t00833.p1 a t:person.n.01 ;
+t00833:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1876-10-13" ;
   :dod "1934-11-03" ;
   :nam "ALBERT DOBBEN" ;
-  :pob tomb:t00833.c1 ;
-  :pod tomb:t00833.c2 ;
-  :rol tomb:t00833.r1 ,
-       tomb:t00833.r2 .
+  :pob t00833:c1 ;
+  :pod t00833:c2 ;
+  :rol t00833:r1 ,
+       t00833:r2 .
 
-tomb:t00833.p2 a t:person.n.01 ;
+t00833:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "FENNA LANTNG" .
 
-tomb:t00833.r1 a t:spouse.n.01 ;
+t00833:r1 a t:spouse.n.01 ;
   :att "GELIEFD" ;
-  :tgt tomb:t00833.p2 .
+  :tgt t00833:p2 .
 
-tomb:t00833.r2 a t:father.n.01 .
+t00833:r2 a t:father.n.01 .
 
-tomb:t00833.s1 a t:willow.n.01 ;
-  :att tomb:t00833.a1 .
+t00833:s1 a t:willow.n.01 ;
+  :att t00833:a1 .
 
-tomb:t00833.im1 a t:photo.n.01 ;
+t00833:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,50 +1,51 @@
+@prefix t00620: <https://noordergraf.rug.nl/tomb/t00620#> .
 
 tomb:t00620 a t:tombstone.n.01 ;
-  :image tomb:t00620.im1 ;
+  :image t00620:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00620.p1 ,
-       tomb:t00620.p2 ,
-       tomb:t00620.p3 ;
+  :ent t00620:p1 ,
+       t00620:p2 ,
+       t00620:p3 ;
   :lan "NLD" .
 
-tomb:t00620.c1 a t:village.n.02 ;
+t00620:c1 a t:village.n.02 ;
   :geo place:Borgercompagnie2758618 ;
   :place "BORGERCOMPAGNIE" .
 
-tomb:t00620.c2 a t:town.n.01 ;
+t00620:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00620.c3 a t:city.n.01 ;
+t00620:c3 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00620.c4 a t:village.n.02 ;
+t00620:c4 a t:village.n.02 ;
   :geo place:Asten2759621 ;
   :place "ASTEN" .
 
-tomb:t00620.p1 a t:person.n.01 ;
+t00620:p1 a t:person.n.01 ;
   :dob "1925-02-05" ;
   :dod "2015-04-02" ;
   :nam "W.R. MULDER" ;
-  :pob tomb:t00620.c1 ;
-  :pod tomb:t00620.c2 .
+  :pob t00620:c1 ;
+  :pod t00620:c2 .
 
-tomb:t00620.p2 a t:person.n.01 ;
+t00620:p2 a t:person.n.01 ;
   :dob "1930-06-06" ;
   :dod "1975-05-11" ;
   :nam "R. HAVINGA" ;
-  :pob tomb:t00620.c3 ;
-  :pod tomb:t00620.c1 .
+  :pob t00620:c3 ;
+  :pod t00620:c1 .
 
-tomb:t00620.p3 a t:person.n.01 ;
+t00620:p3 a t:person.n.01 ;
   :dob "1926-03-20" ;
   :dod "2008-05-25" ;
   :nam "P.J. STRIJBOSCH" ;
-  :pob tomb:t00620.c4 ;
-  :pod tomb:t00620.c2 .
+  :pob t00620:c4 ;
+  :pod t00620:c2 .
 
-tomb:t00620.im1 a t:photo.n.01 ;
+t00620:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,54 +1,55 @@
+@prefix t00143: <https://noordergraf.rug.nl/tomb/t00143#> .
 
 tomb:t00143 a t:tombstone.n.01 ;
-  :image tomb:t00143.im1 ;
+  :image t00143:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00143.p1 ,
-       tomb:t00143.p2 ;
-  :sym tomb:t00143.s1 .
+  :ent t00143:p1 ,
+       t00143:p2 ;
+  :sym t00143:s1 .
 
-tomb:t00143.c1 a t:city.n.01 ;
+t00143:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00143.c2 a t:village.n.02 ;
+t00143:c2 a t:village.n.02 ;
   :geo place:Ruinerwold2747828 ;
   :place "RUINERWOLD" .
 
-tomb:t00143.c3 a t:village.n.02 ;
+t00143:c3 a t:village.n.02 ;
   :geo place:Havelte2754752 ;
   :place "HAVELTE" .
 
-tomb:t00143.c4 a t:village.n.02 ;
+t00143:c4 a t:village.n.02 ;
   :geo place:Noorderhoogebrug2749931 ;
   :place "NOORDERHOOGEBRUG" .
 
-tomb:t00143.p1 a t:person.n.01 ;
+t00143:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1882-12-31" ;
   :dod "1940-11-29" ;
   :nam "JENTJE SCHIPHORST" ;
-  :pob tomb:t00143.c2 ;
-  :pod tomb:t00143.c1 ;
-  :rol tomb:t00143.r1 ,
-       tomb:t00143.r2 .
+  :pob t00143:c2 ;
+  :pod t00143:c1 ;
+  :rol t00143:r1 ,
+       t00143:r2 .
 
-tomb:t00143.p2 a t:person.n.01 ;
+t00143:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1881-09-20" ;
   :dod "1967-03-12" ;
   :nam "GERRIT LEFFERTS" ;
-  :pob tomb:t00143.c3 ;
-  :pod tomb:t00143.c4 .
+  :pob t00143:c3 ;
+  :pod t00143:c4 .
 
-tomb:t00143.r1 a t:mother.n.01 .
+t00143:r1 a t:mother.n.01 .
 
-tomb:t00143.r2 a t:wife.n.01 ;
+t00143:r2 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00143.p2 .
+  :tgt t00143:p2 .
 
-tomb:t00143.s1 a t:frond.n.01 .
+t00143:s1 a t:frond.n.01 .
 
-tomb:t00143.im1 a t:photo.n.01 ;
+t00143:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

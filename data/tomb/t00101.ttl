@@ -1,26 +1,27 @@
+@prefix t00101: <https://noordergraf.rug.nl/tomb/t00101#> .
 
 tomb:t00101 a t:tombstone.n.01 ;
-  :image tomb:t00101.im1 ;
+  :image t00101:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00101.p1 .
+  :ent t00101:p1 .
 
-tomb:t00101.c1 a t:city.n.01 ;
+t00101:c1 a t:city.n.01 ;
   :geo place:Jakarta1642911 ;
   :place "BATAVIA" .
 
-tomb:t00101.c2 a t:city.n.01 ;
+t00101:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00101.p1 a t:person.n.01 ;
+t00101:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1872-09-14" ;
   :dod "1927-04-28" ;
   :nam "CORNELIS VAN DER VALK" ;
-  :pob tomb:t00101.c1 ;
-  :pod tomb:t00101.c2 .
+  :pob t00101:c1 ;
+  :pod t00101:c2 .
 
-tomb:t00101.im1 a t:photo.n.01 ;
+t00101:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

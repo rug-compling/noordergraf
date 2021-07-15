@@ -1,46 +1,47 @@
+@prefix t00763: <https://noordergraf.rug.nl/tomb/t00763#> .
 
 tomb:t00763 a t:tombstone.n.01 ;
-  :image tomb:t00763.im1 ;
+  :image t00763:im1 ;
   :site site:gr9936BTfarmsum ;
-  :ent tomb:t00763.g1 ,
-       tomb:t00763.p1 ,
-       tomb:t00763.p2 ,
-       tomb:t00763.p3 ;
+  :ent t00763:g1 ,
+       t00763:p1 ,
+       t00763:p2 ,
+       t00763:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00763.s1 ,
-       tomb:t00763.s2 ,
-       tomb:t00763.s3 .
+  :sym t00763:s1 ,
+       t00763:s2 ,
+       t00763:s3 .
 
-tomb:t00763.g1 a t:group.n.01 ;
-  :mem tomb:t00763.p2 ,
-       tomb:t00763.p3 .
+t00763:g1 a t:group.n.01 ;
+  :mem t00763:p2 ,
+       t00763:p3 .
 
-tomb:t00763.p1 a t:person.n.01 ;
+t00763:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1872-09-10" ;
   :dod "1880-08-06" ;
   :nam "REMKO VAN ZANTEN" ;
-  :rol tomb:t00763.r1 .
+  :rol t00763:r1 .
 
-tomb:t00763.p2 a t:person.n.01 ;
+t00763:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "TJAART REMKES VAN ZANTEN" .
 
-tomb:t00763.p3 a t:person.n.01 ;
+t00763:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TRIJTJE FREERKS STEENHUISEN" .
 
-tomb:t00763.r1 a t:son.n.01 ;
+t00763:r1 a t:son.n.01 ;
   :att "ENIGST" ;
-  :tgt tomb:t00763.g1 .
+  :tgt t00763:g1 .
 
-tomb:t00763.s1 a t:butterfly.n.01 .
+t00763:s1 a t:butterfly.n.01 .
 
-tomb:t00763.s2 a t:flower.n.01 .
+t00763:s2 a t:flower.n.01 .
 
-tomb:t00763.s3 a t:butterfly.n.01 .
+t00763:s3 a t:butterfly.n.01 .
 
-tomb:t00763.im1 a t:photo.n.01 ;
+t00763:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

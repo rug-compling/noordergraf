@@ -1,58 +1,59 @@
+@prefix t01105: <https://noordergraf.rug.nl/tomb/t01105#> .
 
 tomb:t01105 a t:tombstone.n.01 ;
-  :ent tomb:t01105.g1 ,
-       tomb:t01105.p1 ;
+  :ent t01105:g1 ,
+       t01105:p1 ;
   :lan "NLD" ;
-  :ref tomb:t01105.c3 ;
-  :sym tomb:t01105.s1 .
+  :ref t01105:c3 ;
+  :sym t01105:s1 .
 
-tomb:t01105.b1 a t:Isaiah.n.01 ;
-  :prt tomb:t01105.c3 .
+t01105:b1 a t:Isaiah.n.01 ;
+  :prt t01105:c3 .
 
-tomb:t01105.c1 a t:village.n.02 ;
+t01105:c1 a t:village.n.02 ;
   :geo place:Burgum2759103 ;
   :place "BERGUM" .
 
-tomb:t01105.c2 a t:village.n.02 ;
+t01105:c2 a t:village.n.02 ;
   :geo place:Grijpskerk2755317 ;
   :place "GRIJPSKERK" .
 
-tomb:t01105.c3 a t:chapter.n.01 ;
+t01105:c3 a t:chapter.n.01 ;
   :ord 40 .
 
-tomb:t01105.g1 a t:group.n.01 ;
-  :mem tomb:t01105.p2 ,
-       tomb:t01105.p3 ,
-       tomb:t01105.p4 .
+t01105:g1 a t:group.n.01 ;
+  :mem t01105:p2 ,
+       t01105:p3 ,
+       t01105:p4 .
 
-tomb:t01105.p1 a t:person.n.01 ;
+t01105:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1915-05-05" ;
   :dod "1945-05-25" ;
   :nam "ANNA WIELENGA" ;
-  :pob tomb:t01105.c1 ;
-  :pod tomb:t01105.c2 ;
-  :rol tomb:t01105.r1 ,
-       tomb:t01105.r2 .
+  :pob t01105:c1 ;
+  :pod t01105:c2 ;
+  :rol t01105:r1 ,
+       t01105:r2 .
 
-tomb:t01105.p2 a t:person.n.01 ;
+t01105:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "S. VEENSTRA" .
 
-tomb:t01105.p3 a t:person.n.01 ;
+t01105:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "FOKKE" .
 
-tomb:t01105.p4 a t:person.n.01 ;
+t01105:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "PIETJE" .
 
-tomb:t01105.r1 a t:wife.n.01 ;
+t01105:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t01105.g1 .
+  :tgt t01105:g1 .
 
-tomb:t01105.r2 a t:mother.n.01 ;
-  :tgt tomb:t01105.g1 .
+t01105:r2 a t:mother.n.01 ;
+  :tgt t01105:g1 .
 
-tomb:t01105.s1 a t:frond.n.01 .
+t01105:s1 a t:frond.n.01 .
 

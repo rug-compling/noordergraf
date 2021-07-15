@@ -1,44 +1,45 @@
+@prefix t00582: <https://noordergraf.rug.nl/tomb/t00582#> .
 
 tomb:t00582 a t:tombstone.n.01 ;
-  :image tomb:t00582.im1 ;
+  :image t00582:im1 ;
   :site site:gr9951STwinsum ;
-  :ent tomb:t00582.p1 ,
-       tomb:t00582.p2 ,
-       tomb:t00582.p3 ;
+  :ent t00582:p1 ,
+       t00582:p2 ,
+       t00582:p3 ;
   :ref "PSALM 118:17-20" .
 
-tomb:t00582.c1 a t:hamlet.n.03 ;
+t00582:c1 a t:hamlet.n.03 ;
   :geo place:KleinGarnwerd2752695 ;
   :place "KLEIN GARNWERD" .
 
-tomb:t00582.p1 a t:person.n.01 ;
+t00582:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1843-11-23" ;
   :dod "1917-05-26" ;
   :nam "GEERT BIERLING" ;
-  :pob tomb:t00582.c1 ;
+  :pob t00582:c1 ;
   :quo "NA EEN GELUKKIGE ECHTVERENIGING VAN 41 JAREN" ;
-  :rol tomb:t00582.r1 ,
-       tomb:t00582.r2 .
+  :rol t00582:r1 ,
+       t00582:r2 .
 
-tomb:t00582.p2 a t:person.n.01 ;
+t00582:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "JOHANNA KLADDER" .
 
-tomb:t00582.p3 a t:person.n.01 ;
+t00582:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "LAMMECHIEN MEISNER" .
 
-tomb:t00582.r1 a t:spouse.n.01 ;
+t00582:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :bef tomb:t00582.r2 ;
-  :tgt tomb:t00582.p2 .
+  :bef t00582:r2 ;
+  :tgt t00582:p2 .
 
-tomb:t00582.r2 a t:spouse.n.01 ;
+t00582:r2 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00582.p3 .
+  :tgt t00582:p3 .
 
-tomb:t00582.im1 a t:photo.n.01 ;
+t00582:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

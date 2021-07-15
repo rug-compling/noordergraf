@@ -1,43 +1,44 @@
+@prefix t00230: <https://noordergraf.rug.nl/tomb/t00230#> .
 
 tomb:t00230 a t:tombstone.n.01 ;
-  :image tomb:t00230.im1 ;
+  :image t00230:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00230.p1 ;
-  :sym tomb:t00230.s1 .
+  :ent t00230:p1 ;
+  :sym t00230:s1 .
 
-tomb:t00230.p1 a t:person.n.01 ;
+t00230:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1826-04-11" ;
   :dod "1873-04-29" ;
   :nam "GEERT KOOPS BRUININGA" .
 
-tomb:t00230.s1 a t:composite.n.01 ;
-  :prt tomb:t00230.s2 ,
-       tomb:t00230.s4 ,
-       tomb:t00230.s6 ,
-       tomb:t00230.s8 .
+t00230:s1 a t:composite.n.01 ;
+  :prt t00230:s2 ,
+       t00230:s4 ,
+       t00230:s6 ,
+       t00230:s8 .
 
-tomb:t00230.s2 a t:branch.n.02 .
+t00230:s2 a t:branch.n.02 .
 
-tomb:t00230.s3 a t:oak.n.02 ;
-  :prt tomb:t00230.s2 .
+t00230:s3 a t:oak.n.02 ;
+  :prt t00230:s2 .
 
-tomb:t00230.s4 a t:branch.n.02 .
+t00230:s4 a t:branch.n.02 .
 
-tomb:t00230.s5 a t:oak.n.02 ;
-  :prt tomb:t00230.s4 .
+t00230:s5 a t:oak.n.02 ;
+  :prt t00230:s4 .
 
-tomb:t00230.s6 a t:branch.n.02 .
+t00230:s6 a t:branch.n.02 .
 
-tomb:t00230.s7 a t:olive.n.02 ;
-  :prt tomb:t00230.s6 .
+t00230:s7 a t:olive.n.02 ;
+  :prt t00230:s6 .
 
-tomb:t00230.s8 a t:branch.n.02 .
+t00230:s8 a t:branch.n.02 .
 
-tomb:t00230.s9 a t:olive.n.02 ;
-  :prt tomb:t00230.s8 .
+t00230:s9 a t:olive.n.02 ;
+  :prt t00230:s8 .
 
-tomb:t00230.im1 a t:photo.n.01 ;
+t00230:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

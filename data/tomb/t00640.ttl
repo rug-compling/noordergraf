@@ -1,46 +1,47 @@
+@prefix t00640: <https://noordergraf.rug.nl/tomb/t00640#> .
 
 tomb:t00640 a t:tombstone.n.01 ;
-  :image tomb:t00640.im1 ;
+  :image t00640:im1 ;
   :site site:gr9723EJgroningen ;
-  :ent tomb:t00640.p1 ;
+  :ent t00640:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00640.s1 ,
-       tomb:t00640.s2 ,
-       tomb:t00640.s3 .
+  :sym t00640:s1 ,
+       t00640:s2 ,
+       t00640:s3 .
 
-tomb:t00640.c1 a t:vlllage.n.02 ;
+t00640:c1 a t:vlllage.n.02 ;
   :geo place:Engelbert2756097 ;
   :place "ENGELBERT" .
 
-tomb:t00640.c2 a t:village.n.02 ;
+t00640:c2 a t:village.n.02 ;
   :geo place:Westerlee2744715 ;
   :place "WESTERLEE" .
 
-tomb:t00640.c3 a t:town.n.01 ;
+t00640:c3 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00640.o1 a t:principal.n.02 ;
+t00640:o1 a t:principal.n.02 ;
   :hco "13940" ;
-  :loc tomb:t00640.c1 .
+  :loc t00640:c1 .
 
-tomb:t00640.p1 a t:person.n.01 ;
+t00640:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1841-07-02" ;
   :dod "1929-01-31" ;
   :nam "UBBO ALBERTUS VAN OOSTEN" ;
-  :occ tomb:t00640.o1 ;
+  :occ t00640:o1 ;
   :pfx "HEER" ;
-  :pob tomb:t00640.c2 ;
-  :pod tomb:t00640.c3 .
+  :pob t00640:c2 ;
+  :pod t00640:c3 .
 
-tomb:t00640.s1 a t:frond.n.01 .
+t00640:s1 a t:frond.n.01 .
 
-tomb:t00640.s2 a t:frond.n.01 .
+t00640:s2 a t:frond.n.01 .
 
-tomb:t00640.s3 a t:ribbon.n.03 .
+t00640:s3 a t:ribbon.n.03 .
 
-tomb:t00640.im1 a t:photo.n.01 ;
+t00640:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

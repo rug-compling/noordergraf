@@ -1,61 +1,62 @@
+@prefix t00099: <https://noordergraf.rug.nl/tomb/t00099#> .
 
 tomb:t00099 a t:tombstone.n.01 ;
-  :image tomb:t00099.im1 ;
+  :image t00099:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00099.p1 ,
-       tomb:t00099.p2 ;
-  :sym tomb:t00099.s1 .
+  :ent t00099:p1 ,
+       t00099:p2 ;
+  :sym t00099:s1 .
 
-tomb:t00099.a1 a t:inverted.a.01 .
+t00099:a1 a t:inverted.a.01 .
 
-tomb:t00099.a2 a t:inverted.a.01 .
+t00099:a2 a t:inverted.a.01 .
 
-tomb:t00099.c1 a t:municipality.n.01 ;
+t00099:c1 a t:municipality.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00099.o1 a t:alderman.n.01 ;
+t00099:o1 a t:alderman.n.01 ;
   :hco "20110" ;
-  :loc tomb:t00099.c1 .
+  :loc t00099:c1 .
 
-tomb:t00099.p1 a t:person.n.01 ;
+t00099:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1834-02-09" ;
   :dod "1903-12-01" ;
   :nam "GERBRAND WOUTERS" ;
-  :occ tomb:t00099.o1 ;
-  :rol tomb:t00099.r1 ;
+  :occ t00099:o1 ;
+  :rol t00099:r1 ;
   :sfx "JR" .
 
-tomb:t00099.p2 a t:person.n.01 ;
+t00099:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1835-02-08" ;
   :dod "1925-07-28" ;
   :nam "ALIDA DIJK" .
 
-tomb:t00099.r1 a t:husband.n.01 ;
-  :tgt tomb:t00099.p2 .
+t00099:r1 a t:husband.n.01 ;
+  :tgt t00099:p2 .
 
-tomb:t00099.s1 a t:composite.n.01 ;
-  :prt tomb:t00099.s2 ,
-       tomb:t00099.s3 ,
-       tomb:t00099.s4 ,
-       tomb:t00099.s5 ,
-       tomb:t00099.s6 .
+t00099:s1 a t:composite.n.01 ;
+  :prt t00099:s2 ,
+       t00099:s3 ,
+       t00099:s4 ,
+       t00099:s5 ,
+       t00099:s6 .
 
-tomb:t00099.s2 a t:frond.n.01 .
+t00099:s2 a t:frond.n.01 .
 
-tomb:t00099.s3 a t:frond.n.01 .
+t00099:s3 a t:frond.n.01 .
 
-tomb:t00099.s4 a t:torch.n.01 ;
-  :att tomb:t00099.a1 .
+t00099:s4 a t:torch.n.01 ;
+  :att t00099:a1 .
 
-tomb:t00099.s5 a t:torch.n.01 ;
-  :att tomb:t00099.a2 .
+t00099:s5 a t:torch.n.01 ;
+  :att t00099:a2 .
 
-tomb:t00099.s6 a t:ribbon.n.01 .
+t00099:s6 a t:ribbon.n.01 .
 
-tomb:t00099.im1 a t:photo.n.01 ;
+t00099:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

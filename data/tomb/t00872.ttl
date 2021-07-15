@@ -1,48 +1,49 @@
+@prefix t00872: <https://noordergraf.rug.nl/tomb/t00872#> .
 
 tomb:t00872 a t:tombstone.n.01 ;
-  :image tomb:t00872.im1 ;
+  :image t00872:im1 ;
   :site site:dr7844TCveenoord ;
-  :ent tomb:t00872.p1 ,
-       tomb:t00872.p2 ;
+  :ent t00872:p1 ,
+       t00872:p2 ;
   :ref "PSALM 90:6"@nld ;
-  :sym tomb:t00872.s1 ,
-       tomb:t00872.s2 ,
-       tomb:t00872.s3 .
+  :sym t00872:s1 ,
+       t00872:s2 ,
+       t00872:s3 .
 
-tomb:t00872.a1 a t:weeping.a.02 .
+t00872:a1 a t:weeping.a.02 .
 
-tomb:t00872.c1 a t:village.n.02 ;
+t00872:c1 a t:village.n.02 ;
   :geo place:Drouwenermond2756549 ;
   :place "DROUWENERMOND" .
 
-tomb:t00872.c2 a t:village.n.02 ;
+t00872:c2 a t:village.n.02 ;
   :geo place:NieuwAmsterdam2750375 ;
   :place "NIEUW-AMSTERDAM" .
 
-tomb:t00872.p1 a t:person.n.01 ;
+t00872:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1875-08-27" ;
   :dod "1917-03-17" ;
   :nam "JAN DIK" ;
-  :pob tomb:t00872.c1 ;
-  :pod tomb:t00872.c2 ;
-  :rol tomb:t00872.r1 .
+  :pob t00872:c1 ;
+  :pod t00872:c2 ;
+  :rol t00872:r1 .
 
-tomb:t00872.p2 a t:person.n.01 ;
+t00872:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "METJE GOEREE" .
 
-tomb:t00872.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00872.p2 .
+t00872:r1 a t:spouse.n.01 ;
+  :tgt t00872:p2 .
 
-tomb:t00872.s1 a t:willow.n.01 ;
-  :att tomb:t00872.a1 .
+t00872:s1 a t:willow.n.01 ;
+  :att t00872:a1 .
 
-tomb:t00872.s2 a t:oak.n.01 .
+t00872:s2 a t:oak.n.01 .
 
-tomb:t00872.s3 a t:frond.n.01 .
+t00872:s3 a t:frond.n.01 .
 
-tomb:t00872.im1 a t:photo.n.01 ;
+t00872:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

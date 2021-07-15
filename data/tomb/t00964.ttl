@@ -1,35 +1,36 @@
+@prefix t00964: <https://noordergraf.rug.nl/tomb/t00964#> .
 
 tomb:t00964 a t:tombstone.n.01 ;
-  :image tomb:t00964.im1 ;
+  :image t00964:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00964.p1 ,
-       tomb:t00964.p2 ;
+  :ent t00964:p1 ,
+       t00964:p2 ;
   :quo "GELIJK HET GRAS IS ONS \\ KORTSTONDIG LEVEN"@nld ;
-  :sym tomb:t00964.s1 .
+  :sym t00964:s1 .
 
-tomb:t00964.p1 a t:person.n.01 ;
+t00964:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dod "1916-04-25" ;
   :nam "TRIJNJE BOS" ;
-  :rol tomb:t00964.r1 ,
-       tomb:t00964.r2 ,
-       tomb:t00964.r3 .
+  :rol t00964:r1 ,
+       t00964:r2 ,
+       t00964:r3 .
 
-tomb:t00964.p2 a t:person.n.01 ;
+t00964:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "J. VOS" .
 
-tomb:t00964.r1 a t:wife.n.01 ;
-  :tgt tomb:t00964.p2 .
+t00964:r1 a t:wife.n.01 ;
+  :tgt t00964:p2 .
 
-tomb:t00964.r2 a t:mother.n.01 .
+t00964:r2 a t:mother.n.01 .
 
-tomb:t00964.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00964.p2 .
+t00964:r3 a t:spouse.n.01 ;
+  :tgt t00964:p2 .
 
-tomb:t00964.s1 a t:frond.n.01 .
+t00964:s1 a t:frond.n.01 .
 
-tomb:t00964.im1 a t:photo.n.01 ;
+t00964:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

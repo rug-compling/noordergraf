@@ -1,29 +1,30 @@
+@prefix t00172: <https://noordergraf.rug.nl/tomb/t00172#> .
 
 tomb:t00172 a t:tombstone.n.01 ;
-  :image tomb:t00172.im1 ;
+  :image t00172:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00172.p1 .
+  :ent t00172:p1 .
 
-tomb:t00172.c2 a t:province.n.01 ;
+t00172:c2 a t:province.n.01 ;
   :geo place:ProvincieGroningen2755249 ;
   :place "GRONINGEN" .
 
-tomb:t00172.o1 a t:director.n.01 ;
+t00172:o1 a t:director.n.01 ;
   :hco "21110" ;
-  :loc tomb:t00172.c2 ;
-  :org tomb:t00172.o2 .
+  :loc t00172:c2 ;
+  :org t00172:o2 .
 
-tomb:t00172.o2 a t:company.n.01 ;
+t00172:o2 a t:company.n.01 ;
   :nam "PROVINCIAAL ELECTRISCH BEDRIJF GRONINGEN" .
 
-tomb:t00172.p1 a t:person.n.01 ;
+t00172:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1883-05-19" ;
   :dod "1924-12-19" ;
   :nam "A.C. LOOS" ;
-  :occ tomb:t00172.o1 .
+  :occ t00172:o1 .
 
-tomb:t00172.im1 a t:photo.n.01 ;
+t00172:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,33 +1,34 @@
+@prefix t00020: <https://noordergraf.rug.nl/tomb/t00020#> .
 
 tomb:t00020 a t:tombstone.n.01 ;
-  :image tomb:t00020.im1 ;
+  :image t00020:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00020.p1 ,
-       tomb:t00020.p2 ,
-       tomb:t00020.p3 ;
-  :sym tomb:t00020.s1 .
+  :ent t00020:p1 ,
+       t00020:p2 ,
+       t00020:p3 ;
+  :sym t00020:s1 .
 
-tomb:t00020.p1 a t:person.n.01 ;
+t00020:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1869-12-12" ;
   :dod "1932-03-12" ;
   :nam "GRIETJE VONK" .
 
-tomb:t00020.p2 a t:person.n.01 ;
+t00020:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1872-04-17" ;
   :dod "1935-12-01" ;
   :nam "EGBERT STEENHUIS" .
 
-tomb:t00020.p3 a t:person.n.01 ;
+t00020:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1897-02-20" ;
   :dod "1975-09-14" ;
   :nam "IDA GEZINA STEENHUIS" .
 
-tomb:t00020.s1 a t:frond.n.01 .
+t00020:s1 a t:frond.n.01 .
 
-tomb:t00020.im1 a t:photo.n.01 ;
+t00020:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

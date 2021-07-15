@@ -1,34 +1,35 @@
+@prefix t00102: <https://noordergraf.rug.nl/tomb/t00102#> .
 
 tomb:t00102 a t:tombstone.n.01 ;
-  :image tomb:t00102.im1 ;
+  :image t00102:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00102.p1 ;
-  :sym tomb:t00102.s1 .
+  :ent t00102:p1 ;
+  :sym t00102:s1 .
 
-tomb:t00102.c1 a t:city.n.01 ;
+t00102:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00102.o1 a t:teacher.n.01 ;
+t00102:o1 a t:teacher.n.01 ;
   :beg "XX-XX-1882" ;
   :end "XX-XX-1922" ;
   :hco "13320" ;
-  :org tomb:t00102.o2 .
+  :org t00102:o2 .
 
-tomb:t00102.o2 a t:school.n.01 ;
+t00102:o2 a t:school.n.01 ;
   :nam "GEMEENTELIJKE KWEEKSCHOOL VOOR ONDERWIJZERESSEN" .
 
-tomb:t00102.p1 a t:person.n.01 ;
+t00102:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1857-02-11" ;
   :dod "1930-03-24" ;
   :nam "MARGARETHA JANTINA BUTTINGER" ;
-  :occ tomb:t00102.o1 ;
-  :pod tomb:t00102.c1 .
+  :occ t00102:o1 ;
+  :pod t00102:c1 .
 
-tomb:t00102.s1 a t:frond.n.01 .
+t00102:s1 a t:frond.n.01 .
 
-tomb:t00102.im1 a t:photo.n.01 ;
+t00102:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

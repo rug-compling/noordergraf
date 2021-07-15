@@ -1,55 +1,56 @@
+@prefix t00443: <https://noordergraf.rug.nl/tomb/t00443#> .
 
 tomb:t00443 a t:tombstone.n.01 ;
-  :image tomb:t00443.im1 ;
+  :image t00443:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00443.p1 ,
-       tomb:t00443.p2 ;
-  :ref tomb:t00443.v1 ;
-  :sym tomb:t00443.s1 .
+  :ent t00443:p1 ,
+       t00443:p2 ;
+  :ref t00443:v1 ;
+  :sym t00443:s1 .
 
-tomb:t00443.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00443.c3 .
+t00443:b1 a t:Revelation.n.04 ;
+  :prt t00443:c3 .
 
-tomb:t00443.c1 a t:village.n.02 ;
+t00443:c1 a t:village.n.02 ;
   :geo place:Morra2750603 ;
   :place "MORRA" .
 
-tomb:t00443.c2 a t:island.n.01 ;
+t00443:c2 a t:island.n.01 ;
   :geo place:Schiermonnikoog2747591 ;
   :place "SCHIERMONNIKOOG" .
 
-tomb:t00443.c3 a t:chapter.n.01 ;
+t00443:c3 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00443.v1 .
+  :prt t00443:v1 .
 
-tomb:t00443.p1 a t:person.n.01 ;
+t00443:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-04-13" ;
   :dod "1939-06-01" ;
   :nam "RENSCHE TRIEMSTRA" ;
-  :pob tomb:t00443.c1 ;
-  :pod tomb:t00443.c2 ;
-  :rol tomb:t00443.r1 .
+  :pob t00443:c1 ;
+  :pod t00443:c2 ;
+  :rol t00443:r1 .
 
-tomb:t00443.p2 a t:person.n.01 ;
+t00443:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN TEERDSTRA" .
 
-tomb:t00443.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00443.p2 .
+t00443:r1 a t:spouse.n.01 ;
+  :tgt t00443:p2 .
 
-tomb:t00443.s1 a t:composite.n.01 ;
-  :prt tomb:t00443.s2 ,
-       tomb:t00443.s3 .
+t00443:s1 a t:composite.n.01 ;
+  :prt t00443:s2 ,
+       t00443:s3 .
 
-tomb:t00443.s2 a t:frond.n.01 .
+t00443:s2 a t:frond.n.01 .
 
-tomb:t00443.s3 a t:frond.n.01 .
+t00443:s3 a t:frond.n.01 .
 
-tomb:t00443.v1 a t:verse.n.01 ;
+t00443:v1 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00443.im1 a t:photo.n.01 ;
+t00443:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,31 +1,32 @@
+@prefix t00496: <https://noordergraf.rug.nl/tomb/t00496#> .
 
 tomb:t00496 a t:tombstone.n.01 ;
-  :image tomb:t00496.im1 ;
+  :image t00496:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00496.p1 .
+  :ent t00496:p1 .
 
-tomb:t00496.c1 a t:city.n.01 ;
+t00496:c1 a t:city.n.01 ;
   :geo place:Amsterdam2759794 ;
   :place "AMSTERDAM" .
 
-tomb:t00496.c2 a t:village.n.02 ;
+t00496:c2 a t:village.n.02 ;
   :geo place:Hallum2754930 ;
   :place "HALLUM" .
 
-tomb:t00496.o1 a t:notary.n.01 ;
+t00496:o1 a t:notary.n.01 ;
   :hco "12310" ;
-  :loc tomb:t00496.c1 .
+  :loc t00496:c1 .
 
-tomb:t00496.p1 a t:person.n.01 ;
+t00496:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1865-07-14" ;
   :dod "1916-12-13" ;
   :nam "KLAAS T. POELSTRA" ;
-  :occ tomb:t00496.o1 ;
-  :pob tomb:t00496.c2 ;
-  :pod tomb:t00496.c1 .
+  :occ t00496:o1 ;
+  :pob t00496:c2 ;
+  :pod t00496:c1 .
 
-tomb:t00496.im1 a t:photo.n.01 ;
+t00496:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

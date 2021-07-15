@@ -1,34 +1,35 @@
+@prefix t00379: <https://noordergraf.rug.nl/tomb/t00379#> .
 
 tomb:t00379 a t:tombstone.n.01 ;
-  :image tomb:t00379.im1 ;
+  :image t00379:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00379.p1 ,
-       tomb:t00379.p2 ;
-  :ref tomb:t00379.v1 .
+  :ent t00379:p1 ,
+       t00379:p2 ;
+  :ref t00379:v1 .
 
-tomb:t00379.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00379.c1 .
+t00379:b1 a t:Revelation.n.04 ;
+  :prt t00379:c1 .
 
-tomb:t00379.c1 a t:chapter.n.01 ;
+t00379:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00379.v1 .
+  :prt t00379:v1 .
 
-tomb:t00379.p1 a t:person.n.01 ;
+t00379:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1861-03-31" ;
   :dod "1945-05-11" ;
   :nam "MEINT POLMAN" .
 
-tomb:t00379.p2 a t:person.n.01 ;
+t00379:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1864-08-28" ;
   :dod "1937-10-29" ;
   :nam "NANTJE MEEDENDORP" .
 
-tomb:t00379.v1 a t:verse.n.01 ;
+t00379:v1 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00379.im1 a t:photo.n.01 ;
+t00379:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

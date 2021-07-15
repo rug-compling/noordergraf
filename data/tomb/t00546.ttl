@@ -1,62 +1,63 @@
+@prefix t00546: <https://noordergraf.rug.nl/tomb/t00546#> .
 
 tomb:t00546 a t:tombstone.n.01 ;
-  :image tomb:t00546.im1 ;
+  :image t00546:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00546.p1 ,
-       tomb:t00546.p2 ,
-       tomb:t00546.p3 ;
+  :ent t00546:p1 ,
+       t00546:p2 ,
+       t00546:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00546.s1 .
+  :sym t00546:s1 .
 
-tomb:t00546.c1 a t:village.n.02 ;
+t00546:c1 a t:village.n.02 ;
   :geo place:Bareveld2759424 ;
   :place "BAREVELD" .
 
-tomb:t00546.c2 a t:city.n.01 ;
+t00546:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00546.p1 a t:person.n.01 ;
+t00546:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1842-02-18" ;
   :dod "1926-11-15" ;
   :nam "ANNA KOOL" ;
-  :pob tomb:t00546.c1 ;
-  :pod tomb:t00546.c2 ;
-  :rol tomb:t00546.r1 .
+  :pob t00546:c1 ;
+  :pod t00546:c2 ;
+  :rol t00546:r1 .
 
-tomb:t00546.p2 a t:person.n.01 ;
+t00546:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "MARTINUS KLUGKIST" .
 
-tomb:t00546.p3 a t:person.n.01 ;
+t00546:p3 a t:person.n.01 ;
   :nam "F. DE WEIJS" ;
-  :occ tomb:t00546.r2 .
+  :occ t00546:r2 .
 
-tomb:t00546.r1 a t:widow.n.01 ;
-  :tgt tomb:t00546.p2 .
+t00546:r1 a t:widow.n.01 ;
+  :tgt t00546:p2 .
 
-tomb:t00546.r2 a t:designer.n.01 ;
+t00546:r2 a t:designer.n.01 ;
   :tgt tomb:t00546 .
 
-tomb:t00546.s1 a t:composite.n.01 ;
-  :prt tomb:t00546.s2 ,
-       tomb:t00546.s3 ,
-       tomb:t00546.s5 .
+t00546:s1 a t:composite.n.01 ;
+  :prt t00546:s2 ,
+       t00546:s3 ,
+       t00546:s5 .
 
-tomb:t00546.s2 a t:butterfly.n.01 .
+t00546:s2 a t:butterfly.n.01 .
 
-tomb:t00546.s3 a t:branch.n.02 .
+t00546:s3 a t:branch.n.02 .
 
-tomb:t00546.s4 a t:oak.n.02 ;
-  :prt tomb:t00546.s3 .
+t00546:s4 a t:oak.n.02 ;
+  :prt t00546:s3 .
 
-tomb:t00546.s5 a t:branch.n.02 .
+t00546:s5 a t:branch.n.02 .
 
-tomb:t00546.s6 a t:olive.n.02 ;
-  :prt tomb:t00546.s5 .
+t00546:s6 a t:olive.n.02 ;
+  :prt t00546:s5 .
 
-tomb:t00546.im1 a t:photo.n.01 ;
+t00546:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,31 +1,32 @@
+@prefix t00825: <https://noordergraf.rug.nl/tomb/t00825#> .
 
 tomb:t00825 a t:tombstone.n.01 ;
-  :image tomb:t00825.im1 ;
+  :image t00825:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00825.p1 ;
+  :ent t00825:p1 ;
   :quo "VIEL VOOR ZIJN IDEAAL"@nld ;
-  :sym tomb:t00825.s1 .
+  :sym t00825:s1 .
 
-tomb:t00825.c2 a t:city.n.01 ;
+t00825:c2 a t:city.n.01 ;
   :geo place:Dokkum2756759 ;
   :place "DOKKUM" .
 
-tomb:t00825.p1 a t:person.n.01 ;
+t00825:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1923-03-25" ;
   :dod "1945-01-22" ;
   :nam "HINDRIK LOMMERT" ;
-  :pod tomb:t00825.c2 ;
-  :rol tomb:t00825.r1 ,
-       tomb:t00825.r2 .
+  :pod t00825:c2 ;
+  :rol t00825:r1 ,
+       t00825:r2 .
 
-tomb:t00825.r1 a t:son.n.01 .
+t00825:r1 a t:son.n.01 .
 
-tomb:t00825.r2 a t:brother.n.01 .
+t00825:r2 a t:brother.n.01 .
 
-tomb:t00825.s1 a t:man.n.01 .
+t00825:s1 a t:man.n.01 .
 
-tomb:t00825.im1 a t:photo.n.01 ;
+t00825:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

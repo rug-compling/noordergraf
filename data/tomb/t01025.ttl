@@ -1,48 +1,49 @@
+@prefix t01025: <https://noordergraf.rug.nl/tomb/t01025#> .
 
 tomb:t01025 a t:tombstone.n.01 ;
-  :image tomb:t01025.im1 ;
+  :image t01025:im1 ;
   :site site:gr9906PPbierum ;
-  :ent tomb:t01025.p1 ,
-       tomb:t01025.p2 ;
+  :ent t01025:p1 ,
+       t01025:p2 ;
   :quo "JONG VAN JAREN LIGT HAAR NIETIG STOF HIERNEER, 'T WAS UW WIL EN WELBEHAGEN WIJZE GOEDE HEMELHEER."@nld ;
-  :sym tomb:t01025.s1 ,
-       tomb:t01025.s2 ,
-       tomb:t01025.s3 ,
-       tomb:t01025.s4 .
+  :sym t01025:s1 ,
+       t01025:s2 ,
+       t01025:s3 ,
+       t01025:s4 .
 
-tomb:t01025.c1 a t:village.n.02 ;
+t01025:c1 a t:village.n.02 ;
   :geo place:Losdorp2751426 ;
   :place "LOSDORP" .
 
-tomb:t01025.c2 a t:village.n.02 ;
+t01025:c2 a t:village.n.02 ;
   :geo place:Bierum2758983 ;
   :place "BIERUM" .
 
-tomb:t01025.p1 a t:person.n.01 ;
+t01025:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1874-09-30" ;
   :dod "1895-04-03" ;
   :nam "JOSINA HARMINA SMIT" ;
-  :pob tomb:t01025.c1 ;
-  :pod tomb:t01025.c2 .
+  :pob t01025:c1 ;
+  :pod t01025:c2 .
 
-tomb:t01025.p2 a t:person.n.01 ;
-  :loc tomb:t01025.c2 ;
+t01025:p2 a t:person.n.01 ;
+  :loc t01025:c2 ;
   :nam "W. MEIJER" ;
-  :occ tomb:t01025.r1 .
+  :occ t01025:r1 .
 
-tomb:t01025.r1 a t:designer.n.01 ;
+t01025:r1 a t:designer.n.01 ;
   :tgt tomb:t01025 .
 
-tomb:t01025.s1 a t:butterfly.n.01 .
+t01025:s1 a t:butterfly.n.01 .
 
-tomb:t01025.s2 a t:scythe.n.01 .
+t01025:s2 a t:scythe.n.01 .
 
-tomb:t01025.s3 a t:entity.n.01 .
+t01025:s3 a t:entity.n.01 .
 
-tomb:t01025.s4 a t:ribbon.n.01 .
+t01025:s4 a t:ribbon.n.01 .
 
-tomb:t01025.im1 a t:photo.n.01 ;
+t01025:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,45 +1,46 @@
+@prefix t00655: <https://noordergraf.rug.nl/tomb/t00655#> .
 
 tomb:t00655 a t:tombstone.n.01 ;
-  :image tomb:t00655.im1 ;
+  :image t00655:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00655.p1 ,
-       tomb:t00655.p2 ;
+  :ent t00655:p1 ,
+       t00655:p2 ;
   :quo "DAT ZIJN ASCH RUSTE IN VREDE"@nld ;
-  :sym tomb:t00655.s1 ,
-       tomb:t00655.s2 ,
-       tomb:t00655.s3 .
+  :sym t00655:s1 ,
+       t00655:s2 ,
+       t00655:s3 .
 
-tomb:t00655.c1 a t:village.n.02 ;
+t00655:c1 a t:village.n.02 ;
   :geo place:Muntendam2750535 ;
   :place "MUNTENDAM" .
 
-tomb:t00655.c2 a t:village.n.02 ;
+t00655:c2 a t:village.n.02 ;
   :geo place:Martenshoek2751115 ;
   :place "MARTENSHOEK" .
 
-tomb:t00655.p1 a t:person.n.01 ;
+t00655:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1852-02-13" ;
   :dod "1910-05-16" ;
   :nam "JACOBUS LAHPOR" ;
-  :pob tomb:t00655.c1 ;
-  :pod tomb:t00655.c2 ;
-  :rol tomb:t00655.r1 .
+  :pob t00655:c1 ;
+  :pod t00655:c2 ;
+  :rol t00655:r1 .
 
-tomb:t00655.p2 a t:person.n.01 ;
+t00655:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "DOETJE KOMDEUR" .
 
-tomb:t00655.r1 a t:widower.n.01 ;
-  :tgt tomb:t00655.p2 .
+t00655:r1 a t:widower.n.01 ;
+  :tgt t00655:p2 .
 
-tomb:t00655.s1 a t:torch.n.01 .
+t00655:s1 a t:torch.n.01 .
 
-tomb:t00655.s2 a t:torch.n.01 .
+t00655:s2 a t:torch.n.01 .
 
-tomb:t00655.s3 a t:entity.n.01 .
+t00655:s3 a t:entity.n.01 .
 
-tomb:t00655.im1 a t:photo.n.01 ;
+t00655:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

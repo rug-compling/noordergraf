@@ -1,43 +1,44 @@
+@prefix t00507: <https://noordergraf.rug.nl/tomb/t00507#> .
 
 tomb:t00507 a t:tombstone.n.01 ;
-  :image tomb:t00507.im1 ;
+  :image t00507:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00507.p1 ,
-       tomb:t00507.p2 ,
-       tomb:t00507.p3 .
+  :ent t00507:p1 ,
+       t00507:p2 ,
+       t00507:p3 .
 
-tomb:t00507.p1 a t:person.n.01 ;
+t00507:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1866-03-13" ;
   :dod "1925-12-14" ;
   :nam "GERRIT VAN DER MEER" ;
-  :rol tomb:t00507.r1 .
+  :rol t00507:r1 .
 
-tomb:t00507.p2 a t:person.n.01 ;
+t00507:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1868-04-07" ;
   :dod "1934-05-31" ;
   :nam "JOHANNA HOGEMA" ;
-  :rol tomb:t00507.r2 .
+  :rol t00507:r2 .
 
-tomb:t00507.p3 a t:person.n.01 ;
+t00507:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1901-12-25" ;
   :dod "1985-01-21" ;
   :nam "IJSBRAND THEODORUS" ;
-  :rol tomb:t00507.r3 .
+  :rol t00507:r3 .
 
-tomb:t00507.r1 a t:grandparent.n.01 ;
-  :tgt tomb:t00507.p4 .
+t00507:r1 a t:grandparent.n.01 ;
+  :tgt t00507:p4 .
 
-tomb:t00507.r2 a t:grandparent.n.01 ;
-  :tgt tomb:t00507.p4 .
+t00507:r2 a t:grandparent.n.01 ;
+  :tgt t00507:p4 .
 
-tomb:t00507.r3 a t:father.n.01 ;
+t00507:r3 a t:father.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00507.p4 .
+  :tgt t00507:p4 .
 
-tomb:t00507.im1 a t:photo.n.01 ;
+t00507:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

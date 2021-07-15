@@ -1,42 +1,43 @@
+@prefix t00645: <https://noordergraf.rug.nl/tomb/t00645#> .
 
 tomb:t00645 a t:tombstone.n.01 ;
-  :image tomb:t00645.im1 ;
+  :image t00645:im1 ;
   :site site:gr9723EJgroningen ;
-  :ent tomb:t00645.p1 ,
-       tomb:t00645.p2 ;
+  :ent t00645:p1 ,
+       t00645:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00645.s1 .
+  :sym t00645:s1 .
 
-tomb:t00645.c1 a t:city.n.01 ;
+t00645:c1 a t:city.n.01 ;
   :geo place:Delft2757345 ;
   :place "DELFT" .
 
-tomb:t00645.p1 a t:person.n.01 ;
+t00645:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1912-03-26" ;
   :dod "1940-05-14" ;
   :nam "PIETER WAYER" ;
-  :pod tomb:t00645.c1 ;
-  :rol tomb:t00645.r1 ,
-       tomb:t00645.r2 ,
-       tomb:t00645.r3 .
+  :pod t00645:c1 ;
+  :rol t00645:r1 ,
+       t00645:r2 ,
+       t00645:r3 .
 
-tomb:t00645.p2 a t:person.n.01 ;
+t00645:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "S.K. ALTINK" .
 
-tomb:t00645.r1 a t:husband.n.01 ;
+t00645:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00645.p2 .
+  :tgt t00645:p2 .
 
-tomb:t00645.r2 a t:father.n.01 .
+t00645:r2 a t:father.n.01 .
 
-tomb:t00645.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00645.p2 .
+t00645:r3 a t:spouse.n.01 ;
+  :tgt t00645:p2 .
 
-tomb:t00645.s1 a t:frond.n.01 .
+t00645:s1 a t:frond.n.01 .
 
-tomb:t00645.im1 a t:photo.n.01 ;
+t00645:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

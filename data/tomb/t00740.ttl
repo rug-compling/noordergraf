@@ -1,63 +1,64 @@
+@prefix t00740: <https://noordergraf.rug.nl/tomb/t00740#> .
 
 tomb:t00740 a t:tombstone.n.01 ;
-  :image tomb:t00740.im1 ;
+  :image t00740:im1 ;
   :site site:gr9679KHscheemda ;
-  :ent tomb:t00740.p1 ,
-       tomb:t00740.p2 ;
+  :ent t00740:p1 ,
+       t00740:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00740.s1 ,
-       tomb:t00740.s2 ,
-       tomb:t00740.s3 .
+  :sym t00740:s1 ,
+       t00740:s2 ,
+       t00740:s3 .
 
-tomb:t00740.a1 a t:weeping.a.02 .
+t00740:a1 a t:weeping.a.02 .
 
-tomb:t00740.c1 a t:village.n.02 ;
+t00740:c1 a t:village.n.02 ;
   :geo place:Westerlee2744715 ;
   :place "WESTERLEE" .
 
-tomb:t00740.c2 a t:village.n.02 ;
+t00740:c2 a t:village.n.02 ;
   :geo place:Scheemda2747661 ;
   :place "SCHEEMDA" .
 
-tomb:t00740.c3 a t:village.n.02 ;
+t00740:c3 a t:village.n.02 ;
   :geo place:Wagenborgen2745090 ;
   :place "WAGENBORGEN" .
 
-tomb:t00740.p1 a t:person.n.01 ;
+t00740:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1825-07-18" ;
   :dod "1904-03-17" ;
   :nam "ELIZABETH WOLTJER" ;
-  :pob tomb:t00740.c1 ;
-  :pod tomb:t00740.c2 ;
-  :rol tomb:t00740.r1 ,
-       tomb:t00740.r2 ,
-       tomb:t00740.r3 .
+  :pob t00740:c1 ;
+  :pod t00740:c2 ;
+  :rol t00740:r1 ,
+       t00740:r2 ,
+       t00740:r3 .
 
-tomb:t00740.p2 a t:person.n.01 ;
+t00740:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1818-06-09" ;
   :dod "1916-12-20" ;
   :nam "WESSEL BRONS" ;
-  :pob tomb:t00740.c3 ;
-  :pod tomb:t00740.c2 .
+  :pob t00740:c3 ;
+  :pod t00740:c2 .
 
-tomb:t00740.r1 a t:wife.n.01 ;
+t00740:r1 a t:wife.n.01 ;
   :att "ONVERGETELIJKE" .
 
-tomb:t00740.r2 a t:mother.n.01 .
+t00740:r2 a t:mother.n.01 .
 
-tomb:t00740.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00740.p2 .
+t00740:r3 a t:spouse.n.01 ;
+  :tgt t00740:p2 .
 
-tomb:t00740.s1 a t:butterfly.n.01 .
+t00740:s1 a t:butterfly.n.01 .
 
-tomb:t00740.s2 a t:willow.n.01 ;
-  :att tomb:t00740.a1 .
+t00740:s2 a t:willow.n.01 ;
+  :att t00740:a1 .
 
-tomb:t00740.s3 a t:scythe.n.01 .
+t00740:s3 a t:scythe.n.01 .
 
-tomb:t00740.im1 a t:photo.n.01 ;
+t00740:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

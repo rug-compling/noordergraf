@@ -1,92 +1,93 @@
+@prefix t00526: <https://noordergraf.rug.nl/tomb/t00526#> .
 
 tomb:t00526 a t:tombstone.n.01 ;
-  :image tomb:t00526.im1 ;
+  :image t00526:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00526.p1 ,
-       tomb:t00526.p2 ;
+  :ent t00526:p1 ,
+       t00526:p2 ;
   :lan "NLD" ;
-  :ref tomb:t00526.v1 ;
-  :sym tomb:t00526.s1 .
+  :ref t00526:v1 ;
+  :sym t00526:s1 .
 
-tomb:t00526.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00526.c6 .
+t00526:b1 a t:Revelation.n.04 ;
+  :prt t00526:c6 .
 
-tomb:t00526.c1 a t:city.n.01 ;
+t00526:c1 a t:city.n.01 ;
   :geo place:Rembangan1629749 ;
   :place "REMBANG" .
 
-tomb:t00526.c2 a t:country.n.02 ;
+t00526:c2 a t:country.n.02 ;
   :geo place:Indonesie1643084 ;
-  :mem tomb:t00526.c1 ,
-       tomb:t00526.c4 ;
+  :mem t00526:c1 ,
+       t00526:c4 ;
   :place "INDONESIË" .
 
-tomb:t00526.c3 a t:village.n.02 ;
+t00526:c3 a t:village.n.02 ;
   :geo place:Sappemeer2747758 ;
   :place "SAPPEMEER" .
 
-tomb:t00526.c4 a t:city.n.01 ;
+t00526:c4 a t:city.n.01 ;
   :geo place:Padang1633419 ;
   :place "PADANG" .
 
-tomb:t00526.c5 a t:city.n.01 ;
+t00526:c5 a t:city.n.01 ;
   :geo place:Zwolle2743477 ;
   :place "ZWOLLE" .
 
-tomb:t00526.c6 a t:chapter.n.01 ;
+t00526:c6 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00526.v1 .
+  :prt t00526:v1 .
 
-tomb:t00526.p1 a t:person.n.01 ;
+t00526:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1887-11-16" ;
   :dod "1974-01-12" ;
   :nam "CASPER WARDENAAR" ;
-  :pob tomb:t00526.c1 ;
-  :pod tomb:t00526.c3 ;
-  :rol tomb:t00526.r1 ,
-       tomb:t00526.r2 ,
-       tomb:t00526.r3 .
+  :pob t00526:c1 ;
+  :pod t00526:c3 ;
+  :rol t00526:r1 ,
+       t00526:r2 ,
+       t00526:r3 .
 
-tomb:t00526.p2 a t:person.n.01 ;
+t00526:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1908-12-25" ;
   :dod "1990-04-06" ;
   :nam "POPPY WARDENAAR" ;
-  :pob tomb:t00526.c4 ;
-  :pod tomb:t00526.c5 ;
-  :rol tomb:t00526.r4 ,
-       tomb:t00526.r5 .
+  :pob t00526:c4 ;
+  :pod t00526:c5 ;
+  :rol t00526:r4 ,
+       t00526:r5 .
 
-tomb:t00526.r1 a t:husband.n.01 ;
+t00526:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00526.p2 .
+  :tgt t00526:p2 .
 
-tomb:t00526.r2 a t:father.n.01 ;
-  :tgt tomb:t00526.p3 .
+t00526:r2 a t:father.n.01 ;
+  :tgt t00526:p3 .
 
-tomb:t00526.r3 a t:grandfather.n.01 ;
-  :tgt tomb:t00526.p3 .
+t00526:r3 a t:grandfather.n.01 ;
+  :tgt t00526:p3 .
 
-tomb:t00526.r4 a t:mother.n.01 ;
+t00526:r4 a t:mother.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00526.p3 .
+  :tgt t00526:p3 .
 
-tomb:t00526.r5 a t:grandmother.n.01 ;
-  :tgt tomb:t00526.p3 .
+t00526:r5 a t:grandmother.n.01 ;
+  :tgt t00526:p3 .
 
-tomb:t00526.s1 a t:composite.n.01 ;
-  :prt tomb:t00526.s2 ,
-       tomb:t00526.s3 .
+t00526:s1 a t:composite.n.01 ;
+  :prt t00526:s2 ,
+       t00526:s3 .
 
-tomb:t00526.s2 a t:frond.n.01 .
+t00526:s2 a t:frond.n.01 .
 
-tomb:t00526.s3 a t:ribbon.n.01 .
+t00526:s3 a t:ribbon.n.01 .
 
-tomb:t00526.v1 a t:verse.n.01 ;
+t00526:v1 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00526.im1 a t:photo.n.01 ;
+t00526:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

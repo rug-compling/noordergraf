@@ -1,28 +1,29 @@
+@prefix t00399: <https://noordergraf.rug.nl/tomb/t00399#> .
 
 tomb:t00399 a t:tombstone.n.01 ;
-  :image tomb:t00399.im1 ;
+  :image t00399:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00399.p1 ;
-  :sym tomb:t00399.s1 .
+  :ent t00399:p1 ;
+  :sym t00399:s1 .
 
-tomb:t00399.p1 a t:person.n.01 ;
+t00399:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1906-01-30" ;
   :dod "1972-03-04" ;
   :nam "RUURD DE HAAN" .
 
-tomb:t00399.s1 a t:composite.n.01 ;
-  :prt tomb:t00399.s2 ,
-       tomb:t00399.s4 .
+t00399:s1 a t:composite.n.01 ;
+  :prt t00399:s2 ,
+       t00399:s4 .
 
-tomb:t00399.s2 a t:branch.n.02 .
+t00399:s2 a t:branch.n.02 .
 
-tomb:t00399.s3 a t:oak.n.01 ;
-  :prt tomb:t00399.s2 .
+t00399:s3 a t:oak.n.01 ;
+  :prt t00399:s2 .
 
-tomb:t00399.s4 a t:branch.n.02 .
+t00399:s4 a t:branch.n.02 .
 
-tomb:t00399.im1 a t:photo.n.01 ;
+t00399:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

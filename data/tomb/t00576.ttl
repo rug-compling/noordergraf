@@ -1,41 +1,42 @@
+@prefix t00576: <https://noordergraf.rug.nl/tomb/t00576#> .
 
 tomb:t00576 a t:tombstone.n.01 ;
-  :image tomb:t00576.im1 ;
+  :image t00576:im1 ;
   :site site:gr9951STwinsum ;
-  :ent tomb:t00576.p1 ,
-       tomb:t00576.p2 ,
-       tomb:t00576.p3 .
+  :ent t00576:p1 ,
+       t00576:p2 ,
+       t00576:p3 .
 
-tomb:t00576.c1 a t:village.n.02 ;
+t00576:c1 a t:village.n.02 ;
   :geo place:Obergum2749742 ;
   :place "OBERGUM" .
 
-tomb:t00576.p1 a t:person.n.01 ;
+t00576:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1814-06-03" ;
   :dod "1847-08-17" ;
   :nam "KLAAS M. TALENS" ;
-  :pob tomb:t00576.c1 ;
-  :pod tomb:t00576.c1 ;
-  :rol tomb:t00576.r1 ,
-       tomb:t00576.r2 .
+  :pob t00576:c1 ;
+  :pod t00576:c1 ;
+  :rol t00576:r1 ,
+       t00576:r2 .
 
-tomb:t00576.p2 a t:person.n.01 ;
+t00576:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ELTJE G. ARENDS" .
 
-tomb:t00576.p3 a t:person.n.01 ;
+t00576:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANJE RIETEMA" .
 
-tomb:t00576.r1 a t:widower.n.01 ;
-  :bef tomb:t00576.r2 ;
-  :tgt tomb:t00576.p2 .
+t00576:r1 a t:widower.n.01 ;
+  :bef t00576:r2 ;
+  :tgt t00576:p2 .
 
-tomb:t00576.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00576.p3 .
+t00576:r2 a t:spouse.n.01 ;
+  :tgt t00576:p3 .
 
-tomb:t00576.im1 a t:photo.n.01 ;
+t00576:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,36 +1,37 @@
+@prefix t00870: <https://noordergraf.rug.nl/tomb/t00870#> .
 
 tomb:t00870 a t:tombstone.n.01 ;
-  :image tomb:t00870.im1 ;
+  :image t00870:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00870.p1 ,
-       tomb:t00870.p2 ;
+  :ent t00870:p1 ,
+       t00870:p2 ;
   :quo "RUST ZACHT"@nld .
 
-tomb:t00870.c1 a t:village.n.02 ;
+t00870:c1 a t:village.n.02 ;
   :geo place:Erm2756040 ;
   :place "ERM" .
 
-tomb:t00870.c2 a t:village.n.02 ;
+t00870:c2 a t:village.n.02 ;
   :geo place:Sleen2747182 ;
   :place "SLEEN" .
 
-tomb:t00870.p1 a t:person.n.01 ;
+t00870:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1826-06-18" ;
   :dod "1900-06-05" ;
   :nam "HERMAN ROSING" ;
-  :pob tomb:t00870.c1 ;
-  :pod tomb:t00870.c2 .
+  :pob t00870:c1 ;
+  :pod t00870:c2 .
 
-tomb:t00870.p2 a t:person.n.01 ;
+t00870:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1839-04-17" ;
   :dod "1906-08-28" ;
   :nam "ALIDA EVENHUIS" ;
-  :pob tomb:t00870.c2 ;
-  :pod tomb:t00870.c2 .
+  :pob t00870:c2 ;
+  :pod t00870:c2 .
 
-tomb:t00870.im1 a t:photo.n.01 ;
+t00870:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,42 +1,43 @@
+@prefix t01058: <https://noordergraf.rug.nl/tomb/t01058#> .
 
 tomb:t01058 a t:tombstone.n.01 ;
-  :image tomb:t01058.im1 ;
+  :image t01058:im1 ;
   :site site:gr9971EBulrum ;
-  :ent tomb:t01058.p1 ,
-       tomb:t01058.p2 ;
+  :ent t01058:p1 ,
+       t01058:p2 ;
   :lan "NLD" ;
-  :sym tomb:t01058.s1 .
+  :sym t01058:s1 .
 
-tomb:t01058.a1 a t:weeping.a.02 .
+t01058:a1 a t:weeping.a.02 .
 
-tomb:t01058.c1 a t:village.n.02 ;
+t01058:c1 a t:village.n.02 ;
   :geo place:Engwierum2756081 ;
   :place "ENGWIERUM" .
 
-tomb:t01058.c2 a t:village.n.02 ;
+t01058:c2 a t:village.n.02 ;
   :geo place:Ulrum2745944 ;
   :place "ULRUM" .
 
-tomb:t01058.p1 a t:person.n.01 ;
+t01058:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1860-12-14" ;
   :dod "1917-04-27" ;
   :nam "PIETJE HIEMSTRA" ;
-  :pob tomb:t01058.c1 ;
-  :pod tomb:t01058.c2 ;
-  :rol tomb:t01058.r1 .
+  :pob t01058:c1 ;
+  :pod t01058:c2 ;
+  :rol t01058:r1 .
 
-tomb:t01058.p2 a t:person.n.01 ;
+t01058:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "K. DE VRIES" .
 
-tomb:t01058.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01058.p2 .
+t01058:r1 a t:spouse.n.01 ;
+  :tgt t01058:p2 .
 
-tomb:t01058.s1 a t:willow.n.01 ;
-  :att tomb:t01058.a1 .
+t01058:s1 a t:willow.n.01 ;
+  :att t01058:a1 .
 
-tomb:t01058.im1 a t:photo.n.01 ;
+t01058:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

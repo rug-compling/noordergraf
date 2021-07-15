@@ -1,47 +1,48 @@
+@prefix t00360: <https://noordergraf.rug.nl/tomb/t00360#> .
 
 tomb:t00360 a t:tombstone.n.01 ;
-  :image tomb:t00360.im1 ;
+  :image t00360:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00360.p1 ,
-       tomb:t00360.p2 ;
+  :ent t00360:p1 ,
+       t00360:p2 ;
   :quo "RUST ZACHT LIEVE VROUW EN MOEDER" ;
-  :sym tomb:t00360.s1 .
+  :sym t00360:s1 .
 
-tomb:t00360.a1 a t:weeping.a.02 .
+t00360:a1 a t:weeping.a.02 .
 
-tomb:t00360.c1 a t:village.n.02 ;
+t00360:c1 a t:village.n.02 ;
   :geo place:Tynaarlo2746038 ;
   :place "TYNAARLO" .
 
-tomb:t00360.p1 a t:person.n.01 ;
+t00360:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1870-04-06" ;
   :dod "1936-02-11" ;
   :nam "GRIETJE JAGER" ;
-  :pob tomb:t00360.c1 ;
-  :pod tomb:t00360.c1 ;
-  :rol tomb:t00360.r1 ,
-       tomb:t00360.r2 ,
-       tomb:t00360.r3 .
+  :pob t00360:c1 ;
+  :pod t00360:c1 ;
+  :rol t00360:r1 ,
+       t00360:r2 ,
+       t00360:r3 .
 
-tomb:t00360.p2 a t:person.n.01 ;
+t00360:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "TH. PIETERSEN" .
 
-tomb:t00360.r1 a t:spouse.n.01 ;
+t00360:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00360.p2 .
+  :tgt t00360:p2 .
 
-tomb:t00360.r2 a t:wife.n.01 ;
+t00360:r2 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00360.p2 .
+  :tgt t00360:p2 .
 
-tomb:t00360.r3 a t:mother.n.01 .
+t00360:r3 a t:mother.n.01 .
 
-tomb:t00360.s1 a t:willow.n.01 ;
-  :att tomb:t00360.a1 .
+t00360:s1 a t:willow.n.01 ;
+  :att t00360:a1 .
 
-tomb:t00360.im1 a t:photo.n.01 ;
+t00360:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

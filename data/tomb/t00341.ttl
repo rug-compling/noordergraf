@@ -1,53 +1,54 @@
+@prefix t00341: <https://noordergraf.rug.nl/tomb/t00341#> .
 
 tomb:t00341 a t:tombstone.n.01 ;
-  :image tomb:t00341.im1 ;
+  :image t00341:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00341.p1 ,
-       tomb:t00341.p2 ,
-       tomb:t00341.p3 ,
-       tomb:t00341.p4 ;
+  :ent t00341:p1 ,
+       t00341:p2 ,
+       t00341:p3 ,
+       t00341:p4 ;
   :ref "PSALM 103:8" ;
-  :sym tomb:t00341.s1 .
+  :sym t00341:s1 .
 
-tomb:t00341.p1 a t:person.n.01 ;
+t00341:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1881-12-03" ;
   :dod "1903-03-29" ;
   :nam "EVERT BOOIJ" .
 
-tomb:t00341.p2 a t:person.n.01 ;
+t00341:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1890-07-10" ;
   :dod "1905-04-29" ;
   :nam "MAGARETHA BOOIJ" .
 
-tomb:t00341.p3 a t:person.n.01 ;
+t00341:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H.A. BOOIJ" ;
-  :rol tomb:t00341.r1 ,
-       tomb:t00341.r2 .
+  :rol t00341:r1 ,
+       t00341:r2 .
 
-tomb:t00341.p4 a t:person.n.01 ;
+t00341:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "H.A. BOOIJ-VELDMAN" ;
-  :rol tomb:t00341.r3 ,
-       tomb:t00341.r4 .
+  :rol t00341:r3 ,
+       t00341:r4 .
 
-tomb:t00341.r1 a t:parent.n.01 ;
-  :tgt tomb:t00341.p1 .
+t00341:r1 a t:parent.n.01 ;
+  :tgt t00341:p1 .
 
-tomb:t00341.r2 a t:parent.n.01 ;
-  :tgt tomb:t00341.p2 .
+t00341:r2 a t:parent.n.01 ;
+  :tgt t00341:p2 .
 
-tomb:t00341.r3 a t:parent.n.01 ;
-  :tgt tomb:t00341.p1 .
+t00341:r3 a t:parent.n.01 ;
+  :tgt t00341:p1 .
 
-tomb:t00341.r4 a t:parent.n.01 ;
-  :tgt tomb:t00341.p2 .
+t00341:r4 a t:parent.n.01 ;
+  :tgt t00341:p2 .
 
-tomb:t00341.s1 a t:frond.n.01 .
+t00341:s1 a t:frond.n.01 .
 
-tomb:t00341.im1 a t:photo.n.01 ;
+t00341:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

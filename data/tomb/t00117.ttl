@@ -1,31 +1,32 @@
+@prefix t00117: <https://noordergraf.rug.nl/tomb/t00117#> .
 
 tomb:t00117 a t:tombstone.n.01 ;
-  :image tomb:t00117.im1 ;
+  :image t00117:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00117.p1 ,
-       tomb:t00117.p2 .
+  :ent t00117:p1 ,
+       t00117:p2 .
 
-tomb:t00117.p1 a t:person.n.01 ;
+t00117:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1873-07-07" ;
   :dod "1959-06-12" ;
   :nam "JAN WASSCHER" ;
-  :rol tomb:t00117.r1 ,
-       tomb:t00117.r2 .
+  :rol t00117:r1 ,
+       t00117:r2 .
 
-tomb:t00117.p2 a t:person.n.01 ;
+t00117:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1874-04-07" ;
   :dod "1961-04-20" ;
   :nam "EELJE LUBBERS" .
 
-tomb:t00117.r1 a t:husband.n.01 ;
+t00117:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00117.p2 .
+  :tgt t00117:p2 .
 
-tomb:t00117.r2 a t:father.n.01 .
+t00117:r2 a t:father.n.01 .
 
-tomb:t00117.im1 a t:photo.n.01 ;
+t00117:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,45 +1,46 @@
+@prefix t00946: <https://noordergraf.rug.nl/tomb/t00946#> .
 
 tomb:t00946 a t:tombstone.n.01 ;
-  :image tomb:t00946.im1 ;
+  :image t00946:im1 ;
   :site site:gr9696XGoudeschans ;
-  :ent tomb:t00946.p1 ,
-       tomb:t00946.p2 ,
-       tomb:t00946.p3 ;
+  :ent t00946:p1 ,
+       t00946:p2 ,
+       t00946:p3 ;
   :quo "GESCHONKEN DOOR $p2 EN $p3"@nld ;
-  :sym tomb:t00946.s1 ,
-       tomb:t00946.s2 ,
-       tomb:t00946.s3 ,
-       tomb:t00946.s4 ,
-       tomb:t00946.s5 .
+  :sym t00946:s1 ,
+       t00946:s2 ,
+       t00946:s3 ,
+       t00946:s4 ,
+       t00946:s5 .
 
-tomb:t00946.a1 a t:weeping.a.02 .
+t00946:a1 a t:weeping.a.02 .
 
-tomb:t00946.p1 a t:person.n.01 ;
+t00946:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1824-07-30" ;
   :dod "1902-01-07" ;
   :nam "FEIKO PIETERS VAN HEUVELEN" .
 
-tomb:t00946.p2 a t:person.n.01 ;
+t00946:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. VAN HEUVELEN" .
 
-tomb:t00946.p3 a t:person.n.01 ;
+t00946:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "M.D. HISKES" .
 
-tomb:t00946.s1 a t:willow.n.01 ;
-  :att tomb:t00946.a1 .
+t00946:s1 a t:willow.n.01 ;
+  :att t00946:a1 .
 
-tomb:t00946.s2 a t:deer.n.01 .
+t00946:s2 a t:deer.n.01 .
 
-tomb:t00946.s3 a t:oak.n.02 .
+t00946:s3 a t:oak.n.02 .
 
-tomb:t00946.s4 a t:frond.n.01 .
+t00946:s4 a t:frond.n.01 .
 
-tomb:t00946.s5 a t:ribbon.n.01 .
+t00946:s5 a t:ribbon.n.01 .
 
-tomb:t00946.im1 a t:photo.n.01 ;
+t00946:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

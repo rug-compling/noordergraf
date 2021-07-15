@@ -1,26 +1,27 @@
+@prefix t00750: <https://noordergraf.rug.nl/tomb/t00750#> .
 
 tomb:t00750 a t:tombstone.n.01 ;
-  :image tomb:t00750.im1 ;
+  :image t00750:im1 ;
   :site site:gr9936BTfarmsum ;
-  :ent tomb:t00750.p1 ;
+  :ent t00750:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00750.s1 .
+  :sym t00750:s1 .
 
-tomb:t00750.c1 a t:village.n.02 ;
+t00750:c1 a t:village.n.02 ;
   :geo place:Oterdum2749209 ;
   :place "OTERDUM" .
 
-tomb:t00750.p1 a t:person.n.01 ;
+t00750:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1844-03-14" ;
   :dod "1872-08-16" ;
   :nam "ALDERT ROELFS BOS" ;
-  :pob tomb:t00750.c1 ;
-  :pod tomb:t00750.c1 .
+  :pob t00750:c1 ;
+  :pod t00750:c1 .
 
-tomb:t00750.s1 a t:butterfly.n.01 .
+t00750:s1 a t:butterfly.n.01 .
 
-tomb:t00750.im1 a t:photo.n.01 ;
+t00750:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,44 +1,45 @@
+@prefix t00705: <https://noordergraf.rug.nl/tomb/t00705#> .
 
 tomb:t00705 a t:tombstone.n.01 ;
-  :image tomb:t00705.im1 ;
+  :image t00705:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00705.p1 ,
-       tomb:t00705.p2 ;
+  :ent t00705:p1 ,
+       t00705:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t00705.s1 ,
-       tomb:t00705.s2 .
+  :sym t00705:s1 ,
+       t00705:s2 .
 
-tomb:t00705.c1 a t:hamlet.n.03 ;
+t00705:c1 a t:hamlet.n.03 ;
   :geo place:Angelslo2759766 ;
   :place "ANGELSLO" .
 
-tomb:t00705.p1 a t:person.n.01 ;
+t00705:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1856-04-16" ;
   :dod "1937-07-23" ;
   :nam "JOHANNES KOOPMAN" ;
-  :pod tomb:t00705.c1 ;
-  :rol tomb:t00705.r1 .
+  :pod t00705:c1 ;
+  :rol t00705:r1 .
 
-tomb:t00705.p2 a t:person.n.01 ;
+t00705:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1862-05-03" ;
   :dod "1951-04-22" ;
   :nam "CAROLINA HARMS" ;
-  :pod tomb:t00705.c1 ;
-  :rol tomb:t00705.r2 .
+  :pod t00705:c1 ;
+  :rol t00705:r2 .
 
-tomb:t00705.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00705.p2 .
+t00705:r1 a t:spouse.n.01 ;
+  :tgt t00705:p2 .
 
-tomb:t00705.r2 a t:widow.n.01 ;
-  :tgt tomb:t00705.p1 .
+t00705:r2 a t:widow.n.01 ;
+  :tgt t00705:p1 .
 
-tomb:t00705.s1 a t:frond.n.01 .
+t00705:s1 a t:frond.n.01 .
 
-tomb:t00705.s2 a t:frond.n.01 .
+t00705:s2 a t:frond.n.01 .
 
-tomb:t00705.im1 a t:photo.n.01 ;
+t00705:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,51 +1,52 @@
+@prefix t00921: <https://noordergraf.rug.nl/tomb/t00921#> .
 
 tomb:t00921 a t:tombstone.n.01 ;
-  :image tomb:t00921.im1 ;
+  :image t00921:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00921.g1 ,
-       tomb:t00921.p1 ,
-       tomb:t00921.p2 ,
-       tomb:t00921.p3 ;
+  :ent t00921:g1 ,
+       t00921:p1 ,
+       t00921:p2 ,
+       t00921:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00921.s1 ,
-       tomb:t00921.s2 .
+  :sym t00921:s1 ,
+       t00921:s2 .
 
-tomb:t00921.c1 a t:village.n.02 ;
+t00921:c1 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00921.g1 a t:group.n.01 ;
-  :mem tomb:t00921.p2 ,
-       tomb:t00921.p3 .
+t00921:g1 a t:group.n.01 ;
+  :mem t00921:p2 ,
+       t00921:p3 .
 
-tomb:t00921.p1 a t:person.n.01 ;
+t00921:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1890-02-06" ;
   :dod "1897-04-19" ;
   :nam "MARGARETHA" ;
-  :pob tomb:t00921.c1 ;
-  :pod tomb:t00921.c1 ;
-  :rol tomb:t00921.r1 ,
-       tomb:t00921.r2 .
+  :pob t00921:c1 ;
+  :pod t00921:c1 ;
+  :rol t00921:r1 ,
+       t00921:r2 .
 
-tomb:t00921.p2 a t:person.n.01 ;
+t00921:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ROELF WIERENGA" .
 
-tomb:t00921.p3 a t:person.n.01 ;
+t00921:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANKE ALBERTS" .
 
-tomb:t00921.r1 a t:twin.n.01 .
+t00921:r1 a t:twin.n.01 .
 
-tomb:t00921.r2 a t:daughter.n.01 ;
-  :tgt tomb:t00921.g1 .
+t00921:r2 a t:daughter.n.01 ;
+  :tgt t00921:g1 .
 
-tomb:t00921.s1 a t:oak.n.01 .
+t00921:s1 a t:oak.n.01 .
 
-tomb:t00921.s2 a t:frond.n.01 .
+t00921:s2 a t:frond.n.01 .
 
-tomb:t00921.im1 a t:photo.n.01 ;
+t00921:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,42 +1,43 @@
+@prefix t01071: <https://noordergraf.rug.nl/tomb/t01071#> .
 
 tomb:t01071 a t:tombstone.n.01 ;
-  :image tomb:t01071.im1 ;
+  :image t01071:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t01071.p1 ,
-       tomb:t01071.p2 ;
+  :ent t01071:p1 ,
+       t01071:p2 ;
   :lan "NLD" .
 
-tomb:t01071.c1 a t:village.n.02 ;
+t01071:c1 a t:village.n.02 ;
   :geo place:Vlagtwedde2745461 ;
   :place "VLAGTWEDDE" .
 
-tomb:t01071.c2 a t:town.n.01 ;
+t01071:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t01071.c3 a t:village.n.02 ;
+t01071:c3 a t:village.n.02 ;
   :geo place:Finsterwolde2755905 ;
   :place "FINSTERWOLDE" .
 
-tomb:t01071.c4 a t:city.n.01 ;
+t01071:c4 a t:city.n.01 ;
   :geo place:Appingedam2759687 ;
   :place "APPINGEDAM" .
 
-tomb:t01071.p1 a t:person.n.01 ;
+t01071:p1 a t:person.n.01 ;
   :dob "1883-04-16" ;
   :dod "1951-10-06" ;
   :nam "B. SANDERS" ;
-  :pob tomb:t01071.c1 ;
-  :pod tomb:t01071.c2 .
+  :pob t01071:c1 ;
+  :pod t01071:c2 .
 
-tomb:t01071.p2 a t:person.n.01 ;
+t01071:p2 a t:person.n.01 ;
   :dob "1885-11-25" ;
   :dod "1970-01-10" ;
   :nam "F.T. SAP" ;
-  :pob tomb:t01071.c3 ;
-  :pod tomb:t01071.c4 .
+  :pob t01071:c3 ;
+  :pod t01071:c4 .
 
-tomb:t01071.im1 a t:photo.n.01 ;
+t01071:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

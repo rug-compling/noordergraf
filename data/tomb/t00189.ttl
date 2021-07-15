@@ -1,20 +1,21 @@
+@prefix t00189: <https://noordergraf.rug.nl/tomb/t00189#> .
 
 tomb:t00189 a t:tombstone.n.01 ;
-  :image tomb:t00189.im1 ;
+  :image t00189:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00189.p1 ;
+  :ent t00189:p1 ;
   :quo "HIER LIGT JAN BAKKER IK WORD NIET MEER WAKKER" ;
-  :sym tomb:t00189.s1 .
+  :sym t00189:s1 .
 
-tomb:t00189.p1 a t:person.n.01 ;
+t00189:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1946-03-25" ;
   :dod "2003-06-11" ;
   :nam "JAN BAKKER" .
 
-tomb:t00189.s1 a t:hat.n.01 .
+t00189:s1 a t:hat.n.01 .
 
-tomb:t00189.im1 a t:photo.n.01 ;
+t00189:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

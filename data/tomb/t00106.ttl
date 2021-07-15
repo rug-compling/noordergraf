@@ -1,47 +1,48 @@
+@prefix t00106: <https://noordergraf.rug.nl/tomb/t00106#> .
 
 tomb:t00106 a t:tombstone.n.01 ;
-  :image tomb:t00106.im1 ;
+  :image t00106:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00106.p1 ,
-       tomb:t00106.p2 ,
-       tomb:t00106.p3 ;
-  :sym tomb:t00106.s1 .
+  :ent t00106:p1 ,
+       t00106:p2 ,
+       t00106:p3 ;
+  :sym t00106:s1 .
 
-tomb:t00106.o1 a t:doctor.n.01 ;
+t00106:o1 a t:doctor.n.01 ;
   :hco "06105" .
 
-tomb:t00106.p1 a t:person.n.01 ;
+t00106:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1864-03-06" ;
   :dod "1937-06-18" ;
   :nam "T.F. THIJSSEN" ;
-  :occ tomb:t00106.o1 .
+  :occ t00106:o1 .
 
-tomb:t00106.p2 a t:person.n.01 ;
+t00106:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1876-09-02" ;
   :dod "1950-04-03" ;
   :nam "GEBBINA KATHARINA THIJSSEN" ;
-  :rol tomb:t00106.r2 .
+  :rol t00106:r2 .
 
-tomb:t00106.p3 a t:person.n.01 ;
+t00106:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1877-11-17" ;
   :dod "1959-09-10" ;
   :nam "KLAAS MULDER" .
 
-tomb:t00106.r2 a t:wife.n.01 ;
-  :tgt tomb:t00106.p3 .
+t00106:r2 a t:wife.n.01 ;
+  :tgt t00106:p3 .
 
-tomb:t00106.s1 a t:composite.n.01 ;
-  :prt tomb:t00106.s2 ,
-       tomb:t00106.s3 .
+t00106:s1 a t:composite.n.01 ;
+  :prt t00106:s2 ,
+       t00106:s3 .
 
-tomb:t00106.s2 a t:frond.n.01 .
+t00106:s2 a t:frond.n.01 .
 
-tomb:t00106.s3 a t:frond.n.01 .
+t00106:s3 a t:frond.n.01 .
 
-tomb:t00106.im1 a t:photo.n.01 ;
+t00106:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,52 +1,53 @@
+@prefix t00597: <https://noordergraf.rug.nl/tomb/t00597#> .
 
 tomb:t00597 a t:tombstone.n.01 ;
-  :image tomb:t00597.im1 ;
+  :image t00597:im1 ;
   :site site:gr9951TNwinsum ;
-  :ent tomb:t00597.p1 ,
-       tomb:t00597.p2 ;
+  :ent t00597:p1 ,
+       t00597:p2 ;
   :quo "AMICITIA ET TOLERANTIA"@nld ;
-  :ref tomb:t00597.c1 .
+  :ref t00597:c1 .
 
-tomb:t00597.b1 a t:First_Epistle_to_the_Corinthians.n.01 ;
-  :prt tomb:t00597.c1 .
+t00597:b1 a t:First_Epistle_to_the_Corinthians.n.01 ;
+  :prt t00597:c1 .
 
-tomb:t00597.c1 a t:chapter.n.01 ;
+t00597:c1 a t:chapter.n.01 ;
   :ord 13 .
 
-tomb:t00597.o1 a t:sociologist.n.01 ;
+t00597:o1 a t:sociologist.n.01 ;
   :hco "19220" ;
-  :org tomb:t00597.o2 .
+  :org t00597:o2 .
 
-tomb:t00597.o2 a t:university.n.02 ;
+t00597:o2 a t:university.n.02 ;
   :nam "RIJKSUNIVERSITEIT GRONINGEN" .
 
-tomb:t00597.o3 a t:author.n.01 ;
+t00597:o3 a t:author.n.01 ;
   :hco "15120" .
 
-tomb:t00597.p1 a t:person.n.01 ;
+t00597:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1917-07-21" ;
   :dod "1986-12-09" ;
   :nam "CORNELIS DIRK SAAL" ;
-  :occ tomb:t00597.o1 ;
-  :rol tomb:t00597.r1 ,
-       tomb:t00597.r2 .
+  :occ t00597:o1 ;
+  :rol t00597:r1 ,
+       t00597:r2 .
 
-tomb:t00597.p2 a t:person.n.01 ;
+t00597:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1934-12-02" ;
   :dod "2004-07-29" ;
   :nam "TOOS MARIA ZUURVEEN" ;
-  :occ tomb:t00597.o3 .
+  :occ t00597:o3 .
 
-tomb:t00597.r1 a t:spouse.n.01 ;
+t00597:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00597.p2 .
+  :tgt t00597:p2 .
 
-tomb:t00597.r2 a t:leermeester.n.01 ;
-  :tgt tomb:t00597.p2 .
+t00597:r2 a t:leermeester.n.01 ;
+  :tgt t00597:p2 .
 
-tomb:t00597.im1 a t:photo.n.01 ;
+t00597:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

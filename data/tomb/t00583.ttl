@@ -1,44 +1,45 @@
+@prefix t00583: <https://noordergraf.rug.nl/tomb/t00583#> .
 
 tomb:t00583 a t:tombstone.n.01 ;
-  :image tomb:t00583.im1 ;
+  :image t00583:im1 ;
   :site site:gr9951STwinsum ;
-  :ent tomb:t00583.p1 ,
-       tomb:t00583.p2 ,
-       tomb:t00583.p3 ;
+  :ent t00583:p1 ,
+       t00583:p2 ,
+       t00583:p3 ;
   :ref "PSALM 73:12" ;
-  :sym tomb:t00583.s1 .
+  :sym t00583:s1 .
 
-tomb:t00583.a1 a t:weeping.a.02 .
+t00583:a1 a t:weeping.a.02 .
 
-tomb:t00583.c1 a t:village.n.02 ;
+t00583:c1 a t:village.n.02 ;
   :nam "BAFLO" .
 
-tomb:t00583.p1 a t:person.n.01 ;
+t00583:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1891-06-25" ;
   :dod "1919-03-07" ;
   :nam "JAN PETTINGA" ;
-  :rol tomb:t00583.r1 .
+  :rol t00583:r1 .
 
-tomb:t00583.p2 a t:person.n.01 ;
+t00583:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANNECIEN SCHOLMA" .
 
-tomb:t00583.p3 a t:person.n.01 ;
-  :loc tomb:t00583.c1 ;
+t00583:p3 a t:person.n.01 ;
+  :loc t00583:c1 ;
   :nam "BONJERNOUR" ;
-  :occ tomb:t00583.r2 .
+  :occ t00583:r2 .
 
-tomb:t00583.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00583.p2 .
+t00583:r1 a t:spouse.n.01 ;
+  :tgt t00583:p2 .
 
-tomb:t00583.r2 a t:designer.n.01 ;
+t00583:r2 a t:designer.n.01 ;
   :tgt tomb:t00583 .
 
-tomb:t00583.s1 a t:willow.n.01 ;
-  :att tomb:t00583.a1 .
+t00583:s1 a t:willow.n.01 ;
+  :att t00583:a1 .
 
-tomb:t00583.im1 a t:photo.n.01 ;
+t00583:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

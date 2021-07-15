@@ -1,47 +1,48 @@
+@prefix t00090: <https://noordergraf.rug.nl/tomb/t00090#> .
 
 tomb:t00090 a t:tombstone.n.01 ;
-  :image tomb:t00090.im1 ;
+  :image t00090:im1 ;
   :site site:gr9721AAgroningen ;
-  :ent tomb:t00090.p1 ,
-       tomb:t00090.p2 ;
-  :sym tomb:t00090.s1 .
+  :ent t00090:p1 ,
+       t00090:p2 ;
+  :sym t00090:s1 .
 
-tomb:t00090.p1 a t:person.n.01 ;
+t00090:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1910-03-25" ;
   :dod "1983-06-13" ;
   :nam "GERHARDUS JOHANNES ROESZING" ;
-  :rol tomb:t00090.r1 ,
-       tomb:t00090.r2 ,
-       tomb:t00090.r3 .
+  :rol t00090:r1 ,
+       t00090:r2 ,
+       t00090:r3 .
 
-tomb:t00090.p2 a t:person.n.01 ;
+t00090:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1915-05-31" ;
   :dod "1996-12-14" ;
   :nam "ELSIEN BRUGGE" ;
-  :rol tomb:t00090.r4 ,
-       tomb:t00090.r5 ,
-       tomb:t00090.r6 .
+  :rol t00090:r4 ,
+       t00090:r5 ,
+       t00090:r6 .
 
-tomb:t00090.r1 a t:husband.n.01 ;
+t00090:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00090.p2 .
+  :tgt t00090:p2 .
 
-tomb:t00090.r2 a t:father.n.01 .
+t00090:r2 a t:father.n.01 .
 
-tomb:t00090.r3 a t:grandfather.n.01 .
+t00090:r3 a t:grandfather.n.01 .
 
-tomb:t00090.r4 a t:mother.n.01 ;
+t00090:r4 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00090.r5 a t:grandmother.n.01 .
+t00090:r5 a t:grandmother.n.01 .
 
-tomb:t00090.r6 a t:great_grandmother.n.01 .
+t00090:r6 a t:great_grandmother.n.01 .
 
-tomb:t00090.s1 a t:cross.n.03 .
+t00090:s1 a t:cross.n.03 .
 
-tomb:t00090.im1 a t:photo.n.01 ;
+t00090:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

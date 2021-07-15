@@ -1,34 +1,35 @@
+@prefix t00618: <https://noordergraf.rug.nl/tomb/t00618#> .
 
 tomb:t00618 a t:tombstone.n.01 ;
-  :image tomb:t00618.im1 ;
+  :image t00618:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00618.p1 ,
-       tomb:t00618.p2 ;
+  :ent t00618:p1 ,
+       t00618:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00618.s1 .
+  :sym t00618:s1 .
 
-tomb:t00618.p1 a t:person.n.01 ;
+t00618:p1 a t:person.n.01 ;
   :dob "1794-02-05" ;
   :dod "1871-06-08" ;
   :nam "W.R. MULDER" ;
-  :rol tomb:t00618.r1 .
+  :rol t00618:r1 .
 
-tomb:t00618.p2 a t:person.n.01 ;
+t00618:p2 a t:person.n.01 ;
   :dob "1794-08-08" ;
   :dod "1874-07-26" ;
   :nam "L.J. BONTEKOE" ;
-  :rol tomb:t00618.r2 .
+  :rol t00618:r2 .
 
-tomb:t00618.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00618.p2 .
+t00618:r1 a t:spouse.n.01 ;
+  :tgt t00618:p2 .
 
-tomb:t00618.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00618.p1 .
+t00618:r2 a t:spouse.n.01 ;
+  :tgt t00618:p1 .
 
-tomb:t00618.s1 a t:branch.n.02 ;
+t00618:s1 a t:branch.n.02 ;
   :qua 2 .
 
-tomb:t00618.im1 a t:photo.n.01 ;
+t00618:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

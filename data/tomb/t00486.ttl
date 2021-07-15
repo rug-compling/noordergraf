@@ -1,61 +1,62 @@
+@prefix t00486: <https://noordergraf.rug.nl/tomb/t00486#> .
 
 tomb:t00486 a t:tombstone.n.01 ;
-  :image tomb:t00486.im1 ;
+  :image t00486:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00486.p1 ,
-       tomb:t00486.p2 ,
-       tomb:t00486.p3 ;
+  :ent t00486:p1 ,
+       t00486:p2 ,
+       t00486:p3 ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :sym tomb:t00486.s1 .
+  :sym t00486:s1 .
 
-tomb:t00486.c1 a t:city.n.01 ;
+t00486:c1 a t:city.n.01 ;
   :geo place:Amsterdam2759794 ;
   :place "AMSTERDAM" .
 
-tomb:t00486.c2 a t:city.n.01 ;
+t00486:c2 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00486.c3 a t:city.n.01 ;
+t00486:c3 a t:city.n.01 ;
   :geo place:Alkmaar2759899 ;
   :place "ALKMAAR" .
 
-tomb:t00486.p1 a t:person.n.01 ;
+t00486:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1846-04-26" ;
   :dod "1888-04-06" ;
   :nam "MARIA BLEEKER" ;
-  :pob tomb:t00486.c1 ;
-  :pod tomb:t00486.c2 ;
-  :rol tomb:t00486.r1 .
+  :pob t00486:c1 ;
+  :pod t00486:c2 ;
+  :rol t00486:r1 .
 
-tomb:t00486.p2 a t:person.n.01 ;
+t00486:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1837-08-24" ;
   :dod "1906-06-02" ;
   :nam "FRANCISCUS BARTHOLOMEUS HOFSTEDE" ;
-  :pob tomb:t00486.c3 ;
-  :pod tomb:t00486.c2 ;
-  :rol tomb:t00486.r2 ,
-       tomb:t00486.r3 .
+  :pob t00486:c3 ;
+  :pod t00486:c2 ;
+  :rol t00486:r2 ,
+       t00486:r3 .
 
-tomb:t00486.p3 a t:person.n.01 ;
+t00486:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "C. FLAPPER" .
 
-tomb:t00486.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00486.p2 .
+t00486:r1 a t:spouse.n.01 ;
+  :tgt t00486:p2 .
 
-tomb:t00486.r2 a t:widow.n.01 ;
-  :bef tomb:t00486.r3 ;
-  :tgt tomb:t00486.p1 .
+t00486:r2 a t:widow.n.01 ;
+  :bef t00486:r3 ;
+  :tgt t00486:p1 .
 
-tomb:t00486.r3 a t:widow.n.01 ;
-  :tgt tomb:t00486.p3 .
+t00486:r3 a t:widow.n.01 ;
+  :tgt t00486:p3 .
 
-tomb:t00486.s1 a t:cross.n.03 .
+t00486:s1 a t:cross.n.03 .
 
-tomb:t00486.im1 a t:photo.n.01 ;
+t00486:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

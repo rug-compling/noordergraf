@@ -1,57 +1,58 @@
+@prefix t00997: <https://noordergraf.rug.nl/tomb/t00997#> .
 
 tomb:t00997 a t:tombstone.n.01 ;
-  :image tomb:t00997.im1 ;
+  :image t00997:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t00997.g1 ,
-       tomb:t00997.p1 ,
-       tomb:t00997.p2 ;
+  :ent t00997:g1 ,
+       t00997:p1 ,
+       t00997:p2 ;
   :quo "BETREURD DOOR ZIJN KINDEREN"@nld ;
-  :sym tomb:t00997.s1 ,
-       tomb:t00997.s2 .
+  :sym t00997:s1 ,
+       t00997:s2 .
 
-tomb:t00997.c1 a t:village.n.02 ;
+t00997:c1 a t:village.n.02 ;
   :geo place:Thesinge2746361 ;
   :place "THESINGE" .
 
-tomb:t00997.c2 a t:village.n.02 ;
+t00997:c2 a t:village.n.02 ;
   :geo place:Noorddijk2749981 ;
   :place "NOORDDIJK" .
 
-tomb:t00997.g1 a t:group.n.01 ;
-  :mem tomb:t00997.p3 .
+t00997:g1 a t:group.n.01 ;
+  :mem t00997:p3 .
 
-tomb:t00997.p1 a t:person.n.01 ;
+t00997:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1807-03-08" ;
   :dod "1894-01-19" ;
   :nam "HEIKE GEERTS WIERENGA" ;
-  :pob tomb:t00997.c1 ;
-  :pod tomb:t00997.c2 ;
-  :rol tomb:t00997.r1 ,
-       tomb:t00997.r2 .
+  :pob t00997:c1 ;
+  :pod t00997:c2 ;
+  :rol t00997:r1 ,
+       t00997:r2 .
 
-tomb:t00997.p2 a t:person.n.01 ;
+t00997:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "IMKE JANS NIEHOF" .
 
-tomb:t00997.p3 a t:person.n.01 ;
-  :rol tomb:t00997.r3 .
+t00997:p3 a t:person.n.01 ;
+  :rol t00997:r3 .
 
-tomb:t00997.r1 a t:widower.n.01 ;
+t00997:r1 a t:widower.n.01 ;
   :beg "28-01-1882" ;
-  :tgt tomb:t00997.p2 .
+  :tgt t00997:p2 .
 
-tomb:t00997.r2 a t:father.n.01 ;
-  :tgt tomb:t00997.g1 .
+t00997:r2 a t:father.n.01 ;
+  :tgt t00997:g1 .
 
-tomb:t00997.r3 a t:child.n.02 ;
-  :tgt tomb:t00997.p1 .
+t00997:r3 a t:child.n.02 ;
+  :tgt t00997:p1 .
 
-tomb:t00997.s1 a t:frond.n.01 .
+t00997:s1 a t:frond.n.01 .
 
-tomb:t00997.s2 a t:frond.n.01 .
+t00997:s2 a t:frond.n.01 .
 
-tomb:t00997.im1 a t:photo.n.01 ;
+t00997:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

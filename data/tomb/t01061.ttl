@@ -1,42 +1,43 @@
+@prefix t01061: <https://noordergraf.rug.nl/tomb/t01061#> .
 
 tomb:t01061 a t:tombstone.n.01 ;
-  :image tomb:t01061.im1 ;
+  :image t01061:im1 ;
   :site site:gr9367PAde_wilp ;
-  :ent tomb:t01061.p1 ,
-       tomb:t01061.p2 ;
+  :ent t01061:p1 ,
+       t01061:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t01061.s1 .
+  :sym t01061:s1 .
 
-tomb:t01061.a1 a t:weeping.a.02 .
+t01061:a1 a t:weeping.a.02 .
 
-tomb:t01061.c1 a t:village.n.02 ;
+t01061:c1 a t:village.n.02 ;
   :geo place:Ureterp2745936 ;
   :place "URETERP" .
 
-tomb:t01061.c2 a t:village.n.02 ;
+t01061:c2 a t:village.n.02 ;
   :geo place:DeWilp2756932 ;
   :place "DE WILP" .
 
-tomb:t01061.p1 a t:person.n.01 ;
+t01061:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1847-08-16" ;
   :dod "1927-02-12" ;
   :nam "HENDRIK W. NIJHOF" ;
-  :pob tomb:t01061.c1 ;
-  :pod tomb:t01061.c2 ;
-  :rol tomb:t01061.r1 .
+  :pob t01061:c1 ;
+  :pod t01061:c2 ;
+  :rol t01061:r1 .
 
-tomb:t01061.p2 a t:person.n.01 ;
+t01061:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "BAUKJE W. VEENSTRA" .
 
-tomb:t01061.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01061.p2 .
+t01061:r1 a t:spouse.n.01 ;
+  :tgt t01061:p2 .
 
-tomb:t01061.s1 a t:willow.n.01 ;
-  :att tomb:t01061.a1 .
+t01061:s1 a t:willow.n.01 ;
+  :att t01061:a1 .
 
-tomb:t01061.im1 a t:photo.n.01 ;
+t01061:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

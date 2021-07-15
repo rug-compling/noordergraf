@@ -1,45 +1,46 @@
+@prefix t00653: <https://noordergraf.rug.nl/tomb/t00653#> .
 
 tomb:t00653 a t:tombstone.n.01 ;
-  :image tomb:t00653.im1 ;
+  :image t00653:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00653.p1 ,
-       tomb:t00653.p2 ,
-       tomb:t00653.p3 ;
+  :ent t00653:p1 ,
+       t00653:p2 ,
+       t00653:p3 ;
   :quo "MAAR DE RECHTVAARDIGE \\ BETROUWT ZELFS IN \\ ZIJNEN DOOD."@nld ;
   :ref "SPREUKEN 14:32"@nld ;
-  :sym tomb:t00653.s1 .
+  :sym t00653:s1 .
 
-tomb:t00653.c1 a t:hamlet.n.03 ;
+t00653:c1 a t:hamlet.n.03 ;
   :geo place:Kalkwijk2753130 ;
   :place "KALKWIJK" .
 
-tomb:t00653.p1 a t:person.n.01 ;
+t00653:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1864-08-31" ;
   :dod "1920-05-13" ;
   :nam "ANDRIES BLAAK" ;
-  :pob tomb:t00653.c1 ;
-  :pod tomb:t00653.c1 ;
-  :rol tomb:t00653.r1 ,
-       tomb:t00653.r2 .
+  :pob t00653:c1 ;
+  :pod t00653:c1 ;
+  :rol t00653:r1 ,
+       t00653:r2 .
 
-tomb:t00653.p2 a t:person.n.01 ;
+t00653:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "PIETERTJE DRENT" .
 
-tomb:t00653.p3 a t:person.n.01 ;
+t00653:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "GRIETKE KLEVERINGA" .
 
-tomb:t00653.r1 a t:widower.n.01 ;
-  :tgt tomb:t00653.p2 .
+t00653:r1 a t:widower.n.01 ;
+  :tgt t00653:p2 .
 
-tomb:t00653.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00653.p3 .
+t00653:r2 a t:spouse.n.01 ;
+  :tgt t00653:p3 .
 
-tomb:t00653.s1 a t:rose.n.01 .
+t00653:s1 a t:rose.n.01 .
 
-tomb:t00653.im1 a t:photo.n.01 ;
+t00653:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

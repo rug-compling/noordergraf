@@ -1,51 +1,52 @@
+@prefix t00474: <https://noordergraf.rug.nl/tomb/t00474#> .
 
 tomb:t00474 a t:tombstone.n.01 ;
-  :image tomb:t00474.im1 ;
+  :image t00474:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00474.p1 ,
-       tomb:t00474.p2 ;
+  :ent t00474:p1 ,
+       t00474:p2 ;
   :quo "VOORZIEN VAN DE H.H. SACRAMENTEN DER STERVENDEN" .
 
-tomb:t00474.c1 a t:city.n.01 ;
+t00474:c1 a t:city.n.01 ;
   :geo place:Franeker2755845 ;
   :place "FRANEKER" .
 
-tomb:t00474.c2 a t:city.n.01 ;
+t00474:c2 a t:city.n.01 ;
   :geo place:Dokkum2756759 ;
   :place "DOKKUM" .
 
-tomb:t00474.c3 a t:village.n.02 ;
+t00474:c3 a t:village.n.02 ;
   :geo place:Dronryp2756561 ;
   :place "DRONRIJP" .
 
-tomb:t00474.c4 a t:city.n.01 ;
+t00474:c4 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00474.p1 a t:person.n.01 ;
+t00474:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1882-07-03" ;
   :dod "1933-12-17" ;
   :nam "JOHANNES TERPSTRA" ;
-  :pob tomb:t00474.c1 ;
-  :pod tomb:t00474.c2 ;
-  :rol tomb:t00474.r1 .
+  :pob t00474:c1 ;
+  :pod t00474:c2 ;
+  :rol t00474:r1 .
 
-tomb:t00474.p2 a t:person.n.01 ;
+t00474:p2 a t:person.n.01 ;
   :dob "1887-07-28" ;
   :dod "1963-07-05" ;
   :nam "C. POSTMA" ;
-  :pob tomb:t00474.c3 ;
-  :pod tomb:t00474.c4 ;
-  :rol tomb:t00474.r2 .
+  :pob t00474:c3 ;
+  :pod t00474:c4 ;
+  :rol t00474:r2 .
 
-tomb:t00474.r1 a t:parent.n.01 ;
-  :tgt tomb:t00474.p3 .
+t00474:r1 a t:parent.n.01 ;
+  :tgt t00474:p3 .
 
-tomb:t00474.r2 a t:parent.n.01 ;
-  :tgt tomb:t00474.p3 .
+t00474:r2 a t:parent.n.01 ;
+  :tgt t00474:p3 .
 
-tomb:t00474.im1 a t:photo.n.01 ;
+t00474:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

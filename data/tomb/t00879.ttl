@@ -1,28 +1,29 @@
+@prefix t00879: <https://noordergraf.rug.nl/tomb/t00879#> .
 
 tomb:t00879 a t:tombstone.n.01 ;
-  :image tomb:t00879.im1 ;
+  :image t00879:im1 ;
   :site site:dr7844TCveenoord ;
-  :ent tomb:t00879.p1 ,
-       tomb:t00879.p2 ;
+  :ent t00879:p1 ,
+       t00879:p2 ;
   :lan "NLD" .
 
-tomb:t00879.p1 a t:person.n.01 ;
+t00879:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1879-12-12" ;
   :dod "1955-10-08" ;
   :nam "HENDRIK KOOPS" ;
-  :rol tomb:t00879.r1 .
+  :rol t00879:r1 .
 
-tomb:t00879.p2 a t:person.n.01 ;
+t00879:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1887-08-27" ;
   :dod "1962-12-25" ;
   :nam "ANNA BUNING" .
 
-tomb:t00879.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00879.p2 .
+t00879:r1 a t:spouse.n.01 ;
+  :tgt t00879:p2 .
 
-tomb:t00879.im1 a t:photo.n.01 ;
+t00879:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,44 +1,45 @@
+@prefix t00310: <https://noordergraf.rug.nl/tomb/t00310#> .
 
 tomb:t00310 a t:tombstone.n.01 ;
-  :image tomb:t00310.im1 ;
+  :image t00310:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00310.p1 ,
-       tomb:t00310.p2 ,
-       tomb:t00310.p3 ;
+  :ent t00310:p1 ,
+       t00310:p2 ,
+       t00310:p3 ;
   :ref "GEZANG 178:1" ,
        "GEZANG 178:3" ;
-  :sym tomb:t00310.s1 .
+  :sym t00310:s1 .
 
-tomb:t00310.a1 a t:weeping.a.02 .
+t00310:a1 a t:weeping.a.02 .
 
-tomb:t00310.p1 a t:person.n.01 ;
+t00310:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1890-04-08" ;
   :dod "1941-06-09" ;
   :nam "GRIETIEN LESSCHEN" ;
-  :rol tomb:t00310.r1 .
+  :rol t00310:r1 .
 
-tomb:t00310.p2 a t:person.n.01 ;
+t00310:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1894-03-03" ;
   :dod "1976-07-03" ;
   :nam "ALBERT SMEMAN" ;
-  :rol tomb:t00310.r2 .
+  :rol t00310:r2 .
 
-tomb:t00310.p3 a t:person.n.01 ;
+t00310:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "GÉ LUINGE" .
 
-tomb:t00310.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00310.p2 .
+t00310:r1 a t:spouse.n.01 ;
+  :tgt t00310:p2 .
 
-tomb:t00310.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00310.p3 .
+t00310:r2 a t:spouse.n.01 ;
+  :tgt t00310:p3 .
 
-tomb:t00310.s1 a t:willow.n.01 ;
-  :att tomb:t00310.a1 .
+t00310:s1 a t:willow.n.01 ;
+  :att t00310:a1 .
 
-tomb:t00310.im1 a t:photo.n.01 ;
+t00310:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

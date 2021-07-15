@@ -1,67 +1,68 @@
+@prefix t00001: <https://noordergraf.rug.nl/tomb/t00001#> .
 
 tomb:t00001 a t:tombstone.n.01 ;
-  :image tomb:t00001.im1 ;
+  :image t00001:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00001.g1 ,
-       tomb:t00001.p1 ,
-       tomb:t00001.p2 ;
-  :sym tomb:t00001.s1 .
+  :ent t00001:g1 ,
+       t00001:p1 ,
+       t00001:p2 ;
+  :sym t00001:s1 .
 
-tomb:t00001.g1 a t:group.n.01 ;
-  :rol tomb:t00001.r1 .
+t00001:g1 a t:group.n.01 ;
+  :rol t00001:r1 .
 
-tomb:t00001.m1 a t:measure.n.02 ;
-  :mem tomb:t00001.u1 ;
+t00001:m1 a t:measure.n.02 ;
+  :mem t00001:u1 ;
   :qua 27 .
 
-tomb:t00001.m2 a t:measure.n.02 ;
-  :mem tomb:t00001.u2 ;
+t00001:m2 a t:measure.n.02 ;
+  :mem t00001:u2 ;
   :qua 61 .
 
-tomb:t00001.p1 a t:person.n.01 ;
+t00001:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t00001.m1 ;
+  :age t00001:m1 ;
   :dod "1933-10-12" ;
   :nam "KLAAS SWART" ;
-  :rol tomb:t00001.r2 ,
-       tomb:t00001.r3 .
+  :rol t00001:r2 ,
+       t00001:r3 .
 
-tomb:t00001.p2 a t:person.n.01 ;
+t00001:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
-  :age tomb:t00001.m2 ;
+  :age t00001:m2 ;
   :dod "1936-02-13" ;
   :nam "ANNECHIEN MULDER" ;
-  :rol tomb:t00001.r4 ,
-       tomb:t00001.r5 ,
-       tomb:t00001.r6 .
+  :rol t00001:r4 ,
+       t00001:r5 ,
+       t00001:r6 .
 
-tomb:t00001.r1 a t:commemorator.n.01 ;
-  :tgt tomb:t00001.p1 .
+t00001:r1 a t:commemorator.n.01 ;
+  :tgt t00001:p1 .
 
-tomb:t00001.r2 a t:son.n.01 ;
+t00001:r2 a t:son.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00001.g1 .
+  :tgt t00001:g1 .
 
-tomb:t00001.r3 a t:brother.n.01 ;
-  :tgt tomb:t00001.g1 .
+t00001:r3 a t:brother.n.01 ;
+  :tgt t00001:g1 .
 
-tomb:t00001.r4 a t:wife.n.01 ;
+t00001:r4 a t:wife.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00001.g1 .
+  :tgt t00001:g1 .
 
-tomb:t00001.r5 a t:mother.n.01 ;
-  :tgt tomb:t00001.g1 .
+t00001:r5 a t:mother.n.01 ;
+  :tgt t00001:g1 .
 
-tomb:t00001.r6 a t:grandmother.n.01 ;
-  :tgt tomb:t00001.g1 .
+t00001:r6 a t:grandmother.n.01 ;
+  :tgt t00001:g1 .
 
-tomb:t00001.s1 a t:frond.n.01 .
+t00001:s1 a t:frond.n.01 .
 
-tomb:t00001.u1 a t:year.n.01 .
+t00001:u1 a t:year.n.01 .
 
-tomb:t00001.u2 a t:year.n.01 .
+t00001:u2 a t:year.n.01 .
 
-tomb:t00001.im1 a t:photo.n.01 ;
+t00001:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,17 +1,18 @@
+@prefix t00703: <https://noordergraf.rug.nl/tomb/t00703#> .
 
 tomb:t00703 a t:tombstone.n.01 ;
-  :image tomb:t00703.im1 ;
+  :image t00703:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00703.p1 ;
+  :ent t00703:p1 ;
   :quo "RUST ZACHT LIEVE AAFKE"@nld .
 
-tomb:t00703.p1 a t:person.n.01 ;
+t00703:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1927-01-27" ;
   :dod "1931-07-09" ;
   :nam "AAFKE LUURS" .
 
-tomb:t00703.im1 a t:photo.n.01 ;
+t00703:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

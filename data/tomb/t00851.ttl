@@ -1,42 +1,43 @@
+@prefix t00851: <https://noordergraf.rug.nl/tomb/t00851#> .
 
 tomb:t00851 a t:tombstone.n.01 ;
-  :image tomb:t00851.im1 ;
+  :image t00851:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00851.p1 ,
-       tomb:t00851.p2 ;
+  :ent t00851:p1 ,
+       t00851:p2 ;
   :quo "WIJ VERWACHTEN ECHTER \\ NAAR ZIJN BELOFTE \\ NIEUWE HEMELEN \\ EN EEN NIEUWE AARDE \\ WAAR GERECHTIGHEID WOONT."@nld ;
   :ref "2 PETRUS 3:13"@nld ;
-  :sym tomb:t00851.s1 .
+  :sym t00851:s1 .
 
-tomb:t00851.p1 a t:person.n.01 ;
+t00851:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1899-08-22" ;
   :dod "1967-12-15" ;
   :nam "ALBERT WILTING" ;
-  :rol tomb:t00851.r1 ,
-       tomb:t00851.r2 ,
-       tomb:t00851.r3 ,
-       tomb:t00851.r4 .
+  :rol t00851:r1 ,
+       t00851:r2 ,
+       t00851:r3 ,
+       t00851:r4 .
 
-tomb:t00851.p2 a t:person.n.01 ;
+t00851:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ROELOFJE HUIJING" .
 
-tomb:t00851.r1 a t:husband.n.01 ;
+t00851:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00851.p2 .
+  :tgt t00851:p2 .
 
-tomb:t00851.r2 a t:father.n.01 .
+t00851:r2 a t:father.n.01 .
 
-tomb:t00851.r3 a t:grandfather.n.01 .
+t00851:r3 a t:grandfather.n.01 .
 
-tomb:t00851.r4 a t:spouse.n.01 ;
+t00851:r4 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00851.p2 .
+  :tgt t00851:p2 .
 
-tomb:t00851.s1 a t:frond.n.01 .
+t00851:s1 a t:frond.n.01 .
 
-tomb:t00851.im1 a t:photo.n.01 ;
+t00851:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,74 +1,75 @@
+@prefix t00585: <https://noordergraf.rug.nl/tomb/t00585#> .
 
 tomb:t00585 a t:tombstone.n.01 ;
-  :image tomb:t00585.im1 ;
+  :image t00585:im1 ;
   :site site:gr9951STwinsum ;
-  :ent tomb:t00585.p1 ,
-       tomb:t00585.p2 ,
-       tomb:t00585.p3 ;
-  :sym tomb:t00585.s1 .
+  :ent t00585:p1 ,
+       t00585:p2 ,
+       t00585:p3 ;
+  :sym t00585:s1 .
 
-tomb:t00585.a1 a t:weeping.a.02 .
+t00585:a1 a t:weeping.a.02 .
 
-tomb:t00585.c1 a t:city.n.01 ;
+t00585:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00585.c2 a t:municipality.n.01 ;
+t00585:c2 a t:municipality.n.01 ;
   :geo place:Winsum2744337 ;
   :place "WINSUM" .
 
-tomb:t00585.c3 a t:village.n.02 ;
+t00585:c3 a t:village.n.02 ;
   :geo place:Obergum2749742 ;
   :place "OBERGUM" .
 
-tomb:t00585.m1 a t:measure.n.02 ;
-  :mem tomb:t00585.u1 ;
+t00585:m1 a t:measure.n.02 ;
+  :mem t00585:u1 ;
   :qua 63 .
 
-tomb:t00585.m2 a t:measure.n.02 ;
-  :mem tomb:t00585.u2 ;
+t00585:m2 a t:measure.n.02 ;
+  :mem t00585:u2 ;
   :qua 51 .
 
-tomb:t00585.o1 a t:constable.n.03 ;
+t00585:o1 a t:constable.n.03 ;
   :hco "58220" ;
-  :loc tomb:t00585.c2 .
+  :loc t00585:c2 .
 
-tomb:t00585.p1 a t:person.n.01 ;
+t00585:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t00585.m1 ;
+  :age t00585:m1 ;
   :dod "1918-12-23" ;
   :nam "HENDRIK OOSTINGA" ;
-  :occ tomb:t00585.o1 ;
-  :pob tomb:t00585.c1 ;
-  :rol tomb:t00585.r1 .
+  :occ t00585:o1 ;
+  :pob t00585:c1 ;
+  :rol t00585:r1 .
 
-tomb:t00585.p2 a t:person.n.01 ;
+t00585:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
-  :age tomb:t00585.m2 ;
+  :age t00585:m2 ;
   :dod "1912-01-08" ;
   :nam "JAKOBKE CAZEMIER" ;
-  :pod tomb:t00585.c3 ;
-  :rol tomb:t00585.r2 .
+  :pod t00585:c3 ;
+  :rol t00585:r2 .
 
-tomb:t00585.p3 a t:child.n.02 ;
+t00585:p3 a t:child.n.02 ;
   :att "LIEFHEBBENDE" .
 
-tomb:t00585.r1 a t:parent.n.01 ;
+t00585:r1 a t:parent.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00585.p3 .
+  :tgt t00585:p3 .
 
-tomb:t00585.r2 a t:parent.n.01 ;
+t00585:r2 a t:parent.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00585.p3 .
+  :tgt t00585:p3 .
 
-tomb:t00585.s1 a t:willow.n.01 ;
-  :att tomb:t00585.a1 .
+t00585:s1 a t:willow.n.01 ;
+  :att t00585:a1 .
 
-tomb:t00585.u1 a t:year.n.01 .
+t00585:u1 a t:year.n.01 .
 
-tomb:t00585.u2 a t:year.n.01 .
+t00585:u2 a t:year.n.01 .
 
-tomb:t00585.im1 a t:photo.n.01 ;
+t00585:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

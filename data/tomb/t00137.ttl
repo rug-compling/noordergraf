@@ -1,44 +1,45 @@
+@prefix t00137: <https://noordergraf.rug.nl/tomb/t00137#> .
 
 tomb:t00137 a t:tombstone.n.01 ;
-  :image tomb:t00137.im1 ;
+  :image t00137:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00137.p1 ,
-       tomb:t00137.p2 .
+  :ent t00137:p1 ,
+       t00137:p2 .
 
-tomb:t00137.c1 a t:city.n.01 ;
+t00137:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00137.c2 a t:village.n.02 ;
+t00137:c2 a t:village.n.02 ;
   :geo place:Roden2748026 ;
   :place "RODEN" .
 
-tomb:t00137.c3 a t:village.n.02 ;
+t00137:c3 a t:village.n.02 ;
   :geo place:Peize2748673 ;
   :place "PEIZE" .
 
-tomb:t00137.p1 a t:person.n.01 ;
+t00137:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1870-12-07" ;
   :dod "1942-03-16" ;
   :nam "JAN THIE" ;
-  :pob tomb:t00137.c2 ;
-  :pod tomb:t00137.c1 ;
-  :rol tomb:t00137.r1 .
+  :pob t00137:c2 ;
+  :pod t00137:c1 ;
+  :rol t00137:r1 .
 
-tomb:t00137.p2 a t:person.n.01 ;
+t00137:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1875-03-01" ;
   :dod "1959-12-28" ;
   :nam "ANNECHIEN BIEMOLT" ;
-  :pob tomb:t00137.c3 ;
-  :pod tomb:t00137.c1 .
+  :pob t00137:c3 ;
+  :pod t00137:c1 .
 
-tomb:t00137.r1 a t:husband.n.01 ;
+t00137:r1 a t:husband.n.01 ;
   :att "GELIEFD" ;
-  :tgt tomb:t00137.p2 .
+  :tgt t00137:p2 .
 
-tomb:t00137.im1 a t:photo.n.01 ;
+t00137:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

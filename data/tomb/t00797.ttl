@@ -1,21 +1,22 @@
+@prefix t00797: <https://noordergraf.rug.nl/tomb/t00797#> .
 
 tomb:t00797 a t:tombstone.n.01 ;
-  :image tomb:t00797.im1 ;
+  :image t00797:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00797.p1 ;
+  :ent t00797:p1 ;
   :lan "NLD" .
 
-tomb:t00797.c1 a t:city.n.01 ;
+t00797:c1 a t:city.n.01 ;
   :geo place:Haarlem2755003 ;
   :place "HAARLEM" .
 
-tomb:t00797.p1 a t:person.n.01 ;
+t00797:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dod "1945-04-20" ;
   :nam "JACOBUS HUBERTES TEEUWEN" ;
-  :pob tomb:t00797.c1 .
+  :pob t00797:c1 .
 
-tomb:t00797.im1 a t:photo.n.01 ;
+t00797:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

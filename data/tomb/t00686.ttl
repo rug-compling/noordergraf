@@ -1,36 +1,37 @@
+@prefix t00686: <https://noordergraf.rug.nl/tomb/t00686#> .
 
 tomb:t00686 a t:tombstone.n.01 ;
-  :image tomb:t00686.im1 ;
+  :image t00686:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00686.p1 ,
-       tomb:t00686.p2 ;
+  :ent t00686:p1 ,
+       t00686:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00686.s1 .
+  :sym t00686:s1 .
 
-tomb:t00686.c1 a t:city.n.01 ;
+t00686:c1 a t:city.n.01 ;
   :geo place:Bolsward2758682 ;
   :place "BOLSWARD" .
 
-tomb:t00686.p1 a t:person.n.01 ;
+t00686:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1862-03-06" ;
   :dod "1928-01-07" ;
   :nam "HENDRIK G. DE BOER" ;
-  :pob tomb:t00686.c1 ;
-  :pod tomb:t00686.c1 ;
-  :rol tomb:t00686.r1 .
+  :pob t00686:c1 ;
+  :pod t00686:c1 ;
+  :rol t00686:r1 .
 
-tomb:t00686.p2 a t:person.n.01 ;
+t00686:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "MAAIKE IJNTEMA" .
 
-tomb:t00686.r1 a t:spouse.n.01 ;
+t00686:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00686.p2 .
+  :tgt t00686:p2 .
 
-tomb:t00686.s1 a t:rose.n.01 .
+t00686:s1 a t:rose.n.01 .
 
-tomb:t00686.im1 a t:photo.n.01 ;
+t00686:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

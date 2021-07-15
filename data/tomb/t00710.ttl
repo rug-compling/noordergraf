@@ -1,35 +1,36 @@
+@prefix t00710: <https://noordergraf.rug.nl/tomb/t00710#> .
 
 tomb:t00710 a t:tombstone.n.01 ;
-  :image tomb:t00710.im1 ;
+  :image t00710:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00710.p1 ,
-       tomb:t00710.p2 ;
+  :ent t00710:p1 ,
+       t00710:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER"@nld .
 
-tomb:t00710.p1 a t:person.n.01 ;
+t00710:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1902-05-23" ;
   :dod "1938-12-04" ;
   :nam "JAN HEKMAN" ;
-  :rol tomb:t00710.r1 ,
-       tomb:t00710.r2 ,
-       tomb:t00710.r3 .
+  :rol t00710:r1 ,
+       t00710:r2 ,
+       t00710:r3 .
 
-tomb:t00710.p2 a t:person.n.01 ;
+t00710:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "E. DE JONGE" .
 
-tomb:t00710.r1 a t:spouse.n.01 ;
+t00710:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00710.p2 .
+  :tgt t00710:p2 .
 
-tomb:t00710.r2 a t:husband.n.01 ;
+t00710:r2 a t:husband.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00710.p2 .
+  :tgt t00710:p2 .
 
-tomb:t00710.r3 a t:father.n.01 .
+t00710:r3 a t:father.n.01 .
 
-tomb:t00710.im1 a t:photo.n.01 ;
+t00710:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

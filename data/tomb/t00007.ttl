@@ -1,84 +1,85 @@
+@prefix t00007: <https://noordergraf.rug.nl/tomb/t00007#> .
 
 tomb:t00007 a t:tombstone.n.01 ;
-  :image tomb:t00007.im1 ;
+  :image t00007:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00007.g1 ,
-       tomb:t00007.g2 ,
-       tomb:t00007.p1 ,
-       tomb:t00007.p2 ;
-  :sym tomb:t00007.s1 .
+  :ent t00007:g1 ,
+       t00007:g2 ,
+       t00007:p1 ,
+       t00007:p2 ;
+  :sym t00007:s1 .
 
-tomb:t00007.c1 a t:village.n.02 ;
+t00007:c1 a t:village.n.02 ;
   :geo place:Kollumerpomp2752522 ;
   :place "KOLLUMERPOMP" .
 
-tomb:t00007.c2 a t:city.n.01 ;
+t00007:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00007.c3 a t:village.n.02 ;
+t00007:c3 a t:village.n.02 ;
   :geo place:Zwagerveen2743583 ;
   :place "ZWAGERVEEN" .
 
-tomb:t00007.c4 a t:village.n.02 ;
+t00007:c4 a t:village.n.02 ;
   :geo place:Appelscha2759698 ;
   :place "APPELSCHA" .
 
-tomb:t00007.g1 a t:group.n.01 ;
-  :rol tomb:t00007.r1 .
+t00007:g1 a t:group.n.01 ;
+  :rol t00007:r1 .
 
-tomb:t00007.g2 a t:group.n.01 ;
-  :rol tomb:t00007.r5 .
+t00007:g2 a t:group.n.01 ;
+  :rol t00007:r5 .
 
-tomb:t00007.p1 a t:person.n.01 ;
+t00007:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1873-09-17" ;
   :dod "1940-03-08" ;
   :nam "PIETER AGEMA" ;
-  :pob tomb:t00007.c1 ;
-  :pod tomb:t00007.c2 ;
-  :rol tomb:t00007.r2 ,
-       tomb:t00007.r3 ,
-       tomb:t00007.r4 .
+  :pob t00007:c1 ;
+  :pod t00007:c2 ;
+  :rol t00007:r2 ,
+       t00007:r3 ,
+       t00007:r4 .
 
-tomb:t00007.p2 a t:person.n.01 ;
+t00007:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1879-06-11" ;
   :dod "1972-01-05" ;
   :nam "LEENTJE ZIJLSTRA" ;
-  :pob tomb:t00007.c3 ;
-  :pod tomb:t00007.c4 ;
-  :rol tomb:t00007.r6 .
+  :pob t00007:c3 ;
+  :pod t00007:c4 ;
+  :rol t00007:r6 .
 
-tomb:t00007.r1 a t:commemorator.n.01 ;
-  :tgt tomb:t00007.p1 .
+t00007:r1 a t:commemorator.n.01 ;
+  :tgt t00007:p1 .
 
-tomb:t00007.r2 a t:husband.n.01 ;
+t00007:r2 a t:husband.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00007.g1 .
+  :tgt t00007:g1 .
 
-tomb:t00007.r3 a t:father.n.01 ;
-  :tgt tomb:t00007.g1 .
+t00007:r3 a t:father.n.01 ;
+  :tgt t00007:g1 .
 
-tomb:t00007.r4 a t:spouse.n.01 ;
-  :tgt tomb:t00007.p2 .
+t00007:r4 a t:spouse.n.01 ;
+  :tgt t00007:p2 .
 
-tomb:t00007.r5 a t:commemorator.n.01 ;
-  :tgt tomb:t00007.p2 .
+t00007:r5 a t:commemorator.n.01 ;
+  :tgt t00007:p2 .
 
-tomb:t00007.r6 a t:mother.n.01 ;
+t00007:r6 a t:mother.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00007.g2 .
+  :tgt t00007:g2 .
 
-tomb:t00007.s1 a t:composite.n.01 ;
-  :prt tomb:t00007.s2 ,
-       tomb:t00007.s3 .
+t00007:s1 a t:composite.n.01 ;
+  :prt t00007:s2 ,
+       t00007:s3 .
 
-tomb:t00007.s2 a t:frond.n.01 .
+t00007:s2 a t:frond.n.01 .
 
-tomb:t00007.s3 a t:ribbon.n.01 .
+t00007:s3 a t:ribbon.n.01 .
 
-tomb:t00007.im1 a t:photo.n.01 ;
+t00007:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,68 +1,69 @@
+@prefix t00109: <https://noordergraf.rug.nl/tomb/t00109#> .
 
 tomb:t00109 a t:tombstone.n.01 ;
-  :image tomb:t00109.im1 ;
+  :image t00109:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00109.p1 ,
-       tomb:t00109.p2 ,
-       tomb:t00109.p3 ,
-       tomb:t00109.p4 ;
-  :sym tomb:t00109.s1 .
+  :ent t00109:p1 ,
+       t00109:p2 ,
+       t00109:p3 ,
+       t00109:p4 ;
+  :sym t00109:s1 .
 
-tomb:t00109.c1 a t:city.n.01 ;
+t00109:c1 a t:city.n.01 ;
   :geo place:Oostburg2749541 ;
   :place "OOSTBURG" .
 
-tomb:t00109.c2 a t:city.n.01 ;
+t00109:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00109.c3 a t:town.n.01 ;
+t00109:c3 a t:town.n.01 ;
   :geo place:Oostburg2749541 ;
   :place "OOSTBURG" .
 
-tomb:t00109.c4 a t:village.n.02 ;
+t00109:c4 a t:village.n.02 ;
   :geo place:Terwispel2746398 ;
   :place "TERWISPEL" .
 
-tomb:t00109.p1 a t:person.n.01 ;
+t00109:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1857-12-27" ;
   :dod "1931-03-31" ;
   :nam "MARIA SUZANNA LERGNER" ;
-  :pob tomb:t00109.c1 ;
-  :pod tomb:t00109.c2 ;
-  :rol tomb:t00109.r1 .
+  :pob t00109:c1 ;
+  :pod t00109:c2 ;
+  :rol t00109:r1 .
 
-tomb:t00109.p2 a t:person.n.01 ;
+t00109:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "D. DE NIJS" .
 
-tomb:t00109.p3 a t:person.n.01 ;
+t00109:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1881-08-04" ;
   :dod "1948-09-06" ;
   :nam "WILLEM DE NIJS" ;
-  :pob tomb:t00109.c3 ;
-  :pod tomb:t00109.c2 ;
-  :rol tomb:t00109.r2 .
+  :pob t00109:c3 ;
+  :pod t00109:c2 ;
+  :rol t00109:r2 .
 
-tomb:t00109.p4 a t:person.n.01 ;
+t00109:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1878-01-25" ;
   :dod "1959-01-08" ;
   :nam "HERMINA WEILAND" ;
-  :pob tomb:t00109.c4 ;
-  :pod tomb:t00109.c2 .
+  :pob t00109:c4 ;
+  :pod t00109:c2 .
 
-tomb:t00109.r1 a t:widow.n.01 ;
-  :tgt tomb:t00109.p2 .
+t00109:r1 a t:widow.n.01 ;
+  :tgt t00109:p2 .
 
-tomb:t00109.r2 a t:husband.n.01 ;
-  :tgt tomb:t00109.p4 .
+t00109:r2 a t:husband.n.01 ;
+  :tgt t00109:p4 .
 
-tomb:t00109.s1 a t:frond.n.01 .
+t00109:s1 a t:frond.n.01 .
 
-tomb:t00109.im1 a t:photo.n.01 ;
+t00109:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

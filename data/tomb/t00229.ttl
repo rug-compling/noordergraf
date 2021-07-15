@@ -1,31 +1,32 @@
+@prefix t00229: <https://noordergraf.rug.nl/tomb/t00229#> .
 
 tomb:t00229 a t:tombstone.n.01 ;
-  :image tomb:t00229.im1 ;
+  :image t00229:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00229.p1 ;
-  :sym tomb:t00229.s1 .
+  :ent t00229:p1 ;
+  :sym t00229:s1 .
 
-tomb:t00229.a1 a t:weeping.a.02 .
+t00229:a1 a t:weeping.a.02 .
 
-tomb:t00229.p1 a t:person.n.01 ;
+t00229:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1822-10-11" ;
   :dod "1885-05-26" ;
   :nam "FENJE KOOPS BRUININGA" .
 
-tomb:t00229.s1 a t:composite.n.01 ;
-  :prt tomb:t00229.s2 ,
-       tomb:t00229.s3 ,
-       tomb:t00229.s4 .
+t00229:s1 a t:composite.n.01 ;
+  :prt t00229:s2 ,
+       t00229:s3 ,
+       t00229:s4 .
 
-tomb:t00229.s2 a t:willow.n.01 ;
-  :att tomb:t00229.a1 .
+t00229:s2 a t:willow.n.01 ;
+  :att t00229:a1 .
 
-tomb:t00229.s3 a t:butterfly.n.01 .
+t00229:s3 a t:butterfly.n.01 .
 
-tomb:t00229.s4 a t:scythe.n.01 .
+t00229:s4 a t:scythe.n.01 .
 
-tomb:t00229.im1 a t:photo.n.01 ;
+t00229:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,41 +1,42 @@
+@prefix t00326: <https://noordergraf.rug.nl/tomb/t00326#> .
 
 tomb:t00326 a t:tombstone.n.01 ;
-  :image tomb:t00326.im1 ;
+  :image t00326:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00326.p1 ;
-  :img tomb:t00326.i1 ;
+  :ent t00326:p1 ;
+  :img t00326:i1 ;
   :quo "TER NAGEDACHTENIS VAN HEM" .
 
-tomb:t00326.c1 a t:city.n.01 ;
+t00326:c1 a t:city.n.01 ;
   :geo place:Sneek2747063 ;
   :place "SNEEK" .
 
-tomb:t00326.c2 a t:town.n.01 ;
+t00326:c2 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00326.i1 a t:portrait.n.02 ;
-  :thm tomb:t00326.p1 .
+t00326:i1 a t:portrait.n.02 ;
+  :thm t00326:p1 .
 
-tomb:t00326.o1 a t:soldier.n.01 ;
+t00326:o1 a t:soldier.n.01 ;
   :hco "58340" ;
-  :org tomb:t00326.o2 .
+  :org t00326:o2 .
 
-tomb:t00326.o2 a t:battalion.n.01 ;
+t00326:o2 a t:battalion.n.01 ;
   :nam "1-9 GRENSBATALJON" .
 
-tomb:t00326.p1 a t:person.n.01 ;
+t00326:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1919-12-02" ;
   :dod "1940-05-12" ;
   :nam "KORNELIS LOIJENGA" ;
-  :occ tomb:t00326.o1 ;
-  :pob tomb:t00326.c1 ;
-  :pod tomb:t00326.c2 ;
+  :occ t00326:o1 ;
+  :pob t00326:c1 ;
+  :pod t00326:c2 ;
   :quo "GEWOND OP 10-05-1940" ,
        "WONENDEN ALDAAR" .
 
-tomb:t00326.im1 a t:photo.n.01 ;
+t00326:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,64 +1,65 @@
+@prefix t00147: <https://noordergraf.rug.nl/tomb/t00147#> .
 
 tomb:t00147 a t:tombstone.n.01 ;
-  :image tomb:t00147.im1 ;
+  :image t00147:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00147.p1 ,
-       tomb:t00147.p2 ,
-       tomb:t00147.p3 ;
+  :ent t00147:p1 ,
+       t00147:p2 ,
+       t00147:p3 ;
   :quo "RUST IN VREDE" ;
-  :sym tomb:t00147.s1 .
+  :sym t00147:s1 .
 
-tomb:t00147.c1 a t:city.n.01 ;
+t00147:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00147.c2 a t:village.n.02 ;
+t00147:c2 a t:village.n.02 ;
   :geo place:Anloo2759746 ;
   :place "ANLOO" .
 
-tomb:t00147.c3 a t:village.n.02 ;
+t00147:c3 a t:village.n.02 ;
   :geo place:Wildervank2744431 ;
   :place "WILDERVANK" .
 
-tomb:t00147.p1 a t:person.n.01 ;
+t00147:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1921-05-15" ;
   :dod "1941-01-15" ;
   :nam "ROELFJE MEERTENS" ;
-  :pob tomb:t00147.c2 ;
-  :pod tomb:t00147.c1 .
+  :pob t00147:c2 ;
+  :pod t00147:c1 .
 
-tomb:t00147.p2 a t:person.n.01 ;
+t00147:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1897-01-30" ;
   :dod "1952-04-13" ;
   :nam "HENDRIK MEERTENS" ;
-  :pob tomb:t00147.c3 ;
-  :pod tomb:t00147.c1 ;
-  :rol tomb:t00147.r1 ,
-       tomb:t00147.r2 .
+  :pob t00147:c3 ;
+  :pod t00147:c1 ;
+  :rol t00147:r1 ,
+       t00147:r2 .
 
-tomb:t00147.p3 a t:person.n.01 ;
+t00147:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1896-07-09" ;
   :dod "1992-05-25" ;
   :nam "NELLA STEENHUIS" ;
-  :pob tomb:t00147.c3 ;
-  :pod tomb:t00147.c1 ;
-  :rol tomb:t00147.r5 .
+  :pob t00147:c3 ;
+  :pod t00147:c1 ;
+  :rol t00147:r5 .
 
-tomb:t00147.r1 a t:father.n.01 .
+t00147:r1 a t:father.n.01 .
 
-tomb:t00147.r2 a t:husband.n.01 ;
+t00147:r2 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00147.p3 .
+  :tgt t00147:p3 .
 
-tomb:t00147.r5 a t:mother.n.01 ;
+t00147:r5 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00147.s1 a t:frond.n.01 .
+t00147:s1 a t:frond.n.01 .
 
-tomb:t00147.im1 a t:photo.n.01 ;
+t00147:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

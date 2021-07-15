@@ -1,43 +1,44 @@
+@prefix t00922: <https://noordergraf.rug.nl/tomb/t00922#> .
 
 tomb:t00922 a t:tombstone.n.01 ;
-  :image tomb:t00922.im1 ;
+  :image t00922:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00922.p1 ,
-       tomb:t00922.p2 ;
+  :ent t00922:p1 ,
+       t00922:p2 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
-  :sym tomb:t00922.s1 ,
-       tomb:t00922.s2 .
+  :sym t00922:s1 ,
+       t00922:s2 .
 
-tomb:t00922.c1 a t:village.n.02 ;
+t00922:c1 a t:village.n.02 ;
   :geo place:Langelo2751943 ;
   :place "LANGELO" .
 
-tomb:t00922.c2 a t:village.n.02 ;
+t00922:c2 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00922.p1 a t:person.n.01 ;
+t00922:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1847-08-28" ;
   :dod "1930-03-06" ;
   :nam "AALTIEN HULSHOF" ;
-  :pob tomb:t00922.c1 ;
-  :pod tomb:t00922.c2 ;
-  :rol tomb:t00922.r1 .
+  :pob t00922:c1 ;
+  :pod t00922:c2 ;
+  :rol t00922:r1 .
 
-tomb:t00922.p2 a t:person.n.01 ;
+t00922:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "TONNIS OOSTERHUIS" .
 
-tomb:t00922.r1 a t:widow.n.01 ;
+t00922:r1 a t:widow.n.01 ;
   :beg "23-11-1910" ;
-  :tgt tomb:t00922.p2 .
+  :tgt t00922:p2 .
 
-tomb:t00922.s1 a t:oak.n.01 .
+t00922:s1 a t:oak.n.01 .
 
-tomb:t00922.s2 a t:frond.n.01 .
+t00922:s2 a t:frond.n.01 .
 
-tomb:t00922.im1 a t:photo.n.01 ;
+t00922:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

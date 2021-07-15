@@ -1,84 +1,85 @@
+@prefix t00253: <https://noordergraf.rug.nl/tomb/t00253#> .
 
 tomb:t00253 a t:tombstone.n.01 ;
-  :image tomb:t00253.im1 ;
+  :image t00253:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00253.p1 ,
-       tomb:t00253.p2 ,
-       tomb:t00253.p3 ,
-       tomb:t00253.p4 ,
-       tomb:t00253.p5 .
+  :ent t00253:p1 ,
+       t00253:p2 ,
+       t00253:p3 ,
+       t00253:p4 ,
+       t00253:p5 .
 
-tomb:t00253.b1 a t:Epistle_to_the_Romans.n.04 ;
-  :prt tomb:t00253.c1 .
+t00253:b1 a t:Epistle_to_the_Romans.n.04 ;
+  :prt t00253:c1 .
 
-tomb:t00253.b2 a t:John.n.05 ;
-  :prt tomb:t00253.c2 .
+t00253:b2 a t:John.n.05 ;
+  :prt t00253:c2 .
 
-tomb:t00253.c1 a t:chapter.n.01 ;
+t00253:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00253.v1 .
+  :prt t00253:v1 .
 
-tomb:t00253.c2 a t:chapter.n.01 ;
+t00253:c2 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00253.v2 .
+  :prt t00253:v2 .
 
-tomb:t00253.p1 a t:person.n.01 ;
+t00253:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1903-04-15" ;
   :dod "1921-03-03" ;
   :nam "ANGENIETJE KEIZER" ;
   :ref "1 THESSALONICENZEN 4:14" ;
-  :rol tomb:t00253.r1 .
+  :rol t00253:r1 .
 
-tomb:t00253.p2 a t:person.n.01 ;
+t00253:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1878-11-29" ;
   :dod "1940-09-19" ;
   :nam "GRIETJE VAN DER ZWEEP" ;
   :ref "PSALM 23:1" ;
-  :rol tomb:t00253.r2 .
+  :rol t00253:r2 .
 
-tomb:t00253.p3 a t:person.n.01 ;
+t00253:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1876-07-15" ;
   :dod "1956-04-06" ;
   :nam "HENDRIK KEIZER" ;
   :ref "PSALM 116" ;
-  :rol tomb:t00253.r3 .
+  :rol t00253:r3 .
 
-tomb:t00253.p4 a t:person.n.01 ;
+t00253:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1854-10-18" ;
   :dod "1931-11-19" ;
   :nam "JACOB VAN DER ZWEEP" ;
-  :ref tomb:t00253.v1 ;
-  :rol tomb:t00253.r4 .
+  :ref t00253:v1 ;
+  :rol t00253:r4 .
 
-tomb:t00253.p5 a t:person.n.01 ;
+t00253:p5 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1856-07-26" ;
   :dod "1936-05-13" ;
   :nam "ANGENIETJE REICHENBACH" ;
-  :ref tomb:t00253.v2 ;
-  :rol tomb:t00253.r5 .
+  :ref t00253:v2 ;
+  :rol t00253:r5 .
 
-tomb:t00253.r1 a t:sister.n.01 .
+t00253:r1 a t:sister.n.01 .
 
-tomb:t00253.r2 a t:parent.n.01 .
+t00253:r2 a t:parent.n.01 .
 
-tomb:t00253.r3 a t:parent.n.01 .
+t00253:r3 a t:parent.n.01 .
 
-tomb:t00253.r4 a t:grandparent.n.01 .
+t00253:r4 a t:grandparent.n.01 .
 
-tomb:t00253.r5 a t:grandparent.n.01 .
+t00253:r5 a t:grandparent.n.01 .
 
-tomb:t00253.v1 a t:verse.n.01 ;
+t00253:v1 a t:verse.n.01 ;
   :ord 8 .
 
-tomb:t00253.v2 a t:verse.n.01 ;
+t00253:v2 a t:verse.n.01 ;
   :ord 2 .
 
-tomb:t00253.im1 a t:photo.n.01 ;
+t00253:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

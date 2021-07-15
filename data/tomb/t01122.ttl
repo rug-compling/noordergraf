@@ -1,64 +1,65 @@
+@prefix t01122: <https://noordergraf.rug.nl/tomb/t01122#> .
 
 tomb:t01122 a t:tombstone.n.01 ;
-  :ent tomb:t01122.p1 ;
+  :ent t01122:p1 ;
   :quo "Zoo sluimer zacht gij lieve beste moeder 't Graf heeft U ons, te vroeg ontscheurd Gij onze steun en trouwe moeder, wordt altijd diep door ons betreurd."@nld ;
-  :sym tomb:t01122.s1 .
+  :sym t01122:s1 .
 
-tomb:t01122.c1 a t:village.n.02 ;
+t01122:c1 a t:village.n.02 ;
   :geo place:Nietap2750380 ;
   :place "NIETAP" .
 
-tomb:t01122.m1 a t:measure.n.02 ;
-  :sub tomb:t01122.m2 ,
-       tomb:t01122.m3 ,
-       tomb:t01122.m4 .
+t01122:m1 a t:measure.n.02 ;
+  :sub t01122:m2 ,
+       t01122:m3 ,
+       t01122:m4 .
 
-tomb:t01122.m2 a t:measure.n.02 ;
-  :mem tomb:t01122.u1 ;
+t01122:m2 a t:measure.n.02 ;
+  :mem t01122:u1 ;
   :qua 62 .
 
-tomb:t01122.m3 a t:measure.n.02 ;
-  :mem tomb:t01122.u2 ;
+t01122:m3 a t:measure.n.02 ;
+  :mem t01122:u2 ;
   :qua 3 .
 
-tomb:t01122.m4 a t:measure.n.02 ;
-  :mem tomb:t01122.u3 ;
+t01122:m4 a t:measure.n.02 ;
+  :mem t01122:u3 ;
   :qua 10 .
 
-tomb:t01122.p1 a t:person.n.01 ;
+t01122:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
-  :age tomb:t01122.m1 ;
+  :age t01122:m1 ;
   :dod "1864-04-10" ;
   :nam "TRIENTJE HENDRIKS DIJKSTRA" ;
-  :pod tomb:t01122.c1 ;
-  :rol tomb:t01122.r1 ,
-       tomb:t01122.r2 .
+  :pod t01122:c1 ;
+  :rol t01122:r1 ,
+       t01122:r2 .
 
-tomb:t01122.p2 a t:person.n.01 ;
+t01122:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "DERK PIETERS WIERENGA" .
 
-tomb:t01122.r1 a t:widow.n.01 ;
-  :tgt tomb:t01122.p2 .
+t01122:r1 a t:widow.n.01 ;
+  :tgt t01122:p2 .
 
-tomb:t01122.r2 a t:mother.n.01 .
+t01122:r2 a t:mother.n.01 .
 
-tomb:t01122.s1 a t:composite.n.01 ;
-  :prt tomb:t01122.s2 ,
-       tomb:t01122.s3 .
+t01122:s1 a t:composite.n.01 ;
+  :prt t01122:s2 ,
+       t01122:s3 .
 
-tomb:t01122.s2 a t:branch.n.02 .
+t01122:s2 a t:branch.n.02 .
 
-tomb:t01122.s3 a t:branch.n.02 ;
+t01122:s3 a t:branch.n.02 ;
   a t:oak.n.02 ;
-  :prt tomb:t01122.s2 .
+  :prt t01122:s2 .
 
-tomb:t01122.s7 a t:olive.n.02 ;
-  :prt tomb:t01122.s3 .
+t01122:s7 a t:olive.n.02 ;
+  :prt t01122:s3 .
 
-tomb:t01122.u1 a t:year.n.01 .
+t01122:u1 a t:year.n.01 .
 
-tomb:t01122.u2 a t:month.n.01 .
+t01122:u2 a t:month.n.01 .
 
-tomb:t01122.u3 a t:day.n.01 .
+t01122:u3 a t:day.n.01 .
 

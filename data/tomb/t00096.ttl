@@ -1,44 +1,45 @@
+@prefix t00096: <https://noordergraf.rug.nl/tomb/t00096#> .
 
 tomb:t00096 a t:tombstone.n.01 ;
-  :image tomb:t00096.im1 ;
+  :image t00096:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00096.p1 ,
-       tomb:t00096.p2 ;
+  :ent t00096:p1 ,
+       t00096:p2 ;
   :quo "ONTBONDEN TE WORDEN EN MET CHRISTUS TE ZIJN, IS ZEER VERRE HET BESTE." .
 
-tomb:t00096.c1 a t:city.n.01 ;
+t00096:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00096.c2 a t:village.n.02 ;
+t00096:c2 a t:village.n.02 ;
   :geo place:Ruinerwold2747828 ;
   :place "RUINERWOLD" .
 
-tomb:t00096.c3 a t:city.n.01 ;
+t00096:c3 a t:city.n.01 ;
   :geo place:Harlingen2754817 ;
   :place "HARLINGEN" .
 
-tomb:t00096.c4 a t:city.n.01 ;
+t00096:c4 a t:city.n.01 ;
   :geo place:Kampen2753106 ;
   :place "KAMPEN" .
 
-tomb:t00096.p1 a t:person.n.01 ;
+t00096:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1890-03-30" ;
   :dod "1944-12-30" ;
   :nam "JAKOB KARSTEN" ;
-  :pob tomb:t00096.c2 ;
-  :pod tomb:t00096.c1 .
+  :pob t00096:c2 ;
+  :pod t00096:c1 .
 
-tomb:t00096.p2 a t:person.n.01 ;
+t00096:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1896-11-29" ;
   :dod "1964-10-28" ;
   :nam "HANNA ALKEMA" ;
-  :pob tomb:t00096.c3 ;
-  :pod tomb:t00096.c4 .
+  :pob t00096:c3 ;
+  :pod t00096:c4 .
 
-tomb:t00096.im1 a t:photo.n.01 ;
+t00096:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

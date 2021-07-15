@@ -1,70 +1,71 @@
+@prefix t00003: <https://noordergraf.rug.nl/tomb/t00003#> .
 
 tomb:t00003 a t:tombstone.n.01 ;
-  :image tomb:t00003.im1 ;
+  :image t00003:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00003.g1 ,
-       tomb:t00003.p1 ,
-       tomb:t00003.p2 ,
-       tomb:t00003.p3 .
+  :ent t00003:g1 ,
+       t00003:p1 ,
+       t00003:p2 ,
+       t00003:p3 .
 
-tomb:t00003.g1 a t:group.n.01 ;
-  :rol tomb:t00003.r1 .
+t00003:g1 a t:group.n.01 ;
+  :rol t00003:r1 .
 
-tomb:t00003.p1 a t:person.n.01 ;
+t00003:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1874-08-26" ;
   :dod "1932-02-21" ;
   :nam "JACOBA CATHARINA VAN DER MEULEN" ;
-  :rol tomb:t00003.r2 ,
-       tomb:t00003.r3 ,
-       tomb:t00003.r4 .
+  :rol t00003:r2 ,
+       t00003:r3 ,
+       t00003:r4 .
 
-tomb:t00003.p2 a t:person.n.01 ;
+t00003:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1875-02-26" ;
   :dod "1948-09-17" ;
   :nam "GERRIT DE JAGER" ;
-  :rol tomb:t00003.r5 ,
-       tomb:t00003.r6 ,
-       tomb:t00003.r7 .
+  :rol t00003:r5 ,
+       t00003:r6 ,
+       t00003:r7 .
 
-tomb:t00003.p3 a t:person.n.01 ;
+t00003:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1890-10-05" ;
   :dod "1960-05-30" ;
   :nam "CATHARINA BOER" ;
-  :rol tomb:t00003.r8 .
+  :rol t00003:r8 .
 
-tomb:t00003.r1 a t:commemorator.n.01 ;
-  :tgt tomb:t00003.p1 ,
-       tomb:t00003.p2 .
+t00003:r1 a t:commemorator.n.01 ;
+  :tgt t00003:p1 ,
+       t00003:p2 .
 
-tomb:t00003.r2 a t:wife.n.01 ;
+t00003:r2 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00003.g1 .
+  :tgt t00003:g1 .
 
-tomb:t00003.r3 a t:mother.n.01 ;
-  :tgt tomb:t00003.g1 .
+t00003:r3 a t:mother.n.01 ;
+  :tgt t00003:g1 .
 
-tomb:t00003.r4 a t:spouse.n.01 ;
-  :tgt tomb:t00003.p2 .
+t00003:r4 a t:spouse.n.01 ;
+  :tgt t00003:p2 .
 
-tomb:t00003.r5 a t:husband.n.01 ;
+t00003:r5 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00003.g1 .
+  :tgt t00003:g1 .
 
-tomb:t00003.r6 a t:father.n.01 ;
-  :tgt tomb:t00003.g1 .
+t00003:r6 a t:father.n.01 ;
+  :tgt t00003:g1 .
 
-tomb:t00003.r7 a t:spouse.n.01 ;
-  :aft tomb:t00003.r5 ;
-  :tgt tomb:t00003.p3 .
+t00003:r7 a t:spouse.n.01 ;
+  :aft t00003:r5 ;
+  :tgt t00003:p3 .
 
-tomb:t00003.r8 a t:wife.n.01 ;
+t00003:r8 a t:wife.n.01 ;
   :att "LAATSTE" ;
-  :tgt tomb:t00003.p2 .
+  :tgt t00003:p2 .
 
-tomb:t00003.im1 a t:photo.n.01 ;
+t00003:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

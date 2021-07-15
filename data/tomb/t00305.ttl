@@ -1,38 +1,39 @@
+@prefix t00305: <https://noordergraf.rug.nl/tomb/t00305#> .
 
 tomb:t00305 a t:tombstone.n.01 ;
-  :image tomb:t00305.im1 ;
+  :image t00305:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00305.p1 ,
-       tomb:t00305.p2 ;
+  :ent t00305:p1 ,
+       t00305:p2 ;
   :ref "PSALM 89:7" ;
-  :sym tomb:t00305.s1 .
+  :sym t00305:s1 .
 
-tomb:t00305.p1 a t:person.n.01 ;
+t00305:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1860-02-27" ;
   :dod "1940-02-24" ;
   :nam "MARGJE ELEVELD" ;
-  :rol tomb:t00305.r1 .
+  :rol t00305:r1 .
 
-tomb:t00305.p2 a t:person.n.01 ;
+t00305:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "J.J. DE JONGE" .
 
-tomb:t00305.r1 a t:widow.n.01 ;
-  :tgt tomb:t00305.p2 .
+t00305:r1 a t:widow.n.01 ;
+  :tgt t00305:p2 .
 
-tomb:t00305.s1 a t:composite.n.01 ;
-  :prt tomb:t00305.s2 ,
-       tomb:t00305.s3 ,
-       tomb:t00305.s4 .
+t00305:s1 a t:composite.n.01 ;
+  :prt t00305:s2 ,
+       t00305:s3 ,
+       t00305:s4 .
 
-tomb:t00305.s2 a t:frond.n.01 .
+t00305:s2 a t:frond.n.01 .
 
-tomb:t00305.s3 a t:frond.n.01 .
+t00305:s3 a t:frond.n.01 .
 
-tomb:t00305.s4 a t:ribbon.n.01 .
+t00305:s4 a t:ribbon.n.01 .
 
-tomb:t00305.im1 a t:photo.n.01 ;
+t00305:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

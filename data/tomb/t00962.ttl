@@ -1,51 +1,52 @@
+@prefix t00962: <https://noordergraf.rug.nl/tomb/t00962#> .
 
 tomb:t00962 a t:tombstone.n.01 ;
-  :image tomb:t00962.im1 ;
+  :image t00962:im1 ;
   :site site:gr9606PEkropswolde ;
-  :ent tomb:t00962.p1 ,
-       tomb:t00962.p2 ,
-       tomb:t00962.p3 ;
+  :ent t00962:p1 ,
+       t00962:p2 ,
+       t00962:p3 ;
   :quo "RUST ZACHT LIEVE DOODE"@nld ;
-  :sym tomb:t00962.s1 .
+  :sym t00962:s1 .
 
-tomb:t00962.a1 a t:weeping.a.02 .
+t00962:a1 a t:weeping.a.02 .
 
-tomb:t00962.c1 a t:city.n.01 ;
+t00962:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00962.c2 a t:village.n.02 ;
+t00962:c2 a t:village.n.02 ;
   :geo place:Glimmen2755495 ;
   :place "GLIMMEN" .
 
-tomb:t00962.p1 a t:person.n.01 ;
+t00962:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1835-06-23" ;
   :dod "1912-01-12" ;
   :nam "ALBERT DE JONGE" ;
-  :pob tomb:t00962.c1 ;
-  :pod tomb:t00962.c2 ;
-  :rol tomb:t00962.r1 ,
-       tomb:t00962.r2 .
+  :pob t00962:c1 ;
+  :pod t00962:c2 ;
+  :rol t00962:r1 ,
+       t00962:r2 .
 
-tomb:t00962.p2 a t:person.n.01 ;
+t00962:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "HILLECHIEN PLENTER" .
 
-tomb:t00962.p3 a t:person.n.01 ;
+t00962:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TRIENTJE LAND" .
 
-tomb:t00962.r1 a t:widower.n.01 ;
-  :tgt tomb:t00962.p2 .
+t00962:r1 a t:widower.n.01 ;
+  :tgt t00962:p2 .
 
-tomb:t00962.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00962.p3 .
+t00962:r2 a t:spouse.n.01 ;
+  :tgt t00962:p3 .
 
-tomb:t00962.s1 a t:willow.n.01 ;
-  :att tomb:t00962.a1 .
+t00962:s1 a t:willow.n.01 ;
+  :att t00962:a1 .
 
-tomb:t00962.im1 a t:photo.n.01 ;
+t00962:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

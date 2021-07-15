@@ -1,28 +1,29 @@
+@prefix t00932: <https://noordergraf.rug.nl/tomb/t00932#> .
 
 tomb:t00932 a t:tombstone.n.01 ;
-  :image tomb:t00932.im1 ;
+  :image t00932:im1 ;
   :site site:gr9741GHgroningen ;
-  :ent tomb:t00932.p1 ,
-       tomb:t00932.p2 ;
+  :ent t00932:p1 ,
+       t00932:p2 ;
   :lan "NLD" .
 
-tomb:t00932.p1 a t:person.n.01 ;
+t00932:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1907-03-19" ;
   :dod "1957-03-11" ;
   :nam "CHRISTIAN NIEMAND" ;
-  :rol tomb:t00932.r1 .
+  :rol t00932:r1 .
 
-tomb:t00932.p2 a t:person.n.01 ;
+t00932:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1902-06-30" ;
   :dod "1998-04-28" ;
   :nam "JANTJE ALKEMA" .
 
-tomb:t00932.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00932.p2 .
+t00932:r1 a t:spouse.n.01 ;
+  :tgt t00932:p2 .
 
-tomb:t00932.im1 a t:photo.n.01 ;
+t00932:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

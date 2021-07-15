@@ -1,48 +1,49 @@
+@prefix t00336: <https://noordergraf.rug.nl/tomb/t00336#> .
 
 tomb:t00336 a t:tombstone.n.01 ;
-  :image tomb:t00336.im1 ;
+  :image t00336:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00336.p1 ,
-       tomb:t00336.p2 ;
-  :sym tomb:t00336.s1 .
+  :ent t00336:p1 ,
+       t00336:p2 ;
+  :sym t00336:s1 .
 
-tomb:t00336.c1 a t:village.n.02 ;
+t00336:c1 a t:village.n.02 ;
   :geo place:Ruinen2747835 ;
   :place "RUINEN" .
 
-tomb:t00336.c2 a t:town.n.01 ;
+t00336:c2 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00336.p1 a t:person.n.01 ;
+t00336:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1878-09-18" ;
   :dod "1961-06-23" ;
   :nam "ALBERT BRUINS" ;
-  :pob tomb:t00336.c1 ;
-  :pod tomb:t00336.c2 ;
-  :rol tomb:t00336.r1 .
+  :pob t00336:c1 ;
+  :pod t00336:c2 ;
+  :rol t00336:r1 .
 
-tomb:t00336.p2 a t:person.n.01 ;
+t00336:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1885-09-05" ;
   :dod "1969-01-13" ;
   :nam "ARENDINA HERMINA VERMEULEN" ;
-  :pob tomb:t00336.c1 ;
-  :pod tomb:t00336.c1 .
+  :pob t00336:c1 ;
+  :pod t00336:c1 .
 
-tomb:t00336.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00336.p2 .
+t00336:r1 a t:spouse.n.01 ;
+  :tgt t00336:p2 .
 
-tomb:t00336.s1 a t:composite.n.01 ;
-  :prt tomb:t00336.s2 ,
-       tomb:t00336.s3 .
+t00336:s1 a t:composite.n.01 ;
+  :prt t00336:s2 ,
+       t00336:s3 .
 
-tomb:t00336.s2 a t:frond.n.01 .
+t00336:s2 a t:frond.n.01 .
 
-tomb:t00336.s3 a t:frond.n.01 .
+t00336:s3 a t:frond.n.01 .
 
-tomb:t00336.im1 a t:photo.n.01 ;
+t00336:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

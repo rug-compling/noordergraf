@@ -1,59 +1,60 @@
+@prefix t00614: <https://noordergraf.rug.nl/tomb/t00614#> .
 
 tomb:t00614 a t:tombstone.n.01 ;
-  :image tomb:t00614.im1 ;
+  :image t00614:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00614.g1 ,
-       tomb:t00614.p1 ,
-       tomb:t00614.p2 ,
-       tomb:t00614.p3 ;
+  :ent t00614:g1 ,
+       t00614:p1 ,
+       t00614:p2 ,
+       t00614:p3 ;
   :quo "ONZE BROER WERD ONVERWACHT \\ VAN'T LEVEN TOT \\ DEN DOOD GEBRACHT \\ MOCHTEN W' ALLEN \\ ZIJN BEREID \\ IN'T ROEPINGSUUR \\ VOOR D'EEUWIGHEID"@nld ;
-  :sym tomb:t00614.s1 ,
-       tomb:t00614.s2 .
+  :sym t00614:s1 ,
+       t00614:s2 .
 
-tomb:t00614.a1 a t:weeping.a.02 .
+t00614:a1 a t:weeping.a.02 .
 
-tomb:t00614.a2 a t:broken.a.01 .
+t00614:a2 a t:broken.a.01 .
 
-tomb:t00614.c1 a t:hamlet.n.03 ;
+t00614:c1 a t:hamlet.n.03 ;
   :geo place:Kalkwijk2753130 ;
   :place "KALKWIJK" .
 
-tomb:t00614.c2 a t:village.n.02 ;
+t00614:c2 a t:village.n.02 ;
   :geo place:Sappemeer2747758 ;
   :place "SAPPEMEER" .
 
-tomb:t00614.g1 a t:group.n.01 ;
-  :mem tomb:t00614.p1 ,
-       tomb:t00614.p2 .
+t00614:g1 a t:group.n.01 ;
+  :mem t00614:p1 ,
+       t00614:p2 .
 
-tomb:t00614.p1 a t:person.n.01 ;
+t00614:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1873-01-23" ;
   :dod "1903-09-02" ;
   :nam "ABRAHAM PANNENBORG" ;
-  :pob tomb:t00614.c1 ;
-  :pod tomb:t00614.c2 ;
-  :rol tomb:t00614.r1 .
+  :pob t00614:c1 ;
+  :pod t00614:c2 ;
+  :rol t00614:r1 .
 
-tomb:t00614.p2 a t:person.n.01 ;
+t00614:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :att "WIJLEN" ;
   :nam "R. PANNENBORG" .
 
-tomb:t00614.p3 a t:person.n.01 ;
+t00614:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. VOERMAN" .
 
-tomb:t00614.r1 a t:son.n.01 ;
-  :tgt tomb:t00614.g2 .
+t00614:r1 a t:son.n.01 ;
+  :tgt t00614:g2 .
 
-tomb:t00614.s1 a t:willow.n.01 ;
-  :att tomb:t00614.a1 .
+t00614:s1 a t:willow.n.01 ;
+  :att t00614:a1 .
 
-tomb:t00614.s2 a t:column.n.01 ;
-  :att tomb:t00614.a2 .
+t00614:s2 a t:column.n.01 ;
+  :att t00614:a2 .
 
-tomb:t00614.im1 a t:photo.n.01 ;
+t00614:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

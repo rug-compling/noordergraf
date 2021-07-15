@@ -1,37 +1,38 @@
+@prefix t01068: <https://noordergraf.rug.nl/tomb/t01068#> .
 
 tomb:t01068 a t:tombstone.n.01 ;
-  :image tomb:t01068.im1 ;
+  :image t01068:im1 ;
   :site site:gr9367PAde_wilp ;
-  :ent tomb:t01068.p1 ;
+  :ent t01068:p1 ;
   :quo "AL WAT ONS OP AARDE DIERBAAR IS, ONTVALT ONS BIJ DEN DOOD GEWIS, ZIJN WIJ VOOR HET STERVEN BEREID, GEEN VREES DAN VOOR DE EEUWIGHEID"@nld ;
-  :sym tomb:t01068.s1 .
+  :sym t01068:s1 .
 
-tomb:t01068.a1 a t:weeping.a.02 .
+t01068:a1 a t:weeping.a.02 .
 
-tomb:t01068.c1 a t:village.n.02 ;
+t01068:c1 a t:village.n.02 ;
   :geo place:Siegerswoude2747339 ;
   :place "SIEGERSWOUDE" .
 
-tomb:t01068.c2 a t:village.n.02 ;
+t01068:c2 a t:village.n.02 ;
   :geo place:DeWilp2756932 ;
   :place "DE WILP" .
 
-tomb:t01068.p1 a t:person.n.01 ;
+t01068:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1878-07-28" ;
   :dod "1902-09-29" ;
   :nam "METJE D. VAN VEEN" ;
-  :pob tomb:t01068.c1 ;
-  :pod tomb:t01068.c2 ;
-  :rol tomb:t01068.r1 .
+  :pob t01068:c1 ;
+  :pod t01068:c2 ;
+  :rol t01068:r1 .
 
-tomb:t01068.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01068.p2 .
+t01068:r1 a t:spouse.n.01 ;
+  :tgt t01068:p2 .
 
-tomb:t01068.s1 a t:willow.n.01 ;
-  :att tomb:t01068.a1 .
+t01068:s1 a t:willow.n.01 ;
+  :att t01068:a1 .
 
-tomb:t01068.im1 a t:photo.n.01 ;
+t01068:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

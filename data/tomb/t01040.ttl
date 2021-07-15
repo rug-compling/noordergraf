@@ -1,50 +1,51 @@
+@prefix t01040: <https://noordergraf.rug.nl/tomb/t01040#> .
 
 tomb:t01040 a t:tombstone.n.01 ;
-  :image tomb:t01040.im1 ;
+  :image t01040:im1 ;
   :site site:gr9804TEnoordhorn ;
-  :ent tomb:t01040.g1 ,
-       tomb:t01040.p1 ,
-       tomb:t01040.p2 ;
+  :ent t01040:g1 ,
+       t01040:p1 ,
+       t01040:p2 ;
   :lan "NLD" ;
-  :sym tomb:t01040.s1 .
+  :sym t01040:s1 .
 
-tomb:t01040.a1 a t:weeping.a.02 .
+t01040:a1 a t:weeping.a.02 .
 
-tomb:t01040.c1 a t:village.n.02 ;
+t01040:c1 a t:village.n.02 ;
   :geo place:Ezinge2755938 ;
   :place "EZINGE" .
 
-tomb:t01040.c2 a t:village.n.02 ;
+t01040:c2 a t:village.n.02 ;
   :geo place:Noordhorn2749875 ;
   :place "NOORDHORN" .
 
-tomb:t01040.g1 a t:group.n.01 ;
-  :mem tomb:t01040.p1 ,
-       tomb:t01040.p2 ;
-  :rol tomb:t01040.r1 .
+t01040:g1 a t:group.n.01 ;
+  :mem t01040:p1 ,
+       t01040:p2 ;
+  :rol t01040:r1 .
 
-tomb:t01040.p1 a t:person.n.01 ;
+t01040:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1833-11-16" ;
   :dod "1912-05-21" ;
   :nam "LUITJEN VAN DER SCHANS" ;
-  :pob tomb:t01040.c1 ;
-  :pod tomb:t01040.c2 .
+  :pob t01040:c1 ;
+  :pod t01040:c2 .
 
-tomb:t01040.p2 a t:person.n.01 ;
+t01040:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1842-11-22" ;
   :dod "1914-05-21" ;
   :nam "TRIJNTJE NIEWOLD" ;
-  :pob tomb:t01040.c2 ;
-  :pod tomb:t01040.c2 .
+  :pob t01040:c2 ;
+  :pod t01040:c2 .
 
-tomb:t01040.r1 a t:parent.n.01 .
+t01040:r1 a t:parent.n.01 .
 
-tomb:t01040.s1 a t:willow.n.01 ;
-  :att tomb:t01040.a1 .
+t01040:s1 a t:willow.n.01 ;
+  :att t01040:a1 .
 
-tomb:t01040.im1 a t:photo.n.01 ;
+t01040:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

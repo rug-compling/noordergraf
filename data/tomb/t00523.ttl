@@ -1,36 +1,37 @@
+@prefix t00523: <https://noordergraf.rug.nl/tomb/t00523#> .
 
 tomb:t00523 a t:tombstone.n.01 ;
-  :image tomb:t00523.im1 ;
+  :image t00523:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00523.p1 ;
+  :ent t00523:p1 ;
   :quo "RUST ZACHT"@nld ;
-  :sym tomb:t00523.s1 .
+  :sym t00523:s1 .
 
-tomb:t00523.c1 a t:country.n.02 ;
+t00523:c1 a t:country.n.02 ;
   :geo place:Suriname3382998 ;
   :place "SURINAME" .
 
-tomb:t00523.c2 a t:town.n.01 ;
+t00523:c2 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00523.p1 a t:person.n.01 ;
+t00523:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1915-12-03" ;
   :dod "2012-09-04" ;
   :nam "IBU SOERANI SOEBKE-WAKIT" ;
-  :pob tomb:t00523.c1 ;
-  :pod tomb:t00523.c2 .
+  :pob t00523:c1 ;
+  :pod t00523:c2 .
 
-tomb:t00523.s1 a t:composite.n.01 ;
-  :prt tomb:t00523.s2 ,
-       tomb:t00523.s3 .
+t00523:s1 a t:composite.n.01 ;
+  :prt t00523:s2 ,
+       t00523:s3 .
 
-tomb:t00523.s2 a t:crescent.n.01 .
+t00523:s2 a t:crescent.n.01 .
 
-tomb:t00523.s3 a t:star.n.01 .
+t00523:s3 a t:star.n.01 .
 
-tomb:t00523.im1 a t:photo.n.01 ;
+t00523:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

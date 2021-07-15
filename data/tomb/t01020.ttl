@@ -1,41 +1,42 @@
+@prefix t01020: <https://noordergraf.rug.nl/tomb/t01020#> .
 
 tomb:t01020 a t:tombstone.n.01 ;
-  :image tomb:t01020.im1 ;
+  :image t01020:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t01020.p1 ,
-       tomb:t01020.p3 ;
+  :ent t01020:p1 ,
+       t01020:p3 ;
   :quo "RUST ZACHT"@nld .
 
-tomb:t01020.o1 a t:navigator.n.01 ;
+t01020:o1 a t:navigator.n.01 ;
   :hco "04230" ;
-  :thm tomb:t01020.p2 .
+  :thm t01020:p2 .
 
-tomb:t01020.p1 a t:person.n.01 ;
+t01020:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1921-08-18" ;
   :dod "1954-12-09" ;
   :nam "JANTIENES GERDING" ;
-  :occ tomb:t01020.o1 ;
-  :rol tomb:t01020.r1 ,
-       tomb:t01020.r2 ,
-       tomb:t01020.r3 ,
-       tomb:t01020.r4 .
+  :occ t01020:o1 ;
+  :rol t01020:r1 ,
+       t01020:r2 ,
+       t01020:r3 ,
+       t01020:r4 .
 
-tomb:t01020.p2 a t:ship.n.01 ;
+t01020:p2 a t:ship.n.01 ;
   :nam "ARIËL" .
 
-tomb:t01020.p3 a t:family.n.04 ;
+t01020:p3 a t:family.n.04 ;
   :nam "GERDING" .
 
-tomb:t01020.r1 a t:son.n.01 .
+t01020:r1 a t:son.n.01 .
 
-tomb:t01020.r2 a t:brother.n.01 .
+t01020:r2 a t:brother.n.01 .
 
-tomb:t01020.r3 a t:brother-in-law.n.01 .
+t01020:r3 a t:brother-in-law.n.01 .
 
-tomb:t01020.r4 a t:uncle.n.01 .
+t01020:r4 a t:uncle.n.01 .
 
-tomb:t01020.im1 a t:photo.n.01 ;
+t01020:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

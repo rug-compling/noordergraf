@@ -1,52 +1,53 @@
+@prefix t00417: <https://noordergraf.rug.nl/tomb/t00417#> .
 
 tomb:t00417 a t:tombstone.n.01 ;
-  :image tomb:t00417.im1 ;
+  :image t00417:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00417.p1 ,
-       tomb:t00417.p2 ,
-       tomb:t00417.p3 ;
+  :ent t00417:p1 ,
+       t00417:p2 ,
+       t00417:p3 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00417.s1 .
+  :sym t00417:s1 .
 
-tomb:t00417.a1 a t:weeping.a.02 .
+t00417:a1 a t:weeping.a.02 .
 
-tomb:t00417.c1 a t:town.n.01 ;
+t00417:c1 a t:town.n.01 ;
   :geo place:Eelde2756408 ;
   :place "EELDE" .
 
-tomb:t00417.c2 a t:town.n.01 ;
+t00417:c2 a t:town.n.01 ;
   :geo place:Vries2745189 ;
   :place "VRIES" .
 
-tomb:t00417.p1 a t:person.n.01 ;
+t00417:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1871-07-23" ;
   :dod "1953-03-13" ;
   :nam "WILLEMTJE ARENDS" ;
-  :pob tomb:t00417.c1 ;
-  :pod tomb:t00417.c2 ;
-  :rol tomb:t00417.r1 ,
-       tomb:t00417.r2 .
+  :pob t00417:c1 ;
+  :pod t00417:c2 ;
+  :rol t00417:r1 ,
+       t00417:r2 .
 
-tomb:t00417.p2 a t:person.n.01 ;
+t00417:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ALBERT TIMMER" .
 
-tomb:t00417.p3 a t:person.n.01 ;
+t00417:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "PIETER GREVING" .
 
-tomb:t00417.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00417.p2 .
+t00417:r1 a t:spouse.n.01 ;
+  :tgt t00417:p2 .
 
-tomb:t00417.r2 a t:spouse.n.01 ;
-  :bef tomb:t00417.r1 ;
-  :tgt tomb:t00417.p3 .
+t00417:r2 a t:spouse.n.01 ;
+  :bef t00417:r1 ;
+  :tgt t00417:p3 .
 
-tomb:t00417.s1 a t:willow.n.01 ;
-  :att tomb:t00417.a1 .
+t00417:s1 a t:willow.n.01 ;
+  :att t00417:a1 .
 
-tomb:t00417.im1 a t:photo.n.01 ;
+t00417:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

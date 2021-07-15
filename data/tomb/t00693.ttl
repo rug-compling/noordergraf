@@ -1,43 +1,44 @@
+@prefix t00693: <https://noordergraf.rug.nl/tomb/t00693#> .
 
 tomb:t00693 a t:tombstone.n.01 ;
-  :image tomb:t00693.im1 ;
+  :image t00693:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00693.g1 ,
-       tomb:t00693.g2 ,
-       tomb:t00693.p1 ,
-       tomb:t00693.p2 ;
+  :ent t00693:g1 ,
+       t00693:g2 ,
+       t00693:p1 ,
+       t00693:p2 ;
   :quo "VEEL FIJNE HERINNERINGEN \\ VERZACHTEN ONZE SMART \\ VOOR GOED UIT ONS MIDDEN \\ MAAR ALTIJD IN ONS HART"@nld ;
-  :sym tomb:t00693.s1 .
+  :sym t00693:s1 .
 
-tomb:t00693.g1 a t:group.n.01 ;
-  :rol tomb:t00693.r2 .
+t00693:g1 a t:group.n.01 ;
+  :rol t00693:r2 .
 
-tomb:t00693.g2 a t:group.n.01 ;
-  :rol tomb:t00693.r3 .
+t00693:g2 a t:group.n.01 ;
+  :rol t00693:r3 .
 
-tomb:t00693.p1 a t:person.n.01 ;
+t00693:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1937-01-05" ;
   :dod "1995-03-02" ;
   :nam "JOHANNES FRANCISCUS BRATTINGA" .
 
-tomb:t00693.p2 a t:person.n.01 ;
+t00693:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "MEA BRATTINGA-VENEMA" ;
-  :rol tomb:t00693.r1 .
+  :rol t00693:r1 .
 
-tomb:t00693.r1 a t:wife.n.01 ;
-  :tgt tomb:t00693.p1 .
+t00693:r1 a t:wife.n.01 ;
+  :tgt t00693:p1 .
 
-tomb:t00693.r2 a t:child.n.02 ;
-  :tgt tomb:t00693.p1 .
+t00693:r2 a t:child.n.02 ;
+  :tgt t00693:p1 .
 
-tomb:t00693.r3 a t:grandchild.n.01 ;
-  :tgt tomb:t00693.p1 .
+t00693:r3 a t:grandchild.n.01 ;
+  :tgt t00693:p1 .
 
-tomb:t00693.s1 a t:sailboat.n.01 .
+t00693:s1 a t:sailboat.n.01 .
 
-tomb:t00693.im1 a t:photo.n.01 ;
+t00693:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

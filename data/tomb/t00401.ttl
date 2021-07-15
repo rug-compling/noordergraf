@@ -1,44 +1,45 @@
+@prefix t00401: <https://noordergraf.rug.nl/tomb/t00401#> .
 
 tomb:t00401 a t:tombstone.n.01 ;
-  :image tomb:t00401.im1 ;
+  :image t00401:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00401.p1 ,
-       tomb:t00401.p2 ;
-  :sym tomb:t00401.s1 .
+  :ent t00401:p1 ,
+       t00401:p2 ;
+  :sym t00401:s1 .
 
-tomb:t00401.p1 a t:person.n.01 ;
+t00401:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1885-04-23" ;
   :dod "1969-07-31" ;
   :nam "GRIETJE LAND" ;
-  :rol tomb:t00401.r1 ,
-       tomb:t00401.r2 .
+  :rol t00401:r1 ,
+       t00401:r2 .
 
-tomb:t00401.p2 a t:person.n.01 ;
+t00401:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-12-02" ;
   :dod "1975-03-17" ;
   :nam "ANNE ELLENS" ;
-  :rol tomb:t00401.r3 .
+  :rol t00401:r3 .
 
-tomb:t00401.r1 a t:wife.n.01 ;
+t00401:r1 a t:wife.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00401.p2 .
+  :tgt t00401:p2 .
 
-tomb:t00401.r2 a t:mother.n.01 .
+t00401:r2 a t:mother.n.01 .
 
-tomb:t00401.r3 a t:father.n.01 ;
+t00401:r3 a t:father.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00401.s1 a t:composite.n.01 ;
-  :prt tomb:t00401.s2 ,
-       tomb:t00401.s3 .
+t00401:s1 a t:composite.n.01 ;
+  :prt t00401:s2 ,
+       t00401:s3 .
 
-tomb:t00401.s2 a t:frond.n.01 .
+t00401:s2 a t:frond.n.01 .
 
-tomb:t00401.s3 a t:frond.n.01 .
+t00401:s3 a t:frond.n.01 .
 
-tomb:t00401.im1 a t:photo.n.01 ;
+t00401:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

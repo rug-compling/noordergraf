@@ -1,34 +1,35 @@
+@prefix t00203: <https://noordergraf.rug.nl/tomb/t00203#> .
 
 tomb:t00203 a t:tombstone.n.01 ;
-  :image tomb:t00203.im1 ;
+  :image t00203:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00203.p1 ,
-       tomb:t00203.p2 ;
-  :sym tomb:t00203.s1 .
+  :ent t00203:p1 ,
+       t00203:p2 ;
+  :sym t00203:s1 .
 
-tomb:t00203.a1 a t:broken.a.01 .
+t00203:a1 a t:broken.a.01 .
 
-tomb:t00203.p1 a t:person.n.01 ;
+t00203:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1894-09-23" ;
   :dod "1931-06-05" ;
   :nam "ALBERTUS STEENHUIS" ;
-  :rol tomb:t00203.r3 .
+  :rol t00203:r3 .
 
-tomb:t00203.p2 a t:person.n.01 ;
+t00203:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1897-07-07" ;
   :dod "1979-04-01" ;
   :nam "TEUBINA G. HIDSKES" .
 
-tomb:t00203.r3 a t:spouse.n.01 ;
+t00203:r3 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00203.p2 .
+  :tgt t00203:p2 .
 
-tomb:t00203.s1 a t:flower.n.01 ;
-  :att tomb:t00203.a1 .
+t00203:s1 a t:flower.n.01 ;
+  :att t00203:a1 .
 
-tomb:t00203.im1 a t:photo.n.01 ;
+t00203:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,25 +1,26 @@
+@prefix t00299: <https://noordergraf.rug.nl/tomb/t00299#> .
 
 tomb:t00299 a t:tombstone.n.01 ;
-  :image tomb:t00299.im1 ;
+  :image t00299:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00299.p1 ;
+  :ent t00299:p1 ;
   :ref "PSALM 103:10-18" .
 
-tomb:t00299.p1 a t:person.n.01 ;
+t00299:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1909-07-20" ;
   :dod "1926-03-11" ;
   :nam "KOOB SCHELHAAS" ;
-  :rol tomb:t00299.r1 ,
-       tomb:t00299.r2 .
+  :rol t00299:r1 ,
+       t00299:r2 .
 
-tomb:t00299.r1 a t:son.n.01 ;
+t00299:r1 a t:son.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00299.p2 .
+  :tgt t00299:p2 .
 
-tomb:t00299.r2 a t:brother.n.01 .
+t00299:r2 a t:brother.n.01 .
 
-tomb:t00299.im1 a t:photo.n.01 ;
+t00299:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

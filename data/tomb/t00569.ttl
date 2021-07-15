@@ -1,53 +1,54 @@
+@prefix t00569: <https://noordergraf.rug.nl/tomb/t00569#> .
 
 tomb:t00569 a t:tombstone.n.01 ;
-  :image tomb:t00569.im1 ;
+  :image t00569:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00569.p1 ,
-       tomb:t00569.p2 ,
-       tomb:t00569.p3 ;
+  :ent t00569:p1 ,
+       t00569:p2 ,
+       t00569:p3 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00569.s1 ,
-       tomb:t00569.s2 ,
-       tomb:t00569.s3 .
+  :sym t00569:s1 ,
+       t00569:s2 ,
+       t00569:s3 .
 
-tomb:t00569.p1 a t:person.n.01 ;
+t00569:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1846-03-22" ;
   :dod "1920-05-26" ;
   :nam "HARM KOOL" ;
-  :rol tomb:t00569.r1 ,
-       tomb:t00569.r2 ,
-       tomb:t00569.r3 ,
-       tomb:t00569.r4 .
+  :rol t00569:r1 ,
+       t00569:r2 ,
+       t00569:r3 ,
+       t00569:r4 .
 
-tomb:t00569.p2 a t:person.n.01 ;
+t00569:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TRIJNTJE DE HAAN" .
 
-tomb:t00569.p3 a t:person.n.01 ;
+t00569:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "J. JONKER" .
 
-tomb:t00569.r1 a t:husband.n.01 ;
+t00569:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00569.p2 .
+  :tgt t00569:p2 .
 
-tomb:t00569.r2 a t:father.n.01 .
+t00569:r2 a t:father.n.01 .
 
-tomb:t00569.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00569.p2 .
+t00569:r3 a t:spouse.n.01 ;
+  :tgt t00569:p2 .
 
-tomb:t00569.r4 a t:widower.n.01 ;
-  :bef tomb:t00569.r3 ;
-  :tgt tomb:t00569.p3 .
+t00569:r4 a t:widower.n.01 ;
+  :bef t00569:r3 ;
+  :tgt t00569:p3 .
 
-tomb:t00569.s1 a t:butterfly.n.01 .
+t00569:s1 a t:butterfly.n.01 .
 
-tomb:t00569.s2 a t:frond.n.01 .
+t00569:s2 a t:frond.n.01 .
 
-tomb:t00569.s3 a t:oak.n.02 .
+t00569:s3 a t:oak.n.02 .
 
-tomb:t00569.im1 a t:photo.n.01 ;
+t00569:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

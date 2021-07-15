@@ -1,29 +1,30 @@
+@prefix t01035: <https://noordergraf.rug.nl/tomb/t01035#> .
 
 tomb:t01035 a t:tombstone.n.01 ;
-  :image tomb:t01035.im1 ;
+  :image t01035:im1 ;
   :site site:gr9804TEnoordhorn ;
-  :ent tomb:t01035.p1 ;
+  :ent t01035:p1 ;
   :lan "NLD" ;
-  :sym tomb:t01035.s1 ,
-       tomb:t01035.s2 .
+  :sym t01035:s1 ,
+       t01035:s2 .
 
-tomb:t01035.c1 a t:village.n.02 ;
+t01035:c1 a t:village.n.02 ;
   :geo place:Noordhorn2749875 ;
   :place "NOORDHORN" .
 
-tomb:t01035.p1 a t:person.n.01 ;
+t01035:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1893-07-19" ;
   :dod "1937-06-26" ;
   :nam "KLAAS VLEDDER" ;
-  :pob tomb:t01035.c1 ;
-  :pod tomb:t01035.c1 .
+  :pob t01035:c1 ;
+  :pod t01035:c1 .
 
-tomb:t01035.s1 a t:frond.n.01 .
+t01035:s1 a t:frond.n.01 .
 
-tomb:t01035.s2 a t:ribbon.n.01 .
+t01035:s2 a t:ribbon.n.01 .
 
-tomb:t01035.im1 a t:photo.n.01 ;
+t01035:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

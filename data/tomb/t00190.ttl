@@ -1,67 +1,68 @@
+@prefix t00190: <https://noordergraf.rug.nl/tomb/t00190#> .
 
 tomb:t00190 a t:tombstone.n.01 ;
-  :image tomb:t00190.im1 ;
+  :image t00190:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00190.p1 ,
-       tomb:t00190.p2 ,
-       tomb:t00190.p3 ,
-       tomb:t00190.p4 ;
+  :ent t00190:p1 ,
+       t00190:p2 ,
+       t00190:p3 ,
+       t00190:p4 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00190.s1 .
+  :sym t00190:s1 .
 
-tomb:t00190.p1 a t:person.n.01 ;
+t00190:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1876-03-05" ;
   :dod "1937-07-19" ;
   :nam "HILKE DIETERMAN" ;
-  :rol tomb:t00190.r1 ,
-       tomb:t00190.r2 ,
-       tomb:t00190.r3 .
+  :rol t00190:r1 ,
+       t00190:r2 ,
+       t00190:r3 .
 
-tomb:t00190.p2 a t:person.n.01 ;
+t00190:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "K.J. RUNHARDT" .
 
-tomb:t00190.p3 a t:person.n.01 ;
+t00190:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1909-12-03" ;
   :dod "1955-04-22" ;
   :nam "J.K. RUNHARDT" ;
-  :rol tomb:t00190.r4 ,
-       tomb:t00190.r5 .
+  :rol t00190:r4 ,
+       t00190:r5 .
 
-tomb:t00190.p4 a t:person.n.01 ;
+t00190:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1912-08-01" ;
   :dod "1999-01-21" ;
   :nam "M.D. SMIT" ,
        "MARGARETHA D. RUNHARDT-SMIT" .
 
-tomb:t00190.r1 a t:wife.n.01 ;
+t00190:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00190.p2 .
+  :tgt t00190:p2 .
 
-tomb:t00190.r2 a t:mother.n.01 .
+t00190:r2 a t:mother.n.01 .
 
-tomb:t00190.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00190.p2 .
+t00190:r3 a t:spouse.n.01 ;
+  :tgt t00190:p2 .
 
-tomb:t00190.r4 a t:husband.n.01 ;
+t00190:r4 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00190.p4 .
+  :tgt t00190:p4 .
 
-tomb:t00190.r5 a t:spouse.n.01 ;
-  :tgt tomb:t00190.p4 .
+t00190:r5 a t:spouse.n.01 ;
+  :tgt t00190:p4 .
 
-tomb:t00190.s1 a t:composite.n.01 ;
-  :prt tomb:t00190.s2 ,
-       tomb:t00190.s3 .
+t00190:s1 a t:composite.n.01 ;
+  :prt t00190:s2 ,
+       t00190:s3 .
 
-tomb:t00190.s2 a t:frond.n.01 .
+t00190:s2 a t:frond.n.01 .
 
-tomb:t00190.s3 a t:ribbon.n.01 .
+t00190:s3 a t:ribbon.n.01 .
 
-tomb:t00190.im1 a t:photo.n.01 ;
+t00190:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

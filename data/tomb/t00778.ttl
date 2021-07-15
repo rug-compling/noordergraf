@@ -1,27 +1,28 @@
+@prefix t00778: <https://noordergraf.rug.nl/tomb/t00778#> .
 
 tomb:t00778 a t:tombstone.n.01 ;
-  :image tomb:t00778.im1 ;
+  :image t00778:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00778.p1 ;
+  :ent t00778:p1 ;
   :quo "RUST ZACHT"@nld .
 
-tomb:t00778.c1 a t:hamlet.n.03 ;
+t00778:c1 a t:hamlet.n.03 ;
   :geo place:Emmerhout2756128 ;
   :place "EMMERHOUT" .
 
-tomb:t00778.c2 a t:city.n.01 ;
+t00778:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00778.p1 a t:person.n.01 ;
+t00778:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1874-08-31" ;
   :dod "1927-01-26" ;
   :nam "ROELOF ENSING" ;
-  :pob tomb:t00778.c1 ;
-  :pod tomb:t00778.c2 .
+  :pob t00778:c1 ;
+  :pod t00778:c2 .
 
-tomb:t00778.im1 a t:photo.n.01 ;
+t00778:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

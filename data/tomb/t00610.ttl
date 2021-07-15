@@ -1,30 +1,31 @@
+@prefix t00610: <https://noordergraf.rug.nl/tomb/t00610#> .
 
 tomb:t00610 a t:tombstone.n.01 ;
-  :image tomb:t00610.im1 ;
+  :image t00610:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00610.p1 ,
-       tomb:t00610.p2 ;
+  :ent t00610:p1 ,
+       t00610:p2 ;
   :quo "TOT WEDERZIENS"@nld ;
-  :sym tomb:t00610.s1 .
+  :sym t00610:s1 .
 
-tomb:t00610.p1 a t:person.n.01 ;
+t00610:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1850-08-22" ;
   :dod "1919-02-16" ;
   :nam "MAGRITA SCHABELS" ;
-  :rol tomb:t00610.r1 .
+  :rol t00610:r1 .
 
-tomb:t00610.p2 a t:person.n.01 ;
+t00610:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "J.G. BENES" .
 
-tomb:t00610.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00610.p2 .
+t00610:r1 a t:spouse.n.01 ;
+  :tgt t00610:p2 .
 
-tomb:t00610.s1 a t:hand.n.01 ;
+t00610:s1 a t:hand.n.01 ;
   :qua 2 .
 
-tomb:t00610.im1 a t:photo.n.01 ;
+t00610:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

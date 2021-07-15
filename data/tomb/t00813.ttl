@@ -1,33 +1,34 @@
+@prefix t00813: <https://noordergraf.rug.nl/tomb/t00813#> .
 
 tomb:t00813 a t:tombstone.n.01 ;
-  :image tomb:t00813.im1 ;
+  :image t00813:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00813.p1 ,
-       tomb:t00813.p2 ;
+  :ent t00813:p1 ,
+       t00813:p2 ;
   :lan "NLD" .
 
-tomb:t00813.o1 a t:linguist.n.01 ;
+t00813:o1 a t:linguist.n.01 ;
   :hco "19520" .
 
-tomb:t00813.p1 a t:person.n.01 ;
+t00813:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1863-03-11" ;
   :dod "1942-02-06" ;
   :nam "WOBBE DE VRIES" ;
-  :occ tomb:t00813.o1 ;
+  :occ t00813:o1 ;
   :pfx "DR" ;
-  :rol tomb:t00813.r1 .
+  :rol t00813:r1 .
 
-tomb:t00813.p2 a t:person.n.01 ;
+t00813:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1867-04-22" ;
   :dod "1945-04-12" ;
   :nam "FROUWKTJE KORNELIA OPTEN" .
 
-tomb:t00813.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00813.p2 .
+t00813:r1 a t:spouse.n.01 ;
+  :tgt t00813:p2 .
 
-tomb:t00813.im1 a t:photo.n.01 ;
+t00813:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

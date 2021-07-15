@@ -1,30 +1,31 @@
+@prefix t00206: <https://noordergraf.rug.nl/tomb/t00206#> .
 
 tomb:t00206 a t:tombstone.n.01 ;
-  :image tomb:t00206.im1 ;
+  :image t00206:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00206.p1 ;
-  :sym tomb:t00206.s1 .
+  :ent t00206:p1 ;
+  :sym t00206:s1 .
 
-tomb:t00206.c1 a t:village.n.02 ;
+t00206:c1 a t:village.n.02 ;
   :geo place:WeheDenHoorn2744898 ;
   :place "WEHE" .
 
-tomb:t00206.o1 a t:teacher.n.01 ;
+t00206:o1 a t:teacher.n.01 ;
   :beg "XX-XX-1803" ;
   :end "XX-XX-1857" ;
   :hco "13320" ;
-  :loc tomb:t00206.c1 .
+  :loc t00206:c1 .
 
-tomb:t00206.p1 a t:person.n.01 ;
+t00206:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1784-03-28" ;
   :dod "1862-01-12" ;
   :nam "JAN GERRITS RIJKENS" ;
-  :occ tomb:t00206.o1 .
+  :occ t00206:o1 .
 
-tomb:t00206.s1 a t:book.n.02 .
+t00206:s1 a t:book.n.02 .
 
-tomb:t00206.im1 a t:photo.n.01 ;
+t00206:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

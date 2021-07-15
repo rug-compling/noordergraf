@@ -1,35 +1,36 @@
+@prefix t00376: <https://noordergraf.rug.nl/tomb/t00376#> .
 
 tomb:t00376 a t:tombstone.n.01 ;
-  :image tomb:t00376.im1 ;
-  :ent tomb:t00376.p1 ,
-       tomb:t00376.p2 ;
+  :image t00376:im1 ;
+  :ent t00376:p1 ,
+       t00376:p2 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00376.s1 .
+  :sym t00376:s1 .
 
-tomb:t00376.c1 a t:village.n.02 ;
+t00376:c1 a t:village.n.02 ;
   :geo place:Bunne2758108 ;
   :place "BUNNE" .
 
-tomb:t00376.p1 a t:person.n.01 ;
+t00376:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1907-03-03" ;
   :dod "1953-06-22" ;
   :nam "PIETER BURING" ;
-  :pob tomb:t00376.c1 ;
-  :pod tomb:t00376.c1 ;
-  :rol tomb:t00376.r1 .
+  :pob t00376:c1 ;
+  :pod t00376:c1 ;
+  :rol t00376:r1 .
 
-tomb:t00376.p2 a t:person.n.01 ;
+t00376:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "GESIENA BOUWINA DEELSNIJDER" .
 
-tomb:t00376.r1 a t:spouse.n.01 ;
+t00376:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00376.p2 .
+  :tgt t00376:p2 .
 
-tomb:t00376.s1 a t:frond.n.01 .
+t00376:s1 a t:frond.n.01 .
 
-tomb:t00376.im1 a t:photo.n.01 ;
+t00376:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

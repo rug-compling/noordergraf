@@ -1,48 +1,49 @@
+@prefix t00553: <https://noordergraf.rug.nl/tomb/t00553#> .
 
 tomb:t00553 a t:tombstone.n.01 ;
-  :image tomb:t00553.im1 ;
+  :image t00553:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00553.p1 ,
-       tomb:t00553.p2 ;
+  :ent t00553:p1 ,
+       t00553:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00553.s1 .
+  :sym t00553:s1 .
 
-tomb:t00553.c1 a t:village.n.02 ;
+t00553:c1 a t:village.n.02 ;
   :geo place:Kollum2752524 ;
   :place "KOLLUM" .
 
-tomb:t00553.c2 a t:city.n.01 ;
+t00553:c2 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00553.o1 a t:teacher.n.01 ;
+t00553:o1 a t:teacher.n.01 ;
   :hco "13320" ;
-  :loc tomb:t00553.c2 ;
-  :org tomb:t00553.o2 .
+  :loc t00553:c2 ;
+  :org t00553:o2 .
 
-tomb:t00553.o2 a t:school.n.01 ;
+t00553:o2 a t:school.n.01 ;
   :nam "HOGEREBURGERSCHOOL" .
 
-tomb:t00553.p1 a t:person.n.01 ;
+t00553:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1854-05-20" ;
   :dod "1905-03-21" ;
   :nam "KLAAS VLIEG" ;
-  :occ tomb:t00553.o1 ;
-  :pob tomb:t00553.c1 ;
-  :pod tomb:t00553.c2 ;
-  :rol tomb:t00553.r1 .
+  :occ t00553:o1 ;
+  :pob t00553:c1 ;
+  :pod t00553:c2 ;
+  :rol t00553:r1 .
 
-tomb:t00553.p2 a t:person.n.01 ;
+t00553:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "MARIA KRUIZINGA" .
 
-tomb:t00553.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00553.p2 .
+t00553:r1 a t:spouse.n.01 ;
+  :tgt t00553:p2 .
 
-tomb:t00553.s1 a t:book.n.02 .
+t00553:s1 a t:book.n.02 .
 
-tomb:t00553.im1 a t:photo.n.01 ;
+t00553:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

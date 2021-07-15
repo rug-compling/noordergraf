@@ -1,25 +1,26 @@
+@prefix t00103: <https://noordergraf.rug.nl/tomb/t00103#> .
 
 tomb:t00103 a t:tombstone.n.01 ;
-  :image tomb:t00103.im1 ;
+  :image t00103:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00103.p1 ,
-       tomb:t00103.p2 .
+  :ent t00103:p1 ,
+       t00103:p2 .
 
-tomb:t00103.p1 a t:person.n.01 ;
+t00103:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1874-08-13" ;
   :dod "1930-08-27" ;
   :nam "ELIZABETH COOLMAN" ;
-  :rol tomb:t00103.r1 .
+  :rol t00103:r1 .
 
-tomb:t00103.p2 a t:person.n.01 ;
+t00103:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "A. VAN DAM" .
 
-tomb:t00103.r1 a t:widow.n.01 ;
-  :tgt tomb:t00103.p2 .
+t00103:r1 a t:widow.n.01 ;
+  :tgt t00103:p2 .
 
-tomb:t00103.im1 a t:photo.n.01 ;
+t00103:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

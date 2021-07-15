@@ -1,48 +1,49 @@
+@prefix t01015: <https://noordergraf.rug.nl/tomb/t01015#> .
 
 tomb:t01015 a t:tombstone.n.01 ;
-  :image tomb:t01015.im1 ;
+  :image t01015:im1 ;
   :site site:gr9686RSbeerta ;
-  :ent tomb:t01015.g1 ,
-       tomb:t01015.p1 ,
-       tomb:t01015.p2 ,
-       tomb:t01015.p3 ;
+  :ent t01015:g1 ,
+       t01015:p1 ,
+       t01015:p2 ,
+       t01015:p3 ;
   :lan "NLD" ;
-  :sym tomb:t01015.s1 ,
-       tomb:t01015.s2 ,
-       tomb:t01015.s3 ,
-       tomb:t01015.s4 .
+  :sym t01015:s1 ,
+       t01015:s2 ,
+       t01015:s3 ,
+       t01015:s4 .
 
-tomb:t01015.g1 a t:group.n.01 ;
-  :mem tomb:t01015.p2 ,
-       tomb:t01015.p3 .
+t01015:g1 a t:group.n.01 ;
+  :mem t01015:p2 ,
+       t01015:p3 .
 
-tomb:t01015.p1 a t:person.n.01 ;
+t01015:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1872-10-01" ;
   :dod "1893-07-28" ;
   :nam "GRIETJE WUBBINA" ;
-  :rol tomb:t01015.r1 .
+  :rol t01015:r1 .
 
-tomb:t01015.p2 a t:person.n.01 ;
+t01015:p2 a t:person.n.01 ;
   :nam "A. MEIJER" .
 
-tomb:t01015.p3 a t:person.n.01 ;
+t01015:p3 a t:person.n.01 ;
   :att "WIJLEN" ;
   :nam "J. SMIT" .
 
-tomb:t01015.r1 a t:daughter.n.01 ;
+t01015:r1 a t:daughter.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t01015.g1 .
+  :tgt t01015:g1 .
 
-tomb:t01015.s1 a t:frond.n.01 .
+t01015:s1 a t:frond.n.01 .
 
-tomb:t01015.s2 a t:frond.n.01 .
+t01015:s2 a t:frond.n.01 .
 
-tomb:t01015.s3 a t:butterfly.n.01 .
+t01015:s3 a t:butterfly.n.01 .
 
-tomb:t01015.s4 a t:snake.n.02 .
+t01015:s4 a t:snake.n.02 .
 
-tomb:t01015.im1 a t:photo.n.01 ;
+t01015:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

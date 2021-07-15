@@ -1,47 +1,48 @@
+@prefix t00021: <https://noordergraf.rug.nl/tomb/t00021#> .
 
 tomb:t00021 a t:tombstone.n.01 ;
-  :image tomb:t00021.im1 ;
+  :image t00021:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00021.g1 ,
-       tomb:t00021.p1 ;
-  :sym tomb:t00021.s1 .
+  :ent t00021:g1 ,
+       t00021:p1 ;
+  :sym t00021:s1 .
 
-tomb:t00021.a1 a t:broken.a.01 .
+t00021:a1 a t:broken.a.01 .
 
-tomb:t00021.c1 a t:village.n.02 ;
+t00021:c1 a t:village.n.02 ;
   :geo place:Onnen2749588 ;
   :place "ONNEN" .
 
-tomb:t00021.c2 a t:town.n.01 ;
+t00021:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00021.g1 a t:personnel.n.01 ;
-  :loc tomb:t00021.c1 ,
-       tomb:t00021.c2 .
+t00021:g1 a t:personnel.n.01 ;
+  :loc t00021:c1 ,
+       t00021:c2 .
 
-tomb:t00021.o1 a t:engineer.n.02 ;
+t00021:o1 a t:engineer.n.02 ;
   :hco "98320" ;
-  :org tomb:t00021.o2 .
+  :org t00021:o2 .
 
-tomb:t00021.o2 a t:company.n.01 ;
+t00021:o2 a t:company.n.01 ;
   :nam "NEDERLANDSE SPOORWEGEN" .
 
-tomb:t00021.p1 a t:person.n.01 ;
+t00021:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1869-12-12" ;
   :dod "1932-03-12" ;
   :nam "G. POSTMA" ;
-  :occ tomb:t00021.o1 ;
-  :rol tomb:t00021.r1 .
+  :occ t00021:o1 ;
+  :rol t00021:r1 .
 
-tomb:t00021.r1 a t:friend.n.01 ;
-  :tgt tomb:t00021.g1 .
+t00021:r1 a t:friend.n.01 ;
+  :tgt t00021:g1 .
 
-tomb:t00021.s1 a t:frond.n.01 ;
-  :att tomb:t00021.a1 .
+t00021:s1 a t:frond.n.01 ;
+  :att t00021:a1 .
 
-tomb:t00021.im1 a t:photo.n.01 ;
+t00021:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,29 +1,30 @@
+@prefix t00586: <https://noordergraf.rug.nl/tomb/t00586#> .
 
 tomb:t00586 a t:tombstone.n.01 ;
-  :image tomb:t00586.im1 ;
+  :image t00586:im1 ;
   :site site:gr9951STwinsum ;
-  :ent tomb:t00586.p1 ,
-       tomb:t00586.p2 ;
-  :sym tomb:t00586.s1 .
+  :ent t00586:p1 ,
+       t00586:p2 ;
+  :sym t00586:s1 .
 
-tomb:t00586.p1 a t:person.n.01 ;
+t00586:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1842-05-12" ;
   :dod "1912-02-11" ;
   :nam "JANTJE TEN HOORN" ;
-  :rol tomb:t00586.r1 .
+  :rol t00586:r1 .
 
-tomb:t00586.p2 a t:person.n.01 ;
+t00586:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "J. TIMMER" .
 
-tomb:t00586.r1 a t:widow.n.01 ;
+t00586:r1 a t:widow.n.01 ;
   :beg "12-06-1929" ;
-  :tgt tomb:t00586.p2 .
+  :tgt t00586:p2 .
 
-tomb:t00586.s1 a t:frond.n.01 .
+t00586:s1 a t:frond.n.01 .
 
-tomb:t00586.im1 a t:photo.n.01 ;
+t00586:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

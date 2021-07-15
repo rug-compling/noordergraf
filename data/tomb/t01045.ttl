@@ -1,39 +1,40 @@
+@prefix t01045: <https://noordergraf.rug.nl/tomb/t01045#> .
 
 tomb:t01045 a t:tombstone.n.01 ;
-  :image tomb:t01045.im1 ;
+  :image t01045:im1 ;
   :site site:gr9751XCharen ;
-  :ent tomb:t01045.g1 ,
-       tomb:t01045.p1 ;
+  :ent t01045:g1 ,
+       t01045:p1 ;
   :lan "NLD" .
 
-tomb:t01045.g1 a t:group.n.01 ;
-  :mem tomb:t01045.p2 ;
-  :rol tomb:t01045.r1 .
+t01045:g1 a t:group.n.01 ;
+  :mem t01045:p2 ;
+  :rol t01045:r1 .
 
-tomb:t01045.p1 a t:person.n.01 ;
+t01045:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1921-11-04" ;
   :dod "1997-10-30" ;
   :nam "JAN JOBING" ;
-  :rol tomb:t01045.r2 ,
-       tomb:t01045.r3 ,
-       tomb:t01045.r4 .
+  :rol t01045:r2 ,
+       t01045:r3 ,
+       t01045:r4 .
 
-tomb:t01045.p2 a t:person.n.01 .
+t01045:p2 a t:person.n.01 .
 
-tomb:t01045.r1 a t:commemorator.n.01 ;
-  :tgt tomb:t01045.p1 .
+t01045:r1 a t:commemorator.n.01 ;
+  :tgt t01045:p1 .
 
-tomb:t01045.r2 a t:husband.n.01 ;
-  :tgt tomb:t01045.p2 .
+t01045:r2 a t:husband.n.01 ;
+  :tgt t01045:p2 .
 
-tomb:t01045.r3 a t:father.n.01 ;
-  :tgt tomb:t01045.g1 .
+t01045:r3 a t:father.n.01 ;
+  :tgt t01045:g1 .
 
-tomb:t01045.r4 a t:grandfather.n.01 ;
-  :tgt tomb:t01045.g1 .
+t01045:r4 a t:grandfather.n.01 ;
+  :tgt t01045:g1 .
 
-tomb:t01045.im1 a t:photo.n.01 ;
+t01045:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

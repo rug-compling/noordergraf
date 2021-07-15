@@ -1,57 +1,58 @@
+@prefix t00383: <https://noordergraf.rug.nl/tomb/t00383#> .
 
 tomb:t00383 a t:tombstone.n.01 ;
-  :image tomb:t00383.im1 ;
+  :image t00383:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00383.p1 ,
-       tomb:t00383.p2 ,
-       tomb:t00383.p3 ;
+  :ent t00383:p1 ,
+       t00383:p2 ,
+       t00383:p3 ;
   :ref "PSALM 92:14" ;
-  :sym tomb:t00383.s1 .
+  :sym t00383:s1 .
 
-tomb:t00383.c1 a t:village.n.02 ;
+t00383:c1 a t:village.n.02 ;
   :geo place:Gerkesklooster2755574 ;
   :place "GERKESKLOOSTER" .
 
-tomb:t00383.c2 a t:village.n.02 ;
+t00383:c2 a t:village.n.02 ;
   :geo place:Buitenpost2758131 ;
   :place "BUITENPOST" .
 
-tomb:t00383.p1 a t:person.n.01 ;
+t00383:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1870-06-05" ;
   :dod "1953-12-20" ;
   :nam "WOLTER DIJKSTRA" ;
-  :pob tomb:t00383.c1 ;
-  :pod tomb:t00383.c2 ;
-  :rol tomb:t00383.r1 ,
-       tomb:t00383.r2 .
+  :pob t00383:c1 ;
+  :pod t00383:c2 ;
+  :rol t00383:r1 ,
+       t00383:r2 .
 
-tomb:t00383.p2 a t:person.n.01 ;
+t00383:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "BERBER POST" .
 
-tomb:t00383.p3 a t:person.n.01 ;
+t00383:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "GEELTJE DE BOER" .
 
-tomb:t00383.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00383.p2 .
+t00383:r1 a t:spouse.n.01 ;
+  :tgt t00383:p2 .
 
-tomb:t00383.r2 a t:widower.n.01 ;
-  :tgt tomb:t00383.p3 .
+t00383:r2 a t:widower.n.01 ;
+  :tgt t00383:p3 .
 
-tomb:t00383.s1 a t:composite.n.01 ;
-  :prt tomb:t00383.s2 ,
-       tomb:t00383.s3 ,
-       tomb:t00383.s4 .
+t00383:s1 a t:composite.n.01 ;
+  :prt t00383:s2 ,
+       t00383:s3 ,
+       t00383:s4 .
 
-tomb:t00383.s2 a t:frond.n.01 .
+t00383:s2 a t:frond.n.01 .
 
-tomb:t00383.s3 a t:frond.n.01 .
+t00383:s3 a t:frond.n.01 .
 
-tomb:t00383.s4 a t:ribbon.n.01 .
+t00383:s4 a t:ribbon.n.01 .
 
-tomb:t00383.im1 a t:photo.n.01 ;
+t00383:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

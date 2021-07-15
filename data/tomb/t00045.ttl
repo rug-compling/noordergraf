@@ -1,16 +1,17 @@
+@prefix t00045: <https://noordergraf.rug.nl/tomb/t00045#> .
 
 tomb:t00045 a t:tombstone.n.01 ;
-  :image tomb:t00045.im1 ;
+  :image t00045:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00045.p1 .
+  :ent t00045:p1 .
 
-tomb:t00045.p1 a t:person.n.01 ;
+t00045:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1923-12-12" ;
   :dod "1924-07-20" ;
   :nam "ROELOF LUURD JURRIAAN COOLMAN" .
 
-tomb:t00045.im1 a t:photo.n.01 ;
+t00045:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

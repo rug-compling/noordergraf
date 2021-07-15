@@ -1,37 +1,38 @@
+@prefix t00406: <https://noordergraf.rug.nl/tomb/t00406#> .
 
 tomb:t00406 a t:tombstone.n.01 ;
-  :image tomb:t00406.im1 ;
+  :image t00406:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00406.p1 ,
-       tomb:t00406.p2 ;
+  :ent t00406:p1 ,
+       t00406:p2 ;
   :quo "HAAR VRIENDLIJK OOGEN ZIJN GESLOTEN, \\ GESTREDEN IS HAAR LAATSTE STRIJD, \\ VOORBIJ AL WAT WIJ ZAAM GENOTEN! \\ HAAR PLAATS IS LEDIG VOOR ALTIJD." .
 
-tomb:t00406.c1 a t:village.n.02 ;
+t00406:c1 a t:village.n.02 ;
   :geo place:Surhuisterveen2746558 ;
   :place "SURHUISTERVEEN" .
 
-tomb:t00406.c2 a t:village.n.02 ;
+t00406:c2 a t:village.n.02 ;
   :geo place:Buitenpost2758131 ;
   :place "BUITENPOST" .
 
-tomb:t00406.p1 a t:person.n.01 ;
+t00406:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1820-06-23" ;
   :dod "1989-10-26" ;
   :nam "LIESBETH JANS DE MEER" ;
-  :pob tomb:t00406.c1 ;
-  :pod tomb:t00406.c2 ;
-  :rol tomb:t00406.r1 .
+  :pob t00406:c1 ;
+  :pod t00406:c2 ;
+  :rol t00406:r1 .
 
-tomb:t00406.p2 a t:person.n.01 ;
+t00406:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "MINNE W. VEENSTRA" .
 
-tomb:t00406.r1 a t:spouse.n.01 ;
+t00406:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00406.p2 .
+  :tgt t00406:p2 .
 
-tomb:t00406.im1 a t:photo.n.01 ;
+t00406:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

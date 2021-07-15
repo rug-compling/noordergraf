@@ -1,26 +1,27 @@
+@prefix t00114: <https://noordergraf.rug.nl/tomb/t00114#> .
 
 tomb:t00114 a t:tombstone.n.01 ;
-  :image tomb:t00114.im1 ;
+  :image t00114:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00114.p1 .
+  :ent t00114:p1 .
 
-tomb:t00114.c1 a t:town.n.01 ;
+t00114:c1 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00114.p1 a t:person.n.01 ;
+t00114:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1891-05-30" ;
   :dod "1960-12-15" ;
   :nam "AALTJE OOSTERVELD" ;
-  :pob tomb:t00114.c1 ;
-  :pod tomb:t00114.c1 ;
-  :rol tomb:t00114.r1 .
+  :pob t00114:c1 ;
+  :pod t00114:c1 ;
+  :rol t00114:r1 .
 
-tomb:t00114.r1 a t:sister.n.01 ;
+t00114:r1 a t:sister.n.01 ;
   :att "LIEVE" .
 
-tomb:t00114.im1 a t:photo.n.01 ;
+t00114:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

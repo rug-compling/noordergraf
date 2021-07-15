@@ -1,48 +1,49 @@
+@prefix t00681: <https://noordergraf.rug.nl/tomb/t00681#> .
 
 tomb:t00681 a t:tombstone.n.01 ;
-  :image tomb:t00681.im1 ;
+  :image t00681:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00681.g1 ,
-       tomb:t00681.p1 ,
-       tomb:t00681.p2 ,
-       tomb:t00681.p3 ;
+  :ent t00681:g1 ,
+       t00681:p1 ,
+       t00681:p2 ,
+       t00681:p3 ;
   :quo "RUST IN VREDE"@nld .
 
-tomb:t00681.g1 a t:group.n.01 ;
+t00681:g1 a t:group.n.01 ;
   :att "DIEPBEDROEFE" ;
-  :rol tomb:t00681.r4 .
+  :rol t00681:r4 .
 
-tomb:t00681.p1 a t:person.n.01 ;
+t00681:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1901-11-02" ;
   :dod "1942-06-01" ;
   :nam "GRIETJE KUIPER" ;
-  :rol tomb:t00681.r1 ,
-       tomb:t00681.r2 ,
-       tomb:t00681.r3 .
+  :rol t00681:r1 ,
+       t00681:r2 ,
+       t00681:r3 .
 
-tomb:t00681.p2 a t:person.n.01 ;
+t00681:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :att "DIEPBEDROEFDE" ;
   :nam "P. RIJPMA" .
 
-tomb:t00681.p3 a t:family.n.04 ;
+t00681:p3 a t:family.n.04 ;
   :nam "R. KUIPER" .
 
-tomb:t00681.r1 a t:husband.n.01 ;
+t00681:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00681.p2 .
+  :tgt t00681:p2 .
 
-tomb:t00681.r2 a t:mother.n.01 ;
-  :tgt tomb:t00681.g1 .
+t00681:r2 a t:mother.n.01 ;
+  :tgt t00681:g1 .
 
-tomb:t00681.r3 a t:daughter.n.01 ;
-  :tgt tomb:t00681.p3 .
+t00681:r3 a t:daughter.n.01 ;
+  :tgt t00681:p3 .
 
-tomb:t00681.r4 a t:child.n.02 ;
-  :tgt tomb:t00681.p1 .
+t00681:r4 a t:child.n.02 ;
+  :tgt t00681:p1 .
 
-tomb:t00681.im1 a t:photo.n.01 ;
+t00681:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

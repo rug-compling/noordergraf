@@ -1,40 +1,41 @@
+@prefix t00521: <https://noordergraf.rug.nl/tomb/t00521#> .
 
 tomb:t00521 a t:tombstone.n.01 ;
-  :image tomb:t00521.im1 ;
+  :image t00521:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00521.p1 ;
+  :ent t00521:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00521.s1 .
+  :sym t00521:s1 .
 
-tomb:t00521.p1 a t:person.n.01 ;
+t00521:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1922-06-06" ;
   :dod "2012-11-14" ;
   :nam "AMAT" ,
        "KLAAS ELLI ISMAIL" ;
-  :rol tomb:t00521.r1 ,
-       tomb:t00521.r2 ,
-       tomb:t00521.r3 ,
-       tomb:t00521.r4 .
+  :rol t00521:r1 ,
+       t00521:r2 ,
+       t00521:r3 ,
+       t00521:r4 .
 
-tomb:t00521.r1 a t:husband.n.01 ;
+t00521:r1 a t:husband.n.01 ;
   :att "LIEVE" .
 
-tomb:t00521.r2 a t:father.n.01 .
+t00521:r2 a t:father.n.01 .
 
-tomb:t00521.r3 a t:grandfather.n.01 .
+t00521:r3 a t:grandfather.n.01 .
 
-tomb:t00521.r4 a t:great_grandfather.n.01 .
+t00521:r4 a t:great_grandfather.n.01 .
 
-tomb:t00521.s1 a t:composite.n.01 ;
-  :prt tomb:t00521.s2 ,
-       tomb:t00521.s3 .
+t00521:s1 a t:composite.n.01 ;
+  :prt t00521:s2 ,
+       t00521:s3 .
 
-tomb:t00521.s2 a t:crescent.n.01 .
+t00521:s2 a t:crescent.n.01 .
 
-tomb:t00521.s3 a t:star.n.01 .
+t00521:s3 a t:star.n.01 .
 
-tomb:t00521.im1 a t:photo.n.01 ;
+t00521:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

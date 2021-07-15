@@ -1,48 +1,49 @@
+@prefix t00793: <https://noordergraf.rug.nl/tomb/t00793#> .
 
 tomb:t00793 a t:tombstone.n.01 ;
-  :image tomb:t00793.im1 ;
+  :image t00793:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00793.p1 ,
-       tomb:t00793.p2 ;
+  :ent t00793:p1 ,
+       t00793:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00793.s1 ,
-       tomb:t00793.s2 ,
-       tomb:t00793.s3 ,
-       tomb:t00793.s4 .
+  :sym t00793:s1 ,
+       t00793:s2 ,
+       t00793:s3 ,
+       t00793:s4 .
 
-tomb:t00793.c1 a t:village.n.02 ;
+t00793:c1 a t:village.n.02 ;
   :geo place:Schildwolde2747570 ;
   :place "SCHILDWOLDE" .
 
-tomb:t00793.c2 a t:village.n.02 ;
+t00793:c2 a t:village.n.02 ;
   :geo place:TenBoer2746491 ;
   :place "TEN BOER" .
 
-tomb:t00793.p1 a t:person.n.01 ;
+t00793:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1840-02-08" ;
   :dod "1896-02-18" ;
   :nam "HOMMO HUISMAN" ;
-  :pob tomb:t00793.c1 ;
-  :pod tomb:t00793.c2 ;
-  :rol tomb:t00793.r1 .
+  :pob t00793:c1 ;
+  :pod t00793:c2 ;
+  :rol t00793:r1 .
 
-tomb:t00793.p2 a t:person.n.01 ;
+t00793:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "F. DOORNBOS" .
 
-tomb:t00793.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00793.p2 .
+t00793:r1 a t:spouse.n.01 ;
+  :tgt t00793:p2 .
 
-tomb:t00793.s1 a t:butterfly.n.01 .
+t00793:s1 a t:butterfly.n.01 .
 
-tomb:t00793.s2 a t:frond.n.01 .
+t00793:s2 a t:frond.n.01 .
 
-tomb:t00793.s3 a t:frond.n.01 .
+t00793:s3 a t:frond.n.01 .
 
-tomb:t00793.s4 a t:ribbon.n.01 .
+t00793:s4 a t:ribbon.n.01 .
 
-tomb:t00793.im1 a t:photo.n.01 ;
+t00793:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

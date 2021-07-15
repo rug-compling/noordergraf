@@ -1,42 +1,43 @@
+@prefix t00464: <https://noordergraf.rug.nl/tomb/t00464#> .
 
 tomb:t00464 a t:tombstone.n.01 ;
-  :image tomb:t00464.im1 ;
+  :image t00464:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00464.p1 ,
-       tomb:t00464.p2 ;
+  :ent t00464:p1 ,
+       t00464:p2 ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :sym tomb:t00464.s1 .
+  :sym t00464:s1 .
 
-tomb:t00464.p1 a t:person.n.01 ;
+t00464:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1895-07-01" ;
   :dod "1967-05-03" ;
   :nam "THEODORUS J. HOUKES" ;
-  :rol tomb:t00464.r1 ,
-       tomb:t00464.r2 ,
-       tomb:t00464.r3 ,
-       tomb:t00464.r4 .
+  :rol t00464:r1 ,
+       t00464:r2 ,
+       t00464:r3 ,
+       t00464:r4 .
 
-tomb:t00464.p2 a t:person.n.01 ;
+t00464:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1899-01-01" ;
   :dod "1998-03-26" ;
   :nam "TRIJNTJE RADERSMA" .
 
-tomb:t00464.r1 a t:husband.n.01 ;
+t00464:r1 a t:husband.n.01 ;
   :att "ONVERGETELIJKE" ;
-  :tgt tomb:t00464.p2 .
+  :tgt t00464:p2 .
 
-tomb:t00464.r2 a t:father.n.01 .
+t00464:r2 a t:father.n.01 .
 
-tomb:t00464.r3 a t:grandfather.n.01 .
+t00464:r3 a t:grandfather.n.01 .
 
-tomb:t00464.r4 a t:spouse.n.01 ;
-  :tgt tomb:t00464.p2 .
+t00464:r4 a t:spouse.n.01 ;
+  :tgt t00464:p2 .
 
-tomb:t00464.s1 a t:cross.n.03 .
+t00464:s1 a t:cross.n.03 .
 
-tomb:t00464.im1 a t:photo.n.01 ;
+t00464:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

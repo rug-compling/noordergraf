@@ -1,42 +1,43 @@
+@prefix t01104: <https://noordergraf.rug.nl/tomb/t01104#> .
 
 tomb:t01104 a t:tombstone.n.01 ;
-  :ent tomb:t01104.p1 ,
-       tomb:t01104.p2 ;
+  :ent t01104:p1 ,
+       t01104:p2 ;
   :lan "NLD" .
 
-tomb:t01104.c1 a t:village.n.02 ;
+t01104:c1 a t:village.n.02 ;
   :geo place:Oranjewoud2749251 ;
   :place "ORANJEWOUD" .
 
-tomb:t01104.c2 a t:village.n.02 ;
+t01104:c2 a t:village.n.02 ;
   :geo place:Borculo2758626 ;
   :place "BORCULO" .
 
-tomb:t01104.c3 a t:village.n.02 ;
+t01104:c3 a t:village.n.02 ;
   :geo place:Gorredijk2755429 ;
   :place "GORREDIJK" .
 
-tomb:t01104.o1 a t:doctor.n.01 ;
+t01104:o1 a t:doctor.n.01 ;
   :hco "06105" .
 
-tomb:t01104.o2 a t:doctor.n.01 ;
+t01104:o2 a t:doctor.n.01 ;
   :hco "06105" .
 
-tomb:t01104.p1 a t:person.n.01 ;
+t01104:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1862-04-28" ;
   :dod "1939-09-07" ;
   :nam "SIES BRANDSMA" ;
-  :occ tomb:t01104.o1 ;
-  :pob tomb:t01104.c1 ;
-  :pod tomb:t01104.c2 .
+  :occ t01104:o1 ;
+  :pob t01104:c1 ;
+  :pod t01104:c2 .
 
-tomb:t01104.p2 a t:person.n.01 ;
+t01104:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1877-05-13" ;
   :dod "1956-07-04" ;
   :nam "GRIETJE ALINGH BRANDSMA-ZWART" ;
-  :occ tomb:t01104.o2 ;
-  :pob tomb:t01104.c3 ;
-  :pod tomb:t01104.c2 .
+  :occ t01104:o2 ;
+  :pob t01104:c3 ;
+  :pod t01104:c2 .
 

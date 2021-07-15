@@ -1,46 +1,47 @@
+@prefix t00896: <https://noordergraf.rug.nl/tomb/t00896#> .
 
 tomb:t00896 a t:tombstone.n.01 ;
-  :image tomb:t00896.im1 ;
+  :image t00896:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00896.p1 ,
-       tomb:t00896.p2 ;
+  :ent t00896:p1 ,
+       t00896:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00896.s1 ,
-       tomb:t00896.s2 ,
-       tomb:t00896.s3 .
+  :sym t00896:s1 ,
+       t00896:s2 ,
+       t00896:s3 .
 
-tomb:t00896.c1 a t:village.n.02 ;
+t00896:c1 a t:village.n.02 ;
   :geo place:Niezijl2750110 ;
   :place "NIEZIJL" .
 
-tomb:t00896.c2 a t:village.n.02 ;
+t00896:c2 a t:village.n.02 ;
   :geo place:Leek2751834 ;
   :place "LEEK" .
 
-tomb:t00896.p1 a t:person.n.01 ;
+t00896:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1799-03-04" ;
   :dod "1885-03-22" ;
   :nam "SARA DOEDES POL" ;
-  :pob tomb:t00896.c1 ;
-  :pod tomb:t00896.c2 ;
-  :rol tomb:t00896.r1 .
+  :pob t00896:c1 ;
+  :pod t00896:c2 ;
+  :rol t00896:r1 .
 
-tomb:t00896.p2 a t:person.n.01 ;
+t00896:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JOHANNES HENRICUS LEURINGH" ;
   :ttl "WELEDELE HEER" .
 
-tomb:t00896.r1 a t:widow.n.01 ;
-  :tgt tomb:t00896.p2 .
+t00896:r1 a t:widow.n.01 ;
+  :tgt t00896:p2 .
 
-tomb:t00896.s1 a t:butterfly.n.01 .
+t00896:s1 a t:butterfly.n.01 .
 
-tomb:t00896.s2 a t:oak.n.01 .
+t00896:s2 a t:oak.n.01 .
 
-tomb:t00896.s3 a t:frond.n.01 .
+t00896:s3 a t:frond.n.01 .
 
-tomb:t00896.im1 a t:photo.n.01 ;
+t00896:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

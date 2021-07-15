@@ -1,35 +1,36 @@
+@prefix t00945: <https://noordergraf.rug.nl/tomb/t00945#> .
 
 tomb:t00945 a t:tombstone.n.01 ;
-  :image tomb:t00945.im1 ;
+  :image t00945:im1 ;
   :site site:gr9696XGoudeschans ;
-  :ent tomb:t00945.p1 ,
-       tomb:t00945.p2 ;
+  :ent t00945:p1 ,
+       t00945:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00945.s1 ,
-       tomb:t00945.s2 .
+  :sym t00945:s1 ,
+       t00945:s2 .
 
-tomb:t00945.a1 a t:weeping.a.02 .
+t00945:a1 a t:weeping.a.02 .
 
-tomb:t00945.p1 a t:person.n.01 ;
+t00945:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1810-04-30" ;
   :dod "1895-01-20" ;
   :nam "ROELFIEN WOLTERS" ;
-  :rol tomb:t00945.r1 .
+  :rol t00945:r1 .
 
-tomb:t00945.p2 a t:person.n.01 ;
+t00945:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "FREERK NIEZEN" .
 
-tomb:t00945.r1 a t:widow.n.01 ;
-  :tgt tomb:t00945.p2 .
+t00945:r1 a t:widow.n.01 ;
+  :tgt t00945:p2 .
 
-tomb:t00945.s1 a t:willow.n.01 ;
-  :att tomb:t00945.a1 .
+t00945:s1 a t:willow.n.01 ;
+  :att t00945:a1 .
 
-tomb:t00945.s2 a t:column.n.01 .
+t00945:s2 a t:column.n.01 .
 
-tomb:t00945.im1 a t:photo.n.01 ;
+t00945:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

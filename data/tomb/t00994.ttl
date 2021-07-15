@@ -1,38 +1,39 @@
+@prefix t00994: <https://noordergraf.rug.nl/tomb/t00994#> .
 
 tomb:t00994 a t:tombstone.n.01 ;
-  :image tomb:t00994.im1 ;
+  :image t00994:im1 ;
   :site site:gr9686RSbeerta ;
-  :ent tomb:t00994.p1 ,
-       tomb:t00994.p2 ;
+  :ent t00994:p1 ,
+       t00994:p2 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
-  :sym tomb:t00994.s1 .
+  :sym t00994:s1 .
 
-tomb:t00994.a1 a t:weeping.a.02 .
+t00994:a1 a t:weeping.a.02 .
 
-tomb:t00994.p1 a t:person.n.01 ;
+t00994:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1842-11-10" ;
   :dod "1922-04-07" ;
   :nam "HARMKE REIT" ;
-  :rol tomb:t00994.r1 ,
-       tomb:t00994.r2 .
+  :rol t00994:r1 ,
+       t00994:r2 .
 
-tomb:t00994.p2 a t:person.n.01 ;
+t00994:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1872-03-17" ;
   :dod "1963-11-28" ;
   :nam "HENDRIK KLAASSENS" .
 
-tomb:t00994.r1 a t:widow.n.01 ;
+t00994:r1 a t:widow.n.01 ;
   :beg "XX-XX-1886" ;
-  :tgt tomb:t00994.p2 .
+  :tgt t00994:p2 .
 
-tomb:t00994.r2 a t:mother.n.01 .
+t00994:r2 a t:mother.n.01 .
 
-tomb:t00994.s1 a t:willow.n.01 ;
-  :att tomb:t00994.a1 .
+t00994:s1 a t:willow.n.01 ;
+  :att t00994:a1 .
 
-tomb:t00994.im1 a t:photo.n.01 ;
+t00994:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

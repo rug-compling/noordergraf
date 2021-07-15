@@ -1,54 +1,55 @@
+@prefix t00799: <https://noordergraf.rug.nl/tomb/t00799#> .
 
 tomb:t00799 a t:tombstone.n.01 ;
-  :image tomb:t00799.im1 ;
+  :image t00799:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00799.p1 ,
-       tomb:t00799.p2 ;
+  :ent t00799:p1 ,
+       t00799:p2 ;
   :quo "DEN VADERLANT \\ GHETROUWE BLIJK ICK \\ TOT IN DEN DOET!"@nld ;
-  :ref tomb:t00799.v1 ;
-  :sym tomb:t00799.s1 .
+  :ref t00799:v1 ;
+  :sym t00799:s1 .
 
-tomb:t00799.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00799.c3 .
+t00799:b1 a t:Revelation.n.04 ;
+  :prt t00799:c3 .
 
-tomb:t00799.c1 a t:village.n.02 ;
+t00799:c1 a t:village.n.02 ;
   :geo place:TenBoer2746491 ;
   :place "TEN BOER" .
 
-tomb:t00799.c2 a t:city.n.01 ;
+t00799:c2 a t:city.n.01 ;
   :geo place:Appingedam2759687 ;
   :place "APPINGEDAM" .
 
-tomb:t00799.c3 a t:chapter.n.01 ;
+t00799:c3 a t:chapter.n.01 ;
   :ord 2 ;
-  :prt tomb:t00799.v2 .
+  :prt t00799:v2 .
 
-tomb:t00799.p1 a t:person.n.01 ;
+t00799:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1907-10-31" ;
   :dod "1944-09-22" ;
   :nam "A.K. DIJKEMA" ;
-  :pob tomb:t00799.c1 ;
-  :pod tomb:t00799.c2 ;
-  :rol tomb:t00799.r1 .
+  :pob t00799:c1 ;
+  :pod t00799:c2 ;
+  :rol t00799:r1 .
 
-tomb:t00799.p2 a t:person.n.01 ;
+t00799:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "P.H. WIERENGA" .
 
-tomb:t00799.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00799.p2 .
+t00799:r1 a t:spouse.n.01 ;
+  :tgt t00799:p2 .
 
-tomb:t00799.s1 a t:rose.n.01 .
+t00799:s1 a t:rose.n.01 .
 
-tomb:t00799.v1 a t:part.n.09 ;
+t00799:v1 a t:part.n.09 ;
   :nam "B" .
 
-tomb:t00799.v2 a t:verse.n.01 ;
+t00799:v2 a t:verse.n.01 ;
   :ord 10 ;
-  :prt tomb:t00799.v1 .
+  :prt t00799:v1 .
 
-tomb:t00799.im1 a t:photo.n.01 ;
+t00799:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

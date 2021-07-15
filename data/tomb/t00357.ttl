@@ -1,43 +1,44 @@
+@prefix t00357: <https://noordergraf.rug.nl/tomb/t00357#> .
 
 tomb:t00357 a t:tombstone.n.01 ;
-  :image tomb:t00357.im1 ;
+  :image t00357:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00357.p1 ,
-       tomb:t00357.p2 ;
+  :ent t00357:p1 ,
+       t00357:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym tomb:t00357.s1 .
+  :sym t00357:s1 .
 
-tomb:t00357.c1 a t:village.n.02 ;
+t00357:c1 a t:village.n.02 ;
   :geo place:Bunne2758108 ;
   :place "BUNNE" .
 
-tomb:t00357.c2 a t:village.n.02 ;
+t00357:c2 a t:village.n.02 ;
   :geo place:Donderen2756731 ;
   :place "DONDEREN" .
 
-tomb:t00357.c3 a t:city.n.01 ;
+t00357:c3 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00357.p1 a t:person.n.01 ;
+t00357:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1885-05-09" ;
   :dod "1934-10-05" ;
   :nam "GEERT ABRAHAMS" ;
-  :pob tomb:t00357.c1 ;
-  :pod tomb:t00357.c1 .
+  :pob t00357:c1 ;
+  :pod t00357:c1 .
 
-tomb:t00357.p2 a t:person.n.01 ;
+t00357:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1884-11-22" ;
   :dod "1957-11-13" ;
   :nam "JANTIEN ENTING" ;
-  :pob tomb:t00357.c2 ;
-  :pod tomb:t00357.c3 .
+  :pob t00357:c2 ;
+  :pod t00357:c3 .
 
-tomb:t00357.s1 a t:butterfly.n.01 .
+t00357:s1 a t:butterfly.n.01 .
 
-tomb:t00357.im1 a t:photo.n.01 ;
+t00357:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

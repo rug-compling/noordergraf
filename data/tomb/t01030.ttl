@@ -1,50 +1,51 @@
+@prefix t01030: <https://noordergraf.rug.nl/tomb/t01030#> .
 
 tomb:t01030 a t:tombstone.n.01 ;
-  :image tomb:t01030.im1 ;
+  :image t01030:im1 ;
   :site site:gr9804TEnoordhorn ;
-  :ent tomb:t01030.p1 ,
-       tomb:t01030.p2 ,
-       tomb:t01030.p3 ;
+  :ent t01030:p1 ,
+       t01030:p2 ,
+       t01030:p3 ;
   :quo "RUST IN VREDE"@nld .
 
-tomb:t01030.c1 a t:village.n.02 ;
+t01030:c1 a t:village.n.02 ;
   :geo place:Onderdendam2749601 ;
   :place "ONDERDENDAM" .
 
-tomb:t01030.c2 a t:village.n.02 ;
+t01030:c2 a t:village.n.02 ;
   :geo place:Noordhorn2749875 ;
   :place "NOORDHORN" .
 
-tomb:t01030.c3 a t:village.n.02 ;
+t01030:c3 a t:village.n.02 ;
   :geo place:Garsthuizen2755720 ;
   :place "GARSTHUIZEN" .
 
-tomb:t01030.p1 a t:person.n.01 ;
+t01030:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1822-09-22" ;
   :dod "1896-06-27" ;
   :nam "SUFFRIDA SIBERDINA SLIJPER" ;
-  :pob tomb:t01030.c1 ;
-  :pod tomb:t01030.c2 ;
-  :rol tomb:t01030.r1 .
+  :pob t01030:c1 ;
+  :pod t01030:c2 ;
+  :rol t01030:r1 .
 
-tomb:t01030.p2 a t:person.n.01 ;
+t01030:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "EIJE J. BEUKEMA" .
 
-tomb:t01030.p3 a t:person.n.01 ;
+t01030:p3 a t:person.n.01 ;
   :nam "BEUKEMA" ;
-  :occ tomb:t01030.r2 .
+  :occ t01030:r2 .
 
-tomb:t01030.r1 a t:widow.n.01 ;
+t01030:r1 a t:widow.n.01 ;
   :beg "XX-XX-1853" ;
-  :tgt tomb:t01030.p2 .
+  :tgt t01030:p2 .
 
-tomb:t01030.r2 a t:designer.n.01 ;
-  :loc tomb:t01030.c3 ;
+t01030:r2 a t:designer.n.01 ;
+  :loc t01030:c3 ;
   :tgt tomb:t01030 .
 
-tomb:t01030.im1 a t:photo.n.01 ;
+t01030:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

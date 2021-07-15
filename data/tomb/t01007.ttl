@@ -1,48 +1,49 @@
+@prefix t01007: <https://noordergraf.rug.nl/tomb/t01007#> .
 
 tomb:t01007 a t:tombstone.n.01 ;
-  :image tomb:t01007.im1 ;
+  :image t01007:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t01007.g1 ,
-       tomb:t01007.g2 ,
-       tomb:t01007.p1 ,
-       tomb:t01007.p2 ,
-       tomb:t01007.p3 ;
+  :ent t01007:g1 ,
+       t01007:g2 ,
+       t01007:p1 ,
+       t01007:p2 ,
+       t01007:p3 ;
   :lan "NLD" ;
-  :sym tomb:t01007.s1 ,
-       tomb:t01007.s2 ,
-       tomb:t01007.s3 .
+  :sym t01007:s1 ,
+       t01007:s2 ,
+       t01007:s3 .
 
-tomb:t01007.g1 a t:group.n.01 ;
-  :mem tomb:t01007.p2 ,
-       tomb:t01007.p3 .
+t01007:g1 a t:group.n.01 ;
+  :mem t01007:p2 ,
+       t01007:p3 .
 
-tomb:t01007.g2 a t:group.n.01 ;
-  :rol tomb:t01007.r1 .
+t01007:g2 a t:group.n.01 ;
+  :rol t01007:r1 .
 
-tomb:t01007.p1 a t:person.n.01 ;
+t01007:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1911-02-16" ;
   :dod "1918-12-23" ;
   :nam "PIETER AMDRIES HEKSTRA" .
 
-tomb:t01007.p2 a t:person.n.01 ;
+t01007:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "S. HEKSTRA" .
 
-tomb:t01007.p3 a t:person.n.01 ;
+t01007:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "S. HEKSTRA-BAKKER" .
 
-tomb:t01007.r1 a t:child.n.02 ;
-  :tgt tomb:t01007.g1 .
+t01007:r1 a t:child.n.02 ;
+  :tgt t01007:g1 .
 
-tomb:t01007.s1 a t:frond.n.01 .
+t01007:s1 a t:frond.n.01 .
 
-tomb:t01007.s2 a t:frond.n.01 .
+t01007:s2 a t:frond.n.01 .
 
-tomb:t01007.s3 a t:ribbon.n.01 .
+t01007:s3 a t:ribbon.n.01 .
 
-tomb:t01007.im1 a t:photo.n.01 ;
+t01007:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

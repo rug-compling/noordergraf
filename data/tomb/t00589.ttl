@@ -1,32 +1,33 @@
+@prefix t00589: <https://noordergraf.rug.nl/tomb/t00589#> .
 
 tomb:t00589 a t:tombstone.n.01 ;
-  :image tomb:t00589.im1 ;
+  :image t00589:im1 ;
   :site site:gr9951TNwinsum ;
-  :ent tomb:t00589.p1 ,
-       tomb:t00589.p2 .
+  :ent t00589:p1 ,
+       t00589:p2 .
 
-tomb:t00589.c1 a t:village.n.02 ;
+t00589:c1 a t:village.n.02 ;
   :geo place:Winsum2744337 ;
   :place "WINSUM" .
 
-tomb:t00589.p1 a t:person.n.01 ;
+t00589:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-02-26" ;
   :dod "1965-04-09" ;
   :nam "BRUIN BRUINS" ;
-  :pob tomb:t00589.c1 ;
-  :pod tomb:t00589.c1 ;
-  :rol tomb:t00589.r1 ;
+  :pob t00589:c1 ;
+  :pod t00589:c1 ;
+  :rol t00589:r1 ;
   :sfx "B.ZOON" .
 
-tomb:t00589.p2 a t:person.n.01 ;
+t00589:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "MARTINA PETRONELLA DE BOER" .
 
-tomb:t00589.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00589.p2 .
+t00589:r1 a t:spouse.n.01 ;
+  :tgt t00589:p2 .
 
-tomb:t00589.im1 a t:photo.n.01 ;
+t00589:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

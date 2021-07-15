@@ -1,44 +1,45 @@
+@prefix t00907: <https://noordergraf.rug.nl/tomb/t00907#> .
 
 tomb:t00907 a t:tombstone.n.01 ;
-  :image tomb:t00907.im1 ;
+  :image t00907:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00907.p1 ,
-       tomb:t00907.p2 ;
+  :ent t00907:p1 ,
+       t00907:p2 ;
   :lan "NLD" ;
-  :ref tomb:t00907.v1 ;
-  :sym tomb:t00907.s1 .
+  :ref t00907:v1 ;
+  :sym t00907:s1 .
 
-tomb:t00907.a1 a t:weeping.a.02 .
+t00907:a1 a t:weeping.a.02 .
 
-tomb:t00907.b1 a t:Second_Epistle_to_the_Corinthians.n.01 ;
-  :prt tomb:t00907.c3 .
+t00907:b1 a t:Second_Epistle_to_the_Corinthians.n.01 ;
+  :prt t00907:c3 .
 
-tomb:t00907.c3 a t:chapter.n.01 ;
+t00907:c3 a t:chapter.n.01 ;
   :ord 5 ;
-  :prt tomb:t00907.v1 .
+  :prt t00907:v1 .
 
-tomb:t00907.p1 a t:person.n.01 ;
+t00907:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1880-11-06" ;
   :dod "1946-05-24" ;
   :nam "RINDERT VAN DER MOLEN" ;
-  :rol tomb:t00907.r1 .
+  :rol t00907:r1 .
 
-tomb:t00907.p2 a t:person.n.01 ;
+t00907:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "JANTJE DENKEMA" .
 
-tomb:t00907.r1 a t:spouse.n.01 ;
+t00907:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00907.p2 .
+  :tgt t00907:p2 .
 
-tomb:t00907.s1 a t:willow.n.01 ;
-  :att tomb:t00907.a1 .
+t00907:s1 a t:willow.n.01 ;
+  :att t00907:a1 .
 
-tomb:t00907.v1 a t:verse.n.01 ;
+t00907:v1 a t:verse.n.01 ;
   :ord 1 .
 
-tomb:t00907.im1 a t:photo.n.01 ;
+t00907:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

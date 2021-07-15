@@ -1,28 +1,29 @@
+@prefix t00844: <https://noordergraf.rug.nl/tomb/t00844#> .
 
 tomb:t00844 a t:tombstone.n.01 ;
-  :image tomb:t00844.im1 ;
+  :image t00844:im1 ;
   :site site:fr8899AWoost_vlieland ;
-  :ent tomb:t00844.p1 ;
+  :ent t00844:p1 ;
   :quo "RUST ZACHT HIL"@nld .
 
-tomb:t00844.p1 a t:person.n.01 ;
+t00844:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1901-07-22" ;
   :dod "1978-10-12" ;
   :nam "HIL" ,
        "HILTJE WELS" ;
-  :rol tomb:t00844.r1 ,
-       tomb:t00844.r2 ,
-       tomb:t00844.r3 .
+  :rol t00844:r1 ,
+       t00844:r2 ,
+       t00844:r3 .
 
-tomb:t00844.r1 a t:sister.n.01 ;
+t00844:r1 a t:sister.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00844.r2 a t:sister-in-law.n.01 .
+t00844:r2 a t:sister-in-law.n.01 .
 
-tomb:t00844.r3 a t:aunt.n.01 .
+t00844:r3 a t:aunt.n.01 .
 
-tomb:t00844.im1 a t:photo.n.01 ;
+t00844:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

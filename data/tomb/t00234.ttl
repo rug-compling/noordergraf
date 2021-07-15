@@ -1,26 +1,27 @@
+@prefix t00234: <https://noordergraf.rug.nl/tomb/t00234#> .
 
 tomb:t00234 a t:tombstone.n.01 ;
-  :image tomb:t00234.im1 ;
+  :image t00234:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00234.p1 ,
-       tomb:t00234.p2 ;
+  :ent t00234:p1 ,
+       t00234:p2 ;
   :quo "EEN TEERBEMINDE ZOON, EEN ECHTGENOOT EN VADER, GEROEPEN VOOR GODS TROON ..." .
 
-tomb:t00234.p1 a t:person.n.01 ;
+t00234:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1837-10-24" ;
   :dod "1875-05-01" ;
   :nam "LUITJE ABELS VAN DIJKEN" ;
-  :rol tomb:t00234.r1 .
+  :rol t00234:r1 .
 
-tomb:t00234.p2 a t:person.n.01 ;
+t00234:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "LAMMECHIEN P. WIGBOLDUS" .
 
-tomb:t00234.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00234.p2 .
+t00234:r1 a t:spouse.n.01 ;
+  :tgt t00234:p2 .
 
-tomb:t00234.im1 a t:photo.n.01 ;
+t00234:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

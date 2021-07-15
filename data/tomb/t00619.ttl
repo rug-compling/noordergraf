@@ -1,38 +1,39 @@
+@prefix t00619: <https://noordergraf.rug.nl/tomb/t00619#> .
 
 tomb:t00619 a t:tombstone.n.01 ;
-  :image tomb:t00619.im1 ;
+  :image t00619:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00619.p1 ,
-       tomb:t00619.p2 ;
+  :ent t00619:p1 ,
+       t00619:p2 ;
   :lan "NLD" .
 
-tomb:t00619.c1 a t:village.n.02 ;
+t00619:c1 a t:village.n.02 ;
   :geo place:Borgercompagnie2758618 ;
   :place "BORGERCOMPAGNIE" .
 
-tomb:t00619.c2 a t:village.n.02 ;
+t00619:c2 a t:village.n.02 ;
   :geo place:Zuidlaren2743680 ;
   :place "ZUIDLAREN" .
 
-tomb:t00619.c3 a t:village.n.02 ;
+t00619:c3 a t:village.n.02 ;
   :geo place:Glimmen2755495 ;
   :place "GLIMMEN" .
 
-tomb:t00619.p1 a t:person.n.01 ;
+t00619:p1 a t:person.n.01 ;
   :dob "1900-11-04" ;
   :dod "1993-01-08" ;
   :nam "J.W. MULDER" ;
-  :pob tomb:t00619.c1 ;
-  :pod tomb:t00619.c2 .
+  :pob t00619:c1 ;
+  :pod t00619:c2 .
 
-tomb:t00619.p2 a t:person.n.01 ;
+t00619:p2 a t:person.n.01 ;
   :dob "1903-07-26" ;
   :dod "2002-06-29" ;
   :nam "L. MULDER" ;
-  :pob tomb:t00619.c3 ;
-  :pod tomb:t00619.c2 .
+  :pob t00619:c3 ;
+  :pod t00619:c2 .
 
-tomb:t00619.im1 a t:photo.n.01 ;
+t00619:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

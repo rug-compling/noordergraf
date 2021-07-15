@@ -1,44 +1,45 @@
+@prefix t01042: <https://noordergraf.rug.nl/tomb/t01042#> .
 
 tomb:t01042 a t:tombstone.n.01 ;
-  :image tomb:t01042.im1 ;
+  :image t01042:im1 ;
   :site site:gr9804TEnoordhorn ;
-  :ent tomb:t01042.p1 ,
-       tomb:t01042.p2 ;
+  :ent t01042:p1 ,
+       t01042:p2 ;
   :lan "NLD" ;
-  :sym tomb:t01042.s1 ,
-       tomb:t01042.s2 ,
-       tomb:t01042.s3 .
+  :sym t01042:s1 ,
+       t01042:s2 ,
+       t01042:s3 .
 
-tomb:t01042.p1 a t:person.n.01 ;
+t01042:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1879-12-01" ;
   :dod "1953-11-16" ;
   :nam "GEESKE HELMANTEL" ;
   :ref "PSALM 23" ;
-  :rol tomb:t01042.r1 .
+  :rol t01042:r1 .
 
-tomb:t01042.p2 a t:person.n.01 ;
+t01042:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1879-05-25" ;
   :dod "1956-01-03" ;
   :nam "EDZO VAN DER VEEN" ;
   :ref "GEZANG 29" ;
-  :rol tomb:t01042.r2 .
+  :rol t01042:r2 .
 
-tomb:t01042.r1 a t:spouse.n.01 ;
+t01042:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t01042.p2 .
+  :tgt t01042:p2 .
 
-tomb:t01042.r2 a t:widower.n.01 ;
-  :tgt tomb:t01042.p1 .
+t01042:r2 a t:widower.n.01 ;
+  :tgt t01042:p1 .
 
-tomb:t01042.s1 a t:frond.n.01 .
+t01042:s1 a t:frond.n.01 .
 
-tomb:t01042.s2 a t:frond.n.01 .
+t01042:s2 a t:frond.n.01 .
 
-tomb:t01042.s3 a t:ribbon.n.01 .
+t01042:s3 a t:ribbon.n.01 .
 
-tomb:t01042.im1 a t:photo.n.01 ;
+t01042:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,21 +1,22 @@
+@prefix t01087: <https://noordergraf.rug.nl/tomb/t01087#> .
 
 tomb:t01087 a t:tombstone.n.01 ;
-  :image tomb:t01087.im1 ;
+  :image t01087:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t01087.p1 ,
-       tomb:t01087.p2 ;
+  :ent t01087:p1 ,
+       t01087:p2 ;
   :lan "NLD" .
 
-tomb:t01087.p1 a t:person.n.01 ;
+t01087:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "AAFJE ELISABETH WARNER" .
 
-tomb:t01087.p2 a t:person.n.01 ;
+t01087:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN DE VRIES" ;
   :sfx "JZN" .
 
-tomb:t01087.im1 a t:photo.n.01 ;
+t01087:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

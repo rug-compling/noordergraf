@@ -1,28 +1,29 @@
+@prefix t01039: <https://noordergraf.rug.nl/tomb/t01039#> .
 
 tomb:t01039 a t:tombstone.n.01 ;
-  :image tomb:t01039.im1 ;
+  :image t01039:im1 ;
   :site site:gr9801CAzuidhorn ;
-  :ent tomb:t01039.p1 ;
+  :ent t01039:p1 ;
   :lan "NLD" ;
-  :ref tomb:t01039.v1 .
+  :ref t01039:v1 .
 
-tomb:t01039.b1 a t:Revelation.n.04 ;
-  :prt tomb:t01039.c1 .
+t01039:b1 a t:Revelation.n.04 ;
+  :prt t01039:c1 .
 
-tomb:t01039.c1 a t:chapter.n.01 ;
+t01039:c1 a t:chapter.n.01 ;
   :ord 20 ;
-  :prt tomb:t01039.v1 .
+  :prt t01039:v1 .
 
-tomb:t01039.p1 a t:person.n.01 ;
+t01039:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1952-11-24" ;
   :dod "1970-09-24" ;
   :nam "FERDINAND JOHANNES VAN DIJKEN" .
 
-tomb:t01039.v1 a t:verse.n.01 ;
+t01039:v1 a t:verse.n.01 ;
   :ord 12 .
 
-tomb:t01039.im1 a t:photo.n.01 ;
+t01039:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

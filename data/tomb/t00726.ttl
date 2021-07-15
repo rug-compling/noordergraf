@@ -1,43 +1,44 @@
+@prefix t00726: <https://noordergraf.rug.nl/tomb/t00726#> .
 
 tomb:t00726 a t:tombstone.n.01 ;
-  :image tomb:t00726.im1 ;
+  :image t00726:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00726.p1 ,
-       tomb:t00726.p2 ;
+  :ent t00726:p1 ,
+       t00726:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00726.s1 .
+  :sym t00726:s1 .
 
-tomb:t00726.a1 a t:weeping.a.02 .
+t00726:a1 a t:weeping.a.02 .
 
-tomb:t00726.c1 a t:village.n.02 ;
+t00726:c1 a t:village.n.02 ;
   :geo place:Exloo2755947 ;
   :place "EXLOO" .
 
-tomb:t00726.c2 a t:village.n.02 ;
+t00726:c2 a t:village.n.02 ;
   :geo place:Weerdinge2744927 ;
   :place "WEERDINGE" .
 
-tomb:t00726.p1 a t:person.n.01 ;
+t00726:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1830-04-24" ;
   :dod "1893-10-20" ;
   :nam "JANTIEN WILTING" ;
-  :pob tomb:t00726.c1 ;
-  :pod tomb:t00726.c2 ;
-  :rol tomb:t00726.r1 .
+  :pob t00726:c1 ;
+  :pod t00726:c2 ;
+  :rol t00726:r1 .
 
-tomb:t00726.p2 a t:person.n.01 ;
+t00726:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN LIPMAN" ;
   :sfx "HZN" .
 
-tomb:t00726.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00726.p2 .
+t00726:r1 a t:spouse.n.01 ;
+  :tgt t00726:p2 .
 
-tomb:t00726.s1 a t:willow.n.01 ;
-  :att tomb:t00726.a1 .
+t00726:s1 a t:willow.n.01 ;
+  :att t00726:a1 .
 
-tomb:t00726.im1 a t:photo.n.01 ;
+t00726:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

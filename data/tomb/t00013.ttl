@@ -1,55 +1,56 @@
+@prefix t00013: <https://noordergraf.rug.nl/tomb/t00013#> .
 
 tomb:t00013 a t:tombstone.n.01 ;
-  :image tomb:t00013.im1 ;
+  :image t00013:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00013.p1 ,
-       tomb:t00013.p2 ,
-       tomb:t00013.p3 ;
-  :sym tomb:t00013.s1 .
+  :ent t00013:p1 ,
+       t00013:p2 ,
+       t00013:p3 ;
+  :sym t00013:s1 .
 
-tomb:t00013.c1 a t:village.n.02 ;
+t00013:c1 a t:village.n.02 ;
   :geo place:Garnwerd2755726 ;
   :place "GARNWERD" .
 
-tomb:t00013.c2 a t:city.n.01 ;
+t00013:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00013.c3 a t:village.n.02 ;
+t00013:c3 a t:village.n.02 ;
   :geo place:SintAnnen2747294 ;
   :place "SINT-ANNEN" .
 
-tomb:t00013.p1 a t:person.n.01 ;
+t00013:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1895-12-14" ;
   :dod "1931-06-10" ;
   :nam "ANJE SMIT" ;
-  :pob tomb:t00013.c1 ;
-  :pod tomb:t00013.c2 .
+  :pob t00013:c1 ;
+  :pod t00013:c2 .
 
-tomb:t00013.p2 a t:person.n.01 ;
+t00013:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1864-03-19" ;
   :dod "1936-05-11" ;
   :nam "HELENA REITSMA" ;
-  :pob tomb:t00013.c1 ;
-  :pod tomb:t00013.c2 ;
-  :rol tomb:t00013.r1 .
+  :pob t00013:c1 ;
+  :pod t00013:c2 ;
+  :rol t00013:r1 .
 
-tomb:t00013.p3 a t:person.n.01 ;
+t00013:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1862-11-11" ;
   :dod "1948-02-09" ;
   :nam "BALTUS SMIT" ;
-  :pob tomb:t00013.c3 ;
-  :pod tomb:t00013.c2 .
+  :pob t00013:c3 ;
+  :pod t00013:c2 .
 
-tomb:t00013.r1 a t:wife.n.01 ;
-  :tgt tomb:t00013.p3 .
+t00013:r1 a t:wife.n.01 ;
+  :tgt t00013:p3 .
 
-tomb:t00013.s1 a t:frond.n.01 .
+t00013:s1 a t:frond.n.01 .
 
-tomb:t00013.im1 a t:photo.n.01 ;
+t00013:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

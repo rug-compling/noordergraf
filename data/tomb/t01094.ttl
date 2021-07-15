@@ -1,44 +1,45 @@
+@prefix t01094: <https://noordergraf.rug.nl/tomb/t01094#> .
 
 tomb:t01094 a t:tombstone.n.01 ;
-  :image tomb:t01094.im1 ;
+  :image t01094:im1 ;
   :site site:gr9628TKsiddeburen ;
-  :ent tomb:t01094.p1 ,
-       tomb:t01094.p2 ;
+  :ent t01094:p1 ,
+       t01094:p2 ;
   :lan "NLD" .
 
-tomb:t01094.c1 a t:village.n.02 ;
+t01094:c1 a t:village.n.02 ;
   :geo place:Siddeburen2747343 ;
   :place "SIDDEBUREN" .
 
-tomb:t01094.c2 a t:hamlet.n.03 ;
+t01094:c2 a t:hamlet.n.03 ;
   :geo place:Wilderhof2744436 ;
   :place "WILDERHOF" .
 
-tomb:t01094.c3 a t:city.n.01 ;
+t01094:c3 a t:city.n.01 ;
   :geo place:Delfzijl2757340 ;
   :place "DELFZIJL" .
 
-tomb:t01094.p1 a t:person.n.01 ;
+t01094:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1898-08-04" ;
   :dod "1969-01-12" ;
   :nam "ELIEZABETH BOS" ;
-  :pob tomb:t01094.c1 ;
-  :pod tomb:t01094.c1 ;
-  :rol tomb:t01094.r1 .
+  :pob t01094:c1 ;
+  :pod t01094:c1 ;
+  :rol t01094:r1 .
 
-tomb:t01094.p2 a t:person.n.01 ;
+t01094:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1907-12-26" ;
   :dod "1970-01-21" ;
   :nam "GEERT DE WILDE" ;
-  :pob tomb:t01094.c2 ;
-  :pod tomb:t01094.c3 .
+  :pob t01094:c2 ;
+  :pod t01094:c3 .
 
-tomb:t01094.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01094.p2 .
+t01094:r1 a t:spouse.n.01 ;
+  :tgt t01094:p2 .
 
-tomb:t01094.im1 a t:photo.n.01 ;
+t01094:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,48 +1,49 @@
+@prefix t00990: <https://noordergraf.rug.nl/tomb/t00990#> .
 
 tomb:t00990 a t:tombstone.n.01 ;
-  :image tomb:t00990.im1 ;
+  :image t00990:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t00990.p1 ,
-       tomb:t00990.p2 ;
+  :ent t00990:p1 ,
+       t00990:p2 ;
   :lan "NLD" .
 
-tomb:t00990.c1 a t:village.n.02 ;
+t00990:c1 a t:village.n.02 ;
   :geo place:Harkstede2754819 ;
   :place "HARKSTEDE" .
 
-tomb:t00990.c2 a t:building.n.01 ;
+t00990:c2 a t:building.n.01 ;
   :nam "LEEUWENBURG" .
 
-tomb:t00990.c3 a t:more.r.01 ;
-  :op1 tomb:t00990.m1 ;
-  :op2 tomb:t00990.m2 .
+t00990:c3 a t:more.r.01 ;
+  :op1 t00990:m1 ;
+  :op2 t00990:m2 .
 
-tomb:t00990.m1 a t:measure.n.02 .
+t00990:m1 a t:measure.n.02 .
 
-tomb:t00990.m2 a t:measure.n.02 ;
-  :mem tomb:t00990.u1 ;
+t00990:m2 a t:measure.n.02 ;
+  :mem t00990:u1 ;
   :qua 51 .
 
-tomb:t00990.p1 a t:person.n.01 ;
+t00990:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1791-09-13" ;
   :dod "1865-06-25" ;
   :nam "TRIENTJE KORNELIS NIEBOER" ;
-  :pob tomb:t00990.c1 ;
-  :pod tomb:t00990.c2 ;
-  :rol tomb:t00990.r1 .
+  :pob t00990:c1 ;
+  :pod t00990:c2 ;
+  :rol t00990:r1 .
 
-tomb:t00990.p2 a t:person.n.01 ;
+t00990:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H.G. BOER" .
 
-tomb:t00990.r1 a t:wife.n.01 ;
-  :dur tomb:t00990.m1 ;
-  :tgt tomb:t00990.p2 .
+t00990:r1 a t:wife.n.01 ;
+  :dur t00990:m1 ;
+  :tgt t00990:p2 .
 
-tomb:t00990.u1 a t:year.n.01 .
+t00990:u1 a t:year.n.01 .
 
-tomb:t00990.im1 a t:photo.n.01 ;
+t00990:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,73 +1,74 @@
+@prefix t01086: <https://noordergraf.rug.nl/tomb/t01086#> .
 
 tomb:t01086 a t:tombstone.n.01 ;
-  :image tomb:t01086.im1 ;
+  :image t01086:im1 ;
   :site site:gr9798PDgarmerwolde ;
-  :ent tomb:t01086.p1 ;
+  :ent t01086:p1 ;
   :quo "ZALIG IS DER KIND'REN LOT VROEG GESTORVEN, VROEG BIJ GOD."@nld ;
-  :sym tomb:t01086.s1 ,
-       tomb:t01086.s3 .
+  :sym t01086:s1 ,
+       t01086:s3 .
 
-tomb:t01086.a1 a t:broken.a.01 .
+t01086:a1 a t:broken.a.01 .
 
-tomb:t01086.c1 a t:village.n.02 ;
+t01086:c1 a t:village.n.02 ;
   :geo place:Garmerwolde2755728 ;
   :place "GARMERWOLDE" .
 
-tomb:t01086.g1 a t:people.n.01 ;
-  :mem tomb:t01086.p2 ,
-       tomb:t01086.p3 .
+t01086:g1 a t:people.n.01 ;
+  :mem t01086:p2 ,
+       t01086:p3 .
 
-tomb:t01086.m1 a t:measure.n.02 ;
-  :sub tomb:t01086.m2 ,
-       tomb:t01086.m3 .
+t01086:m1 a t:measure.n.02 ;
+  :sub t01086:m2 ,
+       t01086:m3 .
 
-tomb:t01086.m2 a t:measure.n.02 ;
-  :mem tomb:t01086.u1 ;
+t01086:m2 a t:measure.n.02 ;
+  :mem t01086:u1 ;
   :qua 3 .
 
-tomb:t01086.m3 a t:measure.n.02 ;
-  :mem tomb:t01086.u2 ;
+t01086:m3 a t:measure.n.02 ;
+  :mem t01086:u2 ;
   :qua 5 .
 
-tomb:t01086.p1 a t:person.n.01 ;
+t01086:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t01086.m1 ;
+  :age t01086:m1 ;
   :dod "1872-12-28" ;
   :nam "KLAAS" ;
-  :pod tomb:t01086.c1 ;
-  :rol tomb:t01086.r1 .
+  :pod t01086:c1 ;
+  :rol t01086:r1 .
 
-tomb:t01086.p2 a t:person.n.01 ;
+t01086:p2 a t:person.n.01 ;
   :nam "T.H. DOLFIJN" .
 
-tomb:t01086.p3 a t:person.n.01 ;
+t01086:p3 a t:person.n.01 ;
   :nam "H.H. WIGBOLDUS" .
 
-tomb:t01086.r1 a t:son.n.01 ;
-  :tgt tomb:t01086.g1 .
+t01086:r1 a t:son.n.01 ;
+  :tgt t01086:g1 .
 
-tomb:t01086.s1 a t:flower.n.01 ;
-  :att tomb:t01086.a1 .
+t01086:s1 a t:flower.n.01 ;
+  :att t01086:a1 .
 
-tomb:t01086.s3 a t:composite.n.01 ;
-  :prt tomb:t01086.s4 ,
-       tomb:t01086.s6 .
+t01086:s3 a t:composite.n.01 ;
+  :prt t01086:s4 ,
+       t01086:s6 .
 
-tomb:t01086.s4 a t:branch.n.02 .
+t01086:s4 a t:branch.n.02 .
 
-tomb:t01086.s5 a t:olive.n.02 ;
-  :prt tomb:t01086.s4 .
+t01086:s5 a t:olive.n.02 ;
+  :prt t01086:s4 .
 
-tomb:t01086.s6 a t:branch.n.02 .
+t01086:s6 a t:branch.n.02 .
 
-tomb:t01086.s7 a t:olive.n.02 ;
-  :prt tomb:t01086.s6 .
+t01086:s7 a t:olive.n.02 ;
+  :prt t01086:s6 .
 
-tomb:t01086.u1 a t:year.n.01 .
+t01086:u1 a t:year.n.01 .
 
-tomb:t01086.u2 a t:month.n.01 .
+t01086:u2 a t:month.n.01 .
 
-tomb:t01086.im1 a t:photo.n.01 ;
+t01086:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

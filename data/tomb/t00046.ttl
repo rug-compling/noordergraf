@@ -1,47 +1,48 @@
+@prefix t00046: <https://noordergraf.rug.nl/tomb/t00046#> .
 
 tomb:t00046 a t:tombstone.n.01 ;
-  :image tomb:t00046.im1 ;
+  :image t00046:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00046.p1 ,
-       tomb:t00046.p2 ;
-  :sym tomb:t00046.s1 .
+  :ent t00046:p1 ,
+       t00046:p2 ;
+  :sym t00046:s1 .
 
-tomb:t00046.c1 a t:village.n.02 ;
+t00046:c1 a t:village.n.02 ;
   :geo place:Glimmen2755495 ;
   :place "GLIMMEN" .
 
-tomb:t00046.c2 a t:town.n.01 ;
+t00046:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00046.p1 a t:person.n.01 ;
+t00046:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1896-02-01" ;
   :dod "1925-03-04" ;
   :nam "ROELOF DRENTH" ;
-  :pob tomb:t00046.c1 ;
-  :pod tomb:t00046.c2 ;
-  :rol tomb:t00046.r2 .
+  :pob t00046:c1 ;
+  :pod t00046:c2 ;
+  :rol t00046:r2 .
 
-tomb:t00046.p2 a t:person.n.01 ;
+t00046:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "CAROLINA ANDRIES" .
 
-tomb:t00046.r2 a t:spouse.n.01 ;
-  :tgt tomb:t00046.p2 .
+t00046:r2 a t:spouse.n.01 ;
+  :tgt t00046:p2 .
 
-tomb:t00046.s1 a t:composite.n.01 ;
-  :prt tomb:t00046.s2 ,
-       tomb:t00046.s3 ,
-       tomb:t00046.s4 .
+t00046:s1 a t:composite.n.01 ;
+  :prt t00046:s2 ,
+       t00046:s3 ,
+       t00046:s4 .
 
-tomb:t00046.s2 a t:frond.n.01 .
+t00046:s2 a t:frond.n.01 .
 
-tomb:t00046.s3 a t:frond.n.01 .
+t00046:s3 a t:frond.n.01 .
 
-tomb:t00046.s4 a t:ribbon.n.01 .
+t00046:s4 a t:ribbon.n.01 .
 
-tomb:t00046.im1 a t:photo.n.01 ;
+t00046:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

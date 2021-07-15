@@ -1,41 +1,42 @@
+@prefix t00110: <https://noordergraf.rug.nl/tomb/t00110#> .
 
 tomb:t00110 a t:tombstone.n.01 ;
-  :image tomb:t00110.im1 ;
+  :image t00110:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00110.p1 ,
-       tomb:t00110.p4 ;
+  :ent t00110:p1 ,
+       t00110:p4 ;
   :ref "PSALM 142 O.B." ;
-  :sym tomb:t00110.s1 .
+  :sym t00110:s1 .
 
-tomb:t00110.p1 a t:person.n.01 ;
+t00110:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1891-12-23" ;
   :dod "1978-01-08" ;
   :nam "EGBERT BAKKER" ;
-  :rol tomb:t00110.r1 ,
-       tomb:t00110.r2 .
+  :rol t00110:r1 ,
+       t00110:r2 .
 
-tomb:t00110.p4 a t:person.n.01 ;
+t00110:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1907-02-12" ;
   :dod "1996-02-19" ;
   :nam "HENDERIKA VRIELING" ;
-  :rol tomb:t00110.r3 ,
-       tomb:t00110.r4 .
+  :rol t00110:r3 ,
+       t00110:r4 .
 
-tomb:t00110.r1 a t:father.n.01 ;
+t00110:r1 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00110.r2 a t:grandfather.n.01 .
+t00110:r2 a t:grandfather.n.01 .
 
-tomb:t00110.r3 a t:mother.n.01 ;
+t00110:r3 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00110.r4 a t:grandmother.n.01 .
+t00110:r4 a t:grandmother.n.01 .
 
-tomb:t00110.s1 a t:frond.n.01 .
+t00110:s1 a t:frond.n.01 .
 
-tomb:t00110.im1 a t:photo.n.01 ;
+t00110:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

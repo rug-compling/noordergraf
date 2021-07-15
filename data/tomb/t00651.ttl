@@ -1,44 +1,45 @@
+@prefix t00651: <https://noordergraf.rug.nl/tomb/t00651#> .
 
 tomb:t00651 a t:tombstone.n.01 ;
-  :image tomb:t00651.im1 ;
+  :image t00651:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00651.p1 ,
-       tomb:t00651.p2 ;
+  :ent t00651:p1 ,
+       t00651:p2 ;
   :quo "AL LEEFT de MENSCH \\ DOOR ALLE LEVENSTIJDEN \\ IN VREDE EN RUST, \\ OF ONDER SMART \\ IN STRIJDEN, \\ 'T ZOIJ ZWAK OF STERK \\ TZIJ KORT OF LANG VAN DUUR. \\ IN'T EIND ONTVALT \\ TOCH IEDER 'TLEVENS UUR."@nld ;
-  :sym tomb:t00651.s1 ,
-       tomb:t00651.s2 ,
-       tomb:t00651.s3 ,
-       tomb:t00651.s4 ,
-       tomb:t00651.s5 ,
-       tomb:t00651.s6 .
+  :sym t00651:s1 ,
+       t00651:s2 ,
+       t00651:s3 ,
+       t00651:s4 ,
+       t00651:s5 ,
+       t00651:s6 .
 
-tomb:t00651.p1 a t:person.n.01 ;
+t00651:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1785-01-31" ;
   :dod "1870-06-01" ;
   :nam "ALBERTJE H. SCHIPPER" ;
-  :rol tomb:t00651.r1 .
+  :rol t00651:r1 .
 
-tomb:t00651.p2 a t:person.n.01 ;
+t00651:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ABRAHAM C. HAZEWINKEL" .
 
-tomb:t00651.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00651.p2 .
+t00651:r1 a t:spouse.n.01 ;
+  :tgt t00651:p2 .
 
-tomb:t00651.s1 a t:sandglass.n.01 .
+t00651:s1 a t:sandglass.n.01 .
 
-tomb:t00651.s2 a t:scythe.n.01 .
+t00651:s2 a t:scythe.n.01 .
 
-tomb:t00651.s3 a t:butterfly.n.01 .
+t00651:s3 a t:butterfly.n.01 .
 
-tomb:t00651.s4 a t:snake.n.01 .
+t00651:s4 a t:snake.n.01 .
 
-tomb:t00651.s5 a t:oak.n.02 .
+t00651:s5 a t:oak.n.02 .
 
-tomb:t00651.s6 a t:palm.n.04 .
+t00651:s6 a t:palm.n.04 .
 
-tomb:t00651.im1 a t:photo.n.01 ;
+t00651:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

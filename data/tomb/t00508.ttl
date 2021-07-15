@@ -1,43 +1,44 @@
+@prefix t00508: <https://noordergraf.rug.nl/tomb/t00508#> .
 
 tomb:t00508 a t:tombstone.n.01 ;
-  :image tomb:t00508.im1 ;
+  :image t00508:im1 ;
   :site site:fr8915CPleeuwarden ;
-  :ent tomb:t00508.p1 ,
-       tomb:t00508.p2 ,
-       tomb:t00508.p3 ;
+  :ent t00508:p1 ,
+       t00508:p2 ,
+       t00508:p3 ;
   :quo "MEMORIA EORUM ERIT IN PACE"@lat .
 
-tomb:t00508.c1 a t:town.n.01 ;
+t00508:c1 a t:town.n.01 ;
   :geo place:Stoppeldijk12253641 ;
   :place "STOPPELDIJK" .
 
-tomb:t00508.c2 a t:city.n.01 ;
+t00508:c2 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00508.p1 a t:person.n.01 ;
+t00508:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1872-03-10" ;
   :dod "1911-07-18" ;
   :nam "MARIA H.F. LAMBOOIJ-AHSMANN" ;
-  :pob tomb:t00508.c1 ;
-  :pod tomb:t00508.c2 .
+  :pob t00508:c1 ;
+  :pod t00508:c2 .
 
-tomb:t00508.p2 a t:person.n.01 ;
+t00508:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1870-03-31" ;
   :dod "1949-04-25" ;
   :nam "HERMANUS D. LAMBOOIJ" ;
-  :pob tomb:t00508.c2 ;
-  :pod tomb:t00508.c2 .
+  :pob t00508:c2 ;
+  :pod t00508:c2 .
 
-tomb:t00508.p3 a t:person.n.01 ;
+t00508:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1872-12-17" ;
   :dod "1949-12-06" ;
   :nam "CAECILIA M. LAMBOOIJ-IJSSELMUIDEN" .
 
-tomb:t00508.im1 a t:photo.n.01 ;
+t00508:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

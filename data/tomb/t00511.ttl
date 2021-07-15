@@ -1,22 +1,23 @@
+@prefix t00511: <https://noordergraf.rug.nl/tomb/t00511#> .
 
 tomb:t00511 a t:tombstone.n.01 ;
-  :image tomb:t00511.im1 ;
+  :image t00511:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00511.p1 ;
+  :ent t00511:p1 ;
   :quo "ZO'ST GOUD ZO'ST GOUD"@gos .
 
-tomb:t00511.m1 a t:measure.n.02 ;
-  :mem tomb:t00511.u1 ;
+t00511:m1 a t:measure.n.02 ;
+  :mem t00511:u1 ;
   :qua 40 .
 
-tomb:t00511.p1 a t:person.n.01 ;
+t00511:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t00511.m1 ;
+  :age t00511:m1 ;
   :nam "ADRIE" .
 
-tomb:t00511.u1 a t:year.n.01 .
+t00511:u1 a t:year.n.01 .
 
-tomb:t00511.im1 a t:photo.n.01 ;
+t00511:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,73 +1,74 @@
+@prefix t00670: <https://noordergraf.rug.nl/tomb/t00670#> .
 
 tomb:t00670 a t:tombstone.n.01 ;
-  :image tomb:t00670.im1 ;
+  :image t00670:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00670.g1 ,
-       tomb:t00670.g2 ,
-       tomb:t00670.p1 ,
-       tomb:t00670.p2 ;
+  :ent t00670:g1 ,
+       t00670:g2 ,
+       t00670:p1 ,
+       t00670:p2 ;
   :lan "NLD" ;
-  :ref tomb:t00670.v2 ;
-  :sym tomb:t00670.s1 .
+  :ref t00670:v2 ;
+  :sym t00670:s1 .
 
-tomb:t00670.a1 a t:weeping.a.02 .
+t00670:a1 a t:weeping.a.02 .
 
-tomb:t00670.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00670.c3 .
+t00670:b1 a t:Revelation.n.04 ;
+  :prt t00670:c3 .
 
-tomb:t00670.c1 a t:village.n.02 ;
+t00670:c1 a t:village.n.02 ;
   :geo place:Oosthem2749372 ;
   :place "OOSTHEM" .
 
-tomb:t00670.c2 a t:city.n.01 ;
+t00670:c2 a t:city.n.01 ;
   :geo place:Bolsward2758682 ;
   :place "BOLSWARD" .
 
-tomb:t00670.c3 a t:chapter.n.01 ;
+t00670:c3 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00670.v2 .
+  :prt t00670:v2 .
 
-tomb:t00670.g1 a t:group.n.01 ;
-  :mem tomb:t00670.p1 ,
-       tomb:t00670.p2 ;
-  :rol tomb:t00670.r1 ,
-       tomb:t00670.r2 .
+t00670:g1 a t:group.n.01 ;
+  :mem t00670:p1 ,
+       t00670:p2 ;
+  :rol t00670:r1 ,
+       t00670:r2 .
 
-tomb:t00670.g2 a t:group.n.01 ;
-  :rol tomb:t00670.r5 .
+t00670:g2 a t:group.n.01 ;
+  :rol t00670:r5 .
 
-tomb:t00670.p1 a t:person.n.01 ;
+t00670:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1861-07-11" ;
   :dod "1928-02-23" ;
   :nam "RINZE VAN WIEREN" ;
-  :pob tomb:t00670.c1 ;
-  :pod tomb:t00670.c2 .
+  :pob t00670:c1 ;
+  :pod t00670:c2 .
 
-tomb:t00670.p2 a t:person.n.01 ;
+t00670:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1868-09-15" ;
   :dod "1941-07-10" ;
   :nam "GRIETJE MOLENMAKER" ;
-  :pob tomb:t00670.c2 ;
-  :pod tomb:t00670.c2 .
+  :pob t00670:c2 ;
+  :pod t00670:c2 .
 
-tomb:t00670.r1 a t:parent.n.01 ;
+t00670:r1 a t:parent.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00670.g2 .
+  :tgt t00670:g2 .
 
-tomb:t00670.r2 a t:grandparent.n.01 .
+t00670:r2 a t:grandparent.n.01 .
 
-tomb:t00670.r5 a t:child.n.02 ;
-  :tgt tomb:t00670.g1 .
+t00670:r5 a t:child.n.02 ;
+  :tgt t00670:g1 .
 
-tomb:t00670.s1 a t:willow.n.01 ;
-  :att tomb:t00670.a1 .
+t00670:s1 a t:willow.n.01 ;
+  :att t00670:a1 .
 
-tomb:t00670.v2 a t:verse.n.01 ;
+t00670:v2 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00670.im1 a t:photo.n.01 ;
+t00670:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

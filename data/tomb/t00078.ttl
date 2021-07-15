@@ -1,48 +1,49 @@
+@prefix t00078: <https://noordergraf.rug.nl/tomb/t00078#> .
 
 tomb:t00078 a t:tombstone.n.01 ;
-  :image tomb:t00078.im1 ;
+  :image t00078:im1 ;
   :site site:gr9721AAgroningen ;
-  :ent tomb:t00078.p1 ,
-       tomb:t00078.p2 .
+  :ent t00078:p1 ,
+       t00078:p2 .
 
-tomb:t00078.c1 a t:city.n.01 ;
+t00078:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00078.c2 a t:city.n.01 ;
+t00078:c2 a t:city.n.01 ;
   :geo place:Meppen2871845 ;
   :place "MEPPEN" .
 
-tomb:t00078.c3 a t:country.n.02 ;
+t00078:c3 a t:country.n.02 ;
   :geo place:Duitsland2921044 ;
-  :mem tomb:t00078.c2 ;
+  :mem t00078:c2 ;
   :place "DUITSLAND" .
 
-tomb:t00078.c4 a t:village.n.02 ;
+t00078:c4 a t:village.n.02 ;
   :geo place:Kloosterburen2752627 ;
   :place "KLOOSTERBUREN" .
 
-tomb:t00078.p1 a t:person.n.01 ;
+t00078:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1848-03-09" ;
   :dod "1928-01-01" ;
   :nam "ANNA MARIA E. ROBBE" ;
-  :pob tomb:t00078.c2 ;
-  :pod tomb:t00078.c1 ;
-  :rol tomb:t00078.r1 .
+  :pob t00078:c2 ;
+  :pod t00078:c1 ;
+  :rol t00078:r1 .
 
-tomb:t00078.p2 a t:person.n.01 ;
+t00078:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1856-01-21" ;
   :dod "1936-01-10" ;
   :nam "FREDERIK J. VAN VOORN" ;
-  :pob tomb:t00078.c4 ;
-  :pod tomb:t00078.c1 .
+  :pob t00078:c4 ;
+  :pod t00078:c1 .
 
-tomb:t00078.r1 a t:wife.n.01 ;
-  :tgt tomb:t00078.p2 .
+t00078:r1 a t:wife.n.01 ;
+  :tgt t00078:p2 .
 
-tomb:t00078.im1 a t:photo.n.01 ;
+t00078:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

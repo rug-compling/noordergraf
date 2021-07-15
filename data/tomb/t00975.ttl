@@ -1,49 +1,50 @@
+@prefix t00975: <https://noordergraf.rug.nl/tomb/t00975#> .
 
 tomb:t00975 a t:tombstone.n.01 ;
-  :image tomb:t00975.im1 ;
+  :image t00975:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00975.p1 ,
-       tomb:t00975.p2 ;
+  :ent t00975:p1 ,
+       t00975:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00975.s1 ,
-       tomb:t00975.s2 ,
-       tomb:t00975.s3 ,
-       tomb:t00975.s4 .
+  :sym t00975:s1 ,
+       t00975:s2 ,
+       t00975:s3 ,
+       t00975:s4 .
 
-tomb:t00975.c1 a t:village.n.02 ;
+t00975:c1 a t:village.n.02 ;
   :geo place:Borgercompagnie2758618 ;
   :place "BORGERCOMPAGNIE" .
 
-tomb:t00975.c2 a t:village.n.02 ;
+t00975:c2 a t:village.n.02 ;
   :geo place:Noordlaren2749857 ;
   :place "NOORDLAREN" .
 
-tomb:t00975.p1 a t:person.n.01 ;
+t00975:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1823-07-08" ;
   :dod "1875-02-05" ;
   :nam "TIETJE LEENDERS" ;
-  :pob tomb:t00975.c1 ;
-  :pod tomb:t00975.c2 ;
-  :rol tomb:t00975.r1 .
+  :pob t00975:c1 ;
+  :pod t00975:c2 ;
+  :rol t00975:r1 .
 
-tomb:t00975.p2 a t:person.n.01 ;
+t00975:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "MELLE G. VROOM" .
 
-tomb:t00975.r1 a t:spouse.n.01 ;
+t00975:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00975.p2 .
+  :tgt t00975:p2 .
 
-tomb:t00975.s1 a t:butterfly.n.01 .
+t00975:s1 a t:butterfly.n.01 .
 
-tomb:t00975.s2 a t:oak.n.03 .
+t00975:s2 a t:oak.n.03 .
 
-tomb:t00975.s3 a t:oak.n.03 .
+t00975:s3 a t:oak.n.03 .
 
-tomb:t00975.s4 a t:ribbon.n.01 .
+t00975:s4 a t:ribbon.n.01 .
 
-tomb:t00975.im1 a t:photo.n.01 ;
+t00975:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

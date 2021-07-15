@@ -1,52 +1,53 @@
+@prefix t00138: <https://noordergraf.rug.nl/tomb/t00138#> .
 
 tomb:t00138 a t:tombstone.n.01 ;
-  :image tomb:t00138.im1 ;
+  :image t00138:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00138.p1 ,
-       tomb:t00138.p2 ;
-  :ref tomb:t00138.v1 ;
-  :sym tomb:t00138.s1 .
+  :ent t00138:p1 ,
+       t00138:p2 ;
+  :ref t00138:v1 ;
+  :sym t00138:s1 .
 
-tomb:t00138.a1 a t:weeping.a.02 .
+t00138:a1 a t:weeping.a.02 .
 
-tomb:t00138.b1 a t:Epistle_to_the_Romans.n.04 ;
-  :prt tomb:t00138.c3 .
+t00138:b1 a t:Epistle_to_the_Romans.n.04 ;
+  :prt t00138:c3 .
 
-tomb:t00138.c1 a t:city.n.01 ;
+t00138:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00138.c2 a t:village.n.02 ;
+t00138:c2 a t:village.n.02 ;
   :geo place:Kollum2752524 ;
   :place "KOLLUM" .
 
-tomb:t00138.c3 a t:chapter.n.01 ;
+t00138:c3 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00138.v1 .
+  :prt t00138:v1 .
 
-tomb:t00138.p1 a t:person.n.01 ;
+t00138:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1856-10-15" ;
   :dod "1942-03-25" ;
   :nam "PIETJE WONDAAL" ;
-  :pob tomb:t00138.c2 ;
-  :pod tomb:t00138.c1 ;
-  :rol tomb:t00138.r1 .
+  :pob t00138:c2 ;
+  :pod t00138:c1 ;
+  :rol t00138:r1 .
 
-tomb:t00138.p2 a t:person.n.01 ;
+t00138:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN VELDMAN" .
 
-tomb:t00138.r1 a t:wife.n.01 ;
-  :tgt tomb:t00138.p2 .
+t00138:r1 a t:wife.n.01 ;
+  :tgt t00138:p2 .
 
-tomb:t00138.s1 a t:willow.n.01 ;
-  :att tomb:t00138.a1 .
+t00138:s1 a t:willow.n.01 ;
+  :att t00138:a1 .
 
-tomb:t00138.v1 a t:verse.n.01 ;
+t00138:v1 a t:verse.n.01 ;
   :ord 8 .
 
-tomb:t00138.im1 a t:photo.n.01 ;
+t00138:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

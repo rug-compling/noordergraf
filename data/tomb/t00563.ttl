@@ -1,46 +1,47 @@
+@prefix t00563: <https://noordergraf.rug.nl/tomb/t00563#> .
 
 tomb:t00563 a t:tombstone.n.01 ;
-  :image tomb:t00563.im1 ;
+  :image t00563:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00563.p1 ,
-       tomb:t00563.p2 ;
+  :ent t00563:p1 ,
+       t00563:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00563.s1 .
+  :sym t00563:s1 .
 
-tomb:t00563.a1 a t:weeping.a.02 .
+t00563:a1 a t:weeping.a.02 .
 
-tomb:t00563.c1 a t:city.n.01 ;
+t00563:c1 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00563.c2 a t:village.n.02 ;
+t00563:c2 a t:village.n.02 ;
   :geo place:Annerveenschekanaal2759724 ;
   :place "ANNERVEENSCHEKANAAL" .
 
-tomb:t00563.p1 a t:person.n.01 ;
+t00563:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1848-10-21" ;
   :dod "1919-02-22" ;
   :nam "JACOB VAN DER BORGH" ;
-  :pob tomb:t00563.c1 ;
-  :pod tomb:t00563.c1 .
+  :pob t00563:c1 ;
+  :pod t00563:c1 .
 
-tomb:t00563.p2 a t:person.n.01 ;
+t00563:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1844-05-05" ;
   :dod "1919-02-20" ;
   :nam "MARGRITA J. KLIPHUIS" ;
-  :pob tomb:t00563.c2 ;
-  :pod tomb:t00563.c1 ;
-  :rol tomb:t00563.r1 .
+  :pob t00563:c2 ;
+  :pod t00563:c1 ;
+  :rol t00563:r1 .
 
-tomb:t00563.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00563.p1 .
+t00563:r1 a t:spouse.n.01 ;
+  :tgt t00563:p1 .
 
-tomb:t00563.s1 a t:willow.n.01 ;
-  :att tomb:t00563.a1 .
+t00563:s1 a t:willow.n.01 ;
+  :att t00563:a1 .
 
-tomb:t00563.im1 a t:photo.n.01 ;
+t00563:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

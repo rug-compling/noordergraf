@@ -1,35 +1,36 @@
+@prefix t01016: <https://noordergraf.rug.nl/tomb/t01016#> .
 
 tomb:t01016 a t:tombstone.n.01 ;
-  :image tomb:t01016.im1 ;
+  :image t01016:im1 ;
   :site site:gr9686RSbeerta ;
-  :ent tomb:t01016.p1 ,
-       tomb:t01016.p2 ;
+  :ent t01016:p1 ,
+       t01016:p2 ;
   :lan "NLD" ;
-  :sym tomb:t01016.s1 ,
-       tomb:t01016.s2 ,
-       tomb:t01016.s3 .
+  :sym t01016:s1 ,
+       t01016:s2 ,
+       t01016:s3 .
 
-tomb:t01016.p1 a t:person.n.01 ;
+t01016:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1811-08-10" ;
   :dod "1852-02-19" ;
   :nam "GIESEL J. ELSINGA" ;
-  :rol tomb:t01016.r1 .
+  :rol t01016:r1 .
 
-tomb:t01016.p2 a t:person.n.01 ;
+t01016:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "REINDER A. GEERTSEMA" .
 
-tomb:t01016.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01016.p2 .
+t01016:r1 a t:spouse.n.01 ;
+  :tgt t01016:p2 .
 
-tomb:t01016.s1 a t:frond.n.01 .
+t01016:s1 a t:frond.n.01 .
 
-tomb:t01016.s2 a t:frond.n.01 .
+t01016:s2 a t:frond.n.01 .
 
-tomb:t01016.s3 a t:ribbon.n.01 .
+t01016:s3 a t:ribbon.n.01 .
 
-tomb:t01016.im1 a t:photo.n.01 ;
+t01016:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

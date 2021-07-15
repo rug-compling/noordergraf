@@ -1,20 +1,21 @@
+@prefix t01092: <https://noordergraf.rug.nl/tomb/t01092#> .
 
 tomb:t01092 a t:tombstone.n.01 ;
-  :image tomb:t01092.im1 ;
+  :image t01092:im1 ;
   :site site:gr9751XCharen ;
-  :ent tomb:t01092.p1 ;
+  :ent t01092:p1 ;
   :lan "NLD" ;
-  :sym tomb:t01092.s1 .
+  :sym t01092:s1 .
 
-tomb:t01092.p1 a t:person.n.01 ;
+t01092:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1963-01-21" ;
   :dod "2005-07-31" ;
   :nam "DINALDA CATHARINA BOSCH" .
 
-tomb:t01092.s1 a t:butterfly.n.01 .
+t01092:s1 a t:butterfly.n.01 .
 
-tomb:t01092.im1 a t:photo.n.01 ;
+t01092:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

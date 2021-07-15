@@ -1,113 +1,114 @@
+@prefix t00329: <https://noordergraf.rug.nl/tomb/t00329#> .
 
 tomb:t00329 a t:tombstone.n.01 ;
-  :image tomb:t00329.im1 ;
+  :image t00329:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00329.p1 ,
-       tomb:t00329.p2 ,
-       tomb:t00329.p3 ,
-       tomb:t00329.p4 ,
-       tomb:t00329.p5 ,
-       tomb:t00329.p6 ,
-       tomb:t00329.p7 .
+  :ent t00329:p1 ,
+       t00329:p2 ,
+       t00329:p3 ,
+       t00329:p4 ,
+       t00329:p5 ,
+       t00329:p6 ,
+       t00329:p7 .
 
-tomb:t00329.c1 a t:village.n.02 ;
+t00329:c1 a t:village.n.02 ;
   :geo place:Huizen2753468 ;
   :place "HUIZEN" .
 
-tomb:t00329.c2 a t:town.n.01 ;
+t00329:c2 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00329.c3 a t:village.n.02 ;
+t00329:c3 a t:village.n.02 ;
   :geo place:Dedemsvaart2757698 ;
   :place "DEDEMSVAART" .
 
-tomb:t00329.p1 a t:person.n.01 ;
+t00329:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1897-12-23" ;
   :dod "1937-07-06" ;
   :nam "LAMBERTJE HONING" ;
-  :pob tomb:t00329.c1 ;
-  :pod tomb:t00329.c2 ;
-  :rol tomb:t00329.r1 ,
-       tomb:t00329.r2 ,
-       tomb:t00329.r3 .
+  :pob t00329:c1 ;
+  :pod t00329:c2 ;
+  :rol t00329:r1 ,
+       t00329:r2 ,
+       t00329:r3 .
 
-tomb:t00329.p2 a t:person.n.01 ;
+t00329:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1887-10-02" ;
   :dod "1964-10-02" ;
   :nam "ROELOF POST" ;
-  :pob tomb:t00329.c2 ;
-  :pod tomb:t00329.c3 ;
-  :rol tomb:t00329.r4 ,
-       tomb:t00329.r5 .
+  :pob t00329:c2 ;
+  :pod t00329:c3 ;
+  :rol t00329:r4 ,
+       t00329:r5 .
 
-tomb:t00329.p3 a t:person.n.01 ;
+t00329:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "AALTJE DELIAANTJE" .
 
-tomb:t00329.p4 a t:person.n.01 ;
+t00329:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ANDRE" .
 
-tomb:t00329.p5 a t:person.n.01 ;
+t00329:p5 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ROEL" ;
-  :rol tomb:t00329.r6 ,
-       tomb:t00329.r7 .
+  :rol t00329:r6 ,
+       t00329:r7 .
 
-tomb:t00329.p6 a t:person.n.01 ;
+t00329:p6 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "INGE" ;
-  :rol tomb:t00329.r8 ,
-       tomb:t00329.r9 .
+  :rol t00329:r8 ,
+       t00329:r9 .
 
-tomb:t00329.p7 a t:person.n.01 ;
+t00329:p7 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "ROY" ;
-  :rol tomb:t00329.r10 ,
-       tomb:t00329.r11 .
+  :rol t00329:r10 ,
+       t00329:r11 .
 
-tomb:t00329.r1 a t:wife.n.01 ;
+t00329:r1 a t:wife.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00329.p2 .
+  :tgt t00329:p2 .
 
-tomb:t00329.r10 a t:grandchild.n.01 ;
-  :tgt tomb:t00329.p1 .
+t00329:r10 a t:grandchild.n.01 ;
+  :tgt t00329:p1 .
 
-tomb:t00329.r11 a t:grandchild.n.01 ;
-  :tgt tomb:t00329.p2 .
+t00329:r11 a t:grandchild.n.01 ;
+  :tgt t00329:p2 .
 
-tomb:t00329.r2 a t:mother.n.01 ;
-  :tgt tomb:t00329.p3 .
+t00329:r2 a t:mother.n.01 ;
+  :tgt t00329:p3 .
 
-tomb:t00329.r3 a t:mother.n.01 ;
-  :tgt tomb:t00329.p4 .
+t00329:r3 a t:mother.n.01 ;
+  :tgt t00329:p4 .
 
-tomb:t00329.r4 a t:father.n.01 ;
+t00329:r4 a t:father.n.01 ;
   :att "LIEVE" ,
        "ZORGZAME" ;
-  :tgt tomb:t00329.p3 .
+  :tgt t00329:p3 .
 
-tomb:t00329.r5 a t:father.n.01 ;
+t00329:r5 a t:father.n.01 ;
   :att "LIEVE" ,
        "ZORGZAME" ;
-  :tgt tomb:t00329.p4 .
+  :tgt t00329:p4 .
 
-tomb:t00329.r6 a t:grandchild.n.01 ;
-  :tgt tomb:t00329.p1 .
+t00329:r6 a t:grandchild.n.01 ;
+  :tgt t00329:p1 .
 
-tomb:t00329.r7 a t:grandchild.n.01 ;
-  :tgt tomb:t00329.p2 .
+t00329:r7 a t:grandchild.n.01 ;
+  :tgt t00329:p2 .
 
-tomb:t00329.r8 a t:grandchild.n.01 ;
-  :tgt tomb:t00329.p1 .
+t00329:r8 a t:grandchild.n.01 ;
+  :tgt t00329:p1 .
 
-tomb:t00329.r9 a t:grandchild.n.01 ;
-  :tgt tomb:t00329.p2 .
+t00329:r9 a t:grandchild.n.01 ;
+  :tgt t00329:p2 .
 
-tomb:t00329.im1 a t:photo.n.01 ;
+t00329:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

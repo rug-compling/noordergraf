@@ -1,43 +1,44 @@
+@prefix t00086: <https://noordergraf.rug.nl/tomb/t00086#> .
 
 tomb:t00086 a t:tombstone.n.01 ;
-  :image tomb:t00086.im1 ;
+  :image t00086:im1 ;
   :site site:gr9721AAgroningen ;
-  :ent tomb:t00086.p1 ,
-       tomb:t00086.p2 ;
+  :ent t00086:p1 ,
+       t00086:p2 ;
   :quo "DAT ZIJ RUSTE IN VREDE" .
 
-tomb:t00086.m1 a t:measure.n.02 ;
-  :sub tomb:t00086.m2 ,
-       tomb:t00086.m3 .
+t00086:m1 a t:measure.n.02 ;
+  :sub t00086:m2 ,
+       t00086:m3 .
 
-tomb:t00086.m2 a t:measure.n.02 ;
-  :mem tomb:t00086.u1 ;
+t00086:m2 a t:measure.n.02 ;
+  :mem t00086:u1 ;
   :qua 57 .
 
-tomb:t00086.m3 a t:measure.n.02 ;
-  :mem tomb:t00086.u2 ;
+t00086:m3 a t:measure.n.02 ;
+  :mem t00086:u2 ;
   :qua 4 .
 
-tomb:t00086.p1 a t:person.n.01 ;
+t00086:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
-  :age tomb:t00086.m1 ;
+  :age t00086:m1 ;
   :dob "1829-11-28" ;
   :dod "1887-04-03" ;
   :nam "MARGARETHA MICHAELINA VAN DER WERFF" ;
-  :rol tomb:t00086.r1 .
+  :rol t00086:r1 .
 
-tomb:t00086.p2 a t:person.n.01 ;
+t00086:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JOHANNES HARMANNUS SCHROOTE" .
 
-tomb:t00086.r1 a t:husband.n.01 ;
-  :tgt tomb:t00086.p2 .
+t00086:r1 a t:husband.n.01 ;
+  :tgt t00086:p2 .
 
-tomb:t00086.u1 a t:year.n.01 .
+t00086:u1 a t:year.n.01 .
 
-tomb:t00086.u2 a t:month.n.01 .
+t00086:u2 a t:month.n.01 .
 
-tomb:t00086.im1 a t:photo.n.01 ;
+t00086:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

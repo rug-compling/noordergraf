@@ -1,56 +1,57 @@
+@prefix t00605: <https://noordergraf.rug.nl/tomb/t00605#> .
 
 tomb:t00605 a t:tombstone.n.01 ;
-  :image tomb:t00605.im1 ;
+  :image t00605:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00605.p1 ,
-       tomb:t00605.p2 ,
-       tomb:t00605.p3 ;
+  :ent t00605:p1 ,
+       t00605:p2 ,
+       t00605:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00605.s1 ,
-       tomb:t00605.s2 .
+  :sym t00605:s1 ,
+       t00605:s2 .
 
-tomb:t00605.a1 a t:weeping.a.02 .
+t00605:a1 a t:weeping.a.02 .
 
-tomb:t00605.a2 a t:broken.a.01 .
+t00605:a2 a t:broken.a.01 .
 
-tomb:t00605.c1 a t:village.n.02 ;
+t00605:c1 a t:village.n.02 ;
   :geo place:Kropswolde2752217 ;
   :place "KROPSWOLDE" .
 
-tomb:t00605.c2 a t:town.n.01 ;
+t00605:c2 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00605.p1 a t:person.n.01 ;
+t00605:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1837-09-01" ;
   :dod "1898-06-20" ;
   :nam "JAN NIJBOER" ;
-  :pob tomb:t00605.c1 ;
-  :pod tomb:t00605.c2 ;
-  :rol tomb:t00605.r1 .
+  :pob t00605:c1 ;
+  :pod t00605:c2 ;
+  :rol t00605:r1 .
 
-tomb:t00605.p2 a t:person.n.01 ;
+t00605:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TRIJNTJE VISSCHER" .
 
-tomb:t00605.p3 a t:person.n.01 ;
+t00605:p3 a t:person.n.01 ;
   :nam "L.F. DE WIJS" ;
-  :occ tomb:t00605.r2 .
+  :occ t00605:r2 .
 
-tomb:t00605.r1 a t:widower.n.01 ;
-  :tgt tomb:t00605.p2 .
+t00605:r1 a t:widower.n.01 ;
+  :tgt t00605:p2 .
 
-tomb:t00605.r2 a t:designer.n.01 ;
+t00605:r2 a t:designer.n.01 ;
   :tgt tomb:t00605 .
 
-tomb:t00605.s1 a t:willow.n.01 ;
-  :att tomb:t00605.a1 .
+t00605:s1 a t:willow.n.01 ;
+  :att t00605:a1 .
 
-tomb:t00605.s2 a t:column.n.01 ;
-  :att tomb:t00605.a2 .
+t00605:s2 a t:column.n.01 ;
+  :att t00605:a2 .
 
-tomb:t00605.im1 a t:photo.n.01 ;
+t00605:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

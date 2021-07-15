@@ -1,28 +1,29 @@
+@prefix t00595: <https://noordergraf.rug.nl/tomb/t00595#> .
 
 tomb:t00595 a t:tombstone.n.01 ;
-  :image tomb:t00595.im1 ;
+  :image t00595:im1 ;
   :site site:gr9951TNwinsum ;
-  :ent tomb:t00595.p1 ;
+  :ent t00595:p1 ;
   :quo "I AM ONE WITH GOD"@eng ;
-  :sym tomb:t00595.s1 ,
-       tomb:t00595.s2 .
+  :sym t00595:s1 ,
+       t00595:s2 .
 
-tomb:t00595.o1 a t:drummer.n.01 ;
+t00595:o1 a t:drummer.n.01 ;
   :att "MASTER" ;
   :hco "17140" .
 
-tomb:t00595.p1 a t:person.n.01 ;
+t00595:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1951-06-06" ;
   :dod "2001-08-08" ;
   :nam "MANUEL E. LOPES" ;
-  :occ tomb:t00595.o1 .
+  :occ t00595:o1 .
 
-tomb:t00595.s1 a t:treble_clef.n.01 .
+t00595:s1 a t:treble_clef.n.01 .
 
-tomb:t00595.s2 a t:treble_clef.n.01 .
+t00595:s2 a t:treble_clef.n.01 .
 
-tomb:t00595.im1 a t:photo.n.01 ;
+t00595:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

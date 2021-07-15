@@ -1,37 +1,38 @@
+@prefix t00144: <https://noordergraf.rug.nl/tomb/t00144#> .
 
 tomb:t00144 a t:tombstone.n.01 ;
-  :image tomb:t00144.im1 ;
+  :image t00144:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00144.p1 ,
-       tomb:t00144.p2 ;
+  :ent t00144:p1 ,
+       t00144:p2 ;
   :quo "HUN HEENGAAN WAS MET HUN HEILAND" ;
-  :sym tomb:t00144.s1 .
+  :sym t00144:s1 .
 
-tomb:t00144.p1 a t:person.n.01 ;
+t00144:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dod "XX-XX-1940" ;
   :nam "ELZINA WILTENS" ;
-  :rol tomb:t00144.r1 .
+  :rol t00144:r1 .
 
-tomb:t00144.p2 a t:person.n.01 ;
+t00144:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dod "XX-XX-1949" ;
   :nam "APKO DE GROOT" ;
-  :rol tomb:t00144.r2 .
+  :rol t00144:r2 .
 
-tomb:t00144.r1 a t:mother.n.01 .
+t00144:r1 a t:mother.n.01 .
 
-tomb:t00144.r2 a t:father.n.01 .
+t00144:r2 a t:father.n.01 .
 
-tomb:t00144.s1 a t:composite.n.01 ;
-  :prt tomb:t00144.s2 ,
-       tomb:t00144.s3 .
+t00144:s1 a t:composite.n.01 ;
+  :prt t00144:s2 ,
+       t00144:s3 .
 
-tomb:t00144.s2 a t:frond.n.01 .
+t00144:s2 a t:frond.n.01 .
 
-tomb:t00144.s3 a t:ribbon.n.01 .
+t00144:s3 a t:ribbon.n.01 .
 
-tomb:t00144.im1 a t:photo.n.01 ;
+t00144:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

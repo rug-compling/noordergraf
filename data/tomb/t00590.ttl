@@ -1,32 +1,33 @@
+@prefix t00590: <https://noordergraf.rug.nl/tomb/t00590#> .
 
 tomb:t00590 a t:tombstone.n.01 ;
-  :image tomb:t00590.im1 ;
+  :image t00590:im1 ;
   :site site:gr9951TNwinsum ;
-  :ent tomb:t00590.p1 ,
-       tomb:t00590.p2 .
+  :ent t00590:p1 ,
+       t00590:p2 .
 
-tomb:t00590.o1 a t:manufacturer.n.02 ;
+t00590:o1 a t:manufacturer.n.02 ;
   :hco "89242" ;
-  :thm tomb:t00590.o2 .
+  :thm t00590:o2 .
 
-tomb:t00590.o2 a t:stone.n.02 .
+t00590:o2 a t:stone.n.02 .
 
-tomb:t00590.p1 a t:person.n.01 ;
+t00590:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1860-08-02" ;
   :dod "1938-02-03" ;
   :nam "JAM TIMMER" ;
-  :occ tomb:t00590.o1 ;
-  :rol tomb:t00590.r1 .
+  :occ t00590:o1 ;
+  :rol t00590:r1 .
 
-tomb:t00590.p2 a t:person.n.01 ;
+t00590:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "HENDRINA WEG" .
 
-tomb:t00590.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00590.p2 .
+t00590:r1 a t:spouse.n.01 ;
+  :tgt t00590:p2 .
 
-tomb:t00590.im1 a t:photo.n.01 ;
+t00590:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,28 +1,29 @@
+@prefix t00169: <https://noordergraf.rug.nl/tomb/t00169#> .
 
 tomb:t00169 a t:tombstone.n.01 ;
-  :image tomb:t00169.im1 ;
+  :image t00169:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00169.p1 ;
-  :ref tomb:t00169.v1 .
+  :ent t00169:p1 ;
+  :ref t00169:v1 .
 
-tomb:t00169.b1 a t:John.n.05 ;
-  :prt tomb:t00169.c1 .
+t00169:b1 a t:John.n.05 ;
+  :prt t00169:c1 .
 
-tomb:t00169.c1 a t:chapter.n.01 ;
+t00169:c1 a t:chapter.n.01 ;
   :ord 2 ;
-  :prt tomb:t00169.v2 .
+  :prt t00169:v2 .
 
-tomb:t00169.p1 a t:family.n.04 ;
+t00169:p1 a t:family.n.04 ;
   :nam "POLL" .
 
-tomb:t00169.v1 a t:part.n.09 ;
+t00169:v1 a t:part.n.09 ;
   :nam "A" .
 
-tomb:t00169.v2 a t:verse.n.01 ;
+t00169:v2 a t:verse.n.01 ;
   :ord 2 ;
-  :prt tomb:t00169.v1 .
+  :prt t00169:v1 .
 
-tomb:t00169.im1 a t:photo.n.01 ;
+t00169:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

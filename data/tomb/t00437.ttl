@@ -1,41 +1,42 @@
+@prefix t00437: <https://noordergraf.rug.nl/tomb/t00437#> .
 
 tomb:t00437 a t:tombstone.n.01 ;
-  :image tomb:t00437.im1 ;
+  :image t00437:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00437.p1 ,
-       tomb:t00437.p2 ;
+  :ent t00437:p1 ,
+       t00437:p2 ;
   :quo "ALS MENS WAS JE UNIEK ZOALS JE WAS \\ WIE JE WAS, DAT BLIJFT \\ WE MISSEN JE HEEL ERG" ;
-  :sym tomb:t00437.s1 .
+  :sym t00437:s1 .
 
-tomb:t00437.p1 a t:person.n.01 ;
+t00437:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1925-01-22" ;
   :dod "1990-01-07" ;
   :nam "HENK DRENT" ;
-  :rol tomb:t00437.r1 ,
-       tomb:t00437.r2 .
+  :rol t00437:r1 ,
+       t00437:r2 .
 
-tomb:t00437.p2 a t:person.n.01 ;
+t00437:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1931-05-26" ;
   :dod "2005-03-17" ;
   :nam "WILHELMINA GEERTRUIDA BUDDE" ;
-  :rol tomb:t00437.r3 .
+  :rol t00437:r3 .
 
-tomb:t00437.r1 a t:husband.n.01 ;
-  :tgt tomb:t00437.p2 .
+t00437:r1 a t:husband.n.01 ;
+  :tgt t00437:p2 .
 
-tomb:t00437.r2 a t:father.n.01 ;
+t00437:r2 a t:father.n.01 ;
   :att "ZORGZAME" ;
-  :tgt tomb:t00437.p3 .
+  :tgt t00437:p3 .
 
-tomb:t00437.r3 a t:mother.n.01 ;
+t00437:r3 a t:mother.n.01 ;
   :att "ZORGZAME" ;
-  :tgt tomb:t00437.p3 .
+  :tgt t00437:p3 .
 
-tomb:t00437.s1 a t:car.n.01 .
+t00437:s1 a t:car.n.01 .
 
-tomb:t00437.im1 a t:photo.n.01 ;
+t00437:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

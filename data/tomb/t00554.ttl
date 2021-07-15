@@ -1,45 +1,46 @@
+@prefix t00554: <https://noordergraf.rug.nl/tomb/t00554#> .
 
 tomb:t00554 a t:tombstone.n.01 ;
-  :image tomb:t00554.im1 ;
+  :image t00554:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00554.p1 ;
+  :ent t00554:p1 ;
   :quo "RUST ZACHT, \\ GELIEFDE BROEDER."@nld ;
-  :sym tomb:t00554.s1 .
+  :sym t00554:s1 .
 
-tomb:t00554.c1 a t:city.n.01 ;
+t00554:c1 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00554.o1 a t:teacher.n.01 ;
+t00554:o1 a t:teacher.n.01 ;
   :hco "13320" ;
-  :loc tomb:t00554.c1 .
+  :loc t00554:c1 .
 
-tomb:t00554.p1 a t:person.n.01 ;
+t00554:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1849-01-16" ;
   :dod "1909-05-27" ;
   :nam "H.J. TOP" ;
-  :occ tomb:t00554.o1 ;
-  :rol tomb:t00554.r1 .
+  :occ t00554:o1 ;
+  :rol t00554:r1 .
 
-tomb:t00554.r1 a t:brother.n.01 ;
+t00554:r1 a t:brother.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00554.s1 a t:composite.n.01 ;
-  :prt tomb:t00554.s2 ,
-       tomb:t00554.s3 ,
-       tomb:t00554.s4 ,
-       tomb:t00554.s5 .
+t00554:s1 a t:composite.n.01 ;
+  :prt t00554:s2 ,
+       t00554:s3 ,
+       t00554:s4 ,
+       t00554:s5 .
 
-tomb:t00554.s2 a t:book.n.02 .
+t00554:s2 a t:book.n.02 .
 
-tomb:t00554.s3 a t:frond.n.01 .
+t00554:s3 a t:frond.n.01 .
 
-tomb:t00554.s4 a t:frond.n.01 .
+t00554:s4 a t:frond.n.01 .
 
-tomb:t00554.s5 a t:ribbon.n.01 .
+t00554:s5 a t:ribbon.n.01 .
 
-tomb:t00554.im1 a t:photo.n.01 ;
+t00554:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

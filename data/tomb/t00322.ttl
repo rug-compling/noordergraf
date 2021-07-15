@@ -1,47 +1,48 @@
+@prefix t00322: <https://noordergraf.rug.nl/tomb/t00322#> .
 
 tomb:t00322 a t:tombstone.n.01 ;
-  :image tomb:t00322.im1 ;
+  :image t00322:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00322.p1 ,
-       tomb:t00322.p2 ;
-  :sym tomb:t00322.s1 .
+  :ent t00322:p1 ,
+       t00322:p2 ;
+  :sym t00322:s1 .
 
-tomb:t00322.a1 a t:weeping.a.02 .
+t00322:a1 a t:weeping.a.02 .
 
-tomb:t00322.p1 a t:person.n.01 ;
+t00322:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1864-04-21" ;
   :dod "1932-04-20" ;
   :nam "AALTJE ZOMER" ;
   :ref "PSALM 23:1" ;
-  :rol tomb:t00322.r1 ,
-       tomb:t00322.r2 ,
-       tomb:t00322.r3 .
+  :rol t00322:r1 ,
+       t00322:r2 ,
+       t00322:r3 .
 
-tomb:t00322.p2 a t:person.n.01 ;
+t00322:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1861-10-31" ;
   :dod "1936-08-19" ;
   :nam "GERRIT SCHOLTEN" ;
   :ref "PSALM 84:12C" ;
-  :rol tomb:t00322.r4 .
+  :rol t00322:r4 .
 
-tomb:t00322.r1 a t:wife.n.01 ;
+t00322:r1 a t:wife.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00322.p2 .
+  :tgt t00322:p2 .
 
-tomb:t00322.r2 a t:mother.n.01 .
+t00322:r2 a t:mother.n.01 .
 
-tomb:t00322.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00322.p2 .
+t00322:r3 a t:spouse.n.01 ;
+  :tgt t00322:p2 .
 
-tomb:t00322.r4 a t:father.n.01 ;
+t00322:r4 a t:father.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00322.s1 a t:willow.n.01 ;
-  :att tomb:t00322.a1 .
+t00322:s1 a t:willow.n.01 ;
+  :att t00322:a1 .
 
-tomb:t00322.im1 a t:photo.n.01 ;
+t00322:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

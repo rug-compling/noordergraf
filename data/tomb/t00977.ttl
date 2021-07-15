@@ -1,45 +1,46 @@
+@prefix t00977: <https://noordergraf.rug.nl/tomb/t00977#> .
 
 tomb:t00977 a t:tombstone.n.01 ;
-  :image tomb:t00977.im1 ;
-  :ent tomb:t00977.p1 ,
-       tomb:t00977.p2 ,
-       tomb:t00977.p3 ,
-       tomb:t00977.p4 ;
+  :image t00977:im1 ;
+  :ent t00977:p1 ,
+       t00977:p2 ,
+       t00977:p3 ,
+       t00977:p4 ;
   :ref "GEZANG 22"@nld .
 
-tomb:t00977.c1 a t:village.n.02 ;
+t00977:c1 a t:village.n.02 ;
   :geo place:Glimmen2755495 ;
   :place "GLIMMEN" .
 
-tomb:t00977.p1 a t:person.n.01 ;
+t00977:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1891-12-06" ;
   :dod "1918-10-29" ;
   :nam "JANTJE MULDER" ;
-  :pod tomb:t00977.c1 .
+  :pod t00977:c1 .
 
-tomb:t00977.p2 a t:person.n.01 ;
+t00977:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1895-05-20" ;
   :dod "1918-10-31" ;
   :nam "LUCAS MULDER" ;
-  :pod tomb:t00977.c1 .
+  :pod t00977:c1 .
 
-tomb:t00977.p3 a t:person.n.01 ;
+t00977:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1865-11-15" ;
   :dod "1938-04-12" ;
   :nam "ROELF MULDER" ;
-  :pod tomb:t00977.c1 .
+  :pod t00977:c1 .
 
-tomb:t00977.p4 a t:person.n.01 ;
+t00977:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1859-01-11" ;
   :dod "1945-12-15" ;
   :nam "JANTJE MULDER-GORTMAKER" ;
-  :pod tomb:t00977.c1 .
+  :pod t00977:c1 .
 
-tomb:t00977.im1 a t:photo.n.01 ;
+t00977:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,63 +1,64 @@
+@prefix t00384: <https://noordergraf.rug.nl/tomb/t00384#> .
 
 tomb:t00384 a t:tombstone.n.01 ;
-  :image tomb:t00384.im1 ;
+  :image t00384:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00384.p1 ,
-       tomb:t00384.p2 ,
-       tomb:t00384.p3 ;
+  :ent t00384:p1 ,
+       t00384:p2 ,
+       t00384:p3 ;
   :quo "ZIJN HEENGAAN WAS VREDE" ;
-  :sym tomb:t00384.s1 .
+  :sym t00384:s1 .
 
-tomb:t00384.c1 a t:village.n.02 ;
+t00384:c1 a t:village.n.02 ;
   :geo place:Augustinusga2759611 ;
   :place "AUGUSTINUSGA" .
 
-tomb:t00384.c2 a t:village.n.02 ;
+t00384:c2 a t:village.n.02 ;
   :geo place:Gerkesklooster2755574 ;
   :place "GERKESKLOOSTER" .
 
-tomb:t00384.c3 a t:village.n.02 ;
+t00384:c3 a t:village.n.02 ;
   :geo place:Surhuisterveen2746558 ;
   :place "SURHUISTERVEEN" .
 
-tomb:t00384.c4 a t:hamlet.n.03 ;
+t00384:c4 a t:hamlet.n.03 ;
   :geo place:Lutkepost2751365 ;
   :place "LUTKEPOST" .
 
-tomb:t00384.p1 a t:person.n.01 ;
+t00384:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1860-11-28" ;
   :dod "1946-02-15" ;
   :nam "ALLE IJTSMA" ;
-  :pob tomb:t00384.c1 ;
-  :pod tomb:t00384.c2 ;
-  :rol tomb:t00384.r1 .
+  :pob t00384:c1 ;
+  :pod t00384:c2 ;
+  :rol t00384:r1 .
 
-tomb:t00384.p2 a t:person.n.01 ;
+t00384:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1866-02-02" ;
   :dod "1928-09-07" ;
   :nam "AALTJE VAN DELLEN" ;
-  :pob tomb:t00384.c3 ;
-  :pod tomb:t00384.c4 ;
-  :rol tomb:t00384.r2 .
+  :pob t00384:c3 ;
+  :pod t00384:c4 ;
+  :rol t00384:r2 .
 
-tomb:t00384.p3 a t:family.n.04 ;
+t00384:p3 a t:family.n.04 ;
   :nam "IJTSMA" .
 
-tomb:t00384.r1 a t:parent.n.01 .
+t00384:r1 a t:parent.n.01 .
 
-tomb:t00384.r2 a t:parent.n.01 .
+t00384:r2 a t:parent.n.01 .
 
-tomb:t00384.s1 a t:composite.n.01 ;
-  :prt tomb:t00384.s2 ,
-       tomb:t00384.s3 .
+t00384:s1 a t:composite.n.01 ;
+  :prt t00384:s2 ,
+       t00384:s3 .
 
-tomb:t00384.s2 a t:frond.n.01 .
+t00384:s2 a t:frond.n.01 .
 
-tomb:t00384.s3 a t:ribbon.n.01 .
+t00384:s3 a t:ribbon.n.01 .
 
-tomb:t00384.im1 a t:photo.n.01 ;
+t00384:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

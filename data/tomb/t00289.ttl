@@ -1,81 +1,82 @@
+@prefix t00289: <https://noordergraf.rug.nl/tomb/t00289#> .
 
 tomb:t00289 a t:tombstone.n.01 ;
-  :image tomb:t00289.im1 ;
+  :image t00289:im1 ;
   :site site:gr9985SCoosternieland ;
-  :ent tomb:t00289.p1 ,
-       tomb:t00289.p2 ;
-  :ref tomb:t00289.v1 ;
-  :sym tomb:t00289.s1 .
+  :ent t00289:p1 ,
+       t00289:p2 ;
+  :ref t00289:v1 ;
+  :sym t00289:s1 .
 
-tomb:t00289.b1 a t:Isaiah.n.01 ;
-  :prt tomb:t00289.c5 .
+t00289:b1 a t:Isaiah.n.01 ;
+  :prt t00289:c5 .
 
-tomb:t00289.c1 a t:village.n.02 ;
+t00289:c1 a t:village.n.02 ;
   :geo place:Spijk2746935 ;
   :place "SPIJK" .
 
-tomb:t00289.c2 a t:village.n.02 ;
+t00289:c2 a t:village.n.02 ;
   :geo place:Oosternieland2749429 ;
   :place "OOSTERNIELAND" .
 
-tomb:t00289.c3 a t:more.r.01 ;
-  :op1 tomb:t00289.m1 ;
-  :op2 tomb:t00289.m2 .
+t00289:c3 a t:more.r.01 ;
+  :op1 t00289:m1 ;
+  :op2 t00289:m2 .
 
-tomb:t00289.c4 a t:village.n.02 ;
+t00289:c4 a t:village.n.02 ;
   :geo place:Uithuizermeeden2745968 ;
   :place "UITHUIZERMEEDEN" .
 
-tomb:t00289.c5 a t:chapter.n.01 ;
+t00289:c5 a t:chapter.n.01 ;
   :ord 57 ;
-  :prt tomb:t00289.v1 .
+  :prt t00289:v1 .
 
-tomb:t00289.m1 a t:measure.n.02 .
+t00289:m1 a t:measure.n.02 .
 
-tomb:t00289.m2 a t:measure.n.02 ;
-  :mem tomb:t00289.u1 ;
+t00289:m2 a t:measure.n.02 ;
+  :mem t00289:u1 ;
   :qua 40 .
 
-tomb:t00289.o1 a t:elder.n.03 ;
-  :dur tomb:t00289.m1 ;
+t00289:o1 a t:elder.n.03 ;
+  :dur t00289:m1 ;
   :hco "14000" ;
-  :loc tomb:t00289.c4 ;
-  :org tomb:t00289.o2 .
+  :loc t00289:c4 ;
+  :org t00289:o2 .
 
-tomb:t00289.o2 a t:community.n.02 ;
+t00289:o2 a t:community.n.02 ;
   :nam "CHRISTELIJKE GEREFORMEERDE GEMEENTE" .
 
-tomb:t00289.p1 a t:person.n.01 ;
+t00289:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1807-09-19" ;
   :dod "1891-01-31" ;
   :nam "KORNELIS J. BUURMA" ;
-  :occ tomb:t00289.o1 ;
-  :pob tomb:t00289.c1 ;
-  :pod tomb:t00289.c2 ;
-  :rol tomb:t00289.r1 .
+  :occ t00289:o1 ;
+  :pob t00289:c1 ;
+  :pod t00289:c2 ;
+  :rol t00289:r1 .
 
-tomb:t00289.p2 a t:person.n.01 ;
+t00289:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "D.W. JENSEMA" .
 
-tomb:t00289.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00289.p2 .
+t00289:r1 a t:spouse.n.01 ;
+  :tgt t00289:p2 .
 
-tomb:t00289.s1 a t:composite.n.01 ;
-  :prt tomb:t00289.s2 ,
-       tomb:t00289.s3 .
+t00289:s1 a t:composite.n.01 ;
+  :prt t00289:s2 ,
+       t00289:s3 .
 
-tomb:t00289.s2 a t:frond.n.01 .
+t00289:s2 a t:frond.n.01 .
 
-tomb:t00289.s3 a t:frond.n.01 .
+t00289:s3 a t:frond.n.01 .
 
-tomb:t00289.u1 a t:year.n.01 .
+t00289:u1 a t:year.n.01 .
 
-tomb:t00289.v1 a t:verse.n.01 ;
+t00289:v1 a t:verse.n.01 ;
   :ord 2 .
 
-tomb:t00289.im1 a t:photo.n.01 ;
+t00289:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

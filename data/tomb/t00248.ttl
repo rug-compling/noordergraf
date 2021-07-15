@@ -1,29 +1,30 @@
+@prefix t00248: <https://noordergraf.rug.nl/tomb/t00248#> .
 
 tomb:t00248 a t:tombstone.n.01 ;
-  :image tomb:t00248.im1 ;
+  :image t00248:im1 ;
   :site site:gr9751BBharen ;
-  :ent tomb:t00248.p1 ;
-  :sym tomb:t00248.s1 .
+  :ent t00248:p1 ;
+  :sym t00248:s1 .
 
-tomb:t00248.c1 a t:village.n.02 ;
+t00248:c1 a t:village.n.02 ;
   :geo place:Zeerijp2744003 ;
   :place "ZEERIJP" .
 
-tomb:t00248.c2 a t:city.n.01 ;
+t00248:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00248.p1 a t:person.n.01 ;
+t00248:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1868-08-24" ;
   :dod "1950-11-03" ;
   :nam "TRIJNTJE VELDMAN" ;
-  :pob tomb:t00248.c1 ;
-  :pod tomb:t00248.c2 .
+  :pob t00248:c1 ;
+  :pod t00248:c2 .
 
-tomb:t00248.s1 a t:frond.n.01 .
+t00248:s1 a t:frond.n.01 .
 
-tomb:t00248.im1 a t:photo.n.01 ;
+t00248:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

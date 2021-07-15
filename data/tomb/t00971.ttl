@@ -1,41 +1,42 @@
+@prefix t00971: <https://noordergraf.rug.nl/tomb/t00971#> .
 
 tomb:t00971 a t:tombstone.n.01 ;
-  :image tomb:t00971.im1 ;
+  :image t00971:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00971.p1 ,
-       tomb:t00971.p2 ;
+  :ent t00971:p1 ,
+       t00971:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00971.s1 .
+  :sym t00971:s1 .
 
-tomb:t00971.c1 a t:village.n.02 ;
+t00971:c1 a t:village.n.02 ;
   :geo place:Noordlaren2749857 ;
   :place "NOORDLAREN" .
 
-tomb:t00971.c2 a t:municipality.n.01 ;
+t00971:c2 a t:municipality.n.01 ;
   :geo place:Haren2754841 ;
-  :mem tomb:t00971.c1 ;
+  :mem t00971:c1 ;
   :place "HAREN" .
 
-tomb:t00971.p1 a t:person.n.01 ;
+t00971:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1864-09-03" ;
   :dod "1950-07-26" ;
   :nam "EGBERTIEN BORGMAN" ;
-  :pob tomb:t00971.c1 ;
-  :pod tomb:t00971.c1 ;
-  :rol tomb:t00971.r1 .
+  :pob t00971:c1 ;
+  :pod t00971:c1 ;
+  :rol t00971:r1 .
 
-tomb:t00971.p2 a t:person.n.01 ;
+t00971:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H. HEMMES" .
 
-tomb:t00971.r1 a t:spouse.n.01 ;
+t00971:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00971.p2 .
+  :tgt t00971:p2 .
 
-tomb:t00971.s1 a t:butterfly.n.01 .
+t00971:s1 a t:butterfly.n.01 .
 
-tomb:t00971.im1 a t:photo.n.01 ;
+t00971:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,46 +1,47 @@
+@prefix t00097: <https://noordergraf.rug.nl/tomb/t00097#> .
 
 tomb:t00097 a t:tombstone.n.01 ;
-  :image tomb:t00097.im1 ;
+  :image t00097:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00097.p1 ,
-       tomb:t00097.p2 ;
-  :sym tomb:t00097.s1 .
+  :ent t00097:p1 ,
+       t00097:p2 ;
+  :sym t00097:s1 .
 
-tomb:t00097.c1 a t:city.n.01 ;
+t00097:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00097.c2 a t:village.n.02 ;
+t00097:c2 a t:village.n.02 ;
   :geo place:Aduard2759961 ;
   :place "ADUARD" .
 
-tomb:t00097.c3 a t:village.n.02 ;
+t00097:c3 a t:village.n.02 ;
   :geo place:Slochteren2747143 ;
   :place "SLOCHTEREN" .
 
-tomb:t00097.p1 a t:person.n.01 ;
+t00097:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1870-05-08" ;
   :dod "1944-11-12" ;
   :nam "HENERIKA JAKOBA IWEMA" ;
-  :pob tomb:t00097.c2 ;
-  :pod tomb:t00097.c1 ;
-  :rol tomb:t00097.r1 .
+  :pob t00097:c2 ;
+  :pod t00097:c1 ;
+  :rol t00097:r1 .
 
-tomb:t00097.p2 a t:person.n.01 ;
+t00097:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1872-07-18" ;
   :dod "1960-06-06" ;
   :nam "HEIJO TEN HAVE" ;
-  :pob tomb:t00097.c3 ;
-  :pod tomb:t00097.c1 .
+  :pob t00097:c3 ;
+  :pod t00097:c1 .
 
-tomb:t00097.r1 a t:husband.n.01 ;
-  :tgt tomb:t00097.p2 .
+t00097:r1 a t:husband.n.01 ;
+  :tgt t00097:p2 .
 
-tomb:t00097.s1 a t:frond.n.01 .
+t00097:s1 a t:frond.n.01 .
 
-tomb:t00097.im1 a t:photo.n.01 ;
+t00097:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

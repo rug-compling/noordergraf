@@ -1,36 +1,37 @@
+@prefix t01074: <https://noordergraf.rug.nl/tomb/t01074#> .
 
 tomb:t01074 a t:tombstone.n.01 ;
-  :image tomb:t01074.im1 ;
+  :image t01074:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t01074.p1 ,
-       tomb:t01074.p2 ;
+  :ent t01074:p1 ,
+       t01074:p2 ;
   :lan "NLD" ;
-  :ref tomb:t01074.v1 .
+  :ref t01074:v1 .
 
-tomb:t01074.b1 a t:Epistle_to_the_Ephesians.n.01 ;
-  :prt tomb:t01074.c1 .
+t01074:b1 a t:Epistle_to_the_Ephesians.n.01 ;
+  :prt t01074:c1 .
 
-tomb:t01074.c1 a t:chapter.n.01 ;
+t01074:c1 a t:chapter.n.01 ;
   :ord 2 ;
-  :prt tomb:t01074.v1 .
+  :prt t01074:v1 .
 
-tomb:t01074.p1 a t:person.n.01 ;
+t01074:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1883-10-27" ;
   :dod "1958-08-12" ;
   :nam "PIETER DE WIT" .
 
-tomb:t01074.p2 a t:person.n.01 ;
+t01074:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1886-03-23" ;
   :dod "1969-03-15" ;
   :nam "CORNELIA ELEMA" .
 
-tomb:t01074.v1 a t:verse.n.01 ;
+t01074:v1 a t:verse.n.01 ;
   :ord 8 ;
   :txt "DOOR GENADE ZIJT GIJ BEHOUDEN" .
 
-tomb:t01074.im1 a t:photo.n.01 ;
+t01074:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

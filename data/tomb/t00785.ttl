@@ -1,47 +1,48 @@
+@prefix t00785: <https://noordergraf.rug.nl/tomb/t00785#> .
 
 tomb:t00785 a t:tombstone.n.01 ;
-  :image tomb:t00785.im1 ;
+  :image t00785:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00785.p1 ,
-       tomb:t00785.p2 ;
+  :ent t00785:p1 ,
+       t00785:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :ref tomb:t00785.v1 .
+  :ref t00785:v1 .
 
-tomb:t00785.b1 a t:Matthew.n.02 ;
-  :prt tomb:t00785.c3 .
+t00785:b1 a t:Matthew.n.02 ;
+  :prt t00785:c3 .
 
-tomb:t00785.c1 a t:village.n.02 ;
+t00785:c1 a t:village.n.02 ;
   :geo place:Westenesch2744776 ;
   :place "WESTENESCH" .
 
-tomb:t00785.c2 a t:town.n.01 ;
+t00785:c2 a t:town.n.01 ;
   :geo place:Emmen2756136 ;
   :place "EMMEN" .
 
-tomb:t00785.c3 a t:chapter.n.01 ;
+t00785:c3 a t:chapter.n.01 ;
   :ord 5 ;
-  :prt tomb:t00785.v1 .
+  :prt t00785:v1 .
 
-tomb:t00785.p1 a t:person.n.01 ;
+t00785:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1857-11-05" ;
   :dod "1943-12-29" ;
   :nam "JANS KOERS" ;
-  :pob tomb:t00785.c1 ;
-  :pod tomb:t00785.c2 ;
-  :rol tomb:t00785.r1 .
+  :pob t00785:c1 ;
+  :pod t00785:c2 ;
+  :rol t00785:r1 .
 
-tomb:t00785.p2 a t:person.n.01 ;
+t00785:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "GRIETIEN EVERTS" .
 
-tomb:t00785.r1 a t:widower.n.01 ;
-  :tgt tomb:t00785.p2 .
+t00785:r1 a t:widower.n.01 ;
+  :tgt t00785:p2 .
 
-tomb:t00785.v1 a t:verse.n.01 ;
+t00785:v1 a t:verse.n.01 ;
   :ord 7 .
 
-tomb:t00785.im1 a t:photo.n.01 ;
+t00785:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

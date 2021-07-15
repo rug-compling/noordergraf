@@ -1,35 +1,36 @@
+@prefix t00308: <https://noordergraf.rug.nl/tomb/t00308#> .
 
 tomb:t00308 a t:tombstone.n.01 ;
-  :image tomb:t00308.im1 ;
+  :image t00308:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00308.p1 ;
+  :ent t00308:p1 ;
   :ref "PSALM 90:4,5,6" ;
-  :sym tomb:t00308.s1 .
+  :sym t00308:s1 .
 
-tomb:t00308.c1 a t:town.n.01 ;
+t00308:c1 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00308.m a t:broken.a.01 .
+t00308:m a t:broken.a.01 .
 
-tomb:t00308.p1 a t:person.n.01 ;
+t00308:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1911-04-18" ;
   :dod "1933-01-10" ;
   :nam "KLAAS ENGBERTS" ;
-  :pob tomb:t00308.c1 ;
-  :rol tomb:t00308.r1 ,
-       tomb:t00308.r2 .
+  :pob t00308:c1 ;
+  :rol t00308:r1 ,
+       t00308:r2 .
 
-tomb:t00308.r1 a t:son.n.01 ;
+t00308:r1 a t:son.n.01 ;
   :att "LIEVE" .
 
-tomb:t00308.r2 a t:brother.n.01 .
+t00308:r2 a t:brother.n.01 .
 
-tomb:t00308.s1 a t:frond.n.01 ;
-  :att tomb:t00308.m .
+t00308:s1 a t:frond.n.01 ;
+  :att t00308:m .
 
-tomb:t00308.im1 a t:photo.n.01 ;
+t00308:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,36 +1,37 @@
+@prefix t00644: <https://noordergraf.rug.nl/tomb/t00644#> .
 
 tomb:t00644 a t:tombstone.n.01 ;
-  :image tomb:t00644.im1 ;
+  :image t00644:im1 ;
   :site site:gr9723EJgroningen ;
-  :ent tomb:t00644.p1 ,
-       tomb:t00644.p2 ;
+  :ent t00644:p1 ,
+       t00644:p2 ;
   :lan "NLD" .
 
-tomb:t00644.c1 a t:village.n.02 ;
+t00644:c1 a t:village.n.02 ;
   :geo place:Westerbroek2744764 ;
   :place "WESTERBROEK" .
 
-tomb:t00644.c2 a t:village.n.02 ;
+t00644:c2 a t:village.n.02 ;
   :geo place:Waterhuizen2744974 ;
   :place "WATERHUIZEN" .
 
-tomb:t00644.p1 a t:person.n.01 ;
+t00644:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1874-10-31" ;
   :dod "1935-12-19" ;
   :nam "HARM RIDDERBOS" ;
-  :pob tomb:t00644.c1 ;
-  :pod tomb:t00644.c2 ;
-  :rol tomb:t00644.r1 .
+  :pob t00644:c1 ;
+  :pod t00644:c2 ;
+  :rol t00644:r1 .
 
-tomb:t00644.p2 a t:person.n.01 ;
+t00644:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TRIENTJE GRASHUIS" .
 
-tomb:t00644.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00644.p2 .
+t00644:r1 a t:spouse.n.01 ;
+  :tgt t00644:p2 .
 
-tomb:t00644.im1 a t:photo.n.01 ;
+t00644:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

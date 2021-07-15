@@ -1,36 +1,37 @@
+@prefix t00814: <https://noordergraf.rug.nl/tomb/t00814#> .
 
 tomb:t00814 a t:tombstone.n.01 ;
-  :image tomb:t00814.im1 ;
+  :image t00814:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00814.p1 ;
+  :ent t00814:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00814.s1 ,
-       tomb:t00814.s2 ,
-       tomb:t00814.s3 .
+  :sym t00814:s1 ,
+       t00814:s2 ,
+       t00814:s3 .
 
-tomb:t00814.c1 a t:city.n.01 ;
+t00814:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00814.o1 a t:skipper.n.02 ;
+t00814:o1 a t:skipper.n.02 ;
   :hco "04217" .
 
-tomb:t00814.p1 a t:person.n.01 ;
+t00814:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1858-12-06" ;
   :dod "1913-12-19" ;
   :nam "DERK FREDIK RASKER" ;
-  :occ tomb:t00814.o1 ;
-  :pob tomb:t00814.c1 ;
-  :pod tomb:t00814.c1 .
+  :occ t00814:o1 ;
+  :pob t00814:c1 ;
+  :pod t00814:c1 .
 
-tomb:t00814.s1 a t:frond.n.01 .
+t00814:s1 a t:frond.n.01 .
 
-tomb:t00814.s2 a t:frond.n.01 .
+t00814:s2 a t:frond.n.01 .
 
-tomb:t00814.s3 a t:sandglass.n.01 .
+t00814:s3 a t:sandglass.n.01 .
 
-tomb:t00814.im1 a t:photo.n.01 ;
+t00814:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

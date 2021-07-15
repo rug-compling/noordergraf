@@ -1,37 +1,38 @@
+@prefix t00812: <https://noordergraf.rug.nl/tomb/t00812#> .
 
 tomb:t00812 a t:tombstone.n.01 ;
-  :image tomb:t00812.im1 ;
+  :image t00812:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00812.p1 ;
+  :ent t00812:p1 ;
   :lan "NLD" .
 
-tomb:t00812.c1 a t:city.n.01 ;
+t00812:c1 a t:city.n.01 ;
   :geo place:Bloomington5586244 ;
   :place "BLOOMINGTON" .
 
-tomb:t00812.c2 a t:state.n.01 ;
+t00812:c2 a t:state.n.01 ;
   :geo place:Idaho5596512 ;
-  :mem tomb:t00812.c1 ;
+  :mem t00812:c1 ;
   :place "IDAHO" .
 
-tomb:t00812.c3 a t:country.n.02 ;
+t00812:c3 a t:country.n.02 ;
   :geo place:VerenigdeStaten6252001 ;
-  :mem tomb:t00812.c2 ;
+  :mem t00812:c2 ;
   :place "VERENIGDE STATEN" .
 
-tomb:t00812.c4 a t:town.n.01 ;
+t00812:c4 a t:town.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00812.p1 a t:person.n.01 ;
+t00812:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1885-02-05" ;
   :dod "1906-04-29" ;
   :nam "MELVIN HUGH WELKER" ;
-  :pob tomb:t00812.c1 ;
-  :pod tomb:t00812.c4 .
+  :pob t00812:c1 ;
+  :pod t00812:c4 .
 
-tomb:t00812.im1 a t:photo.n.01 ;
+t00812:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

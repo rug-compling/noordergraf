@@ -1,39 +1,40 @@
+@prefix t00728: <https://noordergraf.rug.nl/tomb/t00728#> .
 
 tomb:t00728 a t:tombstone.n.01 ;
-  :image tomb:t00728.im1 ;
+  :image t00728:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00728.p1 ,
-       tomb:t00728.p2 ;
+  :ent t00728:p1 ,
+       t00728:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00728.s1 .
+  :sym t00728:s1 .
 
-tomb:t00728.a1 a t:weeping.a.02 .
+t00728:a1 a t:weeping.a.02 .
 
-tomb:t00728.c1 a t:village.n.02 ;
+t00728:c1 a t:village.n.02 ;
   :geo place:Weerdinge2744927 ;
   :place "WEERDINGE" .
 
-tomb:t00728.p1 a t:person.n.01 ;
+t00728:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1826-07-30" ;
   :dod "1898-07-07" ;
   :nam "JAN LIPMAN" ;
-  :pob tomb:t00728.c1 ;
-  :pod tomb:t00728.c1 ;
-  :rol tomb:t00728.r1 ;
+  :pob t00728:c1 ;
+  :pod t00728:c1 ;
+  :rol t00728:r1 ;
   :sfx "HZN" .
 
-tomb:t00728.p2 a t:person.n.01 ;
+t00728:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "JANTIEN WILTING" .
 
-tomb:t00728.r1 a t:widower.n.01 ;
-  :tgt tomb:t00728.p2 .
+t00728:r1 a t:widower.n.01 ;
+  :tgt t00728:p2 .
 
-tomb:t00728.s1 a t:willow.n.01 ;
-  :att tomb:t00728.a1 .
+t00728:s1 a t:willow.n.01 ;
+  :att t00728:a1 .
 
-tomb:t00728.im1 a t:photo.n.01 ;
+t00728:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

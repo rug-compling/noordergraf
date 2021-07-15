@@ -1,47 +1,48 @@
+@prefix t00340: <https://noordergraf.rug.nl/tomb/t00340#> .
 
 tomb:t00340 a t:tombstone.n.01 ;
-  :image tomb:t00340.im1 ;
+  :image t00340:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00340.p1 ,
-       tomb:t00340.p2 .
+  :ent t00340:p1 ,
+       t00340:p2 .
 
-tomb:t00340.c1 a t:city.n.01 ;
+t00340:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00340.c2 a t:town.n.01 ;
+t00340:c2 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00340.c3 a t:village.n.02 ;
+t00340:c3 a t:village.n.02 ;
   :geo place:Kloosterveen2752614 ;
   :place "KLOOSTERVEEN" .
 
-tomb:t00340.c4 a t:city.n.01 ;
+t00340:c4 a t:city.n.01 ;
   :geo place:Zwolle2743477 ;
   :place "ZWOLLE" .
 
-tomb:t00340.p1 a t:person.n.01 ;
+t00340:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1848-09-18" ;
   :dod "1903-02-14" ;
   :nam "HENDERIKUS LA GRO" ;
-  :pob tomb:t00340.c1 ;
-  :pod tomb:t00340.c2 .
+  :pob t00340:c1 ;
+  :pod t00340:c2 .
 
-tomb:t00340.p2 a t:person.n.01 ;
+t00340:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1853-01-14" ;
   :dod "1941-01-13" ;
   :nam "PAULINE HAAK" ;
-  :pob tomb:t00340.c3 ;
-  :pod tomb:t00340.c4 ;
-  :rol tomb:t00340.r1 .
+  :pob t00340:c3 ;
+  :pod t00340:c4 ;
+  :rol t00340:r1 .
 
-tomb:t00340.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00340.p1 .
+t00340:r1 a t:spouse.n.01 ;
+  :tgt t00340:p1 .
 
-tomb:t00340.im1 a t:photo.n.01 ;
+t00340:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,17 +1,18 @@
+@prefix t01037: <https://noordergraf.rug.nl/tomb/t01037#> .
 
 tomb:t01037 a t:tombstone.n.01 ;
-  :image tomb:t01037.im1 ;
+  :image t01037:im1 ;
   :site site:gr9804TEnoordhorn ;
-  :ent tomb:t01037.p1 ;
+  :ent t01037:p1 ;
   :quo "RUST ZACHT."@nld .
 
-tomb:t01037.p1 a t:person.n.01 ;
+t01037:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1901-11-30" ;
   :dod "1968-08-19" ;
   :nam "JAN JONKMAN" .
 
-tomb:t01037.im1 a t:photo.n.01 ;
+t01037:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

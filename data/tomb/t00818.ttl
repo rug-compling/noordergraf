@@ -1,32 +1,33 @@
+@prefix t00818: <https://noordergraf.rug.nl/tomb/t00818#> .
 
 tomb:t00818 a t:tombstone.n.01 ;
-  :image tomb:t00818.im1 ;
+  :image t00818:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00818.p1 ,
-       tomb:t00818.p2 ;
+  :ent t00818:p1 ,
+       t00818:p2 ;
   :ref "GEZANG 201"@nld .
 
-tomb:t00818.p1 a t:person.n.01 ;
+t00818:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1911-09-09" ;
   :dod "1945-01-19" ;
   :nam "JOHANNES RAMAKER" ;
-  :rol tomb:t00818.r1 ,
-       tomb:t00818.r2 .
+  :rol t00818:r1 ,
+       t00818:r2 .
 
-tomb:t00818.p2 a t:person.n.01 ;
+t00818:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "M.E. JANSEN" .
 
-tomb:t00818.r1 a t:husband.n.01 ;
+t00818:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00818.p2 .
+  :tgt t00818:p2 .
 
-tomb:t00818.r2 a t:spouse.n.01 ;
+t00818:r2 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00818.p2 .
+  :tgt t00818:p2 .
 
-tomb:t00818.im1 a t:photo.n.01 ;
+t00818:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,34 +1,35 @@
+@prefix t00679: <https://noordergraf.rug.nl/tomb/t00679#> .
 
 tomb:t00679 a t:tombstone.n.01 ;
-  :image tomb:t00679.im1 ;
+  :image t00679:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00679.p1 ,
-       tomb:t00679.p2 ;
+  :ent t00679:p1 ,
+       t00679:p2 ;
   :lan "NLD" .
 
-tomb:t00679.p1 a t:person.n.01 ;
+t00679:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1907-03-25" ;
   :dod "1932-11-03" ;
   :nam "GEESKE VAN DER MEULEN" ;
-  :rol tomb:t00679.r1 .
+  :rol t00679:r1 .
 
-tomb:t00679.p2 a t:person.n.01 ;
+t00679:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1904-12-23" ;
   :dod "1984-01-28" ;
   :nam "GRIET VAN DER MEULEN" ;
-  :rol tomb:t00679.r2 .
+  :rol t00679:r2 .
 
-tomb:t00679.r1 a t:sister.n.01 ;
+t00679:r1 a t:sister.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00679.p3 .
+  :tgt t00679:p3 .
 
-tomb:t00679.r2 a t:sister.n.01 ;
+t00679:r2 a t:sister.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00679.p3 .
+  :tgt t00679:p3 .
 
-tomb:t00679.im1 a t:photo.n.01 ;
+t00679:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

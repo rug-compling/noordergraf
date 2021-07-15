@@ -1,59 +1,60 @@
+@prefix t00974: <https://noordergraf.rug.nl/tomb/t00974#> .
 
 tomb:t00974 a t:tombstone.n.01 ;
-  :image tomb:t00974.im1 ;
+  :image t00974:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00974.p1 ,
-       tomb:t00974.p2 ,
-       tomb:t00974.p3 ;
+  :ent t00974:p1 ,
+       t00974:p2 ,
+       t00974:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00974.s1 ,
-       tomb:t00974.s2 ,
-       tomb:t00974.s3 ,
-       tomb:t00974.s4 .
+  :sym t00974:s1 ,
+       t00974:s2 ,
+       t00974:s3 ,
+       t00974:s4 .
 
-tomb:t00974.c1 a t:town.n.01 ;
+t00974:c1 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00974.c2 a t:village.n.02 ;
+t00974:c2 a t:village.n.02 ;
   :geo place:Scheemda2747661 ;
   :place "SCHEEMDA" .
 
-tomb:t00974.p1 a t:person.n.01 ;
+t00974:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1829-06-13" ;
   :dod "1913-03-23" ;
   :nam "MELLE GEERT VROOM" ;
-  :pob tomb:t00974.c1 ;
-  :pod tomb:t00974.c2 ;
-  :rol tomb:t00974.r1 ,
-       tomb:t00974.r2 .
+  :pob t00974:c1 ;
+  :pod t00974:c2 ;
+  :rol t00974:r1 ,
+       t00974:r2 .
 
-tomb:t00974.p2 a t:person.n.01 ;
+t00974:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TIETJE LEENDERS" .
 
-tomb:t00974.p3 a t:person.n.01 ;
+t00974:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANNECHIEN KNEUBEL" .
 
-tomb:t00974.r1 a t:widower.n.01 ;
-  :bef tomb:t00974.r2 ;
-  :tgt tomb:t00974.p2 .
+t00974:r1 a t:widower.n.01 ;
+  :bef t00974:r2 ;
+  :tgt t00974:p2 .
 
-tomb:t00974.r2 a t:widower.n.01 ;
+t00974:r2 a t:widower.n.01 ;
   :beg "XX-XX-1892" ;
-  :tgt tomb:t00974.p3 .
+  :tgt t00974:p3 .
 
-tomb:t00974.s1 a t:butterfly.n.01 .
+t00974:s1 a t:butterfly.n.01 .
 
-tomb:t00974.s2 a t:oak.n.03 .
+t00974:s2 a t:oak.n.03 .
 
-tomb:t00974.s3 a t:oak.n.03 .
+t00974:s3 a t:oak.n.03 .
 
-tomb:t00974.s4 a t:ribbon.n.01 .
+t00974:s4 a t:ribbon.n.01 .
 
-tomb:t00974.im1 a t:photo.n.01 ;
+t00974:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

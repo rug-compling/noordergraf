@@ -1,46 +1,47 @@
+@prefix t00031: <https://noordergraf.rug.nl/tomb/t00031#> .
 
 tomb:t00031 a t:tombstone.n.01 ;
-  :image tomb:t00031.im1 ;
+  :image t00031:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00031.p1 ,
-       tomb:t00031.p2 ;
-  :sym tomb:t00031.s1 .
+  :ent t00031:p1 ,
+       t00031:p2 ;
+  :sym t00031:s1 .
 
-tomb:t00031.c1 a t:cemetery.n.01 ;
-  :loc tomb:t00031.c2 .
+t00031:c1 a t:cemetery.n.01 ;
+  :loc t00031:c2 .
 
-tomb:t00031.c2 a t:town.n.01 ;
+t00031:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00031.o1 a t:keeper.n.02 ;
+t00031:o1 a t:keeper.n.02 ;
   :hco "58940" ;
-  :loc tomb:t00031.c1 .
+  :loc t00031:c1 .
 
-tomb:t00031.p1 a t:person.n.01 ;
+t00031:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1881-11-04" ;
   :dod "1938-10-06" ;
   :nam "GEERT PIETERS" ;
-  :occ tomb:t00031.o1 ;
-  :rol tomb:t00031.r1 .
+  :occ t00031:o1 ;
+  :rol t00031:r1 .
 
-tomb:t00031.p2 a t:person.n.01 ;
+t00031:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. ALBRONDA" .
 
-tomb:t00031.r1 a t:husband.n.01 ;
-  :tgt tomb:t00031.p2 .
+t00031:r1 a t:husband.n.01 ;
+  :tgt t00031:p2 .
 
-tomb:t00031.s1 a t:composite.n.01 ;
-  :prt tomb:t00031.s2 ,
-       tomb:t00031.s3 .
+t00031:s1 a t:composite.n.01 ;
+  :prt t00031:s2 ,
+       t00031:s3 .
 
-tomb:t00031.s2 a t:frond.n.01 .
+t00031:s2 a t:frond.n.01 .
 
-tomb:t00031.s3 a t:ribbon.n.01 .
+t00031:s3 a t:ribbon.n.01 .
 
-tomb:t00031.im1 a t:photo.n.01 ;
+t00031:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

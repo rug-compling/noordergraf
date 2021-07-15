@@ -1,46 +1,47 @@
+@prefix t01043: <https://noordergraf.rug.nl/tomb/t01043#> .
 
 tomb:t01043 a t:tombstone.n.01 ;
-  :image tomb:t01043.im1 ;
-  :ent tomb:t01043.p1 ,
-       tomb:t01043.p2 ,
-       tomb:t01043.p3 ;
+  :image t01043:im1 ;
+  :ent t01043:p1 ,
+       t01043:p2 ,
+       t01043:p3 ;
   :lan "NLD" .
 
-tomb:t01043.b1 a t:Epistle_to_the_Romans.n.04 ;
-  :prt tomb:t01043.c1 .
+t01043:b1 a t:Epistle_to_the_Romans.n.04 ;
+  :prt t01043:c1 .
 
-tomb:t01043.c1 a t:chapter.n.01 ;
+t01043:c1 a t:chapter.n.01 ;
   :ord 8 ;
-  :prt tomb:t01043.v1 .
+  :prt t01043:v1 .
 
-tomb:t01043.p1 a t:person.n.01 ;
+t01043:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1927-05-01" ;
   :dod "1999-07-23" ;
   :nam "JELTE GEERT HAAKSEMA" ;
-  :ref tomb:t01043.v1 ;
-  :rol tomb:t01043.r1 ,
-       tomb:t01043.r2 .
+  :ref t01043:v1 ;
+  :rol t01043:r1 ,
+       t01043:r2 .
 
-tomb:t01043.p2 a t:person.n.01 ;
+t01043:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "W. BULTEMA" .
 
-tomb:t01043.p3 a t:person.n.01 ;
+t01043:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "B. DIJKINGA" .
 
-tomb:t01043.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01043.p2 .
+t01043:r1 a t:spouse.n.01 ;
+  :tgt t01043:p2 .
 
-tomb:t01043.r2 a t:spouse.n.01 ;
-  :bef tomb:t01043.r1 ;
-  :tgt tomb:t01043.p3 .
+t01043:r2 a t:spouse.n.01 ;
+  :bef t01043:r1 ;
+  :tgt t01043:p3 .
 
-tomb:t01043.v1 a t:verse.n.01 ;
+t01043:v1 a t:verse.n.01 ;
   :ord 37 .
 
-tomb:t01043.im1 a t:photo.n.01 ;
+t01043:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,39 +1,40 @@
+@prefix t00809: <https://noordergraf.rug.nl/tomb/t00809#> .
 
 tomb:t00809 a t:tombstone.n.01 ;
-  :image tomb:t00809.im1 ;
+  :image t00809:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00809.p1 ,
-       tomb:t00809.p2 ;
+  :ent t00809:p1 ,
+       t00809:p2 ;
   :quo "HIER RUST HIJ IN HET \\ STILLE GRAF \\ BEVRIJD VAN ALLE \\ ZORGEN \\ NA 'T LEVEN DAT HEM \\ GOD HIER GAF \\ HOOPT HIJ EEN BLIJDEN \\ MORGEN"@nld ;
-  :sym tomb:t00809.s1 .
+  :sym t00809:s1 .
 
-tomb:t00809.c1 a t:village.n.02 ;
+t00809:c1 a t:village.n.02 ;
   :geo place:Woltersum2744196 ;
   :place "WOLTERSUM" .
 
-tomb:t00809.c2 a t:village.n.02 ;
+t00809:c2 a t:village.n.02 ;
   :geo place:TenBoer2746491 ;
   :place "TEN BOER" .
 
-tomb:t00809.p1 a t:person.n.01 ;
+t00809:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1829-11-15" ;
   :dod "1905-03-20" ;
   :nam "JAN PIETERS VINK" ;
-  :pob tomb:t00809.c1 ;
-  :pod tomb:t00809.c2 ;
-  :rol tomb:t00809.r1 .
+  :pob t00809:c1 ;
+  :pod t00809:c2 ;
+  :rol t00809:r1 .
 
-tomb:t00809.p2 a t:person.n.01 ;
+t00809:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ETJE DERKS BOER" .
 
-tomb:t00809.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00809.p2 .
+t00809:r1 a t:spouse.n.01 ;
+  :tgt t00809:p2 .
 
-tomb:t00809.s1 a t:butterfly.n.01 .
+t00809:s1 a t:butterfly.n.01 .
 
-tomb:t00809.im1 a t:photo.n.01 ;
+t00809:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

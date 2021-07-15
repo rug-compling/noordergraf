@@ -1,34 +1,35 @@
+@prefix t00807: <https://noordergraf.rug.nl/tomb/t00807#> .
 
 tomb:t00807 a t:tombstone.n.01 ;
-  :image tomb:t00807.im1 ;
+  :image t00807:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00807.p1 ;
+  :ent t00807:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00807.s1 ,
-       tomb:t00807.s2 .
+  :sym t00807:s1 ,
+       t00807:s2 .
 
-tomb:t00807.c1 a t:town.n.01 ;
+t00807:c1 a t:town.n.01 ;
   :geo place:KatwijkaandenRijn2753011 ;
   :place "KATWIJK" .
 
-tomb:t00807.c2 a t:city.n.01 ;
+t00807:c2 a t:city.n.01 ;
   :geo place:Hardenberg2754861 ;
   :place "HARDENBERG" .
 
-tomb:t00807.p1 a t:person.n.01 ;
+t00807:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1942-12-02" ;
   :dod "1994-06-08" ;
   :nam "MARIA HUESE-VAN ELK" ,
        "RIET" ;
-  :pob tomb:t00807.c1 ;
-  :pod tomb:t00807.c2 .
+  :pob t00807:c1 ;
+  :pod t00807:c2 .
 
-tomb:t00807.s1 a t:seed.n.02 .
+t00807:s1 a t:seed.n.02 .
 
-tomb:t00807.s2 a t:dandelion.n.01 .
+t00807:s2 a t:dandelion.n.01 .
 
-tomb:t00807.im1 a t:photo.n.01 ;
+t00807:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

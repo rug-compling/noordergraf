@@ -1,45 +1,46 @@
+@prefix t00242: <https://noordergraf.rug.nl/tomb/t00242#> .
 
 tomb:t00242 a t:tombstone.n.01 ;
-  :image tomb:t00242.im1 ;
+  :image t00242:im1 ;
   :site site:gr9751BBharen ;
-  :ent tomb:t00242.p1 ,
-       tomb:t00242.p2 ;
-  :ref tomb:t00242.v1 ;
-  :sym tomb:t00242.s1 .
+  :ent t00242:p1 ,
+       t00242:p2 ;
+  :ref t00242:v1 ;
+  :sym t00242:s1 .
 
-tomb:t00242.b1 a t:John.n.05 ;
-  :prt tomb:t00242.c2 .
+t00242:b1 a t:John.n.05 ;
+  :prt t00242:c2 .
 
-tomb:t00242.c1 a t:town.n.01 ;
+t00242:c1 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00242.c2 a t:chapter.n.01 ;
+t00242:c2 a t:chapter.n.01 ;
   :ord 17 ;
-  :prt tomb:t00242.v1 .
+  :prt t00242:v1 .
 
-tomb:t00242.p1 a t:person.n.01 ;
+t00242:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1849-08-18" ;
   :dod "1932-03-09" ;
   :nam "HENRIKJE BERENDS" ;
-  :pob tomb:t00242.c1 ;
-  :pod tomb:t00242.c1 ;
-  :rol tomb:t00242.r1 .
+  :pob t00242:c1 ;
+  :pod t00242:c1 ;
+  :rol t00242:r1 .
 
-tomb:t00242.p2 a t:person.n.01 ;
+t00242:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "HENDRIK VAN DAM" .
 
-tomb:t00242.r1 a t:widow.n.01 ;
-  :tgt tomb:t00242.p2 .
+t00242:r1 a t:widow.n.01 ;
+  :tgt t00242:p2 .
 
-tomb:t00242.s1 a t:frond.n.01 .
+t00242:s1 a t:frond.n.01 .
 
-tomb:t00242.v1 a t:verse.n.01 ;
+t00242:v1 a t:verse.n.01 ;
   :ord 3 .
 
-tomb:t00242.im1 a t:photo.n.01 ;
+t00242:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

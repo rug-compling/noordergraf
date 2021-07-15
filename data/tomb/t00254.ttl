@@ -1,27 +1,28 @@
+@prefix t00254: <https://noordergraf.rug.nl/tomb/t00254#> .
 
 tomb:t00254 a t:tombstone.n.01 ;
-  :image tomb:t00254.im1 ;
+  :image t00254:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00254.p1 ;
+  :ent t00254:p1 ;
   :quo "ZIJ RUST IN VREDE" ;
-  :sym tomb:t00254.s1 .
+  :sym t00254:s1 .
 
-tomb:t00254.a1 a t:broken.a.01 .
+t00254:a1 a t:broken.a.01 .
 
-tomb:t00254.p1 a t:person.n.01 ;
+t00254:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1862-12-26" ;
   :dod "1909-06-17" ;
   :nam "NAAMKE LIMBORGH" ;
-  :rol tomb:t00254.r1 .
+  :rol t00254:r1 .
 
-tomb:t00254.r1 a t:sister.n.01 ;
+t00254:r1 a t:sister.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00254.s1 a t:column.n.01 ;
-  :att tomb:t00254.a1 .
+t00254:s1 a t:column.n.01 ;
+  :att t00254:a1 .
 
-tomb:t00254.im1 a t:photo.n.01 ;
+t00254:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

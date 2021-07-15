@@ -1,35 +1,36 @@
+@prefix t00116: <https://noordergraf.rug.nl/tomb/t00116#> .
 
 tomb:t00116 a t:tombstone.n.01 ;
-  :image tomb:t00116.im1 ;
+  :image t00116:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00116.p1 ,
-       tomb:t00116.p2 ;
+  :ent t00116:p1 ,
+       t00116:p2 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00116.s1 .
+  :sym t00116:s1 .
 
-tomb:t00116.p1 a t:person.n.01 ;
+t00116:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1912-03-14" ;
   :dod "1952-12-06" ;
   :nam "ALBERT SANTING" ;
-  :rol tomb:t00116.r1 .
+  :rol t00116:r1 .
 
-tomb:t00116.p2 a t:person.n.01 ;
+t00116:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1916-02-14" ;
   :dod "2012-08-06" ;
   :nam "ALIDA POTT" ;
-  :rol tomb:t00116.r4 .
+  :rol t00116:r4 .
 
-tomb:t00116.r1 a t:father.n.01 ;
+t00116:r1 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00116.r4 a t:mother.n.01 ;
+t00116:r4 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00116.s1 a t:rose.n.01 .
+t00116:s1 a t:rose.n.01 .
 
-tomb:t00116.im1 a t:photo.n.01 ;
+t00116:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

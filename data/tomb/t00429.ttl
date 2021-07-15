@@ -1,33 +1,34 @@
+@prefix t00429: <https://noordergraf.rug.nl/tomb/t00429#> .
 
 tomb:t00429 a t:tombstone.n.01 ;
-  :image tomb:t00429.im1 ;
+  :image t00429:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00429.p1 ,
-       tomb:t00429.p2 .
+  :ent t00429:p1 ,
+       t00429:p2 .
 
-tomb:t00429.p1 a t:person.n.01 ;
+t00429:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "XX-XX-1903" ;
   :dod "XX-XX-1974" ;
   :nam "JAN VISSER" ;
-  :rol tomb:t00429.r1 .
+  :rol t00429:r1 .
 
-tomb:t00429.p2 a t:person.n.01 ;
+t00429:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "XX-XX-1912" ;
   :dod "XX-XX-1978" ;
   :nam "AAFJE YTJE JANSMA" ;
-  :rol tomb:t00429.r2 .
+  :rol t00429:r2 .
 
-tomb:t00429.r1 a t:parent.n.01 ;
+t00429:r1 a t:parent.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00429.p3 .
+  :tgt t00429:p3 .
 
-tomb:t00429.r2 a t:parent.n.01 ;
+t00429:r2 a t:parent.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00429.p3 .
+  :tgt t00429:p3 .
 
-tomb:t00429.im1 a t:photo.n.01 ;
+t00429:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

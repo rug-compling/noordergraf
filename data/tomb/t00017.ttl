@@ -1,47 +1,48 @@
+@prefix t00017: <https://noordergraf.rug.nl/tomb/t00017#> .
 
 tomb:t00017 a t:tombstone.n.01 ;
-  :image tomb:t00017.im1 ;
+  :image t00017:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00017.p1 ,
-       tomb:t00017.p2 .
+  :ent t00017:p1 ,
+       t00017:p2 .
 
-tomb:t00017.c1 a t:city.n.01 ;
+t00017:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00017.c2 a t:village.n.02 ;
+t00017:c2 a t:village.n.02 ;
   :geo place:Lutkewierum2751364 ;
   :place "LUTKEWIERUM" .
 
-tomb:t00017.c3 a t:city.n.01 ;
+t00017:c3 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00017.c4 a t:village.n.02 ;
+t00017:c4 a t:village.n.02 ;
   :geo place:Zuidlaren2743680 ;
   :place "ZUIDLAREN" .
 
-tomb:t00017.p1 a t:person.n.01 ;
+t00017:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1833-03-09" ;
   :dod "1937-11-10" ;
   :nam "DOUWE DE JONG" ;
-  :pob tomb:t00017.c2 ;
-  :pod tomb:t00017.c1 .
+  :pob t00017:c2 ;
+  :pod t00017:c1 .
 
-tomb:t00017.p2 a t:person.n.01 ;
+t00017:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1866-01-08" ;
   :dod "1940-06-01" ;
   :nam "HELENA EHLHARDT" ;
-  :pob tomb:t00017.c3 ;
-  :pod tomb:t00017.c4 ;
-  :rol tomb:t00017.r1 .
+  :pob t00017:c3 ;
+  :pod t00017:c4 ;
+  :rol t00017:r1 .
 
-tomb:t00017.r1 a t:widow.n.01 ;
-  :tgt tomb:t00017.p1 .
+t00017:r1 a t:widow.n.01 ;
+  :tgt t00017:p1 .
 
-tomb:t00017.im1 a t:photo.n.01 ;
+t00017:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

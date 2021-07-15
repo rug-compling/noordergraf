@@ -1,61 +1,62 @@
+@prefix t01049: <https://noordergraf.rug.nl/tomb/t01049#> .
 
 tomb:t01049 a t:tombstone.n.01 ;
-  :image tomb:t01049.im1 ;
+  :image t01049:im1 ;
   :site site:gr9367PAde_wilp ;
-  :ent tomb:t01049.g1 ,
-       tomb:t01049.p1 ,
-       tomb:t01049.p2 ,
-       tomb:t01049.p3 ;
+  :ent t01049:g1 ,
+       t01049:p1 ,
+       t01049:p2 ,
+       t01049:p3 ;
   :ref "PSALM 103:8"@nld ;
-  :sym tomb:t01049.s1 ,
-       tomb:t01049.s2 .
+  :sym t01049:s1 ,
+       t01049:s2 .
 
-tomb:t01049.c1 a t:village.n.02 ;
+t01049:c1 a t:village.n.02 ;
   :geo place:Siegerswoude2747339 ;
   :place "SIEGERSWOUDE" .
 
-tomb:t01049.c3 a t:less.r.01 ;
-  :op1 tomb:t01049.m1 ;
-  :op2 tomb:t01049.m2 .
+t01049:c3 a t:less.r.01 ;
+  :op1 t01049:m1 ;
+  :op2 t01049:m2 .
 
-tomb:t01049.g1 a t:group.n.01 ;
-  :rol tomb:t01049.r1 .
+t01049:g1 a t:group.n.01 ;
+  :rol t01049:r1 .
 
-tomb:t01049.g2 a t:group.n.01 ;
-  :mem tomb:t01049.p2 ,
-       tomb:t01049.p3 .
+t01049:g2 a t:group.n.01 ;
+  :mem t01049:p2 ,
+       t01049:p3 .
 
-tomb:t01049.m1 a t:measure.n.02 .
+t01049:m1 a t:measure.n.02 .
 
-tomb:t01049.m2 a t:measure.n.02 ;
-  :mem tomb:t01049.u1 ;
+t01049:m2 a t:measure.n.02 ;
+  :mem t01049:u1 ;
   :qua 18 .
 
-tomb:t01049.p1 a t:person.n.01 ;
+t01049:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
-  :age tomb:t01049.m1 ;
+  :age t01049:m1 ;
   :dod "1925-07-18" ;
   :nam "PIETJE VENEMA" ;
-  :pod tomb:t01049.c1 .
+  :pod t01049:c1 .
 
-tomb:t01049.p2 a t:person.n.01 ;
+t01049:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "T. VENEMA" .
 
-tomb:t01049.p3 a t:person.n.01 ;
+t01049:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H. VENEMA-BOSMA" .
 
-tomb:t01049.r1 a t:child.n.02 ;
-  :tgt tomb:t01049.g2 .
+t01049:r1 a t:child.n.02 ;
+  :tgt t01049:g2 .
 
-tomb:t01049.s1 a t:frond.n.01 .
+t01049:s1 a t:frond.n.01 .
 
-tomb:t01049.s2 a t:ribbon.n.01 .
+t01049:s2 a t:ribbon.n.01 .
 
-tomb:t01049.u1 a t:year.n.01 .
+t01049:u1 a t:year.n.01 .
 
-tomb:t01049.im1 a t:photo.n.01 ;
+t01049:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

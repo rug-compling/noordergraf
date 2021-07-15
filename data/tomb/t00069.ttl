@@ -1,39 +1,40 @@
+@prefix t00069: <https://noordergraf.rug.nl/tomb/t00069#> .
 
 tomb:t00069 a t:tombstone.n.01 ;
-  :image tomb:t00069.im1 ;
+  :image t00069:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00069.p1 ,
-       tomb:t00069.p2 ,
-       tomb:t00069.p3 .
+  :ent t00069:p1 ,
+       t00069:p2 ,
+       t00069:p3 .
 
-tomb:t00069.p1 a t:person.n.01 ;
+t00069:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1867-11-12" ;
   :dod "1943-07-08" ;
   :nam "AUKE KORNELIA VEENHUIS" ;
-  :rol tomb:t00069.r1 ,
-       tomb:t00069.r2 ,
-       tomb:t00069.r3 .
+  :rol t00069:r1 ,
+       t00069:r2 ,
+       t00069:r3 .
 
-tomb:t00069.p2 a t:person.n.01 ;
+t00069:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "T. DE BOER" .
 
-tomb:t00069.p3 a t:person.n.01 ;
+t00069:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "J. KNAPPER" .
 
-tomb:t00069.r1 a t:wife.n.01 ;
+t00069:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00069.p2 .
+  :tgt t00069:p2 .
 
-tomb:t00069.r2 a t:mother.n.01 .
+t00069:r2 a t:mother.n.01 .
 
-tomb:t00069.r3 a t:widow.n.01 ;
-  :bef tomb:t00069.r1 ;
-  :tgt tomb:t00069.p3 .
+t00069:r3 a t:widow.n.01 ;
+  :bef t00069:r1 ;
+  :tgt t00069:p3 .
 
-tomb:t00069.im1 a t:photo.n.01 ;
+t00069:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

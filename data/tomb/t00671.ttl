@@ -1,63 +1,64 @@
+@prefix t00671: <https://noordergraf.rug.nl/tomb/t00671#> .
 
 tomb:t00671 a t:tombstone.n.01 ;
-  :image tomb:t00671.im1 ;
+  :image t00671:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00671.g1 ,
-       tomb:t00671.g2 ,
-       tomb:t00671.g3 ,
-       tomb:t00671.p1 ,
-       tomb:t00671.p2 ;
+  :ent t00671:g1 ,
+       t00671:g2 ,
+       t00671:g3 ,
+       t00671:p1 ,
+       t00671:p2 ;
   :quo "IK BEN DE OPSTANDING EN HET LEVEN"@nld ;
-  :ref tomb:t00671.v1 .
+  :ref t00671:v1 .
 
-tomb:t00671.b1 a t:John.n.05 ;
-  :prt tomb:t00671.c3 .
+t00671:b1 a t:John.n.05 ;
+  :prt t00671:c3 .
 
-tomb:t00671.c3 a t:chapter.n.01 ;
+t00671:c3 a t:chapter.n.01 ;
   :ord 25 ;
-  :prt tomb:t00671.v1 .
+  :prt t00671:v1 .
 
-tomb:t00671.g1 a t:group.n.01 ;
-  :mem tomb:t00671.p1 ,
-       tomb:t00671.p2 ;
-  :rol tomb:t00671.r1 ,
-       tomb:t00671.r2 .
+t00671:g1 a t:group.n.01 ;
+  :mem t00671:p1 ,
+       t00671:p2 ;
+  :rol t00671:r1 ,
+       t00671:r2 .
 
-tomb:t00671.g2 a t:group.n.01 ;
-  :rol tomb:t00671.r3 .
+t00671:g2 a t:group.n.01 ;
+  :rol t00671:r3 .
 
-tomb:t00671.g3 a t:group.n.01 ;
-  :rol tomb:t00671.r4 .
+t00671:g3 a t:group.n.01 ;
+  :rol t00671:r4 .
 
-tomb:t00671.p1 a t:person.n.01 ;
+t00671:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1891-09-14" ;
   :dod "1966-04-15" ;
   :nam "CORNELUS A. DE VRIES" .
 
-tomb:t00671.p2 a t:person.n.01 ;
+t00671:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1894-06-11" ;
   :dod "1958-12-21" ;
   :nam "FETJE ELZINGA" .
 
-tomb:t00671.r1 a t:parent.n.01 ;
+t00671:r1 a t:parent.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00671.g2 .
+  :tgt t00671:g2 .
 
-tomb:t00671.r2 a t:grandparent.n.01 ;
-  :tgt tomb:t00671.g3 .
+t00671:r2 a t:grandparent.n.01 ;
+  :tgt t00671:g3 .
 
-tomb:t00671.r3 a t:child.n.02 ;
-  :tgt tomb:t00671.g1 .
+t00671:r3 a t:child.n.02 ;
+  :tgt t00671:g1 .
 
-tomb:t00671.r4 a t:grandchild.n.01 ;
-  :tgt tomb:t00671.g1 .
+t00671:r4 a t:grandchild.n.01 ;
+  :tgt t00671:g1 .
 
-tomb:t00671.v1 a t:verse.n.01 ;
+t00671:v1 a t:verse.n.01 ;
   :ord 11 .
 
-tomb:t00671.im1 a t:photo.n.01 ;
+t00671:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

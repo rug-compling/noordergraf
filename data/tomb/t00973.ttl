@@ -1,43 +1,44 @@
+@prefix t00973: <https://noordergraf.rug.nl/tomb/t00973#> .
 
 tomb:t00973 a t:tombstone.n.01 ;
-  :image tomb:t00973.im1 ;
+  :image t00973:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00973.g1 ,
-       tomb:t00973.g2 ,
-       tomb:t00973.p1 ,
-       tomb:t00973.p2 ;
+  :ent t00973:g1 ,
+       t00973:g2 ,
+       t00973:p1 ,
+       t00973:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00973.s1 .
+  :sym t00973:s1 .
 
-tomb:t00973.a1 a t:weeping.a.02 .
+t00973:a1 a t:weeping.a.02 .
 
-tomb:t00973.g1 a t:group.n.01 ;
-  :mem tomb:t00973.p2 ,
-       tomb:t00973.p3 ;
-  :rol tomb:t00973.r1 .
+t00973:g1 a t:group.n.01 ;
+  :mem t00973:p2 ,
+       t00973:p3 ;
+  :rol t00973:r1 .
 
-tomb:t00973.g2 a t:group.n.01 ;
-  :rol tomb:t00973.r2 .
+t00973:g2 a t:group.n.01 ;
+  :rol t00973:r2 .
 
-tomb:t00973.p1 a t:person.n.01 ;
+t00973:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN FLIERMAN" .
 
-tomb:t00973.p2 a t:person.n.01 ;
+t00973:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "BETJE SCHUILING" .
 
-tomb:t00973.r1 a t:parent.n.01 ;
-  :tgt tomb:t00973.g2 .
+t00973:r1 a t:parent.n.01 ;
+  :tgt t00973:g2 .
 
-tomb:t00973.r2 a t:child.n.02 ;
+t00973:r2 a t:child.n.02 ;
   :att "DANKBARE" ;
-  :tgt tomb:t00973.g1 .
+  :tgt t00973:g1 .
 
-tomb:t00973.s1 a t:willow.n.01 ;
-  :att tomb:t00973.a1 .
+t00973:s1 a t:willow.n.01 ;
+  :att t00973:a1 .
 
-tomb:t00973.im1 a t:photo.n.01 ;
+t00973:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

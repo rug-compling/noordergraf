@@ -1,45 +1,46 @@
+@prefix t00366: <https://noordergraf.rug.nl/tomb/t00366#> .
 
 tomb:t00366 a t:tombstone.n.01 ;
-  :image tomb:t00366.im1 ;
+  :image t00366:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00366.p1 ,
-       tomb:t00366.p2 ;
+  :ent t00366:p1 ,
+       t00366:p2 ;
   :quo "RUST ZACHT LIEVE MOEDER" ;
-  :sym tomb:t00366.s1 .
+  :sym t00366:s1 .
 
-tomb:t00366.a1 a t:weeping.a.02 .
+t00366:a1 a t:weeping.a.02 .
 
-tomb:t00366.c1 a t:town.n.01 ;
+t00366:c1 a t:town.n.01 ;
   :geo place:Eelde2756408 ;
   :place "EELDE" .
 
-tomb:t00366.c2 a t:village.n.02 ;
+t00366:c2 a t:village.n.02 ;
   :geo place:Tynaarlo2746038 ;
   :place "TYNAARLO" .
 
-tomb:t00366.p1 a t:person.n.01 ;
+t00366:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1896-02-10" ;
   :dod "1952-06-13" ;
   :nam "ANNA ARENDS" ;
-  :pob tomb:t00366.c1 ;
-  :pod tomb:t00366.c2 ;
-  :rol tomb:t00366.r1 ,
-       tomb:t00366.r2 .
+  :pob t00366:c1 ;
+  :pod t00366:c2 ;
+  :rol t00366:r1 ,
+       t00366:r2 .
 
-tomb:t00366.p2 a t:person.n.01 ;
+t00366:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "DOEDE BARELDS" .
 
-tomb:t00366.r1 a t:widow.n.01 ;
-  :tgt tomb:t00366.p2 .
+t00366:r1 a t:widow.n.01 ;
+  :tgt t00366:p2 .
 
-tomb:t00366.r2 a t:mother.n.01 .
+t00366:r2 a t:mother.n.01 .
 
-tomb:t00366.s1 a t:willow.n.01 ;
-  :att tomb:t00366.a1 .
+t00366:s1 a t:willow.n.01 ;
+  :att t00366:a1 .
 
-tomb:t00366.im1 a t:photo.n.01 ;
+t00366:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

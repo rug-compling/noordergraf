@@ -1,41 +1,42 @@
+@prefix t00535: <https://noordergraf.rug.nl/tomb/t00535#> .
 
 tomb:t00535 a t:tombstone.n.01 ;
-  :image tomb:t00535.im1 ;
+  :image t00535:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00535.p1 ;
+  :ent t00535:p1 ;
   :quo "DIT GRAF MAG NIET WORDEN OPGEGRAVEN"@nld ,
        "RUST ZACHT"@nld ;
-  :sym tomb:t00535.s1 .
+  :sym t00535:s1 .
 
-tomb:t00535.a1 a t:weeping.a.02 .
+t00535:a1 a t:weeping.a.02 .
 
-tomb:t00535.c1 a t:village.n.02 ;
+t00535:c1 a t:village.n.02 ;
   :geo place:Wildervank2744431 ;
   :place "WILDERVANK" .
 
-tomb:t00535.c2 a t:hospital.n.01 ;
-  :loc tomb:t00535.c3 .
+t00535:c2 a t:hospital.n.01 ;
+  :loc t00535:c3 .
 
-tomb:t00535.c3 a t:city.n.01 ;
+t00535:c3 a t:city.n.01 ;
   :geo place:Rotterdam2747891 ;
   :place "ROTTERDAM" .
 
-tomb:t00535.p1 a t:person.n.01 ;
+t00535:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1845-10-03" ;
   :dod "1915-05-14" ;
   :nam "GEERT OLTHOF" ;
-  :pob tomb:t00535.c1 ;
-  :pod tomb:t00535.c2 ;
-  :rol tomb:t00535.r1 .
+  :pob t00535:c1 ;
+  :pod t00535:c2 ;
+  :rol t00535:r1 .
 
-tomb:t00535.r1 a t:brother.n.01 ;
+t00535:r1 a t:brother.n.01 ;
   :att "GELIEFDE" .
 
-tomb:t00535.s1 a t:willow.n.01 ;
-  :att tomb:t00535.a1 .
+t00535:s1 a t:willow.n.01 ;
+  :att t00535:a1 .
 
-tomb:t00535.im1 a t:photo.n.01 ;
+t00535:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

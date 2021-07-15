@@ -1,63 +1,64 @@
+@prefix t01029: <https://noordergraf.rug.nl/tomb/t01029#> .
 
 tomb:t01029 a t:tombstone.n.01 ;
-  :image tomb:t01029.im1 ;
+  :image t01029:im1 ;
   :site site:gr9906PPbierum ;
-  :ent tomb:t01029.p1 ,
-       tomb:t01029.p2 ,
-       tomb:t01029.p3 ;
+  :ent t01029:p1 ,
+       t01029:p2 ,
+       t01029:p3 ;
   :lan "NLD" ;
-  :sym tomb:t01029.s1 ,
-       tomb:t01029.s2 ,
-       tomb:t01029.s3 ,
-       tomb:t01029.s5 .
+  :sym t01029:s1 ,
+       t01029:s2 ,
+       t01029:s3 ,
+       t01029:s5 .
 
-tomb:t01029.c1 a t:village.n.02 ;
+t01029:c1 a t:village.n.02 ;
   :geo place:Uithuizen2745970 ;
   :place "UITHUIZEN" .
 
-tomb:t01029.c2 a t:village.n.02 ;
+t01029:c2 a t:village.n.02 ;
   :geo place:Bierum2758983 ;
   :place "BIERUM" .
 
-tomb:t01029.p1 a t:person.n.01 ;
+t01029:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1797-02-11" ;
   :dod "1868-02-24" ;
   :nam "HINDRIKTJE TEWES VAN HUIZEN" ;
-  :pob tomb:t01029.c1 ;
-  :pod tomb:t01029.c2 ;
-  :rol tomb:t01029.r1 .
+  :pob t01029:c1 ;
+  :pod t01029:c2 ;
+  :rol t01029:r1 .
 
-tomb:t01029.p2 a t:person.n.01 ;
+t01029:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "N.E. WOLTHUIS" .
 
-tomb:t01029.p3 a t:person.n.01 ;
-  :loc tomb:t01029.c2 ;
+t01029:p3 a t:person.n.01 ;
+  :loc t01029:c2 ;
   :nam "W. MEIJER" ;
-  :occ tomb:t01029.r2 .
+  :occ t01029:r2 .
 
-tomb:t01029.r1 a t:widow.n.01 ;
-  :tgt tomb:t01029.p2 .
+t01029:r1 a t:widow.n.01 ;
+  :tgt t01029:p2 .
 
-tomb:t01029.r2 a t:designer.n.01 ;
+t01029:r2 a t:designer.n.01 ;
   :tgt tomb:t01029 .
 
-tomb:t01029.s1 a t:butterfly.n.01 .
+t01029:s1 a t:butterfly.n.01 .
 
-tomb:t01029.s2 a t:sandglass.n.01 .
+t01029:s2 a t:sandglass.n.01 .
 
-tomb:t01029.s3 a t:wing.n.01 .
+t01029:s3 a t:wing.n.01 .
 
-tomb:t01029.s4 a t:bird.n.01 ;
-  :mem tomb:t01029.s3 .
+t01029:s4 a t:bird.n.01 ;
+  :mem t01029:s3 .
 
-tomb:t01029.s5 a t:wing.n.01 .
+t01029:s5 a t:wing.n.01 .
 
-tomb:t01029.s6 a t:bird.n.01 ;
-  :mem tomb:t01029.s5 .
+t01029:s6 a t:bird.n.01 ;
+  :mem t01029:s5 .
 
-tomb:t01029.im1 a t:photo.n.01 ;
+t01029:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,30 +1,31 @@
+@prefix t00011: <https://noordergraf.rug.nl/tomb/t00011#> .
 
 tomb:t00011 a t:tombstone.n.01 ;
-  :image tomb:t00011.im1 ;
+  :image t00011:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00011.p1 ,
-       tomb:t00011.p2 ;
-  :sym tomb:t00011.s1 .
+  :ent t00011:p1 ,
+       t00011:p2 ;
+  :sym t00011:s1 .
 
-tomb:t00011.p1 a t:person.n.01 ;
+t00011:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1877-03-01" ;
   :dod "1938-12-04" ;
   :nam "LAMMERT LEERTOUWER" ;
-  :rol tomb:t00011.r1 .
+  :rol t00011:r1 .
 
-tomb:t00011.p2 a t:person.n.01 ;
+t00011:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1876-03-08" ;
   :dod "1961-09-28" ;
   :nam "GEESJE KROL" .
 
-tomb:t00011.r1 a t:husband.n.01 ;
-  :tgt tomb:t00011.p2 .
+t00011:r1 a t:husband.n.01 ;
+  :tgt t00011:p2 .
 
-tomb:t00011.s1 a t:frond.n.01 .
+t00011:s1 a t:frond.n.01 .
 
-tomb:t00011.im1 a t:photo.n.01 ;
+t00011:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

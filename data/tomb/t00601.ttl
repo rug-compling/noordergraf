@@ -1,37 +1,38 @@
+@prefix t00601: <https://noordergraf.rug.nl/tomb/t00601#> .
 
 tomb:t00601 a t:tombstone.n.01 ;
-  :image tomb:t00601.im1 ;
+  :image t00601:im1 ;
   :site site:gr9951TNwinsum ;
-  :ent tomb:t00601.p1 ;
+  :ent t00601:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00601.s1 ,
-       tomb:t00601.s2 ,
-       tomb:t00601.s3 .
+  :sym t00601:s1 ,
+       t00601:s2 ,
+       t00601:s3 .
 
-tomb:t00601.c1 a t:village.n.02 ;
+t00601:c1 a t:village.n.02 ;
   :geo place:Onderdendam2749601 ;
   :place "ONDERDENDAM" .
 
-tomb:t00601.c2 a t:village.n.02 ;
+t00601:c2 a t:village.n.02 ;
   :geo place:Winsum2744337 ;
   :place "WINSUM" .
 
-tomb:t00601.p1 a t:person.n.01 ;
+t00601:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1798-08-29" ;
   :dod "1882-01-06" ;
   :nam "JAN WILLEMS KOITER" ;
-  :pob tomb:t00601.c1 ;
-  :pod tomb:t00601.c2 ;
+  :pob t00601:c1 ;
+  :pod t00601:c2 ;
   :quo "SINTS DE STICHTING DER CHR. GER. GEMEENTE ALHIER IN 1843, WAS HIJ EERST DIAKEN, DAARNA OUDERLING DIER GEMEENTE" .
 
-tomb:t00601.s1 a t:angel.n.01 .
+t00601:s1 a t:angel.n.01 .
 
-tomb:t00601.s2 a t:butterfly.n.01 .
+t00601:s2 a t:butterfly.n.01 .
 
-tomb:t00601.s3 a t:cross.n.03 .
+t00601:s3 a t:cross.n.03 .
 
-tomb:t00601.im1 a t:photo.n.01 ;
+t00601:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

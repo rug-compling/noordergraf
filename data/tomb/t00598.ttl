@@ -1,68 +1,69 @@
+@prefix t00598: <https://noordergraf.rug.nl/tomb/t00598#> .
 
 tomb:t00598 a t:tombstone.n.01 ;
-  :image tomb:t00598.im1 ;
+  :image t00598:im1 ;
   :site site:gr9951TNwinsum ;
-  :ent tomb:t00598.p1 ,
-       tomb:t00598.p2 ,
-       tomb:t00598.p3 ;
+  :ent t00598:p1 ,
+       t00598:p2 ,
+       t00598:p3 ;
   :ref "PSALM 37:5"@nld ;
-  :sym tomb:t00598.s1 .
+  :sym t00598:s1 .
 
-tomb:t00598.p1 a t:person.n.01 ;
+t00598:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1917-11-19" ;
   :dod "1989-11-15" ;
   :nam "HERMAN JOHAN POORT" ;
-  :rol tomb:t00598.r1 ,
-       tomb:t00598.r2 ,
-       tomb:t00598.r3 .
+  :rol t00598:r1 ,
+       t00598:r2 ,
+       t00598:r3 .
 
-tomb:t00598.p2 a t:person.n.01 ;
+t00598:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1913-11-21" ;
   :dod "2004-03-19" ;
   :nam "ANTJE BREMER" ;
-  :rol tomb:t00598.r4 ,
-       tomb:t00598.r5 .
+  :rol t00598:r4 ,
+       t00598:r5 .
 
-tomb:t00598.p3 a t:person.n.01 ;
-  :rol tomb:t00598.r6 ,
-       tomb:t00598.r7 ,
-       tomb:t00598.r8 ,
-       tomb:t00598.r9 .
+t00598:p3 a t:person.n.01 ;
+  :rol t00598:r6 ,
+       t00598:r7 ,
+       t00598:r8 ,
+       t00598:r9 .
 
-tomb:t00598.r1 a t:husband.n.01 ;
+t00598:r1 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00598.p2 .
+  :tgt t00598:p2 .
 
-tomb:t00598.r2 a t:father.n.01 ;
-  :tgt tomb:t00598.p3 .
+t00598:r2 a t:father.n.01 ;
+  :tgt t00598:p3 .
 
-tomb:t00598.r3 a t:grandfather.n.01 ;
-  :tgt tomb:t00598.p3 .
+t00598:r3 a t:grandfather.n.01 ;
+  :tgt t00598:p3 .
 
-tomb:t00598.r4 a t:mother.n.01 ;
+t00598:r4 a t:mother.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00598.p3 .
+  :tgt t00598:p3 .
 
-tomb:t00598.r5 a t:grandmother.n.01 ;
-  :tgt tomb:t00598.p3 .
+t00598:r5 a t:grandmother.n.01 ;
+  :tgt t00598:p3 .
 
-tomb:t00598.r6 a t:child.n.02 ;
-  :tgt tomb:t00598.p1 .
+t00598:r6 a t:child.n.02 ;
+  :tgt t00598:p1 .
 
-tomb:t00598.r7 a t:child.n.02 ;
-  :tgt tomb:t00598.p2 .
+t00598:r7 a t:child.n.02 ;
+  :tgt t00598:p2 .
 
-tomb:t00598.r8 a t:grandchild.n.01 ;
-  :tgt tomb:t00598.p1 .
+t00598:r8 a t:grandchild.n.01 ;
+  :tgt t00598:p1 .
 
-tomb:t00598.r9 a t:grandchild.n.01 ;
-  :tgt tomb:t00598.p2 .
+t00598:r9 a t:grandchild.n.01 ;
+  :tgt t00598:p2 .
 
-tomb:t00598.s1 a t:treble_clef.n.01 .
+t00598:s1 a t:treble_clef.n.01 .
 
-tomb:t00598.im1 a t:photo.n.01 ;
+t00598:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

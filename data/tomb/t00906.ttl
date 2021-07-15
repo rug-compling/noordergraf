@@ -1,44 +1,45 @@
+@prefix t00906: <https://noordergraf.rug.nl/tomb/t00906#> .
 
 tomb:t00906 a t:tombstone.n.01 ;
-  :image tomb:t00906.im1 ;
+  :image t00906:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00906.p1 ,
-       tomb:t00906.p2 ;
+  :ent t00906:p1 ,
+       t00906:p2 ;
   :lan "NLD" .
 
-tomb:t00906.c1 a t:village.n.02 ;
+t00906:c1 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00906.c2 a t:village.n.02 ;
+t00906:c2 a t:village.n.02 ;
   :geo place:Zuidhorn2743694 ;
   :place "ZUIDHORN" .
 
-tomb:t00906.c3 a t:village.n.02 ;
+t00906:c3 a t:village.n.02 ;
   :geo place:Roden2748026 ;
   :place "RODEN" .
 
-tomb:t00906.p1 a t:person.n.01 ;
+t00906:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1870-10-01" ;
   :dod "1936-01-04" ;
   :nam "J.J. TEN HOOR" ;
-  :pob tomb:t00906.c1 ;
-  :pod tomb:t00906.c2 ;
-  :rol tomb:t00906.r1 .
+  :pob t00906:c1 ;
+  :pod t00906:c2 ;
+  :rol t00906:r1 .
 
-tomb:t00906.p2 a t:person.n.01 ;
+t00906:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1869-03-19" ;
   :dod "1954-02-23" ;
   :nam "A. TALENS" ;
-  :pob tomb:t00906.c3 ;
-  :pod tomb:t00906.c1 .
+  :pob t00906:c3 ;
+  :pod t00906:c1 .
 
-tomb:t00906.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00906.p2 .
+t00906:r1 a t:spouse.n.01 ;
+  :tgt t00906:p2 .
 
-tomb:t00906.im1 a t:photo.n.01 ;
+t00906:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

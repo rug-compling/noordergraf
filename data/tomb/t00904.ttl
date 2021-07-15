@@ -1,30 +1,31 @@
+@prefix t00904: <https://noordergraf.rug.nl/tomb/t00904#> .
 
 tomb:t00904 a t:tombstone.n.01 ;
-  :image tomb:t00904.im1 ;
-  :ent tomb:t00904.p1 ;
+  :image t00904:im1 ;
+  :ent t00904:p1 ;
   :quo "O DEATH, WHERE IS THY STING? \\ O GRAVE, WHERE IS THY VICTORY? \\ BUT THANKS BE TO GOD, WHICH \\ GIVETH US THE VICTORY THROUGH \\ OUR LORD JESUS CHRIST, THE \\ SAVIOUR OF THE WORLD."@eng ;
-  :sym tomb:t00904.s1 ,
-       tomb:t00904.s2 ,
-       tomb:t00904.s3 .
+  :sym t00904:s1 ,
+       t00904:s2 ,
+       t00904:s3 .
 
-tomb:t00904.c1 a t:hamlet.n.03 ;
+t00904:c1 a t:hamlet.n.03 ;
   :geo place:Diepswal2756869 ;
   :place "DIEPSWAL" .
 
-tomb:t00904.p1 a t:person.n.01 ;
+t00904:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1883-12-02" ;
   :dod "1975-09-05" ;
   :nam "JAN MEEK" ;
-  :pob tomb:t00904.c1 .
+  :pob t00904:c1 .
 
-tomb:t00904.s1 a t:frond.n.01 .
+t00904:s1 a t:frond.n.01 .
 
-tomb:t00904.s2 a t:chrismon.n.01 .
+t00904:s2 a t:chrismon.n.01 .
 
-tomb:t00904.s3 a t:cross.n.03 .
+t00904:s3 a t:cross.n.03 .
 
-tomb:t00904.im1 a t:photo.n.01 ;
+t00904:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,44 +1,45 @@
+@prefix t00702: <https://noordergraf.rug.nl/tomb/t00702#> .
 
 tomb:t00702 a t:tombstone.n.01 ;
-  :image tomb:t00702.im1 ;
+  :image t00702:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00702.p1 ,
-       tomb:t00702.p2 ;
+  :ent t00702:p1 ,
+       t00702:p2 ;
   :lan "NLD" ;
-  :ref tomb:t00702.v1 ;
-  :sym tomb:t00702.s1 .
+  :ref t00702:v1 ;
+  :sym t00702:s1 .
 
-tomb:t00702.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00702.c1 .
+t00702:b1 a t:Revelation.n.04 ;
+  :prt t00702:c1 .
 
-tomb:t00702.c1 a t:chapter.n.01 ;
+t00702:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00702.v1 .
+  :prt t00702:v1 .
 
-tomb:t00702.p1 a t:person.n.01 ;
+t00702:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1893-01-11" ;
   :dod "1947-08-30" ;
   :nam "HENDRIK KLASENS" ;
-  :rol tomb:t00702.r1 .
+  :rol t00702:r1 .
 
-tomb:t00702.p2 a t:person.n.01 ;
+t00702:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1897-11-22" ;
   :dod "1977-06-07" ;
   :nam "JANTJE TIMMERMANS" .
 
-tomb:t00702.r1 a t:spouse.n.01 ;
+t00702:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00702.p2 .
+  :tgt t00702:p2 .
 
-tomb:t00702.s1 a t:frond.n.01 .
+t00702:s1 a t:frond.n.01 .
 
-tomb:t00702.v1 a t:verse.n.01 ;
+t00702:v1 a t:verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN" .
 
-tomb:t00702.im1 a t:photo.n.01 ;
+t00702:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

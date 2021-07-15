@@ -1,18 +1,19 @@
+@prefix t00421: <https://noordergraf.rug.nl/tomb/t00421#> .
 
 tomb:t00421 a t:tombstone.n.01 ;
-  :image tomb:t00421.im1 ;
+  :image t00421:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00421.p1 ;
+  :ent t00421:p1 ;
   :quo "DE VREZE DES HEREN IS HET BEGIN DER WIJSHEID" .
 
-tomb:t00421.p1 a t:person.n.01 ;
+t00421:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1893-09-09" ;
   :dod "1982-06-24" ;
   :nam "LYTJE WILLEM" ,
        "W. DIJKSTRA" .
 
-tomb:t00421.im1 a t:photo.n.01 ;
+t00421:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,51 +1,52 @@
+@prefix t00226: <https://noordergraf.rug.nl/tomb/t00226#> .
 
 tomb:t00226 a t:tombstone.n.01 ;
-  :image tomb:t00226.im1 ;
+  :image t00226:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00226.p1 ,
-       tomb:t00226.p2 ;
-  :sym tomb:t00226.s1 .
+  :ent t00226:p1 ,
+       t00226:p2 ;
+  :sym t00226:s1 .
 
-tomb:t00226.a1 a t:inverted.a.01 .
+t00226:a1 a t:inverted.a.01 .
 
-tomb:t00226.c1 a t:hamlet.n.03 ;
+t00226:c1 a t:hamlet.n.03 ;
   :geo place:Euvelgunne2755982 ;
   :place "EUVELGUNNE" .
 
-tomb:t00226.c2 a t:city.n.01 ;
+t00226:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00226.p1 a t:person.n.01 ;
+t00226:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1843-10-27" ;
   :dod "1923-02-07" ;
   :nam "AUKTJE VELTHUIS" ;
-  :pob tomb:t00226.c1 ;
-  :pod tomb:t00226.c2 ;
-  :rol tomb:t00226.r1 .
+  :pob t00226:c1 ;
+  :pod t00226:c2 ;
+  :rol t00226:r1 .
 
-tomb:t00226.p2 a t:person.n.01 ;
+t00226:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "KOOP JANS EMMELKAMP" .
 
-tomb:t00226.r1 a t:widow.n.01 ;
+t00226:r1 a t:widow.n.01 ;
   :beg "15-07-1902" ;
-  :tgt tomb:t00226.p2 .
+  :tgt t00226:p2 .
 
-tomb:t00226.s1 a t:composite.n.01 ;
-  :prt tomb:t00226.s2 ,
-       tomb:t00226.s3 ,
-       tomb:t00226.s4 .
+t00226:s1 a t:composite.n.01 ;
+  :prt t00226:s2 ,
+       t00226:s3 ,
+       t00226:s4 .
 
-tomb:t00226.s2 a t:sandglass.n.01 .
+t00226:s2 a t:sandglass.n.01 .
 
-tomb:t00226.s3 a t:scythe.n.01 .
+t00226:s3 a t:scythe.n.01 .
 
-tomb:t00226.s4 a t:torch.n.01 ;
-  :att tomb:t00226.a1 .
+t00226:s4 a t:torch.n.01 ;
+  :att t00226:a1 .
 
-tomb:t00226.im1 a t:photo.n.01 ;
+t00226:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

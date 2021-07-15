@@ -1,47 +1,48 @@
+@prefix t00184: <https://noordergraf.rug.nl/tomb/t00184#> .
 
 tomb:t00184 a t:tombstone.n.01 ;
-  :image tomb:t00184.im1 ;
+  :image t00184:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00184.p1 ,
-       tomb:t00184.p2 ;
-  :sym tomb:t00184.s1 .
+  :ent t00184:p1 ,
+       t00184:p2 ;
+  :sym t00184:s1 .
 
-tomb:t00184.p1 a t:person.n.01 ;
+t00184:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1884-09-29" ;
   :dod "1932-07-14" ;
   :nam "CARL GOTTFRIED ENSDORFF" ;
-  :rol tomb:t00184.r1 ,
-       tomb:t00184.r2 ,
-       tomb:t00184.r3 .
+  :rol t00184:r1 ,
+       t00184:r2 ,
+       t00184:r3 .
 
-tomb:t00184.p2 a t:person.n.01 ;
+t00184:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1888-03-08" ;
   :dod "1968-12-14" ;
   :nam "HENDERIKA MAGNIN" ;
-  :rol tomb:t00184.r4 .
+  :rol t00184:r4 .
 
-tomb:t00184.r1 a t:husband.n.01 ;
+t00184:r1 a t:husband.n.01 ;
   :att "LIEVE" .
 
-tomb:t00184.r2 a t:father.n.01 .
+t00184:r2 a t:father.n.01 .
 
-tomb:t00184.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00184.p2 .
+t00184:r3 a t:spouse.n.01 ;
+  :tgt t00184:p2 .
 
-tomb:t00184.r4 a t:mother.n.01 ;
+t00184:r4 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00184.s1 a t:composite.n.01 ;
-  :prt tomb:t00184.s2 ,
-       tomb:t00184.s3 .
+t00184:s1 a t:composite.n.01 ;
+  :prt t00184:s2 ,
+       t00184:s3 .
 
-tomb:t00184.s2 a t:frond.n.01 .
+t00184:s2 a t:frond.n.01 .
 
-tomb:t00184.s3 a t:ribbon.n.01 .
+t00184:s3 a t:ribbon.n.01 .
 
-tomb:t00184.im1 a t:photo.n.01 ;
+t00184:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

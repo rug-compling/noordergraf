@@ -1,48 +1,49 @@
+@prefix t00628: <https://noordergraf.rug.nl/tomb/t00628#> .
 
 tomb:t00628 a t:tombstone.n.01 ;
-  :image tomb:t00628.im1 ;
+  :image t00628:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00628.p1 ,
-       tomb:t00628.p2 ,
-       tomb:t00628.p3 ;
+  :ent t00628:p1 ,
+       t00628:p2 ,
+       t00628:p3 ;
   :lan "NLD" ;
-  :sym tomb:t00628.s1 ,
-       tomb:t00628.s2 .
+  :sym t00628:s1 ,
+       t00628:s2 .
 
-tomb:t00628.a1 a t:weeping.a.02 .
+t00628:a1 a t:weeping.a.02 .
 
-tomb:t00628.c1 a t:town.n.01 ;
+t00628:c1 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00628.p1 a t:person.n.01 ;
+t00628:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1870-06-19" ;
   :dod "1913-03-28" ;
   :nam "JAKOBUS BLEEKER" ;
-  :pob tomb:t00628.c1 ;
-  :pod tomb:t00628.c1 ;
-  :rol tomb:t00628.r1 ,
-       tomb:t00628.r2 .
+  :pob t00628:c1 ;
+  :pod t00628:c1 ;
+  :rol t00628:r1 ,
+       t00628:r2 .
 
-tomb:t00628.p2 a t:person.n.01 ;
+t00628:p2 a t:person.n.01 ;
   :nam "C. BÖDEKER" .
 
-tomb:t00628.p3 a t:person.n.01 ;
+t00628:p3 a t:person.n.01 ;
   :nam "W.G. BÖDEKER" .
 
-tomb:t00628.r1 a t:sister.n.01 ;
-  :tgt tomb:t00628.p2 .
+t00628:r1 a t:sister.n.01 ;
+  :tgt t00628:p2 .
 
-tomb:t00628.r2 a t:sister.n.01 ;
-  :tgt tomb:t00628.p3 .
+t00628:r2 a t:sister.n.01 ;
+  :tgt t00628:p3 .
 
-tomb:t00628.s1 a t:willow.n.01 ;
-  :att tomb:t00628.a1 .
+t00628:s1 a t:willow.n.01 ;
+  :att t00628:a1 .
 
-tomb:t00628.s2 a t:ax.n.01 .
+t00628:s2 a t:ax.n.01 .
 
-tomb:t00628.im1 a t:photo.n.01 ;
+t00628:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

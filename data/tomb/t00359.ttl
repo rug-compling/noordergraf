@@ -1,61 +1,62 @@
+@prefix t00359: <https://noordergraf.rug.nl/tomb/t00359#> .
 
 tomb:t00359 a t:tombstone.n.01 ;
-  :image tomb:t00359.im1 ;
+  :image t00359:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00359.p1 ,
-       tomb:t00359.p2 ;
+  :ent t00359:p1 ,
+       t00359:p2 ;
   :quo "RUST ZACHT LIEVE VROUW EN MOEDER" ;
-  :sym tomb:t00359.s1 .
+  :sym t00359:s1 .
 
-tomb:t00359.a1 a t:weeping.a.02 .
+t00359:a1 a t:weeping.a.02 .
 
-tomb:t00359.c1 a t:village.n.02 ;
+t00359:c1 a t:village.n.02 ;
   :geo place:Bunne2758108 ;
   :place "BUNNE" .
 
-tomb:t00359.c2 a t:municipality.n.01 ;
+t00359:c2 a t:municipality.n.01 ;
   :geo place:Vries2745189 ;
-  :mem tomb:t00359.c1 ;
+  :mem t00359:c1 ;
   :place "VRIES" .
 
-tomb:t00359.c3 a t:village.n.02 ;
+t00359:c3 a t:village.n.02 ;
   :geo place:Molkwerum2750647 ;
   :place "MOLKWERUM" .
 
-tomb:t00359.c4 a t:province.n.01 ;
+t00359:c4 a t:province.n.01 ;
   :geo place:ProvincieFriesland2755812 ;
-  :mem tomb:t00359.c3 ;
+  :mem t00359:c3 ;
   :place "FRIESLAND" .
 
-tomb:t00359.p1 a t:person.n.01 ;
+t00359:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1901-06-25" ;
   :dod "1935-06-02" ;
   :nam "GEERTIEN BATHOORN" ;
-  :pob tomb:t00359.c1 ;
-  :pod tomb:t00359.c3 ;
-  :rol tomb:t00359.r1 ,
-       tomb:t00359.r2 ,
-       tomb:t00359.r3 .
+  :pob t00359:c1 ;
+  :pod t00359:c3 ;
+  :rol t00359:r1 ,
+       t00359:r2 ,
+       t00359:r3 .
 
-tomb:t00359.p2 a t:person.n.01 ;
+t00359:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "LAMBERTUS HUMMEL" .
 
-tomb:t00359.r1 a t:spouse.n.01 ;
+t00359:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00359.p2 .
+  :tgt t00359:p2 .
 
-tomb:t00359.r2 a t:wife.n.01 ;
+t00359:r2 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00359.p2 .
+  :tgt t00359:p2 .
 
-tomb:t00359.r3 a t:mother.n.01 .
+t00359:r3 a t:mother.n.01 .
 
-tomb:t00359.s1 a t:willow.n.01 ;
-  :att tomb:t00359.a1 .
+t00359:s1 a t:willow.n.01 ;
+  :att t00359:a1 .
 
-tomb:t00359.im1 a t:photo.n.01 ;
+t00359:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

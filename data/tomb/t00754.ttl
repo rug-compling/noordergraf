@@ -1,50 +1,51 @@
+@prefix t00754: <https://noordergraf.rug.nl/tomb/t00754#> .
 
 tomb:t00754 a t:tombstone.n.01 ;
-  :image tomb:t00754.im1 ;
+  :image t00754:im1 ;
   :site site:gr9936BTfarmsum ;
-  :ent tomb:t00754.p1 ,
-       tomb:t00754.p2 ;
+  :ent t00754:p1 ,
+       t00754:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00754.s1 ,
-       tomb:t00754.s2 ,
-       tomb:t00754.s3 .
+  :sym t00754:s1 ,
+       t00754:s2 ,
+       t00754:s3 .
 
-tomb:t00754.c1 a t:village.n.02 ;
+t00754:c1 a t:village.n.02 ;
   :geo place:Engelbert2756097 ;
   :place "ENGELBERT" .
 
-tomb:t00754.m1 a t:measure.n.02 ;
-  :mem tomb:t00754.u1 ;
+t00754:m1 a t:measure.n.02 ;
+  :mem t00754:u1 ;
   :qua 76 .
 
-tomb:t00754.o1 a t:principal.n.02 ;
+t00754:o1 a t:principal.n.02 ;
   :hco "13940" ;
-  :loc tomb:t00754.c1 .
+  :loc t00754:c1 .
 
-tomb:t00754.p1 a t:person.n.01 ;
+t00754:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t00754.m1 ;
+  :age t00754:m1 ;
   :dod "1867-03-14" ;
   :nam "LAMBERTUS JANS FABER" ;
-  :occ tomb:t00754.o1 ;
-  :rol tomb:t00754.r1 .
+  :occ t00754:o1 ;
+  :rol t00754:r1 .
 
-tomb:t00754.p2 a t:person.n.01 ;
+t00754:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "H.L. VAN DIJKEN" .
 
-tomb:t00754.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00754.p2 .
+t00754:r1 a t:spouse.n.01 ;
+  :tgt t00754:p2 .
 
-tomb:t00754.s1 a t:frond.n.01 .
+t00754:s1 a t:frond.n.01 .
 
-tomb:t00754.s2 a t:frond.n.01 .
+t00754:s2 a t:frond.n.01 .
 
-tomb:t00754.s3 a t:ribbon.n.01 .
+t00754:s3 a t:ribbon.n.01 .
 
-tomb:t00754.u1 a t:year.n.01 .
+t00754:u1 a t:year.n.01 .
 
-tomb:t00754.im1 a t:photo.n.01 ;
+t00754:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

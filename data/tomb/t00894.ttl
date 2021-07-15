@@ -1,54 +1,55 @@
+@prefix t00894: <https://noordergraf.rug.nl/tomb/t00894#> .
 
 tomb:t00894 a t:tombstone.n.01 ;
-  :image tomb:t00894.im1 ;
+  :image t00894:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00894.p1 ,
-       tomb:t00894.p2 ;
+  :ent t00894:p1 ,
+       t00894:p2 ;
   :lan "NLD" .
 
-tomb:t00894.c1 a t:location.n.01 ;
-  :apx tomb:t00894.c2 .
+t00894:c1 a t:location.n.01 ;
+  :apx t00894:c2 .
 
-tomb:t00894.c2 a t:village.n.02 ;
+t00894:c2 a t:village.n.02 ;
   :geo place:Oldekerk2749658 ;
   :place "OLDEKERK" .
 
-tomb:t00894.c3 a t:location.n.01 ;
-  :apx tomb:t00894.c4 .
+t00894:c3 a t:location.n.01 ;
+  :apx t00894:c4 .
 
-tomb:t00894.c4 a t:village.n.02 ;
+t00894:c4 a t:village.n.02 ;
   :geo place:Midwolde2750830 ;
   :place "MIDWOLDE" .
 
-tomb:t00894.c5 a t:village.n.02 ;
+t00894:c5 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00894.p1 a t:person.n.01 ;
+t00894:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1792-12-01" ;
   :dod "1869-09-21" ;
   :nam "JAKOB MELES MELESSEN" ;
-  :pob tomb:t00894.c1 ;
-  :pod tomb:t00894.c3 ;
-  :rol tomb:t00894.r1 .
+  :pob t00894:c1 ;
+  :pod t00894:c3 ;
+  :rol t00894:r1 .
 
-tomb:t00894.p2 a t:person.n.01 ;
+t00894:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1795-01-23" ;
   :dod "1847-10-24" ;
   :nam "MARTHA LEURINGH" ;
-  :pob tomb:t00894.c5 ;
-  :pod tomb:t00894.c5 ;
-  :rol tomb:t00894.r2 .
+  :pob t00894:c5 ;
+  :pod t00894:c5 ;
+  :rol t00894:r2 .
 
-tomb:t00894.r1 a t:widower.n.01 ;
-  :tgt tomb:t00894.p2 .
+t00894:r1 a t:widower.n.01 ;
+  :tgt t00894:p2 .
 
-tomb:t00894.r2 a t:wife.n.01 ;
-  :tgt tomb:t00894.p1 .
+t00894:r2 a t:wife.n.01 ;
+  :tgt t00894:p1 .
 
-tomb:t00894.im1 a t:photo.n.01 ;
+t00894:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

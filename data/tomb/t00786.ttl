@@ -1,46 +1,47 @@
+@prefix t00786: <https://noordergraf.rug.nl/tomb/t00786#> .
 
 tomb:t00786 a t:tombstone.n.01 ;
-  :image tomb:t00786.im1 ;
+  :image t00786:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00786.g1 ,
-       tomb:t00786.p1 ,
-       tomb:t00786.p2 ,
-       tomb:t00786.p3 ;
+  :ent t00786:g1 ,
+       t00786:p1 ,
+       t00786:p2 ,
+       t00786:p3 ;
   :quo "RUST ZACHT"@nld .
 
-tomb:t00786.c1 a t:village.n.02 ;
+t00786:c1 a t:village.n.02 ;
   :geo place:Westenesch2744776 ;
   :place "WESTENESCH" .
 
-tomb:t00786.c2 a t:town.n.01 ;
+t00786:c2 a t:town.n.01 ;
   :geo place:Emmen2756136 ;
   :place "EMMEN" .
 
-tomb:t00786.g1 a t:group.n.01 ;
-  :mem tomb:t00786.p2 ,
-       tomb:t00786.p3 .
+t00786:g1 a t:group.n.01 ;
+  :mem t00786:p2 ,
+       t00786:p3 .
 
-tomb:t00786.p1 a t:person.n.01 ;
+t00786:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1893-09-19" ;
   :dod "1925-09-18" ;
   :nam "HINDERIKUS KOERS" ;
-  :pob tomb:t00786.c1 ;
-  :pod tomb:t00786.c2 ;
-  :rol tomb:t00786.r1 .
+  :pob t00786:c1 ;
+  :pod t00786:c2 ;
+  :rol t00786:r1 .
 
-tomb:t00786.p2 a t:person.n.01 ;
+t00786:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JANS KOERS" .
 
-tomb:t00786.p3 a t:person.n.01 ;
+t00786:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "GRIETIEN EVERTS" .
 
-tomb:t00786.r1 a t:son.n.01 ;
-  :tgt tomb:t00786.g1 .
+t00786:r1 a t:son.n.01 ;
+  :tgt t00786:g1 .
 
-tomb:t00786.im1 a t:photo.n.01 ;
+t00786:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

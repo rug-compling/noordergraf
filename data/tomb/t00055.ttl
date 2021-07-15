@@ -1,31 +1,32 @@
+@prefix t00055: <https://noordergraf.rug.nl/tomb/t00055#> .
 
 tomb:t00055 a t:tombstone.n.01 ;
-  :image tomb:t00055.im1 ;
+  :image t00055:im1 ;
   :site site:gr9752CMharen ;
-  :ent tomb:t00055.p1 ;
-  :ref tomb:t00055.v1 .
+  :ent t00055:p1 ;
+  :ref t00055:v1 .
 
-tomb:t00055.b1 a t:Job.n.12 ;
-  :prt tomb:t00055.c3 .
+t00055:b1 a t:Job.n.12 ;
+  :prt t00055:c3 .
 
-tomb:t00055.c3 a t:chapter.n.01 ;
+t00055:c3 a t:chapter.n.01 ;
   :ord 1 ;
-  :prt tomb:t00055.v2 .
+  :prt t00055:v2 .
 
-tomb:t00055.p1 a t:person.n.01 ;
+t00055:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1958-12-08" ;
   :dod "1958-12-25" ;
   :nam "GERARDUS" .
 
-tomb:t00055.v1 a t:part.n.09 ;
+t00055:v1 a t:part.n.09 ;
   :nam "B" .
 
-tomb:t00055.v2 a t:verse.n.01 ;
+t00055:v2 a t:verse.n.01 ;
   :ord 21 ;
-  :prt tomb:t00055.v1 .
+  :prt t00055:v1 .
 
-tomb:t00055.im1 a t:photo.n.01 ;
+t00055:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

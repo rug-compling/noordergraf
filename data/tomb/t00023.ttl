@@ -1,62 +1,63 @@
+@prefix t00023: <https://noordergraf.rug.nl/tomb/t00023#> .
 
 tomb:t00023 a t:tombstone.n.01 ;
-  :image tomb:t00023.im1 ;
+  :image t00023:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00023.p1 ,
-       tomb:t00023.p2 ,
-       tomb:t00023.p3 ,
-       tomb:t00023.p4 ;
-  :sym tomb:t00023.s1 .
+  :ent t00023:p1 ,
+       t00023:p2 ,
+       t00023:p3 ,
+       t00023:p4 ;
+  :sym t00023:s1 .
 
-tomb:t00023.a1 a t:winged.a.01 .
+t00023:a1 a t:winged.a.01 .
 
-tomb:t00023.c1 a t:city.n.01 ;
+t00023:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00023.c2 a t:city.n.01 ;
+t00023:c2 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00023.p1 a t:person.n.01 ;
+t00023:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1864-09-25" ;
   :dod "1930-01-06" ;
   :nam "LAMBERTUS M. STRENGHOLT" ;
-  :pob tomb:t00023.c2 ;
-  :pod tomb:t00023.c1 ;
-  :rol tomb:t00023.r1 .
+  :pob t00023:c2 ;
+  :pod t00023:c1 ;
+  :rol t00023:r1 .
 
-tomb:t00023.p2 a t:person.n.01 ;
+t00023:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1865-11-29" ;
   :dod "1949-03-07" ;
   :nam "ZWAANTJE MULDER" .
 
-tomb:t00023.p3 a t:person.n.01 ;
+t00023:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1908-06-09" ;
   :dod "1945-02-25" ;
   :nam "HENDRIKA M.G. KUMMER" ;
-  :pob tomb:t00023.c1 ;
-  :pod tomb:t00023.c1 ;
-  :rol tomb:t00023.r2 .
+  :pob t00023:c1 ;
+  :pod t00023:c1 ;
+  :rol t00023:r2 .
 
-tomb:t00023.p4 a t:person.n.01 ;
+t00023:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "EILDERT M.J. STRENGHOLT" .
 
-tomb:t00023.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00023.p2 .
+t00023:r1 a t:spouse.n.01 ;
+  :tgt t00023:p2 .
 
-tomb:t00023.r2 a t:spouse.n.01 ;
+t00023:r2 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00023.p4 .
+  :tgt t00023:p4 .
 
-tomb:t00023.s1 a t:sandglass.n.01 ;
-  :att tomb:t00023.a1 .
+t00023:s1 a t:sandglass.n.01 ;
+  :att t00023:a1 .
 
-tomb:t00023.im1 a t:photo.n.01 ;
+t00023:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,39 +1,40 @@
+@prefix t00251: <https://noordergraf.rug.nl/tomb/t00251#> .
 
 tomb:t00251 a t:tombstone.n.01 ;
-  :image tomb:t00251.im1 ;
+  :image t00251:im1 ;
   :site site:gr9721AAgroningen ;
-  :ent tomb:t00251.p1 ,
-       tomb:t00251.p2 ;
+  :ent t00251:p1 ,
+       t00251:p2 ;
   :quo "EEN GEBROKEN EN VERSLAGEN HART ZULT GIJ O GOD NIET VERACHTEN" ;
   :ref "PSALM 51:19-B" .
 
-tomb:t00251.o1 a t:postal_clerk.n.01 ;
+t00251:o1 a t:postal_clerk.n.01 ;
   :hco "37020" .
 
-tomb:t00251.p1 a t:person.n.01 ;
+t00251:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1861-12-23" ;
   :dod "1921-09-30" ;
   :nam "EELKO JAN GROENEVELD" ;
-  :occ tomb:t00251.o1 ;
-  :rol tomb:t00251.r1 ,
-       tomb:t00251.r2 ,
-       tomb:t00251.r3 .
+  :occ t00251:o1 ;
+  :rol t00251:r1 ,
+       t00251:r2 ,
+       t00251:r3 .
 
-tomb:t00251.p2 a t:person.n.01 ;
+t00251:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "M. CASIMIR" .
 
-tomb:t00251.r1 a t:spouse.n.01 ;
+t00251:r1 a t:spouse.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00251.p2 .
+  :tgt t00251:p2 .
 
-tomb:t00251.r2 a t:father.n.01 .
+t00251:r2 a t:father.n.01 .
 
-tomb:t00251.r3 a t:wife.n.01 ;
-  :tgt tomb:t00251.p3 .
+t00251:r3 a t:wife.n.01 ;
+  :tgt t00251:p3 .
 
-tomb:t00251.im1 a t:photo.n.01 ;
+t00251:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

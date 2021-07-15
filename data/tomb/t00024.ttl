@@ -1,34 +1,35 @@
+@prefix t00024: <https://noordergraf.rug.nl/tomb/t00024#> .
 
 tomb:t00024 a t:tombstone.n.01 ;
-  :image tomb:t00024.im1 ;
+  :image t00024:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00024.p1 ,
-       tomb:t00024.p2 .
+  :ent t00024:p1 ,
+       t00024:p2 .
 
-tomb:t00024.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00024.c1 .
+t00024:b1 a t:Revelation.n.04 ;
+  :prt t00024:c1 .
 
-tomb:t00024.c1 a t:chapter.n.01 ;
+t00024:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00024.v1 .
+  :prt t00024:v1 .
 
-tomb:t00024.p1 a t:person.n.01 ;
+t00024:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1860-04-08" ;
   :dod "1928-01-09" ;
   :nam "ANNE DE VRIES" .
 
-tomb:t00024.p2 a t:person.n.01 ;
+t00024:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1861-07-21" ;
   :dod "1951-02-25" ;
   :nam "OTTO DOORNBOS" ;
-  :ref tomb:t00024.v1 .
+  :ref t00024:v1 .
 
-tomb:t00024.v1 a t:verse.n.01 ;
+t00024:v1 a t:verse.n.01 ;
   :ord 13 .
 
-tomb:t00024.im1 a t:photo.n.01 ;
+t00024:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

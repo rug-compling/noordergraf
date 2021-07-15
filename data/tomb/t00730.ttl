@@ -1,32 +1,33 @@
+@prefix t00730: <https://noordergraf.rug.nl/tomb/t00730#> .
 
 tomb:t00730 a t:tombstone.n.01 ;
-  :image tomb:t00730.im1 ;
+  :image t00730:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00730.p1 ;
+  :ent t00730:p1 ;
   :quo "JEZUS BRACHT HAAR ZIELE THUIS"@nld ;
-  :sym tomb:t00730.s1 .
+  :sym t00730:s1 .
 
-tomb:t00730.a1 a t:weeping.a.02 .
+t00730:a1 a t:weeping.a.02 .
 
-tomb:t00730.c1 a t:town.n.01 ;
+t00730:c1 a t:town.n.01 ;
   :geo place:Emmen2756136 ;
   :place "EMMEN" .
 
-tomb:t00730.p1 a t:person.n.01 ;
+t00730:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1900-05-10" ;
   :dod "1929-11-02" ;
   :nam "JANTINA" ;
-  :pod tomb:t00730.c1 ;
-  :rol tomb:t00730.r1 .
+  :pod t00730:c1 ;
+  :rol t00730:r1 .
 
-tomb:t00730.r1 a t:sister.n.01 ;
+t00730:r1 a t:sister.n.01 ;
   :att "LIEVE" .
 
-tomb:t00730.s1 a t:willow.n.01 ;
-  :att tomb:t00730.a1 .
+t00730:s1 a t:willow.n.01 ;
+  :att t00730:a1 .
 
-tomb:t00730.im1 a t:photo.n.01 ;
+t00730:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

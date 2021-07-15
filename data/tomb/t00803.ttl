@@ -1,36 +1,37 @@
+@prefix t00803: <https://noordergraf.rug.nl/tomb/t00803#> .
 
 tomb:t00803 a t:tombstone.n.01 ;
-  :image tomb:t00803.im1 ;
+  :image t00803:im1 ;
   :site site:gr9791KEten_boer ;
-  :ent tomb:t00803.p1 ,
-       tomb:t00803.p2 ;
+  :ent t00803:p1 ,
+       t00803:p2 ;
   :quo "IN JEZUS ONTSLAPEN"@nld .
 
-tomb:t00803.c1 a t:village.n.02 ;
+t00803:c1 a t:village.n.02 ;
   :geo place:Schildwolde2747570 ;
   :place "SCHILDWOLDE" .
 
-tomb:t00803.c2 a t:village.n.02 ;
+t00803:c2 a t:village.n.02 ;
   :geo place:TenBoer2746491 ;
   :place "TEN BOER" .
 
-tomb:t00803.p1 a t:person.n.01 ;
+t00803:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1856-02-02" ;
   :dod "1938-05-15" ;
   :nam "JACOBJE LANENGA" ;
-  :pob tomb:t00803.c1 ;
-  :pod tomb:t00803.c2 ;
-  :rol tomb:t00803.r1 .
+  :pob t00803:c1 ;
+  :pod t00803:c2 ;
+  :rol t00803:r1 .
 
-tomb:t00803.p2 a t:person.n.01 ;
+t00803:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "R.H. WERINGA" .
 
-tomb:t00803.r1 a t:widow.n.01 ;
-  :tgt tomb:t00803.p2 .
+t00803:r1 a t:widow.n.01 ;
+  :tgt t00803:p2 .
 
-tomb:t00803.im1 a t:photo.n.01 ;
+t00803:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

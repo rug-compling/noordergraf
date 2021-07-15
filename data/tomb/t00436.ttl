@@ -1,40 +1,41 @@
+@prefix t00436: <https://noordergraf.rug.nl/tomb/t00436#> .
 
 tomb:t00436 a t:tombstone.n.01 ;
-  :image tomb:t00436.im1 ;
+  :image t00436:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00436.p1 ,
-       tomb:t00436.p2 ;
+  :ent t00436:p1 ,
+       t00436:p2 ;
   :quo "RUST ZACHT" ;
   :ref "GEZANG 257:2" ;
-  :sym tomb:t00436.s1 .
+  :sym t00436:s1 .
 
-tomb:t00436.c1 a t:village.n.02 ;
+t00436:c1 a t:village.n.02 ;
   :geo place:Ternaard2746424 ;
   :place "TERNAARD" .
 
-tomb:t00436.c2 a t:island.n.01 ;
+t00436:c2 a t:island.n.01 ;
   :geo place:Schiermonnikoog2747591 ;
   :place "SCHIERMONNIKOOG" .
 
-tomb:t00436.p1 a t:person.n.01 ;
+t00436:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1871-03-28" ;
   :dod "1929-03-24" ;
   :nam "JOHANNES J. DE VRIES" ;
-  :pob tomb:t00436.c1 ;
-  :pod tomb:t00436.c2 ;
-  :rol tomb:t00436.r1 .
+  :pob t00436:c1 ;
+  :pod t00436:c2 ;
+  :rol t00436:r1 .
 
-tomb:t00436.p2 a t:person.n.01 ;
+t00436:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANTJE TH. JENSMA" .
 
-tomb:t00436.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00436.p2 .
+t00436:r1 a t:spouse.n.01 ;
+  :tgt t00436:p2 .
 
-tomb:t00436.s1 a t:frond.n.01 .
+t00436:s1 a t:frond.n.01 .
 
-tomb:t00436.im1 a t:photo.n.01 ;
+t00436:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

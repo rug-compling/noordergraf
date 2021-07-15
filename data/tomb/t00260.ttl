@@ -1,58 +1,59 @@
+@prefix t00260: <https://noordergraf.rug.nl/tomb/t00260#> .
 
 tomb:t00260 a t:tombstone.n.01 ;
-  :image tomb:t00260.im1 ;
+  :image t00260:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00260.p1 ,
-       tomb:t00260.p2 ,
-       tomb:t00260.p3 .
+  :ent t00260:p1 ,
+       t00260:p2 ,
+       t00260:p3 .
 
-tomb:t00260.p1 a t:person.n.01 ;
+t00260:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1912-12-17" ;
   :dod "1935-12-22" ;
   :nam "HEERINA SUIDING" ;
-  :rol tomb:t00260.r1 ,
-       tomb:t00260.r2 .
+  :rol t00260:r1 ,
+       t00260:r2 .
 
-tomb:t00260.p2 a t:person.n.01 ;
+t00260:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1885-12-21" ;
   :dod "1961-12-31" ;
   :nam "GRIETJE SPIER" ;
-  :rol tomb:t00260.r3 ,
-       tomb:t00260.r4 ,
-       tomb:t00260.r5 ,
-       tomb:t00260.r6 .
+  :rol t00260:r3 ,
+       t00260:r4 ,
+       t00260:r5 ,
+       t00260:r6 .
 
-tomb:t00260.p3 a t:person.n.01 ;
+t00260:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1882-01-18" ;
   :dod "1964-11-19" ;
   :nam "SIEBOLT SUIDING" ;
-  :rol tomb:t00260.r7 ,
-       tomb:t00260.r8 .
+  :rol t00260:r7 ,
+       t00260:r8 .
 
-tomb:t00260.r1 a t:daughter.n.01 ;
+t00260:r1 a t:daughter.n.01 ;
   :att "LIEVE" .
 
-tomb:t00260.r2 a t:sister.n.01 .
+t00260:r2 a t:sister.n.01 .
 
-tomb:t00260.r3 a t:wife.n.01 ;
+t00260:r3 a t:wife.n.01 ;
   :att "LIEVE" .
 
-tomb:t00260.r4 a t:mother.n.01 .
+t00260:r4 a t:mother.n.01 .
 
-tomb:t00260.r5 a t:grandmother.n.01 .
+t00260:r5 a t:grandmother.n.01 .
 
-tomb:t00260.r6 a t:spouse.n.01 ;
-  :tgt tomb:t00260.p3 .
+t00260:r6 a t:spouse.n.01 ;
+  :tgt t00260:p3 .
 
-tomb:t00260.r7 a t:father.n.01 ;
+t00260:r7 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00260.r8 a t:grandfather.n.01 .
+t00260:r8 a t:grandfather.n.01 .
 
-tomb:t00260.im1 a t:photo.n.01 ;
+t00260:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

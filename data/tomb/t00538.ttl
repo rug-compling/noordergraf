@@ -1,49 +1,50 @@
+@prefix t00538: <https://noordergraf.rug.nl/tomb/t00538#> .
 
 tomb:t00538 a t:tombstone.n.01 ;
-  :image tomb:t00538.im1 ;
+  :image t00538:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00538.p1 ,
-       tomb:t00538.p2 ;
+  :ent t00538:p1 ,
+       t00538:p2 ;
   :quo "DIT GRAF MAG NIET WORDEN OPGEGRAVEN"@nld ,
        "RUST ZACHT"@nld ;
-  :sym tomb:t00538.s1 .
+  :sym t00538:s1 .
 
-tomb:t00538.c1 a t:village.n.02 ;
+t00538:c1 a t:village.n.02 ;
   :geo place:Zuidbroek2743800 ;
   :place "ZUIDBROEK" .
 
-tomb:t00538.c2 a t:city.n.01 ;
+t00538:c2 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00538.p1 a t:person.n.01 ;
+t00538:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1832-05-04" ;
   :dod "1884-08-09" ;
   :nam "JAN VRIESE DE VRIES" ;
-  :pob tomb:t00538.c1 ;
-  :pod tomb:t00538.c2 ;
-  :rol tomb:t00538.r1 .
+  :pob t00538:c1 ;
+  :pod t00538:c2 ;
+  :rol t00538:r1 .
 
-tomb:t00538.p2 a t:person.n.01 ;
+t00538:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "IDA G. STRATING" .
 
-tomb:t00538.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00538.p2 .
+t00538:r1 a t:spouse.n.01 ;
+  :tgt t00538:p2 .
 
-tomb:t00538.s1 a t:composite.n.01 ;
-  :prt tomb:t00538.s2 ,
-       tomb:t00538.s3 ,
-       tomb:t00538.s4 .
+t00538:s1 a t:composite.n.01 ;
+  :prt t00538:s2 ,
+       t00538:s3 ,
+       t00538:s4 .
 
-tomb:t00538.s2 a t:flag.n.01 .
+t00538:s2 a t:flag.n.01 .
 
-tomb:t00538.s3 a t:anchor.n.01 .
+t00538:s3 a t:anchor.n.01 .
 
-tomb:t00538.s4 a t:anchor.n.01 .
+t00538:s4 a t:anchor.n.01 .
 
-tomb:t00538.im1 a t:photo.n.01 ;
+t00538:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

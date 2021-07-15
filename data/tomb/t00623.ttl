@@ -1,41 +1,42 @@
+@prefix t00623: <https://noordergraf.rug.nl/tomb/t00623#> .
 
 tomb:t00623 a t:tombstone.n.01 ;
-  :image tomb:t00623.im1 ;
+  :image t00623:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00623.p1 ,
-       tomb:t00623.p2 ;
+  :ent t00623:p1 ,
+       t00623:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00623.s1 ,
-       tomb:t00623.s2 ,
-       tomb:t00623.s3 .
+  :sym t00623:s1 ,
+       t00623:s2 ,
+       t00623:s3 .
 
-tomb:t00623.c1 a t:village.n.02 ;
+t00623:c1 a t:village.n.02 ;
   :geo place:Scheemda2747661 ;
   :place "SCHEEMDA" .
 
-tomb:t00623.p1 a t:person.n.01 ;
+t00623:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1818-11-30" ;
   :dod "1875-12-19" ;
   :nam "ALBERDINA TAKENS" ;
-  :pob tomb:t00623.c1 ;
-  :rol tomb:t00623.r1 .
+  :pob t00623:c1 ;
+  :rol t00623:r1 .
 
-tomb:t00623.p2 a t:person.n.01 ;
+t00623:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JANNES MARCUS CREMER" .
 
-tomb:t00623.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00623.p2 .
+t00623:r1 a t:spouse.n.01 ;
+  :tgt t00623:p2 .
 
-tomb:t00623.s1 a t:torch.n.01 .
+t00623:s1 a t:torch.n.01 .
 
-tomb:t00623.s2 a t:oak.n.02 ;
+t00623:s2 a t:oak.n.02 ;
   :num 2 .
 
-tomb:t00623.s3 a t:entity.n.01 .
+t00623:s3 a t:entity.n.01 .
 
-tomb:t00623.im1 a t:photo.n.01 ;
+t00623:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

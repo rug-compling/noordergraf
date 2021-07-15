@@ -1,41 +1,42 @@
+@prefix t01026: <https://noordergraf.rug.nl/tomb/t01026#> .
 
 tomb:t01026 a t:tombstone.n.01 ;
-  :image tomb:t01026.im1 ;
+  :image t01026:im1 ;
   :site site:gr9906PPbierum ;
-  :ent tomb:t01026.p1 ;
+  :ent t01026:p1 ;
   :lan "NLD" ;
-  :sym tomb:t01026.s1 ,
-       tomb:t01026.s2 ,
-       tomb:t01026.s3 ,
-       tomb:t01026.s5 .
+  :sym t01026:s1 ,
+       t01026:s2 ,
+       t01026:s3 ,
+       t01026:s5 .
 
-tomb:t01026.c1 a t:village.n.02 ;
+t01026:c1 a t:village.n.02 ;
   :geo place:Bierum2758983 ;
   :place "BIERUM" .
 
-tomb:t01026.p1 a t:person.n.01 ;
+t01026:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1858-10-17" ;
   :dod "1864-08-07" ;
   :nam "FREERK JANS HOFMAN" ;
-  :pob tomb:t01026.c1 ;
-  :pod tomb:t01026.c1 .
+  :pob t01026:c1 ;
+  :pod t01026:c1 .
 
-tomb:t01026.s1 a t:butterfly.n.01 .
+t01026:s1 a t:butterfly.n.01 .
 
-tomb:t01026.s2 a t:sandglass.n.01 .
+t01026:s2 a t:sandglass.n.01 .
 
-tomb:t01026.s3 a t:wing.n.01 .
+t01026:s3 a t:wing.n.01 .
 
-tomb:t01026.s4 a t:bird.n.01 ;
-  :mem tomb:t01026.s3 .
+t01026:s4 a t:bird.n.01 ;
+  :mem t01026:s3 .
 
-tomb:t01026.s5 a t:wing.n.01 .
+t01026:s5 a t:wing.n.01 .
 
-tomb:t01026.s6 a t:bird.n.01 ;
-  :mem tomb:t01026.s5 .
+t01026:s6 a t:bird.n.01 ;
+  :mem t01026:s5 .
 
-tomb:t01026.im1 a t:photo.n.01 ;
+t01026:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

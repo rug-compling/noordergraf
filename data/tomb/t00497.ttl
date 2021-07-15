@@ -1,35 +1,36 @@
+@prefix t00497: <https://noordergraf.rug.nl/tomb/t00497#> .
 
 tomb:t00497 a t:tombstone.n.01 ;
-  :image tomb:t00497.im1 ;
+  :image t00497:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00497.p1 ,
-       tomb:t00497.p2 .
+  :ent t00497:p1 ,
+       t00497:p2 .
 
-tomb:t00497.c1 a t:city.n.01 ;
+t00497:c1 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00497.p1 a t:person.n.01 ;
+t00497:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1841-02-19" ;
   :dod "1922-12-30" ;
   :nam "BARTJE BILIJAM" ;
-  :pob tomb:t00497.c1 ;
-  :pod tomb:t00497.c1 ;
-  :rol tomb:t00497.r1 .
+  :pob t00497:c1 ;
+  :pod t00497:c1 ;
+  :rol t00497:r1 .
 
-tomb:t00497.p2 a t:person.n.01 ;
+t00497:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1842-03-25" ;
   :dod "1929-12-27" ;
   :nam "JOHANNES F. MIJLIUS" ;
-  :pob tomb:t00497.c1 ;
-  :pod tomb:t00497.c1 .
+  :pob t00497:c1 ;
+  :pod t00497:c1 .
 
-tomb:t00497.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00497.p2 .
+t00497:r1 a t:spouse.n.01 ;
+  :tgt t00497:p2 .
 
-tomb:t00497.im1 a t:photo.n.01 ;
+t00497:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

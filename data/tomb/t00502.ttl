@@ -1,70 +1,71 @@
+@prefix t00502: <https://noordergraf.rug.nl/tomb/t00502#> .
 
 tomb:t00502 a t:tombstone.n.01 ;
-  :image tomb:t00502.im1 ;
+  :image t00502:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00502.p1 ,
-       tomb:t00502.p2 ,
-       tomb:t00502.p3 ;
-  :sym tomb:t00502.s1 .
+  :ent t00502:p1 ,
+       t00502:p2 ,
+       t00502:p3 ;
+  :sym t00502:s1 .
 
-tomb:t00502.c1 a t:city.n.01 ;
+t00502:c1 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00502.c2 a t:more.r.01 ;
-  :op1 tomb:t00502.m1 ;
-  :op2 tomb:t00502.m2 .
+t00502:c2 a t:more.r.01 ;
+  :op1 t00502:m1 ;
+  :op2 t00502:m2 .
 
-tomb:t00502.m1 a t:measure.n.02 .
+t00502:m1 a t:measure.n.02 .
 
-tomb:t00502.m2 a t:measure.n.02 ;
-  :mem tomb:t00502.u1 ;
+t00502:m2 a t:measure.n.02 ;
+  :mem t00502:u1 ;
   :qua 33 .
 
-tomb:t00502.p1 a t:person.n.01 ;
+t00502:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
-  :age tomb:t00502.m1 ;
+  :age t00502:m1 ;
   :dod "1908-11-12" ;
   :nam "BARTELE DE KANT" ;
-  :pod tomb:t00502.c1 ;
-  :rol tomb:t00502.r1 ,
-       tomb:t00502.r2 .
+  :pod t00502:c1 ;
+  :rol t00502:r1 ,
+       t00502:r2 .
 
-tomb:t00502.p2 a t:person.n.01 ;
+t00502:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "B. DE KANT DIJKSTRA" ;
-  :rol tomb:t00502.r3 .
+  :rol t00502:r3 .
 
-tomb:t00502.p3 a t:person.n.01 ;
+t00502:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1913-07-08" ;
   :dod "1918-11-04" ;
   :nam "IJPKE SJOUKJE DE VRIES" ;
-  :rol tomb:t00502.r4 .
+  :rol t00502:r4 .
 
-tomb:t00502.r1 a t:husband.n.01 ;
+t00502:r1 a t:husband.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00502.p2 .
+  :tgt t00502:p2 .
 
-tomb:t00502.r2 a t:father.n.01 .
+t00502:r2 a t:father.n.01 .
 
-tomb:t00502.r3 a t:widow.n.01 ;
-  :tgt tomb:t00502.p1 .
+t00502:r3 a t:widow.n.01 ;
+  :tgt t00502:p1 .
 
-tomb:t00502.r4 a t:daughter.n.01 ;
-  :tgt tomb:t00502.p2 .
+t00502:r4 a t:daughter.n.01 ;
+  :tgt t00502:p2 .
 
-tomb:t00502.s1 a t:composite.n.01 ;
-  :prt tomb:t00502.s2 ,
-       tomb:t00502.s3 .
+t00502:s1 a t:composite.n.01 ;
+  :prt t00502:s2 ,
+       t00502:s3 .
 
-tomb:t00502.s2 a t:frond.n.01 .
+t00502:s2 a t:frond.n.01 .
 
-tomb:t00502.s3 a t:ribbon.n.02 .
+t00502:s3 a t:ribbon.n.02 .
 
-tomb:t00502.u1 a t:year.n.01 .
+t00502:u1 a t:year.n.01 .
 
-tomb:t00502.im1 a t:photo.n.01 ;
+t00502:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

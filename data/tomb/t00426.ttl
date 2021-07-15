@@ -1,42 +1,43 @@
+@prefix t00426: <https://noordergraf.rug.nl/tomb/t00426#> .
 
 tomb:t00426 a t:tombstone.n.01 ;
-  :image tomb:t00426.im1 ;
+  :image t00426:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00426.p1 ,
-       tomb:t00426.p2 ;
+  :ent t00426:p1 ,
+       t00426:p2 ;
   :ref "PSALM 118:7 BERIJMD" ;
-  :sym tomb:t00426.s1 .
+  :sym t00426:s1 .
 
-tomb:t00426.c2 a t:island.n.01 ;
+t00426:c2 a t:island.n.01 ;
   :geo place:Schiermonnikoog2747591 ;
   :place "SCHIERMONNIKOOG" .
 
-tomb:t00426.p1 a t:person.n.01 ;
+t00426:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1868-09-14" ;
   :dod "1954-07-13" ;
   :nam "A.J. VISSER" ;
-  :pob tomb:t00426.c2 ;
-  :pod tomb:t00426.c2 ;
-  :rol tomb:t00426.r1 ,
-       tomb:t00426.r2 ,
-       tomb:t00426.r3 .
+  :pob t00426:c2 ;
+  :pod t00426:c2 ;
+  :rol t00426:r1 ,
+       t00426:r2 ,
+       t00426:r3 .
 
-tomb:t00426.p2 a t:person.n.01 ;
+t00426:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "TH. KLONTJE" .
 
-tomb:t00426.r1 a t:mother.n.01 ;
+t00426:r1 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00426.r2 a t:grandmother.n.01 .
+t00426:r2 a t:grandmother.n.01 .
 
-tomb:t00426.r3 a t:widow.n.01 ;
-  :tgt tomb:t00426.p2 .
+t00426:r3 a t:widow.n.01 ;
+  :tgt t00426:p2 .
 
-tomb:t00426.s1 a t:frond.n.01 .
+t00426:s1 a t:frond.n.01 .
 
-tomb:t00426.im1 a t:photo.n.01 ;
+t00426:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

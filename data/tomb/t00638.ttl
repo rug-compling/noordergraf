@@ -1,28 +1,29 @@
+@prefix t00638: <https://noordergraf.rug.nl/tomb/t00638#> .
 
 tomb:t00638 a t:tombstone.n.01 ;
-  :image tomb:t00638.im1 ;
+  :image t00638:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00638.p1 ,
-       tomb:t00638.p2 ;
+  :ent t00638:p1 ,
+       t00638:p2 ;
   :lan "NLD" .
 
-tomb:t00638.p1 a t:person.n.01 ;
+t00638:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1751-01-24" ;
   :dod "1822-05-26" ;
   :nam "JAN REINDERS" .
 
-tomb:t00638.p2 a t:person.n.01 ;
+t00638:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1758-09-11" ;
   :dod "1846-10-13" ;
   :nam "ANIE UKES" ;
-  :rol tomb:t00638.r1 .
+  :rol t00638:r1 .
 
-tomb:t00638.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00638.p1 .
+t00638:r1 a t:spouse.n.01 ;
+  :tgt t00638:p1 .
 
-tomb:t00638.im1 a t:photo.n.01 ;
+t00638:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

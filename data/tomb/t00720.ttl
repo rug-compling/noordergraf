@@ -1,52 +1,53 @@
+@prefix t00720: <https://noordergraf.rug.nl/tomb/t00720#> .
 
 tomb:t00720 a t:tombstone.n.01 ;
-  :image tomb:t00720.im1 ;
+  :image t00720:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00720.p1 ,
-       tomb:t00720.p2 ;
+  :ent t00720:p1 ,
+       t00720:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00720.s1 ,
-       tomb:t00720.s2 ,
-       tomb:t00720.s3 .
+  :sym t00720:s1 ,
+       t00720:s2 ,
+       t00720:s3 .
 
-tomb:t00720.a1 a t:retired.a.01 .
+t00720:a1 a t:retired.a.01 .
 
-tomb:t00720.o1 a t:clerk.n.01 ;
-  :att tomb:t00720.a1 ;
+t00720:o1 a t:clerk.n.01 ;
+  :att t00720:a1 ;
   :hco "30000" ;
-  :org tomb:t00720.o2 .
+  :org t00720:o2 .
 
-tomb:t00720.o2 a t:state.n.04 ;
+t00720:o2 a t:state.n.04 ;
   :nam "NEDERLAND" .
 
-tomb:t00720.p1 a t:person.n.01 ;
+t00720:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1855-07-16" ;
   :dod "1931-01-13" ;
   :nam "HENDRIK SLIK" ;
-  :occ tomb:t00720.o1 ;
-  :rol tomb:t00720.r1 .
+  :occ t00720:o1 ;
+  :rol t00720:r1 .
 
-tomb:t00720.p2 a t:person.n.01 ;
+t00720:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1862-08-05" ;
   :dod "1943-10-11" ;
   :nam "MARGRIETHA CORNELIA ZIJLMA" .
 
-tomb:t00720.r1 a t:bearer.n.04 ;
-  :tgt tomb:t00720.s4 .
+t00720:r1 a t:bearer.n.04 ;
+  :tgt t00720:s4 .
 
-tomb:t00720.s1 a t:frond.n.01 .
+t00720:s1 a t:frond.n.01 .
 
-tomb:t00720.s2 a t:frond.n.01 .
+t00720:s2 a t:frond.n.01 .
 
-tomb:t00720.s3 a t:ribbon.n.01 .
+t00720:s3 a t:ribbon.n.01 .
 
-tomb:t00720.s4 a t:eremedaille.n.01 ;
+t00720:s4 a t:eremedaille.n.01 ;
   :att "ZILVEREN" ;
   :org "ORANJE NASSAU ORDE" .
 
-tomb:t00720.im1 a t:photo.n.01 ;
+t00720:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

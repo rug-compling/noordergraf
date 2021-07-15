@@ -1,36 +1,37 @@
+@prefix t01047: <https://noordergraf.rug.nl/tomb/t01047#> .
 
 tomb:t01047 a t:tombstone.n.01 ;
-  :image tomb:t01047.im1 ;
+  :image t01047:im1 ;
   :site site:gr9367PAde_wilp ;
-  :ent tomb:t01047.p1 ,
-       tomb:t01047.p2 ;
+  :ent t01047:p1 ,
+       t01047:p2 ;
   :lan "NLD" .
 
-tomb:t01047.g1 a t:group.n.01 .
+t01047:g1 a t:group.n.01 .
 
-tomb:t01047.p1 a t:person.n.01 ;
+t01047:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1915-01-31" ;
   :dod "1987-03-04" ;
   :nam "HENRDRIK NABRING" ;
-  :rol tomb:t01047.r1 ,
-       tomb:t01047.r2 ,
-       tomb:t01047.r3 .
+  :rol t01047:r1 ,
+       t01047:r2 ,
+       t01047:r3 .
 
-tomb:t01047.p2 a t:person.n.01 ;
+t01047:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "HENDERIKA ROFFEL" .
 
-tomb:t01047.r1 a t:father.n.01 ;
-  :tgt tomb:t01047.g1 .
+t01047:r1 a t:father.n.01 ;
+  :tgt t01047:g1 .
 
-tomb:t01047.r2 a t:grandfather.n.01 ;
-  :tgt tomb:t01047.g1 .
+t01047:r2 a t:grandfather.n.01 ;
+  :tgt t01047:g1 .
 
-tomb:t01047.r3 a t:spouse.n.01 ;
-  :tgt tomb:t01047.p2 .
+t01047:r3 a t:spouse.n.01 ;
+  :tgt t01047:p2 .
 
-tomb:t01047.im1 a t:photo.n.01 ;
+t01047:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

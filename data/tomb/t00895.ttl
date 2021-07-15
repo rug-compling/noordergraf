@@ -1,43 +1,44 @@
+@prefix t00895: <https://noordergraf.rug.nl/tomb/t00895#> .
 
 tomb:t00895 a t:tombstone.n.01 ;
-  :image tomb:t00895.im1 ;
+  :image t00895:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00895.p1 ,
-       tomb:t00895.p2 ;
+  :ent t00895:p1 ,
+       t00895:p2 ;
   :lan "NLD" ;
-  :pod tomb:t00895.c2 ;
-  :sym tomb:t00895.s1 .
+  :pod t00895:c2 ;
+  :sym t00895:s1 .
 
-tomb:t00895.a1 a t:weeping.a.02 .
+t00895:a1 a t:weeping.a.02 .
 
-tomb:t00895.c1 a t:hamlet.n.03 ;
-  :apx tomb:t00895.c2 ;
+t00895:c1 a t:hamlet.n.03 ;
+  :apx t00895:c2 ;
   :geo place:DeHolm2757523 ;
   :place "DE HOLM" .
 
-tomb:t00895.c2 a t:village.n.02 ;
+t00895:c2 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00895.p1 a t:person.n.01 ;
+t00895:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1820-02-04" ;
   :dod "1872-11-29" ;
   :nam "HENDERIKA JAKOBS MELESSEN" ;
-  :pob tomb:t00895.c1 ;
-  :rol tomb:t00895.r1 .
+  :pob t00895:c1 ;
+  :rol t00895:r1 .
 
-tomb:t00895.p2 a t:person.n.01 ;
+t00895:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "M.D. POL" .
 
-tomb:t00895.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00895.p2 .
+t00895:r1 a t:spouse.n.01 ;
+  :tgt t00895:p2 .
 
-tomb:t00895.s1 a t:willow.n.01 ;
-  :att tomb:t00895.a1 .
+t00895:s1 a t:willow.n.01 ;
+  :att t00895:a1 .
 
-tomb:t00895.im1 a t:photo.n.01 ;
+t00895:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

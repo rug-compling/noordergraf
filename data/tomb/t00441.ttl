@@ -1,44 +1,45 @@
+@prefix t00441: <https://noordergraf.rug.nl/tomb/t00441#> .
 
 tomb:t00441 a t:tombstone.n.01 ;
-  :image tomb:t00441.im1 ;
+  :image t00441:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00441.p1 ,
-       tomb:t00441.p2 ;
+  :ent t00441:p1 ,
+       t00441:p2 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00441.s1 .
+  :sym t00441:s1 .
 
-tomb:t00441.a1 a t:weeping.a.02 .
+t00441:a1 a t:weeping.a.02 .
 
-tomb:t00441.p1 a t:person.n.01 ;
+t00441:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1861-10-21" ;
   :dod "1926-04-07" ;
   :nam "STIJNTJE COERKAMP" ;
-  :rol tomb:t00441.r1 ,
-       tomb:t00441.r2 .
+  :rol t00441:r1 ,
+       t00441:r2 .
 
-tomb:t00441.p2 a t:person.n.01 ;
+t00441:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1853-05-13" ;
   :dod "1937-10-03" ;
   :nam "JAN ZEILINGA" ;
-  :rol tomb:t00441.r3 .
+  :rol t00441:r3 .
 
-tomb:t00441.r1 a t:wife.n.01 ;
+t00441:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00441.p2 .
+  :tgt t00441:p2 .
 
-tomb:t00441.r2 a t:mother.n.01 ;
-  :tgt tomb:t00441.p3 .
+t00441:r2 a t:mother.n.01 ;
+  :tgt t00441:p3 .
 
-tomb:t00441.r3 a t:father.n.01 ;
+t00441:r3 a t:father.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00441.p3 .
+  :tgt t00441:p3 .
 
-tomb:t00441.s1 a t:willow.n.01 ;
-  :att tomb:t00441.a1 .
+t00441:s1 a t:willow.n.01 ;
+  :att t00441:a1 .
 
-tomb:t00441.im1 a t:photo.n.01 ;
+t00441:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

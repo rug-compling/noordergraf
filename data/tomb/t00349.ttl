@@ -1,31 +1,32 @@
+@prefix t00349: <https://noordergraf.rug.nl/tomb/t00349#> .
 
 tomb:t00349 a t:tombstone.n.01 ;
-  :image tomb:t00349.im1 ;
+  :image t00349:im1 ;
   :site site:dr9481CGvries ;
-  :ent tomb:t00349.p1 ,
-       tomb:t00349.p2 .
+  :ent t00349:p1 ,
+       t00349:p2 .
 
-tomb:t00349.c1 a t:village.n.02 ;
+t00349:c1 a t:village.n.02 ;
   :geo place:Zeyen2743985 ;
   :place "ZEIJEN" .
 
-tomb:t00349.p1 a t:person.n.01 ;
+t00349:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1891-10-20" ;
   :dod "1965-02-09" ;
   :nam "JAN NOORD" ;
-  :pob tomb:t00349.c1 ;
-  :pod tomb:t00349.c1 .
+  :pob t00349:c1 ;
+  :pod t00349:c1 .
 
-tomb:t00349.p2 a t:person.n.01 ;
+t00349:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1901-03-01" ;
   :dod "1978-12-08" ;
   :nam "JEIGIEN ARENDS" ;
-  :pob tomb:t00349.c1 ;
-  :pod tomb:t00349.c1 .
+  :pob t00349:c1 ;
+  :pod t00349:c1 .
 
-tomb:t00349.im1 a t:photo.n.01 ;
+t00349:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

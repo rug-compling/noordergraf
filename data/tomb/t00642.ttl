@@ -1,35 +1,36 @@
+@prefix t00642: <https://noordergraf.rug.nl/tomb/t00642#> .
 
 tomb:t00642 a t:tombstone.n.01 ;
-  :image tomb:t00642.im1 ;
+  :image t00642:im1 ;
   :site site:gr9723EJgroningen ;
-  :ent tomb:t00642.p1 ,
-       tomb:t00642.p2 ;
+  :ent t00642:p1 ,
+       t00642:p2 ;
   :quo "IK WAS ALS LANDMAN EN \\ OOK TEVENS, \\ OUDERLING VAN JEZUS KERK; \\ HOOG BEJAARD DEED 'T EIND MIJNS LEVEN, \\ MIJ ONTSLAGEN VAN MIJN \\ WERK, \\ NU BEN IK TEN RUST GELEID, \\ EN VERWACHT DE ZALIGHEID."@nld ;
-  :sym tomb:t00642.s1 ,
-       tomb:t00642.s2 ,
-       tomb:t00642.s3 .
+  :sym t00642:s1 ,
+       t00642:s2 ,
+       t00642:s3 .
 
-tomb:t00642.p1 a t:person.n.01 ;
+t00642:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1839-01-26" ;
   :dod "1914-09-10" ;
   :nam "AALF NIJBORG" ;
-  :rol tomb:t00642.r1 .
+  :rol t00642:r1 .
 
-tomb:t00642.p2 a t:person.n.01 ;
+t00642:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "JUURTJE WEENDER" .
 
-tomb:t00642.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00642.p2 .
+t00642:r1 a t:spouse.n.01 ;
+  :tgt t00642:p2 .
 
-tomb:t00642.s1 a t:fakkel.n.01 .
+t00642:s1 a t:fakkel.n.01 .
 
-tomb:t00642.s2 a t:fakkel.n.01 .
+t00642:s2 a t:fakkel.n.01 .
 
-tomb:t00642.s3 a t:ribbon.n.01 .
+t00642:s3 a t:ribbon.n.01 .
 
-tomb:t00642.im1 a t:photo.n.01 ;
+t00642:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

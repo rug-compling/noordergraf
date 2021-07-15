@@ -1,52 +1,53 @@
+@prefix t00177: <https://noordergraf.rug.nl/tomb/t00177#> .
 
 tomb:t00177 a t:tombstone.n.01 ;
-  :image tomb:t00177.im1 ;
+  :image t00177:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00177.p1 ,
-       tomb:t00177.p2 ;
-  :sym tomb:t00177.s1 .
+  :ent t00177:p1 ,
+       t00177:p2 ;
+  :sym t00177:s1 .
 
-tomb:t00177.c1 a t:city.n.01 ;
+t00177:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00177.c2 a t:village.n.02 ;
+t00177:c2 a t:village.n.02 ;
   :geo place:NieuwePekela2750272 ;
   :place "NIEUWE PEKELA" .
 
-tomb:t00177.c3 a t:city.n.01 ;
+t00177:c3 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00177.p1 a t:person.n.01 ;
+t00177:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1870-01-29" ;
   :dod "1932-03-21" ;
   :nam "JELLE STUTVOET" ;
-  :pob tomb:t00177.c2 ;
-  :pod tomb:t00177.c1 ;
-  :rol tomb:t00177.r1 .
+  :pob t00177:c2 ;
+  :pod t00177:c1 ;
+  :rol t00177:r1 .
 
-tomb:t00177.p2 a t:person.n.01 ;
+t00177:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1874-11-15" ;
   :dod "1951-02-21" ;
   :nam "HENDERIKA VEENTJER" ;
-  :pob tomb:t00177.c3 ;
-  :pod tomb:t00177.c1 .
+  :pob t00177:c3 ;
+  :pod t00177:c1 .
 
-tomb:t00177.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00177.p2 .
+t00177:r1 a t:spouse.n.01 ;
+  :tgt t00177:p2 .
 
-tomb:t00177.s1 a t:composite.n.01 ;
-  :prt tomb:t00177.s2 ,
-       tomb:t00177.s3 .
+t00177:s1 a t:composite.n.01 ;
+  :prt t00177:s2 ,
+       t00177:s3 .
 
-tomb:t00177.s2 a t:frond.n.01 .
+t00177:s2 a t:frond.n.01 .
 
-tomb:t00177.s3 a t:ribbon.n.01 .
+t00177:s3 a t:ribbon.n.01 .
 
-tomb:t00177.im1 a t:photo.n.01 ;
+t00177:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

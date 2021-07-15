@@ -1,52 +1,53 @@
+@prefix t00427: <https://noordergraf.rug.nl/tomb/t00427#> .
 
 tomb:t00427 a t:tombstone.n.01 ;
-  :image tomb:t00427.im1 ;
+  :image t00427:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00427.p1 ,
-       tomb:t00427.p2 ;
-  :sym tomb:t00427.s1 .
+  :ent t00427:p1 ,
+       t00427:p2 ;
+  :sym t00427:s1 .
 
-tomb:t00427.c1 a t:island.n.01 ;
+t00427:c1 a t:island.n.01 ;
   :geo place:Schiermonnikoog2747591 ;
   :place "SCHIERMONNIKOOG" .
 
-tomb:t00427.p1 a t:person.n.01 ;
+t00427:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1879-08-03" ;
   :dod "1943-07-28" ;
   :nam "HENDRIK WILLEM VAN DEN BERG" ;
-  :pod tomb:t00427.c1 ;
-  :rol tomb:t00427.r1 .
+  :pod t00427:c1 ;
+  :rol t00427:r1 .
 
-tomb:t00427.p2 a t:person.n.01 ;
+t00427:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1887-03-27" ;
   :dod "1943-07-28" ;
   :nam "JACOBA ABRAMINA ZEILINGA" ;
-  :pod tomb:t00427.c1 ;
-  :rol tomb:t00427.r2 .
+  :pod t00427:c1 ;
+  :rol t00427:r2 .
 
-tomb:t00427.r1 a t:parent.n.01 ;
+t00427:r1 a t:parent.n.01 ;
   :att "LIEVE" .
 
-tomb:t00427.r2 a t:parent.n.01 ;
+t00427:r2 a t:parent.n.01 ;
   :att "LIEVE" .
 
-tomb:t00427.s1 a t:composite.n.01 ;
-  :prt tomb:t00427.s2 ,
-       tomb:t00427.s3 ,
-       tomb:t00427.s4 ,
-       tomb:t00427.s5 .
+t00427:s1 a t:composite.n.01 ;
+  :prt t00427:s2 ,
+       t00427:s3 ,
+       t00427:s4 ,
+       t00427:s5 .
 
-tomb:t00427.s2 a t:flower.n.01 .
+t00427:s2 a t:flower.n.01 .
 
-tomb:t00427.s3 a t:flower.n.01 .
+t00427:s3 a t:flower.n.01 .
 
-tomb:t00427.s4 a t:flower.n.01 .
+t00427:s4 a t:flower.n.01 .
 
-tomb:t00427.s5 a t:ribbon.n.01 .
+t00427:s5 a t:ribbon.n.01 .
 
-tomb:t00427.im1 a t:photo.n.01 ;
+t00427:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

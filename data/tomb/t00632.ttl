@@ -1,38 +1,39 @@
+@prefix t00632: <https://noordergraf.rug.nl/tomb/t00632#> .
 
 tomb:t00632 a t:tombstone.n.01 ;
-  :image tomb:t00632.im1 ;
+  :image t00632:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00632.p1 ,
-       tomb:t00632.p2 ;
+  :ent t00632:p1 ,
+       t00632:p2 ;
   :quo "HIER NEVEN RUSTEN \\ DRIE KINDEREN"@nld ;
-  :sym tomb:t00632.s1 ,
-       tomb:t00632.s2 ,
-       tomb:t00632.s3 ,
-       tomb:t00632.s4 .
+  :sym t00632:s1 ,
+       t00632:s2 ,
+       t00632:s3 ,
+       t00632:s4 .
 
-tomb:t00632.p1 a t:person.n.01 ;
+t00632:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1823-08-15" ;
   :dod "1878-02-26" ;
   :nam "ENNO BRONSEMA" ;
-  :rol tomb:t00632.r1 .
+  :rol t00632:r1 .
 
-tomb:t00632.p2 a t:person.n.01 ;
+t00632:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ELIZA MEIHUIZEN" .
 
-tomb:t00632.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00632.p2 .
+t00632:r1 a t:spouse.n.01 ;
+  :tgt t00632:p2 .
 
-tomb:t00632.s1 a t:butterfly.n.01 .
+t00632:s1 a t:butterfly.n.01 .
 
-tomb:t00632.s2 a t:oak.n.02 .
+t00632:s2 a t:oak.n.02 .
 
-tomb:t00632.s3 a t:oak.n.02 .
+t00632:s3 a t:oak.n.02 .
 
-tomb:t00632.s4 a t:ribbon.n.01 .
+t00632:s4 a t:ribbon.n.01 .
 
-tomb:t00632.im1 a t:photo.n.01 ;
+t00632:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,47 +1,48 @@
+@prefix t00205: <https://noordergraf.rug.nl/tomb/t00205#> .
 
 tomb:t00205 a t:tombstone.n.01 ;
-  :image tomb:t00205.im1 ;
+  :image t00205:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00205.p1 ,
-       tomb:t00205.p2 ;
+  :ent t00205:p1 ,
+       t00205:p2 ;
   :quo "RUST ZACHT" ;
-  :sym tomb:t00205.s1 .
+  :sym t00205:s1 .
 
-tomb:t00205.c1 a t:village.n.02 ;
+t00205:c1 a t:village.n.02 ;
   :geo place:Vlagtwedde2745461 ;
   :place "VLAGTWEDDE" .
 
-tomb:t00205.c2 a t:town.n.01 ;
+t00205:c2 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00205.c3 a t:village.n.02 ;
+t00205:c3 a t:village.n.02 ;
   :geo place:Faan2755935 ;
   :place "FAAN" .
 
-tomb:t00205.p1 a t:person.n.01 ;
+t00205:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1869-08-14" ;
   :dod "1934-02-15" ;
   :nam "MARGARITHA BALKEMA" ;
-  :pob tomb:t00205.c1 ;
-  :pod tomb:t00205.c2 ;
-  :rol tomb:t00205.r1 .
+  :pob t00205:c1 ;
+  :pod t00205:c2 ;
+  :rol t00205:r1 .
 
-tomb:t00205.p2 a t:person.n.01 ;
+t00205:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1861-10-07" ;
   :dod "1941-10-05" ;
   :nam "AUKE VEENSTRA" ;
-  :pob tomb:t00205.c3 ;
-  :pod tomb:t00205.c2 .
+  :pob t00205:c3 ;
+  :pod t00205:c2 .
 
-tomb:t00205.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00205.p2 .
+t00205:r1 a t:spouse.n.01 ;
+  :tgt t00205:p2 .
 
-tomb:t00205.s1 a t:frond.n.01 .
+t00205:s1 a t:frond.n.01 .
 
-tomb:t00205.im1 a t:photo.n.01 ;
+t00205:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

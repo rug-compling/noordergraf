@@ -1,19 +1,20 @@
+@prefix t00180: <https://noordergraf.rug.nl/tomb/t00180#> .
 
 tomb:t00180 a t:tombstone.n.01 ;
-  :image tomb:t00180.im1 ;
+  :image t00180:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00180.p1 ;
-  :sym tomb:t00180.s1 .
+  :ent t00180:p1 ;
+  :sym t00180:s1 .
 
-tomb:t00180.p1 a t:person.n.01 ;
+t00180:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1872-09-25" ;
   :dod "1934-10-28" ;
   :nam "MARIA BLEEKER" .
 
-tomb:t00180.s1 a t:frond.n.01 .
+t00180:s1 a t:frond.n.01 .
 
-tomb:t00180.im1 a t:photo.n.01 ;
+t00180:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

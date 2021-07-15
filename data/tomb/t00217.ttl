@@ -1,49 +1,50 @@
+@prefix t00217: <https://noordergraf.rug.nl/tomb/t00217#> .
 
 tomb:t00217 a t:tombstone.n.01 ;
-  :image tomb:t00217.im1 ;
+  :image t00217:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00217.g1 ,
-       tomb:t00217.p1 ,
-       tomb:t00217.p2 ,
-       tomb:t00217.p3 ;
+  :ent t00217:g1 ,
+       t00217:p1 ,
+       t00217:p2 ,
+       t00217:p3 ;
   :quo "HAAR HEENGAAN WAS VREDE" ;
-  :sym tomb:t00217.s1 .
+  :sym t00217:s1 .
 
-tomb:t00217.c1 a t:village.n.02 ;
+t00217:c1 a t:village.n.02 ;
   :geo place:Noorddijk2749981 ;
   :place "NOORDDIJK" .
 
-tomb:t00217.c2 a t:village.n.02 ;
+t00217:c2 a t:village.n.02 ;
   :geo place:Harkstede2754819 ;
   :place "HARKSTEDE" .
 
-tomb:t00217.g1 a t:group.n.01 ;
-  :mem tomb:t00217.p2 ,
-       tomb:t00217.p3 .
+t00217:g1 a t:group.n.01 ;
+  :mem t00217:p2 ,
+       t00217:p3 .
 
-tomb:t00217.p1 a t:person.n.01 ;
+t00217:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1876-05-25" ;
   :dod "1896-05-20" ;
   :nam "GRIETJE WIERINGA" ;
-  :pob tomb:t00217.c1 ;
-  :pod tomb:t00217.c2 ;
-  :rol tomb:t00217.r2 .
+  :pob t00217:c1 ;
+  :pod t00217:c2 ;
+  :rol t00217:r2 .
 
-tomb:t00217.p2 a t:person.n.01 ;
+t00217:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN WIERINGA" .
 
-tomb:t00217.p3 a t:person.n.01 ;
+t00217:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANNA BOLT" .
 
-tomb:t00217.r2 a t:daughter.n.01 ;
-  :tgt tomb:t00217.g1 .
+t00217:r2 a t:daughter.n.01 ;
+  :tgt t00217:g1 .
 
-tomb:t00217.s1 a t:rose.n.01 .
+t00217:s1 a t:rose.n.01 .
 
-tomb:t00217.im1 a t:photo.n.01 ;
+t00217:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

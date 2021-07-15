@@ -1,35 +1,36 @@
+@prefix t00185: <https://noordergraf.rug.nl/tomb/t00185#> .
 
 tomb:t00185 a t:tombstone.n.01 ;
-  :image tomb:t00185.im1 ;
+  :image t00185:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00185.p1 ,
-       tomb:t00185.p2 ,
-       tomb:t00185.p3 ;
+  :ent t00185:p1 ,
+       t00185:p2 ,
+       t00185:p3 ;
   :ref "PSALM 73:12,13" .
 
-tomb:t00185.p1 a t:person.n.01 ;
+t00185:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1924-09-16" ;
   :dod "1938-07-22" ;
   :nam "HENDRIK VELDMAN" .
 
-tomb:t00185.p2 a t:person.n.01 ;
+t00185:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1898-02-08" ;
   :dod "1966-11-20" ;
   :nam "GEERTJE DOZEMAN" ;
-  :rol tomb:t00185.r4 .
+  :rol t00185:r4 .
 
-tomb:t00185.p3 a t:person.n.01 ;
+t00185:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1894-11-23" ;
   :dod "1969-01-01" ;
   :nam "JOHANNES VELDMAN" .
 
-tomb:t00185.r4 a t:spouse.n.01 ;
-  :tgt tomb:t00185.p3 .
+t00185:r4 a t:spouse.n.01 ;
+  :tgt t00185:p3 .
 
-tomb:t00185.im1 a t:photo.n.01 ;
+t00185:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

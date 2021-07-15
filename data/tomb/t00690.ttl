@@ -1,33 +1,34 @@
+@prefix t00690: <https://noordergraf.rug.nl/tomb/t00690#> .
 
 tomb:t00690 a t:tombstone.n.01 ;
-  :image tomb:t00690.im1 ;
+  :image t00690:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00690.p1 ;
+  :ent t00690:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00690.s1 .
+  :sym t00690:s1 .
 
-tomb:t00690.a1 a t:weeping.a.02 .
+t00690:a1 a t:weeping.a.02 .
 
-tomb:t00690.c1 a t:village.n.02 ;
+t00690:c1 a t:village.n.02 ;
   :geo place:Hartwerd2754799 ;
   :place "HARTWERD" .
 
-tomb:t00690.c2 a t:city.n.01 ;
+t00690:c2 a t:city.n.01 ;
   :geo place:Bolsward2758682 ;
   :place "BOLSWARD" .
 
-tomb:t00690.p1 a t:person.n.01 ;
+t00690:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1883-06-22" ;
   :dod "1942-01-30" ;
   :nam "PIETER B. KINGMA" ;
-  :pob tomb:t00690.c1 ;
-  :pod tomb:t00690.c2 .
+  :pob t00690:c1 ;
+  :pod t00690:c2 .
 
-tomb:t00690.s1 a t:willow.n.01 ;
-  :att tomb:t00690.a1 .
+t00690:s1 a t:willow.n.01 ;
+  :att t00690:a1 .
 
-tomb:t00690.im1 a t:photo.n.01 ;
+t00690:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

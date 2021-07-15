@@ -1,42 +1,43 @@
+@prefix t00438: <https://noordergraf.rug.nl/tomb/t00438#> .
 
 tomb:t00438 a t:tombstone.n.01 ;
-  :image tomb:t00438.im1 ;
+  :image t00438:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00438.p1 ,
-       tomb:t00438.p2 ;
+  :ent t00438:p1 ,
+       t00438:p2 ;
   :quo "VOOR ALTIJD SAMEN MET ELKAARS LIEFDE ALHIER BIJGEZET OP NO. 21" .
 
-tomb:t00438.c1 a t:town.n.01 ;
+t00438:c1 a t:town.n.01 ;
   :geo place:Oegstgeest2749723 ;
   :place "OEGSTGEEST" .
 
-tomb:t00438.c2 a t:city.n.01 ;
+t00438:c2 a t:city.n.01 ;
   :geo place:Goes2755476 ;
   :place "GOES" .
 
-tomb:t00438.c3 a t:village.n.02 ;
+t00438:c3 a t:village.n.02 ;
   :geo place:Warmond2745012 ;
   :place "WARMOND" .
 
-tomb:t00438.p1 a t:person.n.01 ;
+t00438:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1917-12-23" ;
   :dod "2008-03-03" ;
   :nam "ABRAHAM WILLEM VAN DEN WORM" ,
        "WIM" ;
-  :pob tomb:t00438.c1 ;
-  :pod tomb:t00438.c1 .
+  :pob t00438:c1 ;
+  :pod t00438:c1 .
 
-tomb:t00438.p2 a t:person.n.01 ;
+t00438:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1920-07-15" ;
   :dod "2006-08-20" ;
   :nam "ELLA" ,
        "PIETERNELLA JACOBA VAN DEN WORM-GOEDBLOED" ;
-  :pob tomb:t00438.c2 ;
-  :pod tomb:t00438.c3 .
+  :pob t00438:c2 ;
+  :pod t00438:c3 .
 
-tomb:t00438.im1 a t:photo.n.01 ;
+t00438:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

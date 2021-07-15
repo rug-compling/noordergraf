@@ -1,52 +1,53 @@
+@prefix t00490: <https://noordergraf.rug.nl/tomb/t00490#> .
 
 tomb:t00490 a t:tombstone.n.01 ;
-  :image tomb:t00490.im1 ;
+  :image t00490:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00490.p1 ,
-       tomb:t00490.p2 ;
-  :sym tomb:t00490.s1 .
+  :ent t00490:p1 ,
+       t00490:p2 ;
+  :sym t00490:s1 .
 
-tomb:t00490.c1 a t:village.n.02 ;
+t00490:c1 a t:village.n.02 ;
   :geo place:Noordwolde2749807 ;
   :place "NOORDWOLDE" .
 
-tomb:t00490.c2 a t:city.n.01 ;
+t00490:c2 a t:city.n.01 ;
   :geo place:Leeuwarden2751792 ;
   :place "LEEUWARDEN" .
 
-tomb:t00490.p1 a t:person.n.01 ;
+t00490:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1843-10-15" ;
   :dod "1913-06-05" ;
   :nam "DOUWE HARDER" ;
-  :pob tomb:t00490.c1 ;
-  :pod tomb:t00490.c2 ;
-  :rol tomb:t00490.r1 .
+  :pob t00490:c1 ;
+  :pod t00490:c2 ;
+  :rol t00490:r1 .
 
-tomb:t00490.p2 a t:person.n.01 ;
+t00490:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1844-01-04" ;
   :dod "1926-05-08" ;
   :nam "AUKJE JASPER" ;
-  :pob tomb:t00490.c2 ;
-  :pod tomb:t00490.c2 ;
-  :rol tomb:t00490.r2 .
+  :pob t00490:c2 ;
+  :pod t00490:c2 ;
+  :rol t00490:r2 .
 
-tomb:t00490.r1 a t:parent.n.01 ;
-  :tgt tomb:t00490.p3 .
+t00490:r1 a t:parent.n.01 ;
+  :tgt t00490:p3 .
 
-tomb:t00490.r2 a t:parent.n.01 ;
-  :tgt tomb:t00490.p3 .
+t00490:r2 a t:parent.n.01 ;
+  :tgt t00490:p3 .
 
-tomb:t00490.s1 a t:composite.n.01 ;
-  :prt tomb:t00490.s2 ,
-       tomb:t00490.s3 .
+t00490:s1 a t:composite.n.01 ;
+  :prt t00490:s2 ,
+       t00490:s3 .
 
-tomb:t00490.s2 a t:frond.n.01 .
+t00490:s2 a t:frond.n.01 .
 
-tomb:t00490.s3 a t:frond.n.01 .
+t00490:s3 a t:frond.n.01 .
 
-tomb:t00490.im1 a t:photo.n.01 ;
+t00490:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

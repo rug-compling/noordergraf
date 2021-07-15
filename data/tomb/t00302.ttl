@@ -1,52 +1,53 @@
+@prefix t00302: <https://noordergraf.rug.nl/tomb/t00302#> .
 
 tomb:t00302 a t:tombstone.n.01 ;
-  :image tomb:t00302.im1 ;
+  :image t00302:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00302.p1 ,
-       tomb:t00302.p2 ;
-  :sym tomb:t00302.s1 .
+  :ent t00302:p1 ,
+       t00302:p2 ;
+  :sym t00302:s1 .
 
-tomb:t00302.c1 a t:town.n.01 ;
+t00302:c1 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00302.c2 a t:village.n.02 ;
+t00302:c2 a t:village.n.02 ;
   :geo place:Dwingeloo2756451 ;
   :place "DWINGELOO" .
 
-tomb:t00302.c3 a t:city.n.01 ;
+t00302:c3 a t:city.n.01 ;
   :nam "HENGELO" .
 
-tomb:t00302.c4 a t:province.n.01 ;
+t00302:c4 a t:province.n.01 ;
   :geo place:ProvincieOverijssel2748838 ;
-  :mem tomb:t00302.c3 ;
+  :mem t00302:c3 ;
   :place "OVERIJSSEL" .
 
-tomb:t00302.p1 a t:person.n.01 ;
+t00302:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1858-09-08" ;
   :dod "1942-10-10" ;
   :nam "ALBERT OETS" ;
-  :pob tomb:t00302.c1 ;
-  :pod tomb:t00302.c1 .
+  :pob t00302:c1 ;
+  :pod t00302:c1 .
 
-tomb:t00302.p2 a t:person.n.01 ;
+t00302:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1858-03-02" ;
   :dod "1951-12-31" ;
   :nam "ALEIDA ROELINA JENTINA STERKEN" ;
-  :pob tomb:t00302.c2 ;
-  :pod tomb:t00302.c3 .
+  :pob t00302:c2 ;
+  :pod t00302:c3 .
 
-tomb:t00302.s1 a t:composite.n.01 ;
-  :prt tomb:t00302.s2 ,
-       tomb:t00302.s3 .
+t00302:s1 a t:composite.n.01 ;
+  :prt t00302:s2 ,
+       t00302:s3 .
 
-tomb:t00302.s2 a t:frond.n.01 .
+t00302:s2 a t:frond.n.01 .
 
-tomb:t00302.s3 a t:frond.n.01 .
+t00302:s3 a t:frond.n.01 .
 
-tomb:t00302.im1 a t:photo.n.01 ;
+t00302:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

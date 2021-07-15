@@ -1,43 +1,44 @@
+@prefix t00773: <https://noordergraf.rug.nl/tomb/t00773#> .
 
 tomb:t00773 a t:tombstone.n.01 ;
-  :image tomb:t00773.im1 ;
+  :image t00773:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00773.p1 ,
-       tomb:t00773.p2 ;
+  :ent t00773:p1 ,
+       t00773:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00773.s1 .
+  :sym t00773:s1 .
 
-tomb:t00773.a1 a t:weeping.a.02 .
+t00773:a1 a t:weeping.a.02 .
 
-tomb:t00773.c1 a t:village.n.02 ;
+t00773:c1 a t:village.n.02 ;
   :geo place:Noordbarge2749996 ;
   :place "NOORDBARGE" .
 
-tomb:t00773.c2 a t:town.n.01 ;
+t00773:c2 a t:town.n.01 ;
   :geo place:Emmen2756136 ;
   :place "EMMEN" .
 
-tomb:t00773.p1 a t:person.n.01 ;
+t00773:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1864-08-28" ;
   :dod "1894-10-10" ;
   :nam "HILLIGJE EVERTS" ;
-  :pob tomb:t00773.c1 ;
-  :pod tomb:t00773.c2 ;
-  :rol tomb:t00773.r1 .
+  :pob t00773:c1 ;
+  :pod t00773:c2 ;
+  :rol t00773:r1 .
 
-tomb:t00773.p2 a t:person.n.01 ;
+t00773:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "WILLEM JOLING" ;
   :sfx "HZ" .
 
-tomb:t00773.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00773.p2 .
+t00773:r1 a t:spouse.n.01 ;
+  :tgt t00773:p2 .
 
-tomb:t00773.s1 a t:willow.n.01 ;
-  :att tomb:t00773.a1 .
+t00773:s1 a t:willow.n.01 ;
+  :att t00773:a1 .
 
-tomb:t00773.im1 a t:photo.n.01 ;
+t00773:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

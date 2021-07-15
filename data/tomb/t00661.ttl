@@ -1,35 +1,36 @@
+@prefix t00661: <https://noordergraf.rug.nl/tomb/t00661#> .
 
 tomb:t00661 a t:tombstone.n.01 ;
-  :image tomb:t00661.im1 ;
+  :image t00661:im1 ;
   :site site:fr8701DWbolsward ;
-  :ent tomb:t00661.p1 ;
+  :ent t00661:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00661.s1 .
+  :sym t00661:s1 .
 
-tomb:t00661.c1 a t:city.n.01 ;
+t00661:c1 a t:city.n.01 ;
   :geo place:Bolsward2758682 ;
   :place "BOLSWARD" .
 
-tomb:t00661.c2 a t:city.n.01 ;
+t00661:c2 a t:city.n.01 ;
   :geo place:Deventer2756987 ;
   :place "DEVENTER" .
 
-tomb:t00661.o1 a t:teacher.n.01 ;
+t00661:o1 a t:teacher.n.01 ;
   :att "OUD" ;
   :hco "13320" .
 
-tomb:t00661.p1 a t:person.n.01 ;
+t00661:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1880-07-01" ;
   :dod "1947-10-05" ;
   :nam "DIEUWLE LAAGLAND" ;
-  :occ tomb:t00661.o1 ;
-  :pob tomb:t00661.c1 ;
-  :pod tomb:t00661.c2 .
+  :occ t00661:o1 ;
+  :pob t00661:c1 ;
+  :pod t00661:c2 .
 
-tomb:t00661.s1 a t:frond.n.01 .
+t00661:s1 a t:frond.n.01 .
 
-tomb:t00661.im1 a t:photo.n.01 ;
+t00661:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

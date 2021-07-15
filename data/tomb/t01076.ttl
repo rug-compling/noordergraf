@@ -1,50 +1,51 @@
+@prefix t01076: <https://noordergraf.rug.nl/tomb/t01076#> .
 
 tomb:t01076 a t:tombstone.n.01 ;
-  :image tomb:t01076.im1 ;
+  :image t01076:im1 ;
   :site site:gr9906PPbierum ;
-  :ent tomb:t01076.p1 ,
-       tomb:t01076.p2 ,
-       tomb:t01076.p3 ,
-       tomb:t01076.p4 ;
+  :ent t01076:p1 ,
+       t01076:p2 ,
+       t01076:p3 ,
+       t01076:p4 ;
   :lan "NLD" ;
-  :sym tomb:t01076.s1 ,
-       tomb:t01076.s2 ,
-       tomb:t01076.s3 .
+  :sym t01076:s1 ,
+       t01076:s2 ,
+       t01076:s3 .
 
-tomb:t01076.g1 a t:group.n.01 ;
-  :mem tomb:t01076.p2 ,
-       tomb:t01076.p3 .
+t01076:g1 a t:group.n.01 ;
+  :mem t01076:p2 ,
+       t01076:p3 .
 
-tomb:t01076.p1 a t:person.n.01 ;
+t01076:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1871-05-01" ;
   :dod "1876-11-20" ;
   :nam "ELIZABETH" ;
-  :rol tomb:t01076.r1 .
+  :rol t01076:r1 .
 
-tomb:t01076.p2 a t:person.n.01 ;
+t01076:p2 a t:person.n.01 ;
   :nam "J.E. WESTING" .
 
-tomb:t01076.p3 a t:person.n.01 ;
+t01076:p3 a t:person.n.01 ;
   :nam "A. BALKEMA" .
 
-tomb:t01076.p4 a t:person.n.01 ;
+t01076:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1890-04-10" ;
   :dod "1890-10-16" ;
   :nam "ZWAANTJE" .
 
-tomb:t01076.r1 a t:daughter.n.01 ;
+t01076:r1 a t:daughter.n.01 ;
   :att "EENIGST" ;
-  :tgt tomb:t01076.g1 .
+  :tgt t01076:g1 .
 
-tomb:t01076.s1 a t:butterfly.n.01 .
+t01076:s1 a t:butterfly.n.01 .
 
-tomb:t01076.s2 a t:rose.n.01 .
+t01076:s2 a t:rose.n.01 .
 
-tomb:t01076.s3 a t:entity.n.01 .
+t01076:s3 a t:entity.n.01 .
 
-tomb:t01076.im1 a t:photo.n.01 ;
+t01076:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

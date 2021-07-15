@@ -1,25 +1,26 @@
+@prefix t00265: <https://noordergraf.rug.nl/tomb/t00265#> .
 
 tomb:t00265 a t:tombstone.n.01 ;
-  :image tomb:t00265.im1 ;
+  :image t00265:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00265.p1 ,
-       tomb:t00265.p2 .
+  :ent t00265:p1 ,
+       t00265:p2 .
 
-tomb:t00265.p1 a t:person.n.01 ;
+t00265:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1927-07-17" ;
   :dod "2000-01-11" ;
   :nam "ALIDA MARTINA WILLEMINA BOESER" ;
-  :rol tomb:t00265.r1 .
+  :rol t00265:r1 .
 
-tomb:t00265.p2 a t:person.n.01 ;
+t00265:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "AALDERIKUS DE VRIES" .
 
-tomb:t00265.r1 a t:widow.n.01 ;
-  :tgt tomb:t00265.p2 .
+t00265:r1 a t:widow.n.01 ;
+  :tgt t00265:p2 .
 
-tomb:t00265.im1 a t:photo.n.01 ;
+t00265:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

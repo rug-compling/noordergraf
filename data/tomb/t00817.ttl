@@ -1,27 +1,28 @@
+@prefix t00817: <https://noordergraf.rug.nl/tomb/t00817#> .
 
 tomb:t00817 a t:tombstone.n.01 ;
-  :image tomb:t00817.im1 ;
+  :image t00817:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00817.p1 ,
-       tomb:t00817.p2 ,
-       tomb:t00817.p3 ;
+  :ent t00817:p1 ,
+       t00817:p2 ,
+       t00817:p3 ;
   :lan "NLD" .
 
-tomb:t00817.p1 a t:person.n.01 ;
+t00817:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1942-08-17" ;
   :dod "1944-07-06" ;
   :nam "HENKIE" .
 
-tomb:t00817.p2 a t:person.n.01 ;
+t00817:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H. DEKKER" .
 
-tomb:t00817.p3 a t:person.n.01 ;
+t00817:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "H. DEKKER-STOPPELS" .
 
-tomb:t00817.im1 a t:photo.n.01 ;
+t00817:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

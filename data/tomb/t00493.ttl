@@ -1,37 +1,38 @@
+@prefix t00493: <https://noordergraf.rug.nl/tomb/t00493#> .
 
 tomb:t00493 a t:tombstone.n.01 ;
-  :image tomb:t00493.im1 ;
+  :image t00493:im1 ;
   :site site:fr8917AVleeuwarden ;
-  :ent tomb:t00493.p1 ,
-       tomb:t00493.p2 .
+  :ent t00493:p1 ,
+       t00493:p2 .
 
-tomb:t00493.p1 a t:person.n.01 ;
+t00493:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1854-07-21" ;
   :dod "1917-02-13" ;
   :nam "HELENA PANHUIS" ;
-  :rol tomb:t00493.r1 ,
-       tomb:t00493.r2 .
+  :rol t00493:r1 ,
+       t00493:r2 .
 
-tomb:t00493.p2 a t:person.n.01 ;
+t00493:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1860-07-21" ;
   :dod "1922-05-23" ;
   :nam "PIETER VAN DER ZEE" ;
-  :rol tomb:t00493.r3 .
+  :rol t00493:r3 .
 
-tomb:t00493.r1 a t:wife.n.01 ;
+t00493:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00493.p2 .
+  :tgt t00493:p2 .
 
-tomb:t00493.r2 a t:mother.n.01 ;
-  :tgt tomb:t00493.p3 .
+t00493:r2 a t:mother.n.01 ;
+  :tgt t00493:p3 .
 
-tomb:t00493.r3 a t:father.n.01 ;
+t00493:r3 a t:father.n.01 ;
   :att "BESTE" ;
-  :tgt tomb:t00493.p3 .
+  :tgt t00493:p3 .
 
-tomb:t00493.im1 a t:photo.n.01 ;
+t00493:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

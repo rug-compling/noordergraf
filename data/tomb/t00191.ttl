@@ -1,61 +1,62 @@
+@prefix t00191: <https://noordergraf.rug.nl/tomb/t00191#> .
 
 tomb:t00191 a t:tombstone.n.01 ;
-  :image tomb:t00191.im1 ;
+  :image t00191:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00191.g1 ,
-       tomb:t00191.p1 ,
-       tomb:t00191.p2 ,
-       tomb:t00191.p3 ;
-  :sym tomb:t00191.s1 .
+  :ent t00191:g1 ,
+       t00191:p1 ,
+       t00191:p2 ,
+       t00191:p3 ;
+  :sym t00191:s1 .
 
-tomb:t00191.a1 a t:weeping.a.02 .
+t00191:a1 a t:weeping.a.02 .
 
-tomb:t00191.c1 a t:village.n.02 ;
+t00191:c1 a t:village.n.02 ;
   :geo place:Mildam2750805 ;
   :place "MILDAM" .
 
-tomb:t00191.c2 a t:village.n.02 ;
+t00191:c2 a t:village.n.02 ;
   :geo place:Oudeschoot2749007 ;
   :place "OUDESCHOOT" .
 
-tomb:t00191.c3 a t:city.n.01 ;
+t00191:c3 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00191.g1 a t:group.n.01 ;
-  :mem tomb:t00191.p1 ,
-       tomb:t00191.p2 ;
-  :rol tomb:t00191.r1 .
+t00191:g1 a t:group.n.01 ;
+  :mem t00191:p1 ,
+       t00191:p2 ;
+  :rol t00191:r1 .
 
-tomb:t00191.p1 a t:person.n.01 ;
+t00191:p1 a t:person.n.01 ;
   :dob "1898-03-06" ;
   :dod "1944-04-15" ;
   :nam "R. SOETENDAL" ;
-  :pob tomb:t00191.c1 ;
-  :pod tomb:t00191.c2 .
+  :pob t00191:c1 ;
+  :pod t00191:c2 .
 
-tomb:t00191.p2 a t:person.n.01 ;
+t00191:p2 a t:person.n.01 ;
   :dob "1905-01-10" ;
   :dod "1939-12-11" ;
   :nam "A. VAN DER SCHOOT" ;
-  :pob tomb:t00191.c2 ;
-  :pod tomb:t00191.c3 .
+  :pob t00191:c2 ;
+  :pod t00191:c3 .
 
-tomb:t00191.p3 a t:person.n.01 ;
+t00191:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "HENDRIK" ;
-  :rol tomb:t00191.r3 .
+  :rol t00191:r3 .
 
-tomb:t00191.r1 a t:parent.n.01 ;
-  :tgt tomb:t00191.p3 .
+t00191:r1 a t:parent.n.01 ;
+  :tgt t00191:p3 .
 
-tomb:t00191.r3 a t:son.n.01 ;
-  :tgt tomb:t00191.g1 .
+t00191:r3 a t:son.n.01 ;
+  :tgt t00191:g1 .
 
-tomb:t00191.s1 a t:willow.n.01 ;
-  :att tomb:t00191.a1 .
+t00191:s1 a t:willow.n.01 ;
+  :att t00191:a1 .
 
-tomb:t00191.im1 a t:photo.n.01 ;
+t00191:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

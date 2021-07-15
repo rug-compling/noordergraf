@@ -1,64 +1,65 @@
+@prefix t00028: <https://noordergraf.rug.nl/tomb/t00028#> .
 
 tomb:t00028 a t:tombstone.n.01 ;
-  :image tomb:t00028.im1 ;
+  :image t00028:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00028.g1 ,
-       tomb:t00028.g2 ,
-       tomb:t00028.p1 ,
-       tomb:t00028.p2 .
+  :ent t00028:g1 ,
+       t00028:g2 ,
+       t00028:p1 ,
+       t00028:p2 .
 
-tomb:t00028.c1 a t:village.n.02 ;
+t00028:c1 a t:village.n.02 ;
   :geo place:Thesinge2746361 ;
   :place "THESINGE" .
 
-tomb:t00028.c2 a t:city.n.01 ;
+t00028:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00028.c3 a t:city.n.01 ;
+t00028:c3 a t:city.n.01 ;
   :geo place:Appingedam2759687 ;
   :place "APPINGEDAM" .
 
-tomb:t00028.g1 a t:group.n.01 ;
-  :mem tomb:t00028.p2 .
+t00028:g1 a t:group.n.01 ;
+  :mem t00028:p2 .
 
-tomb:t00028.g2 a t:group.n.01 .
+t00028:g2 a t:group.n.01 .
 
-tomb:t00028.p1 a t:person.n.01 ;
+t00028:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1883-02-06" ;
   :dod "1936-07-29" ;
   :nam "TRIENTJE BIERLING" ;
-  :pob tomb:t00028.c1 ;
-  :pod tomb:t00028.c2 ;
-  :rol tomb:t00028.r1 ,
-       tomb:t00028.r2 ,
-       tomb:t00028.r3 .
+  :pob t00028:c1 ;
+  :pod t00028:c2 ;
+  :rol t00028:r1 ,
+       t00028:r2 ,
+       t00028:r3 .
 
-tomb:t00028.p2 a t:person.n.01 ;
+t00028:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1876-06-19" ;
   :dod "1952-01-28" ;
   :nam "MARTINUS ALBERTUS SICCAMA" ;
-  :pob tomb:t00028.c3 ;
-  :pod tomb:t00028.c1 ;
-  :rol tomb:t00028.r4 .
+  :pob t00028:c3 ;
+  :pod t00028:c1 ;
+  :rol t00028:r4 .
 
-tomb:t00028.r1 a t:wife.n.01 ;
+t00028:r1 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00028.p2 .
+  :tgt t00028:p2 .
 
-tomb:t00028.r2 a t:mother.n.01 ;
-  :tgt tomb:t00028.g1 .
+t00028:r2 a t:mother.n.01 ;
+  :tgt t00028:g1 .
 
-tomb:t00028.r3 a t:spouse.n.01 ;
-  :tgt tomb:t00028.p2 .
+t00028:r3 a t:spouse.n.01 ;
+  :tgt t00028:p2 .
 
-tomb:t00028.r4 a t:father.n.01 ;
+t00028:r4 a t:father.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00028.g2 .
+  :tgt t00028:g2 .
 
-tomb:t00028.im1 a t:photo.n.01 ;
+t00028:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

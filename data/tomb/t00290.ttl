@@ -1,28 +1,29 @@
+@prefix t00290: <https://noordergraf.rug.nl/tomb/t00290#> .
 
 tomb:t00290 a t:tombstone.n.01 ;
-  :image tomb:t00290.im1 ;
+  :image t00290:im1 ;
   :site site:dr7907CHhoogeveen ;
-  :ent tomb:t00290.p1 .
+  :ent t00290:p1 .
 
-tomb:t00290.c1 a t:town.n.01 ;
+t00290:c1 a t:town.n.01 ;
   :geo place:Hoogeveen2753719 ;
   :place "HOOGEVEEN" .
 
-tomb:t00290.o1 a t:preacher.n.01 ;
+t00290:o1 a t:preacher.n.01 ;
   :beg "15-11-1925" ;
   :hco "14120" ;
-  :loc tomb:t00290.c1 .
+  :loc t00290:c1 .
 
-tomb:t00290.p1 a t:person.n.01 ;
+t00290:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1885-12-15" ;
   :dod "1926-05-12" ;
   :nam "JAN KAT" ;
-  :occ tomb:t00290.o1 ;
+  :occ t00290:o1 ;
   :pfx "DS" ;
-  :pod tomb:t00290.c1 .
+  :pod t00290:c1 .
 
-tomb:t00290.im1 a t:photo.n.01 ;
+t00290:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

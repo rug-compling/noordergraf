@@ -1,39 +1,40 @@
+@prefix t00744: <https://noordergraf.rug.nl/tomb/t00744#> .
 
 tomb:t00744 a t:tombstone.n.01 ;
-  :image tomb:t00744.im1 ;
+  :image t00744:im1 ;
   :site site:gr9679KHscheemda ;
-  :ent tomb:t00744.p1 ,
-       tomb:t00744.p2 ;
+  :ent t00744:p1 ,
+       t00744:p2 ;
   :ref "HEBREEËN 4:9"@nld ;
-  :sym tomb:t00744.s1 .
+  :sym t00744:s1 .
 
-tomb:t00744.a1 a t:weeping.a.02 .
+t00744:a1 a t:weeping.a.02 .
 
-tomb:t00744.c1 a t:village.n.02 ;
+t00744:c1 a t:village.n.02 ;
   :geo place:Scheemda2747661 ;
   :place "SCHEEMDA" .
 
-tomb:t00744.p1 a t:person.n.01 ;
+t00744:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1865-09-04" ;
   :dod "1947-01-11" ;
   :nam "JAN HORREL" ;
-  :pob tomb:t00744.c1 ;
-  :pod tomb:t00744.c1 ;
-  :rol tomb:t00744.r1 .
+  :pob t00744:c1 ;
+  :pod t00744:c1 ;
+  :rol t00744:r1 .
 
-tomb:t00744.p2 a t:person.n.01 ;
+t00744:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "GEERTJE MEIN" .
 
-tomb:t00744.r1 a t:spouse.n.01 ;
+t00744:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00744.p2 .
+  :tgt t00744:p2 .
 
-tomb:t00744.s1 a t:willow.n.01 ;
-  :att tomb:t00744.a1 .
+t00744:s1 a t:willow.n.01 ;
+  :att t00744:a1 .
 
-tomb:t00744.im1 a t:photo.n.01 ;
+t00744:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

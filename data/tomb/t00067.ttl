@@ -1,45 +1,46 @@
+@prefix t00067: <https://noordergraf.rug.nl/tomb/t00067#> .
 
 tomb:t00067 a t:tombstone.n.01 ;
-  :image tomb:t00067.im1 ;
+  :image t00067:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00067.p1 ,
-       tomb:t00067.p2 ,
-       tomb:t00067.p3 .
+  :ent t00067:p1 ,
+       t00067:p2 ,
+       t00067:p3 .
 
-tomb:t00067.c1 a t:city.n.01 ;
+t00067:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00067.c2 a t:village.n.02 ;
+t00067:c2 a t:village.n.02 ;
   :geo place:Sappemeer2747758 ;
   :place "SAPPEMEER" .
 
-tomb:t00067.p1 a t:person.n.01 ;
+t00067:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1884-03-11" ;
   :dod "1939-11-06" ;
   :nam "HINDERIKA KALK" ;
-  :pob tomb:t00067.c2 ;
-  :pod tomb:t00067.c1 ;
-  :rol tomb:t00067.r1 ,
-       tomb:t00067.r2 .
+  :pob t00067:c2 ;
+  :pod t00067:c1 ;
+  :rol t00067:r1 ,
+       t00067:r2 .
 
-tomb:t00067.p2 a t:person.n.01 ;
+t00067:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "E. KOSTER" .
 
-tomb:t00067.p3 a t:person.n.01 ;
+t00067:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "K. RATSEMA" .
 
-tomb:t00067.r1 a t:husband.n.01 ;
-  :tgt tomb:t00067.p2 .
+t00067:r1 a t:husband.n.01 ;
+  :tgt t00067:p2 .
 
-tomb:t00067.r2 a t:husband.n.01 ;
-  :bef tomb:t00067.r1 ;
-  :tgt tomb:t00067.p3 .
+t00067:r2 a t:husband.n.01 ;
+  :bef t00067:r1 ;
+  :tgt t00067:p3 .
 
-tomb:t00067.im1 a t:photo.n.01 ;
+t00067:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,33 +1,34 @@
+@prefix t00381: <https://noordergraf.rug.nl/tomb/t00381#> .
 
 tomb:t00381 a t:tombstone.n.01 ;
-  :image tomb:t00381.im1 ;
+  :image t00381:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :ent tomb:t00381.p1 ,
-       tomb:t00381.p2 ;
+  :ent t00381:p1 ,
+       t00381:p2 ;
   :quo "DAN GA IK OP TOT GODS ALTAREN" ;
-  :sym tomb:t00381.s1 .
+  :sym t00381:s1 .
 
-tomb:t00381.p1 a t:person.n.01 ;
+t00381:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1896-10-31" ;
   :dod "1971-05-26" ;
   :nam "MAAIKE MOSSELMAN-PIEBENGA" .
 
-tomb:t00381.p2 a t:person.n.01 ;
+t00381:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1901-11-25" ;
   :dod "1974-08-07" ;
   :nam "JAN MOSSELMAN" .
 
-tomb:t00381.s1 a t:composite.n.01 ;
-  :prt tomb:t00381.s2 ,
-       tomb:t00381.s3 .
+t00381:s1 a t:composite.n.01 ;
+  :prt t00381:s2 ,
+       t00381:s3 .
 
-tomb:t00381.s2 a t:frond.n.01 .
+t00381:s2 a t:frond.n.01 .
 
-tomb:t00381.s3 a t:frond.n.01 .
+t00381:s3 a t:frond.n.01 .
 
-tomb:t00381.im1 a t:photo.n.01 ;
+t00381:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

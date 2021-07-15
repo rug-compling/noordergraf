@@ -1,24 +1,25 @@
+@prefix t00718: <https://noordergraf.rug.nl/tomb/t00718#> .
 
 tomb:t00718 a t:tombstone.n.01 ;
-  :image tomb:t00718.im1 ;
+  :image t00718:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00718.p1 ,
-       tomb:t00718.p2 ;
+  :ent t00718:p1 ,
+       t00718:p2 ;
   :lan "NLD" .
 
-tomb:t00718.p1 a t:person.n.01 ;
+t00718:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1881-04-11" ;
   :dod "1930-12-08" ;
   :nam "JOHANNES THEDINGA" .
 
-tomb:t00718.p2 a t:person.n.01 ;
+t00718:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1887-12-28" ;
   :dod "1954-05-11" ;
   :nam "CATHARINA C. BAKKER" .
 
-tomb:t00718.im1 a t:photo.n.01 ;
+t00718:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,54 +1,55 @@
+@prefix t00900: <https://noordergraf.rug.nl/tomb/t00900#> .
 
 tomb:t00900 a t:tombstone.n.01 ;
-  :image tomb:t00900.im1 ;
+  :image t00900:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00900.p1 ,
-       tomb:t00900.p2 ;
+  :ent t00900:p1 ,
+       t00900:p2 ;
   :lan "NLD" ;
-  :ref tomb:t00900.v1 ;
-  :sym tomb:t00900.s1 ,
-       tomb:t00900.s2 .
+  :ref t00900:v1 ;
+  :sym t00900:s1 ,
+       t00900:s2 .
 
-tomb:t00900.b1 a t:Revelation.n.04 ;
-  :prt tomb:t00900.c3 .
+t00900:b1 a t:Revelation.n.04 ;
+  :prt t00900:c3 .
 
-tomb:t00900.c1 a t:town.n.01 ;
+t00900:c1 a t:town.n.01 ;
   :geo place:Haren2754841 ;
   :place "HAREN" .
 
-tomb:t00900.c2 a t:village.n.02 ;
+t00900:c2 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00900.c3 a t:chapter.n.01 ;
+t00900:c3 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00900.v1 .
+  :prt t00900:v1 .
 
-tomb:t00900.p1 a t:person.n.01 ;
+t00900:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1844-02-04" ;
   :dod "1912-01-31" ;
   :nam "REINDER CLUVING HOENDERKEN" ;
-  :pob tomb:t00900.c1 ;
-  :pod tomb:t00900.c2 ;
-  :rol tomb:t00900.r1 .
+  :pob t00900:c1 ;
+  :pod t00900:c2 ;
+  :rol t00900:r1 .
 
-tomb:t00900.p2 a t:person.n.01 ;
+t00900:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "A. DE JONG" .
 
-tomb:t00900.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00900.p2 .
+t00900:r1 a t:spouse.n.01 ;
+  :tgt t00900:p2 .
 
-tomb:t00900.s1 a t:frond.n.01 .
+t00900:s1 a t:frond.n.01 .
 
-tomb:t00900.s2 a t:frond.n.01 .
+t00900:s2 a t:frond.n.01 .
 
-tomb:t00900.v1 a t:verse.n.01 ;
+t00900:v1 a t:verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
 
-tomb:t00900.im1 a t:photo.n.01 ;
+t00900:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

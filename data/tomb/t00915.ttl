@@ -1,33 +1,34 @@
+@prefix t00915: <https://noordergraf.rug.nl/tomb/t00915#> .
 
 tomb:t00915 a t:tombstone.n.01 ;
-  :image tomb:t00915.im1 ;
+  :image t00915:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00915.p1 ;
+  :ent t00915:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00915.s1 ,
-       tomb:t00915.s2 .
+  :sym t00915:s1 ,
+       t00915:s2 .
 
-tomb:t00915.c1 a t:village.n.02 ;
+t00915:c1 a t:village.n.02 ;
   :geo place:Zevenhuizen2743926 ;
   :place "ZEVENHUIZEN" .
 
-tomb:t00915.c2 a t:village.n.02 ;
+t00915:c2 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00915.p1 a t:person.n.01 ;
+t00915:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1851-01-03" ;
   :dod "1940-10-02" ;
   :nam "WILLEM LIEFFERING" ;
-  :pob tomb:t00915.c1 ;
-  :pod tomb:t00915.c2 .
+  :pob t00915:c1 ;
+  :pod t00915:c2 .
 
-tomb:t00915.s1 a t:frond.n.01 .
+t00915:s1 a t:frond.n.01 .
 
-tomb:t00915.s2 a t:ribbon.n.01 .
+t00915:s2 a t:ribbon.n.01 .
 
-tomb:t00915.im1 a t:photo.n.01 ;
+t00915:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

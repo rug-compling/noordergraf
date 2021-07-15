@@ -1,64 +1,65 @@
+@prefix t00394: <https://noordergraf.rug.nl/tomb/t00394#> .
 
 tomb:t00394 a t:tombstone.n.01 ;
-  :image tomb:t00394.im1 ;
+  :image t00394:im1 ;
   :site site:fr9285TCbuitenpost ;
-  :mem tomb:t00394.t1 ,
-       tomb:t00394.t2 ;
-  :sym tomb:t00394.s1 .
+  :mem t00394:t1 ,
+       t00394:t2 ;
+  :sym t00394:s1 .
 
-tomb:t00394.c1 a t:village.n.02 ;
+t00394:c1 a t:village.n.02 ;
   :geo place:Harkema2754821 ;
   :place "HARKEMA-OPEINDE" .
 
-tomb:t00394.c2 a t:village.n.02 ;
+t00394:c2 a t:village.n.02 ;
   :geo place:Buitenpost2758131 ;
   :place "BUITENPOST" .
 
-tomb:t00394.p1 a t:person.n.01 ;
+t00394:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1876-02-28" ;
   :dod "1965-02-17" ;
   :nam "LIEKELA DIJKSTRA" ;
-  :pob tomb:t00394.c1 ;
-  :pod tomb:t00394.c2 ;
+  :pob t00394:c1 ;
+  :pod t00394:c2 ;
   :ref "HEBREEËN 9:27,28" ;
-  :rol tomb:t00394.r1 .
+  :rol t00394:r1 .
 
-tomb:t00394.p2 a t:person.n.01 ;
+t00394:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1877-06-19" ;
   :dod "1949-05-18" ;
   :nam "SEESKE SIEGERSMA" ;
-  :pob tomb:t00394.c2 ;
-  :pod tomb:t00394.c2 ;
+  :pob t00394:c2 ;
+  :pod t00394:c2 ;
   :ref "PSALM 43:4" ;
-  :rol tomb:t00394.r2 ,
-       tomb:t00394.r3 .
+  :rol t00394:r2 ,
+       t00394:r3 .
 
-tomb:t00394.r1 a t:father.n.01 ;
+t00394:r1 a t:father.n.01 ;
   :att "LIEVE" .
 
-tomb:t00394.r2 a t:wife.n.01 ;
+t00394:r2 a t:wife.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00394.p1 .
+  :tgt t00394:p1 .
 
-tomb:t00394.r3 a t:mother.n.01 .
+t00394:r3 a t:mother.n.01 .
 
-tomb:t00394.s1 a t:boat.n.01 .
+t00394:s1 a t:boat.n.01 .
 
-tomb:t00394.s2 a t:branch.n.02 .
+t00394:s2 a t:branch.n.02 .
 
-tomb:t00394.s3 a t:branch.n.02 .
+t00394:s3 a t:branch.n.02 .
 
-tomb:t00394.t1 a t:tombstone.n.01 ;
-  :ent tomb:t00394.p1 ;
-  :sym tomb:t00394.s2 .
+t00394:t1 a t:tombstone.n.01 ;
+  :ent t00394:p1 ;
+  :sym t00394:s2 .
 
-tomb:t00394.t2 a t:tombstone.n.01 ;
-  :ent tomb:t00394.p2 ;
-  :sym tomb:t00394.s3 .
+t00394:t2 a t:tombstone.n.01 ;
+  :ent t00394:p2 ;
+  :sym t00394:s3 .
 
-tomb:t00394.im1 a t:photo.n.01 ;
+t00394:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

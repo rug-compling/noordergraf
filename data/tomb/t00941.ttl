@@ -1,52 +1,53 @@
+@prefix t00941: <https://noordergraf.rug.nl/tomb/t00941#> .
 
 tomb:t00941 a t:tombstone.n.01 ;
-  :image tomb:t00941.im1 ;
+  :image t00941:im1 ;
   :site site:gr9696XGoudeschans ;
-  :ent tomb:t00941.g1 ,
-       tomb:t00941.g2 ,
-       tomb:t00941.p1 ,
-       tomb:t00941.p2 ,
-       tomb:t00941.p3 ,
-       tomb:t00941.p4 ;
+  :ent t00941:g1 ,
+       t00941:g2 ,
+       t00941:p1 ,
+       t00941:p2 ,
+       t00941:p3 ,
+       t00941:p4 ;
   :lan "NLD" ;
-  :sym tomb:t00941.s1 .
+  :sym t00941:s1 .
 
-tomb:t00941.a1 a t:weeping.a.02 .
+t00941:a1 a t:weeping.a.02 .
 
-tomb:t00941.g1 a t:group.n.01 ;
-  :mem tomb:t00941.p1 ,
-       tomb:t00941.p2 ;
-  :rol tomb:t00941.r1 .
+t00941:g1 a t:group.n.01 ;
+  :mem t00941:p1 ,
+       t00941:p2 ;
+  :rol t00941:r1 .
 
-tomb:t00941.g2 a t:group.n.01 ;
-  :mem tomb:t00941.p3 ,
-       tomb:t00941.p4 .
+t00941:g2 a t:group.n.01 ;
+  :mem t00941:p3 ,
+       t00941:p4 .
 
-tomb:t00941.p1 a t:person.n.01 ;
+t00941:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1898-03-09" ;
   :dod "1898-04-12" ;
   :nam "GEERT FEKKO" .
 
-tomb:t00941.p2 a t:person.n.01 ;
+t00941:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1900-07-10" ;
   :dod "1900-07-25" ;
   :nam "GEERT FEKKO" .
 
-tomb:t00941.p3 a t:person.n.01 ;
+t00941:p3 a t:person.n.01 ;
   :nam "B. HINDRIKS" .
 
-tomb:t00941.p4 a t:person.n.01 ;
+t00941:p4 a t:person.n.01 ;
   :nam "M. FEKKERS" .
 
-tomb:t00941.r1 a t:son.n.01 ;
-  :tgt tomb:t00941.g2 .
+t00941:r1 a t:son.n.01 ;
+  :tgt t00941:g2 .
 
-tomb:t00941.s1 a t:willow.n.01 ;
-  :att tomb:t00941.a1 .
+t00941:s1 a t:willow.n.01 ;
+  :att t00941:a1 .
 
-tomb:t00941.im1 a t:photo.n.01 ;
+t00941:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

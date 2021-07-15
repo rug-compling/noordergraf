@@ -1,29 +1,30 @@
+@prefix t00448: <https://noordergraf.rug.nl/tomb/t00448#> .
 
 tomb:t00448 a t:tombstone.n.01 ;
-  :image tomb:t00448.im1 ;
+  :image t00448:im1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent tomb:t00448.p1 ,
-       tomb:t00448.p2 ;
-  :sym tomb:t00448.s1 .
+  :ent t00448:p1 ,
+       t00448:p2 ;
+  :sym t00448:s1 .
 
-tomb:t00448.p1 a t:person.n.01 ;
+t00448:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1831-04-07" ;
   :dod "1912-02-23" ;
   :nam "ENGELINA ABRAHAMS ZEILINGA" ;
-  :rol tomb:t00448.r1 .
+  :rol t00448:r1 .
 
-tomb:t00448.p2 a t:person.n.01 ;
+t00448:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "IJTJE POST KONTER" .
 
-tomb:t00448.r1 a t:widower.n.01 ;
-  :tgt tomb:t00448.p2 .
+t00448:r1 a t:widower.n.01 ;
+  :tgt t00448:p2 .
 
-tomb:t00448.s1 a t:branch.n.02 ;
+t00448:s1 a t:branch.n.02 ;
   :qua 2 .
 
-tomb:t00448.im1 a t:photo.n.01 ;
+t00448:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

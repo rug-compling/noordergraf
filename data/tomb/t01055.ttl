@@ -1,53 +1,54 @@
+@prefix t01055: <https://noordergraf.rug.nl/tomb/t01055#> .
 
 tomb:t01055 a t:tombstone.n.01 ;
-  :image tomb:t01055.im1 ;
+  :image t01055:im1 ;
   :site site:gr9971EBulrum ;
-  :ent tomb:t01055.p1 ,
-       tomb:t01055.p2 ;
+  :ent t01055:p1 ,
+       t01055:p2 ;
   :lan "NLD" ;
-  :ref tomb:t01055.v1 ;
-  :sym tomb:t01055.s1 .
+  :ref t01055:v1 ;
+  :sym t01055:s1 .
 
-tomb:t01055.a1 a t:weeping.a.02 .
+t01055:a1 a t:weeping.a.02 .
 
-tomb:t01055.b1 a t:Matthew.n.02 ;
-  :prt tomb:t01055.c3 .
+t01055:b1 a t:Matthew.n.02 ;
+  :prt t01055:c3 .
 
-tomb:t01055.c1 a t:village.n.02 ;
+t01055:c1 a t:village.n.02 ;
   :geo place:Hornhuizen2753604 ;
   :place "HORNHUIZEN" .
 
-tomb:t01055.c2 a t:village.n.02 ;
+t01055:c2 a t:village.n.02 ;
   :geo place:Ulrum2745944 ;
   :place "ULRUM" .
 
-tomb:t01055.c3 a t:chapter.n.01 ;
+t01055:c3 a t:chapter.n.01 ;
   :ord 5 ;
-  :prt tomb:t01055.v1 .
+  :prt t01055:v1 .
 
-tomb:t01055.p1 a t:person.n.01 ;
+t01055:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1835-10-13" ;
   :dod "1927-04-27" ;
   :nam "AALTJE BORGMAN" ;
-  :pob tomb:t01055.c1 ;
-  :pod tomb:t01055.c2 ;
-  :rol tomb:t01055.r1 .
+  :pob t01055:c1 ;
+  :pod t01055:c2 ;
+  :rol t01055:r1 .
 
-tomb:t01055.p2 a t:person.n.01 ;
+t01055:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "MENNO JANSEN" .
 
-tomb:t01055.r1 a t:widow.n.01 ;
-  :tgt tomb:t01055.p2 .
+t01055:r1 a t:widow.n.01 ;
+  :tgt t01055:p2 .
 
-tomb:t01055.s1 a t:willow.n.01 ;
-  :att tomb:t01055.a1 .
+t01055:s1 a t:willow.n.01 ;
+  :att t01055:a1 .
 
-tomb:t01055.v1 a t:verse.n.01 ;
+t01055:v1 a t:verse.n.01 ;
   :ord 3 .
 
-tomb:t01055.im1 a t:photo.n.01 ;
+t01055:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

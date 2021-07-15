@@ -1,29 +1,30 @@
+@prefix t00609: <https://noordergraf.rug.nl/tomb/t00609#> .
 
 tomb:t00609 a t:tombstone.n.01 ;
-  :image tomb:t00609.im1 ;
+  :image t00609:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00609.p1 ;
+  :ent t00609:p1 ;
   :lan "NLD" ;
-  :sym tomb:t00609.s1 ,
-       tomb:t00609.s2 ,
-       tomb:t00609.s3 .
+  :sym t00609:s1 ,
+       t00609:s2 ,
+       t00609:s3 .
 
-tomb:t00609.p1 a t:person.n.01 ;
+t00609:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1852-09-10" ;
   :dod "1863-08-26" ;
   :nam "BEREND" ;
-  :rol tomb:t00609.r1 .
+  :rol t00609:r1 .
 
-tomb:t00609.r1 a t:son.n.01 .
+t00609:r1 a t:son.n.01 .
 
-tomb:t00609.s1 a t:branch.n.02 .
+t00609:s1 a t:branch.n.02 .
 
-tomb:t00609.s2 a t:branch.n.02 .
+t00609:s2 a t:branch.n.02 .
 
-tomb:t00609.s3 a t:ribbon.n.01 .
+t00609:s3 a t:ribbon.n.01 .
 
-tomb:t00609.im1 a t:photo.n.01 ;
+t00609:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

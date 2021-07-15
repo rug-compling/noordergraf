@@ -1,74 +1,75 @@
+@prefix t00218: <https://noordergraf.rug.nl/tomb/t00218#> .
 
 tomb:t00218 a t:tombstone.n.01 ;
-  :image tomb:t00218.im1 ;
+  :image t00218:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00218.p1 ,
-       tomb:t00218.p2 ,
-       tomb:t00218.p3 ,
-       tomb:t00218.p4 ;
+  :ent t00218:p1 ,
+       t00218:p2 ,
+       t00218:p3 ,
+       t00218:p4 ;
   :quo "RUST ZACHT LIEVE DOODEN" ;
-  :sym tomb:t00218.s1 .
+  :sym t00218:s1 .
 
-tomb:t00218.c1 a t:village.n.02 ;
+t00218:c1 a t:village.n.02 ;
   :geo place:Noorddijk2749981 ;
   :place "NOORDDIJK" .
 
-tomb:t00218.c2 a t:village.n.02 ;
+t00218:c2 a t:village.n.02 ;
   :geo place:Harkstede2754819 ;
   :place "HARKSTEDE" .
 
-tomb:t00218.p1 a t:person.n.01 ;
+t00218:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1883-06-25" ;
   :dod "1891-08-14" ;
   :nam "KLAAZIENA WIERINGA" ;
-  :pob tomb:t00218.c1 ;
-  :pod tomb:t00218.c2 ;
-  :rol tomb:t00218.r1 ,
-       tomb:t00218.r2 .
+  :pob t00218:c1 ;
+  :pod t00218:c2 ;
+  :rol t00218:r1 ,
+       t00218:r2 .
 
-tomb:t00218.p2 a t:person.n.01 ;
+t00218:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1878-11-29" ;
   :dod "1895-04-17" ;
   :nam "HINDRIK WIERENGA" ;
-  :pob tomb:t00218.c1 ;
-  :pod tomb:t00218.c2 ;
-  :rol tomb:t00218.r3 ,
-       tomb:t00218.r4 .
+  :pob t00218:c1 ;
+  :pod t00218:c2 ;
+  :rol t00218:r3 ,
+       t00218:r4 .
 
-tomb:t00218.p3 a t:person.n.01 ;
+t00218:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JAN WIERINGA" .
 
-tomb:t00218.p4 a t:person.n.01 ;
+t00218:p4 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "ANNA BOLT" .
 
-tomb:t00218.r1 a t:child.n.02 ;
-  :tgt tomb:t00218.p3 .
+t00218:r1 a t:child.n.02 ;
+  :tgt t00218:p3 .
 
-tomb:t00218.r2 a t:child.n.02 ;
-  :tgt tomb:t00218.p4 .
+t00218:r2 a t:child.n.02 ;
+  :tgt t00218:p4 .
 
-tomb:t00218.r3 a t:child.n.02 ;
-  :tgt tomb:t00218.p3 .
+t00218:r3 a t:child.n.02 ;
+  :tgt t00218:p3 .
 
-tomb:t00218.r4 a t:child.n.02 ;
-  :tgt tomb:t00218.p4 .
+t00218:r4 a t:child.n.02 ;
+  :tgt t00218:p4 .
 
-tomb:t00218.s1 a t:composite.n.01 ;
-  :prt tomb:t00218.s2 ,
-       tomb:t00218.s3 ,
-       tomb:t00218.s4 .
+t00218:s1 a t:composite.n.01 ;
+  :prt t00218:s2 ,
+       t00218:s3 ,
+       t00218:s4 .
 
-tomb:t00218.s2 a t:rose.n.01 .
+t00218:s2 a t:rose.n.01 .
 
-tomb:t00218.s3 a t:tulip.n.01 .
+t00218:s3 a t:tulip.n.01 .
 
-tomb:t00218.s4 a t:ribbon.n.01 .
+t00218:s4 a t:ribbon.n.01 .
 
-tomb:t00218.im1 a t:photo.n.01 ;
+t00218:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

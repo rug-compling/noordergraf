@@ -1,48 +1,49 @@
+@prefix t00836: <https://noordergraf.rug.nl/tomb/t00836#> .
 
 tomb:t00836 a t:tombstone.n.01 ;
-  :image tomb:t00836.im1 ;
+  :image t00836:im1 ;
   :site site:dr7841CDsleen ;
-  :ent tomb:t00836.p1 ,
-       tomb:t00836.p2 ;
+  :ent t00836:p1 ,
+       t00836:p2 ;
   :quo "RUST ZACHT LIEVE ECHTGENOOT EN MOEDER"@nld ;
-  :sym tomb:t00836.s1 .
+  :sym t00836:s1 .
 
-tomb:t00836.a1 a t:weeping.a.02 .
+t00836:a1 a t:weeping.a.02 .
 
-tomb:t00836.c1 a t:village.n.02 ;
+t00836:c1 a t:village.n.02 ;
   :geo place:NoordSleen2749830 ;
   :place "NOORD-SLEEN" .
 
-tomb:t00836.p1 a t:person.n.01 ;
+t00836:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1861-06-10" ;
   :dod "1916-01-03" ;
   :nam "RIKA SIKKEN" ;
-  :pob tomb:t00836.c1 ;
-  :pod tomb:t00836.c1 ;
-  :rol tomb:t00836.r1 ,
-       tomb:t00836.r2 .
+  :pob t00836:c1 ;
+  :pod t00836:c1 ;
+  :rol t00836:r1 ,
+       t00836:r2 .
 
-tomb:t00836.p2 a t:person.n.01 ;
+t00836:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "A. LANGIUS" ;
-  :rol tomb:t00836.r3 .
+  :rol t00836:r3 .
 
-tomb:t00836.r1 a t:spouse.n.01 ;
+t00836:r1 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00836.p2 .
+  :tgt t00836:p2 .
 
-tomb:t00836.r2 a t:mother.n.01 ;
+t00836:r2 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00836.r3 a t:spouse.n.01 ;
+t00836:r3 a t:spouse.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00836.p1 .
+  :tgt t00836:p1 .
 
-tomb:t00836.s1 a t:willow.n.01 ;
-  :att tomb:t00836.a1 .
+t00836:s1 a t:willow.n.01 ;
+  :att t00836:a1 .
 
-tomb:t00836.im1 a t:photo.n.01 ;
+t00836:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

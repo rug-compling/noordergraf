@@ -1,38 +1,39 @@
+@prefix t00142: <https://noordergraf.rug.nl/tomb/t00142#> .
 
 tomb:t00142 a t:tombstone.n.01 ;
-  :image tomb:t00142.im1 ;
+  :image t00142:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00142.p1 ,
-       tomb:t00142.p2 ;
+  :ent t00142:p1 ,
+       t00142:p2 ;
   :quo "GEVALLEN TIJDENS DE BEVRIJDING VAN GRONINGEN BIJ HET UITOEFENEN VAN ZIJN PLICHT" .
 
-tomb:t00142.o1 a t:sergeant.n.02 ;
+t00142:o1 a t:sergeant.n.02 ;
   :hco "58220" ;
-  :org tomb:t00142.o2 .
+  :org t00142:o2 .
 
-tomb:t00142.o2 a t:organization.n.01 ;
+t00142:o2 a t:organization.n.01 ;
   :nam "GEMEENTELIJKE BRANDWEER" .
 
-tomb:t00142.p1 a t:person.n.01 ;
+t00142:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1908-12-23" ;
   :dod "1945-04-15" ;
   :nam "JAN DE VRIES" ;
-  :occ tomb:t00142.o1 ;
-  :rol tomb:t00142.r1 ,
-       tomb:t00142.r2 .
+  :occ t00142:o1 ;
+  :rol t00142:r1 ,
+       t00142:r2 .
 
-tomb:t00142.p2 a t:person.n.01 ;
+t00142:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "TJISTKE IDSKES" .
 
-tomb:t00142.r1 a t:father.n.01 .
+t00142:r1 a t:father.n.01 .
 
-tomb:t00142.r2 a t:husband.n.01 ;
+t00142:r2 a t:husband.n.01 ;
   :att "LIEVE" ;
-  :tgt tomb:t00142.p2 .
+  :tgt t00142:p2 .
 
-tomb:t00142.im1 a t:photo.n.01 ;
+t00142:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

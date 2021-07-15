@@ -1,55 +1,56 @@
+@prefix t00574: <https://noordergraf.rug.nl/tomb/t00574#> .
 
 tomb:t00574 a t:tombstone.n.01 ;
-  :image tomb:t00574.im1 ;
+  :image t00574:im1 ;
   :site site:gr9641ANveendam ;
-  :ent tomb:t00574.p1 ,
-       tomb:t00574.p2 ,
-       tomb:t00574.p3 ;
+  :ent t00574:p1 ,
+       t00574:p2 ,
+       t00574:p3 ;
   :quo "RUST ZACHT LIEVE MOEDER" ;
-  :sym tomb:t00574.s1 .
+  :sym t00574:s1 .
 
-tomb:t00574.a1 a t:weeping.a.02 .
+t00574:a1 a t:weeping.a.02 .
 
-tomb:t00574.c1 a t:village.n.02 ;
+t00574:c1 a t:village.n.02 ;
   :geo place:Noordbroek2749989 ;
   :place "NOORDBROEK" .
 
-tomb:t00574.c2 a t:city.n.01 ;
+t00574:c2 a t:city.n.01 ;
   :geo place:Veendam2745783 ;
   :place "VEENDAM" .
 
-tomb:t00574.p1 a t:person.n.01 ;
+t00574:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1845-06-15" ;
   :dod "1921-04-20" ;
   :nam "TALJE TAKENS" ;
-  :pob tomb:t00574.c1 ;
-  :pod tomb:t00574.c2 ;
-  :rol tomb:t00574.r1 ,
-       tomb:t00574.r2 ,
-       tomb:t00574.r3 .
+  :pob t00574:c1 ;
+  :pod t00574:c2 ;
+  :rol t00574:r1 ,
+       t00574:r2 ,
+       t00574:r3 .
 
-tomb:t00574.p2 a t:person.n.01 ;
+t00574:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "HARKO BAKKER" .
 
-tomb:t00574.p3 a t:person.n.01 ;
+t00574:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "HENDRIK BOEKWEG" .
 
-tomb:t00574.r1 a t:widow.n.01 ;
-  :tgt tomb:t00574.p2 .
+t00574:r1 a t:widow.n.01 ;
+  :tgt t00574:p2 .
 
-tomb:t00574.r2 a t:widow.n.01 ;
-  :bef tomb:t00574.r1 ;
-  :tgt tomb:t00574.p3 .
+t00574:r2 a t:widow.n.01 ;
+  :bef t00574:r1 ;
+  :tgt t00574:p3 .
 
-tomb:t00574.r3 a t:mother.n.01 .
+t00574:r3 a t:mother.n.01 .
 
-tomb:t00574.s1 a t:willow.n.01 ;
-  :att tomb:t00574.a1 .
+t00574:s1 a t:willow.n.01 ;
+  :att t00574:a1 .
 
-tomb:t00574.im1 a t:photo.n.01 ;
+t00574:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

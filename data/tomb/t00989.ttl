@@ -1,47 +1,48 @@
+@prefix t00989: <https://noordergraf.rug.nl/tomb/t00989#> .
 
 tomb:t00989 a t:tombstone.n.01 ;
-  :image tomb:t00989.im1 ;
+  :image t00989:im1 ;
   :site site:gr9734ATgroningen ;
-  :ent tomb:t00989.p1 ,
-       tomb:t00989.p2 ,
-       tomb:t00989.p3 ;
+  :ent t00989:p1 ,
+       t00989:p2 ,
+       t00989:p3 ;
   :lan "NLD" .
 
-tomb:t00989.c1 a t:town.n.01 ;
+t00989:c1 a t:town.n.01 ;
   :geo place:Zuidwolde2743636 ;
   :place "ZUIDWOLDE" .
 
-tomb:t00989.c2 a t:town.n.01 ;
+t00989:c2 a t:town.n.01 ;
   :geo place:Noorddijk2749981 ;
   :place "NOORDDIJK" .
 
-tomb:t00989.p1 a t:person.n.01 ;
+t00989:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1833-05-15" ;
   :dod "1897-11-28" ;
   :nam "GEEZIEN J. NIEBOER" ;
-  :pob tomb:t00989.c1 ;
-  :pod tomb:t00989.c2 ;
-  :rol tomb:t00989.r1 ,
-       tomb:t00989.r2 .
+  :pob t00989:c1 ;
+  :pod t00989:c2 ;
+  :rol t00989:r1 ,
+       t00989:r2 .
 
-tomb:t00989.p2 a t:person.n.01 ;
+t00989:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "LUITJE H. BRUININGA" .
 
-tomb:t00989.p3 a t:person.n.01 ;
+t00989:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "BETTE J. OOSTERHOF" .
 
-tomb:t00989.r1 a t:widow.n.01 ;
-  :bef tomb:t00989.r2 ;
-  :tgt tomb:t00989.p2 .
+t00989:r1 a t:widow.n.01 ;
+  :bef t00989:r2 ;
+  :tgt t00989:p2 .
 
-tomb:t00989.r2 a t:widow.n.01 ;
+t00989:r2 a t:widow.n.01 ;
   :beg "XX-XX-1889" ;
-  :tgt tomb:t00989.p3 .
+  :tgt t00989:p3 .
 
-tomb:t00989.im1 a t:photo.n.01 ;
+t00989:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,36 +1,37 @@
+@prefix t00652: <https://noordergraf.rug.nl/tomb/t00652#> .
 
 tomb:t00652 a t:tombstone.n.01 ;
-  :image tomb:t00652.im1 ;
+  :image t00652:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00652.p1 ,
-       tomb:t00652.p2 ,
-       tomb:t00652.p3 ;
+  :ent t00652:p1 ,
+       t00652:p2 ,
+       t00652:p3 ;
   :quo "1940"@nld ,
        "1945"@nld ,
        "IN HET VERZET GEVALLEN"@nld ;
-  :sym tomb:t00652.s1 .
+  :sym t00652:s1 .
 
-tomb:t00652.p1 a t:person.n.01 ;
+t00652:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1897-01-03" ;
   :dod "1944-10-05" ;
   :nam "MEINT VENINGA" .
 
-tomb:t00652.p2 a t:person.n.01 ;
+t00652:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1920-06-13" ;
   :dod "1944-10-05" ;
   :nam "JAN HUITZING" .
 
-tomb:t00652.p3 a t:person.n.01 ;
+t00652:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1911-02-21" ;
   :dod "1944-10-05" ;
   :nam "JAN SANGERS" .
 
-tomb:t00652.s1 a t:lion.n.01 .
+t00652:s1 a t:lion.n.01 .
 
-tomb:t00652.im1 a t:photo.n.01 ;
+t00652:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

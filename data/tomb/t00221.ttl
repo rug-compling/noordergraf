@@ -1,31 +1,32 @@
+@prefix t00221: <https://noordergraf.rug.nl/tomb/t00221#> .
 
 tomb:t00221 a t:tombstone.n.01 ;
-  :image tomb:t00221.im1 ;
+  :image t00221:im1 ;
   :site site:gr9723EWgroningen ;
-  :ent tomb:t00221.p1 ;
-  :sym tomb:t00221.s1 .
+  :ent t00221:p1 ;
+  :sym t00221:s1 .
 
-tomb:t00221.c1 a t:hamlet.n.03 ;
+t00221:c1 a t:hamlet.n.03 ;
   :geo place:Euvelgunne2755982 ;
   :place "EUVELGUNNE" .
 
-tomb:t00221.p1 a t:person.n.01 ;
+t00221:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1842-09-11" ;
   :dod "1903-02-08" ;
   :nam "HENDERKIEN ELLES KONING" ;
-  :pob tomb:t00221.c1 ;
-  :pod tomb:t00221.c1 .
+  :pob t00221:c1 ;
+  :pod t00221:c1 .
 
-tomb:t00221.s1 a t:composite.n.01 ;
-  :prt tomb:t00221.s2 ,
-       tomb:t00221.s3 .
+t00221:s1 a t:composite.n.01 ;
+  :prt t00221:s2 ,
+       t00221:s3 .
 
-tomb:t00221.s2 a t:butterfly.n.01 .
+t00221:s2 a t:butterfly.n.01 .
 
-tomb:t00221.s3 a t:butterfly.n.01 .
+t00221:s3 a t:butterfly.n.01 .
 
-tomb:t00221.im1 a t:photo.n.01 ;
+t00221:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

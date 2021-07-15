@@ -1,42 +1,43 @@
+@prefix t00182: <https://noordergraf.rug.nl/tomb/t00182#> .
 
 tomb:t00182 a t:tombstone.n.01 ;
-  :image tomb:t00182.im1 ;
+  :image t00182:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00182.p1 ,
-       tomb:t00182.p2 ;
-  :img tomb:t00182.i1 ;
+  :ent t00182:p1 ,
+       t00182:p2 ;
+  :img t00182:i1 ;
   :quo "UW ARBEID ZAL IN ONZEN HEER NIET IJDEL WEZEN, HEM ZIJ DEER" .
 
-tomb:t00182.c1 a t:city.n.01 ;
+t00182:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00182.i1 a t:portrait.n.02 ;
-  :thm tomb:t00182.p1 .
+t00182:i1 a t:portrait.n.02 ;
+  :thm t00182:p1 .
 
-tomb:t00182.o1 a t:chairperson.n.01 ;
-  :org tomb:t00182.o2 .
+t00182:o1 a t:chairperson.n.01 ;
+  :org t00182:o2 .
 
-tomb:t00182.o2 a t:union.n.07 ;
+t00182:o2 a t:union.n.07 ;
   :nam "NEDERLANDSE CHRISTELIJKE GIJMNASTIEK VERBOND" .
 
-tomb:t00182.p1 a t:person.n.01 ;
+t00182:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1888-06-23" ;
   :dod "1931-08-18" ;
   :nam "KAREL DUIKER" ;
-  :occ tomb:t00182.o1 ;
-  :pod tomb:t00182.c1 ;
-  :rol tomb:t00182.r1 .
+  :occ t00182:o1 ;
+  :pod t00182:c1 ;
+  :rol t00182:r1 .
 
-tomb:t00182.p2 a t:person.n.01 ;
+t00182:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "S. BOUWMAN" .
 
-tomb:t00182.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00182.p2 .
+t00182:r1 a t:spouse.n.01 ;
+  :tgt t00182:p2 .
 
-tomb:t00182.im1 a t:photo.n.01 ;
+t00182:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,59 +1,60 @@
+@prefix t00978: <https://noordergraf.rug.nl/tomb/t00978#> .
 
 tomb:t00978 a t:tombstone.n.01 ;
-  :image tomb:t00978.im1 ;
+  :image t00978:im1 ;
   :site site:gr9479TNnoordlaren ;
-  :ent tomb:t00978.g1 ,
-       tomb:t00978.g2 ,
-       tomb:t00978.p1 ,
-       tomb:t00978.p2 ;
+  :ent t00978:g1 ,
+       t00978:g2 ,
+       t00978:p1 ,
+       t00978:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00978.s1 ,
-       tomb:t00978.s2 .
+  :sym t00978:s1 ,
+       t00978:s2 .
 
-tomb:t00978.c1 a t:village.n.02 ;
+t00978:c1 a t:village.n.02 ;
   :geo place:Glimmen2755495 ;
   :place "GLIMMEN" .
 
-tomb:t00978.c2 a t:village.n.02 ;
+t00978:c2 a t:village.n.02 ;
   :geo place:Yde2744130 ;
   :place "YDE" .
 
-tomb:t00978.g1 a t:group.n.01 ;
-  :mem tomb:t00978.p1 ,
-       tomb:t00978.p2 ;
-  :rol tomb:t00978.r1 .
+t00978:g1 a t:group.n.01 ;
+  :mem t00978:p1 ,
+       t00978:p2 ;
+  :rol t00978:r1 .
 
-tomb:t00978.g2 a t:group.n.01 ;
+t00978:g2 a t:group.n.01 ;
   :qua 9 ;
-  :rol tomb:t00978.r2 .
+  :rol t00978:r2 .
 
-tomb:t00978.p1 a t:person.n.01 ;
+t00978:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "XX-XX-1822" ;
   :dod "XX-XX-1911" ;
   :nam "LUCAS MULDER" ;
-  :pob tomb:t00978.c1 ;
-  :pod tomb:t00978.c1 .
+  :pob t00978:c1 ;
+  :pod t00978:c1 .
 
-tomb:t00978.p2 a t:person.n.01 ;
+t00978:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "XX-XX-1837" ;
   :dod "XX-XX-1912" ;
   :nam "JANTIEN VAN DALEN" ;
-  :pob tomb:t00978.c2 ;
-  :pod tomb:t00978.c1 .
+  :pob t00978:c2 ;
+  :pod t00978:c1 .
 
-tomb:t00978.r1 a t:parent.n.01 ;
-  :tgt tomb:t00978.g2 .
+t00978:r1 a t:parent.n.01 ;
+  :tgt t00978:g2 .
 
-tomb:t00978.r2 a t:child.n.02 ;
-  :tgt tomb:t00978.g1 .
+t00978:r2 a t:child.n.02 ;
+  :tgt t00978:g1 .
 
-tomb:t00978.s1 a t:entity.n.01 .
+t00978:s1 a t:entity.n.01 .
 
-tomb:t00978.s2 a t:ring.n.03 .
+t00978:s2 a t:ring.n.03 .
 
-tomb:t00978.im1 a t:photo.n.01 ;
+t00978:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

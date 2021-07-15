@@ -1,50 +1,51 @@
+@prefix t00704: <https://noordergraf.rug.nl/tomb/t00704#> .
 
 tomb:t00704 a t:tombstone.n.01 ;
-  :image tomb:t00704.im1 ;
+  :image t00704:im1 ;
   :site site:dr7811HEemmen ;
-  :ent tomb:t00704.p1 ;
-  :img tomb:t00704.i1 ;
+  :ent t00704:p1 ;
+  :img t00704:i1 ;
   :lan "NLD" .
 
-tomb:t00704.c1 a t:town.n.01 ;
+t00704:c1 a t:town.n.01 ;
   :geo place:Emmen2756136 ;
   :place "EMMEN" .
 
-tomb:t00704.c2 a t:city.n.01 ;
+t00704:c2 a t:city.n.01 ;
   :geo place:Assen2759633 ;
   :place "ASSEN" .
 
-tomb:t00704.c3 a t:city.n.01 ;
+t00704:c3 a t:city.n.01 ;
   :geo place:Sneek2747063 ;
   :place "SNEEK" .
 
-tomb:t00704.i1 a t:bust.n.03 ;
-  :thm tomb:t00704.p1 .
+t00704:i1 a t:bust.n.03 ;
+  :thm t00704:p1 .
 
-tomb:t00704.o1 a t:judge.n.01 ;
+t00704:o1 a t:judge.n.01 ;
   :hco "12210" ;
-  :loc tomb:t00704.c1 .
+  :loc t00704:c1 .
 
-tomb:t00704.o2 a t:member.n.01 ;
+t00704:o2 a t:member.n.01 ;
   :hco "20110" ;
-  :tgt tomb:t00704.o3 .
+  :tgt t00704:o3 .
 
-tomb:t00704.o3 a t:organization.n.01 ;
-  :loc tomb:t00704.c2 ;
+t00704:o3 a t:organization.n.01 ;
+  :loc t00704:c2 ;
   :nam "VOOGDIJRAAD" .
 
-tomb:t00704.p1 a t:person.n.01 ;
+t00704:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1868-03-29" ;
   :dod "1927-02-24" ;
   :nam "WIARDUS WILLEM BAN HAERSMA BUMA" ;
-  :occ tomb:t00704.o1 ,
-       tomb:t00704.o2 ;
+  :occ t00704:o1 ,
+       t00704:o2 ;
   :pfx "MR" ;
-  :pob tomb:t00704.c3 ;
-  :pod tomb:t00704.c1 .
+  :pob t00704:c3 ;
+  :pod t00704:c1 .
 
-tomb:t00704.im1 a t:photo.n.01 ;
+t00704:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

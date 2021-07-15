@@ -1,48 +1,49 @@
+@prefix t01059: <https://noordergraf.rug.nl/tomb/t01059#> .
 
 tomb:t01059 a t:tombstone.n.01 ;
-  :image tomb:t01059.im1 ;
+  :image t01059:im1 ;
   :site site:gr9971EBulrum ;
-  :ent tomb:t01059.p1 ,
-       tomb:t01059.p2 ,
-       tomb:t01059.p3 ;
+  :ent t01059:p1 ,
+       t01059:p2 ,
+       t01059:p3 ;
   :lan "NLD" ;
-  :sym tomb:t01059.s1 ,
-       tomb:t01059.s2 .
+  :sym t01059:s1 ,
+       t01059:s2 .
 
-tomb:t01059.c1 a t:village.n.02 ;
+t01059:c1 a t:village.n.02 ;
   :geo place:Ulrum2745944 ;
   :place "ULRUM" .
 
-tomb:t01059.p1 a t:person.n.01 ;
+t01059:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1877-04-14" ;
   :dod "1955-12-14" ;
   :nam "ELZO VAN KAMPEN" ;
-  :pob tomb:t01059.c1 ;
-  :pod tomb:t01059.c1 ;
-  :rol tomb:t01059.r1 ,
-       tomb:t01059.r2 .
+  :pob t01059:c1 ;
+  :pod t01059:c1 ;
+  :rol t01059:r1 ,
+       t01059:r2 .
 
-tomb:t01059.p2 a t:person.n.01 ;
+t01059:p2 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "J. BULTHUIS" .
 
-tomb:t01059.p3 a t:person.n.01 ;
+t01059:p3 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :nam "J. WOLTERS" .
 
-tomb:t01059.r1 a t:spouse.n.01 ;
-  :tgt tomb:t01059.p2 .
+t01059:r1 a t:spouse.n.01 ;
+  :tgt t01059:p2 .
 
-tomb:t01059.r2 a t:spouse.n.01 ;
-  :bef tomb:t01059.r1 ;
-  :tgt tomb:t01059.p3 .
+t01059:r2 a t:spouse.n.01 ;
+  :bef t01059:r1 ;
+  :tgt t01059:p3 .
 
-tomb:t01059.s1 a t:branch.n.02 .
+t01059:s1 a t:branch.n.02 .
 
-tomb:t01059.s2 a t:branch.n.02 .
+t01059:s2 a t:branch.n.02 .
 
-tomb:t01059.im1 a t:photo.n.01 ;
+t01059:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

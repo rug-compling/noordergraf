@@ -1,72 +1,73 @@
+@prefix t00888: <https://noordergraf.rug.nl/tomb/t00888#> .
 
 tomb:t00888 a t:tombstone.n.01 ;
-  :image tomb:t00888.im1 ;
+  :image t00888:im1 ;
   :site site:gr9741ACgroningen ;
-  :ent tomb:t00888.p1 ,
-       tomb:t00888.p2 ,
-       tomb:t00888.p3 ,
-       tomb:t00888.p4 ;
+  :ent t00888:p1 ,
+       t00888:p2 ,
+       t00888:p3 ,
+       t00888:p4 ;
   :lan "NLD" ;
-  :ref tomb:t00888.v1 ;
-  :sym tomb:t00888.s1 .
+  :ref t00888:v1 ;
+  :sym t00888:s1 .
 
-tomb:t00888.a1 a t:weeping.a.02 .
+t00888:a1 a t:weeping.a.02 .
 
-tomb:t00888.b1 a t:John.n.05 ;
-  :prt tomb:t00888.c1 .
+t00888:b1 a t:John.n.05 ;
+  :prt t00888:c1 .
 
-tomb:t00888.c1 a t:chapter.n.01 ;
+t00888:c1 a t:chapter.n.01 ;
   :ord 14 ;
-  :prt tomb:t00888.v1 .
+  :prt t00888:v1 .
 
-tomb:t00888.p1 a t:person.n.01 ;
+t00888:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1864-05-04" ;
   :dod "1901-10-17" ;
   :nam "ROBERTA MARGARETHA WOLTJER" ;
-  :rol tomb:t00888.r1 ,
-       tomb:t00888.r2 ,
-       tomb:t00888.r3 .
+  :rol t00888:r1 ,
+       t00888:r2 ,
+       t00888:r3 .
 
-tomb:t00888.p2 a t:person.n.01 ;
+t00888:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "S.C. SIMAN" .
 
-tomb:t00888.p3 a t:person.n.01 ;
+t00888:p3 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "P.J. MEIJER" .
 
-tomb:t00888.p4 a t:person.n.01 ;
+t00888:p4 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1887-07-13" ;
   :dod "1955-06-24" ;
   :nam "ROBERT MEIJER" ;
-  :rol tomb:t00888.r4 ,
-       tomb:t00888.r5 .
+  :rol t00888:r4 ,
+       t00888:r5 .
 
-tomb:t00888.r1 a t:mother.n.01 ;
+t00888:r1 a t:mother.n.01 ;
   :att "LIEVE" .
 
-tomb:t00888.r2 a t:spouse.n.01 ;
+t00888:r2 a t:spouse.n.01 ;
   :att "GELIEFDE" ;
-  :tgt tomb:t00888.p2 .
+  :tgt t00888:p2 .
 
-tomb:t00888.r3 a t:widow.n.01 ;
-  :bef tomb:t00888.r2 ;
-  :tgt tomb:t00888.p3 .
+t00888:r3 a t:widow.n.01 ;
+  :bef t00888:r2 ;
+  :tgt t00888:p3 .
 
-tomb:t00888.r4 a t:brother.n.01 .
+t00888:r4 a t:brother.n.01 .
 
-tomb:t00888.r5 a t:uncle.n.01 .
+t00888:r5 a t:uncle.n.01 .
 
-tomb:t00888.s1 a t:willow.n.01 ;
-  :att tomb:t00888.a1 .
+t00888:s1 a t:willow.n.01 ;
+  :att t00888:a1 .
 
-tomb:t00888.v1 a t:verse.n.01 ;
+t00888:v1 a t:verse.n.01 ;
   :ord 2 ;
   :txt "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN" .
 
-tomb:t00888.im1 a t:photo.n.01 ;
+t00888:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

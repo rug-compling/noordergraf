@@ -1,47 +1,48 @@
+@prefix t00629: <https://noordergraf.rug.nl/tomb/t00629#> .
 
 tomb:t00629 a t:tombstone.n.01 ;
-  :image tomb:t00629.im1 ;
+  :image t00629:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00629.p1 ,
-       tomb:t00629.p2 ;
+  :ent t00629:p1 ,
+       t00629:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00629.s1 ,
-       tomb:t00629.s2 ,
-       tomb:t00629.s3 ,
-       tomb:t00629.s4 ,
-       tomb:t00629.s5 .
+  :sym t00629:s1 ,
+       t00629:s2 ,
+       t00629:s3 ,
+       t00629:s4 ,
+       t00629:s5 .
 
-tomb:t00629.c1 a t:town.n.01 ;
+t00629:c1 a t:town.n.01 ;
   :geo place:Hoogezand2753706 ;
   :place "HOOGEZAND" .
 
-tomb:t00629.p1 a t:person.n.01 ;
+t00629:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1856-07-31" ;
   :dod "1929-07-19" ;
   :nam "HINDERIEKUS WILHELM HENSEL" ;
-  :pob tomb:t00629.c1 ;
-  :rol tomb:t00629.r1 .
+  :pob t00629:c1 ;
+  :rol t00629:r1 .
 
-tomb:t00629.p2 a t:person.n.01 ;
+t00629:p2 a t:person.n.01 ;
   :dob "1862-02-20" ;
   :dod "1934-02-20" ;
   :nam "HINDERKIEN BOS" .
 
-tomb:t00629.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00629.p2 .
+t00629:r1 a t:spouse.n.01 ;
+  :tgt t00629:p2 .
 
-tomb:t00629.s1 a t:cross.n.03 .
+t00629:s1 a t:cross.n.03 .
 
-tomb:t00629.s2 a t:anchor.n.01 .
+t00629:s2 a t:anchor.n.01 .
 
-tomb:t00629.s3 a t:heart.n.07 .
+t00629:s3 a t:heart.n.07 .
 
-tomb:t00629.s4 a t:oak.n.02 .
+t00629:s4 a t:oak.n.02 .
 
-tomb:t00629.s5 a t:frond.n.01 .
+t00629:s5 a t:frond.n.01 .
 
-tomb:t00629.im1 a t:photo.n.01 ;
+t00629:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

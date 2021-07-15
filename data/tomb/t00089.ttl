@@ -1,31 +1,32 @@
+@prefix t00089: <https://noordergraf.rug.nl/tomb/t00089#> .
 
 tomb:t00089 a t:tombstone.n.01 ;
-  :image tomb:t00089.im1 ;
+  :image t00089:im1 ;
   :site site:gr9725ACgroningen ;
-  :ent tomb:t00089.p1 ,
-       tomb:t00089.p2 .
+  :ent t00089:p1 ,
+       t00089:p2 .
 
-tomb:t00089.c1 a t:city.n.01 ;
+t00089:c1 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00089.p1 a t:person.n.01 ;
+t00089:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1863-09-01" ;
   :dod "1947-02-20" ;
   :nam "MARIA WIJTZIA ALTING" ;
-  :pob tomb:t00089.c1 ;
-  :pod tomb:t00089.c1 ;
-  :rol tomb:t00089.r1 .
+  :pob t00089:c1 ;
+  :pod t00089:c1 ;
+  :rol t00089:r1 .
 
-tomb:t00089.p2 a t:person.n.01 ;
+t00089:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H. GEERTSEMA" .
 
-tomb:t00089.r1 a t:widow.n.01 ;
-  :tgt tomb:t00089.p2 .
+t00089:r1 a t:widow.n.01 ;
+  :tgt t00089:p2 .
 
-tomb:t00089.im1 a t:photo.n.01 ;
+t00089:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

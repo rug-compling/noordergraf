@@ -1,54 +1,55 @@
+@prefix t00375: <https://noordergraf.rug.nl/tomb/t00375#> .
 
 tomb:t00375 a t:tombstone.n.01 ;
-  :image tomb:t00375.im1 ;
+  :image t00375:im1 ;
   :site site:gr9722SNgroningen ;
-  :ent tomb:t00375.p1 ,
-       tomb:t00375.p2 ;
-  :ref tomb:t00375.v1 .
+  :ent t00375:p1 ,
+       t00375:p2 ;
+  :ref t00375:v1 .
 
-tomb:t00375.b1 a t:Isaiah.n.01 ;
-  :prt tomb:t00375.c3 .
+t00375:b1 a t:Isaiah.n.01 ;
+  :prt t00375:c3 .
 
-tomb:t00375.c1 a t:village.n.02 ;
+t00375:c1 a t:village.n.02 ;
   :geo place:Uithuizermeeden2745968 ;
   :place "UITHUIZERMEEDEN" .
 
-tomb:t00375.c2 a t:city.n.01 ;
+t00375:c2 a t:city.n.01 ;
   :geo place:Groningen2755251 ;
   :place "GRONINGEN" .
 
-tomb:t00375.c3 a t:chapter.n.01 ;
+t00375:c3 a t:chapter.n.01 ;
   :ord 51 ;
-  :prt tomb:t00375.v2 .
+  :prt t00375:v2 .
 
-tomb:t00375.p1 a t:person.n.01 ;
+t00375:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1865-01-18" ;
   :dod "1939-04-06" ;
   :nam "BERENDINA BOEKELO" ;
-  :pob tomb:t00375.c1 ;
-  :pod tomb:t00375.c2 ;
-  :rol tomb:t00375.r1 ,
-       tomb:t00375.r2 .
+  :pob t00375:c1 ;
+  :pod t00375:c2 ;
+  :rol t00375:r1 ,
+       t00375:r2 .
 
-tomb:t00375.p2 a t:person.n.01 ;
+t00375:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H. DE GRAAF" .
 
-tomb:t00375.r1 a t:mother.n.01 ;
+t00375:r1 a t:mother.n.01 ;
   :att "INNIG GELIEFDE" .
 
-tomb:t00375.r2 a t:widow.n.01 ;
-  :tgt tomb:t00375.p2 .
+t00375:r2 a t:widow.n.01 ;
+  :tgt t00375:p2 .
 
-tomb:t00375.v1 a t:part.n.09 ;
+t00375:v1 a t:part.n.09 ;
   :nam "A" .
 
-tomb:t00375.v2 a t:verse.n.01 ;
+t00375:v2 a t:verse.n.01 ;
   :ord 10 ;
-  :prt tomb:t00375.v1 .
+  :prt t00375:v1 .
 
-tomb:t00375.im1 a t:photo.n.01 ;
+t00375:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

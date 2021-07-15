@@ -1,38 +1,39 @@
+@prefix t00911: <https://noordergraf.rug.nl/tomb/t00911#> .
 
 tomb:t00911 a t:tombstone.n.01 ;
-  :image tomb:t00911.im1 ;
+  :image t00911:im1 ;
   :site site:gr9351RLtolbert ;
-  :ent tomb:t00911.p1 ,
-       tomb:t00911.p2 ;
+  :ent t00911:p1 ,
+       t00911:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00911.s1 .
+  :sym t00911:s1 .
 
-tomb:t00911.a1 a t:weeping.a.02 .
+t00911:a1 a t:weeping.a.02 .
 
-tomb:t00911.c1 a t:village.n.02 ;
+t00911:c1 a t:village.n.02 ;
   :geo place:Tolbert2746234 ;
   :place "TOLBERT" .
 
-tomb:t00911.p1 a t:person.n.01 ;
+t00911:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1848-01-10" ;
   :dod "1917-05-21" ;
   :nam "MARTHA MELESSEN" ;
-  :pob tomb:t00911.c1 ;
-  :pod tomb:t00911.c1 ;
-  :rol tomb:t00911.r1 .
+  :pob t00911:c1 ;
+  :pod t00911:c1 ;
+  :rol t00911:r1 .
 
-tomb:t00911.p2 a t:person.n.01 ;
+t00911:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "RENKE DONKERBROEK" .
 
-tomb:t00911.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00911.p2 .
+t00911:r1 a t:spouse.n.01 ;
+  :tgt t00911:p2 .
 
-tomb:t00911.s1 a t:willow.n.01 ;
-  :att tomb:t00911.a1 .
+t00911:s1 a t:willow.n.01 ;
+  :att t00911:a1 .
 
-tomb:t00911.im1 a t:photo.n.01 ;
+t00911:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

@@ -1,41 +1,42 @@
+@prefix t00940: <https://noordergraf.rug.nl/tomb/t00940#> .
 
 tomb:t00940 a t:tombstone.n.01 ;
-  :image tomb:t00940.im1 ;
+  :image t00940:im1 ;
   :site site:gr9696XGoudeschans ;
-  :ent tomb:t00940.p1 ,
-       tomb:t00940.p2 ;
+  :ent t00940:p1 ,
+       t00940:p2 ;
   :lan "NLD" ;
-  :sym tomb:t00940.s1 ,
-       tomb:t00940.s2 ,
-       tomb:t00940.s3 ,
-       tomb:t00940.s4 ,
-       tomb:t00940.s5 .
+  :sym t00940:s1 ,
+       t00940:s2 ,
+       t00940:s3 ,
+       t00940:s4 ,
+       t00940:s5 .
 
-tomb:t00940.p1 a t:person.n.01 ;
+t00940:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1776-11-22" ;
   :dod "1860-04-23" ;
   :nam "H.R. VAN MARK" ;
-  :rol tomb:t00940.r1 .
+  :rol t00940:r1 .
 
-tomb:t00940.p2 a t:person.n.01 ;
+t00940:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "H. OOSTERVELD" .
 
-tomb:t00940.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00940.p2 .
+t00940:r1 a t:spouse.n.01 ;
+  :tgt t00940:p2 .
 
-tomb:t00940.s1 a t:snake.n.01 .
+t00940:s1 a t:snake.n.01 .
 
-tomb:t00940.s2 a t:butterfly.n.01 .
+t00940:s2 a t:butterfly.n.01 .
 
-tomb:t00940.s3 a t:scythe.n.01 .
+t00940:s3 a t:scythe.n.01 .
 
-tomb:t00940.s4 a t:oak.n.02 .
+t00940:s4 a t:oak.n.02 .
 
-tomb:t00940.s5 a t:pipe.n.01 .
+t00940:s5 a t:pipe.n.01 .
 
-tomb:t00940.im1 a t:photo.n.01 ;
+t00940:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

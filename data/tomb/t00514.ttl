@@ -1,32 +1,33 @@
+@prefix t00514: <https://noordergraf.rug.nl/tomb/t00514#> .
 
 tomb:t00514 a t:tombstone.n.01 ;
-  :image tomb:t00514.im1 ;
+  :image t00514:im1 ;
   :site site:gr9601KAhoogezand ;
-  :ent tomb:t00514.p1 ;
+  :ent t00514:p1 ;
   :quo "DISINI TEMPAT ISTIRAHAT SUAMI, PAPA, ADIK DAN OOM"@msa ,
        "KARENA BAGIKU HIDUP ADALAG KRISTUS \\ DAN MATI ADALAH KEUNTUNGAN"@msa ;
   :ref "FILIPPENZEN 1:21"@msa .
 
-tomb:t00514.p1 a t:person.n.01 ;
+t00514:p1 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :dob "1961-06-03" ;
   :dod "2003-11-06" ;
   :nam "JULIANUS ANTON PELAMONIA" ,
        "NOES" ;
-  :rol tomb:t00514.r1 ,
-       tomb:t00514.r2 ,
-       tomb:t00514.r3 ,
-       tomb:t00514.r4 .
+  :rol t00514:r1 ,
+       t00514:r2 ,
+       t00514:r3 ,
+       t00514:r4 .
 
-tomb:t00514.r1 a t:husband.n.01 .
+t00514:r1 a t:husband.n.01 .
 
-tomb:t00514.r2 a t:father.n.01 .
+t00514:r2 a t:father.n.01 .
 
-tomb:t00514.r3 a t:brother.n.01 .
+t00514:r3 a t:brother.n.01 .
 
-tomb:t00514.r4 a t:uncle.n.01 .
+t00514:r4 a t:uncle.n.01 .
 
-tomb:t00514.im1 a t:photo.n.01 ;
+t00514:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;

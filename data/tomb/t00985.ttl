@@ -1,26 +1,27 @@
+@prefix t00985: <https://noordergraf.rug.nl/tomb/t00985#> .
 
 tomb:t00985 a t:tombstone.n.01 ;
-  :image tomb:t00985.im1 ;
+  :image t00985:im1 ;
   :site site:dr9761ALeelde ;
-  :ent tomb:t00985.p1 ,
-       tomb:t00985.p2 ;
+  :ent t00985:p1 ,
+       t00985:p2 ;
   :quo "RUWE STORMEN MOGEN WOEDEN, ALLES OM MIJ HEEN ZIJ NACHT. GOD, MIJN GOD ZAL MIJ BEHOEDEN, HIJ HOUDT VOOR MIJN HEIL DE WACHT. MOEST IK LANG ZJN HULP VERBEIDEN, ZIJNE LIEFDE ZAL MIJ LEIDEN; DOOR EEN NACHT, HOE SWART, HOE DICHT VOERT HIJ MIJ NAAR 'T EEUWIG LICHT."@nld .
 
-tomb:t00985.p1 a t:person.n.01 ;
+t00985:p1 a t:person.n.01 ;
   :gender t:female.n.02 ;
   :dob "1863-03-20" ;
   :dod "1949-05-20" ;
   :nam "WILHELMINA BERENDINA GROENEVELD" ;
-  :rol tomb:t00985.r1 .
+  :rol t00985:r1 .
 
-tomb:t00985.p2 a t:person.n.01 ;
+t00985:p2 a t:person.n.01 ;
   :gender t:male.n.02 ;
   :nam "JOHANNES SIEGFRIED KRAUS" .
 
-tomb:t00985.r1 a t:spouse.n.01 ;
-  :tgt tomb:t00985.p2 .
+t00985:r1 a t:spouse.n.01 ;
+  :tgt t00985:p2 .
 
-tomb:t00985.im1 a t:photo.n.01 ;
+t00985:im1 a t:photo.n.01 ;
   # cc:attributionName "J. Doe" ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
   # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
