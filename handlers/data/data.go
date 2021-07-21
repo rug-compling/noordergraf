@@ -1,5 +1,20 @@
 package main
 
+/*
+
+TODO:
+
+Voor alle directory's, bijvoorbeeld /pred :
+
+    /pred/
+    /pred/index      -> html-bestand met links naar alle bestanden
+
+    /pred/index.ttl
+    /pred/index.rdf
+    /pred/index.nt   -> alle bestanden samengevoegd
+
+*/
+
 import (
 	"fmt"
 	"html"
