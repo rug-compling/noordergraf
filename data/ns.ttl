@@ -5,7 +5,7 @@
   rdfs:comment "The top class for noordergraf."@eng ;
   rdfs:comment "De hoogste class voor noordergraf."@nld .
 
-:GeoClass a rdfs:Class ;
+:Geo a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:comment "The class of things with geographical coordinates."@eng ;
   rdfs:comment "De class van dingen met geografische coördinaten."@nld .
@@ -14,18 +14,18 @@
   rdfs:label "geo" ;
   rdfs:comment "Geographical coordinates."@eng ;
   rdfs:comment "Geografische coördinaten."@nld ;
-  rdfs:domain :GeoClass ;
+  rdfs:domain :Geo ;
   rdfs:range geo:SpatialThing .
 
 :nd a rdf:Property ;
   rdfs:label "nd" ;
   rdfs:comment "Used by AllegroGraph for geodesic calculations."@eng ;
   rdfs:comment "Door AllegroGraph gebruikt voor geodetische berekeningen."@nld ;
-  rdfs:domain :GeoClass ;
+  rdfs:domain :Geo ;
   rdfs:range ll: .
 
 :Photo a rdfs:Class ;
-  rdfs:subClassOf :GeoClass ;
+  rdfs:subClassOf :Geo ;
   rdfs:comment "A picture of a tomb stone."@eng ;
   rdfs:comment "Een foto van een grafsteen."@nld .
 
@@ -37,7 +37,7 @@
   rdfs:range xsd:string .
 
 :Place a rdfs:Class ;
-  rdfs:subClassOf :GeoClass ;
+  rdfs:subClassOf :Geo ;
   rdfs:comment "Any place, such as place of birth or place of death, from hospital to country."@eng ;
   rdfs:comment "Een plek, zoals geboorteplaats of plaats van overlijden, van ziekenhuis tot land."@nld .
 
@@ -63,7 +63,7 @@
   rdfs:range gn:locationMap .
 
 :Site a rdfs:Class ;
-  rdfs:subClassOf :GeoClass ;
+  rdfs:subClassOf :Geo ;
   rdfs:comment "The site of a tomb, usually a cemetary."@eng ;
   rdfs:comment "De plek van een graf, gewoonlijk een kerkhof of begraafplaats."@nld .
 
