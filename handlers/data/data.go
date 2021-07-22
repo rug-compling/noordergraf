@@ -106,7 +106,7 @@ func main() {
 		fmt.Print(convert("ntriples"))
 	case RDF:
 		fmt.Print("Content-type: application/rdf+xml; charset=UTF-8\nLast-Modified: " + lastModified + "\n\n")
-		fmt.Print(convert("rdfxml"))
+		fmt.Print(convert("rdfxml-abbrev"))
 	}
 }
 
