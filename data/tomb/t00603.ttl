@@ -48,16 +48,19 @@ t00603:s1 a t:willow.n.01 ;
   :att t00603:a1 .
 
 t00603:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00603.jpg" ;
-  :date "2019-11-30T14:47:03"^^xsd:dateTime ;
-  geo:lat 53.3353 ;
-  geo:long 6.5126 ;
+  dcterms:date "2019-11-30T14:47:03"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3353 ;
+    geo:long 6.5126
+  ] ;
   :nd "+53.3353+006.5126"^^ll: .
 

@@ -11,12 +11,12 @@ tomb:t00864 a t:tombstone.n.01 ;
 t00864:a1 a t:weeping.a.02 .
 
 t00864:c1 a t:village.n.02 ;
-  :geo place:Smilde2747076 ;
-  :place "SMILDE" .
+  :place place:Smilde2747076 ;
+  :name "SMILDE" .
 
 t00864:c2 a t:village.n.02 ;
-  :geo place:Veenoord2745753 ;
-  :place "VEENOORD" .
+  :place place:Veenoord2745753 ;
+  :name "VEENOORD" .
 
 t00864:p1 a t:female.n.02 ;
   :dob "1867-03-26" ;
@@ -44,16 +44,19 @@ t00864:s1 a t:willow.n.01 ;
   :att t00864:a1 .
 
 t00864:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00864.jpg" ;
-  :date "2020-02-15T15:13:39"^^xsd:dateTime ;
-  geo:lat 52.7193 ;
-  geo:long 6.8451 ;
+  dcterms:date "2020-02-15T15:13:39"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7193 ;
+    geo:long 6.8451
+  ] ;
   :nd "+52.7193+006.8451"^^ll: .
 

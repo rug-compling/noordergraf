@@ -1,6 +1,6 @@
 site:gr9985SCoosternieland a t:burial_site.n.01 ;
   :sitename "Oosternielandsterweg, Oosternieland" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Oosternielandsterweg 12" ;
     schema:addressLocality "Oosternieland" ;
@@ -8,8 +8,11 @@ site:gr9985SCoosternieland a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9985 SC"
   ] ;
-  geo:lat 53.4040 ;
-  geo:long 6.7490 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4040 ;
+    geo:long 6.7490
+  ] ;
   :nd "+53.4040+006.7490"^^ll: .
 
 

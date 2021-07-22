@@ -10,20 +10,20 @@ tomb:t00109 a t:tombstone.n.01 ;
   :sym t00109:s1 .
 
 t00109:c1 a t:city.n.01 ;
-  :geo place:Oostburg2749541 ;
-  :place "OOSTBURG" .
+  :place place:Oostburg2749541 ;
+  :name "OOSTBURG" .
 
 t00109:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00109:c3 a t:town.n.01 ;
-  :geo place:Oostburg2749541 ;
-  :place "OOSTBURG" .
+  :place place:Oostburg2749541 ;
+  :name "OOSTBURG" .
 
 t00109:c4 a t:village.n.02 ;
-  :geo place:Terwispel2746398 ;
-  :place "TERWISPEL" .
+  :place place:Terwispel2746398 ;
+  :name "TERWISPEL" .
 
 t00109:p1 a t:female.n.02 ;
   :dob "1857-12-27" ;
@@ -60,16 +60,19 @@ t00109:r2 a t:husband.n.01 ;
 t00109:s1 a t:frond.n.01 .
 
 t00109:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00109.jpg" ;
-  :date "2019-09-21T15:51:03"^^xsd:dateTime ;
-  geo:lat 53.1902 ;
-  geo:long 6.5933 ;
+  dcterms:date "2019-09-21T15:51:03"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1902 ;
+    geo:long 6.5933
+  ] ;
   :nd "+53.1902+006.5933"^^ll: .
 

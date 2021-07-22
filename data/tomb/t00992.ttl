@@ -12,8 +12,8 @@ tomb:t00992 a t:tombstone.n.01 ;
 t00992:a1 a t:weeping.a.02 .
 
 t00992:c1 a t:village.n.02 ;
-  :geo place:Beerta2759298 ;
-  :place "BEERTA" .
+  :place place:Beerta2759298 ;
+  :name "BEERTA" .
 
 t00992:p1 a t:male.n.02 ;
   :dob "1865-12-02" ;
@@ -41,16 +41,19 @@ t00992:s1 a t:willow.n.01 ;
   :att t00992:a1 .
 
 t00992:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00992.jpg" ;
-  :date "2020-04-04T10:52:34"^^xsd:dateTime ;
-  geo:lat 53.1762 ;
-  geo:long 7.0952 ;
+  dcterms:date "2020-04-04T10:52:34"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1762 ;
+    geo:long 7.0952
+  ] ;
   :nd "+53.1762+007.0952"^^ll: .
 

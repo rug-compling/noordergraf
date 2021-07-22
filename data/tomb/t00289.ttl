@@ -12,20 +12,20 @@ t00289:b1 a t:Isaiah.n.01 ;
   :prt t00289:c5 .
 
 t00289:c1 a t:village.n.02 ;
-  :geo place:Spijk2746935 ;
-  :place "SPIJK" .
+  :place place:Spijk2746935 ;
+  :name "SPIJK" .
 
 t00289:c2 a t:village.n.02 ;
-  :geo place:Oosternieland2749429 ;
-  :place "OOSTERNIELAND" .
+  :place place:Oosternieland2749429 ;
+  :name "OOSTERNIELAND" .
 
 t00289:c3 a t:more.r.01 ;
   :op1 t00289:m1 ;
   :op2 t00289:m2 .
 
 t00289:c4 a t:village.n.02 ;
-  :geo place:Uithuizermeeden2745968 ;
-  :place "UITHUIZERMEEDEN" .
+  :place place:Uithuizermeeden2745968 ;
+  :name "UITHUIZERMEEDEN" .
 
 t00289:c5 a t:chapter.n.01 ;
   :ord 57 ;
@@ -75,16 +75,19 @@ t00289:v1 a t:verse.n.01 ;
   :ord 2 .
 
 t00289:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00289.jpg" ;
-  :date "2019-10-16T16:47:34"^^xsd:dateTime ;
-  geo:lat 53.4042 ;
-  geo:long 6.7489 ;
+  dcterms:date "2019-10-16T16:47:34"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4042 ;
+    geo:long 6.7489
+  ] ;
   :nd "+53.4042+006.7489"^^ll: .
 

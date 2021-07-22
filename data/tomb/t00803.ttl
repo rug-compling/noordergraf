@@ -8,12 +8,12 @@ tomb:t00803 a t:tombstone.n.01 ;
   :quo "IN JEZUS ONTSLAPEN"@nld .
 
 t00803:c1 a t:village.n.02 ;
-  :geo place:Schildwolde2747570 ;
-  :place "SCHILDWOLDE" .
+  :place place:Schildwolde2747570 ;
+  :name "SCHILDWOLDE" .
 
 t00803:c2 a t:village.n.02 ;
-  :geo place:TenBoer2746491 ;
-  :place "TEN BOER" .
+  :place place:TenBoer2746491 ;
+  :name "TEN BOER" .
 
 t00803:p1 a t:female.n.02 ;
   :dob "1856-02-02" ;
@@ -30,16 +30,19 @@ t00803:r1 a t:widow.n.01 ;
   :tgt t00803:p2 .
 
 t00803:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00803.jpg" ;
-  :date "2020-01-18T12:44:50"^^xsd:dateTime ;
-  geo:lat 53.2778 ;
-  geo:long 6.6936 ;
+  dcterms:date "2020-01-18T12:44:50"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2778 ;
+    geo:long 6.6936
+  ] ;
   :nd "+53.2778+006.6936"^^ll: .
 

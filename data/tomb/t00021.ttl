@@ -10,12 +10,12 @@ tomb:t00021 a t:tombstone.n.01 ;
 t00021:a1 a t:broken.a.01 .
 
 t00021:c1 a t:village.n.02 ;
-  :geo place:Onnen2749588 ;
-  :place "ONNEN" .
+  :place place:Onnen2749588 ;
+  :name "ONNEN" .
 
 t00021:c2 a t:town.n.01 ;
-  :geo place:Haren2754841 ;
-  :place "HAREN" .
+  :place place:Haren2754841 ;
+  :name "HAREN" .
 
 t00021:g1 a t:personnel.n.01 ;
   :loc t00021:c1 ,
@@ -42,16 +42,19 @@ t00021:s1 a t:frond.n.01 ;
   :att t00021:a1 .
 
 t00021:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00021.jpg" ;
-  :date "2019-09-25T16:27:58"^^xsd:dateTime ;
-  geo:lat 53.1909 ;
-  geo:long 6.5941 ;
+  dcterms:date "2019-09-25T16:27:58"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1909 ;
+    geo:long 6.5941
+  ] ;
   :nd "+53.1909+006.5941"^^ll: .
 

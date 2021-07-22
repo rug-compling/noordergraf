@@ -6,12 +6,12 @@ tomb:t00496 a t:tombstone.n.01 ;
   :ent t00496:p1 .
 
 t00496:c1 a t:city.n.01 ;
-  :geo place:Amsterdam2759794 ;
-  :place "AMSTERDAM" .
+  :place place:Amsterdam2759794 ;
+  :name "AMSTERDAM" .
 
 t00496:c2 a t:village.n.02 ;
-  :geo place:Hallum2754930 ;
-  :place "HALLUM" .
+  :place place:Hallum2754930 ;
+  :name "HALLUM" .
 
 t00496:o1 a t:notary.n.01 ;
   :hco "12310" ;
@@ -26,16 +26,19 @@ t00496:p1 a t:male.n.02 ;
   :pod t00496:c1 .
 
 t00496:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00496.jpg" ;
-  :date "2019-11-16T14:11:31"^^xsd:dateTime ;
-  geo:lat 53.2091 ;
-  geo:long 5.7914 ;
+  dcterms:date "2019-11-16T14:11:31"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2091 ;
+    geo:long 5.7914
+  ] ;
   :nd "+53.2091+005.7914"^^ll: .
 

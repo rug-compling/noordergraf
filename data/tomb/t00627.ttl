@@ -8,8 +8,8 @@ tomb:t00627 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00627:c1 a t:town.n.01 ;
-  :geo place:Hoogezand2753706 ;
-  :place "HOOGEZAND" .
+  :place place:Hoogezand2753706 ;
+  :name "HOOGEZAND" .
 
 t00627:o1 a t:preacher.n.01 ;
   :hco "14120" ;
@@ -27,16 +27,19 @@ t00627:p2 a t:female.n.02 ;
   :nam "FROUWINA G. EVERS" .
 
 t00627:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00627.jpg" ;
-  :date "2019-11-23T09:59:01"^^xsd:dateTime ;
-  geo:lat 53.1642 ;
-  geo:long 6.7543 ;
+  dcterms:date "2019-11-23T09:59:01"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1642 ;
+    geo:long 6.7543
+  ] ;
   :nd "+53.1642+006.7543"^^ll: .
 

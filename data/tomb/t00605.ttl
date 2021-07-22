@@ -15,12 +15,12 @@ t00605:a1 a t:weeping.a.02 .
 t00605:a2 a t:broken.a.01 .
 
 t00605:c1 a t:village.n.02 ;
-  :geo place:Kropswolde2752217 ;
-  :place "KROPSWOLDE" .
+  :place place:Kropswolde2752217 ;
+  :name "KROPSWOLDE" .
 
 t00605:c2 a t:town.n.01 ;
-  :geo place:Hoogezand2753706 ;
-  :place "HOOGEZAND" .
+  :place place:Hoogezand2753706 ;
+  :name "HOOGEZAND" .
 
 t00605:p1 a t:male.n.02 ;
   :dob "1837-09-01" ;
@@ -50,16 +50,19 @@ t00605:s2 a t:column.n.01 ;
   :att t00605:a2 .
 
 t00605:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00605.jpg" ;
-  :date "2019-11-23T10:07:01"^^xsd:dateTime ;
-  geo:lat 53.1642 ;
-  geo:long 6.7540 ;
+  dcterms:date "2019-11-23T10:07:01"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1642 ;
+    geo:long 6.7540
+  ] ;
   :nd "+53.1642+006.7540"^^ll: .
 

@@ -10,17 +10,17 @@ tomb:t00657 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00657:c1 a t:town.n.01 ;
-  :geo place:Einbeck2931804 ;
-  :place "EINBECK" .
+  :place place:Einbeck2931804 ;
+  :name "EINBECK" .
 
 t00657:c2 a t:country.n.02 ;
-  :geo place:Duitsland2921044 ;
+  :place place:Duitsland2921044 ;
   :mem t00657:c1 ;
-  :place "DUITSLAND" .
+  :name "DUITSLAND" .
 
 t00657:c3 a t:city.n.01 ;
-  :geo place:Leeuwarden2751792 ;
-  :place "LEEUWARDEN" .
+  :place place:Leeuwarden2751792 ;
+  :name "LEEUWARDEN" .
 
 t00657:m1 a t:measure.n.02 ;
   :mem t00657:u1 ;
@@ -61,16 +61,19 @@ t00657:r2 a t:widow.n.01 ;
 t00657:u1 a t:year.n.01 .
 
 t00657:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00657.jpg" ;
-  :date "2019-11-16T14:01:21"^^xsd:dateTime ;
-  geo:lat 53.2107 ;
-  geo:long 5.7894 ;
+  dcterms:date "2019-11-16T14:01:21"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2107 ;
+    geo:long 5.7894
+  ] ;
   :nd "+53.2107+005.7894"^^ll: .
 

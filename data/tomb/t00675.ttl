@@ -47,16 +47,19 @@ t00675:r5 a t:grandchild.n.01 ;
   :tgt t00675:g1 .
 
 t00675:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00675.jpg" ;
-  :date "2019-12-14T13:33:24"^^xsd:dateTime ;
-  geo:lat 53.0685 ;
-  geo:long 5.5219 ;
+  dcterms:date "2019-12-14T13:33:24"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0685 ;
+    geo:long 5.5219
+  ] ;
   :nd "+53.0685+005.5219"^^ll: .
 

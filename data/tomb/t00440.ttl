@@ -10,16 +10,16 @@ tomb:t00440 a t:tombstone.n.01 ;
   :sym t00440:s1 .
 
 t00440:c1 a t:island.n.01 ;
-  :geo place:Schiermonnikoog2747591 ;
-  :place "SCHIERMONNIKOOG" .
+  :place place:Schiermonnikoog2747591 ;
+  :name "SCHIERMONNIKOOG" .
 
 t00440:c2 a t:city.n.01 ;
-  :geo place:Kaapstad3369157 ;
-  :place "KAAPSTAD" .
+  :place place:Kaapstad3369157 ;
+  :name "KAAPSTAD" .
 
 t00440:c3 a t:city.n.01 ;
-  :geo place:Glasgow2648579 ;
-  :place "GLASGOW" .
+  :place place:Glasgow2648579 ;
+  :name "GLASGOW" .
 
 t00440:p1 a t:female.n.02 ;
   :dob "1930-06-28" ;
@@ -45,16 +45,19 @@ t00440:p3 a t:male.n.02 ;
 t00440:s1 a t:tree.n.01 .
 
 t00440:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00440.jpg" ;
-  :date "2019-11-02T11:39:28"^^xsd:dateTime ;
-  geo:lat 53.4793 ;
-  geo:long 6.1609 ;
+  dcterms:date "2019-11-02T11:39:28"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4793 ;
+    geo:long 6.1609
+  ] ;
   :nd "+53.4793+006.1609"^^ll: .
 

@@ -8,16 +8,16 @@ tomb:t00501 a t:tombstone.n.01 ;
   :sym t00501:s1 .
 
 t00501:c1 a t:village.n.02 ;
-  :geo place:Boksum2758458 ;
-  :place "BOKSUM" .
+  :place place:Boksum2758458 ;
+  :name "BOKSUM" .
 
 t00501:c2 a t:city.n.01 ;
-  :geo place:Leeuwarden2751792 ;
-  :place "LEEUWARDEN" .
+  :place place:Leeuwarden2751792 ;
+  :name "LEEUWARDEN" .
 
 t00501:c3 a t:city.n.01 ;
-  :geo place:Vlissingen2745392 ;
-  :place "VLISSINGEN" .
+  :place place:Vlissingen2745392 ;
+  :name "VLISSINGEN" .
 
 t00501:p1 a t:male.n.02 ;
   :dob "1855-05-24" ;
@@ -42,16 +42,19 @@ t00501:s2 a t:frond.n.01 .
 t00501:s3 a t:ribbon.n.02 .
 
 t00501:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00501.jpg" ;
-  :date "2019-11-16T13:52:49"^^xsd:dateTime ;
-  geo:lat 53.2091 ;
-  geo:long 5.7906 ;
+  dcterms:date "2019-11-16T13:52:49"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2091 ;
+    geo:long 5.7906
+  ] ;
   :nd "+53.2091+005.7906"^^ll: .
 

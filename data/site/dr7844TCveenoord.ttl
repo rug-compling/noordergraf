@@ -1,6 +1,6 @@
 site:dr7844TCveenoord a t:burial_site.n.01 ;
   :sitename "Boerdijk, Veenoord" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Boerdijk" ;
     schema:addressLocality "Veenoord" ;
@@ -8,8 +8,11 @@ site:dr7844TCveenoord a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "7844 TC"
   ] ;
-  geo:lat 52.7194 ;
-  geo:long 6.8454 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7194 ;
+    geo:long 6.8454
+  ] ;
   :nd "+52.7194+006.8454"^^ll: .
 
 

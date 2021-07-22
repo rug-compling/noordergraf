@@ -12,12 +12,12 @@ tomb:t00417 a t:tombstone.n.01 ;
 t00417:a1 a t:weeping.a.02 .
 
 t00417:c1 a t:town.n.01 ;
-  :geo place:Eelde2756408 ;
-  :place "EELDE" .
+  :place place:Eelde2756408 ;
+  :name "EELDE" .
 
 t00417:c2 a t:town.n.01 ;
-  :geo place:Vries2745189 ;
-  :place "VRIES" .
+  :place place:Vries2745189 ;
+  :name "VRIES" .
 
 t00417:p1 a t:female.n.02 ;
   :dob "1871-07-23" ;
@@ -45,16 +45,19 @@ t00417:s1 a t:willow.n.01 ;
   :att t00417:a1 .
 
 t00417:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00417.jpg" ;
-  :date "2019-10-25T16:55:47"^^xsd:dateTime ;
-  geo:lat 53.0795 ;
-  geo:long 6.5729 ;
+  dcterms:date "2019-10-25T16:55:47"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0795 ;
+    geo:long 6.5729
+  ] ;
   :nd "+53.0795+006.5729"^^ll: .
 

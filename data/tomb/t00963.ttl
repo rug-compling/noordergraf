@@ -7,12 +7,12 @@ tomb:t00963 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00963:c1 a t:city.n.01 ;
-  :geo place:Winschoten2744344 ;
-  :place "WINSCHOTEN" .
+  :place place:Winschoten2744344 ;
+  :name "WINSCHOTEN" .
 
 t00963:c2 a t:village.n.02 ;
-  :geo place:Paterswolde2748702 ;
-  :place "PATERSWOLDE" .
+  :place place:Paterswolde2748702 ;
+  :name "PATERSWOLDE" .
 
 t00963:p1 a t:female.n.02 ;
   :dob "1886-11-21" ;
@@ -22,16 +22,19 @@ t00963:p1 a t:female.n.02 ;
   :pod t00963:c2 .
 
 t00963:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00963.jpg" ;
-  :date "2020-03-27T17:55:38"^^xsd:dateTime ;
-  geo:lat 53.1632 ;
-  geo:long 6.5544 ;
+  dcterms:date "2020-03-27T17:55:38"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1632 ;
+    geo:long 6.5544
+  ] ;
   :nd "+53.1632+006.5544"^^ll: .
 

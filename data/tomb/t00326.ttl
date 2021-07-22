@@ -8,12 +8,12 @@ tomb:t00326 a t:tombstone.n.01 ;
   :quo "TER NAGEDACHTENIS VAN HEM" .
 
 t00326:c1 a t:city.n.01 ;
-  :geo place:Sneek2747063 ;
-  :place "SNEEK" .
+  :place place:Sneek2747063 ;
+  :name "SNEEK" .
 
 t00326:c2 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00326:i1 a t:portrait.n.02 ;
   :thm t00326:p1 .
@@ -36,16 +36,19 @@ t00326:p1 a t:male.n.02 ;
        "WONENDEN ALDAAR" .
 
 t00326:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00326.jpg" ;
-  :date "2019-10-19T14:27:23"^^xsd:dateTime ;
-  geo:lat 52.7159 ;
-  geo:long 6.4740 ;
+  dcterms:date "2019-10-19T14:27:23"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7159 ;
+    geo:long 6.4740
+  ] ;
   :nd "+52.7159+006.4740"^^ll: .
 

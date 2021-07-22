@@ -11,12 +11,12 @@ tomb:t00788 a t:tombstone.n.01 ;
 t00788:a1 a t:weeping.a.02 .
 
 t00788:c1 a t:village.n.02 ;
-  :geo place:Noordbarge2749996 ;
-  :place "NOORDBARGE" .
+  :place place:Noordbarge2749996 ;
+  :name "NOORDBARGE" .
 
 t00788:c2 a t:hamlet.n.03 ;
-  :geo place:Bargermeer12253657 ;
-  :place "BARGERMEER" .
+  :place place:Bargermeer12253657 ;
+  :name "BARGERMEER" .
 
 t00788:p1 a t:male.n.02 ;
   :dob "1837-02-08" ;
@@ -36,16 +36,19 @@ t00788:s1 a t:willow.n.01 ;
   :att t00788:a1 .
 
 t00788:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00788.jpg" ;
-  :date "2019-12-21T12:56:18"^^xsd:dateTime ;
-  geo:lat 52.7816 ;
-  geo:long 6.8968 ;
+  dcterms:date "2019-12-21T12:56:18"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7816 ;
+    geo:long 6.8968
+  ] ;
   :nd "+52.7816+006.8968"^^ll: .
 

@@ -7,16 +7,16 @@ tomb:t00393 a t:tombstone.n.01 ;
        t00393:p2 .
 
 t00393:c1 a t:village.n.02 ;
-  :geo place:Minnertsga2750790 ;
-  :place "MINNERTSGA" .
+  :place place:Minnertsga2750790 ;
+  :name "MINNERTSGA" .
 
 t00393:c2 a t:village.n.02 ;
-  :geo place:Bitgum2759283 ;
-  :place "BEETGUM" .
+  :place place:Bitgum2759283 ;
+  :name "BEETGUM" .
 
 t00393:c3 a t:village.n.02 ;
-  :geo place:Weidum2744891 ;
-  :place "WEIDUM" .
+  :place place:Weidum2744891 ;
+  :name "WEIDUM" .
 
 t00393:o1 a t:doctor.n.01 ;
   :bef t00393:o2 ;
@@ -44,16 +44,19 @@ t00393:r1 a t:spouse.n.01 ;
   :tgt t00393:p2 .
 
 t00393:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00393.jpg" ;
-  :date "2019-10-26T15:01:18"^^xsd:dateTime ;
-  geo:lat 53.2517 ;
-  geo:long 6.1453 ;
+  dcterms:date "2019-10-26T15:01:18"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2517 ;
+    geo:long 6.1453
+  ] ;
   :nd "+53.2517+006.1453"^^ll: .
 

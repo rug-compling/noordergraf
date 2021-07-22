@@ -7,12 +7,12 @@ tomb:t00778 a t:tombstone.n.01 ;
   :quo "RUST ZACHT"@nld .
 
 t00778:c1 a t:hamlet.n.03 ;
-  :geo place:Emmerhout2756128 ;
-  :place "EMMERHOUT" .
+  :place place:Emmerhout2756128 ;
+  :name "EMMERHOUT" .
 
 t00778:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00778:p1 a t:male.n.02 ;
   :dob "1874-08-31" ;
@@ -22,16 +22,19 @@ t00778:p1 a t:male.n.02 ;
   :pod t00778:c2 .
 
 t00778:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00778.jpg" ;
-  :date "2019-12-21T13:00:37"^^xsd:dateTime ;
-  geo:lat 52.7818 ;
-  geo:long 6.8970 ;
+  dcterms:date "2019-12-21T13:00:37"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7818 ;
+    geo:long 6.8970
+  ] ;
   :nd "+52.7818+006.8970"^^ll: .
 

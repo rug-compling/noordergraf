@@ -10,12 +10,12 @@ tomb:t00383 a t:tombstone.n.01 ;
   :sym t00383:s1 .
 
 t00383:c1 a t:village.n.02 ;
-  :geo place:Gerkesklooster2755574 ;
-  :place "GERKESKLOOSTER" .
+  :place place:Gerkesklooster2755574 ;
+  :name "GERKESKLOOSTER" .
 
 t00383:c2 a t:village.n.02 ;
-  :geo place:Buitenpost2758131 ;
-  :place "BUITENPOST" .
+  :place place:Buitenpost2758131 ;
+  :name "BUITENPOST" .
 
 t00383:p1 a t:male.n.02 ;
   :dob "1870-06-05" ;
@@ -50,16 +50,19 @@ t00383:s3 a t:frond.n.01 .
 t00383:s4 a t:ribbon.n.01 .
 
 t00383:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00383.jpg" ;
-  :date "2019-10-26T15:06:11"^^xsd:dateTime ;
-  geo:lat 53.2519 ;
-  geo:long 6.1451 ;
+  dcterms:date "2019-10-26T15:06:11"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2519 ;
+    geo:long 6.1451
+  ] ;
   :nd "+53.2519+006.1451"^^ll: .
 

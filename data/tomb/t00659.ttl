@@ -8,8 +8,8 @@ tomb:t00659 a t:tombstone.n.01 ;
   :quo "ANNO 1708 DEN 5 DECEMBER IS \\ DE DEUCHTSAME IMPKE WOL- \\ TERS DE GEWESENE HUISVROUW \\ VAN DE EERBARE ALYE JANS SMIDT \\ OPT OOSTERNIELANT SEER CHRIS \\ TELYCK INDEN HEERE ONTSLAPEN \\ VERWACHTENDE MET ALLE GELOO \\ VIGEN EEN ZALIGE OPSTANDINGE \\ ALLEEN DOOR JESUM CHRISTUM"@nld .
 
 t00659:c1 a t:village.n.02 ;
-  :geo place:Oosternieland2749429 ;
-  :place "OOSTERNIELAND" .
+  :place place:Oosternieland2749429 ;
+  :name "OOSTERNIELAND" .
 
 t00659:p1 a t:female.n.02 ;
   :dod "1708-12-05" ;
@@ -24,16 +24,19 @@ t00659:r1 a t:wife.n.01 ;
   :tgt t00659:p2 .
 
 t00659:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00659.jpg" ;
-  :date "2019-10-16T16:50:03"^^xsd:dateTime ;
-  geo:lat 53.4039 ;
-  geo:long 6.7489 ;
+  dcterms:date "2019-10-16T16:50:03"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4039 ;
+    geo:long 6.7489
+  ] ;
   :nd "+53.4039+006.7489"^^ll: .
 

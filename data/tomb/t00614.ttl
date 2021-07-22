@@ -16,12 +16,12 @@ t00614:a1 a t:weeping.a.02 .
 t00614:a2 a t:broken.a.01 .
 
 t00614:c1 a t:hamlet.n.03 ;
-  :geo place:Kalkwijk2753130 ;
-  :place "KALKWIJK" .
+  :place place:Kalkwijk2753130 ;
+  :name "KALKWIJK" .
 
 t00614:c2 a t:village.n.02 ;
-  :geo place:Sappemeer2747758 ;
-  :place "SAPPEMEER" .
+  :place place:Sappemeer2747758 ;
+  :name "SAPPEMEER" .
 
 t00614:g1 a t:group.n.01 ;
   :mem t00614:p1 ,
@@ -52,16 +52,19 @@ t00614:s2 a t:column.n.01 ;
   :att t00614:a2 .
 
 t00614:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00614.jpg" ;
-  :date "2019-11-23T10:04:55"^^xsd:dateTime ;
-  geo:lat 53.1644 ;
-  geo:long 6.7541 ;
+  dcterms:date "2019-11-23T10:04:55"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1644 ;
+    geo:long 6.7541
+  ] ;
   :nd "+53.1644+006.7541"^^ll: .
 

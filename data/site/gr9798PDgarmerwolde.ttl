@@ -1,6 +1,6 @@
 site:gr9798PDgarmerwolde a t:burial_site.n.01 ;
   :sitename "Kerk Garmerwolde" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Dorpsweg 69" ;
     schema:addressLocality "Garmerwolde" ;
@@ -8,8 +8,11 @@ site:gr9798PDgarmerwolde a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9798 PD"
   ] ;
-  geo:lat 53.2481 ;
-  geo:long 6.6477 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2481 ;
+    geo:long 6.6477
+  ] ;
   :nd "+53.2481+006.6477"^^ll: .
 
 

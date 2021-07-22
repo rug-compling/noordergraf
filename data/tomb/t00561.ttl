@@ -12,12 +12,12 @@ t00561:b1 a t:Epistle_to_the_Romans.n.04 ;
   :prt t00561:c3 .
 
 t00561:c1 a t:city.n.01 ;
-  :geo place:Veendam2745783 ;
-  :place "VEENDAM" .
+  :place place:Veendam2745783 ;
+  :name "VEENDAM" .
 
 t00561:c2 a t:city.n.01 ;
-  :geo place:Schiedam2747596 ;
-  :place "SCHIEDAM" .
+  :place place:Schiedam2747596 ;
+  :name "SCHIEDAM" .
 
 t00561:c3 a t:chapter.n.01 ;
   :ord 6 ;
@@ -55,16 +55,19 @@ t00561:v1 a t:verse.n.01 ;
   :ord 23 .
 
 t00561:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00561.jpg" ;
-  :date "2019-11-24T13:45:54"^^xsd:dateTime ;
-  geo:lat 53.1044 ;
-  geo:long 6.8744 ;
+  dcterms:date "2019-11-24T13:45:54"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1044 ;
+    geo:long 6.8744
+  ] ;
   :nd "+53.1044+006.8744"^^ll: .
 

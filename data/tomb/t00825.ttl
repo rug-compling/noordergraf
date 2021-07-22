@@ -8,8 +8,8 @@ tomb:t00825 a t:tombstone.n.01 ;
   :sym t00825:s1 .
 
 t00825:c2 a t:city.n.01 ;
-  :geo place:Dokkum2756759 ;
-  :place "DOKKUM" .
+  :place place:Dokkum2756759 ;
+  :name "DOKKUM" .
 
 t00825:p1 a t:male.n.02 ;
   :dob "1923-03-25" ;
@@ -26,16 +26,19 @@ t00825:r2 a t:brother.n.01 .
 t00825:s1 a t:man.n.01 .
 
 t00825:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00825.jpg" ;
-  :date "2020-02-01T12:19:13"^^xsd:dateTime ;
-  geo:lat 53.2307 ;
-  geo:long 6.5516 ;
+  dcterms:date "2020-02-01T12:19:13"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2307 ;
+    geo:long 6.5516
+  ] ;
   :nd "+53.2307+006.5516"^^ll: .
 

@@ -10,8 +10,8 @@ tomb:t01062 a t:tombstone.n.01 ;
        t01062:s2 .
 
 t01062:c1 a t:village.n.02 ;
-  :geo place:DeWilp2756932 ;
-  :place "DE WILP" .
+  :place place:DeWilp2756932 ;
+  :name "DE WILP" .
 
 t01062:p1 a t:female.n.02 ;
   :dob "1853-07-17" ;
@@ -35,16 +35,19 @@ t01062:s1 a t:branch.n.02 .
 t01062:s2 a t:branch.n.02 .
 
 t01062:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01062.jpg" ;
-  :date "2020-05-01T15:30:08"^^xsd:dateTime ;
-  geo:lat 53.1231 ;
-  geo:long 6.2513 ;
+  dcterms:date "2020-05-01T15:30:08"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1231 ;
+    geo:long 6.2513
+  ] ;
   :nd "+53.1231+006.2513"^^ll: .
 

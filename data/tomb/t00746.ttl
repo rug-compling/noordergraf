@@ -11,16 +11,16 @@ tomb:t00746 a t:tombstone.n.01 ;
 t00746:a1 a t:weeping.a.02 .
 
 t00746:c1 a t:village.n.02 ;
-  :geo place:Eexta2756316 ;
-  :place "EEXTA" .
+  :place place:Eexta2756316 ;
+  :name "EEXTA" .
 
 t00746:c2 a t:village.n.02 ;
-  :geo place:Scheemda2747661 ;
-  :place "SCHEEMDA" .
+  :place place:Scheemda2747661 ;
+  :name "SCHEEMDA" .
 
 t00746:c3 a t:village.n.02 ;
-  :geo place:Woldendorp2744228 ;
-  :place "WOLDENDORP" .
+  :place place:Woldendorp2744228 ;
+  :name "WOLDENDORP" .
 
 t00746:p1 a t:male.n.02 ;
   :dob "1864-04-20" ;
@@ -42,16 +42,19 @@ t00746:s1 a t:willow.n.01 ;
   :att t00746:a1 .
 
 t00746:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00746.jpg" ;
-  :date "2019-12-29T10:18:43"^^xsd:dateTime ;
-  geo:lat 53.1807 ;
-  geo:long 6.9687 ;
+  dcterms:date "2019-12-29T10:18:43"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1807 ;
+    geo:long 6.9687
+  ] ;
   :nd "+53.1807+006.9687"^^ll: .
 

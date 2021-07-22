@@ -20,16 +20,19 @@ t00983:r1 a t:widow.n.01 ;
   :tgt t00983:p2 .
 
 t00983:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00983.jpg" ;
-  :date "2020-03-31T12:47:55"^^xsd:dateTime ;
-  geo:lat 53.1421 ;
-  geo:long 6.5787 ;
+  dcterms:date "2020-03-31T12:47:55"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1421 ;
+    geo:long 6.5787
+  ] ;
   :nd "+53.1421+006.5787"^^ll: .
 

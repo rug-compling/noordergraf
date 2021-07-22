@@ -9,16 +9,16 @@ tomb:t00128 a t:tombstone.n.01 ;
        t00128:s4 .
 
 t00128:c1 a t:village.n.02 ;
-  :geo place:Muntendam2750535 ;
-  :place "MUNTENDAM" .
+  :place place:Muntendam2750535 ;
+  :name "MUNTENDAM" .
 
 t00128:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00128:c3 a t:village.n.02 ;
-  :geo place:Tolbert2746234 ;
-  :place "TOLBERT" .
+  :place place:Tolbert2746234 ;
+  :name "TOLBERT" .
 
 t00128:p1 a t:male.n.02 ;
   :dob "1862-10-13" ;
@@ -51,16 +51,19 @@ t00128:s3 a t:ribbon.n.01 .
 t00128:s4 a t:frond.n.01 .
 
 t00128:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00128.jpg" ;
-  :date "2019-10-01T09:57:48"^^xsd:dateTime ;
-  geo:lat 53.2059 ;
-  geo:long 6.5714 ;
+  dcterms:date "2019-10-01T09:57:48"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2059 ;
+    geo:long 6.5714
+  ] ;
   :nd "+53.2059+006.5714"^^ll: .
 

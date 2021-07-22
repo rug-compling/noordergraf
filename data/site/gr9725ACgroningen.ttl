@@ -1,6 +1,6 @@
 site:gr9725ACgroningen a t:burial_site.n.01 ;
   :sitename "Zuiderbegraafplaats, Groningen" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Hereweg 87" ;
     schema:addressLocality "Groningen" ;
@@ -8,8 +8,11 @@ site:gr9725ACgroningen a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9725 AC"
   ] ;
-  geo:lat 53.2061 ;
-  geo:long 6.5719 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2061 ;
+    geo:long 6.5719
+  ] ;
   :nd "+53.2061+006.5719"^^ll: .
 
 

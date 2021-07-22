@@ -41,16 +41,19 @@ t00090:r6 a t:great_grandmother.n.01 .
 t00090:s1 a t:cross.n.03 .
 
 t00090:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00090.jpg" ;
-  :date "2019-09-25T11:28:19"^^xsd:dateTime ;
-  geo:lat 53.2032 ;
-  geo:long 6.5720 ;
+  dcterms:date "2019-09-25T11:28:19"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2032 ;
+    geo:long 6.5720
+  ] ;
   :nd "+53.2032+006.5720"^^ll: .
 

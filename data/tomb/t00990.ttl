@@ -9,12 +9,12 @@ tomb:t00990 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00990:c1 a t:village.n.02 ;
-  :geo place:Harkstede2754819 ;
-  :place "HARKSTEDE" .
+  :place place:Harkstede2754819 ;
+  :name "HARKSTEDE" .
 
 t00990:c2 a t:building.n.01 ;
-  :geo place:Leeuwenburg ;
-  :place "LEEUWENBURG" .
+  :place place:Leeuwenburg ;
+  :name "LEEUWENBURG" .
 
 t00990:c3 a t:more.r.01 ;
   :op1 t00990:m1 ;
@@ -44,16 +44,19 @@ t00990:r1 a t:wife.n.01 ;
 t00990:u1 a t:year.n.01 .
 
 t00990:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00990.jpg" ;
-  :date "2020-04-05T12:18:10"^^xsd:dateTime ;
-  geo:lat 53.2432 ;
-  geo:long 6.6280 ;
+  dcterms:date "2020-04-05T12:18:10"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2432 ;
+    geo:long 6.6280
+  ] ;
   :nd "+53.2432+006.6280"^^ll: .
 

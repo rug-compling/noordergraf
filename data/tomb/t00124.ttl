@@ -8,16 +8,16 @@ tomb:t00124 a t:tombstone.n.01 ;
   :quo "IN JEZUS ONTSLAPEN" .
 
 t00124:c1 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00124:c2 a t:village.n.02 ;
-  :geo place:Odoorn2749734 ;
-  :place "ODOORN" .
+  :place place:Odoorn2749734 ;
+  :name "ODOORN" .
 
 t00124:c3 a t:village.n.02 ;
-  :geo place:NieuwePekela2750272 ;
-  :place "NIEUWE PEKELA" .
+  :place place:NieuwePekela2750272 ;
+  :name "NIEUWE PEKELA" .
 
 t00124:p1 a t:male.n.02 ;
   :dob "1880-05-21" ;
@@ -46,16 +46,19 @@ t00124:r3 a t:mother.n.01 ;
   :att "LIEVE" .
 
 t00124:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00124.jpg" ;
-  :date "2019-10-01T10:00:53"^^xsd:dateTime ;
-  geo:lat 53.2067 ;
-  geo:long 6.5716 ;
+  dcterms:date "2019-10-01T10:00:53"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2067 ;
+    geo:long 6.5716
+  ] ;
   :nd "+53.2067+006.5716"^^ll: .
 

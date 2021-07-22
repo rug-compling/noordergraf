@@ -10,8 +10,8 @@ tomb:t00716 a t:tombstone.n.01 ;
 t00716:a1 a t:retired.a.01 .
 
 t00716:c1 a t:colony.n.05 ;
-  :geo place:Indonesie1643084 ;
-  :place "NEDERLANDS-INDIË" .
+  :place place:Indonesie1643084 ;
+  :name "NEDERLANDS-INDIË" .
 
 t00716:o1 a t:clerk.n.01 ;
   :att t00716:a1 ;
@@ -30,16 +30,19 @@ t00716:p2 a t:female.n.02 ;
   :nam "ELISABETH JOHANNA VAN OTTERLOO" .
 
 t00716:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00716.jpg" ;
-  :date "2019-12-21T13:27:29"^^xsd:dateTime ;
-  geo:lat 52.7815 ;
-  geo:long 6.8998 ;
+  dcterms:date "2019-12-21T13:27:29"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7815 ;
+    geo:long 6.8998
+  ] ;
   :nd "+52.7815+006.8998"^^ll: .
 

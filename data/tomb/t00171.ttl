@@ -6,8 +6,8 @@ tomb:t00171 a t:tombstone.n.01 ;
   :ent t00171:p1 .
 
 t00171:c1 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00171:o1 a t:manufacturer.n.02 ;
   :hco "89242" ;
@@ -23,16 +23,19 @@ t00171:p1 a t:male.n.02 ;
   :occ t00171:o1 .
 
 t00171:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00171.jpg" ;
-  :date "2019-10-05T10:43:34"^^xsd:dateTime ;
-  geo:lat 53.1904 ;
-  geo:long 6.5934 ;
+  dcterms:date "2019-10-05T10:43:34"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1904 ;
+    geo:long 6.5934
+  ] ;
   :nd "+53.1904+006.5934"^^ll: .
 

@@ -12,8 +12,8 @@ t01019:b1 a t:Epistle_to_the_Romans.n.04 ;
        t01019:c3 .
 
 t01019:c1 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t01019:c2 a t:chapter.n.01 ;
   :ord 8 ;
@@ -70,16 +70,19 @@ t01019:v4 a t:verse.n.01 ;
   :ord 2 .
 
 t01019:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01019.jpg" ;
-  :date "2020-04-03T14:31:14"^^xsd:dateTime ;
-  geo:lat 53.1911 ;
-  geo:long 6.5931 ;
+  dcterms:date "2020-04-03T14:31:14"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1911 ;
+    geo:long 6.5931
+  ] ;
   :nd "+53.1911+006.5931"^^ll: .
 

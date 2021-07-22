@@ -15,12 +15,12 @@ t01055:b1 a t:Matthew.n.02 ;
   :prt t01055:c3 .
 
 t01055:c1 a t:village.n.02 ;
-  :geo place:Hornhuizen2753604 ;
-  :place "HORNHUIZEN" .
+  :place place:Hornhuizen2753604 ;
+  :name "HORNHUIZEN" .
 
 t01055:c2 a t:village.n.02 ;
-  :geo place:Ulrum2745944 ;
-  :place "ULRUM" .
+  :place place:Ulrum2745944 ;
+  :name "ULRUM" .
 
 t01055:c3 a t:chapter.n.01 ;
   :ord 5 ;
@@ -47,16 +47,19 @@ t01055:v1 a t:verse.n.01 ;
   :ord 3 .
 
 t01055:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01055.jpg" ;
-  :date "2020-05-02T16:49:57"^^xsd:dateTime ;
-  geo:lat 53.3603 ;
-  geo:long 6.3435 ;
+  dcterms:date "2020-05-02T16:49:57"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3603 ;
+    geo:long 6.3435
+  ] ;
   :nd "+53.3603+006.3435"^^ll: .
 

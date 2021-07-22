@@ -1,6 +1,6 @@
 site:de26831bunde a t:burial_site.n.01 ;
   :sitename "Kirchring, Bunde" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Kirchring 2A" ;
     schema:addressLocality "Bunde" ;
@@ -8,8 +8,11 @@ site:de26831bunde a t:burial_site.n.01 ;
     schema:addressCountry "DE" ;
     schema:postalCode "26831"
   ] ;
-  geo:lat 53.1849 ;
-  geo:long 7.2691 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1849 ;
+    geo:long 7.2691
+  ] ;
   :nd "+53.1849+007.2691"^^ll: .
 
 

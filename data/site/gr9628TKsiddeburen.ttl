@@ -1,6 +1,6 @@
 site:gr9628TKsiddeburen a t:burial_site.n.01 ;
   :sitename "Hervormde Begraafplaats, Siddeburen" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Kugelslaan" ;
     schema:addressLocality "Siddeburen" ;
@@ -8,7 +8,10 @@ site:gr9628TKsiddeburen a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9628 TK"
   ] ;
-  geo:lat 53.2442 ;
-  geo:long 6.8640 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2442 ;
+    geo:long 6.8640
+  ] ;
   :nd "+53.2442+006.8640"^^ll: .
 

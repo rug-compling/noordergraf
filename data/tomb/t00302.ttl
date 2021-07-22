@@ -9,21 +9,21 @@ tomb:t00302 a t:tombstone.n.01 ;
   :sym t00302:s1 .
 
 t00302:c1 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00302:c2 a t:village.n.02 ;
-  :geo place:Dwingeloo2756451 ;
-  :place "DWINGELOO" .
+  :place place:Dwingeloo2756451 ;
+  :name "DWINGELOO" .
 
 t00302:c3 a t:city.n.01 ;
-  :geo place:Hengelo2754394 ;
-  :place "HENGELO" .
+  :place place:Hengelo2754394 ;
+  :name "HENGELO" .
 
 t00302:c4 a t:province.n.01 ;
-  :geo place:ProvincieOverijssel2748838 ;
+  :place place:ProvincieOverijssel2748838 ;
   :mem t00302:c3 ;
-  :place "OVERIJSSEL" .
+  :name "OVERIJSSEL" .
 
 t00302:p1 a t:male.n.02 ;
   :dob "1858-09-08" ;
@@ -48,16 +48,19 @@ t00302:s2 a t:frond.n.01 .
 t00302:s3 a t:frond.n.01 .
 
 t00302:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00302.jpg" ;
-  :date "2019-10-19T14:32:16"^^xsd:dateTime ;
-  geo:lat 52.7159 ;
-  geo:long 6.4742 ;
+  dcterms:date "2019-10-19T14:32:16"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7159 ;
+    geo:long 6.4742
+  ] ;
   :nd "+52.7159+006.4742"^^ll: .
 

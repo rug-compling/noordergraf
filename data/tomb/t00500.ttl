@@ -6,12 +6,12 @@ tomb:t00500 a t:tombstone.n.01 ;
   :ent t00500:p1 .
 
 t00500:c1 a t:village.n.02 ;
-  :geo place:Stiens2746705 ;
-  :place "STIENS" .
+  :place place:Stiens2746705 ;
+  :name "STIENS" .
 
 t00500:c2 a t:village.n.02 ;
-  :geo place:Grou2755052 ;
-  :place "GROUW" .
+  :place place:Grou2755052 ;
+  :name "GROUW" .
 
 t00500:p1 a t:male.n.02 ;
   :dob "1888-10-21" ;
@@ -21,16 +21,19 @@ t00500:p1 a t:male.n.02 ;
   :pod t00500:c2 .
 
 t00500:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00500.jpg" ;
-  :date "2019-11-16T13:53:09"^^xsd:dateTime ;
-  geo:lat 53.2091 ;
-  geo:long 5.7906 ;
+  dcterms:date "2019-11-16T13:53:09"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2091 ;
+    geo:long 5.7906
+  ] ;
   :nd "+53.2091+005.7906"^^ll: .
 

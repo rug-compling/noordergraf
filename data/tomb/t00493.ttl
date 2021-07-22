@@ -31,16 +31,19 @@ t00493:r3 a t:father.n.01 ;
   :tgt t00493:p3 .
 
 t00493:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00493.jpg" ;
-  :date "2019-11-16T13:57:23"^^xsd:dateTime ;
-  geo:lat 53.2097 ;
-  geo:long 5.7906 ;
+  dcterms:date "2019-11-16T13:57:23"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2097 ;
+    geo:long 5.7906
+  ] ;
   :nd "+53.2097+005.7906"^^ll: .
 

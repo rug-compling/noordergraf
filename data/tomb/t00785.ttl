@@ -12,12 +12,12 @@ t00785:b1 a t:Matthew.n.02 ;
   :prt t00785:c3 .
 
 t00785:c1 a t:village.n.02 ;
-  :geo place:Westenesch2744776 ;
-  :place "WESTENESCH" .
+  :place place:Westenesch2744776 ;
+  :name "WESTENESCH" .
 
 t00785:c2 a t:town.n.01 ;
-  :geo place:Emmen2756136 ;
-  :place "EMMEN" .
+  :place place:Emmen2756136 ;
+  :name "EMMEN" .
 
 t00785:c3 a t:chapter.n.01 ;
   :ord 5 ;
@@ -41,16 +41,19 @@ t00785:v1 a t:verse.n.01 ;
   :ord 7 .
 
 t00785:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00785.jpg" ;
-  :date "2019-12-21T12:57:36"^^xsd:dateTime ;
-  geo:lat 52.7820 ;
-  geo:long 6.8976 ;
+  dcterms:date "2019-12-21T12:57:36"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7820 ;
+    geo:long 6.8976
+  ] ;
   :nd "+52.7820+006.8976"^^ll: .
 

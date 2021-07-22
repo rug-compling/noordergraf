@@ -9,16 +9,16 @@ tomb:t00415 a t:tombstone.n.01 ;
   :sym t00415:s1 .
 
 t00415:c1 a t:village.n.02 ;
-  :geo place:Tynaarlo2746038 ;
-  :place "TYNAARLO" .
+  :place place:Tynaarlo2746038 ;
+  :name "TYNAARLO" .
 
 t00415:c2 a t:village.n.02 ;
-  :geo place:Yde2744130 ;
-  :place "YDE" .
+  :place place:Yde2744130 ;
+  :name "YDE" .
 
 t00415:c3 a t:town.n.01 ;
-  :geo place:Haren2754841 ;
-  :place "HAREN" .
+  :place place:Haren2754841 ;
+  :name "HAREN" .
 
 t00415:p1 a t:female.n.02 ;
   :dob "1880-12-10" ;
@@ -42,16 +42,19 @@ t00415:r1 a t:spouse.n.01 ;
 t00415:s1 a t:frond.n.01 .
 
 t00415:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00415.jpg" ;
-  :date "2019-10-25T17:04:31"^^xsd:dateTime ;
-  geo:lat 53.0796 ;
-  geo:long 6.5724 ;
+  dcterms:date "2019-10-25T17:04:31"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0796 ;
+    geo:long 6.5724
+  ] ;
   :nd "+53.0796+006.5724"^^ll: .
 

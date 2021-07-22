@@ -11,12 +11,12 @@ tomb:t00402 a t:tombstone.n.01 ;
 t00402:a1 a t:weeping.a.02 .
 
 t00402:c1 a t:village.n.02 ;
-  :geo place:Akkerwoude2759924 ;
-  :place "AKKERWOUDE" .
+  :place place:Akkerwoude2759924 ;
+  :name "AKKERWOUDE" .
 
 t00402:c2 a t:village.n.02 ;
-  :geo place:Feanwlden2745743 ;
-  :place "VEENWOUDEN" .
+  :place place:Feanwlden2745743 ;
+  :name "VEENWOUDEN" .
 
 t00402:p1 a t:female.n.02 ;
   :dob "1881-12-30" ;
@@ -36,16 +36,19 @@ t00402:s1 a t:willow.n.01 ;
   :att t00402:a1 .
 
 t00402:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00402.jpg" ;
-  :date "2019-10-26T14:46:17"^^xsd:dateTime ;
-  geo:lat 53.2518 ;
-  geo:long 6.1448 ;
+  dcterms:date "2019-10-26T14:46:17"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2518 ;
+    geo:long 6.1448
+  ] ;
   :nd "+53.2518+006.1448"^^ll: .
 

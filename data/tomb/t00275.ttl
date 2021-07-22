@@ -9,12 +9,12 @@ tomb:t00275 a t:tombstone.n.01 ;
   :sym t00275:s1 .
 
 t00275:c1 a t:municipality.n.01 ;
-  :geo place:GemeenteDantumadiel2757834 ;
-  :place "DANTUMADEEL" .
+  :place place:GemeenteDantumadiel2757834 ;
+  :name "DANTUMADEEL" .
 
 t00275:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00275:p1 a t:male.n.02 ;
   :dob "1869-02-10" ;
@@ -41,16 +41,19 @@ t00275:r2 a t:widower.n.01 ;
 t00275:s1 a t:frond.n.01 .
 
 t00275:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00275.jpg" ;
-  :date "2019-10-14T10:54:32"^^xsd:dateTime ;
-  geo:lat 53.2228 ;
-  geo:long 6.6376 ;
+  dcterms:date "2019-10-14T10:54:32"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2228 ;
+    geo:long 6.6376
+  ] ;
   :nd "+53.2228+006.6376"^^ll: .
 

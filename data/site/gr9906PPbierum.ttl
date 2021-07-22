@@ -1,6 +1,6 @@
 site:gr9906PPbierum a t:burial_site.n.01 ;
   :sitename "Sebastiaankerk, Bierum" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Kerkstraat 1" ;
     schema:addressLocality "Bierum" ;
@@ -8,8 +8,11 @@ site:gr9906PPbierum a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9906 PP"
   ] ;
-  geo:lat 53.3811 ;
-  geo:long 6.8597 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3811 ;
+    geo:long 6.8597
+  ] ;
   :nd "+53.3811+006.8597"^^ll: .
 
 

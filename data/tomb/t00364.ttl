@@ -8,12 +8,12 @@ tomb:t00364 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER" .
 
 t00364:c1 a t:village.n.02 ;
-  :geo place:Kropswolde2752217 ;
-  :place "KROPSWOLDE" .
+  :place place:Kropswolde2752217 ;
+  :name "KROPSWOLDE" .
 
 t00364:c2 a t:village.n.02 ;
-  :geo place:Tynaarlo2746038 ;
-  :place "TYNAARLOO" .
+  :place place:Tynaarlo2746038 ;
+  :name "TYNAARLOO" .
 
 t00364:p1 a t:male.n.02 ;
   :dob "1852-04-05" ;
@@ -39,16 +39,19 @@ t00364:r2 a t:husband.n.01 ;
 t00364:r3 a t:father.n.01 .
 
 t00364:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00364.jpg" ;
-  :date "2019-10-25T17:28:46"^^xsd:dateTime ;
-  geo:lat 53.0798 ;
-  geo:long 6.5715 ;
+  dcterms:date "2019-10-25T17:28:46"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0798 ;
+    geo:long 6.5715
+  ] ;
   :nd "+53.0798+006.5715"^^ll: .
 

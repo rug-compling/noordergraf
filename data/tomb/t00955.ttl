@@ -11,8 +11,8 @@ tomb:t00955 a t:tombstone.n.01 ;
 t00955:a1 a t:weeping.a.02 .
 
 t00955:c1 a t:village.n.02 ;
-  :geo place:Glimmen2755495 ;
-  :place "GLIMMEN" .
+  :place place:Glimmen2755495 ;
+  :name "GLIMMEN" .
 
 t00955:p1 a t:male.n.02 ;
   :dob "1831-03-20" ;
@@ -32,16 +32,19 @@ t00955:s1 a t:willow.n.01 ;
   :att t00955:a1 .
 
 t00955:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00955.jpg" ;
-  :date "2020-03-25T09:23:17"^^xsd:dateTime ;
-  geo:lat 53.1202 ;
-  geo:long 6.6592 ;
+  dcterms:date "2020-03-25T09:23:17"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1202 ;
+    geo:long 6.6592
+  ] ;
   :nd "+53.1202+006.6592"^^ll: .
 

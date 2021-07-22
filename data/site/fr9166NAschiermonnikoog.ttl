@@ -1,6 +1,6 @@
 site:fr9166NAschiermonnikoog a t:burial_site.n.01 ;
   :sitename "Hundlingiuspad, Schiermonnikoog" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Dominee H.W. Hundlingiuspad 8" ;
     schema:addressLocality "Schiermonnikoog" ;
@@ -8,8 +8,11 @@ site:fr9166NAschiermonnikoog a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9166 NA"
   ] ;
-  geo:lat 53.4791 ;
-  geo:long 6.1605 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4791 ;
+    geo:long 6.1605
+  ] ;
   :nd "+53.4791+006.1605"^^ll: .
 
 

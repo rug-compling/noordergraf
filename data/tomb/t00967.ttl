@@ -10,8 +10,8 @@ tomb:t00967 a t:tombstone.n.01 ;
 t00967:a1 a t:weeping.a.02 .
 
 t00967:c1 a t:village.n.02 ;
-  :geo place:Onnen2749588 ;
-  :place "ONNEN" .
+  :place place:Onnen2749588 ;
+  :name "ONNEN" .
 
 t00967:p1 a t:male.n.02 ;
   :dob "1864-07-07" ;
@@ -31,16 +31,19 @@ t00967:s1 a t:willow.n.01 ;
   :att t00967:a1 .
 
 t00967:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00967.jpg" ;
-  :date "2020-03-27T16:57:53"^^xsd:dateTime ;
-  geo:lat 53.1622 ;
-  geo:long 6.6135 ;
+  dcterms:date "2020-03-27T16:57:53"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1622 ;
+    geo:long 6.6135
+  ] ;
   :nd "+53.1622+006.6135"^^ll: .
 

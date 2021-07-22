@@ -16,16 +16,16 @@ t00647:b1 a t:John.n.05 ;
   :prt t00647:c4 .
 
 t00647:c1 a t:village.n.02 ;
-  :geo place:Harkstede2754819 ;
-  :place "HARKSTEDE" .
+  :place place:Harkstede2754819 ;
+  :name "HARKSTEDE" .
 
 t00647:c2 a t:village.n.02 ;
-  :geo place:Foxhol2755853 ;
-  :place "FOXHOL" .
+  :place place:Foxhol2755853 ;
+  :name "FOXHOL" .
 
 t00647:c3 a t:village.n.02 ;
-  :geo place:Engelbert2756097 ;
-  :place "ENGELBERT" .
+  :place place:Engelbert2756097 ;
+  :name "ENGELBERT" .
 
 t00647:c4 a t:chapter.n.01 ;
   :ord 11 ;
@@ -57,16 +57,19 @@ t00647:v1 a t:verse.n.01 ;
   :ord 25 .
 
 t00647:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00647.jpg" ;
-  :date "2019-12-08T11:18:14"^^xsd:dateTime ;
-  geo:lat 53.2089 ;
-  geo:long 6.6480 ;
+  dcterms:date "2019-12-08T11:18:14"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2089 ;
+    geo:long 6.6480
+  ] ;
   :nd "+53.2089+006.6480"^^ll: .
 

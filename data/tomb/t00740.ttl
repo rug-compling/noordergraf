@@ -13,16 +13,16 @@ tomb:t00740 a t:tombstone.n.01 ;
 t00740:a1 a t:weeping.a.02 .
 
 t00740:c1 a t:village.n.02 ;
-  :geo place:Westerlee2744715 ;
-  :place "WESTERLEE" .
+  :place place:Westerlee2744715 ;
+  :name "WESTERLEE" .
 
 t00740:c2 a t:village.n.02 ;
-  :geo place:Scheemda2747661 ;
-  :place "SCHEEMDA" .
+  :place place:Scheemda2747661 ;
+  :name "SCHEEMDA" .
 
 t00740:c3 a t:village.n.02 ;
-  :geo place:Wagenborgen2745090 ;
-  :place "WAGENBORGEN" .
+  :place place:Wagenborgen2745090 ;
+  :name "WAGENBORGEN" .
 
 t00740:p1 a t:female.n.02 ;
   :dob "1825-07-18" ;
@@ -57,16 +57,19 @@ t00740:s2 a t:willow.n.01 ;
 t00740:s3 a t:scythe.n.01 .
 
 t00740:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00740.jpg" ;
-  :date "2019-12-29T10:20:49"^^xsd:dateTime ;
-  geo:lat 53.1806 ;
-  geo:long 6.9690 ;
+  dcterms:date "2019-12-29T10:20:49"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1806 ;
+    geo:long 6.9690
+  ] ;
   :nd "+53.1806+006.9690"^^ll: .
 

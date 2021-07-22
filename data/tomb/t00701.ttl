@@ -10,8 +10,8 @@ tomb:t00701 a t:tombstone.n.01 ;
 t00701:a1 a t:weeping.a.02 .
 
 t00701:c1 a t:village.n.02 ;
-  :geo place:Noordbarge2749996 ;
-  :place "NOORDBARGE" .
+  :place place:Noordbarge2749996 ;
+  :name "NOORDBARGE" .
 
 t00701:p1 a t:male.n.02 ;
   :dob "1870-02-12" ;
@@ -24,16 +24,19 @@ t00701:s1 a t:willow.n.01 ;
   :att t00701:a1 .
 
 t00701:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00701.jpg" ;
-  :date "2019-12-21T13:51:57"^^xsd:dateTime ;
-  geo:lat 52.7813 ;
-  geo:long 6.9011 ;
+  dcterms:date "2019-12-21T13:51:57"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7813 ;
+    geo:long 6.9011
+  ] ;
   :nd "+52.7813+006.9011"^^ll: .
 

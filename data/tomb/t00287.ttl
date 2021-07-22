@@ -7,12 +7,12 @@ tomb:t00287 a t:tombstone.n.01 ;
        t00287:p2 .
 
 t00287:c1 a t:village.n.02 ;
-  :geo place:tZandt2746027 ;
-  :place "'T ZANDT" .
+  :place place:tZandt2746027 ;
+  :name "'T ZANDT" .
 
 t00287:c2 a t:village.n.02 ;
-  :geo place:Oosternieland2749429 ;
-  :place "OOSTERNIELAND" .
+  :place place:Oosternieland2749429 ;
+  :name "OOSTERNIELAND" .
 
 t00287:p1 a t:male.n.02 ;
   :dob "1827-12-20" ;
@@ -29,16 +29,19 @@ t00287:r1 a t:spouse.n.01 ;
   :tgt t00287:p2 .
 
 t00287:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00287.jpg" ;
-  :date "2019-10-16T16:48:20"^^xsd:dateTime ;
-  geo:lat 53.4041 ;
-  geo:long 6.7488 ;
+  dcterms:date "2019-10-16T16:48:20"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4041 ;
+    geo:long 6.7488
+  ] ;
   :nd "+53.4041+006.7488"^^ll: .
 

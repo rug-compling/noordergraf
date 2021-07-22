@@ -10,12 +10,12 @@ tomb:t00413 a t:tombstone.n.01 ;
   :sym t00413:s1 .
 
 t00413:c1 a t:village.n.02 ;
-  :geo place:Smilde2747076 ;
-  :place "SMILDE" .
+  :place place:Smilde2747076 ;
+  :name "SMILDE" .
 
 t00413:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00413:g1 a t:group.n.01 ;
   :mem t00413:p2 ,
@@ -45,16 +45,19 @@ t00413:r2 a t:brother.n.01 .
 t00413:s1 a t:frond.n.01 .
 
 t00413:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00413.jpg" ;
-  :date "2019-10-25T17:12:25"^^xsd:dateTime ;
-  geo:lat 53.0793 ;
-  geo:long 6.5717 ;
+  dcterms:date "2019-10-25T17:12:25"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0793 ;
+    geo:long 6.5717
+  ] ;
   :nd "+53.0793+006.5717"^^ll: .
 

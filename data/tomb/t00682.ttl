@@ -17,32 +17,32 @@ t00682:b1 a t:Revelation.n.04 ;
   :prt t00682:c5 .
 
 t00682:c1 a t:village.n.02 ;
-  :geo place:Abbega2760080 ;
-  :place "ABBEGA" .
+  :place place:Abbega2760080 ;
+  :name "ABBEGA" .
 
 t00682:c2 a t:city.n.01 ;
-  :geo place:Bolsward2758682 ;
-  :place "BOLSWARD" .
+  :place place:Bolsward2758682 ;
+  :name "BOLSWARD" .
 
 t00682:c3 a t:village.n.02 ;
-  :geo place:Arum2759652 ;
-  :place "ARUM" .
+  :place place:Arum2759652 ;
+  :name "ARUM" .
 
 t00682:c4 a t:city.n.01 ;
-  :geo place:Assen2759633 ;
-  :place "ASSEN" .
+  :place place:Assen2759633 ;
+  :name "ASSEN" .
 
 t00682:c5 a t:chapter.n.01 ;
   :ord 14 ;
   :prt t00682:v2 .
 
 t00682:c6 a t:town.n.01 ;
-  :geo place:Bodegraven2758765 ;
-  :place "BODEGRAVEN" .
+  :place place:Bodegraven2758765 ;
+  :name "BODEGRAVEN" .
 
 t00682:c7 a t:city.n.01 ;
-  :geo place:Heerenveen2754669 ;
-  :place "HEERENVEEN" .
+  :place place:Heerenveen2754669 ;
+  :name "HEERENVEEN" .
 
 t00682:g1 a t:group.n.01 ;
   :mem t00682:p1 ,
@@ -84,16 +84,19 @@ t00682:v2 a t:verse.n.01 ;
   :ord 13 .
 
 t00682:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00682.jpg" ;
-  :date "2019-12-14T13:25:57"^^xsd:dateTime ;
-  geo:lat 53.0686 ;
-  geo:long 5.5224 ;
+  dcterms:date "2019-12-14T13:25:57"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0686 ;
+    geo:long 5.5224
+  ] ;
   :nd "+53.0686+005.5224"^^ll: .
 

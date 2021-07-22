@@ -13,12 +13,12 @@ tomb:t00833 a t:tombstone.n.01 ;
 t00833:a1 a t:weeping.a.02 .
 
 t00833:c1 a t:village.n.02 ;
-  :geo place:Dalen2757857 ;
-  :place "DALEN" .
+  :place place:Dalen2757857 ;
+  :name "DALEN" .
 
 t00833:c2 a t:town.n.01 ;
-  :geo place:Holslootbrug ;
-  :place "HOLSLOOTBRUG" .
+  :place place:Holslootbrug ;
+  :name "HOLSLOOTBRUG" .
 
 t00833:p1 a t:male.n.02 ;
   :dob "1876-10-13" ;
@@ -42,16 +42,19 @@ t00833:s1 a t:willow.n.01 ;
   :att t00833:a1 .
 
 t00833:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00833.jpg" ;
-  :date "2020-02-15T15:44:06"^^xsd:dateTime ;
-  geo:lat 52.7763 ;
-  geo:long 6.8049 ;
+  dcterms:date "2020-02-15T15:44:06"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7763 ;
+    geo:long 6.8049
+  ] ;
   :nd "+52.7763+006.8049"^^ll: .
 

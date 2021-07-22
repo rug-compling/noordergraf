@@ -9,8 +9,8 @@ tomb:t00700 a t:tombstone.n.01 ;
        "RUST ZACHT LIEVE MOEDER"@nld .
 
 t00700:c1 a t:town.n.01 ;
-  :geo place:Emmen2756136 ;
-  :place "EMMEN" .
+  :place place:Emmen2756136 ;
+  :name "EMMEN" .
 
 t00700:p1 a t:male.n.02 ;
   :dob "1859-09-03" ;
@@ -46,16 +46,19 @@ t00700:r4 a t:widow.n.01 ;
 t00700:r5 a t:mother.n.01 .
 
 t00700:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00700.jpg" ;
-  :date "2019-12-21T13:53:13"^^xsd:dateTime ;
-  geo:lat 52.7813 ;
-  geo:long 6.9010 ;
+  dcterms:date "2019-12-21T13:53:13"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7813 ;
+    geo:long 6.9010
+  ] ;
   :nd "+52.7813+006.9010"^^ll: .
 

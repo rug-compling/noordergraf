@@ -8,8 +8,8 @@ tomb:t00222 a t:tombstone.n.01 ;
   :sym t00222:s1 .
 
 t00222:c1 a t:hamlet.n.03 ;
-  :geo place:Euvelgunne2755982 ;
-  :place "EUVELGUNNE" .
+  :place place:Euvelgunne2755982 ;
+  :name "EUVELGUNNE" .
 
 t00222:p1 a t:male.n.02 ;
   :dob "1845-03-19" ;
@@ -28,16 +28,19 @@ t00222:r1 a t:spouse.n.01 ;
 t00222:s1 a t:horse.n.01 .
 
 t00222:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00222.jpg" ;
-  :date "2019-10-08T14:42:40"^^xsd:dateTime ;
-  geo:lat 53.2225 ;
-  geo:long 6.6367 ;
+  dcterms:date "2019-10-08T14:42:40"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2225 ;
+    geo:long 6.6367
+  ] ;
   :nd "+53.2225+006.6367"^^ll: .
 

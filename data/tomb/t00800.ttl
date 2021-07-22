@@ -13,8 +13,8 @@ t00800:b1 a t:Revelation.n.04 ;
   :prt t00800:c2 .
 
 t00800:c1 a t:village.n.02 ;
-  :geo place:TenBoer2746491 ;
-  :place "TEN BOER" .
+  :place place:TenBoer2746491 ;
+  :name "TEN BOER" .
 
 t00800:c2 a t:chapter.n.01 ;
   :ord 14 ;
@@ -45,16 +45,19 @@ t00800:v1 a t:verse.n.01 ;
   :ord 13 .
 
 t00800:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00800.jpg" ;
-  :date "2020-01-18T12:44:40"^^xsd:dateTime ;
-  geo:lat 53.2778 ;
-  geo:long 6.6936 ;
+  dcterms:date "2020-01-18T12:44:40"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2778 ;
+    geo:long 6.6936
+  ] ;
   :nd "+53.2778+006.6936"^^ll: .
 

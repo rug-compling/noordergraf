@@ -10,12 +10,12 @@ tomb:t00313 a t:tombstone.n.01 ;
 t00313:a1 a t:weeping.a.02 .
 
 t00313:c1 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00313:c2 a t:city.n.01 ;
-  :geo place:Zwolle2743477 ;
-  :place "ZWOLLE" .
+  :place place:Zwolle2743477 ;
+  :name "ZWOLLE" .
 
 t00313:p1 a t:male.n.02 ;
   :dob "1862-04-16" ;
@@ -51,16 +51,19 @@ t00313:s1 a t:willow.n.01 ;
   :att t00313:a1 .
 
 t00313:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00313.jpg" ;
-  :date "2019-10-19T14:16:16"^^xsd:dateTime ;
-  geo:lat 52.7156 ;
-  geo:long 6.4734 ;
+  dcterms:date "2019-10-19T14:16:16"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7156 ;
+    geo:long 6.4734
+  ] ;
   :nd "+52.7156+006.4734"^^ll: .
 

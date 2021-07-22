@@ -17,23 +17,26 @@ t00091:p2 a t:male.n.02 ;
   :nam "ADRIANUS N. WITLOKS" .
 
 t00091:r1 a t:widow.n.01 ;
-  :beg "XX-XX-1932" ;
+  :beg "1932-12-07" ;
   :tgt t00091:p2 .
 
 t00091:r2 a t:mother.n.01 ;
   :att "LIEVE" .
 
 t00091:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00091.jpg" ;
-  :date "2019-09-25T11:20:39"^^xsd:dateTime ;
-  geo:lat 53.2033 ;
-  geo:long 6.5725 ;
+  dcterms:date "2019-09-25T11:20:39"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2033 ;
+    geo:long 6.5725
+  ] ;
   :nd "+53.2033+006.5725"^^ll: .
 

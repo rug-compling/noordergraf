@@ -8,16 +8,16 @@ tomb:t00906 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00906:c1 a t:village.n.02 ;
-  :geo place:Tolbert2746234 ;
-  :place "TOLBERT" .
+  :place place:Tolbert2746234 ;
+  :name "TOLBERT" .
 
 t00906:c2 a t:village.n.02 ;
-  :geo place:Zuidhorn2743694 ;
-  :place "ZUIDHORN" .
+  :place place:Zuidhorn2743694 ;
+  :name "ZUIDHORN" .
 
 t00906:c3 a t:village.n.02 ;
-  :geo place:Roden2748026 ;
-  :place "RODEN" .
+  :place place:Roden2748026 ;
+  :name "RODEN" .
 
 t00906:p1 a t:male.n.02 ;
   :dob "1870-10-01" ;
@@ -38,16 +38,19 @@ t00906:r1 a t:spouse.n.01 ;
   :tgt t00906:p2 .
 
 t00906:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00906.jpg" ;
-  :date "2020-03-07T14:20:54"^^xsd:dateTime ;
-  geo:lat 53.1724 ;
-  geo:long 6.3652 ;
+  dcterms:date "2020-03-07T14:20:54"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1724 ;
+    geo:long 6.3652
+  ] ;
   :nd "+53.1724+006.3652"^^ll: .
 

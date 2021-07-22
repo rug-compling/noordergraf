@@ -1,6 +1,6 @@
 site:gr9801CAzuidhorn a t:burial_site.n.01 ;
   :sitename "Klinckemalaan, Zuidhorn" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Klinckemalaan 25" ;
     schema:addressLocality "Zuidhorn" ;
@@ -8,8 +8,11 @@ site:gr9801CAzuidhorn a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9801 CA"
   ] ;
-  geo:lat 53.2395 ;
-  geo:long 6.4103 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2395 ;
+    geo:long 6.4103
+  ] ;
   :nd "+53.2395+006.4103"^^ll: .
 
 

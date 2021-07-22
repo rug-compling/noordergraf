@@ -11,12 +11,12 @@ tomb:t01098 a t:tombstone.n.01 ;
 t01098:a1 a t:weeping.a.02 .
 
 t01098:c1 a t:village.n.02 ;
-  :geo place:Nieuwolda2750154 ;
-  :place "NIEUWOLDA" .
+  :place place:Nieuwolda2750154 ;
+  :name "NIEUWOLDA" .
 
 t01098:c2 a t:village.n.02 ;
-  :geo place:Siddeburen2747343 ;
-  :place "SIDDEBUREN" .
+  :place place:Siddeburen2747343 ;
+  :name "SIDDEBUREN" .
 
 t01098:p1 a t:male.n.02 ;
   :dob "1830-01-20" ;
@@ -43,16 +43,19 @@ t01098:s2 a t:willow.n.01 ;
 t01098:s3 a t:obelisk.n.01 .
 
 t01098:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01098.jpg" ;
-  :date "2020-09-19T13:02:55"^^xsd:dateTime ;
-  geo:lat 53.2475 ;
-  geo:long 6.8646 ;
+  dcterms:date "2020-09-19T13:02:55"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2475 ;
+    geo:long 6.8646
+  ] ;
   :nd "+53.2475+006.8646"^^ll: .
 

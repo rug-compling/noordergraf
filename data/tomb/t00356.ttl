@@ -11,12 +11,12 @@ tomb:t00356 a t:tombstone.n.01 ;
 t00356:a1 a t:weeping.a.02 .
 
 t00356:c1 a t:village.n.02 ;
-  :geo place:Norg2749796 ;
-  :place "NORG" .
+  :place place:Norg2749796 ;
+  :name "NORG" .
 
 t00356:c2 a t:town.n.01 ;
-  :geo place:Vries2745189 ;
-  :place "VRIES" .
+  :place place:Vries2745189 ;
+  :name "VRIES" .
 
 t00356:p1 a t:male.n.02 ;
   :dob "1870-05-26" ;
@@ -39,16 +39,19 @@ t00356:s1 a t:willow.n.01 ;
   :att t00356:a1 .
 
 t00356:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00356.jpg" ;
-  :date "2019-10-25T17:34:58"^^xsd:dateTime ;
-  geo:lat 53.0841 ;
-  geo:long 6.5726 ;
+  dcterms:date "2019-10-25T17:34:58"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0841 ;
+    geo:long 6.5726
+  ] ;
   :nd "+53.0841+006.5726"^^ll: .
 

@@ -11,8 +11,8 @@ tomb:t00346 a t:tombstone.n.01 ;
 t00346:a1 a t:weeping.a.02 .
 
 t00346:c1 a t:village.n.02 ;
-  :geo place:Bunne2758108 ;
-  :place "BUNNE" .
+  :place place:Bunne2758108 ;
+  :name "BUNNE" .
 
 t00346:p1 a t:male.n.02 ;
   :dob "1856-04-20" ;
@@ -40,16 +40,19 @@ t00346:s1 a t:willow.n.01 ;
   :att t00346:a1 .
 
 t00346:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00346.jpg" ;
-  :date "2019-10-25T17:42:23"^^xsd:dateTime ;
-  geo:lat 53.0799 ;
-  geo:long 6.5726 ;
+  dcterms:date "2019-10-25T17:42:23"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0799 ;
+    geo:long 6.5726
+  ] ;
   :nd "+53.0799+006.5726"^^ll: .
 

@@ -10,12 +10,12 @@ tomb:t00288 a t:tombstone.n.01 ;
 t00288:a1 a t:weeping.a.02 .
 
 t00288:c1 a t:village.n.02 ;
-  :geo place:Westernieland2744707 ;
-  :place "WESTERNIELAND" .
+  :place place:Westernieland2744707 ;
+  :name "WESTERNIELAND" .
 
 t00288:c2 a t:village.n.02 ;
-  :geo place:Uithuizermeeden2745968 ;
-  :place "UITHUIZERMEEDEN" .
+  :place place:Uithuizermeeden2745968 ;
+  :name "UITHUIZERMEEDEN" .
 
 t00288:p1 a t:female.n.02 ;
   :dob "1843-10-25" ;
@@ -35,16 +35,19 @@ t00288:s1 a t:willow.n.01 ;
   :att t00288:a1 .
 
 t00288:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00288.jpg" ;
-  :date "2019-10-16T16:48:52"^^xsd:dateTime ;
-  geo:lat 53.4040 ;
-  geo:long 6.7489 ;
+  dcterms:date "2019-10-16T16:48:52"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4040 ;
+    geo:long 6.7489
+  ] ;
   :nd "+53.4040+006.7489"^^ll: .
 

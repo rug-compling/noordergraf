@@ -9,8 +9,8 @@ tomb:t00367 a t:tombstone.n.01 ;
   :sym t00367:s1 .
 
 t00367:c1 a t:village.n.02 ;
-  :geo place:Tynaarlo2746038 ;
-  :place "TYNAARLO" .
+  :place place:Tynaarlo2746038 ;
+  :name "TYNAARLO" .
 
 t00367:p1 a t:female.n.02 ;
   :dob "1893-02-22" ;
@@ -34,16 +34,19 @@ t00367:r1 a t:spouse.n.01 ;
 t00367:s1 a t:frond.n.01 .
 
 t00367:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00367.jpg" ;
-  :date "2019-10-25T17:25:36"^^xsd:dateTime ;
-  geo:lat 53.0797 ;
-  geo:long 6.5714 ;
+  dcterms:date "2019-10-25T17:25:36"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0797 ;
+    geo:long 6.5714
+  ] ;
   :nd "+53.0797+006.5714"^^ll: .
 

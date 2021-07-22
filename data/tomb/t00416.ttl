@@ -10,20 +10,20 @@ tomb:t00416 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE OUDERS" .
 
 t00416:c1 a t:village.n.02 ;
-  :geo place:Yde2744130 ;
-  :place "YDE" .
+  :place place:Yde2744130 ;
+  :name "YDE" .
 
 t00416:c2 a t:city.n.01 ;
-  :geo place:Rotterdam2747891 ;
-  :place "ROTTERDAM" .
+  :place place:Rotterdam2747891 ;
+  :name "ROTTERDAM" .
 
 t00416:c3 a t:village.n.02 ;
-  :geo place:Zeyen2743985 ;
-  :place "ZEIJEN" .
+  :place place:Zeyen2743985 ;
+  :name "ZEIJEN" .
 
 t00416:c4 a t:city.n.01 ;
-  :geo place:Veendam2745783 ;
-  :place "VEENDAM" .
+  :place place:Veendam2745783 ;
+  :name "VEENDAM" .
 
 t00416:p1 a t:male.n.02 ;
   :dob "1880-11-26" ;
@@ -63,16 +63,19 @@ t00416:t2 a t:tombstone.n.01 ;
   :rol t00416:r4 .
 
 t00416:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00416.jpg" ;
-  :date "2019-10-25T17:03:24"^^xsd:dateTime ;
-  geo:lat 53.0790 ;
-  geo:long 6.5726 ;
+  dcterms:date "2019-10-25T17:03:24"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0790 ;
+    geo:long 6.5726
+  ] ;
   :nd "+53.0790+006.5726"^^ll: .
 

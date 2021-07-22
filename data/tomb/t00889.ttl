@@ -8,8 +8,8 @@ tomb:t00889 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00889:c1 a t:village.n.02 ;
-  :geo place:Noordwolde2749806 ;
-  :place "NOORDWOLDE" .
+  :place place:Noordwolde2749806 ;
+  :name "NOORDWOLDE" .
 
 t00889:o1 a t:preacher.n.01 ;
   :hco "14120" ;
@@ -36,16 +36,19 @@ t00889:r2 a t:spouse.n.01 ;
   :tgt t00889:p1 .
 
 t00889:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00889.jpg" ;
-  :date "2020-02-01T12:15:32"^^xsd:dateTime ;
-  geo:lat 53.2305 ;
-  geo:long 6.5519 ;
+  dcterms:date "2020-02-01T12:15:32"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2305 ;
+    geo:long 6.5519
+  ] ;
   :nd "+53.2305+006.5519"^^ll: .
 

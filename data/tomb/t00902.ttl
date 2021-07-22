@@ -12,16 +12,16 @@ tomb:t00902 a t:tombstone.n.01 ;
        t00902:s2 .
 
 t00902:c1 a t:hamlet.n.03 ;
-  :geo place:Diepswal2756869 ;
-  :place "DIEPSWAL" .
+  :place place:Diepswal2756869 ;
+  :name "DIEPSWAL" .
 
 t00902:c2 a t:city.n.01 ;
-  :geo place:Rotterdam2747891 ;
-  :place "ROTTERDAM" .
+  :place place:Rotterdam2747891 ;
+  :name "ROTTERDAM" .
 
 t00902:c3 a t:city.n.01 ;
-  :geo place:Enschede2756071 ;
-  :place "ENSCHEDE" .
+  :place place:Enschede2756071 ;
+  :name "ENSCHEDE" .
 
 t00902:p1 a t:female.n.02 ;
   :dob "1891-05-05" ;
@@ -42,16 +42,19 @@ t00902:s1 a t:cross.n.03 .
 t00902:s2 a t:frond.n.01 .
 
 t00902:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00902.jpg" ;
-  :date "2020-03-07T14:23:56"^^xsd:dateTime ;
-  geo:lat 53.1718 ;
-  geo:long 6.3658 ;
+  dcterms:date "2020-03-07T14:23:56"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1718 ;
+    geo:long 6.3658
+  ] ;
   :nd "+53.1718+006.3658"^^ll: .
 

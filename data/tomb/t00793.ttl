@@ -12,12 +12,12 @@ tomb:t00793 a t:tombstone.n.01 ;
        t00793:s4 .
 
 t00793:c1 a t:village.n.02 ;
-  :geo place:Schildwolde2747570 ;
-  :place "SCHILDWOLDE" .
+  :place place:Schildwolde2747570 ;
+  :name "SCHILDWOLDE" .
 
 t00793:c2 a t:village.n.02 ;
-  :geo place:TenBoer2746491 ;
-  :place "TEN BOER" .
+  :place place:TenBoer2746491 ;
+  :name "TEN BOER" .
 
 t00793:p1 a t:male.n.02 ;
   :dob "1840-02-08" ;
@@ -42,16 +42,19 @@ t00793:s3 a t:frond.n.01 .
 t00793:s4 a t:ribbon.n.01 .
 
 t00793:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00793.jpg" ;
-  :date "2020-01-18T13:07:17"^^xsd:dateTime ;
-  geo:lat 53.2776 ;
-  geo:long 6.6937 ;
+  dcterms:date "2020-01-18T13:07:17"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2776 ;
+    geo:long 6.6937
+  ] ;
   :nd "+53.2776+006.6937"^^ll: .
 

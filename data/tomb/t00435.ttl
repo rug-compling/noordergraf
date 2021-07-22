@@ -9,8 +9,8 @@ tomb:t00435 a t:tombstone.n.01 ;
   :sym t00435:s1 .
 
 t00435:c1 a t:island.n.01 ;
-  :geo place:Schiermonnikoog2747591 ;
-  :place "SCHIERMONNIKOOG" .
+  :place place:Schiermonnikoog2747591 ;
+  :name "SCHIERMONNIKOOG" .
 
 t00435:p1 a t:male.n.02 ;
   :dob "1866-07-08" ;
@@ -40,16 +40,19 @@ t00435:r4 a t:spouse.n.01 ;
 t00435:s1 a t:frond.n.01 .
 
 t00435:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00435.jpg" ;
-  :date "2019-11-02T11:50:34"^^xsd:dateTime ;
-  geo:lat 53.4789 ;
-  geo:long 6.1605 ;
+  dcterms:date "2019-11-02T11:50:34"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4789 ;
+    geo:long 6.1605
+  ] ;
   :nd "+53.4789+006.1605"^^ll: .
 

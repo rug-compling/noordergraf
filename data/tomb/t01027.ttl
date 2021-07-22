@@ -51,16 +51,19 @@ t01027:v1 a t:verse.n.01 ;
   :ord 7 .
 
 t01027:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01027.jpg" ;
-  :date "2020-04-17T18:28:50"^^xsd:dateTime ;
-  geo:lat 53.3809 ;
-  geo:long 6.8595 ;
+  dcterms:date "2020-04-17T18:28:50"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3809 ;
+    geo:long 6.8595
+  ] ;
   :nd "+53.3809+006.8595"^^ll: .
 

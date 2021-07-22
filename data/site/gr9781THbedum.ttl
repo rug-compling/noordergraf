@@ -1,6 +1,6 @@
 site:gr9781THbedum a t:burial_site.n.01 ;
   :sitename "Klokkentoren Westerdijkshorn" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Westerdijkshorn" ;
     schema:addressLocality "Bedum" ;
@@ -8,8 +8,11 @@ site:gr9781THbedum a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9781 TH"
   ] ;
-  geo:lat 53.3085 ;
-  geo:long 6.5756 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3085 ;
+    geo:long 6.5756
+  ] ;
   :nd "+53.3085+006.5756"^^ll: .
 
 

@@ -46,16 +46,19 @@ t00025:r3 a t:daughter.n.01 ;
   :tgt t00025:g1 .
 
 t00025:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00025.jpg" ;
-  :date "2019-09-25T16:24:55"^^xsd:dateTime ;
-  geo:lat 53.1910 ;
-  geo:long 6.5941 ;
+  dcterms:date "2019-09-25T16:24:55"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1910 ;
+    geo:long 6.5941
+  ] ;
   :nd "+53.1910+006.5941"^^ll: .
 

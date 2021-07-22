@@ -56,16 +56,19 @@ t00666:v2 a t:verse.n.01 ;
   :prt t00666:v1 .
 
 t00666:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00666.jpg" ;
-  :date "2019-12-14T13:53:35"^^xsd:dateTime ;
-  geo:lat 53.0688 ;
-  geo:long 5.5239 ;
+  dcterms:date "2019-12-14T13:53:35"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0688 ;
+    geo:long 5.5239
+  ] ;
   :nd "+53.0688+005.5239"^^ll: .
 

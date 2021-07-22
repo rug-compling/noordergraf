@@ -1,6 +1,6 @@
 site:gr9751XCharen a t:burial_site.n.01 ;
   :sitename "Harenerhof, Haren" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "De Harenerhof 1" ;
     schema:addressLocality "Haren" ;
@@ -8,7 +8,10 @@ site:gr9751XCharen a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9751 XC"
   ] ;
-  geo:lat 53.1613 ;
-  geo:long 6.6196 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1613 ;
+    geo:long 6.6196
+  ] ;
   :nd "+53.1613+006.6196"^^ll: .
 

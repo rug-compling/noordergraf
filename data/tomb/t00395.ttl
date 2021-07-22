@@ -9,16 +9,16 @@ tomb:t00395 a t:tombstone.n.01 ;
        "PSALM 43:3" .
 
 t00395:c1 a t:village.n.02 ;
-  :geo place:Aldeboarn2749669 ;
-  :place "OLDEBOORN" .
+  :place place:Aldeboarn2749669 ;
+  :name "OLDEBOORN" .
 
 t00395:c2 a t:city.n.01 ;
-  :geo place:Amsterdam2759794 ;
-  :place "AMSTERDAM" .
+  :place place:Amsterdam2759794 ;
+  :name "AMSTERDAM" .
 
 t00395:c3 a t:village.n.02 ;
-  :geo place:Metslawier2750919 ;
-  :place "METSLAWIER" .
+  :place place:Metslawier2750919 ;
+  :name "METSLAWIER" .
 
 t00395:p1 a t:male.n.02 ;
   :dob "1876-11-11" ;
@@ -49,16 +49,19 @@ t00395:r3 a t:parent.n.01 ;
 t00395:r4 a t:grandparent.n.01 .
 
 t00395:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00395.jpg" ;
-  :date "2019-10-26T14:55:31"^^xsd:dateTime ;
-  geo:lat 53.2517 ;
-  geo:long 6.1451 ;
+  dcterms:date "2019-10-26T14:55:31"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2517 ;
+    geo:long 6.1451
+  ] ;
   :nd "+53.2517+006.1451"^^ll: .
 

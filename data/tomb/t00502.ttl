@@ -9,8 +9,8 @@ tomb:t00502 a t:tombstone.n.01 ;
   :sym t00502:s1 .
 
 t00502:c1 a t:city.n.01 ;
-  :geo place:Leeuwarden2751792 ;
-  :place "LEEUWARDEN" .
+  :place place:Leeuwarden2751792 ;
+  :name "LEEUWARDEN" .
 
 t00502:c2 a t:more.r.01 ;
   :op1 t00502:m1 ;
@@ -63,16 +63,19 @@ t00502:s3 a t:ribbon.n.02 .
 t00502:u1 a t:year.n.01 .
 
 t00502:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00502.jpg" ;
-  :date "2019-11-16T13:55:16"^^xsd:dateTime ;
-  geo:lat 53.2094 ;
-  geo:long 5.7905 ;
+  dcterms:date "2019-11-16T13:55:16"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2094 ;
+    geo:long 5.7905
+  ] ;
   :nd "+53.2094+005.7905"^^ll: .
 

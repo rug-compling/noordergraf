@@ -10,12 +10,12 @@ tomb:t00546 a t:tombstone.n.01 ;
   :sym t00546:s1 .
 
 t00546:c1 a t:village.n.02 ;
-  :geo place:Bareveld2759424 ;
-  :place "BAREVELD" .
+  :place place:Bareveld2759424 ;
+  :name "BAREVELD" .
 
 t00546:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00546:p1 a t:female.n.02 ;
   :dob "1842-02-18" ;
@@ -56,16 +56,19 @@ t00546:s6 a t:olive.n.02 ;
   :prt t00546:s5 .
 
 t00546:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00546.jpg" ;
-  :date "2019-11-24T14:12:53"^^xsd:dateTime ;
-  geo:lat 53.1041 ;
-  geo:long 6.8753 ;
+  dcterms:date "2019-11-24T14:12:53"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1041 ;
+    geo:long 6.8753
+  ] ;
   :nd "+53.1041+006.8753"^^ll: .
 

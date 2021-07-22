@@ -24,16 +24,19 @@ t00456:r3 a t:grandfather.n.01 .
 t00456:s1 a t:cross.n.03 .
 
 t00456:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00456.jpg" ;
-  :date "2019-11-09T14:55:08"^^xsd:dateTime ;
-  geo:lat 53.2066 ;
-  geo:long 5.7700 ;
+  dcterms:date "2019-11-09T14:55:08"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2066 ;
+    geo:long 5.7700
+  ] ;
   :nd "+53.2066+005.7700"^^ll: .
 

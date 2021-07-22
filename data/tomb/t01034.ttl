@@ -26,16 +26,19 @@ t01034:s1 a t:frond.n.01 .
 t01034:s2 a t:ribbon.n.01 .
 
 t01034:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01034.jpg" ;
-  :date "2020-04-19T12:02:46"^^xsd:dateTime ;
-  geo:lat 53.2644 ;
-  geo:long 6.3937 ;
+  dcterms:date "2020-04-19T12:02:46"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2644 ;
+    geo:long 6.3937
+  ] ;
   :nd "+53.2644+006.3937"^^ll: .
 

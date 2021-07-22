@@ -1,6 +1,6 @@
 site:gr9951STwinsum a t:burial_site.n.01 ;
   :sitename "Ranumerweg, Winsum" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Ranumerweg" ;
     schema:addressLocality "Winsum" ;
@@ -8,8 +8,11 @@ site:gr9951STwinsum a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9951 ST"
   ] ;
-  geo:lat 53.3356 ;
-  geo:long 6.5127 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3356 ;
+    geo:long 6.5127
+  ] ;
   :nd "+53.3356+006.5127"^^ll: .
 
 

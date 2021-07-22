@@ -8,16 +8,16 @@ tomb:t00704 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00704:c1 a t:town.n.01 ;
-  :geo place:Emmen2756136 ;
-  :place "EMMEN" .
+  :place place:Emmen2756136 ;
+  :name "EMMEN" .
 
 t00704:c2 a t:city.n.01 ;
-  :geo place:Assen2759633 ;
-  :place "ASSEN" .
+  :place place:Assen2759633 ;
+  :name "ASSEN" .
 
 t00704:c3 a t:city.n.01 ;
-  :geo place:Sneek2747063 ;
-  :place "SNEEK" .
+  :place place:Sneek2747063 ;
+  :name "SNEEK" .
 
 t00704:i1 a t:bust.n.03 ;
   :thm t00704:p1 .
@@ -45,16 +45,19 @@ t00704:p1 a t:male.n.02 ;
   :pod t00704:c1 .
 
 t00704:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00704.jpg" ;
-  :date "2019-12-21T14:01:41"^^xsd:dateTime ;
-  geo:lat 52.7836 ;
-  geo:long 6.8966 ;
+  dcterms:date "2019-12-21T14:01:41"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7836 ;
+    geo:long 6.8966
+  ] ;
   :nd "+52.7836+006.8966"^^ll: .
 

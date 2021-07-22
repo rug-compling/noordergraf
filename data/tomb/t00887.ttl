@@ -10,12 +10,12 @@ tomb:t00887 a t:tombstone.n.01 ;
        t00887:s2 .
 
 t00887:c1 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00887:c2 a t:town.n.01 ;
-  :geo place:Dubbeldam2756537 ;
-  :place "DUBBELDAM" .
+  :place place:Dubbeldam2756537 ;
+  :name "DUBBELDAM" .
 
 t00887:o1 a t:soldier.n.01 ;
   :hco "58340" .
@@ -33,16 +33,19 @@ t00887:s1 a t:entity.n.01 .
 t00887:s2 a t:entity.n.01 .
 
 t00887:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00887.jpg" ;
-  :date "2020-02-15T15:45:32"^^xsd:dateTime ;
-  geo:lat 52.7767 ;
-  geo:long 6.8047 ;
+  dcterms:date "2020-02-15T15:45:32"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7767 ;
+    geo:long 6.8047
+  ] ;
   :nd "+52.7767+006.8047"^^ll: .
 

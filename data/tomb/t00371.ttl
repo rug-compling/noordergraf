@@ -8,8 +8,8 @@ tomb:t00371 a t:tombstone.n.01 ;
   :sym t00371:s1 .
 
 t00371:c1 a t:village.n.02 ;
-  :geo place:Donderen2756731 ;
-  :place "DONDEREN" .
+  :place place:Donderen2756731 ;
+  :name "DONDEREN" .
 
 t00371:p1 a t:male.n.02 ;
   :dob "1888-06-12" ;
@@ -27,16 +27,19 @@ t00371:r2 a t:uncle.n.01 .
 t00371:s1 a t:frond.n.01 .
 
 t00371:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00371.jpg" ;
-  :date "2019-10-25T17:14:26"^^xsd:dateTime ;
-  geo:lat 53.0792 ;
-  geo:long 6.5716 ;
+  dcterms:date "2019-10-25T17:14:26"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0792 ;
+    geo:long 6.5716
+  ] ;
   :nd "+53.0792+006.5716"^^ll: .
 

@@ -11,12 +11,12 @@ tomb:t00365 a t:tombstone.n.01 ;
   :sym t00365:s1 .
 
 t00365:c1 a t:village.n.02 ;
-  :geo place:Zuidlaren2743680 ;
-  :place "ZUIDLAREN" .
+  :place place:Zuidlaren2743680 ;
+  :name "ZUIDLAREN" .
 
 t00365:c2 a t:village.n.02 ;
-  :geo place:Tynaarlo2746038 ;
-  :place "TYNAARLO" .
+  :place place:Tynaarlo2746038 ;
+  :name "TYNAARLO" .
 
 t00365:g1 a t:group.n.01 ;
   :mem t00365:p2 ,
@@ -47,16 +47,19 @@ t00365:r3 a t:sister.n.01 .
 t00365:s1 a t:rose.n.01 .
 
 t00365:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00365.jpg" ;
-  :date "2019-10-25T17:27:23"^^xsd:dateTime ;
-  geo:lat 53.0799 ;
-  geo:long 6.5712 ;
+  dcterms:date "2019-10-25T17:27:23"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0799 ;
+    geo:long 6.5712
+  ] ;
   :nd "+53.0799+006.5712"^^ll: .
 

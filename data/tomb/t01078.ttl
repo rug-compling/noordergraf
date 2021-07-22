@@ -8,16 +8,16 @@ tomb:t01078 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t01078:c1 a t:village.n.02 ;
-  :geo place:Zuidbroek2743800 ;
-  :place "ZUIDBROEK" .
+  :place place:Zuidbroek2743800 ;
+  :name "ZUIDBROEK" .
 
 t01078:c2 a t:village.n.02 ;
-  :geo place:Bierum2758983 ;
-  :place "BIERUM" .
+  :place place:Bierum2758983 ;
+  :name "BIERUM" .
 
 t01078:c3 a t:village.n.02 ;
-  :geo place:Oostwold2749325 ;
-  :place "OOSTWOLD" .
+  :place place:Oostwold2749325 ;
+  :name "OOSTWOLD" .
 
 t01078:p1 a t:male.n.02 ;
   :dob "1805-10-21" ;
@@ -42,16 +42,19 @@ t01078:r2 a t:spouse.n.01 ;
   :tgt t01078:p1 .
 
 t01078:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01078.jpg" ;
-  :date "2020-04-17T18:25:26"^^xsd:dateTime ;
-  geo:lat 53.3808 ;
-  geo:long 6.8588 ;
+  dcterms:date "2020-04-17T18:25:26"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3808 ;
+    geo:long 6.8588
+  ] ;
   :nd "+53.3808+006.8588"^^ll: .
 

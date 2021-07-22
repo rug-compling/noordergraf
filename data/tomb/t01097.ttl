@@ -30,16 +30,19 @@ t01097:r1 a t:son.n.01 ;
 t01097:s1 a t:rose.n.01 .
 
 t01097:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01097.jpg" ;
-  :date "2020-09-19T13:03:32"^^xsd:dateTime ;
-  geo:lat 53.2475 ;
-  geo:long 6.8648 ;
+  dcterms:date "2020-09-19T13:03:32"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2475 ;
+    geo:long 6.8648
+  ] ;
   :nd "+53.2475+006.8648"^^ll: .
 

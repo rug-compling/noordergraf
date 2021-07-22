@@ -8,12 +8,12 @@ tomb:t00219 a t:tombstone.n.01 ;
   :sym t00219:s1 .
 
 t00219:c1 a t:hamlet.n.03 ;
-  :geo place:Euvelgunne2755982 ;
-  :place "EUVELGUNNE" .
+  :place place:Euvelgunne2755982 ;
+  :name "EUVELGUNNE" .
 
 t00219:c2 a t:village.n.02 ;
-  :geo place:Middelbert2750902 ;
-  :place "MIDDELBERT" .
+  :place place:Middelbert2750902 ;
+  :name "MIDDELBERT" .
 
 t00219:c3 a t:more.r.01 ;
   :op1 t00219:m1 ;
@@ -58,16 +58,19 @@ t00219:s3 a t:gate.n.01 .
 t00219:u1 a t:year.n.01 .
 
 t00219:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00219.jpg" ;
-  :date "2019-10-08T14:43:56"^^xsd:dateTime ;
-  geo:lat 53.2225 ;
-  geo:long 6.6367 ;
+  dcterms:date "2019-10-08T14:43:56"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2225 ;
+    geo:long 6.6367
+  ] ;
   :nd "+53.2225+006.6367"^^ll: .
 

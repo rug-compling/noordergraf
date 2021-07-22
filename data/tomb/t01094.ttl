@@ -8,16 +8,16 @@ tomb:t01094 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t01094:c1 a t:village.n.02 ;
-  :geo place:Siddeburen2747343 ;
-  :place "SIDDEBUREN" .
+  :place place:Siddeburen2747343 ;
+  :name "SIDDEBUREN" .
 
 t01094:c2 a t:hamlet.n.03 ;
-  :geo place:Wilderhof2744436 ;
-  :place "WILDERHOF" .
+  :place place:Wilderhof2744436 ;
+  :name "WILDERHOF" .
 
 t01094:c3 a t:city.n.01 ;
-  :geo place:Delfzijl2757340 ;
-  :place "DELFZIJL" .
+  :place place:Delfzijl2757340 ;
+  :name "DELFZIJL" .
 
 t01094:p1 a t:female.n.02 ;
   :dob "1898-08-04" ;
@@ -38,16 +38,19 @@ t01094:r1 a t:spouse.n.01 ;
   :tgt t01094:p2 .
 
 t01094:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01094.jpg" ;
-  :date "2020-09-19T15:00:11"^^xsd:dateTime ;
-  geo:lat 53.2437 ;
-  geo:long 6.8640 ;
+  dcterms:date "2020-09-19T15:00:11"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2437 ;
+    geo:long 6.8640
+  ] ;
   :nd "+53.2437+006.8640"^^ll: .
 

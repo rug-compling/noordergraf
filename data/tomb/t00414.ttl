@@ -9,20 +9,20 @@ tomb:t00414 a t:tombstone.n.01 ;
   :sym t00414:s1 .
 
 t00414:c1 a t:village.n.02 ;
-  :geo place:Glimmen2755495 ;
-  :place "GLIMMEN" .
+  :place place:Glimmen2755495 ;
+  :name "GLIMMEN" .
 
 t00414:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00414:c3 a t:village.n.02 ;
-  :geo place:Zeyen2743985 ;
-  :place "ZEIJEN" .
+  :place place:Zeyen2743985 ;
+  :name "ZEIJEN" .
 
 t00414:c4 a t:village.n.02 ;
-  :geo place:Tynaarlo2746038 ;
-  :place "TYNAARLO" .
+  :place place:Tynaarlo2746038 ;
+  :name "TYNAARLO" .
 
 t00414:p1 a t:male.n.02 ;
   :dob "1870-10-08" ;
@@ -52,16 +52,19 @@ t00414:r3 a t:parent.n.01 .
 t00414:s1 a t:frond.n.01 .
 
 t00414:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00414.jpg" ;
-  :date "2019-10-25T17:06:29"^^xsd:dateTime ;
-  geo:lat 53.0794 ;
-  geo:long 6.5720 ;
+  dcterms:date "2019-10-25T17:06:29"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0794 ;
+    geo:long 6.5720
+  ] ;
   :nd "+53.0794+006.5720"^^ll: .
 

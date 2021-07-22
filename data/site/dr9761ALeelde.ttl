@@ -1,6 +1,6 @@
 site:dr9761ALeelde a t:burial_site.n.01 ;
   :sitename "De Duinen, Eelde" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Vosbergerlaan" ;
     schema:addressLocality "Eelde" ;
@@ -8,7 +8,10 @@ site:dr9761ALeelde a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9761 AL"
   ] ;
-  geo:lat 53.1425 ;
-  geo:long 6.5782 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1425 ;
+    geo:long 6.5782
+  ] ;
   :nd "+53.1425+006.5782"^^ll:  .
 

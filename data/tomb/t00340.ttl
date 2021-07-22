@@ -7,20 +7,20 @@ tomb:t00340 a t:tombstone.n.01 ;
        t00340:p2 .
 
 t00340:c1 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00340:c2 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00340:c3 a t:village.n.02 ;
-  :geo place:Kloosterveen2752614 ;
-  :place "KLOOSTERVEEN" .
+  :place place:Kloosterveen2752614 ;
+  :name "KLOOSTERVEEN" .
 
 t00340:c4 a t:city.n.01 ;
-  :geo place:Zwolle2743477 ;
-  :place "ZWOLLE" .
+  :place place:Zwolle2743477 ;
+  :name "ZWOLLE" .
 
 t00340:p1 a t:male.n.02 ;
   :dob "1848-09-18" ;
@@ -41,16 +41,19 @@ t00340:r1 a t:spouse.n.01 ;
   :tgt t00340:p1 .
 
 t00340:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00340.jpg" ;
-  :date "2019-10-19T14:07:41"^^xsd:dateTime ;
-  geo:lat 52.7157 ;
-  geo:long 6.4731 ;
+  dcterms:date "2019-10-19T14:07:41"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7157 ;
+    geo:long 6.4731
+  ] ;
   :nd "+52.7157+006.4731"^^ll: .
 

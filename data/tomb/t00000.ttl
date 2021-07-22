@@ -8,26 +8,26 @@ tomb:t00000 a t:tombstone.n.01 ;
        t00000:p2 .
 
 t00000:c1 a t:village.n.02 ;
-  :geo place:Sebaldeburen2747409 ;
-  :place "SEBALDEBUREN" .
+  :place place:Sebaldeburen2747409 ;
+  :name "SEBALDEBUREN" .
 
 t00000:c2 a t:village.n.02 ;
-  :geo place:Oostwold2749325 ;
-  :place "OOSTWOLD" .
+  :place place:Oostwold2749325 ;
+  :name "OOSTWOLD" .
 
 t00000:c3 a t:municipality.n.01 ;
-  :geo place:GemeenteOldambt7535498 ;
+  :place place:GemeenteOldambt7535498 ;
   :mem t00000:c2 ;
-  :place "OLDAMBT" .
+  :name "OLDAMBT" .
 
 t00000:c4 a t:village.n.02 ;
-  :geo place:Doezum2756763 ;
-  :place "DOEZUM" .
+  :place place:Doezum2756763 ;
+  :name "DOEZUM" .
 
 t00000:c5 a t:municipality.n.01 ;
-  :geo place:GemeenteGrootegast2755203 ;
+  :place place:GemeenteGrootegast2755203 ;
   :mem t00000:c4 ;
-  :place "GROOTEGAST" .
+  :name "GROOTEGAST" .
 
 t00000:g1 a t:group.n.01 ;
   :rol t00000:r1 .
@@ -70,16 +70,19 @@ t00000:r4 a t:spouse.n.01 ;
   :tgt t00000:p2 .
 
 t00000:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00000.jpg" ;
-  :date "2019-09-25T17:01:41"^^xsd:dateTime ;
-  geo:lat 53.1900 ;
-  geo:long 6.5938 ;
+  dcterms:date "2019-09-25T17:01:41"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1900 ;
+    geo:long 6.5938
+  ] ;
   :nd "+53.1900+006.5938"^^ll: .
 

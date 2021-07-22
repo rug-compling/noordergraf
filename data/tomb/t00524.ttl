@@ -18,16 +18,19 @@ t00524:p2 a t:male.n.02 ;
   :nam "GEESINUS HARMANNUS SCHUURMAN" .
 
 t00524:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00524.jpg" ;
-  :date "2019-11-23T10:56:14"^^xsd:dateTime ;
-  geo:lat 53.1670 ;
-  geo:long 6.7535 ;
+  dcterms:date "2019-11-23T10:56:14"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1670 ;
+    geo:long 6.7535
+  ] ;
   :nd "+53.1670+006.7535"^^ll: .
 

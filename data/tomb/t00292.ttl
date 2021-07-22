@@ -10,12 +10,12 @@ tomb:t00292 a t:tombstone.n.01 ;
 t00292:a1 a t:weeping.a.02 .
 
 t00292:c1 a t:municipality.n.01 ;
-  :geo place:OudAvereest2749185 ;
-  :place "AVEREEST" .
+  :place place:OudAvereest2749185 ;
+  :name "AVEREEST" .
 
 t00292:c2 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00292:p1 a t:female.n.02 ;
   :dob "1874-09-20" ;
@@ -38,16 +38,19 @@ t00292:s1 a t:willow.n.01 ;
   :att t00292:a1 .
 
 t00292:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00292.jpg" ;
-  :date "2019-10-19T14:40:19"^^xsd:dateTime ;
-  geo:lat 52.7151 ;
-  geo:long 6.4739 ;
+  dcterms:date "2019-10-19T14:40:19"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7151 ;
+    geo:long 6.4739
+  ] ;
   :nd "+52.7151+006.4739"^^ll: .
 

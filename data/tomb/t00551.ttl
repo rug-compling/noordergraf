@@ -38,16 +38,19 @@ t00551:s5 a t:frond.n.01 .
 t00551:s6 a t:ribbon.n.01 .
 
 t00551:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00551.jpg" ;
-  :date "2019-11-24T14:04:04"^^xsd:dateTime ;
-  geo:lat 53.1047 ;
-  geo:long 6.8758 ;
+  dcterms:date "2019-11-24T14:04:04"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1047 ;
+    geo:long 6.8758
+  ] ;
   :nd "+53.1047+006.8758"^^ll: .
 

@@ -7,20 +7,20 @@ tomb:t00017 a t:tombstone.n.01 ;
        t00017:p2 .
 
 t00017:c1 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00017:c2 a t:village.n.02 ;
-  :geo place:Lutkewierum2751364 ;
-  :place "LUTKEWIERUM" .
+  :place place:Lutkewierum2751364 ;
+  :name "LUTKEWIERUM" .
 
 t00017:c3 a t:city.n.01 ;
-  :geo place:Leeuwarden2751792 ;
-  :place "LEEUWARDEN" .
+  :place place:Leeuwarden2751792 ;
+  :name "LEEUWARDEN" .
 
 t00017:c4 a t:village.n.02 ;
-  :geo place:Zuidlaren2743680 ;
-  :place "ZUIDLAREN" .
+  :place place:Zuidlaren2743680 ;
+  :name "ZUIDLAREN" .
 
 t00017:p1 a t:male.n.02 ;
   :dob "1833-03-09" ;
@@ -41,16 +41,19 @@ t00017:r1 a t:widow.n.01 ;
   :tgt t00017:p1 .
 
 t00017:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00017.jpg" ;
-  :date "2019-09-25T16:36:26"^^xsd:dateTime ;
-  geo:lat 53.1910 ;
-  geo:long 6.5933 ;
+  dcterms:date "2019-09-25T16:36:26"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1910 ;
+    geo:long 6.5933
+  ] ;
   :nd "+53.1910+006.5933"^^ll: .
 

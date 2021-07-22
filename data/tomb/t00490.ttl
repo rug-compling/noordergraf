@@ -8,12 +8,12 @@ tomb:t00490 a t:tombstone.n.01 ;
   :sym t00490:s1 .
 
 t00490:c1 a t:village.n.02 ;
-  :geo place:Noordwolde2749807 ;
-  :place "NOORDWOLDE" .
+  :place place:Noordwolde2749807 ;
+  :name "NOORDWOLDE" .
 
 t00490:c2 a t:city.n.01 ;
-  :geo place:Leeuwarden2751792 ;
-  :place "LEEUWARDEN" .
+  :place place:Leeuwarden2751792 ;
+  :name "LEEUWARDEN" .
 
 t00490:p1 a t:male.n.02 ;
   :dob "1843-10-15" ;
@@ -46,16 +46,19 @@ t00490:s2 a t:frond.n.01 .
 t00490:s3 a t:frond.n.01 .
 
 t00490:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00490.jpg" ;
-  :date "2019-11-16T14:00:57"^^xsd:dateTime ;
-  geo:lat 53.2100 ;
-  geo:long 5.7909 ;
+  dcterms:date "2019-11-16T14:00:57"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2100 ;
+    geo:long 5.7909
+  ] ;
   :nd "+53.2100+005.7909"^^ll: .
 

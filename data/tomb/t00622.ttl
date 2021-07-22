@@ -11,12 +11,12 @@ tomb:t00622 a t:tombstone.n.01 ;
        t00622:s3 .
 
 t00622:c1 a t:village.n.02 ;
-  :geo place:Zuidbroek2743800 ;
-  :place "ZUIDBROEK" .
+  :place place:Zuidbroek2743800 ;
+  :name "ZUIDBROEK" .
 
 t00622:c2 a t:town.n.01 ;
-  :geo place:Hoogezand2753706 ;
-  :place "HOOGEZAND" .
+  :place place:Hoogezand2753706 ;
+  :name "HOOGEZAND" .
 
 t00622:p1 a t:male.n.02 ;
   :dob "1815-03-20" ;
@@ -40,16 +40,19 @@ t00622:s2 a t:oak.n.02 ;
 t00622:s3 a t:entity.n.01 .
 
 t00622:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00622.jpg" ;
-  :date "2019-11-23T10:01:13"^^xsd:dateTime ;
-  geo:lat 53.1643 ;
-  geo:long 6.7541 ;
+  dcterms:date "2019-11-23T10:01:13"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1643 ;
+    geo:long 6.7541
+  ] ;
   :nd "+53.1643+006.7541"^^ll: .
 

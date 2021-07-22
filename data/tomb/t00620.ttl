@@ -9,20 +9,20 @@ tomb:t00620 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00620:c1 a t:village.n.02 ;
-  :geo place:Borgercompagnie2758618 ;
-  :place "BORGERCOMPAGNIE" .
+  :place place:Borgercompagnie2758618 ;
+  :name "BORGERCOMPAGNIE" .
 
 t00620:c2 a t:town.n.01 ;
-  :geo place:Haren2754841 ;
-  :place "HAREN" .
+  :place place:Haren2754841 ;
+  :name "HAREN" .
 
 t00620:c3 a t:city.n.01 ;
-  :geo place:Veendam2745783 ;
-  :place "VEENDAM" .
+  :place place:Veendam2745783 ;
+  :name "VEENDAM" .
 
 t00620:c4 a t:village.n.02 ;
-  :geo place:Asten2759621 ;
-  :place "ASTEN" .
+  :place place:Asten2759621 ;
+  :name "ASTEN" .
 
 t00620:p1 a t:person.n.01 ;
   :dob "1925-02-05" ;
@@ -46,16 +46,19 @@ t00620:p3 a t:person.n.01 ;
   :pod t00620:c2 .
 
 t00620:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00620.jpg" ;
-  :date "2019-11-23T10:02:44"^^xsd:dateTime ;
-  geo:lat 53.1643 ;
-  geo:long 6.7541 ;
+  dcterms:date "2019-11-23T10:02:44"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1643 ;
+    geo:long 6.7541
+  ] ;
   :nd "+53.1643+006.7541"^^ll: .
 

@@ -24,16 +24,19 @@ t00532:r1 a t:spouse.n.01 ;
 t00532:s1 a t:rose.n.01 .
 
 t00532:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00532.jpg" ;
-  :date "2019-11-24T14:34:12"^^xsd:dateTime ;
-  geo:lat 53.1028 ;
-  geo:long 6.8726 ;
+  dcterms:date "2019-11-24T14:34:12"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1028 ;
+    geo:long 6.8726
+  ] ;
   :nd "+53.1028+006.8726"^^ll: .
 

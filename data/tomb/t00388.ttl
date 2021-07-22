@@ -14,20 +14,20 @@ t00388:b1 a t:Revelation.n.04 ;
   :prt t00388:c5 .
 
 t00388:c1 a t:village.n.02 ;
-  :geo place:Twijzel2746052 ;
-  :place "TWIJZEL" .
+  :place place:Twijzel2746052 ;
+  :name "TWIJZEL" .
 
 t00388:c2 a t:village.n.02 ;
-  :geo place:Doezum2756763 ;
-  :place "DOEZUM" .
+  :place place:Doezum2756763 ;
+  :name "DOEZUM" .
 
 t00388:c3 a t:village.n.02 ;
-  :geo place:Dantumawoude2757833 ;
-  :place "DANTUMAWOUDE" .
+  :place place:Dantumawoude2757833 ;
+  :name "DANTUMAWOUDE" .
 
 t00388:c4 a t:village.n.02 ;
-  :geo place:Zwagerveen2743583 ;
-  :place "ZWAGERVEEN" .
+  :place place:Zwagerveen2743583 ;
+  :name "ZWAGERVEEN" .
 
 t00388:c5 a t:chapter.n.01 ;
   :ord 14 ;
@@ -62,16 +62,19 @@ t00388:v1 a t:verse.n.01 ;
   :ord 13 .
 
 t00388:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00388.jpg" ;
-  :date "2019-10-26T14:52:24"^^xsd:dateTime ;
-  geo:lat 53.2516 ;
-  geo:long 6.1450 ;
+  dcterms:date "2019-10-26T14:52:24"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2516 ;
+    geo:long 6.1450
+  ] ;
   :nd "+53.2516+006.1450"^^ll: .
 

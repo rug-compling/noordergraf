@@ -11,16 +11,16 @@ tomb:t00342 a t:tombstone.n.01 ;
 t00342:a1 a t:weeping.a.02 .
 
 t00342:c1 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00342:c2 a t:village.n.02 ;
-  :geo place:Dalen2757857 ;
-  :place "DALEN" .
+  :place place:Dalen2757857 ;
+  :name "DALEN" .
 
 t00342:c3 a t:town.n.01 ;
-  :geo place:Weesp2744904 ;
-  :place "WEESP" .
+  :place place:Weesp2744904 ;
+  :name "WEESP" .
 
 t00342:p1 a t:female.n.02 ;
   :dob "1845-04-22" ;
@@ -51,16 +51,19 @@ t00342:s1 a t:willow.n.01 ;
   :att t00342:a1 .
 
 t00342:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00342.jpg" ;
-  :date "2019-10-19T14:06:37"^^xsd:dateTime ;
-  geo:lat 52.7158 ;
-  geo:long 6.4731 ;
+  dcterms:date "2019-10-19T14:06:37"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7158 ;
+    geo:long 6.4731
+  ] ;
   :nd "+52.7158+006.4731"^^ll: .
 

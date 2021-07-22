@@ -7,22 +7,22 @@ tomb:t00811 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00811:c1 a t:city.n.01 ;
-  :geo place:SaltLakeCity5780993 ;
-  :place "SALT LAKE CITY" .
+  :place place:SaltLakeCity5780993 ;
+  :name "SALT LAKE CITY" .
 
 t00811:c2 a t:state.n.01 ;
-  :geo place:Utah5549030 ;
+  :place place:Utah5549030 ;
   :mem t00811:c1 ;
-  :place "UTAH" .
+  :name "UTAH" .
 
 t00811:c3 a t:country.n.02 ;
-  :geo place:VerenigdeStaten6252001 ;
+  :place place:VerenigdeStaten6252001 ;
   :mem t00811:c2 ;
-  :place "VERENIGDE STATEN" .
+  :name "VERENIGDE STATEN" .
 
 t00811:c4 a t:town.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00811:p1 a t:male.n.02 ;
   :dob "1882-10-16" ;
@@ -32,16 +32,19 @@ t00811:p1 a t:male.n.02 ;
   :pod t00811:c4 .
 
 t00811:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00811.jpg" ;
-  :date "2020-02-01T12:32:48"^^xsd:dateTime ;
-  geo:lat 53.2305 ;
-  geo:long 6.5509 ;
+  dcterms:date "2020-02-01T12:32:48"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2305 ;
+    geo:long 6.5509
+  ] ;
   :nd "+53.2305+006.5509"^^ll: .
 

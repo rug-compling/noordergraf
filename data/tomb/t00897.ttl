@@ -11,12 +11,12 @@ tomb:t00897 a t:tombstone.n.01 ;
 t00897:a1 a t:weeping.a.02 .
 
 t00897:c1 a t:village.n.02 ;
-  :geo place:Tolbert2746234 ;
-  :place "TOLBERT" .
+  :place place:Tolbert2746234 ;
+  :name "TOLBERT" .
 
 t00897:c2 a t:village.n.02 ;
-  :geo place:Niebert2750396 ;
-  :place "NIEBERT" .
+  :place place:Niebert2750396 ;
+  :name "NIEBERT" .
 
 t00897:p1 a t:male.n.02 ;
   :dob "1819-09-17" ;
@@ -36,16 +36,19 @@ t00897:s1 a t:willow.n.01 ;
   :att t00897:a1 .
 
 t00897:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00897.jpg" ;
-  :date "2020-03-07T14:32:58"^^xsd:dateTime ;
-  geo:lat 53.1722 ;
-  geo:long 6.3615 ;
+  dcterms:date "2020-03-07T14:32:58"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1722 ;
+    geo:long 6.3615
+  ] ;
   :nd "+53.1722+006.3615"^^ll: .
 

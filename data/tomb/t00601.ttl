@@ -10,12 +10,12 @@ tomb:t00601 a t:tombstone.n.01 ;
        t00601:s3 .
 
 t00601:c1 a t:village.n.02 ;
-  :geo place:Onderdendam2749601 ;
-  :place "ONDERDENDAM" .
+  :place place:Onderdendam2749601 ;
+  :name "ONDERDENDAM" .
 
 t00601:c2 a t:village.n.02 ;
-  :geo place:Winsum2744337 ;
-  :place "WINSUM" .
+  :place place:Winsum2744337 ;
+  :name "WINSUM" .
 
 t00601:p1 a t:male.n.02 ;
   :dob "1798-08-29" ;
@@ -32,16 +32,19 @@ t00601:s2 a t:butterfly.n.01 .
 t00601:s3 a t:cross.n.03 .
 
 t00601:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00601.jpg" ;
-  :date "2019-11-30T14:03:12"^^xsd:dateTime ;
-  geo:lat 53.3279 ;
-  geo:long 6.5113 ;
+  dcterms:date "2019-11-30T14:03:12"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3279 ;
+    geo:long 6.5113
+  ] ;
   :nd "+53.3279+006.5113"^^ll: .
 

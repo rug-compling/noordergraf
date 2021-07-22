@@ -10,12 +10,12 @@ tomb:t01064 a t:tombstone.n.01 ;
        t01064:s2 .
 
 t01064:c1 a t:town.n.01 ;
-  :geo place:Drachten2756644 ;
-  :place "DRACHTEN" .
+  :place place:Drachten2756644 ;
+  :name "DRACHTEN" .
 
 t01064:c2 a t:village.n.02 ;
-  :geo place:Siegerswoude2747339 ;
-  :place "SIEGERSWOUDE" .
+  :place place:Siegerswoude2747339 ;
+  :name "SIEGERSWOUDE" .
 
 t01064:p1 a t:male.n.02 ;
   :dob "1869-01-26" ;
@@ -36,16 +36,19 @@ t01064:s1 a t:branch.n.02 .
 t01064:s2 a t:branch.n.02 .
 
 t01064:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01064.jpg" ;
-  :date "2020-05-01T15:24:58"^^xsd:dateTime ;
-  geo:lat 53.1227 ;
-  geo:long 6.2507 ;
+  dcterms:date "2020-05-01T15:24:58"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1227 ;
+    geo:long 6.2507
+  ] ;
   :nd "+53.1227+006.2507"^^ll: .
 

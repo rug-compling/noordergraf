@@ -9,12 +9,12 @@ tomb:t00809 a t:tombstone.n.01 ;
   :sym t00809:s1 .
 
 t00809:c1 a t:village.n.02 ;
-  :geo place:Woltersum2744196 ;
-  :place "WOLTERSUM" .
+  :place place:Woltersum2744196 ;
+  :name "WOLTERSUM" .
 
 t00809:c2 a t:village.n.02 ;
-  :geo place:TenBoer2746491 ;
-  :place "TEN BOER" .
+  :place place:TenBoer2746491 ;
+  :name "TEN BOER" .
 
 t00809:p1 a t:male.n.02 ;
   :dob "1829-11-15" ;
@@ -33,16 +33,19 @@ t00809:r1 a t:spouse.n.01 ;
 t00809:s1 a t:butterfly.n.01 .
 
 t00809:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00809.jpg" ;
-  :date "2020-01-18T12:45:58"^^xsd:dateTime ;
-  geo:lat 53.2778 ;
-  geo:long 6.6936 ;
+  dcterms:date "2020-01-18T12:45:58"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2778 ;
+    geo:long 6.6936
+  ] ;
   :nd "+53.2778+006.6936"^^ll: .
 

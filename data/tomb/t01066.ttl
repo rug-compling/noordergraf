@@ -13,12 +13,12 @@ t01066:b1 a t:Revelation.n.04 ;
   :prt t01066:c3 .
 
 t01066:c1 a t:village.n.02 ;
-  :geo place:Ulrum2745944 ;
-  :place "ULRUM" .
+  :place place:Ulrum2745944 ;
+  :name "ULRUM" .
 
 t01066:c2 a t:city.n.01 ;
-  :geo place:Veendam2745783 ;
-  :place "VEENDAM" .
+  :place place:Veendam2745783 ;
+  :name "VEENDAM" .
 
 t01066:c3 a t:chapter.n.01 ;
   :ord 20 ;
@@ -55,16 +55,19 @@ t01066:v1 a t:verse.n.01 ;
   :txt "ZALIG EN HEILIG IS HIJ, DIE DEEL HEEFT IN DE EERSTE OPSTANDING. OVER DEZE HEEFT DE TWEEDE DOOD GEEN MACHT." .
 
 t01066:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01066.jpg" ;
-  :date "2020-05-02T16:49:07"^^xsd:dateTime ;
-  geo:lat 53.3604 ;
-  geo:long 6.3435 ;
+  dcterms:date "2020-05-02T16:49:07"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3604 ;
+    geo:long 6.3435
+  ] ;
   :nd "+53.3604+006.3435"^^ll: .
 

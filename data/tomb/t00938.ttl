@@ -60,16 +60,19 @@ t00938:r5 a t:spouse.n.01 ;
   :tgt t00938:p4 .
 
 t00938:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00938.jpg" ;
-  :date "2020-03-18T10:27:01"^^xsd:dateTime ;
-  geo:lat 53.2394 ;
-  geo:long 6.5527 ;
+  dcterms:date "2020-03-18T10:27:01"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2394 ;
+    geo:long 6.5527
+  ] ;
   :nd "+53.2394+006.5527"^^ll: .
 

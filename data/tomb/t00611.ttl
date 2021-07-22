@@ -12,25 +12,25 @@ tomb:t00611 a t:tombstone.n.01 ;
        t00611:s3 .
 
 t00611:c1 a t:town.n.01 ;
-  :geo place:Sloten2747131 ;
-  :place "SLOTEN" .
+  :place place:Sloten2747131 ;
+  :name "SLOTEN" .
 
 t00611:c2 a t:province.n.01 ;
-  :geo place:ProvincieFriesland2755812 ;
+  :place place:ProvincieFriesland2755812 ;
   :mem t00611:c1 ;
-  :place "FRIESLAND" .
+  :name "FRIESLAND" .
 
 t00611:c3 a t:town.n.01 ;
-  :geo place:Hoogezand2753706 ;
-  :place "HOOGEZAND" .
+  :place place:Hoogezand2753706 ;
+  :name "HOOGEZAND" .
 
 t00611:c4 a t:city.n.01 ;
-  :geo place:Kiel2752863 ;
-  :place "KIEL" .
+  :place place:Kiel2752863 ;
+  :name "KIEL" .
 
 t00611:c5 a t:village.n.02 ;
-  :geo place:Sappemeer2747758 ;
-  :place "SAPPEMEER" .
+  :place place:Sappemeer2747758 ;
+  :name "SAPPEMEER" .
 
 t00611:p1 a t:male.n.02 ;
   :dob "1842-05-04" ;
@@ -64,16 +64,19 @@ t00611:s2 a t:frond.n.01 .
 t00611:s3 a t:ribbon.n.01 .
 
 t00611:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00611.jpg" ;
-  :date "2019-11-23T10:06:14"^^xsd:dateTime ;
-  geo:lat 53.1643 ;
-  geo:long 6.7540 ;
+  dcterms:date "2019-11-23T10:06:14"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1643 ;
+    geo:long 6.7540
+  ] ;
   :nd "+53.1643+006.7540"^^ll: .
 

@@ -9,8 +9,8 @@ tomb:t00039 a t:tombstone.n.01 ;
 t00039:a1 a t:weeping.a.02 .
 
 t00039:c1 a t:village.n.02 ;
-  :geo place:Helpman2754444 ;
-  :place "HELPMAN" .
+  :place place:Helpman2754444 ;
+  :name "HELPMAN" .
 
 t00039:p1 a t:male.n.02 ;
   :dob "1899-07-30" ;
@@ -23,16 +23,19 @@ t00039:s1 a t:willow.n.01 ;
   :att t00039:a1 .
 
 t00039:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00039.jpg" ;
-  :date "2019-09-27T17:52:43"^^xsd:dateTime ;
-  geo:lat 53.1629 ;
-  geo:long 6.6122 ;
+  dcterms:date "2019-09-27T17:52:43"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1629 ;
+    geo:long 6.6122
+  ] ;
   :nd "+53.1629+006.6122"^^ll: .
 

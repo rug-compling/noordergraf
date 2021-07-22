@@ -26,16 +26,19 @@ t00533:r2 a t:sister.n.01 .
 t00533:r3 a t:verloofde.n.01 .
 
 t00533:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00533.jpg" ;
-  :date "2019-11-24T14:33:54"^^xsd:dateTime ;
-  geo:lat 53.1034 ;
-  geo:long 6.8737 ;
+  dcterms:date "2019-11-24T14:33:54"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1034 ;
+    geo:long 6.8737
+  ] ;
   :nd "+53.1034+006.8737"^^ll: .
 

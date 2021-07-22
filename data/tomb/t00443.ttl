@@ -12,12 +12,12 @@ t00443:b1 a t:Revelation.n.04 ;
   :prt t00443:c3 .
 
 t00443:c1 a t:village.n.02 ;
-  :geo place:Morra2750603 ;
-  :place "MORRA" .
+  :place place:Morra2750603 ;
+  :name "MORRA" .
 
 t00443:c2 a t:island.n.01 ;
-  :geo place:Schiermonnikoog2747591 ;
-  :place "SCHIERMONNIKOOG" .
+  :place place:Schiermonnikoog2747591 ;
+  :name "SCHIERMONNIKOOG" .
 
 t00443:c3 a t:chapter.n.01 ;
   :ord 14 ;
@@ -49,16 +49,19 @@ t00443:v1 a t:verse.n.01 ;
   :ord 13 .
 
 t00443:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00443.jpg" ;
-  :date "2019-11-02T11:31:55"^^xsd:dateTime ;
-  geo:lat 53.4792 ;
-  geo:long 6.1601 ;
+  dcterms:date "2019-11-02T11:31:55"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4792 ;
+    geo:long 6.1601
+  ] ;
   :nd "+53.4792+006.1601"^^ll: .
 

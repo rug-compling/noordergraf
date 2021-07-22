@@ -11,12 +11,12 @@ tomb:t00999 a t:tombstone.n.01 ;
 t00999:a1 a t:weeping.a.02 .
 
 t00999:c1 a t:village.n.02 ;
-  :geo place:Zuidwolde2743636 ;
-  :place "ZUIDWOLDE" .
+  :place place:Zuidwolde2743636 ;
+  :name "ZUIDWOLDE" .
 
 t00999:c2 a t:village.n.02 ;
-  :geo place:Noorddijk2749981 ;
-  :place "NOORDDIJK" .
+  :place place:Noorddijk2749981 ;
+  :name "NOORDDIJK" .
 
 t00999:p1 a t:female.n.02 ;
   :dob "1843-07-15" ;
@@ -44,16 +44,19 @@ t00999:s1 a t:willow.n.01 ;
   :att t00999:a1 .
 
 t00999:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00999.jpg" ;
-  :date "2020-04-05T12:11:41"^^xsd:dateTime ;
-  geo:lat 53.2443 ;
-  geo:long 6.6280 ;
+  dcterms:date "2020-04-05T12:11:41"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2443 ;
+    geo:long 6.6280
+  ] ;
   :nd "+53.2443+006.6280"^^ll: .
 

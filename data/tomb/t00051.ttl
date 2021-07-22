@@ -7,12 +7,12 @@ tomb:t00051 a t:tombstone.n.01 ;
        t00051:p2 .
 
 t00051:c1 a t:town.n.01 ;
-  :geo place:Hoogezand2753706 ;
-  :place "HOOGEZAND" .
+  :place place:Hoogezand2753706 ;
+  :name "HOOGEZAND" .
 
 t00051:c2 a t:town.n.01 ;
-  :geo place:Haren2754841 ;
-  :place "HAREN" .
+  :place place:Haren2754841 ;
+  :name "HAREN" .
 
 t00051:p1 a t:female.n.02 ;
   :dob "1889-10-04" ;
@@ -42,16 +42,19 @@ t00051:r3 a t:parent.n.01 ;
   :att "LIEVE" .
 
 t00051:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00051.jpg" ;
-  :date "2019-09-27T17:42:46"^^xsd:dateTime ;
-  geo:lat 53.1631 ;
-  geo:long 6.6131 ;
+  dcterms:date "2019-09-27T17:42:46"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1631 ;
+    geo:long 6.6131
+  ] ;
   :nd "+53.1631+006.6131"^^ll: .
 

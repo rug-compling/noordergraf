@@ -1,6 +1,6 @@
 site:gr9696XGoudeschans a t:burial_site.n.01 ;
   :sitename "Schanspad, Oudeschans" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Schanspad" ;
     schema:addressLocality "Oudeschans" ;
@@ -8,8 +8,11 @@ site:gr9696XGoudeschans a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9696 XG"
   ] ;
-  geo:lat 53.1384 ;
-  geo:long 7.1432 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1384 ;
+    geo:long 7.1432
+  ] ;
   :nd "+53.1384+007.1432"^^ll: .
 
 

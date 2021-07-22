@@ -12,16 +12,19 @@ t00890:p1 a t:female.n.02 ;
   :nam "ELIZABETH DYKSTRA BOUSEMA" .
 
 t00890:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00890.jpg" ;
-  :date "2020-02-29T12:23:36"^^xsd:dateTime ;
-  geo:lat 53.1903 ;
-  geo:long 6.5917 ;
+  dcterms:date "2020-02-29T12:23:36"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1903 ;
+    geo:long 6.5917
+  ] ;
   :nd "+53.1903+006.5917"^^ll: .
 

@@ -12,12 +12,12 @@ tomb:t00975 a t:tombstone.n.01 ;
        t00975:s4 .
 
 t00975:c1 a t:village.n.02 ;
-  :geo place:Borgercompagnie2758618 ;
-  :place "BORGERCOMPAGNIE" .
+  :place place:Borgercompagnie2758618 ;
+  :name "BORGERCOMPAGNIE" .
 
 t00975:c2 a t:village.n.02 ;
-  :geo place:Noordlaren2749857 ;
-  :place "NOORDLAREN" .
+  :place place:Noordlaren2749857 ;
+  :name "NOORDLAREN" .
 
 t00975:p1 a t:female.n.02 ;
   :dob "1823-07-08" ;
@@ -43,16 +43,19 @@ t00975:s3 a t:oak.n.03 .
 t00975:s4 a t:ribbon.n.01 .
 
 t00975:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00975.jpg" ;
-  :date "2020-03-25T09:27:23"^^xsd:dateTime ;
-  geo:lat 53.1201 ;
-  geo:long 6.6589 ;
+  dcterms:date "2020-03-25T09:27:23"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1201 ;
+    geo:long 6.6589
+  ] ;
   :nd "+53.1201+006.6589"^^ll: .
 

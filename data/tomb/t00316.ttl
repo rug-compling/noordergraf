@@ -6,8 +6,8 @@ tomb:t00316 a t:tombstone.n.01 ;
   :ent t00316:p1 .
 
 t00316:c1 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00316:p1 a t:male.n.02 ;
   :dob "1873-09-05" ;
@@ -18,16 +18,19 @@ t00316:p1 a t:male.n.02 ;
   :sfx "JZ" .
 
 t00316:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00316.jpg" ;
-  :date "2019-10-19T14:04:49"^^xsd:dateTime ;
-  geo:lat 52.7157 ;
-  geo:long 6.4730 ;
+  dcterms:date "2019-10-19T14:04:49"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7157 ;
+    geo:long 6.4730
+  ] ;
   :nd "+52.7157+006.4730"^^ll: .
 

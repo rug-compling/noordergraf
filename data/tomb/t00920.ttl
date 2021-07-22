@@ -9,16 +9,16 @@ tomb:t00920 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00920:c1 a t:village.n.02 ;
-  :geo place:Nieuwenhoorn2750280 ;
-  :place "NIEUWENHOORN" .
+  :place place:Nieuwenhoorn2750280 ;
+  :name "NIEUWENHOORN" .
 
 t00920:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00920:c3 a t:town.n.01 ;
-  :geo place:Boskoop2758547 ;
-  :place "BOSKOOP" .
+  :place place:Boskoop2758547 ;
+  :name "BOSKOOP" .
 
 t00920:o1 a t:gynaecologist.n.01 ;
   :hco "06120" .
@@ -44,16 +44,19 @@ t00920:p2 a t:male.n.02 ;
   :pod t00920:c3 .
 
 t00920:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00920.jpg" ;
-  :date "2020-03-13T12:34:23"^^xsd:dateTime ;
-  geo:lat 53.1911 ;
-  geo:long 6.5930 ;
+  dcterms:date "2020-03-13T12:34:23"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1911 ;
+    geo:long 6.5930
+  ] ;
   :nd "+53.1911+006.5930"^^ll: .
 

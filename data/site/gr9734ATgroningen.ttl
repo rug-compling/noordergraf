@@ -1,6 +1,6 @@
 site:gr9734ATgroningen a t:burial_site.n.01 ;
   :sitename "Stefanuskerk, Groningen" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Noorddijkerweg 16" ;
     schema:addressLocality "Groningen" ;
@@ -8,8 +8,11 @@ site:gr9734ATgroningen a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9734 AT"
   ] ;
-  geo:lat 53.2443 ;
-  geo:long 6.6279 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2443 ;
+    geo:long 6.6279
+  ] ;
   :nd "+53.2443+006.6279"^^ll: .
 
 

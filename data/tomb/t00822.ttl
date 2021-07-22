@@ -9,16 +9,19 @@ t00822:p1 a t:family.n.04 ;
   :nam "FOKKEMA" .
 
 t00822:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00822.jpg" ;
-  :date "2020-02-01T13:00:15"^^xsd:dateTime ;
-  geo:lat 53.2304 ;
-  geo:long 6.5513 ;
+  dcterms:date "2020-02-01T13:00:15"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2304 ;
+    geo:long 6.5513
+  ] ;
   :nd "+53.2304+006.5513"^^ll: .
 

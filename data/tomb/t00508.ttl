@@ -9,12 +9,12 @@ tomb:t00508 a t:tombstone.n.01 ;
   :quo "MEMORIA EORUM ERIT IN PACE"@lat .
 
 t00508:c1 a t:town.n.01 ;
-  :geo place:Stoppeldijk12253641 ;
-  :place "STOPPELDIJK" .
+  :place place:Stoppeldijk12253641 ;
+  :name "STOPPELDIJK" .
 
 t00508:c2 a t:city.n.01 ;
-  :geo place:Leeuwarden2751792 ;
-  :place "LEEUWARDEN" .
+  :place place:Leeuwarden2751792 ;
+  :name "LEEUWARDEN" .
 
 t00508:p1 a t:female.n.02 ;
   :dob "1872-03-10" ;
@@ -36,16 +36,19 @@ t00508:p3 a t:female.n.02 ;
   :nam "CAECILIA M. LAMBOOIJ-IJSSELMUIDEN" .
 
 t00508:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00508.jpg" ;
-  :date "2019-11-09T14:33:14"^^xsd:dateTime ;
-  geo:lat 53.2066 ;
-  geo:long 5.7691 ;
+  dcterms:date "2019-11-09T14:33:14"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2066 ;
+    geo:long 5.7691
+  ] ;
   :nd "+53.2066+005.7691"^^ll: .
 

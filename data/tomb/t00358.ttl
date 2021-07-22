@@ -22,16 +22,19 @@ t00358:r1 a t:widow.n.01 ;
 t00358:s1 a t:frond.n.01 .
 
 t00358:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00358.jpg" ;
-  :date "2019-10-25T17:31:52"^^xsd:dateTime ;
-  geo:lat 53.0800 ;
-  geo:long 6.5716 ;
+  dcterms:date "2019-10-25T17:31:52"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0800 ;
+    geo:long 6.5716
+  ] ;
   :nd "+53.0800+006.5716"^^ll: .
 

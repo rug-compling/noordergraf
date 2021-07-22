@@ -11,8 +11,8 @@ tomb:t00653 a t:tombstone.n.01 ;
   :sym t00653:s1 .
 
 t00653:c1 a t:hamlet.n.03 ;
-  :geo place:Kalkwijk2753130 ;
-  :place "KALKWIJK" .
+  :place place:Kalkwijk2753130 ;
+  :name "KALKWIJK" .
 
 t00653:p1 a t:male.n.02 ;
   :dob "1864-08-31" ;
@@ -38,16 +38,19 @@ t00653:r2 a t:spouse.n.01 ;
 t00653:s1 a t:rose.n.01 .
 
 t00653:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00653.jpg" ;
-  :date "2019-11-23T10:09:13"^^xsd:dateTime ;
-  geo:lat 53.1636 ;
-  geo:long 6.7546 ;
+  dcterms:date "2019-11-23T10:09:13"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1636 ;
+    geo:long 6.7546
+  ] ;
   :nd "+53.1636+006.7546"^^ll: .
 

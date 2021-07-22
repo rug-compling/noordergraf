@@ -1,6 +1,6 @@
 site:gr9951TNwinsum a t:burial_site.n.01 ;
   :sitename "Schilligeham, Winsum" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Schilligeham" ;
     schema:addressLocality "Winsum" ;
@@ -8,8 +8,11 @@ site:gr9951TNwinsum a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9951 TN"
   ] ;
-  geo:lat 53.3276 ;
-  geo:long 6.5117 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3276 ;
+    geo:long 6.5117
+  ] ;
   :nd "+53.3276+006.5117"^^ll: .
 
 

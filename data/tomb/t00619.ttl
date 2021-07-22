@@ -8,16 +8,16 @@ tomb:t00619 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00619:c1 a t:village.n.02 ;
-  :geo place:Borgercompagnie2758618 ;
-  :place "BORGERCOMPAGNIE" .
+  :place place:Borgercompagnie2758618 ;
+  :name "BORGERCOMPAGNIE" .
 
 t00619:c2 a t:village.n.02 ;
-  :geo place:Zuidlaren2743680 ;
-  :place "ZUIDLAREN" .
+  :place place:Zuidlaren2743680 ;
+  :name "ZUIDLAREN" .
 
 t00619:c3 a t:village.n.02 ;
-  :geo place:Glimmen2755495 ;
-  :place "GLIMMEN" .
+  :place place:Glimmen2755495 ;
+  :name "GLIMMEN" .
 
 t00619:p1 a t:person.n.01 ;
   :dob "1900-11-04" ;
@@ -34,16 +34,19 @@ t00619:p2 a t:person.n.01 ;
   :pod t00619:c2 .
 
 t00619:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00619.jpg" ;
-  :date "2019-11-23T10:03:11"^^xsd:dateTime ;
-  geo:lat 53.1643 ;
-  geo:long 6.7541 ;
+  dcterms:date "2019-11-23T10:03:11"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1643 ;
+    geo:long 6.7541
+  ] ;
   :nd "+53.1643+006.7541"^^ll: .
 

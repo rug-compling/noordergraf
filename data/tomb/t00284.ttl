@@ -7,16 +7,16 @@ tomb:t00284 a t:tombstone.n.01 ;
        t00284:p2 .
 
 t00284:c1 a t:village.n.02 ;
-  :geo place:Zijldijk2743893 ;
-  :place "ZIJLDIJK" .
+  :place place:Zijldijk2743893 ;
+  :name "ZIJLDIJK" .
 
 t00284:c2 a t:village.n.02 ;
-  :geo place:Uithuizen2745970 ;
-  :place "UITHUIZEN" .
+  :place place:Uithuizen2745970 ;
+  :name "UITHUIZEN" .
 
 t00284:c3 a t:village.n.02 ;
-  :geo place:Oosternieland2749429 ;
-  :place "OOSTERNIELAND" .
+  :place place:Oosternieland2749429 ;
+  :name "OOSTERNIELAND" .
 
 t00284:p1 a t:female.n.02 ;
   :dob "1874-01-24" ;
@@ -41,16 +41,19 @@ t00284:r1 a t:parent.n.01 .
 t00284:r2 a t:parent.n.01 .
 
 t00284:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00284.jpg" ;
-  :date "2019-10-16T16:53:05"^^xsd:dateTime ;
-  geo:lat 53.4036 ;
-  geo:long 6.7489 ;
+  dcterms:date "2019-10-16T16:53:05"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4036 ;
+    geo:long 6.7489
+  ] ;
   :nd "+53.4036+006.7489"^^ll: .
 

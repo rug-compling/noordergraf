@@ -8,12 +8,12 @@ tomb:t00410 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE PLEEGOUDERS" .
 
 t00410:c1 a t:village.n.02 ;
-  :geo place:Anloo2759746 ;
-  :place "ANLOO" .
+  :place place:Anloo2759746 ;
+  :name "ANLOO" .
 
 t00410:c2 a t:town.n.01 ;
-  :geo place:Vries2745189 ;
-  :place "VRIES" .
+  :place place:Vries2745189 ;
+  :name "VRIES" .
 
 t00410:p1 a t:male.n.02 ;
   :dob "1861-05-16" ;
@@ -42,16 +42,19 @@ t00410:r3 a t:foster-parent.n.01 ;
   :tgt t00410:p3 .
 
 t00410:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00410.jpg" ;
-  :date "2019-10-25T17:21:46"^^xsd:dateTime ;
-  geo:lat 53.0797 ;
-  geo:long 6.5716 ;
+  dcterms:date "2019-10-25T17:21:46"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0797 ;
+    geo:long 6.5716
+  ] ;
   :nd "+53.0797+006.5716"^^ll: .
 

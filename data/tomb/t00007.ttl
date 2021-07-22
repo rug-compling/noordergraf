@@ -10,20 +10,20 @@ tomb:t00007 a t:tombstone.n.01 ;
   :sym t00007:s1 .
 
 t00007:c1 a t:village.n.02 ;
-  :geo place:Kollumerpomp2752522 ;
-  :place "KOLLUMERPOMP" .
+  :place place:Kollumerpomp2752522 ;
+  :name "KOLLUMERPOMP" .
 
 t00007:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00007:c3 a t:village.n.02 ;
-  :geo place:Zwagerveen2743583 ;
-  :place "ZWAGERVEEN" .
+  :place place:Zwagerveen2743583 ;
+  :name "ZWAGERVEEN" .
 
 t00007:c4 a t:village.n.02 ;
-  :geo place:Appelscha2759698 ;
-  :place "APPELSCHA" .
+  :place place:Appelscha2759698 ;
+  :name "APPELSCHA" .
 
 t00007:g1 a t:group.n.01 ;
   :rol t00007:r1 .
@@ -78,16 +78,19 @@ t00007:s2 a t:frond.n.01 .
 t00007:s3 a t:ribbon.n.01 .
 
 t00007:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00007.jpg" ;
-  :date "2019-09-25T16:50:09"^^xsd:dateTime ;
-  geo:lat 53.1899 ;
-  geo:long 6.5929 ;
+  dcterms:date "2019-09-25T16:50:09"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1899 ;
+    geo:long 6.5929
+  ] ;
   :nd "+53.1899+006.5929"^^ll: .
 

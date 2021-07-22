@@ -12,16 +12,16 @@ tomb:t00616 a t:tombstone.n.01 ;
 t00616:a1 a t:weeping.a.02 .
 
 t00616:c1 a t:town.n.01 ;
-  :geo place:Hoogezand2753706 ;
-  :place "HOOGEZAND" .
+  :place place:Hoogezand2753706 ;
+  :name "HOOGEZAND" .
 
 t00616:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00616:c3 a t:village.n.02 ;
-  :geo place:Dennenoord2757197 ;
-  :place "DENNENOORD" .
+  :place place:Dennenoord2757197 ;
+  :name "DENNENOORD" .
 
 t00616:p1 a t:female.n.02 ;
   :dob "1825-06-21" ;
@@ -61,16 +61,19 @@ t00616:s1 a t:willow.n.01 ;
   :att t00616:a1 .
 
 t00616:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00616.jpg" ;
-  :date "2019-11-23T10:04:24"^^xsd:dateTime ;
-  geo:lat 53.1644 ;
-  geo:long 6.7541 ;
+  dcterms:date "2019-11-23T10:04:24"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1644 ;
+    geo:long 6.7541
+  ] ;
   :nd "+53.1644+006.7541"^^ll: .
 

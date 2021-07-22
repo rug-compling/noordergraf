@@ -12,12 +12,12 @@ t00503:b1 a t:Revelation.n.04 ;
   :prt t00503:c3 .
 
 t00503:c1 a t:city.n.01 ;
-  :geo place:Amsterdam2759794 ;
-  :place "AMSTERDAM" .
+  :place place:Amsterdam2759794 ;
+  :name "AMSTERDAM" .
 
 t00503:c2 a t:city.n.01 ;
-  :geo place:Leeuwarden2751792 ;
-  :place "LEEUWARDEN" .
+  :place place:Leeuwarden2751792 ;
+  :name "LEEUWARDEN" .
 
 t00503:c3 a t:chapter.n.01 ;
   :ord 14 ;
@@ -44,16 +44,19 @@ t00503:v1 a t:verse.n.01 ;
   :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
 
 t00503:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00503.jpg" ;
-  :date "2019-11-16T13:53:39"^^xsd:dateTime ;
-  geo:lat 53.2091 ;
-  geo:long 5.7906 ;
+  dcterms:date "2019-11-16T13:53:39"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2091 ;
+    geo:long 5.7906
+  ] ;
   :nd "+53.2091+005.7906"^^ll: .
 

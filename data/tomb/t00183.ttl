@@ -7,12 +7,12 @@ tomb:t00183 a t:tombstone.n.01 ;
        t00183:p2 .
 
 t00183:c1 a t:village.n.02 ;
-  :geo place:Wolphaartsdijk2744199 ;
-  :place "WOLPHAARTSDIJK" .
+  :place place:Wolphaartsdijk2744199 ;
+  :name "WOLPHAARTSDIJK" .
 
 t00183:c2 a t:town.n.01 ;
-  :geo place:Haren2754841 ;
-  :place "HAREN" .
+  :place place:Haren2754841 ;
+  :name "HAREN" .
 
 t00183:p1 a t:female.n.02 ;
   :dob "1864-10-03" ;
@@ -29,16 +29,19 @@ t00183:r1 a t:widow.n.01 ;
   :tgt t00183:p2 .
 
 t00183:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00183.jpg" ;
-  :date "2019-10-05T10:16:59"^^xsd:dateTime ;
-  geo:lat 53.1913 ;
-  geo:long 6.5940 ;
+  dcterms:date "2019-10-05T10:16:59"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1913 ;
+    geo:long 6.5940
+  ] ;
   :nd "+53.1913+006.5940"^^ll: .
 

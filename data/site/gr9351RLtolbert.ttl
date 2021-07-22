@@ -1,6 +1,6 @@
 site:gr9351RLtolbert a t:burial_site.n.01 ;
   :sitename "Oldebertweg, Tolbert" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Oldebertweg" ;
     schema:addressLocality "Tolbert" ;
@@ -8,8 +8,11 @@ site:gr9351RLtolbert a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9351 RL"
   ] ;
-  geo:lat 53.1721 ;
-  geo:long 6.3657 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1721 ;
+    geo:long 6.3657
+  ] ;
   :nd "+53.1721+006.3657"^^ll: .
 
 

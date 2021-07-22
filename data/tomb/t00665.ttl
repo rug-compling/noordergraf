@@ -12,12 +12,12 @@ tomb:t00665 a t:tombstone.n.01 ;
 t00665:a1 a t:weeping.a.02 .
 
 t00665:c1 a t:town.n.01 ;
-  :geo place:DeKnipe6697854 ;
-  :place "DE KNIPE" .
+  :place place:DeKnipe6697854 ;
+  :name "DE KNIPE" .
 
 t00665:c2 a t:city.n.01 ;
-  :geo place:Bolsward2758682 ;
-  :place "BOLSWARD" .
+  :place place:Bolsward2758682 ;
+  :name "BOLSWARD" .
 
 t00665:c3 a t:less.r.01 ;
   :op1 t00665:m1 ;
@@ -52,16 +52,19 @@ t00665:s2 a t:frond.n.01 .
 t00665:u1 a t:year.n.01 .
 
 t00665:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00665.jpg" ;
-  :date "2019-12-14T13:57:45"^^xsd:dateTime ;
-  geo:lat 53.0694 ;
-  geo:long 5.5243 ;
+  dcterms:date "2019-12-14T13:57:45"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0694 ;
+    geo:long 5.5243
+  ] ;
   :nd "+53.0694+005.5243"^^ll: .
 

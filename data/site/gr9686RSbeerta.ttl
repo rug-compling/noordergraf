@@ -1,6 +1,6 @@
 site:gr9686RSbeerta a t:burial_site.n.01 ;
   :sitename "Kerkstraat, Beerta" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Kerkstraat" ;
     schema:addressLocality "Beerta" ;
@@ -8,8 +8,11 @@ site:gr9686RSbeerta a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9686 RS"
   ] ;
-  geo:lat 53.1755 ;
-  geo:long 7.0959 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1755 ;
+    geo:long 7.0959
+  ] ;
   :nd "+53.1755+007.0959"^^ll: .
 
 

@@ -70,16 +70,19 @@ t00562:r8 a t:child.n.02 ;
   :tgt t00562:p6 .
 
 t00562:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00562.jpg" ;
-  :date "2019-11-24T13:42:58"^^xsd:dateTime ;
-  geo:lat 53.1047 ;
-  geo:long 6.8745 ;
+  dcterms:date "2019-11-24T13:42:58"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1047 ;
+    geo:long 6.8745
+  ] ;
   :nd "+53.1047+006.8745"^^ll: .
 

@@ -41,16 +41,19 @@ t00058:r6 a t:husband.n.01 ;
 t00058:s1 a t:wheat.n.01 .
 
 t00058:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00058.jpg" ;
-  :date "2019-09-27T17:40:03"^^xsd:dateTime ;
-  geo:lat 53.1633 ;
-  geo:long 6.6133 ;
+  dcterms:date "2019-09-27T17:40:03"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1633 ;
+    geo:long 6.6133
+  ] ;
   :nd "+53.1633+006.6133"^^ll: .
 

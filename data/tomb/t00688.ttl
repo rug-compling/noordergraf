@@ -8,12 +8,12 @@ tomb:t00688 a t:tombstone.n.01 ;
   :sym t00688:s1 .
 
 t00688:c1 a t:village.n.02 ;
-  :geo place:Wommels2744191 ;
-  :place "WOMMELS" .
+  :place place:Wommels2744191 ;
+  :name "WOMMELS" .
 
 t00688:c2 a t:city.n.01 ;
-  :geo place:Bolsward2758682 ;
-  :place "BOLSWARD" .
+  :place place:Bolsward2758682 ;
+  :name "BOLSWARD" .
 
 t00688:p1 a t:female.n.02 ;
   :dob "1875-09-15" ;
@@ -25,16 +25,19 @@ t00688:p1 a t:female.n.02 ;
 t00688:s1 a t:frond.n.01 .
 
 t00688:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00688.jpg" ;
-  :date "2019-12-14T13:16:26"^^xsd:dateTime ;
-  geo:lat 53.0673 ;
-  geo:long 5.5239 ;
+  dcterms:date "2019-12-14T13:16:26"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0673 ;
+    geo:long 5.5239
+  ] ;
   :nd "+53.0673+005.5239"^^ll: .
 

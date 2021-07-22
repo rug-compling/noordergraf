@@ -9,8 +9,8 @@ tomb:t01035 a t:tombstone.n.01 ;
        t01035:s2 .
 
 t01035:c1 a t:village.n.02 ;
-  :geo place:Noordhorn2749875 ;
-  :place "NOORDHORN" .
+  :place place:Noordhorn2749875 ;
+  :name "NOORDHORN" .
 
 t01035:p1 a t:male.n.02 ;
   :dob "1893-07-19" ;
@@ -24,16 +24,19 @@ t01035:s1 a t:frond.n.01 .
 t01035:s2 a t:ribbon.n.01 .
 
 t01035:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01035.jpg" ;
-  :date "2020-04-19T12:02:39"^^xsd:dateTime ;
-  geo:lat 53.2644 ;
-  geo:long 6.3937 ;
+  dcterms:date "2020-04-19T12:02:39"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2644 ;
+    geo:long 6.3937
+  ] ;
   :nd "+53.2644+006.3937"^^ll: .
 

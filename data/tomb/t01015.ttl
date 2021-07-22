@@ -43,16 +43,19 @@ t01015:s3 a t:butterfly.n.01 .
 t01015:s4 a t:snake.n.02 .
 
 t01015:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01015.jpg" ;
-  :date "2020-04-04T10:45:30"^^xsd:dateTime ;
-  geo:lat 53.1754 ;
-  geo:long 7.0954 ;
+  dcterms:date "2020-04-04T10:45:30"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1754 ;
+    geo:long 7.0954
+  ] ;
   :nd "+53.1754+007.0954"^^ll: .
 

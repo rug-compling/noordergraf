@@ -24,16 +24,19 @@ t01024:s3 a t:entity.n.01 .
 t01024:s4 a t:ribbon.n.01 .
 
 t01024:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01024.jpg" ;
-  :date "2020-04-17T18:27:41"^^xsd:dateTime ;
-  geo:lat 53.3808 ;
-  geo:long 6.8597 ;
+  dcterms:date "2020-04-17T18:27:41"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3808 ;
+    geo:long 6.8597
+  ] ;
   :nd "+53.3808+006.8597"^^ll: .
 

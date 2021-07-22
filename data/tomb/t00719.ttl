@@ -8,12 +8,12 @@ tomb:t00719 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00719:c1 a t:city.n.01 ;
-  :geo place:Gouda2755420 ;
-  :place "GOUDA" .
+  :place place:Gouda2755420 ;
+  :name "GOUDA" .
 
 t00719:c2 a t:town.n.01 ;
-  :geo place:Emmen2756136 ;
-  :place "EMMEN" .
+  :place place:Emmen2756136 ;
+  :name "EMMEN" .
 
 t00719:p1 a t:female.n.02 ;
   :dob "1850-02-20" ;
@@ -30,16 +30,19 @@ t00719:r1 a t:widow.n.01 ;
   :tgt t00719:p2 .
 
 t00719:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00719.jpg" ;
-  :date "2019-12-21T13:24:57"^^xsd:dateTime ;
-  geo:lat 52.7815 ;
-  geo:long 6.9001 ;
+  dcterms:date "2019-12-21T13:24:57"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7815 ;
+    geo:long 6.9001
+  ] ;
   :nd "+52.7815+006.9001"^^ll: .
 

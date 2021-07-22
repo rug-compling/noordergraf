@@ -10,12 +10,12 @@ tomb:t00351 a t:tombstone.n.01 ;
 t00351:a1 a t:weeping.a.02 .
 
 t00351:c1 a t:village.n.02 ;
-  :geo place:Donderen2756731 ;
-  :place "DONDEREN" .
+  :place place:Donderen2756731 ;
+  :name "DONDEREN" .
 
 t00351:c2 a t:village.n.02 ;
-  :geo place:Zeyen2743985 ;
-  :place "ZEIJEN" .
+  :place place:Zeyen2743985 ;
+  :name "ZEIJEN" .
 
 t00351:p1 a t:female.n.02 ;
   :dob "1871-06-08" ;
@@ -37,16 +37,19 @@ t00351:s1 a t:willow.n.01 ;
   :att t00351:a1 .
 
 t00351:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00351.jpg" ;
-  :date "2019-10-25T17:48:41"^^xsd:dateTime ;
-  geo:lat 53.0801 ;
-  geo:long 6.5729 ;
+  dcterms:date "2019-10-25T17:48:41"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0801 ;
+    geo:long 6.5729
+  ] ;
   :nd "+53.0801+006.5729"^^ll: .
 

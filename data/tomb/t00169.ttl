@@ -24,16 +24,19 @@ t00169:v2 a t:verse.n.01 ;
   :prt t00169:v1 .
 
 t00169:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00169.jpg" ;
-  :date "2019-10-05T10:45:50"^^xsd:dateTime ;
-  geo:lat 53.1901 ;
-  geo:long 6.5929 ;
+  dcterms:date "2019-10-05T10:45:50"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1901 ;
+    geo:long 6.5929
+  ] ;
   :nd "+53.1901+006.5929"^^ll: .
 

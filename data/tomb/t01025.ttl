@@ -12,12 +12,12 @@ tomb:t01025 a t:tombstone.n.01 ;
        t01025:s4 .
 
 t01025:c1 a t:village.n.02 ;
-  :geo place:Losdorp2751426 ;
-  :place "LOSDORP" .
+  :place place:Losdorp2751426 ;
+  :name "LOSDORP" .
 
 t01025:c2 a t:village.n.02 ;
-  :geo place:Bierum2758983 ;
-  :place "BIERUM" .
+  :place place:Bierum2758983 ;
+  :name "BIERUM" .
 
 t01025:p1 a t:female.n.02 ;
   :dob "1874-09-30" ;
@@ -43,16 +43,19 @@ t01025:s3 a t:entity.n.01 .
 t01025:s4 a t:ribbon.n.01 .
 
 t01025:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01025.jpg" ;
-  :date "2020-04-17T18:27:22"^^xsd:dateTime ;
-  geo:lat 53.3809 ;
-  geo:long 6.8597 ;
+  dcterms:date "2020-04-17T18:27:22"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3809 ;
+    geo:long 6.8597
+  ] ;
   :nd "+53.3809+006.8597"^^ll: .
 

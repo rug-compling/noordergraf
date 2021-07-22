@@ -11,8 +11,8 @@ tomb:t01023 a t:tombstone.n.01 ;
        t01023:s3 .
 
 t01023:c1 a t:village.n.02 ;
-  :geo place:Noorddijk2749981 ;
-  :place "NOORDDIJK" .
+  :place place:Noorddijk2749981 ;
+  :name "NOORDDIJK" .
 
 t01023:p1 a t:female.n.02 ;
   :dob "1787-10-13" ;
@@ -34,16 +34,19 @@ t01023:s2 a t:oak.n.03 .
 t01023:s3 a t:ribbon.n.01 .
 
 t01023:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01023.jpg" ;
-  :date "2020-04-05T12:16:59"^^xsd:dateTime ;
-  geo:lat 53.2442 ;
-  geo:long 6.6281 ;
+  dcterms:date "2020-04-05T12:16:59"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2442 ;
+    geo:long 6.6281
+  ] ;
   :nd "+53.2442+006.6281"^^ll: .
 

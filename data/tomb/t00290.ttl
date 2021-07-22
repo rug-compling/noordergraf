@@ -6,8 +6,8 @@ tomb:t00290 a t:tombstone.n.01 ;
   :ent t00290:p1 .
 
 t00290:c1 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00290:o1 a t:preacher.n.01 ;
   :beg "15-11-1925" ;
@@ -23,16 +23,19 @@ t00290:p1 a t:male.n.02 ;
   :pod t00290:c1 .
 
 t00290:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00290.jpg" ;
-  :date "2019-10-19T14:45:46"^^xsd:dateTime ;
-  geo:lat 52.7152 ;
-  geo:long 6.4741 ;
+  dcterms:date "2019-10-19T14:45:46"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7152 ;
+    geo:long 6.4741
+  ] ;
   :nd "+52.7152+006.4741"^^ll: .
 

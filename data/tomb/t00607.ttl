@@ -12,12 +12,12 @@ tomb:t00607 a t:tombstone.n.01 ;
        t00607:s4 .
 
 t00607:c1 a t:town.n.01 ;
-  :geo place:Aurich2954006 ;
-  :place "AURICH" .
+  :place place:Aurich2954006 ;
+  :name "AURICH" .
 
 t00607:c2 a t:town.n.01 ;
-  :geo place:Hoogezand2753706 ;
-  :place "HOOGEZAND" .
+  :place place:Hoogezand2753706 ;
+  :name "HOOGEZAND" .
 
 t00607:p1 a t:female.n.02 ;
   :dob "1818-04-10" ;
@@ -45,16 +45,19 @@ t00607:s3 a t:branch.n.02 .
 t00607:s4 a t:heart.n.07 .
 
 t00607:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00607.jpg" ;
-  :date "2019-11-23T10:07:15"^^xsd:dateTime ;
-  geo:lat 53.1643 ;
-  geo:long 6.7540 ;
+  dcterms:date "2019-11-23T10:07:15"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1643 ;
+    geo:long 6.7540
+  ] ;
   :nd "+53.1643+006.7540"^^ll: .
 

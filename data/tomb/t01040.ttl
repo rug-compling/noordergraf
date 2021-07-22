@@ -12,12 +12,12 @@ tomb:t01040 a t:tombstone.n.01 ;
 t01040:a1 a t:weeping.a.02 .
 
 t01040:c1 a t:village.n.02 ;
-  :geo place:Ezinge2755938 ;
-  :place "EZINGE" .
+  :place place:Ezinge2755938 ;
+  :name "EZINGE" .
 
 t01040:c2 a t:village.n.02 ;
-  :geo place:Noordhorn2749875 ;
-  :place "NOORDHORN" .
+  :place place:Noordhorn2749875 ;
+  :name "NOORDHORN" .
 
 t01040:g1 a t:group.n.01 ;
   :mem t01040:p1 ,
@@ -44,16 +44,19 @@ t01040:s1 a t:willow.n.01 ;
   :att t01040:a1 .
 
 t01040:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01040.jpg" ;
-  :date "2020-04-19T12:03:10"^^xsd:dateTime ;
-  geo:lat 53.2645 ;
-  geo:long 6.3938 ;
+  dcterms:date "2020-04-19T12:03:10"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2645 ;
+    geo:long 6.3938
+  ] ;
   :nd "+53.2645+006.3938"^^ll: .
 

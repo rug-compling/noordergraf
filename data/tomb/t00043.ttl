@@ -23,16 +23,19 @@ t00043:r2 a t:brother-in-law.n.01 ;
   :tgt t00043:g1 .
 
 t00043:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00043.jpg" ;
-  :date "2019-09-27T17:51:01"^^xsd:dateTime ;
-  geo:lat 53.1630 ;
-  geo:long 6.6123 ;
+  dcterms:date "2019-09-27T17:51:01"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1630 ;
+    geo:long 6.6123
+  ] ;
   :nd "+53.1630+006.6123"^^ll: .
 

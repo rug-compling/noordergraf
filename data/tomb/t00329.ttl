@@ -12,16 +12,16 @@ tomb:t00329 a t:tombstone.n.01 ;
        t00329:p7 .
 
 t00329:c1 a t:village.n.02 ;
-  :geo place:Huizen2753468 ;
-  :place "HUIZEN" .
+  :place place:Huizen2753468 ;
+  :name "HUIZEN" .
 
 t00329:c2 a t:town.n.01 ;
-  :geo place:Hoogeveen2753719 ;
-  :place "HOOGEVEEN" .
+  :place place:Hoogeveen2753719 ;
+  :name "HOOGEVEEN" .
 
 t00329:c3 a t:village.n.02 ;
-  :geo place:Dedemsvaart2757698 ;
-  :place "DEDEMSVAART" .
+  :place place:Dedemsvaart2757698 ;
+  :name "DEDEMSVAART" .
 
 t00329:p1 a t:female.n.02 ;
   :dob "1897-12-23" ;
@@ -102,16 +102,19 @@ t00329:r9 a t:grandchild.n.01 ;
   :tgt t00329:p2 .
 
 t00329:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00329.jpg" ;
-  :date "2019-10-19T14:23:42"^^xsd:dateTime ;
-  geo:lat 52.7158 ;
-  geo:long 6.4739 ;
+  dcterms:date "2019-10-19T14:23:42"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7158 ;
+    geo:long 6.4739
+  ] ;
   :nd "+52.7158+006.4739"^^ll: .
 

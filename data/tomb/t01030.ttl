@@ -9,16 +9,16 @@ tomb:t01030 a t:tombstone.n.01 ;
   :quo "RUST IN VREDE"@nld .
 
 t01030:c1 a t:village.n.02 ;
-  :geo place:Onderdendam2749601 ;
-  :place "ONDERDENDAM" .
+  :place place:Onderdendam2749601 ;
+  :name "ONDERDENDAM" .
 
 t01030:c2 a t:village.n.02 ;
-  :geo place:Noordhorn2749875 ;
-  :place "NOORDHORN" .
+  :place place:Noordhorn2749875 ;
+  :name "NOORDHORN" .
 
 t01030:c3 a t:village.n.02 ;
-  :geo place:Garsthuizen2755720 ;
-  :place "GARSTHUIZEN" .
+  :place place:Garsthuizen2755720 ;
+  :name "GARSTHUIZEN" .
 
 t01030:p1 a t:female.n.02 ;
   :dob "1822-09-22" ;
@@ -44,16 +44,19 @@ t01030:r2 a t:designer.n.01 ;
   :tgt tomb:t01030 .
 
 t01030:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01030.jpg" ;
-  :date "2020-04-19T12:13:12"^^xsd:dateTime ;
-  geo:lat 53.2647 ;
-  geo:long 6.3943 ;
+  dcterms:date "2020-04-19T12:13:12"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2647 ;
+    geo:long 6.3943
+  ] ;
   :nd "+53.2647+006.3943"^^ll: .
 

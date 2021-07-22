@@ -7,8 +7,8 @@ tomb:t00797 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00797:c1 a t:city.n.01 ;
-  :geo place:Haarlem2755003 ;
-  :place "HAARLEM" .
+  :place place:Haarlem2755003 ;
+  :name "HAARLEM" .
 
 t00797:p1 a t:male.n.02 ;
   :dod "1945-04-20" ;
@@ -16,16 +16,19 @@ t00797:p1 a t:male.n.02 ;
   :pob t00797:c1 .
 
 t00797:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00797.jpg" ;
-  :date "2020-01-18T12:57:25"^^xsd:dateTime ;
-  geo:lat 53.2772 ;
-  geo:long 6.6948 ;
+  dcterms:date "2020-01-18T12:57:25"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2772 ;
+    geo:long 6.6948
+  ] ;
   :nd "+53.2772+006.6948"^^ll: .
 

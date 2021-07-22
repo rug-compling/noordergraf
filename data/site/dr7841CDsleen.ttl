@@ -1,6 +1,6 @@
 site:dr7841CDsleen a t:burial_site.n.01 ;
   :sitename "Algemene Begraafplaats Sleen" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Boterakkersweg 6" ;
     schema:addressLocality "Sleen" ;
@@ -8,8 +8,11 @@ site:dr7841CDsleen a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "7841 CD"
   ] ;
-  geo:lat 52.7771 ;
-  geo:long 6.8040 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7771 ;
+    geo:long 6.8040
+  ] ;
   :nd "+52.7771+006.8040"^^ll: .
 
 

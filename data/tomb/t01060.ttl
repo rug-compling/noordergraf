@@ -9,8 +9,8 @@ tomb:t01060 a t:tombstone.n.01 ;
   :sym t01060:s1 .
 
 t01060:c1 a t:hamlet.n.03 ;
-  :geo place:Menneweer12253656 ;
-  :place "MENNEWEER" .
+  :place place:Menneweer12253656 ;
+  :name "MENNEWEER" .
 
 t01060:o1 a t:farmer.n.01 ;
   :hco "61220" ;
@@ -30,16 +30,19 @@ t01060:p2 a t:person.n.01 ;
 t01060:s1 a t:pigeon.n.01 .
 
 t01060:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01060.jpg" ;
-  :date "2020-05-02T15:51:33"^^xsd:dateTime ;
-  geo:lat 53.3607 ;
-  geo:long 6.2933 ;
+  dcterms:date "2020-05-02T15:51:33"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3607 ;
+    geo:long 6.2933
+  ] ;
   :nd "+53.3607+006.2933"^^ll: .
 

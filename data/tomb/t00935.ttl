@@ -20,16 +20,19 @@ t00935:r1 a t:mother.n.01 ;
 t00935:r2 a t:grandmother.n.01 .
 
 t00935:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00935.jpg" ;
-  :date "2020-03-18T09:11:10"^^xsd:dateTime ;
-  geo:lat 53.2404 ;
-  geo:long 6.5476 ;
+  dcterms:date "2020-03-18T09:11:10"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2404 ;
+    geo:long 6.5476
+  ] ;
   :nd "+53.2404+006.5476"^^ll: .
 

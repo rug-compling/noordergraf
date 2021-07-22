@@ -10,16 +10,16 @@ tomb:t00683 a t:tombstone.n.01 ;
   :ref "PSALM 68:7 BERIJMD"@nld .
 
 t00683:c1 a t:village.n.02 ;
-  :geo place:Gaast2755789 ;
-  :place "GAAST" .
+  :place place:Gaast2755789 ;
+  :name "GAAST" .
 
 t00683:c2 a t:city.n.01 ;
-  :geo place:Bolsward2758682 ;
-  :place "BOLSWARD" .
+  :place place:Bolsward2758682 ;
+  :name "BOLSWARD" .
 
 t00683:c3 a t:town.n.01 ;
-  :geo place:Ferwoude2755913 ;
-  :place "FERWOUDE" .
+  :place place:Ferwoude2755913 ;
+  :name "FERWOUDE" .
 
 t00683:g1 a t:group.n.01 ;
   :mem t00683:p1 ,
@@ -54,16 +54,19 @@ t00683:r2 a t:daughter.n.01 ;
   :tgt t00683:g1 .
 
 t00683:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00683.jpg" ;
-  :date "2019-12-14T13:25:06"^^xsd:dateTime ;
-  geo:lat 53.0686 ;
-  geo:long 5.5222 ;
+  dcterms:date "2019-12-14T13:25:06"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0686 ;
+    geo:long 5.5222
+  ] ;
   :nd "+53.0686+005.5222"^^ll: .
 

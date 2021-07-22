@@ -1,9 +1,12 @@
 place:SaltLakeCity5780993 a t:place.n.01 ;
   :placename "Salt Lake City" ;
-  gn:featureCode <https://www.geonames.org/ontology#P.PPLA> ;
-  gn:locationMap <https://www.geonames.org/5780993/salt-lake-city.html> ;
-  gn:Feature <https://sws.geonames.org/5780993/> ;
-  geo:lat 40.7608 ;
-  geo:long -111.8911 ;
+  :geoCode <https://www.geonames.org/ontology#P.PPLA> ;
+  :geoMap <https://www.geonames.org/5780993/salt-lake-city.html> ;
+  :geoFeature <https://sws.geonames.org/5780993/> ;
+  :geo [
+    a geo:Point ;
+    geo:lat 40.7608 ;
+    geo:long -111.8911
+  ] ;
   :nd "+40.7608-111.8911"^^ll: .
 

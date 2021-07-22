@@ -7,8 +7,8 @@ tomb:t00801 a t:tombstone.n.01 ;
   :lan "NLD" .
 
 t00801:c1 a t:city.n.01 ;
-  :geo place:Maastricht2751283 ;
-  :place "MAASTRICHT" .
+  :place place:Maastricht2751283 ;
+  :name "MAASTRICHT" .
 
 t00801:p1 a t:male.n.02 ;
   :dob "1949-03-30" ;
@@ -23,16 +23,19 @@ t00801:r1 a t:noorderling.n.01 .
 t00801:r2 a t:european.n.01 .
 
 t00801:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00801.jpg" ;
-  :date "2020-01-19T14:15:28"^^xsd:dateTime ;
-  geo:lat 53.1930 ;
-  geo:long 6.5936 ;
+  dcterms:date "2020-01-19T14:15:28"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1930 ;
+    geo:long 6.5936
+  ] ;
   :nd "+53.1930+006.5936"^^ll: .
 

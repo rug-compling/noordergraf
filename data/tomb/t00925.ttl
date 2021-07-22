@@ -24,16 +24,19 @@ t00925:r2 a t:father.n.01 ;
 t00925:s1 a t:trombone.n.01 .
 
 t00925:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00925.jpg" ;
-  :date "2020-03-07T14:06:06"^^xsd:dateTime ;
-  geo:lat 53.1718 ;
-  geo:long 6.3655 ;
+  dcterms:date "2020-03-07T14:06:06"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1718 ;
+    geo:long 6.3655
+  ] ;
   :nd "+53.1718+006.3655"^^ll: .
 

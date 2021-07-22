@@ -21,16 +21,19 @@ t00483:p3 a t:male.n.02 ;
 t00483:s1 a t:cross.n.03 .
 
 t00483:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00483.jpg" ;
-  :date "2019-11-09T14:34:15"^^xsd:dateTime ;
-  geo:lat 53.2064 ;
-  geo:long 5.7691 ;
+  dcterms:date "2019-11-09T14:34:15"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2064 ;
+    geo:long 5.7691
+  ] ;
   :nd "+53.2064+005.7691"^^ll: .
 

@@ -7,12 +7,12 @@ tomb:t00012 a t:tombstone.n.01 ;
        t00012:p1 .
 
 t00012:c1 a t:city.n.01 ;
-  :geo place:Zutphen2743608 ;
-  :place "ZUTPHEN" .
+  :place place:Zutphen2743608 ;
+  :name "ZUTPHEN" .
 
 t00012:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00012:g1 a t:group.n.01 ;
   :rol t00012:r1 .
@@ -37,16 +37,19 @@ t00012:r3 a t:father.n.01 ;
   :tgt t00012:p3 .
 
 t00012:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00012.jpg" ;
-  :date "2019-09-25T16:24:06"^^xsd:dateTime ;
-  geo:lat 53.1910 ;
-  geo:long 6.5941 ;
+  dcterms:date "2019-09-25T16:24:06"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1910 ;
+    geo:long 6.5941
+  ] ;
   :nd "+53.1910+006.5941"^^ll: .
 

@@ -13,12 +13,12 @@ t00654:b1 a t:Revelation.n.04 ;
   :prt t00654:c3 .
 
 t00654:c1 a t:village.n.02 ;
-  :geo place:Hornhuizen2753604 ;
-  :place "HORNHUIZEN" .
+  :place place:Hornhuizen2753604 ;
+  :name "HORNHUIZEN" .
 
 t00654:c2 a t:town.n.01 ;
-  :geo place:Hoogezand2753706 ;
-  :place "HOOGEZAND" .
+  :place place:Hoogezand2753706 ;
+  :name "HOOGEZAND" .
 
 t00654:c3 a t:chapter.n.01 ;
   :ord 14 ;
@@ -45,16 +45,19 @@ t00654:v1 a t:verse.n.01 ;
   :txt "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN." .
 
 t00654:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00654.jpg" ;
-  :date "2019-11-23T10:08:56"^^xsd:dateTime ;
-  geo:lat 53.1637 ;
-  geo:long 6.7548 ;
+  dcterms:date "2019-11-23T10:08:56"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1637 ;
+    geo:long 6.7548
+  ] ;
   :nd "+53.1637+006.7548"^^ll: .
 

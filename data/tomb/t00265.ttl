@@ -19,16 +19,19 @@ t00265:r1 a t:widow.n.01 ;
   :tgt t00265:p2 .
 
 t00265:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00265.jpg" ;
-  :date "2019-10-14T10:59:58"^^xsd:dateTime ;
-  geo:lat 53.2228 ;
-  geo:long 6.6379 ;
+  dcterms:date "2019-10-14T10:59:58"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2228 ;
+    geo:long 6.6379
+  ] ;
   :nd "+53.2228+006.6379"^^ll: .
 

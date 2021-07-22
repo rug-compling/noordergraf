@@ -41,16 +41,19 @@ t01073:r4 a t:mother.n.01 ;
 t01073:s1 a t:anchor.n.01 .
 
 t01073:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01073.jpg" ;
-  :date "2020-05-15T17:34:33"^^xsd:dateTime ;
-  geo:lat 53.1626 ;
-  geo:long 6.6151 ;
+  dcterms:date "2020-05-15T17:34:33"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1626 ;
+    geo:long 6.6151
+  ] ;
   :nd "+53.1626+006.6151"^^ll: .
 

@@ -7,12 +7,12 @@ tomb:t00047 a t:tombstone.n.01 ;
   :sym t00047:s1 .
 
 t00047:c1 a t:hamlet.n.03 ;
-  :geo place:LutkeSaaxum12253640 ;
-  :place "LUTKE SAAXUM" .
+  :place place:LutkeSaaxum12253640 ;
+  :name "LUTKE SAAXUM" .
 
 t00047:c2 a t:town.n.01 ;
-  :geo place:Haren2754841 ;
-  :place "HAREN" .
+  :place place:Haren2754841 ;
+  :name "HAREN" .
 
 t00047:p1 a t:male.n.02 ;
   :dob "1849-11-03" ;
@@ -28,16 +28,19 @@ t00047:r2 a t:husband.n.01 ;
 t00047:s1 a t:frond.n.01 .
 
 t00047:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00047.jpg" ;
-  :date "2019-09-27T17:45:13"^^xsd:dateTime ;
-  geo:lat 53.1630 ;
-  geo:long 6.6129 ;
+  dcterms:date "2019-09-27T17:45:13"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1630 ;
+    geo:long 6.6129
+  ] ;
   :nd "+53.1630+006.6129"^^ll: .
 

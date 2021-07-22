@@ -1,6 +1,6 @@
 site:gr9479TNnoordlaren a t:burial_site.n.01 ;
   :sitename "Pollseweg, Noordlaren" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Pollseweg" ;
     schema:addressLocality "Noordlaren" ;
@@ -8,8 +8,11 @@ site:gr9479TNnoordlaren a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9479 TN"
   ] ;
-  geo:lat 53.1201 ;
-  geo:long 6.6587 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1201 ;
+    geo:long 6.6587
+  ] ;
   :nd "+53.1201+006.6587"^^ll: .
 
 

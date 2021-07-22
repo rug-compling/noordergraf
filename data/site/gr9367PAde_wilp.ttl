@@ -1,6 +1,6 @@
 site:gr9367PAde_wilp a t:burial_site.n.01 ;
   :sitename "Nennstiehlweg, De Wilp" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Meester Nennstiehlweg" ;
     schema:addressLocality "De Wilp" ;
@@ -8,7 +8,10 @@ site:gr9367PAde_wilp a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9367 PA"
   ] ;
-  geo:lat 53.1229 ;
-  geo:long 6.2503 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1229 ;
+    geo:long 6.2503
+  ] ;
   :nd "+53.1229+006.2503"^^ll: .
 

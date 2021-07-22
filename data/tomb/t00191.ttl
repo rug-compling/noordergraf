@@ -12,16 +12,16 @@ tomb:t00191 a t:tombstone.n.01 ;
 t00191:a1 a t:weeping.a.02 .
 
 t00191:c1 a t:village.n.02 ;
-  :geo place:Mildam2750805 ;
-  :place "MILDAM" .
+  :place place:Mildam2750805 ;
+  :name "MILDAM" .
 
 t00191:c2 a t:village.n.02 ;
-  :geo place:Oudeschoot2749007 ;
-  :place "OUDESCHOOT" .
+  :place place:Oudeschoot2749007 ;
+  :name "OUDESCHOOT" .
 
 t00191:c3 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00191:g1 a t:group.n.01 ;
   :mem t00191:p1 ,
@@ -56,16 +56,19 @@ t00191:s1 a t:willow.n.01 ;
   :att t00191:a1 .
 
 t00191:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00191.jpg" ;
-  :date "2019-10-05T09:58:27"^^xsd:dateTime ;
-  geo:lat 53.1899 ;
-  geo:long 6.5930 ;
+  dcterms:date "2019-10-05T09:58:27"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1899 ;
+    geo:long 6.5930
+  ] ;
   :nd "+53.1899+006.5930"^^ll: .
 

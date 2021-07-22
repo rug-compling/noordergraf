@@ -10,12 +10,12 @@ tomb:t00227 a t:tombstone.n.01 ;
 t00227:a1 a t:inverted.a.01 .
 
 t00227:c1 a t:village.n.02 ;
-  :geo place:Middelbert2750902 ;
-  :place "MIDDELBERT" .
+  :place place:Middelbert2750902 ;
+  :name "MIDDELBERT" .
 
 t00227:c2 a t:village.n.02 ;
-  :geo place:Helpman2754444 ;
-  :place "HELPMAN" .
+  :place place:Helpman2754444 ;
+  :name "HELPMAN" .
 
 t00227:p1 a t:male.n.02 ;
   :dob "1831-12-31" ;
@@ -44,16 +44,19 @@ t00227:s4 a t:torch.n.01 ;
   :att t00227:a1 .
 
 t00227:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00227.jpg" ;
-  :date "2019-10-08T14:40:37"^^xsd:dateTime ;
-  geo:lat 53.2225 ;
-  geo:long 6.6366 ;
+  dcterms:date "2019-10-08T14:40:37"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2225 ;
+    geo:long 6.6366
+  ] ;
   :nd "+53.2225+006.6366"^^ll: .
 

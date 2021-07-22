@@ -10,20 +10,20 @@ tomb:t00499 a t:tombstone.n.01 ;
 t00499:a1 a t:weeping.a.02 .
 
 t00499:c1 a t:village.n.02 ;
-  :geo place:Bozum2758452 ;
-  :place "BOZUM" .
+  :place place:Bozum2758452 ;
+  :name "BOZUM" .
 
 t00499:c2 a t:city.n.01 ;
-  :geo place:Leeuwarden2751792 ;
-  :place "LEEUWARDEN" .
+  :place place:Leeuwarden2751792 ;
+  :name "LEEUWARDEN" .
 
 t00499:c3 a t:village.n.02 ;
-  :geo place:Sexbierum2747380 ;
-  :place "SEXBIERUM" .
+  :place place:Sexbierum2747380 ;
+  :name "SEXBIERUM" .
 
 t00499:c4 a t:village.n.02 ;
-  :geo place:Huizum2753470 ;
-  :place "HUIZUM" .
+  :place place:Huizum2753470 ;
+  :name "HUIZUM" .
 
 t00499:p1 a t:female.n.02 ;
   :dob "1851-02-05" ;
@@ -43,16 +43,19 @@ t00499:s1 a t:willow.n.01 ;
   :att t00499:a1 .
 
 t00499:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00499.jpg" ;
-  :date "2019-11-16T14:07:10"^^xsd:dateTime ;
-  geo:lat 53.2093 ;
-  geo:long 5.7926 ;
+  dcterms:date "2019-11-16T14:07:10"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2093 ;
+    geo:long 5.7926
+  ] ;
   :nd "+53.2093+005.7926"^^ll: .
 

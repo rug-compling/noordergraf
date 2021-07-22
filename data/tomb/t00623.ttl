@@ -11,8 +11,8 @@ tomb:t00623 a t:tombstone.n.01 ;
        t00623:s3 .
 
 t00623:c1 a t:village.n.02 ;
-  :geo place:Scheemda2747661 ;
-  :place "SCHEEMDA" .
+  :place place:Scheemda2747661 ;
+  :name "SCHEEMDA" .
 
 t00623:p1 a t:female.n.02 ;
   :dob "1818-11-30" ;
@@ -35,16 +35,19 @@ t00623:s2 a t:oak.n.02 ;
 t00623:s3 a t:entity.n.01 .
 
 t00623:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00623.jpg" ;
-  :date "2019-11-23T10:01:06"^^xsd:dateTime ;
-  geo:lat 53.1643 ;
-  geo:long 6.7541 ;
+  dcterms:date "2019-11-23T10:01:06"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1643 ;
+    geo:long 6.7541
+  ] ;
   :nd "+53.1643+006.7541"^^ll: .
 

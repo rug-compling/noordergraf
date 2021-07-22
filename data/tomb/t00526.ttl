@@ -13,26 +13,26 @@ t00526:b1 a t:Revelation.n.04 ;
   :prt t00526:c6 .
 
 t00526:c1 a t:city.n.01 ;
-  :geo place:Rembangan1629749 ;
-  :place "REMBANG" .
+  :place place:Rembangan1629749 ;
+  :name "REMBANG" .
 
 t00526:c2 a t:country.n.02 ;
-  :geo place:Indonesie1643084 ;
+  :place place:Indonesie1643084 ;
   :mem t00526:c1 ,
        t00526:c4 ;
-  :place "INDONESIË" .
+  :name "INDONESIË" .
 
 t00526:c3 a t:village.n.02 ;
-  :geo place:Sappemeer2747758 ;
-  :place "SAPPEMEER" .
+  :place place:Sappemeer2747758 ;
+  :name "SAPPEMEER" .
 
 t00526:c4 a t:city.n.01 ;
-  :geo place:Padang1633419 ;
-  :place "PADANG" .
+  :place place:Padang1633419 ;
+  :name "PADANG" .
 
 t00526:c5 a t:city.n.01 ;
-  :geo place:Zwolle2743477 ;
-  :place "ZWOLLE" .
+  :place place:Zwolle2743477 ;
+  :name "ZWOLLE" .
 
 t00526:c6 a t:chapter.n.01 ;
   :ord 14 ;
@@ -86,16 +86,19 @@ t00526:v1 a t:verse.n.01 ;
   :ord 13 .
 
 t00526:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00526.jpg" ;
-  :date "2019-11-23T10:36:02"^^xsd:dateTime ;
-  geo:lat 53.1650 ;
-  geo:long 6.7527 ;
+  dcterms:date "2019-11-23T10:36:02"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1650 ;
+    geo:long 6.7527
+  ] ;
   :nd "+53.1650+006.7527"^^ll: .
 

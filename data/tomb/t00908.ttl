@@ -11,12 +11,12 @@ tomb:t00908 a t:tombstone.n.01 ;
 t00908:a1 a t:weeping.a.02 .
 
 t00908:c1 a t:village.n.02 ;
-  :geo place:Midwolde2750830 ;
-  :place "MIDWOLDE" .
+  :place place:Midwolde2750830 ;
+  :name "MIDWOLDE" .
 
 t00908:c2 a t:village.n.02 ;
-  :geo place:Tolbert2746234 ;
-  :place "TOLBERT" .
+  :place place:Tolbert2746234 ;
+  :name "TOLBERT" .
 
 t00908:p1 a t:female.n.02 ;
   :dob "1869-06-10" ;
@@ -39,16 +39,19 @@ t00908:s1 a t:willow.n.01 ;
   :att t00908:a1 .
 
 t00908:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00908.jpg" ;
-  :date "2020-03-07T14:16:22"^^xsd:dateTime ;
-  geo:lat 53.1718 ;
-  geo:long 6.3659 ;
+  dcterms:date "2020-03-07T14:16:22"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1718 ;
+    geo:long 6.3659
+  ] ;
   :nd "+53.1718+006.3659"^^ll: .
 

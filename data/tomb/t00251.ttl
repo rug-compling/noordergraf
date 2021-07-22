@@ -33,16 +33,19 @@ t00251:r3 a t:wife.n.01 ;
   :tgt t00251:p3 .
 
 t00251:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00251.jpg" ;
-  :date "2019-10-10T09:45:01"^^xsd:dateTime ;
-  geo:lat 53.2031 ;
-  geo:long 6.5652 ;
+  dcterms:date "2019-10-10T09:45:01"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2031 ;
+    geo:long 6.5652
+  ] ;
   :nd "+53.2031+006.5652"^^ll: .
 

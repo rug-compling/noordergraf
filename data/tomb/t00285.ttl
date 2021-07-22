@@ -8,16 +8,16 @@ tomb:t00285 a t:tombstone.n.01 ;
   :sym t00285:s1 .
 
 t00285:c1 a t:village.n.02 ;
-  :geo place:Warffum2745024 ;
-  :place "WARFFUM" .
+  :place place:Warffum2745024 ;
+  :name "WARFFUM" .
 
 t00285:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00285:c3 a t:village.n.02 ;
-  :geo place:Oosternieland2749429 ;
-  :place "OOSTERNIELAND" .
+  :place place:Oosternieland2749429 ;
+  :name "OOSTERNIELAND" .
 
 t00285:p1 a t:female.n.02 ;
   :dob "1894-12-18" ;
@@ -51,16 +51,19 @@ t00285:s2 a t:frond.n.01 .
 t00285:s3 a t:frond.n.01 .
 
 t00285:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00285.jpg" ;
-  :date "2019-10-16T16:50:54"^^xsd:dateTime ;
-  geo:lat 53.4038 ;
-  geo:long 6.7488 ;
+  dcterms:date "2019-10-16T16:50:54"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4038 ;
+    geo:long 6.7488
+  ] ;
   :nd "+53.4038+006.7488"^^ll: .
 

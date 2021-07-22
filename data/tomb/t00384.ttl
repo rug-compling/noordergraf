@@ -10,20 +10,20 @@ tomb:t00384 a t:tombstone.n.01 ;
   :sym t00384:s1 .
 
 t00384:c1 a t:village.n.02 ;
-  :geo place:Augustinusga2759611 ;
-  :place "AUGUSTINUSGA" .
+  :place place:Augustinusga2759611 ;
+  :name "AUGUSTINUSGA" .
 
 t00384:c2 a t:village.n.02 ;
-  :geo place:Gerkesklooster2755574 ;
-  :place "GERKESKLOOSTER" .
+  :place place:Gerkesklooster2755574 ;
+  :name "GERKESKLOOSTER" .
 
 t00384:c3 a t:village.n.02 ;
-  :geo place:Surhuisterveen2746558 ;
-  :place "SURHUISTERVEEN" .
+  :place place:Surhuisterveen2746558 ;
+  :name "SURHUISTERVEEN" .
 
 t00384:c4 a t:hamlet.n.03 ;
-  :geo place:Lutkepost2751365 ;
-  :place "LUTKEPOST" .
+  :place place:Lutkepost2751365 ;
+  :name "LUTKEPOST" .
 
 t00384:p1 a t:male.n.02 ;
   :dob "1860-11-28" ;
@@ -57,16 +57,19 @@ t00384:s2 a t:frond.n.01 .
 t00384:s3 a t:ribbon.n.01 .
 
 t00384:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00384.jpg" ;
-  :date "2019-10-26T15:05:51"^^xsd:dateTime ;
-  geo:lat 53.2519 ;
-  geo:long 6.1451 ;
+  dcterms:date "2019-10-26T15:05:51"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2519 ;
+    geo:long 6.1451
+  ] ;
   :nd "+53.2519+006.1451"^^ll: .
 

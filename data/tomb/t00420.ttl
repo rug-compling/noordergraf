@@ -7,12 +7,12 @@ tomb:t00420 a t:tombstone.n.01 ;
   :sym t00420:s1 .
 
 t00420:c1 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00420:c2 a t:village.n.02 ;
-  :geo place:Zuidlaren2743680 ;
-  :place "ZUIDLAREN" .
+  :place place:Zuidlaren2743680 ;
+  :name "ZUIDLAREN" .
 
 t00420:p1 a t:female.n.02 ;
   :dob "1931-10-07" ;
@@ -24,16 +24,19 @@ t00420:p1 a t:female.n.02 ;
 t00420:s1 a t:wren.n.02 .
 
 t00420:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00420.jpg" ;
-  :date "2019-11-02T11:41:39"^^xsd:dateTime ;
-  geo:lat 53.4795 ;
-  geo:long 6.1609 ;
+  dcterms:date "2019-11-02T11:41:39"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4795 ;
+    geo:long 6.1609
+  ] ;
   :nd "+53.4795+006.1609"^^ll: .
 

@@ -10,12 +10,12 @@ tomb:t00215 a t:tombstone.n.01 ;
 t00215:a1 a t:weeping.a.02 .
 
 t00215:c1 a t:village.n.02 ;
-  :geo place:TenBoer2746491 ;
-  :place "TEN BOER" .
+  :place place:TenBoer2746491 ;
+  :name "TEN BOER" .
 
 t00215:c2 a t:town.n.01 ;
-  :geo place:Middenmeer2750850 ;
-  :place "MIDDENMEER" .
+  :place place:Middenmeer2750850 ;
+  :name "MIDDENMEER" .
 
 t00215:p1 a t:male.n.02 ;
   :dob "1876-07-17" ;
@@ -35,16 +35,19 @@ t00215:s1 a t:willow.n.01 ;
   :att t00215:a1 .
 
 t00215:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00215.jpg" ;
-  :date "2019-10-08T14:47:20"^^xsd:dateTime ;
-  geo:lat 53.2226 ;
-  geo:long 6.6371 ;
+  dcterms:date "2019-10-08T14:47:20"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2226 ;
+    geo:long 6.6371
+  ] ;
   :nd "+53.2226+006.6371"^^ll: .
 

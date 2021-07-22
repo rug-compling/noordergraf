@@ -10,8 +10,8 @@ tomb:t00730 a t:tombstone.n.01 ;
 t00730:a1 a t:weeping.a.02 .
 
 t00730:c1 a t:town.n.01 ;
-  :geo place:Emmen2756136 ;
-  :place "EMMEN" .
+  :place place:Emmen2756136 ;
+  :name "EMMEN" .
 
 t00730:p1 a t:female.n.02 ;
   :dob "1900-05-10" ;
@@ -27,16 +27,19 @@ t00730:s1 a t:willow.n.01 ;
   :att t00730:a1 .
 
 t00730:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00730.jpg" ;
-  :date "2019-12-21T13:08:42"^^xsd:dateTime ;
-  geo:lat 52.7818 ;
-  geo:long 6.8969 ;
+  dcterms:date "2019-12-21T13:08:42"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7818 ;
+    geo:long 6.8969
+  ] ;
   :nd "+52.7818+006.8969"^^ll: .
 

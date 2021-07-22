@@ -9,8 +9,8 @@ tomb:t00686 a t:tombstone.n.01 ;
   :sym t00686:s1 .
 
 t00686:c1 a t:city.n.01 ;
-  :geo place:Bolsward2758682 ;
-  :place "BOLSWARD" .
+  :place place:Bolsward2758682 ;
+  :name "BOLSWARD" .
 
 t00686:p1 a t:male.n.02 ;
   :dob "1862-03-06" ;
@@ -30,16 +30,19 @@ t00686:r1 a t:spouse.n.01 ;
 t00686:s1 a t:rose.n.01 .
 
 t00686:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00686.jpg" ;
-  :date "2019-12-14T13:17:41"^^xsd:dateTime ;
-  geo:lat 53.0684 ;
-  geo:long 5.5234 ;
+  dcterms:date "2019-12-14T13:17:41"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0684 ;
+    geo:long 5.5234
+  ] ;
   :nd "+53.0684+005.5234"^^ll: .
 

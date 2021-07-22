@@ -11,8 +11,8 @@ tomb:t00762 a t:tombstone.n.01 ;
 t00762:a1 a t:weeping.a.02 .
 
 t00762:c1 a t:village.n.02 ;
-  :geo place:Oterdum2749209 ;
-  :place "OTERDUM" .
+  :place place:Oterdum2749209 ;
+  :name "OTERDUM" .
 
 t00762:p1 a t:male.n.02 ;
   :dob "1826-01-25" ;
@@ -32,16 +32,19 @@ t00762:s1 a t:willow.n.01 ;
   :att t00762:a1 .
 
 t00762:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00762.jpg" ;
-  :date "2019-12-28T12:44:13"^^xsd:dateTime ;
-  geo:lat 53.3112 ;
-  geo:long 6.9971 ;
+  dcterms:date "2019-12-28T12:44:13"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3112 ;
+    geo:long 6.9971
+  ] ;
   :nd "+53.3112+006.9971"^^ll: .
 

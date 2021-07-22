@@ -1,6 +1,6 @@
 site:gr9791KEten_boer a t:burial_site.n.01 ;
   :sitename "Stadsweg, Ten Boer" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Stadsweg 40" ;
     schema:addressLocality "Ten Boer" ;
@@ -8,8 +8,11 @@ site:gr9791KEten_boer a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "9791 KE"
   ] ;
-  geo:lat 53.2775 ;
-  geo:long 6.6939 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2775 ;
+    geo:long 6.6939
+  ] ;
   :nd "+53.2775+006.6939"^^ll: .
 
 

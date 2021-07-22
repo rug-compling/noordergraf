@@ -11,22 +11,22 @@ tomb:t00359 a t:tombstone.n.01 ;
 t00359:a1 a t:weeping.a.02 .
 
 t00359:c1 a t:village.n.02 ;
-  :geo place:Bunne2758108 ;
-  :place "BUNNE" .
+  :place place:Bunne2758108 ;
+  :name "BUNNE" .
 
 t00359:c2 a t:municipality.n.01 ;
-  :geo place:Vries2745189 ;
+  :place place:Vries2745189 ;
   :mem t00359:c1 ;
-  :place "VRIES" .
+  :name "VRIES" .
 
 t00359:c3 a t:village.n.02 ;
-  :geo place:Molkwerum2750647 ;
-  :place "MOLKWERUM" .
+  :place place:Molkwerum2750647 ;
+  :name "MOLKWERUM" .
 
 t00359:c4 a t:province.n.01 ;
-  :geo place:ProvincieFriesland2755812 ;
+  :place place:ProvincieFriesland2755812 ;
   :mem t00359:c3 ;
-  :place "FRIESLAND" .
+  :name "FRIESLAND" .
 
 t00359:p1 a t:female.n.02 ;
   :dob "1901-06-25" ;
@@ -55,16 +55,19 @@ t00359:s1 a t:willow.n.01 ;
   :att t00359:a1 .
 
 t00359:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00359.jpg" ;
-  :date "2019-10-25T17:32:05"^^xsd:dateTime ;
-  geo:lat 53.0800 ;
-  geo:long 6.5716 ;
+  dcterms:date "2019-10-25T17:32:05"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.0800 ;
+    geo:long 6.5716
+  ] ;
   :nd "+53.0800+006.5716"^^ll: .
 

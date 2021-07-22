@@ -9,12 +9,12 @@ tomb:t00634 a t:tombstone.n.01 ;
   :ref "PREDIKER 3:1"@nld .
 
 t00634:c1 a t:town.n.01 ;
-  :geo place:Haren2754841 ;
-  :place "HAREN" .
+  :place place:Haren2754841 ;
+  :name "HAREN" .
 
 t00634:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00634:i1 a t:statue.n.01 .
 
@@ -26,16 +26,19 @@ t00634:p1 a t:female.n.02 ;
   :pod t00634:c2 .
 
 t00634:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00634.jpg" ;
-  :date "2019-11-23T09:55:56"^^xsd:dateTime ;
-  geo:lat 53.1641 ;
-  geo:long 6.7545 ;
+  dcterms:date "2019-11-23T09:55:56"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1641 ;
+    geo:long 6.7545
+  ] ;
   :nd "+53.1641+006.7545"^^ll: .
 

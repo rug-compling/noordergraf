@@ -9,8 +9,8 @@ tomb:t00552 a t:tombstone.n.01 ;
   :sym t00552:s1 .
 
 t00552:c1 a t:city.n.01 ;
-  :geo place:Veendam2745783 ;
-  :place "VEENDAM" .
+  :place place:Veendam2745783 ;
+  :name "VEENDAM" .
 
 t00552:o1 a t:goldsmith.n.01 ;
   :hco "88050" ;
@@ -30,16 +30,19 @@ t00552:p2 a t:person.n.01 ;
 t00552:s1 a t:butterfly.n.01 .
 
 t00552:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00552.jpg" ;
-  :date "2019-11-24T14:02:27"^^xsd:dateTime ;
-  geo:lat 53.1045 ;
-  geo:long 6.8756 ;
+  dcterms:date "2019-11-24T14:02:27"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1045 ;
+    geo:long 6.8756
+  ] ;
   :nd "+53.1045+006.8756"^^ll: .
 

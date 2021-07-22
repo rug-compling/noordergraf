@@ -9,8 +9,8 @@ tomb:t00858 a t:tombstone.n.01 ;
   :sym t00858:s1 .
 
 t00858:c1 a t:village.n.02 ;
-  :geo place:Sleen2747182 ;
-  :place "SLEEN" .
+  :place place:Sleen2747182 ;
+  :name "SLEEN" .
 
 t00858:p1 a t:male.n.02 ;
   :dob "1864-06-08" ;
@@ -29,16 +29,19 @@ t00858:p2 a t:female.n.02 ;
 t00858:s1 a t:rose.n.01 .
 
 t00858:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00858.jpg" ;
-  :date "2020-02-15T15:36:51"^^xsd:dateTime ;
-  geo:lat 52.7765 ;
-  geo:long 6.8042 ;
+  dcterms:date "2020-02-15T15:36:51"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7765 ;
+    geo:long 6.8042
+  ] ;
   :nd "+52.7765+006.8042"^^ll: .
 

@@ -11,8 +11,8 @@ t00120:b1 a t:Revelation.n.04 ;
   :prt t00120:c2 .
 
 t00120:c1 a t:town.n.01 ;
-  :geo place:Haren2754841 ;
-  :place "HAREN" .
+  :place place:Haren2754841 ;
+  :name "HAREN" .
 
 t00120:c2 a t:chapter.n.01 ;
   :ord 14 ;
@@ -48,16 +48,19 @@ t00120:v1 a t:verse.n.01 ;
   :ord 3 .
 
 t00120:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00120.jpg" ;
-  :date "2019-09-20T17:45:27"^^xsd:dateTime ;
-  geo:lat 53.1628 ;
-  geo:long 6.6158 ;
+  dcterms:date "2019-09-20T17:45:27"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1628 ;
+    geo:long 6.6158
+  ] ;
   :nd "+53.1628+006.6158"^^ll: .
 

@@ -9,12 +9,12 @@ tomb:t00579 a t:tombstone.n.01 ;
        t00579:s3 .
 
 t00579:c1 a t:village.n.02 ;
-  :geo place:Obergum2749742 ;
-  :place "OBERGUM" .
+  :place place:Obergum2749742 ;
+  :name "OBERGUM" .
 
 t00579:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00579:p1 a t:male.n.02 ;
   :dob "1892-07-09" ;
@@ -30,16 +30,19 @@ t00579:s2 a t:oak.n.02 .
 t00579:s3 a t:branch.n.02 .
 
 t00579:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00579.jpg" ;
-  :date "2019-11-30T14:49:24"^^xsd:dateTime ;
-  geo:lat 53.3353 ;
-  geo:long 6.5129 ;
+  dcterms:date "2019-11-30T14:49:24"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3353 ;
+    geo:long 6.5129
+  ] ;
   :nd "+53.3353+006.5129"^^ll: .
 

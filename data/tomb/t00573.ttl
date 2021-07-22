@@ -13,12 +13,12 @@ tomb:t00573 a t:tombstone.n.01 ;
        t00573:s6 .
 
 t00573:c1 a t:city.n.01 ;
-  :geo place:Veendam2745783 ;
-  :place "VEENDAM" .
+  :place place:Veendam2745783 ;
+  :name "VEENDAM" .
 
 t00573:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00573:p1 a t:male.n.02 ;
   :dob "1858-09-19" ;
@@ -40,16 +40,19 @@ t00573:s5 a t:frond.n.01 .
 t00573:s6 a t:oak.n.02 .
 
 t00573:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00573.jpg" ;
-  :date "2019-11-24T13:38:00"^^xsd:dateTime ;
-  geo:lat 53.1048 ;
-  geo:long 6.8741 ;
+  dcterms:date "2019-11-24T13:38:00"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1048 ;
+    geo:long 6.8741
+  ] ;
   :nd "+53.1048+006.8741"^^ll: .
 

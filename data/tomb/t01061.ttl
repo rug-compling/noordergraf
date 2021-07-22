@@ -11,12 +11,12 @@ tomb:t01061 a t:tombstone.n.01 ;
 t01061:a1 a t:weeping.a.02 .
 
 t01061:c1 a t:village.n.02 ;
-  :geo place:Ureterp2745936 ;
-  :place "URETERP" .
+  :place place:Ureterp2745936 ;
+  :name "URETERP" .
 
 t01061:c2 a t:village.n.02 ;
-  :geo place:DeWilp2756932 ;
-  :place "DE WILP" .
+  :place place:DeWilp2756932 ;
+  :name "DE WILP" .
 
 t01061:p1 a t:male.n.02 ;
   :dob "1847-08-16" ;
@@ -36,16 +36,19 @@ t01061:s1 a t:willow.n.01 ;
   :att t01061:a1 .
 
 t01061:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01061.jpg" ;
-  :date "2020-05-01T15:31:19"^^xsd:dateTime ;
-  geo:lat 53.1232 ;
-  geo:long 6.2512 ;
+  dcterms:date "2020-05-01T15:31:19"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1232 ;
+    geo:long 6.2512
+  ] ;
   :nd "+53.1232+006.2512"^^ll: .
 

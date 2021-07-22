@@ -9,12 +9,12 @@ tomb:t00534 a t:tombstone.n.01 ;
   :sym t00534:s1 .
 
 t00534:c1 a t:village.n.02 ;
-  :geo place:Muntendam2750535 ;
-  :place "MUNTENDAM" .
+  :place place:Muntendam2750535 ;
+  :name "MUNTENDAM" .
 
 t00534:c2 a t:city.n.01 ;
-  :geo place:Veendam2745783 ;
-  :place "VEENDAM" .
+  :place place:Veendam2745783 ;
+  :name "VEENDAM" .
 
 t00534:p1 a t:female.n.02 ;
   :dob "1852-04-29" ;
@@ -46,16 +46,19 @@ t00534:s5 a t:oak.n.02 ;
   :prt t00534:s4 .
 
 t00534:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00534.jpg" ;
-  :date "2019-11-24T14:31:06"^^xsd:dateTime ;
-  geo:lat 53.1031 ;
-  geo:long 6.8743 ;
+  dcterms:date "2019-11-24T14:31:06"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1031 ;
+    geo:long 6.8743
+  ] ;
   :nd "+53.1031+006.8743"^^ll: .
 

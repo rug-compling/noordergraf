@@ -12,8 +12,8 @@ tomb:t01056 a t:tombstone.n.01 ;
 t01056:a1 a t:weeping.a.02 .
 
 t01056:c1 a t:village.n.02 ;
-  :geo place:Ulrum2745944 ;
-  :place "ULRUM" .
+  :place place:Ulrum2745944 ;
+  :name "ULRUM" .
 
 t01056:p1 a t:male.n.02 ;
   :dob "1859-11-18" ;
@@ -39,16 +39,19 @@ t01056:s1 a t:willow.n.01 ;
   :att t01056:a1 .
 
 t01056:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01056.jpg" ;
-  :date "2020-05-02T16:45:11"^^xsd:dateTime ;
-  geo:lat 53.3596 ;
-  geo:long 6.3364 ;
+  dcterms:date "2020-05-02T16:45:11"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.3596 ;
+    geo:long 6.3364
+  ] ;
   :nd "+53.3596+006.3364"^^ll: .
 

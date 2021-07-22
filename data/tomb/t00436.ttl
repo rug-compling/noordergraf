@@ -10,12 +10,12 @@ tomb:t00436 a t:tombstone.n.01 ;
   :sym t00436:s1 .
 
 t00436:c1 a t:village.n.02 ;
-  :geo place:Ternaard2746424 ;
-  :place "TERNAARD" .
+  :place place:Ternaard2746424 ;
+  :name "TERNAARD" .
 
 t00436:c2 a t:island.n.01 ;
-  :geo place:Schiermonnikoog2747591 ;
-  :place "SCHIERMONNIKOOG" .
+  :place place:Schiermonnikoog2747591 ;
+  :name "SCHIERMONNIKOOG" .
 
 t00436:p1 a t:male.n.02 ;
   :dob "1871-03-28" ;
@@ -34,16 +34,19 @@ t00436:r1 a t:spouse.n.01 ;
 t00436:s1 a t:frond.n.01 .
 
 t00436:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00436.jpg" ;
-  :date "2019-11-02T11:49:25"^^xsd:dateTime ;
-  geo:lat 53.4790 ;
-  geo:long 6.1606 ;
+  dcterms:date "2019-11-02T11:49:25"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.4790 ;
+    geo:long 6.1606
+  ] ;
   :nd "+53.4790+006.1606"^^ll: .
 

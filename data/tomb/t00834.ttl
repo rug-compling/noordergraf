@@ -13,8 +13,8 @@ tomb:t00834 a t:tombstone.n.01 ;
 t00834:a1 a t:weeping.a.02 .
 
 t00834:c1 a t:village.n.02 ;
-  :geo place:Erm2756040 ;
-  :place "ERM" .
+  :place place:Erm2756040 ;
+  :name "ERM" .
 
 t00834:g1 a t:group.n.01 ;
   :mem t00834:p2 ,
@@ -45,16 +45,19 @@ t00834:s1 a t:willow.n.01 ;
   :att t00834:a1 .
 
 t00834:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00834.jpg" ;
-  :date "2020-02-15T15:40:41"^^xsd:dateTime ;
-  geo:lat 52.7763 ;
-  geo:long 6.8047 ;
+  dcterms:date "2020-02-15T15:40:41"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7763 ;
+    geo:long 6.8047
+  ] ;
   :nd "+52.7763+006.8047"^^ll: .
 

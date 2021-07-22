@@ -9,12 +9,12 @@ tomb:t00382 a t:tombstone.n.01 ;
   :sym t00382:s1 .
 
 t00382:c1 a t:village.n.02 ;
-  :geo place:Buitenpost2758131 ;
-  :place "BUITENPOST" .
+  :place place:Buitenpost2758131 ;
+  :name "BUITENPOST" .
 
 t00382:c2 a t:city.n.01 ;
-  :geo place:Groningen2755251 ;
-  :place "GRONINGEN" .
+  :place place:Groningen2755251 ;
+  :name "GRONINGEN" .
 
 t00382:p1 a t:male.n.02 ;
   :dob "1867-07-25" ;
@@ -35,16 +35,19 @@ t00382:s3 a t:frond.n.01 .
 t00382:s4 a t:ribbon.n.01 .
 
 t00382:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00382.jpg" ;
-  :date "2019-10-26T15:06:55"^^xsd:dateTime ;
-  geo:lat 53.2518 ;
-  geo:long 6.1450 ;
+  dcterms:date "2019-10-26T15:06:55"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2518 ;
+    geo:long 6.1450
+  ] ;
   :nd "+53.2518+006.1450"^^ll: .
 

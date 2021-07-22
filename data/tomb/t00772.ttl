@@ -12,16 +12,16 @@ tomb:t00772 a t:tombstone.n.01 ;
 t00772:a1 a t:weeping.a.02 .
 
 t00772:c1 a t:village.n.02 ;
-  :geo place:Weerdinge2744927 ;
-  :place "WEERDINGE" .
+  :place place:Weerdinge2744927 ;
+  :name "WEERDINGE" .
 
 t00772:c2 a t:town.n.01 ;
-  :geo place:Emmen2756136 ;
-  :place "EMMEN" .
+  :place place:Emmen2756136 ;
+  :name "EMMEN" .
 
 t00772:c3 a t:village.n.02 ;
-  :geo place:Roswinkel2747903 ;
-  :place "ROSWINKEL" .
+  :place place:Roswinkel2747903 ;
+  :name "ROSWINKEL" .
 
 t00772:p1 a t:female.n.02 ;
   :dob "1808-10-27" ;
@@ -57,16 +57,19 @@ t00772:s1 a t:willow.n.01 ;
   :att t00772:a1 .
 
 t00772:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00772.jpg" ;
-  :date "2019-12-21T13:04:49"^^xsd:dateTime ;
-  geo:lat 52.7821 ;
-  geo:long 6.8980 ;
+  dcterms:date "2019-12-21T13:04:49"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7821 ;
+    geo:long 6.8980
+  ] ;
   :nd "+52.7821+006.8980"^^ll: .
 

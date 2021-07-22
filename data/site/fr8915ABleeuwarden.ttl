@@ -1,6 +1,6 @@
 site:fr8915ABleeuwarden a t:burial_site.n.01 ;
   :sitename "Noorder Begraafplaats, Leeuwarden" ;
-  schema:address [
+  :address [
     a schema:PostalAddress ;
     schema:streetAddress "Schapendijkje 4" ;
     schema:addressLocality "Leeuwarden" ;
@@ -8,8 +8,11 @@ site:fr8915ABleeuwarden a t:burial_site.n.01 ;
     schema:addressCountry "NL" ;
     schema:postalCode "8915 AB"
   ] ;
-  geo:lat 53.2135 ;
-  geo:long 5.7734 ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2135 ;
+    geo:long 5.7734
+  ] ;
   :nd "+53.2135+005.7734"^^ll: .
 
 

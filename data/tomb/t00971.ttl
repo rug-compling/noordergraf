@@ -9,13 +9,13 @@ tomb:t00971 a t:tombstone.n.01 ;
   :sym t00971:s1 .
 
 t00971:c1 a t:village.n.02 ;
-  :geo place:Noordlaren2749857 ;
-  :place "NOORDLAREN" .
+  :place place:Noordlaren2749857 ;
+  :name "NOORDLAREN" .
 
 t00971:c2 a t:municipality.n.01 ;
-  :geo place:Haren2754841 ;
+  :place place:Haren2754841 ;
   :mem t00971:c1 ;
-  :place "HAREN" .
+  :name "HAREN" .
 
 t00971:p1 a t:female.n.02 ;
   :dob "1864-09-03" ;
@@ -35,16 +35,19 @@ t00971:r1 a t:spouse.n.01 ;
 t00971:s1 a t:butterfly.n.01 .
 
 t00971:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00971.jpg" ;
-  :date "2020-03-25T09:31:05"^^xsd:dateTime ;
-  geo:lat 53.1200 ;
-  geo:long 6.6583 ;
+  dcterms:date "2020-03-25T09:31:05"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.1200 ;
+    geo:long 6.6583
+  ] ;
   :nd "+53.1200+006.6583"^^ll: .
 

@@ -9,8 +9,8 @@ tomb:t00645 a t:tombstone.n.01 ;
   :sym t00645:s1 .
 
 t00645:c1 a t:city.n.01 ;
-  :geo place:Delft2757345 ;
-  :place "DELFT" .
+  :place place:Delft2757345 ;
+  :name "DELFT" .
 
 t00645:p1 a t:male.n.02 ;
   :dob "1912-03-26" ;
@@ -36,16 +36,19 @@ t00645:r3 a t:spouse.n.01 ;
 t00645:s1 a t:frond.n.01 .
 
 t00645:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00645.jpg" ;
-  :date "2019-12-08T11:20:47"^^xsd:dateTime ;
-  geo:lat 53.2089 ;
-  geo:long 6.6479 ;
+  dcterms:date "2019-12-08T11:20:47"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 53.2089 ;
+    geo:long 6.6479
+  ] ;
   :nd "+53.2089+006.6479"^^ll: .
 

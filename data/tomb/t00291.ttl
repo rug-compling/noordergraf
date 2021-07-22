@@ -27,16 +27,19 @@ t00291:s1 a t:willow.n.01 ;
   :att t00291:a1 .
 
 t00291:im1 a t:photo.n.01 ;
-  # cc:attributionName "J. Doe" ;
-  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  # dcterms:creator "J. Doe" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00291.jpg" ;
-  :date "2019-10-19T14:44:21"^^xsd:dateTime ;
-  geo:lat 52.7151 ;
-  geo:long 6.4740 ;
+  dcterms:date "2019-10-19T14:44:21"^^xsd:dateTime ;
+  :geo [
+    a geo:Point ;
+    geo:lat 52.7151 ;
+    geo:long 6.4740
+  ] ;
   :nd "+52.7151+006.4740"^^ll: .
 
