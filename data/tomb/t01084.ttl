@@ -1,33 +1,33 @@
 @prefix t01084: <https://noordergraf.rug.nl/tomb/t01084#> .
 
-tomb:t01084 a t:tombstone.n.01 ;
+tomb:t01084 a :Tomb ;
   :image t01084:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t01084:p1 ,
        t01084:p3 ;
   :lan "NLD" .
 
-t01084:c1 a t:village.n.02 ;
+t01084:c1 a :Village.n.02 ;
   :place place:NieuwePekela2750272 ;
   :name "NIEUWE PEKELA" .
 
-t01084:c2 a t:village.n.02 ;
+t01084:c2 a :Village.n.02 ;
   :place place:Warnsveld2745003 ;
   :name "WARNSVELD" .
 
-t01084:c3 a t:village.n.02 ;
+t01084:c3 a :Village.n.02 ;
   :place place:OudePekela2749034 ;
   :name "OUDE PEKELA" .
 
-t01084:c4 a t:city.n.01 ;
+t01084:c4 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t01084:g2 a t:people.n.01 ;
+t01084:g2 a :People.n.01 ;
   :mem t01084:p2 ,
        t01084:p3 .
 
-t01084:p1 a t:male.n.02 ;
+t01084:p1 a :Male ;
   :dob "1879-08-25" ;
   :dod "1945-05-30" ;
   :nam "EGBERT ROELF KLEVE" ;
@@ -35,10 +35,10 @@ t01084:p1 a t:male.n.02 ;
   :pod t01084:c2 ;
   :rol t01084:r1 .
 
-t01084:p2 a t:male.n.02 ;
+t01084:p2 a :Male ;
   :nam "EVERT KLEVE" .
 
-t01084:p3 a t:female.n.02 ;
+t01084:p3 a :Female ;
   :dob "1853-10-01" ;
   :dod "1936-03-07" ;
   :nam "LUCRETIA MIDDEL" ;
@@ -46,22 +46,22 @@ t01084:p3 a t:female.n.02 ;
   :pod t01084:c4 ;
   :rol t01084:r2 .
 
-t01084:r1 a t:son.n.01 ;
+t01084:r1 a :Son.n.01 ;
   :tgt t01084:g2 .
 
-t01084:r2 a t:widow.n.01 ;
+t01084:r2 a :Widow.n.01 ;
   :tgt t01084:p2 .
 
-t01084:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01084:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01084.jpg" ;
-  dcterms:date "2020-06-09T17:19:23"^^xsd:dateTime ;
+  dc:date "2020-06-09T17:19:23"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1901 ;

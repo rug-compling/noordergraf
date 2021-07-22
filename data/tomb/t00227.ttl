@@ -1,23 +1,23 @@
 @prefix t00227: <https://noordergraf.rug.nl/tomb/t00227#> .
 
-tomb:t00227 a t:tombstone.n.01 ;
+tomb:t00227 a :Tomb ;
   :image t00227:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00227:p1 ,
        t00227:p2 ;
   :sym t00227:s1 .
 
-t00227:a1 a t:inverted.a.01 .
+t00227:a1 a :Inverted.a.01 .
 
-t00227:c1 a t:village.n.02 ;
+t00227:c1 a :Village.n.02 ;
   :place place:Middelbert2750902 ;
   :name "MIDDELBERT" .
 
-t00227:c2 a t:village.n.02 ;
+t00227:c2 a :Village.n.02 ;
   :place place:Helpman2754444 ;
   :name "HELPMAN" .
 
-t00227:p1 a t:male.n.02 ;
+t00227:p1 a :Male ;
   :dob "1831-12-31" ;
   :dod "1902-06-15" ;
   :nam "KOOP JANS EMMELKAMP" ;
@@ -25,34 +25,34 @@ t00227:p1 a t:male.n.02 ;
   :pod t00227:c2 ;
   :rol t00227:r1 .
 
-t00227:p2 a t:female.n.02 ;
+t00227:p2 a :Female ;
   :nam "AUKTJE VELTHUIS" .
 
-t00227:r1 a t:spouse.n.01 ;
+t00227:r1 a :Spouse.n.01 ;
   :tgt t00227:p2 .
 
-t00227:s1 a t:composite.n.01 ;
+t00227:s1 a :Composite.n.01 ;
   :prt t00227:s2 ,
        t00227:s3 ,
        t00227:s4 .
 
-t00227:s2 a t:sandglass.n.01 .
+t00227:s2 a :Sandglass.n.01 .
 
-t00227:s3 a t:scythe.n.01 .
+t00227:s3 a :Scythe.n.01 .
 
-t00227:s4 a t:torch.n.01 ;
+t00227:s4 a :Torch.n.01 ;
   :att t00227:a1 .
 
-t00227:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00227:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00227.jpg" ;
-  dcterms:date "2019-10-08T14:40:37"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:40:37"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2225 ;

@@ -1,50 +1,50 @@
 @prefix t00841: <https://noordergraf.rug.nl/tomb/t00841#> .
 
-tomb:t00841 a t:tombstone.n.01 ;
+tomb:t00841 a :Tomb ;
   :image t00841:im1 ;
   :site site:fr8899AWoost_vlieland ;
   :ent t00841:p1 ,
        t00841:p2 ;
   :quo "NAAR JEZUS HEEN"@nld .
 
-t00841:g1 a t:group.n.01 ;
+t00841:g1 a :Group.n.01 ;
   :mem t00841:o3 ,
        t00841:o4 .
 
-t00841:o1 a t:painter.n.01 ;
+t00841:o1 a :Painter.n.01 ;
   :hco "16130" .
 
-t00841:o2 a t:consul.n.01 ;
+t00841:o2 a :Consul.n.01 ;
   :hco "20210" ;
   :thm t00841:g1 .
 
-t00841:o3 a t:state.n.04 ;
+t00841:o3 a :State.n.04 ;
   :nam "NOORWEGEN" .
 
-t00841:o4 a t:state.n.04 ;
+t00841:o4 a :State.n.04 ;
   :nam "ZWEDEN" .
 
-t00841:p1 a t:female.n.02 ;
+t00841:p1 a :Female ;
   :dod "1922-12-18" ;
   :nam "BETZY AKERSLOOT-BERG" ;
   :occ t00841:o1 .
 
-t00841:p2 a t:male.n.02 ;
+t00841:p2 a :Male ;
   :dod "1929-10-16" ;
   :nam "GOOSWINUS GERARDUS AKERSLOOT" ;
   :occ t00841:o2 ;
   :quo "RIDDER TWEEDE KLASSE IN DE ST OLOFS-ORDE VAN NOORWEGEN" .
 
-t00841:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00841:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00841.jpg" ;
-  dcterms:date "2020-02-20T14:46:40"^^xsd:dateTime ;
+  dc:date "2020-02-20T14:46:40"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2958 ;

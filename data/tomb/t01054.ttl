@@ -1,48 +1,48 @@
 @prefix t01054: <https://noordergraf.rug.nl/tomb/t01054#> .
 
-tomb:t01054 a t:tombstone.n.01 ;
+tomb:t01054 a :Tomb ;
   :image t01054:im1 ;
   :site site:gr9975VRvierhuizen ;
   :ent t01054:p1 ,
        t01054:p2 ;
   :lan "NLD" .
 
-t01054:c1 a t:village.n.02 ;
+t01054:c1 a :Village.n.02 ;
   :place place:Ulrum2745944 ;
   :name "ULRUM" .
 
-t01054:c2 a t:village.n.02 ;
+t01054:c2 a :Village.n.02 ;
   :place place:Vierhuizen2745553 ;
   :name "VIERHUIZEN" .
 
-t01054:c3 a t:town.n.01 ;
+t01054:c3 a :Town.n.01 ;
   :place place:Opende2749302 ;
   :name "OPENDE" .
 
-t01054:p1 a t:female.n.02 ;
+t01054:p1 a :Female ;
   :dob "1894-03-12" ;
   :dod "1946-12-26" ;
   :nam "PIETER ROZEMA" ;
   :pob t01054:c1 ;
   :pod t01054:c2 .
 
-t01054:p2 a t:female.n.02 ;
+t01054:p2 a :Female ;
   :dob "1884-06-06" ;
   :dod "1972-05-04" ;
   :nam "TRIJNTJE VOS" ;
   :pob t01054:c1 ;
   :pod t01054:c3 .
 
-t01054:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01054:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01054.jpg" ;
-  dcterms:date "2020-05-02T15:55:36"^^xsd:dateTime ;
+  dc:date "2020-05-02T15:55:36"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3605 ;

@@ -1,6 +1,6 @@
 @prefix t00660: <https://noordergraf.rug.nl/tomb/t00660#> .
 
-tomb:t00660 a t:tombstone.n.01 ;
+tomb:t00660 a :Tomb ;
   :image t00660:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00660:p1 ,
@@ -9,48 +9,48 @@ tomb:t00660 a t:tombstone.n.01 ;
   :ref t00660:v1 ;
   :sym t00660:s1 .
 
-t00660:b1 a t:John.n.05 ;
+t00660:b1 a :John.n.05 ;
   :prt t00660:c3 .
 
-t00660:c3 a t:chapter.n.01 ;
+t00660:c3 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00660:v1 .
 
-t00660:p1 a t:male.n.02 ;
+t00660:p1 a :Male ;
   :dob "1887-07-06" ;
   :dod "1938-02-02" ;
   :nam "PEITER LAUTENBACH" ;
   :rol t00660:r1 .
 
-t00660:p2 a t:female.n.02 ;
+t00660:p2 a :Female ;
   :dob "1893-07-25" ;
   :dod "1971-04-02" ;
   :nam "TJITSKE HESLINGA" ;
   :rol t00660:r2 .
 
-t00660:r1 a t:parent.n.01 ;
+t00660:r1 a :Parent.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00660:p3 .
 
-t00660:r2 a t:parent.n.01 ;
+t00660:r2 a :Parent.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00660:p3 .
 
-t00660:s1 a t:frond.n.01 .
+t00660:s1 a :Frond.n.01 .
 
-t00660:v1 a t:verse.n.01 ;
+t00660:v1 a :Verse.n.01 ;
   :ord 3 .
 
-t00660:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00660:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00660.jpg" ;
-  dcterms:date "2019-12-14T13:59:38"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:59:38"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0671 ;

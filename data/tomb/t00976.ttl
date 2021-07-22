@@ -1,6 +1,6 @@
 @prefix t00976: <https://noordergraf.rug.nl/tomb/t00976#> .
 
-tomb:t00976 a t:tombstone.n.01 ;
+tomb:t00976 a :Tomb ;
   :image t00976:im1 ;
   :site site:gr9606PEkropswolde ;
   :ent t00976:p1 ,
@@ -11,15 +11,15 @@ tomb:t00976 a t:tombstone.n.01 ;
        t00976:s3 ,
        t00976:s4 .
 
-t00976:c1 a t:village.n.02 ;
+t00976:c1 a :Village.n.02 ;
   :place place:Slochteren2747143 ;
   :name "SLOCHTEREN" .
 
-t00976:c2 a t:village.n.02 ;
+t00976:c2 a :Village.n.02 ;
   :place place:Noordlaren2749857 ;
   :name "NOORDLAREN" .
 
-t00976:p1 a t:male.n.02 ;
+t00976:p1 a :Male ;
   :dob "1801-02-24" ;
   :dod "1876-04-21" ;
   :nam "GEERT CORNELIS VROOM" ;
@@ -27,31 +27,31 @@ t00976:p1 a t:male.n.02 ;
   :pod t00976:c2 ;
   :rol t00976:r1 .
 
-t00976:p2 a t:female.n.02 ;
+t00976:p2 a :Female ;
   :nam "GRIETJE MANDEMA" .
 
-t00976:r1 a t:widower.n.01 ;
+t00976:r1 a :Widower.n.01 ;
   :beg "07-03-1863" ;
   :tgt t00976:p2 .
 
-t00976:s1 a t:butterfly.n.01 .
+t00976:s1 a :Butterfly.n.01 .
 
-t00976:s2 a t:oak.n.03 .
+t00976:s2 a :Oak.n.03 .
 
-t00976:s3 a t:oak.n.03 .
+t00976:s3 a :Oak.n.03 .
 
-t00976:s4 a t:ribbon.n.01 .
+t00976:s4 a :Ribbon.n.01 .
 
-t00976:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00976:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00976.jpg" ;
-  dcterms:date "2020-03-25T09:27:15"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:27:15"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1273 ;

@@ -1,6 +1,6 @@
 @prefix t01005: <https://noordergraf.rug.nl/tomb/t01005#> .
 
-tomb:t01005 a t:tombstone.n.01 ;
+tomb:t01005 a :Tomb ;
   :image t01005:im1 ;
   :site site:gr9686RSbeerta ;
   :ent t01005:g1 ,
@@ -14,46 +14,46 @@ tomb:t01005 a t:tombstone.n.01 ;
        t01005:s4 ,
        t01005:s5 .
 
-t01005:g1 a t:group.n.01 ;
+t01005:g1 a :Group.n.01 ;
   :mem t01005:p2 ,
        t01005:p3 .
 
-t01005:p1 a t:female.n.02 ;
+t01005:p1 a :Female ;
   :dob "1879-12-30" ;
   :dod "1908-05-23" ;
   :nam "GEESSIEN" ;
   :rol t01005:r1 .
 
-t01005:p2 a t:person.n.01 ;
+t01005:p2 a :Person ;
   :nam "A.S. VONK" .
 
-t01005:p3 a t:person.n.01 ;
+t01005:p3 a :Person ;
   :nam "A. MEIJER" .
 
-t01005:r1 a t:daughter.n.01 ;
+t01005:r1 a :Daughter.n.01 ;
   :att "GELIEFDE" ;
   :tgt t01005:g1 .
 
-t01005:s1 a t:frond.n.01 .
+t01005:s1 a :Frond.n.01 .
 
-t01005:s2 a t:frond.n.01 .
+t01005:s2 a :Frond.n.01 .
 
-t01005:s3 a t:snake.n.01 .
+t01005:s3 a :Snake.n.01 .
 
-t01005:s4 a t:butterfly.n.01 .
+t01005:s4 a :Butterfly.n.01 .
 
-t01005:s5 a t:cocoon.n.01 .
+t01005:s5 a :Cocoon.n.01 .
 
-t01005:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01005:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01005.jpg" ;
-  dcterms:date "2020-04-04T10:45:21"^^xsd:dateTime ;
+  dc:date "2020-04-04T10:45:21"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1756 ;

@@ -1,6 +1,6 @@
 @prefix t00164: <https://noordergraf.rug.nl/tomb/t00164#> .
 
-tomb:t00164 a t:tombstone.n.01 ;
+tomb:t00164 a :Tomb ;
   :image t00164:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00164:p1 ,
@@ -8,43 +8,43 @@ tomb:t00164 a t:tombstone.n.01 ;
        t00164:p3 ;
   :sym t00164:s1 .
 
-t00164:p1 a t:male.n.02 ;
+t00164:p1 a :Male ;
   :dob "1898-07-02" ;
   :dod "1910-01-31" ;
   :nam "FREDERIK MENNO EDENS" .
 
-t00164:p2 a t:male.n.02 ;
+t00164:p2 a :Male ;
   :dob "1871-02-22" ;
   :dod "1935-08-02" ;
   :nam "TAMMO EDENS" .
 
-t00164:p3 a t:female.n.02 ;
+t00164:p3 a :Female ;
   :dob "1873-02-21" ;
   :dod "1955-03-02" ;
   :nam "JELTJE PARÉ" ;
   :rol t00164:r1 .
 
-t00164:r1 a t:widow.n.01 ;
+t00164:r1 a :Widow.n.01 ;
   :tgt t00164:p2 .
 
-t00164:s1 a t:composite.n.01 ;
+t00164:s1 a :Composite.n.01 ;
   :prt t00164:s2 ,
        t00164:s3 .
 
-t00164:s2 a t:frond.n.01 .
+t00164:s2 a :Frond.n.01 .
 
-t00164:s3 a t:ribbon.n.01 .
+t00164:s3 a :Ribbon.n.01 .
 
-t00164:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00164:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00164.jpg" ;
-  dcterms:date "2019-10-04T10:57:53"^^xsd:dateTime ;
+  dc:date "2019-10-04T10:57:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2054 ;

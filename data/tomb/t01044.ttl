@@ -1,26 +1,26 @@
 @prefix t01044: <https://noordergraf.rug.nl/tomb/t01044#> .
 
-tomb:t01044 a t:tombstone.n.01 ;
+tomb:t01044 a :Tomb ;
   :image t01044:im1 ;
   :site site:gr9686RSbeerta ;
   :ent t01044:p1 ;
   :lan "NLD" .
 
-t01044:p1 a t:female.n.02 ;
+t01044:p1 a :Female ;
   :dob "1808-08-24" ;
   :dod "1884-02-26" ;
   :nam "EILKE SIKKES-FOLKERTS" .
 
-t01044:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01044:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01044.jpg" ;
-  dcterms:date "2020-04-04T10:59:39"^^xsd:dateTime ;
+  dc:date "2020-04-04T10:59:39"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1756 ;

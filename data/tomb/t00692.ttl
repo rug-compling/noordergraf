@@ -1,6 +1,6 @@
 @prefix t00692: <https://noordergraf.rug.nl/tomb/t00692#> .
 
-tomb:t00692 a t:tombstone.n.01 ;
+tomb:t00692 a :Tomb ;
   :image t00692:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00692:g1 ,
@@ -10,50 +10,50 @@ tomb:t00692 a t:tombstone.n.01 ;
   :img t00692:i1 ;
   :lan "NLD" .
 
-t00692:g1 a t:group.n.01 ;
+t00692:g1 a :Group.n.01 ;
   :mem t00692:p1 ,
        t00692:p2 ;
   :rol t00692:r1 .
 
-t00692:g2 a t:group.n.01 ;
+t00692:g2 a :Group.n.01 ;
   :rol t00692:r4 .
 
-t00692:i1 a t:portrait.n.02 ;
+t00692:i1 a :Portrait.n.02 ;
   :thm t00692:g1 .
 
-t00692:p1 a t:male.n.02 ;
+t00692:p1 a :Male ;
   :dob "1918-08-03" ;
   :dod "1971-03-27" ;
   :nam "KLAAS BOERSMA" ;
   :rol t00692:r2 .
 
-t00692:p2 a t:female.n.02 ;
+t00692:p2 a :Female ;
   :dob "1929-09-29" ;
   :dod "1978-02-17" ;
   :nam "GRIETJE ANDELA" ;
   :rol t00692:r3 .
 
-t00692:r1 a t:parent.n.01 ;
+t00692:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00692:g2 .
 
-t00692:r2 a t:grandfather.n.01 .
+t00692:r2 a :Grandfather.n.01 .
 
-t00692:r3 a t:grandmother.n.01 .
+t00692:r3 a :Grandmother.n.01 .
 
-t00692:r4 a t:child.n.02 ;
+t00692:r4 a :Child.n.02 ;
   :tgt t00692:g1 .
 
-t00692:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00692:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00692.jpg" ;
-  dcterms:date "2019-12-14T13:30:06"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:30:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0675 ;

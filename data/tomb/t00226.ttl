@@ -1,23 +1,23 @@
 @prefix t00226: <https://noordergraf.rug.nl/tomb/t00226#> .
 
-tomb:t00226 a t:tombstone.n.01 ;
+tomb:t00226 a :Tomb ;
   :image t00226:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00226:p1 ,
        t00226:p2 ;
   :sym t00226:s1 .
 
-t00226:a1 a t:inverted.a.01 .
+t00226:a1 a :Inverted.a.01 .
 
-t00226:c1 a t:hamlet.n.03 ;
+t00226:c1 a :Hamlet.n.03 ;
   :place place:Euvelgunne2755982 ;
   :name "EUVELGUNNE" .
 
-t00226:c2 a t:city.n.01 ;
+t00226:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00226:p1 a t:female.n.02 ;
+t00226:p1 a :Female ;
   :dob "1843-10-27" ;
   :dod "1923-02-07" ;
   :nam "AUKTJE VELTHUIS" ;
@@ -25,35 +25,35 @@ t00226:p1 a t:female.n.02 ;
   :pod t00226:c2 ;
   :rol t00226:r1 .
 
-t00226:p2 a t:male.n.02 ;
+t00226:p2 a :Male ;
   :nam "KOOP JANS EMMELKAMP" .
 
-t00226:r1 a t:widow.n.01 ;
+t00226:r1 a :Widow.n.01 ;
   :beg "15-07-1902" ;
   :tgt t00226:p2 .
 
-t00226:s1 a t:composite.n.01 ;
+t00226:s1 a :Composite.n.01 ;
   :prt t00226:s2 ,
        t00226:s3 ,
        t00226:s4 .
 
-t00226:s2 a t:sandglass.n.01 .
+t00226:s2 a :Sandglass.n.01 .
 
-t00226:s3 a t:scythe.n.01 .
+t00226:s3 a :Scythe.n.01 .
 
-t00226:s4 a t:torch.n.01 ;
+t00226:s4 a :Torch.n.01 ;
   :att t00226:a1 .
 
-t00226:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00226:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00226.jpg" ;
-  dcterms:date "2019-10-08T14:41:10"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:41:10"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2229 ;

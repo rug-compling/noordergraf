@@ -1,50 +1,50 @@
 @prefix t00507: <https://noordergraf.rug.nl/tomb/t00507#> .
 
-tomb:t00507 a t:tombstone.n.01 ;
+tomb:t00507 a :Tomb ;
   :image t00507:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00507:p1 ,
        t00507:p2 ,
        t00507:p3 .
 
-t00507:p1 a t:male.n.02 ;
+t00507:p1 a :Male ;
   :dob "1866-03-13" ;
   :dod "1925-12-14" ;
   :nam "GERRIT VAN DER MEER" ;
   :rol t00507:r1 .
 
-t00507:p2 a t:female.n.02 ;
+t00507:p2 a :Female ;
   :dob "1868-04-07" ;
   :dod "1934-05-31" ;
   :nam "JOHANNA HOGEMA" ;
   :rol t00507:r2 .
 
-t00507:p3 a t:male.n.02 ;
+t00507:p3 a :Male ;
   :dob "1901-12-25" ;
   :dod "1985-01-21" ;
   :nam "IJSBRAND THEODORUS" ;
   :rol t00507:r3 .
 
-t00507:r1 a t:grandparent.n.01 ;
+t00507:r1 a :Grandparent.n.01 ;
   :tgt t00507:p4 .
 
-t00507:r2 a t:grandparent.n.01 ;
+t00507:r2 a :Grandparent.n.01 ;
   :tgt t00507:p4 .
 
-t00507:r3 a t:father.n.01 ;
+t00507:r3 a :Father.n.01 ;
   :att "LIEVE" ;
   :tgt t00507:p4 .
 
-t00507:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00507:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00507.jpg" ;
-  dcterms:date "2019-11-09T14:36:03"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:36:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2067 ;

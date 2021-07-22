@@ -1,6 +1,6 @@
 @prefix t00136: <https://noordergraf.rug.nl/tomb/t00136#> .
 
-tomb:t00136 a t:tombstone.n.01 ;
+tomb:t00136 a :Tomb ;
   :image t00136:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00136:p1 ,
@@ -8,35 +8,35 @@ tomb:t00136 a t:tombstone.n.01 ;
   :sym t00136:s1 ,
        t00136:s2 .
 
-t00136:p1 a t:male.n.02 ;
+t00136:p1 a :Male ;
   :dob "1874-11-08" ;
   :dod "1942-05-14" ;
   :nam "SIMON SIESLING" ;
   :ref "GEZANG 223:1" ;
   :rol t00136:r1 .
 
-t00136:p2 a t:female.n.02 ;
+t00136:p2 a :Female ;
   :dob "1882-12-28" ;
   :dod "1954-01-12" ;
   :nam "TALLEGIEN DE RAAD" .
 
-t00136:r1 a t:spouse.n.01 ;
+t00136:r1 a :Spouse.n.01 ;
   :tgt t00136:p2 .
 
-t00136:s1 a t:frond.n.01 .
+t00136:s1 a :Frond.n.01 .
 
-t00136:s2 a t:anchor.n.01 .
+t00136:s2 a :Anchor.n.01 .
 
-t00136:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00136:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00136.jpg" ;
-  dcterms:date "2019-10-02T10:35:09"^^xsd:dateTime ;
+  dc:date "2019-10-02T10:35:09"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2060 ;

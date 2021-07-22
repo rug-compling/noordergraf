@@ -1,6 +1,6 @@
 @prefix t00674: <https://noordergraf.rug.nl/tomb/t00674#> .
 
-tomb:t00674 a t:tombstone.n.01 ;
+tomb:t00674 a :Tomb ;
   :image t00674:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00674:g2 ,
@@ -8,37 +8,37 @@ tomb:t00674 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00674:s1 .
 
-t00674:g2 a t:group.n.01 ;
+t00674:g2 a :Group.n.01 ;
   :rol t00674:r3 .
 
-t00674:p1 a t:female.n.02 ;
+t00674:p1 a :Female ;
   :dob "1914-06-05" ;
   :dod "1962-12-22" ;
   :nam "FETTJE DE HAAN" ;
   :rol t00674:r1 ,
        t00674:r2 .
 
-t00674:r1 a t:parent.n.01 ;
+t00674:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00674:g2 .
 
-t00674:r2 a t:grandmother.n.01 .
+t00674:r2 a :Grandmother.n.01 .
 
-t00674:r3 a t:child.n.02 ;
+t00674:r3 a :Child.n.02 ;
   :tgt t00674:p1 .
 
-t00674:s1 a t:frond.n.01 .
+t00674:s1 a :Frond.n.01 .
 
-t00674:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00674:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00674.jpg" ;
-  dcterms:date "2019-12-14T13:39:28"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:39:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0683 ;

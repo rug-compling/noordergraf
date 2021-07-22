@@ -1,38 +1,38 @@
 @prefix t00169: <https://noordergraf.rug.nl/tomb/t00169#> .
 
-tomb:t00169 a t:tombstone.n.01 ;
+tomb:t00169 a :Tomb ;
   :image t00169:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00169:p1 ;
   :ref t00169:v1 .
 
-t00169:b1 a t:John.n.05 ;
+t00169:b1 a :John.n.05 ;
   :prt t00169:c1 .
 
-t00169:c1 a t:chapter.n.01 ;
+t00169:c1 a :Chapter.n.01 ;
   :ord 2 ;
   :prt t00169:v2 .
 
-t00169:p1 a t:family.n.04 ;
+t00169:p1 a :Family.n.04 ;
   :nam "POLL" .
 
-t00169:v1 a t:part.n.09 ;
+t00169:v1 a :Part.n.09 ;
   :nam "A" .
 
-t00169:v2 a t:verse.n.01 ;
+t00169:v2 a :Verse.n.01 ;
   :ord 2 ;
   :prt t00169:v1 .
 
-t00169:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00169:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00169.jpg" ;
-  dcterms:date "2019-10-05T10:45:50"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:45:50"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1901 ;

@@ -1,6 +1,6 @@
 @prefix t00639: <https://noordergraf.rug.nl/tomb/t00639#> .
 
-tomb:t00639 a t:tombstone.n.01 ;
+tomb:t00639 a :Tomb ;
   :image t00639:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00639:p1 ,
@@ -8,33 +8,33 @@ tomb:t00639 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00639:s1 .
 
-t00639:a1 a t:weeping.a.02 .
+t00639:a1 a :Weeping.a.02 .
 
-t00639:p1 a t:male.n.02 ;
+t00639:p1 a :Male ;
   :dob "1826-02-05" ;
   :dod "1862-01-01" ;
   :nam "CHRISTIAAN S. DE BOER" ;
   :rol t00639:r1 .
 
-t00639:p2 a t:female.n.02 ;
+t00639:p2 a :Female ;
   :nam "G. ROMKES" .
 
-t00639:r1 a t:spouse.n.01 ;
+t00639:r1 a :Spouse.n.01 ;
   :tgt t00639:p2 .
 
-t00639:s1 a t:willow.n.01 ;
+t00639:s1 a :Willow.n.01 ;
   :att t00639:a1 .
 
-t00639:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00639:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00639.jpg" ;
-  dcterms:date "2019-11-23T09:51:15"^^xsd:dateTime ;
+  dc:date "2019-11-23T09:51:15"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1642 ;

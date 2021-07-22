@@ -1,15 +1,15 @@
 @prefix t01047: <https://noordergraf.rug.nl/tomb/t01047#> .
 
-tomb:t01047 a t:tombstone.n.01 ;
+tomb:t01047 a :Tomb ;
   :image t01047:im1 ;
   :site site:gr9367PAde_wilp ;
   :ent t01047:p1 ,
        t01047:p2 ;
   :lan "NLD" .
 
-t01047:g1 a t:group.n.01 .
+t01047:g1 a :Group.n.01 .
 
-t01047:p1 a t:male.n.02 ;
+t01047:p1 a :Male ;
   :dob "1915-01-31" ;
   :dod "1987-03-04" ;
   :nam "HENRDRIK NABRING" ;
@@ -17,28 +17,28 @@ t01047:p1 a t:male.n.02 ;
        t01047:r2 ,
        t01047:r3 .
 
-t01047:p2 a t:female.n.02 ;
+t01047:p2 a :Female ;
   :nam "HENDERIKA ROFFEL" .
 
-t01047:r1 a t:father.n.01 ;
+t01047:r1 a :Father.n.01 ;
   :tgt t01047:g1 .
 
-t01047:r2 a t:grandfather.n.01 ;
+t01047:r2 a :Grandfather.n.01 ;
   :tgt t01047:g1 .
 
-t01047:r3 a t:spouse.n.01 ;
+t01047:r3 a :Spouse.n.01 ;
   :tgt t01047:p2 .
 
-t01047:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01047:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01047.jpg" ;
-  dcterms:date "2020-05-01T15:29:28"^^xsd:dateTime ;
+  dc:date "2020-05-01T15:29:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1230 ;

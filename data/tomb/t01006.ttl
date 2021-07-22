@@ -1,6 +1,6 @@
 @prefix t01006: <https://noordergraf.rug.nl/tomb/t01006#> .
 
-tomb:t01006 a t:tombstone.n.01 ;
+tomb:t01006 a :Tomb ;
   :image t01006:im1 ;
   :site site:gr9734ATgroningen ;
   :ent t01006:p1 ,
@@ -12,15 +12,15 @@ tomb:t01006 a t:tombstone.n.01 ;
        t01006:s6 ,
        t01006:s7 .
 
-t01006:c1 a t:town.n.01 ;
+t01006:c1 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t01006:c2 a t:village.n.02 ;
+t01006:c2 a :Village.n.02 ;
   :place place:Noorddijk2749981 ;
   :name "NOORDDIJK" .
 
-t01006:p1 a t:female.n.02 ;
+t01006:p1 a :Female ;
   :dob "1780-05-12" ;
   :dod "1869-06-07" ;
   :nam "TRIENTJE JANS KORT" ;
@@ -28,38 +28,38 @@ t01006:p1 a t:female.n.02 ;
   :pod t01006:c2 ;
   :rol t01006:r1 .
 
-t01006:p2 a t:male.n.02 ;
+t01006:p2 a :Male ;
   :nam "HINDERK TJAPKES DE BOER" .
 
-t01006:r1 a t:widow.n.01 ;
+t01006:r1 a :Widow.n.01 ;
   :tgt t01006:p2 .
 
-t01006:s1 a t:sandglass.n.01 .
+t01006:s1 a :Sandglass.n.01 .
 
-t01006:s2 a t:wing.n.01 .
+t01006:s2 a :Wing.n.01 .
 
-t01006:s3 a t:wing.n.01 .
+t01006:s3 a :Wing.n.01 .
 
-t01006:s4 a t:bat.n.01 ;
+t01006:s4 a :Bat.n.01 ;
   :mem t01006:s2 .
 
-t01006:s5 a t:bird.n.01 ;
+t01006:s5 a :Bird.n.01 ;
   :mem t01006:s3 .
 
-t01006:s6 a t:frond.n.01 .
+t01006:s6 a :Frond.n.01 .
 
-t01006:s7 a t:frond.n.01 .
+t01006:s7 a :Frond.n.01 .
 
-t01006:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01006:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01006.jpg" ;
-  dcterms:date "2020-04-05T12:20:15"^^xsd:dateTime ;
+  dc:date "2020-04-05T12:20:15"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2441 ;

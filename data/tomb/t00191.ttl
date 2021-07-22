@@ -1,6 +1,6 @@
 @prefix t00191: <https://noordergraf.rug.nl/tomb/t00191#> .
 
-tomb:t00191 a t:tombstone.n.01 ;
+tomb:t00191 a :Tomb ;
   :image t00191:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00191:g1 ,
@@ -9,62 +9,62 @@ tomb:t00191 a t:tombstone.n.01 ;
        t00191:p3 ;
   :sym t00191:s1 .
 
-t00191:a1 a t:weeping.a.02 .
+t00191:a1 a :Weeping.a.02 .
 
-t00191:c1 a t:village.n.02 ;
+t00191:c1 a :Village.n.02 ;
   :place place:Mildam2750805 ;
   :name "MILDAM" .
 
-t00191:c2 a t:village.n.02 ;
+t00191:c2 a :Village.n.02 ;
   :place place:Oudeschoot2749007 ;
   :name "OUDESCHOOT" .
 
-t00191:c3 a t:city.n.01 ;
+t00191:c3 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00191:g1 a t:group.n.01 ;
+t00191:g1 a :Group.n.01 ;
   :mem t00191:p1 ,
        t00191:p2 ;
   :rol t00191:r1 .
 
-t00191:p1 a t:person.n.01 ;
+t00191:p1 a :Person ;
   :dob "1898-03-06" ;
   :dod "1944-04-15" ;
   :nam "R. SOETENDAL" ;
   :pob t00191:c1 ;
   :pod t00191:c2 .
 
-t00191:p2 a t:person.n.01 ;
+t00191:p2 a :Person ;
   :dob "1905-01-10" ;
   :dod "1939-12-11" ;
   :nam "A. VAN DER SCHOOT" ;
   :pob t00191:c2 ;
   :pod t00191:c3 .
 
-t00191:p3 a t:male.n.02 ;
+t00191:p3 a :Male ;
   :nam "HENDRIK" ;
   :rol t00191:r3 .
 
-t00191:r1 a t:parent.n.01 ;
+t00191:r1 a :Parent.n.01 ;
   :tgt t00191:p3 .
 
-t00191:r3 a t:son.n.01 ;
+t00191:r3 a :Son.n.01 ;
   :tgt t00191:g1 .
 
-t00191:s1 a t:willow.n.01 ;
+t00191:s1 a :Willow.n.01 ;
   :att t00191:a1 .
 
-t00191:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00191:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00191.jpg" ;
-  dcterms:date "2019-10-05T09:58:27"^^xsd:dateTime ;
+  dc:date "2019-10-05T09:58:27"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1899 ;

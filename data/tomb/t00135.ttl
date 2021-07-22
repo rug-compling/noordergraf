@@ -1,31 +1,31 @@
 @prefix t00135: <https://noordergraf.rug.nl/tomb/t00135#> .
 
-tomb:t00135 a t:tombstone.n.01 ;
+tomb:t00135 a :Tomb ;
   :image t00135:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00135:p1 ,
        t00135:p2 .
 
-t00135:p1 a t:male.n.02 ;
+t00135:p1 a :Male ;
   :dob "1869-02-09" ;
   :dod "1920-10-07" ;
   :nam "GERARD DE BOER" .
 
-t00135:p2 a t:female.n.02 ;
+t00135:p2 a :Female ;
   :dob "1869-08-01" ;
   :dod "1935-08-08" ;
   :nam "ALBERTJE HUMMEL" .
 
-t00135:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00135:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00135.jpg" ;
-  dcterms:date "2019-10-02T10:38:20"^^xsd:dateTime ;
+  dc:date "2019-10-02T10:38:20"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2060 ;

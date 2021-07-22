@@ -1,25 +1,25 @@
 @prefix t00097: <https://noordergraf.rug.nl/tomb/t00097#> .
 
-tomb:t00097 a t:tombstone.n.01 ;
+tomb:t00097 a :Tomb ;
   :image t00097:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00097:p1 ,
        t00097:p2 ;
   :sym t00097:s1 .
 
-t00097:c1 a t:city.n.01 ;
+t00097:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00097:c2 a t:village.n.02 ;
+t00097:c2 a :Village.n.02 ;
   :place place:Aduard2759961 ;
   :name "ADUARD" .
 
-t00097:c3 a t:village.n.02 ;
+t00097:c3 a :Village.n.02 ;
   :place place:Slochteren2747143 ;
   :name "SLOCHTEREN" .
 
-t00097:p1 a t:female.n.02 ;
+t00097:p1 a :Female ;
   :dob "1870-05-08" ;
   :dod "1944-11-12" ;
   :nam "HENERIKA JAKOBA IWEMA" ;
@@ -27,28 +27,28 @@ t00097:p1 a t:female.n.02 ;
   :pod t00097:c1 ;
   :rol t00097:r1 .
 
-t00097:p2 a t:female.n.02 ;
+t00097:p2 a :Female ;
   :dob "1872-07-18" ;
   :dod "1960-06-06" ;
   :nam "HEIJO TEN HAVE" ;
   :pob t00097:c3 ;
   :pod t00097:c1 .
 
-t00097:r1 a t:husband.n.01 ;
+t00097:r1 a :Husband.n.01 ;
   :tgt t00097:p2 .
 
-t00097:s1 a t:frond.n.01 .
+t00097:s1 a :Frond.n.01 .
 
-t00097:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00097:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00097.jpg" ;
-  dcterms:date "2019-09-24T15:12:33"^^xsd:dateTime ;
+  dc:date "2019-09-24T15:12:33"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2058 ;

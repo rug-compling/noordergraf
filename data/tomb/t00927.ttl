@@ -1,6 +1,6 @@
 @prefix t00927: <https://noordergraf.rug.nl/tomb/t00927#> .
 
-tomb:t00927 a t:tombstone.n.01 ;
+tomb:t00927 a :Tomb ;
   :image t00927:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00927:p1 ;
@@ -8,31 +8,31 @@ tomb:t00927 a t:tombstone.n.01 ;
   :sym t00927:s1 ,
        t00927:s2 .
 
-t00927:c1 a t:village.n.02 ;
+t00927:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00927:p1 a t:male.n.02 ;
+t00927:p1 a :Male ;
   :dob "1846-05-15" ;
   :dod "1899-02-04" ;
   :nam "JAN WIERENGA" ;
   :pob t00927:c1 ;
   :pod t00927:c1 .
 
-t00927:s1 a t:oak.n.01 .
+t00927:s1 a :Oak.n.01 .
 
-t00927:s2 a t:frond.n.01 .
+t00927:s2 a :Frond.n.01 .
 
-t00927:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00927:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00927.jpg" ;
-  dcterms:date "2020-03-07T14:13:45"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:13:45"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1718 ;

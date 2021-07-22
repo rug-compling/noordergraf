@@ -1,6 +1,6 @@
 @prefix t00108: <https://noordergraf.rug.nl/tomb/t00108#> .
 
-tomb:t00108 a t:tombstone.n.01 ;
+tomb:t00108 a :Tomb ;
   :image t00108:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00108:p1 ,
@@ -8,19 +8,19 @@ tomb:t00108 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :sym t00108:s1 .
 
-t00108:c1 a t:city.n.01 ;
+t00108:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00108:c2 a t:village.n.02 ;
+t00108:c2 a :Village.n.02 ;
   :place place:Middelbert2750902 ;
   :name "MIDDELBERT" .
 
-t00108:c3 a t:town.n.01 ;
+t00108:c3 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00108:p1 a t:female.n.02 ;
+t00108:p1 a :Female ;
   :dob "1878-03-21" ;
   :dod "1933-08-20" ;
   :nam "FENNA MULDER" ;
@@ -29,31 +29,31 @@ t00108:p1 a t:female.n.02 ;
   :rol t00108:r1 ,
        t00108:r2 .
 
-t00108:p2 a t:male.n.02 ;
+t00108:p2 a :Male ;
   :dob "1872-02-01" ;
   :dod "1956-06-25" ;
   :nam "HARM MAKKEN" ;
   :pob t00108:c3 ;
   :pod t00108:c1 .
 
-t00108:r1 a t:wife.n.01 ;
+t00108:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00108:p2 .
 
-t00108:r2 a t:mother.n.01 .
+t00108:r2 a :Mother.n.01 .
 
-t00108:s1 a t:frond.n.01 .
+t00108:s1 a :Frond.n.01 .
 
-t00108:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00108:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00108.jpg" ;
-  dcterms:date "2019-09-21T15:55:21"^^xsd:dateTime ;
+  dc:date "2019-09-21T15:55:21"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1905 ;

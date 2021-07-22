@@ -1,6 +1,6 @@
 @prefix t00268: <https://noordergraf.rug.nl/tomb/t00268#> .
 
-tomb:t00268 a t:tombstone.n.01 ;
+tomb:t00268 a :Tomb ;
   :image t00268:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00268:p1 ,
@@ -8,11 +8,11 @@ tomb:t00268 a t:tombstone.n.01 ;
        t00268:p3 ;
   :sym t00268:s1 .
 
-t00268:c1 a t:hamlet.n.03 ;
+t00268:c1 a :Hamlet.n.03 ;
   :place place:Lageland11746820 ;
   :name "LAGELAND" .
 
-t00268:p1 a t:male.n.02 ;
+t00268:p1 a :Male ;
   :dob "1934-03-20" ;
   :dod "1968-10-24" ;
   :nam "GASTON-AUGUST VANFRACHEM" ;
@@ -21,33 +21,33 @@ t00268:p1 a t:male.n.02 ;
        t00268:r2 ,
        t00268:r3 .
 
-t00268:p2 a t:family.n.04 ;
+t00268:p2 a :Family.n.04 ;
   :nam "VANFRACHEM" .
 
-t00268:p3 a t:family.n.04 ;
+t00268:p3 a :Family.n.04 ;
   :nam "STEL" .
 
-t00268:r1 a t:son.n.01 ;
+t00268:r1 a :Son.n.01 ;
   :tgt t00268:p2 .
 
-t00268:r2 a t:brother.n.01 ;
+t00268:r2 a :Brother.n.01 ;
   :tgt t00268:p2 .
 
-t00268:r3 a t:housemate.n.01 ;
+t00268:r3 a :Housemate.n.01 ;
   :tgt t00268:p3 .
 
-t00268:s1 a t:cross.n.03 .
+t00268:s1 a :Cross.n.03 .
 
-t00268:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00268:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00268.jpg" ;
-  dcterms:date "2019-10-14T11:01:41"^^xsd:dateTime ;
+  dc:date "2019-10-14T11:01:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2228 ;

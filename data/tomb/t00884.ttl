@@ -1,6 +1,6 @@
 @prefix t00884: <https://noordergraf.rug.nl/tomb/t00884#> .
 
-tomb:t00884 a t:tombstone.n.01 ;
+tomb:t00884 a :Tomb ;
   :image t00884:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00884:g1 ,
@@ -9,10 +9,10 @@ tomb:t00884 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00884:s1 .
 
-t00884:g1 a t:group.n.01 ;
+t00884:g1 a :Group.n.01 ;
   :mem t00884:p3 .
 
-t00884:p1 a t:male.n.02 ;
+t00884:p1 a :Male ;
   :dob "1903-04-15" ;
   :dod "1951-06-29" ;
   :nam "GERRIT TEN VOORDE" ;
@@ -20,37 +20,37 @@ t00884:p1 a t:male.n.02 ;
        t00884:r2 ,
        t00884:r3 .
 
-t00884:p2 a t:female.n.02 ;
+t00884:p2 a :Female ;
   :nam "P. TEN VOORDE-KORT" .
 
-t00884:p3 a t:person.n.01 ;
+t00884:p3 a :Person ;
   :rol t00884:r4 .
 
-t00884:r1 a t:widow.n.01 ;
+t00884:r1 a :Widow.n.01 ;
   :tgt t00884:p2 .
 
-t00884:r2 a t:husband.n.01 ;
+t00884:r2 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00884:p2 .
 
-t00884:r3 a t:father.n.01 ;
+t00884:r3 a :Father.n.01 ;
   :tgt t00884:g1 .
 
-t00884:r4 a t:child.n.02 ;
+t00884:r4 a :Child.n.02 ;
   :tgt t00884:p1 .
 
-t00884:s1 a t:frond.n.01 .
+t00884:s1 a :Frond.n.01 .
 
-t00884:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00884:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00884.jpg" ;
-  dcterms:date "2020-02-15T15:00:41"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:00:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7196 ;

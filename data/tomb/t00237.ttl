@@ -1,20 +1,20 @@
 @prefix t00237: <https://noordergraf.rug.nl/tomb/t00237#> .
 
-tomb:t00237 a t:tombstone.n.01 ;
+tomb:t00237 a :Tomb ;
   :image t00237:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00237:p1 ,
        t00237:p2 ,
        t00237:p3 .
 
-t00237:p1 a t:female.n.02 ;
+t00237:p1 a :Female ;
   :dob "1905-11-21" ;
   :dod "1928-07-08" ;
   :nam "HENDERIKA LEVER" ;
   :rol t00237:r1 ,
        t00237:r2 .
 
-t00237:p2 a t:female.n.02 ;
+t00237:p2 a :Female ;
   :dob "1873-01-02" ;
   :dod "1931-02-16" ;
   :nam "ROLINA MEDOK" ;
@@ -22,37 +22,37 @@ t00237:p2 a t:female.n.02 ;
        t00237:r4 ,
        t00237:r5 .
 
-t00237:p3 a t:male.n.02 ;
+t00237:p3 a :Male ;
   :dob "1867-01-30" ;
   :dod "1952-03-30" ;
   :nam "AREND TONKO LEVER" .
 
-t00237:r1 a t:daughter.n.01 ;
+t00237:r1 a :Daughter.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00237:p2 .
 
-t00237:r2 a t:sister.n.01 .
+t00237:r2 a :Sister.n.01 .
 
-t00237:r3 a t:wife.n.01 ;
+t00237:r3 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00237:p3 .
 
-t00237:r4 a t:mother.n.01 ;
+t00237:r4 a :Mother.n.01 ;
   :tgt t00237:p1 .
 
-t00237:r5 a t:spouse.n.01 ;
+t00237:r5 a :Spouse.n.01 ;
   :tgt t00237:p3 .
 
-t00237:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00237:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00237.jpg" ;
-  dcterms:date "2019-10-10T09:40:45"^^xsd:dateTime ;
+  dc:date "2019-10-10T09:40:45"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2054 ;

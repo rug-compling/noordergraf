@@ -1,6 +1,6 @@
 @prefix t00275: <https://noordergraf.rug.nl/tomb/t00275#> .
 
-tomb:t00275 a t:tombstone.n.01 ;
+tomb:t00275 a :Tomb ;
   :image t00275:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00275:p1 ,
@@ -8,15 +8,15 @@ tomb:t00275 a t:tombstone.n.01 ;
        t00275:p3 ;
   :sym t00275:s1 .
 
-t00275:c1 a t:municipality.n.01 ;
+t00275:c1 a :Municipality.n.01 ;
   :place place:GemeenteDantumadiel2757834 ;
   :name "DANTUMADEEL" .
 
-t00275:c2 a t:city.n.01 ;
+t00275:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00275:p1 a t:male.n.02 ;
+t00275:p1 a :Male ;
   :dob "1869-02-10" ;
   :dod "1955-01-17" ;
   :nam "LOLKE VAN DER WERF" ;
@@ -25,31 +25,31 @@ t00275:p1 a t:male.n.02 ;
   :rol t00275:r1 ,
        t00275:r2 .
 
-t00275:p2 a t:female.n.02 ;
+t00275:p2 a :Female ;
   :nam "JANTJE MOLTMAKER" .
 
-t00275:p3 a t:female.n.02 ;
+t00275:p3 a :Female ;
   :nam "JANTJE ZUUR" .
 
-t00275:r1 a t:widower.n.01 ;
+t00275:r1 a :Widower.n.01 ;
   :tgt t00275:p2 .
 
-t00275:r2 a t:widower.n.01 ;
+t00275:r2 a :Widower.n.01 ;
   :bef t00275:r1 ;
   :tgt t00275:p3 .
 
-t00275:s1 a t:frond.n.01 .
+t00275:s1 a :Frond.n.01 .
 
-t00275:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00275:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00275.jpg" ;
-  dcterms:date "2019-10-14T10:54:32"^^xsd:dateTime ;
+  dc:date "2019-10-14T10:54:32"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2228 ;

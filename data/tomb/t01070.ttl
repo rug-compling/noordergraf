@@ -1,6 +1,6 @@
 @prefix t01070: <https://noordergraf.rug.nl/tomb/t01070#> .
 
-tomb:t01070 a t:tombstone.n.01 ;
+tomb:t01070 a :Tomb ;
   :image t01070:im1 ;
   :site site:gr9752CMharen ;
   :ent t01070:p1 ,
@@ -9,44 +9,44 @@ tomb:t01070 a t:tombstone.n.01 ;
        t01070:p4 ;
   :lan "NLD" .
 
-t01070:o1 a t:dentist.n.01 ;
+t01070:o1 a :Dentist.n.01 ;
   :hco "06310" .
 
-t01070:o2 a t:doctor.n.01 ;
+t01070:o2 a :Doctor.n.01 ;
   :hco "06105" .
 
-t01070:p1 a t:male.n.02 ;
+t01070:p1 a :Male ;
   :dob "1887-04-16" ;
   :dod "1954-11-28" ;
   :nam "TAMMO HOEKSEMA" ;
   :occ t01070:o1 .
 
-t01070:p2 a t:female.n.02 ;
+t01070:p2 a :Female ;
   :dob "1893-10-03" ;
   :dod "1967-11-10" ;
   :nam "ANNA HOEKSEMA-DALLINGA" .
 
-t01070:p3 a t:male.n.02 ;
+t01070:p3 a :Male ;
   :dob "1922-06-02" ;
   :dod "1988-09-12" ;
   :nam "DIRK POPKO HOEKSEMA" .
 
-t01070:p4 a t:female.n.02 ;
+t01070:p4 a :Female ;
   :dob "1926-01-26" ;
   :dod "2006-10-07" ;
   :nam "PAUL E. HOEKSEMA" ;
   :occ t01070:o2 .
 
-t01070:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01070:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01070.jpg" ;
-  dcterms:date "2020-05-15T17:48:09"^^xsd:dateTime ;
+  dc:date "2020-05-15T17:48:09"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1627 ;

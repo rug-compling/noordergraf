@@ -1,6 +1,6 @@
 @prefix t00242: <https://noordergraf.rug.nl/tomb/t00242#> .
 
-tomb:t00242 a t:tombstone.n.01 ;
+tomb:t00242 a :Tomb ;
   :image t00242:im1 ;
   :site site:gr9751BBharen ;
   :ent t00242:p1 ,
@@ -8,18 +8,18 @@ tomb:t00242 a t:tombstone.n.01 ;
   :ref t00242:v1 ;
   :sym t00242:s1 .
 
-t00242:b1 a t:John.n.05 ;
+t00242:b1 a :John.n.05 ;
   :prt t00242:c2 .
 
-t00242:c1 a t:town.n.01 ;
+t00242:c1 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00242:c2 a t:chapter.n.01 ;
+t00242:c2 a :Chapter.n.01 ;
   :ord 17 ;
   :prt t00242:v1 .
 
-t00242:p1 a t:female.n.02 ;
+t00242:p1 a :Female ;
   :dob "1849-08-18" ;
   :dod "1932-03-09" ;
   :nam "HENRIKJE BERENDS" ;
@@ -27,27 +27,27 @@ t00242:p1 a t:female.n.02 ;
   :pod t00242:c1 ;
   :rol t00242:r1 .
 
-t00242:p2 a t:male.n.02 ;
+t00242:p2 a :Male ;
   :nam "HENDRIK VAN DAM" .
 
-t00242:r1 a t:widow.n.01 ;
+t00242:r1 a :Widow.n.01 ;
   :tgt t00242:p2 .
 
-t00242:s1 a t:frond.n.01 .
+t00242:s1 a :Frond.n.01 .
 
-t00242:v1 a t:verse.n.01 ;
+t00242:v1 a :Verse.n.01 ;
   :ord 3 .
 
-t00242:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00242:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00242.jpg" ;
-  dcterms:date "2019-10-11T17:41:00"^^xsd:dateTime ;
+  dc:date "2019-10-11T17:41:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1727 ;

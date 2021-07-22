@@ -1,6 +1,6 @@
 @prefix t00766: <https://noordergraf.rug.nl/tomb/t00766#> .
 
-tomb:t00766 a t:tombstone.n.01 ;
+tomb:t00766 a :Tomb ;
   :image t00766:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00766:p1 ,
@@ -8,17 +8,17 @@ tomb:t00766 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00766:s1 .
 
-t00766:a1 a t:weeping.a.02 .
+t00766:a1 a :Weeping.a.02 .
 
-t00766:c1 a t:village.n.02 ;
+t00766:c1 a :Village.n.02 ;
   :place place:Roswinkel2747903 ;
   :name "ROSWINKEL" .
 
-t00766:c2 a t:village.n.02 ;
+t00766:c2 a :Village.n.02 ;
   :place place:Westenesch2744776 ;
   :name "WESTENESCH" .
 
-t00766:p1 a t:female.n.02 ;
+t00766:p1 a :Female ;
   :dob "1846-10-02" ;
   :dod "1915-07-19" ;
   :nam "JANTIEN LIEFSTING" ;
@@ -26,25 +26,25 @@ t00766:p1 a t:female.n.02 ;
   :pod t00766:c2 ;
   :rol t00766:r1 .
 
-t00766:p2 a t:male.n.02 ;
+t00766:p2 a :Male ;
   :nam "JAN HOUWING" .
 
-t00766:r1 a t:spouse.n.01 ;
+t00766:r1 a :Spouse.n.01 ;
   :tgt t00766:p2 .
 
-t00766:s1 a t:willow.n.01 ;
+t00766:s1 a :Willow.n.01 ;
   :att t00766:a1 .
 
-t00766:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00766:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00766.jpg" ;
-  dcterms:date "2019-12-21T13:05:43"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:05:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7821 ;

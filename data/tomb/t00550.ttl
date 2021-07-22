@@ -1,29 +1,29 @@
 @prefix t00550: <https://noordergraf.rug.nl/tomb/t00550#> .
 
-tomb:t00550 a t:tombstone.n.01 ;
+tomb:t00550 a :Tomb ;
   :image t00550:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00550:p1 ;
   :lan "NLD" ;
   :sym t00550:s1 .
 
-t00550:c1 a t:village.n.02 ;
+t00550:c1 a :Village.n.02 ;
   :place place:Norg2749796 ;
   :name "NORG" .
 
-t00550:c2 a t:city.n.01 ;
+t00550:c2 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00550:c3 a t:municipality.n.01 ;
+t00550:c3 a :Municipality.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00550:o1 a t:principal.n.02 ;
+t00550:o1 a :Principal.n.02 ;
   :hco "13320" ;
   :loc t00550:c3 .
 
-t00550:p1 a t:male.n.02 ;
+t00550:p1 a :Male ;
   :dob "1787-01-10" ;
   :dod "1862-05-01" ;
   :nam "JAN ODDING" ;
@@ -31,7 +31,7 @@ t00550:p1 a t:male.n.02 ;
   :pob t00550:c1 ;
   :pod t00550:c2 .
 
-t00550:s1 a t:composite.n.01 ;
+t00550:s1 a :Composite.n.01 ;
   :prt t00550:s2 ,
        t00550:s3 ,
        t00550:s4 ,
@@ -39,34 +39,34 @@ t00550:s1 a t:composite.n.01 ;
        t00550:s7 ,
        t00550:s9 .
 
-t00550:s2 a t:book.n.02 .
+t00550:s2 a :Book.n.02 .
 
-t00550:s3 a t:feather.n.01 .
+t00550:s3 a :Feather.n.01 .
 
-t00550:s4 a t:inkpot.n.01 .
+t00550:s4 a :Inkpot.n.01 .
 
-t00550:s5 a t:branch.n.02 .
+t00550:s5 a :Branch.n.02 .
 
-t00550:s6 a t:olive.n.02 ;
+t00550:s6 a :Olive.n.02 ;
   :prt t00550:s5 .
 
-t00550:s7 a t:branch.n.02 .
+t00550:s7 a :Branch.n.02 .
 
-t00550:s8 a t:olive.n.02 ;
+t00550:s8 a :Olive.n.02 ;
   :prt t00550:s7 .
 
-t00550:s9 a t:ribbon.n.01 .
+t00550:s9 a :Ribbon.n.01 .
 
-t00550:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00550:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00550.jpg" ;
-  dcterms:date "2019-11-24T14:05:22"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:05:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1045 ;

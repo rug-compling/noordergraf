@@ -1,6 +1,6 @@
 @prefix t00614: <https://noordergraf.rug.nl/tomb/t00614#> .
 
-tomb:t00614 a t:tombstone.n.01 ;
+tomb:t00614 a :Tomb ;
   :image t00614:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00614:g1 ,
@@ -11,23 +11,23 @@ tomb:t00614 a t:tombstone.n.01 ;
   :sym t00614:s1 ,
        t00614:s2 .
 
-t00614:a1 a t:weeping.a.02 .
+t00614:a1 a :Weeping.a.02 .
 
-t00614:a2 a t:broken.a.01 .
+t00614:a2 a :Broken.a.01 .
 
-t00614:c1 a t:hamlet.n.03 ;
+t00614:c1 a :Hamlet.n.03 ;
   :place place:Kalkwijk2753130 ;
   :name "KALKWIJK" .
 
-t00614:c2 a t:village.n.02 ;
+t00614:c2 a :Village.n.02 ;
   :place place:Sappemeer2747758 ;
   :name "SAPPEMEER" .
 
-t00614:g1 a t:group.n.01 ;
+t00614:g1 a :Group.n.01 ;
   :mem t00614:p1 ,
        t00614:p2 .
 
-t00614:p1 a t:male.n.02 ;
+t00614:p1 a :Male ;
   :dob "1873-01-23" ;
   :dod "1903-09-02" ;
   :nam "ABRAHAM PANNENBORG" ;
@@ -35,32 +35,32 @@ t00614:p1 a t:male.n.02 ;
   :pod t00614:c2 ;
   :rol t00614:r1 .
 
-t00614:p2 a t:male.n.02 ;
+t00614:p2 a :Male ;
   :att "WIJLEN" ;
   :nam "R. PANNENBORG" .
 
-t00614:p3 a t:female.n.02 ;
+t00614:p3 a :Female ;
   :nam "A. VOERMAN" .
 
-t00614:r1 a t:son.n.01 ;
+t00614:r1 a :Son.n.01 ;
   :tgt t00614:g2 .
 
-t00614:s1 a t:willow.n.01 ;
+t00614:s1 a :Willow.n.01 ;
   :att t00614:a1 .
 
-t00614:s2 a t:column.n.01 ;
+t00614:s2 a :Column.n.01 ;
   :att t00614:a2 .
 
-t00614:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00614:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00614.jpg" ;
-  dcterms:date "2019-11-23T10:04:55"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:04:55"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1644 ;

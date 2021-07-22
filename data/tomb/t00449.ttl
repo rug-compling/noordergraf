@@ -1,35 +1,35 @@
 @prefix t00449: <https://noordergraf.rug.nl/tomb/t00449#> .
 
-tomb:t00449 a t:tombstone.n.01 ;
+tomb:t00449 a :Tomb ;
   :image t00449:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00449:p1 ,
        t00449:p2 .
 
-t00449:p1 a t:male.n.02 ;
+t00449:p1 a :Male ;
   :dob "XX-XX-1906" ;
   :dod "XX-XX-1978" ;
   :nam "TEEN WILLEM VISSER" ;
   :rol t00449:r1 .
 
-t00449:p2 a t:female.n.02 ;
+t00449:p2 a :Female ;
   :dob "XX-XX-1904" ;
   :dod "XX-XX-1984" ;
   :nam "JANS JOLLEMA" .
 
-t00449:r1 a t:spouse.n.01 ;
+t00449:r1 a :Spouse.n.01 ;
   :tgt t00449:p2 .
 
-t00449:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00449:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00449.jpg" ;
-  dcterms:date "2019-11-02T11:52:13"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:52:13"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4790 ;

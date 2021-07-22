@@ -1,6 +1,6 @@
 @prefix t00671: <https://noordergraf.rug.nl/tomb/t00671#> .
 
-tomb:t00671 a t:tombstone.n.01 ;
+tomb:t00671 a :Tomb ;
   :image t00671:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00671:g1 ,
@@ -11,61 +11,61 @@ tomb:t00671 a t:tombstone.n.01 ;
   :quo "IK BEN DE OPSTANDING EN HET LEVEN"@nld ;
   :ref t00671:v1 .
 
-t00671:b1 a t:John.n.05 ;
+t00671:b1 a :John.n.05 ;
   :prt t00671:c3 .
 
-t00671:c3 a t:chapter.n.01 ;
+t00671:c3 a :Chapter.n.01 ;
   :ord 25 ;
   :prt t00671:v1 .
 
-t00671:g1 a t:group.n.01 ;
+t00671:g1 a :Group.n.01 ;
   :mem t00671:p1 ,
        t00671:p2 ;
   :rol t00671:r1 ,
        t00671:r2 .
 
-t00671:g2 a t:group.n.01 ;
+t00671:g2 a :Group.n.01 ;
   :rol t00671:r3 .
 
-t00671:g3 a t:group.n.01 ;
+t00671:g3 a :Group.n.01 ;
   :rol t00671:r4 .
 
-t00671:p1 a t:male.n.02 ;
+t00671:p1 a :Male ;
   :dob "1891-09-14" ;
   :dod "1966-04-15" ;
   :nam "CORNELUS A. DE VRIES" .
 
-t00671:p2 a t:female.n.02 ;
+t00671:p2 a :Female ;
   :dob "1894-06-11" ;
   :dod "1958-12-21" ;
   :nam "FETJE ELZINGA" .
 
-t00671:r1 a t:parent.n.01 ;
+t00671:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00671:g2 .
 
-t00671:r2 a t:grandparent.n.01 ;
+t00671:r2 a :Grandparent.n.01 ;
   :tgt t00671:g3 .
 
-t00671:r3 a t:child.n.02 ;
+t00671:r3 a :Child.n.02 ;
   :tgt t00671:g1 .
 
-t00671:r4 a t:grandchild.n.01 ;
+t00671:r4 a :Grandchild.n.01 ;
   :tgt t00671:g1 .
 
-t00671:v1 a t:verse.n.01 ;
+t00671:v1 a :Verse.n.01 ;
   :ord 11 .
 
-t00671:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00671:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00671.jpg" ;
-  dcterms:date "2019-12-14T13:42:29"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:42:29"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0680 ;

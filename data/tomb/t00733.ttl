@@ -1,6 +1,6 @@
 @prefix t00733: <https://noordergraf.rug.nl/tomb/t00733#> .
 
-tomb:t00733 a t:tombstone.n.01 ;
+tomb:t00733 a :Tomb ;
   :image t00733:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00733:p1 ,
@@ -8,17 +8,17 @@ tomb:t00733 a t:tombstone.n.01 ;
   :ref "PSALM 68:2"@nld ;
   :sym t00733:s1 .
 
-t00733:a1 a t:weeping.a.02 .
+t00733:a1 a :Weeping.a.02 .
 
-t00733:c1 a t:village.n.02 ;
+t00733:c1 a :Village.n.02 ;
   :place place:Westerbork2744769 ;
   :name "WESTERBORK" .
 
-t00733:c2 a t:village.n.02 ;
+t00733:c2 a :Village.n.02 ;
   :place place:Erica2756046 ;
   :name "ERICA" .
 
-t00733:p1 a t:female.n.02 ;
+t00733:p1 a :Female ;
   :dob "1866-11-10" ;
   :dod "1944-06-16" ;
   :nam "WILLEMPTJE WIGGERINK" ;
@@ -26,25 +26,25 @@ t00733:p1 a t:female.n.02 ;
   :pod t00733:c2 ;
   :rol t00733:r1 .
 
-t00733:p2 a t:male.n.02 ;
+t00733:p2 a :Male ;
   :nam "MANNUS SCHERING" .
 
-t00733:r1 a t:widow.n.01 ;
+t00733:r1 a :Widow.n.01 ;
   :tgt t00733:p2 .
 
-t00733:s1 a t:willow.n.01 ;
+t00733:s1 a :Willow.n.01 ;
   :att t00733:a1 .
 
-t00733:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00733:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00733.jpg" ;
-  dcterms:date "2019-12-21T13:07:20"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:07:20"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7821 ;

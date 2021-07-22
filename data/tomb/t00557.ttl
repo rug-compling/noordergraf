@@ -1,6 +1,6 @@
 @prefix t00557: <https://noordergraf.rug.nl/tomb/t00557#> .
 
-tomb:t00557 a t:tombstone.n.01 ;
+tomb:t00557 a :Tomb ;
   :image t00557:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00557:p1 ,
@@ -8,35 +8,35 @@ tomb:t00557 a t:tombstone.n.01 ;
   :quo "HIER RUST, O WANDELAAR \\ MIJN TEER BEMINDE VROUW; \\ ZIJ DIE MIJ HEEFT VERZELD, \\ MET LIEFDE, DEUGD EN TROUW; \\ OP 'T ZEEMANS MOEILIJK PAD \\ DER WOESTE ZOUTE BAREN; DAAR IS HAAR ZIEL VERHUISD, \\ EN VAN MIJ HEEN GEVAREN. \\ HAAR LIJK BRAGT IK NAAR HIER, \\ NAAR DEZEN DOODENAKKER. \\ GOD, HOOP IK, MAAKT MIJ EENS AAN HARE ZIJDE WAKKER!"@nld ;
   :sym t00557:s1 .
 
-t00557:c1 a t:ocean.n.01 ;
+t00557:c1 a :Ocean.n.01 ;
   :place place:IndischeOceaan1545739 ;
   :name "INDISCHE OCEAAN" .
 
-t00557:p1 a t:female.n.02 ;
+t00557:p1 a :Female ;
   :dob "1823-08-04" ;
   :dod "1856-01-19" ;
   :nam "JANTJE A. HAZEWINKEL" ;
   :pod t00557:c1 ;
   :rol t00557:r1 .
 
-t00557:p2 a t:male.n.02 ;
+t00557:p2 a :Male ;
   :nam "BEREND J. JONKER" .
 
-t00557:r1 a t:spouse.n.01 ;
+t00557:r1 a :Spouse.n.01 ;
   :tgt t00557:p2 .
 
-t00557:s1 a t:galleon.n.01 .
+t00557:s1 a :Galleon.n.01 .
 
-t00557:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00557:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00557.jpg" ;
-  dcterms:date "2019-11-24T13:53:07"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:53:07"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1047 ;

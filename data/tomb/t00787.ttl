@@ -1,32 +1,32 @@
 @prefix t00787: <https://noordergraf.rug.nl/tomb/t00787#> .
 
-tomb:t00787 a t:tombstone.n.01 ;
+tomb:t00787 a :Tomb ;
   :image t00787:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00787:p1 ;
   :lan "NLD" .
 
-t00787:c1 a t:village.n.02 ;
+t00787:c1 a :Village.n.02 ;
   :place place:Noordbarge2749996 ;
   :name "NOORDBARGE" .
 
-t00787:p1 a t:male.n.02 ;
+t00787:p1 a :Male ;
   :dob "1833-03-30" ;
   :dod "1919-03-12" ;
   :nam "WOLTER GARMING" ;
   :pob t00787:c1 ;
   :pod t00787:c1 .
 
-t00787:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00787:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00787.jpg" ;
-  dcterms:date "2019-12-21T12:56:56"^^xsd:dateTime ;
+  dc:date "2019-12-21T12:56:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7816 ;

@@ -1,6 +1,6 @@
 @prefix t00126: <https://noordergraf.rug.nl/tomb/t00126#> .
 
-tomb:t00126 a t:tombstone.n.01 ;
+tomb:t00126 a :Tomb ;
   :image t00126:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00126:g1 ,
@@ -9,43 +9,43 @@ tomb:t00126 a t:tombstone.n.01 ;
        t00126:p3 ;
   :sym t00126:s1 .
 
-t00126:g1 a t:group.n.01 ;
+t00126:g1 a :Group.n.01 ;
   :mem t00126:p2 ,
        t00126:p3 .
 
-t00126:m1 a t:measure.n.02 ;
+t00126:m1 a :Measure.n.02 ;
   :mem t00126:u1 ;
   :qua 33 .
 
-t00126:p1 a t:female.n.02 ;
+t00126:p1 a :Female ;
   :age t00126:m1 ;
   :dod "1904-03-01" ;
   :nam "RENSINA CATHARINA SCHUITEMA" ;
   :rol t00126:r2 .
 
-t00126:p2 a t:male.n.02 ;
+t00126:p2 a :Male ;
   :nam "G. SCHUITEMA" .
 
-t00126:p3 a t:female.n.02 ;
+t00126:p3 a :Female ;
   :nam "HENDERIKA BRUINS" .
 
-t00126:r2 a t:daughter.n.01 ;
+t00126:r2 a :Daughter.n.01 ;
   :tgt t00126:g1 .
 
-t00126:s1 a t:ouroboros.n.01 .
+t00126:s1 a :Ouroboros.n.01 .
 
-t00126:u1 a t:year.n.01 .
+t00126:u1 a :Year.n.01 .
 
-t00126:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00126:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00126.jpg" ;
-  dcterms:date "2019-10-01T09:58:24"^^xsd:dateTime ;
+  dc:date "2019-10-01T09:58:24"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2059 ;

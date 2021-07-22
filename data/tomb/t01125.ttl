@@ -1,54 +1,54 @@
 @prefix t01125: <https://noordergraf.rug.nl/tomb/t01125#> .
 
-tomb:t01125 a t:tombstone.n.01 ;
+tomb:t01125 a :Tomb ;
   :ent t01125:g1 ,
        t01125:p1 ;
   :lan "NLD" ;
   :ref t01125:v2 .
 
-t01125:a1 a t:Reformed.a.01 .
+t01125:a1 a :Reformed.a.01 .
 
-t01125:b1 a t:Galations.n.02 ;
+t01125:b1 a :Galations.n.02 ;
   :prt t01125:c3 .
 
-t01125:c3 a t:chapter.n.01 ;
+t01125:c3 a :Chapter.n.01 ;
   :ord 6 ;
   :prt t01125:v1 .
 
-t01125:g1 a t:group.n.01 ;
+t01125:g1 a :Group.n.01 ;
   :mem t01125:p2 ,
        t01125:p3 ;
   :rol t01125:r1 .
 
-t01125:o1 a t:pastor.n.01 ;
+t01125:o1 a :Pastor.n.01 ;
   :att t01125:a1 ;
   :hco "14120" .
 
-t01125:p1 a t:male.n.02 ;
+t01125:p1 a :Male ;
   :dob "1908-04-11" ;
   :dod "1982-07-31" ;
   :nam "GERRIT VAN 'T RIET" ;
   :occ t01125:o1 .
 
-t01125:p2 a t:female.n.02 ;
+t01125:p2 a :Female ;
   :rol t01125:r2 .
 
-t01125:p3 a t:person.n.01 ;
+t01125:p3 a :Person ;
   :rol t01125:r3 .
 
-t01125:r1 a t:commemorator.n.01 ;
+t01125:r1 a :Commemorator.n.01 ;
   :tgt t01125:p1 .
 
-t01125:r2 a t:wife.n.01 ;
+t01125:r2 a :Wife.n.01 ;
   :tgt t01125:p1 .
 
-t01125:r3 a t:child.n.02 ;
+t01125:r3 a :Child.n.02 ;
   :tgt t01125:p1 .
 
-t01125:v1 a t:verse.n.01 ;
+t01125:v1 a :Verse.n.01 ;
   :ord 14 ;
   :prt t01125:v2 .
 
-t01125:v2 a t:part.n.09 ;
+t01125:v2 a :Part.n.09 ;
   :nam "A" .
 

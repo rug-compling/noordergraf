@@ -1,6 +1,6 @@
 @prefix t00606: <https://noordergraf.rug.nl/tomb/t00606#> .
 
-tomb:t00606 a t:tombstone.n.01 ;
+tomb:t00606 a :Tomb ;
   :image t00606:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00606:p1 ,
@@ -8,44 +8,44 @@ tomb:t00606 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00606:s1 .
 
-t00606:a1 a t:weeping.a.02 .
+t00606:a1 a :Weeping.a.02 .
 
-t00606:c1 a t:town.n.01 ;
+t00606:c1 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00606:c2 a t:village.n.02 ;
+t00606:c2 a :Village.n.02 ;
   :place place:Sappemeer2747758 ;
   :name "SAPPEMEER" .
 
-t00606:p1 a t:male.n.02 ;
+t00606:p1 a :Male ;
   :dob "1822-03-02" ;
   :dod "1913-06-05" ;
   :nam "JACOB BOERMA HZ" ;
   :pob t00606:c1 ;
   :pod t00606:c1 .
 
-t00606:p2 a t:person.n.01 ;
+t00606:p2 a :Person ;
   :loc t00606:c2 ;
   :nam "LESTERHUIS" ;
   :occ t00606:r3 .
 
-t00606:r3 a t:designer.n.01 ;
+t00606:r3 a :Designer.n.01 ;
   :tgt tomb:t00606 .
 
-t00606:s1 a t:willow.n.01 ;
+t00606:s1 a :Willow.n.01 ;
   :att t00606:a1 .
 
-t00606:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00606:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00606.jpg" ;
-  dcterms:date "2019-11-23T10:06:50"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:06:50"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1643 ;

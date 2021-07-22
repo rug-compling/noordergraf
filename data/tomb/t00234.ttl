@@ -1,34 +1,34 @@
 @prefix t00234: <https://noordergraf.rug.nl/tomb/t00234#> .
 
-tomb:t00234 a t:tombstone.n.01 ;
+tomb:t00234 a :Tomb ;
   :image t00234:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00234:p1 ,
        t00234:p2 ;
   :quo "EEN TEERBEMINDE ZOON, EEN ECHTGENOOT EN VADER, GEROEPEN VOOR GODS TROON ..." .
 
-t00234:p1 a t:male.n.02 ;
+t00234:p1 a :Male ;
   :dob "1837-10-24" ;
   :dod "1875-05-01" ;
   :nam "LUITJE ABELS VAN DIJKEN" ;
   :rol t00234:r1 .
 
-t00234:p2 a t:female.n.02 ;
+t00234:p2 a :Female ;
   :nam "LAMMECHIEN P. WIGBOLDUS" .
 
-t00234:r1 a t:spouse.n.01 ;
+t00234:r1 a :Spouse.n.01 ;
   :tgt t00234:p2 .
 
-t00234:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00234:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00234.jpg" ;
-  dcterms:date "2019-10-08T14:38:03"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:38:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2225 ;

@@ -1,32 +1,32 @@
 @prefix t00149: <https://noordergraf.rug.nl/tomb/t00149#> .
 
-tomb:t00149 a t:tombstone.n.01 ;
+tomb:t00149 a :Tomb ;
   :image t00149:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00149:p1 .
 
-t00149:p1 a t:female.n.02 ;
+t00149:p1 a :Female ;
   :dob "1927-12-07" ;
   :dod "2011-07-03" ;
   :nam "ANNE MARIE CAROLINA WIJNOLDIJ-DANIËLS" ;
   :rol t00149:r1 ,
        t00149:r2 .
 
-t00149:r1 a t:mother.n.01 ;
+t00149:r1 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00149:r2 a t:grandmother.n.01 .
+t00149:r2 a :Grandmother.n.01 .
 
-t00149:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00149:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00149.jpg" ;
-  dcterms:date "2019-10-02T10:25:00"^^xsd:dateTime ;
+  dc:date "2019-10-02T10:25:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2063 ;

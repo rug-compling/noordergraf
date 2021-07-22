@@ -1,6 +1,6 @@
 @prefix t00840: <https://noordergraf.rug.nl/tomb/t00840#> .
 
-tomb:t00840 a t:tombstone.n.01 ;
+tomb:t00840 a :Tomb ;
   :image t00840:im1 ;
   :site site:fr8899AWoost_vlieland ;
   :ent t00840:p1 ,
@@ -9,26 +9,26 @@ tomb:t00840 a t:tombstone.n.01 ;
   :sym t00840:s1 ,
        t00840:s2 .
 
-t00840:c1 a t:town.n.01 ;
+t00840:c1 a :Town.n.01 ;
   :place place:Sliedrecht2747169 ;
   :name "SLIEDRECHT" .
 
-t00840:c2 a t:island.n.01 ;
+t00840:c2 a :Island.n.01 ;
   :place place:Vlieland2745420 ;
   :name "VLIELAND" .
 
-t00840:c3 a t:island.n.01 ;
+t00840:c3 a :Island.n.01 ;
   :place place:Terschelling2746414 ;
   :name "TERSCHELLING" .
 
-t00840:p1 a t:male.n.02 ;
+t00840:p1 a :Male ;
   :dob "1830-09-27" ;
   :dod "1897-08-30" ;
   :nam "PIETER ADRIANUS KROON" ;
   :pob t00840:c1 ;
   :pod t00840:c2 .
 
-t00840:p2 a t:female.n.02 ;
+t00840:p2 a :Female ;
   :dob "1840-01-01" ;
   :dod "1929-05-13" ;
   :nam "ANTJE REE" ;
@@ -36,23 +36,23 @@ t00840:p2 a t:female.n.02 ;
   :pod t00840:c2 ;
   :rol t00840:r1 .
 
-t00840:r1 a t:spouse.n.01 ;
+t00840:r1 a :Spouse.n.01 ;
   :tgt t00840:p1 .
 
-t00840:s1 a t:oak.n.01 .
+t00840:s1 a :Oak.n.01 .
 
-t00840:s2 a t:branch.n.02 .
+t00840:s2 a :Branch.n.02 .
 
-t00840:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00840:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00840.jpg" ;
-  dcterms:date "2020-02-20T14:47:29"^^xsd:dateTime ;
+  dc:date "2020-02-20T14:47:29"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2961 ;

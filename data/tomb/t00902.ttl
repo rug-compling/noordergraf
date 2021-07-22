@@ -1,6 +1,6 @@
 @prefix t00902: <https://noordergraf.rug.nl/tomb/t00902#> .
 
-tomb:t00902 a t:tombstone.n.01 ;
+tomb:t00902 a :Tomb ;
   :image t00902:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00902:p1 ,
@@ -11,46 +11,46 @@ tomb:t00902 a t:tombstone.n.01 ;
   :sym t00902:s1 ,
        t00902:s2 .
 
-t00902:c1 a t:hamlet.n.03 ;
+t00902:c1 a :Hamlet.n.03 ;
   :place place:Diepswal2756869 ;
   :name "DIEPSWAL" .
 
-t00902:c2 a t:city.n.01 ;
+t00902:c2 a :City.n.01 ;
   :place place:Rotterdam2747891 ;
   :name "ROTTERDAM" .
 
-t00902:c3 a t:city.n.01 ;
+t00902:c3 a :City.n.01 ;
   :place place:Enschede2756071 ;
   :name "ENSCHEDE" .
 
-t00902:p1 a t:female.n.02 ;
+t00902:p1 a :Female ;
   :dob "1891-05-05" ;
   :dod "1940-08-04" ;
   :nam "GRIETJE WILLEMINA HOENDERKEN" ;
   :pob t00902:c1 ;
   :pod t00902:c2 .
 
-t00902:p2 a t:male.n.02 ;
+t00902:p2 a :Male ;
   :dob "1896-11-13" ;
   :dod "1946-12-18" ;
   :nam "REINDER CLUIVING HOENDERKEN" ;
   :pob t00902:c1 ;
   :pod t00902:c3 .
 
-t00902:s1 a t:cross.n.03 .
+t00902:s1 a :Cross.n.03 .
 
-t00902:s2 a t:frond.n.01 .
+t00902:s2 a :Frond.n.01 .
 
-t00902:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00902:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00902.jpg" ;
-  dcterms:date "2020-03-07T14:23:56"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:23:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1718 ;

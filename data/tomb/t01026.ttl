@@ -1,6 +1,6 @@
 @prefix t01026: <https://noordergraf.rug.nl/tomb/t01026#> .
 
-tomb:t01026 a t:tombstone.n.01 ;
+tomb:t01026 a :Tomb ;
   :image t01026:im1 ;
   :site site:gr9906PPbierum ;
   :ent t01026:p1 ;
@@ -10,41 +10,41 @@ tomb:t01026 a t:tombstone.n.01 ;
        t01026:s3 ,
        t01026:s5 .
 
-t01026:c1 a t:village.n.02 ;
+t01026:c1 a :Village.n.02 ;
   :place place:Bierum2758983 ;
   :name "BIERUM" .
 
-t01026:p1 a t:male.n.02 ;
+t01026:p1 a :Male ;
   :dob "1858-10-17" ;
   :dod "1864-08-07" ;
   :nam "FREERK JANS HOFMAN" ;
   :pob t01026:c1 ;
   :pod t01026:c1 .
 
-t01026:s1 a t:butterfly.n.01 .
+t01026:s1 a :Butterfly.n.01 .
 
-t01026:s2 a t:sandglass.n.01 .
+t01026:s2 a :Sandglass.n.01 .
 
-t01026:s3 a t:wing.n.01 .
+t01026:s3 a :Wing.n.01 .
 
-t01026:s4 a t:bird.n.01 ;
+t01026:s4 a :Bird.n.01 ;
   :mem t01026:s3 .
 
-t01026:s5 a t:wing.n.01 .
+t01026:s5 a :Wing.n.01 .
 
-t01026:s6 a t:bird.n.01 ;
+t01026:s6 a :Bird.n.01 ;
   :mem t01026:s5 .
 
-t01026:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01026:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01026.jpg" ;
-  dcterms:date "2020-04-17T18:29:07"^^xsd:dateTime ;
+  dc:date "2020-04-17T18:29:07"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3809 ;

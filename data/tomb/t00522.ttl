@@ -1,13 +1,13 @@
 @prefix t00522: <https://noordergraf.rug.nl/tomb/t00522#> .
 
-tomb:t00522 a t:tombstone.n.01 ;
+tomb:t00522 a :Tomb ;
   :image t00522:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00522:p1 ;
   :quo "LA-ILAHA.ILL-ALLAH \\ MUHAMMAD-UR-RASOOLULLAH"@nld ;
   :sym t00522:s1 .
 
-t00522:p1 a t:male.n.02 ;
+t00522:p1 a :Male ;
   :dob "1945-06-24" ;
   :dod "2006-02-05" ;
   :nam "HARRY MOHAMED HOESEIN KARIM" ;
@@ -16,32 +16,32 @@ t00522:p1 a t:male.n.02 ;
        t00522:r3 ,
        t00522:r4 .
 
-t00522:r1 a t:father.n.01 .
+t00522:r1 a :Father.n.01 .
 
-t00522:r2 a t:brother.n.01 .
+t00522:r2 a :Brother.n.01 .
 
-t00522:r3 a t:grandfather.n.01 .
+t00522:r3 a :Grandfather.n.01 .
 
-t00522:r4 a t:husband.n.01 .
+t00522:r4 a :Husband.n.01 .
 
-t00522:s1 a t:composite.n.01 ;
+t00522:s1 a :Composite.n.01 ;
   :prt t00522:s2 ,
        t00522:s3 .
 
-t00522:s2 a t:crescent.n.01 .
+t00522:s2 a :Crescent.n.01 .
 
-t00522:s3 a t:star.n.01 .
+t00522:s3 a :Star.n.01 .
 
-t00522:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00522:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00522.jpg" ;
-  dcterms:date "2019-11-23T10:58:03"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:58:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1671 ;

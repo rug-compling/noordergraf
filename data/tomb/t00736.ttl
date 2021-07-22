@@ -1,6 +1,6 @@
 @prefix t00736: <https://noordergraf.rug.nl/tomb/t00736#> .
 
-tomb:t00736 a t:tombstone.n.01 ;
+tomb:t00736 a :Tomb ;
   :image t00736:im1 ;
   :site site:gr9936BTfarmsum ;
   :ent t00736:p1 ,
@@ -8,26 +8,26 @@ tomb:t00736 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00736:s1 .
 
-t00736:p1 a t:female.n.02 ;
+t00736:p1 a :Female ;
   :dob "1815-02-06" ;
   :dod "1885-08-30" ;
   :nam "ALBERTJE JAN MULDER" .
 
-t00736:p2 a t:male.n.02 ;
+t00736:p2 a :Male ;
   :nam "R.A. BOS" .
 
-t00736:s1 a t:butterfly.n.01 .
+t00736:s1 a :Butterfly.n.01 .
 
-t00736:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00736:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00736.jpg" ;
-  dcterms:date "2019-12-28T12:47:44"^^xsd:dateTime ;
+  dc:date "2019-12-28T12:47:44"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3109 ;

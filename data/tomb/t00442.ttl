@@ -1,21 +1,21 @@
 @prefix t00442: <https://noordergraf.rug.nl/tomb/t00442#> .
 
-tomb:t00442 a t:tombstone.n.01 ;
+tomb:t00442 a :Tomb ;
   :image t00442:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00442:p1 ,
        t00442:p2 ;
   :sym t00442:s1 .
 
-t00442:c1 a t:city.n.01 ;
+t00442:c1 a :City.n.01 ;
   :place place:Dokkum2756759 ;
   :name "DOKKUM" .
 
-t00442:c2 a t:island.n.01 ;
+t00442:c2 a :Island.n.01 ;
   :place place:Schiermonnikoog2747591 ;
   :name "SCHIERMONNIKOOG" .
 
-t00442:p1 a t:male.n.02 ;
+t00442:p1 a :Male ;
   :dob "1824-04-18" ;
   :dod "1903-07-18" ;
   :nam "J.J. VISSER" ;
@@ -23,30 +23,30 @@ t00442:p1 a t:male.n.02 ;
   :pod t00442:c2 ;
   :rol t00442:r1 .
 
-t00442:p2 a t:female.n.02 ;
+t00442:p2 a :Female ;
   :nam "A.E. BUWALDA" .
 
-t00442:r1 a t:spouse.n.01 ;
+t00442:r1 a :Spouse.n.01 ;
   :tgt t00442:p2 .
 
-t00442:s1 a t:composite.n.01 ;
+t00442:s1 a :Composite.n.01 ;
   :prt t00442:s2 ,
        t00442:s3 .
 
-t00442:s2 a t:frond.n.01 .
+t00442:s2 a :Frond.n.01 .
 
-t00442:s3 a t:frond.n.01 .
+t00442:s3 a :Frond.n.01 .
 
-t00442:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00442:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00442.jpg" ;
-  dcterms:date "2019-11-02T11:34:04"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:34:04"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4792 ;

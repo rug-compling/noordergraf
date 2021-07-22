@@ -1,6 +1,6 @@
 @prefix t00602: <https://noordergraf.rug.nl/tomb/t00602#> .
 
-tomb:t00602 a t:tombstone.n.01 ;
+tomb:t00602 a :Tomb ;
   :image t00602:im1 ;
   :site site:gr9951STwinsum ;
   :ent t00602:p1 ,
@@ -11,21 +11,21 @@ tomb:t00602 a t:tombstone.n.01 ;
   :sym t00602:s1 ,
        t00602:s2 .
 
-t00602:a1 a t:weeping.a.02 .
+t00602:a1 a :Weeping.a.02 .
 
-t00602:c1 a t:village.n.02 ;
+t00602:c1 a :Village.n.02 ;
   :place place:Winsum2744337 ;
   :name "WINSUM" .
 
-t00602:c2 a t:village.n.02 ;
+t00602:c2 a :Village.n.02 ;
   :place place:Obergum2749742 ;
   :name "OBERGUM" .
 
-t00602:m1 a t:measure.n.02 ;
+t00602:m1 a :Measure.n.02 ;
   :mem t00602:u1 ;
   :qua 51 .
 
-t00602:p1 a t:female.n.02 ;
+t00602:p1 a :Female ;
   :dob "1797-09-12" ;
   :dod "1874-10-06" ;
   :nam "L.S. NIJHOF" ;
@@ -34,49 +34,49 @@ t00602:p1 a t:female.n.02 ;
   :rol t00602:r1 ,
        t00602:r2 .
 
-t00602:p2 a t:male.n.02 ;
+t00602:p2 a :Male ;
   :nam "H.R. BRUINS" .
 
-t00602:p3 a t:male.n.02 ;
+t00602:p3 a :Male ;
   :rol t00602:r3 .
 
-t00602:p4 a t:female.n.02 ;
+t00602:p4 a :Female ;
   :rol t00602:r4 ,
        t00602:r5 .
 
-t00602:r1 a t:widow.n.01 ;
+t00602:r1 a :Widow.n.01 ;
   :tgt t00602:p2 .
 
-t00602:r2 a t:wife.n.01 ;
+t00602:r2 a :Wife.n.01 ;
   :dur t00602:m1 ;
   :tgt t00602:p2 .
 
-t00602:r3 a t:son.n.01 ;
+t00602:r3 a :Son.n.01 ;
   :tgt t00602:p1 .
 
-t00602:r4 a t:daughter-in-law.n.01 ;
+t00602:r4 a :Daughter-in-law.n.01 ;
   :tgt t00602:p1 .
 
-t00602:r5 a t:wife.n.01 ;
+t00602:r5 a :Wife.n.01 ;
   :tgt t00602:p3 .
 
-t00602:s1 a t:willow.n.01 ;
+t00602:s1 a :Willow.n.01 ;
   :att t00602:a1 .
 
-t00602:s2 a t:butterfly.n.01 .
+t00602:s2 a :Butterfly.n.01 .
 
-t00602:u1 a t:year.n.01 .
+t00602:u1 a :Year.n.01 .
 
-t00602:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00602:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00602.jpg" ;
-  dcterms:date "2019-11-30T14:46:28"^^xsd:dateTime ;
+  dc:date "2019-11-30T14:46:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3353 ;

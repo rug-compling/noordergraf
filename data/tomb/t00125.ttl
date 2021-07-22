@@ -1,6 +1,6 @@
 @prefix t00125: <https://noordergraf.rug.nl/tomb/t00125#> .
 
-tomb:t00125 a t:tombstone.n.01 ;
+tomb:t00125 a :Tomb ;
   :image t00125:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00125:p1 ,
@@ -8,7 +8,7 @@ tomb:t00125 a t:tombstone.n.01 ;
   :quo "HIER RUST TOT DE DAG DER WEDER OPSTANDING HET STOF VAN ONZE LIEVE VROUW MOEDER EN GROOTMOEDER" ;
   :sym t00125:s1 .
 
-t00125:p1 a t:female.n.02 ;
+t00125:p1 a :Female ;
   :dob "1868-12-06" ;
   :dod "1941-12-11" ;
   :nam "JANTJE LENTING" ;
@@ -16,37 +16,37 @@ t00125:p1 a t:female.n.02 ;
        t00125:r2 ,
        t00125:r3 .
 
-t00125:p2 a t:male.n.02 ;
+t00125:p2 a :Male ;
   :dob "1866-10-12" ;
   :dod "1968-07-24" ;
   :nam "RIENKO TIMMER" ;
   :rol t00125:r4 ,
        t00125:r5 .
 
-t00125:r1 a t:mother.n.01 .
+t00125:r1 a :Mother.n.01 .
 
-t00125:r2 a t:grandmother.n.01 .
+t00125:r2 a :Grandmother.n.01 .
 
-t00125:r3 a t:wife.n.01 ;
+t00125:r3 a :Wife.n.01 ;
   :tgt t00125:p2 .
 
-t00125:r4 a t:father.n.01 ;
+t00125:r4 a :Father.n.01 ;
   :att "LIEVE" .
 
-t00125:r5 a t:grandfather.n.01 .
+t00125:r5 a :Grandfather.n.01 .
 
-t00125:s1 a t:frond.n.01 .
+t00125:s1 a :Frond.n.01 .
 
-t00125:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00125:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00125.jpg" ;
-  dcterms:date "2019-10-01T10:00:37"^^xsd:dateTime ;
+  dc:date "2019-10-01T10:00:37"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2067 ;

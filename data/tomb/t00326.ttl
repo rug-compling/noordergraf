@@ -1,31 +1,31 @@
 @prefix t00326: <https://noordergraf.rug.nl/tomb/t00326#> .
 
-tomb:t00326 a t:tombstone.n.01 ;
+tomb:t00326 a :Tomb ;
   :image t00326:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00326:p1 ;
   :img t00326:i1 ;
   :quo "TER NAGEDACHTENIS VAN HEM" .
 
-t00326:c1 a t:city.n.01 ;
+t00326:c1 a :City.n.01 ;
   :place place:Sneek2747063 ;
   :name "SNEEK" .
 
-t00326:c2 a t:town.n.01 ;
+t00326:c2 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00326:i1 a t:portrait.n.02 ;
+t00326:i1 a :Portrait.n.02 ;
   :thm t00326:p1 .
 
-t00326:o1 a t:soldier.n.01 ;
+t00326:o1 a :Soldier.n.01 ;
   :hco "58340" ;
   :org t00326:o2 .
 
-t00326:o2 a t:battalion.n.01 ;
+t00326:o2 a :Battalion.n.01 ;
   :nam "1-9 GRENSBATALJON" .
 
-t00326:p1 a t:male.n.02 ;
+t00326:p1 a :Male ;
   :dob "1919-12-02" ;
   :dod "1940-05-12" ;
   :nam "KORNELIS LOIJENGA" ;
@@ -35,16 +35,16 @@ t00326:p1 a t:male.n.02 ;
   :quo "GEWOND OP 10-05-1940" ,
        "WONENDEN ALDAAR" .
 
-t00326:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00326:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00326.jpg" ;
-  dcterms:date "2019-10-19T14:27:23"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:27:23"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7159 ;

@@ -1,35 +1,35 @@
 @prefix t00483: <https://noordergraf.rug.nl/tomb/t00483#> .
 
-tomb:t00483 a t:tombstone.n.01 ;
+tomb:t00483 a :Tomb ;
   :image t00483:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00483:p1 ;
   :img t00483:i1 ;
   :sym t00483:s1 .
 
-t00483:i1 a t:portrait.n.02 ;
+t00483:i1 a :Portrait.n.02 ;
   :thm t00483:p3 .
 
-t00483:p1 a t:male.n.02 ;
+t00483:p1 a :Male ;
   :dob "1883-11-15" ;
   :dod "1978-08-28" ;
   :nam "DOUWE KOOPAL" .
 
-t00483:p3 a t:male.n.02 ;
+t00483:p3 a :Male ;
   :nam "JEZUS" .
 
-t00483:s1 a t:cross.n.03 .
+t00483:s1 a :Cross.n.03 .
 
-t00483:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00483:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00483.jpg" ;
-  dcterms:date "2019-11-09T14:34:15"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:34:15"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2064 ;

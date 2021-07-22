@@ -1,36 +1,36 @@
 @prefix t00358: <https://noordergraf.rug.nl/tomb/t00358#> .
 
-tomb:t00358 a t:tombstone.n.01 ;
+tomb:t00358 a :Tomb ;
   :image t00358:im1 ;
   :site site:dr9481CGvries ;
   :ent t00358:p1 ,
        t00358:p2 ;
   :sym t00358:s1 .
 
-t00358:p1 a t:female.n.02 ;
+t00358:p1 a :Female ;
   :dob "1877-01-09" ;
   :dod "1944-01-15" ;
   :nam "JALKIEN RIJMSMA" ;
   :rol t00358:r1 .
 
-t00358:p2 a t:male.n.02 ;
+t00358:p2 a :Male ;
   :nam "ALBERT GERRITS" .
 
-t00358:r1 a t:widow.n.01 ;
+t00358:r1 a :Widow.n.01 ;
   :tgt t00358:p2 .
 
-t00358:s1 a t:frond.n.01 .
+t00358:s1 a :Frond.n.01 .
 
-t00358:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00358:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00358.jpg" ;
-  dcterms:date "2019-10-25T17:31:52"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:31:52"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0800 ;

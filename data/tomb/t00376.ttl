@@ -1,17 +1,17 @@
 @prefix t00376: <https://noordergraf.rug.nl/tomb/t00376#> .
 
-tomb:t00376 a t:tombstone.n.01 ;
+tomb:t00376 a :Tomb ;
   :image t00376:im1 ;
   :ent t00376:p1 ,
        t00376:p2 ;
   :quo "RUST ZACHT" ;
   :sym t00376:s1 .
 
-t00376:c1 a t:village.n.02 ;
+t00376:c1 a :Village.n.02 ;
   :place place:Bunne2758108 ;
   :name "BUNNE" .
 
-t00376:p1 a t:male.n.02 ;
+t00376:p1 a :Male ;
   :dob "1907-03-03" ;
   :dod "1953-06-22" ;
   :nam "PIETER BURING" ;
@@ -19,25 +19,25 @@ t00376:p1 a t:male.n.02 ;
   :pod t00376:c1 ;
   :rol t00376:r1 .
 
-t00376:p2 a t:female.n.02 ;
+t00376:p2 a :Female ;
   :nam "GESIENA BOUWINA DEELSNIJDER" .
 
-t00376:r1 a t:spouse.n.01 ;
+t00376:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00376:p2 .
 
-t00376:s1 a t:frond.n.01 .
+t00376:s1 a :Frond.n.01 .
 
-t00376:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00376:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00376.jpg" ;
-  dcterms:date "2019-10-25T17:06:00"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:06:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0891 ;

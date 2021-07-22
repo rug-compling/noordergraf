@@ -1,6 +1,6 @@
 @prefix t00502: <https://noordergraf.rug.nl/tomb/t00502#> .
 
-tomb:t00502 a t:tombstone.n.01 ;
+tomb:t00502 a :Tomb ;
   :image t00502:im1 ;
   :site site:fr8917AVleeuwarden ;
   :ent t00502:p1 ,
@@ -8,21 +8,21 @@ tomb:t00502 a t:tombstone.n.01 ;
        t00502:p3 ;
   :sym t00502:s1 .
 
-t00502:c1 a t:city.n.01 ;
+t00502:c1 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LEEUWARDEN" .
 
-t00502:c2 a t:more.r.01 ;
+t00502:c2 a :More.r.01 ;
   :op1 t00502:m1 ;
   :op2 t00502:m2 .
 
-t00502:m1 a t:measure.n.02 .
+t00502:m1 a :Measure.n.02 .
 
-t00502:m2 a t:measure.n.02 ;
+t00502:m2 a :Measure.n.02 ;
   :mem t00502:u1 ;
   :qua 33 .
 
-t00502:p1 a t:male.n.02 ;
+t00502:p1 a :Male ;
   :age t00502:m1 ;
   :dod "1908-11-12" ;
   :nam "BARTELE DE KANT" ;
@@ -30,48 +30,48 @@ t00502:p1 a t:male.n.02 ;
   :rol t00502:r1 ,
        t00502:r2 .
 
-t00502:p2 a t:female.n.02 ;
+t00502:p2 a :Female ;
   :nam "B. DE KANT DIJKSTRA" ;
   :rol t00502:r3 .
 
-t00502:p3 a t:female.n.02 ;
+t00502:p3 a :Female ;
   :dob "1913-07-08" ;
   :dod "1918-11-04" ;
   :nam "IJPKE SJOUKJE DE VRIES" ;
   :rol t00502:r4 .
 
-t00502:r1 a t:husband.n.01 ;
+t00502:r1 a :Husband.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00502:p2 .
 
-t00502:r2 a t:father.n.01 .
+t00502:r2 a :Father.n.01 .
 
-t00502:r3 a t:widow.n.01 ;
+t00502:r3 a :Widow.n.01 ;
   :tgt t00502:p1 .
 
-t00502:r4 a t:daughter.n.01 ;
+t00502:r4 a :Daughter.n.01 ;
   :tgt t00502:p2 .
 
-t00502:s1 a t:composite.n.01 ;
+t00502:s1 a :Composite.n.01 ;
   :prt t00502:s2 ,
        t00502:s3 .
 
-t00502:s2 a t:frond.n.01 .
+t00502:s2 a :Frond.n.01 .
 
-t00502:s3 a t:ribbon.n.02 .
+t00502:s3 a :Ribbon.n.02 .
 
-t00502:u1 a t:year.n.01 .
+t00502:u1 a :Year.n.01 .
 
-t00502:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00502:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00502.jpg" ;
-  dcterms:date "2019-11-16T13:55:16"^^xsd:dateTime ;
+  dc:date "2019-11-16T13:55:16"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2094 ;

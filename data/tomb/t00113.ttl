@@ -1,25 +1,25 @@
 @prefix t00113: <https://noordergraf.rug.nl/tomb/t00113#> .
 
-tomb:t00113 a t:tombstone.n.01 ;
+tomb:t00113 a :Tomb ;
   :image t00113:im1 ;
   :site site:gr9752CMharen ;
   :ent t00113:p1 ,
        t00113:p2 ;
   :sym t00113:s1 .
 
-t00113:c1 a t:village.n.02 ;
+t00113:c1 a :Village.n.02 ;
   :place place:Garsthuizen2755720 ;
   :name "GARSTHUIZEN" .
 
-t00113:c2 a t:town.n.01 ;
+t00113:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00113:c3 a t:village.n.02 ;
+t00113:c3 a :Village.n.02 ;
   :place place:Zandeweer2744080 ;
   :name "ZANDEWEER" .
 
-t00113:p1 a t:female.n.02 ;
+t00113:p1 a :Female ;
   :dob "1878-12-15" ;
   :dod "1952-02-03" ;
   :nam "GRIETJE MARRINGA" ;
@@ -27,28 +27,28 @@ t00113:p1 a t:female.n.02 ;
   :pod t00113:c2 ;
   :rol t00113:r1 .
 
-t00113:p2 a t:male.n.02 ;
+t00113:p2 a :Male ;
   :dob "1872-04-03" ;
   :dod "1960-05-07" ;
   :nam "FOKKO ELEMA" ;
   :pob t00113:c3 ;
   :pod t00113:c2 .
 
-t00113:r1 a t:wife.n.01 ;
+t00113:r1 a :Wife.n.01 ;
   :tgt t00113:p2 .
 
-t00113:s1 a t:blazon.n.01 .
+t00113:s1 a :Blazon.n.01 .
 
-t00113:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00113:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00113.jpg" ;
-  dcterms:date "2019-09-20T17:59:18"^^xsd:dateTime ;
+  dc:date "2019-09-20T17:59:18"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1651 ;

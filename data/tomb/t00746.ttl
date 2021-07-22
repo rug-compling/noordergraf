@@ -1,6 +1,6 @@
 @prefix t00746: <https://noordergraf.rug.nl/tomb/t00746#> .
 
-tomb:t00746 a t:tombstone.n.01 ;
+tomb:t00746 a :Tomb ;
   :image t00746:im1 ;
   :site site:gr9679KHscheemda ;
   :ent t00746:p1 ,
@@ -8,21 +8,21 @@ tomb:t00746 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00746:s1 .
 
-t00746:a1 a t:weeping.a.02 .
+t00746:a1 a :Weeping.a.02 .
 
-t00746:c1 a t:village.n.02 ;
+t00746:c1 a :Village.n.02 ;
   :place place:Eexta2756316 ;
   :name "EEXTA" .
 
-t00746:c2 a t:village.n.02 ;
+t00746:c2 a :Village.n.02 ;
   :place place:Scheemda2747661 ;
   :name "SCHEEMDA" .
 
-t00746:c3 a t:village.n.02 ;
+t00746:c3 a :Village.n.02 ;
   :place place:Woldendorp2744228 ;
   :name "WOLDENDORP" .
 
-t00746:p1 a t:male.n.02 ;
+t00746:p1 a :Male ;
   :dob "1864-04-20" ;
   :dod "1943-07-05" ;
   :nam "AEILKO MULDER" ;
@@ -30,27 +30,27 @@ t00746:p1 a t:male.n.02 ;
   :pod t00746:c2 ;
   :rol t00746:r1 .
 
-t00746:p2 a t:female.n.02 ;
+t00746:p2 a :Female ;
   :dob "1858-11-12" ;
   :nam "IJKJE TWIEST" ;
   :pob t00746:c3 .
 
-t00746:r1 a t:spouse.n.01 ;
+t00746:r1 a :Spouse.n.01 ;
   :tgt t00746:p2 .
 
-t00746:s1 a t:willow.n.01 ;
+t00746:s1 a :Willow.n.01 ;
   :att t00746:a1 .
 
-t00746:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00746:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00746.jpg" ;
-  dcterms:date "2019-12-29T10:18:43"^^xsd:dateTime ;
+  dc:date "2019-12-29T10:18:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1807 ;

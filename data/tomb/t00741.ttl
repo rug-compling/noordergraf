@@ -1,6 +1,6 @@
 @prefix t00741: <https://noordergraf.rug.nl/tomb/t00741#> .
 
-tomb:t00741 a t:tombstone.n.01 ;
+tomb:t00741 a :Tomb ;
   :image t00741:im1 ;
   :site site:gr9679KHscheemda ;
   :ent t00741:p1 ,
@@ -8,11 +8,11 @@ tomb:t00741 a t:tombstone.n.01 ;
   :quo "MIJ GENADE IS U GENOEG"@nld ;
   :sym t00741:s1 .
 
-t00741:c1 a t:village.n.02 ;
+t00741:c1 a :Village.n.02 ;
   :place place:Scheemda2747661 ;
   :name "SCHEEMDA" .
 
-t00741:p1 a t:male.n.02 ;
+t00741:p1 a :Male ;
   :dob "1861-01-29" ;
   :dod "1950-08-13" ;
   :nam "HEIKO BRONS" ;
@@ -20,25 +20,25 @@ t00741:p1 a t:male.n.02 ;
   :pod t00741:c1 ;
   :rol t00741:r3 .
 
-t00741:p2 a t:female.n.02 ;
+t00741:p2 a :Female ;
   :nam "TRIJNTJE SMIT" .
 
-t00741:r3 a t:spouse.n.01 ;
+t00741:r3 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00741:p2 .
 
-t00741:s1 a t:entity.n.01 .
+t00741:s1 a :Entity.n.01 .
 
-t00741:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00741:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00741.jpg" ;
-  dcterms:date "2019-12-29T10:20:41"^^xsd:dateTime ;
+  dc:date "2019-12-29T10:20:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1806 ;

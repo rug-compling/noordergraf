@@ -1,6 +1,6 @@
 @prefix t00940: <https://noordergraf.rug.nl/tomb/t00940#> .
 
-tomb:t00940 a t:tombstone.n.01 ;
+tomb:t00940 a :Tomb ;
   :image t00940:im1 ;
   :site site:gr9696XGoudeschans ;
   :ent t00940:p1 ,
@@ -12,38 +12,38 @@ tomb:t00940 a t:tombstone.n.01 ;
        t00940:s4 ,
        t00940:s5 .
 
-t00940:p1 a t:female.n.02 ;
+t00940:p1 a :Female ;
   :dob "1776-11-22" ;
   :dod "1860-04-23" ;
   :nam "H.R. VAN MARK" ;
   :rol t00940:r1 .
 
-t00940:p2 a t:male.n.02 ;
+t00940:p2 a :Male ;
   :nam "H. OOSTERVELD" .
 
-t00940:r1 a t:spouse.n.01 ;
+t00940:r1 a :Spouse.n.01 ;
   :tgt t00940:p2 .
 
-t00940:s1 a t:snake.n.01 .
+t00940:s1 a :Snake.n.01 .
 
-t00940:s2 a t:butterfly.n.01 .
+t00940:s2 a :Butterfly.n.01 .
 
-t00940:s3 a t:scythe.n.01 .
+t00940:s3 a :Scythe.n.01 .
 
-t00940:s4 a t:oak.n.02 .
+t00940:s4 a :Oak.n.02 .
 
-t00940:s5 a t:pipe.n.01 .
+t00940:s5 a :Pipe.n.01 .
 
-t00940:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00940:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00940.jpg" ;
-  dcterms:date "2020-03-21T13:24:54"^^xsd:dateTime ;
+  dc:date "2020-03-21T13:24:54"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1384 ;

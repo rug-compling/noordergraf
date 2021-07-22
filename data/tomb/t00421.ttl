@@ -1,27 +1,27 @@
 @prefix t00421: <https://noordergraf.rug.nl/tomb/t00421#> .
 
-tomb:t00421 a t:tombstone.n.01 ;
+tomb:t00421 a :Tomb ;
   :image t00421:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00421:p1 ;
   :quo "DE VREZE DES HEREN IS HET BEGIN DER WIJSHEID" .
 
-t00421:p1 a t:male.n.02 ;
+t00421:p1 a :Male ;
   :dob "1893-09-09" ;
   :dod "1982-06-24" ;
   :nam "LYTJE WILLEM" ,
        "W. DIJKSTRA" .
 
-t00421:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00421:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00421.jpg" ;
-  dcterms:date "2019-11-02T11:29:48"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:29:48"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4789 ;

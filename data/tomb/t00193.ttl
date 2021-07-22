@@ -1,26 +1,26 @@
 @prefix t00193: <https://noordergraf.rug.nl/tomb/t00193#> .
 
-tomb:t00193 a t:tombstone.n.01 ;
+tomb:t00193 a :Tomb ;
   :image t00193:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00193:p1 ;
   :sym t00193:s1 .
 
-t00193:p1 a t:family.n.04 ;
+t00193:p1 a :Family.n.04 ;
   :nam "P. ZWART" .
 
-t00193:s1 a t:frond.n.01 .
+t00193:s1 a :Frond.n.01 .
 
-t00193:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00193:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00193.jpg" ;
-  dcterms:date "2019-10-06T14:44:07"^^xsd:dateTime ;
+  dc:date "2019-10-06T14:44:07"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1905 ;

@@ -1,6 +1,6 @@
 @prefix t00772: <https://noordergraf.rug.nl/tomb/t00772#> .
 
-tomb:t00772 a t:tombstone.n.01 ;
+tomb:t00772 a :Tomb ;
   :image t00772:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00772:p1 ,
@@ -9,21 +9,21 @@ tomb:t00772 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00772:s1 .
 
-t00772:a1 a t:weeping.a.02 .
+t00772:a1 a :Weeping.a.02 .
 
-t00772:c1 a t:village.n.02 ;
+t00772:c1 a :Village.n.02 ;
   :place place:Weerdinge2744927 ;
   :name "WEERDINGE" .
 
-t00772:c2 a t:town.n.01 ;
+t00772:c2 a :Town.n.01 ;
   :place place:Emmen2756136 ;
   :name "EMMEN" .
 
-t00772:c3 a t:village.n.02 ;
+t00772:c3 a :Village.n.02 ;
   :place place:Roswinkel2747903 ;
   :name "ROSWINKEL" .
 
-t00772:p1 a t:female.n.02 ;
+t00772:p1 a :Female ;
   :dob "1808-10-27" ;
   :dod "1887-05-03" ;
   :nam "HENDRIKJE BRAAM" ;
@@ -32,7 +32,7 @@ t00772:p1 a t:female.n.02 ;
   :rol t00772:r1 ,
        t00772:r2 .
 
-t00772:p2 a t:male.n.02 ;
+t00772:p2 a :Male ;
   :dob "1813-08-31" ;
   :dod "1879-12-09" ;
   :nam "HISKE WAARSING" ;
@@ -40,32 +40,32 @@ t00772:p2 a t:male.n.02 ;
   :pod t00772:c1 ;
   :rol t00772:r3 .
 
-t00772:p3 a t:male.n.02 ;
+t00772:p3 a :Male ;
   :nam "HENDRIK BOS" .
 
-t00772:r1 a t:spouse.n.01 ;
+t00772:r1 a :Spouse.n.01 ;
   :tgt t00772:p2 .
 
-t00772:r2 a t:spouse.n.01 ;
+t00772:r2 a :Spouse.n.01 ;
   :bef t00772:r1 ;
   :tgt t00772:p3 .
 
-t00772:r3 a t:spouse.n.01 ;
+t00772:r3 a :Spouse.n.01 ;
   :tgt t00772:p1 .
 
-t00772:s1 a t:willow.n.01 ;
+t00772:s1 a :Willow.n.01 ;
   :att t00772:a1 .
 
-t00772:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00772:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00772.jpg" ;
-  dcterms:date "2019-12-21T13:04:49"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:04:49"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7821 ;

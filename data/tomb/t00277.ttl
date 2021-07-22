@@ -1,25 +1,25 @@
 @prefix t00277: <https://noordergraf.rug.nl/tomb/t00277#> .
 
-tomb:t00277 a t:tombstone.n.01 ;
+tomb:t00277 a :Tomb ;
   :image t00277:im1 ;
   :site site:gr9985SCoosternieland ;
   :ent t00277:p1 ,
        t00277:p2 ;
   :sym t00277:s1 .
 
-t00277:c1 a t:village.n.02 ;
+t00277:c1 a :Village.n.02 ;
   :place place:Godlinze2755489 ;
   :name "GODLINZE" .
 
-t00277:c2 a t:village.n.02 ;
+t00277:c2 a :Village.n.02 ;
   :place place:Oosternieland2749429 ;
   :name "OOSTERNIELAND" .
 
-t00277:c3 a t:village.n.02 ;
+t00277:c3 a :Village.n.02 ;
   :place place:tZandt2746027 ;
   :name "'T ZANDT" .
 
-t00277:p1 a t:female.n.02 ;
+t00277:p1 a :Female ;
   :dob "1901-05-04" ;
   :dod "1960-07-08" ;
   :nam "BARBERTJE BOUMA" ;
@@ -29,35 +29,35 @@ t00277:p1 a t:female.n.02 ;
        t00277:r2 ,
        t00277:r3 .
 
-t00277:p2 a t:male.n.02 ;
+t00277:p2 a :Male ;
   :dob "1899-09-21" ;
   :dod "1978-02-05" ;
   :nam "EGBERT DE VRIES" ;
   :pob t00277:c3 ;
   :pod t00277:c2 .
 
-t00277:r1 a t:wife.n.01 ;
+t00277:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00277:p2 .
 
-t00277:r2 a t:mother.n.01 .
+t00277:r2 a :Mother.n.01 .
 
-t00277:r3 a t:spouse.n.01 ;
+t00277:r3 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00277:p2 .
 
-t00277:s1 a t:frond.n.02 .
+t00277:s1 a :Frond.n.02 .
 
-t00277:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00277:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00277.jpg" ;
-  dcterms:date "2019-10-16T16:57:12"^^xsd:dateTime ;
+  dc:date "2019-10-16T16:57:12"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4038 ;

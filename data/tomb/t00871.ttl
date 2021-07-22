@@ -1,6 +1,6 @@
 @prefix t00871: <https://noordergraf.rug.nl/tomb/t00871#> .
 
-tomb:t00871 a t:tombstone.n.01 ;
+tomb:t00871 a :Tomb ;
   :image t00871:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00871:p1 ,
@@ -8,49 +8,49 @@ tomb:t00871 a t:tombstone.n.01 ;
   :quo "HIER RUSTEN TOT DEN DAG DER OPSTANDING"@nld ;
   :ref t00871:v1 .
 
-t00871:b1 a t:Revelation.n.04 ;
+t00871:b1 a :Revelation.n.04 ;
   :prt t00871:c3 .
 
-t00871:c1 a t:village.n.02 ;
+t00871:c1 a :Village.n.02 ;
   :place place:Gees2755664 ;
   :name "GEES" .
 
-t00871:c2 a t:village.n.02 ;
+t00871:c2 a :Village.n.02 ;
   :place place:Erm2756040 ;
   :name "ERM" .
 
-t00871:c3 a t:chapter.n.01 ;
+t00871:c3 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00871:v1 .
 
-t00871:p1 a t:female.n.02 ;
+t00871:p1 a :Female ;
   :dob "1859-09-01" ;
   :dod "1927-01-08" ;
   :nam "JANTIEN BRINKS" ;
   :pob t00871:c1 ;
   :pod t00871:c2 .
 
-t00871:p2 a t:female.n.02 ;
+t00871:p2 a :Female ;
   :dob "1857-02-26" ;
   :dod "1932-03-22" ;
   :nam "J.S. WILTING" ;
   :pob t00871:c2 ;
   :pod t00871:c2 .
 
-t00871:v1 a t:verse.n.01 ;
+t00871:v1 a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN DIE IN DEN HEERE STERVEN" .
 
-t00871:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00871:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00871.jpg" ;
-  dcterms:date "2020-02-15T15:35:34"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:35:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7763 ;

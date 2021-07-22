@@ -1,21 +1,21 @@
 @prefix t00914: <https://noordergraf.rug.nl/tomb/t00914#> .
 
-tomb:t00914 a t:tombstone.n.01 ;
+tomb:t00914 a :Tomb ;
   :image t00914:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00914:p1 ,
        t00914:p2 ;
   :quo "RUST ZACHT"@nld .
 
-t00914:c1 a t:village.n.02 ;
+t00914:c1 a :Village.n.02 ;
   :place place:Lucaswolde2751404 ;
   :name "LUCASWOLDE" .
 
-t00914:c2 a t:village.n.02 ;
+t00914:c2 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00914:p1 a t:female.n.02 ;
+t00914:p1 a :Female ;
   :dob "1897-08-21" ;
   :dod "1924-08-29" ;
   :nam "FROUKJE VAN DER DONK" ;
@@ -23,22 +23,22 @@ t00914:p1 a t:female.n.02 ;
   :pod t00914:c2 ;
   :rol t00914:r1 .
 
-t00914:p2 a t:male.n.02 ;
+t00914:p2 a :Male ;
   :nam "SIKKE JAN CAZEMIER" .
 
-t00914:r1 a t:spouse.n.01 ;
+t00914:r1 a :Spouse.n.01 ;
   :tgt t00914:p2 .
 
-t00914:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00914:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00914.jpg" ;
-  dcterms:date "2020-03-07T14:05:29"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:05:29"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1717 ;

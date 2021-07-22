@@ -1,36 +1,36 @@
 @prefix t00093: <https://noordergraf.rug.nl/tomb/t00093#> .
 
-tomb:t00093 a t:tombstone.n.01 ;
+tomb:t00093 a :Tomb ;
   :image t00093:im1 ;
   :site site:gr9721AAgroningen ;
   :ent t00093:p1 ,
        t00093:p2 ;
   :quo "REQUIESCAT IN PACE@lat" .
 
-t00093:p1 a t:male.n.02 ;
+t00093:p1 a :Male ;
   :dob "1910-02-05" ;
   :dod "1965-02-26" ;
   :nam "FREDERICUS H. HALSEMA" ;
   :rol t00093:r1 .
 
-t00093:p2 a t:female.n.02 ;
+t00093:p2 a :Female ;
   :dob "1916-02-27" ;
   :dod "1989-11-11" ;
   :nam "WILHELMINA J. FRANKENA" .
 
-t00093:r1 a t:wife.n.01 ;
+t00093:r1 a :Wife.n.01 ;
   :tgt t00093:p2 .
 
-t00093:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00093:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00093.jpg" ;
-  dcterms:date "2019-09-25T10:56:28"^^xsd:dateTime ;
+  dc:date "2019-09-25T10:56:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2035 ;

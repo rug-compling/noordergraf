@@ -1,6 +1,6 @@
 @prefix t00924: <https://noordergraf.rug.nl/tomb/t00924#> .
 
-tomb:t00924 a t:tombstone.n.01 ;
+tomb:t00924 a :Tomb ;
   :image t00924:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00924:g1 ,
@@ -10,15 +10,15 @@ tomb:t00924 a t:tombstone.n.01 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
   :sym t00924:s1 .
 
-t00924:c1 a t:village.n.02 ;
+t00924:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00924:g1 a t:group.n.01 ;
+t00924:g1 a :Group.n.01 ;
   :mem t00924:p2 ,
        t00924:p3 .
 
-t00924:p1 a t:female.n.02 ;
+t00924:p1 a :Female ;
   :dob "1902-05-22" ;
   :dod "1905-03-22" ;
   :nam "AALTIEN DE BOER" ;
@@ -26,27 +26,27 @@ t00924:p1 a t:female.n.02 ;
   :pod t00924:c1 ;
   :rol t00924:r1 .
 
-t00924:p2 a t:person.n.01 ;
+t00924:p2 a :Person ;
   :nam "J. DE BOER" .
 
-t00924:p3 a t:person.n.01 ;
+t00924:p3 a :Person ;
   :nam "J. OOSTERHUIS" .
 
-t00924:r1 a t:daughter.n.01 ;
+t00924:r1 a :Daughter.n.01 ;
   :tgt t00924:g1 .
 
-t00924:s1 a t:entity.n.01 .
+t00924:s1 a :Entity.n.01 .
 
-t00924:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00924:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00924.jpg" ;
-  dcterms:date "2020-03-07T14:10:06"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:10:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1719 ;

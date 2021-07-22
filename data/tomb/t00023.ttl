@@ -1,6 +1,6 @@
 @prefix t00023: <https://noordergraf.rug.nl/tomb/t00023#> .
 
-tomb:t00023 a t:tombstone.n.01 ;
+tomb:t00023 a :Tomb ;
   :image t00023:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00023:p1 ,
@@ -9,17 +9,17 @@ tomb:t00023 a t:tombstone.n.01 ;
        t00023:p4 ;
   :sym t00023:s1 .
 
-t00023:a1 a t:winged.a.01 .
+t00023:a1 a :Winged.a.01 .
 
-t00023:c1 a t:city.n.01 ;
+t00023:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00023:c2 a t:city.n.01 ;
+t00023:c2 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00023:p1 a t:male.n.02 ;
+t00023:p1 a :Male ;
   :dob "1864-09-25" ;
   :dod "1930-01-06" ;
   :nam "LAMBERTUS M. STRENGHOLT" ;
@@ -27,12 +27,12 @@ t00023:p1 a t:male.n.02 ;
   :pod t00023:c1 ;
   :rol t00023:r1 .
 
-t00023:p2 a t:female.n.02 ;
+t00023:p2 a :Female ;
   :dob "1865-11-29" ;
   :dod "1949-03-07" ;
   :nam "ZWAANTJE MULDER" .
 
-t00023:p3 a t:female.n.02 ;
+t00023:p3 a :Female ;
   :dob "1908-06-09" ;
   :dod "1945-02-25" ;
   :nam "HENDRIKA M.G. KUMMER" ;
@@ -40,29 +40,29 @@ t00023:p3 a t:female.n.02 ;
   :pod t00023:c1 ;
   :rol t00023:r2 .
 
-t00023:p4 a t:male.n.02 ;
+t00023:p4 a :Male ;
   :nam "EILDERT M.J. STRENGHOLT" .
 
-t00023:r1 a t:spouse.n.01 ;
+t00023:r1 a :Spouse.n.01 ;
   :tgt t00023:p2 .
 
-t00023:r2 a t:spouse.n.01 ;
+t00023:r2 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00023:p4 .
 
-t00023:s1 a t:sandglass.n.01 ;
+t00023:s1 a :Sandglass.n.01 ;
   :att t00023:a1 .
 
-t00023:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00023:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00023.jpg" ;
-  dcterms:date "2019-09-25T16:26:28"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:26:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1909 ;

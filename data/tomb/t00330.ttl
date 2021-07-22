@@ -1,43 +1,43 @@
 @prefix t00330: <https://noordergraf.rug.nl/tomb/t00330#> .
 
-tomb:t00330 a t:tombstone.n.01 ;
+tomb:t00330 a :Tomb ;
   :image t00330:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00330:p1 ,
        t00330:p2 ;
   :sym t00330:s1 .
 
-t00330:a1 a t:weeping.a.02 .
+t00330:a1 a :Weeping.a.02 .
 
-t00330:p1 a t:male.n.02 ;
+t00330:p1 a :Male ;
   :dob "1866-03-30" ;
   :dod "1929-05-13" ;
   :nam "DIRK ZOMER" ;
   :rol t00330:r1 ;
   :sfx "JZ" .
 
-t00330:p2 a t:female.n.02 ;
+t00330:p2 a :Female ;
   :dob "1871-02-05" ;
   :dod "1952-04-10" ;
   :nam "ELSJE LIP" .
 
-t00330:r1 a t:spouse.n.01 ;
+t00330:r1 a :Spouse.n.01 ;
   :att "GELIEFD" ;
   :tgt t00330:p2 .
 
-t00330:s1 a t:willow.n.01 ;
+t00330:s1 a :Willow.n.01 ;
   :att t00330:a1 .
 
-t00330:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00330:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00330.jpg" ;
-  dcterms:date "2019-10-19T14:45:24"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:45:24"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7152 ;

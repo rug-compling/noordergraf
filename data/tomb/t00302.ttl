@@ -1,6 +1,6 @@
 @prefix t00302: <https://noordergraf.rug.nl/tomb/t00302#> .
 
-tomb:t00302 a t:tombstone.n.01 ;
+tomb:t00302 a :Tomb ;
   :image t00302:im1 ;
   :site site:dr7907CHhoogeveen ;
   :text "hier rusten onze lieve ouders\nen grootouders\nAlb. Oets.\nGeb. te Hoogeveen. 8 Sept. 1858,\nOverl. aldaar, 10 Oct. 1942.\nen\nAleida\nRoelina Jentina Sterken\nGeb. te Dwingeloo 2 Maart 1858,\nOverl. te Hengelo (O) 31 Dec. 1951." ;
@@ -8,55 +8,55 @@ tomb:t00302 a t:tombstone.n.01 ;
        t00302:p2 ;
   :sym t00302:s1 .
 
-t00302:c1 a t:town.n.01 ;
+t00302:c1 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00302:c2 a t:village.n.02 ;
+t00302:c2 a :Village.n.02 ;
   :place place:Dwingeloo2756451 ;
   :name "DWINGELOO" .
 
-t00302:c3 a t:city.n.01 ;
+t00302:c3 a :City.n.01 ;
   :place place:Hengelo2754394 ;
   :name "HENGELO" .
 
-t00302:c4 a t:province.n.01 ;
+t00302:c4 a :Province.n.01 ;
   :place place:ProvincieOverijssel2748838 ;
   :mem t00302:c3 ;
   :name "OVERIJSSEL" .
 
-t00302:p1 a t:male.n.02 ;
+t00302:p1 a :Male ;
   :dob "1858-09-08" ;
   :dod "1942-10-10" ;
   :nam "ALBERT OETS" ;
   :pob t00302:c1 ;
   :pod t00302:c1 .
 
-t00302:p2 a t:female.n.02 ;
+t00302:p2 a :Female ;
   :dob "1858-03-02" ;
   :dod "1951-12-31" ;
   :nam "ALEIDA ROELINA JENTINA STERKEN" ;
   :pob t00302:c2 ;
   :pod t00302:c3 .
 
-t00302:s1 a t:composite.n.01 ;
+t00302:s1 a :Composite.n.01 ;
   :prt t00302:s2 ,
        t00302:s3 .
 
-t00302:s2 a t:frond.n.01 .
+t00302:s2 a :Frond.n.01 .
 
-t00302:s3 a t:frond.n.01 .
+t00302:s3 a :Frond.n.01 .
 
-t00302:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00302:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00302.jpg" ;
-  dcterms:date "2019-10-19T14:32:16"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:32:16"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7159 ;

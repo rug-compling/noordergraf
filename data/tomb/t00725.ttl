@@ -1,6 +1,6 @@
 @prefix t00725: <https://noordergraf.rug.nl/tomb/t00725#> .
 
-tomb:t00725 a t:tombstone.n.01 ;
+tomb:t00725 a :Tomb ;
   :image t00725:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00725:p1 ,
@@ -8,38 +8,38 @@ tomb:t00725 a t:tombstone.n.01 ;
   :quo "RUST ZACHT"@nld ;
   :sym t00725:s1 .
 
-t00725:p1 a t:male.n.02 ;
+t00725:p1 a :Male ;
   :dob "1860-03-22" ;
   :dod "1933-06-27" ;
   :nam "JOHANNES HAASKEN" ;
   :rol t00725:r1 .
 
-t00725:p2 a t:female.n.02 ;
+t00725:p2 a :Female ;
   :dob "1862-07-01" ;
   :dod "1949-02-14" ;
   :nam "MARGINA W. HONNING" ;
   :rol t00725:r2 .
 
-t00725:r1 a t:parent.n.01 ;
+t00725:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00725:p3 .
 
-t00725:r2 a t:parent.n.01 ;
+t00725:r2 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00725:p3 .
 
-t00725:s1 a t:frond.n.01 .
+t00725:s1 a :Frond.n.01 .
 
-t00725:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00725:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00725.jpg" ;
-  dcterms:date "2019-12-21T13:13:57"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:13:57"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7823 ;

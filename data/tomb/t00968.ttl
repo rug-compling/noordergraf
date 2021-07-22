@@ -1,6 +1,6 @@
 @prefix t00968: <https://noordergraf.rug.nl/tomb/t00968#> .
 
-tomb:t00968 a t:tombstone.n.01 ;
+tomb:t00968 a :Tomb ;
   :image t00968:im1 ;
   :site site:gr9752CMharen ;
   :ent t00968:p1 ,
@@ -8,37 +8,37 @@ tomb:t00968 a t:tombstone.n.01 ;
   :quo "JEZUS ZEIDE DIE IN \\ MIJ GELOOFT ZAL LEVEN AL \\ WARE HIJ OOK GESTORVEN"@nld ;
   :sym t00968:s1 .
 
-t00968:a1 a t:weeping.a.02 .
+t00968:a1 a :Weeping.a.02 .
 
-t00968:p1 a t:male.n.02 ;
+t00968:p1 a :Male ;
   :dod "1932-10-06" ;
   :nam "JACOB VOS" ;
   :rol t00968:r1 ,
        t00968:r2 .
 
-t00968:p2 a t:female.n.02 ;
+t00968:p2 a :Female ;
   :nam "TRIJNE BOS" .
 
-t00968:r1 a t:widower.n.01 ;
+t00968:r1 a :Widower.n.01 ;
   :beg "XX-XX-1916" ;
   :tgt t00968:p2 .
 
-t00968:r2 a t:father.n.01 ;
+t00968:r2 a :Father.n.01 ;
   :att "LIEVE" .
 
-t00968:s1 a t:willow.n.01 ;
+t00968:s1 a :Willow.n.01 ;
   :att t00968:a1 .
 
-t00968:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00968:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00968.jpg" ;
-  dcterms:date "2020-03-27T16:56:33"^^xsd:dateTime ;
+  dc:date "2020-03-27T16:56:33"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1620 ;

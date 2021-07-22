@@ -1,6 +1,6 @@
 @prefix t01016: <https://noordergraf.rug.nl/tomb/t01016#> .
 
-tomb:t01016 a t:tombstone.n.01 ;
+tomb:t01016 a :Tomb ;
   :image t01016:im1 ;
   :site site:gr9686RSbeerta ;
   :ent t01016:p1 ,
@@ -10,34 +10,34 @@ tomb:t01016 a t:tombstone.n.01 ;
        t01016:s2 ,
        t01016:s3 .
 
-t01016:p1 a t:male.n.02 ;
+t01016:p1 a :Male ;
   :dob "1811-08-10" ;
   :dod "1852-02-19" ;
   :nam "GIESEL J. ELSINGA" ;
   :rol t01016:r1 .
 
-t01016:p2 a t:male.n.02 ;
+t01016:p2 a :Male ;
   :nam "REINDER A. GEERTSEMA" .
 
-t01016:r1 a t:spouse.n.01 ;
+t01016:r1 a :Spouse.n.01 ;
   :tgt t01016:p2 .
 
-t01016:s1 a t:frond.n.01 .
+t01016:s1 a :Frond.n.01 .
 
-t01016:s2 a t:frond.n.01 .
+t01016:s2 a :Frond.n.01 .
 
-t01016:s3 a t:ribbon.n.01 .
+t01016:s3 a :Ribbon.n.01 .
 
-t01016:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01016:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01016.jpg" ;
-  dcterms:date "2020-04-04T10:44:03"^^xsd:dateTime ;
+  dc:date "2020-04-04T10:44:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1755 ;

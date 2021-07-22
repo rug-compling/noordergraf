@@ -1,6 +1,6 @@
 @prefix t00634: <https://noordergraf.rug.nl/tomb/t00634#> .
 
-tomb:t00634 a t:tombstone.n.01 ;
+tomb:t00634 a :Tomb ;
   :image t00634:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00634:p1 ;
@@ -8,33 +8,33 @@ tomb:t00634 a t:tombstone.n.01 ;
   :quo "KLEURRIJK, MENSENMENS, LEVENSGENIETER"@nld ;
   :ref "PREDIKER 3:1"@nld .
 
-t00634:c1 a t:town.n.01 ;
+t00634:c1 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00634:c2 a t:city.n.01 ;
+t00634:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00634:i1 a t:statue.n.01 .
+t00634:i1 a :Statue.n.01 .
 
-t00634:p1 a t:female.n.02 ;
+t00634:p1 a :Female ;
   :dob "1948-02-19" ;
   :dod "2017-08-13" ;
   :nam "CATY BOEF-DE VRIES" ;
   :pob t00634:c1 ;
   :pod t00634:c2 .
 
-t00634:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00634:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00634.jpg" ;
-  dcterms:date "2019-11-23T09:55:56"^^xsd:dateTime ;
+  dc:date "2019-11-23T09:55:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1641 ;

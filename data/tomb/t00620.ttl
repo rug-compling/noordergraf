@@ -1,6 +1,6 @@
 @prefix t00620: <https://noordergraf.rug.nl/tomb/t00620#> .
 
-tomb:t00620 a t:tombstone.n.01 ;
+tomb:t00620 a :Tomb ;
   :image t00620:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00620:p1 ,
@@ -8,53 +8,53 @@ tomb:t00620 a t:tombstone.n.01 ;
        t00620:p3 ;
   :lan "NLD" .
 
-t00620:c1 a t:village.n.02 ;
+t00620:c1 a :Village.n.02 ;
   :place place:Borgercompagnie2758618 ;
   :name "BORGERCOMPAGNIE" .
 
-t00620:c2 a t:town.n.01 ;
+t00620:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00620:c3 a t:city.n.01 ;
+t00620:c3 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00620:c4 a t:village.n.02 ;
+t00620:c4 a :Village.n.02 ;
   :place place:Asten2759621 ;
   :name "ASTEN" .
 
-t00620:p1 a t:person.n.01 ;
+t00620:p1 a :Person ;
   :dob "1925-02-05" ;
   :dod "2015-04-02" ;
   :nam "W.R. MULDER" ;
   :pob t00620:c1 ;
   :pod t00620:c2 .
 
-t00620:p2 a t:person.n.01 ;
+t00620:p2 a :Person ;
   :dob "1930-06-06" ;
   :dod "1975-05-11" ;
   :nam "R. HAVINGA" ;
   :pob t00620:c3 ;
   :pod t00620:c1 .
 
-t00620:p3 a t:person.n.01 ;
+t00620:p3 a :Person ;
   :dob "1926-03-20" ;
   :dod "2008-05-25" ;
   :nam "P.J. STRIJBOSCH" ;
   :pob t00620:c4 ;
   :pod t00620:c2 .
 
-t00620:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00620:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00620.jpg" ;
-  dcterms:date "2019-11-23T10:02:44"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:02:44"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1643 ;

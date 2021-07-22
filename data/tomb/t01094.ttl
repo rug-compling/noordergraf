@@ -1,25 +1,25 @@
 @prefix t01094: <https://noordergraf.rug.nl/tomb/t01094#> .
 
-tomb:t01094 a t:tombstone.n.01 ;
+tomb:t01094 a :Tomb ;
   :image t01094:im1 ;
   :site site:gr9628TKsiddeburen ;
   :ent t01094:p1 ,
        t01094:p2 ;
   :lan "NLD" .
 
-t01094:c1 a t:village.n.02 ;
+t01094:c1 a :Village.n.02 ;
   :place place:Siddeburen2747343 ;
   :name "SIDDEBUREN" .
 
-t01094:c2 a t:hamlet.n.03 ;
+t01094:c2 a :Hamlet.n.03 ;
   :place place:Wilderhof2744436 ;
   :name "WILDERHOF" .
 
-t01094:c3 a t:city.n.01 ;
+t01094:c3 a :City.n.01 ;
   :place place:Delfzijl2757340 ;
   :name "DELFZIJL" .
 
-t01094:p1 a t:female.n.02 ;
+t01094:p1 a :Female ;
   :dob "1898-08-04" ;
   :dod "1969-01-12" ;
   :nam "ELIEZABETH BOS" ;
@@ -27,26 +27,26 @@ t01094:p1 a t:female.n.02 ;
   :pod t01094:c1 ;
   :rol t01094:r1 .
 
-t01094:p2 a t:male.n.02 ;
+t01094:p2 a :Male ;
   :dob "1907-12-26" ;
   :dod "1970-01-21" ;
   :nam "GEERT DE WILDE" ;
   :pob t01094:c2 ;
   :pod t01094:c3 .
 
-t01094:r1 a t:spouse.n.01 ;
+t01094:r1 a :Spouse.n.01 ;
   :tgt t01094:p2 .
 
-t01094:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01094:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01094.jpg" ;
-  dcterms:date "2020-09-19T15:00:11"^^xsd:dateTime ;
+  dc:date "2020-09-19T15:00:11"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2437 ;

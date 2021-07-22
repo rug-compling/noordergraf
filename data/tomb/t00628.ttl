@@ -1,6 +1,6 @@
 @prefix t00628: <https://noordergraf.rug.nl/tomb/t00628#> .
 
-tomb:t00628 a t:tombstone.n.01 ;
+tomb:t00628 a :Tomb ;
   :image t00628:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00628:p1 ,
@@ -10,13 +10,13 @@ tomb:t00628 a t:tombstone.n.01 ;
   :sym t00628:s1 ,
        t00628:s2 .
 
-t00628:a1 a t:weeping.a.02 .
+t00628:a1 a :Weeping.a.02 .
 
-t00628:c1 a t:town.n.01 ;
+t00628:c1 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00628:p1 a t:female.n.02 ;
+t00628:p1 a :Female ;
   :dob "1870-06-19" ;
   :dod "1913-03-28" ;
   :nam "JAKOBUS BLEEKER" ;
@@ -25,33 +25,33 @@ t00628:p1 a t:female.n.02 ;
   :rol t00628:r1 ,
        t00628:r2 .
 
-t00628:p2 a t:person.n.01 ;
+t00628:p2 a :Person ;
   :nam "C. BÖDEKER" .
 
-t00628:p3 a t:person.n.01 ;
+t00628:p3 a :Person ;
   :nam "W.G. BÖDEKER" .
 
-t00628:r1 a t:sister.n.01 ;
+t00628:r1 a :Sister.n.01 ;
   :tgt t00628:p2 .
 
-t00628:r2 a t:sister.n.01 ;
+t00628:r2 a :Sister.n.01 ;
   :tgt t00628:p3 .
 
-t00628:s1 a t:willow.n.01 ;
+t00628:s1 a :Willow.n.01 ;
   :att t00628:a1 .
 
-t00628:s2 a t:ax.n.01 .
+t00628:s2 a :Ax.n.01 .
 
-t00628:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00628:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00628.jpg" ;
-  dcterms:date "2019-11-23T09:58:00"^^xsd:dateTime ;
+  dc:date "2019-11-23T09:58:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1641 ;

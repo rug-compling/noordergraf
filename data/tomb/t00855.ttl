@@ -1,19 +1,19 @@
 @prefix t00855: <https://noordergraf.rug.nl/tomb/t00855#> .
 
-tomb:t00855 a t:tombstone.n.01 ;
+tomb:t00855 a :Tomb ;
   :image t00855:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00855:p1 ;
   :quo "RUST ZACHT, LIEVE \\ OOM EN OUD-OOM"@nld ;
   :sym t00855:s1 .
 
-t00855:a1 a t:weeping.a.02 .
+t00855:a1 a :Weeping.a.02 .
 
-t00855:c1 a t:village.n.02 ;
+t00855:c1 a :Village.n.02 ;
   :place place:Sleen2747182 ;
   :name "SLEEN" .
 
-t00855:p1 a t:male.n.02 ;
+t00855:p1 a :Male ;
   :dob "1875-03-20" ;
   :dod "1968-08-11" ;
   :nam "WILLEM KAMPS" ;
@@ -22,23 +22,23 @@ t00855:p1 a t:male.n.02 ;
   :rol t00855:r1 ,
        t00855:r2 .
 
-t00855:r1 a t:uncle.n.01 .
+t00855:r1 a :Uncle.n.01 .
 
-t00855:r2 a t:granduncle.n.01 .
+t00855:r2 a :Granduncle.n.01 .
 
-t00855:s1 a t:willow.n.01 ;
+t00855:s1 a :Willow.n.01 ;
   :att t00855:a1 .
 
-t00855:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00855:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00855.jpg" ;
-  dcterms:date "2020-02-15T15:37:50"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:37:50"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7756 ;

@@ -1,30 +1,30 @@
 @prefix t00405: <https://noordergraf.rug.nl/tomb/t00405#> .
 
-tomb:t00405 a t:tombstone.n.01 ;
+tomb:t00405 a :Tomb ;
   :image t00405:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00405:p1 ,
        t00405:p2 ;
   :sym t00405:s1 .
 
-t00405:c1 a t:village.n.02 ;
+t00405:c1 a :Village.n.02 ;
   :place place:Buitenpost2758131 ;
   :name "BUITENPOST" .
 
-t00405:c2 a t:city.n.01 ;
+t00405:c2 a :City.n.01 ;
   :place place:Franeker2755845 ;
   :name "FRANEKER" .
 
-t00405:c3 a t:village.n.02 ;
+t00405:c3 a :Village.n.02 ;
   :place place:Stroobos2746589 ;
   :name "STROOBOS" .
 
-t00405:c4 a t:province.n.01 ;
+t00405:c4 a :Province.n.01 ;
   :place place:ProvincieFriesland2755812 ;
   :mem t00405:c3 ;
   :name "FRIESLAND" .
 
-t00405:p1 a t:male.n.02 ;
+t00405:p1 a :Male ;
   :dob "1847-09-26" ;
   :dod "1929-06-05" ;
   :nam "HENDRIK A. BRUINSMA" ;
@@ -32,7 +32,7 @@ t00405:p1 a t:male.n.02 ;
   :pod t00405:c2 ;
   :rol t00405:r1 .
 
-t00405:p2 a t:female.n.02 ;
+t00405:p2 a :Female ;
   :dob "1857-11-23" ;
   :dod "1931-12-15" ;
   :nam "RENSKJE VISSER" ;
@@ -40,33 +40,33 @@ t00405:p2 a t:female.n.02 ;
   :pod t00405:c1 ;
   :rol t00405:r2 .
 
-t00405:r1 a t:parent.n.01 ;
+t00405:r1 a :Parent.n.01 ;
   :att "GELIEFDE" .
 
-t00405:r2 a t:parent.n.01 ;
+t00405:r2 a :Parent.n.01 ;
   :att "GELIEFDE" .
 
-t00405:s1 a t:composite.n.01 ;
+t00405:s1 a :Composite.n.01 ;
   :prt t00405:s2 ,
        t00405:s3 ,
        t00405:s4 .
 
-t00405:s2 a t:frond.n.01 .
+t00405:s2 a :Frond.n.01 .
 
-t00405:s3 a t:frond.n.01 .
+t00405:s3 a :Frond.n.01 .
 
-t00405:s4 a t:ribbon.n.01 .
+t00405:s4 a :Ribbon.n.01 .
 
-t00405:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00405:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00405.jpg" ;
-  dcterms:date "2019-10-26T14:45:02"^^xsd:dateTime ;
+  dc:date "2019-10-26T14:45:02"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2518 ;

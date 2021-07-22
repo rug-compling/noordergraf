@@ -1,31 +1,31 @@
 @prefix t00479: <https://noordergraf.rug.nl/tomb/t00479#> .
 
-tomb:t00479 a t:tombstone.n.01 ;
+tomb:t00479 a :Tomb ;
   :image t00479:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00479:p1 ,
        t00479:p2 ;
   :sym t00479:s1 .
 
-t00479:c1 a t:village.n.02 ;
+t00479:c1 a :Village.n.02 ;
   :place place:Cune8953542 ;
   :name "CUNE" .
 
-t00479:c2 a t:province.n.01 ;
+t00479:c2 a :Province.n.01 ;
   :place place:Toscane3165361 ;
   :mem t00479:c1 ;
   :name "TOSCANA" .
 
-t00479:c3 a t:country.n.02 ;
+t00479:c3 a :Country.n.02 ;
   :place place:Italie3175395 ;
   :mem t00479:c2 ;
   :name "ITALIË" .
 
-t00479:c4 a t:city.n.01 ;
+t00479:c4 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LEEUWARDEN" .
 
-t00479:p1 a t:male.n.02 ;
+t00479:p1 a :Male ;
   :dob "1844-06-15" ;
   :dod "1919-04-21" ;
   :nam "JACOPO GIUSTO FAZZI" ;
@@ -33,24 +33,24 @@ t00479:p1 a t:male.n.02 ;
   :pod t00479:c4 ;
   :rol t00479:r1 .
 
-t00479:p2 a t:female.n.02 ;
+t00479:p2 a :Female ;
   :nam "GEESJE JANSSEN" .
 
-t00479:r1 a t:spouse.n.01 ;
+t00479:r1 a :Spouse.n.01 ;
   :tgt t00479:p2 .
 
-t00479:s1 a t:cross.n.03 .
+t00479:s1 a :Cross.n.03 .
 
-t00479:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00479:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00479.jpg" ;
-  dcterms:date "2019-11-09T14:34:26"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:34:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2064 ;

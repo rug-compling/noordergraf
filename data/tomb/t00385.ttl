@@ -1,21 +1,21 @@
 @prefix t00385: <https://noordergraf.rug.nl/tomb/t00385#> .
 
-tomb:t00385 a t:tombstone.n.01 ;
+tomb:t00385 a :Tomb ;
   :image t00385:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00385:p1 ,
        t00385:p2 ;
   :sym t00385:s1 .
 
-t00385:c1 a t:village.n.02 ;
+t00385:c1 a :Village.n.02 ;
   :place place:Buitenpost2758131 ;
   :name "BUITENPOST" .
 
-t00385:m1 a t:measure.n.02 ;
+t00385:m1 a :Measure.n.02 ;
   :mem t00385:u1 ;
   :qua 82 .
 
-t00385:p1 a t:male.n.02 ;
+t00385:p1 a :Male ;
   :age t00385:m1 ;
   :dod "1929-03-08" ;
   :nam "ANDRIES HAAGSMA" ;
@@ -23,38 +23,38 @@ t00385:p1 a t:male.n.02 ;
   :rol t00385:r1 ,
        t00385:r2 .
 
-t00385:p2 a t:family.n.04 ;
+t00385:p2 a :Family.n.04 ;
   :nam "HAAGSMA" .
 
-t00385:r1 a t:father.n.01 ;
+t00385:r1 a :Father.n.01 ;
   :att "BEHUWD" ,
        "GELIEFDE" .
 
-t00385:r2 a t:grandfather.n.01 .
+t00385:r2 a :Grandfather.n.01 .
 
-t00385:s1 a t:composite.n.01 ;
+t00385:s1 a :Composite.n.01 ;
   :prt t00385:s2 ,
        t00385:s3 ,
        t00385:s4 .
 
-t00385:s2 a t:frond.n.01 .
+t00385:s2 a :Frond.n.01 .
 
-t00385:s3 a t:frond.n.01 .
+t00385:s3 a :Frond.n.01 .
 
-t00385:s4 a t:ribbon.n.01 .
+t00385:s4 a :Ribbon.n.01 .
 
-t00385:u1 a t:year.n.01 .
+t00385:u1 a :Year.n.01 .
 
-t00385:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00385:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00385.jpg" ;
-  dcterms:date "2019-10-26T15:03:04"^^xsd:dateTime ;
+  dc:date "2019-10-26T15:03:04"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2517 ;

@@ -1,6 +1,6 @@
 @prefix t00328: <https://noordergraf.rug.nl/tomb/t00328#> .
 
-tomb:t00328 a t:tombstone.n.01 ;
+tomb:t00328 a :Tomb ;
   :image t00328:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00328:p1 ,
@@ -11,17 +11,17 @@ tomb:t00328 a t:tombstone.n.01 ;
        "PSALM 97:7" ;
   :sym t00328:s1 .
 
-t00328:a1 a t:weeping.a.02 .
+t00328:a1 a :Weeping.a.02 .
 
-t00328:c1 a t:village.n.02 ;
+t00328:c1 a :Village.n.02 ;
   :place place:Ruinen2747835 ;
   :name "RUINEN" .
 
-t00328:c2 a t:town.n.01 ;
+t00328:c2 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00328:p1 a t:male.n.02 ;
+t00328:p1 a :Male ;
   :dob "1852-09-29" ;
   :dod "1927-04-27" ;
   :nam "HENDRIK KLOOSTER" ;
@@ -30,7 +30,7 @@ t00328:p1 a t:male.n.02 ;
   :rol t00328:r1 ,
        t00328:r2 .
 
-t00328:p2 a t:female.n.02 ;
+t00328:p2 a :Female ;
   :dob "1860-06-24" ;
   :dod "1943-10-22" ;
   :nam "HILLEGONDA BLOKZIJL" ;
@@ -39,29 +39,29 @@ t00328:p2 a t:female.n.02 ;
   :rol t00328:r3 ,
        t00328:r4 .
 
-t00328:r1 a t:parent.n.01 ;
+t00328:r1 a :Parent.n.01 ;
   :att "GELIEFDE" .
 
-t00328:r2 a t:grandparent.n.01 .
+t00328:r2 a :Grandparent.n.01 .
 
-t00328:r3 a t:parent.n.01 ;
+t00328:r3 a :Parent.n.01 ;
   :att "GELIEFDE" .
 
-t00328:r4 a t:grandparent.n.01 .
+t00328:r4 a :Grandparent.n.01 .
 
-t00328:s1 a t:willow.n.01 ;
+t00328:s1 a :Willow.n.01 ;
   :att t00328:a1 .
 
-t00328:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00328:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00328.jpg" ;
-  dcterms:date "2019-10-19T14:41:15"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:41:15"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7150 ;

@@ -1,6 +1,6 @@
 @prefix t01009: <https://noordergraf.rug.nl/tomb/t01009#> .
 
-tomb:t01009 a t:tombstone.n.01 ;
+tomb:t01009 a :Tomb ;
   :image t01009:im1 ;
   :site site:gr9734ATgroningen ;
   :ent t01009:g1 ,
@@ -9,46 +9,46 @@ tomb:t01009 a t:tombstone.n.01 ;
        t01009:p3 ;
   :lan "NLD" .
 
-t01009:c1 a t:village.n.02 ;
+t01009:c1 a :Village.n.02 ;
   :place place:Noorddijk2749981 ;
   :name "NOORDDIJK" .
 
-t01009:g1 a t:group.n.01 ;
+t01009:g1 a :Group.n.01 ;
   :mem t01009:p1 ,
        t01009:p2 .
 
-t01009:p1 a t:female.n.02 ;
+t01009:p1 a :Female ;
   :dob "1844-04-08" ;
   :dod "1894-06-21" ;
   :nam "GEKE VELDMAN" ;
   :pob t01009:c1 ;
   :rol t01009:r1 .
 
-t01009:p2 a t:male.n.02 ;
+t01009:p2 a :Male ;
   :nam "H.R. BAKKER" .
 
-t01009:p3 a t:female.n.02 ;
+t01009:p3 a :Female ;
   :dob "1876-03-14" ;
   :dod "1893-10-09" ;
   :nam "LUTGERDINA BAKKER" ;
   :rol t01009:r2 .
 
-t01009:r1 a t:spouse.n.01 ;
+t01009:r1 a :Spouse.n.01 ;
   :tgt t01009:p2 .
 
-t01009:r2 a t:daughter.n.01 ;
+t01009:r2 a :Daughter.n.01 ;
   :tgt t01009:g1 .
 
-t01009:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01009:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01009.jpg" ;
-  dcterms:date "2020-04-05T12:12:42"^^xsd:dateTime ;
+  dc:date "2020-04-05T12:12:42"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2443 ;

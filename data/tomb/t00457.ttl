@@ -1,28 +1,28 @@
 @prefix t00457: <https://noordergraf.rug.nl/tomb/t00457#> .
 
-tomb:t00457 a t:tombstone.n.01 ;
+tomb:t00457 a :Tomb ;
   :image t00457:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00457:p1 ;
   :sym t00457:s1 .
 
-t00457:p1 a t:female.n.02 ;
+t00457:p1 a :Female ;
   :dob "1898-05-16" ;
   :dod "1963-09-06" ;
   :nam "WILHELMINA CHRISTINA DE BOER" .
 
-t00457:s1 a t:cross.n.03 .
+t00457:s1 a :Cross.n.03 .
 
-t00457:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00457:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00457.jpg" ;
-  dcterms:date "2019-11-09T14:51:43"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:51:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2071 ;

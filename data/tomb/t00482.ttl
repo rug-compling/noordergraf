@@ -1,6 +1,6 @@
 @prefix t00482: <https://noordergraf.rug.nl/tomb/t00482#> .
 
-tomb:t00482 a t:tombstone.n.01 ;
+tomb:t00482 a :Tomb ;
   :image t00482:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00482:p1 ,
@@ -9,38 +9,38 @@ tomb:t00482 a t:tombstone.n.01 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :sym t00482:s1 .
 
-t00482:i1 a t:portrait.n.02 ;
+t00482:i1 a :Portrait.n.02 ;
   :thm t00482:p3 .
 
-t00482:p1 a t:female.n.02 ;
+t00482:p1 a :Female ;
   :dob "1868-03-13" ;
   :dod "1928-12-24" ;
   :nam "ANNA CATHARINA BERNDES" ;
   :rol t00482:r1 .
 
-t00482:p2 a t:male.n.02 ;
+t00482:p2 a :Male ;
   :dob "1866-06-15" ;
   :dod "1937-08-27" ;
   :nam "HANS KOELSTRA" .
 
-t00482:p3 a t:male.n.02 ;
+t00482:p3 a :Male ;
   :nam "JEZUS" .
 
-t00482:r1 a t:spouse.n.01 ;
+t00482:r1 a :Spouse.n.01 ;
   :tgt t00482:p2 .
 
-t00482:s1 a t:cross.n.03 .
+t00482:s1 a :Cross.n.03 .
 
-t00482:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00482:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00482.jpg" ;
-  dcterms:date "2019-11-09T14:36:33"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:36:33"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2068 ;

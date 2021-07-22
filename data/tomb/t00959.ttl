@@ -1,6 +1,6 @@
 @prefix t00959: <https://noordergraf.rug.nl/tomb/t00959#> .
 
-tomb:t00959 a t:tombstone.n.01 ;
+tomb:t00959 a :Tomb ;
   :image t00959:im1 ;
   :site site:gr9479TNnoordlaren ;
   :ent t00959:p1 ,
@@ -8,27 +8,27 @@ tomb:t00959 a t:tombstone.n.01 ;
   :quo "RUST IN VREDE"@nld ;
   :sym t00959:s1 .
 
-t00959:a1 a t:weeping.a.02 .
+t00959:a1 a :Weeping.a.02 .
 
-t00959:c1 a t:village.n.02 ;
+t00959:c1 a :Village.n.02 ;
   :place place:Zuidlaren2743680 ;
   :name "ZUIDLAREN" .
 
-t00959:c2 a t:village.n.02 ;
+t00959:c2 a :Village.n.02 ;
   :place place:Noordlaren2749857 ;
   :name "NOORDLAREN" .
 
-t00959:c3 a t:less.r.01 ;
+t00959:c3 a :Less.r.01 ;
   :op1 t00959:m1 ;
   :op2 t00959:m2 .
 
-t00959:m1 a t:measure.n.02 .
+t00959:m1 a :Measure.n.02 .
 
-t00959:m2 a t:measure.n.02 ;
+t00959:m2 a :Measure.n.02 ;
   :mem t00959:u1 ;
   :qua 74 .
 
-t00959:p1 a t:female.n.02 ;
+t00959:p1 a :Female ;
   :age t00959:m1 ;
   :dob "1820-05-19" ;
   :dod "1894-01-23" ;
@@ -37,27 +37,27 @@ t00959:p1 a t:female.n.02 ;
   :pod t00959:c2 ;
   :rol t00959:r1 .
 
-t00959:p2 a t:male.n.02 ;
+t00959:p2 a :Male ;
   :nam "HENDRIK KLOOTS" .
 
-t00959:r1 a t:widow.n.01 ;
+t00959:r1 a :Widow.n.01 ;
   :tgt t00959:p2 .
 
-t00959:s1 a t:willow.n.01 ;
+t00959:s1 a :Willow.n.01 ;
   :att t00959:a1 .
 
-t00959:u1 a t:year.n.01 .
+t00959:u1 a :Year.n.01 .
 
-t00959:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00959:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00959.jpg" ;
-  dcterms:date "2020-03-25T09:24:55"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:24:55"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1204 ;

@@ -1,6 +1,6 @@
 @prefix t00561: <https://noordergraf.rug.nl/tomb/t00561#> .
 
-tomb:t00561 a t:tombstone.n.01 ;
+tomb:t00561 a :Tomb ;
   :image t00561:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00561:p1 ,
@@ -8,22 +8,22 @@ tomb:t00561 a t:tombstone.n.01 ;
        t00561:p3 ;
   :lan "NLD" .
 
-t00561:b1 a t:Epistle_to_the_Romans.n.04 ;
+t00561:b1 a :Epistle_to_the_Romans.n.04 ;
   :prt t00561:c3 .
 
-t00561:c1 a t:city.n.01 ;
+t00561:c1 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00561:c2 a t:city.n.01 ;
+t00561:c2 a :City.n.01 ;
   :place place:Schiedam2747596 ;
   :name "SCHIEDAM" .
 
-t00561:c3 a t:chapter.n.01 ;
+t00561:c3 a :Chapter.n.01 ;
   :ord 6 ;
   :prt t00561:v1 .
 
-t00561:p1 a t:male.n.02 ;
+t00561:p1 a :Male ;
   :dob "1856-01-04" ;
   :dod "1933-01-30" ;
   :nam "DERK STUTVOET" ;
@@ -33,7 +33,7 @@ t00561:p1 a t:male.n.02 ;
   :rol t00561:r1 ,
        t00561:r2 .
 
-t00561:p2 a t:female.n.02 ;
+t00561:p2 a :Female ;
   :dob "1858-12-01" ;
   :dod "1916-12-16" ;
   :nam "AALTJE LOOTS" ;
@@ -41,29 +41,29 @@ t00561:p2 a t:female.n.02 ;
   :pod t00561:c1 ;
   :ref "PSALM 103:15-22" .
 
-t00561:p3 a t:female.n.02 ;
+t00561:p3 a :Female ;
   :nam "A. HEUVING" .
 
-t00561:r1 a t:widower.n.01 ;
+t00561:r1 a :Widower.n.01 ;
   :tgt t00561:p2 .
 
-t00561:r2 a t:widower.n.01 ;
+t00561:r2 a :Widower.n.01 ;
   :aft t00561:r1 ;
   :tgt t00561:p3 .
 
-t00561:v1 a t:verse.n.01 ;
+t00561:v1 a :Verse.n.01 ;
   :ord 23 .
 
-t00561:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00561:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00561.jpg" ;
-  dcterms:date "2019-11-24T13:45:54"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:45:54"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1044 ;

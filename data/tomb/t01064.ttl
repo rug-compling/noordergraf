@@ -1,6 +1,6 @@
 @prefix t01064: <https://noordergraf.rug.nl/tomb/t01064#> .
 
-tomb:t01064 a t:tombstone.n.01 ;
+tomb:t01064 a :Tomb ;
   :image t01064:im1 ;
   :site site:gr9367PAde_wilp ;
   :ent t01064:p1 ,
@@ -9,42 +9,42 @@ tomb:t01064 a t:tombstone.n.01 ;
   :sym t01064:s1 ,
        t01064:s2 .
 
-t01064:c1 a t:town.n.01 ;
+t01064:c1 a :Town.n.01 ;
   :place place:Drachten2756644 ;
   :name "DRACHTEN" .
 
-t01064:c2 a t:village.n.02 ;
+t01064:c2 a :Village.n.02 ;
   :place place:Siegerswoude2747339 ;
   :name "SIEGERSWOUDE" .
 
-t01064:p1 a t:male.n.02 ;
+t01064:p1 a :Male ;
   :dob "1869-01-26" ;
   :dod "1945-05-10" ;
   :nam "WOLTER POSTMA" ;
   :pob t01064:c1 ;
   :pod t01064:c2 .
 
-t01064:p2 a t:female.n.02 ;
+t01064:p2 a :Female ;
   :dob "1873-09-08" ;
   :dod "1962-01-03" ;
   :nam "JITSKE VAN DER WAL" ;
   :pob t01064:c2 ;
   :pod t01064:c2 .
 
-t01064:s1 a t:branch.n.02 .
+t01064:s1 a :Branch.n.02 .
 
-t01064:s2 a t:branch.n.02 .
+t01064:s2 a :Branch.n.02 .
 
-t01064:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01064:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01064.jpg" ;
-  dcterms:date "2020-05-01T15:24:58"^^xsd:dateTime ;
+  dc:date "2020-05-01T15:24:58"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1227 ;

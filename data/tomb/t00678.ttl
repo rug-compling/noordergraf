@@ -1,6 +1,6 @@
 @prefix t00678: <https://noordergraf.rug.nl/tomb/t00678#> .
 
-tomb:t00678 a t:tombstone.n.01 ;
+tomb:t00678 a :Tomb ;
   :image t00678:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00678:p1 ,
@@ -8,14 +8,14 @@ tomb:t00678 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :ref t00678:v2 .
 
-t00678:b1 a t:John.n.05 ;
+t00678:b1 a :John.n.05 ;
   :prt t00678:c3 .
 
-t00678:c3 a t:chapter.n.01 ;
+t00678:c3 a :Chapter.n.01 ;
   :ord 25 ;
   :prt t00678:v2 .
 
-t00678:p1 a t:male.n.02 ;
+t00678:p1 a :Male ;
   :dob "1905-08-27" ;
   :dod "1974-06-07" ;
   :nam "DATE DIJKSTRA" ;
@@ -23,39 +23,39 @@ t00678:p1 a t:male.n.02 ;
        t00678:r2 ,
        t00678:r3 .
 
-t00678:p2 a t:female.n.02 ;
+t00678:p2 a :Female ;
   :dob "1908-09-19" ;
   :dod "1989-03-15" ;
   :nam "BERBER BROUWER" ;
   :rol t00678:r4 ,
        t00678:r5 .
 
-t00678:r1 a t:husband.n.01 ;
+t00678:r1 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00678:p2 .
 
-t00678:r2 a t:father.n.01 .
+t00678:r2 a :Father.n.01 .
 
-t00678:r3 a t:grandfather.n.01 .
+t00678:r3 a :Grandfather.n.01 .
 
-t00678:r4 a t:mother.n.01 ;
+t00678:r4 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00678:r5 a t:grandmother.n.01 .
+t00678:r5 a :Grandmother.n.01 .
 
-t00678:v2 a t:verse.n.01 ;
+t00678:v2 a :Verse.n.01 ;
   :ord 11 .
 
-t00678:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00678:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00678.jpg" ;
-  dcterms:date "2019-12-14T13:30:38"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:30:38"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0687 ;

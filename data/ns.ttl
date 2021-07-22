@@ -1,0 +1,95 @@
+:Class a rdfs:Class ;
+  rdfs:comment "The top class for noordergraf."@eng ;
+  rdfs:comment "De hoogste class voor noordergraf."@nld .
+
+:GeoClass a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:comment "The class of things with geographical coordinates."@eng ;
+  rdfs:comment "De class van dingen met geografische coördinaten."@nld .
+
+:geo a rdf:Property ;
+  rdfs:label "geo" ;
+  rdfs:comment "Geographical coordinates."@eng ;
+  rdfs:comment "Geografische coördinaten."@nld ;
+  rdfs:domain :GeoClass ;
+  rdfs:range geo:SpatialThing .
+
+:nd a rdf:Property ;
+  rdfs:label "nd" ;
+  rdfs:comment "Used by AllegroGraph for geodesic calculations."@eng ;
+  rdfs:comment "Door AllegroGraph gebruikt voor geodetische berekeningen."@nld ;
+  rdfs:domain :GeoClass ;
+  rdfs:range ll: .
+
+:Photo a rdfs:Class ;
+  rdfs:subClassOf :GeoClass ;
+  rdfs:comment "A picture of a tomb stone."@eng ;
+  rdfs:comment "Een foto van een grafsteen."@nld .
+
+:file a rdf:Property ;
+  rdfs:label "file" ;
+  rdfs:comment "Filename."@eng ;
+  rdfs:comment "Bestandsnaam."@nld ;
+  rdfs:domain :Photo ;
+  rdfs:range xsd:string .
+
+:Place a rdfs:Class ;
+  rdfs:subClassOf :GeoClass ;
+  rdfs:comment "Any place, such as place of birth or place of death, from hospital to country."@eng ;
+  rdfs:comment "Een plek, zoals geboorteplaats of plaats van overlijden, van ziekenhuis tot land."@nld .
+
+:geoFeature a rdf:Property ;
+  rdfs:label "geoMap" ;
+  rdfs:comment "A geonames Feature."@eng ;
+  rdfs:comment "Een Feature van geonames."@nld ;
+  rdfs:domain :Place ;
+  rdfs:range gn:Feature .
+
+:geoCode a rdf:Property ;
+  rdfs:label "geoCode" ;
+  rdfs:comment "A geonames featureCode."@eng ;
+  rdfs:comment "Een featureCode van geonames."@nld ;
+  rdfs:domain :Place ;
+  rdfs:range gn:featureCode .
+
+:geoMap a rdf:Property ;
+  rdfs:label "geoMap" ;
+  rdfs:comment "A geonames locationMap."@eng ;
+  rdfs:comment "Een locationMap van geonames."@nld ;
+  rdfs:domain :Place ;
+  rdfs:range gn:locationMap .
+
+:Site a rdfs:Class ;
+  rdfs:subClassOf :GeoClass ;
+  rdfs:comment "The site of a tomb, usually a cemetary."@eng ;
+  rdfs:comment "De plek van een graf, gewoonlijk een kerkhof of begraafplaats."@nld .
+
+:address a rdf:Property ;
+  rdfs:label "address" ;
+  rdfs:comment "Postal Address."@eng ;
+  rdfs:comment "Adres, huisadres."@nld ;
+  rdfs:domain :Site ;
+  rdfs:range schema:PostalAddress .
+
+:Person a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:comment "A person mentioned by name on a tomb stone."@eng ;
+  rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld .
+
+:dob a rdf:Property ;
+  rdfs:label "dob" ;
+  rdfs:comment "Date of birth."@eng ;
+  rdfs:comment "Geboortedatum."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range xsd:date .
+
+:Male a rdfs:Class ;
+  rdfs:subClassOf :Person ;
+  rdfs:comment "A male person"@eng ;
+  rdfs:comment "Een mannelijk persoon"@nld .
+
+:Female a rdfs:Class ;
+  rdfs:subClassOf :Person ;
+  rdfs:comment "A female person"@eng ;
+  rdfs:comment "Een vrouwelijk persoon"@nld .
+

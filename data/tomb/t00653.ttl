@@ -1,6 +1,6 @@
 @prefix t00653: <https://noordergraf.rug.nl/tomb/t00653#> .
 
-tomb:t00653 a t:tombstone.n.01 ;
+tomb:t00653 a :Tomb ;
   :image t00653:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00653:p1 ,
@@ -10,11 +10,11 @@ tomb:t00653 a t:tombstone.n.01 ;
   :ref "SPREUKEN 14:32"@nld ;
   :sym t00653:s1 .
 
-t00653:c1 a t:hamlet.n.03 ;
+t00653:c1 a :Hamlet.n.03 ;
   :place place:Kalkwijk2753130 ;
   :name "KALKWIJK" .
 
-t00653:p1 a t:male.n.02 ;
+t00653:p1 a :Male ;
   :dob "1864-08-31" ;
   :dod "1920-05-13" ;
   :nam "ANDRIES BLAAK" ;
@@ -23,30 +23,30 @@ t00653:p1 a t:male.n.02 ;
   :rol t00653:r1 ,
        t00653:r2 .
 
-t00653:p2 a t:female.n.02 ;
+t00653:p2 a :Female ;
   :nam "PIETERTJE DRENT" .
 
-t00653:p3 a t:female.n.02 ;
+t00653:p3 a :Female ;
   :nam "GRIETKE KLEVERINGA" .
 
-t00653:r1 a t:widower.n.01 ;
+t00653:r1 a :Widower.n.01 ;
   :tgt t00653:p2 .
 
-t00653:r2 a t:spouse.n.01 ;
+t00653:r2 a :Spouse.n.01 ;
   :tgt t00653:p3 .
 
-t00653:s1 a t:rose.n.01 .
+t00653:s1 a :Rose.n.01 .
 
-t00653:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00653:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00653.jpg" ;
-  dcterms:date "2019-11-23T10:09:13"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:09:13"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1636 ;

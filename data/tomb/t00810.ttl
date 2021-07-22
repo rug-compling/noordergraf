@@ -1,6 +1,6 @@
 @prefix t00810: <https://noordergraf.rug.nl/tomb/t00810#> .
 
-tomb:t00810 a t:tombstone.n.01 ;
+tomb:t00810 a :Tomb ;
   :image t00810:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00810:p1 ,
@@ -8,11 +8,11 @@ tomb:t00810 a t:tombstone.n.01 ;
   :quo "STA WANDELAAR EN LEES, \\ WIER OVERSCHOT DIT IS. \\ EN DENK DAN OOK DAT LOT \\ TREFT VROEG OF SPA MIJ WIS"@nld ;
   :sym t00810:s1 .
 
-t00810:c1 a t:village.n.02 ;
+t00810:c1 a :Village.n.02 ;
   :place place:TenBoer2746491 ;
   :name "TEN BOER" .
 
-t00810:p1 a t:female.n.02 ;
+t00810:p1 a :Female ;
   :dob "1832-05-02" ;
   :dod "1883-06-12" ;
   :nam "ANJE DERKS BOER" ;
@@ -20,24 +20,24 @@ t00810:p1 a t:female.n.02 ;
   :pod t00810:c1 ;
   :rol t00810:r1 .
 
-t00810:p2 a t:male.n.02 ;
+t00810:p2 a :Male ;
   :nam "J.H. BOLMAN" .
 
-t00810:r1 a t:spouse.n.01 ;
+t00810:r1 a :Spouse.n.01 ;
   :tgt t00810:p2 .
 
-t00810:s1 a t:butterfly.n.01 .
+t00810:s1 a :Butterfly.n.01 .
 
-t00810:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00810:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00810.jpg" ;
-  dcterms:date "2020-01-18T13:13:31"^^xsd:dateTime ;
+  dc:date "2020-01-18T13:13:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2779 ;

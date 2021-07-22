@@ -1,6 +1,6 @@
 @prefix t00545: <https://noordergraf.rug.nl/tomb/t00545#> .
 
-tomb:t00545 a t:tombstone.n.01 ;
+tomb:t00545 a :Tomb ;
   :image t00545:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00545:p1 ,
@@ -8,18 +8,18 @@ tomb:t00545 a t:tombstone.n.01 ;
   :quo "HIJ DIE HIER RUST \\ IN DEZE AARDE \\ WAS VOON ONS \\ VAN GROTE WAARDE."@nld ;
   :sym t00545:s1 .
 
-t00545:a1 a t:weeping.a.02 .
+t00545:a1 a :Weeping.a.02 .
 
-t00545:c1 a t:city.n.01 ;
+t00545:c1 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00545:o1 a t:skipper.n.02 ;
+t00545:o1 a :Skipper.n.02 ;
   :att "RUSTEND" ;
   :hco "04217" ;
   :loc t00545:c1 .
 
-t00545:p1 a t:male.n.02 ;
+t00545:p1 a :Male ;
   :dob "1819-10-23" ;
   :dod "1902-12-22" ;
   :nam "JAN FRANSENS NIPPERES" ;
@@ -28,26 +28,26 @@ t00545:p1 a t:male.n.02 ;
   :pod t00545:c1 ;
   :rol t00545:r1 .
 
-t00545:p2 a t:female.n.02 ;
+t00545:p2 a :Female ;
   :nam "HILLEGIEN HESSELING" .
 
-t00545:r1 a t:spouse.n.01 ;
+t00545:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00545:p2 .
 
-t00545:s1 a t:willow.n.01 ;
+t00545:s1 a :Willow.n.01 ;
   :att t00545:a1 .
 
-t00545:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00545:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00545.jpg" ;
-  dcterms:date "2019-11-24T14:14:37"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:14:37"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1042 ;

@@ -1,36 +1,36 @@
 @prefix t01051: <https://noordergraf.rug.nl/tomb/t01051#> .
 
-tomb:t01051 a t:tombstone.n.01 ;
+tomb:t01051 a :Tomb ;
   :image t01051:im1 ;
   :site site:gr9971EBulrum ;
   :ent t01051:p1 ,
        t01051:p2 ;
   :lan "NLD" .
 
-t01051:p1 a t:female.n.02 ;
+t01051:p1 a :Female ;
   :dob "1875-10-24" ;
   :dod "1965-06-02" ;
   :nam "ALIDA LASTHUIS" ;
   :rol t01051:r1 .
 
-t01051:p2 a t:male.n.02 ;
+t01051:p2 a :Male ;
   :dob "1875-01-16" ;
   :dod "1973-06-28" ;
   :nam "ROELF LOOTS" .
 
-t01051:r1 a t:spouse.n.01 ;
+t01051:r1 a :Spouse.n.01 ;
   :tgt t01051:p2 .
 
-t01051:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01051:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01051.jpg" ;
-  dcterms:date "2020-05-02T16:48:20"^^xsd:dateTime ;
+  dc:date "2020-05-02T16:48:20"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3604 ;

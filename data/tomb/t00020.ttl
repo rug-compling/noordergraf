@@ -1,6 +1,6 @@
 @prefix t00020: <https://noordergraf.rug.nl/tomb/t00020#> .
 
-tomb:t00020 a t:tombstone.n.01 ;
+tomb:t00020 a :Tomb ;
   :image t00020:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00020:p1 ,
@@ -8,33 +8,33 @@ tomb:t00020 a t:tombstone.n.01 ;
        t00020:p3 ;
   :sym t00020:s1 .
 
-t00020:p1 a t:female.n.02 ;
+t00020:p1 a :Female ;
   :dob "1869-12-12" ;
   :dod "1932-03-12" ;
   :nam "GRIETJE VONK" .
 
-t00020:p2 a t:male.n.02 ;
+t00020:p2 a :Male ;
   :dob "1872-04-17" ;
   :dod "1935-12-01" ;
   :nam "EGBERT STEENHUIS" .
 
-t00020:p3 a t:female.n.02 ;
+t00020:p3 a :Female ;
   :dob "1897-02-20" ;
   :dod "1975-09-14" ;
   :nam "IDA GEZINA STEENHUIS" .
 
-t00020:s1 a t:frond.n.01 .
+t00020:s1 a :Frond.n.01 .
 
-t00020:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00020:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00020.jpg" ;
-  dcterms:date "2019-09-25T16:28:22"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:28:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1909 ;

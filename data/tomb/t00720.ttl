@@ -1,6 +1,6 @@
 @prefix t00720: <https://noordergraf.rug.nl/tomb/t00720#> .
 
-tomb:t00720 a t:tombstone.n.01 ;
+tomb:t00720 a :Tomb ;
   :image t00720:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00720:p1 ,
@@ -10,51 +10,51 @@ tomb:t00720 a t:tombstone.n.01 ;
        t00720:s2 ,
        t00720:s3 .
 
-t00720:a1 a t:retired.a.01 .
+t00720:a1 a :Retired.a.01 .
 
-t00720:o1 a t:clerk.n.01 ;
+t00720:o1 a :Clerk.n.01 ;
   :att t00720:a1 ;
   :hco "30000" ;
   :org t00720:o2 .
 
-t00720:o2 a t:state.n.04 ;
+t00720:o2 a :State.n.04 ;
   :nam "NEDERLAND" .
 
-t00720:p1 a t:male.n.02 ;
+t00720:p1 a :Male ;
   :dob "1855-07-16" ;
   :dod "1931-01-13" ;
   :nam "HENDRIK SLIK" ;
   :occ t00720:o1 ;
   :rol t00720:r1 .
 
-t00720:p2 a t:female.n.02 ;
+t00720:p2 a :Female ;
   :dob "1862-08-05" ;
   :dod "1943-10-11" ;
   :nam "MARGRIETHA CORNELIA ZIJLMA" .
 
-t00720:r1 a t:bearer.n.04 ;
+t00720:r1 a :Bearer.n.04 ;
   :tgt t00720:s4 .
 
-t00720:s1 a t:frond.n.01 .
+t00720:s1 a :Frond.n.01 .
 
-t00720:s2 a t:frond.n.01 .
+t00720:s2 a :Frond.n.01 .
 
-t00720:s3 a t:ribbon.n.01 .
+t00720:s3 a :Ribbon.n.01 .
 
-t00720:s4 a t:eremedaille.n.01 ;
+t00720:s4 a :Eremedaille.n.01 ;
   :att "ZILVEREN" ;
   :org "ORANJE NASSAU ORDE" .
 
-t00720:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00720:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00720.jpg" ;
-  dcterms:date "2019-12-21T13:23:24"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:23:24"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7816 ;

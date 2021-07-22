@@ -1,38 +1,38 @@
 @prefix t00304: <https://noordergraf.rug.nl/tomb/t00304#> .
 
-tomb:t00304 a t:tombstone.n.01 ;
+tomb:t00304 a :Tomb ;
   :image t00304:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00304:p1 ,
        t00304:p2 ;
   :sym t00304:s1 .
 
-t00304:p1 a t:female.n.02 ;
+t00304:p1 a :Female ;
   :dob "1868-04-01" ;
   :dod "1941-01-23" ;
   :nam "JANTJE PRIGGE" ;
   :rol t00304:r1 .
 
-t00304:p2 a t:male.n.02 ;
+t00304:p2 a :Male ;
   :dob "1868-07-02" ;
   :dod "1949-02-26" ;
   :nam "ALBERTUS HAGEN" .
 
-t00304:r1 a t:spouse.n.01 ;
+t00304:r1 a :Spouse.n.01 ;
   :tgt t00304:p2 .
 
-t00304:s1 a t:frond.n.01 .
+t00304:s1 a :Frond.n.01 .
 
-t00304:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00304:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00304.jpg" ;
-  dcterms:date "2019-10-19T14:30:19"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:30:19"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7159 ;

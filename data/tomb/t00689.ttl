@@ -1,6 +1,6 @@
 @prefix t00689: <https://noordergraf.rug.nl/tomb/t00689#> .
 
-tomb:t00689 a t:tombstone.n.01 ;
+tomb:t00689 a :Tomb ;
   :image t00689:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00689:p1 ,
@@ -11,42 +11,42 @@ tomb:t00689 a t:tombstone.n.01 ;
        t00689:s2 ,
        t00689:s3 .
 
-t00689:i1 a t:portrait.n.02 ;
+t00689:i1 a :Portrait.n.02 ;
   :thm t00689:p3 .
 
-t00689:p1 a t:female.n.02 ;
+t00689:p1 a :Female ;
   :dob "1870-11-19" ;
   :dod "1919-03-05" ;
   :nam "CLAZINA VRONICA HETTINGA" ;
   :rol t00689:r1 .
 
-t00689:p2 a t:female.n.02 ;
+t00689:p2 a :Female ;
   :dob "1860-11-09" ;
   :dod "1949-07-10" ;
   :nam "TAEKE TAEKES POPMA" .
 
-t00689:p3 a t:male.n.02 ;
+t00689:p3 a :Male ;
   :nam "JEZUS" .
 
-t00689:r1 a t:spouse.n.01 ;
+t00689:r1 a :Spouse.n.01 ;
   :tgt t00689:p2 .
 
-t00689:s1 a t:frond.n.01 .
+t00689:s1 a :Frond.n.01 .
 
-t00689:s2 a t:flower.n.01 .
+t00689:s2 a :Flower.n.01 .
 
-t00689:s3 a t:ribbon.n.01 .
+t00689:s3 a :Ribbon.n.01 .
 
-t00689:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00689:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00689.jpg" ;
-  dcterms:date "2019-12-14T13:18:47"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:18:47"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0684 ;

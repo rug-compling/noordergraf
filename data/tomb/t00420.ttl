@@ -1,38 +1,38 @@
 @prefix t00420: <https://noordergraf.rug.nl/tomb/t00420#> .
 
-tomb:t00420 a t:tombstone.n.01 ;
+tomb:t00420 a :Tomb ;
   :image t00420:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00420:p1 ;
   :sym t00420:s1 .
 
-t00420:c1 a t:city.n.01 ;
+t00420:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00420:c2 a t:village.n.02 ;
+t00420:c2 a :Village.n.02 ;
   :place place:Zuidlaren2743680 ;
   :name "ZUIDLAREN" .
 
-t00420:p1 a t:female.n.02 ;
+t00420:p1 a :Female ;
   :dob "1931-10-07" ;
   :dod "2014-05-04" ;
   :nam "AAFKE TEENSMA" ;
   :pob t00420:c1 ;
   :pod t00420:c2 .
 
-t00420:s1 a t:wren.n.02 .
+t00420:s1 a :Wren.n.02 .
 
-t00420:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00420:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00420.jpg" ;
-  dcterms:date "2019-11-02T11:41:39"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:41:39"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4795 ;

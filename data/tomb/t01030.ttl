@@ -1,6 +1,6 @@
 @prefix t01030: <https://noordergraf.rug.nl/tomb/t01030#> .
 
-tomb:t01030 a t:tombstone.n.01 ;
+tomb:t01030 a :Tomb ;
   :image t01030:im1 ;
   :site site:gr9804TEnoordhorn ;
   :ent t01030:p1 ,
@@ -8,19 +8,19 @@ tomb:t01030 a t:tombstone.n.01 ;
        t01030:p3 ;
   :quo "RUST IN VREDE"@nld .
 
-t01030:c1 a t:village.n.02 ;
+t01030:c1 a :Village.n.02 ;
   :place place:Onderdendam2749601 ;
   :name "ONDERDENDAM" .
 
-t01030:c2 a t:village.n.02 ;
+t01030:c2 a :Village.n.02 ;
   :place place:Noordhorn2749875 ;
   :name "NOORDHORN" .
 
-t01030:c3 a t:village.n.02 ;
+t01030:c3 a :Village.n.02 ;
   :place place:Garsthuizen2755720 ;
   :name "GARSTHUIZEN" .
 
-t01030:p1 a t:female.n.02 ;
+t01030:p1 a :Female ;
   :dob "1822-09-22" ;
   :dod "1896-06-27" ;
   :nam "SUFFRIDA SIBERDINA SLIJPER" ;
@@ -28,31 +28,31 @@ t01030:p1 a t:female.n.02 ;
   :pod t01030:c2 ;
   :rol t01030:r1 .
 
-t01030:p2 a t:male.n.02 ;
+t01030:p2 a :Male ;
   :nam "EIJE J. BEUKEMA" .
 
-t01030:p3 a t:person.n.01 ;
+t01030:p3 a :Person ;
   :nam "BEUKEMA" ;
   :occ t01030:r2 .
 
-t01030:r1 a t:widow.n.01 ;
+t01030:r1 a :Widow.n.01 ;
   :beg "XX-XX-1853" ;
   :tgt t01030:p2 .
 
-t01030:r2 a t:designer.n.01 ;
+t01030:r2 a :Designer.n.01 ;
   :loc t01030:c3 ;
   :tgt tomb:t01030 .
 
-t01030:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01030:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01030.jpg" ;
-  dcterms:date "2020-04-19T12:13:12"^^xsd:dateTime ;
+  dc:date "2020-04-19T12:13:12"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2647 ;

@@ -1,29 +1,29 @@
 @prefix t01120: <https://noordergraf.rug.nl/tomb/t01120#> .
 
-tomb:t01120 a t:tombstone.n.01 ;
+tomb:t01120 a :Tomb ;
   :ent t01120:p1 ;
   :lan "NLD" ;
   :sym t01120:s1 .
 
-t01120:c1 a t:village.n.02 ;
+t01120:c1 a :Village.n.02 ;
   :place place:Oldehove2749660 ;
   :name "OLDEHOVE" .
 
-t01120:c2 a t:village.n.02 ;
+t01120:c2 a :Village.n.02 ;
   :place place:Niekerk2750390 ;
   :name "NIEKERK" .
 
-t01120:c3 a t:more.r.01 ;
+t01120:c3 a :More.r.01 ;
   :op1 t01120:m1 ;
   :op2 t01120:m2 .
 
-t01120:m1 a t:measure.n.02 .
+t01120:m1 a :Measure.n.02 .
 
-t01120:m2 a t:measure.n.02 ;
+t01120:m2 a :Measure.n.02 ;
   :mem t01120:u1 ;
   :qua 44 .
 
-t01120:p1 a t:female.n.02 ;
+t01120:p1 a :Female ;
   :age t01120:m1 ;
   :dob "1808-06-06" ;
   :dod "1870-03-06" ;
@@ -32,22 +32,22 @@ t01120:p1 a t:female.n.02 ;
   :pod t01120:c2 ;
   :rol t01120:r1 .
 
-t01120:p2 a t:male.n.02 ;
+t01120:p2 a :Male ;
   :nam "ROELF J. HIDDINGH" .
 
-t01120:r1 a t:spouse.n.01 ;
+t01120:r1 a :Spouse.n.01 ;
   :tgt t01120:p2 .
 
-t01120:s1 a t:composite.n.01 ;
+t01120:s1 a :Composite.n.01 ;
   :prt t01120:s2 ,
        t01120:s3 ,
        t01120:s4 .
 
-t01120:s2 a t:frond.n.01 .
+t01120:s2 a :Frond.n.01 .
 
-t01120:s3 a t:frond.n.01 .
+t01120:s3 a :Frond.n.01 .
 
-t01120:s4 a t:ribbon.n.01 .
+t01120:s4 a :Ribbon.n.01 .
 
-t01120:u1 a t:year.n.01 .
+t01120:u1 a :Year.n.01 .
 

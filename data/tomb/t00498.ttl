@@ -1,6 +1,6 @@
 @prefix t00498: <https://noordergraf.rug.nl/tomb/t00498#> .
 
-tomb:t00498 a t:tombstone.n.01 ;
+tomb:t00498 a :Tomb ;
   :image t00498:im1 ;
   :site site:fr8917AVleeuwarden ;
   :ent t00498:g1 ,
@@ -10,25 +10,25 @@ tomb:t00498 a t:tombstone.n.01 ;
        t00498:p4 ;
   :lan "FRY" .
 
-t00498:c1 a t:village.n.02 ;
+t00498:c1 a :Village.n.02 ;
   :place place:Nijhuizum2750067 ;
   :name "NIJHUZUM"@fry .
 
-t00498:c2 a t:city.n.01 ;
+t00498:c2 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LJOUWERT"@fry .
 
-t00498:e1 a t:set.v.01 ;
+t00498:e1 a :Set.v.01 ;
   :agt t00498:g1 ;
   :beg "14-03-1996" ;
   :thm tomb:t00498 .
 
-t00498:g1 a t:neikommeling.n.01 ;
+t00498:g1 a :Neikommeling.n.01 ;
   :mem t00498:p2 ,
        t00498:p3 ,
        t00498:p4 .
 
-t00498:p1 a t:male.n.02 ;
+t00498:p1 a :Male ;
   :dob "1825-03-14" ;
   :dod "1876-03-28" ;
   :nam "PIETER FOPPES BRUINSMA" ;
@@ -36,28 +36,28 @@ t00498:p1 a t:male.n.02 ;
   :pod t00498:c2 ;
   :rol t00498:r1 .
 
-t00498:p2 a t:male.n.02 ;
+t00498:p2 a :Male ;
   :nam "FOPPE" .
 
-t00498:p3 a t:male.n.02 ;
+t00498:p3 a :Male ;
   :nam "ALDERT" .
 
-t00498:p4 a t:male.n.02 ;
+t00498:p4 a :Male ;
   :nam "WICHERT" .
 
-t00498:r1 a t:spouse.n.01 ;
+t00498:r1 a :Spouse.n.01 ;
   :tgt t00498:p2 .
 
-t00498:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00498:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00498.jpg" ;
-  dcterms:date "2019-11-16T14:06:08"^^xsd:dateTime ;
+  dc:date "2019-11-16T14:06:08"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2129 ;

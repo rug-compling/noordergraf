@@ -1,71 +1,71 @@
 @prefix t00228: <https://noordergraf.rug.nl/tomb/t00228#> .
 
-tomb:t00228 a t:tombstone.n.01 ;
+tomb:t00228 a :Tomb ;
   :image t00228:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00228:p1 ,
        t00228:p2 ;
   :sym t00228:s1 .
 
-t00228:m1 a t:measure.n.02 ;
+t00228:m1 a :Measure.n.02 ;
   :mem t00228:u1 ;
   :qua 52.5 .
 
-t00228:p1 a t:female.n.02 ;
+t00228:p1 a :Female ;
   :dob "1799-04-06" ;
   :dod "1870-03-02" ;
   :nam "TRIJNTJE GEERTS BOERMA" ;
   :rol t00228:r1 ,
        t00228:r2 .
 
-t00228:p2 a t:female.n.02 ;
+t00228:p2 a :Female ;
   :nam "KOOP HENDRIKS BRUININGA" .
 
-t00228:r1 a t:housewife.n.01 ;
+t00228:r1 a :Housewife.n.01 ;
   :tgt t00228:p2 .
 
-t00228:r2 a t:spouse.n.01 ;
+t00228:r2 a :Spouse.n.01 ;
   :dur t00228:m1 ;
   :tgt t00228:p2 .
 
-t00228:s1 a t:composite.n.01 ;
+t00228:s1 a :Composite.n.01 ;
   :prt t00228:s2 ,
        t00228:s4 ,
        t00228:s6 ,
        t00228:s8 .
 
-t00228:s2 a t:branch.n.02 .
+t00228:s2 a :Branch.n.02 .
 
-t00228:s3 a t:oak.n.02 ;
+t00228:s3 a :Oak.n.02 ;
   :prt t00228:s2 .
 
-t00228:s4 a t:branch.n.02 .
+t00228:s4 a :Branch.n.02 .
 
-t00228:s5 a t:oak.n.02 ;
+t00228:s5 a :Oak.n.02 ;
   :prt t00228:s4 .
 
-t00228:s6 a t:branch.n.02 .
+t00228:s6 a :Branch.n.02 .
 
-t00228:s7 a t:olive.n.02 ;
+t00228:s7 a :Olive.n.02 ;
   :prt t00228:s6 .
 
-t00228:s8 a t:branch.n.02 .
+t00228:s8 a :Branch.n.02 .
 
-t00228:s9 a t:olive.n.02 ;
+t00228:s9 a :Olive.n.02 ;
   :prt t00228:s8 .
 
-t00228:u1 a t:year.n.01 .
+t00228:u1 a :Year.n.01 .
 
-t00228:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00228:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00228.jpg" ;
-  dcterms:date "2019-10-08T14:40:04"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:40:04"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2225 ;

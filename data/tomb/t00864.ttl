@@ -1,6 +1,6 @@
 @prefix t00864: <https://noordergraf.rug.nl/tomb/t00864#> .
 
-tomb:t00864 a t:tombstone.n.01 ;
+tomb:t00864 a :Tomb ;
   :image t00864:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00864:p1 ,
@@ -8,17 +8,17 @@ tomb:t00864 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00864:s1 .
 
-t00864:a1 a t:weeping.a.02 .
+t00864:a1 a :Weeping.a.02 .
 
-t00864:c1 a t:village.n.02 ;
+t00864:c1 a :Village.n.02 ;
   :place place:Smilde2747076 ;
   :name "SMILDE" .
 
-t00864:c2 a t:village.n.02 ;
+t00864:c2 a :Village.n.02 ;
   :place place:Veenoord2745753 ;
   :name "VEENOORD" .
 
-t00864:p1 a t:female.n.02 ;
+t00864:p1 a :Female ;
   :dob "1867-03-26" ;
   :dod "1925-08-21" ;
   :nam "FENNEGIEN WOPPENKAMP" ;
@@ -28,31 +28,31 @@ t00864:p1 a t:female.n.02 ;
        t00864:r2 ,
        t00864:r3 .
 
-t00864:p2 a t:male.n.02 ;
+t00864:p2 a :Male ;
   :nam "JOH. VISSCHER" .
 
-t00864:r1 a t:wife.n.01 ;
+t00864:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00864:p2 .
 
-t00864:r2 a t:mother.n.01 .
+t00864:r2 a :Mother.n.01 .
 
-t00864:r3 a t:spouse.n.01 ;
+t00864:r3 a :Spouse.n.01 ;
   :tgt t00864:p2 .
 
-t00864:s1 a t:willow.n.01 ;
+t00864:s1 a :Willow.n.01 ;
   :att t00864:a1 .
 
-t00864:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00864:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00864.jpg" ;
-  dcterms:date "2020-02-15T15:13:39"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:13:39"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7193 ;

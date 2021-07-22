@@ -1,6 +1,6 @@
 @prefix t00642: <https://noordergraf.rug.nl/tomb/t00642#> .
 
-tomb:t00642 a t:tombstone.n.01 ;
+tomb:t00642 a :Tomb ;
   :image t00642:im1 ;
   :site site:gr9723EJgroningen ;
   :ent t00642:p1 ,
@@ -10,34 +10,34 @@ tomb:t00642 a t:tombstone.n.01 ;
        t00642:s2 ,
        t00642:s3 .
 
-t00642:p1 a t:male.n.02 ;
+t00642:p1 a :Male ;
   :dob "1839-01-26" ;
   :dod "1914-09-10" ;
   :nam "AALF NIJBORG" ;
   :rol t00642:r1 .
 
-t00642:p2 a t:female.n.02 ;
+t00642:p2 a :Female ;
   :nam "JUURTJE WEENDER" .
 
-t00642:r1 a t:spouse.n.01 ;
+t00642:r1 a :Spouse.n.01 ;
   :tgt t00642:p2 .
 
-t00642:s1 a t:fakkel.n.01 .
+t00642:s1 a :Fakkel.n.01 .
 
-t00642:s2 a t:fakkel.n.01 .
+t00642:s2 a :Fakkel.n.01 .
 
-t00642:s3 a t:ribbon.n.01 .
+t00642:s3 a :Ribbon.n.01 .
 
-t00642:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00642:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00642.jpg" ;
-  dcterms:date "2019-12-08T11:21:55"^^xsd:dateTime ;
+  dc:date "2019-12-08T11:21:55"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2082 ;

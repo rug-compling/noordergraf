@@ -1,6 +1,6 @@
 @prefix t00994: <https://noordergraf.rug.nl/tomb/t00994#> .
 
-tomb:t00994 a t:tombstone.n.01 ;
+tomb:t00994 a :Tomb ;
   :image t00994:im1 ;
   :site site:gr9686RSbeerta ;
   :ent t00994:p1 ,
@@ -8,39 +8,39 @@ tomb:t00994 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
   :sym t00994:s1 .
 
-t00994:a1 a t:weeping.a.02 .
+t00994:a1 a :Weeping.a.02 .
 
-t00994:p1 a t:female.n.02 ;
+t00994:p1 a :Female ;
   :dob "1842-11-10" ;
   :dod "1922-04-07" ;
   :nam "HARMKE REIT" ;
   :rol t00994:r1 ,
        t00994:r2 .
 
-t00994:p2 a t:male.n.02 ;
+t00994:p2 a :Male ;
   :dob "1872-03-17" ;
   :dod "1963-11-28" ;
   :nam "HENDRIK KLAASSENS" .
 
-t00994:r1 a t:widow.n.01 ;
+t00994:r1 a :Widow.n.01 ;
   :beg "XX-XX-1886" ;
   :tgt t00994:p2 .
 
-t00994:r2 a t:mother.n.01 .
+t00994:r2 a :Mother.n.01 .
 
-t00994:s1 a t:willow.n.01 ;
+t00994:s1 a :Willow.n.01 ;
   :att t00994:a1 .
 
-t00994:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00994:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00994.jpg" ;
-  dcterms:date "2020-04-04T10:46:42"^^xsd:dateTime ;
+  dc:date "2020-04-04T10:46:42"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1753 ;

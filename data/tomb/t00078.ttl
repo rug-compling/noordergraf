@@ -1,29 +1,29 @@
 @prefix t00078: <https://noordergraf.rug.nl/tomb/t00078#> .
 
-tomb:t00078 a t:tombstone.n.01 ;
+tomb:t00078 a :Tomb ;
   :image t00078:im1 ;
   :site site:gr9721AAgroningen ;
   :ent t00078:p1 ,
        t00078:p2 .
 
-t00078:c1 a t:city.n.01 ;
+t00078:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00078:c2 a t:city.n.01 ;
+t00078:c2 a :City.n.01 ;
   :place place:Meppen2871845 ;
   :name "MEPPEN" .
 
-t00078:c3 a t:country.n.02 ;
+t00078:c3 a :Country.n.02 ;
   :place place:Duitsland2921044 ;
   :mem t00078:c2 ;
   :name "DUITSLAND" .
 
-t00078:c4 a t:village.n.02 ;
+t00078:c4 a :Village.n.02 ;
   :place place:Kloosterburen2752627 ;
   :name "KLOOSTERBUREN" .
 
-t00078:p1 a t:female.n.02 ;
+t00078:p1 a :Female ;
   :dob "1848-03-09" ;
   :dod "1928-01-01" ;
   :nam "ANNA MARIA E. ROBBE" ;
@@ -31,26 +31,26 @@ t00078:p1 a t:female.n.02 ;
   :pod t00078:c1 ;
   :rol t00078:r1 .
 
-t00078:p2 a t:male.n.02 ;
+t00078:p2 a :Male ;
   :dob "1856-01-21" ;
   :dod "1936-01-10" ;
   :nam "FREDERIK J. VAN VOORN" ;
   :pob t00078:c4 ;
   :pod t00078:c1 .
 
-t00078:r1 a t:wife.n.01 ;
+t00078:r1 a :Wife.n.01 ;
   :tgt t00078:p2 .
 
-t00078:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00078:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00078.jpg" ;
-  dcterms:date "2019-09-25T11:36:11"^^xsd:dateTime ;
+  dc:date "2019-09-25T11:36:11"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2035 ;

@@ -1,54 +1,54 @@
 @prefix t00554: <https://noordergraf.rug.nl/tomb/t00554#> .
 
-tomb:t00554 a t:tombstone.n.01 ;
+tomb:t00554 a :Tomb ;
   :image t00554:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00554:p1 ;
   :quo "RUST ZACHT, \\ GELIEFDE BROEDER."@nld ;
   :sym t00554:s1 .
 
-t00554:c1 a t:city.n.01 ;
+t00554:c1 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00554:o1 a t:teacher.n.01 ;
+t00554:o1 a :Teacher.n.01 ;
   :hco "13320" ;
   :loc t00554:c1 .
 
-t00554:p1 a t:male.n.02 ;
+t00554:p1 a :Male ;
   :dob "1849-01-16" ;
   :dod "1909-05-27" ;
   :nam "H.J. TOP" ;
   :occ t00554:o1 ;
   :rol t00554:r1 .
 
-t00554:r1 a t:brother.n.01 ;
+t00554:r1 a :Brother.n.01 ;
   :att "GELIEFDE" .
 
-t00554:s1 a t:composite.n.01 ;
+t00554:s1 a :Composite.n.01 ;
   :prt t00554:s2 ,
        t00554:s3 ,
        t00554:s4 ,
        t00554:s5 .
 
-t00554:s2 a t:book.n.02 .
+t00554:s2 a :Book.n.02 .
 
-t00554:s3 a t:frond.n.01 .
+t00554:s3 a :Frond.n.01 .
 
-t00554:s4 a t:frond.n.01 .
+t00554:s4 a :Frond.n.01 .
 
-t00554:s5 a t:ribbon.n.01 .
+t00554:s5 a :Ribbon.n.01 .
 
-t00554:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00554:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00554.jpg" ;
-  dcterms:date "2019-11-24T13:58:06"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:58:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1045 ;

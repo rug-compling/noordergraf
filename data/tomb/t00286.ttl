@@ -1,6 +1,6 @@
 @prefix t00286: <https://noordergraf.rug.nl/tomb/t00286#> .
 
-tomb:t00286 a t:tombstone.n.01 ;
+tomb:t00286 a :Tomb ;
   :image t00286:im1 ;
   :site site:gr9985SCoosternieland ;
   :ent t00286:p1 ,
@@ -8,36 +8,36 @@ tomb:t00286 a t:tombstone.n.01 ;
   :ref "PSALM 68:2 BERIJMD" ;
   :sym t00286:s1 .
 
-t00286:p1 a t:male.n.02 ;
+t00286:p1 a :Male ;
   :dob "1873-01-24" ;
   :dod "1920-01-02" ;
   :nam "PIETER BAKKER" ;
   :quo "RUST ZACHT MOEDER" .
 
-t00286:p2 a t:female.n.02 ;
+t00286:p2 a :Female ;
   :dob "1875-10-07" ;
   :dod "1957-04-05" ;
   :nam "JANTJE ROZEMULLER" ;
   :quo "RUST ZACHT VADER" .
 
-t00286:s1 a t:composite.n.01 ;
+t00286:s1 a :Composite.n.01 ;
   :prt t00286:s2 ,
        t00286:s3 .
 
-t00286:s2 a t:frond.n.01 .
+t00286:s2 a :Frond.n.01 .
 
-t00286:s3 a t:frond.n.01 .
+t00286:s3 a :Frond.n.01 .
 
-t00286:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00286:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00286.jpg" ;
-  dcterms:date "2019-10-16T16:49:22"^^xsd:dateTime ;
+  dc:date "2019-10-16T16:49:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4039 ;

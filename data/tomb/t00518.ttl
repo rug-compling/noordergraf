@@ -1,6 +1,6 @@
 @prefix t00518: <https://noordergraf.rug.nl/tomb/t00518#> .
 
-tomb:t00518 a t:tombstone.n.01 ;
+tomb:t00518 a :Tomb ;
   :image t00518:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00518:p1 ,
@@ -8,30 +8,30 @@ tomb:t00518 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :ref t00518:v1 .
 
-t00518:b1 a t:Second_Epistle_to_the_Corinthians.n.01 ;
+t00518:b1 a :Second_Epistle_to_the_Corinthians.n.01 ;
   :prt t00518:c5 .
 
-t00518:c1 a t:village.n.02 ;
+t00518:c1 a :Village.n.02 ;
   :place place:Peize2748673 ;
   :name "PEIZE" .
 
-t00518:c2 a t:town.n.01 ;
+t00518:c2 a :Town.n.01 ;
   :place place:Drachten2756644 ;
   :name "DRACHTEN" .
 
-t00518:c3 a t:town.n.01 ;
+t00518:c3 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00518:c4 a t:city.n.01 ;
+t00518:c4 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00518:c5 a t:chapter.n.01 ;
+t00518:c5 a :Chapter.n.01 ;
   :ord 5 ;
   :prt t00518:v1 .
 
-t00518:p1 a t:male.n.02 ;
+t00518:p1 a :Male ;
   :dob "1911-06-24" ;
   :dod "1980-09-26" ;
   :nam "EGBERT HELDER" ;
@@ -39,30 +39,30 @@ t00518:p1 a t:male.n.02 ;
   :pod t00518:c2 ;
   :rol t00518:r1 .
 
-t00518:p2 a t:female.n.02 ;
+t00518:p2 a :Female ;
   :dob "1904-03-13" ;
   :dod "1981-07-10" ;
   :nam "RENSCHEDINA EISSES" ;
   :pob t00518:c3 ;
   :pod t00518:c4 .
 
-t00518:r1 a t:husband.n.01 ;
+t00518:r1 a :Husband.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00518:p2 .
 
-t00518:v1 a t:verse.n.01 ;
+t00518:v1 a :Verse.n.01 ;
   :ord 1 .
 
-t00518:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00518:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00518.jpg" ;
-  dcterms:date "2019-11-23T10:18:38"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:18:38"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1651 ;

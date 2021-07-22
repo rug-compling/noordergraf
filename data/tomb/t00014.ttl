@@ -1,6 +1,6 @@
 @prefix t00014: <https://noordergraf.rug.nl/tomb/t00014#> .
 
-tomb:t00014 a t:tombstone.n.01 ;
+tomb:t00014 a :Tomb ;
   :image t00014:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00014:g1 ,
@@ -8,18 +8,18 @@ tomb:t00014 a t:tombstone.n.01 ;
   :quo "HIJ STIERF VOOR ZIJN VADERLAND" ;
   :sym t00014:s1 .
 
-t00014:c1 a t:city.n.01 ;
+t00014:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00014:c2 a t:city.n.01 ;
+t00014:c2 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00014:g1 a t:group.n.01 ;
+t00014:g1 a :Group.n.01 ;
   :rol t00014:r1 .
 
-t00014:p1 a t:male.n.02 ;
+t00014:p1 a :Male ;
   :dob "1909-11-23" ;
   :dod "1945-04-15" ;
   :nam "JAN RAATJES" ;
@@ -28,28 +28,28 @@ t00014:p1 a t:male.n.02 ;
   :rol t00014:r2 ,
        t00014:r3 .
 
-t00014:r1 a t:commemorator.n.01 ;
+t00014:r1 a :Commemorator.n.01 ;
   :tgt t00014:p1 .
 
-t00014:r2 a t:father.n.01 ;
+t00014:r2 a :Father.n.01 ;
   :att "LIEVE" ;
   :tgt t00014:g1 .
 
-t00014:r3 a t:son.n.01 ;
+t00014:r3 a :Son.n.01 ;
   :tgt t00014:g1 .
 
-t00014:s1 a t:frond.n.01 .
+t00014:s1 a :Frond.n.01 .
 
-t00014:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00014:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00014.jpg" ;
-  dcterms:date "2019-09-25T16:46:26"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:46:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1907 ;

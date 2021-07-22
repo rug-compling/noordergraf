@@ -1,17 +1,17 @@
 @prefix t00798: <https://noordergraf.rug.nl/tomb/t00798#> .
 
-tomb:t00798 a t:tombstone.n.01 ;
+tomb:t00798 a :Tomb ;
   :image t00798:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00798:p1 ,
        t00798:p2 ;
   :lan "NLD" .
 
-t00798:c1 a t:village.n.02 ;
+t00798:c1 a :Village.n.02 ;
   :place place:TenBoer2746491 ;
   :name "TEN BOER" .
 
-t00798:p1 a t:male.n.02 ;
+t00798:p1 a :Male ;
   :dob "1851-09-12" ;
   :dod "1930-05-01" ;
   :nam "NANNING KAMPHUIS" ;
@@ -19,23 +19,23 @@ t00798:p1 a t:male.n.02 ;
   :pod t00798:c1 ;
   :rol t00798:r1 .
 
-t00798:p2 a t:female.n.02 ;
+t00798:p2 a :Female ;
   :nam "T. MAAT" .
 
-t00798:r1 a t:widower.n.01 ;
+t00798:r1 a :Widower.n.01 ;
   :beg "XX-XX-1922" ;
   :tgt t00798:p2 .
 
-t00798:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00798:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00798.jpg" ;
-  dcterms:date "2020-01-18T12:49:59"^^xsd:dateTime ;
+  dc:date "2020-01-18T12:49:59"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2777 ;

@@ -1,21 +1,21 @@
 @prefix t00337: <https://noordergraf.rug.nl/tomb/t00337#> .
 
-tomb:t00337 a t:tombstone.n.01 ;
+tomb:t00337 a :Tomb ;
   :image t00337:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00337:p1 ,
        t00337:p2 ;
   :sym t00337:s1 .
 
-t00337:c1 a t:town.n.01 ;
+t00337:c1 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00337:c2 a t:city.n.01 ;
+t00337:c2 a :City.n.01 ;
   :place place:Meppel2750947 ;
   :name "MEPPEL" .
 
-t00337:p1 a t:male.n.02 ;
+t00337:p1 a :Male ;
   :dob "1856-01-07" ;
   :dod "1916-04-15" ;
   :nam "JAN VERMEULEN" ;
@@ -23,47 +23,47 @@ t00337:p1 a t:male.n.02 ;
   :pod t00337:c1 ;
   :rol t00337:r1 .
 
-t00337:p2 a t:female.n.02 ;
+t00337:p2 a :Female ;
   :dob "1860-01-21" ;
   :dod "1925-07-22" ;
   :nam "ANNIGJE WESTENBERG" ;
   :pob t00337:c2 ;
   :pod t00337:c1 .
 
-t00337:r1 a t:spouse.n.01 ;
+t00337:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00337:p2 .
 
-t00337:s1 a t:composite.n.01 ;
+t00337:s1 a :Composite.n.01 ;
   :prt t00337:s2 ,
        t00337:s3 ,
        t00337:s5 ,
        t00337:s7 .
 
-t00337:s2 a t:butterfly.n.01 .
+t00337:s2 a :Butterfly.n.01 .
 
-t00337:s3 a t:branch.n.02 .
+t00337:s3 a :Branch.n.02 .
 
-t00337:s4 a t:oak.n.01 ;
+t00337:s4 a :Oak.n.01 ;
   :prt t00337:s3 .
 
-t00337:s5 a t:branch.n.02 .
+t00337:s5 a :Branch.n.02 .
 
-t00337:s6 a t:oak.n.01 ;
+t00337:s6 a :Oak.n.01 ;
   :prt t00337:s5 .
 
-t00337:s7 a t:ribbon.n.01 .
+t00337:s7 a :Ribbon.n.01 .
 
-t00337:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00337:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00337.jpg" ;
-  dcterms:date "2019-10-19T14:10:54"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:10:54"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7154 ;

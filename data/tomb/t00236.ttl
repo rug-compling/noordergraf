@@ -1,6 +1,6 @@
 @prefix t00236: <https://noordergraf.rug.nl/tomb/t00236#> .
 
-tomb:t00236 a t:tombstone.n.01 ;
+tomb:t00236 a :Tomb ;
   :image t00236:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00236:p1 ,
@@ -8,30 +8,30 @@ tomb:t00236 a t:tombstone.n.01 ;
   :quo "HIER RUST ZIJ UIT VAN AL HAAR ZORGEN, HAAR ZIEL, VOOR MOEITE EN LEED GEBORGEN, BEHOORT AAN DE AARD NIET MEER; DE NACHT VAN'T GRAF DAALDE OP HAAR NADER, 'T STOF KEERDE TOT HET STOF NU WEDER, DE ZIEL GING TOT DEN HEER." ;
   :sym t00236:s1 .
 
-t00236:p1 a t:female.n.02 ;
+t00236:p1 a :Female ;
   :dob "1810-07-22" ;
   :dod "1887-12-13" ;
   :nam "GRIETJE KLAASSENS BOUWMAN" ;
   :rol t00236:r1 .
 
-t00236:p2 a t:male.n.02 ;
+t00236:p2 a :Male ;
   :nam "K.H. KRUIJER" .
 
-t00236:r1 a t:spouse.n.01 ;
+t00236:r1 a :Spouse.n.01 ;
   :tgt t00236:p2 .
 
-t00236:s1 a t:cow.n.01 .
+t00236:s1 a :Cow.n.01 .
 
-t00236:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00236:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00236.jpg" ;
-  dcterms:date "2019-10-08T14:56:41"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:56:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2223 ;

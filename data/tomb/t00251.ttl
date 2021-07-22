@@ -1,6 +1,6 @@
 @prefix t00251: <https://noordergraf.rug.nl/tomb/t00251#> .
 
-tomb:t00251 a t:tombstone.n.01 ;
+tomb:t00251 a :Tomb ;
   :image t00251:im1 ;
   :site site:gr9721AAgroningen ;
   :ent t00251:p1 ,
@@ -8,10 +8,10 @@ tomb:t00251 a t:tombstone.n.01 ;
   :quo "EEN GEBROKEN EN VERSLAGEN HART ZULT GIJ O GOD NIET VERACHTEN" ;
   :ref "PSALM 51:19-B" .
 
-t00251:o1 a t:postal_clerk.n.01 ;
+t00251:o1 a :Postal_clerk.n.01 ;
   :hco "37020" .
 
-t00251:p1 a t:male.n.02 ;
+t00251:p1 a :Male ;
   :dob "1861-12-23" ;
   :dod "1921-09-30" ;
   :nam "EELKO JAN GROENEVELD" ;
@@ -20,28 +20,28 @@ t00251:p1 a t:male.n.02 ;
        t00251:r2 ,
        t00251:r3 .
 
-t00251:p2 a t:female.n.02 ;
+t00251:p2 a :Female ;
   :nam "M. CASIMIR" .
 
-t00251:r1 a t:spouse.n.01 ;
+t00251:r1 a :Spouse.n.01 ;
   :att "LIEVE" ;
   :tgt t00251:p2 .
 
-t00251:r2 a t:father.n.01 .
+t00251:r2 a :Father.n.01 .
 
-t00251:r3 a t:wife.n.01 ;
+t00251:r3 a :Wife.n.01 ;
   :tgt t00251:p3 .
 
-t00251:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00251:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00251.jpg" ;
-  dcterms:date "2019-10-10T09:45:01"^^xsd:dateTime ;
+  dc:date "2019-10-10T09:45:01"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2031 ;

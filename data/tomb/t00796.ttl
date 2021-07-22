@@ -1,26 +1,26 @@
 @prefix t00796: <https://noordergraf.rug.nl/tomb/t00796#> .
 
-tomb:t00796 a t:tombstone.n.01 ;
+tomb:t00796 a :Tomb ;
   :image t00796:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00796:p1 ;
   :lan "NLD" .
 
-t00796:p1 a t:male.n.02 ;
+t00796:p1 a :Male ;
   :dob "1943-01-23" ;
   :dod "1993-01-11" ;
   :nam "DICK ROZEMA" .
 
-t00796:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00796:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00796.jpg" ;
-  dcterms:date "2020-01-18T13:04:09"^^xsd:dateTime ;
+  dc:date "2020-01-18T13:04:09"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2773 ;

@@ -1,23 +1,23 @@
 @prefix t00496: <https://noordergraf.rug.nl/tomb/t00496#> .
 
-tomb:t00496 a t:tombstone.n.01 ;
+tomb:t00496 a :Tomb ;
   :image t00496:im1 ;
   :site site:fr8917AVleeuwarden ;
   :ent t00496:p1 .
 
-t00496:c1 a t:city.n.01 ;
+t00496:c1 a :City.n.01 ;
   :place place:Amsterdam2759794 ;
   :name "AMSTERDAM" .
 
-t00496:c2 a t:village.n.02 ;
+t00496:c2 a :Village.n.02 ;
   :place place:Hallum2754930 ;
   :name "HALLUM" .
 
-t00496:o1 a t:notary.n.01 ;
+t00496:o1 a :Notary.n.01 ;
   :hco "12310" ;
   :loc t00496:c1 .
 
-t00496:p1 a t:male.n.02 ;
+t00496:p1 a :Male ;
   :dob "1865-07-14" ;
   :dod "1916-12-13" ;
   :nam "KLAAS T. POELSTRA" ;
@@ -25,16 +25,16 @@ t00496:p1 a t:male.n.02 ;
   :pob t00496:c2 ;
   :pod t00496:c1 .
 
-t00496:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00496:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00496.jpg" ;
-  dcterms:date "2019-11-16T14:11:31"^^xsd:dateTime ;
+  dc:date "2019-11-16T14:11:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2091 ;

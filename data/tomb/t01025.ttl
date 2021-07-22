@@ -1,6 +1,6 @@
 @prefix t01025: <https://noordergraf.rug.nl/tomb/t01025#> .
 
-tomb:t01025 a t:tombstone.n.01 ;
+tomb:t01025 a :Tomb ;
   :image t01025:im1 ;
   :site site:gr9906PPbierum ;
   :ent t01025:p1 ,
@@ -11,47 +11,47 @@ tomb:t01025 a t:tombstone.n.01 ;
        t01025:s3 ,
        t01025:s4 .
 
-t01025:c1 a t:village.n.02 ;
+t01025:c1 a :Village.n.02 ;
   :place place:Losdorp2751426 ;
   :name "LOSDORP" .
 
-t01025:c2 a t:village.n.02 ;
+t01025:c2 a :Village.n.02 ;
   :place place:Bierum2758983 ;
   :name "BIERUM" .
 
-t01025:p1 a t:female.n.02 ;
+t01025:p1 a :Female ;
   :dob "1874-09-30" ;
   :dod "1895-04-03" ;
   :nam "JOSINA HARMINA SMIT" ;
   :pob t01025:c1 ;
   :pod t01025:c2 .
 
-t01025:p2 a t:person.n.01 ;
+t01025:p2 a :Person ;
   :loc t01025:c2 ;
   :nam "W. MEIJER" ;
   :occ t01025:r1 .
 
-t01025:r1 a t:designer.n.01 ;
+t01025:r1 a :Designer.n.01 ;
   :tgt tomb:t01025 .
 
-t01025:s1 a t:butterfly.n.01 .
+t01025:s1 a :Butterfly.n.01 .
 
-t01025:s2 a t:scythe.n.01 .
+t01025:s2 a :Scythe.n.01 .
 
-t01025:s3 a t:entity.n.01 .
+t01025:s3 a :Entity.n.01 .
 
-t01025:s4 a t:ribbon.n.01 .
+t01025:s4 a :Ribbon.n.01 .
 
-t01025:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01025:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01025.jpg" ;
-  dcterms:date "2020-04-17T18:27:22"^^xsd:dateTime ;
+  dc:date "2020-04-17T18:27:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3809 ;

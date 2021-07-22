@@ -1,6 +1,6 @@
 @prefix t01086: <https://noordergraf.rug.nl/tomb/t01086#> .
 
-tomb:t01086 a t:tombstone.n.01 ;
+tomb:t01086 a :Tomb ;
   :image t01086:im1 ;
   :site site:gr9798PDgarmerwolde ;
   :ent t01086:p1 ;
@@ -8,75 +8,75 @@ tomb:t01086 a t:tombstone.n.01 ;
   :sym t01086:s1 ,
        t01086:s3 .
 
-t01086:a1 a t:broken.a.01 .
+t01086:a1 a :Broken.a.01 .
 
-t01086:c1 a t:village.n.02 ;
+t01086:c1 a :Village.n.02 ;
   :place place:Garmerwolde2755728 ;
   :name "GARMERWOLDE" .
 
-t01086:g1 a t:people.n.01 ;
+t01086:g1 a :People.n.01 ;
   :mem t01086:p2 ,
        t01086:p3 .
 
-t01086:m1 a t:measure.n.02 ;
+t01086:m1 a :Measure.n.02 ;
   :sub t01086:m2 ,
        t01086:m3 .
 
-t01086:m2 a t:measure.n.02 ;
+t01086:m2 a :Measure.n.02 ;
   :mem t01086:u1 ;
   :qua 3 .
 
-t01086:m3 a t:measure.n.02 ;
+t01086:m3 a :Measure.n.02 ;
   :mem t01086:u2 ;
   :qua 5 .
 
-t01086:p1 a t:male.n.02 ;
+t01086:p1 a :Male ;
   :age t01086:m1 ;
   :dod "1872-12-28" ;
   :nam "KLAAS" ;
   :pod t01086:c1 ;
   :rol t01086:r1 .
 
-t01086:p2 a t:person.n.01 ;
+t01086:p2 a :Person ;
   :nam "T.H. DOLFIJN" .
 
-t01086:p3 a t:person.n.01 ;
+t01086:p3 a :Person ;
   :nam "H.H. WIGBOLDUS" .
 
-t01086:r1 a t:son.n.01 ;
+t01086:r1 a :Son.n.01 ;
   :tgt t01086:g1 .
 
-t01086:s1 a t:flower.n.01 ;
+t01086:s1 a :Flower.n.01 ;
   :att t01086:a1 .
 
-t01086:s3 a t:composite.n.01 ;
+t01086:s3 a :Composite.n.01 ;
   :prt t01086:s4 ,
        t01086:s6 .
 
-t01086:s4 a t:branch.n.02 .
+t01086:s4 a :Branch.n.02 .
 
-t01086:s5 a t:olive.n.02 ;
+t01086:s5 a :Olive.n.02 ;
   :prt t01086:s4 .
 
-t01086:s6 a t:branch.n.02 .
+t01086:s6 a :Branch.n.02 .
 
-t01086:s7 a t:olive.n.02 ;
+t01086:s7 a :Olive.n.02 ;
   :prt t01086:s6 .
 
-t01086:u1 a t:year.n.01 .
+t01086:u1 a :Year.n.01 .
 
-t01086:u2 a t:month.n.01 .
+t01086:u2 a :Month.n.01 .
 
-t01086:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01086:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01086.jpg" ;
-  dcterms:date "2020-05-20T19:31:46"^^xsd:dateTime ;
+  dc:date "2020-05-20T19:31:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2480 ;

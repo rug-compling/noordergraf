@@ -1,6 +1,6 @@
 @prefix t00896: <https://noordergraf.rug.nl/tomb/t00896#> .
 
-tomb:t00896 a t:tombstone.n.01 ;
+tomb:t00896 a :Tomb ;
   :image t00896:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00896:p1 ,
@@ -10,15 +10,15 @@ tomb:t00896 a t:tombstone.n.01 ;
        t00896:s2 ,
        t00896:s3 .
 
-t00896:c1 a t:village.n.02 ;
+t00896:c1 a :Village.n.02 ;
   :place place:Niezijl2750110 ;
   :name "NIEZIJL" .
 
-t00896:c2 a t:village.n.02 ;
+t00896:c2 a :Village.n.02 ;
   :place place:Leek2751834 ;
   :name "LEEK" .
 
-t00896:p1 a t:female.n.02 ;
+t00896:p1 a :Female ;
   :dob "1799-03-04" ;
   :dod "1885-03-22" ;
   :nam "SARA DOEDES POL" ;
@@ -26,29 +26,29 @@ t00896:p1 a t:female.n.02 ;
   :pod t00896:c2 ;
   :rol t00896:r1 .
 
-t00896:p2 a t:male.n.02 ;
+t00896:p2 a :Male ;
   :nam "JOHANNES HENRICUS LEURINGH" ;
   :ttl "WELEDELE HEER" .
 
-t00896:r1 a t:widow.n.01 ;
+t00896:r1 a :Widow.n.01 ;
   :tgt t00896:p2 .
 
-t00896:s1 a t:butterfly.n.01 .
+t00896:s1 a :Butterfly.n.01 .
 
-t00896:s2 a t:oak.n.01 .
+t00896:s2 a :Oak.n.01 .
 
-t00896:s3 a t:frond.n.01 .
+t00896:s3 a :Frond.n.01 .
 
-t00896:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00896:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00896.jpg" ;
-  dcterms:date "2020-03-07T14:33:57"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:33:57"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1723 ;

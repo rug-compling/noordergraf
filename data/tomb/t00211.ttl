@@ -1,6 +1,6 @@
 @prefix t00211: <https://noordergraf.rug.nl/tomb/t00211#> .
 
-tomb:t00211 a t:tombstone.n.01 ;
+tomb:t00211 a :Tomb ;
   :image t00211:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00211:p1 ,
@@ -8,19 +8,19 @@ tomb:t00211 a t:tombstone.n.01 ;
        t00211:p3 ;
   :quo "RUST ZACHT LIEVE OUDERS EN BROER" .
 
-t00211:c1 a t:village.n.02 ;
+t00211:c1 a :Village.n.02 ;
   :place place:Engelbert2756097 ;
   :name "ENGELBERT" .
 
-t00211:c2 a t:village.n.02 ;
+t00211:c2 a :Village.n.02 ;
   :place place:Middelbert2750902 ;
   :name "MIDDELBERT" .
 
-t00211:c3 a t:village.n.02 ;
+t00211:c3 a :Village.n.02 ;
   :place place:Noorddijk2749981 ;
   :name "NOORDDIJK" .
 
-t00211:p1 a t:male.n.02 ;
+t00211:p1 a :Male ;
   :dob "1864-05-14" ;
   :dod "1926-01-24" ;
   :nam "EPKE KNOLLEMA" ;
@@ -28,7 +28,7 @@ t00211:p1 a t:male.n.02 ;
   :pod t00211:c2 ;
   :rol t00211:r1 .
 
-t00211:p2 a t:female.n.02 ;
+t00211:p2 a :Female ;
   :dob "1867-06-21" ;
   :dod "1937-05-15" ;
   :nam "IMKE VAN DELDEN" ;
@@ -36,7 +36,7 @@ t00211:p2 a t:female.n.02 ;
   :pod t00211:c2 ;
   :rol t00211:r2 .
 
-t00211:p3 a t:male.n.02 ;
+t00211:p3 a :Male ;
   :dob "1891-02-19" ;
   :dod "1927-07-16" ;
   :nam "BEREND E. KNOLLEMA" ;
@@ -44,24 +44,24 @@ t00211:p3 a t:male.n.02 ;
   :pod t00211:c2 ;
   :rol t00211:r3 .
 
-t00211:r1 a t:parent.n.01 ;
+t00211:r1 a :Parent.n.01 ;
   :tgt t00211:p3 .
 
-t00211:r2 a t:parent.n.01 ;
+t00211:r2 a :Parent.n.01 ;
   :tgt t00211:p3 .
 
-t00211:r3 a t:brother.n.01 .
+t00211:r3 a :Brother.n.01 .
 
-t00211:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00211:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00211.jpg" ;
-  dcterms:date "2019-10-08T14:52:28"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:52:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2221 ;

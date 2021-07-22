@@ -1,6 +1,6 @@
 @prefix t00885: <https://noordergraf.rug.nl/tomb/t00885#> .
 
-tomb:t00885 a t:tombstone.n.01 ;
+tomb:t00885 a :Tomb ;
   :image t00885:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00885:p1 ,
@@ -8,34 +8,34 @@ tomb:t00885 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
   :sym t00885:s1 .
 
-t00885:p1 a t:female.n.02 ;
+t00885:p1 a :Female ;
   :dob "1878-05-08" ;
   :dod "1957-01-16" ;
   :nam "FENNA WITTING" ;
   :rol t00885:r1 ,
        t00885:r2 .
 
-t00885:p2 a t:male.n.02 ;
+t00885:p2 a :Male ;
   :nam "Z. KOELMAN" .
 
-t00885:r1 a t:widow.n.01 ;
+t00885:r1 a :Widow.n.01 ;
   :tgt t00885:p2 .
 
-t00885:r2 a t:mother.n.01 ;
+t00885:r2 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00885:s1 a t:frond.n.01 .
+t00885:s1 a :Frond.n.01 .
 
-t00885:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00885:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00885.jpg" ;
-  dcterms:date "2020-02-15T14:58:23"^^xsd:dateTime ;
+  dc:date "2020-02-15T14:58:23"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7195 ;

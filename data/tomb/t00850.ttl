@@ -1,6 +1,6 @@
 @prefix t00850: <https://noordergraf.rug.nl/tomb/t00850#> .
 
-tomb:t00850 a t:tombstone.n.01 ;
+tomb:t00850 a :Tomb ;
   :image t00850:im1 ;
   :site site:fr8899AWoost_vlieland ;
   :ent t00850:p1 ,
@@ -12,26 +12,26 @@ tomb:t00850 a t:tombstone.n.01 ;
        t00850:s2 ,
        t00850:s3 .
 
-t00850:b1 a t:First_Epistle_to_the_Corinthians.n.01 ;
+t00850:b1 a :First_Epistle_to_the_Corinthians.n.01 ;
   :prt t00850:c4 .
 
-t00850:c1 a t:island.n.01 ;
+t00850:c1 a :Island.n.01 ;
   :place place:Terschelling2746414 ;
   :name "TERSCHELLING" .
 
-t00850:c2 a t:city.n.01 ;
+t00850:c2 a :City.n.01 ;
   :place place:Harlingen2754817 ;
   :name "HARLINGEN" .
 
-t00850:c3 a t:island.n.01 ;
+t00850:c3 a :Island.n.01 ;
   :place place:Vlieland2745420 ;
   :name "VLIELAND" .
 
-t00850:c4 a t:chapter.n.01 ;
+t00850:c4 a :Chapter.n.01 ;
   :ord 13 ;
   :prt t00850:v1 .
 
-t00850:p1 a t:female.n.02 ;
+t00850:p1 a :Female ;
   :att "INNIG GELIEFDE" ;
   :dob "1862-03-08" ;
   :dod "1925-08-11" ;
@@ -42,7 +42,7 @@ t00850:p1 a t:female.n.02 ;
        t00850:r2 ,
        t00850:r3 .
 
-t00850:p2 a t:female.n.02 ;
+t00850:p2 a :Female ;
   :att "GELIEFDE" ;
   :dob "1895-05-26" ;
   :dod "1908-03-17" ;
@@ -52,7 +52,7 @@ t00850:p2 a t:female.n.02 ;
   :rol t00850:r4 ,
        t00850:r5 .
 
-t00850:p3 a t:male.n.02 ;
+t00850:p3 a :Male ;
   :dob "1852-06-15" ;
   :dod "1937-03-19" ;
   :nam "PIETER KOOIJMAN" ;
@@ -60,43 +60,43 @@ t00850:p3 a t:male.n.02 ;
   :pod t00850:c3 ;
   :rol t00850:r6 .
 
-t00850:r1 a t:wife.n.01 ;
+t00850:r1 a :Wife.n.01 ;
   :tgt t00850:p3 .
 
-t00850:r2 a t:mother.n.01 ;
+t00850:r2 a :Mother.n.01 ;
   :tgt t00850:p2 .
 
-t00850:r3 a t:spouse.n.01 ;
+t00850:r3 a :Spouse.n.01 ;
   :tgt t00850:p3 .
 
-t00850:r4 a t:daughter.n.01 ;
+t00850:r4 a :Daughter.n.01 ;
   :tgt t00850:p3 .
 
-t00850:r5 a t:sister.n.01 .
+t00850:r5 a :Sister.n.01 .
 
-t00850:r6 a t:father.n.01 ;
+t00850:r6 a :Father.n.01 ;
   :att "BESTEN" ;
   :tgt t00850:p2 .
 
-t00850:s1 a t:cross.n.03 .
+t00850:s1 a :Cross.n.03 .
 
-t00850:s2 a t:heart.n.07 .
+t00850:s2 a :Heart.n.07 .
 
-t00850:s3 a t:anchor.n.01 .
+t00850:s3 a :Anchor.n.01 .
 
-t00850:v1 a t:verse.n.01 ;
+t00850:v1 a :Verse.n.01 ;
   :ord 13 .
 
-t00850:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00850:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00850.jpg" ;
-  dcterms:date "2020-02-20T14:40:24"^^xsd:dateTime ;
+  dc:date "2020-02-20T14:40:24"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2958 ;

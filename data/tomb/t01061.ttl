@@ -1,6 +1,6 @@
 @prefix t01061: <https://noordergraf.rug.nl/tomb/t01061#> .
 
-tomb:t01061 a t:tombstone.n.01 ;
+tomb:t01061 a :Tomb ;
   :image t01061:im1 ;
   :site site:gr9367PAde_wilp ;
   :ent t01061:p1 ,
@@ -8,17 +8,17 @@ tomb:t01061 a t:tombstone.n.01 ;
   :quo "RUST ZACHT"@nld ;
   :sym t01061:s1 .
 
-t01061:a1 a t:weeping.a.02 .
+t01061:a1 a :Weeping.a.02 .
 
-t01061:c1 a t:village.n.02 ;
+t01061:c1 a :Village.n.02 ;
   :place place:Ureterp2745936 ;
   :name "URETERP" .
 
-t01061:c2 a t:village.n.02 ;
+t01061:c2 a :Village.n.02 ;
   :place place:DeWilp2756932 ;
   :name "DE WILP" .
 
-t01061:p1 a t:male.n.02 ;
+t01061:p1 a :Male ;
   :dob "1847-08-16" ;
   :dod "1927-02-12" ;
   :nam "HENDRIK W. NIJHOF" ;
@@ -26,25 +26,25 @@ t01061:p1 a t:male.n.02 ;
   :pod t01061:c2 ;
   :rol t01061:r1 .
 
-t01061:p2 a t:female.n.02 ;
+t01061:p2 a :Female ;
   :nam "BAUKJE W. VEENSTRA" .
 
-t01061:r1 a t:spouse.n.01 ;
+t01061:r1 a :Spouse.n.01 ;
   :tgt t01061:p2 .
 
-t01061:s1 a t:willow.n.01 ;
+t01061:s1 a :Willow.n.01 ;
   :att t01061:a1 .
 
-t01061:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01061:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01061.jpg" ;
-  dcterms:date "2020-05-01T15:31:19"^^xsd:dateTime ;
+  dc:date "2020-05-01T15:31:19"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1232 ;

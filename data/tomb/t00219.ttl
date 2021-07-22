@@ -1,39 +1,39 @@
 @prefix t00219: <https://noordergraf.rug.nl/tomb/t00219#> .
 
-tomb:t00219 a t:tombstone.n.01 ;
+tomb:t00219 a :Tomb ;
   :image t00219:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00219:p1 ,
        t00219:p2 ;
   :sym t00219:s1 .
 
-t00219:c1 a t:hamlet.n.03 ;
+t00219:c1 a :Hamlet.n.03 ;
   :place place:Euvelgunne2755982 ;
   :name "EUVELGUNNE" .
 
-t00219:c2 a t:village.n.02 ;
+t00219:c2 a :Village.n.02 ;
   :place place:Middelbert2750902 ;
   :name "MIDDELBERT" .
 
-t00219:c3 a t:more.r.01 ;
+t00219:c3 a :More.r.01 ;
   :op1 t00219:m1 ;
   :op2 t00219:m2 .
 
-t00219:m1 a t:measure.n.02 .
+t00219:m1 a :Measure.n.02 .
 
-t00219:m2 a t:measure.n.02 ;
+t00219:m2 a :Measure.n.02 ;
   :mem t00219:u1 ;
   :qua 83 .
 
-t00219:o1 a t:farmer.n.01 ;
+t00219:o1 a :Farmer.n.01 ;
   :hco "61220" ;
   :loc t00219:c1 .
 
-t00219:o2 a t:elder.n.03 ;
+t00219:o2 a :Elder.n.03 ;
   :hco "14000" ;
   :loc t00219:c2 .
 
-t00219:p1 a t:male.n.02 ;
+t00219:p1 a :Male ;
   :age t00219:m1 ;
   :dod "1878-03-20" ;
   :nam "ELLE HENDRIKS KONING" ;
@@ -41,32 +41,32 @@ t00219:p1 a t:male.n.02 ;
        t00219:o2 ;
   :rol t00219:r1 .
 
-t00219:p2 a t:female.n.02 ;
+t00219:p2 a :Female ;
   :nam "JANTJE KOL" .
 
-t00219:r1 a t:widower.n.01 ;
+t00219:r1 a :Widower.n.01 ;
   :tgt t00219:p2 .
 
-t00219:s1 a t:composite.n.01 ;
+t00219:s1 a :Composite.n.01 ;
   :prt t00219:s2 ,
        t00219:s3 .
 
-t00219:s2 a t:horse.n.01 .
+t00219:s2 a :Horse.n.01 .
 
-t00219:s3 a t:gate.n.01 .
+t00219:s3 a :Gate.n.01 .
 
-t00219:u1 a t:year.n.01 .
+t00219:u1 a :Year.n.01 .
 
-t00219:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00219:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00219.jpg" ;
-  dcterms:date "2019-10-08T14:43:56"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:43:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2225 ;

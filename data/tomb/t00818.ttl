@@ -1,40 +1,40 @@
 @prefix t00818: <https://noordergraf.rug.nl/tomb/t00818#> .
 
-tomb:t00818 a t:tombstone.n.01 ;
+tomb:t00818 a :Tomb ;
   :image t00818:im1 ;
   :site site:gr9741ACgroningen ;
   :ent t00818:p1 ,
        t00818:p2 ;
   :ref "GEZANG 201"@nld .
 
-t00818:p1 a t:male.n.02 ;
+t00818:p1 a :Male ;
   :dob "1911-09-09" ;
   :dod "1945-01-19" ;
   :nam "JOHANNES RAMAKER" ;
   :rol t00818:r1 ,
        t00818:r2 .
 
-t00818:p2 a t:female.n.02 ;
+t00818:p2 a :Female ;
   :nam "M.E. JANSEN" .
 
-t00818:r1 a t:husband.n.01 ;
+t00818:r1 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00818:p2 .
 
-t00818:r2 a t:spouse.n.01 ;
+t00818:r2 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00818:p2 .
 
-t00818:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00818:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00818.jpg" ;
-  dcterms:date "2020-02-01T12:16:44"^^xsd:dateTime ;
+  dc:date "2020-02-01T12:16:44"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2305 ;

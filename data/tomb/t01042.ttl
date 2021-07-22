@@ -1,6 +1,6 @@
 @prefix t01042: <https://noordergraf.rug.nl/tomb/t01042#> .
 
-tomb:t01042 a t:tombstone.n.01 ;
+tomb:t01042 a :Tomb ;
   :image t01042:im1 ;
   :site site:gr9804TEnoordhorn ;
   :ent t01042:p1 ,
@@ -10,43 +10,43 @@ tomb:t01042 a t:tombstone.n.01 ;
        t01042:s2 ,
        t01042:s3 .
 
-t01042:p1 a t:female.n.02 ;
+t01042:p1 a :Female ;
   :dob "1879-12-01" ;
   :dod "1953-11-16" ;
   :nam "GEESKE HELMANTEL" ;
   :ref "PSALM 23" ;
   :rol t01042:r1 .
 
-t01042:p2 a t:male.n.02 ;
+t01042:p2 a :Male ;
   :dob "1879-05-25" ;
   :dod "1956-01-03" ;
   :nam "EDZO VAN DER VEEN" ;
   :ref "GEZANG 29" ;
   :rol t01042:r2 .
 
-t01042:r1 a t:spouse.n.01 ;
+t01042:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t01042:p2 .
 
-t01042:r2 a t:widower.n.01 ;
+t01042:r2 a :Widower.n.01 ;
   :tgt t01042:p1 .
 
-t01042:s1 a t:frond.n.01 .
+t01042:s1 a :Frond.n.01 .
 
-t01042:s2 a t:frond.n.01 .
+t01042:s2 a :Frond.n.01 .
 
-t01042:s3 a t:ribbon.n.01 .
+t01042:s3 a :Ribbon.n.01 .
 
-t01042:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01042:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01042.jpg" ;
-  dcterms:date "2020-04-19T11:54:00"^^xsd:dateTime ;
+  dc:date "2020-04-19T11:54:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2649 ;

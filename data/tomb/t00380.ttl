@@ -1,44 +1,44 @@
 @prefix t00380: <https://noordergraf.rug.nl/tomb/t00380#> .
 
-tomb:t00380 a t:tombstone.n.01 ;
+tomb:t00380 a :Tomb ;
   :image t00380:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00380:p1 ;
   :ref "PSALM 87 BERIJMD" ;
   :sym t00380:s1 .
 
-t00380:c1 a t:village.n.02 ;
+t00380:c1 a :Village.n.02 ;
   :place place:Buitenpost2758131 ;
   :name "BUITENPOST" .
 
-t00380:p1 a t:female.n.02 ;
+t00380:p1 a :Female ;
   :dob "1880-03-07" ;
   :dod "1976-02-03" ;
   :nam "TRIJNTJE IJSTRA" ;
   :pob t00380:c1 ;
   :pod t00380:c1 .
 
-t00380:s1 a t:composite.n.01 ;
+t00380:s1 a :Composite.n.01 ;
   :prt t00380:s2 ,
        t00380:s3 ,
        t00380:s4 .
 
-t00380:s2 a t:frond.n.01 .
+t00380:s2 a :Frond.n.01 .
 
-t00380:s3 a t:frond.n.01 .
+t00380:s3 a :Frond.n.01 .
 
-t00380:s4 a t:ribbon.n.01 .
+t00380:s4 a :Ribbon.n.01 .
 
-t00380:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00380:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00380.jpg" ;
-  dcterms:date "2019-10-26T15:08:14"^^xsd:dateTime ;
+  dc:date "2019-10-26T15:08:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2519 ;

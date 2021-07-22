@@ -1,30 +1,30 @@
 @prefix t00842: <https://noordergraf.rug.nl/tomb/t00842#> .
 
-tomb:t00842 a t:tombstone.n.01 ;
+tomb:t00842 a :Tomb ;
   :image t00842:im1 ;
   :site site:fr8899AWoost_vlieland ;
   :ent t00842:p1 ;
   :lan "NLD" .
 
-t00842:o1 a t:biologist.n.01 ;
+t00842:o1 a :Biologist.n.01 ;
   :hco "05110" .
 
-t00842:p1 a t:female.n.02 ;
+t00842:p1 a :Female ;
   :dob "1914-12-09" ;
   :dod "1997-03-09" ;
   :nam "SIENTJE DE BOER" ;
   :occ t00842:o1 .
 
-t00842:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00842:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00842.jpg" ;
-  dcterms:date "2020-02-20T14:46:20"^^xsd:dateTime ;
+  dc:date "2020-02-20T14:46:20"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2958 ;

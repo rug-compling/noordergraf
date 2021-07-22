@@ -1,40 +1,40 @@
 @prefix t00087: <https://noordergraf.rug.nl/tomb/t00087#> .
 
-tomb:t00087 a t:tombstone.n.01 ;
+tomb:t00087 a :Tomb ;
   :image t00087:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00087:p1 ,
        t00087:p2 .
 
-t00087:o1 a t:director.n.01 ;
+t00087:o1 a :Director.n.01 ;
   :hco "13940" ;
   :org t00087:o2 .
 
-t00087:o2 a t:school.n.01 ;
+t00087:o2 a :School.n.01 ;
   :nam "MIDDELBARE TECHNISCHE KUNSTNIJVERHEIDS EN ZEEVAARTSCHOOL" .
 
-t00087:p1 a t:male.n.02 ;
+t00087:p1 a :Male ;
   :dob "1899-02-24" ;
   :dod "1944-01-01" ;
   :nam "P.H.E. VAN DOOREN" ;
   :occ t00087:o1 ;
   :pfx "IR" .
 
-t00087:p2 a t:female.n.02 ;
+t00087:p2 a :Female ;
   :dob "1899-02-22" ;
   :dod "1983-03-01" ;
   :nam "MARIA DEKKER" .
 
-t00087:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00087:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00087.jpg" ;
-  dcterms:date "2019-09-24T15:18:43"^^xsd:dateTime ;
+  dc:date "2019-09-24T15:18:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2068 ;

@@ -1,6 +1,6 @@
 @prefix t00759: <https://noordergraf.rug.nl/tomb/t00759#> .
 
-tomb:t00759 a t:tombstone.n.01 ;
+tomb:t00759 a :Tomb ;
   :image t00759:im1 ;
   :site site:gr9936BTfarmsum ;
   :ent t00759:p1 ,
@@ -9,15 +9,15 @@ tomb:t00759 a t:tombstone.n.01 ;
   :sym t00759:s1 ,
        t00759:s2 .
 
-t00759:c1 a t:village.n.02 ;
+t00759:c1 a :Village.n.02 ;
   :place place:Solwerd2747023 ;
   :name "SOLWERD" .
 
-t00759:c2 a t:village.n.02 ;
+t00759:c2 a :Village.n.02 ;
   :place place:Oterdum2749209 ;
   :name "OTERDUM" .
 
-t00759:p1 a t:male.n.02 ;
+t00759:p1 a :Male ;
   :dob "1795-02-28" ;
   :dod "1883-12-19" ;
   :nam "DERK PIETER SMITH" ;
@@ -25,26 +25,26 @@ t00759:p1 a t:male.n.02 ;
   :pod t00759:c2 ;
   :rol t00759:r1 .
 
-t00759:p2 a t:female.n.02 ;
+t00759:p2 a :Female ;
   :nam "IMKE AIKES BROUWER" .
 
-t00759:r1 a t:spouse.n.01 ;
+t00759:r1 a :Spouse.n.01 ;
   :tgt t00759:p2 .
 
-t00759:s1 a t:skull.n.01 .
+t00759:s1 a :Skull.n.01 .
 
-t00759:s2 a t:bone.n.01 .
+t00759:s2 a :Bone.n.01 .
 
-t00759:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00759:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00759.jpg" ;
-  dcterms:date "2019-12-28T12:45:09"^^xsd:dateTime ;
+  dc:date "2019-12-28T12:45:09"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3111 ;

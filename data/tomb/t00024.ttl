@@ -1,42 +1,42 @@
 @prefix t00024: <https://noordergraf.rug.nl/tomb/t00024#> .
 
-tomb:t00024 a t:tombstone.n.01 ;
+tomb:t00024 a :Tomb ;
   :image t00024:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00024:p1 ,
        t00024:p2 .
 
-t00024:b1 a t:Revelation.n.04 ;
+t00024:b1 a :Revelation.n.04 ;
   :prt t00024:c1 .
 
-t00024:c1 a t:chapter.n.01 ;
+t00024:c1 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00024:v1 .
 
-t00024:p1 a t:female.n.02 ;
+t00024:p1 a :Female ;
   :dob "1860-04-08" ;
   :dod "1928-01-09" ;
   :nam "ANNE DE VRIES" .
 
-t00024:p2 a t:female.n.02 ;
+t00024:p2 a :Female ;
   :dob "1861-07-21" ;
   :dod "1951-02-25" ;
   :nam "OTTO DOORNBOS" ;
   :ref t00024:v1 .
 
-t00024:v1 a t:verse.n.01 ;
+t00024:v1 a :Verse.n.01 ;
   :ord 13 .
 
-t00024:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00024:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00024.jpg" ;
-  dcterms:date "2019-09-25T16:25:52"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:25:52"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1909 ;

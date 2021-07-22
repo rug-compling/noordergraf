@@ -1,36 +1,36 @@
 @prefix t00932: <https://noordergraf.rug.nl/tomb/t00932#> .
 
-tomb:t00932 a t:tombstone.n.01 ;
+tomb:t00932 a :Tomb ;
   :image t00932:im1 ;
   :site site:gr9741GHgroningen ;
   :ent t00932:p1 ,
        t00932:p2 ;
   :lan "NLD" .
 
-t00932:p1 a t:male.n.02 ;
+t00932:p1 a :Male ;
   :dob "1907-03-19" ;
   :dod "1957-03-11" ;
   :nam "CHRISTIAN NIEMAND" ;
   :rol t00932:r1 .
 
-t00932:p2 a t:female.n.02 ;
+t00932:p2 a :Female ;
   :dob "1902-06-30" ;
   :dod "1998-04-28" ;
   :nam "JANTJE ALKEMA" .
 
-t00932:r1 a t:spouse.n.01 ;
+t00932:r1 a :Spouse.n.01 ;
   :tgt t00932:p2 .
 
-t00932:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00932:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00932.jpg" ;
-  dcterms:date "2020-03-18T09:04:30"^^xsd:dateTime ;
+  dc:date "2020-03-18T09:04:30"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2391 ;

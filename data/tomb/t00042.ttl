@@ -1,6 +1,6 @@
 @prefix t00042: <https://noordergraf.rug.nl/tomb/t00042#> .
 
-tomb:t00042 a t:tombstone.n.01 ;
+tomb:t00042 a :Tomb ;
   :image t00042:im1 ;
   :site site:gr9752CMharen ;
   :ent t00042:p1 ,
@@ -8,19 +8,19 @@ tomb:t00042 a t:tombstone.n.01 ;
   :quo "RUST IN VREDE" ;
   :sym t00042:s1 .
 
-t00042:a1 a t:weeping.a.02 .
+t00042:a1 a :Weeping.a.02 .
 
-t00042:a2 a t:inverted.a.01 .
+t00042:a2 a :Inverted.a.01 .
 
-t00042:c1 a t:town.n.01 ;
+t00042:c1 a :Town.n.01 ;
   :place place:Eelde2756408 ;
   :name "EELDE" .
 
-t00042:c2 a t:town.n.01 ;
+t00042:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00042:p1 a t:male.n.02 ;
+t00042:p1 a :Male ;
   :dob "1849-12-18" ;
   :dod "1939-10-05" ;
   :nam "JOHANNES REEDER" ;
@@ -28,35 +28,35 @@ t00042:p1 a t:male.n.02 ;
   :pod t00042:c2 ;
   :rol t00042:r1 .
 
-t00042:p2 a t:female.n.02 ;
+t00042:p2 a :Female ;
   :nam "H. MANNES" .
 
-t00042:r1 a t:widower.n.01 ;
+t00042:r1 a :Widower.n.01 ;
   :tgt t00042:p2 .
 
-t00042:s1 a t:composite.n.01 ;
+t00042:s1 a :Composite.n.01 ;
   :prt t00042:s2 ,
        t00042:s3 ,
        t00042:s4 .
 
-t00042:s2 a t:willow.n.01 ;
+t00042:s2 a :Willow.n.01 ;
   :att t00042:a1 .
 
-t00042:s3 a t:scythe.n.01 .
+t00042:s3 a :Scythe.n.01 .
 
-t00042:s4 a t:torch.n.01 ;
+t00042:s4 a :Torch.n.01 ;
   :att t00042:a2 .
 
-t00042:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00042:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00042.jpg" ;
-  dcterms:date "2019-09-27T17:51:51"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:51:51"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1630 ;

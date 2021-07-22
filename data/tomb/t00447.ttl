@@ -1,33 +1,33 @@
 @prefix t00447: <https://noordergraf.rug.nl/tomb/t00447#> .
 
-tomb:t00447 a t:tombstone.n.01 ;
+tomb:t00447 a :Tomb ;
   :image t00447:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00447:p1 ,
        t00447:p2 .
 
-t00447:c1 a t:town.n.01 ;
+t00447:c1 a :Town.n.01 ;
   :place place:ZwettlStadt2760416 ;
   :name "ZWETTL" .
 
-t00447:c2 a t:country.n.02 ;
+t00447:c2 a :Country.n.02 ;
   :place place:Oostenrijk2782113 ;
   :mem t00447:c1 ;
   :name "OOSTENRIJK" .
 
-t00447:c3 a t:island.n.01 ;
+t00447:c3 a :Island.n.01 ;
   :place place:Schiermonnikoog2747591 ;
   :name "SCHIERMONNIKOOG" .
 
-t00447:c4 a t:island.n.01 ;
+t00447:c4 a :Island.n.01 ;
   :place place:Terschelling2746414 ;
   :name "TERSCHELLING" .
 
-t00447:c5 a t:village.n.02 ;
+t00447:c5 a :Village.n.02 ;
   :place place:Metslawier2750919 ;
   :name "METSLAWIER" .
 
-t00447:p1 a t:female.n.02 ;
+t00447:p1 a :Female ;
   :dob "1912-08-04" ;
   :dod "1982-03-08" ;
   :nam "JUSTINA WUTSCHER" ;
@@ -37,7 +37,7 @@ t00447:p1 a t:female.n.02 ;
        t00447:r2 ,
        t00447:r3 .
 
-t00447:p2 a t:male.n.02 ;
+t00447:p2 a :Male ;
   :dob "1912-01-25" ;
   :dod "2003-01-31" ;
   :nam "DOUWE HEK" ;
@@ -47,35 +47,35 @@ t00447:p2 a t:male.n.02 ;
        t00447:r5 ,
        t00447:r6 .
 
-t00447:r1 a t:wife.n.01 ;
+t00447:r1 a :Wife.n.01 ;
   :tgt t00447:p2 .
 
-t00447:r2 a t:mother.n.01 ;
+t00447:r2 a :Mother.n.01 ;
   :att "ZORGZAME" ;
   :tgt t00447:p3 .
 
-t00447:r3 a t:grandmother.n.01 ;
+t00447:r3 a :Grandmother.n.01 ;
   :tgt t00447:p4 .
 
-t00447:r4 a t:father.n.01 ;
+t00447:r4 a :Father.n.01 ;
   :tgt t00447:p3 .
 
-t00447:r5 a t:grandfather.n.01 ;
+t00447:r5 a :Grandfather.n.01 ;
   :tgt t00447:p4 .
 
-t00447:r6 a t:great_grandfather.n.01 ;
+t00447:r6 a :Great_grandfather.n.01 ;
   :tgt t00447:p5 .
 
-t00447:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00447:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00447.jpg" ;
-  dcterms:date "2019-11-02T11:29:17"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:29:17"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4789 ;

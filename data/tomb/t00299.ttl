@@ -1,34 +1,34 @@
 @prefix t00299: <https://noordergraf.rug.nl/tomb/t00299#> .
 
-tomb:t00299 a t:tombstone.n.01 ;
+tomb:t00299 a :Tomb ;
   :image t00299:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00299:p1 ;
   :ref "PSALM 103:10-18" .
 
-t00299:p1 a t:male.n.02 ;
+t00299:p1 a :Male ;
   :dob "1909-07-20" ;
   :dod "1926-03-11" ;
   :nam "KOOB SCHELHAAS" ;
   :rol t00299:r1 ,
        t00299:r2 .
 
-t00299:r1 a t:son.n.01 ;
+t00299:r1 a :Son.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00299:p2 .
 
-t00299:r2 a t:brother.n.01 .
+t00299:r2 a :Brother.n.01 .
 
-t00299:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00299:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00299.jpg" ;
-  dcterms:date "2019-10-19T14:37:34"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:37:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7156 ;

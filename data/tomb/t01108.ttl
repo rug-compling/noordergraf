@@ -1,27 +1,27 @@
 @prefix t01108: <https://noordergraf.rug.nl/tomb/t01108#> .
 
-tomb:t01108 a t:tombstone.n.01 ;
+tomb:t01108 a :Tomb ;
   :ent t01108:p1 ,
        t01108:p2 ;
   :quo "RUST ZACHT!"@nld ;
   :sym t01108:s1 .
 
-t01108:c1 a t:village.n.02 ;
+t01108:c1 a :Village.n.02 ;
   :place place:Grijpskerk2755317 ;
   :name "GRIJPSKERK" .
 
-t01108:c2 a t:village.n.02 ;
+t01108:c2 a :Village.n.02 ;
   :place place:Westergeest2744744 ;
   :name "WESTERGEEST" .
 
-t01108:c3 a t:province.n.01 ;
+t01108:c3 a :Province.n.01 ;
   :place place:ProvincieFriesland2755812 ;
   :mem t01108:c2 ;
   :name "FRIESLAND" .
 
-t01108:g1 a t:group.n.01 .
+t01108:g1 a :Group.n.01 .
 
-t01108:p1 a t:female.n.02 ;
+t01108:p1 a :Female ;
   :dob "1843-10-05" ;
   :dod "1910-10-31" ;
   :nam "AALTJE DE POEL" ;
@@ -29,7 +29,7 @@ t01108:p1 a t:female.n.02 ;
   :pod t01108:c1 ;
   :rol t01108:r1 .
 
-t01108:p2 a t:male.n.02 ;
+t01108:p2 a :Male ;
   :dob "1846-07-31" ;
   :dod "1917-01-20" ;
   :nam "SIERK KOOISTER" ;
@@ -37,19 +37,19 @@ t01108:p2 a t:male.n.02 ;
   :pod t01108:c1 ;
   :rol t01108:r2 .
 
-t01108:r1 a t:parent.n.01 ;
+t01108:r1 a :Parent.n.01 ;
   :att "GELIEFDE" ;
   :tgt t01108:g1 .
 
-t01108:r2 a t:parent.n.01 ;
+t01108:r2 a :Parent.n.01 ;
   :att "GELIEFDE" ;
   :tgt t01108:g1 .
 
-t01108:s1 a t:composite.n.01 ;
+t01108:s1 a :Composite.n.01 ;
   :prt t01108:s2 ,
        t01108:s3 .
 
-t01108:s2 a t:frond.n.01 .
+t01108:s2 a :Frond.n.01 .
 
-t01108:s3 a t:ribbon.n.01 .
+t01108:s3 a :Ribbon.n.01 .
 

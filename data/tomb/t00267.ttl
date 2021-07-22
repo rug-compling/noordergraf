@@ -1,23 +1,23 @@
 @prefix t00267: <https://noordergraf.rug.nl/tomb/t00267#> .
 
-tomb:t00267 a t:tombstone.n.01 ;
+tomb:t00267 a :Tomb ;
   :image t00267:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00267:p1 ,
        t00267:p2 ;
   :sym t00267:s1 .
 
-t00267:a1 a t:weeping.a.02 .
+t00267:a1 a :Weeping.a.02 .
 
-t00267:c1 a t:hamlet.n.03 ;
+t00267:c1 a :Hamlet.n.03 ;
   :place place:Lageland11746820 ;
   :name "LAGELAND" .
 
-t00267:c2 a t:hamlet.n.03 ;
+t00267:c2 a :Hamlet.n.03 ;
   :place place:Euvelgunne2755982 ;
   :name "EUVELGUNNE" .
 
-t00267:p1 a t:male.n.02 ;
+t00267:p1 a :Male ;
   :dob "1827-08-28" ;
   :dod "1912-01-14" ;
   :nam "ALBERT UITHAM" ;
@@ -25,26 +25,26 @@ t00267:p1 a t:male.n.02 ;
   :pod t00267:c2 ;
   :rol t00267:r1 .
 
-t00267:p2 a t:female.n.02 ;
+t00267:p2 a :Female ;
   :nam "AALTJE WOLDHUIS" .
 
-t00267:r1 a t:widower.n.01 ;
+t00267:r1 a :Widower.n.01 ;
   :beg "XX-XX-1874" ;
   :tgt t00267:p2 .
 
-t00267:s1 a t:willow.n.01 ;
+t00267:s1 a :Willow.n.01 ;
   :att t00267:a1 .
 
-t00267:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00267:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00267.jpg" ;
-  dcterms:date "2019-10-14T11:05:07"^^xsd:dateTime ;
+  dc:date "2019-10-14T11:05:07"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2224 ;

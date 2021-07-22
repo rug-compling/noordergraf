@@ -1,6 +1,6 @@
 @prefix t00611: <https://noordergraf.rug.nl/tomb/t00611#> .
 
-tomb:t00611 a t:tombstone.n.01 ;
+tomb:t00611 a :Tomb ;
   :image t00611:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00611:p1 ,
@@ -11,35 +11,35 @@ tomb:t00611 a t:tombstone.n.01 ;
        t00611:s2 ,
        t00611:s3 .
 
-t00611:c1 a t:town.n.01 ;
+t00611:c1 a :Town.n.01 ;
   :place place:Sloten2747131 ;
   :name "SLOTEN" .
 
-t00611:c2 a t:province.n.01 ;
+t00611:c2 a :Province.n.01 ;
   :place place:ProvincieFriesland2755812 ;
   :mem t00611:c1 ;
   :name "FRIESLAND" .
 
-t00611:c3 a t:town.n.01 ;
+t00611:c3 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00611:c4 a t:city.n.01 ;
+t00611:c4 a :City.n.01 ;
   :place place:Kiel2752863 ;
   :name "KIEL" .
 
-t00611:c5 a t:village.n.02 ;
+t00611:c5 a :Village.n.02 ;
   :place place:Sappemeer2747758 ;
   :name "SAPPEMEER" .
 
-t00611:p1 a t:male.n.02 ;
+t00611:p1 a :Male ;
   :dob "1842-05-04" ;
   :dod "1892-06-26" ;
   :nam "ANDRIES FABER" ;
   :pob t00611:c1 ;
   :pod t00611:c3 .
 
-t00611:p2 a t:female.n.02 ;
+t00611:p2 a :Female ;
   :dob "1845-10-18" ;
   :dod "1925-10-18" ;
   :nam "KUNJE REDEKER" ;
@@ -47,32 +47,32 @@ t00611:p2 a t:female.n.02 ;
   :pod t00611:c5 ;
   :rol t00611:r1 .
 
-t00611:p3 a t:person.n.01 ;
+t00611:p3 a :Person ;
   :nam "HOLSBERGEN" ;
   :occ t00611:r2 .
 
-t00611:r1 a t:spouse.n.01 ;
+t00611:r1 a :Spouse.n.01 ;
   :tgt t00611:p1 .
 
-t00611:r2 a t:designer.n.01 ;
+t00611:r2 a :Designer.n.01 ;
   :tgt tomb:t00611 .
 
-t00611:s1 a t:oak.n.02 .
+t00611:s1 a :Oak.n.02 .
 
-t00611:s2 a t:frond.n.01 .
+t00611:s2 a :Frond.n.01 .
 
-t00611:s3 a t:ribbon.n.01 .
+t00611:s3 a :Ribbon.n.01 .
 
-t00611:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00611:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00611.jpg" ;
-  dcterms:date "2019-11-23T10:06:14"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:06:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1643 ;

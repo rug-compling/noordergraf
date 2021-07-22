@@ -1,6 +1,6 @@
 @prefix t00607: <https://noordergraf.rug.nl/tomb/t00607#> .
 
-tomb:t00607 a t:tombstone.n.01 ;
+tomb:t00607 a :Tomb ;
   :image t00607:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00607:p1 ,
@@ -11,15 +11,15 @@ tomb:t00607 a t:tombstone.n.01 ;
        t00607:s3 ,
        t00607:s4 .
 
-t00607:c1 a t:town.n.01 ;
+t00607:c1 a :Town.n.01 ;
   :place place:Aurich2954006 ;
   :name "AURICH" .
 
-t00607:c2 a t:town.n.01 ;
+t00607:c2 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00607:p1 a t:female.n.02 ;
+t00607:p1 a :Female ;
   :dob "1818-04-10" ;
   :dod "1904-08-08" ;
   :nam "EBERHAGEN-KALBITZER" ;
@@ -27,33 +27,33 @@ t00607:p1 a t:female.n.02 ;
   :pod t00607:c2 ;
   :rol t00607:r1 .
 
-t00607:p2 a t:person.n.01 ;
+t00607:p2 a :Person ;
   :nam "L.F. DE WIJS" ;
   :occ t00607:r2 .
 
-t00607:r1 a t:widow.n.01 .
+t00607:r1 a :Widow.n.01 .
 
-t00607:r2 a t:designer.n.01 ;
+t00607:r2 a :Designer.n.01 ;
   :tgt tomb:t00607 .
 
-t00607:s1 a t:cross.n.03 .
+t00607:s1 a :Cross.n.03 .
 
-t00607:s2 a t:anchor.n.01 .
+t00607:s2 a :Anchor.n.01 .
 
-t00607:s3 a t:branch.n.02 .
+t00607:s3 a :Branch.n.02 .
 
-t00607:s4 a t:heart.n.07 .
+t00607:s4 a :Heart.n.07 .
 
-t00607:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00607:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00607.jpg" ;
-  dcterms:date "2019-11-23T10:07:15"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:07:15"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1643 ;

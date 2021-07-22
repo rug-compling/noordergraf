@@ -1,17 +1,17 @@
 @prefix t00477: <https://noordergraf.rug.nl/tomb/t00477#> .
 
-tomb:t00477 a t:tombstone.n.01 ;
+tomb:t00477 a :Tomb ;
   :image t00477:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00477:p1 ,
        t00477:p2 ;
   :sym t00477:s1 .
 
-t00477:c1 a t:city.n.01 ;
+t00477:c1 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LEEUWARDEN" .
 
-t00477:p1 a t:female.n.02 ;
+t00477:p1 a :Female ;
   :dob "1876-07-02" ;
   :dod "1950-12-19" ;
   :nam "FRANCINA MARIA LANGENDIJK" ;
@@ -19,37 +19,37 @@ t00477:p1 a t:female.n.02 ;
   :pod t00477:c1 ;
   :rol t00477:r1 .
 
-t00477:p2 a t:male.n.02 ;
+t00477:p2 a :Male ;
   :dob "1874-06-24" ;
   :dod "1955-08-01" ;
   :nam "JOHANNES HOLLENGA" ;
   :pob t00477:c1 ;
   :pod t00477:c1 .
 
-t00477:r1 a t:spouse.n.01 ;
+t00477:r1 a :Spouse.n.01 ;
   :tgt t00477:p2 .
 
-t00477:s1 a t:composite.n.01 ;
+t00477:s1 a :Composite.n.01 ;
   :prt t00477:s2 ,
        t00477:s3 ,
        t00477:s4 .
 
-t00477:s2 a t:frond.n.02 .
+t00477:s2 a :Frond.n.02 .
 
-t00477:s3 a t:cross.n.03 .
+t00477:s3 a :Cross.n.03 .
 
-t00477:s4 a t:ribbon.n.01 .
+t00477:s4 a :Ribbon.n.01 .
 
-t00477:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00477:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00477.jpg" ;
-  dcterms:date "2019-11-09T14:41:22"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:41:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2073 ;

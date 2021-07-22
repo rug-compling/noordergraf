@@ -1,6 +1,6 @@
 @prefix t00386: <https://noordergraf.rug.nl/tomb/t00386#> .
 
-tomb:t00386 a t:tombstone.n.01 ;
+tomb:t00386 a :Tomb ;
   :image t00386:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00386:p1 ,
@@ -9,17 +9,17 @@ tomb:t00386 a t:tombstone.n.01 ;
   :ref "PSALM 33:12.15" ;
   :sym t00386:s1 .
 
-t00386:a1 a t:weeping.a.02 .
+t00386:a1 a :Weeping.a.02 .
 
-t00386:c1 a t:village.n.02 ;
+t00386:c1 a :Village.n.02 ;
   :place place:Twijzel2746052 ;
   :name "TWIJZEL" .
 
-t00386:c2 a t:village.n.02 ;
+t00386:c2 a :Village.n.02 ;
   :place place:Buitenpost2758131 ;
   :name "BUITENPOST" .
 
-t00386:p1 a t:female.n.02 ;
+t00386:p1 a :Female ;
   :dob "1844-02-06" ;
   :dod "1910-01-04" ;
   :nam "STEVENTJE A. SIETZEMA" ;
@@ -28,32 +28,32 @@ t00386:p1 a t:female.n.02 ;
   :rol t00386:r1 ,
        t00386:r2 .
 
-t00386:p2 a t:male.n.02 ;
+t00386:p2 a :Male ;
   :nam "JAN W. REITSMA" .
 
-t00386:p3 a t:male.n.02 ;
+t00386:p3 a :Male ;
   :nam "JAN R. LUINSTRA" .
 
-t00386:r1 a t:spouse.n.01 ;
+t00386:r1 a :Spouse.n.01 ;
   :bef t00386:r2 ;
   :tgt t00386:p2 .
 
-t00386:r2 a t:spouse.n.01 ;
+t00386:r2 a :Spouse.n.01 ;
   :tgt t00386:p3 .
 
-t00386:s1 a t:willow.n.01 ;
+t00386:s1 a :Willow.n.01 ;
   :att t00386:a1 .
 
-t00386:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00386:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00386.jpg" ;
-  dcterms:date "2019-10-26T15:02:08"^^xsd:dateTime ;
+  dc:date "2019-10-26T15:02:08"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2517 ;

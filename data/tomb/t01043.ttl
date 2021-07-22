@@ -1,20 +1,20 @@
 @prefix t01043: <https://noordergraf.rug.nl/tomb/t01043#> .
 
-tomb:t01043 a t:tombstone.n.01 ;
+tomb:t01043 a :Tomb ;
   :image t01043:im1 ;
   :ent t01043:p1 ,
        t01043:p2 ,
        t01043:p3 ;
   :lan "NLD" .
 
-t01043:b1 a t:Epistle_to_the_Romans.n.04 ;
+t01043:b1 a :Epistle_to_the_Romans.n.04 ;
   :prt t01043:c1 .
 
-t01043:c1 a t:chapter.n.01 ;
+t01043:c1 a :Chapter.n.01 ;
   :ord 8 ;
   :prt t01043:v1 .
 
-t01043:p1 a t:male.n.02 ;
+t01043:p1 a :Male ;
   :dob "1927-05-01" ;
   :dod "1999-07-23" ;
   :nam "JELTE GEERT HAAKSEMA" ;
@@ -22,32 +22,32 @@ t01043:p1 a t:male.n.02 ;
   :rol t01043:r1 ,
        t01043:r2 .
 
-t01043:p2 a t:female.n.02 ;
+t01043:p2 a :Female ;
   :nam "W. BULTEMA" .
 
-t01043:p3 a t:female.n.02 ;
+t01043:p3 a :Female ;
   :nam "B. DIJKINGA" .
 
-t01043:r1 a t:spouse.n.01 ;
+t01043:r1 a :Spouse.n.01 ;
   :tgt t01043:p2 .
 
-t01043:r2 a t:spouse.n.01 ;
+t01043:r2 a :Spouse.n.01 ;
   :bef t01043:r1 ;
   :tgt t01043:p3 .
 
-t01043:v1 a t:verse.n.01 ;
+t01043:v1 a :Verse.n.01 ;
   :ord 37 .
 
-t01043:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01043:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01043.jpg" ;
-  dcterms:date "2020-04-19T10:42:04"^^xsd:dateTime ;
+  dc:date "2020-04-19T10:42:04"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2469 ;

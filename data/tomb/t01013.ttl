@@ -1,6 +1,6 @@
 @prefix t01013: <https://noordergraf.rug.nl/tomb/t01013#> .
 
-tomb:t01013 a t:tombstone.n.01 ;
+tomb:t01013 a :Tomb ;
   :image t01013:im1 ;
   :site site:gr9734ATgroningen ;
   :ent t01013:p1 ,
@@ -13,18 +13,18 @@ tomb:t01013 a t:tombstone.n.01 ;
        t01013:s7 ,
        t01013:s8 .
 
-t01013:c1 a t:village.n.02 ;
+t01013:c1 a :Village.n.02 ;
   :place place:Noorddijk2749981 ;
   :name "NOORDDIJK" .
 
-t01013:o1 a t:taxman.n.01 ;
+t01013:o1 a :Taxman.n.01 ;
   :hco "31020" ;
   :loc t01013:c1 .
 
-t01013:o2 a t:notabel.n.01 ;
+t01013:o2 a :Notabel.n.01 ;
   :loc t01013:c1 .
 
-t01013:p1 a t:male.n.02 ;
+t01013:p1 a :Male ;
   :dob "1786-06-11" ;
   :dod "1863-12-08" ;
   :nam "HINDERK TJAPKES DE BOER" ;
@@ -33,40 +33,40 @@ t01013:p1 a t:male.n.02 ;
   :pob t01013:c1 ;
   :rol t01013:r1 .
 
-t01013:p2 a t:female.n.02 ;
+t01013:p2 a :Female ;
   :nam "TRIENTJE JANS KORT" .
 
-t01013:r1 a t:spouse.n.01 ;
+t01013:r1 a :Spouse.n.01 ;
   :tgt t01013:p2 .
 
-t01013:s1 a t:sandglass.n.01 .
+t01013:s1 a :Sandglass.n.01 .
 
-t01013:s2 a t:wing.n.01 .
+t01013:s2 a :Wing.n.01 .
 
-t01013:s3 a t:wing.n.01 .
+t01013:s3 a :Wing.n.01 .
 
-t01013:s4 a t:bat.n.01 ;
+t01013:s4 a :Bat.n.01 ;
   :mem t01013:s2 .
 
-t01013:s5 a t:bird.n.01 ;
+t01013:s5 a :Bird.n.01 ;
   :mem t01013:s3 .
 
-t01013:s6 a t:frond.n.01 .
+t01013:s6 a :Frond.n.01 .
 
-t01013:s7 a t:frond.n.01 .
+t01013:s7 a :Frond.n.01 .
 
-t01013:s8 a t:ribbon.n.01 .
+t01013:s8 a :Ribbon.n.01 .
 
-t01013:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01013:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01013.jpg" ;
-  dcterms:date "2020-04-05T12:20:31"^^xsd:dateTime ;
+  dc:date "2020-04-05T12:20:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2443 ;

@@ -1,6 +1,6 @@
 @prefix t00323: <https://noordergraf.rug.nl/tomb/t00323#> .
 
-tomb:t00323 a t:tombstone.n.01 ;
+tomb:t00323 a :Tomb ;
   :image t00323:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00323:p1 ,
@@ -8,18 +8,18 @@ tomb:t00323 a t:tombstone.n.01 ;
   :ref t00323:v1 ;
   :sym t00323:s1 .
 
-t00323:b1 a t:John.n.05 ;
+t00323:b1 a :John.n.05 ;
   :prt t00323:c2 .
 
-t00323:c1 a t:town.n.01 ;
+t00323:c1 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00323:c2 a t:chapter.n.01 ;
+t00323:c2 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00323:v1 .
 
-t00323:p1 a t:female.n.02 ;
+t00323:p1 a :Female ;
   :dob "1873-11-14" ;
   :dod "1935-02-26" ;
   :nam "GEERTRUIDA JUT" ;
@@ -27,7 +27,7 @@ t00323:p1 a t:female.n.02 ;
   :pod t00323:c1 ;
   :rol t00323:r1 .
 
-t00323:p2 a t:male.n.02 ;
+t00323:p2 a :Male ;
   :dob "1870-12-29" ;
   :dod "1957-04-06" ;
   :nam "OTTO METSELAAR" ;
@@ -35,28 +35,28 @@ t00323:p2 a t:male.n.02 ;
   :pod t00323:c1 ;
   :rol t00323:r2 .
 
-t00323:r1 a t:parent.n.01 ;
+t00323:r1 a :Parent.n.01 ;
   :att "GELIEFDE" .
 
-t00323:r2 a t:parent.n.01 ;
+t00323:r2 a :Parent.n.01 ;
   :att "GELIEFDE" .
 
-t00323:s1 a t:flower.n.01 .
+t00323:s1 a :Flower.n.01 .
 
-t00323:v1 a t:verse.n.01 ;
+t00323:v1 a :Verse.n.01 ;
   :ord 2 ;
   :txt "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN" .
 
-t00323:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00323:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00323.jpg" ;
-  dcterms:date "2019-10-19T14:23:02"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:23:02"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7157 ;

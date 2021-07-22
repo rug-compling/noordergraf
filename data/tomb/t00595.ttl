@@ -1,6 +1,6 @@
 @prefix t00595: <https://noordergraf.rug.nl/tomb/t00595#> .
 
-tomb:t00595 a t:tombstone.n.01 ;
+tomb:t00595 a :Tomb ;
   :image t00595:im1 ;
   :site site:gr9951TNwinsum ;
   :ent t00595:p1 ;
@@ -8,30 +8,30 @@ tomb:t00595 a t:tombstone.n.01 ;
   :sym t00595:s1 ,
        t00595:s2 .
 
-t00595:o1 a t:drummer.n.01 ;
+t00595:o1 a :Drummer.n.01 ;
   :att "MASTER" ;
   :hco "17140" .
 
-t00595:p1 a t:male.n.02 ;
+t00595:p1 a :Male ;
   :dob "1951-06-06" ;
   :dod "2001-08-08" ;
   :nam "MANUEL E. LOPES" ;
   :occ t00595:o1 .
 
-t00595:s1 a t:treble_clef.n.01 .
+t00595:s1 a :Treble_clef.n.01 .
 
-t00595:s2 a t:treble_clef.n.01 .
+t00595:s2 a :Treble_clef.n.01 .
 
-t00595:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00595:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00595.jpg" ;
-  dcterms:date "2019-11-30T14:16:43"^^xsd:dateTime ;
+  dc:date "2019-11-30T14:16:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3262 ;

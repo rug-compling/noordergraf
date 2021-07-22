@@ -1,6 +1,6 @@
 @prefix t00112: <https://noordergraf.rug.nl/tomb/t00112#> .
 
-tomb:t00112 a t:tombstone.n.01 ;
+tomb:t00112 a :Tomb ;
   :image t00112:im1 ;
   :site site:gr9752CMharen ;
   :ent t00112:p1 ,
@@ -8,36 +8,36 @@ tomb:t00112 a t:tombstone.n.01 ;
        t00112:p3 ;
   :quo "ZO BLIJVEN DAN: GELOOF, HOOP EN LIEFDE" .
 
-t00112:p1 a t:male.n.02 ;
+t00112:p1 a :Male ;
   :dob "1900-09-07" ;
   :dod "1978-07-14" ;
   :nam "JACOB NIENHUIS" .
 
-t00112:p2 a t:female.n.02 ;
+t00112:p2 a :Female ;
   :dob "1900-08-11" ;
   :dod "1984-08-19" ;
   :nam "GRIETJE JANTINA BOOMGAARDT" ;
   :rol t00112:r1 .
 
-t00112:p3 a t:female.n.02 ;
+t00112:p3 a :Female ;
   :dob "1908-12-09" ;
   :dod "1988-10-31" ;
   :nam "JANTINA JACOBA BOOMGAARDT" ,
        "TANTE TINE" .
 
-t00112:r1 a t:wife.n.01 ;
+t00112:r1 a :Wife.n.01 ;
   :tgt t00112:p1 .
 
-t00112:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00112:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00112.jpg" ;
-  dcterms:date "2019-09-20T18:03:23"^^xsd:dateTime ;
+  dc:date "2019-09-20T18:03:23"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1635 ;

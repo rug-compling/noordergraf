@@ -1,21 +1,21 @@
 @prefix t00336: <https://noordergraf.rug.nl/tomb/t00336#> .
 
-tomb:t00336 a t:tombstone.n.01 ;
+tomb:t00336 a :Tomb ;
   :image t00336:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00336:p1 ,
        t00336:p2 ;
   :sym t00336:s1 .
 
-t00336:c1 a t:village.n.02 ;
+t00336:c1 a :Village.n.02 ;
   :place place:Ruinen2747835 ;
   :name "RUINEN" .
 
-t00336:c2 a t:town.n.01 ;
+t00336:c2 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00336:p1 a t:male.n.02 ;
+t00336:p1 a :Male ;
   :dob "1878-09-18" ;
   :dod "1961-06-23" ;
   :nam "ALBERT BRUINS" ;
@@ -23,34 +23,34 @@ t00336:p1 a t:male.n.02 ;
   :pod t00336:c2 ;
   :rol t00336:r1 .
 
-t00336:p2 a t:female.n.02 ;
+t00336:p2 a :Female ;
   :dob "1885-09-05" ;
   :dod "1969-01-13" ;
   :nam "ARENDINA HERMINA VERMEULEN" ;
   :pob t00336:c1 ;
   :pod t00336:c1 .
 
-t00336:r1 a t:spouse.n.01 ;
+t00336:r1 a :Spouse.n.01 ;
   :tgt t00336:p2 .
 
-t00336:s1 a t:composite.n.01 ;
+t00336:s1 a :Composite.n.01 ;
   :prt t00336:s2 ,
        t00336:s3 .
 
-t00336:s2 a t:frond.n.01 .
+t00336:s2 a :Frond.n.01 .
 
-t00336:s3 a t:frond.n.01 .
+t00336:s3 a :Frond.n.01 .
 
-t00336:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00336:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00336.jpg" ;
-  dcterms:date "2019-10-19T14:12:04"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:12:04"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7153 ;

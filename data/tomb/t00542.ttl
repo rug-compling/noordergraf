@@ -1,37 +1,37 @@
 @prefix t00542: <https://noordergraf.rug.nl/tomb/t00542#> .
 
-tomb:t00542 a t:tombstone.n.01 ;
+tomb:t00542 a :Tomb ;
   :image t00542:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00542:p1 ,
        t00542:p2 ;
   :lan "NLD" .
 
-t00542:p1 a t:male.n.02 ;
+t00542:p1 a :Male ;
   :dob "1839-11-26" ;
   :dod "1896-08-20" ;
   :nam "JAN VAN LINGE" ;
   :sfx "AZ" .
 
-t00542:p2 a t:female.n.02 ;
+t00542:p2 a :Female ;
   :dob "1845-03-06" ;
   :dod "1913-11-08" ;
   :nam "TJIETSKA VAN DER WAL" ;
   :rol t00542:r1 .
 
-t00542:r1 a t:spouse.n.01 ;
+t00542:r1 a :Spouse.n.01 ;
   :tgt t00542:p1 .
 
-t00542:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00542:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00542.jpg" ;
-  dcterms:date "2019-11-24T14:17:53"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:17:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1043 ;

@@ -1,6 +1,6 @@
 @prefix t00558: <https://noordergraf.rug.nl/tomb/t00558#> .
 
-tomb:t00558 a t:tombstone.n.01 ;
+tomb:t00558 a :Tomb ;
   :image t00558:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00558:p1 ,
@@ -9,56 +9,56 @@ tomb:t00558 a t:tombstone.n.01 ;
   :sym t00558:s1 ,
        t00558:s7 .
 
-t00558:a1 a t:winged.a.01 .
+t00558:a1 a :Winged.a.01 .
 
-t00558:m1 a t:measure.n.02 ;
+t00558:m1 a :Measure.n.02 ;
   :mem t00558:u1 ;
   :qua 88 .
 
-t00558:p1 a t:male.n.02 ;
+t00558:p1 a :Male ;
   :age t00558:m1 ;
   :dob "1864-01-08" ;
   :nam "EVERT VAN LINGE" ;
   :rol t00558:r1 .
 
-t00558:p2 a t:female.n.02 ;
+t00558:p2 a :Female ;
   :nam "ALBERTJE ELTJES DE BOER" .
 
-t00558:r1 a t:spouse.n.01 ;
+t00558:r1 a :Spouse.n.01 ;
   :tgt t00558:p2 .
 
-t00558:s1 a t:composite.n.01 ;
+t00558:s1 a :Composite.n.01 ;
   :prt t00558:s2 ,
        t00558:s5 ;
   :sym t00558:s3 ,
        t00558:s4 .
 
-t00558:s2 a t:sandglass.n.01 ;
+t00558:s2 a :Sandglass.n.01 ;
   :att t00558:a1 .
 
-t00558:s3 a t:torch.n.01 .
+t00558:s3 a :Torch.n.01 .
 
-t00558:s4 a t:sword.n.01 .
+t00558:s4 a :Sword.n.01 .
 
-t00558:s5 a t:branch.n.02 .
+t00558:s5 a :Branch.n.02 .
 
-t00558:s6 a t:oak.n.02 ;
+t00558:s6 a :Oak.n.02 ;
   :prt t00558:s5 .
 
-t00558:s7 a t:butterfly.n.01 .
+t00558:s7 a :Butterfly.n.01 .
 
-t00558:u1 a t:year.n.01 .
+t00558:u1 a :Year.n.01 .
 
-t00558:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00558:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00558.jpg" ;
-  dcterms:date "2019-11-24T13:52:41"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:52:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1047 ;

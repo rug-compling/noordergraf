@@ -1,6 +1,6 @@
 @prefix t00876: <https://noordergraf.rug.nl/tomb/t00876#> .
 
-tomb:t00876 a t:tombstone.n.01 ;
+tomb:t00876 a :Tomb ;
   :image t00876:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00876:p1 ,
@@ -9,40 +9,40 @@ tomb:t00876 a t:tombstone.n.01 ;
   :ref "HEBREEËN 4:9"@nld ;
   :sym t00876:s1 .
 
-t00876:a1 a t:weeping.a.02 .
+t00876:a1 a :Weeping.a.02 .
 
-t00876:c1 a t:village.n.02 ;
+t00876:c1 a :Village.n.02 ;
   :place place:Sleen2747182 ;
   :name "SLEEN" .
 
-t00876:c2 a t:village.n.02 ;
+t00876:c2 a :Village.n.02 ;
   :place place:NieuwAmsterdam2750375 ;
   :name "NIEUW-AMSTERDAM" .
 
-t00876:p1 a t:female.n.02 ;
+t00876:p1 a :Female ;
   :dob "1871-11-24" ;
   :dod "1937-11-20" ;
   :nam "JANTJE VISSER" ;
   :pob t00876:c1 ;
   :pod t00876:c2 .
 
-t00876:p2 a t:person.n.01 ;
+t00876:p2 a :Person ;
   :nam "P. LOK" ;
   :sfx "JR" .
 
-t00876:s1 a t:willow.n.01 ;
+t00876:s1 a :Willow.n.01 ;
   :att t00876:a1 .
 
-t00876:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00876:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00876.jpg" ;
-  dcterms:date "2020-02-15T15:09:39"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:09:39"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7193 ;

@@ -1,35 +1,35 @@
 @prefix t00033: <https://noordergraf.rug.nl/tomb/t00033#> .
 
-tomb:t00033 a t:tombstone.n.01 ;
+tomb:t00033 a :Tomb ;
   :image t00033:im1 ;
   :site site:gr9752CMharen ;
   :ent t00033:p1 ;
   :quo "RUST IN VREDE" ;
   :sym t00033:s1 .
 
-t00033:p1 a t:male.n.02 ;
+t00033:p1 a :Male ;
   :dob "1902-01-02" ;
   :dod "1950-03-25" ;
   :nam "KLAAS HUT" ;
   :rol t00033:r1 ,
        t00033:r2 .
 
-t00033:r1 a t:son.n.01 .
+t00033:r1 a :Son.n.01 .
 
-t00033:r2 a t:brother.n.01 .
+t00033:r2 a :Brother.n.01 .
 
-t00033:s1 a t:frond.n.01 .
+t00033:s1 a :Frond.n.01 .
 
-t00033:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00033:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00033.jpg" ;
-  dcterms:date "2019-09-27T17:57:34"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:57:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1627 ;

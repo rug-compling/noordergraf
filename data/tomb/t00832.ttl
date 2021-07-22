@@ -1,6 +1,6 @@
 @prefix t00832: <https://noordergraf.rug.nl/tomb/t00832#> .
 
-tomb:t00832 a t:tombstone.n.01 ;
+tomb:t00832 a :Tomb ;
   :image t00832:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00832:g1 ,
@@ -10,17 +10,17 @@ tomb:t00832 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00832:s1 .
 
-t00832:a1 a t:weeping.a.02 .
+t00832:a1 a :Weeping.a.02 .
 
-t00832:c1 a t:village.n.02 ;
+t00832:c1 a :Village.n.02 ;
   :place place:Veenoord2745753 ;
   :name "VEENOORD" .
 
-t00832:g1 a t:group.n.01 ;
+t00832:g1 a :Group.n.01 ;
   :mem t00832:p2 ,
        t00832:p3 .
 
-t00832:p1 a t:female.n.02 ;
+t00832:p1 a :Female ;
   :dob "1907-12-20" ;
   :dod "1912-01-19" ;
   :nam "GEZIENA ALBERTA MOL" ;
@@ -28,29 +28,29 @@ t00832:p1 a t:female.n.02 ;
   :pod t00832:c1 ;
   :rol t00832:r1 .
 
-t00832:p2 a t:male.n.02 ;
+t00832:p2 a :Male ;
   :nam "A. MOL" .
 
-t00832:p3 a t:female.n.02 ;
+t00832:p3 a :Female ;
   :nam "J.K. SCHOLTE" .
 
-t00832:r1 a t:daughter.n.01 ;
+t00832:r1 a :Daughter.n.01 ;
   :att "GELIEFD" ;
   :tgt t00832:g1 .
 
-t00832:s1 a t:willow.n.01 ;
+t00832:s1 a :Willow.n.01 ;
   :att t00832:a1 .
 
-t00832:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00832:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00832.jpg" ;
-  dcterms:date "2020-02-15T15:14:59"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:14:59"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7193 ;

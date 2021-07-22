@@ -1,40 +1,40 @@
 @prefix t00055: <https://noordergraf.rug.nl/tomb/t00055#> .
 
-tomb:t00055 a t:tombstone.n.01 ;
+tomb:t00055 a :Tomb ;
   :image t00055:im1 ;
   :site site:gr9752CMharen ;
   :ent t00055:p1 ;
   :ref t00055:v1 .
 
-t00055:b1 a t:Job.n.12 ;
+t00055:b1 a :Job.n.12 ;
   :prt t00055:c3 .
 
-t00055:c3 a t:chapter.n.01 ;
+t00055:c3 a :Chapter.n.01 ;
   :ord 1 ;
   :prt t00055:v2 .
 
-t00055:p1 a t:male.n.02 ;
+t00055:p1 a :Male ;
   :dob "1958-12-08" ;
   :dod "1958-12-25" ;
   :nam "GERARDUS" .
 
-t00055:v1 a t:part.n.09 ;
+t00055:v1 a :Part.n.09 ;
   :nam "B" .
 
-t00055:v2 a t:verse.n.01 ;
+t00055:v2 a :Verse.n.01 ;
   :ord 21 ;
   :prt t00055:v1 .
 
-t00055:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00055:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00055.jpg" ;
-  dcterms:date "2019-09-27T17:41:53"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:41:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1630 ;

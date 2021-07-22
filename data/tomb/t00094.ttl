@@ -1,37 +1,37 @@
 @prefix t00094: <https://noordergraf.rug.nl/tomb/t00094#> .
 
-tomb:t00094 a t:tombstone.n.01 ;
+tomb:t00094 a :Tomb ;
   :image t00094:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00094:p1 ,
        t00094:p2 ,
        t00094:p3 .
 
-t00094:p1 a t:female.n.02 ;
+t00094:p1 a :Female ;
   :dob "1873-06-24" ;
   :dod "1941-10-21" ;
   :nam "MARTJE TRIEZENBERG-ANGERMAN" .
 
-t00094:p2 a t:male.n.02 ;
+t00094:p2 a :Male ;
   :dob "1875-02-07" ;
   :dod "1958-12-31" ;
   :nam "KLAAS TRIEZENBERG" .
 
-t00094:p3 a t:female.n.02 ;
+t00094:p3 a :Female ;
   :dob "1881-01-24" ;
   :dod "1970-03-18" ;
   :nam "HILLECHIEN TRIEZENBERG" .
 
-t00094:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00094:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00094.jpg" ;
-  dcterms:date "2019-09-24T15:17:42"^^xsd:dateTime ;
+  dc:date "2019-09-24T15:17:42"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2061 ;

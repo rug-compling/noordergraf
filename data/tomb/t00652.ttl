@@ -1,6 +1,6 @@
 @prefix t00652: <https://noordergraf.rug.nl/tomb/t00652#> .
 
-tomb:t00652 a t:tombstone.n.01 ;
+tomb:t00652 a :Tomb ;
   :image t00652:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00652:p1 ,
@@ -11,33 +11,33 @@ tomb:t00652 a t:tombstone.n.01 ;
        "IN HET VERZET GEVALLEN"@nld ;
   :sym t00652:s1 .
 
-t00652:p1 a t:male.n.02 ;
+t00652:p1 a :Male ;
   :dob "1897-01-03" ;
   :dod "1944-10-05" ;
   :nam "MEINT VENINGA" .
 
-t00652:p2 a t:male.n.02 ;
+t00652:p2 a :Male ;
   :dob "1920-06-13" ;
   :dod "1944-10-05" ;
   :nam "JAN HUITZING" .
 
-t00652:p3 a t:male.n.02 ;
+t00652:p3 a :Male ;
   :dob "1911-02-21" ;
   :dod "1944-10-05" ;
   :nam "JAN SANGERS" .
 
-t00652:s1 a t:lion.n.01 .
+t00652:s1 a :Lion.n.01 .
 
-t00652:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00652:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00652.jpg" ;
-  dcterms:date "2019-11-23T10:46:50"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:46:50"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1662 ;

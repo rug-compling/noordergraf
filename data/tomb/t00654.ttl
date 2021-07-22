@@ -1,6 +1,6 @@
 @prefix t00654: <https://noordergraf.rug.nl/tomb/t00654#> .
 
-tomb:t00654 a t:tombstone.n.01 ;
+tomb:t00654 a :Tomb ;
   :image t00654:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00654:p1 ,
@@ -9,22 +9,22 @@ tomb:t00654 a t:tombstone.n.01 ;
   :ref t00654:v1 ;
   :sym t00654:s1 .
 
-t00654:b1 a t:Revelation.n.04 ;
+t00654:b1 a :Revelation.n.04 ;
   :prt t00654:c3 .
 
-t00654:c1 a t:village.n.02 ;
+t00654:c1 a :Village.n.02 ;
   :place place:Hornhuizen2753604 ;
   :name "HORNHUIZEN" .
 
-t00654:c2 a t:town.n.01 ;
+t00654:c2 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00654:c3 a t:chapter.n.01 ;
+t00654:c3 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00654:v1 .
 
-t00654:p1 a t:female.n.02 ;
+t00654:p1 a :Female ;
   :dob "1868-01-20" ;
   :dod "1931-05-17" ;
   :nam "GRIETJE KLEVERINGA" ;
@@ -32,28 +32,28 @@ t00654:p1 a t:female.n.02 ;
   :pod t00654:c2 ;
   :rol t00654:r1 .
 
-t00654:p2 a t:male.n.02 ;
+t00654:p2 a :Male ;
   :nam "ANDRIES BLAAK" .
 
-t00654:r1 a t:widow.n.01 ;
+t00654:r1 a :Widow.n.01 ;
   :tgt t00654:p2 .
 
-t00654:s1 a t:rose.n.01 .
+t00654:s1 a :Rose.n.01 .
 
-t00654:v1 a t:verse.n.01 ;
+t00654:v1 a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN." .
 
-t00654:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00654:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00654.jpg" ;
-  dcterms:date "2019-11-23T10:08:56"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:08:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1637 ;

@@ -1,6 +1,6 @@
 @prefix t00904: <https://noordergraf.rug.nl/tomb/t00904#> .
 
-tomb:t00904 a t:tombstone.n.01 ;
+tomb:t00904 a :Tomb ;
   :image t00904:im1 ;
   :ent t00904:p1 ;
   :quo "O DEATH, WHERE IS THY STING? \\ O GRAVE, WHERE IS THY VICTORY? \\ BUT THANKS BE TO GOD, WHICH \\ GIVETH US THE VICTORY THROUGH \\ OUR LORD JESUS CHRIST, THE \\ SAVIOUR OF THE WORLD."@eng ;
@@ -8,30 +8,30 @@ tomb:t00904 a t:tombstone.n.01 ;
        t00904:s2 ,
        t00904:s3 .
 
-t00904:c1 a t:hamlet.n.03 ;
+t00904:c1 a :Hamlet.n.03 ;
   :place place:Diepswal2756869 ;
   :name "DIEPSWAL" .
 
-t00904:p1 a t:male.n.02 ;
+t00904:p1 a :Male ;
   :dob "1883-12-02" ;
   :dod "1975-09-05" ;
   :nam "JAN MEEK" ;
   :pob t00904:c1 .
 
-t00904:s1 a t:frond.n.01 .
+t00904:s1 a :Frond.n.01 .
 
-t00904:s2 a t:chrismon.n.01 .
+t00904:s2 a :Chrismon.n.01 .
 
-t00904:s3 a t:cross.n.03 .
+t00904:s3 a :Cross.n.03 .
 
-t00904:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00904:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00904.jpg" ;
-  dcterms:date "2020-03-07T14:23:45"^^xsd:dateTime .
+  dc:date "2020-03-07T14:23:45"^^xsd:dateTime .
 

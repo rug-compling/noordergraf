@@ -1,26 +1,26 @@
 @prefix t00981: <https://noordergraf.rug.nl/tomb/t00981#> .
 
-tomb:t00981 a t:tombstone.n.01 ;
+tomb:t00981 a :Tomb ;
   :image t00981:im1 ;
   :site site:dr9761ALeelde ;
   :ent t00981:p1 ;
   :lan "NLD" .
 
-t00981:p1 a t:male.n.02 ;
+t00981:p1 a :Male ;
   :dob "1925-05-05" ;
   :dod "1984-03-13" ;
   :nam "EGBERTUS BERNHAM ELDERHOST" .
 
-t00981:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00981:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00981.jpg" ;
-  dcterms:date "2020-03-31T12:48:19"^^xsd:dateTime ;
+  dc:date "2020-03-31T12:48:19"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1420 ;

@@ -1,45 +1,45 @@
 @prefix t00493: <https://noordergraf.rug.nl/tomb/t00493#> .
 
-tomb:t00493 a t:tombstone.n.01 ;
+tomb:t00493 a :Tomb ;
   :image t00493:im1 ;
   :site site:fr8917AVleeuwarden ;
   :ent t00493:p1 ,
        t00493:p2 .
 
-t00493:p1 a t:female.n.02 ;
+t00493:p1 a :Female ;
   :dob "1854-07-21" ;
   :dod "1917-02-13" ;
   :nam "HELENA PANHUIS" ;
   :rol t00493:r1 ,
        t00493:r2 .
 
-t00493:p2 a t:male.n.02 ;
+t00493:p2 a :Male ;
   :dob "1860-07-21" ;
   :dod "1922-05-23" ;
   :nam "PIETER VAN DER ZEE" ;
   :rol t00493:r3 .
 
-t00493:r1 a t:wife.n.01 ;
+t00493:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00493:p2 .
 
-t00493:r2 a t:mother.n.01 ;
+t00493:r2 a :Mother.n.01 ;
   :tgt t00493:p3 .
 
-t00493:r3 a t:father.n.01 ;
+t00493:r3 a :Father.n.01 ;
   :att "BESTE" ;
   :tgt t00493:p3 .
 
-t00493:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00493:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00493.jpg" ;
-  dcterms:date "2019-11-16T13:57:23"^^xsd:dateTime ;
+  dc:date "2019-11-16T13:57:23"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2097 ;

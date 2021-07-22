@@ -1,6 +1,6 @@
 @prefix t00343: <https://noordergraf.rug.nl/tomb/t00343#> .
 
-tomb:t00343 a t:tombstone.n.01 ;
+tomb:t00343 a :Tomb ;
   :image t00343:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00343:p1 ,
@@ -8,47 +8,47 @@ tomb:t00343 a t:tombstone.n.01 ;
        t00343:p3 ;
   :sym t00343:s1 .
 
-t00343:p1 a t:female.n.02 ;
+t00343:p1 a :Female ;
   :dob "1897-08-08" ;
   :dod "1942-12-07" ;
   :nam "HENDRIKJE STEEN" ;
   :rol t00343:r1 ,
        t00343:r2 .
 
-t00343:p2 a t:male.n.02 ;
+t00343:p2 a :Male ;
   :dob "1936-08-19" ;
   :dod "1942-12-07" ;
   :nam "WILLEM" ;
   :rol t00343:r3 .
 
-t00343:p3 a t:male.n.02 ;
+t00343:p3 a :Male ;
   :dob "1896-01-01" ;
   :dod "1973-01-08" ;
   :nam "AREND GORT" .
 
-t00343:r1 a t:wife.n.01 ;
+t00343:r1 a :Wife.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00343:p3 .
 
-t00343:r2 a t:mother.n.01 ;
+t00343:r2 a :Mother.n.01 ;
   :tgt t00343:p2 .
 
-t00343:r3 a t:son.n.01 ;
+t00343:r3 a :Son.n.01 ;
   :att "LIEVE" ;
   :tgt t00343:p3 .
 
-t00343:s1 a t:weeping_wllow.n.01 .
+t00343:s1 a :Weeping_wllow.n.01 .
 
-t00343:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00343:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00343.jpg" ;
-  dcterms:date "2019-10-19T14:01:45"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:01:45"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7158 ;

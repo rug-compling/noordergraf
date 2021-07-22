@@ -1,36 +1,36 @@
 @prefix t01052: <https://noordergraf.rug.nl/tomb/t01052#> .
 
-tomb:t01052 a t:tombstone.n.01 ;
+tomb:t01052 a :Tomb ;
   :image t01052:im1 ;
   :site site:gr9971EBulrum ;
   :ent t01052:p1 ;
   :quo "ZIJNDE DE EERSTE, DIE OP DEZE BEGRAAFPLAATS IS TER AARDE BESTELD"@nld .
 
-t01052:c1 a t:village.n.02 ;
+t01052:c1 a :Village.n.02 ;
   :place place:Weener2813433 ;
   :name "WEENER" .
 
-t01052:c2 a t:village.n.02 ;
+t01052:c2 a :Village.n.02 ;
   :place place:Ulrum2745944 ;
   :name "ULRUM" .
 
-t01052:p1 a t:male.n.02 ;
+t01052:p1 a :Male ;
   :dob "1815-11-15" ;
   :dod "1905-04-21" ;
   :nam "WUBBERTUS KRÖEGER" ;
   :pob t01052:c1 ;
   :pod t01052:c2 .
 
-t01052:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01052:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01052.jpg" ;
-  dcterms:date "2020-05-02T16:44:41"^^xsd:dateTime ;
+  dc:date "2020-05-02T16:44:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3602 ;

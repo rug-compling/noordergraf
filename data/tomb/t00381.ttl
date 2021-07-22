@@ -1,6 +1,6 @@
 @prefix t00381: <https://noordergraf.rug.nl/tomb/t00381#> .
 
-tomb:t00381 a t:tombstone.n.01 ;
+tomb:t00381 a :Tomb ;
   :image t00381:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00381:p1 ,
@@ -8,34 +8,34 @@ tomb:t00381 a t:tombstone.n.01 ;
   :quo "DAN GA IK OP TOT GODS ALTAREN" ;
   :sym t00381:s1 .
 
-t00381:p1 a t:female.n.02 ;
+t00381:p1 a :Female ;
   :dob "1896-10-31" ;
   :dod "1971-05-26" ;
   :nam "MAAIKE MOSSELMAN-PIEBENGA" .
 
-t00381:p2 a t:male.n.02 ;
+t00381:p2 a :Male ;
   :dob "1901-11-25" ;
   :dod "1974-08-07" ;
   :nam "JAN MOSSELMAN" .
 
-t00381:s1 a t:composite.n.01 ;
+t00381:s1 a :Composite.n.01 ;
   :prt t00381:s2 ,
        t00381:s3 .
 
-t00381:s2 a t:frond.n.01 .
+t00381:s2 a :Frond.n.01 .
 
-t00381:s3 a t:frond.n.01 .
+t00381:s3 a :Frond.n.01 .
 
-t00381:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00381:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00381.jpg" ;
-  dcterms:date "2019-10-26T15:07:28"^^xsd:dateTime ;
+  dc:date "2019-10-26T15:07:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2519 ;

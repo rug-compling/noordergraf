@@ -1,6 +1,6 @@
 @prefix t00163: <https://noordergraf.rug.nl/tomb/t00163#> .
 
-tomb:t00163 a t:tombstone.n.01 ;
+tomb:t00163 a :Tomb ;
   :image t00163:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00163:p1 ,
@@ -8,46 +8,46 @@ tomb:t00163 a t:tombstone.n.01 ;
        t00163:p3 ;
   :sym t00163:s1 .
 
-t00163:p1 a t:female.n.02 ;
+t00163:p1 a :Female ;
   :dob "1884-06-28" ;
   :dod "1942-09-23" ;
   :nam "GRIETJE SPIES" ;
   :rol t00163:r1 .
 
-t00163:p2 a t:male.n.02 ;
+t00163:p2 a :Male ;
   :dob "1896-03-01" ;
   :dod "1965-10-24" ;
   :nam "HENDERIKUS SPIES" ;
   :rol t00163:r2 ,
        t00163:r3 .
 
-t00163:p3 a t:female.n.02 ;
+t00163:p3 a :Female ;
   :dob "1897-02-21" ;
   :dod "1978-06-07" ;
   :nam "ROELFKE HEEMSTRA" .
 
-t00163:r1 a t:sister.n.01 ;
+t00163:r1 a :Sister.n.01 ;
   :tgt t00163:p2 .
 
-t00163:r2 a t:husband.n.01 ;
+t00163:r2 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00163:p3 .
 
-t00163:r3 a t:spouse.n.01 ;
+t00163:r3 a :Spouse.n.01 ;
   :tgt t00163:p3 .
 
-t00163:s1 a t:frond.n.01 .
+t00163:s1 a :Frond.n.01 .
 
-t00163:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00163:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00163.jpg" ;
-  dcterms:date "2019-10-04T10:58:14"^^xsd:dateTime ;
+  dc:date "2019-10-04T10:58:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2055 ;

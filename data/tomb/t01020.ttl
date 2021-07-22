@@ -1,17 +1,17 @@
 @prefix t01020: <https://noordergraf.rug.nl/tomb/t01020#> .
 
-tomb:t01020 a t:tombstone.n.01 ;
+tomb:t01020 a :Tomb ;
   :image t01020:im1 ;
   :site site:gr9752CMharen ;
   :ent t01020:p1 ,
        t01020:p3 ;
   :quo "RUST ZACHT"@nld .
 
-t01020:o1 a t:navigator.n.01 ;
+t01020:o1 a :Navigator.n.01 ;
   :hco "04230" ;
   :thm t01020:p2 .
 
-t01020:p1 a t:male.n.02 ;
+t01020:p1 a :Male ;
   :dob "1921-08-18" ;
   :dod "1954-12-09" ;
   :nam "JANTIENES GERDING" ;
@@ -21,30 +21,30 @@ t01020:p1 a t:male.n.02 ;
        t01020:r3 ,
        t01020:r4 .
 
-t01020:p2 a t:ship.n.01 ;
+t01020:p2 a :Ship.n.01 ;
   :nam "ARIËL" .
 
-t01020:p3 a t:family.n.04 ;
+t01020:p3 a :Family.n.04 ;
   :nam "GERDING" .
 
-t01020:r1 a t:son.n.01 .
+t01020:r1 a :Son.n.01 .
 
-t01020:r2 a t:brother.n.01 .
+t01020:r2 a :Brother.n.01 .
 
-t01020:r3 a t:brother-in-law.n.01 .
+t01020:r3 a :Brother-in-law.n.01 .
 
-t01020:r4 a t:uncle.n.01 .
+t01020:r4 a :Uncle.n.01 .
 
-t01020:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01020:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01020.jpg" ;
-  dcterms:date "2020-04-12T17:30:04"^^xsd:dateTime ;
+  dc:date "2020-04-12T17:30:04"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1624 ;

@@ -1,21 +1,21 @@
 @prefix t00263: <https://noordergraf.rug.nl/tomb/t00263#> .
 
-tomb:t00263 a t:tombstone.n.01 ;
+tomb:t00263 a :Tomb ;
   :image t00263:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00263:p1 ,
        t00263:p2 ;
   :sym t00263:s1 .
 
-t00263:c1 a t:city.n.01 ;
+t00263:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00263:c2 a t:town.n.01 ;
+t00263:c2 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00263:p1 a t:male.n.02 ;
+t00263:p1 a :Male ;
   :dob "1858-10-28" ;
   :dod "1927-07-09" ;
   :nam "C.K. WIERINGA" ;
@@ -23,34 +23,34 @@ t00263:p1 a t:male.n.02 ;
   :pod t00263:c1 ;
   :rol t00263:r1 .
 
-t00263:p2 a t:female.n.02 ;
+t00263:p2 a :Female ;
   :dob "1876-11-10" ;
   :dod "1960-07-25" ;
   :nam "T. SCHOKKENBROEK" ;
   :pob t00263:c2 ;
   :pod t00263:c1 .
 
-t00263:r1 a t:spouse.n.01 ;
+t00263:r1 a :Spouse.n.01 ;
   :tgt t00263:p2 .
 
-t00263:s1 a t:composite.n.01 ;
+t00263:s1 a :Composite.n.01 ;
   :prt t00263:s2 ,
        t00263:s3 .
 
-t00263:s2 a t:frond.n.01 .
+t00263:s2 a :Frond.n.01 .
 
-t00263:s3 a t:ribbon.n.01 .
+t00263:s3 a :Ribbon.n.01 .
 
-t00263:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00263:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00263.jpg" ;
-  dcterms:date "2019-10-13T14:15:53"^^xsd:dateTime ;
+  dc:date "2019-10-13T14:15:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1901 ;

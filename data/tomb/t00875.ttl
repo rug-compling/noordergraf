@@ -1,6 +1,6 @@
 @prefix t00875: <https://noordergraf.rug.nl/tomb/t00875#> .
 
-tomb:t00875 a t:tombstone.n.01 ;
+tomb:t00875 a :Tomb ;
   :image t00875:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00875:p1 ,
@@ -8,36 +8,36 @@ tomb:t00875 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00875:s1 .
 
-t00875:a1 a t:weeping.a.02 .
+t00875:a1 a :Weeping.a.02 .
 
-t00875:p1 a t:female.n.02 ;
+t00875:p1 a :Female ;
   :dob "1939-07-27" ;
   :dod "1940-06-22" ;
   :nam "JANNA" ;
   :rol t00875:r1 ,
        t00875:r2 .
 
-t00875:p2 a t:family.n.04 ;
+t00875:p2 a :Family.n.04 ;
   :nam "G. TEN VOORDE" .
 
-t00875:r1 a t:daughter.n.01 ;
+t00875:r1 a :Daughter.n.01 ;
   :att "INNIG GELIEFD" .
 
-t00875:r2 a t:sister.n.01 .
+t00875:r2 a :Sister.n.01 .
 
-t00875:s1 a t:willow.n.01 ;
+t00875:s1 a :Willow.n.01 ;
   :att t00875:a1 .
 
-t00875:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00875:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00875.jpg" ;
-  dcterms:date "2020-02-15T15:09:56"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:09:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7193 ;

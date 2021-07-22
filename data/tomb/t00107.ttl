@@ -1,47 +1,47 @@
 @prefix t00107: <https://noordergraf.rug.nl/tomb/t00107#> .
 
-tomb:t00107 a t:tombstone.n.01 ;
+tomb:t00107 a :Tomb ;
   :image t00107:im1 ;
   :site site:gr9752CMharen ;
   :ent t00107:p1 ,
        t00107:p2 .
 
-t00107:c1 a t:city.n.01 ;
+t00107:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00107:c2 a t:village.n.02 ;
+t00107:c2 a :Village.n.02 ;
   :place place:Scharmer2747677 ;
   :name "SCHARMER" .
 
-t00107:c3 a t:town.n.01 ;
+t00107:c3 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00107:p1 a t:male.n.02 ;
+t00107:p1 a :Male ;
   :dob "1905-07-08" ;
   :dod "1964-12-23" ;
   :nam "SIEBOLT FOCKO FOCKENS" ;
   :pob t00107:c2 ;
   :pod t00107:c3 .
 
-t00107:p2 a t:female.n.02 ;
+t00107:p2 a :Female ;
   :dob "1907-04-26" ;
   :dod "2003-10-22" ;
   :nam "ZWAANTINE TALLINE FOCKENS" ;
   :pob t00107:c2 ;
   :pod t00107:c1 .
 
-t00107:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00107:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00107.jpg" ;
-  dcterms:date "2019-09-20T17:46:22"^^xsd:dateTime ;
+  dc:date "2019-09-20T17:46:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1626 ;

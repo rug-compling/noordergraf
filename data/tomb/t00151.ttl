@@ -1,6 +1,6 @@
 @prefix t00151: <https://noordergraf.rug.nl/tomb/t00151#> .
 
-tomb:t00151 a t:tombstone.n.01 ;
+tomb:t00151 a :Tomb ;
   :image t00151:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00151:p1 ,
@@ -8,41 +8,41 @@ tomb:t00151 a t:tombstone.n.01 ;
        t00151:p3 ;
   :sym t00151:s1 .
 
-t00151:p1 a t:male.n.02 ;
+t00151:p1 a :Male ;
   :dob "1869-09-19" ;
   :dod "1941-02-10" ;
   :nam "HARM LUIKEN" ;
   :rol t00151:r1 ,
        t00151:r2 .
 
-t00151:p2 a t:female.n.02 ;
+t00151:p2 a :Female ;
   :dob "1866-01-16" ;
   :dod "1952-01-08" ;
   :nam "AALTJE WOLTERS" .
 
-t00151:p3 a t:female.n.02 ;
+t00151:p3 a :Female ;
   :dob "1899-11-30" ;
   :dod "1969-09-21" ;
   :nam "KORNELIA LUIKEN" .
 
-t00151:r1 a t:father.n.01 .
+t00151:r1 a :Father.n.01 .
 
-t00151:r2 a t:husband.n.01 ;
+t00151:r2 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00151:p2 .
 
-t00151:s1 a t:frond.n.01 .
+t00151:s1 a :Frond.n.01 .
 
-t00151:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00151:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00151.jpg" ;
-  dcterms:date "2019-10-02T10:24:07"^^xsd:dateTime ;
+  dc:date "2019-10-02T10:24:07"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2063 ;

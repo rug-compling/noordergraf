@@ -1,6 +1,6 @@
 @prefix t00414: <https://noordergraf.rug.nl/tomb/t00414#> .
 
-tomb:t00414 a t:tombstone.n.01 ;
+tomb:t00414 a :Tomb ;
   :image t00414:im1 ;
   :site site:dr9481CGvries ;
   :ent t00414:p1 ,
@@ -8,23 +8,23 @@ tomb:t00414 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :sym t00414:s1 .
 
-t00414:c1 a t:village.n.02 ;
+t00414:c1 a :Village.n.02 ;
   :place place:Glimmen2755495 ;
   :name "GLIMMEN" .
 
-t00414:c2 a t:city.n.01 ;
+t00414:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00414:c3 a t:village.n.02 ;
+t00414:c3 a :Village.n.02 ;
   :place place:Zeyen2743985 ;
   :name "ZEIJEN" .
 
-t00414:c4 a t:village.n.02 ;
+t00414:c4 a :Village.n.02 ;
   :place place:Tynaarlo2746038 ;
   :name "TYNAARLO" .
 
-t00414:p1 a t:male.n.02 ;
+t00414:p1 a :Male ;
   :dob "1870-10-08" ;
   :dod "1954-03-19" ;
   :nam "GEERT THIJS" ;
@@ -33,7 +33,7 @@ t00414:p1 a t:male.n.02 ;
   :rol t00414:r1 ,
        t00414:r2 .
 
-t00414:p2 a t:female.n.02 ;
+t00414:p2 a :Female ;
   :dob "1879-08-24" ;
   :dod "1956-08-14" ;
   :nam "WICHERDINA PIETERS" ;
@@ -41,26 +41,26 @@ t00414:p2 a t:female.n.02 ;
   :pod t00414:c4 ;
   :rol t00414:r3 .
 
-t00414:r1 a t:spouse.n.01 ;
+t00414:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00414:p2 .
 
-t00414:r2 a t:parent.n.01 .
+t00414:r2 a :Parent.n.01 .
 
-t00414:r3 a t:parent.n.01 .
+t00414:r3 a :Parent.n.01 .
 
-t00414:s1 a t:frond.n.01 .
+t00414:s1 a :Frond.n.01 .
 
-t00414:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00414:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00414.jpg" ;
-  dcterms:date "2019-10-25T17:06:29"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:06:29"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0794 ;

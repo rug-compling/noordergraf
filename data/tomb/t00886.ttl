@@ -1,6 +1,6 @@
 @prefix t00886: <https://noordergraf.rug.nl/tomb/t00886#> .
 
-tomb:t00886 a t:tombstone.n.01 ;
+tomb:t00886 a :Tomb ;
   :image t00886:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00886:p1 ,
@@ -9,7 +9,7 @@ tomb:t00886 a t:tombstone.n.01 ;
   :sym t00886:s1 ,
        t00886:s2 .
 
-t00886:p1 a t:female.n.02 ;
+t00886:p1 a :Female ;
   :dob "1881-02-16" ;
   :dod "1957-01-16" ;
   :nam "GEERTJE DE HAAN-EMMING" ;
@@ -17,7 +17,7 @@ t00886:p1 a t:female.n.02 ;
        t00886:r2 ,
        t00886:r3 .
 
-t00886:p2 a t:male.n.02 ;
+t00886:p2 a :Male ;
   :dob "1883-08-08" ;
   :dod "1958-08-01" ;
   :nam "ROELOF DE HAAN" ;
@@ -25,36 +25,36 @@ t00886:p2 a t:male.n.02 ;
        t00886:r5 ,
        t00886:r6 .
 
-t00886:r1 a t:wife.n.01 ;
+t00886:r1 a :Wife.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00886:p2 .
 
-t00886:r2 a t:mother.n.01 .
+t00886:r2 a :Mother.n.01 .
 
-t00886:r3 a t:grandmother.n.01 .
+t00886:r3 a :Grandmother.n.01 .
 
-t00886:r4 a t:father.n.01 ;
+t00886:r4 a :Father.n.01 ;
   :att "BEHUWD" ,
        "GELIEFDE" .
 
-t00886:r5 a t:grandfather.n.01 .
+t00886:r5 a :Grandfather.n.01 .
 
-t00886:r6 a t:great_grandfather.n.01 .
+t00886:r6 a :Great_grandfather.n.01 .
 
-t00886:s1 a t:frond.n.01 .
+t00886:s1 a :Frond.n.01 .
 
-t00886:s2 a t:frond.n.01 .
+t00886:s2 a :Frond.n.01 .
 
-t00886:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00886:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00886.jpg" ;
-  dcterms:date "2020-02-15T15:01:25"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:01:25"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7197 ;

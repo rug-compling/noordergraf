@@ -1,6 +1,6 @@
 @prefix t00819: <https://noordergraf.rug.nl/tomb/t00819#> .
 
-tomb:t00819 a t:tombstone.n.01 ;
+tomb:t00819 a :Tomb ;
   :image t00819:im1 ;
   :site site:gr9741ACgroningen ;
   :ent t00819:p1 ,
@@ -11,14 +11,14 @@ tomb:t00819 a t:tombstone.n.01 ;
   :ref t00819:v1 ;
   :sym t00819:s1 .
 
-t00819:b1 a t:Revelation.n.04 ;
+t00819:b1 a :Revelation.n.04 ;
   :prt t00819:c1 .
 
-t00819:c1 a t:chapter.n.01 ;
+t00819:c1 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00819:v1 .
 
-t00819:p1 a t:female.n.02 ;
+t00819:p1 a :Female ;
   :dob "1888-06-18" ;
   :dod "1945-02-03" ;
   :nam "HIEKTJE HUIZINGA" ;
@@ -27,7 +27,7 @@ t00819:p1 a t:female.n.02 ;
        t00819:r3 ,
        t00819:r4 .
 
-t00819:p2 a t:male.n.02 ;
+t00819:p2 a :Male ;
   :dob "1884-01-17" ;
   :dod "1959-08-27" ;
   :nam "P. DIJKHUIS" ,
@@ -35,49 +35,49 @@ t00819:p2 a t:male.n.02 ;
   :rol t00819:r5 ,
        t00819:r6 .
 
-t00819:p3 a t:male.n.02 ;
+t00819:p3 a :Male ;
   :nam "T. DREXHAGE" .
 
-t00819:p4 a t:female.n.02 ;
+t00819:p4 a :Female ;
   :nam "S. OOSTERHUIS" .
 
-t00819:r1 a t:wife.n.01 ;
+t00819:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00819:p2 .
 
-t00819:r2 a t:mother.n.01 ;
+t00819:r2 a :Mother.n.01 ;
   :tgt t00819:p5 .
 
-t00819:r3 a t:spouse.n.01 ;
+t00819:r3 a :Spouse.n.01 ;
   :tgt t00819:p2 .
 
-t00819:r4 a t:spouse.n.01 ;
+t00819:r4 a :Spouse.n.01 ;
   :bef t00819:r3 ;
   :tgt t00819:p3 .
 
-t00819:r5 a t:father.n.01 ;
+t00819:r5 a :Father.n.01 ;
   :att "LIEVE" ;
   :tgt t00819:p5 .
 
-t00819:r6 a t:widower.n.01 ;
+t00819:r6 a :Widower.n.01 ;
   :bef t00819:r3 ;
   :tgt t00819:p4 .
 
-t00819:s1 a t:frond.n.01 .
+t00819:s1 a :Frond.n.01 .
 
-t00819:v1 a t:verse.n.01 ;
+t00819:v1 a :Verse.n.01 ;
   :ord 13 .
 
-t00819:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00819:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00819.jpg" ;
-  dcterms:date "2020-02-01T12:15:55"^^xsd:dateTime ;
+  dc:date "2020-02-01T12:15:55"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2304 ;

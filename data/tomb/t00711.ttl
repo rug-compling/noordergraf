@@ -1,6 +1,6 @@
 @prefix t00711: <https://noordergraf.rug.nl/tomb/t00711#> .
 
-tomb:t00711 a t:tombstone.n.01 ;
+tomb:t00711 a :Tomb ;
   :image t00711:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00711:p1 ,
@@ -8,17 +8,17 @@ tomb:t00711 a t:tombstone.n.01 ;
   :ref "FILLIPPENZEN 1:21"@nld ;
   :sym t00711:s1 .
 
-t00711:a1 a t:weeping.a.02 .
+t00711:a1 a :Weeping.a.02 .
 
-t00711:c1 a t:village.n.02 ;
+t00711:c1 a :Village.n.02 ;
   :place place:Noordbarge2749996 ;
   :name "NOORDBARGE" .
 
-t00711:c2 a t:village.n.02 ;
+t00711:c2 a :Village.n.02 ;
   :place place:Zuidbarge2743809 ;
   :name "ZUIDBARGE" .
 
-t00711:p1 a t:female.n.02 ;
+t00711:p1 a :Female ;
   :dob "1868-09-15" ;
   :dod "1941-05-18" ;
   :nam "WILLEMTJE KATOEN" ;
@@ -26,25 +26,25 @@ t00711:p1 a t:female.n.02 ;
   :pod t00711:c2 ;
   :rol t00711:r1 .
 
-t00711:p2 a t:male.n.02 ;
+t00711:p2 a :Male ;
   :nam "JOHANNES REINDERS" .
 
-t00711:r1 a t:spouse.n.01 ;
+t00711:r1 a :Spouse.n.01 ;
   :tgt t00711:p2 .
 
-t00711:s1 a t:willow.n.01 ;
+t00711:s1 a :Willow.n.01 ;
   :att t00711:a1 .
 
-t00711:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00711:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00711.jpg" ;
-  dcterms:date "2019-12-21T13:36:30"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:36:30"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7809 ;

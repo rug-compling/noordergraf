@@ -1,26 +1,26 @@
 @prefix t01089: <https://noordergraf.rug.nl/tomb/t01089#> .
 
-tomb:t01089 a t:tombstone.n.01 ;
+tomb:t01089 a :Tomb ;
   :image t01089:im1 ;
   :site site:gr9752CMharen ;
   :ent t01089:p1 ;
   :lan "NLD" .
 
-t01089:p1 a t:female.n.02 ;
+t01089:p1 a :Female ;
   :dob "XX-XX-1911" ;
   :dod "XX-XX-2011" ;
   :nam "C.J.M. VERHOEF-VALK" .
 
-t01089:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01089:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01089.jpg" ;
-  dcterms:date "2020-09-11T17:50:43"^^xsd:dateTime ;
+  dc:date "2020-09-11T17:50:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1636 ;

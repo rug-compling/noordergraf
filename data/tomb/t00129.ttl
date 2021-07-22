@@ -1,37 +1,37 @@
 @prefix t00129: <https://noordergraf.rug.nl/tomb/t00129#> .
 
-tomb:t00129 a t:tombstone.n.01 ;
+tomb:t00129 a :Tomb ;
   :image t00129:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00129:p1 ,
        t00129:p2 ;
   :sym t00129:s1 .
 
-t00129:a1 a t:weeping.a.02 .
+t00129:a1 a :Weeping.a.02 .
 
-t00129:p1 a t:male.n.02 ;
+t00129:p1 a :Male ;
   :dob "1866-01-15" ;
   :dod "1948-06-04" ;
   :nam "EDDE DREWES" .
 
-t00129:p2 a t:female.n.02 ;
+t00129:p2 a :Female ;
   :dob "1869-08-03" ;
   :dod "1953-12-01" ;
   :nam "CHRISTINE WILLEMINA FELLINGA" .
 
-t00129:s1 a t:willow.n.01 ;
+t00129:s1 a :Willow.n.01 ;
   :att t00129:a1 .
 
-t00129:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00129:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00129.jpg" ;
-  dcterms:date "2019-10-01T09:57:15"^^xsd:dateTime ;
+  dc:date "2019-10-01T09:57:15"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2060 ;

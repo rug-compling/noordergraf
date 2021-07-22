@@ -1,17 +1,17 @@
 @prefix t00732: <https://noordergraf.rug.nl/tomb/t00732#> .
 
-tomb:t00732 a t:tombstone.n.01 ;
+tomb:t00732 a :Tomb ;
   :image t00732:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00732:p1 ;
   :lan "NLD" ;
   :sym t00732:s1 .
 
-t00732:c1 a t:town.n.01 ;
+t00732:c1 a :Town.n.01 ;
   :place place:Emmen2756136 ;
   :name "EMMEN" .
 
-t00732:p1 a t:male.n.02 ;
+t00732:p1 a :Male ;
   :dob "1859-09-06" ;
   :dod "1942-12-02" ;
   :nam "GERRIT JAN VAN LOO" ;
@@ -19,22 +19,22 @@ t00732:p1 a t:male.n.02 ;
   :pod t00732:c1 ;
   :rol t00732:r1 .
 
-t00732:r1 a t:brother.n.01 ;
+t00732:r1 a :Brother.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00732:p3 .
 
-t00732:s1 a t:entity.n.01 .
+t00732:s1 a :Entity.n.01 .
 
-t00732:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00732:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00732.jpg" ;
-  dcterms:date "2019-12-21T13:09:37"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:09:37"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7823 ;

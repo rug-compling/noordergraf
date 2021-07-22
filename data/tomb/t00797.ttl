@@ -1,30 +1,30 @@
 @prefix t00797: <https://noordergraf.rug.nl/tomb/t00797#> .
 
-tomb:t00797 a t:tombstone.n.01 ;
+tomb:t00797 a :Tomb ;
   :image t00797:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00797:p1 ;
   :lan "NLD" .
 
-t00797:c1 a t:city.n.01 ;
+t00797:c1 a :City.n.01 ;
   :place place:Haarlem2755003 ;
   :name "HAARLEM" .
 
-t00797:p1 a t:male.n.02 ;
+t00797:p1 a :Male ;
   :dod "1945-04-20" ;
   :nam "JACOBUS HUBERTES TEEUWEN" ;
   :pob t00797:c1 .
 
-t00797:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00797:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00797.jpg" ;
-  dcterms:date "2020-01-18T12:57:25"^^xsd:dateTime ;
+  dc:date "2020-01-18T12:57:25"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2772 ;

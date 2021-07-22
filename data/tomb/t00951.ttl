@@ -1,29 +1,29 @@
 @prefix t00951: <https://noordergraf.rug.nl/tomb/t00951#> .
 
-tomb:t00951 a t:tombstone.n.01 ;
+tomb:t00951 a :Tomb ;
   :image t00951:im1 ;
   :site site:gr9479TNnoordlaren ;
   :ent t00951:p1 ;
   :lan "NLD" ;
   :sym t00951:s1 .
 
-t00951:p1 a t:male.n.02 ;
+t00951:p1 a :Male ;
   :dob "1923-09-23" ;
   :dod "1990-08-08" ;
   :nam "KOENE VEGTER" .
 
-t00951:s1 a t:snail.n.01 .
+t00951:s1 a :Snail.n.01 .
 
-t00951:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00951:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00951.jpg" ;
-  dcterms:date "2020-03-25T09:29:46"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:29:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1202 ;

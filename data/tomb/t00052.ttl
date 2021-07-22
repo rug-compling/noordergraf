@@ -1,47 +1,47 @@
 @prefix t00052: <https://noordergraf.rug.nl/tomb/t00052#> .
 
-tomb:t00052 a t:tombstone.n.01 ;
+tomb:t00052 a :Tomb ;
   :image t00052:im1 ;
   :site site:gr9752CMharen ;
   :ent t00052:p1 ,
        t00052:p2 .
 
-t00052:c1 a t:city.n.01 ;
+t00052:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00052:c2 a t:town.n.01 ;
+t00052:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00052:c3 a t:village.n.02 ;
+t00052:c3 a :Village.n.02 ;
   :place place:Oldehove2749660 ;
   :name "OLDEHOVE" .
 
-t00052:p1 a t:male.n.02 ;
+t00052:p1 a :Male ;
   :dob "1878-01-01" ;
   :dod "1949-07-26" ;
   :nam "GEERT BODDE FOLMER" ;
   :pob t00052:c1 ;
   :pod t00052:c2 .
 
-t00052:p2 a t:female.n.02 ;
+t00052:p2 a :Female ;
   :dob "1860-01-01" ;
   :dod "1970-07-02" ;
   :nam "ANTJE ZIJLSTRA" ;
   :pob t00052:c3 ;
   :pod t00052:c1 .
 
-t00052:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00052:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00052.jpg" ;
-  dcterms:date "2019-09-27T17:42:26"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:42:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1630 ;

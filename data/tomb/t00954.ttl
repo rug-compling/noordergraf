@@ -1,32 +1,32 @@
 @prefix t00954: <https://noordergraf.rug.nl/tomb/t00954#> .
 
-tomb:t00954 a t:tombstone.n.01 ;
+tomb:t00954 a :Tomb ;
   :image t00954:im1 ;
   :site site:gr9479TNnoordlaren ;
   :ent t00954:p1 ;
   :lan "NLD" .
 
-t00954:c1 a t:village.n.02 ;
+t00954:c1 a :Village.n.02 ;
   :place place:Noordlaren2749857 ;
   :name "NOORDLAREN" .
 
-t00954:p1 a t:male.n.02 ;
+t00954:p1 a :Male ;
   :dob "1878-11-06" ;
   :dod "1955-01-08" ;
   :nam "ROELOF HENDRIK VOS" ;
   :pob t00954:c1 ;
   :pod t00954:c1 .
 
-t00954:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00954:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00954.jpg" ;
-  dcterms:date "2020-03-25T09:24:44"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:24:44"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1203 ;

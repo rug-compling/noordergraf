@@ -1,26 +1,26 @@
 @prefix t00374: <https://noordergraf.rug.nl/tomb/t00374#> .
 
-tomb:t00374 a t:tombstone.n.01 ;
+tomb:t00374 a :Tomb ;
   :image t00374:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00374:p1 ;
   :sym t00374:s1 .
 
-t00374:p1 a t:family.n.04 ;
+t00374:p1 a :Family.n.04 ;
   :nam "DE VRIES-VAN DER LOEFF" .
 
-t00374:s1 a t:butterfly.n.01 .
+t00374:s1 a :Butterfly.n.01 .
 
-t00374:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00374:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00374.jpg" ;
-  dcterms:date "2019-10-27T10:38:51"^^xsd:dateTime ;
+  dc:date "2019-10-27T10:38:51"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1909 ;

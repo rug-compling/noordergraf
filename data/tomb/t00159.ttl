@@ -1,49 +1,49 @@
 @prefix t00159: <https://noordergraf.rug.nl/tomb/t00159#> .
 
-tomb:t00159 a t:tombstone.n.01 ;
+tomb:t00159 a :Tomb ;
   :image t00159:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00159:p1 ,
        t00159:p2 ;
   :quo "HIER RUSTE IN VREDE" .
 
-t00159:c1 a t:more.r.01 ;
+t00159:c1 a :More.r.01 ;
   :op1 t00159:m1 ;
   :op2 t00159:m2 .
 
-t00159:m1 a t:measure.n.02 .
+t00159:m1 a :Measure.n.02 .
 
-t00159:m2 a t:measure.n.02 ;
+t00159:m2 a :Measure.n.02 ;
   :mem t00159:u1 ;
   :qua 40 .
 
-t00159:p1 a t:female.n.02 ;
+t00159:p1 a :Female ;
   :dob "1875-04-10" ;
   :dod "1941-04-26" ;
   :nam "WIEBEGIEN BROUWER" ;
   :rol t00159:r2 .
 
-t00159:p2 a t:male.n.02 ;
+t00159:p2 a :Male ;
   :dob "1876-10-24" ;
   :dod "1961-12-29" ;
   :nam "J. SMIDT" .
 
-t00159:r2 a t:spouse.n.01 ;
+t00159:r2 a :Spouse.n.01 ;
   :dur t00159:m1 ;
   :tgt t00159:p2 .
 
-t00159:u1 a t:year.n.01 .
+t00159:u1 a :Year.n.01 .
 
-t00159:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00159:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00159.jpg" ;
-  dcterms:date "2019-10-04T10:55:49"^^xsd:dateTime ;
+  dc:date "2019-10-04T10:55:49"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2060 ;

@@ -1,50 +1,50 @@
 @prefix t00324: <https://noordergraf.rug.nl/tomb/t00324#> .
 
-tomb:t00324 a t:tombstone.n.01 ;
+tomb:t00324 a :Tomb ;
   :image t00324:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00324:p1 ,
        t00324:p2 ;
   :sym t00324:s1 .
 
-t00324:a1 a t:weeping.a.02 .
+t00324:a1 a :Weeping.a.02 .
 
-t00324:p1 a t:male.n.02 ;
+t00324:p1 a :Male ;
   :dob "1858-09-27" ;
   :dod "1927-04-28" ;
   :nam "S. ESHUIS" ;
   :rol t00324:r1 ,
        t00324:r2 .
 
-t00324:p2 a t:female.n.02 ;
+t00324:p2 a :Female ;
   :dob "1860-04-18" ;
   :dod "1950-07-27" ;
   :nam "M. VAN LEEUWEN" ;
   :rol t00324:r3 .
 
-t00324:r1 a t:husband.n.01 ;
+t00324:r1 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00324:p2 .
 
-t00324:r2 a t:spouse.n.01 ;
+t00324:r2 a :Spouse.n.01 ;
   :tgt t00324:p2 .
 
-t00324:r3 a t:mother.n.01 ;
+t00324:r3 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00324:s1 a t:willow.n.01 ;
+t00324:s1 a :Willow.n.01 ;
   :att t00324:a1 .
 
-t00324:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00324:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00324.jpg" ;
-  dcterms:date "2019-10-19T14:38:42"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:38:42"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7152 ;

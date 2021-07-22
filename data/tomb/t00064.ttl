@@ -1,48 +1,48 @@
 @prefix t00064: <https://noordergraf.rug.nl/tomb/t00064#> .
 
-tomb:t00064 a t:tombstone.n.01 ;
+tomb:t00064 a :Tomb ;
   :image t00064:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00064:p1 ,
        t00064:p2 ;
   :sym t00064:s1 .
 
-t00064:p1 a t:female.n.02 ;
+t00064:p1 a :Female ;
   :dob "1878-07-12" ;
   :dod "1938-09-30" ;
   :nam "AALTJE TOLNER" ;
   :rol t00064:r1 ,
        t00064:r2 .
 
-t00064:p2 a t:male.n.02 ;
+t00064:p2 a :Male ;
   :dob "1880-03-23" ;
   :dod "1941-10-22" ;
   :nam "JAN MEKKERING" .
 
-t00064:r1 a t:wife.n.01 ;
+t00064:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00064:p2 .
 
-t00064:r2 a t:mother.n.01 .
+t00064:r2 a :Mother.n.01 .
 
-t00064:s1 a t:composite.n.01 ;
+t00064:s1 a :Composite.n.01 ;
   :prt t00064:s2 ,
        t00064:s3 .
 
-t00064:s2 a t:frond.n.01 .
+t00064:s2 a :Frond.n.01 .
 
-t00064:s3 a t:ribbon.n.01 .
+t00064:s3 a :Ribbon.n.01 .
 
-t00064:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00064:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00064.jpg" ;
-  dcterms:date "2019-09-25T16:14:26"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:14:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1914 ;

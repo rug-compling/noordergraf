@@ -1,6 +1,6 @@
 @prefix t00632: <https://noordergraf.rug.nl/tomb/t00632#> .
 
-tomb:t00632 a t:tombstone.n.01 ;
+tomb:t00632 a :Tomb ;
   :image t00632:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00632:p1 ,
@@ -11,36 +11,36 @@ tomb:t00632 a t:tombstone.n.01 ;
        t00632:s3 ,
        t00632:s4 .
 
-t00632:p1 a t:male.n.02 ;
+t00632:p1 a :Male ;
   :dob "1823-08-15" ;
   :dod "1878-02-26" ;
   :nam "ENNO BRONSEMA" ;
   :rol t00632:r1 .
 
-t00632:p2 a t:female.n.02 ;
+t00632:p2 a :Female ;
   :nam "ELIZA MEIHUIZEN" .
 
-t00632:r1 a t:spouse.n.01 ;
+t00632:r1 a :Spouse.n.01 ;
   :tgt t00632:p2 .
 
-t00632:s1 a t:butterfly.n.01 .
+t00632:s1 a :Butterfly.n.01 .
 
-t00632:s2 a t:oak.n.02 .
+t00632:s2 a :Oak.n.02 .
 
-t00632:s3 a t:oak.n.02 .
+t00632:s3 a :Oak.n.02 .
 
-t00632:s4 a t:ribbon.n.01 .
+t00632:s4 a :Ribbon.n.01 .
 
-t00632:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00632:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00632.jpg" ;
-  dcterms:date "2019-11-23T09:56:18"^^xsd:dateTime ;
+  dc:date "2019-11-23T09:56:18"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1640 ;

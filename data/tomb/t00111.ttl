@@ -1,41 +1,41 @@
 @prefix t00111: <https://noordergraf.rug.nl/tomb/t00111#> .
 
-tomb:t00111 a t:tombstone.n.01 ;
+tomb:t00111 a :Tomb ;
   :image t00111:im1 ;
   :site site:gr9752CMharen ;
   :ent t00111:p1 ;
   :quo "RUST ZACHT" ;
   :sym t00111:s1 .
 
-t00111:p1 a t:male.n.02 ;
+t00111:p1 a :Male ;
   :dob "1922-06-12" ;
   :dod "1997-04-19" ;
   :nam "BEREND NIJDAM" ;
   :rol t00111:r1 ,
        t00111:r2 .
 
-t00111:r1 a t:father.n.01 .
+t00111:r1 a :Father.n.01 .
 
-t00111:r2 a t:grandfather.n.01 .
+t00111:r2 a :Grandfather.n.01 .
 
-t00111:s1 a t:composite.n.01 ;
+t00111:s1 a :Composite.n.01 ;
   :prt t00111:s2 ,
        t00111:s3 .
 
-t00111:s2 a t:frond.n.01 .
+t00111:s2 a :Frond.n.01 .
 
-t00111:s3 a t:ribbon.n.01 .
+t00111:s3 a :Ribbon.n.01 .
 
-t00111:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00111:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00111.jpg" ;
-  dcterms:date "2019-09-20T18:04:08"^^xsd:dateTime ;
+  dc:date "2019-09-20T18:04:08"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1635 ;

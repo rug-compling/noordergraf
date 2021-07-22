@@ -1,6 +1,6 @@
 @prefix t00647: <https://noordergraf.rug.nl/tomb/t00647#> .
 
-tomb:t00647 a t:tombstone.n.01 ;
+tomb:t00647 a :Tomb ;
   :image t00647:im1 ;
   :site site:gr9723EJgroningen ;
   :ent t00647:p1 ,
@@ -10,62 +10,62 @@ tomb:t00647 a t:tombstone.n.01 ;
   :sym t00647:s1 ,
        t00647:s2 .
 
-t00647:a1 a t:weeping.a.02 .
+t00647:a1 a :Weeping.a.02 .
 
-t00647:b1 a t:John.n.05 ;
+t00647:b1 a :John.n.05 ;
   :prt t00647:c4 .
 
-t00647:c1 a t:village.n.02 ;
+t00647:c1 a :Village.n.02 ;
   :place place:Harkstede2754819 ;
   :name "HARKSTEDE" .
 
-t00647:c2 a t:village.n.02 ;
+t00647:c2 a :Village.n.02 ;
   :place place:Foxhol2755853 ;
   :name "FOXHOL" .
 
-t00647:c3 a t:village.n.02 ;
+t00647:c3 a :Village.n.02 ;
   :place place:Engelbert2756097 ;
   :name "ENGELBERT" .
 
-t00647:c4 a t:chapter.n.01 ;
+t00647:c4 a :Chapter.n.01 ;
   :ord 11 ;
   :prt t00647:v1 .
 
-t00647:p1 a t:female.n.02 ;
+t00647:p1 a :Female ;
   :dob "1873-08-30" ;
   :dod "1932-05-12" ;
   :nam "HENDERIKA LUITJES" ;
   :pod t00647:c1 ;
   :rol t00647:r1 .
 
-t00647:p2 a t:male.n.02 ;
+t00647:p2 a :Male ;
   :dob "1865-05-07" ;
   :dod "1947-10-12" ;
   :nam "KORNELIS BORG" ;
   :pob t00647:c2 ;
   :pod t00647:c3 .
 
-t00647:r1 a t:spouse.n.01 ;
+t00647:r1 a :Spouse.n.01 ;
   :tgt t00647:p2 .
 
-t00647:s1 a t:willow.n.01 ;
+t00647:s1 a :Willow.n.01 ;
   :att t00647:a1 .
 
-t00647:s2 a t:house.n.01 .
+t00647:s2 a :House.n.01 .
 
-t00647:v1 a t:verse.n.01 ;
+t00647:v1 a :Verse.n.01 ;
   :ord 25 .
 
-t00647:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00647:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00647.jpg" ;
-  dcterms:date "2019-12-08T11:18:14"^^xsd:dateTime ;
+  dc:date "2019-12-08T11:18:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2089 ;

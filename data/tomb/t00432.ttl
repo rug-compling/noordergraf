@@ -1,17 +1,17 @@
 @prefix t00432: <https://noordergraf.rug.nl/tomb/t00432#> .
 
-tomb:t00432 a t:tombstone.n.01 ;
+tomb:t00432 a :Tomb ;
   :image t00432:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00432:p1 ,
        t00432:p2 ;
   :sym t00432:s1 .
 
-t00432:c1 a t:island.n.01 ;
+t00432:c1 a :Island.n.01 ;
   :place place:Schiermonnikoog2747591 ;
   :name "SCHIERMONNIKOOG" .
 
-t00432:p1 a t:male.n.02 ;
+t00432:p1 a :Male ;
   :dob "1850-06-26" ;
   :dod "1911-08-16" ;
   :nam "JAN LIVIUS VISSER" ;
@@ -19,7 +19,7 @@ t00432:p1 a t:male.n.02 ;
   :pod t00432:c1 ;
   :rol t00432:r1 .
 
-t00432:p2 a t:female.n.02 ;
+t00432:p2 a :Female ;
   :dob "1871-07-13" ;
   :dod "1953-01-24" ;
   :nam "TRIJNTJE WIERSMA" ;
@@ -27,32 +27,32 @@ t00432:p2 a t:female.n.02 ;
   :pod t00432:c1 ;
   :rol t00432:r2 .
 
-t00432:r1 a t:parent.n.01 ;
+t00432:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00432:p3 .
 
-t00432:r2 a t:parent.n.01 ;
+t00432:r2 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00432:p3 .
 
-t00432:s1 a t:composite.n.01 ;
+t00432:s1 a :Composite.n.01 ;
   :prt t00432:s2 ,
        t00432:s5 .
 
-t00432:s2 a t:frond.n.01 .
+t00432:s2 a :Frond.n.01 .
 
-t00432:s5 a t:ribbon.n.01 .
+t00432:s5 a :Ribbon.n.01 .
 
-t00432:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00432:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00432.jpg" ;
-  dcterms:date "2019-11-02T11:42:44"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:42:44"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4791 ;

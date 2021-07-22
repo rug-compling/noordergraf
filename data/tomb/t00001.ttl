@@ -1,6 +1,6 @@
 @prefix t00001: <https://noordergraf.rug.nl/tomb/t00001#> .
 
-tomb:t00001 a t:tombstone.n.01 ;
+tomb:t00001 a :Tomb ;
   :image t00001:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00001:g1 ,
@@ -8,25 +8,25 @@ tomb:t00001 a t:tombstone.n.01 ;
        t00001:p2 ;
   :sym t00001:s1 .
 
-t00001:g1 a t:group.n.01 ;
+t00001:g1 a :Group.n.01 ;
   :rol t00001:r1 .
 
-t00001:m1 a t:measure.n.02 ;
+t00001:m1 a :Measure.n.02 ;
   :mem t00001:u1 ;
   :qua 27 .
 
-t00001:m2 a t:measure.n.02 ;
+t00001:m2 a :Measure.n.02 ;
   :mem t00001:u2 ;
   :qua 61 .
 
-t00001:p1 a t:male.n.02 ;
+t00001:p1 a :Male ;
   :age t00001:m1 ;
   :dod "1933-10-12" ;
   :nam "KLAAS SWART" ;
   :rol t00001:r2 ,
        t00001:r3 .
 
-t00001:p2 a t:female.n.02 ;
+t00001:p2 a :Female ;
   :age t00001:m2 ;
   :dod "1936-02-13" ;
   :nam "ANNECHIEN MULDER" ;
@@ -34,42 +34,42 @@ t00001:p2 a t:female.n.02 ;
        t00001:r5 ,
        t00001:r6 .
 
-t00001:r1 a t:commemorator.n.01 ;
+t00001:r1 a :Commemorator.n.01 ;
   :tgt t00001:p1 .
 
-t00001:r2 a t:son.n.01 ;
+t00001:r2 a :Son.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00001:g1 .
 
-t00001:r3 a t:brother.n.01 ;
+t00001:r3 a :Brother.n.01 ;
   :tgt t00001:g1 .
 
-t00001:r4 a t:wife.n.01 ;
+t00001:r4 a :Wife.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00001:g1 .
 
-t00001:r5 a t:mother.n.01 ;
+t00001:r5 a :Mother.n.01 ;
   :tgt t00001:g1 .
 
-t00001:r6 a t:grandmother.n.01 ;
+t00001:r6 a :Grandmother.n.01 ;
   :tgt t00001:g1 .
 
-t00001:s1 a t:frond.n.01 .
+t00001:s1 a :Frond.n.01 .
 
-t00001:u1 a t:year.n.01 .
+t00001:u1 a :Year.n.01 .
 
-t00001:u2 a t:year.n.01 .
+t00001:u2 a :Year.n.01 .
 
-t00001:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00001:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00001.jpg" ;
-  dcterms:date "2019-09-25T16:57:03"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:57:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1900 ;

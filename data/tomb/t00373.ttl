@@ -1,43 +1,43 @@
 @prefix t00373: <https://noordergraf.rug.nl/tomb/t00373#> .
 
-tomb:t00373 a t:tombstone.n.01 ;
+tomb:t00373 a :Tomb ;
   :image t00373:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00373:p1 ,
        t00373:p2 ;
   :sym t00373:s1 .
 
-t00373:p1 a t:female.n.02 ;
+t00373:p1 a :Female ;
   :dob "1856-12-28" ;
   :dod "1933-04-02" ;
   :nam "MARIA HELENA CRAMER VON BAUMGARTEN" ;
   :rol t00373:r1 .
 
-t00373:p2 a t:male.n.02 ;
+t00373:p2 a :Male ;
   :nam "W. OKKEN" ;
   :pfx "DS" .
 
-t00373:r1 a t:spouse.n.01 ;
+t00373:r1 a :Spouse.n.01 ;
   :tgt t00373:p2 .
 
-t00373:s1 a t:composite.n.01 ;
+t00373:s1 a :Composite.n.01 ;
   :prt t00373:s2 ,
        t00373:s3 .
 
-t00373:s2 a t:frond.n.01 .
+t00373:s2 a :Frond.n.01 .
 
-t00373:s3 a t:ribbon.n.01 .
+t00373:s3 a :Ribbon.n.01 .
 
-t00373:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00373:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00373.jpg" ;
-  dcterms:date "2019-10-27T10:39:40"^^xsd:dateTime ;
+  dc:date "2019-10-27T10:39:40"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1907 ;

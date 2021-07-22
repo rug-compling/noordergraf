@@ -1,6 +1,6 @@
 @prefix t00997: <https://noordergraf.rug.nl/tomb/t00997#> .
 
-tomb:t00997 a t:tombstone.n.01 ;
+tomb:t00997 a :Tomb ;
   :image t00997:im1 ;
   :site site:gr9734ATgroningen ;
   :ent t00997:g1 ,
@@ -10,18 +10,18 @@ tomb:t00997 a t:tombstone.n.01 ;
   :sym t00997:s1 ,
        t00997:s2 .
 
-t00997:c1 a t:village.n.02 ;
+t00997:c1 a :Village.n.02 ;
   :place place:Thesinge2746361 ;
   :name "THESINGE" .
 
-t00997:c2 a t:village.n.02 ;
+t00997:c2 a :Village.n.02 ;
   :place place:Noorddijk2749981 ;
   :name "NOORDDIJK" .
 
-t00997:g1 a t:group.n.01 ;
+t00997:g1 a :Group.n.01 ;
   :mem t00997:p3 .
 
-t00997:p1 a t:male.n.02 ;
+t00997:p1 a :Male ;
   :dob "1807-03-08" ;
   :dod "1894-01-19" ;
   :nam "HEIKE GEERTS WIERENGA" ;
@@ -30,36 +30,36 @@ t00997:p1 a t:male.n.02 ;
   :rol t00997:r1 ,
        t00997:r2 .
 
-t00997:p2 a t:female.n.02 ;
+t00997:p2 a :Female ;
   :nam "IMKE JANS NIEHOF" .
 
-t00997:p3 a t:person.n.01 ;
+t00997:p3 a :Person ;
   :rol t00997:r3 .
 
-t00997:r1 a t:widower.n.01 ;
+t00997:r1 a :Widower.n.01 ;
   :beg "28-01-1882" ;
   :tgt t00997:p2 .
 
-t00997:r2 a t:father.n.01 ;
+t00997:r2 a :Father.n.01 ;
   :tgt t00997:g1 .
 
-t00997:r3 a t:child.n.02 ;
+t00997:r3 a :Child.n.02 ;
   :tgt t00997:p1 .
 
-t00997:s1 a t:frond.n.01 .
+t00997:s1 a :Frond.n.01 .
 
-t00997:s2 a t:frond.n.01 .
+t00997:s2 a :Frond.n.01 .
 
-t00997:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00997:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00997.jpg" ;
-  dcterms:date "2020-04-05T12:18:38"^^xsd:dateTime ;
+  dc:date "2020-04-05T12:18:38"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2442 ;

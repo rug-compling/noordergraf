@@ -1,28 +1,28 @@
 @prefix t00180: <https://noordergraf.rug.nl/tomb/t00180#> .
 
-tomb:t00180 a t:tombstone.n.01 ;
+tomb:t00180 a :Tomb ;
   :image t00180:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00180:p1 ;
   :sym t00180:s1 .
 
-t00180:p1 a t:female.n.02 ;
+t00180:p1 a :Female ;
   :dob "1872-09-25" ;
   :dod "1934-10-28" ;
   :nam "MARIA BLEEKER" .
 
-t00180:s1 a t:frond.n.01 .
+t00180:s1 a :Frond.n.01 .
 
-t00180:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00180:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00180.jpg" ;
-  dcterms:date "2019-10-05T10:21:26"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:21:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1910 ;

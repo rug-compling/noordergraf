@@ -1,30 +1,30 @@
 @prefix t01133: <https://noordergraf.rug.nl/tomb/t01133#> .
 
-tomb:t01133 a t:tombstone.n.01 ;
+tomb:t01133 a :Tomb ;
   :ent t01133:g1 ,
        t01133:p1 ,
        t01133:p2 ;
   :lan "NLD" .
 
-t01133:g1 a t:group.n.01 ;
+t01133:g1 a :Group.n.01 ;
   :mem t01133:p1 ,
        t01133:p2 ;
   :rol t01133:r1 .
 
-t01133:g2 a t:group.n.01 ;
+t01133:g2 a :Group.n.01 ;
   :rol t01133:r1 .
 
-t01133:p1 a t:female.n.02 ;
+t01133:p1 a :Female ;
   :dob "1899-11-22" ;
   :dod "1953-01-07" ;
   :nam "GERRITDINA VREEBURG" .
 
-t01133:p2 a t:male.n.02 ;
+t01133:p2 a :Male ;
   :dob "1897-06-28" ;
   :dod "1979-09-01" ;
   :nam "BEREND DE JONGE" .
 
-t01133:r1 a t:commemorator.n.01 ;
-  a t:parent.n.01 ;
+t01133:r1 a :Commemorator.n.01 ;
+  a :Parent.n.01 ;
   :tgt t01133:g2 .
 

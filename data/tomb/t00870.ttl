@@ -1,44 +1,44 @@
 @prefix t00870: <https://noordergraf.rug.nl/tomb/t00870#> .
 
-tomb:t00870 a t:tombstone.n.01 ;
+tomb:t00870 a :Tomb ;
   :image t00870:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00870:p1 ,
        t00870:p2 ;
   :quo "RUST ZACHT"@nld .
 
-t00870:c1 a t:village.n.02 ;
+t00870:c1 a :Village.n.02 ;
   :place place:Erm2756040 ;
   :name "ERM" .
 
-t00870:c2 a t:village.n.02 ;
+t00870:c2 a :Village.n.02 ;
   :place place:Sleen2747182 ;
   :name "SLEEN" .
 
-t00870:p1 a t:male.n.02 ;
+t00870:p1 a :Male ;
   :dob "1826-06-18" ;
   :dod "1900-06-05" ;
   :nam "HERMAN ROSING" ;
   :pob t00870:c1 ;
   :pod t00870:c2 .
 
-t00870:p2 a t:female.n.02 ;
+t00870:p2 a :Female ;
   :dob "1839-04-17" ;
   :dod "1906-08-28" ;
   :nam "ALIDA EVENHUIS" ;
   :pob t00870:c2 ;
   :pod t00870:c2 .
 
-t00870:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00870:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00870.jpg" ;
-  dcterms:date "2020-02-15T15:35:54"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:35:54"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7756 ;

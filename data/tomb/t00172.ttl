@@ -1,38 +1,38 @@
 @prefix t00172: <https://noordergraf.rug.nl/tomb/t00172#> .
 
-tomb:t00172 a t:tombstone.n.01 ;
+tomb:t00172 a :Tomb ;
   :image t00172:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00172:p1 .
 
-t00172:c2 a t:province.n.01 ;
+t00172:c2 a :Province.n.01 ;
   :place place:ProvincieGroningen2755249 ;
   :name "GRONINGEN" .
 
-t00172:o1 a t:director.n.01 ;
+t00172:o1 a :Director.n.01 ;
   :hco "21110" ;
   :loc t00172:c2 ;
   :org t00172:o2 .
 
-t00172:o2 a t:company.n.01 ;
+t00172:o2 a :Company.n.01 ;
   :nam "PROVINCIAAL ELECTRISCH BEDRIJF GRONINGEN" .
 
-t00172:p1 a t:male.n.02 ;
+t00172:p1 a :Male ;
   :dob "1883-05-19" ;
   :dod "1924-12-19" ;
   :nam "A.C. LOOS" ;
   :occ t00172:o1 .
 
-t00172:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00172:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00172.jpg" ;
-  dcterms:date "2019-10-05T10:43:05"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:43:05"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1904 ;

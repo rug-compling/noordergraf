@@ -1,15 +1,15 @@
 @prefix t00316: <https://noordergraf.rug.nl/tomb/t00316#> .
 
-tomb:t00316 a t:tombstone.n.01 ;
+tomb:t00316 a :Tomb ;
   :image t00316:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00316:p1 .
 
-t00316:c1 a t:town.n.01 ;
+t00316:c1 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00316:p1 a t:male.n.02 ;
+t00316:p1 a :Male ;
   :dob "1873-09-05" ;
   :dod "1903-11-26" ;
   :nam "REMMELT VAN HEES" ;
@@ -17,16 +17,16 @@ t00316:p1 a t:male.n.02 ;
   :pod t00316:c1 ;
   :sfx "JZ" .
 
-t00316:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00316:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00316.jpg" ;
-  dcterms:date "2019-10-19T14:04:49"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:04:49"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7157 ;

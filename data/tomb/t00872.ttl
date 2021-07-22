@@ -1,6 +1,6 @@
 @prefix t00872: <https://noordergraf.rug.nl/tomb/t00872#> .
 
-tomb:t00872 a t:tombstone.n.01 ;
+tomb:t00872 a :Tomb ;
   :image t00872:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00872:p1 ,
@@ -10,17 +10,17 @@ tomb:t00872 a t:tombstone.n.01 ;
        t00872:s2 ,
        t00872:s3 .
 
-t00872:a1 a t:weeping.a.02 .
+t00872:a1 a :Weeping.a.02 .
 
-t00872:c1 a t:village.n.02 ;
+t00872:c1 a :Village.n.02 ;
   :place place:Drouwenermond2756549 ;
   :name "DROUWENERMOND" .
 
-t00872:c2 a t:village.n.02 ;
+t00872:c2 a :Village.n.02 ;
   :place place:NieuwAmsterdam2750375 ;
   :name "NIEUW-AMSTERDAM" .
 
-t00872:p1 a t:male.n.02 ;
+t00872:p1 a :Male ;
   :dob "1875-08-27" ;
   :dod "1917-03-17" ;
   :nam "JAN DIK" ;
@@ -28,29 +28,29 @@ t00872:p1 a t:male.n.02 ;
   :pod t00872:c2 ;
   :rol t00872:r1 .
 
-t00872:p2 a t:female.n.02 ;
+t00872:p2 a :Female ;
   :nam "METJE GOEREE" .
 
-t00872:r1 a t:spouse.n.01 ;
+t00872:r1 a :Spouse.n.01 ;
   :tgt t00872:p2 .
 
-t00872:s1 a t:willow.n.01 ;
+t00872:s1 a :Willow.n.01 ;
   :att t00872:a1 .
 
-t00872:s2 a t:oak.n.01 .
+t00872:s2 a :Oak.n.01 .
 
-t00872:s3 a t:frond.n.01 .
+t00872:s3 a :Frond.n.01 .
 
-t00872:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00872:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00872.jpg" ;
-  dcterms:date "2020-02-15T15:11:57"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:11:57"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7193 ;

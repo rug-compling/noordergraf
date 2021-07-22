@@ -1,43 +1,43 @@
 @prefix t00102: <https://noordergraf.rug.nl/tomb/t00102#> .
 
-tomb:t00102 a t:tombstone.n.01 ;
+tomb:t00102 a :Tomb ;
   :image t00102:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00102:p1 ;
   :sym t00102:s1 .
 
-t00102:c1 a t:city.n.01 ;
+t00102:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00102:o1 a t:teacher.n.01 ;
+t00102:o1 a :Teacher.n.01 ;
   :beg "XX-XX-1882" ;
   :end "XX-XX-1922" ;
   :hco "13320" ;
   :org t00102:o2 .
 
-t00102:o2 a t:school.n.01 ;
+t00102:o2 a :School.n.01 ;
   :nam "GEMEENTELIJKE KWEEKSCHOOL VOOR ONDERWIJZERESSEN" .
 
-t00102:p1 a t:female.n.02 ;
+t00102:p1 a :Female ;
   :dob "1857-02-11" ;
   :dod "1930-03-24" ;
   :nam "MARGARETHA JANTINA BUTTINGER" ;
   :occ t00102:o1 ;
   :pod t00102:c1 .
 
-t00102:s1 a t:frond.n.01 .
+t00102:s1 a :Frond.n.01 .
 
-t00102:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00102:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00102.jpg" ;
-  dcterms:date "2019-09-21T16:08:01"^^xsd:dateTime ;
+  dc:date "2019-09-21T16:08:01"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1905 ;

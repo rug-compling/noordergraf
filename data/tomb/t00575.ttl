@@ -1,6 +1,6 @@
 @prefix t00575: <https://noordergraf.rug.nl/tomb/t00575#> .
 
-tomb:t00575 a t:tombstone.n.01 ;
+tomb:t00575 a :Tomb ;
   :image t00575:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00575:p1 ;
@@ -8,10 +8,10 @@ tomb:t00575 a t:tombstone.n.01 ;
   :quo "RUST ZACHT" ;
   :sym t00575:s1 .
 
-t00575:i1 a t:portrait.n.02 ;
+t00575:i1 a :Portrait.n.02 ;
   :thm t00575:p1 .
 
-t00575:p1 a t:male.n.02 ;
+t00575:p1 a :Male ;
   :dob "1945-04-14" ;
   :dod "1993-02-14" ;
   :nam "GEGER FREDERIK RASIDI" ;
@@ -20,27 +20,27 @@ t00575:p1 a t:male.n.02 ;
        t00575:r3 ,
        t00575:r4 .
 
-t00575:r1 a t:father.n.01 ;
+t00575:r1 a :Father.n.01 ;
   :att "LIEVE" .
 
-t00575:r2 a t:brother.n.01 .
+t00575:r2 a :Brother.n.01 .
 
-t00575:r3 a t:brother-in-law.n.01 .
+t00575:r3 a :Brother-in-law.n.01 .
 
-t00575:r4 a t:uncle.n.01 .
+t00575:r4 a :Uncle.n.01 .
 
-t00575:s1 a t:frond.n.01 .
+t00575:s1 a :Frond.n.01 .
 
-t00575:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00575:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00575.jpg" ;
-  dcterms:date "2019-11-23T10:23:00"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:23:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1648 ;

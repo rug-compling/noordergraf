@@ -1,52 +1,52 @@
 @prefix t01071: <https://noordergraf.rug.nl/tomb/t01071#> .
 
-tomb:t01071 a t:tombstone.n.01 ;
+tomb:t01071 a :Tomb ;
   :image t01071:im1 ;
   :site site:gr9752CMharen ;
   :ent t01071:p1 ,
        t01071:p2 ;
   :lan "NLD" .
 
-t01071:c1 a t:village.n.02 ;
+t01071:c1 a :Village.n.02 ;
   :place place:Vlagtwedde2745461 ;
   :name "VLAGTWEDDE" .
 
-t01071:c2 a t:town.n.01 ;
+t01071:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t01071:c3 a t:village.n.02 ;
+t01071:c3 a :Village.n.02 ;
   :place place:Finsterwolde2755905 ;
   :name "FINSTERWOLDE" .
 
-t01071:c4 a t:city.n.01 ;
+t01071:c4 a :City.n.01 ;
   :place place:Appingedam2759687 ;
   :name "APPINGEDAM" .
 
-t01071:p1 a t:person.n.01 ;
+t01071:p1 a :Person ;
   :dob "1883-04-16" ;
   :dod "1951-10-06" ;
   :nam "B. SANDERS" ;
   :pob t01071:c1 ;
   :pod t01071:c2 .
 
-t01071:p2 a t:person.n.01 ;
+t01071:p2 a :Person ;
   :dob "1885-11-25" ;
   :dod "1970-01-10" ;
   :nam "F.T. SAP" ;
   :pob t01071:c3 ;
   :pod t01071:c4 .
 
-t01071:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01071:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01071.jpg" ;
-  dcterms:date "2020-05-15T17:46:03"^^xsd:dateTime ;
+  dc:date "2020-05-15T17:46:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1624 ;

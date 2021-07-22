@@ -1,6 +1,6 @@
 @prefix t00413: <https://noordergraf.rug.nl/tomb/t00413#> .
 
-tomb:t00413 a t:tombstone.n.01 ;
+tomb:t00413 a :Tomb ;
   :image t00413:im1 ;
   :site site:dr9481CGvries ;
   :ent t00413:g1 ,
@@ -9,19 +9,19 @@ tomb:t00413 a t:tombstone.n.01 ;
        t00413:p3 ;
   :sym t00413:s1 .
 
-t00413:c1 a t:village.n.02 ;
+t00413:c1 a :Village.n.02 ;
   :place place:Smilde2747076 ;
   :name "SMILDE" .
 
-t00413:c2 a t:city.n.01 ;
+t00413:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00413:g1 a t:group.n.01 ;
+t00413:g1 a :Group.n.01 ;
   :mem t00413:p2 ,
        t00413:p3 .
 
-t00413:p1 a t:male.n.02 ;
+t00413:p1 a :Male ;
   :dob "1939-07-25" ;
   :dod "1958-09-05" ;
   :nam "FRANCISCUS BOERS" ;
@@ -30,30 +30,30 @@ t00413:p1 a t:male.n.02 ;
   :rol t00413:r1 ,
        t00413:r2 .
 
-t00413:p2 a t:male.n.02 ;
+t00413:p2 a :Male ;
   :nam "W. BOERS" .
 
-t00413:p3 a t:female.n.02 ;
+t00413:p3 a :Female ;
   :nam "A. BOERS-BODENSTAFF" .
 
-t00413:r1 a t:son.n.01 ;
+t00413:r1 a :Son.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00413:g1 .
 
-t00413:r2 a t:brother.n.01 .
+t00413:r2 a :Brother.n.01 .
 
-t00413:s1 a t:frond.n.01 .
+t00413:s1 a :Frond.n.01 .
 
-t00413:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00413:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00413.jpg" ;
-  dcterms:date "2019-10-25T17:12:25"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:12:25"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0793 ;

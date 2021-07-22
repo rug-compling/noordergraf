@@ -1,28 +1,28 @@
 @prefix t00453: <https://noordergraf.rug.nl/tomb/t00453#> .
 
-tomb:t00453 a t:tombstone.n.01 ;
+tomb:t00453 a :Tomb ;
   :image t00453:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00453:p1 ;
   :sym t00453:s1 .
 
-t00453:p1 a t:male.n.02 ;
+t00453:p1 a :Male ;
   :dob "1889-02-11" ;
   :dod "1969-02-09" ;
   :nam "GERARDUS JACOBUS VAN DER WERFF" .
 
-t00453:s1 a t:cross.n.03 .
+t00453:s1 a :Cross.n.03 .
 
-t00453:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00453:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00453.jpg" ;
-  dcterms:date "2019-11-09T15:01:35"^^xsd:dateTime ;
+  dc:date "2019-11-09T15:01:35"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2063 ;

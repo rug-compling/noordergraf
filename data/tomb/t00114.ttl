@@ -1,15 +1,15 @@
 @prefix t00114: <https://noordergraf.rug.nl/tomb/t00114#> .
 
-tomb:t00114 a t:tombstone.n.01 ;
+tomb:t00114 a :Tomb ;
   :image t00114:im1 ;
   :site site:gr9752CMharen ;
   :ent t00114:p1 .
 
-t00114:c1 a t:town.n.01 ;
+t00114:c1 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00114:p1 a t:female.n.02 ;
+t00114:p1 a :Female ;
   :dob "1891-05-30" ;
   :dod "1960-12-15" ;
   :nam "AALTJE OOSTERVELD" ;
@@ -17,19 +17,19 @@ t00114:p1 a t:female.n.02 ;
   :pod t00114:c1 ;
   :rol t00114:r1 .
 
-t00114:r1 a t:sister.n.01 ;
+t00114:r1 a :Sister.n.01 ;
   :att "LIEVE" .
 
-t00114:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00114:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00114.jpg" ;
-  dcterms:date "2019-09-20T17:49:58"^^xsd:dateTime ;
+  dc:date "2019-09-20T17:49:58"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1626 ;

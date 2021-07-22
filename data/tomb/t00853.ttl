@@ -1,6 +1,6 @@
 @prefix t00853: <https://noordergraf.rug.nl/tomb/t00853#> .
 
-tomb:t00853 a t:tombstone.n.01 ;
+tomb:t00853 a :Tomb ;
   :image t00853:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00853:p1 ,
@@ -9,37 +9,37 @@ tomb:t00853 a t:tombstone.n.01 ;
        "RUST ZACHT"@nld ;
   :sym t00853:s1 .
 
-t00853:a1 a t:weeping.a.02 .
+t00853:a1 a :Weeping.a.02 .
 
-t00853:c1 a t:village.n.02 ;
+t00853:c1 a :Village.n.02 ;
   :place place:Erm2756040 ;
   :name "ERM" .
 
-t00853:p1 a t:female.n.02 ;
+t00853:p1 a :Female ;
   :dod "1919-02-13" ;
   :nam "ROELFIEN OLDENBEUVING" ;
   :pod t00853:c1 ;
   :rol t00853:r1 .
 
-t00853:p2 a t:male.n.02 ;
+t00853:p2 a :Male ;
   :nam "THIJS DIJKS" .
 
-t00853:r1 a t:spouse.n.01 ;
+t00853:r1 a :Spouse.n.01 ;
   :tgt t00853:p2 .
 
-t00853:s1 a t:willow.n.01 ;
+t00853:s1 a :Willow.n.01 ;
   :att t00853:a1 .
 
-t00853:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00853:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00853.jpg" ;
-  dcterms:date "2020-02-15T15:38:58"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:38:58"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7757 ;

@@ -1,6 +1,6 @@
 @prefix t00068: <https://noordergraf.rug.nl/tomb/t00068#> .
 
-tomb:t00068 a t:tombstone.n.01 ;
+tomb:t00068 a :Tomb ;
   :image t00068:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00068:g1 ,
@@ -9,23 +9,23 @@ tomb:t00068 a t:tombstone.n.01 ;
        t00068:p3 ,
        t00068:p4 .
 
-t00068:c1 a t:city.n.01 ;
+t00068:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00068:c2 a t:village.n.02 ;
+t00068:c2 a :Village.n.02 ;
   :place place:Steenwijkerwold2746761 ;
   :name "STEENWIJKERWOLD" .
 
-t00068:c3 a t:village.n.02 ;
+t00068:c3 a :Village.n.02 ;
   :place place:Nijeveen2750075 ;
   :name "NIJEVEEN" .
 
-t00068:g1 a t:group.n.01 ;
+t00068:g1 a :Group.n.01 ;
   :mem t00068:p2 ,
        t00068:p3 .
 
-t00068:p1 a t:female.n.02 ;
+t00068:p1 a :Female ;
   :dob "1920-07-13" ;
   :dod "1943-07-20" ;
   :nam "JANTINA" ,
@@ -33,7 +33,7 @@ t00068:p1 a t:female.n.02 ;
   :rol t00068:r1 ,
        t00068:r3 .
 
-t00068:p2 a t:female.n.02 ;
+t00068:p2 a :Female ;
   :dob "1891-04-09" ;
   :dod "1943-12-08" ;
   :nam "CORNELIA M.DE JONG" ;
@@ -42,7 +42,7 @@ t00068:p2 a t:female.n.02 ;
   :rol t00068:r4 ,
        t00068:r5 .
 
-t00068:p3 a t:male.n.02 ;
+t00068:p3 a :Male ;
   :dob "1886-06-09" ;
   :dod "1954-02-12" ;
   :nam "JAN MULDER" ;
@@ -50,36 +50,36 @@ t00068:p3 a t:male.n.02 ;
   :pod t00068:c1 ;
   :rol t00068:r6 .
 
-t00068:p4 a t:male.n.02 ;
+t00068:p4 a :Male ;
   :nam "CORNELIS PIETER" .
 
-t00068:r1 a t:daughter.n.01 ;
+t00068:r1 a :Daughter.n.01 ;
   :tgt t00068:g1 .
 
-t00068:r3 a t:sister.n.01 ;
+t00068:r3 a :Sister.n.01 ;
   :tgt t00068:p4 .
 
-t00068:r4 a t:wife.n.01 ;
+t00068:r4 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00068:p3 .
 
-t00068:r5 a t:mother.n.01 ;
+t00068:r5 a :Mother.n.01 ;
   :tgt t00068:p5 .
 
-t00068:r6 a t:father.n.01 ;
+t00068:r6 a :Father.n.01 ;
   :att "LIEVE" ;
   :tgt t00068:p4 .
 
-t00068:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00068:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00068.jpg" ;
-  dcterms:date "2019-09-25T16:10:13"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:10:13"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1908 ;

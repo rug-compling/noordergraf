@@ -1,31 +1,31 @@
 @prefix t00199: <https://noordergraf.rug.nl/tomb/t00199#> .
 
-tomb:t00199 a t:tombstone.n.01 ;
+tomb:t00199 a :Tomb ;
   :image t00199:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00199:p1 ,
        t00199:p2 .
 
-t00199:p1 a t:female.n.02 ;
+t00199:p1 a :Female ;
   :dob "1886-01-24" ;
   :dod "1965-09-01" ;
   :nam "HEIKA SCHREUDER" .
 
-t00199:p2 a t:male.n.02 ;
+t00199:p2 a :Male ;
   :dob "1885-09-12" ;
   :dod "1969-09-19" ;
   :nam "REGNERUS DANTUMA" .
 
-t00199:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00199:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00199.jpg" ;
-  dcterms:date "2019-10-06T14:38:45"^^xsd:dateTime ;
+  dc:date "2019-10-06T14:38:45"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1902 ;

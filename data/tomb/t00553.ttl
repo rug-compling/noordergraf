@@ -1,6 +1,6 @@
 @prefix t00553: <https://noordergraf.rug.nl/tomb/t00553#> .
 
-tomb:t00553 a t:tombstone.n.01 ;
+tomb:t00553 a :Tomb ;
   :image t00553:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00553:p1 ,
@@ -8,23 +8,23 @@ tomb:t00553 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00553:s1 .
 
-t00553:c1 a t:village.n.02 ;
+t00553:c1 a :Village.n.02 ;
   :place place:Kollum2752524 ;
   :name "KOLLUM" .
 
-t00553:c2 a t:city.n.01 ;
+t00553:c2 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00553:o1 a t:teacher.n.01 ;
+t00553:o1 a :Teacher.n.01 ;
   :hco "13320" ;
   :loc t00553:c2 ;
   :org t00553:o2 .
 
-t00553:o2 a t:school.n.01 ;
+t00553:o2 a :School.n.01 ;
   :nam "HOGEREBURGERSCHOOL" .
 
-t00553:p1 a t:male.n.02 ;
+t00553:p1 a :Male ;
   :dob "1854-05-20" ;
   :dod "1905-03-21" ;
   :nam "KLAAS VLIEG" ;
@@ -33,24 +33,24 @@ t00553:p1 a t:male.n.02 ;
   :pod t00553:c2 ;
   :rol t00553:r1 .
 
-t00553:p2 a t:female.n.02 ;
+t00553:p2 a :Female ;
   :nam "MARIA KRUIZINGA" .
 
-t00553:r1 a t:spouse.n.01 ;
+t00553:r1 a :Spouse.n.01 ;
   :tgt t00553:p2 .
 
-t00553:s1 a t:book.n.02 .
+t00553:s1 a :Book.n.02 .
 
-t00553:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00553:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00553.jpg" ;
-  dcterms:date "2019-11-24T14:01:03"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:01:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1043 ;

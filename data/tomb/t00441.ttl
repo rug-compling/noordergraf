@@ -1,6 +1,6 @@
 @prefix t00441: <https://noordergraf.rug.nl/tomb/t00441#> .
 
-tomb:t00441 a t:tombstone.n.01 ;
+tomb:t00441 a :Tomb ;
   :image t00441:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00441:p1 ,
@@ -8,45 +8,45 @@ tomb:t00441 a t:tombstone.n.01 ;
   :quo "RUST ZACHT" ;
   :sym t00441:s1 .
 
-t00441:a1 a t:weeping.a.02 .
+t00441:a1 a :Weeping.a.02 .
 
-t00441:p1 a t:female.n.02 ;
+t00441:p1 a :Female ;
   :dob "1861-10-21" ;
   :dod "1926-04-07" ;
   :nam "STIJNTJE COERKAMP" ;
   :rol t00441:r1 ,
        t00441:r2 .
 
-t00441:p2 a t:male.n.02 ;
+t00441:p2 a :Male ;
   :dob "1853-05-13" ;
   :dod "1937-10-03" ;
   :nam "JAN ZEILINGA" ;
   :rol t00441:r3 .
 
-t00441:r1 a t:wife.n.01 ;
+t00441:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00441:p2 .
 
-t00441:r2 a t:mother.n.01 ;
+t00441:r2 a :Mother.n.01 ;
   :tgt t00441:p3 .
 
-t00441:r3 a t:father.n.01 ;
+t00441:r3 a :Father.n.01 ;
   :att "LIEVE" ;
   :tgt t00441:p3 .
 
-t00441:s1 a t:willow.n.01 ;
+t00441:s1 a :Willow.n.01 ;
   :att t00441:a1 .
 
-t00441:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00441:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00441.jpg" ;
-  dcterms:date "2019-11-02T11:37:59"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:37:59"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4793 ;

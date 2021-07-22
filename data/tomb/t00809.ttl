@@ -1,6 +1,6 @@
 @prefix t00809: <https://noordergraf.rug.nl/tomb/t00809#> .
 
-tomb:t00809 a t:tombstone.n.01 ;
+tomb:t00809 a :Tomb ;
   :image t00809:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00809:p1 ,
@@ -8,15 +8,15 @@ tomb:t00809 a t:tombstone.n.01 ;
   :quo "HIER RUST HIJ IN HET \\ STILLE GRAF \\ BEVRIJD VAN ALLE \\ ZORGEN \\ NA 'T LEVEN DAT HEM \\ GOD HIER GAF \\ HOOPT HIJ EEN BLIJDEN \\ MORGEN"@nld ;
   :sym t00809:s1 .
 
-t00809:c1 a t:village.n.02 ;
+t00809:c1 a :Village.n.02 ;
   :place place:Woltersum2744196 ;
   :name "WOLTERSUM" .
 
-t00809:c2 a t:village.n.02 ;
+t00809:c2 a :Village.n.02 ;
   :place place:TenBoer2746491 ;
   :name "TEN BOER" .
 
-t00809:p1 a t:male.n.02 ;
+t00809:p1 a :Male ;
   :dob "1829-11-15" ;
   :dod "1905-03-20" ;
   :nam "JAN PIETERS VINK" ;
@@ -24,24 +24,24 @@ t00809:p1 a t:male.n.02 ;
   :pod t00809:c2 ;
   :rol t00809:r1 .
 
-t00809:p2 a t:female.n.02 ;
+t00809:p2 a :Female ;
   :nam "ETJE DERKS BOER" .
 
-t00809:r1 a t:spouse.n.01 ;
+t00809:r1 a :Spouse.n.01 ;
   :tgt t00809:p2 .
 
-t00809:s1 a t:butterfly.n.01 .
+t00809:s1 a :Butterfly.n.01 .
 
-t00809:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00809:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00809.jpg" ;
-  dcterms:date "2020-01-18T12:45:58"^^xsd:dateTime ;
+  dc:date "2020-01-18T12:45:58"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2778 ;

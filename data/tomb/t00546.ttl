@@ -1,6 +1,6 @@
 @prefix t00546: <https://noordergraf.rug.nl/tomb/t00546#> .
 
-tomb:t00546 a t:tombstone.n.01 ;
+tomb:t00546 a :Tomb ;
   :image t00546:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00546:p1 ,
@@ -9,15 +9,15 @@ tomb:t00546 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00546:s1 .
 
-t00546:c1 a t:village.n.02 ;
+t00546:c1 a :Village.n.02 ;
   :place place:Bareveld2759424 ;
   :name "BAREVELD" .
 
-t00546:c2 a t:city.n.01 ;
+t00546:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00546:p1 a t:female.n.02 ;
+t00546:p1 a :Female ;
   :dob "1842-02-18" ;
   :dod "1926-11-15" ;
   :nam "ANNA KOOL" ;
@@ -25,46 +25,46 @@ t00546:p1 a t:female.n.02 ;
   :pod t00546:c2 ;
   :rol t00546:r1 .
 
-t00546:p2 a t:male.n.02 ;
+t00546:p2 a :Male ;
   :nam "MARTINUS KLUGKIST" .
 
-t00546:p3 a t:person.n.01 ;
+t00546:p3 a :Person ;
   :nam "F. DE WEIJS" ;
   :occ t00546:r2 .
 
-t00546:r1 a t:widow.n.01 ;
+t00546:r1 a :Widow.n.01 ;
   :tgt t00546:p2 .
 
-t00546:r2 a t:designer.n.01 ;
+t00546:r2 a :Designer.n.01 ;
   :tgt tomb:t00546 .
 
-t00546:s1 a t:composite.n.01 ;
+t00546:s1 a :Composite.n.01 ;
   :prt t00546:s2 ,
        t00546:s3 ,
        t00546:s5 .
 
-t00546:s2 a t:butterfly.n.01 .
+t00546:s2 a :Butterfly.n.01 .
 
-t00546:s3 a t:branch.n.02 .
+t00546:s3 a :Branch.n.02 .
 
-t00546:s4 a t:oak.n.02 ;
+t00546:s4 a :Oak.n.02 ;
   :prt t00546:s3 .
 
-t00546:s5 a t:branch.n.02 .
+t00546:s5 a :Branch.n.02 .
 
-t00546:s6 a t:olive.n.02 ;
+t00546:s6 a :Olive.n.02 ;
   :prt t00546:s5 .
 
-t00546:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00546:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00546.jpg" ;
-  dcterms:date "2019-11-24T14:12:53"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:12:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1041 ;

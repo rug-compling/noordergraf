@@ -1,6 +1,6 @@
 @prefix t00839: <https://noordergraf.rug.nl/tomb/t00839#> .
 
-tomb:t00839 a t:tombstone.n.01 ;
+tomb:t00839 a :Tomb ;
   :image t00839:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00839:p1 ,
@@ -8,13 +8,13 @@ tomb:t00839 a t:tombstone.n.01 ;
   :quo "RUST ZACHT"@nld ;
   :sym t00839:s1 .
 
-t00839:a1 a t:weeping.a.02 .
+t00839:a1 a :Weeping.a.02 .
 
-t00839:c1 a t:village.n.02 ;
+t00839:c1 a :Village.n.02 ;
   :place place:Erm2756040 ;
   :name "ERM" .
 
-t00839:p1 a t:male.n.02 ;
+t00839:p1 a :Male ;
   :dob "1884-10-20" ;
   :dod "1926-02-24" ;
   :nam "K. ANNINGA" ;
@@ -22,25 +22,25 @@ t00839:p1 a t:male.n.02 ;
   :pod t00839:c1 ;
   :rol t00839:r1 .
 
-t00839:p2 a t:female.n.02 ;
+t00839:p2 a :Female ;
   :nam "F. HABING" .
 
-t00839:r1 a t:spouse.n.01 ;
+t00839:r1 a :Spouse.n.01 ;
   :tgt t00839:p2 .
 
-t00839:s1 a t:willow.n.01 ;
+t00839:s1 a :Willow.n.01 ;
   :att t00839:a1 .
 
-t00839:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00839:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00839.jpg" ;
-  dcterms:date "2020-02-15T15:39:30"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:39:30"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7762 ;

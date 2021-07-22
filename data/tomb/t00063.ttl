@@ -1,46 +1,46 @@
 @prefix t00063: <https://noordergraf.rug.nl/tomb/t00063#> .
 
-tomb:t00063 a t:tombstone.n.01 ;
+tomb:t00063 a :Tomb ;
   :image t00063:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00063:p1 ,
        t00063:p2 ;
   :sym t00063:s1 .
 
-t00063:a1 a t:broken.a.01 .
+t00063:a1 a :Broken.a.01 .
 
-t00063:p1 a t:male.n.02 ;
+t00063:p1 a :Male ;
   :dob "1910-12-13" ;
   :dod "1943-08-01" ;
   :nam "DANIEL JACOB SMIT" ;
   :rol t00063:r1 .
 
-t00063:p2 a t:female.n.02 ;
+t00063:p2 a :Female ;
   :nam "A. SMIT-KEIMPEMA" .
 
-t00063:r1 a t:husband.n.01 ;
+t00063:r1 a :Husband.n.01 ;
   :att "LIEVEN" ;
   :tgt t00063:p2 .
 
-t00063:s1 a t:composite.n.01 ;
+t00063:s1 a :Composite.n.01 ;
   :prt t00063:s2 ,
        t00063:s3 .
 
-t00063:s2 a t:flower.n.01 ;
+t00063:s2 a :Flower.n.01 ;
   :att t00063:a1 .
 
-t00063:s3 a t:ribbon.n.01 .
+t00063:s3 a :Ribbon.n.01 .
 
-t00063:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00063:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00063.jpg" ;
-  dcterms:date "2019-09-25T16:16:21"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:16:21"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1914 ;

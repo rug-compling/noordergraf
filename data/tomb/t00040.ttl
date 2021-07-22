@@ -1,6 +1,6 @@
 @prefix t00040: <https://noordergraf.rug.nl/tomb/t00040#> .
 
-tomb:t00040 a t:tombstone.n.01 ;
+tomb:t00040 a :Tomb ;
   :image t00040:im1 ;
   :site site:gr9752CMharen ;
   :ent t00040:p1 ,
@@ -10,13 +10,13 @@ tomb:t00040 a t:tombstone.n.01 ;
   :txt "DAT ZIJ RUST IN VREDE" ,
        "ZIJ WAS EEN LIEFDE VOLLE GADE EN EENS ZORG VOLLE MOEDER" .
 
-t00040:a1 a t:weeping.a.02 .
+t00040:a1 a :Weeping.a.02 .
 
-t00040:c1 a t:village.n.02 ;
+t00040:c1 a :Village.n.02 ;
   :place place:Helpman2754444 ;
   :name "HELPMAN" .
 
-t00040:p1 a t:female.n.02 ;
+t00040:p1 a :Female ;
   :dob "1868-12-08" ;
   :dod "1909-12-26" ;
   :nam "HARMTJE NIJDAM" ;
@@ -25,28 +25,28 @@ t00040:p1 a t:female.n.02 ;
   :rol t00040:r1 ,
        t00040:r2 .
 
-t00040:p2 a t:male.n.02 ;
+t00040:p2 a :Male ;
   :nam "JAN EITENS" .
 
-t00040:r1 a t:husband.n.01 ;
+t00040:r1 a :Husband.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00040:p2 .
 
-t00040:r2 a t:mother.n.01 .
+t00040:r2 a :Mother.n.01 .
 
-t00040:s1 a t:willow.n.01 ;
+t00040:s1 a :Willow.n.01 ;
   :att t00040:a1 .
 
-t00040:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00040:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00040.jpg" ;
-  dcterms:date "2019-09-27T17:52:14"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:52:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1630 ;

@@ -1,6 +1,6 @@
 @prefix t01060: <https://noordergraf.rug.nl/tomb/t01060#> .
 
-tomb:t01060 a t:tombstone.n.01 ;
+tomb:t01060 a :Tomb ;
   :image t01060:im1 ;
   :site site:gr9975VRvierhuizen ;
   :ent t01060:p1 ,
@@ -8,37 +8,37 @@ tomb:t01060 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t01060:s1 .
 
-t01060:c1 a t:hamlet.n.03 ;
+t01060:c1 a :Hamlet.n.03 ;
   :place place:Menneweer12253656 ;
   :name "MENNEWEER" .
 
-t01060:o1 a t:farmer.n.01 ;
+t01060:o1 a :Farmer.n.01 ;
   :hco "61220" ;
   :loc t01060:c1 .
 
-t01060:p1 a t:person.n.01 ;
+t01060:p1 a :Person ;
   :dob "1902-09-11" ;
   :dod "1960-05-26" ;
   :nam "J.J. DIJKHUIS" .
 
-t01060:p2 a t:person.n.01 ;
+t01060:p2 a :Person ;
   :dob "1903-06-24" ;
   :dod "1981-01-21" ;
   :nam "J. DIJKHUIS" ;
   :occ t01060:o1 .
 
-t01060:s1 a t:pigeon.n.01 .
+t01060:s1 a :Pigeon.n.01 .
 
-t01060:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01060:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01060.jpg" ;
-  dcterms:date "2020-05-02T15:51:33"^^xsd:dateTime ;
+  dc:date "2020-05-02T15:51:33"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3607 ;

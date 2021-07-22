@@ -1,29 +1,29 @@
 @prefix t00816: <https://noordergraf.rug.nl/tomb/t00816#> .
 
-tomb:t00816 a t:tombstone.n.01 ;
+tomb:t00816 a :Tomb ;
   :image t00816:im1 ;
   :site site:gr9741ACgroningen ;
   :ent t00816:p1 ;
   :lan "NLD" ;
   :sym t00816:s1 .
 
-t00816:p1 a t:female.n.02 ;
+t00816:p1 a :Female ;
   :dob "1901-12-17" ;
   :dod "1906-11-20" ;
   :nam "TILLY BUININCK" .
 
-t00816:s1 a t:gnome.n.01 .
+t00816:s1 a :Gnome.n.01 .
 
-t00816:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00816:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00816.jpg" ;
-  dcterms:date "2020-02-01T12:29:06"^^xsd:dateTime ;
+  dc:date "2020-02-01T12:29:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2303 ;

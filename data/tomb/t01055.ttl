@@ -1,6 +1,6 @@
 @prefix t01055: <https://noordergraf.rug.nl/tomb/t01055#> .
 
-tomb:t01055 a t:tombstone.n.01 ;
+tomb:t01055 a :Tomb ;
   :image t01055:im1 ;
   :site site:gr9971EBulrum ;
   :ent t01055:p1 ,
@@ -9,24 +9,24 @@ tomb:t01055 a t:tombstone.n.01 ;
   :ref t01055:v1 ;
   :sym t01055:s1 .
 
-t01055:a1 a t:weeping.a.02 .
+t01055:a1 a :Weeping.a.02 .
 
-t01055:b1 a t:Matthew.n.02 ;
+t01055:b1 a :Matthew.n.02 ;
   :prt t01055:c3 .
 
-t01055:c1 a t:village.n.02 ;
+t01055:c1 a :Village.n.02 ;
   :place place:Hornhuizen2753604 ;
   :name "HORNHUIZEN" .
 
-t01055:c2 a t:village.n.02 ;
+t01055:c2 a :Village.n.02 ;
   :place place:Ulrum2745944 ;
   :name "ULRUM" .
 
-t01055:c3 a t:chapter.n.01 ;
+t01055:c3 a :Chapter.n.01 ;
   :ord 5 ;
   :prt t01055:v1 .
 
-t01055:p1 a t:female.n.02 ;
+t01055:p1 a :Female ;
   :dob "1835-10-13" ;
   :dod "1927-04-27" ;
   :nam "AALTJE BORGMAN" ;
@@ -34,28 +34,28 @@ t01055:p1 a t:female.n.02 ;
   :pod t01055:c2 ;
   :rol t01055:r1 .
 
-t01055:p2 a t:male.n.02 ;
+t01055:p2 a :Male ;
   :nam "MENNO JANSEN" .
 
-t01055:r1 a t:widow.n.01 ;
+t01055:r1 a :Widow.n.01 ;
   :tgt t01055:p2 .
 
-t01055:s1 a t:willow.n.01 ;
+t01055:s1 a :Willow.n.01 ;
   :att t01055:a1 .
 
-t01055:v1 a t:verse.n.01 ;
+t01055:v1 a :Verse.n.01 ;
   :ord 3 .
 
-t01055:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01055:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01055.jpg" ;
-  dcterms:date "2020-05-02T16:49:57"^^xsd:dateTime ;
+  dc:date "2020-05-02T16:49:57"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3603 ;

@@ -1,12 +1,12 @@
 @prefix t00274: <https://noordergraf.rug.nl/tomb/t00274#> .
 
-tomb:t00274 a t:tombstone.n.01 ;
+tomb:t00274 a :Tomb ;
   :image t00274:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00274:p1 ,
        t00274:p2 .
 
-t00274:p1 a t:male.n.02 ;
+t00274:p1 a :Male ;
   :dob "1875-05-23" ;
   :dod "1960-06-02" ;
   :nam "TJERK MERGUÊT" ;
@@ -14,34 +14,34 @@ t00274:p1 a t:male.n.02 ;
        t00274:r2 ,
        t00274:r3 .
 
-t00274:p2 a t:female.n.02 ;
+t00274:p2 a :Female ;
   :dob "1876-09-17" ;
   :dod "1963-09-01" ;
   :nam "ANNA WOLTHUIS" ;
   :rol t00274:r4 .
 
-t00274:r1 a t:husband.n.01 ;
+t00274:r1 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00274:p2 .
 
-t00274:r2 a t:father.n.01 .
+t00274:r2 a :Father.n.01 .
 
-t00274:r3 a t:spouse.n.01 ;
+t00274:r3 a :Spouse.n.01 ;
   :tgt t00274:p2 .
 
-t00274:r4 a t:mother.n.01 ;
+t00274:r4 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00274:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00274:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00274.jpg" ;
-  dcterms:date "2019-10-14T10:56:03"^^xsd:dateTime ;
+  dc:date "2019-10-14T10:56:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2228 ;

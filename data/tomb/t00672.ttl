@@ -1,6 +1,6 @@
 @prefix t00672: <https://noordergraf.rug.nl/tomb/t00672#> .
 
-tomb:t00672 a t:tombstone.n.01 ;
+tomb:t00672 a :Tomb ;
   :image t00672:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00672:g1 ,
@@ -10,49 +10,49 @@ tomb:t00672 a t:tombstone.n.01 ;
   :ref t00672:v1 ;
   :sym t00672:s1 .
 
-t00672:b1 a t:First_Epistle_of_John.n.01 ;
+t00672:b1 a :First_Epistle_of_John.n.01 ;
   :prt t00672:c1 .
 
-t00672:c1 a t:chapter.n.01 ;
+t00672:c1 a :Chapter.n.01 ;
   :ord 2 ;
   :prt t00672:v1 .
 
-t00672:g1 a t:group.n.01 ;
+t00672:g1 a :Group.n.01 ;
   :mem t00672:p1 ,
        t00672:p2 ;
   :rol t00672:r1 ,
        t00672:r2 .
 
-t00672:p1 a t:female.n.02 ;
+t00672:p1 a :Female ;
   :dob "1887-02-26" ;
   :dod "1958-12-07" ;
   :nam "TRIJNTJE W. VISSER" .
 
-t00672:p2 a t:male.n.02 ;
+t00672:p2 a :Male ;
   :dob "1885-10-08" ;
   :dod "1978-09-05" ;
   :nam "AUKE SIKMA" .
 
-t00672:r1 a t:parent.n.01 ;
+t00672:r1 a :Parent.n.01 ;
   :att "LIEVE" .
 
-t00672:r2 a t:grandparent.n.01 .
+t00672:r2 a :Grandparent.n.01 .
 
-t00672:s1 a t:frond.n.01 .
+t00672:s1 a :Frond.n.01 .
 
-t00672:v1 a t:verse.n.01 ;
+t00672:v1 a :Verse.n.01 ;
   :ord 25 .
 
-t00672:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00672:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00672.jpg" ;
-  dcterms:date "2019-12-14T13:42:18"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:42:18"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0680 ;

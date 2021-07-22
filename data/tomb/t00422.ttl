@@ -1,33 +1,33 @@
 @prefix t00422: <https://noordergraf.rug.nl/tomb/t00422#> .
 
-tomb:t00422 a t:tombstone.n.01 ;
+tomb:t00422 a :Tomb ;
   :image t00422:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00422:p1 ;
   :img t00422:i1 .
 
-t00422:c1 a t:city.n.01 ;
+t00422:c1 a :City.n.01 ;
   :place place:DenHaag2747373 ;
   :name "DEN HAAG" .
 
-t00422:c2 a t:island.n.01 ;
+t00422:c2 a :Island.n.01 ;
   :place place:Schiermonnikoog2747591 ;
   :name "SCHIERMONNIKOOG" .
 
-t00422:i1 a t:portrait.n.02 ;
+t00422:i1 a :Portrait.n.02 ;
   :thm t00422:p1 .
 
-t00422:o1 a t:painter.n.01 ;
+t00422:o1 a :Painter.n.01 ;
   :hco "16130" .
 
-t00422:o2 a t:sculptor.n.01 ;
+t00422:o2 a :Sculptor.n.01 ;
   :hco "16120" ;
   :thm t00422:o3 .
 
-t00422:o3 a t:sculpture.n.01 ;
+t00422:o3 a :Sculpture.n.01 ;
   :nam "DE SCHIERMONNIK" .
 
-t00422:p1 a t:male.n.02 ;
+t00422:p1 a :Male ;
   :dob "1887-09-04" ;
   :dod "1972-07-07" ;
   :nam "MARTIN VAN WANING" ;
@@ -36,16 +36,16 @@ t00422:p1 a t:male.n.02 ;
   :pob t00422:c1 ;
   :pod t00422:c2 .
 
-t00422:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00422:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00422.jpg" ;
-  dcterms:date "2019-11-02T11:30:13"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:30:13"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4790 ;

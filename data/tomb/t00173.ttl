@@ -1,44 +1,44 @@
 @prefix t00173: <https://noordergraf.rug.nl/tomb/t00173#> .
 
-tomb:t00173 a t:tombstone.n.01 ;
+tomb:t00173 a :Tomb ;
   :image t00173:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00173:p1 ,
        t00173:p2 ;
   :sym t00173:s1 .
 
-t00173:p1 a t:male.n.02 ;
+t00173:p1 a :Male ;
   :dob "1868-05-18" ;
   :dod "1927-10-11" ;
   :nam "GODFRIED LODEWIJK VAN ZETTEN" .
 
-t00173:p2 a t:female.n.02 ;
+t00173:p2 a :Female ;
   :dob "1868-03-13" ;
   :dod "1947-07-13" ;
   :nam "JENNEKE TIEL" ;
   :rol t00173:r1 .
 
-t00173:r1 a t:spouse.n.01 ;
+t00173:r1 a :Spouse.n.01 ;
   :tgt t00173:p1 .
 
-t00173:s1 a t:composite.n.01 ;
+t00173:s1 a :Composite.n.01 ;
   :prt t00173:s2 ,
        t00173:s3 .
 
-t00173:s2 a t:frond.n.01 .
+t00173:s2 a :Frond.n.01 .
 
-t00173:s3 a t:ribbon.n.01 .
+t00173:s3 a :Ribbon.n.01 .
 
-t00173:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00173:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00173.jpg" ;
-  dcterms:date "2019-10-05T10:42:27"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:42:27"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1904 ;

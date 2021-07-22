@@ -1,32 +1,32 @@
 @prefix t00687: <https://noordergraf.rug.nl/tomb/t00687#> .
 
-tomb:t00687 a t:tombstone.n.01 ;
+tomb:t00687 a :Tomb ;
   :image t00687:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00687:p1 ,
        t00687:p2 ;
   :quo "DAT IK ER ZIJN MOCHT \\ STA TE BOEK ALS WONDER"@nld .
 
-t00687:p1 a t:male.n.02 ;
+t00687:p1 a :Male ;
   :dob "1907-03-07" ;
   :dod "1980-07-01" ;
   :nam "WILLEM BOSMAN" .
 
-t00687:p2 a t:female.n.02 ;
+t00687:p2 a :Female ;
   :dob "1917-07-11" ;
   :dod "2006-02-15" ;
   :nam "JETSCHE VRIESWIJK" .
 
-t00687:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00687:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00687.jpg" ;
-  dcterms:date "2019-12-14T13:16:34"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:16:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0673 ;

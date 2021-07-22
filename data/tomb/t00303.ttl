@@ -1,17 +1,17 @@
 @prefix t00303: <https://noordergraf.rug.nl/tomb/t00303#> .
 
-tomb:t00303 a t:tombstone.n.01 ;
+tomb:t00303 a :Tomb ;
   :image t00303:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00303:p1 ,
        t00303:p2 ;
   :ref "PSALM 73:12" .
 
-t00303:c1 a t:town.n.01 ;
+t00303:c1 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00303:p1 a t:male.n.02 ;
+t00303:p1 a :Male ;
   :dob "1876-07-02" ;
   :dod "1950-03-24" ;
   :nam "THOMAS PADDING" ;
@@ -19,22 +19,22 @@ t00303:p1 a t:male.n.02 ;
   :pod t00303:c1 ;
   :rol t00303:r1 .
 
-t00303:p2 a t:female.n.02 ;
+t00303:p2 a :Female ;
   :nam "GEERTJE VOERMAN" .
 
-t00303:r1 a t:widower.n.01 ;
+t00303:r1 a :Widower.n.01 ;
   :tgt t00303:p2 .
 
-t00303:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00303:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00303.jpg" ;
-  dcterms:date "2019-10-19T14:30:56"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:30:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7159 ;

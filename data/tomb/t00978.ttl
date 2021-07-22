@@ -1,6 +1,6 @@
 @prefix t00978: <https://noordergraf.rug.nl/tomb/t00978#> .
 
-tomb:t00978 a t:tombstone.n.01 ;
+tomb:t00978 a :Tomb ;
   :image t00978:im1 ;
   :site site:gr9479TNnoordlaren ;
   :ent t00978:g1 ,
@@ -11,57 +11,57 @@ tomb:t00978 a t:tombstone.n.01 ;
   :sym t00978:s1 ,
        t00978:s2 .
 
-t00978:c1 a t:village.n.02 ;
+t00978:c1 a :Village.n.02 ;
   :place place:Glimmen2755495 ;
   :name "GLIMMEN" .
 
-t00978:c2 a t:village.n.02 ;
+t00978:c2 a :Village.n.02 ;
   :place place:Yde2744130 ;
   :name "YDE" .
 
-t00978:g1 a t:group.n.01 ;
+t00978:g1 a :Group.n.01 ;
   :mem t00978:p1 ,
        t00978:p2 ;
   :rol t00978:r1 .
 
-t00978:g2 a t:group.n.01 ;
+t00978:g2 a :Group.n.01 ;
   :qua 9 ;
   :rol t00978:r2 .
 
-t00978:p1 a t:male.n.02 ;
+t00978:p1 a :Male ;
   :dob "XX-XX-1822" ;
   :dod "XX-XX-1911" ;
   :nam "LUCAS MULDER" ;
   :pob t00978:c1 ;
   :pod t00978:c1 .
 
-t00978:p2 a t:female.n.02 ;
+t00978:p2 a :Female ;
   :dob "XX-XX-1837" ;
   :dod "XX-XX-1912" ;
   :nam "JANTIEN VAN DALEN" ;
   :pob t00978:c2 ;
   :pod t00978:c1 .
 
-t00978:r1 a t:parent.n.01 ;
+t00978:r1 a :Parent.n.01 ;
   :tgt t00978:g2 .
 
-t00978:r2 a t:child.n.02 ;
+t00978:r2 a :Child.n.02 ;
   :tgt t00978:g1 .
 
-t00978:s1 a t:entity.n.01 .
+t00978:s1 a :Entity.n.01 .
 
-t00978:s2 a t:ring.n.03 .
+t00978:s2 a :Ring.n.03 .
 
-t00978:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00978:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00978.jpg" ;
-  dcterms:date "2020-03-25T09:26:43"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:26:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1202 ;

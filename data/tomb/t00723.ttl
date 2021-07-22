@@ -1,41 +1,41 @@
 @prefix t00723: <https://noordergraf.rug.nl/tomb/t00723#> .
 
-tomb:t00723 a t:tombstone.n.01 ;
+tomb:t00723 a :Tomb ;
   :image t00723:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00723:p1 ;
   :ref "PSALM 91"@nld ;
   :sym t00723:s1 .
 
-t00723:a1 a t:weeping.a.02 .
+t00723:a1 a :Weeping.a.02 .
 
-t00723:c1 a t:village.n.02 ;
+t00723:c1 a :Village.n.02 ;
   :place place:Westenesch2744776 ;
   :name "WESTENESCH" .
 
-t00723:p1 a t:male.n.02 ;
+t00723:p1 a :Male ;
   :dob "1869-05-16" ;
   :dod "1925-05-26" ;
   :nam "GEERT HENDRIKS" ;
   :pob t00723:c1 ;
   :rol t00723:r1 .
 
-t00723:r1 a t:uncle.n.01 ;
+t00723:r1 a :Uncle.n.01 ;
   :att "GELIEFDE" .
 
-t00723:s1 a t:willow.n.01 ;
+t00723:s1 a :Willow.n.01 ;
   :att t00723:a1 .
 
-t00723:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00723:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00723.jpg" ;
-  dcterms:date "2019-12-21T13:17:21"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:17:21"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7825 ;

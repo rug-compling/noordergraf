@@ -1,26 +1,26 @@
 @prefix t01037: <https://noordergraf.rug.nl/tomb/t01037#> .
 
-tomb:t01037 a t:tombstone.n.01 ;
+tomb:t01037 a :Tomb ;
   :image t01037:im1 ;
   :site site:gr9804TEnoordhorn ;
   :ent t01037:p1 ;
   :quo "RUST ZACHT."@nld .
 
-t01037:p1 a t:male.n.02 ;
+t01037:p1 a :Male ;
   :dob "1901-11-30" ;
   :dod "1968-08-19" ;
   :nam "JAN JONKMAN" .
 
-t01037:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01037:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01037.jpg" ;
-  dcterms:date "2020-04-19T11:52:53"^^xsd:dateTime ;
+  dc:date "2020-04-19T11:52:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2644 ;

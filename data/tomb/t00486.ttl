@@ -1,6 +1,6 @@
 @prefix t00486: <https://noordergraf.rug.nl/tomb/t00486#> .
 
-tomb:t00486 a t:tombstone.n.01 ;
+tomb:t00486 a :Tomb ;
   :image t00486:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00486:p1 ,
@@ -9,19 +9,19 @@ tomb:t00486 a t:tombstone.n.01 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :sym t00486:s1 .
 
-t00486:c1 a t:city.n.01 ;
+t00486:c1 a :City.n.01 ;
   :place place:Amsterdam2759794 ;
   :name "AMSTERDAM" .
 
-t00486:c2 a t:city.n.01 ;
+t00486:c2 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LEEUWARDEN" .
 
-t00486:c3 a t:city.n.01 ;
+t00486:c3 a :City.n.01 ;
   :place place:Alkmaar2759899 ;
   :name "ALKMAAR" .
 
-t00486:p1 a t:female.n.02 ;
+t00486:p1 a :Female ;
   :dob "1846-04-26" ;
   :dod "1888-04-06" ;
   :nam "MARIA BLEEKER" ;
@@ -29,7 +29,7 @@ t00486:p1 a t:female.n.02 ;
   :pod t00486:c2 ;
   :rol t00486:r1 .
 
-t00486:p2 a t:male.n.02 ;
+t00486:p2 a :Male ;
   :dob "1837-08-24" ;
   :dod "1906-06-02" ;
   :nam "FRANCISCUS BARTHOLOMEUS HOFSTEDE" ;
@@ -38,31 +38,31 @@ t00486:p2 a t:male.n.02 ;
   :rol t00486:r2 ,
        t00486:r3 .
 
-t00486:p3 a t:female.n.02 ;
+t00486:p3 a :Female ;
   :nam "C. FLAPPER" .
 
-t00486:r1 a t:spouse.n.01 ;
+t00486:r1 a :Spouse.n.01 ;
   :tgt t00486:p2 .
 
-t00486:r2 a t:widow.n.01 ;
+t00486:r2 a :Widow.n.01 ;
   :bef t00486:r3 ;
   :tgt t00486:p1 .
 
-t00486:r3 a t:widow.n.01 ;
+t00486:r3 a :Widow.n.01 ;
   :tgt t00486:p3 .
 
-t00486:s1 a t:cross.n.03 .
+t00486:s1 a :Cross.n.03 .
 
-t00486:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00486:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00486.jpg" ;
-  dcterms:date "2019-11-09T14:35:25"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:35:25"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2066 ;

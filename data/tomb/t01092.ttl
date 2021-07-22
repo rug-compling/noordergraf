@@ -1,29 +1,29 @@
 @prefix t01092: <https://noordergraf.rug.nl/tomb/t01092#> .
 
-tomb:t01092 a t:tombstone.n.01 ;
+tomb:t01092 a :Tomb ;
   :image t01092:im1 ;
   :site site:gr9751XCharen ;
   :ent t01092:p1 ;
   :lan "NLD" ;
   :sym t01092:s1 .
 
-t01092:p1 a t:female.n.02 ;
+t01092:p1 a :Female ;
   :dob "1963-01-21" ;
   :dod "2005-07-31" ;
   :nam "DINALDA CATHARINA BOSCH" .
 
-t01092:s1 a t:butterfly.n.01 .
+t01092:s1 a :Butterfly.n.01 .
 
-t01092:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01092:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01092.jpg" ;
-  dcterms:date "2020-10-11T10:23:38"^^xsd:dateTime ;
+  dc:date "2020-10-11T10:23:38"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1618 ;

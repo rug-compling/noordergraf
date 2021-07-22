@@ -1,6 +1,6 @@
 @prefix t00404: <https://noordergraf.rug.nl/tomb/t00404#> .
 
-tomb:t00404 a t:tombstone.n.01 ;
+tomb:t00404 a :Tomb ;
   :image t00404:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00404:p1 ,
@@ -8,24 +8,24 @@ tomb:t00404 a t:tombstone.n.01 ;
   :ref t00404:v1 ;
   :sym t00404:s1 .
 
-t00404:a1 a t:weeping.a.02 .
+t00404:a1 a :Weeping.a.02 .
 
-t00404:b1 a t:Second_Epistle_to_the_Corinthians.n.01 ;
+t00404:b1 a :Second_Epistle_to_the_Corinthians.n.01 ;
   :prt t00404:c3 .
 
-t00404:c1 a t:village.n.02 ;
+t00404:c1 a :Village.n.02 ;
   :place place:Surhuizum2746557 ;
   :name "SURHUIZUM" .
 
-t00404:c2 a t:village.n.02 ;
+t00404:c2 a :Village.n.02 ;
   :place place:Buitenpost2758131 ;
   :name "BUITENPOST" .
 
-t00404:c3 a t:chapter.n.01 ;
+t00404:c3 a :Chapter.n.01 ;
   :ord 5 ;
   :prt t00404:v1 .
 
-t00404:p1 a t:female.n.02 ;
+t00404:p1 a :Female ;
   :dob "1866-03-17" ;
   :dod "1920-10-06" ;
   :nam "JOSINA SIENEMA" ;
@@ -33,28 +33,28 @@ t00404:p1 a t:female.n.02 ;
   :pod t00404:c2 ;
   :rol t00404:r1 .
 
-t00404:p2 a t:male.n.02 ;
+t00404:p2 a :Male ;
   :nam "H.J. POL" .
 
-t00404:r1 a t:spouse.n.01 ;
+t00404:r1 a :Spouse.n.01 ;
   :tgt t00404:p2 .
 
-t00404:s1 a t:willow.n.01 ;
+t00404:s1 a :Willow.n.01 ;
   :att t00404:a1 .
 
-t00404:v1 a t:verse.n.01 ;
+t00404:v1 a :Verse.n.01 ;
   :ord 1 .
 
-t00404:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00404:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00404.jpg" ;
-  dcterms:date "2019-10-26T14:46:01"^^xsd:dateTime ;
+  dc:date "2019-10-26T14:46:01"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2518 ;

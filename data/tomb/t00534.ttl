@@ -1,6 +1,6 @@
 @prefix t00534: <https://noordergraf.rug.nl/tomb/t00534#> .
 
-tomb:t00534 a t:tombstone.n.01 ;
+tomb:t00534 a :Tomb ;
   :image t00534:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00534:p1 ,
@@ -8,15 +8,15 @@ tomb:t00534 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
   :sym t00534:s1 .
 
-t00534:c1 a t:village.n.02 ;
+t00534:c1 a :Village.n.02 ;
   :place place:Muntendam2750535 ;
   :name "MUNTENDAM" .
 
-t00534:c2 a t:city.n.01 ;
+t00534:c2 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00534:p1 a t:female.n.02 ;
+t00534:p1 a :Female ;
   :dob "1852-04-29" ;
   :dod "1936-09-28" ;
   :nam "KLAASKE GERLOFS" ;
@@ -24,37 +24,37 @@ t00534:p1 a t:female.n.02 ;
   :pod t00534:c2 ;
   :rol t00534:r1 .
 
-t00534:p2 a t:male.n.02 ;
+t00534:p2 a :Male ;
   :nam "MENZO KUIPER" .
 
-t00534:r1 a t:widow.n.01 ;
+t00534:r1 a :Widow.n.01 ;
   :beg "XX-XX-1902" ;
   :tgt t00534:p2 .
 
-t00534:s1 a t:composite.n.01 ;
+t00534:s1 a :Composite.n.01 ;
   :prt t00534:s2 ,
        t00534:s4 .
 
-t00534:s2 a t:branch.n.02 .
+t00534:s2 a :Branch.n.02 .
 
-t00534:s3 a t:olive.n.02 ;
+t00534:s3 a :Olive.n.02 ;
   :prt t00534:s2 .
 
-t00534:s4 a t:branch.n.02 .
+t00534:s4 a :Branch.n.02 .
 
-t00534:s5 a t:oak.n.02 ;
+t00534:s5 a :Oak.n.02 ;
   :prt t00534:s4 .
 
-t00534:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00534:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00534.jpg" ;
-  dcterms:date "2019-11-24T14:31:06"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:31:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1031 ;

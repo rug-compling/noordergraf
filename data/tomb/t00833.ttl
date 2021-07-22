@@ -1,6 +1,6 @@
 @prefix t00833: <https://noordergraf.rug.nl/tomb/t00833#> .
 
-tomb:t00833 a t:tombstone.n.01 ;
+tomb:t00833 a :Tomb ;
   :image t00833:im1 ;
   :site site:dr7841CDsleen ;
   :text "rustplaats\nvan\nalbert dobben\ngeb. 13 oct. 1876\nte dalen,\novl. 3 nov. 1934\nte holslootbrug.\ngel. echtg. van\nfenna lanting.\ngez. 201:1.\n\nrust zacht,\nlieve vader." ;
@@ -10,17 +10,17 @@ tomb:t00833 a t:tombstone.n.01 ;
   :ref "GEZANG 201:1"@nld ;
   :sym t00833:s1 .
 
-t00833:a1 a t:weeping.a.02 .
+t00833:a1 a :Weeping.a.02 .
 
-t00833:c1 a t:village.n.02 ;
+t00833:c1 a :Village.n.02 ;
   :place place:Dalen2757857 ;
   :name "DALEN" .
 
-t00833:c2 a t:town.n.01 ;
+t00833:c2 a :Town.n.01 ;
   :place place:Holslootbrug ;
   :name "HOLSLOOTBRUG" .
 
-t00833:p1 a t:male.n.02 ;
+t00833:p1 a :Male ;
   :dob "1876-10-13" ;
   :dod "1934-11-03" ;
   :nam "ALBERT DOBBEN" ;
@@ -29,28 +29,28 @@ t00833:p1 a t:male.n.02 ;
   :rol t00833:r1 ,
        t00833:r2 .
 
-t00833:p2 a t:female.n.02 ;
+t00833:p2 a :Female ;
   :nam "FENNA LANTNG" .
 
-t00833:r1 a t:spouse.n.01 ;
+t00833:r1 a :Spouse.n.01 ;
   :att "GELIEFD" ;
   :tgt t00833:p2 .
 
-t00833:r2 a t:father.n.01 .
+t00833:r2 a :Father.n.01 .
 
-t00833:s1 a t:willow.n.01 ;
+t00833:s1 a :Willow.n.01 ;
   :att t00833:a1 .
 
-t00833:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00833:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00833.jpg" ;
-  dcterms:date "2020-02-15T15:44:06"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:44:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7763 ;

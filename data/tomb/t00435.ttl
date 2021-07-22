@@ -1,6 +1,6 @@
 @prefix t00435: <https://noordergraf.rug.nl/tomb/t00435#> .
 
-tomb:t00435 a t:tombstone.n.01 ;
+tomb:t00435 a :Tomb ;
   :image t00435:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00435:p1 ,
@@ -8,11 +8,11 @@ tomb:t00435 a t:tombstone.n.01 ;
   :ref "GEZANG 199" ;
   :sym t00435:s1 .
 
-t00435:c1 a t:island.n.01 ;
+t00435:c1 a :Island.n.01 ;
   :place place:Schiermonnikoog2747591 ;
   :name "SCHIERMONNIKOOG" .
 
-t00435:p1 a t:male.n.02 ;
+t00435:p1 a :Male ;
   :dob "1866-07-08" ;
   :dod "1948-10-20" ;
   :nam "THOMAS KLONTJE" ;
@@ -23,32 +23,32 @@ t00435:p1 a t:male.n.02 ;
        t00435:r3 ,
        t00435:r4 .
 
-t00435:p2 a t:female.n.02 ;
+t00435:p2 a :Female ;
   :nam "AALTJE JANSJE VISSER" .
 
-t00435:r1 a t:husband.n.01 ;
+t00435:r1 a :Husband.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00435:p2 .
 
-t00435:r2 a t:father.n.01 .
+t00435:r2 a :Father.n.01 .
 
-t00435:r3 a t:grandfather.n.01 .
+t00435:r3 a :Grandfather.n.01 .
 
-t00435:r4 a t:spouse.n.01 ;
+t00435:r4 a :Spouse.n.01 ;
   :tgt t00435:p2 .
 
-t00435:s1 a t:frond.n.01 .
+t00435:s1 a :Frond.n.01 .
 
-t00435:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00435:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00435.jpg" ;
-  dcterms:date "2019-11-02T11:50:34"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:50:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4789 ;

@@ -1,44 +1,44 @@
 @prefix t00259: <https://noordergraf.rug.nl/tomb/t00259#> .
 
-tomb:t00259 a t:tombstone.n.01 ;
+tomb:t00259 a :Tomb ;
   :image t00259:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00259:p1 ;
   :sym t00259:s1 .
 
-t00259:c1 a t:city.n.01 ;
+t00259:c1 a :City.n.01 ;
   :place place:Delfzijl2757340 ;
   :name "DELFZIJL" .
 
-t00259:c2 a t:city.n.01 ;
+t00259:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00259:p1 a t:male.n.02 ;
+t00259:p1 a :Male ;
   :dob "1859-04-23" ;
   :dod "1927-10-04" ;
   :nam "BEREND VAN VEEN" ;
   :pob t00259:c1 ;
   :pod t00259:c2 .
 
-t00259:s1 a t:composite.n.01 ;
+t00259:s1 a :Composite.n.01 ;
   :prt t00259:s2 ,
        t00259:s3 .
 
-t00259:s2 a t:frond.n.01 .
+t00259:s2 a :Frond.n.01 .
 
-t00259:s3 a t:ribbon.n.01 .
+t00259:s3 a :Ribbon.n.01 .
 
-t00259:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00259:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00259.jpg" ;
-  dcterms:date "2019-10-13T14:22:10"^^xsd:dateTime ;
+  dc:date "2019-10-13T14:22:10"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1904 ;

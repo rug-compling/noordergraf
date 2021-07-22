@@ -1,6 +1,6 @@
 @prefix t00917: <https://noordergraf.rug.nl/tomb/t00917#> .
 
-tomb:t00917 a t:tombstone.n.01 ;
+tomb:t00917 a :Tomb ;
   :image t00917:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00917:p1 ,
@@ -8,37 +8,37 @@ tomb:t00917 a t:tombstone.n.01 ;
   :quo "JEZUS UW VERZOENEND STERVEN"@nld ;
   :ref "GEZANG 14"@nld .
 
-t00917:g1 a t:group.n.01 ;
+t00917:g1 a :Group.n.01 ;
   :mem t00917:p1 ,
        t00917:p2 ;
   :rol t00917:r1 .
 
-t00917:g2 a t:people.n.01 .
+t00917:g2 a :People.n.01 .
 
-t00917:p1 a t:female.n.02 ;
+t00917:p1 a :Female ;
   :dob "1879-11-16" ;
   :dod "1938-02-11" ;
   :nam "BERENTJE AARDEMA" .
 
-t00917:p2 a t:male.n.02 ;
+t00917:p2 a :Male ;
   :dob "1880-06-09" ;
   :dod "1970-09-12" ;
   :nam "JAN SCHERINGA" .
 
-t00917:r1 a t:parent.n.01 ;
+t00917:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00917:g2 .
 
-t00917:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00917:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00917.jpg" ;
-  dcterms:date "2020-03-07T14:04:14"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:04:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1715 ;

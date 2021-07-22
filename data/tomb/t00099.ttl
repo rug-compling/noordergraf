@@ -1,25 +1,25 @@
 @prefix t00099: <https://noordergraf.rug.nl/tomb/t00099#> .
 
-tomb:t00099 a t:tombstone.n.01 ;
+tomb:t00099 a :Tomb ;
   :image t00099:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00099:p1 ,
        t00099:p2 ;
   :sym t00099:s1 .
 
-t00099:a1 a t:inverted.a.01 .
+t00099:a1 a :Inverted.a.01 .
 
-t00099:a2 a t:inverted.a.01 .
+t00099:a2 a :Inverted.a.01 .
 
-t00099:c1 a t:municipality.n.01 ;
+t00099:c1 a :Municipality.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00099:o1 a t:alderman.n.01 ;
+t00099:o1 a :Alderman.n.01 ;
   :hco "20110" ;
   :loc t00099:c1 .
 
-t00099:p1 a t:male.n.02 ;
+t00099:p1 a :Male ;
   :dob "1834-02-09" ;
   :dod "1903-12-01" ;
   :nam "GERBRAND WOUTERS" ;
@@ -27,43 +27,43 @@ t00099:p1 a t:male.n.02 ;
   :rol t00099:r1 ;
   :sfx "JR" .
 
-t00099:p2 a t:female.n.02 ;
+t00099:p2 a :Female ;
   :dob "1835-02-08" ;
   :dod "1925-07-28" ;
   :nam "ALIDA DIJK" .
 
-t00099:r1 a t:husband.n.01 ;
+t00099:r1 a :Husband.n.01 ;
   :tgt t00099:p2 .
 
-t00099:s1 a t:composite.n.01 ;
+t00099:s1 a :Composite.n.01 ;
   :prt t00099:s2 ,
        t00099:s3 ,
        t00099:s4 ,
        t00099:s5 ,
        t00099:s6 .
 
-t00099:s2 a t:frond.n.01 .
+t00099:s2 a :Frond.n.01 .
 
-t00099:s3 a t:frond.n.01 .
+t00099:s3 a :Frond.n.01 .
 
-t00099:s4 a t:torch.n.01 ;
+t00099:s4 a :Torch.n.01 ;
   :att t00099:a1 .
 
-t00099:s5 a t:torch.n.01 ;
+t00099:s5 a :Torch.n.01 ;
   :att t00099:a2 .
 
-t00099:s6 a t:ribbon.n.01 .
+t00099:s6 a :Ribbon.n.01 .
 
-t00099:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00099:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00099.jpg" ;
-  dcterms:date "2019-09-24T15:11:05"^^xsd:dateTime ;
+  dc:date "2019-09-24T15:11:05"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2062 ;

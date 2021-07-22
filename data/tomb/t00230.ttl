@@ -1,52 +1,52 @@
 @prefix t00230: <https://noordergraf.rug.nl/tomb/t00230#> .
 
-tomb:t00230 a t:tombstone.n.01 ;
+tomb:t00230 a :Tomb ;
   :image t00230:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00230:p1 ;
   :sym t00230:s1 .
 
-t00230:p1 a t:male.n.02 ;
+t00230:p1 a :Male ;
   :dob "1826-04-11" ;
   :dod "1873-04-29" ;
   :nam "GEERT KOOPS BRUININGA" .
 
-t00230:s1 a t:composite.n.01 ;
+t00230:s1 a :Composite.n.01 ;
   :prt t00230:s2 ,
        t00230:s4 ,
        t00230:s6 ,
        t00230:s8 .
 
-t00230:s2 a t:branch.n.02 .
+t00230:s2 a :Branch.n.02 .
 
-t00230:s3 a t:oak.n.02 ;
+t00230:s3 a :Oak.n.02 ;
   :prt t00230:s2 .
 
-t00230:s4 a t:branch.n.02 .
+t00230:s4 a :Branch.n.02 .
 
-t00230:s5 a t:oak.n.02 ;
+t00230:s5 a :Oak.n.02 ;
   :prt t00230:s4 .
 
-t00230:s6 a t:branch.n.02 .
+t00230:s6 a :Branch.n.02 .
 
-t00230:s7 a t:olive.n.02 ;
+t00230:s7 a :Olive.n.02 ;
   :prt t00230:s6 .
 
-t00230:s8 a t:branch.n.02 .
+t00230:s8 a :Branch.n.02 .
 
-t00230:s9 a t:olive.n.02 ;
+t00230:s9 a :Olive.n.02 ;
   :prt t00230:s8 .
 
-t00230:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00230:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00230.jpg" ;
-  dcterms:date "2019-10-08T14:39:25"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:39:25"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2225 ;

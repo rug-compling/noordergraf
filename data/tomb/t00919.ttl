@@ -1,6 +1,6 @@
 @prefix t00919: <https://noordergraf.rug.nl/tomb/t00919#> .
 
-tomb:t00919 a t:tombstone.n.01 ;
+tomb:t00919 a :Tomb ;
   :image t00919:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00919:p1 ,
@@ -9,11 +9,11 @@ tomb:t00919 a t:tombstone.n.01 ;
        "RUSTPLAATS VAN $p1 $p2"@nld ;
   :sym t00919:s1 .
 
-t00919:c1 a t:village.n.02 ;
+t00919:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00919:p1 a t:male.n.02 ;
+t00919:p1 a :Male ;
   :dob "1865-10-27" ;
   :dod "1938-12-13" ;
   :nam "GEERT HOLMERSMA" ;
@@ -21,7 +21,7 @@ t00919:p1 a t:male.n.02 ;
   :pod t00919:c1 ;
   :rol t00919:r1 .
 
-t00919:p2 a t:female.n.02 ;
+t00919:p2 a :Female ;
   :dob "1870-04-18" ;
   :dod "1934-02-267" ;
   :nam "GEESKE HOLMERSMA" ;
@@ -29,24 +29,24 @@ t00919:p2 a t:female.n.02 ;
   :pod t00919:c1 ;
   :rol t00919:r2 .
 
-t00919:r1 a t:brother.n.01 ;
+t00919:r1 a :Brother.n.01 ;
   :tgt t00919:p2 .
 
-t00919:r2 a t:sister.n.01 ;
+t00919:r2 a :Sister.n.01 ;
   :tgt t00919:p2 .
 
-t00919:s1 a t:oak.n.03 .
+t00919:s1 a :Oak.n.03 .
 
-t00919:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00919:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00919.jpg" ;
-  dcterms:date "2020-03-07T14:03:32"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:03:32"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1715 ;

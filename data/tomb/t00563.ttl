@@ -1,6 +1,6 @@
 @prefix t00563: <https://noordergraf.rug.nl/tomb/t00563#> .
 
-tomb:t00563 a t:tombstone.n.01 ;
+tomb:t00563 a :Tomb ;
   :image t00563:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00563:p1 ,
@@ -8,24 +8,24 @@ tomb:t00563 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00563:s1 .
 
-t00563:a1 a t:weeping.a.02 .
+t00563:a1 a :Weeping.a.02 .
 
-t00563:c1 a t:city.n.01 ;
+t00563:c1 a :City.n.01 ;
   :place place:Veendam2745783 ;
   :name "VEENDAM" .
 
-t00563:c2 a t:village.n.02 ;
+t00563:c2 a :Village.n.02 ;
   :place place:Annerveenschekanaal2759724 ;
   :name "ANNERVEENSCHEKANAAL" .
 
-t00563:p1 a t:male.n.02 ;
+t00563:p1 a :Male ;
   :dob "1848-10-21" ;
   :dod "1919-02-22" ;
   :nam "JACOB VAN DER BORGH" ;
   :pob t00563:c1 ;
   :pod t00563:c1 .
 
-t00563:p2 a t:female.n.02 ;
+t00563:p2 a :Female ;
   :dob "1844-05-05" ;
   :dod "1919-02-20" ;
   :nam "MARGRITA J. KLIPHUIS" ;
@@ -33,22 +33,22 @@ t00563:p2 a t:female.n.02 ;
   :pod t00563:c1 ;
   :rol t00563:r1 .
 
-t00563:r1 a t:spouse.n.01 ;
+t00563:r1 a :Spouse.n.01 ;
   :tgt t00563:p1 .
 
-t00563:s1 a t:willow.n.01 ;
+t00563:s1 a :Willow.n.01 ;
   :att t00563:a1 .
 
-t00563:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00563:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00563.jpg" ;
-  dcterms:date "2019-11-24T13:42:22"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:42:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1046 ;

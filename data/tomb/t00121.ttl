@@ -1,40 +1,40 @@
 @prefix t00121: <https://noordergraf.rug.nl/tomb/t00121#> .
 
-tomb:t00121 a t:tombstone.n.01 ;
+tomb:t00121 a :Tomb ;
   :image t00121:im1 ;
   :site site:gr9752CMharen ;
   :ent t00121:p1 ,
        t00121:p2 ;
   :quo "MAAR IK EN MIJN HUIS, WIJ ZULLEN DEN HERE DIENEN!" .
 
-t00121:p1 a t:male.n.02 ;
+t00121:p1 a :Male ;
   :dob "1913-05-19" ;
   :dod "1972-11-19" ;
   :nam "IMEGINUS A. VOS" ;
   :rol t00121:r1 .
 
-t00121:p2 a t:female.n.02 ;
+t00121:p2 a :Female ;
   :dob "1918-03-27" ;
   :dod "2005-12-16" ;
   :nam "JOHANNA VAN GIJSSEL" ;
   :rol t00121:r2 .
 
-t00121:r1 a t:father.n.01 ;
+t00121:r1 a :Father.n.01 ;
   :att "LIEVE" .
 
-t00121:r2 a t:mother.n.01 ;
+t00121:r2 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00121:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00121:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00121.jpg" ;
-  dcterms:date "2019-09-20T17:44:31"^^xsd:dateTime ;
+  dc:date "2019-09-20T17:44:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1628 ;

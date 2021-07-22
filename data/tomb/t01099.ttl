@@ -1,6 +1,6 @@
 @prefix t01099: <https://noordergraf.rug.nl/tomb/t01099#> .
 
-tomb:t01099 a t:tombstone.n.01 ;
+tomb:t01099 a :Tomb ;
   :image t01099:im1 ;
   :site site:gr9628TKsiddeburen ;
   :ent t01099:p1 ,
@@ -11,47 +11,47 @@ tomb:t01099 a t:tombstone.n.01 ;
        t01099:s2 ,
        t01099:s3 .
 
-t01099:g1 a t:group.n.01 ;
+t01099:g1 a :Group.n.01 ;
   :mem t01099:p1 ,
        t01099:p2 .
 
-t01099:p1 a t:male.n.02 ;
+t01099:p1 a :Male ;
   :dob "1816-02-23" ;
   :dod "1863-06-11" ;
   :nam "DERK T. KUIPER" ;
   :rol t01099:r1 .
 
-t01099:p2 a t:female.n.02 ;
+t01099:p2 a :Female ;
   :nam "E.H. VERWER" .
 
-t01099:p3 a t:male.n.02 ;
+t01099:p3 a :Male ;
   :dob "1861-04-06" ;
   :dod "1863-06-29" ;
   :nam "JAKOB D. KUIPER" ;
   :rol t01099:r2 .
 
-t01099:r1 a t:spouse.n.01 ;
+t01099:r1 a :Spouse.n.01 ;
   :tgt t01099:p2 .
 
-t01099:r2 a t:son.n.01 ;
+t01099:r2 a :Son.n.01 ;
   :tgt t01099:g1 .
 
-t01099:s1 a t:skull.n.01 .
+t01099:s1 a :Skull.n.01 .
 
-t01099:s2 a t:bone.n.01 .
+t01099:s2 a :Bone.n.01 .
 
-t01099:s3 a t:scythe.n.01 .
+t01099:s3 a :Scythe.n.01 .
 
-t01099:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01099:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01099.jpg" ;
-  dcterms:date "2020-09-19T13:06:56"^^xsd:dateTime ;
+  dc:date "2020-09-19T13:06:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2479 ;

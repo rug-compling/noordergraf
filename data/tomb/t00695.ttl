@@ -1,6 +1,6 @@
 @prefix t00695: <https://noordergraf.rug.nl/tomb/t00695#> .
 
-tomb:t00695 a t:tombstone.n.01 ;
+tomb:t00695 a :Tomb ;
   :image t00695:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00695:p1 ,
@@ -10,20 +10,20 @@ tomb:t00695 a t:tombstone.n.01 ;
   :sym t00695:s1 ,
        t00695:s2 .
 
-t00695:a1 a t:weeping.a.02 .
+t00695:a1 a :Weeping.a.02 .
 
-t00695:b1 a t:Epistle_to_the_Romans.n.04 ;
+t00695:b1 a :Epistle_to_the_Romans.n.04 ;
   :prt t00695:c2 .
 
-t00695:c1 a t:village.n.02 ;
+t00695:c1 a :Village.n.02 ;
   :place place:Noordbarge2749996 ;
   :name "NOORDBARGE" .
 
-t00695:c2 a t:chapter.n.01 ;
+t00695:c2 a :Chapter.n.01 ;
   :ord 8 ;
   :prt t00695:v1 .
 
-t00695:p1 a t:male.n.02 ;
+t00695:p1 a :Male ;
   :dob "1846-06-17" ;
   :dod "1924-08-12" ;
   :nam "JAN BETTING" ;
@@ -31,30 +31,30 @@ t00695:p1 a t:male.n.02 ;
   :pod t00695:c1 ;
   :rol t00695:r1 .
 
-t00695:p2 a t:female.n.02 ;
+t00695:p2 a :Female ;
   :nam "H. DENEN" .
 
-t00695:r1 a t:spouse.n.01 ;
+t00695:r1 a :Spouse.n.01 ;
   :tgt t00695:p2 .
 
-t00695:s1 a t:willow.n.01 ;
+t00695:s1 a :Willow.n.01 ;
   :att t00695:a1 .
 
-t00695:s2 a t:frond.n.01 .
+t00695:s2 a :Frond.n.01 .
 
-t00695:v1 a t:verse.n.01 ;
+t00695:v1 a :Verse.n.01 ;
   :ord 1 .
 
-t00695:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00695:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00695.jpg" ;
-  dcterms:date "2019-12-21T13:55:31"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:55:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7810 ;

@@ -1,6 +1,6 @@
 @prefix t00084: <https://noordergraf.rug.nl/tomb/t00084#> .
 
-tomb:t00084 a t:tombstone.n.01 ;
+tomb:t00084 a :Tomb ;
   :image t00084:im1 ;
   :site site:gr9721AAgroningen ;
   :ent t00084:p1 ,
@@ -8,7 +8,7 @@ tomb:t00084 a t:tombstone.n.01 ;
        t00084:p3 ;
   :sym t00084:s1 .
 
-t00084:p1 a t:male.n.02 ;
+t00084:p1 a :Male ;
   :dob "1893-06-28" ;
   :dod "1964-11-12" ;
   :nam "JAN KORSMAN" ;
@@ -17,44 +17,44 @@ t00084:p1 a t:male.n.02 ;
        t00084:r3 ,
        t00084:r4 .
 
-t00084:p2 a t:female.n.02 ;
+t00084:p2 a :Female ;
   :dob "1905-07-07" ;
   :dod "1986-04-01" ;
   :nam "JOHANNA S.M. FISCHER" ;
   :rol t00084:r5 ,
        t00084:r6 .
 
-t00084:p3 a t:female.n.02 ;
+t00084:p3 a :Female ;
   :nam "F.P. VRIESE" .
 
-t00084:r1 a t:father.n.01 .
+t00084:r1 a :Father.n.01 .
 
-t00084:r2 a t:grandfather.n.01 .
+t00084:r2 a :Grandfather.n.01 .
 
-t00084:r3 a t:husband.n.01 ;
+t00084:r3 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00084:p2 .
 
-t00084:r4 a t:widower.n.01 ;
+t00084:r4 a :Widower.n.01 ;
   :tgt t00084:p3 .
 
-t00084:r5 a t:mother.n.01 ;
+t00084:r5 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00084:r6 a t:grandmother.n.01 .
+t00084:r6 a :Grandmother.n.01 .
 
-t00084:s1 a t:cross.n.03 .
+t00084:s1 a :Cross.n.03 .
 
-t00084:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00084:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00084.jpg" ;
-  dcterms:date "2019-09-25T10:58:02"^^xsd:dateTime ;
+  dc:date "2019-09-25T10:58:02"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2035 ;

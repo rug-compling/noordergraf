@@ -1,6 +1,6 @@
 @prefix t00923: <https://noordergraf.rug.nl/tomb/t00923#> .
 
-tomb:t00923 a t:tombstone.n.01 ;
+tomb:t00923 a :Tomb ;
   :image t00923:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00923:p1 ,
@@ -9,11 +9,11 @@ tomb:t00923 a t:tombstone.n.01 ;
   :sym t00923:s1 ,
        t00923:s2 .
 
-t00923:c1 a t:village.n.02 ;
+t00923:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00923:p1 a t:male.n.02 ;
+t00923:p1 a :Male ;
   :dob "1836-07-18" ;
   :dod "1910-11-23" ;
   :nam "TONNIS OOSTERHUIS" ;
@@ -21,26 +21,26 @@ t00923:p1 a t:male.n.02 ;
   :pod t00923:c1 ;
   :rol t00923:r1 .
 
-t00923:p2 a t:female.n.02 ;
+t00923:p2 a :Female ;
   :nam "AALTIEN HULSHOF" .
 
-t00923:r1 a t:spouse.n.01 ;
+t00923:r1 a :Spouse.n.01 ;
   :tgt t00923:p2 .
 
-t00923:s1 a t:oak.n.01 .
+t00923:s1 a :Oak.n.01 .
 
-t00923:s2 a t:frond.n.01 .
+t00923:s2 a :Frond.n.01 .
 
-t00923:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00923:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00923.jpg" ;
-  dcterms:date "2020-03-07T14:10:19"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:10:19"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1719 ;

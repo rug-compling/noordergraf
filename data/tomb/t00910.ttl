@@ -1,32 +1,32 @@
 @prefix t00910: <https://noordergraf.rug.nl/tomb/t00910#> .
 
-tomb:t00910 a t:tombstone.n.01 ;
+tomb:t00910 a :Tomb ;
   :image t00910:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00910:p1 ,
        t00910:p2 ;
   :lan "NLD" .
 
-t00910:p1 a t:male.n.02 ;
+t00910:p1 a :Male ;
   :nam "KORNELIS WATERBOEK" .
 
-t00910:p2 a t:female.n.02 ;
+t00910:p2 a :Female ;
   :nam "GRIETJE VOS" ;
   :rol t00910:r1 .
 
-t00910:r1 a t:spouse.n.01 ;
+t00910:r1 a :Spouse.n.01 ;
   :tgt t00910:p1 .
 
-t00910:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00910:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00910.jpg" ;
-  dcterms:date "2020-03-07T14:10:53"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:10:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1719 ;

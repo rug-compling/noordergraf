@@ -1,39 +1,39 @@
 @prefix t00332: <https://noordergraf.rug.nl/tomb/t00332#> .
 
-tomb:t00332 a t:tombstone.n.01 ;
+tomb:t00332 a :Tomb ;
   :image t00332:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00332:p1 ,
        t00332:p2 .
 
-t00332:p1 a t:male.n.02 ;
+t00332:p1 a :Male ;
   :dob "1823-03-10" ;
   :dod "1889-11-03" ;
   :nam "AREND J. SEINEN" ;
   :rol t00332:r1 ,
        t00332:r2 .
 
-t00332:p2 a t:female.n.02 ;
+t00332:p2 a :Female ;
   :dob "1831-09-30" ;
   :dod "1906-08-08" ;
   :nam "DINA REGINA DE HAAN" .
 
-t00332:r1 a t:spouse.n.01 ;
+t00332:r1 a :Spouse.n.01 ;
   :bef t00332:r2 .
 
-t00332:r2 a t:spouse.n.01 ;
+t00332:r2 a :Spouse.n.01 ;
   :tgt t00332:p2 .
 
-t00332:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00332:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00332.jpg" ;
-  dcterms:date "2019-10-19T14:19:48"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:19:48"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7158 ;

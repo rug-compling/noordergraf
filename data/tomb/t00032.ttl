@@ -1,41 +1,41 @@
 @prefix t00032: <https://noordergraf.rug.nl/tomb/t00032#> .
 
-tomb:t00032 a t:tombstone.n.01 ;
+tomb:t00032 a :Tomb ;
   :image t00032:im1 ;
   :site site:gr9752CMharen ;
   :ent t00032:p1 ;
   :sym t00032:s1 .
 
-t00032:a1 a t:weeping.a.02 .
+t00032:a1 a :Weeping.a.02 .
 
-t00032:c1 a t:village.n.02 ;
+t00032:c1 a :Village.n.02 ;
   :place place:Noorddijk2749981 ;
   :name "NOORDDIJK" .
 
-t00032:c2 a t:town.n.01 ;
+t00032:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00032:p1 a t:male.n.02 ;
+t00032:p1 a :Male ;
   :dob "1919-02-10" ;
   :dod "1936-03-31" ;
   :nam "ADOLF EISSES" ;
   :pob t00032:c1 ;
   :pod t00032:c2 .
 
-t00032:s1 a t:willow.n.01 ;
+t00032:s1 a :Willow.n.01 ;
   :att t00032:a1 .
 
-t00032:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00032:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00032.jpg" ;
-  dcterms:date "2019-09-27T17:58:34"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:58:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1626 ;

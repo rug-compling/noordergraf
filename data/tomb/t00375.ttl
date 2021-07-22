@@ -1,28 +1,28 @@
 @prefix t00375: <https://noordergraf.rug.nl/tomb/t00375#> .
 
-tomb:t00375 a t:tombstone.n.01 ;
+tomb:t00375 a :Tomb ;
   :image t00375:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00375:p1 ,
        t00375:p2 ;
   :ref t00375:v1 .
 
-t00375:b1 a t:Isaiah.n.01 ;
+t00375:b1 a :Isaiah.n.01 ;
   :prt t00375:c3 .
 
-t00375:c1 a t:village.n.02 ;
+t00375:c1 a :Village.n.02 ;
   :place place:Uithuizermeeden2745968 ;
   :name "UITHUIZERMEEDEN" .
 
-t00375:c2 a t:city.n.01 ;
+t00375:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00375:c3 a t:chapter.n.01 ;
+t00375:c3 a :Chapter.n.01 ;
   :ord 51 ;
   :prt t00375:v2 .
 
-t00375:p1 a t:female.n.02 ;
+t00375:p1 a :Female ;
   :dob "1865-01-18" ;
   :dod "1939-04-06" ;
   :nam "BERENDINA BOEKELO" ;
@@ -31,32 +31,32 @@ t00375:p1 a t:female.n.02 ;
   :rol t00375:r1 ,
        t00375:r2 .
 
-t00375:p2 a t:male.n.02 ;
+t00375:p2 a :Male ;
   :nam "H. DE GRAAF" .
 
-t00375:r1 a t:mother.n.01 ;
+t00375:r1 a :Mother.n.01 ;
   :att "INNIG GELIEFDE" .
 
-t00375:r2 a t:widow.n.01 ;
+t00375:r2 a :Widow.n.01 ;
   :tgt t00375:p2 .
 
-t00375:v1 a t:part.n.09 ;
+t00375:v1 a :Part.n.09 ;
   :nam "A" .
 
-t00375:v2 a t:verse.n.01 ;
+t00375:v2 a :Verse.n.01 ;
   :ord 10 ;
   :prt t00375:v1 .
 
-t00375:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00375:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00375.jpg" ;
-  dcterms:date "2019-10-27T10:36:21"^^xsd:dateTime ;
+  dc:date "2019-10-27T10:36:21"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1913 ;

@@ -1,6 +1,6 @@
 @prefix t01075: <https://noordergraf.rug.nl/tomb/t01075#> .
 
-tomb:t01075 a t:tombstone.n.01 ;
+tomb:t01075 a :Tomb ;
   :image t01075:im1 ;
   :site site:gr9751XCharen ;
   :ent t01075:p1 ,
@@ -8,49 +8,49 @@ tomb:t01075 a t:tombstone.n.01 ;
   :quo "NIET MEER TASTBAAR, MAAR VOOR ALTIJD IN ONS HART ONZE LIEVE DAD EN MAM, OPA EBN OMA"@nld ;
   :sym t01075:s1 .
 
-t01075:g1 a t:group.n.01 .
+t01075:g1 a :Group.n.01 .
 
-t01075:p1 a t:male.n.02 ;
+t01075:p1 a :Male ;
   :dob "1936-03-09" ;
   :dod "2008-10-04" ;
   :nam "ALEX FREERK SCHREUDER" ;
   :rol t01075:r1 ,
        t01075:r2 .
 
-t01075:p2 a t:female.n.02 ;
+t01075:p2 a :Female ;
   :dob "1938-11-22" ;
   :dod "2012-11-11" ;
   :nam "JANNY SCHREUDER-DE JONG" ;
   :rol t01075:r3 ,
        t01075:r4 .
 
-t01075:r1 a t:father.n.01 ;
+t01075:r1 a :Father.n.01 ;
   :att "LIEVE" ;
   :tgt t01075:g1 .
 
-t01075:r2 a t:grandfather.n.01 ;
+t01075:r2 a :Grandfather.n.01 ;
   :tgt t01075:g1 .
 
-t01075:r3 a t:mother.n.01 ;
+t01075:r3 a :Mother.n.01 ;
   :att "LIEVE" ;
   :tgt t01075:g1 .
 
-t01075:r4 a t:grandmother.n.01 ;
+t01075:r4 a :Grandmother.n.01 ;
   :tgt t01075:g1 .
 
-t01075:s1 a t:hand.n.01 ;
+t01075:s1 a :Hand.n.01 ;
   :qua 2 .
 
-t01075:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01075:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01075.jpg" ;
-  dcterms:date "2020-04-30T07:37:22"^^xsd:dateTime ;
+  dc:date "2020-04-30T07:37:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1597 ;

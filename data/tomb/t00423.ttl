@@ -1,46 +1,46 @@
 @prefix t00423: <https://noordergraf.rug.nl/tomb/t00423#> .
 
-tomb:t00423 a t:tombstone.n.01 ;
+tomb:t00423 a :Tomb ;
   :image t00423:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00423:p1 ;
   :ref t00423:v1 ;
   :sym t00423:s1 .
 
-t00423:b1 a t:John.n.05 ;
+t00423:b1 a :John.n.05 ;
   :prt t00423:c3 .
 
-t00423:c3 a t:chapter.n.01 ;
+t00423:c3 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00423:v1 .
 
-t00423:p1 a t:female.n.02 ;
+t00423:p1 a :Female ;
   :dob "1895-12-12" ;
   :dod "1925-05-28" ;
   :nam "NEELTJE FENENGA" ;
   :rol t00423:r1 ,
        t00423:r2 .
 
-t00423:r1 a t:daughter.n.01 .
+t00423:r1 a :Daughter.n.01 .
 
-t00423:r2 a t:sister.n.01 .
+t00423:r2 a :Sister.n.01 .
 
-t00423:s1 a t:swastika.n.01 .
+t00423:s1 a :Swastika.n.01 .
 
-t00423:v1 a t:verse.n.01 ;
+t00423:v1 a :Verse.n.01 ;
   :ord 19 ;
   :txt "IK LEEF EN GIJ ZULT LEVEN" .
 
-t00423:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00423:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00423.jpg" ;
-  dcterms:date "2019-11-02T11:36:10"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:36:10"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4794 ;

@@ -1,38 +1,38 @@
 @prefix t00248: <https://noordergraf.rug.nl/tomb/t00248#> .
 
-tomb:t00248 a t:tombstone.n.01 ;
+tomb:t00248 a :Tomb ;
   :image t00248:im1 ;
   :site site:gr9751BBharen ;
   :ent t00248:p1 ;
   :sym t00248:s1 .
 
-t00248:c1 a t:village.n.02 ;
+t00248:c1 a :Village.n.02 ;
   :place place:Zeerijp2744003 ;
   :name "ZEERIJP" .
 
-t00248:c2 a t:city.n.01 ;
+t00248:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00248:p1 a t:female.n.02 ;
+t00248:p1 a :Female ;
   :dob "1868-08-24" ;
   :dod "1950-11-03" ;
   :nam "TRIJNTJE VELDMAN" ;
   :pob t00248:c1 ;
   :pod t00248:c2 .
 
-t00248:s1 a t:frond.n.01 .
+t00248:s1 a :Frond.n.01 .
 
-t00248:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00248:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00248.jpg" ;
-  dcterms:date "2019-10-11T17:20:32"^^xsd:dateTime ;
+  dc:date "2019-10-11T17:20:32"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1725 ;

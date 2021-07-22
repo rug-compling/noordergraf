@@ -1,25 +1,25 @@
 @prefix t00082: <https://noordergraf.rug.nl/tomb/t00082#> .
 
-tomb:t00082 a t:tombstone.n.01 ;
+tomb:t00082 a :Tomb ;
   :image t00082:im1 ;
   :site site:gr9721AAgroningen ;
   :ent t00082:p1 ,
        t00082:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" .
 
-t00082:c1 a t:city.n.01 ;
+t00082:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00082:c2 a t:city.n.01 ;
+t00082:c2 a :City.n.01 ;
   :place place:Dortmund2935517 ;
   :name "DORTMUND" .
 
-t00082:c3 a t:city.n.01 ;
+t00082:c3 a :City.n.01 ;
   :place place:Zwolle2743477 ;
   :name "ZWOLLE" .
 
-t00082:p1 a t:male.n.02 ;
+t00082:p1 a :Male ;
   :dob "1879-04-20" ;
   :dod "1947-05-28" ;
   :nam "LUDWIG GOEKEN" ;
@@ -27,26 +27,26 @@ t00082:p1 a t:male.n.02 ;
   :pod t00082:c1 ;
   :rol t00082:r1 .
 
-t00082:p2 a t:female.n.02 ;
+t00082:p2 a :Female ;
   :dob "1877-04-24" ;
   :dod "1950-12-12" ;
   :nam "HENDERIKA G. VAN GOOZEN" ;
   :pob t00082:c3 ;
   :pod t00082:c1 .
 
-t00082:r1 a t:husband.n.01 ;
+t00082:r1 a :Husband.n.01 ;
   :tgt t00082:p2 .
 
-t00082:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00082:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00082.jpg" ;
-  dcterms:date "2019-09-25T11:01:43"^^xsd:dateTime ;
+  dc:date "2019-09-25T11:01:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2036 ;

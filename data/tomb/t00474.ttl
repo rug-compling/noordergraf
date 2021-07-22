@@ -1,29 +1,29 @@
 @prefix t00474: <https://noordergraf.rug.nl/tomb/t00474#> .
 
-tomb:t00474 a t:tombstone.n.01 ;
+tomb:t00474 a :Tomb ;
   :image t00474:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00474:p1 ,
        t00474:p2 ;
   :quo "VOORZIEN VAN DE H.H. SACRAMENTEN DER STERVENDEN" .
 
-t00474:c1 a t:city.n.01 ;
+t00474:c1 a :City.n.01 ;
   :place place:Franeker2755845 ;
   :name "FRANEKER" .
 
-t00474:c2 a t:city.n.01 ;
+t00474:c2 a :City.n.01 ;
   :place place:Dokkum2756759 ;
   :name "DOKKUM" .
 
-t00474:c3 a t:village.n.02 ;
+t00474:c3 a :Village.n.02 ;
   :place place:Dronryp2756561 ;
   :name "DRONRIJP" .
 
-t00474:c4 a t:city.n.01 ;
+t00474:c4 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LEEUWARDEN" .
 
-t00474:p1 a t:male.n.02 ;
+t00474:p1 a :Male ;
   :dob "1882-07-03" ;
   :dod "1933-12-17" ;
   :nam "JOHANNES TERPSTRA" ;
@@ -31,7 +31,7 @@ t00474:p1 a t:male.n.02 ;
   :pod t00474:c2 ;
   :rol t00474:r1 .
 
-t00474:p2 a t:person.n.01 ;
+t00474:p2 a :Person ;
   :dob "1887-07-28" ;
   :dod "1963-07-05" ;
   :nam "C. POSTMA" ;
@@ -39,22 +39,22 @@ t00474:p2 a t:person.n.01 ;
   :pod t00474:c4 ;
   :rol t00474:r2 .
 
-t00474:r1 a t:parent.n.01 ;
+t00474:r1 a :Parent.n.01 ;
   :tgt t00474:p3 .
 
-t00474:r2 a t:parent.n.01 ;
+t00474:r2 a :Parent.n.01 ;
   :tgt t00474:p3 .
 
-t00474:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00474:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00474.jpg" ;
-  dcterms:date "2019-11-09T14:43:38"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:43:38"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2072 ;

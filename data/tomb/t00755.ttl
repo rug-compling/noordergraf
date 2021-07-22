@@ -1,6 +1,6 @@
 @prefix t00755: <https://noordergraf.rug.nl/tomb/t00755#> .
 
-tomb:t00755 a t:tombstone.n.01 ;
+tomb:t00755 a :Tomb ;
   :image t00755:im1 ;
   :site site:gr9936BTfarmsum ;
   :ent t00755:g1 ,
@@ -10,38 +10,38 @@ tomb:t00755 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00755:s1 .
 
-t00755:g1 a t:group.n.01 ;
+t00755:g1 a :Group.n.01 ;
   :mem t00755:p2 ,
        t00755:p3 .
 
-t00755:p1 a t:male.n.02 ;
+t00755:p1 a :Male ;
   :dob "1862-06-08" ;
   :dod "1865-10-27" ;
   :nam "KLAAS JANS" ;
   :rol t00755:r1 .
 
-t00755:p2 a t:person.n.01 ;
+t00755:p2 a :Person ;
   :nam "J.J. HAKEN" .
 
-t00755:p3 a t:person.n.01 ;
+t00755:p3 a :Person ;
   :nam "T.R. REMTEMA" .
 
-t00755:r1 a t:son.n.01 ;
+t00755:r1 a :Son.n.01 ;
   :att "GELIEFD" ;
   :tgt t00755:g1 .
 
-t00755:s1 a t:rose.n.01 .
+t00755:s1 a :Rose.n.01 .
 
-t00755:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00755:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00755.jpg" ;
-  dcterms:date "2019-12-28T12:46:33"^^xsd:dateTime ;
+  dc:date "2019-12-28T12:46:33"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3111 ;

@@ -1,39 +1,39 @@
 @prefix t00349: <https://noordergraf.rug.nl/tomb/t00349#> .
 
-tomb:t00349 a t:tombstone.n.01 ;
+tomb:t00349 a :Tomb ;
   :image t00349:im1 ;
   :site site:dr9481CGvries ;
   :ent t00349:p1 ,
        t00349:p2 .
 
-t00349:c1 a t:village.n.02 ;
+t00349:c1 a :Village.n.02 ;
   :place place:Zeyen2743985 ;
   :name "ZEIJEN" .
 
-t00349:p1 a t:male.n.02 ;
+t00349:p1 a :Male ;
   :dob "1891-10-20" ;
   :dod "1965-02-09" ;
   :nam "JAN NOORD" ;
   :pob t00349:c1 ;
   :pod t00349:c1 .
 
-t00349:p2 a t:female.n.02 ;
+t00349:p2 a :Female ;
   :dob "1901-03-01" ;
   :dod "1978-12-08" ;
   :nam "JEIGIEN ARENDS" ;
   :pob t00349:c1 ;
   :pod t00349:c1 .
 
-t00349:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00349:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00349.jpg" ;
-  dcterms:date "2019-10-25T17:40:57"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:40:57"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0801 ;

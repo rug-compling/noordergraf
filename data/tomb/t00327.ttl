@@ -1,6 +1,6 @@
 @prefix t00327: <https://noordergraf.rug.nl/tomb/t00327#> .
 
-tomb:t00327 a t:tombstone.n.01 ;
+tomb:t00327 a :Tomb ;
   :image t00327:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00327:p1 ,
@@ -9,24 +9,24 @@ tomb:t00327 a t:tombstone.n.01 ;
        t00327:p4 ;
   :sym t00327:s1 .
 
-t00327:a1 a t:weeping.a.02 .
+t00327:a1 a :Weeping.a.02 .
 
-t00327:b1 a t:Revelation.n.04 ;
+t00327:b1 a :Revelation.n.04 ;
   :prt t00327:c2 .
 
-t00327:c1 a t:town.n.01 ;
+t00327:c1 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00327:c2 a t:chapter.n.01 ;
+t00327:c2 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00327:v2 .
 
-t00327:g1 a t:group.n.01 ;
+t00327:g1 a :Group.n.01 ;
   :mem t00327:p1 ,
        t00327:p2 .
 
-t00327:p1 a t:female.n.02 ;
+t00327:p1 a :Female ;
   :dob "1844-07-30" ;
   :dod "1926-01-19" ;
   :nam "LUCIA ERDT" ;
@@ -37,13 +37,13 @@ t00327:p1 a t:female.n.02 ;
        t00327:r2 ,
        t00327:r3 .
 
-t00327:p2 a t:male.n.02 ;
+t00327:p2 a :Male ;
   :nam "HARM FAAS" .
 
-t00327:p3 a t:male.n.02 ;
+t00327:p3 a :Male ;
   :nam "J. HUTTEN" .
 
-t00327:p4 a t:female.n.02 ;
+t00327:p4 a :Female ;
   :dob "1882-08-25" ;
   :dod "1950-04-26" ;
   :nam "AALTJE FAAS" ;
@@ -52,40 +52,40 @@ t00327:p4 a t:female.n.02 ;
   :ref "PSALM 10:14 ONBERIJMD" ;
   :rol t00327:r4 .
 
-t00327:r1 a t:mother.n.01 ;
+t00327:r1 a :Mother.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00327:p4 .
 
-t00327:r2 a t:widow.n.01 ;
+t00327:r2 a :Widow.n.01 ;
   :bef t00327:r3 ;
   :tgt t00327:p2 .
 
-t00327:r3 a t:widow.n.01 ;
+t00327:r3 a :Widow.n.01 ;
   :tgt t00327:p3 .
 
-t00327:r4 a t:daughter.n.01 ;
+t00327:r4 a :Daughter.n.01 ;
   :tgt t00327:g1 .
 
-t00327:s1 a t:willow.n.01 ;
+t00327:s1 a :Willow.n.01 ;
   :att t00327:a1 .
 
-t00327:v1 a t:part.n.09 ;
+t00327:v1 a :Part.n.09 ;
   :nam "B" .
 
-t00327:v2 a t:verse.n.01 ;
+t00327:v2 a :Verse.n.01 ;
   :ord 13 ;
   :prt t00327:v1 .
 
-t00327:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00327:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00327.jpg" ;
-  dcterms:date "2019-10-19T14:43:58"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:43:58"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7151 ;

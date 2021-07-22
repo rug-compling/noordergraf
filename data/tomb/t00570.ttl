@@ -1,6 +1,6 @@
 @prefix t00570: <https://noordergraf.rug.nl/tomb/t00570#> .
 
-tomb:t00570 a t:tombstone.n.01 ;
+tomb:t00570 a :Tomb ;
   :image t00570:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00570:p1 ,
@@ -10,49 +10,49 @@ tomb:t00570 a t:tombstone.n.01 ;
        t00570:s3 ,
        t00570:s4 .
 
-t00570:c1 a t:more.r.01 ;
+t00570:c1 a :More.r.01 ;
   :op1 t00570:m1 ;
   :op2 t00570:m2 .
 
-t00570:m1 a t:measure.n.02 .
+t00570:m1 a :Measure.n.02 .
 
-t00570:m2 a t:measure.n.02 ;
+t00570:m2 a :Measure.n.02 ;
   :mem t00570:u1 ;
   :qua 62 .
 
-t00570:p1 a t:male.n.02 ;
+t00570:p1 a :Male ;
   :age t00570:m1 ;
   :dob "1865-08-29" ;
   :nam "AREND VAN LINGE" ;
   :rol t00570:r1 ;
   :sfx "EZ" .
 
-t00570:p2 a t:female.n.02 ;
+t00570:p2 a :Female ;
   :nam "AFIEN R. GIEZEN" .
 
-t00570:r1 a t:spouse.n.01 ;
+t00570:r1 a :Spouse.n.01 ;
   :tgt t00570:p2 .
 
-t00570:s1 a t:butterfly.n.01 .
+t00570:s1 a :Butterfly.n.01 .
 
-t00570:s2 a t:frond.n.01 .
+t00570:s2 a :Frond.n.01 .
 
-t00570:s3 a t:oak.n.02 .
+t00570:s3 a :Oak.n.02 .
 
-t00570:s4 a t:scythe.n.01 .
+t00570:s4 a :Scythe.n.01 .
 
-t00570:u1 a t:year.n.01 .
+t00570:u1 a :Year.n.01 .
 
-t00570:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00570:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00570.jpg" ;
-  dcterms:date "2019-11-24T13:52:07"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:52:07"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1047 ;

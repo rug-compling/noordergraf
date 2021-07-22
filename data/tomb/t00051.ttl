@@ -1,20 +1,20 @@
 @prefix t00051: <https://noordergraf.rug.nl/tomb/t00051#> .
 
-tomb:t00051 a t:tombstone.n.01 ;
+tomb:t00051 a :Tomb ;
   :image t00051:im1 ;
   :site site:gr9752CMharen ;
   :ent t00051:p1 ,
        t00051:p2 .
 
-t00051:c1 a t:town.n.01 ;
+t00051:c1 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00051:c2 a t:town.n.01 ;
+t00051:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00051:p1 a t:female.n.02 ;
+t00051:p1 a :Female ;
   :dob "1889-10-04" ;
   :dod "1949-10-24" ;
   :nam "JOHANNA NIEBORG" ;
@@ -23,7 +23,7 @@ t00051:p1 a t:female.n.02 ;
   :rol t00051:r1 ,
        t00051:r2 .
 
-t00051:p2 a t:male.n.02 ;
+t00051:p2 a :Male ;
   :dob "1891-04-20" ;
   :dod "1954-02-17" ;
   :nam "GEERT MULDER" ;
@@ -31,26 +31,26 @@ t00051:p2 a t:male.n.02 ;
   :pod t00051:c2 ;
   :rol t00051:r3 .
 
-t00051:r1 a t:wife.n.01 ;
+t00051:r1 a :Wife.n.01 ;
   :att "GELIEFD" ;
   :tgt t00051:p2 .
 
-t00051:r2 a t:parent.n.01 ;
+t00051:r2 a :Parent.n.01 ;
   :att "LIEVE" .
 
-t00051:r3 a t:parent.n.01 ;
+t00051:r3 a :Parent.n.01 ;
   :att "LIEVE" .
 
-t00051:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00051:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00051.jpg" ;
-  dcterms:date "2019-09-27T17:42:46"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:42:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1631 ;

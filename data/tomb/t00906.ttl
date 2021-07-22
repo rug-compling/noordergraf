@@ -1,25 +1,25 @@
 @prefix t00906: <https://noordergraf.rug.nl/tomb/t00906#> .
 
-tomb:t00906 a t:tombstone.n.01 ;
+tomb:t00906 a :Tomb ;
   :image t00906:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00906:p1 ,
        t00906:p2 ;
   :lan "NLD" .
 
-t00906:c1 a t:village.n.02 ;
+t00906:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00906:c2 a t:village.n.02 ;
+t00906:c2 a :Village.n.02 ;
   :place place:Zuidhorn2743694 ;
   :name "ZUIDHORN" .
 
-t00906:c3 a t:village.n.02 ;
+t00906:c3 a :Village.n.02 ;
   :place place:Roden2748026 ;
   :name "RODEN" .
 
-t00906:p1 a t:male.n.02 ;
+t00906:p1 a :Male ;
   :dob "1870-10-01" ;
   :dod "1936-01-04" ;
   :nam "J.J. TEN HOOR" ;
@@ -27,26 +27,26 @@ t00906:p1 a t:male.n.02 ;
   :pod t00906:c2 ;
   :rol t00906:r1 .
 
-t00906:p2 a t:female.n.02 ;
+t00906:p2 a :Female ;
   :dob "1869-03-19" ;
   :dod "1954-02-23" ;
   :nam "A. TALENS" ;
   :pob t00906:c3 ;
   :pod t00906:c1 .
 
-t00906:r1 a t:spouse.n.01 ;
+t00906:r1 a :Spouse.n.01 ;
   :tgt t00906:p2 .
 
-t00906:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00906:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00906.jpg" ;
-  dcterms:date "2020-03-07T14:20:54"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:20:54"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1724 ;

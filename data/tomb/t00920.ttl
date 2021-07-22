@@ -1,6 +1,6 @@
 @prefix t00920: <https://noordergraf.rug.nl/tomb/t00920#> .
 
-tomb:t00920 a t:tombstone.n.01 ;
+tomb:t00920 a :Tomb ;
   :image t00920:im1 ;
   :site site:gr9722SNgroningen ;
   :text "willem dirk\nnicolaas smeenk\nvrouwenarts\n★ 15_8_1902 te nieuwenhoorn\n✝ 28_11_1930 te groningen\ngerard jan\nsmeenk\noud notaris te boskoop\n★ 30_7_1901 te nieuwenhoorn\n✝ 26_7_1972 te boskoop" ;
@@ -8,26 +8,26 @@ tomb:t00920 a t:tombstone.n.01 ;
        t00920:p2 ;
   :lan "NLD" .
 
-t00920:c1 a t:village.n.02 ;
+t00920:c1 a :Village.n.02 ;
   :place place:Nieuwenhoorn2750280 ;
   :name "NIEUWENHOORN" .
 
-t00920:c2 a t:city.n.01 ;
+t00920:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00920:c3 a t:town.n.01 ;
+t00920:c3 a :Town.n.01 ;
   :place place:Boskoop2758547 ;
   :name "BOSKOOP" .
 
-t00920:o1 a t:gynaecologist.n.01 ;
+t00920:o1 a :Gynaecologist.n.01 ;
   :hco "06120" .
 
-t00920:o2 a t:notary.n.01 ;
+t00920:o2 a :Notary.n.01 ;
   :hco "12310" ;
   :loc t00920:c3 .
 
-t00920:p1 a t:male.n.02 ;
+t00920:p1 a :Male ;
   :dob "1902-08-15" ;
   :dod "1930-11-28" ;
   :nam "WILLEM DIRK NICOLAAS SMEENK" ;
@@ -35,7 +35,7 @@ t00920:p1 a t:male.n.02 ;
   :pob t00920:c1 ;
   :pod t00920:c2 .
 
-t00920:p2 a t:male.n.02 ;
+t00920:p2 a :Male ;
   :dob "1901-07-30" ;
   :dod "1972-07-26" ;
   :nam "GERARD JAN SMEENK" ;
@@ -43,16 +43,16 @@ t00920:p2 a t:male.n.02 ;
   :pob t00920:c1 ;
   :pod t00920:c3 .
 
-t00920:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00920:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00920.jpg" ;
-  dcterms:date "2020-03-13T12:34:23"^^xsd:dateTime ;
+  dc:date "2020-03-13T12:34:23"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1911 ;

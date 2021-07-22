@@ -1,6 +1,6 @@
 @prefix t00391: <https://noordergraf.rug.nl/tomb/t00391#> .
 
-tomb:t00391 a t:tombstone.n.01 ;
+tomb:t00391 a :Tomb ;
   :image t00391:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00391:p1 ,
@@ -9,56 +9,56 @@ tomb:t00391 a t:tombstone.n.01 ;
        t00391:v2 ;
   :sym t00391:s1 .
 
-t00391:b1 a t:Luke.n.02 ;
+t00391:b1 a :Luke.n.02 ;
   :prt t00391:c1 .
 
-t00391:b2 a t:First_Epistle_to_the_Corinthians.n.01 ;
+t00391:b2 a :First_Epistle_to_the_Corinthians.n.01 ;
   :prt t00391:c2 .
 
-t00391:c1 a t:chapter.n.01 ;
+t00391:c1 a :Chapter.n.01 ;
   :ord 2 ;
   :prt t00391:v1 .
 
-t00391:c2 a t:chapter.n.01 ;
+t00391:c2 a :Chapter.n.01 ;
   :ord 2 ;
   :prt t00391:v2 .
 
-t00391:p1 a t:female.n.02 ;
+t00391:p1 a :Female ;
   :dob "1833-04-24" ;
   :dod "1931-02-07" ;
   :nam "SOPHIAS DE VRIES" ;
   :rol t00391:r1 .
 
-t00391:p2 a t:male.n.02 ;
+t00391:p2 a :Male ;
   :dob "1831-02-03" ;
   :dod "1911-12-01" ;
   :nam "SIJKE A. DIJKSTRA" ;
   :rol t00391:r2 .
 
-t00391:r1 a t:parent.n.01 ;
+t00391:r1 a :Parent.n.01 ;
   :att "GELIEFDE" .
 
-t00391:r2 a t:parent.n.01 ;
+t00391:r2 a :Parent.n.01 ;
   :att "GELIEFDE" .
 
-t00391:s1 a t:flower.n.01 .
+t00391:s1 a :Flower.n.01 .
 
-t00391:v1 a t:verse.n.01 ;
+t00391:v1 a :Verse.n.01 ;
   :ord 30 .
 
-t00391:v2 a t:verse.n.01 ;
+t00391:v2 a :Verse.n.01 ;
   :ord 19 .
 
-t00391:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00391:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00391.jpg" ;
-  dcterms:date "2019-10-26T15:04:11"^^xsd:dateTime ;
+  dc:date "2019-10-26T15:04:11"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2519 ;

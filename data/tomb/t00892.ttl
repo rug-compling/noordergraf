@@ -1,6 +1,6 @@
 @prefix t00892: <https://noordergraf.rug.nl/tomb/t00892#> .
 
-tomb:t00892 a t:tombstone.n.01 ;
+tomb:t00892 a :Tomb ;
   :image t00892:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00892:p1 ;
@@ -10,48 +10,48 @@ tomb:t00892 a t:tombstone.n.01 ;
        t00892:s2 ,
        t00892:s3 .
 
-t00892:b1 a t:Revelation.n.04 ;
+t00892:b1 a :Revelation.n.04 ;
   :prt t00892:c2 .
 
-t00892:c1 a t:village.n.02 ;
+t00892:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00892:c2 a t:chapter.n.01 ;
+t00892:c2 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00892:v1 .
 
-t00892:o1 a t:teacher.n.01 ;
+t00892:o1 a :Teacher.n.01 ;
   :beg "XX-XX-1815" ;
   :hco "13320" ;
   :loc t00892:c1 .
 
-t00892:p1 a t:male.n.02 ;
+t00892:p1 a :Male ;
   :dob "1793-04-10" ;
   :dod "1857-07-12" ;
   :nam "JAN M. TEN HOOR" ;
   :occ t00892:o1 .
 
-t00892:s1 a t:skull.n.01 .
+t00892:s1 a :Skull.n.01 .
 
-t00892:s2 a t:bone.n.01 .
+t00892:s2 a :Bone.n.01 .
 
-t00892:s3 a t:bone.n.01 .
+t00892:s3 a :Bone.n.01 .
 
-t00892:v1 a t:verse.n.01 ;
+t00892:v1 a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN DIE IN DEN HEERE STERVEN" .
 
-t00892:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00892:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00892.jpg" ;
-  dcterms:date "2020-03-07T14:35:41"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:35:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1726 ;

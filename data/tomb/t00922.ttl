@@ -1,6 +1,6 @@
 @prefix t00922: <https://noordergraf.rug.nl/tomb/t00922#> .
 
-tomb:t00922 a t:tombstone.n.01 ;
+tomb:t00922 a :Tomb ;
   :image t00922:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00922:p1 ,
@@ -9,15 +9,15 @@ tomb:t00922 a t:tombstone.n.01 ;
   :sym t00922:s1 ,
        t00922:s2 .
 
-t00922:c1 a t:village.n.02 ;
+t00922:c1 a :Village.n.02 ;
   :place place:Langelo2751943 ;
   :name "LANGELO" .
 
-t00922:c2 a t:village.n.02 ;
+t00922:c2 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00922:p1 a t:female.n.02 ;
+t00922:p1 a :Female ;
   :dob "1847-08-28" ;
   :dod "1930-03-06" ;
   :nam "AALTIEN HULSHOF" ;
@@ -25,27 +25,27 @@ t00922:p1 a t:female.n.02 ;
   :pod t00922:c2 ;
   :rol t00922:r1 .
 
-t00922:p2 a t:male.n.02 ;
+t00922:p2 a :Male ;
   :nam "TONNIS OOSTERHUIS" .
 
-t00922:r1 a t:widow.n.01 ;
+t00922:r1 a :Widow.n.01 ;
   :beg "23-11-1910" ;
   :tgt t00922:p2 .
 
-t00922:s1 a t:oak.n.01 .
+t00922:s1 a :Oak.n.01 .
 
-t00922:s2 a t:frond.n.01 .
+t00922:s2 a :Frond.n.01 .
 
-t00922:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00922:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00922.jpg" ;
-  dcterms:date "2020-03-07T14:10:29"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:10:29"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1719 ;

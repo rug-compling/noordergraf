@@ -1,6 +1,6 @@
 @prefix t00329: <https://noordergraf.rug.nl/tomb/t00329#> .
 
-tomb:t00329 a t:tombstone.n.01 ;
+tomb:t00329 a :Tomb ;
   :image t00329:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00329:p1 ,
@@ -11,19 +11,19 @@ tomb:t00329 a t:tombstone.n.01 ;
        t00329:p6 ,
        t00329:p7 .
 
-t00329:c1 a t:village.n.02 ;
+t00329:c1 a :Village.n.02 ;
   :place place:Huizen2753468 ;
   :name "HUIZEN" .
 
-t00329:c2 a t:town.n.01 ;
+t00329:c2 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00329:c3 a t:village.n.02 ;
+t00329:c3 a :Village.n.02 ;
   :place place:Dedemsvaart2757698 ;
   :name "DEDEMSVAART" .
 
-t00329:p1 a t:female.n.02 ;
+t00329:p1 a :Female ;
   :dob "1897-12-23" ;
   :dod "1937-07-06" ;
   :nam "LAMBERTJE HONING" ;
@@ -33,7 +33,7 @@ t00329:p1 a t:female.n.02 ;
        t00329:r2 ,
        t00329:r3 .
 
-t00329:p2 a t:male.n.02 ;
+t00329:p2 a :Male ;
   :dob "1887-10-02" ;
   :dod "1964-10-02" ;
   :nam "ROELOF POST" ;
@@ -42,75 +42,75 @@ t00329:p2 a t:male.n.02 ;
   :rol t00329:r4 ,
        t00329:r5 .
 
-t00329:p3 a t:female.n.02 ;
+t00329:p3 a :Female ;
   :nam "AALTJE DELIAANTJE" .
 
-t00329:p4 a t:male.n.02 ;
+t00329:p4 a :Male ;
   :nam "ANDRE" .
 
-t00329:p5 a t:male.n.02 ;
+t00329:p5 a :Male ;
   :nam "ROEL" ;
   :rol t00329:r6 ,
        t00329:r7 .
 
-t00329:p6 a t:female.n.02 ;
+t00329:p6 a :Female ;
   :nam "INGE" ;
   :rol t00329:r8 ,
        t00329:r9 .
 
-t00329:p7 a t:male.n.02 ;
+t00329:p7 a :Male ;
   :nam "ROY" ;
   :rol t00329:r10 ,
        t00329:r11 .
 
-t00329:r1 a t:wife.n.01 ;
+t00329:r1 a :Wife.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00329:p2 .
 
-t00329:r10 a t:grandchild.n.01 ;
+t00329:r10 a :Grandchild.n.01 ;
   :tgt t00329:p1 .
 
-t00329:r11 a t:grandchild.n.01 ;
+t00329:r11 a :Grandchild.n.01 ;
   :tgt t00329:p2 .
 
-t00329:r2 a t:mother.n.01 ;
+t00329:r2 a :Mother.n.01 ;
   :tgt t00329:p3 .
 
-t00329:r3 a t:mother.n.01 ;
+t00329:r3 a :Mother.n.01 ;
   :tgt t00329:p4 .
 
-t00329:r4 a t:father.n.01 ;
+t00329:r4 a :Father.n.01 ;
   :att "LIEVE" ,
        "ZORGZAME" ;
   :tgt t00329:p3 .
 
-t00329:r5 a t:father.n.01 ;
+t00329:r5 a :Father.n.01 ;
   :att "LIEVE" ,
        "ZORGZAME" ;
   :tgt t00329:p4 .
 
-t00329:r6 a t:grandchild.n.01 ;
+t00329:r6 a :Grandchild.n.01 ;
   :tgt t00329:p1 .
 
-t00329:r7 a t:grandchild.n.01 ;
+t00329:r7 a :Grandchild.n.01 ;
   :tgt t00329:p2 .
 
-t00329:r8 a t:grandchild.n.01 ;
+t00329:r8 a :Grandchild.n.01 ;
   :tgt t00329:p1 .
 
-t00329:r9 a t:grandchild.n.01 ;
+t00329:r9 a :Grandchild.n.01 ;
   :tgt t00329:p2 .
 
-t00329:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00329:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00329.jpg" ;
-  dcterms:date "2019-10-19T14:23:42"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:23:42"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7158 ;

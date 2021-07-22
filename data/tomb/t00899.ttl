@@ -1,6 +1,6 @@
 @prefix t00899: <https://noordergraf.rug.nl/tomb/t00899#> .
 
-tomb:t00899 a t:tombstone.n.01 ;
+tomb:t00899 a :Tomb ;
   :image t00899:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00899:p1 ,
@@ -10,15 +10,15 @@ tomb:t00899 a t:tombstone.n.01 ;
        t00899:s2 ,
        t00899:s3 .
 
-t00899:c1 a t:village.n.02 ;
+t00899:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00899:c2 a t:village.n.02 ;
+t00899:c2 a :Village.n.02 ;
   :place place:Midwolde2750830 ;
   :name "MIDWOLDE" .
 
-t00899:p1 a t:female.n.02 ;
+t00899:p1 a :Female ;
   :dob "1823-12-10" ;
   :dod "1868-06-23" ;
   :nam "JANTJE JANS CAZEMIER" ;
@@ -26,28 +26,28 @@ t00899:p1 a t:female.n.02 ;
   :pod t00899:c2 ;
   :rol t00899:r1 .
 
-t00899:p2 a t:male.n.02 ;
+t00899:p2 a :Male ;
   :nam "HENDRIK HEUKERS" .
 
-t00899:r1 a t:spouse.n.01 ;
+t00899:r1 a :Spouse.n.01 ;
   :tgt t00899:p2 .
 
-t00899:s1 a t:frond.n.01 .
+t00899:s1 a :Frond.n.01 .
 
-t00899:s2 a t:frond.n.01 .
+t00899:s2 a :Frond.n.01 .
 
-t00899:s3 a t:ribbon.n.01 .
+t00899:s3 a :Ribbon.n.01 .
 
-t00899:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00899:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00899.jpg" ;
-  dcterms:date "2020-03-07T14:31:54"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:31:54"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1722 ;

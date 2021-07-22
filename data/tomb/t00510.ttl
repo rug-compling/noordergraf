@@ -1,42 +1,42 @@
 @prefix t00510: <https://noordergraf.rug.nl/tomb/t00510#> .
 
-tomb:t00510 a t:tombstone.n.01 ;
+tomb:t00510 a :Tomb ;
   :image t00510:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00510:p1 ;
   :quo "RUST ZACHT" ;
   :sym t00510:s1 .
 
-t00510:p1 a t:female.n.02 ;
+t00510:p1 a :Female ;
   :dob "1902-09-09" ;
   :dod "1974-09-10" ;
   :nam "EELKE TEN CATE" ;
   :rol t00510:r1 ,
        t00510:r2 .
 
-t00510:r1 a t:mother.n.01 ;
+t00510:r1 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00510:r2 a t:grandmother.n.01 .
+t00510:r2 a :Grandmother.n.01 .
 
-t00510:s1 a t:composite.n.01 ;
+t00510:s1 a :Composite.n.01 ;
   :prt t00510:s2 ,
        t00510:s3 .
 
-t00510:s2 a t:frond.n.01 .
+t00510:s2 a :Frond.n.01 .
 
-t00510:s3 a t:ribbon.n.02 .
+t00510:s3 a :Ribbon.n.02 .
 
-t00510:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00510:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00510.jpg" ;
-  dcterms:date "2019-11-23T10:34:43"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:34:43"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1648 ;

@@ -1,42 +1,42 @@
 @prefix t00379: <https://noordergraf.rug.nl/tomb/t00379#> .
 
-tomb:t00379 a t:tombstone.n.01 ;
+tomb:t00379 a :Tomb ;
   :image t00379:im1 ;
   :site site:dr9481CGvries ;
   :ent t00379:p1 ,
        t00379:p2 ;
   :ref t00379:v1 .
 
-t00379:b1 a t:Revelation.n.04 ;
+t00379:b1 a :Revelation.n.04 ;
   :prt t00379:c1 .
 
-t00379:c1 a t:chapter.n.01 ;
+t00379:c1 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00379:v1 .
 
-t00379:p1 a t:male.n.02 ;
+t00379:p1 a :Male ;
   :dob "1861-03-31" ;
   :dod "1945-05-11" ;
   :nam "MEINT POLMAN" .
 
-t00379:p2 a t:female.n.02 ;
+t00379:p2 a :Female ;
   :dob "1864-08-28" ;
   :dod "1937-10-29" ;
   :nam "NANTJE MEEDENDORP" .
 
-t00379:v1 a t:verse.n.01 ;
+t00379:v1 a :Verse.n.01 ;
   :ord 13 .
 
-t00379:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00379:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00379.jpg" ;
-  dcterms:date "2019-10-25T16:59:13"^^xsd:dateTime ;
+  dc:date "2019-10-25T16:59:13"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0797 ;

@@ -1,32 +1,32 @@
 @prefix t00524: <https://noordergraf.rug.nl/tomb/t00524#> .
 
-tomb:t00524 a t:tombstone.n.01 ;
+tomb:t00524 a :Tomb ;
   :image t00524:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00524:p1 ,
        t00524:p2 ;
   :quo "KAMERADEN VOOR HET LEVEN"@nld .
 
-t00524:p1 a t:male.n.02 ;
+t00524:p1 a :Male ;
   :dob "1929-05-07" ;
   :dod "2006-06-24" ;
   :nam "JAN VAN DER WAL" .
 
-t00524:p2 a t:male.n.02 ;
+t00524:p2 a :Male ;
   :dob "1940-05-03" ;
   :dod "2007-02-03" ;
   :nam "GEESINUS HARMANNUS SCHUURMAN" .
 
-t00524:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00524:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00524.jpg" ;
-  dcterms:date "2019-11-23T10:56:14"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:56:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1670 ;

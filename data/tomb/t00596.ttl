@@ -1,26 +1,26 @@
 @prefix t00596: <https://noordergraf.rug.nl/tomb/t00596#> .
 
-tomb:t00596 a t:tombstone.n.01 ;
+tomb:t00596 a :Tomb ;
   :image t00596:im1 ;
   :site site:gr9951TNwinsum ;
   :ent t00596:p1 ;
   :quo "DOOR ENGELEN GEDRAGEN, \\ VERVOLG IK MIJN WEG NAAR HET LICHT \\ EN BLIJF IK IMMER MET JULLIE \\ IN LIEFDE VERBONDEN."@nld .
 
-t00596:p1 a t:female.n.02 ;
+t00596:p1 a :Female ;
   :dob "1948-03-29" ;
   :dod "2004-05-24" ;
   :nam "ELLEN GOUVERNANTE" .
 
-t00596:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00596:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00596.jpg" ;
-  dcterms:date "2019-11-30T14:14:12"^^xsd:dateTime ;
+  dc:date "2019-11-30T14:14:12"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3263 ;

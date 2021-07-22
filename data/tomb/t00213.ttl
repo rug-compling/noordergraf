@@ -1,31 +1,31 @@
 @prefix t00213: <https://noordergraf.rug.nl/tomb/t00213#> .
 
-tomb:t00213 a t:tombstone.n.01 ;
+tomb:t00213 a :Tomb ;
   :image t00213:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00213:p1 ,
        t00213:p2 .
 
-t00213:p1 a t:female.n.02 ;
+t00213:p1 a :Female ;
   :dob "1860-08-27" ;
   :dod "1918-10-31" ;
   :nam "ALBERT BAKKER" .
 
-t00213:p2 a t:female.n.02 ;
+t00213:p2 a :Female ;
   :dob "1863-11-18" ;
   :dod "1965-02-01" ;
   :nam "GEERTJE MULDER" .
 
-t00213:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00213:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00213.jpg" ;
-  dcterms:date "2019-10-08T14:48:56"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:48:56"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2226 ;

@@ -1,21 +1,21 @@
 @prefix t00433: <https://noordergraf.rug.nl/tomb/t00433#> .
 
-tomb:t00433 a t:tombstone.n.01 ;
+tomb:t00433 a :Tomb ;
   :image t00433:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00433:p1 ,
        t00433:p2 ;
   :sym t00433:s1 .
 
-t00433:c1 a t:island.n.01 ;
+t00433:c1 a :Island.n.01 ;
   :place place:Schiermonnikoog2747591 ;
   :name "SCHIERMONNIKOOG" .
 
-t00433:c2 a t:city.n.01 ;
+t00433:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00433:p1 a t:male.n.02 ;
+t00433:p1 a :Male ;
   :dob "1877-05-06" ;
   :dod "1933-10-18" ;
   :nam "TJEERD SCHAAFSMA" ;
@@ -23,7 +23,7 @@ t00433:p1 a t:male.n.02 ;
   :pod t00433:c2 ;
   :rol t00433:r1 .
 
-t00433:p2 a t:female.n.02 ;
+t00433:p2 a :Female ;
   :dob "1877-05-26" ;
   :dod "1951-12-14" ;
   :nam "HENDERIKA BECHERER" ;
@@ -31,32 +31,32 @@ t00433:p2 a t:female.n.02 ;
   :pod t00433:c1 ;
   :rol t00433:r2 .
 
-t00433:r1 a t:parent.n.01 ;
+t00433:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00433:p3 .
 
-t00433:r2 a t:parent.n.01 ;
+t00433:r2 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00433:p3 .
 
-t00433:s1 a t:composite.n.01 ;
+t00433:s1 a :Composite.n.01 ;
   :prt t00433:s2 ,
        t00433:s3 .
 
-t00433:s2 a t:frond.n.01 .
+t00433:s2 a :Frond.n.01 .
 
-t00433:s3 a t:ribbon.n.01 .
+t00433:s3 a :Ribbon.n.01 .
 
-t00433:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00433:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00433.jpg" ;
-  dcterms:date "2019-11-02T11:42:35"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:42:35"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4793 ;

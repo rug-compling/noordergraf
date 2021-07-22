@@ -1,21 +1,21 @@
 @prefix t00046: <https://noordergraf.rug.nl/tomb/t00046#> .
 
-tomb:t00046 a t:tombstone.n.01 ;
+tomb:t00046 a :Tomb ;
   :image t00046:im1 ;
   :site site:gr9752CMharen ;
   :ent t00046:p1 ,
        t00046:p2 ;
   :sym t00046:s1 .
 
-t00046:c1 a t:village.n.02 ;
+t00046:c1 a :Village.n.02 ;
   :place place:Glimmen2755495 ;
   :name "GLIMMEN" .
 
-t00046:c2 a t:town.n.01 ;
+t00046:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00046:p1 a t:male.n.02 ;
+t00046:p1 a :Male ;
   :dob "1896-02-01" ;
   :dod "1925-03-04" ;
   :nam "ROELOF DRENTH" ;
@@ -23,33 +23,33 @@ t00046:p1 a t:male.n.02 ;
   :pod t00046:c2 ;
   :rol t00046:r2 .
 
-t00046:p2 a t:female.n.02 ;
+t00046:p2 a :Female ;
   :nam "CAROLINA ANDRIES" .
 
-t00046:r2 a t:spouse.n.01 ;
+t00046:r2 a :Spouse.n.01 ;
   :tgt t00046:p2 .
 
-t00046:s1 a t:composite.n.01 ;
+t00046:s1 a :Composite.n.01 ;
   :prt t00046:s2 ,
        t00046:s3 ,
        t00046:s4 .
 
-t00046:s2 a t:frond.n.01 .
+t00046:s2 a :Frond.n.01 .
 
-t00046:s3 a t:frond.n.01 .
+t00046:s3 a :Frond.n.01 .
 
-t00046:s4 a t:ribbon.n.01 .
+t00046:s4 a :Ribbon.n.01 .
 
-t00046:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00046:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00046.jpg" ;
-  dcterms:date "2019-09-27T17:45:27"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:45:27"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1631 ;

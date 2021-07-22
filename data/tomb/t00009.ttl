@@ -1,40 +1,40 @@
 @prefix t00009: <https://noordergraf.rug.nl/tomb/t00009#> .
 
-tomb:t00009 a t:tombstone.n.01 ;
+tomb:t00009 a :Tomb ;
   :image t00009:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00009:p1 ,
        t00009:p2 ;
   :sym t00009:s1 .
 
-t00009:p1 a t:group.n.01 ;
+t00009:p1 a :Group.n.01 ;
   :rol t00009:r1 .
 
-t00009:p2 a t:female.n.02 ;
+t00009:p2 a :Female ;
   :dob "1860-02-19" ;
   :dod "1951-06-02" ;
   :nam "HELENA FOLKERINGA" ;
   :rol t00009:r2 .
 
-t00009:r1 a t:commemorator.n.01 ;
+t00009:r1 a :Commemorator.n.01 ;
   :tgt t00009:p2 .
 
-t00009:r2 a t:aunt.n.01 ;
+t00009:r2 a :Aunt.n.01 ;
   :att "LIEVE" ;
   :tgt t00009:p1 .
 
-t00009:s1 a t:frond.n.01 .
+t00009:s1 a :Frond.n.01 .
 
-t00009:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00009:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00009.jpg" ;
-  dcterms:date "2019-09-25T16:39:59"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:39:59"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1907 ;

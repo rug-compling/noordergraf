@@ -1,26 +1,26 @@
 @prefix t00831: <https://noordergraf.rug.nl/tomb/t00831#> .
 
-tomb:t00831 a t:tombstone.n.01 ;
+tomb:t00831 a :Tomb ;
   :image t00831:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00831:p1 ,
        t00831:p2 ;
   :quo "ZIJ WAS EEN ZORGZAME MOEDER"@nld .
 
-t00831:c1 a t:village.n.02 ;
+t00831:c1 a :Village.n.02 ;
   :place place:Orvelte2749247 ;
   :name "ORVELTE" .
 
-t00831:c2 a t:municipality.n.01 ;
+t00831:c2 a :Municipality.n.01 ;
   :place place:Westerbork2744769 ;
   :mem t00831:c1 ;
   :name "WESTERBORK" .
 
-t00831:c3 a t:village.n.02 ;
+t00831:c3 a :Village.n.02 ;
   :place place:NoordSleen2749830 ;
   :name "NOORD-SLEEN" .
 
-t00831:p1 a t:female.n.02 ;
+t00831:p1 a :Female ;
   :dob "1871-12-01" ;
   :dod "1940-11-09" ;
   :nam "HENDRIKJE KOK" ;
@@ -29,24 +29,24 @@ t00831:p1 a t:female.n.02 ;
   :rol t00831:r1 ,
        t00831:r2 .
 
-t00831:p2 a t:male.n.02 ;
+t00831:p2 a :Male ;
   :nam "RUDOLF SMIT" .
 
-t00831:r1 a t:spouse.n.01 ;
+t00831:r1 a :Spouse.n.01 ;
   :tgt t00831:p2 .
 
-t00831:r2 a t:mother.n.01 .
+t00831:r2 a :Mother.n.01 .
 
-t00831:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00831:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00831.jpg" ;
-  dcterms:date "2020-02-15T15:47:40"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:47:40"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7769 ;

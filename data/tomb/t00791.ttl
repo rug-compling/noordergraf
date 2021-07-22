@@ -1,6 +1,6 @@
 @prefix t00791: <https://noordergraf.rug.nl/tomb/t00791#> .
 
-tomb:t00791 a t:tombstone.n.01 ;
+tomb:t00791 a :Tomb ;
   :image t00791:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00791:g1 ,
@@ -9,15 +9,15 @@ tomb:t00791 a t:tombstone.n.01 ;
        t00791:p3 ;
   :lan "NLD" .
 
-t00791:c1 a t:village.n.02 ;
+t00791:c1 a :Village.n.02 ;
   :place place:TenBoer2746491 ;
   :name "TEN BOER" .
 
-t00791:g1 a t:group.n.01 ;
+t00791:g1 a :Group.n.01 ;
   :mem t00791:p2 ,
        t00791:p3 .
 
-t00791:p1 a t:female.n.02 ;
+t00791:p1 a :Female ;
   :dob "1897-10-06" ;
   :dod "1918-07-25" ;
   :nam "HENDRIKJE BOLT" ;
@@ -25,25 +25,25 @@ t00791:p1 a t:female.n.02 ;
   :pod t00791:c1 ;
   :rol t00791:r1 .
 
-t00791:p2 a t:male.n.02 ;
+t00791:p2 a :Male ;
   :nam "J. BOLT" .
 
-t00791:p3 a t:female.n.02 ;
+t00791:p3 a :Female ;
   :nam "A. BOLT-DOORNBOS" .
 
-t00791:r1 a t:daughter.n.01 ;
+t00791:r1 a :Daughter.n.01 ;
   :tgt t00791:g1 .
 
-t00791:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00791:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00791.jpg" ;
-  dcterms:date "2020-01-18T13:10:14"^^xsd:dateTime ;
+  dc:date "2020-01-18T13:10:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2776 ;

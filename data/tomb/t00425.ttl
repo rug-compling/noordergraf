@@ -1,6 +1,6 @@
 @prefix t00425: <https://noordergraf.rug.nl/tomb/t00425#> .
 
-tomb:t00425 a t:tombstone.n.01 ;
+tomb:t00425 a :Tomb ;
   :image t00425:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00425:p1 ,
@@ -8,13 +8,13 @@ tomb:t00425 a t:tombstone.n.01 ;
   :quo "DIE IN MIJ GELOOFD, HEEFT HET EEUWIGE LEVEN" ;
   :sym t00425:s1 .
 
-t00425:a1 a t:weeping.a.02 .
+t00425:a1 a :Weeping.a.02 .
 
-t00425:c2 a t:island.n.01 ;
+t00425:c2 a :Island.n.01 ;
   :place place:Schiermonnikoog2747591 ;
   :name "SCHIERMONNIKOOG" .
 
-t00425:p1 a t:male.n.02 ;
+t00425:p1 a :Male ;
   :dob "1853-09-25" ;
   :dod "1935-03-26" ;
   :nam "JAN WIERSMA" ;
@@ -22,25 +22,25 @@ t00425:p1 a t:male.n.02 ;
   :pod t00425:c2 ;
   :rol t00425:r1 .
 
-t00425:p2 a t:female.n.02 ;
+t00425:p2 a :Female ;
   :nam "MARGARETHA P. DE JAGER" .
 
-t00425:r1 a t:spouse.n.01 ;
+t00425:r1 a :Spouse.n.01 ;
   :tgt t00425:p2 .
 
-t00425:s1 a t:willow.n.01 ;
+t00425:s1 a :Willow.n.01 ;
   :att t00425:a1 .
 
-t00425:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00425:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00425.jpg" ;
-  dcterms:date "2019-11-02T11:43:33"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:43:33"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4790 ;

@@ -1,6 +1,6 @@
 @prefix t00583: <https://noordergraf.rug.nl/tomb/t00583#> .
 
-tomb:t00583 a t:tombstone.n.01 ;
+tomb:t00583 a :Tomb ;
   :image t00583:im1 ;
   :site site:gr9951STwinsum ;
   :ent t00583:p1 ,
@@ -9,44 +9,44 @@ tomb:t00583 a t:tombstone.n.01 ;
   :ref "PSALM 73:12" ;
   :sym t00583:s1 .
 
-t00583:a1 a t:weeping.a.02 .
+t00583:a1 a :Weeping.a.02 .
 
-t00583:c1 a t:village.n.02 ;
+t00583:c1 a :Village.n.02 ;
   :nam "BAFLO" .
 
-t00583:p1 a t:male.n.02 ;
+t00583:p1 a :Male ;
   :dob "1891-06-25" ;
   :dod "1919-03-07" ;
   :nam "JAN PETTINGA" ;
   :rol t00583:r1 .
 
-t00583:p2 a t:female.n.02 ;
+t00583:p2 a :Female ;
   :nam "ANNECIEN SCHOLMA" .
 
-t00583:p3 a t:person.n.01 ;
+t00583:p3 a :Person ;
   :loc t00583:c1 ;
   :nam "BONJERNOUR" ;
   :occ t00583:r2 .
 
-t00583:r1 a t:spouse.n.01 ;
+t00583:r1 a :Spouse.n.01 ;
   :tgt t00583:p2 .
 
-t00583:r2 a t:designer.n.01 ;
+t00583:r2 a :Designer.n.01 ;
   :tgt tomb:t00583 .
 
-t00583:s1 a t:willow.n.01 ;
+t00583:s1 a :Willow.n.01 ;
   :att t00583:a1 .
 
-t00583:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00583:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00583.jpg" ;
-  dcterms:date "2019-11-30T14:48:37"^^xsd:dateTime ;
+  dc:date "2019-11-30T14:48:37"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3353 ;

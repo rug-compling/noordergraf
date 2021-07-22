@@ -1,48 +1,48 @@
 @prefix t00619: <https://noordergraf.rug.nl/tomb/t00619#> .
 
-tomb:t00619 a t:tombstone.n.01 ;
+tomb:t00619 a :Tomb ;
   :image t00619:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00619:p1 ,
        t00619:p2 ;
   :lan "NLD" .
 
-t00619:c1 a t:village.n.02 ;
+t00619:c1 a :Village.n.02 ;
   :place place:Borgercompagnie2758618 ;
   :name "BORGERCOMPAGNIE" .
 
-t00619:c2 a t:village.n.02 ;
+t00619:c2 a :Village.n.02 ;
   :place place:Zuidlaren2743680 ;
   :name "ZUIDLAREN" .
 
-t00619:c3 a t:village.n.02 ;
+t00619:c3 a :Village.n.02 ;
   :place place:Glimmen2755495 ;
   :name "GLIMMEN" .
 
-t00619:p1 a t:person.n.01 ;
+t00619:p1 a :Person ;
   :dob "1900-11-04" ;
   :dod "1993-01-08" ;
   :nam "J.W. MULDER" ;
   :pob t00619:c1 ;
   :pod t00619:c2 .
 
-t00619:p2 a t:person.n.01 ;
+t00619:p2 a :Person ;
   :dob "1903-07-26" ;
   :dod "2002-06-29" ;
   :nam "L. MULDER" ;
   :pob t00619:c3 ;
   :pod t00619:c2 .
 
-t00619:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00619:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00619.jpg" ;
-  dcterms:date "2019-11-23T10:03:11"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:03:11"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1643 ;

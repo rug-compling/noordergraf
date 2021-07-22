@@ -1,6 +1,6 @@
 @prefix t00964: <https://noordergraf.rug.nl/tomb/t00964#> .
 
-tomb:t00964 a t:tombstone.n.01 ;
+tomb:t00964 a :Tomb ;
   :image t00964:im1 ;
   :site site:gr9752CMharen ;
   :ent t00964:p1 ,
@@ -8,36 +8,36 @@ tomb:t00964 a t:tombstone.n.01 ;
   :quo "GELIJK HET GRAS IS ONS \\ KORTSTONDIG LEVEN"@nld ;
   :sym t00964:s1 .
 
-t00964:p1 a t:female.n.02 ;
+t00964:p1 a :Female ;
   :dod "1916-04-25" ;
   :nam "TRIJNJE BOS" ;
   :rol t00964:r1 ,
        t00964:r2 ,
        t00964:r3 .
 
-t00964:p2 a t:male.n.02 ;
+t00964:p2 a :Male ;
   :nam "J. VOS" .
 
-t00964:r1 a t:wife.n.01 ;
+t00964:r1 a :Wife.n.01 ;
   :tgt t00964:p2 .
 
-t00964:r2 a t:mother.n.01 .
+t00964:r2 a :Mother.n.01 .
 
-t00964:r3 a t:spouse.n.01 ;
+t00964:r3 a :Spouse.n.01 ;
   :tgt t00964:p2 .
 
-t00964:s1 a t:frond.n.01 .
+t00964:s1 a :Frond.n.01 .
 
-t00964:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00964:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00964.jpg" ;
-  dcterms:date "2020-03-27T17:12:18"^^xsd:dateTime ;
+  dc:date "2020-03-27T17:12:18"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1628 ;

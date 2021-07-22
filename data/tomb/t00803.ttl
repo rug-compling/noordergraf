@@ -1,21 +1,21 @@
 @prefix t00803: <https://noordergraf.rug.nl/tomb/t00803#> .
 
-tomb:t00803 a t:tombstone.n.01 ;
+tomb:t00803 a :Tomb ;
   :image t00803:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00803:p1 ,
        t00803:p2 ;
   :quo "IN JEZUS ONTSLAPEN"@nld .
 
-t00803:c1 a t:village.n.02 ;
+t00803:c1 a :Village.n.02 ;
   :place place:Schildwolde2747570 ;
   :name "SCHILDWOLDE" .
 
-t00803:c2 a t:village.n.02 ;
+t00803:c2 a :Village.n.02 ;
   :place place:TenBoer2746491 ;
   :name "TEN BOER" .
 
-t00803:p1 a t:female.n.02 ;
+t00803:p1 a :Female ;
   :dob "1856-02-02" ;
   :dod "1938-05-15" ;
   :nam "JACOBJE LANENGA" ;
@@ -23,22 +23,22 @@ t00803:p1 a t:female.n.02 ;
   :pod t00803:c2 ;
   :rol t00803:r1 .
 
-t00803:p2 a t:male.n.02 ;
+t00803:p2 a :Male ;
   :nam "R.H. WERINGA" .
 
-t00803:r1 a t:widow.n.01 ;
+t00803:r1 a :Widow.n.01 ;
   :tgt t00803:p2 .
 
-t00803:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00803:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00803.jpg" ;
-  dcterms:date "2020-01-18T12:44:50"^^xsd:dateTime ;
+  dc:date "2020-01-18T12:44:50"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2778 ;

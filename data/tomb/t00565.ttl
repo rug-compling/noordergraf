@@ -1,6 +1,6 @@
 @prefix t00565: <https://noordergraf.rug.nl/tomb/t00565#> .
 
-tomb:t00565 a t:tombstone.n.01 ;
+tomb:t00565 a :Tomb ;
   :image t00565:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00565:p1 ,
@@ -8,34 +8,34 @@ tomb:t00565 a t:tombstone.n.01 ;
   :quo "RUST ZACHT"@nld ;
   :sym t00565:s1 .
 
-t00565:a1 a t:weeping.a.02 .
+t00565:a1 a :Weeping.a.02 .
 
-t00565:p1 a t:female.n.02 ;
+t00565:p1 a :Female ;
   :dob "1822-10-07" ;
   :dod "1919-07-02" ;
   :nam "EGBERDINA TIMMINGA" ;
   :rol t00565:r1 .
 
-t00565:p2 a t:male.n.02 ;
+t00565:p2 a :Male ;
   :nam "P. VAN DAM" .
 
-t00565:r1 a t:widow.n.01 ;
+t00565:r1 a :Widow.n.01 ;
   :beg "XX-XX-1883" ;
   :tgt t00565:p2 .
 
-t00565:s1 a t:willow.n.01 ;
+t00565:s1 a :Willow.n.01 ;
   :att t00565:a1 .
 
-t00565:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00565:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00565.jpg" ;
-  dcterms:date "2019-11-24T13:41:17"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:41:17"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1046 ;

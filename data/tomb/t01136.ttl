@@ -1,36 +1,36 @@
 @prefix t01136: <https://noordergraf.rug.nl/tomb/t01136#> .
 
-tomb:t01136 a t:tombstone.n.01 ;
+tomb:t01136 a :Tomb ;
   :ent t01136:p1 ;
   :lan "NLD" ;
   :sym t01136:s1 .
 
-t01136:c1 a t:village.n.02 ;
+t01136:c1 a :Village.n.02 ;
   :place place:Niehove2750391 ;
   :name "NIEHOVE" .
 
-t01136:c2 a t:village.n.02 ;
+t01136:c2 a :Village.n.02 ;
   :place place:Kommerzijl2752510 ;
   :name "KOMMERZIJL" .
 
-t01136:p1 a t:female.n.02 ;
+t01136:p1 a :Female ;
   :dob "1830-08-27" ;
   :dod "1872-01-22" ;
   :nam "GEERTRUIDA BANSEMA" ;
   :pob t01136:c1 ;
   :pod t01136:c2 .
 
-t01136:s1 a t:composite.n.01 ;
+t01136:s1 a :Composite.n.01 ;
   :prt t01136:s2 ,
        t01136:s4 .
 
-t01136:s2 a t:branch.n.02 .
+t01136:s2 a :Branch.n.02 .
 
-t01136:s3 a t:olive.n.02 ;
+t01136:s3 a :Olive.n.02 ;
   :prt t01136:s2 .
 
-t01136:s4 a t:branch.n.02 .
+t01136:s4 a :Branch.n.02 .
 
-t01136:s5 a t:olive.n.02 ;
+t01136:s5 a :Olive.n.02 ;
   :prt t01136:s4 .
 

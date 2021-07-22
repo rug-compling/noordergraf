@@ -1,6 +1,6 @@
 @prefix t00210: <https://noordergraf.rug.nl/tomb/t00210#> .
 
-tomb:t00210 a t:tombstone.n.01 ;
+tomb:t00210 a :Tomb ;
   :image t00210:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00210:p1 ,
@@ -8,29 +8,29 @@ tomb:t00210 a t:tombstone.n.01 ;
        t00210:p3 ;
   :sym t00210:s1 .
 
-t00210:a1 a t:weeping.a.02 .
+t00210:a1 a :Weeping.a.02 .
 
-t00210:c1 a t:village.n.02 ;
+t00210:c1 a :Village.n.02 ;
   :place place:Westerbroek2744764 ;
   :name "WESTERBROEK" .
 
-t00210:c2 a t:village.n.02 ;
+t00210:c2 a :Village.n.02 ;
   :place place:Engelbert2756097 ;
   :name "ENGELBERT" .
 
-t00210:c3 a t:village.n.02 ;
+t00210:c3 a :Village.n.02 ;
   :place place:Harkstede2754819 ;
   :name "HARKSTEDE" .
 
-t00210:c4 a t:village.n.02 ;
+t00210:c4 a :Village.n.02 ;
   :place place:Middelbert2750902 ;
   :name "MIDDELBERT" .
 
-t00210:g1 a t:group.n.01 ;
+t00210:g1 a :Group.n.01 ;
   :mem t00210:p1 ,
        t00210:p2 .
 
-t00210:p1 a t:male.n.02 ;
+t00210:p1 a :Male ;
   :dob "1840-04-21" ;
   :dod "1926-05-09" ;
   :nam "HINDRIK KONING" ;
@@ -38,39 +38,39 @@ t00210:p1 a t:male.n.02 ;
   :pod t00210:c1 ;
   :rol t00210:r1 .
 
-t00210:p2 a t:female.n.02 ;
+t00210:p2 a :Female ;
   :dob "1845-05-06" ;
   :dod "1930-11-11" ;
   :nam "ANNECHIEN NIEWOLD" ;
   :pob t00210:c2 ;
   :pod t00210:c3 .
 
-t00210:p3 a t:male.n.02 ;
+t00210:p3 a :Male ;
   :dob "1891-05-27" ;
   :dod "1907-06-12" ;
   :nam "HENDRIK" ;
   :pod t00210:c4 ;
   :rol t00210:r2 .
 
-t00210:r1 a t:spouse.n.01 ;
+t00210:r1 a :Spouse.n.01 ;
   :tgt t00210:p2 .
 
-t00210:r2 a t:son.n.01 ;
+t00210:r2 a :Son.n.01 ;
   :tgt t00210:g1 .
 
-t00210:s1 a t:willow.n.01 ;
+t00210:s1 a :Willow.n.01 ;
   :att t00210:a1 .
 
-t00210:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00210:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00210.jpg" ;
-  dcterms:date "2019-10-08T14:53:04"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:53:04"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2224 ;

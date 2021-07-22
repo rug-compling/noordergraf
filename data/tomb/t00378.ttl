@@ -1,6 +1,6 @@
 @prefix t00378: <https://noordergraf.rug.nl/tomb/t00378#> .
 
-tomb:t00378 a t:tombstone.n.01 ;
+tomb:t00378 a :Tomb ;
   :image t00378:im1 ;
   :site site:dr9481CGvries ;
   :ent t00378:p1 ,
@@ -8,42 +8,42 @@ tomb:t00378 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :sym t00378:s1 .
 
-t00378:a1 a t:broken.a.01 .
+t00378:a1 a :Broken.a.01 .
 
-t00378:p1 a t:female.n.02 ;
+t00378:p1 a :Female ;
   :dob "1907-12-17" ;
   :dod "1963-06-01" ;
   :nam "EVELINA VEENDIJK" ;
   :rol t00378:r1 ,
        t00378:r2 .
 
-t00378:p2 a t:male.n.02 ;
+t00378:p2 a :Male ;
   :dob "1901-03-11" ;
   :dod "1990-10-03" ;
   :nam "ALBERT LAMPE" ;
   :rol t00378:r3 .
 
-t00378:r1 a t:spouse.n.01 ;
+t00378:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00378:p2 .
 
-t00378:r2 a t:parent.n.01 .
+t00378:r2 a :Parent.n.01 .
 
-t00378:r3 a t:parent.n.01 .
+t00378:r3 a :Parent.n.01 .
 
-t00378:s1 a t:flower.n.01 ;
+t00378:s1 a :Flower.n.01 ;
   :att t00378:a1 .
 
-t00378:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00378:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00378.jpg" ;
-  dcterms:date "2019-10-25T16:59:48"^^xsd:dateTime ;
+  dc:date "2019-10-25T16:59:48"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0793 ;

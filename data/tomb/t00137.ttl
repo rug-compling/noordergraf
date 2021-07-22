@@ -1,24 +1,24 @@
 @prefix t00137: <https://noordergraf.rug.nl/tomb/t00137#> .
 
-tomb:t00137 a t:tombstone.n.01 ;
+tomb:t00137 a :Tomb ;
   :image t00137:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00137:p1 ,
        t00137:p2 .
 
-t00137:c1 a t:city.n.01 ;
+t00137:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00137:c2 a t:village.n.02 ;
+t00137:c2 a :Village.n.02 ;
   :place place:Roden2748026 ;
   :name "RODEN" .
 
-t00137:c3 a t:village.n.02 ;
+t00137:c3 a :Village.n.02 ;
   :place place:Peize2748673 ;
   :name "PEIZE" .
 
-t00137:p1 a t:male.n.02 ;
+t00137:p1 a :Male ;
   :dob "1870-12-07" ;
   :dod "1942-03-16" ;
   :nam "JAN THIE" ;
@@ -26,27 +26,27 @@ t00137:p1 a t:male.n.02 ;
   :pod t00137:c1 ;
   :rol t00137:r1 .
 
-t00137:p2 a t:female.n.02 ;
+t00137:p2 a :Female ;
   :dob "1875-03-01" ;
   :dod "1959-12-28" ;
   :nam "ANNECHIEN BIEMOLT" ;
   :pob t00137:c3 ;
   :pod t00137:c1 .
 
-t00137:r1 a t:husband.n.01 ;
+t00137:r1 a :Husband.n.01 ;
   :att "GELIEFD" ;
   :tgt t00137:p2 .
 
-t00137:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00137:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00137.jpg" ;
-  dcterms:date "2019-10-02T10:33:58"^^xsd:dateTime ;
+  dc:date "2019-10-02T10:33:58"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2062 ;

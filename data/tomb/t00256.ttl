@@ -1,28 +1,28 @@
 @prefix t00256: <https://noordergraf.rug.nl/tomb/t00256#> .
 
-tomb:t00256 a t:tombstone.n.01 ;
+tomb:t00256 a :Tomb ;
   :image t00256:im1 ;
   :site site:gr9751BBharen ;
   :ent t00256:p1 ,
        t00256:p2 ;
   :sym t00256:s1 .
 
-t00256:a1 a t:broken.a.01 .
+t00256:a1 a :Broken.a.01 .
 
-t00256:c1 a t:village.n.02 ;
+t00256:c1 a :Village.n.02 ;
   :place place:Zuidwolde2743636 ;
   :name "ZUIDWOLDE" .
 
-t00256:c2 a t:province.n.01 ;
+t00256:c2 a :Province.n.01 ;
   :place place:ProvincieGroningen2755249 ;
   :mem t00256:c1 ;
   :name "GRONINGEN" .
 
-t00256:c3 a t:village.n.02 ;
+t00256:c3 a :Village.n.02 ;
   :place place:Helpman2754444 ;
   :name "HELPMAN" .
 
-t00256:p1 a t:female.n.02 ;
+t00256:p1 a :Female ;
   :dob "1870-07-08" ;
   :dod "1962-09-01" ;
   :nam "HILJE STOLLENGA" ;
@@ -30,25 +30,25 @@ t00256:p1 a t:female.n.02 ;
   :pod t00256:c3 ;
   :rol t00256:r1 .
 
-t00256:p2 a t:male.n.02 ;
+t00256:p2 a :Male ;
   :nam "E. VORENKAMP" .
 
-t00256:r1 a t:widow.n.01 ;
+t00256:r1 a :Widow.n.01 ;
   :tgt t00256:p2 .
 
-t00256:s1 a t:flower.n.01 ;
+t00256:s1 a :Flower.n.01 ;
   :att t00256:a1 .
 
-t00256:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00256:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00256.jpg" ;
-  dcterms:date "2019-10-11T17:19:59"^^xsd:dateTime ;
+  dc:date "2019-10-11T17:19:59"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1725 ;

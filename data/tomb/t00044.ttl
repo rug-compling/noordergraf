@@ -1,36 +1,36 @@
 @prefix t00044: <https://noordergraf.rug.nl/tomb/t00044#> .
 
-tomb:t00044 a t:tombstone.n.01 ;
+tomb:t00044 a :Tomb ;
   :image t00044:im1 ;
   :site site:gr9752CMharen ;
   :ent t00044:p1 ,
        t00044:p2 ;
   :sym t00044:s1 .
 
-t00044:p1 a t:male.n.02 ;
+t00044:p1 a :Male ;
   :dob "1866-03-03" ;
   :dod "1974-08-21" ;
   :nam "HENDRIK KWANT" ;
   :rol t00044:r1 .
 
-t00044:p2 a t:female.n.02 ;
+t00044:p2 a :Female ;
   :nam "PIETERTJE BROEKEMA" .
 
-t00044:r1 a t:spouse.n.01 ;
+t00044:r1 a :Spouse.n.01 ;
   :tgt t00044:p2 .
 
-t00044:s1 a t:frond.n.01 .
+t00044:s1 a :Frond.n.01 .
 
-t00044:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00044:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00044.jpg" ;
-  dcterms:date "2019-09-27T17:48:11"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:48:11"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1631 ;

@@ -1,6 +1,6 @@
 @prefix t00621: <https://noordergraf.rug.nl/tomb/t00621#> .
 
-tomb:t00621 a t:tombstone.n.01 ;
+tomb:t00621 a :Tomb ;
   :image t00621:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00621:p1 ,
@@ -9,38 +9,38 @@ tomb:t00621 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00621:s1 .
 
-t00621:p1 a t:male.n.02 ;
+t00621:p1 a :Male ;
   :dob "1804-03-11" ;
   :dod "1874-04-01" ;
   :nam "ELTJO HARMS TIEDENS" ;
   :rol t00621:r1 .
 
-t00621:p2 a t:female.n.02 ;
+t00621:p2 a :Female ;
   :nam "MARTJE DERK VEGTER" .
 
-t00621:p3 a t:person.n.01 ;
+t00621:p3 a :Person ;
   :nam "L. TER BEEK" ;
   :occ t00621:r2 .
 
-t00621:r1 a t:spouse.n.01 ;
+t00621:r1 a :Spouse.n.01 ;
   :tgt t00621:p2 .
 
-t00621:r2 a t:designer.n.01 ;
+t00621:r2 a :Designer.n.01 ;
   :tgt tomb:t00621 .
 
-t00621:s1 a t:hand.n.01 ;
+t00621:s1 a :Hand.n.01 ;
   :num 2 .
 
-t00621:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00621:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00621.jpg" ;
-  dcterms:date "2019-11-23T10:01:58"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:01:58"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1643 ;

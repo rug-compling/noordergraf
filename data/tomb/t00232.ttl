@@ -1,19 +1,19 @@
 @prefix t00232: <https://noordergraf.rug.nl/tomb/t00232#> .
 
-tomb:t00232 a t:tombstone.n.01 ;
+tomb:t00232 a :Tomb ;
   :image t00232:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00232:p1 ,
        t00232:p2 ;
   :sym t00232:s1 .
 
-t00232:a1 a t:winged.a.01 .
+t00232:a1 a :Winged.a.01 .
 
-t00232:c1 a t:hamlet.n.03 ;
+t00232:c1 a :Hamlet.n.03 ;
   :place place:Euvelgunne2755982 ;
   :name "EUVELGUNNE" .
 
-t00232:p1 a t:male.n.02 ;
+t00232:p1 a :Male ;
   :dob "1851-08-26" ;
   :dod "1893-11-16" ;
   :nam "P.P. BOLHUIS" ;
@@ -21,25 +21,25 @@ t00232:p1 a t:male.n.02 ;
   :pod t00232:c1 ;
   :rol t00232:r1 .
 
-t00232:p2 a t:female.n.02 ;
+t00232:p2 a :Female ;
   :nam "L.P. WIGBOLDUS" .
 
-t00232:r1 a t:spouse.n.01 ;
+t00232:r1 a :Spouse.n.01 ;
   :tgt t00232:p2 .
 
-t00232:s1 a t:sandglass.n.01 ;
+t00232:s1 a :Sandglass.n.01 ;
   :att t00232:a1 .
 
-t00232:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00232:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00232.jpg" ;
-  dcterms:date "2019-10-08T14:38:39"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:38:39"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2225 ;

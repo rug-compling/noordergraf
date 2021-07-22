@@ -1,42 +1,42 @@
 @prefix t00891: <https://noordergraf.rug.nl/tomb/t00891#> .
 
-tomb:t00891 a t:tombstone.n.01 ;
+tomb:t00891 a :Tomb ;
   :image t00891:im1 ;
   :site site:gr9741ACgroningen ;
   :ent t00891:p1 ,
        t00891:p2 ;
   :lan "NLD" .
 
-t00891:c1 a t:municipality.n.01 ;
+t00891:c1 a :Municipality.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00891:o1 a t:alderman.n.01 ;
+t00891:o1 a :Alderman.n.01 ;
   :hco "20110" ;
   :loc t00891:c1 .
 
-t00891:p1 a t:male.n.02 ;
+t00891:p1 a :Male ;
   :dob "1868-02-04" ;
   :dod "1940-01-29" ;
   :nam "H.J. SISSINGH" ;
   :occ t00891:o1 ;
   :ttl "OFFICIER IN DE ORDE VAN ORANJE NASSAU" .
 
-t00891:p2 a t:male.n.02 ;
+t00891:p2 a :Male ;
   :dob "1876-03-04" ;
   :dod "1945-02-26" ;
   :nam "F. SISSINGH-BENNEMA" .
 
-t00891:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00891:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00891.jpg" ;
-  dcterms:date "2020-02-01T12:16:20"^^xsd:dateTime ;
+  dc:date "2020-02-01T12:16:20"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2299 ;

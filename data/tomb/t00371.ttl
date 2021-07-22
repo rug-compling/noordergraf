@@ -1,17 +1,17 @@
 @prefix t00371: <https://noordergraf.rug.nl/tomb/t00371#> .
 
-tomb:t00371 a t:tombstone.n.01 ;
+tomb:t00371 a :Tomb ;
   :image t00371:im1 ;
   :site site:dr9481CGvries ;
   :ent t00371:p1 ;
   :quo "RUST ZACHT LIEVE BROER EN OOM" ;
   :sym t00371:s1 .
 
-t00371:c1 a t:village.n.02 ;
+t00371:c1 a :Village.n.02 ;
   :place place:Donderen2756731 ;
   :name "DONDEREN" .
 
-t00371:p1 a t:male.n.02 ;
+t00371:p1 a :Male ;
   :dob "1888-06-12" ;
   :dod "1960-02-20" ;
   :nam "JAN BOELENS" ;
@@ -20,22 +20,22 @@ t00371:p1 a t:male.n.02 ;
   :rol t00371:r1 ,
        t00371:r2 .
 
-t00371:r1 a t:brother.n.01 .
+t00371:r1 a :Brother.n.01 .
 
-t00371:r2 a t:uncle.n.01 .
+t00371:r2 a :Uncle.n.01 .
 
-t00371:s1 a t:frond.n.01 .
+t00371:s1 a :Frond.n.01 .
 
-t00371:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00371:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00371.jpg" ;
-  dcterms:date "2019-10-25T17:14:26"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:14:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0792 ;

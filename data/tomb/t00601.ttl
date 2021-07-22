@@ -1,6 +1,6 @@
 @prefix t00601: <https://noordergraf.rug.nl/tomb/t00601#> .
 
-tomb:t00601 a t:tombstone.n.01 ;
+tomb:t00601 a :Tomb ;
   :image t00601:im1 ;
   :site site:gr9951TNwinsum ;
   :ent t00601:p1 ;
@@ -9,15 +9,15 @@ tomb:t00601 a t:tombstone.n.01 ;
        t00601:s2 ,
        t00601:s3 .
 
-t00601:c1 a t:village.n.02 ;
+t00601:c1 a :Village.n.02 ;
   :place place:Onderdendam2749601 ;
   :name "ONDERDENDAM" .
 
-t00601:c2 a t:village.n.02 ;
+t00601:c2 a :Village.n.02 ;
   :place place:Winsum2744337 ;
   :name "WINSUM" .
 
-t00601:p1 a t:male.n.02 ;
+t00601:p1 a :Male ;
   :dob "1798-08-29" ;
   :dod "1882-01-06" ;
   :nam "JAN WILLEMS KOITER" ;
@@ -25,22 +25,22 @@ t00601:p1 a t:male.n.02 ;
   :pod t00601:c2 ;
   :quo "SINTS DE STICHTING DER CHR. GER. GEMEENTE ALHIER IN 1843, WAS HIJ EERST DIAKEN, DAARNA OUDERLING DIER GEMEENTE" .
 
-t00601:s1 a t:angel.n.01 .
+t00601:s1 a :Angel.n.01 .
 
-t00601:s2 a t:butterfly.n.01 .
+t00601:s2 a :Butterfly.n.01 .
 
-t00601:s3 a t:cross.n.03 .
+t00601:s3 a :Cross.n.03 .
 
-t00601:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00601:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00601.jpg" ;
-  dcterms:date "2019-11-30T14:03:12"^^xsd:dateTime ;
+  dc:date "2019-11-30T14:03:12"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3279 ;

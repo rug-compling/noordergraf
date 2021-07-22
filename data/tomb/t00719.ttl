@@ -1,21 +1,21 @@
 @prefix t00719: <https://noordergraf.rug.nl/tomb/t00719#> .
 
-tomb:t00719 a t:tombstone.n.01 ;
+tomb:t00719 a :Tomb ;
   :image t00719:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00719:p1 ,
        t00719:p2 ;
   :lan "NLD" .
 
-t00719:c1 a t:city.n.01 ;
+t00719:c1 a :City.n.01 ;
   :place place:Gouda2755420 ;
   :name "GOUDA" .
 
-t00719:c2 a t:town.n.01 ;
+t00719:c2 a :Town.n.01 ;
   :place place:Emmen2756136 ;
   :name "EMMEN" .
 
-t00719:p1 a t:female.n.02 ;
+t00719:p1 a :Female ;
   :dob "1850-02-20" ;
   :dod "1932-04-01" ;
   :nam "CATHARINA FREDERIKA HERMAN DE GROOT" ;
@@ -23,22 +23,22 @@ t00719:p1 a t:female.n.02 ;
   :pod t00719:c2 ;
   :rol t00719:r1 .
 
-t00719:p2 a t:male.n.02 ;
+t00719:p2 a :Male ;
   :nam "M. LUIJENDIJK" .
 
-t00719:r1 a t:widow.n.01 ;
+t00719:r1 a :Widow.n.01 ;
   :tgt t00719:p2 .
 
-t00719:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00719:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00719.jpg" ;
-  dcterms:date "2019-12-21T13:24:57"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:24:57"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7815 ;

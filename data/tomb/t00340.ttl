@@ -1,35 +1,35 @@
 @prefix t00340: <https://noordergraf.rug.nl/tomb/t00340#> .
 
-tomb:t00340 a t:tombstone.n.01 ;
+tomb:t00340 a :Tomb ;
   :image t00340:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00340:p1 ,
        t00340:p2 .
 
-t00340:c1 a t:city.n.01 ;
+t00340:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00340:c2 a t:town.n.01 ;
+t00340:c2 a :Town.n.01 ;
   :place place:Hoogeveen2753719 ;
   :name "HOOGEVEEN" .
 
-t00340:c3 a t:village.n.02 ;
+t00340:c3 a :Village.n.02 ;
   :place place:Kloosterveen2752614 ;
   :name "KLOOSTERVEEN" .
 
-t00340:c4 a t:city.n.01 ;
+t00340:c4 a :City.n.01 ;
   :place place:Zwolle2743477 ;
   :name "ZWOLLE" .
 
-t00340:p1 a t:male.n.02 ;
+t00340:p1 a :Male ;
   :dob "1848-09-18" ;
   :dod "1903-02-14" ;
   :nam "HENDERIKUS LA GRO" ;
   :pob t00340:c1 ;
   :pod t00340:c2 .
 
-t00340:p2 a t:female.n.02 ;
+t00340:p2 a :Female ;
   :dob "1853-01-14" ;
   :dod "1941-01-13" ;
   :nam "PAULINE HAAK" ;
@@ -37,19 +37,19 @@ t00340:p2 a t:female.n.02 ;
   :pod t00340:c4 ;
   :rol t00340:r1 .
 
-t00340:r1 a t:spouse.n.01 ;
+t00340:r1 a :Spouse.n.01 ;
   :tgt t00340:p1 .
 
-t00340:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00340:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00340.jpg" ;
-  dcterms:date "2019-10-19T14:07:41"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:07:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7157 ;

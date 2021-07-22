@@ -1,39 +1,39 @@
 @prefix t00307: <https://noordergraf.rug.nl/tomb/t00307#> .
 
-tomb:t00307 a t:tombstone.n.01 ;
+tomb:t00307 a :Tomb ;
   :image t00307:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00307:p1 ;
   :ref "PSALM 103:8" ;
   :sym t00307:s1 .
 
-t00307:a1 a t:weeping.a.02 .
+t00307:a1 a :Weeping.a.02 .
 
-t00307:p1 a t:male.n.02 ;
+t00307:p1 a :Male ;
   :dob "1908-12-22" ;
   :dod "1932-05-11" ;
   :nam "DERK JAN OOSTERHUIS" ;
   :rol t00307:r1 ,
        t00307:r2 .
 
-t00307:r1 a t:son.n.01 ;
+t00307:r1 a :Son.n.01 ;
   :att "LIEVE" .
 
-t00307:r2 a t:brother.n.01 .
+t00307:r2 a :Brother.n.01 .
 
-t00307:s1 a t:willow.n.01 ;
+t00307:s1 a :Willow.n.01 ;
   :att t00307:a1 .
 
-t00307:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00307:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00307.jpg" ;
-  dcterms:date "2019-10-19T14:21:53"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:21:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7157 ;

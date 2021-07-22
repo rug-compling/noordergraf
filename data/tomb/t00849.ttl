@@ -1,6 +1,6 @@
 @prefix t00849: <https://noordergraf.rug.nl/tomb/t00849#> .
 
-tomb:t00849 a t:tombstone.n.01 ;
+tomb:t00849 a :Tomb ;
   :image t00849:im1 ;
   :site site:fr8899AWoost_vlieland ;
   :ent t00849:p1 ,
@@ -8,43 +8,43 @@ tomb:t00849 a t:tombstone.n.01 ;
        t00849:p3 ;
   :lan "NLD" .
 
-t00849:p1 a t:male.n.02 ;
+t00849:p1 a :Male ;
   :dob "1738-08-14" ;
   :dod "1740-02-17" ;
   :nam "FOCKE STAPERT" ;
   :rol t00849:r1 .
 
-t00849:p2 a t:male.n.02 ;
+t00849:p2 a :Male ;
   :dob "1743-04-17" ;
   :dod "1744-05-05" ;
   :nam "FOCKE STAPERT" ;
   :rol t00849:r2 .
 
-t00849:p3 a t:male.n.02 ;
+t00849:p3 a :Male ;
   :dob "1745-02-05" ;
   :dod "1746-11-25" ;
   :nam "FOCKE STAPERT" ;
   :rol t00849:r3 .
 
-t00849:r1 a t:brother.n.01 ;
+t00849:r1 a :Brother.n.01 ;
   :tgt t00849:p2 .
 
-t00849:r2 a t:brother.n.01 ;
+t00849:r2 a :Brother.n.01 ;
   :tgt t00849:p3 .
 
-t00849:r3 a t:brother.n.01 ;
+t00849:r3 a :Brother.n.01 ;
   :tgt t00849:p1 .
 
-t00849:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00849:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00849.jpg" ;
-  dcterms:date "2020-02-20T14:39:27"^^xsd:dateTime ;
+  dc:date "2020-02-20T14:39:27"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2959 ;

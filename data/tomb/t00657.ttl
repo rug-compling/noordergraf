@@ -1,6 +1,6 @@
 @prefix t00657: <https://noordergraf.rug.nl/tomb/t00657#> .
 
-tomb:t00657 a t:tombstone.n.01 ;
+tomb:t00657 a :Tomb ;
   :image t00657:im1 ;
   :site site:fr8917AVleeuwarden ;
   :ent t00657:p1 ,
@@ -9,67 +9,67 @@ tomb:t00657 a t:tombstone.n.01 ;
        t00657:p4 ;
   :lan "NLD" .
 
-t00657:c1 a t:town.n.01 ;
+t00657:c1 a :Town.n.01 ;
   :place place:Einbeck2931804 ;
   :name "EINBECK" .
 
-t00657:c2 a t:country.n.02 ;
+t00657:c2 a :Country.n.02 ;
   :place place:Duitsland2921044 ;
   :mem t00657:c1 ;
   :name "DUITSLAND" .
 
-t00657:c3 a t:city.n.01 ;
+t00657:c3 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LEEUWARDEN" .
 
-t00657:m1 a t:measure.n.02 ;
+t00657:m1 a :Measure.n.02 ;
   :mem t00657:u1 ;
   :qua 87 .
 
-t00657:p1 a t:female.n.02 ;
+t00657:p1 a :Female ;
   :age t00657:m1 ;
   :nam "G. LOOIJGENGA" ;
   :rol t00657:r1 ,
        t00657:r2 .
 
-t00657:p2 a t:male.n.02 ;
+t00657:p2 a :Male ;
   :dob "1808-11-10" ;
   :dod "1982-05-30" ;
   :nam "JOHANN LUDEWIG JACKÉ" ;
   :pob t00657:c1 ;
   :pod t00657:c3 .
 
-t00657:p3 a t:female.n.02 ;
+t00657:p3 a :Female ;
   :dob "1839-04-23" ;
   :dod "1879-11-06" ;
   :nam "AUGUSTA JACKÉ" ;
   :pob t00657:c3 ;
   :pod t00657:c3 .
 
-t00657:p4 a t:male.n.02 ;
+t00657:p4 a :Male ;
   :dob "1859-01-23" ;
   :dod "1904-05-02" ;
   :nam "AUGUST JACKÉ" ;
   :pob t00657:c3 ;
   :pod t00657:c3 .
 
-t00657:r1 a t:mother.n.01 .
+t00657:r1 a :Mother.n.01 .
 
-t00657:r2 a t:widow.n.01 ;
+t00657:r2 a :Widow.n.01 ;
   :tgt t00657:p2 .
 
-t00657:u1 a t:year.n.01 .
+t00657:u1 a :Year.n.01 .
 
-t00657:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00657:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00657.jpg" ;
-  dcterms:date "2019-11-16T14:01:21"^^xsd:dateTime ;
+  dc:date "2019-11-16T14:01:21"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2107 ;

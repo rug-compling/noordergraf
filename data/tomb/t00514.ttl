@@ -1,6 +1,6 @@
 @prefix t00514: <https://noordergraf.rug.nl/tomb/t00514#> .
 
-tomb:t00514 a t:tombstone.n.01 ;
+tomb:t00514 a :Tomb ;
   :image t00514:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00514:p1 ;
@@ -8,7 +8,7 @@ tomb:t00514 a t:tombstone.n.01 ;
        "KARENA BAGIKU HIDUP ADALAG KRISTUS \\ DAN MATI ADALAH KEUNTUNGAN"@msa ;
   :ref "FILIPPENZEN 1:21"@msa .
 
-t00514:p1 a t:male.n.02 ;
+t00514:p1 a :Male ;
   :dob "1961-06-03" ;
   :dod "2003-11-06" ;
   :nam "JULIANUS ANTON PELAMONIA" ,
@@ -18,24 +18,24 @@ t00514:p1 a t:male.n.02 ;
        t00514:r3 ,
        t00514:r4 .
 
-t00514:r1 a t:husband.n.01 .
+t00514:r1 a :Husband.n.01 .
 
-t00514:r2 a t:father.n.01 .
+t00514:r2 a :Father.n.01 .
 
-t00514:r3 a t:brother.n.01 .
+t00514:r3 a :Brother.n.01 .
 
-t00514:r4 a t:uncle.n.01 .
+t00514:r4 a :Uncle.n.01 .
 
-t00514:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00514:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00514.jpg" ;
-  dcterms:date "2019-11-23T10:54:17"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:54:17"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1671 ;

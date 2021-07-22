@@ -1,6 +1,6 @@
 @prefix t01048: <https://noordergraf.rug.nl/tomb/t01048#> .
 
-tomb:t01048 a t:tombstone.n.01 ;
+tomb:t01048 a :Tomb ;
   :image t01048:im1 ;
   :site site:gr9367PAde_wilp ;
   :ent t01048:g1 ,
@@ -10,18 +10,18 @@ tomb:t01048 a t:tombstone.n.01 ;
   :sym t01048:s1 ,
        t01048:s2 .
 
-t01048:c1 a t:village.n.02 ;
+t01048:c1 a :Village.n.02 ;
   :place place:DeWilp2756932 ;
   :name "DE WILP" .
 
-t01048:g1 a t:group.n.01 ;
+t01048:g1 a :Group.n.01 ;
   :rol t01048:r2 .
 
-t01048:g2 a t:group.n.01 ;
+t01048:g2 a :Group.n.01 ;
   :mem t01048:p1 ,
        t01048:p2 .
 
-t01048:p1 a t:female.n.02 ;
+t01048:p1 a :Female ;
   :dob "1855-10-31" ;
   :dod "1935-09-20" ;
   :nam "BONTJE VAN DER VLIET" ;
@@ -29,30 +29,30 @@ t01048:p1 a t:female.n.02 ;
   :pod t01048:c1 ;
   :rol t01048:r1 .
 
-t01048:p2 a t:male.n.02 ;
+t01048:p2 a :Male ;
   :nam "SIJBE DE JONG" .
 
-t01048:r1 a t:widow.n.01 ;
+t01048:r1 a :Widow.n.01 ;
   :beg "07-08-1918" ;
   :tgt t01048:p2 .
 
-t01048:r2 a t:child.n.02 ;
+t01048:r2 a :Child.n.02 ;
   :tgt t01048:g2 .
 
-t01048:s1 a t:frond.n.01 .
+t01048:s1 a :Frond.n.01 .
 
-t01048:s2 a t:frond.n.01 .
+t01048:s2 a :Frond.n.01 .
 
-t01048:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01048:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01048.jpg" ;
-  dcterms:date "2020-05-01T15:27:00"^^xsd:dateTime ;
+  dc:date "2020-05-01T15:27:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1229 ;

@@ -1,6 +1,6 @@
 @prefix t00038: <https://noordergraf.rug.nl/tomb/t00038#> .
 
-tomb:t00038 a t:tombstone.n.01 ;
+tomb:t00038 a :Tomb ;
   :image t00038:im1 ;
   :site site:gr9752CMharen ;
   :ent t00038:p1 ,
@@ -8,17 +8,17 @@ tomb:t00038 a t:tombstone.n.01 ;
   :quo "HIJ WAS EEN TROUW EN IJVERIG HOOFD VAN ZIJN GEZIN" ;
   :sym t00038:s1 .
 
-t00038:a1 a t:weeping.a.02 .
+t00038:a1 a :Weeping.a.02 .
 
-t00038:c1 a t:village.n.02 ;
+t00038:c1 a :Village.n.02 ;
   :place place:Sappemeer2747758 ;
   :name "SAPPEMEER" .
 
-t00038:c2 a t:village.n.02 ;
+t00038:c2 a :Village.n.02 ;
   :place place:Helpman2754444 ;
   :name "HELPMAN" .
 
-t00038:p1 a t:male.n.02 ;
+t00038:p1 a :Male ;
   :dob "1863-02-06" ;
   :dod "1898-06-15" ;
   :nam "ELTE HARSSEMA" ;
@@ -26,25 +26,25 @@ t00038:p1 a t:male.n.02 ;
   :pod t00038:c2 ;
   :rol t00038:r1 .
 
-t00038:p2 a t:female.n.02 ;
+t00038:p2 a :Female ;
   :nam "ETTJE BOUWMAN" .
 
-t00038:r1 a t:husband.n.01 ;
+t00038:r1 a :Husband.n.01 ;
   :tgt t00038:p2 .
 
-t00038:s1 a t:willow.n.01 ;
+t00038:s1 a :Willow.n.01 ;
   :att t00038:a1 .
 
-t00038:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00038:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00038.jpg" ;
-  dcterms:date "2019-09-27T17:53:14"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:53:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1629 ;

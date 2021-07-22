@@ -1,26 +1,26 @@
 @prefix t00738: <https://noordergraf.rug.nl/tomb/t00738#> .
 
-tomb:t00738 a t:tombstone.n.01 ;
+tomb:t00738 a :Tomb ;
   :image t00738:im1 ;
   :site site:gr9936BTfarmsum ;
   :ent t00738:p1 ;
   :lan "NLD" .
 
-t00738:p1 a t:male.n.02 ;
+t00738:p1 a :Male ;
   :dob "1768-02-17" ;
   :dod "1827-03-11" ;
   :nam "SIJBRAND JANS NIJHOF" .
 
-t00738:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00738:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00738.jpg" ;
-  dcterms:date "2019-12-28T12:45:54"^^xsd:dateTime ;
+  dc:date "2019-12-28T12:45:54"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3111 ;

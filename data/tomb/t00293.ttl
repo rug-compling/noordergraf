@@ -1,12 +1,12 @@
 @prefix t00293: <https://noordergraf.rug.nl/tomb/t00293#> .
 
-tomb:t00293 a t:tombstone.n.01 ;
+tomb:t00293 a :Tomb ;
   :image t00293:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00293:p1 ,
        t00293:p2 .
 
-t00293:p1 a t:male.n.02 ;
+t00293:p1 a :Male ;
   :dob "1841-08-08" ;
   :dod "1925-02-09" ;
   :nam "LAMBERTUS HERMANNUS VAN DER SLEEN" ;
@@ -14,33 +14,33 @@ t00293:p1 a t:male.n.02 ;
        t00293:r2 ,
        t00293:r3 .
 
-t00293:p2 a t:female.n.02 ;
+t00293:p2 a :Female ;
   :dob "1842-06-25" ;
   :dod "1929-03-05" ;
   :nam "ROELOFJE NIJMEIJER" ;
   :rol t00293:r4 .
 
-t00293:r1 a t:spouse.n.01 ;
+t00293:r1 a :Spouse.n.01 ;
   :tgt t00293:p2 .
 
-t00293:r2 a t:mother.n.01 .
+t00293:r2 a :Mother.n.01 .
 
-t00293:r3 a t:spouse.n.01 ;
+t00293:r3 a :Spouse.n.01 ;
   :tgt t00293:p2 .
 
-t00293:r4 a t:spouse.n.01 ;
+t00293:r4 a :Spouse.n.01 ;
   :tgt t00293:p1 .
 
-t00293:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00293:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00293.jpg" ;
-  dcterms:date "2019-10-19T14:39:11"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:39:11"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7154 ;

@@ -1,42 +1,42 @@
 @prefix t01038: <https://noordergraf.rug.nl/tomb/t01038#> .
 
-tomb:t01038 a t:tombstone.n.01 ;
+tomb:t01038 a :Tomb ;
   :image t01038:im1 ;
   :site site:gr9804TEnoordhorn ;
   :ent t01038:p1 ;
   :lan "NLD" ;
   :sym t01038:s1 .
 
-t01038:a1 a t:weeping.a.02 .
+t01038:a1 a :Weeping.a.02 .
 
-t01038:c1 a t:village.n.02 ;
+t01038:c1 a :Village.n.02 ;
   :place place:Hoogkerk2753688 ;
   :name "HOOGKERK" .
 
-t01038:c2 a t:city.n.01 ;
+t01038:c2 a :City.n.01 ;
   :place place:Amsterdam2759794 ;
   :name "AMSTERDAM" .
 
-t01038:p1 a t:female.n.02 ;
+t01038:p1 a :Female ;
   :dob "1858-04-26" ;
   :dod "1945-11-30" ;
   :nam "GRIETJE DE BOER" ;
   :pob t01038:c1 ;
   :pod t01038:c2 .
 
-t01038:s1 a t:willow.n.01 ;
+t01038:s1 a :Willow.n.01 ;
   :att t01038:a1 .
 
-t01038:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01038:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01038.jpg" ;
-  dcterms:date "2020-04-19T11:51:26"^^xsd:dateTime ;
+  dc:date "2020-04-19T11:51:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2649 ;

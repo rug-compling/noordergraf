@@ -1,36 +1,36 @@
 @prefix t00122: <https://noordergraf.rug.nl/tomb/t00122#> .
 
-tomb:t00122 a t:tombstone.n.01 ;
+tomb:t00122 a :Tomb ;
   :image t00122:im1 ;
   :site site:gr9752CMharen ;
   :ent t00122:p1 ,
        t00122:p2 .
 
-t00122:p1 a t:male.n.02 ;
+t00122:p1 a :Male ;
   :dob "1887-07-25" ;
   :dod "1962-05-04" ;
   :nam "JAN HOMMES" ;
   :rol t00122:r1 .
 
-t00122:p2 a t:female.n.02 ;
+t00122:p2 a :Female ;
   :dob "1886-02-19" ;
   :dod "1971-09-08" ;
   :nam "ANNA BUIVENGA" .
 
-t00122:r1 a t:husband.n.01 ;
+t00122:r1 a :Husband.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00122:p2 .
 
-t00122:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00122:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00122.jpg" ;
-  dcterms:date "2019-09-20T17:49:20"^^xsd:dateTime ;
+  dc:date "2019-09-20T17:49:20"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1627 ;

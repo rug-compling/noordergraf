@@ -1,6 +1,6 @@
 @prefix t00411: <https://noordergraf.rug.nl/tomb/t00411#> .
 
-tomb:t00411 a t:tombstone.n.01 ;
+tomb:t00411 a :Tomb ;
   :image t00411:im1 ;
   :site site:dr9481CGvries ;
   :ent t00411:p1 ,
@@ -8,19 +8,19 @@ tomb:t00411 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :sym t00411:s1 .
 
-t00411:c1 a t:town.n.01 ;
+t00411:c1 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00411:c2 a t:village.n.02 ;
+t00411:c2 a :Village.n.02 ;
   :place place:Yde2744130 ;
   :name "YDE" .
 
-t00411:c3 a t:municipality.n.01 ;
+t00411:c3 a :Municipality.n.01 ;
   :place place:GemeenteOoststellingwerf2749339 ;
   :name "OOSTSTELLINGWERF" .
 
-t00411:p1 a t:female.n.02 ;
+t00411:p1 a :Female ;
   :dob "1899-06-01" ;
   :dod "1959-09-10" ;
   :nam "JANTJE NIEBOER" ;
@@ -29,7 +29,7 @@ t00411:p1 a t:female.n.02 ;
   :rol t00411:r1 ,
        t00411:r2 .
 
-t00411:p2 a t:male.n.02 ;
+t00411:p2 a :Male ;
   :dob "1897-10-16" ;
   :dod "1970-01-29" ;
   :nam "MEINT DIJKSTRA" ;
@@ -37,26 +37,26 @@ t00411:p2 a t:male.n.02 ;
   :pod t00411:c2 ;
   :rol t00411:r3 .
 
-t00411:r1 a t:spouse.n.01 ;
+t00411:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00411:p2 .
 
-t00411:r2 a t:parent.n.01 .
+t00411:r2 a :Parent.n.01 .
 
-t00411:r3 a t:parent.n.01 .
+t00411:r3 a :Parent.n.01 .
 
-t00411:s1 a t:frond.n.01 .
+t00411:s1 a :Frond.n.01 .
 
-t00411:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00411:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00411.jpg" ;
-  dcterms:date "2019-10-25T17:15:01"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:15:01"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0793 ;

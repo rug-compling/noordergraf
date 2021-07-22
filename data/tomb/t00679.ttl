@@ -1,42 +1,42 @@
 @prefix t00679: <https://noordergraf.rug.nl/tomb/t00679#> .
 
-tomb:t00679 a t:tombstone.n.01 ;
+tomb:t00679 a :Tomb ;
   :image t00679:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00679:p1 ,
        t00679:p2 ;
   :lan "NLD" .
 
-t00679:p1 a t:female.n.02 ;
+t00679:p1 a :Female ;
   :dob "1907-03-25" ;
   :dod "1932-11-03" ;
   :nam "GEESKE VAN DER MEULEN" ;
   :rol t00679:r1 .
 
-t00679:p2 a t:female.n.02 ;
+t00679:p2 a :Female ;
   :dob "1904-12-23" ;
   :dod "1984-01-28" ;
   :nam "GRIET VAN DER MEULEN" ;
   :rol t00679:r2 .
 
-t00679:r1 a t:sister.n.01 ;
+t00679:r1 a :Sister.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00679:p3 .
 
-t00679:r2 a t:sister.n.01 ;
+t00679:r2 a :Sister.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00679:p3 .
 
-t00679:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00679:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00679.jpg" ;
-  dcterms:date "2019-12-14T13:25:19"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:25:19"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0675 ;

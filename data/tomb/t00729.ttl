@@ -1,13 +1,13 @@
 @prefix t00729: <https://noordergraf.rug.nl/tomb/t00729#> .
 
-tomb:t00729 a t:tombstone.n.01 ;
+tomb:t00729 a :Tomb ;
   :image t00729:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00729:p1 ,
        t00729:p2 ;
   :lan "NLD" .
 
-t00729:p1 a t:male.n.02 ;
+t00729:p1 a :Male ;
   :dob "1907-04-05" ;
   :dod "1941-04-29" ;
   :nam "HINDRIK HINDRIKS" ;
@@ -15,28 +15,28 @@ t00729:p1 a t:male.n.02 ;
        t00729:r2 ,
        t00729:r3 .
 
-t00729:p2 a t:female.n.02 ;
+t00729:p2 a :Female ;
   :nam "K. TRIP" .
 
-t00729:r1 a t:husband.n.01 ;
+t00729:r1 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00729:p2 .
 
-t00729:r2 a t:father.n.01 .
+t00729:r2 a :Father.n.01 .
 
-t00729:r3 a t:spouse.n.01 ;
+t00729:r3 a :Spouse.n.01 ;
   :tgt t00729:p2 .
 
-t00729:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00729:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00729.jpg" ;
-  dcterms:date "2019-12-21T13:10:46"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:10:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7824 ;

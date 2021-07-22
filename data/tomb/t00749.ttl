@@ -1,6 +1,6 @@
 @prefix t00749: <https://noordergraf.rug.nl/tomb/t00749#> .
 
-tomb:t00749 a t:tombstone.n.01 ;
+tomb:t00749 a :Tomb ;
   :image t00749:im1 ;
   :site site:gr9936BTfarmsum ;
   :ent t00749:p1 ,
@@ -9,17 +9,17 @@ tomb:t00749 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00749:s1 .
 
-t00749:a1 a t:weeping.a.02 .
+t00749:a1 a :Weeping.a.02 .
 
-t00749:c1 a t:village.n.02 ;
+t00749:c1 a :Village.n.02 ;
   :place place:Wagenborgen2745090 ;
   :name "WAGENBORGEN" .
 
-t00749:c2 a t:village.n.02 ;
+t00749:c2 a :Village.n.02 ;
   :place place:Oterdum2749209 ;
   :name "OTERDUM" .
 
-t00749:p1 a t:male.n.02 ;
+t00749:p1 a :Male ;
   :dob "1823-04-12" ;
   :dod "1886-01-21" ;
   :nam "HINDRIK JANS PERDOK" ;
@@ -28,33 +28,33 @@ t00749:p1 a t:male.n.02 ;
   :rol t00749:r1 ,
        t00749:r2 .
 
-t00749:p2 a t:female.n.02 ;
+t00749:p2 a :Female ;
   :nam "K. SCHOONBEEK" .
 
-t00749:p3 a t:female.n.02 ;
+t00749:p3 a :Female ;
   :nam "G. WOLTHUIS" .
 
-t00749:r1 a t:spouse.n.01 ;
+t00749:r1 a :Spouse.n.01 ;
   :bef t00749:r2 ;
   :tgt t00749:p2 .
 
-t00749:r2 a t:spouse.n.01 ;
+t00749:r2 a :Spouse.n.01 ;
   :aft t00749:r1 ;
   :tgt t00749:p3 .
 
-t00749:s1 a t:willow.n.01 ;
+t00749:s1 a :Willow.n.01 ;
   :att t00749:a1 .
 
-t00749:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00749:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00749.jpg" ;
-  dcterms:date "2019-12-28T12:48:28"^^xsd:dateTime ;
+  dc:date "2019-12-28T12:48:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3110 ;

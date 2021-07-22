@@ -1,35 +1,35 @@
 @prefix t00750: <https://noordergraf.rug.nl/tomb/t00750#> .
 
-tomb:t00750 a t:tombstone.n.01 ;
+tomb:t00750 a :Tomb ;
   :image t00750:im1 ;
   :site site:gr9936BTfarmsum ;
   :ent t00750:p1 ;
   :lan "NLD" ;
   :sym t00750:s1 .
 
-t00750:c1 a t:village.n.02 ;
+t00750:c1 a :Village.n.02 ;
   :place place:Oterdum2749209 ;
   :name "OTERDUM" .
 
-t00750:p1 a t:male.n.02 ;
+t00750:p1 a :Male ;
   :dob "1844-03-14" ;
   :dod "1872-08-16" ;
   :nam "ALDERT ROELFS BOS" ;
   :pob t00750:c1 ;
   :pod t00750:c1 .
 
-t00750:s1 a t:butterfly.n.01 .
+t00750:s1 a :Butterfly.n.01 .
 
-t00750:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00750:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00750.jpg" ;
-  dcterms:date "2019-12-28T12:47:38"^^xsd:dateTime ;
+  dc:date "2019-12-28T12:47:38"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3109 ;

@@ -1,6 +1,6 @@
 @prefix t00185: <https://noordergraf.rug.nl/tomb/t00185#> .
 
-tomb:t00185 a t:tombstone.n.01 ;
+tomb:t00185 a :Tomb ;
   :image t00185:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00185:p1 ,
@@ -8,35 +8,35 @@ tomb:t00185 a t:tombstone.n.01 ;
        t00185:p3 ;
   :ref "PSALM 73:12,13" .
 
-t00185:p1 a t:male.n.02 ;
+t00185:p1 a :Male ;
   :dob "1924-09-16" ;
   :dod "1938-07-22" ;
   :nam "HENDRIK VELDMAN" .
 
-t00185:p2 a t:female.n.02 ;
+t00185:p2 a :Female ;
   :dob "1898-02-08" ;
   :dod "1966-11-20" ;
   :nam "GEERTJE DOZEMAN" ;
   :rol t00185:r4 .
 
-t00185:p3 a t:male.n.02 ;
+t00185:p3 a :Male ;
   :dob "1894-11-23" ;
   :dod "1969-01-01" ;
   :nam "JOHANNES VELDMAN" .
 
-t00185:r4 a t:spouse.n.01 ;
+t00185:r4 a :Spouse.n.01 ;
   :tgt t00185:p3 .
 
-t00185:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00185:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00185.jpg" ;
-  dcterms:date "2019-10-05T10:08:25"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:08:25"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1909 ;

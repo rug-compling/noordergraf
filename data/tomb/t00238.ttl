@@ -1,6 +1,6 @@
 @prefix t00238: <https://noordergraf.rug.nl/tomb/t00238#> .
 
-tomb:t00238 a t:tombstone.n.01 ;
+tomb:t00238 a :Tomb ;
   :image t00238:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00238:p1 ,
@@ -9,39 +9,39 @@ tomb:t00238 a t:tombstone.n.01 ;
        "RUST ZACHT LIEVE VADER EN OPA" ;
   :sym t00238:s1 .
 
-t00238:p1 a t:female.n.02 ;
+t00238:p1 a :Female ;
   :dod "1934-11-06" ;
   :nam "ALBERNDINA MESKEN" ;
   :rol t00238:r1 ,
        t00238:r2 ,
        t00238:r3 .
 
-t00238:p2 a t:male.n.02 ;
+t00238:p2 a :Male ;
   :dob "1869-06-10" ;
   :dod "1943-04-17" ;
   :nam "H. ROSING" .
 
-t00238:r1 a t:wife.n.01 ;
+t00238:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00238:p2 .
 
-t00238:r2 a t:mother.n.01 .
+t00238:r2 a :Mother.n.01 .
 
-t00238:r3 a t:spouse.n.01 ;
+t00238:r3 a :Spouse.n.01 ;
   :tgt t00238:p2 .
 
-t00238:s1 a t:frond.n.01 .
+t00238:s1 a :Frond.n.01 .
 
-t00238:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00238:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00238.jpg" ;
-  dcterms:date "2019-10-10T09:41:27"^^xsd:dateTime ;
+  dc:date "2019-10-10T09:41:27"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2054 ;

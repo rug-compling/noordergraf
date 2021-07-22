@@ -1,32 +1,32 @@
 @prefix t00677: <https://noordergraf.rug.nl/tomb/t00677#> .
 
-tomb:t00677 a t:tombstone.n.01 ;
+tomb:t00677 a :Tomb ;
   :image t00677:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00677:p1 ,
        t00677:p2 ;
   :lan "NLD" .
 
-t00677:p1 a t:female.n.02 ;
+t00677:p1 a :Female ;
   :dob "XX-XX-1894" ;
   :dod "XX-XX-1974" ;
   :nam "SIBBELTJE VAN DER WERFF-TIMMER" .
 
-t00677:p2 a t:male.n.02 ;
+t00677:p2 a :Male ;
   :dob "XX-XX-1894" ;
   :dod "XX-XX-1979" ;
   :nam "WIETZE VAN DER WERFF" .
 
-t00677:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00677:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00677.jpg" ;
-  dcterms:date "2019-12-14T13:31:31"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:31:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0686 ;

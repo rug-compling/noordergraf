@@ -1,6 +1,6 @@
 @prefix t00608: <https://noordergraf.rug.nl/tomb/t00608#> .
 
-tomb:t00608 a t:tombstone.n.01 ;
+tomb:t00608 a :Tomb ;
   :image t00608:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00608:p1 ,
@@ -12,43 +12,43 @@ tomb:t00608 a t:tombstone.n.01 ;
        t00608:s3 ,
        t00608:s4 .
 
-t00608:p1 a t:male.n.02 ;
+t00608:p1 a :Male ;
   :dob "1833-12-30" ;
   :dod "1890-03-04" ;
   :nam "HENDRIK H. KAMPS" ;
   :rol t00608:r1 .
 
-t00608:p2 a t:female.n.02 ;
+t00608:p2 a :Female ;
   :nam "ALBERDINA NIP" .
 
-t00608:p3 a t:person.n.01 ;
+t00608:p3 a :Person ;
   :nam "A. BIELARS" ;
   :occ t00608:r2 .
 
-t00608:r1 a t:spouse.n.01 ;
+t00608:r1 a :Spouse.n.01 ;
   :tgt t00608:p2 .
 
-t00608:r2 a t:designer.n.01 ;
+t00608:r2 a :Designer.n.01 ;
   :tgt tomb:t00608 .
 
-t00608:s1 a t:cross.n.03 .
+t00608:s1 a :Cross.n.03 .
 
-t00608:s2 a t:anchor.n.01 .
+t00608:s2 a :Anchor.n.01 .
 
-t00608:s3 a t:branch.n.02 .
+t00608:s3 a :Branch.n.02 .
 
-t00608:s4 a t:heart.n.07 .
+t00608:s4 a :Heart.n.07 .
 
-t00608:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00608:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00608.jpg" ;
-  dcterms:date "2019-11-23T10:05:47"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:05:47"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1644 ;

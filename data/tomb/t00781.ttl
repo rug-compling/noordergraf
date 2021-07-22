@@ -1,6 +1,6 @@
 @prefix t00781: <https://noordergraf.rug.nl/tomb/t00781#> .
 
-tomb:t00781 a t:tombstone.n.01 ;
+tomb:t00781 a :Tomb ;
   :image t00781:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00781:p1 ,
@@ -11,17 +11,17 @@ tomb:t00781 a t:tombstone.n.01 ;
        t00781:s3 ,
        t00781:s4 .
 
-t00781:a1 a t:weeping.a.02 .
+t00781:a1 a :Weeping.a.02 .
 
-t00781:c1 a t:village.n.02 ;
+t00781:c1 a :Village.n.02 ;
   :place place:Noordbarge2749996 ;
   :name "NOORDBARGE" .
 
-t00781:c2 a t:village.n.02 ;
+t00781:c2 a :Village.n.02 ;
   :place place:Dalen2757857 ;
   :name "DALEN" .
 
-t00781:p1 a t:female.n.02 ;
+t00781:p1 a :Female ;
   :dob "1859-01-15" ;
   :dod "1918-09-25" ;
   :nam "LAMMECHIEN STRATING" ;
@@ -30,36 +30,36 @@ t00781:p1 a t:female.n.02 ;
   :rol t00781:r1 ,
        t00781:r2 .
 
-t00781:p2 a t:male.n.02 ;
+t00781:p2 a :Male ;
   :nam "HEIJE CHRISTIAANS" .
 
-t00781:r1 a t:spouse.n.01 ;
+t00781:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00781:p2 .
 
-t00781:r2 a t:wife.n.01 ;
+t00781:r2 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00781:p2 .
 
-t00781:s1 a t:willow.n.01 ;
+t00781:s1 a :Willow.n.01 ;
   :att t00781:a1 .
 
-t00781:s2 a t:scythe.n.01 .
+t00781:s2 a :Scythe.n.01 .
 
-t00781:s3 a t:frond.n.01 .
+t00781:s3 a :Frond.n.01 .
 
-t00781:s4 a t:frond.n.01 .
+t00781:s4 a :Frond.n.01 .
 
-t00781:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00781:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00781.jpg" ;
-  dcterms:date "2019-12-21T12:58:50"^^xsd:dateTime ;
+  dc:date "2019-12-21T12:58:50"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7819 ;

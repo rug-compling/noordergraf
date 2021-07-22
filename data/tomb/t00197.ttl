@@ -1,6 +1,6 @@
 @prefix t00197: <https://noordergraf.rug.nl/tomb/t00197#> .
 
-tomb:t00197 a t:tombstone.n.01 ;
+tomb:t00197 a :Tomb ;
   :image t00197:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00197:p1 ,
@@ -8,38 +8,38 @@ tomb:t00197 a t:tombstone.n.01 ;
   :quo "RUST IN VREDE" ;
   :sym t00197:s1 .
 
-t00197:p1 a t:male.n.02 ;
+t00197:p1 a :Male ;
   :dob "1904-01-27" ;
   :dod "1933-12-08" ;
   :nam "GOUKE JANNES VELDSEMA" ;
   :rol t00197:r1 ,
        t00197:r2 .
 
-t00197:p2 a t:male.n.02 ;
+t00197:p2 a :Male ;
   :dob "1909-12-08" ;
   :dod "1941-01-03" ;
   :nam "SIEGER HARKO VELDSEMA" ;
   :rol t00197:r3 .
 
-t00197:r1 a t:son.n.01 .
+t00197:r1 a :Son.n.01 .
 
-t00197:r2 a t:brother.n.01 ;
+t00197:r2 a :Brother.n.01 ;
   :tgt t00197:p2 .
 
-t00197:r3 a t:son.n.01 .
+t00197:r3 a :Son.n.01 .
 
-t00197:s1 a t:frond.n.01 .
+t00197:s1 a :Frond.n.01 .
 
-t00197:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00197:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00197.jpg" ;
-  dcterms:date "2019-10-06T14:39:42"^^xsd:dateTime ;
+  dc:date "2019-10-06T14:39:42"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1874 ;

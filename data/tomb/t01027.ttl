@@ -1,6 +1,6 @@
 @prefix t01027: <https://noordergraf.rug.nl/tomb/t01027#> .
 
-tomb:t01027 a t:tombstone.n.01 ;
+tomb:t01027 a :Tomb ;
   :image t01027:im1 ;
   :site site:gr9906PPbierum ;
   :ent t01027:p1 ,
@@ -13,53 +13,53 @@ tomb:t01027 a t:tombstone.n.01 ;
        t01027:s3 ,
        t01027:s4 .
 
-t01027:b1 a t:Galations.n.02 ;
+t01027:b1 a :Galations.n.02 ;
   :prt t01027:c3 .
 
-t01027:c3 a t:chapter.n.01 ;
+t01027:c3 a :Chapter.n.01 ;
   :ord 6 ;
   :prt t01027:v1 .
 
-t01027:p1 a t:female.n.02 ;
+t01027:p1 a :Female ;
   :dob "1841-07-29" ;
   :dod "1878-04-30" ;
   :nam "MARTJE PRINCIPAAL" ;
   :rol t01027:r1 .
 
-t01027:p2 a t:male.n.02 ;
+t01027:p2 a :Male ;
   :nam "P. DAM" .
 
-t01027:p3 a t:person.n.01 ;
+t01027:p3 a :Person ;
   :nam "W. MEIJER" ;
   :occ t01027:r2 .
 
-t01027:r1 a t:spouse.n.01 ;
+t01027:r1 a :Spouse.n.01 ;
   :tgt t01027:p2 .
 
-t01027:r2 a t:designer.n.01 ;
+t01027:r2 a :Designer.n.01 ;
   :tgt tomb:t01027 .
 
-t01027:s1 a t:butterfly.n.01 .
+t01027:s1 a :Butterfly.n.01 .
 
-t01027:s2 a t:scythe.n.01 .
+t01027:s2 a :Scythe.n.01 .
 
-t01027:s3 a t:entity.n.01 .
+t01027:s3 a :Entity.n.01 .
 
-t01027:s4 a t:ribbon.n.01 .
+t01027:s4 a :Ribbon.n.01 .
 
-t01027:v1 a t:verse.n.01 ;
+t01027:v1 a :Verse.n.01 ;
   :ord 7 .
 
-t01027:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01027:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01027.jpg" ;
-  dcterms:date "2020-04-17T18:28:50"^^xsd:dateTime ;
+  dc:date "2020-04-17T18:28:50"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3809 ;

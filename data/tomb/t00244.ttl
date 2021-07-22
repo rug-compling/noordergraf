@@ -1,39 +1,39 @@
 @prefix t00244: <https://noordergraf.rug.nl/tomb/t00244#> .
 
-tomb:t00244 a t:tombstone.n.01 ;
+tomb:t00244 a :Tomb ;
   :image t00244:im1 ;
   :site site:gr9751BBharen ;
   :ent t00244:p1 ,
        t00244:p2 .
 
-t00244:o1 a t:luthier.n.01 ;
+t00244:o1 a :Luthier.n.01 ;
   :hco "94120" .
 
-t00244:p1 a t:male.n.02 ;
+t00244:p1 a :Male ;
   :dob "1888-06-14" ;
   :dod "1951-08-23" ;
   :nam "FEIKO JACOB BOUMAN" ;
   :occ t00244:o1 ;
   :rol t00244:r1 .
 
-t00244:p2 a t:female.n.02 ;
+t00244:p2 a :Female ;
   :dob "1900-02-22" ;
   :dod "1987-05-13" ;
   :nam "NEELTJE VAN DER WIS" .
 
-t00244:r1 a t:spouse.n.01 ;
+t00244:r1 a :Spouse.n.01 ;
   :tgt t00244:p2 .
 
-t00244:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00244:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00244.jpg" ;
-  dcterms:date "2019-10-11T17:31:46"^^xsd:dateTime ;
+  dc:date "2019-10-11T17:31:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1727 ;

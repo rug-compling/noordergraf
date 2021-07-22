@@ -1,27 +1,27 @@
 @prefix t00933: <https://noordergraf.rug.nl/tomb/t00933#> .
 
-tomb:t00933 a t:tombstone.n.01 ;
+tomb:t00933 a :Tomb ;
   :image t00933:im1 ;
   :site site:gr9741GHgroningen ;
   :ent t00933:p1 ;
   :quo "HIJ DE HERE IS ONZE GOD \\ HIJ GEDENKT AAN ZIJN VERBOND \\ TOT IN EEUWIGHEID"@nld ;
   :ref "PSALM 105:7-8"@nld .
 
-t00933:p1 a t:female.n.02 ;
+t00933:p1 a :Female ;
   :dob "1945-01-18" ;
   :dod "1956-09-15" ;
   :nam "EMMIE ANTONIDES" .
 
-t00933:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00933:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00933.jpg" ;
-  dcterms:date "2020-03-18T09:03:31"^^xsd:dateTime ;
+  dc:date "2020-03-18T09:03:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2392 ;

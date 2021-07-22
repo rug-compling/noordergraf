@@ -1,6 +1,6 @@
 @prefix t01074: <https://noordergraf.rug.nl/tomb/t01074#> .
 
-tomb:t01074 a t:tombstone.n.01 ;
+tomb:t01074 a :Tomb ;
   :image t01074:im1 ;
   :site site:gr9752CMharen ;
   :ent t01074:p1 ,
@@ -8,37 +8,37 @@ tomb:t01074 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :ref t01074:v1 .
 
-t01074:b1 a t:Epistle_to_the_Ephesians.n.01 ;
+t01074:b1 a :Epistle_to_the_Ephesians.n.01 ;
   :prt t01074:c1 .
 
-t01074:c1 a t:chapter.n.01 ;
+t01074:c1 a :Chapter.n.01 ;
   :ord 2 ;
   :prt t01074:v1 .
 
-t01074:p1 a t:male.n.02 ;
+t01074:p1 a :Male ;
   :dob "1883-10-27" ;
   :dod "1958-08-12" ;
   :nam "PIETER DE WIT" .
 
-t01074:p2 a t:female.n.02 ;
+t01074:p2 a :Female ;
   :dob "1886-03-23" ;
   :dod "1969-03-15" ;
   :nam "CORNELIA ELEMA" .
 
-t01074:v1 a t:verse.n.01 ;
+t01074:v1 a :Verse.n.01 ;
   :ord 8 ;
   :txt "DOOR GENADE ZIJT GIJ BEHOUDEN" .
 
-t01074:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01074:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01074.jpg" ;
-  dcterms:date "2020-05-15T17:31:31"^^xsd:dateTime ;
+  dc:date "2020-05-15T17:31:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1625 ;

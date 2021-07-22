@@ -1,6 +1,6 @@
 @prefix t00918: <https://noordergraf.rug.nl/tomb/t00918#> .
 
-tomb:t00918 a t:tombstone.n.01 ;
+tomb:t00918 a :Tomb ;
   :image t00918:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00918:p1 ,
@@ -8,7 +8,7 @@ tomb:t00918 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00918:s1 .
 
-t00918:p1 a t:male.n.02 ;
+t00918:p1 a :Male ;
   :dob "1870-12-23" ;
   :dod "1954-04-20" ;
   :nam "LUKAS MEELKER" ;
@@ -16,28 +16,28 @@ t00918:p1 a t:male.n.02 ;
        t00918:r2 ,
        t00918:r3 .
 
-t00918:p2 a t:female.n.02 ;
+t00918:p2 a :Female ;
   :nam "ALBERTJE BOS" .
 
-t00918:r1 a t:father.n.01 .
+t00918:r1 a :Father.n.01 .
 
-t00918:r2 a t:grandfather.n.01 .
+t00918:r2 a :Grandfather.n.01 .
 
-t00918:r3 a t:widower.n.01 ;
+t00918:r3 a :Widower.n.01 ;
   :tgt t00918:p2 .
 
-t00918:s1 a t:frond.n.01 .
+t00918:s1 a :Frond.n.01 .
 
-t00918:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00918:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00918.jpg" ;
-  dcterms:date "2020-03-07T14:03:40"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:03:40"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1715 ;

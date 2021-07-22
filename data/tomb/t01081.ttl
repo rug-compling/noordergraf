@@ -1,20 +1,20 @@
 @prefix t01081: <https://noordergraf.rug.nl/tomb/t01081#> .
 
-tomb:t01081 a t:tombstone.n.01 ;
+tomb:t01081 a :Tomb ;
   :image t01081:im1 ;
   :ent t01081:p1 ,
        t01081:p2 ;
   :lan "NLD" .
 
-t01081:c1 a t:village.n.02 ;
+t01081:c1 a :Village.n.02 ;
   :place place:BadNieuweschans2750250 ;
   :name "BAD NIEUWESCHANS" .
 
-t01081:c2 a t:town.n.01 ;
+t01081:c2 a :Town.n.01 ;
   :place place:Vries2745189 ;
   :name "VRIES" .
 
-t01081:p1 a t:female.n.02 ;
+t01081:p1 a :Female ;
   :dob "1892-10-08" ;
   :dod "1963-03-28" ;
   :nam "JANTJE BRUL" ;
@@ -22,21 +22,21 @@ t01081:p1 a t:female.n.02 ;
   :pod t01081:c2 ;
   :rol t01081:r1 .
 
-t01081:p2 a t:male.n.02 ;
+t01081:p2 a :Male ;
   :nam "PIETER WIERENGA" .
 
-t01081:r1 a t:spouse.n.01 ;
+t01081:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t01081:p2 .
 
-t01081:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01081:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01081.jpg" ;
-  dcterms:date "2020-05-20T19:32:56"^^xsd:dateTime .
+  dc:date "2020-05-20T19:32:56"^^xsd:dateTime .
 

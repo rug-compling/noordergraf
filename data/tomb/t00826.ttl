@@ -1,21 +1,21 @@
 @prefix t00826: <https://noordergraf.rug.nl/tomb/t00826#> .
 
-tomb:t00826 a t:tombstone.n.01 ;
+tomb:t00826 a :Tomb ;
   :image t00826:im1 ;
   :site site:gr9741ACgroningen ;
   :ent t00826:p1 ,
        t00826:p2 ;
   :quo "GEVALLEN VOOR ZIJN VADERLAND"@nld .
 
-t00826:c1 a t:city.n.01 ;
+t00826:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00826:c2 a t:city.n.01 ;
+t00826:c2 a :City.n.01 ;
   :place place:Delfzijl2757340 ;
   :name "DELFZIJL" .
 
-t00826:p1 a t:male.n.02 ;
+t00826:p1 a :Male ;
   :dob "1894-07-11" ;
   :dod "1945-04-20" ;
   :nam "CORNELIS KLEI" ;
@@ -23,22 +23,22 @@ t00826:p1 a t:male.n.02 ;
   :pod t00826:c2 ;
   :rol t00826:r1 .
 
-t00826:p2 a t:female.n.02 ;
+t00826:p2 a :Female ;
   :nam "JOHANNA GILIAMS" .
 
-t00826:r1 a t:spouse.n.01 ;
+t00826:r1 a :Spouse.n.01 ;
   :tgt t00826:p2 .
 
-t00826:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00826:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00826.jpg" ;
-  dcterms:date "2020-02-01T12:18:46"^^xsd:dateTime ;
+  dc:date "2020-02-01T12:18:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2307 ;

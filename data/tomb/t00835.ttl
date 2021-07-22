@@ -1,6 +1,6 @@
 @prefix t00835: <https://noordergraf.rug.nl/tomb/t00835#> .
 
-tomb:t00835 a t:tombstone.n.01 ;
+tomb:t00835 a :Tomb ;
   :image t00835:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00835:p1 ,
@@ -9,48 +9,48 @@ tomb:t00835 a t:tombstone.n.01 ;
   :quo "RUST ZACHT"@nld ;
   :sym t00835:s1 .
 
-t00835:p1 a t:male.n.02 ;
+t00835:p1 a :Male ;
   :dob "1869-11-26" ;
   :dod "1947-10-05" ;
   :nam "GEERT SIEDERS" ;
   :rol t00835:r1 .
 
-t00835:p2 a t:female.n.02 ;
+t00835:p2 a :Female ;
   :dob "1877-06-01" ;
   :dod "1956-12-23" ;
   :nam "TIENNA IJDENS" ;
   :rol t00835:r2 .
 
-t00835:p3 a t:male.n.02 ;
+t00835:p3 a :Male ;
   :dob "1877-09-11" ;
   :dod "1955-05-31" ;
   :nam "GEERHART SIEDERS" ;
   :rol t00835:r3 .
 
-t00835:r1 a t:parent.n.01 ;
+t00835:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00835:p4 .
 
-t00835:r2 a t:parent.n.01 ;
+t00835:r2 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00835:p4 .
 
-t00835:r3 a t:uncle.n.01 ;
+t00835:r3 a :Uncle.n.01 ;
   :att "LIEVE" ;
   :tgt t00835:p4 .
 
-t00835:s1 a t:frond.n.01 .
+t00835:s1 a :Frond.n.01 .
 
-t00835:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00835:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00835.jpg" ;
-  dcterms:date "2020-02-15T15:52:34"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:52:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7766 ;

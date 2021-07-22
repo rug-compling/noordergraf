@@ -1,6 +1,6 @@
 @prefix t00537: <https://noordergraf.rug.nl/tomb/t00537#> .
 
-tomb:t00537 a t:tombstone.n.01 ;
+tomb:t00537 a :Tomb ;
   :image t00537:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00537:p1 ,
@@ -8,39 +8,39 @@ tomb:t00537 a t:tombstone.n.01 ;
   :quo "RUST ZACHT"@nld ;
   :sym t00537:s1 .
 
-t00537:p1 a t:female.n.02 ;
+t00537:p1 a :Female ;
   :dob "1832-12-01" ;
   :dod "1913-10-23" ;
   :nam "IDA G. STRATING" ;
   :rol t00537:r1 .
 
-t00537:p2 a t:male.n.02 ;
+t00537:p2 a :Male ;
   :nam "JAN VRIEZE DE VRIES" .
 
-t00537:r1 a t:widow.n.01 ;
+t00537:r1 a :Widow.n.01 ;
   :tgt t00537:p2 .
 
-t00537:s1 a t:composite.n.01 ;
+t00537:s1 a :Composite.n.01 ;
   :prt t00537:s2 ,
        t00537:s3 ,
        t00537:s4 .
 
-t00537:s2 a t:flag.n.01 .
+t00537:s2 a :Flag.n.01 .
 
-t00537:s3 a t:anchor.n.01 .
+t00537:s3 a :Anchor.n.01 .
 
-t00537:s4 a t:anchor.n.01 .
+t00537:s4 a :Anchor.n.01 .
 
-t00537:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00537:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00537.jpg" ;
-  dcterms:date "2019-11-24T14:21:09"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:21:09"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1043 ;

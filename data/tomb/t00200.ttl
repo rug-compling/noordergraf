@@ -1,38 +1,38 @@
 @prefix t00200: <https://noordergraf.rug.nl/tomb/t00200#> .
 
-tomb:t00200 a t:tombstone.n.01 ;
+tomb:t00200 a :Tomb ;
   :image t00200:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00200:p1 ,
        t00200:p2 ;
   :sym t00200:s1 .
 
-t00200:p1 a t:female.n.02 ;
+t00200:p1 a :Female ;
   :dob "1883-11-08" ;
   :dod "1932-01-07" ;
   :nam "JANTINA PIETRONELLA CUSIËL" ;
   :rol t00200:r1 .
 
-t00200:p2 a t:male.n.02 ;
+t00200:p2 a :Male ;
   :dob "1878-10-26" ;
   :dod "1958-03-04" ;
   :nam "JAN WIERSEMA" .
 
-t00200:r1 a t:spouse.n.01 ;
+t00200:r1 a :Spouse.n.01 ;
   :tgt t00200:p2 .
 
-t00200:s1 a t:frond.n.01 .
+t00200:s1 a :Frond.n.01 .
 
-t00200:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00200:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00200.jpg" ;
-  dcterms:date "2019-10-06T14:38:28"^^xsd:dateTime ;
+  dc:date "2019-10-06T14:38:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1901 ;

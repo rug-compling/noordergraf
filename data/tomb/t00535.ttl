@@ -1,6 +1,6 @@
 @prefix t00535: <https://noordergraf.rug.nl/tomb/t00535#> .
 
-tomb:t00535 a t:tombstone.n.01 ;
+tomb:t00535 a :Tomb ;
   :image t00535:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00535:p1 ;
@@ -8,20 +8,20 @@ tomb:t00535 a t:tombstone.n.01 ;
        "RUST ZACHT"@nld ;
   :sym t00535:s1 .
 
-t00535:a1 a t:weeping.a.02 .
+t00535:a1 a :Weeping.a.02 .
 
-t00535:c1 a t:village.n.02 ;
+t00535:c1 a :Village.n.02 ;
   :place place:Wildervank2744431 ;
   :name "WILDERVANK" .
 
-t00535:c2 a t:hospital.n.01 ;
+t00535:c2 a :Hospital.n.01 ;
   :loc t00535:c3 .
 
-t00535:c3 a t:city.n.01 ;
+t00535:c3 a :City.n.01 ;
   :place place:Rotterdam2747891 ;
   :name "ROTTERDAM" .
 
-t00535:p1 a t:male.n.02 ;
+t00535:p1 a :Male ;
   :dob "1845-10-03" ;
   :dod "1915-05-14" ;
   :nam "GEERT OLTHOF" ;
@@ -29,22 +29,22 @@ t00535:p1 a t:male.n.02 ;
   :pod t00535:c2 ;
   :rol t00535:r1 .
 
-t00535:r1 a t:brother.n.01 ;
+t00535:r1 a :Brother.n.01 ;
   :att "GELIEFDE" .
 
-t00535:s1 a t:willow.n.01 ;
+t00535:s1 a :Willow.n.01 ;
   :att t00535:a1 .
 
-t00535:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00535:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00535.jpg" ;
-  dcterms:date "2019-11-24T14:22:49"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:22:49"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1042 ;

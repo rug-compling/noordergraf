@@ -1,6 +1,6 @@
 @prefix t00880: <https://noordergraf.rug.nl/tomb/t00880#> .
 
-tomb:t00880 a t:tombstone.n.01 ;
+tomb:t00880 a :Tomb ;
   :image t00880:im1 ;
   :site site:dr7844TCveenoord ;
   :ent t00880:p1 ;
@@ -9,35 +9,35 @@ tomb:t00880 a t:tombstone.n.01 ;
   :sym t00880:s1 ,
        t00880:s2 .
 
-t00880:c1 a t:village.n.02 ;
+t00880:c1 a :Village.n.02 ;
   :place place:Odoornerveen2749730 ;
   :name "ODOORNERVEEN" .
 
-t00880:c2 a t:village.n.02 ;
+t00880:c2 a :Village.n.02 ;
   :place place:NieuwAmsterdam2750375 ;
   :name "NIEUW-AMSTERDAM" .
 
-t00880:p1 a t:male.n.02 ;
+t00880:p1 a :Male ;
   :dob "1879-01-20" ;
   :dod "1929-10-08" ;
   :nam "ALBERT KOENS" ;
   :pob t00880:c1 ;
   :pod t00880:c2 .
 
-t00880:s1 a t:entity.n.01 .
+t00880:s1 a :Entity.n.01 .
 
-t00880:s2 a t:entity.n.01 .
+t00880:s2 a :Entity.n.01 .
 
-t00880:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00880:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00880.jpg" ;
-  dcterms:date "2020-02-15T15:13:15"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:13:15"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7193 ;

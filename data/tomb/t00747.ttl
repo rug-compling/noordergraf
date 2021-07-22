@@ -1,6 +1,6 @@
 @prefix t00747: <https://noordergraf.rug.nl/tomb/t00747#> .
 
-tomb:t00747 a t:tombstone.n.01 ;
+tomb:t00747 a :Tomb ;
   :image t00747:im1 ;
   :site site:gr9679KHscheemda ;
   :ent t00747:p1 ,
@@ -8,17 +8,17 @@ tomb:t00747 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00747:s1 .
 
-t00747:a1 a t:weeping.a.02 .
+t00747:a1 a :Weeping.a.02 .
 
-t00747:c1 a t:village.n.02 ;
+t00747:c1 a :Village.n.02 ;
   :place place:Nieuwolda2750154 ;
   :name "NIEUWOLDA" .
 
-t00747:c2 a t:village.n.02 ;
+t00747:c2 a :Village.n.02 ;
   :place place:Scheemda2747661 ;
   :name "SCHEEMDA" .
 
-t00747:p1 a t:male.n.02 ;
+t00747:p1 a :Male ;
   :dob "1848-12-24" ;
   :dod "1929-02-20" ;
   :nam "HARM ANTEMA" ;
@@ -26,25 +26,25 @@ t00747:p1 a t:male.n.02 ;
   :pod t00747:c2 ;
   :rol t00747:r1 .
 
-t00747:p2 a t:female.n.02 ;
+t00747:p2 a :Female ;
   :nam "G. VAN DER WAL" .
 
-t00747:r1 a t:widower.n.01 ;
+t00747:r1 a :Widower.n.01 ;
   :tgt t00747:p2 .
 
-t00747:s1 a t:willow.n.01 ;
+t00747:s1 a :Willow.n.01 ;
   :att t00747:a1 .
 
-t00747:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00747:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00747.jpg" ;
-  dcterms:date "2019-12-29T10:17:48"^^xsd:dateTime ;
+  dc:date "2019-12-29T10:17:48"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1807 ;

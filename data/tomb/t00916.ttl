@@ -1,44 +1,44 @@
 @prefix t00916: <https://noordergraf.rug.nl/tomb/t00916#> .
 
-tomb:t00916 a t:tombstone.n.01 ;
+tomb:t00916 a :Tomb ;
   :image t00916:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00916:p1 ,
        t00916:p2 ;
   :lan "NLD" .
 
-t00916:c1 a t:village.n.02 ;
+t00916:c1 a :Village.n.02 ;
   :place place:Niebert2750396 ;
   :name "NIEBERT" .
 
-t00916:c2 a t:village.n.02 ;
+t00916:c2 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00916:p1 a t:female.n.02 ;
+t00916:p1 a :Female ;
   :dob "1862-12-08" ;
   :dod "1942-01-17" ;
   :nam "HENDRIKJE KONING" ;
   :pob t00916:c1 ;
   :pod t00916:c2 .
 
-t00916:p2 a t:male.n.02 ;
+t00916:p2 a :Male ;
   :dob "1862-12-23" ;
   :dod "1943-06-07" ;
   :nam "JANNES SNIP" ;
   :pob t00916:c1 ;
   :pod t00916:c2 .
 
-t00916:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00916:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00916.jpg" ;
-  dcterms:date "2020-03-07T14:04:26"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:04:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1715 ;

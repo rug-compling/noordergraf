@@ -1,12 +1,12 @@
 @prefix t00844: <https://noordergraf.rug.nl/tomb/t00844#> .
 
-tomb:t00844 a t:tombstone.n.01 ;
+tomb:t00844 a :Tomb ;
   :image t00844:im1 ;
   :site site:fr8899AWoost_vlieland ;
   :ent t00844:p1 ;
   :quo "RUST ZACHT HIL"@nld .
 
-t00844:p1 a t:female.n.02 ;
+t00844:p1 a :Female ;
   :dob "1901-07-22" ;
   :dod "1978-10-12" ;
   :nam "HIL" ,
@@ -15,23 +15,23 @@ t00844:p1 a t:female.n.02 ;
        t00844:r2 ,
        t00844:r3 .
 
-t00844:r1 a t:sister.n.01 ;
+t00844:r1 a :Sister.n.01 ;
   :att "GELIEFDE" .
 
-t00844:r2 a t:sister-in-law.n.01 .
+t00844:r2 a :Sister-in-law.n.01 .
 
-t00844:r3 a t:aunt.n.01 .
+t00844:r3 a :Aunt.n.01 .
 
-t00844:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00844:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00844.jpg" ;
-  dcterms:date "2020-02-20T14:41:46"^^xsd:dateTime ;
+  dc:date "2020-02-20T14:41:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2955 ;

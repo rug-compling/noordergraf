@@ -1,24 +1,24 @@
 @prefix t00284: <https://noordergraf.rug.nl/tomb/t00284#> .
 
-tomb:t00284 a t:tombstone.n.01 ;
+tomb:t00284 a :Tomb ;
   :image t00284:im1 ;
   :site site:gr9985SCoosternieland ;
   :ent t00284:p1 ,
        t00284:p2 .
 
-t00284:c1 a t:village.n.02 ;
+t00284:c1 a :Village.n.02 ;
   :place place:Zijldijk2743893 ;
   :name "ZIJLDIJK" .
 
-t00284:c2 a t:village.n.02 ;
+t00284:c2 a :Village.n.02 ;
   :place place:Uithuizen2745970 ;
   :name "UITHUIZEN" .
 
-t00284:c3 a t:village.n.02 ;
+t00284:c3 a :Village.n.02 ;
   :place place:Oosternieland2749429 ;
   :name "OOSTERNIELAND" .
 
-t00284:p1 a t:female.n.02 ;
+t00284:p1 a :Female ;
   :dob "1874-01-24" ;
   :dod "1944-10-25" ;
   :nam "ANNA RIJPLOEG" ;
@@ -27,7 +27,7 @@ t00284:p1 a t:female.n.02 ;
   :quo "ZALIG ZIJN ZIJ, DIE ONTSLAPEN VROMEN, VOOR ONS TE VROEG AAN DE AARD ONTNOMEN." ;
   :rol t00284:r1 .
 
-t00284:p2 a t:male.n.02 ;
+t00284:p2 a :Male ;
   :dob "1872-03-07" ;
   :dod "1941-07-03" ;
   :nam "EPPE WIERENGA" ;
@@ -36,20 +36,20 @@ t00284:p2 a t:male.n.02 ;
   :quo "ZIJN VERLANGEN WAS, DAT HIJ NAAR JEZUS GING" ;
   :rol t00284:r2 .
 
-t00284:r1 a t:parent.n.01 .
+t00284:r1 a :Parent.n.01 .
 
-t00284:r2 a t:parent.n.01 .
+t00284:r2 a :Parent.n.01 .
 
-t00284:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00284:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00284.jpg" ;
-  dcterms:date "2019-10-16T16:53:05"^^xsd:dateTime ;
+  dc:date "2019-10-16T16:53:05"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4036 ;

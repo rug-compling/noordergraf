@@ -1,34 +1,34 @@
 @prefix t00985: <https://noordergraf.rug.nl/tomb/t00985#> .
 
-tomb:t00985 a t:tombstone.n.01 ;
+tomb:t00985 a :Tomb ;
   :image t00985:im1 ;
   :site site:dr9761ALeelde ;
   :ent t00985:p1 ,
        t00985:p2 ;
   :quo "RUWE STORMEN MOGEN WOEDEN, ALLES OM MIJ HEEN ZIJ NACHT. GOD, MIJN GOD ZAL MIJ BEHOEDEN, HIJ HOUDT VOOR MIJN HEIL DE WACHT. MOEST IK LANG ZJN HULP VERBEIDEN, ZIJNE LIEFDE ZAL MIJ LEIDEN; DOOR EEN NACHT, HOE SWART, HOE DICHT VOERT HIJ MIJ NAAR 'T EEUWIG LICHT."@nld .
 
-t00985:p1 a t:female.n.02 ;
+t00985:p1 a :Female ;
   :dob "1863-03-20" ;
   :dod "1949-05-20" ;
   :nam "WILHELMINA BERENDINA GROENEVELD" ;
   :rol t00985:r1 .
 
-t00985:p2 a t:male.n.02 ;
+t00985:p2 a :Male ;
   :nam "JOHANNES SIEGFRIED KRAUS" .
 
-t00985:r1 a t:spouse.n.01 ;
+t00985:r1 a :Spouse.n.01 ;
   :tgt t00985:p2 .
 
-t00985:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00985:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00985.jpg" ;
-  dcterms:date "2020-03-31T12:31:00"^^xsd:dateTime ;
+  dc:date "2020-03-31T12:31:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1399 ;

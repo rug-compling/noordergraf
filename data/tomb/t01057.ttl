@@ -1,6 +1,6 @@
 @prefix t01057: <https://noordergraf.rug.nl/tomb/t01057#> .
 
-tomb:t01057 a t:tombstone.n.01 ;
+tomb:t01057 a :Tomb ;
   :image t01057:im1 ;
   :site site:gr9971EBulrum ;
   :ent t01057:p1 ,
@@ -9,17 +9,17 @@ tomb:t01057 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t01057:s1 .
 
-t01057:a1 a t:weeping.a.02 .
+t01057:a1 a :Weeping.a.02 .
 
-t01057:c1 a t:village.n.02 ;
+t01057:c1 a :Village.n.02 ;
   :place place:Hornhuizen2753604 ;
   :name "HORNHUIZEN" .
 
-t01057:c2 a t:village.n.02 ;
+t01057:c2 a :Village.n.02 ;
   :place place:Niekerk2750390 ;
   :name "NIEKERK" .
 
-t01057:p1 a t:male.n.02 ;
+t01057:p1 a :Male ;
   :dob "1854-12-05" ;
   :dod "1931-03-02" ;
   :nam "KORNELIS DE VRIES" ;
@@ -28,33 +28,33 @@ t01057:p1 a t:male.n.02 ;
   :rol t01057:r1 ,
        t01057:r2 .
 
-t01057:p2 a t:female.n.02 ;
+t01057:p2 a :Female ;
   :nam "W. DUSSEL" .
 
-t01057:p3 a t:female.n.02 ;
+t01057:p3 a :Female ;
   :nam "P. HIEMSTRA" .
 
-t01057:r1 a t:widower.n.01 ;
+t01057:r1 a :Widower.n.01 ;
   :bef t01057:r2 ;
   :tgt t01057:p2 .
 
-t01057:r2 a t:widower.n.01 ;
+t01057:r2 a :Widower.n.01 ;
   :aft t01057:r1 ;
   :tgt t01057:p3 .
 
-t01057:s1 a t:willow.n.01 ;
+t01057:s1 a :Willow.n.01 ;
   :att t01057:a1 .
 
-t01057:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01057:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01057.jpg" ;
-  dcterms:date "2020-05-02T16:43:47"^^xsd:dateTime ;
+  dc:date "2020-05-02T16:43:47"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3624 ;

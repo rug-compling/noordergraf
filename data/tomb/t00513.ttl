@@ -1,6 +1,6 @@
 @prefix t00513: <https://noordergraf.rug.nl/tomb/t00513#> .
 
-tomb:t00513 a t:tombstone.n.01 ;
+tomb:t00513 a :Tomb ;
   :image t00513:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00513:p1 ;
@@ -8,39 +8,39 @@ tomb:t00513 a t:tombstone.n.01 ;
   :quo "DISINI KUBERHENTILAH \\ TA'LAGI SAKIT DAN LELAH \\ KU TINGGALKANLAH SEMUA \\ DAN PULANG KERUMAN HUA"@msa ;
   :ref "WAHJU 1:17,18"@msa .
 
-t00513:c1 a t:village.n.02 ;
+t00513:c1 a :Village.n.02 ;
   :place place:Amahai1651591 ;
   :name "AMAHEI" .
 
-t00513:c2 a t:province.n.01 ;
+t00513:c2 a :Province.n.01 ;
   :place place:Molukken1636629 ;
   :mem t00513:c1 ;
   :name "MOLUKKEN" .
 
-t00513:c3 a t:village.n.02 ;
+t00513:c3 a :Village.n.02 ;
   :place place:Foxhol2755853 ;
   :name "FOXHOL" .
 
-t00513:i1 a t:portrait.n.02 ;
+t00513:i1 a :Portrait.n.02 ;
   :thm t00513:p1 .
 
-t00513:p1 a t:male.n.02 ;
+t00513:p1 a :Male ;
   :dob "1926-10-12" ;
   :dod "1984-02-15" ;
   :nam "JOHANNES SIMON TALARIMA" ;
   :pob t00513:c1 ;
   :pod t00513:c3 .
 
-t00513:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00513:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00513.jpg" ;
-  dcterms:date "2019-11-23T10:38:22"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:38:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1647 ;

@@ -1,6 +1,6 @@
 @prefix t00283: <https://noordergraf.rug.nl/tomb/t00283#> .
 
-tomb:t00283 a t:tombstone.n.01 ;
+tomb:t00283 a :Tomb ;
   :image t00283:im1 ;
   :site site:gr9985SCoosternieland ;
   :ent t00283:g1 ,
@@ -10,60 +10,60 @@ tomb:t00283 a t:tombstone.n.01 ;
   :ref t00283:v1 ;
   :sym t00283:s1 .
 
-t00283:b1 a t:Revelation.n.04 ;
+t00283:b1 a :Revelation.n.04 ;
   :prt t00283:c1 .
 
-t00283:c1 a t:chapter.n.01 ;
+t00283:c1 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t00283:v1 .
 
-t00283:g1 a t:group.n.01 ;
+t00283:g1 a :Group.n.01 ;
   :mem t00283:p2 ,
        t00283:p3 .
 
-t00283:p1 a t:female.n.02 ;
+t00283:p1 a :Female ;
   :dob "1916-08-28" ;
   :dod "1956-10-16" ;
   :nam "WILLEMINA KUIPER" ;
   :rol t00283:r1 .
 
-t00283:p2 a t:female.n.02 ;
+t00283:p2 a :Female ;
   :dob "1884-02-25" ;
   :dod "1961-04-14" ;
   :nam "HARMINA ZUIDERVELD" ;
   :rol t00283:r2 .
 
-t00283:p3 a t:male.n.02 ;
+t00283:p3 a :Male ;
   :dob "1871-05-23" ;
   :dod "1952-07-16" ;
   :nam "HENDERICUS KUIPER" ;
   :rol t00283:r3 .
 
-t00283:r1 a t:daughter.n.01 ;
+t00283:r1 a :Daughter.n.01 ;
   :tgt t00283:g1 .
 
-t00283:r2 a t:spouse.n.01 ;
+t00283:r2 a :Spouse.n.01 ;
   :tgt t00283:p3 .
 
-t00283:r3 a t:spouse.n.01 ;
+t00283:r3 a :Spouse.n.01 ;
   :tgt t00283:p2 .
 
-t00283:s1 a t:frond.n.01 .
+t00283:s1 a :Frond.n.01 .
 
-t00283:v1 a t:verse.n.01 ;
+t00283:v1 a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN ZIJ, DIE IN DEN HEERE STERVEN." .
 
-t00283:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00283:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00283.jpg" ;
-  dcterms:date "2019-10-16T16:53:40"^^xsd:dateTime ;
+  dc:date "2019-10-16T16:53:40"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4036 ;

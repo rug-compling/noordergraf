@@ -1,6 +1,6 @@
 @prefix t00799: <https://noordergraf.rug.nl/tomb/t00799#> .
 
-tomb:t00799 a t:tombstone.n.01 ;
+tomb:t00799 a :Tomb ;
   :image t00799:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00799:p1 ,
@@ -9,22 +9,22 @@ tomb:t00799 a t:tombstone.n.01 ;
   :ref t00799:v1 ;
   :sym t00799:s1 .
 
-t00799:b1 a t:Revelation.n.04 ;
+t00799:b1 a :Revelation.n.04 ;
   :prt t00799:c3 .
 
-t00799:c1 a t:village.n.02 ;
+t00799:c1 a :Village.n.02 ;
   :place place:TenBoer2746491 ;
   :name "TEN BOER" .
 
-t00799:c2 a t:city.n.01 ;
+t00799:c2 a :City.n.01 ;
   :place place:Appingedam2759687 ;
   :name "APPINGEDAM" .
 
-t00799:c3 a t:chapter.n.01 ;
+t00799:c3 a :Chapter.n.01 ;
   :ord 2 ;
   :prt t00799:v2 .
 
-t00799:p1 a t:male.n.02 ;
+t00799:p1 a :Male ;
   :dob "1907-10-31" ;
   :dod "1944-09-22" ;
   :nam "A.K. DIJKEMA" ;
@@ -32,31 +32,31 @@ t00799:p1 a t:male.n.02 ;
   :pod t00799:c2 ;
   :rol t00799:r1 .
 
-t00799:p2 a t:female.n.02 ;
+t00799:p2 a :Female ;
   :nam "P.H. WIERENGA" .
 
-t00799:r1 a t:spouse.n.01 ;
+t00799:r1 a :Spouse.n.01 ;
   :tgt t00799:p2 .
 
-t00799:s1 a t:rose.n.01 .
+t00799:s1 a :Rose.n.01 .
 
-t00799:v1 a t:part.n.09 ;
+t00799:v1 a :Part.n.09 ;
   :nam "B" .
 
-t00799:v2 a t:verse.n.01 ;
+t00799:v2 a :Verse.n.01 ;
   :ord 10 ;
   :prt t00799:v1 .
 
-t00799:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00799:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00799.jpg" ;
-  dcterms:date "2020-01-18T12:48:16"^^xsd:dateTime ;
+  dc:date "2020-01-18T12:48:16"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2778 ;

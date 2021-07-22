@@ -1,6 +1,6 @@
 @prefix t00649: <https://noordergraf.rug.nl/tomb/t00649#> .
 
-tomb:t00649 a t:tombstone.n.01 ;
+tomb:t00649 a :Tomb ;
   :image t00649:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00649:p1 ,
@@ -8,33 +8,33 @@ tomb:t00649 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00649:s1 .
 
-t00649:a1 a t:weeping.a.02 .
+t00649:a1 a :Weeping.a.02 .
 
-t00649:p1 a t:female.n.02 ;
+t00649:p1 a :Female ;
   :dob "1798-11-07" ;
   :dod "1859-10-24" ;
   :nam "DIEVERTJE REINDERS" ;
   :rol t00649:r1 .
 
-t00649:p2 a t:male.n.02 ;
+t00649:p2 a :Male ;
   :nam "SAMUEL C. DE BOER" .
 
-t00649:r1 a t:spouse.n.01 ;
+t00649:r1 a :Spouse.n.01 ;
   :tgt t00649:p2 .
 
-t00649:s1 a t:willow.n.01 ;
+t00649:s1 a :Willow.n.01 ;
   :att t00649:a1 .
 
-t00649:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00649:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00649.jpg" ;
-  dcterms:date "2019-11-23T09:51:05"^^xsd:dateTime ;
+  dc:date "2019-11-23T09:51:05"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1645 ;

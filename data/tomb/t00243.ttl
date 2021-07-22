@@ -1,6 +1,6 @@
 @prefix t00243: <https://noordergraf.rug.nl/tomb/t00243#> .
 
-tomb:t00243 a t:tombstone.n.01 ;
+tomb:t00243 a :Tomb ;
   :image t00243:im1 ;
   :site site:gr9751BBharen ;
   :ent t00243:p1 ,
@@ -8,25 +8,25 @@ tomb:t00243 a t:tombstone.n.01 ;
   :ref t00243:g1 ;
   :sym t00243:s1 .
 
-t00243:a1 a t:weeping.a.02 .
+t00243:a1 a :Weeping.a.02 .
 
-t00243:b1 a t:Second_Epistle_to_Timothy.n.01 ;
+t00243:b1 a :Second_Epistle_to_Timothy.n.01 ;
   :prt t00243:c2 .
 
-t00243:c1 a t:village.n.02 ;
+t00243:c1 a :Village.n.02 ;
   :place place:Onnen2749588 ;
   :name "ONNEN" .
 
-t00243:c2 a t:chapter.n.01 ;
+t00243:c2 a :Chapter.n.01 ;
   :ord 4 ;
   :prt t00243:v1 ,
        t00243:v2 .
 
-t00243:g1 a t:group.n.01 ;
+t00243:g1 a :Group.n.01 ;
   :mem t00243:v1 ,
        t00243:v2 .
 
-t00243:p1 a t:male.n.02 ;
+t00243:p1 a :Male ;
   :dob "1879-06-11" ;
   :dod "1945-10-21" ;
   :nam "FRENS VAN GIJSSEL" ;
@@ -34,31 +34,31 @@ t00243:p1 a t:male.n.02 ;
   :pod t00243:c1 ;
   :rol t00243:r1 .
 
-t00243:p2 a t:female.n.02 ;
+t00243:p2 a :Female ;
   :nam "SIETSKE DE VRIES" .
 
-t00243:r1 a t:spouse.n.01 ;
+t00243:r1 a :Spouse.n.01 ;
   :tgt t00243:p2 .
 
-t00243:s1 a t:willow.n.01 ;
+t00243:s1 a :Willow.n.01 ;
   :att t00243:a1 .
 
-t00243:v1 a t:verse.n.01 ;
+t00243:v1 a :Verse.n.01 ;
   :ord 7 .
 
-t00243:v2 a t:verse.n.01 ;
+t00243:v2 a :Verse.n.01 ;
   :ord 8 .
 
-t00243:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00243:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00243.jpg" ;
-  dcterms:date "2019-10-11T17:35:49"^^xsd:dateTime ;
+  dc:date "2019-10-11T17:35:49"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1730 ;

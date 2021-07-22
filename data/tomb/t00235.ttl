@@ -1,6 +1,6 @@
 @prefix t00235: <https://noordergraf.rug.nl/tomb/t00235#> .
 
-tomb:t00235 a t:tombstone.n.01 ;
+tomb:t00235 a :Tomb ;
   :image t00235:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00235:p1 ,
@@ -8,42 +8,42 @@ tomb:t00235 a t:tombstone.n.01 ;
   :quo "HEM DIE MET VLIJT VOLBRACHT ZIJN TIJD IN'T AARDSCHE LEVEN, ZIJ NU DE RUST AAN GINDSCHE KUST BIJ GOD GEGEVEN!" ;
   :sym t00235:s1 .
 
-t00235:a1 a t:inverted.a.01 .
+t00235:a1 a :Inverted.a.01 .
 
-t00235:p1 a t:male.n.02 ;
+t00235:p1 a :Male ;
   :dob "1798-10-16" ;
   :dod "1859-12-09" ;
   :nam "JAN TAMMES EMMELKAMP" ;
   :rol t00235:r1 .
 
-t00235:p2 a t:female.n.02 ;
+t00235:p2 a :Female ;
   :nam "WIBBECHIEN K. BRUININGA" .
 
-t00235:r1 a t:spouse.n.01 ;
+t00235:r1 a :Spouse.n.01 ;
   :tgt t00235:p2 .
 
-t00235:s1 a t:composite.n.01 ;
+t00235:s1 a :Composite.n.01 ;
   :prt t00235:s2 ,
        t00235:s3 ,
        t00235:s4 .
 
-t00235:s2 a t:sandglass.n.01 .
+t00235:s2 a :Sandglass.n.01 .
 
-t00235:s3 a t:scythe.n.01 .
+t00235:s3 a :Scythe.n.01 .
 
-t00235:s4 a t:torch.n.01 ;
+t00235:s4 a :Torch.n.01 ;
   :att t00235:a1 .
 
-t00235:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00235:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00235.jpg" ;
-  dcterms:date "2019-10-08T14:41:00"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:41:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2227 ;

@@ -1,6 +1,6 @@
 @prefix t00972: <https://noordergraf.rug.nl/tomb/t00972#> .
 
-tomb:t00972 a t:tombstone.n.01 ;
+tomb:t00972 a :Tomb ;
   :image t00972:im1 ;
   :site site:gr9479TNnoordlaren ;
   :ent t00972:g1 ,
@@ -11,51 +11,51 @@ tomb:t00972 a t:tombstone.n.01 ;
        t00972:p5 ;
   :lan "NLD" .
 
-t00972:g1 a t:group.n.01 ;
+t00972:g1 a :Group.n.01 ;
   :mem t00972:p1 ,
        t00972:p2 .
 
-t00972:p1 a t:male.n.02 ;
+t00972:p1 a :Male ;
   :dob "1847-07-06" ;
   :dod "1905-03-09" ;
   :nam "AREND AASMAN" .
 
-t00972:p2 a t:female.n.02 ;
+t00972:p2 a :Female ;
   :dob "1849-01-15" ;
   :dod "1933-04-30" ;
   :nam "CATRIENA VOS" .
 
-t00972:p3 a t:male.n.02 ;
+t00972:p3 a :Male ;
   :dob "1878-04-02" ;
   :dod "1883-12-01" ;
   :nam "AREND AASMAN" ;
   :rol t00972:r1 .
 
-t00972:p4 a t:male.n.02 ;
+t00972:p4 a :Male ;
   :dob "1809-12-07" ;
   :dod "1894-02-09" ;
   :nam "GERARDUS VOS" ;
   :rol t00972:r2 .
 
-t00972:p5 a t:female.n.02 ;
+t00972:p5 a :Female ;
   :nam "AALTIEN KOERS" .
 
-t00972:r1 a t:son.n.01 ;
+t00972:r1 a :Son.n.01 ;
   :tgt t00972:g1 .
 
-t00972:r2 a t:spouse.n.01 ;
+t00972:r2 a :Spouse.n.01 ;
   :tgt t00972:p5 .
 
-t00972:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00972:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00972.jpg" ;
-  dcterms:date "2020-03-25T09:28:06"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:28:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1201 ;

@@ -1,21 +1,21 @@
 @prefix t00281: <https://noordergraf.rug.nl/tomb/t00281#> .
 
-tomb:t00281 a t:tombstone.n.01 ;
+tomb:t00281 a :Tomb ;
   :image t00281:im1 ;
   :site site:gr9985SCoosternieland ;
   :ent t00281:p1 ,
        t00281:p2 ;
   :sym t00281:s1 .
 
-t00281:c1 a t:village.n.02 ;
+t00281:c1 a :Village.n.02 ;
   :place place:Zijldijk2743893 ;
   :name "ZIJLDIJK" .
 
-t00281:c2 a t:village.n.02 ;
+t00281:c2 a :Village.n.02 ;
   :place place:Oosternieland2749429 ;
   :name "OOSTERNIELAND" .
 
-t00281:p1 a t:male.n.02 ;
+t00281:p1 a :Male ;
   :dob "1823-05-19" ;
   :dod "1882-02-12" ;
   :nam "PIETER JAKOBS KUIPERS" ;
@@ -23,24 +23,24 @@ t00281:p1 a t:male.n.02 ;
   :pod t00281:c2 ;
   :rol t00281:r1 .
 
-t00281:p2 a t:female.n.02 ;
+t00281:p2 a :Female ;
   :nam "W.R. BUSSEMA" .
 
-t00281:r1 a t:spouse.n.01 ;
+t00281:r1 a :Spouse.n.01 ;
   :tgt t00281:p2 .
 
-t00281:s1 a t:butterfly.n.01 .
+t00281:s1 a :Butterfly.n.01 .
 
-t00281:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00281:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00281.jpg" ;
-  dcterms:date "2019-10-16T16:58:30"^^xsd:dateTime ;
+  dc:date "2019-10-16T16:58:30"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4040 ;

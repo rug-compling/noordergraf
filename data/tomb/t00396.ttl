@@ -1,13 +1,13 @@
 @prefix t00396: <https://noordergraf.rug.nl/tomb/t00396#> .
 
-tomb:t00396 a t:tombstone.n.01 ;
+tomb:t00396 a :Tomb ;
   :image t00396:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00396:p1 ,
        t00396:p2 ;
   :lan "FRY" .
 
-t00396:p1 a t:male.n.02 ;
+t00396:p1 a :Male ;
   :dob "1911-08-28" ;
   :dod "1969-10-30" ;
   :nam "SAKE BOSMA" ;
@@ -15,36 +15,36 @@ t00396:p1 a t:male.n.02 ;
        t00396:r2 ,
        t00396:r3 .
 
-t00396:p2 a t:female.n.02 ;
+t00396:p2 a :Female ;
   :dob "1912-02-14" ;
   :dod "2002-02-17" ;
   :nam "ANTJE MULDER" ;
   :rol t00396:r4 ,
        t00396:r5 .
 
-t00396:r1 a t:husband.n.01 ;
+t00396:r1 a :Husband.n.01 ;
   :att "LEAVE" ;
   :tgt t00396:p2 .
 
-t00396:r2 a t:father.n.01 .
+t00396:r2 a :Father.n.01 .
 
-t00396:r3 a t:grandfather.n.01 .
+t00396:r3 a :Grandfather.n.01 .
 
-t00396:r4 a t:mother.n.01 ;
+t00396:r4 a :Mother.n.01 ;
   :att "LEAVE" .
 
-t00396:r5 a t:grandmother.n.01 .
+t00396:r5 a :Grandmother.n.01 .
 
-t00396:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00396:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00396.jpg" ;
-  dcterms:date "2019-10-26T14:52:52"^^xsd:dateTime ;
+  dc:date "2019-10-26T14:52:52"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2516 ;

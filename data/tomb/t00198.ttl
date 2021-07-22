@@ -1,6 +1,6 @@
 @prefix t00198: <https://noordergraf.rug.nl/tomb/t00198#> .
 
-tomb:t00198 a t:tombstone.n.01 ;
+tomb:t00198 a :Tomb ;
   :image t00198:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00198:p1 ,
@@ -8,36 +8,36 @@ tomb:t00198 a t:tombstone.n.01 ;
   :ref "PSALM 23" ;
   :sym t00198:s1 .
 
-t00198:p1 a t:male.n.02 ;
+t00198:p1 a :Male ;
   :dob "1878-12-04" ;
   :dod "1941-02-20" ;
   :nam "JAN VELDSEMA" ;
   :rol t00198:r2 .
 
-t00198:p2 a t:female.n.02 ;
+t00198:p2 a :Female ;
   :dob "1879-01-14" ;
   :dod "1966-06-23" ;
   :nam "MARTJE OLLING" ;
   :rol t00198:r3 .
 
-t00198:r2 a t:spouse.n.01 ;
+t00198:r2 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00198:p2 .
 
-t00198:r3 a t:son.n.01 .
+t00198:r3 a :Son.n.01 .
 
-t00198:s1 a t:frond.n.01 .
+t00198:s1 a :Frond.n.01 .
 
-t00198:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00198:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00198.jpg" ;
-  dcterms:date "2019-10-06T14:39:32"^^xsd:dateTime ;
+  dc:date "2019-10-06T14:39:32"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1904 ;

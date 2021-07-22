@@ -1,6 +1,6 @@
 @prefix t01077: <https://noordergraf.rug.nl/tomb/t01077#> .
 
-tomb:t01077 a t:tombstone.n.01 ;
+tomb:t01077 a :Tomb ;
   :image t01077:im1 ;
   :site site:gr9906PPbierum ;
   :ent t01077:p1 ;
@@ -9,39 +9,39 @@ tomb:t01077 a t:tombstone.n.01 ;
        t01077:s2 ,
        t01077:s3 .
 
-t01077:c1 a t:village.n.02 ;
+t01077:c1 a :Village.n.02 ;
   :place place:Bierum2758983 ;
   :name "BIERUM" .
 
-t01077:g1 a t:group.n.01 .
+t01077:g1 a :Group.n.01 .
 
-t01077:p1 a t:male.n.02 ;
+t01077:p1 a :Male ;
   :dob "1868-07-09" ;
   :dod "1870-03-26" ;
   :nam "ALBERT JANS WESTING" ;
   :pob t01077:c1 ;
   :rol t01077:r1 .
 
-t01077:r1 a t:son.n.01 ;
+t01077:r1 a :Son.n.01 ;
   :att "EENIGST" ;
   :tgt t01077:g1 .
 
-t01077:s1 a t:butterfly.n.01 .
+t01077:s1 a :Butterfly.n.01 .
 
-t01077:s2 a t:rose.n.01 .
+t01077:s2 a :Rose.n.01 .
 
-t01077:s3 a t:entity.n.01 .
+t01077:s3 a :Entity.n.01 .
 
-t01077:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01077:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01077.jpg" ;
-  dcterms:date "2020-04-17T18:26:06"^^xsd:dateTime ;
+  dc:date "2020-04-17T18:26:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3807 ;

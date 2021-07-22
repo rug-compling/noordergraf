@@ -1,29 +1,29 @@
 @prefix t01088: <https://noordergraf.rug.nl/tomb/t01088#> .
 
-tomb:t01088 a t:tombstone.n.01 ;
+tomb:t01088 a :Tomb ;
   :image t01088:im1 ;
   :site site:gr9752CMharen ;
   :ent t01088:p1 ;
   :lan "NLD" ;
   :sym t01088:s1 .
 
-t01088:p1 a t:male.n.02 ;
+t01088:p1 a :Male ;
   :dob "1932-11-11" ;
   :dod "1988-09-02" ;
   :nam "JAN ALBERT BARKMAN" .
 
-t01088:s1 a t:sundial.n.01 .
+t01088:s1 a :Sundial.n.01 .
 
-t01088:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01088:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01088.jpg" ;
-  dcterms:date "2020-09-11T17:51:30"^^xsd:dateTime ;
+  dc:date "2020-09-11T17:51:30"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1640 ;

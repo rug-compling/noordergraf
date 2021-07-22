@@ -1,17 +1,17 @@
 @prefix t00209: <https://noordergraf.rug.nl/tomb/t00209#> .
 
-tomb:t00209 a t:tombstone.n.01 ;
+tomb:t00209 a :Tomb ;
   :image t00209:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00209:p1 ,
        t00209:p2 ;
   :sym t00209:s1 .
 
-t00209:c1 a t:hamlet.n.03 ;
+t00209:c1 a :Hamlet.n.03 ;
   :place place:Euvelgunne2755982 ;
   :name "EUVELGUNNE" .
 
-t00209:p1 a t:male.n.02 ;
+t00209:p1 a :Male ;
   :dob "1897-01-11" ;
   :dod "1893-10-10" ;
   :nam "PIETER J. BOLHUIS" ;
@@ -19,30 +19,30 @@ t00209:p1 a t:male.n.02 ;
   :pod t00209:c1 ;
   :rol t00209:r1 .
 
-t00209:p2 a t:female.n.02 ;
+t00209:p2 a :Female ;
   :nam "J.T. WOLTERS" .
 
-t00209:r1 a t:spouse.n.01 ;
+t00209:r1 a :Spouse.n.01 ;
   :tgt t00209:p2 .
 
-t00209:s1 a t:composite.n.01 ;
+t00209:s1 a :Composite.n.01 ;
   :prt t00209:s2 ,
        t00209:s3 .
 
-t00209:s2 a t:tree.n.01 .
+t00209:s2 a :Tree.n.01 .
 
-t00209:s3 a t:horse.n.01 .
+t00209:s3 a :Horse.n.01 .
 
-t00209:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00209:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00209.jpg" ;
-  dcterms:date "2019-10-08T14:54:23"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:54:23"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2224 ;

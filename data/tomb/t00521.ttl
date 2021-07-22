@@ -1,13 +1,13 @@
 @prefix t00521: <https://noordergraf.rug.nl/tomb/t00521#> .
 
-tomb:t00521 a t:tombstone.n.01 ;
+tomb:t00521 a :Tomb ;
   :image t00521:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00521:p1 ;
   :lan "NLD" ;
   :sym t00521:s1 .
 
-t00521:p1 a t:male.n.02 ;
+t00521:p1 a :Male ;
   :dob "1922-06-06" ;
   :dod "2012-11-14" ;
   :nam "AMAT" ,
@@ -17,33 +17,33 @@ t00521:p1 a t:male.n.02 ;
        t00521:r3 ,
        t00521:r4 .
 
-t00521:r1 a t:husband.n.01 ;
+t00521:r1 a :Husband.n.01 ;
   :att "LIEVE" .
 
-t00521:r2 a t:father.n.01 .
+t00521:r2 a :Father.n.01 .
 
-t00521:r3 a t:grandfather.n.01 .
+t00521:r3 a :Grandfather.n.01 .
 
-t00521:r4 a t:great_grandfather.n.01 .
+t00521:r4 a :Great_grandfather.n.01 .
 
-t00521:s1 a t:composite.n.01 ;
+t00521:s1 a :Composite.n.01 ;
   :prt t00521:s2 ,
        t00521:s3 .
 
-t00521:s2 a t:crescent.n.01 .
+t00521:s2 a :Crescent.n.01 .
 
-t00521:s3 a t:star.n.01 .
+t00521:s3 a :Star.n.01 .
 
-t00521:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00521:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00521.jpg" ;
-  dcterms:date "2019-11-23T10:59:06"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:59:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1671 ;

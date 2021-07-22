@@ -1,6 +1,6 @@
 @prefix t00848: <https://noordergraf.rug.nl/tomb/t00848#> .
 
-tomb:t00848 a t:tombstone.n.01 ;
+tomb:t00848 a :Tomb ;
   :image t00848:im1 ;
   :site site:fr8899AWoost_vlieland ;
   :ent t00848:p1 ,
@@ -9,49 +9,49 @@ tomb:t00848 a t:tombstone.n.01 ;
   :ref "GEZANG 263:4"@nld ;
   :sym t00848:s1 .
 
-t00848:a1 a t:weeping.a.02 .
+t00848:a1 a :Weeping.a.02 .
 
-t00848:p1 a t:female.n.02 ;
+t00848:p1 a :Female ;
   :dob "1854-10-09" ;
   :dod "1937-10-04" ;
   :nam "BREGJE BAKKER" ;
   :rol t00848:r1 ,
        t00848:r2 .
 
-t00848:p2 a t:male.n.02 ;
+t00848:p2 a :Male ;
   :dob "1854-09-07" ;
   :dod "1944-05-19" ;
   :nam "GERRIT KRIJTENBURG" ;
   :rol t00848:r3 ,
        t00848:r4 .
 
-t00848:r1 a t:parent.n.01 ;
+t00848:r1 a :Parent.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00848:p3 .
 
-t00848:r2 a t:grandparent.n.01 ;
+t00848:r2 a :Grandparent.n.01 ;
   :tgt t00848:p3 .
 
-t00848:r3 a t:parent.n.01 ;
+t00848:r3 a :Parent.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00848:p3 .
 
-t00848:r4 a t:grandparent.n.01 ;
+t00848:r4 a :Grandparent.n.01 ;
   :tgt t00848:p3 .
 
-t00848:s1 a t:willow.n.01 ;
+t00848:s1 a :Willow.n.01 ;
   :att t00848:a1 .
 
-t00848:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00848:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00848.jpg" ;
-  dcterms:date "2020-02-20T14:41:00"^^xsd:dateTime ;
+  dc:date "2020-02-20T14:41:00"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2955 ;

@@ -1,52 +1,52 @@
 @prefix t00096: <https://noordergraf.rug.nl/tomb/t00096#> .
 
-tomb:t00096 a t:tombstone.n.01 ;
+tomb:t00096 a :Tomb ;
   :image t00096:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00096:p1 ,
        t00096:p2 ;
   :quo "ONTBONDEN TE WORDEN EN MET CHRISTUS TE ZIJN, IS ZEER VERRE HET BESTE." .
 
-t00096:c1 a t:city.n.01 ;
+t00096:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00096:c2 a t:village.n.02 ;
+t00096:c2 a :Village.n.02 ;
   :place place:Ruinerwold2747828 ;
   :name "RUINERWOLD" .
 
-t00096:c3 a t:city.n.01 ;
+t00096:c3 a :City.n.01 ;
   :place place:Harlingen2754817 ;
   :name "HARLINGEN" .
 
-t00096:c4 a t:city.n.01 ;
+t00096:c4 a :City.n.01 ;
   :place place:Kampen2753106 ;
   :name "KAMPEN" .
 
-t00096:p1 a t:male.n.02 ;
+t00096:p1 a :Male ;
   :dob "1890-03-30" ;
   :dod "1944-12-30" ;
   :nam "JAKOB KARSTEN" ;
   :pob t00096:c2 ;
   :pod t00096:c1 .
 
-t00096:p2 a t:female.n.02 ;
+t00096:p2 a :Female ;
   :dob "1896-11-29" ;
   :dod "1964-10-28" ;
   :nam "HANNA ALKEMA" ;
   :pob t00096:c3 ;
   :pod t00096:c4 .
 
-t00096:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00096:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00096.jpg" ;
-  dcterms:date "2019-09-24T15:13:44"^^xsd:dateTime ;
+  dc:date "2019-09-24T15:13:44"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2057 ;

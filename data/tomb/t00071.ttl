@@ -1,6 +1,6 @@
 @prefix t00071: <https://noordergraf.rug.nl/tomb/t00071#> .
 
-tomb:t00071 a t:tombstone.n.01 ;
+tomb:t00071 a :Tomb ;
   :image t00071:im1 ;
   :site site:gr9722SNgroningen ;
   :dob "1838-05-03" ;
@@ -12,24 +12,24 @@ tomb:t00071 a t:tombstone.n.01 ;
   :rol t00071:r2 ,
        t00071:r3 .
 
-t00071:c1 a t:city.n.01 ;
+t00071:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00071:c2 a t:city.n.01 ;
+t00071:c2 a :City.n.01 ;
   :place place:Hoorn2753638 ;
   :name "HOORN" .
 
-t00071:c3 a t:province.n.01 ;
+t00071:c3 a :Province.n.01 ;
   :place place:ProvincieNoordHolland2749879 ;
   :mem t00071:c2 ;
   :name "NOORD-HOLLAND" .
 
-t00071:c4 a t:town.n.01 ;
+t00071:c4 a :Town.n.01 ;
   :place place:Emmen2756136 ;
   :name "EMMEN" .
 
-t00071:p1 a t:female.n.02 ;
+t00071:p1 a :Female ;
   :dob "1866-05-19" ;
   :dod "1939-09-26" ;
   :nam "CATHARINA KRAMER" ;
@@ -37,27 +37,27 @@ t00071:p1 a t:female.n.02 ;
   :pod t00071:c1 ;
   :rol t00071:r1 .
 
-t00071:p2 a t:male.n.02 ;
+t00071:p2 a :Male ;
   :nam "ADOLF KUIPER" .
 
-t00071:r1 a t:wife.n.01 ;
+t00071:r1 a :Wife.n.01 ;
   :att "INNIG GELIEFDE" ;
   :tgt t00071:p2 .
 
-t00071:r2 a t:brother.n.01 .
+t00071:r2 a :Brother.n.01 .
 
-t00071:r3 a t:uncle.n.01 .
+t00071:r3 a :Uncle.n.01 .
 
-t00071:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00071:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00071.jpg" ;
-  dcterms:date "2019-09-25T16:03:05"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:03:05"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1904 ;

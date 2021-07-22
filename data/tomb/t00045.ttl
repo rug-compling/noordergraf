@@ -1,25 +1,25 @@
 @prefix t00045: <https://noordergraf.rug.nl/tomb/t00045#> .
 
-tomb:t00045 a t:tombstone.n.01 ;
+tomb:t00045 a :Tomb ;
   :image t00045:im1 ;
   :site site:gr9752CMharen ;
   :ent t00045:p1 .
 
-t00045:p1 a t:male.n.02 ;
+t00045:p1 a :Male ;
   :dob "1923-12-12" ;
   :dod "1924-07-20" ;
   :nam "ROELOF LUURD JURRIAAN COOLMAN" .
 
-t00045:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00045:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00045.jpg" ;
-  dcterms:date "2019-09-27T17:45:39"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:45:39"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1631 ;

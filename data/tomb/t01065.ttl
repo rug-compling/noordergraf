@@ -1,43 +1,43 @@
 @prefix t01065: <https://noordergraf.rug.nl/tomb/t01065#> .
 
-tomb:t01065 a t:tombstone.n.01 ;
+tomb:t01065 a :Tomb ;
   :image t01065:im1 ;
   :site site:gr9975VRvierhuizen ;
   :ent t01065:p1 ,
        t01065:p2 ;
   :lan "NLD" .
 
-t01065:b1 a t:Revelation.n.04 ;
+t01065:b1 a :Revelation.n.04 ;
   :prt t01065:c3 .
 
-t01065:b2 a t:Epistle_to_the_Romans.n.04 ;
+t01065:b2 a :Epistle_to_the_Romans.n.04 ;
   :prt t01065:c6 .
 
-t01065:c1 a t:village.n.02 ;
+t01065:c1 a :Village.n.02 ;
   :place place:Engwierum2756081 ;
   :name "ENGWIERUM" .
 
-t01065:c2 a t:city.n.01 ;
+t01065:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t01065:c3 a t:chapter.n.01 ;
+t01065:c3 a :Chapter.n.01 ;
   :ord 22 ;
   :prt t01065:v1 .
 
-t01065:c4 a t:village.n.02 ;
+t01065:c4 a :Village.n.02 ;
   :place place:Lutjegast2751376 ;
   :name "LUTJEGAST" .
 
-t01065:c5 a t:village.n.02 ;
+t01065:c5 a :Village.n.02 ;
   :place place:Ulrum2745944 ;
   :name "ULRUM" .
 
-t01065:c6 a t:chapter.n.01 ;
+t01065:c6 a :Chapter.n.01 ;
   :ord 14 ;
   :prt t01065:v3 .
 
-t01065:p1 a t:male.n.02 ;
+t01065:p1 a :Male ;
   :dob "1888-05-31" ;
   :dod "1932-06-20" ;
   :nam "LUBBE DE BRAAK" ;
@@ -46,7 +46,7 @@ t01065:p1 a t:male.n.02 ;
   :ref t01065:v1 ;
   :rol t01065:r1 .
 
-t01065:p2 a t:female.n.02 ;
+t01065:p2 a :Female ;
   :dob "1887-10-05" ;
   :dod "1975-07-28" ;
   :nam "JANTJE RENKEMA" ;
@@ -55,34 +55,34 @@ t01065:p2 a t:female.n.02 ;
   :ref t01065:v2 ;
   :rol t01065:r2 .
 
-t01065:r1 a t:spouse.n.01 ;
+t01065:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t01065:p2 .
 
-t01065:r2 a t:spouse.n.01 ;
+t01065:r2 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t01065:p1 .
 
-t01065:v1 a t:verse.n.01 ;
+t01065:v1 a :Verse.n.01 ;
   :ord 20 .
 
-t01065:v2 a t:part.n.09 ;
+t01065:v2 a :Part.n.09 ;
   :nam "B" .
 
-t01065:v3 a t:verse.n.01 ;
+t01065:v3 a :Verse.n.01 ;
   :ord 8 ;
   :prt t01065:v2 .
 
-t01065:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01065:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01065.jpg" ;
-  dcterms:date "2020-05-02T15:53:46"^^xsd:dateTime ;
+  dc:date "2020-05-02T15:53:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3609 ;

@@ -1,20 +1,20 @@
 @prefix t01106: <https://noordergraf.rug.nl/tomb/t01106#> .
 
-tomb:t01106 a t:tombstone.n.01 ;
+tomb:t01106 a :Tomb ;
   :ent t01106:p1 ;
   :quo "IN JEZUS ONTSLAPEN"@nld .
 
-t01106:c1 a t:village.n.02 ;
+t01106:c1 a :Village.n.02 ;
   :place place:Niebert2750396 ;
   :name "NIEBERT" .
 
-t01106:c2 a t:village.n.02 ;
+t01106:c2 a :Village.n.02 ;
   :place place:Grijpskerk2755317 ;
   :name "GRIJPSKERK" .
 
-t01106:g1 a t:group.n.01 .
+t01106:g1 a :Group.n.01 .
 
-t01106:p1 a t:female.n.02 ;
+t01106:p1 a :Female ;
   :dob "1906-06-14" ;
   :dod "1963-01-15" ;
   :nam "BONTJE VEENMAN" ;
@@ -23,14 +23,14 @@ t01106:p1 a t:female.n.02 ;
   :rol t01106:r1 ,
        t01106:r2 .
 
-t01106:p2 a t:male.n.02 ;
+t01106:p2 a :Male ;
   :nam "K. HELMHOLT" .
 
-t01106:r1 a t:mother.n.01 ;
+t01106:r1 a :Mother.n.01 ;
   :att "LIEVE" ,
        "ZORGZAME" ;
   :tgt t01106:g1 .
 
-t01106:r2 a t:widow.n.01 ;
+t01106:r2 a :Widow.n.01 ;
   :tgt t01106:p2 .
 

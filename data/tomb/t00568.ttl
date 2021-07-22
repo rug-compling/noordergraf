@@ -1,6 +1,6 @@
 @prefix t00568: <https://noordergraf.rug.nl/tomb/t00568#> .
 
-tomb:t00568 a t:tombstone.n.01 ;
+tomb:t00568 a :Tomb ;
   :image t00568:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00568:p1 ,
@@ -10,15 +10,15 @@ tomb:t00568 a t:tombstone.n.01 ;
        t00568:s2 ,
        t00568:s3 .
 
-t00568:c1 a t:city.n.01 ;
+t00568:c1 a :City.n.01 ;
   :place place:Appingedam2759687 ;
   :name "APPINGEDAM" .
 
-t00568:c2 a t:city.n.01 ;
+t00568:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00568:p1 a t:female.n.02 ;
+t00568:p1 a :Female ;
   :dob "1844-12-05" ;
   :dod "1923-03-06" ;
   :nam "TRIJNTJE DE HAAN" ;
@@ -27,31 +27,31 @@ t00568:p1 a t:female.n.02 ;
   :rol t00568:r1 ,
        t00568:r2 .
 
-t00568:p2 a t:male.n.02 ;
+t00568:p2 a :Male ;
   :nam "HARM KOOL" .
 
-t00568:r1 a t:mother.n.01 ;
+t00568:r1 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00568:r2 a t:widow.n.01 ;
+t00568:r2 a :Widow.n.01 ;
   :tgt t00568:p2 .
 
-t00568:s1 a t:butterfly.n.01 .
+t00568:s1 a :Butterfly.n.01 .
 
-t00568:s2 a t:frond.n.01 .
+t00568:s2 a :Frond.n.01 .
 
-t00568:s3 a t:oak.n.02 .
+t00568:s3 a :Oak.n.02 .
 
-t00568:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00568:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00568.jpg" ;
-  dcterms:date "2019-11-24T13:36:59"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:36:59"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1050 ;

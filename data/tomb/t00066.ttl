@@ -1,46 +1,46 @@
 @prefix t00066: <https://noordergraf.rug.nl/tomb/t00066#> .
 
-tomb:t00066 a t:tombstone.n.01 ;
+tomb:t00066 a :Tomb ;
   :image t00066:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00066:p1 ,
        t00066:p2 .
 
-t00066:m1 a t:measure.n.02 ;
+t00066:m1 a :Measure.n.02 ;
   :mem t00066:y1 ;
   :qua 22 .
 
-t00066:p1 a t:male.n.02 ;
+t00066:p1 a :Male ;
   :age t00066:m1 ;
   :dob "1921-02-24" ;
   :dod "1943-09-15" ;
   :nam "BEREND JAN KRANENBURG" ;
   :rol t00066:r1 .
 
-t00066:p2 a t:female.n.02 ;
+t00066:p2 a :Female ;
   :nam "ALI ROZEBOOM" ;
   :rol t00066:r2 .
 
-t00066:r1 a t:husband.n.01 ;
+t00066:r1 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00066:p2 .
 
-t00066:r2 a t:wife.n.01 ;
+t00066:r2 a :Wife.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00066:p1 .
 
-t00066:y1 a t:year.n.01 .
+t00066:y1 a :Year.n.01 .
 
-t00066:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00066:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00066.jpg" ;
-  dcterms:date "2019-09-25T16:12:34"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:12:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1912 ;

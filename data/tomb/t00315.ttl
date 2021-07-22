@@ -1,35 +1,35 @@
 @prefix t00315: <https://noordergraf.rug.nl/tomb/t00315#> .
 
-tomb:t00315 a t:tombstone.n.01 ;
+tomb:t00315 a :Tomb ;
   :image t00315:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00315:p1 ,
        t00315:p2 .
 
-t00315:o1 a t:principal.n.02 ;
+t00315:o1 a :Principal.n.02 ;
   :hco "13940" .
 
-t00315:p1 a t:male.n.02 ;
+t00315:p1 a :Male ;
   :dob "1834-04-19" ;
   :dod "1903-05-06" ;
   :nam "B. VELDKAMP" ;
   :occ t00315:o1 .
 
-t00315:p2 a t:female.n.02 ;
+t00315:p2 a :Female ;
   :dob "1841-02-24" ;
   :dod "1931-12-19" ;
   :nam "J. VELDKAMP-HALFMOUW" .
 
-t00315:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00315:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00315.jpg" ;
-  dcterms:date "2019-10-19T14:06:50"^^xsd:dateTime ;
+  dc:date "2019-10-19T14:06:50"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7158 ;

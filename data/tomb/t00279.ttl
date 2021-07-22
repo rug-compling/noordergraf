@@ -1,35 +1,35 @@
 @prefix t00279: <https://noordergraf.rug.nl/tomb/t00279#> .
 
-tomb:t00279 a t:tombstone.n.01 ;
+tomb:t00279 a :Tomb ;
   :image t00279:im1 ;
   :site site:gr9985SCoosternieland ;
   :ent t00279:p1 .
 
-t00279:c1 a t:village.n.02 ;
+t00279:c1 a :Village.n.02 ;
   :place place:Oosternieland2749429 ;
   :name "OOSTERNIELAND" .
 
-t00279:c2 a t:village.n.02 ;
+t00279:c2 a :Village.n.02 ;
   :place place:Uithuizermeeden2745968 ;
   :name "UITHUIZERMEEDEN" .
 
-t00279:p1 a t:male.n.02 ;
+t00279:p1 a :Male ;
   :dob "1876-02-17" ;
   :dod "1956-04-20" ;
   :nam "BEREND SMEDEMA" ;
   :pob t00279:c1 ;
   :pod t00279:c2 .
 
-t00279:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00279:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00279.jpg" ;
-  dcterms:date "2019-10-16T16:51:20"^^xsd:dateTime ;
+  dc:date "2019-10-16T16:51:20"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4038 ;

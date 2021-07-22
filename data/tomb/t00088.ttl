@@ -1,20 +1,20 @@
 @prefix t00088: <https://noordergraf.rug.nl/tomb/t00088#> .
 
-tomb:t00088 a t:tombstone.n.01 ;
+tomb:t00088 a :Tomb ;
   :image t00088:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00088:p1 ,
        t00088:p2 .
 
-t00088:c1 a t:city.n.01 ;
+t00088:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00088:c2 a t:village.n.02 ;
+t00088:c2 a :Village.n.02 ;
   :place place:Solwerd2747023 ;
   :name "SOLWERD" .
 
-t00088:p1 a t:female.n.02 ;
+t00088:p1 a :Female ;
   :dob "1862-06-26" ;
   :dod "1941-10-13" ;
   :nam "GEERTJE GROENEWOLD" ;
@@ -22,22 +22,22 @@ t00088:p1 a t:female.n.02 ;
   :pod t00088:c1 ;
   :rol t00088:r1 .
 
-t00088:p2 a t:male.n.02 ;
+t00088:p2 a :Male ;
   :nam "PIETER BREEDLAND" .
 
-t00088:r1 a t:widow.n.01 ;
+t00088:r1 a :Widow.n.01 ;
   :tgt t00088:p2 .
 
-t00088:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00088:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00088.jpg" ;
-  dcterms:date "2019-09-24T15:17:53"^^xsd:dateTime ;
+  dc:date "2019-09-24T15:17:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2061 ;

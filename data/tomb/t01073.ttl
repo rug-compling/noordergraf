@@ -1,6 +1,6 @@
 @prefix t01073: <https://noordergraf.rug.nl/tomb/t01073#> .
 
-tomb:t01073 a t:tombstone.n.01 ;
+tomb:t01073 a :Tomb ;
   :image t01073:im1 ;
   :site site:gr9752CMharen ;
   :ent t01073:p1 ,
@@ -8,9 +8,9 @@ tomb:t01073 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t01073:s1 .
 
-t01073:g1 a t:group.n.01 .
+t01073:g1 a :Group.n.01 .
 
-t01073:p1 a t:male.n.02 ;
+t01073:p1 a :Male ;
   :dob "1901-12-13" ;
   :dod "1961-02-15" ;
   :nam "HARMANNUS OORBURG" ;
@@ -18,38 +18,38 @@ t01073:p1 a t:male.n.02 ;
        t01073:r2 ,
        t01073:r3 .
 
-t01073:p2 a t:female.n.02 ;
+t01073:p2 a :Female ;
   :dob "1911-03-24" ;
   :dod "1993-04-02" ;
   :nam "HINDERKIEN VEGTER" ;
   :rol t01073:r4 .
 
-t01073:r1 a t:husband.n.01 ;
+t01073:r1 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t01073:p2 .
 
-t01073:r2 a t:father.n.01 ;
+t01073:r2 a :Father.n.01 ;
   :tgt t01073:g1 .
 
-t01073:r3 a t:spouse.n.01 ;
+t01073:r3 a :Spouse.n.01 ;
   :tgt t01073:p2 .
 
-t01073:r4 a t:mother.n.01 ;
+t01073:r4 a :Mother.n.01 ;
   :att "LIEVE" ;
   :tgt t01073:g1 .
 
-t01073:s1 a t:anchor.n.01 .
+t01073:s1 a :Anchor.n.01 .
 
-t01073:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01073:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01073.jpg" ;
-  dcterms:date "2020-05-15T17:34:33"^^xsd:dateTime ;
+  dc:date "2020-05-15T17:34:33"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1626 ;

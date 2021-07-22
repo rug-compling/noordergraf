@@ -1,36 +1,36 @@
 @prefix t00454: <https://noordergraf.rug.nl/tomb/t00454#> .
 
-tomb:t00454 a t:tombstone.n.01 ;
+tomb:t00454 a :Tomb ;
   :image t00454:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00454:p1 ;
   :quo "REQUIESCANT IN PACE"@lat .
 
-t00454:c1 a t:city.n.01 ;
+t00454:c1 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LEEUWARDEN" .
 
-t00454:c2 a t:village.n.02 ;
+t00454:c2 a :Village.n.02 ;
   :place place:Dronryp2756561 ;
   :name "DRONRIJP" .
 
-t00454:p1 a t:male.n.02 ;
+t00454:p1 a :Male ;
   :dob "1916-02-19" ;
   :dod "1945-04-11" ;
   :nam "HENK SPOELSTRA" ;
   :pob t00454:c1 ;
   :pod t00454:c2 .
 
-t00454:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00454:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00454.jpg" ;
-  dcterms:date "2019-11-09T15:00:07"^^xsd:dateTime ;
+  dc:date "2019-11-09T15:00:07"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2064 ;

@@ -1,20 +1,20 @@
 @prefix t00408: <https://noordergraf.rug.nl/tomb/t00408#> .
 
-tomb:t00408 a t:tombstone.n.01 ;
+tomb:t00408 a :Tomb ;
   :image t00408:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00408:p1 ,
        t00408:p2 .
 
-t00408:c1 a t:village.n.02 ;
+t00408:c1 a :Village.n.02 ;
   :place place:Buitenpost2758131 ;
   :name "BUITENPOST" .
 
-t00408:c2 a t:village.n.02 ;
+t00408:c2 a :Village.n.02 ;
   :place place:Stroobos2746589 ;
   :name "STROOBOS" .
 
-t00408:p1 a t:female.n.02 ;
+t00408:p1 a :Female ;
   :dob "1811-04-15" ;
   :dod "1891-05-25" ;
   :nam "BEERTJE A. KOOTSTRA" ;
@@ -22,7 +22,7 @@ t00408:p1 a t:female.n.02 ;
   :pod t00408:c1 ;
   :rol t00408:r1 .
 
-t00408:p2 a t:male.n.02 ;
+t00408:p2 a :Male ;
   :dob "1810-02-11" ;
   :dod "1892-06-16" ;
   :nam "JOHANNES T. WOUDA" ;
@@ -30,22 +30,22 @@ t00408:p2 a t:male.n.02 ;
   :pod t00408:c1 ;
   :rol t00408:r2 .
 
-t00408:r1 a t:spouse.n.01 ;
+t00408:r1 a :Spouse.n.01 ;
   :tgt t00408:p2 .
 
-t00408:r2 a t:spouse.n.01 ;
+t00408:r2 a :Spouse.n.01 ;
   :tgt t00408:p1 .
 
-t00408:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00408:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00408.jpg" ;
-  dcterms:date "2019-10-26T14:43:23"^^xsd:dateTime ;
+  dc:date "2019-10-26T14:43:23"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2519 ;

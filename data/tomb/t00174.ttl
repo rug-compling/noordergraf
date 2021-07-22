@@ -1,25 +1,25 @@
 @prefix t00174: <https://noordergraf.rug.nl/tomb/t00174#> .
 
-tomb:t00174 a t:tombstone.n.01 ;
+tomb:t00174 a :Tomb ;
   :image t00174:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00174:p1 ;
   :quo "OOK DEZE WAS MET JEZUS" ;
   :ref "LUCAS 22:56" .
 
-t00174:c1 a t:city.n.01 ;
+t00174:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00174:o2 a t:pastor.n.01 ;
+t00174:o2 a :Pastor.n.01 ;
   :hco "14120" ;
   :org t00174:o3 .
 
-t00174:o3 a t:community.n.02 ;
+t00174:o3 a :Community.n.02 ;
   :loc t00174:c1 ;
   :nam "BAPTISTENGEMEENTE" .
 
-t00174:p1 a t:male.n.02 ;
+t00174:p1 a :Male ;
   :dob "1879-04-07" ;
   :dod "1927-04-07" ;
   :lit "ONZEN GELIEFDEN HERDER EN LERAAR" ;
@@ -27,16 +27,16 @@ t00174:p1 a t:male.n.02 ;
   :occ t00174:o2 ;
   :pfx "DS" .
 
-t00174:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00174:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00174.jpg" ;
-  dcterms:date "2019-10-05T10:42:11"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:42:11"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1904 ;

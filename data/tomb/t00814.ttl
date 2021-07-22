@@ -1,6 +1,6 @@
 @prefix t00814: <https://noordergraf.rug.nl/tomb/t00814#> .
 
-tomb:t00814 a t:tombstone.n.01 ;
+tomb:t00814 a :Tomb ;
   :image t00814:im1 ;
   :site site:gr9741ACgroningen ;
   :ent t00814:p1 ;
@@ -9,14 +9,14 @@ tomb:t00814 a t:tombstone.n.01 ;
        t00814:s2 ,
        t00814:s3 .
 
-t00814:c1 a t:city.n.01 ;
+t00814:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00814:o1 a t:skipper.n.02 ;
+t00814:o1 a :Skipper.n.02 ;
   :hco "04217" .
 
-t00814:p1 a t:male.n.02 ;
+t00814:p1 a :Male ;
   :dob "1858-12-06" ;
   :dod "1913-12-19" ;
   :nam "DERK FREDIK RASKER" ;
@@ -24,22 +24,22 @@ t00814:p1 a t:male.n.02 ;
   :pob t00814:c1 ;
   :pod t00814:c1 .
 
-t00814:s1 a t:frond.n.01 .
+t00814:s1 a :Frond.n.01 .
 
-t00814:s2 a t:frond.n.01 .
+t00814:s2 a :Frond.n.01 .
 
-t00814:s3 a t:sandglass.n.01 .
+t00814:s3 a :Sandglass.n.01 .
 
-t00814:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00814:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00814.jpg" ;
-  dcterms:date "2020-02-01T12:47:14"^^xsd:dateTime ;
+  dc:date "2020-02-01T12:47:14"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2293 ;

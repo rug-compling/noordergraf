@@ -1,50 +1,50 @@
 @prefix t00354: <https://noordergraf.rug.nl/tomb/t00354#> .
 
-tomb:t00354 a t:tombstone.n.01 ;
+tomb:t00354 a :Tomb ;
   :image t00354:im1 ;
   :site site:dr9481CGvries ;
   :ent t00354:p1 ;
   :sym t00354:s1 .
 
-t00354:a1 a t:winged.a.01 .
+t00354:a1 a :Winged.a.01 .
 
-t00354:c1 a t:village.n.02 ;
+t00354:c1 a :Village.n.02 ;
   :place place:Gees2755664 ;
   :name "GEES" .
 
-t00354:c2 a t:municipality.n.01 ;
+t00354:c2 a :Municipality.n.01 ;
   :mem t00354:c1 ;
   :nam "OOSTERHESSELEN" .
 
-t00354:c3 a t:village.n.02 ;
+t00354:c3 a :Village.n.02 ;
   :place place:DePunt2757124 ;
   :name "DE PUNT" .
 
-t00354:c4 a t:municipality.n.01 ;
+t00354:c4 a :Municipality.n.01 ;
   :place place:Vries2745189 ;
   :mem t00354:c3 ;
   :name "VRIES" .
 
-t00354:p1 a t:male.n.02 ;
+t00354:p1 a :Male ;
   :dob "1875-09-03" ;
   :dod "1906-01-11" ;
   :nam "KLAAS BOETTING" ;
   :pob t00354:c1 ;
   :pod t00354:c3 .
 
-t00354:s1 a t:sandglass.n.01 ;
+t00354:s1 a :Sandglass.n.01 ;
   :att t00354:a1 .
 
-t00354:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00354:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00354.jpg" ;
-  dcterms:date "2019-10-25T17:45:55"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:45:55"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0802 ;

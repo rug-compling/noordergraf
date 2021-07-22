@@ -1,37 +1,37 @@
 @prefix t00171: <https://noordergraf.rug.nl/tomb/t00171#> .
 
-tomb:t00171 a t:tombstone.n.01 ;
+tomb:t00171 a :Tomb ;
   :image t00171:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00171:p1 .
 
-t00171:c1 a t:city.n.01 ;
+t00171:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00171:o1 a t:manufacturer.n.02 ;
+t00171:o1 a :Manufacturer.n.02 ;
   :hco "89242" ;
   :loc t00171:c1 ;
   :thm t00171:o2 .
 
-t00171:o2 a t:stone.n.02 .
+t00171:o2 a :Stone.n.02 .
 
-t00171:p1 a t:male.n.02 ;
+t00171:p1 a :Male ;
   :dob "1873-05-29" ;
   :dod "1926-08-10" ;
   :nam "ERNST HENDRIK SPRENGER" ;
   :occ t00171:o1 .
 
-t00171:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00171:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00171.jpg" ;
-  dcterms:date "2019-10-05T10:43:34"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:43:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1904 ;

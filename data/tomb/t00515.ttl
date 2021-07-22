@@ -1,27 +1,27 @@
 @prefix t00515: <https://noordergraf.rug.nl/tomb/t00515#> .
 
-tomb:t00515 a t:tombstone.n.01 ;
+tomb:t00515 a :Tomb ;
   :image t00515:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00515:p1 ;
   :quo "RUST ZACHT"@nld .
 
-t00515:p1 a t:female.n.02 ;
+t00515:p1 a :Female ;
   :dob "1922-07-24" ;
   :dod "1992-12-04" ;
   :nam "KLAARTJE EGGENS" ,
        "KLARIE" .
 
-t00515:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00515:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00515.jpg" ;
-  dcterms:date "2019-11-23T10:22:08"^^xsd:dateTime ;
+  dc:date "2019-11-23T10:22:08"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1648 ;

@@ -1,38 +1,38 @@
 @prefix t00659: <https://noordergraf.rug.nl/tomb/t00659#> .
 
-tomb:t00659 a t:tombstone.n.01 ;
+tomb:t00659 a :Tomb ;
   :image t00659:im1 ;
   :site site:gr9985SCoosternieland ;
   :ent t00659:p1 ,
        t00659:p2 ;
   :quo "ANNO 1708 DEN 5 DECEMBER IS \\ DE DEUCHTSAME IMPKE WOL- \\ TERS DE GEWESENE HUISVROUW \\ VAN DE EERBARE ALYE JANS SMIDT \\ OPT OOSTERNIELANT SEER CHRIS \\ TELYCK INDEN HEERE ONTSLAPEN \\ VERWACHTENDE MET ALLE GELOO \\ VIGEN EEN ZALIGE OPSTANDINGE \\ ALLEEN DOOR JESUM CHRISTUM"@nld .
 
-t00659:c1 a t:village.n.02 ;
+t00659:c1 a :Village.n.02 ;
   :place place:Oosternieland2749429 ;
   :name "OOSTERNIELAND" .
 
-t00659:p1 a t:female.n.02 ;
+t00659:p1 a :Female ;
   :dod "1708-12-05" ;
   :nam "IMPKE WOLTERS" ;
   :pod t00659:c1 ;
   :rol t00659:r1 .
 
-t00659:p2 a t:male.n.02 ;
+t00659:p2 a :Male ;
   :nam "ALYE JANS SMIDT" .
 
-t00659:r1 a t:wife.n.01 ;
+t00659:r1 a :Wife.n.01 ;
   :tgt t00659:p2 .
 
-t00659:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00659:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00659.jpg" ;
-  dcterms:date "2019-10-16T16:50:03"^^xsd:dateTime ;
+  dc:date "2019-10-16T16:50:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4039 ;

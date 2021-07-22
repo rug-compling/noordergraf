@@ -1,42 +1,42 @@
 @prefix t00224: <https://noordergraf.rug.nl/tomb/t00224#> .
 
-tomb:t00224 a t:tombstone.n.01 ;
+tomb:t00224 a :Tomb ;
   :image t00224:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00224:p1 ,
        t00224:p2 ;
   :sym t00224:s1 .
 
-t00224:p1 a t:female.n.02 ;
+t00224:p1 a :Female ;
   :dob "1840-01-31" ;
   :dod "1879-10-01" ;
   :nam "ETJE JANS EMMELKAMP" ;
   :rol t00224:r1 .
 
-t00224:p2 a t:male.n.02 ;
+t00224:p2 a :Male ;
   :nam "KLAAS KRUIJER" .
 
-t00224:r1 a t:spouse.n.01 ;
+t00224:r1 a :Spouse.n.01 ;
   :tgt t00224:p2 .
 
-t00224:s1 a t:composite.n.01 ;
+t00224:s1 a :Composite.n.01 ;
   :prt t00224:s2 ,
        t00224:s3 .
 
-t00224:s2 a t:butterfly.n.01 .
+t00224:s2 a :Butterfly.n.01 .
 
-t00224:s3 a t:flower.n.01 .
+t00224:s3 a :Flower.n.01 .
 
-t00224:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00224:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00224.jpg" ;
-  dcterms:date "2019-10-08T14:41:27"^^xsd:dateTime ;
+  dc:date "2019-10-08T14:41:27"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2225 ;

@@ -1,29 +1,29 @@
 @prefix t00246: <https://noordergraf.rug.nl/tomb/t00246#> .
 
-tomb:t00246 a t:tombstone.n.01 ;
+tomb:t00246 a :Tomb ;
   :image t00246:im1 ;
   :site site:gr9751BBharen ;
   :ent t00246:p1 .
 
-t00246:c1 a t:village.n.02 ;
+t00246:c1 a :Village.n.02 ;
   :place place:Oudeschans2749010 ;
   :name "OUDESCHANS" .
 
-t00246:c2 a t:province.n.01 ;
+t00246:c2 a :Province.n.01 ;
   :place place:ProvincieGroningen2755249 ;
   :mem t00246:c1 ;
   :name "GRONINGEN" .
 
-t00246:c3 a t:city.n.01 ;
+t00246:c3 a :City.n.01 ;
   :place place:Apeldoorn2759706 ;
   :name "APELDOORN" .
 
-t00246:c4 a t:province.n.01 ;
+t00246:c4 a :Province.n.01 ;
   :place place:ProvincieGelderland2755634 ;
   :mem t00246:c3 ;
   :name "GELDERLAND" .
 
-t00246:p1 a t:female.n.02 ;
+t00246:p1 a :Female ;
   :dob "1900-01-15" ;
   :dod "1968-12-21" ;
   :nam "TJAATJE MEIJER" ;
@@ -33,23 +33,23 @@ t00246:p1 a t:female.n.02 ;
        t00246:r2 ,
        t00246:r3 .
 
-t00246:r1 a t:sister.n.01 ;
+t00246:r1 a :Sister.n.01 ;
   :att "LIEVE" .
 
-t00246:r2 a t:aunt.n.01 .
+t00246:r2 a :Aunt.n.01 .
 
-t00246:r3 a t:grandaunt.n.01 .
+t00246:r3 a :Grandaunt.n.01 .
 
-t00246:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00246:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00246.jpg" ;
-  dcterms:date "2019-10-11T17:24:17"^^xsd:dateTime ;
+  dc:date "2019-10-11T17:24:17"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1723 ;

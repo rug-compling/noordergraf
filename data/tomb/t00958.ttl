@@ -1,6 +1,6 @@
 @prefix t00958: <https://noordergraf.rug.nl/tomb/t00958#> .
 
-tomb:t00958 a t:tombstone.n.01 ;
+tomb:t00958 a :Tomb ;
   :image t00958:im1 ;
   :site site:gr9479TNnoordlaren ;
   :ent t00958:p1 ,
@@ -8,13 +8,13 @@ tomb:t00958 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00958:s1 .
 
-t00958:a1 a t:weeping.a.02 .
+t00958:a1 a :Weeping.a.02 .
 
-t00958:c1 a t:village.n.02 ;
+t00958:c1 a :Village.n.02 ;
   :place place:Glimmen2755495 ;
   :name "GLIMMEN" .
 
-t00958:p1 a t:female.n.02 ;
+t00958:p1 a :Female ;
   :dob "1880-08-05" ;
   :dod "1928-06-21" ;
   :nam "LAMMECHIEN HOUWING" ;
@@ -22,26 +22,26 @@ t00958:p1 a t:female.n.02 ;
   :pod t00958:c1 ;
   :rol t00958:r1 .
 
-t00958:p2 a t:male.n.02 ;
+t00958:p2 a :Male ;
   :nam "JANS LUTGERS" .
 
-t00958:r1 a t:spouse.n.01 ;
+t00958:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00958:p2 .
 
-t00958:s1 a t:willow.n.01 ;
+t00958:s1 a :Willow.n.01 ;
   :att t00958:a1 .
 
-t00958:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00958:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00958.jpg" ;
-  dcterms:date "2020-03-25T09:22:55"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:22:55"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1202 ;

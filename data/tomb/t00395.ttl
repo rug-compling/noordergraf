@@ -1,6 +1,6 @@
 @prefix t00395: <https://noordergraf.rug.nl/tomb/t00395#> .
 
-tomb:t00395 a t:tombstone.n.01 ;
+tomb:t00395 a :Tomb ;
   :image t00395:im1 ;
   :site site:fr9285TCbuitenpost ;
   :ent t00395:p1 ,
@@ -8,19 +8,19 @@ tomb:t00395 a t:tombstone.n.01 ;
   :ref "GEZANG 178:7" ,
        "PSALM 43:3" .
 
-t00395:c1 a t:village.n.02 ;
+t00395:c1 a :Village.n.02 ;
   :place place:Aldeboarn2749669 ;
   :name "OLDEBOORN" .
 
-t00395:c2 a t:city.n.01 ;
+t00395:c2 a :City.n.01 ;
   :place place:Amsterdam2759794 ;
   :name "AMSTERDAM" .
 
-t00395:c3 a t:village.n.02 ;
+t00395:c3 a :Village.n.02 ;
   :place place:Metslawier2750919 ;
   :name "METSLAWIER" .
 
-t00395:p1 a t:male.n.02 ;
+t00395:p1 a :Male ;
   :dob "1876-11-11" ;
   :dod "1947-06-03" ;
   :nam "LUDOLF FEENSTRA" ;
@@ -29,7 +29,7 @@ t00395:p1 a t:male.n.02 ;
   :rol t00395:r1 ,
        t00395:r2 .
 
-t00395:p2 a t:female.n.02 ;
+t00395:p2 a :Female ;
   :dob "1879-12-05" ;
   :dod "1953-04-23" ;
   :nam "WILLEMKE FEENSTRA" ;
@@ -38,26 +38,26 @@ t00395:p2 a t:female.n.02 ;
   :rol t00395:r3 ,
        t00395:r4 .
 
-t00395:r1 a t:parent.n.01 ;
+t00395:r1 a :Parent.n.01 ;
   :att "ONVERGETELIJKE" .
 
-t00395:r2 a t:grandparent.n.01 .
+t00395:r2 a :Grandparent.n.01 .
 
-t00395:r3 a t:parent.n.01 ;
+t00395:r3 a :Parent.n.01 ;
   :att "ONVERGETELIJKE" .
 
-t00395:r4 a t:grandparent.n.01 .
+t00395:r4 a :Grandparent.n.01 .
 
-t00395:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00395:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00395.jpg" ;
-  dcterms:date "2019-10-26T14:55:31"^^xsd:dateTime ;
+  dc:date "2019-10-26T14:55:31"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2517 ;

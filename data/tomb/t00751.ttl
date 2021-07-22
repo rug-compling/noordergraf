@@ -1,6 +1,6 @@
 @prefix t00751: <https://noordergraf.rug.nl/tomb/t00751#> .
 
-tomb:t00751 a t:tombstone.n.01 ;
+tomb:t00751 a :Tomb ;
   :image t00751:im1 ;
   :site site:gr9936BTfarmsum ;
   :ent t00751:p1 ,
@@ -9,32 +9,32 @@ tomb:t00751 a t:tombstone.n.01 ;
   :sym t00751:s1 ,
        t00751:s2 .
 
-t00751:p1 a t:person.n.01 ;
+t00751:p1 a :Person ;
   :dob "1818-10-27" ;
   :dod "1874-01-15" ;
   :nam "A.R. VAN ZANTEN" ;
   :rol t00751:r1 .
 
-t00751:p2 a t:person.n.01 ;
+t00751:p2 a :Person ;
   :nam "E.C. BEKENKAMP" .
 
-t00751:r1 a t:spouse.n.01 ;
+t00751:r1 a :Spouse.n.01 ;
   :tgt t00751:p2 .
 
-t00751:s1 a t:skull.n.01 .
+t00751:s1 a :Skull.n.01 .
 
-t00751:s2 a t:bone.n.01 .
+t00751:s2 a :Bone.n.01 .
 
-t00751:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00751:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00751.jpg" ;
-  dcterms:date "2019-12-28T12:47:22"^^xsd:dateTime ;
+  dc:date "2019-12-28T12:47:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3110 ;

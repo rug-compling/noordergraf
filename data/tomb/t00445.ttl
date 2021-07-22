@@ -1,19 +1,19 @@
 @prefix t00445: <https://noordergraf.rug.nl/tomb/t00445#> .
 
-tomb:t00445 a t:tombstone.n.01 ;
+tomb:t00445 a :Tomb ;
   :image t00445:im1 ;
   :site site:fr9166NAschiermonnikoog ;
   :ent t00445:p1 ;
   :ref t00445:v1 .
 
-t00445:b1 a t:Epistle_to_the_Romans.n.04 ;
+t00445:b1 a :Epistle_to_the_Romans.n.04 ;
   :prt t00445:c1 .
 
-t00445:c1 a t:chapter.n.01 ;
+t00445:c1 a :Chapter.n.01 ;
   :ord 6 ;
   :prt t00445:v1 .
 
-t00445:p1 a t:male.n.02 ;
+t00445:p1 a :Male ;
   :dob "1911-10-09" ;
   :dod "1997-11-21" ;
   :nam "YJE TEERDSTRA" ;
@@ -21,26 +21,26 @@ t00445:p1 a t:male.n.02 ;
        t00445:r2 ,
        t00445:r3 .
 
-t00445:r1 a t:brother.n.01 ;
+t00445:r1 a :Brother.n.01 ;
   :att "OUDSTE" .
 
-t00445:r2 a t:brother-in-law.n.01 .
+t00445:r2 a :Brother-in-law.n.01 .
 
-t00445:r3 a t:uncle.n.01 .
+t00445:r3 a :Uncle.n.01 .
 
-t00445:v1 a t:verse.n.01 ;
+t00445:v1 a :Verse.n.01 ;
   :ord 8 .
 
-t00445:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00445:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00445.jpg" ;
-  dcterms:date "2019-11-02T11:31:28"^^xsd:dateTime ;
+  dc:date "2019-11-02T11:31:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.4792 ;

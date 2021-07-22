@@ -1,6 +1,6 @@
 @prefix t00344: <https://noordergraf.rug.nl/tomb/t00344#> .
 
-tomb:t00344 a t:tombstone.n.01 ;
+tomb:t00344 a :Tomb ;
   :image t00344:im1 ;
   :site site:dr7907CHhoogeveen ;
   :ent t00344:p1 ,
@@ -8,7 +8,7 @@ tomb:t00344 a t:tombstone.n.01 ;
   :ref "PSALM 27" ;
   :sym t00344:s1 .
 
-t00344:p1 a t:male.n.02 ;
+t00344:p1 a :Male ;
   :dob "1909-01-24" ;
   :dod "1999-09-10" ;
   :nam "HENDRIK VRIJHOF" ;
@@ -17,7 +17,7 @@ t00344:p1 a t:male.n.02 ;
        t00344:r3 ,
        t00344:r4 .
 
-t00344:p2 a t:female.n.02 ;
+t00344:p2 a :Female ;
   :dob "1917-07-01" ;
   :dod "2001-09-28" ;
   :nam "LAMBERTA VRIJHOF-KUILDER" ;
@@ -25,36 +25,36 @@ t00344:p2 a t:female.n.02 ;
        t00344:r6 ,
        t00344:r7 .
 
-t00344:r1 a t:husband.n.01 ;
+t00344:r1 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00344:p2 .
 
-t00344:r2 a t:father.n.01 .
+t00344:r2 a :Father.n.01 .
 
-t00344:r3 a t:grandfather.n.01 .
+t00344:r3 a :Grandfather.n.01 .
 
-t00344:r4 a t:great_grandfather.n.01 .
+t00344:r4 a :Great_grandfather.n.01 .
 
-t00344:r5 a t:mother.n.01 ;
+t00344:r5 a :Mother.n.01 ;
   :att "LIEVE" ,
        "ZORGZAME" .
 
-t00344:r6 a t:grandmother.n.01 .
+t00344:r6 a :Grandmother.n.01 .
 
-t00344:r7 a t:great_grandmother.n.01 .
+t00344:r7 a :Great_grandmother.n.01 .
 
-t00344:s1 a t:chrismon.n.01 .
+t00344:s1 a :Chrismon.n.01 .
 
-t00344:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00344:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00344.jpg" ;
-  dcterms:date "2019-10-19T13:59:04"^^xsd:dateTime ;
+  dc:date "2019-10-19T13:59:04"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7157 ;

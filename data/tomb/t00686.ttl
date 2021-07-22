@@ -1,6 +1,6 @@
 @prefix t00686: <https://noordergraf.rug.nl/tomb/t00686#> .
 
-tomb:t00686 a t:tombstone.n.01 ;
+tomb:t00686 a :Tomb ;
   :image t00686:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00686:p1 ,
@@ -8,11 +8,11 @@ tomb:t00686 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00686:s1 .
 
-t00686:c1 a t:city.n.01 ;
+t00686:c1 a :City.n.01 ;
   :place place:Bolsward2758682 ;
   :name "BOLSWARD" .
 
-t00686:p1 a t:male.n.02 ;
+t00686:p1 a :Male ;
   :dob "1862-03-06" ;
   :dod "1928-01-07" ;
   :nam "HENDRIK G. DE BOER" ;
@@ -20,25 +20,25 @@ t00686:p1 a t:male.n.02 ;
   :pod t00686:c1 ;
   :rol t00686:r1 .
 
-t00686:p2 a t:female.n.02 ;
+t00686:p2 a :Female ;
   :nam "MAAIKE IJNTEMA" .
 
-t00686:r1 a t:spouse.n.01 ;
+t00686:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00686:p2 .
 
-t00686:s1 a t:rose.n.01 .
+t00686:s1 a :Rose.n.01 .
 
-t00686:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00686:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00686.jpg" ;
-  dcterms:date "2019-12-14T13:17:41"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:17:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0684 ;

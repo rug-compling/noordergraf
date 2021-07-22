@@ -1,34 +1,34 @@
 @prefix t00935: <https://noordergraf.rug.nl/tomb/t00935#> .
 
-tomb:t00935 a t:tombstone.n.01 ;
+tomb:t00935 a :Tomb ;
   :image t00935:im1 ;
   :site site:gr9741GHgroningen ;
   :ent t00935:p1 ;
   :ref "JOHANNES 3:16"@nld ;
   :txt "HIER RUST ONZE LIEVE MOEDER EN OMA"@nld .
 
-t00935:p1 a t:female.n.02 ;
+t00935:p1 a :Female ;
   :dob "1916-08-27" ;
   :dod "1974-06-27" ;
   :nam "MARTJE BROUWER" ;
   :rol t00935:r1 ,
        t00935:r2 .
 
-t00935:r1 a t:mother.n.01 ;
+t00935:r1 a :Mother.n.01 ;
   :att "LIEVE" .
 
-t00935:r2 a t:grandmother.n.01 .
+t00935:r2 a :Grandmother.n.01 .
 
-t00935:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00935:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00935.jpg" ;
-  dcterms:date "2020-03-18T09:11:10"^^xsd:dateTime ;
+  dc:date "2020-03-18T09:11:10"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2404 ;

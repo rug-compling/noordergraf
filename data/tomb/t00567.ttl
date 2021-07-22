@@ -1,23 +1,23 @@
 @prefix t00567: <https://noordergraf.rug.nl/tomb/t00567#> .
 
-tomb:t00567 a t:tombstone.n.01 ;
+tomb:t00567 a :Tomb ;
   :image t00567:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00567:p1 .
 
-t00567:p1 a t:family.n.04 ;
+t00567:p1 a :Family.n.04 ;
   :nam "FREDERIK HARDENHOF" .
 
-t00567:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00567:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00567.jpg" ;
-  dcterms:date "2019-11-24T13:38:47"^^xsd:dateTime ;
+  dc:date "2019-11-24T13:38:47"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1046 ;

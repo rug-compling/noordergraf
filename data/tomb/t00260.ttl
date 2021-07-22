@@ -1,20 +1,20 @@
 @prefix t00260: <https://noordergraf.rug.nl/tomb/t00260#> .
 
-tomb:t00260 a t:tombstone.n.01 ;
+tomb:t00260 a :Tomb ;
   :image t00260:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00260:p1 ,
        t00260:p2 ,
        t00260:p3 .
 
-t00260:p1 a t:female.n.02 ;
+t00260:p1 a :Female ;
   :dob "1912-12-17" ;
   :dod "1935-12-22" ;
   :nam "HEERINA SUIDING" ;
   :rol t00260:r1 ,
        t00260:r2 .
 
-t00260:p2 a t:female.n.02 ;
+t00260:p2 a :Female ;
   :dob "1885-12-21" ;
   :dod "1961-12-31" ;
   :nam "GRIETJE SPIER" ;
@@ -23,43 +23,43 @@ t00260:p2 a t:female.n.02 ;
        t00260:r5 ,
        t00260:r6 .
 
-t00260:p3 a t:male.n.02 ;
+t00260:p3 a :Male ;
   :dob "1882-01-18" ;
   :dod "1964-11-19" ;
   :nam "SIEBOLT SUIDING" ;
   :rol t00260:r7 ,
        t00260:r8 .
 
-t00260:r1 a t:daughter.n.01 ;
+t00260:r1 a :Daughter.n.01 ;
   :att "LIEVE" .
 
-t00260:r2 a t:sister.n.01 .
+t00260:r2 a :Sister.n.01 .
 
-t00260:r3 a t:wife.n.01 ;
+t00260:r3 a :Wife.n.01 ;
   :att "LIEVE" .
 
-t00260:r4 a t:mother.n.01 .
+t00260:r4 a :Mother.n.01 .
 
-t00260:r5 a t:grandmother.n.01 .
+t00260:r5 a :Grandmother.n.01 .
 
-t00260:r6 a t:spouse.n.01 ;
+t00260:r6 a :Spouse.n.01 ;
   :tgt t00260:p3 .
 
-t00260:r7 a t:father.n.01 ;
+t00260:r7 a :Father.n.01 ;
   :att "LIEVE" .
 
-t00260:r8 a t:grandfather.n.01 .
+t00260:r8 a :Grandfather.n.01 .
 
-t00260:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00260:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00260.jpg" ;
-  dcterms:date "2019-10-13T14:26:21"^^xsd:dateTime ;
+  dc:date "2019-10-13T14:26:21"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1907 ;

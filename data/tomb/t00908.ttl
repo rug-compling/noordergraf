@@ -1,6 +1,6 @@
 @prefix t00908: <https://noordergraf.rug.nl/tomb/t00908#> .
 
-tomb:t00908 a t:tombstone.n.01 ;
+tomb:t00908 a :Tomb ;
   :image t00908:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00908:p1 ,
@@ -8,17 +8,17 @@ tomb:t00908 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
   :sym t00908:s1 .
 
-t00908:a1 a t:weeping.a.02 .
+t00908:a1 a :Weeping.a.02 .
 
-t00908:c1 a t:village.n.02 ;
+t00908:c1 a :Village.n.02 ;
   :place place:Midwolde2750830 ;
   :name "MIDWOLDE" .
 
-t00908:c2 a t:village.n.02 ;
+t00908:c2 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00908:p1 a t:female.n.02 ;
+t00908:p1 a :Female ;
   :dob "1869-06-10" ;
   :dod "1955-12-30" ;
   :nam "JANTJE H. MEELKER" ;
@@ -27,27 +27,27 @@ t00908:p1 a t:female.n.02 ;
   :rol t00908:r1 ,
        t00908:r2 .
 
-t00908:p2 a t:male.n.02 ;
+t00908:p2 a :Male ;
   :nam "HENDRIK J. OOISTERHUIS" .
 
-t00908:r1 a t:widow.n.01 ;
+t00908:r1 a :Widow.n.01 ;
   :tgt t00908:p2 .
 
-t00908:r2 a t:mother.n.01 .
+t00908:r2 a :Mother.n.01 .
 
-t00908:s1 a t:willow.n.01 ;
+t00908:s1 a :Willow.n.01 ;
   :att t00908:a1 .
 
-t00908:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00908:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00908.jpg" ;
-  dcterms:date "2020-03-07T14:16:22"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:16:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1718 ;

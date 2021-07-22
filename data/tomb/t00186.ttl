@@ -1,43 +1,43 @@
 @prefix t00186: <https://noordergraf.rug.nl/tomb/t00186#> .
 
-tomb:t00186 a t:tombstone.n.01 ;
+tomb:t00186 a :Tomb ;
   :image t00186:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00186:p1 ,
        t00186:p2 .
 
-t00186:p1 a t:female.n.02 ;
+t00186:p1 a :Female ;
   :dob "1901-08-25" ;
   :dod "1938-09-13" ;
   :nam "ELLEGIEN GEZINA BEUKER" ;
   :rol t00186:r1 ,
        t00186:r2 .
 
-t00186:p2 a t:male.n.02 ;
+t00186:p2 a :Male ;
   :dob "1894-04-11" ;
   :dod "1960-01-12" ;
   :nam "HENDRIK PALTS" ;
   :rol t00186:r3 .
 
-t00186:r1 a t:wife.n.01 ;
+t00186:r1 a :Wife.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00186:p2 .
 
-t00186:r2 a t:mother.n.01 .
+t00186:r2 a :Mother.n.01 .
 
-t00186:r3 a t:father.n.01 ;
+t00186:r3 a :Father.n.01 ;
   :att "LIEVE" .
 
-t00186:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00186:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00186.jpg" ;
-  dcterms:date "2019-10-05T10:07:36"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:07:36"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1909 ;

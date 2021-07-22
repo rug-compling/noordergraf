@@ -1,6 +1,6 @@
 @prefix t00834: <https://noordergraf.rug.nl/tomb/t00834#> .
 
-tomb:t00834 a t:tombstone.n.01 ;
+tomb:t00834 a :Tomb ;
   :image t00834:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00834:g1 ,
@@ -10,17 +10,17 @@ tomb:t00834 a t:tombstone.n.01 ;
   :quo "RUST ZACHT GELIEFDE ZOON EN BROEDER"@nld ;
   :sym t00834:s1 .
 
-t00834:a1 a t:weeping.a.02 .
+t00834:a1 a :Weeping.a.02 .
 
-t00834:c1 a t:village.n.02 ;
+t00834:c1 a :Village.n.02 ;
   :place place:Erm2756040 ;
   :name "ERM" .
 
-t00834:g1 a t:group.n.01 ;
+t00834:g1 a :Group.n.01 ;
   :mem t00834:p2 ,
        t00834:p3 .
 
-t00834:p1 a t:male.n.02 ;
+t00834:p1 a :Male ;
   :dob "1916-02-08" ;
   :dod "1932-06-05" ;
   :nam "LUBBERT SIKKEN" ;
@@ -29,31 +29,31 @@ t00834:p1 a t:male.n.02 ;
   :rol t00834:r1 ,
        t00834:r2 .
 
-t00834:p2 a t:male.n.02 ;
+t00834:p2 a :Male ;
   :nam "JOH. SIKKEN" .
 
-t00834:p3 a t:female.n.02 ;
+t00834:p3 a :Female ;
   :nam "F. EGBERTS" .
 
-t00834:r1 a t:son.n.01 ;
+t00834:r1 a :Son.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00834:g1 .
 
-t00834:r2 a t:brother.n.01 .
+t00834:r2 a :Brother.n.01 .
 
-t00834:s1 a t:willow.n.01 ;
+t00834:s1 a :Willow.n.01 ;
   :att t00834:a1 .
 
-t00834:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00834:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00834.jpg" ;
-  dcterms:date "2020-02-15T15:40:41"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:40:41"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7763 ;

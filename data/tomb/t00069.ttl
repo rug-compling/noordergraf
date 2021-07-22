@@ -1,13 +1,13 @@
 @prefix t00069: <https://noordergraf.rug.nl/tomb/t00069#> .
 
-tomb:t00069 a t:tombstone.n.01 ;
+tomb:t00069 a :Tomb ;
   :image t00069:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00069:p1 ,
        t00069:p2 ,
        t00069:p3 .
 
-t00069:p1 a t:female.n.02 ;
+t00069:p1 a :Female ;
   :dob "1867-11-12" ;
   :dod "1943-07-08" ;
   :nam "AUKE KORNELIA VEENHUIS" ;
@@ -15,32 +15,32 @@ t00069:p1 a t:female.n.02 ;
        t00069:r2 ,
        t00069:r3 .
 
-t00069:p2 a t:male.n.02 ;
+t00069:p2 a :Male ;
   :nam "T. DE BOER" .
 
-t00069:p3 a t:male.n.02 ;
+t00069:p3 a :Male ;
   :nam "J. KNAPPER" .
 
-t00069:r1 a t:wife.n.01 ;
+t00069:r1 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00069:p2 .
 
-t00069:r2 a t:mother.n.01 .
+t00069:r2 a :Mother.n.01 .
 
-t00069:r3 a t:widow.n.01 ;
+t00069:r3 a :Widow.n.01 ;
   :bef t00069:r1 ;
   :tgt t00069:p3 .
 
-t00069:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00069:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00069.jpg" ;
-  dcterms:date "2019-09-25T16:09:28"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:09:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1908 ;

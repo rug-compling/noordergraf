@@ -1,6 +1,6 @@
 @prefix t00925: <https://noordergraf.rug.nl/tomb/t00925#> .
 
-tomb:t00925 a t:tombstone.n.01 ;
+tomb:t00925 a :Tomb ;
   :image t00925:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00925:p1 ;
@@ -8,31 +8,31 @@ tomb:t00925 a t:tombstone.n.01 ;
        "JOUW MUZIEK LEEFT IN ONZE HARTEN VOORT"@nld ;
   :sym t00925:s1 .
 
-t00925:p1 a t:male.n.02 ;
+t00925:p1 a :Male ;
   :dob "1945-09-16" ;
   :dod "2001-06-02" ;
   :nam "ALEXANDER AREND ZWIJGERS" ;
   :rol t00925:r1 ,
        t00925:r2 .
 
-t00925:r1 a t:husband.n.01 ;
+t00925:r1 a :Husband.n.01 ;
   :att "LIEVE" .
 
-t00925:r2 a t:father.n.01 ;
+t00925:r2 a :Father.n.01 ;
   :att "ZORGZAME" .
 
-t00925:s1 a t:trombone.n.01 .
+t00925:s1 a :Trombone.n.01 .
 
-t00925:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00925:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00925.jpg" ;
-  dcterms:date "2020-03-07T14:06:06"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:06:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1718 ;

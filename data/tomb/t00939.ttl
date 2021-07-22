@@ -1,6 +1,6 @@
 @prefix t00939: <https://noordergraf.rug.nl/tomb/t00939#> .
 
-tomb:t00939 a t:tombstone.n.01 ;
+tomb:t00939 a :Tomb ;
   :image t00939:im1 ;
   :site site:gr9741GHgroningen ;
   :ent t00939:p1 ,
@@ -8,31 +8,31 @@ tomb:t00939 a t:tombstone.n.01 ;
   :quo "EINDE VAN HET SPOOR, IK BEN NAAR HUIS GEGAAN"@nld ;
   :sym t00939:s1 .
 
-t00939:p1 a t:male.n.02 ;
+t00939:p1 a :Male ;
   :dob "1933-08-31" ;
   :dod "1956-03-28" ;
   :nam "JAN KNOOP" ;
   :rol t00939:r1 .
 
-t00939:p2 a t:female.n.02 ;
+t00939:p2 a :Female ;
   :nam "AUKTJE RAUKENA" .
 
-t00939:r1 a t:spouse.n.01 ;
+t00939:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00939:p2 .
 
-t00939:s1 a t:entity.n.01 .
+t00939:s1 a :Entity.n.01 .
 
-t00939:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00939:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00939.jpg" ;
-  dcterms:date "2020-03-18T10:19:38"^^xsd:dateTime ;
+  dc:date "2020-03-18T10:19:38"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2396 ;

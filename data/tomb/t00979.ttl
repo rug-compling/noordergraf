@@ -1,21 +1,21 @@
 @prefix t00979: <https://noordergraf.rug.nl/tomb/t00979#> .
 
-tomb:t00979 a t:tombstone.n.01 ;
+tomb:t00979 a :Tomb ;
   :image t00979:im1 ;
   :site site:gr9479TNnoordlaren ;
   :ent t00979:p1 ,
        t00979:p2 ;
   :lan "NLD" .
 
-t00979:c1 a t:village.n.02 ;
+t00979:c1 a :Village.n.02 ;
   :place place:Eext2756317 ;
   :name "EEXT" .
 
-t00979:c2 a t:village.n.02 ;
+t00979:c2 a :Village.n.02 ;
   :place place:Noordlaren2749857 ;
   :name "NOORDLAREN" .
 
-t00979:p1 a t:female.n.02 ;
+t00979:p1 a :Female ;
   :dob "1866-06-05" ;
   :dod "1953-12-03" ;
   :nam "JANTIEN KLOOTS" ;
@@ -23,22 +23,22 @@ t00979:p1 a t:female.n.02 ;
   :pod t00979:c2 ;
   :rol t00979:r1 .
 
-t00979:p2 a t:male.n.02 ;
+t00979:p2 a :Male ;
   :nam "HARMANNUS HAVINGA" .
 
-t00979:r1 a t:widow.n.01 ;
+t00979:r1 a :Widow.n.01 ;
   :tgt t00979:p2 .
 
-t00979:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00979:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00979.jpg" ;
-  dcterms:date "2020-03-25T09:25:22"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:25:22"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1203 ;

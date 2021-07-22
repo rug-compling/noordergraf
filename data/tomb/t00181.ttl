@@ -1,23 +1,23 @@
 @prefix t00181: <https://noordergraf.rug.nl/tomb/t00181#> .
 
-tomb:t00181 a t:tombstone.n.01 ;
+tomb:t00181 a :Tomb ;
   :image t00181:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00181:p1 .
 
-t00181:p1 a t:family.n.04 ;
+t00181:p1 a :Family.n.04 ;
   :nam "ROWAAN" .
 
-t00181:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00181:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00181.jpg" ;
-  dcterms:date "2019-10-05T10:18:02"^^xsd:dateTime ;
+  dc:date "2019-10-05T10:18:02"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1912 ;

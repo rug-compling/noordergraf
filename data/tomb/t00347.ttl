@@ -1,6 +1,6 @@
 @prefix t00347: <https://noordergraf.rug.nl/tomb/t00347#> .
 
-tomb:t00347 a t:tombstone.n.01 ;
+tomb:t00347 a :Tomb ;
   :image t00347:im1 ;
   :site site:dr9481CGvries ;
   :ent t00347:p1 ,
@@ -8,29 +8,29 @@ tomb:t00347 a t:tombstone.n.01 ;
   :quo "IK KEN DE ROTS WAAROP IK BOUWE" ;
   :ref "GEZANG 110:3" .
 
-t00347:p1 a t:female.n.02 ;
+t00347:p1 a :Female ;
   :dob "1935-10-29" ;
   :dod "1965-09-07" ;
   :nam "ALBERTJE PLOEG" ;
   :rol t00347:r1 .
 
-t00347:p2 a t:male.n.02 ;
+t00347:p2 a :Male ;
   :nam "L. DOORNBOS" .
 
-t00347:r1 a t:spouse.n.01 ;
+t00347:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00347:p2 .
 
-t00347:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00347:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00347.jpg" ;
-  dcterms:date "2019-10-25T17:45:07"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:45:07"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0802 ;

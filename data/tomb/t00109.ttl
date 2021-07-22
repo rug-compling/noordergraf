@@ -1,6 +1,6 @@
 @prefix t00109: <https://noordergraf.rug.nl/tomb/t00109#> .
 
-tomb:t00109 a t:tombstone.n.01 ;
+tomb:t00109 a :Tomb ;
   :image t00109:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00109:p1 ,
@@ -9,23 +9,23 @@ tomb:t00109 a t:tombstone.n.01 ;
        t00109:p4 ;
   :sym t00109:s1 .
 
-t00109:c1 a t:city.n.01 ;
+t00109:c1 a :City.n.01 ;
   :place place:Oostburg2749541 ;
   :name "OOSTBURG" .
 
-t00109:c2 a t:city.n.01 ;
+t00109:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00109:c3 a t:town.n.01 ;
+t00109:c3 a :Town.n.01 ;
   :place place:Oostburg2749541 ;
   :name "OOSTBURG" .
 
-t00109:c4 a t:village.n.02 ;
+t00109:c4 a :Village.n.02 ;
   :place place:Terwispel2746398 ;
   :name "TERWISPEL" .
 
-t00109:p1 a t:female.n.02 ;
+t00109:p1 a :Female ;
   :dob "1857-12-27" ;
   :dod "1931-03-31" ;
   :nam "MARIA SUZANNA LERGNER" ;
@@ -33,10 +33,10 @@ t00109:p1 a t:female.n.02 ;
   :pod t00109:c2 ;
   :rol t00109:r1 .
 
-t00109:p2 a t:male.n.02 ;
+t00109:p2 a :Male ;
   :nam "D. DE NIJS" .
 
-t00109:p3 a t:male.n.02 ;
+t00109:p3 a :Male ;
   :dob "1881-08-04" ;
   :dod "1948-09-06" ;
   :nam "WILLEM DE NIJS" ;
@@ -44,31 +44,31 @@ t00109:p3 a t:male.n.02 ;
   :pod t00109:c2 ;
   :rol t00109:r2 .
 
-t00109:p4 a t:female.n.02 ;
+t00109:p4 a :Female ;
   :dob "1878-01-25" ;
   :dod "1959-01-08" ;
   :nam "HERMINA WEILAND" ;
   :pob t00109:c4 ;
   :pod t00109:c2 .
 
-t00109:r1 a t:widow.n.01 ;
+t00109:r1 a :Widow.n.01 ;
   :tgt t00109:p2 .
 
-t00109:r2 a t:husband.n.01 ;
+t00109:r2 a :Husband.n.01 ;
   :tgt t00109:p4 .
 
-t00109:s1 a t:frond.n.01 .
+t00109:s1 a :Frond.n.01 .
 
-t00109:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00109:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00109.jpg" ;
-  dcterms:date "2019-09-21T15:51:03"^^xsd:dateTime ;
+  dc:date "2019-09-21T15:51:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1902 ;

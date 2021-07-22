@@ -1,31 +1,31 @@
 @prefix t00929: <https://noordergraf.rug.nl/tomb/t00929#> .
 
-tomb:t00929 a t:tombstone.n.01 ;
+tomb:t00929 a :Tomb ;
   :image t00929:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00929:p1 ;
   :img t00929:i1 ;
   :quo "WARKER VEUR DRENTHE'S \\ TAOL EN HISTORIE \\ EEN VAN OES"@drt .
 
-t00929:i1 a t:bust.n.03 ;
+t00929:i1 a :Bust.n.03 ;
   :thm t00929:p1 .
 
-t00929:p1 a t:male.n.02 ;
+t00929:p1 a :Male ;
   :dob "XX-XX-1903" ;
   :dod "XX-XX-1963" ;
   :nam "JAN NAARDING" ;
   :pfx "DR" .
 
-t00929:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00929:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00929.jpg" ;
-  dcterms:date "2020-02-15T15:31:26"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:31:26"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7757 ;

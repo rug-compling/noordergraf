@@ -1,6 +1,6 @@
 @prefix t00928: <https://noordergraf.rug.nl/tomb/t00928#> .
 
-tomb:t00928 a t:tombstone.n.01 ;
+tomb:t00928 a :Tomb ;
   :image t00928:im1 ;
   :site site:gr9351RLtolbert ;
   :text "Ter gedachtenis\nvan\nJOHANNES HENRICUS\nLEURINGH,\ngeboren te Tolbert\n28 December 1838,\noverleden in de\nbehuizing Rodenburg\nte Tolbert\n11 Juni 1913." ;
@@ -8,33 +8,33 @@ tomb:t00928 a t:tombstone.n.01 ;
   :quo "TER GEDACHTENIS VAN $p1"@nld ;
   :sym t00928:s1 .
 
-t00928:c1 a t:village.n.02 ;
+t00928:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :mem t00928:c2 ;
   :name "TOLBERT" .
 
-t00928:c2 a t:behuizing.n.01 ;
+t00928:c2 a :Behuizing.n.01 ;
   :nam "RODENBURG" .
 
-t00928:p1 a t:male.n.02 ;
+t00928:p1 a :Male ;
   :dob "1838-12-28" ;
   :dod "1913-06-11" ;
   :nam "JOHANNES HENRICUS LEURINGH" ;
   :pob t00928:c1 ;
   :pod t00928:c2 .
 
-t00928:s1 a t:entity.n.01 .
+t00928:s1 a :Entity.n.01 .
 
-t00928:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00928:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00928.jpg" ;
-  dcterms:date "2020-03-07T14:11:42"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:11:42"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1717 ;

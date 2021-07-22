@@ -1,6 +1,6 @@
 @prefix t00793: <https://noordergraf.rug.nl/tomb/t00793#> .
 
-tomb:t00793 a t:tombstone.n.01 ;
+tomb:t00793 a :Tomb ;
   :image t00793:im1 ;
   :site site:gr9791KEten_boer ;
   :ent t00793:p1 ,
@@ -11,15 +11,15 @@ tomb:t00793 a t:tombstone.n.01 ;
        t00793:s3 ,
        t00793:s4 .
 
-t00793:c1 a t:village.n.02 ;
+t00793:c1 a :Village.n.02 ;
   :place place:Schildwolde2747570 ;
   :name "SCHILDWOLDE" .
 
-t00793:c2 a t:village.n.02 ;
+t00793:c2 a :Village.n.02 ;
   :place place:TenBoer2746491 ;
   :name "TEN BOER" .
 
-t00793:p1 a t:male.n.02 ;
+t00793:p1 a :Male ;
   :dob "1840-02-08" ;
   :dod "1896-02-18" ;
   :nam "HOMMO HUISMAN" ;
@@ -27,30 +27,30 @@ t00793:p1 a t:male.n.02 ;
   :pod t00793:c2 ;
   :rol t00793:r1 .
 
-t00793:p2 a t:female.n.02 ;
+t00793:p2 a :Female ;
   :nam "F. DOORNBOS" .
 
-t00793:r1 a t:spouse.n.01 ;
+t00793:r1 a :Spouse.n.01 ;
   :tgt t00793:p2 .
 
-t00793:s1 a t:butterfly.n.01 .
+t00793:s1 a :Butterfly.n.01 .
 
-t00793:s2 a t:frond.n.01 .
+t00793:s2 a :Frond.n.01 .
 
-t00793:s3 a t:frond.n.01 .
+t00793:s3 a :Frond.n.01 .
 
-t00793:s4 a t:ribbon.n.01 .
+t00793:s4 a :Ribbon.n.01 .
 
-t00793:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00793:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00793.jpg" ;
-  dcterms:date "2020-01-18T13:07:17"^^xsd:dateTime ;
+  dc:date "2020-01-18T13:07:17"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2776 ;

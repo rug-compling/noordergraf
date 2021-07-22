@@ -1,23 +1,23 @@
 @prefix t00012: <https://noordergraf.rug.nl/tomb/t00012#> .
 
-tomb:t00012 a t:tombstone.n.01 ;
+tomb:t00012 a :Tomb ;
   :image t00012:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00012:g1 ,
        t00012:p1 .
 
-t00012:c1 a t:city.n.01 ;
+t00012:c1 a :City.n.01 ;
   :place place:Zutphen2743608 ;
   :name "ZUTPHEN" .
 
-t00012:c2 a t:city.n.01 ;
+t00012:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00012:g1 a t:group.n.01 ;
+t00012:g1 a :Group.n.01 ;
   :rol t00012:r1 .
 
-t00012:p1 a t:male.n.02 ;
+t00012:p1 a :Male ;
   :dob "1892-12-13" ;
   :dod "1930-10-24" ;
   :nam "HERMANUS KAREL TE HENNEPE" ;
@@ -26,26 +26,26 @@ t00012:p1 a t:male.n.02 ;
   :rol t00012:r2 ,
        t00012:r3 .
 
-t00012:r1 a t:commemorator.n.01 ;
+t00012:r1 a :Commemorator.n.01 ;
   :tgt t00012:p1 .
 
-t00012:r2 a t:husband.n.01 ;
+t00012:r2 a :Husband.n.01 ;
   :att "LIEVE" ;
   :tgt t00012:p2 .
 
-t00012:r3 a t:father.n.01 ;
+t00012:r3 a :Father.n.01 ;
   :tgt t00012:p3 .
 
-t00012:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00012:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00012.jpg" ;
-  dcterms:date "2019-09-25T16:24:06"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:24:06"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1910 ;

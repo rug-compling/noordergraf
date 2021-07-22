@@ -1,13 +1,13 @@
 @prefix t00196: <https://noordergraf.rug.nl/tomb/t00196#> .
 
-tomb:t00196 a t:tombstone.n.01 ;
+tomb:t00196 a :Tomb ;
   :image t00196:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00196:p1 ,
        t00196:p2 ;
   :sym t00196:s1 .
 
-t00196:p1 a t:female.n.02 ;
+t00196:p1 a :Female ;
   :dob "1884-02-29" ;
   :dod "1933-05-01" ;
   :nam "TJITSKE DE VRIES" ;
@@ -15,29 +15,29 @@ t00196:p1 a t:female.n.02 ;
        t00196:r2 ,
        t00196:r3 .
 
-t00196:p2 a t:male.n.02 ;
+t00196:p2 a :Male ;
   :nam "JAN HUISMAN" .
 
-t00196:r1 a t:wife.n.01 ;
+t00196:r1 a :Wife.n.01 ;
   :tgt t00196:p2 .
 
-t00196:r2 a t:mother.n.01 .
+t00196:r2 a :Mother.n.01 .
 
-t00196:r3 a t:spouse.n.01 ;
+t00196:r3 a :Spouse.n.01 ;
   :tgt t00196:p2 .
 
-t00196:s1 a t:frond.n.01 .
+t00196:s1 a :Frond.n.01 .
 
-t00196:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00196:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00196.jpg" ;
-  dcterms:date "2019-10-06T14:40:03"^^xsd:dateTime ;
+  dc:date "2019-10-06T14:40:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1874 ;

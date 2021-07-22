@@ -1,25 +1,25 @@
 @prefix t00092: <https://noordergraf.rug.nl/tomb/t00092#> .
 
-tomb:t00092 a t:tombstone.n.01 ;
+tomb:t00092 a :Tomb ;
   :image t00092:im1 ;
   :site site:gr9721AAgroningen ;
   :ent t00092:p1 ,
        t00092:p2 .
 
-t00092:c1 a t:city.n.01 ;
+t00092:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00092:c2 a t:village.n.02 ;
+t00092:c2 a :Village.n.02 ;
   :place place:Wahn3208447 ;
   :name "WAHN" .
 
-t00092:c3 a t:country.n.02 ;
+t00092:c3 a :Country.n.02 ;
   :place place:Duitsland2921044 ;
   :mem t00092:c2 ;
   :name "DUITSLAND" .
 
-t00092:p1 a t:male.n.02 ;
+t00092:p1 a :Male ;
   :dob "1891-10-05" ;
   :dod "1947-06-26" ;
   :nam "HEINRICH JANSEN" ;
@@ -27,24 +27,24 @@ t00092:p1 a t:male.n.02 ;
   :pod t00092:c1 ;
   :rol t00092:r1 .
 
-t00092:p2 a t:female.n.02 ;
+t00092:p2 a :Female ;
   :dob "1888-07-15" ;
   :dod "1967-08-31" ;
   :nam "JOANNA M. BOELENS" .
 
-t00092:r1 a t:wife.n.01 ;
+t00092:r1 a :Wife.n.01 ;
   :tgt t00092:p2 .
 
-t00092:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00092:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00092.jpg" ;
-  dcterms:date "2019-09-25T11:15:34"^^xsd:dateTime ;
+  dc:date "2019-09-25T11:15:34"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2031 ;

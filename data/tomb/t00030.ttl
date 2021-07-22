@@ -1,6 +1,6 @@
 @prefix t00030: <https://noordergraf.rug.nl/tomb/t00030#> .
 
-tomb:t00030 a t:tombstone.n.01 ;
+tomb:t00030 a :Tomb ;
   :image t00030:im1 ;
   :site site:gr9752CMharen ;
   :ent t00030:p1 ,
@@ -8,17 +8,17 @@ tomb:t00030 a t:tombstone.n.01 ;
   :quo "ZIJ WAS EEN LIEFDE VOLLE ZORGDRAGENDE MOEDER" ;
   :sym t00030:s1 .
 
-t00030:a1 a t:weeping.a.02 .
+t00030:a1 a :Weeping.a.02 .
 
-t00030:c1 a t:village.n.02 ;
+t00030:c1 a :Village.n.02 ;
   :place place:Helpman2754444 ;
   :name "HELPMAN" .
 
-t00030:c2 a t:town.n.01 ;
+t00030:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00030:p1 a t:female.n.02 ;
+t00030:p1 a :Female ;
   :dob "1868-04-03" ;
   :dod "1927-04-12" ;
   :nam "MARGRIETA VAN BERGEN" ;
@@ -26,25 +26,25 @@ t00030:p1 a t:female.n.02 ;
   :pod t00030:c2 ;
   :rol t00030:r1 .
 
-t00030:p2 a t:male.n.02 ;
+t00030:p2 a :Male ;
   :nam "ROELOF DOLFIN" .
 
-t00030:r1 a t:widow.n.01 ;
+t00030:r1 a :Widow.n.01 ;
   :tgt t00030:p2 .
 
-t00030:s1 a t:willow.n.01 ;
+t00030:s1 a :Willow.n.01 ;
   :att t00030:a1 .
 
-t00030:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00030:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00030.jpg" ;
-  dcterms:date "2020-03-27T17:11:16"^^xsd:dateTime ;
+  dc:date "2020-03-27T17:11:16"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1627 ;

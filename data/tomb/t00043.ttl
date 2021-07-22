@@ -1,37 +1,37 @@
 @prefix t00043: <https://noordergraf.rug.nl/tomb/t00043#> .
 
-tomb:t00043 a t:tombstone.n.01 ;
+tomb:t00043 a :Tomb ;
   :image t00043:im1 ;
   :site site:gr9752CMharen ;
   :ent t00043:p1 ;
   :quo "RUST ZACHT" .
 
-t00043:g1 a t:group.n.01 .
+t00043:g1 a :Group.n.01 .
 
-t00043:p1 a t:male.n.02 ;
+t00043:p1 a :Male ;
   :dob "1906-12-12" ;
   :dod "1974-08-21" ;
   :nam "GEERT DE RUITER" ;
   :rol t00043:r1 ,
        t00043:r2 .
 
-t00043:r1 a t:brother.n.01 ;
+t00043:r1 a :Brother.n.01 ;
   :att "LIEVE" ;
   :tgt t00043:g1 .
 
-t00043:r2 a t:brother-in-law.n.01 ;
+t00043:r2 a :Brother-in-law.n.01 ;
   :tgt t00043:g1 .
 
-t00043:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00043:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00043.jpg" ;
-  dcterms:date "2019-09-27T17:51:01"^^xsd:dateTime ;
+  dc:date "2019-09-27T17:51:01"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1630 ;

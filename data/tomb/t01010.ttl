@@ -1,32 +1,32 @@
 @prefix t01010: <https://noordergraf.rug.nl/tomb/t01010#> .
 
-tomb:t01010 a t:tombstone.n.01 ;
+tomb:t01010 a :Tomb ;
   :image t01010:im1 ;
   :site site:gr9781THbedum ;
   :ent t01010:p1 ;
   :quo "LIFE IS SHORT \\ DEATH IS NOUGHT \\ LOVE IS ALL"@eng ;
   :sym t01010:s1 .
 
-t01010:a1 a t:weeping.a.02 .
+t01010:a1 a :Weeping.a.02 .
 
-t01010:p1 a t:female.n.02 ;
+t01010:p1 a :Female ;
   :dob "1949-02-01" ;
   :dod "2000-12-19" ;
   :nam "MARJA ROZEMOND" .
 
-t01010:s1 a t:willow.n.01 ;
+t01010:s1 a :Willow.n.01 ;
   :att t01010:a1 .
 
-t01010:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t01010:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t01010.jpg" ;
-  dcterms:date "2020-04-11T10:32:13"^^xsd:dateTime ;
+  dc:date "2020-04-11T10:32:13"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3085 ;

@@ -1,29 +1,29 @@
 @prefix t00143: <https://noordergraf.rug.nl/tomb/t00143#> .
 
-tomb:t00143 a t:tombstone.n.01 ;
+tomb:t00143 a :Tomb ;
   :image t00143:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00143:p1 ,
        t00143:p2 ;
   :sym t00143:s1 .
 
-t00143:c1 a t:city.n.01 ;
+t00143:c1 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00143:c2 a t:village.n.02 ;
+t00143:c2 a :Village.n.02 ;
   :place place:Ruinerwold2747828 ;
   :name "RUINERWOLD" .
 
-t00143:c3 a t:village.n.02 ;
+t00143:c3 a :Village.n.02 ;
   :place place:Havelte2754752 ;
   :name "HAVELTE" .
 
-t00143:c4 a t:village.n.02 ;
+t00143:c4 a :Village.n.02 ;
   :place place:Noorderhoogebrug2749931 ;
   :name "NOORDERHOOGEBRUG" .
 
-t00143:p1 a t:female.n.02 ;
+t00143:p1 a :Female ;
   :dob "1882-12-31" ;
   :dod "1940-11-29" ;
   :nam "JENTJE SCHIPHORST" ;
@@ -32,31 +32,31 @@ t00143:p1 a t:female.n.02 ;
   :rol t00143:r1 ,
        t00143:r2 .
 
-t00143:p2 a t:male.n.02 ;
+t00143:p2 a :Male ;
   :dob "1881-09-20" ;
   :dod "1967-03-12" ;
   :nam "GERRIT LEFFERTS" ;
   :pob t00143:c3 ;
   :pod t00143:c4 .
 
-t00143:r1 a t:mother.n.01 .
+t00143:r1 a :Mother.n.01 .
 
-t00143:r2 a t:wife.n.01 ;
+t00143:r2 a :Wife.n.01 ;
   :att "LIEVE" ;
   :tgt t00143:p2 .
 
-t00143:s1 a t:frond.n.01 .
+t00143:s1 a :Frond.n.01 .
 
-t00143:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00143:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00143.jpg" ;
-  dcterms:date "2019-10-02T10:28:42"^^xsd:dateTime ;
+  dc:date "2019-10-02T10:28:42"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2061 ;

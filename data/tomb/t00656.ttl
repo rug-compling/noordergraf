@@ -1,6 +1,6 @@
 @prefix t00656: <https://noordergraf.rug.nl/tomb/t00656#> .
 
-tomb:t00656 a t:tombstone.n.01 ;
+tomb:t00656 a :Tomb ;
   :image t00656:im1 ;
   :site site:fr8917AVleeuwarden ;
   :ent t00656:g1 ,
@@ -9,43 +9,43 @@ tomb:t00656 a t:tombstone.n.01 ;
        t00656:p3 ;
   :lan "NLD" .
 
-t00656:g1 a t:group.n.01 ;
+t00656:g1 a :Group.n.01 ;
   :mem t00656:p1 ,
        t00656:p2 .
 
-t00656:p1 a t:male.n.02 ;
+t00656:p1 a :Male ;
   :dob "1854-05-07" ;
   :dod "1892-07-12" ;
   :nam "JAN ARENDS" ;
   :rol t00656:r1 .
 
-t00656:p2 a t:female.n.02 ;
+t00656:p2 a :Female ;
   :dob "1851-11-12" ;
   :dod "1929-09-14" ;
   :nam "TRIJNTJE BOELENS" .
 
-t00656:p3 a t:male.n.02 ;
+t00656:p3 a :Male ;
   :dob "1892-01-11" ;
   :dod "1903-04-21" ;
   :nam "JAN" ;
   :rol t00656:r2 .
 
-t00656:r1 a t:spouse.n.01 ;
+t00656:r1 a :Spouse.n.01 ;
   :tgt t00656:p2 .
 
-t00656:r2 a t:son.n.01 ;
+t00656:r2 a :Son.n.01 ;
   :tgt t00656:g1 .
 
-t00656:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00656:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00656.jpg" ;
-  dcterms:date "2019-11-16T14:02:03"^^xsd:dateTime ;
+  dc:date "2019-11-16T14:02:03"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2101 ;

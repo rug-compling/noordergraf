@@ -1,56 +1,56 @@
 @prefix t00021: <https://noordergraf.rug.nl/tomb/t00021#> .
 
-tomb:t00021 a t:tombstone.n.01 ;
+tomb:t00021 a :Tomb ;
   :image t00021:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00021:g1 ,
        t00021:p1 ;
   :sym t00021:s1 .
 
-t00021:a1 a t:broken.a.01 .
+t00021:a1 a :Broken.a.01 .
 
-t00021:c1 a t:village.n.02 ;
+t00021:c1 a :Village.n.02 ;
   :place place:Onnen2749588 ;
   :name "ONNEN" .
 
-t00021:c2 a t:town.n.01 ;
+t00021:c2 a :Town.n.01 ;
   :place place:Haren2754841 ;
   :name "HAREN" .
 
-t00021:g1 a t:personnel.n.01 ;
+t00021:g1 a :Personnel.n.01 ;
   :loc t00021:c1 ,
        t00021:c2 .
 
-t00021:o1 a t:engineer.n.02 ;
+t00021:o1 a :Engineer.n.02 ;
   :hco "98320" ;
   :org t00021:o2 .
 
-t00021:o2 a t:company.n.01 ;
+t00021:o2 a :Company.n.01 ;
   :nam "NEDERLANDSE SPOORWEGEN" .
 
-t00021:p1 a t:male.n.02 ;
+t00021:p1 a :Male ;
   :dob "1869-12-12" ;
   :dod "1932-03-12" ;
   :nam "G. POSTMA" ;
   :occ t00021:o1 ;
   :rol t00021:r1 .
 
-t00021:r1 a t:friend.n.01 ;
+t00021:r1 a :Friend.n.01 ;
   :tgt t00021:g1 .
 
-t00021:s1 a t:frond.n.01 ;
+t00021:s1 a :Frond.n.01 ;
   :att t00021:a1 .
 
-t00021:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00021:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00021.jpg" ;
-  dcterms:date "2019-09-25T16:27:58"^^xsd:dateTime ;
+  dc:date "2019-09-25T16:27:58"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1909 ;

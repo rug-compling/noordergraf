@@ -1,6 +1,6 @@
 @prefix t00946: <https://noordergraf.rug.nl/tomb/t00946#> .
 
-tomb:t00946 a t:tombstone.n.01 ;
+tomb:t00946 a :Tomb ;
   :image t00946:im1 ;
   :site site:gr9696XGoudeschans ;
   :ent t00946:p1 ,
@@ -13,40 +13,40 @@ tomb:t00946 a t:tombstone.n.01 ;
        t00946:s4 ,
        t00946:s5 .
 
-t00946:a1 a t:weeping.a.02 .
+t00946:a1 a :Weeping.a.02 .
 
-t00946:p1 a t:male.n.02 ;
+t00946:p1 a :Male ;
   :dob "1824-07-30" ;
   :dod "1902-01-07" ;
   :nam "FEIKO PIETERS VAN HEUVELEN" .
 
-t00946:p2 a t:female.n.02 ;
+t00946:p2 a :Female ;
   :nam "A. VAN HEUVELEN" .
 
-t00946:p3 a t:female.n.02 ;
+t00946:p3 a :Female ;
   :nam "M.D. HISKES" .
 
-t00946:s1 a t:willow.n.01 ;
+t00946:s1 a :Willow.n.01 ;
   :att t00946:a1 .
 
-t00946:s2 a t:deer.n.01 .
+t00946:s2 a :Deer.n.01 .
 
-t00946:s3 a t:oak.n.02 .
+t00946:s3 a :Oak.n.02 .
 
-t00946:s4 a t:frond.n.01 .
+t00946:s4 a :Frond.n.01 .
 
-t00946:s5 a t:ribbon.n.01 .
+t00946:s5 a :Ribbon.n.01 .
 
-t00946:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00946:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00946.jpg" ;
-  dcterms:date "2020-03-21T13:19:08"^^xsd:dateTime ;
+  dc:date "2020-03-21T13:19:08"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1383 ;

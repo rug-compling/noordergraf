@@ -1,33 +1,33 @@
 @prefix t00264: <https://noordergraf.rug.nl/tomb/t00264#> .
 
-tomb:t00264 a t:tombstone.n.01 ;
+tomb:t00264 a :Tomb ;
   :image t00264:im1 ;
   :site site:gr9723EWgroningen ;
   :ent t00264:p1 ,
        t00264:p2 .
 
-t00264:p1 a t:male.n.02 ;
+t00264:p1 a :Male ;
   :dob "1936-02-23" ;
   :dod "1968-08-06" ;
   :nam "HANS E. HÖFERS" ;
   :rol t00264:r1 .
 
-t00264:p2 a t:female.n.02 ;
+t00264:p2 a :Female ;
   :nam "A. VEENSTRA" .
 
-t00264:r1 a t:spouse.n.01 ;
+t00264:r1 a :Spouse.n.01 ;
   :tgt t00264:p2 .
 
-t00264:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00264:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00264.jpg" ;
-  dcterms:date "2019-10-14T10:57:30"^^xsd:dateTime ;
+  dc:date "2019-10-14T10:57:30"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2227 ;

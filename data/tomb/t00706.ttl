@@ -1,6 +1,6 @@
 @prefix t00706: <https://noordergraf.rug.nl/tomb/t00706#> .
 
-tomb:t00706 a t:tombstone.n.01 ;
+tomb:t00706 a :Tomb ;
   :image t00706:im1 ;
   :site site:dr7811HEemmen ;
   :ent t00706:p1 ,
@@ -8,13 +8,13 @@ tomb:t00706 a t:tombstone.n.01 ;
   :lan "NLD" ;
   :sym t00706:s1 .
 
-t00706:a1 a t:weeping.a.02 .
+t00706:a1 a :Weeping.a.02 .
 
-t00706:c1 a t:village.n.02 ;
+t00706:c1 a :Village.n.02 ;
   :place place:Zuidbarge2743809 ;
   :name "ZUIDBARGE" .
 
-t00706:p1 a t:male.n.02 ;
+t00706:p1 a :Male ;
   :dob "1858-07-04" ;
   :dod "1935-11-04" ;
   :nam "DIRK MEPPELINK" ;
@@ -22,29 +22,29 @@ t00706:p1 a t:male.n.02 ;
        t00706:r2 ,
        t00706:r3 .
 
-t00706:p2 a t:family.n.04 ;
+t00706:p2 a :Family.n.04 ;
   :loc t00706:c1 ;
   :nam "L. MEPPELINK" .
 
-t00706:r1 a t:brother.n.01 .
+t00706:r1 a :Brother.n.01 .
 
-t00706:r2 a t:brother-in-law.n.01 .
+t00706:r2 a :Brother-in-law.n.01 .
 
-t00706:r3 a t:uncle.n.01 .
+t00706:r3 a :Uncle.n.01 .
 
-t00706:s1 a t:willow.n.01 ;
+t00706:s1 a :Willow.n.01 ;
   :att t00706:a1 .
 
-t00706:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00706:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00706.jpg" ;
-  dcterms:date "2019-12-21T13:48:45"^^xsd:dateTime ;
+  dc:date "2019-12-21T13:48:45"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7817 ;

@@ -1,6 +1,6 @@
 @prefix t00667: <https://noordergraf.rug.nl/tomb/t00667#> .
 
-tomb:t00667 a t:tombstone.n.01 ;
+tomb:t00667 a :Tomb ;
   :image t00667:im1 ;
   :site site:fr8701DWbolsward ;
   :ent t00667:p1 ,
@@ -9,35 +9,35 @@ tomb:t00667 a t:tombstone.n.01 ;
   :sym t00667:s1 ,
        t00667:s2 .
 
-t00667:p1 a t:male.n.02 ;
+t00667:p1 a :Male ;
   :dob "1849-01-10" ;
   :dod "1922-02-01" ;
   :nam "HENDRIK JACOBS BOERSMA" ;
   :rol t00667:r1 .
 
-t00667:p2 a t:female.n.02 ;
+t00667:p2 a :Female ;
   :dob "1849-05-30" ;
   :dod "1928-01-09" ;
   :nam "TRIJNTJE ZELLE" .
 
-t00667:r1 a t:spouse.n.01 ;
+t00667:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00667:p2 .
 
-t00667:s1 a t:frond.n.01 .
+t00667:s1 a :Frond.n.01 .
 
-t00667:s2 a t:ribbon.n.01 .
+t00667:s2 a :Ribbon.n.01 .
 
-t00667:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00667:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00667.jpg" ;
-  dcterms:date "2019-12-14T13:52:53"^^xsd:dateTime ;
+  dc:date "2019-12-14T13:52:53"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0670 ;

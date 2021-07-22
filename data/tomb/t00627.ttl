@@ -1,41 +1,41 @@
 @prefix t00627: <https://noordergraf.rug.nl/tomb/t00627#> .
 
-tomb:t00627 a t:tombstone.n.01 ;
+tomb:t00627 a :Tomb ;
   :image t00627:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00627:p1 ,
        t00627:p2 ;
   :lan "NLD" .
 
-t00627:c1 a t:town.n.01 ;
+t00627:c1 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00627:o1 a t:preacher.n.01 ;
+t00627:o1 a :Preacher.n.01 ;
   :hco "14120" ;
   :loc t00627:c1 .
 
-t00627:p1 a t:male.n.02 ;
+t00627:p1 a :Male ;
   :dob "1864-10-24" ;
   :dod "1899-01-19" ;
   :nam "JAKOBUS BLEEKER" ;
   :occ t00627:o1 .
 
-t00627:p2 a t:female.n.02 ;
+t00627:p2 a :Female ;
   :dob "1873-04-17" ;
   :dod "1959-04-18" ;
   :nam "FROUWINA G. EVERS" .
 
-t00627:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00627:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00627.jpg" ;
-  dcterms:date "2019-11-23T09:59:01"^^xsd:dateTime ;
+  dc:date "2019-11-23T09:59:01"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1642 ;

@@ -1,16 +1,16 @@
 @prefix t00813: <https://noordergraf.rug.nl/tomb/t00813#> .
 
-tomb:t00813 a t:tombstone.n.01 ;
+tomb:t00813 a :Tomb ;
   :image t00813:im1 ;
   :site site:gr9741ACgroningen ;
   :ent t00813:p1 ,
        t00813:p2 ;
   :lan "NLD" .
 
-t00813:o1 a t:linguist.n.01 ;
+t00813:o1 a :Linguist.n.01 ;
   :hco "19520" .
 
-t00813:p1 a t:male.n.02 ;
+t00813:p1 a :Male ;
   :dob "1863-03-11" ;
   :dod "1942-02-06" ;
   :nam "WOBBE DE VRIES" ;
@@ -18,24 +18,24 @@ t00813:p1 a t:male.n.02 ;
   :pfx "DR" ;
   :rol t00813:r1 .
 
-t00813:p2 a t:female.n.02 ;
+t00813:p2 a :Female ;
   :dob "1867-04-22" ;
   :dod "1945-04-12" ;
   :nam "FROUWKTJE KORNELIA OPTEN" .
 
-t00813:r1 a t:spouse.n.01 ;
+t00813:r1 a :Spouse.n.01 ;
   :tgt t00813:p2 .
 
-t00813:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00813:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00813.jpg" ;
-  dcterms:date "2020-02-01T12:23:29"^^xsd:dateTime ;
+  dc:date "2020-02-01T12:23:29"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2301 ;

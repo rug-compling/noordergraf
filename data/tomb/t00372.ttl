@@ -1,6 +1,6 @@
 @prefix t00372: <https://noordergraf.rug.nl/tomb/t00372#> .
 
-tomb:t00372 a t:tombstone.n.01 ;
+tomb:t00372 a :Tomb ;
   :image t00372:im1 ;
   :site site:dr9481CGvries ;
   :ent t00372:p1 ,
@@ -8,15 +8,15 @@ tomb:t00372 a t:tombstone.n.01 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :sym t00372:s1 .
 
-t00372:c1 a t:village.n.02 ;
+t00372:c1 a :Village.n.02 ;
   :place place:Winde2744363 ;
   :name "WINDE" .
 
-t00372:c2 a t:village.n.02 ;
+t00372:c2 a :Village.n.02 ;
   :place place:Peize2748673 ;
   :name "PEIZE" .
 
-t00372:p1 a t:male.n.02 ;
+t00372:p1 a :Male ;
   :dob "1894-11-25" ;
   :dod "1962-05-16" ;
   :nam "THIJS WILKENS" ;
@@ -25,7 +25,7 @@ t00372:p1 a t:male.n.02 ;
   :rol t00372:r1 ,
        t00372:r2 .
 
-t00372:p2 a t:female.n.02 ;
+t00372:p2 a :Female ;
   :dob "1897-03-05" ;
   :dod "1964-09-16" ;
   :nam "ALIDA OTTENS" ;
@@ -33,26 +33,26 @@ t00372:p2 a t:female.n.02 ;
   :pod t00372:c1 ;
   :rol t00372:r3 .
 
-t00372:r1 a t:spouse.n.01 ;
+t00372:r1 a :Spouse.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00372:p2 .
 
-t00372:r2 a t:parent.n.01 .
+t00372:r2 a :Parent.n.01 .
 
-t00372:r3 a t:parent.n.01 .
+t00372:r3 a :Parent.n.01 .
 
-t00372:s1 a t:frond.n.01 .
+t00372:s1 a :Frond.n.01 .
 
-t00372:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00372:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00372.jpg" ;
-  dcterms:date "2019-10-25T17:12:57"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:12:57"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0792 ;

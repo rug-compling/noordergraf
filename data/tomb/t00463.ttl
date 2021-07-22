@@ -1,28 +1,28 @@
 @prefix t00463: <https://noordergraf.rug.nl/tomb/t00463#> .
 
-tomb:t00463 a t:tombstone.n.01 ;
+tomb:t00463 a :Tomb ;
   :image t00463:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00463:p1 ;
   :sym t00463:s1 .
 
-t00463:p1 a t:male.n.02 ;
+t00463:p1 a :Male ;
   :dob "1948-03-18" ;
   :dod "1992-09-21" ;
   :nam "JAN AREND COPINI" .
 
-t00463:s1 a t:eagle.n.01 .
+t00463:s1 a :Eagle.n.01 .
 
-t00463:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00463:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00463.jpg" ;
-  dcterms:date "2019-11-09T14:53:18"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:53:18"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2068 ;

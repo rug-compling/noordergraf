@@ -1,6 +1,6 @@
 @prefix t00949: <https://noordergraf.rug.nl/tomb/t00949#> .
 
-tomb:t00949 a t:tombstone.n.01 ;
+tomb:t00949 a :Tomb ;
   :image t00949:im1 ;
   :site site:gr9696XGoudeschans ;
   :ent t00949:p1 ,
@@ -9,33 +9,33 @@ tomb:t00949 a t:tombstone.n.01 ;
        "TER \\ EUWGER \\ GEDAGTENISSE \\ VAN DE DEUGTRYKE \\ HEER"@nld ;
   :sym t00949:s1 .
 
-t00949:p1 a t:male.n.02 ;
+t00949:p1 a :Male ;
   :dob "1674-03-09" ;
   :dod "1730-08-16" ;
   :nam "GERHARD VAN BERN" ;
   :pfx "HEER" .
 
-t00949:p2 a t:female.n.02 ;
+t00949:p2 a :Female ;
   :dob "1679-09-17" ;
   :dod "1747-03-15" ;
   :nam "ADRIANA MARIA HINSBEEK" ;
   :rol t00949:r1 .
 
-t00949:r1 a t:housewife.n.01 ;
+t00949:r1 a :Housewife.n.01 ;
   :tgt t00949:p1 .
 
-t00949:s1 a t:blazon.n.01 .
+t00949:s1 a :Blazon.n.01 .
 
-t00949:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00949:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00949.jpg" ;
-  dcterms:date "2020-03-21T13:19:36"^^xsd:dateTime ;
+  dc:date "2020-03-21T13:19:36"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1383 ;

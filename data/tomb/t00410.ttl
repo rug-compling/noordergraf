@@ -1,21 +1,21 @@
 @prefix t00410: <https://noordergraf.rug.nl/tomb/t00410#> .
 
-tomb:t00410 a t:tombstone.n.01 ;
+tomb:t00410 a :Tomb ;
   :image t00410:im1 ;
   :site site:dr9481CGvries ;
   :ent t00410:p1 ,
        t00410:p2 ;
   :quo "RUST ZACHT LIEVE PLEEGOUDERS" .
 
-t00410:c1 a t:village.n.02 ;
+t00410:c1 a :Village.n.02 ;
   :place place:Anloo2759746 ;
   :name "ANLOO" .
 
-t00410:c2 a t:town.n.01 ;
+t00410:c2 a :Town.n.01 ;
   :place place:Vries2745189 ;
   :name "VRIES" .
 
-t00410:p1 a t:male.n.02 ;
+t00410:p1 a :Male ;
   :dob "1861-05-16" ;
   :dod "1936-08-24" ;
   :nam "ALBERT VAN REIN" ;
@@ -23,7 +23,7 @@ t00410:p1 a t:male.n.02 ;
   :pod t00410:c2 ;
   :rol t00410:r1 .
 
-t00410:p2 a t:female.n.02 ;
+t00410:p2 a :Female ;
   :dob "1854-03-12" ;
   :dod "1929-03-26" ;
   :nam "ANNECHIEN SLAGTER" ;
@@ -32,25 +32,25 @@ t00410:p2 a t:female.n.02 ;
   :rol t00410:r2 ,
        t00410:r3 .
 
-t00410:r1 a t:foster-parent.n.01 ;
+t00410:r1 a :Foster-parent.n.01 ;
   :tgt t00410:p3 .
 
-t00410:r2 a t:spouse.n.01 ;
+t00410:r2 a :Spouse.n.01 ;
   :tgt t00410:p1 .
 
-t00410:r3 a t:foster-parent.n.01 ;
+t00410:r3 a :Foster-parent.n.01 ;
   :tgt t00410:p3 .
 
-t00410:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00410:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00410.jpg" ;
-  dcterms:date "2019-10-25T17:21:46"^^xsd:dateTime ;
+  dc:date "2019-10-25T17:21:46"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.0797 ;

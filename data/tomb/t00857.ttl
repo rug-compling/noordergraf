@@ -1,6 +1,6 @@
 @prefix t00857: <https://noordergraf.rug.nl/tomb/t00857#> .
 
-tomb:t00857 a t:tombstone.n.01 ;
+tomb:t00857 a :Tomb ;
   :image t00857:im1 ;
   :site site:dr7841CDsleen ;
   :ent t00857:p1 ,
@@ -8,13 +8,13 @@ tomb:t00857 a t:tombstone.n.01 ;
   :quo "RUST IN VREDE."@nld ;
   :sym t00857:s1 .
 
-t00857:a1 a t:weeping.a.02 .
+t00857:a1 a :Weeping.a.02 .
 
-t00857:c1 a t:village.n.02 ;
+t00857:c1 a :Village.n.02 ;
   :place place:NoordSleen2749830 ;
   :name "NOORD-SLEEN" .
 
-t00857:p1 a t:person.n.01 ;
+t00857:p1 a :Person ;
   :dob "1845-03-20" ;
   :dod "1908-10-05" ;
   :nam "K. HADDERS" ;
@@ -22,7 +22,7 @@ t00857:p1 a t:person.n.01 ;
   :rol t00857:r1 ,
        t00857:r2 .
 
-t00857:p2 a t:person.n.01 ;
+t00857:p2 a :Person ;
   :dob "1844-03-02" ;
   :dod "1908-10-08" ;
   :nam "G. ZWIERS" ;
@@ -30,33 +30,33 @@ t00857:p2 a t:person.n.01 ;
   :rol t00857:r3 ,
        t00857:r4 .
 
-t00857:r1 a t:parent.n.01 ;
+t00857:r1 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00857:p3 .
 
-t00857:r2 a t:grandparent.n.01 ;
+t00857:r2 a :Grandparent.n.01 ;
   :tgt t00857:p3 .
 
-t00857:r3 a t:parent.n.01 ;
+t00857:r3 a :Parent.n.01 ;
   :att "LIEVE" ;
   :tgt t00857:p3 .
 
-t00857:r4 a t:grandparent.n.01 ;
+t00857:r4 a :Grandparent.n.01 ;
   :tgt t00857:p3 .
 
-t00857:s1 a t:willow.n.01 ;
+t00857:s1 a :Willow.n.01 ;
   :att t00857:a1 .
 
-t00857:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00857:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00857.jpg" ;
-  dcterms:date "2020-02-15T15:37:10"^^xsd:dateTime ;
+  dc:date "2020-02-15T15:37:10"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 52.7764 ;

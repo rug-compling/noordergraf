@@ -1,6 +1,6 @@
 @prefix t00162: <https://noordergraf.rug.nl/tomb/t00162#> .
 
-tomb:t00162 a t:tombstone.n.01 ;
+tomb:t00162 a :Tomb ;
   :image t00162:im1 ;
   :site site:gr9725ACgroningen ;
   :ent t00162:p1 ,
@@ -8,43 +8,43 @@ tomb:t00162 a t:tombstone.n.01 ;
        t00162:p3 ;
   :sym t00162:s1 .
 
-t00162:p1 a t:male.n.02 ;
+t00162:p1 a :Male ;
   :dob "1891-04-06" ;
   :dod "1929-10-19" ;
   :nam "JOHANNES JAGER" .
 
-t00162:p2 a t:male.n.02 ;
+t00162:p2 a :Male ;
   :dob "1882-02-27" ;
   :dod "1950-05-18" ;
   :nam "JAN JAGER" ;
   :rol t00162:r1 .
 
-t00162:p3 a t:female.n.02 ;
+t00162:p3 a :Female ;
   :dob "1878-12-13" ;
   :dod "1951-02-20" ;
   :nam "ANTJE BULTJE" .
 
-t00162:r1 a t:husband.n.01 ;
+t00162:r1 a :Husband.n.01 ;
   :tgt t00162:p3 .
 
-t00162:s1 a t:composite.n.01 ;
+t00162:s1 a :Composite.n.01 ;
   :prt t00162:s2 ,
        t00162:s3 .
 
-t00162:s2 a t:frond.n.01 .
+t00162:s2 a :Frond.n.01 .
 
-t00162:s3 a t:ribbon.n.01 .
+t00162:s3 a :Ribbon.n.01 .
 
-t00162:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00162:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00162.jpg" ;
-  dcterms:date "2019-10-04T10:59:21"^^xsd:dateTime ;
+  dc:date "2019-10-04T10:59:21"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2058 ;

@@ -1,6 +1,6 @@
 @prefix t00549: <https://noordergraf.rug.nl/tomb/t00549#> .
 
-tomb:t00549 a t:tombstone.n.01 ;
+tomb:t00549 a :Tomb ;
   :image t00549:im1 ;
   :site site:gr9641ANveendam ;
   :ent t00549:p1 ,
@@ -9,40 +9,40 @@ tomb:t00549 a t:tombstone.n.01 ;
   :quo "HOE RAS MOEST ZIJ, DIE HIER IN \\ 'T GRAF BEGRAVEN LIGT, HAAR \\ MOEDER VOLGEN, DE ZEIS DES \\ DOODS MAAIT TAL TER NEDER, \\ 'T ZIJ JONG OF OUD, 'T ZIJ ZWAK OF \\ TEEDER; ELK WORDT HET LEVEN \\ EENS ONTZEID, IN'T BLOEIEN VAN \\ DEN LEVENSTIJD! MEN ZIET AAN \\ 'T LOT VAN DEZE HEIDEN HOE \\ HAAST MEN KAN UIT \\ 'T LEVEN SCHEIDEN."@nld ;
   :sym t00549:s1 .
 
-t00549:p1 a t:female.n.02 ;
+t00549:p1 a :Female ;
   :dob "1860-04-05" ;
   :dod "1886-09-06" ;
   :nam "MARGINA GEERTRUIDA WIJNDELTS VENEMA" ;
   :rol t00549:r1 ,
        t00549:r2 .
 
-t00549:p2 a t:male.n.02 ;
+t00549:p2 a :Male ;
   :nam "WIJNDELT OBBES VENEMA" .
 
-t00549:p3 a t:female.n.02 ;
+t00549:p3 a :Female ;
   :att "WIJLEN" ;
   :nam "HARMANNA MAGARETHA ABRAHAMS VENEMA-MULDER" .
 
-t00549:r1 a t:daughter.n.01 ;
+t00549:r1 a :Daughter.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00549:p2 .
 
-t00549:r2 a t:daughter.n.01 ;
+t00549:r2 a :Daughter.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00549:p3 .
 
-t00549:s1 a t:entity.n.01 .
+t00549:s1 a :Entity.n.01 .
 
-t00549:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00549:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00549.jpg" ;
-  dcterms:date "2019-11-24T14:06:12"^^xsd:dateTime ;
+  dc:date "2019-11-24T14:06:12"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1046 ;

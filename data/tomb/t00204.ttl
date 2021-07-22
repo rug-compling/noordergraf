@@ -1,22 +1,22 @@
 @prefix t00204: <https://noordergraf.rug.nl/tomb/t00204#> .
 
-tomb:t00204 a t:tombstone.n.01 ;
+tomb:t00204 a :Tomb ;
   :image t00204:im1 ;
   :site site:gr9722SNgroningen ;
   :ent t00204:p1 .
 
-t00204:c1 a t:city.n.01 ;
+t00204:c1 a :City.n.01 ;
   :place place:Amsterdam2759794 ;
   :name "AMSTERDAM" .
 
-t00204:c2 a t:city.n.01 ;
+t00204:c2 a :City.n.01 ;
   :place place:Groningen2755251 ;
   :name "GRONINGEN" .
 
-t00204:o1 a t:pharmacist.n.01 ;
+t00204:o1 a :Pharmacist.n.01 ;
   :hco "06710" .
 
-t00204:p1 a t:female.n.02 ;
+t00204:p1 a :Female ;
   :dob "1897-01-11" ;
   :dod "1934-02-20" ;
   :nam "MARIA JOHANNA HENDRIKS" ;
@@ -24,16 +24,16 @@ t00204:p1 a t:female.n.02 ;
   :pob t00204:c1 ;
   :pod t00204:c2 .
 
-t00204:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00204:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00204.jpg" ;
-  dcterms:date "2019-10-05T09:53:08"^^xsd:dateTime ;
+  dc:date "2019-10-05T09:53:08"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1861 ;

@@ -1,6 +1,6 @@
 @prefix t00921: <https://noordergraf.rug.nl/tomb/t00921#> .
 
-tomb:t00921 a t:tombstone.n.01 ;
+tomb:t00921 a :Tomb ;
   :image t00921:im1 ;
   :site site:gr9351RLtolbert ;
   :ent t00921:g1 ,
@@ -11,15 +11,15 @@ tomb:t00921 a t:tombstone.n.01 ;
   :sym t00921:s1 ,
        t00921:s2 .
 
-t00921:c1 a t:village.n.02 ;
+t00921:c1 a :Village.n.02 ;
   :place place:Tolbert2746234 ;
   :name "TOLBERT" .
 
-t00921:g1 a t:group.n.01 ;
+t00921:g1 a :Group.n.01 ;
   :mem t00921:p2 ,
        t00921:p3 .
 
-t00921:p1 a t:male.n.02 ;
+t00921:p1 a :Male ;
   :dob "1890-02-06" ;
   :dod "1897-04-19" ;
   :nam "MARGARETHA" ;
@@ -28,31 +28,31 @@ t00921:p1 a t:male.n.02 ;
   :rol t00921:r1 ,
        t00921:r2 .
 
-t00921:p2 a t:male.n.02 ;
+t00921:p2 a :Male ;
   :nam "ROELF WIERENGA" .
 
-t00921:p3 a t:female.n.02 ;
+t00921:p3 a :Female ;
   :nam "ANKE ALBERTS" .
 
-t00921:r1 a t:twin.n.01 .
+t00921:r1 a :Twin.n.01 .
 
-t00921:r2 a t:daughter.n.01 ;
+t00921:r2 a :Daughter.n.01 ;
   :tgt t00921:g1 .
 
-t00921:s1 a t:oak.n.01 .
+t00921:s1 a :Oak.n.01 .
 
-t00921:s2 a t:frond.n.01 .
+t00921:s2 a :Frond.n.01 .
 
-t00921:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00921:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00921.jpg" ;
-  dcterms:date "2020-03-07T14:13:28"^^xsd:dateTime ;
+  dc:date "2020-03-07T14:13:28"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1716 ;

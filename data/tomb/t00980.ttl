@@ -1,27 +1,27 @@
 @prefix t00980: <https://noordergraf.rug.nl/tomb/t00980#> .
 
-tomb:t00980 a t:tombstone.n.01 ;
+tomb:t00980 a :Tomb ;
   :image t00980:im1 ;
   :site site:gr9479TNnoordlaren ;
   :ent t00980:p1 ,
        t00980:p2 ;
   :quo "DIE IN HUN LEVEN ELKANDER HEBBEN LIEF GEHAD, \\ ZIJN OOK NA HAAR DOOD NIET GESCHEIDEN"@nld .
 
-t00980:c1 a t:village.n.02 ;
+t00980:c1 a :Village.n.02 ;
   :place place:Noordlaren2749857 ;
   :name "NOORDLAREN" .
 
-t00980:c2 a t:less.r.01 ;
+t00980:c2 a :Less.r.01 ;
   :op1 t00980:m1 ;
   :op2 t00980:m2 .
 
-t00980:m1 a t:measure.n.02 .
+t00980:m1 a :Measure.n.02 .
 
-t00980:m2 a t:measure.n.02 ;
+t00980:m2 a :Measure.n.02 ;
   :mem t00980:u1 ;
   :qua 62 .
 
-t00980:p1 a t:male.n.02 ;
+t00980:p1 a :Male ;
   :age t00980:m1 ;
   :dob "1820-02-13" ;
   :dod "1882-02-05" ;
@@ -29,24 +29,24 @@ t00980:p1 a t:male.n.02 ;
   :pob t00980:c1 ;
   :rol t00980:r1 .
 
-t00980:p2 a t:female.n.02 ;
+t00980:p2 a :Female ;
   :nam "JANTIEN HAMMING" .
 
-t00980:r1 a t:spouse.n.01 ;
+t00980:r1 a :Spouse.n.01 ;
   :tgt t00980:p2 .
 
-t00980:u1 a t:year.n.01 .
+t00980:u1 a :Year.n.01 .
 
-t00980:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00980:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00980.jpg" ;
-  dcterms:date "2020-03-25T09:25:01"^^xsd:dateTime ;
+  dc:date "2020-03-25T09:25:01"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1204 ;

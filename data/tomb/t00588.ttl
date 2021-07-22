@@ -1,21 +1,21 @@
 @prefix t00588: <https://noordergraf.rug.nl/tomb/t00588#> .
 
-tomb:t00588 a t:tombstone.n.01 ;
+tomb:t00588 a :Tomb ;
   :image t00588:im1 ;
   :site site:gr9951TNwinsum ;
   :ent t00588:p1 ;
   :sym t00588:s1 ,
        t00588:s2 .
 
-t00588:c1 a t:village.n.02 ;
+t00588:c1 a :Village.n.02 ;
   :place place:Winsum2744337 ;
   :name "WINSUM" .
 
-t00588:c2 a t:city.n.01 ;
+t00588:c2 a :City.n.01 ;
   :place place:sHertogenbosch2747351 ;
   :name "'S-HERTOGENBOSCH" .
 
-t00588:p1 a t:male.n.02 ;
+t00588:p1 a :Male ;
   :dob "1924-01-16" ;
   :dod "2010-10-30" ;
   :nam "BERENDINUS JAN BRUINS" ;
@@ -23,20 +23,20 @@ t00588:p1 a t:male.n.02 ;
   :pod t00588:c2 ;
   :sfx "B.ZOON" .
 
-t00588:s1 a t:square.n.08 .
+t00588:s1 a :Square.n.08 .
 
-t00588:s2 a t:compass.n.04 .
+t00588:s2 a :Compass.n.04 .
 
-t00588:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00588:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00588.jpg" ;
-  dcterms:date "2019-11-30T14:31:57"^^xsd:dateTime ;
+  dc:date "2019-11-30T14:31:57"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.3277 ;

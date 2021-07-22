@@ -1,6 +1,6 @@
 @prefix t00629: <https://noordergraf.rug.nl/tomb/t00629#> .
 
-tomb:t00629 a t:tombstone.n.01 ;
+tomb:t00629 a :Tomb ;
   :image t00629:im1 ;
   :site site:gr9601KAhoogezand ;
   :ent t00629:p1 ,
@@ -12,45 +12,45 @@ tomb:t00629 a t:tombstone.n.01 ;
        t00629:s4 ,
        t00629:s5 .
 
-t00629:c1 a t:town.n.01 ;
+t00629:c1 a :Town.n.01 ;
   :place place:Hoogezand2753706 ;
   :name "HOOGEZAND" .
 
-t00629:p1 a t:male.n.02 ;
+t00629:p1 a :Male ;
   :dob "1856-07-31" ;
   :dod "1929-07-19" ;
   :nam "HINDERIEKUS WILHELM HENSEL" ;
   :pob t00629:c1 ;
   :rol t00629:r1 .
 
-t00629:p2 a t:person.n.01 ;
+t00629:p2 a :Person ;
   :dob "1862-02-20" ;
   :dod "1934-02-20" ;
   :nam "HINDERKIEN BOS" .
 
-t00629:r1 a t:spouse.n.01 ;
+t00629:r1 a :Spouse.n.01 ;
   :tgt t00629:p2 .
 
-t00629:s1 a t:cross.n.03 .
+t00629:s1 a :Cross.n.03 .
 
-t00629:s2 a t:anchor.n.01 .
+t00629:s2 a :Anchor.n.01 .
 
-t00629:s3 a t:heart.n.07 .
+t00629:s3 a :Heart.n.07 .
 
-t00629:s4 a t:oak.n.02 .
+t00629:s4 a :Oak.n.02 .
 
-t00629:s5 a t:frond.n.01 .
+t00629:s5 a :Frond.n.01 .
 
-t00629:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00629:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00629.jpg" ;
-  dcterms:date "2019-11-23T09:57:35"^^xsd:dateTime ;
+  dc:date "2019-11-23T09:57:35"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.1640 ;

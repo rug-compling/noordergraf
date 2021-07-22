@@ -1,6 +1,6 @@
 @prefix t00506: <https://noordergraf.rug.nl/tomb/t00506#> .
 
-tomb:t00506 a t:tombstone.n.01 ;
+tomb:t00506 a :Tomb ;
   :image t00506:im1 ;
   :site site:fr8915CPleeuwarden ;
   :ent t00506:p1 ,
@@ -8,15 +8,15 @@ tomb:t00506 a t:tombstone.n.01 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :sym t00506:s1 .
 
-t00506:c1 a t:city.n.01 ;
+t00506:c1 a :City.n.01 ;
   :place place:Leeuwarden2751792 ;
   :name "LEEUWARDEN" .
 
-t00506:c2 a t:village.n.02 ;
+t00506:c2 a :Village.n.02 ;
   :place place:sGravenmoer2747371 ;
   :name "'S GRAVENMOER" .
 
-t00506:p1 a t:male.n.02 ;
+t00506:p1 a :Male ;
   :dob "1891-03-14" ;
   :dod "1916-11-09" ;
   :nam "JOHANNES DIJKHOFF" ;
@@ -25,26 +25,26 @@ t00506:p1 a t:male.n.02 ;
   :quo "NOODLOTTIG OM HET LEVEN GEKOMEN BIJ EEN MILITAIRE OEFENING" ;
   :rol t00506:r1 .
 
-t00506:p2 a t:female.n.02 ;
+t00506:p2 a :Female ;
   :dob "1888-10-05" ;
   :dod "1962-10-18" ;
   :nam "SARA KINDERMANS" .
 
-t00506:r1 a t:spouse.n.01 ;
+t00506:r1 a :Spouse.n.01 ;
   :tgt t00506:p2 .
 
-t00506:s1 a t:cross.n.03 .
+t00506:s1 a :Cross.n.03 .
 
-t00506:im1 a t:photo.n.01 ;
-  # dcterms:creator "J. Doe" ;
-  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+t00506:im1 a :Photo ;
+  # dc:creator "J. Doe" ;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
   :file "t00506.jpg" ;
-  dcterms:date "2019-11-09T14:38:25"^^xsd:dateTime ;
+  dc:date "2019-11-09T14:38:25"^^xsd:dateTime ;
   :geo [
     a geo:Point ;
     geo:lat 53.2074 ;
