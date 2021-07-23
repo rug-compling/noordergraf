@@ -13,19 +13,19 @@ t00133:m1 a :Measure.n.02 ;
   :qua 15 .
 
 t00133:p1 a :Female ;
-  :dob "1793-05-24" ;
-  :dod "1828-10-21" ;
+  :dob "1793-05-24"^^xsd:date ;
+  :dod "1828-10-21"^^xsd:date ;
   :nam "M.C.J. EINTHOVEN-BAART DE LA FAILLE" .
 
 t00133:p2 a :Male ;
-  :dob "1784-XX-XX" ;
-  :dod "1850-06-09" ;
+  :dob "1784"^^xsd:gYear ;
+  :dod "1850-06-09"^^xsd:date ;
   :nam "S.J. EINTHOVEN" ;
   :rol t00133:r2 .
 
 t00133:p3 a :Male ;
   :age t00133:m1 ;
-  :dod "1851-08-12" ;
+  :dod "1851-08-12"^^xsd:date ;
   :nam "PETRUS EINTHOVEN" .
 
 t00133:r2 a :Husband.n.01 ;

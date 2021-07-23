@@ -1,6 +1,11 @@
 # namen van klassen (rdfs:Class) beginnen met een hoofdletter
 # namen van eigenschappen (rdfs:Property) beginnen met een kleine letter
 
+:Date a rdfs:Class .
+xsd:date       rdfs:subClassOf :Date .
+xsd:gYearMonth rdfs:subClassOf :Date .
+xsd:gYear      rdfs:subClassOf :Date .
+
 :Class a rdfs:Class ;
   rdfs:comment "The top class for noordergraf."@eng ;
   rdfs:comment "De hoogste class voor noordergraf."@nld .
@@ -84,7 +89,14 @@
   rdfs:comment "Date of birth."@eng ;
   rdfs:comment "Geboortedatum."@nld ;
   rdfs:domain :Person ;
-  rdfs:range xsd:date .
+  rdfs:range :Date .
+
+:dod a rdf:Property ;
+  rdfs:label "dod" ;
+  rdfs:comment "Date of death."@eng ;
+  rdfs:comment "Datum van overlijden."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range :Date .
 
 :Male a rdfs:Class ;
   rdfs:subClassOf :Person ;

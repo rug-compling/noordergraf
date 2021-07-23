@@ -24,15 +24,15 @@ t01031:g1 a :Group.n.01 ;
   :rol t01031:r1 .
 
 t01031:p1 a :Male ;
-  :dob "1869-07-31" ;
-  :dod "1952-09-03" ;
+  :dob "1869-07-31"^^xsd:date ;
+  :dod "1952-09-03"^^xsd:date ;
   :nam "ALBERT BOSSCHER" ;
   :pob t01031:c1 ;
   :pod t01031:c2 .
 
 t01031:p2 a :Female ;
-  :dob "1868-12-28" ;
-  :dod "1955-01-13" ;
+  :dob "1868-12-28"^^xsd:date ;
+  :dod "1955-01-13"^^xsd:date ;
   :nam "ANTJE KREMER" ;
   :pob t01031:c1 ;
   :pod t01031:c1 ;
@@ -41,7 +41,7 @@ t01031:p2 a :Female ;
 t01031:r1 a :Parent.n.01 .
 
 t01031:r2 a :Widow.n.01 ;
-  :beg "1853-XX-XX" ;
+  :beg "1853"^^xsd:gYear ;
   :tgt t01031:p2 .
 
 t01031:im1 a :Photo ;

@@ -17,8 +17,8 @@ t00989:c2 a :Town.n.01 ;
   :name "NOORDDIJK" .
 
 t00989:p1 a :Female ;
-  :dob "1833-05-15" ;
-  :dod "1897-11-28" ;
+  :dob "1833-05-15"^^xsd:date ;
+  :dod "1897-11-28"^^xsd:date ;
   :nam "GEEZIEN J. NIEBOER" ;
   :pob t00989:c1 ;
   :pod t00989:c2 ;
@@ -36,7 +36,7 @@ t00989:r1 a :Widow.n.01 ;
   :tgt t00989:p2 .
 
 t00989:r2 a :Widow.n.01 ;
-  :beg "1889-XX-XX" ;
+  :beg "1889"^^xsd:gYear ;
   :tgt t00989:p3 .
 
 t00989:im1 a :Photo ;

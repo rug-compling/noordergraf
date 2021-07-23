@@ -17,8 +17,8 @@ t00534:c2 a :City.n.01 ;
   :name "VEENDAM" .
 
 t00534:p1 a :Female ;
-  :dob "1852-04-29" ;
-  :dod "1936-09-28" ;
+  :dob "1852-04-29"^^xsd:date ;
+  :dod "1936-09-28"^^xsd:date ;
   :nam "KLAASKE GERLOFS" ;
   :pob t00534:c1 ;
   :pod t00534:c2 ;
@@ -28,7 +28,7 @@ t00534:p2 a :Male ;
   :nam "MENZO KUIPER" .
 
 t00534:r1 a :Widow.n.01 ;
-  :beg "1902-XX-XX" ;
+  :beg "1902"^^xsd:gYear ;
   :tgt t00534:p2 .
 
 t00534:s1 a :Composite.n.01 ;

@@ -21,8 +21,8 @@ t00974:c2 a :Village.n.02 ;
   :name "SCHEEMDA" .
 
 t00974:p1 a :Male ;
-  :dob "1829-06-13" ;
-  :dod "1913-03-23" ;
+  :dob "1829-06-13"^^xsd:date ;
+  :dod "1913-03-23"^^xsd:date ;
   :nam "MELLE GEERT VROOM" ;
   :pob t00974:c1 ;
   :pod t00974:c2 ;
@@ -40,7 +40,7 @@ t00974:r1 a :Widower.n.01 ;
   :tgt t00974:p2 .
 
 t00974:r2 a :Widower.n.01 ;
-  :beg "1892-XX-XX" ;
+  :beg "1892"^^xsd:gYear ;
   :tgt t00974:p3 .
 
 t00974:s1 a :Butterfly.n.01 .

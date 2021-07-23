@@ -18,8 +18,8 @@ t00267:c2 a :Hamlet.n.03 ;
   :name "EUVELGUNNE" .
 
 t00267:p1 a :Male ;
-  :dob "1827-08-28" ;
-  :dod "1912-01-14" ;
+  :dob "1827-08-28"^^xsd:date ;
+  :dod "1912-01-14"^^xsd:date ;
   :nam "ALBERT UITHAM" ;
   :pob t00267:c1 ;
   :pod t00267:c2 ;
@@ -29,7 +29,7 @@ t00267:p2 a :Female ;
   :nam "AALTJE WOLDHUIS" .
 
 t00267:r1 a :Widower.n.01 ;
-  :beg "1874-XX-XX" ;
+  :beg "1874"^^xsd:gYear ;
   :tgt t00267:p2 .
 
 t00267:s1 a :Willow.n.01 ;
