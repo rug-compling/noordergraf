@@ -1,41 +1,37 @@
 @prefix t01082: <https://noordergraf.rug.nl/tomb/t01082#> .
 
-tomb:t01082 a :Tomb ;
-  :image t01082:im1 ;
-  :ent t01082:p1 ,
-       t01082:p2 ;
+tomb:t01082
+  a :Tomb ;
+  :ent t01082:p1, t01082:p2 ;
+  :image [
+    dc:date "2020-05-20T19:32:51"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01082.jpg"
+  ] ;
   :lan "NLD" .
 
-t01082:c1 a :Village.n.02 ;
-  :place place:Garmerwolde2755728 ;
-  :name "GARMERWOLDE" .
-
-t01082:c2 a :Town.n.01 ;
-  :place place:Vries2745189 ;
-  :name "VRIES" .
-
-t01082:p1 a :Male ;
+t01082:p1
+  a :Male ;
   :dob "1890-06-06"^^xsd:date ;
   :dod "1965-05-04"^^xsd:date ;
   :nam "PIETER WIERENGA" ;
-  :pob t01082:c1 ;
-  :pod t01082:c2 ;
-  :rol t01082:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "GARMERWOLDE" ;
+    :place place:Garmerwolde2755728
+  ] ;
+  :pod [
+    a :Town.n.01 ;
+    :name "VRIES" ;
+    :place place:Vries2745189
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t01082:p2
+  ] .
 
-t01082:p2 a :Female ;
+t01082:p2
+  a :Female ;
   :nam "JANTJE BRUL" .
-
-t01082:r1 a :Widower.n.01 ;
-  :tgt t01082:p2 .
-
-t01082:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01082.jpg" ;
-  dc:date "2020-05-20T19:32:51"^^xsd:dateTime .
 

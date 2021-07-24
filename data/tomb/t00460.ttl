@@ -1,29 +1,25 @@
 @prefix t00460: <https://noordergraf.rug.nl/tomb/t00460#> .
 
-tomb:t00460 a :Tomb ;
-  :image t00460:im1 ;
-  :site site:fr8915CPleeuwarden ;
-  :ent t00460:p1 .
+tomb:t00460
+  a :Tomb ;
+  :ent t00460:p1 ;
+  :image [
+    dc:date "2019-11-09T15:01:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00460.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2063 ;
+      geo:long 5.7696
+    ] ;
+    :nd "+53.2063+005.7696"^^ll:
+  ] ;
+  :site site:fr8915CPleeuwarden .
 
-t00460:p1 a :Male ;
+t00460:p1
+  a :Male ;
   :dob "1922-02-15"^^xsd:date ;
   :dod "1971-11-18"^^xsd:date ;
   :nam "GEORG VAN DER PLOEG" .
-
-t00460:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00460.jpg" ;
-  dc:date "2019-11-09T15:01:20"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2063 ;
-    geo:long 5.7696
-  ] ;
-  :nd "+53.2063+005.7696"^^ll: .
 

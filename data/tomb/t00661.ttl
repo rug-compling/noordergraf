@@ -1,48 +1,44 @@
 @prefix t00661: <https://noordergraf.rug.nl/tomb/t00661#> .
 
-tomb:t00661 a :Tomb ;
-  :image t00661:im1 ;
-  :site site:fr8701DWbolsward ;
+tomb:t00661
+  a :Tomb ;
   :ent t00661:p1 ;
+  :image [
+    dc:date "2019-12-14T13:58:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00661.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0687 ;
+      geo:long 5.5242
+    ] ;
+    :nd "+53.0687+005.5242"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00661:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00661:c1 a :City.n.01 ;
-  :place place:Bolsward2758682 ;
-  :name "BOLSWARD" .
-
-t00661:c2 a :City.n.01 ;
-  :place place:Deventer2756987 ;
-  :name "DEVENTER" .
-
-t00661:o1 a :Teacher.n.01 ;
-  :att "OUD" ;
-  :hco "13320" .
-
-t00661:p1 a :Female ;
+t00661:p1
+  a :Female ;
   :dob "1880-07-01"^^xsd:date ;
   :dod "1947-10-05"^^xsd:date ;
   :nam "DIEUWLE LAAGLAND" ;
-  :occ t00661:o1 ;
-  :pob t00661:c1 ;
-  :pod t00661:c2 .
-
-t00661:s1 a :Frond.n.01 .
-
-t00661:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00661.jpg" ;
-  dc:date "2019-12-14T13:58:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0687 ;
-    geo:long 5.5242
+  :occ [
+    a :Teacher.n.01 ;
+    :att "OUD" ;
+    :hco "13320"
   ] ;
-  :nd "+53.0687+005.5242"^^ll: .
+  :pob [
+    a :City.n.01 ;
+    :name "BOLSWARD" ;
+    :place place:Bolsward2758682
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "DEVENTER" ;
+    :place place:Deventer2756987
+  ] .
 

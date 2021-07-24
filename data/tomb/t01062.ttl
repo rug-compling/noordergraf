@@ -1,53 +1,48 @@
 @prefix t01062: <https://noordergraf.rug.nl/tomb/t01062#> .
 
-tomb:t01062 a :Tomb ;
-  :image t01062:im1 ;
-  :site site:gr9367PAde_wilp ;
-  :ent t01062:p1 ,
-       t01062:p2 ;
+tomb:t01062
+  a :Tomb ;
+  :ent t01062:p1, t01062:p2 ;
+  :image [
+    dc:date "2020-05-01T15:30:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01062.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1231 ;
+      geo:long 6.2513
+    ] ;
+    :nd "+53.1231+006.2513"^^ll:
+  ] ;
   :quo "SLAAP ZACHT LIEVE MOEDER."@nld ;
-  :sym t01062:s1 ,
-       t01062:s2 .
+  :site site:gr9367PAde_wilp ;
+  :sym [
+    a :Branch.n.02
+  ], [
+    a :Branch.n.02
+  ] .
 
-t01062:c1 a :Village.n.02 ;
-  :place place:DeWilp2756932 ;
-  :name "DE WILP" .
-
-t01062:p1 a :Female ;
+t01062:p1
+  a :Female ;
   :dob "1853-07-17"^^xsd:date ;
   :dod "1935-05-01"^^xsd:date ;
   :nam "WIJKE H. HAARSMA" ;
   :pob t01062:c1 ;
   :pod t01062:c1 ;
-  :rol t01062:r1 ,
-       t01062:r2 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01062:p2
+  ], [
+    a :Mother.n.01
+  ] .
 
-t01062:p2 a :Male ;
+t01062:p2
+  a :Male ;
   :nam "DIRK J. HEIDINGA" .
 
-t01062:r1 a :Widow.n.01 ;
-  :tgt t01062:p2 .
-
-t01062:r2 a :Mother.n.01 .
-
-t01062:s1 a :Branch.n.02 .
-
-t01062:s2 a :Branch.n.02 .
-
-t01062:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01062.jpg" ;
-  dc:date "2020-05-01T15:30:08"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1231 ;
-    geo:long 6.2513
-  ] ;
-  :nd "+53.1231+006.2513"^^ll: .
+t01062:c1
+  a :Village.n.02 ;
+  :name "DE WILP" ;
+  :place place:DeWilp2756932 .
 

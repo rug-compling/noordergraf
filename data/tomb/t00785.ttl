@@ -1,59 +1,57 @@
 @prefix t00785: <https://noordergraf.rug.nl/tomb/t00785#> .
 
-tomb:t00785 a :Tomb ;
-  :image t00785:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00785:p1 ,
-       t00785:p2 ;
+tomb:t00785
+  a :Tomb ;
+  :ent t00785:p1, t00785:p2 ;
+  :image [
+    dc:date "2019-12-21T12:57:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00785.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7820 ;
+      geo:long 6.8976
+    ] ;
+    :nd "+52.7820+006.8976"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :ref t00785:v1 .
+  :ref t00785:v1 ;
+  :site site:dr7811HEemmen .
 
-t00785:b1 a :Matthew.n.02 ;
-  :prt t00785:c3 .
-
-t00785:c1 a :Village.n.02 ;
-  :place place:Westenesch2744776 ;
-  :name "WESTENESCH" .
-
-t00785:c2 a :Town.n.01 ;
-  :place place:Emmen2756136 ;
-  :name "EMMEN" .
-
-t00785:c3 a :Chapter.n.01 ;
-  :ord 5 ;
-  :prt t00785:v1 .
-
-t00785:p1 a :Male ;
+t00785:p1
+  a :Male ;
   :dob "1857-11-05"^^xsd:date ;
   :dod "1943-12-29"^^xsd:date ;
   :nam "JANS KOERS" ;
-  :pob t00785:c1 ;
-  :pod t00785:c2 ;
-  :rol t00785:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "WESTENESCH" ;
+    :place place:Westenesch2744776
+  ] ;
+  :pod [
+    a :Town.n.01 ;
+    :name "EMMEN" ;
+    :place place:Emmen2756136
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00785:p2
+  ] .
 
-t00785:p2 a :Female ;
+t00785:p2
+  a :Female ;
   :nam "GRIETIEN EVERTS" .
 
-t00785:r1 a :Widower.n.01 ;
-  :tgt t00785:p2 .
+[]
+  a :Matthew.n.02 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 5 ;
+    :prt t00785:v1
+  ] .
 
-t00785:v1 a :Verse.n.01 ;
+t00785:v1
+  a :Verse.n.01 ;
   :ord 7 .
-
-t00785:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00785.jpg" ;
-  dc:date "2019-12-21T12:57:36"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7820 ;
-    geo:long 6.8976
-  ] ;
-  :nd "+52.7820+006.8976"^^ll: .
 

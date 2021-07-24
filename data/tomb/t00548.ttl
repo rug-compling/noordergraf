@@ -1,39 +1,35 @@
 @prefix t00548: <https://noordergraf.rug.nl/tomb/t00548#> .
 
-tomb:t00548 a :Tomb ;
-  :image t00548:im1 ;
-  :site site:gr9641ANveendam ;
+tomb:t00548
+  a :Tomb ;
   :ent t00548:p1 ;
-  :lan "NLD" .
+  :image [
+    dc:date "2019-11-24T14:09:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00548.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1043 ;
+      geo:long 6.8755
+    ] ;
+    :nd "+53.1043+006.8755"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9641ANveendam .
 
-t00548:c1 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00548:o1 a :Mayor.n.01 ;
-  :hco "20110" ;
-  :loc t00548:c1 .
-
-t00548:p1 a :Male ;
+t00548:p1
+  a :Male ;
   :dob "1865-09-10"^^xsd:date ;
   :dod "1921-05-10"^^xsd:date ;
   :nam "UBBO WILKENS" ;
-  :occ t00548:o1 .
-
-t00548:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00548.jpg" ;
-  dc:date "2019-11-24T14:09:38"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1043 ;
-    geo:long 6.8755
-  ] ;
-  :nd "+53.1043+006.8755"^^ll: .
+  :occ [
+    a :Mayor.n.01 ;
+    :hco "20110" ;
+    :loc [
+      a :City.n.01 ;
+      :name "VEENDAM" ;
+      :place place:Veendam2745783
+    ]
+  ] .
 

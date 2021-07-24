@@ -1,52 +1,48 @@
 @prefix t00209: <https://noordergraf.rug.nl/tomb/t00209#> .
 
-tomb:t00209 a :Tomb ;
-  :image t00209:im1 ;
+tomb:t00209
+  a :Tomb ;
+  :ent t00209:p1, t00209:p2 ;
+  :image [
+    dc:date "2019-10-08T14:54:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00209.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2224 ;
+      geo:long 6.6367
+    ] ;
+    :nd "+53.2224+006.6367"^^ll:
+  ] ;
   :site site:gr9723EWgroningen ;
-  :ent t00209:p1 ,
-       t00209:p2 ;
-  :sym t00209:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Tree.n.01
+    ], [
+      a :Horse.n.01
+    ]
+  ] .
 
-t00209:c1 a :Hamlet.n.03 ;
-  :place place:Euvelgunne2755982 ;
-  :name "EUVELGUNNE" .
-
-t00209:p1 a :Male ;
+t00209:p1
+  a :Male ;
   :dob "1897-01-11"^^xsd:date ;
   :dod "1893-10-10"^^xsd:date ;
   :nam "PIETER J. BOLHUIS" ;
   :pob t00209:c1 ;
   :pod t00209:c1 ;
-  :rol t00209:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00209:p2
+  ] .
 
-t00209:p2 a :Female ;
+t00209:p2
+  a :Female ;
   :nam "J.T. WOLTERS" .
 
-t00209:r1 a :Spouse.n.01 ;
-  :tgt t00209:p2 .
-
-t00209:s1 a :Composite.n.01 ;
-  :prt t00209:s2 ,
-       t00209:s3 .
-
-t00209:s2 a :Tree.n.01 .
-
-t00209:s3 a :Horse.n.01 .
-
-t00209:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00209.jpg" ;
-  dc:date "2019-10-08T14:54:23"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2224 ;
-    geo:long 6.6367
-  ] ;
-  :nd "+53.2224+006.6367"^^ll: .
+t00209:c1
+  a :Hamlet.n.03 ;
+  :name "EUVELGUNNE" ;
+  :place place:Euvelgunne2755982 .
 

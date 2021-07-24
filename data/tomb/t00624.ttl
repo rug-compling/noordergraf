@@ -1,38 +1,34 @@
 @prefix t00624: <https://noordergraf.rug.nl/tomb/t00624#> .
 
-tomb:t00624 a :Tomb ;
-  :image t00624:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00624:p1 ,
-       t00624:p2 ;
-  :lan "NLD" .
+tomb:t00624
+  a :Tomb ;
+  :ent t00624:p1, t00624:p2 ;
+  :image [
+    dc:date "2019-11-23T10:00:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00624.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1642 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1642+006.7541"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9601KAhoogezand .
 
-t00624:p1 a :Male ;
+t00624:p1
+  a :Male ;
   :dob "1866-02-08"^^xsd:date ;
   :dod "1892-08-15"^^xsd:date ;
   :nam "PIETER KORNELIS BOON" ;
-  :rol t00624:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00624:p2
+  ] .
 
-t00624:p2 a :Female ;
+t00624:p2
+  a :Female ;
   :nam "LOUISE EMMA BUCAILLE" .
-
-t00624:r1 a :Spouse.n.01 ;
-  :tgt t00624:p2 .
-
-t00624:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00624.jpg" ;
-  dc:date "2019-11-23T10:00:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1642 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1642+006.7541"^^ll: .
 

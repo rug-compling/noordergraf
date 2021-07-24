@@ -1,44 +1,38 @@
 @prefix t00517: <https://noordergraf.rug.nl/tomb/t00517#> .
 
-tomb:t00517 a :Tomb ;
-  :image t00517:im1 ;
-  :site site:gr9601KAhoogezand ;
+tomb:t00517
+  a :Tomb ;
   :ent t00517:p1 ;
+  :image [
+    dc:date "2019-11-23T10:20:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00517.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1653 ;
+      geo:long 6.7536
+    ] ;
+    :nd "+53.1653+006.7536"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00517:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Boat.n.01
+  ] .
 
-t00517:p1 a :Male ;
+t00517:p1
+  a :Male ;
   :dob "1936-08-08"^^xsd:date ;
   :dod "1989-11-30"^^xsd:date ;
   :nam "GERRIT OTTO DRENTH" ;
-  :rol t00517:r1 ,
-       t00517:r2 ,
-       t00517:r3 .
-
-t00517:r1 a :Husband.n.01 ;
-  :att "LIEVE" .
-
-t00517:r2 a :Father.n.01 ;
-  :att "ZORGZAME" .
-
-t00517:r3 a :Grandfather.n.01 .
-
-t00517:s1 a :Boat.n.01 .
-
-t00517:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00517.jpg" ;
-  dc:date "2019-11-23T10:20:12"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1653 ;
-    geo:long 6.7536
-  ] ;
-  :nd "+53.1653+006.7536"^^ll: .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE"
+  ], [
+    a :Father.n.01 ;
+    :att "ZORGZAME"
+  ], [
+    a :Grandfather.n.01
+  ] .
 

@@ -1,62 +1,57 @@
 @prefix t00672: <https://noordergraf.rug.nl/tomb/t00672#> .
 
-tomb:t00672 a :Tomb ;
-  :image t00672:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00672:g1 ,
-       t00672:p1 ,
-       t00672:p2 ;
+tomb:t00672
+  a :Tomb ;
+  :ent t00672:p1, t00672:p2, [
+    a :Group.n.01 ;
+    :mem t00672:p1, t00672:p2 ;
+    :rol [
+      a :Parent.n.01 ;
+      :att "LIEVE"
+    ], [
+      a :Grandparent.n.01
+    ]
+  ] ;
+  :image [
+    dc:date "2019-12-14T13:42:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00672.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0680 ;
+      geo:long 5.5221
+    ] ;
+    :nd "+53.0680+005.5221"^^ll:
+  ] ;
   :lan "NLD" ;
   :ref t00672:v1 ;
-  :sym t00672:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00672:b1 a :First_Epistle_of_John.n.01 ;
-  :prt t00672:c1 .
-
-t00672:c1 a :Chapter.n.01 ;
-  :ord 2 ;
-  :prt t00672:v1 .
-
-t00672:g1 a :Group.n.01 ;
-  :mem t00672:p1 ,
-       t00672:p2 ;
-  :rol t00672:r1 ,
-       t00672:r2 .
-
-t00672:p1 a :Female ;
+t00672:p1
+  a :Female ;
   :dob "1887-02-26"^^xsd:date ;
   :dod "1958-12-07"^^xsd:date ;
   :nam "TRIJNTJE W. VISSER" .
 
-t00672:p2 a :Male ;
+t00672:p2
+  a :Male ;
   :dob "1885-10-08"^^xsd:date ;
   :dod "1978-09-05"^^xsd:date ;
   :nam "AUKE SIKMA" .
 
-t00672:r1 a :Parent.n.01 ;
-  :att "LIEVE" .
+[]
+  a :First_Epistle_of_John.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 2 ;
+    :prt t00672:v1
+  ] .
 
-t00672:r2 a :Grandparent.n.01 .
-
-t00672:s1 a :Frond.n.01 .
-
-t00672:v1 a :Verse.n.01 ;
+t00672:v1
+  a :Verse.n.01 ;
   :ord 25 .
-
-t00672:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00672.jpg" ;
-  dc:date "2019-12-14T13:42:18"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0680 ;
-    geo:long 5.5221
-  ] ;
-  :nd "+53.0680+005.5221"^^ll: .
 

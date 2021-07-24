@@ -1,58 +1,52 @@
 @prefix t00896: <https://noordergraf.rug.nl/tomb/t00896#> .
 
-tomb:t00896 a :Tomb ;
-  :image t00896:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00896:p1 ,
-       t00896:p2 ;
+tomb:t00896
+  a :Tomb ;
+  :ent t00896:p1, t00896:p2 ;
+  :image [
+    dc:date "2020-03-07T14:33:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00896.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1723 ;
+      geo:long 6.3614
+    ] ;
+    :nd "+53.1723+006.3614"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00896:s1 ,
-       t00896:s2 ,
-       t00896:s3 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Oak.n.01
+  ], [
+    a :Frond.n.01
+  ] .
 
-t00896:c1 a :Village.n.02 ;
-  :place place:Niezijl2750110 ;
-  :name "NIEZIJL" .
-
-t00896:c2 a :Village.n.02 ;
-  :place place:Leek2751834 ;
-  :name "LEEK" .
-
-t00896:p1 a :Female ;
+t00896:p1
+  a :Female ;
   :dob "1799-03-04"^^xsd:date ;
   :dod "1885-03-22"^^xsd:date ;
   :nam "SARA DOEDES POL" ;
-  :pob t00896:c1 ;
-  :pod t00896:c2 ;
-  :rol t00896:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "NIEZIJL" ;
+    :place place:Niezijl2750110
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "LEEK" ;
+    :place place:Leek2751834
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00896:p2
+  ] .
 
-t00896:p2 a :Male ;
+t00896:p2
+  a :Male ;
   :nam "JOHANNES HENRICUS LEURINGH" ;
   :ttl "WELEDELE HEER" .
-
-t00896:r1 a :Widow.n.01 ;
-  :tgt t00896:p2 .
-
-t00896:s1 a :Butterfly.n.01 .
-
-t00896:s2 a :Oak.n.01 .
-
-t00896:s3 a :Frond.n.01 .
-
-t00896:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00896.jpg" ;
-  dc:date "2020-03-07T14:33:57"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1723 ;
-    geo:long 6.3614
-  ] ;
-  :nd "+53.1723+006.3614"^^ll: .
 

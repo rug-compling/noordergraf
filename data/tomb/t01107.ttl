@@ -1,37 +1,39 @@
 @prefix t01107: <https://noordergraf.rug.nl/tomb/t01107#> .
 
-tomb:t01107 a :Tomb ;
-  :ent t01107:g1 ,
-       t01107:p1 ;
+tomb:t01107
+  a :Tomb ;
+  :ent t01107:p1, t01107:g1 ;
   :ref "GEZANG 44:4"@nld ;
-  :sym t01107:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t01107:g1 a :Group.n.01 ;
-  :mem t01107:p2 ,
-       t01107:p3 .
-
-t01107:p1 a :Female ;
+t01107:p1
+  a :Female ;
   :dob "1910-09-02"^^xsd:date ;
   :dod "1960-06-18"^^xsd:date ;
   :nam "JANSJE BAKKER" ;
-  :rol t01107:r1 ,
-       t01107:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t01107:g1
+  ], [
+    a :Mother.n.01 ;
+    :tgt t01107:g1
+  ] .
 
-t01107:p2 a :Male ;
+t01107:p2
+  a :Male ;
   :nam "G. BARF" .
 
-t01107:p3 a :Person ;
-  :rol t01107:r3 .
+t01107:p3
+  a :Person ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t01107:p1
+  ] .
 
-t01107:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t01107:g1 .
-
-t01107:r2 a :Mother.n.01 ;
-  :tgt t01107:g1 .
-
-t01107:r3 a :Child.n.02 ;
-  :tgt t01107:p1 .
-
-t01107:s1 a :Frond.n.01 .
+t01107:g1
+  a :Group.n.01 ;
+  :mem t01107:p2, t01107:p3 .
 

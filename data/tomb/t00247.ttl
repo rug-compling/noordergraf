@@ -1,43 +1,40 @@
 @prefix t00247: <https://noordergraf.rug.nl/tomb/t00247#> .
 
-tomb:t00247 a :Tomb ;
-  :image t00247:im1 ;
-  :site site:gr9751BBharen ;
-  :ent t00247:p1 ,
-       t00247:p2 .
+tomb:t00247
+  a :Tomb ;
+  :ent t00247:p1, t00247:p2 ;
+  :image [
+    dc:date "2019-10-11T17:21:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00247.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1723 ;
+      geo:long 6.6063
+    ] ;
+    :nd "+53.1723+006.6063"^^ll:
+  ] ;
+  :site site:gr9751BBharen .
 
-t00247:c1 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00247:p1 a :Female ;
+t00247:p1
+  a :Female ;
   :dob "1858-09-09"^^xsd:date ;
   :dod "1933-08-23"^^xsd:date ;
   :nam "HENDRIKJE BAZUIN" ;
   :pob t00247:c1 ;
   :pod t00247:c1 .
 
-t00247:p2 a :Male ;
+t00247:p2
+  a :Male ;
   :dob "1884-10-25"^^xsd:date ;
   :dod "1947-03-25"^^xsd:date ;
   :nam "JAN BERENDS" ;
   :pob t00247:c1 ;
   :pod t00247:c1 .
 
-t00247:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00247.jpg" ;
-  dc:date "2019-10-11T17:21:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1723 ;
-    geo:long 6.6063
-  ] ;
-  :nd "+53.1723+006.6063"^^ll: .
+t00247:c1
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 

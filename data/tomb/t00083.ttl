@@ -1,42 +1,38 @@
 @prefix t00083: <https://noordergraf.rug.nl/tomb/t00083#> .
 
-tomb:t00083 a :Tomb ;
-  :image t00083:im1 ;
+tomb:t00083
+  a :Tomb ;
+  :ent t00083:p1, t00083:p2 ;
+  :image [
+    dc:date "2019-09-25T11:00:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00083.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2035 ;
+      geo:long 6.5731
+    ] ;
+    :nd "+53.2035+006.5731"^^ll:
+  ] ;
   :site site:gr9721AAgroningen ;
-  :ent t00083:p1 ,
-       t00083:p2 ;
-  :sym t00083:s1 .
+  :sym [
+    a :Chrismon.n.01
+  ] .
 
-t00083:p1 a :Male ;
+t00083:p1
+  a :Male ;
   :dob "1891-06-04"^^xsd:date ;
   :dod "1964-05-01"^^xsd:date ;
   :nam "WILHELMUS FRANCISCUS BERNARDUS SCHNEIDERS" ;
-  :rol t00083:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00083:p2
+  ] .
 
-t00083:p2 a :Female ;
+t00083:p2
+  a :Female ;
   :dob "1889-04-20"^^xsd:date ;
   :dod "1976-01-10"^^xsd:date ;
   :nam "GEERTRUIDA VERONICA SCHNEIDERS-BLAAUW" .
-
-t00083:r1 a :Husband.n.01 ;
-  :tgt t00083:p2 .
-
-t00083:s1 a :Chrismon.n.01 .
-
-t00083:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00083.jpg" ;
-  dc:date "2019-09-25T11:00:03"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2035 ;
-    geo:long 6.5731
-  ] ;
-  :nd "+53.2035+006.5731"^^ll: .
 

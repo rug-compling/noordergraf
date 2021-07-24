@@ -1,77 +1,72 @@
 @prefix t00673: <https://noordergraf.rug.nl/tomb/t00673#> .
 
-tomb:t00673 a :Tomb ;
-  :image t00673:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00673:g1 ,
-       t00673:g2 ,
-       t00673:p1 ,
-       t00673:p2 ;
+tomb:t00673
+  a :Tomb ;
+  :ent t00673:p1, t00673:p2, t00673:g1, [
+    a :Group.n.01 ;
+    :rol [
+      a :Child.n.02 ;
+      :att "DANKBARE" ;
+      :tgt t00673:g1
+    ]
+  ] ;
+  :image [
+    dc:date "2019-12-14T13:41:17"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00673.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0681 ;
+      geo:long 5.5220
+    ] ;
+    :nd "+53.0681+005.5220"^^ll:
+  ] ;
   :ref "PREDIKER 12:1:8"@nld ;
-  :sym t00673:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00673:c1 a :City.n.01 ;
-  :place place:Harlingen2754817 ;
-  :name "HARLINGEN" .
-
-t00673:c2 a :City.n.01 ;
-  :place place:Bolsward2758682 ;
-  :name "BOLSWARD" .
-
-t00673:c3 a :Town.n.01 ;
-  :place place:Aalzum2760121 ;
-  :name "AALSUM" .
-
-t00673:g1 a :Group.n.01 ;
-  :mem t00673:p1 ,
-       t00673:p2 ;
-  :rol t00673:r1 .
-
-t00673:g2 a :Group.n.01 ;
-  :rol t00673:r3 .
-
-t00673:p1 a :Male ;
+t00673:p1
+  a :Male ;
   :dob "1896-09-28"^^xsd:date ;
   :dod "1960-02-17"^^xsd:date ;
   :nam "TJERK REITSMA" ;
-  :pob t00673:c1 ;
+  :pob [
+    a :City.n.01 ;
+    :name "HARLINGEN" ;
+    :place place:Harlingen2754817
+  ] ;
   :pod t00673:c2 ;
-  :rol t00673:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00673:p2
+  ] .
 
-t00673:p2 a :Female ;
+t00673:p2
+  a :Female ;
   :dob "1901-03-04"^^xsd:date ;
   :dod "1966-07-20"^^xsd:date ;
   :nam "GRIETJE KRAMER" ;
-  :pob t00673:c3 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "AALSUM" ;
+    :place place:Aalzum2760121
+  ] ;
   :pod t00673:c2 .
 
-t00673:r1 a :Parent.n.01 ;
-  :att "GELIEFDE" .
+t00673:c2
+  a :City.n.01 ;
+  :name "BOLSWARD" ;
+  :place place:Bolsward2758682 .
 
-t00673:r2 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00673:p2 .
-
-t00673:r3 a :Child.n.02 ;
-  :att "DANKBARE" ;
-  :tgt t00673:g1 .
-
-t00673:s1 a :Frond.n.01 .
-
-t00673:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00673.jpg" ;
-  dc:date "2019-12-14T13:41:17"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0681 ;
-    geo:long 5.5220
-  ] ;
-  :nd "+53.0681+005.5220"^^ll: .
+t00673:g1
+  a :Group.n.01 ;
+  :mem t00673:p1, t00673:p2 ;
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE"
+  ] .
 

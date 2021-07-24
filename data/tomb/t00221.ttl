@@ -1,44 +1,40 @@
 @prefix t00221: <https://noordergraf.rug.nl/tomb/t00221#> .
 
-tomb:t00221 a :Tomb ;
-  :image t00221:im1 ;
-  :site site:gr9723EWgroningen ;
+tomb:t00221
+  a :Tomb ;
   :ent t00221:p1 ;
-  :sym t00221:s1 .
+  :image [
+    dc:date "2019-10-08T14:42:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00221.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6367
+    ] ;
+    :nd "+53.2225+006.6367"^^ll:
+  ] ;
+  :site site:gr9723EWgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Butterfly.n.01
+    ], [
+      a :Butterfly.n.01
+    ]
+  ] .
 
-t00221:c1 a :Hamlet.n.03 ;
-  :place place:Euvelgunne2755982 ;
-  :name "EUVELGUNNE" .
-
-t00221:p1 a :Female ;
+t00221:p1
+  a :Female ;
   :dob "1842-09-11"^^xsd:date ;
   :dod "1903-02-08"^^xsd:date ;
   :nam "HENDERKIEN ELLES KONING" ;
   :pob t00221:c1 ;
   :pod t00221:c1 .
 
-t00221:s1 a :Composite.n.01 ;
-  :prt t00221:s2 ,
-       t00221:s3 .
-
-t00221:s2 a :Butterfly.n.01 .
-
-t00221:s3 a :Butterfly.n.01 .
-
-t00221:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00221.jpg" ;
-  dc:date "2019-10-08T14:42:57"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2225 ;
-    geo:long 6.6367
-  ] ;
-  :nd "+53.2225+006.6367"^^ll: .
+t00221:c1
+  a :Hamlet.n.03 ;
+  :name "EUVELGUNNE" ;
+  :place place:Euvelgunne2755982 .
 

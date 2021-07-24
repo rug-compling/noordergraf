@@ -1,42 +1,38 @@
 @prefix t00176: <https://noordergraf.rug.nl/tomb/t00176#> .
 
-tomb:t00176 a :Tomb ;
-  :image t00176:im1 ;
+tomb:t00176
+  a :Tomb ;
+  :ent t00176:p1, t00176:p2 ;
+  :image [
+    dc:date "2019-10-05T10:38:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00176.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1907 ;
+      geo:long 6.5930
+    ] ;
+    :nd "+53.1907+006.5930"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00176:p1 ,
-       t00176:p2 ;
-  :sym t00176:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00176:p1 a :Female ;
+t00176:p1
+  a :Female ;
   :dob "1866-01-27"^^xsd:date ;
   :dod "1931-04-07"^^xsd:date ;
   :nam "HARMKE STREUPER" ;
-  :rol t00176:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00176:p2
+  ] .
 
-t00176:p2 a :Male ;
+t00176:p2
+  a :Male ;
   :dob "1860-04-12"^^xsd:date ;
   :dod "1952-12-01"^^xsd:date ;
   :nam "EGBERT SLAGTER" .
-
-t00176:r1 a :Spouse.n.01 ;
-  :tgt t00176:p2 .
-
-t00176:s1 a :Frond.n.01 .
-
-t00176:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00176.jpg" ;
-  dc:date "2019-10-05T10:38:25"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1907 ;
-    geo:long 6.5930
-  ] ;
-  :nd "+53.1907+006.5930"^^ll: .
 

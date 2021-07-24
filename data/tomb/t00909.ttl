@@ -1,57 +1,51 @@
 @prefix t00909: <https://noordergraf.rug.nl/tomb/t00909#> .
 
-tomb:t00909 a :Tomb ;
-  :image t00909:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00909:p1 ,
-       t00909:p2 ;
+tomb:t00909
+  a :Tomb ;
+  :ent t00909:p1, t00909:p2 ;
+  :image [
+    dc:date "2020-03-07T14:15:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00909.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1716 ;
+      geo:long 6.3655
+    ] ;
+    :nd "+53.1716+006.3655"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00909:s1 ,
-       t00909:s2 ,
-       t00909:s3 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00909:c1 a :Village.n.02 ;
-  :place place:Doezum2756763 ;
-  :name "DOEZUM" .
-
-t00909:c2 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00909:p1 a :Male ;
+t00909:p1
+  a :Male ;
   :dob "1868-06-05"^^xsd:date ;
   :dod "1942-03-13"^^xsd:date ;
   :nam "JANNES KORNELIS OOSTERHUIS" ;
-  :pob t00909:c1 ;
-  :pod t00909:c2 ;
-  :rol t00909:r1 .
-
-t00909:p2 a :Female ;
-  :nam "ANTJE HAZENBERG" .
-
-t00909:r1 a :Widower.n.01 ;
-  :tgt t00909:p2 .
-
-t00909:s1 a :Frond.n.01 .
-
-t00909:s2 a :Frond.n.01 .
-
-t00909:s3 a :Ribbon.n.01 .
-
-t00909:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00909.jpg" ;
-  dc:date "2020-03-07T14:15:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1716 ;
-    geo:long 6.3655
+  :pob [
+    a :Village.n.02 ;
+    :name "DOEZUM" ;
+    :place place:Doezum2756763
   ] ;
-  :nd "+53.1716+006.3655"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "TOLBERT" ;
+    :place place:Tolbert2746234
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00909:p2
+  ] .
+
+t00909:p2
+  a :Female ;
+  :nam "ANTJE HAZENBERG" .
 

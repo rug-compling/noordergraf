@@ -1,43 +1,47 @@
 @prefix t01126: <https://noordergraf.rug.nl/tomb/t01126#> .
 
-tomb:t01126 a :Tomb ;
+tomb:t01126
+  a :Tomb ;
   :ent t01126:p1 ;
   :lan "NLD" ;
   :ref t01126:v1 .
 
-t01126:b1 a :Epistle_to_the_Romans.n.04 ;
-  :prt t01126:c3 .
-
-t01126:c3 a :Chapter.n.01 ;
-  :ord 8 ;
-  :prt t01126:v1 .
-
-t01126:p1 a :Male ;
+t01126:p1
+  a :Male ;
   :dob "1927-05-01"^^xsd:date ;
   :dod "1999-07-23"^^xsd:date ;
   :nam "JELTE GEERT HAAKSEMA" ;
-  :rol t01126:r1 ,
-       t01126:r2 ,
-       t01126:r3 ,
-       t01126:r4 .
+  :rol [
+    a :Father.n.01
+  ], [
+    a :Grandfather.n.01
+  ], t01126:r3, [
+    a :Spouse.n.01 ;
+    :bef t01126:r3 ;
+    :tgt t01126:p3
+  ] .
 
-t01126:p2 a :Female ;
+t01126:p2
+  a :Female ;
   :nam "W. BULTENA" .
 
-t01126:p3 a :Female ;
+t01126:p3
+  a :Female ;
   :nam "B. DIJKINGA" .
 
-t01126:r1 a :Father.n.01 .
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 8 ;
+    :prt t01126:v1
+  ] .
 
-t01126:r2 a :Grandfather.n.01 .
-
-t01126:r3 a :Spouse.n.01 ;
+t01126:r3
+  a :Spouse.n.01 ;
   :tgt t01126:p2 .
 
-t01126:r4 a :Spouse.n.01 ;
-  :bef t01126:r3 ;
-  :tgt t01126:p3 .
-
-t01126:v1 a :Verse.n.01 ;
+t01126:v1
+  a :Verse.n.01 ;
   :ord 37 .
 

@@ -1,52 +1,49 @@
 @prefix t00861: <https://noordergraf.rug.nl/tomb/t00861#> .
 
-tomb:t00861 a :Tomb ;
-  :image t00861:im1 ;
-  :site site:dr7844TCveenoord ;
-  :ent t00861:p1 ,
-       t00861:p2 ;
-  :lan "NLD" .
+tomb:t00861
+  a :Tomb ;
+  :ent t00861:p1, t00861:p2 ;
+  :image [
+    dc:date "2020-02-15T15:14:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00861.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7193 ;
+      geo:long 6.8450
+    ] ;
+    :nd "+52.7193+006.8450"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:dr7844TCveenoord .
 
-t00861:c1 a :Village.n.02 ;
-  :place place:Zevenhuizen2743926 ;
-  :name "ZEVENHUIZEN" .
-
-t00861:c2 a :Village.n.02 ;
-  :place place:Veenoord2745753 ;
-  :name "VEENOORD" .
-
-t00861:c3 a :Village.n.02 ;
-  :place place:Leek2751834 ;
-  :name "LEEK" .
-
-t00861:p1 a :Male ;
+t00861:p1
+  a :Male ;
   :dob "1852-02-27"^^xsd:date ;
   :dod "1954-04-18"^^xsd:date ;
   :nam "JAC. LOUWES" ;
-  :pob t00861:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ZEVENHUIZEN" ;
+    :place place:Zevenhuizen2743926
+  ] ;
   :pod t00861:c2 .
 
-t00861:p2 a :Female ;
+t00861:p2
+  a :Female ;
   :dob "1858-01-14"^^xsd:date ;
   :dod "1938-11-19"^^xsd:date ;
   :nam "JANNA GORT" ;
-  :pob t00861:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "LEEK" ;
+    :place place:Leek2751834
+  ] ;
   :pod t00861:c2 .
 
-t00861:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00861.jpg" ;
-  dc:date "2020-02-15T15:14:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7193 ;
-    geo:long 6.8450
-  ] ;
-  :nd "+52.7193+006.8450"^^ll: .
+t00861:c2
+  a :Village.n.02 ;
+  :name "VEENOORD" ;
+  :place place:Veenoord2745753 .
 

@@ -1,62 +1,57 @@
 @prefix t01095: <https://noordergraf.rug.nl/tomb/t01095#> .
 
-tomb:t01095 a :Tomb ;
-  :image t01095:im1 ;
-  :ent t01095:p1 ,
-       t01095:p2 ,
-       t01095:p3 ;
+tomb:t01095
+  a :Tomb ;
+  :ent t01095:p1, t01095:p2, t01095:p3 ;
+  :image [
+    dc:date "2020-09-19T14:54:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01095.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2332 ;
+      geo:long 6.8751
+    ] ;
+    :nd "+53.2332+006.8751"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t01095:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01095:a1 a :Weeping.a.02 .
-
-t01095:c1 a :Village.n.02 ;
-  :place place:Slochteren2747143 ;
-  :name "SLOCHTEREN" .
-
-t01095:c2 a :Village.n.02 ;
-  :place place:Siddeburen2747343 ;
-  :name "SIDDEBUREN" .
-
-t01095:p1 a :Female ;
+t01095:p1
+  a :Female ;
   :dob "1891-08-01"^^xsd:date ;
   :dod "1972-12-24"^^xsd:date ;
   :nam "TALJE STERNBERG" ;
-  :pob t01095:c1 ;
-  :pod t01095:c2 ;
-  :rol t01095:r1 ,
-       t01095:r2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "SLOCHTEREN" ;
+    :place place:Slochteren2747143
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "SIDDEBUREN" ;
+    :place place:Siddeburen2747343
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01095:p2
+  ], [
+    a :Widow.n.01 ;
+    :bef t01095:p3 ;
+    :tgt t01095:p3
+  ] .
 
-t01095:p2 a :Male ;
+t01095:p2
+  a :Male ;
   :nam "J. FOLKERSMA" .
 
-t01095:p3 a :Male ;
+t01095:p3
+  a :Male ;
   :nam "E. BROEKEMA" .
-
-t01095:r1 a :Widow.n.01 ;
-  :tgt t01095:p2 .
-
-t01095:r2 a :Widow.n.01 ;
-  :bef t01095:p3 ;
-  :tgt t01095:p3 .
-
-t01095:s1 a :Willow.n.01 ;
-  :att t01095:a1 .
-
-t01095:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01095.jpg" ;
-  dc:date "2020-09-19T14:54:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2332 ;
-    geo:long 6.8751
-  ] ;
-  :nd "+53.2332+006.8751"^^ll: .
 

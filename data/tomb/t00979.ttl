@@ -1,48 +1,44 @@
 @prefix t00979: <https://noordergraf.rug.nl/tomb/t00979#> .
 
-tomb:t00979 a :Tomb ;
-  :image t00979:im1 ;
-  :site site:gr9479TNnoordlaren ;
-  :ent t00979:p1 ,
-       t00979:p2 ;
-  :lan "NLD" .
+tomb:t00979
+  a :Tomb ;
+  :ent t00979:p1, t00979:p2 ;
+  :image [
+    dc:date "2020-03-25T09:25:22"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00979.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1203 ;
+      geo:long 6.6591
+    ] ;
+    :nd "+53.1203+006.6591"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9479TNnoordlaren .
 
-t00979:c1 a :Village.n.02 ;
-  :place place:Eext2756317 ;
-  :name "EEXT" .
-
-t00979:c2 a :Village.n.02 ;
-  :place place:Noordlaren2749857 ;
-  :name "NOORDLAREN" .
-
-t00979:p1 a :Female ;
+t00979:p1
+  a :Female ;
   :dob "1866-06-05"^^xsd:date ;
   :dod "1953-12-03"^^xsd:date ;
   :nam "JANTIEN KLOOTS" ;
-  :pob t00979:c1 ;
-  :pod t00979:c2 ;
-  :rol t00979:r1 .
-
-t00979:p2 a :Male ;
-  :nam "HARMANNUS HAVINGA" .
-
-t00979:r1 a :Widow.n.01 ;
-  :tgt t00979:p2 .
-
-t00979:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00979.jpg" ;
-  dc:date "2020-03-25T09:25:22"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1203 ;
-    geo:long 6.6591
+  :pob [
+    a :Village.n.02 ;
+    :name "EEXT" ;
+    :place place:Eext2756317
   ] ;
-  :nd "+53.1203+006.6591"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "NOORDLAREN" ;
+    :place place:Noordlaren2749857
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00979:p2
+  ] .
+
+t00979:p2
+  a :Male ;
+  :nam "HARMANNUS HAVINGA" .
 

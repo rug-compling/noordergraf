@@ -1,48 +1,44 @@
 @prefix t00917: <https://noordergraf.rug.nl/tomb/t00917#> .
 
-tomb:t00917 a :Tomb ;
-  :image t00917:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00917:p1 ,
-       t00917:p2 ;
+tomb:t00917
+  a :Tomb ;
+  :ent t00917:p1, t00917:p2 ;
+  :image [
+    dc:date "2020-03-07T14:04:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00917.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1715 ;
+      geo:long 6.3656
+    ] ;
+    :nd "+53.1715+006.3656"^^ll:
+  ] ;
   :quo "JEZUS UW VERZOENEND STERVEN"@nld ;
-  :ref "GEZANG 14"@nld .
+  :ref "GEZANG 14"@nld ;
+  :site site:gr9351RLtolbert .
 
-t00917:g1 a :Group.n.01 ;
-  :mem t00917:p1 ,
-       t00917:p2 ;
-  :rol t00917:r1 .
-
-t00917:g2 a :People.n.01 .
-
-t00917:p1 a :Female ;
+t00917:p1
+  a :Female ;
   :dob "1879-11-16"^^xsd:date ;
   :dod "1938-02-11"^^xsd:date ;
   :nam "BERENTJE AARDEMA" .
 
-t00917:p2 a :Male ;
+t00917:p2
+  a :Male ;
   :dob "1880-06-09"^^xsd:date ;
   :dod "1970-09-12"^^xsd:date ;
   :nam "JAN SCHERINGA" .
 
-t00917:r1 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00917:g2 .
-
-t00917:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00917.jpg" ;
-  dc:date "2020-03-07T14:04:14"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1715 ;
-    geo:long 6.3656
-  ] ;
-  :nd "+53.1715+006.3656"^^ll: .
+[]
+  a :Group.n.01 ;
+  :mem t00917:p1, t00917:p2 ;
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt [
+      a :People.n.01
+    ]
+  ] .
 

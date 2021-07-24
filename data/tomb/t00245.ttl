@@ -1,47 +1,44 @@
 @prefix t00245: <https://noordergraf.rug.nl/tomb/t00245#> .
 
-tomb:t00245 a :Tomb ;
-  :image t00245:im1 ;
-  :site site:gr9751BBharen ;
-  :ent t00245:p1 ,
-       t00245:p2 .
+tomb:t00245
+  a :Tomb ;
+  :ent t00245:p1, t00245:p2 ;
+  :image [
+    dc:date "2019-10-11T17:28:15"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00245.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1726 ;
+      geo:long 6.6069
+    ] ;
+    :nd "+53.1726+006.6069"^^ll:
+  ] ;
+  :site site:gr9751BBharen .
 
-t00245:c1 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00245:p1 a :Female ;
+t00245:p1
+  a :Female ;
   :dob "1864-06-28"^^xsd:date ;
   :dod "1945-04-15"^^xsd:date ;
   :nam "ANNECHIEN BAZUIN" ;
   :pob t00245:c1 ;
   :pod t00245:c1 ;
-  :rol t00245:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00245:p2
+  ] .
 
-t00245:p2 a :Male ;
+t00245:p2
+  a :Male ;
   :dob "1858-11-23"^^xsd:date ;
   :dod "1946-04-03"^^xsd:date ;
   :nam "ROELF MANNES" ;
   :pob t00245:c1 ;
   :pod t00245:c1 .
 
-t00245:r1 a :Spouse.n.01 ;
-  :tgt t00245:p2 .
-
-t00245:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00245.jpg" ;
-  dc:date "2019-10-11T17:28:15"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1726 ;
-    geo:long 6.6069
-  ] ;
-  :nd "+53.1726+006.6069"^^ll: .
+t00245:c1
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 

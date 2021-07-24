@@ -1,59 +1,55 @@
 @prefix t01059: <https://noordergraf.rug.nl/tomb/t01059#> .
 
-tomb:t01059 a :Tomb ;
-  :image t01059:im1 ;
-  :site site:gr9971EBulrum ;
-  :ent t01059:p1 ,
-       t01059:p2 ,
-       t01059:p3 ;
+tomb:t01059
+  a :Tomb ;
+  :ent t01059:p1, t01059:p2, t01059:p3 ;
+  :image [
+    dc:date "2020-05-02T16:42:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01059.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3563 ;
+      geo:long 6.3373
+    ] ;
+    :nd "+53.3563+006.3373"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01059:s1 ,
-       t01059:s2 .
+  :site site:gr9971EBulrum ;
+  :sym [
+    a :Branch.n.02
+  ], [
+    a :Branch.n.02
+  ] .
 
-t01059:c1 a :Village.n.02 ;
-  :place place:Ulrum2745944 ;
-  :name "ULRUM" .
-
-t01059:p1 a :Male ;
+t01059:p1
+  a :Male ;
   :dob "1877-04-14"^^xsd:date ;
   :dod "1955-12-14"^^xsd:date ;
   :nam "ELZO VAN KAMPEN" ;
   :pob t01059:c1 ;
   :pod t01059:c1 ;
-  :rol t01059:r1 ,
-       t01059:r2 .
+  :rol t01059:r1, [
+    a :Spouse.n.01 ;
+    :bef t01059:r1 ;
+    :tgt t01059:p3
+  ] .
 
-t01059:p2 a :Female ;
+t01059:p2
+  a :Female ;
   :nam "J. BULTHUIS" .
 
-t01059:p3 a :Female ;
+t01059:p3
+  a :Female ;
   :nam "J. WOLTERS" .
 
-t01059:r1 a :Spouse.n.01 ;
+t01059:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
+
+t01059:r1
+  a :Spouse.n.01 ;
   :tgt t01059:p2 .
-
-t01059:r2 a :Spouse.n.01 ;
-  :bef t01059:r1 ;
-  :tgt t01059:p3 .
-
-t01059:s1 a :Branch.n.02 .
-
-t01059:s2 a :Branch.n.02 .
-
-t01059:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01059.jpg" ;
-  dc:date "2020-05-02T16:42:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3563 ;
-    geo:long 6.3373
-  ] ;
-  :nd "+53.3563+006.3373"^^ll: .
 

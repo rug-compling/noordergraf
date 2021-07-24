@@ -1,50 +1,43 @@
 @prefix t00633: <https://noordergraf.rug.nl/tomb/t00633#> .
 
-tomb:t00633 a :Tomb ;
-  :image t00633:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00633:p1 ,
-       t00633:p2 ;
+tomb:t00633
+  a :Tomb ;
+  :ent t00633:p1, t00633:p2 ;
+  :image [
+    dc:date "2019-11-23T09:56:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00633.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1640 ;
+      geo:long 6.7544
+    ] ;
+    :nd "+53.1640+006.7544"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00633:s1 ,
-       t00633:s2 ,
-       t00633:s3 ,
-       t00633:s4 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Oak.n.02
+  ], [
+    a :Oak.n.02
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00633:p1 a :Female ;
+t00633:p1
+  a :Female ;
   :dob "1832-05-29"^^xsd:date ;
   :dod "1894-05-27"^^xsd:date ;
   :nam "ELIZA MEIHUIZEN" ;
-  :rol t00633:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00633:p2
+  ] .
 
-t00633:p2 a :Male ;
+t00633:p2
+  a :Male ;
   :nam "ENNO BRONSEMA" .
-
-t00633:r1 a :Spouse.n.01 ;
-  :tgt t00633:p2 .
-
-t00633:s1 a :Butterfly.n.01 .
-
-t00633:s2 a :Oak.n.02 .
-
-t00633:s3 a :Oak.n.02 .
-
-t00633:s4 a :Ribbon.n.01 .
-
-t00633:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00633.jpg" ;
-  dc:date "2019-11-23T09:56:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1640 ;
-    geo:long 6.7544
-  ] ;
-  :nd "+53.1640+006.7544"^^ll: .
 

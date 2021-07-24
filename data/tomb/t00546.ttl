@@ -1,74 +1,72 @@
 @prefix t00546: <https://noordergraf.rug.nl/tomb/t00546#> .
 
-tomb:t00546 a :Tomb ;
-  :image t00546:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00546:p1 ,
-       t00546:p2 ,
-       t00546:p3 ;
+tomb:t00546
+  a :Tomb ;
+  :ent t00546:p1, t00546:p2, t00546:p3 ;
+  :image [
+    dc:date "2019-11-24T14:12:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00546.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1041 ;
+      geo:long 6.8753
+    ] ;
+    :nd "+53.1041+006.8753"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00546:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Butterfly.n.01
+    ], t00546:s3, t00546:s5
+  ] .
 
-t00546:c1 a :Village.n.02 ;
-  :place place:Bareveld2759424 ;
-  :name "BAREVELD" .
-
-t00546:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00546:p1 a :Female ;
+t00546:p1
+  a :Female ;
   :dob "1842-02-18"^^xsd:date ;
   :dod "1926-11-15"^^xsd:date ;
   :nam "ANNA KOOL" ;
-  :pob t00546:c1 ;
-  :pod t00546:c2 ;
-  :rol t00546:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "BAREVELD" ;
+    :place place:Bareveld2759424
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00546:p2
+  ] .
 
-t00546:p2 a :Male ;
+t00546:p2
+  a :Male ;
   :nam "MARTINUS KLUGKIST" .
 
-t00546:p3 a :Person ;
+t00546:p3
+  a :Person ;
   :nam "F. DE WEIJS" ;
-  :occ t00546:r2 .
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00546
+  ] .
 
-t00546:r1 a :Widow.n.01 ;
-  :tgt t00546:p2 .
+t00546:s3
+  a :Branch.n.02 .
 
-t00546:r2 a :Designer.n.01 ;
-  :tgt tomb:t00546 .
-
-t00546:s1 a :Composite.n.01 ;
-  :prt t00546:s2 ,
-       t00546:s3 ,
-       t00546:s5 .
-
-t00546:s2 a :Butterfly.n.01 .
-
-t00546:s3 a :Branch.n.02 .
-
-t00546:s4 a :Oak.n.02 ;
+[]
+  a :Oak.n.02 ;
   :prt t00546:s3 .
 
-t00546:s5 a :Branch.n.02 .
+t00546:s5
+  a :Branch.n.02 .
 
-t00546:s6 a :Olive.n.02 ;
+[]
+  a :Olive.n.02 ;
   :prt t00546:s5 .
-
-t00546:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00546.jpg" ;
-  dc:date "2019-11-24T14:12:53"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1041 ;
-    geo:long 6.8753
-  ] ;
-  :nd "+53.1041+006.8753"^^ll: .
 

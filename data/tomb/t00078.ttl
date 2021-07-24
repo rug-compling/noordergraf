@@ -1,60 +1,59 @@
 @prefix t00078: <https://noordergraf.rug.nl/tomb/t00078#> .
 
-tomb:t00078 a :Tomb ;
-  :image t00078:im1 ;
-  :site site:gr9721AAgroningen ;
-  :ent t00078:p1 ,
-       t00078:p2 .
+tomb:t00078
+  a :Tomb ;
+  :ent t00078:p1, t00078:p2 ;
+  :image [
+    dc:date "2019-09-25T11:36:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00078.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2035 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.2035+006.5716"^^ll:
+  ] ;
+  :site site:gr9721AAgroningen .
 
-t00078:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00078:c2 a :City.n.01 ;
-  :place place:Meppen2871845 ;
-  :name "MEPPEN" .
-
-t00078:c3 a :Country.n.02 ;
-  :place place:Duitsland2921044 ;
-  :mem t00078:c2 ;
-  :name "DUITSLAND" .
-
-t00078:c4 a :Village.n.02 ;
-  :place place:Kloosterburen2752627 ;
-  :name "KLOOSTERBUREN" .
-
-t00078:p1 a :Female ;
+t00078:p1
+  a :Female ;
   :dob "1848-03-09"^^xsd:date ;
   :dod "1928-01-01"^^xsd:date ;
   :nam "ANNA MARIA E. ROBBE" ;
   :pob t00078:c2 ;
   :pod t00078:c1 ;
-  :rol t00078:r1 .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00078:p2
+  ] .
 
-t00078:p2 a :Male ;
+t00078:p2
+  a :Male ;
   :dob "1856-01-21"^^xsd:date ;
   :dod "1936-01-10"^^xsd:date ;
   :nam "FREDERIK J. VAN VOORN" ;
-  :pob t00078:c4 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "KLOOSTERBUREN" ;
+    :place place:Kloosterburen2752627
+  ] ;
   :pod t00078:c1 .
 
-t00078:r1 a :Wife.n.01 ;
-  :tgt t00078:p2 .
+t00078:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
-t00078:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00078.jpg" ;
-  dc:date "2019-09-25T11:36:11"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2035 ;
-    geo:long 6.5716
-  ] ;
-  :nd "+53.2035+006.5716"^^ll: .
+t00078:c2
+  a :City.n.01 ;
+  :name "MEPPEN" ;
+  :place place:Meppen2871845 .
+
+[]
+  a :Country.n.02 ;
+  :mem t00078:c2 ;
+  :name "DUITSLAND" ;
+  :place place:Duitsland2921044 .
 

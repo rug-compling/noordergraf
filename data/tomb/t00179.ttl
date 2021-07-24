@@ -1,42 +1,35 @@
 @prefix t00179: <https://noordergraf.rug.nl/tomb/t00179#> .
 
-tomb:t00179 a :Tomb ;
-  :image t00179:im1 ;
-  :site site:gr9722SNgroningen ;
+tomb:t00179
+  a :Tomb ;
   :ent t00179:p1 ;
-  :sym t00179:s1 .
+  :image [
+    dc:date "2019-10-05T10:24:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00179.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1861 ;
+      geo:long 6.5963
+    ] ;
+    :nd "+53.1861+006.5963"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00179:p1 a :Female ;
+t00179:p1
+  a :Female ;
   :dob "1908-04-01"^^xsd:date ;
   :dod "1938-10-09"^^xsd:date ;
-  :nam "DE NIJS" ,
-       "PETRONELLA WILHELMINA RIJGERSVEER" .
-
-t00179:s1 a :Composite.n.01 ;
-  :prt t00179:s2 ,
-       t00179:s3 ,
-       t00179:s4 .
-
-t00179:s2 a :Frond.n.01 .
-
-t00179:s3 a :Frond.n.01 .
-
-t00179:s4 a :Ribbon.n.01 .
-
-t00179:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00179.jpg" ;
-  dc:date "2019-10-05T10:24:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1861 ;
-    geo:long 6.5963
-  ] ;
-  :nd "+53.1861+006.5963"^^ll: .
+  :nam "DE NIJS", "PETRONELLA WILHELMINA RIJGERSVEER" .
 

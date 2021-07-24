@@ -1,63 +1,57 @@
 @prefix t00837: <https://noordergraf.rug.nl/tomb/t00837#> .
 
-tomb:t00837 a :Tomb ;
-  :image t00837:im1 ;
-  :site site:dr7841CDsleen ;
-  :ent t00837:p1 ,
-       t00837:p2 ;
+tomb:t00837
+  a :Tomb ;
+  :ent t00837:p1, t00837:p2 ;
+  :image [
+    dc:date "2020-02-15T15:51:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00837.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7759 ;
+      geo:long 6.8029
+    ] ;
+    :nd "+52.7759+006.8029"^^ll:
+  ] ;
   :quo "'K HEB MIJN TRANEN \\ ONDER'T KLAGEN, ENZ"@nld ;
   :ref "PSALM 42:2"@nld ;
-  :sym t00837:s1 .
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00837:a1 a :Weeping.a.02 .
-
-t00837:c1 a :Village.n.02 ;
-  :place place:Dalen2757857 ;
-  :name "DALEN" .
-
-t00837:c2 a :Hamlet.n.03 ;
-  :place place:Ermerveen2756036 ;
-  :name "ERMERVEEN" .
-
-t00837:p1 a :Female ;
+t00837:p1
+  a :Female ;
   :dob "1876-04-11"^^xsd:date ;
   :dod "1910-06-09"^^xsd:date ;
   :nam "JACOBA HIDDING" ;
-  :pob t00837:c1 ;
-  :pod t00837:c2 ;
-  :rol t00837:r1 ,
-       t00837:r2 ,
-       t00837:r3 .
-
-t00837:p2 a :Male ;
-  :nam "H.J. MASSELINK" .
-
-t00837:r1 a :Wife.n.01 ;
-  :att "GELIEFDE" .
-
-t00837:r2 a :Mother.n.01 ;
-  :att "GELIEFDE" .
-
-t00837:r3 a :Spouse.n.01 ;
-  :tgt t00837:p2 .
-
-t00837:s1 a :Willow.n.01 ;
-  :att t00837:a1 .
-
-t00837:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00837.jpg" ;
-  dc:date "2020-02-15T15:51:18"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7759 ;
-    geo:long 6.8029
+  :pob [
+    a :Village.n.02 ;
+    :name "DALEN" ;
+    :place place:Dalen2757857
   ] ;
-  :nd "+52.7759+006.8029"^^ll: .
+  :pod [
+    a :Hamlet.n.03 ;
+    :name "ERMERVEEN" ;
+    :place place:Ermerveen2756036
+  ] ;
+  :rol [
+    a :Wife.n.01 ;
+    :att "GELIEFDE"
+  ], [
+    a :Mother.n.01 ;
+    :att "GELIEFDE"
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00837:p2
+  ] .
+
+t00837:p2
+  a :Male ;
+  :nam "H.J. MASSELINK" .
 

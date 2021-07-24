@@ -1,58 +1,55 @@
 @prefix t00668: <https://noordergraf.rug.nl/tomb/t00668#> .
 
-tomb:t00668 a :Tomb ;
-  :image t00668:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00668:g1 ,
-       t00668:p1 ,
-       t00668:p2 ;
+tomb:t00668
+  a :Tomb ;
+  :ent t00668:p1, t00668:p2, t00668:g1 ;
+  :image [
+    dc:date "2019-12-14T13:51:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00668.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0688 ;
+      geo:long 5.5237
+    ] ;
+    :nd "+53.0688+005.5237"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00668:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00668:a1 a :Weeping.a.02 .
-
-t00668:g1 a :Group.n.01 ;
-  :mem t00668:p3 .
-
-t00668:p1 a :Male ;
+t00668:p1
+  a :Male ;
   :dob "1870-02-15"^^xsd:date ;
   :dod "1935-02-06"^^xsd:date ;
   :nam "B. HEMPENIUS" ;
-  :rol t00668:r1 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00668:g1
+  ] .
 
-t00668:p2 a :Female ;
+t00668:p2
+  a :Female ;
   :dob "1869-01-30"^^xsd:date ;
   :dod "1953-08-26"^^xsd:date ;
   :nam "T. HEMPENIUS-DE GROOT" ;
-  :rol t00668:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00668:g1
+  ] .
 
-t00668:p3 a :Person .
+t00668:p3
+  a :Person .
 
-t00668:r1 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00668:g1 .
-
-t00668:r2 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00668:g1 .
-
-t00668:s1 a :Willow.n.01 ;
-  :att t00668:a1 .
-
-t00668:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00668.jpg" ;
-  dc:date "2019-12-14T13:51:30"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0688 ;
-    geo:long 5.5237
-  ] ;
-  :nd "+53.0688+005.5237"^^ll: .
+t00668:g1
+  a :Group.n.01 ;
+  :mem t00668:p3 .
 

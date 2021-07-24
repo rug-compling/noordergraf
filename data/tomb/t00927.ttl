@@ -1,42 +1,38 @@
 @prefix t00927: <https://noordergraf.rug.nl/tomb/t00927#> .
 
-tomb:t00927 a :Tomb ;
-  :image t00927:im1 ;
-  :site site:gr9351RLtolbert ;
+tomb:t00927
+  a :Tomb ;
   :ent t00927:p1 ;
+  :image [
+    dc:date "2020-03-07T14:13:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00927.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1718 ;
+      geo:long 6.3655
+    ] ;
+    :nd "+53.1718+006.3655"^^ll:
+  ] ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
-  :sym t00927:s1 ,
-       t00927:s2 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Oak.n.01
+  ], [
+    a :Frond.n.01
+  ] .
 
-t00927:c1 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00927:p1 a :Male ;
+t00927:p1
+  a :Male ;
   :dob "1846-05-15"^^xsd:date ;
   :dod "1899-02-04"^^xsd:date ;
   :nam "JAN WIERENGA" ;
   :pob t00927:c1 ;
   :pod t00927:c1 .
 
-t00927:s1 a :Oak.n.01 .
-
-t00927:s2 a :Frond.n.01 .
-
-t00927:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00927.jpg" ;
-  dc:date "2020-03-07T14:13:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1718 ;
-    geo:long 6.3655
-  ] ;
-  :nd "+53.1718+006.3655"^^ll: .
+t00927:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 

@@ -1,40 +1,36 @@
 @prefix t00139: <https://noordergraf.rug.nl/tomb/t00139#> .
 
-tomb:t00139 a :Tomb ;
-  :image t00139:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00139:p1 ,
-       t00139:p2 .
+tomb:t00139
+  a :Tomb ;
+  :ent t00139:p1, t00139:p2 ;
+  :image [
+    dc:date "2019-10-02T10:33:40"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00139.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2062 ;
+      geo:long 6.5701
+    ] ;
+    :nd "+53.2062+006.5701"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen .
 
-t00139:p1 a :Male ;
+t00139:p1
+  a :Male ;
   :dob "1890-03-17"^^xsd:date ;
   :dod "1943-09-19"^^xsd:date ;
   :nam "PIETER STEVENS" ;
-  :rol t00139:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00139:p2
+  ] .
 
-t00139:p2 a :Female ;
+t00139:p2
+  a :Female ;
   :dob "1889-08-23"^^xsd:date ;
   :dod "1964-08-29"^^xsd:date ;
   :nam "IDA HARMS" .
-
-t00139:r1 a :Husband.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00139:p2 .
-
-t00139:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00139.jpg" ;
-  dc:date "2019-10-02T10:33:40"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2062 ;
-    geo:long 6.5701
-  ] ;
-  :nd "+53.2062+006.5701"^^ll: .
 

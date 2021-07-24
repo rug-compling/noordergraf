@@ -1,54 +1,49 @@
 @prefix t00162: <https://noordergraf.rug.nl/tomb/t00162#> .
 
-tomb:t00162 a :Tomb ;
-  :image t00162:im1 ;
+tomb:t00162
+  a :Tomb ;
+  :ent t00162:p1, t00162:p2, t00162:p3 ;
+  :image [
+    dc:date "2019-10-04T10:59:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00162.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2058 ;
+      geo:long 6.5704
+    ] ;
+    :nd "+53.2058+006.5704"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00162:p1 ,
-       t00162:p2 ,
-       t00162:p3 ;
-  :sym t00162:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00162:p1 a :Male ;
+t00162:p1
+  a :Male ;
   :dob "1891-04-06"^^xsd:date ;
   :dod "1929-10-19"^^xsd:date ;
   :nam "JOHANNES JAGER" .
 
-t00162:p2 a :Male ;
+t00162:p2
+  a :Male ;
   :dob "1882-02-27"^^xsd:date ;
   :dod "1950-05-18"^^xsd:date ;
   :nam "JAN JAGER" ;
-  :rol t00162:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00162:p3
+  ] .
 
-t00162:p3 a :Female ;
+t00162:p3
+  a :Female ;
   :dob "1878-12-13"^^xsd:date ;
   :dod "1951-02-20"^^xsd:date ;
   :nam "ANTJE BULTJE" .
-
-t00162:r1 a :Husband.n.01 ;
-  :tgt t00162:p3 .
-
-t00162:s1 a :Composite.n.01 ;
-  :prt t00162:s2 ,
-       t00162:s3 .
-
-t00162:s2 a :Frond.n.01 .
-
-t00162:s3 a :Ribbon.n.01 .
-
-t00162:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00162.jpg" ;
-  dc:date "2019-10-04T10:59:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2058 ;
-    geo:long 6.5704
-  ] ;
-  :nd "+53.2058+006.5704"^^ll: .
 

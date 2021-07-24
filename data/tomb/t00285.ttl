@@ -1,69 +1,64 @@
 @prefix t00285: <https://noordergraf.rug.nl/tomb/t00285#> .
 
-tomb:t00285 a :Tomb ;
-  :image t00285:im1 ;
+tomb:t00285
+  a :Tomb ;
+  :ent t00285:p1, t00285:p2 ;
+  :image [
+    dc:date "2019-10-16T16:50:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00285.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4038 ;
+      geo:long 6.7488
+    ] ;
+    :nd "+53.4038+006.7488"^^ll:
+  ] ;
   :site site:gr9985SCoosternieland ;
-  :ent t00285:p1 ,
-       t00285:p2 ;
-  :sym t00285:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ]
+  ] .
 
-t00285:c1 a :Village.n.02 ;
-  :place place:Warffum2745024 ;
-  :name "WARFFUM" .
-
-t00285:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00285:c3 a :Village.n.02 ;
-  :place place:Oosternieland2749429 ;
-  :name "OOSTERNIELAND" .
-
-t00285:p1 a :Female ;
+t00285:p1
+  a :Female ;
   :dob "1894-12-18"^^xsd:date ;
   :dod "1962-10-15"^^xsd:date ;
   :nam "LAMBERTA MULDER" ;
-  :pob t00285:c1 ;
-  :pod t00285:c2 ;
-  :rol t00285:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "WARFFUM" ;
+    :place place:Warffum2745024
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00285:p2
+  ] .
 
-t00285:p2 a :Male ;
+t00285:p2
+  a :Male ;
   :dob "1882-01-12"^^xsd:date ;
   :dod "1940-03-10"^^xsd:date ;
   :nam "JACOB STEL" ;
-  :pob t00285:c3 ;
-  :pod t00285:c4 ;
-  :rol t00285:r2 .
-
-t00285:r1 a :Widow.n.01 ;
-  :tgt t00285:p2 .
-
-t00285:r2 a :Spouse.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00285:p1 .
-
-t00285:s1 a :Composite.n.01 ;
-  :prt t00285:s2 ,
-       t00285:s3 .
-
-t00285:s2 a :Frond.n.01 .
-
-t00285:s3 a :Frond.n.01 .
-
-t00285:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00285.jpg" ;
-  dc:date "2019-10-16T16:50:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4038 ;
-    geo:long 6.7488
+  :pob [
+    a :Village.n.02 ;
+    :name "OOSTERNIELAND" ;
+    :place place:Oosternieland2749429
   ] ;
-  :nd "+53.4038+006.7488"^^ll: .
+  :pod t00285:c4 ;
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00285:p1
+  ] .
 

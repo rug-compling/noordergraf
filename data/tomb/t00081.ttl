@@ -1,52 +1,49 @@
 @prefix t00081: <https://noordergraf.rug.nl/tomb/t00081#> .
 
-tomb:t00081 a :Tomb ;
-  :image t00081:im1 ;
-  :site site:gr9721AAgroningen ;
-  :ent t00081:p1 ,
-       t00081:p2 ;
-  :quo "REQUIESCAT IN PACE"@lat .
+tomb:t00081
+  a :Tomb ;
+  :ent t00081:p1, t00081:p2 ;
+  :image [
+    dc:date "2019-09-25T11:03:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00081.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2037 ;
+      geo:long 6.5730
+    ] ;
+    :nd "+53.2037+006.5730"^^ll:
+  ] ;
+  :quo "REQUIESCAT IN PACE"@lat ;
+  :site site:gr9721AAgroningen .
 
-t00081:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00081:c2 a :City.n.01 ;
-  :place place:Enkhuizen2756077 ;
-  :name "ENKHUIZEN" .
-
-t00081:p1 a :Male ;
+t00081:p1
+  a :Male ;
   :dob "1882-09-07"^^xsd:date ;
   :dod "1953-11-27"^^xsd:date ;
   :nam "GEORGE W. PADBERG" ;
-  :pob t00081:c2 ;
+  :pob [
+    a :City.n.01 ;
+    :name "ENKHUIZEN" ;
+    :place place:Enkhuizen2756077
+  ] ;
   :pod t00081:c1 ;
-  :rol t00081:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00081:p2
+  ] .
 
-t00081:p2 a :Female ;
+t00081:p2
+  a :Female ;
   :dob "1891-03-25"^^xsd:date ;
   :dod "1963-08-23"^^xsd:date ;
   :nam "GEERTRUIDA M.M. SCHOLTE" ;
   :pob t00081:c1 ;
   :pod t00081:c1 .
 
-t00081:r1 a :Husband.n.01 ;
-  :tgt t00081:p2 .
-
-t00081:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00081.jpg" ;
-  dc:date "2019-09-25T11:03:50"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2037 ;
-    geo:long 6.5730
-  ] ;
-  :nd "+53.2037+006.5730"^^ll: .
+t00081:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

@@ -1,65 +1,59 @@
 @prefix t00365: <https://noordergraf.rug.nl/tomb/t00365#> .
 
-tomb:t00365 a :Tomb ;
-  :image t00365:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00365:g1 ,
-       t00365:p1 ,
-       t00365:p2 ,
-       t00365:p3 ;
+tomb:t00365
+  a :Tomb ;
+  :ent t00365:p1, t00365:p2, t00365:p3, t00365:g1 ;
+  :image [
+    dc:date "2019-10-25T17:27:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00365.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0799 ;
+      geo:long 6.5712
+    ] ;
+    :nd "+53.0799+006.5712"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE FROUKJE" ;
-  :sym t00365:s1 .
+  :site site:dr9481CGvries ;
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00365:c1 a :Village.n.02 ;
-  :place place:Zuidlaren2743680 ;
-  :name "ZUIDLAREN" .
-
-t00365:c2 a :Village.n.02 ;
-  :place place:Tynaarlo2746038 ;
-  :name "TYNAARLO" .
-
-t00365:g1 a :Group.n.01 ;
-  :mem t00365:p2 ,
-       t00365:p3 .
-
-t00365:p1 a :Male ;
+t00365:p1
+  a :Male ;
   :dob "1918-10-02"^^xsd:date ;
   :dod "1946-06-18"^^xsd:date ;
   :nam "FROUKJE SMEENGE" ;
-  :pob t00365:c1 ;
-  :pod t00365:c2 ;
-  :rol t00365:r1 ,
-       t00365:r3 .
+  :pob [
+    a :Village.n.02 ;
+    :name "ZUIDLAREN" ;
+    :place place:Zuidlaren2743680
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "TYNAARLO" ;
+    :place place:Tynaarlo2746038
+  ] ;
+  :rol [
+    a :Daughter.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00365:g1
+  ], [
+    a :Sister.n.01
+  ] .
 
-t00365:p2 a :Male ;
+t00365:p2
+  a :Male ;
   :att "OVERLEDEN" ;
   :nam "R. SMEENGE" .
 
-t00365:p3 a :Female ;
+t00365:p3
+  a :Female ;
   :nam "E. SMEENGE-VAN DALEN" .
 
-t00365:r1 a :Daughter.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00365:g1 .
-
-t00365:r3 a :Sister.n.01 .
-
-t00365:s1 a :Rose.n.01 .
-
-t00365:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00365.jpg" ;
-  dc:date "2019-10-25T17:27:23"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0799 ;
-    geo:long 6.5712
-  ] ;
-  :nd "+53.0799+006.5712"^^ll: .
+t00365:g1
+  a :Group.n.01 ;
+  :mem t00365:p2, t00365:p3 .
 

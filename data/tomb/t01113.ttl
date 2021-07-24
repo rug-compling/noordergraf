@@ -1,34 +1,37 @@
 @prefix t01113: <https://noordergraf.rug.nl/tomb/t01113#> .
 
-tomb:t01113 a :Tomb ;
+tomb:t01113
+  a :Tomb ;
   :ent t01113:p1 ;
   :quo "Hier rust zij in het stille graf Bevrijdt van alle zorgen Na 't leven dat haar God hier gaf Hoopt zij een blijden morgen"@nld ;
-  :sym t01113:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01113:a1 a :Weeping.a.02 .
-
-t01113:c1 a :Village.n.02 ;
-  :place place:Woldendorp2744228 ;
-  :name "WOLDENDORP" .
-
-t01113:c2 a :Village.n.02 ;
-  :place place:Siddeburen2747343 ;
-  :name "SIDDEBUREN" .
-
-t01113:p1 a :Female ;
+t01113:p1
+  a :Female ;
   :dob "1850-09-12"^^xsd:date ;
   :dod "1911-10-18"^^xsd:date ;
   :nam "HILJE WOLTERS" ;
-  :pob t01113:c1 ;
-  :pod t01113:c2 ;
-  :rol t01113:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "WOLDENDORP" ;
+    :place place:Woldendorp2744228
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "SIDDEBUREN" ;
+    :place place:Siddeburen2747343
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01113:p2
+  ] .
 
-t01113:p2 a :Male ;
+t01113:p2
+  a :Male ;
   :nam "H. KEIZER" .
-
-t01113:r1 a :Spouse.n.01 ;
-  :tgt t01113:p2 .
-
-t01113:s1 a :Willow.n.01 ;
-  :att t01113:a1 .
 

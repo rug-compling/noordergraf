@@ -1,38 +1,34 @@
 @prefix t00983: <https://noordergraf.rug.nl/tomb/t00983#> .
 
-tomb:t00983 a :Tomb ;
-  :image t00983:im1 ;
-  :site site:dr9761ALeelde ;
-  :ent t00983:p1 ,
-       t00983:p2 ;
-  :quo "RUST ZACHT LIEVE MAMS"@nld .
+tomb:t00983
+  a :Tomb ;
+  :ent t00983:p1, t00983:p2 ;
+  :image [
+    dc:date "2020-03-31T12:47:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00983.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1421 ;
+      geo:long 6.5787
+    ] ;
+    :nd "+53.1421+006.5787"^^ll:
+  ] ;
+  :quo "RUST ZACHT LIEVE MAMS"@nld ;
+  :site site:dr9761ALeelde .
 
-t00983:p1 a :Female ;
+t00983:p1
+  a :Female ;
   :dob "1926-04-09"^^xsd:date ;
   :dod "1998-06-14"^^xsd:date ;
   :nam "LYDIA HOEK-WLASOWA" ;
-  :rol t00983:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00983:p2
+  ] .
 
-t00983:p2 a :Male ;
+t00983:p2
+  a :Male ;
   :nam "JOOP HOEK" .
-
-t00983:r1 a :Widow.n.01 ;
-  :tgt t00983:p2 .
-
-t00983:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00983.jpg" ;
-  dc:date "2020-03-31T12:47:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1421 ;
-    geo:long 6.5787
-  ] ;
-  :nd "+53.1421+006.5787"^^ll: .
 

@@ -1,78 +1,73 @@
 @prefix t00584: <https://noordergraf.rug.nl/tomb/t00584#> .
 
-tomb:t00584 a :Tomb ;
-  :image t00584:im1 ;
+tomb:t00584
+  a :Tomb ;
+  :ent t00584:p1, t00584:p2, t00584:p3, t00584:p4 ;
+  :image [
+    dc:date "2019-11-30T14:48:16"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00584.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3353 ;
+      geo:long 6.5128
+    ] ;
+    :nd "+53.3353+006.5128"^^ll:
+  ] ;
   :site site:gr9951STwinsum ;
-  :ent t00584:p1 ,
-       t00584:p2 ,
-       t00584:p3 ,
-       t00584:p4 ;
-  :sym t00584:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00584:a1 a :Weeping.a.02 .
-
-t00584:c1 a :Village.n.02 ;
-  :place place:Noorddijk2749981 ;
-  :name "NOORDDIJK" .
-
-t00584:c2 a :Village.n.02 ;
-  :place place:Obergum2749742 ;
-  :name "OBERGUM" .
-
-t00584:c3 a :Village.n.02 ;
-  :place place:Ezinge2755938 ;
-  :name "EZINGE" .
-
-t00584:p1 a :Female ;
+t00584:p1
+  a :Female ;
   :dob "1824-04-05"^^xsd:date ;
   :dod "1912-02-11"^^xsd:date ;
   :nam "GEERTJE VAN DER SCHANS" ;
-  :pob t00584:c1 ;
-  :pod t00584:c2 ;
-  :rol t00584:r1 ,
-       t00584:r2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "NOORDDIJK" ;
+    :place place:Noorddijk2749981
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "OBERGUM" ;
+    :place place:Obergum2749742
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00584:p2
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00584:p3
+  ] .
 
-t00584:p2 a :Male ;
+t00584:p2
+  a :Male ;
   :nam "LEENDER P. BOS" .
 
-t00584:p3 a :Person ;
+t00584:p3
+  a :Person ;
   :qua 3 ;
-  :rol t00584:r3 .
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00584:p1
+  ] .
 
-t00584:p4 a :Person ;
-  :loc t00584:c3 ;
-  :nam "K.J. MOES" ;
-  :occ t00584:r4 .
-
-t00584:r1 a :Spouse.n.01 ;
-  :tgt t00584:p2 .
-
-t00584:r2 a :Mother.n.01 ;
-  :tgt t00584:p3 .
-
-t00584:r3 a :Child.n.02 ;
-  :tgt t00584:p1 .
-
-t00584:r4 a :Designer.n.01 ;
-  :tgt tomb:t00584 .
-
-t00584:s1 a :Willow.n.01 ;
-  :att t00584:a1 .
-
-t00584:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00584.jpg" ;
-  dc:date "2019-11-30T14:48:16"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3353 ;
-    geo:long 6.5128
+t00584:p4
+  a :Person ;
+  :loc [
+    a :Village.n.02 ;
+    :name "EZINGE" ;
+    :place place:Ezinge2755938
   ] ;
-  :nd "+53.3353+006.5128"^^ll: .
+  :nam "K.J. MOES" ;
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00584
+  ] .
 

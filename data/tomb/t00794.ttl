@@ -1,66 +1,59 @@
 @prefix t00794: <https://noordergraf.rug.nl/tomb/t00794#> .
 
-tomb:t00794 a :Tomb ;
-  :image t00794:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00794:g1 ,
-       t00794:p1 ,
-       t00794:p2 ,
-       t00794:p3 ;
+tomb:t00794
+  a :Tomb ;
+  :ent t00794:p1, t00794:p2, t00794:p3, t00794:g1 ;
+  :image [
+    dc:date "2020-01-18T13:05:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00794.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2773 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2773+006.6936"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00794:s1 ,
-       t00794:s2 ,
-       t00794:s3 .
+  :site site:gr9791KEten_boer ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00794:c1 a :Village.n.02 ;
-  :place place:TenBoer2746491 ;
-  :name "TEN BOER" .
-
-t00794:c2 a :Village.n.02 ;
-  :place place:Zuidlaren2743680 ;
-  :name "ZUIDLAREN" .
-
-t00794:g1 a :Group.n.01 ;
-  :mem t00794:p2 ,
-       t00794:p3 .
-
-t00794:p1 a :Female ;
+t00794:p1
+  a :Female ;
   :dob "1881-12-03"^^xsd:date ;
   :dod "1944-02-10"^^xsd:date ;
   :nam "TRIENTJE KALKWIEK" ;
-  :pob t00794:c1 ;
-  :pod t00794:c2 ;
-  :rol t00794:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "TEN BOER" ;
+    :place place:TenBoer2746491
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "ZUIDLAREN" ;
+    :place place:Zuidlaren2743680
+  ] ;
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00794:g1
+  ] .
 
-t00794:p2 a :Male ;
+t00794:p2
+  a :Male ;
   :nam "E. KALKWIEK" .
 
-t00794:p3 a :Female ;
+t00794:p3
+  a :Female ;
   :nam "A. OOSTERHUIS" .
 
-t00794:r1 a :Daughter.n.01 ;
-  :tgt t00794:g1 .
-
-t00794:s1 a :Frond.n.01 .
-
-t00794:s2 a :Frond.n.01 .
-
-t00794:s3 a :Ribbon.n.01 .
-
-t00794:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00794.jpg" ;
-  dc:date "2020-01-18T13:05:32"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2773 ;
-    geo:long 6.6936
-  ] ;
-  :nd "+53.2773+006.6936"^^ll: .
+t00794:g1
+  a :Group.n.01 ;
+  :mem t00794:p2, t00794:p3 .
 

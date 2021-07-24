@@ -1,80 +1,78 @@
 @prefix t00388: <https://noordergraf.rug.nl/tomb/t00388#> .
 
-tomb:t00388 a :Tomb ;
-  :image t00388:im1 ;
-  :site site:fr9285TCbuitenpost ;
-  :ent t00388:p1 ,
-       t00388:p2 ;
+tomb:t00388
+  a :Tomb ;
+  :ent t00388:p1, t00388:p2 ;
+  :image [
+    dc:date "2019-10-26T14:52:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00388.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2516 ;
+      geo:long 6.1450
+    ] ;
+    :nd "+53.2516+006.1450"^^ll:
+  ] ;
   :ref t00388:v1 ;
-  :sym t00388:s1 .
+  :site site:fr9285TCbuitenpost ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00388:a1 a :Weeping.a.02 .
-
-t00388:b1 a :Revelation.n.04 ;
-  :prt t00388:c5 .
-
-t00388:c1 a :Village.n.02 ;
-  :place place:Twijzel2746052 ;
-  :name "TWIJZEL" .
-
-t00388:c2 a :Village.n.02 ;
-  :place place:Doezum2756763 ;
-  :name "DOEZUM" .
-
-t00388:c3 a :Village.n.02 ;
-  :place place:Dantumawoude2757833 ;
-  :name "DANTUMAWOUDE" .
-
-t00388:c4 a :Village.n.02 ;
-  :place place:Zwagerveen2743583 ;
-  :name "ZWAGERVEEN" .
-
-t00388:c5 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00388:v1 .
-
-t00388:p1 a :Male ;
+t00388:p1
+  a :Male ;
   :dob "1877-02-21"^^xsd:date ;
   :dod "1940-04-21"^^xsd:date ;
   :nam "JAKOB KLOOSTRA" ;
-  :pob t00388:c1 ;
-  :pod t00388:c2 ;
-  :rol t00388:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "TWIJZEL" ;
+    :place place:Twijzel2746052
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "DOEZUM" ;
+    :place place:Doezum2756763
+  ] ;
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE"
+  ] .
 
-t00388:p2 a :Female ;
+t00388:p2
+  a :Female ;
   :dob "1880-04-12"^^xsd:date ;
   :dod "1939-09-03"^^xsd:date ;
   :nam "TIETJE WESTERHOF" ;
-  :pob t00388:c3 ;
-  :pod t00388:c4 ;
-  :rol t00388:r2 .
-
-t00388:r1 a :Parent.n.01 ;
-  :att "GELIEFDE" .
-
-t00388:r2 a :Parent.n.01 ;
-  :att "GELIEFDE" .
-
-t00388:s1 a :Willow.n.01 ;
-  :att t00388:a1 .
-
-t00388:v1 a :Verse.n.01 ;
-  :ord 13 .
-
-t00388:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00388.jpg" ;
-  dc:date "2019-10-26T14:52:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2516 ;
-    geo:long 6.1450
+  :pob [
+    a :Village.n.02 ;
+    :name "DANTUMAWOUDE" ;
+    :place place:Dantumawoude2757833
   ] ;
-  :nd "+53.2516+006.1450"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "ZWAGERVEEN" ;
+    :place place:Zwagerveen2743583
+  ] ;
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE"
+  ] .
+
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00388:v1
+  ] .
+
+t00388:v1
+  a :Verse.n.01 ;
+  :ord 13 .
 

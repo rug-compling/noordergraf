@@ -1,54 +1,51 @@
 @prefix t00508: <https://noordergraf.rug.nl/tomb/t00508#> .
 
-tomb:t00508 a :Tomb ;
-  :image t00508:im1 ;
-  :site site:fr8915CPleeuwarden ;
-  :ent t00508:p1 ,
-       t00508:p2 ,
-       t00508:p3 ;
-  :quo "MEMORIA EORUM ERIT IN PACE"@lat .
+tomb:t00508
+  a :Tomb ;
+  :ent t00508:p1, t00508:p2, t00508:p3 ;
+  :image [
+    dc:date "2019-11-09T14:33:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00508.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2066 ;
+      geo:long 5.7691
+    ] ;
+    :nd "+53.2066+005.7691"^^ll:
+  ] ;
+  :quo "MEMORIA EORUM ERIT IN PACE"@lat ;
+  :site site:fr8915CPleeuwarden .
 
-t00508:c1 a :Town.n.01 ;
-  :place place:Stoppeldijk12253641 ;
-  :name "STOPPELDIJK" .
-
-t00508:c2 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00508:p1 a :Female ;
+t00508:p1
+  a :Female ;
   :dob "1872-03-10"^^xsd:date ;
   :dod "1911-07-18"^^xsd:date ;
   :nam "MARIA H.F. LAMBOOIJ-AHSMANN" ;
-  :pob t00508:c1 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "STOPPELDIJK" ;
+    :place place:Stoppeldijk12253641
+  ] ;
   :pod t00508:c2 .
 
-t00508:p2 a :Male ;
+t00508:p2
+  a :Male ;
   :dob "1870-03-31"^^xsd:date ;
   :dod "1949-04-25"^^xsd:date ;
   :nam "HERMANUS D. LAMBOOIJ" ;
   :pob t00508:c2 ;
   :pod t00508:c2 .
 
-t00508:p3 a :Female ;
+t00508:p3
+  a :Female ;
   :dob "1872-12-17"^^xsd:date ;
   :dod "1949-12-06"^^xsd:date ;
   :nam "CAECILIA M. LAMBOOIJ-IJSSELMUIDEN" .
 
-t00508:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00508.jpg" ;
-  dc:date "2019-11-09T14:33:14"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2066 ;
-    geo:long 5.7691
-  ] ;
-  :nd "+53.2066+005.7691"^^ll: .
+t00508:c2
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 

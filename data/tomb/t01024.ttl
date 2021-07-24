@@ -1,42 +1,35 @@
 @prefix t01024: <https://noordergraf.rug.nl/tomb/t01024#> .
 
-tomb:t01024 a :Tomb ;
-  :image t01024:im1 ;
-  :site site:gr9906PPbierum ;
+tomb:t01024
+  a :Tomb ;
   :ent t01024:p1 ;
+  :image [
+    dc:date "2020-04-17T18:27:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01024.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3808 ;
+      geo:long 6.8597
+    ] ;
+    :nd "+53.3808+006.8597"^^ll:
+  ] ;
   :quo "'T STOF VAN EEN ZESTAL SPRUITEN RUSTEN HIER IN'T KOELE GRAF, GOD WIL HUN 'S HEMELS POORT ONTSLUITEN GOD, DIE HUN 'T LEVEN GAF."@nld ;
-  :sym t01024:s1 ,
-       t01024:s2 ,
-       t01024:s3 ,
-       t01024:s4 .
+  :site site:gr9906PPbierum ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Scythe.n.01
+  ], [
+    a :Entity.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t01024:p1 a :Female ;
+t01024:p1
+  a :Female ;
   :dob "1841-12-08"^^xsd:date ;
   :dod "1860-10-01"^^xsd:date ;
   :nam "HARMIENA MEIJER" .
-
-t01024:s1 a :Butterfly.n.01 .
-
-t01024:s2 a :Scythe.n.01 .
-
-t01024:s3 a :Entity.n.01 .
-
-t01024:s4 a :Ribbon.n.01 .
-
-t01024:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01024.jpg" ;
-  dc:date "2020-04-17T18:27:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3808 ;
-    geo:long 6.8597
-  ] ;
-  :nd "+53.3808+006.8597"^^ll: .
 

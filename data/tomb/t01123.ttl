@@ -1,53 +1,56 @@
 @prefix t01123: <https://noordergraf.rug.nl/tomb/t01123#> .
 
-tomb:t01123 a :Tomb ;
+tomb:t01123
+  a :Tomb ;
   :ent t01123:p1 ;
   :quo "Gij die mijn graf, Voorbij komt treden, Gedenk dan ook aan mij Dat ik eens hier beneden Zoo bent geweest als gij"@nld ;
-  :sym t01123:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt t01123:s2, t01123:s3
+  ] .
 
-t01123:c1 a :Village.n.02 ;
-  :place place:Nietap2750380 ;
-  :name "NIETAP" .
-
-t01123:m1 a :Measure.n.02 ;
-  :sub t01123:m2 ,
-       t01123:m3 .
-
-t01123:m2 a :Measure.n.02 ;
-  :mem t01123:u1 ;
-  :qua 55 .
-
-t01123:m3 a :Measure.n.02 ;
-  :mem t01123:u2 ;
-  :qua 11 .
-
-t01123:p1 a :Male ;
-  :age t01123:m1 ;
+t01123:p1
+  a :Male ;
+  :age [
+    a :Measure.n.02 ;
+    :sub [
+      a :Measure.n.02 ;
+      :mem [
+        a :Year.n.01
+      ] ;
+      :qua 55
+    ], [
+      a :Measure.n.02 ;
+      :mem [
+        a :Month.n.01
+      ] ;
+      :qua 11
+    ]
+  ] ;
   :dod "1861-03-05"^^xsd:date ;
   :nam "DERK PIETERS WIERENGA" ;
-  :pod t01123:c1 ;
-  :rol t01123:r1 .
+  :pod [
+    a :Village.n.02 ;
+    :name "NIETAP" ;
+    :place place:Nietap2750380
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01123:p2
+  ] .
 
-t01123:p2 a :Female ;
+t01123:p2
+  a :Female ;
   :nam "TRIENTJE HINDRIKS DIJKSTRA" .
 
-t01123:r1 a :Spouse.n.01 ;
-  :tgt t01123:p2 .
+t01123:s2
+  a :Branch.n.02 .
 
-t01123:s1 a :Composite.n.01 ;
-  :prt t01123:s2 ,
-       t01123:s3 .
-
-t01123:s2 a :Branch.n.02 .
-
-t01123:s3 a :Branch.n.02 ;
-  a :Oak.n.02 ;
+t01123:s3
+  a :Branch.n.02, :Oak.n.02 ;
   :prt t01123:s2 .
 
-t01123:s7 a :Olive.n.02 ;
+[]
+  a :Olive.n.02 ;
   :prt t01123:s3 .
-
-t01123:u1 a :Year.n.01 .
-
-t01123:u2 a :Month.n.01 .
 

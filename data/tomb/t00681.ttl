@@ -1,60 +1,54 @@
 @prefix t00681: <https://noordergraf.rug.nl/tomb/t00681#> .
 
-tomb:t00681 a :Tomb ;
-  :image t00681:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00681:g1 ,
-       t00681:p1 ,
-       t00681:p2 ,
-       t00681:p3 ;
-  :quo "RUST IN VREDE"@nld .
+tomb:t00681
+  a :Tomb ;
+  :ent t00681:p1, t00681:p2, t00681:g1, t00681:p3 ;
+  :image [
+    dc:date "2019-12-14T13:26:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00681.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0687 ;
+      geo:long 5.5222
+    ] ;
+    :nd "+53.0687+005.5222"^^ll:
+  ] ;
+  :quo "RUST IN VREDE"@nld ;
+  :site site:fr8701DWbolsward .
 
-t00681:g1 a :Group.n.01 ;
-  :att "DIEPBEDROEFE" ;
-  :rol t00681:r4 .
-
-t00681:p1 a :Female ;
+t00681:p1
+  a :Female ;
   :dob "1901-11-02"^^xsd:date ;
   :dod "1942-06-01"^^xsd:date ;
   :nam "GRIETJE KUIPER" ;
-  :rol t00681:r1 ,
-       t00681:r2 ,
-       t00681:r3 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00681:p2
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00681:g1
+  ], [
+    a :Daughter.n.01 ;
+    :tgt t00681:p3
+  ] .
 
-t00681:p2 a :Male ;
+t00681:p2
+  a :Male ;
   :att "DIEPBEDROEFDE" ;
   :nam "P. RIJPMA" .
 
-t00681:p3 a :Family.n.04 ;
+t00681:g1
+  a :Group.n.01 ;
+  :att "DIEPBEDROEFE" ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00681:p1
+  ] .
+
+t00681:p3
+  a :Family.n.04 ;
   :nam "R. KUIPER" .
-
-t00681:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00681:p2 .
-
-t00681:r2 a :Mother.n.01 ;
-  :tgt t00681:g1 .
-
-t00681:r3 a :Daughter.n.01 ;
-  :tgt t00681:p3 .
-
-t00681:r4 a :Child.n.02 ;
-  :tgt t00681:p1 .
-
-t00681:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00681.jpg" ;
-  dc:date "2019-12-14T13:26:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0687 ;
-    geo:long 5.5222
-  ] ;
-  :nd "+53.0687+005.5222"^^ll: .
 

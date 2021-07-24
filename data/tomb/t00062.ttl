@@ -1,38 +1,34 @@
 @prefix t00062: <https://noordergraf.rug.nl/tomb/t00062#> .
 
-tomb:t00062 a :Tomb ;
-  :image t00062:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00062:p1 ,
-       t00062:p2 ;
-  :quo "IN CHRISTUS BIJ GOD GEBORGEN" .
+tomb:t00062
+  a :Tomb ;
+  :ent t00062:p1, t00062:p2 ;
+  :image [
+    dc:date "2019-09-27T17:25:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00062.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1635 ;
+      geo:long 6.6159
+    ] ;
+    :nd "+53.1635+006.6159"^^ll:
+  ] ;
+  :quo "IN CHRISTUS BIJ GOD GEBORGEN" ;
+  :site site:gr9752CMharen .
 
-t00062:p1 a :Male ;
+t00062:p1
+  a :Male ;
   :dob "1923-04-01"^^xsd:date ;
   :dod "1997-05-07"^^xsd:date ;
   :nam "SIPCO JOHAN DE GROOT" ;
-  :rol t00062:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00062:p2
+  ] .
 
-t00062:p2 a :Female ;
+t00062:p2
+  a :Female ;
   :nam "AGATHE KNOOP" .
-
-t00062:r1 a :Husband.n.01 ;
-  :tgt t00062:p2 .
-
-t00062:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00062.jpg" ;
-  dc:date "2019-09-27T17:25:38"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1635 ;
-    geo:long 6.6159
-  ] ;
-  :nd "+53.1635+006.6159"^^ll: .
 

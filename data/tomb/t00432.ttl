@@ -1,62 +1,58 @@
 @prefix t00432: <https://noordergraf.rug.nl/tomb/t00432#> .
 
-tomb:t00432 a :Tomb ;
-  :image t00432:im1 ;
+tomb:t00432
+  a :Tomb ;
+  :ent t00432:p1, t00432:p2 ;
+  :image [
+    dc:date "2019-11-02T11:42:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00432.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4791 ;
+      geo:long 6.1610
+    ] ;
+    :nd "+53.4791+006.1610"^^ll:
+  ] ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent t00432:p1 ,
-       t00432:p2 ;
-  :sym t00432:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00432:c1 a :Island.n.01 ;
-  :place place:Schiermonnikoog2747591 ;
-  :name "SCHIERMONNIKOOG" .
-
-t00432:p1 a :Male ;
+t00432:p1
+  a :Male ;
   :dob "1850-06-26"^^xsd:date ;
   :dod "1911-08-16"^^xsd:date ;
   :nam "JAN LIVIUS VISSER" ;
   :pob t00432:c1 ;
   :pod t00432:c1 ;
-  :rol t00432:r1 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00432:p3
+  ] .
 
-t00432:p2 a :Female ;
+t00432:p2
+  a :Female ;
   :dob "1871-07-13"^^xsd:date ;
   :dod "1953-01-24"^^xsd:date ;
   :nam "TRIJNTJE WIERSMA" ;
   :pob t00432:c1 ;
   :pod t00432:c1 ;
-  :rol t00432:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00432:p3
+  ] .
 
-t00432:r1 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00432:p3 .
-
-t00432:r2 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00432:p3 .
-
-t00432:s1 a :Composite.n.01 ;
-  :prt t00432:s2 ,
-       t00432:s5 .
-
-t00432:s2 a :Frond.n.01 .
-
-t00432:s5 a :Ribbon.n.01 .
-
-t00432:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00432.jpg" ;
-  dc:date "2019-11-02T11:42:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4791 ;
-    geo:long 6.1610
-  ] ;
-  :nd "+53.4791+006.1610"^^ll: .
+t00432:c1
+  a :Island.n.01 ;
+  :name "SCHIERMONNIKOOG" ;
+  :place place:Schiermonnikoog2747591 .
 

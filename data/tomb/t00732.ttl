@@ -1,44 +1,41 @@
 @prefix t00732: <https://noordergraf.rug.nl/tomb/t00732#> .
 
-tomb:t00732 a :Tomb ;
-  :image t00732:im1 ;
-  :site site:dr7811HEemmen ;
+tomb:t00732
+  a :Tomb ;
   :ent t00732:p1 ;
+  :image [
+    dc:date "2019-12-21T13:09:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00732.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7823 ;
+      geo:long 6.8973
+    ] ;
+    :nd "+52.7823+006.8973"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00732:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Entity.n.01
+  ] .
 
-t00732:c1 a :Town.n.01 ;
-  :place place:Emmen2756136 ;
-  :name "EMMEN" .
-
-t00732:p1 a :Male ;
+t00732:p1
+  a :Male ;
   :dob "1859-09-06"^^xsd:date ;
   :dod "1942-12-02"^^xsd:date ;
   :nam "GERRIT JAN VAN LOO" ;
   :pob t00732:c1 ;
   :pod t00732:c1 ;
-  :rol t00732:r1 .
+  :rol [
+    a :Brother.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00732:p3
+  ] .
 
-t00732:r1 a :Brother.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00732:p3 .
-
-t00732:s1 a :Entity.n.01 .
-
-t00732:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00732.jpg" ;
-  dc:date "2019-12-21T13:09:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7823 ;
-    geo:long 6.8973
-  ] ;
-  :nd "+52.7823+006.8973"^^ll: .
+t00732:c1
+  a :Town.n.01 ;
+  :name "EMMEN" ;
+  :place place:Emmen2756136 .
 

@@ -1,43 +1,39 @@
 @prefix t00280: <https://noordergraf.rug.nl/tomb/t00280#> .
 
-tomb:t00280 a :Tomb ;
-  :image t00280:im1 ;
+tomb:t00280
+  a :Tomb ;
+  :ent t00280:p1, t00280:p2 ;
+  :image [
+    dc:date "2019-10-16T16:59:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00280.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4042 ;
+      geo:long 6.7496
+    ] ;
+    :nd "+53.4042+006.7496"^^ll:
+  ] ;
   :site site:gr9985SCoosternieland ;
-  :ent t00280:p1 ,
-       t00280:p2 ;
-  :sym t00280:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00280:a1 a :Weeping.a.02 .
-
-t00280:p1 a :Female ;
+t00280:p1
+  a :Female ;
   :dob "1795-01-04"^^xsd:date ;
   :dod "1870-01-15"^^xsd:date ;
   :nam "LUTGERT DOORNBOS" ;
-  :rol t00280:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00280:p2
+  ] .
 
-t00280:p2 a :Male ;
+t00280:p2
+  a :Male ;
   :nam "JAKOB KUIPERS" .
-
-t00280:r1 a :Widow.n.01 ;
-  :tgt t00280:p2 .
-
-t00280:s1 a :Willow.n.01 ;
-  :att t00280:a1 .
-
-t00280:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00280.jpg" ;
-  dc:date "2019-10-16T16:59:12"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4042 ;
-    geo:long 6.7496
-  ] ;
-  :nd "+53.4042+006.7496"^^ll: .
 

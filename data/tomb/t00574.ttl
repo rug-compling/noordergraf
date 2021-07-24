@@ -1,66 +1,61 @@
 @prefix t00574: <https://noordergraf.rug.nl/tomb/t00574#> .
 
-tomb:t00574 a :Tomb ;
-  :image t00574:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00574:p1 ,
-       t00574:p2 ,
-       t00574:p3 ;
+tomb:t00574
+  a :Tomb ;
+  :ent t00574:p1, t00574:p2, t00574:p3 ;
+  :image [
+    dc:date "2019-11-24T13:37:40"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00574.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1059 ;
+      geo:long 6.8752
+    ] ;
+    :nd "+53.1059+006.8752"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE MOEDER" ;
-  :sym t00574:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00574:a1 a :Weeping.a.02 .
-
-t00574:c1 a :Village.n.02 ;
-  :place place:Noordbroek2749989 ;
-  :name "NOORDBROEK" .
-
-t00574:c2 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00574:p1 a :Female ;
+t00574:p1
+  a :Female ;
   :dob "1845-06-15"^^xsd:date ;
   :dod "1921-04-20"^^xsd:date ;
   :nam "TALJE TAKENS" ;
-  :pob t00574:c1 ;
-  :pod t00574:c2 ;
-  :rol t00574:r1 ,
-       t00574:r2 ,
-       t00574:r3 .
+  :pob [
+    a :Village.n.02 ;
+    :name "NOORDBROEK" ;
+    :place place:Noordbroek2749989
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
+  ] ;
+  :rol t00574:r1, [
+    a :Widow.n.01 ;
+    :bef t00574:r1 ;
+    :tgt t00574:p3
+  ], [
+    a :Mother.n.01
+  ] .
 
-t00574:p2 a :Male ;
+t00574:p2
+  a :Male ;
   :nam "HARKO BAKKER" .
 
-t00574:p3 a :Male ;
+t00574:p3
+  a :Male ;
   :nam "HENDRIK BOEKWEG" .
 
-t00574:r1 a :Widow.n.01 ;
+t00574:r1
+  a :Widow.n.01 ;
   :tgt t00574:p2 .
-
-t00574:r2 a :Widow.n.01 ;
-  :bef t00574:r1 ;
-  :tgt t00574:p3 .
-
-t00574:r3 a :Mother.n.01 .
-
-t00574:s1 a :Willow.n.01 ;
-  :att t00574:a1 .
-
-t00574:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00574.jpg" ;
-  dc:date "2019-11-24T13:37:40"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1059 ;
-    geo:long 6.8752
-  ] ;
-  :nd "+53.1059+006.8752"^^ll: .
 

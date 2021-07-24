@@ -1,56 +1,50 @@
 @prefix t00566: <https://noordergraf.rug.nl/tomb/t00566#> .
 
-tomb:t00566 a :Tomb ;
-  :image t00566:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00566:p1 ,
-       t00566:p2 ,
-       t00566:p3 ;
+tomb:t00566
+  a :Tomb ;
+  :ent t00566:p1, t00566:p2, t00566:p3 ;
+  :image [
+    dc:date "2019-11-24T13:41:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00566.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1047 ;
+      geo:long 6.8743
+    ] ;
+    :nd "+53.1047+006.8743"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00566:s1 ,
-       t00566:s2 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Branch.n.02
+  ], [
+    a :Ribbon.n.02
+  ] .
 
-t00566:p1 a :Male ;
+t00566:p1
+  a :Male ;
   :dob "1837-09-30"^^xsd:date ;
   :dod "1919-06-12"^^xsd:date ;
   :nam "HERMAN HESSE" .
 
-t00566:p2 a :Female ;
+t00566:p2
+  a :Female ;
   :dob "1834-12-14"^^xsd:date ;
   :dod "1905-04-26"^^xsd:date ;
   :nam "AALTJE BLEEKER" .
 
-t00566:p3 a :Female ;
+t00566:p3
+  a :Female ;
   :dob "1870-10-08"^^xsd:date ;
   :dod "1935-01-20"^^xsd:date ;
   :nam "ZWAANTJE HESSE" ;
-  :rol t00566:r1 ,
-       t00566:r2 .
-
-t00566:r1 a :Daughter.n.01 ;
-  :tgt t00566:p1 .
-
-t00566:r2 a :Daughter.n.01 ;
-  :tgt t00566:p2 .
-
-t00566:s1 a :Branch.n.02 .
-
-t00566:s2 a :Ribbon.n.02 .
-
-t00566:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00566.jpg" ;
-  dc:date "2019-11-24T13:41:05"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1047 ;
-    geo:long 6.8743
-  ] ;
-  :nd "+53.1047+006.8743"^^ll: .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00566:p1
+  ], [
+    a :Daughter.n.01 ;
+    :tgt t00566:p2
+  ] .
 

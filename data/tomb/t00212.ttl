@@ -1,45 +1,40 @@
 @prefix t00212: <https://noordergraf.rug.nl/tomb/t00212#> .
 
-tomb:t00212 a :Tomb ;
-  :image t00212:im1 ;
+tomb:t00212
+  a :Tomb ;
+  :ent t00212:p1, t00212:p2 ;
+  :image [
+    dc:date "2019-10-08T14:49:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00212.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2226 ;
+      geo:long 6.6372
+    ] ;
+    :nd "+53.2226+006.6372"^^ll:
+  ] ;
   :site site:gr9723EWgroningen ;
-  :ent t00212:p1 ,
-       t00212:p2 ;
-  :sym t00212:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00212:p1 a :Female ;
+t00212:p1
+  a :Female ;
   :dob "1904-09-03"^^xsd:date ;
   :dod "1949-02-24"^^xsd:date ;
   :nam "ANTJE OORLOG" ;
-  :rol t00212:r1 ,
-       t00212:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00212:p2
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00212:p2
+  ] .
 
-t00212:p2 a :Male ;
+t00212:p2
+  a :Male ;
   :nam "D. KRANENBURG" .
-
-t00212:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00212:p2 .
-
-t00212:r2 a :Spouse.n.01 ;
-  :tgt t00212:p2 .
-
-t00212:s1 a :Frond.n.01 .
-
-t00212:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00212.jpg" ;
-  dc:date "2019-10-08T14:49:30"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2226 ;
-    geo:long 6.6372
-  ] ;
-  :nd "+53.2226+006.6372"^^ll: .
 

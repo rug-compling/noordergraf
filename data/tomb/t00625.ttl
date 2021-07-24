@@ -1,50 +1,43 @@
 @prefix t00625: <https://noordergraf.rug.nl/tomb/t00625#> .
 
-tomb:t00625 a :Tomb ;
-  :image t00625:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00625:p1 ,
-       t00625:p2 ;
+tomb:t00625
+  a :Tomb ;
+  :ent t00625:p1, t00625:p2 ;
+  :image [
+    dc:date "2019-11-23T10:00:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00625.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1642 ;
+      geo:long 6.7542
+    ] ;
+    :nd "+53.1642+006.7542"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00625:s1 ,
-       t00625:s2 ,
-       t00625:s3 ,
-       t00625:s4 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Snake.n.02
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Oak.n.02
+  ] .
 
-t00625:p1 a :Male ;
+t00625:p1
+  a :Male ;
   :dob "1819-01-31"^^xsd:date ;
   :dod "1900-03-02"^^xsd:date ;
   :nam "MEERTEN KROESE" ;
-  :rol t00625:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00625:p2
+  ] .
 
-t00625:p2 a :Female ;
+t00625:p2
+  a :Female ;
   :nam "GEESJE SLUIS" .
-
-t00625:r1 a :Spouse.n.01 ;
-  :tgt t00625:p2 .
-
-t00625:s1 a :Butterfly.n.01 .
-
-t00625:s2 a :Snake.n.02 .
-
-t00625:s3 a :Frond.n.01 .
-
-t00625:s4 a :Oak.n.02 .
-
-t00625:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00625.jpg" ;
-  dc:date "2019-11-23T10:00:25"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1642 ;
-    geo:long 6.7542
-  ] ;
-  :nd "+53.1642+006.7542"^^ll: .
 

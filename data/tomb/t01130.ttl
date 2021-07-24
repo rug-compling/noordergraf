@@ -1,32 +1,33 @@
 @prefix t01130: <https://noordergraf.rug.nl/tomb/t01130#> .
 
-tomb:t01130 a :Tomb ;
-  :ent t01130:p1 ,
-       t01130:p2 ,
-       t01130:p3 ;
+tomb:t01130
+  a :Tomb ;
+  :ent t01130:p1, t01130:p2, t01130:p3 ;
   :quo "RUST ZACHT LIEVE LIENA"@nld ;
   :ref "PSALM 103:8"@nld ;
-  :sym t01130:s1 .
+  :sym [
+    a :Butterfly.n.01
+  ] .
 
-t01130:g1 a :Group.n.01 ;
-  :mem t01130:p2 ,
-       t01130:p3 .
-
-t01130:p1 a :Female ;
+t01130:p1
+  a :Female ;
   :dob "1919-10-14"^^xsd:date ;
   :dod "1926-08-22"^^xsd:date ;
   :nam "LIENA WASSENAAR" ;
-  :rol t01130:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFD" ;
+    :tgt [
+      a :Group.n.01 ;
+      :mem t01130:p2, t01130:p3
+    ]
+  ] .
 
-t01130:p2 a :Person ;
+t01130:p2
+  a :Person ;
   :nam "B. WASSENAAR" .
 
-t01130:p3 a :Person ;
+t01130:p3
+  a :Person ;
   :nam "T. FOKKENS" .
-
-t01130:r1 a :Daughter.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t01130:g1 .
-
-t01130:s1 a :Butterfly.n.01 .
 

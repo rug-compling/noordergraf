@@ -1,59 +1,55 @@
 @prefix t00340: <https://noordergraf.rug.nl/tomb/t00340#> .
 
-tomb:t00340 a :Tomb ;
-  :image t00340:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00340:p1 ,
-       t00340:p2 .
+tomb:t00340
+  a :Tomb ;
+  :ent t00340:p1, t00340:p2 ;
+  :image [
+    dc:date "2019-10-19T14:07:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00340.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4731
+    ] ;
+    :nd "+52.7157+006.4731"^^ll:
+  ] ;
+  :site site:dr7907CHhoogeveen .
 
-t00340:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00340:c2 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00340:c3 a :Village.n.02 ;
-  :place place:Kloosterveen2752614 ;
-  :name "KLOOSTERVEEN" .
-
-t00340:c4 a :City.n.01 ;
-  :place place:Zwolle2743477 ;
-  :name "ZWOLLE" .
-
-t00340:p1 a :Male ;
+t00340:p1
+  a :Male ;
   :dob "1848-09-18"^^xsd:date ;
   :dod "1903-02-14"^^xsd:date ;
   :nam "HENDERIKUS LA GRO" ;
-  :pob t00340:c1 ;
-  :pod t00340:c2 .
+  :pob [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :pod [
+    a :Town.n.01 ;
+    :name "HOOGEVEEN" ;
+    :place place:Hoogeveen2753719
+  ] .
 
-t00340:p2 a :Female ;
+t00340:p2
+  a :Female ;
   :dob "1853-01-14"^^xsd:date ;
   :dod "1941-01-13"^^xsd:date ;
   :nam "PAULINE HAAK" ;
-  :pob t00340:c3 ;
-  :pod t00340:c4 ;
-  :rol t00340:r1 .
-
-t00340:r1 a :Spouse.n.01 ;
-  :tgt t00340:p1 .
-
-t00340:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00340.jpg" ;
-  dc:date "2019-10-19T14:07:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7157 ;
-    geo:long 6.4731
+  :pob [
+    a :Village.n.02 ;
+    :name "KLOOSTERVEEN" ;
+    :place place:Kloosterveen2752614
   ] ;
-  :nd "+52.7157+006.4731"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "ZWOLLE" ;
+    :place place:Zwolle2743477
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00340:p1
+  ] .
 

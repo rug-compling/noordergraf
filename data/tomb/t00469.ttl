@@ -1,43 +1,39 @@
 @prefix t00469: <https://noordergraf.rug.nl/tomb/t00469#> .
 
-tomb:t00469 a :Tomb ;
-  :image t00469:im1 ;
-  :site site:fr8915CPleeuwarden ;
-  :ent t00469:p1 ,
-       t00469:p2 ;
+tomb:t00469
+  a :Tomb ;
+  :ent t00469:p1, t00469:p2 ;
+  :image [
+    dc:date "2019-11-09T14:40:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00469.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2073 ;
+      geo:long 5.7691
+    ] ;
+    :nd "+53.2073+005.7691"^^ll:
+  ] ;
   :quo "IN PACE"@lat ;
-  :sym t00469:s1 .
+  :site site:fr8915CPleeuwarden ;
+  :sym [
+    a :Cross.n.03
+  ] .
 
-t00469:p1 a :Male ;
+t00469:p1
+  a :Male ;
   :dob "1899-07-15"^^xsd:date ;
   :dod "1950-08-01"^^xsd:date ;
   :nam "ANNE TEKSTRA" ;
-  :rol t00469:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00469:p2
+  ] .
 
-t00469:p2 a :Female ;
+t00469:p2
+  a :Female ;
   :dob "1898-03-23"^^xsd:date ;
   :dod "1991-05-20"^^xsd:date ;
   :nam "TIETJE HUISMAN" .
-
-t00469:r1 a :Spouse.n.01 ;
-  :tgt t00469:p2 .
-
-t00469:s1 a :Cross.n.03 .
-
-t00469:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00469.jpg" ;
-  dc:date "2019-11-09T14:40:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2073 ;
-    geo:long 5.7691
-  ] ;
-  :nd "+53.2073+005.7691"^^ll: .
 

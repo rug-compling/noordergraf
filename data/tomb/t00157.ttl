@@ -1,56 +1,52 @@
 @prefix t00157: <https://noordergraf.rug.nl/tomb/t00157#> .
 
-tomb:t00157 a :Tomb ;
-  :image t00157:im1 ;
+tomb:t00157
+  a :Tomb ;
+  :ent t00157:p1, t00157:p2, t00157:p3, t00157:p4 ;
+  :image [
+    dc:date "2019-10-02T10:22:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00157.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2060 ;
+      geo:long 6.5699
+    ] ;
+    :nd "+53.2060+006.5699"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00157:p1 ,
-       t00157:p2 ,
-       t00157:p3 ,
-       t00157:p4 ;
-  :sym t00157:s1 .
+  :sym [
+    a :Organization.n.01 ;
+    :nam "LEGER DES HEILS"
+  ] .
 
-t00157:p1 a :Female ;
+t00157:p1
+  a :Female ;
   :dob "1854-08-10"^^xsd:date ;
   :dod "1941-04-22"^^xsd:date ;
   :nam "ELIZABETH DENEKAMP" ;
-  :rol t00157:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00157:p2
+  ] .
 
-t00157:p2 a :Male ;
+t00157:p2
+  a :Male ;
   :nam "WIEBE BOERSMA" .
 
-t00157:p3 a :Female ;
+t00157:p3
+  a :Female ;
   :dob "1897-08-05"^^xsd:date ;
   :dod "1953-12-24"^^xsd:date ;
   :nam "JOHANNA WUBBIENA BOERSMA" ;
-  :rol t00157:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00157:p4
+  ] .
 
-t00157:p4 a :Male ;
+t00157:p4
+  a :Male ;
   :nam "P. GERRITS" .
-
-t00157:r1 a :Widow.n.01 ;
-  :tgt t00157:p2 .
-
-t00157:r2 a :Wife.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00157:p4 .
-
-t00157:s1 a :Organization.n.01 ;
-  :nam "LEGER DES HEILS" .
-
-t00157:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00157.jpg" ;
-  dc:date "2019-10-02T10:22:23"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2060 ;
-    geo:long 6.5699
-  ] ;
-  :nd "+53.2060+006.5699"^^ll: .
 

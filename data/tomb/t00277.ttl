@@ -1,67 +1,62 @@
 @prefix t00277: <https://noordergraf.rug.nl/tomb/t00277#> .
 
-tomb:t00277 a :Tomb ;
-  :image t00277:im1 ;
+tomb:t00277
+  a :Tomb ;
+  :ent t00277:p1, t00277:p2 ;
+  :image [
+    dc:date "2019-10-16T16:57:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00277.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4038 ;
+      geo:long 6.7491
+    ] ;
+    :nd "+53.4038+006.7491"^^ll:
+  ] ;
   :site site:gr9985SCoosternieland ;
-  :ent t00277:p1 ,
-       t00277:p2 ;
-  :sym t00277:s1 .
+  :sym [
+    a :Frond.n.02
+  ] .
 
-t00277:c1 a :Village.n.02 ;
-  :place place:Godlinze2755489 ;
-  :name "GODLINZE" .
-
-t00277:c2 a :Village.n.02 ;
-  :place place:Oosternieland2749429 ;
-  :name "OOSTERNIELAND" .
-
-t00277:c3 a :Village.n.02 ;
-  :place place:tZandt2746027 ;
-  :name "'T ZANDT" .
-
-t00277:p1 a :Female ;
+t00277:p1
+  a :Female ;
   :dob "1901-05-04"^^xsd:date ;
   :dod "1960-07-08"^^xsd:date ;
   :nam "BARBERTJE BOUMA" ;
-  :pob t00277:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "GODLINZE" ;
+    :place place:Godlinze2755489
+  ] ;
   :pod t00277:c2 ;
-  :rol t00277:r1 ,
-       t00277:r2 ,
-       t00277:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00277:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00277:p2
+  ] .
 
-t00277:p2 a :Male ;
+t00277:p2
+  a :Male ;
   :dob "1899-09-21"^^xsd:date ;
   :dod "1978-02-05"^^xsd:date ;
   :nam "EGBERT DE VRIES" ;
-  :pob t00277:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "'T ZANDT" ;
+    :place place:tZandt2746027
+  ] ;
   :pod t00277:c2 .
 
-t00277:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00277:p2 .
-
-t00277:r2 a :Mother.n.01 .
-
-t00277:r3 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00277:p2 .
-
-t00277:s1 a :Frond.n.02 .
-
-t00277:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00277.jpg" ;
-  dc:date "2019-10-16T16:57:12"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4038 ;
-    geo:long 6.7491
-  ] ;
-  :nd "+53.4038+006.7491"^^ll: .
+t00277:c2
+  a :Village.n.02 ;
+  :name "OOSTERNIELAND" ;
+  :place place:Oosternieland2749429 .
 

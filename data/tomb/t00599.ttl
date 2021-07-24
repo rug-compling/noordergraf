@@ -1,48 +1,42 @@
 @prefix t00599: <https://noordergraf.rug.nl/tomb/t00599#> .
 
-tomb:t00599 a :Tomb ;
-  :image t00599:im1 ;
-  :site site:gr9951TNwinsum ;
-  :ent t00599:p1 ,
-       t00599:p2 ;
-  :ref "GEZANG 27:2"@nld .
+tomb:t00599
+  a :Tomb ;
+  :ent t00599:p1, t00599:p2 ;
+  :image [
+    dc:date "2019-11-30T14:06:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00599.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3274 ;
+      geo:long 6.5114
+    ] ;
+    :nd "+53.3274+006.5114"^^ll:
+  ] ;
+  :ref "GEZANG 27:2"@nld ;
+  :site site:gr9951TNwinsum .
 
-t00599:p1 a :Female ;
+t00599:p1
+  a :Female ;
   :dob "1872-11-19"^^xsd:date ;
   :dod "1961-08-05"^^xsd:date ;
   :nam "GEESSIEN BOS" ;
-  :rol t00599:r1 ,
-       t00599:r2 ,
-       t00599:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00599:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00599:p2
+  ] .
 
-t00599:p2 a :Male ;
+t00599:p2
+  a :Male ;
   :dob "1880-10-06"^^xsd:date ;
   :dod "1967-05-19"^^xsd:date ;
   :nam "WILLEM REKER" .
-
-t00599:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00599:p2 .
-
-t00599:r2 a :Mother.n.01 .
-
-t00599:r3 a :Spouse.n.01 ;
-  :tgt t00599:p2 .
-
-t00599:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00599.jpg" ;
-  dc:date "2019-11-30T14:06:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3274 ;
-    geo:long 6.5114
-  ] ;
-  :nd "+53.3274+006.5114"^^ll: .
 

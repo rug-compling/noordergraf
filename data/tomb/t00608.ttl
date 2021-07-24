@@ -1,58 +1,51 @@
 @prefix t00608: <https://noordergraf.rug.nl/tomb/t00608#> .
 
-tomb:t00608 a :Tomb ;
-  :image t00608:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00608:p1 ,
-       t00608:p2 ,
-       t00608:p3 ;
+tomb:t00608
+  a :Tomb ;
+  :ent t00608:p1, t00608:p2, t00608:p3 ;
+  :image [
+    dc:date "2019-11-23T10:05:47"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00608.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1644 ;
+      geo:long 6.7540
+    ] ;
+    :nd "+53.1644+006.7540"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00608:s1 ,
-       t00608:s2 ,
-       t00608:s3 ,
-       t00608:s4 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Cross.n.03
+  ], [
+    a :Anchor.n.01
+  ], [
+    a :Branch.n.02
+  ], [
+    a :Heart.n.07
+  ] .
 
-t00608:p1 a :Male ;
+t00608:p1
+  a :Male ;
   :dob "1833-12-30"^^xsd:date ;
   :dod "1890-03-04"^^xsd:date ;
   :nam "HENDRIK H. KAMPS" ;
-  :rol t00608:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00608:p2
+  ] .
 
-t00608:p2 a :Female ;
+t00608:p2
+  a :Female ;
   :nam "ALBERDINA NIP" .
 
-t00608:p3 a :Person ;
+t00608:p3
+  a :Person ;
   :nam "A. BIELARS" ;
-  :occ t00608:r2 .
-
-t00608:r1 a :Spouse.n.01 ;
-  :tgt t00608:p2 .
-
-t00608:r2 a :Designer.n.01 ;
-  :tgt tomb:t00608 .
-
-t00608:s1 a :Cross.n.03 .
-
-t00608:s2 a :Anchor.n.01 .
-
-t00608:s3 a :Branch.n.02 .
-
-t00608:s4 a :Heart.n.07 .
-
-t00608:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00608.jpg" ;
-  dc:date "2019-11-23T10:05:47"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1644 ;
-    geo:long 6.7540
-  ] ;
-  :nd "+53.1644+006.7540"^^ll: .
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00608
+  ] .
 

@@ -1,38 +1,34 @@
 @prefix t00664: <https://noordergraf.rug.nl/tomb/t00664#> .
 
-tomb:t00664 a :Tomb ;
-  :image t00664:im1 ;
-  :site site:fr8701DWbolsward ;
+tomb:t00664
+  a :Tomb ;
   :ent t00664:p1 ;
+  :image [
+    dc:date "2019-12-14T13:49:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00664.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0673 ;
+      geo:long 5.5254
+    ] ;
+    :nd "+53.0673+005.5254"^^ll:
+  ] ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :sym t00664:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Cross.n.03
+  ] .
 
-t00664:c1 a :City.n.01 ;
-  :place place:Bolsward2758682 ;
-  :name "BOLSWARD" .
-
-t00664:p1 a :Male ;
+t00664:p1
+  a :Male ;
   :dob "1873-05-11"^^xsd:date ;
   :dod "1962-06-04"^^xsd:date ;
   :nam "BERNARD JULIUS STOCKMANN" ;
-  :pod t00664:c1 .
-
-t00664:s1 a :Cross.n.03 .
-
-t00664:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00664.jpg" ;
-  dc:date "2019-12-14T13:49:09"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0673 ;
-    geo:long 5.5254
-  ] ;
-  :nd "+53.0673+005.5254"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "BOLSWARD" ;
+    :place place:Bolsward2758682
+  ] .
 

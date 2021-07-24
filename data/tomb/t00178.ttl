@@ -1,58 +1,55 @@
 @prefix t00178: <https://noordergraf.rug.nl/tomb/t00178#> .
 
-tomb:t00178 a :Tomb ;
-  :image t00178:im1 ;
+tomb:t00178
+  a :Tomb ;
+  :ent t00178:p1, t00178:p2 ;
+  :image [
+    dc:date "2019-10-05T10:28:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00178.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1912 ;
+      geo:long 6.5936
+    ] ;
+    :nd "+53.1912+006.5936"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00178:p1 ,
-       t00178:p2 ;
-  :sym t00178:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00178:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00178:c2 a :Village.n.02 ;
-  :place place:Niekerk2750390 ;
-  :name "NIEKERK" .
-
-t00178:c3 a :Town.n.01 ;
-  :place place:Opende2749302 ;
-  :name "OPENDE" .
-
-t00178:p1 a :Female ;
+t00178:p1
+  a :Female ;
   :dob "1868-01-31"^^xsd:date ;
   :dod "1936-07-20"^^xsd:date ;
   :nam "SJOUKTJE PAMA" ;
-  :pob t00178:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "NIEKERK" ;
+    :place place:Niekerk2750390
+  ] ;
   :pod t00178:c1 ;
-  :rol t00178:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00178:p2
+  ] .
 
-t00178:p2 a :Male ;
+t00178:p2
+  a :Male ;
   :dob "1868-01-17"^^xsd:date ;
   :dod "1953-07-11"^^xsd:date ;
   :nam "LIEUWE HUIZINGA" ;
-  :pob t00178:c3 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "OPENDE" ;
+    :place place:Opende2749302
+  ] ;
   :pod t00178:c1 .
 
-t00178:r1 a :Spouse.n.01 ;
-  :tgt t00178:p2 .
-
-t00178:s1 a :Frond.n.01 .
-
-t00178:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00178.jpg" ;
-  dc:date "2019-10-05T10:28:05"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1912 ;
-    geo:long 6.5936
-  ] ;
-  :nd "+53.1912+006.5936"^^ll: .
+t00178:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

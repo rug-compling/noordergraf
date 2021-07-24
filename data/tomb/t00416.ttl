@@ -1,81 +1,75 @@
 @prefix t00416: <https://noordergraf.rug.nl/tomb/t00416#> .
 
-tomb:t00416 a :Tomb ;
-  :image t00416:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00416:p1 ,
-       t00416:p2 ;
-  :mem t00416:t1 ,
-       t00416:t2 ;
-  :quo "RUST ZACHT LIEVE OUDERS" .
+tomb:t00416
+  a :Tomb ;
+  :ent t00416:p1, t00416:p2 ;
+  :image [
+    dc:date "2019-10-25T17:03:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00416.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0790 ;
+      geo:long 6.5726
+    ] ;
+    :nd "+53.0790+006.5726"^^ll:
+  ] ;
+  :mem [
+    a :Tomb ;
+    :ent t00416:p1 ;
+    :rol t00416:r2
+  ], [
+    a :Tomb ;
+    :ent t00416:p2 ;
+    :rol [
+      a :Mother.n.01
+    ]
+  ] ;
+  :quo "RUST ZACHT LIEVE OUDERS" ;
+  :site site:dr9481CGvries .
 
-t00416:c1 a :Village.n.02 ;
-  :place place:Yde2744130 ;
-  :name "YDE" .
-
-t00416:c2 a :City.n.01 ;
-  :place place:Rotterdam2747891 ;
-  :name "ROTTERDAM" .
-
-t00416:c3 a :Village.n.02 ;
-  :place place:Zeyen2743985 ;
-  :name "ZEIJEN" .
-
-t00416:c4 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00416:p1 a :Male ;
+t00416:p1
+  a :Male ;
   :dob "1880-11-26"^^xsd:date ;
   :dod "1967-07-20"^^xsd:date ;
   :nam "HENDRIK KOOPS" ;
-  :pob t00416:c1 ;
-  :pod t00416:c2 ;
-  :rol t00416:r1 ,
-       t00416:r2 ,
-       t00416:r3 .
+  :pob [
+    a :Village.n.02 ;
+    :name "YDE" ;
+    :place place:Yde2744130
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "ROTTERDAM" ;
+    :place place:Rotterdam2747891
+  ] ;
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00416:p2
+  ], t00416:r2, [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00416:p2
+  ] .
 
-t00416:p2 a :Female ;
+t00416:p2
+  a :Female ;
   :dob "1880-12-14"^^xsd:date ;
   :dod "1974-01-03"^^xsd:date ;
   :nam "FENNEGIEN BARKHOF" ;
-  :pob t00416:c3 ;
-  :pod t00416:c4 .
-
-t00416:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00416:p2 .
-
-t00416:r2 a :Father.n.01 .
-
-t00416:r3 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00416:p2 .
-
-t00416:r4 a :Mother.n.01 .
-
-t00416:t1 a :Tomb ;
-  :ent t00416:p1 ;
-  :rol t00416:r2 .
-
-t00416:t2 a :Tomb ;
-  :ent t00416:p2 ;
-  :rol t00416:r4 .
-
-t00416:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00416.jpg" ;
-  dc:date "2019-10-25T17:03:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0790 ;
-    geo:long 6.5726
+  :pob [
+    a :Village.n.02 ;
+    :name "ZEIJEN" ;
+    :place place:Zeyen2743985
   ] ;
-  :nd "+53.0790+006.5726"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
+  ] .
+
+t00416:r2
+  a :Father.n.01 .
 

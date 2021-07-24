@@ -1,47 +1,42 @@
 @prefix t00186: <https://noordergraf.rug.nl/tomb/t00186#> .
 
-tomb:t00186 a :Tomb ;
-  :image t00186:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00186:p1 ,
-       t00186:p2 .
+tomb:t00186
+  a :Tomb ;
+  :ent t00186:p1, t00186:p2 ;
+  :image [
+    dc:date "2019-10-05T10:07:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00186.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1909 ;
+      geo:long 6.5923
+    ] ;
+    :nd "+53.1909+006.5923"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen .
 
-t00186:p1 a :Female ;
+t00186:p1
+  a :Female ;
   :dob "1901-08-25"^^xsd:date ;
   :dod "1938-09-13"^^xsd:date ;
   :nam "ELLEGIEN GEZINA BEUKER" ;
-  :rol t00186:r1 ,
-       t00186:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00186:p2
+  ], [
+    a :Mother.n.01
+  ] .
 
-t00186:p2 a :Male ;
+t00186:p2
+  a :Male ;
   :dob "1894-04-11"^^xsd:date ;
   :dod "1960-01-12"^^xsd:date ;
   :nam "HENDRIK PALTS" ;
-  :rol t00186:r3 .
-
-t00186:r1 a :Wife.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00186:p2 .
-
-t00186:r2 a :Mother.n.01 .
-
-t00186:r3 a :Father.n.01 ;
-  :att "LIEVE" .
-
-t00186:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00186.jpg" ;
-  dc:date "2019-10-05T10:07:36"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1909 ;
-    geo:long 6.5923
-  ] ;
-  :nd "+53.1909+006.5923"^^ll: .
+  :rol [
+    a :Father.n.01 ;
+    :att "LIEVE"
+  ] .
 

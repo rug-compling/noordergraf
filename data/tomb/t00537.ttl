@@ -1,50 +1,44 @@
 @prefix t00537: <https://noordergraf.rug.nl/tomb/t00537#> .
 
-tomb:t00537 a :Tomb ;
-  :image t00537:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00537:p1 ,
-       t00537:p2 ;
+tomb:t00537
+  a :Tomb ;
+  :ent t00537:p1, t00537:p2 ;
+  :image [
+    dc:date "2019-11-24T14:21:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00537.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1043 ;
+      geo:long 6.8761
+    ] ;
+    :nd "+53.1043+006.8761"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00537:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Flag.n.01
+    ], [
+      a :Anchor.n.01
+    ], [
+      a :Anchor.n.01
+    ]
+  ] .
 
-t00537:p1 a :Female ;
+t00537:p1
+  a :Female ;
   :dob "1832-12-01"^^xsd:date ;
   :dod "1913-10-23"^^xsd:date ;
   :nam "IDA G. STRATING" ;
-  :rol t00537:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00537:p2
+  ] .
 
-t00537:p2 a :Male ;
+t00537:p2
+  a :Male ;
   :nam "JAN VRIEZE DE VRIES" .
-
-t00537:r1 a :Widow.n.01 ;
-  :tgt t00537:p2 .
-
-t00537:s1 a :Composite.n.01 ;
-  :prt t00537:s2 ,
-       t00537:s3 ,
-       t00537:s4 .
-
-t00537:s2 a :Flag.n.01 .
-
-t00537:s3 a :Anchor.n.01 .
-
-t00537:s4 a :Anchor.n.01 .
-
-t00537:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00537.jpg" ;
-  dc:date "2019-11-24T14:21:09"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1043 ;
-    geo:long 6.8761
-  ] ;
-  :nd "+53.1043+006.8761"^^ll: .
 

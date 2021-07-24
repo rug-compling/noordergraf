@@ -1,68 +1,61 @@
 @prefix t00970: <https://noordergraf.rug.nl/tomb/t00970#> .
 
-tomb:t00970 a :Tomb ;
-  :image t00970:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00970:g1 ,
-       t00970:p1 ,
-       t00970:p2 ,
-       t00970:p3 ;
+tomb:t00970
+  a :Tomb ;
+  :ent t00970:p1, t00970:p2, t00970:p3, t00970:g1 ;
+  :image [
+    dc:date "2020-03-27T16:58:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00970.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1623 ;
+      geo:long 6.6135
+    ] ;
+    :nd "+53.1623+006.6135"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00970:s1 ,
-       t00970:s2 ,
-       t00970:s3 .
+  :site site:gr9752CMharen ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00970:g1 a :Group.n.01 ;
-  :rol t00970:r4 .
-
-t00970:p1 a :Male ;
+t00970:p1
+  a :Male ;
   :dob "1900-07-19"^^xsd:date ;
   :dod "1941-11-11"^^xsd:date ;
   :nam "HARMANNUS C.P. VENEMA" ;
-  :rol t00970:r1 ,
-       t00970:r2 ,
-       t00970:r3 .
+  :rol [
+    a :Widower.n.01 ;
+    :bef t00970:r2 ;
+    :tgt t00970:p2
+  ], t00970:r2, [
+    a :Father.n.01 ;
+    :tgt t00970:g1
+  ] .
 
-t00970:p2 a :Female ;
+t00970:p2
+  a :Female ;
   :nam "L. ELEMA" .
 
-t00970:p3 a :Female ;
+t00970:p3
+  a :Female ;
   :nam "E.KOLSTEIN" .
 
-t00970:r1 a :Widower.n.01 ;
-  :bef t00970:r2 ;
-  :tgt t00970:p2 .
+t00970:g1
+  a :Group.n.01 ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00970:p1
+  ] .
 
-t00970:r2 a :Husband.n.01 ;
+t00970:r2
+  a :Husband.n.01 ;
   :att "GELIEFDE" ;
   :tgt t00970:p3 .
-
-t00970:r3 a :Father.n.01 ;
-  :tgt t00970:g1 .
-
-t00970:r4 a :Child.n.02 ;
-  :tgt t00970:p1 .
-
-t00970:s1 a :Frond.n.01 .
-
-t00970:s2 a :Frond.n.01 .
-
-t00970:s3 a :Ribbon.n.01 .
-
-t00970:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00970.jpg" ;
-  dc:date "2020-03-27T16:58:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1623 ;
-    geo:long 6.6135
-  ] ;
-  :nd "+53.1623+006.6135"^^ll: .
 

@@ -1,88 +1,80 @@
 @prefix t00562: <https://noordergraf.rug.nl/tomb/t00562#> .
 
-tomb:t00562 a :Tomb ;
-  :image t00562:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00562:p1 ,
-       t00562:p2 ,
-       t00562:p3 ,
-       t00562:p4 ,
-       t00562:p5 ,
-       t00562:p6 ;
-  :lan "NLD" .
+tomb:t00562
+  a :Tomb ;
+  :ent t00562:p1, t00562:p2, t00562:p3, t00562:p4, t00562:p5, t00562:p6 ;
+  :image [
+    dc:date "2019-11-24T13:42:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00562.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1047 ;
+      geo:long 6.8745
+    ] ;
+    :nd "+53.1047+006.8745"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9641ANveendam .
 
-t00562:p1 a :Female ;
+t00562:p1
+  a :Female ;
   :dob "1911-12-21"^^xsd:date ;
   :dod "1918-10-24"^^xsd:date ;
   :nam "DIENTJE" ;
-  :rol t00562:r1 ,
-       t00562:r2 .
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00562:p5
+  ], [
+    a :Child.n.02 ;
+    :tgt t00562:p6
+  ] .
 
-t00562:p2 a :Female ;
+t00562:p2
+  a :Female ;
   :dob "1915-07-28"^^xsd:date ;
   :dod "1918-10-24"^^xsd:date ;
   :nam "JACOBA" ;
-  :rol t00562:r3 ,
-       t00562:r4 .
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00562:p5
+  ], [
+    a :Child.n.02 ;
+    :tgt t00562:p6
+  ] .
 
-t00562:p3 a :Female ;
+t00562:p3
+  a :Female ;
   :dob "1917-06-11"^^xsd:date ;
   :dod "1918-10-24"^^xsd:date ;
   :nam "ANJA GEERDINA" ;
-  :rol t00562:r5 ,
-       t00562:r6 .
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00562:p5
+  ], [
+    a :Child.n.02 ;
+    :tgt t00562:p6
+  ] .
 
-t00562:p4 a :Female ;
+t00562:p4
+  a :Female ;
   :dob "1910-07-17"^^xsd:date ;
   :dod "1918-10-31"^^xsd:date ;
   :nam "DOUWIENA" ;
-  :rol t00562:r7 ,
-       t00562:r8 .
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00562:p5
+  ], [
+    a :Child.n.02 ;
+    :tgt t00562:p6
+  ] .
 
-t00562:p5 a :Person ;
+t00562:p5
+  a :Person ;
   :nam "H. BUREMA" .
 
-t00562:p6 a :Person ;
+t00562:p6
+  a :Person ;
   :nam "R. VAN DER BORGH" .
-
-t00562:r1 a :Child.n.02 ;
-  :tgt t00562:p5 .
-
-t00562:r2 a :Child.n.02 ;
-  :tgt t00562:p6 .
-
-t00562:r3 a :Child.n.02 ;
-  :tgt t00562:p5 .
-
-t00562:r4 a :Child.n.02 ;
-  :tgt t00562:p6 .
-
-t00562:r5 a :Child.n.02 ;
-  :tgt t00562:p5 .
-
-t00562:r6 a :Child.n.02 ;
-  :tgt t00562:p6 .
-
-t00562:r7 a :Child.n.02 ;
-  :tgt t00562:p5 .
-
-t00562:r8 a :Child.n.02 ;
-  :tgt t00562:p6 .
-
-t00562:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00562.jpg" ;
-  dc:date "2019-11-24T13:42:58"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1047 ;
-    geo:long 6.8745
-  ] ;
-  :nd "+53.1047+006.8745"^^ll: .
 

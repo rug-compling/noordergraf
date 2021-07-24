@@ -1,64 +1,60 @@
 @prefix t01067: <https://noordergraf.rug.nl/tomb/t01067#> .
 
-tomb:t01067 a :Tomb ;
-  :image t01067:im1 ;
-  :site site:gr9367PAde_wilp ;
-  :ent t01067:p1 ,
-       t01067:p2 ;
+tomb:t01067
+  a :Tomb ;
+  :ent t01067:p1, t01067:p2 ;
+  :image [
+    dc:date "2020-05-01T15:31:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01067.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1232 ;
+      geo:long 6.2512
+    ] ;
+    :nd "+53.1232+006.2512"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t01067:s1 .
+  :site site:gr9367PAde_wilp ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01067:a1 a :Weeping.a.02 .
-
-t01067:c1 a :Hamlet.n.03 ;
-  :place place:DeWilp2756932 ;
-  :loc t01067:c2 ;
-  :name "DE WILP" .
-
-t01067:c2 a :Province.n.01 ;
-  :place place:ProvincieFriesland2755812 ;
-  :name "FRIESLAND" .
-
-t01067:c3 a :Village.n.02 ;
-  :place place:DeWilp2756932 ;
-  :loc t01067:c4 ;
-  :name "DE WILP" .
-
-t01067:c4 a :Province.n.01 ;
-  :place place:ProvincieGroningen2755249 ;
-  :name "GRONINGEN" .
-
-t01067:p1 a :Female ;
+t01067:p1
+  a :Female ;
   :dob "1849-07-09"^^xsd:date ;
   :dod "1933-08-06"^^xsd:date ;
   :nam "BAUKJE W. VEENSTRA" ;
-  :pob t01067:c1 ;
-  :pod t01067:c3 ;
-  :rol t01067:r1 .
-
-t01067:p2 a :Male ;
-  :nam "HENDRIK W. NIJHOF" .
-
-t01067:r1 a :Widow.n.01 ;
-  :tgt t01067:p2 .
-
-t01067:s1 a :Willow.n.01 ;
-  :att t01067:a1 .
-
-t01067:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01067.jpg" ;
-  dc:date "2020-05-01T15:31:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1232 ;
-    geo:long 6.2512
+  :pob [
+    a :Hamlet.n.03 ;
+    :loc [
+      a :Province.n.01 ;
+      :name "FRIESLAND" ;
+      :place place:ProvincieFriesland2755812
+    ] ;
+    :name "DE WILP" ;
+    :place place:DeWilp2756932
   ] ;
-  :nd "+53.1232+006.2512"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :loc [
+      a :Province.n.01 ;
+      :name "GRONINGEN" ;
+      :place place:ProvincieGroningen2755249
+    ] ;
+    :name "DE WILP" ;
+    :place place:DeWilp2756932
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01067:p2
+  ] .
+
+t01067:p2
+  a :Male ;
+  :nam "HENDRIK W. NIJHOF" .
 

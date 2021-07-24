@@ -1,54 +1,49 @@
 @prefix t00164: <https://noordergraf.rug.nl/tomb/t00164#> .
 
-tomb:t00164 a :Tomb ;
-  :image t00164:im1 ;
+tomb:t00164
+  a :Tomb ;
+  :ent t00164:p1, t00164:p2, t00164:p3 ;
+  :image [
+    dc:date "2019-10-04T10:57:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00164.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2054 ;
+      geo:long 6.5705
+    ] ;
+    :nd "+53.2054+006.5705"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00164:p1 ,
-       t00164:p2 ,
-       t00164:p3 ;
-  :sym t00164:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00164:p1 a :Male ;
+t00164:p1
+  a :Male ;
   :dob "1898-07-02"^^xsd:date ;
   :dod "1910-01-31"^^xsd:date ;
   :nam "FREDERIK MENNO EDENS" .
 
-t00164:p2 a :Male ;
+t00164:p2
+  a :Male ;
   :dob "1871-02-22"^^xsd:date ;
   :dod "1935-08-02"^^xsd:date ;
   :nam "TAMMO EDENS" .
 
-t00164:p3 a :Female ;
+t00164:p3
+  a :Female ;
   :dob "1873-02-21"^^xsd:date ;
   :dod "1955-03-02"^^xsd:date ;
   :nam "JELTJE PARÉ" ;
-  :rol t00164:r1 .
-
-t00164:r1 a :Widow.n.01 ;
-  :tgt t00164:p2 .
-
-t00164:s1 a :Composite.n.01 ;
-  :prt t00164:s2 ,
-       t00164:s3 .
-
-t00164:s2 a :Frond.n.01 .
-
-t00164:s3 a :Ribbon.n.01 .
-
-t00164:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00164.jpg" ;
-  dc:date "2019-10-04T10:57:53"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2054 ;
-    geo:long 6.5705
-  ] ;
-  :nd "+53.2054+006.5705"^^ll: .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00164:p2
+  ] .
 

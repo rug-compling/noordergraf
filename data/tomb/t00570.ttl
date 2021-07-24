@@ -1,62 +1,57 @@
 @prefix t00570: <https://noordergraf.rug.nl/tomb/t00570#> .
 
-tomb:t00570 a :Tomb ;
-  :image t00570:im1 ;
+tomb:t00570
+  a :Tomb ;
+  :ent t00570:p1, t00570:p2 ;
+  :image [
+    dc:date "2019-11-24T13:52:07"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00570.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1047 ;
+      geo:long 6.8756
+    ] ;
+    :nd "+53.1047+006.8756"^^ll:
+  ] ;
   :site site:gr9641ANveendam ;
-  :ent t00570:p1 ,
-       t00570:p2 ;
-  :sym t00570:s1 ,
-       t00570:s2 ,
-       t00570:s3 ,
-       t00570:s4 .
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Oak.n.02
+  ], [
+    a :Scythe.n.01
+  ] .
 
-t00570:c1 a :More.r.01 ;
-  :op1 t00570:m1 ;
-  :op2 t00570:m2 .
-
-t00570:m1 a :Measure.n.02 .
-
-t00570:m2 a :Measure.n.02 ;
-  :mem t00570:u1 ;
-  :qua 62 .
-
-t00570:p1 a :Male ;
+t00570:p1
+  a :Male ;
   :age t00570:m1 ;
   :dob "1865-08-29"^^xsd:date ;
   :nam "AREND VAN LINGE" ;
-  :rol t00570:r1 ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00570:p2
+  ] ;
   :sfx "EZ" .
 
-t00570:p2 a :Female ;
+t00570:p2
+  a :Female ;
   :nam "AFIEN R. GIEZEN" .
 
-t00570:r1 a :Spouse.n.01 ;
-  :tgt t00570:p2 .
+[]
+  a :More.r.01 ;
+  :op1 t00570:m1 ;
+  :op2 [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 62
+  ] .
 
-t00570:s1 a :Butterfly.n.01 .
-
-t00570:s2 a :Frond.n.01 .
-
-t00570:s3 a :Oak.n.02 .
-
-t00570:s4 a :Scythe.n.01 .
-
-t00570:u1 a :Year.n.01 .
-
-t00570:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00570.jpg" ;
-  dc:date "2019-11-24T13:52:07"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1047 ;
-    geo:long 6.8756
-  ] ;
-  :nd "+53.1047+006.8756"^^ll: .
+t00570:m1
+  a :Measure.n.02 .
 

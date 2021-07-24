@@ -1,30 +1,26 @@
 @prefix t00424: <https://noordergraf.rug.nl/tomb/t00424#> .
 
-tomb:t00424 a :Tomb ;
-  :image t00424:im1 ;
-  :site site:fr9166NAschiermonnikoog ;
+tomb:t00424
+  a :Tomb ;
   :ent t00424:p1 ;
-  :quo "AND DEATH SHALL HAVE NO DOMINION" .
+  :image [
+    dc:date "2019-11-02T11:47:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00424.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4790 ;
+      geo:long 6.1607
+    ] ;
+    :nd "+53.4790+006.1607"^^ll:
+  ] ;
+  :quo "AND DEATH SHALL HAVE NO DOMINION" ;
+  :site site:fr9166NAschiermonnikoog .
 
-t00424:p1 a :Male ;
+t00424:p1
+  a :Male ;
   :dob "1930-04-19"^^xsd:date ;
   :dod "1978-07-09"^^xsd:date ;
   :nam "A. ORRE DE JONG" .
-
-t00424:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00424.jpg" ;
-  dc:date "2019-11-02T11:47:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4790 ;
-    geo:long 6.1607
-  ] ;
-  :nd "+53.4790+006.1607"^^ll: .
 

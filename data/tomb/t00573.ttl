@@ -1,58 +1,49 @@
 @prefix t00573: <https://noordergraf.rug.nl/tomb/t00573#> .
 
-tomb:t00573 a :Tomb ;
-  :image t00573:im1 ;
-  :site site:gr9641ANveendam ;
+tomb:t00573
+  a :Tomb ;
   :ent t00573:p1 ;
+  :image [
+    dc:date "2019-11-24T13:38:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00573.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1048 ;
+      geo:long 6.8741
+    ] ;
+    :nd "+53.1048+006.8741"^^ll:
+  ] ;
   :quo "RUST ZACHT" ;
-  :sym t00573:s1 ,
-       t00573:s2 ,
-       t00573:s3 ,
-       t00573:s4 ,
-       t00573:s5 ,
-       t00573:s6 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Cross.n.03
+  ], [
+    a :Anchor.n.01
+  ], [
+    a :Heart.n.07
+  ], [
+    a :Entity.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Oak.n.02
+  ] .
 
-t00573:c1 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00573:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00573:p1 a :Male ;
+t00573:p1
+  a :Male ;
   :dob "1858-09-19"^^xsd:date ;
   :dod "1921-05-15"^^xsd:date ;
   :nam "GEERT PIJBES" ;
-  :pob t00573:c1 ;
-  :pod t00573:c2 .
-
-t00573:s1 a :Cross.n.03 .
-
-t00573:s2 a :Anchor.n.01 .
-
-t00573:s3 a :Heart.n.07 .
-
-t00573:s4 a :Entity.n.01 .
-
-t00573:s5 a :Frond.n.01 .
-
-t00573:s6 a :Oak.n.02 .
-
-t00573:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00573.jpg" ;
-  dc:date "2019-11-24T13:38:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1048 ;
-    geo:long 6.8741
+  :pob [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
   ] ;
-  :nd "+53.1048+006.8741"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] .
 

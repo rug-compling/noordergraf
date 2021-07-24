@@ -1,50 +1,46 @@
 @prefix t00621: <https://noordergraf.rug.nl/tomb/t00621#> .
 
-tomb:t00621 a :Tomb ;
-  :image t00621:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00621:p1 ,
-       t00621:p2 ,
-       t00621:p3 ;
+tomb:t00621
+  a :Tomb ;
+  :ent t00621:p1, t00621:p2, t00621:p3 ;
+  :image [
+    dc:date "2019-11-23T10:01:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00621.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1643 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1643+006.7541"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00621:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Hand.n.01 ;
+    :num 2
+  ] .
 
-t00621:p1 a :Male ;
+t00621:p1
+  a :Male ;
   :dob "1804-03-11"^^xsd:date ;
   :dod "1874-04-01"^^xsd:date ;
   :nam "ELTJO HARMS TIEDENS" ;
-  :rol t00621:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00621:p2
+  ] .
 
-t00621:p2 a :Female ;
+t00621:p2
+  a :Female ;
   :nam "MARTJE DERK VEGTER" .
 
-t00621:p3 a :Person ;
+t00621:p3
+  a :Person ;
   :nam "L. TER BEEK" ;
-  :occ t00621:r2 .
-
-t00621:r1 a :Spouse.n.01 ;
-  :tgt t00621:p2 .
-
-t00621:r2 a :Designer.n.01 ;
-  :tgt tomb:t00621 .
-
-t00621:s1 a :Hand.n.01 ;
-  :num 2 .
-
-t00621:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00621.jpg" ;
-  dc:date "2019-11-23T10:01:58"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1643 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1643+006.7541"^^ll: .
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00621
+  ] .
 

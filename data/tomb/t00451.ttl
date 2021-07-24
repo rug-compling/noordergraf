@@ -1,30 +1,25 @@
 @prefix t00451: <https://noordergraf.rug.nl/tomb/t00451#> .
 
-tomb:t00451 a :Tomb ;
-  :image t00451:im1 ;
-  :site site:fr8915CPleeuwarden ;
-  :ent t00451:p1 .
+tomb:t00451
+  a :Tomb ;
+  :ent t00451:p1 ;
+  :image [
+    dc:date "2019-11-09T15:02:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00451.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2066 ;
+      geo:long 5.7696
+    ] ;
+    :nd "+53.2066+005.7696"^^ll:
+  ] ;
+  :site site:fr8915CPleeuwarden .
 
-t00451:p1 a :Male ;
+t00451:p1
+  a :Male ;
   :dob "1904-02-19"^^xsd:date ;
   :dod "1964-06-22"^^xsd:date ;
-  :nam "HAVANK" ,
-       "HENDRIKUS FREDERIKUS VAN DER KALLEN" .
-
-t00451:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00451.jpg" ;
-  dc:date "2019-11-09T15:02:42"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2066 ;
-    geo:long 5.7696
-  ] ;
-  :nd "+53.2066+005.7696"^^ll: .
+  :nam "HAVANK", "HENDRIKUS FREDERIKUS VAN DER KALLEN" .
 

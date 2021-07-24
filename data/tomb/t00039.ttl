@@ -1,41 +1,38 @@
 @prefix t00039: <https://noordergraf.rug.nl/tomb/t00039#> .
 
-tomb:t00039 a :Tomb ;
-  :image t00039:im1 ;
-  :site site:gr9752CMharen ;
+tomb:t00039
+  a :Tomb ;
   :ent t00039:p1 ;
-  :sym t00039:s1 .
+  :image [
+    dc:date "2019-09-27T17:52:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00039.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1629 ;
+      geo:long 6.6122
+    ] ;
+    :nd "+53.1629+006.6122"^^ll:
+  ] ;
+  :site site:gr9752CMharen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00039:a1 a :Weeping.a.02 .
-
-t00039:c1 a :Village.n.02 ;
-  :place place:Helpman2754444 ;
-  :name "HELPMAN" .
-
-t00039:p1 a :Male ;
+t00039:p1
+  a :Male ;
   :dob "1899-07-30"^^xsd:date ;
   :dod "1904-11-10"^^xsd:date ;
   :nam "PIETERTJE EITENS" ;
   :pob t00039:c1 ;
   :pod t00039:c1 .
 
-t00039:s1 a :Willow.n.01 ;
-  :att t00039:a1 .
-
-t00039:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00039.jpg" ;
-  dc:date "2019-09-27T17:52:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1629 ;
-    geo:long 6.6122
-  ] ;
-  :nd "+53.1629+006.6122"^^ll: .
+t00039:c1
+  a :Village.n.02 ;
+  :name "HELPMAN" ;
+  :place place:Helpman2754444 .
 

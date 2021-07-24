@@ -1,93 +1,93 @@
 @prefix t00253: <https://noordergraf.rug.nl/tomb/t00253#> .
 
-tomb:t00253 a :Tomb ;
-  :image t00253:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00253:p1 ,
-       t00253:p2 ,
-       t00253:p3 ,
-       t00253:p4 ,
-       t00253:p5 .
+tomb:t00253
+  a :Tomb ;
+  :ent t00253:p1, t00253:p2, t00253:p3, t00253:p4, t00253:p5 ;
+  :image [
+    dc:date "2019-10-10T09:41:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00253.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2054 ;
+      geo:long 6.5723
+    ] ;
+    :nd "+53.2054+006.5723"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen .
 
-t00253:b1 a :Epistle_to_the_Romans.n.04 ;
-  :prt t00253:c1 .
-
-t00253:b2 a :John.n.05 ;
-  :prt t00253:c2 .
-
-t00253:c1 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00253:v1 .
-
-t00253:c2 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00253:v2 .
-
-t00253:p1 a :Female ;
+t00253:p1
+  a :Female ;
   :dob "1903-04-15"^^xsd:date ;
   :dod "1921-03-03"^^xsd:date ;
   :nam "ANGENIETJE KEIZER" ;
   :ref "1 THESSALONICENZEN 4:14" ;
-  :rol t00253:r1 .
+  :rol [
+    a :Sister.n.01
+  ] .
 
-t00253:p2 a :Female ;
+t00253:p2
+  a :Female ;
   :dob "1878-11-29"^^xsd:date ;
   :dod "1940-09-19"^^xsd:date ;
   :nam "GRIETJE VAN DER ZWEEP" ;
   :ref "PSALM 23:1" ;
-  :rol t00253:r2 .
+  :rol [
+    a :Parent.n.01
+  ] .
 
-t00253:p3 a :Male ;
+t00253:p3
+  a :Male ;
   :dob "1876-07-15"^^xsd:date ;
   :dod "1956-04-06"^^xsd:date ;
   :nam "HENDRIK KEIZER" ;
   :ref "PSALM 116" ;
-  :rol t00253:r3 .
+  :rol [
+    a :Parent.n.01
+  ] .
 
-t00253:p4 a :Male ;
+t00253:p4
+  a :Male ;
   :dob "1854-10-18"^^xsd:date ;
   :dod "1931-11-19"^^xsd:date ;
   :nam "JACOB VAN DER ZWEEP" ;
   :ref t00253:v1 ;
-  :rol t00253:r4 .
+  :rol [
+    a :Grandparent.n.01
+  ] .
 
-t00253:p5 a :Female ;
+t00253:p5
+  a :Female ;
   :dob "1856-07-26"^^xsd:date ;
   :dod "1936-05-13"^^xsd:date ;
   :nam "ANGENIETJE REICHENBACH" ;
   :ref t00253:v2 ;
-  :rol t00253:r5 .
+  :rol [
+    a :Grandparent.n.01
+  ] .
 
-t00253:r1 a :Sister.n.01 .
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00253:v1
+  ] .
 
-t00253:r2 a :Parent.n.01 .
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00253:v2
+  ] .
 
-t00253:r3 a :Parent.n.01 .
-
-t00253:r4 a :Grandparent.n.01 .
-
-t00253:r5 a :Grandparent.n.01 .
-
-t00253:v1 a :Verse.n.01 ;
+t00253:v1
+  a :Verse.n.01 ;
   :ord 8 .
 
-t00253:v2 a :Verse.n.01 ;
+t00253:v2
+  a :Verse.n.01 ;
   :ord 2 .
-
-t00253:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00253.jpg" ;
-  dc:date "2019-10-10T09:41:50"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2054 ;
-    geo:long 6.5723
-  ] ;
-  :nd "+53.2054+006.5723"^^ll: .
 

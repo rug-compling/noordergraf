@@ -1,66 +1,60 @@
 @prefix t00041: <https://noordergraf.rug.nl/tomb/t00041#> .
 
-tomb:t00041 a :Tomb ;
-  :image t00041:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00041:p1 ,
-       t00041:p2 ;
+tomb:t00041
+  a :Tomb ;
+  :ent t00041:p1, t00041:p2 ;
+  :image [
+    dc:date "2019-09-27T17:52:02"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00041.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1630 ;
+      geo:long 6.6122
+    ] ;
+    :nd "+53.1630+006.6122"^^ll:
+  ] ;
   :quo "RUST IN VREDE" ;
-  :sym t00041:s1 .
+  :site site:gr9752CMharen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Willow.n.01 ;
+      :att [
+        a :Weeping.a.02
+      ]
+    ], [
+      a :Scythe.n.01
+    ], [
+      a :Torch.n.01 ;
+      :att [
+        a :Inverted.a.01
+      ]
+    ]
+  ] .
 
-t00041:a1 a :Weeping.a.02 .
-
-t00041:a2 a :Inverted.a.01 .
-
-t00041:c1 a :Village.n.02 ;
-  :place place:Onnen2749588 ;
-  :name "ONNEN" .
-
-t00041:c2 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00041:p1 a :Female ;
+t00041:p1
+  a :Female ;
   :dob "1874-09-17"^^xsd:date ;
   :dod "1926-12-21"^^xsd:date ;
   :nam "HENDERKIEN MANNES" ;
-  :pob t00041:c1 ;
-  :pod t00041:c2 ;
-  :rol t00041:r1 .
-
-t00041:p2 a :Male ;
-  :nam "JOHANNES REEDER" .
-
-t00041:r1 a :Wife.n.01 ;
-  :tgt t00041:p2 .
-
-t00041:s1 a :Composite.n.01 ;
-  :prt t00041:s2 ,
-       t00041:s3 ,
-       t00041:s4 .
-
-t00041:s2 a :Willow.n.01 ;
-  :att t00041:a1 .
-
-t00041:s3 a :Scythe.n.01 .
-
-t00041:s4 a :Torch.n.01 ;
-  :att t00041:a2 .
-
-t00041:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00041.jpg" ;
-  dc:date "2019-09-27T17:52:02"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1630 ;
-    geo:long 6.6122
+  :pob [
+    a :Village.n.02 ;
+    :name "ONNEN" ;
+    :place place:Onnen2749588
   ] ;
-  :nd "+53.1630+006.6122"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] ;
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00041:p2
+  ] .
+
+t00041:p2
+  a :Male ;
+  :nam "JOHANNES REEDER" .
 

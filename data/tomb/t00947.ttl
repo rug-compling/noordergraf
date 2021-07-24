@@ -1,57 +1,49 @@
 @prefix t00947: <https://noordergraf.rug.nl/tomb/t00947#> .
 
-tomb:t00947 a :Tomb ;
-  :image t00947:im1 ;
-  :site site:gr9696XGoudeschans ;
-  :ent t00947:p1 ,
-       t00947:p2 ;
+tomb:t00947
+  a :Tomb ;
+  :ent t00947:p1, t00947:p2 ;
+  :image [
+    dc:date "2020-03-21T13:18:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00947.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1383 ;
+      geo:long 7.1432
+    ] ;
+    :nd "+53.1383+007.1432"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00947:s1 ,
-       t00947:s2 ,
-       t00947:s3 ,
-       t00947:s4 ,
-       t00947:s5 .
+  :site site:gr9696XGoudeschans ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Deer.n.01
+  ], [
+    a :Oak.n.02
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00947:a1 a :Weeping.a.02 .
-
-t00947:p1 a :Female ;
+t00947:p1
+  a :Female ;
   :dob "1822-01-19"^^xsd:date ;
   :dod "1895-12-19"^^xsd:date ;
   :nam "JANTJE HIDDES WERDA" ;
-  :rol t00947:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00947:p2
+  ] .
 
-t00947:p2 a :Male ;
+t00947:p2
+  a :Male ;
   :nam "FEIKO PIETERS VAN HEUVELEN" .
-
-t00947:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00947:p2 .
-
-t00947:s1 a :Willow.n.01 ;
-  :att t00947:a1 .
-
-t00947:s2 a :Deer.n.01 .
-
-t00947:s3 a :Oak.n.02 .
-
-t00947:s4 a :Frond.n.01 .
-
-t00947:s5 a :Ribbon.n.01 .
-
-t00947:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00947.jpg" ;
-  dc:date "2020-03-21T13:18:42"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1383 ;
-    geo:long 7.1432
-  ] ;
-  :nd "+53.1383+007.1432"^^ll: .
 

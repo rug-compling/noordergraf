@@ -1,58 +1,55 @@
 @prefix t00965: <https://noordergraf.rug.nl/tomb/t00965#> .
 
-tomb:t00965 a :Tomb ;
-  :image t00965:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00965:g1 ,
-       t00965:p1 ,
-       t00965:p2 ,
-       t00965:p3 ;
+tomb:t00965
+  a :Tomb ;
+  :ent t00965:p1, t00965:p2, t00965:p3, t00965:g1 ;
+  :image [
+    dc:date "2020-03-27T17:03:51"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00965.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1626 ;
+      geo:long 6.6145
+    ] ;
+    :nd "+53.1626+006.6145"^^ll:
+  ] ;
   :lan "NLD" ;
-  :ref t00965:v1 .
+  :ref t00965:v1 ;
+  :site site:gr9752CMharen .
 
-t00965:b1 a :Galations.n.02 ;
-  :prt t00965:c3 .
-
-t00965:c3 a :Chapter.n.01 ;
-  :ord 3 ;
-  :prt t00965:v1 .
-
-t00965:g1 a :Group.n.01 ;
-  :mem t00965:p2 ,
-       t00965:p3 .
-
-t00965:p1 a :Female ;
+t00965:p1
+  a :Female ;
   :dob "1946-05-09"^^xsd:date ;
   :dod "1960-02-29"^^xsd:date ;
   :nam "ALEIDA HIDDING" ;
-  :rol t00965:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00965:g1
+  ] .
 
-t00965:p2 a :Male ;
+t00965:p2
+  a :Male ;
   :nam "J. HIDDING" .
 
-t00965:p3 a :Female ;
+t00965:p3
+  a :Female ;
   :nam "A. HIDDING-BALLAST" .
 
-t00965:r1 a :Daughter.n.01 ;
-  :tgt t00965:g1 .
+[]
+  a :Galations.n.02 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 3 ;
+    :prt t00965:v1
+  ] .
 
-t00965:v1 a :Verse.n.01 ;
+t00965:g1
+  a :Group.n.01 ;
+  :mem t00965:p2, t00965:p3 .
+
+t00965:v1
+  a :Verse.n.01 ;
   :ord 27 .
-
-t00965:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00965.jpg" ;
-  dc:date "2020-03-27T17:03:51"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1626 ;
-    geo:long 6.6145
-  ] ;
-  :nd "+53.1626+006.6145"^^ll: .
 

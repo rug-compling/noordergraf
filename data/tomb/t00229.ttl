@@ -1,44 +1,38 @@
 @prefix t00229: <https://noordergraf.rug.nl/tomb/t00229#> .
 
-tomb:t00229 a :Tomb ;
-  :image t00229:im1 ;
-  :site site:gr9723EWgroningen ;
+tomb:t00229
+  a :Tomb ;
   :ent t00229:p1 ;
-  :sym t00229:s1 .
+  :image [
+    dc:date "2019-10-08T14:39:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00229.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6366
+    ] ;
+    :nd "+53.2225+006.6366"^^ll:
+  ] ;
+  :site site:gr9723EWgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Willow.n.01 ;
+      :att [
+        a :Weeping.a.02
+      ]
+    ], [
+      a :Butterfly.n.01
+    ], [
+      a :Scythe.n.01
+    ]
+  ] .
 
-t00229:a1 a :Weeping.a.02 .
-
-t00229:p1 a :Female ;
+t00229:p1
+  a :Female ;
   :dob "1822-10-11"^^xsd:date ;
   :dod "1885-05-26"^^xsd:date ;
   :nam "FENJE KOOPS BRUININGA" .
-
-t00229:s1 a :Composite.n.01 ;
-  :prt t00229:s2 ,
-       t00229:s3 ,
-       t00229:s4 .
-
-t00229:s2 a :Willow.n.01 ;
-  :att t00229:a1 .
-
-t00229:s3 a :Butterfly.n.01 .
-
-t00229:s4 a :Scythe.n.01 .
-
-t00229:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00229.jpg" ;
-  dc:date "2019-10-08T14:39:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2225 ;
-    geo:long 6.6366
-  ] ;
-  :nd "+53.2225+006.6366"^^ll: .
 

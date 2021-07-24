@@ -1,54 +1,50 @@
 @prefix t00849: <https://noordergraf.rug.nl/tomb/t00849#> .
 
-tomb:t00849 a :Tomb ;
-  :image t00849:im1 ;
-  :site site:fr8899AWoost_vlieland ;
-  :ent t00849:p1 ,
-       t00849:p2 ,
-       t00849:p3 ;
-  :lan "NLD" .
+tomb:t00849
+  a :Tomb ;
+  :ent t00849:p1, t00849:p2, t00849:p3 ;
+  :image [
+    dc:date "2020-02-20T14:39:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00849.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2959 ;
+      geo:long 5.0650
+    ] ;
+    :nd "+53.2959+005.0650"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:fr8899AWoost_vlieland .
 
-t00849:p1 a :Male ;
+t00849:p1
+  a :Male ;
   :dob "1738-08-14"^^xsd:date ;
   :dod "1740-02-17"^^xsd:date ;
   :nam "FOCKE STAPERT" ;
-  :rol t00849:r1 .
+  :rol [
+    a :Brother.n.01 ;
+    :tgt t00849:p2
+  ] .
 
-t00849:p2 a :Male ;
+t00849:p2
+  a :Male ;
   :dob "1743-04-17"^^xsd:date ;
   :dod "1744-05-05"^^xsd:date ;
   :nam "FOCKE STAPERT" ;
-  :rol t00849:r2 .
+  :rol [
+    a :Brother.n.01 ;
+    :tgt t00849:p3
+  ] .
 
-t00849:p3 a :Male ;
+t00849:p3
+  a :Male ;
   :dob "1745-02-05"^^xsd:date ;
   :dod "1746-11-25"^^xsd:date ;
   :nam "FOCKE STAPERT" ;
-  :rol t00849:r3 .
-
-t00849:r1 a :Brother.n.01 ;
-  :tgt t00849:p2 .
-
-t00849:r2 a :Brother.n.01 ;
-  :tgt t00849:p3 .
-
-t00849:r3 a :Brother.n.01 ;
-  :tgt t00849:p1 .
-
-t00849:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00849.jpg" ;
-  dc:date "2020-02-20T14:39:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2959 ;
-    geo:long 5.0650
-  ] ;
-  :nd "+53.2959+005.0650"^^ll: .
+  :rol [
+    a :Brother.n.01 ;
+    :tgt t00849:p1
+  ] .
 

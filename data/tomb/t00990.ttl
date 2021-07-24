@@ -1,62 +1,68 @@
 @prefix t00990: <https://noordergraf.rug.nl/tomb/t00990#> .
 
-tomb:t00990 a :Tomb ;
-  :image t00990:im1 ;
+tomb:t00990
+  a :Tomb ;
+  :ent t00990:p1, t00990:p2 ;
+  :image [
+    dc:date "2020-04-05T12:18:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00990.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2432 ;
+      geo:long 6.6280
+    ] ;
+    :nd "+53.2432+006.6280"^^ll:
+  ] ;
+  :lan "NLD" ;
   :site site:gr9734ATgroningen ;
-  :text "Ter gedachtenis van\nTRIENTJE KORNELIS\nNIEBOER\ngeboren te Harkstede\nden 13 September 1791\noverleden op Leeuwenburg\nden 25 Junij 1865\nruim 51 jaar vrouw\nvan H.G. Boer." ;
-  :ent t00990:p1 ,
-       t00990:p2 ;
-  :lan "NLD" .
+  :text """Ter gedachtenis van
+TRIENTJE KORNELIS
+NIEBOER
+geboren te Harkstede
+den 13 September 1791
+overleden op Leeuwenburg
+den 25 Junij 1865
+ruim 51 jaar vrouw
+van H.G. Boer.""" .
 
-t00990:c1 a :Village.n.02 ;
-  :place place:Harkstede2754819 ;
-  :name "HARKSTEDE" .
-
-t00990:c2 a :Building.n.01 ;
-  :place place:Leeuwenburg ;
-  :name "LEEUWENBURG" .
-
-t00990:c3 a :More.r.01 ;
-  :op1 t00990:m1 ;
-  :op2 t00990:m2 .
-
-t00990:m1 a :Measure.n.02 .
-
-t00990:m2 a :Measure.n.02 ;
-  :mem t00990:u1 ;
-  :qua 51 .
-
-t00990:p1 a :Female ;
+t00990:p1
+  a :Female ;
   :dob "1791-09-13"^^xsd:date ;
   :dod "1865-06-25"^^xsd:date ;
   :nam "TRIENTJE KORNELIS NIEBOER" ;
-  :pob t00990:c1 ;
-  :pod t00990:c2 ;
-  :rol t00990:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "HARKSTEDE" ;
+    :place place:Harkstede2754819
+  ] ;
+  :pod [
+    a :Building.n.01 ;
+    :name "LEEUWENBURG" ;
+    :place place:Leeuwenburg
+  ] ;
+  :rol [
+    a :Wife.n.01 ;
+    :dur t00990:m1 ;
+    :tgt t00990:p2
+  ] .
 
-t00990:p2 a :Male ;
+t00990:p2
+  a :Male ;
   :nam "H.G. BOER" .
 
-t00990:r1 a :Wife.n.01 ;
-  :dur t00990:m1 ;
-  :tgt t00990:p2 .
+[]
+  a :More.r.01 ;
+  :op1 t00990:m1 ;
+  :op2 [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 51
+  ] .
 
-t00990:u1 a :Year.n.01 .
-
-t00990:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00990.jpg" ;
-  dc:date "2020-04-05T12:18:10"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2432 ;
-    geo:long 6.6280
-  ] ;
-  :nd "+53.2432+006.6280"^^ll: .
+t00990:m1
+  a :Measure.n.02 .
 

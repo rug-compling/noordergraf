@@ -1,50 +1,47 @@
 @prefix t00839: <https://noordergraf.rug.nl/tomb/t00839#> .
 
-tomb:t00839 a :Tomb ;
-  :image t00839:im1 ;
-  :site site:dr7841CDsleen ;
-  :ent t00839:p1 ,
-       t00839:p2 ;
+tomb:t00839
+  a :Tomb ;
+  :ent t00839:p1, t00839:p2 ;
+  :image [
+    dc:date "2020-02-15T15:39:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00839.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7762 ;
+      geo:long 6.8045
+    ] ;
+    :nd "+52.7762+006.8045"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00839:s1 .
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00839:a1 a :Weeping.a.02 .
-
-t00839:c1 a :Village.n.02 ;
-  :place place:Erm2756040 ;
-  :name "ERM" .
-
-t00839:p1 a :Male ;
+t00839:p1
+  a :Male ;
   :dob "1884-10-20"^^xsd:date ;
   :dod "1926-02-24"^^xsd:date ;
   :nam "K. ANNINGA" ;
   :pob t00839:c1 ;
   :pod t00839:c1 ;
-  :rol t00839:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00839:p2
+  ] .
 
-t00839:p2 a :Female ;
+t00839:p2
+  a :Female ;
   :nam "F. HABING" .
 
-t00839:r1 a :Spouse.n.01 ;
-  :tgt t00839:p2 .
-
-t00839:s1 a :Willow.n.01 ;
-  :att t00839:a1 .
-
-t00839:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00839.jpg" ;
-  dc:date "2020-02-15T15:39:30"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7762 ;
-    geo:long 6.8045
-  ] ;
-  :nd "+52.7762+006.8045"^^ll: .
+t00839:c1
+  a :Village.n.02 ;
+  :name "ERM" ;
+  :place place:Erm2756040 .
 

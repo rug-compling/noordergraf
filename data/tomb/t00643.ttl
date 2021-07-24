@@ -1,30 +1,26 @@
 @prefix t00643: <https://noordergraf.rug.nl/tomb/t00643#> .
 
-tomb:t00643 a :Tomb ;
-  :image t00643:im1 ;
-  :site site:gr9723EJgroningen ;
+tomb:t00643
+  a :Tomb ;
   :ent t00643:p1 ;
-  :lan "NLD" .
+  :image [
+    dc:date "2019-12-08T11:21:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00643.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2089 ;
+      geo:long 6.6479
+    ] ;
+    :nd "+53.2089+006.6479"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9723EJgroningen .
 
-t00643:p1 a :Male ;
+t00643:p1
+  a :Male ;
   :dob "1895-04-02"^^xsd:date ;
   :dod "1927-10-11"^^xsd:date ;
   :nam "MEINDERT KLING" .
-
-t00643:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00643.jpg" ;
-  dc:date "2019-12-08T11:21:42"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2089 ;
-    geo:long 6.6479
-  ] ;
-  :nd "+53.2089+006.6479"^^ll: .
 

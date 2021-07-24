@@ -1,89 +1,82 @@
 @prefix t00068: <https://noordergraf.rug.nl/tomb/t00068#> .
 
-tomb:t00068 a :Tomb ;
-  :image t00068:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00068:g1 ,
-       t00068:p1 ,
-       t00068:p2 ,
-       t00068:p3 ,
-       t00068:p4 .
+tomb:t00068
+  a :Tomb ;
+  :ent t00068:p1, t00068:p2, t00068:p3, t00068:p4, t00068:g1 ;
+  :image [
+    dc:date "2019-09-25T16:10:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00068.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1908 ;
+      geo:long 6.5951
+    ] ;
+    :nd "+53.1908+006.5951"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen .
 
-t00068:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00068:c2 a :Village.n.02 ;
-  :place place:Steenwijkerwold2746761 ;
-  :name "STEENWIJKERWOLD" .
-
-t00068:c3 a :Village.n.02 ;
-  :place place:Nijeveen2750075 ;
-  :name "NIJEVEEN" .
-
-t00068:g1 a :Group.n.01 ;
-  :mem t00068:p2 ,
-       t00068:p3 .
-
-t00068:p1 a :Female ;
+t00068:p1
+  a :Female ;
   :dob "1920-07-13"^^xsd:date ;
   :dod "1943-07-20"^^xsd:date ;
-  :nam "JANTINA" ,
-       "TINI" ;
-  :rol t00068:r1 ,
-       t00068:r3 .
+  :nam "JANTINA", "TINI" ;
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00068:g1
+  ], [
+    a :Sister.n.01 ;
+    :tgt t00068:p4
+  ] .
 
-t00068:p2 a :Female ;
+t00068:p2
+  a :Female ;
   :dob "1891-04-09"^^xsd:date ;
   :dod "1943-12-08"^^xsd:date ;
   :nam "CORNELIA M.DE JONG" ;
-  :pob t00068:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "STEENWIJKERWOLD" ;
+    :place place:Steenwijkerwold2746761
+  ] ;
   :pod t00068:c1 ;
-  :rol t00068:r4 ,
-       t00068:r5 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00068:p3
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00068:p5
+  ] .
 
-t00068:p3 a :Male ;
+t00068:p3
+  a :Male ;
   :dob "1886-06-09"^^xsd:date ;
   :dod "1954-02-12"^^xsd:date ;
   :nam "JAN MULDER" ;
-  :pob t00068:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "NIJEVEEN" ;
+    :place place:Nijeveen2750075
+  ] ;
   :pod t00068:c1 ;
-  :rol t00068:r6 .
+  :rol [
+    a :Father.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00068:p4
+  ] .
 
-t00068:p4 a :Male ;
+t00068:p4
+  a :Male ;
   :nam "CORNELIS PIETER" .
 
-t00068:r1 a :Daughter.n.01 ;
-  :tgt t00068:g1 .
+t00068:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
-t00068:r3 a :Sister.n.01 ;
-  :tgt t00068:p4 .
-
-t00068:r4 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00068:p3 .
-
-t00068:r5 a :Mother.n.01 ;
-  :tgt t00068:p5 .
-
-t00068:r6 a :Father.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00068:p4 .
-
-t00068:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00068.jpg" ;
-  dc:date "2019-09-25T16:10:13"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1908 ;
-    geo:long 6.5951
-  ] ;
-  :nd "+53.1908+006.5951"^^ll: .
+t00068:g1
+  a :Group.n.01 ;
+  :mem t00068:p2, t00068:p3 .
 

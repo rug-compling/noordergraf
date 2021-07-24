@@ -1,65 +1,61 @@
 @prefix t00240: <https://noordergraf.rug.nl/tomb/t00240#> .
 
-tomb:t00240 a :Tomb ;
-  :image t00240:im1 ;
-  :site site:gr9751BBharen ;
-  :ent t00240:p1 ,
-       t00240:p2 ,
-       t00240:p3 ;
+tomb:t00240
+  a :Tomb ;
+  :ent t00240:p1, t00240:p2, t00240:p3 ;
+  :image [
+    dc:date "2019-10-11T17:43:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00240.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1725 ;
+      geo:long 6.6065
+    ] ;
+    :nd "+53.1725+006.6065"^^ll:
+  ] ;
   :ref "PSALM 68:10-B" ;
-  :sym t00240:s1 .
+  :site site:gr9751BBharen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00240:a1 a :Weeping.a.02 .
-
-t00240:c1 a :Village.n.02 ;
-  :place place:Onnen2749588 ;
-  :name "ONNEN" .
-
-t00240:p1 a :Male ;
+t00240:p1
+  a :Male ;
   :dob "1869-10-18"^^xsd:date ;
   :dod "1951-08-19"^^xsd:date ;
   :nam "BEREND HEKMAN" ;
   :pob t00240:c1 ;
   :pod t00240:c1 ;
-  :rol t00240:r1 ,
-       t00240:r2 ,
-       t00240:r3 .
+  :rol [
+    a :Father.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00240:p2
+  ], t00240:r2, [
+    a :Widower.n.01 ;
+    :bef t00240:r2 ;
+    :tgt t00240:p3
+  ] .
 
-t00240:p2 a :Female ;
+t00240:p2
+  a :Female ;
   :nam "ANNECHIEN TAKENS" .
 
-t00240:p3 a :Female ;
+t00240:p3
+  a :Female ;
   :nam "GEERTRUIDA VAN DALEN" .
 
-t00240:r1 a :Father.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00240:p2 .
+t00240:c1
+  a :Village.n.02 ;
+  :name "ONNEN" ;
+  :place place:Onnen2749588 .
 
-t00240:r2 a :Widower.n.01 ;
+t00240:r2
+  a :Widower.n.01 ;
   :beg "02-11-1918" ;
   :tgt t00240:p2 .
-
-t00240:r3 a :Widower.n.01 ;
-  :bef t00240:r2 ;
-  :tgt t00240:p3 .
-
-t00240:s1 a :Willow.n.01 ;
-  :att t00240:a1 .
-
-t00240:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00240.jpg" ;
-  dc:date "2019-10-11T17:43:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1725 ;
-    geo:long 6.6065
-  ] ;
-  :nd "+53.1725+006.6065"^^ll: .
 

@@ -1,21 +1,23 @@
 @prefix t01100: <https://noordergraf.rug.nl/tomb/t01100#> .
 
-tomb:t01100 a :Tomb ;
+tomb:t01100
+  a :Tomb ;
   :ent t01100:p1 ;
   :lan "NLD" .
 
-t01100:c1 a :Village.n.02 ;
-  :place place:Wadenoijen2745094 ;
-  :name "WADENOIJEN" .
-
-t01100:c2 a :Village.n.02 ;
-  :place place:Grijpskerk2755317 ;
-  :name "GRIJPSKERK" .
-
-t01100:p1 a :Male ;
+t01100:p1
+  a :Male ;
   :dob "1870-01-31"^^xsd:date ;
   :dod "1945-05-10"^^xsd:date ;
   :nam "DIRK VAN KRIEKEN" ;
-  :pob t01100:c1 ;
-  :pod t01100:c2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "WADENOIJEN" ;
+    :place place:Wadenoijen2745094
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "GRIJPSKERK" ;
+    :place place:Grijpskerk2755317
+  ] .
 

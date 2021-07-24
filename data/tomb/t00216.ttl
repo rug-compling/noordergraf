@@ -1,60 +1,55 @@
 @prefix t00216: <https://noordergraf.rug.nl/tomb/t00216#> .
 
-tomb:t00216 a :Tomb ;
-  :image t00216:im1 ;
-  :site site:gr9723EWgroningen ;
-  :ent t00216:g1 ,
-       t00216:p1 ,
-       t00216:p2 ,
-       t00216:p3 ;
+tomb:t00216
+  a :Tomb ;
+  :ent t00216:p1, t00216:p2, t00216:p3, t00216:g1 ;
+  :image [
+    dc:date "2019-10-08T14:45:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00216.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6369
+    ] ;
+    :nd "+53.2225+006.6369"^^ll:
+  ] ;
   :quo "RUST ZACHT" ;
-  :sym t00216:s1 .
+  :site site:gr9723EWgroningen ;
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00216:c1 a :Village.n.02 ;
-  :place place:Noorddijk2749981 ;
-  :name "NOORDDIJK" .
-
-t00216:c2 a :Village.n.02 ;
-  :place place:Harkstede2754819 ;
-  :name "HARKSTEDE" .
-
-t00216:g1 a :Group.n.01 ;
-  :mem t00216:p2 ,
-       t00216:p3 .
-
-t00216:p1 a :Female ;
+t00216:p1
+  a :Female ;
   :dob "1881-03-05"^^xsd:date ;
   :dod "1902-06-04"^^xsd:date ;
   :nam "ELIESABETH WIERINGA" ;
-  :pob t00216:c1 ;
-  :pod t00216:c2 ;
-  :rol t00216:r2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "NOORDDIJK" ;
+    :place place:Noorddijk2749981
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "HARKSTEDE" ;
+    :place place:Harkstede2754819
+  ] ;
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00216:g1
+  ] .
 
-t00216:p2 a :Male ;
+t00216:p2
+  a :Male ;
   :nam "JAN WIERINGA" .
 
-t00216:p3 a :Female ;
+t00216:p3
+  a :Female ;
   :nam "ANNA BOLT" .
 
-t00216:r2 a :Daughter.n.01 ;
-  :tgt t00216:g1 .
-
-t00216:s1 a :Rose.n.01 .
-
-t00216:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00216.jpg" ;
-  dc:date "2019-10-08T14:45:57"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2225 ;
-    geo:long 6.6369
-  ] ;
-  :nd "+53.2225+006.6369"^^ll: .
+t00216:g1
+  a :Group.n.01 ;
+  :mem t00216:p2, t00216:p3 .
 

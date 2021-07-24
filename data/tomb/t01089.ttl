@@ -1,30 +1,26 @@
 @prefix t01089: <https://noordergraf.rug.nl/tomb/t01089#> .
 
-tomb:t01089 a :Tomb ;
-  :image t01089:im1 ;
-  :site site:gr9752CMharen ;
+tomb:t01089
+  a :Tomb ;
   :ent t01089:p1 ;
-  :lan "NLD" .
+  :image [
+    dc:date "2020-09-11T17:50:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01089.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1636 ;
+      geo:long 6.6146
+    ] ;
+    :nd "+53.1636+006.6146"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9752CMharen .
 
-t01089:p1 a :Female ;
+t01089:p1
+  a :Female ;
   :dob "1911"^^xsd:gYear ;
   :dod "2011"^^xsd:gYear ;
   :nam "C.J.M. VERHOEF-VALK" .
-
-t01089:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01089.jpg" ;
-  dc:date "2020-09-11T17:50:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1636 ;
-    geo:long 6.6146
-  ] ;
-  :nd "+53.1636+006.6146"^^ll: .
 

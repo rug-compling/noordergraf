@@ -1,54 +1,49 @@
 @prefix t00010: <https://noordergraf.rug.nl/tomb/t00010#> .
 
-tomb:t00010 a :Tomb ;
-  :image t00010:im1 ;
+tomb:t00010
+  a :Tomb ;
+  :ent t00010:p1, t00010:p2, t00010:g1 ;
+  :image [
+    dc:date "2019-09-25T16:48:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00010.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1902 ;
+      geo:long 6.5927
+    ] ;
+    :nd "+53.1902+006.5927"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00010:g1 ,
-       t00010:p1 ,
-       t00010:p2 ;
-  :sym t00010:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00010:g1 a :Group.n.01 ;
-  :rol t00010:r1 .
-
-t00010:p1 a :Male ;
+t00010:p1
+  a :Male ;
   :dob "1890-08-30"^^xsd:date ;
   :dod "1935-12-14"^^xsd:date ;
   :nam "GERKE MIDDEL" .
 
-t00010:p2 a :Male ;
+t00010:p2
+  a :Male ;
   :dob "1865-04-04"^^xsd:date ;
   :dod "1961-10-13"^^xsd:date ;
   :nam "ROELF MIDDEL" ;
-  :rol t00010:r2 ,
-       t00010:r3 .
+  :rol [
+    a :Father.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00010:g1
+  ], [
+    a :Grandfather.n.01 ;
+    :tgt t00010:g1
+  ] .
 
-t00010:r1 a :Commemorator.n.01 ;
-  :tgt t00010:p2 .
-
-t00010:r2 a :Father.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00010:g1 .
-
-t00010:r3 a :Grandfather.n.01 ;
-  :tgt t00010:g1 .
-
-t00010:s1 a :Frond.n.01 .
-
-t00010:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00010.jpg" ;
-  dc:date "2019-09-25T16:48:36"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1902 ;
-    geo:long 6.5927
-  ] ;
-  :nd "+53.1902+006.5927"^^ll: .
+t00010:g1
+  a :Group.n.01 ;
+  :rol [
+    a :Commemorator.n.01 ;
+    :tgt t00010:p2
+  ] .
 

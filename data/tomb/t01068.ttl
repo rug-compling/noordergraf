@@ -1,50 +1,46 @@
 @prefix t01068: <https://noordergraf.rug.nl/tomb/t01068#> .
 
-tomb:t01068 a :Tomb ;
-  :image t01068:im1 ;
-  :site site:gr9367PAde_wilp ;
+tomb:t01068
+  a :Tomb ;
   :ent t01068:p1 ;
+  :image [
+    dc:date "2020-05-01T15:30:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01068.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1231 ;
+      geo:long 6.2513
+    ] ;
+    :nd "+53.1231+006.2513"^^ll:
+  ] ;
   :quo "AL WAT ONS OP AARDE DIERBAAR IS, ONTVALT ONS BIJ DEN DOOD GEWIS, ZIJN WIJ VOOR HET STERVEN BEREID, GEEN VREES DAN VOOR DE EEUWIGHEID"@nld ;
-  :sym t01068:s1 .
+  :site site:gr9367PAde_wilp ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01068:a1 a :Weeping.a.02 .
-
-t01068:c1 a :Village.n.02 ;
-  :place place:Siegerswoude2747339 ;
-  :name "SIEGERSWOUDE" .
-
-t01068:c2 a :Village.n.02 ;
-  :place place:DeWilp2756932 ;
-  :name "DE WILP" .
-
-t01068:p1 a :Female ;
+t01068:p1
+  a :Female ;
   :dob "1878-07-28"^^xsd:date ;
   :dod "1902-09-29"^^xsd:date ;
   :nam "METJE D. VAN VEEN" ;
-  :pob t01068:c1 ;
-  :pod t01068:c2 ;
-  :rol t01068:r1 .
-
-t01068:r1 a :Spouse.n.01 ;
-  :tgt t01068:p2 .
-
-t01068:s1 a :Willow.n.01 ;
-  :att t01068:a1 .
-
-t01068:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01068.jpg" ;
-  dc:date "2020-05-01T15:30:29"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1231 ;
-    geo:long 6.2513
+  :pob [
+    a :Village.n.02 ;
+    :name "SIEGERSWOUDE" ;
+    :place place:Siegerswoude2747339
   ] ;
-  :nd "+53.1231+006.2513"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "DE WILP" ;
+    :place place:DeWilp2756932
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01068:p2
+  ] .
 

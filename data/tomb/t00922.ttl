@@ -1,55 +1,50 @@
 @prefix t00922: <https://noordergraf.rug.nl/tomb/t00922#> .
 
-tomb:t00922 a :Tomb ;
-  :image t00922:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00922:p1 ,
-       t00922:p2 ;
+tomb:t00922
+  a :Tomb ;
+  :ent t00922:p1, t00922:p2 ;
+  :image [
+    dc:date "2020-03-07T14:10:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00922.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1719 ;
+      geo:long 6.3656
+    ] ;
+    :nd "+53.1719+006.3656"^^ll:
+  ] ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
-  :sym t00922:s1 ,
-       t00922:s2 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Oak.n.01
+  ], [
+    a :Frond.n.01
+  ] .
 
-t00922:c1 a :Village.n.02 ;
-  :place place:Langelo2751943 ;
-  :name "LANGELO" .
-
-t00922:c2 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00922:p1 a :Female ;
+t00922:p1
+  a :Female ;
   :dob "1847-08-28"^^xsd:date ;
   :dod "1930-03-06"^^xsd:date ;
   :nam "AALTIEN HULSHOF" ;
-  :pob t00922:c1 ;
-  :pod t00922:c2 ;
-  :rol t00922:r1 .
-
-t00922:p2 a :Male ;
-  :nam "TONNIS OOSTERHUIS" .
-
-t00922:r1 a :Widow.n.01 ;
-  :beg "23-11-1910" ;
-  :tgt t00922:p2 .
-
-t00922:s1 a :Oak.n.01 .
-
-t00922:s2 a :Frond.n.01 .
-
-t00922:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00922.jpg" ;
-  dc:date "2020-03-07T14:10:29"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1719 ;
-    geo:long 6.3656
+  :pob [
+    a :Village.n.02 ;
+    :name "LANGELO" ;
+    :place place:Langelo2751943
   ] ;
-  :nd "+53.1719+006.3656"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "TOLBERT" ;
+    :place place:Tolbert2746234
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :beg "23-11-1910" ;
+    :tgt t00922:p2
+  ] .
+
+t00922:p2
+  a :Male ;
+  :nam "TONNIS OOSTERHUIS" .
 

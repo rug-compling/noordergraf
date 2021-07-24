@@ -1,50 +1,44 @@
 @prefix t00601: <https://noordergraf.rug.nl/tomb/t00601#> .
 
-tomb:t00601 a :Tomb ;
-  :image t00601:im1 ;
-  :site site:gr9951TNwinsum ;
+tomb:t00601
+  a :Tomb ;
   :ent t00601:p1 ;
+  :image [
+    dc:date "2019-11-30T14:03:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00601.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3279 ;
+      geo:long 6.5113
+    ] ;
+    :nd "+53.3279+006.5113"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00601:s1 ,
-       t00601:s2 ,
-       t00601:s3 .
+  :site site:gr9951TNwinsum ;
+  :sym [
+    a :Angel.n.01
+  ], [
+    a :Butterfly.n.01
+  ], [
+    a :Cross.n.03
+  ] .
 
-t00601:c1 a :Village.n.02 ;
-  :place place:Onderdendam2749601 ;
-  :name "ONDERDENDAM" .
-
-t00601:c2 a :Village.n.02 ;
-  :place place:Winsum2744337 ;
-  :name "WINSUM" .
-
-t00601:p1 a :Male ;
+t00601:p1
+  a :Male ;
   :dob "1798-08-29"^^xsd:date ;
   :dod "1882-01-06"^^xsd:date ;
   :nam "JAN WILLEMS KOITER" ;
-  :pob t00601:c1 ;
-  :pod t00601:c2 ;
-  :quo "SINTS DE STICHTING DER CHR. GER. GEMEENTE ALHIER IN 1843, WAS HIJ EERST DIAKEN, DAARNA OUDERLING DIER GEMEENTE" .
-
-t00601:s1 a :Angel.n.01 .
-
-t00601:s2 a :Butterfly.n.01 .
-
-t00601:s3 a :Cross.n.03 .
-
-t00601:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00601.jpg" ;
-  dc:date "2019-11-30T14:03:12"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3279 ;
-    geo:long 6.5113
+  :pob [
+    a :Village.n.02 ;
+    :name "ONDERDENDAM" ;
+    :place place:Onderdendam2749601
   ] ;
-  :nd "+53.3279+006.5113"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "WINSUM" ;
+    :place place:Winsum2744337
+  ] ;
+  :quo "SINTS DE STICHTING DER CHR. GER. GEMEENTE ALHIER IN 1843, WAS HIJ EERST DIAKEN, DAARNA OUDERLING DIER GEMEENTE" .
 

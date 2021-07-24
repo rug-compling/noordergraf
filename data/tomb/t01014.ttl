@@ -1,83 +1,78 @@
 @prefix t01014: <https://noordergraf.rug.nl/tomb/t01014#> .
 
-tomb:t01014 a :Tomb ;
-  :image t01014:im1 ;
-  :site site:gr9734ATgroningen ;
-  :ent t01014:g1 ,
-       t01014:g2 ,
-       t01014:p1 ,
-       t01014:p2 ,
-       t01014:p4 ;
+tomb:t01014
+  a :Tomb ;
+  :ent t01014:p1, t01014:p2, t01014:p4, [
+    a :Group.n.01 ;
+    :mem t01014:p3 ;
+    :qua 4
+  ], [
+    a :Group.n.01 ;
+    :mem t01014:p5 ;
+    :qua 3
+  ] ;
+  :image [
+    dc:date "2020-04-05T12:18:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01014.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2442 ;
+      geo:long 6.6278
+    ] ;
+    :nd "+53.2442+006.6278"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01014:s1 ,
-       t01014:s2 .
+  :site site:gr9734ATgroningen ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ] .
 
-t01014:c1 a :Village.n.02 ;
-  :place place:Garmerwolde2755728 ;
-  :name "GARMERWOLDE" .
-
-t01014:c2 a :Village.n.02 ;
-  :place place:Noorddijk2749981 ;
-  :name "NOORDDIJK" .
-
-t01014:g1 a :Group.n.01 ;
-  :mem t01014:p3 ;
-  :qua 4 .
-
-t01014:g2 a :Group.n.01 ;
-  :mem t01014:p5 ;
-  :qua 3 .
-
-t01014:p1 a :Female ;
+t01014:p1
+  a :Female ;
   :dob "1816-06-12"^^xsd:date ;
   :dod "1882-01-28"^^xsd:date ;
   :nam "IMKE JANS NIEHOF" ;
-  :pob t01014:c1 ;
-  :pod t01014:c2 ;
-  :rol t01014:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "GARMERWOLDE" ;
+    :place place:Garmerwolde2755728
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "NOORDDIJK" ;
+    :place place:Noorddijk2749981
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01014:p2
+  ] .
 
-t01014:p2 a :Male ;
+t01014:p2
+  a :Male ;
   :nam "HEIKE GEERTS WIERENGA" .
 
-t01014:p3 a :Person ;
-  :rol t01014:r2 .
+t01014:p3
+  a :Person ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t01014:p1
+  ] .
 
-t01014:p4 a :Female ;
-  :rol t01014:r3 .
+t01014:p4
+  a :Female ;
+  :rol [
+    a :Daughter-in-law.n.01
+  ] .
 
-t01014:p5 a :Person ;
+t01014:p5
+  a :Person ;
   :att "WIJLEN" ;
-  :rol t01014:r4 .
-
-t01014:r1 a :Spouse.n.01 ;
-  :tgt t01014:p2 .
-
-t01014:r2 a :Child.n.02 ;
-  :tgt t01014:p1 .
-
-t01014:r3 a :Daughter-in-law.n.01 .
-
-t01014:r4 a :Child.n.02 ;
-  :tgt t01014:p1 .
-
-t01014:s1 a :Frond.n.01 .
-
-t01014:s2 a :Frond.n.01 .
-
-t01014:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01014.jpg" ;
-  dc:date "2020-04-05T12:18:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2442 ;
-    geo:long 6.6278
-  ] ;
-  :nd "+53.2442+006.6278"^^ll: .
+  :rol [
+    a :Child.n.02 ;
+    :tgt t01014:p1
+  ] .
 

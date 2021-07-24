@@ -1,51 +1,44 @@
 @prefix t00238: <https://noordergraf.rug.nl/tomb/t00238#> .
 
-tomb:t00238 a :Tomb ;
-  :image t00238:im1 ;
+tomb:t00238
+  a :Tomb ;
+  :ent t00238:p1, t00238:p2 ;
+  :image [
+    dc:date "2019-10-10T09:41:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00238.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2054 ;
+      geo:long 6.5723
+    ] ;
+    :nd "+53.2054+006.5723"^^ll:
+  ] ;
+  :quo "DE LIEFDE ZOEKT ZICH ZELVE NIET", "RUST ZACHT LIEVE VADER EN OPA" ;
   :site site:gr9725ACgroningen ;
-  :ent t00238:p1 ,
-       t00238:p2 ;
-  :quo "DE LIEFDE ZOEKT ZICH ZELVE NIET" ,
-       "RUST ZACHT LIEVE VADER EN OPA" ;
-  :sym t00238:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00238:p1 a :Female ;
+t00238:p1
+  a :Female ;
   :dod "1934-11-06"^^xsd:date ;
   :nam "ALBERNDINA MESKEN" ;
-  :rol t00238:r1 ,
-       t00238:r2 ,
-       t00238:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00238:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00238:p2
+  ] .
 
-t00238:p2 a :Male ;
+t00238:p2
+  a :Male ;
   :dob "1869-06-10"^^xsd:date ;
   :dod "1943-04-17"^^xsd:date ;
   :nam "H. ROSING" .
-
-t00238:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00238:p2 .
-
-t00238:r2 a :Mother.n.01 .
-
-t00238:r3 a :Spouse.n.01 ;
-  :tgt t00238:p2 .
-
-t00238:s1 a :Frond.n.01 .
-
-t00238:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00238.jpg" ;
-  dc:date "2019-10-10T09:41:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2054 ;
-    geo:long 6.5723
-  ] ;
-  :nd "+53.2054+006.5723"^^ll: .
 

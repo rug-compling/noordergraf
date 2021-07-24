@@ -1,51 +1,48 @@
 @prefix t00403: <https://noordergraf.rug.nl/tomb/t00403#> .
 
-tomb:t00403 a :Tomb ;
-  :image t00403:im1 ;
-  :site site:fr9285TCbuitenpost ;
-  :ent t00403:p1 ,
-       t00403:p2 ;
+tomb:t00403
+  a :Tomb ;
+  :ent t00403:p1, t00403:p2 ;
+  :image [
+    dc:date "2019-10-26T14:46:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00403.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2518 ;
+      geo:long 6.1448
+    ] ;
+    :nd "+53.2518+006.1448"^^ll:
+  ] ;
   :ref "1 THESSALONICENZEN 4:14" ;
-  :sym t00403:s1 .
+  :site site:fr9285TCbuitenpost ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00403:a1 a :Weeping.a.02 .
-
-t00403:c1 a :Village.n.02 ;
-  :place place:Buitenpost2758131 ;
-  :name "BUITENPOST" .
-
-t00403:p1 a :Male ;
+t00403:p1
+  a :Male ;
   :dob "1869-10-03"^^xsd:date ;
   :dod "1951-10-12"^^xsd:date ;
   :nam "HENDRIK J. POL" ;
   :pob t00403:c1 ;
   :pod t00403:c1 ;
-  :rol t00403:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00403:p2
+  ] .
 
-t00403:p2 a :Male ;
+t00403:p2
+  a :Male ;
   :nam "A. VAN DER GALIËN" .
 
-t00403:r1 a :Spouse.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00403:p2 .
-
-t00403:s1 a :Willow.n.01 ;
-  :att t00403:a1 .
-
-t00403:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00403.jpg" ;
-  dc:date "2019-10-26T14:46:08"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2518 ;
-    geo:long 6.1448
-  ] ;
-  :nd "+53.2518+006.1448"^^ll: .
+t00403:c1
+  a :Village.n.02 ;
+  :name "BUITENPOST" ;
+  :place place:Buitenpost2758131 .
 

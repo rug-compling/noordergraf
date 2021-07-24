@@ -1,47 +1,41 @@
 @prefix t00196: <https://noordergraf.rug.nl/tomb/t00196#> .
 
-tomb:t00196 a :Tomb ;
-  :image t00196:im1 ;
+tomb:t00196
+  a :Tomb ;
+  :ent t00196:p1, t00196:p2 ;
+  :image [
+    dc:date "2019-10-06T14:40:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00196.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1874 ;
+      geo:long 6.5970
+    ] ;
+    :nd "+53.1874+006.5970"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00196:p1 ,
-       t00196:p2 ;
-  :sym t00196:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00196:p1 a :Female ;
+t00196:p1
+  a :Female ;
   :dob "1884-02-29"^^xsd:date ;
   :dod "1933-05-01"^^xsd:date ;
   :nam "TJITSKE DE VRIES" ;
-  :rol t00196:r1 ,
-       t00196:r2 ,
-       t00196:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00196:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00196:p2
+  ] .
 
-t00196:p2 a :Male ;
+t00196:p2
+  a :Male ;
   :nam "JAN HUISMAN" .
-
-t00196:r1 a :Wife.n.01 ;
-  :tgt t00196:p2 .
-
-t00196:r2 a :Mother.n.01 .
-
-t00196:r3 a :Spouse.n.01 ;
-  :tgt t00196:p2 .
-
-t00196:s1 a :Frond.n.01 .
-
-t00196:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00196.jpg" ;
-  dc:date "2019-10-06T14:40:03"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1874 ;
-    geo:long 6.5970
-  ] ;
-  :nd "+53.1874+006.5970"^^ll: .
 

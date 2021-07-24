@@ -1,36 +1,40 @@
 @prefix t01111: <https://noordergraf.rug.nl/tomb/t01111#> .
 
-tomb:t01111 a :Tomb ;
+tomb:t01111
+  a :Tomb ;
   :ent t01111:p1 ;
   :quo "RUST ZACHT GELIEFDE TANTE"@nld ;
-  :sym t01111:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01111:a1 a :Weeping.a.02 .
-
-t01111:c1 a :Village.n.02 ;
-  :place place:Wagenborgen2745090 ;
-  :name "WAGENBORGEN" .
-
-t01111:c2 a :Village.n.02 ;
-  :place place:Weidum2744891 ;
-  :name "WEIDUM" .
-
-t01111:c3 a :Province.n.01 ;
-  :place place:ProvincieFriesland2755812 ;
-  :mem t01111:c2 ;
-  :name "FRIESLAND" .
-
-t01111:p1 a :Female ;
+t01111:p1
+  a :Female ;
   :dob "1843-04-19"^^xsd:date ;
   :dod "1928-09-12"^^xsd:date ;
   :nam "JANTJE A. NIEHOFF" ;
-  :pob t01111:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "WAGENBORGEN" ;
+    :place place:Wagenborgen2745090
+  ] ;
   :pod t01111:c2 ;
-  :rol t01111:r1 .
+  :rol [
+    a :Aunt.n.01 ;
+    :att "GELIEFDE"
+  ] .
 
-t01111:r1 a :Aunt.n.01 ;
-  :att "GELIEFDE" .
+t01111:c2
+  a :Village.n.02 ;
+  :name "WEIDUM" ;
+  :place place:Weidum2744891 .
 
-t01111:s1 a :Willow.n.01 ;
-  :att t01111:a1 .
+[]
+  a :Province.n.01 ;
+  :mem t01111:c2 ;
+  :name "FRIESLAND" ;
+  :place place:ProvincieFriesland2755812 .
 

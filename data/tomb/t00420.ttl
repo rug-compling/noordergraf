@@ -1,42 +1,38 @@
 @prefix t00420: <https://noordergraf.rug.nl/tomb/t00420#> .
 
-tomb:t00420 a :Tomb ;
-  :image t00420:im1 ;
-  :site site:fr9166NAschiermonnikoog ;
+tomb:t00420
+  a :Tomb ;
   :ent t00420:p1 ;
-  :sym t00420:s1 .
+  :image [
+    dc:date "2019-11-02T11:41:39"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00420.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4795 ;
+      geo:long 6.1609
+    ] ;
+    :nd "+53.4795+006.1609"^^ll:
+  ] ;
+  :site site:fr9166NAschiermonnikoog ;
+  :sym [
+    a :Wren.n.02
+  ] .
 
-t00420:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00420:c2 a :Village.n.02 ;
-  :place place:Zuidlaren2743680 ;
-  :name "ZUIDLAREN" .
-
-t00420:p1 a :Female ;
+t00420:p1
+  a :Female ;
   :dob "1931-10-07"^^xsd:date ;
   :dod "2014-05-04"^^xsd:date ;
   :nam "AAFKE TEENSMA" ;
-  :pob t00420:c1 ;
-  :pod t00420:c2 .
-
-t00420:s1 a :Wren.n.02 .
-
-t00420:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00420.jpg" ;
-  dc:date "2019-11-02T11:41:39"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4795 ;
-    geo:long 6.1609
+  :pob [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
   ] ;
-  :nd "+53.4795+006.1609"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "ZUIDLAREN" ;
+    :place place:Zuidlaren2743680
+  ] .
 

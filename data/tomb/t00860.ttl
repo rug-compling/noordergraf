@@ -1,46 +1,43 @@
 @prefix t00860: <https://noordergraf.rug.nl/tomb/t00860#> .
 
-tomb:t00860 a :Tomb ;
-  :image t00860:im1 ;
-  :site site:dr7841CDsleen ;
+tomb:t00860
+  a :Tomb ;
   :ent t00860:p1 ;
+  :image [
+    dc:date "2020-02-15T15:34:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00860.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7756 ;
+      geo:long 6.8027
+    ] ;
+    :nd "+52.7756+006.8027"^^ll:
+  ] ;
   :quo "RUST ZACHT GELIEFDE ZUSTER"@nld ;
-  :sym t00860:s1 .
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00860:a1 a :Weeping.a.02 .
-
-t00860:c1 a :Village.n.02 ;
-  :place place:Erm2756040 ;
-  :name "ERM" .
-
-t00860:p1 a :Female ;
+t00860:p1
+  a :Female ;
   :dob "1878-06-25"^^xsd:date ;
   :dod "1905-12-19"^^xsd:date ;
   :nam "HENDRIKJE KAMPING" ;
   :pob t00860:c1 ;
   :pod t00860:c1 ;
-  :rol t00860:r1 .
+  :rol [
+    a :Sister.n.01 ;
+    :att "GELIEFDE"
+  ] .
 
-t00860:r1 a :Sister.n.01 ;
-  :att "GELIEFDE" .
-
-t00860:s1 a :Willow.n.01 ;
-  :att t00860:a1 .
-
-t00860:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00860.jpg" ;
-  dc:date "2020-02-15T15:34:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7756 ;
-    geo:long 6.8027
-  ] ;
-  :nd "+52.7756+006.8027"^^ll: .
+t00860:c1
+  a :Village.n.02 ;
+  :name "ERM" ;
+  :place place:Erm2756040 .
 

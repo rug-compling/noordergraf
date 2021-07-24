@@ -1,48 +1,43 @@
 @prefix t00225: <https://noordergraf.rug.nl/tomb/t00225#> .
 
-tomb:t00225 a :Tomb ;
-  :image t00225:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t00225:p1 ,
-       t00225:p2 ;
+tomb:t00225
+  a :Tomb ;
+  :ent t00225:p1, t00225:p2 ;
+  :image [
+    dc:date "2020-04-04T10:57:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00225.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1759 ;
+      geo:long 7.0952
+    ] ;
+    :nd "+53.1759+007.0952"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE VADER" ;
-  :sym t00225:s1 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00225:a1 a :Weeping.a.02 .
-
-t00225:p1 a :Male ;
+t00225:p1
+  a :Male ;
   :dob "1845-09-13"^^xsd:date ;
   :dod "1906-05-11"^^xsd:date ;
   :nam "W. KOLKMAN" ;
-  :rol t00225:r1 ,
-       t00225:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00225:p2
+  ], [
+    a :Father.n.01
+  ] .
 
-t00225:p2 a :Female ;
+t00225:p2
+  a :Female ;
   :nam "F. VAN LANG" .
-
-t00225:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00225:p2 .
-
-t00225:r2 a :Father.n.01 .
-
-t00225:s1 a :Willow.n.01 ;
-  :att t00225:a1 .
-
-t00225:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00225.jpg" ;
-  dc:date "2020-04-04T10:57:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1759 ;
-    geo:long 7.0952
-  ] ;
-  :nd "+53.1759+007.0952"^^ll: .
 

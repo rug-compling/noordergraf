@@ -1,35 +1,31 @@
 @prefix t00511: <https://noordergraf.rug.nl/tomb/t00511#> .
 
-tomb:t00511 a :Tomb ;
-  :image t00511:im1 ;
-  :site site:gr9601KAhoogezand ;
+tomb:t00511
+  a :Tomb ;
   :ent t00511:p1 ;
-  :quo "ZO'ST GOUD ZO'ST GOUD"@gos .
-
-t00511:m1 a :Measure.n.02 ;
-  :mem t00511:u1 ;
-  :qua 40 .
-
-t00511:p1 a :Male ;
-  :age t00511:m1 ;
-  :nam "ADRIE" .
-
-t00511:u1 a :Year.n.01 .
-
-t00511:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00511.jpg" ;
-  dc:date "2019-11-23T10:25:38"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1649 ;
-    geo:long 6.7538
+  :image [
+    dc:date "2019-11-23T10:25:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00511.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1649 ;
+      geo:long 6.7538
+    ] ;
+    :nd "+53.1649+006.7538"^^ll:
   ] ;
-  :nd "+53.1649+006.7538"^^ll: .
+  :quo "ZO'ST GOUD ZO'ST GOUD"@gos ;
+  :site site:gr9601KAhoogezand .
+
+t00511:p1
+  a :Male ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 40
+  ] ;
+  :nam "ADRIE" .
 

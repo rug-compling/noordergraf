@@ -1,63 +1,59 @@
 @prefix t00934: <https://noordergraf.rug.nl/tomb/t00934#> .
 
-tomb:t00934 a :Tomb ;
-  :image t00934:im1 ;
-  :site site:gr9741GHgroningen ;
-  :ent t00934:g1 ,
-       t00934:p1 ,
-       t00934:p2 ,
-       t00934:p3 ;
+tomb:t00934
+  a :Tomb ;
+  :ent t00934:p1, t00934:p2, t00934:p3, [
+    a :Group.n.01 ;
+    :mem t00934:p2, t00934:p3 ;
+    :rol [
+      a :Parent.n.01 ;
+      :tgt t00934:p1
+    ]
+  ] ;
+  :image [
+    dc:date "2020-03-18T09:02:52"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00934.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2393 ;
+      geo:long 6.5517
+    ] ;
+    :nd "+53.2393+006.5517"^^ll:
+  ] ;
   :lan "NLD" ;
-  :ref t00934:v1 .
+  :ref t00934:v1 ;
+  :site site:gr9741GHgroningen .
 
-t00934:b1 a :John.n.05 ;
-  :prt t00934:c1 .
-
-t00934:c1 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00934:v1 .
-
-t00934:g1 a :Group.n.01 ;
-  :mem t00934:p2 ,
-       t00934:p3 ;
-  :rol t00934:r1 .
-
-t00934:p1 a :Female ;
+t00934:p1
+  a :Female ;
   :dob "1952-09-27"^^xsd:date ;
   :dod "1956-11-13"^^xsd:date ;
   :nam "CATIE SNIP" .
 
-t00934:p2 a :Male ;
+t00934:p2
+  a :Male ;
   :dob "1914-08-13"^^xsd:date ;
   :dod "1997-11-05"^^xsd:date ;
   :nam "SJACOBUS SNIP" .
 
-t00934:p3 a :Female ;
+t00934:p3
+  a :Female ;
   :dob "1916-01-07"^^xsd:date ;
   :dod "2000-11-23"^^xsd:date ;
   :nam "GEESJE SNIP-LEEUWE" .
 
-t00934:r1 a :Parent.n.01 ;
-  :tgt t00934:p1 .
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00934:v1
+  ] .
 
-t00934:v1 a :Verse.n.01 ;
+t00934:v1
+  a :Verse.n.01 ;
   :ord 2 ;
   :txt "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN" .
-
-t00934:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00934.jpg" ;
-  dc:date "2020-03-18T09:02:52"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2393 ;
-    geo:long 6.5517
-  ] ;
-  :nd "+53.2393+006.5517"^^ll: .
 

@@ -1,48 +1,44 @@
 @prefix t00618: <https://noordergraf.rug.nl/tomb/t00618#> .
 
-tomb:t00618 a :Tomb ;
-  :image t00618:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00618:p1 ,
-       t00618:p2 ;
+tomb:t00618
+  a :Tomb ;
+  :ent t00618:p1, t00618:p2 ;
+  :image [
+    dc:date "2019-11-23T10:03:51"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00618.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1644 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1644+006.7541"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00618:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Branch.n.02 ;
+    :qua 2
+  ] .
 
-t00618:p1 a :Person ;
+t00618:p1
+  a :Person ;
   :dob "1794-02-05"^^xsd:date ;
   :dod "1871-06-08"^^xsd:date ;
   :nam "W.R. MULDER" ;
-  :rol t00618:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00618:p2
+  ] .
 
-t00618:p2 a :Person ;
+t00618:p2
+  a :Person ;
   :dob "1794-08-08"^^xsd:date ;
   :dod "1874-07-26"^^xsd:date ;
   :nam "L.J. BONTEKOE" ;
-  :rol t00618:r2 .
-
-t00618:r1 a :Spouse.n.01 ;
-  :tgt t00618:p2 .
-
-t00618:r2 a :Spouse.n.01 ;
-  :tgt t00618:p1 .
-
-t00618:s1 a :Branch.n.02 ;
-  :qua 2 .
-
-t00618:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00618.jpg" ;
-  dc:date "2019-11-23T10:03:51"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1644 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1644+006.7541"^^ll: .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00618:p1
+  ] .
 

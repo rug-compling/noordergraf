@@ -1,42 +1,38 @@
 @prefix t01035: <https://noordergraf.rug.nl/tomb/t01035#> .
 
-tomb:t01035 a :Tomb ;
-  :image t01035:im1 ;
-  :site site:gr9804TEnoordhorn ;
+tomb:t01035
+  a :Tomb ;
   :ent t01035:p1 ;
+  :image [
+    dc:date "2020-04-19T12:02:39"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01035.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2644 ;
+      geo:long 6.3937
+    ] ;
+    :nd "+53.2644+006.3937"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01035:s1 ,
-       t01035:s2 .
+  :site site:gr9804TEnoordhorn ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t01035:c1 a :Village.n.02 ;
-  :place place:Noordhorn2749875 ;
-  :name "NOORDHORN" .
-
-t01035:p1 a :Male ;
+t01035:p1
+  a :Male ;
   :dob "1893-07-19"^^xsd:date ;
   :dod "1937-06-26"^^xsd:date ;
   :nam "KLAAS VLEDDER" ;
   :pob t01035:c1 ;
   :pod t01035:c1 .
 
-t01035:s1 a :Frond.n.01 .
-
-t01035:s2 a :Ribbon.n.01 .
-
-t01035:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01035.jpg" ;
-  dc:date "2020-04-19T12:02:39"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2644 ;
-    geo:long 6.3937
-  ] ;
-  :nd "+53.2644+006.3937"^^ll: .
+t01035:c1
+  a :Village.n.02 ;
+  :name "NOORDHORN" ;
+  :place place:Noordhorn2749875 .
 

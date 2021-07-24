@@ -1,53 +1,49 @@
 @prefix t00791: <https://noordergraf.rug.nl/tomb/t00791#> .
 
-tomb:t00791 a :Tomb ;
-  :image t00791:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00791:g1 ,
-       t00791:p1 ,
-       t00791:p2 ,
-       t00791:p3 ;
-  :lan "NLD" .
+tomb:t00791
+  a :Tomb ;
+  :ent t00791:p1, t00791:p2, t00791:p3, t00791:g1 ;
+  :image [
+    dc:date "2020-01-18T13:10:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00791.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2776 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2776+006.6936"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9791KEten_boer .
 
-t00791:c1 a :Village.n.02 ;
-  :place place:TenBoer2746491 ;
-  :name "TEN BOER" .
-
-t00791:g1 a :Group.n.01 ;
-  :mem t00791:p2 ,
-       t00791:p3 .
-
-t00791:p1 a :Female ;
+t00791:p1
+  a :Female ;
   :dob "1897-10-06"^^xsd:date ;
   :dod "1918-07-25"^^xsd:date ;
   :nam "HENDRIKJE BOLT" ;
   :pob t00791:c1 ;
   :pod t00791:c1 ;
-  :rol t00791:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00791:g1
+  ] .
 
-t00791:p2 a :Male ;
+t00791:p2
+  a :Male ;
   :nam "J. BOLT" .
 
-t00791:p3 a :Female ;
+t00791:p3
+  a :Female ;
   :nam "A. BOLT-DOORNBOS" .
 
-t00791:r1 a :Daughter.n.01 ;
-  :tgt t00791:g1 .
+t00791:c1
+  a :Village.n.02 ;
+  :name "TEN BOER" ;
+  :place place:TenBoer2746491 .
 
-t00791:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00791.jpg" ;
-  dc:date "2020-01-18T13:10:14"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2776 ;
-    geo:long 6.6936
-  ] ;
-  :nd "+53.2776+006.6936"^^ll: .
+t00791:g1
+  a :Group.n.01 ;
+  :mem t00791:p2, t00791:p3 .
 

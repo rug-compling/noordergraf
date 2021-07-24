@@ -1,53 +1,47 @@
 @prefix t00235: <https://noordergraf.rug.nl/tomb/t00235#> .
 
-tomb:t00235 a :Tomb ;
-  :image t00235:im1 ;
-  :site site:gr9723EWgroningen ;
-  :ent t00235:p1 ,
-       t00235:p2 ;
+tomb:t00235
+  a :Tomb ;
+  :ent t00235:p1, t00235:p2 ;
+  :image [
+    dc:date "2019-10-08T14:41:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00235.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2227 ;
+      geo:long 6.6361
+    ] ;
+    :nd "+53.2227+006.6361"^^ll:
+  ] ;
   :quo "HEM DIE MET VLIJT VOLBRACHT ZIJN TIJD IN'T AARDSCHE LEVEN, ZIJ NU DE RUST AAN GINDSCHE KUST BIJ GOD GEGEVEN!" ;
-  :sym t00235:s1 .
+  :site site:gr9723EWgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Sandglass.n.01
+    ], [
+      a :Scythe.n.01
+    ], [
+      a :Torch.n.01 ;
+      :att [
+        a :Inverted.a.01
+      ]
+    ]
+  ] .
 
-t00235:a1 a :Inverted.a.01 .
-
-t00235:p1 a :Male ;
+t00235:p1
+  a :Male ;
   :dob "1798-10-16"^^xsd:date ;
   :dod "1859-12-09"^^xsd:date ;
   :nam "JAN TAMMES EMMELKAMP" ;
-  :rol t00235:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00235:p2
+  ] .
 
-t00235:p2 a :Female ;
+t00235:p2
+  a :Female ;
   :nam "WIBBECHIEN K. BRUININGA" .
-
-t00235:r1 a :Spouse.n.01 ;
-  :tgt t00235:p2 .
-
-t00235:s1 a :Composite.n.01 ;
-  :prt t00235:s2 ,
-       t00235:s3 ,
-       t00235:s4 .
-
-t00235:s2 a :Sandglass.n.01 .
-
-t00235:s3 a :Scythe.n.01 .
-
-t00235:s4 a :Torch.n.01 ;
-  :att t00235:a1 .
-
-t00235:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00235.jpg" ;
-  dc:date "2019-10-08T14:41:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2227 ;
-    geo:long 6.6361
-  ] ;
-  :nd "+53.2227+006.6361"^^ll: .
 

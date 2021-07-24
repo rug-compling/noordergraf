@@ -1,53 +1,51 @@
 @prefix t00971: <https://noordergraf.rug.nl/tomb/t00971#> .
 
-tomb:t00971 a :Tomb ;
-  :image t00971:im1 ;
-  :site site:gr9479TNnoordlaren ;
-  :ent t00971:p1 ,
-       t00971:p2 ;
+tomb:t00971
+  a :Tomb ;
+  :ent t00971:p1, t00971:p2 ;
+  :image [
+    dc:date "2020-03-25T09:31:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00971.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1200 ;
+      geo:long 6.6583
+    ] ;
+    :nd "+53.1200+006.6583"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00971:s1 .
+  :site site:gr9479TNnoordlaren ;
+  :sym [
+    a :Butterfly.n.01
+  ] .
 
-t00971:c1 a :Village.n.02 ;
-  :place place:Noordlaren2749857 ;
-  :name "NOORDLAREN" .
-
-t00971:c2 a :Municipality.n.01 ;
-  :place place:Haren2754841 ;
-  :mem t00971:c1 ;
-  :name "HAREN" .
-
-t00971:p1 a :Female ;
+t00971:p1
+  a :Female ;
   :dob "1864-09-03"^^xsd:date ;
   :dod "1950-07-26"^^xsd:date ;
   :nam "EGBERTIEN BORGMAN" ;
   :pob t00971:c1 ;
   :pod t00971:c1 ;
-  :rol t00971:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00971:p2
+  ] .
 
-t00971:p2 a :Male ;
+t00971:p2
+  a :Male ;
   :nam "H. HEMMES" .
 
-t00971:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00971:p2 .
+t00971:c1
+  a :Village.n.02 ;
+  :name "NOORDLAREN" ;
+  :place place:Noordlaren2749857 .
 
-t00971:s1 a :Butterfly.n.01 .
-
-t00971:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00971.jpg" ;
-  dc:date "2020-03-25T09:31:05"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1200 ;
-    geo:long 6.6583
-  ] ;
-  :nd "+53.1200+006.6583"^^ll: .
+[]
+  a :Municipality.n.01 ;
+  :mem t00971:c1 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 

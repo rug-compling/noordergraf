@@ -1,49 +1,44 @@
 @prefix t00195: <https://noordergraf.rug.nl/tomb/t00195#> .
 
-tomb:t00195 a :Tomb ;
-  :image t00195:im1 ;
+tomb:t00195
+  a :Tomb ;
+  :ent t00195:p1, t00195:p2, t00195:p3 ;
+  :image [
+    dc:date "2019-10-06T14:40:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00195.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1874 ;
+      geo:long 6.5970
+    ] ;
+    :nd "+53.1874+006.5970"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00195:p1 ,
-       t00195:p2 ,
-       t00195:p3 ;
-  :sym t00195:s1 .
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00195:p1 a :Female ;
+t00195:p1
+  a :Female ;
   :dob "1899-07-15"^^xsd:date ;
   :dod "1932-09-17"^^xsd:date ;
   :nam "ANNIE STUIVINGA" ;
-  :rol t00195:r1 ,
-       t00195:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00195:p2
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00195:p3
+  ] .
 
-t00195:p2 a :Male ;
+t00195:p2
+  a :Male ;
   :nam "J. HEUNING" .
 
-t00195:p3 a :Female ;
+t00195:p3
+  a :Female ;
   :nam "AAFIEN" .
-
-t00195:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00195:p2 .
-
-t00195:r2 a :Mother.n.01 ;
-  :tgt t00195:p3 .
-
-t00195:s1 a :Rose.n.01 .
-
-t00195:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00195.jpg" ;
-  dc:date "2019-10-06T14:40:26"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1874 ;
-    geo:long 6.5970
-  ] ;
-  :nd "+53.1874+006.5970"^^ll: .
 

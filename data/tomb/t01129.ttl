@@ -1,41 +1,43 @@
 @prefix t01129: <https://noordergraf.rug.nl/tomb/t01129#> .
 
-tomb:t01129 a :Tomb ;
+tomb:t01129
+  a :Tomb ;
   :ent t01129:p1 ;
   :lan "NLD" ;
-  :sym t01129:s1 ,
-       t01129:s2 .
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Frond.n.01
+  ] .
 
-t01129:a1 a :Young.a.01 .
-
-t01129:g1 a :Group.n.01 ;
-  :mem t01129:p3 ;
-  :qua 6 .
-
-t01129:p1 a :Female ;
+t01129:p1
+  a :Female ;
   :dob "1839-10-13"^^xsd:date ;
   :dod "1876-05-29"^^xsd:date ;
   :nam "HINDERKTJE HARMS WIGBOLDUS" ;
-  :rol t01129:r1 ,
-       t01129:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01129:p2
+  ], [
+    a :Mother.n.01 ;
+    :tgt [
+      a :Group.n.01 ;
+      :mem t01129:p3 ;
+      :qua 6
+    ]
+  ] .
 
-t01129:p2 a :Male ;
+t01129:p2
+  a :Male ;
   :nam "T.H. DOLFIJN" .
 
-t01129:p3 a :Person ;
-  :att t01129:a1 ;
-  :rol t01129:r3 .
-
-t01129:r1 a :Spouse.n.01 ;
-  :tgt t01129:p2 .
-
-t01129:r2 a :Mother.n.01 ;
-  :tgt t01129:g1 .
-
-t01129:r3 a :Child.n.02 ;
-  :tgt t01129:p1 .
-
-t01129:s1 a :Butterfly.n.01 .
-
-t01129:s2 a :Frond.n.01 .
+t01129:p3
+  a :Person ;
+  :att [
+    a :Young.a.01
+  ] ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t01129:p1
+  ] .
 

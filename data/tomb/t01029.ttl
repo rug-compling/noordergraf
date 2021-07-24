@@ -1,75 +1,73 @@
 @prefix t01029: <https://noordergraf.rug.nl/tomb/t01029#> .
 
-tomb:t01029 a :Tomb ;
-  :image t01029:im1 ;
-  :site site:gr9906PPbierum ;
-  :ent t01029:p1 ,
-       t01029:p2 ,
-       t01029:p3 ;
+tomb:t01029
+  a :Tomb ;
+  :ent t01029:p1, t01029:p2, t01029:p3 ;
+  :image [
+    dc:date "2020-04-17T18:27:02"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01029.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3808 ;
+      geo:long 6.8589
+    ] ;
+    :nd "+53.3808+006.8589"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01029:s1 ,
-       t01029:s2 ,
-       t01029:s3 ,
-       t01029:s5 .
+  :site site:gr9906PPbierum ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Sandglass.n.01
+  ], t01029:s3, t01029:s5 .
 
-t01029:c1 a :Village.n.02 ;
-  :place place:Uithuizen2745970 ;
-  :name "UITHUIZEN" .
-
-t01029:c2 a :Village.n.02 ;
-  :place place:Bierum2758983 ;
-  :name "BIERUM" .
-
-t01029:p1 a :Female ;
+t01029:p1
+  a :Female ;
   :dob "1797-02-11"^^xsd:date ;
   :dod "1868-02-24"^^xsd:date ;
   :nam "HINDRIKTJE TEWES VAN HUIZEN" ;
-  :pob t01029:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "UITHUIZEN" ;
+    :place place:Uithuizen2745970
+  ] ;
   :pod t01029:c2 ;
-  :rol t01029:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01029:p2
+  ] .
 
-t01029:p2 a :Male ;
+t01029:p2
+  a :Male ;
   :nam "N.E. WOLTHUIS" .
 
-t01029:p3 a :Person ;
+t01029:p3
+  a :Person ;
   :loc t01029:c2 ;
   :nam "W. MEIJER" ;
-  :occ t01029:r2 .
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t01029
+  ] .
 
-t01029:r1 a :Widow.n.01 ;
-  :tgt t01029:p2 .
+t01029:c2
+  a :Village.n.02 ;
+  :name "BIERUM" ;
+  :place place:Bierum2758983 .
 
-t01029:r2 a :Designer.n.01 ;
-  :tgt tomb:t01029 .
+t01029:s3
+  a :Wing.n.01 .
 
-t01029:s1 a :Butterfly.n.01 .
-
-t01029:s2 a :Sandglass.n.01 .
-
-t01029:s3 a :Wing.n.01 .
-
-t01029:s4 a :Bird.n.01 ;
+[]
+  a :Bird.n.01 ;
   :mem t01029:s3 .
 
-t01029:s5 a :Wing.n.01 .
+t01029:s5
+  a :Wing.n.01 .
 
-t01029:s6 a :Bird.n.01 ;
+[]
+  a :Bird.n.01 ;
   :mem t01029:s5 .
-
-t01029:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01029.jpg" ;
-  dc:date "2020-04-17T18:27:02"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3808 ;
-    geo:long 6.8589
-  ] ;
-  :nd "+53.3808+006.8589"^^ll: .
 

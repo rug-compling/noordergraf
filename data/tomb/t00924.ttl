@@ -1,56 +1,52 @@
 @prefix t00924: <https://noordergraf.rug.nl/tomb/t00924#> .
 
-tomb:t00924 a :Tomb ;
-  :image t00924:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00924:g1 ,
-       t00924:p1 ,
-       t00924:p2 ,
-       t00924:p3 ;
+tomb:t00924
+  a :Tomb ;
+  :ent t00924:p1, t00924:p2, t00924:p3, t00924:g1 ;
+  :image [
+    dc:date "2020-03-07T14:10:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00924.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1719 ;
+      geo:long 6.3656
+    ] ;
+    :nd "+53.1719+006.3656"^^ll:
+  ] ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
-  :sym t00924:s1 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Entity.n.01
+  ] .
 
-t00924:c1 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00924:g1 a :Group.n.01 ;
-  :mem t00924:p2 ,
-       t00924:p3 .
-
-t00924:p1 a :Female ;
+t00924:p1
+  a :Female ;
   :dob "1902-05-22"^^xsd:date ;
   :dod "1905-03-22"^^xsd:date ;
   :nam "AALTIEN DE BOER" ;
   :pob t00924:c1 ;
   :pod t00924:c1 ;
-  :rol t00924:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00924:g1
+  ] .
 
-t00924:p2 a :Person ;
+t00924:p2
+  a :Person ;
   :nam "J. DE BOER" .
 
-t00924:p3 a :Person ;
+t00924:p3
+  a :Person ;
   :nam "J. OOSTERHUIS" .
 
-t00924:r1 a :Daughter.n.01 ;
-  :tgt t00924:g1 .
+t00924:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 
-t00924:s1 a :Entity.n.01 .
-
-t00924:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00924.jpg" ;
-  dc:date "2020-03-07T14:10:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1719 ;
-    geo:long 6.3656
-  ] ;
-  :nd "+53.1719+006.3656"^^ll: .
+t00924:g1
+  a :Group.n.01 ;
+  :mem t00924:p2, t00924:p3 .
 

@@ -1,48 +1,44 @@
 @prefix t01060: <https://noordergraf.rug.nl/tomb/t01060#> .
 
-tomb:t01060 a :Tomb ;
-  :image t01060:im1 ;
-  :site site:gr9975VRvierhuizen ;
-  :ent t01060:p1 ,
-       t01060:p2 ;
+tomb:t01060
+  a :Tomb ;
+  :ent t01060:p1, t01060:p2 ;
+  :image [
+    dc:date "2020-05-02T15:51:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01060.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3607 ;
+      geo:long 6.2933
+    ] ;
+    :nd "+53.3607+006.2933"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01060:s1 .
+  :site site:gr9975VRvierhuizen ;
+  :sym [
+    a :Pigeon.n.01
+  ] .
 
-t01060:c1 a :Hamlet.n.03 ;
-  :place place:Menneweer12253656 ;
-  :name "MENNEWEER" .
-
-t01060:o1 a :Farmer.n.01 ;
-  :hco "61220" ;
-  :loc t01060:c1 .
-
-t01060:p1 a :Person ;
+t01060:p1
+  a :Person ;
   :dob "1902-09-11"^^xsd:date ;
   :dod "1960-05-26"^^xsd:date ;
   :nam "J.J. DIJKHUIS" .
 
-t01060:p2 a :Person ;
+t01060:p2
+  a :Person ;
   :dob "1903-06-24"^^xsd:date ;
   :dod "1981-01-21"^^xsd:date ;
   :nam "J. DIJKHUIS" ;
-  :occ t01060:o1 .
-
-t01060:s1 a :Pigeon.n.01 .
-
-t01060:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01060.jpg" ;
-  dc:date "2020-05-02T15:51:33"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3607 ;
-    geo:long 6.2933
-  ] ;
-  :nd "+53.3607+006.2933"^^ll: .
+  :occ [
+    a :Farmer.n.01 ;
+    :hco "61220" ;
+    :loc [
+      a :Hamlet.n.03 ;
+      :name "MENNEWEER" ;
+      :place place:Menneweer12253656
+    ]
+  ] .
 

@@ -1,94 +1,89 @@
 @prefix t00845: <https://noordergraf.rug.nl/tomb/t00845#> .
 
-tomb:t00845 a :Tomb ;
-  :image t00845:im1 ;
-  :site site:fr8899AWoost_vlieland ;
-  :ent t00845:p1 ,
-       t00845:p2 ,
-       t00845:p3 ,
-       t00845:p4 ;
-  :lan "NLD" ;
-  :sym t00845:s1 ,
-       t00845:s2 .
-
-t00845:m1 a :Measure.n.02 ;
-  :mem t00845:u1 ;
-  :qua 88 .
-
-t00845:m2 a :Measure.n.02 ;
-  :mem t00845:u2 ;
-  :qua 74 .
-
-t00845:m3 a :Measure.n.02 ;
-  :mem t00845:u3 ;
-  :qua 24 .
-
-t00845:m4 a :Measure.n.02 ;
-  :mem t00845:u4 ;
-  :qua 84 .
-
-t00845:p1 a :Male ;
-  :age t00845:m1 ;
-  :nam "CORNELIS DE LANGE" ;
-  :rol t00845:r1 .
-
-t00845:p2 a :Female ;
-  :age t00845:m2 ;
-  :nam "ENGELTJE PEESCH" ;
-  :rol t00845:r2 .
-
-t00845:p3 a :Female ;
-  :age t00845:m3 ;
-  :nam "TRIJNTJE" ;
-  :rol t00845:r3 .
-
-t00845:p4 a :Female ;
-  :age t00845:m4 ;
-  :nam "FROUWTJE" ;
-  :rol t00845:r4 .
-
-t00845:r1 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00845:p5 .
-
-t00845:r2 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00845:p5 .
-
-t00845:r3 a :Sister.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00845:p5 .
-
-t00845:r4 a :Sister.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00845:p5 .
-
-t00845:s1 a :Oak.n.01 .
-
-t00845:s2 a :Branch.n.02 .
-
-t00845:u1 a :Year.n.01 .
-
-t00845:u2 a :Year.n.01 .
-
-t00845:u3 a :Year.n.01 .
-
-t00845:u4 a :Year.n.01 .
-
-t00845:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00845.jpg" ;
-  dc:date "2020-02-20T14:42:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2956 ;
-    geo:long 5.0650
+tomb:t00845
+  a :Tomb ;
+  :ent t00845:p1, t00845:p2, t00845:p3, t00845:p4 ;
+  :image [
+    dc:date "2020-02-20T14:42:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00845.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2956 ;
+      geo:long 5.0650
+    ] ;
+    :nd "+53.2956+005.0650"^^ll:
   ] ;
-  :nd "+53.2956+005.0650"^^ll: .
+  :lan "NLD" ;
+  :site site:fr8899AWoost_vlieland ;
+  :sym [
+    a :Oak.n.01
+  ], [
+    a :Branch.n.02
+  ] .
+
+t00845:p1
+  a :Male ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 88
+  ] ;
+  :nam "CORNELIS DE LANGE" ;
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00845:p5
+  ] .
+
+t00845:p2
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 74
+  ] ;
+  :nam "ENGELTJE PEESCH" ;
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00845:p5
+  ] .
+
+t00845:p3
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 24
+  ] ;
+  :nam "TRIJNTJE" ;
+  :rol [
+    a :Sister.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00845:p5
+  ] .
+
+t00845:p4
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 84
+  ] ;
+  :nam "FROUWTJE" ;
+  :rol [
+    a :Sister.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00845:p5
+  ] .
 

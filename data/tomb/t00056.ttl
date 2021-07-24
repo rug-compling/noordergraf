@@ -1,64 +1,62 @@
 @prefix t00056: <https://noordergraf.rug.nl/tomb/t00056#> .
 
-tomb:t00056 a :Tomb ;
-  :image t00056:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00056:p1 ,
-       t00056:p2 ,
-       t00056:p3 ,
-       t00056:p4 ,
-       t00056:p5 ;
-  :ref t00056:v1 .
+tomb:t00056
+  a :Tomb ;
+  :ent t00056:p1, t00056:p2, t00056:p3, t00056:p4, t00056:p5 ;
+  :image [
+    dc:date "2019-09-27T17:41:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00056.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1631 ;
+      geo:long 6.6132
+    ] ;
+    :nd "+53.1631+006.6132"^^ll:
+  ] ;
+  :ref t00056:v1 ;
+  :site site:gr9752CMharen .
 
-t00056:b1 a :Luke.n.02 ;
-  :prt t00056:c1 .
-
-t00056:c1 a :Chapter.n.01 ;
-  :ord 18 ;
-  :prt t00056:v1 .
-
-t00056:p1 a :Female ;
+t00056:p1
+  a :Female ;
   :dob "1881-05-21"^^xsd:date ;
   :dod "1949-12-15"^^xsd:date ;
   :nam "LAMMECHIENA VAN DER VEEN" ;
-  :rol t00056:r1 .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00056:p2
+  ] .
 
-t00056:p2 a :Male ;
+t00056:p2
+  a :Male ;
   :dob "1874-09-04"^^xsd:date ;
   :dod "1962-01-18"^^xsd:date ;
   :nam "GEERT MULDER" .
 
-t00056:p3 a :Male ;
+t00056:p3
+  a :Male ;
   :dob "1947-08-07"^^xsd:date ;
   :dod "1954-05-05"^^xsd:date ;
   :nam "GERARDUS AVERES" .
 
-t00056:p4 a :Male ;
+t00056:p4
+  a :Male ;
   :nam "A. AVERES" .
 
-t00056:p5 a :Female ;
+t00056:p5
+  a :Female ;
   :nam "H.J. AVERES-MULDER" .
 
-t00056:r1 a :Wife.n.01 ;
-  :tgt t00056:p2 .
+[]
+  a :Luke.n.02 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 18 ;
+    :prt t00056:v1
+  ] .
 
-t00056:v1 a :Verse.n.01 ;
+t00056:v1
+  a :Verse.n.01 ;
   :ord 16 .
-
-t00056:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00056.jpg" ;
-  dc:date "2019-09-27T17:41:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1631 ;
-    geo:long 6.6132
-  ] ;
-  :nd "+53.1631+006.6132"^^ll: .
 

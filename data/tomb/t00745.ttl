@@ -1,60 +1,56 @@
 @prefix t00745: <https://noordergraf.rug.nl/tomb/t00745#> .
 
-tomb:t00745 a :Tomb ;
-  :image t00745:im1 ;
-  :site site:gr9679KHscheemda ;
-  :ent t00745:p1 ,
-       t00745:p2 ;
+tomb:t00745
+  a :Tomb ;
+  :ent t00745:p1, t00745:p2 ;
+  :image [
+    dc:date "2019-12-29T10:18:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00745.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1807 ;
+      geo:long 6.9687
+    ] ;
+    :nd "+53.1807+006.9687"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00745:s1 .
+  :site site:gr9679KHscheemda ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00745:a1 a :Weeping.a.02 .
-
-t00745:c1 a :Village.n.02 ;
-  :place place:Woldendorp2744228 ;
-  :name "WOLDENDORP" .
-
-t00745:c2 a :Village.n.02 ;
-  :place place:Midwolda2750832 ;
-  :name "MIDWOLDA" .
-
-t00745:c3 a :Village.n.02 ;
-  :place place:Eexta2756316 ;
-  :name "EEXTA" .
-
-t00745:p1 a :Female ;
+t00745:p1
+  a :Female ;
   :dob "1858-11-12"^^xsd:date ;
   :dod "1946-07-13"^^xsd:date ;
   :nam "IJKJE TWIEST" ;
-  :pob t00745:c1 ;
-  :pod t00745:c2 ;
-  :rol t00745:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "WOLDENDORP" ;
+    :place place:Woldendorp2744228
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "MIDWOLDA" ;
+    :place place:Midwolda2750832
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00745:p2
+  ] .
 
-t00745:p2 a :Male ;
+t00745:p2
+  a :Male ;
   :dob "1864-04-20"^^xsd:date ;
   :nam "AEILKO MULDER" ;
-  :pob t00745:c3 .
-
-t00745:r1 a :Spouse.n.01 ;
-  :tgt t00745:p2 .
-
-t00745:s1 a :Willow.n.01 ;
-  :att t00745:a1 .
-
-t00745:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00745.jpg" ;
-  dc:date "2019-12-29T10:18:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1807 ;
-    geo:long 6.9687
-  ] ;
-  :nd "+53.1807+006.9687"^^ll: .
+  :pob [
+    a :Village.n.02 ;
+    :name "EEXTA" ;
+    :place place:Eexta2756316
+  ] .
 

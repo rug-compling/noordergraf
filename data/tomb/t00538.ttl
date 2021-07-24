@@ -1,61 +1,54 @@
 @prefix t00538: <https://noordergraf.rug.nl/tomb/t00538#> .
 
-tomb:t00538 a :Tomb ;
-  :image t00538:im1 ;
+tomb:t00538
+  a :Tomb ;
+  :ent t00538:p1, t00538:p2 ;
+  :image [
+    dc:date "2019-11-24T14:20:59"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00538.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1043 ;
+      geo:long 6.8761
+    ] ;
+    :nd "+53.1043+006.8761"^^ll:
+  ] ;
+  :quo "DIT GRAF MAG NIET WORDEN OPGEGRAVEN"@nld, "RUST ZACHT"@nld ;
   :site site:gr9641ANveendam ;
-  :ent t00538:p1 ,
-       t00538:p2 ;
-  :quo "DIT GRAF MAG NIET WORDEN OPGEGRAVEN"@nld ,
-       "RUST ZACHT"@nld ;
-  :sym t00538:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Flag.n.01
+    ], [
+      a :Anchor.n.01
+    ], [
+      a :Anchor.n.01
+    ]
+  ] .
 
-t00538:c1 a :Village.n.02 ;
-  :place place:Zuidbroek2743800 ;
-  :name "ZUIDBROEK" .
-
-t00538:c2 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00538:p1 a :Male ;
+t00538:p1
+  a :Male ;
   :dob "1832-05-04"^^xsd:date ;
   :dod "1884-08-09"^^xsd:date ;
   :nam "JAN VRIESE DE VRIES" ;
-  :pob t00538:c1 ;
-  :pod t00538:c2 ;
-  :rol t00538:r1 .
-
-t00538:p2 a :Female ;
-  :nam "IDA G. STRATING" .
-
-t00538:r1 a :Spouse.n.01 ;
-  :tgt t00538:p2 .
-
-t00538:s1 a :Composite.n.01 ;
-  :prt t00538:s2 ,
-       t00538:s3 ,
-       t00538:s4 .
-
-t00538:s2 a :Flag.n.01 .
-
-t00538:s3 a :Anchor.n.01 .
-
-t00538:s4 a :Anchor.n.01 .
-
-t00538:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00538.jpg" ;
-  dc:date "2019-11-24T14:20:59"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1043 ;
-    geo:long 6.8761
+  :pob [
+    a :Village.n.02 ;
+    :name "ZUIDBROEK" ;
+    :place place:Zuidbroek2743800
   ] ;
-  :nd "+53.1043+006.8761"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00538:p2
+  ] .
+
+t00538:p2
+  a :Female ;
+  :nam "IDA G. STRATING" .
 

@@ -1,34 +1,37 @@
 @prefix t01112: <https://noordergraf.rug.nl/tomb/t01112#> .
 
-tomb:t01112 a :Tomb ;
+tomb:t01112
+  a :Tomb ;
   :ent t01112:p1 ;
   :lan "NLD" ;
-  :sym t01112:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01112:a1 a :Weeping.a.02 .
-
-t01112:c1 a :Village.n.02 ;
-  :place place:Siddeburen2747343 ;
-  :name "SIDDEBUREN" .
-
-t01112:c2 a :City.n.01 ;
-  :place place:Delfzijl2757340 ;
-  :name "DELFZYL" .
-
-t01112:p1 a :Female ;
+t01112:p1
+  a :Female ;
   :dob "1846-06-17"^^xsd:date ;
   :dod "1930-01-14"^^xsd:date ;
   :nam "HENDRIKJE LENTING" ;
-  :pob t01112:c1 ;
-  :pod t01112:c2 ;
-  :rol t01112:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "SIDDEBUREN" ;
+    :place place:Siddeburen2747343
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "DELFZYL" ;
+    :place place:Delfzijl2757340
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01112:p2
+  ] .
 
-t01112:p2 a :Male ;
+t01112:p2
+  a :Male ;
   :nam "GARMT HAMMINGA" .
-
-t01112:r1 a :Widow.n.01 ;
-  :tgt t01112:p2 .
-
-t01112:s1 a :Willow.n.01 ;
-  :att t01112:a1 .
 

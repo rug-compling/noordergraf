@@ -1,55 +1,50 @@
 @prefix t00656: <https://noordergraf.rug.nl/tomb/t00656#> .
 
-tomb:t00656 a :Tomb ;
-  :image t00656:im1 ;
-  :site site:fr8917AVleeuwarden ;
-  :ent t00656:g1 ,
-       t00656:p1 ,
-       t00656:p2 ,
-       t00656:p3 ;
-  :lan "NLD" .
+tomb:t00656
+  a :Tomb ;
+  :ent t00656:p1, t00656:p2, t00656:p3, t00656:g1 ;
+  :image [
+    dc:date "2019-11-16T14:02:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00656.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2101 ;
+      geo:long 5.7910
+    ] ;
+    :nd "+53.2101+005.7910"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:fr8917AVleeuwarden .
 
-t00656:g1 a :Group.n.01 ;
-  :mem t00656:p1 ,
-       t00656:p2 .
-
-t00656:p1 a :Male ;
+t00656:p1
+  a :Male ;
   :dob "1854-05-07"^^xsd:date ;
   :dod "1892-07-12"^^xsd:date ;
   :nam "JAN ARENDS" ;
-  :rol t00656:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00656:p2
+  ] .
 
-t00656:p2 a :Female ;
+t00656:p2
+  a :Female ;
   :dob "1851-11-12"^^xsd:date ;
   :dod "1929-09-14"^^xsd:date ;
   :nam "TRIJNTJE BOELENS" .
 
-t00656:p3 a :Male ;
+t00656:p3
+  a :Male ;
   :dob "1892-01-11"^^xsd:date ;
   :dod "1903-04-21"^^xsd:date ;
   :nam "JAN" ;
-  :rol t00656:r2 .
+  :rol [
+    a :Son.n.01 ;
+    :tgt t00656:g1
+  ] .
 
-t00656:r1 a :Spouse.n.01 ;
-  :tgt t00656:p2 .
-
-t00656:r2 a :Son.n.01 ;
-  :tgt t00656:g1 .
-
-t00656:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00656.jpg" ;
-  dc:date "2019-11-16T14:02:03"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2101 ;
-    geo:long 5.7910
-  ] ;
-  :nd "+53.2101+005.7910"^^ll: .
+t00656:g1
+  a :Group.n.01 ;
+  :mem t00656:p1, t00656:p2 .
 

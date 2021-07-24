@@ -1,49 +1,44 @@
 @prefix t00523: <https://noordergraf.rug.nl/tomb/t00523#> .
 
-tomb:t00523 a :Tomb ;
-  :image t00523:im1 ;
-  :site site:gr9601KAhoogezand ;
+tomb:t00523
+  a :Tomb ;
   :ent t00523:p1 ;
+  :image [
+    dc:date "2019-11-23T10:58:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00523.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1671 ;
+      geo:long 6.7535
+    ] ;
+    :nd "+53.1671+006.7535"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00523:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Crescent.n.01
+    ], [
+      a :Star.n.01
+    ]
+  ] .
 
-t00523:c1 a :Country.n.02 ;
-  :place place:Suriname3382998 ;
-  :name "SURINAME" .
-
-t00523:c2 a :Town.n.01 ;
-  :place place:Hoogezand2753706 ;
-  :name "HOOGEZAND" .
-
-t00523:p1 a :Male ;
+t00523:p1
+  a :Male ;
   :dob "1915-12-03"^^xsd:date ;
   :dod "2012-09-04"^^xsd:date ;
   :nam "IBU SOERANI SOEBKE-WAKIT" ;
-  :pob t00523:c1 ;
-  :pod t00523:c2 .
-
-t00523:s1 a :Composite.n.01 ;
-  :prt t00523:s2 ,
-       t00523:s3 .
-
-t00523:s2 a :Crescent.n.01 .
-
-t00523:s3 a :Star.n.01 .
-
-t00523:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00523.jpg" ;
-  dc:date "2019-11-23T10:58:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1671 ;
-    geo:long 6.7535
+  :pob [
+    a :Country.n.02 ;
+    :name "SURINAME" ;
+    :place place:Suriname3382998
   ] ;
-  :nd "+53.1671+006.7535"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HOOGEZAND" ;
+    :place place:Hoogezand2753706
+  ] .
 

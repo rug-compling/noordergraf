@@ -1,53 +1,45 @@
 @prefix t00940: <https://noordergraf.rug.nl/tomb/t00940#> .
 
-tomb:t00940 a :Tomb ;
-  :image t00940:im1 ;
-  :site site:gr9696XGoudeschans ;
-  :ent t00940:p1 ,
-       t00940:p2 ;
+tomb:t00940
+  a :Tomb ;
+  :ent t00940:p1, t00940:p2 ;
+  :image [
+    dc:date "2020-03-21T13:24:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00940.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1384 ;
+      geo:long 7.1430
+    ] ;
+    :nd "+53.1384+007.1430"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00940:s1 ,
-       t00940:s2 ,
-       t00940:s3 ,
-       t00940:s4 ,
-       t00940:s5 .
+  :site site:gr9696XGoudeschans ;
+  :sym [
+    a :Snake.n.01
+  ], [
+    a :Butterfly.n.01
+  ], [
+    a :Scythe.n.01
+  ], [
+    a :Oak.n.02
+  ], [
+    a :Pipe.n.01
+  ] .
 
-t00940:p1 a :Female ;
+t00940:p1
+  a :Female ;
   :dob "1776-11-22"^^xsd:date ;
   :dod "1860-04-23"^^xsd:date ;
   :nam "H.R. VAN MARK" ;
-  :rol t00940:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00940:p2
+  ] .
 
-t00940:p2 a :Male ;
+t00940:p2
+  a :Male ;
   :nam "H. OOSTERVELD" .
-
-t00940:r1 a :Spouse.n.01 ;
-  :tgt t00940:p2 .
-
-t00940:s1 a :Snake.n.01 .
-
-t00940:s2 a :Butterfly.n.01 .
-
-t00940:s3 a :Scythe.n.01 .
-
-t00940:s4 a :Oak.n.02 .
-
-t00940:s5 a :Pipe.n.01 .
-
-t00940:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00940.jpg" ;
-  dc:date "2020-03-21T13:24:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1384 ;
-    geo:long 7.1430
-  ] ;
-  :nd "+53.1384+007.1430"^^ll: .
 

@@ -1,51 +1,45 @@
 @prefix t00887: <https://noordergraf.rug.nl/tomb/t00887#> .
 
-tomb:t00887 a :Tomb ;
-  :image t00887:im1 ;
-  :site site:dr7841CDsleen ;
+tomb:t00887
+  a :Tomb ;
   :ent t00887:p1 ;
-  :quo "HIJ RUSTE IN VREDE"@nld ,
-       "TER NAGEDACHTENIS AAN \\ DEN VOOR HET VADERLAND \\ GEVALLEN MILITAIR \\ VAN HET VIERDE R.V.A."@nld ;
-  :sym t00887:s1 ,
-       t00887:s2 .
+  :image [
+    dc:date "2020-02-15T15:45:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00887.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7767 ;
+      geo:long 6.8047
+    ] ;
+    :nd "+52.7767+006.8047"^^ll:
+  ] ;
+  :quo "HIJ RUSTE IN VREDE"@nld, "TER NAGEDACHTENIS AAN \\ DEN VOOR HET VADERLAND \\ GEVALLEN MILITAIR \\ VAN HET VIERDE R.V.A."@nld ;
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Entity.n.01
+  ], [
+    a :Entity.n.01
+  ] .
 
-t00887:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00887:c2 a :Town.n.01 ;
-  :place place:Dubbeldam2756537 ;
-  :name "DUBBELDAM" .
-
-t00887:o1 a :Soldier.n.01 ;
-  :hco "58340" .
-
-t00887:p1 a :Male ;
+t00887:p1
+  a :Male ;
   :dob "1916-01-11"^^xsd:date ;
   :dod "1940-05-10"^^xsd:date ;
   :nam "HILBERT LOOMULDER" ;
-  :occ t00887:o1 ;
-  :pob t00887:c1 ;
-  :pod t00887:c2 .
-
-t00887:s1 a :Entity.n.01 .
-
-t00887:s2 a :Entity.n.01 .
-
-t00887:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00887.jpg" ;
-  dc:date "2020-02-15T15:45:32"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7767 ;
-    geo:long 6.8047
+  :occ [
+    a :Soldier.n.01 ;
+    :hco "58340"
   ] ;
-  :nd "+52.7767+006.8047"^^ll: .
+  :pob [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :pod [
+    a :Town.n.01 ;
+    :name "DUBBELDAM" ;
+    :place place:Dubbeldam2756537
+  ] .
 

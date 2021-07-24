@@ -1,45 +1,39 @@
 @prefix t00272: <https://noordergraf.rug.nl/tomb/t00272#> .
 
-tomb:t00272 a :Tomb ;
-  :image t00272:im1 ;
-  :site site:gr9723EWgroningen ;
-  :ent t00272:p1 ,
-       t00272:p2 .
+tomb:t00272
+  a :Tomb ;
+  :ent t00272:p1, t00272:p2 ;
+  :image [
+    dc:date "2019-10-14T10:56:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00272.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2227 ;
+      geo:long 6.6378
+    ] ;
+    :nd "+53.2227+006.6378"^^ll:
+  ] ;
+  :site site:gr9723EWgroningen .
 
-t00272:p1 a :Male ;
+t00272:p1
+  a :Male ;
   :dob "1913-01-30"^^xsd:date ;
   :dod "1965-02-17"^^xsd:date ;
   :nam "RINZE STEL" ;
-  :rol t00272:r1 ,
-       t00272:r2 ,
-       t00272:r3 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00272:p2
+  ], [
+    a :Father.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00272:p2
+  ] .
 
-t00272:p2 a :Female ;
+t00272:p2
+  a :Female ;
   :nam "ELDINA KEMPINGA" .
-
-t00272:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00272:p2 .
-
-t00272:r2 a :Father.n.01 .
-
-t00272:r3 a :Spouse.n.01 ;
-  :tgt t00272:p2 .
-
-t00272:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00272.jpg" ;
-  dc:date "2019-10-14T10:56:53"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2227 ;
-    geo:long 6.6378
-  ] ;
-  :nd "+53.2227+006.6378"^^ll: .
 

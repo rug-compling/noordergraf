@@ -1,60 +1,56 @@
 @prefix t00410: <https://noordergraf.rug.nl/tomb/t00410#> .
 
-tomb:t00410 a :Tomb ;
-  :image t00410:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00410:p1 ,
-       t00410:p2 ;
-  :quo "RUST ZACHT LIEVE PLEEGOUDERS" .
+tomb:t00410
+  a :Tomb ;
+  :ent t00410:p1, t00410:p2 ;
+  :image [
+    dc:date "2019-10-25T17:21:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00410.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0797 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.0797+006.5716"^^ll:
+  ] ;
+  :quo "RUST ZACHT LIEVE PLEEGOUDERS" ;
+  :site site:dr9481CGvries .
 
-t00410:c1 a :Village.n.02 ;
-  :place place:Anloo2759746 ;
-  :name "ANLOO" .
-
-t00410:c2 a :Town.n.01 ;
-  :place place:Vries2745189 ;
-  :name "VRIES" .
-
-t00410:p1 a :Male ;
+t00410:p1
+  a :Male ;
   :dob "1861-05-16"^^xsd:date ;
   :dod "1936-08-24"^^xsd:date ;
   :nam "ALBERT VAN REIN" ;
-  :pob t00410:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ANLOO" ;
+    :place place:Anloo2759746
+  ] ;
   :pod t00410:c2 ;
-  :rol t00410:r1 .
+  :rol [
+    a :Foster-parent.n.01 ;
+    :tgt t00410:p3
+  ] .
 
-t00410:p2 a :Female ;
+t00410:p2
+  a :Female ;
   :dob "1854-03-12"^^xsd:date ;
   :dod "1929-03-26"^^xsd:date ;
   :nam "ANNECHIEN SLAGTER" ;
   :pob t00410:c2 ;
   :pod t00410:c2 ;
-  :rol t00410:r2 ,
-       t00410:r3 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00410:p1
+  ], [
+    a :Foster-parent.n.01 ;
+    :tgt t00410:p3
+  ] .
 
-t00410:r1 a :Foster-parent.n.01 ;
-  :tgt t00410:p3 .
-
-t00410:r2 a :Spouse.n.01 ;
-  :tgt t00410:p1 .
-
-t00410:r3 a :Foster-parent.n.01 ;
-  :tgt t00410:p3 .
-
-t00410:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00410.jpg" ;
-  dc:date "2019-10-25T17:21:46"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0797 ;
-    geo:long 6.5716
-  ] ;
-  :nd "+53.0797+006.5716"^^ll: .
+t00410:c2
+  a :Town.n.01 ;
+  :name "VRIES" ;
+  :place place:Vries2745189 .
 

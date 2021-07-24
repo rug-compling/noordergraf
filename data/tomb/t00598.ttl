@@ -1,80 +1,70 @@
 @prefix t00598: <https://noordergraf.rug.nl/tomb/t00598#> .
 
-tomb:t00598 a :Tomb ;
-  :image t00598:im1 ;
-  :site site:gr9951TNwinsum ;
-  :ent t00598:p1 ,
-       t00598:p2 ,
-       t00598:p3 ;
+tomb:t00598
+  a :Tomb ;
+  :ent t00598:p1, t00598:p2, t00598:p3 ;
+  :image [
+    dc:date "2019-11-30T14:13:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00598.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3266 ;
+      geo:long 6.5117
+    ] ;
+    :nd "+53.3266+006.5117"^^ll:
+  ] ;
   :ref "PSALM 37:5"@nld ;
-  :sym t00598:s1 .
+  :site site:gr9951TNwinsum ;
+  :sym [
+    a :Treble_clef.n.01
+  ] .
 
-t00598:p1 a :Male ;
+t00598:p1
+  a :Male ;
   :dob "1917-11-19"^^xsd:date ;
   :dod "1989-11-15"^^xsd:date ;
   :nam "HERMAN JOHAN POORT" ;
-  :rol t00598:r1 ,
-       t00598:r2 ,
-       t00598:r3 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00598:p2
+  ], [
+    a :Father.n.01 ;
+    :tgt t00598:p3
+  ], [
+    a :Grandfather.n.01 ;
+    :tgt t00598:p3
+  ] .
 
-t00598:p2 a :Female ;
+t00598:p2
+  a :Female ;
   :dob "1913-11-21"^^xsd:date ;
   :dod "2004-03-19"^^xsd:date ;
   :nam "ANTJE BREMER" ;
-  :rol t00598:r4 ,
-       t00598:r5 .
+  :rol [
+    a :Mother.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00598:p3
+  ], [
+    a :Grandmother.n.01 ;
+    :tgt t00598:p3
+  ] .
 
-t00598:p3 a :Person ;
-  :rol t00598:r6 ,
-       t00598:r7 ,
-       t00598:r8 ,
-       t00598:r9 .
-
-t00598:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00598:p2 .
-
-t00598:r2 a :Father.n.01 ;
-  :tgt t00598:p3 .
-
-t00598:r3 a :Grandfather.n.01 ;
-  :tgt t00598:p3 .
-
-t00598:r4 a :Mother.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00598:p3 .
-
-t00598:r5 a :Grandmother.n.01 ;
-  :tgt t00598:p3 .
-
-t00598:r6 a :Child.n.02 ;
-  :tgt t00598:p1 .
-
-t00598:r7 a :Child.n.02 ;
-  :tgt t00598:p2 .
-
-t00598:r8 a :Grandchild.n.01 ;
-  :tgt t00598:p1 .
-
-t00598:r9 a :Grandchild.n.01 ;
-  :tgt t00598:p2 .
-
-t00598:s1 a :Treble_clef.n.01 .
-
-t00598:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00598.jpg" ;
-  dc:date "2019-11-30T14:13:18"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3266 ;
-    geo:long 6.5117
-  ] ;
-  :nd "+53.3266+006.5117"^^ll: .
+t00598:p3
+  a :Person ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00598:p1
+  ], [
+    a :Child.n.02 ;
+    :tgt t00598:p2
+  ], [
+    a :Grandchild.n.01 ;
+    :tgt t00598:p1
+  ], [
+    a :Grandchild.n.01 ;
+    :tgt t00598:p2
+  ] .
 

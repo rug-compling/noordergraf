@@ -1,50 +1,47 @@
 @prefix t00762: <https://noordergraf.rug.nl/tomb/t00762#> .
 
-tomb:t00762 a :Tomb ;
-  :image t00762:im1 ;
-  :site site:gr9936BTfarmsum ;
-  :ent t00762:p1 ,
-       t00762:p2 ;
+tomb:t00762
+  a :Tomb ;
+  :ent t00762:p1, t00762:p2 ;
+  :image [
+    dc:date "2019-12-28T12:44:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00762.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3112 ;
+      geo:long 6.9971
+    ] ;
+    :nd "+53.3112+006.9971"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00762:s1 .
+  :site site:gr9936BTfarmsum ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00762:a1 a :Weeping.a.02 .
-
-t00762:c1 a :Village.n.02 ;
-  :place place:Oterdum2749209 ;
-  :name "OTERDUM" .
-
-t00762:p1 a :Male ;
+t00762:p1
+  a :Male ;
   :dob "1826-01-25"^^xsd:date ;
   :dod "1888-01-08"^^xsd:date ;
   :nam "TJAART REMKES VAN ZANTEN" ;
   :pob t00762:c1 ;
   :pod t00762:c1 ;
-  :rol t00762:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00762:p2
+  ] .
 
-t00762:p2 a :Female ;
+t00762:p2
+  a :Female ;
   :nam "TRIJNTJE FREERKS STEENHUISEN" .
 
-t00762:r1 a :Spouse.n.01 ;
-  :tgt t00762:p2 .
-
-t00762:s1 a :Willow.n.01 ;
-  :att t00762:a1 .
-
-t00762:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00762.jpg" ;
-  dc:date "2019-12-28T12:44:13"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3112 ;
-    geo:long 6.9971
-  ] ;
-  :nd "+53.3112+006.9971"^^ll: .
+t00762:c1
+  a :Village.n.02 ;
+  :name "OTERDUM" ;
+  :place place:Oterdum2749209 .
 

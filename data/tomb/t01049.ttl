@@ -1,72 +1,67 @@
 @prefix t01049: <https://noordergraf.rug.nl/tomb/t01049#> .
 
-tomb:t01049 a :Tomb ;
-  :image t01049:im1 ;
-  :site site:gr9367PAde_wilp ;
-  :ent t01049:g1 ,
-       t01049:p1 ,
-       t01049:p2 ,
-       t01049:p3 ;
+tomb:t01049
+  a :Tomb ;
+  :ent t01049:p1, t01049:p2, t01049:p3, [
+    a :Group.n.01 ;
+    :rol [
+      a :Child.n.02 ;
+      :tgt [
+        a :Group.n.01 ;
+        :mem t01049:p2, t01049:p3
+      ]
+    ]
+  ] ;
+  :image [
+    dc:date "2020-05-01T15:25:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01049.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1228 ;
+      geo:long 6.2507
+    ] ;
+    :nd "+53.1228+006.2507"^^ll:
+  ] ;
   :ref "PSALM 103:8"@nld ;
-  :sym t01049:s1 ,
-       t01049:s2 .
+  :site site:gr9367PAde_wilp ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t01049:c1 a :Village.n.02 ;
-  :place place:Siegerswoude2747339 ;
-  :name "SIEGERSWOUDE" .
-
-t01049:c3 a :Less.r.01 ;
-  :op1 t01049:m1 ;
-  :op2 t01049:m2 .
-
-t01049:g1 a :Group.n.01 ;
-  :rol t01049:r1 .
-
-t01049:g2 a :Group.n.01 ;
-  :mem t01049:p2 ,
-       t01049:p3 .
-
-t01049:m1 a :Measure.n.02 .
-
-t01049:m2 a :Measure.n.02 ;
-  :mem t01049:u1 ;
-  :qua 18 .
-
-t01049:p1 a :Female ;
+t01049:p1
+  a :Female ;
   :age t01049:m1 ;
   :dod "1925-07-18"^^xsd:date ;
   :nam "PIETJE VENEMA" ;
-  :pod t01049:c1 .
+  :pod [
+    a :Village.n.02 ;
+    :name "SIEGERSWOUDE" ;
+    :place place:Siegerswoude2747339
+  ] .
 
-t01049:p2 a :Male ;
+t01049:p2
+  a :Male ;
   :nam "T. VENEMA" .
 
-t01049:p3 a :Male ;
+t01049:p3
+  a :Male ;
   :nam "H. VENEMA-BOSMA" .
 
-t01049:r1 a :Child.n.02 ;
-  :tgt t01049:g2 .
+[]
+  a :Less.r.01 ;
+  :op1 t01049:m1 ;
+  :op2 [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 18
+  ] .
 
-t01049:s1 a :Frond.n.01 .
-
-t01049:s2 a :Ribbon.n.01 .
-
-t01049:u1 a :Year.n.01 .
-
-t01049:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01049.jpg" ;
-  dc:date "2020-05-01T15:25:30"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1228 ;
-    geo:long 6.2507
-  ] ;
-  :nd "+53.1228+006.2507"^^ll: .
+t01049:m1
+  a :Measure.n.02 .
 

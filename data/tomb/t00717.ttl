@@ -1,61 +1,59 @@
 @prefix t00717: <https://noordergraf.rug.nl/tomb/t00717#> .
 
-tomb:t00717 a :Tomb ;
-  :image t00717:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00717:p1 ,
-       t00717:p2 ,
-       t00717:p3 ;
-  :lan "NLD" .
+tomb:t00717
+  a :Tomb ;
+  :ent t00717:p1, t00717:p2, t00717:p3 ;
+  :image [
+    dc:date "2019-12-21T13:26:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00717.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7807 ;
+      geo:long 6.8997
+    ] ;
+    :nd "+52.7807+006.8997"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:dr7811HEemmen .
 
-t00717:c1 a :City.n.01 ;
-  :place place:Terneuzen2746420 ;
-  :name "TERNEUZEN" .
-
-t00717:c2 a :Town.n.01 ;
-  :place place:Emmen2756136 ;
-  :name "EMMEN" .
-
-t00717:p1 a :Male ;
+t00717:p1
+  a :Male ;
   :dob "1885-08-03"^^xsd:date ;
   :dod "1948-03-02"^^xsd:date ;
   :nam "DANIEL JAN VAN DE WEGE" ;
   :pob t00717:c1 ;
   :pod t00717:c2 ;
-  :rol t00717:r1 ,
-       t00717:r2 .
+  :rol t00717:r1, [
+    a :Spouse.n.01 ;
+    :aft t00717:r1 ;
+    :tgt t00717:p3
+  ] .
 
-t00717:p2 a :Female ;
+t00717:p2
+  a :Female ;
   :nam "E.C. VAN DOESELAAR" .
 
-t00717:p3 a :Female ;
+t00717:p3
+  a :Female ;
   :dob "1898-06-18"^^xsd:date ;
   :dod "1980-09-13"^^xsd:date ;
   :nam "SUZANNA DE WITTE" ;
   :pob t00717:c1 ;
   :pod t00717:c2 .
 
-t00717:r1 a :Widower.n.01 ;
+t00717:c1
+  a :City.n.01 ;
+  :name "TERNEUZEN" ;
+  :place place:Terneuzen2746420 .
+
+t00717:c2
+  a :Town.n.01 ;
+  :name "EMMEN" ;
+  :place place:Emmen2756136 .
+
+t00717:r1
+  a :Widower.n.01 ;
   :tgt t00717:p2 .
-
-t00717:r2 a :Spouse.n.01 ;
-  :aft t00717:r1 ;
-  :tgt t00717:p3 .
-
-t00717:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00717.jpg" ;
-  dc:date "2019-12-21T13:26:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7807 ;
-    geo:long 6.8997
-  ] ;
-  :nd "+52.7807+006.8997"^^ll: .
 

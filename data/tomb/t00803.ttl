@@ -1,48 +1,44 @@
 @prefix t00803: <https://noordergraf.rug.nl/tomb/t00803#> .
 
-tomb:t00803 a :Tomb ;
-  :image t00803:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00803:p1 ,
-       t00803:p2 ;
-  :quo "IN JEZUS ONTSLAPEN"@nld .
+tomb:t00803
+  a :Tomb ;
+  :ent t00803:p1, t00803:p2 ;
+  :image [
+    dc:date "2020-01-18T12:44:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00803.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2778 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2778+006.6936"^^ll:
+  ] ;
+  :quo "IN JEZUS ONTSLAPEN"@nld ;
+  :site site:gr9791KEten_boer .
 
-t00803:c1 a :Village.n.02 ;
-  :place place:Schildwolde2747570 ;
-  :name "SCHILDWOLDE" .
-
-t00803:c2 a :Village.n.02 ;
-  :place place:TenBoer2746491 ;
-  :name "TEN BOER" .
-
-t00803:p1 a :Female ;
+t00803:p1
+  a :Female ;
   :dob "1856-02-02"^^xsd:date ;
   :dod "1938-05-15"^^xsd:date ;
   :nam "JACOBJE LANENGA" ;
-  :pob t00803:c1 ;
-  :pod t00803:c2 ;
-  :rol t00803:r1 .
-
-t00803:p2 a :Male ;
-  :nam "R.H. WERINGA" .
-
-t00803:r1 a :Widow.n.01 ;
-  :tgt t00803:p2 .
-
-t00803:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00803.jpg" ;
-  dc:date "2020-01-18T12:44:50"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2778 ;
-    geo:long 6.6936
+  :pob [
+    a :Village.n.02 ;
+    :name "SCHILDWOLDE" ;
+    :place place:Schildwolde2747570
   ] ;
-  :nd "+53.2778+006.6936"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "TEN BOER" ;
+    :place place:TenBoer2746491
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00803:p2
+  ] .
+
+t00803:p2
+  a :Male ;
+  :nam "R.H. WERINGA" .
 

@@ -1,62 +1,56 @@
 @prefix t00105: <https://noordergraf.rug.nl/tomb/t00105#> .
 
-tomb:t00105 a :Tomb ;
-  :image t00105:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00105:p1 ,
-       t00105:p2 ,
-       t00105:p3 ;
+tomb:t00105
+  a :Tomb ;
+  :ent t00105:p1, t00105:p2, t00105:p3 ;
+  :image [
+    dc:date "2019-09-21T15:57:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00105.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1907 ;
+      geo:long 6.5924
+    ] ;
+    :nd "+53.1907+006.5924"^^ll:
+  ] ;
   :quo "REST IN PEACE DAD" ;
-  :sym t00105:s1 .
+  :site site:gr9722SNgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Torch.n.01
+    ], [
+      a :Hand.n.01
+    ]
+  ] .
 
-t00105:p1 a :Male ;
+t00105:p1
+  a :Male ;
   :dob "1900"^^xsd:gYear ;
   :dod "1937"^^xsd:gYear ;
   :nam "H.J. NIEUWENHUIS" ;
-  :rol t00105:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00105:p2
+  ] .
 
-t00105:p2 a :Female ;
+t00105:p2
+  a :Female ;
   :dob "1904"^^xsd:gYear ;
   :dod "1951"^^xsd:gYear ;
   :nam "A.C. WIARDI" .
 
-t00105:p3 a :Male ;
+t00105:p3
+  a :Male ;
   :dob "1931"^^xsd:gYear ;
   :dod "2005"^^xsd:gYear ;
   :nam "H. NIEUWENHUIS" ;
-  :rol t00105:r2 ,
-       t00105:r3 .
-
-t00105:r1 a :Husband.n.01 ;
-  :tgt t00105:p2 .
-
-t00105:r2 a :Father.n.01 ;
-  :att "LOVED" .
-
-t00105:r3 a :Grandfather.n.01 .
-
-t00105:s1 a :Composite.n.01 ;
-  :prt t00105:s2 ,
-       t00105:s3 .
-
-t00105:s2 a :Torch.n.01 .
-
-t00105:s3 a :Hand.n.01 .
-
-t00105:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00105.jpg" ;
-  dc:date "2019-09-21T15:57:33"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1907 ;
-    geo:long 6.5924
-  ] ;
-  :nd "+53.1907+006.5924"^^ll: .
+  :rol [
+    a :Father.n.01 ;
+    :att "LOVED"
+  ], [
+    a :Grandfather.n.01
+  ] .
 

@@ -1,56 +1,48 @@
 @prefix t00636: <https://noordergraf.rug.nl/tomb/t00636#> .
 
-tomb:t00636 a :Tomb ;
-  :image t00636:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00636:g1 ,
-       t00636:p1 ,
-       t00636:p2 ,
-       t00636:p3 ;
+tomb:t00636
+  a :Tomb ;
+  :ent t00636:p1, t00636:p2, t00636:p3, t00636:g1 ;
+  :image [
+    dc:date "2019-11-23T09:54:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00636.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1642 ;
+      geo:long 6.7544
+    ] ;
+    :nd "+53.1642+006.7544"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00636:s1 ,
-       t00636:s2 ,
-       t00636:s3 ,
-       t00636:s4 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Entity.n.01
+  ], [
+    a :Branch.n.02
+  ], [
+    a :Branch.n.02
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00636:g1 a :Group.n.01 ;
-  :mem t00636:p2 ,
-       t00636:p3 .
+t00636:p1
+  a :Person ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00636:g1
+  ] .
 
-t00636:p1 a :Person ;
-  :rol t00636:r1 .
-
-t00636:p2 a :Male ;
+t00636:p2
+  a :Male ;
   :nam "J.J. BEUKEMA" .
 
-t00636:p3 a :Female ;
+t00636:p3
+  a :Female ;
   :nam "E. BEUKEMA-HOOITES" .
 
-t00636:r1 a :Child.n.02 ;
-  :tgt t00636:g1 .
-
-t00636:s1 a :Entity.n.01 .
-
-t00636:s2 a :Branch.n.02 .
-
-t00636:s3 a :Branch.n.02 .
-
-t00636:s4 a :Ribbon.n.01 .
-
-t00636:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00636.jpg" ;
-  dc:date "2019-11-23T09:54:23"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1642 ;
-    geo:long 6.7544
-  ] ;
-  :nd "+53.1642+006.7544"^^ll: .
+t00636:g1
+  a :Group.n.01 ;
+  :mem t00636:p2, t00636:p3 .
 

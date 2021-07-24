@@ -1,76 +1,72 @@
 @prefix t00219: <https://noordergraf.rug.nl/tomb/t00219#> .
 
-tomb:t00219 a :Tomb ;
-  :image t00219:im1 ;
+tomb:t00219
+  a :Tomb ;
+  :ent t00219:p1, t00219:p2 ;
+  :image [
+    dc:date "2019-10-08T14:43:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00219.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6367
+    ] ;
+    :nd "+53.2225+006.6367"^^ll:
+  ] ;
   :site site:gr9723EWgroningen ;
-  :ent t00219:p1 ,
-       t00219:p2 ;
-  :sym t00219:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Horse.n.01
+    ], [
+      a :Gate.n.01
+    ]
+  ] .
 
-t00219:c1 a :Hamlet.n.03 ;
-  :place place:Euvelgunne2755982 ;
-  :name "EUVELGUNNE" .
-
-t00219:c2 a :Village.n.02 ;
-  :place place:Middelbert2750902 ;
-  :name "MIDDELBERT" .
-
-t00219:c3 a :More.r.01 ;
-  :op1 t00219:m1 ;
-  :op2 t00219:m2 .
-
-t00219:m1 a :Measure.n.02 .
-
-t00219:m2 a :Measure.n.02 ;
-  :mem t00219:u1 ;
-  :qua 83 .
-
-t00219:o1 a :Farmer.n.01 ;
-  :hco "61220" ;
-  :loc t00219:c1 .
-
-t00219:o2 a :Elder.n.03 ;
-  :hco "14000" ;
-  :loc t00219:c2 .
-
-t00219:p1 a :Male ;
+t00219:p1
+  a :Male ;
   :age t00219:m1 ;
   :dod "1878-03-20"^^xsd:date ;
   :nam "ELLE HENDRIKS KONING" ;
-  :occ t00219:o1 ,
-       t00219:o2 ;
-  :rol t00219:r1 .
+  :occ [
+    a :Farmer.n.01 ;
+    :hco "61220" ;
+    :loc [
+      a :Hamlet.n.03 ;
+      :name "EUVELGUNNE" ;
+      :place place:Euvelgunne2755982
+    ]
+  ], [
+    a :Elder.n.03 ;
+    :hco "14000" ;
+    :loc [
+      a :Village.n.02 ;
+      :name "MIDDELBERT" ;
+      :place place:Middelbert2750902
+    ]
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00219:p2
+  ] .
 
-t00219:p2 a :Female ;
+t00219:p2
+  a :Female ;
   :nam "JANTJE KOL" .
 
-t00219:r1 a :Widower.n.01 ;
-  :tgt t00219:p2 .
+[]
+  a :More.r.01 ;
+  :op1 t00219:m1 ;
+  :op2 [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 83
+  ] .
 
-t00219:s1 a :Composite.n.01 ;
-  :prt t00219:s2 ,
-       t00219:s3 .
-
-t00219:s2 a :Horse.n.01 .
-
-t00219:s3 a :Gate.n.01 .
-
-t00219:u1 a :Year.n.01 .
-
-t00219:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00219.jpg" ;
-  dc:date "2019-10-08T14:43:56"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2225 ;
-    geo:long 6.6367
-  ] ;
-  :nd "+53.2225+006.6367"^^ll: .
+t00219:m1
+  a :Measure.n.02 .
 

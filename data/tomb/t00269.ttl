@@ -1,37 +1,33 @@
 @prefix t00269: <https://noordergraf.rug.nl/tomb/t00269#> .
 
-tomb:t00269 a :Tomb ;
-  :image t00269:im1 ;
-  :site site:gr9723EWgroningen ;
-  :ent t00269:p1 ,
-       t00269:p2 .
+tomb:t00269
+  a :Tomb ;
+  :ent t00269:p1, t00269:p2 ;
+  :image [
+    dc:date "2019-10-14T11:00:17"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00269.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2228 ;
+      geo:long 6.6380
+    ] ;
+    :nd "+53.2228+006.6380"^^ll:
+  ] ;
+  :site site:gr9723EWgroningen .
 
-t00269:p1 a :Female ;
+t00269:p1
+  a :Female ;
   :dob "1917-05-31"^^xsd:date ;
   :dod "1970-07-15"^^xsd:date ;
   :nam "GRIETJE A.C. EGGENS" ;
-  :rol t00269:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00269:p2
+  ] .
 
-t00269:p2 a :Male ;
+t00269:p2
+  a :Male ;
   :nam "H. SPELDE" .
-
-t00269:r1 a :Spouse.n.01 ;
-  :tgt t00269:p2 .
-
-t00269:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00269.jpg" ;
-  dc:date "2019-10-14T11:00:17"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2228 ;
-    geo:long 6.6380
-  ] ;
-  :nd "+53.2228+006.6380"^^ll: .
 

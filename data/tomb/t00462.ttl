@@ -1,44 +1,39 @@
 @prefix t00462: <https://noordergraf.rug.nl/tomb/t00462#> .
 
-tomb:t00462 a :Tomb ;
-  :image t00462:im1 ;
+tomb:t00462
+  a :Tomb ;
+  :ent t00462:p1, t00462:p2 ;
+  :image [
+    dc:date "2019-11-09T14:55:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00462.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2065 ;
+      geo:long 5.7699
+    ] ;
+    :nd "+53.2065+005.7699"^^ll:
+  ] ;
   :site site:fr8915CPleeuwarden ;
-  :ent t00462:p1 ,
-       t00462:p2 ;
-  :sym t00462:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Cross.n.03
+    ], [
+      a :Flower.n.01
+    ]
+  ] .
 
-t00462:p1 a :Male ;
+t00462:p1
+  a :Male ;
   :dob "1914-09-08"^^xsd:date ;
   :dod "1968-11-10"^^xsd:date ;
   :nam "J.H.TH. ROTHENGATTER" .
 
-t00462:p2 a :Female ;
+t00462:p2
+  a :Female ;
   :dob "1919-03-06"^^xsd:date ;
   :dod "2004-03-04"^^xsd:date ;
   :nam "P.J. ROTHENGATTER-SCHUITMAKER" .
-
-t00462:s1 a :Composite.n.01 ;
-  :prt t00462:s2 ,
-       t00462:s3 .
-
-t00462:s2 a :Cross.n.03 .
-
-t00462:s3 a :Flower.n.01 .
-
-t00462:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00462.jpg" ;
-  dc:date "2019-11-09T14:55:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2065 ;
-    geo:long 5.7699
-  ] ;
-  :nd "+53.2065+005.7699"^^ll: .
 

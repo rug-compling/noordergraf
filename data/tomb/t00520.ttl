@@ -1,53 +1,48 @@
 @prefix t00520: <https://noordergraf.rug.nl/tomb/t00520#> .
 
-tomb:t00520 a :Tomb ;
-  :image t00520:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00520:p1 ,
-       t00520:p2 ;
+tomb:t00520
+  a :Tomb ;
+  :ent t00520:p1, t00520:p2 ;
+  :image [
+    dc:date "2019-11-23T11:04:01"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00520.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1666 ;
+      geo:long 6.7535
+    ] ;
+    :nd "+53.1666+006.7535"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00520:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00520:p1 a :Male ;
+t00520:p1
+  a :Male ;
   :dob "1869-05-03"^^xsd:date ;
   :dod "1941-09-16"^^xsd:date ;
   :nam "JURRIEN HAGENOUW" ;
-  :rol t00520:r1 .
+  :rol [
+    a :Foster-parent.n.01 ;
+    :tgt t00520:p3
+  ] .
 
-t00520:p2 a :Female ;
+t00520:p2
+  a :Female ;
   :dob "1860-09-23"^^xsd:date ;
   :dod "1956-04-21"^^xsd:date ;
   :nam "HARMANNA CLOSSE" ;
-  :rol t00520:r2 .
-
-t00520:r1 a :Foster-parent.n.01 ;
-  :tgt t00520:p3 .
-
-t00520:r2 a :Foster-parent.n.01 ;
-  :tgt t00520:p3 .
-
-t00520:s1 a :Composite.n.01 ;
-  :prt t00520:s2 ,
-       t00520:s3 .
-
-t00520:s2 a :Frond.n.01 .
-
-t00520:s3 a :Ribbon.n.01 .
-
-t00520:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00520.jpg" ;
-  dc:date "2019-11-23T11:04:01"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1666 ;
-    geo:long 6.7535
-  ] ;
-  :nd "+53.1666+006.7535"^^ll: .
+  :rol [
+    a :Foster-parent.n.01 ;
+    :tgt t00520:p3
+  ] .
 

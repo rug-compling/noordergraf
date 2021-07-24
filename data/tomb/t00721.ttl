@@ -1,57 +1,66 @@
 @prefix t00721: <https://noordergraf.rug.nl/tomb/t00721#> .
 
-tomb:t00721 a :Tomb ;
-  :image t00721:im1 ;
-  :site site:dr7811HEemmen ;
-  :text "hier rust\nonze lieve\nman en vader\njannes\njoling\ngeb. te weerdinge\n27 juni 1890\noverl. in het diac.\nhuis te emmen\n30 jan. 1939\nechtgenoot van\nroelfien hardenberg\n\nrust zacht" ;
-  :ent t00721:p1 ,
-       t00721:p2 ;
+tomb:t00721
+  a :Tomb ;
+  :ent t00721:p1, t00721:p2 ;
+  :image [
+    dc:date "2019-12-21T13:22:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00721.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7812 ;
+      geo:long 6.8992
+    ] ;
+    :nd "+52.7812+006.8992"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00721:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Entity.n.01
+  ] ;
+  :text """hier rust
+onze lieve
+man en vader
+jannes
+joling
+geb. te weerdinge
+27 juni 1890
+overl. in het diac.
+huis te emmen
+30 jan. 1939
+echtgenoot van
+roelfien hardenberg
 
-t00721:c1 a :Village.n.02 ;
-  :place place:Weerdinge2744927 ;
-  :name "WEERDINGE" .
+rust zacht""" .
 
-t00721:c2 a :Hospital.n.01 ;
-  :loc t00721:c3 ;
-  :place place:DiaconessenhuisEmmen ;
-  :name "DIACONESSENHUIS" .
-
-t00721:c3 a :Town.n.01 ;
-  :place place:Emmen2756136 ;
-  :name "EMMEN" .
-
-t00721:p1 a :Male ;
+t00721:p1
+  a :Male ;
   :dob "1890-06-27"^^xsd:date ;
   :dod "1939-01-13"^^xsd:date ;
   :nam "JANNES JOLING" ;
-  :pob t00721:c1 ;
-  :pod t00721:c2 ;
-  :rol t00721:r1 .
-
-t00721:p2 a :Female ;
-  :nam "ROELFIEN HARDENBERG" .
-
-t00721:r1 a :Spouse.n.01 ;
-  :tgt t00721:p2 .
-
-t00721:s1 a :Entity.n.01 .
-
-t00721:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00721.jpg" ;
-  dc:date "2019-12-21T13:22:09"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7812 ;
-    geo:long 6.8992
+  :pob [
+    a :Village.n.02 ;
+    :name "WEERDINGE" ;
+    :place place:Weerdinge2744927
   ] ;
-  :nd "+52.7812+006.8992"^^ll: .
+  :pod [
+    a :Hospital.n.01 ;
+    :loc [
+      a :Town.n.01 ;
+      :name "EMMEN" ;
+      :place place:Emmen2756136
+    ] ;
+    :name "DIACONESSENHUIS" ;
+    :place place:DiaconessenhuisEmmen
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00721:p2
+  ] .
+
+t00721:p2
+  a :Female ;
+  :nam "ROELFIEN HARDENBERG" .
 

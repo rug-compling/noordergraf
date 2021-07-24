@@ -1,106 +1,101 @@
 @prefix t00850: <https://noordergraf.rug.nl/tomb/t00850#> .
 
-tomb:t00850 a :Tomb ;
-  :image t00850:im1 ;
-  :site site:fr8899AWoost_vlieland ;
-  :ent t00850:p1 ,
-       t00850:p2 ,
-       t00850:p3 ;
+tomb:t00850
+  a :Tomb ;
+  :ent t00850:p1, t00850:p2, t00850:p3 ;
+  :image [
+    dc:date "2020-02-20T14:40:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00850.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2958 ;
+      geo:long 5.0653
+    ] ;
+    :nd "+53.2958+005.0653"^^ll:
+  ] ;
   :quo "DAT ZIJ RUSTEN IN VREDE"@nld ;
   :ref t00850:v1 ;
-  :sym t00850:s1 ,
-       t00850:s2 ,
-       t00850:s3 .
+  :site site:fr8899AWoost_vlieland ;
+  :sym [
+    a :Cross.n.03
+  ], [
+    a :Heart.n.07
+  ], [
+    a :Anchor.n.01
+  ] .
 
-t00850:b1 a :First_Epistle_to_the_Corinthians.n.01 ;
-  :prt t00850:c4 .
-
-t00850:c1 a :Island.n.01 ;
-  :place place:Terschelling2746414 ;
-  :name "TERSCHELLING" .
-
-t00850:c2 a :City.n.01 ;
-  :place place:Harlingen2754817 ;
-  :name "HARLINGEN" .
-
-t00850:c3 a :Island.n.01 ;
-  :place place:Vlieland2745420 ;
-  :name "VLIELAND" .
-
-t00850:c4 a :Chapter.n.01 ;
-  :ord 13 ;
-  :prt t00850:v1 .
-
-t00850:p1 a :Female ;
+t00850:p1
+  a :Female ;
   :att "INNIG GELIEFDE" ;
   :dob "1862-03-08"^^xsd:date ;
   :dod "1925-08-11"^^xsd:date ;
   :nam "MARTJE BOER" ;
   :pob t00850:c1 ;
-  :pod t00850:c2 ;
-  :rol t00850:r1 ,
-       t00850:r2 ,
-       t00850:r3 .
+  :pod [
+    a :City.n.01 ;
+    :name "HARLINGEN" ;
+    :place place:Harlingen2754817
+  ] ;
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00850:p3
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00850:p2
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00850:p3
+  ] .
 
-t00850:p2 a :Female ;
+t00850:p2
+  a :Female ;
   :att "GELIEFDE" ;
   :dob "1895-05-26"^^xsd:date ;
   :dod "1908-03-17"^^xsd:date ;
   :nam "MINA" ;
   :pob t00850:c1 ;
   :pod t00850:c3 ;
-  :rol t00850:r4 ,
-       t00850:r5 .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00850:p3
+  ], [
+    a :Sister.n.01
+  ] .
 
-t00850:p3 a :Male ;
+t00850:p3
+  a :Male ;
   :dob "1852-06-15"^^xsd:date ;
   :dod "1937-03-19"^^xsd:date ;
   :nam "PIETER KOOIJMAN" ;
   :pob t00850:c1 ;
   :pod t00850:c3 ;
-  :rol t00850:r6 .
+  :rol [
+    a :Father.n.01 ;
+    :att "BESTEN" ;
+    :tgt t00850:p2
+  ] .
 
-t00850:r1 a :Wife.n.01 ;
-  :tgt t00850:p3 .
+[]
+  a :First_Epistle_to_the_Corinthians.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 13 ;
+    :prt t00850:v1
+  ] .
 
-t00850:r2 a :Mother.n.01 ;
-  :tgt t00850:p2 .
+t00850:c1
+  a :Island.n.01 ;
+  :name "TERSCHELLING" ;
+  :place place:Terschelling2746414 .
 
-t00850:r3 a :Spouse.n.01 ;
-  :tgt t00850:p3 .
+t00850:c3
+  a :Island.n.01 ;
+  :name "VLIELAND" ;
+  :place place:Vlieland2745420 .
 
-t00850:r4 a :Daughter.n.01 ;
-  :tgt t00850:p3 .
-
-t00850:r5 a :Sister.n.01 .
-
-t00850:r6 a :Father.n.01 ;
-  :att "BESTEN" ;
-  :tgt t00850:p2 .
-
-t00850:s1 a :Cross.n.03 .
-
-t00850:s2 a :Heart.n.07 .
-
-t00850:s3 a :Anchor.n.01 .
-
-t00850:v1 a :Verse.n.01 ;
+t00850:v1
+  a :Verse.n.01 ;
   :ord 13 .
-
-t00850:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00850.jpg" ;
-  dc:date "2020-02-20T14:40:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2958 ;
-    geo:long 5.0653
-  ] ;
-  :nd "+53.2958+005.0653"^^ll: .
 

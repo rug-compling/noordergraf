@@ -1,63 +1,57 @@
 @prefix t00133: <https://noordergraf.rug.nl/tomb/t00133#> .
 
-tomb:t00133 a :Tomb ;
-  :image t00133:im1 ;
+tomb:t00133
+  a :Tomb ;
+  :ent t00133:p1, t00133:p2, t00133:p3 ;
+  :image [
+    dc:date "2019-10-01T09:54:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00133.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2068 ;
+      geo:long 6.5725
+    ] ;
+    :nd "+53.2068+006.5725"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00133:p1 ,
-       t00133:p2 ,
-       t00133:p3 ;
-  :sym t00133:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00133:m1 a :Measure.n.02 ;
-  :mem t00133:u1 ;
-  :qua 15 .
-
-t00133:p1 a :Female ;
+t00133:p1
+  a :Female ;
   :dob "1793-05-24"^^xsd:date ;
   :dod "1828-10-21"^^xsd:date ;
   :nam "M.C.J. EINTHOVEN-BAART DE LA FAILLE" .
 
-t00133:p2 a :Male ;
+t00133:p2
+  a :Male ;
   :dob "1784"^^xsd:gYear ;
   :dod "1850-06-09"^^xsd:date ;
   :nam "S.J. EINTHOVEN" ;
-  :rol t00133:r2 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00133:p1
+  ] .
 
-t00133:p3 a :Male ;
-  :age t00133:m1 ;
+t00133:p3
+  a :Male ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 15
+  ] ;
   :dod "1851-08-12"^^xsd:date ;
   :nam "PETRUS EINTHOVEN" .
-
-t00133:r2 a :Husband.n.01 ;
-  :tgt t00133:p1 .
-
-t00133:s1 a :Composite.n.01 ;
-  :prt t00133:s2 ,
-       t00133:s3 ,
-       t00133:s4 .
-
-t00133:s2 a :Frond.n.01 .
-
-t00133:s3 a :Frond.n.01 .
-
-t00133:s4 a :Ribbon.n.01 .
-
-t00133:u1 a :Year.n.01 .
-
-t00133:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00133.jpg" ;
-  dc:date "2019-10-01T09:54:26"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2068 ;
-    geo:long 6.5725
-  ] ;
-  :nd "+53.2068+006.5725"^^ll: .
 

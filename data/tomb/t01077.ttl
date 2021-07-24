@@ -1,51 +1,45 @@
 @prefix t01077: <https://noordergraf.rug.nl/tomb/t01077#> .
 
-tomb:t01077 a :Tomb ;
-  :image t01077:im1 ;
-  :site site:gr9906PPbierum ;
+tomb:t01077
+  a :Tomb ;
   :ent t01077:p1 ;
+  :image [
+    dc:date "2020-04-17T18:26:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01077.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3807 ;
+      geo:long 6.8588
+    ] ;
+    :nd "+53.3807+006.8588"^^ll:
+  ] ;
   :quo "DE DAGEN DES MENSCHEN ZIJN ALS HET GRAS, GELIJK EEN BLOEM DES VELDS, ALZOO BLOEIT HIJ"@nld ;
-  :sym t01077:s1 ,
-       t01077:s2 ,
-       t01077:s3 .
+  :site site:gr9906PPbierum ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Rose.n.01
+  ], [
+    a :Entity.n.01
+  ] .
 
-t01077:c1 a :Village.n.02 ;
-  :place place:Bierum2758983 ;
-  :name "BIERUM" .
-
-t01077:g1 a :Group.n.01 .
-
-t01077:p1 a :Male ;
+t01077:p1
+  a :Male ;
   :dob "1868-07-09"^^xsd:date ;
   :dod "1870-03-26"^^xsd:date ;
   :nam "ALBERT JANS WESTING" ;
-  :pob t01077:c1 ;
-  :rol t01077:r1 .
-
-t01077:r1 a :Son.n.01 ;
-  :att "EENIGST" ;
-  :tgt t01077:g1 .
-
-t01077:s1 a :Butterfly.n.01 .
-
-t01077:s2 a :Rose.n.01 .
-
-t01077:s3 a :Entity.n.01 .
-
-t01077:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01077.jpg" ;
-  dc:date "2020-04-17T18:26:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3807 ;
-    geo:long 6.8588
+  :pob [
+    a :Village.n.02 ;
+    :name "BIERUM" ;
+    :place place:Bierum2758983
   ] ;
-  :nd "+53.3807+006.8588"^^ll: .
+  :rol [
+    a :Son.n.01 ;
+    :att "EENIGST" ;
+    :tgt [
+      a :Group.n.01
+    ]
+  ] .
 

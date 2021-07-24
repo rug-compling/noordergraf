@@ -1,64 +1,60 @@
 @prefix t00297: <https://noordergraf.rug.nl/tomb/t00297#> .
 
-tomb:t00297 a :Tomb ;
-  :image t00297:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00297:g1 ,
-       t00297:p1 ,
-       t00297:p2 ,
-       t00297:p3 ;
+tomb:t00297
+  a :Tomb ;
+  :ent t00297:p1, t00297:p2, t00297:p3, t00297:g1 ;
+  :image [
+    dc:date "2019-10-19T14:40:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00297.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7151 ;
+      geo:long 6.4739
+    ] ;
+    :nd "+52.7151+006.4739"^^ll:
+  ] ;
   :quo "DE LEVENSDRAAD QWORDT SCHIELIJK AFGESNEEN" ;
   :ref "PSALM 90" ;
-  :sym t00297:s1 .
+  :site site:dr7907CHhoogeveen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00297:a1 a :Weeping.a.02 .
-
-t00297:c1 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00297:g1 a :Group.n.01 ;
-  :mem t00297:p2 ,
-       t00297:p3 .
-
-t00297:p1 a :Female ;
+t00297:p1
+  a :Female ;
   :dob "1912-02-11"^^xsd:date ;
   :dod "1924-07-23"^^xsd:date ;
   :nam "HENDRIKJE" ;
   :pob t00297:c1 ;
   :pod t00297:c1 ;
-  :rol t00297:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00297:g1
+  ] .
 
-t00297:p2 a :Male ;
+t00297:p2
+  a :Male ;
   :nam "G. STRIJKER" .
 
-t00297:p3 a :Female ;
-  :rol t00297:r3 .
+t00297:p3
+  a :Female ;
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00297:p2
+  ] .
 
-t00297:r1 a :Daughter.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00297:g1 .
+t00297:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
-t00297:r3 a :Wife.n.01 ;
-  :tgt t00297:p2 .
-
-t00297:s1 a :Willow.n.01 ;
-  :att t00297:a1 .
-
-t00297:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00297.jpg" ;
-  dc:date "2019-10-19T14:40:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7151 ;
-    geo:long 6.4739
-  ] ;
-  :nd "+52.7151+006.4739"^^ll: .
+t00297:g1
+  a :Group.n.01 ;
+  :mem t00297:p2, t00297:p3 .
 

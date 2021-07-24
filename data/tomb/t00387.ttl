@@ -1,72 +1,69 @@
 @prefix t00387: <https://noordergraf.rug.nl/tomb/t00387#> .
 
-tomb:t00387 a :Tomb ;
-  :image t00387:im1 ;
-  :site site:fr9285TCbuitenpost ;
-  :ent t00387:p1 ,
-       t00387:p2 ,
-       t00387:p3 ;
+tomb:t00387
+  a :Tomb ;
+  :ent t00387:p1, t00387:p2, t00387:p3 ;
+  :image [
+    dc:date "2019-10-26T14:58:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00387.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2517 ;
+      geo:long 6.1452
+    ] ;
+    :nd "+53.2517+006.1452"^^ll:
+  ] ;
   :ref t00387:v1 ;
-  :sym t00387:s1 ,
-       t00387:s2 .
+  :site site:fr9285TCbuitenpost ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Branch.n.02 ;
+    :qua 2
+  ] .
 
-t00387:a1 a :Weeping.a.02 .
-
-t00387:b1 a :Revelation.n.04 ;
-  :prt t00387:c3 .
-
-t00387:c1 a :Village.n.02 ;
-  :place place:AugsbuurtLutjewoude2759614 ;
-  :name "LUTJEWOUDE" .
-
-t00387:c2 a :Village.n.02 ;
-  :place place:Buitenpost2758131 ;
-  :name "BUITENPOST" .
-
-t00387:c3 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00387:v1 .
-
-t00387:p1 a :Female ;
+t00387:p1
+  a :Female ;
   :dob "1838-09-13"^^xsd:date ;
   :dod "1908-05-04"^^xsd:date ;
   :nam "BETSKE J. SPOELMAN" ;
-  :pob t00387:c1 ;
-  :pod t00387:c2 ;
-  :rol t00387:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "LUTJEWOUDE" ;
+    :place place:AugsbuurtLutjewoude2759614
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "BUITENPOST" ;
+    :place place:Buitenpost2758131
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00387:p2
+  ] .
 
-t00387:p2 a :Male ;
+t00387:p2
+  a :Male ;
   :nam "A.G. HEIDEMA" .
 
-t00387:p3 a :Male ;
+t00387:p3
+  a :Male ;
   :nam "JAN R. LUINSTRA" .
 
-t00387:r1 a :Spouse.n.01 ;
-  :tgt t00387:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00387:v1
+  ] .
 
-t00387:s1 a :Willow.n.01 ;
-  :att t00387:a1 .
-
-t00387:s2 a :Branch.n.02 ;
-  :qua 2 .
-
-t00387:v1 a :Verse.n.01 ;
+t00387:v1
+  a :Verse.n.01 ;
   :ord 13 .
-
-t00387:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00387.jpg" ;
-  dc:date "2019-10-26T14:58:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2517 ;
-    geo:long 6.1452
-  ] ;
-  :nd "+53.2517+006.1452"^^ll: .
 

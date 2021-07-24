@@ -1,72 +1,69 @@
 @prefix t00023: <https://noordergraf.rug.nl/tomb/t00023#> .
 
-tomb:t00023 a :Tomb ;
-  :image t00023:im1 ;
+tomb:t00023
+  a :Tomb ;
+  :ent t00023:p1, t00023:p2, t00023:p3, t00023:p4 ;
+  :image [
+    dc:date "2019-09-25T16:26:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00023.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1909 ;
+      geo:long 6.5943
+    ] ;
+    :nd "+53.1909+006.5943"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00023:p1 ,
-       t00023:p2 ,
-       t00023:p3 ,
-       t00023:p4 ;
-  :sym t00023:s1 .
+  :sym [
+    a :Sandglass.n.01 ;
+    :att [
+      a :Winged.a.01
+    ]
+  ] .
 
-t00023:a1 a :Winged.a.01 .
-
-t00023:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00023:c2 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00023:p1 a :Male ;
+t00023:p1
+  a :Male ;
   :dob "1864-09-25"^^xsd:date ;
   :dod "1930-01-06"^^xsd:date ;
   :nam "LAMBERTUS M. STRENGHOLT" ;
-  :pob t00023:c2 ;
+  :pob [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
+  ] ;
   :pod t00023:c1 ;
-  :rol t00023:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00023:p2
+  ] .
 
-t00023:p2 a :Female ;
+t00023:p2
+  a :Female ;
   :dob "1865-11-29"^^xsd:date ;
   :dod "1949-03-07"^^xsd:date ;
   :nam "ZWAANTJE MULDER" .
 
-t00023:p3 a :Female ;
+t00023:p3
+  a :Female ;
   :dob "1908-06-09"^^xsd:date ;
   :dod "1945-02-25"^^xsd:date ;
   :nam "HENDRIKA M.G. KUMMER" ;
   :pob t00023:c1 ;
   :pod t00023:c1 ;
-  :rol t00023:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00023:p4
+  ] .
 
-t00023:p4 a :Male ;
+t00023:p4
+  a :Male ;
   :nam "EILDERT M.J. STRENGHOLT" .
 
-t00023:r1 a :Spouse.n.01 ;
-  :tgt t00023:p2 .
-
-t00023:r2 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00023:p4 .
-
-t00023:s1 a :Sandglass.n.01 ;
-  :att t00023:a1 .
-
-t00023:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00023.jpg" ;
-  dc:date "2019-09-25T16:26:28"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1909 ;
-    geo:long 6.5943
-  ] ;
-  :nd "+53.1909+006.5943"^^ll: .
+t00023:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

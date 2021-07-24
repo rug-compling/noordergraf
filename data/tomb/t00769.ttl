@@ -1,19 +1,31 @@
 @prefix t00769: <https://noordergraf.rug.nl/tomb/t00769#> .
 
-tomb:t00769 a :Tomb ;
-  :image t00769:im1 ;
-  :site site:dr7811HEemmen ;
+tomb:t00769
+  a :Tomb ;
   :ent t00769:p1 ;
+  :image [
+    dc:date "2019-12-21T13:03:34"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00769.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7822 ;
+      geo:long 6.8981
+    ] ;
+    :nd "+52.7822+006.8981"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00769:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00769:a1 a :Weeping.a.02 .
-
-t00769:c1 a :Village.n.02 ;
-  :place place:Weerdinge2744927 ;
-  :name "WEERDINGE" .
-
-t00769:p1 a :Male ;
+t00769:p1
+  a :Male ;
   :dob "1846-08-04"^^xsd:date ;
   :dod "1886-05-07"^^xsd:date ;
   :nam "HINDRIK JOLING" ;
@@ -21,23 +33,8 @@ t00769:p1 a :Male ;
   :pod t00769:c1 ;
   :sfx "RZ" .
 
-t00769:s1 a :Willow.n.01 ;
-  :att t00769:a1 .
-
-t00769:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00769.jpg" ;
-  dc:date "2019-12-21T13:03:34"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7822 ;
-    geo:long 6.8981
-  ] ;
-  :nd "+52.7822+006.8981"^^ll: .
+t00769:c1
+  a :Village.n.02 ;
+  :name "WEERDINGE" ;
+  :place place:Weerdinge2744927 .
 

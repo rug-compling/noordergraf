@@ -1,41 +1,39 @@
 @prefix t01039: <https://noordergraf.rug.nl/tomb/t01039#> .
 
-tomb:t01039 a :Tomb ;
-  :image t01039:im1 ;
-  :site site:gr9801CAzuidhorn ;
+tomb:t01039
+  a :Tomb ;
   :ent t01039:p1 ;
+  :image [
+    dc:date "2020-04-19T10:41:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01039.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2398 ;
+      geo:long 6.4101
+    ] ;
+    :nd "+53.2398+006.4101"^^ll:
+  ] ;
   :lan "NLD" ;
-  :ref t01039:v1 .
+  :ref t01039:v1 ;
+  :site site:gr9801CAzuidhorn .
 
-t01039:b1 a :Revelation.n.04 ;
-  :prt t01039:c1 .
-
-t01039:c1 a :Chapter.n.01 ;
-  :ord 20 ;
-  :prt t01039:v1 .
-
-t01039:p1 a :Male ;
+t01039:p1
+  a :Male ;
   :dob "1952-11-24"^^xsd:date ;
   :dod "1970-09-24"^^xsd:date ;
   :nam "FERDINAND JOHANNES VAN DIJKEN" .
 
-t01039:v1 a :Verse.n.01 ;
-  :ord 12 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 20 ;
+    :prt t01039:v1
+  ] .
 
-t01039:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01039.jpg" ;
-  dc:date "2020-04-19T10:41:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2398 ;
-    geo:long 6.4101
-  ] ;
-  :nd "+53.2398+006.4101"^^ll: .
+t01039:v1
+  a :Verse.n.01 ;
+  :ord 12 .
 

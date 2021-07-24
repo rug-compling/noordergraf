@@ -1,66 +1,63 @@
 @prefix t00894: <https://noordergraf.rug.nl/tomb/t00894#> .
 
-tomb:t00894 a :Tomb ;
-  :image t00894:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00894:p1 ,
-       t00894:p2 ;
-  :lan "NLD" .
+tomb:t00894
+  a :Tomb ;
+  :ent t00894:p1, t00894:p2 ;
+  :image [
+    dc:date "2020-03-07T14:34:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00894.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1725 ;
+      geo:long 6.3613
+    ] ;
+    :nd "+53.1725+006.3613"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9351RLtolbert .
 
-t00894:c1 a :Location.n.01 ;
-  :apx t00894:c2 .
-
-t00894:c2 a :Village.n.02 ;
-  :place place:Oldekerk2749658 ;
-  :name "OLDEKERK" .
-
-t00894:c3 a :Location.n.01 ;
-  :apx t00894:c4 .
-
-t00894:c4 a :Village.n.02 ;
-  :place place:Midwolde2750830 ;
-  :name "MIDWOLDE" .
-
-t00894:c5 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00894:p1 a :Male ;
+t00894:p1
+  a :Male ;
   :dob "1792-12-01"^^xsd:date ;
   :dod "1869-09-21"^^xsd:date ;
   :nam "JAKOB MELES MELESSEN" ;
-  :pob t00894:c1 ;
-  :pod t00894:c3 ;
-  :rol t00894:r1 .
+  :pob [
+    a :Location.n.01 ;
+    :apx [
+      a :Village.n.02 ;
+      :name "OLDEKERK" ;
+      :place place:Oldekerk2749658
+    ]
+  ] ;
+  :pod [
+    a :Location.n.01 ;
+    :apx [
+      a :Village.n.02 ;
+      :name "MIDWOLDE" ;
+      :place place:Midwolde2750830
+    ]
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00894:p2
+  ] .
 
-t00894:p2 a :Female ;
+t00894:p2
+  a :Female ;
   :dob "1795-01-23"^^xsd:date ;
   :dod "1847-10-24"^^xsd:date ;
   :nam "MARTHA LEURINGH" ;
   :pob t00894:c5 ;
   :pod t00894:c5 ;
-  :rol t00894:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00894:p1
+  ] .
 
-t00894:r1 a :Widower.n.01 ;
-  :tgt t00894:p2 .
-
-t00894:r2 a :Wife.n.01 ;
-  :tgt t00894:p1 .
-
-t00894:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00894.jpg" ;
-  dc:date "2020-03-07T14:34:46"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1725 ;
-    geo:long 6.3613
-  ] ;
-  :nd "+53.1725+006.3613"^^ll: .
+t00894:c5
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 

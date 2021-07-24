@@ -1,51 +1,48 @@
 @prefix t00744: <https://noordergraf.rug.nl/tomb/t00744#> .
 
-tomb:t00744 a :Tomb ;
-  :image t00744:im1 ;
-  :site site:gr9679KHscheemda ;
-  :ent t00744:p1 ,
-       t00744:p2 ;
+tomb:t00744
+  a :Tomb ;
+  :ent t00744:p1, t00744:p2 ;
+  :image [
+    dc:date "2019-12-29T10:19:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00744.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1806 ;
+      geo:long 6.9689
+    ] ;
+    :nd "+53.1806+006.9689"^^ll:
+  ] ;
   :ref "HEBREEËN 4:9"@nld ;
-  :sym t00744:s1 .
+  :site site:gr9679KHscheemda ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00744:a1 a :Weeping.a.02 .
-
-t00744:c1 a :Village.n.02 ;
-  :place place:Scheemda2747661 ;
-  :name "SCHEEMDA" .
-
-t00744:p1 a :Male ;
+t00744:p1
+  a :Male ;
   :dob "1865-09-04"^^xsd:date ;
   :dod "1947-01-11"^^xsd:date ;
   :nam "JAN HORREL" ;
   :pob t00744:c1 ;
   :pod t00744:c1 ;
-  :rol t00744:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00744:p2
+  ] .
 
-t00744:p2 a :Female ;
+t00744:p2
+  a :Female ;
   :nam "GEERTJE MEIN" .
 
-t00744:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00744:p2 .
-
-t00744:s1 a :Willow.n.01 ;
-  :att t00744:a1 .
-
-t00744:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00744.jpg" ;
-  dc:date "2019-12-29T10:19:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1806 ;
-    geo:long 6.9689
-  ] ;
-  :nd "+53.1806+006.9689"^^ll: .
+t00744:c1
+  a :Village.n.02 ;
+  :name "SCHEEMDA" ;
+  :place place:Scheemda2747661 .
 

@@ -1,64 +1,62 @@
 @prefix t00620: <https://noordergraf.rug.nl/tomb/t00620#> .
 
-tomb:t00620 a :Tomb ;
-  :image t00620:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00620:p1 ,
-       t00620:p2 ,
-       t00620:p3 ;
-  :lan "NLD" .
+tomb:t00620
+  a :Tomb ;
+  :ent t00620:p1, t00620:p2, t00620:p3 ;
+  :image [
+    dc:date "2019-11-23T10:02:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00620.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1643 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1643+006.7541"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9601KAhoogezand .
 
-t00620:c1 a :Village.n.02 ;
-  :place place:Borgercompagnie2758618 ;
-  :name "BORGERCOMPAGNIE" .
-
-t00620:c2 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00620:c3 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00620:c4 a :Village.n.02 ;
-  :place place:Asten2759621 ;
-  :name "ASTEN" .
-
-t00620:p1 a :Person ;
+t00620:p1
+  a :Person ;
   :dob "1925-02-05"^^xsd:date ;
   :dod "2015-04-02"^^xsd:date ;
   :nam "W.R. MULDER" ;
   :pob t00620:c1 ;
   :pod t00620:c2 .
 
-t00620:p2 a :Person ;
+t00620:p2
+  a :Person ;
   :dob "1930-06-06"^^xsd:date ;
   :dod "1975-05-11"^^xsd:date ;
   :nam "R. HAVINGA" ;
-  :pob t00620:c3 ;
+  :pob [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
+  ] ;
   :pod t00620:c1 .
 
-t00620:p3 a :Person ;
+t00620:p3
+  a :Person ;
   :dob "1926-03-20"^^xsd:date ;
   :dod "2008-05-25"^^xsd:date ;
   :nam "P.J. STRIJBOSCH" ;
-  :pob t00620:c4 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ASTEN" ;
+    :place place:Asten2759621
+  ] ;
   :pod t00620:c2 .
 
-t00620:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00620.jpg" ;
-  dc:date "2019-11-23T10:02:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1643 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1643+006.7541"^^ll: .
+t00620:c1
+  a :Village.n.02 ;
+  :name "BORGERCOMPAGNIE" ;
+  :place place:Borgercompagnie2758618 .
+
+t00620:c2
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 

@@ -1,46 +1,41 @@
 @prefix t00224: <https://noordergraf.rug.nl/tomb/t00224#> .
 
-tomb:t00224 a :Tomb ;
-  :image t00224:im1 ;
+tomb:t00224
+  a :Tomb ;
+  :ent t00224:p1, t00224:p2 ;
+  :image [
+    dc:date "2019-10-08T14:41:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00224.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6366
+    ] ;
+    :nd "+53.2225+006.6366"^^ll:
+  ] ;
   :site site:gr9723EWgroningen ;
-  :ent t00224:p1 ,
-       t00224:p2 ;
-  :sym t00224:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Butterfly.n.01
+    ], [
+      a :Flower.n.01
+    ]
+  ] .
 
-t00224:p1 a :Female ;
+t00224:p1
+  a :Female ;
   :dob "1840-01-31"^^xsd:date ;
   :dod "1879-10-01"^^xsd:date ;
   :nam "ETJE JANS EMMELKAMP" ;
-  :rol t00224:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00224:p2
+  ] .
 
-t00224:p2 a :Male ;
+t00224:p2
+  a :Male ;
   :nam "KLAAS KRUIJER" .
-
-t00224:r1 a :Spouse.n.01 ;
-  :tgt t00224:p2 .
-
-t00224:s1 a :Composite.n.01 ;
-  :prt t00224:s2 ,
-       t00224:s3 .
-
-t00224:s2 a :Butterfly.n.01 .
-
-t00224:s3 a :Flower.n.01 .
-
-t00224:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00224.jpg" ;
-  dc:date "2019-10-08T14:41:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2225 ;
-    geo:long 6.6366
-  ] ;
-  :nd "+53.2225+006.6366"^^ll: .
 

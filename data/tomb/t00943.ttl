@@ -1,48 +1,42 @@
 @prefix t00943: <https://noordergraf.rug.nl/tomb/t00943#> .
 
-tomb:t00943 a :Tomb ;
-  :image t00943:im1 ;
-  :site site:gr9696XGoudeschans ;
-  :ent t00943:g1 ,
-       t00943:p1 ,
-       t00943:p2 ,
-       t00943:p3 ;
-  :quo "RUST ZACHT LIEVE BERTY"@nld .
+tomb:t00943
+  a :Tomb ;
+  :ent t00943:p1, t00943:p2, t00943:p3, t00943:g1 ;
+  :image [
+    dc:date "2020-03-21T13:21:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00943.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1384 ;
+      geo:long 7.1432
+    ] ;
+    :nd "+53.1384+007.1432"^^ll:
+  ] ;
+  :quo "RUST ZACHT LIEVE BERTY"@nld ;
+  :site site:gr9696XGoudeschans .
 
-t00943:g1 a :Group.n.01 ;
-  :mem t00943:p2 ,
-       t00943:p3 .
-
-t00943:p1 a :Male ;
+t00943:p1
+  a :Male ;
   :dob "1944-10-14"^^xsd:date ;
   :dod "1945-05-26"^^xsd:date ;
-  :nam "ALBERT HARM" ,
-       "BERTY" ;
-  :rol t00943:r1 .
+  :nam "ALBERT HARM", "BERTY" ;
+  :rol [
+    a :Son.n.01 ;
+    :tgt t00943:g1
+  ] .
 
-t00943:p2 a :Male ;
+t00943:p2
+  a :Male ;
   :nam "H.G. NOMDEN" .
 
-t00943:p3 a :Female ;
+t00943:p3
+  a :Female ;
   :nam "S. NOMDEN-VOS" .
 
-t00943:r1 a :Son.n.01 ;
-  :tgt t00943:g1 .
-
-t00943:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00943.jpg" ;
-  dc:date "2020-03-21T13:21:32"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1384 ;
-    geo:long 7.1432
-  ] ;
-  :nd "+53.1384+007.1432"^^ll: .
+t00943:g1
+  a :Group.n.01 ;
+  :mem t00943:p2, t00943:p3 .
 

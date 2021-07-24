@@ -1,53 +1,51 @@
 @prefix t00159: <https://noordergraf.rug.nl/tomb/t00159#> .
 
-tomb:t00159 a :Tomb ;
-  :image t00159:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00159:p1 ,
-       t00159:p2 ;
-  :quo "HIER RUSTE IN VREDE" .
+tomb:t00159
+  a :Tomb ;
+  :ent t00159:p1, t00159:p2 ;
+  :image [
+    dc:date "2019-10-04T10:55:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00159.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2060 ;
+      geo:long 6.5698
+    ] ;
+    :nd "+53.2060+006.5698"^^ll:
+  ] ;
+  :quo "HIER RUSTE IN VREDE" ;
+  :site site:gr9725ACgroningen .
 
-t00159:c1 a :More.r.01 ;
-  :op1 t00159:m1 ;
-  :op2 t00159:m2 .
-
-t00159:m1 a :Measure.n.02 .
-
-t00159:m2 a :Measure.n.02 ;
-  :mem t00159:u1 ;
-  :qua 40 .
-
-t00159:p1 a :Female ;
+t00159:p1
+  a :Female ;
   :dob "1875-04-10"^^xsd:date ;
   :dod "1941-04-26"^^xsd:date ;
   :nam "WIEBEGIEN BROUWER" ;
-  :rol t00159:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :dur t00159:m1 ;
+    :tgt t00159:p2
+  ] .
 
-t00159:p2 a :Male ;
+t00159:p2
+  a :Male ;
   :dob "1876-10-24"^^xsd:date ;
   :dod "1961-12-29"^^xsd:date ;
   :nam "J. SMIDT" .
 
-t00159:r2 a :Spouse.n.01 ;
-  :dur t00159:m1 ;
-  :tgt t00159:p2 .
+[]
+  a :More.r.01 ;
+  :op1 t00159:m1 ;
+  :op2 [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 40
+  ] .
 
-t00159:u1 a :Year.n.01 .
-
-t00159:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00159.jpg" ;
-  dc:date "2019-10-04T10:55:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2060 ;
-    geo:long 6.5698
-  ] ;
-  :nd "+53.2060+006.5698"^^ll: .
+t00159:m1
+  a :Measure.n.02 .
 

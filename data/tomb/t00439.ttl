@@ -1,57 +1,54 @@
 @prefix t00439: <https://noordergraf.rug.nl/tomb/t00439#> .
 
-tomb:t00439 a :Tomb ;
-  :image t00439:im1 ;
+tomb:t00439
+  a :Tomb ;
+  :ent t00439:p1, t00439:p2, t00439:p3, t00439:p4 ;
+  :image [
+    dc:date "2019-11-02T11:39:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00439.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4793 ;
+      geo:long 6.1610
+    ] ;
+    :nd "+53.4793+006.1610"^^ll:
+  ] ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent t00439:p1 ,
-       t00439:p2 ,
-       t00439:p3 ,
-       t00439:p4 ;
-  :sym t00439:s1 .
+  :sym [
+    a :Entity.n.01
+  ] .
 
-t00439:c1 a :Island.n.01 ;
-  :place place:Schiermonnikoog2747591 ;
-  :name "SCHIERMONNIKOOG" .
-
-t00439:p1 a :Female ;
+t00439:p1
+  a :Female ;
   :dob "1899-01-06"^^xsd:date ;
   :dod "1941-01-08"^^xsd:date ;
   :nam "CATHARINA LOUISA DRAAIJER" ;
   :pod t00439:c1 .
 
-t00439:p2 a :Female ;
+t00439:p2
+  a :Female ;
   :dob "1873-10-26"^^xsd:date ;
   :dod "1941-01-08"^^xsd:date ;
   :nam "WIETSKE CARST" ;
   :pod t00439:c1 ;
-  :rol t00439:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00439:p3
+  ] .
 
-t00439:p3 a :Male ;
+t00439:p3
+  a :Male ;
   :nam "HERMAN DRAAIJER" .
 
-t00439:p4 a :Female ;
+t00439:p4
+  a :Female ;
   :dob "1869-09-08"^^xsd:date ;
   :nam "MEINSINA DRAIJER" .
 
-t00439:r1 a :Widow.n.01 ;
-  :tgt t00439:p3 .
-
-t00439:s1 a :Entity.n.01 .
-
-t00439:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00439.jpg" ;
-  dc:date "2019-11-02T11:39:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4793 ;
-    geo:long 6.1610
-  ] ;
-  :nd "+53.4793+006.1610"^^ll: .
+t00439:c1
+  a :Island.n.01 ;
+  :name "SCHIERMONNIKOOG" ;
+  :place place:Schiermonnikoog2747591 .
 

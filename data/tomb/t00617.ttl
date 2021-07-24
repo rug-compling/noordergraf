@@ -1,46 +1,42 @@
 @prefix t00617: <https://noordergraf.rug.nl/tomb/t00617#> .
 
-tomb:t00617 a :Tomb ;
-  :image t00617:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00617:p1 ,
-       t00617:p2 ;
+tomb:t00617
+  a :Tomb ;
+  :ent t00617:p1, t00617:p2 ;
+  :image [
+    dc:date "2019-11-23T10:04:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00617.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1644 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1644+006.7541"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00617:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00617:a1 a :Weeping.a.02 .
-
-t00617:p1 a :Male ;
+t00617:p1
+  a :Male ;
   :dob "1829-10-08"^^xsd:date ;
   :dod "1888-06-21"^^xsd:date ;
   :nam "WIGERT PRINS" .
 
-t00617:p2 a :Female ;
+t00617:p2
+  a :Female ;
   :dob "1829-11-29"^^xsd:date ;
   :dod "1902-07-12"^^xsd:date ;
   :nam "JANKE DE JONGE" ;
-  :rol t00617:r1 .
-
-t00617:r1 a :Spouse.n.01 ;
-  :tgt t00617:p1 .
-
-t00617:s1 a :Willow.n.01 ;
-  :att t00617:a1 .
-
-t00617:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00617.jpg" ;
-  dc:date "2019-11-23T10:04:10"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1644 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1644+006.7541"^^ll: .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00617:p1
+  ] .
 

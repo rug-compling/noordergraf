@@ -1,65 +1,59 @@
 @prefix t00675: <https://noordergraf.rug.nl/tomb/t00675#> .
 
-tomb:t00675 a :Tomb ;
-  :image t00675:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00675:g1 ,
-       t00675:g2 ,
-       t00675:g3 ,
-       t00675:p1 ,
-       t00675:p2 ;
-  :lan "NLD" .
+tomb:t00675
+  a :Tomb ;
+  :ent t00675:p1, t00675:p2, t00675:g1, t00675:g2, [
+    a :Group.n.01 ;
+    :rol [
+      a :Grandchild.n.01 ;
+      :tgt t00675:g1
+    ]
+  ] ;
+  :image [
+    dc:date "2019-12-14T13:33:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00675.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0685 ;
+      geo:long 5.5219
+    ] ;
+    :nd "+53.0685+005.5219"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:fr8701DWbolsward .
 
-t00675:g1 a :Group.n.01 ;
-  :mem t00675:p1 ,
-       t00675:p2 ;
-  :rol t00675:r1 .
-
-t00675:g2 a :Group.n.01 ;
-  :rol t00675:r4 .
-
-t00675:g3 a :Group.n.01 ;
-  :rol t00675:r5 .
-
-t00675:p1 a :Male ;
+t00675:p1
+  a :Male ;
   :dob "1910-11-03"^^xsd:date ;
   :dod "1979-01-30"^^xsd:date ;
   :nam "THEO VAN BERGEN" ;
-  :rol t00675:r2 .
+  :rol [
+    a :Grandfather.n.01
+  ] .
 
-t00675:p2 a :Female ;
+t00675:p2
+  a :Female ;
   :dob "1908-07-02"^^xsd:date ;
   :dod "1998-03-16"^^xsd:date ;
   :nam "BOUKJE DE REE" ;
-  :rol t00675:r3 .
+  :rol [
+    a :Grandmother.n.01
+  ] .
 
-t00675:r1 a :Parent.n.01 ;
-  :tgt t00675:g2 .
+t00675:g1
+  a :Group.n.01 ;
+  :mem t00675:p1, t00675:p2 ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00675:g2
+  ] .
 
-t00675:r2 a :Grandfather.n.01 .
-
-t00675:r3 a :Grandmother.n.01 .
-
-t00675:r4 a :Child.n.02 ;
-  :tgt t00675:g1 .
-
-t00675:r5 a :Grandchild.n.01 ;
-  :tgt t00675:g1 .
-
-t00675:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00675.jpg" ;
-  dc:date "2019-12-14T13:33:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0685 ;
-    geo:long 5.5219
-  ] ;
-  :nd "+53.0685+005.5219"^^ll: .
+t00675:g2
+  a :Group.n.01 ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00675:g1
+  ] .
 

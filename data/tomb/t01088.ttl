@@ -1,33 +1,29 @@
 @prefix t01088: <https://noordergraf.rug.nl/tomb/t01088#> .
 
-tomb:t01088 a :Tomb ;
-  :image t01088:im1 ;
-  :site site:gr9752CMharen ;
+tomb:t01088
+  a :Tomb ;
   :ent t01088:p1 ;
+  :image [
+    dc:date "2020-09-11T17:51:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01088.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1640 ;
+      geo:long 6.6140
+    ] ;
+    :nd "+53.1640+006.6140"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01088:s1 .
+  :site site:gr9752CMharen ;
+  :sym [
+    a :Sundial.n.01
+  ] .
 
-t01088:p1 a :Male ;
+t01088:p1
+  a :Male ;
   :dob "1932-11-11"^^xsd:date ;
   :dod "1988-09-02"^^xsd:date ;
   :nam "JAN ALBERT BARKMAN" .
-
-t01088:s1 a :Sundial.n.01 .
-
-t01088:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01088.jpg" ;
-  dc:date "2020-09-11T17:51:30"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1640 ;
-    geo:long 6.6140
-  ] ;
-  :nd "+53.1640+006.6140"^^ll: .
 

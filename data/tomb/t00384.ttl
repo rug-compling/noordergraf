@@ -1,75 +1,69 @@
 @prefix t00384: <https://noordergraf.rug.nl/tomb/t00384#> .
 
-tomb:t00384 a :Tomb ;
-  :image t00384:im1 ;
-  :site site:fr9285TCbuitenpost ;
-  :ent t00384:p1 ,
-       t00384:p2 ,
-       t00384:p3 ;
+tomb:t00384
+  a :Tomb ;
+  :ent t00384:p1, t00384:p2, [
+    a :Family.n.04 ;
+    :nam "IJTSMA"
+  ] ;
+  :image [
+    dc:date "2019-10-26T15:05:51"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00384.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2519 ;
+      geo:long 6.1451
+    ] ;
+    :nd "+53.2519+006.1451"^^ll:
+  ] ;
   :quo "ZIJN HEENGAAN WAS VREDE" ;
-  :sym t00384:s1 .
+  :site site:fr9285TCbuitenpost ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00384:c1 a :Village.n.02 ;
-  :place place:Augustinusga2759611 ;
-  :name "AUGUSTINUSGA" .
-
-t00384:c2 a :Village.n.02 ;
-  :place place:Gerkesklooster2755574 ;
-  :name "GERKESKLOOSTER" .
-
-t00384:c3 a :Village.n.02 ;
-  :place place:Surhuisterveen2746558 ;
-  :name "SURHUISTERVEEN" .
-
-t00384:c4 a :Hamlet.n.03 ;
-  :place place:Lutkepost2751365 ;
-  :name "LUTKEPOST" .
-
-t00384:p1 a :Male ;
+t00384:p1
+  a :Male ;
   :dob "1860-11-28"^^xsd:date ;
   :dod "1946-02-15"^^xsd:date ;
   :nam "ALLE IJTSMA" ;
-  :pob t00384:c1 ;
-  :pod t00384:c2 ;
-  :rol t00384:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "AUGUSTINUSGA" ;
+    :place place:Augustinusga2759611
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "GERKESKLOOSTER" ;
+    :place place:Gerkesklooster2755574
+  ] ;
+  :rol [
+    a :Parent.n.01
+  ] .
 
-t00384:p2 a :Female ;
+t00384:p2
+  a :Female ;
   :dob "1866-02-02"^^xsd:date ;
   :dod "1928-09-07"^^xsd:date ;
   :nam "AALTJE VAN DELLEN" ;
-  :pob t00384:c3 ;
-  :pod t00384:c4 ;
-  :rol t00384:r2 .
-
-t00384:p3 a :Family.n.04 ;
-  :nam "IJTSMA" .
-
-t00384:r1 a :Parent.n.01 .
-
-t00384:r2 a :Parent.n.01 .
-
-t00384:s1 a :Composite.n.01 ;
-  :prt t00384:s2 ,
-       t00384:s3 .
-
-t00384:s2 a :Frond.n.01 .
-
-t00384:s3 a :Ribbon.n.01 .
-
-t00384:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00384.jpg" ;
-  dc:date "2019-10-26T15:05:51"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2519 ;
-    geo:long 6.1451
+  :pob [
+    a :Village.n.02 ;
+    :name "SURHUISTERVEEN" ;
+    :place place:Surhuisterveen2746558
   ] ;
-  :nd "+53.2519+006.1451"^^ll: .
+  :pod [
+    a :Hamlet.n.03 ;
+    :name "LUTKEPOST" ;
+    :place place:Lutkepost2751365
+  ] ;
+  :rol [
+    a :Parent.n.01
+  ] .
 

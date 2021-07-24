@@ -1,46 +1,42 @@
 @prefix t00203: <https://noordergraf.rug.nl/tomb/t00203#> .
 
-tomb:t00203 a :Tomb ;
-  :image t00203:im1 ;
+tomb:t00203
+  a :Tomb ;
+  :ent t00203:p1, t00203:p2 ;
+  :image [
+    dc:date "2019-10-05T09:54:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00203.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1900 ;
+      geo:long 6.5933
+    ] ;
+    :nd "+53.1900+006.5933"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00203:p1 ,
-       t00203:p2 ;
-  :sym t00203:s1 .
+  :sym [
+    a :Flower.n.01 ;
+    :att [
+      a :Broken.a.01
+    ]
+  ] .
 
-t00203:a1 a :Broken.a.01 .
-
-t00203:p1 a :Male ;
+t00203:p1
+  a :Male ;
   :dob "1894-09-23"^^xsd:date ;
   :dod "1931-06-05"^^xsd:date ;
   :nam "ALBERTUS STEENHUIS" ;
-  :rol t00203:r3 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00203:p2
+  ] .
 
-t00203:p2 a :Female ;
+t00203:p2
+  a :Female ;
   :dob "1897-07-07"^^xsd:date ;
   :dod "1979-04-01"^^xsd:date ;
   :nam "TEUBINA G. HIDSKES" .
-
-t00203:r3 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00203:p2 .
-
-t00203:s1 a :Flower.n.01 ;
-  :att t00203:a1 .
-
-t00203:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00203.jpg" ;
-  dc:date "2019-10-05T09:54:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1900 ;
-    geo:long 6.5933
-  ] ;
-  :nd "+53.1900+006.5933"^^ll: .
 

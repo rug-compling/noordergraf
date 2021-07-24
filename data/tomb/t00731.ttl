@@ -1,54 +1,48 @@
 @prefix t00731: <https://noordergraf.rug.nl/tomb/t00731#> .
 
-tomb:t00731 a :Tomb ;
-  :image t00731:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00731:p1 ,
-       t00731:p2 ;
-  :quo "RUST ZACHT"@nld .
+tomb:t00731
+  a :Tomb ;
+  :ent t00731:p1, t00731:p2 ;
+  :image [
+    dc:date "2019-12-21T13:07:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00731.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7821 ;
+      geo:long 6.8974
+    ] ;
+    :nd "+52.7821+006.8974"^^ll:
+  ] ;
+  :quo "RUST ZACHT"@nld ;
+  :site site:dr7811HEemmen .
 
-t00731:p1 a :Male ;
+t00731:p1
+  a :Male ;
   :dob "1873-02-24"^^xsd:date ;
   :dod "1959-04-24"^^xsd:date ;
   :nam "BEREND HENDRIKS" ;
-  :rol t00731:r1 ,
-       t00731:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00731:p3
+  ], [
+    a :Father.n.01 ;
+    :tgt t00731:p3
+  ] .
 
-t00731:p2 a :Female ;
+t00731:p2
+  a :Female ;
   :dob "1882-09-29"^^xsd:date ;
   :dod "1971-04-12"^^xsd:date ;
   :nam "HENDREKIEN HILBRANDS" ;
-  :rol t00731:r3 ,
-       t00731:r4 .
-
-t00731:r1 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00731:p3 .
-
-t00731:r2 a :Father.n.01 ;
-  :tgt t00731:p3 .
-
-t00731:r3 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00731:p3 .
-
-t00731:r4 a :Mother.n.01 ;
-  :tgt t00731:p3 .
-
-t00731:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00731.jpg" ;
-  dc:date "2019-12-21T13:07:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7821 ;
-    geo:long 6.8974
-  ] ;
-  :nd "+52.7821+006.8974"^^ll: .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00731:p3
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00731:p3
+  ] .
 

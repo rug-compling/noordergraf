@@ -1,56 +1,51 @@
 @prefix t00292: <https://noordergraf.rug.nl/tomb/t00292#> .
 
-tomb:t00292 a :Tomb ;
-  :image t00292:im1 ;
+tomb:t00292
+  a :Tomb ;
+  :ent t00292:p1, t00292:p2 ;
+  :image [
+    dc:date "2019-10-19T14:40:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00292.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7151 ;
+      geo:long 6.4739
+    ] ;
+    :nd "+52.7151+006.4739"^^ll:
+  ] ;
   :site site:dr7907CHhoogeveen ;
-  :ent t00292:p1 ,
-       t00292:p2 ;
-  :sym t00292:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00292:a1 a :Weeping.a.02 .
-
-t00292:c1 a :Municipality.n.01 ;
-  :place place:OudAvereest2749185 ;
-  :name "AVEREEST" .
-
-t00292:c2 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00292:p1 a :Female ;
+t00292:p1
+  a :Female ;
   :dob "1874-09-20"^^xsd:date ;
   :dod "1924-07-10"^^xsd:date ;
   :nam "WILLEMINA ZANDINK" ;
-  :pob t00292:c1 ;
-  :pod t00292:c2 ;
-  :rol t00292:r1 ,
-       t00292:r2 .
-
-t00292:p2 a :Male ;
-  :nam "HARM DRENTH" .
-
-t00292:r1 a :Spouse.n.01 ;
-  :tgt t00292:p2 .
-
-t00292:r2 a :Mother.n.01 .
-
-t00292:s1 a :Willow.n.01 ;
-  :att t00292:a1 .
-
-t00292:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00292.jpg" ;
-  dc:date "2019-10-19T14:40:19"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7151 ;
-    geo:long 6.4739
+  :pob [
+    a :Municipality.n.01 ;
+    :name "AVEREEST" ;
+    :place place:OudAvereest2749185
   ] ;
-  :nd "+52.7151+006.4739"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HOOGEVEEN" ;
+    :place place:Hoogeveen2753719
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00292:p2
+  ], [
+    a :Mother.n.01
+  ] .
+
+t00292:p2
+  a :Male ;
+  :nam "HARM DRENTH" .
 

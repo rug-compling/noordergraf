@@ -1,63 +1,54 @@
 @prefix t01005: <https://noordergraf.rug.nl/tomb/t01005#> .
 
-tomb:t01005 a :Tomb ;
-  :image t01005:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t01005:g1 ,
-       t01005:p1 ,
-       t01005:p2 ,
-       t01005:p3 ;
+tomb:t01005
+  a :Tomb ;
+  :ent t01005:p1, t01005:p2, t01005:p3, t01005:g1 ;
+  :image [
+    dc:date "2020-04-04T10:45:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01005.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1756 ;
+      geo:long 7.0958
+    ] ;
+    :nd "+53.1756+007.0958"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01005:s1 ,
-       t01005:s2 ,
-       t01005:s3 ,
-       t01005:s4 ,
-       t01005:s5 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Snake.n.01
+  ], [
+    a :Butterfly.n.01
+  ], [
+    a :Cocoon.n.01
+  ] .
 
-t01005:g1 a :Group.n.01 ;
-  :mem t01005:p2 ,
-       t01005:p3 .
-
-t01005:p1 a :Female ;
+t01005:p1
+  a :Female ;
   :dob "1879-12-30"^^xsd:date ;
   :dod "1908-05-23"^^xsd:date ;
   :nam "GEESSIEN" ;
-  :rol t01005:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t01005:g1
+  ] .
 
-t01005:p2 a :Person ;
+t01005:p2
+  a :Person ;
   :nam "A.S. VONK" .
 
-t01005:p3 a :Person ;
+t01005:p3
+  a :Person ;
   :nam "A. MEIJER" .
 
-t01005:r1 a :Daughter.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t01005:g1 .
-
-t01005:s1 a :Frond.n.01 .
-
-t01005:s2 a :Frond.n.01 .
-
-t01005:s3 a :Snake.n.01 .
-
-t01005:s4 a :Butterfly.n.01 .
-
-t01005:s5 a :Cocoon.n.01 .
-
-t01005:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01005.jpg" ;
-  dc:date "2020-04-04T10:45:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1756 ;
-    geo:long 7.0958
-  ] ;
-  :nd "+53.1756+007.0958"^^ll: .
+t01005:g1
+  a :Group.n.01 ;
+  :mem t01005:p2, t01005:p3 .
 

@@ -1,56 +1,52 @@
 @prefix t00312: <https://noordergraf.rug.nl/tomb/t00312#> .
 
-tomb:t00312 a :Tomb ;
-  :image t00312:im1 ;
+tomb:t00312
+  a :Tomb ;
+  :ent t00312:p1, t00312:p2, t00312:p3 ;
+  :image [
+    dc:date "2019-10-19T14:17:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00312.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4735
+    ] ;
+    :nd "+52.7157+006.4735"^^ll:
+  ] ;
   :site site:dr7907CHhoogeveen ;
-  :ent t00312:p1 ,
-       t00312:p2 ,
-       t00312:p3 ;
-  :sym t00312:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00312:a1 a :Weeping.a.02 .
-
-t00312:p1 a :Female ;
+t00312:p1
+  a :Female ;
   :dob "1835-02-19"^^xsd:date ;
   :dod "1883-04-15"^^xsd:date ;
   :nam "HENDRIKJE HARTSUIKER" .
 
-t00312:p2 a :Male ;
+t00312:p2
+  a :Male ;
   :dob "1826-12-12"^^xsd:date ;
   :dod "1904-04-10"^^xsd:date ;
   :nam "ALBERT SMEMAN" ;
-  :rol t00312:r1 ,
-       t00312:r2 .
+  :rol t00312:r1, [
+    a :Widower.n.01 ;
+    :bef t00312:r1 ;
+    :tgt t00312:p1
+  ] .
 
-t00312:p3 a :Female ;
+t00312:p3
+  a :Female ;
   :dob "1871-04-21"^^xsd:date ;
   :dod "1904-05-13"^^xsd:date ;
   :nam "AALTJE STEENBERGEN" .
 
-t00312:r1 a :Spouse.n.01 ;
+t00312:r1
+  a :Spouse.n.01 ;
   :tgt t00312:p3 .
-
-t00312:r2 a :Widower.n.01 ;
-  :bef t00312:r1 ;
-  :tgt t00312:p1 .
-
-t00312:s1 a :Willow.n.01 ;
-  :att t00312:a1 .
-
-t00312:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00312.jpg" ;
-  dc:date "2019-10-19T14:17:11"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7157 ;
-    geo:long 6.4735
-  ] ;
-  :nd "+52.7157+006.4735"^^ll: .
 

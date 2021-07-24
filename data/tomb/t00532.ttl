@@ -1,42 +1,38 @@
 @prefix t00532: <https://noordergraf.rug.nl/tomb/t00532#> .
 
-tomb:t00532 a :Tomb ;
-  :image t00532:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00532:p1 ,
-       t00532:p2 ;
+tomb:t00532
+  a :Tomb ;
+  :ent t00532:p1, t00532:p2 ;
+  :image [
+    dc:date "2019-11-24T14:34:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00532.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1028 ;
+      geo:long 6.8726
+    ] ;
+    :nd "+53.1028+006.8726"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00532:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00532:p1 a :Female ;
+t00532:p1
+  a :Female ;
   :dob "1913-03-26"^^xsd:date ;
   :dod "1938-04-03"^^xsd:date ;
   :nam "ANNIE VENEMA" ;
-  :rol t00532:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00532:p2
+  ] .
 
-t00532:p2 a :Male ;
+t00532:p2
+  a :Male ;
   :nam "ROELF SMID" .
-
-t00532:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00532:p2 .
-
-t00532:s1 a :Rose.n.01 .
-
-t00532:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00532.jpg" ;
-  dc:date "2019-11-24T14:34:12"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1028 ;
-    geo:long 6.8726
-  ] ;
-  :nd "+53.1028+006.8726"^^ll: .
 

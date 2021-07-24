@@ -1,62 +1,56 @@
 @prefix t00070: <https://noordergraf.rug.nl/tomb/t00070#> .
 
-tomb:t00070 a :Tomb ;
-  :image t00070:im1 ;
+tomb:t00070
+  a :Tomb ;
+  :ent t00070:p1, t00070:p2, t00070:p3, t00070:p4 ;
+  :image [
+    dc:date "2019-09-25T16:07:34"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00070.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1906 ;
+      geo:long 6.5951
+    ] ;
+    :nd "+53.1906+006.5951"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00070:p1 ,
-       t00070:p2 ,
-       t00070:p3 ,
-       t00070:p4 ;
-  :sym t00070:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00070:p1 a :Female ;
+t00070:p1
+  a :Female ;
   :dob "1863-10-11"^^xsd:date ;
   :dod "1938-04-09"^^xsd:date ;
   :nam "ANNECHIEN JACOBA REINMAN" ;
-  :rol t00070:r1 ,
-       t00070:r2 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00070:p2
+  ], [
+    a :Mother.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00070:p2 a :Male ;
+t00070:p2
+  a :Male ;
   :nam "JAN KORENHOF" .
 
-t00070:p3 a :Female ;
+t00070:p3
+  a :Female ;
   :dob "1876-04-08"^^xsd:date ;
   :dod "1958-07-11"^^xsd:date ;
   :nam "JANTJE HENDRIKS" ;
-  :rol t00070:r3 ,
-       t00070:r4 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00070:p4
+  ], [
+    a :Mother.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00070:p4 a :Male ;
+t00070:p4
+  a :Male ;
   :nam "H. STUIVENBERG" .
-
-t00070:r1 a :Widow.n.01 ;
-  :tgt t00070:p2 .
-
-t00070:r2 a :Mother.n.01 ;
-  :att "LIEVE" .
-
-t00070:r3 a :Widow.n.01 ;
-  :tgt t00070:p4 .
-
-t00070:r4 a :Mother.n.01 ;
-  :att "LIEVE" .
-
-t00070:s1 a :Frond.n.01 .
-
-t00070:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00070.jpg" ;
-  dc:date "2019-09-25T16:07:34"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1906 ;
-    geo:long 6.5951
-  ] ;
-  :nd "+53.1906+006.5951"^^ll: .
 

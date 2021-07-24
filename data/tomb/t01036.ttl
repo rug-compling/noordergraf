@@ -1,42 +1,39 @@
 @prefix t01036: <https://noordergraf.rug.nl/tomb/t01036#> .
 
-tomb:t01036 a :Tomb ;
-  :image t01036:im1 ;
-  :site site:gr9804TEnoordhorn ;
+tomb:t01036
+  a :Tomb ;
   :ent t01036:p1 ;
+  :image [
+    dc:date "2020-04-19T11:54:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01036.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2645 ;
+      geo:long 6.3945
+    ] ;
+    :nd "+53.2645+006.3945"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01036:s1 .
+  :site site:gr9804TEnoordhorn ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01036:a1 a :Weeping.a.02 .
-
-t01036:c1 a :Village.n.02 ;
-  :place place:Noordhorn2749875 ;
-  :name "NOORDHORN" .
-
-t01036:p1 a :Female ;
+t01036:p1
+  a :Female ;
   :dob "1847-06-10"^^xsd:date ;
   :dod "1926-03-10"^^xsd:date ;
   :nam "JANTJE VOS" ;
   :pob t01036:c1 ;
   :pod t01036:c1 .
 
-t01036:s1 a :Willow.n.01 ;
-  :att t01036:a1 .
-
-t01036:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01036.jpg" ;
-  dc:date "2020-04-19T11:54:28"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2645 ;
-    geo:long 6.3945
-  ] ;
-  :nd "+53.2645+006.3945"^^ll: .
+t01036:c1
+  a :Village.n.02 ;
+  :name "NOORDHORN" ;
+  :place place:Noordhorn2749875 .
 

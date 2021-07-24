@@ -1,84 +1,78 @@
 @prefix t01017: <https://noordergraf.rug.nl/tomb/t01017#> .
 
-tomb:t01017 a :Tomb ;
-  :image t01017:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t01017:g1 ,
-       t01017:g2 ,
-       t01017:p1 ,
-       t01017:p2 ;
+tomb:t01017
+  a :Tomb ;
+  :ent t01017:p1, t01017:p2, [
+    a :Group.n.01 ;
+    :mem t01017:p1, t01017:p3 ;
+    :rol [
+      a :Parent.n.01 ;
+      :tgt t01017:g2
+    ]
+  ], t01017:g2 ;
+  :image [
+    dc:date "2020-04-04T10:42:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01017.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1751 ;
+      geo:long 7.0964
+    ] ;
+    :nd "+53.1751+007.0964"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01017:s1 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01017:a1 a :Weeping.a.02 .
-
-t01017:g1 a :Group.n.01 ;
-  :mem t01017:p1 ,
-       t01017:p3 ;
-  :rol t01017:r2 .
-
-t01017:g2 a :Group.n.01 ;
-  :mem t01017:p3 ,
-       t01017:p4 ,
-       t01017:p5 .
-
-t01017:m1 a :Measure.n.02 ;
-  :sub t01017:m2 ,
-       t01017:m3 .
-
-t01017:m2 a :Measure.n.02 ;
-  :mem t01017:u1 ;
-  :qua 72 .
-
-t01017:m3 a :Measure.n.02 ;
-  :mem t01017:u2 ;
-  :qua 11 .
-
-t01017:p1 a :Male ;
-  :age t01017:m1 ;
+t01017:p1
+  a :Male ;
+  :age [
+    a :Measure.n.02 ;
+    :sub [
+      a :Measure.n.02 ;
+      :mem [
+        a :Year.n.01
+      ] ;
+      :qua 72
+    ], [
+      a :Measure.n.02 ;
+      :mem [
+        a :Month.n.01
+      ] ;
+      :qua 11
+    ]
+  ] ;
   :dod "1811-12-14"^^xsd:date ;
   :nam "JAN KORNELIS MULLER" ;
-  :rol t01017:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01017:p2
+  ] .
 
-t01017:p2 a :Female ;
+t01017:p2
+  a :Female ;
   :nam "LUDEWÉ HINDRIKS" .
 
-t01017:p3 a :Female ;
+t01017:p3
+  a :Female ;
   :nam "WIEPKE MULLER" .
 
-t01017:p4 a :Female ;
+t01017:p4
+  a :Female ;
   :nam "ETTIEN MULLER" .
 
-t01017:p5 a :Female ;
+t01017:p5
+  a :Female ;
   :nam "CORNELIA JANS MULLER" .
 
-t01017:r1 a :Spouse.n.01 ;
-  :tgt t01017:p2 .
-
-t01017:r2 a :Parent.n.01 ;
-  :tgt t01017:g2 .
-
-t01017:s1 a :Willow.n.01 ;
-  :att t01017:a1 .
-
-t01017:u1 a :Year.n.01 .
-
-t01017:u2 a :Month.n.01 .
-
-t01017:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01017.jpg" ;
-  dc:date "2020-04-04T10:42:20"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1751 ;
-    geo:long 7.0964
-  ] ;
-  :nd "+53.1751+007.0964"^^ll: .
+t01017:g2
+  a :Group.n.01 ;
+  :mem t01017:p3, t01017:p4, t01017:p5 .
 

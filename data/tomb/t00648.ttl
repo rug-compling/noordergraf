@@ -1,44 +1,40 @@
 @prefix t00648: <https://noordergraf.rug.nl/tomb/t00648#> .
 
-tomb:t00648 a :Tomb ;
-  :image t00648:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00648:p1 ,
-       t00648:p2 ;
+tomb:t00648
+  a :Tomb ;
+  :ent t00648:p1, t00648:p2 ;
+  :image [
+    dc:date "2019-11-23T09:51:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00648.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1645 ;
+      geo:long 6.7544
+    ] ;
+    :nd "+53.1645+006.7544"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00648:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00648:a1 a :Weeping.a.02 .
-
-t00648:p1 a :Male ;
+t00648:p1
+  a :Male ;
   :dob "1787-01-10"^^xsd:date ;
   :dod "1880-10-30"^^xsd:date ;
   :nam "SAMUEL C. DE BOER" ;
-  :rol t00648:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00648:p2
+  ] .
 
-t00648:p2 a :Female ;
+t00648:p2
+  a :Female ;
   :nam "DIEVERTJE J. REINDERS" .
-
-t00648:r1 a :Spouse.n.01 ;
-  :tgt t00648:p2 .
-
-t00648:s1 a :Willow.n.01 ;
-  :att t00648:a1 .
-
-t00648:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00648.jpg" ;
-  dc:date "2019-11-23T09:51:09"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1645 ;
-    geo:long 6.7544
-  ] ;
-  :nd "+53.1645+006.7544"^^ll: .
 

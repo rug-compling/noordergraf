@@ -1,56 +1,50 @@
 @prefix t01042: <https://noordergraf.rug.nl/tomb/t01042#> .
 
-tomb:t01042 a :Tomb ;
-  :image t01042:im1 ;
-  :site site:gr9804TEnoordhorn ;
-  :ent t01042:p1 ,
-       t01042:p2 ;
+tomb:t01042
+  a :Tomb ;
+  :ent t01042:p1, t01042:p2 ;
+  :image [
+    dc:date "2020-04-19T11:54:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01042.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2649 ;
+      geo:long 6.3939
+    ] ;
+    :nd "+53.2649+006.3939"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01042:s1 ,
-       t01042:s2 ,
-       t01042:s3 .
+  :site site:gr9804TEnoordhorn ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t01042:p1 a :Female ;
+t01042:p1
+  a :Female ;
   :dob "1879-12-01"^^xsd:date ;
   :dod "1953-11-16"^^xsd:date ;
   :nam "GEESKE HELMANTEL" ;
   :ref "PSALM 23" ;
-  :rol t01042:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t01042:p2
+  ] .
 
-t01042:p2 a :Male ;
+t01042:p2
+  a :Male ;
   :dob "1879-05-25"^^xsd:date ;
   :dod "1956-01-03"^^xsd:date ;
   :nam "EDZO VAN DER VEEN" ;
   :ref "GEZANG 29" ;
-  :rol t01042:r2 .
-
-t01042:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t01042:p2 .
-
-t01042:r2 a :Widower.n.01 ;
-  :tgt t01042:p1 .
-
-t01042:s1 a :Frond.n.01 .
-
-t01042:s2 a :Frond.n.01 .
-
-t01042:s3 a :Ribbon.n.01 .
-
-t01042:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01042.jpg" ;
-  dc:date "2020-04-19T11:54:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2649 ;
-    geo:long 6.3939
-  ] ;
-  :nd "+53.2649+006.3939"^^ll: .
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t01042:p1
+  ] .
 

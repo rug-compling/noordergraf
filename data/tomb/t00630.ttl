@@ -1,51 +1,47 @@
 @prefix t00630: <https://noordergraf.rug.nl/tomb/t00630#> .
 
-tomb:t00630 a :Tomb ;
-  :image t00630:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00630:p1 ,
-       t00630:p2 ;
+tomb:t00630
+  a :Tomb ;
+  :ent t00630:p1, t00630:p2 ;
+  :image [
+    dc:date "2019-11-23T09:57:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00630.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1640 ;
+      geo:long 6.7543
+    ] ;
+    :nd "+53.1640+006.7543"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00630:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Boat.n.01
+  ] .
 
-t00630:c1 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00630:c2 a :Town.n.01 ;
-  :place place:Hoogezand2753706 ;
-  :name "HOOGEZAND" .
-
-t00630:p1 a :Male ;
+t00630:p1
+  a :Male ;
   :dob "1846-09-06"^^xsd:date ;
   :dod "1890-06-29"^^xsd:date ;
   :nam "MARCUS DE HAAN" ;
-  :pob t00630:c1 ;
-  :pod t00630:c2 ;
-  :rol t00630:r1 .
-
-t00630:p2 a :Female ;
-  :nam "FENNA HENSEL" .
-
-t00630:r1 a :Spouse.n.01 ;
-  :tgt t00630:p2 .
-
-t00630:s1 a :Boat.n.01 .
-
-t00630:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00630.jpg" ;
-  dc:date "2019-11-23T09:57:18"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1640 ;
-    geo:long 6.7543
+  :pob [
+    a :City.n.01 ;
+    :name "LEEUWARDEN" ;
+    :place place:Leeuwarden2751792
   ] ;
-  :nd "+53.1640+006.7543"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HOOGEZAND" ;
+    :place place:Hoogezand2753706
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00630:p2
+  ] .
+
+t00630:p2
+  a :Female ;
+  :nam "FENNA HENSEL" .
 

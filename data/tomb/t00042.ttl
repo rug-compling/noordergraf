@@ -1,66 +1,60 @@
 @prefix t00042: <https://noordergraf.rug.nl/tomb/t00042#> .
 
-tomb:t00042 a :Tomb ;
-  :image t00042:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00042:p1 ,
-       t00042:p2 ;
+tomb:t00042
+  a :Tomb ;
+  :ent t00042:p1, t00042:p2 ;
+  :image [
+    dc:date "2019-09-27T17:51:51"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00042.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1630 ;
+      geo:long 6.6122
+    ] ;
+    :nd "+53.1630+006.6122"^^ll:
+  ] ;
   :quo "RUST IN VREDE" ;
-  :sym t00042:s1 .
+  :site site:gr9752CMharen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Willow.n.01 ;
+      :att [
+        a :Weeping.a.02
+      ]
+    ], [
+      a :Scythe.n.01
+    ], [
+      a :Torch.n.01 ;
+      :att [
+        a :Inverted.a.01
+      ]
+    ]
+  ] .
 
-t00042:a1 a :Weeping.a.02 .
-
-t00042:a2 a :Inverted.a.01 .
-
-t00042:c1 a :Town.n.01 ;
-  :place place:Eelde2756408 ;
-  :name "EELDE" .
-
-t00042:c2 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00042:p1 a :Male ;
+t00042:p1
+  a :Male ;
   :dob "1849-12-18"^^xsd:date ;
   :dod "1939-10-05"^^xsd:date ;
   :nam "JOHANNES REEDER" ;
-  :pob t00042:c1 ;
-  :pod t00042:c2 ;
-  :rol t00042:r1 .
-
-t00042:p2 a :Female ;
-  :nam "H. MANNES" .
-
-t00042:r1 a :Widower.n.01 ;
-  :tgt t00042:p2 .
-
-t00042:s1 a :Composite.n.01 ;
-  :prt t00042:s2 ,
-       t00042:s3 ,
-       t00042:s4 .
-
-t00042:s2 a :Willow.n.01 ;
-  :att t00042:a1 .
-
-t00042:s3 a :Scythe.n.01 .
-
-t00042:s4 a :Torch.n.01 ;
-  :att t00042:a2 .
-
-t00042:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00042.jpg" ;
-  dc:date "2019-09-27T17:51:51"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1630 ;
-    geo:long 6.6122
+  :pob [
+    a :Town.n.01 ;
+    :name "EELDE" ;
+    :place place:Eelde2756408
   ] ;
-  :nd "+53.1630+006.6122"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00042:p2
+  ] .
+
+t00042:p2
+  a :Female ;
+  :nam "H. MANNES" .
 

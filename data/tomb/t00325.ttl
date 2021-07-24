@@ -1,60 +1,57 @@
 @prefix t00325: <https://noordergraf.rug.nl/tomb/t00325#> .
 
-tomb:t00325 a :Tomb ;
-  :image t00325:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00325:p1 ,
-       t00325:p2 ;
+tomb:t00325
+  a :Tomb ;
+  :ent t00325:p1, t00325:p2 ;
+  :image [
+    dc:date "2019-10-19T14:29:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00325.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7159 ;
+      geo:long 6.4741
+    ] ;
+    :nd "+52.7159+006.4741"^^ll:
+  ] ;
   :quo "IN JEZUS ONTSLAPEN" ;
-  :sym t00325:s1 .
+  :site site:dr7907CHhoogeveen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00325:a1 a :Weeping.a.02 .
-
-t00325:c1 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00325:p1 a :Female ;
+t00325:p1
+  a :Female ;
   :dob "1871-09-27"^^xsd:date ;
   :dod "1940-10-14"^^xsd:date ;
   :nam "WILHELMINA BRUNSTING" ;
   :pob t00325:c1 ;
   :pod t00325:c1 ;
-  :rol t00325:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00325:p2
+  ] .
 
-t00325:p2 a :Male ;
+t00325:p2
+  a :Male ;
   :dob "1859-05-13"^^xsd:date ;
   :dod "1941-09-20"^^xsd:date ;
   :nam "COENRAAD KOSTER" ;
   :pob t00325:c1 ;
   :pod t00325:c1 ;
-  :rol t00325:r3 ;
+  :rol [
+    a :Mother.n.01 ;
+    :att "LIEVE"
+  ] ;
   :sfx "HARMZN" .
 
-t00325:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00325:p2 .
-
-t00325:r3 a :Mother.n.01 ;
-  :att "LIEVE" .
-
-t00325:s1 a :Willow.n.01 ;
-  :att t00325:a1 .
-
-t00325:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00325.jpg" ;
-  dc:date "2019-10-19T14:29:58"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7159 ;
-    geo:long 6.4741
-  ] ;
-  :nd "+52.7159+006.4741"^^ll: .
+t00325:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 

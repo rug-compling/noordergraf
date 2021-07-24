@@ -1,67 +1,62 @@
 @prefix t00498: <https://noordergraf.rug.nl/tomb/t00498#> .
 
-tomb:t00498 a :Tomb ;
-  :image t00498:im1 ;
-  :site site:fr8917AVleeuwarden ;
-  :ent t00498:g1 ,
-       t00498:p1 ,
-       t00498:p2 ,
-       t00498:p3 ,
-       t00498:p4 ;
-  :lan "FRY" .
+tomb:t00498
+  a :Tomb ;
+  :ent t00498:p1, t00498:p2, t00498:p3, t00498:p4, t00498:g1 ;
+  :image [
+    dc:date "2019-11-16T14:06:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00498.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2129 ;
+      geo:long 5.7957
+    ] ;
+    :nd "+53.2129+005.7957"^^ll:
+  ] ;
+  :lan "FRY" ;
+  :site site:fr8917AVleeuwarden .
 
-t00498:c1 a :Village.n.02 ;
-  :place place:Nijhuizum2750067 ;
-  :name "NIJHUZUM"@fry .
+t00498:p1
+  a :Male ;
+  :dob "1825-03-14"^^xsd:date ;
+  :dod "1876-03-28"^^xsd:date ;
+  :nam "PIETER FOPPES BRUINSMA" ;
+  :pob [
+    a :Village.n.02 ;
+    :name "NIJHUZUM"@fry ;
+    :place place:Nijhuizum2750067
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "LJOUWERT"@fry ;
+    :place place:Leeuwarden2751792
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00498:p2
+  ] .
 
-t00498:c2 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LJOUWERT"@fry .
+t00498:p2
+  a :Male ;
+  :nam "FOPPE" .
 
-t00498:e1 a :Set.v.01 ;
+t00498:p3
+  a :Male ;
+  :nam "ALDERT" .
+
+t00498:p4
+  a :Male ;
+  :nam "WICHERT" .
+
+[]
+  a :Set.v.01 ;
   :agt t00498:g1 ;
   :beg "14-03-1996" ;
   :thm tomb:t00498 .
 
-t00498:g1 a :Neikommeling.n.01 ;
-  :mem t00498:p2 ,
-       t00498:p3 ,
-       t00498:p4 .
-
-t00498:p1 a :Male ;
-  :dob "1825-03-14"^^xsd:date ;
-  :dod "1876-03-28"^^xsd:date ;
-  :nam "PIETER FOPPES BRUINSMA" ;
-  :pob t00498:c1 ;
-  :pod t00498:c2 ;
-  :rol t00498:r1 .
-
-t00498:p2 a :Male ;
-  :nam "FOPPE" .
-
-t00498:p3 a :Male ;
-  :nam "ALDERT" .
-
-t00498:p4 a :Male ;
-  :nam "WICHERT" .
-
-t00498:r1 a :Spouse.n.01 ;
-  :tgt t00498:p2 .
-
-t00498:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00498.jpg" ;
-  dc:date "2019-11-16T14:06:08"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2129 ;
-    geo:long 5.7957
-  ] ;
-  :nd "+53.2129+005.7957"^^ll: .
+t00498:g1
+  a :Neikommeling.n.01 ;
+  :mem t00498:p2, t00498:p3, t00498:p4 .
 

@@ -1,37 +1,32 @@
 @prefix t00784: <https://noordergraf.rug.nl/tomb/t00784#> .
 
-tomb:t00784 a :Tomb ;
-  :image t00784:im1 ;
-  :site site:dr7811HEemmen ;
+tomb:t00784
+  a :Tomb ;
   :ent t00784:p1 ;
-  :quo "RUST ZACHT BESTE BROER EN OOM"@nld .
+  :image [
+    dc:date "2019-12-21T12:57:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00784.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7820 ;
+      geo:long 6.8976
+    ] ;
+    :nd "+52.7820+006.8976"^^ll:
+  ] ;
+  :quo "RUST ZACHT BESTE BROER EN OOM"@nld ;
+  :site site:dr7811HEemmen .
 
-t00784:p1 a :Male ;
+t00784:p1
+  a :Male ;
   :dob "1901-06-13"^^xsd:date ;
   :dod "1970-02-13"^^xsd:date ;
   :nam "HENDRIK EVERTS" ;
-  :rol t00784:r1 ,
-       t00784:r2 .
-
-t00784:r1 a :Brother.n.01 ;
-  :att "BESTE" .
-
-t00784:r2 a :Uncle.n.01 .
-
-t00784:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00784.jpg" ;
-  dc:date "2019-12-21T12:57:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7820 ;
-    geo:long 6.8976
-  ] ;
-  :nd "+52.7820+006.8976"^^ll: .
+  :rol [
+    a :Brother.n.01 ;
+    :att "BESTE"
+  ], [
+    a :Uncle.n.01
+  ] .
 

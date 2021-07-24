@@ -1,99 +1,89 @@
 @prefix t00539: <https://noordergraf.rug.nl/tomb/t00539#> .
 
-tomb:t00539 a :Tomb ;
-  :image t00539:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00539:p1 ,
-       t00539:p2 ;
+tomb:t00539
+  a :Tomb ;
+  :ent t00539:p1, t00539:p2 ;
+  :image [
+    dc:date "2019-11-24T14:19:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00539.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1042 ;
+      geo:long 6.8758
+    ] ;
+    :nd "+53.1042+006.8758"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00539:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Bird.n.01
+    ], [
+      a :Butterfly.n.01
+    ], [
+      a :Cocoon.n.01
+    ], [
+      a :Torch.n.01 ;
+      :att [
+        a :Inverted.a.01
+      ]
+    ], [
+      a :Torch.n.01 ;
+      :att [
+        a :Inverted.a.01
+      ]
+    ], t00539:s7, [
+      a :Frond.n.01
+    ]
+  ] .
 
-t00539:a1 a :Inverted.a.01 .
-
-t00539:a2 a :Inverted.a.01 .
-
-t00539:a3 a :Retired.a.01 .
-
-t00539:c1 a :Town.n.01 ;
-  :place place:Hoogezand2753706 ;
-  :name "HOOGEZAND" .
-
-t00539:c2 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00539:c3 a :Colony.n.05 ;
-  :place place:Indonesie1643084 ;
-  :name "NEDERLANDS-INDIË" .
-
-t00539:o1 a :Principal.n.02 ;
-  :att t00539:a3 ;
-  :hco "13320" ;
-  :loc t00539:c3 .
-
-t00539:p1 a :Male ;
+t00539:p1
+  a :Male ;
   :dob "1817-08-24"^^xsd:date ;
   :dod "1880-06-19"^^xsd:date ;
   :nam "JAN EPPES VAN DER WIJK" ;
-  :occ t00539:o1 ;
-  :pob t00539:c1 ;
-  :pod t00539:c2 ;
-  :rol t00539:r1 .
+  :occ [
+    a :Principal.n.02 ;
+    :att [
+      a :Retired.a.01
+    ] ;
+    :hco "13320" ;
+    :loc [
+      a :Colony.n.05 ;
+      :name "NEDERLANDS-INDIË" ;
+      :place place:Indonesie1643084
+    ]
+  ] ;
+  :pob [
+    a :Town.n.01 ;
+    :name "HOOGEZAND" ;
+    :place place:Hoogezand2753706
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00539:p2
+  ] .
 
-t00539:p2 a :Female ;
+t00539:p2
+  a :Female ;
   :nam "THEODORA HENRICA MULLER" .
 
-t00539:r1 a :Spouse.n.01 ;
-  :tgt t00539:p2 .
+t00539:s7
+  a :Branch.n.02 .
 
-t00539:s1 a :Composite.n.01 ;
-  :prt t00539:s10 ,
-       t00539:s11 ,
-       t00539:s2 ,
-       t00539:s3 ,
-       t00539:s4 ,
-       t00539:s5 ,
-       t00539:s6 ,
-       t00539:s7 ,
-       t00539:s9 .
-
-t00539:s10 a :Frond.n.01 .
-
-t00539:s11 a :Frond.n.01 .
-
-t00539:s2 a :Bird.n.01 .
-
-t00539:s3 a :Butterfly.n.01 .
-
-t00539:s4 a :Cocoon.n.01 .
-
-t00539:s5 a :Torch.n.01 ;
-  :att t00539:a1 .
-
-t00539:s6 a :Torch.n.01 ;
-  :att t00539:a2 .
-
-t00539:s7 a :Branch.n.02 .
-
-t00539:s8 a :Oak.n.02 ;
+[]
+  a :Oak.n.02 ;
   :prt t00539:s7 .
-
-t00539:s9 a :Frond.n.01 .
-
-t00539:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00539.jpg" ;
-  dc:date "2019-11-24T14:19:33"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1042 ;
-    geo:long 6.8758
-  ] ;
-  :nd "+53.1042+006.8758"^^ll: .
 

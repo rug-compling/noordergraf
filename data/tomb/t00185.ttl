@@ -1,46 +1,42 @@
 @prefix t00185: <https://noordergraf.rug.nl/tomb/t00185#> .
 
-tomb:t00185 a :Tomb ;
-  :image t00185:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00185:p1 ,
-       t00185:p2 ,
-       t00185:p3 ;
-  :ref "PSALM 73:12,13" .
+tomb:t00185
+  a :Tomb ;
+  :ent t00185:p1, t00185:p2, t00185:p3 ;
+  :image [
+    dc:date "2019-10-05T10:08:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00185.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1909 ;
+      geo:long 6.5923
+    ] ;
+    :nd "+53.1909+006.5923"^^ll:
+  ] ;
+  :ref "PSALM 73:12,13" ;
+  :site site:gr9722SNgroningen .
 
-t00185:p1 a :Male ;
+t00185:p1
+  a :Male ;
   :dob "1924-09-16"^^xsd:date ;
   :dod "1938-07-22"^^xsd:date ;
   :nam "HENDRIK VELDMAN" .
 
-t00185:p2 a :Female ;
+t00185:p2
+  a :Female ;
   :dob "1898-02-08"^^xsd:date ;
   :dod "1966-11-20"^^xsd:date ;
   :nam "GEERTJE DOZEMAN" ;
-  :rol t00185:r4 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00185:p3
+  ] .
 
-t00185:p3 a :Male ;
+t00185:p3
+  a :Male ;
   :dob "1894-11-23"^^xsd:date ;
   :dod "1969-01-01"^^xsd:date ;
   :nam "JOHANNES VELDMAN" .
-
-t00185:r4 a :Spouse.n.01 ;
-  :tgt t00185:p3 .
-
-t00185:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00185.jpg" ;
-  dc:date "2019-10-05T10:08:25"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1909 ;
-    geo:long 6.5923
-  ] ;
-  :nd "+53.1909+006.5923"^^ll: .
 

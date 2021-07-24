@@ -1,54 +1,50 @@
 @prefix t00587: <https://noordergraf.rug.nl/tomb/t00587#> .
 
-tomb:t00587 a :Tomb ;
-  :image t00587:im1 ;
-  :site site:gr9951STwinsum ;
+tomb:t00587
+  a :Tomb ;
   :dob "1874-09-20"^^xsd:date ;
   :dod "1919-01-26"^^xsd:date ;
   :ent t00587:p1 ;
-  :occ t00587:o1 ;
-  :pod t00587:c2 ;
-  :sym t00587:s1 .
-
-t00587:a1 a :Weeping.a.02 .
-
-t00587:c1 a :Village.n.02 ;
-  :place place:Obergum2749742 ;
-  :name "OBERGUM" .
-
-t00587:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00587:c3 a :Village.n.02 ;
-  :place place:Winsum2744337 ;
-  :name "WINSUM" .
-
-t00587:o1 a :Visting_nurse.n.01 ;
-  :hco "07130" ;
-  :loc t00587:c3 .
-
-t00587:p1 a :Female ;
-  :nam "JANTJE KLADDER" ;
-  :pob t00587:c1 .
-
-t00587:s1 a :Willow.n.01 ;
-  :att t00587:a1 .
-
-t00587:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00587.jpg" ;
-  dc:date "2019-11-30T14:46:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3354 ;
-    geo:long 6.5127
+  :image [
+    dc:date "2019-11-30T14:46:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00587.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3354 ;
+      geo:long 6.5127
+    ] ;
+    :nd "+53.3354+006.5127"^^ll:
   ] ;
-  :nd "+53.3354+006.5127"^^ll: .
+  :occ [
+    a :Visting_nurse.n.01 ;
+    :hco "07130" ;
+    :loc [
+      a :Village.n.02 ;
+      :name "WINSUM" ;
+      :place place:Winsum2744337
+    ]
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :site site:gr9951STwinsum ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
+
+t00587:p1
+  a :Female ;
+  :nam "JANTJE KLADDER" ;
+  :pob [
+    a :Village.n.02 ;
+    :name "OBERGUM" ;
+    :place place:Obergum2749742
+  ] .
 

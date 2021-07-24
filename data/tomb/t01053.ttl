@@ -1,52 +1,48 @@
 @prefix t01053: <https://noordergraf.rug.nl/tomb/t01053#> .
 
-tomb:t01053 a :Tomb ;
-  :image t01053:im1 ;
-  :ent t01053:p1 ,
-       t01053:p2 ,
-       t01053:p3 ;
+tomb:t01053
+  a :Tomb ;
+  :ent t01053:p1, t01053:p2, t01053:p3 ;
+  :image [
+    dc:date "2020-05-02T16:44:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01053.jpg"
+  ] ;
   :ref "PSALM 103:8-9"@nld ;
-  :sym t01053:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01053:a1 a :Weeping.a.02 .
-
-t01053:c1 a :Village.n.02 ;
-  :place place:Ulrum2745944 ;
-  :name "ULRUM" .
-
-t01053:g1 a :Group.n.01 ;
-  :mem t01053:p2 ,
-       t01053:p3 .
-
-t01053:p1 a :Female ;
+t01053:p1
+  a :Female ;
   :dob "1887-01-05"^^xsd:date ;
   :dod "1920-11-22"^^xsd:date ;
   :nam "BRECHTJE LUKAS" ;
   :pob t01053:c1 ;
   :pod t01053:c1 ;
-  :rol t01053:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt [
+      a :Group.n.01 ;
+      :mem t01053:p2, t01053:p3
+    ]
+  ] .
 
-t01053:p2 a :Male ;
+t01053:p2
+  a :Male ;
   :nam "KLAAS LUKAS" .
 
-t01053:p3 a :Female ;
+t01053:p3
+  a :Female ;
   :nam "GEZINA BULTJES" .
 
-t01053:r1 a :Daughter.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t01053:g1 .
-
-t01053:s1 a :Willow.n.01 ;
-  :att t01053:a1 .
-
-t01053:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01053.jpg" ;
-  dc:date "2020-05-02T16:44:12"^^xsd:dateTime .
+t01053:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
 

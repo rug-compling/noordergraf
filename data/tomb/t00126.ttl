@@ -1,55 +1,50 @@
 @prefix t00126: <https://noordergraf.rug.nl/tomb/t00126#> .
 
-tomb:t00126 a :Tomb ;
-  :image t00126:im1 ;
+tomb:t00126
+  a :Tomb ;
+  :ent t00126:p1, t00126:p2, t00126:p3, t00126:g1 ;
+  :image [
+    dc:date "2019-10-01T09:58:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00126.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2059 ;
+      geo:long 6.5712
+    ] ;
+    :nd "+53.2059+006.5712"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00126:g1 ,
-       t00126:p1 ,
-       t00126:p2 ,
-       t00126:p3 ;
-  :sym t00126:s1 .
+  :sym [
+    a :Ouroboros.n.01
+  ] .
 
-t00126:g1 a :Group.n.01 ;
-  :mem t00126:p2 ,
-       t00126:p3 .
-
-t00126:m1 a :Measure.n.02 ;
-  :mem t00126:u1 ;
-  :qua 33 .
-
-t00126:p1 a :Female ;
-  :age t00126:m1 ;
+t00126:p1
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 33
+  ] ;
   :dod "1904-03-01"^^xsd:date ;
   :nam "RENSINA CATHARINA SCHUITEMA" ;
-  :rol t00126:r2 .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00126:g1
+  ] .
 
-t00126:p2 a :Male ;
+t00126:p2
+  a :Male ;
   :nam "G. SCHUITEMA" .
 
-t00126:p3 a :Female ;
+t00126:p3
+  a :Female ;
   :nam "HENDERIKA BRUINS" .
 
-t00126:r2 a :Daughter.n.01 ;
-  :tgt t00126:g1 .
-
-t00126:s1 a :Ouroboros.n.01 .
-
-t00126:u1 a :Year.n.01 .
-
-t00126:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00126.jpg" ;
-  dc:date "2019-10-01T09:58:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2059 ;
-    geo:long 6.5712
-  ] ;
-  :nd "+53.2059+006.5712"^^ll: .
+t00126:g1
+  a :Group.n.01 ;
+  :mem t00126:p2, t00126:p3 .
 

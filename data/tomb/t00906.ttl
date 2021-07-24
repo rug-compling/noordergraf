@@ -1,56 +1,53 @@
 @prefix t00906: <https://noordergraf.rug.nl/tomb/t00906#> .
 
-tomb:t00906 a :Tomb ;
-  :image t00906:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00906:p1 ,
-       t00906:p2 ;
-  :lan "NLD" .
+tomb:t00906
+  a :Tomb ;
+  :ent t00906:p1, t00906:p2 ;
+  :image [
+    dc:date "2020-03-07T14:20:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00906.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1724 ;
+      geo:long 6.3652
+    ] ;
+    :nd "+53.1724+006.3652"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9351RLtolbert .
 
-t00906:c1 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00906:c2 a :Village.n.02 ;
-  :place place:Zuidhorn2743694 ;
-  :name "ZUIDHORN" .
-
-t00906:c3 a :Village.n.02 ;
-  :place place:Roden2748026 ;
-  :name "RODEN" .
-
-t00906:p1 a :Male ;
+t00906:p1
+  a :Male ;
   :dob "1870-10-01"^^xsd:date ;
   :dod "1936-01-04"^^xsd:date ;
   :nam "J.J. TEN HOOR" ;
   :pob t00906:c1 ;
-  :pod t00906:c2 ;
-  :rol t00906:r1 .
+  :pod [
+    a :Village.n.02 ;
+    :name "ZUIDHORN" ;
+    :place place:Zuidhorn2743694
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00906:p2
+  ] .
 
-t00906:p2 a :Female ;
+t00906:p2
+  a :Female ;
   :dob "1869-03-19"^^xsd:date ;
   :dod "1954-02-23"^^xsd:date ;
   :nam "A. TALENS" ;
-  :pob t00906:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "RODEN" ;
+    :place place:Roden2748026
+  ] ;
   :pod t00906:c1 .
 
-t00906:r1 a :Spouse.n.01 ;
-  :tgt t00906:p2 .
-
-t00906:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00906.jpg" ;
-  dc:date "2020-03-07T14:20:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1724 ;
-    geo:long 6.3652
-  ] ;
-  :nd "+53.1724+006.3652"^^ll: .
+t00906:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 

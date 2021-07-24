@@ -1,53 +1,49 @@
 @prefix t00790: <https://noordergraf.rug.nl/tomb/t00790#> .
 
-tomb:t00790 a :Tomb ;
-  :image t00790:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00790:g1 ,
-       t00790:p1 ,
-       t00790:p2 ,
-       t00790:p3 ;
-  :lan "NLD" .
+tomb:t00790
+  a :Tomb ;
+  :ent t00790:p1, t00790:p2, t00790:p3, t00790:g1 ;
+  :image [
+    dc:date "2020-01-18T13:10:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00790.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2776 ;
+      geo:long 6.6935
+    ] ;
+    :nd "+53.2776+006.6935"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9791KEten_boer .
 
-t00790:c1 a :Village.n.02 ;
-  :place place:TenBoer2746491 ;
-  :name "TEN BOER" .
-
-t00790:g1 a :Group.n.01 ;
-  :mem t00790:p2 ,
-       t00790:p3 .
-
-t00790:p1 a :Female ;
+t00790:p1
+  a :Female ;
   :dob "1872-05-04"^^xsd:date ;
   :dod "1934-07-16"^^xsd:date ;
   :nam "EPPÉA HILLEGONDA STEENHUIS" ;
   :pob t00790:c1 ;
   :pod t00790:c1 ;
-  :rol t00790:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00790:g1
+  ] .
 
-t00790:p2 a :Male ;
+t00790:p2
+  a :Male ;
   :nam "EPPE STEENHUIS" .
 
-t00790:p3 a :Female ;
+t00790:p3
+  a :Female ;
   :nam "ANJE KUIPERS" .
 
-t00790:r1 a :Daughter.n.01 ;
-  :tgt t00790:g1 .
+t00790:c1
+  a :Village.n.02 ;
+  :name "TEN BOER" ;
+  :place place:TenBoer2746491 .
 
-t00790:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00790.jpg" ;
-  dc:date "2020-01-18T13:10:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2776 ;
-    geo:long 6.6935
-  ] ;
-  :nd "+53.2776+006.6935"^^ll: .
+t00790:g1
+  a :Group.n.01 ;
+  :mem t00790:p2, t00790:p3 .
 

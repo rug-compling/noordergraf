@@ -1,48 +1,45 @@
 @prefix t00870: <https://noordergraf.rug.nl/tomb/t00870#> .
 
-tomb:t00870 a :Tomb ;
-  :image t00870:im1 ;
-  :site site:dr7841CDsleen ;
-  :ent t00870:p1 ,
-       t00870:p2 ;
-  :quo "RUST ZACHT"@nld .
+tomb:t00870
+  a :Tomb ;
+  :ent t00870:p1, t00870:p2 ;
+  :image [
+    dc:date "2020-02-15T15:35:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00870.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7756 ;
+      geo:long 6.8029
+    ] ;
+    :nd "+52.7756+006.8029"^^ll:
+  ] ;
+  :quo "RUST ZACHT"@nld ;
+  :site site:dr7841CDsleen .
 
-t00870:c1 a :Village.n.02 ;
-  :place place:Erm2756040 ;
-  :name "ERM" .
-
-t00870:c2 a :Village.n.02 ;
-  :place place:Sleen2747182 ;
-  :name "SLEEN" .
-
-t00870:p1 a :Male ;
+t00870:p1
+  a :Male ;
   :dob "1826-06-18"^^xsd:date ;
   :dod "1900-06-05"^^xsd:date ;
   :nam "HERMAN ROSING" ;
-  :pob t00870:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ERM" ;
+    :place place:Erm2756040
+  ] ;
   :pod t00870:c2 .
 
-t00870:p2 a :Female ;
+t00870:p2
+  a :Female ;
   :dob "1839-04-17"^^xsd:date ;
   :dod "1906-08-28"^^xsd:date ;
   :nam "ALIDA EVENHUIS" ;
   :pob t00870:c2 ;
   :pod t00870:c2 .
 
-t00870:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00870.jpg" ;
-  dc:date "2020-02-15T15:35:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7756 ;
-    geo:long 6.8029
-  ] ;
-  :nd "+52.7756+006.8029"^^ll: .
+t00870:c2
+  a :Village.n.02 ;
+  :name "SLEEN" ;
+  :place place:Sleen2747182 .
 

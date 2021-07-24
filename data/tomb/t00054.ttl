@@ -1,50 +1,44 @@
 @prefix t00054: <https://noordergraf.rug.nl/tomb/t00054#> .
 
-tomb:t00054 a :Tomb ;
-  :image t00054:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00054:p1 ,
-       t00054:p2 .
+tomb:t00054
+  a :Tomb ;
+  :ent t00054:p1, t00054:p2 ;
+  :image [
+    dc:date "2019-09-20T17:46:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00054.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1625 ;
+      geo:long 6.6157
+    ] ;
+    :nd "+53.1625+006.6157"^^ll:
+  ] ;
+  :site site:gr9752CMharen .
 
-t00054:p1 a :Female ;
+t00054:p1
+  a :Female ;
   :dob "1913-09-06"^^xsd:date ;
   :dod "1968-12-15"^^xsd:date ;
   :nam "ANNECHIEN BAZUIN" ;
-  :rol t00054:r1 ,
-       t00054:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00054:p2
+  ], [
+    a :Mother.n.01
+  ] .
 
-t00054:p2 a :Male ;
+t00054:p2
+  a :Male ;
   :dob "1904-12-14"^^xsd:date ;
   :dod "1978-09-21"^^xsd:date ;
   :nam "GERRIT BAZUIN" ;
-  :rol t00054:r3 ,
-       t00054:r4 .
-
-t00054:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00054:p2 .
-
-t00054:r2 a :Mother.n.01 .
-
-t00054:r3 a :Father.n.01 ;
-  :att "LIEVE" .
-
-t00054:r4 a :Grandfather.n.01 .
-
-t00054:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00054.jpg" ;
-  dc:date "2019-09-20T17:46:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1625 ;
-    geo:long 6.6157
-  ] ;
-  :nd "+53.1625+006.6157"^^ll: .
+  :rol [
+    a :Father.n.01 ;
+    :att "LIEVE"
+  ], [
+    a :Grandfather.n.01
+  ] .
 

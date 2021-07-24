@@ -1,40 +1,36 @@
 @prefix t00254: <https://noordergraf.rug.nl/tomb/t00254#> .
 
-tomb:t00254 a :Tomb ;
-  :image t00254:im1 ;
-  :site site:gr9725ACgroningen ;
+tomb:t00254
+  a :Tomb ;
   :ent t00254:p1 ;
+  :image [
+    dc:date "2019-10-10T09:49:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00254.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2066 ;
+      geo:long 6.5718
+    ] ;
+    :nd "+53.2066+006.5718"^^ll:
+  ] ;
   :quo "ZIJ RUST IN VREDE" ;
-  :sym t00254:s1 .
+  :site site:gr9725ACgroningen ;
+  :sym [
+    a :Column.n.01 ;
+    :att [
+      a :Broken.a.01
+    ]
+  ] .
 
-t00254:a1 a :Broken.a.01 .
-
-t00254:p1 a :Female ;
+t00254:p1
+  a :Female ;
   :dob "1862-12-26"^^xsd:date ;
   :dod "1909-06-17"^^xsd:date ;
   :nam "NAAMKE LIMBORGH" ;
-  :rol t00254:r1 .
-
-t00254:r1 a :Sister.n.01 ;
-  :att "GELIEFDE" .
-
-t00254:s1 a :Column.n.01 ;
-  :att t00254:a1 .
-
-t00254:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00254.jpg" ;
-  dc:date "2019-10-10T09:49:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2066 ;
-    geo:long 6.5718
-  ] ;
-  :nd "+53.2066+006.5718"^^ll: .
+  :rol [
+    a :Sister.n.01 ;
+    :att "GELIEFDE"
+  ] .
 

@@ -1,58 +1,53 @@
 @prefix t00696: <https://noordergraf.rug.nl/tomb/t00696#> .
 
-tomb:t00696 a :Tomb ;
-  :image t00696:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00696:p1 ,
-       t00696:p2 ;
+tomb:t00696
+  a :Tomb ;
+  :ent t00696:p1, t00696:p2 ;
+  :image [
+    dc:date "2019-12-21T13:54:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00696.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7814 ;
+      geo:long 6.9008
+    ] ;
+    :nd "+52.7814+006.9008"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE VADER"@nld ;
-  :sym t00696:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00696:a1 a :Weeping.a.02 .
-
-t00696:c1 a :Village.n.02 ;
-  :place place:Weerdinge2744927 ;
-  :name "WEERDINGE" .
-
-t00696:c2 a :Town.n.01 ;
-  :place place:Emmen2756136 ;
-  :name "EMMEN" .
-
-t00696:p1 a :Male ;
+t00696:p1
+  a :Male ;
   :dob "1874-07-19"^^xsd:date ;
   :dod "1953-03-23"^^xsd:date ;
   :nam "JAN KUIPER" ;
-  :pob t00696:c1 ;
-  :pod t00696:c2 ;
-  :rol t00696:r1 ,
-       t00696:r2 .
-
-t00696:p2 a :Female ;
-  :nam "JANTJE AX" .
-
-t00696:r1 a :Widower.n.01 ;
-  :tgt t00696:p2 .
-
-t00696:r2 a :Father.n.01 ;
-  :att "LIEVE" .
-
-t00696:s1 a :Willow.n.01 ;
-  :att t00696:a1 .
-
-t00696:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00696.jpg" ;
-  dc:date "2019-12-21T13:54:29"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7814 ;
-    geo:long 6.9008
+  :pob [
+    a :Village.n.02 ;
+    :name "WEERDINGE" ;
+    :place place:Weerdinge2744927
   ] ;
-  :nd "+52.7814+006.9008"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "EMMEN" ;
+    :place place:Emmen2756136
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00696:p2
+  ], [
+    a :Father.n.01 ;
+    :att "LIEVE"
+  ] .
+
+t00696:p2
+  a :Female ;
+  :nam "JANTJE AX" .
 

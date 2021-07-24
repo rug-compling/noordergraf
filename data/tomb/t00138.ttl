@@ -1,64 +1,62 @@
 @prefix t00138: <https://noordergraf.rug.nl/tomb/t00138#> .
 
-tomb:t00138 a :Tomb ;
-  :image t00138:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00138:p1 ,
-       t00138:p2 ;
+tomb:t00138
+  a :Tomb ;
+  :ent t00138:p1, t00138:p2 ;
+  :image [
+    dc:date "2019-10-02T10:34:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00138.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2060 ;
+      geo:long 6.5702
+    ] ;
+    :nd "+53.2060+006.5702"^^ll:
+  ] ;
   :ref t00138:v1 ;
-  :sym t00138:s1 .
+  :site site:gr9725ACgroningen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00138:a1 a :Weeping.a.02 .
-
-t00138:b1 a :Epistle_to_the_Romans.n.04 ;
-  :prt t00138:c3 .
-
-t00138:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00138:c2 a :Village.n.02 ;
-  :place place:Kollum2752524 ;
-  :name "KOLLUM" .
-
-t00138:c3 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00138:v1 .
-
-t00138:p1 a :Female ;
+t00138:p1
+  a :Female ;
   :dob "1856-10-15"^^xsd:date ;
   :dod "1942-03-25"^^xsd:date ;
   :nam "PIETJE WONDAAL" ;
-  :pob t00138:c2 ;
-  :pod t00138:c1 ;
-  :rol t00138:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "KOLLUM" ;
+    :place place:Kollum2752524
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00138:p2
+  ] .
 
-t00138:p2 a :Male ;
+t00138:p2
+  a :Male ;
   :nam "JAN VELDMAN" .
 
-t00138:r1 a :Wife.n.01 ;
-  :tgt t00138:p2 .
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00138:v1
+  ] .
 
-t00138:s1 a :Willow.n.01 ;
-  :att t00138:a1 .
-
-t00138:v1 a :Verse.n.01 ;
+t00138:v1
+  a :Verse.n.01 ;
   :ord 8 .
-
-t00138:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00138.jpg" ;
-  dc:date "2019-10-02T10:34:53"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2060 ;
-    geo:long 6.5702
-  ] ;
-  :nd "+53.2060+006.5702"^^ll: .
 

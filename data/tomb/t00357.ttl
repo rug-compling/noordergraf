@@ -1,55 +1,52 @@
 @prefix t00357: <https://noordergraf.rug.nl/tomb/t00357#> .
 
-tomb:t00357 a :Tomb ;
-  :image t00357:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00357:p1 ,
-       t00357:p2 ;
+tomb:t00357
+  a :Tomb ;
+  :ent t00357:p1, t00357:p2 ;
+  :image [
+    dc:date "2019-10-25T17:33:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00357.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0800 ;
+      geo:long 6.5718
+    ] ;
+    :nd "+53.0800+006.5718"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym t00357:s1 .
+  :site site:dr9481CGvries ;
+  :sym [
+    a :Butterfly.n.01
+  ] .
 
-t00357:c1 a :Village.n.02 ;
-  :place place:Bunne2758108 ;
-  :name "BUNNE" .
-
-t00357:c2 a :Village.n.02 ;
-  :place place:Donderen2756731 ;
-  :name "DONDEREN" .
-
-t00357:c3 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00357:p1 a :Male ;
+t00357:p1
+  a :Male ;
   :dob "1885-05-09"^^xsd:date ;
   :dod "1934-10-05"^^xsd:date ;
   :nam "GEERT ABRAHAMS" ;
   :pob t00357:c1 ;
   :pod t00357:c1 .
 
-t00357:p2 a :Female ;
+t00357:p2
+  a :Female ;
   :dob "1884-11-22"^^xsd:date ;
   :dod "1957-11-13"^^xsd:date ;
   :nam "JANTIEN ENTING" ;
-  :pob t00357:c2 ;
-  :pod t00357:c3 .
-
-t00357:s1 a :Butterfly.n.01 .
-
-t00357:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00357.jpg" ;
-  dc:date "2019-10-25T17:33:18"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0800 ;
-    geo:long 6.5718
+  :pob [
+    a :Village.n.02 ;
+    :name "DONDEREN" ;
+    :place place:Donderen2756731
   ] ;
-  :nd "+53.0800+006.5718"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] .
+
+t00357:c1
+  a :Village.n.02 ;
+  :name "BUNNE" ;
+  :place place:Bunne2758108 .
 

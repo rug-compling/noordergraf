@@ -1,50 +1,46 @@
 @prefix t00445: <https://noordergraf.rug.nl/tomb/t00445#> .
 
-tomb:t00445 a :Tomb ;
-  :image t00445:im1 ;
-  :site site:fr9166NAschiermonnikoog ;
+tomb:t00445
+  a :Tomb ;
   :ent t00445:p1 ;
-  :ref t00445:v1 .
+  :image [
+    dc:date "2019-11-02T11:31:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00445.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4792 ;
+      geo:long 6.1601
+    ] ;
+    :nd "+53.4792+006.1601"^^ll:
+  ] ;
+  :ref t00445:v1 ;
+  :site site:fr9166NAschiermonnikoog .
 
-t00445:b1 a :Epistle_to_the_Romans.n.04 ;
-  :prt t00445:c1 .
-
-t00445:c1 a :Chapter.n.01 ;
-  :ord 6 ;
-  :prt t00445:v1 .
-
-t00445:p1 a :Male ;
+t00445:p1
+  a :Male ;
   :dob "1911-10-09"^^xsd:date ;
   :dod "1997-11-21"^^xsd:date ;
   :nam "YJE TEERDSTRA" ;
-  :rol t00445:r1 ,
-       t00445:r2 ,
-       t00445:r3 .
+  :rol [
+    a :Brother.n.01 ;
+    :att "OUDSTE"
+  ], [
+    a :Brother-in-law.n.01
+  ], [
+    a :Uncle.n.01
+  ] .
 
-t00445:r1 a :Brother.n.01 ;
-  :att "OUDSTE" .
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 6 ;
+    :prt t00445:v1
+  ] .
 
-t00445:r2 a :Brother-in-law.n.01 .
-
-t00445:r3 a :Uncle.n.01 .
-
-t00445:v1 a :Verse.n.01 ;
+t00445:v1
+  a :Verse.n.01 ;
   :ord 8 .
-
-t00445:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00445.jpg" ;
-  dc:date "2019-11-02T11:31:28"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4792 ;
-    geo:long 6.1601
-  ] ;
-  :nd "+53.4792+006.1601"^^ll: .
 

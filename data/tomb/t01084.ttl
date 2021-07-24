@@ -1,71 +1,67 @@
 @prefix t01084: <https://noordergraf.rug.nl/tomb/t01084#> .
 
-tomb:t01084 a :Tomb ;
-  :image t01084:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t01084:p1 ,
-       t01084:p3 ;
-  :lan "NLD" .
+tomb:t01084
+  a :Tomb ;
+  :ent t01084:p1, t01084:p3 ;
+  :image [
+    dc:date "2020-06-09T17:19:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01084.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1901 ;
+      geo:long 6.5944
+    ] ;
+    :nd "+53.1901+006.5944"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9722SNgroningen .
 
-t01084:c1 a :Village.n.02 ;
-  :place place:NieuwePekela2750272 ;
-  :name "NIEUWE PEKELA" .
-
-t01084:c2 a :Village.n.02 ;
-  :place place:Warnsveld2745003 ;
-  :name "WARNSVELD" .
-
-t01084:c3 a :Village.n.02 ;
-  :place place:OudePekela2749034 ;
-  :name "OUDE PEKELA" .
-
-t01084:c4 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t01084:g2 a :People.n.01 ;
-  :mem t01084:p2 ,
-       t01084:p3 .
-
-t01084:p1 a :Male ;
+t01084:p1
+  a :Male ;
   :dob "1879-08-25"^^xsd:date ;
   :dod "1945-05-30"^^xsd:date ;
   :nam "EGBERT ROELF KLEVE" ;
-  :pob t01084:c1 ;
-  :pod t01084:c2 ;
-  :rol t01084:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "NIEUWE PEKELA" ;
+    :place place:NieuwePekela2750272
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "WARNSVELD" ;
+    :place place:Warnsveld2745003
+  ] ;
+  :rol [
+    a :Son.n.01 ;
+    :tgt [
+      a :People.n.01 ;
+      :mem t01084:p2, t01084:p3
+    ]
+  ] .
 
-t01084:p2 a :Male ;
+t01084:p2
+  a :Male ;
   :nam "EVERT KLEVE" .
 
-t01084:p3 a :Female ;
+t01084:p3
+  a :Female ;
   :dob "1853-10-01"^^xsd:date ;
   :dod "1936-03-07"^^xsd:date ;
   :nam "LUCRETIA MIDDEL" ;
-  :pob t01084:c3 ;
-  :pod t01084:c4 ;
-  :rol t01084:r2 .
-
-t01084:r1 a :Son.n.01 ;
-  :tgt t01084:g2 .
-
-t01084:r2 a :Widow.n.01 ;
-  :tgt t01084:p2 .
-
-t01084:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01084.jpg" ;
-  dc:date "2020-06-09T17:19:23"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1901 ;
-    geo:long 6.5944
+  :pob [
+    a :Village.n.02 ;
+    :name "OUDE PEKELA" ;
+    :place place:OudePekela2749034
   ] ;
-  :nd "+53.1901+006.5944"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01084:p2
+  ] .
 

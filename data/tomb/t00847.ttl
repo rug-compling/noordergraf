@@ -1,41 +1,36 @@
 @prefix t00847: <https://noordergraf.rug.nl/tomb/t00847#> .
 
-tomb:t00847 a :Tomb ;
-  :image t00847:im1 ;
-  :site site:fr8899AWoost_vlieland ;
+tomb:t00847
+  a :Tomb ;
   :ent t00847:p1 ;
-  :quo "DIEP BETREURD DOOR ZIJNE OUDERS \\ BROEDERS EN ZUSTERS"@nld ,
-       "DIEP BETREURD WORDT ZIJN GEMIS, \\ NU HIJ VAN ONS GESCHEIDEN IS, \\ ACH HEER STERK ONS BIJ ZULKE SLAGEN \\ EN DAT WE 'T MET GEDULD OOK DRAGEN."@nld .
+  :image [
+    dc:date "2020-02-20T14:41:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00847.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2958 ;
+      geo:long 5.0654
+    ] ;
+    :nd "+53.2958+005.0654"^^ll:
+  ] ;
+  :quo "DIEP BETREURD DOOR ZIJNE OUDERS \\ BROEDERS EN ZUSTERS"@nld, "DIEP BETREURD WORDT ZIJN GEMIS, \\ NU HIJ VAN ONS GESCHEIDEN IS, \\ ACH HEER STERK ONS BIJ ZULKE SLAGEN \\ EN DAT WE 'T MET GEDULD OOK DRAGEN."@nld ;
+  :site site:fr8899AWoost_vlieland .
 
-t00847:c1 a :Island.n.01 ;
-  :place place:Vlieland2745420 ;
-  :name "VLIELAND" .
-
-t00847:c2 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00847:p1 a :Male ;
+t00847:p1
+  a :Male ;
   :dob "1880-04-18"^^xsd:date ;
   :dod "1903-04-14"^^xsd:date ;
   :nam "RIJK KRIJTENBURG" ;
-  :pob t00847:c1 ;
-  :pod t00847:c2 .
-
-t00847:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00847.jpg" ;
-  dc:date "2020-02-20T14:41:05"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2958 ;
-    geo:long 5.0654
+  :pob [
+    a :Island.n.01 ;
+    :name "VLIELAND" ;
+    :place place:Vlieland2745420
   ] ;
-  :nd "+53.2958+005.0654"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "LEEUWARDEN" ;
+    :place place:Leeuwarden2751792
+  ] .
 

@@ -1,51 +1,46 @@
 @prefix t00019: <https://noordergraf.rug.nl/tomb/t00019#> .
 
-tomb:t00019 a :Tomb ;
-  :image t00019:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00019:p1 ,
-       t00019:p2 .
+tomb:t00019
+  a :Tomb ;
+  :ent t00019:p1, t00019:p2 ;
+  :image [
+    dc:date "2019-09-25T16:33:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00019.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1919 ;
+      geo:long 6.5928
+    ] ;
+    :nd "+53.1919+006.5928"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen .
 
-t00019:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00019:p1 a :Female ;
+t00019:p1
+  a :Female ;
   :dob "1900-08-15"^^xsd:date ;
   :dod "1948-08-21"^^xsd:date ;
-  :nam "HILJE HOFMAN" ,
-       "HILLY" ;
+  :nam "HILJE HOFMAN", "HILLY" ;
   :pob t00019:c1 ;
   :pod t00019:c1 ;
   :quo "LIEVE HILLY RUST IN VREDE" ;
-  :rol t00019:r1 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00019:p2
+  ] .
 
-t00019:p2 a :Male ;
+t00019:p2
+  a :Male ;
   :dob "1889-10-07"^^xsd:date ;
   :dod "1971-05-29"^^xsd:date ;
-  :nam "GERRIT DUIKER" ,
-       "GERT" ;
+  :nam "GERRIT DUIKER", "GERT" ;
   :pob t00019:c1 ;
   :pod t00019:c1 .
 
-t00019:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00019:p2 .
-
-t00019:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00019.jpg" ;
-  dc:date "2019-09-25T16:33:08"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1919 ;
-    geo:long 6.5928
-  ] ;
-  :nd "+53.1919+006.5928"^^ll: .
+t00019:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

@@ -1,50 +1,45 @@
 @prefix t00994: <https://noordergraf.rug.nl/tomb/t00994#> .
 
-tomb:t00994 a :Tomb ;
-  :image t00994:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t00994:p1 ,
-       t00994:p2 ;
+tomb:t00994
+  a :Tomb ;
+  :ent t00994:p1, t00994:p2 ;
+  :image [
+    dc:date "2020-04-04T10:46:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00994.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1753 ;
+      geo:long 7.0951
+    ] ;
+    :nd "+53.1753+007.0951"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
-  :sym t00994:s1 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00994:a1 a :Weeping.a.02 .
-
-t00994:p1 a :Female ;
+t00994:p1
+  a :Female ;
   :dob "1842-11-10"^^xsd:date ;
   :dod "1922-04-07"^^xsd:date ;
   :nam "HARMKE REIT" ;
-  :rol t00994:r1 ,
-       t00994:r2 .
+  :rol [
+    a :Widow.n.01 ;
+    :beg "1886"^^xsd:gYear ;
+    :tgt t00994:p2
+  ], [
+    a :Mother.n.01
+  ] .
 
-t00994:p2 a :Male ;
+t00994:p2
+  a :Male ;
   :dob "1872-03-17"^^xsd:date ;
   :dod "1963-11-28"^^xsd:date ;
   :nam "HENDRIK KLAASSENS" .
-
-t00994:r1 a :Widow.n.01 ;
-  :beg "1886"^^xsd:gYear ;
-  :tgt t00994:p2 .
-
-t00994:r2 a :Mother.n.01 .
-
-t00994:s1 a :Willow.n.01 ;
-  :att t00994:a1 .
-
-t00994:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00994.jpg" ;
-  dc:date "2020-04-04T10:46:42"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1753 ;
-    geo:long 7.0951
-  ] ;
-  :nd "+53.1753+007.0951"^^ll: .
 

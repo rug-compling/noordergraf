@@ -1,80 +1,75 @@
 @prefix t00004: <https://noordergraf.rug.nl/tomb/t00004#> .
 
-tomb:t00004 a :Tomb ;
-  :image t00004:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00004:g1 ,
-       t00004:p1 ,
-       t00004:p2 ,
-       t00004:p3 .
+tomb:t00004
+  a :Tomb ;
+  :ent t00004:p1, t00004:p2, t00004:p3, t00004:g1 ;
+  :image [
+    dc:date "2019-09-25T16:56:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00004.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1902 ;
+      geo:long 6.5932
+    ] ;
+    :nd "+53.1902+006.5932"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen .
 
-t00004:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00004:c2 a :Village.n.02 ;
-  :place place:Rohel2747984 ;
-  :name "ROHEL" .
-
-t00004:c3 a :Village.n.02 ;
-  :place place:Visvliet2745471 ;
-  :name "VISVLIET" .
-
-t00004:g1 a :Group.n.01 ;
-  :mem t00004:p2 ,
-       t00004:p3 .
-
-t00004:p1 a :Female ;
+t00004:p1
+  a :Female ;
   :dob "1912-10-27"^^xsd:date ;
   :dod "1933-07-28"^^xsd:date ;
   :nam "TIETJE SPOELMAN" ;
   :pob t00004:c1 ;
   :pod t00004:c1 ;
-  :rol t00004:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "EENIGSTE" ;
+    :tgt t00004:g1
+  ] .
 
-t00004:p2 a :Male ;
+t00004:p2
+  a :Male ;
   :dob "1871-04-17"^^xsd:date ;
   :dod "1935-05-14"^^xsd:date ;
   :nam "JOHANNES SPOELMAN" ;
-  :pob t00004:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ROHEL" ;
+    :place place:Rohel2747984
+  ] ;
   :pod t00004:c1 ;
-  :rol t00004:r2 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00004:p3
+  ] .
 
-t00004:p3 a :Female ;
+t00004:p3
+  a :Female ;
   :dob "1876-10-17"^^xsd:date ;
   :dod "1963-09-28"^^xsd:date ;
-  :nam "F. SPOELMAN-PENNINGA" ,
-       "FROUKTJE PENNINGA" ;
-  :pob t00004:c3 ;
-  :pod t00004:c1 ;
-  :rol t00004:r3 .
-
-t00004:r1 a :Daughter.n.01 ;
-  :att "EENIGSTE" ;
-  :tgt t00004:g1 .
-
-t00004:r2 a :Husband.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00004:p3 .
-
-t00004:r3 a :Wife.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00004:p2 .
-
-t00004:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00004.jpg" ;
-  dc:date "2019-09-25T16:56:05"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1902 ;
-    geo:long 6.5932
+  :nam "F. SPOELMAN-PENNINGA", "FROUKTJE PENNINGA" ;
+  :pob [
+    a :Village.n.02 ;
+    :name "VISVLIET" ;
+    :place place:Visvliet2745471
   ] ;
-  :nd "+53.1902+006.5932"^^ll: .
+  :pod t00004:c1 ;
+  :rol [
+    a :Wife.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00004:p2
+  ] .
+
+t00004:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
+
+t00004:g1
+  a :Group.n.01 ;
+  :mem t00004:p2, t00004:p3 .
 

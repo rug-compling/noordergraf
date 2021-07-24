@@ -1,47 +1,44 @@
 @prefix t00497: <https://noordergraf.rug.nl/tomb/t00497#> .
 
-tomb:t00497 a :Tomb ;
-  :image t00497:im1 ;
-  :site site:fr8917AVleeuwarden ;
-  :ent t00497:p1 ,
-       t00497:p2 .
+tomb:t00497
+  a :Tomb ;
+  :ent t00497:p1, t00497:p2 ;
+  :image [
+    dc:date "2019-11-16T14:11:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00497.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2090 ;
+      geo:long 5.7913
+    ] ;
+    :nd "+53.2090+005.7913"^^ll:
+  ] ;
+  :site site:fr8917AVleeuwarden .
 
-t00497:c1 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00497:p1 a :Female ;
+t00497:p1
+  a :Female ;
   :dob "1841-02-19"^^xsd:date ;
   :dod "1922-12-30"^^xsd:date ;
   :nam "BARTJE BILIJAM" ;
   :pob t00497:c1 ;
   :pod t00497:c1 ;
-  :rol t00497:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00497:p2
+  ] .
 
-t00497:p2 a :Male ;
+t00497:p2
+  a :Male ;
   :dob "1842-03-25"^^xsd:date ;
   :dod "1929-12-27"^^xsd:date ;
   :nam "JOHANNES F. MIJLIUS" ;
   :pob t00497:c1 ;
   :pod t00497:c1 .
 
-t00497:r1 a :Spouse.n.01 ;
-  :tgt t00497:p2 .
-
-t00497:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00497.jpg" ;
-  dc:date "2019-11-16T14:11:53"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2090 ;
-    geo:long 5.7913
-  ] ;
-  :nd "+53.2090+005.7913"^^ll: .
+t00497:c1
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 

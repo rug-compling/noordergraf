@@ -1,56 +1,51 @@
 @prefix t00689: <https://noordergraf.rug.nl/tomb/t00689#> .
 
-tomb:t00689 a :Tomb ;
-  :image t00689:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00689:p1 ,
-       t00689:p2 ;
-  :img t00689:i1 ;
+tomb:t00689
+  a :Tomb ;
+  :ent t00689:p1, t00689:p2 ;
+  :image [
+    dc:date "2019-12-14T13:18:47"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00689.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0684 ;
+      geo:long 5.5234
+    ] ;
+    :nd "+53.0684+005.5234"^^ll:
+  ] ;
+  :img [
+    a :Portrait.n.02 ;
+    :thm t00689:p3
+  ] ;
   :lan "NLD" ;
-  :sym t00689:s1 ,
-       t00689:s2 ,
-       t00689:s3 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Flower.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00689:i1 a :Portrait.n.02 ;
-  :thm t00689:p3 .
-
-t00689:p1 a :Female ;
+t00689:p1
+  a :Female ;
   :dob "1870-11-19"^^xsd:date ;
   :dod "1919-03-05"^^xsd:date ;
   :nam "CLAZINA VRONICA HETTINGA" ;
-  :rol t00689:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00689:p2
+  ] .
 
-t00689:p2 a :Female ;
+t00689:p2
+  a :Female ;
   :dob "1860-11-09"^^xsd:date ;
   :dod "1949-07-10"^^xsd:date ;
   :nam "TAEKE TAEKES POPMA" .
 
-t00689:p3 a :Male ;
+t00689:p3
+  a :Male ;
   :nam "JEZUS" .
-
-t00689:r1 a :Spouse.n.01 ;
-  :tgt t00689:p2 .
-
-t00689:s1 a :Frond.n.01 .
-
-t00689:s2 a :Flower.n.01 .
-
-t00689:s3 a :Ribbon.n.01 .
-
-t00689:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00689.jpg" ;
-  dc:date "2019-12-14T13:18:47"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0684 ;
-    geo:long 5.5234
-  ] ;
-  :nd "+53.0684+005.5234"^^ll: .
 

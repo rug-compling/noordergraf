@@ -1,54 +1,47 @@
 @prefix t00706: <https://noordergraf.rug.nl/tomb/t00706#> .
 
-tomb:t00706 a :Tomb ;
-  :image t00706:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00706:p1 ,
-       t00706:p2 ;
+tomb:t00706
+  a :Tomb ;
+  :ent t00706:p1, [
+    a :Family.n.04 ;
+    :loc [
+      a :Village.n.02 ;
+      :name "ZUIDBARGE" ;
+      :place place:Zuidbarge2743809
+    ] ;
+    :nam "L. MEPPELINK"
+  ] ;
+  :image [
+    dc:date "2019-12-21T13:48:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00706.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7817 ;
+      geo:long 6.9010
+    ] ;
+    :nd "+52.7817+006.9010"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00706:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00706:a1 a :Weeping.a.02 .
-
-t00706:c1 a :Village.n.02 ;
-  :place place:Zuidbarge2743809 ;
-  :name "ZUIDBARGE" .
-
-t00706:p1 a :Male ;
+t00706:p1
+  a :Male ;
   :dob "1858-07-04"^^xsd:date ;
   :dod "1935-11-04"^^xsd:date ;
   :nam "DIRK MEPPELINK" ;
-  :rol t00706:r1 ,
-       t00706:r2 ,
-       t00706:r3 .
-
-t00706:p2 a :Family.n.04 ;
-  :loc t00706:c1 ;
-  :nam "L. MEPPELINK" .
-
-t00706:r1 a :Brother.n.01 .
-
-t00706:r2 a :Brother-in-law.n.01 .
-
-t00706:r3 a :Uncle.n.01 .
-
-t00706:s1 a :Willow.n.01 ;
-  :att t00706:a1 .
-
-t00706:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00706.jpg" ;
-  dc:date "2019-12-21T13:48:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7817 ;
-    geo:long 6.9010
-  ] ;
-  :nd "+52.7817+006.9010"^^ll: .
+  :rol [
+    a :Brother.n.01
+  ], [
+    a :Brother-in-law.n.01
+  ], [
+    a :Uncle.n.01
+  ] .
 

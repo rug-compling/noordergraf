@@ -1,79 +1,77 @@
 @prefix t00657: <https://noordergraf.rug.nl/tomb/t00657#> .
 
-tomb:t00657 a :Tomb ;
-  :image t00657:im1 ;
-  :site site:fr8917AVleeuwarden ;
-  :ent t00657:p1 ,
-       t00657:p2 ,
-       t00657:p3 ,
-       t00657:p4 ;
-  :lan "NLD" .
+tomb:t00657
+  a :Tomb ;
+  :ent t00657:p1, t00657:p2, t00657:p3, t00657:p4 ;
+  :image [
+    dc:date "2019-11-16T14:01:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00657.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2107 ;
+      geo:long 5.7894
+    ] ;
+    :nd "+53.2107+005.7894"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:fr8917AVleeuwarden .
 
-t00657:c1 a :Town.n.01 ;
-  :place place:Einbeck2931804 ;
-  :name "EINBECK" .
-
-t00657:c2 a :Country.n.02 ;
-  :place place:Duitsland2921044 ;
-  :mem t00657:c1 ;
-  :name "DUITSLAND" .
-
-t00657:c3 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00657:m1 a :Measure.n.02 ;
-  :mem t00657:u1 ;
-  :qua 87 .
-
-t00657:p1 a :Female ;
-  :age t00657:m1 ;
+t00657:p1
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 87
+  ] ;
   :nam "G. LOOIJGENGA" ;
-  :rol t00657:r1 ,
-       t00657:r2 .
+  :rol [
+    a :Mother.n.01
+  ], [
+    a :Widow.n.01 ;
+    :tgt t00657:p2
+  ] .
 
-t00657:p2 a :Male ;
+t00657:p2
+  a :Male ;
   :dob "1808-11-10"^^xsd:date ;
   :dod "1982-05-30"^^xsd:date ;
   :nam "JOHANN LUDEWIG JACKÉ" ;
   :pob t00657:c1 ;
   :pod t00657:c3 .
 
-t00657:p3 a :Female ;
+t00657:p3
+  a :Female ;
   :dob "1839-04-23"^^xsd:date ;
   :dod "1879-11-06"^^xsd:date ;
   :nam "AUGUSTA JACKÉ" ;
   :pob t00657:c3 ;
   :pod t00657:c3 .
 
-t00657:p4 a :Male ;
+t00657:p4
+  a :Male ;
   :dob "1859-01-23"^^xsd:date ;
   :dod "1904-05-02"^^xsd:date ;
   :nam "AUGUST JACKÉ" ;
   :pob t00657:c3 ;
   :pod t00657:c3 .
 
-t00657:r1 a :Mother.n.01 .
+t00657:c1
+  a :Town.n.01 ;
+  :name "EINBECK" ;
+  :place place:Einbeck2931804 .
 
-t00657:r2 a :Widow.n.01 ;
-  :tgt t00657:p2 .
+[]
+  a :Country.n.02 ;
+  :mem t00657:c1 ;
+  :name "DUITSLAND" ;
+  :place place:Duitsland2921044 .
 
-t00657:u1 a :Year.n.01 .
-
-t00657:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00657.jpg" ;
-  dc:date "2019-11-16T14:01:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2107 ;
-    geo:long 5.7894
-  ] ;
-  :nd "+53.2107+005.7894"^^ll: .
+t00657:c3
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 

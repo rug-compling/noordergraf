@@ -1,64 +1,60 @@
 @prefix t00862: <https://noordergraf.rug.nl/tomb/t00862#> .
 
-tomb:t00862 a :Tomb ;
-  :image t00862:im1 ;
-  :site site:dr7844TCveenoord ;
-  :ent t00862:p1 ,
-       t00862:p2 ;
-  :lan "NLD" .
+tomb:t00862
+  a :Tomb ;
+  :ent t00862:p1, t00862:p2 ;
+  :image [
+    dc:date "2020-02-15T15:14:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00862.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7193 ;
+      geo:long 6.8450
+    ] ;
+    :nd "+52.7193+006.8450"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:dr7844TCveenoord .
 
-t00862:c1 a :Village.n.02 ;
-  :place place:Aalden2760142 ;
-  :name "AALDEN" .
-
-t00862:c2 a :Village.n.02 ;
-  :place place:Veenoord2745753 ;
-  :name "VEENOORD" .
-
-t00862:c3 a :Village.n.02 ;
-  :place place:Hijken2754092 ;
-  :name "HIJKEN" .
-
-t00862:c4 a :Village.n.02 ;
-  :place place:NieuwAmsterdam2750375 ;
-  :name "NIEUW-AMSTERDAM" .
-
-t00862:p1 a :Male ;
+t00862:p1
+  a :Male ;
   :dob "1847-05-09"^^xsd:date ;
   :dod "1926-07-10"^^xsd:date ;
   :nam "WILLEM BONNEN" ;
-  :pob t00862:c1 ;
-  :pod t00862:c2 ;
-  :rol t00862:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "AALDEN" ;
+    :place place:Aalden2760142
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "VEENOORD" ;
+    :place place:Veenoord2745753
+  ] ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00862:p3
+  ] .
 
-t00862:p2 a :Female ;
+t00862:p2
+  a :Female ;
   :dob "1845-01-25"^^xsd:date ;
   :dod "1926-11-01"^^xsd:date ;
   :nam "EVERDINA BOS" ;
-  :pob t00862:c3 ;
-  :pod t00862:c4 ;
-  :rol t00862:r2 .
-
-t00862:r1 a :Parent.n.01 ;
-  :tgt t00862:p3 .
-
-t00862:r2 a :Parent.n.01 ;
-  :tgt t00862:p3 .
-
-t00862:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00862.jpg" ;
-  dc:date "2020-02-15T15:14:30"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7193 ;
-    geo:long 6.8450
+  :pob [
+    a :Village.n.02 ;
+    :name "HIJKEN" ;
+    :place place:Hijken2754092
   ] ;
-  :nd "+52.7193+006.8450"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "NIEUW-AMSTERDAM" ;
+    :place place:NieuwAmsterdam2750375
+  ] ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00862:p3
+  ] .
 

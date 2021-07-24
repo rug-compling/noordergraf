@@ -1,66 +1,64 @@
 @prefix t00859: <https://noordergraf.rug.nl/tomb/t00859#> .
 
-tomb:t00859 a :Tomb ;
-  :image t00859:im1 ;
-  :site site:dr7841CDsleen ;
-  :ent t00859:p1 ,
-       t00859:p2 ;
+tomb:t00859
+  a :Tomb ;
+  :ent t00859:p1, t00859:p2 ;
+  :image [
+    dc:date "2020-02-15T15:36:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00859.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7764 ;
+      geo:long 6.8041
+    ] ;
+    :nd "+52.7764+006.8041"^^ll:
+  ] ;
   :lan "NLD" ;
   :ref t00859:v1 ;
-  :sym t00859:s1 .
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00859:a1 a :Weeping.a.02 .
-
-t00859:b1 a :Revelation.n.04 ;
-  :prt t00859:c3 .
-
-t00859:c1 a :Village.n.02 ;
-  :place place:Westenesch2744776 ;
-  :name "WESTENESCH" .
-
-t00859:c2 a :Hamlet.n.03 ;
-  :place place:Diphoorn2756789 ;
-  :name "DIPHOORN" .
-
-t00859:c3 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00859:v1 .
-
-t00859:p1 a :Female ;
+t00859:p1
+  a :Female ;
   :dob "1863-06-10"^^xsd:date ;
   :dod "1952-01-11"^^xsd:date ;
   :nam "HENDRIKJE WIGGERS" ;
-  :pob t00859:c1 ;
-  :pod t00859:c2 ;
-  :rol t00859:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "WESTENESCH" ;
+    :place place:Westenesch2744776
+  ] ;
+  :pod [
+    a :Hamlet.n.03 ;
+    :name "DIPHOORN" ;
+    :place place:Diphoorn2756789
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00859:p2
+  ] .
 
-t00859:p2 a :Male ;
+t00859:p2
+  a :Male ;
   :nam "J. DENING" .
 
-t00859:r1 a :Widow.n.01 ;
-  :tgt t00859:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00859:v1
+  ] .
 
-t00859:s1 a :Willow.n.01 ;
-  :att t00859:a1 .
-
-t00859:v1 a :Verse.n.01 ;
+t00859:v1
+  a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN" .
-
-t00859:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00859.jpg" ;
-  dc:date "2020-02-15T15:36:20"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7764 ;
-    geo:long 6.8041
-  ] ;
-  :nd "+52.7764+006.8041"^^ll: .
 

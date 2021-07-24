@@ -1,57 +1,54 @@
 @prefix t01056: <https://noordergraf.rug.nl/tomb/t01056#> .
 
-tomb:t01056 a :Tomb ;
-  :image t01056:im1 ;
-  :site site:gr9971EBulrum ;
-  :ent t01056:p1 ,
-       t01056:p2 ,
-       t01056:p3 ;
+tomb:t01056
+  a :Tomb ;
+  :ent t01056:p1, t01056:p2, t01056:p3 ;
+  :image [
+    dc:date "2020-05-02T16:45:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01056.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3596 ;
+      geo:long 6.3364
+    ] ;
+    :nd "+53.3596+006.3364"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01056:s1 .
+  :site site:gr9971EBulrum ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01056:a1 a :Weeping.a.02 .
-
-t01056:c1 a :Village.n.02 ;
-  :place place:Ulrum2745944 ;
-  :name "ULRUM" .
-
-t01056:p1 a :Male ;
+t01056:p1
+  a :Male ;
   :dob "1859-11-18"^^xsd:date ;
   :dod "1908-01-04"^^xsd:date ;
   :nam "JOCHUM TENT" ;
   :pob t01056:c1 ;
   :pod t01056:c1 ;
-  :rol t01056:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01056:p2
+  ] .
 
-t01056:p2 a :Female ;
+t01056:p2
+  a :Female ;
   :nam "FEIKJEDINA HOEKSTRA" .
 
-t01056:p3 a :Male ;
-  :rol t01056:r2 .
+t01056:p3
+  a :Male ;
+  :rol [
+    a :Son.n.01 ;
+    :tgt t01056:p1
+  ] .
 
-t01056:r1 a :Spouse.n.01 ;
-  :tgt t01056:p2 .
-
-t01056:r2 a :Son.n.01 ;
-  :tgt t01056:p1 .
-
-t01056:s1 a :Willow.n.01 ;
-  :att t01056:a1 .
-
-t01056:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01056.jpg" ;
-  dc:date "2020-05-02T16:45:11"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3596 ;
-    geo:long 6.3364
-  ] ;
-  :nd "+53.3596+006.3364"^^ll: .
+t01056:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
 

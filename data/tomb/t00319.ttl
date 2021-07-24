@@ -1,61 +1,54 @@
 @prefix t00319: <https://noordergraf.rug.nl/tomb/t00319#> .
 
-tomb:t00319 a :Tomb ;
-  :image t00319:im1 ;
+tomb:t00319
+  a :Tomb ;
+  :ent t00319:p1, t00319:p2, t00319:p3 ;
+  :image [
+    dc:date "2019-10-19T13:57:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00319.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4718
+    ] ;
+    :nd "+52.7157+006.4718"^^ll:
+  ] ;
   :site site:dr7907CHhoogeveen ;
-  :ent t00319:p1 ,
-       t00319:p2 ,
-       t00319:p3 ;
-  :sym t00319:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00319:p1 a :Female ;
+t00319:p1
+  a :Female ;
   :dob "1911-06-05"^^xsd:date ;
   :dod "1999-09-21"^^xsd:date ;
   :nam "GRIET JANSEN-SLOMP" ;
-  :rol t00319:r1 ,
-       t00319:r2 ,
-       t00319:r3 ,
-       t00319:r4 .
+  :rol t00319:r1, [
+    a :Spouse.n.01 ;
+    :bef t00319:r1 ;
+    :tgt t00319:p3
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Grandmother.n.01
+  ] .
 
-t00319:p2 a :Male ;
+t00319:p2
+  a :Male ;
   :nam "G. JANSEN" .
 
-t00319:p3 a :Male ;
+t00319:p3
+  a :Male ;
   :nam "G. RUNDERVOORT" .
 
-t00319:r1 a :Spouse.n.01 ;
+t00319:r1
+  a :Spouse.n.01 ;
   :tgt t00319:p2 .
-
-t00319:r2 a :Spouse.n.01 ;
-  :bef t00319:r1 ;
-  :tgt t00319:p3 .
-
-t00319:r3 a :Mother.n.01 .
-
-t00319:r4 a :Grandmother.n.01 .
-
-t00319:s1 a :Composite.n.01 ;
-  :prt t00319:s2 ,
-       t00319:s3 .
-
-t00319:s2 a :Frond.n.01 .
-
-t00319:s3 a :Ribbon.n.01 .
-
-t00319:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00319.jpg" ;
-  dc:date "2019-10-19T13:57:14"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7157 ;
-    geo:long 6.4718
-  ] ;
-  :nd "+52.7157+006.4718"^^ll: .
 

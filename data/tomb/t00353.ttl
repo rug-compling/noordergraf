@@ -1,51 +1,48 @@
 @prefix t00353: <https://noordergraf.rug.nl/tomb/t00353#> .
 
-tomb:t00353 a :Tomb ;
-  :image t00353:im1 ;
+tomb:t00353
+  a :Tomb ;
+  :ent t00353:p1, t00353:p2 ;
+  :image [
+    dc:date "2019-10-25T17:47:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00353.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0800 ;
+      geo:long 6.5730
+    ] ;
+    :nd "+53.0800+006.5730"^^ll:
+  ] ;
   :site site:dr9481CGvries ;
-  :ent t00353:p1 ,
-       t00353:p2 ;
-  :sym t00353:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00353:a1 a :Weeping.a.02 .
-
-t00353:c1 a :Village.n.02 ;
-  :place place:Zeyen2743985 ;
-  :name "ZEIJEN" .
-
-t00353:p1 a :Female ;
+t00353:p1
+  a :Female ;
   :dob "1865-12-21"^^xsd:date ;
   :dod "1897-12-26"^^xsd:date ;
   :nam "BOELINA LAMMERS" ;
   :pob t00353:c1 ;
   :pod t00353:c1 ;
-  :rol t00353:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00353:p2
+  ] .
 
-t00353:p2 a :Male ;
+t00353:p2
+  a :Male ;
   :nam "H. NOORD" ;
   :sfx "JZN" .
 
-t00353:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00353:p2 .
-
-t00353:s1 a :Willow.n.01 ;
-  :att t00353:a1 .
-
-t00353:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00353.jpg" ;
-  dc:date "2019-10-25T17:47:48"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0800 ;
-    geo:long 6.5730
-  ] ;
-  :nd "+53.0800+006.5730"^^ll: .
+t00353:c1
+  a :Village.n.02 ;
+  :name "ZEIJEN" ;
+  :place place:Zeyen2743985 .
 

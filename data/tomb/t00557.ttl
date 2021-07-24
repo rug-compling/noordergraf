@@ -1,46 +1,42 @@
 @prefix t00557: <https://noordergraf.rug.nl/tomb/t00557#> .
 
-tomb:t00557 a :Tomb ;
-  :image t00557:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00557:p1 ,
-       t00557:p2 ;
+tomb:t00557
+  a :Tomb ;
+  :ent t00557:p1, t00557:p2 ;
+  :image [
+    dc:date "2019-11-24T13:53:07"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00557.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1047 ;
+      geo:long 6.8756
+    ] ;
+    :nd "+53.1047+006.8756"^^ll:
+  ] ;
   :quo "HIER RUST, O WANDELAAR \\ MIJN TEER BEMINDE VROUW; \\ ZIJ DIE MIJ HEEFT VERZELD, \\ MET LIEFDE, DEUGD EN TROUW; \\ OP 'T ZEEMANS MOEILIJK PAD \\ DER WOESTE ZOUTE BAREN; DAAR IS HAAR ZIEL VERHUISD, \\ EN VAN MIJ HEEN GEVAREN. \\ HAAR LIJK BRAGT IK NAAR HIER, \\ NAAR DEZEN DOODENAKKER. \\ GOD, HOOP IK, MAAKT MIJ EENS AAN HARE ZIJDE WAKKER!"@nld ;
-  :sym t00557:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Galleon.n.01
+  ] .
 
-t00557:c1 a :Ocean.n.01 ;
-  :place place:IndischeOceaan1545739 ;
-  :name "INDISCHE OCEAAN" .
-
-t00557:p1 a :Female ;
+t00557:p1
+  a :Female ;
   :dob "1823-08-04"^^xsd:date ;
   :dod "1856-01-19"^^xsd:date ;
   :nam "JANTJE A. HAZEWINKEL" ;
-  :pod t00557:c1 ;
-  :rol t00557:r1 .
-
-t00557:p2 a :Male ;
-  :nam "BEREND J. JONKER" .
-
-t00557:r1 a :Spouse.n.01 ;
-  :tgt t00557:p2 .
-
-t00557:s1 a :Galleon.n.01 .
-
-t00557:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00557.jpg" ;
-  dc:date "2019-11-24T13:53:07"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1047 ;
-    geo:long 6.8756
+  :pod [
+    a :Ocean.n.01 ;
+    :name "INDISCHE OCEAAN" ;
+    :place place:IndischeOceaan1545739
   ] ;
-  :nd "+53.1047+006.8756"^^ll: .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00557:p2
+  ] .
+
+t00557:p2
+  a :Male ;
+  :nam "BEREND J. JONKER" .
 

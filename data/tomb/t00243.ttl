@@ -1,68 +1,66 @@
 @prefix t00243: <https://noordergraf.rug.nl/tomb/t00243#> .
 
-tomb:t00243 a :Tomb ;
-  :image t00243:im1 ;
+tomb:t00243
+  a :Tomb ;
+  :ent t00243:p1, t00243:p2 ;
+  :image [
+    dc:date "2019-10-11T17:35:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00243.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1730 ;
+      geo:long 6.6071
+    ] ;
+    :nd "+53.1730+006.6071"^^ll:
+  ] ;
+  :ref [
+    a :Group.n.01 ;
+    :mem t00243:v1, t00243:v2
+  ] ;
   :site site:gr9751BBharen ;
-  :ent t00243:p1 ,
-       t00243:p2 ;
-  :ref t00243:g1 ;
-  :sym t00243:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00243:a1 a :Weeping.a.02 .
-
-t00243:b1 a :Second_Epistle_to_Timothy.n.01 ;
-  :prt t00243:c2 .
-
-t00243:c1 a :Village.n.02 ;
-  :place place:Onnen2749588 ;
-  :name "ONNEN" .
-
-t00243:c2 a :Chapter.n.01 ;
-  :ord 4 ;
-  :prt t00243:v1 ,
-       t00243:v2 .
-
-t00243:g1 a :Group.n.01 ;
-  :mem t00243:v1 ,
-       t00243:v2 .
-
-t00243:p1 a :Male ;
+t00243:p1
+  a :Male ;
   :dob "1879-06-11"^^xsd:date ;
   :dod "1945-10-21"^^xsd:date ;
   :nam "FRENS VAN GIJSSEL" ;
   :pob t00243:c1 ;
   :pod t00243:c1 ;
-  :rol t00243:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00243:p2
+  ] .
 
-t00243:p2 a :Female ;
+t00243:p2
+  a :Female ;
   :nam "SIETSKE DE VRIES" .
 
-t00243:r1 a :Spouse.n.01 ;
-  :tgt t00243:p2 .
+[]
+  a :Second_Epistle_to_Timothy.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 4 ;
+    :prt t00243:v1, t00243:v2
+  ] .
 
-t00243:s1 a :Willow.n.01 ;
-  :att t00243:a1 .
+t00243:c1
+  a :Village.n.02 ;
+  :name "ONNEN" ;
+  :place place:Onnen2749588 .
 
-t00243:v1 a :Verse.n.01 ;
+t00243:v1
+  a :Verse.n.01 ;
   :ord 7 .
 
-t00243:v2 a :Verse.n.01 ;
+t00243:v2
+  a :Verse.n.01 ;
   :ord 8 .
-
-t00243:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00243.jpg" ;
-  dc:date "2019-10-11T17:35:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1730 ;
-    geo:long 6.6071
-  ] ;
-  :nd "+53.1730+006.6071"^^ll: .
 

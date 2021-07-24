@@ -1,26 +1,22 @@
 @prefix t01080: <https://noordergraf.rug.nl/tomb/t01080#> .
 
-tomb:t01080 a :Tomb ;
-  :image t01080:im1 ;
+tomb:t01080
+  a :Tomb ;
   :ent t01080:p1 ;
+  :image [
+    dc:date "2020-05-23T10:32:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01080.jpg"
+  ] ;
   :quo "TOUTE LA SAGESSE ET DISCOURS DU MONDE SE RESOULT EN FIN A NE CRAINDRE POINT A MOURIR MONTAIGNE"@fra ;
-  :sym t01080:s1 .
+  :sym [
+    a :Butterfly.n.01
+  ] .
 
-t01080:p1 a :Male ;
+t01080:p1
+  a :Male ;
   :dob "1925-09-25"^^xsd:date ;
   :dod "2002-02-27"^^xsd:date ;
   :nam "ANDRE G. DE WILDE" .
-
-t01080:s1 a :Butterfly.n.01 .
-
-t01080:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01080.jpg" ;
-  dc:date "2020-05-23T10:32:23"^^xsd:dateTime .
 

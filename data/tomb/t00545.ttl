@@ -1,57 +1,54 @@
 @prefix t00545: <https://noordergraf.rug.nl/tomb/t00545#> .
 
-tomb:t00545 a :Tomb ;
-  :image t00545:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00545:p1 ,
-       t00545:p2 ;
+tomb:t00545
+  a :Tomb ;
+  :ent t00545:p1, t00545:p2 ;
+  :image [
+    dc:date "2019-11-24T14:14:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00545.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1042 ;
+      geo:long 6.8756
+    ] ;
+    :nd "+53.1042+006.8756"^^ll:
+  ] ;
   :quo "HIJ DIE HIER RUST \\ IN DEZE AARDE \\ WAS VOON ONS \\ VAN GROTE WAARDE."@nld ;
-  :sym t00545:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00545:a1 a :Weeping.a.02 .
-
-t00545:c1 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00545:o1 a :Skipper.n.02 ;
-  :att "RUSTEND" ;
-  :hco "04217" ;
-  :loc t00545:c1 .
-
-t00545:p1 a :Male ;
+t00545:p1
+  a :Male ;
   :dob "1819-10-23"^^xsd:date ;
   :dod "1902-12-22"^^xsd:date ;
   :nam "JAN FRANSENS NIPPERES" ;
-  :occ t00545:o1 ;
+  :occ [
+    a :Skipper.n.02 ;
+    :att "RUSTEND" ;
+    :hco "04217" ;
+    :loc t00545:c1
+  ] ;
   :pob t00545:c1 ;
   :pod t00545:c1 ;
-  :rol t00545:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00545:p2
+  ] .
 
-t00545:p2 a :Female ;
+t00545:p2
+  a :Female ;
   :nam "HILLEGIEN HESSELING" .
 
-t00545:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00545:p2 .
-
-t00545:s1 a :Willow.n.01 ;
-  :att t00545:a1 .
-
-t00545:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00545.jpg" ;
-  dc:date "2019-11-24T14:14:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1042 ;
-    geo:long 6.8756
-  ] ;
-  :nd "+53.1042+006.8756"^^ll: .
+t00545:c1
+  a :City.n.01 ;
+  :name "VEENDAM" ;
+  :place place:Veendam2745783 .
 

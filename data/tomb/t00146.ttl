@@ -1,58 +1,53 @@
 @prefix t00146: <https://noordergraf.rug.nl/tomb/t00146#> .
 
-tomb:t00146 a :Tomb ;
-  :image t00146:im1 ;
+tomb:t00146
+  a :Tomb ;
+  :ent t00146:p1, t00146:p2, t00146:p3 ;
+  :image [
+    dc:date "2019-10-02T10:27:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00146.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2060 ;
+      geo:long 6.5699
+    ] ;
+    :nd "+53.2060+006.5699"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00146:p1 ,
-       t00146:p2 ,
-       t00146:p3 ;
-  :sym t00146:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00146:p1 a :Male ;
+t00146:p1
+  a :Male ;
   :dob "1857-04-08"^^xsd:date ;
   :dod "1941-01-04"^^xsd:date ;
   :nam "JACOB HUIZINGA" ;
-  :rol t00146:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00146:p2
+  ] .
 
-t00146:p2 a :Female ;
+t00146:p2
+  a :Female ;
   :dob "1869-11-05"^^xsd:date ;
   :dod "1961-07-04"^^xsd:date ;
   :nam "BOUWINA LUBBERS" ;
-  :rol t00146:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00146:p3
+  ] .
 
-t00146:p3 a :Male ;
+t00146:p3
+  a :Male ;
   :dob "1880-09-08"^^xsd:date ;
   :dod "1962-03-05"^^xsd:date ;
   :nam "JAN MIDDEL" .
-
-t00146:r1 a :Husband.n.01 ;
-  :tgt t00146:p2 .
-
-t00146:r2 a :Wife.n.01 ;
-  :tgt t00146:p3 .
-
-t00146:s1 a :Composite.n.01 ;
-  :prt t00146:s2 ,
-       t00146:s3 .
-
-t00146:s2 a :Frond.n.01 .
-
-t00146:s3 a :Ribbon.n.01 .
-
-t00146:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00146.jpg" ;
-  dc:date "2019-10-02T10:27:46"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2060 ;
-    geo:long 6.5699
-  ] ;
-  :nd "+53.2060+006.5699"^^ll: .
 

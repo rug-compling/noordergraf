@@ -1,44 +1,39 @@
 @prefix t00752: <https://noordergraf.rug.nl/tomb/t00752#> .
 
-tomb:t00752 a :Tomb ;
-  :image t00752:im1 ;
-  :site site:gr9936BTfarmsum ;
-  :ent t00752:p1 ,
-       t00752:p2 ;
+tomb:t00752
+  a :Tomb ;
+  :ent t00752:p1, t00752:p2 ;
+  :image [
+    dc:date "2019-12-28T12:47:16"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00752.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3110 ;
+      geo:long 6.9975
+    ] ;
+    :nd "+53.3110+006.9975"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00752:s1 ,
-       t00752:s2 .
+  :site site:gr9936BTfarmsum ;
+  :sym [
+    a :Skull.n.01
+  ], [
+    a :Bone.n.01
+  ] .
 
-t00752:p1 a :Person ;
+t00752:p1
+  a :Person ;
   :dob "1812-09-23"^^xsd:date ;
   :dod "1880-06-09"^^xsd:date ;
   :nam "E.C. BEKENKAMP" ;
-  :rol t00752:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00752:p2
+  ] .
 
-t00752:p2 a :Person ;
+t00752:p2
+  a :Person ;
   :nam "A.R. VAN ZANTEN" .
-
-t00752:r1 a :Spouse.n.01 ;
-  :tgt t00752:p2 .
-
-t00752:s1 a :Skull.n.01 .
-
-t00752:s2 a :Bone.n.01 .
-
-t00752:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00752.jpg" ;
-  dc:date "2019-12-28T12:47:16"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3110 ;
-    geo:long 6.9975
-  ] ;
-  :nd "+53.3110+006.9975"^^ll: .
 

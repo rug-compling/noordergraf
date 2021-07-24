@@ -1,79 +1,77 @@
 @prefix t00616: <https://noordergraf.rug.nl/tomb/t00616#> .
 
-tomb:t00616 a :Tomb ;
-  :image t00616:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00616:p1 ,
-       t00616:p2 ,
-       t00616:p3 ;
+tomb:t00616
+  a :Tomb ;
+  :ent t00616:p1, t00616:p2, t00616:p3 ;
+  :image [
+    dc:date "2019-11-23T10:04:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00616.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1644 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1644+006.7541"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00616:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00616:a1 a :Weeping.a.02 .
-
-t00616:c1 a :Town.n.01 ;
-  :place place:Hoogezand2753706 ;
-  :name "HOOGEZAND" .
-
-t00616:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00616:c3 a :Village.n.02 ;
-  :place place:Dennenoord2757197 ;
-  :name "DENNENOORD" .
-
-t00616:p1 a :Female ;
+t00616:p1
+  a :Female ;
   :dob "1825-06-21"^^xsd:date ;
   :dod "1873-06-22"^^xsd:date ;
   :nam "A.H. SUUROVERSTE" ;
   :pob t00616:c1 ;
   :pod t00616:c1 ;
-  :rol t00616:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :bef t00616:r3 ;
+    :tgt t00616:p2
+  ] .
 
-t00616:p2 a :Male ;
+t00616:p2
+  a :Male ;
   :dob "1826-04-23"^^xsd:date ;
   :dod "1901-07-12"^^xsd:date ;
   :nam "J. NIJMANDS" ;
   :pob t00616:c1 ;
   :pod t00616:c1 ;
-  :rol t00616:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00616:p1
+  ] .
 
-t00616:p3 a :Female ;
+t00616:p3
+  a :Female ;
   :dob "1839-01-22"^^xsd:date ;
   :dod "1906-05-29"^^xsd:date ;
   :nam "T. LANTING" ;
-  :pob t00616:c2 ;
-  :pod t00616:c3 ;
+  :pob [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "DENNENOORD" ;
+    :place place:Dennenoord2757197
+  ] ;
   :rol t00616:r3 .
 
-t00616:r1 a :Spouse.n.01 ;
-  :bef t00616:r3 ;
+t00616:c1
+  a :Town.n.01 ;
+  :name "HOOGEZAND" ;
+  :place place:Hoogezand2753706 .
+
+t00616:r3
+  a :Spouse.n.01 ;
   :tgt t00616:p2 .
-
-t00616:r2 a :Spouse.n.01 ;
-  :tgt t00616:p1 .
-
-t00616:r3 a :Spouse.n.01 ;
-  :tgt t00616:p2 .
-
-t00616:s1 a :Willow.n.01 ;
-  :att t00616:a1 .
-
-t00616:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00616.jpg" ;
-  dc:date "2019-11-23T10:04:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1644 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1644+006.7541"^^ll: .
 

@@ -1,60 +1,53 @@
 @prefix t01004: <https://noordergraf.rug.nl/tomb/t01004#> .
 
-tomb:t01004 a :Tomb ;
-  :image t01004:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t01004:g1 ,
-       t01004:p1 ,
-       t01004:p2 ,
-       t01004:p3 ;
+tomb:t01004
+  a :Tomb ;
+  :ent t01004:p1, t01004:p2, t01004:p3, t01004:g1 ;
+  :image [
+    dc:date "2020-04-04T10:50:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01004.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1757 ;
+      geo:long 7.0949
+    ] ;
+    :nd "+53.1757+007.0949"^^ll:
+  ] ;
   :quo "ZOEKT DEN HEER EN LEEFT"@nld ;
   :ref "AMOS 5:6"@nld ;
-  :sym t01004:s1 ,
-       t01004:s2 ,
-       t01004:s3 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Scythe.n.01
+  ], [
+    a :Butterfly.n.01
+  ] .
 
-t01004:a1 a :Weeping.a.02 .
-
-t01004:g1 a :Group.n.01 ;
-  :mem t01004:p2 ,
-       t01004:p3 .
-
-t01004:p1 a :Female ;
+t01004:p1
+  a :Female ;
   :dob "1871-10-23"^^xsd:date ;
   :dod "1892-02-15"^^xsd:date ;
   :nam "STIENTJE WANMAKER" ;
-  :rol t01004:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t01004:g1
+  ] .
 
-t01004:p2 a :Person ;
+t01004:p2
+  a :Person ;
   :nam "J. WANMAKER" .
 
-t01004:p3 a :Person ;
+t01004:p3
+  a :Person ;
   :nam "F. HEIKENS" .
 
-t01004:r1 a :Daughter.n.01 ;
-  :tgt t01004:g1 .
-
-t01004:s1 a :Willow.n.01 ;
-  :att t01004:a1 .
-
-t01004:s2 a :Scythe.n.01 .
-
-t01004:s3 a :Butterfly.n.01 .
-
-t01004:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01004.jpg" ;
-  dc:date "2020-04-04T10:50:13"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1757 ;
-    geo:long 7.0949
-  ] ;
-  :nd "+53.1757+007.0949"^^ll: .
+t01004:g1
+  a :Group.n.01 ;
+  :mem t01004:p2, t01004:p3 .
 

@@ -1,59 +1,55 @@
 @prefix t00669: <https://noordergraf.rug.nl/tomb/t00669#> .
 
-tomb:t00669 a :Tomb ;
-  :image t00669:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00669:g1 ,
-       t00669:p1 ,
-       t00669:p2 ;
+tomb:t00669
+  a :Tomb ;
+  :ent t00669:p1, t00669:p2, t00669:g1 ;
+  :image [
+    dc:date "2019-12-14T13:50:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00669.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0687 ;
+      geo:long 5.5231
+    ] ;
+    :nd "+53.0687+005.5231"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00669:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00669:g1 a :Group.n.01 ;
-  :mem t00669:p3 .
-
-t00669:p1 a :Female ;
+t00669:p1
+  a :Female ;
   :dob "1876-06-08"^^xsd:date ;
   :dod "1965-01-02"^^xsd:date ;
   :nam "HENDRIKJE DE JONG" ;
-  :rol t00669:r1 ,
-       t00669:r2 .
+  :rol [
+    a :Mother.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00669:g1
+  ], [
+    a :Grandmother.n.01 ;
+    :tgt t00669:g1
+  ] .
 
-t00669:p2 a :Female ;
+t00669:p2
+  a :Female ;
   :dob "1886-04-16"^^xsd:date ;
   :dod "1966-08-26"^^xsd:date ;
   :nam "EEKE DE JONG" ;
-  :rol t00669:r3 .
+  :rol [
+    a :Aunt.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00669:g1
+  ] .
 
-t00669:p3 a :Person .
+t00669:p3
+  a :Person .
 
-t00669:r1 a :Mother.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00669:g1 .
-
-t00669:r2 a :Grandmother.n.01 ;
-  :tgt t00669:g1 .
-
-t00669:r3 a :Aunt.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00669:g1 .
-
-t00669:s1 a :Frond.n.01 .
-
-t00669:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00669.jpg" ;
-  dc:date "2019-12-14T13:50:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0687 ;
-    geo:long 5.5231
-  ] ;
-  :nd "+53.0687+005.5231"^^ll: .
+t00669:g1
+  a :Group.n.01 ;
+  :mem t00669:p3 .
 

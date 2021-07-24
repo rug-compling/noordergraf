@@ -1,33 +1,29 @@
 @prefix t00461: <https://noordergraf.rug.nl/tomb/t00461#> .
 
-tomb:t00461 a :Tomb ;
-  :image t00461:im1 ;
-  :site site:fr8915CPleeuwarden ;
+tomb:t00461
+  a :Tomb ;
   :ent t00461:p1 ;
+  :image [
+    dc:date "2019-11-09T14:56:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00461.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2067 ;
+      geo:long 5.7698
+    ] ;
+    :nd "+53.2067+005.7698"^^ll:
+  ] ;
   :quo "PAX IN MEMORIAN"@lat ;
-  :sym t00461:s1 .
+  :site site:fr8915CPleeuwarden ;
+  :sym [
+    a :Cross.n.03
+  ] .
 
-t00461:p1 a :Female ;
+t00461:p1
+  a :Female ;
   :dob "1895-11-18"^^xsd:date ;
   :dod "1986-02-27"^^xsd:date ;
   :nam "GEERTRUIDA MARIA DOODKORTE" .
-
-t00461:s1 a :Cross.n.03 .
-
-t00461:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00461.jpg" ;
-  dc:date "2019-11-09T14:56:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2067 ;
-    geo:long 5.7698
-  ] ;
-  :nd "+53.2067+005.7698"^^ll: .
 

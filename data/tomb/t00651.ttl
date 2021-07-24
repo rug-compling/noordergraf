@@ -1,56 +1,47 @@
 @prefix t00651: <https://noordergraf.rug.nl/tomb/t00651#> .
 
-tomb:t00651 a :Tomb ;
-  :image t00651:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00651:p1 ,
-       t00651:p2 ;
+tomb:t00651
+  a :Tomb ;
+  :ent t00651:p1, t00651:p2 ;
+  :image [
+    dc:date "2019-11-24T13:52:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00651.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1055 ;
+      geo:long 6.8768
+    ] ;
+    :nd "+53.1055+006.8768"^^ll:
+  ] ;
   :quo "AL LEEFT de MENSCH \\ DOOR ALLE LEVENSTIJDEN \\ IN VREDE EN RUST, \\ OF ONDER SMART \\ IN STRIJDEN, \\ 'T ZOIJ ZWAK OF STERK \\ TZIJ KORT OF LANG VAN DUUR. \\ IN'T EIND ONTVALT \\ TOCH IEDER 'TLEVENS UUR."@nld ;
-  :sym t00651:s1 ,
-       t00651:s2 ,
-       t00651:s3 ,
-       t00651:s4 ,
-       t00651:s5 ,
-       t00651:s6 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Sandglass.n.01
+  ], [
+    a :Scythe.n.01
+  ], [
+    a :Butterfly.n.01
+  ], [
+    a :Snake.n.01
+  ], [
+    a :Oak.n.02
+  ], [
+    a :Palm.n.04
+  ] .
 
-t00651:p1 a :Female ;
+t00651:p1
+  a :Female ;
   :dob "1785-01-31"^^xsd:date ;
   :dod "1870-06-01"^^xsd:date ;
   :nam "ALBERTJE H. SCHIPPER" ;
-  :rol t00651:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00651:p2
+  ] .
 
-t00651:p2 a :Male ;
+t00651:p2
+  a :Male ;
   :nam "ABRAHAM C. HAZEWINKEL" .
-
-t00651:r1 a :Spouse.n.01 ;
-  :tgt t00651:p2 .
-
-t00651:s1 a :Sandglass.n.01 .
-
-t00651:s2 a :Scythe.n.01 .
-
-t00651:s3 a :Butterfly.n.01 .
-
-t00651:s4 a :Snake.n.01 .
-
-t00651:s5 a :Oak.n.02 .
-
-t00651:s6 a :Palm.n.04 .
-
-t00651:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00651.jpg" ;
-  dc:date "2019-11-24T13:52:56"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1055 ;
-    geo:long 6.8768
-  ] ;
-  :nd "+53.1055+006.8768"^^ll: .
 

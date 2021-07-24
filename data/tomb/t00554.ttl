@@ -1,58 +1,51 @@
 @prefix t00554: <https://noordergraf.rug.nl/tomb/t00554#> .
 
-tomb:t00554 a :Tomb ;
-  :image t00554:im1 ;
-  :site site:gr9641ANveendam ;
+tomb:t00554
+  a :Tomb ;
   :ent t00554:p1 ;
+  :image [
+    dc:date "2019-11-24T13:58:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00554.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1045 ;
+      geo:long 6.8751
+    ] ;
+    :nd "+53.1045+006.8751"^^ll:
+  ] ;
   :quo "RUST ZACHT, \\ GELIEFDE BROEDER."@nld ;
-  :sym t00554:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Book.n.02
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00554:c1 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00554:o1 a :Teacher.n.01 ;
-  :hco "13320" ;
-  :loc t00554:c1 .
-
-t00554:p1 a :Male ;
+t00554:p1
+  a :Male ;
   :dob "1849-01-16"^^xsd:date ;
   :dod "1909-05-27"^^xsd:date ;
   :nam "H.J. TOP" ;
-  :occ t00554:o1 ;
-  :rol t00554:r1 .
-
-t00554:r1 a :Brother.n.01 ;
-  :att "GELIEFDE" .
-
-t00554:s1 a :Composite.n.01 ;
-  :prt t00554:s2 ,
-       t00554:s3 ,
-       t00554:s4 ,
-       t00554:s5 .
-
-t00554:s2 a :Book.n.02 .
-
-t00554:s3 a :Frond.n.01 .
-
-t00554:s4 a :Frond.n.01 .
-
-t00554:s5 a :Ribbon.n.01 .
-
-t00554:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00554.jpg" ;
-  dc:date "2019-11-24T13:58:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1045 ;
-    geo:long 6.8751
+  :occ [
+    a :Teacher.n.01 ;
+    :hco "13320" ;
+    :loc [
+      a :City.n.01 ;
+      :name "VEENDAM" ;
+      :place place:Veendam2745783
+    ]
   ] ;
-  :nd "+53.1045+006.8751"^^ll: .
+  :rol [
+    a :Brother.n.01 ;
+    :att "GELIEFDE"
+  ] .
 

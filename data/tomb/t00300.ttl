@@ -1,52 +1,48 @@
 @prefix t00300: <https://noordergraf.rug.nl/tomb/t00300#> .
 
-tomb:t00300 a :Tomb ;
-  :image t00300:im1 ;
+tomb:t00300
+  a :Tomb ;
+  :ent t00300:p1, t00300:p2, [
+    a :Family.n.04 ;
+    :nam "BORK"
+  ] ;
+  :image [
+    dc:date "2019-10-19T14:35:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00300.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7155 ;
+      geo:long 6.4741
+    ] ;
+    :nd "+52.7155+006.4741"^^ll:
+  ] ;
   :site site:dr7907CHhoogeveen ;
-  :ent t00300:p1 ,
-       t00300:p2 ,
-       t00300:p3 ;
-  :sym t00300:s1 .
+  :sym [
+    a :Flower.n.01
+  ] .
 
-t00300:c1 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00300:p1 a :Female ;
+t00300:p1
+  a :Female ;
   :dob "1871-10-03"^^xsd:date ;
   :dod "1937-02-23"^^xsd:date ;
   :nam "ROELOFJE REMKEN" ;
   :pob t00300:c1 ;
   :pod t00300:c1 .
 
-t00300:p2 a :Male ;
+t00300:p2
+  a :Male ;
   :dob "1866-05-31"^^xsd:date ;
   :dod "1948-02-21"^^xsd:date ;
   :nam "JAN BORK" ;
-  :rol t00300:r1 .
+  :rol [
+    a :Father.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00300:p3 a :Family.n.04 ;
-  :nam "BORK" .
-
-t00300:r1 a :Father.n.01 ;
-  :att "LIEVE" .
-
-t00300:s1 a :Flower.n.01 .
-
-t00300:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00300.jpg" ;
-  dc:date "2019-10-19T14:35:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7155 ;
-    geo:long 6.4741
-  ] ;
-  :nd "+52.7155+006.4741"^^ll: .
+t00300:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 

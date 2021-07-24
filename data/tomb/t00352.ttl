@@ -1,58 +1,54 @@
 @prefix t00352: <https://noordergraf.rug.nl/tomb/t00352#> .
 
-tomb:t00352 a :Tomb ;
-  :image t00352:im1 ;
+tomb:t00352
+  a :Tomb ;
+  :ent t00352:p1, t00352:p2, t00352:p3 ;
+  :image [
+    dc:date "2019-10-25T17:48:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00352.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0800 ;
+      geo:long 6.5730
+    ] ;
+    :nd "+53.0800+006.5730"^^ll:
+  ] ;
   :site site:dr9481CGvries ;
-  :ent t00352:p1 ,
-       t00352:p2 ,
-       t00352:p3 ;
-  :sym t00352:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00352:a1 a :Weeping.a.02 .
-
-t00352:c1 a :Village.n.02 ;
-  :place place:Zeyen2743985 ;
-  :name "ZEIJEN" .
-
-t00352:p1 a :Male ;
+t00352:p1
+  a :Male ;
   :dob "1864-06-29"^^xsd:date ;
   :dod "1927-10-29"^^xsd:date ;
   :nam "HENDRIK NOORD" ;
   :pob t00352:c1 ;
   :pod t00352:c1 ;
-  :rol t00352:r1 ,
-       t00352:r2 ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00352:p2
+  ], [
+    a :Widower.n.01 ;
+    :tgt t00352:p3
+  ] ;
   :sfx "JZN" .
 
-t00352:p2 a :Female ;
+t00352:p2
+  a :Female ;
   :nam "B. LAMMERS" .
 
-t00352:p3 a :Female ;
+t00352:p3
+  a :Female ;
   :nam "J. HOMAN" .
 
-t00352:r1 a :Widower.n.01 ;
-  :tgt t00352:p2 .
-
-t00352:r2 a :Widower.n.01 ;
-  :tgt t00352:p3 .
-
-t00352:s1 a :Willow.n.01 ;
-  :att t00352:a1 .
-
-t00352:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00352.jpg" ;
-  dc:date "2019-10-25T17:48:30"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0800 ;
-    geo:long 6.5730
-  ] ;
-  :nd "+53.0800+006.5730"^^ll: .
+t00352:c1
+  a :Village.n.02 ;
+  :name "ZEIJEN" ;
+  :place place:Zeyen2743985 .
 

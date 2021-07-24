@@ -1,30 +1,26 @@
 @prefix t00890: <https://noordergraf.rug.nl/tomb/t00890#> .
 
-tomb:t00890 a :Tomb ;
-  :image t00890:im1 ;
-  :site site:gr9722SNgroningen ;
+tomb:t00890
+  a :Tomb ;
   :ent t00890:p1 ;
-  :lan "NLD" .
+  :image [
+    dc:date "2020-02-29T12:23:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00890.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1903 ;
+      geo:long 6.5917
+    ] ;
+    :nd "+53.1903+006.5917"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9722SNgroningen .
 
-t00890:p1 a :Female ;
+t00890:p1
+  a :Female ;
   :dob "1870-12-19"^^xsd:date ;
   :dod "1936-06-05"^^xsd:date ;
   :nam "ELIZABETH DYKSTRA BOUSEMA" .
-
-t00890:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00890.jpg" ;
-  dc:date "2020-02-29T12:23:36"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1903 ;
-    geo:long 6.5917
-  ] ;
-  :nd "+53.1903+006.5917"^^ll: .
 

@@ -1,54 +1,50 @@
 @prefix t00960: <https://noordergraf.rug.nl/tomb/t00960#> .
 
-tomb:t00960 a :Tomb ;
-  :image t00960:im1 ;
-  :site site:gr9479TNnoordlaren ;
-  :ent t00960:p1 ,
-       t00960:p2 ;
+tomb:t00960
+  a :Tomb ;
+  :ent t00960:p1, t00960:p2 ;
+  :image [
+    dc:date "2020-03-25T09:37:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00960.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1199 ;
+      geo:long 6.6593
+    ] ;
+    :nd "+53.1199+006.6593"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00960:s1 .
+  :site site:gr9479TNnoordlaren ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00960:a1 a :Weeping.a.02 .
-
-t00960:c1 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00960:c2 a :Village.n.02 ;
-  :place place:Noordlaren2749857 ;
-  :name "NOORDLAREN" .
-
-t00960:p1 a :Male ;
+t00960:p1
+  a :Male ;
   :dob "1882-06-10"^^xsd:date ;
   :dod "1930-08-29"^^xsd:date ;
   :nam "DERK EISSES" ;
-  :pob t00960:c1 ;
-  :pod t00960:c2 ;
-  :rol t00960:r1 .
-
-t00960:p2 a :Female ;
-  :nam "ROELFIEN TINGE" .
-
-t00960:r1 a :Spouse.n.01 ;
-  :tgt t00960:p2 .
-
-t00960:s1 a :Willow.n.01 ;
-  :att t00960:a1 .
-
-t00960:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00960.jpg" ;
-  dc:date "2020-03-25T09:37:13"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1199 ;
-    geo:long 6.6593
+  :pob [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
   ] ;
-  :nd "+53.1199+006.6593"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "NOORDLAREN" ;
+    :place place:Noordlaren2749857
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00960:p2
+  ] .
+
+t00960:p2
+  a :Female ;
+  :nam "ROELFIEN TINGE" .
 

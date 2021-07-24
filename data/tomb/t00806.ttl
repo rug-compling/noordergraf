@@ -1,31 +1,27 @@
 @prefix t00806: <https://noordergraf.rug.nl/tomb/t00806#> .
 
-tomb:t00806 a :Tomb ;
-  :image t00806:im1 ;
-  :site site:gr9791KEten_boer ;
+tomb:t00806
+  a :Tomb ;
   :ent t00806:p1 ;
+  :image [
+    dc:date "2020-01-18T13:01:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00806.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2771 ;
+      geo:long 6.6942
+    ] ;
+    :nd "+53.2771+006.6942"^^ll:
+  ] ;
   :quo "WEES MIJ GENADIG HERE WANT \\ TOT U ROEP IK DE GANSE DAG"@nld ;
-  :ref "PSALM 86"@nld .
+  :ref "PSALM 86"@nld ;
+  :site site:gr9791KEten_boer .
 
-t00806:p1 a :Male ;
+t00806:p1
+  a :Male ;
   :dob "1922-04-05"^^xsd:date ;
   :dod "1998-06-03"^^xsd:date ;
   :nam "JACOB VINK" .
-
-t00806:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00806.jpg" ;
-  dc:date "2020-01-18T13:01:18"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2771 ;
-    geo:long 6.6942
-  ] ;
-  :nd "+53.2771+006.6942"^^ll: .
 

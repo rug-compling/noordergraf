@@ -1,41 +1,36 @@
 @prefix t00595: <https://noordergraf.rug.nl/tomb/t00595#> .
 
-tomb:t00595 a :Tomb ;
-  :image t00595:im1 ;
-  :site site:gr9951TNwinsum ;
+tomb:t00595
+  a :Tomb ;
   :ent t00595:p1 ;
+  :image [
+    dc:date "2019-11-30T14:16:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00595.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3262 ;
+      geo:long 6.5117
+    ] ;
+    :nd "+53.3262+006.5117"^^ll:
+  ] ;
   :quo "I AM ONE WITH GOD"@eng ;
-  :sym t00595:s1 ,
-       t00595:s2 .
+  :site site:gr9951TNwinsum ;
+  :sym [
+    a :Treble_clef.n.01
+  ], [
+    a :Treble_clef.n.01
+  ] .
 
-t00595:o1 a :Drummer.n.01 ;
-  :att "MASTER" ;
-  :hco "17140" .
-
-t00595:p1 a :Male ;
+t00595:p1
+  a :Male ;
   :dob "1951-06-06"^^xsd:date ;
   :dod "2001-08-08"^^xsd:date ;
   :nam "MANUEL E. LOPES" ;
-  :occ t00595:o1 .
-
-t00595:s1 a :Treble_clef.n.01 .
-
-t00595:s2 a :Treble_clef.n.01 .
-
-t00595:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00595.jpg" ;
-  dc:date "2019-11-30T14:16:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3262 ;
-    geo:long 6.5117
-  ] ;
-  :nd "+53.3262+006.5117"^^ll: .
+  :occ [
+    a :Drummer.n.01 ;
+    :att "MASTER" ;
+    :hco "17140"
+  ] .
 

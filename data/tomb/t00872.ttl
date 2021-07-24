@@ -1,60 +1,54 @@
 @prefix t00872: <https://noordergraf.rug.nl/tomb/t00872#> .
 
-tomb:t00872 a :Tomb ;
-  :image t00872:im1 ;
-  :site site:dr7844TCveenoord ;
-  :ent t00872:p1 ,
-       t00872:p2 ;
+tomb:t00872
+  a :Tomb ;
+  :ent t00872:p1, t00872:p2 ;
+  :image [
+    dc:date "2020-02-15T15:11:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00872.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7193 ;
+      geo:long 6.8452
+    ] ;
+    :nd "+52.7193+006.8452"^^ll:
+  ] ;
   :ref "PSALM 90:6"@nld ;
-  :sym t00872:s1 ,
-       t00872:s2 ,
-       t00872:s3 .
+  :site site:dr7844TCveenoord ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Oak.n.01
+  ], [
+    a :Frond.n.01
+  ] .
 
-t00872:a1 a :Weeping.a.02 .
-
-t00872:c1 a :Village.n.02 ;
-  :place place:Drouwenermond2756549 ;
-  :name "DROUWENERMOND" .
-
-t00872:c2 a :Village.n.02 ;
-  :place place:NieuwAmsterdam2750375 ;
-  :name "NIEUW-AMSTERDAM" .
-
-t00872:p1 a :Male ;
+t00872:p1
+  a :Male ;
   :dob "1875-08-27"^^xsd:date ;
   :dod "1917-03-17"^^xsd:date ;
   :nam "JAN DIK" ;
-  :pob t00872:c1 ;
-  :pod t00872:c2 ;
-  :rol t00872:r1 .
-
-t00872:p2 a :Female ;
-  :nam "METJE GOEREE" .
-
-t00872:r1 a :Spouse.n.01 ;
-  :tgt t00872:p2 .
-
-t00872:s1 a :Willow.n.01 ;
-  :att t00872:a1 .
-
-t00872:s2 a :Oak.n.01 .
-
-t00872:s3 a :Frond.n.01 .
-
-t00872:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00872.jpg" ;
-  dc:date "2020-02-15T15:11:57"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7193 ;
-    geo:long 6.8452
+  :pob [
+    a :Village.n.02 ;
+    :name "DROUWENERMOND" ;
+    :place place:Drouwenermond2756549
   ] ;
-  :nd "+52.7193+006.8452"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "NIEUW-AMSTERDAM" ;
+    :place place:NieuwAmsterdam2750375
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00872:p2
+  ] .
+
+t00872:p2
+  a :Female ;
+  :nam "METJE GOEREE" .
 

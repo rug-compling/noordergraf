@@ -1,71 +1,63 @@
 @prefix t00077: <https://noordergraf.rug.nl/tomb/t00077#> .
 
-tomb:t00077 a :Tomb ;
-  :image t00077:im1 ;
-  :site site:gr9721AAgroningen ;
-  :ent t00077:p1 ,
-       t00077:p2 ,
-       t00077:p3 ,
-       t00077:p4 ,
-       t00077:p5 .
+tomb:t00077
+  a :Tomb ;
+  :ent t00077:p1, t00077:p2, t00077:p3, t00077:p4, t00077:p5 ;
+  :image [
+    dc:date "2019-09-25T11:39:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00077.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2038 ;
+      geo:long 6.5701
+    ] ;
+    :nd "+53.2038+006.5701"^^ll:
+  ] ;
+  :site site:gr9721AAgroningen .
 
-t00077:p1 a :Female ;
+t00077:p1
+  a :Female ;
   :dob "1898-10-30"^^xsd:date ;
   :dod "1963-01-01"^^xsd:date ;
-  :nam "MAGERMANS" ,
-       "RIE VAN VEEN" ;
-  :rol t00077:r2 ,
-       t00077:r3 .
+  :nam "MAGERMANS", "RIE VAN VEEN" ;
+  :rol [
+    a :Mother.n.01 ;
+    :tgt t00077:p3
+  ], [
+    a :Wife.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00077:p2 a :Male ;
+t00077:p2
+  a :Male ;
   :dob "1922-04-13"^^xsd:date ;
   :dod "1986-04-29"^^xsd:date ;
   :nam "LEO SMIT" ;
-  :rol t00077:r1 ,
-       t00077:r4 ,
-       t00077:r5 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00077:p3
+  ], [
+    a :Dad.n.01 ;
+    :att "ZORGZAME" ;
+    :tgt t00077:p4
+  ], [
+    a :Dad.n.01 ;
+    :att "ZORGZAME" ;
+    :tgt t00077:p5
+  ] .
 
-t00077:p3 a :Female ;
+t00077:p3
+  a :Female ;
   :nam "JETTIE VAN VEEN" .
 
-t00077:p4 a :Male ;
+t00077:p4
+  a :Male ;
   :nam "BARTH" .
 
-t00077:p5 a :Female ;
+t00077:p5
+  a :Female ;
   :nam "RIEKJE" .
-
-t00077:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00077:p3 .
-
-t00077:r2 a :Mother.n.01 ;
-  :tgt t00077:p3 .
-
-t00077:r3 a :Wife.n.01 ;
-  :att "LIEVE" .
-
-t00077:r4 a :Dad.n.01 ;
-  :att "ZORGZAME" ;
-  :tgt t00077:p4 .
-
-t00077:r5 a :Dad.n.01 ;
-  :att "ZORGZAME" ;
-  :tgt t00077:p5 .
-
-t00077:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00077.jpg" ;
-  dc:date "2019-09-25T11:39:08"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2038 ;
-    geo:long 6.5701
-  ] ;
-  :nd "+53.2038+006.5701"^^ll: .
 

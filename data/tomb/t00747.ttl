@@ -1,54 +1,50 @@
 @prefix t00747: <https://noordergraf.rug.nl/tomb/t00747#> .
 
-tomb:t00747 a :Tomb ;
-  :image t00747:im1 ;
-  :site site:gr9679KHscheemda ;
-  :ent t00747:p1 ,
-       t00747:p2 ;
+tomb:t00747
+  a :Tomb ;
+  :ent t00747:p1, t00747:p2 ;
+  :image [
+    dc:date "2019-12-29T10:17:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00747.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1807 ;
+      geo:long 6.9685
+    ] ;
+    :nd "+53.1807+006.9685"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00747:s1 .
+  :site site:gr9679KHscheemda ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00747:a1 a :Weeping.a.02 .
-
-t00747:c1 a :Village.n.02 ;
-  :place place:Nieuwolda2750154 ;
-  :name "NIEUWOLDA" .
-
-t00747:c2 a :Village.n.02 ;
-  :place place:Scheemda2747661 ;
-  :name "SCHEEMDA" .
-
-t00747:p1 a :Male ;
+t00747:p1
+  a :Male ;
   :dob "1848-12-24"^^xsd:date ;
   :dod "1929-02-20"^^xsd:date ;
   :nam "HARM ANTEMA" ;
-  :pob t00747:c1 ;
-  :pod t00747:c2 ;
-  :rol t00747:r1 .
-
-t00747:p2 a :Female ;
-  :nam "G. VAN DER WAL" .
-
-t00747:r1 a :Widower.n.01 ;
-  :tgt t00747:p2 .
-
-t00747:s1 a :Willow.n.01 ;
-  :att t00747:a1 .
-
-t00747:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00747.jpg" ;
-  dc:date "2019-12-29T10:17:48"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1807 ;
-    geo:long 6.9685
+  :pob [
+    a :Village.n.02 ;
+    :name "NIEUWOLDA" ;
+    :place place:Nieuwolda2750154
   ] ;
-  :nd "+53.1807+006.9685"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "SCHEEMDA" ;
+    :place place:Scheemda2747661
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00747:p2
+  ] .
+
+t00747:p2
+  a :Female ;
+  :nam "G. VAN DER WAL" .
 

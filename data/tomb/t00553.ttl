@@ -1,60 +1,57 @@
 @prefix t00553: <https://noordergraf.rug.nl/tomb/t00553#> .
 
-tomb:t00553 a :Tomb ;
-  :image t00553:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00553:p1 ,
-       t00553:p2 ;
+tomb:t00553
+  a :Tomb ;
+  :ent t00553:p1, t00553:p2 ;
+  :image [
+    dc:date "2019-11-24T14:01:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00553.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1043 ;
+      geo:long 6.8751
+    ] ;
+    :nd "+53.1043+006.8751"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00553:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Book.n.02
+  ] .
 
-t00553:c1 a :Village.n.02 ;
-  :place place:Kollum2752524 ;
-  :name "KOLLUM" .
-
-t00553:c2 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00553:o1 a :Teacher.n.01 ;
-  :hco "13320" ;
-  :loc t00553:c2 ;
-  :org t00553:o2 .
-
-t00553:o2 a :School.n.01 ;
-  :nam "HOGEREBURGERSCHOOL" .
-
-t00553:p1 a :Male ;
+t00553:p1
+  a :Male ;
   :dob "1854-05-20"^^xsd:date ;
   :dod "1905-03-21"^^xsd:date ;
   :nam "KLAAS VLIEG" ;
-  :occ t00553:o1 ;
-  :pob t00553:c1 ;
+  :occ [
+    a :Teacher.n.01 ;
+    :hco "13320" ;
+    :loc t00553:c2 ;
+    :org [
+      a :School.n.01 ;
+      :nam "HOGEREBURGERSCHOOL"
+    ]
+  ] ;
+  :pob [
+    a :Village.n.02 ;
+    :name "KOLLUM" ;
+    :place place:Kollum2752524
+  ] ;
   :pod t00553:c2 ;
-  :rol t00553:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00553:p2
+  ] .
 
-t00553:p2 a :Female ;
+t00553:p2
+  a :Female ;
   :nam "MARIA KRUIZINGA" .
 
-t00553:r1 a :Spouse.n.01 ;
-  :tgt t00553:p2 .
-
-t00553:s1 a :Book.n.02 .
-
-t00553:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00553.jpg" ;
-  dc:date "2019-11-24T14:01:03"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1043 ;
-    geo:long 6.8751
-  ] ;
-  :nd "+53.1043+006.8751"^^ll: .
+t00553:c2
+  a :City.n.01 ;
+  :name "VEENDAM" ;
+  :place place:Veendam2745783 .
 

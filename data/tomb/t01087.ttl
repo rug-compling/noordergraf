@@ -1,33 +1,29 @@
 @prefix t01087: <https://noordergraf.rug.nl/tomb/t01087#> .
 
-tomb:t01087 a :Tomb ;
-  :image t01087:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t01087:p1 ,
-       t01087:p2 ;
-  :lan "NLD" .
+tomb:t01087
+  a :Tomb ;
+  :ent t01087:p1, t01087:p2 ;
+  :image [
+    dc:date "2020-09-06T15:35:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01087.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1900 ;
+      geo:long 6.5935
+    ] ;
+    :nd "+53.1900+006.5935"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9722SNgroningen .
 
-t01087:p1 a :Female ;
+t01087:p1
+  a :Female ;
   :nam "AAFJE ELISABETH WARNER" .
 
-t01087:p2 a :Male ;
+t01087:p2
+  a :Male ;
   :nam "JAN DE VRIES" ;
   :sfx "JZN" .
-
-t01087:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01087.jpg" ;
-  dc:date "2020-09-06T15:35:25"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1900 ;
-    geo:long 6.5935
-  ] ;
-  :nd "+53.1900+006.5935"^^ll: .
 

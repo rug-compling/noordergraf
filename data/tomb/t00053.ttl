@@ -1,50 +1,48 @@
 @prefix t00053: <https://noordergraf.rug.nl/tomb/t00053#> .
 
-tomb:t00053 a :Tomb ;
-  :image t00053:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00053:p1 ,
-       t00053:p2 ;
-  :ref t00053:v1 .
+tomb:t00053
+  a :Tomb ;
+  :ent t00053:p1, t00053:p2 ;
+  :image [
+    dc:date "2019-09-27T17:42:04"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00053.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1635 ;
+      geo:long 6.6132
+    ] ;
+    :nd "+53.1635+006.6132"^^ll:
+  ] ;
+  :ref t00053:v1 ;
+  :site site:gr9752CMharen .
 
-t00053:b1 a :Epistle_to_the_Romans.n.04 ;
-  :prt t00053:c3 .
-
-t00053:c3 a :Chapter.n.01 ;
-  :ord 6 ;
-  :prt t00053:v1 .
-
-t00053:p1 a :Male ;
+t00053:p1
+  a :Male ;
   :dob "1915-04-27"^^xsd:date ;
   :dod "1998-11-21"^^xsd:date ;
   :nam "ALLE AVERES" ;
-  :rol t00053:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00053:p2
+  ] .
 
-t00053:p2 a :Female ;
+t00053:p2
+  a :Female ;
   :dob "1922-09-30"^^xsd:date ;
   :dod "2013-05-23"^^xsd:date ;
   :nam "HENDRIKA JANTIENE MULDER" .
 
-t00053:r1 a :Husband.n.01 ;
-  :tgt t00053:p2 .
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 6 ;
+    :prt t00053:v1
+  ] .
 
-t00053:v1 a :Verse.n.01 ;
+t00053:v1
+  a :Verse.n.01 ;
   :ord 23 .
-
-t00053:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00053.jpg" ;
-  dc:date "2019-09-27T17:42:04"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1635 ;
-    geo:long 6.6132
-  ] ;
-  :nd "+53.1635+006.6132"^^ll: .
 

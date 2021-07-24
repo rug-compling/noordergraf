@@ -1,39 +1,36 @@
 @prefix t00037: <https://noordergraf.rug.nl/tomb/t00037#> .
 
-tomb:t00037 a :Tomb ;
-  :image t00037:im1 ;
-  :site site:gr9752CMharen ;
+tomb:t00037
+  a :Tomb ;
   :ent t00037:p1 ;
+  :image [
+    dc:date "2019-09-27T17:53:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00037.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1629 ;
+      geo:long 6.6122
+    ] ;
+    :nd "+53.1629+006.6122"^^ll:
+  ] ;
   :quo "ZALIG IS DER KINDREN LOT, JONG GESTORVEN VROEG BIJ GOD" ;
-  :sym t00037:s1 .
+  :site site:gr9752CMharen ;
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00037:c1 a :Village.n.02 ;
-  :place place:Helpman2754444 ;
-  :name "HELPMAN" .
-
-t00037:p1 a :Male ;
+t00037:p1
+  a :Male ;
   :dob "1878-03-19"^^xsd:date ;
   :dod "1890-12-30"^^xsd:date ;
   :nam "TJEERT PIETER BOUWMAN" ;
   :pob t00037:c1 ;
   :pod t00037:c1 .
 
-t00037:s1 a :Rose.n.01 .
-
-t00037:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00037.jpg" ;
-  dc:date "2019-09-27T17:53:29"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1629 ;
-    geo:long 6.6122
-  ] ;
-  :nd "+53.1629+006.6122"^^ll: .
+t00037:c1
+  a :Village.n.02 ;
+  :name "HELPMAN" ;
+  :place place:Helpman2754444 .
 

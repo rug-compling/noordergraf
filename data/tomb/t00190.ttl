@@ -1,77 +1,68 @@
 @prefix t00190: <https://noordergraf.rug.nl/tomb/t00190#> .
 
-tomb:t00190 a :Tomb ;
-  :image t00190:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00190:p1 ,
-       t00190:p2 ,
-       t00190:p3 ,
-       t00190:p4 ;
+tomb:t00190
+  a :Tomb ;
+  :ent t00190:p1, t00190:p2, t00190:p3, t00190:p4 ;
+  :image [
+    dc:date "2019-10-05T10:04:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00190.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1905 ;
+      geo:long 6.5925
+    ] ;
+    :nd "+53.1905+006.5925"^^ll:
+  ] ;
   :quo "RUST ZACHT" ;
-  :sym t00190:s1 .
+  :site site:gr9722SNgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00190:p1 a :Female ;
+t00190:p1
+  a :Female ;
   :dob "1876-03-05"^^xsd:date ;
   :dod "1937-07-19"^^xsd:date ;
   :nam "HILKE DIETERMAN" ;
-  :rol t00190:r1 ,
-       t00190:r2 ,
-       t00190:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00190:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00190:p2
+  ] .
 
-t00190:p2 a :Male ;
+t00190:p2
+  a :Male ;
   :nam "K.J. RUNHARDT" .
 
-t00190:p3 a :Male ;
+t00190:p3
+  a :Male ;
   :dob "1909-12-03"^^xsd:date ;
   :dod "1955-04-22"^^xsd:date ;
   :nam "J.K. RUNHARDT" ;
-  :rol t00190:r4 ,
-       t00190:r5 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00190:p4
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00190:p4
+  ] .
 
-t00190:p4 a :Female ;
+t00190:p4
+  a :Female ;
   :dob "1912-08-01"^^xsd:date ;
   :dod "1999-01-21"^^xsd:date ;
-  :nam "M.D. SMIT" ,
-       "MARGARETHA D. RUNHARDT-SMIT" .
-
-t00190:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00190:p2 .
-
-t00190:r2 a :Mother.n.01 .
-
-t00190:r3 a :Spouse.n.01 ;
-  :tgt t00190:p2 .
-
-t00190:r4 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00190:p4 .
-
-t00190:r5 a :Spouse.n.01 ;
-  :tgt t00190:p4 .
-
-t00190:s1 a :Composite.n.01 ;
-  :prt t00190:s2 ,
-       t00190:s3 .
-
-t00190:s2 a :Frond.n.01 .
-
-t00190:s3 a :Ribbon.n.01 .
-
-t00190:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00190.jpg" ;
-  dc:date "2019-10-05T10:04:14"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1905 ;
-    geo:long 6.5925
-  ] ;
-  :nd "+53.1905+006.5925"^^ll: .
+  :nam "M.D. SMIT", "MARGARETHA D. RUNHARDT-SMIT" .
 

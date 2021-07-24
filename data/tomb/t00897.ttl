@@ -1,54 +1,50 @@
 @prefix t00897: <https://noordergraf.rug.nl/tomb/t00897#> .
 
-tomb:t00897 a :Tomb ;
-  :image t00897:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00897:p1 ,
-       t00897:p2 ;
+tomb:t00897
+  a :Tomb ;
+  :ent t00897:p1, t00897:p2 ;
+  :image [
+    dc:date "2020-03-07T14:32:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00897.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1722 ;
+      geo:long 6.3615
+    ] ;
+    :nd "+53.1722+006.3615"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00897:s1 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00897:a1 a :Weeping.a.02 .
-
-t00897:c1 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00897:c2 a :Village.n.02 ;
-  :place place:Niebert2750396 ;
-  :name "NIEBERT" .
-
-t00897:p1 a :Male ;
+t00897:p1
+  a :Male ;
   :dob "1819-09-17"^^xsd:date ;
   :dod "1885-08-14"^^xsd:date ;
   :nam "MENZE PEBES BANDRINGA" ;
-  :pob t00897:c1 ;
-  :pod t00897:c2 ;
-  :rol t00897:r1 .
-
-t00897:p2 a :Female ;
-  :nam "AKKE DE GROOT" .
-
-t00897:r1 a :Spouse.n.01 ;
-  :tgt t00897:p2 .
-
-t00897:s1 a :Willow.n.01 ;
-  :att t00897:a1 .
-
-t00897:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00897.jpg" ;
-  dc:date "2020-03-07T14:32:58"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1722 ;
-    geo:long 6.3615
+  :pob [
+    a :Village.n.02 ;
+    :name "TOLBERT" ;
+    :place place:Tolbert2746234
   ] ;
-  :nd "+53.1722+006.3615"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "NIEBERT" ;
+    :place place:Niebert2750396
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00897:p2
+  ] .
+
+t00897:p2
+  a :Female ;
+  :nam "AKKE DE GROOT" .
 

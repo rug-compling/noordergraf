@@ -1,64 +1,60 @@
 @prefix t00490: <https://noordergraf.rug.nl/tomb/t00490#> .
 
-tomb:t00490 a :Tomb ;
-  :image t00490:im1 ;
+tomb:t00490
+  a :Tomb ;
+  :ent t00490:p1, t00490:p2 ;
+  :image [
+    dc:date "2019-11-16T14:00:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00490.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2100 ;
+      geo:long 5.7909
+    ] ;
+    :nd "+53.2100+005.7909"^^ll:
+  ] ;
   :site site:fr8917AVleeuwarden ;
-  :ent t00490:p1 ,
-       t00490:p2 ;
-  :sym t00490:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ]
+  ] .
 
-t00490:c1 a :Village.n.02 ;
-  :place place:Noordwolde2749807 ;
-  :name "NOORDWOLDE" .
-
-t00490:c2 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00490:p1 a :Male ;
+t00490:p1
+  a :Male ;
   :dob "1843-10-15"^^xsd:date ;
   :dod "1913-06-05"^^xsd:date ;
   :nam "DOUWE HARDER" ;
-  :pob t00490:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "NOORDWOLDE" ;
+    :place place:Noordwolde2749807
+  ] ;
   :pod t00490:c2 ;
-  :rol t00490:r1 .
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00490:p3
+  ] .
 
-t00490:p2 a :Female ;
+t00490:p2
+  a :Female ;
   :dob "1844-01-04"^^xsd:date ;
   :dod "1926-05-08"^^xsd:date ;
   :nam "AUKJE JASPER" ;
   :pob t00490:c2 ;
   :pod t00490:c2 ;
-  :rol t00490:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00490:p3
+  ] .
 
-t00490:r1 a :Parent.n.01 ;
-  :tgt t00490:p3 .
-
-t00490:r2 a :Parent.n.01 ;
-  :tgt t00490:p3 .
-
-t00490:s1 a :Composite.n.01 ;
-  :prt t00490:s2 ,
-       t00490:s3 .
-
-t00490:s2 a :Frond.n.01 .
-
-t00490:s3 a :Frond.n.01 .
-
-t00490:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00490.jpg" ;
-  dc:date "2019-11-16T14:00:57"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2100 ;
-    geo:long 5.7909
-  ] ;
-  :nd "+53.2100+005.7909"^^ll: .
+t00490:c2
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 

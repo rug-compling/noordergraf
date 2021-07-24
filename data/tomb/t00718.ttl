@@ -1,36 +1,32 @@
 @prefix t00718: <https://noordergraf.rug.nl/tomb/t00718#> .
 
-tomb:t00718 a :Tomb ;
-  :image t00718:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00718:p1 ,
-       t00718:p2 ;
-  :lan "NLD" .
+tomb:t00718
+  a :Tomb ;
+  :ent t00718:p1, t00718:p2 ;
+  :image [
+    dc:date "2019-12-21T13:26:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00718.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7810 ;
+      geo:long 6.9002
+    ] ;
+    :nd "+52.7810+006.9002"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:dr7811HEemmen .
 
-t00718:p1 a :Male ;
+t00718:p1
+  a :Male ;
   :dob "1881-04-11"^^xsd:date ;
   :dod "1930-12-08"^^xsd:date ;
   :nam "JOHANNES THEDINGA" .
 
-t00718:p2 a :Female ;
+t00718:p2
+  a :Female ;
   :dob "1887-12-28"^^xsd:date ;
   :dod "1954-05-11"^^xsd:date ;
   :nam "CATHARINA C. BAKKER" .
-
-t00718:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00718.jpg" ;
-  dc:date "2019-12-21T13:26:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7810 ;
-    geo:long 6.9002
-  ] ;
-  :nd "+52.7810+006.9002"^^ll: .
 

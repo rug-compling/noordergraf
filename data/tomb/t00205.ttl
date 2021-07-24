@@ -1,59 +1,56 @@
 @prefix t00205: <https://noordergraf.rug.nl/tomb/t00205#> .
 
-tomb:t00205 a :Tomb ;
-  :image t00205:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00205:p1 ,
-       t00205:p2 ;
+tomb:t00205
+  a :Tomb ;
+  :ent t00205:p1, t00205:p2 ;
+  :image [
+    dc:date "2019-10-05T09:50:02"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00205.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1900 ;
+      geo:long 6.5938
+    ] ;
+    :nd "+53.1900+006.5938"^^ll:
+  ] ;
   :quo "RUST ZACHT" ;
-  :sym t00205:s1 .
+  :site site:gr9722SNgroningen ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00205:c1 a :Village.n.02 ;
-  :place place:Vlagtwedde2745461 ;
-  :name "VLAGTWEDDE" .
-
-t00205:c2 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00205:c3 a :Village.n.02 ;
-  :place place:Faan2755935 ;
-  :name "FAAN" .
-
-t00205:p1 a :Female ;
+t00205:p1
+  a :Female ;
   :dob "1869-08-14"^^xsd:date ;
   :dod "1934-02-15"^^xsd:date ;
   :nam "MARGARITHA BALKEMA" ;
-  :pob t00205:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "VLAGTWEDDE" ;
+    :place place:Vlagtwedde2745461
+  ] ;
   :pod t00205:c2 ;
-  :rol t00205:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00205:p2
+  ] .
 
-t00205:p2 a :Male ;
+t00205:p2
+  a :Male ;
   :dob "1861-10-07"^^xsd:date ;
   :dod "1941-10-05"^^xsd:date ;
   :nam "AUKE VEENSTRA" ;
-  :pob t00205:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "FAAN" ;
+    :place place:Faan2755935
+  ] ;
   :pod t00205:c2 .
 
-t00205:r1 a :Spouse.n.01 ;
-  :tgt t00205:p2 .
-
-t00205:s1 a :Frond.n.01 .
-
-t00205:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00205.jpg" ;
-  dc:date "2019-10-05T09:50:02"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1900 ;
-    geo:long 6.5938
-  ] ;
-  :nd "+53.1900+006.5938"^^ll: .
+t00205:c2
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 

@@ -1,88 +1,86 @@
 @prefix t00000: <https://noordergraf.rug.nl/tomb/t00000#> .
 
-tomb:t00000 a :Tomb ;
-  :image t00000:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00000:g1 ,
-       t00000:p1 ,
-       t00000:p2 .
+tomb:t00000
+  a :Tomb ;
+  :ent t00000:p1, t00000:p2, t00000:g1 ;
+  :image [
+    dc:date "2019-09-25T17:01:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00000.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1900 ;
+      geo:long 6.5938
+    ] ;
+    :nd "+53.1900+006.5938"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen .
 
-t00000:c1 a :Village.n.02 ;
-  :place place:Sebaldeburen2747409 ;
-  :name "SEBALDEBUREN" .
-
-t00000:c2 a :Village.n.02 ;
-  :place place:Oostwold2749325 ;
-  :name "OOSTWOLD" .
-
-t00000:c3 a :Municipality.n.01 ;
-  :place place:GemeenteOldambt7535498 ;
-  :mem t00000:c2 ;
-  :name "OLDAMBT" .
-
-t00000:c4 a :Village.n.02 ;
-  :place place:Doezum2756763 ;
-  :name "DOEZUM" .
-
-t00000:c5 a :Municipality.n.01 ;
-  :place place:GemeenteGrootegast2755203 ;
-  :mem t00000:c4 ;
-  :name "GROOTEGAST" .
-
-t00000:g1 a :Group.n.01 ;
-  :rol t00000:r1 .
-
-t00000:o1 a :Constable.n.03 ;
-  :hco "58220" ;
-  :loc t00000:c1 ;
-  :org t00000:o2 ;
-  :ttl "BRIGADIER-TITULAIR" .
-
-t00000:o2 a :State.n.04 ;
-  :nam "NEDERLAND" .
-
-t00000:p1 a :Male ;
+t00000:p1
+  a :Male ;
   :dob "1883-02-23"^^xsd:date ;
   :dod "1929-01-18"^^xsd:date ;
   :nam "JAN WERKMAN" ;
-  :occ t00000:o1 ;
+  :occ [
+    a :Constable.n.03 ;
+    :hco "58220" ;
+    :loc [
+      a :Village.n.02 ;
+      :name "SEBALDEBUREN" ;
+      :place place:Sebaldeburen2747409
+    ] ;
+    :org [
+      a :State.n.04 ;
+      :nam "NEDERLAND"
+    ] ;
+    :ttl "BRIGADIER-TITULAIR"
+  ] ;
   :pob t00000:c2 ;
   :pod t00000:c4 ;
-  :rol t00000:r2 ,
-       t00000:r3 ,
-       t00000:r4 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00000:g1
+  ], [
+    a :Father.n.01 ;
+    :tgt t00000:g1
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00000:p2
+  ] .
 
-t00000:p2 a :Female ;
+t00000:p2
+  a :Female ;
   :nam "ANJE REKER" .
 
-t00000:r1 a :Commemorator.n.01 ;
-  :mem t00000:p2 ;
-  :tgt t00000:p1 .
+t00000:c2
+  a :Village.n.02 ;
+  :name "OOSTWOLD" ;
+  :place place:Oostwold2749325 .
 
-t00000:r2 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00000:g1 .
+[]
+  a :Municipality.n.01 ;
+  :mem t00000:c2 ;
+  :name "OLDAMBT" ;
+  :place place:GemeenteOldambt7535498 .
 
-t00000:r3 a :Father.n.01 ;
-  :tgt t00000:g1 .
+t00000:c4
+  a :Village.n.02 ;
+  :name "DOEZUM" ;
+  :place place:Doezum2756763 .
 
-t00000:r4 a :Spouse.n.01 ;
-  :tgt t00000:p2 .
+[]
+  a :Municipality.n.01 ;
+  :mem t00000:c4 ;
+  :name "GROOTEGAST" ;
+  :place place:GemeenteGrootegast2755203 .
 
-t00000:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00000.jpg" ;
-  dc:date "2019-09-25T17:01:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1900 ;
-    geo:long 6.5938
-  ] ;
-  :nd "+53.1900+006.5938"^^ll: .
+t00000:g1
+  a :Group.n.01 ;
+  :rol [
+    a :Commemorator.n.01 ;
+    :mem t00000:p2 ;
+    :tgt t00000:p1
+  ] .
 

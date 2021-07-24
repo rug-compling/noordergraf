@@ -1,67 +1,65 @@
 @prefix t00959: <https://noordergraf.rug.nl/tomb/t00959#> .
 
-tomb:t00959 a :Tomb ;
-  :image t00959:im1 ;
-  :site site:gr9479TNnoordlaren ;
-  :ent t00959:p1 ,
-       t00959:p2 ;
+tomb:t00959
+  a :Tomb ;
+  :ent t00959:p1, t00959:p2 ;
+  :image [
+    dc:date "2020-03-25T09:24:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00959.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1204 ;
+      geo:long 6.6591
+    ] ;
+    :nd "+53.1204+006.6591"^^ll:
+  ] ;
   :quo "RUST IN VREDE"@nld ;
-  :sym t00959:s1 .
+  :site site:gr9479TNnoordlaren ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00959:a1 a :Weeping.a.02 .
-
-t00959:c1 a :Village.n.02 ;
-  :place place:Zuidlaren2743680 ;
-  :name "ZUIDLAREN" .
-
-t00959:c2 a :Village.n.02 ;
-  :place place:Noordlaren2749857 ;
-  :name "NOORDLAREN" .
-
-t00959:c3 a :Less.r.01 ;
-  :op1 t00959:m1 ;
-  :op2 t00959:m2 .
-
-t00959:m1 a :Measure.n.02 .
-
-t00959:m2 a :Measure.n.02 ;
-  :mem t00959:u1 ;
-  :qua 74 .
-
-t00959:p1 a :Female ;
+t00959:p1
+  a :Female ;
   :age t00959:m1 ;
   :dob "1820-05-19"^^xsd:date ;
   :dod "1894-01-23"^^xsd:date ;
   :nam "JANTIEN HAMMINGA" ;
-  :pob t00959:c1 ;
-  :pod t00959:c2 ;
-  :rol t00959:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "ZUIDLAREN" ;
+    :place place:Zuidlaren2743680
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "NOORDLAREN" ;
+    :place place:Noordlaren2749857
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00959:p2
+  ] .
 
-t00959:p2 a :Male ;
+t00959:p2
+  a :Male ;
   :nam "HENDRIK KLOOTS" .
 
-t00959:r1 a :Widow.n.01 ;
-  :tgt t00959:p2 .
+[]
+  a :Less.r.01 ;
+  :op1 t00959:m1 ;
+  :op2 [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 74
+  ] .
 
-t00959:s1 a :Willow.n.01 ;
-  :att t00959:a1 .
-
-t00959:u1 a :Year.n.01 .
-
-t00959:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00959.jpg" ;
-  dc:date "2020-03-25T09:24:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1204 ;
-    geo:long 6.6591
-  ] ;
-  :nd "+53.1204+006.6591"^^ll: .
+t00959:m1
+  a :Measure.n.02 .
 

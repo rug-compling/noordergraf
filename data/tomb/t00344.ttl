@@ -1,64 +1,54 @@
 @prefix t00344: <https://noordergraf.rug.nl/tomb/t00344#> .
 
-tomb:t00344 a :Tomb ;
-  :image t00344:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00344:p1 ,
-       t00344:p2 ;
+tomb:t00344
+  a :Tomb ;
+  :ent t00344:p1, t00344:p2 ;
+  :image [
+    dc:date "2019-10-19T13:59:04"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00344.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4720
+    ] ;
+    :nd "+52.7157+006.4720"^^ll:
+  ] ;
   :ref "PSALM 27" ;
-  :sym t00344:s1 .
+  :site site:dr7907CHhoogeveen ;
+  :sym [
+    a :Chrismon.n.01
+  ] .
 
-t00344:p1 a :Male ;
+t00344:p1
+  a :Male ;
   :dob "1909-01-24"^^xsd:date ;
   :dod "1999-09-10"^^xsd:date ;
   :nam "HENDRIK VRIJHOF" ;
-  :rol t00344:r1 ,
-       t00344:r2 ,
-       t00344:r3 ,
-       t00344:r4 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00344:p2
+  ], [
+    a :Father.n.01
+  ], [
+    a :Grandfather.n.01
+  ], [
+    a :Great_grandfather.n.01
+  ] .
 
-t00344:p2 a :Female ;
+t00344:p2
+  a :Female ;
   :dob "1917-07-01"^^xsd:date ;
   :dod "2001-09-28"^^xsd:date ;
   :nam "LAMBERTA VRIJHOF-KUILDER" ;
-  :rol t00344:r5 ,
-       t00344:r6 ,
-       t00344:r7 .
-
-t00344:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00344:p2 .
-
-t00344:r2 a :Father.n.01 .
-
-t00344:r3 a :Grandfather.n.01 .
-
-t00344:r4 a :Great_grandfather.n.01 .
-
-t00344:r5 a :Mother.n.01 ;
-  :att "LIEVE" ,
-       "ZORGZAME" .
-
-t00344:r6 a :Grandmother.n.01 .
-
-t00344:r7 a :Great_grandmother.n.01 .
-
-t00344:s1 a :Chrismon.n.01 .
-
-t00344:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00344.jpg" ;
-  dc:date "2019-10-19T13:59:04"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7157 ;
-    geo:long 6.4720
-  ] ;
-  :nd "+52.7157+006.4720"^^ll: .
+  :rol [
+    a :Mother.n.01 ;
+    :att "LIEVE", "ZORGZAME"
+  ], [
+    a :Grandmother.n.01
+  ], [
+    a :Great_grandmother.n.01
+  ] .
 

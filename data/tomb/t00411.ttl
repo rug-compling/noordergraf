@@ -1,66 +1,62 @@
 @prefix t00411: <https://noordergraf.rug.nl/tomb/t00411#> .
 
-tomb:t00411 a :Tomb ;
-  :image t00411:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00411:p1 ,
-       t00411:p2 ;
+tomb:t00411
+  a :Tomb ;
+  :ent t00411:p1, t00411:p2 ;
+  :image [
+    dc:date "2019-10-25T17:15:01"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00411.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0793 ;
+      geo:long 6.5715
+    ] ;
+    :nd "+53.0793+006.5715"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym t00411:s1 .
+  :site site:dr9481CGvries ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00411:c1 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00411:c2 a :Village.n.02 ;
-  :place place:Yde2744130 ;
-  :name "YDE" .
-
-t00411:c3 a :Municipality.n.01 ;
-  :place place:GemeenteOoststellingwerf2749339 ;
-  :name "OOSTSTELLINGWERF" .
-
-t00411:p1 a :Female ;
+t00411:p1
+  a :Female ;
   :dob "1899-06-01"^^xsd:date ;
   :dod "1959-09-10"^^xsd:date ;
   :nam "JANTJE NIEBOER" ;
-  :pob t00411:c1 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] ;
   :pod t00411:c2 ;
-  :rol t00411:r1 ,
-       t00411:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00411:p2
+  ], [
+    a :Parent.n.01
+  ] .
 
-t00411:p2 a :Male ;
+t00411:p2
+  a :Male ;
   :dob "1897-10-16"^^xsd:date ;
   :dod "1970-01-29"^^xsd:date ;
   :nam "MEINT DIJKSTRA" ;
-  :pob t00411:c3 ;
-  :pod t00411:c2 ;
-  :rol t00411:r3 .
-
-t00411:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00411:p2 .
-
-t00411:r2 a :Parent.n.01 .
-
-t00411:r3 a :Parent.n.01 .
-
-t00411:s1 a :Frond.n.01 .
-
-t00411:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00411.jpg" ;
-  dc:date "2019-10-25T17:15:01"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0793 ;
-    geo:long 6.5715
+  :pob [
+    a :Municipality.n.01 ;
+    :name "OOSTSTELLINGWERF" ;
+    :place place:GemeenteOoststellingwerf2749339
   ] ;
-  :nd "+53.0793+006.5715"^^ll: .
+  :pod t00411:c2 ;
+  :rol [
+    a :Parent.n.01
+  ] .
+
+t00411:c2
+  a :Village.n.02 ;
+  :name "YDE" ;
+  :place place:Yde2744130 .
 

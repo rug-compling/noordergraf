@@ -1,48 +1,43 @@
 @prefix t00173: <https://noordergraf.rug.nl/tomb/t00173#> .
 
-tomb:t00173 a :Tomb ;
-  :image t00173:im1 ;
+tomb:t00173
+  a :Tomb ;
+  :ent t00173:p1, t00173:p2 ;
+  :image [
+    dc:date "2019-10-05T10:42:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00173.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1904 ;
+      geo:long 6.5933
+    ] ;
+    :nd "+53.1904+006.5933"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00173:p1 ,
-       t00173:p2 ;
-  :sym t00173:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00173:p1 a :Male ;
+t00173:p1
+  a :Male ;
   :dob "1868-05-18"^^xsd:date ;
   :dod "1927-10-11"^^xsd:date ;
   :nam "GODFRIED LODEWIJK VAN ZETTEN" .
 
-t00173:p2 a :Female ;
+t00173:p2
+  a :Female ;
   :dob "1868-03-13"^^xsd:date ;
   :dod "1947-07-13"^^xsd:date ;
   :nam "JENNEKE TIEL" ;
-  :rol t00173:r1 .
-
-t00173:r1 a :Spouse.n.01 ;
-  :tgt t00173:p1 .
-
-t00173:s1 a :Composite.n.01 ;
-  :prt t00173:s2 ,
-       t00173:s3 .
-
-t00173:s2 a :Frond.n.01 .
-
-t00173:s3 a :Ribbon.n.01 .
-
-t00173:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00173.jpg" ;
-  dc:date "2019-10-05T10:42:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1904 ;
-    geo:long 6.5933
-  ] ;
-  :nd "+53.1904+006.5933"^^ll: .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00173:p1
+  ] .
 

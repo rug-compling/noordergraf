@@ -1,55 +1,51 @@
 @prefix t00560: <https://noordergraf.rug.nl/tomb/t00560#> .
 
-tomb:t00560 a :Tomb ;
-  :image t00560:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00560:p1 ,
-       t00560:p2 ;
+tomb:t00560
+  a :Tomb ;
+  :ent t00560:p1, t00560:p2 ;
+  :image [
+    dc:date "2019-11-24T13:48:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00560.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1044 ;
+      geo:long 6.8745
+    ] ;
+    :nd "+53.1044+006.8745"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00560:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Book.n.02
+  ] .
 
-t00560:c1 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00560:o1 a :Preacher.n.01 ;
-  :hco "14120" ;
-  :loc t00560:c1 ;
-  :org t00560:o2 .
-
-t00560:o2 a :Community.n.02 ;
-  :nam "VRIJE EVANGELISCHE GEMEENTE" .
-
-t00560:p1 a :Male ;
+t00560:p1
+  a :Male ;
   :dob "1842-01-21"^^xsd:date ;
   :dod "1914-03-29"^^xsd:date ;
   :nam "J. VAN PETEGEM" ;
-  :occ t00560:o1 ;
-  :pfx "DS" ;
-  :rol t00560:r1 .
-
-t00560:p2 a :Female ;
-  :nam "S.M. VAN DER PEIJL" .
-
-t00560:r1 a :Spouse.n.01 ;
-  :tgt t00560:p2 .
-
-t00560:s1 a :Book.n.02 .
-
-t00560:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00560.jpg" ;
-  dc:date "2019-11-24T13:48:12"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1044 ;
-    geo:long 6.8745
+  :occ [
+    a :Preacher.n.01 ;
+    :hco "14120" ;
+    :loc [
+      a :City.n.01 ;
+      :name "VEENDAM" ;
+      :place place:Veendam2745783
+    ] ;
+    :org [
+      a :Community.n.02 ;
+      :nam "VRIJE EVANGELISCHE GEMEENTE"
+    ]
   ] ;
-  :nd "+53.1044+006.8745"^^ll: .
+  :pfx "DS" ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00560:p2
+  ] .
+
+t00560:p2
+  a :Female ;
+  :nam "S.M. VAN DER PEIJL" .
 

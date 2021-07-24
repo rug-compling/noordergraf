@@ -1,50 +1,45 @@
 @prefix t00753: <https://noordergraf.rug.nl/tomb/t00753#> .
 
-tomb:t00753 a :Tomb ;
-  :image t00753:im1 ;
-  :site site:gr9936BTfarmsum ;
-  :ent t00753:g1 ,
-       t00753:p1 ,
-       t00753:p2 ,
-       t00753:p3 ;
+tomb:t00753
+  a :Tomb ;
+  :ent t00753:p1, t00753:p2, t00753:p3, t00753:g1 ;
+  :image [
+    dc:date "2019-12-28T12:46:59"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00753.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3110 ;
+      geo:long 6.9975
+    ] ;
+    :nd "+53.3110+006.9975"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00753:s1 .
+  :site site:gr9936BTfarmsum ;
+  :sym [
+    a :Butterfly.n.01
+  ] .
 
-t00753:g1 a :Group.n.01 ;
-  :mem t00753:p2 ,
-       t00753:p3 .
-
-t00753:p1 a :Male ;
+t00753:p1
+  a :Male ;
   :dob "1845-05-30"^^xsd:date ;
   :dod "1871-01-22"^^xsd:date ;
   :nam "LAMBERTUS" ;
-  :rol t00753:r1 .
+  :rol [
+    a :Son.n.01 ;
+    :tgt t00753:g1
+  ] .
 
-t00753:p2 a :Person ;
+t00753:p2
+  a :Person ;
   :nam "J. FABER" .
 
-t00753:p3 a :Person ;
+t00753:p3
+  a :Person ;
   :nam "J.R. VOS" .
 
-t00753:r1 a :Son.n.01 ;
-  :tgt t00753:g1 .
-
-t00753:s1 a :Butterfly.n.01 .
-
-t00753:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00753.jpg" ;
-  dc:date "2019-12-28T12:46:59"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3110 ;
-    geo:long 6.9975
-  ] ;
-  :nd "+53.3110+006.9975"^^ll: .
+t00753:g1
+  a :Group.n.01 ;
+  :mem t00753:p2, t00753:p3 .
 

@@ -1,58 +1,55 @@
 @prefix t00563: <https://noordergraf.rug.nl/tomb/t00563#> .
 
-tomb:t00563 a :Tomb ;
-  :image t00563:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00563:p1 ,
-       t00563:p2 ;
+tomb:t00563
+  a :Tomb ;
+  :ent t00563:p1, t00563:p2 ;
+  :image [
+    dc:date "2019-11-24T13:42:22"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00563.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1046 ;
+      geo:long 6.8744
+    ] ;
+    :nd "+53.1046+006.8744"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00563:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00563:a1 a :Weeping.a.02 .
-
-t00563:c1 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00563:c2 a :Village.n.02 ;
-  :place place:Annerveenschekanaal2759724 ;
-  :name "ANNERVEENSCHEKANAAL" .
-
-t00563:p1 a :Male ;
+t00563:p1
+  a :Male ;
   :dob "1848-10-21"^^xsd:date ;
   :dod "1919-02-22"^^xsd:date ;
   :nam "JACOB VAN DER BORGH" ;
   :pob t00563:c1 ;
   :pod t00563:c1 .
 
-t00563:p2 a :Female ;
+t00563:p2
+  a :Female ;
   :dob "1844-05-05"^^xsd:date ;
   :dod "1919-02-20"^^xsd:date ;
   :nam "MARGRITA J. KLIPHUIS" ;
-  :pob t00563:c2 ;
-  :pod t00563:c1 ;
-  :rol t00563:r1 .
-
-t00563:r1 a :Spouse.n.01 ;
-  :tgt t00563:p1 .
-
-t00563:s1 a :Willow.n.01 ;
-  :att t00563:a1 .
-
-t00563:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00563.jpg" ;
-  dc:date "2019-11-24T13:42:22"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1046 ;
-    geo:long 6.8744
+  :pob [
+    a :Village.n.02 ;
+    :name "ANNERVEENSCHEKANAAL" ;
+    :place place:Annerveenschekanaal2759724
   ] ;
-  :nd "+53.1046+006.8744"^^ll: .
+  :pod t00563:c1 ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00563:p1
+  ] .
+
+t00563:c1
+  a :City.n.01 ;
+  :name "VEENDAM" ;
+  :place place:Veendam2745783 .
 

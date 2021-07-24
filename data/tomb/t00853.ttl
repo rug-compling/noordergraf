@@ -1,49 +1,44 @@
 @prefix t00853: <https://noordergraf.rug.nl/tomb/t00853#> .
 
-tomb:t00853 a :Tomb ;
-  :image t00853:im1 ;
+tomb:t00853
+  a :Tomb ;
+  :ent t00853:p1, t00853:p2 ;
+  :image [
+    dc:date "2020-02-15T15:38:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00853.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7757 ;
+      geo:long 6.8028
+    ] ;
+    :nd "+52.7757+006.8028"^^ll:
+  ] ;
+  :quo "AL IS OP AARDE HET LEVEN \\ SCHOON \\ EENS ROEPT DE VADER \\ ONS ALLEN TOT ZIJN TROON"@nld, "RUST ZACHT"@nld ;
   :site site:dr7841CDsleen ;
-  :ent t00853:p1 ,
-       t00853:p2 ;
-  :quo "AL IS OP AARDE HET LEVEN \\ SCHOON \\ EENS ROEPT DE VADER \\ ONS ALLEN TOT ZIJN TROON"@nld ,
-       "RUST ZACHT"@nld ;
-  :sym t00853:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00853:a1 a :Weeping.a.02 .
-
-t00853:c1 a :Village.n.02 ;
-  :place place:Erm2756040 ;
-  :name "ERM" .
-
-t00853:p1 a :Female ;
+t00853:p1
+  a :Female ;
   :dod "1919-02-13"^^xsd:date ;
   :nam "ROELFIEN OLDENBEUVING" ;
-  :pod t00853:c1 ;
-  :rol t00853:r1 .
-
-t00853:p2 a :Male ;
-  :nam "THIJS DIJKS" .
-
-t00853:r1 a :Spouse.n.01 ;
-  :tgt t00853:p2 .
-
-t00853:s1 a :Willow.n.01 ;
-  :att t00853:a1 .
-
-t00853:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00853.jpg" ;
-  dc:date "2020-02-15T15:38:58"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7757 ;
-    geo:long 6.8028
+  :pod [
+    a :Village.n.02 ;
+    :name "ERM" ;
+    :place place:Erm2756040
   ] ;
-  :nd "+52.7757+006.8028"^^ll: .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00853:p2
+  ] .
+
+t00853:p2
+  a :Male ;
+  :nam "THIJS DIJKS" .
 

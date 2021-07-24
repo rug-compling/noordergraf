@@ -1,52 +1,49 @@
 @prefix t00367: <https://noordergraf.rug.nl/tomb/t00367#> .
 
-tomb:t00367 a :Tomb ;
-  :image t00367:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00367:p1 ,
-       t00367:p2 ;
+tomb:t00367
+  a :Tomb ;
+  :ent t00367:p1, t00367:p2 ;
+  :image [
+    dc:date "2019-10-25T17:25:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00367.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0797 ;
+      geo:long 6.5714
+    ] ;
+    :nd "+53.0797+006.5714"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym t00367:s1 .
+  :site site:dr9481CGvries ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00367:c1 a :Village.n.02 ;
-  :place place:Tynaarlo2746038 ;
-  :name "TYNAARLO" .
-
-t00367:p1 a :Female ;
+t00367:p1
+  a :Female ;
   :dob "1893-02-22"^^xsd:date ;
   :dod "1956-06-13"^^xsd:date ;
   :nam "ALBERDINA VENEKAMP" ;
   :pob t00367:c1 ;
   :pod t00367:c1 ;
-  :rol t00367:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00367:p2
+  ] .
 
-t00367:p2 a :Male ;
+t00367:p2
+  a :Male ;
   :dob "1896-02-25"^^xsd:date ;
   :dod "1960-03-15"^^xsd:date ;
   :nam "ALBERT KLAASSENS" ;
   :pob t00367:c1 ;
   :pod t00367:c1 .
 
-t00367:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00367:p2 .
-
-t00367:s1 a :Frond.n.01 .
-
-t00367:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00367.jpg" ;
-  dc:date "2019-10-25T17:25:36"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0797 ;
-    geo:long 6.5714
-  ] ;
-  :nd "+53.0797+006.5714"^^ll: .
+t00367:c1
+  a :Village.n.02 ;
+  :name "TYNAARLO" ;
+  :place place:Tynaarlo2746038 .
 

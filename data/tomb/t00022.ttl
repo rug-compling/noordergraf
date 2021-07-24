@@ -1,73 +1,67 @@
 @prefix t00022: <https://noordergraf.rug.nl/tomb/t00022#> .
 
-tomb:t00022 a :Tomb ;
-  :image t00022:im1 ;
+tomb:t00022
+  a :Tomb ;
+  :ent t00022:p1, t00022:p2, t00022:g1 ;
+  :image [
+    dc:date "2019-09-25T16:27:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00022.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1937 ;
+      geo:long 6.5933
+    ] ;
+    :nd "+53.1937+006.5933"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00022:g1 ,
-       t00022:p1 ,
-       t00022:p2 ;
-  :sym t00022:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00022:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00022:c2 a :City.n.01 ;
-  :place place:Stadskanaal2746860 ;
-  :name "STADSKANAAL" .
-
-t00022:g1 a :Group.n.01 ;
-  :mem t00022:p2 .
-
-t00022:p1 a :Female ;
+t00022:p1
+  a :Female ;
   :dob "1860-04-22"^^xsd:date ;
   :dod "1931-09-16"^^xsd:date ;
   :nam "CHRISTINA MEIJER" ;
-  :pob t00022:c2 ;
+  :pob [
+    a :City.n.01 ;
+    :name "STADSKANAAL" ;
+    :place place:Stadskanaal2746860
+  ] ;
   :pod t00022:c1 ;
-  :rol t00022:r1 ,
-       t00022:r2 ,
-       t00022:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00022:p2
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00022:g1
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00022:p2
+  ] .
 
-t00022:p2 a :Male ;
+t00022:p2
+  a :Male ;
   :dob "1860-02-01"^^xsd:date ;
   :dod "1960-02-17"^^xsd:date ;
   :nam "H. SCHAAP" ;
   :pob t00022:c1 ;
   :pod t00022:c1 .
 
-t00022:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00022:p2 .
+t00022:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
-t00022:r2 a :Mother.n.01 ;
-  :tgt t00022:g1 .
-
-t00022:r3 a :Spouse.n.01 ;
-  :tgt t00022:p2 .
-
-t00022:s1 a :Composite.n.01 ;
-  :prt t00022:s2 ,
-       t00022:s3 .
-
-t00022:s2 a :Frond.n.01 .
-
-t00022:s3 a :Ribbon.n.01 .
-
-t00022:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00022.jpg" ;
-  dc:date "2019-09-25T16:27:14"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1937 ;
-    geo:long 6.5933
-  ] ;
-  :nd "+53.1937+006.5933"^^ll: .
+t00022:g1
+  a :Group.n.01 ;
+  :mem t00022:p2 .
 

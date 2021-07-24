@@ -1,52 +1,47 @@
 @prefix t00881: <https://noordergraf.rug.nl/tomb/t00881#> .
 
-tomb:t00881 a :Tomb ;
-  :image t00881:im1 ;
-  :site site:dr7844TCveenoord ;
-  :ent t00881:p1 ,
-       t00881:p2 ;
+tomb:t00881
+  a :Tomb ;
+  :ent t00881:p1, t00881:p2 ;
+  :image [
+    dc:date "2020-02-15T15:10:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00881.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7193 ;
+      geo:long 6.8453
+    ] ;
+    :nd "+52.7193+006.8453"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00881:s1 ,
-       t00881:s2 .
+  :site site:dr7844TCveenoord ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ] .
 
-t00881:p1 a :Male ;
+t00881:p1
+  a :Male ;
   :dob "1874-12-31"^^xsd:date ;
   :dod "1961-06-03"^^xsd:date ;
   :nam "JACOB SIEBEN" ;
-  :rol t00881:r1 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00881:p3
+  ] .
 
-t00881:p2 a :Female ;
+t00881:p2
+  a :Female ;
   :dob "1880-07-25"^^xsd:date ;
   :dod "1961-08-26"^^xsd:date ;
   :nam "ROELOFJE KORTWIJK" ;
-  :rol t00881:r2 .
-
-t00881:r1 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00881:p3 .
-
-t00881:r2 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00881:p3 .
-
-t00881:s1 a :Frond.n.01 .
-
-t00881:s2 a :Frond.n.01 .
-
-t00881:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00881.jpg" ;
-  dc:date "2020-02-15T15:10:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7193 ;
-    geo:long 6.8453
-  ] ;
-  :nd "+52.7193+006.8453"^^ll: .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00881:p3
+  ] .
 

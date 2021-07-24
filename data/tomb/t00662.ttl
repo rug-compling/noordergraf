@@ -1,41 +1,37 @@
 @prefix t00662: <https://noordergraf.rug.nl/tomb/t00662#> .
 
-tomb:t00662 a :Tomb ;
-  :image t00662:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00662:p1 ,
-       t00662:p2 ;
+tomb:t00662
+  a :Tomb ;
+  :ent t00662:p1, t00662:p2 ;
+  :image [
+    dc:date "2019-12-14T13:56:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00662.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0688 ;
+      geo:long 5.5240
+    ] ;
+    :nd "+53.0688+005.5240"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00662:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00662:p1 a :Male ;
+t00662:p1
+  a :Male ;
   :dob "1869-11-12"^^xsd:date ;
   :dod "1943-07-27"^^xsd:date ;
   :nam "AREND J. FABER" ;
-  :rol t00662:r1 .
+  :rol [
+    a :Brother.n.01 ;
+    :tgt t00662:p2
+  ] .
 
-t00662:p2 a :Person ;
+t00662:p2
+  a :Person ;
   :nam "S. FABER" .
-
-t00662:r1 a :Brother.n.01 ;
-  :tgt t00662:p2 .
-
-t00662:s1 a :Frond.n.01 .
-
-t00662:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00662.jpg" ;
-  dc:date "2019-12-14T13:56:28"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0688 ;
-    geo:long 5.5240
-  ] ;
-  :nd "+53.0688+005.5240"^^ll: .
 

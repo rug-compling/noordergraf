@@ -1,45 +1,40 @@
 @prefix t00926: <https://noordergraf.rug.nl/tomb/t00926#> .
 
-tomb:t00926 a :Tomb ;
-  :image t00926:im1 ;
-  :site site:gr9351RLtolbert ;
+tomb:t00926
+  a :Tomb ;
   :ent t00926:p1 ;
+  :image [
+    dc:date "2020-03-07T14:12:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00926.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1717 ;
+      geo:long 6.3656
+    ] ;
+    :nd "+53.1717+006.3656"^^ll:
+  ] ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
-  :sym t00926:s1 ,
-       t00926:s2 ,
-       t00926:s3 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Oak.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00926:c1 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00926:p1 a :Male ;
+t00926:p1
+  a :Male ;
   :dob "1873-06-10"^^xsd:date ;
   :dod "1896-05-30"^^xsd:date ;
   :nam "GEERT MEEK" ;
   :pob t00926:c1 ;
   :pod t00926:c1 .
 
-t00926:s1 a :Oak.n.01 .
-
-t00926:s2 a :Frond.n.01 .
-
-t00926:s3 a :Ribbon.n.01 .
-
-t00926:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00926.jpg" ;
-  dc:date "2020-03-07T14:12:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1717 ;
-    geo:long 6.3656
-  ] ;
-  :nd "+53.1717+006.3656"^^ll: .
+t00926:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 

@@ -1,38 +1,34 @@
 @prefix t00707: <https://noordergraf.rug.nl/tomb/t00707#> .
 
-tomb:t00707 a :Tomb ;
-  :image t00707:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00707:p1 ,
-       t00707:p2 ;
-  :quo "NEEM DE WERELD GEEF MIJ JEZUS"@nld .
+tomb:t00707
+  a :Tomb ;
+  :ent t00707:p1, t00707:p2 ;
+  :image [
+    dc:date "2019-12-21T13:48:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00707.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7817 ;
+      geo:long 6.9009
+    ] ;
+    :nd "+52.7817+006.9009"^^ll:
+  ] ;
+  :quo "NEEM DE WERELD GEEF MIJ JEZUS"@nld ;
+  :site site:dr7811HEemmen .
 
-t00707:p1 a :Male ;
+t00707:p1
+  a :Male ;
   :dob "1875-11-30"^^xsd:date ;
   :dod "1920-03-02"^^xsd:date ;
   :nam "SIJTSE ROMKES" ;
-  :rol t00707:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00707:p2
+  ] .
 
-t00707:p2 a :Female ;
+t00707:p2
+  a :Female ;
   :nam "A. VISSER" .
-
-t00707:r1 a :Spouse.n.01 ;
-  :tgt t00707:p2 .
-
-t00707:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00707.jpg" ;
-  dc:date "2019-12-21T13:48:13"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7817 ;
-    geo:long 6.9009
-  ] ;
-  :nd "+52.7817+006.9009"^^ll: .
 

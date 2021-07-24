@@ -1,33 +1,29 @@
 @prefix t00345: <https://noordergraf.rug.nl/tomb/t00345#> .
 
-tomb:t00345 a :Tomb ;
-  :image t00345:im1 ;
-  :site site:dr9481CGvries ;
+tomb:t00345
+  a :Tomb ;
   :ent t00345:p1 ;
+  :image [
+    dc:date "2019-10-25T17:44:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00345.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0801 ;
+      geo:long 6.5726
+    ] ;
+    :nd "+53.0801+006.5726"^^ll:
+  ] ;
   :quo "INGRID HEEFT VOLUIT GELEEFD, ALS JONATHAN DE ZEEMEEUW" ;
-  :sym t00345:s1 .
+  :site site:dr9481CGvries ;
+  :sym [
+    a :Crow.n.02
+  ] .
 
-t00345:p1 a :Female ;
+t00345:p1
+  a :Female ;
   :dob "1958-08-28"^^xsd:date ;
   :dod "2007-10-16"^^xsd:date ;
   :nam "IRIS JOLANDA KRAAI" .
-
-t00345:s1 a :Crow.n.02 .
-
-t00345:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00345.jpg" ;
-  dc:date "2019-10-25T17:44:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0801 ;
-    geo:long 6.5726
-  ] ;
-  :nd "+53.0801+006.5726"^^ll: .
 

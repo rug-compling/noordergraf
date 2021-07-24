@@ -1,57 +1,53 @@
 @prefix t00878: <https://noordergraf.rug.nl/tomb/t00878#> .
 
-tomb:t00878 a :Tomb ;
-  :image t00878:im1 ;
-  :site site:dr7844TCveenoord ;
-  :ent t00878:g1 ,
-       t00878:p1 ,
-       t00878:p2 ;
+tomb:t00878
+  a :Tomb ;
+  :ent t00878:p1, t00878:p2, t00878:g1 ;
+  :image [
+    dc:date "2020-02-15T15:05:17"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00878.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7195 ;
+      geo:long 6.8467
+    ] ;
+    :nd "+52.7195+006.8467"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00878:s1 .
+  :site site:dr7844TCveenoord ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00878:g1 a :Group.n.01 ;
-  :mem t00878:p3 .
-
-t00878:p1 a :Female ;
+t00878:p1
+  a :Female ;
   :dob "1909-06-14"^^xsd:date ;
   :dod "1961-04-17"^^xsd:date ;
   :nam "JANTINA FRERIKS" ;
-  :rol t00878:r1 ,
-       t00878:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00878:p2
+  ], [
+    a :Mother.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00878:g1
+  ] .
 
-t00878:p2 a :Male ;
+t00878:p2
+  a :Male ;
   :nam "J. BOS" .
 
-t00878:p3 a :Person ;
-  :rol t00878:r3 .
+t00878:p3
+  a :Person ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00878:p1
+  ] .
 
-t00878:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00878:p2 .
-
-t00878:r2 a :Mother.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00878:g1 .
-
-t00878:r3 a :Child.n.02 ;
-  :tgt t00878:p1 .
-
-t00878:s1 a :Frond.n.01 .
-
-t00878:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00878.jpg" ;
-  dc:date "2020-02-15T15:05:17"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7195 ;
-    geo:long 6.8467
-  ] ;
-  :nd "+52.7195+006.8467"^^ll: .
+t00878:g1
+  a :Group.n.01 ;
+  :mem t00878:p3 .
 

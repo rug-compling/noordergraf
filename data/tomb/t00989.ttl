@@ -1,58 +1,54 @@
 @prefix t00989: <https://noordergraf.rug.nl/tomb/t00989#> .
 
-tomb:t00989 a :Tomb ;
-  :image t00989:im1 ;
-  :site site:gr9734ATgroningen ;
-  :ent t00989:p1 ,
-       t00989:p2 ,
-       t00989:p3 ;
-  :lan "NLD" .
+tomb:t00989
+  a :Tomb ;
+  :ent t00989:p1, t00989:p2, t00989:p3 ;
+  :image [
+    dc:date "2020-04-05T12:14:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00989.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2442 ;
+      geo:long 6.6283
+    ] ;
+    :nd "+53.2442+006.6283"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9734ATgroningen .
 
-t00989:c1 a :Town.n.01 ;
-  :place place:Zuidwolde2743636 ;
-  :name "ZUIDWOLDE" .
-
-t00989:c2 a :Town.n.01 ;
-  :place place:Noorddijk2749981 ;
-  :name "NOORDDIJK" .
-
-t00989:p1 a :Female ;
+t00989:p1
+  a :Female ;
   :dob "1833-05-15"^^xsd:date ;
   :dod "1897-11-28"^^xsd:date ;
   :nam "GEEZIEN J. NIEBOER" ;
-  :pob t00989:c1 ;
-  :pod t00989:c2 ;
-  :rol t00989:r1 ,
-       t00989:r2 .
+  :pob [
+    a :Town.n.01 ;
+    :name "ZUIDWOLDE" ;
+    :place place:Zuidwolde2743636
+  ] ;
+  :pod [
+    a :Town.n.01 ;
+    :name "NOORDDIJK" ;
+    :place place:Noorddijk2749981
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :bef t00989:r2 ;
+    :tgt t00989:p2
+  ], t00989:r2 .
 
-t00989:p2 a :Male ;
+t00989:p2
+  a :Male ;
   :nam "LUITJE H. BRUININGA" .
 
-t00989:p3 a :Male ;
+t00989:p3
+  a :Male ;
   :nam "BETTE J. OOSTERHOF" .
 
-t00989:r1 a :Widow.n.01 ;
-  :bef t00989:r2 ;
-  :tgt t00989:p2 .
-
-t00989:r2 a :Widow.n.01 ;
+t00989:r2
+  a :Widow.n.01 ;
   :beg "1889"^^xsd:gYear ;
   :tgt t00989:p3 .
-
-t00989:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00989.jpg" ;
-  dc:date "2020-04-05T12:14:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2442 ;
-    geo:long 6.6283
-  ] ;
-  :nd "+53.2442+006.6283"^^ll: .
 

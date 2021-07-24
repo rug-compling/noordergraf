@@ -1,41 +1,36 @@
 @prefix t00801: <https://noordergraf.rug.nl/tomb/t00801#> .
 
-tomb:t00801 a :Tomb ;
-  :image t00801:im1 ;
-  :site site:gr9722SNgroningen ;
+tomb:t00801
+  a :Tomb ;
   :ent t00801:p1 ;
-  :lan "NLD" .
+  :image [
+    dc:date "2020-01-19T14:15:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00801.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1930 ;
+      geo:long 6.5936
+    ] ;
+    :nd "+53.1930+006.5936"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9722SNgroningen .
 
-t00801:c1 a :City.n.01 ;
-  :place place:Maastricht2751283 ;
-  :name "MAASTRICHT" .
-
-t00801:p1 a :Male ;
+t00801:p1
+  a :Male ;
   :dob "1949-03-30"^^xsd:date ;
   :dod "2007-07-27"^^xsd:date ;
   :nam "JOSEPH MARIA MARTINUS HERMANS" ;
-  :pob t00801:c1 ;
-  :rol t00801:r1 ,
-       t00801:r2 .
-
-t00801:r1 a :Noorderling.n.01 .
-
-t00801:r2 a :European.n.01 .
-
-t00801:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00801.jpg" ;
-  dc:date "2020-01-19T14:15:28"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1930 ;
-    geo:long 6.5936
+  :pob [
+    a :City.n.01 ;
+    :name "MAASTRICHT" ;
+    :place place:Maastricht2751283
   ] ;
-  :nd "+53.1930+006.5936"^^ll: .
+  :rol [
+    a :Noorderling.n.01
+  ], [
+    a :European.n.01
+  ] .
 

@@ -1,64 +1,60 @@
 @prefix t00474: <https://noordergraf.rug.nl/tomb/t00474#> .
 
-tomb:t00474 a :Tomb ;
-  :image t00474:im1 ;
-  :site site:fr8915CPleeuwarden ;
-  :ent t00474:p1 ,
-       t00474:p2 ;
-  :quo "VOORZIEN VAN DE H.H. SACRAMENTEN DER STERVENDEN" .
+tomb:t00474
+  a :Tomb ;
+  :ent t00474:p1, t00474:p2 ;
+  :image [
+    dc:date "2019-11-09T14:43:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00474.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2072 ;
+      geo:long 5.7689
+    ] ;
+    :nd "+53.2072+005.7689"^^ll:
+  ] ;
+  :quo "VOORZIEN VAN DE H.H. SACRAMENTEN DER STERVENDEN" ;
+  :site site:fr8915CPleeuwarden .
 
-t00474:c1 a :City.n.01 ;
-  :place place:Franeker2755845 ;
-  :name "FRANEKER" .
-
-t00474:c2 a :City.n.01 ;
-  :place place:Dokkum2756759 ;
-  :name "DOKKUM" .
-
-t00474:c3 a :Village.n.02 ;
-  :place place:Dronryp2756561 ;
-  :name "DRONRIJP" .
-
-t00474:c4 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00474:p1 a :Male ;
+t00474:p1
+  a :Male ;
   :dob "1882-07-03"^^xsd:date ;
   :dod "1933-12-17"^^xsd:date ;
   :nam "JOHANNES TERPSTRA" ;
-  :pob t00474:c1 ;
-  :pod t00474:c2 ;
-  :rol t00474:r1 .
+  :pob [
+    a :City.n.01 ;
+    :name "FRANEKER" ;
+    :place place:Franeker2755845
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "DOKKUM" ;
+    :place place:Dokkum2756759
+  ] ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00474:p3
+  ] .
 
-t00474:p2 a :Person ;
+t00474:p2
+  a :Person ;
   :dob "1887-07-28"^^xsd:date ;
   :dod "1963-07-05"^^xsd:date ;
   :nam "C. POSTMA" ;
-  :pob t00474:c3 ;
-  :pod t00474:c4 ;
-  :rol t00474:r2 .
-
-t00474:r1 a :Parent.n.01 ;
-  :tgt t00474:p3 .
-
-t00474:r2 a :Parent.n.01 ;
-  :tgt t00474:p3 .
-
-t00474:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00474.jpg" ;
-  dc:date "2019-11-09T14:43:38"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2072 ;
-    geo:long 5.7689
+  :pob [
+    a :Village.n.02 ;
+    :name "DRONRIJP" ;
+    :place place:Dronryp2756561
   ] ;
-  :nd "+53.2072+005.7689"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "LEEUWARDEN" ;
+    :place place:Leeuwarden2751792
+  ] ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00474:p3
+  ] .
 

@@ -1,60 +1,56 @@
 @prefix t00051: <https://noordergraf.rug.nl/tomb/t00051#> .
 
-tomb:t00051 a :Tomb ;
-  :image t00051:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00051:p1 ,
-       t00051:p2 .
+tomb:t00051
+  a :Tomb ;
+  :ent t00051:p1, t00051:p2 ;
+  :image [
+    dc:date "2019-09-27T17:42:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00051.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1631 ;
+      geo:long 6.6131
+    ] ;
+    :nd "+53.1631+006.6131"^^ll:
+  ] ;
+  :site site:gr9752CMharen .
 
-t00051:c1 a :Town.n.01 ;
-  :place place:Hoogezand2753706 ;
-  :name "HOOGEZAND" .
-
-t00051:c2 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00051:p1 a :Female ;
+t00051:p1
+  a :Female ;
   :dob "1889-10-04"^^xsd:date ;
   :dod "1949-10-24"^^xsd:date ;
   :nam "JOHANNA NIEBORG" ;
-  :pob t00051:c1 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "HOOGEZAND" ;
+    :place place:Hoogezand2753706
+  ] ;
   :pod t00051:c2 ;
-  :rol t00051:r1 ,
-       t00051:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00051:p2
+  ], [
+    a :Parent.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00051:p2 a :Male ;
+t00051:p2
+  a :Male ;
   :dob "1891-04-20"^^xsd:date ;
   :dod "1954-02-17"^^xsd:date ;
   :nam "GEERT MULDER" ;
   :pob t00051:c2 ;
   :pod t00051:c2 ;
-  :rol t00051:r3 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00051:r1 a :Wife.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00051:p2 .
-
-t00051:r2 a :Parent.n.01 ;
-  :att "LIEVE" .
-
-t00051:r3 a :Parent.n.01 ;
-  :att "LIEVE" .
-
-t00051:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00051.jpg" ;
-  dc:date "2019-09-27T17:42:46"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1631 ;
-    geo:long 6.6131
-  ] ;
-  :nd "+53.1631+006.6131"^^ll: .
+t00051:c2
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 

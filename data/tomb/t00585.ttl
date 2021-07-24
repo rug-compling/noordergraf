@@ -1,86 +1,82 @@
 @prefix t00585: <https://noordergraf.rug.nl/tomb/t00585#> .
 
-tomb:t00585 a :Tomb ;
-  :image t00585:im1 ;
+tomb:t00585
+  a :Tomb ;
+  :ent t00585:p1, t00585:p2, t00585:p3 ;
+  :image [
+    dc:date "2019-11-30T14:48:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00585.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3353 ;
+      geo:long 6.5129
+    ] ;
+    :nd "+53.3353+006.5129"^^ll:
+  ] ;
   :site site:gr9951STwinsum ;
-  :ent t00585:p1 ,
-       t00585:p2 ,
-       t00585:p3 ;
-  :sym t00585:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00585:a1 a :Weeping.a.02 .
-
-t00585:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00585:c2 a :Municipality.n.01 ;
-  :place place:Winsum2744337 ;
-  :name "WINSUM" .
-
-t00585:c3 a :Village.n.02 ;
-  :place place:Obergum2749742 ;
-  :name "OBERGUM" .
-
-t00585:m1 a :Measure.n.02 ;
-  :mem t00585:u1 ;
-  :qua 63 .
-
-t00585:m2 a :Measure.n.02 ;
-  :mem t00585:u2 ;
-  :qua 51 .
-
-t00585:o1 a :Constable.n.03 ;
-  :hco "58220" ;
-  :loc t00585:c2 .
-
-t00585:p1 a :Male ;
-  :age t00585:m1 ;
+t00585:p1
+  a :Male ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 63
+  ] ;
   :dod "1918-12-23"^^xsd:date ;
   :nam "HENDRIK OOSTINGA" ;
-  :occ t00585:o1 ;
-  :pob t00585:c1 ;
-  :rol t00585:r1 .
+  :occ [
+    a :Constable.n.03 ;
+    :hco "58220" ;
+    :loc [
+      a :Municipality.n.01 ;
+      :name "WINSUM" ;
+      :place place:Winsum2744337
+    ]
+  ] ;
+  :pob [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00585:p3
+  ] .
 
-t00585:p2 a :Female ;
-  :age t00585:m2 ;
+t00585:p2
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 51
+  ] ;
   :dod "1912-01-08"^^xsd:date ;
   :nam "JAKOBKE CAZEMIER" ;
-  :pod t00585:c3 ;
-  :rol t00585:r2 .
-
-t00585:p3 a :Child.n.02 ;
-  :att "LIEFHEBBENDE" .
-
-t00585:r1 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00585:p3 .
-
-t00585:r2 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00585:p3 .
-
-t00585:s1 a :Willow.n.01 ;
-  :att t00585:a1 .
-
-t00585:u1 a :Year.n.01 .
-
-t00585:u2 a :Year.n.01 .
-
-t00585:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00585.jpg" ;
-  dc:date "2019-11-30T14:48:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3353 ;
-    geo:long 6.5129
+  :pod [
+    a :Village.n.02 ;
+    :name "OBERGUM" ;
+    :place place:Obergum2749742
   ] ;
-  :nd "+53.3353+006.5129"^^ll: .
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00585:p3
+  ] .
+
+t00585:p3
+  a :Child.n.02 ;
+  :att "LIEFHEBBENDE" .
 

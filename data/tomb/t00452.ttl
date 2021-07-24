@@ -1,33 +1,29 @@
 @prefix t00452: <https://noordergraf.rug.nl/tomb/t00452#> .
 
-tomb:t00452 a :Tomb ;
-  :image t00452:im1 ;
-  :site site:fr8915CPleeuwarden ;
+tomb:t00452
+  a :Tomb ;
   :ent t00452:p1 ;
+  :image [
+    dc:date "2019-11-09T15:02:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00452.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2065 ;
+      geo:long 5.7695
+    ] ;
+    :nd "+53.2065+005.7695"^^ll:
+  ] ;
   :quo "PAX"@lat ;
-  :sym t00452:s1 .
+  :site site:fr8915CPleeuwarden ;
+  :sym [
+    a :Cross.n.03
+  ] .
 
-t00452:p1 a :Female ;
+t00452:p1
+  a :Female ;
   :dob "1879-04-26"^^xsd:date ;
   :dod "1956-03-02"^^xsd:date ;
   :nam "JOHANNA H. WIEBENGA" .
-
-t00452:s1 a :Cross.n.03 .
-
-t00452:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00452.jpg" ;
-  dc:date "2019-11-09T15:02:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2065 ;
-    geo:long 5.7695
-  ] ;
-  :nd "+53.2065+005.7695"^^ll: .
 

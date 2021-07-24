@@ -1,60 +1,58 @@
 @prefix t00479: <https://noordergraf.rug.nl/tomb/t00479#> .
 
-tomb:t00479 a :Tomb ;
-  :image t00479:im1 ;
+tomb:t00479
+  a :Tomb ;
+  :ent t00479:p1, t00479:p2 ;
+  :image [
+    dc:date "2019-11-09T14:34:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00479.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2064 ;
+      geo:long 5.7691
+    ] ;
+    :nd "+53.2064+005.7691"^^ll:
+  ] ;
   :site site:fr8915CPleeuwarden ;
-  :ent t00479:p1 ,
-       t00479:p2 ;
-  :sym t00479:s1 .
+  :sym [
+    a :Cross.n.03
+  ] .
 
-t00479:c1 a :Village.n.02 ;
-  :place place:Cune8953542 ;
-  :name "CUNE" .
-
-t00479:c2 a :Province.n.01 ;
-  :place place:Toscane3165361 ;
-  :mem t00479:c1 ;
-  :name "TOSCANA" .
-
-t00479:c3 a :Country.n.02 ;
-  :place place:Italie3175395 ;
-  :mem t00479:c2 ;
-  :name "ITALIË" .
-
-t00479:c4 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00479:p1 a :Male ;
+t00479:p1
+  a :Male ;
   :dob "1844-06-15"^^xsd:date ;
   :dod "1919-04-21"^^xsd:date ;
   :nam "JACOPO GIUSTO FAZZI" ;
   :pob t00479:c1 ;
-  :pod t00479:c4 ;
-  :rol t00479:r1 .
+  :pod [
+    a :City.n.01 ;
+    :name "LEEUWARDEN" ;
+    :place place:Leeuwarden2751792
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00479:p2
+  ] .
 
-t00479:p2 a :Female ;
+t00479:p2
+  a :Female ;
   :nam "GEESJE JANSSEN" .
 
-t00479:r1 a :Spouse.n.01 ;
-  :tgt t00479:p2 .
+t00479:c1
+  a :Village.n.02 ;
+  :name "CUNE" ;
+  :place place:Cune8953542 .
 
-t00479:s1 a :Cross.n.03 .
-
-t00479:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00479.jpg" ;
-  dc:date "2019-11-09T14:34:26"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2064 ;
-    geo:long 5.7691
+[]
+  a :Country.n.02 ;
+  :mem [
+    a :Province.n.01 ;
+    :mem t00479:c1 ;
+    :name "TOSCANA" ;
+    :place place:Toscane3165361
   ] ;
-  :nd "+53.2064+005.7691"^^ll: .
+  :name "ITALIË" ;
+  :place place:Italie3175395 .
 

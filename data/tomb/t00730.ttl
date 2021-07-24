@@ -1,45 +1,41 @@
 @prefix t00730: <https://noordergraf.rug.nl/tomb/t00730#> .
 
-tomb:t00730 a :Tomb ;
-  :image t00730:im1 ;
-  :site site:dr7811HEemmen ;
+tomb:t00730
+  a :Tomb ;
   :ent t00730:p1 ;
+  :image [
+    dc:date "2019-12-21T13:08:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00730.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7818 ;
+      geo:long 6.8969
+    ] ;
+    :nd "+52.7818+006.8969"^^ll:
+  ] ;
   :quo "JEZUS BRACHT HAAR ZIELE THUIS"@nld ;
-  :sym t00730:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00730:a1 a :Weeping.a.02 .
-
-t00730:c1 a :Town.n.01 ;
-  :place place:Emmen2756136 ;
-  :name "EMMEN" .
-
-t00730:p1 a :Female ;
+t00730:p1
+  a :Female ;
   :dob "1900-05-10"^^xsd:date ;
   :dod "1929-11-02"^^xsd:date ;
   :nam "JANTINA" ;
-  :pod t00730:c1 ;
-  :rol t00730:r1 .
-
-t00730:r1 a :Sister.n.01 ;
-  :att "LIEVE" .
-
-t00730:s1 a :Willow.n.01 ;
-  :att t00730:a1 .
-
-t00730:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00730.jpg" ;
-  dc:date "2019-12-21T13:08:42"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7818 ;
-    geo:long 6.8969
+  :pod [
+    a :Town.n.01 ;
+    :name "EMMEN" ;
+    :place place:Emmen2756136
   ] ;
-  :nd "+52.7818+006.8969"^^ll: .
+  :rol [
+    a :Sister.n.01 ;
+    :att "LIEVE"
+  ] .
 

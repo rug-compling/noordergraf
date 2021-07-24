@@ -1,72 +1,67 @@
 @prefix t00527: <https://noordergraf.rug.nl/tomb/t00527#> .
 
-tomb:t00527 a :Tomb ;
-  :image t00527:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00527:p1 ,
-       t00527:p2 ;
+tomb:t00527
+  a :Tomb ;
+  :ent t00527:p1, t00527:p2 ;
+  :image [
+    dc:date "2019-11-23T10:29:15"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00527.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1650 ;
+      geo:long 6.7532
+    ] ;
+    :nd "+53.1650+006.7532"^^ll:
+  ] ;
   :lan "NLD" ;
   :ref t00527:v1 ;
-  :sym t00527:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Tuba.n.01
+  ] .
 
-t00527:b1 a :Revelation.n.04 ;
-  :prt t00527:c1 .
-
-t00527:c1 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00527:v1 .
-
-t00527:p1 a :Male ;
+t00527:p1
+  a :Male ;
   :dob "1905-04-16"^^xsd:date ;
   :dod "1968-03-15"^^xsd:date ;
   :nam "ROELF SJOERD VAN DIJK" ;
-  :rol t00527:r1 ,
-       t00527:r2 ,
-       t00527:r3 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00527:p2
+  ], [
+    a :Father.n.01 ;
+    :tgt t00527:p3
+  ], [
+    a :Grandfather.n.01 ;
+    :tgt t00527:p3
+  ] .
 
-t00527:p2 a :Female ;
+t00527:p2
+  a :Female ;
   :dob "1905-01-05"^^xsd:date ;
   :dod "1994-11-05"^^xsd:date ;
   :nam "ALLTJE HUIZING" ;
-  :rol t00527:r4 ,
-       t00527:r5 .
+  :rol [
+    a :Mother.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00527:p3
+  ], [
+    a :Grandmother.n.01 ;
+    :tgt t00527:p3
+  ] .
 
-t00527:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00527:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00527:v1
+  ] .
 
-t00527:r2 a :Father.n.01 ;
-  :tgt t00527:p3 .
-
-t00527:r3 a :Grandfather.n.01 ;
-  :tgt t00527:p3 .
-
-t00527:r4 a :Mother.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00527:p3 .
-
-t00527:r5 a :Grandmother.n.01 ;
-  :tgt t00527:p3 .
-
-t00527:s1 a :Tuba.n.01 .
-
-t00527:v1 a :Verse.n.01 ;
+t00527:v1
+  a :Verse.n.01 ;
   :ord 13 .
-
-t00527:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00527.jpg" ;
-  dc:date "2019-11-23T10:29:15"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1650 ;
-    geo:long 6.7532
-  ] ;
-  :nd "+53.1650+006.7532"^^ll: .
 

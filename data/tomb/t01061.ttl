@@ -1,54 +1,50 @@
 @prefix t01061: <https://noordergraf.rug.nl/tomb/t01061#> .
 
-tomb:t01061 a :Tomb ;
-  :image t01061:im1 ;
-  :site site:gr9367PAde_wilp ;
-  :ent t01061:p1 ,
-       t01061:p2 ;
+tomb:t01061
+  a :Tomb ;
+  :ent t01061:p1, t01061:p2 ;
+  :image [
+    dc:date "2020-05-01T15:31:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01061.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1232 ;
+      geo:long 6.2512
+    ] ;
+    :nd "+53.1232+006.2512"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t01061:s1 .
+  :site site:gr9367PAde_wilp ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01061:a1 a :Weeping.a.02 .
-
-t01061:c1 a :Village.n.02 ;
-  :place place:Ureterp2745936 ;
-  :name "URETERP" .
-
-t01061:c2 a :Village.n.02 ;
-  :place place:DeWilp2756932 ;
-  :name "DE WILP" .
-
-t01061:p1 a :Male ;
+t01061:p1
+  a :Male ;
   :dob "1847-08-16"^^xsd:date ;
   :dod "1927-02-12"^^xsd:date ;
   :nam "HENDRIK W. NIJHOF" ;
-  :pob t01061:c1 ;
-  :pod t01061:c2 ;
-  :rol t01061:r1 .
-
-t01061:p2 a :Female ;
-  :nam "BAUKJE W. VEENSTRA" .
-
-t01061:r1 a :Spouse.n.01 ;
-  :tgt t01061:p2 .
-
-t01061:s1 a :Willow.n.01 ;
-  :att t01061:a1 .
-
-t01061:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01061.jpg" ;
-  dc:date "2020-05-01T15:31:19"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1232 ;
-    geo:long 6.2512
+  :pob [
+    a :Village.n.02 ;
+    :name "URETERP" ;
+    :place place:Ureterp2745936
   ] ;
-  :nd "+53.1232+006.2512"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "DE WILP" ;
+    :place place:DeWilp2756932
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01061:p2
+  ] .
+
+t01061:p2
+  a :Female ;
+  :nam "BAUKJE W. VEENSTRA" .
 

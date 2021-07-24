@@ -1,58 +1,55 @@
 @prefix t00346: <https://noordergraf.rug.nl/tomb/t00346#> .
 
-tomb:t00346 a :Tomb ;
-  :image t00346:im1 ;
+tomb:t00346
+  a :Tomb ;
+  :ent t00346:p1, t00346:p2, t00346:p3 ;
+  :image [
+    dc:date "2019-10-25T17:42:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00346.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0799 ;
+      geo:long 6.5726
+    ] ;
+    :nd "+53.0799+006.5726"^^ll:
+  ] ;
   :site site:dr9481CGvries ;
-  :ent t00346:p1 ,
-       t00346:p2 ,
-       t00346:p3 ;
-  :sym t00346:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00346:a1 a :Weeping.a.02 .
-
-t00346:c1 a :Village.n.02 ;
-  :place place:Bunne2758108 ;
-  :name "BUNNE" .
-
-t00346:p1 a :Male ;
+t00346:p1
+  a :Male ;
   :dob "1856-04-20"^^xsd:date ;
   :dod "1933-01-07"^^xsd:date ;
   :nam "ABEL DAVIDS" ;
   :pob t00346:c1 ;
   :pod t00346:c1 ;
-  :rol t00346:r1 ,
-       t00346:r2 .
+  :rol t00346:r1, [
+    a :Widower.n.01 ;
+    :bef t00346:r1 ;
+    :tgt t00346:p3
+  ] .
 
-t00346:p2 a :Female ;
+t00346:p2
+  a :Female ;
   :nam "TRIJNTJE EBBINGE" .
 
-t00346:p3 a :Female ;
+t00346:p3
+  a :Female ;
   :nam "MARCHIEN WESTERHOF" .
 
-t00346:r1 a :Widower.n.01 ;
+t00346:c1
+  a :Village.n.02 ;
+  :name "BUNNE" ;
+  :place place:Bunne2758108 .
+
+t00346:r1
+  a :Widower.n.01 ;
   :tgt t00346:p2 .
-
-t00346:r2 a :Widower.n.01 ;
-  :bef t00346:r1 ;
-  :tgt t00346:p3 .
-
-t00346:s1 a :Willow.n.01 ;
-  :att t00346:a1 .
-
-t00346:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00346.jpg" ;
-  dc:date "2019-10-25T17:42:23"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0799 ;
-    geo:long 6.5726
-  ] ;
-  :nd "+53.0799+006.5726"^^ll: .
 

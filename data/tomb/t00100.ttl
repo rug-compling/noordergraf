@@ -1,57 +1,53 @@
 @prefix t00100: <https://noordergraf.rug.nl/tomb/t00100#> .
 
-tomb:t00100 a :Tomb ;
-  :image t00100:im1 ;
+tomb:t00100
+  a :Tomb ;
+  :ent t00100:p1, t00100:p2 ;
+  :image [
+    dc:date "2019-09-24T15:10:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00100.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2062 ;
+      geo:long 6.5733
+    ] ;
+    :nd "+53.2062+006.5733"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00100:p1 ,
-       t00100:p2 ;
-  :sym t00100:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00100:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00100:o1 a :Archivist.n.01 ;
-  :hco "19130" ;
-  :loc t00100:c1 ;
-  :org t00100:o2 .
-
-t00100:o2 a :State.n.04 ;
-  :nam "NEDERLAND" .
-
-t00100:p1 a :Male ;
+t00100:p1
+  a :Male ;
   :dob "1858-09-25"^^xsd:date ;
   :dod "1913-01-28"^^xsd:date ;
   :nam "JOHAN ADRIAAN FEITH" ;
-  :occ t00100:o1 ;
+  :occ [
+    a :Archivist.n.01 ;
+    :hco "19130" ;
+    :loc [
+      a :City.n.01 ;
+      :name "GRONINGEN" ;
+      :place place:Groningen2755251
+    ] ;
+    :org [
+      a :State.n.04 ;
+      :nam "NEDERLAND"
+    ]
+  ] ;
   :pfx "JHR MR" .
 
-t00100:p2 a :Female ;
+t00100:p2
+  a :Female ;
   :dob "1856-02-05"^^xsd:date ;
   :dod "1935-03-06"^^xsd:date ;
   :nam "HENRIËTTE PAULINE GOCKINGA" ;
   :pfx "JNKV" ;
-  :rol t00100:r1 .
-
-t00100:r1 a :Wife.n.01 ;
-  :tgt t00100:p1 .
-
-t00100:s1 a :Frond.n.01 .
-
-t00100:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00100.jpg" ;
-  dc:date "2019-09-24T15:10:46"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2062 ;
-    geo:long 6.5733
-  ] ;
-  :nd "+53.2062+006.5733"^^ll: .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00100:p1
+  ] .
 

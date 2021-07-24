@@ -1,29 +1,28 @@
 @prefix t00658: <https://noordergraf.rug.nl/tomb/t00658#> .
 
-tomb:t00658 a :Tomb ;
-  :ent t00658:p1 ,
-       t00658:p2 ;
+tomb:t00658
+  a :Tomb ;
+  :ent t00658:p1, t00658:p2 ;
   :lan "NLD" ;
-  :sym t00658:s1 ,
-       t00658:s2 ,
-       t00658:s3 ,
-       t00658:s4 .
+  :sym [
+    a :Anchor.n.01
+  ], [
+    a :Cross.n.03
+  ], [
+    a :Heart.n.07
+  ], [
+    a :Sculpture.n.01
+  ] .
 
-t00658:p1 a :Female ;
+t00658:p1
+  a :Female ;
   :dob "1863-04-16"^^xsd:date ;
   :dod "1917-10-14"^^xsd:date ;
   :nam "CORNELIA MARIA LAMPE-MICHEL" .
 
-t00658:p2 a :Male ;
+t00658:p2
+  a :Male ;
   :dob "1874-03-24"^^xsd:date ;
   :dod "1950-01-11"^^xsd:date ;
   :nam "EDUARD LAMPE" .
-
-t00658:s1 a :Anchor.n.01 .
-
-t00658:s2 a :Cross.n.03 .
-
-t00658:s3 a :Heart.n.07 .
-
-t00658:s4 a :Sculpture.n.01 .
 

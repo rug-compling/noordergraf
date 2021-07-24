@@ -1,62 +1,60 @@
 @prefix t00503: <https://noordergraf.rug.nl/tomb/t00503#> .
 
-tomb:t00503 a :Tomb ;
-  :image t00503:im1 ;
-  :site site:fr8917AVleeuwarden ;
-  :ent t00503:p1 ,
-       t00503:p2 ;
+tomb:t00503
+  a :Tomb ;
+  :ent t00503:p1, t00503:p2 ;
+  :image [
+    dc:date "2019-11-16T13:53:39"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00503.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2091 ;
+      geo:long 5.7906
+    ] ;
+    :nd "+53.2091+005.7906"^^ll:
+  ] ;
   :ref t00503:v1 ;
-  :sym t00503:s1 .
+  :site site:fr8917AVleeuwarden ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00503:b1 a :Revelation.n.04 ;
-  :prt t00503:c3 .
-
-t00503:c1 a :City.n.01 ;
-  :place place:Amsterdam2759794 ;
-  :name "AMSTERDAM" .
-
-t00503:c2 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00503:c3 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00503:v1 .
-
-t00503:p1 a :Female ;
+t00503:p1
+  a :Female ;
   :dob "1876-12-28"^^xsd:date ;
   :dod "1918-07-31"^^xsd:date ;
   :nam "JENTJE HOOGEVEEN" ;
-  :pob t00503:c1 ;
-  :pod t00503:c2 ;
-  :rol t00503:r1 .
+  :pob [
+    a :City.n.01 ;
+    :name "AMSTERDAM" ;
+    :place place:Amsterdam2759794
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "LEEUWARDEN" ;
+    :place place:Leeuwarden2751792
+  ] ;
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00503:p2
+  ] .
 
-t00503:p2 a :Male ;
+t00503:p2
+  a :Male ;
   :nam "A. BAKKER" .
 
-t00503:r1 a :Wife.n.01 ;
-  :tgt t00503:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00503:v1
+  ] .
 
-t00503:s1 a :Frond.n.01 .
-
-t00503:v1 a :Verse.n.01 ;
+t00503:v1
+  a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
-
-t00503:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00503.jpg" ;
-  dc:date "2019-11-16T13:53:39"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2091 ;
-    geo:long 5.7906
-  ] ;
-  :nd "+53.2091+005.7906"^^ll: .
 

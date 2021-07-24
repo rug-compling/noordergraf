@@ -1,59 +1,53 @@
 @prefix t00640: <https://noordergraf.rug.nl/tomb/t00640#> .
 
-tomb:t00640 a :Tomb ;
-  :image t00640:im1 ;
-  :site site:gr9723EJgroningen ;
+tomb:t00640
+  a :Tomb ;
   :ent t00640:p1 ;
+  :image [
+    dc:date "2019-12-08T11:22:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00640.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2088 ;
+      geo:long 6.6477
+    ] ;
+    :nd "+53.2088+006.6477"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00640:s1 ,
-       t00640:s2 ,
-       t00640:s3 .
+  :site site:gr9723EJgroningen ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.03
+  ] .
 
-t00640:c1 a :Vlllage.n.02 ;
-  :place place:Engelbert2756097 ;
-  :name "ENGELBERT" .
-
-t00640:c2 a :Village.n.02 ;
-  :place place:Westerlee2744715 ;
-  :name "WESTERLEE" .
-
-t00640:c3 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00640:o1 a :Principal.n.02 ;
-  :hco "13940" ;
-  :loc t00640:c1 .
-
-t00640:p1 a :Male ;
+t00640:p1
+  a :Male ;
   :dob "1841-07-02"^^xsd:date ;
   :dod "1929-01-31"^^xsd:date ;
   :nam "UBBO ALBERTUS VAN OOSTEN" ;
-  :occ t00640:o1 ;
-  :pfx "HEER" ;
-  :pob t00640:c2 ;
-  :pod t00640:c3 .
-
-t00640:s1 a :Frond.n.01 .
-
-t00640:s2 a :Frond.n.01 .
-
-t00640:s3 a :Ribbon.n.03 .
-
-t00640:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00640.jpg" ;
-  dc:date "2019-12-08T11:22:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2088 ;
-    geo:long 6.6477
+  :occ [
+    a :Principal.n.02 ;
+    :hco "13940" ;
+    :loc [
+      a :Vlllage.n.02 ;
+      :name "ENGELBERT" ;
+      :place place:Engelbert2756097
+    ]
   ] ;
-  :nd "+53.2088+006.6477"^^ll: .
+  :pfx "HEER" ;
+  :pob [
+    a :Village.n.02 ;
+    :name "WESTERLEE" ;
+    :place place:Westerlee2744715
+  ] ;
+  :pod [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] .
 

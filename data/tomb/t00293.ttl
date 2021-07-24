@@ -1,50 +1,44 @@
 @prefix t00293: <https://noordergraf.rug.nl/tomb/t00293#> .
 
-tomb:t00293 a :Tomb ;
-  :image t00293:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00293:p1 ,
-       t00293:p2 .
+tomb:t00293
+  a :Tomb ;
+  :ent t00293:p1, t00293:p2 ;
+  :image [
+    dc:date "2019-10-19T14:39:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00293.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7154 ;
+      geo:long 6.4735
+    ] ;
+    :nd "+52.7154+006.4735"^^ll:
+  ] ;
+  :site site:dr7907CHhoogeveen .
 
-t00293:p1 a :Male ;
+t00293:p1
+  a :Male ;
   :dob "1841-08-08"^^xsd:date ;
   :dod "1925-02-09"^^xsd:date ;
   :nam "LAMBERTUS HERMANNUS VAN DER SLEEN" ;
-  :rol t00293:r1 ,
-       t00293:r2 ,
-       t00293:r3 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00293:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00293:p2
+  ] .
 
-t00293:p2 a :Female ;
+t00293:p2
+  a :Female ;
   :dob "1842-06-25"^^xsd:date ;
   :dod "1929-03-05"^^xsd:date ;
   :nam "ROELOFJE NIJMEIJER" ;
-  :rol t00293:r4 .
-
-t00293:r1 a :Spouse.n.01 ;
-  :tgt t00293:p2 .
-
-t00293:r2 a :Mother.n.01 .
-
-t00293:r3 a :Spouse.n.01 ;
-  :tgt t00293:p2 .
-
-t00293:r4 a :Spouse.n.01 ;
-  :tgt t00293:p1 .
-
-t00293:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00293.jpg" ;
-  dc:date "2019-10-19T14:39:11"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7154 ;
-    geo:long 6.4735
-  ] ;
-  :nd "+52.7154+006.4735"^^ll: .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00293:p1
+  ] .
 

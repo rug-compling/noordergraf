@@ -1,48 +1,44 @@
 @prefix t00898: <https://noordergraf.rug.nl/tomb/t00898#> .
 
-tomb:t00898 a :Tomb ;
-  :image t00898:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00898:p1 ,
-       t00898:p2 ;
-  :lan "NLD" .
+tomb:t00898
+  a :Tomb ;
+  :ent t00898:p1, t00898:p2 ;
+  :image [
+    dc:date "2020-03-07T14:32:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00898.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1722 ;
+      geo:long 6.3617
+    ] ;
+    :nd "+53.1722+006.3617"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9351RLtolbert .
 
-t00898:c1 a :Village.n.02 ;
-  :place place:Gerkesklooster2755574 ;
-  :name "GERKESKLOOSTER" .
-
-t00898:c2 a :Village.n.02 ;
-  :place place:Sappemeer2747758 ;
-  :name "SAPPEMEER" .
-
-t00898:p1 a :Male ;
+t00898:p1
+  a :Male ;
   :dob "1864-11-08"^^xsd:date ;
   :dod "1953-01-06"^^xsd:date ;
   :nam "SIJTZE VAN DER LEEST" ;
-  :pob t00898:c1 ;
-  :pod t00898:c2 ;
-  :rol t00898:r1 .
-
-t00898:p2 a :Female ;
-  :nam "A. BENTUM" .
-
-t00898:r1 a :Widower.n.01 ;
-  :tgt t00898:p2 .
-
-t00898:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00898.jpg" ;
-  dc:date "2020-03-07T14:32:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1722 ;
-    geo:long 6.3617
+  :pob [
+    a :Village.n.02 ;
+    :name "GERKESKLOOSTER" ;
+    :place place:Gerkesklooster2755574
   ] ;
-  :nd "+53.1722+006.3617"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "SAPPEMEER" ;
+    :place place:Sappemeer2747758
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00898:p2
+  ] .
+
+t00898:p2
+  a :Female ;
+  :nam "A. BENTUM" .
 

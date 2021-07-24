@@ -1,50 +1,44 @@
 @prefix t00305: <https://noordergraf.rug.nl/tomb/t00305#> .
 
-tomb:t00305 a :Tomb ;
-  :image t00305:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00305:p1 ,
-       t00305:p2 ;
+tomb:t00305
+  a :Tomb ;
+  :ent t00305:p1, t00305:p2 ;
+  :image [
+    dc:date "2019-10-19T14:27:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00305.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7158 ;
+      geo:long 6.4748
+    ] ;
+    :nd "+52.7158+006.4748"^^ll:
+  ] ;
   :ref "PSALM 89:7" ;
-  :sym t00305:s1 .
+  :site site:dr7907CHhoogeveen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00305:p1 a :Female ;
+t00305:p1
+  a :Female ;
   :dob "1860-02-27"^^xsd:date ;
   :dod "1940-02-24"^^xsd:date ;
   :nam "MARGJE ELEVELD" ;
-  :rol t00305:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00305:p2
+  ] .
 
-t00305:p2 a :Male ;
+t00305:p2
+  a :Male ;
   :nam "J.J. DE JONGE" .
-
-t00305:r1 a :Widow.n.01 ;
-  :tgt t00305:p2 .
-
-t00305:s1 a :Composite.n.01 ;
-  :prt t00305:s2 ,
-       t00305:s3 ,
-       t00305:s4 .
-
-t00305:s2 a :Frond.n.01 .
-
-t00305:s3 a :Frond.n.01 .
-
-t00305:s4 a :Ribbon.n.01 .
-
-t00305:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00305.jpg" ;
-  dc:date "2019-10-19T14:27:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7158 ;
-    geo:long 6.4748
-  ] ;
-  :nd "+52.7158+006.4748"^^ll: .
 

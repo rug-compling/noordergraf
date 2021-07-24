@@ -1,102 +1,98 @@
 @prefix t00682: <https://noordergraf.rug.nl/tomb/t00682#> .
 
-tomb:t00682 a :Tomb ;
-  :image t00682:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00682:g1 ,
-       t00682:p1 ,
-       t00682:p2 ,
-       t00682:p3 ;
+tomb:t00682
+  a :Tomb ;
+  :ent t00682:p1, t00682:p2, t00682:p3, [
+    a :Group.n.01 ;
+    :mem t00682:p1, t00682:p2 ;
+    :rol [
+      a :Parent.n.01 ;
+      :att "GELIEFDE" ;
+      :tgt [
+        a :Group.n.01 ;
+        :mem t00682:p3
+      ]
+    ]
+  ] ;
+  :image [
+    dc:date "2019-12-14T13:25:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00682.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0686 ;
+      geo:long 5.5224
+    ] ;
+    :nd "+53.0686+005.5224"^^ll:
+  ] ;
   :quo "IN JEZUS ONTSLAPEN"@nld ;
   :ref t00682:v2 ;
-  :sym t00682:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00682:a1 a :Weeping.a.02 .
-
-t00682:b1 a :Revelation.n.04 ;
-  :prt t00682:c5 .
-
-t00682:c1 a :Village.n.02 ;
-  :place place:Abbega2760080 ;
-  :name "ABBEGA" .
-
-t00682:c2 a :City.n.01 ;
-  :place place:Bolsward2758682 ;
-  :name "BOLSWARD" .
-
-t00682:c3 a :Village.n.02 ;
-  :place place:Arum2759652 ;
-  :name "ARUM" .
-
-t00682:c4 a :City.n.01 ;
-  :place place:Assen2759633 ;
-  :name "ASSEN" .
-
-t00682:c5 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00682:v2 .
-
-t00682:c6 a :Town.n.01 ;
-  :place place:Bodegraven2758765 ;
-  :name "BODEGRAVEN" .
-
-t00682:c7 a :City.n.01 ;
-  :place place:Heerenveen2754669 ;
-  :name "HEERENVEEN" .
-
-t00682:g1 a :Group.n.01 ;
-  :mem t00682:p1 ,
-       t00682:p2 ;
-  :rol t00682:r1 .
-
-t00682:g2 a :Group.n.01 ;
-  :mem t00682:p3 .
-
-t00682:p1 a :Male ;
+t00682:p1
+  a :Male ;
   :dob "1871-03-10"^^xsd:date ;
   :dod "1936-12-26"^^xsd:date ;
   :nam "PIER PLANTINGA" ;
-  :pob t00682:c1 ;
-  :pod t00682:c2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "ABBEGA" ;
+    :place place:Abbega2760080
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "BOLSWARD" ;
+    :place place:Bolsward2758682
+  ] .
 
-t00682:p2 a :Female ;
+t00682:p2
+  a :Female ;
   :dob "1870-03-24"^^xsd:date ;
   :dod "1949-03-19"^^xsd:date ;
   :nam "TRIJNTJE KINGMA" ;
-  :pob t00682:c3 ;
-  :pod t00682:c4 .
+  :pob [
+    a :Village.n.02 ;
+    :name "ARUM" ;
+    :place place:Arum2759652
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "ASSEN" ;
+    :place place:Assen2759633
+  ] .
 
-t00682:p3 a :Male ;
+t00682:p3
+  a :Male ;
   :dob "1901-12-23"^^xsd:date ;
   :dod "1981-04-11"^^xsd:date ;
   :nam "EVERT PLANTINGA" ;
-  :pob t00682:c6 ;
-  :pod t00682:c7 .
-
-t00682:r1 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00682:g2 .
-
-t00682:s1 a :Willow.n.01 ;
-  :att t00682:a1 .
-
-t00682:v2 a :Verse.n.01 ;
-  :ord 13 .
-
-t00682:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00682.jpg" ;
-  dc:date "2019-12-14T13:25:57"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0686 ;
-    geo:long 5.5224
+  :pob [
+    a :Town.n.01 ;
+    :name "BODEGRAVEN" ;
+    :place place:Bodegraven2758765
   ] ;
-  :nd "+53.0686+005.5224"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "HEERENVEEN" ;
+    :place place:Heerenveen2754669
+  ] .
+
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00682:v2
+  ] .
+
+t00682:v2
+  a :Verse.n.01 ;
+  :ord 13 .
 

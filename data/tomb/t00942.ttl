@@ -1,53 +1,47 @@
 @prefix t00942: <https://noordergraf.rug.nl/tomb/t00942#> .
 
-tomb:t00942 a :Tomb ;
-  :image t00942:im1 ;
-  :site site:gr9696XGoudeschans ;
-  :ent t00942:p1 ,
-       t00942:p2 ;
+tomb:t00942
+  a :Tomb ;
+  :ent t00942:p1, t00942:p2 ;
+  :image [
+    dc:date "2020-03-21T13:22:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00942.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1385 ;
+      geo:long 7.1430
+    ] ;
+    :nd "+53.1385+007.1430"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00942:s1 ,
-       t00942:s2 ,
-       t00942:s3 .
+  :site site:gr9696XGoudeschans ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Oak.n.03
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00942:c1 a :Village.n.02 ;
-  :place place:Oudeschans2749010 ;
-  :name "OUDESCHANS" .
-
-t00942:p1 a :Female ;
+t00942:p1
+  a :Female ;
   :dob "1864-06-24"^^xsd:date ;
   :dod "1949-02-10"^^xsd:date ;
   :nam "GEERTRUIDA CHRISTINA DIETERMAN" ;
-  :pod t00942:c1 ;
-  :rol t00942:r1 .
-
-t00942:p2 a :Male ;
-  :nam "BEREND JAGER" .
-
-t00942:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00942:p2 .
-
-t00942:s1 a :Frond.n.01 .
-
-t00942:s2 a :Oak.n.03 .
-
-t00942:s3 a :Ribbon.n.01 .
-
-t00942:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00942.jpg" ;
-  dc:date "2020-03-21T13:22:33"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1385 ;
-    geo:long 7.1430
+  :pod [
+    a :Village.n.02 ;
+    :name "OUDESCHANS" ;
+    :place place:Oudeschans2749010
   ] ;
-  :nd "+53.1385+007.1430"^^ll: .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00942:p2
+  ] .
+
+t00942:p2
+  a :Male ;
+  :nam "BEREND JAGER" .
 

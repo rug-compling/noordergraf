@@ -1,47 +1,42 @@
 @prefix t00944: <https://noordergraf.rug.nl/tomb/t00944#> .
 
-tomb:t00944 a :Tomb ;
-  :image t00944:im1 ;
-  :site site:gr9696XGoudeschans ;
-  :ent t00944:p1 ,
-       t00944:p2 ;
+tomb:t00944
+  a :Tomb ;
+  :ent t00944:p1, t00944:p2 ;
+  :image [
+    dc:date "2020-03-21T13:20:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00944.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1390 ;
+      geo:long 7.1411
+    ] ;
+    :nd "+53.1390+007.1411"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00944:s1 ,
-       t00944:s2 .
+  :site site:gr9696XGoudeschans ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Column.n.01
+  ] .
 
-t00944:a1 a :Weeping.a.02 .
-
-t00944:p1 a :Male ;
+t00944:p1
+  a :Male ;
   :dob "1779-03-31"^^xsd:date ;
   :dod "1871-04-08"^^xsd:date ;
   :nam "HENDRIK A. WOLTERS" ;
-  :rol t00944:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00944:p2
+  ] .
 
-t00944:p2 a :Female ;
+t00944:p2
+  a :Female ;
   :nam "TJARWE ROELFS" .
-
-t00944:r1 a :Spouse.n.01 ;
-  :tgt t00944:p2 .
-
-t00944:s1 a :Willow.n.01 ;
-  :att t00944:a1 .
-
-t00944:s2 a :Column.n.01 .
-
-t00944:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00944.jpg" ;
-  dc:date "2020-03-21T13:20:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1390 ;
-    geo:long 7.1411
-  ] ;
-  :nd "+53.1390+007.1411"^^ll: .
 

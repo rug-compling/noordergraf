@@ -1,62 +1,58 @@
 @prefix t00372: <https://noordergraf.rug.nl/tomb/t00372#> .
 
-tomb:t00372 a :Tomb ;
-  :image t00372:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00372:p1 ,
-       t00372:p2 ;
+tomb:t00372
+  a :Tomb ;
+  :ent t00372:p1, t00372:p2 ;
+  :image [
+    dc:date "2019-10-25T17:12:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00372.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0792 ;
+      geo:long 6.5717
+    ] ;
+    :nd "+53.0792+006.5717"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym t00372:s1 .
+  :site site:dr9481CGvries ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00372:c1 a :Village.n.02 ;
-  :place place:Winde2744363 ;
-  :name "WINDE" .
-
-t00372:c2 a :Village.n.02 ;
-  :place place:Peize2748673 ;
-  :name "PEIZE" .
-
-t00372:p1 a :Male ;
+t00372:p1
+  a :Male ;
   :dob "1894-11-25"^^xsd:date ;
   :dod "1962-05-16"^^xsd:date ;
   :nam "THIJS WILKENS" ;
   :pob t00372:c1 ;
   :pod t00372:c1 ;
-  :rol t00372:r1 ,
-       t00372:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00372:p2
+  ], [
+    a :Parent.n.01
+  ] .
 
-t00372:p2 a :Female ;
+t00372:p2
+  a :Female ;
   :dob "1897-03-05"^^xsd:date ;
   :dod "1964-09-16"^^xsd:date ;
   :nam "ALIDA OTTENS" ;
-  :pob t00372:c2 ;
-  :pod t00372:c1 ;
-  :rol t00372:r3 .
-
-t00372:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00372:p2 .
-
-t00372:r2 a :Parent.n.01 .
-
-t00372:r3 a :Parent.n.01 .
-
-t00372:s1 a :Frond.n.01 .
-
-t00372:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00372.jpg" ;
-  dc:date "2019-10-25T17:12:57"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0792 ;
-    geo:long 6.5717
+  :pob [
+    a :Village.n.02 ;
+    :name "PEIZE" ;
+    :place place:Peize2748673
   ] ;
-  :nd "+53.0792+006.5717"^^ll: .
+  :pod t00372:c1 ;
+  :rol [
+    a :Parent.n.01
+  ] .
+
+t00372:c1
+  a :Village.n.02 ;
+  :name "WINDE" ;
+  :place place:Winde2744363 .
 

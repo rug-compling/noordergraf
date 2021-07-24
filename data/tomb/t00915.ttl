@@ -1,46 +1,41 @@
 @prefix t00915: <https://noordergraf.rug.nl/tomb/t00915#> .
 
-tomb:t00915 a :Tomb ;
-  :image t00915:im1 ;
-  :site site:gr9351RLtolbert ;
+tomb:t00915
+  a :Tomb ;
   :ent t00915:p1 ;
+  :image [
+    dc:date "2020-03-07T14:04:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00915.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1717 ;
+      geo:long 6.3654
+    ] ;
+    :nd "+53.1717+006.3654"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00915:s1 ,
-       t00915:s2 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00915:c1 a :Village.n.02 ;
-  :place place:Zevenhuizen2743926 ;
-  :name "ZEVENHUIZEN" .
-
-t00915:c2 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00915:p1 a :Male ;
+t00915:p1
+  a :Male ;
   :dob "1851-01-03"^^xsd:date ;
   :dod "1940-10-02"^^xsd:date ;
   :nam "WILLEM LIEFFERING" ;
-  :pob t00915:c1 ;
-  :pod t00915:c2 .
-
-t00915:s1 a :Frond.n.01 .
-
-t00915:s2 a :Ribbon.n.01 .
-
-t00915:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00915.jpg" ;
-  dc:date "2020-03-07T14:04:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1717 ;
-    geo:long 6.3654
+  :pob [
+    a :Village.n.02 ;
+    :name "ZEVENHUIZEN" ;
+    :place place:Zevenhuizen2743926
   ] ;
-  :nd "+53.1717+006.3654"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "TOLBERT" ;
+    :place place:Tolbert2746234
+  ] .
 

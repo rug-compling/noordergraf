@@ -1,84 +1,78 @@
 @prefix t00218: <https://noordergraf.rug.nl/tomb/t00218#> .
 
-tomb:t00218 a :Tomb ;
-  :image t00218:im1 ;
-  :site site:gr9723EWgroningen ;
-  :ent t00218:p1 ,
-       t00218:p2 ,
-       t00218:p3 ,
-       t00218:p4 ;
+tomb:t00218
+  a :Tomb ;
+  :ent t00218:p1, t00218:p2, t00218:p3, t00218:p4 ;
+  :image [
+    dc:date "2019-10-08T14:45:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00218.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6369
+    ] ;
+    :nd "+53.2225+006.6369"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE DOODEN" ;
-  :sym t00218:s1 .
+  :site site:gr9723EWgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Rose.n.01
+    ], [
+      a :Tulip.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00218:c1 a :Village.n.02 ;
-  :place place:Noorddijk2749981 ;
-  :name "NOORDDIJK" .
-
-t00218:c2 a :Village.n.02 ;
-  :place place:Harkstede2754819 ;
-  :name "HARKSTEDE" .
-
-t00218:p1 a :Female ;
+t00218:p1
+  a :Female ;
   :dob "1883-06-25"^^xsd:date ;
   :dod "1891-08-14"^^xsd:date ;
   :nam "KLAAZIENA WIERINGA" ;
   :pob t00218:c1 ;
   :pod t00218:c2 ;
-  :rol t00218:r1 ,
-       t00218:r2 .
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00218:p3
+  ], [
+    a :Child.n.02 ;
+    :tgt t00218:p4
+  ] .
 
-t00218:p2 a :Male ;
+t00218:p2
+  a :Male ;
   :dob "1878-11-29"^^xsd:date ;
   :dod "1895-04-17"^^xsd:date ;
   :nam "HINDRIK WIERENGA" ;
   :pob t00218:c1 ;
   :pod t00218:c2 ;
-  :rol t00218:r3 ,
-       t00218:r4 .
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00218:p3
+  ], [
+    a :Child.n.02 ;
+    :tgt t00218:p4
+  ] .
 
-t00218:p3 a :Male ;
+t00218:p3
+  a :Male ;
   :nam "JAN WIERINGA" .
 
-t00218:p4 a :Female ;
+t00218:p4
+  a :Female ;
   :nam "ANNA BOLT" .
 
-t00218:r1 a :Child.n.02 ;
-  :tgt t00218:p3 .
+t00218:c1
+  a :Village.n.02 ;
+  :name "NOORDDIJK" ;
+  :place place:Noorddijk2749981 .
 
-t00218:r2 a :Child.n.02 ;
-  :tgt t00218:p4 .
-
-t00218:r3 a :Child.n.02 ;
-  :tgt t00218:p3 .
-
-t00218:r4 a :Child.n.02 ;
-  :tgt t00218:p4 .
-
-t00218:s1 a :Composite.n.01 ;
-  :prt t00218:s2 ,
-       t00218:s3 ,
-       t00218:s4 .
-
-t00218:s2 a :Rose.n.01 .
-
-t00218:s3 a :Tulip.n.01 .
-
-t00218:s4 a :Ribbon.n.01 .
-
-t00218:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00218.jpg" ;
-  dc:date "2019-10-08T14:45:03"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2225 ;
-    geo:long 6.6369
-  ] ;
-  :nd "+53.2225+006.6369"^^ll: .
+t00218:c2
+  a :Village.n.02 ;
+  :name "HARKSTEDE" ;
+  :place place:Harkstede2754819 .
 

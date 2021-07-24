@@ -1,52 +1,48 @@
 @prefix t00876: <https://noordergraf.rug.nl/tomb/t00876#> .
 
-tomb:t00876 a :Tomb ;
-  :image t00876:im1 ;
-  :site site:dr7844TCveenoord ;
-  :ent t00876:p1 ,
-       t00876:p2 ;
+tomb:t00876
+  a :Tomb ;
+  :ent t00876:p1, t00876:p2 ;
+  :image [
+    dc:date "2020-02-15T15:09:39"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00876.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7193 ;
+      geo:long 6.8456
+    ] ;
+    :nd "+52.7193+006.8456"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
   :ref "HEBREEËN 4:9"@nld ;
-  :sym t00876:s1 .
+  :site site:dr7844TCveenoord ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00876:a1 a :Weeping.a.02 .
-
-t00876:c1 a :Village.n.02 ;
-  :place place:Sleen2747182 ;
-  :name "SLEEN" .
-
-t00876:c2 a :Village.n.02 ;
-  :place place:NieuwAmsterdam2750375 ;
-  :name "NIEUW-AMSTERDAM" .
-
-t00876:p1 a :Female ;
+t00876:p1
+  a :Female ;
   :dob "1871-11-24"^^xsd:date ;
   :dod "1937-11-20"^^xsd:date ;
   :nam "JANTJE VISSER" ;
-  :pob t00876:c1 ;
-  :pod t00876:c2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "SLEEN" ;
+    :place place:Sleen2747182
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "NIEUW-AMSTERDAM" ;
+    :place place:NieuwAmsterdam2750375
+  ] .
 
-t00876:p2 a :Person ;
+t00876:p2
+  a :Person ;
   :nam "P. LOK" ;
   :sfx "JR" .
-
-t00876:s1 a :Willow.n.01 ;
-  :att t00876:a1 .
-
-t00876:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00876.jpg" ;
-  dc:date "2020-02-15T15:09:39"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7193 ;
-    geo:long 6.8456
-  ] ;
-  :nd "+52.7193+006.8456"^^ll: .
 

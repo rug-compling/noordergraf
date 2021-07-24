@@ -1,55 +1,50 @@
 @prefix t00310: <https://noordergraf.rug.nl/tomb/t00310#> .
 
-tomb:t00310 a :Tomb ;
-  :image t00310:im1 ;
+tomb:t00310
+  a :Tomb ;
+  :ent t00310:p1, t00310:p2, t00310:p3 ;
+  :image [
+    dc:date "2019-10-19T14:17:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00310.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7156 ;
+      geo:long 6.4735
+    ] ;
+    :nd "+52.7156+006.4735"^^ll:
+  ] ;
+  :ref "GEZANG 178:1", "GEZANG 178:3" ;
   :site site:dr7907CHhoogeveen ;
-  :ent t00310:p1 ,
-       t00310:p2 ,
-       t00310:p3 ;
-  :ref "GEZANG 178:1" ,
-       "GEZANG 178:3" ;
-  :sym t00310:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00310:a1 a :Weeping.a.02 .
-
-t00310:p1 a :Female ;
+t00310:p1
+  a :Female ;
   :dob "1890-04-08"^^xsd:date ;
   :dod "1941-06-09"^^xsd:date ;
   :nam "GRIETIEN LESSCHEN" ;
-  :rol t00310:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00310:p2
+  ] .
 
-t00310:p2 a :Male ;
+t00310:p2
+  a :Male ;
   :dob "1894-03-03"^^xsd:date ;
   :dod "1976-07-03"^^xsd:date ;
   :nam "ALBERT SMEMAN" ;
-  :rol t00310:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00310:p3
+  ] .
 
-t00310:p3 a :Female ;
+t00310:p3
+  a :Female ;
   :nam "GÉ LUINGE" .
-
-t00310:r1 a :Spouse.n.01 ;
-  :tgt t00310:p2 .
-
-t00310:r2 a :Spouse.n.01 ;
-  :tgt t00310:p3 .
-
-t00310:s1 a :Willow.n.01 ;
-  :att t00310:a1 .
-
-t00310:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00310.jpg" ;
-  dc:date "2019-10-19T14:17:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7156 ;
-    geo:long 6.4735
-  ] ;
-  :nd "+52.7156+006.4735"^^ll: .
 

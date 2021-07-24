@@ -1,60 +1,54 @@
 @prefix t01041: <https://noordergraf.rug.nl/tomb/t01041#> .
 
-tomb:t01041 a :Tomb ;
-  :image t01041:im1 ;
-  :site site:gr9804TEnoordhorn ;
-  :ent t01041:p1 ,
-       t01041:p2 ;
+tomb:t01041
+  a :Tomb ;
+  :ent t01041:p1, t01041:p2 ;
+  :image [
+    dc:date "2020-04-19T12:15:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01041.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2647 ;
+      geo:long 6.3943
+    ] ;
+    :nd "+53.2647+006.3943"^^ll:
+  ] ;
   :quo "DE HEILNAD HOORDE NAAR MIJN STEM, ALS ZONDAAR TROK HIJ MIJ TOT HEM, IK VOND GENA IN HEM ALLEEN, EN GA ALZO IN VREDE HEEN."@nld ;
-  :sym t01041:s1 ,
-       t01041:s2 ,
-       t01041:s3 .
+  :site site:gr9804TEnoordhorn ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Plough.n.01
+  ], [
+    a :Scythe.n.01
+  ] .
 
-t01041:a1 a :Weeping.a.02 .
-
-t01041:c1 a :City.n.01 ;
-  :place place:Hindeloopen2754059 ;
-  :name "HINDELOOPEN" .
-
-t01041:c2 a :Village.n.02 ;
-  :place place:Zuidhorn2743694 ;
-  :name "ZUIDHORN" .
-
-t01041:p1 a :Male ;
+t01041:p1
+  a :Male ;
   :dob "1842-02-06"^^xsd:date ;
   :dod "1924-02-28"^^xsd:date ;
   :nam "GERBEN EPEÜS VLIEG" ;
-  :pob t01041:c1 ;
-  :pod t01041:c2 ;
-  :rol t01041:r1 .
-
-t01041:p2 a :Female ;
-  :nam "J.P. VEENSTRA" .
-
-t01041:r1 a :Widower.n.01 ;
-  :tgt t01041:p2 .
-
-t01041:s1 a :Willow.n.01 ;
-  :att t01041:a1 .
-
-t01041:s2 a :Plough.n.01 .
-
-t01041:s3 a :Scythe.n.01 .
-
-t01041:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01041.jpg" ;
-  dc:date "2020-04-19T12:15:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2647 ;
-    geo:long 6.3943
+  :pob [
+    a :City.n.01 ;
+    :name "HINDELOOPEN" ;
+    :place place:Hindeloopen2754059
   ] ;
-  :nd "+53.2647+006.3943"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "ZUIDHORN" ;
+    :place place:Zuidhorn2743694
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t01041:p2
+  ] .
+
+t01041:p2
+  a :Female ;
+  :nam "J.P. VEENSTRA" .
 

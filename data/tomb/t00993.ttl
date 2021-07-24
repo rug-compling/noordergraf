@@ -1,42 +1,37 @@
 @prefix t00993: <https://noordergraf.rug.nl/tomb/t00993#> .
 
-tomb:t00993 a :Tomb ;
-  :image t00993:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t00993:p1 ,
-       t00993:p2 ;
+tomb:t00993
+  a :Tomb ;
+  :ent t00993:p1, t00993:p2 ;
+  :image [
+    dc:date "2020-04-04T10:51:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00993.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1762 ;
+      geo:long 7.0951
+    ] ;
+    :nd "+53.1762+007.0951"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00993:s1 ,
-       t00993:s2 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00993:p1 a :Female ;
+t00993:p1
+  a :Female ;
   :dob "1876-12-03"^^xsd:date ;
   :dod "1936-04-15"^^xsd:date ;
   :nam "ENGEL VEGT" .
 
-t00993:p2 a :Male ;
+t00993:p2
+  a :Male ;
   :dob "1872-03-17"^^xsd:date ;
   :dod "1963-11-28"^^xsd:date ;
   :nam "EPKE MULDER" .
-
-t00993:s1 a :Frond.n.01 .
-
-t00993:s2 a :Ribbon.n.01 .
-
-t00993:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00993.jpg" ;
-  dc:date "2020-04-04T10:51:23"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1762 ;
-    geo:long 7.0951
-  ] ;
-  :nd "+53.1762+007.0951"^^ll: .
 

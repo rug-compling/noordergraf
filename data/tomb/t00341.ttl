@@ -1,63 +1,57 @@
 @prefix t00341: <https://noordergraf.rug.nl/tomb/t00341#> .
 
-tomb:t00341 a :Tomb ;
-  :image t00341:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00341:p1 ,
-       t00341:p2 ,
-       t00341:p3 ,
-       t00341:p4 ;
+tomb:t00341
+  a :Tomb ;
+  :ent t00341:p1, t00341:p2, t00341:p3, t00341:p4 ;
+  :image [
+    dc:date "2019-10-19T14:07:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00341.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4731
+    ] ;
+    :nd "+52.7157+006.4731"^^ll:
+  ] ;
   :ref "PSALM 103:8" ;
-  :sym t00341:s1 .
+  :site site:dr7907CHhoogeveen ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00341:p1 a :Male ;
+t00341:p1
+  a :Male ;
   :dob "1881-12-03"^^xsd:date ;
   :dod "1903-03-29"^^xsd:date ;
   :nam "EVERT BOOIJ" .
 
-t00341:p2 a :Female ;
+t00341:p2
+  a :Female ;
   :dob "1890-07-10"^^xsd:date ;
   :dod "1905-04-29"^^xsd:date ;
   :nam "MAGARETHA BOOIJ" .
 
-t00341:p3 a :Male ;
+t00341:p3
+  a :Male ;
   :nam "H.A. BOOIJ" ;
-  :rol t00341:r1 ,
-       t00341:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00341:p1
+  ], [
+    a :Parent.n.01 ;
+    :tgt t00341:p2
+  ] .
 
-t00341:p4 a :Female ;
+t00341:p4
+  a :Female ;
   :nam "H.A. BOOIJ-VELDMAN" ;
-  :rol t00341:r3 ,
-       t00341:r4 .
-
-t00341:r1 a :Parent.n.01 ;
-  :tgt t00341:p1 .
-
-t00341:r2 a :Parent.n.01 ;
-  :tgt t00341:p2 .
-
-t00341:r3 a :Parent.n.01 ;
-  :tgt t00341:p1 .
-
-t00341:r4 a :Parent.n.01 ;
-  :tgt t00341:p2 .
-
-t00341:s1 a :Frond.n.01 .
-
-t00341:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00341.jpg" ;
-  dc:date "2019-10-19T14:07:08"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7157 ;
-    geo:long 6.4731
-  ] ;
-  :nd "+52.7157+006.4731"^^ll: .
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00341:p1
+  ], [
+    a :Parent.n.01 ;
+    :tgt t00341:p2
+  ] .
 

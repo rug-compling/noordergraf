@@ -1,40 +1,36 @@
 @prefix t00963: <https://noordergraf.rug.nl/tomb/t00963#> .
 
-tomb:t00963 a :Tomb ;
-  :image t00963:im1 ;
-  :site site:dr9765paterswolde ;
+tomb:t00963
+  a :Tomb ;
   :ent t00963:p1 ;
-  :lan "NLD" .
+  :image [
+    dc:date "2020-03-27T17:55:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00963.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1632 ;
+      geo:long 6.5544
+    ] ;
+    :nd "+53.1632+006.5544"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:dr9765paterswolde .
 
-t00963:c1 a :City.n.01 ;
-  :place place:Winschoten2744344 ;
-  :name "WINSCHOTEN" .
-
-t00963:c2 a :Village.n.02 ;
-  :place place:Paterswolde2748702 ;
-  :name "PATERSWOLDE" .
-
-t00963:p1 a :Female ;
+t00963:p1
+  a :Female ;
   :dob "1886-11-21"^^xsd:date ;
   :dod "1917-04-19"^^xsd:date ;
   :nam "WILLEMIENE HENRIETTE JANSEN" ;
-  :pob t00963:c1 ;
-  :pod t00963:c2 .
-
-t00963:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00963.jpg" ;
-  dc:date "2020-03-27T17:55:38"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1632 ;
-    geo:long 6.5544
+  :pob [
+    a :City.n.01 ;
+    :name "WINSCHOTEN" ;
+    :place place:Winschoten2744344
   ] ;
-  :nd "+53.1632+006.5544"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "PATERSWOLDE" ;
+    :place place:Paterswolde2748702
+  ] .
 

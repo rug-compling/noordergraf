@@ -1,48 +1,44 @@
 @prefix t00552: <https://noordergraf.rug.nl/tomb/t00552#> .
 
-tomb:t00552 a :Tomb ;
-  :image t00552:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00552:p1 ,
-       t00552:p2 ;
-  :lan "NLD" ;
-  :sym t00552:s1 .
-
-t00552:c1 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00552:o1 a :Goldsmith.n.01 ;
-  :hco "88050" ;
-  :loc t00552:c1 .
-
-t00552:o2 a :Designer.n.01 ;
-  :tgt tomb:t00552 .
-
-t00552:p1 a :Male ;
-  :nam "BARENDS" ;
-  :occ t00552:o1 .
-
-t00552:p2 a :Person ;
-  :nam "H. HOEKSEMA" ;
-  :occ t00552:o2 .
-
-t00552:s1 a :Butterfly.n.01 .
-
-t00552:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00552.jpg" ;
-  dc:date "2019-11-24T14:02:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1045 ;
-    geo:long 6.8756
+tomb:t00552
+  a :Tomb ;
+  :ent t00552:p1, t00552:p2 ;
+  :image [
+    dc:date "2019-11-24T14:02:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00552.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1045 ;
+      geo:long 6.8756
+    ] ;
+    :nd "+53.1045+006.8756"^^ll:
   ] ;
-  :nd "+53.1045+006.8756"^^ll: .
+  :lan "NLD" ;
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Butterfly.n.01
+  ] .
+
+t00552:p1
+  a :Male ;
+  :nam "BARENDS" ;
+  :occ [
+    a :Goldsmith.n.01 ;
+    :hco "88050" ;
+    :loc [
+      a :City.n.01 ;
+      :name "VEENDAM" ;
+      :place place:Veendam2745783
+    ]
+  ] .
+
+t00552:p2
+  a :Person ;
+  :nam "H. HOEKSEMA" ;
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00552
+  ] .
 

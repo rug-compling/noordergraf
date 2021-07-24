@@ -1,36 +1,31 @@
 @prefix t00592: <https://noordergraf.rug.nl/tomb/t00592#> .
 
-tomb:t00592 a :Tomb ;
-  :image t00592:im1 ;
-  :site site:gr9951TNwinsum ;
+tomb:t00592
+  a :Tomb ;
   :ent t00592:p1 ;
+  :image [
+    dc:date "2019-11-30T14:24:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00592.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3267 ;
+      geo:long 6.5120
+    ] ;
+    :nd "+53.3267+006.5120"^^ll:
+  ] ;
   :quo "ADIEU MON PÈRE, OPA"@fra ;
-  :sym t00592:s1 ,
-       t00592:s2 .
+  :site site:gr9951TNwinsum ;
+  :sym [
+    a :Mountain.n.01
+  ], [
+    a :Staff.n.06
+  ] .
 
-t00592:p1 a :Male ;
+t00592:p1
+  a :Male ;
   :dob "1934-07-11"^^xsd:date ;
   :dod "2001-02-06"^^xsd:date ;
   :nam "KORNELIS SIEGERS" .
-
-t00592:s1 a :Mountain.n.01 .
-
-t00592:s2 a :Staff.n.06 .
-
-t00592:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00592.jpg" ;
-  dc:date "2019-11-30T14:24:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3267 ;
-    geo:long 6.5120
-  ] ;
-  :nd "+53.3267+006.5120"^^ll: .
 

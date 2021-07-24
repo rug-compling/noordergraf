@@ -1,64 +1,60 @@
 @prefix t00124: <https://noordergraf.rug.nl/tomb/t00124#> .
 
-tomb:t00124 a :Tomb ;
-  :image t00124:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00124:p1 ,
-       t00124:p2 ;
-  :quo "IN JEZUS ONTSLAPEN" .
+tomb:t00124
+  a :Tomb ;
+  :ent t00124:p1, t00124:p2 ;
+  :image [
+    dc:date "2019-10-01T10:00:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00124.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2067 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.2067+006.5716"^^ll:
+  ] ;
+  :quo "IN JEZUS ONTSLAPEN" ;
+  :site site:gr9725ACgroningen .
 
-t00124:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00124:c2 a :Village.n.02 ;
-  :place place:Odoorn2749734 ;
-  :name "ODOORN" .
-
-t00124:c3 a :Village.n.02 ;
-  :place place:NieuwePekela2750272 ;
-  :name "NIEUWE PEKELA" .
-
-t00124:p1 a :Male ;
+t00124:p1
+  a :Male ;
   :dob "1880-05-21"^^xsd:date ;
   :dod "1941-11-18"^^xsd:date ;
   :nam "DERK WIND" ;
-  :pob t00124:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ODOORN" ;
+    :place place:Odoorn2749734
+  ] ;
   :pod t00124:c1 ;
-  :rol t00124:r1 ,
-       t00124:r2 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00124:p2
+  ], [
+    a :Father.n.01
+  ] .
 
-t00124:p2 a :Female ;
+t00124:p2
+  a :Female ;
   :dob "1880-12-27"^^xsd:date ;
   :dod "1965-04-21"^^xsd:date ;
   :nam "CATHARINA JAGER" ;
-  :pob t00124:c3 ;
-  :pod t00124:c1 ;
-  :rol t00124:r3 .
-
-t00124:r1 a :Husband.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00124:p2 .
-
-t00124:r2 a :Father.n.01 .
-
-t00124:r3 a :Mother.n.01 ;
-  :att "LIEVE" .
-
-t00124:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00124.jpg" ;
-  dc:date "2019-10-01T10:00:53"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2067 ;
-    geo:long 6.5716
+  :pob [
+    a :Village.n.02 ;
+    :name "NIEUWE PEKELA" ;
+    :place place:NieuwePekela2750272
   ] ;
-  :nd "+53.2067+006.5716"^^ll: .
+  :pod t00124:c1 ;
+  :rol [
+    a :Mother.n.01 ;
+    :att "LIEVE"
+  ] .
+
+t00124:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

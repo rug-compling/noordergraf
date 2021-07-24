@@ -1,56 +1,51 @@
 @prefix t00282: <https://noordergraf.rug.nl/tomb/t00282#> .
 
-tomb:t00282 a :Tomb ;
-  :image t00282:im1 ;
-  :site site:gr9985SCoosternieland ;
-  :ent t00282:p1 ,
-       t00282:p2 ;
+tomb:t00282
+  a :Tomb ;
+  :ent t00282:p1, t00282:p2 ;
+  :image [
+    dc:date "2019-10-16T16:56:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00282.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4038 ;
+      geo:long 6.7490
+    ] ;
+    :nd "+53.4038+006.7490"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE DOCHTER EN ZUSTER" ;
-  :sym t00282:s1 .
+  :site site:gr9985SCoosternieland ;
+  :sym [
+    a :Flower.n.01 ;
+    :att [
+      a :Broken.a.01
+    ]
+  ] .
 
-t00282:a1 a :Broken.a.01 .
-
-t00282:c1 a :Village.n.02 ;
-  :place place:Uithuizermeeden2745968 ;
-  :name "UITHUIZERMEEDEN" .
-
-t00282:c2 a :Town.n.01 ;
-  :place place:Oosternieland2749429 ;
-  :name "OOSTERNIELAND" .
-
-t00282:p1 a :Female ;
+t00282:p1
+  a :Female ;
   :dob "1897-09-12"^^xsd:date ;
   :dod "1933-09-22"^^xsd:date ;
   :nam "JAAPTJE VAN DAM" ;
-  :pob t00282:c1 ;
-  :pod t00282:c2 ;
-  :rol t00282:r1 ,
-       t00282:r3 .
-
-t00282:p2 a :Male ;
-  :nam "J.D. OOSTING" .
-
-t00282:r1 a :Daughter.n.01 .
-
-t00282:r3 a :Sister.n.01 .
-
-t00282:s1 a :Flower.n.01 ;
-  :att t00282:a1 .
-
-t00282:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00282.jpg" ;
-  dc:date "2019-10-16T16:56:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4038 ;
-    geo:long 6.7490
+  :pob [
+    a :Village.n.02 ;
+    :name "UITHUIZERMEEDEN" ;
+    :place place:Uithuizermeeden2745968
   ] ;
-  :nd "+53.4038+006.7490"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "OOSTERNIELAND" ;
+    :place place:Oosternieland2749429
+  ] ;
+  :rol [
+    a :Daughter.n.01
+  ], [
+    a :Sister.n.01
+  ] .
+
+t00282:p2
+  a :Male ;
+  :nam "J.D. OOSTING" .
 

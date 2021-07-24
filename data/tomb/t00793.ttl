@@ -1,60 +1,53 @@
 @prefix t00793: <https://noordergraf.rug.nl/tomb/t00793#> .
 
-tomb:t00793 a :Tomb ;
-  :image t00793:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00793:p1 ,
-       t00793:p2 ;
+tomb:t00793
+  a :Tomb ;
+  :ent t00793:p1, t00793:p2 ;
+  :image [
+    dc:date "2020-01-18T13:07:17"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00793.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2776 ;
+      geo:long 6.6937
+    ] ;
+    :nd "+53.2776+006.6937"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00793:s1 ,
-       t00793:s2 ,
-       t00793:s3 ,
-       t00793:s4 .
+  :site site:gr9791KEten_boer ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00793:c1 a :Village.n.02 ;
-  :place place:Schildwolde2747570 ;
-  :name "SCHILDWOLDE" .
-
-t00793:c2 a :Village.n.02 ;
-  :place place:TenBoer2746491 ;
-  :name "TEN BOER" .
-
-t00793:p1 a :Male ;
+t00793:p1
+  a :Male ;
   :dob "1840-02-08"^^xsd:date ;
   :dod "1896-02-18"^^xsd:date ;
   :nam "HOMMO HUISMAN" ;
-  :pob t00793:c1 ;
-  :pod t00793:c2 ;
-  :rol t00793:r1 .
-
-t00793:p2 a :Female ;
-  :nam "F. DOORNBOS" .
-
-t00793:r1 a :Spouse.n.01 ;
-  :tgt t00793:p2 .
-
-t00793:s1 a :Butterfly.n.01 .
-
-t00793:s2 a :Frond.n.01 .
-
-t00793:s3 a :Frond.n.01 .
-
-t00793:s4 a :Ribbon.n.01 .
-
-t00793:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00793.jpg" ;
-  dc:date "2020-01-18T13:07:17"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2776 ;
-    geo:long 6.6937
+  :pob [
+    a :Village.n.02 ;
+    :name "SCHILDWOLDE" ;
+    :place place:Schildwolde2747570
   ] ;
-  :nd "+53.2776+006.6937"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "TEN BOER" ;
+    :place place:TenBoer2746491
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00793:p2
+  ] .
+
+t00793:p2
+  a :Female ;
+  :nam "F. DOORNBOS" .
 

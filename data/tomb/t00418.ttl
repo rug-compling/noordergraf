@@ -1,74 +1,63 @@
 @prefix t00418: <https://noordergraf.rug.nl/tomb/t00418#> .
 
-tomb:t00418 a :Tomb ;
-  :image t00418:im1 ;
+tomb:t00418
+  a :Tomb ;
+  :ent t00418:p1, t00418:p2, t00418:p3, t00418:g1 ;
+  :image [
+    dc:date "2019-10-25T16:55:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00418.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0797 ;
+      geo:long 6.5731
+    ] ;
+    :nd "+53.0797+006.5731"^^ll:
+  ] ;
   :site site:dr9481CGvries ;
-  :ent t00418:g1 ,
-       t00418:p1 ,
-       t00418:p2 ,
-       t00418:p3 ;
-  :sym t00418:s1 ,
-       t00418:s6 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Flower.n.01
+    ], [
+      a :Bird.n.01
+    ], [
+      a :Nest.n.01
+    ], [
+      a :Bird.n.01
+    ]
+  ], [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00418:g1 a :Group.n.01 ;
-  :mem t00418:p2 ,
-       t00418:p3 .
-
-t00418:p1 a :Female ;
+t00418:p1
+  a :Female ;
   :dob "1907-01-15"^^xsd:date ;
   :dod "1909-08-22"^^xsd:date ;
   :nam "EGBERDINA ZUIDEVELD" ;
-  :rol t00418:r2 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00418:g1
+  ] .
 
-t00418:p2 a :Male ;
+t00418:p2
+  a :Male ;
   :nam "W. ZUIDEVELD" .
 
-t00418:p3 a :Female ;
+t00418:p3
+  a :Female ;
   :nam "J. GERRITS" .
 
-t00418:r2 a :Daughter.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00418:g1 .
-
-t00418:s1 a :Composite.n.01 ;
-  :prt t00418:s2 ,
-       t00418:s3 ,
-       t00418:s4 ,
-       t00418:s5 .
-
-t00418:s2 a :Flower.n.01 .
-
-t00418:s3 a :Bird.n.01 .
-
-t00418:s4 a :Nest.n.01 .
-
-t00418:s5 a :Bird.n.01 .
-
-t00418:s6 a :Composite.n.01 ;
-  :prt t00418:s7 ,
-       t00418:s8 ,
-       t00418:s9 .
-
-t00418:s7 a :Frond.n.01 .
-
-t00418:s8 a :Frond.n.01 .
-
-t00418:s9 a :Ribbon.n.01 .
-
-t00418:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00418.jpg" ;
-  dc:date "2019-10-25T16:55:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0797 ;
-    geo:long 6.5731
-  ] ;
-  :nd "+53.0797+006.5731"^^ll: .
+t00418:g1
+  a :Group.n.01 ;
+  :mem t00418:p2, t00418:p3 .
 

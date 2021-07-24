@@ -1,58 +1,53 @@
 @prefix t00491: <https://noordergraf.rug.nl/tomb/t00491#> .
 
-tomb:t00491 a :Tomb ;
-  :image t00491:im1 ;
-  :site site:fr8917AVleeuwarden ;
-  :ent t00491:p1 ,
-       t00491:p2 ;
+tomb:t00491
+  a :Tomb ;
+  :ent t00491:p1, t00491:p2 ;
+  :image [
+    dc:date "2019-11-16T13:58:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00491.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2097 ;
+      geo:long 5.7907
+    ] ;
+    :nd "+53.2097+005.7907"^^ll:
+  ] ;
   :quo "RUST ZACHT" ;
-  :sym t00491:s1 .
+  :site site:fr8917AVleeuwarden ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00491:c1 a :Village.n.02 ;
-  :place place:Makkum2751254 ;
-  :name "MAKKUM" .
-
-t00491:c2 a :City.n.01 ;
-  :place place:DenHaag2747373 ;
-  :name "DEN HAAG" .
-
-t00491:p1 a :Male ;
+t00491:p1
+  a :Male ;
   :dob "1878-10-27"^^xsd:date ;
   :dod "1919-04-05"^^xsd:date ;
   :nam "DOUWE BONNEMA" ;
-  :pob t00491:c1 ;
-  :pod t00491:c2 ;
-  :rol t00491:r1 ,
-       t00491:r2 .
-
-t00491:p2 a :Female ;
-  :nam "J. BONNEMA DE JONG" ;
-  :rol t00491:r3 .
-
-t00491:r1 a :Husband.n.01 ;
-  :tgt t00491:p2 .
-
-t00491:r2 a :Father.n.01 .
-
-t00491:r3 a :Widow.n.01 ;
-  :tgt t00491:p1 .
-
-t00491:s1 a :Frond.n.01 .
-
-t00491:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00491.jpg" ;
-  dc:date "2019-11-16T13:58:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2097 ;
-    geo:long 5.7907
+  :pob [
+    a :Village.n.02 ;
+    :name "MAKKUM" ;
+    :place place:Makkum2751254
   ] ;
-  :nd "+53.2097+005.7907"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "DEN HAAG" ;
+    :place place:DenHaag2747373
+  ] ;
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00491:p2
+  ], [
+    a :Father.n.01
+  ] .
+
+t00491:p2
+  a :Female ;
+  :nam "J. BONNEMA DE JONG" ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00491:p1
+  ] .
 

@@ -1,47 +1,43 @@
 @prefix t00547: <https://noordergraf.rug.nl/tomb/t00547#> .
 
-tomb:t00547 a :Tomb ;
-  :image t00547:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00547:p1 ,
-       t00547:p2 ;
-  :lan "NLD" .
+tomb:t00547
+  a :Tomb ;
+  :ent t00547:p1, t00547:p2 ;
+  :image [
+    dc:date "2019-11-24T14:09:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00547.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1044 ;
+      geo:long 6.8755
+    ] ;
+    :nd "+53.1044+006.8755"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9641ANveendam .
 
-t00547:p1 a :Male ;
+t00547:p1
+  a :Male ;
   :dob "1834-09-19"^^xsd:date ;
   :dod "1906-04-14"^^xsd:date ;
   :nam "JAN MULDER" ;
-  :rol t00547:r1 ;
+  :rol [
+    a :Parent.n.01 ;
+    :att "DIERBARE" ;
+    :tgt t00547:p3
+  ] ;
   :sfx "TZN" .
 
-t00547:p2 a :Female ;
+t00547:p2
+  a :Female ;
   :dob "1834-04-08"^^xsd:date ;
   :dod "1913-03-30"^^xsd:date ;
   :nam "GEESJEN VENEMA" ;
-  :rol t00547:r2 .
-
-t00547:r1 a :Parent.n.01 ;
-  :att "DIERBARE" ;
-  :tgt t00547:p3 .
-
-t00547:r2 a :Parent.n.01 ;
-  :att "DIERBARE" ;
-  :tgt t00547:p3 .
-
-t00547:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00547.jpg" ;
-  dc:date "2019-11-24T14:09:58"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1044 ;
-    geo:long 6.8755
-  ] ;
-  :nd "+53.1044+006.8755"^^ll: .
+  :rol [
+    a :Parent.n.01 ;
+    :att "DIERBARE" ;
+    :tgt t00547:p3
+  ] .
 

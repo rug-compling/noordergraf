@@ -1,52 +1,47 @@
 @prefix t00168: <https://noordergraf.rug.nl/tomb/t00168#> .
 
-tomb:t00168 a :Tomb ;
-  :image t00168:im1 ;
-  :site site:gr9725ACgroningen ;
+tomb:t00168
+  a :Tomb ;
   :ent t00168:p1 ;
+  :image [
+    dc:date "2019-10-02T10:20:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00168.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2058 ;
+      geo:long 6.5699
+    ] ;
+    :nd "+53.2058+006.5699"^^ll:
+  ] ;
   :quo "ALS LIEFDE EENS KON WONDEREN DOEN \\ EN TRANEN DOODEN WEKKEN \\ DAN ZOU ONZE GELIEFDE ZOON \\ NU NIET DE KOELE AARDE DEKKEN" ;
-  :sym t00168:s1 .
+  :site site:gr9725ACgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00168:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00168:p1 a :Male ;
+t00168:p1
+  a :Male ;
   :dob "1920-02-12"^^xsd:date ;
   :dod "1945-05-05"^^xsd:date ;
   :nam "JAN SIEMEN HERMANNI" ;
   :pob t00168:c1 ;
   :pod t00168:c1 ;
-  :rol t00168:r1 ,
-       t00168:r2 .
+  :rol [
+    a :Son.n.01 ;
+    :att "LIEVE"
+  ], [
+    a :Brother.n.01
+  ] .
 
-t00168:r1 a :Son.n.01 ;
-  :att "LIEVE" .
-
-t00168:r2 a :Brother.n.01 .
-
-t00168:s1 a :Composite.n.01 ;
-  :prt t00168:s2 ,
-       t00168:s3 .
-
-t00168:s2 a :Frond.n.01 .
-
-t00168:s3 a :Ribbon.n.01 .
-
-t00168:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00168.jpg" ;
-  dc:date "2019-10-02T10:20:18"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2058 ;
-    geo:long 6.5699
-  ] ;
-  :nd "+53.2058+006.5699"^^ll: .
+t00168:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

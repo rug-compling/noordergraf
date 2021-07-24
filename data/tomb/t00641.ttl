@@ -1,48 +1,44 @@
 @prefix t00641: <https://noordergraf.rug.nl/tomb/t00641#> .
 
-tomb:t00641 a :Tomb ;
-  :image t00641:im1 ;
-  :site site:gr9723EJgroningen ;
-  :ent t00641:p1 ,
-       t00641:p2 ;
-  :quo "RUST ZACHT LIEVE MOEDER"@nld .
+tomb:t00641
+  a :Tomb ;
+  :ent t00641:p1, t00641:p2 ;
+  :image [
+    dc:date "2019-12-08T11:22:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00641.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2088 ;
+      geo:long 6.6478
+    ] ;
+    :nd "+53.2088+006.6478"^^ll:
+  ] ;
+  :quo "RUST ZACHT LIEVE MOEDER"@nld ;
+  :site site:gr9723EJgroningen .
 
-t00641:c1 a :Village.n.02 ;
-  :place place:Westerbroek2744764 ;
-  :name "WESTERBROEK" .
-
-t00641:c2 a :Village.n.02 ;
-  :place place:Peizermade2748669 ;
-  :name "PEIZERMADE" .
-
-t00641:p1 a :Female ;
+t00641:p1
+  a :Female ;
   :dob "1843-03-13"^^xsd:date ;
   :dod "1917-11-25"^^xsd:date ;
   :nam "HENDERIKA BRONSEMA" ;
-  :pob t00641:c1 ;
-  :pod t00641:c2 ;
-  :rol t00641:r1 .
-
-t00641:p2 a :Male ;
-  :nam "H. REINDERS" .
-
-t00641:r1 a :Spouse.n.01 ;
-  :tgt t00641:p2 .
-
-t00641:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00641.jpg" ;
-  dc:date "2019-12-08T11:22:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2088 ;
-    geo:long 6.6478
+  :pob [
+    a :Village.n.02 ;
+    :name "WESTERBROEK" ;
+    :place place:Westerbroek2744764
   ] ;
-  :nd "+53.2088+006.6478"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "PEIZERMADE" ;
+    :place place:Peizermade2748669
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00641:p2
+  ] .
+
+t00641:p2
+  a :Male ;
+  :nam "H. REINDERS" .
 

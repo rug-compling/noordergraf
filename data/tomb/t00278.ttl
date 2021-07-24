@@ -1,41 +1,36 @@
 @prefix t00278: <https://noordergraf.rug.nl/tomb/t00278#> .
 
-tomb:t00278 a :Tomb ;
-  :image t00278:im1 ;
-  :site site:gr9985SCoosternieland ;
-  :ent t00278:p1 ,
-       t00278:p2 .
+tomb:t00278
+  a :Tomb ;
+  :ent t00278:p1, t00278:p2 ;
+  :image [
+    dc:date "2019-10-16T16:54:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00278.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4036 ;
+      geo:long 6.7490
+    ] ;
+    :nd "+53.4036+006.7490"^^ll:
+  ] ;
+  :site site:gr9985SCoosternieland .
 
-t00278:p1 a :Female ;
+t00278:p1
+  a :Female ;
   :dob "1933-05-10"^^xsd:date ;
   :dod "1972-10-27"^^xsd:date ;
   :nam "EELJE LIER" ;
-  :rol t00278:r1 ,
-       t00278:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00278:p2
+  ], [
+    a :Mother.n.01
+  ] .
 
-t00278:p2 a :Family.n.04 ;
+t00278:p2
+  a :Family.n.04 ;
   :nam "E.H. LUBBERS" .
-
-t00278:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00278:p2 .
-
-t00278:r2 a :Mother.n.01 .
-
-t00278:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00278.jpg" ;
-  dc:date "2019-10-16T16:54:48"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4036 ;
-    geo:long 6.7490
-  ] ;
-  :nd "+53.4036+006.7490"^^ll: .
 

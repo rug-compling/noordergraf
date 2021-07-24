@@ -1,64 +1,60 @@
 @prefix t00177: <https://noordergraf.rug.nl/tomb/t00177#> .
 
-tomb:t00177 a :Tomb ;
-  :image t00177:im1 ;
+tomb:t00177
+  a :Tomb ;
+  :ent t00177:p1, t00177:p2 ;
+  :image [
+    dc:date "2019-10-05T10:32:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00177.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1909 ;
+      geo:long 6.5941
+    ] ;
+    :nd "+53.1909+006.5941"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00177:p1 ,
-       t00177:p2 ;
-  :sym t00177:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00177:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00177:c2 a :Village.n.02 ;
-  :place place:NieuwePekela2750272 ;
-  :name "NIEUWE PEKELA" .
-
-t00177:c3 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t00177:p1 a :Male ;
+t00177:p1
+  a :Male ;
   :dob "1870-01-29"^^xsd:date ;
   :dod "1932-03-21"^^xsd:date ;
   :nam "JELLE STUTVOET" ;
-  :pob t00177:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "NIEUWE PEKELA" ;
+    :place place:NieuwePekela2750272
+  ] ;
   :pod t00177:c1 ;
-  :rol t00177:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00177:p2
+  ] .
 
-t00177:p2 a :Female ;
+t00177:p2
+  a :Female ;
   :dob "1874-11-15"^^xsd:date ;
   :dod "1951-02-21"^^xsd:date ;
   :nam "HENDERIKA VEENTJER" ;
-  :pob t00177:c3 ;
+  :pob [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
+  ] ;
   :pod t00177:c1 .
 
-t00177:r1 a :Spouse.n.01 ;
-  :tgt t00177:p2 .
-
-t00177:s1 a :Composite.n.01 ;
-  :prt t00177:s2 ,
-       t00177:s3 .
-
-t00177:s2 a :Frond.n.01 .
-
-t00177:s3 a :Ribbon.n.01 .
-
-t00177:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00177.jpg" ;
-  dc:date "2019-10-05T10:32:33"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1909 ;
-    geo:long 6.5941
-  ] ;
-  :nd "+53.1909+006.5941"^^ll: .
+t00177:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

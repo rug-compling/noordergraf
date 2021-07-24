@@ -1,54 +1,50 @@
 @prefix t00030: <https://noordergraf.rug.nl/tomb/t00030#> .
 
-tomb:t00030 a :Tomb ;
-  :image t00030:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00030:p1 ,
-       t00030:p2 ;
+tomb:t00030
+  a :Tomb ;
+  :ent t00030:p1, t00030:p2 ;
+  :image [
+    dc:date "2020-03-27T17:11:16"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00030.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1627 ;
+      geo:long 6.6126
+    ] ;
+    :nd "+53.1627+006.6126"^^ll:
+  ] ;
   :quo "ZIJ WAS EEN LIEFDE VOLLE ZORGDRAGENDE MOEDER" ;
-  :sym t00030:s1 .
+  :site site:gr9752CMharen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00030:a1 a :Weeping.a.02 .
-
-t00030:c1 a :Village.n.02 ;
-  :place place:Helpman2754444 ;
-  :name "HELPMAN" .
-
-t00030:c2 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00030:p1 a :Female ;
+t00030:p1
+  a :Female ;
   :dob "1868-04-03"^^xsd:date ;
   :dod "1927-04-12"^^xsd:date ;
   :nam "MARGRIETA VAN BERGEN" ;
-  :pob t00030:c1 ;
-  :pod t00030:c2 ;
-  :rol t00030:r1 .
-
-t00030:p2 a :Male ;
-  :nam "ROELOF DOLFIN" .
-
-t00030:r1 a :Widow.n.01 ;
-  :tgt t00030:p2 .
-
-t00030:s1 a :Willow.n.01 ;
-  :att t00030:a1 .
-
-t00030:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00030.jpg" ;
-  dc:date "2020-03-27T17:11:16"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1627 ;
-    geo:long 6.6126
+  :pob [
+    a :Village.n.02 ;
+    :name "HELPMAN" ;
+    :place place:Helpman2754444
   ] ;
-  :nd "+53.1627+006.6126"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00030:p2
+  ] .
+
+t00030:p2
+  a :Male ;
+  :nam "ROELOF DOLFIN" .
 

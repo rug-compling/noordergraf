@@ -1,56 +1,52 @@
 @prefix t00653: <https://noordergraf.rug.nl/tomb/t00653#> .
 
-tomb:t00653 a :Tomb ;
-  :image t00653:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00653:p1 ,
-       t00653:p2 ,
-       t00653:p3 ;
+tomb:t00653
+  a :Tomb ;
+  :ent t00653:p1, t00653:p2, t00653:p3 ;
+  :image [
+    dc:date "2019-11-23T10:09:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00653.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1636 ;
+      geo:long 6.7546
+    ] ;
+    :nd "+53.1636+006.7546"^^ll:
+  ] ;
   :quo "MAAR DE RECHTVAARDIGE \\ BETROUWT ZELFS IN \\ ZIJNEN DOOD."@nld ;
   :ref "SPREUKEN 14:32"@nld ;
-  :sym t00653:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00653:c1 a :Hamlet.n.03 ;
-  :place place:Kalkwijk2753130 ;
-  :name "KALKWIJK" .
-
-t00653:p1 a :Male ;
+t00653:p1
+  a :Male ;
   :dob "1864-08-31"^^xsd:date ;
   :dod "1920-05-13"^^xsd:date ;
   :nam "ANDRIES BLAAK" ;
   :pob t00653:c1 ;
   :pod t00653:c1 ;
-  :rol t00653:r1 ,
-       t00653:r2 .
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00653:p2
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00653:p3
+  ] .
 
-t00653:p2 a :Female ;
+t00653:p2
+  a :Female ;
   :nam "PIETERTJE DRENT" .
 
-t00653:p3 a :Female ;
+t00653:p3
+  a :Female ;
   :nam "GRIETKE KLEVERINGA" .
 
-t00653:r1 a :Widower.n.01 ;
-  :tgt t00653:p2 .
-
-t00653:r2 a :Spouse.n.01 ;
-  :tgt t00653:p3 .
-
-t00653:s1 a :Rose.n.01 .
-
-t00653:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00653.jpg" ;
-  dc:date "2019-11-23T10:09:13"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1636 ;
-    geo:long 6.7546
-  ] ;
-  :nd "+53.1636+006.7546"^^ll: .
+t00653:c1
+  a :Hamlet.n.03 ;
+  :name "KALKWIJK" ;
+  :place place:Kalkwijk2753130 .
 

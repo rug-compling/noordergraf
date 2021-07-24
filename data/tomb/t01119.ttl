@@ -1,24 +1,26 @@
 @prefix t01119: <https://noordergraf.rug.nl/tomb/t01119#> .
 
-tomb:t01119 a :Tomb ;
+tomb:t01119
+  a :Tomb ;
   :ent t01119:p1 ;
   :quo "O, du lieber Augustin Alles ist hin!"@deu ;
-  :sym t01119:s1 .
+  :sym [
+    a :Cow.n.01
+  ] .
 
-t01119:c1 a :Village.n.02 ;
-  :place place:Hoogemeeden2753738 ;
-  :name "HOOGEMEEDEN" .
-
-t01119:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t01119:p1 a :Male ;
+t01119:p1
+  a :Male ;
   :dob "1925-08-19"^^xsd:date ;
   :dod "2014-06-06"^^xsd:date ;
   :nam "LOUWRENS LOUWE WOUDA" ;
-  :pob t01119:c1 ;
-  :pod t01119:c2 .
-
-t01119:s1 a :Cow.n.01 .
+  :pob [
+    a :Village.n.02 ;
+    :name "HOOGEMEEDEN" ;
+    :place place:Hoogemeeden2753738
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] .
 

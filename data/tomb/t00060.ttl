@@ -1,63 +1,60 @@
 @prefix t00060: <https://noordergraf.rug.nl/tomb/t00060#> .
 
-tomb:t00060 a :Tomb ;
-  :image t00060:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00060:p1 ,
-       t00060:p2 ,
-       t00060:p3 ;
-  :ref t00060:v1 .
+tomb:t00060
+  a :Tomb ;
+  :ent t00060:p1, t00060:p2, t00060:p3 ;
+  :image [
+    dc:date "2019-09-27T17:29:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00060.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1637 ;
+      geo:long 6.6152
+    ] ;
+    :nd "+53.1637+006.6152"^^ll:
+  ] ;
+  :ref t00060:v1 ;
+  :site site:gr9752CMharen .
 
-t00060:b1 a :John.n.05 ;
-  :prt t00060:c1 .
-
-t00060:c1 a :Chapter.n.01 ;
-  :ord 16 ;
-  :prt t00060:v1 .
-
-t00060:p1 a :Female ;
+t00060:p1
+  a :Female ;
   :dob "1923-11-07"^^xsd:date ;
   :dod "1985-10-03"^^xsd:date ;
   :nam "GRIETJE NICOLAI" ;
-  :rol t00060:r1 .
+  :rol [
+    a :Mother.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00060:p2 a :Male ;
+t00060:p2
+  a :Male ;
   :dob "1925-09-13"^^xsd:date ;
   :dod "1998-02-05"^^xsd:date ;
   :nam "PIETER DIJKSTRA" ;
-  :rol t00060:r2 ,
-       t00060:r3 .
+  :rol [
+    a :Father.n.01 ;
+    :att "TOEGEWIJDE"
+  ], [
+    a :Husband.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00060:p3
+  ] .
 
-t00060:p3 a :Female ;
+t00060:p3
+  a :Female ;
   :nam "C.J. DEN HEETEN" .
 
-t00060:r1 a :Mother.n.01 ;
-  :att "LIEVE" .
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 16 ;
+    :prt t00060:v1
+  ] .
 
-t00060:r2 a :Father.n.01 ;
-  :att "TOEGEWIJDE" .
-
-t00060:r3 a :Husband.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00060:p3 .
-
-t00060:v1 a :Verse.n.01 ;
+t00060:v1
+  a :Verse.n.01 ;
   :ord 3 .
-
-t00060:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00060.jpg" ;
-  dc:date "2019-09-27T17:29:25"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1637 ;
-    geo:long 6.6152
-  ] ;
-  :nd "+53.1637+006.6152"^^ll: .
 

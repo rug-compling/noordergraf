@@ -1,44 +1,40 @@
 @prefix t00544: <https://noordergraf.rug.nl/tomb/t00544#> .
 
-tomb:t00544 a :Tomb ;
-  :image t00544:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00544:p1 ,
-       t00544:p2 ;
-  :lan "NLD" .
+tomb:t00544
+  a :Tomb ;
+  :ent t00544:p1, t00544:p2 ;
+  :image [
+    dc:date "2019-11-24T14:03:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00544.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1046 ;
+      geo:long 6.8757
+    ] ;
+    :nd "+53.1046+006.8757"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9641ANveendam .
 
-t00544:m1 a :Measure.n.02 ;
-  :mem t00544:u1 ;
-  :qua 54 .
-
-t00544:p1 a :Female ;
-  :age t00544:m1 ;
+t00544:p1
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 54
+  ] ;
   :dod "1853-12-24"^^xsd:date ;
   :nam "JANTJE DEDDES" ;
-  :rol t00544:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00544:p2
+  ] .
 
-t00544:p2 a :Male ;
+t00544:p2
+  a :Male ;
   :nam "K. WILKENS" .
-
-t00544:r1 a :Spouse.n.01 ;
-  :tgt t00544:p2 .
-
-t00544:u1 a :Year.n.01 .
-
-t00544:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00544.jpg" ;
-  dc:date "2019-11-24T14:03:19"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1046 ;
-    geo:long 6.8757
-  ] ;
-  :nd "+53.1046+006.8757"^^ll: .
 

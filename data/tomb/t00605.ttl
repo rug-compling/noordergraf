@@ -1,68 +1,63 @@
 @prefix t00605: <https://noordergraf.rug.nl/tomb/t00605#> .
 
-tomb:t00605 a :Tomb ;
-  :image t00605:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00605:p1 ,
-       t00605:p2 ,
-       t00605:p3 ;
+tomb:t00605
+  a :Tomb ;
+  :ent t00605:p1, t00605:p2, t00605:p3 ;
+  :image [
+    dc:date "2019-11-23T10:07:01"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00605.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1642 ;
+      geo:long 6.7540
+    ] ;
+    :nd "+53.1642+006.7540"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00605:s1 ,
-       t00605:s2 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Column.n.01 ;
+    :att [
+      a :Broken.a.01
+    ]
+  ] .
 
-t00605:a1 a :Weeping.a.02 .
-
-t00605:a2 a :Broken.a.01 .
-
-t00605:c1 a :Village.n.02 ;
-  :place place:Kropswolde2752217 ;
-  :name "KROPSWOLDE" .
-
-t00605:c2 a :Town.n.01 ;
-  :place place:Hoogezand2753706 ;
-  :name "HOOGEZAND" .
-
-t00605:p1 a :Male ;
+t00605:p1
+  a :Male ;
   :dob "1837-09-01"^^xsd:date ;
   :dod "1898-06-20"^^xsd:date ;
   :nam "JAN NIJBOER" ;
-  :pob t00605:c1 ;
-  :pod t00605:c2 ;
-  :rol t00605:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "KROPSWOLDE" ;
+    :place place:Kropswolde2752217
+  ] ;
+  :pod [
+    a :Town.n.01 ;
+    :name "HOOGEZAND" ;
+    :place place:Hoogezand2753706
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00605:p2
+  ] .
 
-t00605:p2 a :Female ;
+t00605:p2
+  a :Female ;
   :nam "TRIJNTJE VISSCHER" .
 
-t00605:p3 a :Person ;
+t00605:p3
+  a :Person ;
   :nam "L.F. DE WIJS" ;
-  :occ t00605:r2 .
-
-t00605:r1 a :Widower.n.01 ;
-  :tgt t00605:p2 .
-
-t00605:r2 a :Designer.n.01 ;
-  :tgt tomb:t00605 .
-
-t00605:s1 a :Willow.n.01 ;
-  :att t00605:a1 .
-
-t00605:s2 a :Column.n.01 ;
-  :att t00605:a2 .
-
-t00605:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00605.jpg" ;
-  dc:date "2019-11-23T10:07:01"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1642 ;
-    geo:long 6.7540
-  ] ;
-  :nd "+53.1642+006.7540"^^ll: .
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00605
+  ] .
 

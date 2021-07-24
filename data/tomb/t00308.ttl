@@ -1,48 +1,43 @@
 @prefix t00308: <https://noordergraf.rug.nl/tomb/t00308#> .
 
-tomb:t00308 a :Tomb ;
-  :image t00308:im1 ;
-  :site site:dr7907CHhoogeveen ;
+tomb:t00308
+  a :Tomb ;
   :ent t00308:p1 ;
+  :image [
+    dc:date "2019-10-19T14:21:04"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00308.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7158 ;
+      geo:long 6.4738
+    ] ;
+    :nd "+52.7158+006.4738"^^ll:
+  ] ;
   :ref "PSALM 90:4,5,6" ;
-  :sym t00308:s1 .
+  :site site:dr7907CHhoogeveen ;
+  :sym [
+    a :Frond.n.01 ;
+    :att [
+      a :Broken.a.01
+    ]
+  ] .
 
-t00308:c1 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00308:m a :Broken.a.01 .
-
-t00308:p1 a :Male ;
+t00308:p1
+  a :Male ;
   :dob "1911-04-18"^^xsd:date ;
   :dod "1933-01-10"^^xsd:date ;
   :nam "KLAAS ENGBERTS" ;
-  :pob t00308:c1 ;
-  :rol t00308:r1 ,
-       t00308:r2 .
-
-t00308:r1 a :Son.n.01 ;
-  :att "LIEVE" .
-
-t00308:r2 a :Brother.n.01 .
-
-t00308:s1 a :Frond.n.01 ;
-  :att t00308:m .
-
-t00308:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00308.jpg" ;
-  dc:date "2019-10-19T14:21:04"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7158 ;
-    geo:long 6.4738
+  :pob [
+    a :Town.n.01 ;
+    :name "HOOGEVEEN" ;
+    :place place:Hoogeveen2753719
   ] ;
-  :nd "+52.7158+006.4738"^^ll: .
+  :rol [
+    a :Son.n.01 ;
+    :att "LIEVE"
+  ], [
+    a :Brother.n.01
+  ] .
 

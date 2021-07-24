@@ -1,56 +1,52 @@
 @prefix t00919: <https://noordergraf.rug.nl/tomb/t00919#> .
 
-tomb:t00919 a :Tomb ;
-  :image t00919:im1 ;
+tomb:t00919
+  a :Tomb ;
+  :ent t00919:p1, t00919:p2 ;
+  :image [
+    dc:date "2020-03-07T14:03:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00919.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1715 ;
+      geo:long 6.3652
+    ] ;
+    :nd "+53.1715+006.3652"^^ll:
+  ] ;
+  :quo "RUST ZACHT BROER EN ZUSTER"@nld, "RUSTPLAATS VAN $p1 $p2"@nld ;
   :site site:gr9351RLtolbert ;
-  :ent t00919:p1 ,
-       t00919:p2 ;
-  :quo "RUST ZACHT BROER EN ZUSTER"@nld ,
-       "RUSTPLAATS VAN $p1 $p2"@nld ;
-  :sym t00919:s1 .
+  :sym [
+    a :Oak.n.03
+  ] .
 
-t00919:c1 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00919:p1 a :Male ;
+t00919:p1
+  a :Male ;
   :dob "1865-10-27"^^xsd:date ;
   :dod "1938-12-13"^^xsd:date ;
   :nam "GEERT HOLMERSMA" ;
   :pob t00919:c1 ;
   :pod t00919:c1 ;
-  :rol t00919:r1 .
+  :rol [
+    a :Brother.n.01 ;
+    :tgt t00919:p2
+  ] .
 
-t00919:p2 a :Female ;
+t00919:p2
+  a :Female ;
   :dob "1870-04-18"^^xsd:date ;
   :dod "1934-02-267" ;
   :nam "GEESKE HOLMERSMA" ;
   :pob t00919:c1 ;
   :pod t00919:c1 ;
-  :rol t00919:r2 .
+  :rol [
+    a :Sister.n.01 ;
+    :tgt t00919:p2
+  ] .
 
-t00919:r1 a :Brother.n.01 ;
-  :tgt t00919:p2 .
-
-t00919:r2 a :Sister.n.01 ;
-  :tgt t00919:p2 .
-
-t00919:s1 a :Oak.n.03 .
-
-t00919:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00919.jpg" ;
-  dc:date "2020-03-07T14:03:32"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1715 ;
-    geo:long 6.3652
-  ] ;
-  :nd "+53.1715+006.3652"^^ll: .
+t00919:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 

@@ -1,56 +1,54 @@
 @prefix t00338: <https://noordergraf.rug.nl/tomb/t00338#> .
 
-tomb:t00338 a :Tomb ;
-  :image t00338:im1 ;
-  :site site:dr7907CHhoogeveen ;
+tomb:t00338
+  a :Tomb ;
   :ent t00338:p1 ;
+  :image [
+    dc:date "2019-10-19T14:10:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00338.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7154 ;
+      geo:long 6.4729
+    ] ;
+    :nd "+52.7154+006.4729"^^ll:
+  ] ;
   :ref t00338:v1 ;
-  :sym t00338:s1 .
+  :site site:dr7907CHhoogeveen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00338:a1 a :Weeping.a.02 .
-
-t00338:b1 a :John.n.05 ;
-  :prt t00338:c3 .
-
-t00338:c1 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00338:c2 a :City.n.01 ;
-  :place place:Utrecht2745912 ;
-  :name "UTRECHT" .
-
-t00338:c3 a :Chapter.n.01 ;
-  :ord 6 ;
-  :prt t00338:v1 .
-
-t00338:p1 a :Female ;
+t00338:p1
+  a :Female ;
   :dob "1861-09-04"^^xsd:date ;
   :dod "1918-01-26"^^xsd:date ;
   :nam "JENTJE WINKEL" ;
-  :pob t00338:c1 ;
-  :pod t00338:c2 .
-
-t00338:s1 a :Willow.n.01 ;
-  :att t00338:a1 .
-
-t00338:v1 a :Verse.n.01 ;
-  :ord 47 .
-
-t00338:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00338.jpg" ;
-  dc:date "2019-10-19T14:10:13"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7154 ;
-    geo:long 6.4729
+  :pob [
+    a :Town.n.01 ;
+    :name "HOOGEVEEN" ;
+    :place place:Hoogeveen2753719
   ] ;
-  :nd "+52.7154+006.4729"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "UTRECHT" ;
+    :place place:Utrecht2745912
+  ] .
+
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 6 ;
+    :prt t00338:v1
+  ] .
+
+t00338:v1
+  a :Verse.n.01 ;
+  :ord 47 .
 

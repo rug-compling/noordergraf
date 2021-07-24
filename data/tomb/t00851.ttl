@@ -1,54 +1,47 @@
 @prefix t00851: <https://noordergraf.rug.nl/tomb/t00851#> .
 
-tomb:t00851 a :Tomb ;
-  :image t00851:im1 ;
-  :site site:dr7841CDsleen ;
-  :ent t00851:p1 ,
-       t00851:p2 ;
+tomb:t00851
+  a :Tomb ;
+  :ent t00851:p1, t00851:p2 ;
+  :image [
+    dc:date "2020-02-15T15:46:39"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00851.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7761 ;
+      geo:long 6.8015
+    ] ;
+    :nd "+52.7761+006.8015"^^ll:
+  ] ;
   :quo "WIJ VERWACHTEN ECHTER \\ NAAR ZIJN BELOFTE \\ NIEUWE HEMELEN \\ EN EEN NIEUWE AARDE \\ WAAR GERECHTIGHEID WOONT."@nld ;
   :ref "2 PETRUS 3:13"@nld ;
-  :sym t00851:s1 .
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00851:p1 a :Male ;
+t00851:p1
+  a :Male ;
   :dob "1899-08-22"^^xsd:date ;
   :dod "1967-12-15"^^xsd:date ;
   :nam "ALBERT WILTING" ;
-  :rol t00851:r1 ,
-       t00851:r2 ,
-       t00851:r3 ,
-       t00851:r4 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00851:p2
+  ], [
+    a :Father.n.01
+  ], [
+    a :Grandfather.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00851:p2
+  ] .
 
-t00851:p2 a :Female ;
+t00851:p2
+  a :Female ;
   :nam "ROELOFJE HUIJING" .
-
-t00851:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00851:p2 .
-
-t00851:r2 a :Father.n.01 .
-
-t00851:r3 a :Grandfather.n.01 .
-
-t00851:r4 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00851:p2 .
-
-t00851:s1 a :Frond.n.01 .
-
-t00851:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00851.jpg" ;
-  dc:date "2020-02-15T15:46:39"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7761 ;
-    geo:long 6.8015
-  ] ;
-  :nd "+52.7761+006.8015"^^ll: .
 

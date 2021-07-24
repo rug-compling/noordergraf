@@ -1,61 +1,55 @@
 @prefix t00848: <https://noordergraf.rug.nl/tomb/t00848#> .
 
-tomb:t00848 a :Tomb ;
-  :image t00848:im1 ;
-  :site site:fr8899AWoost_vlieland ;
-  :ent t00848:p1 ,
-       t00848:p2 ;
+tomb:t00848
+  a :Tomb ;
+  :ent t00848:p1, t00848:p2 ;
+  :image [
+    dc:date "2020-02-20T14:41:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00848.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2955 ;
+      geo:long 5.0653
+    ] ;
+    :nd "+53.2955+005.0653"^^ll:
+  ] ;
   :quo "DAT ZIJ RUSTEN MOGEN IN DEN \\ HEERE DEN HEILAND"@nld ;
   :ref "GEZANG 263:4"@nld ;
-  :sym t00848:s1 .
+  :site site:fr8899AWoost_vlieland ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00848:a1 a :Weeping.a.02 .
-
-t00848:p1 a :Female ;
+t00848:p1
+  a :Female ;
   :dob "1854-10-09"^^xsd:date ;
   :dod "1937-10-04"^^xsd:date ;
   :nam "BREGJE BAKKER" ;
-  :rol t00848:r1 ,
-       t00848:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00848:p3
+  ], [
+    a :Grandparent.n.01 ;
+    :tgt t00848:p3
+  ] .
 
-t00848:p2 a :Male ;
+t00848:p2
+  a :Male ;
   :dob "1854-09-07"^^xsd:date ;
   :dod "1944-05-19"^^xsd:date ;
   :nam "GERRIT KRIJTENBURG" ;
-  :rol t00848:r3 ,
-       t00848:r4 .
-
-t00848:r1 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00848:p3 .
-
-t00848:r2 a :Grandparent.n.01 ;
-  :tgt t00848:p3 .
-
-t00848:r3 a :Parent.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00848:p3 .
-
-t00848:r4 a :Grandparent.n.01 ;
-  :tgt t00848:p3 .
-
-t00848:s1 a :Willow.n.01 ;
-  :att t00848:a1 .
-
-t00848:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00848.jpg" ;
-  dc:date "2020-02-20T14:41:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2955 ;
-    geo:long 5.0653
-  ] ;
-  :nd "+53.2955+005.0653"^^ll: .
+  :rol [
+    a :Parent.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00848:p3
+  ], [
+    a :Grandparent.n.01 ;
+    :tgt t00848:p3
+  ] .
 

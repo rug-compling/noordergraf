@@ -1,64 +1,57 @@
 @prefix t00941: <https://noordergraf.rug.nl/tomb/t00941#> .
 
-tomb:t00941 a :Tomb ;
-  :image t00941:im1 ;
-  :site site:gr9696XGoudeschans ;
-  :ent t00941:g1 ,
-       t00941:g2 ,
-       t00941:p1 ,
-       t00941:p2 ,
-       t00941:p3 ,
-       t00941:p4 ;
+tomb:t00941
+  a :Tomb ;
+  :ent t00941:p1, t00941:p2, t00941:p3, t00941:p4, [
+    a :Group.n.01 ;
+    :mem t00941:p1, t00941:p2 ;
+    :rol [
+      a :Son.n.01 ;
+      :tgt t00941:g2
+    ]
+  ], t00941:g2 ;
+  :image [
+    dc:date "2020-03-21T13:24:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00941.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1383 ;
+      geo:long 7.1431
+    ] ;
+    :nd "+53.1383+007.1431"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00941:s1 .
+  :site site:gr9696XGoudeschans ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00941:a1 a :Weeping.a.02 .
-
-t00941:g1 a :Group.n.01 ;
-  :mem t00941:p1 ,
-       t00941:p2 ;
-  :rol t00941:r1 .
-
-t00941:g2 a :Group.n.01 ;
-  :mem t00941:p3 ,
-       t00941:p4 .
-
-t00941:p1 a :Male ;
+t00941:p1
+  a :Male ;
   :dob "1898-03-09"^^xsd:date ;
   :dod "1898-04-12"^^xsd:date ;
   :nam "GEERT FEKKO" .
 
-t00941:p2 a :Male ;
+t00941:p2
+  a :Male ;
   :dob "1900-07-10"^^xsd:date ;
   :dod "1900-07-25"^^xsd:date ;
   :nam "GEERT FEKKO" .
 
-t00941:p3 a :Person ;
+t00941:p3
+  a :Person ;
   :nam "B. HINDRIKS" .
 
-t00941:p4 a :Person ;
+t00941:p4
+  a :Person ;
   :nam "M. FEKKERS" .
 
-t00941:r1 a :Son.n.01 ;
-  :tgt t00941:g2 .
-
-t00941:s1 a :Willow.n.01 ;
-  :att t00941:a1 .
-
-t00941:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00941.jpg" ;
-  dc:date "2020-03-21T13:24:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1383 ;
-    geo:long 7.1431
-  ] ;
-  :nd "+53.1383+007.1431"^^ll: .
+t00941:g2
+  a :Group.n.01 ;
+  :mem t00941:p3, t00941:p4 .
 

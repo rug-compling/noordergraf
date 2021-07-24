@@ -1,49 +1,46 @@
 @prefix t00961: <https://noordergraf.rug.nl/tomb/t00961#> .
 
-tomb:t00961 a :Tomb ;
-  :image t00961:im1 ;
-  :ent t00961:p1 ,
-       t00961:p2 ;
+tomb:t00961
+  a :Tomb ;
+  :ent t00961:p1, t00961:p2 ;
+  :image [
+    dc:date "2020-03-25T09:37:01"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00961.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0953 ;
+      geo:long 6.6082
+    ] ;
+    :nd "+53.0953+006.6082"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00961:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00961:a1 a :Weeping.a.02 .
-
-t00961:c1 a :Village.n.02 ;
-  :place place:Noordlaren2749857 ;
-  :name "NOORDLAREN" .
-
-t00961:p1 a :Female ;
+t00961:p1
+  a :Female ;
   :dob "1885-04-13"^^xsd:date ;
   :dod "1955-12-10"^^xsd:date ;
   :nam "ROELFIEN TINGE" ;
   :pob t00961:c1 ;
   :pod t00961:c1 ;
-  :rol t00961:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00961:p2
+  ] .
 
-t00961:p2 a :Male ;
+t00961:p2
+  a :Male ;
   :nam "DERK EISSES" .
 
-t00961:r1 a :Widow.n.01 ;
-  :tgt t00961:p2 .
-
-t00961:s1 a :Willow.n.01 ;
-  :att t00961:a1 .
-
-t00961:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00961.jpg" ;
-  dc:date "2020-03-25T09:37:01"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0953 ;
-    geo:long 6.6082
-  ] ;
-  :nd "+53.0953+006.6082"^^ll: .
+t00961:c1
+  a :Village.n.02 ;
+  :name "NOORDLAREN" ;
+  :place place:Noordlaren2749857 .
 

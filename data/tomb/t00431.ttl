@@ -1,52 +1,49 @@
 @prefix t00431: <https://noordergraf.rug.nl/tomb/t00431#> .
 
-tomb:t00431 a :Tomb ;
-  :image t00431:im1 ;
-  :site site:fr9166NAschiermonnikoog ;
-  :ent t00431:p1 ,
-       t00431:p2 ,
-       t00431:p3 ;
-  :quo t00431:q1 .
+tomb:t00431
+  a :Tomb ;
+  :ent t00431:p1, t00431:p2, t00431:p3 ;
+  :image [
+    dc:date "2019-11-02T11:46:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00431.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4790 ;
+      geo:long 6.1608
+    ] ;
+    :nd "+53.4790+006.1608"^^ll:
+  ] ;
+  :quo t00431:q1 ;
+  :site site:fr9166NAschiermonnikoog .
 
-t00431:o2 a :Author.n.01 ;
-  :hco "15120" ;
-  :tgt t00431:q1 .
-
-t00431:p1 a :Female ;
+t00431:p1
+  a :Female ;
   :dob "1920-02-09"^^xsd:date ;
   :dod "1978-02-23"^^xsd:date ;
   :nam "TJITSKE P. TEENSMA" ;
-  :rol t00431:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00431:p2
+  ] .
 
-t00431:p2 a :Male ;
+t00431:p2
+  a :Male ;
   :dob "1926-05-17"^^xsd:date ;
   :dod "1999-01-15"^^xsd:date ;
   :nam "WIJNAND PAULUS DE JONG" .
 
-t00431:p3 a :Male ;
+t00431:p3
+  a :Male ;
   :nam "KAHLIL GIBRAN" ;
-  :occ t00431:o2 .
+  :occ [
+    a :Author.n.01 ;
+    :hco "15120" ;
+    :tgt t00431:q1
+  ] .
 
-t00431:q1 a :Quote.n.02 ;
+t00431:q1
+  a :Quote.n.02 ;
   :txt "EN ALTIJD IS HET ZO GEWEEST, \\ DAT DE LIEFDE HAAR EIGEN DIEPTE \\ NIET KENT EN DAN OP HET UUR DER \\ SCHEIDING." .
-
-t00431:r1 a :Spouse.n.01 ;
-  :tgt t00431:p2 .
-
-t00431:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00431.jpg" ;
-  dc:date "2019-11-02T11:46:03"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4790 ;
-    geo:long 6.1608
-  ] ;
-  :nd "+53.4790+006.1608"^^ll: .
 

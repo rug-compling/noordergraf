@@ -1,48 +1,43 @@
 @prefix t00674: <https://noordergraf.rug.nl/tomb/t00674#> .
 
-tomb:t00674 a :Tomb ;
-  :image t00674:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00674:g2 ,
-       t00674:p1 ;
+tomb:t00674
+  a :Tomb ;
+  :ent t00674:p1, t00674:g2 ;
+  :image [
+    dc:date "2019-12-14T13:39:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00674.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0683 ;
+      geo:long 5.5218
+    ] ;
+    :nd "+53.0683+005.5218"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00674:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00674:g2 a :Group.n.01 ;
-  :rol t00674:r3 .
-
-t00674:p1 a :Female ;
+t00674:p1
+  a :Female ;
   :dob "1914-06-05"^^xsd:date ;
   :dod "1962-12-22"^^xsd:date ;
   :nam "FETTJE DE HAAN" ;
-  :rol t00674:r1 ,
-       t00674:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00674:g2
+  ], [
+    a :Grandmother.n.01
+  ] .
 
-t00674:r1 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00674:g2 .
-
-t00674:r2 a :Grandmother.n.01 .
-
-t00674:r3 a :Child.n.02 ;
-  :tgt t00674:p1 .
-
-t00674:s1 a :Frond.n.01 .
-
-t00674:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00674.jpg" ;
-  dc:date "2019-12-14T13:39:28"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0683 ;
-    geo:long 5.5218
-  ] ;
-  :nd "+53.0683+005.5218"^^ll: .
+t00674:g2
+  a :Group.n.01 ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00674:p1
+  ] .
 

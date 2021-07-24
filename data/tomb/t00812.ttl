@@ -1,50 +1,48 @@
 @prefix t00812: <https://noordergraf.rug.nl/tomb/t00812#> .
 
-tomb:t00812 a :Tomb ;
-  :image t00812:im1 ;
-  :site site:gr9741ACgroningen ;
+tomb:t00812
+  a :Tomb ;
   :ent t00812:p1 ;
-  :lan "NLD" .
+  :image [
+    dc:date "2020-02-01T12:33:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00812.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2304 ;
+      geo:long 6.5509
+    ] ;
+    :nd "+53.2304+006.5509"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9741ACgroningen .
 
-t00812:c1 a :City.n.01 ;
-  :place place:Bloomington5586244 ;
-  :name "BLOOMINGTON" .
-
-t00812:c2 a :State.n.01 ;
-  :place place:Idaho5596512 ;
-  :mem t00812:c1 ;
-  :name "IDAHO" .
-
-t00812:c3 a :Country.n.02 ;
-  :place place:VerenigdeStaten6252001 ;
-  :mem t00812:c2 ;
-  :name "VERENIGDE STATEN" .
-
-t00812:c4 a :Town.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00812:p1 a :Male ;
+t00812:p1
+  a :Male ;
   :dob "1885-02-05"^^xsd:date ;
   :dod "1906-04-29"^^xsd:date ;
   :nam "MELVIN HUGH WELKER" ;
   :pob t00812:c1 ;
-  :pod t00812:c4 .
+  :pod [
+    a :Town.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] .
 
-t00812:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00812.jpg" ;
-  dc:date "2020-02-01T12:33:11"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2304 ;
-    geo:long 6.5509
+t00812:c1
+  a :City.n.01 ;
+  :name "BLOOMINGTON" ;
+  :place place:Bloomington5586244 .
+
+[]
+  a :Country.n.02 ;
+  :mem [
+    a :State.n.01 ;
+    :mem t00812:c1 ;
+    :name "IDAHO" ;
+    :place place:Idaho5596512
   ] ;
-  :nd "+53.2304+006.5509"^^ll: .
+  :name "VERENIGDE STATEN" ;
+  :place place:VerenigdeStaten6252001 .
 

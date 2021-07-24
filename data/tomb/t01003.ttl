@@ -1,55 +1,51 @@
 @prefix t01003: <https://noordergraf.rug.nl/tomb/t01003#> .
 
-tomb:t01003 a :Tomb ;
-  :image t01003:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t01003:p1 ,
-       t01003:p2 ;
+tomb:t01003
+  a :Tomb ;
+  :ent t01003:p1, t01003:p2 ;
+  :image [
+    dc:date "2020-04-04T10:52:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01003.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1762 ;
+      geo:long 7.0952
+    ] ;
+    :nd "+53.1762+007.0952"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t01003:s1 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01003:a1 a :Weeping.a.02 .
-
-t01003:c1 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t01003:c2 a :Village.n.02 ;
-  :place place:Beerta2759298 ;
-  :name "BEERTA" .
-
-t01003:p1 a :Male ;
+t01003:p1
+  a :Male ;
   :dob "1857-08-12"^^xsd:date ;
   :dod "1946-12-18"^^xsd:date ;
   :nam "FREDERIK SCHUTTER" ;
-  :pob t01003:c1 ;
-  :pod t01003:c2 ;
-  :rol t01003:r1 .
-
-t01003:p2 a :Female ;
-  :nam "ANTKE KLAASSENS" .
-
-t01003:r1 a :Widower.n.01 ;
-  :beg "12-02-1939" ;
-  :tgt t01003:p2 .
-
-t01003:s1 a :Willow.n.01 ;
-  :att t01003:a1 .
-
-t01003:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01003.jpg" ;
-  dc:date "2020-04-04T10:52:48"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1762 ;
-    geo:long 7.0952
+  :pob [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
   ] ;
-  :nd "+53.1762+007.0952"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "BEERTA" ;
+    :place place:Beerta2759298
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :beg "12-02-1939" ;
+    :tgt t01003:p2
+  ] .
+
+t01003:p2
+  a :Female ;
+  :nam "ANTKE KLAASSENS" .
 

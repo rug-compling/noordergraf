@@ -1,54 +1,50 @@
 @prefix t00267: <https://noordergraf.rug.nl/tomb/t00267#> .
 
-tomb:t00267 a :Tomb ;
-  :image t00267:im1 ;
+tomb:t00267
+  a :Tomb ;
+  :ent t00267:p1, t00267:p2 ;
+  :image [
+    dc:date "2019-10-14T11:05:07"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00267.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2224 ;
+      geo:long 6.6367
+    ] ;
+    :nd "+53.2224+006.6367"^^ll:
+  ] ;
   :site site:gr9723EWgroningen ;
-  :ent t00267:p1 ,
-       t00267:p2 ;
-  :sym t00267:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00267:a1 a :Weeping.a.02 .
-
-t00267:c1 a :Hamlet.n.03 ;
-  :place place:Lageland11746820 ;
-  :name "LAGELAND" .
-
-t00267:c2 a :Hamlet.n.03 ;
-  :place place:Euvelgunne2755982 ;
-  :name "EUVELGUNNE" .
-
-t00267:p1 a :Male ;
+t00267:p1
+  a :Male ;
   :dob "1827-08-28"^^xsd:date ;
   :dod "1912-01-14"^^xsd:date ;
   :nam "ALBERT UITHAM" ;
-  :pob t00267:c1 ;
-  :pod t00267:c2 ;
-  :rol t00267:r1 .
-
-t00267:p2 a :Female ;
-  :nam "AALTJE WOLDHUIS" .
-
-t00267:r1 a :Widower.n.01 ;
-  :beg "1874"^^xsd:gYear ;
-  :tgt t00267:p2 .
-
-t00267:s1 a :Willow.n.01 ;
-  :att t00267:a1 .
-
-t00267:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00267.jpg" ;
-  dc:date "2019-10-14T11:05:07"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2224 ;
-    geo:long 6.6367
+  :pob [
+    a :Hamlet.n.03 ;
+    :name "LAGELAND" ;
+    :place place:Lageland11746820
   ] ;
-  :nd "+53.2224+006.6367"^^ll: .
+  :pod [
+    a :Hamlet.n.03 ;
+    :name "EUVELGUNNE" ;
+    :place place:Euvelgunne2755982
+  ] ;
+  :rol [
+    a :Widower.n.01 ;
+    :beg "1874"^^xsd:gYear ;
+    :tgt t00267:p2
+  ] .
+
+t00267:p2
+  a :Female ;
+  :nam "AALTJE WOLDHUIS" .
 

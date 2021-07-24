@@ -1,21 +1,23 @@
 @prefix t01101: <https://noordergraf.rug.nl/tomb/t01101#> .
 
-tomb:t01101 a :Tomb ;
+tomb:t01101
+  a :Tomb ;
   :ent t01101:p1 ;
   :lan "NLD" .
 
-t01101:c1 a :Village.n.02 ;
-  :place place:Wamel2745054 ;
-  :name "WAMEL" .
-
-t01101:c2 a :Village.n.02 ;
-  :place place:Grijpskerk2755317 ;
-  :name "GRIJPSKERK" .
-
-t01101:p1 a :Female ;
+t01101:p1
+  a :Female ;
   :dob "1901-01-01"^^xsd:date ;
   :dod "1945-04-30"^^xsd:date ;
   :nam "HENDRIKA KERSTENS-GERRITSEN" ;
-  :pob t01101:c1 ;
-  :pod t01101:c2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "WAMEL" ;
+    :place place:Wamel2745054
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "GRIJPSKERK" ;
+    :place place:Grijpskerk2755317
+  ] .
 

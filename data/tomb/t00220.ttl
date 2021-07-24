@@ -1,56 +1,52 @@
 @prefix t00220: <https://noordergraf.rug.nl/tomb/t00220#> .
 
-tomb:t00220 a :Tomb ;
-  :image t00220:im1 ;
+tomb:t00220
+  a :Tomb ;
+  :ent t00220:p1, t00220:p2, t00220:p3, t00220:g1 ;
+  :image [
+    dc:date "2019-10-08T14:43:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00220.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6367
+    ] ;
+    :nd "+53.2225+006.6367"^^ll:
+  ] ;
   :site site:gr9723EWgroningen ;
-  :ent t00220:g1 ,
-       t00220:p1 ,
-       t00220:p2 ,
-       t00220:p3 ;
-  :sym t00220:s1 .
+  :sym [
+    a :Horse.n.01
+  ] .
 
-t00220:c1 a :Hamlet.n.03 ;
-  :place place:Euvelgunne2755982 ;
-  :name "EUVELGUNNE" .
-
-t00220:g1 a :Group.n.01 ;
-  :mem t00220:p2 ,
-       t00220:p3 .
-
-t00220:p1 a :Male ;
+t00220:p1
+  a :Male ;
   :dob "1838-12-02"^^xsd:date ;
   :dod "1866-01-12"^^xsd:date ;
   :nam "HARM E. KONING" ;
   :pob t00220:c1 ;
   :pod t00220:c1 ;
-  :rol t00220:r1 .
+  :rol [
+    a :Son.n.01 ;
+    :att "OUDSTE" ;
+    :tgt t00220:g1
+  ] .
 
-t00220:p2 a :Male ;
+t00220:p2
+  a :Male ;
   :nam "ELLE H. KONING" .
 
-t00220:p3 a :Female ;
+t00220:p3
+  a :Female ;
   :nam "JANTJE H. KOL" .
 
-t00220:r1 a :Son.n.01 ;
-  :att "OUDSTE" ;
-  :tgt t00220:g1 .
+t00220:c1
+  a :Hamlet.n.03 ;
+  :name "EUVELGUNNE" ;
+  :place place:Euvelgunne2755982 .
 
-t00220:s1 a :Horse.n.01 .
-
-t00220:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00220.jpg" ;
-  dc:date "2019-10-08T14:43:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2225 ;
-    geo:long 6.6367
-  ] ;
-  :nd "+53.2225+006.6367"^^ll: .
+t00220:g1
+  a :Group.n.01 ;
+  :mem t00220:p2, t00220:p3 .
 

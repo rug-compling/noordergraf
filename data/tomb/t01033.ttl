@@ -1,56 +1,54 @@
 @prefix t01033: <https://noordergraf.rug.nl/tomb/t01033#> .
 
-tomb:t01033 a :Tomb ;
-  :image t01033:im1 ;
-  :site site:gr9804TEnoordhorn ;
-  :ent t01033:p1 ,
-       t01033:p2 ;
+tomb:t01033
+  a :Tomb ;
+  :ent t01033:p1, t01033:p2 ;
+  :image [
+    dc:date "2020-04-19T12:03:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01033.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2644 ;
+      geo:long 6.3938
+    ] ;
+    :nd "+53.2644+006.3938"^^ll:
+  ] ;
   :lan "NLD" ;
   :ref t01033:v1 ;
-  :sym t01033:s1 .
+  :site site:gr9804TEnoordhorn ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t01033:a1 a :Weeping.a.02 .
-
-t01033:b1 a :Revelation.n.04 ;
-  :prt t01033:c1 .
-
-t01033:c1 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t01033:v1 .
-
-t01033:p1 a :Male ;
+t01033:p1
+  a :Male ;
   :dob "1844-11-28"^^xsd:date ;
   :dod "1922-12-30"^^xsd:date ;
   :nam "GERRIT FERINGA" ;
-  :rol t01033:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01033:p2
+  ] .
 
-t01033:p2 a :Female ;
+t01033:p2
+  a :Female ;
   :nam "TRIENTJE SCHEERINGA" .
 
-t01033:r1 a :Spouse.n.01 ;
-  :tgt t01033:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t01033:v1
+  ] .
 
-t01033:s1 a :Willow.n.01 ;
-  :att t01033:a1 .
-
-t01033:v1 a :Verse.n.01 ;
+t01033:v1
+  a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
-
-t01033:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01033.jpg" ;
-  dc:date "2020-04-19T12:03:56"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2644 ;
-    geo:long 6.3938
-  ] ;
-  :nd "+53.2644+006.3938"^^ll: .
 

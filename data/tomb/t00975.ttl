@@ -1,61 +1,54 @@
 @prefix t00975: <https://noordergraf.rug.nl/tomb/t00975#> .
 
-tomb:t00975 a :Tomb ;
-  :image t00975:im1 ;
-  :site site:gr9479TNnoordlaren ;
-  :ent t00975:p1 ,
-       t00975:p2 ;
+tomb:t00975
+  a :Tomb ;
+  :ent t00975:p1, t00975:p2 ;
+  :image [
+    dc:date "2020-03-25T09:27:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00975.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1201 ;
+      geo:long 6.6589
+    ] ;
+    :nd "+53.1201+006.6589"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00975:s1 ,
-       t00975:s2 ,
-       t00975:s3 ,
-       t00975:s4 .
+  :site site:gr9479TNnoordlaren ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Oak.n.03
+  ], [
+    a :Oak.n.03
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00975:c1 a :Village.n.02 ;
-  :place place:Borgercompagnie2758618 ;
-  :name "BORGERCOMPAGNIE" .
-
-t00975:c2 a :Village.n.02 ;
-  :place place:Noordlaren2749857 ;
-  :name "NOORDLAREN" .
-
-t00975:p1 a :Female ;
+t00975:p1
+  a :Female ;
   :dob "1823-07-08"^^xsd:date ;
   :dod "1875-02-05"^^xsd:date ;
   :nam "TIETJE LEENDERS" ;
-  :pob t00975:c1 ;
-  :pod t00975:c2 ;
-  :rol t00975:r1 .
-
-t00975:p2 a :Male ;
-  :nam "MELLE G. VROOM" .
-
-t00975:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00975:p2 .
-
-t00975:s1 a :Butterfly.n.01 .
-
-t00975:s2 a :Oak.n.03 .
-
-t00975:s3 a :Oak.n.03 .
-
-t00975:s4 a :Ribbon.n.01 .
-
-t00975:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00975.jpg" ;
-  dc:date "2020-03-25T09:27:23"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1201 ;
-    geo:long 6.6589
+  :pob [
+    a :Village.n.02 ;
+    :name "BORGERCOMPAGNIE" ;
+    :place place:Borgercompagnie2758618
   ] ;
-  :nd "+53.1201+006.6589"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "NOORDLAREN" ;
+    :place place:Noordlaren2749857
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00975:p2
+  ] .
+
+t00975:p2
+  a :Male ;
+  :nam "MELLE G. VROOM" .
 

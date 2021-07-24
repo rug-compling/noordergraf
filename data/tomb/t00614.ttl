@@ -1,70 +1,63 @@
 @prefix t00614: <https://noordergraf.rug.nl/tomb/t00614#> .
 
-tomb:t00614 a :Tomb ;
-  :image t00614:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00614:g1 ,
-       t00614:p1 ,
-       t00614:p2 ,
-       t00614:p3 ;
+tomb:t00614
+  a :Tomb ;
+  :ent t00614:p1, t00614:p2, t00614:p3, [
+    a :Group.n.01 ;
+    :mem t00614:p1, t00614:p2
+  ] ;
+  :image [
+    dc:date "2019-11-23T10:04:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00614.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1644 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1644+006.7541"^^ll:
+  ] ;
   :quo "ONZE BROER WERD ONVERWACHT \\ VAN'T LEVEN TOT \\ DEN DOOD GEBRACHT \\ MOCHTEN W' ALLEN \\ ZIJN BEREID \\ IN'T ROEPINGSUUR \\ VOOR D'EEUWIGHEID"@nld ;
-  :sym t00614:s1 ,
-       t00614:s2 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Column.n.01 ;
+    :att [
+      a :Broken.a.01
+    ]
+  ] .
 
-t00614:a1 a :Weeping.a.02 .
-
-t00614:a2 a :Broken.a.01 .
-
-t00614:c1 a :Hamlet.n.03 ;
-  :place place:Kalkwijk2753130 ;
-  :name "KALKWIJK" .
-
-t00614:c2 a :Village.n.02 ;
-  :place place:Sappemeer2747758 ;
-  :name "SAPPEMEER" .
-
-t00614:g1 a :Group.n.01 ;
-  :mem t00614:p1 ,
-       t00614:p2 .
-
-t00614:p1 a :Male ;
+t00614:p1
+  a :Male ;
   :dob "1873-01-23"^^xsd:date ;
   :dod "1903-09-02"^^xsd:date ;
   :nam "ABRAHAM PANNENBORG" ;
-  :pob t00614:c1 ;
-  :pod t00614:c2 ;
-  :rol t00614:r1 .
+  :pob [
+    a :Hamlet.n.03 ;
+    :name "KALKWIJK" ;
+    :place place:Kalkwijk2753130
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "SAPPEMEER" ;
+    :place place:Sappemeer2747758
+  ] ;
+  :rol [
+    a :Son.n.01 ;
+    :tgt t00614:g2
+  ] .
 
-t00614:p2 a :Male ;
+t00614:p2
+  a :Male ;
   :att "WIJLEN" ;
   :nam "R. PANNENBORG" .
 
-t00614:p3 a :Female ;
+t00614:p3
+  a :Female ;
   :nam "A. VOERMAN" .
-
-t00614:r1 a :Son.n.01 ;
-  :tgt t00614:g2 .
-
-t00614:s1 a :Willow.n.01 ;
-  :att t00614:a1 .
-
-t00614:s2 a :Column.n.01 ;
-  :att t00614:a2 .
-
-t00614:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00614.jpg" ;
-  dc:date "2019-11-23T10:04:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1644 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1644+006.7541"^^ll: .
 

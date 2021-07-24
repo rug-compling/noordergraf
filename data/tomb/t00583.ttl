@@ -1,56 +1,52 @@
 @prefix t00583: <https://noordergraf.rug.nl/tomb/t00583#> .
 
-tomb:t00583 a :Tomb ;
-  :image t00583:im1 ;
-  :site site:gr9951STwinsum ;
-  :ent t00583:p1 ,
-       t00583:p2 ,
-       t00583:p3 ;
+tomb:t00583
+  a :Tomb ;
+  :ent t00583:p1, t00583:p2, t00583:p3 ;
+  :image [
+    dc:date "2019-11-30T14:48:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00583.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3353 ;
+      geo:long 6.5128
+    ] ;
+    :nd "+53.3353+006.5128"^^ll:
+  ] ;
   :ref "PSALM 73:12" ;
-  :sym t00583:s1 .
+  :site site:gr9951STwinsum ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00583:a1 a :Weeping.a.02 .
-
-t00583:c1 a :Village.n.02 ;
-  :nam "BAFLO" .
-
-t00583:p1 a :Male ;
+t00583:p1
+  a :Male ;
   :dob "1891-06-25"^^xsd:date ;
   :dod "1919-03-07"^^xsd:date ;
   :nam "JAN PETTINGA" ;
-  :rol t00583:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00583:p2
+  ] .
 
-t00583:p2 a :Female ;
+t00583:p2
+  a :Female ;
   :nam "ANNECIEN SCHOLMA" .
 
-t00583:p3 a :Person ;
-  :loc t00583:c1 ;
-  :nam "BONJERNOUR" ;
-  :occ t00583:r2 .
-
-t00583:r1 a :Spouse.n.01 ;
-  :tgt t00583:p2 .
-
-t00583:r2 a :Designer.n.01 ;
-  :tgt tomb:t00583 .
-
-t00583:s1 a :Willow.n.01 ;
-  :att t00583:a1 .
-
-t00583:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00583.jpg" ;
-  dc:date "2019-11-30T14:48:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3353 ;
-    geo:long 6.5128
+t00583:p3
+  a :Person ;
+  :loc [
+    a :Village.n.02 ;
+    :nam "BAFLO"
   ] ;
-  :nd "+53.3353+006.5128"^^ll: .
+  :nam "BONJERNOUR" ;
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00583
+  ] .
 

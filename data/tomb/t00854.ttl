@@ -1,45 +1,40 @@
 @prefix t00854: <https://noordergraf.rug.nl/tomb/t00854#> .
 
-tomb:t00854 a :Tomb ;
-  :image t00854:im1 ;
+tomb:t00854
+  a :Tomb ;
+  :ent t00854:p1, t00854:p2 ;
+  :image [
+    dc:date "2020-02-15T15:38:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00854.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7755 ;
+      geo:long 6.8028
+    ] ;
+    :nd "+52.7755+006.8028"^^ll:
+  ] ;
+  :quo "AL IS OP AARDE, \\ HET LEVEN SCHOON \\ EENS ROEPT DE VADER \\ ONS ALLEN TOT ZIJN KROON"@nld, "RUST ZACHT"@nld ;
   :site site:dr7841CDsleen ;
-  :ent t00854:p1 ,
-       t00854:p2 ;
-  :quo "AL IS OP AARDE, \\ HET LEVEN SCHOON \\ EENS ROEPT DE VADER \\ ONS ALLEN TOT ZIJN KROON"@nld ,
-       "RUST ZACHT"@nld ;
-  :sym t00854:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00854:a1 a :Weeping.a.02 .
-
-t00854:p1 a :Male ;
+t00854:p1
+  a :Male ;
   :dob "1847-02-27"^^xsd:date ;
   :dod "1920-07-14"^^xsd:date ;
   :nam "THIJS DIJKS" ;
-  :rol t00854:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00854:p2
+  ] .
 
-t00854:p2 a :Female ;
+t00854:p2
+  a :Female ;
   :nam "ROELFIEN OLDENBEUVING" .
-
-t00854:r1 a :Spouse.n.01 ;
-  :tgt t00854:p2 .
-
-t00854:s1 a :Willow.n.01 ;
-  :att t00854:a1 .
-
-t00854:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00854.jpg" ;
-  dc:date "2020-02-15T15:38:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7755 ;
-    geo:long 6.8028
-  ] ;
-  :nd "+52.7755+006.8028"^^ll: .
 

@@ -1,62 +1,59 @@
 @prefix t00771: <https://noordergraf.rug.nl/tomb/t00771#> .
 
-tomb:t00771 a :Tomb ;
-  :image t00771:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00771:p1 ,
-       t00771:p2 ,
-       t00771:p3 ;
+tomb:t00771
+  a :Tomb ;
+  :ent t00771:p1, t00771:p2, t00771:p3 ;
+  :image [
+    dc:date "2019-12-21T13:04:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00771.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7821 ;
+      geo:long 6.8970
+    ] ;
+    :nd "+52.7821+006.8970"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00771:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00771:a1 a :Weeping.a.02 .
-
-t00771:c1 a :Village.n.02 ;
-  :place place:Weerdinge2744927 ;
-  :name "WEERDINGE" .
-
-t00771:c2 a :Town.n.01 ;
-  :place place:Emmen2756136 ;
-  :name "EMMEN" .
-
-t00771:p1 a :Female ;
+t00771:p1
+  a :Female ;
   :dob "1840-03-01"^^xsd:date ;
   :dod "1894-02-02"^^xsd:date ;
   :nam "GEERTJE BOS" ;
   :pob t00771:c1 ;
-  :pod t00771:c2 ;
-  :rol t00771:r1 .
+  :pod [
+    a :Town.n.01 ;
+    :name "EMMEN" ;
+    :place place:Emmen2756136
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00771:p2
+  ] .
 
-t00771:p2 a :Male ;
+t00771:p2
+  a :Male ;
   :nam "H. VRIEND" .
 
-t00771:p3 a :Male ;
+t00771:p3
+  a :Male ;
   :dob "1837-10-27"^^xsd:date ;
   :dod "1891-12-23"^^xsd:date ;
   :nam "WOLTER BOS" ;
   :pob t00771:c1 ;
   :pod t00771:c1 .
 
-t00771:r1 a :Spouse.n.01 ;
-  :tgt t00771:p2 .
-
-t00771:s1 a :Willow.n.01 ;
-  :att t00771:a1 .
-
-t00771:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00771.jpg" ;
-  dc:date "2019-12-21T13:04:58"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7821 ;
-    geo:long 6.8970
-  ] ;
-  :nd "+52.7821+006.8970"^^ll: .
+t00771:c1
+  a :Village.n.02 ;
+  :name "WEERDINGE" ;
+  :place place:Weerdinge2744927 .
 

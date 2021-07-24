@@ -1,55 +1,50 @@
 @prefix t00973: <https://noordergraf.rug.nl/tomb/t00973#> .
 
-tomb:t00973 a :Tomb ;
-  :image t00973:im1 ;
-  :site site:gr9479TNnoordlaren ;
-  :ent t00973:g1 ,
-       t00973:g2 ,
-       t00973:p1 ,
-       t00973:p2 ;
+tomb:t00973
+  a :Tomb ;
+  :ent t00973:p1, t00973:p2, t00973:g1, t00973:g2 ;
+  :image [
+    dc:date "2020-03-25T09:31:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00973.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1200 ;
+      geo:long 6.6582
+    ] ;
+    :nd "+53.1200+006.6582"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00973:s1 .
+  :site site:gr9479TNnoordlaren ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00973:a1 a :Weeping.a.02 .
-
-t00973:g1 a :Group.n.01 ;
-  :mem t00973:p2 ,
-       t00973:p3 ;
-  :rol t00973:r1 .
-
-t00973:g2 a :Group.n.01 ;
-  :rol t00973:r2 .
-
-t00973:p1 a :Male ;
+t00973:p1
+  a :Male ;
   :nam "JAN FLIERMAN" .
 
-t00973:p2 a :Female ;
+t00973:p2
+  a :Female ;
   :nam "BETJE SCHUILING" .
 
-t00973:r1 a :Parent.n.01 ;
-  :tgt t00973:g2 .
+t00973:g1
+  a :Group.n.01 ;
+  :mem t00973:p2, t00973:p3 ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00973:g2
+  ] .
 
-t00973:r2 a :Child.n.02 ;
-  :att "DANKBARE" ;
-  :tgt t00973:g1 .
-
-t00973:s1 a :Willow.n.01 ;
-  :att t00973:a1 .
-
-t00973:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00973.jpg" ;
-  dc:date "2020-03-25T09:31:26"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1200 ;
-    geo:long 6.6582
-  ] ;
-  :nd "+53.1200+006.6582"^^ll: .
+t00973:g2
+  a :Group.n.01 ;
+  :rol [
+    a :Child.n.02 ;
+    :att "DANKBARE" ;
+    :tgt t00973:g1
+  ] .
 

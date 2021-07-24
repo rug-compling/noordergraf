@@ -1,57 +1,50 @@
 @prefix t00389: <https://noordergraf.rug.nl/tomb/t00389#> .
 
-tomb:t00389 a :Tomb ;
-  :image t00389:im1 ;
-  :site site:fr9285TCbuitenpost ;
-  :ent t00389:p1 ,
-       t00389:p2 ;
+tomb:t00389
+  a :Tomb ;
+  :ent t00389:p1, t00389:p2 ;
+  :image [
+    dc:date "2019-10-26T14:49:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00389.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2516 ;
+      geo:long 6.1447
+    ] ;
+    :nd "+53.2516+006.1447"^^ll:
+  ] ;
   :quo "DE HEAR IS MIJN HOEDER"@fry ;
-  :sym t00389:s1 .
+  :site site:fr9285TCbuitenpost ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ]
+  ] .
 
-t00389:p1 a :Male ;
+t00389:p1
+  a :Male ;
   :dob "1927-06-04"^^xsd:date ;
   :dod "2010-08-12"^^xsd:date ;
   :nam "JAN WALTJE" ;
-  :rol t00389:r1 ,
-       t00389:r2 .
+  :rol [
+    a :Father.n.01
+  ], [
+    a :Grandfather.n.01
+  ] .
 
-t00389:p2 a :Female ;
+t00389:p2
+  a :Female ;
   :dob "1930-02-20"^^xsd:date ;
   :dod "2018-04-19"^^xsd:date ;
   :nam "HEMMA KUGEL" ;
-  :rol t00389:r3 ,
-       t00389:r4 .
-
-t00389:r1 a :Father.n.01 .
-
-t00389:r2 a :Grandfather.n.01 .
-
-t00389:r3 a :Mother.n.01 .
-
-t00389:r4 a :Grandmother.n.01 .
-
-t00389:s1 a :Composite.n.01 ;
-  :prt t00389:s2 ,
-       t00389:s3 .
-
-t00389:s2 a :Frond.n.01 .
-
-t00389:s3 a :Frond.n.01 .
-
-t00389:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00389.jpg" ;
-  dc:date "2019-10-26T14:49:10"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2516 ;
-    geo:long 6.1447
-  ] ;
-  :nd "+53.2516+006.1447"^^ll: .
+  :rol [
+    a :Mother.n.01
+  ], [
+    a :Grandmother.n.01
+  ] .
 

@@ -1,92 +1,92 @@
 @prefix t01065: <https://noordergraf.rug.nl/tomb/t01065#> .
 
-tomb:t01065 a :Tomb ;
-  :image t01065:im1 ;
-  :site site:gr9975VRvierhuizen ;
-  :ent t01065:p1 ,
-       t01065:p2 ;
-  :lan "NLD" .
+tomb:t01065
+  a :Tomb ;
+  :ent t01065:p1, t01065:p2 ;
+  :image [
+    dc:date "2020-05-02T15:53:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01065.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3609 ;
+      geo:long 6.2929
+    ] ;
+    :nd "+53.3609+006.2929"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9975VRvierhuizen .
 
-t01065:b1 a :Revelation.n.04 ;
-  :prt t01065:c3 .
-
-t01065:b2 a :Epistle_to_the_Romans.n.04 ;
-  :prt t01065:c6 .
-
-t01065:c1 a :Village.n.02 ;
-  :place place:Engwierum2756081 ;
-  :name "ENGWIERUM" .
-
-t01065:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t01065:c3 a :Chapter.n.01 ;
-  :ord 22 ;
-  :prt t01065:v1 .
-
-t01065:c4 a :Village.n.02 ;
-  :place place:Lutjegast2751376 ;
-  :name "LUTJEGAST" .
-
-t01065:c5 a :Village.n.02 ;
-  :place place:Ulrum2745944 ;
-  :name "ULRUM" .
-
-t01065:c6 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t01065:v3 .
-
-t01065:p1 a :Male ;
+t01065:p1
+  a :Male ;
   :dob "1888-05-31"^^xsd:date ;
   :dod "1932-06-20"^^xsd:date ;
   :nam "LUBBE DE BRAAK" ;
-  :pob t01065:c1 ;
-  :pod t01065:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ENGWIERUM" ;
+    :place place:Engwierum2756081
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
   :ref t01065:v1 ;
-  :rol t01065:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t01065:p2
+  ] .
 
-t01065:p2 a :Female ;
+t01065:p2
+  a :Female ;
   :dob "1887-10-05"^^xsd:date ;
   :dod "1975-07-28"^^xsd:date ;
   :nam "JANTJE RENKEMA" ;
-  :pob t01065:c4 ;
-  :pod t01065:c5 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "LUTJEGAST" ;
+    :place place:Lutjegast2751376
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "ULRUM" ;
+    :place place:Ulrum2745944
+  ] ;
   :ref t01065:v2 ;
-  :rol t01065:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t01065:p1
+  ] .
 
-t01065:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t01065:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 22 ;
+    :prt t01065:v1
+  ] .
 
-t01065:r2 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t01065:p1 .
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt [
+      a :Verse.n.01 ;
+      :ord 8 ;
+      :prt t01065:v2
+    ]
+  ] .
 
-t01065:v1 a :Verse.n.01 ;
+t01065:v1
+  a :Verse.n.01 ;
   :ord 20 .
 
-t01065:v2 a :Part.n.09 ;
+t01065:v2
+  a :Part.n.09 ;
   :nam "B" .
-
-t01065:v3 a :Verse.n.01 ;
-  :ord 8 ;
-  :prt t01065:v2 .
-
-t01065:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01065.jpg" ;
-  dc:date "2020-05-02T15:53:46"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3609 ;
-    geo:long 6.2929
-  ] ;
-  :nd "+53.3609+006.2929"^^ll: .
 

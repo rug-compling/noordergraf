@@ -1,55 +1,50 @@
 @prefix t00086: <https://noordergraf.rug.nl/tomb/t00086#> .
 
-tomb:t00086 a :Tomb ;
-  :image t00086:im1 ;
-  :site site:gr9721AAgroningen ;
-  :ent t00086:p1 ,
-       t00086:p2 ;
-  :quo "DAT ZIJ RUSTE IN VREDE" .
+tomb:t00086
+  a :Tomb ;
+  :ent t00086:p1, t00086:p2 ;
+  :image [
+    dc:date "2019-09-25T10:53:52"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00086.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2040 ;
+      geo:long 6.5733
+    ] ;
+    :nd "+53.2040+006.5733"^^ll:
+  ] ;
+  :quo "DAT ZIJ RUSTE IN VREDE" ;
+  :site site:gr9721AAgroningen .
 
-t00086:m1 a :Measure.n.02 ;
-  :sub t00086:m2 ,
-       t00086:m3 .
-
-t00086:m2 a :Measure.n.02 ;
-  :mem t00086:u1 ;
-  :qua 57 .
-
-t00086:m3 a :Measure.n.02 ;
-  :mem t00086:u2 ;
-  :qua 4 .
-
-t00086:p1 a :Female ;
-  :age t00086:m1 ;
+t00086:p1
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :sub [
+      a :Measure.n.02 ;
+      :mem [
+        a :Year.n.01
+      ] ;
+      :qua 57
+    ], [
+      a :Measure.n.02 ;
+      :mem [
+        a :Month.n.01
+      ] ;
+      :qua 4
+    ]
+  ] ;
   :dob "1829-11-28"^^xsd:date ;
   :dod "1887-04-03"^^xsd:date ;
   :nam "MARGARETHA MICHAELINA VAN DER WERFF" ;
-  :rol t00086:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :tgt t00086:p2
+  ] .
 
-t00086:p2 a :Male ;
+t00086:p2
+  a :Male ;
   :nam "JOHANNES HARMANNUS SCHROOTE" .
-
-t00086:r1 a :Husband.n.01 ;
-  :tgt t00086:p2 .
-
-t00086:u1 a :Year.n.01 .
-
-t00086:u2 a :Month.n.01 .
-
-t00086:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00086.jpg" ;
-  dc:date "2019-09-25T10:53:52"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2040 ;
-    geo:long 6.5733
-  ] ;
-  :nd "+53.2040+006.5733"^^ll: .
 

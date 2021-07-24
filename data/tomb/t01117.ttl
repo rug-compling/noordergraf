@@ -1,33 +1,35 @@
 @prefix t01117: <https://noordergraf.rug.nl/tomb/t01117#> .
 
-tomb:t01117 a :Tomb ;
+tomb:t01117
+  a :Tomb ;
   :ent t01117:p1 ;
   :quo "RUST ZACHT LIEVE SCHOON EN GROOTMOEDER"@nld ;
-  :sym t01117:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t01117:c1 a :Village.n.02 ;
-  :place place:Siddeburen2747343 ;
-  :name "SIDDEBUREN" .
-
-t01117:p1 a :Female ;
+t01117:p1
+  a :Female ;
   :dob "1876-01-20"^^xsd:date ;
   :dod "1954-07-31"^^xsd:date ;
   :nam "MARTJE KUIPER" ;
   :pob t01117:c1 ;
   :pod t01117:c1 ;
-  :rol t01117:r1 ,
-       t01117:r2 ,
-       t01117:r3 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01117:p2
+  ], [
+    a :Mother-in-law.n.01
+  ], [
+    a :Grandmother.n.01
+  ] .
 
-t01117:p2 a :Male ;
+t01117:p2
+  a :Male ;
   :nam "H. VAN VELZEN" .
 
-t01117:r1 a :Widow.n.01 ;
-  :tgt t01117:p2 .
-
-t01117:r2 a :Mother-in-law.n.01 .
-
-t01117:r3 a :Grandmother.n.01 .
-
-t01117:s1 a :Frond.n.01 .
+t01117:c1
+  a :Village.n.02 ;
+  :name "SIDDEBUREN" ;
+  :place place:Siddeburen2747343 .
 

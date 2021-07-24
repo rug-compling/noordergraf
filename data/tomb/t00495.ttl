@@ -1,48 +1,44 @@
 @prefix t00495: <https://noordergraf.rug.nl/tomb/t00495#> .
 
-tomb:t00495 a :Tomb ;
-  :image t00495:im1 ;
+tomb:t00495
+  a :Tomb ;
+  :ent t00495:p1, t00495:p2, t00495:p3 ;
+  :image [
+    dc:date "2019-11-16T14:08:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00495.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2089 ;
+      geo:long 5.7925
+    ] ;
+    :nd "+53.2089+005.7925"^^ll:
+  ] ;
   :site site:fr8917AVleeuwarden ;
-  :ent t00495:p1 ,
-       t00495:p2 ,
-       t00495:p3 ;
-  :sym t00495:s1 .
+  :sym [
+    a :Frond.n.02
+  ] .
 
-t00495:p1 a :Person ;
+t00495:p1
+  a :Person ;
   :dob "1911-01-02"^^xsd:date ;
   :dod "1915-04-03"^^xsd:date ;
   :nam "AEBE WOUDSTRA" .
 
-t00495:p2 a :Female ;
+t00495:p2
+  a :Female ;
   :dob "1886-04-09"^^xsd:date ;
   :dod "1940-04-02"^^xsd:date ;
   :nam "JOHANNA JAGER" ;
-  :rol t00495:r1 .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00495:p3
+  ] .
 
-t00495:p3 a :Male ;
+t00495:p3
+  a :Male ;
   :dob "1884-02-20"^^xsd:date ;
   :dod "1959-08-20"^^xsd:date ;
   :nam "K. WOUDSTRA" .
-
-t00495:r1 a :Wife.n.01 ;
-  :tgt t00495:p3 .
-
-t00495:s1 a :Frond.n.02 .
-
-t00495:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00495.jpg" ;
-  dc:date "2019-11-16T14:08:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2089 ;
-    geo:long 5.7925
-  ] ;
-  :nd "+53.2089+005.7925"^^ll: .
 

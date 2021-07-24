@@ -1,51 +1,47 @@
 @prefix t00936: <https://noordergraf.rug.nl/tomb/t00936#> .
 
-tomb:t00936 a :Tomb ;
-  :image t00936:im1 ;
-  :site site:gr9741GHgroningen ;
-  :ent t00936:p1 ,
-       t00936:p2 ,
-       t00936:p3 ;
-  :quo "DE HEER IS RECHT \\ IN AL ZIJN WEG EN WERK"@nld .
+tomb:t00936
+  a :Tomb ;
+  :ent t00936:p1, t00936:p2, t00936:p3 ;
+  :image [
+    dc:date "2020-03-18T10:19:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00936.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2398 ;
+      geo:long 6.5514
+    ] ;
+    :nd "+53.2398+006.5514"^^ll:
+  ] ;
+  :quo "DE HEER IS RECHT \\ IN AL ZIJN WEG EN WERK"@nld ;
+  :site site:gr9741GHgroningen .
 
-t00936:o1 a :Mercenary.n.01 ;
-  :hco "19300" ;
-  :org t00936:o2 ;
-  :ttl "SERGEANT-MAJOOR" .
-
-t00936:o2 a :Organization.n.01 ;
-  :nam "LEGER DES HEILS" .
-
-t00936:p1 a :Female ;
+t00936:p1
+  a :Female ;
   :dob "1902-03-03"^^xsd:date ;
   :dod "1955-07-31"^^xsd:date ;
   :nam "LAMBERTHA C. BOS" ;
-  :occ t00936:o1 .
+  :occ [
+    a :Mercenary.n.01 ;
+    :hco "19300" ;
+    :org [
+      a :Organization.n.01 ;
+      :nam "LEGER DES HEILS"
+    ] ;
+    :ttl "SERGEANT-MAJOOR"
+  ] .
 
-t00936:p2 a :Female ;
+t00936:p2
+  a :Female ;
   :dob "1898-10-04"^^xsd:date ;
   :dod "1963-12-13"^^xsd:date ;
   :nam "GEERTJE DIJKSTERHUIS-BOS" .
 
-t00936:p3 a :Male ;
+t00936:p3
+  a :Male ;
   :dob "1897-07-28"^^xsd:date ;
   :dod "1964-09-09"^^xsd:date ;
   :nam "WIEBRAND DIJKSTERHUIS" .
-
-t00936:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00936.jpg" ;
-  dc:date "2020-03-18T10:19:14"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2398 ;
-    geo:long 6.5514
-  ] ;
-  :nd "+53.2398+006.5514"^^ll: .
 

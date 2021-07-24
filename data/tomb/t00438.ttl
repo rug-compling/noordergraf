@@ -1,54 +1,49 @@
 @prefix t00438: <https://noordergraf.rug.nl/tomb/t00438#> .
 
-tomb:t00438 a :Tomb ;
-  :image t00438:im1 ;
-  :site site:fr9166NAschiermonnikoog ;
-  :ent t00438:p1 ,
-       t00438:p2 ;
-  :quo "VOOR ALTIJD SAMEN MET ELKAARS LIEFDE ALHIER BIJGEZET OP NO. 21" .
+tomb:t00438
+  a :Tomb ;
+  :ent t00438:p1, t00438:p2 ;
+  :image [
+    dc:date "2019-11-02T11:41:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00438.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4792 ;
+      geo:long 6.1610
+    ] ;
+    :nd "+53.4792+006.1610"^^ll:
+  ] ;
+  :quo "VOOR ALTIJD SAMEN MET ELKAARS LIEFDE ALHIER BIJGEZET OP NO. 21" ;
+  :site site:fr9166NAschiermonnikoog .
 
-t00438:c1 a :Town.n.01 ;
-  :place place:Oegstgeest2749723 ;
-  :name "OEGSTGEEST" .
-
-t00438:c2 a :City.n.01 ;
-  :place place:Goes2755476 ;
-  :name "GOES" .
-
-t00438:c3 a :Village.n.02 ;
-  :place place:Warmond2745012 ;
-  :name "WARMOND" .
-
-t00438:p1 a :Male ;
+t00438:p1
+  a :Male ;
   :dob "1917-12-23"^^xsd:date ;
   :dod "2008-03-03"^^xsd:date ;
-  :nam "ABRAHAM WILLEM VAN DEN WORM" ,
-       "WIM" ;
+  :nam "ABRAHAM WILLEM VAN DEN WORM", "WIM" ;
   :pob t00438:c1 ;
   :pod t00438:c1 .
 
-t00438:p2 a :Female ;
+t00438:p2
+  a :Female ;
   :dob "1920-07-15"^^xsd:date ;
   :dod "2006-08-20"^^xsd:date ;
-  :nam "ELLA" ,
-       "PIETERNELLA JACOBA VAN DEN WORM-GOEDBLOED" ;
-  :pob t00438:c2 ;
-  :pod t00438:c3 .
-
-t00438:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00438.jpg" ;
-  dc:date "2019-11-02T11:41:09"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4792 ;
-    geo:long 6.1610
+  :nam "ELLA", "PIETERNELLA JACOBA VAN DEN WORM-GOEDBLOED" ;
+  :pob [
+    a :City.n.01 ;
+    :name "GOES" ;
+    :place place:Goes2755476
   ] ;
-  :nd "+53.4792+006.1610"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "WARMOND" ;
+    :place place:Warmond2745012
+  ] .
+
+t00438:c1
+  a :Town.n.01 ;
+  :name "OEGSTGEEST" ;
+  :place place:Oegstgeest2749723 .
 

@@ -1,78 +1,68 @@
 @prefix t01028: <https://noordergraf.rug.nl/tomb/t01028#> .
 
-tomb:t01028 a :Tomb ;
-  :image t01028:im1 ;
-  :site site:gr9906PPbierum ;
-  :ent t01028:g1 ,
-       t01028:p1 ,
-       t01028:p2 ,
-       t01028:p3 ,
-       t01028:p4 ,
-       t01028:p5 ;
+tomb:t01028
+  a :Tomb ;
+  :ent t01028:p1, t01028:p2, t01028:p3, t01028:p4, t01028:p5, [
+    a :Group.n.01 ;
+    :mem t01028:p3, t01028:p4, t01028:p5 ;
+    :rol [
+      a :Child.n.02 ;
+      :tgt t01028:p1
+    ]
+  ] ;
+  :image [
+    dc:date "2020-04-17T18:28:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01028.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3809 ;
+      geo:long 6.8596
+    ] ;
+    :nd "+53.3809+006.8596"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01028:s1 ,
-       t01028:s2 ,
-       t01028:s3 ,
-       t01028:s4 .
+  :site site:gr9906PPbierum ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Scythe.n.01
+  ], [
+    a :Entity.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t01028:g1 a :Group.n.01 ;
-  :mem t01028:p3 ,
-       t01028:p4 ,
-       t01028:p5 ;
-  :rol t01028:r2 .
-
-t01028:p1 a :Male ;
+t01028:p1
+  a :Male ;
   :dob "1851-05-10"^^xsd:date ;
   :dod "1884-09-09"^^xsd:date ;
   :nam "JAN T. MEDEMA" ;
-  :rol t01028:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01028:p2
+  ] .
 
-t01028:p2 a :Female ;
+t01028:p2
+  a :Female ;
   :nam "M.J. DE VRIES" .
 
-t01028:p3 a :Male ;
+t01028:p3
+  a :Male ;
   :dob "1884-03-18"^^xsd:date ;
   :dod "1885-09-25"^^xsd:date ;
   :nam "EKKE" .
 
-t01028:p4 a :Male ;
+t01028:p4
+  a :Male ;
   :dob "1880-04-02"^^xsd:date ;
   :dod "1886-02-25"^^xsd:date ;
   :nam "SIEMEN" .
 
-t01028:p5 a :Male ;
+t01028:p5
+  a :Male ;
   :dob "1882-06-07"^^xsd:date ;
   :dod "1886-03-03"^^xsd:date ;
   :nam "ANJE" .
-
-t01028:r1 a :Spouse.n.01 ;
-  :tgt t01028:p2 .
-
-t01028:r2 a :Child.n.02 ;
-  :tgt t01028:p1 .
-
-t01028:s1 a :Butterfly.n.01 .
-
-t01028:s2 a :Scythe.n.01 .
-
-t01028:s3 a :Entity.n.01 .
-
-t01028:s4 a :Ribbon.n.01 .
-
-t01028:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01028.jpg" ;
-  dc:date "2020-04-17T18:28:28"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3809 ;
-    geo:long 6.8596
-  ] ;
-  :nd "+53.3809+006.8596"^^ll: .
 

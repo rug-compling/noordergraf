@@ -1,46 +1,41 @@
 @prefix t00795: <https://noordergraf.rug.nl/tomb/t00795#> .
 
-tomb:t00795 a :Tomb ;
-  :image t00795:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00795:p1 ,
-       t00795:p2 ;
+tomb:t00795
+  a :Tomb ;
+  :ent t00795:p1, t00795:p2 ;
+  :image [
+    dc:date "2020-01-18T13:04:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00795.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2776 ;
+      geo:long 6.6945
+    ] ;
+    :nd "+53.2776+006.6945"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00795:s1 ,
-       t00795:s2 ,
-       t00795:s3 .
+  :site site:gr9791KEten_boer ;
+  :sym [
+    a :Pigeon.n.01 ;
+    :sup t00795:s2
+  ], t00795:s2, [
+    a :Entity.n.01
+  ] .
 
-t00795:p1 a :Male ;
+t00795:p1
+  a :Male ;
   :dob "1931-07-07"^^xsd:date ;
   :dod "1994-04-27"^^xsd:date ;
   :nam "HARM WIENKE" .
 
-t00795:p2 a :Female ;
+t00795:p2
+  a :Female ;
   :dob "1930-09-12"^^xsd:date ;
   :dod "2010-03-09"^^xsd:date ;
   :nam "BERTHA WIENKE-DE BLÉCOURT" .
 
-t00795:s1 a :Pigeon.n.01 ;
-  :sup t00795:s2 .
-
-t00795:s2 a :Branch.n.02 .
-
-t00795:s3 a :Entity.n.01 .
-
-t00795:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00795.jpg" ;
-  dc:date "2020-01-18T13:04:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2776 ;
-    geo:long 6.6945
-  ] ;
-  :nd "+53.2776+006.6945"^^ll: .
+t00795:s2
+  a :Branch.n.02 .
 

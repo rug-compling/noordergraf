@@ -1,73 +1,71 @@
 @prefix t00359: <https://noordergraf.rug.nl/tomb/t00359#> .
 
-tomb:t00359 a :Tomb ;
-  :image t00359:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00359:p1 ,
-       t00359:p2 ;
+tomb:t00359
+  a :Tomb ;
+  :ent t00359:p1, t00359:p2 ;
+  :image [
+    dc:date "2019-10-25T17:32:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00359.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0800 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.0800+006.5716"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE VROUW EN MOEDER" ;
-  :sym t00359:s1 .
+  :site site:dr9481CGvries ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00359:a1 a :Weeping.a.02 .
-
-t00359:c1 a :Village.n.02 ;
-  :place place:Bunne2758108 ;
-  :name "BUNNE" .
-
-t00359:c2 a :Municipality.n.01 ;
-  :place place:Vries2745189 ;
-  :mem t00359:c1 ;
-  :name "VRIES" .
-
-t00359:c3 a :Village.n.02 ;
-  :place place:Molkwerum2750647 ;
-  :name "MOLKWERUM" .
-
-t00359:c4 a :Province.n.01 ;
-  :place place:ProvincieFriesland2755812 ;
-  :mem t00359:c3 ;
-  :name "FRIESLAND" .
-
-t00359:p1 a :Female ;
+t00359:p1
+  a :Female ;
   :dob "1901-06-25"^^xsd:date ;
   :dod "1935-06-02"^^xsd:date ;
   :nam "GEERTIEN BATHOORN" ;
   :pob t00359:c1 ;
   :pod t00359:c3 ;
-  :rol t00359:r1 ,
-       t00359:r2 ,
-       t00359:r3 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00359:p2
+  ], [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00359:p2
+  ], [
+    a :Mother.n.01
+  ] .
 
-t00359:p2 a :Male ;
+t00359:p2
+  a :Male ;
   :nam "LAMBERTUS HUMMEL" .
 
-t00359:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00359:p2 .
+t00359:c1
+  a :Village.n.02 ;
+  :name "BUNNE" ;
+  :place place:Bunne2758108 .
 
-t00359:r2 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00359:p2 .
+[]
+  a :Municipality.n.01 ;
+  :mem t00359:c1 ;
+  :name "VRIES" ;
+  :place place:Vries2745189 .
 
-t00359:r3 a :Mother.n.01 .
+t00359:c3
+  a :Village.n.02 ;
+  :name "MOLKWERUM" ;
+  :place place:Molkwerum2750647 .
 
-t00359:s1 a :Willow.n.01 ;
-  :att t00359:a1 .
-
-t00359:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00359.jpg" ;
-  dc:date "2019-10-25T17:32:05"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0800 ;
-    geo:long 6.5716
-  ] ;
-  :nd "+53.0800+006.5716"^^ll: .
+[]
+  a :Province.n.01 ;
+  :mem t00359:c3 ;
+  :name "FRIESLAND" ;
+  :place place:ProvincieFriesland2755812 .
 

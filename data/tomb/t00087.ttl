@@ -1,44 +1,40 @@
 @prefix t00087: <https://noordergraf.rug.nl/tomb/t00087#> .
 
-tomb:t00087 a :Tomb ;
-  :image t00087:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00087:p1 ,
-       t00087:p2 .
+tomb:t00087
+  a :Tomb ;
+  :ent t00087:p1, t00087:p2 ;
+  :image [
+    dc:date "2019-09-24T15:18:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00087.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2068 ;
+      geo:long 6.5726
+    ] ;
+    :nd "+53.2068+006.5726"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen .
 
-t00087:o1 a :Director.n.01 ;
-  :hco "13940" ;
-  :org t00087:o2 .
-
-t00087:o2 a :School.n.01 ;
-  :nam "MIDDELBARE TECHNISCHE KUNSTNIJVERHEIDS EN ZEEVAARTSCHOOL" .
-
-t00087:p1 a :Male ;
+t00087:p1
+  a :Male ;
   :dob "1899-02-24"^^xsd:date ;
   :dod "1944-01-01"^^xsd:date ;
   :nam "P.H.E. VAN DOOREN" ;
-  :occ t00087:o1 ;
+  :occ [
+    a :Director.n.01 ;
+    :hco "13940" ;
+    :org [
+      a :School.n.01 ;
+      :nam "MIDDELBARE TECHNISCHE KUNSTNIJVERHEIDS EN ZEEVAARTSCHOOL"
+    ]
+  ] ;
   :pfx "IR" .
 
-t00087:p2 a :Female ;
+t00087:p2
+  a :Female ;
   :dob "1899-02-22"^^xsd:date ;
   :dod "1983-03-01"^^xsd:date ;
   :nam "MARIA DEKKER" .
-
-t00087:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00087.jpg" ;
-  dc:date "2019-09-24T15:18:43"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2068 ;
-    geo:long 6.5726
-  ] ;
-  :nd "+53.2068+006.5726"^^ll: .
 

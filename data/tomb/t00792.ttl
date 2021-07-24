@@ -1,41 +1,39 @@
 @prefix t00792: <https://noordergraf.rug.nl/tomb/t00792#> .
 
-tomb:t00792 a :Tomb ;
-  :image t00792:im1 ;
-  :site site:gr9791KEten_boer ;
+tomb:t00792
+  a :Tomb ;
   :ent t00792:p1 ;
+  :image [
+    dc:date "2020-01-18T13:08:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00792.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2775 ;
+      geo:long 6.6935
+    ] ;
+    :nd "+53.2775+006.6935"^^ll:
+  ] ;
   :lan "NLD" ;
-  :ref t00792:v1 .
+  :ref t00792:v1 ;
+  :site site:gr9791KEten_boer .
 
-t00792:b1 a :Isaiah.n.01 ;
-  :prt t00792:c1 .
-
-t00792:c1 a :Chapter.n.01 ;
-  :ord 49 ;
-  :prt t00792:v1 .
-
-t00792:p1 a :Male ;
+t00792:p1
+  a :Male ;
   :dob "1861-02-20"^^xsd:date ;
   :dod "1941-09-27"^^xsd:date ;
   :nam "ROELFKE HOVING" .
 
-t00792:v1 a :Verse.n.01 ;
-  :ord 16 .
+[]
+  a :Isaiah.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 49 ;
+    :prt t00792:v1
+  ] .
 
-t00792:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00792.jpg" ;
-  dc:date "2020-01-18T13:08:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2775 ;
-    geo:long 6.6935
-  ] ;
-  :nd "+53.2775+006.6935"^^ll: .
+t00792:v1
+  a :Verse.n.01 ;
+  :ord 16 .
 

@@ -1,41 +1,37 @@
 @prefix t00448: <https://noordergraf.rug.nl/tomb/t00448#> .
 
-tomb:t00448 a :Tomb ;
-  :image t00448:im1 ;
+tomb:t00448
+  a :Tomb ;
+  :ent t00448:p1, t00448:p2 ;
+  :image [
+    dc:date "2019-11-02T11:34:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00448.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4793 ;
+      geo:long 6.1603
+    ] ;
+    :nd "+53.4793+006.1603"^^ll:
+  ] ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent t00448:p1 ,
-       t00448:p2 ;
-  :sym t00448:s1 .
+  :sym [
+    a :Branch.n.02 ;
+    :qua 2
+  ] .
 
-t00448:p1 a :Female ;
+t00448:p1
+  a :Female ;
   :dob "1831-04-07"^^xsd:date ;
   :dod "1912-02-23"^^xsd:date ;
   :nam "ENGELINA ABRAHAMS ZEILINGA" ;
-  :rol t00448:r1 .
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00448:p2
+  ] .
 
-t00448:p2 a :Male ;
+t00448:p2
+  a :Male ;
   :nam "IJTJE POST KONTER" .
-
-t00448:r1 a :Widower.n.01 ;
-  :tgt t00448:p2 .
-
-t00448:s1 a :Branch.n.02 ;
-  :qua 2 .
-
-t00448:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00448.jpg" ;
-  dc:date "2019-11-02T11:34:35"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4793 ;
-    geo:long 6.1603
-  ] ;
-  :nd "+53.4793+006.1603"^^ll: .
 

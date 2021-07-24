@@ -1,47 +1,44 @@
 @prefix t00858: <https://noordergraf.rug.nl/tomb/t00858#> .
 
-tomb:t00858 a :Tomb ;
-  :image t00858:im1 ;
-  :site site:dr7841CDsleen ;
-  :ent t00858:p1 ,
-       t00858:p2 ;
+tomb:t00858
+  a :Tomb ;
+  :ent t00858:p1, t00858:p2 ;
+  :image [
+    dc:date "2020-02-15T15:36:51"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00858.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7765 ;
+      geo:long 6.8042
+    ] ;
+    :nd "+52.7765+006.8042"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00858:s1 .
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00858:c1 a :Village.n.02 ;
-  :place place:Sleen2747182 ;
-  :name "SLEEN" .
-
-t00858:p1 a :Male ;
+t00858:p1
+  a :Male ;
   :dob "1864-06-08"^^xsd:date ;
   :dod "1936-02-16"^^xsd:date ;
   :nam "ROELOF EVENHUIS" ;
   :pob t00858:c1 ;
   :pod t00858:c1 .
 
-t00858:p2 a :Female ;
+t00858:p2
+  a :Female ;
   :dob "1865-11-21"^^xsd:date ;
   :dod "1918-08-08"^^xsd:date ;
   :nam "GEESSIEN VRIELING" ;
   :pob t00858:c1 ;
   :pod t00858:c1 .
 
-t00858:s1 a :Rose.n.01 .
-
-t00858:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00858.jpg" ;
-  dc:date "2020-02-15T15:36:51"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7765 ;
-    geo:long 6.8042
-  ] ;
-  :nd "+52.7765+006.8042"^^ll: .
+t00858:c1
+  a :Village.n.02 ;
+  :name "SLEEN" ;
+  :place place:Sleen2747182 .
 

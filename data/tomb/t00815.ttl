@@ -1,40 +1,33 @@
 @prefix t00815: <https://noordergraf.rug.nl/tomb/t00815#> .
 
-tomb:t00815 a :Tomb ;
-  :image t00815:im1 ;
-  :site site:gr9741ACgroningen ;
+tomb:t00815
+  a :Tomb ;
   :ent t00815:p1 ;
-  :lan "NLD" ;
-  :sym t00815:s1 ,
-       t00815:s2 ,
-       t00815:s3 ,
-       t00815:s4 .
-
-t00815:p1 a :Male ;
-  :nam "UILKE KEIZER" .
-
-t00815:s1 a :Moth.n.01 .
-
-t00815:s2 a :Cocoon.n.01 .
-
-t00815:s3 a :Entity.n.01 .
-
-t00815:s4 a :Caterpillar.n.01 .
-
-t00815:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00815.jpg" ;
-  dc:date "2020-02-01T12:44:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2300 ;
-    geo:long 6.5495
+  :image [
+    dc:date "2020-02-01T12:44:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00815.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2300 ;
+      geo:long 6.5495
+    ] ;
+    :nd "+53.2300+006.5495"^^ll:
   ] ;
-  :nd "+53.2300+006.5495"^^ll: .
+  :lan "NLD" ;
+  :site site:gr9741ACgroningen ;
+  :sym [
+    a :Moth.n.01
+  ], [
+    a :Cocoon.n.01
+  ], [
+    a :Entity.n.01
+  ], [
+    a :Caterpillar.n.01
+  ] .
+
+t00815:p1
+  a :Male ;
+  :nam "UILKE KEIZER" .
 

@@ -1,62 +1,55 @@
 @prefix t00237: <https://noordergraf.rug.nl/tomb/t00237#> .
 
-tomb:t00237 a :Tomb ;
-  :image t00237:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00237:p1 ,
-       t00237:p2 ,
-       t00237:p3 .
+tomb:t00237
+  a :Tomb ;
+  :ent t00237:p1, t00237:p2, t00237:p3 ;
+  :image [
+    dc:date "2019-10-10T09:40:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00237.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2054 ;
+      geo:long 6.5724
+    ] ;
+    :nd "+53.2054+006.5724"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen .
 
-t00237:p1 a :Female ;
+t00237:p1
+  a :Female ;
   :dob "1905-11-21"^^xsd:date ;
   :dod "1928-07-08"^^xsd:date ;
   :nam "HENDERIKA LEVER" ;
-  :rol t00237:r1 ,
-       t00237:r2 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00237:p2
+  ], [
+    a :Sister.n.01
+  ] .
 
-t00237:p2 a :Female ;
+t00237:p2
+  a :Female ;
   :dob "1873-01-02"^^xsd:date ;
   :dod "1931-02-16"^^xsd:date ;
   :nam "ROLINA MEDOK" ;
-  :rol t00237:r3 ,
-       t00237:r4 ,
-       t00237:r5 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00237:p3
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00237:p1
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00237:p3
+  ] .
 
-t00237:p3 a :Male ;
+t00237:p3
+  a :Male ;
   :dob "1867-01-30"^^xsd:date ;
   :dod "1952-03-30"^^xsd:date ;
   :nam "AREND TONKO LEVER" .
-
-t00237:r1 a :Daughter.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00237:p2 .
-
-t00237:r2 a :Sister.n.01 .
-
-t00237:r3 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00237:p3 .
-
-t00237:r4 a :Mother.n.01 ;
-  :tgt t00237:p1 .
-
-t00237:r5 a :Spouse.n.01 ;
-  :tgt t00237:p3 .
-
-t00237:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00237.jpg" ;
-  dc:date "2019-10-10T09:40:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2054 ;
-    geo:long 6.5724
-  ] ;
-  :nd "+53.2054+006.5724"^^ll: .
 

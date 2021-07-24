@@ -1,70 +1,67 @@
 @prefix t00665: <https://noordergraf.rug.nl/tomb/t00665#> .
 
-tomb:t00665 a :Tomb ;
-  :image t00665:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00665:p1 ,
-       t00665:p2 ;
+tomb:t00665
+  a :Tomb ;
+  :ent t00665:p1, t00665:p2 ;
+  :image [
+    dc:date "2019-12-14T13:57:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00665.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0694 ;
+      geo:long 5.5243
+    ] ;
+    :nd "+53.0694+005.5243"^^ll:
+  ] ;
   :quo "RUST IN VREDE"@nld ;
-  :sym t00665:s1 ,
-       t00665:s2 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Frond.n.01
+  ] .
 
-t00665:a1 a :Weeping.a.02 .
-
-t00665:c1 a :Town.n.01 ;
-  :place place:DeKnipe6697854 ;
-  :name "DE KNIPE" .
-
-t00665:c2 a :City.n.01 ;
-  :place place:Bolsward2758682 ;
-  :name "BOLSWARD" .
-
-t00665:c3 a :Less.r.01 ;
-  :op1 t00665:m1 ;
-  :op2 t00665:m2 .
-
-t00665:m1 a :Measure.n.02 .
-
-t00665:m2 a :Measure.n.02 ;
-  :mem t00665:u1 ;
-  :qua 54 .
-
-t00665:p1 a :Female ;
+t00665:p1
+  a :Female ;
   :age t00665:m1 ;
   :dob "1859-10-22"^^xsd:date ;
   :dod "1913-09-11"^^xsd:date ;
   :nam "AFKE VAN DER VEER" ;
-  :pob t00665:c1 ;
-  :pod t00665:c2 ;
-  :rol t00665:r1 .
+  :pob [
+    a :Town.n.01 ;
+    :name "DE KNIPE" ;
+    :place place:DeKnipe6697854
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "BOLSWARD" ;
+    :place place:Bolsward2758682
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00665:p2
+  ] .
 
-t00665:p2 a :Male ;
+t00665:p2
+  a :Male ;
   :nam "SIMON OUDEBOON" .
 
-t00665:r1 a :Spouse.n.01 ;
-  :tgt t00665:p2 .
+[]
+  a :Less.r.01 ;
+  :op1 t00665:m1 ;
+  :op2 [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 54
+  ] .
 
-t00665:s1 a :Willow.n.01 ;
-  :att t00665:a1 .
-
-t00665:s2 a :Frond.n.01 .
-
-t00665:u1 a :Year.n.01 .
-
-t00665:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00665.jpg" ;
-  dc:date "2019-12-14T13:57:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0694 ;
-    geo:long 5.5243
-  ] ;
-  :nd "+53.0694+005.5243"^^ll: .
+t00665:m1
+  a :Measure.n.02 .
 

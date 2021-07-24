@@ -1,61 +1,55 @@
 @prefix t00444: <https://noordergraf.rug.nl/tomb/t00444#> .
 
-tomb:t00444 a :Tomb ;
-  :image t00444:im1 ;
-  :site site:fr9166NAschiermonnikoog ;
-  :ent t00444:p1 ,
-       t00444:p2 ,
-       t00444:p3 ;
+tomb:t00444
+  a :Tomb ;
+  :ent t00444:p1, t00444:p2, t00444:p3 ;
+  :image [
+    dc:date "2019-11-02T11:31:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00444.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4792 ;
+      geo:long 6.1601
+    ] ;
+    :nd "+53.4792+006.1601"^^ll:
+  ] ;
   :ref "PSALM 103:8" ;
-  :sym t00444:s1 .
+  :site site:fr9166NAschiermonnikoog ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00444:p1 a :Male ;
+t00444:p1
+  a :Male ;
   :dod "1928-08-22"^^xsd:date ;
   :nam "BOUKE TEERDSTRA" ;
-  :rol t00444:r1 .
+  :rol [
+    a :Schoolmakker.n.01 ;
+    :tgt t00444:p3
+  ] .
 
-t00444:p2 a :Male ;
+t00444:p2
+  a :Male ;
   :dod "1928-08-22"^^xsd:date ;
   :nam "JACOB TEERDSTRA" ;
-  :rol t00444:r2 .
+  :rol [
+    a :Schoolmakker.n.01 ;
+    :tgt t00444:p3
+  ] .
 
-t00444:p3 a :Person ;
-  :rol t00444:r3 .
-
-t00444:r1 a :Schoolmakker.n.01 ;
-  :tgt t00444:p3 .
-
-t00444:r2 a :Schoolmakker.n.01 ;
-  :tgt t00444:p3 .
-
-t00444:r3 a :Pupil.n.01 ;
-  :tgt "CHRISTELIJKE SCHOOL" .
-
-t00444:s1 a :Composite.n.01 ;
-  :prt t00444:s2 ,
-       t00444:s3 ,
-       t00444:s4 .
-
-t00444:s2 a :Frond.n.01 .
-
-t00444:s3 a :Frond.n.01 .
-
-t00444:s4 a :Ribbon.n.01 .
-
-t00444:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00444.jpg" ;
-  dc:date "2019-11-02T11:31:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4792 ;
-    geo:long 6.1601
-  ] ;
-  :nd "+53.4792+006.1601"^^ll: .
+t00444:p3
+  a :Person ;
+  :rol [
+    a :Pupil.n.01 ;
+    :tgt "CHRISTELIJKE SCHOOL"
+  ] .
 

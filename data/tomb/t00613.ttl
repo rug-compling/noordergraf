@@ -1,62 +1,57 @@
 @prefix t00613: <https://noordergraf.rug.nl/tomb/t00613#> .
 
-tomb:t00613 a :Tomb ;
-  :image t00613:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00613:g1 ,
-       t00613:p1 ,
-       t00613:p2 ,
-       t00613:p3 ,
-       t00613:p4 ;
+tomb:t00613
+  a :Tomb ;
+  :ent t00613:p1, t00613:p2, t00613:p3, t00613:p4, t00613:g1 ;
+  :image [
+    dc:date "2019-11-23T10:05:07"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00613.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1644 ;
+      geo:long 6.7540
+    ] ;
+    :nd "+53.1644+006.7540"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00613:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00613:a1 a :Weeping.a.02 .
-
-t00613:g1 a :Group.n.01 ;
-  :mem t00613:p1 ,
-       t00613:p2 .
-
-t00613:p1 a :Female ;
+t00613:p1
+  a :Female ;
   :dob "1883-12-18"^^xsd:date ;
   :dod "1898-02-22"^^xsd:date ;
   :nam "HELENA" ;
-  :rol t00613:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00613:g1
+  ] .
 
-t00613:p2 a :Male ;
+t00613:p2
+  a :Male ;
   :nam "FOKKO POPPENS" .
 
-t00613:p3 a :Female ;
+t00613:p3
+  a :Female ;
   :nam "JAKOBA FEDDES" .
 
-t00613:p4 a :Person ;
+t00613:p4
+  a :Person ;
   :nam "L.F. DE WIJS" ;
-  :occ t00613:r2 .
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00613
+  ] .
 
-t00613:r1 a :Daughter.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00613:g1 .
-
-t00613:r2 a :Designer.n.01 ;
-  :tgt tomb:t00613 .
-
-t00613:s1 a :Willow.n.01 ;
-  :att t00613:a1 .
-
-t00613:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00613.jpg" ;
-  dc:date "2019-11-23T10:05:07"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1644 ;
-    geo:long 6.7540
-  ] ;
-  :nd "+53.1644+006.7540"^^ll: .
+t00613:g1
+  a :Group.n.01 ;
+  :mem t00613:p1, t00613:p2 .
 

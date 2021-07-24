@@ -1,47 +1,41 @@
 @prefix t00893: <https://noordergraf.rug.nl/tomb/t00893#> .
 
-tomb:t00893 a :Tomb ;
-  :image t00893:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00893:p1 ,
-       t00893:p2 ;
+tomb:t00893
+  a :Tomb ;
+  :ent t00893:p1, t00893:p2 ;
+  :image [
+    dc:date "2020-03-07T14:35:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00893.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1726 ;
+      geo:long 6.3613
+    ] ;
+    :nd "+53.1726+006.3613"^^ll:
+  ] ;
   :quo "MIJNE HOOP IS \\ OP U, O HEERE!"@nld ;
-  :sym t00893:s1 ,
-       t00893:s2 ,
-       t00893:s3 .
+  :site site:gr9351RLtolbert ;
+  :sym [
+    a :Skull.n.01
+  ], [
+    a :Bone.n.01
+  ], [
+    a :Bone.n.01
+  ] .
 
-t00893:p1 a :Female ;
+t00893:p1
+  a :Female ;
   :dob "1792-01-16"^^xsd:date ;
   :dod "1862-02-28"^^xsd:date ;
   :nam "HINDERKIEN WILLEMS" ;
-  :rol t00893:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00893:p2
+  ] .
 
-t00893:p2 a :Male ;
+t00893:p2
+  a :Male ;
   :nam "JAN M. TEN HOOR" .
-
-t00893:r1 a :Spouse.n.01 ;
-  :tgt t00893:p2 .
-
-t00893:s1 a :Skull.n.01 .
-
-t00893:s2 a :Bone.n.01 .
-
-t00893:s3 a :Bone.n.01 .
-
-t00893:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00893.jpg" ;
-  dc:date "2020-03-07T14:35:32"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1726 ;
-    geo:long 6.3613
-  ] ;
-  :nd "+53.1726+006.3613"^^ll: .
 

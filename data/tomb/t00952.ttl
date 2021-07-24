@@ -1,31 +1,26 @@
 @prefix t00952: <https://noordergraf.rug.nl/tomb/t00952#> .
 
-tomb:t00952 a :Tomb ;
-  :image t00952:im1 ;
-  :site site:gr9479TNnoordlaren ;
+tomb:t00952
+  a :Tomb ;
   :ent t00952:p1 ;
-  :lan "NLD" .
+  :image [
+    dc:date "2020-03-25T09:29:34"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00952.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1202 ;
+      geo:long 6.6586
+    ] ;
+    :nd "+53.1202+006.6586"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9479TNnoordlaren .
 
-t00952:p1 a :Female ;
+t00952:p1
+  a :Female ;
   :dob "1940-06-02"^^xsd:date ;
   :dod "1988-07-10"^^xsd:date ;
-  :nam "EMKE" ,
-       "EMMIE MARGOT VAN DER VALK" .
-
-t00952:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00952.jpg" ;
-  dc:date "2020-03-25T09:29:34"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1202 ;
-    geo:long 6.6586
-  ] ;
-  :nd "+53.1202+006.6586"^^ll: .
+  :nam "EMKE", "EMMIE MARGOT VAN DER VALK" .
 

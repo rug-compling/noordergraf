@@ -1,40 +1,36 @@
 @prefix t00778: <https://noordergraf.rug.nl/tomb/t00778#> .
 
-tomb:t00778 a :Tomb ;
-  :image t00778:im1 ;
-  :site site:dr7811HEemmen ;
+tomb:t00778
+  a :Tomb ;
   :ent t00778:p1 ;
-  :quo "RUST ZACHT"@nld .
+  :image [
+    dc:date "2019-12-21T13:00:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00778.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7818 ;
+      geo:long 6.8970
+    ] ;
+    :nd "+52.7818+006.8970"^^ll:
+  ] ;
+  :quo "RUST ZACHT"@nld ;
+  :site site:dr7811HEemmen .
 
-t00778:c1 a :Hamlet.n.03 ;
-  :place place:Emmerhout2756128 ;
-  :name "EMMERHOUT" .
-
-t00778:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00778:p1 a :Male ;
+t00778:p1
+  a :Male ;
   :dob "1874-08-31"^^xsd:date ;
   :dod "1927-01-26"^^xsd:date ;
   :nam "ROELOF ENSING" ;
-  :pob t00778:c1 ;
-  :pod t00778:c2 .
-
-t00778:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00778.jpg" ;
-  dc:date "2019-12-21T13:00:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7818 ;
-    geo:long 6.8970
+  :pob [
+    a :Hamlet.n.03 ;
+    :name "EMMERHOUT" ;
+    :place place:Emmerhout2756128
   ] ;
-  :nd "+52.7818+006.8970"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] .
 

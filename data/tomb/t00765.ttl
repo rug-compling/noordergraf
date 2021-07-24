@@ -1,63 +1,58 @@
 @prefix t00765: <https://noordergraf.rug.nl/tomb/t00765#> .
 
-tomb:t00765 a :Tomb ;
-  :image t00765:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00765:g1 ,
-       t00765:p1 ,
-       t00765:p2 ,
-       t00765:p3 ;
+tomb:t00765
+  a :Tomb ;
+  :ent t00765:p1, t00765:p2, t00765:p3, t00765:g1 ;
+  :image [
+    dc:date "2019-12-21T13:06:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00765.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7821 ;
+      geo:long 6.8977
+    ] ;
+    :nd "+52.7821+006.8977"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00765:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00765:a1 a :Weeping.a.02 .
-
-t00765:c1 a :Town.n.01 ;
-  :place place:Emmen2756136 ;
-  :name "EMMEN" .
-
-t00765:g1 a :Group.n.01 ;
-  :mem t00765:p2 ,
-       t00765:p3 .
-
-t00765:p1 a :Female ;
+t00765:p1
+  a :Female ;
   :dob "1887-11-22"^^xsd:date ;
   :dod "1908-02-26"^^xsd:date ;
   :nam "ANNEGIEN KROEZE" ;
   :pob t00765:c1 ;
   :pod t00765:c1 ;
-  :rol t00765:r1 ,
-       t00765:r2 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00765:g1
+  ], [
+    a :Sister.n.01
+  ] .
 
-t00765:p2 a :Male ;
+t00765:p2
+  a :Male ;
   :nam "R. KROEZE" .
 
-t00765:p3 a :Female ;
+t00765:p3
+  a :Female ;
   :nam "G. KROEZE-GROOTJANS" .
 
-t00765:r1 a :Daughter.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00765:g1 .
+t00765:c1
+  a :Town.n.01 ;
+  :name "EMMEN" ;
+  :place place:Emmen2756136 .
 
-t00765:r2 a :Sister.n.01 .
-
-t00765:s1 a :Willow.n.01 ;
-  :att t00765:a1 .
-
-t00765:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00765.jpg" ;
-  dc:date "2019-12-21T13:06:36"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7821 ;
-    geo:long 6.8977
-  ] ;
-  :nd "+52.7821+006.8977"^^ll: .
+t00765:g1
+  a :Group.n.01 ;
+  :mem t00765:p2, t00765:p3 .
 

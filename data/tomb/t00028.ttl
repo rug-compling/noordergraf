@@ -1,76 +1,71 @@
 @prefix t00028: <https://noordergraf.rug.nl/tomb/t00028#> .
 
-tomb:t00028 a :Tomb ;
-  :image t00028:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00028:g1 ,
-       t00028:g2 ,
-       t00028:p1 ,
-       t00028:p2 .
+tomb:t00028
+  a :Tomb ;
+  :ent t00028:p1, t00028:p2, t00028:g1, t00028:g2 ;
+  :image [
+    dc:date "2019-09-25T16:18:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00028.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1909 ;
+      geo:long 6.5946
+    ] ;
+    :nd "+53.1909+006.5946"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen .
 
-t00028:c1 a :Village.n.02 ;
-  :place place:Thesinge2746361 ;
-  :name "THESINGE" .
-
-t00028:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00028:c3 a :City.n.01 ;
-  :place place:Appingedam2759687 ;
-  :name "APPINGEDAM" .
-
-t00028:g1 a :Group.n.01 ;
-  :mem t00028:p2 .
-
-t00028:g2 a :Group.n.01 .
-
-t00028:p1 a :Female ;
+t00028:p1
+  a :Female ;
   :dob "1883-02-06"^^xsd:date ;
   :dod "1936-07-29"^^xsd:date ;
   :nam "TRIENTJE BIERLING" ;
   :pob t00028:c1 ;
-  :pod t00028:c2 ;
-  :rol t00028:r1 ,
-       t00028:r2 ,
-       t00028:r3 .
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00028:p2
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00028:g1
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00028:p2
+  ] .
 
-t00028:p2 a :Male ;
+t00028:p2
+  a :Male ;
   :dob "1876-06-19"^^xsd:date ;
   :dod "1952-01-28"^^xsd:date ;
   :nam "MARTINUS ALBERTUS SICCAMA" ;
-  :pob t00028:c3 ;
-  :pod t00028:c1 ;
-  :rol t00028:r4 .
-
-t00028:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00028:p2 .
-
-t00028:r2 a :Mother.n.01 ;
-  :tgt t00028:g1 .
-
-t00028:r3 a :Spouse.n.01 ;
-  :tgt t00028:p2 .
-
-t00028:r4 a :Father.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00028:g2 .
-
-t00028:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00028.jpg" ;
-  dc:date "2019-09-25T16:18:19"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1909 ;
-    geo:long 6.5946
+  :pob [
+    a :City.n.01 ;
+    :name "APPINGEDAM" ;
+    :place place:Appingedam2759687
   ] ;
-  :nd "+53.1909+006.5946"^^ll: .
+  :pod t00028:c1 ;
+  :rol [
+    a :Father.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00028:g2
+  ] .
+
+t00028:c1
+  a :Village.n.02 ;
+  :name "THESINGE" ;
+  :place place:Thesinge2746361 .
+
+t00028:g1
+  a :Group.n.01 ;
+  :mem t00028:p2 .
+
+t00028:g2
+  a :Group.n.01 .
 

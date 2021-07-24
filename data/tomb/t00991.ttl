@@ -1,55 +1,53 @@
 @prefix t00991: <https://noordergraf.rug.nl/tomb/t00991#> .
 
-tomb:t00991 a :Tomb ;
-  :image t00991:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t00991:p1 ,
-       t00991:p2 ;
+tomb:t00991
+  a :Tomb ;
+  :ent t00991:p1, t00991:p2 ;
+  :image [
+    dc:date "2020-04-04T10:58:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00991.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1758 ;
+      geo:long 7.0953
+    ] ;
+    :nd "+53.1758+007.0953"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
-  :ref t00991:v1 .
+  :ref t00991:v1 ;
+  :site site:gr9686RSbeerta .
 
-t00991:b1 a :Job.n.12 ;
-  :prt t00991:c3 .
-
-t00991:c3 a :Chapter.n.01 ;
-  :ord 1 ;
-  :prt t00991:v1 .
-
-t00991:p1 a :Female ;
+t00991:p1
+  a :Female ;
   :dob "1862-04-22"^^xsd:date ;
   :dod "1928-11-03"^^xsd:date ;
   :nam "MARTJE SCHUURKE" ;
-  :rol t00991:r1 .
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00991:p3
+  ] .
 
-t00991:p2 a :Male ;
+t00991:p2
+  a :Male ;
   :dob "1879-01-04"^^xsd:date ;
   :dod "28-09-193" ;
   :nam "FILIPPUS MOERKER" ;
-  :rol t00991:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00991:p3
+  ] .
 
-t00991:r1 a :Parent.n.01 ;
-  :tgt t00991:p3 .
+[]
+  a :Job.n.12 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 1 ;
+    :prt t00991:v1
+  ] .
 
-t00991:r2 a :Parent.n.01 ;
-  :tgt t00991:p3 .
-
-t00991:v1 a :Verse.n.01 ;
+t00991:v1
+  a :Verse.n.01 ;
   :ord 21 .
-
-t00991:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00991.jpg" ;
-  dc:date "2020-04-04T10:58:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1758 ;
-    geo:long 7.0953
-  ] ;
-  :nd "+53.1758+007.0953"^^ll: .
 

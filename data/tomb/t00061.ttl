@@ -1,50 +1,43 @@
 @prefix t00061: <https://noordergraf.rug.nl/tomb/t00061#> .
 
-tomb:t00061 a :Tomb ;
-  :image t00061:im1 ;
+tomb:t00061
+  a :Tomb ;
+  :ent t00061:p1, t00061:p2 ;
+  :image [
+    dc:date "2019-09-27T17:27:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00061.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1635 ;
+      geo:long 6.6151
+    ] ;
+    :nd "+53.1635+006.6151"^^ll:
+  ] ;
   :site site:gr9752CMharen ;
-  :ent t00061:p1 ,
-       t00061:p2 ;
-  :sym t00061:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00061:p1 a :Male ;
+t00061:p1
+  a :Male ;
   :dob "1914-02-01"^^xsd:date ;
   :dod "1980-05-25"^^xsd:date ;
   :nam "EGBERT VAN DALEN" ;
-  :rol t00061:r1 ,
-       t00061:r2 ,
-       t00061:r3 .
+  :rol [
+    a :Father.n.01
+  ], [
+    a :Grandfather.n.01
+  ], [
+    a :Husband.n.01 ;
+    :att "GELIEFD", "LIEVE" ;
+    :tgt t00061:p2
+  ] .
 
-t00061:p2 a :Female ;
+t00061:p2
+  a :Female ;
   :dob "1918-10-28"^^xsd:date ;
   :dod "1994-04-27"^^xsd:date ;
   :nam "GERRIDINA GEERLINGS" .
-
-t00061:r1 a :Father.n.01 .
-
-t00061:r2 a :Grandfather.n.01 .
-
-t00061:r3 a :Husband.n.01 ;
-  :att "GELIEFD" ,
-       "LIEVE" ;
-  :tgt t00061:p2 .
-
-t00061:s1 a :Frond.n.01 .
-
-t00061:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00061.jpg" ;
-  dc:date "2019-09-27T17:27:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1635 ;
-    geo:long 6.6151
-  ] ;
-  :nd "+53.1635+006.6151"^^ll: .
 

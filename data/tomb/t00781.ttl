@@ -1,69 +1,61 @@
 @prefix t00781: <https://noordergraf.rug.nl/tomb/t00781#> .
 
-tomb:t00781 a :Tomb ;
-  :image t00781:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00781:p1 ,
-       t00781:p2 ;
+tomb:t00781
+  a :Tomb ;
+  :ent t00781:p1, t00781:p2 ;
+  :image [
+    dc:date "2019-12-21T12:58:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00781.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7819 ;
+      geo:long 6.8978
+    ] ;
+    :nd "+52.7819+006.8978"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE VROUW"@nld ;
-  :sym t00781:s1 ,
-       t00781:s2 ,
-       t00781:s3 ,
-       t00781:s4 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Scythe.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ] .
 
-t00781:a1 a :Weeping.a.02 .
-
-t00781:c1 a :Village.n.02 ;
-  :place place:Noordbarge2749996 ;
-  :name "NOORDBARGE" .
-
-t00781:c2 a :Village.n.02 ;
-  :place place:Dalen2757857 ;
-  :name "DALEN" .
-
-t00781:p1 a :Female ;
+t00781:p1
+  a :Female ;
   :dob "1859-01-15"^^xsd:date ;
   :dod "1918-09-25"^^xsd:date ;
   :nam "LAMMECHIEN STRATING" ;
-  :pob t00781:c1 ;
-  :pod t00781:c2 ;
-  :rol t00781:r1 ,
-       t00781:r2 .
-
-t00781:p2 a :Male ;
-  :nam "HEIJE CHRISTIAANS" .
-
-t00781:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00781:p2 .
-
-t00781:r2 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00781:p2 .
-
-t00781:s1 a :Willow.n.01 ;
-  :att t00781:a1 .
-
-t00781:s2 a :Scythe.n.01 .
-
-t00781:s3 a :Frond.n.01 .
-
-t00781:s4 a :Frond.n.01 .
-
-t00781:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00781.jpg" ;
-  dc:date "2019-12-21T12:58:50"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7819 ;
-    geo:long 6.8978
+  :pob [
+    a :Village.n.02 ;
+    :name "NOORDBARGE" ;
+    :place place:Noordbarge2749996
   ] ;
-  :nd "+52.7819+006.8978"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "DALEN" ;
+    :place place:Dalen2757857
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00781:p2
+  ], [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00781:p2
+  ] .
+
+t00781:p2
+  a :Male ;
+  :nam "HEIJE CHRISTIAANS" .
 

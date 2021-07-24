@@ -1,54 +1,49 @@
 @prefix t00841: <https://noordergraf.rug.nl/tomb/t00841#> .
 
-tomb:t00841 a :Tomb ;
-  :image t00841:im1 ;
-  :site site:fr8899AWoost_vlieland ;
-  :ent t00841:p1 ,
-       t00841:p2 ;
-  :quo "NAAR JEZUS HEEN"@nld .
+tomb:t00841
+  a :Tomb ;
+  :ent t00841:p1, t00841:p2 ;
+  :image [
+    dc:date "2020-02-20T14:46:40"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00841.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2958 ;
+      geo:long 5.0655
+    ] ;
+    :nd "+53.2958+005.0655"^^ll:
+  ] ;
+  :quo "NAAR JEZUS HEEN"@nld ;
+  :site site:fr8899AWoost_vlieland .
 
-t00841:g1 a :Group.n.01 ;
-  :mem t00841:o3 ,
-       t00841:o4 .
-
-t00841:o1 a :Painter.n.01 ;
-  :hco "16130" .
-
-t00841:o2 a :Consul.n.01 ;
-  :hco "20210" ;
-  :thm t00841:g1 .
-
-t00841:o3 a :State.n.04 ;
-  :nam "NOORWEGEN" .
-
-t00841:o4 a :State.n.04 ;
-  :nam "ZWEDEN" .
-
-t00841:p1 a :Female ;
+t00841:p1
+  a :Female ;
   :dod "1922-12-18"^^xsd:date ;
   :nam "BETZY AKERSLOOT-BERG" ;
-  :occ t00841:o1 .
+  :occ [
+    a :Painter.n.01 ;
+    :hco "16130"
+  ] .
 
-t00841:p2 a :Male ;
+t00841:p2
+  a :Male ;
   :dod "1929-10-16"^^xsd:date ;
   :nam "GOOSWINUS GERARDUS AKERSLOOT" ;
-  :occ t00841:o2 ;
-  :quo "RIDDER TWEEDE KLASSE IN DE ST OLOFS-ORDE VAN NOORWEGEN" .
-
-t00841:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00841.jpg" ;
-  dc:date "2020-02-20T14:46:40"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2958 ;
-    geo:long 5.0655
+  :occ [
+    a :Consul.n.01 ;
+    :hco "20210" ;
+    :thm [
+      a :Group.n.01 ;
+      :mem [
+        a :State.n.04 ;
+        :nam "NOORWEGEN"
+      ], [
+        a :State.n.04 ;
+        :nam "ZWEDEN"
+      ]
+    ]
   ] ;
-  :nd "+53.2958+005.0655"^^ll: .
+  :quo "RIDDER TWEEDE KLASSE IN DE ST OLOFS-ORDE VAN NOORWEGEN" .
 

@@ -1,64 +1,58 @@
 @prefix t00427: <https://noordergraf.rug.nl/tomb/t00427#> .
 
-tomb:t00427 a :Tomb ;
-  :image t00427:im1 ;
+tomb:t00427
+  a :Tomb ;
+  :ent t00427:p1, t00427:p2 ;
+  :image [
+    dc:date "2019-11-02T11:49:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00427.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4793 ;
+      geo:long 6.1609
+    ] ;
+    :nd "+53.4793+006.1609"^^ll:
+  ] ;
   :site site:fr9166NAschiermonnikoog ;
-  :ent t00427:p1 ,
-       t00427:p2 ;
-  :sym t00427:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Flower.n.01
+    ], [
+      a :Flower.n.01
+    ], [
+      a :Flower.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00427:c1 a :Island.n.01 ;
-  :place place:Schiermonnikoog2747591 ;
-  :name "SCHIERMONNIKOOG" .
-
-t00427:p1 a :Male ;
+t00427:p1
+  a :Male ;
   :dob "1879-08-03"^^xsd:date ;
   :dod "1943-07-28"^^xsd:date ;
   :nam "HENDRIK WILLEM VAN DEN BERG" ;
   :pod t00427:c1 ;
-  :rol t00427:r1 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00427:p2 a :Female ;
+t00427:p2
+  a :Female ;
   :dob "1887-03-27"^^xsd:date ;
   :dod "1943-07-28"^^xsd:date ;
   :nam "JACOBA ABRAMINA ZEILINGA" ;
   :pod t00427:c1 ;
-  :rol t00427:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE"
+  ] .
 
-t00427:r1 a :Parent.n.01 ;
-  :att "LIEVE" .
-
-t00427:r2 a :Parent.n.01 ;
-  :att "LIEVE" .
-
-t00427:s1 a :Composite.n.01 ;
-  :prt t00427:s2 ,
-       t00427:s3 ,
-       t00427:s4 ,
-       t00427:s5 .
-
-t00427:s2 a :Flower.n.01 .
-
-t00427:s3 a :Flower.n.01 .
-
-t00427:s4 a :Flower.n.01 .
-
-t00427:s5 a :Ribbon.n.01 .
-
-t00427:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00427.jpg" ;
-  dc:date "2019-11-02T11:49:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4793 ;
-    geo:long 6.1609
-  ] ;
-  :nd "+53.4793+006.1609"^^ll: .
+t00427:c1
+  a :Island.n.01 ;
+  :name "SCHIERMONNIKOOG" ;
+  :place place:Schiermonnikoog2747591 .
 

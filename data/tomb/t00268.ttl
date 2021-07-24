@@ -1,57 +1,51 @@
 @prefix t00268: <https://noordergraf.rug.nl/tomb/t00268#> .
 
-tomb:t00268 a :Tomb ;
-  :image t00268:im1 ;
+tomb:t00268
+  a :Tomb ;
+  :ent t00268:p1, t00268:p2, t00268:p3 ;
+  :image [
+    dc:date "2019-10-14T11:01:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00268.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2228 ;
+      geo:long 6.6379
+    ] ;
+    :nd "+53.2228+006.6379"^^ll:
+  ] ;
   :site site:gr9723EWgroningen ;
-  :ent t00268:p1 ,
-       t00268:p2 ,
-       t00268:p3 ;
-  :sym t00268:s1 .
+  :sym [
+    a :Cross.n.03
+  ] .
 
-t00268:c1 a :Hamlet.n.03 ;
-  :place place:Lageland11746820 ;
-  :name "LAGELAND" .
-
-t00268:p1 a :Male ;
+t00268:p1
+  a :Male ;
   :dob "1934-03-20"^^xsd:date ;
   :dod "1968-10-24"^^xsd:date ;
   :nam "GASTON-AUGUST VANFRACHEM" ;
-  :pob t00268:c1 ;
-  :rol t00268:r1 ,
-       t00268:r2 ,
-       t00268:r3 .
+  :pob [
+    a :Hamlet.n.03 ;
+    :name "LAGELAND" ;
+    :place place:Lageland11746820
+  ] ;
+  :rol [
+    a :Son.n.01 ;
+    :tgt t00268:p2
+  ], [
+    a :Brother.n.01 ;
+    :tgt t00268:p2
+  ], [
+    a :Housemate.n.01 ;
+    :tgt t00268:p3
+  ] .
 
-t00268:p2 a :Family.n.04 ;
+t00268:p2
+  a :Family.n.04 ;
   :nam "VANFRACHEM" .
 
-t00268:p3 a :Family.n.04 ;
+t00268:p3
+  a :Family.n.04 ;
   :nam "STEL" .
-
-t00268:r1 a :Son.n.01 ;
-  :tgt t00268:p2 .
-
-t00268:r2 a :Brother.n.01 ;
-  :tgt t00268:p2 .
-
-t00268:r3 a :Housemate.n.01 ;
-  :tgt t00268:p3 .
-
-t00268:s1 a :Cross.n.03 .
-
-t00268:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00268.jpg" ;
-  dc:date "2019-10-14T11:01:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2228 ;
-    geo:long 6.6379
-  ] ;
-  :nd "+53.2228+006.6379"^^ll: .
 

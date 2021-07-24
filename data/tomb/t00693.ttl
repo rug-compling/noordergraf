@@ -1,55 +1,49 @@
 @prefix t00693: <https://noordergraf.rug.nl/tomb/t00693#> .
 
-tomb:t00693 a :Tomb ;
-  :image t00693:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00693:g1 ,
-       t00693:g2 ,
-       t00693:p1 ,
-       t00693:p2 ;
+tomb:t00693
+  a :Tomb ;
+  :ent t00693:p1, t00693:p2, [
+    a :Group.n.01 ;
+    :rol [
+      a :Child.n.02 ;
+      :tgt t00693:p1
+    ]
+  ], [
+    a :Group.n.01 ;
+    :rol [
+      a :Grandchild.n.01 ;
+      :tgt t00693:p1
+    ]
+  ] ;
+  :image [
+    dc:date "2019-12-14T13:20:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00693.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0687 ;
+      geo:long 5.5231
+    ] ;
+    :nd "+53.0687+005.5231"^^ll:
+  ] ;
   :quo "VEEL FIJNE HERINNERINGEN \\ VERZACHTEN ONZE SMART \\ VOOR GOED UIT ONS MIDDEN \\ MAAR ALTIJD IN ONS HART"@nld ;
-  :sym t00693:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Sailboat.n.01
+  ] .
 
-t00693:g1 a :Group.n.01 ;
-  :rol t00693:r2 .
-
-t00693:g2 a :Group.n.01 ;
-  :rol t00693:r3 .
-
-t00693:p1 a :Male ;
+t00693:p1
+  a :Male ;
   :dob "1937-01-05"^^xsd:date ;
   :dod "1995-03-02"^^xsd:date ;
   :nam "JOHANNES FRANCISCUS BRATTINGA" .
 
-t00693:p2 a :Female ;
+t00693:p2
+  a :Female ;
   :nam "MEA BRATTINGA-VENEMA" ;
-  :rol t00693:r1 .
-
-t00693:r1 a :Wife.n.01 ;
-  :tgt t00693:p1 .
-
-t00693:r2 a :Child.n.02 ;
-  :tgt t00693:p1 .
-
-t00693:r3 a :Grandchild.n.01 ;
-  :tgt t00693:p1 .
-
-t00693:s1 a :Sailboat.n.01 .
-
-t00693:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00693.jpg" ;
-  dc:date "2019-12-14T13:20:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0687 ;
-    geo:long 5.5231
-  ] ;
-  :nd "+53.0687+005.5231"^^ll: .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00693:p1
+  ] .
 

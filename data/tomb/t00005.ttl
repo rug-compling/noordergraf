@@ -1,98 +1,97 @@
 @prefix t00005: <https://noordergraf.rug.nl/tomb/t00005#> .
 
-tomb:t00005 a :Tomb ;
-  :image t00005:im1 ;
+tomb:t00005
+  a :Tomb ;
+  :ent t00005:p1, t00005:p2, t00005:p3, t00005:p4, t00005:p5, t00005:g1 ;
+  :image [
+    dc:date "2019-09-25T16:51:39"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00005.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1898 ;
+      geo:long 6.5930
+    ] ;
+    :nd "+53.1898+006.5930"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00005:g1 ,
-       t00005:p1 ,
-       t00005:p2 ,
-       t00005:p3 ,
-       t00005:p4 ,
-       t00005:p5 ;
-  :sym t00005:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00005:b1 a :Psalm.n.01 ;
-  :prt t00005:c1 ,
-       t00005:c2 .
-
-t00005:b2 a :John.n.05 ;
-  :prt t00005:c3 .
-
-t00005:c1 a :Chapter.n.01 ;
-  :ord 105 ;
-  :prt t00005:v1 .
-
-t00005:c2 a :Chapter.n.01 ;
-  :ord 145 ;
-  :prt t00005:v2 .
-
-t00005:c3 a :Chapter.n.01 ;
-  :ord 1 ;
-  :prt t00005:v3 .
-
-t00005:g1 a :Group.n.01 ;
-  :mem t00005:p2 ,
-       t00005:p3 .
-
-t00005:p1 a :Female ;
+t00005:p1
+  a :Female ;
   :dob "1939-06-02"^^xsd:date ;
   :dod "1939-11-30"^^xsd:date ;
   :nam "THIJSSIENA PIETA" ;
   :ref t00005:v1 ;
-  :rol t00005:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00005:g1
+  ] .
 
-t00005:p2 a :Male ;
+t00005:p2
+  a :Male ;
   :nam "J. BRON" .
 
-t00005:p3 a :Female ;
+t00005:p3
+  a :Female ;
   :nam "T. BRON-OOSTERHUIS" .
 
-t00005:p4 a :Male ;
+t00005:p4
+  a :Male ;
   :dob "1878-03-28"^^xsd:date ;
   :dod "1947-03-31"^^xsd:date ;
   :nam "MARTEN BRON" ;
   :ref t00005:v2 ;
-  :rol t00005:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00005:p5
+  ] .
 
-t00005:p5 a :Female ;
+t00005:p5
+  a :Female ;
   :dob "1877-01-14"^^xsd:date ;
   :dod "1958-03-31"^^xsd:date ;
   :nam "BARBARA WESTERLING" ;
   :ref t00005:v3 .
 
-t00005:r1 a :Daughter.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00005:g1 .
+[]
+  a :Psalm.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 105 ;
+    :prt t00005:v1
+  ], [
+    a :Chapter.n.01 ;
+    :ord 145 ;
+    :prt t00005:v2
+  ] .
 
-t00005:r2 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00005:p5 .
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 1 ;
+    :prt t00005:v3
+  ] .
 
-t00005:s1 a :Frond.n.01 .
+t00005:g1
+  a :Group.n.01 ;
+  :mem t00005:p2, t00005:p3 .
 
-t00005:v1 a :Verse.n.01 ;
+t00005:v1
+  a :Verse.n.01 ;
   :ord 5 .
 
-t00005:v2 a :Verse.n.01 ;
+t00005:v2
+  a :Verse.n.01 ;
   :ord 18 .
 
-t00005:v3 a :Verse.n.01 ;
+t00005:v3
+  a :Verse.n.01 ;
   :ord 7 .
-
-t00005:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00005.jpg" ;
-  dc:date "2019-09-25T16:51:39"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1898 ;
-    geo:long 6.5930
-  ] ;
-  :nd "+53.1898+006.5930"^^ll: .
 

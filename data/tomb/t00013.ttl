@@ -1,66 +1,64 @@
 @prefix t00013: <https://noordergraf.rug.nl/tomb/t00013#> .
 
-tomb:t00013 a :Tomb ;
-  :image t00013:im1 ;
+tomb:t00013
+  a :Tomb ;
+  :ent t00013:p1, t00013:p2, t00013:p3 ;
+  :image [
+    dc:date "2019-09-25T16:48:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00013.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1901 ;
+      geo:long 6.5927
+    ] ;
+    :nd "+53.1901+006.5927"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00013:p1 ,
-       t00013:p2 ,
-       t00013:p3 ;
-  :sym t00013:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00013:c1 a :Village.n.02 ;
-  :place place:Garnwerd2755726 ;
-  :name "GARNWERD" .
-
-t00013:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00013:c3 a :Village.n.02 ;
-  :place place:SintAnnen2747294 ;
-  :name "SINT-ANNEN" .
-
-t00013:p1 a :Female ;
+t00013:p1
+  a :Female ;
   :dob "1895-12-14"^^xsd:date ;
   :dod "1931-06-10"^^xsd:date ;
   :nam "ANJE SMIT" ;
   :pob t00013:c1 ;
   :pod t00013:c2 .
 
-t00013:p2 a :Female ;
+t00013:p2
+  a :Female ;
   :dob "1864-03-19"^^xsd:date ;
   :dod "1936-05-11"^^xsd:date ;
   :nam "HELENA REITSMA" ;
   :pob t00013:c1 ;
   :pod t00013:c2 ;
-  :rol t00013:r1 .
+  :rol [
+    a :Wife.n.01 ;
+    :tgt t00013:p3
+  ] .
 
-t00013:p3 a :Male ;
+t00013:p3
+  a :Male ;
   :dob "1862-11-11"^^xsd:date ;
   :dod "1948-02-09"^^xsd:date ;
   :nam "BALTUS SMIT" ;
-  :pob t00013:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "SINT-ANNEN" ;
+    :place place:SintAnnen2747294
+  ] ;
   :pod t00013:c2 .
 
-t00013:r1 a :Wife.n.01 ;
-  :tgt t00013:p3 .
+t00013:c1
+  a :Village.n.02 ;
+  :name "GARNWERD" ;
+  :place place:Garnwerd2755726 .
 
-t00013:s1 a :Frond.n.01 .
-
-t00013:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00013.jpg" ;
-  dc:date "2019-09-25T16:48:54"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1901 ;
-    geo:long 6.5927
-  ] ;
-  :nd "+53.1901+006.5927"^^ll: .
+t00013:c2
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

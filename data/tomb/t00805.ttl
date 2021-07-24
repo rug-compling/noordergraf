@@ -1,47 +1,44 @@
 @prefix t00805: <https://noordergraf.rug.nl/tomb/t00805#> .
 
-tomb:t00805 a :Tomb ;
-  :image t00805:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00805:p1 ,
-       t00805:p2 ;
+tomb:t00805
+  a :Tomb ;
+  :ent t00805:p1, t00805:p2 ;
+  :image [
+    dc:date "2020-01-18T13:13:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00805.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2779 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2779+006.6936"^^ll:
+  ] ;
   :quo "HIER LIGT HAAR STOFFE \\ LIJK OVERSCHOT INT KILLE \\ GRAF TER NEDER. MOCHT \\ TOCH HAAR ZIELE ZIJN BIJ \\ GOD DAN WAS HAAR \\ HEENGAAN VREDE!"@nld ;
-  :sym t00805:s1 .
+  :site site:gr9791KEten_boer ;
+  :sym [
+    a :Butterfly.n.01
+  ] .
 
-t00805:c1 a :Village.n.02 ;
-  :place place:TenBoer2746491 ;
-  :name "TEN BOER" .
-
-t00805:p1 a :Female ;
+t00805:p1
+  a :Female ;
   :dob "1835-05-16"^^xsd:date ;
   :dod "1911-09-21"^^xsd:date ;
   :nam "ETJE DERKS BOER" ;
   :pob t00805:c1 ;
   :pod t00805:c1 ;
-  :rol t00805:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00805:p2
+  ] .
 
-t00805:p2 a :Male ;
+t00805:p2
+  a :Male ;
   :nam "J.P. VINK" .
 
-t00805:r1 a :Widow.n.01 ;
-  :tgt t00805:p2 .
-
-t00805:s1 a :Butterfly.n.01 .
-
-t00805:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00805.jpg" ;
-  dc:date "2020-01-18T13:13:18"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2779 ;
-    geo:long 6.6936
-  ] ;
-  :nd "+53.2779+006.6936"^^ll: .
+t00805:c1
+  a :Village.n.02 ;
+  :name "TEN BOER" ;
+  :place place:TenBoer2746491 .
 

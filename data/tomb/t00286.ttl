@@ -1,47 +1,42 @@
 @prefix t00286: <https://noordergraf.rug.nl/tomb/t00286#> .
 
-tomb:t00286 a :Tomb ;
-  :image t00286:im1 ;
-  :site site:gr9985SCoosternieland ;
-  :ent t00286:p1 ,
-       t00286:p2 ;
+tomb:t00286
+  a :Tomb ;
+  :ent t00286:p1, t00286:p2 ;
+  :image [
+    dc:date "2019-10-16T16:49:22"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00286.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4039 ;
+      geo:long 6.7489
+    ] ;
+    :nd "+53.4039+006.7489"^^ll:
+  ] ;
   :ref "PSALM 68:2 BERIJMD" ;
-  :sym t00286:s1 .
+  :site site:gr9985SCoosternieland ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ]
+  ] .
 
-t00286:p1 a :Male ;
+t00286:p1
+  a :Male ;
   :dob "1873-01-24"^^xsd:date ;
   :dod "1920-01-02"^^xsd:date ;
   :nam "PIETER BAKKER" ;
   :quo "RUST ZACHT MOEDER" .
 
-t00286:p2 a :Female ;
+t00286:p2
+  a :Female ;
   :dob "1875-10-07"^^xsd:date ;
   :dod "1957-04-05"^^xsd:date ;
   :nam "JANTJE ROZEMULLER" ;
   :quo "RUST ZACHT VADER" .
-
-t00286:s1 a :Composite.n.01 ;
-  :prt t00286:s2 ,
-       t00286:s3 .
-
-t00286:s2 a :Frond.n.01 .
-
-t00286:s3 a :Frond.n.01 .
-
-t00286:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00286.jpg" ;
-  dc:date "2019-10-16T16:49:22"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4039 ;
-    geo:long 6.7489
-  ] ;
-  :nd "+53.4039+006.7489"^^ll: .
 

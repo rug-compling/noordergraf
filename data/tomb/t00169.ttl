@@ -1,42 +1,39 @@
 @prefix t00169: <https://noordergraf.rug.nl/tomb/t00169#> .
 
-tomb:t00169 a :Tomb ;
-  :image t00169:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00169:p1 ;
-  :ref t00169:v1 .
-
-t00169:b1 a :John.n.05 ;
-  :prt t00169:c1 .
-
-t00169:c1 a :Chapter.n.01 ;
-  :ord 2 ;
-  :prt t00169:v2 .
-
-t00169:p1 a :Family.n.04 ;
-  :nam "POLL" .
-
-t00169:v1 a :Part.n.09 ;
-  :nam "A" .
-
-t00169:v2 a :Verse.n.01 ;
-  :ord 2 ;
-  :prt t00169:v1 .
-
-t00169:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00169.jpg" ;
-  dc:date "2019-10-05T10:45:50"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1901 ;
-    geo:long 6.5929
+tomb:t00169
+  a :Tomb ;
+  :ent [
+    a :Family.n.04 ;
+    :nam "POLL"
   ] ;
-  :nd "+53.1901+006.5929"^^ll: .
+  :image [
+    dc:date "2019-10-05T10:45:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00169.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1901 ;
+      geo:long 6.5929
+    ] ;
+    :nd "+53.1901+006.5929"^^ll:
+  ] ;
+  :ref t00169:v1 ;
+  :site site:gr9722SNgroningen .
+
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 2 ;
+    :prt [
+      a :Verse.n.01 ;
+      :ord 2 ;
+      :prt t00169:v1
+    ]
+  ] .
+
+t00169:v1
+  a :Part.n.09 ;
+  :nam "A" .
 

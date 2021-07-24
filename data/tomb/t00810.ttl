@@ -1,47 +1,44 @@
 @prefix t00810: <https://noordergraf.rug.nl/tomb/t00810#> .
 
-tomb:t00810 a :Tomb ;
-  :image t00810:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00810:p1 ,
-       t00810:p2 ;
+tomb:t00810
+  a :Tomb ;
+  :ent t00810:p1, t00810:p2 ;
+  :image [
+    dc:date "2020-01-18T13:13:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00810.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2779 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2779+006.6936"^^ll:
+  ] ;
   :quo "STA WANDELAAR EN LEES, \\ WIER OVERSCHOT DIT IS. \\ EN DENK DAN OOK DAT LOT \\ TREFT VROEG OF SPA MIJ WIS"@nld ;
-  :sym t00810:s1 .
+  :site site:gr9791KEten_boer ;
+  :sym [
+    a :Butterfly.n.01
+  ] .
 
-t00810:c1 a :Village.n.02 ;
-  :place place:TenBoer2746491 ;
-  :name "TEN BOER" .
-
-t00810:p1 a :Female ;
+t00810:p1
+  a :Female ;
   :dob "1832-05-02"^^xsd:date ;
   :dod "1883-06-12"^^xsd:date ;
   :nam "ANJE DERKS BOER" ;
   :pob t00810:c1 ;
   :pod t00810:c1 ;
-  :rol t00810:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00810:p2
+  ] .
 
-t00810:p2 a :Male ;
+t00810:p2
+  a :Male ;
   :nam "J.H. BOLMAN" .
 
-t00810:r1 a :Spouse.n.01 ;
-  :tgt t00810:p2 .
-
-t00810:s1 a :Butterfly.n.01 .
-
-t00810:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00810.jpg" ;
-  dc:date "2020-01-18T13:13:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2779 ;
-    geo:long 6.6936
-  ] ;
-  :nd "+53.2779+006.6936"^^ll: .
+t00810:c1
+  a :Village.n.02 ;
+  :name "TEN BOER" ;
+  :place place:TenBoer2746491 .
 

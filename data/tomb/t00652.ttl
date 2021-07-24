@@ -1,47 +1,41 @@
 @prefix t00652: <https://noordergraf.rug.nl/tomb/t00652#> .
 
-tomb:t00652 a :Tomb ;
-  :image t00652:im1 ;
+tomb:t00652
+  a :Tomb ;
+  :ent t00652:p1, t00652:p2, t00652:p3 ;
+  :image [
+    dc:date "2019-11-23T10:46:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00652.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1662 ;
+      geo:long 6.7525
+    ] ;
+    :nd "+53.1662+006.7525"^^ll:
+  ] ;
+  :quo "1940"@nld, "1945"@nld, "IN HET VERZET GEVALLEN"@nld ;
   :site site:gr9601KAhoogezand ;
-  :ent t00652:p1 ,
-       t00652:p2 ,
-       t00652:p3 ;
-  :quo "1940"@nld ,
-       "1945"@nld ,
-       "IN HET VERZET GEVALLEN"@nld ;
-  :sym t00652:s1 .
+  :sym [
+    a :Lion.n.01
+  ] .
 
-t00652:p1 a :Male ;
+t00652:p1
+  a :Male ;
   :dob "1897-01-03"^^xsd:date ;
   :dod "1944-10-05"^^xsd:date ;
   :nam "MEINT VENINGA" .
 
-t00652:p2 a :Male ;
+t00652:p2
+  a :Male ;
   :dob "1920-06-13"^^xsd:date ;
   :dod "1944-10-05"^^xsd:date ;
   :nam "JAN HUITZING" .
 
-t00652:p3 a :Male ;
+t00652:p3
+  a :Male ;
   :dob "1911-02-21"^^xsd:date ;
   :dod "1944-10-05"^^xsd:date ;
   :nam "JAN SANGERS" .
-
-t00652:s1 a :Lion.n.01 .
-
-t00652:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00652.jpg" ;
-  dc:date "2019-11-23T10:46:50"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1662 ;
-    geo:long 6.7525
-  ] ;
-  :nd "+53.1662+006.7525"^^ll: .
 

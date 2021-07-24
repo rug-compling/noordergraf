@@ -1,36 +1,31 @@
 @prefix t00593: <https://noordergraf.rug.nl/tomb/t00593#> .
 
-tomb:t00593 a :Tomb ;
-  :image t00593:im1 ;
-  :site site:gr9951TNwinsum ;
+tomb:t00593
+  a :Tomb ;
   :ent t00593:p1 ;
+  :image [
+    dc:date "2019-11-30T14:22:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00593.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3274 ;
+      geo:long 6.5132
+    ] ;
+    :nd "+53.3274+006.5132"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00593:s1 ,
-       t00593:s2 .
+  :site site:gr9951TNwinsum ;
+  :sym [
+    a :Canoe.n.01
+  ], [
+    a :Bike.n.02
+  ] .
 
-t00593:p1 a :Male ;
+t00593:p1
+  a :Male ;
   :dob "1940-05-06"^^xsd:date ;
   :dod "2009-10-06"^^xsd:date ;
   :nam "JAN FABER" .
-
-t00593:s1 a :Canoe.n.01 .
-
-t00593:s2 a :Bike.n.02 .
-
-t00593:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00593.jpg" ;
-  dc:date "2019-11-30T14:22:08"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3274 ;
-    geo:long 6.5132
-  ] ;
-  :nd "+53.3274+006.5132"^^ll: .
 

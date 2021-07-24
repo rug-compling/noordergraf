@@ -1,52 +1,49 @@
 @prefix t01054: <https://noordergraf.rug.nl/tomb/t01054#> .
 
-tomb:t01054 a :Tomb ;
-  :image t01054:im1 ;
-  :site site:gr9975VRvierhuizen ;
-  :ent t01054:p1 ,
-       t01054:p2 ;
-  :lan "NLD" .
+tomb:t01054
+  a :Tomb ;
+  :ent t01054:p1, t01054:p2 ;
+  :image [
+    dc:date "2020-05-02T15:55:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01054.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3605 ;
+      geo:long 6.2928
+    ] ;
+    :nd "+53.3605+006.2928"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9975VRvierhuizen .
 
-t01054:c1 a :Village.n.02 ;
-  :place place:Ulrum2745944 ;
-  :name "ULRUM" .
-
-t01054:c2 a :Village.n.02 ;
-  :place place:Vierhuizen2745553 ;
-  :name "VIERHUIZEN" .
-
-t01054:c3 a :Town.n.01 ;
-  :place place:Opende2749302 ;
-  :name "OPENDE" .
-
-t01054:p1 a :Female ;
+t01054:p1
+  a :Female ;
   :dob "1894-03-12"^^xsd:date ;
   :dod "1946-12-26"^^xsd:date ;
   :nam "PIETER ROZEMA" ;
   :pob t01054:c1 ;
-  :pod t01054:c2 .
+  :pod [
+    a :Village.n.02 ;
+    :name "VIERHUIZEN" ;
+    :place place:Vierhuizen2745553
+  ] .
 
-t01054:p2 a :Female ;
+t01054:p2
+  a :Female ;
   :dob "1884-06-06"^^xsd:date ;
   :dod "1972-05-04"^^xsd:date ;
   :nam "TRIJNTJE VOS" ;
   :pob t01054:c1 ;
-  :pod t01054:c3 .
+  :pod [
+    a :Town.n.01 ;
+    :name "OPENDE" ;
+    :place place:Opende2749302
+  ] .
 
-t01054:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01054.jpg" ;
-  dc:date "2020-05-02T15:55:36"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3605 ;
-    geo:long 6.2928
-  ] ;
-  :nd "+53.3605+006.2928"^^ll: .
+t01054:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
 

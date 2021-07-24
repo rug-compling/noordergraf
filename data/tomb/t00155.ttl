@@ -1,70 +1,64 @@
 @prefix t00155: <https://noordergraf.rug.nl/tomb/t00155#> .
 
-tomb:t00155 a :Tomb ;
-  :image t00155:im1 ;
+tomb:t00155
+  a :Tomb ;
+  :ent t00155:p1, t00155:p2, t00155:p3, t00155:p4 ;
+  :image [
+    dc:date "2019-10-02T10:22:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00155.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2061 ;
+      geo:long 6.5698
+    ] ;
+    :nd "+53.2061+006.5698"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00155:p1 ,
-       t00155:p2 ,
-       t00155:p3 ,
-       t00155:p4 ;
-  :sym t00155:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00155:g1 a :Group.n.01 .
-
-t00155:p1 a :Female ;
+t00155:p1
+  a :Female ;
   :dob "1859-08-22"^^xsd:date ;
   :dod "1941-04-07"^^xsd:date ;
   :nam "ROELINA ONSTWEDDER" ;
-  :rol t00155:r1 ,
-       t00155:r2 .
+  :rol [
+    a :Mother.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00155:g1
+  ], [
+    a :Widow.n.01 ;
+    :tgt t00155:p2
+  ] .
 
-t00155:p2 a :Male ;
+t00155:p2
+  a :Male ;
   :nam "ALE KOENES" .
 
-t00155:p3 a :Male ;
+t00155:p3
+  a :Male ;
   :dob "1878-12-27"^^xsd:date ;
   :dod "1955-02-11"^^xsd:date ;
   :nam "BENDERT KLOOSTERMAN" ;
-  :rol t00155:r3 ,
-       t00155:r4 ,
-       t00155:r5 .
+  :rol [
+    a :Father.n.01 ;
+    :tgt t00155:g1
+  ], [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00155:p4
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00155:p4
+  ] .
 
-t00155:p4 a :Female ;
+t00155:p4
+  a :Female ;
   :nam "A. KOENES" .
 
-t00155:r1 a :Mother.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00155:g1 .
-
-t00155:r2 a :Widow.n.01 ;
-  :tgt t00155:p2 .
-
-t00155:r3 a :Father.n.01 ;
-  :tgt t00155:g1 .
-
-t00155:r4 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00155:p4 .
-
-t00155:r5 a :Spouse.n.01 ;
-  :tgt t00155:p4 .
-
-t00155:s1 a :Frond.n.01 .
-
-t00155:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00155.jpg" ;
-  dc:date "2019-10-02T10:22:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2061 ;
-    geo:long 6.5698
-  ] ;
-  :nd "+53.2061+006.5698"^^ll: .
+t00155:g1
+  a :Group.n.01 .
 

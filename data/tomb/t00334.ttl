@@ -1,49 +1,45 @@
 @prefix t00334: <https://noordergraf.rug.nl/tomb/t00334#> .
 
-tomb:t00334 a :Tomb ;
-  :image t00334:im1 ;
+tomb:t00334
+  a :Tomb ;
+  :ent t00334:p1, t00334:p2 ;
+  :image [
+    dc:date "2019-10-19T14:13:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00334.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7153 ;
+      geo:long 6.4731
+    ] ;
+    :nd "+52.7153+006.4731"^^ll:
+  ] ;
   :site site:dr7907CHhoogeveen ;
-  :ent t00334:p1 ,
-       t00334:p2 ;
-  :sym t00334:s1 .
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00334:a1 a :Weeping.a.02 .
-
-t00334:p1 a :Male ;
+t00334:p1
+  a :Male ;
   :dob "1851-10-08"^^xsd:date ;
   :dod "1932-08-09"^^xsd:date ;
   :nam "JAN HUIZING" ;
-  :rol t00334:r1 .
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00334:p3
+  ] .
 
-t00334:p2 a :Female ;
+t00334:p2
+  a :Female ;
   :dob "1859-08-19"^^xsd:date ;
   :dod "1915-07-12"^^xsd:date ;
   :nam "LAMMECHIEN OLDENBURGER" ;
-  :rol t00334:r2 .
-
-t00334:r1 a :Parent.n.01 ;
-  :tgt t00334:p3 .
-
-t00334:r2 a :Parent.n.01 ;
-  :tgt t00334:p3 .
-
-t00334:s1 a :Willow.n.01 ;
-  :att t00334:a1 .
-
-t00334:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00334.jpg" ;
-  dc:date "2019-10-19T14:13:12"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7153 ;
-    geo:long 6.4731
-  ] ;
-  :nd "+52.7153+006.4731"^^ll: .
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00334:p3
+  ] .
 

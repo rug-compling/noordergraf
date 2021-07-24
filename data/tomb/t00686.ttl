@@ -1,48 +1,45 @@
 @prefix t00686: <https://noordergraf.rug.nl/tomb/t00686#> .
 
-tomb:t00686 a :Tomb ;
-  :image t00686:im1 ;
-  :site site:fr8701DWbolsward ;
-  :ent t00686:p1 ,
-       t00686:p2 ;
+tomb:t00686
+  a :Tomb ;
+  :ent t00686:p1, t00686:p2 ;
+  :image [
+    dc:date "2019-12-14T13:17:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00686.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0684 ;
+      geo:long 5.5234
+    ] ;
+    :nd "+53.0684+005.5234"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00686:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00686:c1 a :City.n.01 ;
-  :place place:Bolsward2758682 ;
-  :name "BOLSWARD" .
-
-t00686:p1 a :Male ;
+t00686:p1
+  a :Male ;
   :dob "1862-03-06"^^xsd:date ;
   :dod "1928-01-07"^^xsd:date ;
   :nam "HENDRIK G. DE BOER" ;
   :pob t00686:c1 ;
   :pod t00686:c1 ;
-  :rol t00686:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00686:p2
+  ] .
 
-t00686:p2 a :Female ;
+t00686:p2
+  a :Female ;
   :nam "MAAIKE IJNTEMA" .
 
-t00686:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00686:p2 .
-
-t00686:s1 a :Rose.n.01 .
-
-t00686:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00686.jpg" ;
-  dc:date "2019-12-14T13:17:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0684 ;
-    geo:long 5.5234
-  ] ;
-  :nd "+53.0684+005.5234"^^ll: .
+t00686:c1
+  a :City.n.01 ;
+  :name "BOLSWARD" ;
+  :place place:Bolsward2758682 .
 

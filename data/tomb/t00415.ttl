@@ -1,60 +1,57 @@
 @prefix t00415: <https://noordergraf.rug.nl/tomb/t00415#> .
 
-tomb:t00415 a :Tomb ;
-  :image t00415:im1 ;
-  :site site:dr9481CGvries ;
-  :ent t00415:p1 ,
-       t00415:p2 ;
+tomb:t00415
+  a :Tomb ;
+  :ent t00415:p1, t00415:p2 ;
+  :image [
+    dc:date "2019-10-25T17:04:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00415.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0796 ;
+      geo:long 6.5724
+    ] ;
+    :nd "+53.0796+006.5724"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :sym t00415:s1 .
+  :site site:dr9481CGvries ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00415:c1 a :Village.n.02 ;
-  :place place:Tynaarlo2746038 ;
-  :name "TYNAARLO" .
-
-t00415:c2 a :Village.n.02 ;
-  :place place:Yde2744130 ;
-  :name "YDE" .
-
-t00415:c3 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00415:p1 a :Female ;
+t00415:p1
+  a :Female ;
   :dob "1880-12-10"^^xsd:date ;
   :dod "1952-11-12"^^xsd:date ;
   :nam "GEESSIEN ROSSING" ;
   :pob t00415:c1 ;
   :pod t00415:c1 ;
-  :rol t00415:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00415:p2
+  ] .
 
-t00415:p2 a :Male ;
+t00415:p2
+  a :Male ;
   :dob "1880-03-31"^^xsd:date ;
   :dod "1968-06-11"^^xsd:date ;
   :nam "HENDRIK KOOPS" ;
-  :pob t00415:c2 ;
-  :pod t00415:c3 .
-
-t00415:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00415:p2 .
-
-t00415:s1 a :Frond.n.01 .
-
-t00415:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00415.jpg" ;
-  dc:date "2019-10-25T17:04:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0796 ;
-    geo:long 6.5724
+  :pob [
+    a :Village.n.02 ;
+    :name "YDE" ;
+    :place place:Yde2744130
   ] ;
-  :nd "+53.0796+006.5724"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] .
+
+t00415:c1
+  a :Village.n.02 ;
+  :name "TYNAARLO" ;
+  :place place:Tynaarlo2746038 .
 

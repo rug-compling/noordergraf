@@ -1,45 +1,41 @@
 @prefix t00314: <https://noordergraf.rug.nl/tomb/t00314#> .
 
-tomb:t00314 a :Tomb ;
-  :image t00314:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00314:p1 ,
-       t00314:p2 ,
-       t00314:p3 .
+tomb:t00314
+  a :Tomb ;
+  :ent t00314:p1, t00314:p2, t00314:p3 ;
+  :image [
+    dc:date "2019-10-19T14:14:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00314.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7156 ;
+      geo:long 6.4733
+    ] ;
+    :nd "+52.7156+006.4733"^^ll:
+  ] ;
+  :site site:dr7907CHhoogeveen .
 
-t00314:o1 a :Doctor.n.01 ;
-  :hco "06105" .
-
-t00314:p1 a :Male ;
+t00314:p1
+  a :Male ;
   :dob "1856"^^xsd:gYear ;
   :dod "1918"^^xsd:gYear ;
   :nam "H. SMEMAN" ;
-  :occ t00314:o1 .
+  :occ [
+    a :Doctor.n.01 ;
+    :hco "06105"
+  ] .
 
-t00314:p2 a :Female ;
+t00314:p2
+  a :Female ;
   :dob "1856"^^xsd:gYear ;
   :dod "1918"^^xsd:gYear ;
   :nam "E. SMEMAN-EENKEMA" .
 
-t00314:p3 a :Person ;
+t00314:p3
+  a :Person ;
   :dob "1895"^^xsd:gYear ;
   :dod "1885"^^xsd:gYear ;
   :nam "H.C.H. SMEMAN" .
-
-t00314:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00314.jpg" ;
-  dc:date "2019-10-19T14:14:56"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7156 ;
-    geo:long 6.4733
-  ] ;
-  :nd "+52.7156+006.4733"^^ll: .
 

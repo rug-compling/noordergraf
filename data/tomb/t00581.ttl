@@ -1,68 +1,68 @@
 @prefix t00581: <https://noordergraf.rug.nl/tomb/t00581#> .
 
-tomb:t00581 a :Tomb ;
-  :image t00581:im1 ;
-  :site site:gr9951STwinsum ;
-  :ent t00581:p1 ,
-       t00581:p2 ;
+tomb:t00581
+  a :Tomb ;
+  :ent t00581:p1, t00581:p2 ;
+  :image [
+    dc:date "2019-11-30T14:50:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00581.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3355 ;
+      geo:long 6.5127
+    ] ;
+    :nd "+53.3355+006.5127"^^ll:
+  ] ;
   :ref t00581:v1 ;
-  :sym t00581:s1 ,
-       t00581:s2 ,
-       t00581:s3 .
+  :site site:gr9951STwinsum ;
+  :sym [
+    a :Sandglass.n.01
+  ], t00581:s2, t00581:s3 .
 
-t00581:b1 a :John.n.05 ;
-  :prt t00581:c3 .
-
-t00581:c1 a :Village.n.02 ;
-  :place place:Ezinge2755938 ;
-  :name "EZINGE" .
-
-t00581:c3 a :Chapter.n.01 ;
-  :ord 11 ;
-  :prt t00581:v1 .
-
-t00581:p1 a :Female ;
+t00581:p1
+  a :Female ;
   :dob "1817-12-28"^^xsd:date ;
   :dod "1891-11-05"^^xsd:date ;
   :nam "JANTJE WIEREMA" .
 
-t00581:p2 a :Person ;
-  :loc t00581:c1 ;
+t00581:p2
+  a :Person ;
+  :loc [
+    a :Village.n.02 ;
+    :name "EZINGE" ;
+    :place place:Ezinge2755938
+  ] ;
   :nam "K. MOES" ;
-  :occ t00581:r1 .
+  :occ [
+    a :Designer.n.01 ;
+    :tgt tomb:t00581
+  ] .
 
-t00581:r1 a :Designer.n.01 ;
-  :tgt tomb:t00581 .
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 11 ;
+    :prt t00581:v1
+  ] .
 
-t00581:s1 a :Sandglass.n.01 .
+t00581:s2
+  a :Wing.n.01 .
 
-t00581:s2 a :Wing.n.01 .
+t00581:s3
+  a :Wing.n.01 .
 
-t00581:s3 a :Wing.n.01 .
-
-t00581:s4 a :Bat.n.01 ;
+[]
+  a :Bat.n.01 ;
   :mem t00581:s2 .
 
-t00581:s5 a :Bird.n.01 ;
+[]
+  a :Bird.n.01 ;
   :mem t00581:s3 .
 
-t00581:v1 a :Verse.n.01 ;
+t00581:v1
+  a :Verse.n.01 ;
   :ord 25 .
-
-t00581:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00581.jpg" ;
-  dc:date "2019-11-30T14:50:42"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3355 ;
-    geo:long 6.5127
-  ] ;
-  :nd "+53.3355+006.5127"^^ll: .
 

@@ -1,54 +1,50 @@
 @prefix t00182: <https://noordergraf.rug.nl/tomb/t00182#> .
 
-tomb:t00182 a :Tomb ;
-  :image t00182:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00182:p1 ,
-       t00182:p2 ;
-  :img t00182:i1 ;
-  :quo "UW ARBEID ZAL IN ONZEN HEER NIET IJDEL WEZEN, HEM ZIJ DEER" .
+tomb:t00182
+  a :Tomb ;
+  :ent t00182:p1, t00182:p2 ;
+  :image [
+    dc:date "2019-10-05T10:19:15"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00182.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1911 ;
+      geo:long 6.5934
+    ] ;
+    :nd "+53.1911+006.5934"^^ll:
+  ] ;
+  :img [
+    a :Portrait.n.02 ;
+    :thm t00182:p1
+  ] ;
+  :quo "UW ARBEID ZAL IN ONZEN HEER NIET IJDEL WEZEN, HEM ZIJ DEER" ;
+  :site site:gr9722SNgroningen .
 
-t00182:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00182:i1 a :Portrait.n.02 ;
-  :thm t00182:p1 .
-
-t00182:o1 a :Chairperson.n.01 ;
-  :org t00182:o2 .
-
-t00182:o2 a :Union.n.07 ;
-  :nam "NEDERLANDSE CHRISTELIJKE GIJMNASTIEK VERBOND" .
-
-t00182:p1 a :Male ;
+t00182:p1
+  a :Male ;
   :dob "1888-06-23"^^xsd:date ;
   :dod "1931-08-18"^^xsd:date ;
   :nam "KAREL DUIKER" ;
-  :occ t00182:o1 ;
-  :pod t00182:c1 ;
-  :rol t00182:r1 .
-
-t00182:p2 a :Female ;
-  :nam "S. BOUWMAN" .
-
-t00182:r1 a :Spouse.n.01 ;
-  :tgt t00182:p2 .
-
-t00182:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00182.jpg" ;
-  dc:date "2019-10-05T10:19:15"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1911 ;
-    geo:long 6.5934
+  :occ [
+    a :Chairperson.n.01 ;
+    :org [
+      a :Union.n.07 ;
+      :nam "NEDERLANDSE CHRISTELIJKE GIJMNASTIEK VERBOND"
+    ]
   ] ;
-  :nd "+53.1911+006.5934"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00182:p2
+  ] .
+
+t00182:p2
+  a :Female ;
+  :nam "S. BOUWMAN" .
 

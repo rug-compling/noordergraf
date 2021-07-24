@@ -1,60 +1,56 @@
 @prefix t00832: <https://noordergraf.rug.nl/tomb/t00832#> .
 
-tomb:t00832 a :Tomb ;
-  :image t00832:im1 ;
-  :site site:dr7844TCveenoord ;
-  :ent t00832:g1 ,
-       t00832:p1 ,
-       t00832:p2 ,
-       t00832:p3 ;
+tomb:t00832
+  a :Tomb ;
+  :ent t00832:p1, t00832:p2, t00832:p3, t00832:g1 ;
+  :image [
+    dc:date "2020-02-15T15:14:59"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00832.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7193 ;
+      geo:long 6.8450
+    ] ;
+    :nd "+52.7193+006.8450"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00832:s1 .
+  :site site:dr7844TCveenoord ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00832:a1 a :Weeping.a.02 .
-
-t00832:c1 a :Village.n.02 ;
-  :place place:Veenoord2745753 ;
-  :name "VEENOORD" .
-
-t00832:g1 a :Group.n.01 ;
-  :mem t00832:p2 ,
-       t00832:p3 .
-
-t00832:p1 a :Female ;
+t00832:p1
+  a :Female ;
   :dob "1907-12-20"^^xsd:date ;
   :dod "1912-01-19"^^xsd:date ;
   :nam "GEZIENA ALBERTA MOL" ;
   :pob t00832:c1 ;
   :pod t00832:c1 ;
-  :rol t00832:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00832:g1
+  ] .
 
-t00832:p2 a :Male ;
+t00832:p2
+  a :Male ;
   :nam "A. MOL" .
 
-t00832:p3 a :Female ;
+t00832:p3
+  a :Female ;
   :nam "J.K. SCHOLTE" .
 
-t00832:r1 a :Daughter.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00832:g1 .
+t00832:c1
+  a :Village.n.02 ;
+  :name "VEENOORD" ;
+  :place place:Veenoord2745753 .
 
-t00832:s1 a :Willow.n.01 ;
-  :att t00832:a1 .
-
-t00832:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00832.jpg" ;
-  dc:date "2020-02-15T15:14:59"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7193 ;
-    geo:long 6.8450
-  ] ;
-  :nd "+52.7193+006.8450"^^ll: .
+t00832:g1
+  a :Group.n.01 ;
+  :mem t00832:p2, t00832:p3 .
 

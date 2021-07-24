@@ -1,66 +1,64 @@
 @prefix t00120: <https://noordergraf.rug.nl/tomb/t00120#> .
 
-tomb:t00120 a :Tomb ;
-  :image t00120:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00120:p1 ,
-       t00120:p2 ;
-  :ref t00120:v1 .
+tomb:t00120
+  a :Tomb ;
+  :ent t00120:p1, t00120:p2 ;
+  :image [
+    dc:date "2019-09-20T17:45:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00120.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1628 ;
+      geo:long 6.6158
+    ] ;
+    :nd "+53.1628+006.6158"^^ll:
+  ] ;
+  :ref t00120:v1 ;
+  :site site:gr9752CMharen .
 
-t00120:b1 a :Revelation.n.04 ;
-  :prt t00120:c2 .
-
-t00120:c1 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00120:c2 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00120:v1 .
-
-t00120:o1 a :Principal.n.02 ;
-  :beg "1943"^^xsd:gYear ;
-  :end "1963"^^xsd:gYear ;
-  :hco "13940" ;
-  :loc t00120:c1 ;
-  :org t00120:o2 .
-
-t00120:o2 a :School.n.01 ;
-  :nam "CHRISTELIJKE NATIONALE ULO SCHOOL" .
-
-t00120:p1 a :Male ;
+t00120:p1
+  a :Male ;
   :dob "1898-06-27"^^xsd:date ;
   :dod "1966-07-05"^^xsd:date ;
   :nam "WILLEM BOLT" ;
-  :occ t00120:o1 ;
-  :rol t00120:r1 .
+  :occ [
+    a :Principal.n.02 ;
+    :beg "1943"^^xsd:gYear ;
+    :end "1963"^^xsd:gYear ;
+    :hco "13940" ;
+    :loc [
+      a :Town.n.01 ;
+      :name "HAREN" ;
+      :place place:Haren2754841
+    ] ;
+    :org [
+      a :School.n.01 ;
+      :nam "CHRISTELIJKE NATIONALE ULO SCHOOL"
+    ]
+  ] ;
+  :rol [
+    a :Husband.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00120:p2
+  ] .
 
-t00120:p2 a :Female ;
+t00120:p2
+  a :Female ;
   :dob "1898-01-21"^^xsd:date ;
   :dod "1970-01-31"^^xsd:date ;
   :nam "ROELINA EIKELBOOM" .
 
-t00120:r1 a :Husband.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00120:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00120:v1
+  ] .
 
-t00120:v1 a :Verse.n.01 ;
+t00120:v1
+  a :Verse.n.01 ;
   :ord 3 .
-
-t00120:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00120.jpg" ;
-  dc:date "2019-09-20T17:45:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1628 ;
-    geo:long 6.6158
-  ] ;
-  :nd "+53.1628+006.6158"^^ll: .
 

@@ -1,55 +1,52 @@
 @prefix t00977: <https://noordergraf.rug.nl/tomb/t00977#> .
 
-tomb:t00977 a :Tomb ;
-  :image t00977:im1 ;
-  :ent t00977:p1 ,
-       t00977:p2 ,
-       t00977:p3 ,
-       t00977:p4 ;
+tomb:t00977
+  a :Tomb ;
+  :ent t00977:p1, t00977:p2, t00977:p3, t00977:p4 ;
+  :image [
+    dc:date "2020-03-25T09:26:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00977.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1299 ;
+      geo:long 6.6240
+    ] ;
+    :nd "+53.1299+006.6240"^^ll:
+  ] ;
   :ref "GEZANG 22"@nld .
 
-t00977:c1 a :Village.n.02 ;
-  :place place:Glimmen2755495 ;
-  :name "GLIMMEN" .
-
-t00977:p1 a :Female ;
+t00977:p1
+  a :Female ;
   :dob "1891-12-06"^^xsd:date ;
   :dod "1918-10-29"^^xsd:date ;
   :nam "JANTJE MULDER" ;
   :pod t00977:c1 .
 
-t00977:p2 a :Male ;
+t00977:p2
+  a :Male ;
   :dob "1895-05-20"^^xsd:date ;
   :dod "1918-10-31"^^xsd:date ;
   :nam "LUCAS MULDER" ;
   :pod t00977:c1 .
 
-t00977:p3 a :Male ;
+t00977:p3
+  a :Male ;
   :dob "1865-11-15"^^xsd:date ;
   :dod "1938-04-12"^^xsd:date ;
   :nam "ROELF MULDER" ;
   :pod t00977:c1 .
 
-t00977:p4 a :Female ;
+t00977:p4
+  a :Female ;
   :dob "1859-01-11"^^xsd:date ;
   :dod "1945-12-15"^^xsd:date ;
   :nam "JANTJE MULDER-GORTMAKER" ;
   :pod t00977:c1 .
 
-t00977:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00977.jpg" ;
-  dc:date "2020-03-25T09:26:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1299 ;
-    geo:long 6.6240
-  ] ;
-  :nd "+53.1299+006.6240"^^ll: .
+t00977:c1
+  a :Village.n.02 ;
+  :name "GLIMMEN" ;
+  :place place:Glimmen2755495 .
 

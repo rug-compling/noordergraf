@@ -1,33 +1,29 @@
 @prefix t00663: <https://noordergraf.rug.nl/tomb/t00663#> .
 
-tomb:t00663 a :Tomb ;
-  :image t00663:im1 ;
-  :site site:fr8701DWbolsward ;
+tomb:t00663
+  a :Tomb ;
   :ent t00663:p1 ;
+  :image [
+    dc:date "2019-12-14T13:51:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00663.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0687 ;
+      geo:long 5.5231
+    ] ;
+    :nd "+53.0687+005.5231"^^ll:
+  ] ;
   :quo "RUST ZACHT"@nld ;
-  :sym t00663:s1 .
+  :site site:fr8701DWbolsward ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00663:p1 a :Female ;
+t00663:p1
+  a :Female ;
   :dob "1873-02-28"^^xsd:date ;
   :dod "1943-05-12"^^xsd:date ;
   :nam "SIBELLA MULDER" .
-
-t00663:s1 a :Frond.n.01 .
-
-t00663:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00663.jpg" ;
-  dc:date "2019-12-14T13:51:11"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0687 ;
-    geo:long 5.5231
-  ] ;
-  :nd "+53.0687+005.5231"^^ll: .
 

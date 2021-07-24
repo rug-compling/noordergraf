@@ -1,57 +1,52 @@
 @prefix t00369: <https://noordergraf.rug.nl/tomb/t00369#> .
 
-tomb:t00369 a :Tomb ;
-  :image t00369:im1 ;
-  :ent t00369:p1 ,
-       t00369:p2 ,
-       t00369:p3 .
+tomb:t00369
+  a :Tomb ;
+  :ent t00369:p1, t00369:p2, t00369:p3 ;
+  :image [
+    dc:date "2019-10-25T17:22:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00369.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0891 ;
+      geo:long 6.5607
+    ] ;
+    :nd "+53.0891+006.5607"^^ll:
+  ] .
 
-t00369:g1 a :Group.n.01 ;
-  :mem t00369:p1 ,
-       t00369:p2 .
-
-t00369:p1 a :Male ;
+t00369:p1
+  a :Male ;
   :dob "1859-02-22"^^xsd:date ;
   :dod "1931-05-26"^^xsd:date ;
   :nam "JAN HINDRIKS" ;
-  :rol t00369:r1 .
+  :rol [
+    a :Widower.n.01 ;
+    :tgt t00369:p2
+  ] .
 
-t00369:p2 a :Female ;
+t00369:p2
+  a :Female ;
   :dob "1860-01-21"^^xsd:date ;
   :dod "1926-03-01"^^xsd:date ;
   :nam "JANTJE HORST" ;
-  :rol t00369:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00369:p1
+  ] .
 
-t00369:p3 a :Female ;
+t00369:p3
+  a :Female ;
   :dob "1893-11-14"^^xsd:date ;
   :dod "1918-11-03"^^xsd:date ;
   :nam "JANTJE HINDRIKS" ;
-  :rol t00369:r3 .
-
-t00369:r1 a :Widower.n.01 ;
-  :tgt t00369:p2 .
-
-t00369:r2 a :Spouse.n.01 ;
-  :tgt t00369:p1 .
-
-t00369:r3 a :Daughter.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00369:g1 .
-
-t00369:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00369.jpg" ;
-  dc:date "2019-10-25T17:22:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0891 ;
-    geo:long 6.5607
-  ] ;
-  :nd "+53.0891+006.5607"^^ll: .
+  :rol [
+    a :Daughter.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt [
+      a :Group.n.01 ;
+      :mem t00369:p1, t00369:p2
+    ]
+  ] .
 

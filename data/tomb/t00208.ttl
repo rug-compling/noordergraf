@@ -1,41 +1,35 @@
 @prefix t00208: <https://noordergraf.rug.nl/tomb/t00208#> .
 
-tomb:t00208 a :Tomb ;
-  :image t00208:im1 ;
-  :site site:gr9723EWgroningen ;
+tomb:t00208
+  a :Tomb ;
   :ent t00208:p1 ;
-  :sym t00208:s1 .
+  :image [
+    dc:date "2019-10-08T14:55:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00208.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2220 ;
+      geo:long 6.6369
+    ] ;
+    :nd "+53.2220+006.6369"^^ll:
+  ] ;
+  :site site:gr9723EWgroningen ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ] .
 
-t00208:p1 a :Male ;
+t00208:p1
+  a :Male ;
   :dob "1767-02-20"^^xsd:date ;
   :dod "1861-06-07"^^xsd:date ;
   :nam "HARM KORNELIS KRUIJER" .
-
-t00208:s1 a :Composite.n.01 ;
-  :prt t00208:s2 ,
-       t00208:s3 ,
-       t00208:s4 .
-
-t00208:s2 a :Frond.n.01 .
-
-t00208:s3 a :Frond.n.01 .
-
-t00208:s4 a :Ribbon.n.01 .
-
-t00208:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00208.jpg" ;
-  dc:date "2019-10-08T14:55:56"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2220 ;
-    geo:long 6.6369
-  ] ;
-  :nd "+53.2220+006.6369"^^ll: .
 

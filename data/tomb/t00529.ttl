@@ -1,51 +1,47 @@
 @prefix t00529: <https://noordergraf.rug.nl/tomb/t00529#> .
 
-tomb:t00529 a :Tomb ;
-  :image t00529:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00529:p1 ,
-       t00529:p2 ;
+tomb:t00529
+  a :Tomb ;
+  :ent t00529:p1, t00529:p2 ;
+  :image [
+    dc:date "2019-11-23T10:23:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00529.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1648 ;
+      geo:long 6.7537
+    ] ;
+    :nd "+53.1648+006.7537"^^ll:
+  ] ;
   :quo "SOMEWHERE I'LL FIND YOU"@nld ;
-  :sym t00529:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Sailboat.n.01
+  ] .
 
-t00529:c1 a :City.n.01 ;
-  :place place:Jombang1642414 ;
-  :name "JOMBANG" .
-
-t00529:c2 a :Town.n.01 ;
-  :place place:Hoogezand2753706 ;
-  :name "HOOGEZAND" .
-
-t00529:p1 a :Male ;
+t00529:p1
+  a :Male ;
   :dob "1932-08-31"^^xsd:date ;
   :dod "1997-05-28"^^xsd:date ;
   :nam "LOEK STRAUBE" ;
-  :pob t00529:c1 ;
-  :pod t00529:c2 ;
-  :rol t00529:r1 .
-
-t00529:p2 a :Female ;
-  :nam "MARY STRAUBE" .
-
-t00529:r1 a :Spouse.n.01 ;
-  :tgt t00529:p2 .
-
-t00529:s1 a :Sailboat.n.01 .
-
-t00529:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00529.jpg" ;
-  dc:date "2019-11-23T10:23:35"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1648 ;
-    geo:long 6.7537
+  :pob [
+    a :City.n.01 ;
+    :name "JOMBANG" ;
+    :place place:Jombang1642414
   ] ;
-  :nd "+53.1648+006.7537"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HOOGEZAND" ;
+    :place place:Hoogezand2753706
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00529:p2
+  ] .
+
+t00529:p2
+  a :Female ;
+  :nam "MARY STRAUBE" .
 

@@ -1,21 +1,23 @@
 @prefix t01102: <https://noordergraf.rug.nl/tomb/t01102#> .
 
-tomb:t01102 a :Tomb ;
+tomb:t01102
+  a :Tomb ;
   :ent t01102:p1 ;
   :lan "NLD" .
 
-t01102:c1 a :Village.n.02 ;
-  :place place:Millingen2750798 ;
-  :name "MILLINGEN" .
-
-t01102:c2 a :Village.n.02 ;
-  :place place:Grijpskerk2755317 ;
-  :name "GRIJPSKERK" .
-
-t01102:p1 a :Male ;
+t01102:p1
+  a :Male ;
   :dob "1940-01-20"^^xsd:date ;
   :dod "1944-12-04"^^xsd:date ;
   :nam "HENDRIKES FR. MULDERS" ;
-  :pob t01102:c1 ;
-  :pod t01102:c2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "MILLINGEN" ;
+    :place place:Millingen2750798
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "GRIJPSKERK" ;
+    :place place:Grijpskerk2755317
+  ] .
 

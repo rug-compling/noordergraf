@@ -1,65 +1,63 @@
 @prefix t00335: <https://noordergraf.rug.nl/tomb/t00335#> .
 
-tomb:t00335 a :Tomb ;
-  :image t00335:im1 ;
-  :site site:dr7907CHhoogeveen ;
-  :ent t00335:p1 ,
-       t00335:p2 ;
+tomb:t00335
+  a :Tomb ;
+  :ent t00335:p1, t00335:p2 ;
+  :image [
+    dc:date "2019-10-19T14:12:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00335.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7153 ;
+      geo:long 6.4732
+    ] ;
+    :nd "+52.7153+006.4732"^^ll:
+  ] ;
   :ref t00335:v1 ;
-  :sym t00335:s1 .
+  :site site:dr7907CHhoogeveen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00335:a1 a :Weeping.a.02 .
-
-t00335:b1 a :Second_Epistle_to_the_Corinthians.n.01 ;
-  :prt t00335:c3 .
-
-t00335:c1 a :Village.n.02 ;
-  :place place:Zuidwolde2743637 ;
-  :name "ZUIDWOLDE" .
-
-t00335:c2 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00335:c3 a :Chapter.n.01 ;
-  :ord 5 ;
-  :prt t00335:v1 .
-
-t00335:p1 a :Female ;
+t00335:p1
+  a :Female ;
   :dob "1881-09-22"^^xsd:date ;
   :dod "1915-09-18"^^xsd:date ;
   :nam "GEERTJE COMPAGNER" ;
-  :pob t00335:c1 ;
-  :pod t00335:c2 ;
-  :rol t00335:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "ZUIDWOLDE" ;
+    :place place:Zuidwolde2743637
+  ] ;
+  :pod [
+    a :Town.n.01 ;
+    :name "HOOGEVEEN" ;
+    :place place:Hoogeveen2753719
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00335:p2
+  ] .
 
-t00335:p2 a :Male ;
+t00335:p2
+  a :Male ;
   :nam "HENDRIK STEENBERGEN" ;
   :sfx "KZ" .
 
-t00335:r1 a :Spouse.n.01 ;
-  :tgt t00335:p2 .
+[]
+  a :Second_Epistle_to_the_Corinthians.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 5 ;
+    :prt t00335:v1
+  ] .
 
-t00335:s1 a :Willow.n.01 ;
-  :att t00335:a1 .
-
-t00335:v1 a :Verse.n.01 ;
+t00335:v1
+  a :Verse.n.01 ;
   :ord 1 .
-
-t00335:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00335.jpg" ;
-  dc:date "2019-10-19T14:12:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7153 ;
-    geo:long 6.4732
-  ] ;
-  :nd "+52.7153+006.4732"^^ll: .
 

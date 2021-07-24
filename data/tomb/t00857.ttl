@@ -1,66 +1,61 @@
 @prefix t00857: <https://noordergraf.rug.nl/tomb/t00857#> .
 
-tomb:t00857 a :Tomb ;
-  :image t00857:im1 ;
-  :site site:dr7841CDsleen ;
-  :ent t00857:p1 ,
-       t00857:p2 ;
+tomb:t00857
+  a :Tomb ;
+  :ent t00857:p1, t00857:p2 ;
+  :image [
+    dc:date "2020-02-15T15:37:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00857.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7764 ;
+      geo:long 6.8042
+    ] ;
+    :nd "+52.7764+006.8042"^^ll:
+  ] ;
   :quo "RUST IN VREDE."@nld ;
-  :sym t00857:s1 .
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00857:a1 a :Weeping.a.02 .
-
-t00857:c1 a :Village.n.02 ;
-  :place place:NoordSleen2749830 ;
-  :name "NOORD-SLEEN" .
-
-t00857:p1 a :Person ;
+t00857:p1
+  a :Person ;
   :dob "1845-03-20"^^xsd:date ;
   :dod "1908-10-05"^^xsd:date ;
   :nam "K. HADDERS" ;
   :pod t00857:c1 ;
-  :rol t00857:r1 ,
-       t00857:r2 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00857:p3
+  ], [
+    a :Grandparent.n.01 ;
+    :tgt t00857:p3
+  ] .
 
-t00857:p2 a :Person ;
+t00857:p2
+  a :Person ;
   :dob "1844-03-02"^^xsd:date ;
   :dod "1908-10-08"^^xsd:date ;
   :nam "G. ZWIERS" ;
   :pod t00857:c1 ;
-  :rol t00857:r3 ,
-       t00857:r4 .
+  :rol [
+    a :Parent.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00857:p3
+  ], [
+    a :Grandparent.n.01 ;
+    :tgt t00857:p3
+  ] .
 
-t00857:r1 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00857:p3 .
-
-t00857:r2 a :Grandparent.n.01 ;
-  :tgt t00857:p3 .
-
-t00857:r3 a :Parent.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00857:p3 .
-
-t00857:r4 a :Grandparent.n.01 ;
-  :tgt t00857:p3 .
-
-t00857:s1 a :Willow.n.01 ;
-  :att t00857:a1 .
-
-t00857:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00857.jpg" ;
-  dc:date "2020-02-15T15:37:10"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7764 ;
-    geo:long 6.8042
-  ] ;
-  :nd "+52.7764+006.8042"^^ll: .
+t00857:c1
+  a :Village.n.02 ;
+  :name "NOORD-SLEEN" ;
+  :place place:NoordSleen2749830 .
 

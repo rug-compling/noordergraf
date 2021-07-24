@@ -1,66 +1,63 @@
 @prefix t00375: <https://noordergraf.rug.nl/tomb/t00375#> .
 
-tomb:t00375 a :Tomb ;
-  :image t00375:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00375:p1 ,
-       t00375:p2 ;
-  :ref t00375:v1 .
+tomb:t00375
+  a :Tomb ;
+  :ent t00375:p1, t00375:p2 ;
+  :image [
+    dc:date "2019-10-27T10:36:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00375.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1913 ;
+      geo:long 6.5942
+    ] ;
+    :nd "+53.1913+006.5942"^^ll:
+  ] ;
+  :ref t00375:v1 ;
+  :site site:gr9722SNgroningen .
 
-t00375:b1 a :Isaiah.n.01 ;
-  :prt t00375:c3 .
-
-t00375:c1 a :Village.n.02 ;
-  :place place:Uithuizermeeden2745968 ;
-  :name "UITHUIZERMEEDEN" .
-
-t00375:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00375:c3 a :Chapter.n.01 ;
-  :ord 51 ;
-  :prt t00375:v2 .
-
-t00375:p1 a :Female ;
+t00375:p1
+  a :Female ;
   :dob "1865-01-18"^^xsd:date ;
   :dod "1939-04-06"^^xsd:date ;
   :nam "BERENDINA BOEKELO" ;
-  :pob t00375:c1 ;
-  :pod t00375:c2 ;
-  :rol t00375:r1 ,
-       t00375:r2 .
+  :pob [
+    a :Village.n.02 ;
+    :name "UITHUIZERMEEDEN" ;
+    :place place:Uithuizermeeden2745968
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Mother.n.01 ;
+    :att "INNIG GELIEFDE"
+  ], [
+    a :Widow.n.01 ;
+    :tgt t00375:p2
+  ] .
 
-t00375:p2 a :Male ;
+t00375:p2
+  a :Male ;
   :nam "H. DE GRAAF" .
 
-t00375:r1 a :Mother.n.01 ;
-  :att "INNIG GELIEFDE" .
+[]
+  a :Isaiah.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 51 ;
+    :prt [
+      a :Verse.n.01 ;
+      :ord 10 ;
+      :prt t00375:v1
+    ]
+  ] .
 
-t00375:r2 a :Widow.n.01 ;
-  :tgt t00375:p2 .
-
-t00375:v1 a :Part.n.09 ;
+t00375:v1
+  a :Part.n.09 ;
   :nam "A" .
-
-t00375:v2 a :Verse.n.01 ;
-  :ord 10 ;
-  :prt t00375:v1 .
-
-t00375:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00375.jpg" ;
-  dc:date "2019-10-27T10:36:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1913 ;
-    geo:long 6.5942
-  ] ;
-  :nd "+53.1913+006.5942"^^ll: .
 

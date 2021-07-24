@@ -1,44 +1,40 @@
 @prefix t00757: <https://noordergraf.rug.nl/tomb/t00757#> .
 
-tomb:t00757 a :Tomb ;
-  :image t00757:im1 ;
-  :site site:gr9936BTfarmsum ;
-  :ent t00757:p1 ,
-       t00757:p2 ;
+tomb:t00757
+  a :Tomb ;
+  :ent t00757:p1, t00757:p2 ;
+  :image [
+    dc:date "2019-12-28T12:45:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00757.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3111 ;
+      geo:long 6.9972
+    ] ;
+    :nd "+53.3111+006.9972"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00757:s1 .
+  :site site:gr9936BTfarmsum ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00757:a1 a :Weeping.a.02 .
-
-t00757:p1 a :Female ;
+t00757:p1
+  a :Female ;
   :dob "1833-01-28"^^xsd:date ;
   :dod "1874-08-31"^^xsd:date ;
   :nam "MARTJE D. KUIPER" ;
-  :rol t00757:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00757:p2
+  ] .
 
-t00757:p2 a :Male ;
+t00757:p2
+  a :Male ;
   :nam "BARELD J. BUISKOOL" .
-
-t00757:r1 a :Spouse.n.01 ;
-  :tgt t00757:p2 .
-
-t00757:s1 a :Willow.n.01 ;
-  :att t00757:a1 .
-
-t00757:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00757.jpg" ;
-  dc:date "2019-12-28T12:45:29"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3111 ;
-    geo:long 6.9972
-  ] ;
-  :nd "+53.3111+006.9972"^^ll: .
 

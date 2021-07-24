@@ -1,49 +1,43 @@
 @prefix t00276: <https://noordergraf.rug.nl/tomb/t00276#> .
 
-tomb:t00276 a :Tomb ;
-  :image t00276:im1 ;
+tomb:t00276
+  a :Tomb ;
+  :ent t00276:p1, t00276:p2 ;
+  :image [
+    dc:date "2019-10-14T10:53:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00276.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2228 ;
+      geo:long 6.6376
+    ] ;
+    :nd "+53.2228+006.6376"^^ll:
+  ] ;
   :site site:gr9723EWgroningen ;
-  :ent t00276:p1 ,
-       t00276:p2 ;
-  :sym t00276:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00276:p1 a :Female ;
+t00276:p1
+  a :Female ;
   :dob "1903-03-02"^^xsd:date ;
   :dod "1949-03-11"^^xsd:date ;
   :nam "ROELOFJE DE JONG" ;
-  :rol t00276:r1 ,
-       t00276:r2 ,
-       t00276:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00276:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00276:p2
+  ] .
 
-t00276:p2 a :Male ;
+t00276:p2
+  a :Male ;
   :nam "W. ZUIDLAND" .
-
-t00276:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00276:p2 .
-
-t00276:r2 a :Mother.n.01 .
-
-t00276:r3 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00276:p2 .
-
-t00276:s1 a :Frond.n.01 .
-
-t00276:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00276.jpg" ;
-  dc:date "2019-10-14T10:53:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2228 ;
-    geo:long 6.6376
-  ] ;
-  :nd "+53.2228+006.6376"^^ll: .
 

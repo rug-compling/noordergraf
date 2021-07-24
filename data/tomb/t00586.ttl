@@ -1,41 +1,37 @@
 @prefix t00586: <https://noordergraf.rug.nl/tomb/t00586#> .
 
-tomb:t00586 a :Tomb ;
-  :image t00586:im1 ;
+tomb:t00586
+  a :Tomb ;
+  :ent t00586:p1, t00586:p2 ;
+  :image [
+    dc:date "2019-11-30T14:47:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00586.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3353 ;
+      geo:long 6.5127
+    ] ;
+    :nd "+53.3353+006.5127"^^ll:
+  ] ;
   :site site:gr9951STwinsum ;
-  :ent t00586:p1 ,
-       t00586:p2 ;
-  :sym t00586:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00586:p1 a :Female ;
+t00586:p1
+  a :Female ;
   :dob "1842-05-12"^^xsd:date ;
   :dod "1912-02-11"^^xsd:date ;
   :nam "JANTJE TEN HOORN" ;
-  :rol t00586:r1 .
+  :rol [
+    a :Widow.n.01 ;
+    :beg "12-06-1929" ;
+    :tgt t00586:p2
+  ] .
 
-t00586:p2 a :Male ;
+t00586:p2
+  a :Male ;
   :nam "J. TIMMER" .
-
-t00586:r1 a :Widow.n.01 ;
-  :beg "12-06-1929" ;
-  :tgt t00586:p2 .
-
-t00586:s1 a :Frond.n.01 .
-
-t00586:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00586.jpg" ;
-  dc:date "2019-11-30T14:47:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3353 ;
-    geo:long 6.5127
-  ] ;
-  :nd "+53.3353+006.5127"^^ll: .
 

@@ -1,47 +1,43 @@
 @prefix t00131: <https://noordergraf.rug.nl/tomb/t00131#> .
 
-tomb:t00131 a :Tomb ;
-  :image t00131:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00131:p1 ,
-       t00131:p2 .
+tomb:t00131
+  a :Tomb ;
+  :ent t00131:p1, t00131:p2 ;
+  :image [
+    dc:date "2019-10-01T09:56:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00131.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2061 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.2061+006.5716"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen .
 
-t00131:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00131:c2 a :City.n.01 ;
-  :place place:Amsterdam2759794 ;
-  :name "AMSTERDAM" .
-
-t00131:p1 a :Male ;
+t00131:p1
+  a :Male ;
   :dob "1859-10-01"^^xsd:date ;
   :dod "1897-01-03"^^xsd:date ;
   :nam "IJSEBRAND BUTTINGER" ;
-  :pob t00131:c1 ;
-  :pod t00131:c2 ;
-  :rol t00131:r1 .
-
-t00131:p2 a :Female ;
-  :nam "WESSELINA DRENTH" .
-
-t00131:r1 a :Spouse.n.01 ;
-  :tgt t00131:p2 .
-
-t00131:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00131.jpg" ;
-  dc:date "2019-10-01T09:56:35"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2061 ;
-    geo:long 6.5716
+  :pob [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
   ] ;
-  :nd "+53.2061+006.5716"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "AMSTERDAM" ;
+    :place place:Amsterdam2759794
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00131:p2
+  ] .
+
+t00131:p2
+  a :Female ;
+  :nam "WESSELINA DRENTH" .
 

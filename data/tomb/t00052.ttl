@@ -1,51 +1,48 @@
 @prefix t00052: <https://noordergraf.rug.nl/tomb/t00052#> .
 
-tomb:t00052 a :Tomb ;
-  :image t00052:im1 ;
-  :site site:gr9752CMharen ;
-  :ent t00052:p1 ,
-       t00052:p2 .
+tomb:t00052
+  a :Tomb ;
+  :ent t00052:p1, t00052:p2 ;
+  :image [
+    dc:date "2019-09-27T17:42:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00052.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1630 ;
+      geo:long 6.6131
+    ] ;
+    :nd "+53.1630+006.6131"^^ll:
+  ] ;
+  :site site:gr9752CMharen .
 
-t00052:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00052:c2 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00052:c3 a :Village.n.02 ;
-  :place place:Oldehove2749660 ;
-  :name "OLDEHOVE" .
-
-t00052:p1 a :Male ;
+t00052:p1
+  a :Male ;
   :dob "1878-01-01"^^xsd:date ;
   :dod "1949-07-26"^^xsd:date ;
   :nam "GEERT BODDE FOLMER" ;
   :pob t00052:c1 ;
-  :pod t00052:c2 .
+  :pod [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] .
 
-t00052:p2 a :Female ;
+t00052:p2
+  a :Female ;
   :dob "1860-01-01"^^xsd:date ;
   :dod "1970-07-02"^^xsd:date ;
   :nam "ANTJE ZIJLSTRA" ;
-  :pob t00052:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "OLDEHOVE" ;
+    :place place:Oldehove2749660
+  ] ;
   :pod t00052:c1 .
 
-t00052:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00052.jpg" ;
-  dc:date "2019-09-27T17:42:26"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1630 ;
-    geo:long 6.6131
-  ] ;
-  :nd "+53.1630+006.6131"^^ll: .
+t00052:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

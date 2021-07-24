@@ -1,58 +1,53 @@
 @prefix t00779: <https://noordergraf.rug.nl/tomb/t00779#> .
 
-tomb:t00779 a :Tomb ;
-  :image t00779:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00779:p1 ,
-       t00779:p2 ;
+tomb:t00779
+  a :Tomb ;
+  :ent t00779:p1, t00779:p2 ;
+  :image [
+    dc:date "2019-12-21T12:59:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00779.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7819 ;
+      geo:long 6.8978
+    ] ;
+    :nd "+52.7819+006.8978"^^ll:
+  ] ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
-  :sym t00779:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00779:a1 a :Weeping.a.02 .
-
-t00779:c1 a :Village.n.02 ;
-  :place place:Vlagtwedde2745461 ;
-  :name "VLAGTWEDDE" .
-
-t00779:c2 a :Hamlet.n.03 ;
-  :place place:DenOever2757195 ;
-  :name "DEN OEVER" .
-
-t00779:p1 a :Female ;
+t00779:p1
+  a :Female ;
   :dob "1867-09-19"^^xsd:date ;
   :dod "1933-04-19"^^xsd:date ;
   :nam "TRIENTJE BLIDE" ;
-  :pob t00779:c1 ;
-  :pod t00779:c2 ;
-  :rol t00779:r1 ,
-       t00779:r2 .
-
-t00779:p2 a :Male ;
-  :nam "GEERT OEVERMANS" .
-
-t00779:r1 a :Widow.n.01 ;
-  :tgt t00779:p2 .
-
-t00779:r2 a :Mother.n.01 ;
-  :att "LIEVE" .
-
-t00779:s1 a :Willow.n.01 ;
-  :att t00779:a1 .
-
-t00779:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00779.jpg" ;
-  dc:date "2019-12-21T12:59:20"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7819 ;
-    geo:long 6.8978
+  :pob [
+    a :Village.n.02 ;
+    :name "VLAGTWEDDE" ;
+    :place place:Vlagtwedde2745461
   ] ;
-  :nd "+52.7819+006.8978"^^ll: .
+  :pod [
+    a :Hamlet.n.03 ;
+    :name "DEN OEVER" ;
+    :place place:DenOever2757195
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t00779:p2
+  ], [
+    a :Mother.n.01 ;
+    :att "LIEVE"
+  ] .
+
+t00779:p2
+  a :Male ;
+  :nam "GEERT OEVERMANS" .
 

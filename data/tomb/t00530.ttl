@@ -1,56 +1,51 @@
 @prefix t00530: <https://noordergraf.rug.nl/tomb/t00530#> .
 
-tomb:t00530 a :Tomb ;
-  :image t00530:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00530:g1 ,
-       t00530:p1 ,
-       t00530:p2 ,
-       t00530:p3 ;
+tomb:t00530
+  a :Tomb ;
+  :ent t00530:p1, t00530:p2, t00530:p3, t00530:g1 ;
+  :image [
+    dc:date "2019-11-24T14:51:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00530.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1042 ;
+      geo:long 6.8745
+    ] ;
+    :nd "+53.1042+006.8745"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00530:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00530:a1 a :Weeping.a.02 .
-
-t00530:g1 a :Group.n.01 ;
-  :mem t00530:p2 ,
-       t00530:p3 .
-
-t00530:p1 a :Male ;
+t00530:p1
+  a :Male ;
   :dob "1877-05-14"^^xsd:date ;
   :dod "1934-12-06"^^xsd:date ;
   :nam "HIERONIMUS HERWIG" ;
-  :rol t00530:r1 ;
+  :rol [
+    a :Son.n.01 ;
+    :tgt t00530:g1
+  ] ;
   :sfx "GZN" .
 
-t00530:p2 a :Male ;
+t00530:p2
+  a :Male ;
   :att "WIJLEN" ;
   :nam "G. HERWIG" ;
   :sfx "HZN" .
 
-t00530:p3 a :Female ;
+t00530:p3
+  a :Female ;
   :nam "ANNA DE BOER" .
 
-t00530:r1 a :Son.n.01 ;
-  :tgt t00530:g1 .
-
-t00530:s1 a :Willow.n.01 ;
-  :att t00530:a1 .
-
-t00530:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00530.jpg" ;
-  dc:date "2019-11-24T14:51:00"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1042 ;
-    geo:long 6.8745
-  ] ;
-  :nd "+53.1042+006.8745"^^ll: .
+t00530:g1
+  a :Group.n.01 ;
+  :mem t00530:p2, t00530:p3 .
 

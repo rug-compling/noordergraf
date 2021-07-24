@@ -1,57 +1,49 @@
 @prefix t00802: <https://noordergraf.rug.nl/tomb/t00802#> .
 
-tomb:t00802 a :Tomb ;
-  :image t00802:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t00802:p1 ,
-       t00802:p2 ;
+tomb:t00802
+  a :Tomb ;
+  :ent t00802:p1, t00802:p2 ;
+  :image [
+    dc:date "2020-01-19T14:10:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00802.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1909 ;
+      geo:long 6.5942
+    ] ;
+    :nd "+53.1909+006.5942"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00802:s1 ,
-       t00802:s2 ,
-       t00802:s3 .
+  :site site:gr9722SNgroningen ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t00802:p1 a :Male ;
+t00802:p1
+  a :Male ;
   :dob "1868-10-04"^^xsd:date ;
   :dod "1931-02-27"^^xsd:date ;
   :nam "IJPE BOERSMA" ;
-  :rol t00802:r1 ,
-       t00802:r2 ,
-       t00802:r3 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "BESTE" ;
+    :tgt t00802:p2
+  ], [
+    a :Father.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00802:p2
+  ] .
 
-t00802:p2 a :Female ;
+t00802:p2
+  a :Female ;
   :dob "1867-09-27"^^xsd:date ;
   :dod "1954-12-26"^^xsd:date ;
   :nam "HILJE VEENSTRA" .
-
-t00802:r1 a :Husband.n.01 ;
-  :att "BESTE" ;
-  :tgt t00802:p2 .
-
-t00802:r2 a :Father.n.01 .
-
-t00802:r3 a :Spouse.n.01 ;
-  :tgt t00802:p2 .
-
-t00802:s1 a :Frond.n.01 .
-
-t00802:s2 a :Frond.n.01 .
-
-t00802:s3 a :Ribbon.n.01 .
-
-t00802:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00802.jpg" ;
-  dc:date "2020-01-19T14:10:48"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1909 ;
-    geo:long 6.5942
-  ] ;
-  :nd "+53.1909+006.5942"^^ll: .
 

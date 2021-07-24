@@ -1,66 +1,73 @@
 @prefix t00302: <https://noordergraf.rug.nl/tomb/t00302#> .
 
-tomb:t00302 a :Tomb ;
-  :image t00302:im1 ;
+tomb:t00302
+  a :Tomb ;
+  :ent t00302:p1, t00302:p2 ;
+  :image [
+    dc:date "2019-10-19T14:32:16"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00302.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7159 ;
+      geo:long 6.4742
+    ] ;
+    :nd "+52.7159+006.4742"^^ll:
+  ] ;
   :site site:dr7907CHhoogeveen ;
-  :text "hier rusten onze lieve ouders\nen grootouders\nAlb. Oets.\nGeb. te Hoogeveen. 8 Sept. 1858,\nOverl. aldaar, 10 Oct. 1942.\nen\nAleida\nRoelina Jentina Sterken\nGeb. te Dwingeloo 2 Maart 1858,\nOverl. te Hengelo (O) 31 Dec. 1951." ;
-  :ent t00302:p1 ,
-       t00302:p2 ;
-  :sym t00302:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ]
+  ] ;
+  :text """hier rusten onze lieve ouders
+en grootouders
+Alb. Oets.
+Geb. te Hoogeveen. 8 Sept. 1858,
+Overl. aldaar, 10 Oct. 1942.
+en
+Aleida
+Roelina Jentina Sterken
+Geb. te Dwingeloo 2 Maart 1858,
+Overl. te Hengelo (O) 31 Dec. 1951.""" .
 
-t00302:c1 a :Town.n.01 ;
-  :place place:Hoogeveen2753719 ;
-  :name "HOOGEVEEN" .
-
-t00302:c2 a :Village.n.02 ;
-  :place place:Dwingeloo2756451 ;
-  :name "DWINGELOO" .
-
-t00302:c3 a :City.n.01 ;
-  :place place:Hengelo2754394 ;
-  :name "HENGELO" .
-
-t00302:c4 a :Province.n.01 ;
-  :place place:ProvincieOverijssel2748838 ;
-  :mem t00302:c3 ;
-  :name "OVERIJSSEL" .
-
-t00302:p1 a :Male ;
+t00302:p1
+  a :Male ;
   :dob "1858-09-08"^^xsd:date ;
   :dod "1942-10-10"^^xsd:date ;
   :nam "ALBERT OETS" ;
   :pob t00302:c1 ;
   :pod t00302:c1 .
 
-t00302:p2 a :Female ;
+t00302:p2
+  a :Female ;
   :dob "1858-03-02"^^xsd:date ;
   :dod "1951-12-31"^^xsd:date ;
   :nam "ALEIDA ROELINA JENTINA STERKEN" ;
-  :pob t00302:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "DWINGELOO" ;
+    :place place:Dwingeloo2756451
+  ] ;
   :pod t00302:c3 .
 
-t00302:s1 a :Composite.n.01 ;
-  :prt t00302:s2 ,
-       t00302:s3 .
+t00302:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
-t00302:s2 a :Frond.n.01 .
+t00302:c3
+  a :City.n.01 ;
+  :name "HENGELO" ;
+  :place place:Hengelo2754394 .
 
-t00302:s3 a :Frond.n.01 .
-
-t00302:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00302.jpg" ;
-  dc:date "2019-10-19T14:32:16"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7159 ;
-    geo:long 6.4742
-  ] ;
-  :nd "+52.7159+006.4742"^^ll: .
+[]
+  a :Province.n.01 ;
+  :mem t00302:c3 ;
+  :name "OVERIJSSEL" ;
+  :place place:ProvincieOverijssel2748838 .
 

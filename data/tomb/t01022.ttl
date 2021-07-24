@@ -1,35 +1,30 @@
 @prefix t01022: <https://noordergraf.rug.nl/tomb/t01022#> .
 
-tomb:t01022 a :Tomb ;
-  :image t01022:im1 ;
-  :site site:gr9752CMharen ;
+tomb:t01022
+  a :Tomb ;
   :ent t01022:p1 ;
-  :lan "HEB" ,
-       "NLD" ;
+  :image [
+    dc:date "2020-04-12T17:16:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01022.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1629 ;
+      geo:long 6.6141
+    ] ;
+    :nd "+53.1629+006.6141"^^ll:
+  ] ;
+  :lan "HEB", "NLD" ;
   :quo "SHALOM LE OLAM" ;
-  :sym t01022:s1 .
+  :site site:gr9752CMharen ;
+  :sym [
+    a :Star_of_david.n.01
+  ] .
 
-t01022:p1 a :Male ;
+t01022:p1
+  a :Male ;
   :dob "1917-07-15"^^xsd:date ;
   :dod "1995-04-24"^^xsd:date ;
   :nam "MAX GOSSCHALK" .
-
-t01022:s1 a :Star_of_david.n.01 .
-
-t01022:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01022.jpg" ;
-  dc:date "2020-04-12T17:16:29"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1629 ;
-    geo:long 6.6141
-  ] ;
-  :nd "+53.1629+006.6141"^^ll: .
 

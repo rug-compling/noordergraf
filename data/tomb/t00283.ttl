@@ -1,73 +1,70 @@
 @prefix t00283: <https://noordergraf.rug.nl/tomb/t00283#> .
 
-tomb:t00283 a :Tomb ;
-  :image t00283:im1 ;
-  :site site:gr9985SCoosternieland ;
-  :ent t00283:g1 ,
-       t00283:p1 ,
-       t00283:p2 ,
-       t00283:p3 ;
+tomb:t00283
+  a :Tomb ;
+  :ent t00283:p1, t00283:p2, t00283:p3, t00283:g1 ;
+  :image [
+    dc:date "2019-10-16T16:53:40"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00283.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4036 ;
+      geo:long 6.7489
+    ] ;
+    :nd "+53.4036+006.7489"^^ll:
+  ] ;
   :ref t00283:v1 ;
-  :sym t00283:s1 .
+  :site site:gr9985SCoosternieland ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00283:b1 a :Revelation.n.04 ;
-  :prt t00283:c1 .
-
-t00283:c1 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00283:v1 .
-
-t00283:g1 a :Group.n.01 ;
-  :mem t00283:p2 ,
-       t00283:p3 .
-
-t00283:p1 a :Female ;
+t00283:p1
+  a :Female ;
   :dob "1916-08-28"^^xsd:date ;
   :dod "1956-10-16"^^xsd:date ;
   :nam "WILLEMINA KUIPER" ;
-  :rol t00283:r1 .
+  :rol [
+    a :Daughter.n.01 ;
+    :tgt t00283:g1
+  ] .
 
-t00283:p2 a :Female ;
+t00283:p2
+  a :Female ;
   :dob "1884-02-25"^^xsd:date ;
   :dod "1961-04-14"^^xsd:date ;
   :nam "HARMINA ZUIDERVELD" ;
-  :rol t00283:r2 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00283:p3
+  ] .
 
-t00283:p3 a :Male ;
+t00283:p3
+  a :Male ;
   :dob "1871-05-23"^^xsd:date ;
   :dod "1952-07-16"^^xsd:date ;
   :nam "HENDERICUS KUIPER" ;
-  :rol t00283:r3 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00283:p2
+  ] .
 
-t00283:r1 a :Daughter.n.01 ;
-  :tgt t00283:g1 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00283:v1
+  ] .
 
-t00283:r2 a :Spouse.n.01 ;
-  :tgt t00283:p3 .
+t00283:g1
+  a :Group.n.01 ;
+  :mem t00283:p2, t00283:p3 .
 
-t00283:r3 a :Spouse.n.01 ;
-  :tgt t00283:p2 .
-
-t00283:s1 a :Frond.n.01 .
-
-t00283:v1 a :Verse.n.01 ;
+t00283:v1
+  a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN ZIJ, DIE IN DEN HEERE STERVEN." .
-
-t00283:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00283.jpg" ;
-  dc:date "2019-10-16T16:53:40"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4036 ;
-    geo:long 6.7489
-  ] ;
-  :nd "+53.4036+006.7489"^^ll: .
 

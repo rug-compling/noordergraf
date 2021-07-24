@@ -1,69 +1,64 @@
 @prefix t00128: <https://noordergraf.rug.nl/tomb/t00128#> .
 
-tomb:t00128 a :Tomb ;
-  :image t00128:im1 ;
+tomb:t00128
+  a :Tomb ;
+  :ent t00128:p1, t00128:p2 ;
+  :image [
+    dc:date "2019-10-01T09:57:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00128.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2059 ;
+      geo:long 6.5714
+    ] ;
+    :nd "+53.2059+006.5714"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00128:p1 ,
-       t00128:p2 ;
-  :sym t00128:s1 ,
-       t00128:s4 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
+    ]
+  ], [
+    a :Frond.n.01
+  ] .
 
-t00128:c1 a :Village.n.02 ;
-  :place place:Muntendam2750535 ;
-  :name "MUNTENDAM" .
-
-t00128:c2 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00128:c3 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00128:p1 a :Male ;
+t00128:p1
+  a :Male ;
   :dob "1862-10-13"^^xsd:date ;
   :dod "1945-09-01"^^xsd:date ;
   :nam "HEINE HEININGA" ;
-  :pob t00128:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "MUNTENDAM" ;
+    :place place:Muntendam2750535
+  ] ;
   :pod t00128:c2 ;
-  :rol t00128:r1 .
+  :rol [
+    a :Father.n.01
+  ] .
 
-t00128:p2 a :Female ;
+t00128:p2
+  a :Female ;
   :dob "1865-07-17"^^xsd:date ;
   :dod "1915-09-28"^^xsd:date ;
   :nam "SIEPKE TEN HOOR" ;
-  :pob t00128:c3 ;
-  :pod t00128:c2 ;
-  :rol t00128:r2 .
-
-t00128:r1 a :Father.n.01 .
-
-t00128:r2 a :Mother.n.01 .
-
-t00128:s1 a :Composite.n.01 ;
-  :prt t00128:s2 ,
-       t00128:s3 .
-
-t00128:s2 a :Frond.n.01 .
-
-t00128:s3 a :Ribbon.n.01 .
-
-t00128:s4 a :Frond.n.01 .
-
-t00128:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00128.jpg" ;
-  dc:date "2019-10-01T09:57:48"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2059 ;
-    geo:long 6.5714
+  :pob [
+    a :Village.n.02 ;
+    :name "TOLBERT" ;
+    :place place:Tolbert2746234
   ] ;
-  :nd "+53.2059+006.5714"^^ll: .
+  :pod t00128:c2 ;
+  :rol [
+    a :Mother.n.01
+  ] .
+
+t00128:c2
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

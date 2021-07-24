@@ -1,49 +1,46 @@
 @prefix t00249: <https://noordergraf.rug.nl/tomb/t00249#> .
 
-tomb:t00249 a :Tomb ;
-  :image t00249:im1 ;
+tomb:t00249
+  a :Tomb ;
+  :ent t00249:p1, t00249:p2 ;
+  :image [
+    dc:date "2019-10-11T17:20:07"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00249.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1725 ;
+      geo:long 6.6063
+    ] ;
+    :nd "+53.1725+006.6063"^^ll:
+  ] ;
   :site site:gr9751BBharen ;
-  :ent t00249:p1 ,
-       t00249:p2 ;
-  :sym t00249:s1 .
+  :sym [
+    a :Flower.n.01 ;
+    :att [
+      a :Broken.a.01
+    ]
+  ] .
 
-t00249:a1 a :Broken.a.01 .
-
-t00249:c1 a :Village.n.02 ;
-  :place place:Helpman2754444 ;
-  :name "HELPMAN" .
-
-t00249:p1 a :Male ;
+t00249:p1
+  a :Male ;
   :dob "1866-05-14"^^xsd:date ;
   :dod "1950-01-08"^^xsd:date ;
   :nam "EGBERT VORENKAMP" ;
   :pob t00249:c1 ;
   :pod t00249:c1 ;
-  :rol t00249:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00249:p2
+  ] .
 
-t00249:p2 a :Female ;
+t00249:p2
+  a :Female ;
   :nam "H. STOLLENGA" .
 
-t00249:r1 a :Spouse.n.01 ;
-  :tgt t00249:p2 .
-
-t00249:s1 a :Flower.n.01 ;
-  :att t00249:a1 .
-
-t00249:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00249.jpg" ;
-  dc:date "2019-10-11T17:20:07"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1725 ;
-    geo:long 6.6063
-  ] ;
-  :nd "+53.1725+006.6063"^^ll: .
+t00249:c1
+  a :Village.n.02 ;
+  :name "HELPMAN" ;
+  :place place:Helpman2754444 .
 

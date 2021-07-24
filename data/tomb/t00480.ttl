@@ -1,39 +1,34 @@
 @prefix t00480: <https://noordergraf.rug.nl/tomb/t00480#> .
 
-tomb:t00480 a :Tomb ;
-  :image t00480:im1 ;
-  :site site:fr8915CPleeuwarden ;
+tomb:t00480
+  a :Tomb ;
   :ent t00480:p1 ;
+  :image [
+    dc:date "2019-11-09T14:38:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00480.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2071 ;
+      geo:long 5.7687
+    ] ;
+    :nd "+53.2071+005.7687"^^ll:
+  ] ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :sym t00480:s1 .
+  :site site:fr8915CPleeuwarden ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
+    ], [
+      a :Cross.n.03
+    ]
+  ] .
 
-t00480:p1 a :Male ;
+t00480:p1
+  a :Male ;
   :dob "1891-04-05"^^xsd:date ;
   :dod "1915-01-28"^^xsd:date ;
   :nam "LEONARDUS MARIE VAN DER LINDEN" .
-
-t00480:s1 a :Composite.n.01 ;
-  :prt t00480:s2 ,
-       t00480:s3 .
-
-t00480:s2 a :Frond.n.01 .
-
-t00480:s3 a :Cross.n.03 .
-
-t00480:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00480.jpg" ;
-  dc:date "2019-11-09T14:38:45"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2071 ;
-    geo:long 5.7687
-  ] ;
-  :nd "+53.2071+005.7687"^^ll: .
 

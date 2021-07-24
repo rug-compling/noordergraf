@@ -1,70 +1,64 @@
 @prefix t00472: <https://noordergraf.rug.nl/tomb/t00472#> .
 
-tomb:t00472 a :Tomb ;
-  :image t00472:im1 ;
+tomb:t00472
+  a :Tomb ;
+  :ent t00472:p1, t00472:p2, t00472:p3, t00472:p4 ;
+  :image [
+    dc:date "2019-11-09T14:45:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00472.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2073 ;
+      geo:long 5.7687
+    ] ;
+    :nd "+53.2073+005.7687"^^ll:
+  ] ;
   :site site:fr8915CPleeuwarden ;
-  :ent t00472:p1 ,
-       t00472:p2 ,
-       t00472:p3 ,
-       t00472:p4 ;
-  :sym t00472:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Cross.n.03
+    ], [
+      a :Chrismon.n.01
+    ]
+  ] .
 
-t00472:c1 a :City.n.01 ;
-  :place place:Leeuwarden2751792 ;
-  :name "LEEUWARDEN" .
-
-t00472:p1 a :Female ;
+t00472:p1
+  a :Female ;
   :dob "1909-03-24"^^xsd:date ;
   :dod "1947-01-10"^^xsd:date ;
   :nam "AGATHA SCHOFFELMEER" ;
   :pob t00472:c1 ;
   :pod t00472:c1 ;
-  :rol t00472:r1 ,
-       t00472:r2 ,
-       t00472:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00472:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00472:p2
+  ] .
 
-t00472:p2 a :Female ;
+t00472:p2
+  a :Female ;
   :nam "ANTONIUS PETERS" .
 
-t00472:p3 a :Female ;
+t00472:p3
+  a :Female ;
   :dob "1885-02-19"^^xsd:date ;
   :dod "1952-04-16"^^xsd:date ;
   :nam "ANNA SCHOFFELMEER-DE JONG" .
 
-t00472:p4 a :Male ;
+t00472:p4
+  a :Male ;
   :nam "C. SCHOFFELMEER" .
 
-t00472:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00472:p2 .
-
-t00472:r2 a :Mother.n.01 .
-
-t00472:r3 a :Spouse.n.01 ;
-  :tgt t00472:p2 .
-
-t00472:s1 a :Composite.n.01 ;
-  :prt t00472:s2 ,
-       t00472:s3 .
-
-t00472:s2 a :Cross.n.03 .
-
-t00472:s3 a :Chrismon.n.01 .
-
-t00472:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00472.jpg" ;
-  dc:date "2019-11-09T14:45:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2073 ;
-    geo:long 5.7687
-  ] ;
-  :nd "+53.2073+005.7687"^^ll: .
+t00472:c1
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 

@@ -1,42 +1,38 @@
 @prefix t00610: <https://noordergraf.rug.nl/tomb/t00610#> .
 
-tomb:t00610 a :Tomb ;
-  :image t00610:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00610:p1 ,
-       t00610:p2 ;
+tomb:t00610
+  a :Tomb ;
+  :ent t00610:p1, t00610:p2 ;
+  :image [
+    dc:date "2019-11-23T10:08:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00610.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1640 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1640+006.7541"^^ll:
+  ] ;
   :quo "TOT WEDERZIENS"@nld ;
-  :sym t00610:s1 .
+  :site site:gr9601KAhoogezand ;
+  :sym [
+    a :Hand.n.01 ;
+    :qua 2
+  ] .
 
-t00610:p1 a :Female ;
+t00610:p1
+  a :Female ;
   :dob "1850-08-22"^^xsd:date ;
   :dod "1919-02-16"^^xsd:date ;
   :nam "MAGRITA SCHABELS" ;
-  :rol t00610:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00610:p2
+  ] .
 
-t00610:p2 a :Male ;
+t00610:p2
+  a :Male ;
   :nam "J.G. BENES" .
-
-t00610:r1 a :Spouse.n.01 ;
-  :tgt t00610:p2 .
-
-t00610:s1 a :Hand.n.01 ;
-  :qua 2 .
-
-t00610:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00610.jpg" ;
-  dc:date "2019-11-23T10:08:27"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1640 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1640+006.7541"^^ll: .
 

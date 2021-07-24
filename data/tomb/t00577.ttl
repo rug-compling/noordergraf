@@ -1,72 +1,65 @@
 @prefix t00577: <https://noordergraf.rug.nl/tomb/t00577#> .
 
-tomb:t00577 a :Tomb ;
-  :image t00577:im1 ;
-  :site site:gr9951STwinsum ;
-  :ent t00577:p1 ,
-       t00577:p2 ,
-       t00577:p3 ,
-       t00577:p4 ,
-       t00577:p5 .
+tomb:t00577
+  a :Tomb ;
+  :ent t00577:p1, t00577:p2, t00577:p3, t00577:p4, t00577:p5 ;
+  :image [
+    dc:date "2019-11-30T14:56:52"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00577.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3336 ;
+      geo:long 6.5136
+    ] ;
+    :nd "+53.3336+006.5136"^^ll:
+  ] ;
+  :site site:gr9951STwinsum .
 
-t00577:c1 a :Village.n.02 ;
-  :place place:Ezinge2755938 ;
-  :name "EZINGE" .
-
-t00577:c2 a :Village.n.02 ;
-  :place place:Obergum2749742 ;
-  :name "OBERGUM" .
-
-t00577:p1 a :Female ;
+t00577:p1
+  a :Female ;
   :dob "1818-04-18"^^xsd:date ;
   :dod "1844-03-09"^^xsd:date ;
   :nam "ELTJE G. ARENDS" ;
-  :pob t00577:c1 ;
-  :pod t00577:c2 ;
-  :rol t00577:r1 ,
-       t00577:r2 ,
-       t00577:r3 ,
-       t00577:r4 .
+  :pob [
+    a :Village.n.02 ;
+    :name "EZINGE" ;
+    :place place:Ezinge2755938
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "OBERGUM" ;
+    :place place:Obergum2749742
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00577:p2
+  ], [
+    a :Daughter.n.01 ;
+    :tgt t00577:p3
+  ], [
+    a :Daughter.n.01 ;
+    :tgt t00577:p4
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00577:p5
+  ] .
 
-t00577:p2 a :Female ;
+t00577:p2
+  a :Female ;
   :nam "KLAAS M. TALENS" .
 
-t00577:p3 a :Male ;
+t00577:p3
+  a :Male ;
   :nam "GERRIT ARENDS ARENDS" .
 
-t00577:p4 a :Female ;
+t00577:p4
+  a :Female ;
   :nam "W.H. SMITH" .
 
-t00577:p5 a :Child.n.02 ;
+t00577:p5
+  a :Child.n.02 ;
   :qua 3 ;
   :tgt t00577:p1 .
-
-t00577:r1 a :Spouse.n.01 ;
-  :tgt t00577:p2 .
-
-t00577:r2 a :Daughter.n.01 ;
-  :tgt t00577:p3 .
-
-t00577:r3 a :Daughter.n.01 ;
-  :tgt t00577:p4 .
-
-t00577:r4 a :Mother.n.01 ;
-  :tgt t00577:p5 .
-
-t00577:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00577.jpg" ;
-  dc:date "2019-11-30T14:56:52"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3336 ;
-    geo:long 6.5136
-  ] ;
-  :nd "+53.3336+006.5136"^^ll: .
 

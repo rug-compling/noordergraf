@@ -1,63 +1,61 @@
 @prefix t00808: <https://noordergraf.rug.nl/tomb/t00808#> .
 
-tomb:t00808 a :Tomb ;
-  :image t00808:im1 ;
-  :site site:gr9791KEten_boer ;
-  :ent t00808:p1 ,
-       t00808:p2 ;
+tomb:t00808
+  a :Tomb ;
+  :ent t00808:p1, t00808:p2 ;
+  :image [
+    dc:date "2020-01-18T12:48:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00808.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2777 ;
+      geo:long 6.6939
+    ] ;
+    :nd "+53.2777+006.6939"^^ll:
+  ] ;
   :lan "NLD" ;
   :ref t00808:v1 ;
-  :sym t00808:s1 .
+  :site site:gr9791KEten_boer ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00808:b1 a :Second_Epistle_to_the_Corinthians.n.01 ;
-  :prt t00808:c3 .
-
-t00808:c1 a :Village.n.02 ;
-  :place place:Zeerijp2744003 ;
-  :name "ZEERIJP" .
-
-t00808:c2 a :Village.n.02 ;
-  :place place:TenBoer2746491 ;
-  :name "TEN BOER" .
-
-t00808:c3 a :Chapter.n.01 ;
-  :ord 5 ;
-  :prt t00808:v1 .
-
-t00808:p1 a :Male ;
+t00808:p1
+  a :Male ;
   :dob "1897-03-05"^^xsd:date ;
   :dod "1935-10-31"^^xsd:date ;
   :nam "JAN OOSTERHUIS" ;
-  :pob t00808:c1 ;
-  :pod t00808:c2 ;
-  :rol t00808:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "ZEERIJP" ;
+    :place place:Zeerijp2744003
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "TEN BOER" ;
+    :place place:TenBoer2746491
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00808:p2
+  ] .
 
-t00808:p2 a :Female ;
+t00808:p2
+  a :Female ;
   :nam "GEERTRUIDA OMTA" .
 
-t00808:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00808:p2 .
+[]
+  a :Second_Epistle_to_the_Corinthians.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 5 ;
+    :prt t00808:v1
+  ] .
 
-t00808:s1 a :Frond.n.01 .
-
-t00808:v1 a :Verse.n.01 ;
+t00808:v1
+  a :Verse.n.01 ;
   :ord 1 .
-
-t00808:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00808.jpg" ;
-  dc:date "2020-01-18T12:48:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2777 ;
-    geo:long 6.6939
-  ] ;
-  :nd "+53.2777+006.6939"^^ll: .
 

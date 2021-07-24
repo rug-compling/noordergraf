@@ -1,75 +1,68 @@
 @prefix t00740: <https://noordergraf.rug.nl/tomb/t00740#> .
 
-tomb:t00740 a :Tomb ;
-  :image t00740:im1 ;
-  :site site:gr9679KHscheemda ;
-  :ent t00740:p1 ,
-       t00740:p2 ;
+tomb:t00740
+  a :Tomb ;
+  :ent t00740:p1, t00740:p2 ;
+  :image [
+    dc:date "2019-12-29T10:20:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00740.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1806 ;
+      geo:long 6.9690
+    ] ;
+    :nd "+53.1806+006.9690"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00740:s1 ,
-       t00740:s2 ,
-       t00740:s3 .
+  :site site:gr9679KHscheemda ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ], [
+    a :Scythe.n.01
+  ] .
 
-t00740:a1 a :Weeping.a.02 .
-
-t00740:c1 a :Village.n.02 ;
-  :place place:Westerlee2744715 ;
-  :name "WESTERLEE" .
-
-t00740:c2 a :Village.n.02 ;
-  :place place:Scheemda2747661 ;
-  :name "SCHEEMDA" .
-
-t00740:c3 a :Village.n.02 ;
-  :place place:Wagenborgen2745090 ;
-  :name "WAGENBORGEN" .
-
-t00740:p1 a :Female ;
+t00740:p1
+  a :Female ;
   :dob "1825-07-18"^^xsd:date ;
   :dod "1904-03-17"^^xsd:date ;
   :nam "ELIZABETH WOLTJER" ;
-  :pob t00740:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "WESTERLEE" ;
+    :place place:Westerlee2744715
+  ] ;
   :pod t00740:c2 ;
-  :rol t00740:r1 ,
-       t00740:r2 ,
-       t00740:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "ONVERGETELIJKE"
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00740:p2
+  ] .
 
-t00740:p2 a :Male ;
+t00740:p2
+  a :Male ;
   :dob "1818-06-09"^^xsd:date ;
   :dod "1916-12-20"^^xsd:date ;
   :nam "WESSEL BRONS" ;
-  :pob t00740:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "WAGENBORGEN" ;
+    :place place:Wagenborgen2745090
+  ] ;
   :pod t00740:c2 .
 
-t00740:r1 a :Wife.n.01 ;
-  :att "ONVERGETELIJKE" .
-
-t00740:r2 a :Mother.n.01 .
-
-t00740:r3 a :Spouse.n.01 ;
-  :tgt t00740:p2 .
-
-t00740:s1 a :Butterfly.n.01 .
-
-t00740:s2 a :Willow.n.01 ;
-  :att t00740:a1 .
-
-t00740:s3 a :Scythe.n.01 .
-
-t00740:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00740.jpg" ;
-  dc:date "2019-12-29T10:20:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1806 ;
-    geo:long 6.9690
-  ] ;
-  :nd "+53.1806+006.9690"^^ll: .
+t00740:c2
+  a :Village.n.02 ;
+  :name "SCHEEMDA" ;
+  :place place:Scheemda2747661 .
 

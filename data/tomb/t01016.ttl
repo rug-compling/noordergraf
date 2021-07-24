@@ -1,47 +1,41 @@
 @prefix t01016: <https://noordergraf.rug.nl/tomb/t01016#> .
 
-tomb:t01016 a :Tomb ;
-  :image t01016:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t01016:p1 ,
-       t01016:p2 ;
+tomb:t01016
+  a :Tomb ;
+  :ent t01016:p1, t01016:p2 ;
+  :image [
+    dc:date "2020-04-04T10:44:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01016.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1755 ;
+      geo:long 7.0967
+    ] ;
+    :nd "+53.1755+007.0967"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01016:s1 ,
-       t01016:s2 ,
-       t01016:s3 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] .
 
-t01016:p1 a :Male ;
+t01016:p1
+  a :Male ;
   :dob "1811-08-10"^^xsd:date ;
   :dod "1852-02-19"^^xsd:date ;
   :nam "GIESEL J. ELSINGA" ;
-  :rol t01016:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01016:p2
+  ] .
 
-t01016:p2 a :Male ;
+t01016:p2
+  a :Male ;
   :nam "REINDER A. GEERTSEMA" .
-
-t01016:r1 a :Spouse.n.01 ;
-  :tgt t01016:p2 .
-
-t01016:s1 a :Frond.n.01 .
-
-t01016:s2 a :Frond.n.01 .
-
-t01016:s3 a :Ribbon.n.01 .
-
-t01016:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01016.jpg" ;
-  dc:date "2020-04-04T10:44:03"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1755 ;
-    geo:long 7.0967
-  ] ;
-  :nd "+53.1755+007.0967"^^ll: .
 

@@ -1,32 +1,28 @@
 @prefix t00591: <https://noordergraf.rug.nl/tomb/t00591#> .
 
-tomb:t00591 a :Tomb ;
-  :image t00591:im1 ;
-  :site site:gr9951TNwinsum ;
+tomb:t00591
+  a :Tomb ;
   :ent t00591:p1 ;
-  :sym t00591:s1 .
+  :image [
+    dc:date "2019-11-30T14:24:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00591.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3267 ;
+      geo:long 6.5121
+    ] ;
+    :nd "+53.3267+006.5121"^^ll:
+  ] ;
+  :site site:gr9951TNwinsum ;
+  :sym [
+    a :Book.n.02
+  ] .
 
-t00591:p1 a :Male ;
+t00591:p1
+  a :Male ;
   :dob "1940-08-06"^^xsd:date ;
   :dod "2012-03-02"^^xsd:date ;
   :nam "HENDRIK HARMSMA" .
-
-t00591:s1 a :Book.n.02 .
-
-t00591:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00591.jpg" ;
-  dc:date "2019-11-30T14:24:13"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3267 ;
-    geo:long 6.5121
-  ] ;
-  :nd "+53.3267+006.5121"^^ll: .
 

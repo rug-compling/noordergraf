@@ -1,57 +1,51 @@
 @prefix t01085: <https://noordergraf.rug.nl/tomb/t01085#> .
 
-tomb:t01085 a :Tomb ;
-  :image t01085:im1 ;
-  :site site:gr9798PDgarmerwolde ;
-  :ent t01085:g1 ,
-       t01085:p1 ,
-       t01085:p2 ;
-  :lan "NLD" .
+tomb:t01085
+  a :Tomb ;
+  :ent t01085:p1, t01085:p2, [
+    a :People.n.01 ;
+    :mem t01085:p2, [
+      a :Son-in-law.n.01 ;
+      :tgt t01085:g2
+    ] ;
+    :sub t01085:g2
+  ] ;
+  :image [
+    dc:date "2020-05-20T19:31:59"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01085.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2480 ;
+      geo:long 6.6475
+    ] ;
+    :nd "+53.2480+006.6475"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9798PDgarmerwolde .
 
-t01085:g1 a :People.n.01 ;
-  :mem t01085:p2 ,
-       t01085:p3 ;
-  :sub t01085:g2 .
-
-t01085:g2 a :People.n.01 ;
-  :qua 5 ;
-  :tgt t01085:g3 .
-
-t01085:g3 a :People.n.01 ;
-  :mem t01085:p1 ,
-       t01085:p2 .
-
-t01085:p1 a :Male ;
+t01085:p1
+  a :Male ;
   :dob "1815-05-20"^^xsd:date ;
   :dod "1880-02-22"^^xsd:date ;
   :nam "JAKOB GERRITS SCHUTTER" ;
   :occ "KERKVOOGD DEZER GEMEENTE" ;
-  :rol t01085:r1 .
+  :rol [
+    a :Husband.n.01 ;
+    :beg "29-04-1849" ;
+    :tgt t01085:p2
+  ] .
 
-t01085:p2 a :Female ;
+t01085:p2
+  a :Female ;
   :nam "S.D. VAN DIJK" .
 
-t01085:p3 a :Son-in-law.n.01 ;
-  :tgt t01085:g2 .
-
-t01085:r1 a :Husband.n.01 ;
-  :beg "29-04-1849" ;
-  :tgt t01085:p2 .
-
-t01085:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01085.jpg" ;
-  dc:date "2020-05-20T19:31:59"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2480 ;
-    geo:long 6.6475
-  ] ;
-  :nd "+53.2480+006.6475"^^ll: .
+t01085:g2
+  a :People.n.01 ;
+  :qua 5 ;
+  :tgt [
+    a :People.n.01 ;
+    :mem t01085:p1, t01085:p2
+  ] .
 

@@ -1,51 +1,45 @@
 @prefix t00015: <https://noordergraf.rug.nl/tomb/t00015#> .
 
-tomb:t00015 a :Tomb ;
-  :image t00015:im1 ;
-  :ent t00015:g1 ,
-       t00015:p1 ,
-       t00015:p2 .
+tomb:t00015
+  a :Tomb ;
+  :ent t00015:p1, t00015:p2, [
+    a :Group.n.01 ;
+    :mem t00015:p2 ;
+    :rol [
+      a :Commemorator.n.01 ;
+      :tgt t00015:p1
+    ]
+  ] ;
+  :image [
+    dc:date "2019-09-25T16:40:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00015.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1807 ;
+      geo:long 6.5963
+    ] ;
+    :nd "+53.1807+006.5963"^^ll:
+  ] .
 
-t00015:g1 a :Group.n.01 ;
-  :mem t00015:p2 ;
-  :rol t00015:r1 .
-
-t00015:p1 a :Female ;
+t00015:p1
+  a :Female ;
   :dob "1888-12-01"^^xsd:date ;
   :dod "1933-06-12"^^xsd:date ;
   :nam "MARIA BUINING" ;
-  :rol t00015:r2 ,
-       t00015:r3 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00015:p2
+  ], [
+    a :Mother.n.01 ;
+    :tgt t00015:p3
+  ] .
 
-t00015:p2 a :Male ;
+t00015:p2
+  a :Male ;
   :dob "1885-09-30"^^xsd:date ;
   :dod "1956-12-21"^^xsd:date ;
   :nam "JOHANNES KLAVER" .
-
-t00015:r1 a :Commemorator.n.01 ;
-  :tgt t00015:p1 .
-
-t00015:r2 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00015:p2 .
-
-t00015:r3 a :Mother.n.01 ;
-  :tgt t00015:p3 .
-
-t00015:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00015.jpg" ;
-  dc:date "2019-09-25T16:40:55"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1807 ;
-    geo:long 6.5963
-  ] ;
-  :nd "+53.1807+006.5963"^^ll: .
 

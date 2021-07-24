@@ -1,45 +1,40 @@
 @prefix t00409: <https://noordergraf.rug.nl/tomb/t00409#> .
 
-tomb:t00409 a :Tomb ;
-  :image t00409:im1 ;
-  :ent t00409:p1 ,
-       t00409:p2 ,
-       t00409:p3 .
+tomb:t00409
+  a :Tomb ;
+  :ent t00409:p1, t00409:p2, t00409:p3 ;
+  :image [
+    dc:date "2019-10-25T17:11:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00409.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0891 ;
+      geo:long 6.5607
+    ] ;
+    :nd "+53.0891+006.5607"^^ll:
+  ] .
 
-t00409:p1 a :Male ;
+t00409:p1
+  a :Male ;
   :dob "1949-03-22"^^xsd:date ;
   :dod "1987-08-31"^^xsd:date ;
   :nam "EGBERT GEERT JAN BIEMOLD" ;
-  :rol t00409:r1 ,
-       t00409:r2 .
+  :rol [
+    a :Husband.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00409:p2
+  ], [
+    a :Father.n.01 ;
+    :tgt t00409:p3
+  ] .
 
-t00409:p2 a :Female ;
+t00409:p2
+  a :Female ;
   :nam "ANNEKE DETZ" .
 
-t00409:p3 a :Male ;
+t00409:p3
+  a :Male ;
   :nam "HARM" .
-
-t00409:r1 a :Husband.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00409:p2 .
-
-t00409:r2 a :Father.n.01 ;
-  :tgt t00409:p3 .
-
-t00409:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00409.jpg" ;
-  dc:date "2019-10-25T17:11:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.0891 ;
-    geo:long 6.5607
-  ] ;
-  :nd "+53.0891+006.5607"^^ll: .
 

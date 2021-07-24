@@ -1,52 +1,49 @@
 @prefix t00619: <https://noordergraf.rug.nl/tomb/t00619#> .
 
-tomb:t00619 a :Tomb ;
-  :image t00619:im1 ;
-  :site site:gr9601KAhoogezand ;
-  :ent t00619:p1 ,
-       t00619:p2 ;
-  :lan "NLD" .
+tomb:t00619
+  a :Tomb ;
+  :ent t00619:p1, t00619:p2 ;
+  :image [
+    dc:date "2019-11-23T10:03:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00619.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1643 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1643+006.7541"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9601KAhoogezand .
 
-t00619:c1 a :Village.n.02 ;
-  :place place:Borgercompagnie2758618 ;
-  :name "BORGERCOMPAGNIE" .
-
-t00619:c2 a :Village.n.02 ;
-  :place place:Zuidlaren2743680 ;
-  :name "ZUIDLAREN" .
-
-t00619:c3 a :Village.n.02 ;
-  :place place:Glimmen2755495 ;
-  :name "GLIMMEN" .
-
-t00619:p1 a :Person ;
+t00619:p1
+  a :Person ;
   :dob "1900-11-04"^^xsd:date ;
   :dod "1993-01-08"^^xsd:date ;
   :nam "J.W. MULDER" ;
-  :pob t00619:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "BORGERCOMPAGNIE" ;
+    :place place:Borgercompagnie2758618
+  ] ;
   :pod t00619:c2 .
 
-t00619:p2 a :Person ;
+t00619:p2
+  a :Person ;
   :dob "1903-07-26"^^xsd:date ;
   :dod "2002-06-29"^^xsd:date ;
   :nam "L. MULDER" ;
-  :pob t00619:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "GLIMMEN" ;
+    :place place:Glimmen2755495
+  ] ;
   :pod t00619:c2 .
 
-t00619:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00619.jpg" ;
-  dc:date "2019-11-23T10:03:11"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1643 ;
-    geo:long 6.7541
-  ] ;
-  :nd "+53.1643+006.7541"^^ll: .
+t00619:c2
+  a :Village.n.02 ;
+  :name "ZUIDLAREN" ;
+  :place place:Zuidlaren2743680 .
 

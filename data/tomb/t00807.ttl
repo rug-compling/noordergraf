@@ -1,47 +1,41 @@
 @prefix t00807: <https://noordergraf.rug.nl/tomb/t00807#> .
 
-tomb:t00807 a :Tomb ;
-  :image t00807:im1 ;
-  :site site:gr9791KEten_boer ;
+tomb:t00807
+  a :Tomb ;
   :ent t00807:p1 ;
+  :image [
+    dc:date "2020-01-18T13:00:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00807.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2772 ;
+      geo:long 6.6943
+    ] ;
+    :nd "+53.2772+006.6943"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00807:s1 ,
-       t00807:s2 .
+  :site site:gr9791KEten_boer ;
+  :sym [
+    a :Seed.n.02
+  ], [
+    a :Dandelion.n.01
+  ] .
 
-t00807:c1 a :Town.n.01 ;
-  :place place:KatwijkaandenRijn2753011 ;
-  :name "KATWIJK" .
-
-t00807:c2 a :City.n.01 ;
-  :place place:Hardenberg2754861 ;
-  :name "HARDENBERG" .
-
-t00807:p1 a :Female ;
+t00807:p1
+  a :Female ;
   :dob "1942-12-02"^^xsd:date ;
   :dod "1994-06-08"^^xsd:date ;
-  :nam "MARIA HUESE-VAN ELK" ,
-       "RIET" ;
-  :pob t00807:c1 ;
-  :pod t00807:c2 .
-
-t00807:s1 a :Seed.n.02 .
-
-t00807:s2 a :Dandelion.n.01 .
-
-t00807:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00807.jpg" ;
-  dc:date "2020-01-18T13:00:49"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2772 ;
-    geo:long 6.6943
+  :nam "MARIA HUESE-VAN ELK", "RIET" ;
+  :pob [
+    a :Town.n.01 ;
+    :name "KATWIJK" ;
+    :place place:KatwijkaandenRijn2753011
   ] ;
-  :nd "+53.2772+006.6943"^^ll: .
+  :pod [
+    a :City.n.01 ;
+    :name "HARDENBERG" ;
+    :place place:Hardenberg2754861
+  ] .
 

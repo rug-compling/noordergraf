@@ -1,54 +1,50 @@
 @prefix t00863: <https://noordergraf.rug.nl/tomb/t00863#> .
 
-tomb:t00863 a :Tomb ;
-  :image t00863:im1 ;
-  :site site:dr7844TCveenoord ;
-  :ent t00863:p1 ,
-       t00863:p2 ;
+tomb:t00863
+  a :Tomb ;
+  :ent t00863:p1, t00863:p2 ;
+  :image [
+    dc:date "2020-02-15T15:14:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00863.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7191 ;
+      geo:long 6.8449
+    ] ;
+    :nd "+52.7191+006.8449"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00863:s1 .
+  :site site:dr7844TCveenoord ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00863:a1 a :Weeping.a.02 .
-
-t00863:c1 a :Village.n.02 ;
-  :place place:Sleen2747182 ;
-  :name "SLEEN" .
-
-t00863:c2 a :Village.n.02 ;
-  :place place:Veenoord2745753 ;
-  :name "VEENOORD" .
-
-t00863:p1 a :Male ;
+t00863:p1
+  a :Male ;
   :dob "1854-03-29"^^xsd:date ;
   :dod "1854-02-06"^^xsd:date ;
   :nam "WIENAND EISING" ;
-  :pob t00863:c1 ;
-  :pod t00863:c2 ;
-  :rol t00863:r1 .
-
-t00863:p2 a :Female ;
-  :nam "J. V.D. VELDE" .
-
-t00863:r1 a :Spouse.n.01 ;
-  :tgt t00863:p2 .
-
-t00863:s1 a :Willow.n.01 ;
-  :att t00863:a1 .
-
-t00863:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00863.jpg" ;
-  dc:date "2020-02-15T15:14:12"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7191 ;
-    geo:long 6.8449
+  :pob [
+    a :Village.n.02 ;
+    :name "SLEEN" ;
+    :place place:Sleen2747182
   ] ;
-  :nd "+52.7191+006.8449"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "VEENOORD" ;
+    :place place:Veenoord2745753
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00863:p2
+  ] .
+
+t00863:p2
+  a :Female ;
+  :nam "J. V.D. VELDE" .
 

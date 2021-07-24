@@ -1,69 +1,61 @@
 @prefix t00555: <https://noordergraf.rug.nl/tomb/t00555#> .
 
-tomb:t00555 a :Tomb ;
-  :image t00555:im1 ;
-  :site site:gr9641ANveendam ;
-  :ent t00555:p1 ,
-       t00555:p2 ;
+tomb:t00555
+  a :Tomb ;
+  :ent t00555:p1, t00555:p2 ;
+  :image [
+    dc:date "2019-11-24T13:57:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00555.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1043 ;
+      geo:long 6.8748
+    ] ;
+    :nd "+53.1043+006.8748"^^ll:
+  ] ;
   :quo "RUST ZACHT \\ GELIEFDE MAN \\ EN VADER"@nld ;
-  :sym t00555:s1 .
+  :site site:gr9641ANveendam ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt [
+      a :Anchor.n.01
+    ], [
+      a :Cross.n.03
+    ], [
+      a :Heart.n.01
+    ], [
+      a :Curtain.n.01
+    ]
+  ] .
 
-t00555:c1 a :Village.n.02 ;
-  :place place:Borgercompagnie2758618 ;
-  :name "BORGERCOMPAGNIE" .
-
-t00555:o1 a :Farmer.n.01 ;
-  :hco "61220" .
-
-t00555:p1 a :Male ;
+t00555:p1
+  a :Male ;
   :dob "1850-01-21"^^xsd:date ;
   :dod "1911-01-03"^^xsd:date ;
   :nam "GEUCHIEN R. VOS" ;
-  :occ t00555:o1 ;
+  :occ [
+    a :Farmer.n.01 ;
+    :hco "61220"
+  ] ;
   :pob t00555:c1 ;
   :pod t00555:c1 ;
-  :rol t00555:r1 ,
-       t00555:r2 ,
-       t00555:r3 .
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00555:p2
+  ], [
+    a :Husband.n.01
+  ], [
+    a :Father.n.01
+  ] .
 
-t00555:p2 a :Female ;
+t00555:p2
+  a :Female ;
   :nam "MARCHIENA F. SLIM" .
 
-t00555:r1 a :Spouse.n.01 ;
-  :tgt t00555:p2 .
-
-t00555:r2 a :Husband.n.01 .
-
-t00555:r3 a :Father.n.01 .
-
-t00555:s1 a :Composite.n.01 ;
-  :prt t00555:s2 ,
-       t00555:s3 ,
-       t00555:s4 ,
-       t00555:s5 .
-
-t00555:s2 a :Anchor.n.01 .
-
-t00555:s3 a :Cross.n.03 .
-
-t00555:s4 a :Heart.n.01 .
-
-t00555:s5 a :Curtain.n.01 .
-
-t00555:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00555.jpg" ;
-  dc:date "2019-11-24T13:57:35"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1043 ;
-    geo:long 6.8748
-  ] ;
-  :nd "+53.1043+006.8748"^^ll: .
+t00555:c1
+  a :Village.n.02 ;
+  :name "BORGERCOMPAGNIE" ;
+  :place place:Borgercompagnie2758618 .
 

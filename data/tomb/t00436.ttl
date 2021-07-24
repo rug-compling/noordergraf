@@ -1,52 +1,48 @@
 @prefix t00436: <https://noordergraf.rug.nl/tomb/t00436#> .
 
-tomb:t00436 a :Tomb ;
-  :image t00436:im1 ;
-  :site site:fr9166NAschiermonnikoog ;
-  :ent t00436:p1 ,
-       t00436:p2 ;
+tomb:t00436
+  a :Tomb ;
+  :ent t00436:p1, t00436:p2 ;
+  :image [
+    dc:date "2019-11-02T11:49:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00436.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4790 ;
+      geo:long 6.1606
+    ] ;
+    :nd "+53.4790+006.1606"^^ll:
+  ] ;
   :quo "RUST ZACHT" ;
   :ref "GEZANG 257:2" ;
-  :sym t00436:s1 .
+  :site site:fr9166NAschiermonnikoog ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00436:c1 a :Village.n.02 ;
-  :place place:Ternaard2746424 ;
-  :name "TERNAARD" .
-
-t00436:c2 a :Island.n.01 ;
-  :place place:Schiermonnikoog2747591 ;
-  :name "SCHIERMONNIKOOG" .
-
-t00436:p1 a :Male ;
+t00436:p1
+  a :Male ;
   :dob "1871-03-28"^^xsd:date ;
   :dod "1929-03-24"^^xsd:date ;
   :nam "JOHANNES J. DE VRIES" ;
-  :pob t00436:c1 ;
-  :pod t00436:c2 ;
-  :rol t00436:r1 .
-
-t00436:p2 a :Female ;
-  :nam "ANTJE TH. JENSMA" .
-
-t00436:r1 a :Spouse.n.01 ;
-  :tgt t00436:p2 .
-
-t00436:s1 a :Frond.n.01 .
-
-t00436:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00436.jpg" ;
-  dc:date "2019-11-02T11:49:25"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.4790 ;
-    geo:long 6.1606
+  :pob [
+    a :Village.n.02 ;
+    :name "TERNAARD" ;
+    :place place:Ternaard2746424
   ] ;
-  :nd "+53.4790+006.1606"^^ll: .
+  :pod [
+    a :Island.n.01 ;
+    :name "SCHIERMONNIKOOG" ;
+    :place place:Schiermonnikoog2747591
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00436:p2
+  ] .
+
+t00436:p2
+  a :Female ;
+  :nam "ANTJE TH. JENSMA" .
 

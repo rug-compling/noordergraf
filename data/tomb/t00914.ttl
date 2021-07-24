@@ -1,48 +1,44 @@
 @prefix t00914: <https://noordergraf.rug.nl/tomb/t00914#> .
 
-tomb:t00914 a :Tomb ;
-  :image t00914:im1 ;
-  :site site:gr9351RLtolbert ;
-  :ent t00914:p1 ,
-       t00914:p2 ;
-  :quo "RUST ZACHT"@nld .
+tomb:t00914
+  a :Tomb ;
+  :ent t00914:p1, t00914:p2 ;
+  :image [
+    dc:date "2020-03-07T14:05:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00914.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1717 ;
+      geo:long 6.3654
+    ] ;
+    :nd "+53.1717+006.3654"^^ll:
+  ] ;
+  :quo "RUST ZACHT"@nld ;
+  :site site:gr9351RLtolbert .
 
-t00914:c1 a :Village.n.02 ;
-  :place place:Lucaswolde2751404 ;
-  :name "LUCASWOLDE" .
-
-t00914:c2 a :Village.n.02 ;
-  :place place:Tolbert2746234 ;
-  :name "TOLBERT" .
-
-t00914:p1 a :Female ;
+t00914:p1
+  a :Female ;
   :dob "1897-08-21"^^xsd:date ;
   :dod "1924-08-29"^^xsd:date ;
   :nam "FROUKJE VAN DER DONK" ;
-  :pob t00914:c1 ;
-  :pod t00914:c2 ;
-  :rol t00914:r1 .
-
-t00914:p2 a :Male ;
-  :nam "SIKKE JAN CAZEMIER" .
-
-t00914:r1 a :Spouse.n.01 ;
-  :tgt t00914:p2 .
-
-t00914:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00914.jpg" ;
-  dc:date "2020-03-07T14:05:29"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1717 ;
-    geo:long 6.3654
+  :pob [
+    a :Village.n.02 ;
+    :name "LUCASWOLDE" ;
+    :place place:Lucaswolde2751404
   ] ;
-  :nd "+53.1717+006.3654"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "TOLBERT" ;
+    :place place:Tolbert2746234
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00914:p2
+  ] .
+
+t00914:p2
+  a :Male ;
+  :nam "SIKKE JAN CAZEMIER" .
 

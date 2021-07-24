@@ -1,62 +1,56 @@
 @prefix t00999: <https://noordergraf.rug.nl/tomb/t00999#> .
 
-tomb:t00999 a :Tomb ;
-  :image t00999:im1 ;
-  :site site:gr9734ATgroningen ;
-  :ent t00999:p1 ,
-       t00999:p2 ;
+tomb:t00999
+  a :Tomb ;
+  :ent t00999:p1, t00999:p2 ;
+  :image [
+    dc:date "2020-04-05T12:11:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00999.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2443 ;
+      geo:long 6.6280
+    ] ;
+    :nd "+53.2443+006.6280"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00999:s1 .
+  :site site:gr9734ATgroningen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00999:a1 a :Weeping.a.02 .
-
-t00999:c1 a :Village.n.02 ;
-  :place place:Zuidwolde2743636 ;
-  :name "ZUIDWOLDE" .
-
-t00999:c2 a :Village.n.02 ;
-  :place place:Noorddijk2749981 ;
-  :name "NOORDDIJK" .
-
-t00999:p1 a :Female ;
+t00999:p1
+  a :Female ;
   :dob "1843-07-15"^^xsd:date ;
   :dod "1888-05-29"^^xsd:date ;
   :nam "FENNA HOMMES" ;
-  :pob t00999:c1 ;
-  :pod t00999:c2 ;
-  :rol t00999:r1 ,
-       t00999:r2 ,
-       t00999:r3 .
-
-t00999:p2 a :Female ;
-  :nam "LUBBERTUS MULDER" .
-
-t00999:r1 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00999:p2 .
-
-t00999:r2 a :Mother.n.01 .
-
-t00999:r3 a :Spouse.n.01 ;
-  :tgt t00999:p2 .
-
-t00999:s1 a :Willow.n.01 ;
-  :att t00999:a1 .
-
-t00999:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00999.jpg" ;
-  dc:date "2020-04-05T12:11:41"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2443 ;
-    geo:long 6.6280
+  :pob [
+    a :Village.n.02 ;
+    :name "ZUIDWOLDE" ;
+    :place place:Zuidwolde2743636
   ] ;
-  :nd "+53.2443+006.6280"^^ll: .
+  :pod [
+    a :Village.n.02 ;
+    :name "NOORDDIJK" ;
+    :place place:Noorddijk2749981
+  ] ;
+  :rol [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00999:p2
+  ], [
+    a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00999:p2
+  ] .
+
+t00999:p2
+  a :Female ;
+  :nam "LUBBERTUS MULDER" .
 

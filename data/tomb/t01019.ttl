@@ -1,88 +1,85 @@
 @prefix t01019: <https://noordergraf.rug.nl/tomb/t01019#> .
 
-tomb:t01019 a :Tomb ;
-  :image t01019:im1 ;
-  :site site:gr9722SNgroningen ;
-  :ent t01019:p1 ,
-       t01019:p2 ;
-  :lan "NLD" .
+tomb:t01019
+  a :Tomb ;
+  :ent t01019:p1, t01019:p2 ;
+  :image [
+    dc:date "2020-04-03T14:31:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01019.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1911 ;
+      geo:long 6.5931
+    ] ;
+    :nd "+53.1911+006.5931"^^ll:
+  ] ;
+  :lan "NLD" ;
+  :site site:gr9722SNgroningen .
 
-t01019:b1 a :Epistle_to_the_Romans.n.04 ;
-  :prt t01019:c2 ,
-       t01019:c3 .
-
-t01019:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t01019:c2 a :Chapter.n.01 ;
-  :ord 8 ;
-  :prt t01019:v1 ,
-       t01019:v2 .
-
-t01019:c3 a :Chapter.n.01 ;
-  :ord 5 ;
-  :prt t01019:v3 ,
-       t01019:v4 .
-
-t01019:g1 a :Group.n.01 ;
-  :mem t01019:v1 ,
-       t01019:v2 .
-
-t01019:g2 a :Group.n.01 ;
-  :mem t01019:v3 ,
-       t01019:v4 .
-
-t01019:p1 a :Male ;
+t01019:p1
+  a :Male ;
   :dob "1876-12-29"^^xsd:date ;
   :dod "1938-02-16"^^xsd:date ;
   :nam "GEERT JAN DRENT" ;
   :pob t01019:c1 ;
   :pod t01019:c1 ;
-  :ref t01019:g1 ;
-  :rol t01019:r1 .
+  :ref [
+    a :Group.n.01 ;
+    :mem t01019:v1, t01019:v2
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t01019:p2
+  ] .
 
-t01019:p2 a :Female ;
+t01019:p2
+  a :Female ;
   :dob "1874-03-12"^^xsd:date ;
   :dod "1946-06-05"^^xsd:date ;
   :nam "JOHANNA KLOOSTER" ;
   :pob t01019:c1 ;
   :pod t01019:c1 ;
-  :ref t01019:g2 ;
-  :rol t01019:r2 .
+  :ref [
+    a :Group.n.01 ;
+    :mem t01019:v3, t01019:v4
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01019:p1
+  ] .
 
-t01019:r1 a :Spouse.n.01 ;
-  :tgt t01019:p2 .
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 8 ;
+    :prt t01019:v1, t01019:v2
+  ], [
+    a :Chapter.n.01 ;
+    :ord 5 ;
+    :prt t01019:v3, t01019:v4
+  ] .
 
-t01019:r2 a :Widow.n.01 ;
-  :tgt t01019:p1 .
+t01019:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
-t01019:v1 a :Verse.n.01 ;
+t01019:v1
+  a :Verse.n.01 ;
   :ord 38 .
 
-t01019:v2 a :Verse.n.01 ;
+t01019:v2
+  a :Verse.n.01 ;
   :ord 39 .
 
-t01019:v3 a :Verse.n.01 ;
+t01019:v3
+  a :Verse.n.01 ;
   :ord 1 .
 
-t01019:v4 a :Verse.n.01 ;
+t01019:v4
+  a :Verse.n.01 ;
   :ord 2 .
-
-t01019:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01019.jpg" ;
-  dc:date "2020-04-03T14:31:14"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1911 ;
-    geo:long 6.5931
-  ] ;
-  :nd "+53.1911+006.5931"^^ll: .
 

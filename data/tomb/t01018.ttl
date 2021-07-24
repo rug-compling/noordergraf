@@ -1,60 +1,52 @@
 @prefix t01018: <https://noordergraf.rug.nl/tomb/t01018#> .
 
-tomb:t01018 a :Tomb ;
-  :image t01018:im1 ;
-  :site site:gr9686RSbeerta ;
-  :ent t01018:g1 ,
-       t01018:p1 ,
-       t01018:p2 ,
-       t01018:p3 ;
+tomb:t01018
+  a :Tomb ;
+  :ent t01018:p1, t01018:p2, t01018:p3, t01018:g1 ;
+  :image [
+    dc:date "2020-04-04T10:41:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01018.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1749 ;
+      geo:long 7.0964
+    ] ;
+    :nd "+53.1749+007.0964"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t01018:s1 ,
-       t01018:s2 ,
-       t01018:s3 ,
-       t01018:s4 .
+  :site site:gr9686RSbeerta ;
+  :sym [
+    a :Butterfly.n.01
+  ], [
+    a :Snake.n.02
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Oak.n.02
+  ] .
 
-t01018:g1 a :Group.n.01 ;
-  :mem t01018:p2 ,
-       t01018:p3 .
-
-t01018:p1 a :Male ;
+t01018:p1
+  a :Male ;
   :dob "1829-06-28"^^xsd:date ;
   :dod "1845-05-25"^^xsd:date ;
   :nam "GEERT HARMS KUIPER" ;
-  :rol t01018:r1 .
+  :rol [
+    a :Son.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t01018:g1
+  ] .
 
-t01018:p2 a :Male ;
+t01018:p2
+  a :Male ;
   :nam "HARM ENJES KUIPER" .
 
-t01018:p3 a :Female ;
+t01018:p3
+  a :Female ;
   :nam "EJA TONKENS VAN DELDEN" .
 
-t01018:r1 a :Son.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t01018:g1 .
-
-t01018:s1 a :Butterfly.n.01 .
-
-t01018:s2 a :Snake.n.02 .
-
-t01018:s3 a :Frond.n.01 .
-
-t01018:s4 a :Oak.n.02 .
-
-t01018:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01018.jpg" ;
-  dc:date "2020-04-04T10:41:44"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1749 ;
-    geo:long 7.0964
-  ] ;
-  :nd "+53.1749+007.0964"^^ll: .
+t01018:g1
+  a :Group.n.01 ;
+  :mem t01018:p2, t01018:p3 .
 

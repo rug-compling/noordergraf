@@ -1,54 +1,51 @@
 @prefix t00734: <https://noordergraf.rug.nl/tomb/t00734#> .
 
-tomb:t00734 a :Tomb ;
-  :image t00734:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00734:p1 ,
-       t00734:p2 ,
-       t00734:p3 ;
+tomb:t00734
+  a :Tomb ;
+  :ent t00734:p1, t00734:p2, t00734:p3 ;
+  :image [
+    dc:date "2019-12-21T13:07:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00734.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7821 ;
+      geo:long 6.8975
+    ] ;
+    :nd "+52.7821+006.8975"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00734:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] .
 
-t00734:a1 a :Weeping.a.02 .
-
-t00734:p1 a :Male ;
+t00734:p1
+  a :Male ;
   :dob "1849-12-13"^^xsd:date ;
   :dod "1935-01-30"^^xsd:date ;
   :nam "MANNUS SCHERING" ;
-  :rol t00734:r1 ,
-       t00734:r2 .
+  :rol t00734:r1, t00734:r2 .
 
-t00734:p2 a :Female ;
+t00734:p2
+  a :Female ;
   :nam "GRIETIEN HUIZING" .
 
-t00734:p3 a :Female ;
+t00734:p3
+  a :Female ;
   :nam "WILLEMPTJE WIGGERINK" .
 
-t00734:r1 a :Wife.n.01 ;
+t00734:r1
+  a :Wife.n.01 ;
   :bef t00734:r2 ;
   :tgt t00734:p2 .
 
-t00734:r2 a :Wife.n.01 ;
+t00734:r2
+  a :Wife.n.01 ;
   :aft t00734:r1 ;
   :tgt t00734:p3 .
-
-t00734:s1 a :Willow.n.01 ;
-  :att t00734:a1 .
-
-t00734:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00734.jpg" ;
-  dc:date "2019-12-21T13:07:08"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7821 ;
-    geo:long 6.8975
-  ] ;
-  :nd "+52.7821+006.8975"^^ll: .
 

@@ -1,51 +1,46 @@
 @prefix t00755: <https://noordergraf.rug.nl/tomb/t00755#> .
 
-tomb:t00755 a :Tomb ;
-  :image t00755:im1 ;
-  :site site:gr9936BTfarmsum ;
-  :ent t00755:g1 ,
-       t00755:p1 ,
-       t00755:p2 ,
-       t00755:p3 ;
+tomb:t00755
+  a :Tomb ;
+  :ent t00755:p1, t00755:p2, t00755:p3, t00755:g1 ;
+  :image [
+    dc:date "2019-12-28T12:46:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00755.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3111 ;
+      geo:long 6.9974
+    ] ;
+    :nd "+53.3111+006.9974"^^ll:
+  ] ;
   :lan "NLD" ;
-  :sym t00755:s1 .
+  :site site:gr9936BTfarmsum ;
+  :sym [
+    a :Rose.n.01
+  ] .
 
-t00755:g1 a :Group.n.01 ;
-  :mem t00755:p2 ,
-       t00755:p3 .
-
-t00755:p1 a :Male ;
+t00755:p1
+  a :Male ;
   :dob "1862-06-08"^^xsd:date ;
   :dod "1865-10-27"^^xsd:date ;
   :nam "KLAAS JANS" ;
-  :rol t00755:r1 .
+  :rol [
+    a :Son.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00755:g1
+  ] .
 
-t00755:p2 a :Person ;
+t00755:p2
+  a :Person ;
   :nam "J.J. HAKEN" .
 
-t00755:p3 a :Person ;
+t00755:p3
+  a :Person ;
   :nam "T.R. REMTEMA" .
 
-t00755:r1 a :Son.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00755:g1 .
-
-t00755:s1 a :Rose.n.01 .
-
-t00755:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00755.jpg" ;
-  dc:date "2019-12-28T12:46:33"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3111 ;
-    geo:long 6.9974
-  ] ;
-  :nd "+53.3111+006.9974"^^ll: .
+t00755:g1
+  a :Group.n.01 ;
+  :mem t00755:p2, t00755:p3 .
 

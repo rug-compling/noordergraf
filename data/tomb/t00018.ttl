@@ -1,62 +1,58 @@
 @prefix t00018: <https://noordergraf.rug.nl/tomb/t00018#> .
 
-tomb:t00018 a :Tomb ;
-  :image t00018:im1 ;
+tomb:t00018
+  a :Tomb ;
+  :ent t00018:p1, t00018:p2 ;
+  :image [
+    dc:date "2019-09-25T16:33:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00018.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1911 ;
+      geo:long 6.5935
+    ] ;
+    :nd "+53.1911+006.5935"^^ll:
+  ] ;
   :site site:gr9722SNgroningen ;
-  :ent t00018:p1 ,
-       t00018:p2 ;
-  :sym t00018:s1 .
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00018:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00018:c2 a :Village.n.02 ;
-  :place place:Middelbert2750902 ;
-  :name "MIDDELBERT" .
-
-t00018:c3 a :Village.n.02 ;
-  :place place:Middelstum2750868 ;
-  :name "MIDDELSTUM" .
-
-t00018:c4 a :Town.n.01 ;
-  :place place:Haren2754841 ;
-  :name "HAREN" .
-
-t00018:p1 a :Female ;
+t00018:p1
+  a :Female ;
   :dob "1873-03-08"^^xsd:date ;
   :dod "1934-01-05"^^xsd:date ;
   :nam "TRIENTJE HUISMAN" ;
-  :pob t00018:c2 ;
-  :pod t00018:c1 ;
-  :rol t00018:r1 .
+  :pob [
+    a :Village.n.02 ;
+    :name "MIDDELBERT" ;
+    :place place:Middelbert2750902
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "GRONINGEN" ;
+    :place place:Groningen2755251
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :tgt t00018:p2
+  ] .
 
-t00018:p2 a :Male ;
+t00018:p2
+  a :Male ;
   :dob "1873-06-20"^^xsd:date ;
   :dod "1950-01-18"^^xsd:date ;
   :nam "KRIENO HUIZINGA" ;
-  :pob t00018:c3 ;
-  :pod t00018:c4 .
-
-t00018:r1 a :Spouse.n.01 ;
-  :tgt t00018:p2 .
-
-t00018:s1 a :Frond.n.01 .
-
-t00018:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00018.jpg" ;
-  dc:date "2019-09-25T16:33:24"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.1911 ;
-    geo:long 6.5935
+  :pob [
+    a :Village.n.02 ;
+    :name "MIDDELSTUM" ;
+    :place place:Middelstum2750868
   ] ;
-  :nd "+53.1911+006.5935"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] .
 

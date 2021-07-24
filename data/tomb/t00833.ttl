@@ -1,60 +1,67 @@
 @prefix t00833: <https://noordergraf.rug.nl/tomb/t00833#> .
 
-tomb:t00833 a :Tomb ;
-  :image t00833:im1 ;
-  :site site:dr7841CDsleen ;
-  :text "rustplaats\nvan\nalbert dobben\ngeb. 13 oct. 1876\nte dalen,\novl. 3 nov. 1934\nte holslootbrug.\ngel. echtg. van\nfenna lanting.\ngez. 201:1.\n\nrust zacht,\nlieve vader." ;
-  :ent t00833:p1 ,
-       t00833:p2 ;
+tomb:t00833
+  a :Tomb ;
+  :ent t00833:p1, t00833:p2 ;
+  :image [
+    dc:date "2020-02-15T15:44:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00833.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7763 ;
+      geo:long 6.8049
+    ] ;
+    :nd "+52.7763+006.8049"^^ll:
+  ] ;
   :quo "RUST ZACHT, LIEVE VADER"@nld ;
   :ref "GEZANG 201:1"@nld ;
-  :sym t00833:s1 .
+  :site site:dr7841CDsleen ;
+  :sym [
+    a :Willow.n.01 ;
+    :att [
+      a :Weeping.a.02
+    ]
+  ] ;
+  :text """rustplaats
+van
+albert dobben
+geb. 13 oct. 1876
+te dalen,
+ovl. 3 nov. 1934
+te holslootbrug.
+gel. echtg. van
+fenna lanting.
+gez. 201:1.
 
-t00833:a1 a :Weeping.a.02 .
+rust zacht,
+lieve vader.""" .
 
-t00833:c1 a :Village.n.02 ;
-  :place place:Dalen2757857 ;
-  :name "DALEN" .
-
-t00833:c2 a :Town.n.01 ;
-  :place place:Holslootbrug ;
-  :name "HOLSLOOTBRUG" .
-
-t00833:p1 a :Male ;
+t00833:p1
+  a :Male ;
   :dob "1876-10-13"^^xsd:date ;
   :dod "1934-11-03"^^xsd:date ;
   :nam "ALBERT DOBBEN" ;
-  :pob t00833:c1 ;
-  :pod t00833:c2 ;
-  :rol t00833:r1 ,
-       t00833:r2 .
-
-t00833:p2 a :Female ;
-  :nam "FENNA LANTNG" .
-
-t00833:r1 a :Spouse.n.01 ;
-  :att "GELIEFD" ;
-  :tgt t00833:p2 .
-
-t00833:r2 a :Father.n.01 .
-
-t00833:s1 a :Willow.n.01 ;
-  :att t00833:a1 .
-
-t00833:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00833.jpg" ;
-  dc:date "2020-02-15T15:44:06"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7763 ;
-    geo:long 6.8049
+  :pob [
+    a :Village.n.02 ;
+    :name "DALEN" ;
+    :place place:Dalen2757857
   ] ;
-  :nd "+52.7763+006.8049"^^ll: .
+  :pod [
+    a :Town.n.01 ;
+    :name "HOLSLOOTBRUG" ;
+    :place place:Holslootbrug
+  ] ;
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFD" ;
+    :tgt t00833:p2
+  ], [
+    a :Father.n.01
+  ] .
+
+t00833:p2
+  a :Female ;
+  :nam "FENNA LANTNG" .
 

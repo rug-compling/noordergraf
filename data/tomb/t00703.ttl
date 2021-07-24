@@ -1,30 +1,26 @@
 @prefix t00703: <https://noordergraf.rug.nl/tomb/t00703#> .
 
-tomb:t00703 a :Tomb ;
-  :image t00703:im1 ;
-  :site site:dr7811HEemmen ;
+tomb:t00703
+  a :Tomb ;
   :ent t00703:p1 ;
-  :quo "RUST ZACHT LIEVE AAFKE"@nld .
+  :image [
+    dc:date "2019-12-21T13:50:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00703.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7817 ;
+      geo:long 6.9012
+    ] ;
+    :nd "+52.7817+006.9012"^^ll:
+  ] ;
+  :quo "RUST ZACHT LIEVE AAFKE"@nld ;
+  :site site:dr7811HEemmen .
 
-t00703:p1 a :Female ;
+t00703:p1
+  a :Female ;
   :dob "1927-01-27"^^xsd:date ;
   :dod "1931-07-09"^^xsd:date ;
   :nam "AAFKE LUURS" .
-
-t00703:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00703.jpg" ;
-  dc:date "2019-12-21T13:50:31"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7817 ;
-    geo:long 6.9012
-  ] ;
-  :nd "+52.7817+006.9012"^^ll: .
 

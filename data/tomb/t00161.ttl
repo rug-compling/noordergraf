@@ -1,65 +1,60 @@
 @prefix t00161: <https://noordergraf.rug.nl/tomb/t00161#> .
 
-tomb:t00161 a :Tomb ;
-  :image t00161:im1 ;
-  :site site:gr9725ACgroningen ;
-  :ent t00161:p1 ,
-       t00161:p2 ;
+tomb:t00161
+  a :Tomb ;
+  :ent t00161:p1, t00161:p2 ;
+  :image [
+    dc:date "2019-10-04T10:59:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00161.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2058 ;
+      geo:long 6.5704
+    ] ;
+    :nd "+53.2058+006.5704"^^ll:
+  ] ;
   :quo "ZOEKT DE DINGEN DIE BOVEN ZIJN" ;
-  :ref "COLOSSENZEN 3:1" .
+  :ref "COLOSSENZEN 3:1" ;
+  :site site:gr9725ACgroningen .
 
-t00161:c1 a :City.n.01 ;
-  :place place:Groningen2755251 ;
-  :name "GRONINGEN" .
-
-t00161:c2 a :Village.n.02 ;
-  :place place:Sleen2747182 ;
-  :name "SLEEN" .
-
-t00161:c3 a :Village.n.02 ;
-  :place place:Grou2755052 ;
-  :name "GROUW" .
-
-t00161:p1 a :Female ;
+t00161:p1
+  a :Female ;
   :dob "1863-02-15"^^xsd:date ;
   :dod "1930-09-26"^^xsd:date ;
   :nam "JELTJE VEENMAN" ;
-  :pob t00161:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "SLEEN" ;
+    :place place:Sleen2747182
+  ] ;
   :pod t00161:c1 ;
-  :rol t00161:r1 ,
-       t00161:r2 ,
-       t00161:r3 .
+  :rol [
+    a :Mother.n.01
+  ], [
+    a :Wife.n.01 ;
+    :att "LIEVE" ;
+    :tgt t00161:p2
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00161:p2
+  ] .
 
-t00161:p2 a :Male ;
+t00161:p2
+  a :Male ;
   :dob "1861-01-02"^^xsd:date ;
   :dod "1952-03-19"^^xsd:date ;
   :nam "MARTEN DE WIND" ;
-  :pob t00161:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "GROUW" ;
+    :place place:Grou2755052
+  ] ;
   :pod t00161:c1 .
 
-t00161:r1 a :Mother.n.01 .
-
-t00161:r2 a :Wife.n.01 ;
-  :att "LIEVE" ;
-  :tgt t00161:p2 .
-
-t00161:r3 a :Spouse.n.01 ;
-  :tgt t00161:p2 .
-
-t00161:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00161.jpg" ;
-  dc:date "2019-10-04T10:59:37"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2058 ;
-    geo:long 6.5704
-  ] ;
-  :nd "+53.2058+006.5704"^^ll: .
+t00161:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 

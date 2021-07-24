@@ -1,63 +1,64 @@
 @prefix t01122: <https://noordergraf.rug.nl/tomb/t01122#> .
 
-tomb:t01122 a :Tomb ;
+tomb:t01122
+  a :Tomb ;
   :ent t01122:p1 ;
   :quo "Zoo sluimer zacht gij lieve beste moeder 't Graf heeft U ons, te vroeg ontscheurd Gij onze steun en trouwe moeder, wordt altijd diep door ons betreurd."@nld ;
-  :sym t01122:s1 .
+  :sym [
+    a :Composite.n.01 ;
+    :prt t01122:s2, t01122:s3
+  ] .
 
-t01122:c1 a :Village.n.02 ;
-  :place place:Nietap2750380 ;
-  :name "NIETAP" .
-
-t01122:m1 a :Measure.n.02 ;
-  :sub t01122:m2 ,
-       t01122:m3 ,
-       t01122:m4 .
-
-t01122:m2 a :Measure.n.02 ;
-  :mem t01122:u1 ;
-  :qua 62 .
-
-t01122:m3 a :Measure.n.02 ;
-  :mem t01122:u2 ;
-  :qua 3 .
-
-t01122:m4 a :Measure.n.02 ;
-  :mem t01122:u3 ;
-  :qua 10 .
-
-t01122:p1 a :Female ;
-  :age t01122:m1 ;
+t01122:p1
+  a :Female ;
+  :age [
+    a :Measure.n.02 ;
+    :sub [
+      a :Measure.n.02 ;
+      :mem [
+        a :Year.n.01
+      ] ;
+      :qua 62
+    ], [
+      a :Measure.n.02 ;
+      :mem [
+        a :Month.n.01
+      ] ;
+      :qua 3
+    ], [
+      a :Measure.n.02 ;
+      :mem [
+        a :Day.n.01
+      ] ;
+      :qua 10
+    ]
+  ] ;
   :dod "1864-04-10"^^xsd:date ;
   :nam "TRIENTJE HENDRIKS DIJKSTRA" ;
-  :pod t01122:c1 ;
-  :rol t01122:r1 ,
-       t01122:r2 .
+  :pod [
+    a :Village.n.02 ;
+    :name "NIETAP" ;
+    :place place:Nietap2750380
+  ] ;
+  :rol [
+    a :Widow.n.01 ;
+    :tgt t01122:p2
+  ], [
+    a :Mother.n.01
+  ] .
 
-t01122:p2 a :Male ;
+t01122:p2
+  a :Male ;
   :nam "DERK PIETERS WIERENGA" .
 
-t01122:r1 a :Widow.n.01 ;
-  :tgt t01122:p2 .
+t01122:s2
+  a :Branch.n.02 .
 
-t01122:r2 a :Mother.n.01 .
-
-t01122:s1 a :Composite.n.01 ;
-  :prt t01122:s2 ,
-       t01122:s3 .
-
-t01122:s2 a :Branch.n.02 .
-
-t01122:s3 a :Branch.n.02 ;
-  a :Oak.n.02 ;
+t01122:s3
+  a :Branch.n.02, :Oak.n.02 ;
   :prt t01122:s2 .
 
-t01122:s7 a :Olive.n.02 ;
+[]
+  a :Olive.n.02 ;
   :prt t01122:s3 .
-
-t01122:u1 a :Year.n.01 .
-
-t01122:u2 a :Month.n.01 .
-
-t01122:u3 a :Day.n.01 .
 

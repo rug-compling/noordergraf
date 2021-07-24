@@ -1,56 +1,54 @@
 @prefix t00702: <https://noordergraf.rug.nl/tomb/t00702#> .
 
-tomb:t00702 a :Tomb ;
-  :image t00702:im1 ;
-  :site site:dr7811HEemmen ;
-  :ent t00702:p1 ,
-       t00702:p2 ;
+tomb:t00702
+  a :Tomb ;
+  :ent t00702:p1, t00702:p2 ;
+  :image [
+    dc:date "2019-12-21T13:51:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00702.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7814 ;
+      geo:long 6.9012
+    ] ;
+    :nd "+52.7814+006.9012"^^ll:
+  ] ;
   :lan "NLD" ;
   :ref t00702:v1 ;
-  :sym t00702:s1 .
+  :site site:dr7811HEemmen ;
+  :sym [
+    a :Frond.n.01
+  ] .
 
-t00702:b1 a :Revelation.n.04 ;
-  :prt t00702:c1 .
-
-t00702:c1 a :Chapter.n.01 ;
-  :ord 14 ;
-  :prt t00702:v1 .
-
-t00702:p1 a :Male ;
+t00702:p1
+  a :Male ;
   :dob "1893-01-11"^^xsd:date ;
   :dod "1947-08-30"^^xsd:date ;
   :nam "HENDRIK KLASENS" ;
-  :rol t00702:r1 .
+  :rol [
+    a :Spouse.n.01 ;
+    :att "GELIEFDE" ;
+    :tgt t00702:p2
+  ] .
 
-t00702:p2 a :Female ;
+t00702:p2
+  a :Female ;
   :dob "1897-11-22"^^xsd:date ;
   :dod "1977-06-07"^^xsd:date ;
   :nam "JANTJE TIMMERMANS" .
 
-t00702:r1 a :Spouse.n.01 ;
-  :att "GELIEFDE" ;
-  :tgt t00702:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00702:v1
+  ] .
 
-t00702:s1 a :Frond.n.01 .
-
-t00702:v1 a :Verse.n.01 ;
+t00702:v1
+  a :Verse.n.01 ;
   :ord 13 ;
   :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN" .
-
-t00702:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00702.jpg" ;
-  dc:date "2019-12-21T13:51:21"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 52.7814 ;
-    geo:long 6.9012
-  ] ;
-  :nd "+52.7814+006.9012"^^ll: .
 

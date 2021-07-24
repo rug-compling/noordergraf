@@ -1,53 +1,51 @@
 @prefix t00160: <https://noordergraf.rug.nl/tomb/t00160#> .
 
-tomb:t00160 a :Tomb ;
-  :image t00160:im1 ;
+tomb:t00160
+  a :Tomb ;
+  :ent t00160:p1, t00160:p2 ;
+  :image [
+    dc:date "2019-10-04T11:01:34"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t00160.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2070 ;
+      geo:long 6.5715
+    ] ;
+    :nd "+53.2070+006.5715"^^ll:
+  ] ;
   :site site:gr9725ACgroningen ;
-  :ent t00160:p1 ,
-       t00160:p2 ;
-  :sym t00160:s1 .
+  :sym [
+    a :Butterfly.n.01
+  ] .
 
-t00160:c1 a :More.r.01 ;
-  :op1 t00160:m1 ;
-  :op2 t00160:m2 .
-
-t00160:m1 a :Measure.n.02 .
-
-t00160:m2 a :Measure.n.02 ;
-  :mem t00160:u1 ;
-  :qua 36 .
-
-t00160:p1 a :Female ;
+t00160:p1
+  a :Female ;
   :age t00160:m1 ;
   :dod "1869-12-14"^^xsd:date ;
   :nam "HILLIGIEN WIERINGA" ;
-  :rol t00160:r2 .
+  :rol [
+    a :Wife.n.01 ;
+    :att "HARTELIJK GELIEFDE" ;
+    :tgt t00160:p2
+  ] .
 
-t00160:p2 a :Male ;
+t00160:p2
+  a :Male ;
   :nam "J. LIMBORGH" .
 
-t00160:r2 a :Wife.n.01 ;
-  :att "HARTELIJK GELIEFDE" ;
-  :tgt t00160:p2 .
+[]
+  a :More.r.01 ;
+  :op1 t00160:m1 ;
+  :op2 [
+    a :Measure.n.02 ;
+    :mem [
+      a :Year.n.01
+    ] ;
+    :qua 36
+  ] .
 
-t00160:s1 a :Butterfly.n.01 .
-
-t00160:u1 a :Year.n.01 .
-
-t00160:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t00160.jpg" ;
-  dc:date "2019-10-04T11:01:34"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.2070 ;
-    geo:long 6.5715
-  ] ;
-  :nd "+53.2070+006.5715"^^ll: .
+t00160:m1
+  a :Measure.n.02 .
 

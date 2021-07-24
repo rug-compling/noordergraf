@@ -1,73 +1,72 @@
 @prefix t01066: <https://noordergraf.rug.nl/tomb/t01066#> .
 
-tomb:t01066 a :Tomb ;
-  :image t01066:im1 ;
-  :site site:gr9971EBulrum ;
-  :ent t01066:p1 ,
-       t01066:p2 ;
+tomb:t01066
+  a :Tomb ;
+  :ent t01066:p1, t01066:p2 ;
+  :image [
+    dc:date "2020-05-02T16:49:07"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file "t01066.jpg" ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3604 ;
+      geo:long 6.3435
+    ] ;
+    :nd "+53.3604+006.3435"^^ll:
+  ] ;
   :lan "NLD" ;
   :ref t01066:v1 ;
-  :sym t01066:s1 .
+  :site site:gr9971EBulrum ;
+  :sym [
+    a :Branch.n.02
+  ] .
 
-t01066:b1 a :Revelation.n.04 ;
-  :prt t01066:c3 .
-
-t01066:c1 a :Village.n.02 ;
-  :place place:Ulrum2745944 ;
-  :name "ULRUM" .
-
-t01066:c2 a :City.n.01 ;
-  :place place:Veendam2745783 ;
-  :name "VEENDAM" .
-
-t01066:c3 a :Chapter.n.01 ;
-  :ord 20 ;
-  :prt t01066:v1 .
-
-t01066:o1 a :Director.n.01 ;
-  :hco "13940" ;
-  :loc t01066:c1 ;
-  :org t01066:o2 .
-
-t01066:o2 a :School.n.01 ;
-  :nam "GEREFORMEERDE SCHOOL" .
-
-t01066:p1 a :Male ;
+t01066:p1
+  a :Male ;
   :dob "1847-03-12"^^xsd:date ;
   :dod "1927-03-21"^^xsd:date ;
   :nam "W. NIPPERUS" ;
-  :occ t01066:o1 ;
-  :pob t01066:c2 ;
+  :occ [
+    a :Director.n.01 ;
+    :hco "13940" ;
+    :loc t01066:c1 ;
+    :org [
+      a :School.n.01 ;
+      :nam "GEREFORMEERDE SCHOOL"
+    ]
+  ] ;
+  :pob [
+    a :City.n.01 ;
+    :name "VEENDAM" ;
+    :place place:Veendam2745783
+  ] ;
   :pod t01066:c1 ;
-  :rol t01066:r1 .
+  :rol [
+    a :Housemate.n.01 ;
+    :att "BEDROEFDE" ;
+    :tgt t01066:p2
+  ] .
 
-t01066:p2 a :Female ;
+t01066:p2
+  a :Female ;
   :nam "E. JANSEN" .
 
-t01066:r1 a :Housemate.n.01 ;
-  :att "BEDROEFDE" ;
-  :tgt t01066:p2 .
+[]
+  a :Revelation.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 20 ;
+    :prt t01066:v1
+  ] .
 
-t01066:s1 a :Branch.n.02 .
+t01066:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
 
-t01066:v1 a :Verse.n.01 ;
+t01066:v1
+  a :Verse.n.01 ;
   :ord 6 ;
   :txt "ZALIG EN HEILIG IS HIJ, DIE DEEL HEEFT IN DE EERSTE OPSTANDING. OVER DEZE HEEFT DE TWEEDE DOOD GEEN MACHT." .
-
-t01066:im1 a :Photo ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  :file "t01066.jpg" ;
-  dc:date "2020-05-02T16:49:07"^^xsd:dateTime ;
-  :geo [
-    a geo:Point ;
-    geo:lat 53.3604 ;
-    geo:long 6.3435
-  ] ;
-  :nd "+53.3604+006.3435"^^ll: .
 

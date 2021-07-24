@@ -1,31 +1,31 @@
 @prefix t01134: <https://noordergraf.rug.nl/tomb/t01134#> .
 
-tomb:t01134 a :Tomb ;
-  :ent t01134:g1 ,
-       t01134:p1 ,
-       t01134:p2 ;
+tomb:t01134
+  a :Tomb ;
+  :ent t01134:p1, t01134:p2, [
+    a :Group.n.01 ;
+    :mem t01134:p1, t01134:p2 ;
+    :rol t01134:r1
+  ] ;
   :quo "IN JEZUS ONTSLAPEN"@nld ;
   :ref "PSALM 23"@nld .
 
-t01134:g1 a :Group.n.01 ;
-  :mem t01134:p1 ,
-       t01134:p2 ;
-  :rol t01134:r1 .
-
-t01134:g2 a :Group.n.01 ;
-  :rol t01134:r1 .
-
-t01134:p1 a :Person ;
+t01134:p1
+  a :Person ;
   :dob "1875-05-30"^^xsd:date ;
   :dod "1953-01-11"^^xsd:date ;
   :nam "T. NIEUWOLD" .
 
-t01134:p2 a :Person ;
+t01134:p2
+  a :Person ;
   :dob "1897-02-22"^^xsd:date ;
   :dod "1957-08-24"^^xsd:date ;
   :nam "J. ROFFEL" .
 
-t01134:r1 a :Commemorator.n.01 ;
-  a :Parent.n.01 ;
-  :tgt t01134:g2 .
+t01134:r1
+  a :Commemorator.n.01, :Parent.n.01 ;
+  :tgt [
+    a :Group.n.01 ;
+    :rol t01134:r1
+  ] .
 
