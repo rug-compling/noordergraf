@@ -86,7 +86,7 @@ func main() {
 	}
 	data = string(b)
 	b, _ = ioutil.ReadFile("/net/noordergraf/data/prefix.ttl")
-	prefix = string(b)
+	prefix = trimPrefix(string(b), data)
 	fi, err := os.Stat(filename)
 	if err != nil {
 		fmt.Print("Status: 404 Not Found\n\n")
@@ -159,6 +159,12 @@ func convert(output string) string {
 }
 
 func doHTML() {
+	body := html.EscapeString(strings.TrimSpace(reComment.ReplaceAllLiteralString(data, "")))
+
+	if uri == "/ns" {
+		body = doNS(body)
+	}
+
 	title := html.EscapeString(uri[1:])
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 Last-Modified: %s
@@ -179,7 +185,7 @@ Last-Modified: %s
       <h1>%s</h1>
 `, lastModified, title, uri, uri, uri, title)
 
-	fmt.Printf("<pre>\n%s</pre>\n", html.EscapeString(strings.TrimSpace(reComment.ReplaceAllLiteralString(data, ""))))
+	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 
 	fmt.Print(`
     </div>
@@ -187,4 +193,28 @@ Last-Modified: %s
 </html>
 `)
 
+}
+
+func doNS(body string) string {
+	lines := strings.Split(body, "\n")
+	for i, line := range lines {
+		if !strings.HasPrefix(line, ":") {
+			continue
+		}
+		a := strings.SplitN(line, " ", 2)
+		a[0] = fmt.Sprintf("<span id=%q class=\"hash\">%s</span>", a[0][1:], a[0])
+		lines[i] = strings.Join(a, " ")
+	}
+	return strings.Join(lines, "\n")
+}
+
+func trimPrefix(prefix, data string) string {
+	lines := make([]string, 0)
+	for _, line := range strings.SplitAfter(prefix, "\n") {
+		a := strings.Fields(line)
+		if len(a) > 2 && strings.Contains(data, a[1]) {
+			lines = append(lines, line)
+		}
+	}
+	return strings.Join(lines, "")
 }
