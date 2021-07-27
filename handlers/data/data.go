@@ -42,6 +42,7 @@ var (
 	uri          string
 	data         string
 	prefix       string
+	pretab       = make(map[string]string)
 	lastModified string
 	exts         = map[int]string{
 		HTML:   "",
@@ -49,11 +50,15 @@ var (
 		TRIPLE: ".nt",
 		RDF:    ".rdf",
 	}
+	reTokens = regexp.MustCompile(strings.Join([]string{
+		"[ \t\n\r\f]+",
+		"(&(#34|quot);){3}(.|\n)*?(&(#34|quot);){3}[^ \t\n\r\f]*",
+		"&(#34|quot);(.*?)&(#34|quot);[^ \t\n\r\f]*",
+		"&lt;http.*?&gt;",
+		"[A-Za-z0-9.]*:[A-Za-z0-9.]+",
+		".",
+	}, "|"))
 	reComment = regexp.MustCompile("(?m:^[ \t]*#.*\n?)")
-	reFile    = regexp.MustCompile(":file +img:([^ \t\n]+)")
-	rePlace   = regexp.MustCompile(":place +place:([^ \t\n]+)")
-	reSite    = regexp.MustCompile(":site +site:([^ \t\n]+)")
-	reMap     = regexp.MustCompile(":geoMap +&lt;(.*?)&gt;")
 	reND      = regexp.MustCompile(`:nd +&(#34|quot);([-+][.0-9]+)([-+][.0-9]+)&(#34|quot);\^\^ll:`)
 )
 
@@ -167,19 +172,51 @@ func doHTML() {
 	body := html.EscapeString(strings.TrimSpace(reComment.ReplaceAllLiteralString(data, "")))
 
 	if uri == "/ns" {
-		body = doNS(body)
-	}
+		lines := strings.Split(body, "\n")
+		for i, line := range lines {
+			if !strings.HasPrefix(line, ":") {
+				continue
+			}
+			a := strings.SplitN(line, " ", 2)
+			a[0] = fmt.Sprintf("<span id=%q class=\"hash\">%s</span>", a[0][1:], a[0])
+			lines[i] = strings.Join(a, " ")
+		}
+		body = strings.Join(lines, "\n")
+	} else if strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/tomb/") {
+		body = reND.ReplaceAllStringFunc(body, func(s string) string {
+			m := reND.FindStringSubmatch(s)
+			return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
+		})
 
-	if strings.HasPrefix(uri, "/place/") {
-		body = doPlace(body)
-	}
-
-	if strings.HasPrefix(uri, "/site/") {
-		body = doSite(body)
-	}
-
-	if strings.HasPrefix(uri, "/tomb/") {
-		body = doTomb(body)
+		inPrefix := false
+		tokens := reTokens.FindAllString(body, -1)
+		for i, token := range tokens {
+			if token == "@" {
+				inPrefix = true
+				continue
+			}
+			if strings.Contains(token, "\n") {
+				inPrefix = false
+				continue
+			}
+			if strings.HasPrefix(token, "&lt;http") && strings.HasSuffix(token, "&gt;") {
+				if !inPrefix {
+					s := token[4 : len(token)-4]
+					tokens[i] = `&lt;<a href="` + s + `">` + s + `</a>&gt;`
+				}
+				continue
+			}
+			if i > 0 && !strings.HasSuffix(tokens[i-1], "\n") {
+				a := strings.SplitN(token, ":", 2)
+				if len(a) == 2 && a[1] != "" {
+					if s, ok := pretab[a[0]]; ok {
+						tokens[i] = `<a href="` + s + a[1] + `">` + token + `</a>`
+						continue
+					}
+				}
+			}
+		}
+		body = strings.Join(tokens, "")
 	}
 
 	title := html.EscapeString(uri[1:])
@@ -210,48 +247,6 @@ Last-Modified: %s
 </html>
 `)
 
-}
-
-func doNS(body string) string {
-	lines := strings.Split(body, "\n")
-	for i, line := range lines {
-		if !strings.HasPrefix(line, ":") {
-			continue
-		}
-		a := strings.SplitN(line, " ", 2)
-		a[0] = fmt.Sprintf("<span id=%q class=\"hash\">%s</span>", a[0][1:], a[0])
-		lines[i] = strings.Join(a, " ")
-	}
-	return strings.Join(lines, "\n")
-}
-
-func doPlace(body string) string {
-	body = reMap.ReplaceAllString(body, `:geoMap &lt;<a href="$1">$1</a>&gt;`)
-	body = reND.ReplaceAllStringFunc(body, func(s string) string {
-		m := reND.FindStringSubmatch(s)
-		return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
-	})
-	return body
-}
-
-func doSite(body string) string {
-	body = reMap.ReplaceAllString(body, `:geoMap &lt;<a href="$1">$1</a>&gt;`)
-	body = reND.ReplaceAllStringFunc(body, func(s string) string {
-		m := reND.FindStringSubmatch(s)
-		return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
-	})
-	return body
-}
-
-func doTomb(body string) string {
-	body = reFile.ReplaceAllString(body, `:file <a href="https://noordergraf.rug.nl/img/$1">img:$1</a>`)
-	body = rePlace.ReplaceAllString(body, `:place <a href="https://noordergraf.rug.nl/place/$1">place:$1</a>`)
-	body = reSite.ReplaceAllString(body, `:site <a href="https://noordergraf.rug.nl/site/$1">site:$1</a>`)
-	body = reND.ReplaceAllStringFunc(body, func(s string) string {
-		m := reND.FindStringSubmatch(s)
-		return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
-	})
-	return body
 }
 
 func getLL(s string, n int) string {
@@ -300,6 +295,7 @@ func trimPrefix(prefix, data string) string {
 		a := strings.Fields(line)
 		if len(a) > 2 && strings.Contains(data, a[1]) {
 			lines = append(lines, line)
+			pretab[a[1][:len(a[1])-1]] = a[2][1 : len(a[2])-1]
 		}
 	}
 	return strings.Join(lines, "")
