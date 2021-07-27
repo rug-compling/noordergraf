@@ -50,6 +50,11 @@ var (
 		RDF:    ".rdf",
 	}
 	reComment = regexp.MustCompile("(?m:^[ \t]*#.*\n?)")
+	reFile    = regexp.MustCompile(":file +img:([^ \t\n]+)")
+	rePlace   = regexp.MustCompile(":place +place:([^ \t\n]+)")
+	reSite    = regexp.MustCompile(":site +site:([^ \t\n]+)")
+	reMap     = regexp.MustCompile(":geoMap +&lt;(.*?)&gt;")
+	reND      = regexp.MustCompile(`:nd +&(#34|quot);([-+][.0-9]+)([-+][.0-9]+)&(#34|quot);\^\^ll:`)
 )
 
 func main() {
@@ -165,6 +170,18 @@ func doHTML() {
 		body = doNS(body)
 	}
 
+	if strings.HasPrefix(uri, "/place/") {
+		body = doPlace(body)
+	}
+
+	if strings.HasPrefix(uri, "/site/") {
+		body = doSite(body)
+	}
+
+	if strings.HasPrefix(uri, "/tomb/") {
+		body = doTomb(body)
+	}
+
 	title := html.EscapeString(uri[1:])
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 Last-Modified: %s
@@ -206,6 +223,75 @@ func doNS(body string) string {
 		lines[i] = strings.Join(a, " ")
 	}
 	return strings.Join(lines, "\n")
+}
+
+func doPlace(body string) string {
+	body = reMap.ReplaceAllString(body, `:geoMap &lt;<a href="$1">$1</a>&gt;`)
+	body = reND.ReplaceAllStringFunc(body, func(s string) string {
+		m := reND.FindStringSubmatch(s)
+		return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
+	})
+	return body
+}
+
+func doSite(body string) string {
+	body = reMap.ReplaceAllString(body, `:geoMap &lt;<a href="$1">$1</a>&gt;`)
+	body = reND.ReplaceAllStringFunc(body, func(s string) string {
+		m := reND.FindStringSubmatch(s)
+		return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
+	})
+	return body
+}
+
+func doTomb(body string) string {
+	body = reFile.ReplaceAllString(body, `:file <a href="https://noordergraf.rug.nl/img/$1">img:$1</a>`)
+	body = rePlace.ReplaceAllString(body, `:place <a href="https://noordergraf.rug.nl/place/$1">place:$1</a>`)
+	body = reSite.ReplaceAllString(body, `:site <a href="https://noordergraf.rug.nl/site/$1">site:$1</a>`)
+	body = reND.ReplaceAllStringFunc(body, func(s string) string {
+		m := reND.FindStringSubmatch(s)
+		return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
+	})
+	return body
+}
+
+func getLL(s string, n int) string {
+	sign := 1.0
+	if s[0] == '-' {
+		sign = -1.0
+	}
+
+	var digits string
+	i := strings.Index(s, ".")
+	if i > 0 {
+		digits = s[1:i]
+	} else {
+		digits = s[1:]
+	}
+	ln := len(digits)
+
+	v, _ := strconv.Atoi(digits[:n])
+	value := float64(v)
+	if ln >= n+2 {
+		v, _ := strconv.Atoi(digits[n : n+2])
+		value += float64(v) / 60.0
+	}
+	if ln >= n+4 {
+		v, _ := strconv.Atoi(digits[n+2 : n+4])
+		value += float64(v) / 3600.0
+	}
+
+	if i > 0 {
+		v, _ := strconv.ParseFloat(s[i:], 64)
+		if ln == n {
+			value += v
+		} else if ln == n+2 {
+			value += v / 60.0
+		} else if ln == n+4 {
+			value += v / 3600.0
+		}
+	}
+
+	return fmt.Sprintf("%.4f", value*sign)
 }
 
 func trimPrefix(prefix, data string) string {
