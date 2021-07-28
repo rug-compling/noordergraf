@@ -171,18 +171,7 @@ func convert(output string) string {
 func doHTML() {
 	body := html.EscapeString(strings.TrimSpace(reComment.ReplaceAllLiteralString(data, "")))
 
-	if uri == "/ns" {
-		lines := strings.Split(body, "\n")
-		for i, line := range lines {
-			if !strings.HasPrefix(line, ":") {
-				continue
-			}
-			a := strings.SplitN(line, " ", 2)
-			a[0] = fmt.Sprintf("<span id=%q class=\"hash\">%s</span>", a[0][1:], a[0])
-			lines[i] = strings.Join(a, " ")
-		}
-		body = strings.Join(lines, "\n")
-	} else if strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/tomb/") {
+	if uri == "/ns" || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/tomb/") {
 		body = reND.ReplaceAllStringFunc(body, func(s string) string {
 			m := reND.FindStringSubmatch(s)
 			return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
@@ -219,7 +208,23 @@ func doHTML() {
 		body = strings.Join(tokens, "")
 	}
 
+	if uri == "/ns" {
+		lines := strings.Split(body, "\n")
+		for i, line := range lines {
+			if !strings.HasPrefix(line, ":") {
+				continue
+			}
+			a := strings.SplitN(line, " ", 2)
+			a[0] = fmt.Sprintf("<span id=%q class=\"hash\">%s</span>", a[0][1:], a[0])
+			lines[i] = strings.Join(a, " ")
+		}
+		body = strings.Join(lines, "\n")
+	}
+
 	title := html.EscapeString(uri[1:])
+	if title == "ns" {
+		title = "ns#"
+	}
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 Last-Modified: %s
 
@@ -229,7 +234,7 @@ Last-Modified: %s
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" type="image/ico">
-    <link rel="stylesheet" type="text/css" href="/md.css">
+    <link rel="stylesheet" type="text/css" href="/data.css">
     <link rel="alternate" href="https://noordergraf.rug.nl%s.ttl" type="text/turtle"/>
     <link rel="alternate" href="https://noordergraf.rug.nl%s.nt"  type="application/n-triples"/>
     <link rel="alternate" href="https://noordergraf.rug.nl%s.rdf" type="application/rdf+xml"/>
@@ -295,7 +300,10 @@ func trimPrefix(prefix, data string) string {
 		a := strings.Fields(line)
 		if len(a) > 2 && strings.Contains(data, a[1]) {
 			lines = append(lines, line)
-			pretab[a[1][:len(a[1])-1]] = a[2][1 : len(a[2])-1]
+			key := a[1][:len(a[1])-1]
+			if key != "rdf" && key != "rdfs" && key != "xsd" {
+				pretab[key] = a[2][1 : len(a[2])-1]
+			}
 		}
 	}
 	return strings.Join(lines, "")
