@@ -34,3 +34,8 @@ do
     cat $i
     echo "}"
 done
+
+echo "GRAPH <meta> {"
+echo "  <> dc:modified \"`date -u -Iseconds`\"^^xsd:dateTime ."
+echo "}"
+

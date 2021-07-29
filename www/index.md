@@ -10,3 +10,5 @@ Hier komt Noordergraf
 <input type="reset" value="wissen">
 <input type="submit" value="zoeken">
 </form>
+
+Voor experts: [zoek met sparql](https://noordergraf.rug.nl:10036/#/repositories/noordergraf)
