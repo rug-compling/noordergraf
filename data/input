@@ -1,0 +1,13 @@
+#!/bin/bash
+
+agtool load \
+       --overwrite \
+       --bulk \
+       --duplicates delete \
+       --fti all \
+       --automate-nd-datatype-mappings \
+       --input trig \
+       --optimize \
+       --base-uri https://noordergraf.rug.nl/ \
+       noordergraf \
+       -

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+cd `dirname $0`
+
+cat prefix.ttl
+
+echo '<ns> {'
+cat ns.ttl
+echo '}'
+
+cd tomb
+fgrep -h '@prefix' *.ttl
+for i in *.ttl
+do
+    echo "<tomb/`basename $i .ttl`> {"
+    fgrep -h -v '@prefix' $i
+    echo "}"
+done
+
+cd ../site
+for i in *.ttl
+do
+    echo "<site/`basename $i .ttl`> {"
+    cat $i
+    echo "}"
+done
+
+cd ../place
+for i in *.ttl
+do
+    echo "<place/`basename $i .ttl`> {"
+    cat $i
+    echo "}"
+done
