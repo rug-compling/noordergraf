@@ -1,12 +1,3 @@
-/*
-  primaryColor        #90a4ae
-  primaryLightColor   #c1d5e0
-  primaryDarkColor    #62757f
-  secondaryColor      #e81e62
-  secondaryLightColor #ff608f
-  secondaryDarkColor  #af0039
-*/
-
 
 * {
     box-sizing: border-box;
@@ -14,37 +5,34 @@
     -moz-box-sizing: border-box;
     line-height: 1.4;
 }
+
 body {
     border: 0px;
     margin: 0px;
     padding: 0px;
     color: black;
-    background-color: #c1d5e0;
-    background-image: url("md.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: white;
+}
+input.button {
+    background-color: white;
+    font-style: oblique;
+    cursor: pointer;
 }
 #container {
     width: 1200px;
-    margin: 2em auto;
-    padding: 1em;
-    border: 1px solid black;
+    margin: 0px auto;
+    padding: 2em;
     background-color: white;
-    -webkit-box-shadow: 10px 16px 18px -6px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 10px 16px 18px -6px rgba(0, 0, 0, 0.5);
-    box-shadow: 10px 16px 18px -6px rgba(0, 0, 0, 0.5);
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #62757f;
     letter-spacing: .1em;
     margin-top: 2em;
 }
 h1 {
     font-size: xx-large;
     font-weight: 200;
-    border-bottom: 2px solid #62757f;
+    border-bottom: 2px dashed #c0c0c0;
+    margin: 2em 0px 1.4em 0px;
 }
 h2 {
     font-size: x-large;
@@ -66,41 +54,6 @@ h6 {
     font-size: x-small;
     font-weight: 700;
 }
-em, blockquote {
-    color: #62757f;
-}
-code {
-    background-color: #eceff1; /* #c1d5e0; */
-}
-pre {
-    padding: 1em;
-    margin: 1em 0px;
-    background-color: #eceff1 !important;  /* #e2f1f8 */
-    border: 1px solid #90a4ae !important;
-}
-.mytable table {
-    padding: .5em;
-    margin: 1em auto;
-    border-collapse: collapse;
-    border-spacing: 2em;
-}
-.mytable th {
-    text-align: left;
-}
-.mytable th,
-.mytable td {
-    border: 1px solid grey;
-    padding: .5em;
-    vertical-align: top;
-}
-
-img {
-    display: block;
-    margin: 1em auto;
-    max-width: 90%;
-    padding: 3px;
-    border: 1px solid grey;
-}
 li {
     margin-bottom: .3em;
 }
@@ -120,50 +73,16 @@ ol>li>ol>li>ol {
     list-style-type: decimal;
 }
 
-ul.empty {
-    list-style-type: none;
-    padding-left: 0.5em;
-}
-ul.empty > li {
-  padding: 0 0 0 2em;
-  background:  0 0.1em no-repeat;
-  background-size: 1.1em 1.1em;
-}
-ul.empty > li.vak   { background-image: url(/ico/todo.svg); }
-ul.empty > li.half  { background-image: url(/ico/half.svg); }
-ul.empty > li.V     { background-image: url(/ico/done.svg); }
-ul.empty > li.v     { background-image: url(/ico/donegrey.svg); color: grey; }
-ul.empty > li.X     { background-image: url(/ico/fail.svg); }
-ul.empty > li.P     { background-image: url(/ico/pop.svg); }
-ul.empty > li.pijl  { background-image: url(/ico/pijl.svg); }
-ul.empty > li.ast   { background-image: url(/ico/ast.svg); }
-ul.empty > li.ster  { background-image: url(/ico/ster.svg); }
-ul.empty > li.boek  { background-image: url(/ico/boek.svg); }
-ul.empty > li.vraag { background-image: url(/ico/vraag.svg); }
-ul.empty > li.imp   { background-image: url(/ico/imp.svg); }
-
-
-dt {
-    margin: .7em 0px .3em 0px;
-    letter-spacing: .1em;
-}
-dd {
-    margin-bottom: .3em;
-}
-pre, .overflow {
-    overflow-x: auto;
-}
-del {
-    color: #90a4ae;
-}
 hr {
-    border-top: 1px solid #c1d5e0;
+    border-top: 2px dashed #c0c0c0;
 }
 a {
+    color: black;
+    font-style: oblique;
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline solid black;
 }
 @media screen and (max-width: 1220px) {
     body {
@@ -178,100 +97,6 @@ a:hover {
         -moz-box-shadow: node;
         box-shadow: none;
     }
-}
-
-/*
- * trefwoorden
- */
-
-a.tag {
-    font-size: small;
-    text-decoration: none;
-    color: white;
-    background-color: #af0039;
-    border: 1px solid grey;
-    padding: .2em .5em;
-    border-radius: 10px;
-}
-
-/*
-.tag1 { font-size: xx-small; }
-.tag2 { font-size: x-small; }
-*/
-.tag1 { font-size: small; }
-.tag2 { font-size: medium; }
-.tag3, .tag4 { font-size: large;    font-weight: 300; }
-.tag5, .tag6 { font-size: x-large;  font-weight: 200; }
-.tag7 { font-size: xx-large; font-weight: 100; }
-
-div.tag {
-    margin-top: 2em;
-    padding-top: 1em;
-    border-top: 1px solid #c1d5e0;
-}
-div.tag a {
-    text-decoration: none;
-    font-size: small;
-    white-space: nowrap;
-    background-color: #e81e62;
-    color: white;
-    padding: .3em .6em;
-    border-radius: 12px;
-    border: 1px solid #af0039;
-}
-div.tag a:hover {
-    background-color: #ff608f;
-}
-
-div.center,
-div.tagcloud {
-    text-align: center;
-}
-div.tagcloud a,
-a.home {
-    text-decoration: none;
-}
-div.tagcloud a:hover {
-    text-decoration: underline;
-}
-
-
-/*
- * home
- */
-
-a.home {
-    float: right;
-    font-size: xx-large;
-    font-weight: 700;
-}
-
-/*
- * zoeken
- */
-
-.zoeken {
-    max-width: 24em;
-    float: right;
-    padding: 0px 0px .6em 2em;
-}
-
-.zoeken a {
-    padding: .1em 1em;
-    text-decoration: none;
-}
-
-.zoeken a,
-.zoeken input[type="submit"] {
-    cursor: pointer !important;
-    background-color:  #e81e62 !important;
-    color: white !important;
-    border: 1px solid #af0039 !important;
-}
-
-.zoeken a:hover,
-.zoeken input[type="submit"]:hover {
-    background-color: #ff608f !important;
 }
 
 .hash {
