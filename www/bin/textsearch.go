@@ -14,7 +14,17 @@ import (
 )
 
 type Sparql struct {
-	URIs []string `xml:"results>result>binding>uri"`
+	Results []ResultT `xml:"results>result"`
+}
+
+type ResultT struct {
+	Bindings []BindingT `xml:"binding"`
+}
+
+type BindingT struct {
+	Name    string `xml:"name,attr"`
+	URI     string `xml:"uri"`
+	Literal string `xml:"literal"`
 }
 
 func main() {
@@ -35,17 +45,21 @@ Missing query
 	}
 
 	query := fmt.Sprintf(`
-SELECT DISTINCT ?graph {
+SELECT DISTINCT ?graph ?o {
   GRAPH ?graph {
-    ?s fti:match %q .
+    (?s ?o) fti:match %q .
   }
 }
-ORDER BY ?graph
+ORDER BY ?graph ?o
 `, q)
 
 	request := "http://localhost:10035/repositories/noordergraf?limit=1000&query=" + url.QueryEscape(query)
 	resp, err := http.Get(request)
 	if x(err, http.StatusInternalServerError) {
+		return
+	}
+	if resp.StatusCode > 299 {
+		fmt.Printf("Status: %d\n\n%s\n", resp.StatusCode, resp.Status)
 		return
 	}
 
@@ -70,20 +84,28 @@ ORDER BY ?graph
     <link rel="icon" href="/favicon.ico" type="image/ico">
     <link rel="stylesheet" type="text/css" href="/md.css">
   </head>
-  <body class="">
+  <body class="textsearch">
     <div id="container">
 <h1>%s</h1>
-Gevonden: %d
-<ol>
-`, html.EscapeString(q), len(sparql.URIs))
+gevonden: %d
+<table>
+`, html.EscapeString(q), len(sparql.Results))
 
-	for _, uri := range sparql.URIs {
+	for _, result := range sparql.Results {
+		var uri, obj string
+		for _, binding := range result.Bindings {
+			if binding.Name == "graph" {
+				uri = binding.URI
+			} else if binding.Name == "o" {
+				obj = binding.Literal
+			}
+		}
 		uri = strings.Replace(uri, "https://noordergraf.rug.nl/", "", 1)
-		fmt.Printf("<li><a href=\"/%s\">%s</a>\n", uri, uri)
+		fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td>%s</td></tr>\n", uri, uri, strings.Replace(html.EscapeString(obj), "\n", "<br>", -1))
 	}
 
-	fmt.Print(`</ol>
-</div>
+	fmt.Print(`</dl>
+</table>
 </body>
 </html>
 `)
