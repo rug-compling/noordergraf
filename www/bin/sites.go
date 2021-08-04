@@ -27,6 +27,8 @@ type BindingT struct {
 func main() {
 
 	query := `
+PREFIX :    <https://noordergraf.rug.nl/ns#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT ?s ?n ?lat ?lon {
   ?s a :Site .
   ?s :sitename ?n .

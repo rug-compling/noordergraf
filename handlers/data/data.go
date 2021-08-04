@@ -248,6 +248,14 @@ Last-Modified: %s
 
 	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 
+	if strings.HasPrefix(uri, "/site/") {
+		fmt.Printf(`
+<div class="footer">
+<a href="/bin/site?q=%s">Bekijk graven op deze site</a>
+</div>
+`, uri[6:])
+	}
+
 	fmt.Print(`
     </div>
   </body>

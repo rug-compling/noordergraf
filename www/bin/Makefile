@@ -2,4 +2,4 @@
 % : %.go
 	go build $<
 
-all: markdown sites textsearch
+all: markdown site sites textsearch
