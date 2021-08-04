@@ -5,7 +5,7 @@ title: Noordergraf
 
 Hier komt iets moois
 
-[voorbeeld](/tomb/t00000)
+[Voorbeeld](/tomb/t00000)
 
 <form action="/bin/textsearch">
 <input type="text" name="q">
@@ -14,3 +14,5 @@ Hier komt iets moois
 </form>
 
 Voor experts: [zoek met sparql](https://anonymous@noordergraf.rug.nl:10036/#/repositories/noordergraf)
+
+[Kaart met begraafplaatsen](mapsites.html)

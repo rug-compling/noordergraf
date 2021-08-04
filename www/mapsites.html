@@ -1,0 +1,153 @@
+<html lang="nl">
+
+<head>
+  <title>Noordergraf -- map of sites</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico" type="image/ico">
+  <link rel="stylesheet" href="/leaflet/leaflet.css">
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    body,
+    div {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+    }
+  </style>
+  <script type="text/javascript" src="/jquery.js"></script>
+  <script src="/leaflet/leaflet.js"></script>
+  <script>
+    var q0;
+    var map1;
+    var map2;
+    var map3;
+    var map4;
+    var data;
+
+    function setSize() {
+      var h = $(window).height();
+      var w = $(window).width();
+      if (w < h) {
+        // hoog
+        //$('body').removeClass('wide').addClass('high');
+        //h = h - $('#controls').innerHeight();
+      } else {
+        // breed
+        //$('body').removeClass('high').addClass('wide');
+        //w = w - $('#controls').innerWidth();
+      }
+      $('#map').height(h + "px").width(w + "px").clearQueue();
+    }
+    $(window).resize(setSize);
+
+    function goto(url) {
+      window.open(url);
+    }
+
+    function makeMap() {
+      var x1 = 180;
+      var x2 = -180;
+      var y1 = 90;
+      var y2 = -90
+      for (var i = 0; i < data.length; i++) {
+        var s = data[i][0];
+        var n = data[i][1];
+        var x = data[i][3];
+        var y = data[i][2];
+        if (x < x1) { x1 = x; }
+        if (x > x2) { x2 = x; }
+        if (y < y1) { y1 = y; }
+        if (y > y2) { y2 = y; }
+        var m = L.marker([y, x], { riseOnHover: true });
+        m.bindTooltip(n);
+        if (L.Browser.mobile) {
+          (function (v) {
+            m.on({ dblclick: function () { goto(v) } });
+          }(s));
+        } else {
+          (function (v) {
+            m.on({ click: function () { goto(v) } });
+          }(s));
+        }
+        m.addTo(q0);
+      }
+      q0.flyToBounds([[y1, x1], [y2, x2]], { paddingTopLeft: [40, 80], paddingBottomRight: [40, 40] });
+    }
+
+    $(document).ready(function () {
+      setSize();
+      map1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 14,
+        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+      });
+
+      map2 = L.tileLayer('https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=760dd0bf341f443e82749efb9c3c2ae6', {
+        maxZoom: 14,
+        attribution: 'Maps &copy; <a href="https://www.thunderforest.com/">Thundeforest</a>, Data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+      });
+
+      map3 = L.tileLayer(
+        'https://{s}tiles.wmflabs.org/osm-no-labels/{z}/{x}/{y}.png', {
+        minZoom: 2,
+        maxZoom: 14,
+        subdomains: ['' /* , 'a.', 'b.', 'c.'*/]
+      });
+
+      map4 = L.tileLayer(
+        'https://{s}.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        minZoom: 2,
+        maxZoom: 14,
+        subdomains: ['server', 'services'],
+        attribution: 'Powered by <a href="http://www.esri.com/">Esri</a>'
+      });
+
+      q0 = L.map('map', {
+        center: [53.2192, 6.5667], // Groningen
+        zoom: 8,
+        minZoom: 2,
+        maxZoom: 14,
+        zoomSnap: 0.25,
+        zoomDelta: 0.25,
+        doubleClickZoom: false,
+        layers: [map1],
+        attributionControl: true
+      });
+
+      var baseMaps = {
+        "Standaard": map1,
+        "Fietskaart": map2
+      };
+      L.control.layers(baseMaps).addTo(q0);
+
+      L.control.scale({ imperial: false }).addTo(q0);
+
+
+      $.ajax({
+        url: '/bin/sites',
+        dataType: 'json'
+      }).done(function (resp) {
+        data = resp;
+        makeMap();
+      }).fail(function (resp) {
+        if (resp.status == 200) {
+          alert('(invalid response) ' + resp.responseText);
+        } else {
+          alert(resp.status + ' ' + resp.statusText);
+        }
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id="map">hier zou een kaart moeten staan</div>
+</body>
+
+</html>
