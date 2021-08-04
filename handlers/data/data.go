@@ -4,14 +4,14 @@ package main
 
 TODO:
 
-Voor alle directory's, bijvoorbeeld /pred :
+Voor alle directory's, bijvoorbeeld /tomb :
 
-    /pred/
-    /pred/index      -> html-bestand met links naar alle bestanden
+    /tomb/
+    /tomb/index      -> html-bestand met links naar alle bestanden
 
-    /pred/index.ttl
-    /pred/index.rdf
-    /pred/index.nt   -> alle bestanden samengevoegd
+    /tomb/index.ttl
+    /tomb/index.rdf
+    /tomb/index.nt   -> alle bestanden samengevoegd
 
 */
 

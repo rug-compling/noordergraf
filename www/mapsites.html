@@ -77,7 +77,7 @@
         }
         m.addTo(q0);
       }
-      q0.flyToBounds([[y1, x1], [y2, x2]], { paddingTopLeft: [40, 80], paddingBottomRight: [40, 40] });
+      q0.flyToBounds([[y1, x1], [y2, x2]], { paddingTopLeft: [40, 80], paddingBottomRight: [40, 40], animate: true, duration: 1.0 });
     }
 
     $(document).ready(function () {
@@ -109,7 +109,7 @@
 
       q0 = L.map('map', {
         center: [53.2192, 6.5667], // Groningen
-        zoom: 8,
+        zoom: 10,
         minZoom: 2,
         maxZoom: 14,
         zoomSnap: 0.25,
@@ -133,7 +133,7 @@
         dataType: 'json'
       }).done(function (resp) {
         data = resp;
-        makeMap();
+        setTimeout(makeMap, 1500);
       }).fail(function (resp) {
         if (resp.status == 200) {
           alert('(invalid response) ' + resp.responseText);
