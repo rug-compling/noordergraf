@@ -222,8 +222,10 @@ func doHTML() {
 	}
 
 	title := html.EscapeString(uri[1:])
+	class := ""
 	if title == "ns" {
 		title = "ns#"
+		class = "ns"
 	}
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 Last-Modified: %s
@@ -239,10 +241,10 @@ Last-Modified: %s
     <link rel="alternate" href="https://noordergraf.rug.nl%s.nt"  type="application/n-triples"/>
     <link rel="alternate" href="https://noordergraf.rug.nl%s.rdf" type="application/rdf+xml"/>
   </head>
-  <body class="">
+  <body class="%s">
     <div id="container">
       <h1>%s</h1>
-`, lastModified, title, uri, uri, uri, title)
+`, lastModified, title, uri, uri, uri, class, title)
 
 	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 
