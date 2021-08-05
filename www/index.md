@@ -16,3 +16,7 @@ Hier komt iets moois
 Voor experts: [zoek met sparql](https://anonymous@noordergraf.rug.nl:10036/#/repositories/noordergraf)
 
 [Kaart met begraafplaatsen](mapsites.html)
+
+[Kaart met geboorteplaatsen](mappob.html)
+
+[Kaart met plaatsen van overlijden](mappod.html)

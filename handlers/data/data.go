@@ -254,6 +254,13 @@ Last-Modified: %s
 <a href="/bin/site?q=%s">Bekijk graven op deze site</a>
 </div>
 `, uri[6:])
+	} else if strings.HasPrefix(uri, "/place/") {
+		fmt.Printf(`
+<div class="footer">
+<a href="/bin/place?t=pob&q=%s">Bekijk geboorteplaatsen</a> |
+<a href="/bin/place?t=pod&q=%s">plaatsen van overlijden</a>
+</div>
+`, uri[7:], uri[7:])
 	}
 
 	fmt.Print(`

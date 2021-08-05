@@ -2,4 +2,4 @@
 % : %.go
 	go build $<
 
-all: markdown site sites textsearch
+all: markdown place pobs pods site sites textsearch
