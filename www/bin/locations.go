@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"net/http/cgi"
 	"net/url"
 	"runtime"
 )
@@ -26,17 +27,55 @@ type BindingT struct {
 
 func main() {
 
-	query := `
+	req, err := cgi.Request()
+	if x(err, http.StatusInternalServerError) {
+		return
+	}
+	if x(req.ParseForm(), http.StatusInternalServerError) {
+		return
+	}
+	what := req.FormValue("q")
+	var query string
+	switch what {
+	default:
+		fmt.Print("Status: 400\n\nMissing or invalid query\n")
+		return
+	case "pob":
+		query = `
 PREFIX :    <https://noordergraf.rug.nl/ns#>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-SELECT DISTINCT ?s ?n ?lat ?lon {
-  ?s a :Place .
-  ?p :pob / :place ?s .
-  ?s :placename ?n .
-  ?s :geo / geo:lat ?lat .
-  ?s :geo / geo:long ?lon .
+SELECT DISTINCT ?url ?name ?lat ?lon {
+  ?url a :Place .
+  ?p :pob / :place ?url .
+  ?url :placename ?name .
+  ?url :geo / geo:lat ?lat .
+  ?url :geo / geo:long ?lon .
 }
 `
+	case "pod":
+		query = `
+PREFIX :    <https://noordergraf.rug.nl/ns#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+SELECT DISTINCT ?url ?name ?lat ?lon {
+  ?url a :Place .
+  ?p :pod / :place ?url .
+  ?url :placename ?name .
+  ?url :geo / geo:lat ?lat .
+  ?url :geo / geo:long ?lon .
+}
+`
+	case "site":
+		query = `
+PREFIX :    <https://noordergraf.rug.nl/ns#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+SELECT ?url ?name ?lat ?lon {
+  ?url a :Site .
+  ?url :sitename ?name .
+  ?url :geo / geo:lat ?lat .
+  ?url :geo / geo:long ?lon .
+}
+`
+	}
 
 	request := "http://localhost:10035/repositories/noordergraf?query=" + url.QueryEscape(query)
 	resp, err := http.Get(request)
@@ -66,20 +105,20 @@ SELECT DISTINCT ?s ?n ?lat ?lon {
 
 	p := ""
 	for _, result := range sparql.Results {
-		var s, n, lat, lon string
+		var url, name, lat, lon string
 		for _, binding := range result.Bindings {
 			switch binding.Name {
-			case "s":
-				s = binding.URI
-			case "n":
-				n = binding.Literal
+			case "url":
+				url = binding.URI
+			case "name":
+				name = binding.Literal
 			case "lat":
 				lat = binding.Literal
 			case "lon":
 				lon = binding.Literal
 			}
 		}
-		fmt.Printf("%s[%q,%q,%s,%s]", p, s, n, lat, lon)
+		fmt.Printf("%s[%q,%q,%s,%s]", p, url, name, lat, lon)
 		p = ",\n"
 	}
 	fmt.Print("\n]\n")
