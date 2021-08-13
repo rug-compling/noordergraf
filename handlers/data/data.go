@@ -221,6 +221,10 @@ func doHTML() {
 		body = strings.Join(lines, "\n")
 	}
 
+	body = strings.Replace(body, `href="http://purl.org`, `href="https://purl.org`, -1)
+	body = strings.Replace(body, `href="http://www.geonames.org`, `href="https://www.geonames.org`, -1)
+	body = strings.Replace(body, `href="http://www.w3.org`, `href="https://www.w3.org`, -1)
+
 	title := html.EscapeString(uri[1:])
 	class := ""
 	if title == "ns" {
@@ -251,13 +255,13 @@ Last-Modified: %s
 	if strings.HasPrefix(uri, "/site/") {
 		fmt.Printf(`
 <div class="footer">
-<a href="/bin/site?q=%s">Bekijk graven op deze site</a>
+Bekijk <a href="/bin/site?q=%s">graven op deze site</a>
 </div>
 `, uri[6:])
 	} else if strings.HasPrefix(uri, "/place/") {
 		fmt.Printf(`
 <div class="footer">
-<a href="/bin/place?t=pob&q=%s">Bekijk geboorteplaatsen</a> |
+Bekijk <a href="/bin/place?t=pob&q=%s">geboorteplaatsen</a> |
 <a href="/bin/place?t=pod&q=%s">plaatsen van overlijden</a>
 </div>
 `, uri[7:], uri[7:])
