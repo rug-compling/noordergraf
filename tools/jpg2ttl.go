@@ -77,7 +77,7 @@ func main() {
 		name = name[:len(name)-5]
 	}
 	fmt.Printf(`  :image [
-    a Photo ;
+    a :Photo ;
     :file "%s" ;
     # dc:creator "J. Doe" ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
