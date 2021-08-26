@@ -78,7 +78,7 @@ func main() {
 	}
 	fmt.Printf(`  :image [
     a :Photo ;
-    :file "%s" ;
+    :file img:%s ;
     # dc:creator "J. Doe" ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
