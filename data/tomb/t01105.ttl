@@ -2,6 +2,24 @@
 
 tomb:t01105
   a :Tomb ;
+  :image [
+    a Photo ;
+    :file "t01105.jpg" ;
+    # dc:creator "J. Doe" ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dc:date "2021-03-06T08:53:38"^^xsd:dateTime ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2630 ;
+      geo:long 6.3142
+    ] ;
+    :nd "+53.2630+006.3142"^^ll:
+  ] ;
   :ent t01105:p1, t01105:g1 ;
   :lan "NLD" ;
   :ref t01105:c3 ;

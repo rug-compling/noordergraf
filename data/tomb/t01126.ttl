@@ -2,6 +2,24 @@
 
 tomb:t01126
   a :Tomb ;
+  :image [
+    a Photo ;
+    :file "t01126.jpg" ;
+    # dc:creator "J. Doe" ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dc:date "2021-03-31T17:47:54"^^xsd:dateTime ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2398 ;
+      geo:long 6.4100
+    ] ;
+    :nd "+53.2398+006.4100"^^ll:
+  ] ;
   :ent t01126:p1 ;
   :lan "NLD" ;
   :ref t01126:v1 .

@@ -76,32 +76,33 @@ func main() {
 	} else if strings.HasSuffix(lower, ".jpeg") {
 		name = name[:len(name)-5]
 	}
-	fmt.Printf(`%s:im1 a Photo ;
-  :file "%s" ;
-  # dc:creator "J. Doe" ;
-  dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  # dc:license <https://creativecommons.org/licenses/by-sa/4.0/>`, name, filepath.Base(os.Args[1]))
+	fmt.Printf(`  :image [
+    a Photo ;
+    :file "%s" ;
+    # dc:creator "J. Doe" ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/>`, filepath.Base(os.Args[1]))
 	if datetime != "" {
-		fmt.Printf(" ;\n  dc:date \"%s\"^^xsd:dateTime", datetime)
+		fmt.Printf(" ;\n    dc:date \"%s\"^^xsd:dateTime", datetime)
 	}
 	if lat != 0 && lon != 0 {
 		fmt.Printf(` ;
-  :geo [
-    a geo:Point ;
-    geo:lat %.4f ;
-    geo:long %.4f
-  ] ;
-  :nd "%+08.4f%+09.4f"^^ll:`,
+    :geo [
+      a geo:Point ;
+      geo:lat %.4f ;
+      geo:long %.4f
+    ] ;
+    :nd "%+08.4f%+09.4f"^^ll:`,
 			lat*latv,
 			lon*lonv,
 			lat*latv,
 			lon*lonv)
 	}
 
-	fmt.Print(" .\n\n")
+	fmt.Print("\n  ] ;\n")
 
 }

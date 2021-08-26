@@ -1,4 +1,14 @@
 #!/bin/bash
+
+case `pwd` in
+  /net/noordergraf|/net/noordergraf/*)
+    ;;
+  *)
+    echo Run dit script in /net/noordergraf of een subdirectory daarvan
+    exit
+    ;;
+esac
+
 set -e
 chgrp -chR noordergraf .
 find . -type d | xargs chmod -c g+s

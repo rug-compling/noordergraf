@@ -2,6 +2,24 @@
 
 tomb:t01119
   a :Tomb ;
+  :image [
+    a Photo ;
+    :file "t01119.jpg" ;
+    # dc:creator "J. Doe" ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dc:date "2020-04-19T10:48:25"^^xsd:dateTime ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2390 ;
+      geo:long 6.4098
+    ] ;
+    :nd "+53.2390+006.4098"^^ll:
+  ] ;
   :ent t01119:p1 ;
   :quo "O, du lieber Augustin Alles ist hin!"@deu ;
   :sym [
