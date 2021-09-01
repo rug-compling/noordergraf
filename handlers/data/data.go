@@ -30,6 +30,10 @@ import (
 )
 
 const (
+	NOINDEX = 60 // Minimale ouderdom voordat een graf zonder NOINDEX/NOFOLLOW wordt weergegeven in HTML
+)
+
+const (
 	HTML = iota
 	TURTLE
 	TRIPLE
@@ -60,6 +64,7 @@ var (
 	}, "|"))
 	reComment = regexp.MustCompile("(?m:^[ \t]*#.*\n?)")
 	reND      = regexp.MustCompile(`:nd +&(#34|quot);([-+][.0-9]+)([-+][.0-9]+)&(#34|quot);\^\^ll:`)
+	reYear    = regexp.MustCompile(`"([0-9]{4})(-[0-9]{2}-[0-9]{2}"\^\^xsd:date|-[0-9]{2}"\^\^xsd:gYearMonth|"\^\^xsd:gYear)`)
 )
 
 func main() {
@@ -171,7 +176,22 @@ func convert(output string) string {
 func doHTML() {
 	body := html.EscapeString(strings.TrimSpace(reComment.ReplaceAllLiteralString(data, "")))
 
+	noindex := ""
+
 	if uri == "/ns" || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/tomb/") {
+
+		if strings.HasPrefix(uri, "/tomb/") {
+			year := time.Now().Year()
+			mm := reYear.FindAllStringSubmatch(data, -1)
+			for _, m := range mm {
+				y, _ := strconv.Atoi(m[1])
+				if year-y < NOINDEX {
+					noindex = `<meta name="robots" content="noindex,nofollow">`
+					break
+				}
+			}
+		}
+
 		body = reND.ReplaceAllStringFunc(body, func(s string) string {
 			m := reND.FindStringSubmatch(s)
 			return fmt.Sprintf(`:nd &%s;<a href="geo:%s,%s">%s%s</a>&%s;^^ll:`, m[1], getLL(m[2], 2), getLL(m[3], 3), m[2], m[3], m[4])
@@ -239,6 +259,7 @@ Last-Modified: %s
     <title>Noordergraf -- %s</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    %s
     <link rel="icon" href="/favicon.ico" type="image/ico">
     <link rel="stylesheet" type="text/css" href="/data.css">
     <link rel="alternate" href="https://noordergraf.rug.nl%s.ttl" type="text/turtle"/>
@@ -248,7 +269,7 @@ Last-Modified: %s
   <body class="%s">
     <div id="container">
       <h1>%s</h1>
-`, lastModified, title, uri, uri, uri, class, title)
+`, lastModified, title, noindex, uri, uri, uri, class, title)
 
 	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 
