@@ -59,7 +59,7 @@ var (
 		"(&(#34|quot);){3}(.|\n)*?(&(#34|quot);){3}[^ \t\n\r\f]*",
 		"&(#34|quot);(.*?)&(#34|quot);[^ \t\n\r\f]*",
 		"&lt;http.*?&gt;",
-		"[A-Za-z0-9._]*:[A-Za-z0-9._]+",
+		"[A-Za-z0-9._]*:[-A-Za-z0-9._]+",
 		".",
 	}, "|"))
 	reComment = regexp.MustCompile("(?m:^[ \t]*#.*\n?)")

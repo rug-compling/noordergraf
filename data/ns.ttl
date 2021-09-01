@@ -1,9 +1,13 @@
 # namen van klassen (rdfs:Class) beginnen met een hoofdletter
 # namen van eigenschappen (rdfs:Property) beginnen met een kleine letter
 
-# TODO: klassen: verwijzen naar entry op wordnet
-
 # TODO: eigenschappen: oorspronkelijke afkorting
+
+# TODO: klassen: verwijzen naar entry op wordnet
+# Klopt dit?
+:wordnet a rdf:Property ;
+  rdfs:domain :Class ;
+  rdfs:range ontolex:LexicalConcept .
 
 # TODO: mag dit, externe dingen een subklasse van een eigen klasse maken?
 :Date a rdfs:Class .
@@ -88,7 +92,8 @@ xsd:gYear      rdfs:subClassOf :Date .
 :Person a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:comment "A person mentioned by name on a tomb stone."@eng ;
-  rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld .
+  rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld ;
+  :wordnet pwnid:00007846-n .
 
 :dob a rdf:Property ;
   rdfs:label "dob" ;
@@ -107,9 +112,11 @@ xsd:gYear      rdfs:subClassOf :Date .
 :Male a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:comment "A male person"@eng ;
-  rdfs:comment "Een mannelijk persoon"@nld .
+  rdfs:comment "Een mannelijk persoon"@nld ;
+  :wordnet pwnid:09647338-n .
 
 :Female a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:comment "A female person"@eng ;
-  rdfs:comment "Een vrouwelijk persoon"@nld .
+  rdfs:comment "Een vrouwelijk persoon"@nld ;
+  :wordnet pwnid:09642198-n .
