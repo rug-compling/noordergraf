@@ -265,11 +265,38 @@ Last-Modified: %s
     <link rel="alternate" href="https://noordergraf.rug.nl%s.ttl" type="text/turtle"/>
     <link rel="alternate" href="https://noordergraf.rug.nl%s.nt"  type="application/n-triples"/>
     <link rel="alternate" href="https://noordergraf.rug.nl%s.rdf" type="application/rdf+xml"/>
+    <style type="text/css">
+     #menu {
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       background-color: white;
+       border: 1px solid lightgrey;
+     }
+     .hidden {
+       display: none;
+     }
+    </style>
+    <script type="text/javascript">
+    function mOpen() {
+      document.getElementById("closed").classList.add("hidden");
+      document.getElementById("opened").classList.remove("hidden");
+    }
+    function mClose() {
+      document.getElementById("opened").classList.add("hidden");
+      document.getElementById("closed").classList.remove("hidden");
+    }
+    </script>
   </head>
   <body class="%s">
+    <div id="menu"><span id="closed"><button onclick="javascript:mOpen()">&gt;</button></span><span id="opened" class="hidden"><button onclick="javascript:mClose()">&lt;</button>
+      download: <a href="https://noordergraf.rug.nl%s.nt">n-triples</a>
+      &middot; <a href="https://noordergraf.rug.nl%s.rdf">rdf+xml</a>
+      &middot; <a href="https://noordergraf.rug.nl%s.ttl">turtle</a>&nbsp;
+    </span></div>
     <div id="container">
       <h1>%s</h1>
-`, lastModified, title, noindex, uri, uri, uri, class, title)
+`, lastModified, title, noindex, uri, uri, uri, class, uri, uri, uri, title)
 
 	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 
