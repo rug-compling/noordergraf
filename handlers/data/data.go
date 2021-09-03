@@ -16,12 +16,13 @@ Voor alle directory's, bijvoorbeeld /tomb :
 */
 
 import (
-	"rug-compling/noordergraf/go/httputil"
+	"github.com/rug-compling/noordergraf/go/httputil"
 
 	"fmt"
 	"html"
 	"io"
 	"io/ioutil"
+	"net/http"
 	"os"
 	"os/exec"
 	"path"
@@ -98,7 +99,8 @@ func main() {
 		h.Set("Accept", os.Getenv("HTTP_ACCEPT"))
 		r := &http.Request{Header: h}
 		switch httputil.NegotiateContentType(r, []string{
-			"text/html", "application/rdf+xml",
+			"application/rdf+xml",
+			"text/html",
 			"text/turtle",
 			"application/n-triples",
 		}, "application/rdf+xml") {
