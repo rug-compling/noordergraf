@@ -16,6 +16,8 @@ Voor alle directory's, bijvoorbeeld /tomb :
 */
 
 import (
+	"rug-compling/noordergraf/go/httputil"
+
 	"fmt"
 	"html"
 	"io"
@@ -90,6 +92,22 @@ func main() {
 		case ".rdf":
 			format = RDF
 			uri = uri[:i]
+		}
+	} else {
+		h := make(http.Header)
+		h.Set("Accept", os.Getenv("HTTP_ACCEPT"))
+		r := &http.Request{Header: h}
+		switch httputil.NegotiateContentType(r, []string{
+			"text/html", "application/rdf+xml",
+			"text/turtle",
+			"application/n-triples",
+		}, "application/rdf+xml") {
+		case "text/turtle":
+			format = TURTLE
+		case "application/n-triples":
+			format = TRIPLE
+		case "application/rdf+xml":
+			format = RDF
 		}
 	}
 
