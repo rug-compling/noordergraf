@@ -7,7 +7,7 @@
 package httputil
 
 import (
-	"github.com/rug-compling/noordergraf/go/httputil/header"
+	"go.local/go/httputil/header"
 
 	"net/http"
 	"strings"

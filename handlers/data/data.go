@@ -16,7 +16,7 @@ Voor alle directory's, bijvoorbeeld /tomb :
 */
 
 import (
-	"github.com/rug-compling/noordergraf/go/httputil"
+	"go.local/go/httputil"
 
 	"fmt"
 	"html"
