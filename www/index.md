@@ -1,4 +1,7 @@
 title: Noordergraf
+head: <link rel="alternate" href="https://noordergraf.rug.nl/index.ttl" type="text/turtle"/>
+head: <link rel="alternate" href="https://noordergraf.rug.nl/index.nt"  type="application/n-triples"/>
+head: <link rel="alternate" href="https://noordergraf.rug.nl/index.rdf" type="application/rdf+xml"/>
 ////
 
 # Noordergraf

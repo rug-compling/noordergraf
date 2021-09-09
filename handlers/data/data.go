@@ -50,7 +50,7 @@ var (
 	data         string
 	prefix       string
 	pretab       = make(map[string]string)
-	lastModified string
+	lastModified time.Time
 	exts         = map[int]string{
 		HTML:   "",
 		TURTLE: ".ttl",
@@ -127,20 +127,21 @@ func main() {
 		fmt.Print("Status: 404 Not Found\n\n")
 		return
 	}
-	lastModified = fi.ModTime().UTC().Format(time.RFC1123)
+	lastModified = fi.ModTime().UTC()
+	data += strings.Replace(uri[1:], "/", ":", 1) + " dc:modified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
 
 	switch format {
 	case HTML:
 		doHTML()
 	case TURTLE:
-		fmt.Print("Content-type: text/turtle; charset=UTF-8\nLast-Modified: " + lastModified + "\n\n")
+		fmt.Print("Content-type: text/turtle; charset=UTF-8\nLast-Modified: " + lastModified.Format(time.RFC1123) + "\n\n")
 		fmt.Println(prefix)
 		fmt.Print(reComment.ReplaceAllLiteralString(data, ""))
 	case TRIPLE:
-		fmt.Print("Content-type: application/n-triples; charset=UTF-8\nLast-Modified: " + lastModified + "\n\n")
+		fmt.Print("Content-type: application/n-triples; charset=UTF-8\nLast-Modified: " + lastModified.Format(time.RFC1123) + "\n\n")
 		fmt.Print(convert("ntriples"))
 	case RDF:
-		fmt.Print("Content-type: application/rdf+xml; charset=UTF-8\nLast-Modified: " + lastModified + "\n\n")
+		fmt.Print("Content-type: application/rdf+xml; charset=UTF-8\nLast-Modified: " + lastModified.Format(time.RFC1123) + "\n\n")
 		fmt.Print(convert("rdfxml-abbrev"))
 	}
 }
@@ -316,7 +317,7 @@ Last-Modified: %s
     </span></div>
     <div id="container">
       <h1>%s</h1>
-`, lastModified, title, noindex, uri, uri, uri, class, uri, uri, uri, title)
+`, lastModified.Format(time.RFC1123), title, noindex, uri, uri, uri, class, uri, uri, uri, title)
 
 	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 
@@ -387,7 +388,7 @@ func trimPrefix(prefix, data string) string {
 	lines := make([]string, 0)
 	for _, line := range strings.SplitAfter(prefix, "\n") {
 		a := strings.Fields(line)
-		if len(a) > 2 && strings.Contains(data, a[1]) {
+		if len(a) > 2 && (strings.Contains(data, a[1]) || a[1] == "dc:") {
 			lines = append(lines, line)
 			key := a[1][:len(a[1])-1]
 			if key != "rdf" && key != "rdfs" && key != "xsd" {

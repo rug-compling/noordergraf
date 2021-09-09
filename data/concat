@@ -14,7 +14,9 @@ cd tomb
 fgrep -h '@prefix' *.ttl
 for i in *.ttl
 do
-    echo "<tomb/`basename $i .ttl`> {"
+    name="`basename $i .ttl`"
+    echo "<tomb/$name> {"
+    echo "tomb:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
     fgrep -h -v '@prefix' $i
     echo "}"
 done
@@ -22,7 +24,9 @@ done
 cd ../site
 for i in *.ttl
 do
-    echo "<site/`basename $i .ttl`> {"
+    name="`basename $i .ttl`"
+    echo "<site/$name> {"
+    echo "site:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
     cat $i
     echo "}"
 done
@@ -30,7 +34,9 @@ done
 cd ../place
 for i in *.ttl
 do
-    echo "<place/`basename $i .ttl`> {"
+    name="`basename $i .ttl`"
+    echo "<place/$name> {"
+    echo "place:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
     cat $i
     echo "}"
 done

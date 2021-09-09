@@ -52,7 +52,7 @@ Cache-Control: public, max-age=86400
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" type="image/ico">
     <link rel="stylesheet" type="text/css" href="/STYLE">
-  </head>
+<!--HEAD-->  </head>
   <body class="CLASS">
     <div id="container">
 `
@@ -140,6 +140,7 @@ func main() {
 	bs = strings.Replace(bs, "</table>", `</table></div>`, -1)
 
 	title := os.Getenv("SCRIPT_URI")
+	head := ""
 	style := "md.css"
 	class := ""
 	if len(parts) > 1 {
@@ -155,6 +156,8 @@ func main() {
 						style = value
 					case "class":
 						class = value
+					case "head":
+						head += "    " + value + "\n"
 					}
 				}
 			}
@@ -164,9 +167,11 @@ func main() {
 	fmt.Print(
 		strings.Replace(
 			strings.Replace(
-				strings.Replace(header, "TITLE", title, 1),
-				"STYLE", style, 1),
-			"CLASS", class, 1),
+				strings.Replace(
+					strings.Replace(header, "TITLE", title, 1),
+					"STYLE", style, 1),
+				"CLASS", class, 1),
+			"<!--HEAD-->", head, 1),
 		bs,
 		footer)
 }
