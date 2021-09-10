@@ -18,6 +18,7 @@ Voor alle directory's, bijvoorbeeld /tomb :
 import (
 	"go.local/go/httputil"
 
+	"bytes"
 	"fmt"
 	"html"
 	"io"
@@ -27,6 +28,7 @@ import (
 	"os/exec"
 	"path"
 	"regexp"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -37,14 +39,15 @@ const (
 )
 
 const (
-	HTML = iota
+	NONE = iota
+	HTML
 	TURTLE
 	TRIPLE
 	RDF
 )
 
 var (
-	format       = HTML
+	format       = NONE
 	language     = "en"
 	uri          string
 	data         string
@@ -84,6 +87,9 @@ func main() {
 	i = strings.LastIndex(uri, ".")
 	if i > 0 {
 		switch uri[i:] {
+		case ".html":
+			format = HTML
+			uri = uri[:i]
 		case ".ttl":
 			format = TURTLE
 			uri = uri[:i]
@@ -94,7 +100,8 @@ func main() {
 			format = RDF
 			uri = uri[:i]
 		}
-	} else {
+	}
+	if format == NONE {
 		h := make(http.Header)
 		h.Set("Accept", os.Getenv("HTTP_ACCEPT"))
 		r := &http.Request{Header: h}
@@ -104,6 +111,8 @@ func main() {
 			"text/turtle",
 			"application/n-triples",
 		}, "application/rdf+xml") {
+		case "text/html":
+			format = HTML
 		case "text/turtle":
 			format = TURTLE
 		case "application/n-triples":
@@ -113,22 +122,69 @@ func main() {
 		}
 	}
 
-	filename := "/net/noordergraf/data" + uri + ".ttl"
-	b, err := ioutil.ReadFile(filename)
-	if err != nil {
-		fmt.Print("Status: 404 Not Found\n\n")
-		return
+	if strings.HasSuffix(uri, "/index") {
+		uri = uri[:len(uri)-6]
+	} else {
+		uri = strings.TrimRight(uri, "/")
 	}
-	data = string(b)
-	b, _ = ioutil.ReadFile("/net/noordergraf/data/prefix.ttl")
+
+	filename := "/net/noordergraf/data" + uri
+
+	isDir := false
+	if fi, err := os.Stat(filename); err == nil {
+		if fi.IsDir() {
+			isDir = true
+			lastModified = fi.ModTime().UTC()
+		}
+	}
+
+	if isDir {
+		if format != HTML {
+			var buffer bytes.Buffer
+			pre := path.Base(uri)
+			fmt.Fprintf(&buffer, "%s: a skos:Collection ;\n  dc:modified %q^^xsd:dateTime ;\n  skos:member", pre, lastModified.Format(time.RFC3339))
+
+			names := make([]string, 0)
+			files, err := ioutil.ReadDir(filename)
+			if err != nil {
+				fmt.Print("Status: 404 Not Found\n\n")
+				return
+			}
+			for _, file := range files {
+				name := file.Name()
+				if strings.HasSuffix(name, ".ttl") {
+					names = append(names, name[:len(name)-4])
+				}
+			}
+			sort.Strings(names)
+			p := ""
+			for _, name := range names {
+				fmt.Fprintf(&buffer, "%s\n    %s:%s", p, pre, name)
+				p = " ,"
+			}
+			fmt.Fprintln(&buffer, " .")
+			data = buffer.String()
+		}
+		uri += "/index"
+	} else {
+		filename += ".ttl"
+		b, err := ioutil.ReadFile(filename)
+		if err != nil {
+			fmt.Print("Status: 404 Not Found\n\n")
+			return
+		}
+		data = string(b)
+		fi, err := os.Stat(filename)
+		if err != nil {
+			fmt.Print("Status: 404 Not Found\n\n")
+			return
+		}
+		lastModified = fi.ModTime().UTC()
+		data += strings.Replace(uri[1:], "/", ":", 1) + " dc:modified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
+	}
+
+	b, _ := ioutil.ReadFile("/net/noordergraf/data/prefix.ttl")
 	prefix = trimPrefix(string(b), data)
-	fi, err := os.Stat(filename)
-	if err != nil {
-		fmt.Print("Status: 404 Not Found\n\n")
-		return
-	}
-	lastModified = fi.ModTime().UTC()
-	data += strings.Replace(uri[1:], "/", ":", 1) + " dc:modified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
 
 	switch format {
 	case HTML:
@@ -321,7 +377,8 @@ Last-Modified: %s
 
 	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 
-	if strings.HasPrefix(uri, "/site/") {
+	if strings.HasSuffix(uri, "/index") {
+	} else if strings.HasPrefix(uri, "/site/") {
 		fmt.Printf(`
 <div class="footer">
 Bekijk <a href="/bin/site?q=%s">graven op deze site</a>
@@ -388,7 +445,7 @@ func trimPrefix(prefix, data string) string {
 	lines := make([]string, 0)
 	for _, line := range strings.SplitAfter(prefix, "\n") {
 		a := strings.Fields(line)
-		if len(a) > 2 && (strings.Contains(data, a[1]) || a[1] == "dc:") {
+		if len(a) > 2 && strings.Contains(data, a[1]) {
 			lines = append(lines, line)
 			key := a[1][:len(a[1])-1]
 			if key != "rdf" && key != "rdfs" && key != "xsd" {
