@@ -255,7 +255,7 @@ func doHTML() {
 
 	noindex := ""
 
-	if uri == "/ns" || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/tomb/") {
+	if uri == "/ns" || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/tomb/") {
 
 		if strings.HasPrefix(uri, "/tomb/") {
 			year := time.Now().Year()
@@ -384,6 +384,12 @@ Last-Modified: %s
 Bekijk <a href="/bin/site?q=%s">graven op deze site</a>
 </div>
 `, uri[6:])
+	} else if strings.HasPrefix(uri, "/symbol/") {
+		fmt.Printf(`
+<div class="footer">
+Bekijk <a href="/bin/symbol?q=%s">graven met dit symbool</a>
+</div>
+`, uri[8:])
 	} else if strings.HasPrefix(uri, "/place/") {
 		fmt.Printf(`
 <div class="footer">

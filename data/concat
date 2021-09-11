@@ -41,7 +41,17 @@ do
     echo "}"
 done
 
-echo "GRAPH <meta> {"
+cd ../symbol
+for i in *.ttl
+do
+    name="`basename $i .ttl`"
+    echo "<symbol/$name> {"
+    echo "symbol:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
+    cat $i
+    echo "}"
+done
+
+echo "<meta> {"
 echo "  <> dc:modified \"`date -u -Iseconds`\"^^xsd:dateTime ."
 echo "}"
 

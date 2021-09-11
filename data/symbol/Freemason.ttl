@@ -1,0 +1,21 @@
+symbol:Freemason a rdfs:Class ;
+  rdfs:subClassOf :Symbol ;
+  rdfs:comment "symbol of the Freemasons"@eng;
+  rdfs:comment "symbool van de vrijmetselarij"@nld ;
+  :image [
+    a :Photo ;
+    :file exim:Freemason.png
+  ] ;
+  :part [
+    a rdfs:Class ;
+    rdfs:subClassOf :SymbolPart ;
+    rdfs:comment "drafting instrument used for drawing circles"@eng ;
+    rdfs:comment "passer"@nld ;
+    :wordnet pwnid:03084637-n
+  ] , [
+    a rdfs:Class ;
+    rdfs:subClassOf :SymbolPart ;
+    rdfs:comment "a hand tool consisting of two straight arms at right angles; used to construct or test right angles"@eng ;
+    rdfs:comment "winkelhaak"@nld ;
+    :wordnet pwnid:04298380-n
+  ] .
