@@ -33,7 +33,11 @@ t00289:p1
   :nam "KORNELIS J. BUURMA" ;
   :occ [
     a :Elder.n.03 ;
-    :dur t00289:m1 ;
+    :period [
+      a :Period ;
+      :duration "P040Y"^^xsd:duration ;
+      :text "ruim 40 jaren"
+    ] ;
     :hco hisco:14000 ;
     :loc [
       a :Village.n.02 ;
@@ -71,20 +75,6 @@ t00289:p2
     :ord 57 ;
     :prt t00289:v1
   ] .
-
-[]
-  a :More.r.01 ;
-  :op1 t00289:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 40
-  ] .
-
-t00289:m1
-  a :Measure.n.02 .
 
 t00289:v1
   a :Verse.n.01 ;

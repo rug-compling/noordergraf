@@ -25,7 +25,11 @@ t00159:p1
   :nam "WIEBEGIEN BROUWER" ;
   :rol [
     a :Spouse.n.01 ;
-    :dur t00159:m1 ;
+    :period [
+      a :Period ;
+      :duration "P040Y"^^xsd:duration ;
+      :text "ruim 40 jaar"
+    ] ;
     :tgt t00159:p2
   ] .
 
@@ -34,18 +38,3 @@ t00159:p2
   :dob "1876-10-24"^^xsd:date ;
   :dod "1961-12-29"^^xsd:date ;
   :nam "J. SMIDT" .
-
-[]
-  a :More.r.01 ;
-  :op1 t00159:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 40
-  ] .
-
-t00159:m1
-  a :Measure.n.02 .
-

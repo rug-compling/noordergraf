@@ -44,25 +44,15 @@ t00990:p1
   ] ;
   :rol [
     a :Wife.n.01 ;
-    :dur t00990:m1 ;
+    :period [
+      a :Period ;
+      :duration "P051Y"^^xsd:duration ;
+      :text "ruim 51 jaar"
+    ] ;
     :tgt t00990:p2
   ] .
 
 t00990:p2
   a :Male ;
   :nam "H.G. BOER" .
-
-[]
-  a :More.r.01 ;
-  :op1 t00990:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 51
-  ] .
-
-t00990:m1
-  a :Measure.n.02 .
 
