@@ -27,7 +27,11 @@ tomb:t00219
 
 t00219:p1
   a :Male ;
-  :age t00219:m1 ;
+  :age [
+    a :Age ;
+    :value "P083Y"^^xsd:duration ;
+    :text "ruim 83 jaren"
+  ] ;
   :dod "1878-03-20"^^xsd:date ;
   :nam "ELLE HENDRIKS KONING" ;
   :occ [
@@ -55,18 +59,4 @@ t00219:p1
 t00219:p2
   a :Female ;
   :nam "JANTJE KOL" .
-
-[]
-  a :More.r.01 ;
-  :op1 t00219:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 83
-  ] .
-
-t00219:m1
-  a :Measure.n.02 .
 

@@ -31,26 +31,8 @@ tomb:t01122
 t01122:p1
   a :Female ;
   :age [
-    a :Measure.n.02 ;
-    :sub [
-      a :Measure.n.02 ;
-      :mem [
-        a :Year.n.01
-      ] ;
-      :qua 62
-    ], [
-      a :Measure.n.02 ;
-      :mem [
-        a :Month.n.01
-      ] ;
-      :qua 3
-    ], [
-      a :Measure.n.02 ;
-      :mem [
-        a :Day.n.01
-      ] ;
-      :qua 10
-    ]
+    a :Age ;
+    :value "P062Y03M10D"^^xsd:duration
   ] ;
   :dod "1864-04-10"^^xsd:date ;
   :nam "TRIENTJE HENDRIKS DIJKSTRA" ;

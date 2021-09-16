@@ -27,7 +27,11 @@ tomb:t00502
 
 t00502:p1
   a :Male ;
-  :age t00502:m1 ;
+  :age [
+    a :Age ;
+    :value "P033Y"^^xsd:duration ;
+    :text "ruim 33 jaar"
+  ] ;
   :dod "1908-11-12"^^xsd:date ;
   :nam "BARTELE DE KANT" ;
   :pod [
@@ -60,18 +64,4 @@ t00502:p3
     a :Daughter.n.01 ;
     :tgt t00502:p2
   ] .
-
-[]
-  a :More.r.01 ;
-  :op1 t00502:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 33
-  ] .
-
-t00502:m1
-  a :Measure.n.02 .
 

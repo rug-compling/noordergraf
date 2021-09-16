@@ -31,20 +31,8 @@ tomb:t01123
 t01123:p1
   a :Male ;
   :age [
-    a :Measure.n.02 ;
-    :sub [
-      a :Measure.n.02 ;
-      :mem [
-        a :Year.n.01
-      ] ;
-      :qua 55
-    ], [
-      a :Measure.n.02 ;
-      :mem [
-        a :Month.n.01
-      ] ;
-      :qua 11
-    ]
+    a :Age ;
+    :value "P055Y11M"^^xsd:duration
   ] ;
   :dod "1861-03-05"^^xsd:date ;
   :nam "DERK PIETERS WIERENGA" ;

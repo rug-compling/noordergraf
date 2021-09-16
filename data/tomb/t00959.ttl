@@ -26,7 +26,11 @@ tomb:t00959
 
 t00959:p1
   a :Female ;
-  :age t00959:m1 ;
+  :age [
+    a :Age ;
+    :value "P074Y"^^xsd:duration ;
+    :text "bijna 74 jaren"
+  ] ;
   :dob "1820-05-19"^^xsd:date ;
   :dod "1894-01-23"^^xsd:date ;
   :nam "JANTIEN HAMMINGA" ;
@@ -48,18 +52,3 @@ t00959:p1
 t00959:p2
   a :Male ;
   :nam "HENDRIK KLOOTS" .
-
-[]
-  a :Less.r.01 ;
-  :op1 t00959:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 74
-  ] .
-
-t00959:m1
-  a :Measure.n.02 .
-

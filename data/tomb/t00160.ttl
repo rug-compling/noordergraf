@@ -22,7 +22,11 @@ tomb:t00160
 
 t00160:p1
   a :Female ;
-  :age t00160:m1 ;
+  :age [
+    a :Age ;
+    :value "P036Y"^^xsd:duration ;
+    :text "ruim 36 jaar"
+  ]
   :dod "1869-12-14"^^xsd:date ;
   :nam "HILLIGIEN WIERINGA" ;
   :rol [
@@ -34,18 +38,3 @@ t00160:p1
 t00160:p2
   a :Male ;
   :nam "J. LIMBORGH" .
-
-[]
-  a :More.r.01 ;
-  :op1 t00160:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 36
-  ] .
-
-t00160:m1
-  a :Measure.n.02 .
-

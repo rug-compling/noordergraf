@@ -36,7 +36,11 @@ tomb:t01120
 
 t01120:p1
   a :Female ;
-  :age t01120:m1 ;
+  :age [
+    a :Age ;
+    :value "P044Y"^^xsd:duration ;
+    :text "ruim 44 Jaren"
+  ] ;
   :dob "1808-06-06"^^xsd:date ;
   :dod "1870-03-06"^^xsd:date ;
   :nam "FREDERIKA J. SMITH" ;
@@ -58,18 +62,3 @@ t01120:p1
 t01120:p2
   a :Male ;
   :nam "ROELF J. HIDDINGH" .
-
-[]
-  a :More.r.01 ;
-  :op1 t01120:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 44
-  ] .
-
-t01120:m1
-  a :Measure.n.02 .
-

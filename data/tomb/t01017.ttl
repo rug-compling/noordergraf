@@ -34,20 +34,8 @@ tomb:t01017
 t01017:p1
   a :Male ;
   :age [
-    a :Measure.n.02 ;
-    :sub [
-      a :Measure.n.02 ;
-      :mem [
-        a :Year.n.01
-      ] ;
-      :qua 72
-    ], [
-      a :Measure.n.02 ;
-      :mem [
-        a :Month.n.01
-      ] ;
-      :qua 11
-    ]
+    a :Age ;
+    :value "P072Y11M"^^xsd:duration
   ] ;
   :dod "1811-12-14"^^xsd:date ;
   :nam "JAN KORNELIS MULLER" ;

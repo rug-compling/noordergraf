@@ -34,7 +34,11 @@ tomb:t01049
 
 t01049:p1
   a :Female ;
-  :age t01049:m1 ;
+  :age [
+    a :Age ;
+    :value "P018Y"^^xsd:duration ;
+    :text "oud bijna 18 jaar"
+  ] ;
   :dod "1925-07-18"^^xsd:date ;
   :nam "PIETJE VENEMA" ;
   :pod [
@@ -50,18 +54,3 @@ t01049:p2
 t01049:p3
   a :Male ;
   :nam "H. VENEMA-BOSMA" .
-
-[]
-  a :Less.r.01 ;
-  :op1 t01049:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 18
-  ] .
-
-t01049:m1
-  a :Measure.n.02 .
-

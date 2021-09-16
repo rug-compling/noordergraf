@@ -23,11 +23,8 @@ tomb:t00001
 t00001:p1
   a :Male ;
   :age [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 27
+    a :Age ;
+    :value "P027Y"^^xsd:duration
   ] ;
   :dod "1933-10-12"^^xsd:date ;
   :nam "KLAAS SWART" ;
@@ -42,13 +39,7 @@ t00001:p1
 
 t00001:p2
   a :Female ;
-  :age [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 61
-  ] ;
+  :age "P061Y"^^xsd:duration ;
   :dod "1936-02-13"^^xsd:date ;
   :nam "ANNECHIEN MULDER" ;
   :rol [

@@ -21,20 +21,8 @@ tomb:t00086
 t00086:p1
   a :Female ;
   :age [
-    a :Measure.n.02 ;
-    :sub [
-      a :Measure.n.02 ;
-      :mem [
-        a :Year.n.01
-      ] ;
-      :qua 57
-    ], [
-      a :Measure.n.02 ;
-      :mem [
-        a :Month.n.01
-      ] ;
-      :qua 4
-    ]
+    a :Age ;
+    :value "P057Y04M"^^xsd:duration
   ] ;
   :dob "1829-11-28"^^xsd:date ;
   :dod "1887-04-03"^^xsd:date ;

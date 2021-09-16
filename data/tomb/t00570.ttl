@@ -28,7 +28,11 @@ tomb:t00570
 
 t00570:p1
   a :Male ;
-  :age t00570:m1 ;
+  :age [
+    a :Age ;
+    :value "P062Y"^^xsd:duration ;
+    :text "ruim 62 jaren"
+  ] ;
   :dob "1865-08-29"^^xsd:date ;
   :nam "AREND VAN LINGE" ;
   :rol [
@@ -40,18 +44,3 @@ t00570:p1
 t00570:p2
   a :Female ;
   :nam "AFIEN R. GIEZEN" .
-
-[]
-  a :More.r.01 ;
-  :op1 t00570:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 62
-  ] .
-
-t00570:m1
-  a :Measure.n.02 .
-

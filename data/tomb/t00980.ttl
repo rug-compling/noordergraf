@@ -20,7 +20,11 @@ tomb:t00980
 
 t00980:p1
   a :Male ;
-  :age t00980:m1 ;
+  :age [
+    a :Age ;
+    :value "P062Y"^^xsd:duration ;
+    :text "bijna 62 jaren"
+  ] ;
   :dob "1820-02-13"^^xsd:date ;
   :dod "1882-02-05"^^xsd:date ;
   :nam "HENDRIK KLOOTS" ;
@@ -37,18 +41,3 @@ t00980:p1
 t00980:p2
   a :Female ;
   :nam "JANTIEN HAMMING" .
-
-[]
-  a :Less.r.01 ;
-  :op1 t00980:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 62
-  ] .
-
-t00980:m1
-  a :Measure.n.02 .
-

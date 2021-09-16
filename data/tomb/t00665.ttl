@@ -28,7 +28,11 @@ tomb:t00665
 
 t00665:p1
   a :Female ;
-  :age t00665:m1 ;
+  :age [
+    a :Age ;
+    :value "P054Y"^^xsd:duration ;
+    :text "bijna 54 jaren"
+  ] ;
   :dob "1859-10-22"^^xsd:date ;
   :dod "1913-09-11"^^xsd:date ;
   :nam "AFKE VAN DER VEER" ;
@@ -50,18 +54,3 @@ t00665:p1
 t00665:p2
   a :Male ;
   :nam "SIMON OUDEBOON" .
-
-[]
-  a :Less.r.01 ;
-  :op1 t00665:m1 ;
-  :op2 [
-    a :Measure.n.02 ;
-    :mem [
-      a :Year.n.01
-    ] ;
-    :qua 54
-  ] .
-
-t00665:m1
-  a :Measure.n.02 .
-
