@@ -15,8 +15,6 @@ tomb:t00895
     ] ;
     :nd "+53.1725+006.3613"^^ll:
   ] ;
-  :lan "NLD" ;
-  :placeOfDeath t00895:c2 ;
   :site site:gr9351RLtolbert ;
   :sym [
     a :Willow.n.01 ;
@@ -32,9 +30,14 @@ t00895:p1
   :nam "HENDERIKA JAKOBS MELESSEN" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
-    :apx t00895:c2 ;
+    :text "den Holm onder tolbert" ;
     :name "DE HOLM" ;
     :place place:DeHolm2757523
+  ] ;
+  :placeOfDeath [
+    a :Village.n.02 ;
+    :name "TOLBERT" ;
+    :place place:Tolbert2746234 .
   ] ;
   :rol [
     a :Spouse.n.01 ;
@@ -44,9 +47,3 @@ t00895:p1
 t00895:p2
   a :Male ;
   :nam "M.D. POL" .
-
-t00895:c2
-  a :Village.n.02 ;
-  :name "TOLBERT" ;
-  :place place:Tolbert2746234 .
-
