@@ -22,7 +22,16 @@ t00092:p1
   :dob "1891-10-05"^^xsd:date ;
   :dod "1947-06-26"^^xsd:date ;
   :nam "HEINRICH JANSEN" ;
-  :pob t00092:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "WAHN" ;
+    :place place:Wahn3208447 ;
+    :partOf [
+      a :Country.n.02 ;
+      :name "DUITSLAND" ;
+      :place place:Duitsland2921044
+    ]
+  ] ;
   :pod [
     a :City.n.01 ;
     :name "GRONINGEN" ;
@@ -38,15 +47,3 @@ t00092:p2
   :dob "1888-07-15"^^xsd:date ;
   :dod "1967-08-31"^^xsd:date ;
   :nam "JOANNA M. BOELENS" .
-
-t00092:c2
-  a :Village.n.02 ;
-  :name "WAHN" ;
-  :place place:Wahn3208447 .
-
-[]
-  a :Country.n.02 ;
-  :mem t00092:c2 ;
-  :name "DUITSLAND" ;
-  :place place:Duitsland2921044 .
-

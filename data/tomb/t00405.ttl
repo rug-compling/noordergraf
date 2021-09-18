@@ -48,7 +48,16 @@ t00405:p2
   :dob "1857-11-23"^^xsd:date ;
   :dod "1931-12-15"^^xsd:date ;
   :nam "RENSKJE VISSER" ;
-  :pob t00405:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "STROOBOS" ;
+    :place place:Stroobos2746589 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "FRIESLAND" ;
+      :place place:ProvincieFriesland2755812
+    ]
+  ] ;
   :pod t00405:c1 ;
   :rol [
     a :Parent.n.01 ;
@@ -59,15 +68,3 @@ t00405:c1
   a :Village.n.02 ;
   :name "BUITENPOST" ;
   :place place:Buitenpost2758131 .
-
-t00405:c3
-  a :Village.n.02 ;
-  :name "STROOBOS" ;
-  :place place:Stroobos2746589 .
-
-[]
-  a :Province.n.01 ;
-  :mem t00405:c3 ;
-  :name "FRIESLAND" ;
-  :place place:ProvincieFriesland2755812 .
-

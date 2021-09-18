@@ -29,8 +29,26 @@ t00359:p1
   :dob "1901-06-25"^^xsd:date ;
   :dod "1935-06-02"^^xsd:date ;
   :nam "GEERTIEN BATHOORN" ;
-  :pob t00359:c1 ;
-  :pod t00359:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "BUNNE" ;
+    :place place:Bunne2758108 ;
+    :partOf [
+      a :Municipality.n.01 ;
+      :name "VRIES" ;
+      :place place:Vries2745189
+    ]
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "MOLKWERUM" ;
+    :place place:Molkwerum2750647 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "FRIESLAND" ;
+      :place place:ProvincieFriesland2755812
+    ]
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :att "GELIEFDE" ;
@@ -46,26 +64,3 @@ t00359:p1
 t00359:p2
   a :Male ;
   :nam "LAMBERTUS HUMMEL" .
-
-t00359:c1
-  a :Village.n.02 ;
-  :name "BUNNE" ;
-  :place place:Bunne2758108 .
-
-[]
-  a :Municipality.n.01 ;
-  :mem t00359:c1 ;
-  :name "VRIES" ;
-  :place place:Vries2745189 .
-
-t00359:c3
-  a :Village.n.02 ;
-  :name "MOLKWERUM" ;
-  :place place:Molkwerum2750647 .
-
-[]
-  a :Province.n.01 ;
-  :mem t00359:c3 ;
-  :name "FRIESLAND" ;
-  :place place:ProvincieFriesland2755812 .
-

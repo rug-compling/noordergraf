@@ -40,20 +40,17 @@ t01111:p1
     :name "WAGENBORGEN" ;
     :place place:Wagenborgen2745090
   ] ;
-  :pod t01111:c2 ;
+  :pod [
+    a :Village.n.02 ;
+    :name "WEIDUM" ;
+    :place place:Weidum2744891 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "FRIESLAND" ;
+      :place place:ProvincieFriesland2755812
+    ]
+  ] ;
   :rol [
     a :Aunt.n.01 ;
     :att "GELIEFDE"
   ] .
-
-t01111:c2
-  a :Village.n.02 ;
-  :name "WEIDUM" ;
-  :place place:Weidum2744891 .
-
-[]
-  a :Province.n.01 ;
-  :mem t01111:c2 ;
-  :name "FRIESLAND" ;
-  :place place:ProvincieFriesland2755812 .
-

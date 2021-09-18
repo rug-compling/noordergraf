@@ -22,7 +22,16 @@ t00074:p1
   :dob "1896-11-13"^^xsd:date ;
   :dod "1951-01-06"^^xsd:date ;
   :nam "MARIA ELISABETH HILLEBRAND" ;
-  :pob t00074:c2 ;
+  :pob [
+    a :City.n.01 ;
+    :name "HAGEN" ;
+    :place place:Hagen2912621 ;
+    :partOf [
+      a :Country.n.02 ;
+      :name "DUITSLAND" ;
+      :place place:Duitsland2921044
+    ]
+  ] ;
   :pod t00074:c1 ;
   :rol [
     a :Wife.n.01 ;
@@ -41,15 +50,3 @@ t00074:c1
   a :City.n.01 ;
   :name "GRONINGEN" ;
   :place place:Groningen2755251 .
-
-t00074:c2
-  a :City.n.01 ;
-  :name "HAGEN" ;
-  :place place:Hagen2912621 .
-
-[]
-  a :Country.n.02 ;
-  :mem t00074:c2 ;
-  :name "DUITSLAND" ;
-  :place place:Duitsland2921044 .
-

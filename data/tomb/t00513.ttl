@@ -28,21 +28,18 @@ t00513:p1
   :dob "1926-10-12"^^xsd:date ;
   :dod "1984-02-15"^^xsd:date ;
   :nam "JOHANNES SIMON TALARIMA" ;
-  :pob t00513:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "AMAHEI" ;
+    :place place:Amahai1651591 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "MOLUKKEN" ;
+      :place place:Molukken1636629
+    ]
+  ] ;
   :pod [
     a :Village.n.02 ;
     :name "FOXHOL" ;
     :place place:Foxhol2755853
   ] .
-
-t00513:c1
-  a :Village.n.02 ;
-  :name "AMAHEI" ;
-  :place place:Amahai1651591 .
-
-[]
-  a :Province.n.01 ;
-  :mem t00513:c1 ;
-  :name "MOLUKKEN" ;
-  :place place:Molukken1636629 .
-

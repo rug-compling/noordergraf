@@ -22,8 +22,26 @@ t00246:p1
   :dob "1900-01-15"^^xsd:date ;
   :dod "1968-12-21"^^xsd:date ;
   :nam "TJAATJE MEIJER" ;
-  :pob t00246:c1 ;
-  :pod t00246:c3 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "OUDESCHANS" ;
+    :place place:Oudeschans2749010 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "GRONINGEN" ;
+      :place place:ProvincieGroningen2755249
+    ]
+  ] ;
+  :pod [
+    a :City.n.01 ;
+    :name "APELDOORN" ;
+    :place place:Apeldoorn2759706 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "GELDERLAND" ;
+      :place place:ProvincieGelderland2755634
+    ]
+  ] ;
   :rol [
     a :Sister.n.01 ;
     :att "LIEVE"
@@ -32,26 +50,4 @@ t00246:p1
   ], [
     a :Grandaunt.n.01
   ] .
-
-t00246:c1
-  a :Village.n.02 ;
-  :name "OUDESCHANS" ;
-  :place place:Oudeschans2749010 .
-
-[]
-  a :Province.n.01 ;
-  :mem t00246:c1 ;
-  :name "GRONINGEN" ;
-  :place place:ProvincieGroningen2755249 .
-
-t00246:c3
-  a :City.n.01 ;
-  :name "APELDOORN" ;
-  :place place:Apeldoorn2759706 .
-
-[]
-  a :Province.n.01 ;
-  :mem t00246:c3 ;
-  :name "GELDERLAND" ;
-  :place place:ProvincieGelderland2755634 .
 

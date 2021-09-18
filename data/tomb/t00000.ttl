@@ -45,8 +45,26 @@ t00000:p1
     ] ;
     :ttl "BRIGADIER-TITULAIR"
   ] ;
-  :pob t00000:c2 ;
-  :pod t00000:c4 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "OOSTWOLD" ;
+    :place place:Oostwold2749325 ;
+    :partOf [
+      a :Region.n.01 ;
+      :name "OLDAMBT" ;
+      :place place:OldAmbt2749672
+    ]
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "DOEZUM" ;
+    :place place:Doezum2756763 ;
+    :partOf [
+      a :Municipality.n.01 ;
+      :name "GROOTEGAST" ;
+      :place place:GemeenteGrootegast2755203
+    ]
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :att "LIEVE" ;
@@ -62,28 +80,6 @@ t00000:p1
 t00000:p2
   a :Female ;
   :nam "ANJE REKER" .
-
-t00000:c2
-  a :Village.n.02 ;
-  :name "OOSTWOLD" ;
-  :place place:Oostwold2749325 .
-
-[]
-  a :Region.n.01 ;
-  :mem t00000:c2 ;
-  :name "OLDAMBT" ;
-  :place place:OldAmbt2749672 .
-
-t00000:c4
-  a :Village.n.02 ;
-  :name "DOEZUM" ;
-  :place place:Doezum2756763 .
-
-[]
-  a :Municipality.n.01 ;
-  :mem t00000:c4 ;
-  :name "GROOTEGAST" ;
-  :place place:GemeenteGrootegast2755203 .
 
 t00000:g1
   a :Group.n.01 ;

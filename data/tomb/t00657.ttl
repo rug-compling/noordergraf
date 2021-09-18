@@ -37,7 +37,16 @@ t00657:p2
   :dob "1808-11-10"^^xsd:date ;
   :dod "1982-05-30"^^xsd:date ;
   :nam "JOHANN LUDEWIG JACKÉ" ;
-  :pob t00657:c1 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "EINBECK" ;
+    :place place:Einbeck2931804 ;
+    :partOf [
+      a :Country.n.02 ;
+      :name "DUITSLAND" ;
+      :place place:Duitsland2921044
+    ]
+  ] ;
   :pod t00657:c3 .
 
 t00657:p3
@@ -55,17 +64,6 @@ t00657:p4
   :nam "AUGUST JACKÉ" ;
   :pob t00657:c3 ;
   :pod t00657:c3 .
-
-t00657:c1
-  a :Town.n.01 ;
-  :name "EINBECK" ;
-  :place place:Einbeck2931804 .
-
-[]
-  a :Country.n.02 ;
-  :mem t00657:c1 ;
-  :name "DUITSLAND" ;
-  :place place:Duitsland2921044 .
 
 t00657:c3
   a :City.n.01 ;

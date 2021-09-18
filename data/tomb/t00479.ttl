@@ -25,7 +25,21 @@ t00479:p1
   :dob "1844-06-15"^^xsd:date ;
   :dod "1919-04-21"^^xsd:date ;
   :nam "JACOPO GIUSTO FAZZI" ;
-  :pob t00479:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "CUNE" ;
+    :place place:Cune8953542 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "TOSCANA" ;
+      :place place:Toscane3165361 ;
+      :partOf [
+        a :Country.n.02 ;
+        :name "ITALIË" ;
+        :place place:Italie3175395
+      ]
+    ]
+  ] ;
   :pod [
     a :City.n.01 ;
     :name "LEEUWARDEN" ;
@@ -39,20 +53,3 @@ t00479:p1
 t00479:p2
   a :Female ;
   :nam "GEESJE JANSSEN" .
-
-t00479:c1
-  a :Village.n.02 ;
-  :name "CUNE" ;
-  :place place:Cune8953542 .
-
-[]
-  a :Country.n.02 ;
-  :mem [
-    a :Province.n.01 ;
-    :mem t00479:c1 ;
-    :name "TOSCANA" ;
-    :place place:Toscane3165361
-  ] ;
-  :name "ITALIË" ;
-  :place place:Italie3175395 .
-

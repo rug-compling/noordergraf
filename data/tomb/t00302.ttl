@@ -53,21 +53,18 @@ t00302:p2
     :name "DWINGELOO" ;
     :place place:Dwingeloo2756451
   ] ;
-  :pod t00302:c3 .
+  :pod [
+    a :City.n.01 ;
+    :name "HENGELO" ;
+    :place place:Hengelo2754394 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "OVERIJSSEL" ;
+      :place place:ProvincieOverijssel2748838
+    ]
+  ] .
 
 t00302:c1
   a :Town.n.01 ;
   :name "HOOGEVEEN" ;
   :place place:Hoogeveen2753719 .
-
-t00302:c3
-  a :City.n.01 ;
-  :name "HENGELO" ;
-  :place place:Hengelo2754394 .
-
-[]
-  a :Province.n.01 ;
-  :mem t00302:c3 ;
-  :name "OVERIJSSEL" ;
-  :place place:ProvincieOverijssel2748838 .
-

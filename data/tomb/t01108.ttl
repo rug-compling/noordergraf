@@ -50,7 +50,16 @@ t01108:p2
   :dob "1846-07-31"^^xsd:date ;
   :dod "1917-01-20"^^xsd:date ;
   :nam "SIERK KOOISTER" ;
-  :pob t01108:c2 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "WESTERGEEST" ;
+    :place place:Westergeest2744744 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "FRIESLAND" ;
+      :place place:ProvincieFriesland2755812
+    ]
+  ] ;
   :pod t01108:c1 ;
   :rol [
     a :Parent.n.01 ;
@@ -62,17 +71,6 @@ t01108:c1
   a :Village.n.02 ;
   :name "GRIJPSKERK" ;
   :place place:Grijpskerk2755317 .
-
-t01108:c2
-  a :Village.n.02 ;
-  :name "WESTERGEEST" ;
-  :place place:Westergeest2744744 .
-
-[]
-  a :Province.n.01 ;
-  :mem t01108:c2 ;
-  :name "FRIESLAND" ;
-  :place place:ProvincieFriesland2755812 .
 
 t01108:g1
   a :Group.n.01 .

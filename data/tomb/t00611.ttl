@@ -30,7 +30,16 @@ t00611:p1
   :dob "1842-05-04"^^xsd:date ;
   :dod "1892-06-26"^^xsd:date ;
   :nam "ANDRIES FABER" ;
-  :pob t00611:c1 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "SLOTEN" ;
+    :place place:Sloten2747131 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "FRIESLAND" ;
+      :place place:ProvincieFriesland2755812
+    ]
+  ] ;
   :pod [
     a :Town.n.01 ;
     :name "HOOGEZAND" ;
@@ -64,15 +73,3 @@ t00611:p3
     a :Designer.n.01 ;
     :tgt tomb:t00611
   ] .
-
-t00611:c1
-  a :Town.n.01 ;
-  :name "SLOTEN" ;
-  :place place:Sloten2747131 .
-
-[]
-  a :Province.n.01 ;
-  :mem t00611:c1 ;
-  :name "FRIESLAND" ;
-  :place place:ProvincieFriesland2755812 .
-

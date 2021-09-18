@@ -22,7 +22,16 @@ t00447:p1
   :dob "1912-08-04"^^xsd:date ;
   :dod "1982-03-08"^^xsd:date ;
   :nam "JUSTINA WUTSCHER" ;
-  :pob t00447:c1 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "ZWETTL" ;
+    :place place:ZwettlStadt2760416 ;
+    :partOf [
+      a :Country.n.02 ;
+      :name "OOSTENRIJK" ;
+      :place place:Oostenrijk2782113
+    ]
+  ] ;
   :pod [
     a :Island.n.01 ;
     :name "SCHIERMONNIKOOG" ;
@@ -65,15 +74,3 @@ t00447:p2
     a :Great_grandfather.n.01 ;
     :tgt t00447:p5
   ] .
-
-t00447:c1
-  a :Town.n.01 ;
-  :name "ZWETTL" ;
-  :place place:ZwettlStadt2760416 .
-
-[]
-  a :Country.n.02 ;
-  :mem t00447:c1 ;
-  :name "OOSTENRIJK" ;
-  :place place:Oostenrijk2782113 .
-

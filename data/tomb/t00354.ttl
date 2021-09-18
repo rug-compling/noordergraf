@@ -28,27 +28,22 @@ t00354:p1
   :dob "1875-09-03"^^xsd:date ;
   :dod "1906-01-11"^^xsd:date ;
   :nam "KLAAS BOETTING" ;
-  :pob t00354:c1 ;
-  :pod t00354:c3 .
-
-t00354:c1
-  a :Village.n.02 ;
-  :name "GEES" ;
-  :place place:Gees2755664 .
-
-[]
-  a :Municipality.n.01 ;
-  :mem t00354:c1 ;
-  :nam "OOSTERHESSELEN" .
-
-t00354:c3
-  a :Village.n.02 ;
-  :name "DE PUNT" ;
-  :place place:DePunt2757124 .
-
-[]
-  a :Municipality.n.01 ;
-  :mem t00354:c3 ;
-  :name "VRIES" ;
-  :place place:Vries2745189 .
-
+  :pob [
+    a :Village.n.02 ;
+    :name "GEES" ;
+    :place place:Gees2755664 ;
+    :partOf [
+      a :Municipality.n.01 ;
+      :nam "OOSTERHESSELEN"
+    ]
+  ] ;
+  :pod [
+    a :Village.n.02 ;
+    :name "DE PUNT" ;
+    :place place:DePunt2757124 ;
+    :partOf [
+      a :Municipality.n.01 ;
+      :name "VRIES" ;
+      :place place:Vries2745189
+    ]
+  ] .

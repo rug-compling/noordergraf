@@ -25,7 +25,16 @@ t00194:p1
   :dob "1896-03-07"^^xsd:date ;
   :dod "1933-07-27"^^xsd:date ;
   :nam "HEINRICH STOLL" ;
-  :pob t00194:c1 ;
+  :pob [
+    a :Town.n.01 ;
+    :name "RASTATT" ;
+    :place place:Rastatt2850257 ;
+    :partOf [
+      a :Country.n.02 ;
+      :name "DUITSLAND" ;
+      :place place:Duitsland2921044
+    ]
+  ] ;
   :pod [
     a :City.n.01 ;
     :name "GRONINGEN" ;
@@ -35,15 +44,3 @@ t00194:p1
     a :Father.n.01 ;
     :att "LIEVE"
   ] .
-
-t00194:c1
-  a :Town.n.01 ;
-  :name "RASTATT" ;
-  :place place:Rastatt2850257 .
-
-[]
-  a :Country.n.02 ;
-  :mem t00194:c1 ;
-  :name "DUITSLAND" ;
-  :place place:Duitsland2921044 .
-

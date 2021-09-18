@@ -23,7 +23,16 @@ t00831:p1
   :dob "1871-12-01"^^xsd:date ;
   :dod "1940-11-09"^^xsd:date ;
   :nam "HENDRIKJE KOK" ;
-  :pob t00831:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ORVELTE" ;
+    :place place:Orvelte2749247 ;
+    :partOf [
+      a :Municipality.n.01 ;
+      :name "WESTERBORK" ;
+      :place place:Westerbork2744769
+    ]
+  ] ;
   :pod [
     a :Village.n.02 ;
     :name "NOORD-SLEEN" ;
@@ -39,15 +48,3 @@ t00831:p1
 t00831:p2
   a :Male ;
   :nam "RUDOLF SMIT" .
-
-t00831:c1
-  a :Village.n.02 ;
-  :name "ORVELTE" ;
-  :place place:Orvelte2749247 .
-
-[]
-  a :Municipality.n.01 ;
-  :mem t00831:c1 ;
-  :name "WESTERBORK" ;
-  :place place:Westerbork2744769 .
-

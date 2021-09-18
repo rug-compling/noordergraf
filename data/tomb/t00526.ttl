@@ -32,7 +32,16 @@ t00526:p1
   :dob "1887-11-16"^^xsd:date ;
   :dod "1974-01-12"^^xsd:date ;
   :nam "CASPER WARDENAAR" ;
-  :pob t00526:c1 ;
+  :pob [
+    a :City.n.01 ;
+    :name "REMBANG" ;
+    :place place:Rembangan1629749 ;
+    :partOf [
+      a :Country.n.02 ;
+      :name "INDONESIË" ;
+      :place place:Indonesie1643084
+    ]
+  ] ;
   :pod [
     a :Village.n.02 ;
     :name "SAPPEMEER" ;
@@ -55,7 +64,16 @@ t00526:p2
   :dob "1908-12-25"^^xsd:date ;
   :dod "1990-04-06"^^xsd:date ;
   :nam "POPPY WARDENAAR" ;
-  :pob t00526:c4 ;
+  :pob [
+    a :City.n.01 ;
+    :name "PADANG" ;
+    :place place:Padang1633419 ;
+    :partOf [
+      a :Country.n.02 ;
+      :name "INDONESIË" ;
+      :place place:Indonesie1643084
+    ]
+  ] ;
   :pod [
     a :City.n.01 ;
     :name "ZWOLLE" ;
@@ -77,22 +95,6 @@ t00526:p2
     :ord 14 ;
     :prt t00526:v1
   ] .
-
-t00526:c1
-  a :City.n.01 ;
-  :name "REMBANG" ;
-  :place place:Rembangan1629749 .
-
-[]
-  a :Country.n.02 ;
-  :mem t00526:c1, t00526:c4 ;
-  :name "INDONESIË" ;
-  :place place:Indonesie1643084 .
-
-t00526:c4
-  a :City.n.01 ;
-  :name "PADANG" ;
-  :place place:Padang1633419 .
 
 t00526:v1
   a :Verse.n.01 ;

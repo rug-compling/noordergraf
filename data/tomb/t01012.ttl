@@ -54,22 +54,19 @@ t01012:p2
     :name "ZUIDHORN" ;
     :place place:Zuidhorn2743694
   ] ;
-  :pod t01012:c4 ;
+  :pod [
+    a :Village.n.02 ;
+    :name "WINSUM" ;
+    :place place:Winsum2744337 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "GRONINGEN" ;
+      :place place:ProvincieGroningen2755249
+    ]
+  ] ;
   :rol [
     a :Mother.n.01 ;
     :att "LIEVE"
   ], [
     a :Grandmother.n.01
   ] .
-
-t01012:c4
-  a :Village.n.02 ;
-  :name "WINSUM" ;
-  :place place:Winsum2744337 .
-
-[]
-  a :Province.n.01 ;
-  :mem t01012:c4 ;
-  :name "GRONINGEN" ;
-  :place place:ProvincieGroningen2755249 .
-

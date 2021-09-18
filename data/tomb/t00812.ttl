@@ -23,26 +23,23 @@ t00812:p1
   :dob "1885-02-05"^^xsd:date ;
   :dod "1906-04-29"^^xsd:date ;
   :nam "MELVIN HUGH WELKER" ;
-  :pob t00812:c1 ;
+  :pob [
+    a :City.n.01 ;
+    :name "BLOOMINGTON" ;
+    :place place:Bloomington5586244 ;
+    :partOf [
+      a :State.n.01 ;
+      :name "IDAHO" ;
+      :place place:Idaho5596512 ;
+      :partOf [
+        a :Country.n.02 ;
+        :name "VERENIGDE STATEN" ;
+        :place place:VerenigdeStaten6252001
+      ]
+    ]
+  ] ;
   :pod [
     a :Town.n.01 ;
     :name "GRONINGEN" ;
     :place place:Groningen2755251
   ] .
-
-t00812:c1
-  a :City.n.01 ;
-  :name "BLOOMINGTON" ;
-  :place place:Bloomington5586244 .
-
-[]
-  a :Country.n.02 ;
-  :mem [
-    a :State.n.01 ;
-    :mem t00812:c1 ;
-    :name "IDAHO" ;
-    :place place:Idaho5596512
-  ] ;
-  :name "VERENIGDE STATEN" ;
-  :place place:VerenigdeStaten6252001 .
-

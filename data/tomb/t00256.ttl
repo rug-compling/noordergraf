@@ -28,7 +28,16 @@ t00256:p1
   :dob "1870-07-08"^^xsd:date ;
   :dod "1962-09-01"^^xsd:date ;
   :nam "HILJE STOLLENGA" ;
-  :pob t00256:c1 ;
+  :pob [
+    a :Village.n.02 ;
+    :name "ZUIDWOLDE" ;
+    :place place:Zuidwolde2743636 ;
+    :partOf [
+      a :Province.n.01 ;
+      :name "GRONINGEN" ;
+      :place place:ProvincieGroningen2755249
+    ]
+  ] ;
   :pod [
     a :Village.n.02 ;
     :name "HELPMAN" ;
@@ -42,15 +51,3 @@ t00256:p1
 t00256:p2
   a :Male ;
   :nam "E. VORENKAMP" .
-
-t00256:c1
-  a :Village.n.02 ;
-  :name "ZUIDWOLDE" ;
-  :place place:Zuidwolde2743636 .
-
-[]
-  a :Province.n.01 ;
-  :mem t00256:c1 ;
-  :name "GRONINGEN" ;
-  :place place:ProvincieGroningen2755249 .
-
