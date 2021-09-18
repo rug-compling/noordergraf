@@ -19,11 +19,11 @@ tomb:t00052
 
 t00052:p1
   a :Male ;
-  :dob "1878-01-01"^^xsd:date ;
-  :dod "1949-07-26"^^xsd:date ;
+  :dateOfBirth "1878-01-01"^^xsd:date ;
+  :dateOfDeath "1949-07-26"^^xsd:date ;
   :nam "GEERT BODDE FOLMER" ;
-  :pob t00052:c1 ;
-  :pod [
+  :placeOfBirth t00052:c1 ;
+  :placeOfDeath [
     a :Town.n.01 ;
     :name "HAREN" ;
     :place place:Haren2754841
@@ -31,15 +31,15 @@ t00052:p1
 
 t00052:p2
   a :Female ;
-  :dob "1860-01-01"^^xsd:date ;
-  :dod "1970-07-02"^^xsd:date ;
+  :dateOfBirth "1860-01-01"^^xsd:date ;
+  :dateOfDeath "1970-07-02"^^xsd:date ;
   :nam "ANTJE ZIJLSTRA" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "OLDEHOVE" ;
     :place place:Oldehove2749660
   ] ;
-  :pod t00052:c1 .
+  :placeOfDeath t00052:c1 .
 
 t00052:c1
   a :City.n.01 ;

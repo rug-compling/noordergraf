@@ -25,27 +25,27 @@ tomb:t00840
 
 t00840:p1
   a :Male ;
-  :dob "1830-09-27"^^xsd:date ;
-  :dod "1897-08-30"^^xsd:date ;
+  :dateOfBirth "1830-09-27"^^xsd:date ;
+  :dateOfDeath "1897-08-30"^^xsd:date ;
   :nam "PIETER ADRIANUS KROON" ;
-  :pob [
+  :placeOfBirth [
     a :Town.n.01 ;
     :name "SLIEDRECHT" ;
     :place place:Sliedrecht2747169
   ] ;
-  :pod t00840:c2 .
+  :placeOfDeath t00840:c2 .
 
 t00840:p2
   a :Female ;
-  :dob "1840-01-01"^^xsd:date ;
-  :dod "1929-05-13"^^xsd:date ;
+  :dateOfBirth "1840-01-01"^^xsd:date ;
+  :dateOfDeath "1929-05-13"^^xsd:date ;
   :nam "ANTJE REE" ;
-  :pob [
+  :placeOfBirth [
     a :Island.n.01 ;
     :name "TERSCHELLING" ;
     :place place:Terschelling2746414
   ] ;
-  :pod t00840:c2 ;
+  :placeOfDeath t00840:c2 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00840:p1

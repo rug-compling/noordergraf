@@ -20,10 +20,10 @@ tomb:t00894
 
 t00894:p1
   a :Male ;
-  :dob "1792-12-01"^^xsd:date ;
-  :dod "1869-09-21"^^xsd:date ;
+  :dateOfBirth "1792-12-01"^^xsd:date ;
+  :dateOfDeath "1869-09-21"^^xsd:date ;
   :nam "JAKOB MELES MELESSEN" ;
-  :pob [
+  :placeOfBirth [
     a :Location.n.01 ;
     :apx [
       a :Village.n.02 ;
@@ -31,7 +31,7 @@ t00894:p1
       :place place:Oldekerk2749658
     ]
   ] ;
-  :pod [
+  :placeOfDeath [
     a :Location.n.01 ;
     :apx [
       a :Village.n.02 ;
@@ -46,11 +46,11 @@ t00894:p1
 
 t00894:p2
   a :Female ;
-  :dob "1795-01-23"^^xsd:date ;
-  :dod "1847-10-24"^^xsd:date ;
+  :dateOfBirth "1795-01-23"^^xsd:date ;
+  :dateOfDeath "1847-10-24"^^xsd:date ;
   :nam "MARTHA LEURINGH" ;
-  :pob t00894:c5 ;
-  :pod t00894:c5 ;
+  :placeOfBirth t00894:c5 ;
+  :placeOfDeath t00894:c5 ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00894:p1

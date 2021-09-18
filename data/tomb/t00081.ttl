@@ -20,15 +20,15 @@ tomb:t00081
 
 t00081:p1
   a :Male ;
-  :dob "1882-09-07"^^xsd:date ;
-  :dod "1953-11-27"^^xsd:date ;
+  :dateOfBirth "1882-09-07"^^xsd:date ;
+  :dateOfDeath "1953-11-27"^^xsd:date ;
   :nam "GEORGE W. PADBERG" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "ENKHUIZEN" ;
     :place place:Enkhuizen2756077
   ] ;
-  :pod t00081:c1 ;
+  :placeOfDeath t00081:c1 ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00081:p2
@@ -36,11 +36,11 @@ t00081:p1
 
 t00081:p2
   a :Female ;
-  :dob "1891-03-25"^^xsd:date ;
-  :dod "1963-08-23"^^xsd:date ;
+  :dateOfBirth "1891-03-25"^^xsd:date ;
+  :dateOfDeath "1963-08-23"^^xsd:date ;
   :nam "GEERTRUIDA M.M. SCHOLTE" ;
-  :pob t00081:c1 ;
-  :pod t00081:c1 .
+  :placeOfBirth t00081:c1 ;
+  :placeOfDeath t00081:c1 .
 
 t00081:c1
   a :City.n.01 ;

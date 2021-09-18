@@ -30,15 +30,15 @@ oud notaris te boskoop
 
 t00920:p1
   a :Male ;
-  :dob "1902-08-15"^^xsd:date ;
-  :dod "1930-11-28"^^xsd:date ;
+  :dateOfBirth "1902-08-15"^^xsd:date ;
+  :dateOfDeath "1930-11-28"^^xsd:date ;
   :nam "WILLEM DIRK NICOLAAS SMEENK" ;
   :occ [
     a :Gynaecologist.n.01 ;
     :hco hisco:06120
   ] ;
-  :pob t00920:c1 ;
-  :pod [
+  :placeOfBirth t00920:c1 ;
+  :placeOfDeath [
     a :City.n.01 ;
     :name "GRONINGEN" ;
     :place place:Groningen2755251
@@ -46,16 +46,16 @@ t00920:p1
 
 t00920:p2
   a :Male ;
-  :dob "1901-07-30"^^xsd:date ;
-  :dod "1972-07-26"^^xsd:date ;
+  :dateOfBirth "1901-07-30"^^xsd:date ;
+  :dateOfDeath "1972-07-26"^^xsd:date ;
   :nam "GERARD JAN SMEENK" ;
   :occ [
     a :Notary.n.01 ;
     :hco hisco:12310 ;
     :loc t00920:c3
   ] ;
-  :pob t00920:c1 ;
-  :pod t00920:c3 .
+  :placeOfBirth t00920:c1 ;
+  :placeOfDeath t00920:c3 .
 
 t00920:c1
   a :Village.n.02 ;

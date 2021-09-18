@@ -27,11 +27,11 @@ tomb:t00263
 
 t00263:p1
   a :Male ;
-  :dob "1858-10-28"^^xsd:date ;
-  :dod "1927-07-09"^^xsd:date ;
+  :dateOfBirth "1858-10-28"^^xsd:date ;
+  :dateOfDeath "1927-07-09"^^xsd:date ;
   :nam "C.K. WIERINGA" ;
-  :pob t00263:c1 ;
-  :pod t00263:c1 ;
+  :placeOfBirth t00263:c1 ;
+  :placeOfDeath t00263:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00263:p2
@@ -39,15 +39,15 @@ t00263:p1
 
 t00263:p2
   a :Female ;
-  :dob "1876-11-10"^^xsd:date ;
-  :dod "1960-07-25"^^xsd:date ;
+  :dateOfBirth "1876-11-10"^^xsd:date ;
+  :dateOfDeath "1960-07-25"^^xsd:date ;
   :nam "T. SCHOKKENBROEK" ;
-  :pob [
+  :placeOfBirth [
     a :Town.n.01 ;
     :name "HOOGEZAND" ;
     :place place:Hoogezand2753706
   ] ;
-  :pod t00263:c1 .
+  :placeOfDeath t00263:c1 .
 
 t00263:c1
   a :City.n.01 ;

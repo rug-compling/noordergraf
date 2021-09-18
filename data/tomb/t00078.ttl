@@ -19,10 +19,10 @@ tomb:t00078
 
 t00078:p1
   a :Female ;
-  :dob "1848-03-09"^^xsd:date ;
-  :dod "1928-01-01"^^xsd:date ;
+  :dateOfBirth "1848-03-09"^^xsd:date ;
+  :dateOfDeath "1928-01-01"^^xsd:date ;
   :nam "ANNA MARIA E. ROBBE" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "MEPPEN" ;
     :place place:Meppen2871845 ;
@@ -32,7 +32,7 @@ t00078:p1
       :place place:Duitsland2921044
     ]
   ] ;
-  :pod t00078:c1 ;
+  :placeOfDeath t00078:c1 ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00078:p2
@@ -40,15 +40,15 @@ t00078:p1
 
 t00078:p2
   a :Male ;
-  :dob "1856-01-21"^^xsd:date ;
-  :dod "1936-01-10"^^xsd:date ;
+  :dateOfBirth "1856-01-21"^^xsd:date ;
+  :dateOfDeath "1936-01-10"^^xsd:date ;
   :nam "FREDERIK J. VAN VOORN" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "KLOOSTERBUREN" ;
     :place place:Kloosterburen2752627
   ] ;
-  :pod t00078:c1 .
+  :placeOfDeath t00078:c1 .
 
 t00078:c1
   a :City.n.01 ;

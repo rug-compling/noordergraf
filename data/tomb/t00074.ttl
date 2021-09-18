@@ -19,10 +19,10 @@ tomb:t00074
 
 t00074:p1
   a :Female ;
-  :dob "1896-11-13"^^xsd:date ;
-  :dod "1951-01-06"^^xsd:date ;
+  :dateOfBirth "1896-11-13"^^xsd:date ;
+  :dateOfDeath "1951-01-06"^^xsd:date ;
   :nam "MARIA ELISABETH HILLEBRAND" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "HAGEN" ;
     :place place:Hagen2912621 ;
@@ -32,7 +32,7 @@ t00074:p1
       :place place:Duitsland2921044
     ]
   ] ;
-  :pod t00074:c1 ;
+  :placeOfDeath t00074:c1 ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00074:p2
@@ -40,11 +40,11 @@ t00074:p1
 
 t00074:p2
   a :Male ;
-  :dob "1896-02-28"^^xsd:date ;
-  :dod "1955-03-08"^^xsd:date ;
+  :dateOfBirth "1896-02-28"^^xsd:date ;
+  :dateOfDeath "1955-03-08"^^xsd:date ;
   :nam "LORENZ WILHELM FISCHER" ;
-  :pob t00074:c1 ;
-  :pod t00074:c1 .
+  :placeOfBirth t00074:c1 ;
+  :placeOfDeath t00074:c1 .
 
 t00074:c1
   a :City.n.01 ;

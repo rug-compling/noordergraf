@@ -26,11 +26,11 @@ tomb:t00616
 
 t00616:p1
   a :Female ;
-  :dob "1825-06-21"^^xsd:date ;
-  :dod "1873-06-22"^^xsd:date ;
+  :dateOfBirth "1825-06-21"^^xsd:date ;
+  :dateOfDeath "1873-06-22"^^xsd:date ;
   :nam "A.H. SUUROVERSTE" ;
-  :pob t00616:c1 ;
-  :pod t00616:c1 ;
+  :placeOfBirth t00616:c1 ;
+  :placeOfDeath t00616:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :bef t00616:r3 ;
@@ -39,11 +39,11 @@ t00616:p1
 
 t00616:p2
   a :Male ;
-  :dob "1826-04-23"^^xsd:date ;
-  :dod "1901-07-12"^^xsd:date ;
+  :dateOfBirth "1826-04-23"^^xsd:date ;
+  :dateOfDeath "1901-07-12"^^xsd:date ;
   :nam "J. NIJMANDS" ;
-  :pob t00616:c1 ;
-  :pod t00616:c1 ;
+  :placeOfBirth t00616:c1 ;
+  :placeOfDeath t00616:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00616:p1
@@ -51,15 +51,15 @@ t00616:p2
 
 t00616:p3
   a :Female ;
-  :dob "1839-01-22"^^xsd:date ;
-  :dod "1906-05-29"^^xsd:date ;
+  :dateOfBirth "1839-01-22"^^xsd:date ;
+  :dateOfDeath "1906-05-29"^^xsd:date ;
   :nam "T. LANTING" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "GRONINGEN" ;
     :place place:Groningen2755251
   ] ;
-  :pod [
+  :placeOfDeath [
     a :Village.n.02 ;
     :name "DENNENOORD" ;
     :place place:Dennenoord2757197

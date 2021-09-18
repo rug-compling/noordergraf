@@ -20,11 +20,11 @@ tomb:t00906
 
 t00906:p1
   a :Male ;
-  :dob "1870-10-01"^^xsd:date ;
-  :dod "1936-01-04"^^xsd:date ;
+  :dateOfBirth "1870-10-01"^^xsd:date ;
+  :dateOfDeath "1936-01-04"^^xsd:date ;
   :nam "J.J. TEN HOOR" ;
-  :pob t00906:c1 ;
-  :pod [
+  :placeOfBirth t00906:c1 ;
+  :placeOfDeath [
     a :Village.n.02 ;
     :name "ZUIDHORN" ;
     :place place:Zuidhorn2743694
@@ -36,15 +36,15 @@ t00906:p1
 
 t00906:p2
   a :Female ;
-  :dob "1869-03-19"^^xsd:date ;
-  :dod "1954-02-23"^^xsd:date ;
+  :dateOfBirth "1869-03-19"^^xsd:date ;
+  :dateOfDeath "1954-02-23"^^xsd:date ;
   :nam "A. TALENS" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "RODEN" ;
     :place place:Roden2748026
   ] ;
-  :pod t00906:c1 .
+  :placeOfDeath t00906:c1 .
 
 t00906:c1
   a :Village.n.02 ;

@@ -23,11 +23,11 @@ tomb:t00372
 
 t00372:p1
   a :Male ;
-  :dob "1894-11-25"^^xsd:date ;
-  :dod "1962-05-16"^^xsd:date ;
+  :dateOfBirth "1894-11-25"^^xsd:date ;
+  :dateOfDeath "1962-05-16"^^xsd:date ;
   :nam "THIJS WILKENS" ;
-  :pob t00372:c1 ;
-  :pod t00372:c1 ;
+  :placeOfBirth t00372:c1 ;
+  :placeOfDeath t00372:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :att "GELIEFDE" ;
@@ -38,15 +38,15 @@ t00372:p1
 
 t00372:p2
   a :Female ;
-  :dob "1897-03-05"^^xsd:date ;
-  :dod "1964-09-16"^^xsd:date ;
+  :dateOfBirth "1897-03-05"^^xsd:date ;
+  :dateOfDeath "1964-09-16"^^xsd:date ;
   :nam "ALIDA OTTENS" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "PEIZE" ;
     :place place:Peize2748673
   ] ;
-  :pod t00372:c1 ;
+  :placeOfDeath t00372:c1 ;
   :rol [
     a :Parent.n.01
   ] .

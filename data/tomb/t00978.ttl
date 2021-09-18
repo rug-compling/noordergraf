@@ -23,23 +23,23 @@ tomb:t00978
 
 t00978:p1
   a :Male ;
-  :dob "1822"^^xsd:gYear ;
-  :dod "1911"^^xsd:gYear ;
+  :dateOfBirth "1822"^^xsd:gYear ;
+  :dateOfDeath "1911"^^xsd:gYear ;
   :nam "LUCAS MULDER" ;
-  :pob t00978:c1 ;
-  :pod t00978:c1 .
+  :placeOfBirth t00978:c1 ;
+  :placeOfDeath t00978:c1 .
 
 t00978:p2
   a :Female ;
-  :dob "1837"^^xsd:gYear ;
-  :dod "1912"^^xsd:gYear ;
+  :dateOfBirth "1837"^^xsd:gYear ;
+  :dateOfDeath "1912"^^xsd:gYear ;
   :nam "JANTIEN VAN DALEN" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "YDE" ;
     :place place:Yde2744130
   ] ;
-  :pod t00978:c1 .
+  :placeOfDeath t00978:c1 .
 
 t00978:c1
   a :Village.n.02 ;

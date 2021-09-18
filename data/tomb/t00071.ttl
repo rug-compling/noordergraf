@@ -2,8 +2,8 @@
 
 tomb:t00071
   a :Tomb ;
-  :dob "1838-05-03"^^xsd:date ;
-  :dod "1947-04-06"^^xsd:date ;
+  :dateOfBirth "1838-05-03"^^xsd:date ;
+  :dateOfDeath "1947-04-06"^^xsd:date ;
   :ent t00071:p1, t00071:p2 ;
   :image [
     dc:date "2019-09-25T16:03:05"^^xsd:dateTime ;
@@ -17,12 +17,12 @@ tomb:t00071
     ] ;
     :nd "+53.1904+006.5951"^^ll:
   ] ;
-  :pob [
+  :placeOfBirth [
     a :Town.n.01 ;
     :name "EMMEN" ;
     :place place:Emmen2756136
   ] ;
-  :pod t00071:c1 ;
+  :placeOfDeath t00071:c1 ;
   :rol [
     a :Brother.n.01
   ], [
@@ -32,10 +32,10 @@ tomb:t00071
 
 t00071:p1
   a :Female ;
-  :dob "1866-05-19"^^xsd:date ;
-  :dod "1939-09-26"^^xsd:date ;
+  :dateOfBirth "1866-05-19"^^xsd:date ;
+  :dateOfDeath "1939-09-26"^^xsd:date ;
   :nam "CATHARINA KRAMER" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "HOORN" ;
     :place place:Hoorn2753638 ;
@@ -45,7 +45,7 @@ t00071:p1
       :place place:ProvincieNoordHolland2749879
     ]
   ] ;
-  :pod t00071:c1 ;
+  :placeOfDeath t00071:c1 ;
   :rol [
     a :Wife.n.01 ;
     :att "INNIG GELIEFDE" ;

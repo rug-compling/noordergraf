@@ -30,11 +30,11 @@ tomb:t00397
 
 t00397:p1
   a :Male ;
-  :dob "1863-03-14"^^xsd:date ;
-  :dod "1928-03-24"^^xsd:date ;
+  :dateOfBirth "1863-03-14"^^xsd:date ;
+  :dateOfDeath "1928-03-24"^^xsd:date ;
   :nam "JAN WALTJE" ;
-  :pob t00397:c1 ;
-  :pod t00397:c1 ;
+  :placeOfBirth t00397:c1 ;
+  :placeOfDeath t00397:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00397:p2
@@ -42,15 +42,15 @@ t00397:p1
 
 t00397:p2
   a :Female ;
-  :dob "1858-06-04"^^xsd:date ;
-  :dod "1927-04-05"^^xsd:date ;
+  :dateOfBirth "1858-06-04"^^xsd:date ;
+  :dateOfDeath "1927-04-05"^^xsd:date ;
   :nam "MAAIKE VAN DER VEEN" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "WESTERGEEST" ;
     :place place:Westergeest2744744
   ] ;
-  :pod [
+  :placeOfDeath [
     a :Village.n.02 ;
     :name "BUITENPOST" ;
     :place place:Buitenpost2758131

@@ -20,35 +20,35 @@ tomb:t00620
 
 t00620:p1
   a :Person ;
-  :dob "1925-02-05"^^xsd:date ;
-  :dod "2015-04-02"^^xsd:date ;
+  :dateOfBirth "1925-02-05"^^xsd:date ;
+  :dateOfDeath "2015-04-02"^^xsd:date ;
   :nam "W.R. MULDER" ;
-  :pob t00620:c1 ;
-  :pod t00620:c2 .
+  :placeOfBirth t00620:c1 ;
+  :placeOfDeath t00620:c2 .
 
 t00620:p2
   a :Person ;
-  :dob "1930-06-06"^^xsd:date ;
-  :dod "1975-05-11"^^xsd:date ;
+  :dateOfBirth "1930-06-06"^^xsd:date ;
+  :dateOfDeath "1975-05-11"^^xsd:date ;
   :nam "R. HAVINGA" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "VEENDAM" ;
     :place place:Veendam2745783
   ] ;
-  :pod t00620:c1 .
+  :placeOfDeath t00620:c1 .
 
 t00620:p3
   a :Person ;
-  :dob "1926-03-20"^^xsd:date ;
-  :dod "2008-05-25"^^xsd:date ;
+  :dateOfBirth "1926-03-20"^^xsd:date ;
+  :dateOfDeath "2008-05-25"^^xsd:date ;
   :nam "P.J. STRIJBOSCH" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "ASTEN" ;
     :place place:Asten2759621
   ] ;
-  :pod t00620:c2 .
+  :placeOfDeath t00620:c2 .
 
 t00620:c1
   a :Village.n.02 ;

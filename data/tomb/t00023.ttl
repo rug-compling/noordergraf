@@ -25,15 +25,15 @@ tomb:t00023
 
 t00023:p1
   a :Male ;
-  :dob "1864-09-25"^^xsd:date ;
-  :dod "1930-01-06"^^xsd:date ;
+  :dateOfBirth "1864-09-25"^^xsd:date ;
+  :dateOfDeath "1930-01-06"^^xsd:date ;
   :nam "LAMBERTUS M. STRENGHOLT" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "VEENDAM" ;
     :place place:Veendam2745783
   ] ;
-  :pod t00023:c1 ;
+  :placeOfDeath t00023:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00023:p2
@@ -41,17 +41,17 @@ t00023:p1
 
 t00023:p2
   a :Female ;
-  :dob "1865-11-29"^^xsd:date ;
-  :dod "1949-03-07"^^xsd:date ;
+  :dateOfBirth "1865-11-29"^^xsd:date ;
+  :dateOfDeath "1949-03-07"^^xsd:date ;
   :nam "ZWAANTJE MULDER" .
 
 t00023:p3
   a :Female ;
-  :dob "1908-06-09"^^xsd:date ;
-  :dod "1945-02-25"^^xsd:date ;
+  :dateOfBirth "1908-06-09"^^xsd:date ;
+  :dateOfDeath "1945-02-25"^^xsd:date ;
   :nam "HENDRIKA M.G. KUMMER" ;
-  :pob t00023:c1 ;
-  :pod t00023:c1 ;
+  :placeOfBirth t00023:c1 ;
+  :placeOfDeath t00023:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :att "GELIEFDE" ;

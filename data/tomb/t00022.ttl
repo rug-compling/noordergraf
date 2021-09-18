@@ -27,15 +27,15 @@ tomb:t00022
 
 t00022:p1
   a :Female ;
-  :dob "1860-04-22"^^xsd:date ;
-  :dod "1931-09-16"^^xsd:date ;
+  :dateOfBirth "1860-04-22"^^xsd:date ;
+  :dateOfDeath "1931-09-16"^^xsd:date ;
   :nam "CHRISTINA MEIJER" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "STADSKANAAL" ;
     :place place:Stadskanaal2746860
   ] ;
-  :pod t00022:c1 ;
+  :placeOfDeath t00022:c1 ;
   :rol [
     a :Wife.n.01 ;
     :att "LIEVE" ;
@@ -50,11 +50,11 @@ t00022:p1
 
 t00022:p2
   a :Male ;
-  :dob "1860-02-01"^^xsd:date ;
-  :dod "1960-02-17"^^xsd:date ;
+  :dateOfBirth "1860-02-01"^^xsd:date ;
+  :dateOfDeath "1960-02-17"^^xsd:date ;
   :nam "H. SCHAAP" ;
-  :pob t00022:c1 ;
-  :pod t00022:c1 .
+  :placeOfBirth t00022:c1 ;
+  :placeOfDeath t00022:c1 .
 
 t00022:c1
   a :City.n.01 ;

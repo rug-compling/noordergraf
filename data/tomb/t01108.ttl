@@ -34,11 +34,11 @@ tomb:t01108
 
 t01108:p1
   a :Female ;
-  :dob "1843-10-05"^^xsd:date ;
-  :dod "1910-10-31"^^xsd:date ;
+  :dateOfBirth "1843-10-05"^^xsd:date ;
+  :dateOfDeath "1910-10-31"^^xsd:date ;
   :nam "AALTJE DE POEL" ;
-  :pob t01108:c1 ;
-  :pod t01108:c1 ;
+  :placeOfBirth t01108:c1 ;
+  :placeOfDeath t01108:c1 ;
   :rol [
     a :Parent.n.01 ;
     :att "GELIEFDE" ;
@@ -47,10 +47,10 @@ t01108:p1
 
 t01108:p2
   a :Male ;
-  :dob "1846-07-31"^^xsd:date ;
-  :dod "1917-01-20"^^xsd:date ;
+  :dateOfBirth "1846-07-31"^^xsd:date ;
+  :dateOfDeath "1917-01-20"^^xsd:date ;
   :nam "SIERK KOOISTER" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "WESTERGEEST" ;
     :place place:Westergeest2744744 ;
@@ -60,7 +60,7 @@ t01108:p2
       :place place:ProvincieFriesland2755812
     ]
   ] ;
-  :pod t01108:c1 ;
+  :placeOfDeath t01108:c1 ;
   :rol [
     a :Parent.n.01 ;
     :att "GELIEFDE" ;

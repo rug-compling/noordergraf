@@ -26,23 +26,23 @@ tomb:t00563
 
 t00563:p1
   a :Male ;
-  :dob "1848-10-21"^^xsd:date ;
-  :dod "1919-02-22"^^xsd:date ;
+  :dateOfBirth "1848-10-21"^^xsd:date ;
+  :dateOfDeath "1919-02-22"^^xsd:date ;
   :nam "JACOB VAN DER BORGH" ;
-  :pob t00563:c1 ;
-  :pod t00563:c1 .
+  :placeOfBirth t00563:c1 ;
+  :placeOfDeath t00563:c1 .
 
 t00563:p2
   a :Female ;
-  :dob "1844-05-05"^^xsd:date ;
-  :dod "1919-02-20"^^xsd:date ;
+  :dateOfBirth "1844-05-05"^^xsd:date ;
+  :dateOfDeath "1919-02-20"^^xsd:date ;
   :nam "MARGRITA J. KLIPHUIS" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "ANNERVEENSCHEKANAAL" ;
     :place place:Annerveenschekanaal2759724
   ] ;
-  :pod t00563:c1 ;
+  :placeOfDeath t00563:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00563:p1

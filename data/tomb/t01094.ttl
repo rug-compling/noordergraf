@@ -20,11 +20,11 @@ tomb:t01094
 
 t01094:p1
   a :Female ;
-  :dob "1898-08-04"^^xsd:date ;
-  :dod "1969-01-12"^^xsd:date ;
+  :dateOfBirth "1898-08-04"^^xsd:date ;
+  :dateOfDeath "1969-01-12"^^xsd:date ;
   :nam "ELIEZABETH BOS" ;
-  :pob t01094:c1 ;
-  :pod t01094:c1 ;
+  :placeOfBirth t01094:c1 ;
+  :placeOfDeath t01094:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01094:p2
@@ -32,15 +32,15 @@ t01094:p1
 
 t01094:p2
   a :Male ;
-  :dob "1907-12-26"^^xsd:date ;
-  :dod "1970-01-21"^^xsd:date ;
+  :dateOfBirth "1907-12-26"^^xsd:date ;
+  :dateOfDeath "1970-01-21"^^xsd:date ;
   :nam "GEERT DE WILDE" ;
-  :pob [
+  :placeOfBirth [
     a :Hamlet.n.03 ;
     :name "WILDERHOF" ;
     :place place:Wilderhof2744436
   ] ;
-  :pod [
+  :placeOfDeath [
     a :City.n.01 ;
     :name "DELFZIJL" ;
     :place place:Delfzijl2757340

@@ -20,11 +20,11 @@ tomb:t00211
 
 t00211:p1
   a :Male ;
-  :dob "1864-05-14"^^xsd:date ;
-  :dod "1926-01-24"^^xsd:date ;
+  :dateOfBirth "1864-05-14"^^xsd:date ;
+  :dateOfDeath "1926-01-24"^^xsd:date ;
   :nam "EPKE KNOLLEMA" ;
-  :pob t00211:c1 ;
-  :pod t00211:c2 ;
+  :placeOfBirth t00211:c1 ;
+  :placeOfDeath t00211:c2 ;
   :rol [
     a :Parent.n.01 ;
     :tgt t00211:p3
@@ -32,15 +32,15 @@ t00211:p1
 
 t00211:p2
   a :Female ;
-  :dob "1867-06-21"^^xsd:date ;
-  :dod "1937-05-15"^^xsd:date ;
+  :dateOfBirth "1867-06-21"^^xsd:date ;
+  :dateOfDeath "1937-05-15"^^xsd:date ;
   :nam "IMKE VAN DELDEN" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "NOORDDIJK" ;
     :place place:Noorddijk2749981
   ] ;
-  :pod t00211:c2 ;
+  :placeOfDeath t00211:c2 ;
   :rol [
     a :Parent.n.01 ;
     :tgt t00211:p3
@@ -48,11 +48,11 @@ t00211:p2
 
 t00211:p3
   a :Male ;
-  :dob "1891-02-19"^^xsd:date ;
-  :dod "1927-07-16"^^xsd:date ;
+  :dateOfBirth "1891-02-19"^^xsd:date ;
+  :dateOfDeath "1927-07-16"^^xsd:date ;
   :nam "BEREND E. KNOLLEMA" ;
-  :pob t00211:c1 ;
-  :pod t00211:c2 ;
+  :placeOfBirth t00211:c1 ;
+  :placeOfDeath t00211:c2 ;
   :rol [
     a :Brother.n.01
   ] .

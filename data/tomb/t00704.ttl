@@ -24,8 +24,8 @@ tomb:t00704
 
 t00704:p1
   a :Male ;
-  :dob "1868-03-29"^^xsd:date ;
-  :dod "1927-02-24"^^xsd:date ;
+  :dateOfBirth "1868-03-29"^^xsd:date ;
+  :dateOfDeath "1927-02-24"^^xsd:date ;
   :nam "WIARDUS WILLEM BAN HAERSMA BUMA" ;
   :occ [
     a :Judge.n.01 ;
@@ -45,12 +45,12 @@ t00704:p1
     ]
   ] ;
   :pfx "MR" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "SNEEK" ;
     :place place:Sneek2747063
   ] ;
-  :pod t00704:c1 .
+  :placeOfDeath t00704:c1 .
 
 t00704:c1
   a :Town.n.01 ;

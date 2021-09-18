@@ -27,11 +27,11 @@ tomb:t00337
 
 t00337:p1
   a :Male ;
-  :dob "1856-01-07"^^xsd:date ;
-  :dod "1916-04-15"^^xsd:date ;
+  :dateOfBirth "1856-01-07"^^xsd:date ;
+  :dateOfDeath "1916-04-15"^^xsd:date ;
   :nam "JAN VERMEULEN" ;
-  :pob t00337:c1 ;
-  :pod t00337:c1 ;
+  :placeOfBirth t00337:c1 ;
+  :placeOfDeath t00337:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :att "GELIEFDE" ;
@@ -40,15 +40,15 @@ t00337:p1
 
 t00337:p2
   a :Female ;
-  :dob "1860-01-21"^^xsd:date ;
-  :dod "1925-07-22"^^xsd:date ;
+  :dateOfBirth "1860-01-21"^^xsd:date ;
+  :dateOfDeath "1925-07-22"^^xsd:date ;
   :nam "ANNIGJE WESTENBERG" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "MEPPEL" ;
     :place place:Meppel2750947
   ] ;
-  :pod t00337:c1 .
+  :placeOfDeath t00337:c1 .
 
 t00337:c1
   a :Town.n.01 ;

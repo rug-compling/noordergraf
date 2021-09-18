@@ -27,15 +27,15 @@ tomb:t00177
 
 t00177:p1
   a :Male ;
-  :dob "1870-01-29"^^xsd:date ;
-  :dod "1932-03-21"^^xsd:date ;
+  :dateOfBirth "1870-01-29"^^xsd:date ;
+  :dateOfDeath "1932-03-21"^^xsd:date ;
   :nam "JELLE STUTVOET" ;
-  :pob [
+  :placeOfBirth [
     a :Village.n.02 ;
     :name "NIEUWE PEKELA" ;
     :place place:NieuwePekela2750272
   ] ;
-  :pod t00177:c1 ;
+  :placeOfDeath t00177:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00177:p2
@@ -43,15 +43,15 @@ t00177:p1
 
 t00177:p2
   a :Female ;
-  :dob "1874-11-15"^^xsd:date ;
-  :dod "1951-02-21"^^xsd:date ;
+  :dateOfBirth "1874-11-15"^^xsd:date ;
+  :dateOfDeath "1951-02-21"^^xsd:date ;
   :nam "HENDERIKA VEENTJER" ;
-  :pob [
+  :placeOfBirth [
     a :City.n.01 ;
     :name "VEENDAM" ;
     :place place:Veendam2745783
   ] ;
-  :pod t00177:c1 .
+  :placeOfDeath t00177:c1 .
 
 t00177:c1
   a :City.n.01 ;
