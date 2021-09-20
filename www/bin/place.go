@@ -61,8 +61,10 @@ Invalid query
 	what := req.FormValue("t")
 	if what == "pob" {
 		title = "Geboren"
+		what = "placeOfBirth"
 	} else if what == "pod" {
 		title = "Overleden"
+		what = "placeOfDeath"
 	} else {
 		fmt.Print(`Status: 400
 

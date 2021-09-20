@@ -46,7 +46,7 @@ PREFIX :    <https://noordergraf.rug.nl/ns#>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT DISTINCT ?url ?name ?lat ?lon {
   ?url a :Place .
-  ?p :pob / :place ?url .
+  ?p :placeOfBirth / :place ?url .
   ?url :placename ?name .
   ?url :geo / geo:lat ?lat .
   ?url :geo / geo:long ?lon .
@@ -58,7 +58,7 @@ PREFIX :    <https://noordergraf.rug.nl/ns#>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT DISTINCT ?url ?name ?lat ?lon {
   ?url a :Place .
-  ?p :pod / :place ?url .
+  ?p :placeOfDeath / :place ?url .
   ?url :placename ?name .
   ?url :geo / geo:lat ?lat .
   ?url :geo / geo:long ?lon .
