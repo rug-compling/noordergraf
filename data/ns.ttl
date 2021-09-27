@@ -3,33 +3,42 @@
 
 # TODO: eigenschappen: oorspronkelijke afkorting
 
+: a owl:Ontology ;
+  dc:title "Noordergraf" ;
+  dc:description "Ontology for Noordergraf" .
+
 # TODO: klassen: verwijzen naar entry op wordnet
 # Klopt dit?
 :wordnet a rdf:Property ;
   rdfs:domain :Class ;
-  rdfs:range ontolex:LexicalConcept .
+  rdfs:range ontolex:LexicalConcept ;
+  rdfs:isDefinedBy : .
 
 # TODO: mag dit, externe dingen een subklasse van een eigen klasse maken?
-:Date a rdfs:Class .
+:Date a rdfs:Class ;
+  rdfs:isDefinedBy : .
 xsd:date       rdfs:subClassOf :Date .
 xsd:gYearMonth rdfs:subClassOf :Date .
 xsd:gYear      rdfs:subClassOf :Date .
 
 :Class a rdfs:Class ;
   rdfs:comment "The top class for noordergraf."@eng ;
-  rdfs:comment "De hoogste class voor noordergraf."@nld .
+  rdfs:comment "De hoogste class voor noordergraf."@nld ;
+  rdfs:isDefinedBy : .
 
 :Geo a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:comment "The class of things with geographical coordinates."@eng ;
-  rdfs:comment "De class van dingen met geografische coördinaten."@nld .
+  rdfs:comment "De class van dingen met geografische coördinaten."@nld ;
+  rdfs:isDefinedBy : .
 
 :geo a rdf:Property ;
   rdfs:label "geo" ;
   rdfs:comment "Geographical coordinates."@eng ;
   rdfs:comment "Geografische coördinaten."@nld ;
   rdfs:domain :Geo ;
-  rdfs:range geo:SpatialThing .
+  rdfs:range geo:SpatialThing ;
+  rdfs:isDefinedBy : .
 
 :nd a rdf:Property ;
   rdfs:label "nd" ;
@@ -37,86 +46,100 @@ xsd:gYear      rdfs:subClassOf :Date .
   rdfs:comment "Door AllegroGraph gebruikt voor geodetische berekeningen."@nld ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/ISO_6709#String_expression_(Annex_H)> ;
   rdfs:domain :Geo ;
-  rdfs:range ll: .
+  rdfs:range ll: ;
+  rdfs:isDefinedBy : .
 
 :Photo a rdfs:Class ;
   rdfs:subClassOf :Geo ;
   rdfs:comment "A picture of a tomb stone."@eng ;
-  rdfs:comment "Een foto van een grafsteen."@nld .
+  rdfs:comment "Een foto van een grafsteen."@nld ;
+  rdfs:isDefinedBy : .
 
 :file a rdf:Property ;
   rdfs:label "file" ;
   rdfs:comment "Filename."@eng ;
   rdfs:comment "Bestandsnaam."@nld ;
   rdfs:domain :Photo ;
-  rdfs:range xsd:string .
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : .
 
 :Place a rdfs:Class ;
   rdfs:subClassOf :Geo ;
   rdfs:comment "Any place, such as place of birth or place of death, from hospital to country."@eng ;
-  rdfs:comment "Een plek, zoals geboorteplaats of plaats van overlijden, van ziekenhuis tot land."@nld .
+  rdfs:comment "Een plek, zoals geboorteplaats of plaats van overlijden, van ziekenhuis tot land."@nld ;
+  rdfs:isDefinedBy : .
 
 :geoFeature a rdf:Property ;
   rdfs:label "geoMap" ;
   rdfs:comment "A geonames Feature."@eng ;
   rdfs:comment "Een Feature van geonames."@nld ;
   rdfs:domain :Place ;
-  rdfs:range gn:Feature .
+  rdfs:range gn:Feature ;
+  rdfs:isDefinedBy : .
 
 :geoCode a rdf:Property ;
   rdfs:label "geoCode" ;
   rdfs:comment "A geonames featureCode."@eng ;
   rdfs:comment "Een featureCode van geonames."@nld ;
   rdfs:domain :Place ;
-  rdfs:range gn:featureCode .
+  rdfs:range gn:featureCode ;
+  rdfs:isDefinedBy : .
 
 :geoMap a rdf:Property ;
   rdfs:label "geoMap" ;
   rdfs:comment "A geonames locationMap."@eng ;
   rdfs:comment "Een locationMap van geonames."@nld ;
   rdfs:domain :Place ;
-  rdfs:range gn:locationMap .
+  rdfs:range gn:locationMap ;
+  rdfs:isDefinedBy : .
 
 :Site a rdfs:Class ;
   rdfs:subClassOf :Geo ;
   rdfs:comment "The site of a tomb, usually a cemetary."@eng ;
-  rdfs:comment "De plek van een graf, gewoonlijk een kerkhof of begraafplaats."@nld .
+  rdfs:comment "De plek van een graf, gewoonlijk een kerkhof of begraafplaats."@nld ;
+  rdfs:isDefinedBy : .
 
 :address a rdf:Property ;
   rdfs:label "address" ;
   rdfs:comment "Postal Address."@eng ;
   rdfs:comment "Adres, huisadres."@nld ;
   rdfs:domain :Site ;
-  rdfs:range schema:PostalAddress .
+  rdfs:range schema:PostalAddress ;
+  rdfs:isDefinedBy : .
 
 :Person a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:comment "A person mentioned by name on a tomb stone."@eng ;
   rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld ;
-  :wordnet pwnid:00007846-n .
+  :wordnet pwnid:00007846-n ;
+  rdfs:isDefinedBy : .
 
 :dob a rdf:Property ;
   rdfs:label "dob" ;
   rdfs:comment "Date of birth."@eng ;
   rdfs:comment "Geboortedatum."@nld ;
   rdfs:domain :Person ;
-  rdfs:range :Date .
+  rdfs:range :Date ;
+  rdfs:isDefinedBy : .
 
 :dod a rdf:Property ;
   rdfs:label "dod" ;
   rdfs:comment "Date of death."@eng ;
   rdfs:comment "Datum van overlijden."@nld ;
   rdfs:domain :Person ;
-  rdfs:range :Date .
+  rdfs:range :Date ;
+  rdfs:isDefinedBy : .
 
 :Male a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:comment "A male person"@eng ;
   rdfs:comment "Een mannelijk persoon"@nld ;
-  :wordnet pwnid:09647338-n .
+  :wordnet pwnid:09647338-n ;
+  rdfs:isDefinedBy : .
 
 :Female a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:comment "A female person"@eng ;
   rdfs:comment "Een vrouwelijk persoon"@nld ;
-  :wordnet pwnid:09642198-n .
+  :wordnet pwnid:09642198-n ;
+  rdfs:isDefinedBy : .
