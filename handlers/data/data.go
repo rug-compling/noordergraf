@@ -180,7 +180,11 @@ func main() {
 			return
 		}
 		lastModified = fi.ModTime().UTC()
-		data += strings.Replace(uri[1:], "/", ":", 1) + " dc:modified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
+		u := strings.Replace(uri[1:], "/", ":", 1)
+		if u == "ns" {
+			u = "\n:"
+		}
+		data += u + " dc:modified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
 	}
 
 	b, _ := ioutil.ReadFile("/net/noordergraf/data/prefix.ttl")
@@ -233,6 +237,7 @@ func getLanguage() {
 
 func convert(output string) string {
 	cmd := exec.Command("rapper", "-i", "turtle", "-o", output, "-I", "https://noordergraf.rug.nl/", "-q", "-")
+	cmd.Stderr = os.Stderr
 	stdin, err := cmd.StdinPipe()
 	if err != nil {
 		panic(err)
@@ -308,7 +313,7 @@ func doHTML() {
 	if uri == "/ns" {
 		lines := strings.Split(body, "\n")
 		for i, line := range lines {
-			if !strings.HasPrefix(line, ":") {
+			if !strings.HasPrefix(line, ":") || strings.HasPrefix(line, ": ") {
 				continue
 			}
 			a := strings.SplitN(line, " ", 2)
