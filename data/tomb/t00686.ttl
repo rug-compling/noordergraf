@@ -2,7 +2,6 @@
 
 tomb:t00686
   a :Tomb ;
-  :ent t00686:p1, t00686:p2 ;
   :image [
     dc:date "2019-12-14T13:17:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00686
     ] ;
     :nd "+53.0684+005.5234"^^ll:
   ] ;
+  :person t00686:p1, t00686:p2 ;
   :site site:fr8701DWbolsward ;
   :sym [
     a :Rose.n.01
   ] .
+
+t00686:c1
+  a :City.n.01 ;
+  :name "BOLSWARD" ;
+  :place place:Bolsward2758682 .
 
 t00686:p1
   a :Male ;
@@ -35,9 +40,4 @@ t00686:p1
 t00686:p2
   a :Female ;
   :nam "MAAIKE IJNTEMA" .
-
-t00686:c1
-  a :City.n.01 ;
-  :name "BOLSWARD" ;
-  :place place:Bolsward2758682 .
 

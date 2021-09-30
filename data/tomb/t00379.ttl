@@ -2,7 +2,6 @@
 
 tomb:t00379
   a :Tomb ;
-  :ent t00379:p1, t00379:p2 ;
   :image [
     dc:date "2019-10-25T16:59:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00379
     ] ;
     :nd "+53.0797+006.5728"^^ll:
   ] ;
+  :person t00379:p1, t00379:p2 ;
   :ref t00379:v1 ;
   :site site:dr9481CGvries .
 
@@ -30,6 +30,10 @@ t00379:p2
   :dateOfDeath "1937-10-29"^^xsd:date ;
   :nam "NANTJE MEEDENDORP" .
 
+t00379:v1
+  a :Verse.n.01 ;
+  :ord 13 .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -37,8 +41,4 @@ t00379:p2
     :ord 14 ;
     :prt t00379:v1
   ] .
-
-t00379:v1
-  a :Verse.n.01 ;
-  :ord 13 .
 

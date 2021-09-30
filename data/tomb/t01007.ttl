@@ -2,7 +2,7 @@
 
 tomb:t01007
   a :Tomb ;
-  :ent t01007:p1, t01007:p2, t01007:p3, t01007:g1, [
+  :ent t01007:g1, [
     a :Group.n.01 ;
     :rol [
       a :Child.n.02 ;
@@ -21,6 +21,7 @@ tomb:t01007
     ] ;
     :nd "+53.2444+006.6281"^^ll:
   ] ;
+  :person t01007:p1, t01007:p2, t01007:p3 ;
   :site site:gr9734ATgroningen ;
   :sym [
     a :Frond.n.01
@@ -29,6 +30,10 @@ tomb:t01007
   ], [
     a :Ribbon.n.01
   ] .
+
+t01007:g1
+  a :Group.n.01 ;
+  :mem t01007:p2, t01007:p3 .
 
 t01007:p1
   a :Male ;
@@ -43,8 +48,4 @@ t01007:p2
 t01007:p3
   a :Female ;
   :nam "S. HEKSTRA-BAKKER" .
-
-t01007:g1
-  a :Group.n.01 ;
-  :mem t01007:p2, t01007:p3 .
 

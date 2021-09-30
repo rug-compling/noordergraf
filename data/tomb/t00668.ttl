@@ -2,7 +2,7 @@
 
 tomb:t00668
   a :Tomb ;
-  :ent t00668:p1, t00668:p2, t00668:g1 ;
+  :ent t00668:g1 ;
   :image [
     dc:date "2019-12-14T13:51:30"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +15,15 @@ tomb:t00668
     ] ;
     :nd "+53.0688+005.5237"^^ll:
   ] ;
+  :person t00668:p1, t00668:p2 ;
   :site site:fr8701DWbolsward ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00668:g1
+  a :Group.n.01 ;
+  :mem t00668:p3 .
 
 t00668:p1
   a :Male ;
@@ -42,8 +47,4 @@ t00668:p2
 
 t00668:p3
   a :Person .
-
-t00668:g1
-  a :Group.n.01 ;
-  :mem t00668:p3 .
 

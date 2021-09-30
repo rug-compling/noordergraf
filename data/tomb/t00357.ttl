@@ -2,7 +2,6 @@
 
 tomb:t00357
   a :Tomb ;
-  :ent t00357:p1, t00357:p2 ;
   :image [
     dc:date "2019-10-25T17:33:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00357
     ] ;
     :nd "+53.0800+006.5718"^^ll:
   ] ;
+  :person t00357:p1, t00357:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
   :sym [
     a :Butterfly.n.01
   ] .
+
+t00357:c1
+  a :Village.n.02 ;
+  :name "BUNNE" ;
+  :place place:Bunne2758108 .
 
 t00357:p1
   a :Male ;
@@ -44,9 +49,4 @@ t00357:p2
     :name "GRONINGEN" ;
     :place place:Groningen2755251
   ] .
-
-t00357:c1
-  a :Village.n.02 ;
-  :name "BUNNE" ;
-  :place place:Bunne2758108 .
 

@@ -2,7 +2,7 @@
 
 tomb:t00191
   a :Tomb ;
-  :ent t00191:p1, t00191:p2, t00191:p3, t00191:g1 ;
+  :ent t00191:g1 ;
   :image [
     dc:date "2019-10-05T09:58:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,9 +15,23 @@ tomb:t00191
     ] ;
     :nd "+53.1899+006.5930"^^ll:
   ] ;
+  :person t00191:p1, t00191:p2, t00191:p3 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :WeepingWillow
+  ] .
+
+t00191:c2
+  a :Village.n.02 ;
+  :name "OUDESCHOOT" ;
+  :place place:Oudeschoot2749007 .
+
+t00191:g1
+  a :Group.n.01 ;
+  :mem t00191:p1, t00191:p2 ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00191:p3
   ] .
 
 t00191:p1
@@ -50,18 +64,5 @@ t00191:p3
   :rol [
     a :Son.n.01 ;
     :tgt t00191:g1
-  ] .
-
-t00191:c2
-  a :Village.n.02 ;
-  :name "OUDESCHOOT" ;
-  :place place:Oudeschoot2749007 .
-
-t00191:g1
-  a :Group.n.01 ;
-  :mem t00191:p1, t00191:p2 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00191:p3
   ] .
 

@@ -2,7 +2,6 @@
 
 tomb:t00653
   a :Tomb ;
-  :ent t00653:p1, t00653:p2, t00653:p3 ;
   :image [
     dc:date "2019-11-23T10:09:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,18 @@ tomb:t00653
     ] ;
     :nd "+53.1636+006.7546"^^ll:
   ] ;
+  :person t00653:p1, t00653:p2, t00653:p3 ;
   :quo "MAAR DE RECHTVAARDIGE \\ BETROUWT ZELFS IN \\ ZIJNEN DOOD."@nld ;
   :ref "SPREUKEN 14:32"@nld ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :Rose.n.01
   ] .
+
+t00653:c1
+  a :Hamlet.n.03 ;
+  :name "KALKWIJK" ;
+  :place place:Kalkwijk2753130 .
 
 t00653:p1
   a :Male ;
@@ -44,9 +49,4 @@ t00653:p2
 t00653:p3
   a :Female ;
   :nam "GRIETKE KLEVERINGA" .
-
-t00653:c1
-  a :Hamlet.n.03 ;
-  :name "KALKWIJK" ;
-  :place place:Kalkwijk2753130 .
 

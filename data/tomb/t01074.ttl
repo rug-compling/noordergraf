@@ -2,7 +2,6 @@
 
 tomb:t01074
   a :Tomb ;
-  :ent t01074:p1, t01074:p2 ;
   :image [
     dc:date "2020-05-15T17:31:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01074
     ] ;
     :nd "+53.1625+006.6148"^^ll:
   ] ;
+  :person t01074:p1, t01074:p2 ;
   :ref t01074:v1 ;
   :site site:gr9752CMharen .
 
@@ -30,6 +30,11 @@ t01074:p2
   :dateOfDeath "1969-03-15"^^xsd:date ;
   :nam "CORNELIA ELEMA" .
 
+t01074:v1
+  a :Verse.n.01 ;
+  :ord 8 ;
+  :txt "DOOR GENADE ZIJT GIJ BEHOUDEN" .
+
 []
   a :Epistle_to_the_Ephesians.n.01 ;
   :prt [
@@ -37,9 +42,4 @@ t01074:p2
     :ord 2 ;
     :prt t01074:v1
   ] .
-
-t01074:v1
-  a :Verse.n.01 ;
-  :ord 8 ;
-  :txt "DOOR GENADE ZIJT GIJ BEHOUDEN" .
 

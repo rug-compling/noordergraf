@@ -2,7 +2,7 @@
 
 tomb:t00217
   a :Tomb ;
-  :ent t00217:p1, t00217:p2, t00217:p3, t00217:g1 ;
+  :ent t00217:g1 ;
   :image [
     dc:date "2019-10-08T14:45:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,16 @@ tomb:t00217
     ] ;
     :nd "+53.2225+006.6369"^^ll:
   ] ;
+  :person t00217:p1, t00217:p2, t00217:p3 ;
   :quo "HAAR HEENGAAN WAS VREDE" ;
   :site site:gr9723EWgroningen ;
   :sym [
     a :Rose.n.01
   ] .
+
+t00217:g1
+  a :Group.n.01 ;
+  :mem t00217:p2, t00217:p3 .
 
 t00217:p1
   a :Female ;
@@ -48,8 +53,4 @@ t00217:p2
 t00217:p3
   a :Female ;
   :nam "ANNA BOLT" .
-
-t00217:g1
-  a :Group.n.01 ;
-  :mem t00217:p2, t00217:p3 .
 

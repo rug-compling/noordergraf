@@ -2,7 +2,7 @@
 
 tomb:t00413
   a :Tomb ;
-  :ent t00413:p1, t00413:p2, t00413:p3, t00413:g1 ;
+  :ent t00413:g1 ;
   :image [
     dc:date "2019-10-25T17:12:25"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +15,15 @@ tomb:t00413
     ] ;
     :nd "+53.0793+006.5717"^^ll:
   ] ;
+  :person t00413:p1, t00413:p2, t00413:p3 ;
   :site site:dr9481CGvries ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00413:g1
+  a :Group.n.01 ;
+  :mem t00413:p2, t00413:p3 .
 
 t00413:p1
   a :Male ;
@@ -49,8 +54,4 @@ t00413:p2
 t00413:p3
   a :Female ;
   :nam "A. BOERS-BODENSTAFF" .
-
-t00413:g1
-  a :Group.n.01 ;
-  :mem t00413:p2, t00413:p3 .
 

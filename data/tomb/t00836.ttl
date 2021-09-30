@@ -2,7 +2,6 @@
 
 tomb:t00836
   a :Tomb ;
-  :ent t00836:p1, t00836:p2 ;
   :image [
     dc:date "2020-02-15T15:51:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00836
     ] ;
     :nd "+52.7767+006.8041"^^ll:
   ] ;
+  :person t00836:p1, t00836:p2 ;
   :quo "RUST ZACHT LIEVE ECHTGENOOT EN MOEDER"@nld ;
   :site site:dr7841CDsleen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00836:c1
+  a :Village.n.02 ;
+  :name "NOORD-SLEEN" ;
+  :place place:NoordSleen2749830 .
 
 t00836:p1
   a :Female ;
@@ -42,9 +47,4 @@ t00836:p2
     a :Spouse.n.01 ;
     :tgt t00836:p1
   ] .
-
-t00836:c1
-  a :Village.n.02 ;
-  :name "NOORD-SLEEN" ;
-  :place place:NoordSleen2749830 .
 

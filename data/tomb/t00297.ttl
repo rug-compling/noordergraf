@@ -2,7 +2,7 @@
 
 tomb:t00297
   a :Tomb ;
-  :ent t00297:p1, t00297:p2, t00297:p3, t00297:g1 ;
+  :ent t00297:g1 ;
   :image [
     dc:date "2019-10-19T14:40:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +15,22 @@ tomb:t00297
     ] ;
     :nd "+52.7151+006.4739"^^ll:
   ] ;
+  :person t00297:p1, t00297:p2, t00297:p3 ;
   :quo "DE LEVENSDRAAD QWORDT SCHIELIJK AFGESNEEN" ;
   :ref "PSALM 90" ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00297:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
+
+t00297:g1
+  a :Group.n.01 ;
+  :mem t00297:p2, t00297:p3 .
 
 t00297:p1
   a :Female ;
@@ -44,13 +54,4 @@ t00297:p3
     a :Wife.n.01 ;
     :tgt t00297:p2
   ] .
-
-t00297:c1
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
-
-t00297:g1
-  a :Group.n.01 ;
-  :mem t00297:p2, t00297:p3 .
 

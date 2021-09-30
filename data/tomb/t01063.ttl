@@ -2,7 +2,6 @@
 
 tomb:t01063
   a :Tomb ;
-  :ent t01063:p1, t01063:p2 ;
   :image [
     dc:date "2020-05-01T15:23:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,16 @@ tomb:t01063
     ] ;
     :nd "+53.1228+006.2504"^^ll:
   ] ;
+  :person t01063:p1, t01063:p2 ;
   :site site:gr9367PAde_wilp ;
   :sym [
     a :Branch.n.02
   ], [
     a :Branch.n.02
   ] .
+
+t01063:g2
+  a :Group.n.01 .
 
 t01063:p1
   a :Male ;
@@ -47,7 +50,4 @@ t01063:p2
     a :Great_grandparent.n.01 ;
     :tgt t01063:g2
   ] .
-
-t01063:g2
-  a :Group.n.01 .
 

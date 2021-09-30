@@ -2,7 +2,6 @@
 
 tomb:t00390
   a :Tomb ;
-  :ent t00390:p1, t00390:p2 ;
   :image [
     dc:date "2019-10-26T15:05:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00390
     ] ;
     :nd "+53.2519+006.1452"^^ll:
   ] ;
+  :person t00390:p1, t00390:p2 ;
   :site site:fr9285TCbuitenpost ;
   :sym t00390:s1 .
+
+t00390:c2
+  a :Village.n.02 ;
+  :name "BUITENPOST" ;
+  :place place:Buitenpost2758131 .
 
 t00390:p1
   a :Male ;
@@ -48,10 +53,6 @@ t00390:p2
     a :Parent.n.01
   ] .
 
-t00390:c2
-  a :Village.n.02 ;
-  :name "BUITENPOST" ;
-  :place place:Buitenpost2758131 .
-
 t00390:s1
   a :OakBranch .
+

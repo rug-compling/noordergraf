@@ -2,7 +2,6 @@
 
 tomb:t00447
   a :Tomb ;
-  :ent t00447:p1, t00447:p2 ;
   :image [
     dc:date "2019-11-02T11:29:17"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00447
     ] ;
     :nd "+53.4789+006.1603"^^ll:
   ] ;
+  :person t00447:p1, t00447:p2 ;
   :site site:fr9166NAschiermonnikoog .
 
 t00447:p1
@@ -25,12 +25,12 @@ t00447:p1
   :placeOfBirth [
     a :Town.n.01 ;
     :name "ZWETTL" ;
-    :place place:ZwettlStadt2760416 ;
     :partOf [
       a :Country.n.02 ;
       :name "OOSTENRIJK" ;
       :place place:Oostenrijk2782113
-    ]
+    ] ;
+    :place place:ZwettlStadt2760416
   ] ;
   :placeOfDeath [
     a :Island.n.01 ;
@@ -73,3 +73,4 @@ t00447:p2
     a :Great_grandfather.n.01 ;
     :tgt t00447:p5
   ] .
+

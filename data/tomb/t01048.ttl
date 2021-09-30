@@ -2,7 +2,7 @@
 
 tomb:t01048
   a :Tomb ;
-  :ent t01048:p1, t01048:p2, [
+  :ent [
     a :Group.n.01 ;
     :rol [
       a :Child.n.02 ;
@@ -24,12 +24,18 @@ tomb:t01048
     ] ;
     :nd "+53.1229+006.2509"^^ll:
   ] ;
+  :person t01048:p1, t01048:p2 ;
   :site site:gr9367PAde_wilp ;
   :sym [
     a :Frond.n.01
   ], [
     a :Frond.n.01
   ] .
+
+t01048:c1
+  a :Village.n.02 ;
+  :name "DE WILP" ;
+  :place place:DeWilp2756932 .
 
 t01048:p1
   a :Female ;
@@ -47,9 +53,4 @@ t01048:p1
 t01048:p2
   a :Male ;
   :nam "SIJBE DE JONG" .
-
-t01048:c1
-  a :Village.n.02 ;
-  :name "DE WILP" ;
-  :place place:DeWilp2756932 .
 

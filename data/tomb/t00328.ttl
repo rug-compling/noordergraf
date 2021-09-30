@@ -2,7 +2,6 @@
 
 tomb:t00328
   a :Tomb ;
-  :ent t00328:p1, t00328:p2 ;
   :image [
     dc:date "2019-10-19T14:41:15"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,18 @@ tomb:t00328
     ] ;
     :nd "+52.7150+006.4739"^^ll:
   ] ;
+  :person t00328:p1, t00328:p2 ;
   :quo "RUST ZACHT" ;
   :ref "PSALM 90:2", "PSALM 97:6", "PSALM 97:7" ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00328:c2
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00328:p1
   a :Male ;
@@ -51,9 +56,4 @@ t00328:p2
   ], [
     a :Grandparent.n.01
   ] .
-
-t00328:c2
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
 

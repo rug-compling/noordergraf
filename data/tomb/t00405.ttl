@@ -2,7 +2,6 @@
 
 tomb:t00405
   a :Tomb ;
-  :ent t00405:p1, t00405:p2 ;
   :image [
     dc:date "2019-10-26T14:45:02"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00405
     ] ;
     :nd "+53.2518+006.1449"^^ll:
   ] ;
+  :person t00405:p1, t00405:p2 ;
   :site site:fr9285TCbuitenpost ;
   :sym [
     a :Composite.n.01 ;
@@ -26,6 +26,11 @@ tomb:t00405
       a :Ribbon.n.01
     ]
   ] .
+
+t00405:c1
+  a :Village.n.02 ;
+  :name "BUITENPOST" ;
+  :place place:Buitenpost2758131 .
 
 t00405:p1
   a :Male ;
@@ -50,19 +55,15 @@ t00405:p2
   :placeOfBirth [
     a :Village.n.02 ;
     :name "STROOBOS" ;
-    :place place:Stroobos2746589 ;
     :partOf [
       a :Province.n.01 ;
       :name "FRIESLAND" ;
       :place place:ProvincieFriesland2755812
-    ]
+    ] ;
+    :place place:Stroobos2746589
   ] ;
   :placeOfDeath t00405:c1 ;
   :rol [
     a :Parent.n.01
   ] .
 
-t00405:c1
-  a :Village.n.02 ;
-  :name "BUITENPOST" ;
-  :place place:Buitenpost2758131 .

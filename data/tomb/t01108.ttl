@@ -2,18 +2,11 @@
 
 tomb:t01108
   a :Tomb ;
-  :site site:gr9843AGgrijpskerk ;
   :image [
+    dc:date "2021-03-06T08:49:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01108.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-06T08:49:44"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2630 ;
@@ -21,8 +14,9 @@ tomb:t01108
     ] ;
     :nd "+53.2630+006.3120"^^ll:
   ] ;
-  :ent t01108:p1, t01108:p2 ;
+  :person t01108:p1, t01108:p2 ;
   :quo "RUST ZACHT!"@nld ;
+  :site site:gr9843AGgrijpskerk ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -31,6 +25,14 @@ tomb:t01108
       a :Ribbon.n.01
     ]
   ] .
+
+t01108:c1
+  a :Village.n.02 ;
+  :name "GRIJPSKERK" ;
+  :place place:Grijpskerk2755317 .
+
+t01108:g1
+  a :Group.n.01 .
 
 t01108:p1
   a :Female ;
@@ -52,24 +54,16 @@ t01108:p2
   :placeOfBirth [
     a :Village.n.02 ;
     :name "WESTERGEEST" ;
-    :place place:Westergeest2744744 ;
     :partOf [
       a :Province.n.01 ;
       :name "FRIESLAND" ;
       :place place:ProvincieFriesland2755812
-    ]
+    ] ;
+    :place place:Westergeest2744744
   ] ;
   :placeOfDeath t01108:c1 ;
   :rol [
     a :Parent.n.01 ;
     :tgt t01108:g1
   ] .
-
-t01108:c1
-  a :Village.n.02 ;
-  :name "GRIJPSKERK" ;
-  :place place:Grijpskerk2755317 .
-
-t01108:g1
-  a :Group.n.01 .
 

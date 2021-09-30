@@ -2,7 +2,6 @@
 
 tomb:t00368
   a :Tomb ;
-  :ent t00368:p1, t00368:p2, t00368:p3 ;
   :image [
     dc:date "2019-10-25T17:22:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,19 @@ tomb:t00368
     ] ;
     :nd "+53.0796+006.5716"^^ll:
   ] ;
+  :person t00368:p1, t00368:p2, t00368:p3 ;
   :quo "RUST ZACHT" ;
   :site site:dr9481CGvries .
+
+t00368:c1
+  a :Village.n.02 ;
+  :name "DONDEREN" ;
+  :place place:Donderen2756731 .
+
+t00368:c4
+  a :Village.n.02 ;
+  :name "DONDEREN" ;
+  :place place:Donderen2756731 .
 
 t00368:p1
   a :Male ;
@@ -64,14 +74,4 @@ t00368:p3
       :mem t00368:p1, t00368:p2
     ]
   ] .
-
-t00368:c1
-  a :Village.n.02 ;
-  :name "DONDEREN" ;
-  :place place:Donderen2756731 .
-
-t00368:c4
-  a :Village.n.02 ;
-  :name "DONDEREN" ;
-  :place place:Donderen2756731 .
 

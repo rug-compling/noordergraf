@@ -2,7 +2,6 @@
 
 tomb:t00717
   a :Tomb ;
-  :ent t00717:p1, t00717:p2, t00717:p3 ;
   :image [
     dc:date "2019-12-21T13:26:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,18 @@ tomb:t00717
     ] ;
     :nd "+52.7807+006.8997"^^ll:
   ] ;
+  :person t00717:p1, t00717:p2, t00717:p3 ;
   :site site:dr7811HEemmen .
+
+t00717:c1
+  a :City.n.01 ;
+  :name "TERNEUZEN" ;
+  :place place:Terneuzen2746420 .
+
+t00717:c2
+  a :Town.n.01 ;
+  :name "EMMEN" ;
+  :place place:Emmen2756136 .
 
 t00717:p1
   a :Male ;
@@ -41,16 +51,6 @@ t00717:p3
   :nam "SUZANNA DE WITTE" ;
   :placeOfBirth t00717:c1 ;
   :placeOfDeath t00717:c2 .
-
-t00717:c1
-  a :City.n.01 ;
-  :name "TERNEUZEN" ;
-  :place place:Terneuzen2746420 .
-
-t00717:c2
-  a :Town.n.01 ;
-  :name "EMMEN" ;
-  :place place:Emmen2756136 .
 
 t00717:r1
   a :Widower.n.01 ;

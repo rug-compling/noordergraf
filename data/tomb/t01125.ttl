@@ -2,26 +2,7 @@
 
 tomb:t01125
   a :Tomb ;
-  :site site:gr9801CAzuidhorn ;
-  :image [
-    a :Photo ;
-    :file img:t01125.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-31T17:42:57"^^xsd:dateTime ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2402 ;
-      geo:long 6.4101
-    ] ;
-    :nd "+53.2402+006.4101"^^ll:
-  ] ;
-  :ent t01125:p1, [
+  :ent [
     a :Group.n.01 ;
     :mem t01125:p2, t01125:p3 ;
     :rol [
@@ -29,7 +10,21 @@ tomb:t01125
       :tgt t01125:p1
     ]
   ] ;
-  :ref t01125:v2 .
+  :image [
+    dc:date "2021-03-31T17:42:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t01125.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2402 ;
+      geo:long 6.4101
+    ] ;
+    :nd "+53.2402+006.4101"^^ll:
+  ] ;
+  :person t01125:p1 ;
+  :ref t01125:v2 ;
+  :site site:gr9801CAzuidhorn .
 
 t01125:p1
   a :Male ;
@@ -38,8 +33,8 @@ t01125:p1
   :nam "GERRIT VAN 'T RIET" ;
   :occupation [
     a :Pastor.n.01 ;
-    :text "gereformeerd predikant" ;
-    :hisco hisco:14120
+    :hisco hisco:14120 ;
+    :text "gereformeerd predikant"
   ] .
 
 t01125:p2
@@ -56,6 +51,10 @@ t01125:p3
     :tgt t01125:p1
   ] .
 
+t01125:v2
+  a :Part.n.09 ;
+  :nam "A" .
+
 []
   a :Galations.n.02 ;
   :prt [
@@ -67,8 +66,4 @@ t01125:p3
       :prt t01125:v2
     ]
   ] .
-
-t01125:v2
-  a :Part.n.09 ;
-  :nam "A" .
 

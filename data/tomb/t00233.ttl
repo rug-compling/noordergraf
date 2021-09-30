@@ -2,7 +2,7 @@
 
 tomb:t00233
   a :Tomb ;
-  :ent t00233:p1, t00233:p2, t00233:p3, t00233:g1 ;
+  :ent t00233:g1 ;
   :image [
     dc:date "2019-10-08T14:38:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,16 @@ tomb:t00233
     ] ;
     :nd "+53.2225+006.6366"^^ll:
   ] ;
+  :person t00233:p1, t00233:p2, t00233:p3 ;
   :site site:gr9723EWgroningen ;
   :sym [
     a :Composite.n.01 ;
     :prt t00233:s2, t00233:s4, t00233:s6, t00233:s8
   ] .
+
+t00233:g1
+  a :Group.n.01 ;
+  :mem t00233:p2, t00233:p3 .
 
 t00233:p1
   a :Female ;
@@ -33,16 +38,12 @@ t00233:p1
 
 t00233:p2
   a :Male ;
-  :text "wijlen L.A. van DIJKEN" ;
-  :nam "L.A. VAN DIJKEN" .
+  :nam "L.A. VAN DIJKEN" ;
+  :text "wijlen L.A. van DIJKEN" .
 
 t00233:p3
   a :Female ;
   :nam "L.P. WIGBOLDUS" .
-
-t00233:g1
-  a :Group.n.01 ;
-  :mem t00233:p2, t00233:p3 .
 
 t00233:s2
   a :OakBranch .
@@ -55,3 +56,4 @@ t00233:s6
 
 t00233:s8
   a :OliveBranch .
+

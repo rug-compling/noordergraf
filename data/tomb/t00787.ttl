@@ -2,7 +2,6 @@
 
 tomb:t00787
   a :Tomb ;
-  :ent t00787:p1 ;
   :image [
     dc:date "2019-12-21T12:56:56"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00787
     ] ;
     :nd "+52.7816+006.8968"^^ll:
   ] ;
+  :person t00787:p1 ;
   :site site:dr7811HEemmen .
+
+t00787:c1
+  a :Village.n.02 ;
+  :name "NOORDBARGE" ;
+  :place place:Noordbarge2749996 .
 
 t00787:p1
   a :Male ;
@@ -24,9 +29,4 @@ t00787:p1
   :nam "WOLTER GARMING" ;
   :placeOfBirth t00787:c1 ;
   :placeOfDeath t00787:c1 .
-
-t00787:c1
-  a :Village.n.02 ;
-  :name "NOORDBARGE" ;
-  :place place:Noordbarge2749996 .
 

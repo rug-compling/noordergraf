@@ -2,7 +2,6 @@
 
 tomb:t00302
   a :Tomb ;
-  :ent t00302:p1, t00302:p2 ;
   :image [
     dc:date "2019-10-19T14:32:16"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00302
     ] ;
     :nd "+52.7159+006.4742"^^ll:
   ] ;
+  :person t00302:p1, t00302:p2 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :Composite.n.01 ;
@@ -34,6 +34,11 @@ Aleida
 Roelina Jentina Sterken
 Geb. te Dwingeloo 2 Maart 1858,
 Overl. te Hengelo (O) 31 Dec. 1951.""" .
+
+t00302:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00302:p1
   a :Male ;
@@ -56,15 +61,11 @@ t00302:p2
   :placeOfDeath [
     a :City.n.01 ;
     :name "HENGELO" ;
-    :place place:Hengelo2754394 ;
     :partOf [
       a :Province.n.01 ;
       :name "OVERIJSSEL" ;
       :place place:ProvincieOverijssel2748838
-    ]
+    ] ;
+    :place place:Hengelo2754394
   ] .
 
-t00302:c1
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .

@@ -2,7 +2,6 @@
 
 tomb:t00913
   a :Tomb ;
-  :ent t00913:p1, t00913:p2 ;
   :image [
     dc:date "2020-03-07T14:08:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00913
     ] ;
     :nd "+53.1717+006.3648"^^ll:
   ] ;
+  :person t00913:p1, t00913:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:gr9351RLtolbert ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00913:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 
 t00913:p1
   a :Male ;
@@ -36,9 +41,4 @@ t00913:p1
 t00913:p2
   a :Female ;
   :nam "DIENA POSTHUMUS" .
-
-t00913:c1
-  a :Village.n.02 ;
-  :name "TOLBERT" ;
-  :place place:Tolbert2746234 .
 

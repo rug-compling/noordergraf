@@ -2,7 +2,6 @@
 
 tomb:t00008
   a :Tomb ;
-  :ent t00008:p1, t00008:p2 ;
   :image [
     dc:date "2019-09-25T16:49:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,17 @@ tomb:t00008
     ] ;
     :nd "+53.1899+006.5929"^^ll:
   ] ;
+  :person t00008:p1, t00008:p2 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00008:g1
+  a :Group.n.01 .
+
+t00008:g2
+  a :Group.n.01 .
 
 t00008:p1
   a :Female ;
@@ -47,6 +53,10 @@ t00008:p2
     :tgt t00008:g2
   ] .
 
+t00008:v1
+  a :Verse.n.01 ;
+  :ord 14 .
+
 []
   a :Matthew.n.02 ;
   :prt [
@@ -54,14 +64,4 @@ t00008:p2
     :ord 19 ;
     :prt t00008:v1
   ] .
-
-t00008:g1
-  a :Group.n.01 .
-
-t00008:g2
-  a :Group.n.01 .
-
-t00008:v1
-  a :Verse.n.01 ;
-  :ord 14 .
 

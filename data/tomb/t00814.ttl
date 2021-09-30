@@ -2,7 +2,6 @@
 
 tomb:t00814
   a :Tomb ;
-  :ent t00814:p1 ;
   :image [
     dc:date "2020-02-01T12:47:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00814
     ] ;
     :nd "+53.2293+006.5494"^^ll:
   ] ;
+  :person t00814:p1 ;
   :site site:gr9741ACgroningen ;
   :sym [
     a :Frond.n.01
@@ -23,6 +23,11 @@ tomb:t00814
   ], [
     a :Sandglass.n.01
   ] .
+
+t00814:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00814:p1
   a :Male ;
@@ -35,9 +40,4 @@ t00814:p1
   ] ;
   :placeOfBirth t00814:c1 ;
   :placeOfDeath t00814:c1 .
-
-t00814:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00519
   a :Tomb ;
-  :ent t00519:p1, t00519:p2 ;
   :image [
     dc:date "2019-11-23T10:17:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00519
     ] ;
     :nd "+53.1652+006.7538"^^ll:
   ] ;
+  :person t00519:p1, t00519:p2 ;
   :quo "VEILIG IN JEZUS ARMEN"@nld ;
   :ref t00519:v1 ;
   :site site:gr9601KAhoogezand ;
@@ -52,6 +52,10 @@ t00519:p2
     a :Grandmother.n.01
   ] .
 
+t00519:v1
+  a :Verse.n.01 ;
+  :ord 1 .
+
 []
   a :Second_Epistle_to_the_Corinthians.n.01 ;
   :prt [
@@ -59,8 +63,4 @@ t00519:p2
     :ord 5 ;
     :prt t00519:v1
   ] .
-
-t00519:v1
-  a :Verse.n.01 ;
-  :ord 1 .
 

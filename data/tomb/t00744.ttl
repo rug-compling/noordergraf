@@ -2,7 +2,6 @@
 
 tomb:t00744
   a :Tomb ;
-  :ent t00744:p1, t00744:p2 ;
   :image [
     dc:date "2019-12-29T10:19:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00744
     ] ;
     :nd "+53.1806+006.9689"^^ll:
   ] ;
+  :person t00744:p1, t00744:p2 ;
   :ref "HEBREEËN 4:9"@nld ;
   :site site:gr9679KHscheemda ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00744:c1
+  a :Village.n.02 ;
+  :name "SCHEEMDA" ;
+  :place place:Scheemda2747661 .
 
 t00744:p1
   a :Male ;
@@ -36,9 +41,4 @@ t00744:p1
 t00744:p2
   a :Female ;
   :nam "GEERTJE MEIN" .
-
-t00744:c1
-  a :Village.n.02 ;
-  :name "SCHEEMDA" ;
-  :place place:Scheemda2747661 .
 

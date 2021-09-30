@@ -2,7 +2,6 @@
 
 tomb:t00346
   a :Tomb ;
-  :ent t00346:p1, t00346:p2, t00346:p3 ;
   :image [
     dc:date "2019-10-25T17:42:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00346
     ] ;
     :nd "+53.0799+006.5726"^^ll:
   ] ;
+  :person t00346:p1, t00346:p2, t00346:p3 ;
   :site site:dr9481CGvries ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00346:c1
+  a :Village.n.02 ;
+  :name "BUNNE" ;
+  :place place:Bunne2758108 .
 
 t00346:p1
   a :Male ;
@@ -40,11 +45,6 @@ t00346:p2
 t00346:p3
   a :Female ;
   :nam "MARCHIEN WESTERHOF" .
-
-t00346:c1
-  a :Village.n.02 ;
-  :name "BUNNE" ;
-  :place place:Bunne2758108 .
 
 t00346:r1
   a :Widower.n.01 ;

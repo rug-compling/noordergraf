@@ -2,7 +2,6 @@
 
 tomb:t00051
   a :Tomb ;
-  :ent t00051:p1, t00051:p2 ;
   :image [
     dc:date "2019-09-27T17:42:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00051
     ] ;
     :nd "+53.1631+006.6131"^^ll:
   ] ;
+  :person t00051:p1, t00051:p2 ;
   :site site:gr9752CMharen .
+
+t00051:c2
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 
 t00051:p1
   a :Female ;
@@ -45,9 +50,4 @@ t00051:p2
   :rol [
     a :Parent.n.01
   ] .
-
-t00051:c2
-  a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
 

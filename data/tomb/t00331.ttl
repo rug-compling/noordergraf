@@ -2,7 +2,6 @@
 
 tomb:t00331
   a :Tomb ;
-  :ent t00331:p1, t00331:p2 ;
   :image [
     dc:date "2019-10-19T14:21:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00331
     ] ;
     :nd "+52.7158+006.4738"^^ll:
   ] ;
+  :person t00331:p1, t00331:p2 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00331:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00331:p1
   a :Male ;
@@ -54,9 +59,4 @@ t00331:p2
   ], [
     a :Grandmother.n.01
   ] .
-
-t00331:c1
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
 

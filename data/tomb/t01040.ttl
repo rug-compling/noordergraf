@@ -2,7 +2,7 @@
 
 tomb:t01040
   a :Tomb ;
-  :ent t01040:p1, t01040:p2, [
+  :ent [
     a :Group.n.01 ;
     :mem t01040:p1, t01040:p2 ;
     :rol [
@@ -21,10 +21,16 @@ tomb:t01040
     ] ;
     :nd "+53.2645+006.3938"^^ll:
   ] ;
+  :person t01040:p1, t01040:p2 ;
   :site site:gr9804TEnoordhorn ;
   :sym [
     a :WeepingWillow
   ] .
+
+t01040:c2
+  a :Village.n.02 ;
+  :name "NOORDHORN" ;
+  :place place:Noordhorn2749875 .
 
 t01040:p1
   a :Male ;
@@ -45,9 +51,4 @@ t01040:p2
   :nam "TRIJNTJE NIEWOLD" ;
   :placeOfBirth t01040:c2 ;
   :placeOfDeath t01040:c2 .
-
-t01040:c2
-  a :Village.n.02 ;
-  :name "NOORDHORN" ;
-  :place place:Noordhorn2749875 .
 

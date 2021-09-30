@@ -2,7 +2,7 @@
 
 tomb:t00776
   a :Tomb ;
-  :ent t00776:p1, t00776:p2, t00776:p3, t00776:g1 ;
+  :ent t00776:g1 ;
   :image [
     dc:date "2019-12-21T13:02:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +15,20 @@ tomb:t00776
     ] ;
     :nd "+52.7822+006.8982"^^ll:
   ] ;
+  :person t00776:p1, t00776:p2, t00776:p3 ;
   :site site:dr7811HEemmen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00776:c1
+  a :Village.n.02 ;
+  :name "ZUIDBARGE" ;
+  :place place:Zuidbarge2743809 .
+
+t00776:g1
+  a :Group.n.01 ;
+  :mem t00776:p2, t00776:p3 .
 
 t00776:p1
   a :Female ;
@@ -40,13 +50,4 @@ t00776:p2
 t00776:p3
   a :Female ;
   :nam "A. HORRING" .
-
-t00776:c1
-  a :Village.n.02 ;
-  :name "ZUIDBARGE" ;
-  :place place:Zuidbarge2743809 .
-
-t00776:g1
-  a :Group.n.01 ;
-  :mem t00776:p2, t00776:p3 .
 

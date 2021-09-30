@@ -2,7 +2,6 @@
 
 tomb:t00501
   a :Tomb ;
-  :ent t00501:p1, t00501:p2 ;
   :image [
     dc:date "2019-11-16T13:52:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00501
     ] ;
     :nd "+53.2091+005.7906"^^ll:
   ] ;
+  :person t00501:p1, t00501:p2 ;
   :site site:fr8917AVleeuwarden ;
   :sym [
     a :Composite.n.01 ;
@@ -24,6 +24,11 @@ tomb:t00501
       a :Ribbon.n.02
     ]
   ] .
+
+t00501:c2
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 
 t00501:p1
   a :Male ;
@@ -48,9 +53,4 @@ t00501:p2
     :place place:Vlissingen2745392
   ] ;
   :placeOfDeath t00501:c2 .
-
-t00501:c2
-  a :City.n.01 ;
-  :name "LEEUWARDEN" ;
-  :place place:Leeuwarden2751792 .
 

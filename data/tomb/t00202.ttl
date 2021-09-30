@@ -2,7 +2,6 @@
 
 tomb:t00202
   a :Tomb ;
-  :ent t00202:p1, t00202:p2 ;
   :image [
     dc:date "2019-10-05T09:56:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00202
     ] ;
     :nd "+53.1899+006.5932"^^ll:
   ] ;
+  :person t00202:p1, t00202:p2 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Composite.n.01 ;
@@ -24,6 +24,11 @@ tomb:t00202
       a :Ribbon.n.01
     ]
   ] .
+
+t00202:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00202:p1
   a :Male ;
@@ -48,9 +53,4 @@ t00202:p2
   :nam "BERENDINA VRIJDAAL" ;
   :placeOfBirth t00202:c1 ;
   :placeOfDeath t00202:c1 .
-
-t00202:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

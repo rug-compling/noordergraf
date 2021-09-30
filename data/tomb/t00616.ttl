@@ -2,7 +2,6 @@
 
 tomb:t00616
   a :Tomb ;
-  :ent t00616:p1, t00616:p2, t00616:p3 ;
   :image [
     dc:date "2019-11-23T10:04:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00616
     ] ;
     :nd "+53.1644+006.7541"^^ll:
   ] ;
+  :person t00616:p1, t00616:p2, t00616:p3 ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00616:c1
+  a :Town.n.01 ;
+  :name "HOOGEZAND" ;
+  :place place:Hoogezand2753706 .
 
 t00616:p1
   a :Female ;
@@ -61,11 +66,6 @@ t00616:p3
     :place place:Dennenoord2757197
   ] ;
   :rol t00616:r3 .
-
-t00616:c1
-  a :Town.n.01 ;
-  :name "HOOGEZAND" ;
-  :place place:Hoogezand2753706 .
 
 t00616:r3
   a :Spouse.n.01 ;

@@ -2,7 +2,6 @@
 
 tomb:t00147
   a :Tomb ;
-  :ent t00147:p1, t00147:p2, t00147:p3 ;
   :image [
     dc:date "2019-10-02T10:27:09"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,22 @@ tomb:t00147
     ] ;
     :nd "+53.2059+006.5700"^^ll:
   ] ;
+  :person t00147:p1, t00147:p2, t00147:p3 ;
   :quo "RUST IN VREDE" ;
   :site site:gr9725ACgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00147:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
+
+t00147:c3
+  a :Village.n.02 ;
+  :name "WILDERVANK" ;
+  :place place:Wildervank2744431 .
 
 t00147:p1
   a :Female ;
@@ -57,14 +67,4 @@ t00147:p3
   :rol [
     a :Mother.n.01
   ] .
-
-t00147:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
-
-t00147:c3
-  a :Village.n.02 ;
-  :name "WILDERVANK" ;
-  :place place:Wildervank2744431 .
 

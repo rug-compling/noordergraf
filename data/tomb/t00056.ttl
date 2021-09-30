@@ -2,7 +2,6 @@
 
 tomb:t00056
   a :Tomb ;
-  :ent t00056:p1, t00056:p2, t00056:p3, t00056:p4, t00056:p5 ;
   :image [
     dc:date "2019-09-27T17:41:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00056
     ] ;
     :nd "+53.1631+006.6132"^^ll:
   ] ;
+  :person t00056:p1, t00056:p2, t00056:p3, t00056:p4, t00056:p5 ;
   :ref t00056:v1 ;
   :site site:gr9752CMharen .
 
@@ -48,6 +48,10 @@ t00056:p5
   a :Female ;
   :nam "H.J. AVERES-MULDER" .
 
+t00056:v1
+  a :Verse.n.01 ;
+  :ord 16 .
+
 []
   a :Luke.n.02 ;
   :prt [
@@ -55,8 +59,4 @@ t00056:p5
     :ord 18 ;
     :prt t00056:v1
   ] .
-
-t00056:v1
-  a :Verse.n.01 ;
-  :ord 16 .
 

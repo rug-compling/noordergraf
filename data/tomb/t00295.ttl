@@ -2,7 +2,6 @@
 
 tomb:t00295
   a :Tomb ;
-  :ent t00295:p1, t00295:p2 ;
   :image [
     dc:date "2019-10-19T14:42:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00295
     ] ;
     :nd "+52.7150+006.4740"^^ll:
   ] ;
+  :person t00295:p1, t00295:p2 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow
@@ -40,6 +40,10 @@ t00295:p2
   :nam "CORNELIS WARMELS" ;
   :ref t00295:v1 .
 
+t00295:v1
+  a :Verse.n.01 ;
+  :ord 27 .
+
 []
   a :Epistle_to_the_Romans.n.04 ;
   :prt [
@@ -47,8 +51,4 @@ t00295:p2
     :ord 16 ;
     :prt t00295:v1
   ] .
-
-t00295:v1
-  a :Verse.n.01 ;
-  :ord 27 .
 

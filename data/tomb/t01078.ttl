@@ -2,7 +2,6 @@
 
 tomb:t01078
   a :Tomb ;
-  :ent t01078:p1, t01078:p2 ;
   :image [
     dc:date "2020-04-17T18:25:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t01078
     ] ;
     :nd "+53.3808+006.8588"^^ll:
   ] ;
+  :person t01078:p1, t01078:p2 ;
   :site site:gr9906PPbierum .
+
+t01078:c2
+  a :Village.n.02 ;
+  :name "BIERUM" ;
+  :place place:Bierum2758983 .
 
 t01078:p1
   a :Male ;
@@ -48,9 +53,4 @@ t01078:p2
     a :Spouse.n.01 ;
     :tgt t01078:p1
   ] .
-
-t01078:c2
-  a :Village.n.02 ;
-  :name "BIERUM" ;
-  :place place:Bierum2758983 .
 

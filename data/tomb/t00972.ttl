@@ -2,7 +2,7 @@
 
 tomb:t00972
   a :Tomb ;
-  :ent t00972:p1, t00972:p2, t00972:p3, t00972:p4, t00972:p5, t00972:g1 ;
+  :ent t00972:g1 ;
   :image [
     dc:date "2020-03-25T09:28:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,12 @@ tomb:t00972
     ] ;
     :nd "+53.1201+006.6587"^^ll:
   ] ;
+  :person t00972:p1, t00972:p2, t00972:p3, t00972:p4, t00972:p5 ;
   :site site:gr9479TNnoordlaren .
+
+t00972:g1
+  a :Group.n.01 ;
+  :mem t00972:p1, t00972:p2 .
 
 t00972:p1
   a :Male ;
@@ -52,8 +57,4 @@ t00972:p4
 t00972:p5
   a :Female ;
   :nam "AALTIEN KOERS" .
-
-t00972:g1
-  a :Group.n.01 ;
-  :mem t00972:p1, t00972:p2 .
 

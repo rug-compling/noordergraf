@@ -2,18 +2,11 @@
 
 tomb:t01118
   a :Tomb ;
-  :site site:gr9628TKsiddeburen ;
   :image [
+    dc:date "2020-09-19T14:56:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01118.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2020-09-19T14:56:56"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2437 ;
@@ -21,11 +14,17 @@ tomb:t01118
     ] ;
     :nd "+53.2437+006.8645"^^ll:
   ] ;
-  :ent t01118:p1 ;
+  :person t01118:p1 ;
   :quo "Rust zacht lieve moeder!"@nld ;
+  :site site:gr9628TKsiddeburen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t01118:c1
+  a :Village.n.02 ;
+  :name "SIDDEBUREN" ;
+  :place place:Siddeburen2747343 .
 
 t01118:p1
   a :Female ;
@@ -44,9 +43,4 @@ t01118:p1
 t01118:p2
   a :Male ;
   :nam "G. DORINGA" .
-
-t01118:c1
-  a :Village.n.02 ;
-  :name "SIDDEBUREN" ;
-  :place place:Siddeburen2747343 .
 

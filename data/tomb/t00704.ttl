@@ -2,7 +2,6 @@
 
 tomb:t00704
   a :Tomb ;
-  :ent t00704:p1 ;
   :image [
     dc:date "2019-12-21T14:01:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00704
     ] ;
     :nd "+52.7836+006.8966"^^ll:
   ] ;
+  :person t00704:p1 ;
   :picture [
     a :Bust.n.03 ;
     :thm t00704:p1
   ] ;
   :site site:dr7811HEemmen .
+
+t00704:c1
+  a :Town.n.01 ;
+  :name "EMMEN" ;
+  :place place:Emmen2756136 .
 
 t00704:p1
   a :Male ;
@@ -43,16 +48,11 @@ t00704:p1
       :nam "VOOGDIJRAAD"
     ]
   ] ;
-  :prefix "MR" ;
   :placeOfBirth [
     a :City.n.01 ;
     :name "SNEEK" ;
     :place place:Sneek2747063
   ] ;
-  :placeOfDeath t00704:c1 .
-
-t00704:c1
-  a :Town.n.01 ;
-  :name "EMMEN" ;
-  :place place:Emmen2756136 .
+  :placeOfDeath t00704:c1 ;
+  :prefix "MR" .
 

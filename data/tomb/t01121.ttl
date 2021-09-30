@@ -2,18 +2,11 @@
 
 tomb:t01121
   a :Tomb ;
-  :site site:gr9822AKniekerk ;
   :image [
+    dc:date "2021-03-27T12:49:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01121.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-27T12:49:44"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2259 ;
@@ -21,7 +14,8 @@ tomb:t01121
     ] ;
     :nd "+53.2259+006.3531"^^ll:
   ] ;
-  :ent t01121:p1 ;
+  :person t01121:p1 ;
+  :site site:gr9822AKniekerk ;
   :sym [
     a :Skull.n.01
   ], [

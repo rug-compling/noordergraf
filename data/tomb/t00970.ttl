@@ -2,7 +2,7 @@
 
 tomb:t00970
   a :Tomb ;
-  :ent t00970:p1, t00970:p2, t00970:p3, t00970:g1 ;
+  :ent t00970:g1 ;
   :image [
     dc:date "2020-03-27T16:58:21"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +15,7 @@ tomb:t00970
     ] ;
     :nd "+53.1623+006.6135"^^ll:
   ] ;
+  :person t00970:p1, t00970:p2, t00970:p3 ;
   :site site:gr9752CMharen ;
   :sym [
     a :Frond.n.01
@@ -24,16 +25,23 @@ tomb:t00970
     a :Ribbon.n.01
   ] .
 
+t00970:g1
+  a :Group.n.01 ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00970:p1
+  ] .
+
 t00970:p1
   a :Male ;
   :dateOfBirth "1900-07-19"^^xsd:date ;
   :dateOfDeath "1941-11-11"^^xsd:date ;
   :nam "HARMANNUS C.P. VENEMA" ;
-  :rol [
+  :rol t00970:r2, [
     a :Widower.n.01 ;
     :before t00970:r2 ;
     :tgt t00970:p2
-  ], t00970:r2, [
+  ], [
     a :Father.n.01 ;
     :tgt t00970:g1
   ] .
@@ -45,13 +53,6 @@ t00970:p2
 t00970:p3
   a :Female ;
   :nam "E.KOLSTEIN" .
-
-t00970:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00970:p1
-  ] .
 
 t00970:r2
   a :Husband.n.01 ;

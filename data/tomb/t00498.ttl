@@ -2,19 +2,7 @@
 
 tomb:t00498
   a :Tomb ;
-  :text """PIETER FOPPES
-BRUINSMA
-★ 14 – 3 – 1825
-NIJHUZUM
-✝ 28 – 3 – 1876
-LJOUWERT
-
-Dizze stien is set 14 maert 1996
-troch de efterbersbern [??]
-syn neikommelingen
-FOPPE — ALDERT — WIGHERT(?)
-""" ;
-  :ent t00498:p1, t00498:p2, t00498:p3, t00498:p4, t00498:g1 ;
+  :ent t00498:g1 ;
   :image [
     dc:date "2019-11-16T14:06:08"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,7 +15,24 @@ FOPPE — ALDERT — WIGHERT(?)
     ] ;
     :nd "+53.2129+005.7957"^^ll:
   ] ;
-  :site site:fr8917AVleeuwarden .
+  :person t00498:p1, t00498:p2, t00498:p3, t00498:p4 ;
+  :site site:fr8917AVleeuwarden ;
+  :text """PIETER FOPPES
+BRUINSMA
+★ 14 – 3 – 1825
+NIJHUZUM
+✝ 28 – 3 – 1876
+LJOUWERT
+
+Dizze stien is set 14 maert 1996
+troch de efterbersbern [??]
+syn neikommelingen
+FOPPE — ALDERT — WIGHERT(?)
+""" .
+
+t00498:g1
+  a :Neikommeling.n.01 ;
+  :mem t00498:p2, t00498:p3, t00498:p4 .
 
 t00498:p1
   a :Male ;
@@ -66,8 +71,4 @@ t00498:p4
   :agt t00498:g1 ;
   :begin "1996-03-14"^^xsd:date ;
   :thm tomb:t00498 .
-
-t00498:g1
-  a :Neikommeling.n.01 ;
-  :mem t00498:p2, t00498:p3, t00498:p4 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00155
   a :Tomb ;
-  :ent t00155:p1, t00155:p2, t00155:p3, t00155:p4 ;
   :image [
     dc:date "2019-10-02T10:22:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,14 @@ tomb:t00155
     ] ;
     :nd "+53.2061+006.5698"^^ll:
   ] ;
+  :person t00155:p1, t00155:p2, t00155:p3, t00155:p4 ;
   :site site:gr9725ACgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00155:g1
+  a :Group.n.01 .
 
 t00155:p1
   a :Female ;
@@ -56,7 +59,4 @@ t00155:p3
 t00155:p4
   a :Female ;
   :nam "A. KOENES" .
-
-t00155:g1
-  a :Group.n.01 .
 

@@ -2,16 +2,7 @@
 
 tomb:t00000
   a :Tomb ;
-  :text """Hier rust
-onze lieve Man en Vader
-Jan Werkman
-Brig. tit. Rijksveldw. Sebaldeburen
-geb. 23 Febr. 1883 te Oostwold (O)
-overl. 18 Jan. 1929 te Doezum Gem. Grootegast
-echtgenoot van
-Anje Reker
-""" ;
-  :ent t00000:p1, t00000:p2, t00000:g1 ;
+  :ent t00000:g1 ;
   :image [
     dc:date "2019-09-25T17:01:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,7 +15,25 @@ Anje Reker
     ] ;
     :nd "+53.1900+006.5938"^^ll:
   ] ;
-  :site site:gr9722SNgroningen .
+  :person t00000:p1, t00000:p2 ;
+  :site site:gr9722SNgroningen ;
+  :text """Hier rust
+onze lieve Man en Vader
+Jan Werkman
+Brig. tit. Rijksveldw. Sebaldeburen
+geb. 23 Febr. 1883 te Oostwold (O)
+overl. 18 Jan. 1929 te Doezum Gem. Grootegast
+echtgenoot van
+Anje Reker
+""" .
+
+t00000:g1
+  a :Group.n.01 ;
+  :rol [
+    a :Commemorator.n.01 ;
+    :mem t00000:p2 ;
+    :tgt t00000:p1
+  ] .
 
 t00000:p1
   a :Male ;
@@ -48,22 +57,22 @@ t00000:p1
   :placeOfBirth [
     a :Village.n.02 ;
     :name "OOSTWOLD" ;
-    :place place:Oostwold2749325 ;
     :partOf [
       a :Region.n.01 ;
       :name "OLDAMBT" ;
       :place place:OldAmbt2749672
-    ]
+    ] ;
+    :place place:Oostwold2749325
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "DOEZUM" ;
-    :place place:Doezum2756763 ;
     :partOf [
       a :Municipality.n.01 ;
       :name "GROOTEGAST" ;
       :place place:GemeenteGrootegast2755203
-    ]
+    ] ;
+    :place place:Doezum2756763
   ] ;
   :rol [
     a :Husband.n.01 ;
@@ -79,12 +88,4 @@ t00000:p1
 t00000:p2
   a :Female ;
   :nam "ANJE REKER" .
-
-t00000:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Commemorator.n.01 ;
-    :mem t00000:p2 ;
-    :tgt t00000:p1
-  ] .
 

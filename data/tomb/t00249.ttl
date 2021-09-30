@@ -2,7 +2,6 @@
 
 tomb:t00249
   a :Tomb ;
-  :ent t00249:p1, t00249:p2 ;
   :image [
     dc:date "2019-10-11T17:20:07"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00249
     ] ;
     :nd "+53.1725+006.6063"^^ll:
   ] ;
+  :person t00249:p1, t00249:p2 ;
   :site site:gr9751BBharen ;
   :sym [
     a :BrokenFlower
   ] .
+
+t00249:c1
+  a :Village.n.02 ;
+  :name "HELPMAN" ;
+  :place place:Helpman2754444 .
 
 t00249:p1
   a :Male ;
@@ -35,9 +40,4 @@ t00249:p1
 t00249:p2
   a :Female ;
   :nam "H. STOLLENGA" .
-
-t00249:c1
-  a :Village.n.02 ;
-  :name "HELPMAN" ;
-  :place place:Helpman2754444 .
 

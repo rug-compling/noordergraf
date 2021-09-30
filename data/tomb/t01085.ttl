@@ -2,7 +2,7 @@
 
 tomb:t01085
   a :Tomb ;
-  :ent t01085:p1, t01085:p2, [
+  :ent [
     a :People.n.01 ;
     :mem t01085:p2, [
       a :Son-in-law.n.01 ;
@@ -22,7 +22,16 @@ tomb:t01085
     ] ;
     :nd "+53.2480+006.6475"^^ll:
   ] ;
+  :person t01085:p1, t01085:p2 ;
   :site site:gr9798PDgarmerwolde .
+
+t01085:g2
+  a :People.n.01 ;
+  :qua 5 ;
+  :tgt [
+    a :People.n.01 ;
+    :mem t01085:p1, t01085:p2
+  ] .
 
 t01085:p1
   a :Male ;
@@ -39,12 +48,4 @@ t01085:p1
 t01085:p2
   a :Female ;
   :nam "S.D. VAN DIJK" .
-
-t01085:g2
-  a :People.n.01 ;
-  :qua 5 ;
-  :tgt [
-    a :People.n.01 ;
-    :mem t01085:p1, t01085:p2
-  ] .
 

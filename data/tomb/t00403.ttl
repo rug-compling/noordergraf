@@ -2,7 +2,6 @@
 
 tomb:t00403
   a :Tomb ;
-  :ent t00403:p1, t00403:p2 ;
   :image [
     dc:date "2019-10-26T14:46:08"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00403
     ] ;
     :nd "+53.2518+006.1448"^^ll:
   ] ;
+  :person t00403:p1, t00403:p2 ;
   :ref "1 THESSALONICENZEN 4:14" ;
   :site site:fr9285TCbuitenpost ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00403:c1
+  a :Village.n.02 ;
+  :name "BUITENPOST" ;
+  :place place:Buitenpost2758131 .
 
 t00403:p1
   a :Male ;
@@ -36,9 +41,4 @@ t00403:p1
 t00403:p2
   a :Male ;
   :nam "A. VAN DER GALIËN" .
-
-t00403:c1
-  a :Village.n.02 ;
-  :name "BUITENPOST" ;
-  :place place:Buitenpost2758131 .
 

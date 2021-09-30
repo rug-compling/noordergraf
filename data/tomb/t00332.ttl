@@ -2,7 +2,6 @@
 
 tomb:t00332
   a :Tomb ;
-  :ent t00332:p1, t00332:p2 ;
   :image [
     dc:date "2019-10-19T14:19:48"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00332
     ] ;
     :nd "+52.7158+006.4734"^^ll:
   ] ;
+  :person t00332:p1, t00332:p2 ;
   :site site:dr7907CHhoogeveen .
 
 t00332:p1
@@ -22,10 +22,10 @@ t00332:p1
   :dateOfBirth "1823-03-10"^^xsd:date ;
   :dateOfDeath "1889-11-03"^^xsd:date ;
   :nam "AREND J. SEINEN" ;
-  :rol [
+  :rol t00332:r2, [
     a :Spouse.n.01 ;
     :before t00332:r2
-  ], t00332:r2 .
+  ] .
 
 t00332:p2
   a :Female ;

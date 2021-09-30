@@ -2,7 +2,6 @@
 
 tomb:t00858
   a :Tomb ;
-  :ent t00858:p1, t00858:p2 ;
   :image [
     dc:date "2020-02-15T15:36:51"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00858
     ] ;
     :nd "+52.7765+006.8042"^^ll:
   ] ;
+  :person t00858:p1, t00858:p2 ;
   :site site:dr7841CDsleen ;
   :sym [
     a :Rose.n.01
   ] .
+
+t00858:c1
+  a :Village.n.02 ;
+  :name "SLEEN" ;
+  :place place:Sleen2747182 .
 
 t00858:p1
   a :Male ;
@@ -35,9 +40,4 @@ t00858:p2
   :nam "GEESSIEN VRIELING" ;
   :placeOfBirth t00858:c1 ;
   :placeOfDeath t00858:c1 .
-
-t00858:c1
-  a :Village.n.02 ;
-  :name "SLEEN" ;
-  :place place:Sleen2747182 .
 

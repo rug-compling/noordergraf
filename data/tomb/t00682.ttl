@@ -2,7 +2,7 @@
 
 tomb:t00682
   a :Tomb ;
-  :ent t00682:p1, t00682:p2, t00682:p3, [
+  :ent [
     a :Group.n.01 ;
     :mem t00682:p1, t00682:p2 ;
     :rol [
@@ -25,6 +25,7 @@ tomb:t00682
     ] ;
     :nd "+53.0686+005.5224"^^ll:
   ] ;
+  :person t00682:p1, t00682:p2, t00682:p3 ;
   :quo "IN JEZUS ONTSLAPEN"@nld ;
   :ref t00682:v2 ;
   :site site:fr8701DWbolsward ;
@@ -80,6 +81,10 @@ t00682:p3
     :place place:Heerenveen2754669
   ] .
 
+t00682:v2
+  a :Verse.n.01 ;
+  :ord 13 .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -87,8 +92,4 @@ t00682:p3
     :ord 14 ;
     :prt t00682:v2
   ] .
-
-t00682:v2
-  a :Verse.n.01 ;
-  :ord 13 .
 

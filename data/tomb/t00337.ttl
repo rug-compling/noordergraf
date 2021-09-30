@@ -2,7 +2,6 @@
 
 tomb:t00337
   a :Tomb ;
-  :ent t00337:p1, t00337:p2 ;
   :image [
     dc:date "2019-10-19T14:10:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,15 +14,21 @@ tomb:t00337
     ] ;
     :nd "+52.7154+006.4730"^^ll:
   ] ;
+  :person t00337:p1, t00337:p2 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :Composite.n.01 ;
-    :prt [
+    :prt t00337:s3, t00337:s5, [
       a :Butterfly.n.01
-    ], t00337:s3, t00337:s5, [
+    ], [
       a :Ribbon.n.01
     ]
   ] .
+
+t00337:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00337:p1
   a :Male ;
@@ -48,11 +53,6 @@ t00337:p2
     :place place:Meppel2750947
   ] ;
   :placeOfDeath t00337:c1 .
-
-t00337:c1
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
 
 t00337:s3
   a :OakBranch .

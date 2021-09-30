@@ -2,7 +2,6 @@
 
 tomb:t00955
   a :Tomb ;
-  :ent t00955:p1, t00955:p2 ;
   :image [
     dc:date "2020-03-25T09:23:17"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00955
     ] ;
     :nd "+53.1202+006.6592"^^ll:
   ] ;
+  :person t00955:p1, t00955:p2 ;
   :site site:gr9479TNnoordlaren ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00955:c1
+  a :Village.n.02 ;
+  :name "GLIMMEN" ;
+  :place place:Glimmen2755495 .
 
 t00955:p1
   a :Male ;
@@ -35,9 +40,4 @@ t00955:p1
 t00955:p2
   a :Female ;
   :nam "BERENDINA KOERS" .
-
-t00955:c1
-  a :Village.n.02 ;
-  :name "GLIMMEN" ;
-  :place place:Glimmen2755495 .
 

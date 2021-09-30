@@ -2,18 +2,11 @@
 
 tomb:t01132
   a :Tomb ;
-  :site site:gr9752CMharen ;
   :image [
+    dc:date "2021-04-23T11:27:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01132.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-04-23T11:27:54"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.1625 ;
@@ -21,7 +14,8 @@ tomb:t01132
     ] ;
     :nd "+53.1625+006.6142"^^ll:
   ] ;
-  :ent t01132:p1 .
+  :person t01132:p1 ;
+  :site site:gr9752CMharen .
 
 t01132:p1
   a :Female ;

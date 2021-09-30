@@ -2,7 +2,6 @@
 
 tomb:t00678
   a :Tomb ;
-  :ent t00678:p1, t00678:p2 ;
   :image [
     dc:date "2019-12-14T13:30:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00678
     ] ;
     :nd "+53.0687+005.5221"^^ll:
   ] ;
+  :person t00678:p1, t00678:p2 ;
   :ref t00678:v2 ;
   :site site:fr8701DWbolsward .
 
@@ -43,6 +43,10 @@ t00678:p2
     a :Grandmother.n.01
   ] .
 
+t00678:v2
+  a :Verse.n.01 ;
+  :ord 11 .
+
 []
   a :John.n.05 ;
   :prt [
@@ -50,8 +54,4 @@ t00678:p2
     :ord 25 ;
     :prt t00678:v2
   ] .
-
-t00678:v2
-  a :Verse.n.01 ;
-  :ord 11 .
 

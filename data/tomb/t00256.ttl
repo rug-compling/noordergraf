@@ -2,7 +2,6 @@
 
 tomb:t00256
   a :Tomb ;
-  :ent t00256:p1, t00256:p2 ;
   :image [
     dc:date "2019-10-11T17:19:59"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00256
     ] ;
     :nd "+53.1725+006.6063"^^ll:
   ] ;
+  :person t00256:p1, t00256:p2 ;
   :site site:gr9751BBharen ;
   :sym [
     a :BrokenFlower
@@ -28,12 +28,12 @@ t00256:p1
   :placeOfBirth [
     a :Village.n.02 ;
     :name "ZUIDWOLDE" ;
-    :place place:Zuidwolde2743636 ;
     :partOf [
       a :Province.n.01 ;
       :name "GRONINGEN" ;
       :place place:ProvincieGroningen2755249
-    ]
+    ] ;
+    :place place:Zuidwolde2743636
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
@@ -48,3 +48,4 @@ t00256:p1
 t00256:p2
   a :Male ;
   :nam "E. VORENKAMP" .
+

@@ -2,14 +2,8 @@
 
 tomb:p00002
   a :Tomb ;
-  :text """ici repose
-Théodore van Gogh
-1857 — 1891
-""" ;
-  :ent p00002:p1 ;
   :image [
     dc:date "2021-07-01T10:08:19"^^xsd:dateTime ;
-  # dc:creator "Saskia van L." ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:p00001.jpg ;
@@ -20,9 +14,16 @@ Théodore van Gogh
     ] ;
     :nd "+49.0753+002.1789"^^ll:
   ] ;
-  :site site:FR95430Auvers_sur_Oise .
+  :person p00002:p1 ;
+  :site site:FR95430Auvers_sur_Oise ;
+  :text """ici repose
+Théodore van Gogh
+1857 — 1891
+""" .
 
-p00002:p1 a :Male ;
-  :nam "Théodore van Gogh" ;
+p00002:p1
+  a :Male ;
   :dateOfBirth "1857"^^xsd:gYear ;
-  :dateOfDeath "1891"^^xsd:gYear .
+  :dateOfDeath "1891"^^xsd:gYear ;
+  :nam "Théodore van Gogh" .
+

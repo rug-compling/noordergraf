@@ -2,7 +2,6 @@
 
 tomb:t01065
   a :Tomb ;
-  :ent t01065:p1, t01065:p2 ;
   :image [
     dc:date "2020-05-02T15:53:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01065
     ] ;
     :nd "+53.3609+006.2929"^^ll:
   ] ;
+  :person t01065:p1, t01065:p2 ;
   :site site:gr9975VRvierhuizen .
 
 t01065:p1
@@ -59,6 +59,14 @@ t01065:p2
     :tgt t01065:p1
   ] .
 
+t01065:v1
+  a :Verse.n.01 ;
+  :ord 20 .
+
+t01065:v2
+  a :Part.n.09 ;
+  :nam "B" .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -78,12 +86,4 @@ t01065:p2
       :prt t01065:v2
     ]
   ] .
-
-t01065:v1
-  a :Verse.n.01 ;
-  :ord 20 .
-
-t01065:v2
-  a :Part.n.09 ;
-  :nam "B" .
 

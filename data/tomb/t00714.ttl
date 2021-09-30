@@ -2,7 +2,6 @@
 
 tomb:t00714
   a :Tomb ;
-  :ent t00714:p1, t00714:p2 ;
   :image [
     dc:date "2019-12-21T13:36:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00714
     ] ;
     :nd "+52.7809+006.9005"^^ll:
   ] ;
+  :person t00714:p1, t00714:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
   :site site:dr7811HEemmen .
+
+t00714:c2
+  a :Village.n.02 ;
+  :name "JIPSINGBOURTANGE" ;
+  :place place:Jipsingboertange2753246 .
 
 t00714:p1
   a :Male ;
@@ -49,9 +54,4 @@ t00714:p2
     a :Parent.n.01 ;
     :tgt t00714:p3
   ] .
-
-t00714:c2
-  a :Village.n.02 ;
-  :name "JIPSINGBOURTANGE" ;
-  :place place:Jipsingboertange2753246 .
 

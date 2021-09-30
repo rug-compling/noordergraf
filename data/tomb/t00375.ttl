@@ -2,7 +2,6 @@
 
 tomb:t00375
   a :Tomb ;
-  :ent t00375:p1, t00375:p2 ;
   :image [
     dc:date "2019-10-27T10:36:21"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00375
     ] ;
     :nd "+53.1913+006.5942"^^ll:
   ] ;
+  :person t00375:p1, t00375:p2 ;
   :ref t00375:v1 ;
   :site site:gr9722SNgroningen .
 
@@ -44,6 +44,10 @@ t00375:p2
   a :Male ;
   :nam "H. DE GRAAF" .
 
+t00375:v1
+  a :Part.n.09 ;
+  :nam "A" .
+
 []
   a :Isaiah.n.01 ;
   :prt [
@@ -55,8 +59,4 @@ t00375:p2
       :prt t00375:v1
     ]
   ] .
-
-t00375:v1
-  a :Part.n.09 ;
-  :nam "A" .
 

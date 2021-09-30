@@ -2,18 +2,11 @@
 
 tomb:t01126
   a :Tomb ;
-  :site site:gr9801CAzuidhorn ;
   :image [
+    dc:date "2021-03-31T17:47:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01126.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-31T17:47:54"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2398 ;
@@ -21,19 +14,20 @@ tomb:t01126
     ] ;
     :nd "+53.2398+006.4100"^^ll:
   ] ;
-  :ent t01126:p1 ;
-  :ref t01126:v1 .
+  :person t01126:p1 ;
+  :ref t01126:v1 ;
+  :site site:gr9801CAzuidhorn .
 
 t01126:p1
   a :Male ;
   :dateOfBirth "1927-05-01"^^xsd:date ;
   :dateOfDeath "1999-07-23"^^xsd:date ;
   :nam "JELTE GEERT HAAKSEMA" ;
-  :rol [
+  :rol t01126:r3, [
     a :Father.n.01
   ], [
     a :Grandfather.n.01
-  ], t01126:r3, [
+  ], [
     a :Spouse.n.01 ;
     :before t01126:r3 ;
     :tgt t01126:p3
@@ -47,14 +41,6 @@ t01126:p3
   a :Female ;
   :nam "B. DIJKINGA" .
 
-[]
-  a :Epistle_to_the_Romans.n.04 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 8 ;
-    :prt t01126:v1
-  ] .
-
 t01126:r3
   a :Spouse.n.01 ;
   :tgt t01126:p2 .
@@ -62,4 +48,12 @@ t01126:r3
 t01126:v1
   a :Verse.n.01 ;
   :ord 37 .
+
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 8 ;
+    :prt t01126:v1
+  ] .
 

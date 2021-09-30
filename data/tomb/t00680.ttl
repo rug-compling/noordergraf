@@ -2,7 +2,7 @@
 
 tomb:t00680
   a :Tomb ;
-  :ent t00680:p1, t00680:p2, t00680:g1, [
+  :ent t00680:g1, [
     a :Group.n.01 ;
     :rol [
       a :Child.n.02 ;
@@ -27,7 +27,12 @@ tomb:t00680
     ] ;
     :nd "+53.0678+005.5227"^^ll:
   ] ;
+  :person t00680:p1, t00680:p2 ;
   :site site:fr8701DWbolsward .
+
+t00680:g1
+  a :Group.n.01 ;
+  :mem t00680:p1, t00680:p2 .
 
 t00680:p1
   a :Male ;
@@ -40,8 +45,4 @@ t00680:p2
   :dateOfBirth "1866-05-11"^^xsd:date ;
   :dateOfDeath "1949-03-30"^^xsd:date ;
   :nam "KORNELISKE HOLLANDER-COMPAAN" .
-
-t00680:g1
-  a :Group.n.01 ;
-  :mem t00680:p1, t00680:p2 .
 

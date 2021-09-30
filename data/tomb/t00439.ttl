@@ -2,7 +2,6 @@
 
 tomb:t00439
   a :Tomb ;
-  :ent t00439:p1, t00439:p2, t00439:p3, t00439:p4 ;
   :image [
     dc:date "2019-11-02T11:39:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00439
     ] ;
     :nd "+53.4793+006.1610"^^ll:
   ] ;
+  :person t00439:p1, t00439:p2, t00439:p3, t00439:p4 ;
   :site site:fr9166NAschiermonnikoog ;
   :sym [
     a :Entity.n.01
   ] .
+
+t00439:c1
+  a :Island.n.01 ;
+  :name "SCHIERMONNIKOOG" ;
+  :place place:Schiermonnikoog2747591 .
 
 t00439:p1
   a :Female ;
@@ -46,9 +51,4 @@ t00439:p4
   a :Female ;
   :dateOfBirth "1869-09-08"^^xsd:date ;
   :nam "MEINSINA DRAIJER" .
-
-t00439:c1
-  a :Island.n.01 ;
-  :name "SCHIERMONNIKOOG" ;
-  :place place:Schiermonnikoog2747591 .
 

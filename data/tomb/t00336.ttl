@@ -2,7 +2,6 @@
 
 tomb:t00336
   a :Tomb ;
-  :ent t00336:p1, t00336:p2 ;
   :image [
     dc:date "2019-10-19T14:12:04"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00336
     ] ;
     :nd "+52.7153+006.4732"^^ll:
   ] ;
+  :person t00336:p1, t00336:p2 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :Composite.n.01 ;
@@ -24,6 +24,11 @@ tomb:t00336
       a :Frond.n.01
     ]
   ] .
+
+t00336:c1
+  a :Village.n.02 ;
+  :name "RUINEN" ;
+  :place place:Ruinen2747835 .
 
 t00336:p1
   a :Male ;
@@ -48,9 +53,4 @@ t00336:p2
   :nam "ARENDINA HERMINA VERMEULEN" ;
   :placeOfBirth t00336:c1 ;
   :placeOfDeath t00336:c1 .
-
-t00336:c1
-  a :Village.n.02 ;
-  :name "RUINEN" ;
-  :place place:Ruinen2747835 .
 

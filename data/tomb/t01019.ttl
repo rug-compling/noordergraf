@@ -2,7 +2,6 @@
 
 tomb:t01019
   a :Tomb ;
-  :ent t01019:p1, t01019:p2 ;
   :image [
     dc:date "2020-04-03T14:31:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t01019
     ] ;
     :nd "+53.1911+006.5931"^^ll:
   ] ;
+  :person t01019:p1, t01019:p2 ;
   :site site:gr9722SNgroningen .
+
+t01019:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t01019:p1
   a :Male ;
@@ -49,23 +54,6 @@ t01019:p2
     :tgt t01019:p1
   ] .
 
-[]
-  a :Epistle_to_the_Romans.n.04 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 8 ;
-    :prt t01019:v1, t01019:v2
-  ], [
-    a :Chapter.n.01 ;
-    :ord 5 ;
-    :prt t01019:v3, t01019:v4
-  ] .
-
-t01019:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
-
 t01019:v1
   a :Verse.n.01 ;
   :ord 38 .
@@ -81,4 +69,16 @@ t01019:v3
 t01019:v4
   a :Verse.n.01 ;
   :ord 2 .
+
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 8 ;
+    :prt t01019:v1, t01019:v2
+  ], [
+    a :Chapter.n.01 ;
+    :ord 5 ;
+    :prt t01019:v3, t01019:v4
+  ] .
 

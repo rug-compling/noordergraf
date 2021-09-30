@@ -2,7 +2,6 @@
 
 tomb:t01073
   a :Tomb ;
-  :ent t01073:p1, t01073:p2 ;
   :image [
     dc:date "2020-05-15T17:34:33"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,14 @@ tomb:t01073
     ] ;
     :nd "+53.1626+006.6151"^^ll:
   ] ;
+  :person t01073:p1, t01073:p2 ;
   :site site:gr9752CMharen ;
   :sym [
     a :Anchor.n.01
   ] .
+
+t01073:g1
+  a :Group.n.01 .
 
 t01073:p1
   a :Male ;
@@ -45,7 +48,4 @@ t01073:p2
     a :Mother.n.01 ;
     :tgt t01073:g1
   ] .
-
-t01073:g1
-  a :Group.n.01 .
 

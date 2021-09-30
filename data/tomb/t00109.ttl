@@ -2,7 +2,6 @@
 
 tomb:t00109
   a :Tomb ;
-  :ent t00109:p1, t00109:p2, t00109:p3, t00109:p4 ;
   :image [
     dc:date "2019-09-21T15:51:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00109
     ] ;
     :nd "+53.1902+006.5933"^^ll:
   ] ;
+  :person t00109:p1, t00109:p2, t00109:p3, t00109:p4 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00109:c2
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00109:p1
   a :Female ;
@@ -67,9 +72,4 @@ t00109:p4
     :place place:Terwispel2746398
   ] ;
   :placeOfDeath t00109:c2 .
-
-t00109:c2
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

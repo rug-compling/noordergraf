@@ -2,7 +2,6 @@
 
 tomb:t00750
   a :Tomb ;
-  :ent t00750:p1 ;
   :image [
     dc:date "2019-12-28T12:47:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00750
     ] ;
     :nd "+53.3109+006.9976"^^ll:
   ] ;
+  :person t00750:p1 ;
   :site site:gr9936BTfarmsum ;
   :sym [
     a :Butterfly.n.01
   ] .
+
+t00750:c1
+  a :Village.n.02 ;
+  :name "OTERDUM" ;
+  :place place:Oterdum2749209 .
 
 t00750:p1
   a :Male ;
@@ -27,9 +32,4 @@ t00750:p1
   :nam "ALDERT ROELFS BOS" ;
   :placeOfBirth t00750:c1 ;
   :placeOfDeath t00750:c1 .
-
-t00750:c1
-  a :Village.n.02 ;
-  :name "OTERDUM" ;
-  :place place:Oterdum2749209 .
 

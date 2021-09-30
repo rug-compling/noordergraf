@@ -2,7 +2,6 @@
 
 tomb:t00561
   a :Tomb ;
-  :ent t00561:p1, t00561:p2, t00561:p3 ;
   :image [
     dc:date "2019-11-24T13:45:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00561
     ] ;
     :nd "+53.1044+006.8744"^^ll:
   ] ;
+  :person t00561:p1, t00561:p2, t00561:p3 ;
   :site site:gr9641ANveendam .
+
+t00561:c1
+  a :City.n.01 ;
+  :name "VEENDAM" ;
+  :place place:Veendam2745783 .
 
 t00561:p1
   a :Male ;
@@ -48,19 +53,6 @@ t00561:p3
   a :Female ;
   :nam "A. HEUVING" .
 
-[]
-  a :Epistle_to_the_Romans.n.04 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 6 ;
-    :prt t00561:v1
-  ] .
-
-t00561:c1
-  a :City.n.01 ;
-  :name "VEENDAM" ;
-  :place place:Veendam2745783 .
-
 t00561:r1
   a :Widower.n.01 ;
   :tgt t00561:p2 .
@@ -68,4 +60,12 @@ t00561:r1
 t00561:v1
   a :Verse.n.01 ;
   :ord 23 .
+
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 6 ;
+    :prt t00561:v1
+  ] .
 

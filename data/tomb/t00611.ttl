@@ -2,7 +2,6 @@
 
 tomb:t00611
   a :Tomb ;
-  :ent t00611:p1, t00611:p2, t00611:p3 ;
   :image [
     dc:date "2019-11-23T10:06:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00611
     ] ;
     :nd "+53.1643+006.7540"^^ll:
   ] ;
+  :person t00611:p1, t00611:p2, t00611:p3 ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :Oak.n.02
@@ -32,12 +32,12 @@ t00611:p1
   :placeOfBirth [
     a :Town.n.01 ;
     :name "SLOTEN" ;
-    :place place:Sloten2747131 ;
     :partOf [
       a :Province.n.01 ;
       :name "FRIESLAND" ;
       :place place:ProvincieFriesland2755812
-    ]
+    ] ;
+    :place place:Sloten2747131
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
@@ -72,3 +72,4 @@ t00611:p3
     a :Designer.n.01 ;
     :tgt tomb:t00611
   ] .
+

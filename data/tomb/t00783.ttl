@@ -2,14 +2,14 @@
 
 tomb:t00783
   a :Tomb ;
-  :ent t00783:p1, t00783:p2, t00783:p3, t00783:p4, [
+  :ent t00783:g2, [
     a :Group.n.01 ;
     :mem t00783:p1, t00783:p2 ;
     :rol [
       a :Child.n.02 ;
       :tgt t00783:g2
     ]
-  ], t00783:g2 ;
+  ] ;
   :image [
     dc:date "2019-12-21T12:58:19"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,6 +22,7 @@ tomb:t00783
     ] ;
     :nd "+52.7818+006.8976"^^ll:
   ] ;
+  :person t00783:p1, t00783:p2, t00783:p3, t00783:p4 ;
   :quo "DAT ZIJ MOGEN RUSTEN IN VREDE"@nld ;
   :site site:dr7811HEemmen ;
   :sym [
@@ -29,6 +30,10 @@ tomb:t00783
   ], [
     a :WeepingWillow
   ] .
+
+t00783:g2
+  a :Group.n.01 ;
+  :mem t00783:p3, t00783:p4 .
 
 t00783:p1
   a :Male ;
@@ -49,8 +54,4 @@ t00783:p3
 t00783:p4
   a :Female ;
   :nam "LAMMECHIEN STRATING" .
-
-t00783:g2
-  a :Group.n.01 ;
-  :mem t00783:p3, t00783:p4 .
 

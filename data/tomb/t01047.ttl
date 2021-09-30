@@ -2,7 +2,6 @@
 
 tomb:t01047
   a :Tomb ;
-  :ent t01047:p1, t01047:p2 ;
   :image [
     dc:date "2020-05-01T15:29:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,11 @@ tomb:t01047
     ] ;
     :nd "+53.1230+006.2513"^^ll:
   ] ;
+  :person t01047:p1, t01047:p2 ;
   :site site:gr9367PAde_wilp .
+
+t01047:g1
+  a :Group.n.01 .
 
 t01047:p1
   a :Male ;
@@ -36,7 +39,4 @@ t01047:p1
 t01047:p2
   a :Female ;
   :nam "HENDERIKA ROFFEL" .
-
-t01047:g1
-  a :Group.n.01 .
 

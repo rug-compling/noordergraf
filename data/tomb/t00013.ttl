@@ -2,7 +2,6 @@
 
 tomb:t00013
   a :Tomb ;
-  :ent t00013:p1, t00013:p2, t00013:p3 ;
   :image [
     dc:date "2019-09-25T16:48:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,21 @@ tomb:t00013
     ] ;
     :nd "+53.1901+006.5927"^^ll:
   ] ;
+  :person t00013:p1, t00013:p2, t00013:p3 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00013:c1
+  a :Village.n.02 ;
+  :name "GARNWERD" ;
+  :place place:Garnwerd2755726 .
+
+t00013:c2
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00013:p1
   a :Female ;
@@ -51,14 +61,4 @@ t00013:p3
     :place place:SintAnnen2747294
   ] ;
   :placeOfDeath t00013:c2 .
-
-t00013:c1
-  a :Village.n.02 ;
-  :name "GARNWERD" ;
-  :place place:Garnwerd2755726 .
-
-t00013:c2
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

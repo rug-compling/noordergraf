@@ -2,7 +2,6 @@
 
 tomb:t00992
   a :Tomb ;
-  :ent t00992:p1, t00992:p2 ;
   :image [
     dc:date "2020-04-04T10:52:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00992
     ] ;
     :nd "+53.1762+007.0952"^^ll:
   ] ;
+  :person t00992:p1, t00992:p2 ;
   :quo "OVERLEDEN DOOR EEN NOOTLOTTIG TOEVAL"@nld, "RUST ZACHT"@nld ;
   :site site:gr9686RSbeerta ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00992:c1
+  a :Village.n.02 ;
+  :name "BEERTA" ;
+  :place place:Beerta2759298 .
 
 t00992:p1
   a :Male ;
@@ -41,9 +46,4 @@ t00992:p1
 t00992:p2
   a :Female ;
   :nam "MINA SMITMAN" .
-
-t00992:c1
-  a :Village.n.02 ;
-  :name "BEERTA" ;
-  :place place:Beerta2759298 .
 

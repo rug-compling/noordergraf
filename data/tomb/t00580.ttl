@@ -2,7 +2,6 @@
 
 tomb:t00580
   a :Tomb ;
-  :ent t00580:p1 ;
   :image [
     dc:date "2019-11-30T14:52:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00580
     ] ;
     :nd "+53.3357+006.5125"^^ll:
   ] ;
+  :person t00580:p1 ;
   :ref t00580:v1 ;
   :site site:gr9951STwinsum .
+
+t00580:c1
+  a :Village.n.02 ;
+  :name "WINSUM" ;
+  :place place:Winsum2744337 .
 
 t00580:p1
   a :Female ;
@@ -31,6 +36,10 @@ t00580:p1
     a :Grandmother.n.01
   ] .
 
+t00580:v1
+  a :Verse.n.01 ;
+  :ord 25 .
+
 []
   a :John.n.05 ;
   :prt [
@@ -38,13 +47,4 @@ t00580:p1
     :ord 11 ;
     :prt t00580:v1
   ] .
-
-t00580:c1
-  a :Village.n.02 ;
-  :name "WINSUM" ;
-  :place place:Winsum2744337 .
-
-t00580:v1
-  a :Verse.n.01 ;
-  :ord 25 .
 

@@ -2,7 +2,7 @@
 
 tomb:t00022
   a :Tomb ;
-  :ent t00022:p1, t00022:p2, t00022:g1 ;
+  :ent t00022:g1 ;
   :image [
     dc:date "2019-09-25T16:27:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +15,7 @@ tomb:t00022
     ] ;
     :nd "+53.1937+006.5933"^^ll:
   ] ;
+  :person t00022:p1, t00022:p2 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Composite.n.01 ;
@@ -24,6 +25,15 @@ tomb:t00022
       a :Ribbon.n.01
     ]
   ] .
+
+t00022:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
+
+t00022:g1
+  a :Group.n.01 ;
+  :mem t00022:p2 .
 
 t00022:p1
   a :Female ;
@@ -54,13 +64,4 @@ t00022:p2
   :nam "H. SCHAAP" ;
   :placeOfBirth t00022:c1 ;
   :placeOfDeath t00022:c1 .
-
-t00022:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
-
-t00022:g1
-  a :Group.n.01 ;
-  :mem t00022:p2 .
 

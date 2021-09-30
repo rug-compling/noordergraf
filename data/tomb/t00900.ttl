@@ -2,7 +2,6 @@
 
 tomb:t00900
   a :Tomb ;
-  :ent t00900:p1, t00900:p2 ;
   :image [
     dc:date "2020-03-07T14:24:17"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00900
     ] ;
     :nd "+53.1706+006.3658"^^ll:
   ] ;
+  :person t00900:p1, t00900:p2 ;
   :ref t00900:v1 ;
   :site site:gr9351RLtolbert ;
   :sym [
@@ -47,6 +47,11 @@ t00900:p2
   a :Female ;
   :nam "A. DE JONG" .
 
+t00900:v1
+  a :Verse.n.01 ;
+  :ord 13 ;
+  :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -54,9 +59,4 @@ t00900:p2
     :ord 14 ;
     :prt t00900:v1
   ] .
-
-t00900:v1
-  a :Verse.n.01 ;
-  :ord 13 ;
-  :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
 

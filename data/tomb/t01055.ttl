@@ -2,7 +2,6 @@
 
 tomb:t01055
   a :Tomb ;
-  :ent t01055:p1, t01055:p2 ;
   :image [
     dc:date "2020-05-02T16:49:57"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01055
     ] ;
     :nd "+53.3603+006.3435"^^ll:
   ] ;
+  :person t01055:p1, t01055:p2 ;
   :ref t01055:v1 ;
   :site site:gr9971EBulrum ;
   :sym [
@@ -45,6 +45,10 @@ t01055:p2
   a :Male ;
   :nam "MENNO JANSEN" .
 
+t01055:v1
+  a :Verse.n.01 ;
+  :ord 3 .
+
 []
   a :Matthew.n.02 ;
   :prt [
@@ -52,8 +56,4 @@ t01055:p2
     :ord 5 ;
     :prt t01055:v1
   ] .
-
-t01055:v1
-  a :Verse.n.01 ;
-  :ord 3 .
 

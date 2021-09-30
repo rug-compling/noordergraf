@@ -2,7 +2,6 @@
 
 tomb:t00440
   a :Tomb ;
-  :ent t00440:p1, t00440:p2, t00440:p3 ;
   :image [
     dc:date "2019-11-02T11:39:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,22 @@ tomb:t00440
     ] ;
     :nd "+53.4793+006.1609"^^ll:
   ] ;
+  :person t00440:p1, t00440:p2, t00440:p3 ;
   :quo "ALWAYS FACE THE SUN AND YOU WON'T SEE THE SHADOWS" ;
   :site site:fr9166NAschiermonnikoog ;
   :sym [
     a :Tree.n.01
   ] .
+
+t00440:c1
+  a :Island.n.01 ;
+  :name "SCHIERMONNIKOOG" ;
+  :place place:Schiermonnikoog2747591 .
+
+t00440:c2
+  a :City.n.01 ;
+  :name "KAAPSTAD" ;
+  :place place:Kaapstad3369157 .
 
 t00440:p1
   a :Female ;
@@ -48,14 +58,4 @@ t00440:p3
     :place place:Glasgow2648579
   ] ;
   :placeOfDeath t00440:c2 .
-
-t00440:c1
-  a :Island.n.01 ;
-  :name "SCHIERMONNIKOOG" ;
-  :place place:Schiermonnikoog2747591 .
-
-t00440:c2
-  a :City.n.01 ;
-  :name "KAAPSTAD" ;
-  :place place:Kaapstad3369157 .
 

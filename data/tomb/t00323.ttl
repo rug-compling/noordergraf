@@ -2,7 +2,6 @@
 
 tomb:t00323
   a :Tomb ;
-  :ent t00323:p1, t00323:p2 ;
   :image [
     dc:date "2019-10-19T14:23:02"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00323
     ] ;
     :nd "+52.7157+006.4739"^^ll:
   ] ;
+  :person t00323:p1, t00323:p2 ;
   :ref t00323:v1 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :Flower.n.01
   ] .
+
+t00323:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00323:p1
   a :Female ;
@@ -43,6 +48,11 @@ t00323:p2
     a :Parent.n.01
   ] .
 
+t00323:v1
+  a :Verse.n.01 ;
+  :ord 2 ;
+  :txt "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN" .
+
 []
   a :John.n.05 ;
   :prt [
@@ -50,14 +60,4 @@ t00323:p2
     :ord 14 ;
     :prt t00323:v1
   ] .
-
-t00323:c1
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
-
-t00323:v1
-  a :Verse.n.01 ;
-  :ord 2 ;
-  :txt "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN" .
 

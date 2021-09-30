@@ -2,7 +2,6 @@
 
 tomb:t00472
   a :Tomb ;
-  :ent t00472:p1, t00472:p2, t00472:p3, t00472:p4 ;
   :image [
     dc:date "2019-11-09T14:45:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00472
     ] ;
     :nd "+53.2073+005.7687"^^ll:
   ] ;
+  :person t00472:p1, t00472:p2, t00472:p3, t00472:p4 ;
   :site site:fr8915CPleeuwarden ;
   :sym [
     a :Composite.n.01 ;
@@ -24,6 +24,11 @@ tomb:t00472
       a :Chrismon.n.01
     ]
   ] .
+
+t00472:c1
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 
 t00472:p1
   a :Female ;
@@ -55,9 +60,4 @@ t00472:p3
 t00472:p4
   a :Male ;
   :nam "C. SCHOFFELMEER" .
-
-t00472:c1
-  a :City.n.01 ;
-  :name "LEEUWARDEN" ;
-  :place place:Leeuwarden2751792 .
 

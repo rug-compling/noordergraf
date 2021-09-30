@@ -2,7 +2,6 @@
 
 tomb:t00128
   a :Tomb ;
-  :ent t00128:p1, t00128:p2 ;
   :image [
     dc:date "2019-10-01T09:57:48"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00128
     ] ;
     :nd "+53.2059+006.5714"^^ll:
   ] ;
+  :person t00128:p1, t00128:p2 ;
   :site site:gr9725ACgroningen ;
   :sym [
     a :Composite.n.01 ;
@@ -26,6 +26,11 @@ tomb:t00128
   ], [
     a :Frond.n.01
   ] .
+
+t00128:c2
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00128:p1
   a :Male ;
@@ -56,9 +61,4 @@ t00128:p2
   :rol [
     a :Mother.n.01
   ] .
-
-t00128:c2
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

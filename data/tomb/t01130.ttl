@@ -2,18 +2,11 @@
 
 tomb:t01130
   a :Tomb ;
-  :site site:gr9978TEhornhuizen ;
   :image [
+    dc:date "2021-05-13T11:42:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01130.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-05-13T11:42:50"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.3871 ;
@@ -21,9 +14,10 @@ tomb:t01130
     ] ;
     :nd "+53.3871+006.3597"^^ll:
   ] ;
-  :ent t01130:p1, t01130:p2, t01130:p3 ;
+  :person t01130:p1, t01130:p2, t01130:p3 ;
   :quo "RUST ZACHT LIEVE LIENA"@nld ;
   :ref "PSALM 103:8"@nld ;
+  :site site:gr9978TEhornhuizen ;
   :sym [
     a :Butterfly.n.01
   ] .

@@ -2,7 +2,6 @@
 
 tomb:t00205
   a :Tomb ;
-  :ent t00205:p1, t00205:p2 ;
   :image [
     dc:date "2019-10-05T09:50:02"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00205
     ] ;
     :nd "+53.1900+006.5938"^^ll:
   ] ;
+  :person t00205:p1, t00205:p2 ;
   :quo "RUST ZACHT" ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00205:c2
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 
 t00205:p1
   a :Female ;
@@ -48,9 +53,4 @@ t00205:p2
     :place place:Faan2755935
   ] ;
   :placeOfDeath t00205:c2 .
-
-t00205:c2
-  a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
 

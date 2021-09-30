@@ -2,7 +2,6 @@
 
 tomb:t00581
   a :Tomb ;
-  :ent t00581:p1, t00581:p2 ;
   :image [
     dc:date "2019-11-30T14:50:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,12 @@ tomb:t00581
     ] ;
     :nd "+53.3355+006.5127"^^ll:
   ] ;
+  :person t00581:p1, t00581:p2 ;
   :ref t00581:v1 ;
   :site site:gr9951STwinsum ;
-  :sym [
+  :sym t00581:s2, t00581:s3, [
     a :Sandglass.n.01
-  ], t00581:s2, t00581:s3 .
+  ] .
 
 t00581:p1
   a :Female ;
@@ -40,14 +40,6 @@ t00581:p2
     :tgt tomb:t00581
   ] .
 
-[]
-  a :John.n.05 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 11 ;
-    :prt t00581:v1
-  ] .
-
 t00581:s2
   a :BatWing .
 
@@ -57,3 +49,12 @@ t00581:s3
 t00581:v1
   a :Verse.n.01 ;
   :ord 25 .
+
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 11 ;
+    :prt t00581:v1
+  ] .
+

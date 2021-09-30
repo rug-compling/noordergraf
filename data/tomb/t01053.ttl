@@ -2,17 +2,22 @@
 
 tomb:t01053
   a :Tomb ;
-  :ent t01053:p1, t01053:p2, t01053:p3 ;
   :image [
     dc:date "2020-05-02T16:44:12"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01053.jpg
   ] ;
+  :person t01053:p1, t01053:p2, t01053:p3 ;
   :ref "PSALM 103:8-9"@nld ;
   :sym [
     a :WeepingWillow
   ] .
+
+t01053:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
 
 t01053:p1
   a :Female ;
@@ -36,9 +41,4 @@ t01053:p2
 t01053:p3
   a :Female ;
   :nam "GEZINA BULTJES" .
-
-t01053:c1
-  a :Village.n.02 ;
-  :name "ULRUM" ;
-  :place place:Ulrum2745944 .
 

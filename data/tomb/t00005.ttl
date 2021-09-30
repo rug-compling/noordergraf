@@ -2,7 +2,7 @@
 
 tomb:t00005
   a :Tomb ;
-  :ent t00005:p1, t00005:p2, t00005:p3, t00005:p4, t00005:p5, t00005:g1 ;
+  :ent t00005:g1 ;
   :image [
     dc:date "2019-09-25T16:51:39"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +15,15 @@ tomb:t00005
     ] ;
     :nd "+53.1898+006.5930"^^ll:
   ] ;
+  :person t00005:p1, t00005:p2, t00005:p3, t00005:p4, t00005:p5 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00005:g1
+  a :Group.n.01 ;
+  :mem t00005:p2, t00005:p3 .
 
 t00005:p1
   a :Female ;
@@ -57,6 +62,18 @@ t00005:p5
   :nam "BARBARA WESTERLING" ;
   :ref t00005:v3 .
 
+t00005:v1
+  a :Verse.n.01 ;
+  :ord 5 .
+
+t00005:v2
+  a :Verse.n.01 ;
+  :ord 18 .
+
+t00005:v3
+  a :Verse.n.01 ;
+  :ord 7 .
+
 []
   a :Psalm.n.01 ;
   :prt [
@@ -76,20 +93,4 @@ t00005:p5
     :ord 1 ;
     :prt t00005:v3
   ] .
-
-t00005:g1
-  a :Group.n.01 ;
-  :mem t00005:p2, t00005:p3 .
-
-t00005:v1
-  a :Verse.n.01 ;
-  :ord 5 .
-
-t00005:v2
-  a :Verse.n.01 ;
-  :ord 18 .
-
-t00005:v3
-  a :Verse.n.01 ;
-  :ord 7 .
 

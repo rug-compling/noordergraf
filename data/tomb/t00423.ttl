@@ -2,7 +2,6 @@
 
 tomb:t00423
   a :Tomb ;
-  :ent t00423:p1 ;
   :image [
     dc:date "2019-11-02T11:36:10"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00423
     ] ;
     :nd "+53.4794+006.1606"^^ll:
   ] ;
+  :person t00423:p1 ;
   :ref t00423:v1 ;
   :site site:fr9166NAschiermonnikoog ;
   :sym [
@@ -32,6 +32,11 @@ t00423:p1
     a :Sister.n.01
   ] .
 
+t00423:v1
+  a :Verse.n.01 ;
+  :ord 19 ;
+  :txt "IK LEEF EN GIJ ZULT LEVEN" .
+
 []
   a :John.n.05 ;
   :prt [
@@ -39,9 +44,4 @@ t00423:p1
     :ord 14 ;
     :prt t00423:v1
   ] .
-
-t00423:v1
-  a :Verse.n.01 ;
-  :ord 19 ;
-  :txt "IK LEEF EN GIJ ZULT LEVEN" .
 

@@ -2,7 +2,6 @@
 
 tomb:t00916
   a :Tomb ;
-  :ent t00916:p1, t00916:p2 ;
   :image [
     dc:date "2020-03-07T14:04:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,18 @@ tomb:t00916
     ] ;
     :nd "+53.1715+006.3656"^^ll:
   ] ;
+  :person t00916:p1, t00916:p2 ;
   :site site:gr9351RLtolbert .
+
+t00916:c1
+  a :Village.n.02 ;
+  :name "NIEBERT" ;
+  :place place:Niebert2750396 .
+
+t00916:c2
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 
 t00916:p1
   a :Female ;
@@ -32,14 +42,4 @@ t00916:p2
   :nam "JANNES SNIP" ;
   :placeOfBirth t00916:c1 ;
   :placeOfDeath t00916:c2 .
-
-t00916:c1
-  a :Village.n.02 ;
-  :name "NIEBERT" ;
-  :place place:Niebert2750396 .
-
-t00916:c2
-  a :Village.n.02 ;
-  :name "TOLBERT" ;
-  :place place:Tolbert2746234 .
 

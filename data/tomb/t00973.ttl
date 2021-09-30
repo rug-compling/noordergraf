@@ -2,7 +2,7 @@
 
 tomb:t00973
   a :Tomb ;
-  :ent t00973:p1, t00973:p2, t00973:g1, t00973:g2 ;
+  :ent t00973:g1, t00973:g2 ;
   :image [
     dc:date "2020-03-25T09:31:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,18 +15,11 @@ tomb:t00973
     ] ;
     :nd "+53.1200+006.6582"^^ll:
   ] ;
+  :person t00973:p1, t00973:p2 ;
   :site site:gr9479TNnoordlaren ;
   :sym [
     a :WeepingWillow
   ] .
-
-t00973:p1
-  a :Male ;
-  :nam "JAN FLIERMAN" .
-
-t00973:p2
-  a :Female ;
-  :nam "BETJE SCHUILING" .
 
 t00973:g1
   a :Group.n.01 ;
@@ -42,4 +35,12 @@ t00973:g2
     a :Child.n.02 ;
     :tgt t00973:g1
   ] .
+
+t00973:p1
+  a :Male ;
+  :nam "JAN FLIERMAN" .
+
+t00973:p2
+  a :Female ;
+  :nam "BETJE SCHUILING" .
 

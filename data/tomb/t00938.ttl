@@ -2,7 +2,7 @@
 
 tomb:t00938
   a :Tomb ;
-  :ent t00938:p1, t00938:p2, t00938:p3, t00938:p4, t00938:g1, t00938:g2 ;
+  :ent t00938:g1, t00938:g2 ;
   :image [
     dc:date "2020-03-18T10:27:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +15,17 @@ tomb:t00938
     ] ;
     :nd "+53.2394+006.5527"^^ll:
   ] ;
+  :person t00938:p1, t00938:p2, t00938:p3, t00938:p4 ;
   :site site:gr9741GHgroningen ;
   :txt "EN ONZE LIEVE VROUW EN MOEDER"@nld, "RUSTPLAATS VAN ONZE LIEVE DOCHTER EN ZUSTER"@nld .
+
+t00938:g1
+  a :Group.n.01 ;
+  :mem t00938:p3, t00938:p4 .
+
+t00938:g2
+  a :Group.n.01 ;
+  :mem t00938:p1, t00938:p2 .
 
 t00938:p1
   a :Female ;
@@ -55,12 +64,4 @@ t00938:p4
   :dateOfBirth "1891-02-17"^^xsd:date ;
   :dateOfDeath "1990-04-16"^^xsd:date ;
   :nam "HINDERIKUS BLIKSLAGER" .
-
-t00938:g1
-  a :Group.n.01 ;
-  :mem t00938:p3, t00938:p4 .
-
-t00938:g2
-  a :Group.n.01 ;
-  :mem t00938:p1, t00938:p2 .
 

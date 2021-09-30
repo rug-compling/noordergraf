@@ -2,7 +2,6 @@
 
 tomb:t00391
   a :Tomb ;
-  :ent t00391:p1, t00391:p2 ;
   :image [
     dc:date "2019-10-26T15:04:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00391
     ] ;
     :nd "+53.2519+006.1453"^^ll:
   ] ;
+  :person t00391:p1, t00391:p2 ;
   :ref t00391:v1, t00391:v2 ;
   :site site:fr9285TCbuitenpost ;
   :sym [
@@ -39,6 +39,14 @@ t00391:p2
     a :Parent.n.01
   ] .
 
+t00391:v1
+  a :Verse.n.01 ;
+  :ord 30 .
+
+t00391:v2
+  a :Verse.n.01 ;
+  :ord 19 .
+
 []
   a :Luke.n.02 ;
   :prt [
@@ -54,12 +62,4 @@ t00391:p2
     :ord 2 ;
     :prt t00391:v2
   ] .
-
-t00391:v1
-  a :Verse.n.01 ;
-  :ord 30 .
-
-t00391:v2
-  a :Verse.n.01 ;
-  :ord 19 .
 

@@ -2,7 +2,6 @@
 
 tomb:t01029
   a :Tomb ;
-  :ent t01029:p1, t01029:p2, t01029:p3 ;
   :image [
     dc:date "2020-04-17T18:27:02"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,18 @@ tomb:t01029
     ] ;
     :nd "+53.3808+006.8589"^^ll:
   ] ;
+  :person t01029:p1, t01029:p2, t01029:p3 ;
   :site site:gr9906PPbierum ;
-  :sym [
+  :sym t01029:s3, t01029:s5, [
     a :Butterfly.n.01
   ], [
     a :Sandglass.n.01
-  ], t01029:s3, t01029:s5 .
+  ] .
+
+t01029:c2
+  a :Village.n.02 ;
+  :name "BIERUM" ;
+  :place place:Bierum2758983 .
 
 t01029:p1
   a :Female ;
@@ -50,11 +55,6 @@ t01029:p3
     a :Designer.n.01 ;
     :tgt tomb:t01029
   ] .
-
-t01029:c2
-  a :Village.n.02 ;
-  :name "BIERUM" ;
-  :place place:Bierum2758983 .
 
 t01029:s3
   a :BirdWing .

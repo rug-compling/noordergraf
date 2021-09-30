@@ -2,7 +2,6 @@
 
 tomb:t00620
   a :Tomb ;
-  :ent t00620:p1, t00620:p2, t00620:p3 ;
   :image [
     dc:date "2019-11-23T10:02:44"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,18 @@ tomb:t00620
     ] ;
     :nd "+53.1643+006.7541"^^ll:
   ] ;
+  :person t00620:p1, t00620:p2, t00620:p3 ;
   :site site:gr9601KAhoogezand .
+
+t00620:c1
+  a :Village.n.02 ;
+  :name "BORGERCOMPAGNIE" ;
+  :place place:Borgercompagnie2758618 .
+
+t00620:c2
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 
 t00620:p1
   a :Person ;
@@ -48,14 +58,4 @@ t00620:p3
     :place place:Asten2759621
   ] ;
   :placeOfDeath t00620:c2 .
-
-t00620:c1
-  a :Village.n.02 ;
-  :name "BORGERCOMPAGNIE" ;
-  :place place:Borgercompagnie2758618 .
-
-t00620:c2
-  a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
 

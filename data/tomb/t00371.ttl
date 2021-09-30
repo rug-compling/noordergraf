@@ -2,7 +2,6 @@
 
 tomb:t00371
   a :Tomb ;
-  :ent t00371:p1 ;
   :image [
     dc:date "2019-10-25T17:14:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00371
     ] ;
     :nd "+53.0792+006.5716"^^ll:
   ] ;
+  :person t00371:p1 ;
   :quo "RUST ZACHT LIEVE BROER EN OOM" ;
   :site site:dr9481CGvries ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00371:c1
+  a :Village.n.02 ;
+  :name "DONDEREN" ;
+  :place place:Donderen2756731 .
 
 t00371:p1
   a :Male ;
@@ -33,9 +38,4 @@ t00371:p1
   ], [
     a :Uncle.n.01
   ] .
-
-t00371:c1
-  a :Village.n.02 ;
-  :name "DONDEREN" ;
-  :place place:Donderen2756731 .
 

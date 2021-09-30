@@ -2,7 +2,6 @@
 
 tomb:t00240
   a :Tomb ;
-  :ent t00240:p1, t00240:p2, t00240:p3 ;
   :image [
     dc:date "2019-10-11T17:43:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00240
     ] ;
     :nd "+53.1725+006.6065"^^ll:
   ] ;
+  :person t00240:p1, t00240:p2, t00240:p3 ;
   :ref "PSALM 68:10-B" ;
   :site site:gr9751BBharen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00240:c1
+  a :Village.n.02 ;
+  :name "ONNEN" ;
+  :place place:Onnen2749588 .
 
 t00240:p1
   a :Male ;
@@ -28,10 +33,10 @@ t00240:p1
   :nam "BEREND HEKMAN" ;
   :placeOfBirth t00240:c1 ;
   :placeOfDeath t00240:c1 ;
-  :rol [
+  :rol t00240:r2, [
     a :Father.n.01 ;
     :tgt t00240:p2
-  ], t00240:r2, [
+  ], [
     a :Widower.n.01 ;
     :before t00240:r2 ;
     :tgt t00240:p3
@@ -44,11 +49,6 @@ t00240:p2
 t00240:p3
   a :Female ;
   :nam "GEERTRUIDA VAN DALEN" .
-
-t00240:c1
-  a :Village.n.02 ;
-  :name "ONNEN" ;
-  :place place:Onnen2749588 .
 
 t00240:r2
   a :Widower.n.01 ;

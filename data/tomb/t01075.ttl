@@ -2,7 +2,6 @@
 
 tomb:t01075
   a :Tomb ;
-  :ent t01075:p1, t01075:p2 ;
   :image [
     dc:date "2020-04-30T07:37:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,16 @@ tomb:t01075
     ] ;
     :nd "+53.1597+006.6208"^^ll:
   ] ;
+  :person t01075:p1, t01075:p2 ;
   :quo "NIET MEER TASTBAAR, MAAR VOOR ALTIJD IN ONS HART ONZE LIEVE DAD EN MAM, OPA EBN OMA"@nld ;
   :site site:gr9751XCharen ;
   :sym [
     a :Hand.n.01 ;
     :qua 2
   ] .
+
+t01075:g1
+  a :Group.n.01 .
 
 t01075:p1
   a :Male ;
@@ -47,7 +50,4 @@ t01075:p2
     a :Grandmother.n.01 ;
     :tgt t01075:g1
   ] .
-
-t01075:g1
-  a :Group.n.01 .
 

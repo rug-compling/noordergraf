@@ -2,7 +2,6 @@
 
 tomb:t00165
   a :Tomb ;
-  :ent t00165:p1, t00165:p2, t00165:p3 ;
   :image [
     dc:date "2019-10-02T10:21:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,22 @@ tomb:t00165
     ] ;
     :nd "+53.2060+006.5699"^^ll:
   ] ;
+  :person t00165:p1, t00165:p2, t00165:p3 ;
   :quo "RUST ZACHT" ;
   :site site:gr9725ACgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00165:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
+
+t00165:c3
+  a :City.n.01 ;
+  :name "VEENDAM" ;
+  :place place:Veendam2745783 .
 
 t00165:p1
   a :Female ;
@@ -57,14 +67,4 @@ t00165:p3
   :rol [
     a :Niece.n.01
   ] .
-
-t00165:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
-
-t00165:c3
-  a :City.n.01 ;
-  :name "VEENDAM" ;
-  :place place:Veendam2745783 .
 

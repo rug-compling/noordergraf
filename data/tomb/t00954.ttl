@@ -2,7 +2,6 @@
 
 tomb:t00954
   a :Tomb ;
-  :ent t00954:p1 ;
   :image [
     dc:date "2020-03-25T09:24:44"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00954
     ] ;
     :nd "+53.1203+006.6592"^^ll:
   ] ;
+  :person t00954:p1 ;
   :site site:gr9479TNnoordlaren .
+
+t00954:c1
+  a :Village.n.02 ;
+  :name "NOORDLAREN" ;
+  :place place:Noordlaren2749857 .
 
 t00954:p1
   a :Male ;
@@ -24,9 +29,4 @@ t00954:p1
   :nam "ROELOF HENDRIK VOS" ;
   :placeOfBirth t00954:c1 ;
   :placeOfDeath t00954:c1 .
-
-t00954:c1
-  a :Village.n.02 ;
-  :name "NOORDLAREN" ;
-  :place place:Noordlaren2749857 .
 

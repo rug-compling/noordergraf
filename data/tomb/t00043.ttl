@@ -2,7 +2,6 @@
 
 tomb:t00043
   a :Tomb ;
-  :ent t00043:p1 ;
   :image [
     dc:date "2019-09-27T17:51:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,12 @@ tomb:t00043
     ] ;
     :nd "+53.1630+006.6123"^^ll:
   ] ;
+  :person t00043:p1 ;
   :quo "RUST ZACHT" ;
   :site site:gr9752CMharen .
+
+t00043:g1
+  a :Group.n.01 .
 
 t00043:p1
   a :Male ;
@@ -30,7 +33,4 @@ t00043:p1
     a :Brother-in-law.n.01 ;
     :tgt t00043:g1
   ] .
-
-t00043:g1
-  a :Group.n.01 .
 

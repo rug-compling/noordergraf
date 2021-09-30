@@ -2,7 +2,6 @@
 
 tomb:t00705
   a :Tomb ;
-  :ent t00705:p1, t00705:p2 ;
   :image [
     dc:date "2019-12-21T13:50:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00705
     ] ;
     :nd "+52.7817+006.9011"^^ll:
   ] ;
+  :person t00705:p1, t00705:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
   :sym [
@@ -22,6 +22,11 @@ tomb:t00705
   ], [
     a :Frond.n.01
   ] .
+
+t00705:c1
+  a :Hamlet.n.03 ;
+  :name "ANGELSLO" ;
+  :place place:Angelslo2759766 .
 
 t00705:p1
   a :Male ;
@@ -44,9 +49,4 @@ t00705:p2
     a :Widow.n.01 ;
     :tgt t00705:p1
   ] .
-
-t00705:c1
-  a :Hamlet.n.03 ;
-  :name "ANGELSLO" ;
-  :place place:Angelslo2759766 .
 

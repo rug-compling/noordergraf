@@ -2,14 +2,14 @@
 
 tomb:t00941
   a :Tomb ;
-  :ent t00941:p1, t00941:p2, t00941:p3, t00941:p4, [
+  :ent t00941:g2, [
     a :Group.n.01 ;
     :mem t00941:p1, t00941:p2 ;
     :rol [
       a :Son.n.01 ;
       :tgt t00941:g2
     ]
-  ], t00941:g2 ;
+  ] ;
   :image [
     dc:date "2020-03-21T13:24:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,10 +22,15 @@ tomb:t00941
     ] ;
     :nd "+53.1383+007.1431"^^ll:
   ] ;
+  :person t00941:p1, t00941:p2, t00941:p3, t00941:p4 ;
   :site site:gr9696XGoudeschans ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00941:g2
+  a :Group.n.01 ;
+  :mem t00941:p3, t00941:p4 .
 
 t00941:p1
   a :Male ;
@@ -46,8 +51,4 @@ t00941:p3
 t00941:p4
   a :Person ;
   :nam "M. FEKKERS" .
-
-t00941:g2
-  a :Group.n.01 ;
-  :mem t00941:p3, t00941:p4 .
 

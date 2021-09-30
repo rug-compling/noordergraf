@@ -2,7 +2,6 @@
 
 tomb:t00497
   a :Tomb ;
-  :ent t00497:p1, t00497:p2 ;
   :image [
     dc:date "2019-11-16T14:11:53"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00497
     ] ;
     :nd "+53.2090+005.7913"^^ll:
   ] ;
+  :person t00497:p1, t00497:p2 ;
   :site site:fr8917AVleeuwarden .
+
+t00497:c1
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 
 t00497:p1
   a :Female ;
@@ -36,9 +41,4 @@ t00497:p2
   :nam "JOHANNES F. MIJLIUS" ;
   :placeOfBirth t00497:c1 ;
   :placeOfDeath t00497:c1 .
-
-t00497:c1
-  a :City.n.01 ;
-  :name "LEEUWARDEN" ;
-  :place place:Leeuwarden2751792 .
 

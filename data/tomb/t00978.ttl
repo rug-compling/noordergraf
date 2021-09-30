@@ -2,7 +2,7 @@
 
 tomb:t00978
   a :Tomb ;
-  :ent t00978:p1, t00978:p2, t00978:g1, t00978:g2 ;
+  :ent t00978:g1, t00978:g2 ;
   :image [
     dc:date "2020-03-25T09:26:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,32 +15,13 @@ tomb:t00978
     ] ;
     :nd "+53.1202+006.6588"^^ll:
   ] ;
+  :person t00978:p1, t00978:p2 ;
   :site site:gr9479TNnoordlaren ;
   :sym [
     a :Entity.n.01
   ], [
     a symbol:TwoRings
   ] .
-
-t00978:p1
-  a :Male ;
-  :dateOfBirth "1822"^^xsd:gYear ;
-  :dateOfDeath "1911"^^xsd:gYear ;
-  :nam "LUCAS MULDER" ;
-  :placeOfBirth t00978:c1 ;
-  :placeOfDeath t00978:c1 .
-
-t00978:p2
-  a :Female ;
-  :dateOfBirth "1837"^^xsd:gYear ;
-  :dateOfDeath "1912"^^xsd:gYear ;
-  :nam "JANTIEN VAN DALEN" ;
-  :placeOfBirth [
-    a :Village.n.02 ;
-    :name "YDE" ;
-    :place place:Yde2744130
-  ] ;
-  :placeOfDeath t00978:c1 .
 
 t00978:c1
   a :Village.n.02 ;
@@ -62,4 +43,24 @@ t00978:g2
     a :Child.n.02 ;
     :tgt t00978:g1
   ] .
+
+t00978:p1
+  a :Male ;
+  :dateOfBirth "1822"^^xsd:gYear ;
+  :dateOfDeath "1911"^^xsd:gYear ;
+  :nam "LUCAS MULDER" ;
+  :placeOfBirth t00978:c1 ;
+  :placeOfDeath t00978:c1 .
+
+t00978:p2
+  a :Female ;
+  :dateOfBirth "1837"^^xsd:gYear ;
+  :dateOfDeath "1912"^^xsd:gYear ;
+  :nam "JANTIEN VAN DALEN" ;
+  :placeOfBirth [
+    a :Village.n.02 ;
+    :name "YDE" ;
+    :place place:Yde2744130
+  ] ;
+  :placeOfDeath t00978:c1 .
 

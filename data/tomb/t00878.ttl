@@ -2,7 +2,7 @@
 
 tomb:t00878
   a :Tomb ;
-  :ent t00878:p1, t00878:p2, t00878:g1 ;
+  :ent t00878:g1 ;
   :image [
     dc:date "2020-02-15T15:05:17"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,16 @@ tomb:t00878
     ] ;
     :nd "+52.7195+006.8467"^^ll:
   ] ;
+  :person t00878:p1, t00878:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7844TCveenoord ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00878:g1
+  a :Group.n.01 ;
+  :mem t00878:p3 .
 
 t00878:p1
   a :Female ;
@@ -44,8 +49,4 @@ t00878:p3
     a :Child.n.02 ;
     :tgt t00878:p1
   ] .
-
-t00878:g1
-  a :Group.n.01 ;
-  :mem t00878:p3 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00433
   a :Tomb ;
-  :ent t00433:p1, t00433:p2 ;
   :image [
     dc:date "2019-11-02T11:42:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00433
     ] ;
     :nd "+53.4793+006.1607"^^ll:
   ] ;
+  :person t00433:p1, t00433:p2 ;
   :site site:fr9166NAschiermonnikoog ;
   :sym [
     a :Composite.n.01 ;
@@ -24,6 +24,16 @@ tomb:t00433
       a :Ribbon.n.01
     ]
   ] .
+
+t00433:c1
+  a :Island.n.01 ;
+  :name "SCHIERMONNIKOOG" ;
+  :place place:Schiermonnikoog2747591 .
+
+t00433:c2
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00433:p1
   a :Male ;
@@ -48,14 +58,4 @@ t00433:p2
     a :Parent.n.01 ;
     :tgt t00433:p3
   ] .
-
-t00433:c1
-  a :Island.n.01 ;
-  :name "SCHIERMONNIKOOG" ;
-  :place place:Schiermonnikoog2747591 .
-
-t00433:c2
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

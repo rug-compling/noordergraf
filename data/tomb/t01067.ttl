@@ -2,7 +2,6 @@
 
 tomb:t01067
   a :Tomb ;
-  :ent t01067:p1, t01067:p2 ;
   :image [
     dc:date "2020-05-01T15:31:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01067
     ] ;
     :nd "+53.1232+006.2512"^^ll:
   ] ;
+  :person t01067:p1, t01067:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:gr9367PAde_wilp ;
   :sym [
@@ -29,22 +29,22 @@ t01067:p1
   :placeOfBirth [
     a :Hamlet.n.03 ;
     :name "De Wilp <Fr.>" ;
-    :place place:DeFrieseWilp12324227 ;
     :partOf [
       a :Province.n.01 ;
       :name "FRIESLAND" ;
       :place place:ProvincieFriesland2755812
-    ]
+    ] ;
+    :place place:DeFrieseWilp12324227
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "De Wilp <Gr.>" ;
-    :place place:DeWilp2756932 ;
     :partOf [
       a :Province.n.01 ;
       :name "GRONINGEN" ;
       :place place:ProvincieGroningen2755249
-    ]
+    ] ;
+    :place place:DeWilp2756932
   ] ;
   :rol [
     a :Widow.n.01 ;

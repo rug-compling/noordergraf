@@ -2,7 +2,7 @@
 
 tomb:t00666
   a :Tomb ;
-  :ent t00666:p1, t00666:p2, t00666:g1 ;
+  :ent t00666:g1 ;
   :image [
     dc:date "2019-12-14T13:53:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +15,17 @@ tomb:t00666
     ] ;
     :nd "+53.0688+005.5239"^^ll:
   ] ;
+  :person t00666:p1, t00666:p2 ;
   :quo "ZALIG ZIJN ZIJ DIE NIET ZULLEN \\ GEZIEN HEBBEN EN NOCHTANS \\ ZULLEN GELOOFD HEBBEN"@nld ;
   :ref t00666:v1 ;
   :site site:fr8701DWbolsward ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00666:g1
+  a :Group.n.01 ;
+  :mem t00666:p3 .
 
 t00666:p1
   a :Female ;
@@ -46,6 +51,10 @@ t00666:p3
     :tgt t00666:p1
   ] .
 
+t00666:v1
+  a :Part.n.09 ;
+  :nam "B" .
+
 []
   a :John.n.05 ;
   :prt [
@@ -57,12 +66,4 @@ t00666:p3
       :prt t00666:v1
     ]
   ] .
-
-t00666:g1
-  a :Group.n.01 ;
-  :mem t00666:p3 .
-
-t00666:v1
-  a :Part.n.09 ;
-  :nam "B" .
 

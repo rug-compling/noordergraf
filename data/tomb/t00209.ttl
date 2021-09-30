@@ -2,7 +2,6 @@
 
 tomb:t00209
   a :Tomb ;
-  :ent t00209:p1, t00209:p2 ;
   :image [
     dc:date "2019-10-08T14:54:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00209
     ] ;
     :nd "+53.2224+006.6367"^^ll:
   ] ;
+  :person t00209:p1, t00209:p2 ;
   :site site:gr9723EWgroningen ;
   :sym [
     a :Composite.n.01 ;
@@ -24,6 +24,11 @@ tomb:t00209
       a :Horse.n.01
     ]
   ] .
+
+t00209:c1
+  a :Hamlet.n.03 ;
+  :name "EUVELGUNNE" ;
+  :place place:Euvelgunne2755982 .
 
 t00209:p1
   a :Male ;
@@ -40,9 +45,4 @@ t00209:p1
 t00209:p2
   a :Female ;
   :nam "J.T. WOLTERS" .
-
-t00209:c1
-  a :Hamlet.n.03 ;
-  :name "EUVELGUNNE" ;
-  :place place:Euvelgunne2755982 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00923
   a :Tomb ;
-  :ent t00923:p1, t00923:p2 ;
   :image [
     dc:date "2020-03-07T14:10:19"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00923
     ] ;
     :nd "+53.1719+006.3656"^^ll:
   ] ;
+  :person t00923:p1, t00923:p2 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
   :site site:gr9351RLtolbert ;
   :sym [
@@ -22,6 +22,11 @@ tomb:t00923
   ], [
     a :Frond.n.01
   ] .
+
+t00923:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 
 t00923:p1
   a :Male ;
@@ -38,9 +43,4 @@ t00923:p1
 t00923:p2
   a :Female ;
   :nam "AALTIEN HULSHOF" .
-
-t00923:c1
-  a :Village.n.02 ;
-  :name "TOLBERT" ;
-  :place place:Tolbert2746234 .
 

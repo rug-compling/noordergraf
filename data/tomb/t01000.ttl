@@ -2,7 +2,7 @@
 
 tomb:t01000
   a :Tomb ;
-  :ent t01000:p1, t01000:p2, t01000:p3, t01000:g1 ;
+  :ent t01000:g1 ;
   :image [
     dc:date "2020-04-05T12:11:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,12 @@ tomb:t01000
     ] ;
     :nd "+53.2443+006.6280"^^ll:
   ] ;
+  :person t01000:p1, t01000:p2, t01000:p3 ;
   :site site:gr9734ATgroningen .
+
+t01000:g1
+  a :Group.n.01 ;
+  :mem t01000:p2, t01000:p3 .
 
 t01000:p1
   a :Female ;
@@ -34,8 +39,4 @@ t01000:p2
 t01000:p3
   a :Person ;
   :nam "A. DE VRIES" .
-
-t01000:g1
-  a :Group.n.01 ;
-  :mem t01000:p2, t01000:p3 .
 

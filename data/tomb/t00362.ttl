@@ -2,7 +2,6 @@
 
 tomb:t00362
   a :Tomb ;
-  :ent t00362:p1, t00362:p2 ;
   :image [
     dc:date "2019-10-25T17:29:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00362
     ] ;
     :nd "+53.0799+006.5714"^^ll:
   ] ;
+  :person t00362:p1, t00362:p2 ;
   :quo "RUST ZACHT" ;
   :site site:dr9481CGvries ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00362:c1
+  a :Village.n.02 ;
+  :name "TYNAARLO" ;
+  :place place:Tynaarlo2746038 .
 
 t00362:p1
   a :Male ;
@@ -36,9 +41,4 @@ t00362:p1
 t00362:p2
   a :Female ;
   :nam "JANTJE DARWINKEL" .
-
-t00362:c1
-  a :Village.n.02 ;
-  :name "TYNAARLO" ;
-  :place place:Tynaarlo2746038 .
 

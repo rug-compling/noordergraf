@@ -2,7 +2,6 @@
 
 tomb:t00576
   a :Tomb ;
-  :ent t00576:p1, t00576:p2, t00576:p3 ;
   :image [
     dc:date "2019-11-30T14:57:08"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00576
     ] ;
     :nd "+53.3336+006.5137"^^ll:
   ] ;
+  :person t00576:p1, t00576:p2, t00576:p3 ;
   :site site:gr9951STwinsum .
+
+t00576:c1
+  a :Village.n.02 ;
+  :name "OBERGUM" ;
+  :place place:Obergum2749742 .
 
 t00576:p1
   a :Male ;
@@ -24,11 +29,11 @@ t00576:p1
   :nam "KLAAS M. TALENS" ;
   :placeOfBirth t00576:c1 ;
   :placeOfDeath t00576:c1 ;
-  :rol [
+  :rol t00576:r2, [
     a :Widower.n.01 ;
     :before t00576:r2 ;
     :tgt t00576:p2
-  ], t00576:r2 .
+  ] .
 
 t00576:p2
   a :Female ;
@@ -37,11 +42,6 @@ t00576:p2
 t00576:p3
   a :Female ;
   :nam "ANJE RIETEMA" .
-
-t00576:c1
-  a :Village.n.02 ;
-  :name "OBERGUM" ;
-  :place place:Obergum2749742 .
 
 t00576:r2
   a :Spouse.n.01 ;

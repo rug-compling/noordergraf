@@ -2,7 +2,6 @@
 
 tomb:t00247
   a :Tomb ;
-  :ent t00247:p1, t00247:p2 ;
   :image [
     dc:date "2019-10-11T17:21:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00247
     ] ;
     :nd "+53.1723+006.6063"^^ll:
   ] ;
+  :person t00247:p1, t00247:p2 ;
   :site site:gr9751BBharen .
+
+t00247:c1
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 
 t00247:p1
   a :Female ;
@@ -32,9 +37,4 @@ t00247:p2
   :nam "JAN BERENDS" ;
   :placeOfBirth t00247:c1 ;
   :placeOfDeath t00247:c1 .
-
-t00247:c1
-  a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
 

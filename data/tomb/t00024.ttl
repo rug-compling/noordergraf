@@ -2,7 +2,6 @@
 
 tomb:t00024
   a :Tomb ;
-  :ent t00024:p1, t00024:p2 ;
   :image [
     dc:date "2019-09-25T16:25:52"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00024
     ] ;
     :nd "+53.1909+006.5942"^^ll:
   ] ;
+  :person t00024:p1, t00024:p2 ;
   :site site:gr9722SNgroningen .
 
 t00024:p1
@@ -30,6 +30,10 @@ t00024:p2
   :nam "OTTO DOORNBOS" ;
   :ref t00024:v1 .
 
+t00024:v1
+  a :Verse.n.01 ;
+  :ord 13 .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -37,8 +41,4 @@ t00024:p2
     :ord 14 ;
     :prt t00024:v1
   ] .
-
-t00024:v1
-  a :Verse.n.01 ;
-  :ord 13 .
 

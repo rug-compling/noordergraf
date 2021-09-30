@@ -2,18 +2,11 @@
 
 tomb:t01104
   a :Tomb ;
-  :site site:gr9722SNgroningen ;
   :image [
+    dc:date "2021-03-07T15:44:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01104.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-07T15:44:24"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.1910 ;
@@ -21,7 +14,13 @@ tomb:t01104
     ] ;
     :nd "+53.1910+006.5926"^^ll:
   ] ;
-  :ent t01104:p1, t01104:p2 .
+  :person t01104:p1, t01104:p2 ;
+  :site site:gr9722SNgroningen .
+
+t01104:c2
+  a :Village.n.02 ;
+  :name "BORCULO" ;
+  :place place:Borculo2758626 .
 
 t01104:p1
   a :Male ;
@@ -54,9 +53,4 @@ t01104:p2
     :place place:Gorredijk2755429
   ] ;
   :placeOfDeath t01104:c2 .
-
-t01104:c2
-  a :Village.n.02 ;
-  :name "BORCULO" ;
-  :place place:Borculo2758626 .
 

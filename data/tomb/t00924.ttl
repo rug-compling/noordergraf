@@ -2,7 +2,7 @@
 
 tomb:t00924
   a :Tomb ;
-  :ent t00924:p1, t00924:p2, t00924:p3, t00924:g1 ;
+  :ent t00924:g1 ;
   :image [
     dc:date "2020-03-07T14:10:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,21 @@ tomb:t00924
     ] ;
     :nd "+53.1719+006.3656"^^ll:
   ] ;
+  :person t00924:p1, t00924:p2, t00924:p3 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
   :site site:gr9351RLtolbert ;
   :sym [
     a :Entity.n.01
   ] .
+
+t00924:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
+
+t00924:g1
+  a :Group.n.01 ;
+  :mem t00924:p2, t00924:p3 .
 
 t00924:p1
   a :Female ;
@@ -40,13 +50,4 @@ t00924:p2
 t00924:p3
   a :Person ;
   :nam "J. OOSTERHUIS" .
-
-t00924:c1
-  a :Village.n.02 ;
-  :name "TOLBERT" ;
-  :place place:Tolbert2746234 .
-
-t00924:g1
-  a :Group.n.01 ;
-  :mem t00924:p2, t00924:p3 .
 

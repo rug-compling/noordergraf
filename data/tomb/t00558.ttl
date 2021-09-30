@@ -2,7 +2,6 @@
 
 tomb:t00558
   a :Tomb ;
-  :ent t00558:p1, t00558:p2 ;
   :image [
     dc:date "2019-11-24T13:52:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,13 @@ tomb:t00558
     ] ;
     :nd "+53.1047+006.8756"^^ll:
   ] ;
+  :person t00558:p1, t00558:p2 ;
   :site site:gr9641ANveendam ;
   :sym [
     a :Composite.n.01 ;
-    :prt [
+    :prt t00558:s5, [
       a :WingedSandglass
-    ], t00558:s5 ;
+    ] ;
     :sym [
       a :Torch.n.01
     ], [

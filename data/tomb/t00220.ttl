@@ -2,7 +2,7 @@
 
 tomb:t00220
   a :Tomb ;
-  :ent t00220:p1, t00220:p2, t00220:p3, t00220:g1 ;
+  :ent t00220:g1 ;
   :image [
     dc:date "2019-10-08T14:43:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +15,20 @@ tomb:t00220
     ] ;
     :nd "+53.2225+006.6367"^^ll:
   ] ;
+  :person t00220:p1, t00220:p2, t00220:p3 ;
   :site site:gr9723EWgroningen ;
   :sym [
     a :Horse.n.01
   ] .
+
+t00220:c1
+  a :Hamlet.n.03 ;
+  :name "EUVELGUNNE" ;
+  :place place:Euvelgunne2755982 .
+
+t00220:g1
+  a :Group.n.01 ;
+  :mem t00220:p2, t00220:p3 .
 
 t00220:p1
   a :Male ;
@@ -39,13 +49,4 @@ t00220:p2
 t00220:p3
   a :Female ;
   :nam "JANTJE H. KOL" .
-
-t00220:c1
-  a :Hamlet.n.03 ;
-  :name "EUVELGUNNE" ;
-  :place place:Euvelgunne2755982 .
-
-t00220:g1
-  a :Group.n.01 ;
-  :mem t00220:p2, t00220:p3 .
 

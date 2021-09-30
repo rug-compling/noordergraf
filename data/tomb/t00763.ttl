@@ -2,7 +2,7 @@
 
 tomb:t00763
   a :Tomb ;
-  :ent t00763:p1, t00763:p2, t00763:p3, t00763:g1 ;
+  :ent t00763:g1 ;
   :image [
     dc:date "2019-12-28T12:44:04"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +15,7 @@ tomb:t00763
     ] ;
     :nd "+53.3112+006.9971"^^ll:
   ] ;
+  :person t00763:p1, t00763:p2, t00763:p3 ;
   :site site:gr9936BTfarmsum ;
   :sym [
     a :Butterfly.n.01
@@ -23,6 +24,10 @@ tomb:t00763
   ], [
     a :Butterfly.n.01
   ] .
+
+t00763:g1
+  a :Group.n.01 ;
+  :mem t00763:p2, t00763:p3 .
 
 t00763:p1
   a :Male ;
@@ -41,8 +46,4 @@ t00763:p2
 t00763:p3
   a :Female ;
   :nam "TRIJNTJE FREERKS STEENHUISEN" .
-
-t00763:g1
-  a :Group.n.01 ;
-  :mem t00763:p2, t00763:p3 .
 

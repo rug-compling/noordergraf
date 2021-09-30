@@ -2,7 +2,6 @@
 
 tomb:t00647
   a :Tomb ;
-  :ent t00647:p1, t00647:p2 ;
   :image [
     dc:date "2019-12-08T11:18:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00647
     ] ;
     :nd "+53.2089+006.6480"^^ll:
   ] ;
+  :person t00647:p1, t00647:p2 ;
   :ref t00647:v1 ;
   :site site:gr9723EJgroningen ;
   :sym [
@@ -54,6 +54,10 @@ t00647:p2
     :place place:Engelbert2756097
   ] .
 
+t00647:v1
+  a :Verse.n.01 ;
+  :ord 25 .
+
 []
   a :John.n.05 ;
   :prt [
@@ -61,8 +65,4 @@ t00647:p2
     :ord 11 ;
     :prt t00647:v1
   ] .
-
-t00647:v1
-  a :Verse.n.01 ;
-  :ord 25 .
 

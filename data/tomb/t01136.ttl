@@ -2,18 +2,11 @@
 
 tomb:t01136
   a :Tomb ;
-  :site site:gr9881PBkommerzijl ;
   :image [
+    dc:date "2021-04-05T10:26:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01136.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-04-05T10:26:11"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2858 ;
@@ -21,7 +14,8 @@ tomb:t01136
     ] ;
     :nd "+53.2858+006.3247"^^ll:
   ] ;
-  :ent t01136:p1 ;
+  :person t01136:p1 ;
+  :site site:gr9881PBkommerzijl ;
   :sym [
     a :Composite.n.01 ;
     :prt t01136:s2, t01136:s4

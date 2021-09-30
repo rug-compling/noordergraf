@@ -2,7 +2,7 @@
 
 tomb:t00737
   a :Tomb ;
-  :ent t00737:p1, t00737:p2, t00737:p3, t00737:g1 ;
+  :ent t00737:g1 ;
   :image [
     dc:date "2019-12-28T12:23:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,12 @@ tomb:t00737
     ] ;
     :nd "+53.3089+006.9654"^^ll:
   ] ;
+  :person t00737:p1, t00737:p2, t00737:p3 ;
   :site site:gr9936TCfarmsum .
+
+t00737:g1
+  a :Group.n.01 ;
+  :mem t00737:p2, t00737:p3 .
 
 t00737:p1
   a :Female ;
@@ -44,8 +49,4 @@ t00737:p2
 t00737:p3
   a :Female ;
   :nam "A.H. GEERTSEMA" .
-
-t00737:g1
-  a :Group.n.01 ;
-  :mem t00737:p2, t00737:p3 .
 

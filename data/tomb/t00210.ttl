@@ -2,7 +2,6 @@
 
 tomb:t00210
   a :Tomb ;
-  :ent t00210:p1, t00210:p2, t00210:p3 ;
   :image [
     dc:date "2019-10-08T14:53:04"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00210
     ] ;
     :nd "+53.2224+006.6370"^^ll:
   ] ;
+  :person t00210:p1, t00210:p2, t00210:p3 ;
   :site site:gr9723EWgroningen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00210:c1
+  a :Village.n.02 ;
+  :name "WESTERBROEK" ;
+  :place place:Westerbroek2744764 .
 
 t00210:p1
   a :Male ;
@@ -65,9 +70,4 @@ t00210:p3
       :mem t00210:p1, t00210:p2
     ]
   ] .
-
-t00210:c1
-  a :Village.n.02 ;
-  :name "WESTERBROEK" ;
-  :place place:Westerbroek2744764 .
 

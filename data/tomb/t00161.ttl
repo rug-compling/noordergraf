@@ -2,7 +2,6 @@
 
 tomb:t00161
   a :Tomb ;
-  :ent t00161:p1, t00161:p2 ;
   :image [
     dc:date "2019-10-04T10:59:37"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,9 +14,15 @@ tomb:t00161
     ] ;
     :nd "+53.2058+006.5704"^^ll:
   ] ;
+  :person t00161:p1, t00161:p2 ;
   :quo "ZOEKT DE DINGEN DIE BOVEN ZIJN" ;
   :ref "COLOSSENZEN 3:1" ;
   :site site:gr9725ACgroningen .
+
+t00161:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00161:p1
   a :Female ;
@@ -51,9 +56,4 @@ t00161:p2
     :place place:Grou2755052
   ] ;
   :placeOfDeath t00161:c1 .
-
-t00161:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

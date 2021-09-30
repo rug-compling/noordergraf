@@ -2,7 +2,6 @@
 
 tomb:t00338
   a :Tomb ;
-  :ent t00338:p1 ;
   :image [
     dc:date "2019-10-19T14:10:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00338
     ] ;
     :nd "+52.7154+006.4729"^^ll:
   ] ;
+  :person t00338:p1 ;
   :ref t00338:v1 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
@@ -37,6 +37,10 @@ t00338:p1
     :place place:Utrecht2745912
   ] .
 
+t00338:v1
+  a :Verse.n.01 ;
+  :ord 47 .
+
 []
   a :John.n.05 ;
   :prt [
@@ -44,8 +48,4 @@ t00338:p1
     :ord 6 ;
     :prt t00338:v1
   ] .
-
-t00338:v1
-  a :Verse.n.01 ;
-  :ord 47 .
 

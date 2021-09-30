@@ -2,7 +2,7 @@
 
 tomb:t00692
   a :Tomb ;
-  :ent t00692:p1, t00692:p2, t00692:g1, t00692:g2 ;
+  :ent t00692:g1, t00692:g2 ;
   :image [
     dc:date "2019-12-14T13:30:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,27 @@ tomb:t00692
     ] ;
     :nd "+53.0675+005.5223"^^ll:
   ] ;
+  :person t00692:p1, t00692:p2 ;
   :picture [
     a :Portrait.n.02 ;
     :thm t00692:g1
   ] ;
   :site site:fr8701DWbolsward .
+
+t00692:g1
+  a :Group.n.01 ;
+  :mem t00692:p1, t00692:p2 ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00692:g2
+  ] .
+
+t00692:g2
+  a :Group.n.01 ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00692:g1
+  ] .
 
 t00692:p1
   a :Male ;
@@ -37,20 +53,5 @@ t00692:p2
   :nam "GRIETJE ANDELA" ;
   :rol [
     a :Grandmother.n.01
-  ] .
-
-t00692:g1
-  a :Group.n.01 ;
-  :mem t00692:p1, t00692:p2 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00692:g2
-  ] .
-
-t00692:g2
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00692:g1
   ] .
 

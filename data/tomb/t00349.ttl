@@ -2,7 +2,6 @@
 
 tomb:t00349
   a :Tomb ;
-  :ent t00349:p1, t00349:p2 ;
   :image [
     dc:date "2019-10-25T17:40:57"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00349
     ] ;
     :nd "+53.0801+006.5725"^^ll:
   ] ;
+  :person t00349:p1, t00349:p2 ;
   :site site:dr9481CGvries .
+
+t00349:c1
+  a :Village.n.02 ;
+  :name "ZEIJEN" ;
+  :place place:Zeyen2743985 .
 
 t00349:p1
   a :Male ;
@@ -32,9 +37,4 @@ t00349:p2
   :nam "JEIGIEN ARENDS" ;
   :placeOfBirth t00349:c1 ;
   :placeOfDeath t00349:c1 .
-
-t00349:c1
-  a :Village.n.02 ;
-  :name "ZEIJEN" ;
-  :place place:Zeyen2743985 .
 

@@ -2,7 +2,6 @@
 
 tomb:t01033
   a :Tomb ;
-  :ent t01033:p1, t01033:p2 ;
   :image [
     dc:date "2020-04-19T12:03:56"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01033
     ] ;
     :nd "+53.2644+006.3938"^^ll:
   ] ;
+  :person t01033:p1, t01033:p2 ;
   :ref t01033:v1 ;
   :site site:gr9804TEnoordhorn ;
   :sym [
@@ -35,6 +35,11 @@ t01033:p2
   a :Female ;
   :nam "TRIENTJE SCHEERINGA" .
 
+t01033:v1
+  a :Verse.n.01 ;
+  :ord 13 ;
+  :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -42,9 +47,4 @@ t01033:p2
     :ord 14 ;
     :prt t01033:v1
   ] .
-
-t01033:v1
-  a :Verse.n.01 ;
-  :ord 13 ;
-  :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
 

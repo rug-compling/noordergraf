@@ -2,7 +2,6 @@
 
 tomb:t00353
   a :Tomb ;
-  :ent t00353:p1, t00353:p2 ;
   :image [
     dc:date "2019-10-25T17:47:48"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00353
     ] ;
     :nd "+53.0800+006.5730"^^ll:
   ] ;
+  :person t00353:p1, t00353:p2 ;
   :site site:dr9481CGvries ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00353:c1
+  a :Village.n.02 ;
+  :name "ZEIJEN" ;
+  :place place:Zeyen2743985 .
 
 t00353:p1
   a :Female ;
@@ -36,9 +41,4 @@ t00353:p2
   a :Male ;
   :nam "H. NOORD" ;
   :suffix "JZN" .
-
-t00353:c1
-  a :Village.n.02 ;
-  :name "ZEIJEN" ;
-  :place place:Zeyen2743985 .
 

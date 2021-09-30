@@ -2,7 +2,6 @@
 
 tomb:t00619
   a :Tomb ;
-  :ent t00619:p1, t00619:p2 ;
   :image [
     dc:date "2019-11-23T10:03:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00619
     ] ;
     :nd "+53.1643+006.7541"^^ll:
   ] ;
+  :person t00619:p1, t00619:p2 ;
   :site site:gr9601KAhoogezand .
+
+t00619:c2
+  a :Village.n.02 ;
+  :name "ZUIDLAREN" ;
+  :place place:Zuidlaren2743680 .
 
 t00619:p1
   a :Person ;
@@ -40,9 +45,4 @@ t00619:p2
     :place place:Glimmen2755495
   ] ;
   :placeOfDeath t00619:c2 .
-
-t00619:c2
-  a :Village.n.02 ;
-  :name "ZUIDLAREN" ;
-  :place place:Zuidlaren2743680 .
 

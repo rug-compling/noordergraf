@@ -2,7 +2,7 @@
 
 tomb:t01005
   a :Tomb ;
-  :ent t01005:p1, t01005:p2, t01005:p3, t01005:g1 ;
+  :ent t01005:g1 ;
   :image [
     dc:date "2020-04-04T10:45:21"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +15,7 @@ tomb:t01005
     ] ;
     :nd "+53.1756+007.0958"^^ll:
   ] ;
+  :person t01005:p1, t01005:p2, t01005:p3 ;
   :site site:gr9686RSbeerta ;
   :sym [
     a :Frond.n.01
@@ -27,6 +28,10 @@ tomb:t01005
   ], [
     a :Cocoon.n.01
   ] .
+
+t01005:g1
+  a :Group.n.01 ;
+  :mem t01005:p2, t01005:p3 .
 
 t01005:p1
   a :Female ;
@@ -45,8 +50,4 @@ t01005:p2
 t01005:p3
   a :Person ;
   :nam "A. MEIJER" .
-
-t01005:g1
-  a :Group.n.01 ;
-  :mem t01005:p2, t01005:p3 .
 

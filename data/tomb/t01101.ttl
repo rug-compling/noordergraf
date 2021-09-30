@@ -2,18 +2,11 @@
 
 tomb:t01101
   a :Tomb ;
-  :site site:gr9843AGgrijpskerk ;
   :image [
+    dc:date "2021-03-06T09:07:40"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01101.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-06T09:07:40"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2627 ;
@@ -21,7 +14,8 @@ tomb:t01101
     ] ;
     :nd "+53.2627+006.3125"^^ll:
   ] ;
-  :ent t01101:p1 .
+  :person t01101:p1 ;
+  :site site:gr9843AGgrijpskerk .
 
 t01101:p1
   a :Female ;

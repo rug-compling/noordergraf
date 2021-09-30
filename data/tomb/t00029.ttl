@@ -2,7 +2,7 @@
 
 tomb:t00029
   a :Tomb ;
-  :ent t00029:p1, t00029:p2, t00029:p3, t00029:g1, t00029:g2, t00029:g3 ;
+  :ent t00029:g1, t00029:g2, t00029:g3 ;
   :image [
     dc:date "2019-09-25T16:17:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +15,22 @@ tomb:t00029
     ] ;
     :nd "+53.1937+006.5946"^^ll:
   ] ;
+  :person t00029:p1, t00029:p2, t00029:p3 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00029:g1
+  a :Group.n.01 ;
+  :mem t00029:p2, t00029:p3 .
+
+t00029:g2
+  a :Group.n.01 ;
+  :mem t00029:p3 .
+
+t00029:g3
+  a :Group.n.01 .
 
 t00029:p1
   a :Female ;
@@ -61,15 +73,4 @@ t00029:p3
     a :Mother.n.01 ;
     :tgt t00029:g3
   ] .
-
-t00029:g1
-  a :Group.n.01 ;
-  :mem t00029:p2, t00029:p3 .
-
-t00029:g2
-  a :Group.n.01 ;
-  :mem t00029:p3 .
-
-t00029:g3
-  a :Group.n.01 .
 

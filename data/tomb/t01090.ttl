@@ -2,14 +2,19 @@
 
 tomb:t01090
   a :Tomb ;
-  :ent t01090:p1, t01090:p2 ;
   :image [
     dc:date "2020-09-11T17:47:02"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01090.jpg
   ] ;
-  :ref "KOL 1"@nld, t01090:v1 .
+  :person t01090:p1, t01090:p2 ;
+  :ref t01090:v1, "KOL 1"@nld .
+
+t01090:c2
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 
 t01090:p1
   a :Female ;
@@ -43,16 +48,11 @@ t01090:p2
     :tgt t01090:p1
   ] .
 
-[]
-  a :First_Epistle_to_the_Corinthians.n.01 ;
-  :prt t01090:v1 .
-
-t01090:c2
-  a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
-
 t01090:v1
   a :Chapter.n.01 ;
   :ord 15 .
+
+[]
+  a :First_Epistle_to_the_Corinthians.n.01 ;
+  :prt t01090:v1 .
 

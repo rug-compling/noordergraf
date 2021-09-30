@@ -2,7 +2,6 @@
 
 tomb:t00741
   a :Tomb ;
-  :ent t00741:p1, t00741:p2 ;
   :image [
     dc:date "2019-12-29T10:20:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00741
     ] ;
     :nd "+53.1806+006.9690"^^ll:
   ] ;
+  :person t00741:p1, t00741:p2 ;
   :quo "MIJ GENADE IS U GENOEG"@nld ;
   :site site:gr9679KHscheemda ;
   :sym [
     a :Entity.n.01
   ] .
+
+t00741:c1
+  a :Village.n.02 ;
+  :name "SCHEEMDA" ;
+  :place place:Scheemda2747661 .
 
 t00741:p1
   a :Male ;
@@ -36,9 +41,4 @@ t00741:p1
 t00741:p2
   a :Female ;
   :nam "TRIJNTJE SMIT" .
-
-t00741:c1
-  a :Village.n.02 ;
-  :name "SCHEEMDA" ;
-  :place place:Scheemda2747661 .
 

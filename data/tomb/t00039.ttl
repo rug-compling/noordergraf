@@ -2,7 +2,6 @@
 
 tomb:t00039
   a :Tomb ;
-  :ent t00039:p1 ;
   :image [
     dc:date "2019-09-27T17:52:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00039
     ] ;
     :nd "+53.1629+006.6122"^^ll:
   ] ;
+  :person t00039:p1 ;
   :site site:gr9752CMharen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00039:c1
+  a :Village.n.02 ;
+  :name "HELPMAN" ;
+  :place place:Helpman2754444 .
 
 t00039:p1
   a :Male ;
@@ -27,9 +32,4 @@ t00039:p1
   :nam "PIETERTJE EITENS" ;
   :placeOfBirth t00039:c1 ;
   :placeOfDeath t00039:c1 .
-
-t00039:c1
-  a :Village.n.02 ;
-  :name "HELPMAN" ;
-  :place place:Helpman2754444 .
 

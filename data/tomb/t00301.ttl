@@ -2,7 +2,6 @@
 
 tomb:t00301
   a :Tomb ;
-  :ent t00301:p1 ;
   :image [
     dc:date "2019-10-19T14:33:45"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00301
     ] ;
     :nd "+52.7154+006.4735"^^ll:
   ] ;
+  :person t00301:p1 ;
   :site site:dr7907CHhoogeveen .
 
 t00301:p1
@@ -25,15 +25,16 @@ t00301:p1
   :placeOfBirth [
     a :City.n.01 ;
     :name "BUREN" ;
-    :place place:Buren2758097 ;
     :partOf [
       a :Province.n.01 ;
       :name "GELDERLAND" ;
       :place place:ProvincieGelderland2755634
-    ]
+    ] ;
+    :place place:Buren2758097
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
     :name "BREST" ;
     :place place:Brest3030300
   ] .
+

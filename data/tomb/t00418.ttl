@@ -2,7 +2,7 @@
 
 tomb:t00418
   a :Tomb ;
-  :ent t00418:p1, t00418:p2, t00418:p3, t00418:g1 ;
+  :ent t00418:g1 ;
   :image [
     dc:date "2019-10-25T16:55:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,28 +15,33 @@ tomb:t00418
     ] ;
     :nd "+53.0797+006.5731"^^ll:
   ] ;
+  :person t00418:p1, t00418:p2, t00418:p3 ;
   :site site:dr9481CGvries ;
   :sym [
     a :Composite.n.01 ;
     :prt [
-      a :Flower.n.01
+      a :Ribbon.n.01
     ], [
-      a :Bird.n.01
+      a :Frond.n.01
     ], [
-      a :Nest.n.01
-    ], [
-      a :Bird.n.01
+      a :Frond.n.01
     ]
   ], [
     a :Composite.n.01 ;
     :prt [
-      a :Frond.n.01
+      a :Nest.n.01
     ], [
-      a :Frond.n.01
+      a :Bird.n.01
     ], [
-      a :Ribbon.n.01
+      a :Flower.n.01
+    ], [
+      a :Bird.n.01
     ]
   ] .
+
+t00418:g1
+  a :Group.n.01 ;
+  :mem t00418:p2, t00418:p3 .
 
 t00418:p1
   a :Female ;
@@ -55,8 +60,4 @@ t00418:p2
 t00418:p3
   a :Female ;
   :nam "J. GERRITS" .
-
-t00418:g1
-  a :Group.n.01 ;
-  :mem t00418:p2, t00418:p3 .
 

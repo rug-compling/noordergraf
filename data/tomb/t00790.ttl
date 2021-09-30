@@ -2,7 +2,7 @@
 
 tomb:t00790
   a :Tomb ;
-  :ent t00790:p1, t00790:p2, t00790:p3, t00790:g1 ;
+  :ent t00790:g1 ;
   :image [
     dc:date "2020-01-18T13:10:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,17 @@ tomb:t00790
     ] ;
     :nd "+53.2776+006.6935"^^ll:
   ] ;
+  :person t00790:p1, t00790:p2, t00790:p3 ;
   :site site:gr9791KEten_boer .
+
+t00790:c1
+  a :Village.n.02 ;
+  :name "TEN BOER" ;
+  :place place:TenBoer2746491 .
+
+t00790:g1
+  a :Group.n.01 ;
+  :mem t00790:p2, t00790:p3 .
 
 t00790:p1
   a :Female ;
@@ -36,13 +46,4 @@ t00790:p2
 t00790:p3
   a :Female ;
   :nam "ANJE KUIPERS" .
-
-t00790:c1
-  a :Village.n.02 ;
-  :name "TEN BOER" ;
-  :place place:TenBoer2746491 .
-
-t00790:g1
-  a :Group.n.01 ;
-  :mem t00790:p2, t00790:p3 .
 

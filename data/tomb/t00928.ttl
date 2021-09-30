@@ -2,7 +2,6 @@
 
 tomb:t00928
   a :Tomb ;
-  :ent t00928:p1 ;
   :image [
     dc:date "2020-03-07T14:11:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00928
     ] ;
     :nd "+53.1717+006.3657"^^ll:
   ] ;
+  :person t00928:p1 ;
   :quo "TER GEDACHTENIS VAN $p1"@nld ;
   :site site:gr9351RLtolbert ;
   :sym [
@@ -31,6 +31,10 @@ behuizing Rodenburg
 te Tolbert
 11 Juni 1913.""" .
 
+t00928:c2
+  a :Behuizing.n.01 ;
+  :nam "RODENBURG" .
+
 t00928:p1
   a :Male ;
   :dateOfBirth "1838-12-28"^^xsd:date ;
@@ -43,8 +47,4 @@ t00928:p1
     :place place:Tolbert2746234
   ] ;
   :placeOfDeath t00928:c2 .
-
-t00928:c2
-  a :Behuizing.n.01 ;
-  :nam "RODENBURG" .
 

@@ -2,7 +2,6 @@
 
 tomb:t00977
   a :Tomb ;
-  :ent t00977:p1, t00977:p2, t00977:p3, t00977:p4 ;
   :image [
     dc:date "2020-03-25T09:26:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00977
     ] ;
     :nd "+53.1299+006.6240"^^ll:
   ] ;
+  :person t00977:p1, t00977:p2, t00977:p3, t00977:p4 ;
   :ref "GEZANG 22"@nld .
+
+t00977:c1
+  a :Village.n.02 ;
+  :name "GLIMMEN" ;
+  :place place:Glimmen2755495 .
 
 t00977:p1
   a :Female ;
@@ -44,9 +49,4 @@ t00977:p4
   :dateOfDeath "1945-12-15"^^xsd:date ;
   :nam "JANTJE MULDER-GORTMAKER" ;
   :placeOfDeath t00977:c1 .
-
-t00977:c1
-  a :Village.n.02 ;
-  :name "GLIMMEN" ;
-  :place place:Glimmen2755495 .
 

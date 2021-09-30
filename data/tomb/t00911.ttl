@@ -2,7 +2,6 @@
 
 tomb:t00911
   a :Tomb ;
-  :ent t00911:p1, t00911:p2 ;
   :image [
     dc:date "2020-03-07T14:09:36"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00911
     ] ;
     :nd "+53.1719+006.3656"^^ll:
   ] ;
+  :person t00911:p1, t00911:p2 ;
   :site site:gr9351RLtolbert ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00911:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 
 t00911:p1
   a :Female ;
@@ -35,9 +40,4 @@ t00911:p1
 t00911:p2
   a :Male ;
   :nam "RENKE DONKERBROEK" .
-
-t00911:c1
-  a :Village.n.02 ;
-  :name "TOLBERT" ;
-  :place place:Tolbert2746234 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00840
   a :Tomb ;
-  :ent t00840:p1, t00840:p2 ;
   :image [
     dc:date "2020-02-20T14:47:29"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,18 @@ tomb:t00840
     ] ;
     :nd "+53.2961+005.0650"^^ll:
   ] ;
+  :person t00840:p1, t00840:p2 ;
   :site site:fr8899AWoost_vlieland ;
   :sym [
     a :Oak.n.01
   ], [
     a :Branch.n.02
   ] .
+
+t00840:c2
+  a :Island.n.01 ;
+  :name "VLIELAND" ;
+  :place place:Vlieland2745420 .
 
 t00840:p1
   a :Male ;
@@ -49,9 +54,4 @@ t00840:p2
     a :Spouse.n.01 ;
     :tgt t00840:p1
   ] .
-
-t00840:c2
-  a :Island.n.01 ;
-  :name "VLIELAND" ;
-  :place place:Vlieland2745420 .
 

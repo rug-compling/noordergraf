@@ -2,7 +2,6 @@
 
 tomb:t00859
   a :Tomb ;
-  :ent t00859:p1, t00859:p2 ;
   :image [
     dc:date "2020-02-15T15:36:20"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00859
     ] ;
     :nd "+52.7764+006.8041"^^ll:
   ] ;
+  :person t00859:p1, t00859:p2 ;
   :ref t00859:v1 ;
   :site site:dr7841CDsleen ;
   :sym [
@@ -45,6 +45,11 @@ t00859:p2
   a :Male ;
   :nam "J. DENING" .
 
+t00859:v1
+  a :Verse.n.01 ;
+  :ord 13 ;
+  :txt "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN" .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -52,9 +57,4 @@ t00859:p2
     :ord 14 ;
     :prt t00859:v1
   ] .
-
-t00859:v1
-  a :Verse.n.01 ;
-  :ord 13 ;
-  :txt "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN" .
 

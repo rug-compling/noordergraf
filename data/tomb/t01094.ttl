@@ -2,7 +2,6 @@
 
 tomb:t01094
   a :Tomb ;
-  :ent t01094:p1, t01094:p2 ;
   :image [
     dc:date "2020-09-19T15:00:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t01094
     ] ;
     :nd "+53.2437+006.8640"^^ll:
   ] ;
+  :person t01094:p1, t01094:p2 ;
   :site site:gr9628TKsiddeburen .
+
+t01094:c1
+  a :Village.n.02 ;
+  :name "SIDDEBUREN" ;
+  :place place:Siddeburen2747343 .
 
 t01094:p1
   a :Female ;
@@ -44,9 +49,4 @@ t01094:p2
     :name "DELFZIJL" ;
     :place place:Delfzijl2757340
   ] .
-
-t01094:c1
-  a :Village.n.02 ;
-  :name "SIDDEBUREN" ;
-  :place place:Siddeburen2747343 .
 

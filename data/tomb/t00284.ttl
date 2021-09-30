@@ -2,7 +2,6 @@
 
 tomb:t00284
   a :Tomb ;
-  :ent t00284:p1, t00284:p2 ;
   :image [
     dc:date "2019-10-16T16:53:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00284
     ] ;
     :nd "+53.4036+006.7489"^^ll:
   ] ;
+  :person t00284:p1, t00284:p2 ;
   :site site:gr9985SCoosternieland .
+
+t00284:c3
+  a :Village.n.02 ;
+  :name "OOSTERNIELAND" ;
+  :place place:Oosternieland2749429 .
 
 t00284:p1
   a :Female ;
@@ -48,9 +53,4 @@ t00284:p2
   :rol [
     a :Parent.n.01
   ] .
-
-t00284:c3
-  a :Village.n.02 ;
-  :name "OOSTERNIELAND" ;
-  :place place:Oosternieland2749429 .
 

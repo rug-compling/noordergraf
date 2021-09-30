@@ -2,7 +2,7 @@
 
 tomb:t01018
   a :Tomb ;
-  :ent t01018:p1, t01018:p2, t01018:p3, t01018:g1 ;
+  :ent t01018:g1 ;
   :image [
     dc:date "2020-04-04T10:41:44"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +15,7 @@ tomb:t01018
     ] ;
     :nd "+53.1749+007.0964"^^ll:
   ] ;
+  :person t01018:p1, t01018:p2, t01018:p3 ;
   :site site:gr9686RSbeerta ;
   :sym [
     a :Butterfly.n.01
@@ -25,6 +26,10 @@ tomb:t01018
   ], [
     a :Oak.n.02
   ] .
+
+t01018:g1
+  a :Group.n.01 ;
+  :mem t01018:p2, t01018:p3 .
 
 t01018:p1
   a :Male ;
@@ -43,8 +48,4 @@ t01018:p2
 t01018:p3
   a :Female ;
   :nam "EJA TONKENS VAN DELDEN" .
-
-t01018:g1
-  a :Group.n.01 ;
-  :mem t01018:p2, t01018:p3 .
 

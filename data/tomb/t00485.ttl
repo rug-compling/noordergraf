@@ -2,7 +2,6 @@
 
 tomb:t00485
   a :Tomb ;
-  :ent t00485:p1, t00485:p2, t00485:p3 ;
   :image [
     dc:date "2019-11-09T14:35:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00485
     ] ;
     :nd "+53.2066+005.7690"^^ll:
   ] ;
+  :person t00485:p1, t00485:p2, t00485:p3 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
   :sym [
     a :Cross.n.03
   ] .
+
+t00485:c2
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 
 t00485:p1
   a :Male ;
@@ -52,9 +57,4 @@ t00485:p2
 t00485:p3
   a :Male ;
   :nam "F.B. HOFSTEDE" .
-
-t00485:c2
-  a :City.n.01 ;
-  :name "LEEUWARDEN" ;
-  :place place:Leeuwarden2751792 .
 

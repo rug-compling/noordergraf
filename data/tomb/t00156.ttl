@@ -2,7 +2,6 @@
 
 tomb:t00156
   a :Tomb ;
-  :ent t00156:p1, t00156:p2, t00156:p3 ;
   :image [
     dc:date "2019-10-02T10:22:32"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00156
     ] ;
     :nd "+53.2060+006.5698"^^ll:
   ] ;
+  :person t00156:p1, t00156:p2, t00156:p3 ;
   :ref [
     a :Group.n.01 ;
     :mem t00156:v1, t00156:v2
@@ -48,6 +48,14 @@ t00156:p3
   :dateOfDeath "1970-12-09"^^xsd:date ;
   :nam "DIRKJE NIEUWHOF" .
 
+t00156:v1
+  a :Verse.n.01 ;
+  :ord 7 .
+
+t00156:v2
+  a :Part.n.09 ;
+  :nam "A" .
+
 []
   a :Second_Epistle_to_Timothy.n.01 ;
   :prt [
@@ -59,12 +67,4 @@ t00156:p3
       :prt t00156:v2
     ]
   ] .
-
-t00156:v1
-  a :Verse.n.01 ;
-  :ord 7 .
-
-t00156:v2
-  a :Part.n.09 ;
-  :nam "A" .
 

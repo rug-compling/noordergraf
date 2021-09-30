@@ -2,7 +2,6 @@
 
 tomb:t01059
   a :Tomb ;
-  :ent t01059:p1, t01059:p2, t01059:p3 ;
   :image [
     dc:date "2020-05-02T16:42:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,18 @@ tomb:t01059
     ] ;
     :nd "+53.3563+006.3373"^^ll:
   ] ;
+  :person t01059:p1, t01059:p2, t01059:p3 ;
   :site site:gr9971EBulrum ;
   :sym [
     a :Branch.n.02
   ], [
     a :Branch.n.02
   ] .
+
+t01059:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
 
 t01059:p1
   a :Male ;
@@ -42,11 +47,6 @@ t01059:p2
 t01059:p3
   a :Female ;
   :nam "J. WOLTERS" .
-
-t01059:c1
-  a :Village.n.02 ;
-  :name "ULRUM" ;
-  :place place:Ulrum2745944 .
 
 t01059:r1
   a :Spouse.n.01 ;

@@ -2,7 +2,6 @@
 
 tomb:t00222
   a :Tomb ;
-  :ent t00222:p1, t00222:p2 ;
   :image [
     dc:date "2019-10-08T14:42:40"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00222
     ] ;
     :nd "+53.2225+006.6367"^^ll:
   ] ;
+  :person t00222:p1, t00222:p2 ;
   :site site:gr9723EWgroningen ;
   :sym [
     a :Horse.n.01
   ] .
+
+t00222:c1
+  a :Hamlet.n.03 ;
+  :name "EUVELGUNNE" ;
+  :place place:Euvelgunne2755982 .
 
 t00222:p1
   a :Male ;
@@ -35,9 +40,4 @@ t00222:p1
 t00222:p2
   a :Female ;
   :nam "FREDERIKA WITKOP" .
-
-t00222:c1
-  a :Hamlet.n.03 ;
-  :name "EUVELGUNNE" ;
-  :place place:Euvelgunne2755982 .
 

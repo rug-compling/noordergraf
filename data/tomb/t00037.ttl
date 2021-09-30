@@ -2,7 +2,6 @@
 
 tomb:t00037
   a :Tomb ;
-  :ent t00037:p1 ;
   :image [
     dc:date "2019-09-27T17:53:29"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00037
     ] ;
     :nd "+53.1629+006.6122"^^ll:
   ] ;
+  :person t00037:p1 ;
   :quo "ZALIG IS DER KINDREN LOT, JONG GESTORVEN VROEG BIJ GOD" ;
   :site site:gr9752CMharen ;
   :sym [
     a :Rose.n.01
   ] .
+
+t00037:c1
+  a :Village.n.02 ;
+  :name "HELPMAN" ;
+  :place place:Helpman2754444 .
 
 t00037:p1
   a :Male ;
@@ -28,9 +33,4 @@ t00037:p1
   :nam "TJEERT PIETER BOUWMAN" ;
   :placeOfBirth t00037:c1 ;
   :placeOfDeath t00037:c1 .
-
-t00037:c1
-  a :Village.n.02 ;
-  :name "HELPMAN" ;
-  :place place:Helpman2754444 .
 

@@ -2,7 +2,7 @@
 
 tomb:t00683
   a :Tomb ;
-  :ent t00683:p1, t00683:p2, t00683:p3, t00683:g1 ;
+  :ent t00683:g1 ;
   :image [
     dc:date "2019-12-14T13:25:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +15,22 @@ tomb:t00683
     ] ;
     :nd "+53.0686+005.5222"^^ll:
   ] ;
+  :person t00683:p1, t00683:p2, t00683:p3 ;
   :ref "PSALM 68:7 BERIJMD"@nld ;
   :site site:fr8701DWbolsward .
+
+t00683:c2
+  a :City.n.01 ;
+  :name "BOLSWARD" ;
+  :place place:Bolsward2758682 .
+
+t00683:g1
+  a :Group.n.01 ;
+  :mem t00683:p1, t00683:p2 ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00683:p3
+  ] .
 
 t00683:p1
   a :Female ;
@@ -50,18 +64,5 @@ t00683:p3
   :rol [
     a :Daughter.n.01 ;
     :tgt t00683:g1
-  ] .
-
-t00683:c2
-  a :City.n.01 ;
-  :name "BOLSWARD" ;
-  :place place:Bolsward2758682 .
-
-t00683:g1
-  a :Group.n.01 ;
-  :mem t00683:p1, t00683:p2 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00683:p3
   ] .
 

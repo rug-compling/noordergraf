@@ -2,7 +2,6 @@
 
 tomb:t00700
   a :Tomb ;
-  :ent t00700:p1, t00700:p2 ;
   :image [
     dc:date "2019-12-21T13:53:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00700
     ] ;
     :nd "+52.7813+006.9010"^^ll:
   ] ;
+  :person t00700:p1, t00700:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER"@nld, "RUST ZACHT LIEVE MOEDER"@nld ;
   :site site:dr7811HEemmen .
+
+t00700:c1
+  a :Town.n.01 ;
+  :name "EMMEN" ;
+  :place place:Emmen2756136 .
 
 t00700:p1
   a :Male ;
@@ -48,9 +53,4 @@ t00700:p2
   ], [
     a :Mother.n.01
   ] .
-
-t00700:c1
-  a :Town.n.01 ;
-  :name "EMMEN" ;
-  :place place:Emmen2756136 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00387
   a :Tomb ;
-  :ent t00387:p1, t00387:p2, t00387:p3 ;
   :image [
     dc:date "2019-10-26T14:58:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00387
     ] ;
     :nd "+53.2517+006.1452"^^ll:
   ] ;
+  :person t00387:p1, t00387:p2, t00387:p3 ;
   :ref t00387:v1 ;
   :site site:fr9285TCbuitenpost ;
   :sym [
@@ -52,6 +52,10 @@ t00387:p3
   a :Male ;
   :nam "JAN R. LUINSTRA" .
 
+t00387:v1
+  a :Verse.n.01 ;
+  :ord 13 .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -59,8 +63,4 @@ t00387:p3
     :ord 14 ;
     :prt t00387:v1
   ] .
-
-t00387:v1
-  a :Verse.n.01 ;
-  :ord 13 .
 

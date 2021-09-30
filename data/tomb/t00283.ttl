@@ -2,7 +2,7 @@
 
 tomb:t00283
   a :Tomb ;
-  :ent t00283:p1, t00283:p2, t00283:p3, t00283:g1 ;
+  :ent t00283:g1 ;
   :image [
     dc:date "2019-10-16T16:53:40"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,16 @@ tomb:t00283
     ] ;
     :nd "+53.4036+006.7489"^^ll:
   ] ;
+  :person t00283:p1, t00283:p2, t00283:p3 ;
   :ref t00283:v1 ;
   :site site:gr9985SCoosternieland ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00283:g1
+  a :Group.n.01 ;
+  :mem t00283:p2, t00283:p3 .
 
 t00283:p1
   a :Female ;
@@ -51,6 +56,11 @@ t00283:p3
     :tgt t00283:p2
   ] .
 
+t00283:v1
+  a :Verse.n.01 ;
+  :ord 13 ;
+  :txt "ZALIG ZIJN ZIJ, DIE IN DEN HEERE STERVEN." .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -58,13 +68,4 @@ t00283:p3
     :ord 14 ;
     :prt t00283:v1
   ] .
-
-t00283:g1
-  a :Group.n.01 ;
-  :mem t00283:p2, t00283:p3 .
-
-t00283:v1
-  a :Verse.n.01 ;
-  :ord 13 ;
-  :txt "ZALIG ZIJN ZIJ, DIE IN DEN HEERE STERVEN." .
 

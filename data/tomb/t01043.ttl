@@ -2,7 +2,6 @@
 
 tomb:t01043
   a :Tomb ;
-  :ent t01043:p1, t01043:p2, t01043:p3 ;
   :image [
     dc:date "2020-04-19T10:42:04"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,7 +13,8 @@ tomb:t01043
       geo:long 6.4179
     ] ;
     :nd "+53.2469+006.4179"^^ll:
-  ] .
+  ] ;
+  :person t01043:p1, t01043:p2, t01043:p3 .
 
 t01043:p1
   a :Male ;
@@ -36,14 +36,6 @@ t01043:p3
   a :Female ;
   :nam "B. DIJKINGA" .
 
-[]
-  a :Epistle_to_the_Romans.n.04 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 8 ;
-    :prt t01043:v1
-  ] .
-
 t01043:r1
   a :Spouse.n.01 ;
   :tgt t01043:p2 .
@@ -51,4 +43,12 @@ t01043:r1
 t01043:v1
   a :Verse.n.01 ;
   :ord 37 .
+
+[]
+  a :Epistle_to_the_Romans.n.04 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 8 ;
+    :prt t01043:v1
+  ] .
 

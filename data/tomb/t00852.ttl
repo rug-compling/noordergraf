@@ -2,7 +2,6 @@
 
 tomb:t00852
   a :Tomb ;
-  :ent t00852:p1 ;
   :image [
     dc:date "2020-02-15T15:39:47"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00852
     ] ;
     :nd "+52.7763+006.8045"^^ll:
   ] ;
+  :person t00852:p1 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7841CDsleen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00852:c1
+  a :Village.n.02 ;
+  :name "SLEEN" ;
+  :place place:Sleen2747182 .
 
 t00852:p1
   a :Female ;
@@ -35,9 +40,4 @@ t00852:p1
     a :Aunt.n.01 ;
     :tgt t00852:p2
   ] .
-
-t00852:c1
-  a :Village.n.02 ;
-  :name "SLEEN" ;
-  :place place:Sleen2747182 .
 

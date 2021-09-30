@@ -2,7 +2,6 @@
 
 tomb:t00906
   a :Tomb ;
-  :ent t00906:p1, t00906:p2 ;
   :image [
     dc:date "2020-03-07T14:20:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00906
     ] ;
     :nd "+53.1724+006.3652"^^ll:
   ] ;
+  :person t00906:p1, t00906:p2 ;
   :site site:gr9351RLtolbert .
+
+t00906:c1
+  a :Village.n.02 ;
+  :name "TOLBERT" ;
+  :place place:Tolbert2746234 .
 
 t00906:p1
   a :Male ;
@@ -44,9 +49,4 @@ t00906:p2
     :place place:Roden2748026
   ] ;
   :placeOfDeath t00906:c1 .
-
-t00906:c1
-  a :Village.n.02 ;
-  :name "TOLBERT" ;
-  :place place:Tolbert2746234 .
 

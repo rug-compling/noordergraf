@@ -2,7 +2,6 @@
 
 tomb:t01001
   a :Tomb ;
-  :ent t01001:p1, t01001:p2 ;
   :image [
     dc:date "2020-04-05T12:10:56"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01001
     ] ;
     :nd "+53.2443+006.6279"^^ll:
   ] ;
+  :person t01001:p1, t01001:p2 ;
   :ref t01001:v1 ;
   :site site:gr9734ATgroningen ;
   :sym [
@@ -45,6 +45,10 @@ t01001:p2
   a :Male ;
   :nam "JAN GEERTS NIENHUIS" .
 
+t01001:v1
+  a :Verse.n.01 ;
+  :ord 25 .
+
 []
   a :Job.n.12 ;
   :prt [
@@ -52,8 +56,4 @@ t01001:p2
     :ord 19 ;
     :prt t01001:v1
   ] .
-
-t01001:v1
-  a :Verse.n.01 ;
-  :ord 25 .
 

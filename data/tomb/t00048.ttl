@@ -2,7 +2,6 @@
 
 tomb:t00048
   a :Tomb ;
-  :ent t00048:p1, t00048:p2, t00048:p3 ;
   :image [
     dc:date "2019-09-27T17:44:02"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00048
     ] ;
     :nd "+53.1631+006.6130"^^ll:
   ] ;
+  :person t00048:p1, t00048:p2, t00048:p3 ;
   :ref "PSALM 23:1" ;
   :site site:gr9752CMharen ;
   :sym [
@@ -26,18 +26,21 @@ tomb:t00048
     ]
   ] .
 
+t00048:g1
+  a :Group.n.01 .
+
 t00048:p1
   a :Female ;
   :dateOfBirth "1892-07-08"^^xsd:date ;
   :dateOfDeath "1949-06-09"^^xsd:date ;
   :nam "IJMKJE WIELINGA" ;
-  :rol [
+  :rol t00048:r3, [
     a :Wife.n.01 ;
-    :tgt t00048:p2, t00048:g1
+    :tgt t00048:g1, t00048:p2
   ], [
     a :Mother.n.01 ;
     :tgt t00048:g1
-  ], t00048:r3 .
+  ] .
 
 t00048:p2
   a :Male ;
@@ -53,9 +56,6 @@ t00048:p2
 t00048:p3
   a :Female ;
   :nam "H.J. RITZEMA" .
-
-t00048:g1
-  a :Group.n.01 .
 
 t00048:r3
   a :Spouse.n.01 ;

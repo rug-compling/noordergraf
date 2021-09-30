@@ -4,7 +4,6 @@ tomb:t00071
   a :Tomb ;
   :dateOfBirth "1838-05-03"^^xsd:date ;
   :dateOfDeath "1947-04-06"^^xsd:date ;
-  :ent t00071:p1, t00071:p2 ;
   :image [
     dc:date "2019-09-25T16:03:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -17,6 +16,7 @@ tomb:t00071
     ] ;
     :nd "+53.1904+006.5951"^^ll:
   ] ;
+  :person t00071:p1, t00071:p2 ;
   :placeOfBirth [
     a :Town.n.01 ;
     :name "EMMEN" ;
@@ -30,6 +30,11 @@ tomb:t00071
   ] ;
   :site site:gr9722SNgroningen .
 
+t00071:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
+
 t00071:p1
   a :Female ;
   :dateOfBirth "1866-05-19"^^xsd:date ;
@@ -38,12 +43,12 @@ t00071:p1
   :placeOfBirth [
     a :City.n.01 ;
     :name "HOORN" ;
-    :place place:Hoorn2753638 ;
     :partOf [
       a :Province.n.01 ;
       :name "NOORD-HOLLAND" ;
       :place place:ProvincieNoordHolland2749879
-    ]
+    ] ;
+    :place place:Hoorn2753638
   ] ;
   :placeOfDeath t00071:c1 ;
   :rol [
@@ -55,7 +60,3 @@ t00071:p2
   a :Male ;
   :nam "ADOLF KUIPER" .
 
-t00071:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .

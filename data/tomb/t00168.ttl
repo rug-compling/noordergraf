@@ -2,7 +2,6 @@
 
 tomb:t00168
   a :Tomb ;
-  :ent t00168:p1 ;
   :image [
     dc:date "2019-10-02T10:20:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00168
     ] ;
     :nd "+53.2058+006.5699"^^ll:
   ] ;
+  :person t00168:p1 ;
   :quo "ALS LIEFDE EENS KON WONDEREN DOEN \\ EN TRANEN DOODEN WEKKEN \\ DAN ZOU ONZE GELIEFDE ZOON \\ NU NIET DE KOELE AARDE DEKKEN" ;
   :site site:gr9725ACgroningen ;
   :sym [
@@ -25,6 +25,11 @@ tomb:t00168
       a :Ribbon.n.01
     ]
   ] .
+
+t00168:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00168:p1
   a :Male ;
@@ -38,9 +43,4 @@ t00168:p1
   ], [
     a :Brother.n.01
   ] .
-
-t00168:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

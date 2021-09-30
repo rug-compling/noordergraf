@@ -2,7 +2,6 @@
 
 tomb:t00221
   a :Tomb ;
-  :ent t00221:p1 ;
   :image [
     dc:date "2019-10-08T14:42:57"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00221
     ] ;
     :nd "+53.2225+006.6367"^^ll:
   ] ;
+  :person t00221:p1 ;
   :site site:gr9723EWgroningen ;
   :sym [
     a :Composite.n.01 ;
@@ -25,6 +25,11 @@ tomb:t00221
     ]
   ] .
 
+t00221:c1
+  a :Hamlet.n.03 ;
+  :name "EUVELGUNNE" ;
+  :place place:Euvelgunne2755982 .
+
 t00221:p1
   a :Female ;
   :dateOfBirth "1842-09-11"^^xsd:date ;
@@ -32,9 +37,4 @@ t00221:p1
   :nam "HENDERKIEN ELLES KONING" ;
   :placeOfBirth t00221:c1 ;
   :placeOfDeath t00221:c1 .
-
-t00221:c1
-  a :Hamlet.n.03 ;
-  :name "EUVELGUNNE" ;
-  :place place:Euvelgunne2755982 .
 

@@ -2,7 +2,6 @@
 
 tomb:t01054
   a :Tomb ;
-  :ent t01054:p1, t01054:p2 ;
   :image [
     dc:date "2020-05-02T15:55:36"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t01054
     ] ;
     :nd "+53.3605+006.2928"^^ll:
   ] ;
+  :person t01054:p1, t01054:p2 ;
   :site site:gr9975VRvierhuizen .
+
+t01054:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
 
 t01054:p1
   a :Female ;
@@ -40,9 +45,4 @@ t01054:p2
     :name "OPENDE" ;
     :place place:Opende2749302
   ] .
-
-t01054:c1
-  a :Village.n.02 ;
-  :name "ULRUM" ;
-  :place place:Ulrum2745944 .
 

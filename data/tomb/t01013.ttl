@@ -2,7 +2,6 @@
 
 tomb:t01013
   a :Tomb ;
-  :ent t01013:p1, t01013:p2 ;
   :image [
     dc:date "2020-04-05T12:20:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,16 +14,22 @@ tomb:t01013
     ] ;
     :nd "+53.2443+006.6273"^^ll:
   ] ;
+  :person t01013:p1, t01013:p2 ;
   :site site:gr9734ATgroningen ;
-  :sym [
+  :sym t01013:s2, t01013:s3, [
     a :Sandglass.n.01
-  ], t01013:s2, t01013:s3, [
+  ], [
     a :Frond.n.01
   ], [
     a :Frond.n.01
   ], [
     a :Ribbon.n.01
   ] .
+
+t01013:c1
+  a :Village.n.02 ;
+  :name "NOORDDIJK" ;
+  :place place:Noorddijk2749981 .
 
 t01013:p1
   a :Male ;
@@ -48,11 +53,6 @@ t01013:p1
 t01013:p2
   a :Female ;
   :nam "TRIENTJE JANS KORT" .
-
-t01013:c1
-  a :Village.n.02 ;
-  :name "NOORDDIJK" ;
-  :place place:Noorddijk2749981 .
 
 t01013:s2
   a :BatWing .

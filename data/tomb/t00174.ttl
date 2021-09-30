@@ -2,7 +2,6 @@
 
 tomb:t00174
   a :Tomb ;
-  :ent t00174:p1 ;
   :image [
     dc:date "2019-10-05T10:42:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00174
     ] ;
     :nd "+53.1904+006.5932"^^ll:
   ] ;
+  :person t00174:p1 ;
   :quo "OOK DEZE WAS MET JEZUS" ;
   :ref "LUCAS 22:56" ;
   :site site:gr9722SNgroningen .
@@ -27,14 +27,14 @@ t00174:p1
   :occupation [
     a :Pastor.n.01 ;
     :hisco hisco:14120 ;
-    :organisation [
-      a :Community.n.02 ;
-      :nam "BAPTISTENGEMEENTE"
-    ] ;
     :location [
       a :City.n.01 ;
       :name "GRONINGEN" ;
       :place place:Groningen2755251
+    ] ;
+    :organisation [
+      a :Community.n.02 ;
+      :nam "BAPTISTENGEMEENTE"
     ]
   ] ;
   :prefix "DS" .

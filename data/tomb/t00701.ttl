@@ -2,7 +2,6 @@
 
 tomb:t00701
   a :Tomb ;
-  :ent t00701:p1 ;
   :image [
     dc:date "2019-12-21T13:51:57"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00701
     ] ;
     :nd "+52.7813+006.9011"^^ll:
   ] ;
+  :person t00701:p1 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00701:c1
+  a :Village.n.02 ;
+  :name "NOORDBARGE" ;
+  :place place:Noordbarge2749996 .
 
 t00701:p1
   a :Male ;
@@ -28,9 +33,4 @@ t00701:p1
   :nam "HINDRIK SCHUTRUPS" ;
   :placeOfBirth t00701:c1 ;
   :placeOfDeath t00701:c1 .
-
-t00701:c1
-  a :Village.n.02 ;
-  :name "NOORDBARGE" ;
-  :place place:Noordbarge2749996 .
 

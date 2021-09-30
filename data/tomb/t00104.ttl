@@ -2,7 +2,6 @@
 
 tomb:t00104
   a :Tomb ;
-  :ent t00104:p1, t00104:p2 ;
   :image [
     dc:date "2019-09-21T15:58:04"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00104
     ] ;
     :nd "+53.1908+006.5924"^^ll:
   ] ;
+  :person t00104:p1, t00104:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:gr9722SNgroningen ;
   :sym [
@@ -25,6 +25,16 @@ tomb:t00104
       a :Ribbon.n.01
     ]
   ] .
+
+t00104:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
+
+t00104:c2
+  a :City.n.01 ;
+  :name "VEENDAM" ;
+  :place place:Veendam2745783 .
 
 t00104:p1
   a :Male ;
@@ -45,14 +55,4 @@ t00104:p2
   :nam "ALBERDINA VEENEMA" ;
   :placeOfBirth t00104:c2 ;
   :placeOfDeath t00104:c1 .
-
-t00104:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
-
-t00104:c2
-  a :City.n.01 ;
-  :name "VEENDAM" ;
-  :place place:Veendam2745783 .
 

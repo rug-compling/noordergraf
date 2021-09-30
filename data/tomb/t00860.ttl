@@ -2,7 +2,6 @@
 
 tomb:t00860
   a :Tomb ;
-  :ent t00860:p1 ;
   :image [
     dc:date "2020-02-15T15:34:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00860
     ] ;
     :nd "+52.7756+006.8027"^^ll:
   ] ;
+  :person t00860:p1 ;
   :quo "RUST ZACHT GELIEFDE ZUSTER"@nld ;
   :site site:dr7841CDsleen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00860:c1
+  a :Village.n.02 ;
+  :name "ERM" ;
+  :place place:Erm2756040 .
 
 t00860:p1
   a :Female ;
@@ -31,9 +36,4 @@ t00860:p1
   :rol [
     a :Sister.n.01
   ] .
-
-t00860:c1
-  a :Village.n.02 ;
-  :name "ERM" ;
-  :place place:Erm2756040 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00435
   a :Tomb ;
-  :ent t00435:p1, t00435:p2 ;
   :image [
     dc:date "2019-11-02T11:50:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00435
     ] ;
     :nd "+53.4789+006.1605"^^ll:
   ] ;
+  :person t00435:p1, t00435:p2 ;
   :ref "GEZANG 199" ;
   :site site:fr9166NAschiermonnikoog ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00435:c1
+  a :Island.n.01 ;
+  :name "SCHIERMONNIKOOG" ;
+  :place place:Schiermonnikoog2747591 .
 
 t00435:p1
   a :Male ;
@@ -43,9 +48,4 @@ t00435:p1
 t00435:p2
   a :Female ;
   :nam "AALTJE JANSJE VISSER" .
-
-t00435:c1
-  a :Island.n.01 ;
-  :name "SCHIERMONNIKOOG" ;
-  :place place:Schiermonnikoog2747591 .
 

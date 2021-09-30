@@ -2,7 +2,6 @@
 
 tomb:t00354
   a :Tomb ;
-  :ent t00354:p1 ;
   :image [
     dc:date "2019-10-25T17:45:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00354
     ] ;
     :nd "+53.0802+006.5727"^^ll:
   ] ;
+  :person t00354:p1 ;
   :site site:dr9481CGvries ;
   :sym [
     a :WingedSandglass
@@ -28,19 +28,20 @@ t00354:p1
   :placeOfBirth [
     a :Village.n.02 ;
     :name "GEES" ;
-    :place place:Gees2755664 ;
     :partOf [
       a :Municipality.n.01 ;
       :nam "OOSTERHESSELEN"
-    ]
+    ] ;
+    :place place:Gees2755664
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "DE PUNT" ;
-    :place place:DePunt2757124 ;
     :partOf [
       a :Municipality.n.01 ;
       :name "VRIES" ;
       :place place:Vries2745189
-    ]
+    ] ;
+    :place place:DePunt2757124
   ] .
+

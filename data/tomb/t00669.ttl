@@ -2,7 +2,7 @@
 
 tomb:t00669
   a :Tomb ;
-  :ent t00669:p1, t00669:p2, t00669:g1 ;
+  :ent t00669:g1 ;
   :image [
     dc:date "2019-12-14T13:50:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,16 @@ tomb:t00669
     ] ;
     :nd "+53.0687+005.5231"^^ll:
   ] ;
+  :person t00669:p1, t00669:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:fr8701DWbolsward ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00669:g1
+  a :Group.n.01 ;
+  :mem t00669:p3 .
 
 t00669:p1
   a :Female ;
@@ -46,8 +51,4 @@ t00669:p2
 
 t00669:p3
   a :Person .
-
-t00669:g1
-  a :Group.n.01 ;
-  :mem t00669:p3 .
 

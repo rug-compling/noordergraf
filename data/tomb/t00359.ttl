@@ -2,7 +2,6 @@
 
 tomb:t00359
   a :Tomb ;
-  :ent t00359:p1, t00359:p2 ;
   :image [
     dc:date "2019-10-25T17:32:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00359
     ] ;
     :nd "+53.0800+006.5716"^^ll:
   ] ;
+  :person t00359:p1, t00359:p2 ;
   :quo "RUST ZACHT LIEVE VROUW EN MOEDER" ;
   :site site:dr9481CGvries ;
   :sym [
@@ -29,33 +29,34 @@ t00359:p1
   :placeOfBirth [
     a :Village.n.02 ;
     :name "BUNNE" ;
-    :place place:Bunne2758108 ;
     :partOf [
       a :Municipality.n.01 ;
       :name "VRIES" ;
       :place place:Vries2745189
-    ]
+    ] ;
+    :place place:Bunne2758108
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "MOLKWERUM" ;
-    :place place:Molkwerum2750647 ;
     :partOf [
       a :Province.n.01 ;
       :name "FRIESLAND" ;
       :place place:ProvincieFriesland2755812
-    ]
+    ] ;
+    :place place:Molkwerum2750647
   ] ;
   :rol [
-    a :Spouse.n.01 ;
-    :tgt t00359:p2
-  ], [
     a :Wife.n.01 ;
     :tgt t00359:p2
   ], [
     a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :tgt t00359:p2
   ] .
 
 t00359:p2
   a :Male ;
   :nam "LAMBERTUS HUMMEL" .
+

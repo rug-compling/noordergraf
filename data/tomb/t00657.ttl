@@ -2,7 +2,6 @@
 
 tomb:t00657
   a :Tomb ;
-  :ent t00657:p1, t00657:p2, t00657:p3, t00657:p4 ;
   :image [
     dc:date "2019-11-16T14:01:21"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00657
     ] ;
     :nd "+53.2107+005.7894"^^ll:
   ] ;
+  :person t00657:p1, t00657:p2, t00657:p3, t00657:p4 ;
   :site site:fr8917AVleeuwarden .
+
+t00657:c3
+  a :City.n.01 ;
+  :name "LEEUWARDEN" ;
+  :place place:Leeuwarden2751792 .
 
 t00657:p1
   a :Female ;
@@ -39,12 +44,12 @@ t00657:p2
   :placeOfBirth [
     a :Town.n.01 ;
     :name "EINBECK" ;
-    :place place:Einbeck2931804 ;
     :partOf [
       a :Country.n.02 ;
       :name "DUITSLAND" ;
       :place place:Duitsland2921044
-    ]
+    ] ;
+    :place place:Einbeck2931804
   ] ;
   :placeOfDeath t00657:c3 .
 
@@ -63,9 +68,4 @@ t00657:p4
   :nam "AUGUST JACKÉ" ;
   :placeOfBirth t00657:c3 ;
   :placeOfDeath t00657:c3 .
-
-t00657:c3
-  a :City.n.01 ;
-  :name "LEEUWARDEN" ;
-  :place place:Leeuwarden2751792 .
 

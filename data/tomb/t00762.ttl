@@ -2,7 +2,6 @@
 
 tomb:t00762
   a :Tomb ;
-  :ent t00762:p1, t00762:p2 ;
   :image [
     dc:date "2019-12-28T12:44:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00762
     ] ;
     :nd "+53.3112+006.9971"^^ll:
   ] ;
+  :person t00762:p1, t00762:p2 ;
   :site site:gr9936BTfarmsum ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00762:c1
+  a :Village.n.02 ;
+  :name "OTERDUM" ;
+  :place place:Oterdum2749209 .
 
 t00762:p1
   a :Male ;
@@ -35,9 +40,4 @@ t00762:p1
 t00762:p2
   a :Female ;
   :nam "TRIJNTJE FREERKS STEENHUISEN" .
-
-t00762:c1
-  a :Village.n.02 ;
-  :name "OTERDUM" ;
-  :place place:Oterdum2749209 .
 

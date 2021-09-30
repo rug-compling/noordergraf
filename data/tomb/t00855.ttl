@@ -2,7 +2,6 @@
 
 tomb:t00855
   a :Tomb ;
-  :ent t00855:p1 ;
   :image [
     dc:date "2020-02-15T15:37:50"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00855
     ] ;
     :nd "+52.7756+006.8026"^^ll:
   ] ;
+  :person t00855:p1 ;
   :quo "RUST ZACHT, LIEVE \\ OOM EN OUD-OOM"@nld ;
   :site site:dr7841CDsleen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00855:c1
+  a :Village.n.02 ;
+  :name "SLEEN" ;
+  :place place:Sleen2747182 .
 
 t00855:p1
   a :Male ;
@@ -33,9 +38,4 @@ t00855:p1
   ], [
     a :Granduncle.n.01
   ] .
-
-t00855:c1
-  a :Village.n.02 ;
-  :name "SLEEN" ;
-  :place place:Sleen2747182 .
 

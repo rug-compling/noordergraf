@@ -2,7 +2,7 @@
 
 tomb:t00015
   a :Tomb ;
-  :ent t00015:p1, t00015:p2, [
+  :ent [
     a :Group.n.01 ;
     :mem t00015:p2 ;
     :rol [
@@ -21,7 +21,8 @@ tomb:t00015
       geo:long 6.5963
     ] ;
     :nd "+53.1807+006.5963"^^ll:
-  ] .
+  ] ;
+  :person t00015:p1, t00015:p2 .
 
 t00015:p1
   a :Female ;

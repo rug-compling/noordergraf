@@ -2,7 +2,6 @@
 
 tomb:t00582
   a :Tomb ;
-  :ent t00582:p1, t00582:p2, t00582:p3 ;
   :image [
     dc:date "2019-11-30T14:48:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00582
     ] ;
     :nd "+53.3354+006.5128"^^ll:
   ] ;
+  :person t00582:p1, t00582:p2, t00582:p3 ;
   :ref "PSALM 118:17-20" ;
   :site site:gr9951STwinsum .
 
@@ -29,11 +29,11 @@ t00582:p1
     :place place:KleinGarnwerd2752695
   ] ;
   :quo "NA EEN GELUKKIGE ECHTVERENIGING VAN 41 JAREN" ;
-  :rol [
+  :rol t00582:r2, [
     a :Spouse.n.01 ;
     :before t00582:r2 ;
     :tgt t00582:p2
-  ], t00582:r2 .
+  ] .
 
 t00582:p2
   a :Female ;

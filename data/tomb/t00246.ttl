@@ -2,7 +2,6 @@
 
 tomb:t00246
   a :Tomb ;
-  :ent t00246:p1 ;
   :image [
     dc:date "2019-10-11T17:24:17"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00246
     ] ;
     :nd "+53.1723+006.6063"^^ll:
   ] ;
+  :person t00246:p1 ;
   :site site:gr9751BBharen .
 
 t00246:p1
@@ -25,22 +25,22 @@ t00246:p1
   :placeOfBirth [
     a :Village.n.02 ;
     :name "OUDESCHANS" ;
-    :place place:Oudeschans2749010 ;
     :partOf [
       a :Province.n.01 ;
       :name "GRONINGEN" ;
       :place place:ProvincieGroningen2755249
-    ]
+    ] ;
+    :place place:Oudeschans2749010
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
     :name "APELDOORN" ;
-    :place place:Apeldoorn2759706 ;
     :partOf [
       a :Province.n.01 ;
       :name "GELDERLAND" ;
       :place place:ProvincieGelderland2755634
-    ]
+    ] ;
+    :place place:Apeldoorn2759706
   ] ;
   :rol [
     a :Sister.n.01

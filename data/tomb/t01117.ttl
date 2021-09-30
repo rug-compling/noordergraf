@@ -2,18 +2,11 @@
 
 tomb:t01117
   a :Tomb ;
-  :site site:gr9628TKsiddeburen ;
   :image [
+    dc:date "2020-09-19T15:02:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01117.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2020-09-19T15:02:48"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2441 ;
@@ -21,11 +14,17 @@ tomb:t01117
     ] ;
     :nd "+53.2441+006.8638"^^ll:
   ] ;
-  :ent t01117:p1 ;
+  :person t01117:p1 ;
   :quo "RUST ZACHT LIEVE SCHOON EN GROOTMOEDER"@nld ;
+  :site site:gr9628TKsiddeburen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t01117:c1
+  a :Village.n.02 ;
+  :name "SIDDEBUREN" ;
+  :place place:Siddeburen2747343 .
 
 t01117:p1
   a :Female ;
@@ -46,9 +45,4 @@ t01117:p1
 t01117:p2
   a :Male ;
   :nam "H. VAN VELZEN" .
-
-t01117:c1
-  a :Village.n.02 ;
-  :name "SIDDEBUREN" ;
-  :place place:Siddeburen2747343 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00303
   a :Tomb ;
-  :ent t00303:p1, t00303:p2 ;
   :image [
     dc:date "2019-10-19T14:30:56"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00303
     ] ;
     :nd "+52.7159+006.4742"^^ll:
   ] ;
+  :person t00303:p1, t00303:p2 ;
   :ref "PSALM 73:12" ;
   :site site:dr7907CHhoogeveen .
+
+t00303:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00303:p1
   a :Male ;
@@ -33,9 +38,4 @@ t00303:p1
 t00303:p2
   a :Female ;
   :nam "GEERTJE VOERMAN" .
-
-t00303:c1
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
 

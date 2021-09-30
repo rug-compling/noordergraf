@@ -2,7 +2,7 @@
 
 tomb:t01045
   a :Tomb ;
-  :ent t01045:p1, t01045:g1 ;
+  :ent t01045:g1 ;
   :image [
     dc:date "2020-04-30T07:36:56"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,16 @@ tomb:t01045
     ] ;
     :nd "+53.1597+006.6208"^^ll:
   ] ;
+  :person t01045:p1 ;
   :site site:gr9751XCharen .
+
+t01045:g1
+  a :Group.n.01 ;
+  :mem t01045:p2 ;
+  :rol [
+    a :Commemorator.n.01 ;
+    :tgt t01045:p1
+  ] .
 
 t01045:p1
   a :Male ;
@@ -35,12 +44,4 @@ t01045:p1
 
 t01045:p2
   a :Person .
-
-t01045:g1
-  a :Group.n.01 ;
-  :mem t01045:p2 ;
-  :rol [
-    a :Commemorator.n.01 ;
-    :tgt t01045:p1
-  ] .
 

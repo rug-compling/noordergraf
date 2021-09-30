@@ -2,7 +2,6 @@
 
 tomb:t00134
   a :Tomb ;
-  :ent t00134:p1, t00134:p2, t00134:p3 ;
   :image [
     dc:date "2019-10-02T10:42:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00134
     ] ;
     :nd "+53.2069+006.5725"^^ll:
   ] ;
+  :person t00134:p1, t00134:p2, t00134:p3 ;
   :site site:gr9725ACgroningen .
+
+t00134:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00134:p1
   a :Male ;
@@ -40,20 +45,15 @@ t00134:p2
     :place place:Grootegast2755204
   ] ;
   :placeOfDeath t00134:c1 ;
-  :rol [
+  :rol t00134:r2, [
     a :Wife.n.01 ;
     :before t00134:r2 ;
     :tgt t00134:p1
-  ], t00134:r2 .
+  ] .
 
 t00134:p3
   a :Male ;
   :nam "J. DOFF" .
-
-t00134:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 
 t00134:r2
   a :Wife.n.01 ;

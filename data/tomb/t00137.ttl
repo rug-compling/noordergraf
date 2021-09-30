@@ -2,7 +2,6 @@
 
 tomb:t00137
   a :Tomb ;
-  :ent t00137:p1, t00137:p2 ;
   :image [
     dc:date "2019-10-02T10:33:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00137
     ] ;
     :nd "+53.2062+006.5701"^^ll:
   ] ;
+  :person t00137:p1, t00137:p2 ;
   :site site:gr9725ACgroningen .
+
+t00137:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00137:p1
   a :Male ;
@@ -44,9 +49,4 @@ t00137:p2
     :place place:Peize2748673
   ] ;
   :placeOfDeath t00137:c1 .
-
-t00137:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

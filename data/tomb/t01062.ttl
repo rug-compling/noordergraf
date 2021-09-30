@@ -2,7 +2,6 @@
 
 tomb:t01062
   a :Tomb ;
-  :ent t01062:p1, t01062:p2 ;
   :image [
     dc:date "2020-05-01T15:30:08"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01062
     ] ;
     :nd "+53.1231+006.2513"^^ll:
   ] ;
+  :person t01062:p1, t01062:p2 ;
   :quo "SLAAP ZACHT LIEVE MOEDER."@nld ;
   :site site:gr9367PAde_wilp ;
   :sym [
@@ -22,6 +22,11 @@ tomb:t01062
   ], [
     a :Branch.n.02
   ] .
+
+t01062:c1
+  a :Village.n.02 ;
+  :name "DE WILP" ;
+  :place place:DeWilp2756932 .
 
 t01062:p1
   a :Female ;
@@ -40,9 +45,4 @@ t01062:p1
 t01062:p2
   a :Male ;
   :nam "DIRK J. HEIDINGA" .
-
-t01062:c1
-  a :Village.n.02 ;
-  :name "DE WILP" ;
-  :place place:DeWilp2756932 .
 

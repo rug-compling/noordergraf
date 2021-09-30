@@ -2,7 +2,6 @@
 
 tomb:t00367
   a :Tomb ;
-  :ent t00367:p1, t00367:p2 ;
   :image [
     dc:date "2019-10-25T17:25:36"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00367
     ] ;
     :nd "+53.0797+006.5714"^^ll:
   ] ;
+  :person t00367:p1, t00367:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00367:c1
+  a :Village.n.02 ;
+  :name "TYNAARLO" ;
+  :place place:Tynaarlo2746038 .
 
 t00367:p1
   a :Female ;
@@ -40,9 +45,4 @@ t00367:p2
   :nam "ALBERT KLAASSENS" ;
   :placeOfBirth t00367:c1 ;
   :placeOfDeath t00367:c1 .
-
-t00367:c1
-  a :Village.n.02 ;
-  :name "TYNAARLO" ;
-  :place place:Tynaarlo2746038 .
 

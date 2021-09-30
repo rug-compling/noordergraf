@@ -2,7 +2,6 @@
 
 tomb:t00805
   a :Tomb ;
-  :ent t00805:p1, t00805:p2 ;
   :image [
     dc:date "2020-01-18T13:13:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00805
     ] ;
     :nd "+53.2779+006.6936"^^ll:
   ] ;
+  :person t00805:p1, t00805:p2 ;
   :quo "HIER LIGT HAAR STOFFE \\ LIJK OVERSCHOT INT KILLE \\ GRAF TER NEDER. MOCHT \\ TOCH HAAR ZIELE ZIJN BIJ \\ GOD DAN WAS HAAR \\ HEENGAAN VREDE!"@nld ;
   :site site:gr9791KEten_boer ;
   :sym [
     a :Butterfly.n.01
   ] .
+
+t00805:c1
+  a :Village.n.02 ;
+  :name "TEN BOER" ;
+  :place place:TenBoer2746491 .
 
 t00805:p1
   a :Female ;
@@ -36,9 +41,4 @@ t00805:p1
 t00805:p2
   a :Male ;
   :nam "J.P. VINK" .
-
-t00805:c1
-  a :Village.n.02 ;
-  :name "TEN BOER" ;
-  :place place:TenBoer2746491 .
 

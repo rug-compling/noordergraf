@@ -2,18 +2,11 @@
 
 tomb:t01129
   a :Tomb ;
-  :site site:gr9798PDgarmerwolde ;
   :image [
+    dc:date "2021-03-24T15:26:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01129.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-24T15:26:45"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2481 ;
@@ -21,7 +14,8 @@ tomb:t01129
     ] ;
     :nd "+53.2481+006.6475"^^ll:
   ] ;
-  :ent t01129:p1 ;
+  :person t01129:p1 ;
+  :site site:gr9798PDgarmerwolde ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -51,9 +45,9 @@ t01129:p2
 
 t01129:p3
   a :Person ;
-  :text "zes jonge kinderen" ;
   :rol [
     a :Child.n.02 ;
     :tgt t01129:p1
-  ] .
+  ] ;
+  :text "zes jonge kinderen" .
 

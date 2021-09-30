@@ -2,14 +2,14 @@
 
 tomb:t01017
   a :Tomb ;
-  :ent t01017:p1, t01017:p2, [
+  :ent t01017:g2, [
     a :Group.n.01 ;
     :mem t01017:p1, t01017:p3 ;
     :rol [
       a :Parent.n.01 ;
       :tgt t01017:g2
     ]
-  ], t01017:g2 ;
+  ] ;
   :image [
     dc:date "2020-04-04T10:42:20"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,10 +22,15 @@ tomb:t01017
     ] ;
     :nd "+53.1751+007.0964"^^ll:
   ] ;
+  :person t01017:p1, t01017:p2 ;
   :site site:gr9686RSbeerta ;
   :sym [
     a :WeepingWillow
   ] .
+
+t01017:g2
+  a :Group.n.01 ;
+  :mem t01017:p3, t01017:p4, t01017:p5 .
 
 t01017:p1
   a :Male ;
@@ -55,8 +60,4 @@ t01017:p4
 t01017:p5
   a :Female ;
   :nam "CORNELIA JANS MULLER" .
-
-t01017:g2
-  a :Group.n.01 ;
-  :mem t01017:p3, t01017:p4, t01017:p5 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00309
   a :Tomb ;
-  :ent t00309:p1 ;
   :image [
     dc:date "2019-10-19T14:17:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00309
     ] ;
     :nd "+52.7157+006.4734"^^ll:
   ] ;
+  :person t00309:p1 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00309:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00309:p1
   a :Female ;
@@ -27,9 +32,4 @@ t00309:p1
   :nam "HENDRIKA VAN DALEN" ;
   :placeOfBirth t00309:c1 ;
   :placeOfDeath t00309:c1 .
-
-t00309:c1
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
 

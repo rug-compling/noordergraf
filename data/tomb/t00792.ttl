@@ -2,7 +2,6 @@
 
 tomb:t00792
   a :Tomb ;
-  :ent t00792:p1 ;
   :image [
     dc:date "2020-01-18T13:08:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00792
     ] ;
     :nd "+53.2775+006.6935"^^ll:
   ] ;
+  :person t00792:p1 ;
   :ref t00792:v1 ;
   :site site:gr9791KEten_boer .
 
@@ -24,6 +24,10 @@ t00792:p1
   :dateOfDeath "1941-09-27"^^xsd:date ;
   :nam "ROELFKE HOVING" .
 
+t00792:v1
+  a :Verse.n.01 ;
+  :ord 16 .
+
 []
   a :Isaiah.n.01 ;
   :prt [
@@ -31,8 +35,4 @@ t00792:p1
     :ord 49 ;
     :prt t00792:v1
   ] .
-
-t00792:v1
-  a :Verse.n.01 ;
-  :ord 16 .
 

@@ -2,18 +2,11 @@
 
 tomb:t01123
   a :Tomb ;
-  :site site:gr9822AKniekerk ;
   :image [
+    dc:date "2021-03-27T12:49:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01123.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-27T12:49:06"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2258 ;
@@ -21,8 +14,9 @@ tomb:t01123
     ] ;
     :nd "+53.2258+006.3532"^^ll:
   ] ;
-  :ent t01123:p1 ;
+  :person t01123:p1 ;
   :quo "Gij die mijn graf, Voorbij komt treden, Gedenk dan ook aan mij Dat ik eens hier beneden Zoo bent geweest als gij"@nld ;
+  :site site:gr9822AKniekerk ;
   :sym [
     a :Composite.n.01 ;
     :prt t01123:s2, t01123:s3
@@ -55,3 +49,4 @@ t01123:s2
 
 t01123:s3
   a :OliveBranch .
+

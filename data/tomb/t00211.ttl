@@ -2,7 +2,6 @@
 
 tomb:t00211
   a :Tomb ;
-  :ent t00211:p1, t00211:p2, t00211:p3 ;
   :image [
     dc:date "2019-10-08T14:52:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,19 @@ tomb:t00211
     ] ;
     :nd "+53.2221+006.6369"^^ll:
   ] ;
+  :person t00211:p1, t00211:p2, t00211:p3 ;
   :quo "RUST ZACHT LIEVE OUDERS EN BROER" ;
   :site site:gr9723EWgroningen .
+
+t00211:c1
+  a :Village.n.02 ;
+  :name "ENGELBERT" ;
+  :place place:Engelbert2756097 .
+
+t00211:c2
+  a :Village.n.02 ;
+  :name "MIDDELBERT" ;
+  :place place:Middelbert2750902 .
 
 t00211:p1
   a :Male ;
@@ -56,14 +66,4 @@ t00211:p3
   :rol [
     a :Brother.n.01
   ] .
-
-t00211:c1
-  a :Village.n.02 ;
-  :name "ENGELBERT" ;
-  :place place:Engelbert2756097 .
-
-t00211:c2
-  a :Village.n.02 ;
-  :name "MIDDELBERT" ;
-  :place place:Middelbert2750902 .
 

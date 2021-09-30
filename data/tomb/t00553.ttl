@@ -2,7 +2,6 @@
 
 tomb:t00553
   a :Tomb ;
-  :ent t00553:p1, t00553:p2 ;
   :image [
     dc:date "2019-11-24T14:01:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00553
     ] ;
     :nd "+53.1043+006.8751"^^ll:
   ] ;
+  :person t00553:p1, t00553:p2 ;
   :site site:gr9641ANveendam ;
   :sym [
     a :Book.n.02
   ] .
+
+t00553:c2
+  a :City.n.01 ;
+  :name "VEENDAM" ;
+  :place place:Veendam2745783 .
 
 t00553:p1
   a :Male ;
@@ -48,9 +53,4 @@ t00553:p1
 t00553:p2
   a :Female ;
   :nam "MARIA KRUIZINGA" .
-
-t00553:c2
-  a :City.n.01 ;
-  :name "VEENDAM" ;
-  :place place:Veendam2745783 .
 

@@ -2,7 +2,7 @@
 
 tomb:t00010
   a :Tomb ;
-  :ent t00010:p1, t00010:p2, t00010:g1 ;
+  :ent t00010:g1 ;
   :image [
     dc:date "2019-09-25T16:48:36"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,9 +15,17 @@ tomb:t00010
     ] ;
     :nd "+53.1902+006.5927"^^ll:
   ] ;
+  :person t00010:p1, t00010:p2 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01
+  ] .
+
+t00010:g1
+  a :Group.n.01 ;
+  :rol [
+    a :Commemorator.n.01 ;
+    :tgt t00010:p2
   ] .
 
 t00010:p1
@@ -37,12 +45,5 @@ t00010:p2
   ], [
     a :Grandfather.n.01 ;
     :tgt t00010:g1
-  ] .
-
-t00010:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Commemorator.n.01 ;
-    :tgt t00010:p2
   ] .
 

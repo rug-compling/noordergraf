@@ -2,18 +2,11 @@
 
 tomb:t01131
   a :Tomb ;
-  :site site:gr9752CMharen ;
   :image [
+    dc:date "2021-04-23T11:30:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01131.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-04-23T11:30:56"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.1623 ;
@@ -21,9 +14,10 @@ tomb:t01131
     ] ;
     :nd "+53.1623+006.6140"^^ll:
   ] ;
-  :ent t01131:p1, t01131:p2 ;
+  :person t01131:p1, t01131:p2 ;
   :quo "WIJ GELOVEN DAT JEZUS CHRISTUS DE ZOON VAN GOD IS"@nld ;
-  :ref t01131:v1 .
+  :ref t01131:v1 ;
+  :site site:gr9752CMharen .
 
 t01131:p1
   a :Person ;
@@ -37,6 +31,10 @@ t01131:p2
   :dateOfDeath "1975-09-22"^^xsd:date ;
   :nam "TRIJNTJE VAN DER WOUDE" .
 
+t01131:v1
+  a :Verse.n.01 ;
+  :ord 37 .
+
 []
   a :Acts_of_the_Apostles.n.01 ;
   :prt [
@@ -44,8 +42,4 @@ t01131:p2
     :ord 8 ;
     :prt t01131:v1
   ] .
-
-t01131:v1
-  a :Verse.n.01 ;
-  :ord 37 .
 

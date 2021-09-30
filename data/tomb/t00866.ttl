@@ -2,7 +2,7 @@
 
 tomb:t00866
   a :Tomb ;
-  :ent t00866:p1, t00866:p2, t00866:g1 ;
+  :ent t00866:g1 ;
   :image [
     dc:date "2020-02-15T15:12:52"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,17 @@ tomb:t00866
     ] ;
     :nd "+52.7193+006.8452"^^ll:
   ] ;
+  :person t00866:p1, t00866:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7844TCveenoord ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00866:g1
+  a :Group.n.01 ;
+  :mem t00866:p3 ;
+  :qua 3 .
 
 t00866:p1
   a :Female ;
@@ -44,9 +50,4 @@ t00866:p3
     a :Sister.n.01 ;
     :tgt t00866:p1
   ] .
-
-t00866:g1
-  a :Group.n.01 ;
-  :mem t00866:p3 ;
-  :qua 3 .
 

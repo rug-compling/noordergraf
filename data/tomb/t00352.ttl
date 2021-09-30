@@ -2,7 +2,6 @@
 
 tomb:t00352
   a :Tomb ;
-  :ent t00352:p1, t00352:p2, t00352:p3 ;
   :image [
     dc:date "2019-10-25T17:48:30"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00352
     ] ;
     :nd "+53.0800+006.5730"^^ll:
   ] ;
+  :person t00352:p1, t00352:p2, t00352:p3 ;
   :site site:dr9481CGvries ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00352:c1
+  a :Village.n.02 ;
+  :name "ZEIJEN" ;
+  :place place:Zeyen2743985 .
 
 t00352:p1
   a :Male ;
@@ -43,9 +48,4 @@ t00352:p2
 t00352:p3
   a :Female ;
   :nam "J. HOMAN" .
-
-t00352:c1
-  a :Village.n.02 ;
-  :name "ZEIJEN" ;
-  :place place:Zeyen2743985 .
 

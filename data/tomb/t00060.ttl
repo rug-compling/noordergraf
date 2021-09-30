@@ -2,7 +2,6 @@
 
 tomb:t00060
   a :Tomb ;
-  :ent t00060:p1, t00060:p2, t00060:p3 ;
   :image [
     dc:date "2019-09-27T17:29:25"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00060
     ] ;
     :nd "+53.1637+006.6152"^^ll:
   ] ;
+  :person t00060:p1, t00060:p2, t00060:p3 ;
   :ref t00060:v1 ;
   :site site:gr9752CMharen .
 
@@ -43,6 +43,10 @@ t00060:p3
   a :Female ;
   :nam "C.J. DEN HEETEN" .
 
+t00060:v1
+  a :Verse.n.01 ;
+  :ord 3 .
+
 []
   a :John.n.05 ;
   :prt [
@@ -50,8 +54,4 @@ t00060:p3
     :ord 16 ;
     :prt t00060:v1
   ] .
-
-t00060:v1
-  a :Verse.n.01 ;
-  :ord 3 .
 

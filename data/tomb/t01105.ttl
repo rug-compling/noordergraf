@@ -2,18 +2,12 @@
 
 tomb:t01105
   a :Tomb ;
-  :site site:gr9843AGgrijpskerk ;
+  :ent t01105:g1 ;
   :image [
+    dc:date "2021-03-06T08:53:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01105.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-03-06T08:53:38"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2630 ;
@@ -21,11 +15,20 @@ tomb:t01105
     ] ;
     :nd "+53.2630+006.3142"^^ll:
   ] ;
-  :ent t01105:p1, t01105:g1 ;
+  :person t01105:p1 ;
   :ref t01105:c3 ;
+  :site site:gr9843AGgrijpskerk ;
   :sym [
     a :Frond.n.01
   ] .
+
+t01105:c3
+  a :Chapter.n.01 ;
+  :ord 40 .
+
+t01105:g1
+  a :Group.n.01 ;
+  :mem t01105:p2, t01105:p3, t01105:p4 .
 
 t01105:p1
   a :Female ;
@@ -65,12 +68,4 @@ t01105:p4
 []
   a :Isaiah.n.01 ;
   :prt t01105:c3 .
-
-t01105:c3
-  a :Chapter.n.01 ;
-  :ord 40 .
-
-t01105:g1
-  a :Group.n.01 ;
-  :mem t01105:p2, t01105:p3, t01105:p4 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00372
   a :Tomb ;
-  :ent t00372:p1, t00372:p2 ;
   :image [
     dc:date "2019-10-25T17:12:57"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00372
     ] ;
     :nd "+53.0792+006.5717"^^ll:
   ] ;
+  :person t00372:p1, t00372:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00372:c1
+  a :Village.n.02 ;
+  :name "WINDE" ;
+  :place place:Winde2744363 .
 
 t00372:p1
   a :Male ;
@@ -49,9 +54,4 @@ t00372:p2
   :rol [
     a :Parent.n.01
   ] .
-
-t00372:c1
-  a :Village.n.02 ;
-  :name "WINDE" ;
-  :place place:Winde2744363 .
 

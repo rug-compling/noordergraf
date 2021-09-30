@@ -2,7 +2,6 @@
 
 tomb:t01012
   a :Tomb ;
-  :ent t01012:p1, t01012:p2 ;
   :image [
     dc:date "2020-04-11T10:35:21"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01012
     ] ;
     :nd "+53.3084+006.5754"^^ll:
   ] ;
+  :person t01012:p1, t01012:p2 ;
   :site site:gr9781THbedum .
 
 t01012:p1
@@ -55,15 +55,16 @@ t01012:p2
   :placeOfDeath [
     a :Village.n.02 ;
     :name "WINSUM" ;
-    :place place:Winsum2744337 ;
     :partOf [
       a :Province.n.01 ;
       :name "GRONINGEN" ;
       :place place:ProvincieGroningen2755249
-    ]
+    ] ;
+    :place place:Winsum2744337
   ] ;
   :rol [
     a :Mother.n.01
   ], [
     a :Grandmother.n.01
   ] .
+

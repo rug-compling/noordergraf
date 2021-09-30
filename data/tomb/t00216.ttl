@@ -2,7 +2,7 @@
 
 tomb:t00216
   a :Tomb ;
-  :ent t00216:p1, t00216:p2, t00216:p3, t00216:g1 ;
+  :ent t00216:g1 ;
   :image [
     dc:date "2019-10-08T14:45:57"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,16 @@ tomb:t00216
     ] ;
     :nd "+53.2225+006.6369"^^ll:
   ] ;
+  :person t00216:p1, t00216:p2, t00216:p3 ;
   :quo "RUST ZACHT" ;
   :site site:gr9723EWgroningen ;
   :sym [
     a :Rose.n.01
   ] .
+
+t00216:g1
+  a :Group.n.01 ;
+  :mem t00216:p2, t00216:p3 .
 
 t00216:p1
   a :Female ;
@@ -48,8 +53,4 @@ t00216:p2
 t00216:p3
   a :Female ;
   :nam "ANNA BOLT" .
-
-t00216:g1
-  a :Group.n.01 ;
-  :mem t00216:p2, t00216:p3 .
 

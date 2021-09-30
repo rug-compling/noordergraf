@@ -2,7 +2,7 @@
 
 tomb:t00953
   a :Tomb ;
-  :ent t00953:p1, t00953:p2, t00953:p3, t00953:g1 ;
+  :ent t00953:g1 ;
   :image [
     dc:date "2020-03-25T09:28:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,17 @@ tomb:t00953
     ] ;
     :nd "+53.1201+006.6587"^^ll:
   ] ;
+  :person t00953:p1, t00953:p2, t00953:p3 ;
   :site site:gr9479TNnoordlaren .
+
+t00953:c1
+  a :Village.n.02 ;
+  :name "NOORDLAREN" ;
+  :place place:Noordlaren2749857 .
+
+t00953:g1
+  a :Group.n.01 ;
+  :mem t00953:p2, t00953:p3 .
 
 t00953:p1
   a :Female ;
@@ -36,13 +46,4 @@ t00953:p2
 t00953:p3
   a :Person ;
   :nam "M. HOMMES" .
-
-t00953:c1
-  a :Village.n.02 ;
-  :name "NOORDLAREN" ;
-  :place place:Noordlaren2749857 .
-
-t00953:g1
-  a :Group.n.01 ;
-  :mem t00953:p2, t00953:p3 .
 

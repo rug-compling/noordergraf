@@ -2,7 +2,7 @@
 
 tomb:t00672
   a :Tomb ;
-  :ent t00672:p1, t00672:p2, [
+  :ent [
     a :Group.n.01 ;
     :mem t00672:p1, t00672:p2 ;
     :rol [
@@ -23,6 +23,7 @@ tomb:t00672
     ] ;
     :nd "+53.0680+005.5221"^^ll:
   ] ;
+  :person t00672:p1, t00672:p2 ;
   :ref t00672:v1 ;
   :site site:fr8701DWbolsward ;
   :sym [
@@ -41,6 +42,10 @@ t00672:p2
   :dateOfDeath "1978-09-05"^^xsd:date ;
   :nam "AUKE SIKMA" .
 
+t00672:v1
+  a :Verse.n.01 ;
+  :ord 25 .
+
 []
   a :First_Epistle_of_John.n.01 ;
   :prt [
@@ -48,8 +53,4 @@ t00672:p2
     :ord 2 ;
     :prt t00672:v1
   ] .
-
-t00672:v1
-  a :Verse.n.01 ;
-  :ord 25 .
 

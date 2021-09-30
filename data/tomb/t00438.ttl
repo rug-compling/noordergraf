@@ -2,7 +2,6 @@
 
 tomb:t00438
   a :Tomb ;
-  :ent t00438:p1, t00438:p2 ;
   :image [
     dc:date "2019-11-02T11:41:09"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00438
     ] ;
     :nd "+53.4792+006.1610"^^ll:
   ] ;
+  :person t00438:p1, t00438:p2 ;
   :quo "VOOR ALTIJD SAMEN MET ELKAARS LIEFDE ALHIER BIJGEZET OP NO. 21" ;
   :site site:fr9166NAschiermonnikoog .
+
+t00438:c1
+  a :Town.n.01 ;
+  :name "OEGSTGEEST" ;
+  :place place:Oegstgeest2749723 .
 
 t00438:p1
   a :Male ;
@@ -41,9 +46,4 @@ t00438:p2
     :name "WARMOND" ;
     :place place:Warmond2745012
   ] .
-
-t00438:c1
-  a :Town.n.01 ;
-  :name "OEGSTGEEST" ;
-  :place place:Oegstgeest2749723 .
 

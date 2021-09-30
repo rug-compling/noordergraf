@@ -2,7 +2,6 @@
 
 tomb:t00407
   a :Tomb ;
-  :ent t00407:p1, t00407:p2 ;
   :image [
     dc:date "2019-10-26T14:43:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00407
     ] ;
     :nd "+53.2519+006.1447"^^ll:
   ] ;
+  :person t00407:p1, t00407:p2 ;
   :quo "RUST ZACHT, LIEVE DOODE" ;
   :site site:fr9285TCbuitenpost ;
   :sym [
@@ -25,6 +25,11 @@ tomb:t00407
       a :Frond.n.01
     ]
   ] .
+
+t00407:c1
+  a :Village.n.02 ;
+  :name "BUITENPOST" ;
+  :place place:Buitenpost2758131 .
 
 t00407:p1
   a :Male ;
@@ -41,9 +46,4 @@ t00407:p1
 t00407:p2
   a :Female ;
   :nam "L.J. DE MEER" .
-
-t00407:c1
-  a :Village.n.02 ;
-  :name "BUITENPOST" ;
-  :place place:Buitenpost2758131 .
 

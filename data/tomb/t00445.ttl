@@ -2,7 +2,6 @@
 
 tomb:t00445
   a :Tomb ;
-  :ent t00445:p1 ;
   :image [
     dc:date "2019-11-02T11:31:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00445
     ] ;
     :nd "+53.4792+006.1601"^^ll:
   ] ;
+  :person t00445:p1 ;
   :ref t00445:v1 ;
   :site site:fr9166NAschiermonnikoog .
 
@@ -31,6 +31,10 @@ t00445:p1
     a :Uncle.n.01
   ] .
 
+t00445:v1
+  a :Verse.n.01 ;
+  :ord 8 .
+
 []
   a :Epistle_to_the_Romans.n.04 ;
   :prt [
@@ -38,8 +42,4 @@ t00445:p1
     :ord 6 ;
     :prt t00445:v1
   ] .
-
-t00445:v1
-  a :Verse.n.01 ;
-  :ord 8 .
 

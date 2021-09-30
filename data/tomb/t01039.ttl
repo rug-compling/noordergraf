@@ -2,7 +2,6 @@
 
 tomb:t01039
   a :Tomb ;
-  :ent t01039:p1 ;
   :image [
     dc:date "2020-04-19T10:41:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01039
     ] ;
     :nd "+53.2398+006.4101"^^ll:
   ] ;
+  :person t01039:p1 ;
   :ref t01039:v1 ;
   :site site:gr9801CAzuidhorn .
 
@@ -24,6 +24,10 @@ t01039:p1
   :dateOfDeath "1970-09-24"^^xsd:date ;
   :nam "FERDINAND JOHANNES VAN DIJKEN" .
 
+t01039:v1
+  a :Verse.n.01 ;
+  :ord 12 .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -31,8 +35,4 @@ t01039:p1
     :ord 20 ;
     :prt t01039:v1
   ] .
-
-t01039:v1
-  a :Verse.n.01 ;
-  :ord 12 .
 

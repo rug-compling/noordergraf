@@ -2,7 +2,6 @@
 
 tomb:t00428
   a :Tomb ;
-  :ent t00428:p1 ;
   :image [
     dc:date "2019-11-02T11:46:37"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00428
     ] ;
     :nd "+53.4790+006.1607"^^ll:
   ] ;
+  :person t00428:p1 ;
   :site site:fr9166NAschiermonnikoog ;
   :sym [
     a :Composite.n.01 ;
@@ -35,6 +35,10 @@ t00428:p1
     a :Aunt.n.01
   ] .
 
+t00428:v1
+  a :Verse.n.01 ;
+  :ord 8 .
+
 []
   a :Matthew.n.02 ;
   :prt [
@@ -42,8 +46,4 @@ t00428:p1
     :ord 5 ;
     :prt t00428:v1
   ] .
-
-t00428:v1
-  a :Verse.n.01 ;
-  :ord 8 .
 

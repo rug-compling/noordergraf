@@ -2,7 +2,6 @@
 
 tomb:t00329
   a :Tomb ;
-  :ent t00329:p1, t00329:p2, t00329:p3, t00329:p4, t00329:p5, t00329:p6, t00329:p7 ;
   :image [
     dc:date "2019-10-19T14:23:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00329
     ] ;
     :nd "+52.7158+006.4739"^^ll:
   ] ;
+  :person t00329:p1, t00329:p2, t00329:p3, t00329:p4, t00329:p5, t00329:p6, t00329:p7 ;
   :site site:dr7907CHhoogeveen .
+
+t00329:c2
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00329:p1
   a :Female ;
@@ -98,9 +103,4 @@ t00329:p7
     a :Grandchild.n.01 ;
     :tgt t00329:p2
   ] .
-
-t00329:c2
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
 

@@ -2,7 +2,6 @@
 
 tomb:t00380
   a :Tomb ;
-  :ent t00380:p1 ;
   :image [
     dc:date "2019-10-26T15:08:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00380
     ] ;
     :nd "+53.2519+006.1450"^^ll:
   ] ;
+  :person t00380:p1 ;
   :ref "PSALM 87 BERIJMD" ;
   :site site:fr9285TCbuitenpost ;
   :sym [
@@ -28,6 +28,11 @@ tomb:t00380
     ]
   ] .
 
+t00380:c1
+  a :Village.n.02 ;
+  :name "BUITENPOST" ;
+  :place place:Buitenpost2758131 .
+
 t00380:p1
   a :Female ;
   :dateOfBirth "1880-03-07"^^xsd:date ;
@@ -35,9 +40,4 @@ t00380:p1
   :nam "TRIJNTJE IJSTRA" ;
   :placeOfBirth t00380:c1 ;
   :placeOfDeath t00380:c1 .
-
-t00380:c1
-  a :Village.n.02 ;
-  :name "BUITENPOST" ;
-  :place place:Buitenpost2758131 .
 

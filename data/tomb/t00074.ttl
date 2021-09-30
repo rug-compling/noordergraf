@@ -2,7 +2,6 @@
 
 tomb:t00074
   a :Tomb ;
-  :ent t00074:p1, t00074:p2 ;
   :image [
     dc:date "2019-09-25T11:45:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00074
     ] ;
     :nd "+53.2037+006.5717"^^ll:
   ] ;
+  :person t00074:p1, t00074:p2 ;
   :site site:gr9721AAgroningen .
+
+t00074:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00074:p1
   a :Female ;
@@ -25,12 +30,12 @@ t00074:p1
   :placeOfBirth [
     a :City.n.01 ;
     :name "HAGEN" ;
-    :place place:Hagen2912621 ;
     :partOf [
       a :Country.n.02 ;
       :name "DUITSLAND" ;
       :place place:Duitsland2921044
-    ]
+    ] ;
+    :place place:Hagen2912621
   ] ;
   :placeOfDeath t00074:c1 ;
   :rol [
@@ -46,7 +51,3 @@ t00074:p2
   :placeOfBirth t00074:c1 ;
   :placeOfDeath t00074:c1 .
 
-t00074:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .

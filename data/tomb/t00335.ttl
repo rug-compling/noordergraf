@@ -2,7 +2,6 @@
 
 tomb:t00335
   a :Tomb ;
-  :ent t00335:p1, t00335:p2 ;
   :image [
     dc:date "2019-10-19T14:12:44"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00335
     ] ;
     :nd "+52.7153+006.4732"^^ll:
   ] ;
+  :person t00335:p1, t00335:p2 ;
   :ref t00335:v1 ;
   :site site:dr7907CHhoogeveen ;
   :sym [
@@ -46,6 +46,10 @@ t00335:p2
   :nam "HENDRIK STEENBERGEN" ;
   :suffix "KZ" .
 
+t00335:v1
+  a :Verse.n.01 ;
+  :ord 1 .
+
 []
   a :Second_Epistle_to_the_Corinthians.n.01 ;
   :prt [
@@ -53,8 +57,4 @@ t00335:p2
     :ord 5 ;
     :prt t00335:v1
   ] .
-
-t00335:v1
-  a :Verse.n.01 ;
-  :ord 1 .
 

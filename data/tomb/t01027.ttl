@@ -2,7 +2,6 @@
 
 tomb:t01027
   a :Tomb ;
-  :ent t01027:p1, t01027:p2, t01027:p3 ;
   :image [
     dc:date "2020-04-17T18:28:50"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01027
     ] ;
     :nd "+53.3809+006.8595"^^ll:
   ] ;
+  :person t01027:p1, t01027:p2, t01027:p3 ;
   :quo "WAT DE MENSCH ZAAIT, DAT ZAL HIJ OOK MAAIJEN"@nld ;
   :ref t01027:v1 ;
   :site site:gr9906PPbierum ;
@@ -50,6 +50,10 @@ t01027:p3
     :tgt tomb:t01027
   ] .
 
+t01027:v1
+  a :Verse.n.01 ;
+  :ord 7 .
+
 []
   a :Galations.n.02 ;
   :prt [
@@ -57,8 +61,4 @@ t01027:p3
     :ord 6 ;
     :prt t01027:v1
   ] .
-
-t01027:v1
-  a :Verse.n.01 ;
-  :ord 7 .
 

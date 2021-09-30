@@ -2,7 +2,7 @@
 
 tomb:t01031
   a :Tomb ;
-  :ent t01031:p1, t01031:p2, [
+  :ent [
     a :Group.n.01 ;
     :mem t01031:p1, t01031:p2 ;
     :rol [
@@ -21,9 +21,15 @@ tomb:t01031
     ] ;
     :nd "+53.2645+006.3941"^^ll:
   ] ;
+  :person t01031:p1, t01031:p2 ;
   :quo "RUST IN VREDE"@nld ;
   :ref "PSALM 42"@nld ;
   :site site:gr9804TEnoordhorn .
+
+t01031:c1
+  a :Village.n.02 ;
+  :name "GRIJPSKERK" ;
+  :place place:Grijpskerk2755317 .
 
 t01031:p1
   a :Male ;
@@ -49,9 +55,4 @@ t01031:p2
     :begin "1853"^^xsd:gYear ;
     :tgt t01031:p2
   ] .
-
-t01031:c1
-  a :Village.n.02 ;
-  :name "GRIJPSKERK" ;
-  :place place:Grijpskerk2755317 .
 

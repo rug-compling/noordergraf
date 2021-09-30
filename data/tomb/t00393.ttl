@@ -2,7 +2,6 @@
 
 tomb:t00393
   a :Tomb ;
-  :ent t00393:p1, t00393:p2 ;
   :image [
     dc:date "2019-10-26T15:01:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,14 +14,25 @@ tomb:t00393
     ] ;
     :nd "+53.2517+006.1453"^^ll:
   ] ;
+  :person t00393:p1, t00393:p2 ;
   :site site:fr9285TCbuitenpost .
+
+t00393:c2
+  a :Village.n.02 ;
+  :name "BEETGUM" ;
+  :place place:Bitgum2759283 .
+
+t00393:o2
+  a :Doctor.n.01 ;
+  :hisco hisco:06105 ;
+  :location t00393:c2 .
 
 t00393:p1
   a :Male ;
   :dateOfBirth "1838-03-19"^^xsd:date ;
   :dateOfDeath "1900-07-12"^^xsd:date ;
   :nam "CONRADUS ALBERTUS KUIPERS DIJKEN" ;
-  :occupation [
+  :occupation t00393:o2, [
     a :Doctor.n.01 ;
     :before t00393:o2 ;
     :hisco hisco:06105 ;
@@ -31,7 +41,7 @@ t00393:p1
       :name "MINNERTSGA" ;
       :place place:Minnertsga2750790
     ]
-  ], t00393:o2 ;
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "WEIDUM" ;
@@ -46,14 +56,4 @@ t00393:p1
 t00393:p2
   a :Female ;
   :nam "ANTJE KUIPERS" .
-
-t00393:c2
-  a :Village.n.02 ;
-  :name "BEETGUM" ;
-  :place place:Bitgum2759283 .
-
-t00393:o2
-  a :Doctor.n.01 ;
-  :hisco hisco:06105 ;
-  :location t00393:c2 .
 

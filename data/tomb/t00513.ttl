@@ -2,7 +2,6 @@
 
 tomb:t00513
   a :Tomb ;
-  :ent t00513:p1 ;
   :image [
     dc:date "2019-11-23T10:38:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00513
     ] ;
     :nd "+53.1647+006.7523"^^ll:
   ] ;
+  :person t00513:p1 ;
   :picture [
     a :Portrait.n.02 ;
     :thm t00513:p1
@@ -31,15 +31,16 @@ t00513:p1
   :placeOfBirth [
     a :Village.n.02 ;
     :name "AMAHEI" ;
-    :place place:Amahai1651591 ;
     :partOf [
       a :Province.n.01 ;
       :name "MOLUKKEN" ;
       :place place:Molukken1636629
-    ]
+    ] ;
+    :place place:Amahai1651591
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "FOXHOL" ;
     :place place:Foxhol2755853
   ] .
+

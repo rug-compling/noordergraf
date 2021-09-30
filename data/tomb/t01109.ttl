@@ -2,18 +2,11 @@
 
 tomb:t01109
   a :Tomb ;
-  :site site:gr9722SNgroningen ;
   :image [
+    dc:date "2021-02-24T14:36:22"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01109.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-02-24T14:36:22"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.1910 ;
@@ -21,7 +14,8 @@ tomb:t01109
     ] ;
     :nd "+53.1910+006.5944"^^ll:
   ] ;
-  :ent t01109:p1 .
+  :person t01109:p1 ;
+  :site site:gr9722SNgroningen .
 
 t01109:p1
   a :Female ;

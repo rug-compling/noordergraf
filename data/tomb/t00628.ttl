@@ -2,7 +2,6 @@
 
 tomb:t00628
   a :Tomb ;
-  :ent t00628:p1, t00628:p2, t00628:p3 ;
   :image [
     dc:date "2019-11-23T09:58:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,18 @@ tomb:t00628
     ] ;
     :nd "+53.1641+006.7543"^^ll:
   ] ;
+  :person t00628:p1, t00628:p2, t00628:p3 ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :WeepingWillow
   ], [
     a :Ax.n.01
   ] .
+
+t00628:c1
+  a :Town.n.01 ;
+  :name "HOOGEZAND" ;
+  :place place:Hoogezand2753706 .
 
 t00628:p1
   a :Female ;
@@ -44,9 +49,4 @@ t00628:p2
 t00628:p3
   a :Person ;
   :nam "W.G. BÖDEKER" .
-
-t00628:c1
-  a :Town.n.01 ;
-  :name "HOOGEZAND" ;
-  :place place:Hoogezand2753706 .
 

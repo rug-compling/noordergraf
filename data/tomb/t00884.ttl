@@ -2,7 +2,7 @@
 
 tomb:t00884
   a :Tomb ;
-  :ent t00884:p1, t00884:p2, t00884:g1 ;
+  :ent t00884:g1 ;
   :image [
     dc:date "2020-02-15T15:00:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +15,15 @@ tomb:t00884
     ] ;
     :nd "+52.7196+006.8464"^^ll:
   ] ;
+  :person t00884:p1, t00884:p2 ;
   :site site:dr7844TCveenoord ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00884:g1
+  a :Group.n.01 ;
+  :mem t00884:p3 .
 
 t00884:p1
   a :Male ;
@@ -46,8 +51,4 @@ t00884:p3
     a :Child.n.02 ;
     :tgt t00884:p1
   ] .
-
-t00884:g1
-  a :Group.n.01 ;
-  :mem t00884:p3 .
 

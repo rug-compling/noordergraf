@@ -2,7 +2,6 @@
 
 tomb:t00870
   a :Tomb ;
-  :ent t00870:p1, t00870:p2 ;
   :image [
     dc:date "2020-02-15T15:35:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00870
     ] ;
     :nd "+52.7756+006.8029"^^ll:
   ] ;
+  :person t00870:p1, t00870:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7841CDsleen .
+
+t00870:c2
+  a :Village.n.02 ;
+  :name "SLEEN" ;
+  :place place:Sleen2747182 .
 
 t00870:p1
   a :Male ;
@@ -37,9 +42,4 @@ t00870:p2
   :nam "ALIDA EVENHUIS" ;
   :placeOfBirth t00870:c2 ;
   :placeOfDeath t00870:c2 .
-
-t00870:c2
-  a :Village.n.02 ;
-  :name "SLEEN" ;
-  :place place:Sleen2747182 .
 

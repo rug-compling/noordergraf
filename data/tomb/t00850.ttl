@@ -2,7 +2,6 @@
 
 tomb:t00850
   a :Tomb ;
-  :ent t00850:p1, t00850:p2, t00850:p3 ;
   :image [
     dc:date "2020-02-20T14:40:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00850
     ] ;
     :nd "+53.2958+005.0653"^^ll:
   ] ;
+  :person t00850:p1, t00850:p2, t00850:p3 ;
   :quo "DAT ZIJ RUSTEN IN VREDE"@nld ;
   :ref t00850:v1 ;
   :site site:fr8899AWoost_vlieland ;
@@ -25,6 +25,16 @@ tomb:t00850
   ], [
     a :Anchor.n.01
   ] .
+
+t00850:c1
+  a :Island.n.01 ;
+  :name "TERSCHELLING" ;
+  :place place:Terschelling2746414 .
+
+t00850:c3
+  a :Island.n.01 ;
+  :name "VLIELAND" ;
+  :place place:Vlieland2745420 .
 
 t00850:p1
   a :Female ;
@@ -74,6 +84,10 @@ t00850:p3
     :tgt t00850:p2
   ] .
 
+t00850:v1
+  a :Verse.n.01 ;
+  :ord 13 .
+
 []
   a :First_Epistle_to_the_Corinthians.n.01 ;
   :prt [
@@ -81,18 +95,4 @@ t00850:p3
     :ord 13 ;
     :prt t00850:v1
   ] .
-
-t00850:c1
-  a :Island.n.01 ;
-  :name "TERSCHELLING" ;
-  :place place:Terschelling2746414 .
-
-t00850:c3
-  a :Island.n.01 ;
-  :name "VLIELAND" ;
-  :place place:Vlieland2745420 .
-
-t00850:v1
-  a :Verse.n.01 ;
-  :ord 13 .
 

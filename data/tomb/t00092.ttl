@@ -2,7 +2,6 @@
 
 tomb:t00092
   a :Tomb ;
-  :ent t00092:p1, t00092:p2 ;
   :image [
     dc:date "2019-09-25T11:15:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00092
     ] ;
     :nd "+53.2031+006.5734"^^ll:
   ] ;
+  :person t00092:p1, t00092:p2 ;
   :site site:gr9721AAgroningen .
 
 t00092:p1
@@ -25,12 +25,12 @@ t00092:p1
   :placeOfBirth [
     a :Village.n.02 ;
     :name "WAHN" ;
-    :place place:Wahn3208447 ;
     :partOf [
       a :Country.n.02 ;
       :name "DUITSLAND" ;
       :place place:Duitsland2921044
-    ]
+    ] ;
+    :place place:Wahn3208447
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
@@ -47,3 +47,4 @@ t00092:p2
   :dateOfBirth "1888-07-15"^^xsd:date ;
   :dateOfDeath "1967-08-31"^^xsd:date ;
   :nam "JOANNA M. BOELENS" .
+

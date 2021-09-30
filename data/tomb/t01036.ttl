@@ -2,7 +2,6 @@
 
 tomb:t01036
   a :Tomb ;
-  :ent t01036:p1 ;
   :image [
     dc:date "2020-04-19T11:54:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t01036
     ] ;
     :nd "+53.2645+006.3945"^^ll:
   ] ;
+  :person t01036:p1 ;
   :site site:gr9804TEnoordhorn ;
   :sym [
     a :WeepingWillow
   ] .
+
+t01036:c1
+  a :Village.n.02 ;
+  :name "NOORDHORN" ;
+  :place place:Noordhorn2749875 .
 
 t01036:p1
   a :Female ;
@@ -27,9 +32,4 @@ t01036:p1
   :nam "JANTJE VOS" ;
   :placeOfBirth t01036:c1 ;
   :placeOfDeath t01036:c1 .
-
-t01036:c1
-  a :Village.n.02 ;
-  :name "NOORDHORN" ;
-  :place place:Noordhorn2749875 .
 

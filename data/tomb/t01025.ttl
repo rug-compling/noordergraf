@@ -2,7 +2,6 @@
 
 tomb:t01025
   a :Tomb ;
-  :ent t01025:p1, t01025:p2 ;
   :image [
     dc:date "2020-04-17T18:27:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t01025
     ] ;
     :nd "+53.3809+006.8597"^^ll:
   ] ;
+  :person t01025:p1, t01025:p2 ;
   :quo "JONG VAN JAREN LIGT HAAR NIETIG STOF HIERNEER, 'T WAS UW WIL EN WELBEHAGEN WIJZE GOEDE HEMELHEER."@nld ;
   :site site:gr9906PPbierum ;
   :sym [
@@ -26,6 +26,11 @@ tomb:t01025
   ], [
     a :Ribbon.n.01
   ] .
+
+t01025:c2
+  a :Village.n.02 ;
+  :name "BIERUM" ;
+  :place place:Bierum2758983 .
 
 t01025:p1
   a :Female ;
@@ -47,9 +52,4 @@ t01025:p2
     a :Designer.n.01 ;
     :tgt tomb:t01025
   ] .
-
-t01025:c2
-  a :Village.n.02 ;
-  :name "BIERUM" ;
-  :place place:Bierum2758983 .
 

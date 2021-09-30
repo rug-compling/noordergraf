@@ -2,7 +2,6 @@
 
 tomb:t00702
   a :Tomb ;
-  :ent t00702:p1, t00702:p2 ;
   :image [
     dc:date "2019-12-21T13:51:21"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00702
     ] ;
     :nd "+52.7814+006.9012"^^ll:
   ] ;
+  :person t00702:p1, t00702:p2 ;
   :ref t00702:v1 ;
   :site site:dr7811HEemmen ;
   :sym [
@@ -37,6 +37,11 @@ t00702:p2
   :dateOfDeath "1977-06-07"^^xsd:date ;
   :nam "JANTJE TIMMERMANS" .
 
+t00702:v1
+  a :Verse.n.01 ;
+  :ord 13 ;
+  :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN" .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -44,9 +49,4 @@ t00702:p2
     :ord 14 ;
     :prt t00702:v1
   ] .
-
-t00702:v1
-  a :Verse.n.01 ;
-  :ord 13 ;
-  :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN" .
 

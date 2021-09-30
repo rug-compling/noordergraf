@@ -2,7 +2,6 @@
 
 tomb:t00589
   a :Tomb ;
-  :ent t00589:p1, t00589:p2 ;
   :image [
     dc:date "2019-11-30T14:31:30"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00589
     ] ;
     :nd "+53.3277+006.5121"^^ll:
   ] ;
+  :person t00589:p1, t00589:p2 ;
   :site site:gr9951TNwinsum .
+
+t00589:c1
+  a :Village.n.02 ;
+  :name "WINSUM" ;
+  :place place:Winsum2744337 .
 
 t00589:p1
   a :Male ;
@@ -33,9 +38,4 @@ t00589:p1
 t00589:p2
   a :Female ;
   :nam "MARTINA PETRONELLA DE BOER" .
-
-t00589:c1
-  a :Village.n.02 ;
-  :name "WINSUM" ;
-  :place place:Winsum2744337 .
 

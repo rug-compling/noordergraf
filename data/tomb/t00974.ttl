@@ -2,7 +2,6 @@
 
 tomb:t00974
   a :Tomb ;
-  :ent t00974:p1, t00974:p2, t00974:p3 ;
   :image [
     dc:date "2020-03-25T09:27:30"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00974
     ] ;
     :nd "+53.1201+006.6589"^^ll:
   ] ;
+  :person t00974:p1, t00974:p2, t00974:p3 ;
   :site site:gr9479TNnoordlaren ;
   :sym [
     a :Butterfly.n.01
@@ -41,11 +41,11 @@ t00974:p1
     :name "SCHEEMDA" ;
     :place place:Scheemda2747661
   ] ;
-  :rol [
+  :rol t00974:r2, [
     a :Widower.n.01 ;
     :before t00974:r2 ;
     :tgt t00974:p2
-  ], t00974:r2 .
+  ] .
 
 t00974:p2
   a :Female ;

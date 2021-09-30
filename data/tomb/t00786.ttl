@@ -2,7 +2,7 @@
 
 tomb:t00786
   a :Tomb ;
-  :ent t00786:p1, t00786:p2, t00786:p3, t00786:g1 ;
+  :ent t00786:g1 ;
   :image [
     dc:date "2019-12-21T12:57:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +15,13 @@ tomb:t00786
     ] ;
     :nd "+52.7816+006.8972"^^ll:
   ] ;
+  :person t00786:p1, t00786:p2, t00786:p3 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen .
+
+t00786:g1
+  a :Group.n.01 ;
+  :mem t00786:p2, t00786:p3 .
 
 t00786:p1
   a :Male ;
@@ -45,8 +50,4 @@ t00786:p2
 t00786:p3
   a :Female ;
   :nam "GRIETIEN EVERTS" .
-
-t00786:g1
-  a :Group.n.01 ;
-  :mem t00786:p2, t00786:p3 .
 

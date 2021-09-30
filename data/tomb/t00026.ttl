@@ -2,7 +2,7 @@
 
 tomb:t00026
   a :Tomb ;
-  :ent t00026:p1, t00026:p2, t00026:g1, t00026:g2 ;
+  :ent t00026:g1, t00026:g2 ;
   :image [
     dc:date "2019-09-25T16:22:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +15,7 @@ tomb:t00026
     ] ;
     :nd "+53.1914+006.5941"^^ll:
   ] ;
+  :person t00026:p1, t00026:p2 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Composite.n.01 ;
@@ -24,6 +25,18 @@ tomb:t00026
       a :Ribbon.n.01
     ]
   ] .
+
+t00026:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
+
+t00026:g1
+  a :Group.n.01 ;
+  :mem t00026:p2 .
+
+t00026:g2
+  a :Group.n.01 .
 
 t00026:p1
   a :Male ;
@@ -65,16 +78,4 @@ t00026:p2
     a :Great_grandmother.n.01 ;
     :tgt t00026:g2
   ] .
-
-t00026:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
-
-t00026:g1
-  a :Group.n.01 ;
-  :mem t00026:p2 .
-
-t00026:g2
-  a :Group.n.01 .
 

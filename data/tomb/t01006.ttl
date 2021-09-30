@@ -2,7 +2,6 @@
 
 tomb:t01006
   a :Tomb ;
-  :ent t01006:p1, t01006:p2 ;
   :image [
     dc:date "2020-04-05T12:20:15"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,11 @@ tomb:t01006
     ] ;
     :nd "+53.2441+006.6276"^^ll:
   ] ;
+  :person t01006:p1, t01006:p2 ;
   :site site:gr9734ATgroningen ;
-  :sym [
+  :sym t01006:s2, t01006:s3, [
     a :Sandglass.n.01
-  ], t01006:s2, t01006:s3, [
+  ], [
     a :Frond.n.01
   ], [
     a :Frond.n.01

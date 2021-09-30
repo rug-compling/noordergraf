@@ -2,7 +2,6 @@
 
 tomb:t00888
   a :Tomb ;
-  :ent t00888:p1, t00888:p2, t00888:p3, t00888:p4 ;
   :image [
     dc:date "2020-02-01T12:41:16"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00888
     ] ;
     :nd "+53.2296+006.5504"^^ll:
   ] ;
+  :person t00888:p1, t00888:p2, t00888:p3, t00888:p4 ;
   :ref t00888:v1 ;
   :site site:gr9741ACgroningen ;
   :sym [
@@ -26,9 +26,9 @@ t00888:p1
   :dateOfBirth "1864-05-04"^^xsd:date ;
   :dateOfDeath "1901-10-17"^^xsd:date ;
   :nam "ROBERTA MARGARETHA WOLTJER" ;
-  :rol [
+  :rol t00888:r2, [
     a :Mother.n.01
-  ], t00888:r2, [
+  ], [
     a :Widow.n.01 ;
     :before t00888:r2 ;
     :tgt t00888:p3
@@ -53,14 +53,6 @@ t00888:p4
     a :Uncle.n.01
   ] .
 
-[]
-  a :John.n.05 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 14 ;
-    :prt t00888:v1
-  ] .
-
 t00888:r2
   a :Spouse.n.01 ;
   :tgt t00888:p2 .
@@ -69,4 +61,12 @@ t00888:v1
   a :Verse.n.01 ;
   :ord 2 ;
   :txt "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN" .
+
+[]
+  a :John.n.05 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 14 ;
+    :prt t00888:v1
+  ] .
 

@@ -2,7 +2,6 @@
 
 tomb:t00535
   a :Tomb ;
-  :ent t00535:p1 ;
   :image [
     dc:date "2019-11-24T14:22:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00535
     ] ;
     :nd "+53.1042+006.8763"^^ll:
   ] ;
+  :person t00535:p1 ;
   :quo "DIT GRAF MAG NIET WORDEN OPGEGRAVEN"@nld, "RUST ZACHT"@nld ;
   :site site:gr9641ANveendam ;
   :sym [
@@ -33,9 +33,9 @@ t00535:p1
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :text "in het Ziekenhuis te Rotterdam" ;
     :name "ROTTERDAM" ;
-    :place place:Rotterdam2747891
+    :place place:Rotterdam2747891 ;
+    :text "in het Ziekenhuis te Rotterdam"
   ] ;
   :rol [
     a :Brother.n.01

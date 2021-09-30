@@ -2,18 +2,11 @@
 
 tomb:t01111
   a :Tomb ;
-  :site site:gr9628TKsiddeburen ;
   :image [
+    dc:date "2020-09-19T15:03:04"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01111.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2020-09-19T15:03:04"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2441 ;
@@ -21,8 +14,9 @@ tomb:t01111
     ] ;
     :nd "+53.2441+006.8638"^^ll:
   ] ;
-  :ent t01111:p1 ;
+  :person t01111:p1 ;
   :quo "RUST ZACHT GELIEFDE TANTE"@nld ;
+  :site site:gr9628TKsiddeburen ;
   :sym [
     a :WeepingWillow
   ] .
@@ -40,13 +34,14 @@ t01111:p1
   :placeOfDeath [
     a :Village.n.02 ;
     :name "WEIDUM" ;
-    :place place:Weidum2744891 ;
     :partOf [
       a :Province.n.01 ;
       :name "FRIESLAND" ;
       :place place:ProvincieFriesland2755812
-    ]
+    ] ;
+    :place place:Weidum2744891
   ] ;
   :rol [
     a :Aunt.n.01
   ] .
+

@@ -2,7 +2,6 @@
 
 tomb:t00410
   a :Tomb ;
-  :ent t00410:p1, t00410:p2 ;
   :image [
     dc:date "2019-10-25T17:21:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00410
     ] ;
     :nd "+53.0797+006.5716"^^ll:
   ] ;
+  :person t00410:p1, t00410:p2 ;
   :quo "RUST ZACHT LIEVE PLEEGOUDERS" ;
   :site site:dr9481CGvries .
+
+t00410:c2
+  a :Town.n.01 ;
+  :name "VRIES" ;
+  :place place:Vries2745189 .
 
 t00410:p1
   a :Male ;
@@ -48,9 +53,4 @@ t00410:p2
     a :Foster-parent.n.01 ;
     :tgt t00410:p3
   ] .
-
-t00410:c2
-  a :Town.n.01 ;
-  :name "VRIES" ;
-  :place place:Vries2745189 .
 

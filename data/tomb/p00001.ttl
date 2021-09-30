@@ -2,14 +2,8 @@
 
 tomb:p00001
   a :Tomb ;
-  :text """ici repose
-Vincent van Gogh
-1853 — 1890
-""" ;
-  :ent p00001:p1 ;
   :image [
     dc:date "2021-07-01T10:08:19"^^xsd:dateTime ;
-  # dc:creator "Saskia van L." ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:p00001.jpg ;
@@ -20,10 +14,16 @@ Vincent van Gogh
     ] ;
     :nd "+49.0753+002.1789"^^ll:
   ] ;
-  :site site:FR95430Auvers_sur_Oise .
+  :person p00001:p1 ;
+  :site site:FR95430Auvers_sur_Oise ;
+  :text """ici repose
+Vincent van Gogh
+1853 — 1890
+""" .
 
-p00001:p1 a :Male ;
-  :nam "Vincent van Gogh" ;
+p00001:p1
+  a :Male ;
   :dateOfBirth "1853"^^xsd:gYear ;
-  :dateOfDeath "1890"^^xsd:gYear .
+  :dateOfDeath "1890"^^xsd:gYear ;
+  :nam "Vincent van Gogh" .
 

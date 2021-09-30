@@ -2,7 +2,6 @@
 
 tomb:t00415
   a :Tomb ;
-  :ent t00415:p1, t00415:p2 ;
   :image [
     dc:date "2019-10-25T17:04:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00415
     ] ;
     :nd "+53.0796+006.5724"^^ll:
   ] ;
+  :person t00415:p1, t00415:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00415:c1
+  a :Village.n.02 ;
+  :name "TYNAARLO" ;
+  :place place:Tynaarlo2746038 .
 
 t00415:p1
   a :Female ;
@@ -48,9 +53,4 @@ t00415:p2
     :name "HAREN" ;
     :place place:Haren2754841
   ] .
-
-t00415:c1
-  a :Village.n.02 ;
-  :name "TYNAARLO" ;
-  :place place:Tynaarlo2746038 .
 

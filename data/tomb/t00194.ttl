@@ -2,7 +2,6 @@
 
 tomb:t00194
   a :Tomb ;
-  :ent t00194:p1 ;
   :image [
     dc:date "2019-10-06T14:42:16"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00194
     ] ;
     :nd "+53.1906+006.5948"^^ll:
   ] ;
+  :person t00194:p1 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Plane.n.01
@@ -28,12 +28,12 @@ t00194:p1
   :placeOfBirth [
     a :Town.n.01 ;
     :name "RASTATT" ;
-    :place place:Rastatt2850257 ;
     :partOf [
       a :Country.n.02 ;
       :name "DUITSLAND" ;
       :place place:Duitsland2921044
-    ]
+    ] ;
+    :place place:Rastatt2850257
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
@@ -43,3 +43,4 @@ t00194:p1
   :rol [
     a :Father.n.01
   ] .
+

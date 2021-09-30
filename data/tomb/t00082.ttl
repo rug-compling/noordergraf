@@ -2,7 +2,6 @@
 
 tomb:t00082
   a :Tomb ;
-  :ent t00082:p1, t00082:p2 ;
   :image [
     dc:date "2019-09-25T11:01:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +14,14 @@ tomb:t00082
     ] ;
     :nd "+53.2036+006.5731"^^ll:
   ] ;
+  :person t00082:p1, t00082:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:gr9721AAgroningen .
+
+t00082:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00082:p1
   a :Male ;
@@ -45,9 +50,4 @@ t00082:p2
     :place place:Zwolle2743477
   ] ;
   :placeOfDeath t00082:c1 .
-
-t00082:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

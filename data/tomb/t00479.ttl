@@ -2,7 +2,6 @@
 
 tomb:t00479
   a :Tomb ;
-  :ent t00479:p1, t00479:p2 ;
   :image [
     dc:date "2019-11-09T14:34:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00479
     ] ;
     :nd "+53.2064+005.7691"^^ll:
   ] ;
+  :person t00479:p1, t00479:p2 ;
   :site site:fr8915CPleeuwarden ;
   :sym [
     a :Cross.n.03
@@ -28,17 +28,17 @@ t00479:p1
   :placeOfBirth [
     a :Village.n.02 ;
     :name "CUNE" ;
-    :place place:Cune8953542 ;
     :partOf [
       a :Province.n.01 ;
       :name "TOSCANA" ;
-      :place place:Toscane3165361 ;
       :partOf [
         a :Country.n.02 ;
         :name "ITALIË" ;
         :place place:Italie3175395
-      ]
-    ]
+      ] ;
+      :place place:Toscane3165361
+    ] ;
+    :place place:Cune8953542
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
@@ -53,3 +53,4 @@ t00479:p1
 t00479:p2
   a :Female ;
   :nam "GEESJE JANSSEN" .
+

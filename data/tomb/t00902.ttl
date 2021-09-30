@@ -2,7 +2,6 @@
 
 tomb:t00902
   a :Tomb ;
-  :ent t00902:p1, t00902:p2 ;
   :image [
     dc:date "2020-03-07T14:23:56"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00902
     ] ;
     :nd "+53.1718+006.3658"^^ll:
   ] ;
+  :person t00902:p1, t00902:p2 ;
   :quo "IN MEMORIAN"@nld, "REQUIEM AETERNAM \\ DONE EIS \\ DOMINE"@nld ;
   :ref "PREDIKER `12:7"@nld ;
   :site site:gr9351RLtolbert ;
@@ -23,6 +23,11 @@ tomb:t00902
   ], [
     a :Frond.n.01
   ] .
+
+t00902:c1
+  a :Hamlet.n.03 ;
+  :name "DIEPSWAL" ;
+  :place place:Diepswal2756869 .
 
 t00902:p1
   a :Female ;
@@ -47,9 +52,4 @@ t00902:p2
     :name "ENSCHEDE" ;
     :place place:Enschede2756071
   ] .
-
-t00902:c1
-  a :Hamlet.n.03 ;
-  :name "DIEPSWAL" ;
-  :place place:Diepswal2756869 .
 

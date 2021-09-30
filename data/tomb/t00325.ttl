@@ -2,7 +2,6 @@
 
 tomb:t00325
   a :Tomb ;
-  :ent t00325:p1, t00325:p2 ;
   :image [
     dc:date "2019-10-19T14:29:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00325
     ] ;
     :nd "+52.7159+006.4741"^^ll:
   ] ;
+  :person t00325:p1, t00325:p2 ;
   :quo "IN JEZUS ONTSLAPEN" ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00325:c1
+  a :Town.n.01 ;
+  :name "HOOGEVEEN" ;
+  :place place:Hoogeveen2753719 .
 
 t00325:p1
   a :Female ;
@@ -44,9 +49,4 @@ t00325:p2
     a :Mother.n.01
   ] ;
   :suffix "HARMZN" .
-
-t00325:c1
-  a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
 

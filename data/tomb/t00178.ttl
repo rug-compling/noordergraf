@@ -2,7 +2,6 @@
 
 tomb:t00178
   a :Tomb ;
-  :ent t00178:p1, t00178:p2 ;
   :image [
     dc:date "2019-10-05T10:28:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00178
     ] ;
     :nd "+53.1912+006.5936"^^ll:
   ] ;
+  :person t00178:p1, t00178:p2 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00178:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00178:p1
   a :Female ;
@@ -47,9 +52,4 @@ t00178:p2
     :place place:Opende2749302
   ] ;
   :placeOfDeath t00178:c1 .
-
-t00178:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

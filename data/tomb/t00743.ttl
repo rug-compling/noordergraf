@@ -2,7 +2,6 @@
 
 tomb:t00743
   a :Tomb ;
-  :ent t00743:p1, t00743:p2 ;
   :image [
     dc:date "2019-12-29T10:19:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00743
     ] ;
     :nd "+53.1806+006.9689"^^ll:
   ] ;
+  :person t00743:p1, t00743:p2 ;
   :site site:gr9679KHscheemda ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00743:c1
+  a :Village.n.02 ;
+  :name "SCHEEMDA" ;
+  :place place:Scheemda2747661 .
 
 t00743:p1
   a :Female ;
@@ -35,9 +40,4 @@ t00743:p1
 t00743:p2
   a :Male ;
   :nam "JAN HORREL" .
-
-t00743:c1
-  a :Village.n.02 ;
-  :name "SCHEEMDA" ;
-  :place place:Scheemda2747661 .
 

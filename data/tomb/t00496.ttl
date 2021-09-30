@@ -2,7 +2,6 @@
 
 tomb:t00496
   a :Tomb ;
-  :ent t00496:p1 ;
   :image [
     dc:date "2019-11-16T14:11:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00496
     ] ;
     :nd "+53.2091+005.7914"^^ll:
   ] ;
+  :person t00496:p1 ;
   :site site:fr8917AVleeuwarden .
+
+t00496:c1
+  a :City.n.01 ;
+  :name "AMSTERDAM" ;
+  :place place:Amsterdam2759794 .
 
 t00496:p1
   a :Male ;
@@ -33,9 +38,4 @@ t00496:p1
     :place place:Hallum2754930
   ] ;
   :placeOfDeath t00496:c1 .
-
-t00496:c1
-  a :City.n.01 ;
-  :name "AMSTERDAM" ;
-  :place place:Amsterdam2759794 .
 

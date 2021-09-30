@@ -2,7 +2,6 @@
 
 tomb:t01066
   a :Tomb ;
-  :ent t01066:p1, t01066:p2 ;
   :image [
     dc:date "2020-05-02T16:49:07"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t01066
     ] ;
     :nd "+53.3604+006.3435"^^ll:
   ] ;
+  :person t01066:p1, t01066:p2 ;
   :ref t01066:v1 ;
   :site site:gr9971EBulrum ;
   :sym [
     a :Branch.n.02
   ] .
+
+t01066:c1
+  a :Village.n.02 ;
+  :name "ULRUM" ;
+  :place place:Ulrum2745944 .
 
 t01066:p1
   a :Male ;
@@ -50,6 +55,11 @@ t01066:p2
   a :Female ;
   :nam "E. JANSEN" .
 
+t01066:v1
+  a :Verse.n.01 ;
+  :ord 6 ;
+  :txt "ZALIG EN HEILIG IS HIJ, DIE DEEL HEEFT IN DE EERSTE OPSTANDING. OVER DEZE HEEFT DE TWEEDE DOOD GEEN MACHT." .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -57,14 +67,4 @@ t01066:p2
     :ord 20 ;
     :prt t01066:v1
   ] .
-
-t01066:c1
-  a :Village.n.02 ;
-  :name "ULRUM" ;
-  :place place:Ulrum2745944 .
-
-t01066:v1
-  a :Verse.n.01 ;
-  :ord 6 ;
-  :txt "ZALIG EN HEILIG IS HIJ, DIE DEEL HEEFT IN DE EERSTE OPSTANDING. OVER DEZE HEEFT DE TWEEDE DOOD GEEN MACHT." .
 

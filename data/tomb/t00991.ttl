@@ -2,7 +2,6 @@
 
 tomb:t00991
   a :Tomb ;
-  :ent t00991:p1, t00991:p2 ;
   :image [
     dc:date "2020-04-04T10:58:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00991
     ] ;
     :nd "+53.1758+007.0953"^^ll:
   ] ;
+  :person t00991:p1, t00991:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
   :ref t00991:v1 ;
   :site site:gr9686RSbeerta .
@@ -39,6 +39,10 @@ t00991:p2
     :tgt t00991:p3
   ] .
 
+t00991:v1
+  a :Verse.n.01 ;
+  :ord 21 .
+
 []
   a :Job.n.12 ;
   :prt [
@@ -46,8 +50,4 @@ t00991:p2
     :ord 1 ;
     :prt t00991:v1
   ] .
-
-t00991:v1
-  a :Verse.n.01 ;
-  :ord 21 .
 

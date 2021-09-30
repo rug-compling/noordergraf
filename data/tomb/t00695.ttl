@@ -2,7 +2,6 @@
 
 tomb:t00695
   a :Tomb ;
-  :ent t00695:p1, t00695:p2 ;
   :image [
     dc:date "2019-12-21T13:55:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00695
     ] ;
     :nd "+52.7810+006.8995"^^ll:
   ] ;
+  :person t00695:p1, t00695:p2 ;
   :quo "RUST ZACHT"@nld ;
   :ref t00695:v1 ;
   :site site:dr7811HEemmen ;
@@ -23,6 +23,11 @@ tomb:t00695
   ], [
     a :Frond.n.01
   ] .
+
+t00695:c1
+  a :Village.n.02 ;
+  :name "NOORDBARGE" ;
+  :place place:Noordbarge2749996 .
 
 t00695:p1
   a :Male ;
@@ -40,6 +45,10 @@ t00695:p2
   a :Female ;
   :nam "H. DENEN" .
 
+t00695:v1
+  a :Verse.n.01 ;
+  :ord 1 .
+
 []
   a :Epistle_to_the_Romans.n.04 ;
   :prt [
@@ -47,13 +56,4 @@ t00695:p2
     :ord 8 ;
     :prt t00695:v1
   ] .
-
-t00695:c1
-  a :Village.n.02 ;
-  :name "NOORDBARGE" ;
-  :place place:Noordbarge2749996 .
-
-t00695:v1
-  a :Verse.n.01 ;
-  :ord 1 .
 

@@ -2,7 +2,7 @@
 
 tomb:t00004
   a :Tomb ;
-  :ent t00004:p1, t00004:p2, t00004:p3, t00004:g1 ;
+  :ent t00004:g1 ;
   :image [
     dc:date "2019-09-25T16:56:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,17 @@ tomb:t00004
     ] ;
     :nd "+53.1902+006.5932"^^ll:
   ] ;
+  :person t00004:p1, t00004:p2, t00004:p3 ;
   :site site:gr9722SNgroningen .
+
+t00004:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
+
+t00004:g1
+  a :Group.n.01 ;
+  :mem t00004:p2, t00004:p3 .
 
 t00004:p1
   a :Female ;
@@ -60,13 +70,4 @@ t00004:p3
     a :Wife.n.01 ;
     :tgt t00004:p2
   ] .
-
-t00004:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
-
-t00004:g1
-  a :Group.n.01 ;
-  :mem t00004:p2, t00004:p3 .
 

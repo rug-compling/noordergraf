@@ -2,7 +2,6 @@
 
 tomb:t00871
   a :Tomb ;
-  :ent t00871:p1, t00871:p2 ;
   :image [
     dc:date "2020-02-15T15:35:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,9 +14,15 @@ tomb:t00871
     ] ;
     :nd "+52.7763+006.8041"^^ll:
   ] ;
+  :person t00871:p1, t00871:p2 ;
   :quo "HIER RUSTEN TOT DEN DAG DER OPSTANDING"@nld ;
   :ref t00871:v1 ;
   :site site:dr7841CDsleen .
+
+t00871:c2
+  a :Village.n.02 ;
+  :name "ERM" ;
+  :place place:Erm2756040 .
 
 t00871:p1
   a :Female ;
@@ -39,6 +44,11 @@ t00871:p2
   :placeOfBirth t00871:c2 ;
   :placeOfDeath t00871:c2 .
 
+t00871:v1
+  a :Verse.n.01 ;
+  :ord 13 ;
+  :txt "ZALIG ZIJN DE DOODEN DIE IN DEN HEERE STERVEN" .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -46,14 +56,4 @@ t00871:p2
     :ord 14 ;
     :prt t00871:v1
   ] .
-
-t00871:c2
-  a :Village.n.02 ;
-  :name "ERM" ;
-  :place place:Erm2756040 .
-
-t00871:v1
-  a :Verse.n.01 ;
-  :ord 13 ;
-  :txt "ZALIG ZIJN DE DOODEN DIE IN DEN HEERE STERVEN" .
 

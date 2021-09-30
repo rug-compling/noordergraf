@@ -2,7 +2,7 @@
 
 tomb:t00646
   a :Tomb ;
-  :ent t00646:p1, t00646:p2, t00646:p3, t00646:g1 ;
+  :ent t00646:g1 ;
   :image [
     dc:date "2019-12-08T11:19:48"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,12 @@ tomb:t00646
     ] ;
     :nd "+53.2090+006.6478"^^ll:
   ] ;
+  :person t00646:p1, t00646:p2, t00646:p3 ;
   :site site:gr9723EJgroningen .
+
+t00646:g1
+  a :Group.n.01 ;
+  :mem t00646:p2, t00646:p3 .
 
 t00646:p1
   a :Male ;
@@ -44,8 +49,4 @@ t00646:p2
 t00646:p3
   a :Female ;
   :nam "JANTJE KNOLLEMA" .
-
-t00646:g1
-  a :Group.n.01 ;
-  :mem t00646:p2, t00646:p3 .
 

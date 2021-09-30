@@ -2,7 +2,6 @@
 
 tomb:t00019
   a :Tomb ;
-  :ent t00019:p1, t00019:p2 ;
   :image [
     dc:date "2019-09-25T16:33:08"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00019
     ] ;
     :nd "+53.1919+006.5928"^^ll:
   ] ;
+  :person t00019:p1, t00019:p2 ;
   :site site:gr9722SNgroningen .
+
+t00019:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00019:p1
   a :Female ;
@@ -37,9 +42,4 @@ t00019:p2
   :nam "GERRIT DUIKER", "GERT" ;
   :placeOfBirth t00019:c1 ;
   :placeOfDeath t00019:c1 .
-
-t00019:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

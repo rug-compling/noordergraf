@@ -2,7 +2,6 @@
 
 tomb:t00132
   a :Tomb ;
-  :ent t00132:p1, t00132:p2, t00132:p3 ;
   :image [
     dc:date "2019-10-01T09:54:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00132
     ] ;
     :nd "+53.2062+006.5729"^^ll:
   ] ;
+  :person t00132:p1, t00132:p2, t00132:p3 ;
   :site site:gr9725ACgroningen .
+
+t00132:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00132:p1
   a :Male ;
@@ -40,20 +45,15 @@ t00132:p2
   :nam "GEERTRUIDA VAN DER KAMP" ;
   :placeOfBirth t00132:c1 ;
   :placeOfDeath t00132:c1 ;
-  :rol [
+  :rol t00132:r3, [
     a :Widow.n.01 ;
     :before t00132:r3 ;
     :tgt t00132:p3
-  ], t00132:r3 .
+  ] .
 
 t00132:p3
   a :Male ;
   :nam "D. HOEKSEMA" .
-
-t00132:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 
 t00132:r3
   a :Widow.n.01 ;

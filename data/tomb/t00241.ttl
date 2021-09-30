@@ -2,7 +2,6 @@
 
 tomb:t00241
   a :Tomb ;
-  :ent t00241:p1 ;
   :image [
     dc:date "2019-10-11T17:41:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00241
     ] ;
     :nd "+53.1725+006.6067"^^ll:
   ] ;
+  :person t00241:p1 ;
   :site site:gr9751BBharen ;
   :sym [
     a :Frond.n.02
   ] .
+
+t00241:c1
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 
 t00241:p1
   a :Male ;
@@ -28,9 +33,4 @@ t00241:p1
   :placeOfBirth t00241:c1 ;
   :placeOfDeath t00241:c1 ;
   :ref "PSALM 119:1 BERIJMD" .
-
-t00241:c1
-  a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
 

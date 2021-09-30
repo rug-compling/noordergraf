@@ -2,7 +2,6 @@
 
 tomb:t00397
   a :Tomb ;
-  :ent t00397:p1, t00397:p2 ;
   :image [
     dc:date "2019-10-26T14:48:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00397
     ] ;
     :nd "+53.2517+006.1446"^^ll:
   ] ;
+  :person t00397:p1, t00397:p2 ;
   :quo "ER BLIJFT DAN EENE RUST OVER VOOR HET VOLK GODS" ;
   :site site:fr9285TCbuitenpost ;
   :sym [
@@ -27,6 +27,11 @@ tomb:t00397
       a :Ribbon.n.01
     ]
   ] .
+
+t00397:c1
+  a :Village.n.02 ;
+  :name "BUITENPOST" ;
+  :place place:Buitenpost2758131 .
 
 t00397:p1
   a :Male ;
@@ -59,9 +64,4 @@ t00397:p2
     a :Spouse.n.01 ;
     :tgt t00397:p1
   ] .
-
-t00397:c1
-  a :Village.n.02 ;
-  :name "BUITENPOST" ;
-  :place place:Buitenpost2758131 .
 

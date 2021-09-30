@@ -2,7 +2,6 @@
 
 tomb:t00857
   a :Tomb ;
-  :ent t00857:p1, t00857:p2 ;
   :image [
     dc:date "2020-02-15T15:37:10"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00857
     ] ;
     :nd "+52.7764+006.8042"^^ll:
   ] ;
+  :person t00857:p1, t00857:p2 ;
   :quo "RUST IN VREDE."@nld ;
   :site site:dr7841CDsleen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00857:c1
+  a :Village.n.02 ;
+  :name "NOORD-SLEEN" ;
+  :place place:NoordSleen2749830 .
 
 t00857:p1
   a :Person ;
@@ -48,9 +53,4 @@ t00857:p2
     a :Grandparent.n.01 ;
     :tgt t00857:p3
   ] .
-
-t00857:c1
-  a :Village.n.02 ;
-  :name "NOORD-SLEEN" ;
-  :place place:NoordSleen2749830 .
 

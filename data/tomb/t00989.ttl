@@ -2,7 +2,6 @@
 
 tomb:t00989
   a :Tomb ;
-  :ent t00989:p1, t00989:p2, t00989:p3 ;
   :image [
     dc:date "2020-04-05T12:14:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00989
     ] ;
     :nd "+53.2442+006.6283"^^ll:
   ] ;
+  :person t00989:p1, t00989:p2, t00989:p3 ;
   :site site:gr9734ATgroningen .
 
 t00989:p1
@@ -32,11 +32,11 @@ t00989:p1
     :name "NOORDDIJK" ;
     :place place:Noorddijk2749981
   ] ;
-  :rol [
+  :rol t00989:r2, [
     a :Widow.n.01 ;
     :before t00989:r2 ;
     :tgt t00989:p2
-  ], t00989:r2 .
+  ] .
 
 t00989:p2
   a :Male ;

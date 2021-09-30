@@ -2,7 +2,6 @@
 
 tomb:t00404
   a :Tomb ;
-  :ent t00404:p1, t00404:p2 ;
   :image [
     dc:date "2019-10-26T14:46:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00404
     ] ;
     :nd "+53.2518+006.1448"^^ll:
   ] ;
+  :person t00404:p1, t00404:p2 ;
   :ref t00404:v1 ;
   :site site:fr9285TCbuitenpost ;
   :sym [
@@ -45,6 +45,10 @@ t00404:p2
   a :Male ;
   :nam "H.J. POL" .
 
+t00404:v1
+  a :Verse.n.01 ;
+  :ord 1 .
+
 []
   a :Second_Epistle_to_the_Corinthians.n.01 ;
   :prt [
@@ -52,8 +56,4 @@ t00404:p2
     :ord 5 ;
     :prt t00404:v1
   ] .
-
-t00404:v1
-  a :Verse.n.01 ;
-  :ord 1 .
 

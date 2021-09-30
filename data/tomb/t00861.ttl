@@ -2,7 +2,6 @@
 
 tomb:t00861
   a :Tomb ;
-  :ent t00861:p1, t00861:p2 ;
   :image [
     dc:date "2020-02-15T15:14:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00861
     ] ;
     :nd "+52.7193+006.8450"^^ll:
   ] ;
+  :person t00861:p1, t00861:p2 ;
   :site site:dr7844TCveenoord .
+
+t00861:c2
+  a :Village.n.02 ;
+  :name "VEENOORD" ;
+  :place place:Veenoord2745753 .
 
 t00861:p1
   a :Male ;
@@ -40,9 +45,4 @@ t00861:p2
     :place place:Leek2751834
   ] ;
   :placeOfDeath t00861:c2 .
-
-t00861:c2
-  a :Village.n.02 ;
-  :name "VEENOORD" ;
-  :place place:Veenoord2745753 .
 

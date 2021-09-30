@@ -2,7 +2,6 @@
 
 tomb:t00243
   a :Tomb ;
-  :ent t00243:p1, t00243:p2 ;
   :image [
     dc:date "2019-10-11T17:35:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00243
     ] ;
     :nd "+53.1730+006.6071"^^ll:
   ] ;
+  :person t00243:p1, t00243:p2 ;
   :ref [
     a :Group.n.01 ;
     :mem t00243:v1, t00243:v2
@@ -23,6 +23,11 @@ tomb:t00243
   :sym [
     a :WeepingWillow
   ] .
+
+t00243:c1
+  a :Village.n.02 ;
+  :name "ONNEN" ;
+  :place place:Onnen2749588 .
 
 t00243:p1
   a :Male ;
@@ -40,19 +45,6 @@ t00243:p2
   a :Female ;
   :nam "SIETSKE DE VRIES" .
 
-[]
-  a :Second_Epistle_to_Timothy.n.01 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 4 ;
-    :prt t00243:v1, t00243:v2
-  ] .
-
-t00243:c1
-  a :Village.n.02 ;
-  :name "ONNEN" ;
-  :place place:Onnen2749588 .
-
 t00243:v1
   a :Verse.n.01 ;
   :ord 7 .
@@ -60,4 +52,12 @@ t00243:v1
 t00243:v2
   a :Verse.n.01 ;
   :ord 8 .
+
+[]
+  a :Second_Epistle_to_Timothy.n.01 ;
+  :prt [
+    a :Chapter.n.01 ;
+    :ord 4 ;
+    :prt t00243:v1, t00243:v2
+  ] .
 

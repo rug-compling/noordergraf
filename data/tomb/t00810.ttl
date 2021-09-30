@@ -2,7 +2,6 @@
 
 tomb:t00810
   a :Tomb ;
-  :ent t00810:p1, t00810:p2 ;
   :image [
     dc:date "2020-01-18T13:13:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00810
     ] ;
     :nd "+53.2779+006.6936"^^ll:
   ] ;
+  :person t00810:p1, t00810:p2 ;
   :quo "STA WANDELAAR EN LEES, \\ WIER OVERSCHOT DIT IS. \\ EN DENK DAN OOK DAT LOT \\ TREFT VROEG OF SPA MIJ WIS"@nld ;
   :site site:gr9791KEten_boer ;
   :sym [
     a :Butterfly.n.01
   ] .
+
+t00810:c1
+  a :Village.n.02 ;
+  :name "TEN BOER" ;
+  :place place:TenBoer2746491 .
 
 t00810:p1
   a :Female ;
@@ -36,9 +41,4 @@ t00810:p1
 t00810:p2
   a :Male ;
   :nam "J.H. BOLMAN" .
-
-t00810:c1
-  a :Village.n.02 ;
-  :name "TEN BOER" ;
-  :place place:TenBoer2746491 .
 

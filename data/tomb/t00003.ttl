@@ -2,7 +2,7 @@
 
 tomb:t00003
   a :Tomb ;
-  :ent t00003:p1, t00003:p2, t00003:p3, t00003:g1 ;
+  :ent t00003:g1 ;
   :image [
     dc:date "2019-09-25T17:00:57"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +15,15 @@ tomb:t00003
     ] ;
     :nd "+53.1899+006.5936"^^ll:
   ] ;
+  :person t00003:p1, t00003:p2, t00003:p3 ;
   :site site:gr9722SNgroningen .
+
+t00003:g1
+  a :Group.n.01 ;
+  :rol [
+    a :Commemorator.n.01 ;
+    :tgt t00003:p1, t00003:p2
+  ] .
 
 t00003:p1
   a :Female ;
@@ -55,13 +63,6 @@ t00003:p3
   :rol [
     a :Wife.n.01 ;
     :tgt t00003:p2
-  ] .
-
-t00003:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Commemorator.n.01 ;
-    :tgt t00003:p1, t00003:p2
   ] .
 
 t00003:r5

@@ -2,18 +2,11 @@
 
 tomb:t01138
   a :Tomb ;
-  :site site:gr9881PBkommerzijl ;
   :image [
+    dc:date "2021-04-05T10:25:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:t01138.jpg ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    dc:date "2021-04-05T10:25:36"^^xsd:dateTime ;
     :geo [
       a geo:Point ;
       geo:lat 53.2857 ;
@@ -21,7 +14,8 @@ tomb:t01138
     ] ;
     :nd "+53.2857+006.3247"^^ll:
   ] ;
-  :ent t01138:p1, t01138:p2, t01138:p3 ;
+  :person t01138:p1, t01138:p2, t01138:p3 ;
+  :site site:gr9881PBkommerzijl ;
   :sym [
     a :Composite.n.01 ;
     :prt t01138:s2, t01138:s4, [
@@ -55,3 +49,4 @@ t01138:s2
 
 t01138:s4
   a :OliveBranch .
+

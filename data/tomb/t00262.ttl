@@ -2,7 +2,6 @@
 
 tomb:t00262
   a :Tomb ;
-  :ent t00262:p1, t00262:p2 ;
   :image [
     dc:date "2019-10-13T14:19:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00262
     ] ;
     :nd "+53.1902+006.5932"^^ll:
   ] ;
+  :person t00262:p1, t00262:p2 ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Composite.n.01 ;
@@ -27,6 +27,11 @@ tomb:t00262
     a :Branch.n.02 ;
     :qua 2
   ] .
+
+t00262:c2
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00262:p1
   a :Male ;
@@ -57,9 +62,4 @@ t00262:p2
     :place place:Holwierde2753846
   ] ;
   :placeOfDeath t00262:c2 .
-
-t00262:c2
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

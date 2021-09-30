@@ -2,7 +2,6 @@
 
 tomb:t00113
   a :Tomb ;
-  :ent t00113:p1, t00113:p2 ;
   :image [
     dc:date "2019-09-20T17:59:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00113
     ] ;
     :nd "+53.1651+006.6150"^^ll:
   ] ;
+  :person t00113:p1, t00113:p2 ;
   :site site:gr9752CMharen ;
   :sym [
     a :Blazon.n.01
   ] .
+
+t00113:c2
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 
 t00113:p1
   a :Female ;
@@ -47,9 +52,4 @@ t00113:p2
     :place place:Zandeweer2744080
   ] ;
   :placeOfDeath t00113:c2 .
-
-t00113:c2
-  a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
 

@@ -2,7 +2,7 @@
 
 tomb:t00742
   a :Tomb ;
-  :ent t00742:p1, t00742:p2, t00742:p3, t00742:p4, t00742:g1, [
+  :ent t00742:g1, [
     a :Group.n.01 ;
     :mem t00742:p3, t00742:p4 ;
     :qua 2 ;
@@ -23,10 +23,15 @@ tomb:t00742
     ] ;
     :nd "+53.1806+006.9690"^^ll:
   ] ;
+  :person t00742:p1, t00742:p2, t00742:p3, t00742:p4 ;
   :site site:gr9679KHscheemda ;
   :sym [
     a :Entity.n.01
   ] .
+
+t00742:g1
+  a :Group.n.01 ;
+  :mem t00742:p1, t00742:p2 .
 
 t00742:p1
   a :Female ;
@@ -63,8 +68,4 @@ t00742:p4
   :dateOfBirth "1902-01-24"^^xsd:date ;
   :dateOfDeath "1908-12-21"^^xsd:date ;
   :nam "WESSELINA PIETERDINA" .
-
-t00742:g1
-  a :Group.n.01 ;
-  :mem t00742:p1, t00742:p2 .
 

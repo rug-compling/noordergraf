@@ -2,7 +2,6 @@
 
 tomb:t00386
   a :Tomb ;
-  :ent t00386:p1, t00386:p2, t00386:p3 ;
   :image [
     dc:date "2019-10-26T15:02:08"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00386
     ] ;
     :nd "+53.2517+006.1453"^^ll:
   ] ;
+  :person t00386:p1, t00386:p2, t00386:p3 ;
   :ref "PSALM 33:12.15" ;
   :site site:fr9285TCbuitenpost ;
   :sym [
@@ -36,11 +36,11 @@ t00386:p1
     :name "BUITENPOST" ;
     :place place:Buitenpost2758131
   ] ;
-  :rol [
+  :rol t00386:r2, [
     a :Spouse.n.01 ;
     :before t00386:r2 ;
     :tgt t00386:p2
-  ], t00386:r2 .
+  ] .
 
 t00386:p2
   a :Male ;

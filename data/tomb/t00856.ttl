@@ -2,7 +2,6 @@
 
 tomb:t00856
   a :Tomb ;
-  :ent t00856:p1 ;
   :image [
     dc:date "2020-02-15T15:37:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00856
     ] ;
     :nd "+52.7757+006.8027"^^ll:
   ] ;
+  :person t00856:p1 ;
   :quo "RUST ZACHT, GELIEFDE \\ ZUSTER EN TANTE."@nld ;
   :site site:dr7841CDsleen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00856:c1
+  a :Village.n.02 ;
+  :name "SLEEN" ;
+  :place place:Sleen2747182 .
 
 t00856:p1
   a :Female ;
@@ -33,9 +38,4 @@ t00856:p1
   ], [
     a :Aunt.n.01
   ] .
-
-t00856:c1
-  a :Village.n.02 ;
-  :name "SLEEN" ;
-  :place place:Sleen2747182 .
 

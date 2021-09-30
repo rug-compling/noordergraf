@@ -2,7 +2,7 @@
 
 tomb:t01004
   a :Tomb ;
-  :ent t01004:p1, t01004:p2, t01004:p3, t01004:g1 ;
+  :ent t01004:g1 ;
   :image [
     dc:date "2020-04-04T10:50:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +15,7 @@ tomb:t01004
     ] ;
     :nd "+53.1757+007.0949"^^ll:
   ] ;
+  :person t01004:p1, t01004:p2, t01004:p3 ;
   :quo "ZOEKT DEN HEER EN LEEFT"@nld ;
   :ref "AMOS 5:6"@nld ;
   :site site:gr9686RSbeerta ;
@@ -25,6 +26,10 @@ tomb:t01004
   ], [
     a :Butterfly.n.01
   ] .
+
+t01004:g1
+  a :Group.n.01 ;
+  :mem t01004:p2, t01004:p3 .
 
 t01004:p1
   a :Female ;
@@ -43,8 +48,4 @@ t01004:p2
 t01004:p3
   a :Person ;
   :nam "F. HEIKENS" .
-
-t01004:g1
-  a :Group.n.01 ;
-  :mem t01004:p2, t01004:p3 .
 

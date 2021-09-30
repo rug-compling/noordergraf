@@ -2,7 +2,6 @@
 
 tomb:t00555
   a :Tomb ;
-  :ent t00555:p1, t00555:p2 ;
   :image [
     dc:date "2019-11-24T13:57:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00555
     ] ;
     :nd "+53.1043+006.8748"^^ll:
   ] ;
+  :person t00555:p1, t00555:p2 ;
   :quo "RUST ZACHT \\ GELIEFDE MAN \\ EN VADER"@nld ;
   :site site:gr9641ANveendam ;
   :sym [
@@ -30,6 +30,11 @@ tomb:t00555
     ]
   ] .
 
+t00555:c1
+  a :Village.n.02 ;
+  :name "BORGERCOMPAGNIE" ;
+  :place place:Borgercompagnie2758618 .
+
 t00555:p1
   a :Male ;
   :dateOfBirth "1850-01-21"^^xsd:date ;
@@ -42,20 +47,15 @@ t00555:p1
   :placeOfBirth t00555:c1 ;
   :placeOfDeath t00555:c1 ;
   :rol [
+    a :Father.n.01
+  ], [
     a :Spouse.n.01 ;
     :tgt t00555:p2
   ], [
     a :Husband.n.01
-  ], [
-    a :Father.n.01
   ] .
 
 t00555:p2
   a :Female ;
   :nam "MARCHIENA F. SLIM" .
-
-t00555:c1
-  a :Village.n.02 ;
-  :name "BORGERCOMPAGNIE" ;
-  :place place:Borgercompagnie2758618 .
 

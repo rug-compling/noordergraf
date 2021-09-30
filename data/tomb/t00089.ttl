@@ -2,7 +2,6 @@
 
 tomb:t00089
   a :Tomb ;
-  :ent t00089:p1, t00089:p2 ;
   :image [
     dc:date "2019-09-24T15:16:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,13 @@ tomb:t00089
     ] ;
     :nd "+53.2071+006.5721"^^ll:
   ] ;
+  :person t00089:p1, t00089:p2 ;
   :site site:gr9725ACgroningen .
+
+t00089:c1
+  a :City.n.01 ;
+  :name "GRONINGEN" ;
+  :place place:Groningen2755251 .
 
 t00089:p1
   a :Female ;
@@ -32,9 +37,4 @@ t00089:p1
 t00089:p2
   a :Male ;
   :nam "H. GEERTSEMA" .
-
-t00089:c1
-  a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
 

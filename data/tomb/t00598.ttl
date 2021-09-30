@@ -2,7 +2,6 @@
 
 tomb:t00598
   a :Tomb ;
-  :ent t00598:p1, t00598:p2, t00598:p3 ;
   :image [
     dc:date "2019-11-30T14:13:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00598
     ] ;
     :nd "+53.3266+006.5117"^^ll:
   ] ;
+  :person t00598:p1, t00598:p2, t00598:p3 ;
   :ref "PSALM 37:5"@nld ;
   :site site:gr9951TNwinsum ;
   :sym [
@@ -53,16 +53,16 @@ t00598:p2
 t00598:p3
   a :Person ;
   :rol [
-    a :Child.n.02 ;
+    a :Grandchild.n.01 ;
     :tgt t00598:p1
   ], [
-    a :Child.n.02 ;
+    a :Grandchild.n.01 ;
     :tgt t00598:p2
   ], [
-    a :Grandchild.n.01 ;
+    a :Child.n.02 ;
     :tgt t00598:p1
   ], [
-    a :Grandchild.n.01 ;
+    a :Child.n.02 ;
     :tgt t00598:p2
   ] .
 

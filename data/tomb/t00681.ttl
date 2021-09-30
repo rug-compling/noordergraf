@@ -2,7 +2,7 @@
 
 tomb:t00681
   a :Tomb ;
-  :ent t00681:p1, t00681:p2, t00681:g1, t00681:p3 ;
+  :ent t00681:g1, t00681:p3 ;
   :image [
     dc:date "2019-12-14T13:26:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,8 +15,16 @@ tomb:t00681
     ] ;
     :nd "+53.0687+005.5222"^^ll:
   ] ;
+  :person t00681:p1, t00681:p2 ;
   :quo "RUST IN VREDE"@nld ;
   :site site:fr8701DWbolsward .
+
+t00681:g1
+  a :Group.n.01 ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00681:p1
+  ] .
 
 t00681:p1
   a :Female ;
@@ -37,13 +45,6 @@ t00681:p1
 t00681:p2
   a :Male ;
   :nam "P. RIJPMA" .
-
-t00681:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00681:p1
-  ] .
 
 t00681:p3
   a :Family.n.04 ;

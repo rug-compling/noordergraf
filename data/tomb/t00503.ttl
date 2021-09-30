@@ -2,7 +2,6 @@
 
 tomb:t00503
   a :Tomb ;
-  :ent t00503:p1, t00503:p2 ;
   :image [
     dc:date "2019-11-16T13:53:39"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,6 +14,7 @@ tomb:t00503
     ] ;
     :nd "+53.2091+005.7906"^^ll:
   ] ;
+  :person t00503:p1, t00503:p2 ;
   :ref t00503:v1 ;
   :site site:fr8917AVleeuwarden ;
   :sym [
@@ -45,6 +45,11 @@ t00503:p2
   a :Male ;
   :nam "A. BAKKER" .
 
+t00503:v1
+  a :Verse.n.01 ;
+  :ord 13 ;
+  :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
+
 []
   a :Revelation.n.04 ;
   :prt [
@@ -52,9 +57,4 @@ t00503:p2
     :ord 14 ;
     :prt t00503:v1
   ] .
-
-t00503:v1
-  a :Verse.n.01 ;
-  :ord 13 ;
-  :txt "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN." .
 

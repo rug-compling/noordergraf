@@ -2,7 +2,6 @@
 
 tomb:t00242
   a :Tomb ;
-  :ent t00242:p1, t00242:p2 ;
   :image [
     dc:date "2019-10-11T17:41:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +14,17 @@ tomb:t00242
     ] ;
     :nd "+53.1727+006.6068"^^ll:
   ] ;
+  :person t00242:p1, t00242:p2 ;
   :ref t00242:v1 ;
   :site site:gr9751BBharen ;
   :sym [
     a :Frond.n.01
   ] .
+
+t00242:c1
+  a :Town.n.01 ;
+  :name "HAREN" ;
+  :place place:Haren2754841 .
 
 t00242:p1
   a :Female ;
@@ -37,6 +42,10 @@ t00242:p2
   a :Male ;
   :nam "HENDRIK VAN DAM" .
 
+t00242:v1
+  a :Verse.n.01 ;
+  :ord 3 .
+
 []
   a :John.n.05 ;
   :prt [
@@ -44,13 +53,4 @@ t00242:p2
     :ord 17 ;
     :prt t00242:v1
   ] .
-
-t00242:c1
-  a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
-
-t00242:v1
-  a :Verse.n.01 ;
-  :ord 3 .
 

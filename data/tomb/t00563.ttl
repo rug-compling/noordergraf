@@ -2,7 +2,6 @@
 
 tomb:t00563
   a :Tomb ;
-  :ent t00563:p1, t00563:p2 ;
   :image [
     dc:date "2019-11-24T13:42:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,16 @@ tomb:t00563
     ] ;
     :nd "+53.1046+006.8744"^^ll:
   ] ;
+  :person t00563:p1, t00563:p2 ;
   :site site:gr9641ANveendam ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00563:c1
+  a :City.n.01 ;
+  :name "VEENDAM" ;
+  :place place:Veendam2745783 .
 
 t00563:p1
   a :Male ;
@@ -43,9 +48,4 @@ t00563:p2
     a :Spouse.n.01 ;
     :tgt t00563:p1
   ] .
-
-t00563:c1
-  a :City.n.01 ;
-  :name "VEENDAM" ;
-  :place place:Veendam2745783 .
 

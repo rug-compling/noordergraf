@@ -2,7 +2,7 @@
 
 tomb:t00676
   a :Tomb ;
-  :ent t00676:p1, t00676:p2, t00676:g1, [
+  :ent t00676:g1, [
     a :Group.n.01 ;
     :rol [
       a :Child.n.02 ;
@@ -27,9 +27,14 @@ tomb:t00676
     ] ;
     :nd "+53.0685+005.5219"^^ll:
   ] ;
+  :person t00676:p1, t00676:p2 ;
   :quo "IK WEET, \\ AAN WIE IK MIJ VERTROUWE"@nld ;
   :ref "LIED 390:3"@nld ;
   :site site:fr8701DWbolsward .
+
+t00676:g1
+  a :Group.n.01 ;
+  :mem t00676:p1, t00676:p2 .
 
 t00676:p1
   a :Male ;
@@ -42,8 +47,4 @@ t00676:p2
   :dateOfBirth "1921-11-27"^^xsd:date ;
   :dateOfDeath "1997-02-10"^^xsd:date ;
   :nam "GRIETJE BUWALDA-VAN DER ZWAAG" .
-
-t00676:g1
-  a :Group.n.01 ;
-  :mem t00676:p1, t00676:p2 .
 

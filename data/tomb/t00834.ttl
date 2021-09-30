@@ -2,7 +2,7 @@
 
 tomb:t00834
   a :Tomb ;
-  :ent t00834:p1, t00834:p2, t00834:p3, t00834:g1 ;
+  :ent t00834:g1 ;
   :image [
     dc:date "2020-02-15T15:40:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,11 +15,21 @@ tomb:t00834
     ] ;
     :nd "+52.7763+006.8047"^^ll:
   ] ;
+  :person t00834:p1, t00834:p2, t00834:p3 ;
   :quo "RUST ZACHT GELIEFDE ZOON EN BROEDER"@nld ;
   :site site:dr7841CDsleen ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00834:c1
+  a :Village.n.02 ;
+  :name "ERM" ;
+  :place place:Erm2756040 .
+
+t00834:g1
+  a :Group.n.01 ;
+  :mem t00834:p2, t00834:p3 .
 
 t00834:p1
   a :Male ;
@@ -42,13 +52,4 @@ t00834:p2
 t00834:p3
   a :Female ;
   :nam "F. EGBERTS" .
-
-t00834:c1
-  a :Village.n.02 ;
-  :name "ERM" ;
-  :place place:Erm2756040 .
-
-t00834:g1
-  a :Group.n.01 ;
-  :mem t00834:p2, t00834:p3 .
 

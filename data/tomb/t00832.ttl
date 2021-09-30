@@ -2,7 +2,7 @@
 
 tomb:t00832
   a :Tomb ;
-  :ent t00832:p1, t00832:p2, t00832:p3, t00832:g1 ;
+  :ent t00832:g1 ;
   :image [
     dc:date "2020-02-15T15:14:59"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +15,20 @@ tomb:t00832
     ] ;
     :nd "+52.7193+006.8450"^^ll:
   ] ;
+  :person t00832:p1, t00832:p2, t00832:p3 ;
   :site site:dr7844TCveenoord ;
   :sym [
     a :WeepingWillow
   ] .
+
+t00832:c1
+  a :Village.n.02 ;
+  :name "VEENOORD" ;
+  :place place:Veenoord2745753 .
+
+t00832:g1
+  a :Group.n.01 ;
+  :mem t00832:p2, t00832:p3 .
 
 t00832:p1
   a :Female ;
@@ -39,13 +49,4 @@ t00832:p2
 t00832:p3
   a :Female ;
   :nam "J.K. SCHOLTE" .
-
-t00832:c1
-  a :Village.n.02 ;
-  :name "VEENOORD" ;
-  :place place:Veenoord2745753 .
-
-t00832:g1
-  a :Group.n.01 ;
-  :mem t00832:p2, t00832:p3 .
 

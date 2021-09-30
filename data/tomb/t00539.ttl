@@ -2,7 +2,6 @@
 
 tomb:t00539
   a :Tomb ;
-  :ent t00539:p1, t00539:p2 ;
   :image [
     dc:date "2019-11-24T14:19:33"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,10 +14,17 @@ tomb:t00539
     ] ;
     :nd "+53.1042+006.8758"^^ll:
   ] ;
+  :person t00539:p1, t00539:p2 ;
   :site site:gr9641ANveendam ;
   :sym [
     a :Composite.n.01 ;
-    :prt [
+    :prt t00539:s7, [
+      a :InvertedTorch
+    ], [
+      a :InvertedTorch
+    ], [
+      a :Frond.n.01
+    ], [
       a :Frond.n.01
     ], [
       a :Frond.n.01
@@ -28,12 +34,6 @@ tomb:t00539
       a :Butterfly.n.01
     ], [
       a :Cocoon.n.01
-    ], [
-      a :InvertedTorch
-    ], [
-      a :InvertedTorch
-    ], t00539:s7, [
-      a :Frond.n.01
     ]
   ] .
 
@@ -44,13 +44,13 @@ t00539:p1
   :nam "JAN EPPES VAN DER WIJK" ;
   :occupation [
     a :Principal.n.02 ;
-    :text "gepensioneerd Hoofdonderwijzer" ;
     :hisco hisco:13320 ;
     :location [
       a :Colony.n.05 ;
       :name "NEDERLANDS-INDIË" ;
       :place place:Indonesie1643084
-    ]
+    ] ;
+    :text "gepensioneerd Hoofdonderwijzer"
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
