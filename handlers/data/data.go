@@ -44,6 +44,7 @@ const (
 	TURTLE
 	TRIPLE
 	RDF
+	PENMAN
 )
 
 var (
@@ -59,6 +60,7 @@ var (
 		TURTLE: ".ttl",
 		TRIPLE: ".nt",
 		RDF:    ".rdf",
+		PENMAN: ".penman",
 	}
 	reTokens = regexp.MustCompile(strings.Join([]string{
 		"[ \t\n\r\f]+",
@@ -71,6 +73,7 @@ var (
 	reComment = regexp.MustCompile("(?m:^[ \t]*#.*\n?)")
 	reND      = regexp.MustCompile(`:nd +&(#34|quot);([-+][.0-9]+)([-+][.0-9]+)&(#34|quot);\^\^ll:`)
 	reYear    = regexp.MustCompile(`"([0-9]{4})(-[0-9]{2}-[0-9]{2}"\^\^xsd:date|-[0-9]{2}"\^\^xsd:gYearMonth|"\^\^xsd:gYear)`)
+	reSUB     = regexp.MustCompile(`[^a-zA-Z0-9]+`)
 )
 
 func main() {
@@ -99,6 +102,9 @@ func main() {
 		case ".rdf":
 			format = RDF
 			uri = uri[:i]
+		case ".penman":
+			format = PENMAN
+			uri = uri[:i]
 		}
 	}
 	if format == NONE {
@@ -110,6 +116,7 @@ func main() {
 			"text/html",
 			"text/turtle",
 			"application/n-triples",
+			"text/x.penman",
 		}, "application/rdf+xml") {
 		case "text/html":
 			format = HTML
@@ -119,6 +126,8 @@ func main() {
 			format = TRIPLE
 		case "application/rdf+xml":
 			format = RDF
+		case "text/x.penman":
+			format = PENMAN
 		}
 	}
 
@@ -203,6 +212,9 @@ func main() {
 	case RDF:
 		fmt.Print("Content-type: application/rdf+xml; charset=UTF-8\nLast-Modified: " + lastModified.Format(time.RFC1123) + "\n\n")
 		fmt.Print(convert("rdfxml-abbrev"))
+	case PENMAN:
+		fmt.Print("Content-type: text/x.penman; charset=UTF-8\nLast-Modified: " + lastModified.Format(time.RFC1123) + "\n\n")
+		fmt.Print(penman(convert("ntriples")))
 	}
 }
 
@@ -344,9 +356,10 @@ Last-Modified: %s
     %s
     <link rel="icon" href="/favicon.ico" type="image/ico">
     <link rel="stylesheet" type="text/css" href="/data.css">
-    <link rel="alternate" href="https://noordergraf.rug.nl%s.ttl" type="text/turtle"/>
-    <link rel="alternate" href="https://noordergraf.rug.nl%s.nt"  type="application/n-triples"/>
-    <link rel="alternate" href="https://noordergraf.rug.nl%s.rdf" type="application/rdf+xml"/>
+    <link rel="alternate" href="https://noordergraf.rug.nl%s.ttl"    type="text/turtle"/>
+    <link rel="alternate" href="https://noordergraf.rug.nl%s.nt"     type="application/n-triples"/>
+    <link rel="alternate" href="https://noordergraf.rug.nl%s.rdf"    type="application/rdf+xml"/>
+    <link rel="alternate" href="https://noordergraf.rug.nl%s.penman" type="text/x.penman"/>
     <style type="text/css">
      #menu {
        position: fixed;
@@ -375,10 +388,11 @@ Last-Modified: %s
       download: <a href="https://noordergraf.rug.nl%s.nt">n-triples</a>
       &middot; <a href="https://noordergraf.rug.nl%s.rdf">rdf+xml</a>
       &middot; <a href="https://noordergraf.rug.nl%s.ttl">turtle</a>&nbsp;
+      &middot; <a href="https://noordergraf.rug.nl%s.penman">penman</a>&nbsp;
     </span></div>
     <div id="container">
       <h1>%s</h1>
-`, lastModified.Format(time.RFC1123), title, noindex, uri, uri, uri, class, uri, uri, uri, title)
+`, lastModified.Format(time.RFC1123), title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, title)
 
 	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 
@@ -465,4 +479,115 @@ func trimPrefix(prefix, data string) string {
 		}
 	}
 	return strings.Join(lines, "")
+}
+
+func penman(text string) string {
+
+	var buf bytes.Buffer
+
+	triples := make([][3]string, 0)
+	heads := make(map[string]int)
+
+	for _, line := range strings.SplitAfter(text, "\n") {
+		aa := strings.SplitN(line, " ", 3)
+		if len(aa) != 3 {
+			continue
+		}
+		i := strings.LastIndex(aa[2], ".")
+		aa[2] = strings.TrimSpace(aa[2][:i])
+		triples = append(triples, [3]string{aa[0], aa[1], aa[2]})
+		if _, ok := heads[aa[0]]; !ok {
+			heads[aa[0]] = 0
+		}
+	}
+
+	for _, tr := range triples {
+		if _, ok := heads[tr[2]]; ok {
+			heads[tr[2]] += 1
+		}
+	}
+
+	tops := make([]string, 0)
+	for key, value := range heads {
+		if value == 0 {
+			tops = append(tops, key)
+		}
+	}
+	sort.Strings(tops)
+
+	seen := make(map[string]bool)
+	var traverse func(string, int)
+	traverse = func(item string, indent int) {
+		fmt.Fprint(&buf, id(item), " / ")
+		for _, tr := range triples {
+			if tr[0] == item && tr[1] == "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>" {
+				fmt.Fprint(&buf, trim(tr[2])[1:])
+				break
+			}
+		}
+		for _, tr := range triples {
+			if tr[0] == item && tr[1] != "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>" {
+				fmt.Fprintf(&buf, "\n%*s    ", indent, "")
+				if heads[tr[2]] > 0 {
+					if !seen[tr[2]] {
+						seen[tr[2]] = true
+						fmt.Fprintf(&buf, "%s (", trim(tr[1]))
+						traverse(tr[2], indent+4)
+						fmt.Fprint(&buf, ")")
+					} else {
+						fmt.Fprintf(&buf, "%s %s", trim(tr[1]), id(tr[2]))
+					}
+				} else {
+					fmt.Fprintf(&buf, "%s %s", trim(tr[1]), arg(tr[2]))
+				}
+			}
+		}
+	}
+	for _, top := range tops {
+		fmt.Fprint(&buf, "(")
+		traverse(top, 0)
+		fmt.Fprintln(&buf, ")")
+	}
+	return buf.String()
+}
+
+func trim(s string) string {
+	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/ns#") {
+		return ":" + s[31:len(s)-1]
+	}
+	if s[0] == '<' {
+		s = s[1 : len(s)-1]
+	}
+	return ":" + reSUB.ReplaceAllLiteralString(s, ".")
+}
+
+func id(s string) string {
+	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/") {
+		s = s[28 : len(s)-1]
+		s = strings.Replace(s, "/", ".", -1)
+		s = strings.Replace(s, "#", ".", -1)
+		return s
+	}
+
+	if strings.HasPrefix(s, "_:") {
+		return s[2:]
+	}
+
+	return s
+}
+
+func arg(s string) string {
+	if i := strings.Index(s, `"^^`); i > 0 {
+		return s[:i+1]
+	}
+	if i := strings.Index(s, `"@`); i > 0 {
+		return s[:i+1]
+	}
+	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/ns#") {
+		return s[31 : len(s)-1]
+	}
+	if strings.HasPrefix(s, "<http") {
+		return `"` + s[1:len(s)-1] + `"`
+	}
+	return s
 }
