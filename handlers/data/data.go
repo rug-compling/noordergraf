@@ -73,7 +73,7 @@ var (
 	reComment = regexp.MustCompile("(?m:^[ \t]*#.*\n?)")
 	reND      = regexp.MustCompile(`:nd +&(#34|quot);([-+][.0-9]+)([-+][.0-9]+)&(#34|quot);\^\^ll:`)
 	reYear    = regexp.MustCompile(`"([0-9]{4})(-[0-9]{2}-[0-9]{2}"\^\^xsd:date|-[0-9]{2}"\^\^xsd:gYearMonth|"\^\^xsd:gYear)`)
-	reSUB     = regexp.MustCompile(`[^a-zA-Z0-9]+`)
+	reSUB     = regexp.MustCompile(`[()/:~%]`)
 )
 
 func main() {
@@ -517,36 +517,44 @@ func penman(text string) string {
 
 	seen := make(map[string]bool)
 	var traverse func(string, int)
+	var prefix string
 	traverse = func(item string, indent int) {
-		fmt.Fprint(&buf, id(item), " / ")
-		for _, tr := range triples {
+		fmt.Fprint(&buf, id(item, prefix))
+		skip := -1
+		for i, tr := range triples {
 			if tr[0] == item && tr[1] == "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>" {
-				fmt.Fprint(&buf, trim(tr[2])[1:])
+				fmt.Fprint(&buf, " / ", trim(tr[2])[1:])
+				skip = i
 				break
 			}
 		}
-		for _, tr := range triples {
-			if tr[0] == item && tr[1] != "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>" {
-				fmt.Fprintf(&buf, "\n%*s    ", indent, "")
-				if heads[tr[2]] > 0 {
-					if !seen[tr[2]] {
-						seen[tr[2]] = true
-						fmt.Fprintf(&buf, "%s (", trim(tr[1]))
-						traverse(tr[2], indent+4)
-						fmt.Fprint(&buf, ")")
-					} else {
-						fmt.Fprintf(&buf, "%s %s", trim(tr[1]), id(tr[2]))
-					}
+		if skip < 0 {
+			fmt.Fprint(&buf, " / UNKNOWN")
+		}
+		for i, tr := range triples {
+			if i == skip || tr[0] != item {
+				continue
+			}
+			fmt.Fprintf(&buf, "\n%*s    ", indent, "")
+			if heads[tr[2]] > 0 {
+				if !seen[tr[2]] {
+					seen[tr[2]] = true
+					fmt.Fprintf(&buf, "%s (", trim(tr[1]))
+					traverse(tr[2], indent+4)
+					fmt.Fprint(&buf, ")")
 				} else {
-					fmt.Fprintf(&buf, "%s %s", trim(tr[1]), arg(tr[2]))
+					fmt.Fprintf(&buf, "%s %s", trim(tr[1]), id(tr[2], prefix))
 				}
+			} else {
+				fmt.Fprintf(&buf, "%s %s", trim(tr[1]), arg(tr[2]))
 			}
 		}
 	}
 	for _, top := range tops {
+		prefix = id(top, "")
 		fmt.Fprint(&buf, "(")
 		traverse(top, 0)
-		fmt.Fprintln(&buf, ")")
+		fmt.Fprint(&buf, ")\n\n")
 	}
 	return buf.String()
 }
@@ -558,22 +566,39 @@ func trim(s string) string {
 	if s[0] == '<' {
 		s = s[1 : len(s)-1]
 	}
-	return ":" + reSUB.ReplaceAllLiteralString(s, ".")
+	if strings.HasPrefix(s, "http://") {
+		s = s[7:]
+	} else if strings.HasPrefix(s, "https://") {
+		s = s[8:]
+	}
+	return ":" + reSUB.ReplaceAllStringFunc(s, func(s string) string {
+		return fmt.Sprintf("%%%02X", s[0])
+	})
 }
 
-func id(s string) string {
+func id(s, prefix string) string {
 	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/") {
 		s = s[28 : len(s)-1]
 		s = strings.Replace(s, "/", ".", -1)
 		s = strings.Replace(s, "#", ".", -1)
-		return s
+		return strings.TrimRight(s, ".")
 	}
 
 	if strings.HasPrefix(s, "_:") {
-		return s[2:]
+		return prefix + "." + s[2:]
 	}
 
-	return s
+	if s[0] == '<' {
+		s = s[1 : len(s)-1]
+	}
+	if strings.HasPrefix(s, "http://") {
+		s = s[7:]
+	} else if strings.HasPrefix(s, "https://") {
+		s = s[8:]
+	}
+	return reSUB.ReplaceAllStringFunc(s, func(s string) string {
+		return fmt.Sprintf("%%%02X", s[0])
+	})
 }
 
 func arg(s string) string {
