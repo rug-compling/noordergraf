@@ -49,22 +49,15 @@ t00156:p3
   :nam "DIRKJE NIEUWHOF" .
 
 t00156:v1
-  a :Verse.n.01 ;
-  :ord 7 .
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :chapter 4 ;
+    :part :Second_Epistle_to_Timothy.n.01 ;
+    :verse "7"
+  ] .
 
 t00156:v2
   a :Part.n.09 ;
   :nam "A" .
-
-[]
-  a :Second_Epistle_to_Timothy.n.01 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 4 ;
-    :prt t00156:v1, [
-      a :Verse.n.01 ;
-      :ord 8 ;
-      :prt t00156:v2
-    ]
-  ] .
 

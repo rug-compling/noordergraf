@@ -65,14 +65,11 @@ t00819:r3
   :tgt t00819:p2 .
 
 t00819:v1
-  a :Verse.n.01 ;
-  :ord 13 .
-
-[]
-  a :Revelation.n.04 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 14 ;
-    :prt t00819:v1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :chapter 14 ;
+    :part :Revelation.n.04 ;
+    :verse "13"
   ] .
 

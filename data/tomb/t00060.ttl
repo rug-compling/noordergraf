@@ -44,14 +44,11 @@ t00060:p3
   :nam "C.J. DEN HEETEN" .
 
 t00060:v1
-  a :Verse.n.01 ;
-  :ord 3 .
-
-[]
-  a :John.n.05 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 16 ;
-    :prt t00060:v1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :chapter 16 ;
+    :part :John.n.05 ;
+    :verse "3"
   ] .
 

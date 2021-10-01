@@ -41,14 +41,11 @@ t00295:p2
   :ref t00295:v1 .
 
 t00295:v1
-  a :Verse.n.01 ;
-  :ord 27 .
-
-[]
-  a :Epistle_to_the_Romans.n.04 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 16 ;
-    :prt t00295:v1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :chapter 16 ;
+    :part :Epistle_to_the_Romans.n.04 ;
+    :verse "27"
   ] .
 
