@@ -29,10 +29,7 @@ t01019:p1
   :nam "GEERT JAN DRENT" ;
   :placeOfBirth t01019:c1 ;
   :placeOfDeath t01019:c1 ;
-  :ref [
-    a :Group.n.01 ;
-    :mem t01019:v1, t01019:v2
-  ] ;
+  :ref t01019:v1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01019:p2
@@ -45,10 +42,7 @@ t01019:p2
   :nam "JOHANNA KLOOSTER" ;
   :placeOfBirth t01019:c1 ;
   :placeOfDeath t01019:c1 ;
-  :ref [
-    a :Group.n.01 ;
-    :mem t01019:v3, t01019:v4
-  ] ;
+  :ref t01019:v2 ;
   :rol [
     a :Widow.n.01 ;
     :tgt t01019:p1
@@ -58,20 +52,16 @@ t01019:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :chapter 8 ;
     :part :Epistle_to_the_Romans.n.04 ;
-    :verse "38"
+    :chapter 8 ;
+    :verse "38-39"
   ] .
 
 t01019:v2
-  a :Verse.n.01 ;
-  :ord 39 .
-
-t01019:v3
-  a :Verse.n.01 ;
-  :ord 1 .
-
-t01019:v4
-  a :Verse.n.01 ;
-  :ord 2 .
-
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :Epistle_to_the_Romans.n.04 ;
+    :chapter 5 ;
+    :verse "1,2"
+  ] .
