@@ -47,18 +47,11 @@ t00799:p2
   :nam "P.H. WIERENGA" .
 
 t00799:v1
-  a :Part.n.09 ;
-  :nam "B" .
-
-[]
-  a :Revelation.n.04 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 2 ;
-    :prt [
-      a :Verse.n.01 ;
-      :ord 10 ;
-      :prt t00799:v1
-    ]
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :Revelation.n.04 ;
+    :chapter 2 ;
+    :verse "10B"
   ] .
-
+  

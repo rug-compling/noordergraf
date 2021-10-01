@@ -22,10 +22,6 @@ tomb:t01105
     a :Frond.n.01
   ] .
 
-t01105:c3
-  a :Chapter.n.01 ;
-  :ord 40 .
-
 t01105:g1
   a :Group.n.01 ;
   :mem t01105:p2, t01105:p3, t01105:p4 .
@@ -65,7 +61,11 @@ t01105:p4
   a :Female ;
   :nam "PIETJE" .
 
-[]
-  a :Isaiah.n.01 ;
-  :prt t01105:c3 .
+t01105:c3
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :Isaiah.n.01 ;
+    :chapter 40
+  ] .
 

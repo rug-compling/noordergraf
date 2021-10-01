@@ -22,18 +22,10 @@ tomb:t00169
   :site site:gr9722SNgroningen .
 
 t00169:v1
-  a :Part.n.09 ;
-  :nam "A" .
-
-[]
-  a :John.n.05 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 2 ;
-    :prt [
-      a :Verse.n.01 ;
-      :ord 2 ;
-      :prt t00169:v1
-    ]
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :John.n.05 ;
+    :chapter 2 ;
+    :verse "2A"
   ] .
-

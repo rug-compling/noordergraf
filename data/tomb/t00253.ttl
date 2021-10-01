@@ -22,7 +22,13 @@ t00253:p1
   :dateOfBirth "1903-04-15"^^xsd:date ;
   :dateOfDeath "1921-03-03"^^xsd:date ;
   :nam "ANGENIETJE KEIZER" ;
-  :ref "1 THESSALONICENZEN 4:14" ;
+  :ref [
+    a :Quote ;
+    :text "1 THESSALONICENZEN 4:14" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Sister.n.01
   ] .
@@ -32,7 +38,13 @@ t00253:p2
   :dateOfBirth "1878-11-29"^^xsd:date ;
   :dateOfDeath "1940-09-19"^^xsd:date ;
   :nam "GRIETJE VAN DER ZWEEP" ;
-  :ref "PSALM 23:1" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 23:1" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Parent.n.01
   ] .
@@ -42,7 +54,13 @@ t00253:p3
   :dateOfBirth "1876-07-15"^^xsd:date ;
   :dateOfDeath "1956-04-06"^^xsd:date ;
   :nam "HENDRIK KEIZER" ;
-  :ref "PSALM 116" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 116" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Parent.n.01
   ] .
@@ -68,26 +86,20 @@ t00253:p5
   ] .
 
 t00253:v1
-  a :Verse.n.01 ;
-  :ord 8 .
-
-t00253:v2
-  a :Verse.n.01 ;
-  :ord 2 .
-
-[]
-  a :Epistle_to_the_Romans.n.04 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 14 ;
-    :prt t00253:v1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :Epistle_to_the_Romans.n.04 ;
+    :chapter 14 ;
+    :verse "8"
   ] .
 
-[]
-  a :John.n.05 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 14 ;
-    :prt t00253:v2
+t00253:v2
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :John.n.05 ;
+    :chapter 14 ;
+    :verse "2"
   ] .
 

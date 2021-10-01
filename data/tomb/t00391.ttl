@@ -40,26 +40,20 @@ t00391:p2
   ] .
 
 t00391:v1
-  a :Verse.n.01 ;
-  :ord 30 .
-
-t00391:v2
-  a :Verse.n.01 ;
-  :ord 19 .
-
-[]
-  a :Luke.n.02 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 2 ;
-    :prt t00391:v1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :Luke.n.02 ;
+    :chapter 2 ;
+    :verse "30"
   ] .
 
-[]
-  a :First_Epistle_to_the_Corinthians.n.01 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 2 ;
-    :prt t00391:v2
+t00391:v2
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :First_Epistle_to_the_Corinthians.n.01 ;
+    :chapter 2 ;
+    :verse "19"
   ] .
 

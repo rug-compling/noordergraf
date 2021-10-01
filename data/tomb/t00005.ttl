@@ -63,34 +63,29 @@ t00005:p5
   :ref t00005:v3 .
 
 t00005:v1
-  a :Verse.n.01 ;
-  :ord 5 .
-
-t00005:v2
-  a :Verse.n.01 ;
-  :ord 18 .
-
-t00005:v3
-  a :Verse.n.01 ;
-  :ord 7 .
-
-[]
-  a :Psalm.n.01 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 105 ;
-    :prt t00005:v1
-  ], [
-    a :Chapter.n.01 ;
-    :ord 145 ;
-    :prt t00005:v2
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :Psalm.n.01 ;
+    :chapter 105 ;
+    :verse "5"
   ] .
 
-[]
-  a :John.n.05 ;
-  :prt [
-    a :Chapter.n.01 ;
-    :ord 1 ;
-    :prt t00005:v3
+t00005:v2
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :Psalm.n.01 ;
+    :chapter 145 ;
+    :verse "18"
+  ] .
+
+t00005:v3
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :part :John.n.05 ;
+    :chapter 1 ;
+    :verse "7"
   ] .
 
