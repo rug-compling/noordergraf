@@ -15,7 +15,13 @@ tomb:t00240
     :nd "+53.1725+006.6065"^^ll:
   ] ;
   :person t00240:p1, t00240:p2, t00240:p3 ;
-  :ref "PSALM 68:10-B" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 68:10-B" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9751BBharen ;
   :sym [
     a :WeepingWillow

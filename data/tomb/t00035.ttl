@@ -15,7 +15,13 @@ tomb:t00035
     :nd "+53.1627+006.6122"^^ll:
   ] ;
   :person t00035:p1, t00035:p2 ;
-  :ref "PSALM 3:6" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 3:6" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9752CMharen .
 
 t00035:c1

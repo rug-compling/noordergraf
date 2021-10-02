@@ -15,7 +15,13 @@ tomb:t00977
     :nd "+53.1299+006.6240"^^ll:
   ] ;
   :person t00977:p1, t00977:p2, t00977:p3, t00977:p4 ;
-  :ref "GEZANG 22"@nld .
+  :ref [
+    a :Quote ;
+    :text "GEZANG 22"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] .
 
 t00977:c1
   a :Village.n.02 ;

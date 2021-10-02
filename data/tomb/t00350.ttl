@@ -15,7 +15,13 @@ tomb:t00350
     :nd "+53.0800+006.5721"^^ll:
   ] ;
   :person t00350:p1, t00350:p2 ;
-  :ref "PSALM 23:1 BERIJMD" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 23:1 BERIJMD" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr9481CGvries .
 
 t00350:p1

@@ -15,7 +15,13 @@ tomb:t00598
     :nd "+53.3266+006.5117"^^ll:
   ] ;
   :person t00598:p1, t00598:p2, t00598:p3 ;
-  :ref "PSALM 37:5"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 37:5"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9951TNwinsum ;
   :sym [
     a :Treble_clef.n.01

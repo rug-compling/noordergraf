@@ -17,7 +17,13 @@ tomb:t01069
   ] ;
   :person t01069:p1, t01069:p2 ;
   :quo "DE HEER IS MIJN HERDER, MIJ ONTBREEKT NIETS"@nld ;
-  :ref "PSALM 125 ONBERIJMD"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 125 ONBERIJMD"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9367PAde_wilp ;
   :sym [
     a :Oak.n.01

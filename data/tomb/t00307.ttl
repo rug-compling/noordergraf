@@ -15,7 +15,13 @@ tomb:t00307
     :nd "+52.7157+006.4737"^^ll:
   ] ;
   :person t00307:p1 ;
-  :ref "PSALM 103:8" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 103:8" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow

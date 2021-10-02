@@ -23,7 +23,13 @@ tomb:t01031
   ] ;
   :person t01031:p1, t01031:p2 ;
   :quo "RUST IN VREDE"@nld ;
-  :ref "PSALM 42"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 42"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9804TEnoordhorn .
 
 t01031:c1

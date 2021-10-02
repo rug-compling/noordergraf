@@ -16,7 +16,13 @@ tomb:t00901
   ] ;
   :person t00901:p1, t00901:p2, t00901:p3 ;
   :quo "ZIJ ZIJN GELUKKIG; HUN \\ HEENGAAN WAS VREDE"@nld ;
-  :ref "JOHANNES 11:25-26"@nld ;
+  :ref [
+    a :Quote ;
+    :text "JOHANNES 11:25-26"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9351RLtolbert ;
   :sym [
     a :Frond.n.01

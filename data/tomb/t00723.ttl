@@ -15,7 +15,13 @@ tomb:t00723
     :nd "+52.7825+006.8990"^^ll:
   ] ;
   :person t00723:p1 ;
-  :ref "PSALM 91"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 91"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7811HEemmen ;
   :sym [
     a :WeepingWillow

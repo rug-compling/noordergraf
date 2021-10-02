@@ -15,7 +15,13 @@ tomb:t00110
     :nd "+53.1634+006.6156"^^ll:
   ] ;
   :person t00110:p1, t00110:p4 ;
-  :ref "PSALM 142 O.B." ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 142 O.B." ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9752CMharen ;
   :sym [
     a :Frond.n.01

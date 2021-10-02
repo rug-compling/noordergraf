@@ -25,7 +25,13 @@ tomb:t01049
     :nd "+53.1228+006.2507"^^ll:
   ] ;
   :person t01049:p1, t01049:p2, t01049:p3 ;
-  :ref "PSALM 103:8"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 103:8"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9367PAde_wilp ;
   :sym [
     a :Frond.n.01

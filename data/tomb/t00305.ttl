@@ -15,7 +15,13 @@ tomb:t00305
     :nd "+52.7158+006.4748"^^ll:
   ] ;
   :person t00305:p1, t00305:p2 ;
-  :ref "PSALM 89:7" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 89:7" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :Composite.n.01 ;

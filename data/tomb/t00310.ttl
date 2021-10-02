@@ -15,7 +15,13 @@ tomb:t00310
     :nd "+52.7156+006.4735"^^ll:
   ] ;
   :person t00310:p1, t00310:p2, t00310:p3 ;
-  :ref "GEZANG 178:1", "GEZANG 178:3" ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 178:1", "GEZANG 178:3" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow

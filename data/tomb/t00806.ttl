@@ -16,7 +16,13 @@ tomb:t00806
   ] ;
   :person t00806:p1 ;
   :quo "WEES MIJ GENADIG HERE WANT \\ TOT U ROEP IK DE GANSE DAG"@nld ;
-  :ref "PSALM 86"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 86"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9791KEten_boer .
 
 t00806:p1

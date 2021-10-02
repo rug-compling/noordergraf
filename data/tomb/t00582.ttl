@@ -15,7 +15,13 @@ tomb:t00582
     :nd "+53.3354+006.5128"^^ll:
   ] ;
   :person t00582:p1, t00582:p2, t00582:p3 ;
-  :ref "PSALM 118:17-20" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 118:17-20" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9951STwinsum .
 
 t00582:p1

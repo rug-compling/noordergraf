@@ -17,7 +17,13 @@ tomb:t01004
   ] ;
   :person t01004:p1, t01004:p2, t01004:p3 ;
   :quo "ZOEKT DEN HEER EN LEEFT"@nld ;
-  :ref "AMOS 5:6"@nld ;
+  :ref [
+    a :Quote ;
+    :text "AMOS 5:6"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9686RSbeerta ;
   :sym [
     a :WeepingWillow

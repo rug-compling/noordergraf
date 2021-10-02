@@ -16,7 +16,13 @@ tomb:t00902
   ] ;
   :person t00902:p1, t00902:p2 ;
   :quo "IN MEMORIAN"@nld, "REQUIEM AETERNAM \\ DONE EIS \\ DOMINE"@nld ;
-  :ref "PREDIKER `12:7"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PREDIKER `12:7"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9351RLtolbert ;
   :sym [
     a :Cross.n.03

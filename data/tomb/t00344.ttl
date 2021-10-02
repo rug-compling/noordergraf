@@ -15,7 +15,13 @@ tomb:t00344
     :nd "+52.7157+006.4720"^^ll:
   ] ;
   :person t00344:p1, t00344:p2 ;
-  :ref "PSALM 27" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 27" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :Chrismon.n.01

@@ -57,7 +57,13 @@ t00327:p4
   :nam "AALTJE FAAS" ;
   :placeOfBirth t00327:c1 ;
   :placeOfDeath t00327:c1 ;
-  :ref "PSALM 10:14 ONBERIJMD" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 10:14 ONBERIJMD" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt [

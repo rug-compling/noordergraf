@@ -15,7 +15,13 @@ tomb:t00435
     :nd "+53.4789+006.1605"^^ll:
   ] ;
   :person t00435:p1, t00435:p2 ;
-  :ref "GEZANG 199" ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 199" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:fr9166NAschiermonnikoog ;
   :sym [
     a :Frond.n.01

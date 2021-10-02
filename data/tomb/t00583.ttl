@@ -15,7 +15,13 @@ tomb:t00583
     :nd "+53.3353+006.5128"^^ll:
   ] ;
   :person t00583:p1, t00583:p2, t00583:p3 ;
-  :ref "PSALM 73:12" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 73:12" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9951STwinsum ;
   :sym [
     a :WeepingWillow

@@ -15,7 +15,13 @@ tomb:t00198
     :nd "+53.1904+006.5946"^^ll:
   ] ;
   :person t00198:p1, t00198:p2 ;
-  :ref "PSALM 23" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 23" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9722SNgroningen ;
   :sym [
     a :Frond.n.01

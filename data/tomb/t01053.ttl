@@ -9,7 +9,13 @@ tomb:t01053
     :file img:t01053.jpg
   ] ;
   :person t01053:p1, t01053:p2, t01053:p3 ;
-  :ref "PSALM 103:8-9"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 103:8-9"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :sym [
     a :WeepingWillow
   ] .

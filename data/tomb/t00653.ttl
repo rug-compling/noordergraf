@@ -16,7 +16,13 @@ tomb:t00653
   ] ;
   :person t00653:p1, t00653:p2, t00653:p3 ;
   :quo "MAAR DE RECHTVAARDIGE \\ BETROUWT ZELFS IN \\ ZIJNEN DOOD."@nld ;
-  :ref "SPREUKEN 14:32"@nld ;
+  :ref [
+    a :Quote ;
+    :text "SPREUKEN 14:32"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :Rose.n.01

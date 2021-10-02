@@ -22,7 +22,13 @@ tomb:t00673
     :nd "+53.0681+005.5220"^^ll:
   ] ;
   :person t00673:p1, t00673:p2 ;
-  :ref "PREDIKER 12:1:8"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PREDIKER 12:1:8"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:fr8701DWbolsward ;
   :sym [
     a :Frond.n.01

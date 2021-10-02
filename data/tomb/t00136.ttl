@@ -27,7 +27,13 @@ t00136:p1
   :dateOfBirth "1874-11-08"^^xsd:date ;
   :dateOfDeath "1942-05-14"^^xsd:date ;
   :nam "SIMON SIESLING" ;
-  :ref "GEZANG 223:1" ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 223:1" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00136:p2

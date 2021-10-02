@@ -16,7 +16,13 @@ tomb:t00848
   ] ;
   :person t00848:p1, t00848:p2 ;
   :quo "DAT ZIJ RUSTEN MOGEN IN DEN \\ HEERE DEN HEILAND"@nld ;
-  :ref "GEZANG 263:4"@nld ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 263:4"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:fr8899AWoost_vlieland ;
   :sym [
     a :WeepingWillow

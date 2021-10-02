@@ -16,7 +16,13 @@ tomb:t00837
   ] ;
   :person t00837:p1, t00837:p2 ;
   :quo "'K HEB MIJN TRANEN \\ ONDER'T KLAGEN, ENZ"@nld ;
-  :ref "PSALM 42:2"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 42:2"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7841CDsleen ;
   :sym [
     a :WeepingWillow

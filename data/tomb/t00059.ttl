@@ -15,7 +15,13 @@ tomb:t00059
     :nd "+53.1634+006.6138"^^ll:
   ] ;
   :person t00059:p1, t00059:p2 ;
-  :ref "PSALM 121:1 O.B." ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 121:1 O.B." ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9752CMharen .
 
 t00059:p1

@@ -16,7 +16,13 @@ tomb:t01130
   ] ;
   :person t01130:p1, t01130:p2, t01130:p3 ;
   :quo "RUST ZACHT LIEVE LIENA"@nld ;
-  :ref "PSALM 103:8"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 103:8"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9978TEhornhuizen ;
   :sym [
     a :Butterfly.n.01

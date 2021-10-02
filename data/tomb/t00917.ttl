@@ -16,7 +16,13 @@ tomb:t00917
   ] ;
   :person t00917:p1, t00917:p2 ;
   :quo "JEZUS UW VERZOENEND STERVEN"@nld ;
-  :ref "GEZANG 14"@nld ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 14"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9351RLtolbert .
 
 t00917:p1

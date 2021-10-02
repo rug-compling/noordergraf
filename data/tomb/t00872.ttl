@@ -15,7 +15,13 @@ tomb:t00872
     :nd "+52.7193+006.8452"^^ll:
   ] ;
   :person t00872:p1, t00872:p2 ;
-  :ref "PSALM 90:6"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 90:6"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7844TCveenoord ;
   :sym [
     a :WeepingWillow

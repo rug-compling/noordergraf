@@ -16,7 +16,13 @@ tomb:t01107
     :nd "+53.2627+006.3140"^^ll:
   ] ;
   :person t01107:p1 ;
-  :ref "GEZANG 44:4"@nld ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 44:4"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9843AGgrijpskerk ;
   :sym [
     a :Frond.n.01

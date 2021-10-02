@@ -15,7 +15,13 @@ tomb:t00711
     :nd "+52.7809+006.9004"^^ll:
   ] ;
   :person t00711:p1, t00711:p2 ;
-  :ref "FILLIPPENZEN 1:21"@nld ;
+  :ref [
+    a :Quote ;
+    :text "FILLIPPENZEN 1:21"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7811HEemmen ;
   :sym [
     a :WeepingWillow

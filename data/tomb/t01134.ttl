@@ -21,7 +21,13 @@ tomb:t01134
   ] ;
   :person t01134:p1, t01134:p2 ;
   :quo "IN JEZUS ONTSLAPEN"@nld ;
-  :ref "PSALM 23"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 23"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9752CMharen .
 
 t01134:p1

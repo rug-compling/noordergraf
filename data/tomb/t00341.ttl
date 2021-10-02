@@ -15,7 +15,13 @@ tomb:t00341
     :nd "+52.7157+006.4731"^^ll:
   ] ;
   :person t00341:p1, t00341:p2, t00341:p3, t00341:p4 ;
-  :ref "PSALM 103:8" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 103:8" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :Frond.n.01

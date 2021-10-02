@@ -15,7 +15,13 @@ tomb:t00516
     :nd "+53.1653+006.7547"^^ll:
   ] ;
   :person t00516:p1, t00516:p2 ;
-  :ref "PSALM 23"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 23"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :Rose.n.01

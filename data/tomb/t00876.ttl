@@ -16,7 +16,13 @@ tomb:t00876
   ] ;
   :person t00876:p1, t00876:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :ref "HEBREEËN 4:9"@nld ;
+  :ref [
+    a :Quote ;
+    :text "HEBREEËN 4:9"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7844TCveenoord ;
   :sym [
     a :WeepingWillow

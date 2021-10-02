@@ -47,7 +47,13 @@ t00561:p2
   :nam "AALTJE LOOTS" ;
   :placeOfBirth t00561:c1 ;
   :placeOfDeath t00561:c1 ;
-  :ref "PSALM 103:15-22" .
+  :ref [
+    a :Quote ;
+    :text "PSALM 103:15-22" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] .
 
 t00561:p3
   a :Female ;

@@ -15,7 +15,13 @@ tomb:t00395
     :nd "+53.2517+006.1451"^^ll:
   ] ;
   :person t00395:p1, t00395:p2 ;
-  :ref "GEZANG 178:7", "PSALM 43:3" ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 178:7", "PSALM 43:3" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:fr9285TCbuitenpost .
 
 t00395:c2

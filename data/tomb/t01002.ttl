@@ -15,7 +15,13 @@ tomb:t01002
     :nd "+53.2443+006.6279"^^ll:
   ] ;
   :person t01002:p1, t01002:p2 ;
-  :ref "PSALM 145:6 BERIJMDT"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 145:6 BERIJMDT"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9734ATgroningen ;
   :sym [
     a :WeepingWillow

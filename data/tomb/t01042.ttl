@@ -29,7 +29,13 @@ t01042:p1
   :dateOfBirth "1879-12-01"^^xsd:date ;
   :dateOfDeath "1953-11-16"^^xsd:date ;
   :nam "GEESKE HELMANTEL" ;
-  :ref "PSALM 23" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 23" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01042:p2
@@ -40,7 +46,13 @@ t01042:p2
   :dateOfBirth "1879-05-25"^^xsd:date ;
   :dateOfDeath "1956-01-03"^^xsd:date ;
   :nam "EDZO VAN DER VEEN" ;
-  :ref "GEZANG 29" ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 29" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Widower.n.01 ;
     :tgt t01042:p1

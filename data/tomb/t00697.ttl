@@ -16,7 +16,13 @@ tomb:t00697
   ] ;
   :person t00697:p1, t00697:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :ref "PSALM 4:9"@nld ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 4:9"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7811HEemmen ;
   :sym [
     a :WeepingWillow

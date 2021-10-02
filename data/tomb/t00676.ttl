@@ -29,7 +29,13 @@ tomb:t00676
   ] ;
   :person t00676:p1, t00676:p2 ;
   :quo "IK WEET, \\ AAN WIE IK MIJ VERTROUWE"@nld ;
-  :ref "LIED 390:3"@nld ;
+  :ref [
+    a :Quote ;
+    :text "LIED 390:3"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:fr8701DWbolsward .
 
 t00676:g1

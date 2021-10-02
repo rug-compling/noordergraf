@@ -16,7 +16,13 @@ tomb:t00833
   ] ;
   :person t00833:p1, t00833:p2 ;
   :quo "RUST ZACHT, LIEVE VADER"@nld ;
-  :ref "GEZANG 201:1"@nld ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 201:1"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7841CDsleen ;
   :sym [
     a :WeepingWillow

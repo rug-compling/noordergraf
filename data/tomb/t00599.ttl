@@ -15,7 +15,13 @@ tomb:t00599
     :nd "+53.3274+006.5114"^^ll:
   ] ;
   :person t00599:p1, t00599:p2 ;
-  :ref "GEZANG 27:2"@nld ;
+  :ref [
+    a :Quote ;
+    :text "GEZANG 27:2"@nld ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:gr9951TNwinsum .
 
 t00599:p1

@@ -25,7 +25,13 @@ t00322:p1
   :dateOfBirth "1864-04-21"^^xsd:date ;
   :dateOfDeath "1932-04-20"^^xsd:date ;
   :nam "AALTJE ZOMER" ;
-  :ref "PSALM 23:1" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 23:1" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00322:p2
@@ -41,7 +47,13 @@ t00322:p2
   :dateOfBirth "1861-10-31"^^xsd:date ;
   :dateOfDeath "1936-08-19"^^xsd:date ;
   :nam "GERRIT SCHOLTEN" ;
-  :ref "PSALM 84:12C" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 84:12C" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :rol [
     a :Father.n.01
   ] .

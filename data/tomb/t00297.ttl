@@ -17,7 +17,13 @@ tomb:t00297
   ] ;
   :person t00297:p1, t00297:p2, t00297:p3 ;
   :quo "DE LEVENSDRAAD QWORDT SCHIELIJK AFGESNEEN" ;
-  :ref "PSALM 90" ;
+  :ref [
+    a :Quote ;
+    :text "PSALM 90" ;
+    :reference [
+      a :BibleReference
+    ]
+  ] ;
   :site site:dr7907CHhoogeveen ;
   :sym [
     a :WeepingWillow
