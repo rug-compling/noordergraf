@@ -29,21 +29,17 @@ t00917:p1
   a :Female ;
   :dateOfBirth "1879-11-16"^^xsd:date ;
   :dateOfDeath "1938-02-11"^^xsd:date ;
-  :nam "BERENTJE AARDEMA" .
+  :nam "BERENTJE AARDEMA" ;
+  :rol [
+    a :Parent.n.01
+  ] .
 
 t00917:p2
   a :Male ;
   :dateOfBirth "1880-06-09"^^xsd:date ;
   :dateOfDeath "1970-09-12"^^xsd:date ;
-  :nam "JAN SCHERINGA" .
-
-[]
-  a :Group.n.01 ;
-  :mem t00917:p1, t00917:p2 ;
+  :nam "JAN SCHERINGA" ;
   :rol [
-    a :Parent.n.01 ;
-    :tgt [
-      a :People.n.01
-    ]
+    a :Parent.n.01
   ] .
 

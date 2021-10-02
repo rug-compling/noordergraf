@@ -17,9 +17,13 @@ tomb:t00059
   :person t00059:p1, t00059:p2 ;
   :ref [
     a :Quote ;
-    :text "PSALM 121:1 O.B." ;
+    :text "ps. 121:1 (o.b.)" ;
     :reference [
-      a :BibleReference
+      a :BibleReference ;
+      :part :Psalm.n.01 ;
+      :chapter 121 ;
+      :verse "1" ;
+      :comment "o.b."
     ]
   ] ;
   :site site:gr9752CMharen .
