@@ -17,7 +17,16 @@ tomb:t00395
   :person t00395:p1, t00395:p2 ;
   :ref [
     a :Quote ;
-    :text "GEZANG 178:7", "PSALM 43:3" ;
+    :text "psalm 43:3." ;
+    :reference [
+      a :BibleReference ;
+      :part :Psalm.n.01 ;
+      :chapter 43 ;
+      :verse "3"
+    ]
+  ] , [
+    a :Quote ;
+    :text "gezang 178:7." ;
     :reference [
       a :BibleReference
     ]

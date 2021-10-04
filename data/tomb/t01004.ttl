@@ -16,12 +16,15 @@ tomb:t01004
     :nd "+53.1757+007.0949"^^ll:
   ] ;
   :person t01004:p1, t01004:p2, t01004:p3 ;
-  :quo "ZOEKT DEN HEER EN LEEFT"@nld ;
   :ref [
     a :Quote ;
-    :text "AMOS 5:6"@nld ;
+    :text "zoekt den heer en leeft\namos 5:6"@nld ;
     :reference [
-      a :BibleReference
+      a :BibleReference ;
+      :part :Book_of_Amos.n.01 ;
+      :chapter 5 ;
+      :verse "6" ;
+      :scripture <https://www.bible.com/bible/1990/AMO.5.6>
     ]
   ] ;
   :site site:gr9686RSbeerta ;

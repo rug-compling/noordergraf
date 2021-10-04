@@ -17,9 +17,13 @@ tomb:t01002
   :person t01002:p1, t01002:p2 ;
   :ref [
     a :Quote ;
-    :text "PSALM 145:6 BERIJMDT"@nld ;
+    :text "Ps145:6 berĳmdt"@nld ;
     :reference [
-      a :BibleReference
+      a :BibleReference ;
+      :part :Psalm.n.01 ;
+      :chapter 145 ;
+      :verse "6" ;
+      :comment "berijmd"
     ]
   ] ;
   :site site:gr9734ATgroningen ;

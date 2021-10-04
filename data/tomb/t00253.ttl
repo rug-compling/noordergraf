@@ -24,9 +24,12 @@ t00253:p1
   :nam "ANGENIETJE KEIZER" ;
   :ref [
     a :Quote ;
-    :text "1 THESSALONICENZEN 4:14" ;
+    :text "1 thess. 4:14" ;
     :reference [
-      a :BibleReference
+      a :BibleReference ;
+      :part :B1_Thessalonians ;
+      :chapter 4 ;
+      :verse "14"
     ]
   ] ;
   :rol [
@@ -40,9 +43,12 @@ t00253:p2
   :nam "GRIETJE VAN DER ZWEEP" ;
   :ref [
     a :Quote ;
-    :text "PSALM 23:1" ;
+    :text "ps. 23:1" ;
     :reference [
-      a :BibleReference
+      a :BibleReference ;
+      :part :Psalm.n.01 ;
+      :chapter 23 ;
+      :verse "1"
     ]
   ] ;
   :rol [
@@ -56,9 +62,11 @@ t00253:p3
   :nam "HENDRIK KEIZER" ;
   :ref [
     a :Quote ;
-    :text "PSALM 116" ;
+    :text "ps. 116" ;
     :reference [
-      a :BibleReference
+      a :BibleReference;
+      :part :Psalm.n.01 ;
+      :chapter 116
     ]
   ] ;
   :rol [
@@ -70,7 +78,16 @@ t00253:p4
   :dateOfBirth "1854-10-18"^^xsd:date ;
   :dateOfDeath "1931-11-19"^^xsd:date ;
   :nam "JACOB VAN DER ZWEEP" ;
-  :ref t00253:v1 ;
+  :ref [
+    a :Quote ;
+    :text "rom. 14:8" ;
+    :reference [
+      a :BibleReference ;
+      :part :Epistle_to_the_Romans.n.04 ;
+      :chapter 14 ;
+      :verse "8"
+    ]
+  ] ;
   :rol [
     a :Grandparent.n.01
   ] .
@@ -80,26 +97,17 @@ t00253:p5
   :dateOfBirth "1856-07-26"^^xsd:date ;
   :dateOfDeath "1936-05-13"^^xsd:date ;
   :nam "ANGENIETJE REICHENBACH" ;
-  :ref t00253:v2 ;
+  :ref [
+    a :Quote ;
+    :text "joh. 14:2" ;
+    :reference [
+      a :BibleReference ;
+      :part :John.n.05 ;
+      :chapter 14 ;
+      :verse "2"
+    ]
+  ] ;
   :rol [
     a :Grandparent.n.01
-  ] .
-
-t00253:v1
-  a :Quote ;
-  :reference [
-    a :BibleReference ;
-    :part :Epistle_to_the_Romans.n.04 ;
-    :chapter 14 ;
-    :verse "8"
-  ] .
-
-t00253:v2
-  a :Quote ;
-  :reference [
-    a :BibleReference ;
-    :part :John.n.05 ;
-    :chapter 14 ;
-    :verse "2"
   ] .
 

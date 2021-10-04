@@ -18,9 +18,21 @@ tomb:t00328
   :quo "RUST ZACHT" ;
   :ref [
     a :Quote ;
-    :text "PSALM 90:2", "PSALM 97:6", "PSALM 97:7" ;
+    :text "Ps. 90:2.";
     :reference [
-      a :BibleReference
+      a :BibleReference ;
+      :part :Psalm.n.01 ;
+      :chapter 90 ;
+      :verse "2"
+    ]
+  ] , [
+    a :Quote ;
+    :text "Ps. 97:6 en 7." ;
+    :reference [
+      a :BibleReference ;
+      :part :Psalm.n.01 ;
+      :chapter 97 ;
+      :verse "6-7"
     ]
   ] ;
   :site site:dr7907CHhoogeveen ;

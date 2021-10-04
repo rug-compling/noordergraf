@@ -17,9 +17,13 @@ tomb:t00931
   :person t00931:p1, t00931:p2 ;
   :ref [
     a :Quote ;
-    :text "PSALM 89:1 BERIJMD"@nld ;
+    :text "psalm 89:1 ber."@nld ;
     :reference [
-      a :BibleReference
+      a :BibleReference ;
+      :part :Psalm.n.01 ;
+      :chapter 89 ;
+      :verse "1" ;
+      :comment "berijmd"
     ]
   ] ;
   :site site:gr9741GHgroningen .

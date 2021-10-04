@@ -33,7 +33,16 @@ t00561:p1
     :name "SCHIEDAM" ;
     :place place:Schiedam2747596
   ] ;
-  :ref t00561:v1 ;
+  :ref [
+    a :Quote ;
+    :text "rom. 6 : 23." ;
+    :reference [
+      a :BibleReference ;
+      :chapter 6 ;
+      :part :Epistle_to_the_Romans.n.04 ;
+      :verse "23"
+    ]
+  ] ;
   :rol t00561:r1, [
     a :Widower.n.01 ;
     :after t00561:r1 ;
@@ -49,9 +58,12 @@ t00561:p2
   :placeOfDeath t00561:c1 ;
   :ref [
     a :Quote ;
-    :text "PSALM 103:15-22" ;
+    :text "Ps. 103:15-22." ;
     :reference [
-      a :BibleReference
+      a :BibleReference ;
+      :part :Psalm.n.01 ;
+      :chapter 103 ;
+      :verse "15-22"
     ]
   ] .
 
@@ -62,13 +74,4 @@ t00561:p3
 t00561:r1
   a :Widower.n.01 ;
   :tgt t00561:p2 .
-
-t00561:v1
-  a :Quote ;
-  :reference [
-    a :BibleReference ;
-    :chapter 6 ;
-    :part :Epistle_to_the_Romans.n.04 ;
-    :verse "23"
-  ] .
 
