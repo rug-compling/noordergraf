@@ -14,7 +14,8 @@ tomb:t00552
     ] ;
     :nd "+53.1045+006.8756"^^ll:
   ] ;
-  :person t00552:p1, t00552:p2 ;
+  :person t00552:p1 ;
+  :creator t00552:p2 ;
   :site site:gr9641ANveendam ;
   :sym [
     a :Butterfly.n.01
@@ -34,10 +35,6 @@ t00552:p1
   ] .
 
 t00552:p2
-  a :Person ;
-  :nam "H. HOEKSEMA" ;
-  :occupation [
-    a :Designer.n.01 ;
-    :tgt tomb:t00552
-  ] .
+  a :Creator ;
+  :name "H. HOEKSEMA" .
 

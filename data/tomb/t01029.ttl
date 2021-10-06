@@ -14,7 +14,8 @@ tomb:t01029
     ] ;
     :nd "+53.3808+006.8589"^^ll:
   ] ;
-  :person t01029:p1, t01029:p2, t01029:p3 ;
+  :person t01029:p1, t01029:p2 ;
+  :creator t01029:p3 ;
   :site site:gr9906PPbierum ;
   :sym t01029:s3, t01029:s5, [
     a :Butterfly.n.01
@@ -48,13 +49,9 @@ t01029:p2
   :nam "N.E. WOLTHUIS" .
 
 t01029:p3
-  a :Person ;
+  a :Creator ;
   :loc t01029:c2 ;
-  :nam "W. MEIJER" ;
-  :occupation [
-    a :Designer.n.01 ;
-    :tgt tomb:t01029
-  ] .
+  :name "W. MEIJER" .
 
 t01029:s3
   a :BirdWing .

@@ -14,7 +14,8 @@ tomb:t00605
     ] ;
     :nd "+53.1642+006.7540"^^ll:
   ] ;
-  :person t00605:p1, t00605:p2, t00605:p3 ;
+  :person t00605:p1, t00605:p2 ;
+  :creator t00605:p3 ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :WeepingWillow
@@ -47,10 +48,6 @@ t00605:p2
   :nam "TRIJNTJE VISSCHER" .
 
 t00605:p3
-  a :Person ;
-  :nam "L.F. DE WIJS" ;
-  :occupation [
-    a :Designer.n.01 ;
-    :tgt tomb:t00605
-  ] .
+  a :Creator ;
+  :name "L.F. DE WIJS" .
 

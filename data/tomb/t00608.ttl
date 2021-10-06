@@ -14,7 +14,8 @@ tomb:t00608
     ] ;
     :nd "+53.1644+006.7540"^^ll:
   ] ;
-  :person t00608:p1, t00608:p2, t00608:p3 ;
+  :person t00608:p1, t00608:p2 ;
+  :creator t00608:p3 ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :Cross.n.03
@@ -41,10 +42,5 @@ t00608:p2
   :nam "ALBERDINA NIP" .
 
 t00608:p3
-  a :Person ;
-  :nam "A. BIELARS" ;
-  :occupation [
-    a :Designer.n.01 ;
-    :tgt tomb:t00608
-  ] .
-
+  a :Creator ;
+  :name "A. BIELARS" .

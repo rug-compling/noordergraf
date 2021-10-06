@@ -14,7 +14,8 @@ tomb:t01027
     ] ;
     :nd "+53.3809+006.8595"^^ll:
   ] ;
-  :person t01027:p1, t01027:p2, t01027:p3 ;
+  :person t01027:p1, t01027:p2 ;
+  :creator t01027:p3 ;
   :quo "WAT DE MENSCH ZAAIT, DAT ZAL HIJ OOK MAAIJEN"@nld ;
   :ref t01027:v1 ;
   :site site:gr9906PPbierum ;
@@ -43,12 +44,8 @@ t01027:p2
   :nam "P. DAM" .
 
 t01027:p3
-  a :Person ;
-  :nam "W. MEIJER" ;
-  :occupation [
-    a :Designer.n.01 ;
-    :tgt tomb:t01027
-  ] .
+  a :Creator ;
+  :name "W. MEIJER" .
 
 t01027:v1
   a :Quote ;

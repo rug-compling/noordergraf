@@ -14,7 +14,8 @@ tomb:t00583
     ] ;
     :nd "+53.3353+006.5128"^^ll:
   ] ;
-  :person t00583:p1, t00583:p2, t00583:p3 ;
+  :person t00583:p1, t00583:p2 ;
+  :creator t00583:p3 ;
   :ref [
     a :Quote ;
     :text "ps 73:12" ;
@@ -45,14 +46,10 @@ t00583:p2
   :nam "ANNECIEN SCHOLMA" .
 
 t00583:p3
-  a :Person ;
+  a :Creator ;
   :loc [
     a :Village.n.02 ;
     :nam "BAFLO"
   ] ;
-  :nam "BONJERNOUR" ;
-  :occupation [
-    a :Designer.n.01 ;
-    :tgt tomb:t00583
-  ] .
+  :name "BONJERNOUR" .
 

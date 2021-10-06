@@ -14,7 +14,8 @@ tomb:t00611
     ] ;
     :nd "+53.1643+006.7540"^^ll:
   ] ;
-  :person t00611:p1, t00611:p2, t00611:p3 ;
+  :person t00611:p1, t00611:p2 ;
+  :creator t00611:p3 ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :Oak.n.02
@@ -66,10 +67,6 @@ t00611:p2
   ] .
 
 t00611:p3
-  a :Person ;
-  :nam "HOLSBERGEN" ;
-  :occupation [
-    a :Designer.n.01 ;
-    :tgt tomb:t00611
-  ] .
+  a :Creator ;
+  :name "HOLSBERGEN" .
 

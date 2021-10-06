@@ -14,7 +14,8 @@ tomb:t00546
     ] ;
     :nd "+53.1041+006.8753"^^ll:
   ] ;
-  :person t00546:p1, t00546:p2, t00546:p3 ;
+  :person t00546:p1, t00546:p2 ;
+  :creator t00546:p3 ;
   :site site:gr9641ANveendam ;
   :sym [
     a :Composite.n.01 ;
@@ -48,12 +49,8 @@ t00546:p2
   :nam "MARTINUS KLUGKIST" .
 
 t00546:p3
-  a :Person ;
-  :nam "F. DE WEIJS" ;
-  :occupation [
-    a :Designer.n.01 ;
-    :tgt tomb:t00546
-  ] .
+  a :Creator ;
+  :name "F. DE WEIJS" .
 
 t00546:s3
   a :OakBranch .
