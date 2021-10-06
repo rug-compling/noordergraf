@@ -2,7 +2,20 @@
 
 tomb:t00498
   a :Tomb ;
-  :ent t00498:g1 ;
+  :date "1996-03-14"^^xsd:date ;
+  :text """PIETER FOPPES
+BRUINSMA
+★ 14 – 3 – 1825
+NIJHUZUM
+✝ 28 – 3 – 1876
+LJOUWERT
+
+Dizze stien is set 14 maert 1996
+troch de efterbernsbern fan
+syn neikommelingen
+FOPPE — ALDERT — WIGHERT
+""" ;
+  :person t00498:p1, t00498:p2, t00498:p3, t00498:p4 ;
   :image [
     dc:date "2019-11-16T14:06:08"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,24 +28,7 @@ tomb:t00498
     ] ;
     :nd "+53.2129+005.7957"^^ll:
   ] ;
-  :person t00498:p1, t00498:p2, t00498:p3, t00498:p4 ;
-  :site site:fr8917AVleeuwarden ;
-  :text """PIETER FOPPES
-BRUINSMA
-★ 14 – 3 – 1825
-NIJHUZUM
-✝ 28 – 3 – 1876
-LJOUWERT
-
-Dizze stien is set 14 maert 1996
-troch de efterbersbern [??]
-syn neikommelingen
-FOPPE — ALDERT — WIGHERT(?)
-""" .
-
-t00498:g1
-  a :Neikommeling.n.01 ;
-  :mem t00498:p2, t00498:p3, t00498:p4 .
+  :site site:fr8917AVleeuwarden .
 
 t00498:p1
   a :Male ;
@@ -56,19 +52,21 @@ t00498:p1
 
 t00498:p2
   a :Male ;
-  :nam "FOPPE" .
+  :nam "FOPPE" ;
+  :rol t00498:r1 .
 
 t00498:p3
   a :Male ;
-  :nam "ALDERT" .
+  :nam "ALDERT" ;
+  :rol t00498:r1 .
 
 t00498:p4
   a :Male ;
-  :nam "WICHERT" .
+  :nam "WICHERT" ;
+  :rol t00498:r1 .
 
-[]
-  a :Set.v.01 ;
-  :agt t00498:g1 ;
-  :begin "1996-03-14"^^xsd:date ;
-  :thm tomb:t00498 .
+t00498:r1
+  a :Descendant ;
+  :text "de efterbernsbern fan syn neikommelingen"@fry ;
+  :tgt t00498:p1 .
 

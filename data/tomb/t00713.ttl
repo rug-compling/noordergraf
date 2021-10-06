@@ -2,9 +2,15 @@
 
 tomb:t00713
   a :Tomb ;
-  :ent [
+  :date "1947-07"^^xsd:gYearMonth ;
+  :text """hier rusten
+onze lieve vader en moeder
+FAMILIE JEURINK
+weerdinge juli 1947
+""" ;
+  :person t00713:p1, t00713:p2 ;
+  :family [
     a :Family.n.04 ;
-    :dat "1947-07"^^xsd:gYearMonth ;
     :loc [
       a :Village.n.02 ;
       :name "WEERDINGE" ;
@@ -24,13 +30,7 @@ tomb:t00713
     ] ;
     :nd "+52.7808+006.9002"^^ll:
   ] ;
-  :person t00713:p1, t00713:p2 ;
-  :site site:dr7811HEemmen ;
-  :text """hier rusten
-onze lieve vader en moeder
-FAMILIE JEURINK
-weerdinge juli 1947
-""" .
+  :site site:dr7811HEemmen .
 
 t00713:p1
   a :Male ;
