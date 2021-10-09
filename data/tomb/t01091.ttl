@@ -2,7 +2,6 @@
 
 tomb:t01091
   a :Tomb ;
-  :ent t01091:g1 ;
   :image [
     dc:date "2020-09-11T17:52:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -19,13 +18,6 @@ tomb:t01091
   :quo "IN JEZUS ONTSLAPEN"@nld ;
   :site site:gr9752CMharen .
 
-t01091:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Commemorator.n.01 ;
-    :tgt t01091:p1, t01091:p2
-  ] .
-
 t01091:p1
   a :Female ;
   :dateOfBirth "1905-02-03"^^xsd:date ;
@@ -35,11 +27,7 @@ t01091:p1
     a :Wife.n.01 ;
     :tgt t01091:p2
   ], [
-    a :Mother.n.01 ;
-    :tgt t01091:g1
-  ], [
-    a :Grandmother.n.01 ;
-    :tgt t01091:g1
+    a :Mother.n.01 , :Grandmother.n.01
   ] .
 
 t01091:p2
@@ -48,10 +36,6 @@ t01091:p2
   :dateOfDeath "1993-11-13"^^xsd:date ;
   :nam "JAN STOKJE" ;
   :rol [
-    a :Father.n.01 ;
-    :tgt t01091:g1
-  ], [
-    a :Grandfather.n.01 ;
-    :tgt t01091:g1
+    a :Father.n.01 , :Grandfather.n.01
   ] .
 

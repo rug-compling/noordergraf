@@ -2,7 +2,6 @@
 
 tomb:t00794
   a :Tomb ;
-  :ent t00794:g1 ;
   :image [
     dc:date "2020-01-18T13:05:32"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,7 @@ tomb:t00794
     ] ;
     :nd "+53.2773+006.6936"^^ll:
   ] ;
-  :subject t00794:p1, t00794:p2, t00794:p3 ;
+  :subject t00794:p1 ;
   :site site:gr9791KEten_boer ;
   :sym [
     a :Frond.n.01
@@ -24,10 +23,6 @@ tomb:t00794
   ], [
     a :Ribbon.n.01
   ] .
-
-t00794:g1
-  a :Group.n.01 ;
-  :mem t00794:p2, t00794:p3 .
 
 t00794:p1
   a :Female ;
@@ -46,7 +41,7 @@ t00794:p1
   ] ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00794:g1
+    :tgt t00794:p2, t00794:p3
   ] .
 
 t00794:p2

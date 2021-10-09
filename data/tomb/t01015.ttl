@@ -2,7 +2,6 @@
 
 tomb:t01015
   a :Tomb ;
-  :ent t01015:g1 ;
   :image [
     dc:date "2020-04-04T10:45:30"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,7 @@ tomb:t01015
     ] ;
     :nd "+53.1754+007.0954"^^ll:
   ] ;
-  :subject t01015:p1, t01015:p2, t01015:p3 ;
+  :subject t01015:p1 ;
   :site site:gr9686RSbeerta ;
   :sym [
     a :Frond.n.01
@@ -27,10 +26,6 @@ tomb:t01015
     a symbol:Ouroboros
   ] .
 
-t01015:g1
-  a :Group.n.01 ;
-  :mem t01015:p2, t01015:p3 .
-
 t01015:p1
   a :Female ;
   :dateOfBirth "1872-10-01"^^xsd:date ;
@@ -38,7 +33,7 @@ t01015:p1
   :nam "GRIETJE WUBBINA" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t01015:g1
+    :tgt t01015:p2, t01015:p3
   ] .
 
 t01015:p2

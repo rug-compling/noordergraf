@@ -2,15 +2,6 @@
 
 tomb:t00672
   a :Tomb ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t00672:p1, t00672:p2 ;
-    :rol [
-      a :Parent.n.01
-    ], [
-      a :Grandparent.n.01
-    ]
-  ] ;
   :image [
     dc:date "2019-12-14T13:42:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -34,13 +25,23 @@ t00672:p1
   a :Female ;
   :dateOfBirth "1887-02-26"^^xsd:date ;
   :dateOfDeath "1958-12-07"^^xsd:date ;
-  :nam "TRIJNTJE W. VISSER" .
+  :nam "TRIJNTJE W. VISSER" ;
+  :rol [
+    a :Parent.n.01
+  ], [
+    a :Grandparent.n.01
+  ] .
 
 t00672:p2
   a :Male ;
   :dateOfBirth "1885-10-08"^^xsd:date ;
   :dateOfDeath "1978-09-05"^^xsd:date ;
-  :nam "AUKE SIKMA" .
+  :nam "AUKE SIKMA" ;
+  :rol [
+    a :Parent.n.01
+  ], [
+    a :Grandparent.n.01
+  ] .
 
 t00672:v1
   a :Quote ;

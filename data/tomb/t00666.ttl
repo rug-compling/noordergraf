@@ -2,7 +2,6 @@
 
 tomb:t00666
   a :Tomb ;
-  :ent t00666:g1 ;
   :image [
     dc:date "2019-12-14T13:53:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,10 +22,6 @@ tomb:t00666
     a :WeepingWillow
   ] .
 
-t00666:g1
-  a :Group.n.01 ;
-  :mem t00666:p3 .
-
 t00666:p1
   a :Female ;
   :dateOfBirth "1851-10-19"^^xsd:date ;
@@ -36,20 +31,12 @@ t00666:p1
     a :Wife.n.01 ;
     :tgt t00666:p2
   ], [
-    a :Mother.n.01 ;
-    :tgt t00666:g1
+    a :Mother.n.01
   ] .
 
 t00666:p2
   a :Male ;
   :nam "T.IJ. DE BOER" .
-
-t00666:p3
-  a :Person ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00666:p1
-  ] .
 
 t00666:v1
   a :Quote ;

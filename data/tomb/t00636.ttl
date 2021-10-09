@@ -2,7 +2,6 @@
 
 tomb:t00636
   a :Tomb ;
-  :ent t00636:g1 ;
   :image [
     dc:date "2019-11-23T09:54:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,7 @@ tomb:t00636
     ] ;
     :nd "+53.1642+006.7544"^^ll:
   ] ;
-  :subject t00636:p1, t00636:p2, t00636:p3 ;
+  :subject t00636:p1 ;
   :site site:gr9601KAhoogezand ;
   :sym [
     a :Entity.n.01
@@ -27,15 +26,13 @@ tomb:t00636
     a :Ribbon.n.01
   ] .
 
-t00636:g1
-  a :Group.n.01 ;
-  :mem t00636:p2, t00636:p3 .
 
 t00636:p1
-  a :Person ;
+  a :Persons ;
+  :text "geliefde kinderen" ;
   :rol [
     a :Child.n.02 ;
-    :tgt t00636:g1
+    :tgt t00636:p2, t00636:p3
   ] .
 
 t00636:p2

@@ -2,10 +2,6 @@
 
 tomb:t00384
   a :Tomb ;
-  :ent [
-    a :Family.n.04 ;
-    :nam "IJTSMA"
-  ] ;
   :image [
     dc:date "2019-10-26T15:05:51"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -30,6 +26,10 @@ tomb:t00384
     ]
   ] .
 
+t00384:f1
+  a :Family.n.04 ;
+  :nam "IJTSMA"
+
 t00384:p1
   a :Male ;
   :dateOfBirth "1860-11-28"^^xsd:date ;
@@ -46,7 +46,8 @@ t00384:p1
     :place place:Gerkesklooster2755574
   ] ;
   :rol [
-    a :Parent.n.01
+    a :Parent.n.01 ;
+    :tgt t00384:f1
   ] .
 
 t00384:p2
@@ -65,6 +66,7 @@ t00384:p2
     :place place:Lutkepost2751365
   ] ;
   :rol [
-    a :Parent.n.01
+    a :Parent.n.01 ;
+    :tgt t00384:f1
   ] .
 

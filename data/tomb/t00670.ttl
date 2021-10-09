@@ -2,7 +2,6 @@
 
 tomb:t00670
   a :Tomb ;
-  :ent t00670:g1, t00670:g2 ;
   :image [
     dc:date "2019-12-14T13:43:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,23 +26,6 @@ t00670:c2
   :name "BOLSWARD" ;
   :place place:Bolsward2758682 .
 
-t00670:g1
-  a :Group.n.01 ;
-  :mem t00670:p1, t00670:p2 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00670:g2
-  ], [
-    a :Grandparent.n.01
-  ] .
-
-t00670:g2
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00670:g1
-  ] .
-
 t00670:p1
   a :Male ;
   :dateOfBirth "1861-07-11"^^xsd:date ;
@@ -54,7 +36,12 @@ t00670:p1
     :name "OOSTHEM" ;
     :place place:Oosthem2749372
   ] ;
-  :placeOfDeath t00670:c2 .
+  :placeOfDeath t00670:c2 ;
+  :rol [
+    a :Father 
+  ] , [
+    a :Grandfather
+  ] .
 
 t00670:p2
   a :Female ;
@@ -62,7 +49,12 @@ t00670:p2
   :dateOfDeath "1941-07-10"^^xsd:date ;
   :nam "GRIETJE MOLENMAKER" ;
   :placeOfBirth t00670:c2 ;
-  :placeOfDeath t00670:c2 .
+  :placeOfDeath t00670:c2 ;
+  :rol [
+    a :Mother
+  ] , [
+    a :Grandmother
+  ] .
 
 t00670:v2
   a :Quote ;

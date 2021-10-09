@@ -2,7 +2,6 @@
 
 tomb:t00297
   a :Tomb ;
-  :ent t00297:g1 ;
   :image [
     dc:date "2019-10-19T14:40:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,7 @@ tomb:t00297
     ] ;
     :nd "+52.7151+006.4739"^^ll:
   ] ;
-  :subject t00297:p1, t00297:p2, t00297:p3 ;
+  :subject t00297:p1 ;
   :quo "DE LEVENSDRAAD QWORDT SCHIELIJK AFGESNEEN" ;
   :ref [
     a :Quote ;
@@ -36,10 +35,6 @@ t00297:c1
   :name "HOOGEVEEN" ;
   :place place:Hoogeveen2753719 .
 
-t00297:g1
-  a :Group.n.01 ;
-  :mem t00297:p2, t00297:p3 .
-
 t00297:p1
   a :Female ;
   :dateOfBirth "1912-02-11"^^xsd:date ;
@@ -49,7 +44,7 @@ t00297:p1
   :placeOfDeath t00297:c1 ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00297:g1
+    :tgt t00297:p2, t00297:p3
   ] .
 
 t00297:p2

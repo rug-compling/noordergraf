@@ -2,11 +2,6 @@
 
 tomb:t01133
   a :Tomb ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t01133:p1, t01133:p2 ;
-    :rol t01133:r1
-  ] ;
   :image [
     dc:date "2021-04-23T11:21:52"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,18 +21,17 @@ t01133:p1
   a :Female ;
   :dateOfBirth "1899-11-22"^^xsd:date ;
   :dateOfDeath "1953-01-07"^^xsd:date ;
-  :nam "GERRITDINA VREEBURG" .
+  :nam "GERRITDINA VREEBURG" ;
+  :rol [
+    a :Parent.n.01
+  ] .
 
 t01133:p2
   a :Male ;
   :dateOfBirth "1897-06-28"^^xsd:date ;
   :dateOfDeath "1979-09-01"^^xsd:date ;
-  :nam "BEREND DE JONGE" .
-
-t01133:r1
-  a :Commemorator.n.01, :Parent.n.01 ;
-  :tgt [
-    a :Group.n.01 ;
-    :rol t01133:r1
+  :nam "BEREND DE JONGE" ;
+  :rol [
+    a :Parent.n.01
   ] .
 

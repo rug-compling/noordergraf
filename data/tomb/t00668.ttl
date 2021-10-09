@@ -2,7 +2,6 @@
 
 tomb:t00668
   a :Tomb ;
-  :ent t00668:g1 ;
   :image [
     dc:date "2019-12-14T13:51:30"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,10 +20,6 @@ tomb:t00668
     a :WeepingWillow
   ] .
 
-t00668:g1
-  a :Group.n.01 ;
-  :mem t00668:p3 .
-
 t00668:p1
   a :Male ;
   :dateOfBirth "1870-02-15"^^xsd:date ;
@@ -32,7 +27,6 @@ t00668:p1
   :nam "B. HEMPENIUS" ;
   :rol [
     a :Parent.n.01 ;
-    :tgt t00668:g1
   ] .
 
 t00668:p2
@@ -42,9 +36,5 @@ t00668:p2
   :nam "T. HEMPENIUS-DE GROOT" ;
   :rol [
     a :Parent.n.01 ;
-    :tgt t00668:g1
   ] .
-
-t00668:p3
-  a :Person .
 

@@ -2,7 +2,6 @@
 
 tomb:t00753
   a :Tomb ;
-  :ent t00753:g1 ;
   :image [
     dc:date "2019-12-28T12:46:59"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,15 +14,11 @@ tomb:t00753
     ] ;
     :nd "+53.3110+006.9975"^^ll:
   ] ;
-  :subject t00753:p1, t00753:p2, t00753:p3 ;
+  :subject t00753:p1 ;
   :site site:gr9936BTfarmsum ;
   :sym [
     a :Butterfly.n.01
   ] .
-
-t00753:g1
-  a :Group.n.01 ;
-  :mem t00753:p2, t00753:p3 .
 
 t00753:p1
   a :Male ;
@@ -32,7 +27,7 @@ t00753:p1
   :nam "LAMBERTUS" ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00753:g1
+    :tgt t00753:p2, t00753:p3
   ] .
 
 t00753:p2

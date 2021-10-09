@@ -2,7 +2,6 @@
 
 tomb:t00001
   a :Tomb ;
-  :ent t00001:g1 ;
   :image [
     dc:date "2019-09-25T16:57:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,13 +20,6 @@ tomb:t00001
     a :Frond.n.01
   ] .
 
-t00001:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Commemorator.n.01 ;
-    :tgt t00001:p1
-  ] .
-
 t00001:p1
   a :Male ;
   :age [
@@ -37,11 +29,9 @@ t00001:p1
   :dateOfDeath "1933-10-12"^^xsd:date ;
   :nam "KLAAS SWART" ;
   :rol [
-    a :Son.n.01 ;
-    :tgt t00001:g1
+    a :Son.n.01
   ], [
-    a :Brother.n.01 ;
-    :tgt t00001:g1
+    a :Brother.n.01
   ] .
 
 t00001:p2
@@ -53,13 +43,10 @@ t00001:p2
   :dateOfDeath "1936-02-13"^^xsd:date ;
   :nam "ANNECHIEN MULDER" ;
   :rol [
-    a :Wife.n.01 ;
-    :tgt t00001:g1
+    a :Wife.n.01
   ], [
-    a :Mother.n.01 ;
-    :tgt t00001:g1
+    a :Mother.n.01
   ], [
-    a :Grandmother.n.01 ;
-    :tgt t00001:g1
+    a :Grandmother.n.01
   ] .
 

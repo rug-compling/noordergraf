@@ -2,7 +2,6 @@
 
 tomb:t00768
   a :Tomb ;
-  :ent t00768:g1 ;
   :image [
     dc:date "2019-12-21T13:04:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,7 @@ tomb:t00768
     ] ;
     :nd "+52.7823+006.8981"^^ll:
   ] ;
-  :subject t00768:p1, t00768:p2, t00768:p3 ;
+  :subject t00768:p1 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
   :sym [
@@ -27,10 +26,6 @@ t00768:c1
   :name "WEERDINGE" ;
   :place place:Weerdinge2744927 .
 
-t00768:g1
-  a :Group.n.01 ;
-  :mem t00768:p2, t00768:p3 .
-
 t00768:p1
   a :Male ;
   :dateOfBirth "1920-06-27"^^xsd:date ;
@@ -40,7 +35,7 @@ t00768:p1
   :placeOfDeath t00768:c1 ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00768:g1
+    :tgt t00768:p2, t00768:p3
   ] .
 
 t00768:p2

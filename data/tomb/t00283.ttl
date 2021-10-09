@@ -2,7 +2,6 @@
 
 tomb:t00283
   a :Tomb ;
-  :ent t00283:g1 ;
   :image [
     dc:date "2019-10-16T16:53:40"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,10 +21,6 @@ tomb:t00283
     a :Frond.n.01
   ] .
 
-t00283:g1
-  a :Group.n.01 ;
-  :mem t00283:p2, t00283:p3 .
-
 t00283:p1
   a :Female ;
   :dateOfBirth "1916-08-28"^^xsd:date ;
@@ -33,7 +28,7 @@ t00283:p1
   :nam "WILLEMINA KUIPER" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00283:g1
+    :tgt t00283:p2, t00283:p3
   ] .
 
 t00283:p2

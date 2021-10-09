@@ -2,7 +2,6 @@
 
 tomb:t00530
   a :Tomb ;
-  :ent t00530:g1 ;
   :image [
     dc:date "2019-11-24T14:51:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,15 +14,11 @@ tomb:t00530
     ] ;
     :nd "+53.1042+006.8745"^^ll:
   ] ;
-  :subject t00530:p1, t00530:p2, t00530:p3 ;
+  :subject t00530:p1 ;
   :site site:gr9641ANveendam ;
   :sym [
     a :WeepingWillow
   ] .
-
-t00530:g1
-  a :Group.n.01 ;
-  :mem t00530:p2, t00530:p3 .
 
 t00530:p1
   a :Male ;
@@ -32,7 +27,7 @@ t00530:p1
   :nam "HIERONIMUS HERWIG" ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00530:g1
+    :tgt t00530:p2, t00530:p3
   ] ;
   :suffix "GZN" .
 

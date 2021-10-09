@@ -2,14 +2,6 @@
 
 tomb:t00015
   a :Tomb ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t00015:p2 ;
-    :rol [
-      a :Commemorator.n.01 ;
-      :tgt t00015:p1
-    ]
-  ] ;
   :image [
     dc:date "2019-09-25T16:40:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,7 +14,7 @@ tomb:t00015
     ] ;
     :nd "+53.1807+006.5963"^^ll:
   ] ;
-  :subject t00015:p1, t00015:p2 .
+  :subject t00015:p1 .
 
 t00015:p1
   a :Female ;
@@ -33,8 +25,7 @@ t00015:p1
     a :Wife.n.01 ;
     :tgt t00015:p2
   ], [
-    a :Mother.n.01 ;
-    :tgt t00015:p3
+    a :Mother.n.01
   ] .
 
 t00015:p2

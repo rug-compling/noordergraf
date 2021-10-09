@@ -2,7 +2,6 @@
 
 tomb:t00669
   a :Tomb ;
-  :ent t00669:g1 ;
   :image [
     dc:date "2019-12-14T13:50:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,21 +21,15 @@ tomb:t00669
     a :Frond.n.01
   ] .
 
-t00669:g1
-  a :Group.n.01 ;
-  :mem t00669:p3 .
-
 t00669:p1
   a :Female ;
   :dateOfBirth "1876-06-08"^^xsd:date ;
   :dateOfDeath "1965-01-02"^^xsd:date ;
   :nam "HENDRIKJE DE JONG" ;
   :rol [
-    a :Mother.n.01 ;
-    :tgt t00669:g1
+    a :Mother.n.01
   ], [
-    a :Grandmother.n.01 ;
-    :tgt t00669:g1
+    a :Grandmother.n.01
   ] .
 
 t00669:p2
@@ -45,10 +38,6 @@ t00669:p2
   :dateOfDeath "1966-08-26"^^xsd:date ;
   :nam "EEKE DE JONG" ;
   :rol [
-    a :Aunt.n.01 ;
-    :tgt t00669:g1
+    a :Aunt.n.01
   ] .
-
-t00669:p3
-  a :Person .
 

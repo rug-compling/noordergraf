@@ -2,7 +2,6 @@
 
 tomb:t00755
   a :Tomb ;
-  :ent t00755:g1 ;
   :image [
     dc:date "2019-12-28T12:46:33"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,15 +14,11 @@ tomb:t00755
     ] ;
     :nd "+53.3111+006.9974"^^ll:
   ] ;
-  :subject t00755:p1, t00755:p2, t00755:p3 ;
+  :subject t00755:p1 ;
   :site site:gr9936BTfarmsum ;
   :sym [
     a :Rose.n.01
   ] .
-
-t00755:g1
-  a :Group.n.01 ;
-  :mem t00755:p2, t00755:p3 .
 
 t00755:p1
   a :Male ;
@@ -32,7 +27,7 @@ t00755:p1
   :nam "KLAAS JANS" ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00755:g1
+    :tgt t00755:p2, t00755:p3
   ] .
 
 t00755:p2

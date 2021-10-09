@@ -2,7 +2,6 @@
 
 tomb:t01009
   a :Tomb ;
-  :ent t01009:g1 ;
   :image [
     dc:date "2020-04-05T12:12:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,12 +14,8 @@ tomb:t01009
     ] ;
     :nd "+53.2443+006.6282"^^ll:
   ] ;
-  :subject t01009:p1, t01009:p2, t01009:p3 ;
+  :subject t01009:p1, t01009:p3 ;
   :site site:gr9734ATgroningen .
-
-t01009:g1
-  a :Group.n.01 ;
-  :mem t01009:p1, t01009:p2 .
 
 t01009:p1
   a :Female ;
@@ -48,6 +43,6 @@ t01009:p3
   :nam "LUTGERDINA BAKKER" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t01009:g1
+    :tgt t01009:p1, t01009:p2
   ] .
 

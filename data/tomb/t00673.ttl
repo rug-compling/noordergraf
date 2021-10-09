@@ -2,13 +2,6 @@
 
 tomb:t00673
   a :Tomb ;
-  :ent t00673:g1, [
-    a :Group.n.01 ;
-    :rol [
-      a :Child.n.02 ;
-      :tgt t00673:g1
-    ]
-  ] ;
   :image [
     dc:date "2019-12-14T13:41:17"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -43,13 +36,6 @@ t00673:c2
   :name "BOLSWARD" ;
   :place place:Bolsward2758682 .
 
-t00673:g1
-  a :Group.n.01 ;
-  :mem t00673:p1, t00673:p2 ;
-  :rol [
-    a :Parent.n.01
-  ] .
-
 t00673:p1
   a :Male ;
   :dateOfBirth "1896-09-28"^^xsd:date ;
@@ -64,6 +50,8 @@ t00673:p1
   :rol [
     a :Spouse.n.01 ;
     :tgt t00673:p2
+  ] , [
+    a :Parent.n.01
   ] .
 
 t00673:p2
@@ -76,5 +64,8 @@ t00673:p2
     :name "AALSUM" ;
     :place place:Aalzum2760121
   ] ;
-  :placeOfDeath t00673:c2 .
+  :placeOfDeath t00673:c2 ;
+  :rol [
+    a :Parent.n.01
+  ] .
 

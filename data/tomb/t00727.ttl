@@ -2,7 +2,6 @@
 
 tomb:t00727
   a :Tomb ;
-  :ent t00727:g1 ;
   :image [
     dc:date "2019-12-21T13:11:36"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -32,10 +31,6 @@ tomb:t00727
     a :WeepingWillow
   ] .
 
-t00727:g1
-  a :Group.n.01 ;
-  :mem t00727:p2, t00727:p3 .
-
 t00727:p1
   a :Female ;
   :dateOfBirth "1880-01-11"^^xsd:date ;
@@ -43,7 +38,7 @@ t00727:p1
   :nam "JANTJE AIKES" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00727:g1
+    :tgt t00727:p2, t00727:p3
   ] .
 
 t00727:p2

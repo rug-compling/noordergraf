@@ -2,7 +2,6 @@
 
 tomb:t00791
   a :Tomb ;
-  :ent t00791:g1 ;
   :image [
     dc:date "2020-01-18T13:10:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,17 +14,13 @@ tomb:t00791
     ] ;
     :nd "+53.2776+006.6936"^^ll:
   ] ;
-  :subject t00791:p1, t00791:p2, t00791:p3 ;
+  :subject t00791:p1 ;
   :site site:gr9791KEten_boer .
 
 t00791:c1
   a :Village.n.02 ;
   :name "TEN BOER" ;
   :place place:TenBoer2746491 .
-
-t00791:g1
-  a :Group.n.01 ;
-  :mem t00791:p2, t00791:p3 .
 
 t00791:p1
   a :Female ;
@@ -36,7 +31,7 @@ t00791:p1
   :placeOfDeath t00791:c1 ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00791:g1
+    :tgt t00791:p2, t00791:p3 
   ] .
 
 t00791:p2

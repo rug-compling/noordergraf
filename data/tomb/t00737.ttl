@@ -2,7 +2,6 @@
 
 tomb:t00737
   a :Tomb ;
-  :ent t00737:g1 ;
   :image [
     dc:date "2019-12-28T12:23:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -17,10 +16,6 @@ tomb:t00737
   ] ;
   :subject t00737:p1, t00737:p2, t00737:p3 ;
   :site site:gr9936TCfarmsum .
-
-t00737:g1
-  a :Group.n.01 ;
-  :mem t00737:p2, t00737:p3 .
 
 t00737:p1
   a :Female ;
@@ -39,7 +34,7 @@ t00737:p1
   ] ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00737:g1
+    :tgt t00737:p2, t00737:p3
   ] .
 
 t00737:p2

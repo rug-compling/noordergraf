@@ -2,7 +2,6 @@
 
 tomb:t00026
   a :Tomb ;
-  :ent t00026:g1, t00026:g2 ;
   :image [
     dc:date "2019-09-25T16:22:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,13 +30,6 @@ t00026:c1
   :name "GRONINGEN" ;
   :place place:Groningen2755251 .
 
-t00026:g1
-  a :Group.n.01 ;
-  :mem t00026:p2 .
-
-t00026:g2
-  a :Group.n.01 .
-
 t00026:p1
   a :Male ;
   :dateOfBirth "1893-06-14"^^xsd:date ;
@@ -49,8 +41,7 @@ t00026:p1
     a :Husband.n.01 ;
     :tgt t00026:p2
   ], [
-    a :Father.n.01 ;
-    :tgt t00026:g1
+    a :Father.n.01
   ] .
 
 t00026:p2
@@ -70,12 +61,9 @@ t00026:p2
   ] ;
   :rol [
     a :Mother.n.01 ;
-    :tgt t00026:g2
   ], [
     a :Grandmother.n.01 ;
-    :tgt t00026:g2
   ], [
     a :Great_grandmother.n.01 ;
-    :tgt t00026:g2
   ] .
 

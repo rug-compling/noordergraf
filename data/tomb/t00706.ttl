@@ -2,15 +2,6 @@
 
 tomb:t00706
   a :Tomb ;
-  :ent [
-    a :Family.n.04 ;
-    :loc [
-      a :Village.n.02 ;
-      :name "ZUIDBARGE" ;
-      :place place:Zuidbarge2743809
-    ] ;
-    :nam "L. MEPPELINK"
-  ] ;
   :image [
     dc:date "2019-12-21T13:48:45"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -35,10 +26,15 @@ t00706:p1
   :dateOfDeath "1935-11-04"^^xsd:date ;
   :nam "DIRK MEPPELINK" ;
   :rol [
-    a :Brother.n.01
-  ], [
-    a :Brother-in-law.n.01
-  ], [
-    a :Uncle.n.01
+    a :Brother.n.01 , :Brother-in-law.n.01 , :Uncle.n.01 ;
+    :tgt [
+      a :Family.n.04 ;
+      :loc [
+        a :Village.n.02 ;
+        :name "ZUIDBARGE" ;
+        :place place:Zuidbarge2743809
+      ] ;
+      :nam "L. MEPPELINK"
+    ]
   ] .
 

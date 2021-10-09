@@ -2,7 +2,6 @@
 
 tomb:t00834
   a :Tomb ;
-  :ent t00834:g1 ;
   :image [
     dc:date "2020-02-15T15:40:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,7 @@ tomb:t00834
     ] ;
     :nd "+52.7763+006.8047"^^ll:
   ] ;
-  :subject t00834:p1, t00834:p2, t00834:p3 ;
+  :subject t00834:p1 ;
   :quo "RUST ZACHT GELIEFDE ZOON EN BROEDER"@nld ;
   :site site:dr7841CDsleen ;
   :sym [
@@ -27,10 +26,6 @@ t00834:c1
   :name "ERM" ;
   :place place:Erm2756040 .
 
-t00834:g1
-  a :Group.n.01 ;
-  :mem t00834:p2, t00834:p3 .
-
 t00834:p1
   a :Male ;
   :dateOfBirth "1916-02-08"^^xsd:date ;
@@ -40,7 +35,7 @@ t00834:p1
   :placeOfDeath t00834:c1 ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00834:g1
+    :tgt t00834:p2, t00834:p3
   ], [
     a :Brother.n.01
   ] .

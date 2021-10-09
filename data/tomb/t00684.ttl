@@ -2,7 +2,6 @@
 
 tomb:t00684
   a :Tomb ;
-  :ent t00684:g1, t00684:g2 ;
   :image [
     dc:date "2019-12-14T13:23:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,30 +23,21 @@ tomb:t00684
     a :Frond.n.01
   ] .
 
-t00684:g1
-  a :Group.n.01 ;
-  :mem t00684:p1, t00684:p2 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00684:g2
-  ] .
-
-t00684:g2
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00684:g1
-  ] .
-
 t00684:p1
   a :Male ;
   :dateOfBirth "1859-09-12"^^xsd:date ;
   :dateOfDeath "1944-05-06"^^xsd:date ;
-  :nam "SJOERD DE WIT" .
+  :nam "SJOERD DE WIT" ;
+  :rol [
+    a :Parent.n.01
+  ] .
 
 t00684:p2
   a :Male ;
   :dateOfBirth "1859-08-25"^^xsd:date ;
   :dateOfDeath "1934-01-19"^^xsd:date ;
-  :nam "IJMKJE VAN STRALEN" .
+  :nam "IJMKJE VAN STRALEN" ;
+  :rol [
+    a :Parent.n.01
+  ] .
 

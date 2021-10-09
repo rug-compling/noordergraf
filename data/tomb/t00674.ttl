@@ -2,7 +2,6 @@
 
 tomb:t00674
   a :Tomb ;
-  :ent t00674:g2 ;
   :image [
     dc:date "2019-12-14T13:39:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,13 +20,6 @@ tomb:t00674
     a :Frond.n.01
   ] .
 
-t00674:g2
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00674:p1
-  ] .
-
 t00674:p1
   a :Female ;
   :dateOfBirth "1914-06-05"^^xsd:date ;
@@ -35,7 +27,6 @@ t00674:p1
   :nam "FETTJE DE HAAN" ;
   :rol [
     a :Parent.n.01 ;
-    :tgt t00674:g2
   ], [
     a :Grandmother.n.01
   ] .

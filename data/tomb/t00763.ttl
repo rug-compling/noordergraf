@@ -2,7 +2,6 @@
 
 tomb:t00763
   a :Tomb ;
-  :ent t00763:g1 ;
   :image [
     dc:date "2019-12-28T12:44:04"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,7 @@ tomb:t00763
     ] ;
     :nd "+53.3112+006.9971"^^ll:
   ] ;
-  :subject t00763:p1, t00763:p2, t00763:p3 ;
+  :subject t00763:p1 ;
   :site site:gr9936BTfarmsum ;
   :sym [
     a :Butterfly.n.01
@@ -25,10 +24,6 @@ tomb:t00763
     a :Butterfly.n.01
   ] .
 
-t00763:g1
-  a :Group.n.01 ;
-  :mem t00763:p2, t00763:p3 .
-
 t00763:p1
   a :Male ;
   :dateOfBirth "1872-09-10"^^xsd:date ;
@@ -36,7 +31,7 @@ t00763:p1
   :nam "REMKO VAN ZANTEN" ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00763:g1
+    :tgt t00763:p2, t00763:p3
   ] .
 
 t00763:p2

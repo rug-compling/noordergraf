@@ -2,7 +2,6 @@
 
 tomb:t00365
   a :Tomb ;
-  :ent t00365:g1 ;
   :image [
     dc:date "2019-10-25T17:27:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,16 +14,12 @@ tomb:t00365
     ] ;
     :nd "+53.0799+006.5712"^^ll:
   ] ;
-  :subject t00365:p1, t00365:p2, t00365:p3 ;
+  :subject t00365:p1 ;
   :quo "RUST ZACHT LIEVE FROUKJE" ;
   :site site:dr9481CGvries ;
   :sym [
     a :Rose.n.01
   ] .
-
-t00365:g1
-  a :Group.n.01 ;
-  :mem t00365:p2, t00365:p3 .
 
 t00365:p1
   a :Male ;
@@ -43,7 +38,7 @@ t00365:p1
   ] ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00365:g1
+    :tgt t00365:p2, t00365:p3
   ], [
     a :Sister.n.01
   ] .

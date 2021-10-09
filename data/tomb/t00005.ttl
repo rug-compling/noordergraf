@@ -2,7 +2,6 @@
 
 tomb:t00005
   a :Tomb ;
-  :ent t00005:g1 ;
   :image [
     dc:date "2019-09-25T16:51:39"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,10 +20,6 @@ tomb:t00005
     a :Frond.n.01
   ] .
 
-t00005:g1
-  a :Group.n.01 ;
-  :mem t00005:p2, t00005:p3 .
-
 t00005:p1
   a :Female ;
   :dateOfBirth "1939-06-02"^^xsd:date ;
@@ -33,7 +28,7 @@ t00005:p1
   :ref t00005:v1 ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00005:g1
+    :tgt t00005:p2, t00005:p3
   ] .
 
 t00005:p2

@@ -2,7 +2,6 @@
 
 tomb:t00126
   a :Tomb ;
-  :ent t00126:g1 ;
   :image [
     dc:date "2019-10-01T09:58:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,15 +14,11 @@ tomb:t00126
     ] ;
     :nd "+53.2059+006.5712"^^ll:
   ] ;
-  :subject t00126:p1, t00126:p2, t00126:p3 ;
+  :subject t00126:p1 ;
   :site site:gr9725ACgroningen ;
   :sym [
     a symbol:Ouroboros
   ] .
-
-t00126:g1
-  a :Group.n.01 ;
-  :mem t00126:p2, t00126:p3 .
 
 t00126:p1
   a :Female ;
@@ -35,7 +30,7 @@ t00126:p1
   :nam "RENSINA CATHARINA SCHUITEMA" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00126:g1
+    :tgt t00126:p2, t00126:p3
   ] .
 
 t00126:p2

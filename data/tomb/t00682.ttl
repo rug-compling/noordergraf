@@ -2,17 +2,6 @@
 
 tomb:t00682
   a :Tomb ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t00682:p1, t00682:p2 ;
-    :rol [
-      a :Parent.n.01 ;
-      :tgt [
-        a :Group.n.01 ;
-        :mem t00682:p3
-      ]
-    ]
-  ] ;
   :image [
     dc:date "2019-12-14T13:25:57"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -47,6 +36,12 @@ t00682:p1
     a :City.n.01 ;
     :name "BOLSWARD" ;
     :place place:Bolsward2758682
+  ] ;
+  :rol [
+    a :Spouse ;
+    :tgt :t00682:p2
+  ] , [
+    a :Parent
   ] .
 
 t00682:p2
@@ -63,6 +58,12 @@ t00682:p2
     a :City.n.01 ;
     :name "ASSEN" ;
     :place place:Assen2759633
+  ] ;
+  :rol [
+    a :Spouse ;
+    :tgt :t00682:p1
+  ] , [
+    a :Parent
   ] .
 
 t00682:p3

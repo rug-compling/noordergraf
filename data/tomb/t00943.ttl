@@ -2,7 +2,6 @@
 
 tomb:t00943
   a :Tomb ;
-  :ent t00943:g1 ;
   :image [
     dc:date "2020-03-21T13:21:32"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,13 +14,9 @@ tomb:t00943
     ] ;
     :nd "+53.1384+007.1432"^^ll:
   ] ;
-  :subject t00943:p1, t00943:p2, t00943:p3 ;
+  :subject t00943:p1 ;
   :quo "RUST ZACHT LIEVE BERTY"@nld ;
   :site site:gr9696XGoudeschans .
-
-t00943:g1
-  a :Group.n.01 ;
-  :mem t00943:p2, t00943:p3 .
 
 t00943:p1
   a :Male ;
@@ -30,7 +25,7 @@ t00943:p1
   :nam "ALBERT HARM", "BERTY" ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00943:g1
+    :tgt t00943:p2, t00943:p3
   ] .
 
 t00943:p2

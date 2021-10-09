@@ -2,7 +2,6 @@
 
 tomb:t00656
   a :Tomb ;
-  :ent t00656:g1 ;
   :image [
     dc:date "2019-11-16T14:02:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -17,10 +16,6 @@ tomb:t00656
   ] ;
   :subject t00656:p1, t00656:p2, t00656:p3 ;
   :site site:fr8917AVleeuwarden .
-
-t00656:g1
-  a :Group.n.01 ;
-  :mem t00656:p1, t00656:p2 .
 
 t00656:p1
   a :Male ;
@@ -45,6 +40,6 @@ t00656:p3
   :nam "JAN" ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00656:g1
+    :tgt t00656:p1, t00656:p2
   ] .
 

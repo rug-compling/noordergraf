@@ -2,13 +2,6 @@
 
 tomb:t00675
   a :Tomb ;
-  :ent t00675:g1, t00675:g2, [
-    a :Group.n.01 ;
-    :rol [
-      a :Grandchild.n.01 ;
-      :tgt t00675:g1
-    ]
-  ] ;
   :image [
     dc:date "2019-12-14T13:33:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,21 +17,6 @@ tomb:t00675
   :subject t00675:p1, t00675:p2 ;
   :site site:fr8701DWbolsward .
 
-t00675:g1
-  a :Group.n.01 ;
-  :mem t00675:p1, t00675:p2 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00675:g2
-  ] .
-
-t00675:g2
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00675:g1
-  ] .
-
 t00675:p1
   a :Male ;
   :dateOfBirth "1910-11-03"^^xsd:date ;
@@ -46,6 +24,8 @@ t00675:p1
   :nam "THEO VAN BERGEN" ;
   :rol [
     a :Grandfather.n.01
+  ] , [
+    a :Parent.n.01
   ] .
 
 t00675:p2
@@ -55,5 +35,7 @@ t00675:p2
   :nam "BOUKJE DE REE" ;
   :rol [
     a :Grandmother.n.01
+  ] , [
+    a :Parent.n.01
   ] .
 

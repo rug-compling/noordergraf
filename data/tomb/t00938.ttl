@@ -2,7 +2,6 @@
 
 tomb:t00938
   a :Tomb ;
-  :ent t00938:g1, t00938:g2 ;
   :image [
     dc:date "2020-03-18T10:27:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,17 +14,9 @@ tomb:t00938
     ] ;
     :nd "+53.2394+006.5527"^^ll:
   ] ;
-  :subject t00938:p1, t00938:p2, t00938:p3, t00938:p4 ;
+  :subject t00938:p1, t00938:p3, t00938:p4 ;
   :site site:gr9741GHgroningen ;
   :txt "EN ONZE LIEVE VROUW EN MOEDER"@nld, "RUSTPLAATS VAN ONZE LIEVE DOCHTER EN ZUSTER"@nld .
-
-t00938:g1
-  a :Group.n.01 ;
-  :mem t00938:p3, t00938:p4 .
-
-t00938:g2
-  a :Group.n.01 ;
-  :mem t00938:p1, t00938:p2 .
 
 t00938:p1
   a :Female ;
@@ -34,7 +25,7 @@ t00938:p1
   :nam "JOHANNA ELLECHINA BLIKSLAGER" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00938:g1
+    :tgt t00938:p3, t00938:p4
   ], [
     a :Sister.n.01 ;
     :tgt t00938:p2
@@ -53,7 +44,7 @@ t00938:p3
     :tgt t00938:p4
   ], [
     a :Mother.n.01 ;
-    :tgt t00938:g2
+    :tgt t00938:p1, t00938:p2
   ], [
     a :Spouse.n.01 ;
     :tgt t00938:p4

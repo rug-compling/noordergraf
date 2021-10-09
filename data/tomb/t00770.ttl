@@ -2,7 +2,6 @@
 
 tomb:t00770
   a :Tomb ;
-  :ent t00770:g1 ;
   :image [
     dc:date "2019-12-21T13:05:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,10 +21,6 @@ t00770:c1
   a :Village.n.02 ;
   :name "WEERDINGE" ;
   :place place:Weerdinge2744927 .
-
-t00770:g1
-  a :Group.n.01 ;
-  :mem t00770:p1, t00770:p2 .
 
 t00770:p1
   a :Male ;
@@ -60,6 +55,6 @@ t00770:p3
   :placeOfDeath t00770:c1 ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00770:g1
+    :tgt t00770:p1, t00770:p2
   ] .
 

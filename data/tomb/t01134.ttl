@@ -2,11 +2,6 @@
 
 tomb:t01134
   a :Tomb ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t01134:p1, t01134:p2 ;
-    :rol t01134:r1
-  ] ;
   :image [
     dc:date "2021-04-23T11:21:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -36,18 +31,16 @@ t01134:p1
   a :Person ;
   :dateOfBirth "1875-05-30"^^xsd:date ;
   :dateOfDeath "1953-01-11"^^xsd:date ;
-  :nam "T. NIEUWOLD" .
+  :nam "T. NIEUWOLD" ;
+  :rol [
+    a :Parent.n.01
+  ] .
 
 t01134:p2
   a :Person ;
   :dateOfBirth "1897-02-22"^^xsd:date ;
   :dateOfDeath "1957-08-24"^^xsd:date ;
-  :nam "J. ROFFEL" .
-
-t01134:r1
-  a :Commemorator.n.01, :Parent.n.01 ;
-  :tgt [
-    a :Group.n.01 ;
-    :rol t01134:r1
+  :nam "J. ROFFEL" ;
+  :rol [
+    a :Parent.n.01
   ] .
-

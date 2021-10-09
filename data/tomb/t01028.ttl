@@ -2,14 +2,6 @@
 
 tomb:t01028
   a :Tomb ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t01028:p3, t01028:p4, t01028:p5 ;
-    :rol [
-      a :Child.n.02 ;
-      :tgt t01028:p1
-    ]
-  ] ;
   :image [
     dc:date "2020-04-17T18:28:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -52,17 +44,29 @@ t01028:p3
   a :Male ;
   :dateOfBirth "1884-03-18"^^xsd:date ;
   :dateOfDeath "1885-09-25"^^xsd:date ;
-  :nam "EKKE" .
+  :nam "EKKE" ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t01028:p1
+  ] .
 
 t01028:p4
   a :Male ;
   :dateOfBirth "1880-04-02"^^xsd:date ;
   :dateOfDeath "1886-02-25"^^xsd:date ;
-  :nam "SIEMEN" .
+  :nam "SIEMEN" ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t01028:p1
+  ] .
 
 t01028:p5
   a :Male ;
   :dateOfBirth "1882-06-07"^^xsd:date ;
   :dateOfDeath "1886-03-03"^^xsd:date ;
-  :nam "ANJE" .
+  :nam "ANJE" ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t01028:p1
+  ] .
 

@@ -2,7 +2,6 @@
 
 tomb:t00965
   a :Tomb ;
-  :ent t00965:g1 ;
   :image [
     dc:date "2020-03-27T17:03:51"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,13 +14,9 @@ tomb:t00965
     ] ;
     :nd "+53.1626+006.6145"^^ll:
   ] ;
-  :subject t00965:p1, t00965:p2, t00965:p3 ;
+  :subject t00965:p1 ;
   :ref t00965:v1 ;
   :site site:gr9752CMharen .
-
-t00965:g1
-  a :Group.n.01 ;
-  :mem t00965:p2, t00965:p3 .
 
 t00965:p1
   a :Female ;
@@ -30,7 +25,7 @@ t00965:p1
   :nam "ALEIDA HIDDING" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00965:g1
+    :tgt t00965:p2, t00965:p3
   ] .
 
 t00965:p2

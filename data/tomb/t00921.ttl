@@ -2,7 +2,6 @@
 
 tomb:t00921
   a :Tomb ;
-  :ent t00921:g1 ;
   :image [
     dc:date "2020-03-07T14:13:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,7 +14,7 @@ tomb:t00921
     ] ;
     :nd "+53.1716+006.3650"^^ll:
   ] ;
-  :subject t00921:p1, t00921:p2, t00921:p3 ;
+  :subject t00921:p1 ;
   :site site:gr9351RLtolbert ;
   :sym [
     a :Oak.n.01
@@ -28,10 +27,6 @@ t00921:c1
   :name "TOLBERT" ;
   :place place:Tolbert2746234 .
 
-t00921:g1
-  a :Group.n.01 ;
-  :mem t00921:p2, t00921:p3 .
-
 t00921:p1
   a :Male ;
   :dateOfBirth "1890-02-06"^^xsd:date ;
@@ -43,7 +38,7 @@ t00921:p1
     a :Twin.n.01
   ], [
     a :Daughter.n.01 ;
-    :tgt t00921:g1
+    :tgt t00921:p2, t00921:p3
   ] .
 
 t00921:p2

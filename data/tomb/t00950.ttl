@@ -2,7 +2,6 @@
 
 tomb:t00950
   a :Tomb ;
-  :ent t00950:g1 ;
   :image [
     dc:date "2020-03-25T09:30:51"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -15,15 +14,11 @@ tomb:t00950
     ] ;
     :nd "+53.1200+006.6584"^^ll:
   ] ;
-  :subject t00950:p1, t00950:p2, t00950:p3 ;
+  :subject t00950:p1 ;
   :site site:gr9479TNnoordlaren ;
   :sym [
     a :Butterfly.n.01
   ] .
-
-t00950:g1
-  a :Group.n.01 ;
-  :mem t00950:p2, t00950:p3 .
 
 t00950:p1
   a :Male ;
@@ -42,7 +37,7 @@ t00950:p1
   ] ;
   :rol [
     a :Son.n.01 ;
-    :tgt t00950:g1
+    :tgt t00950:p2, t00950:p3
   ] .
 
 t00950:p2

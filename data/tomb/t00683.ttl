@@ -2,7 +2,6 @@
 
 tomb:t00683
   a :Tomb ;
-  :ent t00683:g1 ;
   :image [
     dc:date "2019-12-14T13:25:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -34,14 +33,6 @@ t00683:c2
   :name "BOLSWARD" ;
   :place place:Bolsward2758682 .
 
-t00683:g1
-  a :Group.n.01 ;
-  :mem t00683:p1, t00683:p2 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00683:p3
-  ] .
-
 t00683:p1
   a :Female ;
   :dateOfBirth "1871-01-11"^^xsd:date ;
@@ -52,7 +43,11 @@ t00683:p1
     :name "GAAST" ;
     :place place:Gaast2755789
   ] ;
-  :placeOfDeath t00683:c2 .
+  :placeOfDeath t00683:c2 ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00683:p3
+  ] .
 
 t00683:p2
   a :Male ;
@@ -64,8 +59,12 @@ t00683:p2
     :name "FERWOUDE" ;
     :place place:Ferwoude2755913
   ] ;
-  :placeOfDeath t00683:c2 .
-
+  :placeOfDeath t00683:c2 ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00683:p3
+  ] .
+  
 t00683:p3
   a :Female ;
   :dateOfBirth "1899-02-12"^^xsd:date ;
@@ -73,6 +72,6 @@ t00683:p3
   :nam "DORTE KOOISTRA" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00683:g1
+    :tgt t00683:p1, t00683:p2
   ] .
 

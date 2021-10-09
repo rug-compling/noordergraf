@@ -2,7 +2,6 @@
 
 tomb:t00004
   a :Tomb ;
-  :ent t00004:g1 ;
   :image [
     dc:date "2019-09-25T16:56:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,10 +22,6 @@ t00004:c1
   :name "GRONINGEN" ;
   :place place:Groningen2755251 .
 
-t00004:g1
-  a :Group.n.01 ;
-  :mem t00004:p2, t00004:p3 .
-
 t00004:p1
   a :Female ;
   :dateOfBirth "1912-10-27"^^xsd:date ;
@@ -36,7 +31,8 @@ t00004:p1
   :placeOfDeath t00004:c1 ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00004:g1
+    :text "eenigste dochter" ;
+    :tgt t00004:p2, t00004:p3
   ] .
 
 t00004:p2

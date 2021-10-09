@@ -2,7 +2,6 @@
 
 tomb:t00029
   a :Tomb ;
-  :ent t00029:g1, t00029:g2, t00029:g3 ;
   :image [
     dc:date "2019-09-25T16:17:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,17 +20,6 @@ tomb:t00029
     a :Frond.n.01
   ] .
 
-t00029:g1
-  a :Group.n.01 ;
-  :mem t00029:p2, t00029:p3 .
-
-t00029:g2
-  a :Group.n.01 ;
-  :mem t00029:p3 .
-
-t00029:g3
-  a :Group.n.01 .
-
 t00029:p1
   a :Female ;
   :dateOfBirth "1915-12-25"^^xsd:date ;
@@ -39,13 +27,11 @@ t00029:p1
   :nam "MARIA HEIDEVELD" ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00029:g1
+    :tgt t00029:p2, t00029:p3
   ], [
-    a :Sister.n.01 ;
-    :tgt t00029:g1
+    a :Sister.n.01
   ], [
-    a :Aunt.n.01 ;
-    :tgt t00029:g1
+    a :Aunt.n.01
   ] .
 
 t00029:p2
@@ -58,7 +44,7 @@ t00029:p2
     :tgt t00029:p3
   ], [
     a :Father.n.01 ;
-    :tgt t00029:g2
+    :tgt t00029:p1
   ], [
     a :Spouse.n.01 ;
     :tgt t00029:p3
@@ -71,6 +57,6 @@ t00029:p3
   :nam "JOHANNA BOS" ;
   :rol [
     a :Mother.n.01 ;
-    :tgt t00029:g3
+    :tgt t00029:p1
   ] .
 

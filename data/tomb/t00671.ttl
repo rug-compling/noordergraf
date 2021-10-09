@@ -2,7 +2,6 @@
 
 tomb:t00671
   a :Tomb ;
-  :ent t00671:g1, t00671:g2, t00671:g3 ;
   :image [
     dc:date "2019-12-14T13:42:29"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -20,42 +19,27 @@ tomb:t00671
   :ref t00671:v1 ;
   :site site:fr8701DWbolsward .
 
-t00671:g1
-  a :Group.n.01 ;
-  :mem t00671:p1, t00671:p2 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00671:g2
-  ], [
-    a :Grandparent.n.01 ;
-    :tgt t00671:g3
-  ] .
-
-t00671:g2
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00671:g1
-  ] .
-
-t00671:g3
-  a :Group.n.01 ;
-  :rol [
-    a :Grandchild.n.01 ;
-    :tgt t00671:g1
-  ] .
-
 t00671:p1
   a :Male ;
   :dateOfBirth "1891-09-14"^^xsd:date ;
   :dateOfDeath "1966-04-15"^^xsd:date ;
-  :nam "CORNELUS A. DE VRIES" .
+  :nam "CORNELUS A. DE VRIES" ;
+  :rol [
+    a :Father
+  ] , [
+    a :Grandfather
+  ] .
 
 t00671:p2
   a :Female ;
   :dateOfBirth "1894-06-11"^^xsd:date ;
   :dateOfDeath "1958-12-21"^^xsd:date ;
-  :nam "FETJE ELZINGA" .
+  :nam "FETJE ELZINGA" ;
+  :rol [
+    a :Mother
+  ] , [
+    a :Grandmother
+  ] .
 
 t00671:v1
   a :Quote ;

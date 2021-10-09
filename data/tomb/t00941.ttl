@@ -2,14 +2,6 @@
 
 tomb:t00941
   a :Tomb ;
-  :ent t00941:g2, [
-    a :Group.n.01 ;
-    :mem t00941:p1, t00941:p2 ;
-    :rol [
-      a :Son.n.01 ;
-      :tgt t00941:g2
-    ]
-  ] ;
   :image [
     dc:date "2020-03-21T13:24:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,27 +14,31 @@ tomb:t00941
     ] ;
     :nd "+53.1383+007.1431"^^ll:
   ] ;
-  :subject t00941:p1, t00941:p2, t00941:p3, t00941:p4 ;
+  :subject t00941:p1, t00941:p2 ;
   :site site:gr9696XGoudeschans ;
   :sym [
     a :WeepingWillow
   ] .
 
-t00941:g2
-  a :Group.n.01 ;
-  :mem t00941:p3, t00941:p4 .
-
 t00941:p1
   a :Male ;
   :dateOfBirth "1898-03-09"^^xsd:date ;
   :dateOfDeath "1898-04-12"^^xsd:date ;
-  :nam "GEERT FEKKO" .
+  :nam "GEERT FEKKO" ;
+  :rol [
+    a :Son.n.01 ;
+    :tgt t00941:p3, t00941:p4
+  ] .
 
 t00941:p2
   a :Male ;
   :dateOfBirth "1900-07-10"^^xsd:date ;
   :dateOfDeath "1900-07-25"^^xsd:date ;
-  :nam "GEERT FEKKO" .
+  :nam "GEERT FEKKO" ;
+  :rol [
+    a :Son.n.01 ;
+    :tgt t00941:p3, t00941:p4
+  ] .
 
 t00941:p3
   a :Person ;

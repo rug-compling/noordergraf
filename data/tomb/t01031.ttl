@@ -2,13 +2,6 @@
 
 tomb:t01031
   a :Tomb ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t01031:p1, t01031:p2 ;
-    :rol [
-      a :Parent.n.01
-    ]
-  ] ;
   :image [
     dc:date "2020-04-19T12:05:53"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -49,6 +42,9 @@ t01031:p1
     a :Village.n.02 ;
     :name "NOORDHORN" ;
     :place place:Noordhorn2749875
+  ] ;
+  :rol [
+    a :Parent.n.01
   ] .
 
 t01031:p2
@@ -62,5 +58,7 @@ t01031:p2
     a :Widow.n.01 ;
     :begin "1853"^^xsd:gYear ;
     :tgt t01031:p2
+  ] , [
+    a :Parent.n.01
   ] .
 

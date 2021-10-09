@@ -2,14 +2,6 @@
 
 tomb:t00934
   a :Tomb ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t00934:p2, t00934:p3 ;
-    :rol [
-      a :Parent.n.01 ;
-      :tgt t00934:p1
-    ]
-  ] ;
   :image [
     dc:date "2020-03-18T09:02:52"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -36,13 +28,21 @@ t00934:p2
   a :Male ;
   :dateOfBirth "1914-08-13"^^xsd:date ;
   :dateOfDeath "1997-11-05"^^xsd:date ;
-  :nam "SJACOBUS SNIP" .
+  :nam "SJACOBUS SNIP" ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00934:p1
+  ]
 
 t00934:p3
   a :Female ;
   :dateOfBirth "1916-01-07"^^xsd:date ;
   :dateOfDeath "2000-11-23"^^xsd:date ;
-  :nam "GEESJE SNIP-LEEUWE" .
+  :nam "GEESJE SNIP-LEEUWE" ;
+  :rol [
+    a :Parent.n.01 ;
+    :tgt t00934:p1
+  ]
 
 t00934:v1
   a :Quote ;
