@@ -18,9 +18,6 @@ tomb:t00049
   :ref t00049:v1 ;
   :site site:gr9752CMharen .
 
-t00049:g1
-  a :Group.n.01 .
-
 t00049:p1
   a :Male ;
   :dateOfBirth "1890-08-30"^^xsd:date ;
@@ -28,10 +25,9 @@ t00049:p1
   :nam "GEERT JAN FRANSEN" ;
   :rol [
     a :Husband.n.01 ;
-    :tgt t00049:g1, t00049:p2
+    :tgt t00049:p2
   ], [
-    a :Father.n.01 ;
-    :tgt t00049:g1
+    a :Father.n.01
   ], [
     a :Spouse.n.01 ;
     :tgt t00049:p2

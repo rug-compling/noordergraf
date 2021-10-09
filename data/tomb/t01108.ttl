@@ -31,9 +31,6 @@ t01108:c1
   :name "GRIJPSKERK" ;
   :place place:Grijpskerk2755317 .
 
-t01108:g1
-  a :Group.n.01 .
-
 t01108:p1
   a :Female ;
   :dateOfBirth "1843-10-05"^^xsd:date ;
@@ -42,8 +39,7 @@ t01108:p1
   :placeOfBirth t01108:c1 ;
   :placeOfDeath t01108:c1 ;
   :rol [
-    a :Parent.n.01 ;
-    :tgt t01108:g1
+    a :Parent.n.01
   ] .
 
 t01108:p2
@@ -63,7 +59,6 @@ t01108:p2
   ] ;
   :placeOfDeath t01108:c1 ;
   :rol [
-    a :Parent.n.01 ;
-    :tgt t01108:g1
+    a :Parent.n.01
   ] .
 

@@ -27,10 +27,6 @@ tomb:t01107
     a :Frond.n.01
   ] .
 
-t01107:g1
-  a :Group.n.01 ;
-  :mem t01107:p2, t01107:p3 .
-
 t01107:p1
   a :Female ;
   :dateOfBirth "1910-09-02"^^xsd:date ;
@@ -38,20 +34,12 @@ t01107:p1
   :nam "JANSJE BAKKER" ;
   :rol [
     a :Wife.n.01 ;
-    :tgt t01107:g1
+    :tgt t01107:p2
   ], [
-    a :Mother.n.01 ;
-    :tgt t01107:g1
+    a :Mother.n.01
   ] .
 
 t01107:p2
   a :Male ;
   :nam "G. BARF" .
-
-t01107:p3
-  a :Person ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t01107:p1
-  ] .
 

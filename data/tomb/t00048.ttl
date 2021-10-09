@@ -35,9 +35,6 @@ tomb:t00048
     ]
   ] .
 
-t00048:g1
-  a :Group.n.01 .
-
 t00048:p1
   a :Female ;
   :dateOfBirth "1892-07-08"^^xsd:date ;
@@ -45,10 +42,9 @@ t00048:p1
   :nam "IJMKJE WIELINGA" ;
   :rol t00048:r3, [
     a :Wife.n.01 ;
-    :tgt t00048:g1, t00048:p2
+    :tgt t00048:p2
   ], [
-    a :Mother.n.01 ;
-    :tgt t00048:g1
+    a :Mother.n.01
   ] .
 
 t00048:p2
