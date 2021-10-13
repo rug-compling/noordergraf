@@ -14,11 +14,15 @@ tomb:t00244
     ] ;
     :nd "+53.1727+006.6068"^^ll:
   ] ;
-  :subject t00244:p1, t00244:p2 ;
-  :site site:gr9751BBharen .
+  :site site:gr9751BBharen ;
+  :subject t00244:p1, t00244:p2 .
 
 t00244:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y2M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-06-14"^^xsd:date ;
   :dateOfDeath "1951-08-23"^^xsd:date ;
   :nam "FEIKO JACOB BOUMAN" ;
@@ -33,6 +37,10 @@ t00244:p1
 
 t00244:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y2M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1900-02-22"^^xsd:date ;
   :dateOfDeath "1987-05-13"^^xsd:date ;
   :nam "NEELTJE VAN DER WIS" .

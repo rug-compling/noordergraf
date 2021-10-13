@@ -14,11 +14,15 @@ tomb:t00679
     ] ;
     :nd "+53.0675+005.5223"^^ll:
   ] ;
-  :subject t00679:p1, t00679:p2 ;
-  :site site:fr8701DWbolsward .
+  :site site:fr8701DWbolsward ;
+  :subject t00679:p1, t00679:p2 .
 
 t00679:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P25Y7M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-03-25"^^xsd:date ;
   :dateOfDeath "1932-11-03"^^xsd:date ;
   :nam "GEESKE VAN DER MEULEN" ;
@@ -29,6 +33,10 @@ t00679:p1
 
 t00679:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y1M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1904-12-23"^^xsd:date ;
   :dateOfDeath "1984-01-28"^^xsd:date ;
   :nam "GRIET VAN DER MEULEN" ;

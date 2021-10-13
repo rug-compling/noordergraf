@@ -14,8 +14,8 @@ tomb:t00432
     ] ;
     :nd "+53.4791+006.1610"^^ll:
   ] ;
-  :subject t00432:p1, t00432:p2 ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00432:p1, t00432:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -32,6 +32,10 @@ t00432:c1
 
 t00432:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y1M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1850-06-26"^^xsd:date ;
   :dateOfDeath "1911-08-16"^^xsd:date ;
   :nam "JAN LIVIUS VISSER" ;
@@ -44,6 +48,10 @@ t00432:p1
 
 t00432:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y6M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-07-13"^^xsd:date ;
   :dateOfDeath "1953-01-24"^^xsd:date ;
   :nam "TRIJNTJE WIERSMA" ;

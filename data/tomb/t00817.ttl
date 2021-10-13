@@ -14,11 +14,15 @@ tomb:t00817
     ] ;
     :nd "+53.2307+006.5514"^^ll:
   ] ;
-  :subject t00817:p1, t00817:p2, t00817:p3 ;
-  :site site:gr9741ACgroningen .
+  :site site:gr9741ACgroningen ;
+  :subject t00817:p1, t00817:p2, t00817:p3 .
 
 t00817:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1Y10M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1942-08-17"^^xsd:date ;
   :dateOfDeath "1944-07-06"^^xsd:date ;
   :nam "HENKIE" .

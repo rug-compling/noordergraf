@@ -14,9 +14,9 @@ tomb:t00893
     ] ;
     :nd "+53.1726+006.3613"^^ll:
   ] ;
-  :subject t00893:p1, t00893:p2 ;
   :quo "MIJNE HOOP IS \\ OP U, O HEERE!"@nld ;
   :site site:gr9351RLtolbert ;
+  :subject t00893:p1, t00893:p2 ;
   :sym [
     a :Skull.n.01
   ], [
@@ -27,6 +27,10 @@ tomb:t00893
 
 t00893:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y1M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1792-01-16"^^xsd:date ;
   :dateOfDeath "1862-02-28"^^xsd:date ;
   :nam "HINDERKIEN WILLEMS" ;

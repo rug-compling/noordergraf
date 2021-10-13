@@ -14,9 +14,9 @@ tomb:t00367
     ] ;
     :nd "+53.0797+006.5714"^^ll:
   ] ;
-  :subject t00367:p1, t00367:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
+  :subject t00367:p1, t00367:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -28,6 +28,10 @@ t00367:c1
 
 t00367:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P63Y3M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1893-02-22"^^xsd:date ;
   :dateOfDeath "1956-06-13"^^xsd:date ;
   :nam "ALBERDINA VENEKAMP" ;
@@ -40,6 +44,10 @@ t00367:p1
 
 t00367:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-02-25"^^xsd:date ;
   :dateOfDeath "1960-03-15"^^xsd:date ;
   :nam "ALBERT KLAASSENS" ;

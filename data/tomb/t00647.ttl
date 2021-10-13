@@ -14,9 +14,9 @@ tomb:t00647
     ] ;
     :nd "+53.2089+006.6480"^^ll:
   ] ;
-  :subject t00647:p1, t00647:p2 ;
   :ref t00647:v1 ;
   :site site:gr9723EJgroningen ;
+  :subject t00647:p1, t00647:p2 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -25,6 +25,10 @@ tomb:t00647
 
 t00647:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P58Y8M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-08-30"^^xsd:date ;
   :dateOfDeath "1932-05-12"^^xsd:date ;
   :nam "HENDERIKA LUITJES" ;
@@ -40,6 +44,10 @@ t00647:p1
 
 t00647:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y5M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-05-07"^^xsd:date ;
   :dateOfDeath "1947-10-12"^^xsd:date ;
   :nam "KORNELIS BORG" ;

@@ -2,6 +2,10 @@
 
 tomb:t00587
   a :Tomb ;
+  :age [
+    a :Age ;
+    :duration "P44Y4M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-09-20"^^xsd:date ;
   :dateOfDeath "1919-01-26"^^xsd:date ;
   :image [
@@ -25,13 +29,13 @@ tomb:t00587
       :place place:Winsum2744337
     ]
   ] ;
-  :subject t00587:p1 ;
   :placeOfDeath [
     a :City.n.01 ;
     :name "GRONINGEN" ;
     :place place:Groningen2755251
   ] ;
   :site site:gr9951STwinsum ;
+  :subject t00587:p1 ;
   :sym [
     a :WeepingWillow
   ] .

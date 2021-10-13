@@ -14,11 +14,15 @@ tomb:t00982
     ] ;
     :nd "+53.1426+006.5776"^^ll:
   ] ;
-  :subject t00982:p1 ;
-  :site site:dr9761ALeelde .
+  :site site:dr9761ALeelde ;
+  :subject t00982:p1 .
 
 t00982:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1929-04-21"^^xsd:date ;
   :dateOfDeath "2012-04-24"^^xsd:date ;
   :nam "ELS BUSS-BRON" .

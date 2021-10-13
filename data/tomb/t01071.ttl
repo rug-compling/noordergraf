@@ -14,11 +14,15 @@ tomb:t01071
     ] ;
     :nd "+53.1624+006.6143"^^ll:
   ] ;
-  :subject t01071:p1, t01071:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t01071:p1, t01071:p2 .
 
 t01071:p1
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P68Y5M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1883-04-16"^^xsd:date ;
   :dateOfDeath "1951-10-06"^^xsd:date ;
   :nam "B. SANDERS" ;
@@ -35,6 +39,10 @@ t01071:p1
 
 t01071:p2
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P84Y1M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1885-11-25"^^xsd:date ;
   :dateOfDeath "1970-01-10"^^xsd:date ;
   :nam "F.T. SAP" ;

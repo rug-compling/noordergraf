@@ -14,14 +14,18 @@ tomb:t00011
     ] ;
     :nd "+53.1910+006.5930"^^ll:
   ] ;
-  :subject t00011:p1, t00011:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00011:p1, t00011:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00011:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y9M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1877-03-01"^^xsd:date ;
   :dateOfDeath "1938-12-04"^^xsd:date ;
   :nam "LAMMERT LEERTOUWER" ;
@@ -32,6 +36,10 @@ t00011:p1
 
 t00011:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y6M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-03-08"^^xsd:date ;
   :dateOfDeath "1961-09-28"^^xsd:date ;
   :nam "GEESJE KROL" .

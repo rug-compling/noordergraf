@@ -14,26 +14,30 @@ tomb:t00322
     ] ;
     :nd "+52.7157+006.4737"^^ll:
   ] ;
-  :subject t00322:p1, t00322:p2 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00322:p1, t00322:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00322:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y11M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-04-21"^^xsd:date ;
   :dateOfDeath "1932-04-20"^^xsd:date ;
   :nam "AALTJE ZOMER" ;
   :ref [
     a :Quote ;
-    :text "Ps. 23 v.1." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 23 ;
+      :part :Psalm.n.01 ;
       :verse "1"
-    ]
+    ] ;
+    :text "Ps. 23 v.1."
   ] ;
   :rol [
     a :Wife.n.01 ;
@@ -47,18 +51,22 @@ t00322:p1
 
 t00322:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y9M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-10-31"^^xsd:date ;
   :dateOfDeath "1936-08-19"^^xsd:date ;
   :nam "GERRIT SCHOLTEN" ;
   :ref [
     a :Quote ;
-    :text "Ps. 84 v.12c." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 84 ;
+      :part :Psalm.n.01 ;
       :verse "12C"
-    ]
+    ] ;
+    :text "Ps. 84 v.12c."
   ] ;
   :rol [
     a :Father.n.01

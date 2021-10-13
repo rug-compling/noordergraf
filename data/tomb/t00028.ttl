@@ -14,8 +14,8 @@ tomb:t00028
     ] ;
     :nd "+53.1909+006.5946"^^ll:
   ] ;
-  :subject t00028:p1, t00028:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00028:p1, t00028:p2 .
 
 t00028:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00028:c1
 
 t00028:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P53Y5M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1883-02-06"^^xsd:date ;
   :dateOfDeath "1936-07-29"^^xsd:date ;
   :nam "TRIENTJE BIERLING" ;
@@ -45,6 +49,10 @@ t00028:p1
 
 t00028:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y7M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-06-19"^^xsd:date ;
   :dateOfDeath "1952-01-28"^^xsd:date ;
   :nam "MARTINUS ALBERTUS SICCAMA" ;

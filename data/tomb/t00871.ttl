@@ -14,10 +14,10 @@ tomb:t00871
     ] ;
     :nd "+52.7763+006.8041"^^ll:
   ] ;
-  :subject t00871:p1, t00871:p2 ;
   :quo "HIER RUSTEN TOT DEN DAG DER OPSTANDING"@nld ;
   :ref t00871:v1 ;
-  :site site:dr7841CDsleen .
+  :site site:dr7841CDsleen ;
+  :subject t00871:p1, t00871:p2 .
 
 t00871:c2
   a :Village.n.02 ;
@@ -26,6 +26,10 @@ t00871:c2
 
 t00871:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y4M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-09-01"^^xsd:date ;
   :dateOfDeath "1927-01-08"^^xsd:date ;
   :nam "JANTIEN BRINKS" ;
@@ -38,6 +42,10 @@ t00871:p1
 
 t00871:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1857-02-26"^^xsd:date ;
   :dateOfDeath "1932-03-22"^^xsd:date ;
   :nam "J.S. WILTING" ;
@@ -46,11 +54,11 @@ t00871:p2
 
 t00871:v1
   a :Quote ;
-  :text "ZALIG ZIJN DE DOODEN DIE IN DEN HEERE STERVEN"@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :Revelation.n.04 ;
     :verse "13"
-  ] .
+  ] ;
+  :text "ZALIG ZIJN DE DOODEN DIE IN DEN HEERE STERVEN"@nld .
 

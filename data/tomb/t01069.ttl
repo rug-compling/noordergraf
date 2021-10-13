@@ -15,19 +15,19 @@ tomb:t01069
     ] ;
     :nd "+53.1228+006.2507"^^ll:
   ] ;
-  :subject t01069:p1, t01069:p2 ;
   :quo "DE HEER IS MIJN HERDER, MIJ ONTBREEKT NIETS"@nld ;
   :ref [
     a :Quote ;
-    :text "ps. 125 onb."@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 125 ;
-      :comment "onberijmd"
-    ]
+      :comment "onberijmd" ;
+      :part :Psalm.n.01
+    ] ;
+    :text "ps. 125 onb."@nld
   ] ;
   :site site:gr9367PAde_wilp ;
+  :subject t01069:p1, t01069:p2 ;
   :sym [
     a :Oak.n.01
   ], [
@@ -46,6 +46,10 @@ t01069:g1
 
 t01069:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y10M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-03-12"^^xsd:date ;
   :dateOfDeath "1949-01-31"^^xsd:date ;
   :nam "TAEKE VENEMA" ;
@@ -69,6 +73,10 @@ t01069:p1
 
 t01069:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y10M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-09-01"^^xsd:date ;
   :dateOfDeath "1972-07-20"^^xsd:date ;
   :nam "HENDRIKJE BOSMA" ;

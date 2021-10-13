@@ -14,11 +14,15 @@ tomb:t00272
     ] ;
     :nd "+53.2227+006.6378"^^ll:
   ] ;
-  :subject t00272:p1, t00272:p2 ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00272:p1, t00272:p2 .
 
 t00272:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P52Y18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1913-01-30"^^xsd:date ;
   :dateOfDeath "1965-02-17"^^xsd:date ;
   :nam "RINZE STEL" ;

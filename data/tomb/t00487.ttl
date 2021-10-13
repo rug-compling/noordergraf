@@ -14,15 +14,19 @@ tomb:t00487
     ] ;
     :nd "+53.2065+005.7691"^^ll:
   ] ;
-  :subject t00487:p1, t00487:p2, t00487:p3 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00487:p1, t00487:p2, t00487:p3 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00487:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y3M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-10-28"^^xsd:date ;
   :dateOfDeath "1945-02-14"^^xsd:date ;
   :nam "TEKELA MARIA RUURDA" ;
@@ -37,6 +41,10 @@ t00487:p2
 
 t00487:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y2M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-08-18"^^xsd:date ;
   :dateOfDeath "1959-10-26"^^xsd:date ;
   :nam "CHRISTINA WIEMERS" ;

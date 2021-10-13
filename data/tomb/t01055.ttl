@@ -14,15 +14,19 @@ tomb:t01055
     ] ;
     :nd "+53.3603+006.3435"^^ll:
   ] ;
-  :subject t01055:p1, t01055:p2 ;
   :ref t01055:v1 ;
   :site site:gr9971EBulrum ;
+  :subject t01055:p1, t01055:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t01055:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y6M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1835-10-13"^^xsd:date ;
   :dateOfDeath "1927-04-27"^^xsd:date ;
   :nam "AALTJE BORGMAN" ;

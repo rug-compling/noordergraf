@@ -14,9 +14,9 @@ tomb:t00211
     ] ;
     :nd "+53.2221+006.6369"^^ll:
   ] ;
-  :subject t00211:p1, t00211:p2, t00211:p3 ;
   :quo "RUST ZACHT LIEVE OUDERS EN BROER" ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00211:p1, t00211:p2, t00211:p3 .
 
 t00211:c1
   a :Village.n.02 ;
@@ -30,6 +30,10 @@ t00211:c2
 
 t00211:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y8M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-05-14"^^xsd:date ;
   :dateOfDeath "1926-01-24"^^xsd:date ;
   :nam "EPKE KNOLLEMA" ;
@@ -42,6 +46,10 @@ t00211:p1
 
 t00211:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y10M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1867-06-21"^^xsd:date ;
   :dateOfDeath "1937-05-15"^^xsd:date ;
   :nam "IMKE VAN DELDEN" ;
@@ -58,6 +66,10 @@ t00211:p2
 
 t00211:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P36Y4M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-02-19"^^xsd:date ;
   :dateOfDeath "1927-07-16"^^xsd:date ;
   :nam "BEREND E. KNOLLEMA" ;

@@ -14,16 +14,20 @@ tomb:t00182
     ] ;
     :nd "+53.1911+006.5934"^^ll:
   ] ;
-  :subject t00182:p1, t00182:p2 ;
   :picture [
     a :Portrait.n.02 ;
     :thm t00182:p1
   ] ;
   :quo "UW ARBEID ZAL IN ONZEN HEER NIET IJDEL WEZEN, HEM ZIJ DEER" ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00182:p1, t00182:p2 .
 
 t00182:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P43Y1M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-06-23"^^xsd:date ;
   :dateOfDeath "1931-08-18"^^xsd:date ;
   :nam "KAREL DUIKER" ;

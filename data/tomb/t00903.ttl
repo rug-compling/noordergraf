@@ -14,14 +14,18 @@ tomb:t00903
     ] ;
     :nd "+53.1723+006.3618"^^ll:
   ] ;
-  :subject t00903:p1, t00903:p2 ;
   :site site:gr9351RLtolbert ;
+  :subject t00903:p1, t00903:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00903:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y4M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1818-04-13"^^xsd:date ;
   :dateOfDeath "1883-09-11"^^xsd:date ;
   :nam "JAN PIERS BERGUIS" ;

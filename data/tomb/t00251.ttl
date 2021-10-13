@@ -14,22 +14,26 @@ tomb:t00251
     ] ;
     :nd "+53.2031+006.5652"^^ll:
   ] ;
-  :subject t00251:p1, t00251:p2 ;
   :quo "EEN GEBROKEN EN VERSLAGEN HART ZULT GIJ O GOD NIET VERACHTEN" ;
   :ref [
     a :Quote ;
-    :text "Ps.51:19B" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 51 ;
+      :part :Psalm.n.01 ;
       :verse "19B"
-    ]
+    ] ;
+    :text "Ps.51:19B"
   ] ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00251:p1, t00251:p2 .
 
 t00251:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y9M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-12-23"^^xsd:date ;
   :dateOfDeath "1921-09-30"^^xsd:date ;
   :nam "EELKO JAN GROENEVELD" ;

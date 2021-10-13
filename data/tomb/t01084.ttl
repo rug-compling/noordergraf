@@ -14,11 +14,15 @@ tomb:t01084
     ] ;
     :nd "+53.1901+006.5944"^^ll:
   ] ;
-  :subject t01084:p1, t01084:p3 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t01084:p1, t01084:p3 .
 
 t01084:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y9M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-08-25"^^xsd:date ;
   :dateOfDeath "1945-05-30"^^xsd:date ;
   :nam "EGBERT ROELF KLEVE" ;
@@ -46,6 +50,10 @@ t01084:p2
 
 t01084:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y5M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1853-10-01"^^xsd:date ;
   :dateOfDeath "1936-03-07"^^xsd:date ;
   :nam "LUCRETIA MIDDEL" ;

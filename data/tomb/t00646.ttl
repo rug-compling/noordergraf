@@ -14,11 +14,15 @@ tomb:t00646
     ] ;
     :nd "+53.2090+006.6478"^^ll:
   ] ;
-  :subject t00646:p1 ;
-  :site site:gr9723EJgroningen .
+  :site site:gr9723EJgroningen ;
+  :subject t00646:p1 .
 
 t00646:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P20Y8M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-06-21"^^xsd:date ;
   :dateOfDeath "1919-03-10"^^xsd:date ;
   :nam "BEREND ZONDERMAN" ;

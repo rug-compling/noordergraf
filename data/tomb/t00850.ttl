@@ -14,10 +14,10 @@ tomb:t00850
     ] ;
     :nd "+53.2958+005.0653"^^ll:
   ] ;
-  :subject t00850:p1, t00850:p2, t00850:p3 ;
   :quo "DAT ZIJ RUSTEN IN VREDE"@nld ;
   :ref t00850:v1 ;
   :site site:fr8899AWoost_vlieland ;
+  :subject t00850:p1, t00850:p2, t00850:p3 ;
   :sym [
     a :Cross.n.03
   ], [
@@ -38,6 +38,10 @@ t00850:c3
 
 t00850:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P63Y5M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-03-08"^^xsd:date ;
   :dateOfDeath "1925-08-11"^^xsd:date ;
   :nam "MARTJE BOER" ;
@@ -60,6 +64,10 @@ t00850:p1
 
 t00850:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P12Y9M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-05-26"^^xsd:date ;
   :dateOfDeath "1908-03-17"^^xsd:date ;
   :nam "MINA" ;
@@ -74,6 +82,10 @@ t00850:p2
 
 t00850:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y9M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1852-06-15"^^xsd:date ;
   :dateOfDeath "1937-03-19"^^xsd:date ;
   :nam "PIETER KOOIJMAN" ;

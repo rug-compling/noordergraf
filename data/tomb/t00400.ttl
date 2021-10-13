@@ -14,14 +14,18 @@ tomb:t00400
     ] ;
     :nd "+53.2516+006.1450"^^ll:
   ] ;
-  :subject t00400:p1, t00400:p2 ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00400:p1, t00400:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00400:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y2M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1837-10-12"^^xsd:date ;
   :dateOfDeath "1913-01-07"^^xsd:date ;
   :nam "RINDERT J. HULSHOFF" ;

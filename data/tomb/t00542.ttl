@@ -14,11 +14,15 @@ tomb:t00542
     ] ;
     :nd "+53.1043+006.8760"^^ll:
   ] ;
-  :subject t00542:p1, t00542:p2 ;
-  :site site:gr9641ANveendam .
+  :site site:gr9641ANveendam ;
+  :subject t00542:p1, t00542:p2 .
 
 t00542:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P56Y8M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1839-11-26"^^xsd:date ;
   :dateOfDeath "1896-08-20"^^xsd:date ;
   :nam "JAN VAN LINGE" ;
@@ -26,6 +30,10 @@ t00542:p1
 
 t00542:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y8M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1845-03-06"^^xsd:date ;
   :dateOfDeath "1913-11-08"^^xsd:date ;
   :nam "TJIETSKA VAN DER WAL" ;

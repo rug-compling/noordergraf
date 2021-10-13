@@ -14,11 +14,15 @@ tomb:t01051
     ] ;
     :nd "+53.3604+006.3436"^^ll:
   ] ;
-  :subject t01051:p1, t01051:p2 ;
-  :site site:gr9971EBulrum .
+  :site site:gr9971EBulrum ;
+  :subject t01051:p1, t01051:p2 .
 
 t01051:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y7M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-10-24"^^xsd:date ;
   :dateOfDeath "1965-06-02"^^xsd:date ;
   :nam "ALIDA LASTHUIS" ;
@@ -29,6 +33,10 @@ t01051:p1
 
 t01051:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P98Y5M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-01-16"^^xsd:date ;
   :dateOfDeath "1973-06-28"^^xsd:date ;
   :nam "ROELF LOOTS" .

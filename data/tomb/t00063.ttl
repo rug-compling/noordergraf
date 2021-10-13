@@ -14,8 +14,8 @@ tomb:t00063
     ] ;
     :nd "+53.1914+006.5945"^^ll:
   ] ;
-  :subject t00063:p1, t00063:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00063:p1, t00063:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00063
 
 t00063:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P32Y7M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1910-12-13"^^xsd:date ;
   :dateOfDeath "1943-08-01"^^xsd:date ;
   :nam "DANIEL JACOB SMIT" ;

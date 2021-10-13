@@ -14,8 +14,8 @@ tomb:t00728
     ] ;
     :nd "+52.7823+006.8981"^^ll:
   ] ;
-  :subject t00728:p1, t00728:p2 ;
   :site site:dr7811HEemmen ;
+  :subject t00728:p1, t00728:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00728:c1
 
 t00728:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y11M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1826-07-30"^^xsd:date ;
   :dateOfDeath "1898-07-07"^^xsd:date ;
   :nam "JAN LIPMAN" ;

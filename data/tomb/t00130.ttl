@@ -14,11 +14,15 @@ tomb:t00130
     ] ;
     :nd "+53.2061+006.5716"^^ll:
   ] ;
-  :subject t00130:p1, t00130:p2 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00130:p1, t00130:p2 .
 
 t00130:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1845-02-15"^^xsd:date ;
   :dateOfDeath "1933-02-18"^^xsd:date ;
   :nam "WESSELINA DRENTH" ;

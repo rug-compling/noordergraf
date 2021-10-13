@@ -14,15 +14,19 @@ tomb:t00359
     ] ;
     :nd "+53.0800+006.5716"^^ll:
   ] ;
-  :subject t00359:p1, t00359:p2 ;
   :quo "RUST ZACHT LIEVE VROUW EN MOEDER" ;
   :site site:dr9481CGvries ;
+  :subject t00359:p1, t00359:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00359:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P33Y11M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-06-25"^^xsd:date ;
   :dateOfDeath "1935-06-02"^^xsd:date ;
   :nam "GEERTIEN BATHOORN" ;
@@ -47,12 +51,12 @@ t00359:p1
     :place place:Molkwerum2750647
   ] ;
   :rol [
-    a :Wife.n.01 ;
-    :tgt t00359:p2
-  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
+    :tgt t00359:p2
+  ], [
+    a :Wife.n.01 ;
     :tgt t00359:p2
   ] .
 

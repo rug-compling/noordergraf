@@ -14,15 +14,19 @@ tomb:t00531
     ] ;
     :nd "+53.1042+006.8745"^^ll:
   ] ;
-  :subject t00531:p1, t00531:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:gr9641ANveendam ;
+  :subject t00531:p1, t00531:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00531:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y8M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-12-25"^^xsd:date ;
   :dateOfDeath "1925-08-26"^^xsd:date ;
   :nam "GEERT HERWIG" ;

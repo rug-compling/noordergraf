@@ -14,24 +14,28 @@ tomb:t00308
     ] ;
     :nd "+52.7158+006.4738"^^ll:
   ] ;
-  :subject t00308:p1 ;
   :ref [
     a :Quote ;
-    :text "Ps. 90 vs. 4,5,6." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 90 ;
+      :part :Psalm.n.01 ;
       :verse "4-6"
-    ]
+    ] ;
+    :text "Ps. 90 vs. 4,5,6."
   ] ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00308:p1 ;
   :sym [
     a :BrokenFrond
   ] .
 
 t00308:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P21Y8M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1911-04-18"^^xsd:date ;
   :dateOfDeath "1933-01-10"^^xsd:date ;
   :nam "KLAAS ENGBERTS" ;

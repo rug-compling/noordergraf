@@ -14,8 +14,8 @@ tomb:t00920
     ] ;
     :nd "+53.1911+006.5930"^^ll:
   ] ;
-  :subject t00920:p1, t00920:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00920:p1, t00920:p2 ;
   :text """willem dirk
 nicolaas smeenk
 vrouwenarts
@@ -39,6 +39,10 @@ t00920:c3
 
 t00920:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P28Y3M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1902-08-15"^^xsd:date ;
   :dateOfDeath "1930-11-28"^^xsd:date ;
   :nam "WILLEM DIRK NICOLAAS SMEENK" ;
@@ -55,6 +59,10 @@ t00920:p1
 
 t00920:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y11M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-07-30"^^xsd:date ;
   :dateOfDeath "1972-07-26"^^xsd:date ;
   :nam "GERARD JAN SMEENK" ;

@@ -14,11 +14,15 @@ tomb:t00298
     ] ;
     :nd "+52.7153+006.4739"^^ll:
   ] ;
-  :subject t00298:p1, t00298:p2 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00298:p1, t00298:p2 .
 
 t00298:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P34Y5M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-01-05"^^xsd:date ;
   :dateOfDeath "1925-06-12"^^xsd:date ;
   :nam "BEREND BAKKER" ;

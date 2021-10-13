@@ -14,8 +14,8 @@ tomb:t00975
     ] ;
     :nd "+53.1201+006.6589"^^ll:
   ] ;
-  :subject t00975:p1, t00975:p2 ;
   :site site:gr9479TNnoordlaren ;
+  :subject t00975:p1, t00975:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -28,6 +28,10 @@ tomb:t00975
 
 t00975:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y6M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1823-07-08"^^xsd:date ;
   :dateOfDeath "1875-02-05"^^xsd:date ;
   :nam "TIETJE LEENDERS" ;

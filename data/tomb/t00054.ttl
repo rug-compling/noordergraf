@@ -14,11 +14,15 @@ tomb:t00054
     ] ;
     :nd "+53.1625+006.6157"^^ll:
   ] ;
-  :subject t00054:p1, t00054:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00054:p1, t00054:p2 .
 
 t00054:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y3M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1913-09-06"^^xsd:date ;
   :dateOfDeath "1968-12-15"^^xsd:date ;
   :nam "ANNECHIEN BAZUIN" ;
@@ -31,6 +35,10 @@ t00054:p1
 
 t00054:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y9M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1904-12-14"^^xsd:date ;
   :dateOfDeath "1978-09-21"^^xsd:date ;
   :nam "GERRIT BAZUIN" ;

@@ -14,8 +14,8 @@ tomb:t01042
     ] ;
     :nd "+53.2649+006.3939"^^ll:
   ] ;
-  :subject t01042:p1, t01042:p2 ;
   :site site:gr9804TEnoordhorn ;
+  :subject t01042:p1, t01042:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -26,17 +26,21 @@ tomb:t01042
 
 t01042:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y11M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-12-01"^^xsd:date ;
   :dateOfDeath "1953-11-16"^^xsd:date ;
   :nam "GEESKE HELMANTEL" ;
   :ref [
     a :Quote ;
-    :text "ps. 23" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
-      :chapter 23
-    ]
+      :chapter 23 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "ps. 23"
   ] ;
   :rol [
     a :Spouse.n.01 ;
@@ -45,15 +49,19 @@ t01042:p1
 
 t01042:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y7M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-05-25"^^xsd:date ;
   :dateOfDeath "1956-01-03"^^xsd:date ;
   :nam "EDZO VAN DER VEEN" ;
   :ref [
     a :Quote ;
-    :text "gez. 29" ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gez. 29"
   ] ;
   :rol [
     a :Widower.n.01 ;

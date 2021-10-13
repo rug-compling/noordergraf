@@ -14,8 +14,8 @@ tomb:t00051
     ] ;
     :nd "+53.1631+006.6131"^^ll:
   ] ;
-  :subject t00051:p1, t00051:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00051:p1, t00051:p2 .
 
 t00051:c2
   a :Town.n.01 ;
@@ -24,6 +24,10 @@ t00051:c2
 
 t00051:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1889-10-04"^^xsd:date ;
   :dateOfDeath "1949-10-24"^^xsd:date ;
   :nam "JOHANNA NIEBORG" ;
@@ -42,6 +46,10 @@ t00051:p1
 
 t00051:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y9M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-04-20"^^xsd:date ;
   :dateOfDeath "1954-02-17"^^xsd:date ;
   :nam "GEERT MULDER" ;

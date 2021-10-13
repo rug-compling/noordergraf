@@ -14,14 +14,18 @@ tomb:t00176
     ] ;
     :nd "+53.1907+006.5930"^^ll:
   ] ;
-  :subject t00176:p1, t00176:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00176:p1, t00176:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00176:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y2M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-01-27"^^xsd:date ;
   :dateOfDeath "1931-04-07"^^xsd:date ;
   :nam "HARMKE STREUPER" ;
@@ -32,6 +36,10 @@ t00176:p1
 
 t00176:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P92Y7M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1860-04-12"^^xsd:date ;
   :dateOfDeath "1952-12-01"^^xsd:date ;
   :nam "EGBERT SLAGTER" .

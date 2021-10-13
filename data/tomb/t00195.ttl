@@ -14,14 +14,18 @@ tomb:t00195
     ] ;
     :nd "+53.1874+006.5970"^^ll:
   ] ;
-  :subject t00195:p1, t00195:p2, t00195:p3 ;
   :site site:gr9722SNgroningen ;
+  :subject t00195:p1, t00195:p2, t00195:p3 ;
   :sym [
     a :Rose.n.01
   ] .
 
 t00195:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P33Y2M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-07-15"^^xsd:date ;
   :dateOfDeath "1932-09-17"^^xsd:date ;
   :nam "ANNIE STUIVINGA" ;

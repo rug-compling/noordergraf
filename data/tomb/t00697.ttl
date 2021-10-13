@@ -14,19 +14,19 @@ tomb:t00697
     ] ;
     :nd "+52.7815+006.9005"^^ll:
   ] ;
-  :subject t00697:p1, t00697:p2 ;
   :quo "RUST ZACHT"@nld ;
   :ref [
     a :Quote ;
-    :text "Ps 4.9"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 4 ;
+      :part :Psalm.n.01 ;
       :verse "9"
-    ]
+    ] ;
+    :text "Ps 4.9"@nld
   ] ;
   :site site:dr7811HEemmen ;
+  :subject t00697:p1, t00697:p2 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -35,6 +35,10 @@ tomb:t00697
 
 t00697:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y7M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-01-21"^^xsd:date ;
   :dateOfDeath "1941-09-01"^^xsd:date ;
   :nam "HENDERKIEN DENEN" ;

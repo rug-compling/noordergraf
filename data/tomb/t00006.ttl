@@ -14,12 +14,16 @@ tomb:t00006
     ] ;
     :nd "+53.1898+006.5930"^^ll:
   ] ;
-  :subject t00006:p1, t00006:p2 ;
   :quo "LIEWE HEIT EN MEM US BOAN IS JIM LEAN"@fry ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00006:p1, t00006:p2 .
 
 t00006:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y10M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-04-03"^^xsd:date ;
   :dateOfDeath "1940-02-09"^^xsd:date ;
   :nam "AALTJE DE VOS" ;
@@ -30,6 +34,10 @@ t00006:p1
 
 t00006:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y7M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1883-08-31"^^xsd:date ;
   :dateOfDeath "1963-04-21"^^xsd:date ;
   :nam "EGBERT HOORNVELD" .

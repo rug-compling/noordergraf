@@ -14,19 +14,23 @@ tomb:t00347
     ] ;
     :nd "+53.0802+006.5725"^^ll:
   ] ;
-  :subject t00347:p1, t00347:p2 ;
   :quo "IK KEN DE ROTS WAAROP IK BOUWE" ;
   :ref [
     a :Quote ;
-    :text "gez. 110:3" ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gez. 110:3"
   ] ;
-  :site site:dr9481CGvries .
+  :site site:dr9481CGvries ;
+  :subject t00347:p1, t00347:p2 .
 
 t00347:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P29Y10M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1935-10-29"^^xsd:date ;
   :dateOfDeath "1965-09-07"^^xsd:date ;
   :nam "ALBERTJE PLOEG" ;

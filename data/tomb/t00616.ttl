@@ -14,8 +14,8 @@ tomb:t00616
     ] ;
     :nd "+53.1644+006.7541"^^ll:
   ] ;
-  :subject t00616:p1, t00616:p2, t00616:p3 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00616:p1, t00616:p2, t00616:p3 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00616:c1
 
 t00616:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P48Y1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1825-06-21"^^xsd:date ;
   :dateOfDeath "1873-06-22"^^xsd:date ;
   :nam "A.H. SUUROVERSTE" ;
@@ -40,6 +44,10 @@ t00616:p1
 
 t00616:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y2M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1826-04-23"^^xsd:date ;
   :dateOfDeath "1901-07-12"^^xsd:date ;
   :nam "J. NIJMANDS" ;
@@ -52,6 +60,10 @@ t00616:p2
 
 t00616:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y4M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1839-01-22"^^xsd:date ;
   :dateOfDeath "1906-05-29"^^xsd:date ;
   :nam "T. LANTING" ;

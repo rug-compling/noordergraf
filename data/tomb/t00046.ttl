@@ -14,8 +14,8 @@ tomb:t00046
     ] ;
     :nd "+53.1631+006.6129"^^ll:
   ] ;
-  :subject t00046:p1, t00046:p2 ;
   :site site:gr9752CMharen ;
+  :subject t00046:p1, t00046:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -29,6 +29,10 @@ tomb:t00046
 
 t00046:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P29Y1M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-02-01"^^xsd:date ;
   :dateOfDeath "1925-03-04"^^xsd:date ;
   :nam "ROELOF DRENTH" ;

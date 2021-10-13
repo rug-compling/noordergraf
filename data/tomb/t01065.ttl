@@ -14,11 +14,15 @@ tomb:t01065
     ] ;
     :nd "+53.3609+006.2929"^^ll:
   ] ;
-  :subject t01065:p1, t01065:p2 ;
-  :site site:gr9975VRvierhuizen .
+  :site site:gr9975VRvierhuizen ;
+  :subject t01065:p1, t01065:p2 .
 
 t01065:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P44Y20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-05-31"^^xsd:date ;
   :dateOfDeath "1932-06-20"^^xsd:date ;
   :nam "LUBBE DE BRAAK" ;
@@ -40,6 +44,10 @@ t01065:p1
 
 t01065:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y9M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1887-10-05"^^xsd:date ;
   :dateOfDeath "1975-07-28"^^xsd:date ;
   :nam "JANTJE RENKEMA" ;
@@ -63,8 +71,8 @@ t01065:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Revelation.n.04 ;
     :chapter 22 ;
+    :part :Revelation.n.04 ;
     :verse "20"
   ] .
 
@@ -72,8 +80,8 @@ t01065:v2
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Epistle_to_the_Romans.n.04 ;
     :chapter 14 ;
+    :part :Epistle_to_the_Romans.n.04 ;
     :verse "8B"
   ] .
 

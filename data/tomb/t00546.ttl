@@ -2,6 +2,7 @@
 
 tomb:t00546
   a :Tomb ;
+  :creator t00546:p3 ;
   :image [
     dc:date "2019-11-24T14:12:53"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,9 +15,8 @@ tomb:t00546
     ] ;
     :nd "+53.1041+006.8753"^^ll:
   ] ;
-  :subject t00546:p1, t00546:p2 ;
-  :creator t00546:p3 ;
   :site site:gr9641ANveendam ;
+  :subject t00546:p1, t00546:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt t00546:s3, t00546:s5, [
@@ -26,6 +26,10 @@ tomb:t00546
 
 t00546:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y8M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1842-02-18"^^xsd:date ;
   :dateOfDeath "1926-11-15"^^xsd:date ;
   :nam "ANNA KOOL" ;

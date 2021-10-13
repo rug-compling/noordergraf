@@ -14,14 +14,18 @@ tomb:t00343
     ] ;
     :nd "+52.7158+006.4728"^^ll:
   ] ;
-  :subject t00343:p1, t00343:p2, t00343:p3 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00343:p1, t00343:p2, t00343:p3 ;
   :sym [
     a :Weeping_wllow.n.01
   ] .
 
 t00343:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P45Y3M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-08-08"^^xsd:date ;
   :dateOfDeath "1942-12-07"^^xsd:date ;
   :nam "HENDRIKJE STEEN" ;
@@ -35,6 +39,10 @@ t00343:p1
 
 t00343:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P6Y3M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1936-08-19"^^xsd:date ;
   :dateOfDeath "1942-12-07"^^xsd:date ;
   :nam "WILLEM" ;
@@ -45,6 +53,10 @@ t00343:p2
 
 t00343:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-01-01"^^xsd:date ;
   :dateOfDeath "1973-01-08"^^xsd:date ;
   :nam "AREND GORT" .

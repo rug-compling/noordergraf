@@ -14,12 +14,16 @@ tomb:t00156
     ] ;
     :nd "+53.2060+006.5698"^^ll:
   ] ;
-  :subject t00156:p1, t00156:p2, t00156:p3 ;
   :ref t00156:v1 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00156:p1, t00156:p2, t00156:p3 .
 
 t00156:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P45Y8M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-08-08"^^xsd:date ;
   :dateOfDeath "1941-04-11"^^xsd:date ;
   :nam "FROUKJE SCHRIPSEMA" ;
@@ -29,6 +33,10 @@ t00156:p1
 
 t00156:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y10M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1893-09-10"^^xsd:date ;
   :dateOfDeath "1954-07-14"^^xsd:date ;
   :nam "MENNE FABER" ;
@@ -41,6 +49,10 @@ t00156:p2
 
 t00156:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y2M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-09-10"^^xsd:date ;
   :dateOfDeath "1970-12-09"^^xsd:date ;
   :nam "DIRKJE NIEUWHOF" .
@@ -53,3 +65,4 @@ t00156:v1
     :part :Second_Epistle_to_Timothy.n.01 ;
     :verse "7-8A"
   ] .
+

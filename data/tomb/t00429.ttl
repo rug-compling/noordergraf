@@ -14,11 +14,15 @@ tomb:t00429
     ] ;
     :nd "+53.4791+006.1610"^^ll:
   ] ;
-  :subject t00429:p1, t00429:p2 ;
-  :site site:fr9166NAschiermonnikoog .
+  :site site:fr9166NAschiermonnikoog ;
+  :subject t00429:p1, t00429:p2 .
 
 t00429:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1903"^^xsd:gYear ;
   :dateOfDeath "1974"^^xsd:gYear ;
   :nam "JAN VISSER" ;
@@ -29,6 +33,10 @@ t00429:p1
 
 t00429:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1912"^^xsd:gYear ;
   :dateOfDeath "1978"^^xsd:gYear ;
   :nam "AAFJE YTJE JANSMA" ;

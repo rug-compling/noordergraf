@@ -14,15 +14,19 @@ tomb:t00030
     ] ;
     :nd "+53.1627+006.6126"^^ll:
   ] ;
-  :subject t00030:p1, t00030:p2 ;
   :quo "ZIJ WAS EEN LIEFDE VOLLE ZORGDRAGENDE MOEDER" ;
   :site site:gr9752CMharen ;
+  :subject t00030:p1, t00030:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00030:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P59Y9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-04-03"^^xsd:date ;
   :dateOfDeath "1927-04-12"^^xsd:date ;
   :nam "MARGRIETA VAN BERGEN" ;

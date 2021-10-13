@@ -14,24 +14,28 @@ tomb:t00733
     ] ;
     :nd "+52.7821+006.8975"^^ll:
   ] ;
-  :subject t00733:p1, t00733:p2 ;
   :ref [
     a :Quote ;
-    :text "ps.68 vers 2"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 68 ;
+      :part :Psalm.n.01 ;
       :verse "2"
-    ]
+    ] ;
+    :text "ps.68 vers 2"@nld
   ] ;
   :site site:dr7811HEemmen ;
+  :subject t00733:p1, t00733:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00733:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y7M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-11-10"^^xsd:date ;
   :dateOfDeath "1944-06-16"^^xsd:date ;
   :nam "WILLEMPTJE WIGGERINK" ;

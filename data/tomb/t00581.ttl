@@ -2,6 +2,7 @@
 
 tomb:t00581
   a :Tomb ;
+  :creator t00581:p2 ;
   :image [
     dc:date "2019-11-30T14:50:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,16 +15,19 @@ tomb:t00581
     ] ;
     :nd "+53.3355+006.5127"^^ll:
   ] ;
-  :subject t00581:p1 ;
-  :creator t00581:p2 ;
   :ref t00581:v1 ;
   :site site:gr9951STwinsum ;
+  :subject t00581:p1 ;
   :sym t00581:s2, t00581:s3, [
     a :Sandglass.n.01
   ] .
 
 t00581:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y10M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1817-12-28"^^xsd:date ;
   :dateOfDeath "1891-11-05"^^xsd:date ;
   :nam "JANTJE WIEREMA" .

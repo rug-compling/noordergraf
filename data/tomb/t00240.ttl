@@ -14,18 +14,18 @@ tomb:t00240
     ] ;
     :nd "+53.1725+006.6065"^^ll:
   ] ;
-  :subject t00240:p1, t00240:p2, t00240:p3 ;
   :ref [
     a :Quote ;
-    :text "Ps. 68:10B" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 68 ;
+      :part :Psalm.n.01 ;
       :verse "10B"
-    ]
+    ] ;
+    :text "Ps. 68:10B"
   ] ;
   :site site:gr9751BBharen ;
+  :subject t00240:p1, t00240:p2, t00240:p3 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -37,6 +37,10 @@ t00240:c1
 
 t00240:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y10M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-10-18"^^xsd:date ;
   :dateOfDeath "1951-08-19"^^xsd:date ;
   :nam "BEREND HEKMAN" ;

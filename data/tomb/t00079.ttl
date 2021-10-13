@@ -14,15 +14,19 @@ tomb:t00079
     ] ;
     :nd "+53.2038+006.5701"^^ll:
   ] ;
-  :subject t00079:p1, t00079:p2 ;
   :quo "HIJ GING ZIJN WEG MET BLIJDSCHAP" ;
   :site site:gr9721AAgroningen ;
+  :subject t00079:p1, t00079:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00079:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y9M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1920-07-19"^^xsd:date ;
   :dateOfDeath "1987-04-24"^^xsd:date ;
   :nam "FREDERIKUS GERHARDUS ANTONIUS WORTELBOER", "FRITS" ;
@@ -37,6 +41,10 @@ t00079:p1
 
 t00079:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y1M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1926-06-13"^^xsd:date ;
   :dateOfDeath "2013-08-02"^^xsd:date ;
   :nam "LENY FELLINGER" ;

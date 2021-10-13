@@ -14,8 +14,8 @@ tomb:t00373
     ] ;
     :nd "+53.1907+006.5929"^^ll:
   ] ;
-  :subject t00373:p1, t00373:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00373:p1, t00373:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00373
 
 t00373:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y3M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-12-28"^^xsd:date ;
   :dateOfDeath "1933-04-02"^^xsd:date ;
   :nam "MARIA HELENA CRAMER VON BAUMGARTEN" ;

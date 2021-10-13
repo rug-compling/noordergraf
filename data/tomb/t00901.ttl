@@ -14,19 +14,19 @@ tomb:t00901
     ] ;
     :nd "+53.1706+006.3658"^^ll:
   ] ;
-  :subject t00901:p1, t00901:p2, t00901:p3 ;
   :quo "ZIJ ZIJN GELUKKIG; HUN \\ HEENGAAN WAS VREDE"@nld ;
   :ref [
     a :Quote ;
-    :text "joh. 11:25-26."@nld ;
     :reference [
       a :BibleReference ;
-      :part :John.n.05 ;
       :chapter 11 ;
+      :part :John.n.05 ;
       :verse "25-26"
-    ]
+    ] ;
+    :text "joh. 11:25-26."@nld
   ] ;
   :site site:gr9351RLtolbert ;
+  :subject t00901:p1, t00901:p2, t00901:p3 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -35,6 +35,10 @@ tomb:t00901
 
 t00901:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P30Y8M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-05-12"^^xsd:date ;
   :dateOfDeath "1917-02-08"^^xsd:date ;
   :nam "LIEFKE MEEK" ;

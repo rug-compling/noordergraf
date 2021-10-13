@@ -14,14 +14,18 @@ tomb:t00999
     ] ;
     :nd "+53.2443+006.6280"^^ll:
   ] ;
-  :subject t00999:p1, t00999:p2 ;
   :site site:gr9734ATgroningen ;
+  :subject t00999:p1, t00999:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00999:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P44Y10M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1843-07-15"^^xsd:date ;
   :dateOfDeath "1888-05-29"^^xsd:date ;
   :nam "FENNA HOMMES" ;

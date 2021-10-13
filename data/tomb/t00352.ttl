@@ -14,8 +14,8 @@ tomb:t00352
     ] ;
     :nd "+53.0800+006.5730"^^ll:
   ] ;
-  :subject t00352:p1, t00352:p2, t00352:p3 ;
   :site site:dr9481CGvries ;
+  :subject t00352:p1, t00352:p2, t00352:p3 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00352:c1
 
 t00352:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y4M"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-06-29"^^xsd:date ;
   :dateOfDeath "1927-10-29"^^xsd:date ;
   :nam "HENDRIK NOORD" ;

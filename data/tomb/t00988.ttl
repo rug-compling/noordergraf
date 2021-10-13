@@ -14,14 +14,18 @@ tomb:t00988
     ] ;
     :nd "+53.2442+006.6281"^^ll:
   ] ;
-  :subject t00988:p1, t00988:p2 ;
   :site site:gr9734ATgroningen ;
+  :subject t00988:p1, t00988:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00988:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y11M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1821-06-12"^^xsd:date ;
   :dateOfDeath "1891-05-14"^^xsd:date ;
   :nam "JOHANNA WILLEMINA ZWAAN" ;

@@ -14,9 +14,9 @@ tomb:t00992
     ] ;
     :nd "+53.1762+007.0952"^^ll:
   ] ;
-  :subject t00992:p1, t00992:p2 ;
   :quo "OVERLEDEN DOOR EEN NOOTLOTTIG TOEVAL"@nld, "RUST ZACHT"@nld ;
   :site site:gr9686RSbeerta ;
+  :subject t00992:p1, t00992:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00992:c1
 
 t00992:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-12-02"^^xsd:date ;
   :dateOfDeath "1929-12-19"^^xsd:date ;
   :nam "EGBERT KONING" ;

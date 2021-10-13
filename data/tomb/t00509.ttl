@@ -14,17 +14,25 @@ tomb:t00509
     ] ;
     :nd "+53.2066+005.7691"^^ll:
   ] ;
-  :subject t00509:p1, t00509:p2 ;
-  :site site:fr8915CPleeuwarden .
+  :site site:fr8915CPleeuwarden ;
+  :subject t00509:p1, t00509:p2 .
 
 t00509:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P92Y1M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-09-20"^^xsd:date ;
   :dateOfDeath "1990-11-13"^^xsd:date ;
   :nam "TEKELA CATHARINA LAMBOOIJ-MULDER" .
 
 t00509:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P94Y2M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-02-18"^^xsd:date ;
   :dateOfDeath "1995-05-10"^^xsd:date ;
   :nam "THEODIRUS PETRUS ANTONIUS LAMBOOIJ" .

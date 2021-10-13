@@ -14,19 +14,23 @@ tomb:t00917
     ] ;
     :nd "+53.1715+006.3656"^^ll:
   ] ;
-  :subject t00917:p1, t00917:p2 ;
   :quo "JEZUS UW VERZOENEND STERVEN"@nld ;
   :ref [
     a :Quote ;
-    :text "Gez. 14."@nld ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "Gez. 14."@nld
   ] ;
-  :site site:gr9351RLtolbert .
+  :site site:gr9351RLtolbert ;
+  :subject t00917:p1, t00917:p2 .
 
 t00917:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P58Y2M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-11-16"^^xsd:date ;
   :dateOfDeath "1938-02-11"^^xsd:date ;
   :nam "BERENTJE AARDEMA" ;
@@ -36,6 +40,10 @@ t00917:p1
 
 t00917:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P90Y3M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-06-09"^^xsd:date ;
   :dateOfDeath "1970-09-12"^^xsd:date ;
   :nam "JAN SCHERINGA" ;

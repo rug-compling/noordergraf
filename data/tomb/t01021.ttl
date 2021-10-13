@@ -14,11 +14,15 @@ tomb:t01021
     ] ;
     :nd "+53.1617+006.6143"^^ll:
   ] ;
-  :subject t01021:p1, t01021:p2, t01021:p3 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t01021:p1, t01021:p2, t01021:p3 .
 
 t01021:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y10M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-02-02"^^xsd:date ;
   :dateOfDeath "1955-12-11"^^xsd:date ;
   :nam "GRIETJE MIDDEL" ;
@@ -36,6 +40,10 @@ t01021:p1
 
 t01021:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y8M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-12-15"^^xsd:date ;
   :dateOfDeath "1960-08-24"^^xsd:date ;
   :nam "GEORGE GEUGIEN UYTERWIJK" ;

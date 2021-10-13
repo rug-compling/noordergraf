@@ -14,11 +14,15 @@ tomb:t00500
     ] ;
     :nd "+53.2091+005.7906"^^ll:
   ] ;
-  :subject t00500:p1 ;
-  :site site:fr8917AVleeuwarden .
+  :site site:fr8917AVleeuwarden ;
+  :subject t00500:p1 .
 
 t00500:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P30Y11M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-10-21"^^xsd:date ;
   :dateOfDeath "1919-10-11"^^xsd:date ;
   :nam "IJPE RAUWERDA" ;

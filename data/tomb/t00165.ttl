@@ -14,9 +14,9 @@ tomb:t00165
     ] ;
     :nd "+53.2060+006.5699"^^ll:
   ] ;
-  :subject t00165:p1, t00165:p2, t00165:p3 ;
   :quo "RUST ZACHT" ;
   :site site:gr9725ACgroningen ;
+  :subject t00165:p1, t00165:p2, t00165:p3 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -33,6 +33,10 @@ t00165:c3
 
 t00165:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y10M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-02-25"^^xsd:date ;
   :dateOfDeath "1922-01-21"^^xsd:date ;
   :nam "JANTINA FREDERIKA BAKKER" ;
@@ -48,6 +52,10 @@ t00165:p1
 
 t00165:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y2M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1863-03-05"^^xsd:date ;
   :dateOfDeath "1941-05-09"^^xsd:date ;
   :nam "HINDRIK KAMPHUIS" ;
@@ -59,6 +67,10 @@ t00165:p2
 
 t00165:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P56Y8M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1903-05-26"^^xsd:date ;
   :dateOfDeath "1960-02-02"^^xsd:date ;
   :nam "GRIETJE BAKKER" ;

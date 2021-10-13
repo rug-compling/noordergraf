@@ -14,14 +14,18 @@ tomb:t00295
     ] ;
     :nd "+52.7150+006.4740"^^ll:
   ] ;
-  :subject t00295:p1, t00295:p2 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00295:p1, t00295:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00295:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y4M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-04-23"^^xsd:date ;
   :dateOfDeath "1925-09-06"^^xsd:date ;
   :nam "JOHANNA SEINEN" ;
@@ -35,6 +39,10 @@ t00295:p1
 
 t00295:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y6M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1852-08-26"^^xsd:date ;
   :dateOfDeath "1927-03-13"^^xsd:date ;
   :nam "CORNELIS WARMELS" ;

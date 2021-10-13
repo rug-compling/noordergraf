@@ -14,8 +14,8 @@ tomb:t00202
     ] ;
     :nd "+53.1899+006.5932"^^ll:
   ] ;
-  :subject t00202:p1, t00202:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00202:p1, t00202:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -32,6 +32,10 @@ t00202:c1
 
 t00202:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y3M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-12-19"^^xsd:date ;
   :dateOfDeath "1940-03-21"^^xsd:date ;
   :nam "ADOLF LEIJDSMAN" ;
@@ -48,6 +52,10 @@ t00202:p1
 
 t00202:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y2M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-03-11"^^xsd:date ;
   :dateOfDeath "1952-05-27"^^xsd:date ;
   :nam "BERENDINA VRIJDAAL" ;

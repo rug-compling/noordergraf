@@ -14,15 +14,19 @@ tomb:t00859
     ] ;
     :nd "+52.7764+006.8041"^^ll:
   ] ;
-  :subject t00859:p1, t00859:p2 ;
   :ref t00859:v1 ;
   :site site:dr7841CDsleen ;
+  :subject t00859:p1, t00859:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00859:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y7M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1863-06-10"^^xsd:date ;
   :dateOfDeath "1952-01-11"^^xsd:date ;
   :nam "HENDRIKJE WIGGERS" ;
@@ -47,11 +51,11 @@ t00859:p2
 
 t00859:v1
   a :Quote ;
-  :text "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN"@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :Revelation.n.04 ;
     :verse "13"
-  ] .
+  ] ;
+  :text "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN"@nld .
 

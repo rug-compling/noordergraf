@@ -14,15 +14,19 @@ tomb:t00996
     ] ;
     :nd "+53.1754+007.0958"^^ll:
   ] ;
-  :subject t00996:p1, t00996:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER"@nld ;
   :site site:gr9686RSbeerta ;
+  :subject t00996:p1, t00996:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00996:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P44Y10M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1877-02-20"^^xsd:date ;
   :dateOfDeath "1922-01-13"^^xsd:date ;
   :nam "BEREND ANGERMAN" ;

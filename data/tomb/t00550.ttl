@@ -14,8 +14,8 @@ tomb:t00550
     ] ;
     :nd "+53.1045+006.8758"^^ll:
   ] ;
-  :subject t00550:p1 ;
   :site site:gr9641ANveendam ;
+  :subject t00550:p1 ;
   :sym [
     a :Composite.n.01 ;
     :prt t00550:s5, t00550:s7, [
@@ -31,6 +31,10 @@ tomb:t00550
 
 t00550:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y3M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1787-01-10"^^xsd:date ;
   :dateOfDeath "1862-05-01"^^xsd:date ;
   :nam "JAN ODDING" ;

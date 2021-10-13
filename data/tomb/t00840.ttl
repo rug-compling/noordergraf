@@ -14,8 +14,8 @@ tomb:t00840
     ] ;
     :nd "+53.2961+005.0650"^^ll:
   ] ;
-  :subject t00840:p1, t00840:p2 ;
   :site site:fr8899AWoost_vlieland ;
+  :subject t00840:p1, t00840:p2 ;
   :sym [
     a :Oak.n.01
   ], [
@@ -29,6 +29,10 @@ t00840:c2
 
 t00840:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y11M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1830-09-27"^^xsd:date ;
   :dateOfDeath "1897-08-30"^^xsd:date ;
   :nam "PIETER ADRIANUS KROON" ;
@@ -41,6 +45,10 @@ t00840:p1
 
 t00840:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y4M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1840-01-01"^^xsd:date ;
   :dateOfDeath "1929-05-13"^^xsd:date ;
   :nam "ANTJE REE" ;

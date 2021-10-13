@@ -14,22 +14,26 @@ tomb:t00350
     ] ;
     :nd "+53.0800+006.5721"^^ll:
   ] ;
-  :subject t00350:p1, t00350:p2 ;
   :ref [
     a :Quote ;
-    :text "ps. 23:1 berijmd" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 23 ;
-      :verse "1" ;
-      :comment "berijmd"
-    ]
+      :comment "berijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "1"
+    ] ;
+    :text "ps. 23:1 berijmd"
   ] ;
-  :site site:dr9481CGvries .
+  :site site:dr9481CGvries ;
+  :subject t00350:p1, t00350:p2 .
 
 t00350:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y1M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-09-09"^^xsd:date ;
   :dateOfDeath "1967-11-04"^^xsd:date ;
   :nam "JANSJE JANSSEN" ;
@@ -40,6 +44,10 @@ t00350:p1
 
 t00350:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y4M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-05-27"^^xsd:date ;
   :dateOfDeath "1977-10-16"^^xsd:date ;
   :nam "AREND SMIT" .

@@ -14,8 +14,8 @@ tomb:t00390
     ] ;
     :nd "+53.2519+006.1452"^^ll:
   ] ;
-  :subject t00390:p1, t00390:p2 ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00390:p1, t00390:p2 ;
   :sym t00390:s1 .
 
 t00390:c2
@@ -25,6 +25,10 @@ t00390:c2
 
 t00390:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y3M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-10-07"^^xsd:date ;
   :dateOfDeath "1945-01-23"^^xsd:date ;
   :nam "AALZEN SPOELSTRA" ;
@@ -40,6 +44,10 @@ t00390:p1
 
 t00390:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y2M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-07-17"^^xsd:date ;
   :dateOfDeath "1945-09-18"^^xsd:date ;
   :nam "GEERTJE VAN DER KOOI" ;

@@ -14,8 +14,8 @@ tomb:t00068
     ] ;
     :nd "+53.1908+006.5951"^^ll:
   ] ;
-  :subject t00068:p1, t00068:p2, t00068:p3 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00068:p1, t00068:p2, t00068:p3 .
 
 t00068:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00068:c1
 
 t00068:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P23Y7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1920-07-13"^^xsd:date ;
   :dateOfDeath "1943-07-20"^^xsd:date ;
   :nam "JANTINA", "TINI" ;
@@ -37,6 +41,10 @@ t00068:p1
 
 t00068:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P52Y7M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-04-09"^^xsd:date ;
   :dateOfDeath "1943-12-08"^^xsd:date ;
   :nam "CORNELIA M.DE JONG" ;
@@ -50,11 +58,15 @@ t00068:p2
     a :Wife.n.01 ;
     :tgt t00068:p3
   ], [
-    a :Mother.n.01 ;
+    a :Mother.n.01
   ] .
 
 t00068:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y8M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-06-09"^^xsd:date ;
   :dateOfDeath "1954-02-12"^^xsd:date ;
   :nam "JAN MULDER" ;

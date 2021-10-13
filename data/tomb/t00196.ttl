@@ -14,14 +14,18 @@ tomb:t00196
     ] ;
     :nd "+53.1874+006.5970"^^ll:
   ] ;
-  :subject t00196:p1, t00196:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00196:p1, t00196:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00196:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P49Y2M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1884-02-29"^^xsd:date ;
   :dateOfDeath "1933-05-01"^^xsd:date ;
   :nam "TJITSKE DE VRIES" ;

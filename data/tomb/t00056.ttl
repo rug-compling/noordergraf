@@ -14,12 +14,16 @@ tomb:t00056
     ] ;
     :nd "+53.1631+006.6132"^^ll:
   ] ;
-  :subject t00056:p1, t00056:p2, t00056:p3, t00056:p4, t00056:p5 ;
   :ref t00056:v1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00056:p1, t00056:p2, t00056:p3, t00056:p4, t00056:p5 .
 
 t00056:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y6M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-05-21"^^xsd:date ;
   :dateOfDeath "1949-12-15"^^xsd:date ;
   :nam "LAMMECHIENA VAN DER VEEN" ;
@@ -30,12 +34,20 @@ t00056:p1
 
 t00056:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P87Y4M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-09-04"^^xsd:date ;
   :dateOfDeath "1962-01-18"^^xsd:date ;
   :nam "GEERT MULDER" .
 
 t00056:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P6Y8M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1947-08-07"^^xsd:date ;
   :dateOfDeath "1954-05-05"^^xsd:date ;
   :nam "GERARDUS AVERES" .

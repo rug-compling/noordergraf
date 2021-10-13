@@ -14,8 +14,8 @@ tomb:t01098
     ] ;
     :nd "+53.2475+006.8646"^^ll:
   ] ;
-  :subject t01098:p1, t01098:p2 ;
   :site site:gr9628TKsiddeburen ;
+  :subject t01098:p1, t01098:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t01098
 
 t01098:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P42Y11M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1830-01-20"^^xsd:date ;
   :dateOfDeath "1873-01-13"^^xsd:date ;
   :nam "J.G.K. IN'T HOLT" ;

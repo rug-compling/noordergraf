@@ -14,22 +14,26 @@ tomb:t00436
     ] ;
     :nd "+53.4790+006.1606"^^ll:
   ] ;
-  :subject t00436:p1, t00436:p2 ;
   :quo "RUST ZACHT" ;
   :ref [
     a :Quote ;
-    :text "gez. 257:2." ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gez. 257:2."
   ] ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00436:p1, t00436:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00436:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P57Y11M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-03-28"^^xsd:date ;
   :dateOfDeath "1929-03-24"^^xsd:date ;
   :nam "JOHANNES J. DE VRIES" ;

@@ -14,8 +14,8 @@ tomb:t00408
     ] ;
     :nd "+53.2519+006.1448"^^ll:
   ] ;
-  :subject t00408:p1, t00408:p2 ;
-  :site site:fr9285TCbuitenpost .
+  :site site:fr9285TCbuitenpost ;
+  :subject t00408:p1, t00408:p2 .
 
 t00408:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00408:c1
 
 t00408:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y1M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1811-04-15"^^xsd:date ;
   :dateOfDeath "1891-05-25"^^xsd:date ;
   :nam "BEERTJE A. KOOTSTRA" ;
@@ -36,6 +40,10 @@ t00408:p1
 
 t00408:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y4M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1810-02-11"^^xsd:date ;
   :dateOfDeath "1892-06-16"^^xsd:date ;
   :nam "JOHANNES T. WOUDA" ;

@@ -14,9 +14,9 @@ tomb:t00632
     ] ;
     :nd "+53.1640+006.7545"^^ll:
   ] ;
-  :subject t00632:p1, t00632:p2 ;
   :quo "HIER NEVEN RUSTEN \\ DRIE KINDEREN"@nld ;
   :site site:gr9601KAhoogezand ;
+  :subject t00632:p1, t00632:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -29,6 +29,10 @@ tomb:t00632
 
 t00632:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y6M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1823-08-15"^^xsd:date ;
   :dateOfDeath "1878-02-26"^^xsd:date ;
   :nam "ENNO BRONSEMA" ;

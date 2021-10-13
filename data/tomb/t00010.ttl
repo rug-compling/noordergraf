@@ -14,20 +14,28 @@ tomb:t00010
     ] ;
     :nd "+53.1902+006.5927"^^ll:
   ] ;
-  :subject t00010:p1, t00010:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00010:p1, t00010:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00010:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P45Y3M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-08-30"^^xsd:date ;
   :dateOfDeath "1935-12-14"^^xsd:date ;
   :nam "GERKE MIDDEL" .
 
 t00010:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P96Y6M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-04-04"^^xsd:date ;
   :dateOfDeath "1961-10-13"^^xsd:date ;
   :nam "ROELF MIDDEL" ;

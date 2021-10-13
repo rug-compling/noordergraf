@@ -14,8 +14,8 @@ tomb:t00226
     ] ;
     :nd "+53.2229+006.6364"^^ll:
   ] ;
-  :subject t00226:p1, t00226:p2 ;
   :site site:gr9723EWgroningen ;
+  :subject t00226:p1, t00226:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -29,6 +29,10 @@ tomb:t00226
 
 t00226:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y3M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1843-10-27"^^xsd:date ;
   :dateOfDeath "1923-02-07"^^xsd:date ;
   :nam "AUKTJE VELTHUIS" ;

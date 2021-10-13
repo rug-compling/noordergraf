@@ -14,8 +14,8 @@ tomb:t00313
     ] ;
     :nd "+52.7156+006.4734"^^ll:
   ] ;
-  :subject t00313:p1, t00313:p2 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00313:p1, t00313:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00313:c1
 
 t00313:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y5M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-04-16"^^xsd:date ;
   :dateOfDeath "1923-10-03"^^xsd:date ;
   :nam "JACOB BREMER" ;
@@ -44,6 +48,10 @@ t00313:p1
 
 t00313:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-12-06"^^xsd:date ;
   :dateOfDeath "1940-12-12"^^xsd:date ;
   :nam "MARGJE STEENBERGEN" ;

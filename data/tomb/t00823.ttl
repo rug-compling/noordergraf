@@ -14,11 +14,15 @@ tomb:t00823
     ] ;
     :nd "+53.2308+006.5516"^^ll:
   ] ;
-  :subject t00823:p1, t00823:p2 ;
-  :site site:gr9741ACgroningen .
+  :site site:gr9741ACgroningen ;
+  :subject t00823:p1, t00823:p2 .
 
 t00823:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P41Y10M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1903-03-08"^^xsd:date ;
   :dateOfDeath "1945-01-22"^^xsd:date ;
   :nam "HEINRICH KROHNE" ;

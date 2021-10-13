@@ -14,9 +14,9 @@ tomb:t00080
     ] ;
     :nd "+53.2032+006.5724"^^ll:
   ] ;
-  :subject t00080:p1, t00080:p2 ;
   :quo "RUST ZACHT" ;
   :site site:gr9721AAgroningen ;
+  :subject t00080:p1, t00080:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -28,6 +28,10 @@ tomb:t00080
 
 t00080:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y10M"^^xsd:duration
+  ] ;
   :dateOfBirth "1927-08-06"^^xsd:date ;
   :dateOfDeath "1990-06-06"^^xsd:date ;
   :nam "JOHAN BAPTIES ANDREAS STÄBLER" ;
@@ -42,6 +46,10 @@ t00080:p1
 
 t00080:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y3M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1927-10-12"^^xsd:date ;
   :dateOfDeath "2009-02-05"^^xsd:date ;
   :nam "GRIETJE DRENTH" .

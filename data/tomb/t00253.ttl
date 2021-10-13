@@ -14,23 +14,27 @@ tomb:t00253
     ] ;
     :nd "+53.2054+006.5723"^^ll:
   ] ;
-  :subject t00253:p1, t00253:p2, t00253:p3, t00253:p4, t00253:p5 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00253:p1, t00253:p2, t00253:p3, t00253:p4, t00253:p5 .
 
 t00253:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P17Y10M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1903-04-15"^^xsd:date ;
   :dateOfDeath "1921-03-03"^^xsd:date ;
   :nam "ANGENIETJE KEIZER" ;
   :ref [
     a :Quote ;
-    :text "1 thess. 4:14" ;
     :reference [
       a :BibleReference ;
-      :part :One_Thessalonians ;
       :chapter 4 ;
+      :part :One_Thessalonians ;
       :verse "14"
-    ]
+    ] ;
+    :text "1 thess. 4:14"
   ] ;
   :rol [
     a :Sister.n.01
@@ -38,18 +42,22 @@ t00253:p1
 
 t00253:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P61Y9M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-11-29"^^xsd:date ;
   :dateOfDeath "1940-09-19"^^xsd:date ;
   :nam "GRIETJE VAN DER ZWEEP" ;
   :ref [
     a :Quote ;
-    :text "ps. 23:1" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 23 ;
+      :part :Psalm.n.01 ;
       :verse "1"
-    ]
+    ] ;
+    :text "ps. 23:1"
   ] ;
   :rol [
     a :Parent.n.01
@@ -57,17 +65,21 @@ t00253:p2
 
 t00253:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y8M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-07-15"^^xsd:date ;
   :dateOfDeath "1956-04-06"^^xsd:date ;
   :nam "HENDRIK KEIZER" ;
   :ref [
     a :Quote ;
-    :text "ps. 116" ;
     :reference [
-      a :BibleReference;
-      :part :Psalm.n.01 ;
-      :chapter 116
-    ]
+      a :BibleReference ;
+      :chapter 116 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "ps. 116"
   ] ;
   :rol [
     a :Parent.n.01
@@ -75,18 +87,22 @@ t00253:p3
 
 t00253:p4
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y1M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1854-10-18"^^xsd:date ;
   :dateOfDeath "1931-11-19"^^xsd:date ;
   :nam "JACOB VAN DER ZWEEP" ;
   :ref [
     a :Quote ;
-    :text "rom. 14:8" ;
     :reference [
       a :BibleReference ;
-      :part :Epistle_to_the_Romans.n.04 ;
       :chapter 14 ;
+      :part :Epistle_to_the_Romans.n.04 ;
       :verse "8"
-    ]
+    ] ;
+    :text "rom. 14:8"
   ] ;
   :rol [
     a :Grandparent.n.01
@@ -94,18 +110,22 @@ t00253:p4
 
 t00253:p5
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y9M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-07-26"^^xsd:date ;
   :dateOfDeath "1936-05-13"^^xsd:date ;
   :nam "ANGENIETJE REICHENBACH" ;
   :ref [
     a :Quote ;
-    :text "joh. 14:2" ;
     :reference [
       a :BibleReference ;
-      :part :John.n.05 ;
       :chapter 14 ;
+      :part :John.n.05 ;
       :verse "2"
-    ]
+    ] ;
+    :text "joh. 14:2"
   ] ;
   :rol [
     a :Grandparent.n.01

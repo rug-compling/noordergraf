@@ -14,11 +14,15 @@ tomb:t00069
     ] ;
     :nd "+53.1908+006.5951"^^ll:
   ] ;
-  :subject t00069:p1, t00069:p2, t00069:p3 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00069:p1, t00069:p2, t00069:p3 .
 
 t00069:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y7M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1867-11-12"^^xsd:date ;
   :dateOfDeath "1943-07-08"^^xsd:date ;
   :nam "AUKE KORNELIA VEENHUIS" ;

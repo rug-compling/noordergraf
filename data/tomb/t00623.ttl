@@ -14,8 +14,8 @@ tomb:t00623
     ] ;
     :nd "+53.1643+006.7541"^^ll:
   ] ;
-  :subject t00623:p1, t00623:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00623:p1, t00623:p2 ;
   :sym [
     a :Torch.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t00623
 
 t00623:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1818-11-30"^^xsd:date ;
   :dateOfDeath "1875-12-19"^^xsd:date ;
   :nam "ALBERDINA TAKENS" ;

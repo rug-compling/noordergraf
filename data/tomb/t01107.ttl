@@ -14,21 +14,25 @@ tomb:t01107
     ] ;
     :nd "+53.2627+006.3140"^^ll:
   ] ;
-  :subject t01107:p1 ;
   :ref [
     a :Quote ;
-    :text "gez. 44:4."@nld ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gez. 44:4."@nld
   ] ;
   :site site:gr9843AGgrijpskerk ;
+  :subject t01107:p1 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t01107:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P49Y9M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1910-09-02"^^xsd:date ;
   :dateOfDeath "1960-06-18"^^xsd:date ;
   :nam "JANSJE BAKKER" ;

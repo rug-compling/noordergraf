@@ -14,15 +14,19 @@ tomb:t00883
     ] ;
     :nd "+52.7198+006.8460"^^ll:
   ] ;
-  :subject t00883:p1, t00883:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00883:p1, t00883:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00883:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y3M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-03-04"^^xsd:date ;
   :dateOfDeath "1956-06-16"^^xsd:date ;
   :nam "HENDRIKJE MENSING" ;

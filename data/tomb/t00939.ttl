@@ -14,15 +14,19 @@ tomb:t00939
     ] ;
     :nd "+53.2396+006.5515"^^ll:
   ] ;
-  :subject t00939:p1, t00939:p2 ;
   :quo "EINDE VAN HET SPOOR, IK BEN NAAR HUIS GEGAAN"@nld ;
   :site site:gr9741GHgroningen ;
+  :subject t00939:p1, t00939:p2 ;
   :sym [
     a :Entity.n.01
   ] .
 
 t00939:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P22Y6M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1933-08-31"^^xsd:date ;
   :dateOfDeath "1956-03-28"^^xsd:date ;
   :nam "JAN KNOOP" ;

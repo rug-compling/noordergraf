@@ -14,11 +14,15 @@ tomb:t01124
     ] ;
     :nd "+53.2402+006.4102"^^ll:
   ] ;
-  :subject t01124:p1 ;
-  :site site:gr9801CAzuidhorn .
+  :site site:gr9801CAzuidhorn ;
+  :subject t01124:p1 .
 
 t01124:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1900-06-30"^^xsd:date ;
   :dateOfDeath "1976-07-04"^^xsd:date ;
   :nam "HINDRIK LAP" .

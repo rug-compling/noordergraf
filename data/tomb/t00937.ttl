@@ -14,12 +14,16 @@ tomb:t00937
     ] ;
     :nd "+53.2377+006.5551"^^ll:
   ] ;
-  :subject t00937:p1, t00937:p3, t00937:p4 ;
   :ref t00937:v1 ;
-  :site site:gr9741GHgroningen .
+  :site site:gr9741GHgroningen ;
+  :subject t00937:p1, t00937:p3, t00937:p4 .
 
 t00937:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P38Y7M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1917-11-21"^^xsd:date ;
   :dateOfDeath "1956-07-05"^^xsd:date ;
   :nam "MARGARETHA CORNELIA SCHAAF" ;
@@ -34,6 +38,10 @@ t00937:p2
 
 t00937:p3
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P0Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1948-04-25"^^xsd:date ;
   :dateOfDeath "1948-04-25"^^xsd:date ;
   :rol [
@@ -44,6 +52,10 @@ t00937:p3
 
 t00937:p4
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P97Y2M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1877-09-26"^^xsd:date ;
   :dateOfDeath "1974-12-17"^^xsd:date ;
   :nam "H. RUITER WILDEBOER" .
@@ -56,3 +68,4 @@ t00937:v1
     :part :Epistle_to_the_Romans.n.04 ;
     :verse "38-39"
   ] .
+

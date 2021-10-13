@@ -14,11 +14,15 @@ tomb:t00118
     ] ;
     :nd "+53.1623+006.6149"^^ll:
   ] ;
-  :subject t00118:p1, t00118:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00118:p1, t00118:p2 .
 
 t00118:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y7M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-09-11"^^xsd:date ;
   :dateOfDeath "1959-05-01"^^xsd:date ;
   :nam "BORGERT VRIELING" ;
@@ -28,6 +32,10 @@ t00118:p1
 
 t00118:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y6M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-06-14"^^xsd:date ;
   :dateOfDeath "1960-01-03"^^xsd:date ;
   :nam "LAMMECHIEN KOEKOEK" ;

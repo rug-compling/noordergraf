@@ -14,8 +14,8 @@ tomb:t00331
     ] ;
     :nd "+52.7158+006.4738"^^ll:
   ] ;
-  :subject t00331:p1, t00331:p2 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00331:p1, t00331:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00331:c1
 
 t00331:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P30Y5M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-11-18"^^xsd:date ;
   :dateOfDeath "1929-05-13"^^xsd:date ;
   :nam "JAN STEENBERGEN" ;
@@ -41,6 +45,10 @@ t00331:p1
 
 t00331:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y8M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-04-20"^^xsd:date ;
   :dateOfDeath "1979-01-15"^^xsd:date ;
   :nam "AALTJE STEENBERGEN-DEKKER" ;
@@ -55,8 +63,8 @@ t00331:p2
     :place place:Leeuwarden2751792
   ] ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
+  ], [
+    a :Mother.n.01
   ] .
 

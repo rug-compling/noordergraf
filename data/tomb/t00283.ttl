@@ -14,15 +14,19 @@ tomb:t00283
     ] ;
     :nd "+53.4036+006.7489"^^ll:
   ] ;
-  :subject t00283:p1, t00283:p2, t00283:p3 ;
   :ref t00283:v1 ;
   :site site:gr9985SCoosternieland ;
+  :subject t00283:p1, t00283:p2, t00283:p3 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00283:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P40Y1M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1916-08-28"^^xsd:date ;
   :dateOfDeath "1956-10-16"^^xsd:date ;
   :nam "WILLEMINA KUIPER" ;
@@ -33,6 +37,10 @@ t00283:p1
 
 t00283:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y1M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1884-02-25"^^xsd:date ;
   :dateOfDeath "1961-04-14"^^xsd:date ;
   :nam "HARMINA ZUIDERVELD" ;
@@ -43,6 +51,10 @@ t00283:p2
 
 t00283:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y1M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-05-23"^^xsd:date ;
   :dateOfDeath "1952-07-16"^^xsd:date ;
   :nam "HENDERICUS KUIPER" ;
@@ -53,11 +65,11 @@ t00283:p3
 
 t00283:v1
   a :Quote ;
-  :text "ZALIG ZIJN ZIJ, DIE IN DEN HEERE STERVEN."@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :Revelation.n.04 ;
     :verse "13"
-  ] .
+  ] ;
+  :text "ZALIG ZIJN ZIJ, DIE IN DEN HEERE STERVEN."@nld .
 

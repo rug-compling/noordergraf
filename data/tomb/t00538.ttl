@@ -14,9 +14,9 @@ tomb:t00538
     ] ;
     :nd "+53.1043+006.8761"^^ll:
   ] ;
-  :subject t00538:p1, t00538:p2 ;
   :quo "DIT GRAF MAG NIET WORDEN OPGEGRAVEN"@nld, "RUST ZACHT"@nld ;
   :site site:gr9641ANveendam ;
+  :subject t00538:p1, t00538:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -30,6 +30,10 @@ tomb:t00538
 
 t00538:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P52Y3M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1832-05-04"^^xsd:date ;
   :dateOfDeath "1884-08-09"^^xsd:date ;
   :nam "JAN VRIESE DE VRIES" ;

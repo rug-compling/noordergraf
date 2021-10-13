@@ -14,8 +14,8 @@ tomb:t00798
     ] ;
     :nd "+53.2777+006.6947"^^ll:
   ] ;
-  :subject t00798:p1, t00798:p2 ;
-  :site site:gr9791KEten_boer .
+  :site site:gr9791KEten_boer ;
+  :subject t00798:p1, t00798:p2 .
 
 t00798:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00798:c1
 
 t00798:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y7M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1851-09-12"^^xsd:date ;
   :dateOfDeath "1930-05-01"^^xsd:date ;
   :nam "NANNING KAMPHUIS" ;

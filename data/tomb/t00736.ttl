@@ -14,14 +14,18 @@ tomb:t00736
     ] ;
     :nd "+53.3109+006.9976"^^ll:
   ] ;
-  :subject t00736:p1, t00736:p2 ;
   :site site:gr9936BTfarmsum ;
+  :subject t00736:p1, t00736:p2 ;
   :sym [
     a :Butterfly.n.01
   ] .
 
 t00736:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y6M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1815-02-06"^^xsd:date ;
   :dateOfDeath "1885-08-30"^^xsd:date ;
   :nam "ALBERTJE JAN MULDER" .

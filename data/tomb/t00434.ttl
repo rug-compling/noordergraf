@@ -14,11 +14,15 @@ tomb:t00434
     ] ;
     :nd "+53.4792+006.1610"^^ll:
   ] ;
-  :subject t00434:p1, t00434:p2 ;
-  :site site:fr9166NAschiermonnikoog .
+  :site site:fr9166NAschiermonnikoog ;
+  :subject t00434:p1, t00434:p2 .
 
 t00434:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y2M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1918-12-20"^^xsd:date ;
   :dateOfDeath "1996-02-28"^^xsd:date ;
   :nam "WILHELMINA ANTHONIA MARIA ADRIANA VAN DEN WORM" ;
@@ -29,6 +33,10 @@ t00434:p1
 
 t00434:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P92Y11M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1910-09-03"^^xsd:date ;
   :dateOfDeath "2003-08-17"^^xsd:date ;
   :nam "GEORG HENNEMAN" .

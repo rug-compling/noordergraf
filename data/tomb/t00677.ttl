@@ -14,17 +14,25 @@ tomb:t00677
     ] ;
     :nd "+53.0686+005.5221"^^ll:
   ] ;
-  :subject t00677:p1, t00677:p2 ;
-  :site site:fr8701DWbolsward .
+  :site site:fr8701DWbolsward ;
+  :subject t00677:p1, t00677:p2 .
 
 t00677:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1894"^^xsd:gYear ;
   :dateOfDeath "1974"^^xsd:gYear ;
   :nam "SIBBELTJE VAN DER WERFF-TIMMER" .
 
 t00677:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1894"^^xsd:gYear ;
   :dateOfDeath "1979"^^xsd:gYear ;
   :nam "WIETZE VAN DER WERFF" .

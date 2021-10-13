@@ -14,8 +14,8 @@ tomb:t00031
     ] ;
     :nd "+53.1627+006.6127"^^ll:
   ] ;
-  :subject t00031:p1, t00031:p2 ;
   :site site:gr9752CMharen ;
+  :subject t00031:p1, t00031:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00031
 
 t00031:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P56Y11M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-11-04"^^xsd:date ;
   :dateOfDeath "1938-10-06"^^xsd:date ;
   :nam "GEERT PIETERS" ;

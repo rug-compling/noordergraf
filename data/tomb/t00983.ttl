@@ -14,12 +14,16 @@ tomb:t00983
     ] ;
     :nd "+53.1421+006.5787"^^ll:
   ] ;
-  :subject t00983:p1, t00983:p2 ;
   :quo "RUST ZACHT LIEVE MAMS"@nld ;
-  :site site:dr9761ALeelde .
+  :site site:dr9761ALeelde ;
+  :subject t00983:p1, t00983:p2 .
 
 t00983:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y2M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1926-04-09"^^xsd:date ;
   :dateOfDeath "1998-06-14"^^xsd:date ;
   :nam "LYDIA HOEK-WLASOWA" ;

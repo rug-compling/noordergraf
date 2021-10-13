@@ -14,8 +14,8 @@ tomb:t00262
     ] ;
     :nd "+53.1902+006.5932"^^ll:
   ] ;
-  :subject t00262:p1, t00262:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00262:p1, t00262:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -35,6 +35,10 @@ t00262:c2
 
 t00262:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P94Y10M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1850-02-06"^^xsd:date ;
   :dateOfDeath "1944-12-30"^^xsd:date ;
   :nam "JOHANNES CURDH" ;
@@ -53,6 +57,10 @@ t00262:p1
 
 t00262:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P101Y11M"^^xsd:duration
+  ] ;
   :dateOfBirth "1850-09-29"^^xsd:date ;
   :dateOfDeath "1952-08-29"^^xsd:date ;
   :nam "TRIENTJE FLIKKEMA" ;

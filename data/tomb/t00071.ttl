@@ -2,6 +2,10 @@
 
 tomb:t00071
   a :Tomb ;
+  :age [
+    a :Age ;
+    :duration "P108Y11M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1838-05-03"^^xsd:date ;
   :dateOfDeath "1947-04-06"^^xsd:date ;
   :image [
@@ -16,7 +20,6 @@ tomb:t00071
     ] ;
     :nd "+53.1904+006.5951"^^ll:
   ] ;
-  :subject t00071:p1, t00071:p2 ;
   :placeOfBirth [
     a :Town.n.01 ;
     :name "EMMEN" ;
@@ -28,7 +31,8 @@ tomb:t00071
   ], [
     a :Uncle.n.01
   ] ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00071:p1, t00071:p2 .
 
 t00071:c1
   a :City.n.01 ;
@@ -37,6 +41,10 @@ t00071:c1
 
 t00071:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y4M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-05-19"^^xsd:date ;
   :dateOfDeath "1939-09-26"^^xsd:date ;
   :nam "CATHARINA KRAMER" ;

@@ -14,19 +14,19 @@ tomb:t00161
     ] ;
     :nd "+53.2058+006.5704"^^ll:
   ] ;
-  :subject t00161:p1, t00161:p2 ;
   :quo "ZOEKT DE DINGEN DIE BOVEN ZIJN" ;
   :ref [
     a :Quote ;
-    :text "COLOSSENZEN 3:1" ;
     :reference [
       a :BibleReference ;
-      :part :Epistle_to_the_Colossians.n.01 ;
       :chapter 3 ;
+      :part :Epistle_to_the_Colossians.n.01 ;
       :verse "1"
-    ]
+    ] ;
+    :text "COLOSSENZEN 3:1"
   ] ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00161:p1, t00161:p2 .
 
 t00161:c1
   a :City.n.01 ;
@@ -35,6 +35,10 @@ t00161:c1
 
 t00161:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y7M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1863-02-15"^^xsd:date ;
   :dateOfDeath "1930-09-26"^^xsd:date ;
   :nam "JELTJE VEENMAN" ;
@@ -56,6 +60,10 @@ t00161:p1
 
 t00161:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y2M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-01-02"^^xsd:date ;
   :dateOfDeath "1952-03-19"^^xsd:date ;
   :nam "MARTEN DE WIND" ;

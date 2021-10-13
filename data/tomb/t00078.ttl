@@ -14,8 +14,8 @@ tomb:t00078
     ] ;
     :nd "+53.2035+006.5716"^^ll:
   ] ;
-  :subject t00078:p1, t00078:p2 ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00078:p1, t00078:p2 .
 
 t00078:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00078:c1
 
 t00078:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y9M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1848-03-09"^^xsd:date ;
   :dateOfDeath "1928-01-01"^^xsd:date ;
   :nam "ANNA MARIA E. ROBBE" ;
@@ -45,6 +49,10 @@ t00078:p1
 
 t00078:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y11M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-01-21"^^xsd:date ;
   :dateOfDeath "1936-01-10"^^xsd:date ;
   :nam "FREDERIK J. VAN VOORN" ;

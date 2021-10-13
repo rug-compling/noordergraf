@@ -14,11 +14,15 @@ tomb:t00265
     ] ;
     :nd "+53.2228+006.6379"^^ll:
   ] ;
-  :subject t00265:p1, t00265:p2 ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00265:p1, t00265:p2 .
 
 t00265:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y5M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1927-07-17"^^xsd:date ;
   :dateOfDeath "2000-01-11"^^xsd:date ;
   :nam "ALIDA MARTINA WILLEMINA BOESER" ;

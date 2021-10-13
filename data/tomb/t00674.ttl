@@ -14,19 +14,23 @@ tomb:t00674
     ] ;
     :nd "+53.0683+005.5218"^^ll:
   ] ;
-  :subject t00674:p1 ;
   :site site:fr8701DWbolsward ;
+  :subject t00674:p1 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00674:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P48Y6M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1914-06-05"^^xsd:date ;
   :dateOfDeath "1962-12-22"^^xsd:date ;
   :nam "FETTJE DE HAAN" ;
   :rol [
-    a :Parent.n.01 ;
+    a :Parent.n.01
   ], [
     a :Grandmother.n.01
   ] .

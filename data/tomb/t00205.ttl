@@ -14,9 +14,9 @@ tomb:t00205
     ] ;
     :nd "+53.1900+006.5938"^^ll:
   ] ;
-  :subject t00205:p1, t00205:p2 ;
   :quo "RUST ZACHT" ;
   :site site:gr9722SNgroningen ;
+  :subject t00205:p1, t00205:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -28,6 +28,10 @@ t00205:c2
 
 t00205:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y6M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-08-14"^^xsd:date ;
   :dateOfDeath "1934-02-15"^^xsd:date ;
   :nam "MARGARITHA BALKEMA" ;
@@ -44,6 +48,10 @@ t00205:p1
 
 t00205:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y11M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-10-07"^^xsd:date ;
   :dateOfDeath "1941-10-05"^^xsd:date ;
   :nam "AUKE VEENSTRA" ;

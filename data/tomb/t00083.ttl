@@ -14,14 +14,18 @@ tomb:t00083
     ] ;
     :nd "+53.2035+006.5731"^^ll:
   ] ;
-  :subject t00083:p1, t00083:p2 ;
   :site site:gr9721AAgroningen ;
+  :subject t00083:p1, t00083:p2 ;
   :sym [
     a :Chrismon.n.01
   ] .
 
 t00083:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y10M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-06-04"^^xsd:date ;
   :dateOfDeath "1964-05-01"^^xsd:date ;
   :nam "WILHELMUS FRANCISCUS BERNARDUS SCHNEIDERS" ;
@@ -32,6 +36,10 @@ t00083:p1
 
 t00083:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y8M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1889-04-20"^^xsd:date ;
   :dateOfDeath "1976-01-10"^^xsd:date ;
   :nam "GEERTRUIDA VERONICA SCHNEIDERS-BLAAUW" .

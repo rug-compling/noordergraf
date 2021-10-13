@@ -14,14 +14,18 @@ tomb:t00275
     ] ;
     :nd "+53.2228+006.6376"^^ll:
   ] ;
-  :subject t00275:p1, t00275:p2, t00275:p3 ;
   :site site:gr9723EWgroningen ;
+  :subject t00275:p1, t00275:p2, t00275:p3 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00275:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y11M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-02-10"^^xsd:date ;
   :dateOfDeath "1955-01-17"^^xsd:date ;
   :nam "LOLKE VAN DER WERF" ;

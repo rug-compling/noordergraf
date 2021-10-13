@@ -14,15 +14,19 @@ tomb:t00994
     ] ;
     :nd "+53.1753+007.0951"^^ll:
   ] ;
-  :subject t00994:p1, t00994:p2 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
   :site site:gr9686RSbeerta ;
+  :subject t00994:p1, t00994:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00994:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y4M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1842-11-10"^^xsd:date ;
   :dateOfDeath "1922-04-07"^^xsd:date ;
   :nam "HARMKE REIT" ;
@@ -36,6 +40,10 @@ t00994:p1
 
 t00994:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y8M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-03-17"^^xsd:date ;
   :dateOfDeath "1963-11-28"^^xsd:date ;
   :nam "HENDRIK KLAASSENS" .

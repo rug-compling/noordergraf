@@ -14,15 +14,19 @@ tomb:t00506
     ] ;
     :nd "+53.2074+005.7678"^^ll:
   ] ;
-  :subject t00506:p1, t00506:p2 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00506:p1, t00506:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00506:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P25Y7M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-03-14"^^xsd:date ;
   :dateOfDeath "1916-11-09"^^xsd:date ;
   :nam "JOHANNES DIJKHOFF" ;
@@ -44,6 +48,10 @@ t00506:p1
 
 t00506:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-10-05"^^xsd:date ;
   :dateOfDeath "1962-10-18"^^xsd:date ;
   :nam "SARA KINDERMANS" .

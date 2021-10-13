@@ -14,11 +14,15 @@ tomb:t00355
     ] ;
     :nd "+53.0841+006.5726"^^ll:
   ] ;
-  :subject t00355:p1, t00355:p2 ;
-  :site site:dr9481CGvries .
+  :site site:dr9481CGvries ;
+  :subject t00355:p1, t00355:p2 .
 
 t00355:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y9M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1947-01-02"^^xsd:date ;
   :dateOfDeath "2005-10-27"^^xsd:date ;
   :nam "JAN HESSELS" ;
@@ -28,6 +32,10 @@ t00355:p1
 
 t00355:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P14Y10M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1916-01-23"^^xsd:date ;
   :dateOfDeath "1930-12-01"^^xsd:date ;
   :nam "HENDRIK HESSELS" ;

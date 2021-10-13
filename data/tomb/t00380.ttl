@@ -14,18 +14,18 @@ tomb:t00380
     ] ;
     :nd "+53.2519+006.1450"^^ll:
   ] ;
-  :subject t00380:p1 ;
   :ref [
     a :Quote ;
-    :text "Ps. 87 ber." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 87 ;
-      :comment "berijmd"
-    ]
+      :comment "berijmd" ;
+      :part :Psalm.n.01
+    ] ;
+    :text "Ps. 87 ber."
   ] ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00380:p1 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -44,6 +44,10 @@ t00380:c1
 
 t00380:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P95Y10M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-03-07"^^xsd:date ;
   :dateOfDeath "1976-02-03"^^xsd:date ;
   :nam "TRIJNTJE IJSTRA" ;

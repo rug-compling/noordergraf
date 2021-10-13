@@ -14,12 +14,16 @@ tomb:t00062
     ] ;
     :nd "+53.1635+006.6159"^^ll:
   ] ;
-  :subject t00062:p1, t00062:p2 ;
   :quo "IN CHRISTUS BIJ GOD GEBORGEN" ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00062:p1, t00062:p2 .
 
 t00062:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y1M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1923-04-01"^^xsd:date ;
   :dateOfDeath "1997-05-07"^^xsd:date ;
   :nam "SIPCO JOHAN DE GROOT" ;

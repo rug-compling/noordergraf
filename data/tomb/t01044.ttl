@@ -14,11 +14,15 @@ tomb:t01044
     ] ;
     :nd "+53.1756+007.0956"^^ll:
   ] ;
-  :subject t01044:p1 ;
-  :site site:gr9686RSbeerta .
+  :site site:gr9686RSbeerta ;
+  :subject t01044:p1 .
 
 t01044:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y6M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1808-08-24"^^xsd:date ;
   :dateOfDeath "1884-02-26"^^xsd:date ;
   :nam "EILKE SIKKES-FOLKERTS" .

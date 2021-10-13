@@ -14,22 +14,26 @@ tomb:t00931
     ] ;
     :nd "+53.2404+006.5476"^^ll:
   ] ;
-  :subject t00931:p1, t00931:p2 ;
   :ref [
     a :Quote ;
-    :text "psalm 89:1 ber."@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 89 ;
-      :verse "1" ;
-      :comment "berijmd"
-    ]
+      :comment "berijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "1"
+    ] ;
+    :text "psalm 89:1 ber."@nld
   ] ;
-  :site site:gr9741GHgroningen .
+  :site site:gr9741GHgroningen ;
+  :subject t00931:p1, t00931:p2 .
 
 t00931:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y5M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1910-01-25"^^xsd:date ;
   :dateOfDeath "1974-07-02"^^xsd:date ;
   :nam "NICOLAAS VISSER" ;
@@ -40,6 +44,10 @@ t00931:p1
 
 t00931:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y10M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1913-09-07"^^xsd:date ;
   :dateOfDeath "2005-07-18"^^xsd:date ;
   :nam "HINDERKIEN DIJKEMA" .

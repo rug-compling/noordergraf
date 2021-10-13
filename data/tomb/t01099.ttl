@@ -14,9 +14,9 @@ tomb:t01099
     ] ;
     :nd "+53.2479+006.8642"^^ll:
   ] ;
-  :subject t01099:p1, t01099:p2, t01099:p3 ;
   :quo "JA WIJ WANDELEN ALLEN NAAR HET STILLE GRAF OOK DE KINDEREN VALLEN ALS DE BLOEMEN AF"@nld ;
   :site site:gr9628TKsiddeburen ;
+  :subject t01099:p1, t01099:p2, t01099:p3 ;
   :sym [
     a :Skull.n.01
   ], [
@@ -27,6 +27,10 @@ tomb:t01099
 
 t01099:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P47Y3M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1816-02-23"^^xsd:date ;
   :dateOfDeath "1863-06-11"^^xsd:date ;
   :nam "DERK T. KUIPER" ;
@@ -41,6 +45,10 @@ t01099:p2
 
 t01099:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P2Y2M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-04-06"^^xsd:date ;
   :dateOfDeath "1863-06-29"^^xsd:date ;
   :nam "JAKOB D. KUIPER" ;

@@ -2,6 +2,7 @@
 
 tomb:t00613
   a :Tomb ;
+  :creator t00613:p4 ;
   :image [
     dc:date "2019-11-23T10:05:07"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,15 +15,18 @@ tomb:t00613
     ] ;
     :nd "+53.1644+006.7540"^^ll:
   ] ;
-  :subject t00613:p1 ;
-  :creator t00613:p4 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00613:p1 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00613:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P14Y2M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1883-12-18"^^xsd:date ;
   :dateOfDeath "1898-02-22"^^xsd:date ;
   :nam "HELENA" ;

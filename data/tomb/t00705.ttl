@@ -14,9 +14,9 @@ tomb:t00705
     ] ;
     :nd "+52.7817+006.9011"^^ll:
   ] ;
-  :subject t00705:p1, t00705:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00705:p1, t00705:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -30,6 +30,10 @@ t00705:c1
 
 t00705:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y3M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-04-16"^^xsd:date ;
   :dateOfDeath "1937-07-23"^^xsd:date ;
   :nam "JOHANNES KOOPMAN" ;
@@ -41,6 +45,10 @@ t00705:p1
 
 t00705:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y11M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-05-03"^^xsd:date ;
   :dateOfDeath "1951-04-22"^^xsd:date ;
   :nam "CAROLINA HARMS" ;

@@ -14,9 +14,9 @@ tomb:t00261
     ] ;
     :nd "+53.1905+006.5928"^^ll:
   ] ;
-  :subject t00261:p1, t00261:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:gr9722SNgroningen ;
+  :subject t00261:p1, t00261:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -30,6 +30,10 @@ tomb:t00261
 
 t00261:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y2M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-10-14"^^xsd:date ;
   :dateOfDeath "1934-12-20"^^xsd:date ;
   :nam "GEORGE EYNDHOVEN" ;
@@ -40,6 +44,10 @@ t00261:p1
 
 t00261:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y11M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1852-03-12"^^xsd:date ;
   :dateOfDeath "1944-03-10"^^xsd:date ;
   :nam "JANTJE KLEIN" .

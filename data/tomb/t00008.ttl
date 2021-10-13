@@ -14,14 +14,18 @@ tomb:t00008
     ] ;
     :nd "+53.1899+006.5929"^^ll:
   ] ;
-  :subject t00008:p1, t00008:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00008:p1, t00008:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00008:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P11Y8M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1928-07-02"^^xsd:date ;
   :dateOfDeath "1940-03-09"^^xsd:date ;
   :nam "CORNELIA JOHANNA PIETERS" ;
@@ -34,6 +38,10 @@ t00008:p1
 
 t00008:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y7M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1904-09-20"^^xsd:date ;
   :dateOfDeath "1970-04-29"^^xsd:date ;
   :nam "AFFIEN NIENHUIS" ;

@@ -14,11 +14,15 @@ tomb:t00088
     ] ;
     :nd "+53.2061+006.5730"^^ll:
   ] ;
-  :subject t00088:p1, t00088:p2 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00088:p1, t00088:p2 .
 
 t00088:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y3M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-06-26"^^xsd:date ;
   :dateOfDeath "1941-10-13"^^xsd:date ;
   :nam "GEERTJE GROENEWOLD" ;

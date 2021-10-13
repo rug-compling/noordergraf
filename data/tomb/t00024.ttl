@@ -14,17 +14,25 @@ tomb:t00024
     ] ;
     :nd "+53.1909+006.5942"^^ll:
   ] ;
-  :subject t00024:p1, t00024:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00024:p1, t00024:p2 .
 
 t00024:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y9M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1860-04-08"^^xsd:date ;
   :dateOfDeath "1928-01-09"^^xsd:date ;
   :nam "ANNE DE VRIES" .
 
 t00024:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y7M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-07-21"^^xsd:date ;
   :dateOfDeath "1951-02-25"^^xsd:date ;
   :nam "OTTO DOORNBOS" ;

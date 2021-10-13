@@ -14,11 +14,15 @@ tomb:t00025
     ] ;
     :nd "+53.1910+006.5941"^^ll:
   ] ;
-  :subject t00025:p1, t00025:p2, t00025:p3, t00025:p4 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00025:p1, t00025:p2, t00025:p3, t00025:p4 .
 
 t00025:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y3M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-12-10"^^xsd:date ;
   :dateOfDeath "1943-04-08"^^xsd:date ;
   :nam "GRIETJE HAKVOORT" ;
@@ -29,12 +33,20 @@ t00025:p1
 
 t00025:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y3M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-04-21"^^xsd:date ;
   :dateOfDeath "1952-08-20"^^xsd:date ;
   :nam "HENDRIK ENTER" .
 
 t00025:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P19Y2M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1913-08-10"^^xsd:date ;
   :dateOfDeath "1932-10-22"^^xsd:date ;
   :nam "EESKE CHRISTINE" ;
@@ -45,6 +57,10 @@ t00025:p3
 
 t00025:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y2M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1902-09-30"^^xsd:date ;
   :dateOfDeath "1992-12-28"^^xsd:date ;
   :nam "SOPHIA LUMINA" ;

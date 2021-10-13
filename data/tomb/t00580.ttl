@@ -14,9 +14,9 @@ tomb:t00580
     ] ;
     :nd "+53.3357+006.5125"^^ll:
   ] ;
-  :subject t00580:p1 ;
   :ref t00580:v1 ;
-  :site site:gr9951STwinsum .
+  :site site:gr9951STwinsum ;
+  :subject t00580:p1 .
 
 t00580:c1
   a :Village.n.02 ;
@@ -25,6 +25,10 @@ t00580:c1
 
 t00580:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y5M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-07-15"^^xsd:date ;
   :dateOfDeath "1936-01-09"^^xsd:date ;
   :nam "GRIETJE VERMAAS" ;

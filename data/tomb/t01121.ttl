@@ -14,8 +14,8 @@ tomb:t01121
     ] ;
     :nd "+53.2259+006.3531"^^ll:
   ] ;
-  :subject t01121:p1 ;
   :site site:gr9822AKniekerk ;
+  :subject t01121:p1 ;
   :sym [
     a :Skull.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t01121
 
 t01121:p1
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P76Y2M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1795-09-24"^^xsd:date ;
   :dateOfDeath "1871-12-06"^^xsd:date ;
   :nam "H. HEUKERS" .

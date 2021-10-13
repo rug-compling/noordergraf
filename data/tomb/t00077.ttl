@@ -14,11 +14,15 @@ tomb:t00077
     ] ;
     :nd "+53.2038+006.5701"^^ll:
   ] ;
-  :subject t00077:p1, t00077:p2, t00077:p3, t00077:p4, t00077:p5 ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00077:p1, t00077:p2, t00077:p3, t00077:p4, t00077:p5 .
 
 t00077:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y2M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-10-30"^^xsd:date ;
   :dateOfDeath "1963-01-01"^^xsd:date ;
   :nam "MAGERMANS", "RIE VAN VEEN" ;
@@ -31,6 +35,10 @@ t00077:p1
 
 t00077:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1922-04-13"^^xsd:date ;
   :dateOfDeath "1986-04-29"^^xsd:date ;
   :nam "LEO SMIT" ;

@@ -14,15 +14,19 @@ tomb:t00819
     ] ;
     :nd "+53.2304+006.5518"^^ll:
   ] ;
-  :subject t00819:p1, t00819:p2, t00819:p3, t00819:p4 ;
   :ref t00819:v1 ;
   :site site:gr9741ACgroningen ;
+  :subject t00819:p1, t00819:p2, t00819:p3, t00819:p4 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00819:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P56Y7M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-06-18"^^xsd:date ;
   :dateOfDeath "1945-02-03"^^xsd:date ;
   :nam "HIEKTJE HUIZINGA" ;
@@ -40,6 +44,10 @@ t00819:p1
 
 t00819:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y7M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1884-01-17"^^xsd:date ;
   :dateOfDeath "1959-08-27"^^xsd:date ;
   :nam "P. DIJKHUIS", "PIETER DIJKHUIS" ;

@@ -14,9 +14,9 @@ tomb:t00508
     ] ;
     :nd "+53.2066+005.7691"^^ll:
   ] ;
-  :subject t00508:p1, t00508:p2, t00508:p3 ;
   :quo "MEMORIA EORUM ERIT IN PACE"@lat ;
-  :site site:fr8915CPleeuwarden .
+  :site site:fr8915CPleeuwarden ;
+  :subject t00508:p1, t00508:p2, t00508:p3 .
 
 t00508:c2
   a :City.n.01 ;
@@ -25,6 +25,10 @@ t00508:c2
 
 t00508:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P39Y4M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-03-10"^^xsd:date ;
   :dateOfDeath "1911-07-18"^^xsd:date ;
   :nam "MARIA H.F. LAMBOOIJ-AHSMANN" ;
@@ -37,6 +41,10 @@ t00508:p1
 
 t00508:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-03-31"^^xsd:date ;
   :dateOfDeath "1949-04-25"^^xsd:date ;
   :nam "HERMANUS D. LAMBOOIJ" ;
@@ -45,6 +53,10 @@ t00508:p2
 
 t00508:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y11M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-12-17"^^xsd:date ;
   :dateOfDeath "1949-12-06"^^xsd:date ;
   :nam "CAECILIA M. LAMBOOIJ-IJSSELMUIDEN" .

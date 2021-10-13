@@ -14,9 +14,9 @@ tomb:t00700
     ] ;
     :nd "+52.7813+006.9010"^^ll:
   ] ;
-  :subject t00700:p1, t00700:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER"@nld, "RUST ZACHT LIEVE MOEDER"@nld ;
-  :site site:dr7811HEemmen .
+  :site site:dr7811HEemmen ;
+  :subject t00700:p1, t00700:p2 .
 
 t00700:c1
   a :Town.n.01 ;
@@ -25,6 +25,10 @@ t00700:c1
 
 t00700:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y1M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-09-03"^^xsd:date ;
   :dateOfDeath "1933-10-20"^^xsd:date ;
   :nam "HENDRIK ALBERTS" ;
@@ -42,6 +46,10 @@ t00700:p1
 
 t00700:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y1M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-09-15"^^xsd:date ;
   :dateOfDeath "1944-10-18"^^xsd:date ;
   :nam "GEERTIEN BOELEN" ;

@@ -14,9 +14,9 @@ tomb:t00781
     ] ;
     :nd "+52.7819+006.8978"^^ll:
   ] ;
-  :subject t00781:p1, t00781:p2 ;
   :quo "RUST ZACHT LIEVE VROUW"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00781:p1, t00781:p2 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -29,6 +29,10 @@ tomb:t00781
 
 t00781:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P59Y8M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-01-15"^^xsd:date ;
   :dateOfDeath "1918-09-25"^^xsd:date ;
   :nam "LAMMECHIEN STRATING" ;

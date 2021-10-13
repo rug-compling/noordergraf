@@ -14,8 +14,8 @@ tomb:t00134
     ] ;
     :nd "+53.2069+006.5725"^^ll:
   ] ;
-  :subject t00134:p1, t00134:p2, t00134:p3 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00134:p1, t00134:p2, t00134:p3 .
 
 t00134:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00134:c1
 
 t00134:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y2M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-11-20"^^xsd:date ;
   :dateOfDeath "1942-01-25"^^xsd:date ;
   :nam "AKE SIKKEMA" ;
@@ -36,6 +40,10 @@ t00134:p1
 
 t00134:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P63Y1M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-03-19"^^xsd:date ;
   :dateOfDeath "1951-04-25"^^xsd:date ;
   :nam "BENTJE WESTERBRINK" ;

@@ -14,15 +14,19 @@ tomb:t00808
     ] ;
     :nd "+53.2777+006.6939"^^ll:
   ] ;
-  :subject t00808:p1, t00808:p2 ;
   :ref t00808:v1 ;
   :site site:gr9791KEten_boer ;
+  :subject t00808:p1, t00808:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00808:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P38Y7M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-03-05"^^xsd:date ;
   :dateOfDeath "1935-10-31"^^xsd:date ;
   :nam "JAN OOSTERHUIS" ;

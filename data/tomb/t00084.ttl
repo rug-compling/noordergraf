@@ -14,14 +14,18 @@ tomb:t00084
     ] ;
     :nd "+53.2035+006.5731"^^ll:
   ] ;
-  :subject t00084:p1, t00084:p2, t00084:p3 ;
   :site site:gr9721AAgroningen ;
+  :subject t00084:p1, t00084:p2, t00084:p3 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00084:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y4M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1893-06-28"^^xsd:date ;
   :dateOfDeath "1964-11-12"^^xsd:date ;
   :nam "JAN KORSMAN" ;
@@ -39,13 +43,17 @@ t00084:p1
 
 t00084:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y8M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1905-07-07"^^xsd:date ;
   :dateOfDeath "1986-04-01"^^xsd:date ;
   :nam "JOHANNA S.M. FISCHER" ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
+  ], [
+    a :Mother.n.01
   ] .
 
 t00084:p3

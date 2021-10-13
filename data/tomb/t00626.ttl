@@ -14,11 +14,15 @@ tomb:t00626
     ] ;
     :nd "+53.1642+006.7543"^^ll:
   ] ;
-  :subject t00626:p1, t00626:p2 ;
-  :site site:gr9601KAhoogezand .
+  :site site:gr9601KAhoogezand ;
+  :subject t00626:p1, t00626:p2 .
 
 t00626:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y7M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1839-11-03"^^xsd:date ;
   :dateOfDeath "1928-06-14"^^xsd:date ;
   :nam "ANNEGIEN MINKES" ;

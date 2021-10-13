@@ -14,9 +14,9 @@ tomb:t00525
     ] ;
     :nd "+53.1659+006.7581"^^ll:
   ] ;
-  :subject t00525:p1, t00525:p2 ;
   :quo "VEILIG IN JEZUS ARMEN"@nld ;
   :site site:gr9601KAhoogezand ;
+  :subject t00525:p1, t00525:p2 ;
   :sym [
     a :Yacht.n.01
   ], [
@@ -25,6 +25,10 @@ tomb:t00525
 
 t00525:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y9M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1937-06-29"^^xsd:date ;
   :dateOfDeath "2001-04-11"^^xsd:date ;
   :nam "EPPO RUITER" ;
@@ -41,14 +45,18 @@ t00525:p1
 
 t00525:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y11M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1935-05-01"^^xsd:date ;
   :dateOfDeath "2011-04-12"^^xsd:date ;
   :nam "GEERTJE STAAL" ;
   :rol [
-    a :Mother.n.01 ;
+    a :Grandmother.n.01 ;
     :tgt t00525:p3
   ], [
-    a :Grandmother.n.01 ;
+    a :Mother.n.01 ;
     :tgt t00525:p3
   ] .
 

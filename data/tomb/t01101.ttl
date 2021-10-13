@@ -14,11 +14,15 @@ tomb:t01101
     ] ;
     :nd "+53.2627+006.3125"^^ll:
   ] ;
-  :subject t01101:p1 ;
-  :site site:gr9843AGgrijpskerk .
+  :site site:gr9843AGgrijpskerk ;
+  :subject t01101:p1 .
 
 t01101:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P44Y3M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-01-01"^^xsd:date ;
   :dateOfDeath "1945-04-30"^^xsd:date ;
   :nam "HENDRIKA KERSTENS-GERRITSEN" ;

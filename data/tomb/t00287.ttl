@@ -14,11 +14,15 @@ tomb:t00287
     ] ;
     :nd "+53.4041+006.7488"^^ll:
   ] ;
-  :subject t00287:p1, t00287:p2 ;
-  :site site:gr9985SCoosternieland .
+  :site site:gr9985SCoosternieland ;
+  :subject t00287:p1, t00287:p2 .
 
 t00287:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1827-12-20"^^xsd:date ;
   :dateOfDeath "1895-01-01"^^xsd:date ;
   :nam "HENDRIK G. OOSTERHUIS" ;

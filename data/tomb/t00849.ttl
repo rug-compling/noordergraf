@@ -14,11 +14,15 @@ tomb:t00849
     ] ;
     :nd "+53.2959+005.0650"^^ll:
   ] ;
-  :subject t00849:p1, t00849:p2, t00849:p3 ;
-  :site site:fr8899AWoost_vlieland .
+  :site site:fr8899AWoost_vlieland ;
+  :subject t00849:p1, t00849:p2, t00849:p3 .
 
 t00849:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1Y6M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1738-08-14"^^xsd:date ;
   :dateOfDeath "1740-02-17"^^xsd:date ;
   :nam "FOCKE STAPERT" ;
@@ -29,6 +33,10 @@ t00849:p1
 
 t00849:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1Y18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1743-04-17"^^xsd:date ;
   :dateOfDeath "1744-05-05"^^xsd:date ;
   :nam "FOCKE STAPERT" ;
@@ -39,6 +47,10 @@ t00849:p2
 
 t00849:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1Y9M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1745-02-05"^^xsd:date ;
   :dateOfDeath "1746-11-25"^^xsd:date ;
   :nam "FOCKE STAPERT" ;

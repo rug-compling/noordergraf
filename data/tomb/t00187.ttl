@@ -14,8 +14,8 @@ tomb:t00187
     ] ;
     :nd "+53.1909+006.5923"^^ll:
   ] ;
-  :subject t00187:p1, t00187:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00187:p1, t00187:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00187
 
 t00187:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y3M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-05-26"^^xsd:date ;
   :dateOfDeath "1938-09-17"^^xsd:date ;
   :nam "WILLEM SCHUUR" ;
@@ -39,6 +43,10 @@ t00187:p1
 
 t00187:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y9M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1885-12-21"^^xsd:date ;
   :dateOfDeath "1957-09-25"^^xsd:date ;
   :nam "TRIJNTJE STEENBERGEN" ;

@@ -14,9 +14,9 @@ tomb:t00856
     ] ;
     :nd "+52.7757+006.8027"^^ll:
   ] ;
-  :subject t00856:p1 ;
   :quo "RUST ZACHT, GELIEFDE \\ ZUSTER EN TANTE."@nld ;
   :site site:dr7841CDsleen ;
+  :subject t00856:p1 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00856:c1
 
 t00856:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y1M"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-01-13"^^xsd:date ;
   :dateOfDeath "1949-02-13"^^xsd:date ;
   :nam "AALTIEN KAMPS" ;

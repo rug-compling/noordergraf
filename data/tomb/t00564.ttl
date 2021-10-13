@@ -14,14 +14,18 @@ tomb:t00564
     ] ;
     :nd "+53.1047+006.8744"^^ll:
   ] ;
-  :subject t00564:p1, t00564:p2 ;
   :site site:gr9641ANveendam ;
+  :subject t00564:p1, t00564:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00564:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P96Y2M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-08-04"^^xsd:date ;
   :dateOfDeath "2008-10-08"^^xsd:date ;
   :nam "ROELFIENE B. HOETJER" ;
@@ -32,6 +36,10 @@ t00564:p1
 
 t00564:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1914-11-16"^^xsd:date ;
   :dateOfDeath "1993-11-28"^^xsd:date ;
   :nam "JAN JACOB EKEMA" .

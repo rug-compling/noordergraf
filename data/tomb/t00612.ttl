@@ -14,8 +14,8 @@ tomb:t00612
     ] ;
     :nd "+53.1645+006.7541"^^ll:
   ] ;
-  :subject t00612:p1, t00612:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00612:p1, t00612:p2 ;
   :sym [
     a :Sandglass.n.01
   ], [
@@ -25,6 +25,10 @@ tomb:t00612
 
 t00612:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1809-10-21"^^xsd:date ;
   :dateOfDeath "1884-11-19"^^xsd:date ;
   :nam "TAMME TEN CATE" ;
@@ -41,6 +45,10 @@ t00612:p1
 
 t00612:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y4M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1819-06-28"^^xsd:date ;
   :dateOfDeath "1892-11-09"^^xsd:date ;
   :nam "SOETJE KEMPINGA" ;

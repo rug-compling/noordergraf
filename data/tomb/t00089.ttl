@@ -14,8 +14,8 @@ tomb:t00089
     ] ;
     :nd "+53.2071+006.5721"^^ll:
   ] ;
-  :subject t00089:p1, t00089:p2 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00089:p1, t00089:p2 .
 
 t00089:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00089:c1
 
 t00089:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y5M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1863-09-01"^^xsd:date ;
   :dateOfDeath "1947-02-20"^^xsd:date ;
   :nam "MARIA WIJTZIA ALTING" ;

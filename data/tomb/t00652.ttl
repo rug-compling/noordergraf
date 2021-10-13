@@ -14,27 +14,39 @@ tomb:t00652
     ] ;
     :nd "+53.1662+006.7525"^^ll:
   ] ;
-  :subject t00652:p1, t00652:p2, t00652:p3 ;
   :quo "1940"@nld, "1945"@nld, "IN HET VERZET GEVALLEN"@nld ;
   :site site:gr9601KAhoogezand ;
+  :subject t00652:p1, t00652:p2, t00652:p3 ;
   :sym [
     a :Lion.n.01
   ] .
 
 t00652:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P47Y9M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-01-03"^^xsd:date ;
   :dateOfDeath "1944-10-05"^^xsd:date ;
   :nam "MEINT VENINGA" .
 
 t00652:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P24Y3M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1920-06-13"^^xsd:date ;
   :dateOfDeath "1944-10-05"^^xsd:date ;
   :nam "JAN HUITZING" .
 
 t00652:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P33Y7M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1911-02-21"^^xsd:date ;
   :dateOfDeath "1944-10-05"^^xsd:date ;
   :nam "JAN SANGERS" .

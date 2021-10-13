@@ -14,14 +14,18 @@ tomb:t00005
     ] ;
     :nd "+53.1898+006.5930"^^ll:
   ] ;
-  :subject t00005:p1, t00005:p2, t00005:p3, t00005:p4, t00005:p5 ;
   :site site:gr9722SNgroningen ;
+  :subject t00005:p1, t00005:p2, t00005:p3, t00005:p4, t00005:p5 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00005:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P5M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1939-06-02"^^xsd:date ;
   :dateOfDeath "1939-11-30"^^xsd:date ;
   :nam "THIJSSIENA PIETA" ;
@@ -41,6 +45,10 @@ t00005:p3
 
 t00005:p4
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-03-28"^^xsd:date ;
   :dateOfDeath "1947-03-31"^^xsd:date ;
   :nam "MARTEN BRON" ;
@@ -52,6 +60,10 @@ t00005:p4
 
 t00005:p5
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y2M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1877-01-14"^^xsd:date ;
   :dateOfDeath "1958-03-31"^^xsd:date ;
   :nam "BARBARA WESTERLING" ;
@@ -61,8 +73,8 @@ t00005:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Psalm.n.01 ;
     :chapter 105 ;
+    :part :Psalm.n.01 ;
     :verse "5"
   ] .
 
@@ -70,8 +82,8 @@ t00005:v2
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Psalm.n.01 ;
     :chapter 145 ;
+    :part :Psalm.n.01 ;
     :verse "18"
   ] .
 
@@ -79,8 +91,8 @@ t00005:v3
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :John.n.05 ;
     :chapter 1 ;
+    :part :John.n.05 ;
     :verse "7"
   ] .
 

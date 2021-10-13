@@ -14,9 +14,9 @@ tomb:t00783
     ] ;
     :nd "+52.7818+006.8976"^^ll:
   ] ;
-  :subject t00783:p1, t00783:p2 ;
   :quo "DAT ZIJ MOGEN RUSTEN IN VREDE"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00783:p1, t00783:p2 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -25,6 +25,10 @@ tomb:t00783
 
 t00783:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P2Y8M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-04-16"^^xsd:date ;
   :dateOfDeath "1888-12-27"^^xsd:date ;
   :nam "HARM CHRISTIAANS" ;
@@ -35,6 +39,10 @@ t00783:p1
 
 t00783:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P4M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-08-06"^^xsd:date ;
   :dateOfDeath "1888-12-19"^^xsd:date ;
   :nam "LUCHIEN CHRISTIAANS" ;

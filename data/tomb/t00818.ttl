@@ -14,18 +14,22 @@ tomb:t00818
     ] ;
     :nd "+53.2305+006.5517"^^ll:
   ] ;
-  :subject t00818:p1, t00818:p2 ;
   :ref [
     a :Quote ;
-    :text "gez. 201."@nld ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gez. 201."@nld
   ] ;
-  :site site:gr9741ACgroningen .
+  :site site:gr9741ACgroningen ;
+  :subject t00818:p1, t00818:p2 .
 
 t00818:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P33Y4M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1911-09-09"^^xsd:date ;
   :dateOfDeath "1945-01-19"^^xsd:date ;
   :nam "JOHANNES RAMAKER" ;

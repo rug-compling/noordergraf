@@ -2,6 +2,7 @@
 
 tomb:t01030
   a :Tomb ;
+  :creator t01030:p3 ;
   :image [
     dc:date "2020-04-19T12:13:12"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,13 +15,16 @@ tomb:t01030
     ] ;
     :nd "+53.2647+006.3943"^^ll:
   ] ;
-  :subject t01030:p1, t01030:p2 ;
-  :creator t01030:p3 ;
   :quo "RUST IN VREDE"@nld ;
-  :site site:gr9804TEnoordhorn .
+  :site site:gr9804TEnoordhorn ;
+  :subject t01030:p1, t01030:p2 .
 
 t01030:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y9M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1822-09-22"^^xsd:date ;
   :dateOfDeath "1896-06-27"^^xsd:date ;
   :nam "SUFFRIDA SIBERDINA SLIJPER" ;
@@ -46,10 +50,10 @@ t01030:p2
 
 t01030:p3
   a :Creator ;
-  :name "BEUKEMA" ;
   :location [
     a :Village.n.02 ;
     :name "GARSTHUIZEN" ;
     :place place:Garsthuizen2755720
-  ] .
+  ] ;
+  :name "BEUKEMA" .
 

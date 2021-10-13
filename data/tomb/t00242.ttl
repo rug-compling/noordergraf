@@ -14,9 +14,9 @@ tomb:t00242
     ] ;
     :nd "+53.1727+006.6068"^^ll:
   ] ;
-  :subject t00242:p1, t00242:p2 ;
   :ref t00242:v1 ;
   :site site:gr9751BBharen ;
+  :subject t00242:p1, t00242:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -28,6 +28,10 @@ t00242:c1
 
 t00242:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y6M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1849-08-18"^^xsd:date ;
   :dateOfDeath "1932-03-09"^^xsd:date ;
   :nam "HENRIKJE BERENDS" ;

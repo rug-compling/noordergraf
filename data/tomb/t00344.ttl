@@ -14,23 +14,27 @@ tomb:t00344
     ] ;
     :nd "+52.7157+006.4720"^^ll:
   ] ;
-  :subject t00344:p1, t00344:p2 ;
   :ref [
     a :Quote ;
-    :text "psalm 27" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
-      :chapter 27
-    ]
+      :chapter 27 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "psalm 27"
   ] ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00344:p1, t00344:p2 ;
   :sym [
     a :Chrismon.n.01
   ] .
 
 t00344:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P90Y7M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1909-01-24"^^xsd:date ;
   :dateOfDeath "1999-09-10"^^xsd:date ;
   :nam "HENDRIK VRIJHOF" ;
@@ -47,6 +51,10 @@ t00344:p1
 
 t00344:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y2M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1917-07-01"^^xsd:date ;
   :dateOfDeath "2001-09-28"^^xsd:date ;
   :nam "LAMBERTA VRIJHOF-KUILDER" ;

@@ -14,11 +14,15 @@ tomb:t00396
     ] ;
     :nd "+53.2516+006.1450"^^ll:
   ] ;
-  :subject t00396:p1, t00396:p2 ;
-  :site site:fr9285TCbuitenpost .
+  :site site:fr9285TCbuitenpost ;
+  :subject t00396:p1, t00396:p2 .
 
 t00396:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y2M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1911-08-28"^^xsd:date ;
   :dateOfDeath "1969-10-30"^^xsd:date ;
   :nam "SAKE BOSMA" ;
@@ -33,6 +37,10 @@ t00396:p1
 
 t00396:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-02-14"^^xsd:date ;
   :dateOfDeath "2002-02-17"^^xsd:date ;
   :nam "ANTJE MULDER" ;

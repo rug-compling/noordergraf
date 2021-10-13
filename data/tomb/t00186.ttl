@@ -14,11 +14,15 @@ tomb:t00186
     ] ;
     :nd "+53.1909+006.5923"^^ll:
   ] ;
-  :subject t00186:p1, t00186:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00186:p1, t00186:p2 .
 
 t00186:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P37Y19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-08-25"^^xsd:date ;
   :dateOfDeath "1938-09-13"^^xsd:date ;
   :nam "ELLEGIEN GEZINA BEUKER" ;
@@ -31,6 +35,10 @@ t00186:p1
 
 t00186:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y9M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1894-04-11"^^xsd:date ;
   :dateOfDeath "1960-01-12"^^xsd:date ;
   :nam "HENDRIK PALTS" ;

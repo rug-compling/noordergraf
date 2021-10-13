@@ -14,9 +14,9 @@ tomb:t00886
     ] ;
     :nd "+52.7197+006.8464"^^ll:
   ] ;
-  :subject t00886:p1, t00886:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00886:p1, t00886:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -25,6 +25,10 @@ tomb:t00886
 
 t00886:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y11M"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-02-16"^^xsd:date ;
   :dateOfDeath "1957-01-16"^^xsd:date ;
   :nam "GEERTJE DE HAAN-EMMING" ;
@@ -39,6 +43,10 @@ t00886:p1
 
 t00886:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y11M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1883-08-08"^^xsd:date ;
   :dateOfDeath "1958-08-01"^^xsd:date ;
   :nam "ROELOF DE HAAN" ;

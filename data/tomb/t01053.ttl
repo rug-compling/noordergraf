@@ -8,17 +8,17 @@ tomb:t01053
     a :Photo ;
     :file img:t01053.jpg
   ] ;
-  :subject t01053:p1, t01053:p2, t01053:p3 ;
   :ref [
     a :Quote ;
-    :text "Ps. 103:8_9" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 103 ;
+      :part :Psalm.n.01 ;
       :verse "8-9"
-    ]
+    ] ;
+    :text "Ps. 103:8_9"
   ] ;
+  :subject t01053:p1, t01053:p2, t01053:p3 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -30,6 +30,10 @@ t01053:c1
 
 t01053:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P33Y10M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1887-01-05"^^xsd:date ;
   :dateOfDeath "1920-11-22"^^xsd:date ;
   :nam "BRECHTJE LUKAS" ;

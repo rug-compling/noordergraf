@@ -14,14 +14,18 @@ tomb:t00884
     ] ;
     :nd "+52.7196+006.8464"^^ll:
   ] ;
-  :subject t00884:p1, t00884:p2 ;
   :site site:dr7844TCveenoord ;
+  :subject t00884:p1, t00884:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00884:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y2M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1903-04-15"^^xsd:date ;
   :dateOfDeath "1951-06-29"^^xsd:date ;
   :nam "GERRIT TEN VOORDE" ;

@@ -16,21 +16,25 @@ tomb:t00412
   ] ;
   :mem [
     a :Tomb ;
-    :subject t00412:p2 ;
-    :quo "RUST ZACHT CLARA"
+    :quo "RUST ZACHT CLARA" ;
+    :subject t00412:p2
   ], [
     a :Tomb ;
-    :subject t00412:p1 ;
     :quo "RUST ZACHT LAURENS" ;
+    :subject t00412:p1 ;
     :sym [
       a :Bird.n.01
     ]
   ] ;
-  :subject t00412:p1, t00412:p2 ;
-  :site site:dr9481CGvries .
+  :site site:dr9481CGvries ;
+  :subject t00412:p1, t00412:p2 .
 
 t00412:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y7M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1892-01-24"^^xsd:date ;
   :dateOfDeath "1960-09-03"^^xsd:date ;
   :nam "LAURENS JAN REITSMA" ;
@@ -41,6 +45,10 @@ t00412:p1
 
 t00412:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y3M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-09-14"^^xsd:date ;
   :dateOfDeath "1989-12-17"^^xsd:date ;
   :nam "CLARA MARIA ANGELA REITSMA-VAN OOIJEN" .

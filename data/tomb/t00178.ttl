@@ -14,8 +14,8 @@ tomb:t00178
     ] ;
     :nd "+53.1912+006.5936"^^ll:
   ] ;
-  :subject t00178:p1, t00178:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00178:p1, t00178:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -27,6 +27,10 @@ t00178:c1
 
 t00178:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y5M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-01-31"^^xsd:date ;
   :dateOfDeath "1936-07-20"^^xsd:date ;
   :nam "SJOUKTJE PAMA" ;
@@ -43,6 +47,10 @@ t00178:p1
 
 t00178:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y5M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-01-17"^^xsd:date ;
   :dateOfDeath "1953-07-11"^^xsd:date ;
   :nam "LIEUWE HUIZINGA" ;

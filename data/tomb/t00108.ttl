@@ -14,9 +14,9 @@ tomb:t00108
     ] ;
     :nd "+53.1905+006.5925"^^ll:
   ] ;
-  :subject t00108:p1, t00108:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:gr9722SNgroningen ;
+  :subject t00108:p1, t00108:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -28,6 +28,10 @@ t00108:c1
 
 t00108:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y4M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-03-21"^^xsd:date ;
   :dateOfDeath "1933-08-20"^^xsd:date ;
   :nam "FENNA MULDER" ;
@@ -46,6 +50,10 @@ t00108:p1
 
 t00108:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y4M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-02-01"^^xsd:date ;
   :dateOfDeath "1956-06-25"^^xsd:date ;
   :nam "HARM MAKKEN" ;

@@ -14,8 +14,8 @@ tomb:t00164
     ] ;
     :nd "+53.2054+006.5705"^^ll:
   ] ;
-  :subject t00164:p1, t00164:p2, t00164:p3 ;
   :site site:gr9725ACgroningen ;
+  :subject t00164:p1, t00164:p2, t00164:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,18 +27,30 @@ tomb:t00164
 
 t00164:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P11Y6M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-07-02"^^xsd:date ;
   :dateOfDeath "1910-01-31"^^xsd:date ;
   :nam "FREDERIK MENNO EDENS" .
 
 t00164:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y5M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-02-22"^^xsd:date ;
   :dateOfDeath "1935-08-02"^^xsd:date ;
   :nam "TAMMO EDENS" .
 
 t00164:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-02-21"^^xsd:date ;
   :dateOfDeath "1955-03-02"^^xsd:date ;
   :nam "JELTJE PARÉ" ;

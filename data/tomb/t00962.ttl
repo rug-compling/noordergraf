@@ -14,15 +14,19 @@ tomb:t00962
     ] ;
     :nd "+53.1273+006.7178"^^ll:
   ] ;
-  :subject t00962:p1, t00962:p2, t00962:p3 ;
   :quo "RUST ZACHT LIEVE DOODE"@nld ;
   :site site:gr9606PEkropswolde ;
+  :subject t00962:p1, t00962:p2, t00962:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00962:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y6M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1835-06-23"^^xsd:date ;
   :dateOfDeath "1912-01-12"^^xsd:date ;
   :nam "ALBERT DE JONGE" ;

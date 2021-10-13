@@ -14,11 +14,15 @@ tomb:t00274
     ] ;
     :nd "+53.2228+006.6377"^^ll:
   ] ;
-  :subject t00274:p1, t00274:p2 ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00274:p1, t00274:p2 .
 
 t00274:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-05-23"^^xsd:date ;
   :dateOfDeath "1960-06-02"^^xsd:date ;
   :nam "TJERK MERGUÊT" ;
@@ -34,6 +38,10 @@ t00274:p1
 
 t00274:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y11M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-09-17"^^xsd:date ;
   :dateOfDeath "1963-09-01"^^xsd:date ;
   :nam "ANNA WOLTHUIS" ;

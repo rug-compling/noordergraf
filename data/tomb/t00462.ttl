@@ -14,8 +14,8 @@ tomb:t00462
     ] ;
     :nd "+53.2065+005.7699"^^ll:
   ] ;
-  :subject t00462:p1, t00462:p2 ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00462:p1, t00462:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,12 +27,20 @@ tomb:t00462
 
 t00462:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y2M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1914-09-08"^^xsd:date ;
   :dateOfDeath "1968-11-10"^^xsd:date ;
   :nam "J.H.TH. ROTHENGATTER" .
 
 t00462:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y11M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1919-03-06"^^xsd:date ;
   :dateOfDeath "2004-03-04"^^xsd:date ;
   :nam "P.J. ROTHENGATTER-SCHUITMAKER" .

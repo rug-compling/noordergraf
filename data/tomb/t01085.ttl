@@ -22,8 +22,8 @@ tomb:t01085
     ] ;
     :nd "+53.2480+006.6475"^^ll:
   ] ;
-  :subject t01085:p1 ;
-  :site site:gr9798PDgarmerwolde .
+  :site site:gr9798PDgarmerwolde ;
+  :subject t01085:p1 .
 
 t01085:g2
   a :People.n.01 ;
@@ -35,6 +35,10 @@ t01085:g2
 
 t01085:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y9M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1815-05-20"^^xsd:date ;
   :dateOfDeath "1880-02-22"^^xsd:date ;
   :nam "JAKOB GERRITS SCHUTTER" ;

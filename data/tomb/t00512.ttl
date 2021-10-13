@@ -14,15 +14,19 @@ tomb:t00512
     ] ;
     :nd "+53.1649+006.7537"^^ll:
   ] ;
-  :subject t00512:p1 ;
   :quo "GONE, BUT NOT FORGOTTEN"@eng, "IN LOVING MEMORY OF"@eng ;
   :site site:gr9601KAhoogezand ;
+  :subject t00512:p1 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00512:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1921"^^xsd:gYear ;
   :dateOfDeath "1993"^^xsd:gYear ;
   :nam "JOZUA VOS" .

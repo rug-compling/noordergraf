@@ -14,14 +14,18 @@ tomb:t00075
     ] ;
     :nd "+53.2039+006.5715"^^ll:
   ] ;
-  :subject t00075:p1, t00075:p2 ;
   :site site:gr9721AAgroningen ;
+  :subject t00075:p1, t00075:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00075:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P52Y11M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1905-02-08"^^xsd:date ;
   :dateOfDeath "1958-02-03"^^xsd:date ;
   :nam "H. MAST" ;
@@ -36,6 +40,10 @@ t00075:p1
 
 t00075:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y8M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-10-16"^^xsd:date ;
   :dateOfDeath "1978-06-25"^^xsd:date ;
   :nam "K. SCHENKEL" ;

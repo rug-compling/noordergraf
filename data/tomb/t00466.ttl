@@ -14,21 +14,29 @@ tomb:t00466
     ] ;
     :nd "+53.2072+005.7695"^^ll:
   ] ;
-  :subject t00466:p1, t00466:p2 ;
   :picture [
     a :Portrait.n.02 ;
     :thm t00466:p1
   ] ;
-  :site site:fr8915CPleeuwarden .
+  :site site:fr8915CPleeuwarden ;
+  :subject t00466:p1, t00466:p2 .
 
 t00466:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y7M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1903-06-26"^^xsd:date ;
   :dateOfDeath "1964-02-10"^^xsd:date ;
   :nam "CORNELIA ADEMA DE VRIES" .
 
 t00466:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P11M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1998-12-26"^^xsd:date ;
   :dateOfDeath "1981-12-15"^^xsd:date ;
   :nam "GERHARDUS J. ADEMA" .

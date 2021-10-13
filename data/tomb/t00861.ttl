@@ -14,8 +14,8 @@ tomb:t00861
     ] ;
     :nd "+52.7193+006.8450"^^ll:
   ] ;
-  :subject t00861:p1, t00861:p2 ;
-  :site site:dr7844TCveenoord .
+  :site site:dr7844TCveenoord ;
+  :subject t00861:p1, t00861:p2 .
 
 t00861:c2
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00861:c2
 
 t00861:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P102Y1M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1852-02-27"^^xsd:date ;
   :dateOfDeath "1954-04-18"^^xsd:date ;
   :nam "JAC. LOUWES" ;
@@ -36,6 +40,10 @@ t00861:p1
 
 t00861:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y10M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1858-01-14"^^xsd:date ;
   :dateOfDeath "1938-11-19"^^xsd:date ;
   :nam "JANNA GORT" ;

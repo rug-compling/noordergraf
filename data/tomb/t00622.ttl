@@ -14,8 +14,8 @@ tomb:t00622
     ] ;
     :nd "+53.1643+006.7541"^^ll:
   ] ;
-  :subject t00622:p1, t00622:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00622:p1, t00622:p2 ;
   :sym [
     a :Torch.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t00622
 
 t00622:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y3M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1815-03-20"^^xsd:date ;
   :dateOfDeath "1903-07-04"^^xsd:date ;
   :nam "JANNES MARCUS CREMER" ;

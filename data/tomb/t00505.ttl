@@ -14,15 +14,19 @@ tomb:t00505
     ] ;
     :nd "+53.2070+005.7690"^^ll:
   ] ;
-  :subject t00505:p1, t00505:p2, t00505:p3 ;
   :quo "GEDENK IN UW GEBEDEN" ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00505:p1, t00505:p2, t00505:p3 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00505:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P37Y7M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-10-14"^^xsd:date ;
   :dateOfDeath "1917-05-20"^^xsd:date ;
   :nam "HELENA R.M. DIJKHOFF" ;
@@ -34,6 +38,10 @@ t00505:p1
 
 t00505:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-10-29"^^xsd:date ;
   :dateOfDeath "1948-11-07"^^xsd:date ;
   :nam "THEODORUS M. FISCHER" ;
@@ -41,6 +49,10 @@ t00505:p2
 
 t00505:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1885-05-04"^^xsd:date ;
   :dateOfDeath "1957-09-22"^^xsd:date ;
   :nam "CATHARINA J.M. HOOGMAN" .

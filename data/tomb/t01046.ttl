@@ -14,15 +14,19 @@ tomb:t01046
     ] ;
     :nd "+53.1232+006.2512"^^ll:
   ] ;
-  :subject t01046:p1, t01046:p2, t01046:p3, t01046:p4 ;
   :quo "RUST ZACHT"@nld ;
   :site site:gr9367PAde_wilp ;
+  :subject t01046:p1, t01046:p2, t01046:p3, t01046:p4 ;
   :sym [
     a :Oak.n.01
   ] .
 
 t01046:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y5M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-09-28"^^xsd:date ;
   :dateOfDeath "1955-03-22"^^xsd:date ;
   :nam "TRIENTJE DE HAAN" ;
@@ -42,6 +46,10 @@ t01046:p3
 
 t01046:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P1Y30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1902-05-23"^^xsd:date ;
   :dateOfDeath "1903-06-22"^^xsd:date ;
   :nam "MARTJE NIJHOF" ;

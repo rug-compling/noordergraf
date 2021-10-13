@@ -14,15 +14,19 @@ tomb:t00885
     ] ;
     :nd "+52.7195+006.8459"^^ll:
   ] ;
-  :subject t00885:p1, t00885:p2 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00885:p1, t00885:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00885:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y8M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-05-08"^^xsd:date ;
   :dateOfDeath "1957-01-16"^^xsd:date ;
   :nam "FENNA WITTING" ;

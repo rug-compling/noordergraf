@@ -14,8 +14,8 @@ tomb:t00074
     ] ;
     :nd "+53.2037+006.5717"^^ll:
   ] ;
-  :subject t00074:p1, t00074:p2 ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00074:p1, t00074:p2 .
 
 t00074:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00074:c1
 
 t00074:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y1M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-11-13"^^xsd:date ;
   :dateOfDeath "1951-01-06"^^xsd:date ;
   :nam "MARIA ELISABETH HILLEBRAND" ;
@@ -45,6 +49,10 @@ t00074:p1
 
 t00074:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-02-28"^^xsd:date ;
   :dateOfDeath "1955-03-08"^^xsd:date ;
   :nam "LORENZ WILHELM FISCHER" ;

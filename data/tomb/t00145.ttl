@@ -14,18 +14,26 @@ tomb:t00145
     ] ;
     :nd "+53.2061+006.5699"^^ll:
   ] ;
-  :subject t00145:p1, t00145:p2 ;
   :quo "MAAR NU, CHRISTUS IS OPGEWEKT UIT DE DOODEN, EN IS DE EERSTELING GEWORDEN DERGENEN, DIE ONTSLAPEN ZIJN" ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00145:p1, t00145:p2 .
 
 t00145:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y11M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1920-01-08"^^xsd:date ;
   :dateOfDeath "1940-12-11"^^xsd:date ;
   :nam "TRUUS ORANJE" .
 
 t00145:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y4M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1906-04-09"^^xsd:date ;
   :dateOfDeath "1997-08-15"^^xsd:date ;
   :nam "JOHANNA BARBERA ORANJE" .

@@ -14,8 +14,8 @@ tomb:t00954
     ] ;
     :nd "+53.1203+006.6592"^^ll:
   ] ;
-  :subject t00954:p1 ;
-  :site site:gr9479TNnoordlaren .
+  :site site:gr9479TNnoordlaren ;
+  :subject t00954:p1 .
 
 t00954:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00954:c1
 
 t00954:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y2M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-11-06"^^xsd:date ;
   :dateOfDeath "1955-01-08"^^xsd:date ;
   :nam "ROELOF HENDRIK VOS" ;

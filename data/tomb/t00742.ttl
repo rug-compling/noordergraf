@@ -23,14 +23,18 @@ tomb:t00742
     ] ;
     :nd "+53.1806+006.9690"^^ll:
   ] ;
-  :subject t00742:p1, t00742:p2, t00742:p3, t00742:p4 ;
   :site site:gr9679KHscheemda ;
+  :subject t00742:p1, t00742:p2, t00742:p3, t00742:p4 ;
   :sym [
     a :Entity.n.01
   ] .
 
 t00742:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P35Y5M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-08-16"^^xsd:date ;
   :dateOfDeath "1909-01-28"^^xsd:date ;
   :nam "TRIJNTJE SMIT" ;
@@ -55,12 +59,20 @@ t00742:p2
 
 t00742:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P2M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1908-05-05"^^xsd:date ;
   :dateOfDeath "1908-08-03"^^xsd:date ;
   :nam "WESSEL PIETER" .
 
 t00742:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P6Y10M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1902-01-24"^^xsd:date ;
   :dateOfDeath "1908-12-21"^^xsd:date ;
   :nam "WESSELINA PIETERDINA" .

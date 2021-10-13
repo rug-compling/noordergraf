@@ -14,8 +14,8 @@ tomb:t00427
     ] ;
     :nd "+53.4793+006.1609"^^ll:
   ] ;
-  :subject t00427:p1, t00427:p2 ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00427:p1, t00427:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -36,6 +36,10 @@ t00427:c1
 
 t00427:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y11M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-08-03"^^xsd:date ;
   :dateOfDeath "1943-07-28"^^xsd:date ;
   :nam "HENDRIK WILLEM VAN DEN BERG" ;
@@ -46,6 +50,10 @@ t00427:p1
 
 t00427:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P56Y4M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1887-03-27"^^xsd:date ;
   :dateOfDeath "1943-07-28"^^xsd:date ;
   :nam "JACOBA ABRAMINA ZEILINGA" ;

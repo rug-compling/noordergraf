@@ -14,9 +14,9 @@ tomb:t00870
     ] ;
     :nd "+52.7756+006.8029"^^ll:
   ] ;
-  :subject t00870:p1, t00870:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :site site:dr7841CDsleen .
+  :site site:dr7841CDsleen ;
+  :subject t00870:p1, t00870:p2 .
 
 t00870:c2
   a :Village.n.02 ;
@@ -25,6 +25,10 @@ t00870:c2
 
 t00870:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y11M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1826-06-18"^^xsd:date ;
   :dateOfDeath "1900-06-05"^^xsd:date ;
   :nam "HERMAN ROSING" ;
@@ -37,6 +41,10 @@ t00870:p1
 
 t00870:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y4M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1839-04-17"^^xsd:date ;
   :dateOfDeath "1906-08-28"^^xsd:date ;
   :nam "ALIDA EVENHUIS" ;

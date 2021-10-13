@@ -14,9 +14,9 @@ tomb:t00919
     ] ;
     :nd "+53.1715+006.3652"^^ll:
   ] ;
-  :subject t00919:p1, t00919:p2 ;
   :quo "RUST ZACHT BROER EN ZUSTER"@nld, "RUSTPLAATS VAN $p1 $p2"@nld ;
   :site site:gr9351RLtolbert ;
+  :subject t00919:p1, t00919:p2 ;
   :sym [
     a :Oak.n.03
   ] .
@@ -28,6 +28,10 @@ t00919:c1
 
 t00919:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y1M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-10-27"^^xsd:date ;
   :dateOfDeath "1938-12-13"^^xsd:date ;
   :nam "GEERT HOLMERSMA" ;
@@ -40,8 +44,12 @@ t00919:p1
 
 t00919:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y10M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-04-18"^^xsd:date ;
-  :dateOfDeath "1934-02-267" ;
+  :dateOfDeath "1947-02-26"^^xsd:date ;
   :nam "GEESKE HOLMERSMA" ;
   :placeOfBirth t00919:c1 ;
   :placeOfDeath t00919:c1 ;

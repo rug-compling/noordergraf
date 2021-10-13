@@ -14,11 +14,15 @@ tomb:t00201
     ] ;
     :nd "+53.1901+006.5946"^^ll:
   ] ;
-  :subject t00201:p1, t00201:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00201:p1, t00201:p2 .
 
 t00201:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y8M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-07-14"^^xsd:date ;
   :dateOfDeath "1933-03-21"^^xsd:date ;
   :nam "DIRKJE WACHTER" ;
@@ -29,6 +33,10 @@ t00201:p1
 
 t00201:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y11M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-02-03"^^xsd:date ;
   :dateOfDeath "1940-01-19"^^xsd:date ;
   :nam "RUDOLF VAN DER MOLEN" ;

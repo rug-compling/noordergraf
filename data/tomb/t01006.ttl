@@ -14,8 +14,8 @@ tomb:t01006
     ] ;
     :nd "+53.2441+006.6276"^^ll:
   ] ;
-  :subject t01006:p1, t01006:p2 ;
   :site site:gr9734ATgroningen ;
+  :subject t01006:p1, t01006:p2 ;
   :sym t01006:s2, t01006:s3, [
     a :Sandglass.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t01006
 
 t01006:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1780-05-12"^^xsd:date ;
   :dateOfDeath "1869-06-07"^^xsd:date ;
   :nam "TRIENTJE JANS KORT" ;

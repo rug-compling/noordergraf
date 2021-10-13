@@ -14,14 +14,18 @@ tomb:t00256
     ] ;
     :nd "+53.1725+006.6063"^^ll:
   ] ;
-  :subject t00256:p1, t00256:p2 ;
   :site site:gr9751BBharen ;
+  :subject t00256:p1, t00256:p2 ;
   :sym [
     a :BrokenFlower
   ] .
 
 t00256:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P92Y1M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-07-08"^^xsd:date ;
   :dateOfDeath "1962-09-01"^^xsd:date ;
   :nam "HILJE STOLLENGA" ;

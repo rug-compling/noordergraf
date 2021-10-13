@@ -14,14 +14,18 @@ tomb:t00630
     ] ;
     :nd "+53.1640+006.7543"^^ll:
   ] ;
-  :subject t00630:p1, t00630:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00630:p1, t00630:p2 ;
   :sym [
     a :Boat.n.01
   ] .
 
 t00630:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P43Y9M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1846-09-06"^^xsd:date ;
   :dateOfDeath "1890-06-29"^^xsd:date ;
   :nam "MARCUS DE HAAN" ;

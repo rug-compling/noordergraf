@@ -14,21 +14,25 @@ tomb:t00310
     ] ;
     :nd "+52.7156+006.4735"^^ll:
   ] ;
-  :subject t00310:p1, t00310:p2, t00310:p3 ;
   :ref [
     a :Quote ;
-    :text "gezang 178:1 en 3." ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gezang 178:1 en 3."
   ] ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00310:p1, t00310:p2, t00310:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00310:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y2M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-04-08"^^xsd:date ;
   :dateOfDeath "1941-06-09"^^xsd:date ;
   :nam "GRIETIEN LESSCHEN" ;
@@ -39,6 +43,10 @@ t00310:p1
 
 t00310:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y4M"^^xsd:duration
+  ] ;
   :dateOfBirth "1894-03-03"^^xsd:date ;
   :dateOfDeath "1976-07-03"^^xsd:date ;
   :nam "ALBERT SMEMAN" ;

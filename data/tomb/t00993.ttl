@@ -14,9 +14,9 @@ tomb:t00993
     ] ;
     :nd "+53.1762+007.0951"^^ll:
   ] ;
-  :subject t00993:p1, t00993:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:gr9686RSbeerta ;
+  :subject t00993:p1, t00993:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -25,12 +25,20 @@ tomb:t00993
 
 t00993:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P59Y4M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-12-03"^^xsd:date ;
   :dateOfDeath "1936-04-15"^^xsd:date ;
   :nam "ENGEL VEGT" .
 
 t00993:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y8M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-03-17"^^xsd:date ;
   :dateOfDeath "1963-11-28"^^xsd:date ;
   :nam "EPKE MULDER" .

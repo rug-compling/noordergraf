@@ -14,8 +14,8 @@ tomb:t00748
     ] ;
     :nd "+53.1807+006.9685"^^ll:
   ] ;
-  :subject t00748:p1, t00748:p2 ;
   :site site:gr9679KHscheemda ;
+  :subject t00748:p1, t00748:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t00748
 
 t00748:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y5M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1801-11-17"^^xsd:date ;
   :dateOfDeath "1887-04-22"^^xsd:date ;
   :nam "PIETER FREERKS REITSEMA" ;

@@ -14,22 +14,26 @@ tomb:t00059
     ] ;
     :nd "+53.1634+006.6138"^^ll:
   ] ;
-  :subject t00059:p1, t00059:p2 ;
   :ref [
     a :Quote ;
-    :text "ps. 121:1 (o.b.)" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 121 ;
-      :verse "1" ;
-      :comment "onberijmd"
-    ]
+      :comment "onberijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "1"
+    ] ;
+    :text "ps. 121:1 (o.b.)"
   ] ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00059:p1, t00059:p2 .
 
 t00059:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y6M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1919-12-31"^^xsd:date ;
   :dateOfDeath "1995-07-05"^^xsd:date ;
   :nam "MEINT ZUIDERSMA" ;
@@ -44,12 +48,16 @@ t00059:p1
 
 t00059:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y10M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1919-06-27"^^xsd:date ;
   :dateOfDeath "2011-05-07"^^xsd:date ;
   :nam "ANNIE AAFKE ZUIDERSMA-STULP" ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
+  ], [
+    a :Mother.n.01
   ] .
 

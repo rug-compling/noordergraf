@@ -14,8 +14,8 @@ tomb:t00173
     ] ;
     :nd "+53.1904+006.5933"^^ll:
   ] ;
-  :subject t00173:p1, t00173:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00173:p1, t00173:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,12 +27,20 @@ tomb:t00173
 
 t00173:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y4M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-05-18"^^xsd:date ;
   :dateOfDeath "1927-10-11"^^xsd:date ;
   :nam "GODFRIED LODEWIJK VAN ZETTEN" .
 
 t00173:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y4M"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-03-13"^^xsd:date ;
   :dateOfDeath "1947-07-13"^^xsd:date ;
   :nam "JENNEKE TIEL" ;

@@ -14,12 +14,16 @@ tomb:t01052
     ] ;
     :nd "+53.3602+006.3431"^^ll:
   ] ;
-  :subject t01052:p1 ;
   :quo "ZIJNDE DE EERSTE, DIE OP DEZE BEGRAAFPLAATS IS TER AARDE BESTELD"@nld ;
-  :site site:gr9971EBulrum .
+  :site site:gr9971EBulrum ;
+  :subject t01052:p1 .
 
 t01052:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y5M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1815-11-15"^^xsd:date ;
   :dateOfDeath "1905-04-21"^^xsd:date ;
   :nam "WUBBERTUS KRÖEGER" ;

@@ -14,12 +14,16 @@ tomb:t00792
     ] ;
     :nd "+53.2775+006.6935"^^ll:
   ] ;
-  :subject t00792:p1 ;
   :ref t00792:v1 ;
-  :site site:gr9791KEten_boer .
+  :site site:gr9791KEten_boer ;
+  :subject t00792:p1 .
 
 t00792:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y7M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-02-20"^^xsd:date ;
   :dateOfDeath "1941-09-27"^^xsd:date ;
   :nam "ROELFKE HOVING" .

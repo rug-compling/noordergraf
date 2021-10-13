@@ -14,8 +14,8 @@ tomb:t00802
     ] ;
     :nd "+53.1909+006.5942"^^ll:
   ] ;
-  :subject t00802:p1, t00802:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00802:p1, t00802:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t00802
 
 t00802:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y4M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-10-04"^^xsd:date ;
   :dateOfDeath "1931-02-27"^^xsd:date ;
   :nam "IJPE BOERSMA" ;
@@ -41,6 +45,10 @@ t00802:p1
 
 t00802:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y2M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1867-09-27"^^xsd:date ;
   :dateOfDeath "1954-12-26"^^xsd:date ;
   :nam "HILJE VEENSTRA" .

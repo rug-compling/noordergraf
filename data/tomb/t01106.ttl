@@ -14,12 +14,16 @@ tomb:t01106
     ] ;
     :nd "+53.2627+006.3139"^^ll:
   ] ;
-  :subject t01106:p1 ;
   :quo "IN JEZUS ONTSLAPEN"@nld ;
-  :site site:gr9843AGgrijpskerk .
+  :site site:gr9843AGgrijpskerk ;
+  :subject t01106:p1 .
 
 t01106:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P56Y7M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1906-06-14"^^xsd:date ;
   :dateOfDeath "1963-01-15"^^xsd:date ;
   :nam "BONTJE VEENMAN" ;

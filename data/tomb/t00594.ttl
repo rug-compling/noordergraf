@@ -14,12 +14,16 @@ tomb:t00594
     ] ;
     :nd "+53.3262+006.5125"^^ll:
   ] ;
-  :subject t00594:p1 ;
   :quo "T HET NOG NOOIT, NOG NOOIT ZO DONKER WEST, \\ OF T WER ALTIED WEL WEER LICHT."@gos, "ZIEN LESTE TOENTJE"@gos ;
-  :site site:gr9951TNwinsum .
+  :site site:gr9951TNwinsum ;
+  :subject t00594:p1 .
 
 t00594:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y5M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1935-07-17"^^xsd:date ;
   :dateOfDeath "2011-01-05"^^xsd:date ;
   :nam "JACOB E. HOLWERDA" .

@@ -14,11 +14,15 @@ tomb:t00392
     ] ;
     :nd "+53.2517+006.1453"^^ll:
   ] ;
-  :subject t00392:p1, t00392:p2 ;
-  :site site:fr9285TCbuitenpost .
+  :site site:fr9285TCbuitenpost ;
+  :subject t00392:p1, t00392:p2 .
 
 t00392:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y5M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1832-07-02"^^xsd:date ;
   :dateOfDeath "1916-12-12"^^xsd:date ;
   :nam "ANTJE KUIPERS" ;

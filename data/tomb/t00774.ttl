@@ -14,14 +14,18 @@ tomb:t00774
     ] ;
     :nd "+52.7822+006.8981"^^ll:
   ] ;
-  :subject t00774:p1, t00774:p2, t00774:p3 ;
   :site site:dr7811HEemmen ;
+  :subject t00774:p1, t00774:p2, t00774:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00774:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y1M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1845-11-18"^^xsd:date ;
   :dateOfDeath "1899-12-20"^^xsd:date ;
   :nam "WILLEM JOLING" ;

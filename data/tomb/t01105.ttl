@@ -14,15 +14,27 @@ tomb:t01105
     ] ;
     :nd "+53.2630+006.3142"^^ll:
   ] ;
-  :subject t01105:p1 ;
   :ref t01105:c3 ;
   :site site:gr9843AGgrijpskerk ;
+  :subject t01105:p1 ;
   :sym [
     a :Frond.n.01
   ] .
 
+t01105:c3
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :chapter 40 ;
+    :part :Isaiah.n.01
+  ] .
+
 t01105:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P30Y20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1915-05-05"^^xsd:date ;
   :dateOfDeath "1945-05-25"^^xsd:date ;
   :nam "ANNA WIELENGA" ;
@@ -41,7 +53,7 @@ t01105:p1
     :tgt t01105:p2
   ], [
     a :Mother.n.01 ;
-    :tgt t01105:p3 , t01105:p4
+    :tgt t01105:p3, t01105:p4
   ] .
 
 t01105:p2
@@ -55,12 +67,4 @@ t01105:p3
 t01105:p4
   a :Female ;
   :nam "PIETJE" .
-
-t01105:c3
-  a :Quote ;
-  :reference [
-    a :BibleReference ;
-    :part :Isaiah.n.01 ;
-    :chapter 40
-  ] .
 

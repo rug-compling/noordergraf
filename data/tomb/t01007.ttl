@@ -21,8 +21,8 @@ tomb:t01007
     ] ;
     :nd "+53.2444+006.6281"^^ll:
   ] ;
-  :subject t01007:p1, t01007:p2, t01007:p3 ;
   :site site:gr9734ATgroningen ;
+  :subject t01007:p1, t01007:p2, t01007:p3 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -37,6 +37,10 @@ t01007:g1
 
 t01007:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P7Y10M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1911-02-16"^^xsd:date ;
   :dateOfDeath "1918-12-23"^^xsd:date ;
   :nam "PIETER AMDRIES HEKSTRA" .

@@ -14,11 +14,15 @@ tomb:t00270
     ] ;
     :nd "+53.2335+006.6201"^^ll:
   ] ;
-  :subject t00270:p1, t00270:p2 ;
-  :quo "IN DE HERE ONTSLAPEN", "RUST ZACHT LIEVE OUDERS" .
+  :quo "IN DE HERE ONTSLAPEN", "RUST ZACHT LIEVE OUDERS" ;
+  :subject t00270:p1, t00270:p2 .
 
 t00270:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y8M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-01-19"^^xsd:date ;
   :dateOfDeath "1971-09-26"^^xsd:date ;
   :nam "HARM BARTELD VOS" ;
@@ -34,6 +38,10 @@ t00270:p1
 
 t00270:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y10M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-07-15"^^xsd:date ;
   :dateOfDeath "1982-05-16"^^xsd:date ;
   :nam "AALTJE VRIELING" .

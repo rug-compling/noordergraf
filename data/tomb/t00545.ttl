@@ -14,9 +14,9 @@ tomb:t00545
     ] ;
     :nd "+53.1042+006.8756"^^ll:
   ] ;
-  :subject t00545:p1, t00545:p2 ;
   :quo "HIJ DIE HIER RUST \\ IN DEZE AARDE \\ WAS VOON ONS \\ VAN GROTE WAARDE."@nld ;
   :site site:gr9641ANveendam ;
+  :subject t00545:p1, t00545:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00545:c1
 
 t00545:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y1M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1819-10-23"^^xsd:date ;
   :dateOfDeath "1902-12-22"^^xsd:date ;
   :nam "JAN FRANSENS NIPPERES" ;

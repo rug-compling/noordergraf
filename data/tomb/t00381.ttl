@@ -14,9 +14,9 @@ tomb:t00381
     ] ;
     :nd "+53.2519+006.1451"^^ll:
   ] ;
-  :subject t00381:p1, t00381:p2 ;
   :quo "DAN GA IK OP TOT GODS ALTAREN" ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00381:p1, t00381:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -28,12 +28,20 @@ tomb:t00381
 
 t00381:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y6M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-10-31"^^xsd:date ;
   :dateOfDeath "1971-05-26"^^xsd:date ;
   :nam "MAAIKE MOSSELMAN-PIEBENGA" .
 
 t00381:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y8M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-11-25"^^xsd:date ;
   :dateOfDeath "1974-08-07"^^xsd:date ;
   :nam "JAN MOSSELMAN" .

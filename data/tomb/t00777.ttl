@@ -14,15 +14,19 @@ tomb:t00777
     ] ;
     :nd "+52.7822+006.8983"^^ll:
   ] ;
-  :subject t00777:p1, t00777:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00777:p1, t00777:p2 ;
   :sym [
     a :Entity.n.01
   ] .
 
 t00777:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y11M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-06-16"^^xsd:date ;
   :dateOfDeath "1950-06-06"^^xsd:date ;
   :nam "HINDRIK GARMING" ;
@@ -33,6 +37,10 @@ t00777:p1
 
 t00777:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P53Y8M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-06-14"^^xsd:date ;
   :dateOfDeath "1929-02-23"^^xsd:date ;
   :nam "JANTIEN DIJKS" ;

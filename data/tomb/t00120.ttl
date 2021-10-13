@@ -14,12 +14,16 @@ tomb:t00120
     ] ;
     :nd "+53.1628+006.6158"^^ll:
   ] ;
-  :subject t00120:p1, t00120:p2 ;
   :ref t00120:v1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00120:p1, t00120:p2 .
 
 t00120:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-06-27"^^xsd:date ;
   :dateOfDeath "1966-07-05"^^xsd:date ;
   :nam "WILLEM BOLT" ;
@@ -45,6 +49,10 @@ t00120:p1
 
 t00120:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-01-21"^^xsd:date ;
   :dateOfDeath "1970-01-31"^^xsd:date ;
   :nam "ROELINA EIKELBOOM" .

@@ -14,8 +14,8 @@ tomb:t00245
     ] ;
     :nd "+53.1726+006.6069"^^ll:
   ] ;
-  :subject t00245:p1, t00245:p2 ;
-  :site site:gr9751BBharen .
+  :site site:gr9751BBharen ;
+  :subject t00245:p1, t00245:p2 .
 
 t00245:c1
   a :Town.n.01 ;
@@ -24,6 +24,10 @@ t00245:c1
 
 t00245:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y9M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-06-28"^^xsd:date ;
   :dateOfDeath "1945-04-15"^^xsd:date ;
   :nam "ANNECHIEN BAZUIN" ;
@@ -36,6 +40,10 @@ t00245:p1
 
 t00245:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P87Y4M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1858-11-23"^^xsd:date ;
   :dateOfDeath "1946-04-03"^^xsd:date ;
   :nam "ROELF MANNES" ;

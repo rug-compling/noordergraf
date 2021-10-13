@@ -14,9 +14,9 @@ tomb:t00105
     ] ;
     :nd "+53.1907+006.5924"^^ll:
   ] ;
-  :subject t00105:p1, t00105:p2, t00105:p3 ;
   :quo "REST IN PEACE DAD" ;
   :site site:gr9722SNgroningen ;
+  :subject t00105:p1, t00105:p2, t00105:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -28,6 +28,10 @@ tomb:t00105
 
 t00105:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P37Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1900"^^xsd:gYear ;
   :dateOfDeath "1937"^^xsd:gYear ;
   :nam "H.J. NIEUWENHUIS" ;
@@ -38,18 +42,26 @@ t00105:p1
 
 t00105:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P47Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1904"^^xsd:gYear ;
   :dateOfDeath "1951"^^xsd:gYear ;
   :nam "A.C. WIARDI" .
 
 t00105:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1931"^^xsd:gYear ;
   :dateOfDeath "2005"^^xsd:gYear ;
   :nam "H. NIEUWENHUIS" ;
   :rol [
-    a :Father.n.01
-  ], [
     a :Grandfather.n.01
+  ], [
+    a :Father.n.01
   ] .
 

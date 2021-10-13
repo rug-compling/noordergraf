@@ -14,8 +14,8 @@ tomb:t00945
     ] ;
     :nd "+53.1384+007.1433"^^ll:
   ] ;
-  :subject t00945:p1, t00945:p2 ;
   :site site:gr9696XGoudeschans ;
+  :subject t00945:p1, t00945:p2 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -24,6 +24,10 @@ tomb:t00945
 
 t00945:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y8M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1810-04-30"^^xsd:date ;
   :dateOfDeath "1895-01-20"^^xsd:date ;
   :nam "ROELFIEN WOLTERS" ;

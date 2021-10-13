@@ -14,12 +14,16 @@ tomb:t00375
     ] ;
     :nd "+53.1913+006.5942"^^ll:
   ] ;
-  :subject t00375:p1, t00375:p2 ;
   :ref t00375:v1 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00375:p1, t00375:p2 .
 
 t00375:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y2M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-01-18"^^xsd:date ;
   :dateOfDeath "1939-04-06"^^xsd:date ;
   :nam "BERENDINA BOEKELO" ;
@@ -48,8 +52,8 @@ t00375:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Isaiah.n.01 ;
     :chapter 51 ;
+    :part :Isaiah.n.01 ;
     :verse "10A"
   ] .
 

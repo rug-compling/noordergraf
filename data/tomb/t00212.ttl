@@ -14,14 +14,18 @@ tomb:t00212
     ] ;
     :nd "+53.2226+006.6372"^^ll:
   ] ;
-  :subject t00212:p1, t00212:p2 ;
   :site site:gr9723EWgroningen ;
+  :subject t00212:p1, t00212:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00212:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P44Y5M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1904-09-03"^^xsd:date ;
   :dateOfDeath "1949-02-24"^^xsd:date ;
   :nam "ANTJE OORLOG" ;

@@ -14,22 +14,26 @@ tomb:t00174
     ] ;
     :nd "+53.1904+006.5932"^^ll:
   ] ;
-  :subject t00174:p1 ;
   :quo "OOK DEZE WAS MET JEZUS" ;
   :ref [
     a :Quote ;
-    :text "luc-22-56" ;
     :reference [
       a :BibleReference ;
-      :part :Luke.n.02 ;
       :chapter 22 ;
+      :part :Luke.n.02 ;
       :verse "56"
-    ]
+    ] ;
+    :text "luc-22-56"
   ] ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00174:p1 .
 
 t00174:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-04-07"^^xsd:date ;
   :dateOfDeath "1927-04-07"^^xsd:date ;
   :nam "A. HOF" ;

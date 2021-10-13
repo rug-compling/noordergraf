@@ -14,19 +14,19 @@ tomb:t00653
     ] ;
     :nd "+53.1636+006.7546"^^ll:
   ] ;
-  :subject t00653:p1, t00653:p2, t00653:p3 ;
   :quo "MAAR DE RECHTVAARDIGE \\ BETROUWT ZELFS IN \\ ZIJNEN DOOD."@nld ;
   :ref [
     a :Quote ;
-    :text "Spr. 14.32"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Book_of_Proverbs.n.01 ;
       :chapter 14 ;
+      :part :Book_of_Proverbs.n.01 ;
       :verse "32"
-    ]
+    ] ;
+    :text "Spr. 14.32"@nld
   ] ;
   :site site:gr9601KAhoogezand ;
+  :subject t00653:p1, t00653:p2, t00653:p3 ;
   :sym [
     a :Rose.n.01
   ] .
@@ -38,6 +38,10 @@ t00653:c1
 
 t00653:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y8M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-08-31"^^xsd:date ;
   :dateOfDeath "1920-05-13"^^xsd:date ;
   :nam "ANDRIES BLAAK" ;

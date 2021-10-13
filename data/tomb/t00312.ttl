@@ -14,20 +14,28 @@ tomb:t00312
     ] ;
     :nd "+52.7157+006.4735"^^ll:
   ] ;
-  :subject t00312:p1, t00312:p2, t00312:p3 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00312:p1, t00312:p2, t00312:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00312:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P48Y1M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1835-02-19"^^xsd:date ;
   :dateOfDeath "1883-04-15"^^xsd:date ;
   :nam "HENDRIKJE HARTSUIKER" .
 
 t00312:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y3M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1826-12-12"^^xsd:date ;
   :dateOfDeath "1904-04-10"^^xsd:date ;
   :nam "ALBERT SMEMAN" ;
@@ -39,6 +47,10 @@ t00312:p2
 
 t00312:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P33Y22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-04-21"^^xsd:date ;
   :dateOfDeath "1904-05-13"^^xsd:date ;
   :nam "AALTJE STEENBERGEN" .

@@ -14,11 +14,15 @@ tomb:t00719
     ] ;
     :nd "+52.7815+006.9001"^^ll:
   ] ;
-  :subject t00719:p1, t00719:p2 ;
-  :site site:dr7811HEemmen .
+  :site site:dr7811HEemmen ;
+  :subject t00719:p1, t00719:p2 .
 
 t00719:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y1M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1850-02-20"^^xsd:date ;
   :dateOfDeath "1932-04-01"^^xsd:date ;
   :nam "CATHARINA FREDERIKA HERMAN DE GROOT" ;

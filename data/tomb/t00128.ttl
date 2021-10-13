@@ -14,8 +14,8 @@ tomb:t00128
     ] ;
     :nd "+53.2059+006.5714"^^ll:
   ] ;
-  :subject t00128:p1, t00128:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00128:p1, t00128:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -34,6 +34,10 @@ t00128:c2
 
 t00128:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y10M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-10-13"^^xsd:date ;
   :dateOfDeath "1945-09-01"^^xsd:date ;
   :nam "HEINE HEININGA" ;
@@ -49,6 +53,10 @@ t00128:p1
 
 t00128:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P50Y2M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-07-17"^^xsd:date ;
   :dateOfDeath "1915-09-28"^^xsd:date ;
   :nam "SIEPKE TEN HOOR" ;

@@ -14,18 +14,22 @@ tomb:t00599
     ] ;
     :nd "+53.3274+006.5114"^^ll:
   ] ;
-  :subject t00599:p1, t00599:p2 ;
   :ref [
     a :Quote ;
-    :text "gez.27:2"@nld ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gez.27:2"@nld
   ] ;
-  :site site:gr9951TNwinsum .
+  :site site:gr9951TNwinsum ;
+  :subject t00599:p1, t00599:p2 .
 
 t00599:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y8M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-11-19"^^xsd:date ;
   :dateOfDeath "1961-08-05"^^xsd:date ;
   :nam "GEESSIEN BOS" ;
@@ -41,6 +45,10 @@ t00599:p1
 
 t00599:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y7M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-10-06"^^xsd:date ;
   :dateOfDeath "1967-05-19"^^xsd:date ;
   :nam "WILLEM REKER" .

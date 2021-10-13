@@ -14,15 +14,19 @@ tomb:t00650
     ] ;
     :nd "+53.1055+006.8768"^^ll:
   ] ;
-  :subject t00650:p1, t00650:p2 ;
   :quo "HIER RUST DER ZIJNER \\ STEUN EN STAF, \\ DE ROEM EN VRAAGBANK DER GEMEENTE; AL DEKT D'AARD \\ OOK ZIJN GEBEENTE, ZIJN WIJSHEID KUNDE EN DEUGD \\ TROTSEERT DE MAGT VAN 'T GRAF"@nld ;
   :site site:gr9641ANveendam ;
+  :subject t00650:p1, t00650:p2 ;
   :sym [
     a :Entity.n.01
   ] .
 
 t00650:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y9M"^^xsd:duration
+  ] ;
   :dateOfBirth "1772-04-08"^^xsd:date ;
   :dateOfDeath "1842-01-08"^^xsd:date ;
   :nam "ABRAHAM C. HAZEWINKEL" ;

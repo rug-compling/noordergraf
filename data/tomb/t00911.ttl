@@ -14,8 +14,8 @@ tomb:t00911
     ] ;
     :nd "+53.1719+006.3656"^^ll:
   ] ;
-  :subject t00911:p1, t00911:p2 ;
   :site site:gr9351RLtolbert ;
+  :subject t00911:p1, t00911:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00911:c1
 
 t00911:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y4M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1848-01-10"^^xsd:date ;
   :dateOfDeath "1917-05-21"^^xsd:date ;
   :nam "MARTHA MELESSEN" ;

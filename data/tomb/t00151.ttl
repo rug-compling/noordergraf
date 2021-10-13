@@ -14,14 +14,18 @@ tomb:t00151
     ] ;
     :nd "+53.2063+006.5698"^^ll:
   ] ;
-  :subject t00151:p1, t00151:p2, t00151:p3 ;
   :site site:gr9725ACgroningen ;
+  :subject t00151:p1, t00151:p2, t00151:p3 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00151:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y4M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-09-19"^^xsd:date ;
   :dateOfDeath "1941-02-10"^^xsd:date ;
   :nam "HARM LUIKEN" ;
@@ -34,12 +38,20 @@ t00151:p1
 
 t00151:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y11M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-01-16"^^xsd:date ;
   :dateOfDeath "1952-01-08"^^xsd:date ;
   :nam "AALTJE WOLTERS" .
 
 t00151:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y9M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-11-30"^^xsd:date ;
   :dateOfDeath "1969-09-21"^^xsd:date ;
   :nam "KORNELIA LUIKEN" .

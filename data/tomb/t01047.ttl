@@ -14,11 +14,15 @@ tomb:t01047
     ] ;
     :nd "+53.1230+006.2513"^^ll:
   ] ;
-  :subject t01047:p1, t01047:p2 ;
-  :site site:gr9367PAde_wilp .
+  :site site:gr9367PAde_wilp ;
+  :subject t01047:p1, t01047:p2 .
 
 t01047:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y1M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1915-01-31"^^xsd:date ;
   :dateOfDeath "1987-03-04"^^xsd:date ;
   :nam "HENRDRIK NABRING" ;

@@ -14,8 +14,8 @@ tomb:t00791
     ] ;
     :nd "+53.2776+006.6936"^^ll:
   ] ;
-  :subject t00791:p1 ;
-  :site site:gr9791KEten_boer .
+  :site site:gr9791KEten_boer ;
+  :subject t00791:p1 .
 
 t00791:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00791:c1
 
 t00791:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y9M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-10-06"^^xsd:date ;
   :dateOfDeath "1918-07-25"^^xsd:date ;
   :nam "HENDRIKJE BOLT" ;
@@ -31,7 +35,7 @@ t00791:p1
   :placeOfDeath t00791:c1 ;
   :rol [
     a :Daughter.n.01 ;
-    :tgt t00791:p2, t00791:p3 
+    :tgt t00791:p2, t00791:p3
   ] .
 
 t00791:p2

@@ -14,8 +14,8 @@ tomb:t00589
     ] ;
     :nd "+53.3277+006.5121"^^ll:
   ] ;
-  :subject t00589:p1, t00589:p2 ;
-  :site site:gr9951TNwinsum .
+  :site site:gr9951TNwinsum ;
+  :subject t00589:p1, t00589:p2 .
 
 t00589:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00589:c1
 
 t00589:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y1M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1884-02-26"^^xsd:date ;
   :dateOfDeath "1965-04-09"^^xsd:date ;
   :nam "BRUIN BRUINS" ;

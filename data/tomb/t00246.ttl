@@ -14,11 +14,15 @@ tomb:t00246
     ] ;
     :nd "+53.1723+006.6063"^^ll:
   ] ;
-  :subject t00246:p1 ;
-  :site site:gr9751BBharen .
+  :site site:gr9751BBharen ;
+  :subject t00246:p1 .
 
 t00246:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y11M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1900-01-15"^^xsd:date ;
   :dateOfDeath "1968-12-21"^^xsd:date ;
   :nam "TJAATJE MEIJER" ;

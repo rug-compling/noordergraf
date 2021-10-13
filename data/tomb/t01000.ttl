@@ -14,11 +14,15 @@ tomb:t01000
     ] ;
     :nd "+53.2443+006.6280"^^ll:
   ] ;
-  :subject t01000:p1 ;
-  :site site:gr9734ATgroningen .
+  :site site:gr9734ATgroningen ;
+  :subject t01000:p1 .
 
 t01000:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P29Y2M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1857-10-29"^^xsd:date ;
   :dateOfDeath "1887-01-13"^^xsd:date ;
   :nam "TRIENTJE H. BOER" ;

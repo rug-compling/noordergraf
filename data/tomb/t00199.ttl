@@ -14,17 +14,25 @@ tomb:t00199
     ] ;
     :nd "+53.1902+006.5945"^^ll:
   ] ;
-  :subject t00199:p1, t00199:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00199:p1, t00199:p2 .
 
 t00199:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y7M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-01-24"^^xsd:date ;
   :dateOfDeath "1965-09-01"^^xsd:date ;
   :nam "HEIKA SCHREUDER" .
 
 t00199:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1885-09-12"^^xsd:date ;
   :dateOfDeath "1969-09-19"^^xsd:date ;
   :nam "REGNERUS DANTUMA" .

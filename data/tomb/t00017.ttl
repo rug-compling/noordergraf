@@ -14,11 +14,15 @@ tomb:t00017
     ] ;
     :nd "+53.1910+006.5933"^^ll:
   ] ;
-  :subject t00017:p1, t00017:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00017:p1, t00017:p2 .
 
 t00017:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P104Y8M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1833-03-09"^^xsd:date ;
   :dateOfDeath "1937-11-10"^^xsd:date ;
   :nam "DOUWE DE JONG" ;
@@ -35,6 +39,10 @@ t00017:p1
 
 t00017:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y4M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-01-08"^^xsd:date ;
   :dateOfDeath "1940-06-01"^^xsd:date ;
   :nam "HELENA EHLHARDT" ;

@@ -14,9 +14,9 @@ tomb:t00857
     ] ;
     :nd "+52.7764+006.8042"^^ll:
   ] ;
-  :subject t00857:p1, t00857:p2 ;
   :quo "RUST IN VREDE."@nld ;
   :site site:dr7841CDsleen ;
+  :subject t00857:p1, t00857:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00857:c1
 
 t00857:p1
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P63Y6M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1845-03-20"^^xsd:date ;
   :dateOfDeath "1908-10-05"^^xsd:date ;
   :nam "K. HADDERS" ;
@@ -42,6 +46,10 @@ t00857:p1
 
 t00857:p2
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P64Y7M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-03-02"^^xsd:date ;
   :dateOfDeath "1908-10-08"^^xsd:date ;
   :nam "G. ZWIERS" ;

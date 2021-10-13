@@ -14,9 +14,9 @@ tomb:t00928
     ] ;
     :nd "+53.1717+006.3657"^^ll:
   ] ;
-  :subject t00928:p1 ;
   :quo "TER GEDACHTENIS VAN $p1"@nld ;
   :site site:gr9351RLtolbert ;
+  :subject t00928:p1 ;
   :sym [
     a :Entity.n.01
   ] ;
@@ -37,6 +37,10 @@ t00928:c2
 
 t00928:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y5M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1838-12-28"^^xsd:date ;
   :dateOfDeath "1913-06-11"^^xsd:date ;
   :nam "JOHANNES HENRICUS LEURINGH" ;

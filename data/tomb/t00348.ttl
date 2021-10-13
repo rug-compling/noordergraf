@@ -14,11 +14,15 @@ tomb:t00348
     ] ;
     :nd "+53.0841+006.5726"^^ll:
   ] ;
-  :subject t00348:p1, t00348:p2 ;
-  :site site:dr9481CGvries .
+  :site site:dr9481CGvries ;
+  :subject t00348:p1, t00348:p2 .
 
 t00348:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y10M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1906-07-02"^^xsd:date ;
   :dateOfDeath "1965-05-05"^^xsd:date ;
   :nam "KLAAS KREGEL" ;
@@ -29,6 +33,10 @@ t00348:p1
 
 t00348:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y1M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1910-03-18"^^xsd:date ;
   :dateOfDeath "1979-05-06"^^xsd:date ;
   :nam "REINA STOFFERS" .

@@ -14,15 +14,19 @@ tomb:t00888
     ] ;
     :nd "+53.2296+006.5504"^^ll:
   ] ;
-  :subject t00888:p1, t00888:p2, t00888:p3, t00888:p4 ;
   :ref t00888:v1 ;
   :site site:gr9741ACgroningen ;
+  :subject t00888:p1, t00888:p2, t00888:p3, t00888:p4 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00888:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P37Y5M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-05-04"^^xsd:date ;
   :dateOfDeath "1901-10-17"^^xsd:date ;
   :nam "ROBERTA MARGARETHA WOLTJER" ;
@@ -44,6 +48,10 @@ t00888:p3
 
 t00888:p4
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y11M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1887-07-13"^^xsd:date ;
   :dateOfDeath "1955-06-24"^^xsd:date ;
   :nam "ROBERT MEIJER" ;
@@ -59,11 +67,11 @@ t00888:r2
 
 t00888:v1
   a :Quote ;
-  :text "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN"@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :John.n.05 ;
     :verse "2"
-  ] .
+  ] ;
+  :text "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN"@nld .
 

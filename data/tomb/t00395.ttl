@@ -14,24 +14,24 @@ tomb:t00395
     ] ;
     :nd "+53.2517+006.1451"^^ll:
   ] ;
-  :subject t00395:p1, t00395:p2 ;
   :ref [
     a :Quote ;
-    :text "psalm 43:3." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 43 ;
+      :part :Psalm.n.01 ;
       :verse "3"
-    ]
-  ] , [
+    ] ;
+    :text "psalm 43:3."
+  ], [
     a :Quote ;
-    :text "gezang 178:7." ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gezang 178:7."
   ] ;
-  :site site:fr9285TCbuitenpost .
+  :site site:fr9285TCbuitenpost ;
+  :subject t00395:p1, t00395:p2 .
 
 t00395:c2
   a :City.n.01 ;
@@ -40,6 +40,10 @@ t00395:c2
 
 t00395:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y6M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-11-11"^^xsd:date ;
   :dateOfDeath "1947-06-03"^^xsd:date ;
   :nam "LUDOLF FEENSTRA" ;
@@ -57,6 +61,10 @@ t00395:p1
 
 t00395:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y4M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-12-05"^^xsd:date ;
   :dateOfDeath "1953-04-23"^^xsd:date ;
   :nam "WILLEMKE FEENSTRA" ;

@@ -14,11 +14,15 @@ tomb:t00087
     ] ;
     :nd "+53.2068+006.5726"^^ll:
   ] ;
-  :subject t00087:p1, t00087:p2 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00087:p1, t00087:p2 .
 
 t00087:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P44Y10M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-02-24"^^xsd:date ;
   :dateOfDeath "1944-01-01"^^xsd:date ;
   :nam "P.H.E. VAN DOOREN" ;
@@ -34,6 +38,10 @@ t00087:p1
 
 t00087:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-02-22"^^xsd:date ;
   :dateOfDeath "1983-03-01"^^xsd:date ;
   :nam "MARIA DEKKER" .

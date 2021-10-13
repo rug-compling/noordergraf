@@ -14,16 +14,20 @@ tomb:t00682
     ] ;
     :nd "+53.0686+005.5224"^^ll:
   ] ;
-  :subject t00682:p1, t00682:p2, t00682:p3 ;
   :quo "IN JEZUS ONTSLAPEN"@nld ;
   :ref t00682:v2 ;
   :site site:fr8701DWbolsward ;
+  :subject t00682:p1, t00682:p2, t00682:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00682:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y9M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-03-10"^^xsd:date ;
   :dateOfDeath "1936-12-26"^^xsd:date ;
   :nam "PIER PLANTINGA" ;
@@ -40,12 +44,16 @@ t00682:p1
   :rol [
     a :Spouse ;
     :tgt :t00682:p2
-  ] , [
+  ], [
     a :Parent
   ] .
 
 t00682:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y11M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-03-24"^^xsd:date ;
   :dateOfDeath "1949-03-19"^^xsd:date ;
   :nam "TRIJNTJE KINGMA" ;
@@ -62,12 +70,16 @@ t00682:p2
   :rol [
     a :Spouse ;
     :tgt :t00682:p1
-  ] , [
+  ], [
     a :Parent
   ] .
 
 t00682:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y3M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-12-23"^^xsd:date ;
   :dateOfDeath "1981-04-11"^^xsd:date ;
   :nam "EVERT PLANTINGA" ;

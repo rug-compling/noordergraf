@@ -14,12 +14,16 @@ tomb:t00826
     ] ;
     :nd "+53.2307+006.5516"^^ll:
   ] ;
-  :subject t00826:p1, t00826:p2 ;
   :quo "GEVALLEN VOOR ZIJN VADERLAND"@nld ;
-  :site site:gr9741ACgroningen .
+  :site site:gr9741ACgroningen ;
+  :subject t00826:p1, t00826:p2 .
 
 t00826:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y9M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1894-07-11"^^xsd:date ;
   :dateOfDeath "1945-04-20"^^xsd:date ;
   :nam "CORNELIS KLEI" ;

@@ -14,14 +14,18 @@ tomb:t00090
     ] ;
     :nd "+53.2032+006.5720"^^ll:
   ] ;
-  :subject t00090:p1, t00090:p2 ;
   :site site:gr9721AAgroningen ;
+  :subject t00090:p1, t00090:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00090:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y2M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1910-03-25"^^xsd:date ;
   :dateOfDeath "1983-06-13"^^xsd:date ;
   :nam "GERHARDUS JOHANNES ROESZING" ;
@@ -36,14 +40,18 @@ t00090:p1
 
 t00090:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y6M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1915-05-31"^^xsd:date ;
   :dateOfDeath "1996-12-14"^^xsd:date ;
   :nam "ELSIEN BRUGGE" ;
   :rol [
+    a :Great_grandmother.n.01
+  ], [
     a :Mother.n.01
   ], [
     a :Grandmother.n.01
-  ], [
-    a :Great_grandmother.n.01
   ] .
 

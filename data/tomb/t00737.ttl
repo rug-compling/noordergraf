@@ -14,11 +14,15 @@ tomb:t00737
     ] ;
     :nd "+53.3089+006.9654"^^ll:
   ] ;
-  :subject t00737:p1, t00737:p2, t00737:p3 ;
-  :site site:gr9936TCfarmsum .
+  :site site:gr9936TCfarmsum ;
+  :subject t00737:p1, t00737:p2, t00737:p3 .
 
 t00737:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P29Y10M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-11-26"^^xsd:date ;
   :dateOfDeath "1892-10-25"^^xsd:date ;
   :nam "ELIZABETH SMITH" ;

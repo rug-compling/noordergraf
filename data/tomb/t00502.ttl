@@ -14,8 +14,8 @@ tomb:t00502
     ] ;
     :nd "+53.2094+005.7905"^^ll:
   ] ;
-  :subject t00502:p1, t00502:p2, t00502:p3 ;
   :site site:fr8917AVleeuwarden ;
+  :subject t00502:p1, t00502:p2, t00502:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -56,6 +56,10 @@ t00502:p2
 
 t00502:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P5Y3M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1913-07-08"^^xsd:date ;
   :dateOfDeath "1918-11-04"^^xsd:date ;
   :nam "IJPKE SJOUKJE DE VRIES" ;

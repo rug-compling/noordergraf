@@ -14,12 +14,16 @@ tomb:t00789
     ] ;
     :nd "+52.7816+006.8975"^^ll:
   ] ;
-  :subject t00789:p1, t00789:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
-  :site site:dr7811HEemmen .
+  :site site:dr7811HEemmen ;
+  :subject t00789:p1, t00789:p2 .
 
 t00789:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y1M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-04-02"^^xsd:date ;
   :dateOfDeath "1930-05-23"^^xsd:date ;
   :nam "WILLEM FRIELING" ;
@@ -30,6 +34,10 @@ t00789:p1
 
 t00789:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y5M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-11-16"^^xsd:date ;
   :dateOfDeath "1924-05-08"^^xsd:date ;
   :nam "ROLINA WEURING" ;

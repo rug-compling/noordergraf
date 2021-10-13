@@ -14,9 +14,9 @@ tomb:t00946
     ] ;
     :nd "+53.1383+007.1432"^^ll:
   ] ;
-  :subject t00946:p1, t00946:p2, t00946:p3 ;
   :quo "GESCHONKEN DOOR $p2 EN $p3"@nld ;
   :site site:gr9696XGoudeschans ;
+  :subject t00946:p1, t00946:p2, t00946:p3 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -31,6 +31,10 @@ tomb:t00946
 
 t00946:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y5M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1824-07-30"^^xsd:date ;
   :dateOfDeath "1902-01-07"^^xsd:date ;
   :nam "FEIKO PIETERS VAN HEUVELEN" .

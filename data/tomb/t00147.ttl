@@ -14,9 +14,9 @@ tomb:t00147
     ] ;
     :nd "+53.2059+006.5700"^^ll:
   ] ;
-  :subject t00147:p1, t00147:p2, t00147:p3 ;
   :quo "RUST IN VREDE" ;
   :site site:gr9725ACgroningen ;
+  :subject t00147:p1, t00147:p2, t00147:p3 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -33,6 +33,10 @@ t00147:c3
 
 t00147:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P19Y8M"^^xsd:duration
+  ] ;
   :dateOfBirth "1921-05-15"^^xsd:date ;
   :dateOfDeath "1941-01-15"^^xsd:date ;
   :nam "ROELFJE MEERTENS" ;
@@ -45,6 +49,10 @@ t00147:p1
 
 t00147:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y2M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-01-30"^^xsd:date ;
   :dateOfDeath "1952-04-13"^^xsd:date ;
   :nam "HENDRIK MEERTENS" ;
@@ -59,6 +67,10 @@ t00147:p2
 
 t00147:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P95Y10M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-07-09"^^xsd:date ;
   :dateOfDeath "1992-05-25"^^xsd:date ;
   :nam "NELLA STEENHUIS" ;

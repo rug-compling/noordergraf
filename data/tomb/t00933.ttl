@@ -14,22 +14,26 @@ tomb:t00933
     ] ;
     :nd "+53.2392+006.5514"^^ll:
   ] ;
-  :subject t00933:p1 ;
   :quo "HIJ DE HERE IS ONZE GOD \\ HIJ GEDENKT AAN ZIJN VERBOND \\ TOT IN EEUWIGHEID"@nld ;
   :ref [
     a :Quote ;
-    :text "ps. 105:7-8"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 105 ;
+      :part :Psalm.n.01 ;
       :verse "7-8"
-    ]
+    ] ;
+    :text "ps. 105:7-8"@nld
   ] ;
-  :site site:gr9741GHgroningen .
+  :site site:gr9741GHgroningen ;
+  :subject t00933:p1 .
 
 t00933:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P11Y7M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1945-01-18"^^xsd:date ;
   :dateOfDeath "1956-09-15"^^xsd:date ;
   :nam "EMMIE ANTONIDES" .

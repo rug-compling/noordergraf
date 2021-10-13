@@ -16,21 +16,25 @@ tomb:t00416
   ] ;
   :mem [
     a :Tomb ;
-    :subject t00416:p1 ;
-    :rol t00416:r2
+    :rol t00416:r2 ;
+    :subject t00416:p1
   ], [
     a :Tomb ;
-    :subject t00416:p2 ;
     :rol [
       a :Mother.n.01
-    ]
+    ] ;
+    :subject t00416:p2
   ] ;
-  :subject t00416:p1, t00416:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :site site:dr9481CGvries .
+  :site site:dr9481CGvries ;
+  :subject t00416:p1, t00416:p2 .
 
 t00416:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y7M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-11-26"^^xsd:date ;
   :dateOfDeath "1967-07-20"^^xsd:date ;
   :nam "HENDRIK KOOPS" ;
@@ -54,6 +58,10 @@ t00416:p1
 
 t00416:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P93Y20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-12-14"^^xsd:date ;
   :dateOfDeath "1974-01-03"^^xsd:date ;
   :nam "FENNEGIEN BARKHOF" ;

@@ -14,8 +14,8 @@ tomb:t01078
     ] ;
     :nd "+53.3808+006.8588"^^ll:
   ] ;
-  :subject t01078:p1, t01078:p2 ;
-  :site site:gr9906PPbierum .
+  :site site:gr9906PPbierum ;
+  :subject t01078:p1, t01078:p2 .
 
 t01078:c2
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t01078:c2
 
 t01078:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y8M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1805-10-21"^^xsd:date ;
   :dateOfDeath "1870-07-19"^^xsd:date ;
   :nam "MELLE ENGELS" ;
@@ -40,6 +44,10 @@ t01078:p1
 
 t01078:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y6M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1804-03-26"^^xsd:date ;
   :dateOfDeath "1894-10-08"^^xsd:date ;
   :nam "MARIA BOS" ;

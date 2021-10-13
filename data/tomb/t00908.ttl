@@ -14,15 +14,19 @@ tomb:t00908
     ] ;
     :nd "+53.1718+006.3659"^^ll:
   ] ;
-  :subject t00908:p1, t00908:p2 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
   :site site:gr9351RLtolbert ;
+  :subject t00908:p1, t00908:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00908:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y6M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-06-10"^^xsd:date ;
   :dateOfDeath "1955-12-30"^^xsd:date ;
   :nam "JANTJE H. MEELKER" ;

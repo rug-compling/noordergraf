@@ -14,12 +14,16 @@ tomb:t00936
     ] ;
     :nd "+53.2398+006.5514"^^ll:
   ] ;
-  :subject t00936:p1, t00936:p2, t00936:p3 ;
   :quo "DE HEER IS RECHT \\ IN AL ZIJN WEG EN WERK"@nld ;
-  :site site:gr9741GHgroningen .
+  :site site:gr9741GHgroningen ;
+  :subject t00936:p1, t00936:p2, t00936:p3 .
 
 t00936:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P53Y4M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1902-03-03"^^xsd:date ;
   :dateOfDeath "1955-07-31"^^xsd:date ;
   :nam "LAMBERTHA C. BOS" ;
@@ -35,12 +39,20 @@ t00936:p1
 
 t00936:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y2M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-10-04"^^xsd:date ;
   :dateOfDeath "1963-12-13"^^xsd:date ;
   :nam "GEERTJE DIJKSTERHUIS-BOS" .
 
 t00936:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y1M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-07-28"^^xsd:date ;
   :dateOfDeath "1964-09-09"^^xsd:date ;
   :nam "WIEBRAND DIJKSTERHUIS" .

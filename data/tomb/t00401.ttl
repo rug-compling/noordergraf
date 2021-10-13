@@ -14,8 +14,8 @@ tomb:t00401
     ] ;
     :nd "+53.2518+006.1447"^^ll:
   ] ;
-  :subject t00401:p1, t00401:p2 ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00401:p1, t00401:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00401
 
 t00401:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y3M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1885-04-23"^^xsd:date ;
   :dateOfDeath "1969-07-31"^^xsd:date ;
   :nam "GRIETJE LAND" ;
@@ -39,6 +43,10 @@ t00401:p1
 
 t00401:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P90Y3M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1884-12-02"^^xsd:date ;
   :dateOfDeath "1975-03-17"^^xsd:date ;
   :nam "ANNE ELLENS" ;

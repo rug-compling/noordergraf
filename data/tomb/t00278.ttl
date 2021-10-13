@@ -14,11 +14,15 @@ tomb:t00278
     ] ;
     :nd "+53.4036+006.7490"^^ll:
   ] ;
-  :subject t00278:p1 ;
-  :site site:gr9985SCoosternieland .
+  :site site:gr9985SCoosternieland ;
+  :subject t00278:p1 .
 
 t00278:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P39Y5M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1933-05-10"^^xsd:date ;
   :dateOfDeath "1972-10-27"^^xsd:date ;
   :nam "EELJE LIER" ;

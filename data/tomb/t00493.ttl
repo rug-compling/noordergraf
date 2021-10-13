@@ -14,11 +14,15 @@ tomb:t00493
     ] ;
     :nd "+53.2097+005.7906"^^ll:
   ] ;
-  :subject t00493:p1, t00493:p2 ;
-  :site site:fr8917AVleeuwarden .
+  :site site:fr8917AVleeuwarden ;
+  :subject t00493:p1, t00493:p2 .
 
 t00493:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y6M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1854-07-21"^^xsd:date ;
   :dateOfDeath "1917-02-13"^^xsd:date ;
   :nam "HELENA PANHUIS" ;
@@ -32,6 +36,10 @@ t00493:p1
 
 t00493:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y10M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1860-07-21"^^xsd:date ;
   :dateOfDeath "1922-05-23"^^xsd:date ;
   :nam "PIETER VAN DER ZEE" ;

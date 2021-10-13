@@ -14,9 +14,9 @@ tomb:t00900
     ] ;
     :nd "+53.1706+006.3658"^^ll:
   ] ;
-  :subject t00900:p1, t00900:p2 ;
   :ref t00900:v1 ;
   :site site:gr9351RLtolbert ;
+  :subject t00900:p1, t00900:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -25,6 +25,10 @@ tomb:t00900
 
 t00900:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y11M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-02-04"^^xsd:date ;
   :dateOfDeath "1912-01-31"^^xsd:date ;
   :nam "REINDER CLUVING HOENDERKEN" ;
@@ -49,11 +53,11 @@ t00900:p2
 
 t00900:v1
   a :Quote ;
-  :text "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN."@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :Revelation.n.04 ;
     :verse "13"
-  ] .
+  ] ;
+  :text "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN."@nld .
 

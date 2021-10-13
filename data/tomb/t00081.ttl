@@ -14,9 +14,9 @@ tomb:t00081
     ] ;
     :nd "+53.2037+006.5730"^^ll:
   ] ;
-  :subject t00081:p1, t00081:p2 ;
   :quo "REQUIESCAT IN PACE"@lat ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00081:p1, t00081:p2 .
 
 t00081:c1
   a :City.n.01 ;
@@ -25,6 +25,10 @@ t00081:c1
 
 t00081:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y2M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1882-09-07"^^xsd:date ;
   :dateOfDeath "1953-11-27"^^xsd:date ;
   :nam "GEORGE W. PADBERG" ;
@@ -41,6 +45,10 @@ t00081:p1
 
 t00081:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-03-25"^^xsd:date ;
   :dateOfDeath "1963-08-23"^^xsd:date ;
   :nam "GEERTRUIDA M.M. SCHOLTE" ;

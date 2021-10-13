@@ -14,11 +14,15 @@ tomb:t00547
     ] ;
     :nd "+53.1044+006.8755"^^ll:
   ] ;
-  :subject t00547:p1, t00547:p2 ;
-  :site site:gr9641ANveendam .
+  :site site:gr9641ANveendam ;
+  :subject t00547:p1, t00547:p2 .
 
 t00547:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y6M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1834-09-19"^^xsd:date ;
   :dateOfDeath "1906-04-14"^^xsd:date ;
   :nam "JAN MULDER" ;
@@ -30,6 +34,10 @@ t00547:p1
 
 t00547:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y11M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1834-04-08"^^xsd:date ;
   :dateOfDeath "1913-03-30"^^xsd:date ;
   :nam "GEESJEN VENEMA" ;

@@ -14,11 +14,15 @@ tomb:t00340
     ] ;
     :nd "+52.7157+006.4731"^^ll:
   ] ;
-  :subject t00340:p1, t00340:p2 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00340:p1, t00340:p2 .
 
 t00340:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y4M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1848-09-18"^^xsd:date ;
   :dateOfDeath "1903-02-14"^^xsd:date ;
   :nam "HENDERIKUS LA GRO" ;
@@ -35,6 +39,10 @@ t00340:p1
 
 t00340:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y11M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1853-01-14"^^xsd:date ;
   :dateOfDeath "1941-01-13"^^xsd:date ;
   :nam "PAULINE HAAK" ;

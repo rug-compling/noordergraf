@@ -14,14 +14,18 @@ tomb:t00018
     ] ;
     :nd "+53.1911+006.5935"^^ll:
   ] ;
-  :subject t00018:p1, t00018:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00018:p1, t00018:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00018:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y9M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-03-08"^^xsd:date ;
   :dateOfDeath "1934-01-05"^^xsd:date ;
   :nam "TRIENTJE HUISMAN" ;
@@ -42,6 +46,10 @@ t00018:p1
 
 t00018:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y6M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-06-20"^^xsd:date ;
   :dateOfDeath "1950-01-18"^^xsd:date ;
   :nam "KRIENO HUIZINGA" ;

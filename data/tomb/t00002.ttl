@@ -14,8 +14,8 @@ tomb:t00002
     ] ;
     :nd "+53.1899+006.5931"^^ll:
   ] ;
-  :subject t00002:p1, t00002:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00002:p1, t00002:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00002
 
 t00002:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y8M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-12-08"^^xsd:date ;
   :dateOfDeath "1942-08-27"^^xsd:date ;
   :nam "MARTJE BALKEMA" ;

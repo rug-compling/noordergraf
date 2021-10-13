@@ -14,8 +14,8 @@ tomb:t00953
     ] ;
     :nd "+53.1201+006.6587"^^ll:
   ] ;
-  :subject t00953:p1 ;
-  :site site:gr9479TNnoordlaren .
+  :site site:gr9479TNnoordlaren ;
+  :subject t00953:p1 .
 
 t00953:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00953:c1
 
 t00953:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-01-24"^^xsd:date ;
   :dateOfDeath "1896-02-21"^^xsd:date ;
   :nam "REINA JANTINA" ;

@@ -14,15 +14,19 @@ tomb:t00320
     ] ;
     :nd "+52.7158+006.4722"^^ll:
   ] ;
-  :subject t00320:p1, t00320:p2 ;
   :quo "RUST ZACHT" ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00320:p1, t00320:p2 ;
   :sym [
     a :Pigeon.n.01
   ] .
 
 t00320:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1927-04-08"^^xsd:date ;
   :dateOfDeath "1999-08-20"^^xsd:date ;
   :nam "ALBERT MARTENS" ;
@@ -37,14 +41,18 @@ t00320:p1
 
 t00320:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y8M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1931-07-03"^^xsd:date ;
   :dateOfDeath "2008-03-17"^^xsd:date ;
   :nam "GRIETJE MARTENS-KOSTER" ;
   :rol [
+    a :Great_grandmother.n.01
+  ], [
     a :Mother.n.01
   ], [
     a :Grandmother.n.01
-  ], [
-    a :Great_grandmother.n.01
   ] .
 

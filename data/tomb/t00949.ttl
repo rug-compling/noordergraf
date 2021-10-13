@@ -14,15 +14,19 @@ tomb:t00949
     ] ;
     :nd "+53.1383+007.1433"^^ll:
   ] ;
-  :subject t00949:p1, t00949:p2 ;
   :quo "HIER SLAEPT JUFFROU VAN BERN \\ IN MAART GEBRAGT TEN GRAVE \\ EN LEEFT NU BUITEN SCHEUTS \\ BY GODT IN 'S HEREN HAVE."@nld, "TER \\ EUWGER \\ GEDAGTENISSE \\ VAN DE DEUGTRYKE \\ HEER"@nld ;
   :site site:gr9696XGoudeschans ;
+  :subject t00949:p1, t00949:p2 ;
   :sym [
     a :Blazon.n.01
   ] .
 
 t00949:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P56Y5M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1674-03-09"^^xsd:date ;
   :dateOfDeath "1730-08-16"^^xsd:date ;
   :nam "GERHARD VAN BERN" ;
@@ -30,6 +34,10 @@ t00949:p1
 
 t00949:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y5M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1679-09-17"^^xsd:date ;
   :dateOfDeath "1747-03-15"^^xsd:date ;
   :nam "ADRIANA MARIA HINSBEEK" ;

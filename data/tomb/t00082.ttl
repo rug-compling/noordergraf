@@ -14,9 +14,9 @@ tomb:t00082
     ] ;
     :nd "+53.2036+006.5731"^^ll:
   ] ;
-  :subject t00082:p1, t00082:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00082:p1, t00082:p2 .
 
 t00082:c1
   a :City.n.01 ;
@@ -25,6 +25,10 @@ t00082:c1
 
 t00082:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y1M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-04-20"^^xsd:date ;
   :dateOfDeath "1947-05-28"^^xsd:date ;
   :nam "LUDWIG GOEKEN" ;
@@ -41,6 +45,10 @@ t00082:p1
 
 t00082:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y7M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1877-04-24"^^xsd:date ;
   :dateOfDeath "1950-12-12"^^xsd:date ;
   :nam "HENDERIKA G. VAN GOOZEN" ;

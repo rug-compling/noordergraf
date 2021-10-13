@@ -14,9 +14,9 @@ tomb:t00480
     ] ;
     :nd "+53.2071+005.7687"^^ll:
   ] ;
-  :subject t00480:p1 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00480:p1 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -28,6 +28,10 @@ tomb:t00480
 
 t00480:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P23Y9M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-04-05"^^xsd:date ;
   :dateOfDeath "1915-01-28"^^xsd:date ;
   :nam "LEONARDUS MARIE VAN DER LINDEN" .

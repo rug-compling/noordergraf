@@ -14,9 +14,9 @@ tomb:t00415
     ] ;
     :nd "+53.0796+006.5724"^^ll:
   ] ;
-  :subject t00415:p1, t00415:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
+  :subject t00415:p1, t00415:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -28,6 +28,10 @@ t00415:c1
 
 t00415:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y11M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-12-10"^^xsd:date ;
   :dateOfDeath "1952-11-12"^^xsd:date ;
   :nam "GEESSIEN ROSSING" ;
@@ -40,6 +44,10 @@ t00415:p1
 
 t00415:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y2M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-03-31"^^xsd:date ;
   :dateOfDeath "1968-06-11"^^xsd:date ;
   :nam "HENDRIK KOOPS" ;

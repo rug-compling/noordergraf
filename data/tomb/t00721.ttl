@@ -14,9 +14,9 @@ tomb:t00721
     ] ;
     :nd "+52.7812+006.8992"^^ll:
   ] ;
-  :subject t00721:p1, t00721:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00721:p1, t00721:p2 ;
   :sym [
     a :Entity.n.01
   ] ;
@@ -37,6 +37,10 @@ rust zacht""" .
 
 t00721:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y6M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-06-27"^^xsd:date ;
   :dateOfDeath "1939-01-13"^^xsd:date ;
   :nam "JANNES JOLING" ;

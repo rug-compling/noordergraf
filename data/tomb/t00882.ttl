@@ -14,12 +14,16 @@ tomb:t00882
     ] ;
     :nd "+52.7195+006.8466"^^ll:
   ] ;
-  :subject t00882:p1, t00882:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER"@nld ;
-  :site site:dr7844TCveenoord .
+  :site site:dr7844TCveenoord ;
+  :subject t00882:p1, t00882:p2 .
 
 t00882:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P34Y28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1911-06-06"^^xsd:date ;
   :dateOfDeath "1945-07-04"^^xsd:date ;
   :nam "E.W.C. DE VRIES" ;

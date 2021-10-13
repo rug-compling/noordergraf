@@ -14,9 +14,9 @@ tomb:t00927
     ] ;
     :nd "+53.1718+006.3655"^^ll:
   ] ;
-  :subject t00927:p1 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
   :site site:gr9351RLtolbert ;
+  :subject t00927:p1 ;
   :sym [
     a :Oak.n.01
   ], [
@@ -30,6 +30,10 @@ t00927:c1
 
 t00927:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P52Y8M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1846-05-15"^^xsd:date ;
   :dateOfDeath "1899-02-04"^^xsd:date ;
   :nam "JAN WIERENGA" ;

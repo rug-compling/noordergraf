@@ -14,18 +14,18 @@ tomb:t00872
     ] ;
     :nd "+52.7193+006.8452"^^ll:
   ] ;
-  :subject t00872:p1, t00872:p2 ;
   :ref [
     a :Quote ;
-    :text "psalm:90.v.6"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 90 ;
+      :part :Psalm.n.01 ;
       :verse "6"
-    ]
+    ] ;
+    :text "psalm:90.v.6"@nld
   ] ;
   :site site:dr7844TCveenoord ;
+  :subject t00872:p1, t00872:p2 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -36,6 +36,10 @@ tomb:t00872
 
 t00872:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P41Y6M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-08-27"^^xsd:date ;
   :dateOfDeath "1917-03-17"^^xsd:date ;
   :nam "JAN DIK" ;

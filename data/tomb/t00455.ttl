@@ -14,8 +14,8 @@ tomb:t00455
     ] ;
     :nd "+53.2066+005.7698"^^ll:
   ] ;
-  :subject t00455:p1, t00455:p2 ;
-  :site site:fr8915CPleeuwarden .
+  :site site:fr8915CPleeuwarden ;
+  :subject t00455:p1, t00455:p2 .
 
 t00455:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00455:c1
 
 t00455:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y2M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-10-25"^^xsd:date ;
   :dateOfDeath "1978-12-28"^^xsd:date ;
   :nam "GERHARD BRENNINKMEIJER" ;
@@ -32,6 +36,10 @@ t00455:p1
 
 t00455:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y11M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-01-27"^^xsd:date ;
   :dateOfDeath "1987-01-04"^^xsd:date ;
   :nam "CECILIA BRENNINKMEIJER" ;

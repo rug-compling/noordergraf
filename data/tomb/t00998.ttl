@@ -14,9 +14,9 @@ tomb:t00998
     ] ;
     :nd "+53.2442+006.6281"^^ll:
   ] ;
-  :subject t00998:p1, t00998:p2 ;
   :quo "BETREURD DOOR HAAR ECHTGENOOT"@nld ;
   :site site:gr9734ATgroningen ;
+  :subject t00998:p1, t00998:p2 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -25,6 +25,10 @@ tomb:t00998
 
 t00998:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y11M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1832-11-25"^^xsd:date ;
   :dateOfDeath "1890-11-12"^^xsd:date ;
   :nam "DETTJE H. BOER" ;

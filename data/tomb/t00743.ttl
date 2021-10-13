@@ -14,8 +14,8 @@ tomb:t00743
     ] ;
     :nd "+53.1806+006.9689"^^ll:
   ] ;
-  :subject t00743:p1, t00743:p2 ;
   :site site:gr9679KHscheemda ;
+  :subject t00743:p1, t00743:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00743:c1
 
 t00743:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-01-24"^^xsd:date ;
   :dateOfDeath "1954-02-20"^^xsd:date ;
   :nam "GEERTJE MEIN" ;

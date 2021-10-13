@@ -14,11 +14,15 @@ tomb:t00685
     ] ;
     :nd "+53.0684+005.5234"^^ll:
   ] ;
-  :subject t00685:p1 ;
-  :site site:fr8701DWbolsward .
+  :site site:fr8701DWbolsward ;
+  :subject t00685:p1 .
 
 t00685:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y9M"^^xsd:duration
+  ] ;
   :dateOfBirth "1937-07-13"^^xsd:date ;
   :dateOfDeath "2001-04-13"^^xsd:date ;
   :nam "JOHN ZOETENDAL" .

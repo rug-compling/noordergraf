@@ -14,11 +14,15 @@ tomb:t00045
     ] ;
     :nd "+53.1631+006.6128"^^ll:
   ] ;
-  :subject t00045:p1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00045:p1 .
 
 t00045:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P7M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1923-12-12"^^xsd:date ;
   :dateOfDeath "1924-07-20"^^xsd:date ;
   :nam "ROELOF LUURD JURRIAAN COOLMAN" .

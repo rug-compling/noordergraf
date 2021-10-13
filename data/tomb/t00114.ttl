@@ -14,8 +14,8 @@ tomb:t00114
     ] ;
     :nd "+53.1626+006.6150"^^ll:
   ] ;
-  :subject t00114:p1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00114:p1 .
 
 t00114:c1
   a :Town.n.01 ;
@@ -24,6 +24,10 @@ t00114:c1
 
 t00114:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y6M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-05-30"^^xsd:date ;
   :dateOfDeath "1960-12-15"^^xsd:date ;
   :nam "AALTJE OOSTERVELD" ;

@@ -14,8 +14,8 @@ tomb:p00001
     ] ;
     :nd "+49.0753+002.1789"^^ll:
   ] ;
-  :subject p00001:p1 ;
   :site site:FR95430Auvers_sur_Oise ;
+  :subject p00001:p1 ;
   :text """ici repose
 Vincent van Gogh
 1853 — 1890
@@ -23,6 +23,10 @@ Vincent van Gogh
 
 p00001:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P37Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1853"^^xsd:gYear ;
   :dateOfDeath "1890"^^xsd:gYear ;
   :nam "Vincent van Gogh" .

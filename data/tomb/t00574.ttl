@@ -14,15 +14,19 @@ tomb:t00574
     ] ;
     :nd "+53.1059+006.8752"^^ll:
   ] ;
-  :subject t00574:p1, t00574:p2, t00574:p3 ;
   :quo "RUST ZACHT LIEVE MOEDER" ;
   :site site:gr9641ANveendam ;
+  :subject t00574:p1, t00574:p2, t00574:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00574:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y10M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1845-06-15"^^xsd:date ;
   :dateOfDeath "1921-04-20"^^xsd:date ;
   :nam "TALJE TAKENS" ;

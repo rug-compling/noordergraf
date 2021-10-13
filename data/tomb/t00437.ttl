@@ -14,15 +14,19 @@ tomb:t00437
     ] ;
     :nd "+53.4790+006.1608"^^ll:
   ] ;
-  :subject t00437:p1, t00437:p2 ;
   :quo "ALS MENS WAS JE UNIEK ZOALS JE WAS \\ WIE JE WAS, DAT BLIJFT \\ WE MISSEN JE HEEL ERG" ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00437:p1, t00437:p2 ;
   :sym [
     a :Car.n.01
   ] .
 
 t00437:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y11M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1925-01-22"^^xsd:date ;
   :dateOfDeath "1990-01-07"^^xsd:date ;
   :nam "HENK DRENT" ;
@@ -36,6 +40,10 @@ t00437:p1
 
 t00437:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y9M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1931-05-26"^^xsd:date ;
   :dateOfDeath "2005-03-17"^^xsd:date ;
   :nam "WILHELMINA GEERTRUIDA BUDDE" ;

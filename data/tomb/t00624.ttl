@@ -14,11 +14,15 @@ tomb:t00624
     ] ;
     :nd "+53.1642+006.7541"^^ll:
   ] ;
-  :subject t00624:p1, t00624:p2 ;
-  :site site:gr9601KAhoogezand .
+  :site site:gr9601KAhoogezand ;
+  :subject t00624:p1, t00624:p2 .
 
 t00624:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P26Y6M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-02-08"^^xsd:date ;
   :dateOfDeath "1892-08-15"^^xsd:date ;
   :nam "PIETER KORNELIS BOON" ;

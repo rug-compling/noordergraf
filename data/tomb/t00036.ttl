@@ -14,8 +14,8 @@ tomb:t00036
     ] ;
     :nd "+53.1630+006.6121"^^ll:
   ] ;
-  :subject t00036:p1, t00036:p2 ;
   :site site:gr9752CMharen ;
+  :subject t00036:p1, t00036:p2 ;
   :sym [
     a :WeepingWillow
   ] ;
@@ -23,6 +23,10 @@ tomb:t00036
 
 t00036:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P39Y11M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-06-12"^^xsd:date ;
   :dateOfDeath "1904-06-09"^^xsd:date ;
   :nam "ROELOF DOLFIN" ;

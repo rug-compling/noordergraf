@@ -14,8 +14,8 @@ tomb:t00290
     ] ;
     :nd "+52.7152+006.4741"^^ll:
   ] ;
-  :subject t00290:p1 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00290:p1 .
 
 t00290:c1
   a :Town.n.01 ;
@@ -24,6 +24,10 @@ t00290:c1
 
 t00290:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P40Y4M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1885-12-15"^^xsd:date ;
   :dateOfDeath "1926-05-12"^^xsd:date ;
   :nam "JAN KAT" ;

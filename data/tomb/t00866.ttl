@@ -14,20 +14,24 @@ tomb:t00866
     ] ;
     :nd "+52.7193+006.8452"^^ll:
   ] ;
-  :subject t00866:p1 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00866:p1 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00866:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y10M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-02-20"^^xsd:date ;
   :dateOfDeath "1935-12-23"^^xsd:date ;
   :nam "TRIJNTJE KOENS" ;
   :rol [
-    a :Sister.n.01 ;
+    a :Sister.n.01
   ], [
     a :Spouse.n.01 ;
     :tgt t00866:p2
@@ -36,3 +40,4 @@ t00866:p1
 t00866:p2
   a :Male ;
   :nam "R. SIEBEN" .
+

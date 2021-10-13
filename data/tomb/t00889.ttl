@@ -14,11 +14,15 @@ tomb:t00889
     ] ;
     :nd "+53.2305+006.5519"^^ll:
   ] ;
-  :subject t00889:p1, t00889:p2 ;
-  :site site:gr9741ACgroningen .
+  :site site:gr9741ACgroningen ;
+  :subject t00889:p1, t00889:p2 .
 
 t00889:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y10M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1833-05-10"^^xsd:date ;
   :dateOfDeath "1893-04-02"^^xsd:date ;
   :nam "GEERT BUSSCHER SISSINGH" ;
@@ -39,6 +43,10 @@ t00889:p1
 
 t00889:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y9M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1839-05-15"^^xsd:date ;
   :dateOfDeath "1926-03-09"^^xsd:date ;
   :nam "DIEWERTJE FREDERIKA CORSTIUS" ;

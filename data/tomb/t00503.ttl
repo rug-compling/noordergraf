@@ -14,15 +14,19 @@ tomb:t00503
     ] ;
     :nd "+53.2091+005.7906"^^ll:
   ] ;
-  :subject t00503:p1, t00503:p2 ;
   :ref t00503:v1 ;
   :site site:fr8917AVleeuwarden ;
+  :subject t00503:p1, t00503:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00503:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P41Y7M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-12-28"^^xsd:date ;
   :dateOfDeath "1918-07-31"^^xsd:date ;
   :nam "JENTJE HOOGEVEEN" ;
@@ -47,11 +51,11 @@ t00503:p2
 
 t00503:v1
   a :Quote ;
-  :text "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN."@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :Revelation.n.04 ;
     :verse "13"
-  ] .
+  ] ;
+  :text "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN."@nld .
 

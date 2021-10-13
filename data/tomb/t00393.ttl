@@ -14,8 +14,8 @@ tomb:t00393
     ] ;
     :nd "+53.2517+006.1453"^^ll:
   ] ;
-  :subject t00393:p1, t00393:p2 ;
-  :site site:fr9285TCbuitenpost .
+  :site site:fr9285TCbuitenpost ;
+  :subject t00393:p1, t00393:p2 .
 
 t00393:c2
   a :Village.n.02 ;
@@ -29,6 +29,10 @@ t00393:o2
 
 t00393:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y3M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1838-03-19"^^xsd:date ;
   :dateOfDeath "1900-07-12"^^xsd:date ;
   :nam "CONRADUS ALBERTUS KUIPERS DIJKEN" ;

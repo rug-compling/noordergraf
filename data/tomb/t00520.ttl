@@ -14,8 +14,8 @@ tomb:t00520
     ] ;
     :nd "+53.1666+006.7535"^^ll:
   ] ;
-  :subject t00520:p1, t00520:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00520:p1, t00520:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00520
 
 t00520:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-05-03"^^xsd:date ;
   :dateOfDeath "1941-09-16"^^xsd:date ;
   :nam "JURRIEN HAGENOUW" ;
@@ -37,6 +41,10 @@ t00520:p1
 
 t00520:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P95Y6M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1860-09-23"^^xsd:date ;
   :dateOfDeath "1956-04-21"^^xsd:date ;
   :nam "HARMANNA CLOSSE" ;

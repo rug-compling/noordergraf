@@ -14,15 +14,19 @@ tomb:t00465
     ] ;
     :nd "+53.2073+005.7697"^^ll:
   ] ;
-  :subject t00465:p1, t00465:p2 ;
   :quo "PAX"@lat, "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00465:p1, t00465:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00465:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y11M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1892-02-27"^^xsd:date ;
   :dateOfDeath "1966-02-23"^^xsd:date ;
   :nam "JACOBUS MARIA STEK" ;
@@ -33,6 +37,10 @@ t00465:p1
 
 t00465:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y4M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-01-25"^^xsd:date ;
   :dateOfDeath "1976-06-19"^^xsd:date ;
   :nam "WILHELMINA DUMOPE" ;

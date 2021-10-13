@@ -14,12 +14,16 @@ tomb:t00722
     ] ;
     :nd "+52.7816+006.9004"^^ll:
   ] ;
-  :subject t00722:p1 ;
   :quo "GEVALLEN IN DEN STRIJD VOOR VRIJHEID EN RECHT"@nld, "HETZIJ DAT WIJ LEVEN, \\ HETZIJ DAT WIJ STERVEN, \\ WIJ ZIJN DES HEEREN."@nld ;
-  :site site:dr7811HEemmen .
+  :site site:dr7811HEemmen ;
+  :subject t00722:p1 .
 
 t00722:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P29Y11M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1915-04-05"^^xsd:date ;
   :dateOfDeath "1945-03-08"^^xsd:date ;
   :nam "HENDRIK HADDERS" ;

@@ -14,14 +14,18 @@ tomb:t01011
     ] ;
     :nd "+53.3084+006.5751"^^ll:
   ] ;
-  :subject t01011:p1, t01011:p2 ;
   :site site:gr9781THbedum ;
+  :subject t01011:p1, t01011:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t01011:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P46Y18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1835-05-31"^^xsd:date ;
   :dateOfDeath "1881-06-18"^^xsd:date ;
   :nam "KLAAS KLOOSTER" ;

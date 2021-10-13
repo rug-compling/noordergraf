@@ -14,15 +14,19 @@ tomb:t00388
     ] ;
     :nd "+53.2516+006.1450"^^ll:
   ] ;
-  :subject t00388:p1, t00388:p2 ;
   :ref t00388:v1 ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00388:p1, t00388:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00388:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y2M"^^xsd:duration
+  ] ;
   :dateOfBirth "1877-02-21"^^xsd:date ;
   :dateOfDeath "1940-04-21"^^xsd:date ;
   :nam "JAKOB KLOOSTRA" ;
@@ -42,6 +46,10 @@ t00388:p1
 
 t00388:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P59Y4M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-04-12"^^xsd:date ;
   :dateOfDeath "1939-09-03"^^xsd:date ;
   :nam "TIETJE WESTERHOF" ;

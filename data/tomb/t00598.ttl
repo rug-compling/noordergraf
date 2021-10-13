@@ -14,24 +14,28 @@ tomb:t00598
     ] ;
     :nd "+53.3266+006.5117"^^ll:
   ] ;
-  :subject t00598:p1, t00598:p2, t00598:p3 ;
   :ref [
     a :Quote ;
-    :text "Ps. 37:5"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 37 ;
+      :part :Psalm.n.01 ;
       :verse "5"
-    ]
+    ] ;
+    :text "Ps. 37:5"@nld
   ] ;
   :site site:gr9951TNwinsum ;
+  :subject t00598:p1, t00598:p2, t00598:p3 ;
   :sym [
     a :Treble_clef.n.01
   ] .
 
 t00598:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y11M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1917-11-19"^^xsd:date ;
   :dateOfDeath "1989-11-15"^^xsd:date ;
   :nam "HERMAN JOHAN POORT" ;
@@ -48,14 +52,18 @@ t00598:p1
 
 t00598:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y3M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1913-11-21"^^xsd:date ;
   :dateOfDeath "2004-03-19"^^xsd:date ;
   :nam "ANTJE BREMER" ;
   :rol [
-    a :Mother.n.01 ;
+    a :Grandmother.n.01 ;
     :tgt t00598:p3
   ], [
-    a :Grandmother.n.01 ;
+    a :Mother.n.01 ;
     :tgt t00598:p3
   ] .
 

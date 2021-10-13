@@ -14,17 +14,25 @@ tomb:t00450
     ] ;
     :nd "+53.2063+005.7695"^^ll:
   ] ;
-  :subject t00450:p1, t00450:p2 ;
-  :site site:fr8915CPleeuwarden .
+  :site site:fr8915CPleeuwarden ;
+  :subject t00450:p1, t00450:p2 .
 
 t00450:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y5M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1853-06-11"^^xsd:date ;
   :dateOfDeath "1922-12-09"^^xsd:date ;
   :nam "JACOBUS JOSEPHUS VAN DER WERFF" .
 
 t00450:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y6M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1863-01-21"^^xsd:date ;
   :dateOfDeath "1944-08-01"^^xsd:date ;
   :nam "PETRONELLA FAAS" .

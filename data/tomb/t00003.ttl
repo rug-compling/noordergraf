@@ -14,11 +14,15 @@ tomb:t00003
     ] ;
     :nd "+53.1899+006.5936"^^ll:
   ] ;
-  :subject t00003:p1, t00003:p2, t00003:p3 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00003:p1, t00003:p2, t00003:p3 .
 
 t00003:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y5M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-08-26"^^xsd:date ;
   :dateOfDeath "1932-02-21"^^xsd:date ;
   :nam "JACOBA CATHARINA VAN DER MEULEN" ;
@@ -33,6 +37,10 @@ t00003:p1
 
 t00003:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y6M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-02-26"^^xsd:date ;
   :dateOfDeath "1948-09-17"^^xsd:date ;
   :nam "GERRIT DE JAGER" ;
@@ -46,6 +54,10 @@ t00003:p2
 
 t00003:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y7M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-10-05"^^xsd:date ;
   :dateOfDeath "1960-05-30"^^xsd:date ;
   :nam "CATHARINA BOER" ;

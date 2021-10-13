@@ -14,11 +14,15 @@ tomb:t00451
     ] ;
     :nd "+53.2066+005.7696"^^ll:
   ] ;
-  :subject t00451:p1 ;
-  :site site:fr8915CPleeuwarden .
+  :site site:fr8915CPleeuwarden ;
+  :subject t00451:p1 .
 
 t00451:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y4M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1904-02-19"^^xsd:date ;
   :dateOfDeath "1964-06-22"^^xsd:date ;
   :nam "HAVANK", "HENDRIKUS FREDERIKUS VAN DER KALLEN" .

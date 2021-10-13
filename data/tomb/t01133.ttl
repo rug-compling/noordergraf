@@ -14,11 +14,15 @@ tomb:t01133
     ] ;
     :nd "+53.1625+006.6142"^^ll:
   ] ;
-  :subject t01133:p1, t01133:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t01133:p1, t01133:p2 .
 
 t01133:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P53Y1M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-11-22"^^xsd:date ;
   :dateOfDeath "1953-01-07"^^xsd:date ;
   :nam "GERRITDINA VREEBURG" ;
@@ -28,6 +32,10 @@ t01133:p1
 
 t01133:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y2M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-06-28"^^xsd:date ;
   :dateOfDeath "1979-09-01"^^xsd:date ;
   :nam "BEREND DE JONGE" ;

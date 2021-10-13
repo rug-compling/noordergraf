@@ -14,36 +14,44 @@ tomb:t00676
     ] ;
     :nd "+53.0685+005.5219"^^ll:
   ] ;
-  :subject t00676:p1, t00676:p2 ;
   :quo "IK WEET, \\ AAN WIE IK MIJ VERTROUWE"@nld ;
   :ref [
     a :Quote ;
-    :text "lied 390:3"@nld ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "lied 390:3"@nld
   ] ;
-  :site site:fr8701DWbolsward .
+  :site site:fr8701DWbolsward ;
+  :subject t00676:p1, t00676:p2 .
 
 t00676:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y8M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1920-12-08"^^xsd:date ;
   :dateOfDeath "1981-08-30"^^xsd:date ;
   :nam "HENDRIK BUWALDA" ;
   :rol [
     a :Parent
-  ] , [
+  ], [
     a :Grandparent
   ] .
 
 t00676:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y2M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1921-11-27"^^xsd:date ;
   :dateOfDeath "1997-02-10"^^xsd:date ;
-  :nam "GRIETJE BUWALDA-VAN DER ZWAAG"  ;
+  :nam "GRIETJE BUWALDA-VAN DER ZWAAG" ;
   :rol [
     a :Parent
-  ] , [
+  ], [
     a :Grandparent
   ] .
 

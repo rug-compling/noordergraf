@@ -14,14 +14,18 @@ tomb:t00214
     ] ;
     :nd "+53.2226+006.6371"^^ll:
   ] ;
-  :subject t00214:p1, t00214:p2 ;
   :site site:gr9723EWgroningen ;
+  :subject t00214:p1, t00214:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00214:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y4M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-03-12"^^xsd:date ;
   :dateOfDeath "1945-08-09"^^xsd:date ;
   :nam "ANNECHIEN ZWANEVELD" ;

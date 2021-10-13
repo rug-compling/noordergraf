@@ -14,25 +14,29 @@ tomb:t00727
     ] ;
     :nd "+52.7820+006.8971"^^ll:
   ] ;
-  :subject t00727:p1, t00727:p2, t00727:p3 ;
   :quo "HAAR BEGEERTE WAS OM ONTBONDEN \\ TE WORDEN EN MET CHRISTUS TE ZIJN \\ DAT WAS HAAR VERRE WEG HET BESTE "@nld ;
   :ref [
     a :Quote ;
-    :text "Filip 1:23."@nld ;
     :reference [
       a :BibleReference ;
-      :part :Epistle_to_the_Philippians.n.01 ;
       :chapter 1 ;
+      :part :Epistle_to_the_Philippians.n.01 ;
       :verse "23"
-    ]
+    ] ;
+    :text "Filip 1:23."@nld
   ] ;
   :site site:dr7811HEemmen ;
+  :subject t00727:p1, t00727:p2, t00727:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00727:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P36Y8M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-01-11"^^xsd:date ;
   :dateOfDeath "1916-09-30"^^xsd:date ;
   :nam "JANTJE AIKES" ;

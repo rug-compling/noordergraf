@@ -14,8 +14,8 @@ tomb:t00657
     ] ;
     :nd "+53.2107+005.7894"^^ll:
   ] ;
-  :subject t00657:p1, t00657:p2, t00657:p3, t00657:p4 ;
-  :site site:fr8917AVleeuwarden .
+  :site site:fr8917AVleeuwarden ;
+  :subject t00657:p1, t00657:p2, t00657:p3, t00657:p4 .
 
 t00657:c3
   a :City.n.01 ;
@@ -38,6 +38,10 @@ t00657:p1
 
 t00657:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P173Y6M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1808-11-10"^^xsd:date ;
   :dateOfDeath "1982-05-30"^^xsd:date ;
   :nam "JOHANN LUDEWIG JACKÉ" ;
@@ -55,6 +59,10 @@ t00657:p2
 
 t00657:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P40Y6M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1839-04-23"^^xsd:date ;
   :dateOfDeath "1879-11-06"^^xsd:date ;
   :nam "AUGUSTA JACKÉ" ;
@@ -63,6 +71,10 @@ t00657:p3
 
 t00657:p4
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P45Y3M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-01-23"^^xsd:date ;
   :dateOfDeath "1904-05-02"^^xsd:date ;
   :nam "AUGUST JACKÉ" ;

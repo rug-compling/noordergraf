@@ -14,9 +14,9 @@ tomb:t00800
     ] ;
     :nd "+53.2778+006.6936"^^ll:
   ] ;
-  :subject t00800:p1, t00800:p2, t00800:p3 ;
   :ref t00800:v1 ;
-  :site site:gr9791KEten_boer .
+  :site site:gr9791KEten_boer ;
+  :subject t00800:p1, t00800:p2, t00800:p3 .
 
 t00800:c1
   a :Village.n.02 ;
@@ -25,6 +25,10 @@ t00800:c1
 
 t00800:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y8M"^^xsd:duration
+  ] ;
   :dateOfBirth "1842-05-02"^^xsd:date ;
   :dateOfDeath "1922-01-02"^^xsd:date ;
   :nam "REINDER HARM WERINGA" ;

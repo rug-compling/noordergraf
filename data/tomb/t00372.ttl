@@ -14,9 +14,9 @@ tomb:t00372
     ] ;
     :nd "+53.0792+006.5717"^^ll:
   ] ;
-  :subject t00372:p1, t00372:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
+  :subject t00372:p1, t00372:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -28,6 +28,10 @@ t00372:c1
 
 t00372:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y5M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1894-11-25"^^xsd:date ;
   :dateOfDeath "1962-05-16"^^xsd:date ;
   :nam "THIJS WILKENS" ;
@@ -42,6 +46,10 @@ t00372:p1
 
 t00372:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y6M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-03-05"^^xsd:date ;
   :dateOfDeath "1964-09-16"^^xsd:date ;
   :nam "ALIDA OTTENS" ;

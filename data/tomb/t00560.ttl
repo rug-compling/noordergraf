@@ -14,14 +14,18 @@ tomb:t00560
     ] ;
     :nd "+53.1044+006.8745"^^ll:
   ] ;
-  :subject t00560:p1, t00560:p2 ;
   :site site:gr9641ANveendam ;
+  :subject t00560:p1, t00560:p2 ;
   :sym [
     a :Book.n.02
   ] .
 
 t00560:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y2M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1842-01-21"^^xsd:date ;
   :dateOfDeath "1914-03-29"^^xsd:date ;
   :nam "J. VAN PETEGEM" ;

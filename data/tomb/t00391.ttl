@@ -14,15 +14,19 @@ tomb:t00391
     ] ;
     :nd "+53.2519+006.1453"^^ll:
   ] ;
-  :subject t00391:p1, t00391:p2 ;
   :ref t00391:v1, t00391:v2 ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00391:p1, t00391:p2 ;
   :sym [
     a :Flower.n.01
   ] .
 
 t00391:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P97Y9M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1833-04-24"^^xsd:date ;
   :dateOfDeath "1931-02-07"^^xsd:date ;
   :nam "SOPHIAS DE VRIES" ;
@@ -32,6 +36,10 @@ t00391:p1
 
 t00391:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y9M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1831-02-03"^^xsd:date ;
   :dateOfDeath "1911-12-01"^^xsd:date ;
   :nam "SIJKE A. DIJKSTRA" ;
@@ -43,8 +51,8 @@ t00391:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Luke.n.02 ;
     :chapter 2 ;
+    :part :Luke.n.02 ;
     :verse "30"
   ] .
 
@@ -52,8 +60,8 @@ t00391:v2
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :First_Epistle_to_the_Corinthians.n.01 ;
     :chapter 2 ;
+    :part :First_Epistle_to_the_Corinthians.n.01 ;
     :verse "19"
   ] .
 

@@ -8,8 +8,8 @@ tomb:t00904
     a :Photo ;
     :file img:t00904.jpg
   ] ;
-  :subject t00904:p1 ;
   :quo "O DEATH, WHERE IS THY STING? \\ O GRAVE, WHERE IS THY VICTORY? \\ BUT THANKS BE TO GOD, WHICH \\ GIVETH US THE VICTORY THROUGH \\ OUR LORD JESUS CHRIST, THE \\ SAVIOUR OF THE WORLD."@eng ;
+  :subject t00904:p1 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -20,6 +20,10 @@ tomb:t00904
 
 t00904:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y9M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1883-12-02"^^xsd:date ;
   :dateOfDeath "1975-09-05"^^xsd:date ;
   :nam "JAN MEEK" ;

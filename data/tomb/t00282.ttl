@@ -14,15 +14,19 @@ tomb:t00282
     ] ;
     :nd "+53.4038+006.7490"^^ll:
   ] ;
-  :subject t00282:p1, t00282:p2 ;
   :quo "RUST ZACHT LIEVE DOCHTER EN ZUSTER" ;
   :site site:gr9985SCoosternieland ;
+  :subject t00282:p1, t00282:p2 ;
   :sym [
     a :BrokenFlower
   ] .
 
 t00282:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P36Y10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-09-12"^^xsd:date ;
   :dateOfDeath "1933-09-22"^^xsd:date ;
   :nam "JAAPTJE VAN DAM" ;

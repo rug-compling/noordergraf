@@ -14,8 +14,8 @@ tomb:t00955
     ] ;
     :nd "+53.1202+006.6592"^^ll:
   ] ;
-  :subject t00955:p1, t00955:p2 ;
   :site site:gr9479TNnoordlaren ;
+  :subject t00955:p1, t00955:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00955:c1
 
 t00955:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1831-03-20"^^xsd:date ;
   :dateOfDeath "1915-03-22"^^xsd:date ;
   :nam "JAN HOUWING" ;

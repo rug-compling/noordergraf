@@ -14,9 +14,9 @@ tomb:t00924
     ] ;
     :nd "+53.1719+006.3656"^^ll:
   ] ;
-  :subject t00924:p1 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
   :site site:gr9351RLtolbert ;
+  :subject t00924:p1 ;
   :sym [
     a :Entity.n.01
   ] .
@@ -28,6 +28,10 @@ t00924:c1
 
 t00924:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P2Y10M"^^xsd:duration
+  ] ;
   :dateOfBirth "1902-05-22"^^xsd:date ;
   :dateOfDeath "1905-03-22"^^xsd:date ;
   :nam "AALTIEN DE BOER" ;

@@ -14,14 +14,18 @@ tomb:t00863
     ] ;
     :nd "+52.7191+006.8449"^^ll:
   ] ;
-  :subject t00863:p1, t00863:p2 ;
   :site site:dr7844TCveenoord ;
+  :subject t00863:p1, t00863:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00863:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P10M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1854-03-29"^^xsd:date ;
   :dateOfDeath "1854-02-06"^^xsd:date ;
   :nam "WIENAND EISING" ;

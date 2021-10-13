@@ -14,15 +14,19 @@ tomb:t00116
     ] ;
     :nd "+53.1623+006.6141"^^ll:
   ] ;
-  :subject t00116:p1, t00116:p2 ;
   :quo "RUST ZACHT" ;
   :site site:gr9752CMharen ;
+  :subject t00116:p1, t00116:p2 ;
   :sym [
     a :Rose.n.01
   ] .
 
 t00116:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P40Y8M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-03-14"^^xsd:date ;
   :dateOfDeath "1952-12-06"^^xsd:date ;
   :nam "ALBERT SANTING" ;
@@ -32,6 +36,10 @@ t00116:p1
 
 t00116:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P96Y5M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1916-02-14"^^xsd:date ;
   :dateOfDeath "2012-08-06"^^xsd:date ;
   :nam "ALIDA POTT" ;

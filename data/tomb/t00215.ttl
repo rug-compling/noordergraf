@@ -14,14 +14,18 @@ tomb:t00215
     ] ;
     :nd "+53.2226+006.6371"^^ll:
   ] ;
-  :subject t00215:p1, t00215:p2 ;
   :site site:gr9723EWgroningen ;
+  :subject t00215:p1, t00215:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00215:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y8M"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-07-17"^^xsd:date ;
   :dateOfDeath "1963-03-17"^^xsd:date ;
   :nam "EEUWKE WOLDRING" ;

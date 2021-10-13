@@ -14,14 +14,18 @@ tomb:t00143
     ] ;
     :nd "+53.2061+006.5699"^^ll:
   ] ;
-  :subject t00143:p1, t00143:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00143:p1, t00143:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00143:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y10M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1882-12-31"^^xsd:date ;
   :dateOfDeath "1940-11-29"^^xsd:date ;
   :nam "JENTJE SCHIPHORST" ;
@@ -44,6 +48,10 @@ t00143:p1
 
 t00143:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y5M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-09-20"^^xsd:date ;
   :dateOfDeath "1967-03-12"^^xsd:date ;
   :nam "GERRIT LEFFERTS" ;

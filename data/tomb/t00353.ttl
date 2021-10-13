@@ -14,8 +14,8 @@ tomb:t00353
     ] ;
     :nd "+53.0800+006.5730"^^ll:
   ] ;
-  :subject t00353:p1, t00353:p2 ;
   :site site:dr9481CGvries ;
+  :subject t00353:p1, t00353:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00353:c1
 
 t00353:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P32Y5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-12-21"^^xsd:date ;
   :dateOfDeath "1897-12-26"^^xsd:date ;
   :nam "BOELINA LAMMERS" ;

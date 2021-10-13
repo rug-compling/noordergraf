@@ -14,11 +14,15 @@ tomb:t00131
     ] ;
     :nd "+53.2061+006.5716"^^ll:
   ] ;
-  :subject t00131:p1, t00131:p2 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00131:p1, t00131:p2 .
 
 t00131:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P37Y3M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-10-01"^^xsd:date ;
   :dateOfDeath "1897-01-03"^^xsd:date ;
   :nam "IJSEBRAND BUTTINGER" ;

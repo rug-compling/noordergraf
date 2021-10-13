@@ -14,11 +14,15 @@ tomb:t00258
     ] ;
     :nd "+53.1907+006.5927"^^ll:
   ] ;
-  :subject t00258:p1 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00258:p1 .
 
 t00258:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y10M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1935-05-07"^^xsd:date ;
   :dateOfDeath "2008-03-10"^^xsd:date ;
   :nam "JEROEN BIJL" .

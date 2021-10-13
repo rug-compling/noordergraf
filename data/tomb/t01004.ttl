@@ -14,19 +14,20 @@ tomb:t01004
     ] ;
     :nd "+53.1757+007.0949"^^ll:
   ] ;
-  :subject t01004:p1 ;
   :ref [
     a :Quote ;
-    :text "zoekt den heer en leeft\namos 5:6"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Book_of_Amos.n.01 ;
       :chapter 5 ;
-      :verse "6" ;
-      :scripture <https://www.bible.com/bible/1990/AMO.5.6>
-    ]
+      :part :Book_of_Amos.n.01 ;
+      :scripture <https://www.bible.com/bible/1990/AMO.5.6> ;
+      :verse "6"
+    ] ;
+    :text """zoekt den heer en leeft
+amos 5:6"""@nld
   ] ;
   :site site:gr9686RSbeerta ;
+  :subject t01004:p1 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -37,6 +38,10 @@ tomb:t01004
 
 t01004:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y3M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-10-23"^^xsd:date ;
   :dateOfDeath "1892-02-15"^^xsd:date ;
   :nam "STIENTJE WANMAKER" ;

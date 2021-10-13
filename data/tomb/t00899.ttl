@@ -14,8 +14,8 @@ tomb:t00899
     ] ;
     :nd "+53.1722+006.3618"^^ll:
   ] ;
-  :subject t00899:p1, t00899:p2 ;
   :site site:gr9351RLtolbert ;
+  :subject t00899:p1, t00899:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t00899
 
 t00899:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P44Y6M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1823-12-10"^^xsd:date ;
   :dateOfDeath "1868-06-23"^^xsd:date ;
   :nam "JANTJE JANS CAZEMIER" ;

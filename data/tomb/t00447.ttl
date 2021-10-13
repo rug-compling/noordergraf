@@ -14,11 +14,15 @@ tomb:t00447
     ] ;
     :nd "+53.4789+006.1603"^^ll:
   ] ;
-  :subject t00447:p1, t00447:p2 ;
-  :site site:fr9166NAschiermonnikoog .
+  :site site:fr9166NAschiermonnikoog ;
+  :subject t00447:p1, t00447:p2 .
 
 t00447:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y7M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-08-04"^^xsd:date ;
   :dateOfDeath "1982-03-08"^^xsd:date ;
   :nam "JUSTINA WUTSCHER" ;
@@ -50,6 +54,10 @@ t00447:p1
 
 t00447:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-01-25"^^xsd:date ;
   :dateOfDeath "2003-01-31"^^xsd:date ;
   :nam "DOUWE HEK" ;

@@ -14,16 +14,20 @@ tomb:t00929
     ] ;
     :nd "+52.7757+006.8023"^^ll:
   ] ;
-  :subject t00929:p1 ;
   :picture [
     a :Bust.n.03 ;
     :thm t00929:p1
   ] ;
   :quo "WARKER VEUR DRENTHE'S \\ TAOL EN HISTORIE \\ EEN VAN OES"@drt ;
-  :site site:dr7841CDsleen .
+  :site site:dr7841CDsleen ;
+  :subject t00929:p1 .
 
 t00929:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1903"^^xsd:gYear ;
   :dateOfDeath "1963"^^xsd:gYear ;
   :nam "JAN NAARDING" ;

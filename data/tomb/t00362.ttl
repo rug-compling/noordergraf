@@ -14,9 +14,9 @@ tomb:t00362
     ] ;
     :nd "+53.0799+006.5714"^^ll:
   ] ;
-  :subject t00362:p1, t00362:p2 ;
   :quo "RUST ZACHT" ;
   :site site:dr9481CGvries ;
+  :subject t00362:p1, t00362:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00362:c1
 
 t00362:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1854-09-02"^^xsd:date ;
   :dateOfDeath "1927-09-26"^^xsd:date ;
   :nam "JAKOB SMEENGE" ;

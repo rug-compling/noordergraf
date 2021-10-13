@@ -14,25 +14,29 @@ tomb:t00876
     ] ;
     :nd "+52.7193+006.8456"^^ll:
   ] ;
-  :subject t00876:p1, t00876:p2 ;
   :quo "RUST ZACHT"@nld ;
   :ref [
     a :Quote ;
-    :text "Hebr 4 : 9"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Epistle_to_the_Hebrews.n.01 ;
       :chapter 4 ;
+      :part :Epistle_to_the_Hebrews.n.01 ;
       :verse "9"
-    ]
+    ] ;
+    :text "Hebr 4 : 9"@nld
   ] ;
   :site site:dr7844TCveenoord ;
+  :subject t00876:p1, t00876:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00876:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y11M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-11-24"^^xsd:date ;
   :dateOfDeath "1937-11-20"^^xsd:date ;
   :nam "JANTJE VISSER" ;

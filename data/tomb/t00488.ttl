@@ -14,20 +14,28 @@ tomb:t00488
     ] ;
     :nd "+53.2059+005.7681"^^ll:
   ] ;
-  :subject t00488:p1, t00488:p2 ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00488:p1, t00488:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00488:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y8M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1837-09-07"^^xsd:date ;
   :dateOfDeath "1913-05-12"^^xsd:date ;
   :nam "BOUKJE ZWART" .
 
 t00488:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y4M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1836-03-03"^^xsd:date ;
   :dateOfDeath "1917-07-04"^^xsd:date ;
   :nam "JACOBUS IJPMA" .

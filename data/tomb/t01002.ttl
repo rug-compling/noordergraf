@@ -14,25 +14,29 @@ tomb:t01002
     ] ;
     :nd "+53.2443+006.6279"^^ll:
   ] ;
-  :subject t01002:p1, t01002:p2 ;
   :ref [
     a :Quote ;
-    :text "Ps145:6 berĳmdt"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 145 ;
-      :verse "6" ;
-      :comment "berijmd"
-    ]
+      :comment "berijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "6"
+    ] ;
+    :text "Ps145:6 berĳmdt"@nld
   ] ;
   :site site:gr9734ATgroningen ;
+  :subject t01002:p1, t01002:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t01002:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1824-09-19"^^xsd:date ;
   :dateOfDeath "1902-09-29"^^xsd:date ;
   :nam "JAN GEERTS NIENHUIS" ;

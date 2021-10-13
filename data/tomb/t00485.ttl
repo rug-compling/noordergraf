@@ -14,9 +14,9 @@ tomb:t00485
     ] ;
     :nd "+53.2066+005.7690"^^ll:
   ] ;
-  :subject t00485:p1, t00485:p2, t00485:p3 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00485:p1, t00485:p2, t00485:p3 ;
   :sym [
     a :Cross.n.03
   ] .
@@ -28,6 +28,10 @@ t00485:c2
 
 t00485:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P21Y6M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1884-12-06"^^xsd:date ;
   :dateOfDeath "1906-06-25"^^xsd:date ;
   :nam "ADRIANUS WILLEM NICOLAAS HOFSTEDE" ;
@@ -40,6 +44,10 @@ t00485:p1
 
 t00485:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y7M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-09-27"^^xsd:date ;
   :dateOfDeath "1914-05-12"^^xsd:date ;
   :nam "CATHARINA FLAPPER" ;

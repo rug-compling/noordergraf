@@ -14,9 +14,9 @@ tomb:t01066
     ] ;
     :nd "+53.3604+006.3435"^^ll:
   ] ;
-  :subject t01066:p1, t01066:p2 ;
   :ref t01066:v1 ;
   :site site:gr9971EBulrum ;
+  :subject t01066:p1, t01066:p2 ;
   :sym [
     a :Branch.n.02
   ] .
@@ -28,6 +28,10 @@ t01066:c1
 
 t01066:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1847-03-12"^^xsd:date ;
   :dateOfDeath "1927-03-21"^^xsd:date ;
   :nam "W. NIPPERUS" ;
@@ -57,11 +61,11 @@ t01066:p2
 
 t01066:v1
   a :Quote ;
-  :text "ZALIG EN HEILIG IS HIJ, DIE DEEL HEEFT IN DE EERSTE OPSTANDING. OVER DEZE HEEFT DE TWEEDE DOOD GEEN MACHT."@nld ;
   :reference [
     a :BibleReference ;
     :chapter 20 ;
     :part :Revelation.n.04 ;
     :verse "6"
-  ] .
+  ] ;
+  :text "ZALIG EN HEILIG IS HIJ, DIE DEEL HEEFT IN DE EERSTE OPSTANDING. OVER DEZE HEEFT DE TWEEDE DOOD GEEN MACHT."@nld .
 

@@ -14,15 +14,19 @@ tomb:t01033
     ] ;
     :nd "+53.2644+006.3938"^^ll:
   ] ;
-  :subject t01033:p1, t01033:p2 ;
   :ref t01033:v1 ;
   :site site:gr9804TEnoordhorn ;
+  :subject t01033:p1, t01033:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t01033:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y1M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-11-28"^^xsd:date ;
   :dateOfDeath "1922-12-30"^^xsd:date ;
   :nam "GERRIT FERINGA" ;
@@ -37,11 +41,11 @@ t01033:p2
 
 t01033:v1
   a :Quote ;
-  :text "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN."@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :Revelation.n.04 ;
     :verse "13"
-  ] .
+  ] ;
+  :text "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN."@nld .
 

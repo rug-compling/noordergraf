@@ -2,6 +2,7 @@
 
 tomb:t00606
   a :Tomb ;
+  :creator t00606:p2 ;
   :image [
     dc:date "2019-11-23T10:06:50"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,9 +15,8 @@ tomb:t00606
     ] ;
     :nd "+53.1643+006.7540"^^ll:
   ] ;
-  :subject t00606:p1 ;
-  :creator t00606:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00606:p1 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00606:c1
 
 t00606:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y3M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1822-03-02"^^xsd:date ;
   :dateOfDeath "1913-06-05"^^xsd:date ;
   :nam "JACOB BOERMA HZ" ;

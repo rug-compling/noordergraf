@@ -14,8 +14,8 @@ tomb:t00132
     ] ;
     :nd "+53.2062+006.5729"^^ll:
   ] ;
-  :subject t00132:p1, t00132:p2, t00132:p3 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00132:p1, t00132:p2, t00132:p3 .
 
 t00132:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00132:c1
 
 t00132:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y10M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1836-10-09"^^xsd:date ;
   :dateOfDeath "1908-08-25"^^xsd:date ;
   :nam "DOUWE HOEKSEMA" ;
@@ -40,6 +44,10 @@ t00132:p1
 
 t00132:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1841-12-01"^^xsd:date ;
   :dateOfDeath "1913-12-11"^^xsd:date ;
   :nam "GEERTRUIDA VAN DER KAMP" ;

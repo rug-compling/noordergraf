@@ -14,15 +14,19 @@ tomb:t01067
     ] ;
     :nd "+53.1232+006.2512"^^ll:
   ] ;
-  :subject t01067:p1, t01067:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:gr9367PAde_wilp ;
+  :subject t01067:p1, t01067:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t01067:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1849-07-09"^^xsd:date ;
   :dateOfDeath "1933-08-06"^^xsd:date ;
   :nam "BAUKJE W. VEENSTRA" ;

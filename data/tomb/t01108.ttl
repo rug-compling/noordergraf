@@ -14,9 +14,9 @@ tomb:t01108
     ] ;
     :nd "+53.2630+006.3120"^^ll:
   ] ;
-  :subject t01108:p1, t01108:p2 ;
   :quo "RUST ZACHT!"@nld ;
   :site site:gr9843AGgrijpskerk ;
+  :subject t01108:p1, t01108:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -33,6 +33,10 @@ t01108:c1
 
 t01108:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1843-10-05"^^xsd:date ;
   :dateOfDeath "1910-10-31"^^xsd:date ;
   :nam "AALTJE DE POEL" ;
@@ -44,6 +48,10 @@ t01108:p1
 
 t01108:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y5M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1846-07-31"^^xsd:date ;
   :dateOfDeath "1917-01-20"^^xsd:date ;
   :nam "SIERK KOOISTER" ;

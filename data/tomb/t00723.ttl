@@ -14,23 +14,27 @@ tomb:t00723
     ] ;
     :nd "+52.7825+006.8990"^^ll:
   ] ;
-  :subject t00723:p1 ;
   :ref [
     a :Quote ;
-    :text "psalm 91."@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
-      :chapter 91
-    ]
+      :chapter 91 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "psalm 91."@nld
   ] ;
   :site site:dr7811HEemmen ;
+  :subject t00723:p1 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00723:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P56Y10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-05-16"^^xsd:date ;
   :dateOfDeath "1925-05-26"^^xsd:date ;
   :nam "GEERT HENDRIKS" ;

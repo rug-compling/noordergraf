@@ -14,21 +14,25 @@ tomb:t00806
     ] ;
     :nd "+53.2771+006.6942"^^ll:
   ] ;
-  :subject t00806:p1 ;
   :quo "WEES MIJ GENADIG HERE WANT \\ TOT U ROEP IK DE GANSE DAG"@nld ;
   :ref [
     a :Quote ;
-    :text "Psalm 86"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
-      :chapter 86
-    ]
+      :chapter 86 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "Psalm 86"@nld
   ] ;
-  :site site:gr9791KEten_boer .
+  :site site:gr9791KEten_boer ;
+  :subject t00806:p1 .
 
 t00806:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y1M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1922-04-05"^^xsd:date ;
   :dateOfDeath "1998-06-03"^^xsd:date ;
   :nam "JACOB VINK" .

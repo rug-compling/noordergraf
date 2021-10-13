@@ -14,9 +14,9 @@ tomb:t00836
     ] ;
     :nd "+52.7767+006.8041"^^ll:
   ] ;
-  :subject t00836:p1, t00836:p2 ;
   :quo "RUST ZACHT LIEVE ECHTGENOOT EN MOEDER"@nld ;
   :site site:dr7841CDsleen ;
+  :subject t00836:p1, t00836:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00836:c1
 
 t00836:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y6M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-06-10"^^xsd:date ;
   :dateOfDeath "1916-01-03"^^xsd:date ;
   :nam "RIKA SIKKEN" ;

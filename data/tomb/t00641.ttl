@@ -14,12 +14,16 @@ tomb:t00641
     ] ;
     :nd "+53.2088+006.6478"^^ll:
   ] ;
-  :subject t00641:p1, t00641:p2 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
-  :site site:gr9723EJgroningen .
+  :site site:gr9723EJgroningen ;
+  :subject t00641:p1, t00641:p2 .
 
 t00641:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y8M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1843-03-13"^^xsd:date ;
   :dateOfDeath "1917-11-25"^^xsd:date ;
   :nam "HENDERIKA BRONSEMA" ;

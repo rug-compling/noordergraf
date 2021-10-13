@@ -14,9 +14,9 @@ tomb:t00478
     ] ;
     :nd "+53.2073+005.7689"^^ll:
   ] ;
-  :subject t00478:p1, t00478:p2 ;
   :quo "MIJN JEZUS BARMHARTIGHEID"@nld, "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00478:p1, t00478:p2 ;
   :sym [
     a :Cross.n.03
   ], [
@@ -32,6 +32,10 @@ tomb:t00478
 
 t00478:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y10M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-06-28"^^xsd:date ;
   :dateOfDeath "1927-05-25"^^xsd:date ;
   :nam "REIN F. DRAAYER" ;
@@ -44,6 +48,10 @@ t00478:p1
 
 t00478:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P32Y1M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1919-02-08"^^xsd:date ;
   :dateOfDeath "1951-04-03"^^xsd:date ;
   :nam "FOKKE" ;

@@ -14,25 +14,29 @@ tomb:t01130
     ] ;
     :nd "+53.3871+006.3597"^^ll:
   ] ;
-  :subject t01130:p1, t01130:p2, t01130:p3 ;
   :quo "RUST ZACHT LIEVE LIENA"@nld ;
   :ref [
     a :Quote ;
-    :text "Ps: 103: 8." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 103 ;
+      :part :Psalm.n.01 ;
       :verse "8"
-    ]
+    ] ;
+    :text "Ps: 103: 8."
   ] ;
   :site site:gr9978TEhornhuizen ;
+  :subject t01130:p1, t01130:p2, t01130:p3 ;
   :sym [
     a :Butterfly.n.01
   ] .
 
 t01130:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P6Y10M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1919-10-14"^^xsd:date ;
   :dateOfDeath "1926-08-22"^^xsd:date ;
   :nam "LIENA WASSENAAR" ;

@@ -14,11 +14,15 @@ tomb:t00091
     ] ;
     :nd "+53.2033+006.5725"^^ll:
   ] ;
-  :subject t00091:p1, t00091:p2 ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00091:p1, t00091:p2 .
 
 t00091:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y8M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-08-31"^^xsd:date ;
   :dateOfDeath "1968-05-15"^^xsd:date ;
   :nam "WILHELMINA H.P.M. MAST" ;

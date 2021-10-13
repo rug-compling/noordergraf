@@ -14,9 +14,9 @@ tomb:t00443
     ] ;
     :nd "+53.4792+006.1601"^^ll:
   ] ;
-  :subject t00443:p1, t00443:p2 ;
   :ref t00443:v1 ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00443:p1, t00443:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -28,6 +28,10 @@ tomb:t00443
 
 t00443:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y1M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-04-13"^^xsd:date ;
   :dateOfDeath "1939-06-01"^^xsd:date ;
   :nam "RENSCHE TRIEMSTRA" ;

@@ -14,9 +14,9 @@ tomb:t00104
     ] ;
     :nd "+53.1908+006.5924"^^ll:
   ] ;
-  :subject t00104:p1, t00104:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:gr9722SNgroningen ;
+  :subject t00104:p1, t00104:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -38,6 +38,10 @@ t00104:c2
 
 t00104:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y10M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-12-24"^^xsd:date ;
   :dateOfDeath "1938-11-15"^^xsd:date ;
   :nam "JAN POMPER" ;
@@ -50,6 +54,10 @@ t00104:p1
 
 t00104:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y4M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1867-12-06"^^xsd:date ;
   :dateOfDeath "1949-04-29"^^xsd:date ;
   :nam "ALBERDINA VEENEMA" ;

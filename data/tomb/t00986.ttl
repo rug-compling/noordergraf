@@ -14,11 +14,15 @@ tomb:t00986
     ] ;
     :nd "+53.1910+006.5932"^^ll:
   ] ;
-  :subject t00986:p1, t00986:p2, t00986:p3, t00986:p4 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00986:p1, t00986:p2, t00986:p3, t00986:p4 .
 
 t00986:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y7M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1847-07-06"^^xsd:date ;
   :dateOfDeath "1938-02-23"^^xsd:date ;
   :nam "GEERTRUIDA JOHANNA VAN ENGEN" ;
@@ -34,6 +38,10 @@ t00986:p2
 
 t00986:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y8M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-07-24"^^xsd:date ;
   :dateOfDeath "1964-03-27"^^xsd:date ;
   :nam "GERARDIENA KOETSIER" ;
@@ -45,6 +53,10 @@ t00986:p3
 
 t00986:p4
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y11M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-08-10"^^xsd:date ;
   :dateOfDeath "1971-07-25"^^xsd:date ;
   :nam "HARM PIETER MAKKEN" .

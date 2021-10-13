@@ -14,15 +14,19 @@ tomb:t01010
     ] ;
     :nd "+53.3085+006.5754"^^ll:
   ] ;
-  :subject t01010:p1 ;
   :quo "LIFE IS SHORT \\ DEATH IS NOUGHT \\ LOVE IS ALL"@eng ;
   :site site:gr9781THbedum ;
+  :subject t01010:p1 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t01010:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y10M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1949-02-01"^^xsd:date ;
   :dateOfDeath "2000-12-19"^^xsd:date ;
   :nam "MARJA ROZEMOND" .

@@ -14,9 +14,9 @@ tomb:t00701
     ] ;
     :nd "+52.7813+006.9011"^^ll:
   ] ;
-  :subject t00701:p1 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00701:p1 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00701:c1
 
 t00701:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y9M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-02-12"^^xsd:date ;
   :dateOfDeath "1953-11-22"^^xsd:date ;
   :nam "HINDRIK SCHUTRUPS" ;

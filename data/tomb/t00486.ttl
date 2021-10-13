@@ -14,9 +14,9 @@ tomb:t00486
     ] ;
     :nd "+53.2066+005.7691"^^ll:
   ] ;
-  :subject t00486:p1, t00486:p2, t00486:p3 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00486:p1, t00486:p2, t00486:p3 ;
   :sym [
     a :Cross.n.03
   ] .
@@ -28,6 +28,10 @@ t00486:c2
 
 t00486:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P41Y11M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1846-04-26"^^xsd:date ;
   :dateOfDeath "1888-04-06"^^xsd:date ;
   :nam "MARIA BLEEKER" ;
@@ -44,6 +48,10 @@ t00486:p1
 
 t00486:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y9M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1837-08-24"^^xsd:date ;
   :dateOfDeath "1906-06-02"^^xsd:date ;
   :nam "FRANCISCUS BARTHOLOMEUS HOFSTEDE" ;

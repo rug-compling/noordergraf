@@ -14,9 +14,9 @@ tomb:t00411
     ] ;
     :nd "+53.0793+006.5715"^^ll:
   ] ;
-  :subject t00411:p1, t00411:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
+  :subject t00411:p1, t00411:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -28,6 +28,10 @@ t00411:c2
 
 t00411:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y3M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-06-01"^^xsd:date ;
   :dateOfDeath "1959-09-10"^^xsd:date ;
   :nam "JANTJE NIEBOER" ;
@@ -46,6 +50,10 @@ t00411:p1
 
 t00411:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y3M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-10-16"^^xsd:date ;
   :dateOfDeath "1970-01-29"^^xsd:date ;
   :nam "MEINT DIJKSTRA" ;

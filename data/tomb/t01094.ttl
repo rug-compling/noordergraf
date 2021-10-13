@@ -14,8 +14,8 @@ tomb:t01094
     ] ;
     :nd "+53.2437+006.8640"^^ll:
   ] ;
-  :subject t01094:p1, t01094:p2 ;
-  :site site:gr9628TKsiddeburen .
+  :site site:gr9628TKsiddeburen ;
+  :subject t01094:p1, t01094:p2 .
 
 t01094:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t01094:c1
 
 t01094:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y5M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-08-04"^^xsd:date ;
   :dateOfDeath "1969-01-12"^^xsd:date ;
   :nam "ELIEZABETH BOS" ;
@@ -36,6 +40,10 @@ t01094:p1
 
 t01094:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-12-26"^^xsd:date ;
   :dateOfDeath "1970-01-21"^^xsd:date ;
   :nam "GEERT DE WILDE" ;

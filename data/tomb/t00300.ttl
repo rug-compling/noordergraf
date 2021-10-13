@@ -18,8 +18,8 @@ tomb:t00300
     ] ;
     :nd "+52.7155+006.4741"^^ll:
   ] ;
-  :subject t00300:p1, t00300:p2 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00300:p1, t00300:p2 ;
   :sym [
     a :Flower.n.01
   ] .
@@ -31,6 +31,10 @@ t00300:c1
 
 t00300:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y4M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-10-03"^^xsd:date ;
   :dateOfDeath "1937-02-23"^^xsd:date ;
   :nam "ROELOFJE REMKEN" ;
@@ -39,6 +43,10 @@ t00300:p1
 
 t00300:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y8M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-05-31"^^xsd:date ;
   :dateOfDeath "1948-02-21"^^xsd:date ;
   :nam "JAN BORK" ;

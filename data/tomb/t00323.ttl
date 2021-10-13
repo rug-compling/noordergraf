@@ -14,9 +14,9 @@ tomb:t00323
     ] ;
     :nd "+52.7157+006.4739"^^ll:
   ] ;
-  :subject t00323:p1, t00323:p2 ;
   :ref t00323:v1 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00323:p1, t00323:p2 ;
   :sym [
     a :Flower.n.01
   ] .
@@ -28,6 +28,10 @@ t00323:c1
 
 t00323:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P61Y3M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-11-14"^^xsd:date ;
   :dateOfDeath "1935-02-26"^^xsd:date ;
   :nam "GEERTRUIDA JUT" ;
@@ -39,6 +43,10 @@ t00323:p1
 
 t00323:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y3M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-12-29"^^xsd:date ;
   :dateOfDeath "1957-04-06"^^xsd:date ;
   :nam "OTTO METSELAAR" ;
@@ -50,11 +58,11 @@ t00323:p2
 
 t00323:v1
   a :Quote ;
-  :text "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN"@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :John.n.05 ;
     :verse "2"
-  ] .
+  ] ;
+  :text "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN"@nld .
 

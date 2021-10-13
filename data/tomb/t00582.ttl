@@ -14,21 +14,25 @@ tomb:t00582
     ] ;
     :nd "+53.3354+006.5128"^^ll:
   ] ;
-  :subject t00582:p1, t00582:p2, t00582:p3 ;
   :ref [
     a :Quote ;
-    :text "ps.118.17.^2 18.^2 19.^2 20" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 118 ;
+      :part :Psalm.n.01 ;
       :verse "17-20"
-    ]
+    ] ;
+    :text "ps.118.17.^2 18.^2 19.^2 20"
   ] ;
-  :site site:gr9951STwinsum .
+  :site site:gr9951STwinsum ;
+  :subject t00582:p1, t00582:p2, t00582:p3 .
 
 t00582:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y6M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1843-11-23"^^xsd:date ;
   :dateOfDeath "1917-05-26"^^xsd:date ;
   :nam "GEERT BIERLING" ;

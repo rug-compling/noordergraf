@@ -14,9 +14,9 @@ tomb:t00190
     ] ;
     :nd "+53.1905+006.5925"^^ll:
   ] ;
-  :subject t00190:p1, t00190:p2, t00190:p3, t00190:p4 ;
   :quo "RUST ZACHT" ;
   :site site:gr9722SNgroningen ;
+  :subject t00190:p1, t00190:p2, t00190:p3, t00190:p4 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -28,6 +28,10 @@ tomb:t00190
 
 t00190:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P61Y4M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-03-05"^^xsd:date ;
   :dateOfDeath "1937-07-19"^^xsd:date ;
   :nam "HILKE DIETERMAN" ;
@@ -47,19 +51,27 @@ t00190:p2
 
 t00190:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P45Y4M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1909-12-03"^^xsd:date ;
   :dateOfDeath "1955-04-22"^^xsd:date ;
   :nam "J.K. RUNHARDT" ;
   :rol [
-    a :Husband.n.01 ;
+    a :Spouse.n.01 ;
     :tgt t00190:p4
   ], [
-    a :Spouse.n.01 ;
+    a :Husband.n.01 ;
     :tgt t00190:p4
   ] .
 
 t00190:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y5M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-08-01"^^xsd:date ;
   :dateOfDeath "1999-01-21"^^xsd:date ;
   :nam "M.D. SMIT", "MARGARETHA D. RUNHARDT-SMIT" .

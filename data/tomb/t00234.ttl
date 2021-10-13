@@ -14,12 +14,16 @@ tomb:t00234
     ] ;
     :nd "+53.2225+006.6366"^^ll:
   ] ;
-  :subject t00234:p1, t00234:p2 ;
   :quo "EEN TEERBEMINDE ZOON, EEN ECHTGENOOT EN VADER, GEROEPEN VOOR GODS TROON ..." ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00234:p1, t00234:p2 .
 
 t00234:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P37Y6M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1837-10-24"^^xsd:date ;
   :dateOfDeath "1875-05-01"^^xsd:date ;
   :nam "LUITJE ABELS VAN DIJKEN" ;

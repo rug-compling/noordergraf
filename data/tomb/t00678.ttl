@@ -14,12 +14,16 @@ tomb:t00678
     ] ;
     :nd "+53.0687+005.5221"^^ll:
   ] ;
-  :subject t00678:p1, t00678:p2 ;
   :ref t00678:v2 ;
-  :site site:fr8701DWbolsward .
+  :site site:fr8701DWbolsward ;
+  :subject t00678:p1, t00678:p2 .
 
 t00678:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y9M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1905-08-27"^^xsd:date ;
   :dateOfDeath "1974-06-07"^^xsd:date ;
   :nam "DATE DIJKSTRA" ;
@@ -34,6 +38,10 @@ t00678:p1
 
 t00678:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y5M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1908-09-19"^^xsd:date ;
   :dateOfDeath "1989-03-15"^^xsd:date ;
   :nam "BERBER BROUWER" ;

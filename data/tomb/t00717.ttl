@@ -14,8 +14,8 @@ tomb:t00717
     ] ;
     :nd "+52.7807+006.8997"^^ll:
   ] ;
-  :subject t00717:p1, t00717:p2, t00717:p3 ;
-  :site site:dr7811HEemmen .
+  :site site:dr7811HEemmen ;
+  :subject t00717:p1, t00717:p2, t00717:p3 .
 
 t00717:c1
   a :City.n.01 ;
@@ -29,6 +29,10 @@ t00717:c2
 
 t00717:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y6M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1885-08-03"^^xsd:date ;
   :dateOfDeath "1948-03-02"^^xsd:date ;
   :nam "DANIEL JAN VAN DE WEGE" ;
@@ -46,6 +50,10 @@ t00717:p2
 
 t00717:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y2M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-06-18"^^xsd:date ;
   :dateOfDeath "1980-09-13"^^xsd:date ;
   :nam "SUZANNA DE WITTE" ;

@@ -14,11 +14,15 @@ tomb:t00315
     ] ;
     :nd "+52.7158+006.4731"^^ll:
   ] ;
-  :subject t00315:p1, t00315:p2 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00315:p1, t00315:p2 .
 
 t00315:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1834-04-19"^^xsd:date ;
   :dateOfDeath "1903-05-06"^^xsd:date ;
   :nam "B. VELDKAMP" ;
@@ -29,6 +33,10 @@ t00315:p1
 
 t00315:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y9M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1841-02-24"^^xsd:date ;
   :dateOfDeath "1931-12-19"^^xsd:date ;
   :nam "J. VELDKAMP-HALFMOUW" .

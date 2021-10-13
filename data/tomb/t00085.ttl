@@ -14,11 +14,15 @@ tomb:t00085
     ] ;
     :nd "+53.2035+006.5731"^^ll:
   ] ;
-  :subject t00085:p1, t00085:p2 ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00085:p1, t00085:p2 .
 
 t00085:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y8M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-01-13"^^xsd:date ;
   :dateOfDeath "1964-09-26"^^xsd:date ;
   :nam "GERHARDUS HUNDERMAN" ;
@@ -28,6 +32,10 @@ t00085:p1
 
 t00085:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y6M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1902-02-28"^^xsd:date ;
   :dateOfDeath "1964-09-26"^^xsd:date ;
   :nam "TRIJNTJE HUYGENS" ;

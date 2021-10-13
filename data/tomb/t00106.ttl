@@ -14,8 +14,8 @@ tomb:t00106
     ] ;
     :nd "+53.1906+006.5925"^^ll:
   ] ;
-  :subject t00106:p1, t00106:p2, t00106:p3 ;
   :site site:gr9722SNgroningen ;
+  :subject t00106:p1, t00106:p2, t00106:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00106
 
 t00106:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y3M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-03-06"^^xsd:date ;
   :dateOfDeath "1937-06-18"^^xsd:date ;
   :nam "T.F. THIJSSEN" ;
@@ -37,6 +41,10 @@ t00106:p1
 
 t00106:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y7M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-09-02"^^xsd:date ;
   :dateOfDeath "1950-04-03"^^xsd:date ;
   :nam "GEBBINA KATHARINA THIJSSEN" ;
@@ -47,6 +55,10 @@ t00106:p2
 
 t00106:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y9M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1877-11-17"^^xsd:date ;
   :dateOfDeath "1959-09-10"^^xsd:date ;
   :nam "KLAAS MULDER" .

@@ -14,18 +14,26 @@ tomb:t00934
     ] ;
     :nd "+53.2393+006.5517"^^ll:
   ] ;
-  :subject t00934:p1, t00934:p2, t00934:p3 ;
   :ref t00934:v1 ;
-  :site site:gr9741GHgroningen .
+  :site site:gr9741GHgroningen ;
+  :subject t00934:p1, t00934:p2, t00934:p3 .
 
 t00934:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P4Y1M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1952-09-27"^^xsd:date ;
   :dateOfDeath "1956-11-13"^^xsd:date ;
   :nam "CATIE SNIP" .
 
 t00934:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y2M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1914-08-13"^^xsd:date ;
   :dateOfDeath "1997-11-05"^^xsd:date ;
   :nam "SJACOBUS SNIP" ;
@@ -36,6 +44,10 @@ t00934:p2
 
 t00934:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y10M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1916-01-07"^^xsd:date ;
   :dateOfDeath "2000-11-23"^^xsd:date ;
   :nam "GEESJE SNIP-LEEUWE" ;
@@ -46,11 +58,11 @@ t00934:p3
 
 t00934:v1
   a :Quote ;
-  :text "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN"@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :John.n.05 ;
     :verse "2"
-  ] .
+  ] ;
+  :text "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN"@nld .
 

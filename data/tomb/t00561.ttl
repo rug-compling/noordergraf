@@ -14,8 +14,8 @@ tomb:t00561
     ] ;
     :nd "+53.1044+006.8744"^^ll:
   ] ;
-  :subject t00561:p1, t00561:p2, t00561:p3 ;
-  :site site:gr9641ANveendam .
+  :site site:gr9641ANveendam ;
+  :subject t00561:p1, t00561:p2, t00561:p3 .
 
 t00561:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00561:c1
 
 t00561:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-01-04"^^xsd:date ;
   :dateOfDeath "1933-01-30"^^xsd:date ;
   :nam "DERK STUTVOET" ;
@@ -35,13 +39,13 @@ t00561:p1
   ] ;
   :ref [
     a :Quote ;
-    :text "rom. 6 : 23." ;
     :reference [
       a :BibleReference ;
       :chapter 6 ;
       :part :Epistle_to_the_Romans.n.04 ;
       :verse "23"
-    ]
+    ] ;
+    :text "rom. 6 : 23."
   ] ;
   :rol t00561:r1, [
     a :Widower.n.01 ;
@@ -51,6 +55,10 @@ t00561:p1
 
 t00561:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P58Y15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1858-12-01"^^xsd:date ;
   :dateOfDeath "1916-12-16"^^xsd:date ;
   :nam "AALTJE LOOTS" ;
@@ -58,13 +66,13 @@ t00561:p2
   :placeOfDeath t00561:c1 ;
   :ref [
     a :Quote ;
-    :text "Ps. 103:15-22." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 103 ;
+      :part :Psalm.n.01 ;
       :verse "15-22"
-    ]
+    ] ;
+    :text "Ps. 103:15-22."
   ] .
 
 t00561:p3

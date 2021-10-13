@@ -14,18 +14,26 @@ tomb:t00687
     ] ;
     :nd "+53.0673+005.5239"^^ll:
   ] ;
-  :subject t00687:p1, t00687:p2 ;
   :quo "DAT IK ER ZIJN MOCHT \\ STA TE BOEK ALS WONDER"@nld ;
-  :site site:fr8701DWbolsward .
+  :site site:fr8701DWbolsward ;
+  :subject t00687:p1, t00687:p2 .
 
 t00687:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y3M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-03-07"^^xsd:date ;
   :dateOfDeath "1980-07-01"^^xsd:date ;
   :nam "WILLEM BOSMAN" .
 
 t00687:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y7M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1917-07-11"^^xsd:date ;
   :dateOfDeath "2006-02-15"^^xsd:date ;
   :nam "JETSCHE VRIESWIJK" .

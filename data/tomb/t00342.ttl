@@ -14,8 +14,8 @@ tomb:t00342
     ] ;
     :nd "+52.7158+006.4731"^^ll:
   ] ;
-  :subject t00342:p1, t00342:p2, t00342:p3 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00342:p1, t00342:p2, t00342:p3 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00342:c1
 
 t00342:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y9M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1845-04-22"^^xsd:date ;
   :dateOfDeath "1929-02-19"^^xsd:date ;
   :nam "ROELOFJE BRUNSTING" ;
@@ -47,6 +51,10 @@ t00342:p2
 
 t00342:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y10M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1885-05-06"^^xsd:date ;
   :dateOfDeath "1963-04-05"^^xsd:date ;
   :nam "W.A. VOS" ;

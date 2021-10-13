@@ -14,8 +14,8 @@ tomb:t00576
     ] ;
     :nd "+53.3336+006.5137"^^ll:
   ] ;
-  :subject t00576:p1, t00576:p2, t00576:p3 ;
-  :site site:gr9951STwinsum .
+  :site site:gr9951STwinsum ;
+  :subject t00576:p1, t00576:p2, t00576:p3 .
 
 t00576:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00576:c1
 
 t00576:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P33Y2M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1814-06-03"^^xsd:date ;
   :dateOfDeath "1847-08-17"^^xsd:date ;
   :nam "KLAAS M. TALENS" ;

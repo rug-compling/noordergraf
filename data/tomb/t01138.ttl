@@ -14,8 +14,8 @@ tomb:t01138
     ] ;
     :nd "+53.2857+006.3247"^^ll:
   ] ;
-  :subject t01138:p1, t01138:p2, t01138:p3 ;
   :site site:gr9881PBkommerzijl ;
+  :subject t01138:p1, t01138:p2, t01138:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt t01138:s2, t01138:s4, [
@@ -25,6 +25,10 @@ tomb:t01138
 
 t01138:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P2Y15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-05-19"^^xsd:date ;
   :dateOfDeath "1870-06-03"^^xsd:date ;
   :nam "HEERTJE GAAIKEMA" ;

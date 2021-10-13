@@ -14,15 +14,19 @@ tomb:t00417
     ] ;
     :nd "+53.0795+006.5729"^^ll:
   ] ;
-  :subject t00417:p1, t00417:p2, t00417:p3 ;
   :quo "RUST ZACHT" ;
   :site site:dr9481CGvries ;
+  :subject t00417:p1, t00417:p2, t00417:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00417:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y7M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-07-23"^^xsd:date ;
   :dateOfDeath "1953-03-13"^^xsd:date ;
   :nam "WILLEMTJE ARENDS" ;

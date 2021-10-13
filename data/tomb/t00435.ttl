@@ -14,15 +14,15 @@ tomb:t00435
     ] ;
     :nd "+53.4789+006.1605"^^ll:
   ] ;
-  :subject t00435:p1, t00435:p2 ;
   :ref [
     a :Quote ;
-    :text "gez. 199" ;
     :reference [
       a :BibleReference
-    ]
+    ] ;
+    :text "gez. 199"
   ] ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00435:p1, t00435:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -34,6 +34,10 @@ t00435:c1
 
 t00435:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y3M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-07-08"^^xsd:date ;
   :dateOfDeath "1948-10-20"^^xsd:date ;
   :nam "THOMAS KLONTJE" ;

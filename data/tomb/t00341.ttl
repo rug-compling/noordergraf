@@ -14,30 +14,38 @@ tomb:t00341
     ] ;
     :nd "+52.7157+006.4731"^^ll:
   ] ;
-  :subject t00341:p1, t00341:p2, t00341:p3, t00341:p4 ;
   :ref [
     a :Quote ;
-    :text "ps. 103:8." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 103 ;
+      :part :Psalm.n.01 ;
       :verse "8"
-    ]
+    ] ;
+    :text "ps. 103:8."
   ] ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00341:p1, t00341:p2, t00341:p3, t00341:p4 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00341:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P21Y3M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-12-03"^^xsd:date ;
   :dateOfDeath "1903-03-29"^^xsd:date ;
   :nam "EVERT BOOIJ" .
 
 t00341:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P14Y9M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-07-10"^^xsd:date ;
   :dateOfDeath "1905-04-29"^^xsd:date ;
   :nam "MAGARETHA BOOIJ" .

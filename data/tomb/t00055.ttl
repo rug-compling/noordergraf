@@ -14,12 +14,16 @@ tomb:t00055
     ] ;
     :nd "+53.1630+006.6132"^^ll:
   ] ;
-  :subject t00055:p1 ;
   :ref t00055:v1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00055:p1 .
 
 t00055:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1958-12-08"^^xsd:date ;
   :dateOfDeath "1958-12-25"^^xsd:date ;
   :nam "GERARDUS" .
@@ -28,8 +32,8 @@ t00055:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Job.n.12 ;
     :chapter 1 ;
+    :part :Job.n.12 ;
     :verse "21B"
   ] .
 

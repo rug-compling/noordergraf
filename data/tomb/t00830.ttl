@@ -14,9 +14,9 @@ tomb:t00830
     ] ;
     :nd "+53.2305+006.5509"^^ll:
   ] ;
-  :subject t00830:p1, t00830:p2 ;
   :quo "FEMME EPOUSE MERE \\ ELLE FUT LA DROITURE \\ ET LA SINCERITE MEMEMS \\ QU IL SOII PARDONNE \\ CEUZ QUI LONT MECONNUI \\ ET A CEUX AUSSI \\ PAR QUI ELLE A SOUFFERT"@fra ;
   :site site:gr9741ACgroningen ;
+  :subject t00830:p1, t00830:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -25,12 +25,20 @@ tomb:t00830
 
 t00830:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y6M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-09-18"^^xsd:date ;
   :dateOfDeath "1933-03-30"^^xsd:date ;
   :nam "LOUISE MARIA ELISABETH BOULAN-VAN WIJNGAERDI" .
 
 t00830:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y6M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-01-03"^^xsd:date ;
   :dateOfDeath "1947-07-25"^^xsd:date ;
   :nam "EMILE BOULAN" .

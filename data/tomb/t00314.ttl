@@ -14,11 +14,15 @@ tomb:t00314
     ] ;
     :nd "+52.7156+006.4733"^^ll:
   ] ;
-  :subject t00314:p1, t00314:p2, t00314:p3 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00314:p1, t00314:p2, t00314:p3 .
 
 t00314:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1856"^^xsd:gYear ;
   :dateOfDeath "1918"^^xsd:gYear ;
   :nam "H. SMEMAN" ;
@@ -29,12 +33,20 @@ t00314:p1
 
 t00314:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1856"^^xsd:gYear ;
   :dateOfDeath "1918"^^xsd:gYear ;
   :nam "E. SMEMAN-EENKEMA" .
 
 t00314:p3
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P-10Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1895"^^xsd:gYear ;
   :dateOfDeath "1885"^^xsd:gYear ;
   :nam "H.C.H. SMEMAN" .

@@ -14,11 +14,15 @@ tomb:t00879
     ] ;
     :nd "+52.7198+006.8479"^^ll:
   ] ;
-  :subject t00879:p1, t00879:p2 ;
-  :site site:dr7844TCveenoord .
+  :site site:dr7844TCveenoord ;
+  :subject t00879:p1, t00879:p2 .
 
 t00879:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y9M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-12-12"^^xsd:date ;
   :dateOfDeath "1955-10-08"^^xsd:date ;
   :nam "HENDRIK KOOPS" ;
@@ -29,6 +33,10 @@ t00879:p1
 
 t00879:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y3M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1887-08-27"^^xsd:date ;
   :dateOfDeath "1962-12-25"^^xsd:date ;
   :nam "ANNA BUNING" .

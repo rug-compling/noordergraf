@@ -2,6 +2,7 @@
 
 tomb:t00621
   a :Tomb ;
+  :creator t00621:p3 ;
   :image [
     dc:date "2019-11-23T10:01:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,15 +15,18 @@ tomb:t00621
     ] ;
     :nd "+53.1643+006.7541"^^ll:
   ] ;
-  :subject t00621:p1, t00621:p2 ;
-  :creator t00621:p3 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00621:p1, t00621:p2 ;
   :sym [
     a :Hand.n.01
   ] .
 
 t00621:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1804-03-11"^^xsd:date ;
   :dateOfDeath "1874-04-01"^^xsd:date ;
   :nam "ELTJO HARMS TIEDENS" ;
@@ -38,3 +42,4 @@ t00621:p2
 t00621:p3
   a :Creator ;
   :name "L. TER BEEK" .
+

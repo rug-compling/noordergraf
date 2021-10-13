@@ -14,8 +14,8 @@ tomb:t00223
     ] ;
     :nd "+53.2226+006.6358"^^ll:
   ] ;
-  :subject t00223:p1, t00223:p2 ;
   :site site:gr9723EWgroningen ;
+  :subject t00223:p1, t00223:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00223
 
 t00223:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y8M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-08-07"^^xsd:date ;
   :dateOfDeath "1945-04-15"^^xsd:date ;
   :nam "FREDERIKA WITKOP" ;

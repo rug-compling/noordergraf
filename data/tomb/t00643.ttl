@@ -14,11 +14,15 @@ tomb:t00643
     ] ;
     :nd "+53.2089+006.6479"^^ll:
   ] ;
-  :subject t00643:p1 ;
-  :site site:gr9723EJgroningen .
+  :site site:gr9723EJgroningen ;
+  :subject t00643:p1 .
 
 t00643:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P32Y6M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-04-02"^^xsd:date ;
   :dateOfDeath "1927-10-11"^^xsd:date ;
   :nam "MEINDERT KLING" .

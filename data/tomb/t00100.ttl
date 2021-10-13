@@ -14,14 +14,18 @@ tomb:t00100
     ] ;
     :nd "+53.2062+006.5733"^^ll:
   ] ;
-  :subject t00100:p1, t00100:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00100:p1, t00100:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00100:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y4M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1858-09-25"^^xsd:date ;
   :dateOfDeath "1913-01-28"^^xsd:date ;
   :nam "JOHAN ADRIAAN FEITH" ;
@@ -42,6 +46,10 @@ t00100:p1
 
 t00100:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y1M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-02-05"^^xsd:date ;
   :dateOfDeath "1935-03-06"^^xsd:date ;
   :nam "HENRIËTTE PAULINE GOCKINGA" ;

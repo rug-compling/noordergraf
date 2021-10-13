@@ -14,11 +14,15 @@ tomb:t00171
     ] ;
     :nd "+53.1904+006.5934"^^ll:
   ] ;
-  :subject t00171:p1 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00171:p1 .
 
 t00171:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P53Y2M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-05-29"^^xsd:date ;
   :dateOfDeath "1926-08-10"^^xsd:date ;
   :nam "ERNST HENDRIK SPRENGER" ;

@@ -14,11 +14,15 @@ tomb:t00101
     ] ;
     :nd "+53.1904+006.5944"^^ll:
   ] ;
-  :subject t00101:p1 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00101:p1 .
 
 t00101:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y7M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-09-14"^^xsd:date ;
   :dateOfDeath "1927-04-28"^^xsd:date ;
   :nam "CORNELIS VAN DER VALK" ;

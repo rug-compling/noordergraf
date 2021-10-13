@@ -14,12 +14,16 @@ tomb:t00141
     ] ;
     :nd "+53.2065+006.5694"^^ll:
   ] ;
-  :subject t00141:p1, t00141:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00141:p1, t00141:p2 .
 
 t00141:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y3M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-08-23"^^xsd:date ;
   :dateOfDeath "1954-11-25"^^xsd:date ;
   :nam "HARM GOOYERT" ;
@@ -32,6 +36,10 @@ t00141:p1
 
 t00141:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y5M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-04-15"^^xsd:date ;
   :dateOfDeath "1967-09-16"^^xsd:date ;
   :nam "HINDERKJE STEENHUIS" ;

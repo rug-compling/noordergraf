@@ -14,12 +14,16 @@ tomb:t01039
     ] ;
     :nd "+53.2398+006.4101"^^ll:
   ] ;
-  :subject t01039:p1 ;
   :ref t01039:v1 ;
-  :site site:gr9801CAzuidhorn .
+  :site site:gr9801CAzuidhorn ;
+  :subject t01039:p1 .
 
 t01039:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P17Y10M"^^xsd:duration
+  ] ;
   :dateOfBirth "1952-11-24"^^xsd:date ;
   :dateOfDeath "1970-09-24"^^xsd:date ;
   :nam "FERDINAND JOHANNES VAN DIJKEN" .

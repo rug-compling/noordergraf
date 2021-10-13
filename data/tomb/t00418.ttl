@@ -14,32 +14,36 @@ tomb:t00418
     ] ;
     :nd "+53.0797+006.5731"^^ll:
   ] ;
-  :subject t00418:p1 ;
   :site site:dr9481CGvries ;
+  :subject t00418:p1 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
-      a :Ribbon.n.01
+      a :Bird.n.01
     ], [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ]
-  ], [
-    a :Composite.n.01 ;
-    :prt [
       a :Nest.n.01
     ], [
       a :Bird.n.01
     ], [
       a :Flower.n.01
+    ]
+  ], [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
     ], [
-      a :Bird.n.01
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
     ]
   ] .
 
 t00418:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P2Y7M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-01-15"^^xsd:date ;
   :dateOfDeath "1909-08-22"^^xsd:date ;
   :nam "EGBERDINA ZUIDEVELD" ;

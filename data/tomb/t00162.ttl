@@ -14,8 +14,8 @@ tomb:t00162
     ] ;
     :nd "+53.2058+006.5704"^^ll:
   ] ;
-  :subject t00162:p1, t00162:p2, t00162:p3 ;
   :site site:gr9725ACgroningen ;
+  :subject t00162:p1, t00162:p2, t00162:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,12 +27,20 @@ tomb:t00162
 
 t00162:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P38Y6M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-04-06"^^xsd:date ;
   :dateOfDeath "1929-10-19"^^xsd:date ;
   :nam "JOHANNES JAGER" .
 
 t00162:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y2M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1882-02-27"^^xsd:date ;
   :dateOfDeath "1950-05-18"^^xsd:date ;
   :nam "JAN JAGER" ;
@@ -43,6 +51,10 @@ t00162:p2
 
 t00162:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y2M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-12-13"^^xsd:date ;
   :dateOfDeath "1951-02-20"^^xsd:date ;
   :nam "ANTJE BULTJE" .

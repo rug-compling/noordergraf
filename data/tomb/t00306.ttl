@@ -14,11 +14,15 @@ tomb:t00306
     ] ;
     :nd "+52.7159+006.4741"^^ll:
   ] ;
-  :subject t00306:p1 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00306:p1 .
 
 t00306:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P21Y1M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1919-04-04"^^xsd:date ;
   :dateOfDeath "1940-05-12"^^xsd:date ;
   :nam "KOOS WARMELS" ;

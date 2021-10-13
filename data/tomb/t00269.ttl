@@ -14,11 +14,15 @@ tomb:t00269
     ] ;
     :nd "+53.2228+006.6380"^^ll:
   ] ;
-  :subject t00269:p1, t00269:p2 ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00269:p1, t00269:p2 .
 
 t00269:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P53Y1M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1917-05-31"^^xsd:date ;
   :dateOfDeath "1970-07-15"^^xsd:date ;
   :nam "GRIETJE A.C. EGGENS" ;

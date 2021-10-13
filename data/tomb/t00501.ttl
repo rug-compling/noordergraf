@@ -14,8 +14,8 @@ tomb:t00501
     ] ;
     :nd "+53.2091+005.7906"^^ll:
   ] ;
-  :subject t00501:p1, t00501:p2 ;
   :site site:fr8917AVleeuwarden ;
+  :subject t00501:p1, t00501:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -32,6 +32,10 @@ t00501:c2
 
 t00501:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y11M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1855-05-24"^^xsd:date ;
   :dateOfDeath "1918-05-01"^^xsd:date ;
   :nam "JOHANNES FRANSBERGEN" ;
@@ -44,6 +48,10 @@ t00501:p1
 
 t00501:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y3M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1847-12-10"^^xsd:date ;
   :dateOfDeath "1932-03-25"^^xsd:date ;
   :nam "MARIA LOUISA ELDERMANS" ;

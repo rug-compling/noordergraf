@@ -14,15 +14,19 @@ tomb:t00878
     ] ;
     :nd "+52.7195+006.8467"^^ll:
   ] ;
-  :subject t00878:p1, t00878:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00878:p1, t00878:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00878:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y10M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1909-06-14"^^xsd:date ;
   :dateOfDeath "1961-04-17"^^xsd:date ;
   :nam "JANTINA FRERIKS" ;

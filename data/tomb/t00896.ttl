@@ -14,8 +14,8 @@ tomb:t00896
     ] ;
     :nd "+53.1723+006.3614"^^ll:
   ] ;
-  :subject t00896:p1, t00896:p2 ;
   :site site:gr9351RLtolbert ;
+  :subject t00896:p1, t00896:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t00896
 
 t00896:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1799-03-04"^^xsd:date ;
   :dateOfDeath "1885-03-22"^^xsd:date ;
   :nam "SARA DOEDES POL" ;

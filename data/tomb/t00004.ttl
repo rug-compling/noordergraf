@@ -14,8 +14,8 @@ tomb:t00004
     ] ;
     :nd "+53.1902+006.5932"^^ll:
   ] ;
-  :subject t00004:p1, t00004:p2, t00004:p3 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00004:p1, t00004:p2, t00004:p3 .
 
 t00004:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00004:c1
 
 t00004:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y9M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-10-27"^^xsd:date ;
   :dateOfDeath "1933-07-28"^^xsd:date ;
   :nam "TIETJE SPOELMAN" ;
@@ -37,6 +41,10 @@ t00004:p1
 
 t00004:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-04-17"^^xsd:date ;
   :dateOfDeath "1935-05-14"^^xsd:date ;
   :nam "JOHANNES SPOELMAN" ;
@@ -53,6 +61,10 @@ t00004:p2
 
 t00004:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y11M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-10-17"^^xsd:date ;
   :dateOfDeath "1963-09-28"^^xsd:date ;
   :nam "F. SPOELMAN-PENNINGA", "FROUKTJE PENNINGA" ;

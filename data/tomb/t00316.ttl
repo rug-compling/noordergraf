@@ -14,8 +14,8 @@ tomb:t00316
     ] ;
     :nd "+52.7157+006.4730"^^ll:
   ] ;
-  :subject t00316:p1 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00316:p1 .
 
 t00316:c1
   a :Town.n.01 ;
@@ -24,6 +24,10 @@ t00316:c1
 
 t00316:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P30Y2M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-09-05"^^xsd:date ;
   :dateOfDeath "1903-11-26"^^xsd:date ;
   :nam "REMMELT VAN HEES" ;

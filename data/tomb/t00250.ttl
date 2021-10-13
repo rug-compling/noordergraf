@@ -14,11 +14,15 @@ tomb:t00250
     ] ;
     :nd "+53.2064+006.5720"^^ll:
   ] ;
-  :subject t00250:p1, t00250:p2, t00250:p3, t00250:p4 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00250:p1, t00250:p2, t00250:p3, t00250:p4 .
 
 t00250:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P32Y10M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1841-06-17"^^xsd:date ;
   :dateOfDeath "1874-05-10"^^xsd:date ;
   :nam "EGBERTIEN BOVENSCHULTE" ;
@@ -29,6 +33,10 @@ t00250:p1
 
 t00250:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P32Y10M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1841-06-17"^^xsd:date ;
   :dateOfDeath "1874-05-10"^^xsd:date ;
   :nam "JANTJE NIEWOLD" ;
@@ -39,12 +47,20 @@ t00250:p2
 
 t00250:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P87Y6M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1841-09-02"^^xsd:date ;
   :dateOfDeath "1929-03-14"^^xsd:date ;
   :nam "BEREND RICHIE" .
 
 t00250:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y5M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-11-22"^^xsd:date ;
   :dateOfDeath "1937-05-01"^^xsd:date ;
   :nam "KOOSJE RICHIE" .

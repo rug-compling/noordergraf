@@ -14,15 +14,19 @@ tomb:t00829
     ] ;
     :nd "+53.2299+006.5495"^^ll:
   ] ;
-  :subject t00829:p1, t00829:p2 ;
   :ref t00829:v1 ;
   :site site:gr9741ACgroningen ;
+  :subject t00829:p1, t00829:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00829:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P46Y7M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1858-04-19"^^xsd:date ;
   :dateOfDeath "1904-12-07"^^xsd:date ;
   :nam "CATHARINA GAZENDAM" ;
@@ -33,17 +37,21 @@ t00829:p1
 
 t00829:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y10M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1852-04-10"^^xsd:date ;
   :dateOfDeath "1936-02-11"^^xsd:date ;
   :nam "JAN SNEIJER" .
 
 t00829:v1
   a :Quote ;
-  :text "IK LEEF EN GIJ ZULT LEVEN"@nld ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :John.n.05 ;
     :verse "19"
-  ] .
+  ] ;
+  :text "IK LEEF EN GIJ ZULT LEVEN"@nld .
 

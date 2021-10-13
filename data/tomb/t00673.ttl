@@ -14,19 +14,19 @@ tomb:t00673
     ] ;
     :nd "+53.0681+005.5220"^^ll:
   ] ;
-  :subject t00673:p1, t00673:p2 ;
   :ref [
     a :Quote ;
-    :text "pred. 12:1:8"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Book_of_Ecclesiastes.n.01 ;
       :chapter 12 ;
-      :verse "1-8" ;
-      :scripture <https://www.bible.com/bible/1990/ECC.12.1-8>
-    ]
+      :part :Book_of_Ecclesiastes.n.01 ;
+      :scripture <https://www.bible.com/bible/1990/ECC.12.1-8> ;
+      :verse "1-8"
+    ] ;
+    :text "pred. 12:1:8"@nld
   ] ;
   :site site:fr8701DWbolsward ;
+  :subject t00673:p1, t00673:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -38,6 +38,10 @@ t00673:c2
 
 t00673:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y4M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-09-28"^^xsd:date ;
   :dateOfDeath "1960-02-17"^^xsd:date ;
   :nam "TJERK REITSMA" ;
@@ -50,12 +54,16 @@ t00673:p1
   :rol [
     a :Spouse.n.01 ;
     :tgt t00673:p2
-  ] , [
+  ], [
     a :Parent.n.01
   ] .
 
 t00673:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y4M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-03-04"^^xsd:date ;
   :dateOfDeath "1966-07-20"^^xsd:date ;
   :nam "GRIETJE KRAMER" ;

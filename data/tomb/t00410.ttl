@@ -14,9 +14,9 @@ tomb:t00410
     ] ;
     :nd "+53.0797+006.5716"^^ll:
   ] ;
-  :subject t00410:p1, t00410:p2 ;
   :quo "RUST ZACHT LIEVE PLEEGOUDERS" ;
-  :site site:dr9481CGvries .
+  :site site:dr9481CGvries ;
+  :subject t00410:p1, t00410:p2 .
 
 t00410:c2
   a :Town.n.01 ;
@@ -25,6 +25,10 @@ t00410:c2
 
 t00410:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y3M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-05-16"^^xsd:date ;
   :dateOfDeath "1936-08-24"^^xsd:date ;
   :nam "ALBERT VAN REIN" ;
@@ -41,6 +45,10 @@ t00410:p1
 
 t00410:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1854-03-12"^^xsd:date ;
   :dateOfDeath "1929-03-26"^^xsd:date ;
   :nam "ANNECHIEN SLAGTER" ;

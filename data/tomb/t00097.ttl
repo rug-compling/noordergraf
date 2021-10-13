@@ -14,8 +14,8 @@ tomb:t00097
     ] ;
     :nd "+53.2058+006.5733"^^ll:
   ] ;
-  :subject t00097:p1, t00097:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00097:p1, t00097:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -27,6 +27,10 @@ t00097:c1
 
 t00097:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y6M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-05-08"^^xsd:date ;
   :dateOfDeath "1944-11-12"^^xsd:date ;
   :nam "HENERIKA JAKOBA IWEMA" ;
@@ -43,6 +47,10 @@ t00097:p1
 
 t00097:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y10M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-07-18"^^xsd:date ;
   :dateOfDeath "1960-06-06"^^xsd:date ;
   :nam "HEIJO TEN HAVE" ;

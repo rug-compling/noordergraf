@@ -14,32 +14,41 @@ tomb:t00692
     ] ;
     :nd "+53.0675+005.5223"^^ll:
   ] ;
-  :subject t00692:p1, t00692:p2 ;
   :picture [
     a :Portrait.n.02 ;
     :thm t00692:g1
   ] ;
-  :site site:fr8701DWbolsward .
+  :site site:fr8701DWbolsward ;
+  :subject t00692:p1, t00692:p2 .
 
 t00692:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P52Y7M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1918-08-03"^^xsd:date ;
   :dateOfDeath "1971-03-27"^^xsd:date ;
   :nam "KLAAS BOERSMA" ;
   :rol [
     a :Grandfather.n.01
-  ] , [
+  ], [
     a :Parent
   ] .
 
 t00692:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P48Y4M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1929-09-29"^^xsd:date ;
   :dateOfDeath "1978-02-17"^^xsd:date ;
   :nam "GRIETJE ANDELA" ;
   :rol [
     a :Grandmother.n.01
-  ] . [
-    a :Parent
   ] .
+
+[]
+  a :Parent .
 

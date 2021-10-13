@@ -14,13 +14,17 @@ tomb:t00905
     ] ;
     :nd "+53.1720+006.3659"^^ll:
   ] ;
-  :subject t00905:p1, t00905:p2 ;
   :quo "RUSTPLAATS VAN ONZE LIEVE OUDERS"@nld ;
   :ref t00905:v1 ;
-  :site site:gr9351RLtolbert .
+  :site site:gr9351RLtolbert ;
+  :subject t00905:p1, t00905:p2 .
 
 t00905:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y4M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1900-04-29"^^xsd:date ;
   :dateOfDeath "1954-09-12"^^xsd:date ;
   :nam "LEFFERT BETHLEHEM" ;
@@ -31,6 +35,10 @@ t00905:p1
 
 t00905:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y9M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-11-22"^^xsd:date ;
   :dateOfDeath "1963-08-26"^^xsd:date ;
   :nam "TITIA VAN DER BOOM" ;

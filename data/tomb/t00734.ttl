@@ -14,14 +14,18 @@ tomb:t00734
     ] ;
     :nd "+52.7821+006.8975"^^ll:
   ] ;
-  :subject t00734:p1, t00734:p2, t00734:p3 ;
   :site site:dr7811HEemmen ;
+  :subject t00734:p1, t00734:p2, t00734:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00734:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y1M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1849-12-13"^^xsd:date ;
   :dateOfDeath "1935-01-30"^^xsd:date ;
   :nam "MANNUS SCHERING" ;

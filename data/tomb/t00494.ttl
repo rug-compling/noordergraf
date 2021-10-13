@@ -14,8 +14,8 @@ tomb:t00494
     ] ;
     :nd "+53.2092+005.7924"^^ll:
   ] ;
-  :subject t00494:p1, t00494:p2 ;
   :site site:fr8917AVleeuwarden ;
+  :subject t00494:p1, t00494:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -27,6 +27,10 @@ t00494:c1
 
 t00494:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y9M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1834-07-04"^^xsd:date ;
   :dateOfDeath "1923-04-18"^^xsd:date ;
   :nam "GOUKE BOONSTRA" ;
@@ -39,6 +43,10 @@ t00494:p1
 
 t00494:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y7M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1842-08-28"^^xsd:date ;
   :dateOfDeath "1917-04-09"^^xsd:date ;
   :nam "BAUKJE ALBERTS DE JONG" ;

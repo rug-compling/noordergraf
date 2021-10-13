@@ -14,8 +14,8 @@ tomb:t00790
     ] ;
     :nd "+53.2776+006.6935"^^ll:
   ] ;
-  :subject t00790:p1 ;
-  :site site:gr9791KEten_boer .
+  :site site:gr9791KEten_boer ;
+  :subject t00790:p1 .
 
 t00790:c1
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00790:c1
 
 t00790:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y2M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-05-04"^^xsd:date ;
   :dateOfDeath "1934-07-16"^^xsd:date ;
   :nam "EPPÉA HILLEGONDA STEENHUIS" ;

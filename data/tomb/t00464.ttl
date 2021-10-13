@@ -14,15 +14,19 @@ tomb:t00464
     ] ;
     :nd "+53.2072+005.7698"^^ll:
   ] ;
-  :subject t00464:p1, t00464:p2 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00464:p1, t00464:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00464:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y10M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-07-01"^^xsd:date ;
   :dateOfDeath "1967-05-03"^^xsd:date ;
   :nam "THEODORUS J. HOUKES" ;
@@ -40,6 +44,10 @@ t00464:p1
 
 t00464:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P99Y2M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1899-01-01"^^xsd:date ;
   :dateOfDeath "1998-03-26"^^xsd:date ;
   :nam "TRIJNTJE RADERSMA" .

@@ -14,18 +14,18 @@ tomb:t00048
     ] ;
     :nd "+53.1631+006.6130"^^ll:
   ] ;
-  :subject t00048:p1, t00048:p2, t00048:p3 ;
   :ref [
     a :Quote ;
-    :text "ps. 23 vers 1" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 23 ;
+      :part :Psalm.n.01 ;
       :verse "1"
-    ]
+    ] ;
+    :text "ps. 23 vers 1"
   ] ;
   :site site:gr9752CMharen ;
+  :subject t00048:p1, t00048:p2, t00048:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -37,6 +37,10 @@ tomb:t00048
 
 t00048:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P56Y11M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1892-07-08"^^xsd:date ;
   :dateOfDeath "1949-06-09"^^xsd:date ;
   :nam "IJMKJE WIELINGA" ;
@@ -49,6 +53,10 @@ t00048:p1
 
 t00048:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1892-05-08"^^xsd:date ;
   :dateOfDeath "1969-05-10"^^xsd:date ;
   :nam "FREERK BRUINSMA" ;

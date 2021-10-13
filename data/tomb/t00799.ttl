@@ -14,16 +14,20 @@ tomb:t00799
     ] ;
     :nd "+53.2778+006.6938"^^ll:
   ] ;
-  :subject t00799:p1, t00799:p2 ;
   :quo "DEN VADERLANT \\ GHETROUWE BLIJK ICK \\ TOT IN DEN DOET!"@nld ;
   :ref t00799:v1 ;
   :site site:gr9791KEten_boer ;
+  :subject t00799:p1, t00799:p2 ;
   :sym [
     a :Rose.n.01
   ] .
 
 t00799:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P36Y10M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-10-31"^^xsd:date ;
   :dateOfDeath "1944-09-22"^^xsd:date ;
   :nam "A.K. DIJKEMA" ;
@@ -50,8 +54,8 @@ t00799:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Revelation.n.04 ;
     :chapter 2 ;
+    :part :Revelation.n.04 ;
     :verse "10B"
   ] .
-  
+

@@ -14,9 +14,9 @@ tomb:t00782
     ] ;
     :nd "+52.7819+006.8978"^^ll:
   ] ;
-  :subject t00782:p1, t00782:p2 ;
   :quo "RUST ZACHT LIEVE VADER"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00782:p1, t00782:p2 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -29,6 +29,10 @@ tomb:t00782
 
 t00782:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y1M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1852-03-19"^^xsd:date ;
   :dateOfDeath "1930-04-26"^^xsd:date ;
   :nam "HEIJE CHRISTIAANS" ;

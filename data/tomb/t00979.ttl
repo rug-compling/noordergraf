@@ -14,11 +14,15 @@ tomb:t00979
     ] ;
     :nd "+53.1203+006.6591"^^ll:
   ] ;
-  :subject t00979:p1, t00979:p2 ;
-  :site site:gr9479TNnoordlaren .
+  :site site:gr9479TNnoordlaren ;
+  :subject t00979:p1, t00979:p2 .
 
 t00979:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y5M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-06-05"^^xsd:date ;
   :dateOfDeath "1953-12-03"^^xsd:date ;
   :nam "JANTIEN KLOOTS" ;

@@ -14,11 +14,15 @@ tomb:t00627
     ] ;
     :nd "+53.1642+006.7543"^^ll:
   ] ;
-  :subject t00627:p1, t00627:p2 ;
-  :site site:gr9601KAhoogezand .
+  :site site:gr9601KAhoogezand ;
+  :subject t00627:p1, t00627:p2 .
 
 t00627:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P34Y2M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-10-24"^^xsd:date ;
   :dateOfDeath "1899-01-19"^^xsd:date ;
   :nam "JAKOBUS BLEEKER" ;
@@ -34,6 +38,10 @@ t00627:p1
 
 t00627:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-04-17"^^xsd:date ;
   :dateOfDeath "1959-04-18"^^xsd:date ;
   :nam "FROUWINA G. EVERS" .

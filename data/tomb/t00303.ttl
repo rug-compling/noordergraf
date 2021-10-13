@@ -14,18 +14,18 @@ tomb:t00303
     ] ;
     :nd "+52.7159+006.4742"^^ll:
   ] ;
-  :subject t00303:p1, t00303:p2 ;
   :ref [
     a :Quote ;
-    :text "ps. 73 : 12." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 73 ;
+      :part :Psalm.n.01 ;
       :verse "12"
-    ]
+    ] ;
+    :text "ps. 73 : 12."
   ] ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00303:p1, t00303:p2 .
 
 t00303:c1
   a :Town.n.01 ;
@@ -34,6 +34,10 @@ t00303:c1
 
 t00303:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y8M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-07-02"^^xsd:date ;
   :dateOfDeath "1950-03-24"^^xsd:date ;
   :nam "THOMAS PADDING" ;

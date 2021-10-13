@@ -14,11 +14,15 @@ tomb:t00117
     ] ;
     :nd "+53.1651+006.6150"^^ll:
   ] ;
-  :subject t00117:p1, t00117:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00117:p1, t00117:p2 .
 
 t00117:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y11M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-07-07"^^xsd:date ;
   :dateOfDeath "1959-06-12"^^xsd:date ;
   :nam "JAN WASSCHER" ;
@@ -31,6 +35,10 @@ t00117:p1
 
 t00117:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-04-07"^^xsd:date ;
   :dateOfDeath "1961-04-20"^^xsd:date ;
   :nam "EELJE LUBBERS" .

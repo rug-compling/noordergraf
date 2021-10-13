@@ -14,18 +14,18 @@ tomb:t00744
     ] ;
     :nd "+53.1806+006.9689"^^ll:
   ] ;
-  :subject t00744:p1, t00744:p2 ;
   :ref [
     a :Quote ;
-    :text "hebr 4:9"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Epistle_to_the_Hebrews.n.01 ;
       :chapter 4 ;
+      :part :Epistle_to_the_Hebrews.n.01 ;
       :verse "9"
-    ]
+    ] ;
+    :text "hebr 4:9"@nld
   ] ;
   :site site:gr9679KHscheemda ;
+  :subject t00744:p1, t00744:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -37,6 +37,10 @@ t00744:c1
 
 t00744:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y4M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-09-04"^^xsd:date ;
   :dateOfDeath "1947-01-11"^^xsd:date ;
   :nam "JAN HORREL" ;

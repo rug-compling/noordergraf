@@ -14,23 +14,27 @@ tomb:t00514
     ] ;
     :nd "+53.1671+006.7534"^^ll:
   ] ;
-  :subject t00514:p1 ;
   :quo "DISINI TEMPAT ISTIRAHAT SUAMI, PAPA, ADIK DAN OOM"@msa, "KARENA BAGIKU HIDUP ADALAG KRISTUS \\ DAN MATI ADALAH KEUNTUNGAN"@msa ;
   :ref [
     a :Quote ;
-    :text "Filipi 1-21"@msa ;
     :reference [
       a :BibleReference ;
-      :part :Epistle_to_the_Philippians.n.01 ;
       :chapter 1 ;
-      :verse "21" ;
-      :scripture <https://www.bible.com/nl/bible/2975/PHP.1.21>
-    ]
+      :part :Epistle_to_the_Philippians.n.01 ;
+      :scripture <https://www.bible.com/nl/bible/2975/PHP.1.21> ;
+      :verse "21"
+    ] ;
+    :text "Filipi 1-21"@msa
   ] ;
-  :site site:gr9601KAhoogezand .
+  :site site:gr9601KAhoogezand ;
+  :subject t00514:p1 .
 
 t00514:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P42Y5M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1961-06-03"^^xsd:date ;
   :dateOfDeath "2003-11-06"^^xsd:date ;
   :nam "JULIANUS ANTON PELAMONIA", "NOES" ;

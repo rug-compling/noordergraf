@@ -14,18 +14,18 @@ tomb:t00383
     ] ;
     :nd "+53.2519+006.1451"^^ll:
   ] ;
-  :subject t00383:p1, t00383:p2, t00383:p3 ;
   :ref [
     a :Quote ;
-    :text "Ps. 92:14." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 92 ;
+      :part :Psalm.n.01 ;
       :verse "14"
-    ]
+    ] ;
+    :text "Ps. 92:14."
   ] ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00383:p1, t00383:p2, t00383:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -39,6 +39,10 @@ tomb:t00383
 
 t00383:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y6M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-06-05"^^xsd:date ;
   :dateOfDeath "1953-12-20"^^xsd:date ;
   :nam "WOLTER DIJKSTRA" ;

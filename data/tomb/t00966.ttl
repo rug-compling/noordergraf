@@ -14,14 +14,18 @@ tomb:t00966
     ] ;
     :nd "+53.1622+006.6135"^^ll:
   ] ;
-  :subject t00966:p1, t00966:p2 ;
   :site site:gr9752CMharen ;
+  :subject t00966:p1, t00966:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00966:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y3M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1867-11-09"^^xsd:date ;
   :dateOfDeath "1940-03-01"^^xsd:date ;
   :nam "GRIETJE SLUURMAN" ;

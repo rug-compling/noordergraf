@@ -14,8 +14,8 @@ tomb:t00376
     ] ;
     :nd "+53.0891+006.5607"^^ll:
   ] ;
-  :subject t00376:p1, t00376:p2 ;
   :quo "RUST ZACHT" ;
+  :subject t00376:p1, t00376:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -27,6 +27,10 @@ t00376:c1
 
 t00376:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P46Y3M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-03-03"^^xsd:date ;
   :dateOfDeath "1953-06-22"^^xsd:date ;
   :nam "PIETER BURING" ;

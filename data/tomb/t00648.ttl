@@ -14,14 +14,18 @@ tomb:t00648
     ] ;
     :nd "+53.1645+006.7544"^^ll:
   ] ;
-  :subject t00648:p1, t00648:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00648:p1, t00648:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00648:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P93Y9M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1787-01-10"^^xsd:date ;
   :dateOfDeath "1880-10-30"^^xsd:date ;
   :nam "SAMUEL C. DE BOER" ;

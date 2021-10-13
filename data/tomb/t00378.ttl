@@ -14,15 +14,19 @@ tomb:t00378
     ] ;
     :nd "+53.0793+006.5727"^^ll:
   ] ;
-  :subject t00378:p1, t00378:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:dr9481CGvries ;
+  :subject t00378:p1, t00378:p2 ;
   :sym [
     a :BrokenFlower
   ] .
 
 t00378:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y5M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-12-17"^^xsd:date ;
   :dateOfDeath "1963-06-01"^^xsd:date ;
   :nam "EVELINA VEENDIJK" ;
@@ -35,6 +39,10 @@ t00378:p1
 
 t00378:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y6M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-03-11"^^xsd:date ;
   :dateOfDeath "1990-10-03"^^xsd:date ;
   :nam "ALBERT LAMPE" ;

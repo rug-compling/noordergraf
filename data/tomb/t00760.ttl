@@ -14,8 +14,8 @@ tomb:t00760
     ] ;
     :nd "+53.3112+006.9971"^^ll:
   ] ;
-  :subject t00760:p1, t00760:p2 ;
   :site site:gr9936BTfarmsum ;
+  :subject t00760:p1, t00760:p2 ;
   :sym [
     a :Entity.n.01
   ], [
@@ -26,6 +26,10 @@ tomb:t00760
 
 t00760:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P34Y6M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1835-11-09"^^xsd:date ;
   :dateOfDeath "1870-05-14"^^xsd:date ;
   :nam "GRIETJE H. STEENHUIS" ;

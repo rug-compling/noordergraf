@@ -14,23 +14,27 @@ tomb:t00058
     ] ;
     :nd "+53.1633+006.6133"^^ll:
   ] ;
-  :subject t00058:p1, t00058:p2 ;
   :ref [
     a :Quote ;
-    :text "Ps. 23" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
-      :chapter 23
-    ]
+      :chapter 23 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "Ps. 23"
   ] ;
   :site site:gr9752CMharen ;
+  :subject t00058:p1, t00058:p2 ;
   :sym [
     a :Wheat.n.01
   ] .
 
 t00058:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y3M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1923-09-29"^^xsd:date ;
   :dateOfDeath "1996-01-10"^^xsd:date ;
   :nam "DOUWE NAUTA" ;
@@ -45,14 +49,18 @@ t00058:p1
 
 t00058:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y5M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1926-03-21"^^xsd:date ;
   :dateOfDeath "2012-09-02"^^xsd:date ;
   :nam "TJAAKTJE NAUTA-WILPSTRA" ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
   ], [
     a :Great_grandmother.n.01
+  ], [
+    a :Mother.n.01
   ] .
 

@@ -14,24 +14,28 @@ tomb:t00110
     ] ;
     :nd "+53.1634+006.6156"^^ll:
   ] ;
-  :subject t00110:p1, t00110:p4 ;
   :ref [
     a :Quote ;
-    :text "Ps. 142 o.b." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 142 ;
-      :comment "onberijmd"
-    ]
+      :comment "onberijmd" ;
+      :part :Psalm.n.01
+    ] ;
+    :text "Ps. 142 o.b."
   ] ;
   :site site:gr9752CMharen ;
+  :subject t00110:p1, t00110:p4 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00110:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-12-23"^^xsd:date ;
   :dateOfDeath "1978-01-08"^^xsd:date ;
   :nam "EGBERT BAKKER" ;
@@ -43,12 +47,16 @@ t00110:p1
 
 t00110:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-02-12"^^xsd:date ;
   :dateOfDeath "1996-02-19"^^xsd:date ;
   :nam "HENDERIKA VRIELING" ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
+  ], [
+    a :Mother.n.01
   ] .
 

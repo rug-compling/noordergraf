@@ -14,11 +14,15 @@ tomb:t01102
     ] ;
     :nd "+53.2629+006.3126"^^ll:
   ] ;
-  :subject t01102:p1 ;
-  :site site:gr9843AGgrijpskerk .
+  :site site:gr9843AGgrijpskerk ;
+  :subject t01102:p1 .
 
 t01102:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P4Y10M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1940-01-20"^^xsd:date ;
   :dateOfDeath "1944-12-04"^^xsd:date ;
   :nam "HENDRIKES FR. MULDERS" ;

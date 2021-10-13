@@ -14,8 +14,8 @@ tomb:t00016
     ] ;
     :nd "+53.1910+006.5930"^^ll:
   ] ;
-  :subject t00016:p1, t00016:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00016:p1, t00016:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00016
 
 t00016:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y4M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-09-06"^^xsd:date ;
   :dateOfDeath "1939-01-17"^^xsd:date ;
   :nam "HENDRIKUS JACOBUS DU FLOO" ;
@@ -42,6 +46,10 @@ t00016:p1
 
 t00016:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y3M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1855-09-06"^^xsd:date ;
   :dateOfDeath "1942-12-30"^^xsd:date ;
   :nam "HELENA TENEIJS" ;

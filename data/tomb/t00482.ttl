@@ -14,19 +14,23 @@ tomb:t00482
     ] ;
     :nd "+53.2068+005.7690"^^ll:
   ] ;
-  :subject t00482:p1, t00482:p2 ;
   :picture [
     a :Portrait.n.02 ;
     :thm t00482:p3
   ] ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00482:p1, t00482:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00482:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y9M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-03-13"^^xsd:date ;
   :dateOfDeath "1928-12-24"^^xsd:date ;
   :nam "ANNA CATHARINA BERNDES" ;
@@ -37,6 +41,10 @@ t00482:p1
 
 t00482:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y2M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-06-15"^^xsd:date ;
   :dateOfDeath "1937-08-27"^^xsd:date ;
   :nam "HANS KOELSTRA" .

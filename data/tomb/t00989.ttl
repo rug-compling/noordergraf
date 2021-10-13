@@ -14,11 +14,15 @@ tomb:t00989
     ] ;
     :nd "+53.2442+006.6283"^^ll:
   ] ;
-  :subject t00989:p1, t00989:p2, t00989:p3 ;
-  :site site:gr9734ATgroningen .
+  :site site:gr9734ATgroningen ;
+  :subject t00989:p1, t00989:p2, t00989:p3 .
 
 t00989:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y6M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1833-05-15"^^xsd:date ;
   :dateOfDeath "1897-11-28"^^xsd:date ;
   :nam "GEEZIEN J. NIEBOER" ;

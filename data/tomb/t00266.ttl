@@ -14,12 +14,16 @@ tomb:t00266
     ] ;
     :nd "+53.2227+006.6380"^^ll:
   ] ;
-  :subject t00266:p1, t00266:p2 ;
   :quo "RUST ZACHT" ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00266:p1, t00266:p2 .
 
 t00266:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P57Y8M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-04-10"^^xsd:date ;
   :dateOfDeath "1965-01-01"^^xsd:date ;
   :nam "JANNES BLAAUW" ;

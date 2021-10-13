@@ -14,15 +14,19 @@ tomb:t00441
     ] ;
     :nd "+53.4793+006.1607"^^ll:
   ] ;
-  :subject t00441:p1, t00441:p2 ;
   :quo "RUST ZACHT" ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00441:p1, t00441:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00441:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y5M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-10-21"^^xsd:date ;
   :dateOfDeath "1926-04-07"^^xsd:date ;
   :nam "STIJNTJE COERKAMP" ;
@@ -36,6 +40,10 @@ t00441:p1
 
 t00441:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y4M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1853-05-13"^^xsd:date ;
   :dateOfDeath "1937-10-03"^^xsd:date ;
   :nam "JAN ZEILINGA" ;

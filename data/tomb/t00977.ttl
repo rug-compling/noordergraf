@@ -14,14 +14,14 @@ tomb:t00977
     ] ;
     :nd "+53.1299+006.6240"^^ll:
   ] ;
-  :subject t00977:p1, t00977:p2, t00977:p3, t00977:p4 ;
   :ref [
     a :Quote ;
-    :text "gez. 22"@nld ;
     :reference [
       a :BibleReference
-    ]
-  ] .
+    ] ;
+    :text "gez. 22"@nld
+  ] ;
+  :subject t00977:p1, t00977:p2, t00977:p3, t00977:p4 .
 
 t00977:c1
   a :Village.n.02 ;
@@ -30,6 +30,10 @@ t00977:c1
 
 t00977:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P26Y10M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-12-06"^^xsd:date ;
   :dateOfDeath "1918-10-29"^^xsd:date ;
   :nam "JANTJE MULDER" ;
@@ -37,6 +41,10 @@ t00977:p1
 
 t00977:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P23Y5M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1895-05-20"^^xsd:date ;
   :dateOfDeath "1918-10-31"^^xsd:date ;
   :nam "LUCAS MULDER" ;
@@ -44,6 +52,10 @@ t00977:p2
 
 t00977:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-11-15"^^xsd:date ;
   :dateOfDeath "1938-04-12"^^xsd:date ;
   :nam "ROELF MULDER" ;
@@ -51,6 +63,10 @@ t00977:p3
 
 t00977:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y11M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-01-11"^^xsd:date ;
   :dateOfDeath "1945-12-15"^^xsd:date ;
   :nam "JANTJE MULDER-GORTMAKER" ;

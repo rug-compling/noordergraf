@@ -14,15 +14,19 @@ tomb:t00821
     ] ;
     :nd "+53.2304+006.5515"^^ll:
   ] ;
-  :subject t00821:p1, t00821:p2 ;
   :quo "BRIJZELT HET JUK DER TIRANNEN"@nld ;
   :site site:gr9741ACgroningen ;
+  :subject t00821:p1, t00821:p2 ;
   :sym [
     a :Man.n.01
   ] .
 
 t00821:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P33Y1M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-02-16"^^xsd:date ;
   :dateOfDeath "1945-03-19"^^xsd:date ;
   :nam "GERRIT J. BOEKHOVEN" ;

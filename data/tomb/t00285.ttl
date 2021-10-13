@@ -14,8 +14,8 @@ tomb:t00285
     ] ;
     :nd "+53.4038+006.7488"^^ll:
   ] ;
-  :subject t00285:p1, t00285:p2 ;
   :site site:gr9985SCoosternieland ;
+  :subject t00285:p1, t00285:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00285
 
 t00285:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y9M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1894-12-18"^^xsd:date ;
   :dateOfDeath "1962-10-15"^^xsd:date ;
   :nam "LAMBERTA MULDER" ;
@@ -47,6 +51,10 @@ t00285:p1
 
 t00285:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y1M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1882-01-12"^^xsd:date ;
   :dateOfDeath "1940-03-10"^^xsd:date ;
   :nam "JACOB STEL" ;

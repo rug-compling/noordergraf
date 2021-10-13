@@ -14,11 +14,15 @@ tomb:t00827
     ] ;
     :nd "+53.2306+006.5517"^^ll:
   ] ;
-  :subject t00827:p1, t00827:p2 ;
-  :site site:gr9741ACgroningen .
+  :site site:gr9741ACgroningen ;
+  :subject t00827:p1, t00827:p2 .
 
 t00827:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y9M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-08-01"^^xsd:date ;
   :dateOfDeath "1945-05-06"^^xsd:date ;
   :nam "GEERT DASSEL" ;
@@ -29,6 +33,10 @@ t00827:p1
 
 t00827:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y10M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-10-03"^^xsd:date ;
   :dateOfDeath "1955-08-19"^^xsd:date ;
   :nam "ANTINA TER HORST" .

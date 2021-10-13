@@ -14,12 +14,16 @@ tomb:t00060
     ] ;
     :nd "+53.1637+006.6152"^^ll:
   ] ;
-  :subject t00060:p1, t00060:p2, t00060:p3 ;
   :ref t00060:v1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00060:p1, t00060:p2, t00060:p3 .
 
 t00060:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P61Y10M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1923-11-07"^^xsd:date ;
   :dateOfDeath "1985-10-03"^^xsd:date ;
   :nam "GRIETJE NICOLAI" ;
@@ -29,6 +33,10 @@ t00060:p1
 
 t00060:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1925-09-13"^^xsd:date ;
   :dateOfDeath "1998-02-05"^^xsd:date ;
   :nam "PIETER DIJKSTRA" ;

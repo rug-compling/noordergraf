@@ -14,11 +14,15 @@ tomb:t00656
     ] ;
     :nd "+53.2101+005.7910"^^ll:
   ] ;
-  :subject t00656:p1, t00656:p2, t00656:p3 ;
-  :site site:fr8917AVleeuwarden .
+  :site site:fr8917AVleeuwarden ;
+  :subject t00656:p1, t00656:p2, t00656:p3 .
 
 t00656:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P38Y2M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1854-05-07"^^xsd:date ;
   :dateOfDeath "1892-07-12"^^xsd:date ;
   :nam "JAN ARENDS" ;
@@ -29,12 +33,20 @@ t00656:p1
 
 t00656:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y10M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1851-11-12"^^xsd:date ;
   :dateOfDeath "1929-09-14"^^xsd:date ;
   :nam "TRIJNTJE BOELENS" .
 
 t00656:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P11Y3M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1892-01-11"^^xsd:date ;
   :dateOfDeath "1903-04-21"^^xsd:date ;
   :nam "JAN" ;

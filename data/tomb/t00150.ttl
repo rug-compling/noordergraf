@@ -14,14 +14,18 @@ tomb:t00150
     ] ;
     :nd "+53.2063+006.5698"^^ll:
   ] ;
-  :subject t00150:p1, t00150:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00150:p1, t00150:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00150:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-01-16"^^xsd:date ;
   :dateOfDeath "1941-02-09"^^xsd:date ;
   :nam "HILLEGINA STEMMER" ;
@@ -32,6 +36,10 @@ t00150:p1
 
 t00150:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y11M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-01-23"^^xsd:date ;
   :dateOfDeath "1954-12-31"^^xsd:date ;
   :nam "ANTONIE BEUKER" .

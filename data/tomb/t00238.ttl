@@ -14,9 +14,9 @@ tomb:t00238
     ] ;
     :nd "+53.2054+006.5723"^^ll:
   ] ;
-  :subject t00238:p1, t00238:p2 ;
   :quo "DE LIEFDE ZOEKT ZICH ZELVE NIET", "RUST ZACHT LIEVE VADER EN OPA" ;
   :site site:gr9725ACgroningen ;
+  :subject t00238:p1, t00238:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -37,6 +37,10 @@ t00238:p1
 
 t00238:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y10M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-06-10"^^xsd:date ;
   :dateOfDeath "1943-04-17"^^xsd:date ;
   :nam "H. ROSING" .

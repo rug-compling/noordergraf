@@ -14,9 +14,9 @@ tomb:t00568
     ] ;
     :nd "+53.1050+006.8745"^^ll:
   ] ;
-  :subject t00568:p1, t00568:p2 ;
   :quo "RUST ZACHT" ;
   :site site:gr9641ANveendam ;
+  :subject t00568:p1, t00568:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -27,6 +27,10 @@ tomb:t00568
 
 t00568:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y3M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-12-05"^^xsd:date ;
   :dateOfDeath "1923-03-06"^^xsd:date ;
   :nam "TRIJNTJE DE HAAN" ;

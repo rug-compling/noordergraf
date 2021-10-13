@@ -14,18 +14,19 @@ tomb:t00382
     ] ;
     :nd "+53.2518+006.1450"^^ll:
   ] ;
-  :subject t00382:p1 ;
   :ref [
     a :Quote ;
-    :text "Want het leven is mij Christus en het sterven is mij gewin.\nphilip. 1:21" ;
     :reference [
       a :BibleReference ;
-      :part :Epistle_to_the_Philippians.n.01 ;
       :chapter 1 ;
+      :part :Epistle_to_the_Philippians.n.01 ;
       :verse "21"
-    ]
+    ] ;
+    :text """Want het leven is mij Christus en het sterven is mij gewin.
+philip. 1:21"""
   ] ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00382:p1 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -39,6 +40,10 @@ tomb:t00382
 
 t00382:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y10M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1867-07-25"^^xsd:date ;
   :dateOfDeath "1922-06-08"^^xsd:date ;
   :nam "HIEKE DE BOER" ;

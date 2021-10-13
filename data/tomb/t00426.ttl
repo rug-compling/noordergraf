@@ -14,19 +14,19 @@ tomb:t00426
     ] ;
     :nd "+53.4789+006.1605"^^ll:
   ] ;
-  :subject t00426:p1, t00426:p2 ;
   :ref [
     a :Quote ;
-    :text "Ps. 118:7 ber." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 118 ;
-      :verse "7" ;
-      :comment "berijmd"
-    ]
+      :comment "berijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "7"
+    ] ;
+    :text "Ps. 118:7 ber."
   ] ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00426:p1, t00426:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -38,6 +38,10 @@ t00426:c2
 
 t00426:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y9M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-09-14"^^xsd:date ;
   :dateOfDeath "1954-07-13"^^xsd:date ;
   :nam "A.J. VISSER" ;

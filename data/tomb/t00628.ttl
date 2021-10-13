@@ -14,8 +14,8 @@ tomb:t00628
     ] ;
     :nd "+53.1641+006.7543"^^ll:
   ] ;
-  :subject t00628:p1, t00628:p2, t00628:p3 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00628:p1, t00628:p2, t00628:p3 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -29,6 +29,10 @@ t00628:c1
 
 t00628:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P42Y9M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-06-19"^^xsd:date ;
   :dateOfDeath "1913-03-28"^^xsd:date ;
   :nam "JAKOBUS BLEEKER" ;

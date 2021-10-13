@@ -14,11 +14,15 @@ tomb:t01093
     ] ;
     :nd "+53.2447+006.8644"^^ll:
   ] ;
-  :subject t01093:p1 ;
-  :site site:gr9628TKsiddeburen .
+  :site site:gr9628TKsiddeburen ;
+  :subject t01093:p1 .
 
 t01093:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y11M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1817-03-21"^^xsd:date ;
   :dateOfDeath "1884-03-18"^^xsd:date ;
   :nam "HESSO VERSTEEGH" ;

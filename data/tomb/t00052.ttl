@@ -14,8 +14,8 @@ tomb:t00052
     ] ;
     :nd "+53.1630+006.6131"^^ll:
   ] ;
-  :subject t00052:p1, t00052:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00052:p1, t00052:p2 .
 
 t00052:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00052:c1
 
 t00052:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y6M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-01-01"^^xsd:date ;
   :dateOfDeath "1949-07-26"^^xsd:date ;
   :nam "GEERT BODDE FOLMER" ;
@@ -36,6 +40,10 @@ t00052:p1
 
 t00052:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P110Y6M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1860-01-01"^^xsd:date ;
   :dateOfDeath "1970-07-02"^^xsd:date ;
   :nam "ANTJE ZIJLSTRA" ;

@@ -14,8 +14,8 @@ tomb:t00740
     ] ;
     :nd "+53.1806+006.9690"^^ll:
   ] ;
-  :subject t00740:p1, t00740:p2 ;
   :site site:gr9679KHscheemda ;
+  :subject t00740:p1, t00740:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -31,6 +31,10 @@ t00740:c2
 
 t00740:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y7M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1825-07-18"^^xsd:date ;
   :dateOfDeath "1904-03-17"^^xsd:date ;
   :nam "ELIZABETH WOLTJER" ;
@@ -51,6 +55,10 @@ t00740:p1
 
 t00740:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P98Y6M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1818-06-09"^^xsd:date ;
   :dateOfDeath "1916-12-20"^^xsd:date ;
   :nam "WESSEL BRONS" ;

@@ -14,8 +14,8 @@ tomb:t00099
     ] ;
     :nd "+53.2062+006.5733"^^ll:
   ] ;
-  :subject t00099:p1, t00099:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00099:p1, t00099:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -33,6 +33,10 @@ tomb:t00099
 
 t00099:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y9M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1834-02-09"^^xsd:date ;
   :dateOfDeath "1903-12-01"^^xsd:date ;
   :nam "GERBRAND WOUTERS" ;
@@ -53,6 +57,10 @@ t00099:p1
 
 t00099:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y5M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1835-02-08"^^xsd:date ;
   :dateOfDeath "1925-07-28"^^xsd:date ;
   :nam "ALIDA DIJK" .

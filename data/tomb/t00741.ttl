@@ -14,9 +14,9 @@ tomb:t00741
     ] ;
     :nd "+53.1806+006.9690"^^ll:
   ] ;
-  :subject t00741:p1, t00741:p2 ;
   :quo "MIJ GENADE IS U GENOEG"@nld ;
   :site site:gr9679KHscheemda ;
+  :subject t00741:p1, t00741:p2 ;
   :sym [
     a :Entity.n.01
   ] .
@@ -28,6 +28,10 @@ t00741:c1
 
 t00741:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y6M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1861-01-29"^^xsd:date ;
   :dateOfDeath "1950-08-13"^^xsd:date ;
   :nam "HEIKO BRONS" ;

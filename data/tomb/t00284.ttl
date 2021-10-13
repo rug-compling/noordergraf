@@ -14,8 +14,8 @@ tomb:t00284
     ] ;
     :nd "+53.4036+006.7489"^^ll:
   ] ;
-  :subject t00284:p1, t00284:p2 ;
-  :site site:gr9985SCoosternieland .
+  :site site:gr9985SCoosternieland ;
+  :subject t00284:p1, t00284:p2 .
 
 t00284:c3
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00284:c3
 
 t00284:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y9M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-01-24"^^xsd:date ;
   :dateOfDeath "1944-10-25"^^xsd:date ;
   :nam "ANNA RIJPLOEG" ;
@@ -44,6 +48,10 @@ t00284:p1
 
 t00284:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y3M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-03-07"^^xsd:date ;
   :dateOfDeath "1941-07-03"^^xsd:date ;
   :nam "EPPE WIERENGA" ;

@@ -14,15 +14,19 @@ tomb:t00481
     ] ;
     :nd "+53.2073+005.7677"^^ll:
   ] ;
-  :subject t00481:p1, t00481:p2 ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00481:p1, t00481:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00481:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y5M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1867-02-25"^^xsd:date ;
   :dateOfDeath "1922-07-29"^^xsd:date ;
   :nam "JURJEN RIKSMA" ;
@@ -33,6 +37,10 @@ t00481:p1
 
 t00481:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y11M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1867-11-09"^^xsd:date ;
   :dateOfDeath "1937-10-25"^^xsd:date ;
   :nam "MARGARETHA STOELINGA" ;

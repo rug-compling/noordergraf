@@ -14,11 +14,15 @@ tomb:t01012
     ] ;
     :nd "+53.3084+006.5754"^^ll:
   ] ;
-  :subject t01012:p1, t01012:p2 ;
-  :site site:gr9781THbedum .
+  :site site:gr9781THbedum ;
+  :subject t01012:p1, t01012:p2 .
 
 t01012:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y9M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1912-04-06"^^xsd:date ;
   :dateOfDeath "1987-01-12"^^xsd:date ;
   :nam "JANNES DE BOER" ;
@@ -44,6 +48,10 @@ t01012:p1
 
 t01012:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y9M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1925-02-27"^^xsd:date ;
   :dateOfDeath "2008-11-30"^^xsd:date ;
   :nam "MARGARETHA LEUTSCHER" ;

@@ -14,8 +14,8 @@ tomb:t00976
     ] ;
     :nd "+53.1273+006.7178"^^ll:
   ] ;
-  :subject t00976:p1, t00976:p2 ;
   :site site:gr9606PEkropswolde ;
+  :subject t00976:p1, t00976:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -28,6 +28,10 @@ tomb:t00976
 
 t00976:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y1M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1801-02-24"^^xsd:date ;
   :dateOfDeath "1876-04-21"^^xsd:date ;
   :nam "GEERT CORNELIS VROOM" ;

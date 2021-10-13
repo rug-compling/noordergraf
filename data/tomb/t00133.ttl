@@ -14,8 +14,8 @@ tomb:t00133
     ] ;
     :nd "+53.2068+006.5725"^^ll:
   ] ;
-  :subject t00133:p1, t00133:p2, t00133:p3 ;
   :site site:gr9725ACgroningen ;
+  :subject t00133:p1, t00133:p2, t00133:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -29,12 +29,20 @@ tomb:t00133
 
 t00133:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P35Y4M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1793-05-24"^^xsd:date ;
   :dateOfDeath "1828-10-21"^^xsd:date ;
   :nam "M.C.J. EINTHOVEN-BAART DE LA FAILLE" .
 
 t00133:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1784"^^xsd:gYear ;
   :dateOfDeath "1850-06-09"^^xsd:date ;
   :nam "S.J. EINTHOVEN" ;

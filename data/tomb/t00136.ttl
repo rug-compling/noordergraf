@@ -14,8 +14,8 @@ tomb:t00136
     ] ;
     :nd "+53.2060+006.5701"^^ll:
   ] ;
-  :subject t00136:p1, t00136:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00136:p1, t00136:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -24,6 +24,10 @@ tomb:t00136
 
 t00136:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y6M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-11-08"^^xsd:date ;
   :dateOfDeath "1942-05-14"^^xsd:date ;
   :nam "SIMON SIESLING" ;
@@ -35,6 +39,10 @@ t00136:p1
 
 t00136:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1882-12-28"^^xsd:date ;
   :dateOfDeath "1954-01-12"^^xsd:date ;
   :nam "TALLEGIEN DE RAAD" .

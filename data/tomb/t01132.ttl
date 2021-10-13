@@ -14,11 +14,15 @@ tomb:t01132
     ] ;
     :nd "+53.1625+006.6142"^^ll:
   ] ;
-  :subject t01132:p1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t01132:p1 .
 
 t01132:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y10M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-05-28"^^xsd:date ;
   :dateOfDeath "1954-03-31"^^xsd:date ;
   :nam "MARTHA VROOM GROENEWOLD" .

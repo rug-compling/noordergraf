@@ -14,15 +14,19 @@ tomb:t01061
     ] ;
     :nd "+53.1232+006.2512"^^ll:
   ] ;
-  :subject t01061:p1, t01061:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:gr9367PAde_wilp ;
+  :subject t01061:p1, t01061:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t01061:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y5M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1847-08-16"^^xsd:date ;
   :dateOfDeath "1927-02-12"^^xsd:date ;
   :nam "HENDRIK W. NIJHOF" ;

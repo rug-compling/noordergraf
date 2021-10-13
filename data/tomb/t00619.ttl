@@ -14,8 +14,8 @@ tomb:t00619
     ] ;
     :nd "+53.1643+006.7541"^^ll:
   ] ;
-  :subject t00619:p1, t00619:p2 ;
-  :site site:gr9601KAhoogezand .
+  :site site:gr9601KAhoogezand ;
+  :subject t00619:p1, t00619:p2 .
 
 t00619:c2
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00619:c2
 
 t00619:p1
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P92Y2M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1900-11-04"^^xsd:date ;
   :dateOfDeath "1993-01-08"^^xsd:date ;
   :nam "J.W. MULDER" ;
@@ -36,6 +40,10 @@ t00619:p1
 
 t00619:p2
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P98Y11M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1903-07-26"^^xsd:date ;
   :dateOfDeath "2002-06-29"^^xsd:date ;
   :nam "L. MULDER" ;

@@ -14,8 +14,8 @@ tomb:t00146
     ] ;
     :nd "+53.2060+006.5699"^^ll:
   ] ;
-  :subject t00146:p1, t00146:p2, t00146:p3 ;
   :site site:gr9725ACgroningen ;
+  :subject t00146:p1, t00146:p2, t00146:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -27,6 +27,10 @@ tomb:t00146
 
 t00146:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y8M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1857-04-08"^^xsd:date ;
   :dateOfDeath "1941-01-04"^^xsd:date ;
   :nam "JACOB HUIZINGA" ;
@@ -37,6 +41,10 @@ t00146:p1
 
 t00146:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y7M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-11-05"^^xsd:date ;
   :dateOfDeath "1961-07-04"^^xsd:date ;
   :nam "BOUWINA LUBBERS" ;
@@ -47,6 +55,10 @@ t00146:p2
 
 t00146:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y5M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-09-08"^^xsd:date ;
   :dateOfDeath "1962-03-05"^^xsd:date ;
   :nam "JAN MIDDEL" .

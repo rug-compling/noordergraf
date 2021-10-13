@@ -14,11 +14,15 @@ tomb:t00103
     ] ;
     :nd "+53.1906+006.5945"^^ll:
   ] ;
-  :subject t00103:p1, t00103:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00103:p1, t00103:p2 .
 
 t00103:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P56Y14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-08-13"^^xsd:date ;
   :dateOfDeath "1930-08-27"^^xsd:date ;
   :nam "ELIZABETH COOLMAN" ;

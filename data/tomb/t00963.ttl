@@ -14,11 +14,15 @@ tomb:t00963
     ] ;
     :nd "+53.1632+006.5544"^^ll:
   ] ;
-  :subject t00963:p1 ;
-  :site site:dr9765paterswolde .
+  :site site:dr9765paterswolde ;
+  :subject t00963:p1 .
 
 t00963:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P30Y4M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-11-21"^^xsd:date ;
   :dateOfDeath "1917-04-19"^^xsd:date ;
   :nam "WILLEMIENE HENRIETTE JANSEN" ;

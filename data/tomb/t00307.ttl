@@ -14,24 +14,28 @@ tomb:t00307
     ] ;
     :nd "+52.7157+006.4737"^^ll:
   ] ;
-  :subject t00307:p1 ;
   :ref [
     a :Quote ;
-    :text "Ps. 103:8." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 103 ;
+      :part :Psalm.n.01 ;
       :verse "8"
-    ]
+    ] ;
+    :text "Ps. 103:8."
   ] ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00307:p1 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00307:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P23Y4M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1908-12-22"^^xsd:date ;
   :dateOfDeath "1932-05-11"^^xsd:date ;
   :nam "DERK JAN OOSTERHUIS" ;

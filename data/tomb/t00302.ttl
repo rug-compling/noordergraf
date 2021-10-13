@@ -14,8 +14,8 @@ tomb:t00302
     ] ;
     :nd "+52.7159+006.4742"^^ll:
   ] ;
-  :subject t00302:p1, t00302:p2 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00302:p1, t00302:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -42,6 +42,10 @@ t00302:c1
 
 t00302:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y1M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1858-09-08"^^xsd:date ;
   :dateOfDeath "1942-10-10"^^xsd:date ;
   :nam "ALBERT OETS" ;
@@ -50,6 +54,10 @@ t00302:p1
 
 t00302:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P93Y9M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1858-03-02"^^xsd:date ;
   :dateOfDeath "1951-12-31"^^xsd:date ;
   :nam "ALEIDA ROELINA JENTINA STERKEN" ;

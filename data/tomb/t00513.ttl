@@ -14,7 +14,6 @@ tomb:t00513
     ] ;
     :nd "+53.1647+006.7523"^^ll:
   ] ;
-  :subject t00513:p1 ;
   :picture [
     a :Portrait.n.02 ;
     :thm t00513:p1
@@ -22,19 +21,24 @@ tomb:t00513
   :quo "DISINI KUBERHENTILAH \\ TA'LAGI SAKIT DAN LELAH \\ KU TINGGALKANLAH SEMUA \\ DAN PULANG KERUMAN HUA"@msa ;
   :ref [
     a :Quote ;
-    :text "wahju 1:17,18"@msa ;
     :reference [
       a :BibleReference ;
-      :part :Revelation.n.04 ;
       :chapter 1 ;
-      :verse "17-18" ;
-      :scripture <https://www.bible.com/bible/2975/REV.1.17-18>
-    ]
+      :part :Revelation.n.04 ;
+      :scripture <https://www.bible.com/bible/2975/REV.1.17-18> ;
+      :verse "17-18"
+    ] ;
+    :text "wahju 1:17,18"@msa
   ] ;
-  :site site:gr9601KAhoogezand .
+  :site site:gr9601KAhoogezand ;
+  :subject t00513:p1 .
 
 t00513:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P57Y4M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1926-10-12"^^xsd:date ;
   :dateOfDeath "1984-02-15"^^xsd:date ;
   :nam "JOHANNES SIMON TALARIMA" ;

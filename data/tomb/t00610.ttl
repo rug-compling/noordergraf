@@ -14,9 +14,9 @@ tomb:t00610
     ] ;
     :nd "+53.1640+006.7541"^^ll:
   ] ;
-  :subject t00610:p1, t00610:p2 ;
   :quo "TOT WEDERZIENS"@nld ;
   :site site:gr9601KAhoogezand ;
+  :subject t00610:p1, t00610:p2 ;
   :sym [
     a :Hand.n.01 ;
     :qua 2
@@ -24,6 +24,10 @@ tomb:t00610
 
 t00610:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y5M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1850-08-22"^^xsd:date ;
   :dateOfDeath "1919-02-16"^^xsd:date ;
   :nam "MAGRITA SCHABELS" ;

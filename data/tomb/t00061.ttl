@@ -14,14 +14,18 @@ tomb:t00061
     ] ;
     :nd "+53.1635+006.6151"^^ll:
   ] ;
-  :subject t00061:p1, t00061:p2 ;
   :site site:gr9752CMharen ;
+  :subject t00061:p1, t00061:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00061:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y3M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1914-02-01"^^xsd:date ;
   :dateOfDeath "1980-05-25"^^xsd:date ;
   :nam "EGBERT VAN DALEN" ;
@@ -36,6 +40,10 @@ t00061:p1
 
 t00061:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y5M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1918-10-28"^^xsd:date ;
   :dateOfDeath "1994-04-27"^^xsd:date ;
   :nam "GERRIDINA GEERLINGS" .

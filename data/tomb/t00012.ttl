@@ -14,11 +14,15 @@ tomb:t00012
     ] ;
     :nd "+53.1910+006.5941"^^ll:
   ] ;
-  :subject t00012:p1 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00012:p1 .
 
 t00012:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P37Y10M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1892-12-13"^^xsd:date ;
   :dateOfDeath "1930-10-24"^^xsd:date ;
   :nam "HERMANUS KAREL TE HENNEPE" ;

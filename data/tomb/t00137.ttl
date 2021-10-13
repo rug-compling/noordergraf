@@ -14,8 +14,8 @@ tomb:t00137
     ] ;
     :nd "+53.2062+006.5701"^^ll:
   ] ;
-  :subject t00137:p1, t00137:p2 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00137:p1, t00137:p2 .
 
 t00137:c1
   a :City.n.01 ;
@@ -24,6 +24,10 @@ t00137:c1
 
 t00137:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y3M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-12-07"^^xsd:date ;
   :dateOfDeath "1942-03-16"^^xsd:date ;
   :nam "JAN THIE" ;
@@ -40,6 +44,10 @@ t00137:p1
 
 t00137:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y9M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-03-01"^^xsd:date ;
   :dateOfDeath "1959-12-28"^^xsd:date ;
   :nam "ANNECHIEN BIEMOLT" ;

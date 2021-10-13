@@ -14,8 +14,8 @@ tomb:t00602
     ] ;
     :nd "+53.3353+006.5126"^^ll:
   ] ;
-  :subject t00602:p1, t00602:p2, t00602:p3, t00602:p4 ;
   :site site:gr9951STwinsum ;
+  :subject t00602:p1, t00602:p2, t00602:p3, t00602:p4 ;
   :sym [
     a :WeepingWillow
   ], [
@@ -24,6 +24,10 @@ tomb:t00602
 
 t00602:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1797-09-12"^^xsd:date ;
   :dateOfDeath "1874-10-06"^^xsd:date ;
   :nam "L.S. NIJHOF" ;

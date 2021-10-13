@@ -14,8 +14,8 @@ tomb:t00625
     ] ;
     :nd "+53.1642+006.7542"^^ll:
   ] ;
-  :subject t00625:p1, t00625:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00625:p1, t00625:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -28,6 +28,10 @@ tomb:t00625
 
 t00625:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1819-01-31"^^xsd:date ;
   :dateOfDeath "1900-03-02"^^xsd:date ;
   :nam "MEERTEN KROESE" ;

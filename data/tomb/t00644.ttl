@@ -14,11 +14,15 @@ tomb:t00644
     ] ;
     :nd "+53.2083+006.6473"^^ll:
   ] ;
-  :subject t00644:p1, t00644:p2 ;
-  :site site:gr9723EJgroningen .
+  :site site:gr9723EJgroningen ;
+  :subject t00644:p1, t00644:p2 .
 
 t00644:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y1M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-10-31"^^xsd:date ;
   :dateOfDeath "1935-12-19"^^xsd:date ;
   :nam "HARM RIDDERBOS" ;

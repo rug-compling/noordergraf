@@ -14,9 +14,9 @@ tomb:t00492
     ] ;
     :nd "+53.2097+005.7907"^^ll:
   ] ;
-  :subject t00492:p1, t00492:p2 ;
   :quo "RUST ZACHT" ;
   :site site:fr8917AVleeuwarden ;
+  :subject t00492:p1, t00492:p2 ;
   :sym [
     a :Frond.n.02
   ] .
@@ -28,6 +28,10 @@ t00492:c1
 
 t00492:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y10M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1847-07-26"^^xsd:date ;
   :dateOfDeath "1924-05-29"^^xsd:date ;
   :nam "STEPHANIA BOURGONJE" ;

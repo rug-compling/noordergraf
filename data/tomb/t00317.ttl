@@ -14,17 +14,25 @@ tomb:t00317
     ] ;
     :nd "+52.7164+006.4741"^^ll:
   ] ;
-  :subject t00317:p1, t00317:p2 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00317:p1, t00317:p2 .
 
 t00317:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-05-09"^^xsd:date ;
   :dateOfDeath "1932-05-31"^^xsd:date ;
   :nam "HARM ALBERTUS ROBAARD" .
 
 t00317:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-12-27"^^xsd:date ;
   :dateOfDeath "1963-01-05"^^xsd:date ;
   :nam "GEESJE SMIT" .

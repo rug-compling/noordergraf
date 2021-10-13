@@ -14,9 +14,9 @@ tomb:t00926
     ] ;
     :nd "+53.1717+006.3656"^^ll:
   ] ;
-  :subject t00926:p1 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
   :site site:gr9351RLtolbert ;
+  :subject t00926:p1 ;
   :sym [
     a :Oak.n.01
   ], [
@@ -32,6 +32,10 @@ t00926:c1
 
 t00926:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P22Y11M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-06-10"^^xsd:date ;
   :dateOfDeath "1896-05-30"^^xsd:date ;
   :nam "GEERT MEEK" ;

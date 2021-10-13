@@ -14,20 +14,24 @@ tomb:t00339
     ] ;
     :nd "+52.7154+006.4729"^^ll:
   ] ;
-  :subject t00339:p1, t00339:p2 ;
   :ref [
     a :Quote ;
-    :text "ps. 90." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
-      :chapter 90
-    ]
+      :chapter 90 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "ps. 90."
   ] ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00339:p1, t00339:p2 .
 
 t00339:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y6M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1846-12-17"^^xsd:date ;
   :dateOfDeath "1917-06-27"^^xsd:date ;
   :nam "LAMMIGJE VELDMAN" ;
@@ -38,6 +42,10 @@ t00339:p1
 
 t00339:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P87Y5M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-10-08"^^xsd:date ;
   :dateOfDeath "1932-03-19"^^xsd:date ;
   :nam "WOLTER KLEINE" ;

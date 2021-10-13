@@ -14,11 +14,15 @@ tomb:t00842
     ] ;
     :nd "+53.2958+005.0655"^^ll:
   ] ;
-  :subject t00842:p1 ;
-  :site site:fr8899AWoost_vlieland .
+  :site site:fr8899AWoost_vlieland ;
+  :subject t00842:p1 .
 
 t00842:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y3M"^^xsd:duration
+  ] ;
   :dateOfBirth "1914-12-09"^^xsd:date ;
   :dateOfDeath "1997-03-09"^^xsd:date ;
   :nam "SIENTJE DE BOER" ;

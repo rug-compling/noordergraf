@@ -14,9 +14,9 @@ tomb:t00537
     ] ;
     :nd "+53.1043+006.8761"^^ll:
   ] ;
-  :subject t00537:p1, t00537:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:gr9641ANveendam ;
+  :subject t00537:p1, t00537:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -30,6 +30,10 @@ tomb:t00537
 
 t00537:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y10M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1832-12-01"^^xsd:date ;
   :dateOfDeath "1913-10-23"^^xsd:date ;
   :nam "IDA G. STRATING" ;

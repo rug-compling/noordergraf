@@ -14,11 +14,15 @@ tomb:t00034
     ] ;
     :nd "+53.1627+006.6122"^^ll:
   ] ;
-  :subject t00034:p1, t00034:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00034:p1, t00034:p2 .
 
 t00034:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y10M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1854-02-18"^^xsd:date ;
   :dateOfDeath "1930-01-13"^^xsd:date ;
   :nam "H. ARENDS" ;

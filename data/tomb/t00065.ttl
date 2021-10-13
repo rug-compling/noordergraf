@@ -14,14 +14,18 @@ tomb:t00065
     ] ;
     :nd "+53.1912+006.5947"^^ll:
   ] ;
-  :subject t00065:p1, t00065:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00065:p1, t00065:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00065:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y9M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-11-29"^^xsd:date ;
   :dateOfDeath "1943-09-02"^^xsd:date ;
   :nam "HARM LAMBECK" ;

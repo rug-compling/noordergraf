@@ -14,11 +14,15 @@ tomb:t00559
     ] ;
     :nd "+53.1044+006.8747"^^ll:
   ] ;
-  :subject t00559:p1, t00559:p2 ;
-  :site site:gr9641ANveendam .
+  :site site:gr9641ANveendam ;
+  :subject t00559:p1, t00559:p2 .
 
 t00559:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y3M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1846-01-12"^^xsd:date ;
   :dateOfDeath "1920-04-13"^^xsd:date ;
   :nam "MARCHINA LUCIA ENGELSMAN" ;
@@ -29,6 +33,10 @@ t00559:p1
 
 t00559:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y4M"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-05-26"^^xsd:date ;
   :dateOfDeath "1929-09-26"^^xsd:date ;
   :nam "ROELF BOSSCHER" .

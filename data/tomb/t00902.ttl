@@ -14,19 +14,19 @@ tomb:t00902
     ] ;
     :nd "+53.1718+006.3658"^^ll:
   ] ;
-  :subject t00902:p1, t00902:p2 ;
   :quo "IN MEMORIAN"@nld, "REQUIEM AETERNAM \\ DONE EIS \\ DOMINE"@nld ;
   :ref [
     a :Quote ;
-    :text "Pred 12:7"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Book_of_Ecclesiastes.n.01 ;
       :chapter 12 ;
+      :part :Book_of_Ecclesiastes.n.01 ;
       :verse "7"
-    ]
+    ] ;
+    :text "Pred 12:7"@nld
   ] ;
   :site site:gr9351RLtolbert ;
+  :subject t00902:p1, t00902:p2 ;
   :sym [
     a :Cross.n.03
   ], [
@@ -40,6 +40,10 @@ t00902:c1
 
 t00902:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P49Y2M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-05-05"^^xsd:date ;
   :dateOfDeath "1940-08-04"^^xsd:date ;
   :nam "GRIETJE WILLEMINA HOENDERKEN" ;
@@ -52,6 +56,10 @@ t00902:p1
 
 t00902:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y1M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-11-13"^^xsd:date ;
   :dateOfDeath "1946-12-18"^^xsd:date ;
   :nam "REINDER CLUIVING HOENDERKEN" ;

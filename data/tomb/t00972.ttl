@@ -14,23 +14,35 @@ tomb:t00972
     ] ;
     :nd "+53.1201+006.6587"^^ll:
   ] ;
-  :subject t00972:p1, t00972:p2, t00972:p3, t00972:p4 ;
-  :site site:gr9479TNnoordlaren .
+  :site site:gr9479TNnoordlaren ;
+  :subject t00972:p1, t00972:p2, t00972:p3, t00972:p4 .
 
 t00972:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P57Y8M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1847-07-06"^^xsd:date ;
   :dateOfDeath "1905-03-09"^^xsd:date ;
   :nam "AREND AASMAN" .
 
 t00972:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y3M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1849-01-15"^^xsd:date ;
   :dateOfDeath "1933-04-30"^^xsd:date ;
   :nam "CATRIENA VOS" .
 
 t00972:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P5Y7M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-04-02"^^xsd:date ;
   :dateOfDeath "1883-12-01"^^xsd:date ;
   :nam "AREND AASMAN" ;
@@ -41,6 +53,10 @@ t00972:p3
 
 t00972:p4
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y2M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1809-12-07"^^xsd:date ;
   :dateOfDeath "1894-02-09"^^xsd:date ;
   :nam "GERARDUS VOS" ;

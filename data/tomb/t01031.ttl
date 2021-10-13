@@ -14,18 +14,18 @@ tomb:t01031
     ] ;
     :nd "+53.2645+006.3941"^^ll:
   ] ;
-  :subject t01031:p1, t01031:p2 ;
   :quo "RUST IN VREDE"@nld ;
   :ref [
     a :Quote ;
-    :text "Ps. 42"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
-      :chapter 42
-    ]
+      :chapter 42 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "Ps. 42"@nld
   ] ;
-  :site site:gr9804TEnoordhorn .
+  :site site:gr9804TEnoordhorn ;
+  :subject t01031:p1, t01031:p2 .
 
 t01031:c1
   a :Village.n.02 ;
@@ -34,6 +34,10 @@ t01031:c1
 
 t01031:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y1M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-07-31"^^xsd:date ;
   :dateOfDeath "1952-09-03"^^xsd:date ;
   :nam "ALBERT BOSSCHER" ;
@@ -49,6 +53,10 @@ t01031:p1
 
 t01031:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-12-28"^^xsd:date ;
   :dateOfDeath "1955-01-13"^^xsd:date ;
   :nam "ANTJE KREMER" ;
@@ -58,7 +66,7 @@ t01031:p2
     a :Widow.n.01 ;
     :begin "1853"^^xsd:gYear ;
     :tgt t01031:p2
-  ] , [
+  ], [
     a :Parent.n.01
   ] .
 

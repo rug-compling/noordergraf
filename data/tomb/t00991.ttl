@@ -14,13 +14,17 @@ tomb:t00991
     ] ;
     :nd "+53.1758+007.0953"^^ll:
   ] ;
-  :subject t00991:p1, t00991:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
   :ref t00991:v1 ;
-  :site site:gr9686RSbeerta .
+  :site site:gr9686RSbeerta ;
+  :subject t00991:p1, t00991:p2 .
 
 t00991:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y6M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-04-22"^^xsd:date ;
   :dateOfDeath "1928-11-03"^^xsd:date ;
   :nam "MARTJE SCHUURKE" ;
@@ -31,8 +35,12 @@ t00991:p1
 
 t00991:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y8M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-01-04"^^xsd:date ;
-  :dateOfDeath "28-09-193" ;
+  :dateOfDeath "1934-09-28"^^xsd:date ;
   :nam "FILIPPUS MOERKER" ;
   :rol [
     a :Parent.n.01 ;

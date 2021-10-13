@@ -14,18 +14,26 @@ tomb:t00524
     ] ;
     :nd "+53.1670+006.7535"^^ll:
   ] ;
-  :subject t00524:p1, t00524:p2 ;
   :quo "KAMERADEN VOOR HET LEVEN"@nld ;
-  :site site:gr9601KAhoogezand .
+  :site site:gr9601KAhoogezand ;
+  :subject t00524:p1, t00524:p2 .
 
 t00524:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y1M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1929-05-07"^^xsd:date ;
   :dateOfDeath "2006-06-24"^^xsd:date ;
   :nam "JAN VAN DER WAL" .
 
 t00524:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y9M"^^xsd:duration
+  ] ;
   :dateOfBirth "1940-05-03"^^xsd:date ;
   :dateOfDeath "2007-02-03"^^xsd:date ;
   :nam "GEESINUS HARMANNUS SCHUURMAN" .

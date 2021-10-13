@@ -14,8 +14,8 @@ tomb:t00327
     ] ;
     :nd "+52.7151+006.4740"^^ll:
   ] ;
-  :subject t00327:p1, t00327:p2, t00327:p3, t00327:p4 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00327:p1, t00327:p2, t00327:p3, t00327:p4 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00327:c1
 
 t00327:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y5M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-07-30"^^xsd:date ;
   :dateOfDeath "1926-01-19"^^xsd:date ;
   :nam "LUCIA ERDT" ;
@@ -52,6 +56,10 @@ t00327:p3
 
 t00327:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y8M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1882-08-25"^^xsd:date ;
   :dateOfDeath "1950-04-26"^^xsd:date ;
   :nam "AALTJE FAAS" ;
@@ -59,14 +67,14 @@ t00327:p4
   :placeOfDeath t00327:c1 ;
   :ref [
     a :Quote ;
-    :text "ps.10:14 onb." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 10 ;
-      :verse "14" ;
-      :comment "onberijmd"
-    ]
+      :comment "onberijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "14"
+    ] ;
+    :text "ps.10:14 onb."
   ] ;
   :rol [
     a :Daughter.n.01 ;
@@ -81,7 +89,8 @@ t00327:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :Revelation.n.04 ;
     :chapter 14 ;
+    :part :Revelation.n.04 ;
     :verse "13B"
   ] .
+

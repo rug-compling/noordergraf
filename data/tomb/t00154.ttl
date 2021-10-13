@@ -14,15 +14,19 @@ tomb:t00154
     ] ;
     :nd "+53.2061+006.5698"^^ll:
   ] ;
-  :subject t00154:p1, t00154:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS" ;
   :site site:gr9725ACgroningen ;
+  :subject t00154:p1, t00154:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00154:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y6M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-09-24"^^xsd:date ;
   :dateOfDeath "1941-03-25"^^xsd:date ;
   :nam "JOHANNES DALMOLEN" ;
@@ -35,6 +39,10 @@ t00154:p1
 
 t00154:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y9M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-12-27"^^xsd:date ;
   :dateOfDeath "1949-10-04"^^xsd:date ;
   :nam "BARBERA ZWIERS" ;

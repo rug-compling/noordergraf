@@ -14,14 +14,18 @@ tomb:t00200
     ] ;
     :nd "+53.1901+006.5946"^^ll:
   ] ;
-  :subject t00200:p1, t00200:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00200:p1, t00200:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00200:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P48Y1M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1883-11-08"^^xsd:date ;
   :dateOfDeath "1932-01-07"^^xsd:date ;
   :nam "JANTINA PIETRONELLA CUSIËL" ;
@@ -32,6 +36,10 @@ t00200:p1
 
 t00200:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y4M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-10-26"^^xsd:date ;
   :dateOfDeath "1958-03-04"^^xsd:date ;
   :nam "JAN WIERSEMA" .

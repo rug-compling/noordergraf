@@ -14,14 +14,18 @@ tomb:t00804
     ] ;
     :nd "+53.2778+006.6938"^^ll:
   ] ;
-  :subject t00804:p1, t00804:p2 ;
   :site site:gr9791KEten_boer ;
+  :subject t00804:p1, t00804:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00804:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y9M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1884-09-09"^^xsd:date ;
   :dateOfDeath "1943-07-07"^^xsd:date ;
   :nam "RIENO MOEDT" ;
@@ -32,6 +36,10 @@ t00804:p1
 
 t00804:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y10M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1889-09-23"^^xsd:date ;
   :dateOfDeath "1945-08-06"^^xsd:date ;
   :nam "BERENDJE DE WITT" .

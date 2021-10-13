@@ -14,11 +14,15 @@ tomb:t00057
     ] ;
     :nd "+53.1631+006.6132"^^ll:
   ] ;
-  :subject t00057:p1, t00057:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00057:p1, t00057:p2 .
 
 t00057:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P61Y1M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1889-02-15"^^xsd:date ;
   :dateOfDeath "1950-03-25"^^xsd:date ;
   :nam "ANNTJE NIEKEN" ;
@@ -31,6 +35,10 @@ t00057:p1
 
 t00057:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y11M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-02-05"^^xsd:date ;
   :dateOfDeath "1958-01-07"^^xsd:date ;
   :nam "PETRUS BOS" ;

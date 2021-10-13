@@ -2,6 +2,7 @@
 
 tomb:t01029
   a :Tomb ;
+  :creator t01029:p3 ;
   :image [
     dc:date "2020-04-17T18:27:02"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,9 +15,8 @@ tomb:t01029
     ] ;
     :nd "+53.3808+006.8589"^^ll:
   ] ;
-  :subject t01029:p1, t01029:p2 ;
-  :creator t01029:p3 ;
   :site site:gr9906PPbierum ;
+  :subject t01029:p1, t01029:p2 ;
   :sym t01029:s3, t01029:s5, [
     a :Butterfly.n.01
   ], [
@@ -30,6 +30,10 @@ t01029:c2
 
 t01029:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1797-02-11"^^xsd:date ;
   :dateOfDeath "1868-02-24"^^xsd:date ;
   :nam "HINDRIKTJE TEWES VAN HUIZEN" ;

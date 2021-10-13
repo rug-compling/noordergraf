@@ -14,15 +14,19 @@ tomb:t00838
     ] ;
     :nd "+52.7769+006.8044"^^ll:
   ] ;
-  :subject t00838:p1, t00838:p2 ;
   :quo "RUST ZACHT GELIEFDE VADER"@nld ;
   :site site:dr7841CDsleen ;
+  :subject t00838:p1, t00838:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00838:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y10M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1857-02-28"^^xsd:date ;
   :dateOfDeath "1934-12-29"^^xsd:date ;
   :nam "HENDRIK SCHUTRUPS" ;

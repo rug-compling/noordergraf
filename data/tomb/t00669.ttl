@@ -14,15 +14,19 @@ tomb:t00669
     ] ;
     :nd "+53.0687+005.5231"^^ll:
   ] ;
-  :subject t00669:p1, t00669:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:fr8701DWbolsward ;
+  :subject t00669:p1, t00669:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00669:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y6M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-06-08"^^xsd:date ;
   :dateOfDeath "1965-01-02"^^xsd:date ;
   :nam "HENDRIKJE DE JONG" ;
@@ -34,6 +38,10 @@ t00669:p1
 
 t00669:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y4M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-04-16"^^xsd:date ;
   :dateOfDeath "1966-08-26"^^xsd:date ;
   :nam "EEKE DE JONG" ;

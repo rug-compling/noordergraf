@@ -14,11 +14,15 @@ tomb:t00271
     ] ;
     :nd "+53.2228+006.6378"^^ll:
   ] ;
-  :subject t00271:p1, t00271:p2 ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00271:p1, t00271:p2 .
 
 t00271:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y3M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-10-17"^^xsd:date ;
   :dateOfDeath "1971-02-03"^^xsd:date ;
   :nam "JAN NIEBORG" ;
@@ -36,6 +40,10 @@ t00271:p1
 
 t00271:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y7M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1905-11-08"^^xsd:date ;
   :dateOfDeath "1973-06-18"^^xsd:date ;
   :nam "MIETJE POORT" ;

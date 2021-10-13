@@ -14,21 +14,25 @@ tomb:t01134
     ] ;
     :nd "+53.1625+006.6142"^^ll:
   ] ;
-  :subject t01134:p1, t01134:p2 ;
   :quo "IN JEZUS ONTSLAPEN"@nld ;
   :ref [
     a :Quote ;
-    :text "ps.23" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
-      :chapter 23
-    ]
+      :chapter 23 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "ps.23"
   ] ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t01134:p1, t01134:p2 .
 
 t01134:p1
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P77Y7M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-05-30"^^xsd:date ;
   :dateOfDeath "1953-01-11"^^xsd:date ;
   :nam "T. NIEUWOLD" ;
@@ -38,9 +42,14 @@ t01134:p1
 
 t01134:p2
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P60Y6M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-02-22"^^xsd:date ;
   :dateOfDeath "1957-08-24"^^xsd:date ;
   :nam "J. ROFFEL" ;
   :rol [
     a :Parent.n.01
   ] .
+

@@ -14,12 +14,16 @@ tomb:t00943
     ] ;
     :nd "+53.1384+007.1432"^^ll:
   ] ;
-  :subject t00943:p1 ;
   :quo "RUST ZACHT LIEVE BERTY"@nld ;
-  :site site:gr9696XGoudeschans .
+  :site site:gr9696XGoudeschans ;
+  :subject t00943:p1 .
 
 t00943:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P7M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1944-10-14"^^xsd:date ;
   :dateOfDeath "1945-05-26"^^xsd:date ;
   :nam "ALBERT HARM", "BERTY" ;

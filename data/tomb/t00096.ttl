@@ -14,12 +14,16 @@ tomb:t00096
     ] ;
     :nd "+53.2057+006.5732"^^ll:
   ] ;
-  :subject t00096:p1, t00096:p2 ;
   :quo "ONTBONDEN TE WORDEN EN MET CHRISTUS TE ZIJN, IS ZEER VERRE HET BESTE." ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00096:p1, t00096:p2 .
 
 t00096:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y9M"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-03-30"^^xsd:date ;
   :dateOfDeath "1944-12-30"^^xsd:date ;
   :nam "JAKOB KARSTEN" ;
@@ -36,6 +40,10 @@ t00096:p1
 
 t00096:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y10M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-11-29"^^xsd:date ;
   :dateOfDeath "1964-10-28"^^xsd:date ;
   :nam "HANNA ALKEMA" ;

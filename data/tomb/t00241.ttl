@@ -14,8 +14,8 @@ tomb:t00241
     ] ;
     :nd "+53.1725+006.6067"^^ll:
   ] ;
-  :subject t00241:p1 ;
   :site site:gr9751BBharen ;
+  :subject t00241:p1 ;
   :sym [
     a :Frond.n.02
   ] .
@@ -27,6 +27,10 @@ t00241:c1
 
 t00241:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y9M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-01-01"^^xsd:date ;
   :dateOfDeath "1947-10-23"^^xsd:date ;
   :nam "HENDRIK VAN DAM" ;
@@ -34,13 +38,13 @@ t00241:p1
   :placeOfDeath t00241:c1 ;
   :ref [
     a :Quote ;
-    :text "Ps. 119:1 ber." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 119 ;
-      :verse "1" ;
-      :comment "berijmd"
-    ]
+      :comment "berijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "1"
+    ] ;
+    :text "Ps. 119:1 ber."
   ] .
 

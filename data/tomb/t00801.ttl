@@ -14,11 +14,15 @@ tomb:t00801
     ] ;
     :nd "+53.1930+006.5936"^^ll:
   ] ;
-  :subject t00801:p1 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00801:p1 .
 
 t00801:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y3M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1949-03-30"^^xsd:date ;
   :dateOfDeath "2007-07-27"^^xsd:date ;
   :nam "JOSEPH MARIA MARTINUS HERMANS" ;

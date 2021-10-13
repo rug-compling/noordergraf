@@ -14,11 +14,15 @@ tomb:t00820
     ] ;
     :nd "+53.2305+006.5507"^^ll:
   ] ;
-  :subject t00820:p1 ;
-  :site site:gr9741ACgroningen .
+  :site site:gr9741ACgroningen ;
+  :subject t00820:p1 .
 
 t00820:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y7M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1846-03-10"^^xsd:date ;
   :dateOfDeath "1919-11-07"^^xsd:date ;
   :nam "ALTJE MULDER" ;

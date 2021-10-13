@@ -14,12 +14,16 @@ tomb:t00158
     ] ;
     :nd "+53.2060+006.5699"^^ll:
   ] ;
-  :subject t00158:p1, t00158:p3 ;
   :quo "RUST IN VREDE" ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00158:p1, t00158:p3 .
 
 t00158:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P44Y10M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1896-06-05"^^xsd:date ;
   :dateOfDeath "1941-04-26"^^xsd:date ;
   :nam "JAN SCHAAP" ;
@@ -29,6 +33,10 @@ t00158:p1
 
 t00158:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y3M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1892-05-23"^^xsd:date ;
   :dateOfDeath "1954-09-05"^^xsd:date ;
   :nam "ARENDINA VENEMA" ;

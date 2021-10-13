@@ -14,12 +14,16 @@ tomb:t00831
     ] ;
     :nd "+52.7769+006.8046"^^ll:
   ] ;
-  :subject t00831:p1, t00831:p2 ;
   :quo "ZIJ WAS EEN ZORGZAME MOEDER"@nld ;
-  :site site:dr7841CDsleen .
+  :site site:dr7841CDsleen ;
+  :subject t00831:p1, t00831:p2 .
 
 t00831:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y11M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-12-01"^^xsd:date ;
   :dateOfDeath "1940-11-09"^^xsd:date ;
   :nam "HENDRIKJE KOK" ;

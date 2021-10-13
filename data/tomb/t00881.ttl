@@ -14,9 +14,9 @@ tomb:t00881
     ] ;
     :nd "+52.7193+006.8453"^^ll:
   ] ;
-  :subject t00881:p1, t00881:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00881:p1, t00881:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -25,6 +25,10 @@ tomb:t00881
 
 t00881:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y5M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-12-31"^^xsd:date ;
   :dateOfDeath "1961-06-03"^^xsd:date ;
   :nam "JACOB SIEBEN" ;
@@ -35,6 +39,10 @@ t00881:p1
 
 t00881:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y1M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-07-25"^^xsd:date ;
   :dateOfDeath "1961-08-26"^^xsd:date ;
   :nam "ROELOFJE KORTWIJK" ;

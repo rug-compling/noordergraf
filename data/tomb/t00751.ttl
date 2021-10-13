@@ -14,8 +14,8 @@ tomb:t00751
     ] ;
     :nd "+53.3110+006.9975"^^ll:
   ] ;
-  :subject t00751:p1, t00751:p2 ;
   :site site:gr9936BTfarmsum ;
+  :subject t00751:p1, t00751:p2 ;
   :sym [
     a :Skull.n.01
   ], [
@@ -24,6 +24,10 @@ tomb:t00751
 
 t00751:p1
   a :Person ;
+  :age [
+    a :Age ;
+    :duration "P55Y2M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1818-10-27"^^xsd:date ;
   :dateOfDeath "1874-01-15"^^xsd:date ;
   :nam "A.R. VAN ZANTEN" ;

@@ -14,14 +14,18 @@ tomb:t00203
     ] ;
     :nd "+53.1900+006.5933"^^ll:
   ] ;
-  :subject t00203:p1, t00203:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00203:p1, t00203:p2 ;
   :sym [
     a :BrokenFlower
   ] .
 
 t00203:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P36Y8M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1894-09-23"^^xsd:date ;
   :dateOfDeath "1931-06-05"^^xsd:date ;
   :nam "ALBERTUS STEENHUIS" ;
@@ -32,6 +36,10 @@ t00203:p1
 
 t00203:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y8M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-07-07"^^xsd:date ;
   :dateOfDeath "1979-04-01"^^xsd:date ;
   :nam "TEUBINA G. HIDSKES" .

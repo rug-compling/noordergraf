@@ -14,22 +14,26 @@ tomb:t00935
     ] ;
     :nd "+53.2404+006.5476"^^ll:
   ] ;
-  :subject t00935:p1 ;
   :ref [
     a :Quote ;
-    :text "joh. 3:16"@nld ;
     :reference [
       a :BibleReference ;
-      :part :John.n.05 ;
       :chapter 3 ;
+      :part :John.n.05 ;
       :verse "16"
-    ]
+    ] ;
+    :text "joh. 3:16"@nld
   ] ;
   :site site:gr9741GHgroningen ;
+  :subject t00935:p1 ;
   :txt "HIER RUST ONZE LIEVE MOEDER EN OMA"@nld .
 
 t00935:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y10M"^^xsd:duration
+  ] ;
   :dateOfBirth "1916-08-27"^^xsd:date ;
   :dateOfDeath "1974-06-27"^^xsd:date ;
   :nam "MARTJE BROUWER" ;

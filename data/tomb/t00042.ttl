@@ -14,9 +14,9 @@ tomb:t00042
     ] ;
     :nd "+53.1630+006.6122"^^ll:
   ] ;
-  :subject t00042:p1, t00042:p2 ;
   :quo "RUST IN VREDE" ;
   :site site:gr9752CMharen ;
+  :subject t00042:p1, t00042:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -30,6 +30,10 @@ tomb:t00042
 
 t00042:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y9M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1849-12-18"^^xsd:date ;
   :dateOfDeath "1939-10-05"^^xsd:date ;
   :nam "JOHANNES REEDER" ;

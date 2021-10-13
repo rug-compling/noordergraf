@@ -14,19 +14,19 @@ tomb:t00286
     ] ;
     :nd "+53.4039+006.7489"^^ll:
   ] ;
-  :subject t00286:p1, t00286:p2 ;
   :ref [
     a :Quote ;
-    :text "ps. 68:2 ber." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 68 ;
-      :verse "2" ;
-      :comment "berijmd"
-    ]
+      :comment "berijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "2"
+    ] ;
+    :text "ps. 68:2 ber."
   ] ;
   :site site:gr9985SCoosternieland ;
+  :subject t00286:p1, t00286:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -38,6 +38,10 @@ tomb:t00286
 
 t00286:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P46Y11M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1873-01-24"^^xsd:date ;
   :dateOfDeath "1920-01-02"^^xsd:date ;
   :nam "PIETER BAKKER" ;
@@ -45,6 +49,10 @@ t00286:p1
 
 t00286:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y5M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-10-07"^^xsd:date ;
   :dateOfDeath "1957-04-05"^^xsd:date ;
   :nam "JANTJE ROZEMULLER" ;

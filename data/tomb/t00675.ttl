@@ -14,28 +14,36 @@ tomb:t00675
     ] ;
     :nd "+53.0685+005.5219"^^ll:
   ] ;
-  :subject t00675:p1, t00675:p2 ;
-  :site site:fr8701DWbolsward .
+  :site site:fr8701DWbolsward ;
+  :subject t00675:p1, t00675:p2 .
 
 t00675:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y2M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1910-11-03"^^xsd:date ;
   :dateOfDeath "1979-01-30"^^xsd:date ;
   :nam "THEO VAN BERGEN" ;
   :rol [
     a :Grandfather.n.01
-  ] , [
+  ], [
     a :Parent.n.01
   ] .
 
 t00675:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y8M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1908-07-02"^^xsd:date ;
   :dateOfDeath "1998-03-16"^^xsd:date ;
   :nam "BOUKJE DE REE" ;
   :rol [
     a :Grandmother.n.01
-  ] , [
+  ], [
     a :Parent.n.01
   ] .
 

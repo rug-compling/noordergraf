@@ -14,21 +14,25 @@ tomb:t00299
     ] ;
     :nd "+52.7156+006.4740"^^ll:
   ] ;
-  :subject t00299:p1 ;
   :ref [
     a :Quote ;
-    :text "Ps 103:10_18" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 103 ;
+      :part :Psalm.n.01 ;
       :verse "10-18"
-    ]
+    ] ;
+    :text "Ps 103:10_18"
   ] ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00299:p1 .
 
 t00299:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P16Y7M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1909-07-20"^^xsd:date ;
   :dateOfDeath "1926-03-11"^^xsd:date ;
   :nam "KOOB SCHELHAAS" ;

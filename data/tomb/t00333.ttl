@@ -14,8 +14,8 @@ tomb:t00333
     ] ;
     :nd "+52.7156+006.4735"^^ll:
   ] ;
-  :subject t00333:p1, t00333:p2, t00333:p3 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00333:p1, t00333:p2, t00333:p3 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00333:c1
 
 t00333:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P41Y10M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1841-04-26"^^xsd:date ;
   :dateOfDeath "1883-03-20"^^xsd:date ;
   :nam "JAN JOHANNES PADDING" ;
@@ -39,6 +43,10 @@ t00333:p1
 
 t00333:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y8M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-02-11"^^xsd:date ;
   :dateOfDeath "1926-11-09"^^xsd:date ;
   :nam "FEMMINA GESINA FERNHOUT" ;
@@ -55,6 +63,10 @@ t00333:p2
 
 t00333:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P24Y2M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1880-05-03"^^xsd:date ;
   :dateOfDeath "1904-07-18"^^xsd:date ;
   :nam "AALTJE" ;

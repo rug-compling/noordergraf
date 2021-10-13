@@ -14,8 +14,8 @@ tomb:t00337
     ] ;
     :nd "+52.7154+006.4730"^^ll:
   ] ;
-  :subject t00337:p1, t00337:p2 ;
   :site site:dr7907CHhoogeveen ;
+  :subject t00337:p1, t00337:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt t00337:s3, t00337:s5, [
@@ -32,6 +32,10 @@ t00337:c1
 
 t00337:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y3M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-01-07"^^xsd:date ;
   :dateOfDeath "1916-04-15"^^xsd:date ;
   :nam "JAN VERMEULEN" ;
@@ -44,6 +48,10 @@ t00337:p1
 
 t00337:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y6M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1860-01-21"^^xsd:date ;
   :dateOfDeath "1925-07-22"^^xsd:date ;
   :nam "ANNIGJE WESTENBERG" ;

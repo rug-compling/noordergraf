@@ -14,9 +14,9 @@ tomb:t00765
     ] ;
     :nd "+52.7821+006.8977"^^ll:
   ] ;
-  :subject t00765:p1 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00765:p1 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -28,6 +28,10 @@ t00765:c1
 
 t00765:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y3M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1887-11-22"^^xsd:date ;
   :dateOfDeath "1908-02-26"^^xsd:date ;
   :nam "ANNEGIEN KROEZE" ;

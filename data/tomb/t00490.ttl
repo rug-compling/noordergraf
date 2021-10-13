@@ -14,8 +14,8 @@ tomb:t00490
     ] ;
     :nd "+53.2100+005.7909"^^ll:
   ] ;
-  :subject t00490:p1, t00490:p2 ;
   :site site:fr8917AVleeuwarden ;
+  :subject t00490:p1, t00490:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -32,6 +32,10 @@ t00490:c2
 
 t00490:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y7M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1843-10-15"^^xsd:date ;
   :dateOfDeath "1913-06-05"^^xsd:date ;
   :nam "DOUWE HARDER" ;
@@ -48,6 +52,10 @@ t00490:p1
 
 t00490:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y4M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-01-04"^^xsd:date ;
   :dateOfDeath "1926-05-08"^^xsd:date ;
   :nam "AUKJE JASPER" ;

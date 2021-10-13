@@ -14,8 +14,8 @@ tomb:t00894
     ] ;
     :nd "+53.1725+006.3613"^^ll:
   ] ;
-  :subject t00894:p1, t00894:p2 ;
-  :site site:gr9351RLtolbert .
+  :site site:gr9351RLtolbert ;
+  :subject t00894:p1, t00894:p2 .
 
 t00894:c5
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00894:c5
 
 t00894:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y9M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1792-12-01"^^xsd:date ;
   :dateOfDeath "1869-09-21"^^xsd:date ;
   :nam "JAKOB MELES MELESSEN" ;
@@ -46,6 +50,10 @@ t00894:p1
 
 t00894:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P52Y9M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1795-01-23"^^xsd:date ;
   :dateOfDeath "1847-10-24"^^xsd:date ;
   :nam "MARTHA LEURINGH" ;

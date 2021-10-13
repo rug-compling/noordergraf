@@ -14,14 +14,18 @@ tomb:t00897
     ] ;
     :nd "+53.1722+006.3615"^^ll:
   ] ;
-  :subject t00897:p1, t00897:p2 ;
   :site site:gr9351RLtolbert ;
+  :subject t00897:p1, t00897:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00897:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y10M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1819-09-17"^^xsd:date ;
   :dateOfDeath "1885-08-14"^^xsd:date ;
   :nam "MENZE PEBES BANDRINGA" ;

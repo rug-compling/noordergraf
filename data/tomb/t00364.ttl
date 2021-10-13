@@ -14,12 +14,16 @@ tomb:t00364
     ] ;
     :nd "+53.0798+006.5715"^^ll:
   ] ;
-  :subject t00364:p1, t00364:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER" ;
-  :site site:dr9481CGvries .
+  :site site:dr9481CGvries ;
+  :subject t00364:p1, t00364:p2 .
 
 t00364:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y10M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1852-04-05"^^xsd:date ;
   :dateOfDeath "1927-02-21"^^xsd:date ;
   :nam "HENDRIK BLAAUW" ;

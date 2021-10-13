@@ -14,12 +14,16 @@ tomb:t00049
     ] ;
     :nd "+53.1631+006.6131"^^ll:
   ] ;
-  :subject t00049:p1, t00049:p2 ;
   :ref t00049:v1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00049:p1, t00049:p2 .
 
 t00049:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y2M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-08-30"^^xsd:date ;
   :dateOfDeath "1949-11-25"^^xsd:date ;
   :nam "GEERT JAN FRANSEN" ;
@@ -35,6 +39,10 @@ t00049:p1
 
 t00049:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y8M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1888-10-23"^^xsd:date ;
   :dateOfDeath "1975-07-19"^^xsd:date ;
   :nam "JANTINA A. EMMEN" ;

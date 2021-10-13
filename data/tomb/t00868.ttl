@@ -14,15 +14,19 @@ tomb:t00868
     ] ;
     :nd "+52.7191+006.8448"^^ll:
   ] ;
-  :subject t00868:p1, t00868:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00868:p1, t00868:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00868:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P93Y11M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1850-04-24"^^xsd:date ;
   :dateOfDeath "1944-04-09"^^xsd:date ;
   :nam "ADAM VAN HASSELT" ;
@@ -33,6 +37,10 @@ t00868:p1
 
 t00868:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y4M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1863-10-19"^^xsd:date ;
   :dateOfDeath "1937-03-17"^^xsd:date ;
   :nam "ANNIGJE ZOMER" ;

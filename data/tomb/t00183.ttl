@@ -14,11 +14,15 @@ tomb:t00183
     ] ;
     :nd "+53.1913+006.5940"^^ll:
   ] ;
-  :subject t00183:p1, t00183:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00183:p1, t00183:p2 .
 
 t00183:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y1M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-10-03"^^xsd:date ;
   :dateOfDeath "1937-11-25"^^xsd:date ;
   :nam "DINA VAN DER SCHRAAFF" ;

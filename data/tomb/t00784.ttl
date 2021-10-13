@@ -14,12 +14,16 @@ tomb:t00784
     ] ;
     :nd "+52.7820+006.8976"^^ll:
   ] ;
-  :subject t00784:p1 ;
   :quo "RUST ZACHT BESTE BROER EN OOM"@nld ;
-  :site site:dr7811HEemmen .
+  :site site:dr7811HEemmen ;
+  :subject t00784:p1 .
 
 t00784:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y8M"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-06-13"^^xsd:date ;
   :dateOfDeath "1970-02-13"^^xsd:date ;
   :nam "HENDRIK EVERTS" ;

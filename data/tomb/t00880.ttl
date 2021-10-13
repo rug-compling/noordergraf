@@ -14,9 +14,9 @@ tomb:t00880
     ] ;
     :nd "+52.7193+006.8451"^^ll:
   ] ;
-  :subject t00880:p1 ;
   :quo "LIEVE VADER, GIJ ZIJT \\ VER VAN ONS VERWIJDERT, \\ MAAR IN ONS HART BENT \\ U ONS DICHT BIJ. \\ TOT WIERZIENS"@nld, "RUST ZACHT"@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00880:p1 ;
   :sym [
     a :Entity.n.01
   ], [
@@ -25,6 +25,10 @@ tomb:t00880
 
 t00880:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y8M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1879-01-20"^^xsd:date ;
   :dateOfDeath "1929-10-08"^^xsd:date ;
   :nam "ALBERT KOENS" ;

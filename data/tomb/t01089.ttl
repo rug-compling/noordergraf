@@ -14,11 +14,15 @@ tomb:t01089
     ] ;
     :nd "+53.1636+006.6146"^^ll:
   ] ;
-  :subject t01089:p1 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t01089:p1 .
 
 t01089:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P100Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1911"^^xsd:gYear ;
   :dateOfDeath "2011"^^xsd:gYear ;
   :nam "C.J.M. VERHOEF-VALK" .

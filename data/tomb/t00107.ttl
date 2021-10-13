@@ -14,8 +14,8 @@ tomb:t00107
     ] ;
     :nd "+53.1626+006.6156"^^ll:
   ] ;
-  :subject t00107:p1, t00107:p2 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t00107:p1, t00107:p2 .
 
 t00107:c2
   a :Village.n.02 ;
@@ -24,6 +24,10 @@ t00107:c2
 
 t00107:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y5M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1905-07-08"^^xsd:date ;
   :dateOfDeath "1964-12-23"^^xsd:date ;
   :nam "SIEBOLT FOCKO FOCKENS" ;
@@ -36,6 +40,10 @@ t00107:p1
 
 t00107:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P96Y5M26D"^^xsd:duration
+  ] ;
   :dateOfBirth "1907-04-26"^^xsd:date ;
   :dateOfDeath "2003-10-22"^^xsd:date ;
   :nam "ZWAANTINE TALLINE FOCKENS" ;

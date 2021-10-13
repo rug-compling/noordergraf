@@ -14,11 +14,15 @@ tomb:t00739
     ] ;
     :nd "+53.3111+006.9973"^^ll:
   ] ;
-  :subject t00739:p1 ;
-  :site site:gr9936BTfarmsum .
+  :site site:gr9936BTfarmsum ;
+  :subject t00739:p1 .
 
 t00739:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y5M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1812-02-20"^^xsd:date ;
   :dateOfDeath "1886-08-11"^^xsd:date ;
   :nam "JOHANNES SIJBRAND NIJHOF" .

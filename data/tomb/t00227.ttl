@@ -14,8 +14,8 @@ tomb:t00227
     ] ;
     :nd "+53.2225+006.6366"^^ll:
   ] ;
-  :subject t00227:p1, t00227:p2 ;
   :site site:gr9723EWgroningen ;
+  :subject t00227:p1, t00227:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -29,6 +29,10 @@ tomb:t00227
 
 t00227:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y5M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1831-12-31"^^xsd:date ;
   :dateOfDeath "1902-06-15"^^xsd:date ;
   :nam "KOOP JANS EMMELKAMP" ;

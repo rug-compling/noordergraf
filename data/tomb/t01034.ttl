@@ -14,8 +14,8 @@ tomb:t01034
     ] ;
     :nd "+53.2644+006.3937"^^ll:
   ] ;
-  :subject t01034:p1, t01034:p2 ;
   :site site:gr9804TEnoordhorn ;
+  :subject t01034:p1, t01034:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -24,6 +24,10 @@ tomb:t01034
 
 t01034:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y"^^xsd:duration
+  ] ;
   :dateOfBirth "1858"^^xsd:gYear ;
   :dateOfDeath "1936"^^xsd:gYear ;
   :nam "GERTRUUD DAM" ;

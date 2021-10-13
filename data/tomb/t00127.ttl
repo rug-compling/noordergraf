@@ -14,8 +14,8 @@ tomb:t00127
     ] ;
     :nd "+53.2059+006.5713"^^ll:
   ] ;
-  :subject t00127:p1, t00127:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00127:p1, t00127:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -34,6 +34,10 @@ t00127:c1
 
 t00127:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y11M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1849-03-26"^^xsd:date ;
   :dateOfDeath "1923-03-05"^^xsd:date ;
   :nam "PIETER REINTS" ;
@@ -46,6 +50,10 @@ t00127:p1
 
 t00127:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P98Y6M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-10-19"^^xsd:date ;
   :dateOfDeath "1958-04-23"^^xsd:date ;
   :nam "JURRENDINA MOESKER" .

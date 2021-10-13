@@ -14,8 +14,8 @@ tomb:t00940
     ] ;
     :nd "+53.1384+007.1430"^^ll:
   ] ;
-  :subject t00940:p1, t00940:p2 ;
   :site site:gr9696XGoudeschans ;
+  :subject t00940:p1, t00940:p2 ;
   :sym [
     a symbol:Ouroboros
   ], [
@@ -30,6 +30,10 @@ tomb:t00940
 
 t00940:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y5M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1776-11-22"^^xsd:date ;
   :dateOfDeath "1860-04-23"^^xsd:date ;
   :nam "H.R. VAN MARK" ;

@@ -14,9 +14,9 @@ tomb:t00534
     ] ;
     :nd "+53.1031+006.8743"^^ll:
   ] ;
-  :subject t00534:p1, t00534:p2 ;
   :quo "RUST ZACHT LIEVE MOEDER"@nld ;
   :site site:gr9641ANveendam ;
+  :subject t00534:p1, t00534:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt t00534:s2, t00534:s4
@@ -24,6 +24,10 @@ tomb:t00534
 
 t00534:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y4M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1852-04-29"^^xsd:date ;
   :dateOfDeath "1936-09-28"^^xsd:date ;
   :nam "KLAASKE GERLOFS" ;

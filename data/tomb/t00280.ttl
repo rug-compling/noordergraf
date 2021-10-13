@@ -14,14 +14,18 @@ tomb:t00280
     ] ;
     :nd "+53.4042+006.7496"^^ll:
   ] ;
-  :subject t00280:p1, t00280:p2 ;
   :site site:gr9985SCoosternieland ;
+  :subject t00280:p1, t00280:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00280:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1795-01-04"^^xsd:date ;
   :dateOfDeath "1870-01-15"^^xsd:date ;
   :nam "LUTGERT DOORNBOS" ;

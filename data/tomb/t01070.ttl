@@ -14,11 +14,15 @@ tomb:t01070
     ] ;
     :nd "+53.1627+006.6138"^^ll:
   ] ;
-  :subject t01070:p1, t01070:p2, t01070:p3, t01070:p4 ;
-  :site site:gr9752CMharen .
+  :site site:gr9752CMharen ;
+  :subject t01070:p1, t01070:p2, t01070:p3, t01070:p4 .
 
 t01070:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y7M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1887-04-16"^^xsd:date ;
   :dateOfDeath "1954-11-28"^^xsd:date ;
   :nam "TAMMO HOEKSEMA" ;
@@ -29,18 +33,30 @@ t01070:p1
 
 t01070:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y1M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1893-10-03"^^xsd:date ;
   :dateOfDeath "1967-11-10"^^xsd:date ;
   :nam "ANNA HOEKSEMA-DALLINGA" .
 
 t01070:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y3M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1922-06-02"^^xsd:date ;
   :dateOfDeath "1988-09-12"^^xsd:date ;
   :nam "DIRK POPKO HOEKSEMA" .
 
 t01070:p4
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y8M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1926-01-26"^^xsd:date ;
   :dateOfDeath "2006-10-07"^^xsd:date ;
   :nam "PAUL E. HOEKSEMA" ;

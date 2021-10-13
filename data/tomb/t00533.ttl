@@ -14,15 +14,19 @@ tomb:t00533
     ] ;
     :nd "+53.1034+006.8737"^^ll:
   ] ;
-  :subject t00533:p1 ;
   :picture [
     a :Portrait.n.02 ;
     :thm t00533:p1
   ] ;
-  :site site:gr9641ANveendam .
+  :site site:gr9641ANveendam ;
+  :subject t00533:p1 .
 
 t00533:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y10M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1917-05-13"^^xsd:date ;
   :dateOfDeath "1938-03-15"^^xsd:date ;
   :nam "HENDRIKA MARIA TONKES" ;

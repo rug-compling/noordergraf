@@ -14,11 +14,15 @@ tomb:t00301
     ] ;
     :nd "+52.7154+006.4735"^^ll:
   ] ;
-  :subject t00301:p1 ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00301:p1 .
 
 t00301:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P19Y8M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1918-07-09"^^xsd:date ;
   :dateOfDeath "1938-03-19"^^xsd:date ;
   :nam "LAMBERTUS FLEDDERUS" ;

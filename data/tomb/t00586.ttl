@@ -14,14 +14,18 @@ tomb:t00586
     ] ;
     :nd "+53.3353+006.5127"^^ll:
   ] ;
-  :subject t00586:p1, t00586:p2 ;
   :site site:gr9951STwinsum ;
+  :subject t00586:p1, t00586:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00586:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y8M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1842-05-12"^^xsd:date ;
   :dateOfDeath "1912-02-11"^^xsd:date ;
   :nam "JANTJE TEN HOORN" ;

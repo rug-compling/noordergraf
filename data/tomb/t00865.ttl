@@ -14,15 +14,19 @@ tomb:t00865
     ] ;
     :nd "+52.7193+006.8451"^^ll:
   ] ;
-  :subject t00865:p1, t00865:p2, t00865:p3 ;
   :quo "RUST ZACHT."@nld ;
   :site site:dr7844TCveenoord ;
+  :subject t00865:p1, t00865:p2, t00865:p3 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00865:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P47Y10M7D"^^xsd:duration
+  ] ;
   :dateOfBirth "1878-05-23"^^xsd:date ;
   :dateOfDeath "1926-03-30"^^xsd:date ;
   :nam "JAKOP KOENS" ;

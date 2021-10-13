@@ -14,8 +14,8 @@ tomb:t00990
     ] ;
     :nd "+53.2432+006.6280"^^ll:
   ] ;
-  :subject t00990:p1, t00990:p2 ;
   :site site:gr9734ATgroningen ;
+  :subject t00990:p1, t00990:p2 ;
   :text """Ter gedachtenis van
 TRIENTJE KORNELIS
 NIEBOER
@@ -28,6 +28,10 @@ van H.G. Boer.""" .
 
 t00990:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y9M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1791-09-13"^^xsd:date ;
   :dateOfDeath "1865-06-25"^^xsd:date ;
   :nam "TRIENTJE KORNELIS NIEBOER" ;

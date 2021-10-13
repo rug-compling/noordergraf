@@ -2,6 +2,7 @@
 
 tomb:t00607
   a :Tomb ;
+  :creator t00607:p2 ;
   :image [
     dc:date "2019-11-23T10:07:15"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,9 +15,8 @@ tomb:t00607
     ] ;
     :nd "+53.1643+006.7540"^^ll:
   ] ;
-  :subject t00607:p1 ;
-  :creator t00607:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00607:p1 ;
   :sym [
     a :Cross.n.03
   ], [
@@ -29,6 +29,10 @@ tomb:t00607
 
 t00607:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y3M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1818-04-10"^^xsd:date ;
   :dateOfDeath "1904-08-08"^^xsd:date ;
   :nam "EBERHAGEN-KALBITZER" ;

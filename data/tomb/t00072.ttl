@@ -14,11 +14,15 @@ tomb:t00072
     ] ;
     :nd "+53.1904+006.5948"^^ll:
   ] ;
-  :subject t00072:p1, t00072:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00072:p1, t00072:p2 .
 
 t00072:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y1M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1883-03-27"^^xsd:date ;
   :dateOfDeath "1933-05-18"^^xsd:date ;
   :nam "PIETER GEURTS" ;
@@ -31,6 +35,10 @@ t00072:p1
 
 t00072:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y11M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1884-08-23"^^xsd:date ;
   :dateOfDeath "1962-07-29"^^xsd:date ;
   :nam "TRIJNTJE LEUTSCHER" ;

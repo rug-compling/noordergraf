@@ -14,9 +14,9 @@ tomb:t00922
     ] ;
     :nd "+53.1719+006.3656"^^ll:
   ] ;
-  :subject t00922:p1, t00922:p2 ;
   :quo "RUSTPLAATS VAN $p1"@nld ;
   :site site:gr9351RLtolbert ;
+  :subject t00922:p1, t00922:p2 ;
   :sym [
     a :Oak.n.01
   ], [
@@ -25,6 +25,10 @@ tomb:t00922
 
 t00922:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y6M6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1847-08-28"^^xsd:date ;
   :dateOfDeath "1930-03-06"^^xsd:date ;
   :nam "AALTIEN HULSHOF" ;

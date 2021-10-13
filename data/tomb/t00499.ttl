@@ -14,14 +14,18 @@ tomb:t00499
     ] ;
     :nd "+53.2093+005.7926"^^ll:
   ] ;
-  :subject t00499:p1, t00499:p2 ;
   :site site:fr8917AVleeuwarden ;
+  :subject t00499:p1, t00499:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00499:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y6M30D"^^xsd:duration
+  ] ;
   :dateOfBirth "1851-02-05"^^xsd:date ;
   :dateOfDeath "1917-09-04"^^xsd:date ;
   :nam "ANTJE WIERINGA" ;
@@ -38,6 +42,10 @@ t00499:p1
 
 t00499:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y5M20D"^^xsd:duration
+  ] ;
   :dateOfBirth "1851-07-06"^^xsd:date ;
   :dateOfDeath "1933-12-26"^^xsd:date ;
   :nam "KLAAS D. VAN EGTEN" ;

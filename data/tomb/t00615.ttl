@@ -14,9 +14,9 @@ tomb:t00615
     ] ;
     :nd "+53.1644+006.7540"^^ll:
   ] ;
-  :subject t00615:p1, t00615:p2 ;
   :quo "RUST IN VREDE"@nld ;
   :site site:gr9601KAhoogezand ;
+  :subject t00615:p1, t00615:p2 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -25,6 +25,10 @@ tomb:t00615
 
 t00615:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P46Y10M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1845-04-26"^^xsd:date ;
   :dateOfDeath "1892-02-27"^^xsd:date ;
   :nam "HARM KRASTER" ;
@@ -35,6 +39,10 @@ t00615:p1
 
 t00615:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P92Y6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1843-08-30"^^xsd:date ;
   :dateOfDeath "1935-09-05"^^xsd:date ;
   :nam "METDINA WILHELMINA VAN DUINEN" ;

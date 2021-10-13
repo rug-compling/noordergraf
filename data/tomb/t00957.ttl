@@ -14,8 +14,8 @@ tomb:t00957
     ] ;
     :nd "+53.1202+006.6592"^^ll:
   ] ;
-  :subject t00957:p1, t00957:p2 ;
   :site site:gr9479TNnoordlaren ;
+  :subject t00957:p1, t00957:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t00957:c1
 
 t00957:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y1M27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-11-01"^^xsd:date ;
   :dateOfDeath "1931-12-28"^^xsd:date ;
   :nam "JANS LUTGERS" ;

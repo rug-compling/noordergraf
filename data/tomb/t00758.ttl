@@ -14,8 +14,8 @@ tomb:t00758
     ] ;
     :nd "+53.3111+006.9971"^^ll:
   ] ;
-  :subject t00758:p1, t00758:p2 ;
   :site site:gr9936BTfarmsum ;
+  :subject t00758:p1, t00758:p2 ;
   :sym [
     a :Skull.n.01
   ], [
@@ -24,6 +24,10 @@ tomb:t00758
 
 t00758:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y9M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1796-10-28"^^xsd:date ;
   :dateOfDeath "1877-08-18"^^xsd:date ;
   :nam "IMKE AIKES BROUWER" ;

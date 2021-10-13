@@ -2,6 +2,7 @@
 
 tomb:t01025
   a :Tomb ;
+  :creator t01025:p2 ;
   :image [
     dc:date "2020-04-17T18:27:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,10 +15,9 @@ tomb:t01025
     ] ;
     :nd "+53.3809+006.8597"^^ll:
   ] ;
-  :subject t01025:p1 ;
-  :creator t01025:p2 ;
   :quo "JONG VAN JAREN LIGT HAAR NIETIG STOF HIERNEER, 'T WAS UW WIL EN WELBEHAGEN WIJZE GOEDE HEMELHEER."@nld ;
   :site site:gr9906PPbierum ;
+  :subject t01025:p1 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -35,6 +35,10 @@ t01025:c2
 
 t01025:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y6M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1874-09-30"^^xsd:date ;
   :dateOfDeath "1895-04-03"^^xsd:date ;
   :nam "JOSINA HARMINA SMIT" ;

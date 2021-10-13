@@ -14,8 +14,8 @@ tomb:t00021
     ] ;
     :nd "+53.1909+006.5941"^^ll:
   ] ;
-  :subject t00021:p1 ;
   :site site:gr9722SNgroningen ;
+  :subject t00021:p1 ;
   :sym [
     a :BrokenFrond
   ] .
@@ -34,6 +34,10 @@ t00021:g1
 
 t00021:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y3M"^^xsd:duration
+  ] ;
   :dateOfBirth "1869-12-12"^^xsd:date ;
   :dateOfDeath "1932-03-12"^^xsd:date ;
   :nam "G. POSTMA" ;

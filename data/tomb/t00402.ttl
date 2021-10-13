@@ -14,25 +14,29 @@ tomb:t00402
     ] ;
     :nd "+53.2518+006.1448"^^ll:
   ] ;
-  :subject t00402:p1, t00402:p2 ;
   :ref [
     a :Quote ;
-    :text "ps. 116:4 ber." ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 116 ;
-      :verse "4" ;
-      :comment "berijmd"
-    ]
+      :comment "berijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "4"
+    ] ;
+    :text "ps. 116:4 ber."
   ] ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00402:p1, t00402:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00402:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P93Y3M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1881-12-30"^^xsd:date ;
   :dateOfDeath "1975-04-11"^^xsd:date ;
   :nam "AKKE VAN DER GALIËN" ;

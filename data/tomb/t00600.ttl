@@ -14,11 +14,15 @@ tomb:t00600
     ] ;
     :nd "+53.3277+006.5111"^^ll:
   ] ;
-  :subject t00600:p1, t00600:p2 ;
-  :site site:gr9951TNwinsum .
+  :site site:gr9951TNwinsum ;
+  :subject t00600:p1, t00600:p2 .
 
 t00600:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P26Y10M21D"^^xsd:duration
+  ] ;
   :dateOfBirth "1937-03-15"^^xsd:date ;
   :dateOfDeath "1964-02-05"^^xsd:date ;
   :nam "JAN JONKMAN" ;

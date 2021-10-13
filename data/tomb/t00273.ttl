@@ -14,12 +14,16 @@ tomb:t00273
     ] ;
     :nd "+53.2227+006.6378"^^ll:
   ] ;
-  :subject t00273:p1, t00273:p2 ;
   :quo "RUST ZACHT" ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00273:p1, t00273:p2 .
 
 t00273:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y2M4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1887-02-07"^^xsd:date ;
   :dateOfDeath "1962-04-11"^^xsd:date ;
   :nam "GEESSIEN LUBBERS" ;
@@ -29,6 +33,10 @@ t00273:p1
 
 t00273:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y8M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1882-03-20"^^xsd:date ;
   :dateOfDeath "1964-12-12"^^xsd:date ;
   :nam "LAMMERT KUIPERS" ;

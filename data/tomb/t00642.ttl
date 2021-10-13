@@ -14,9 +14,9 @@ tomb:t00642
     ] ;
     :nd "+53.2082+006.6471"^^ll:
   ] ;
-  :subject t00642:p1, t00642:p2 ;
   :quo "IK WAS ALS LANDMAN EN \\ OOK TEVENS, \\ OUDERLING VAN JEZUS KERK; \\ HOOG BEJAARD DEED 'T EIND MIJNS LEVEN, \\ MIJ ONTSLAGEN VAN MIJN \\ WERK, \\ NU BEN IK TEN RUST GELEID, \\ EN VERWACHT DE ZALIGHEID."@nld ;
   :site site:gr9723EJgroningen ;
+  :subject t00642:p1, t00642:p2 ;
   :sym [
     a :Fakkel.n.01
   ], [
@@ -27,6 +27,10 @@ tomb:t00642
 
 t00642:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y7M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1839-01-26"^^xsd:date ;
   :dateOfDeath "1914-09-10"^^xsd:date ;
   :nam "AALF NIJBORG" ;

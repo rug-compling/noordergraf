@@ -14,11 +14,15 @@ tomb:t00890
     ] ;
     :nd "+53.1903+006.5917"^^ll:
   ] ;
-  :subject t00890:p1 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00890:p1 .
 
 t00890:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y5M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1870-12-19"^^xsd:date ;
   :dateOfDeath "1936-06-05"^^xsd:date ;
   :nam "ELIZABETH DYKSTRA BOUSEMA" .

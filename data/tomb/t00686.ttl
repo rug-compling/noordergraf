@@ -14,8 +14,8 @@ tomb:t00686
     ] ;
     :nd "+53.0684+005.5234"^^ll:
   ] ;
-  :subject t00686:p1, t00686:p2 ;
   :site site:fr8701DWbolsward ;
+  :subject t00686:p1, t00686:p2 ;
   :sym [
     a :Rose.n.01
   ] .
@@ -27,6 +27,10 @@ t00686:c1
 
 t00686:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y10M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1862-03-06"^^xsd:date ;
   :dateOfDeath "1928-01-07"^^xsd:date ;
   :nam "HENDRIK G. DE BOER" ;

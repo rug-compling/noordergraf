@@ -14,15 +14,19 @@ tomb:t00527
     ] ;
     :nd "+53.1650+006.7532"^^ll:
   ] ;
-  :subject t00527:p1, t00527:p2 ;
   :ref t00527:v1 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00527:p1, t00527:p2 ;
   :sym [
     a :Tuba.n.01
   ] .
 
 t00527:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y10M28D"^^xsd:duration
+  ] ;
   :dateOfBirth "1905-04-16"^^xsd:date ;
   :dateOfDeath "1968-03-15"^^xsd:date ;
   :nam "ROELF SJOERD VAN DIJK" ;
@@ -39,6 +43,10 @@ t00527:p1
 
 t00527:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y10M"^^xsd:duration
+  ] ;
   :dateOfBirth "1905-01-05"^^xsd:date ;
   :dateOfDeath "1994-11-05"^^xsd:date ;
   :nam "ALLTJE HUIZING" ;

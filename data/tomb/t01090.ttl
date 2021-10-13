@@ -8,8 +8,8 @@ tomb:t01090
     a :Photo ;
     :file img:t01090.jpg
   ] ;
-  :subject t01090:p1, t01090:p2 ;
-  :ref t01090:v1, "KOL 1"@nld .
+  :ref t01090:v1, "KOL 1"@nld ;
+  :subject t01090:p1, t01090:p2 .
 
 t01090:c2
   a :Town.n.01 ;
@@ -18,6 +18,10 @@ t01090:c2
 
 t01090:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y9M15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1914-11-01"^^xsd:date ;
   :dateOfDeath "1993-08-16"^^xsd:date ;
   :nam "JITSKE HAVEMAN" ;
@@ -34,6 +38,10 @@ t01090:p1
 
 t01090:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y10M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1913-03-12"^^xsd:date ;
   :dateOfDeath "1997-01-29"^^xsd:date ;
   :nam "LAMMERT KNOT" ;
@@ -50,10 +58,10 @@ t01090:p2
 
 t01090:v1
   a :Quote ;
-  :text "wij geloven dat Jezus Christus de Zoon van God is"@nld ;
   :reference [
     a :BibleReference ;
-    :part :First_Epistle_to_the_Corinthians.n.01 ;
-    :chapter 15
-  ] .
+    :chapter 15 ;
+    :part :First_Epistle_to_the_Corinthians.n.01
+  ] ;
+  :text "wij geloven dat Jezus Christus de Zoon van God is"@nld .
 

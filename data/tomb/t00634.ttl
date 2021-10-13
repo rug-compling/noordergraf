@@ -14,25 +14,29 @@ tomb:t00634
     ] ;
     :nd "+53.1641+006.7545"^^ll:
   ] ;
-  :subject t00634:p1 ;
   :picture [
     a :Statue.n.01
   ] ;
   :quo "KLEURRIJK, MENSENMENS, LEVENSGENIETER"@nld ;
   :ref [
     a :Quote ;
-    :text "Prediker 3:1"@nld ;
     :reference [
       a :BibleReference ;
-      :part :Book_of_Ecclesiastes.n.01 ;
       :chapter 3 ;
+      :part :Book_of_Ecclesiastes.n.01 ;
       :verse "1"
-    ]
+    ] ;
+    :text "Prediker 3:1"@nld
   ] ;
-  :site site:gr9601KAhoogezand .
+  :site site:gr9601KAhoogezand ;
+  :subject t00634:p1 .
 
 t00634:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y5M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1948-02-19"^^xsd:date ;
   :dateOfDeath "2017-08-13"^^xsd:date ;
   :nam "CATY BOEF-DE VRIES" ;

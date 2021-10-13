@@ -14,15 +14,19 @@ tomb:t00152
     ] ;
     :nd "+53.2063+006.5698"^^ll:
   ] ;
-  :subject t00152:p1, t00152:p2 ;
   :quo "RUST ZACHT" ;
   :site site:gr9725ACgroningen ;
+  :subject t00152:p1, t00152:p2 ;
   :sym [
     a :Frond.n.01
   ] .
 
 t00152:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y7M11D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-07-03"^^xsd:date ;
   :dateOfDeath "1941-02-14"^^xsd:date ;
   :nam "GERHARDA KOK" ;
@@ -32,6 +36,10 @@ t00152:p1
 
 t00152:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y11M16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1871-02-14"^^xsd:date ;
   :dateOfDeath "1942-01-30"^^xsd:date ;
   :nam "HENDRIK EVENDIK" ;

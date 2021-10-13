@@ -14,11 +14,15 @@ tomb:t00507
     ] ;
     :nd "+53.2067+005.7690"^^ll:
   ] ;
-  :subject t00507:p1, t00507:p2, t00507:p3 ;
-  :site site:fr8915CPleeuwarden .
+  :site site:fr8915CPleeuwarden ;
+  :subject t00507:p1, t00507:p2, t00507:p3 .
 
 t00507:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y9M1D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-03-13"^^xsd:date ;
   :dateOfDeath "1925-12-14"^^xsd:date ;
   :nam "GERRIT VAN DER MEER" ;
@@ -29,6 +33,10 @@ t00507:p1
 
 t00507:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y1M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1868-04-07"^^xsd:date ;
   :dateOfDeath "1934-05-31"^^xsd:date ;
   :nam "JOHANNA HOGEMA" ;
@@ -39,6 +47,10 @@ t00507:p2
 
 t00507:p3
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y27D"^^xsd:duration
+  ] ;
   :dateOfBirth "1901-12-25"^^xsd:date ;
   :dateOfDeath "1985-01-21"^^xsd:date ;
   :nam "IJSBRAND THEODORUS" ;

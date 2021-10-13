@@ -14,12 +14,16 @@ tomb:t00914
     ] ;
     :nd "+53.1717+006.3654"^^ll:
   ] ;
-  :subject t00914:p1, t00914:p2 ;
   :quo "RUST ZACHT"@nld ;
-  :site site:gr9351RLtolbert .
+  :site site:gr9351RLtolbert ;
+  :subject t00914:p1, t00914:p2 .
 
 t00914:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P27Y8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-08-21"^^xsd:date ;
   :dateOfDeath "1924-08-29"^^xsd:date ;
   :nam "FROUKJE VAN DER DONK" ;

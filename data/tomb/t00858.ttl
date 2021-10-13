@@ -14,8 +14,8 @@ tomb:t00858
     ] ;
     :nd "+52.7765+006.8042"^^ll:
   ] ;
-  :subject t00858:p1, t00858:p2 ;
   :site site:dr7841CDsleen ;
+  :subject t00858:p1, t00858:p2 ;
   :sym [
     a :Rose.n.01
   ] .
@@ -27,6 +27,10 @@ t00858:c1
 
 t00858:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y8M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-06-08"^^xsd:date ;
   :dateOfDeath "1936-02-16"^^xsd:date ;
   :nam "ROELOF EVENHUIS" ;
@@ -35,6 +39,10 @@ t00858:p1
 
 t00858:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P52Y8M18D"^^xsd:duration
+  ] ;
   :dateOfBirth "1865-11-21"^^xsd:date ;
   :dateOfDeath "1918-08-08"^^xsd:date ;
   :nam "GEESSIEN VRIELING" ;

@@ -14,14 +14,18 @@ tomb:t00941
     ] ;
     :nd "+53.1383+007.1431"^^ll:
   ] ;
-  :subject t00941:p1, t00941:p2 ;
   :site site:gr9696XGoudeschans ;
+  :subject t00941:p1, t00941:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00941:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1M3D"^^xsd:duration
+  ] ;
   :dateOfBirth "1898-03-09"^^xsd:date ;
   :dateOfDeath "1898-04-12"^^xsd:date ;
   :nam "GEERT FEKKO" ;
@@ -32,6 +36,10 @@ t00941:p1
 
 t00941:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P15D"^^xsd:duration
+  ] ;
   :dateOfBirth "1900-07-10"^^xsd:date ;
   :dateOfDeath "1900-07-25"^^xsd:date ;
   :nam "GEERT FEKKO" ;

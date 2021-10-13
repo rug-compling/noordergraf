@@ -14,11 +14,15 @@ tomb:t01009
     ] ;
     :nd "+53.2443+006.6282"^^ll:
   ] ;
-  :subject t01009:p1, t01009:p3 ;
-  :site site:gr9734ATgroningen .
+  :site site:gr9734ATgroningen ;
+  :subject t01009:p1, t01009:p3 .
 
 t01009:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P50Y2M13D"^^xsd:duration
+  ] ;
   :dateOfBirth "1844-04-08"^^xsd:date ;
   :dateOfDeath "1894-06-21"^^xsd:date ;
   :nam "GEKE VELDMAN" ;
@@ -38,6 +42,10 @@ t01009:p2
 
 t01009:p3
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P17Y6M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-03-14"^^xsd:date ;
   :dateOfDeath "1893-10-09"^^xsd:date ;
   :nam "LUTGERDINA BAKKER" ;

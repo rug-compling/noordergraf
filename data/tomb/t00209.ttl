@@ -14,8 +14,8 @@ tomb:t00209
     ] ;
     :nd "+53.2224+006.6367"^^ll:
   ] ;
-  :subject t00209:p1, t00209:p2 ;
   :site site:gr9723EWgroningen ;
+  :subject t00209:p1, t00209:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -32,6 +32,10 @@ t00209:c1
 
 t00209:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P8M29D"^^xsd:duration
+  ] ;
   :dateOfBirth "1897-01-11"^^xsd:date ;
   :dateOfDeath "1893-10-10"^^xsd:date ;
   :nam "PIETER J. BOLHUIS" ;

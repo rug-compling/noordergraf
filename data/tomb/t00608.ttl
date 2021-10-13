@@ -2,6 +2,7 @@
 
 tomb:t00608
   a :Tomb ;
+  :creator t00608:p3 ;
   :image [
     dc:date "2019-11-23T10:05:47"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,9 +15,8 @@ tomb:t00608
     ] ;
     :nd "+53.1644+006.7540"^^ll:
   ] ;
-  :subject t00608:p1, t00608:p2 ;
-  :creator t00608:p3 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00608:p1, t00608:p2 ;
   :sym [
     a :Cross.n.03
   ], [
@@ -29,6 +29,10 @@ tomb:t00608
 
 t00608:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P56Y2M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1833-12-30"^^xsd:date ;
   :dateOfDeath "1890-03-04"^^xsd:date ;
   :nam "HENDRIK H. KAMPS" ;
@@ -44,3 +48,4 @@ t00608:p2
 t00608:p3
   a :Creator ;
   :name "A. BIELARS" .
+

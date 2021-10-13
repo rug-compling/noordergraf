@@ -14,12 +14,16 @@ tomb:t00159
     ] ;
     :nd "+53.2060+006.5698"^^ll:
   ] ;
-  :subject t00159:p1, t00159:p2 ;
   :quo "HIER RUSTE IN VREDE" ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00159:p1, t00159:p2 .
 
 t00159:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1875-04-10"^^xsd:date ;
   :dateOfDeath "1941-04-26"^^xsd:date ;
   :nam "WIEBEGIEN BROUWER" ;
@@ -35,6 +39,10 @@ t00159:p1
 
 t00159:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y2M5D"^^xsd:duration
+  ] ;
   :dateOfBirth "1876-10-24"^^xsd:date ;
   :dateOfDeath "1961-12-29"^^xsd:date ;
   :nam "J. SMIDT" .

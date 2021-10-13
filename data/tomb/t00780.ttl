@@ -14,15 +14,19 @@ tomb:t00780
     ] ;
     :nd "+52.7819+006.8978"^^ll:
   ] ;
-  :subject t00780:p1, t00780:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00780:p1, t00780:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00780:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y9M9D"^^xsd:duration
+  ] ;
   :dateOfBirth "1842-06-05"^^xsd:date ;
   :dateOfDeath "1931-03-14"^^xsd:date ;
   :nam "GEERT OEVERMANS" ;

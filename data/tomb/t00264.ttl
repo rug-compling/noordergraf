@@ -14,11 +14,15 @@ tomb:t00264
     ] ;
     :nd "+53.2227+006.6378"^^ll:
   ] ;
-  :subject t00264:p1, t00264:p2 ;
-  :site site:gr9723EWgroningen .
+  :site site:gr9723EWgroningen ;
+  :subject t00264:p1, t00264:p2 .
 
 t00264:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P32Y5M14D"^^xsd:duration
+  ] ;
   :dateOfBirth "1936-02-23"^^xsd:date ;
   :dateOfDeath "1968-08-06"^^xsd:date ;
   :nam "HANS E. HÖFERS" ;

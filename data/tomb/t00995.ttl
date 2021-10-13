@@ -14,15 +14,19 @@ tomb:t00995
     ] ;
     :nd "+53.1754+007.0959"^^ll:
   ] ;
-  :subject t00995:p1, t00995:p2 ;
   :quo "RUST ZACHT LIEVE MAN EN VADER"@nld ;
   :site site:gr9686RSbeerta ;
+  :subject t00995:p1, t00995:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00995:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y2M19D"^^xsd:duration
+  ] ;
   :dateOfBirth "1863-03-06"^^xsd:date ;
   :dateOfDeath "1927-05-25"^^xsd:date ;
   :nam "NANNO JACOB BONESCHANSKER" ;

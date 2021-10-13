@@ -14,14 +14,18 @@ tomb:t00649
     ] ;
     :nd "+53.1645+006.7544"^^ll:
   ] ;
-  :subject t00649:p1, t00649:p2 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00649:p1, t00649:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00649:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y11M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1798-11-07"^^xsd:date ;
   :dateOfDeath "1859-10-24"^^xsd:date ;
   :nam "DIEVERTJE REINDERS" ;

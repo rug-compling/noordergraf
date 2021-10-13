@@ -14,14 +14,18 @@ tomb:t01095
     ] ;
     :nd "+53.2332+006.8751"^^ll:
   ] ;
-  :subject t01095:p1, t01095:p2, t01095:p3 ;
   :quo "RUST ZACHT"@nld ;
+  :subject t01095:p1, t01095:p2, t01095:p3 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t01095:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y4M23D"^^xsd:duration
+  ] ;
   :dateOfBirth "1891-08-01"^^xsd:date ;
   :dateOfDeath "1972-12-24"^^xsd:date ;
   :nam "TALJE STERNBERG" ;

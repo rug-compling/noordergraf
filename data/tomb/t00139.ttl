@@ -14,11 +14,15 @@ tomb:t00139
     ] ;
     :nd "+53.2062+006.5701"^^ll:
   ] ;
-  :subject t00139:p1, t00139:p2 ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00139:p1, t00139:p2 .
 
 t00139:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P53Y6M2D"^^xsd:duration
+  ] ;
   :dateOfBirth "1890-03-17"^^xsd:date ;
   :dateOfDeath "1943-09-19"^^xsd:date ;
   :nam "PIETER STEVENS" ;
@@ -29,6 +33,10 @@ t00139:p1
 
 t00139:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y6D"^^xsd:duration
+  ] ;
   :dateOfBirth "1889-08-23"^^xsd:date ;
   :dateOfDeath "1964-08-29"^^xsd:date ;
   :nam "IDA HARMS" .

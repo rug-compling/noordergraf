@@ -14,9 +14,9 @@ tomb:t00467
     ] ;
     :nd "+53.2072+005.7692"^^ll:
   ] ;
-  :subject t00467:p1 ;
   :quo "GEDENK IN UW GEBED", "RUST IN VREDE", "VOORZIEN VAN DE H.H. SACRAMENTEN" ;
-  :site site:fr8915CPleeuwarden .
+  :site site:fr8915CPleeuwarden ;
+  :subject t00467:p1 .
 
 t00467:c1
   a :City.n.01 ;
@@ -25,6 +25,10 @@ t00467:c1
 
 t00467:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P18Y11M22D"^^xsd:duration
+  ] ;
   :dateOfBirth "1937-04-13"^^xsd:date ;
   :dateOfDeath "1956-04-04"^^xsd:date ;
   :nam "THEODORUS PETRUS ALBADA JELGERSMA" ;

@@ -14,9 +14,9 @@ tomb:t00714
     ] ;
     :nd "+52.7809+006.9005"^^ll:
   ] ;
-  :subject t00714:p1, t00714:p2 ;
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
-  :site site:dr7811HEemmen .
+  :site site:dr7811HEemmen ;
+  :subject t00714:p1, t00714:p2 .
 
 t00714:c2
   a :Village.n.02 ;
@@ -25,6 +25,10 @@ t00714:c2
 
 t00714:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y4D"^^xsd:duration
+  ] ;
   :dateOfBirth "1872-09-01"^^xsd:date ;
   :dateOfDeath "1952-09-05"^^xsd:date ;
   :nam "WILLEM WIJNHOLDS" ;
@@ -41,6 +45,10 @@ t00714:p1
 
 t00714:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P96Y4M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-01-08"^^xsd:date ;
   :dateOfDeath "1962-05-16"^^xsd:date ;
   :nam "HARMTJE HARMS" ;

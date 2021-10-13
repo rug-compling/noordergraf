@@ -14,8 +14,8 @@ tomb:t01056
     ] ;
     :nd "+53.3596+006.3364"^^ll:
   ] ;
-  :subject t01056:p1, t01056:p2, t01056:p3 ;
   :site site:gr9971EBulrum ;
+  :subject t01056:p1, t01056:p2, t01056:p3 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,6 +27,10 @@ t01056:c1
 
 t01056:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y1M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1859-11-18"^^xsd:date ;
   :dateOfDeath "1908-01-04"^^xsd:date ;
   :nam "JOCHUM TENT" ;

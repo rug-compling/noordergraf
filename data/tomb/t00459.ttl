@@ -14,15 +14,19 @@ tomb:t00459
     ] ;
     :nd "+53.2073+005.7689"^^ll:
   ] ;
-  :subject t00459:p1, t00459:p2 ;
   :quo "RUST IN VREDE" ;
   :site site:fr8915CPleeuwarden ;
+  :subject t00459:p1, t00459:p2 ;
   :sym [
     a :Cross.n.03
   ] .
 
 t00459:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y11M24D"^^xsd:duration
+  ] ;
   :dateOfBirth "1864-10-02"^^xsd:date ;
   :dateOfDeath "1943-09-26"^^xsd:date ;
   :nam "JACOBUS WALON" ;
@@ -32,6 +36,10 @@ t00459:p1
 
 t00459:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y11M12D"^^xsd:duration
+  ] ;
   :dateOfBirth "1886-06-21"^^xsd:date ;
   :dateOfDeath "1967-06-02"^^xsd:date ;
   :nam "IDA WALON" .

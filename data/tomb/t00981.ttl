@@ -14,11 +14,15 @@ tomb:t00981
     ] ;
     :nd "+53.1420+006.5787"^^ll:
   ] ;
-  :subject t00981:p1 ;
-  :site site:dr9761ALeelde .
+  :site site:dr9761ALeelde ;
+  :subject t00981:p1 .
 
 t00981:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y10M8D"^^xsd:duration
+  ] ;
   :dateOfBirth "1925-05-05"^^xsd:date ;
   :dateOfDeath "1984-03-13"^^xsd:date ;
   :nam "EGBERTUS BERNHAM ELDERHOST" .

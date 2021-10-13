@@ -14,15 +14,19 @@ tomb:t00138
     ] ;
     :nd "+53.2060+006.5702"^^ll:
   ] ;
-  :subject t00138:p1, t00138:p2 ;
   :ref t00138:v1 ;
   :site site:gr9725ACgroningen ;
+  :subject t00138:p1, t00138:p2 ;
   :sym [
     a :WeepingWillow
   ] .
 
 t00138:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y5M10D"^^xsd:duration
+  ] ;
   :dateOfBirth "1856-10-15"^^xsd:date ;
   :dateOfDeath "1942-03-25"^^xsd:date ;
   :nam "PIETJE WONDAAL" ;

@@ -14,8 +14,8 @@ tomb:t00022
     ] ;
     :nd "+53.1937+006.5933"^^ll:
   ] ;
-  :subject t00022:p1 ;
   :site site:gr9722SNgroningen ;
+  :subject t00022:p1 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -32,6 +32,10 @@ t00022:c1
 
 t00022:p1
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y4M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1860-04-22"^^xsd:date ;
   :dateOfDeath "1931-09-16"^^xsd:date ;
   :nam "CHRISTINA MEIJER" ;
@@ -53,6 +57,10 @@ t00022:p1
 
 t00022:p2
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P100Y16D"^^xsd:duration
+  ] ;
   :dateOfBirth "1860-02-01"^^xsd:date ;
   :dateOfDeath "1960-02-17"^^xsd:date ;
   :nam "H. SCHAAP" ;

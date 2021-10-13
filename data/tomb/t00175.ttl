@@ -14,17 +14,25 @@ tomb:t00175
     ] ;
     :nd "+53.1908+006.5930"^^ll:
   ] ;
-  :subject t00175:p1, t00175:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00175:p1, t00175:p2 .
 
 t00175:p1
   a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y1M17D"^^xsd:duration
+  ] ;
   :dateOfBirth "1850-05-09"^^xsd:date ;
   :dateOfDeath "1932-06-26"^^xsd:date ;
   :nam "H.J. BOSMA" .
 
 t00175:p2
   a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y10M25D"^^xsd:duration
+  ] ;
   :dateOfBirth "1866-09-01"^^xsd:date ;
   :dateOfDeath "1940-07-26"^^xsd:date ;
   :nam "B. BOSMA-HAVERBULT" .
