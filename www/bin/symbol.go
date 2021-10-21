@@ -62,9 +62,9 @@ PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX symbol: <https://noordergraf.rug.nl/symbol/>
 SELECT DISTINCT ?tomb ?name {
   ?tomb :sym symbol:` + symbol + ` .
-  ?tomb :ent ?p .
+  ?tomb :subject ?p .
   ?p a :Person .
-  ?p :nam ?name .
+  ?p :name / :fullname ?name .
 }
 ORDER BY ?name ?tomb
 `

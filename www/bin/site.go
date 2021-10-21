@@ -62,9 +62,9 @@ PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX site:   <https://noordergraf.rug.nl/site/>
 SELECT DISTINCT ?tomb ?name {
   ?tomb :site site:` + site + ` .
-  ?tomb :ent ?p .
+  ?tomb :subject ?p .
   ?p a :Person .
-  ?p :nam ?name .
+  ?p :name / :fullname ?name .
 }
 ORDER BY ?name ?tomb
 `
