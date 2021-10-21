@@ -27,7 +27,8 @@ t00886:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P75Y11M"^^xsd:duration
+    :duration "P75Y11M"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -39,19 +40,20 @@ t00886:p1
   ] ;
   :nam "GEERTJE DE HAAN-EMMING" ;
   :rol [
-    a :Wife.n.01 ;
-    :tgt t00886:p2
-  ], [
     a :Mother.n.01
   ], [
     a :Grandmother.n.01
+  ], [
+    a :Wife.n.01 ;
+    :tgt t00886:p2
   ] .
 
 t00886:p2
   a :Male ;
   :age [
     a :Age ;
-    :duration "P74Y11M24D"^^xsd:duration
+    :duration "P74Y11M24D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

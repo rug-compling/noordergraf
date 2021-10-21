@@ -19,6 +19,12 @@ tomb:t00539
   :sym [
     a :Composite.n.01 ;
     :prt t00539:s7, [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
       a :Bird.n.01
     ], [
       a :Butterfly.n.01
@@ -28,12 +34,6 @@ tomb:t00539
       a :InvertedTorch
     ], [
       a :InvertedTorch
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
     ]
   ] .
 
@@ -41,7 +41,8 @@ t00539:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P62Y9M26D"^^xsd:duration
+    :duration "P62Y9M26D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

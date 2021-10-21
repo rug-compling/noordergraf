@@ -24,7 +24,8 @@ t00999:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P44Y10M14D"^^xsd:duration
+    :duration "P44Y10M14D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -46,13 +47,13 @@ t00999:p1
     :place place:Noorddijk2749981
   ] ;
   :rol [
+    a :Spouse.n.01 ;
+    :tgt t00999:p2
+  ], [
     a :Wife.n.01 ;
     :tgt t00999:p2
   ], [
     a :Mother.n.01
-  ], [
-    a :Spouse.n.01 ;
-    :tgt t00999:p2
   ] .
 
 t00999:p2

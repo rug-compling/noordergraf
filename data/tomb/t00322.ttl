@@ -24,7 +24,8 @@ t00322:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P67Y11M30D"^^xsd:duration
+    :duration "P67Y11M30D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -46,20 +47,21 @@ t00322:p1
     :text "Ps. 23 v.1."
   ] ;
   :rol [
+    a :Spouse.n.01 ;
+    :tgt t00322:p2
+  ], [
     a :Wife.n.01 ;
     :tgt t00322:p2
   ], [
     a :Mother.n.01
-  ], [
-    a :Spouse.n.01 ;
-    :tgt t00322:p2
   ] .
 
 t00322:p2
   a :Male ;
   :age [
     a :Age ;
-    :duration "P74Y9M19D"^^xsd:duration
+    :duration "P74Y9M19D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

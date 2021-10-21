@@ -14,14 +14,15 @@ tomb:t00066
     ] ;
     :nd "+53.1912+006.5948"^^ll:
   ] ;
-  :subject t00066:p1, t00066:p2 ;
-  :site site:gr9722SNgroningen .
+  :site site:gr9722SNgroningen ;
+  :subject t00066:p1, t00066:p2 .
 
 t00066:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P22Y"^^xsd:duration
+    :duration "P22Y"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

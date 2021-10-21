@@ -28,7 +28,8 @@ t00802:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P62Y4M23D"^^xsd:duration
+    :duration "P62Y4M23D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -40,20 +41,21 @@ t00802:p1
   ] ;
   :nam "IJPE BOERSMA" ;
   :rol [
+    a :Spouse.n.01 ;
+    :tgt t00802:p2
+  ], [
     a :Husband.n.01 ;
     :tgt t00802:p2
   ], [
     a :Father.n.01
-  ], [
-    a :Spouse.n.01 ;
-    :tgt t00802:p2
   ] .
 
 t00802:p2
   a :Female ;
   :age [
     a :Age ;
-    :duration "P87Y2M29D"^^xsd:duration
+    :duration "P87Y2M29D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

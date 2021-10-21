@@ -34,7 +34,8 @@ t00472:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P37Y9M17D"^^xsd:duration
+    :duration "P37Y9M17D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -48,13 +49,13 @@ t00472:p1
   :placeOfBirth t00472:c1 ;
   :placeOfDeath t00472:c1 ;
   :rol [
+    a :Spouse.n.01 ;
+    :tgt t00472:p2
+  ], [
     a :Wife.n.01 ;
     :tgt t00472:p2
   ], [
     a :Mother.n.01
-  ], [
-    a :Spouse.n.01 ;
-    :tgt t00472:p2
   ] .
 
 t00472:p2
@@ -65,7 +66,8 @@ t00472:p3
   a :Female ;
   :age [
     a :Age ;
-    :duration "P67Y1M28D"^^xsd:duration
+    :duration "P67Y1M28D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

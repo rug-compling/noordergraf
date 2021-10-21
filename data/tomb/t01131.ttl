@@ -23,7 +23,8 @@ t01131:p1
   a :Person ;
   :age [
     a :Age ;
-    :duration "P66Y7M19D"^^xsd:duration
+    :duration "P66Y7M19D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -39,7 +40,8 @@ t01131:p2
   a :Female ;
   :age [
     a :Age ;
-    :duration "P86Y3M"^^xsd:duration
+    :duration "P86Y3M"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

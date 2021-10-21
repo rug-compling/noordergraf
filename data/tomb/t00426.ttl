@@ -40,7 +40,8 @@ t00426:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P85Y9M29D"^^xsd:duration
+    :duration "P85Y9M29D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -54,12 +55,12 @@ t00426:p1
   :placeOfBirth t00426:c2 ;
   :placeOfDeath t00426:c2 ;
   :rol [
+    a :Widow.n.01 ;
+    :tgt t00426:p2
+  ], [
     a :Mother.n.01
   ], [
     a :Grandmother.n.01
-  ], [
-    a :Widow.n.01 ;
-    :tgt t00426:p2
   ] .
 
 t00426:p2

@@ -24,7 +24,8 @@ t00192:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P51Y6M2D"^^xsd:duration
+    :duration "P51Y6M2D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -46,20 +47,21 @@ t00192:p1
     :place place:Leeuwarden2751792
   ] ;
   :rol [
+    a :Spouse.n.01 ;
+    :tgt t00192:p2
+  ], [
     a :Wife.n.01 ;
     :tgt t00192:p1
   ], [
     a :Mother.n.01
-  ], [
-    a :Spouse.n.01 ;
-    :tgt t00192:p2
   ] .
 
 t00192:p2
   a :Male ;
   :age [
     a :Age ;
-    :duration "P83Y1M18D"^^xsd:duration
+    :duration "P83Y1M18D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

@@ -26,7 +26,8 @@ t01020:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P33Y3M21D"^^xsd:duration
+    :duration "P33Y3M21D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -46,12 +47,12 @@ t01020:p1
     ]
   ] ;
   :rol [
-    a :Son.n.01
-  ], [
-    a :Brother.n.01
-  ], [
     a :Brother-in-law.n.01
   ], [
     a :Uncle.n.01
+  ], [
+    a :Son.n.01
+  ], [
+    a :Brother.n.01
   ] .
 

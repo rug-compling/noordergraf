@@ -21,7 +21,8 @@ t00447:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P69Y7M4D"^^xsd:duration
+    :duration "P69Y7M4D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -48,21 +49,22 @@ t00447:p1
     :place place:Schiermonnikoog2747591
   ] ;
   :rol [
+    a :Grandmother.n.01 ;
+    :tgt t00447:p4
+  ], [
     a :Wife.n.01 ;
     :tgt t00447:p2
   ], [
     a :Mother.n.01 ;
     :tgt t00447:p3
-  ], [
-    a :Grandmother.n.01 ;
-    :tgt t00447:p4
   ] .
 
 t00447:p2
   a :Male ;
   :age [
     a :Age ;
-    :duration "P91Y6D"^^xsd:duration
+    :duration "P91Y6D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

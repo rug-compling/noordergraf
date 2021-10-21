@@ -33,7 +33,8 @@ t00058:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P72Y3M12D"^^xsd:duration
+    :duration "P72Y3M12D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -45,19 +46,20 @@ t00058:p1
   ] ;
   :nam "DOUWE NAUTA" ;
   :rol [
+    a :Husband.n.01 ;
+    :tgt t00058:p2
+  ], [
     a :Father.n.01
   ], [
     a :Grandfather.n.01
-  ], [
-    a :Husband.n.01 ;
-    :tgt t00058:p2
   ] .
 
 t00058:p2
   a :Female ;
   :age [
     a :Age ;
-    :duration "P86Y5M12D"^^xsd:duration
+    :duration "P86Y5M12D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

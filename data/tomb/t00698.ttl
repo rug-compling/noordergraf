@@ -25,7 +25,8 @@ t00698:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P52Y8M6D"^^xsd:duration
+    :duration "P52Y8M6D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -47,13 +48,13 @@ t00698:p1
     :place place:Groningen2755251
   ] ;
   :rol [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :tgt t00698:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00698:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00698:p2

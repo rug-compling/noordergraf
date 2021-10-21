@@ -19,6 +19,12 @@ tomb:t00540
   :sym [
     a :Composite.n.01 ;
     :prt t00540:s7, [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ], [
       a :Bird.n.01
     ], [
       a :Butterfly.n.01
@@ -28,12 +34,6 @@ tomb:t00540
       a :InvertedTorch
     ], [
       a :InvertedTorch
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
     ]
   ] .
 
@@ -41,7 +41,8 @@ t00540:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P81Y11M28D"^^xsd:duration
+    :duration "P81Y11M28D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

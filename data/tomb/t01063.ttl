@@ -26,7 +26,8 @@ t01063:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P76Y3M14D"^^xsd:duration
+    :duration "P76Y3M14D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -38,18 +39,19 @@ t01063:p1
   ] ;
   :nam "ANNE PIJPKER" ;
   :rol [
-    a :Parent.n.01
-  ], [
     a :Grandparent.n.01
   ], [
     a :Great_grandparent.n.01
+  ], [
+    a :Parent.n.01
   ] .
 
 t01063:p2
   a :Female ;
   :age [
     a :Age ;
-    :duration "P88Y3M26D"^^xsd:duration
+    :duration "P88Y3M26D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

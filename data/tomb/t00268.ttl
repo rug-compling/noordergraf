@@ -24,7 +24,8 @@ t00268:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P34Y7M4D"^^xsd:duration
+    :duration "P34Y7M4D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -41,14 +42,14 @@ t00268:p1
     :place place:Lageland11746820
   ] ;
   :rol [
-    a :Son.n.01 ;
-    :tgt t00268:p2
-  ], [
     a :Brother.n.01 ;
     :tgt t00268:p2
   ], [
     a :Housemate.n.01 ;
     :tgt t00268:p3
+  ], [
+    a :Son.n.01 ;
+    :tgt t00268:p2
   ] .
 
 t00268:p2

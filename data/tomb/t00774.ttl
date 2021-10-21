@@ -24,7 +24,8 @@ t00774:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P54Y1M2D"^^xsd:duration
+    :duration "P54Y1M2D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -36,19 +37,19 @@ t00774:p1
   ] ;
   :nam "WILLEM JOLING" ;
   :occupation [
+    a :Secretary.n.02 ;
+    :hisco hisco:30000 ;
+    :organisation [
+      a :Organization.n.01 ;
+      :nam "WATERSCHAP WEERDINGE"
+    ]
+  ], [
     a :Taxman.n.01 ;
     :hisco hisco:31020 ;
     :location [
       a :Municipality.n.01 ;
       :name "EMMEN" ;
       :place place:Emmen2756136
-    ]
-  ], [
-    a :Secretary.n.02 ;
-    :hisco hisco:30000 ;
-    :organisation [
-      a :Organization.n.01 ;
-      :nam "WATERSCHAP WEERDINGE"
     ]
   ] ;
   :placeOfBirth [

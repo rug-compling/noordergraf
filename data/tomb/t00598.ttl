@@ -34,7 +34,8 @@ t00598:p1
   a :Male ;
   :age [
     a :Age ;
-    :duration "P71Y11M27D"^^xsd:duration
+    :duration "P71Y11M27D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -46,13 +47,13 @@ t00598:p1
   ] ;
   :nam "HERMAN JOHAN POORT" ;
   :rol [
+    a :Grandfather.n.01 ;
+    :tgt t00598:p3
+  ], [
     a :Husband.n.01 ;
     :tgt t00598:p2
   ], [
     a :Father.n.01 ;
-    :tgt t00598:p3
-  ], [
-    a :Grandfather.n.01 ;
     :tgt t00598:p3
   ] .
 
@@ -60,7 +61,8 @@ t00598:p2
   a :Female ;
   :age [
     a :Age ;
-    :duration "P90Y3M27D"^^xsd:duration
+    :duration "P90Y3M27D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

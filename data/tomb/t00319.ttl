@@ -29,7 +29,8 @@ t00319:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P88Y3M16D"^^xsd:duration
+    :duration "P88Y3M16D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -41,13 +42,13 @@ t00319:p1
   ] ;
   :nam "GRIET JANSEN-SLOMP" ;
   :rol t00319:r1, [
+    a :Grandmother.n.01
+  ], [
     a :Spouse.n.01 ;
     :before t00319:r1 ;
     :tgt t00319:p3
   ], [
     a :Mother.n.01
-  ], [
-    a :Grandmother.n.01
   ] .
 
 t00319:p2

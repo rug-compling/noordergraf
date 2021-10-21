@@ -29,7 +29,8 @@ t00277:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P59Y2M4D"^^xsd:duration
+    :duration "P59Y2M4D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
@@ -47,12 +48,12 @@ t00277:p1
   ] ;
   :placeOfDeath t00277:c2 ;
   :rol [
-    a :Wife.n.01 ;
-    :tgt t00277:p2
-  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
+    :tgt t00277:p2
+  ], [
+    a :Wife.n.01 ;
     :tgt t00277:p2
   ] .
 
@@ -60,7 +61,8 @@ t00277:p2
   a :Male ;
   :age [
     a :Age ;
-    :duration "P78Y4M15D"^^xsd:duration
+    :duration "P78Y4M15D"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;

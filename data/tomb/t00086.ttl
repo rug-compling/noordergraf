@@ -14,15 +14,16 @@ tomb:t00086
     ] ;
     :nd "+53.2040+006.5733"^^ll:
   ] ;
-  :subject t00086:p1, t00086:p2 ;
   :quo "DAT ZIJ RUSTE IN VREDE" ;
-  :site site:gr9721AAgroningen .
+  :site site:gr9721AAgroningen ;
+  :subject t00086:p1, t00086:p2 .
 
 t00086:p1
   a :Female ;
   :age [
     a :Age ;
-    :duration "P57Y4M"^^xsd:duration
+    :duration "P57Y4M"^^xsd:duration ;
+    :inferred true
   ] ;
   :dateOfBirth [
     a :Date ;
