@@ -35,7 +35,11 @@ t01060:p1
     a :Date ;
     :date "1960-05-26"^^xsd:date
   ] ;
-  :nam "J.J. DIJKHUIS" .
+  :name [
+    a :Name ;
+    :fullname "J.J. Dijkhuis" ;
+    :text "TODO: J.J. Dijkhuis"
+  ] .
 
 t01060:p2
   a :Person ;
@@ -52,7 +56,11 @@ t01060:p2
     a :Date ;
     :date "1981-01-21"^^xsd:date
   ] ;
-  :nam "J. DIJKHUIS" ;
+  :name [
+    a :Name ;
+    :fullname "J. Dijkhuis" ;
+    :text "TODO: J. Dijkhuis"
+  ] ;
   :occupation [
     a :Farmer.n.01 ;
     :hisco hisco:61220 ;

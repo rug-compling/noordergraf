@@ -14,8 +14,8 @@ tomb:t00797
     ] ;
     :nd "+53.2772+006.6948"^^ll:
   ] ;
-  :subject t00797:p1 ;
-  :site site:gr9791KEten_boer .
+  :site site:gr9791KEten_boer ;
+  :subject t00797:p1 .
 
 t00797:p1
   a :Male ;
@@ -23,7 +23,11 @@ t00797:p1
     a :Date ;
     :date "1945-04-20"^^xsd:date
   ] ;
-  :nam "JACOBUS HUBERTES TEEUWEN" ;
+  :name [
+    a :Name ;
+    :fullname "Jacobus Hubertes Teeuwen" ;
+    :text "TODO: Jacobus Hubertes Teeuwen"
+  ] ;
   :placeOfBirth [
     a :City.n.01 ;
     :name "HAARLEM" ;

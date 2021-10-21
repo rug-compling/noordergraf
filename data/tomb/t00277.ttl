@@ -40,7 +40,11 @@ t00277:p1
     a :Date ;
     :date "1960-07-08"^^xsd:date
   ] ;
-  :nam "BARBERTJE BOUMA" ;
+  :name [
+    a :Name ;
+    :fullname "Barbertje Bouma" ;
+    :text "TODO: Barbertje Bouma"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "GODLINZE" ;
@@ -48,13 +52,13 @@ t00277:p1
   ] ;
   :placeOfDeath t00277:c2 ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Spouse.n.01 ;
     :tgt t00277:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00277:p2
+  ], [
+    a :Mother.n.01
   ] .
 
 t00277:p2
@@ -72,7 +76,11 @@ t00277:p2
     a :Date ;
     :date "1978-02-05"^^xsd:date
   ] ;
-  :nam "EGBERT DE VRIES" ;
+  :name [
+    a :Name ;
+    :fullname "Egbert de Vries" ;
+    :text "TODO: Egbert de Vries"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "'T ZANDT" ;

@@ -35,7 +35,11 @@ t00648:p1
     a :Date ;
     :date "1880-10-30"^^xsd:date
   ] ;
-  :nam "SAMUEL C. DE BOER" ;
+  :name [
+    a :Name ;
+    :fullname "Samuel C. de Boer" ;
+    :text "TODO: Samuel C. de Boer"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00648:p2
@@ -43,5 +47,9 @@ t00648:p1
 
 t00648:p2
   a :Female ;
-  :nam "DIEVERTJE J. REINDERS" .
+  :name [
+    a :Name ;
+    :fullname "Dievertje J. Reinders" ;
+    :text "TODO: Dievertje J. Reinders"
+  ] .
 

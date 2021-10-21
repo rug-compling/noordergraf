@@ -14,9 +14,9 @@ tomb:t00968
     ] ;
     :nd "+53.1620+006.6131"^^ll:
   ] ;
-  :subject t00968:p1, t00968:p2 ;
   :quo "JEZUS ZEIDE DIE IN \\ MIJ GELOOFT ZAL LEVEN AL \\ WARE HIJ OOK GESTORVEN"@nld ;
   :site site:gr9752CMharen ;
+  :subject t00968:p1, t00968:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,7 +27,11 @@ t00968:p1
     a :Date ;
     :date "1932-10-06"^^xsd:date
   ] ;
-  :nam "JACOB VOS" ;
+  :name [
+    a :Name ;
+    :fullname "Jacob Vos" ;
+    :text "TODO: Jacob Vos"
+  ] ;
   :rol [
     a :Widower.n.01 ;
     :begin "1916"^^xsd:gYear ;
@@ -38,5 +42,9 @@ t00968:p1
 
 t00968:p2
   a :Female ;
-  :nam "TRIJNE BOS" .
+  :name [
+    a :Name ;
+    :fullname "Trijne Bos" ;
+    :text "TODO: Trijne Bos"
+  ] .
 

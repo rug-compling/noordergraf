@@ -36,7 +36,11 @@ t00157:p1
     a :Date ;
     :date "1941-04-22"^^xsd:date
   ] ;
-  :nam "ELIZABETH DENEKAMP" ;
+  :name [
+    a :Name ;
+    :fullname "Elizabeth Denekamp" ;
+    :text "TODO: Elizabeth Denekamp"
+  ] ;
   :rol [
     a :Widow.n.01 ;
     :tgt t00157:p2
@@ -44,7 +48,11 @@ t00157:p1
 
 t00157:p2
   a :Male ;
-  :nam "WIEBE BOERSMA" .
+  :name [
+    a :Name ;
+    :fullname "Wiebe Boersma" ;
+    :text "TODO: Wiebe Boersma"
+  ] .
 
 t00157:p3
   a :Female ;
@@ -61,7 +69,11 @@ t00157:p3
     a :Date ;
     :date "1953-12-24"^^xsd:date
   ] ;
-  :nam "JOHANNA WUBBIENA BOERSMA" ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Wubbiena Boersma" ;
+    :text "TODO: Johanna Wubbiena Boersma"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00157:p4
@@ -69,5 +81,9 @@ t00157:p3
 
 t00157:p4
   a :Male ;
-  :nam "P. GERRITS" .
+  :name [
+    a :Name ;
+    :fullname "P. Gerrits" ;
+    :text "TODO: P. Gerrits"
+  ] .
 

@@ -37,7 +37,11 @@ t00329:p1
     a :Date ;
     :date "1937-07-06"^^xsd:date
   ] ;
-  :nam "LAMBERTJE HONING" ;
+  :name [
+    a :Name ;
+    :fullname "Lambertje Honing" ;
+    :text "TODO: Lambertje Honing"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "HUIZEN" ;
@@ -70,7 +74,11 @@ t00329:p2
     a :Date ;
     :date "1964-10-02"^^xsd:date
   ] ;
-  :nam "ROELOF POST" ;
+  :name [
+    a :Name ;
+    :fullname "Roelof Post" ;
+    :text "TODO: Roelof Post"
+  ] ;
   :placeOfBirth t00329:c2 ;
   :placeOfDeath [
     a :Village.n.02 ;
@@ -87,15 +95,27 @@ t00329:p2
 
 t00329:p3
   a :Female ;
-  :nam "AALTJE DELIAANTJE" .
+  :name [
+    a :Name ;
+    :fullname "Aaltje Deliaantje" ;
+    :text "TODO: Aaltje Deliaantje"
+  ] .
 
 t00329:p4
   a :Male ;
-  :nam "ANDRE" .
+  :name [
+    a :Name ;
+    :fullname "Andre" ;
+    :text "TODO: Andre"
+  ] .
 
 t00329:p5
   a :Male ;
-  :nam "ROEL" ;
+  :name [
+    a :Name ;
+    :fullname "Roel" ;
+    :text "TODO: Roel"
+  ] ;
   :rol [
     a :Grandchild.n.01 ;
     :tgt t00329:p1
@@ -106,7 +126,11 @@ t00329:p5
 
 t00329:p6
   a :Female ;
-  :nam "INGE" ;
+  :name [
+    a :Name ;
+    :fullname "Inge" ;
+    :text "TODO: Inge"
+  ] ;
   :rol [
     a :Grandchild.n.01 ;
     :tgt t00329:p1
@@ -117,7 +141,11 @@ t00329:p6
 
 t00329:p7
   a :Male ;
-  :nam "ROY" ;
+  :name [
+    a :Name ;
+    :fullname "Roy" ;
+    :text "TODO: Roy"
+  ] ;
   :rol [
     a :Grandchild.n.01 ;
     :tgt t00329:p1

@@ -33,7 +33,11 @@ t00266:p1
     a :Date ;
     :date "1965-01-01"^^xsd:date
   ] ;
-  :nam "JANNES BLAAUW" ;
+  :name [
+    a :Name ;
+    :fullname "Jannes Blaauw" ;
+    :text "TODO: Jannes Blaauw"
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00266:p2
@@ -46,5 +50,9 @@ t00266:p1
 
 t00266:p2
   a :Female ;
-  :nam "JANTJE WOLF" .
+  :name [
+    a :Name ;
+    :fullname "Jantje Wolf" ;
+    :text "TODO: Jantje Wolf"
+  ] .
 

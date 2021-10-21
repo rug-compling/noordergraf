@@ -36,7 +36,11 @@ t00225:p1
     a :Date ;
     :date "1906-05-11"^^xsd:date
   ] ;
-  :nam "W. KOLKMAN" ;
+  :name [
+    a :Name ;
+    :fullname "W. Kolkman" ;
+    :text "TODO: W. Kolkman"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00225:p2
@@ -46,5 +50,9 @@ t00225:p1
 
 t00225:p2
   a :Female ;
-  :nam "F. VAN LANG" .
+  :name [
+    a :Name ;
+    :fullname "F. van Lang" ;
+    :text "TODO: F. van Lang"
+  ] .
 

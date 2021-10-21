@@ -47,7 +47,11 @@ t00970:p1
     a :Date ;
     :date "1941-11-11"^^xsd:date
   ] ;
-  :nam "HARMANNUS C.P. VENEMA" ;
+  :name [
+    a :Name ;
+    :fullname "Harmannus C.P. Venema" ;
+    :text "TODO: Harmannus C.P. Venema"
+  ] ;
   :rol t00970:r2, [
     a :Widower.n.01 ;
     :before t00970:r2 ;
@@ -59,11 +63,19 @@ t00970:p1
 
 t00970:p2
   a :Female ;
-  :nam "L. ELEMA" .
+  :name [
+    a :Name ;
+    :fullname "L. Elema" ;
+    :text "TODO: L. Elema"
+  ] .
 
 t00970:p3
   a :Female ;
-  :nam "E.KOLSTEIN" .
+  :name [
+    a :Name ;
+    :fullname "E.KOLSTEIN" ;
+    :text "TODO: E.KOLSTEIN"
+  ] .
 
 t00970:r2
   a :Husband.n.01 ;

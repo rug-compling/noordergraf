@@ -19,6 +19,12 @@ tomb:t00539
   :sym [
     a :Composite.n.01 ;
     :prt t00539:s7, [
+      a :Cocoon.n.01
+    ], [
+      a :InvertedTorch
+    ], [
+      a :InvertedTorch
+    ], [
       a :Frond.n.01
     ], [
       a :Frond.n.01
@@ -28,12 +34,6 @@ tomb:t00539
       a :Bird.n.01
     ], [
       a :Butterfly.n.01
-    ], [
-      a :Cocoon.n.01
-    ], [
-      a :InvertedTorch
-    ], [
-      a :InvertedTorch
     ]
   ] .
 
@@ -52,7 +52,11 @@ t00539:p1
     a :Date ;
     :date "1880-06-19"^^xsd:date
   ] ;
-  :nam "JAN EPPES VAN DER WIJK" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Eppes van der Wijk" ;
+    :text "TODO: Jan Eppes van der Wijk"
+  ] ;
   :occupation [
     a :Principal.n.02 ;
     :hisco hisco:13320 ;
@@ -80,7 +84,11 @@ t00539:p1
 
 t00539:p2
   a :Female ;
-  :nam "THEODORA HENRICA MULLER" .
+  :name [
+    a :Name ;
+    :fullname "Theodora Henrica Muller" ;
+    :text "TODO: Theodora Henrica Muller"
+  ] .
 
 t00539:s7
   a :OakBranch .

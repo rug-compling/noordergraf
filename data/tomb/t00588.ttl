@@ -35,7 +35,12 @@ t00588:p1
     a :Date ;
     :date "2010-10-30"^^xsd:date
   ] ;
-  :nam "BERENDINUS JAN BRUINS" ;
+  :name [
+    a :Name ;
+    :fullname "Berendinus Jan Bruins" ;
+    :suffix "B.zoon" ;
+    :text "TODO: Berendinus Jan Bruins B.zoon"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "WINSUM" ;
@@ -45,6 +50,5 @@ t00588:p1
     a :City.n.01 ;
     :name "'S-HERTOGENBOSCH" ;
     :place place:sHertogenbosch2747351
-  ] ;
-  :suffix "B.ZOON" .
+  ] .
 

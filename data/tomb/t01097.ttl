@@ -35,7 +35,11 @@ t01097:p1
     a :Date ;
     :date "1872-04-17"^^xsd:date
   ] ;
-  :nam "BERENT A. KLIMP" ;
+  :name [
+    a :Name ;
+    :fullname "Berent A. Klimp" ;
+    :text "TODO: Berent A. Klimp"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t01097:p2, t01097:p3
@@ -43,9 +47,17 @@ t01097:p1
 
 t01097:p2
   a :Person ;
-  :nam "A.B. KLIMP" .
+  :name [
+    a :Name ;
+    :fullname "A.B. Klimp" ;
+    :text "TODO: A.B. Klimp"
+  ] .
 
 t01097:p3
   a :Person ;
-  :nam "A.H. SCHEPEL" .
+  :name [
+    a :Name ;
+    :fullname "A.H. Schepel" ;
+    :text "TODO: A.H. Schepel"
+  ] .
 

@@ -33,7 +33,11 @@ t00431:p1
     a :Date ;
     :date "1978-02-23"^^xsd:date
   ] ;
-  :nam "TJITSKE P. TEENSMA" ;
+  :name [
+    a :Name ;
+    :fullname "Tjitske P. Teensma" ;
+    :text "TODO: Tjitske P. Teensma"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00431:p2
@@ -54,11 +58,19 @@ t00431:p2
     a :Date ;
     :date "1999-01-15"^^xsd:date
   ] ;
-  :nam "WIJNAND PAULUS DE JONG" .
+  :name [
+    a :Name ;
+    :fullname "Wijnand Paulus de Jong" ;
+    :text "TODO: Wijnand Paulus de Jong"
+  ] .
 
 t00431:p3
   a :Male ;
-  :nam "KAHLIL GIBRAN" ;
+  :name [
+    a :Name ;
+    :fullname "Kahlil Gibran" ;
+    :text "TODO: Kahlil Gibran"
+  ] ;
   :occupation [
     a :Author.n.01 ;
     :hisco hisco:15120 ;

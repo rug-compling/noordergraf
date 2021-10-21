@@ -37,7 +37,11 @@ t00666:p1
     a :Date ;
     :date "1915-04-25"^^xsd:date
   ] ;
-  :nam "TRIJNTJE D. DE JONG" ;
+  :name [
+    a :Name ;
+    :fullname "Trijntje D. de Jong" ;
+    :text "TODO: Trijntje D. de Jong"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00666:p2
@@ -47,7 +51,11 @@ t00666:p1
 
 t00666:p2
   a :Male ;
-  :nam "T.IJ. DE BOER" .
+  :name [
+    a :Name ;
+    :fullname "T.IJ. de Boer" ;
+    :text "TODO: T.IJ. de Boer"
+  ] .
 
 t00666:v1
   a :Quote ;

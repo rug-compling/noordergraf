@@ -40,7 +40,11 @@ t00002:p1
     a :Date ;
     :date "1942-08-27"^^xsd:date
   ] ;
-  :nam "MARTJE BALKEMA" ;
+  :name [
+    a :Name ;
+    :fullname "Martje Balkema" ;
+    :text "TODO: Martje Balkema"
+  ] ;
   :rol [
     a :Widow.n.01 ;
     :tgt t00002:p2
@@ -48,5 +52,9 @@ t00002:p1
 
 t00002:p2
   a :Male ;
-  :nam "E. TIMMER" .
+  :name [
+    a :Name ;
+    :fullname "E. Timmer" ;
+    :text "TODO: E. Timmer"
+  ] .
 

@@ -14,8 +14,8 @@ tomb:t00001
     ] ;
     :nd "+53.1900+006.5933"^^ll:
   ] ;
-  :subject t00001:p1, t00001:p2 ;
   :site site:gr9722SNgroningen ;
+  :subject t00001:p1, t00001:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -35,7 +35,11 @@ t00001:p1
     a :Date ;
     :date "1933-10-12"^^xsd:date
   ] ;
-  :nam "KLAAS SWART" ;
+  :name [
+    a :Name ;
+    :fullname "Klaas Swart" ;
+    :text "TODO: Klaas Swart"
+  ] ;
   :rol [
     a :Son.n.01
   ], [
@@ -57,7 +61,11 @@ t00001:p2
     a :Date ;
     :date "1936-02-13"^^xsd:date
   ] ;
-  :nam "ANNECHIEN MULDER" ;
+  :name [
+    a :Name ;
+    :fullname "Annechien Mulder" ;
+    :text "TODO: Annechien Mulder"
+  ] ;
   :rol [
     a :Wife.n.01
   ], [

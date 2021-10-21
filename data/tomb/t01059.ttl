@@ -42,7 +42,11 @@ t01059:p1
     a :Date ;
     :date "1955-12-14"^^xsd:date
   ] ;
-  :nam "ELZO VAN KAMPEN" ;
+  :name [
+    a :Name ;
+    :fullname "Elzo van Kampen" ;
+    :text "TODO: Elzo van Kampen"
+  ] ;
   :placeOfBirth t01059:c1 ;
   :placeOfDeath t01059:c1 ;
   :rol t01059:r1, [
@@ -53,11 +57,19 @@ t01059:p1
 
 t01059:p2
   a :Female ;
-  :nam "J. BULTHUIS" .
+  :name [
+    a :Name ;
+    :fullname "J. Bulthuis" ;
+    :text "TODO: J. Bulthuis"
+  ] .
 
 t01059:p3
   a :Female ;
-  :nam "J. WOLTERS" .
+  :name [
+    a :Name ;
+    :fullname "J. Wolters" ;
+    :text "TODO: J. Wolters"
+  ] .
 
 t01059:r1
   a :Spouse.n.01 ;

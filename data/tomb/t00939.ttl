@@ -36,7 +36,11 @@ t00939:p1
     a :Date ;
     :date "1956-03-28"^^xsd:date
   ] ;
-  :nam "JAN KNOOP" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Knoop" ;
+    :text "TODO: Jan Knoop"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00939:p2
@@ -44,5 +48,9 @@ t00939:p1
 
 t00939:p2
   a :Female ;
-  :nam "AUKTJE RAUKENA" .
+  :name [
+    a :Name ;
+    :fullname "Auktje Raukena" ;
+    :text "TODO: Auktje Raukena"
+  ] .
 

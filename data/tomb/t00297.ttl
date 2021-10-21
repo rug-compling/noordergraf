@@ -50,7 +50,11 @@ t00297:p1
     a :Date ;
     :date "1924-07-23"^^xsd:date
   ] ;
-  :nam "HENDRIKJE" ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikje" ;
+    :text "TODO: Hendrikje"
+  ] ;
   :placeOfBirth t00297:c1 ;
   :placeOfDeath t00297:c1 ;
   :rol [
@@ -60,7 +64,11 @@ t00297:p1
 
 t00297:p2
   a :Male ;
-  :nam "G. STRIJKER" .
+  :name [
+    a :Name ;
+    :fullname "G. Strijker" ;
+    :text "TODO: G. Strijker"
+  ] .
 
 t00297:p3
   a :Female ;

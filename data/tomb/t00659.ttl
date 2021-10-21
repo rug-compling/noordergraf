@@ -14,9 +14,9 @@ tomb:t00659
     ] ;
     :nd "+53.4039+006.7489"^^ll:
   ] ;
-  :subject t00659:p1, t00659:p2 ;
   :quo "ANNO 1708 DEN 5 DECEMBER IS \\ DE DEUCHTSAME IMPKE WOL- \\ TERS DE GEWESENE HUISVROUW \\ VAN DE EERBARE ALYE JANS SMIDT \\ OPT OOSTERNIELANT SEER CHRIS \\ TELYCK INDEN HEERE ONTSLAPEN \\ VERWACHTENDE MET ALLE GELOO \\ VIGEN EEN ZALIGE OPSTANDINGE \\ ALLEEN DOOR JESUM CHRISTUM"@nld ;
-  :site site:gr9985SCoosternieland .
+  :site site:gr9985SCoosternieland ;
+  :subject t00659:p1, t00659:p2 .
 
 t00659:p1
   a :Female ;
@@ -24,7 +24,11 @@ t00659:p1
     a :Date ;
     :date "1708-12-05"^^xsd:date
   ] ;
-  :nam "IMPKE WOLTERS" ;
+  :name [
+    a :Name ;
+    :fullname "Impke Wolters" ;
+    :text "TODO: Impke Wolters"
+  ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "OOSTERNIELAND" ;
@@ -37,5 +41,9 @@ t00659:p1
 
 t00659:p2
   a :Male ;
-  :nam "ALYE JANS SMIDT" .
+  :name [
+    a :Name ;
+    :fullname "Alye Jans Smidt" ;
+    :text "TODO: Alye Jans Smidt"
+  ] .
 

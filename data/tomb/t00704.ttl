@@ -41,7 +41,12 @@ t00704:p1
     a :Date ;
     :date "1927-02-24"^^xsd:date
   ] ;
-  :nam "WIARDUS WILLEM BAN HAERSMA BUMA" ;
+  :name [
+    a :Name ;
+    :fullname "Wiardus Willem Ban Haersma Buma" ;
+    :prefix "Mr" ;
+    :text "TODO: Mr Wiardus Willem Ban Haersma Buma"
+  ] ;
   :occupation [
     a :Judge.n.01 ;
     :hisco hisco:12210 ;
@@ -64,6 +69,5 @@ t00704:p1
     :name "SNEEK" ;
     :place place:Sneek2747063
   ] ;
-  :placeOfDeath t00704:c1 ;
-  :prefix "MR" .
+  :placeOfDeath t00704:c1 .
 

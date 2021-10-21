@@ -42,7 +42,11 @@ t01107:p1
     a :Date ;
     :date "1960-06-18"^^xsd:date
   ] ;
-  :nam "JANSJE BAKKER" ;
+  :name [
+    a :Name ;
+    :fullname "Jansje Bakker" ;
+    :text "TODO: Jansje Bakker"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t01107:p2
@@ -52,5 +56,9 @@ t01107:p1
 
 t01107:p2
   a :Male ;
-  :nam "G. BARF" .
+  :name [
+    a :Name ;
+    :fullname "G. Barf" ;
+    :text "TODO: G. Barf"
+  ] .
 

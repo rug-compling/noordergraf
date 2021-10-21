@@ -32,8 +32,12 @@ t00542:p1
     a :Date ;
     :date "1896-08-20"^^xsd:date
   ] ;
-  :nam "JAN VAN LINGE" ;
-  :suffix "AZ" .
+  :name [
+    a :Name ;
+    :fullname "Jan van Linge" ;
+    :suffix "Az" ;
+    :text "TODO: Jan van Linge Az"
+  ] .
 
 t00542:p2
   a :Female ;
@@ -50,7 +54,11 @@ t00542:p2
     a :Date ;
     :date "1913-11-08"^^xsd:date
   ] ;
-  :nam "TJIETSKA VAN DER WAL" ;
+  :name [
+    a :Name ;
+    :fullname "Tjietska van der Wal" ;
+    :text "TODO: Tjietska van der Wal"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00542:p1

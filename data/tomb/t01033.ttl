@@ -36,7 +36,11 @@ t01033:p1
     a :Date ;
     :date "1922-12-30"^^xsd:date
   ] ;
-  :nam "GERRIT FERINGA" ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit Feringa" ;
+    :text "TODO: Gerrit Feringa"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01033:p2
@@ -44,7 +48,11 @@ t01033:p1
 
 t01033:p2
   a :Female ;
-  :nam "TRIENTJE SCHEERINGA" .
+  :name [
+    a :Name ;
+    :fullname "Trientje Scheeringa" ;
+    :text "TODO: Trientje Scheeringa"
+  ] .
 
 t01033:v1
   a :Quote ;

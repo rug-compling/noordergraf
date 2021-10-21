@@ -35,7 +35,11 @@ t00753:p1
     a :Date ;
     :date "1871-01-22"^^xsd:date
   ] ;
-  :nam "LAMBERTUS" ;
+  :name [
+    a :Name ;
+    :fullname "Lambertus" ;
+    :text "TODO: Lambertus"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00753:p2, t00753:p3
@@ -43,9 +47,17 @@ t00753:p1
 
 t00753:p2
   a :Person ;
-  :nam "J. FABER" .
+  :name [
+    a :Name ;
+    :fullname "J. Faber" ;
+    :text "TODO: J. Faber"
+  ] .
 
 t00753:p3
   a :Person ;
-  :nam "J.R. VOS" .
+  :name [
+    a :Name ;
+    :fullname "J.R. Vos" ;
+    :text "TODO: J.R. Vos"
+  ] .
 

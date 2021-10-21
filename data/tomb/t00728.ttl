@@ -40,16 +40,24 @@ t00728:p1
     a :Date ;
     :date "1898-07-07"^^xsd:date
   ] ;
-  :nam "JAN LIPMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Lipman" ;
+    :suffix "Hzn" ;
+    :text "TODO: Jan Lipman Hzn"
+  ] ;
   :placeOfBirth t00728:c1 ;
   :placeOfDeath t00728:c1 ;
   :rol [
     a :Widower.n.01 ;
     :tgt t00728:p2
-  ] ;
-  :suffix "HZN" .
+  ] .
 
 t00728:p2
   a :Female ;
-  :nam "JANTIEN WILTING" .
+  :name [
+    a :Name ;
+    :fullname "Jantien Wilting" ;
+    :text "TODO: Jantien Wilting"
+  ] .
 

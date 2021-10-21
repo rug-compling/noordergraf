@@ -14,9 +14,9 @@ tomb:t00964
     ] ;
     :nd "+53.1628+006.6123"^^ll:
   ] ;
-  :subject t00964:p1, t00964:p2 ;
   :quo "GELIJK HET GRAS IS ONS \\ KORTSTONDIG LEVEN"@nld ;
   :site site:gr9752CMharen ;
+  :subject t00964:p1, t00964:p2 ;
   :sym [
     a :Frond.n.01
   ] .
@@ -27,7 +27,11 @@ t00964:p1
     a :Date ;
     :date "1916-04-25"^^xsd:date
   ] ;
-  :nam "TRIJNJE BOS" ;
+  :name [
+    a :Name ;
+    :fullname "Trijnje Bos" ;
+    :text "TODO: Trijnje Bos"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00964:p2
@@ -40,5 +44,9 @@ t00964:p1
 
 t00964:p2
   a :Male ;
-  :nam "J. VOS" .
+  :name [
+    a :Name ;
+    :fullname "J. Vos" ;
+    :text "TODO: J. Vos"
+  ] .
 

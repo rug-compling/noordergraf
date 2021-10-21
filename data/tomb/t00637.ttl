@@ -35,7 +35,12 @@ t00637:p1
     a :Date ;
     :date "1910-03-03"^^xsd:date
   ] ;
-  :nam "JACOMIJNA MEURSING" ;
+  :name [
+    a :Name ;
+    :fullname "Jacomijna Meursing" ;
+    :prefix "Mevrouw" ;
+    :text "TODO: Mevrouw Jacomijna Meursing"
+  ] ;
   :placeOfBirth [
     a :Town.n.01 ;
     :name "HOOGEZAND" ;
@@ -46,7 +51,6 @@ t00637:p1
     :name "GRONINGEN" ;
     :place place:Groningen2755251
   ] ;
-  :prefix "MEVROUW" ;
   :rol [
     a :Widow.n.01 ;
     :begin "1877-05-18"^^xsd:date ;
@@ -55,6 +59,10 @@ t00637:p1
 
 t00637:p2
   a :Male ;
-  :nam "ROELOF HOOITES" ;
-  :prefix "HEER" .
+  :name [
+    a :Name ;
+    :fullname "Roelof Hooites" ;
+    :prefix "Heer" ;
+    :text "TODO: Heer Roelof Hooites"
+  ] .
 

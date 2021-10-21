@@ -14,9 +14,9 @@ tomb:t01123
     ] ;
     :nd "+53.2258+006.3532"^^ll:
   ] ;
-  :subject t01123:p1 ;
   :quo "Gij die mijn graf, Voorbij komt treden, Gedenk dan ook aan mij Dat ik eens hier beneden Zoo bent geweest als gij"@nld ;
   :site site:gr9822AKniekerk ;
+  :subject t01123:p1 ;
   :sym [
     a :Composite.n.01 ;
     :prt t01123:s2, t01123:s3
@@ -37,7 +37,11 @@ t01123:p1
     a :Date ;
     :date "1861-03-05"^^xsd:date
   ] ;
-  :nam "DERK PIETERS WIERENGA" ;
+  :name [
+    a :Name ;
+    :fullname "Derk Pieters Wierenga" ;
+    :text "TODO: Derk Pieters Wierenga"
+  ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "NIETAP" ;
@@ -50,7 +54,11 @@ t01123:p1
 
 t01123:p2
   a :Female ;
-  :nam "TRIENTJE HINDRIKS DIJKSTRA" .
+  :name [
+    a :Name ;
+    :fullname "Trientje Hindriks Dijkstra" ;
+    :text "TODO: Trientje Hindriks Dijkstra"
+  ] .
 
 t01123:s2
   a :OakBranch .

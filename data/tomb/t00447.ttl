@@ -32,7 +32,11 @@ t00447:p1
     a :Date ;
     :date "1982-03-08"^^xsd:date
   ] ;
-  :nam "JUSTINA WUTSCHER" ;
+  :name [
+    a :Name ;
+    :fullname "Justina Wutscher" ;
+    :text "TODO: Justina Wutscher"
+  ] ;
   :placeOfBirth [
     a :Town.n.01 ;
     :name "ZWETTL" ;
@@ -49,14 +53,14 @@ t00447:p1
     :place place:Schiermonnikoog2747591
   ] ;
   :rol [
+    a :Mother.n.01 ;
+    :tgt t00447:p3
+  ], [
     a :Grandmother.n.01 ;
     :tgt t00447:p4
   ], [
     a :Wife.n.01 ;
     :tgt t00447:p2
-  ], [
-    a :Mother.n.01 ;
-    :tgt t00447:p3
   ] .
 
 t00447:p2
@@ -74,7 +78,11 @@ t00447:p2
     a :Date ;
     :date "2003-01-31"^^xsd:date
   ] ;
-  :nam "DOUWE HEK" ;
+  :name [
+    a :Name ;
+    :fullname "Douwe Hek" ;
+    :text "TODO: Douwe Hek"
+  ] ;
   :placeOfBirth [
     a :Island.n.01 ;
     :name "TERSCHELLING" ;

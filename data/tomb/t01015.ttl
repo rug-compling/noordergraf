@@ -41,7 +41,11 @@ t01015:p1
     a :Date ;
     :date "1893-07-28"^^xsd:date
   ] ;
-  :nam "GRIETJE WUBBINA" ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Wubbina" ;
+    :text "TODO: Grietje Wubbina"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t01015:p2, t01015:p3
@@ -49,9 +53,17 @@ t01015:p1
 
 t01015:p2
   a :Person ;
-  :nam "A. MEIJER" .
+  :name [
+    a :Name ;
+    :fullname "A. Meijer" ;
+    :text "TODO: A. Meijer"
+  ] .
 
 t01015:p3
   a :Person ;
-  :nam "J. SMIT" .
+  :name [
+    a :Name ;
+    :fullname "J. Smit" ;
+    :text "TODO: J. Smit"
+  ] .
 

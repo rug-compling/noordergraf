@@ -35,7 +35,11 @@ t00495:p1
     a :Date ;
     :date "1915-04-03"^^xsd:date
   ] ;
-  :nam "AEBE WOUDSTRA" .
+  :name [
+    a :Name ;
+    :fullname "Aebe Woudstra" ;
+    :text "TODO: Aebe Woudstra"
+  ] .
 
 t00495:p2
   a :Female ;
@@ -52,7 +56,11 @@ t00495:p2
     a :Date ;
     :date "1940-04-02"^^xsd:date
   ] ;
-  :nam "JOHANNA JAGER" ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Jager" ;
+    :text "TODO: Johanna Jager"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00495:p3
@@ -73,5 +81,9 @@ t00495:p3
     a :Date ;
     :date "1959-08-20"^^xsd:date
   ] ;
-  :nam "K. WOUDSTRA" .
+  :name [
+    a :Name ;
+    :fullname "K. Woudstra" ;
+    :text "TODO: K. Woudstra"
+  ] .
 

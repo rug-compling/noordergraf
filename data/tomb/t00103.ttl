@@ -32,7 +32,11 @@ t00103:p1
     a :Date ;
     :date "1930-08-27"^^xsd:date
   ] ;
-  :nam "ELIZABETH COOLMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Elizabeth Coolman" ;
+    :text "TODO: Elizabeth Coolman"
+  ] ;
   :rol [
     a :Widow.n.01 ;
     :tgt t00103:p2
@@ -40,5 +44,9 @@ t00103:p1
 
 t00103:p2
   a :Male ;
-  :nam "A. VAN DAM" .
+  :name [
+    a :Name ;
+    :fullname "A. van Dam" ;
+    :text "TODO: A. van Dam"
+  ] .
 

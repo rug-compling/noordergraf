@@ -36,14 +36,22 @@ t00531:p1
     a :Date ;
     :date "1925-08-26"^^xsd:date
   ] ;
-  :nam "GEERT HERWIG" ;
+  :name [
+    a :Name ;
+    :fullname "Geert Herwig" ;
+    :suffix "Hzn" ;
+    :text "TODO: Geert Herwig Hzn"
+  ] ;
   :rol [
     a :Widow.n.01 ;
     :tgt t00531:p2
-  ] ;
-  :suffix "HZN" .
+  ] .
 
 t00531:p2
   a :Female ;
-  :nam "ANNA DE BOER" .
+  :name [
+    a :Name ;
+    :fullname "Anna de Boer" ;
+    :text "TODO: Anna de Boer"
+  ] .
 

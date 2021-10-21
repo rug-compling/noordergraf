@@ -35,7 +35,11 @@ t00343:p1
     a :Date ;
     :date "1942-12-07"^^xsd:date
   ] ;
-  :nam "HENDRIKJE STEEN" ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikje Steen" ;
+    :text "TODO: Hendrikje Steen"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00343:p3
@@ -59,7 +63,11 @@ t00343:p2
     a :Date ;
     :date "1942-12-07"^^xsd:date
   ] ;
-  :nam "WILLEM" ;
+  :name [
+    a :Name ;
+    :fullname "Willem" ;
+    :text "TODO: Willem"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00343:p3
@@ -80,5 +88,9 @@ t00343:p3
     a :Date ;
     :date "1973-01-08"^^xsd:date
   ] ;
-  :nam "AREND GORT" .
+  :name [
+    a :Name ;
+    :fullname "Arend Gort" ;
+    :text "TODO: Arend Gort"
+  ] .
 

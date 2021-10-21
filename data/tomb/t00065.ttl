@@ -35,7 +35,11 @@ t00065:p1
     a :Date ;
     :date "1943-09-02"^^xsd:date
   ] ;
-  :nam "HARM LAMBECK" ;
+  :name [
+    a :Name ;
+    :fullname "Harm Lambeck" ;
+    :text "TODO: Harm Lambeck"
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00065:p2
@@ -45,5 +49,9 @@ t00065:p1
 
 t00065:p2
   a :Female ;
-  :nam "WILHELMINE JOHANNA SCHRECK" .
+  :name [
+    a :Name ;
+    :fullname "Wilhelmine Johanna Schreck" ;
+    :text "TODO: Wilhelmine Johanna Schreck"
+  ] .
 

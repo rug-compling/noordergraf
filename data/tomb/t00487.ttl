@@ -36,7 +36,11 @@ t00487:p1
     a :Date ;
     :date "1945-02-14"^^xsd:date
   ] ;
-  :nam "TEKELA MARIA RUURDA" ;
+  :name [
+    a :Name ;
+    :fullname "Tekela Maria Ruurda" ;
+    :text "TODO: Tekela Maria Ruurda"
+  ] ;
   :rol [
     a :Widow.n.01 ;
     :tgt t00487:p2
@@ -44,7 +48,11 @@ t00487:p1
 
 t00487:p2
   a :Male ;
-  :nam "FREDERIK WIEMERS" .
+  :name [
+    a :Name ;
+    :fullname "Frederik Wiemers" ;
+    :text "TODO: Frederik Wiemers"
+  ] .
 
 t00487:p3
   a :Female ;
@@ -61,7 +69,11 @@ t00487:p3
     a :Date ;
     :date "1959-10-26"^^xsd:date
   ] ;
-  :nam "CHRISTINA WIEMERS" ;
+  :name [
+    a :Name ;
+    :fullname "Christina Wiemers" ;
+    :text "TODO: Christina Wiemers"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00487:p1

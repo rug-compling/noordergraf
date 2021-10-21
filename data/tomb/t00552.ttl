@@ -2,6 +2,7 @@
 
 tomb:t00552
   a :Tomb ;
+  :creator t00552:p2 ;
   :image [
     dc:date "2019-11-24T14:02:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -14,16 +15,19 @@ tomb:t00552
     ] ;
     :nd "+53.1045+006.8756"^^ll:
   ] ;
-  :subject t00552:p1 ;
-  :creator t00552:p2 ;
   :site site:gr9641ANveendam ;
+  :subject t00552:p1 ;
   :sym [
     a :Butterfly.n.01
   ] .
 
 t00552:p1
   a :Male ;
-  :nam "BARENDS" ;
+  :name [
+    a :Name ;
+    :fullname "Barends" ;
+    :text "TODO: Barends"
+  ] ;
   :occupation [
     a :Goldsmith.n.01 ;
     :hisco hisco:88050 ;

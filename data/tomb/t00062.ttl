@@ -33,7 +33,11 @@ t00062:p1
     a :Date ;
     :date "1997-05-07"^^xsd:date
   ] ;
-  :nam "SIPCO JOHAN DE GROOT" ;
+  :name [
+    a :Name ;
+    :fullname "Sipco Johan de Groot" ;
+    :text "TODO: Sipco Johan de Groot"
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00062:p2
@@ -41,5 +45,9 @@ t00062:p1
 
 t00062:p2
   a :Female ;
-  :nam "AGATHE KNOOP" .
+  :name [
+    a :Name ;
+    :fullname "Agathe Knoop" ;
+    :text "TODO: Agathe Knoop"
+  ] .
 

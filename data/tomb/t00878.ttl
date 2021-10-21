@@ -36,7 +36,11 @@ t00878:p1
     a :Date ;
     :date "1961-04-17"^^xsd:date
   ] ;
-  :nam "JANTINA FRERIKS" ;
+  :name [
+    a :Name ;
+    :fullname "Jantina Freriks" ;
+    :text "TODO: Jantina Freriks"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00878:p2
@@ -47,7 +51,11 @@ t00878:p1
 
 t00878:p2
   a :Male ;
-  :nam "J. BOS" .
+  :name [
+    a :Name ;
+    :fullname "J. Bos" ;
+    :text "TODO: J. Bos"
+  ] .
 
 t00878:p3
   a :Person ;

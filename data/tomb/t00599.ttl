@@ -39,15 +39,19 @@ t00599:p1
     a :Date ;
     :date "1961-08-05"^^xsd:date
   ] ;
-  :nam "GEESSIEN BOS" ;
+  :name [
+    a :Name ;
+    :fullname "Geessien Bos" ;
+    :text "TODO: Geessien Bos"
+  ] ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Spouse.n.01 ;
     :tgt t00599:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00599:p2
+  ], [
+    a :Mother.n.01
   ] .
 
 t00599:p2
@@ -65,5 +69,9 @@ t00599:p2
     a :Date ;
     :date "1967-05-19"^^xsd:date
   ] ;
-  :nam "WILLEM REKER" .
+  :name [
+    a :Name ;
+    :fullname "Willem Reker" ;
+    :text "TODO: Willem Reker"
+  ] .
 

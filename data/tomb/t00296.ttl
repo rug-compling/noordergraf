@@ -35,7 +35,11 @@ t00296:p1
     a :Date ;
     :date "1926-09-04"^^xsd:date
   ] ;
-  :nam "JOHANNES DOLDERSUM" ;
+  :name [
+    a :Name ;
+    :fullname "Johannes Doldersum" ;
+    :text "TODO: Johannes Doldersum"
+  ] ;
   :rol [
     a :Brother-in-law.n.01 ;
     :tgt t00296:p3
@@ -59,7 +63,11 @@ t00296:p2
     a :Date ;
     :date "1985-12-12"^^xsd:date
   ] ;
-  :nam "HILLIGJE DOLDERSUM-BRUINS" ;
+  :name [
+    a :Name ;
+    :fullname "Hilligje Doldersum-bruins" ;
+    :text "TODO: Hilligje Doldersum-bruins"
+  ] ;
   :placeOfDeath [
     a :Town.n.01 ;
     :name "HOOGEVEEN" ;
@@ -72,5 +80,9 @@ t00296:p2
 
 t00296:p3
   a :Male ;
-  :nam "J. BRUINS" .
+  :name [
+    a :Name ;
+    :fullname "J. Bruins" ;
+    :text "TODO: J. Bruins"
+  ] .
 

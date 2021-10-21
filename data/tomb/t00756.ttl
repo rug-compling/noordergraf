@@ -35,7 +35,11 @@ t00756:p1
     a :Date ;
     :date "1879-10-03"^^xsd:date
   ] ;
-  :nam "TRIENTJE" ;
+  :name [
+    a :Name ;
+    :fullname "Trientje" ;
+    :text "TODO: Trientje"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00756:p2, t00756:p3
@@ -43,9 +47,17 @@ t00756:p1
 
 t00756:p2
   a :Person ;
-  :nam "J.J. HAKEN" .
+  :name [
+    a :Name ;
+    :fullname "J.J. Haken" ;
+    :text "TODO: J.J. Haken"
+  ] .
 
 t00756:p3
   a :Person ;
-  :nam "G.W. BOUMAN" .
+  :name [
+    a :Name ;
+    :fullname "G.W. Bouman" ;
+    :text "TODO: G.W. Bouman"
+  ] .
 

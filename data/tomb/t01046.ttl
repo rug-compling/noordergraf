@@ -36,7 +36,11 @@ t01046:p1
     a :Date ;
     :date "1955-03-22"^^xsd:date
   ] ;
-  :nam "TRIENTJE DE HAAN" ;
+  :name [
+    a :Name ;
+    :fullname "Trientje de Haan" ;
+    :text "TODO: Trientje de Haan"
+  ] ;
   :rol t01046:r1, [
     a :Widow.n.01 ;
     :before t01046:r1 ;
@@ -45,11 +49,19 @@ t01046:p1
 
 t01046:p2
   a :Male ;
-  :nam "S. HUIZINGA" .
+  :name [
+    a :Name ;
+    :fullname "S. Huizinga" ;
+    :text "TODO: S. Huizinga"
+  ] .
 
 t01046:p3
   a :Male ;
-  :nam "W. NIJHOF" .
+  :name [
+    a :Name ;
+    :fullname "W. Nijhof" ;
+    :text "TODO: W. Nijhof"
+  ] .
 
 t01046:p4
   a :Female ;
@@ -66,7 +78,11 @@ t01046:p4
     a :Date ;
     :date "1903-06-22"^^xsd:date
   ] ;
-  :nam "MARTJE NIJHOF" ;
+  :name [
+    a :Name ;
+    :fullname "Martje Nijhof" ;
+    :text "TODO: Martje Nijhof"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t01046:p1, t01046:p3

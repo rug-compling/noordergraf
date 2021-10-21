@@ -36,7 +36,11 @@ t00650:p1
     a :Date ;
     :date "1842-01-08"^^xsd:date
   ] ;
-  :nam "ABRAHAM C. HAZEWINKEL" ;
+  :name [
+    a :Name ;
+    :fullname "Abraham C. Hazewinkel" ;
+    :text "TODO: Abraham C. Hazewinkel"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00650:p2
@@ -44,5 +48,9 @@ t00650:p1
 
 t00650:p2
   a :Female ;
-  :nam "ALBERTJE H. SCHIPPER" .
+  :name [
+    a :Name ;
+    :fullname "Albertje H. Schipper" ;
+    :text "TODO: Albertje H. Schipper"
+  ] .
 

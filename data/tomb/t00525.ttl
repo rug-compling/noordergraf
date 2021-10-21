@@ -38,16 +38,20 @@ t00525:p1
     a :Date ;
     :date "2001-04-11"^^xsd:date
   ] ;
-  :nam "EPPO RUITER" ;
+  :name [
+    a :Name ;
+    :fullname "Eppo Ruiter" ;
+    :text "TODO: Eppo Ruiter"
+  ] ;
   :rol [
-    a :Father.n.01 ;
-    :tgt t00525:p3
-  ], [
     a :Grandfather.n.01 ;
     :tgt t00525:p3
   ], [
     a :Husband.n.01 ;
     :tgt t00525:p2
+  ], [
+    a :Father.n.01 ;
+    :tgt t00525:p3
   ] .
 
 t00525:p2
@@ -65,7 +69,11 @@ t00525:p2
     a :Date ;
     :date "2011-04-12"^^xsd:date
   ] ;
-  :nam "GEERTJE STAAL" ;
+  :name [
+    a :Name ;
+    :fullname "Geertje Staal" ;
+    :text "TODO: Geertje Staal"
+  ] ;
   :rol [
     a :Grandmother.n.01 ;
     :tgt t00525:p3

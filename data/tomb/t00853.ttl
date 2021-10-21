@@ -14,9 +14,9 @@ tomb:t00853
     ] ;
     :nd "+52.7757+006.8028"^^ll:
   ] ;
-  :subject t00853:p1, t00853:p2 ;
   :quo "AL IS OP AARDE HET LEVEN \\ SCHOON \\ EENS ROEPT DE VADER \\ ONS ALLEN TOT ZIJN TROON"@nld, "RUST ZACHT"@nld ;
   :site site:dr7841CDsleen ;
+  :subject t00853:p1, t00853:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -27,7 +27,11 @@ t00853:p1
     a :Date ;
     :date "1919-02-13"^^xsd:date
   ] ;
-  :nam "ROELFIEN OLDENBEUVING" ;
+  :name [
+    a :Name ;
+    :fullname "Roelfien Oldenbeuving" ;
+    :text "TODO: Roelfien Oldenbeuving"
+  ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "ERM" ;
@@ -40,5 +44,9 @@ t00853:p1
 
 t00853:p2
   a :Male ;
-  :nam "THIJS DIJKS" .
+  :name [
+    a :Name ;
+    :fullname "Thijs Dijks" ;
+    :text "TODO: Thijs Dijks"
+  ] .
 

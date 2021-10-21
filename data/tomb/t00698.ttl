@@ -36,7 +36,11 @@ t00698:p1
     a :Date ;
     :date "1930-12-13"^^xsd:date
   ] ;
-  :nam "JANTJE AX" ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Ax" ;
+    :text "TODO: Jantje Ax"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "NIEUW-DORDRECHT" ;
@@ -48,16 +52,20 @@ t00698:p1
     :place place:Groningen2755251
   ] ;
   :rol [
+    a :Wife.n.01 ;
+    :tgt t00698:p2
+  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
-    :tgt t00698:p2
-  ], [
-    a :Wife.n.01 ;
     :tgt t00698:p2
   ] .
 
 t00698:p2
   a :Male ;
-  :nam "JAN KUIPER" .
+  :name [
+    a :Name ;
+    :fullname "Jan Kuiper" ;
+    :text "TODO: Jan Kuiper"
+  ] .
 

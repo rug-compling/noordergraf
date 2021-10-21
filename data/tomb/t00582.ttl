@@ -42,7 +42,11 @@ t00582:p1
     a :Date ;
     :date "1917-05-26"^^xsd:date
   ] ;
-  :nam "GEERT BIERLING" ;
+  :name [
+    a :Name ;
+    :fullname "Geert Bierling" ;
+    :text "TODO: Geert Bierling"
+  ] ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
     :name "KLEIN GARNWERD" ;
@@ -57,11 +61,19 @@ t00582:p1
 
 t00582:p2
   a :Female ;
-  :nam "JOHANNA KLADDER" .
+  :name [
+    a :Name ;
+    :fullname "Johanna Kladder" ;
+    :text "TODO: Johanna Kladder"
+  ] .
 
 t00582:p3
   a :Female ;
-  :nam "LAMMECHIEN MEISNER" .
+  :name [
+    a :Name ;
+    :fullname "Lammechien Meisner" ;
+    :text "TODO: Lammechien Meisner"
+  ] .
 
 t00582:r2
   a :Spouse.n.01 ;

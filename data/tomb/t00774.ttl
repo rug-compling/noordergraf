@@ -35,21 +35,26 @@ t00774:p1
     a :Date ;
     :date "1899-12-20"^^xsd:date
   ] ;
-  :nam "WILLEM JOLING" ;
+  :name [
+    a :Name ;
+    :fullname "Willem Joling" ;
+    :suffix "Hz" ;
+    :text "TODO: Willem Joling Hz"
+  ] ;
   :occupation [
-    a :Secretary.n.02 ;
-    :hisco hisco:30000 ;
-    :organisation [
-      a :Organization.n.01 ;
-      :nam "WATERSCHAP WEERDINGE"
-    ]
-  ], [
     a :Taxman.n.01 ;
     :hisco hisco:31020 ;
     :location [
       a :Municipality.n.01 ;
       :name "EMMEN" ;
       :place place:Emmen2756136
+    ]
+  ], [
+    a :Secretary.n.02 ;
+    :hisco hisco:30000 ;
+    :organisation [
+      a :Organization.n.01 ;
+      :nam "WATERSCHAP WEERDINGE"
     ]
   ] ;
   :placeOfBirth [
@@ -65,16 +70,23 @@ t00774:p1
   :rol [
     a :Widower.n.01 ;
     :tgt t00774:p2
-  ] ;
-  :suffix "HZ" .
+  ] .
 
 t00774:p2
   a :Female ;
-  :nam "HILLIGJE EVERTS" .
+  :name [
+    a :Name ;
+    :fullname "Hilligje Everts" ;
+    :text "TODO: Hilligje Everts"
+  ] .
 
 t00774:p3
   a :Female ;
-  :nam "WARMELINA" ;
+  :name [
+    a :Name ;
+    :fullname "Warmelina" ;
+    :text "TODO: Warmelina"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00774:p1, t00774:p2

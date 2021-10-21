@@ -14,9 +14,9 @@ tomb:t01086
     ] ;
     :nd "+53.2480+006.6476"^^ll:
   ] ;
-  :subject t01086:p1 ;
   :quo "ZALIG IS DER KIND'REN LOT VROEG GESTORVEN, VROEG BIJ GOD."@nld ;
   :site site:gr9798PDgarmerwolde ;
+  :subject t01086:p1 ;
   :sym [
     a :BrokenFlower
   ], [
@@ -39,7 +39,11 @@ t01086:p1
     a :Date ;
     :date "1872-12-28"^^xsd:date
   ] ;
-  :nam "KLAAS" ;
+  :name [
+    a :Name ;
+    :fullname "Klaas" ;
+    :text "TODO: Klaas"
+  ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "GARMERWOLDE" ;
@@ -55,11 +59,19 @@ t01086:p1
 
 t01086:p2
   a :Person ;
-  :nam "T.H. DOLFIJN" .
+  :name [
+    a :Name ;
+    :fullname "T.H. Dolfijn" ;
+    :text "TODO: T.H. Dolfijn"
+  ] .
 
 t01086:p3
   a :Person ;
-  :nam "H.H. WIGBOLDUS" .
+  :name [
+    a :Name ;
+    :fullname "H.H. Wigboldus" ;
+    :text "TODO: H.H. Wigboldus"
+  ] .
 
 t01086:s4
   a :OliveBranch .

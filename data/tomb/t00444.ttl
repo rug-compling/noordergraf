@@ -14,18 +14,18 @@ tomb:t00444
     ] ;
     :nd "+53.4792+006.1601"^^ll:
   ] ;
-  :subject t00444:p1, t00444:p2, t00444:p3 ;
   :ref [
     a :Quote ;
-    :text "Ps. 103:8" ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 103 ;
+      :part :Psalm.n.01 ;
       :verse "8"
-    ]
+    ] ;
+    :text "Ps. 103:8"
   ] ;
   :site site:fr9166NAschiermonnikoog ;
+  :subject t00444:p1, t00444:p2, t00444:p3 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -43,7 +43,11 @@ t00444:p1
     a :Date ;
     :date "1928-08-22"^^xsd:date
   ] ;
-  :nam "BOUKE TEERDSTRA" ;
+  :name [
+    a :Name ;
+    :fullname "Bouke Teerdstra" ;
+    :text "TODO: Bouke Teerdstra"
+  ] ;
   :rol [
     a :Schoolmakker.n.01 ;
     :tgt t00444:p3
@@ -55,7 +59,11 @@ t00444:p2
     a :Date ;
     :date "1928-08-22"^^xsd:date
   ] ;
-  :nam "JACOB TEERDSTRA" ;
+  :name [
+    a :Name ;
+    :fullname "Jacob Teerdstra" ;
+    :text "TODO: Jacob Teerdstra"
+  ] ;
   :rol [
     a :Schoolmakker.n.01 ;
     :tgt t00444:p3

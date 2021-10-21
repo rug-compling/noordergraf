@@ -24,18 +24,18 @@ tomb:t01049
     ] ;
     :nd "+53.1228+006.2507"^^ll:
   ] ;
-  :subject t01049:p1, t01049:p2, t01049:p3 ;
   :ref [
     a :Quote ;
-    :text "Ps. 103:8."@nld ;
     :reference [
       a :BibleReference ;
-      :part :Psalm.n.01 ;
       :chapter 103 ;
+      :part :Psalm.n.01 ;
       :verse "8"
-    ]
+    ] ;
+    :text "Ps. 103:8."@nld
   ] ;
   :site site:gr9367PAde_wilp ;
+  :subject t01049:p1, t01049:p2, t01049:p3 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -58,7 +58,11 @@ t01049:p1
     a :Date ;
     :date "1925-07-18"^^xsd:date
   ] ;
-  :nam "PIETJE VENEMA" ;
+  :name [
+    a :Name ;
+    :fullname "Pietje Venema" ;
+    :text "TODO: Pietje Venema"
+  ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "SIEGERSWOUDE" ;
@@ -67,9 +71,17 @@ t01049:p1
 
 t01049:p2
   a :Male ;
-  :nam "T. VENEMA" .
+  :name [
+    a :Name ;
+    :fullname "T. Venema" ;
+    :text "TODO: T. Venema"
+  ] .
 
 t01049:p3
   a :Male ;
-  :nam "H. VENEMA-BOSMA" .
+  :name [
+    a :Name ;
+    :fullname "H. Venema-bosma" ;
+    :text "TODO: H. Venema-bosma"
+  ] .
 

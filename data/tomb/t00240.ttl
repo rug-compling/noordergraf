@@ -50,7 +50,11 @@ t00240:p1
     a :Date ;
     :date "1951-08-19"^^xsd:date
   ] ;
-  :nam "BEREND HEKMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Berend Hekman" ;
+    :text "TODO: Berend Hekman"
+  ] ;
   :placeOfBirth t00240:c1 ;
   :placeOfDeath t00240:c1 ;
   :rol t00240:r2, [
@@ -64,11 +68,19 @@ t00240:p1
 
 t00240:p2
   a :Female ;
-  :nam "ANNECHIEN TAKENS" .
+  :name [
+    a :Name ;
+    :fullname "Annechien Takens" ;
+    :text "TODO: Annechien Takens"
+  ] .
 
 t00240:p3
   a :Female ;
-  :nam "GEERTRUIDA VAN DALEN" .
+  :name [
+    a :Name ;
+    :fullname "Geertruida van Dalen" ;
+    :text "TODO: Geertruida van Dalen"
+  ] .
 
 t00240:r2
   a :Widower.n.01 ;

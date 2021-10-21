@@ -33,7 +33,11 @@ t00715:p1
     a :Date ;
     :date "1991-09-23"^^xsd:date
   ] ;
-  :nam "GEERTJE DE LANGE" ;
+  :name [
+    a :Name ;
+    :fullname "Geertje de Lange" ;
+    :text "TODO: Geertje de Lange"
+  ] ;
   :rol [
     a :Widow.n.01 ;
     :tgt t00715:p2
@@ -44,9 +48,17 @@ t00715:p1
 
 t00715:p2
   a :Male ;
-  :nam "JAN ARENDS" .
+  :name [
+    a :Name ;
+    :fullname "Jan Arends" ;
+    :text "TODO: Jan Arends"
+  ] .
 
 t00715:p3
   a :Male ;
-  :nam "W. VAN DIJK" .
+  :name [
+    a :Name ;
+    :fullname "W. van Dijk" ;
+    :text "TODO: W. van Dijk"
+  ] .
 

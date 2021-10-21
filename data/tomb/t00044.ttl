@@ -35,7 +35,11 @@ t00044:p1
     a :Date ;
     :date "1974-08-21"^^xsd:date
   ] ;
-  :nam "HENDRIK KWANT" ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Kwant" ;
+    :text "TODO: Hendrik Kwant"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00044:p2
@@ -43,5 +47,9 @@ t00044:p1
 
 t00044:p2
   a :Female ;
-  :nam "PIETERTJE BROEKEMA" .
+  :name [
+    a :Name ;
+    :fullname "Pietertje Broekema" ;
+    :text "TODO: Pietertje Broekema"
+  ] .
 

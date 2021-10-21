@@ -40,7 +40,11 @@ t01008:p1
     a :Date ;
     :date "1875-06-20"^^xsd:date
   ] ;
-  :nam "THIJS SJABBES DIJKHUIS" ;
+  :name [
+    a :Name ;
+    :fullname "Thijs Sjabbes Dijkhuis" ;
+    :text "TODO: Thijs Sjabbes Dijkhuis"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01008:p2
@@ -48,5 +52,9 @@ t01008:p1
 
 t01008:p2
   a :Female ;
-  :nam "J.J. ZWAAN" .
+  :name [
+    a :Name ;
+    :fullname "J.J. Zwaan" ;
+    :text "TODO: J.J. Zwaan"
+  ] .
 

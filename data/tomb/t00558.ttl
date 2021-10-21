@@ -14,8 +14,8 @@ tomb:t00558
     ] ;
     :nd "+53.1047+006.8756"^^ll:
   ] ;
-  :subject t00558:p1, t00558:p2 ;
   :site site:gr9641ANveendam ;
+  :subject t00558:p1, t00558:p2 ;
   :sym [
     a :Composite.n.01 ;
     :prt t00558:s5, [
@@ -45,7 +45,11 @@ t00558:p1
     a :Date ;
     :date "1864-01-08"^^xsd:date
   ] ;
-  :nam "EVERT VAN LINGE" ;
+  :name [
+    a :Name ;
+    :fullname "Evert van Linge" ;
+    :text "TODO: Evert van Linge"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00558:p2
@@ -53,7 +57,11 @@ t00558:p1
 
 t00558:p2
   a :Female ;
-  :nam "ALBERTJE ELTJES DE BOER" .
+  :name [
+    a :Name ;
+    :fullname "Albertje Eltjes de Boer" ;
+    :text "TODO: Albertje Eltjes de Boer"
+  ] .
 
 t00558:s5
   a :OakBranch .

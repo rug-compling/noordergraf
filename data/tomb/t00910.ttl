@@ -14,16 +14,24 @@ tomb:t00910
     ] ;
     :nd "+53.1719+006.3656"^^ll:
   ] ;
-  :subject t00910:p1, t00910:p2 ;
-  :site site:gr9351RLtolbert .
+  :site site:gr9351RLtolbert ;
+  :subject t00910:p1, t00910:p2 .
 
 t00910:p1
   a :Male ;
-  :nam "KORNELIS WATERBOEK" .
+  :name [
+    a :Name ;
+    :fullname "Kornelis Waterboek" ;
+    :text "TODO: Kornelis Waterboek"
+  ] .
 
 t00910:p2
   a :Female ;
-  :nam "GRIETJE VOS" ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Vos" ;
+    :text "TODO: Grietje Vos"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00910:p1

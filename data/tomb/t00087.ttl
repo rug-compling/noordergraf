@@ -32,7 +32,12 @@ t00087:p1
     a :Date ;
     :date "1944-01-01"^^xsd:date
   ] ;
-  :nam "P.H.E. VAN DOOREN" ;
+  :name [
+    a :Name ;
+    :fullname "P.H.E. van Dooren" ;
+    :prefix "Ir" ;
+    :text "TODO: Ir P.H.E. van Dooren"
+  ] ;
   :occupation [
     a :Director.n.01 ;
     :hisco hisco:13940 ;
@@ -40,8 +45,7 @@ t00087:p1
       a :School.n.01 ;
       :nam "MIDDELBARE TECHNISCHE KUNSTNIJVERHEIDS EN ZEEVAARTSCHOOL"
     ]
-  ] ;
-  :prefix "IR" .
+  ] .
 
 t00087:p2
   a :Female ;
@@ -58,5 +62,9 @@ t00087:p2
     a :Date ;
     :date "1983-03-01"^^xsd:date
   ] ;
-  :nam "MARIA DEKKER" .
+  :name [
+    a :Name ;
+    :fullname "Maria Dekker" ;
+    :text "TODO: Maria Dekker"
+  ] .
 

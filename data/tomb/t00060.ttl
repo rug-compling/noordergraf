@@ -33,7 +33,11 @@ t00060:p1
     a :Date ;
     :date "1985-10-03"^^xsd:date
   ] ;
-  :nam "GRIETJE NICOLAI" ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Nicolai" ;
+    :text "TODO: Grietje Nicolai"
+  ] ;
   :rol [
     a :Mother.n.01
   ] .
@@ -53,7 +57,11 @@ t00060:p2
     a :Date ;
     :date "1998-02-05"^^xsd:date
   ] ;
-  :nam "PIETER DIJKSTRA" ;
+  :name [
+    a :Name ;
+    :fullname "Pieter Dijkstra" ;
+    :text "TODO: Pieter Dijkstra"
+  ] ;
   :rol [
     a :Father.n.01
   ], [
@@ -63,7 +71,11 @@ t00060:p2
 
 t00060:p3
   a :Female ;
-  :nam "C.J. DEN HEETEN" .
+  :name [
+    a :Name ;
+    :fullname "C.J. den Heeten" ;
+    :text "TODO: C.J. den Heeten"
+  ] .
 
 t00060:v1
   a :Quote ;

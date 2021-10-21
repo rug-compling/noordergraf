@@ -40,7 +40,11 @@ t00146:p1
     a :Date ;
     :date "1941-01-04"^^xsd:date
   ] ;
-  :nam "JACOB HUIZINGA" ;
+  :name [
+    a :Name ;
+    :fullname "Jacob Huizinga" ;
+    :text "TODO: Jacob Huizinga"
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00146:p2
@@ -61,7 +65,11 @@ t00146:p2
     a :Date ;
     :date "1961-07-04"^^xsd:date
   ] ;
-  :nam "BOUWINA LUBBERS" ;
+  :name [
+    a :Name ;
+    :fullname "Bouwina Lubbers" ;
+    :text "TODO: Bouwina Lubbers"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00146:p3
@@ -82,5 +90,9 @@ t00146:p3
     a :Date ;
     :date "1962-03-05"^^xsd:date
   ] ;
-  :nam "JAN MIDDEL" .
+  :name [
+    a :Name ;
+    :fullname "Jan Middel" ;
+    :text "TODO: Jan Middel"
+  ] .
 

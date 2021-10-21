@@ -14,8 +14,8 @@ tomb:t00126
     ] ;
     :nd "+53.2059+006.5712"^^ll:
   ] ;
-  :subject t00126:p1 ;
   :site site:gr9725ACgroningen ;
+  :subject t00126:p1 ;
   :sym [
     a symbol:Ouroboros
   ] .
@@ -35,7 +35,11 @@ t00126:p1
     a :Date ;
     :date "1904-03-01"^^xsd:date
   ] ;
-  :nam "RENSINA CATHARINA SCHUITEMA" ;
+  :name [
+    a :Name ;
+    :fullname "Rensina Catharina Schuitema" ;
+    :text "TODO: Rensina Catharina Schuitema"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00126:p2, t00126:p3
@@ -43,9 +47,17 @@ t00126:p1
 
 t00126:p2
   a :Male ;
-  :nam "G. SCHUITEMA" .
+  :name [
+    a :Name ;
+    :fullname "G. Schuitema" ;
+    :text "TODO: G. Schuitema"
+  ] .
 
 t00126:p3
   a :Female ;
-  :nam "HENDERIKA BRUINS" .
+  :name [
+    a :Name ;
+    :fullname "Henderika Bruins" ;
+    :text "TODO: Henderika Bruins"
+  ] .
 

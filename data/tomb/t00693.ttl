@@ -49,11 +49,19 @@ t00693:p1
     a :Date ;
     :date "1995-03-02"^^xsd:date
   ] ;
-  :nam "JOHANNES FRANCISCUS BRATTINGA" .
+  :name [
+    a :Name ;
+    :fullname "Johannes Franciscus Brattinga" ;
+    :text "TODO: Johannes Franciscus Brattinga"
+  ] .
 
 t00693:p2
   a :Female ;
-  :nam "MEA BRATTINGA-VENEMA" ;
+  :name [
+    a :Name ;
+    :fullname "Mea Brattinga-venema" ;
+    :text "TODO: Mea Brattinga-venema"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00693:p1

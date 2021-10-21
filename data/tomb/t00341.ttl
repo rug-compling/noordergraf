@@ -45,7 +45,11 @@ t00341:p1
     a :Date ;
     :date "1903-03-29"^^xsd:date
   ] ;
-  :nam "EVERT BOOIJ" .
+  :name [
+    a :Name ;
+    :fullname "Evert Booij" ;
+    :text "TODO: Evert Booij"
+  ] .
 
 t00341:p2
   a :Female ;
@@ -62,11 +66,19 @@ t00341:p2
     a :Date ;
     :date "1905-04-29"^^xsd:date
   ] ;
-  :nam "MAGARETHA BOOIJ" .
+  :name [
+    a :Name ;
+    :fullname "Magaretha Booij" ;
+    :text "TODO: Magaretha Booij"
+  ] .
 
 t00341:p3
   a :Male ;
-  :nam "H.A. BOOIJ" ;
+  :name [
+    a :Name ;
+    :fullname "H.A. Booij" ;
+    :text "TODO: H.A. Booij"
+  ] ;
   :rol [
     a :Parent.n.01 ;
     :tgt t00341:p1
@@ -77,7 +89,11 @@ t00341:p3
 
 t00341:p4
   a :Female ;
-  :nam "H.A. BOOIJ-VELDMAN" ;
+  :name [
+    a :Name ;
+    :fullname "H.A. Booij-veldman" ;
+    :text "TODO: H.A. Booij-veldman"
+  ] ;
   :rol [
     a :Parent.n.01 ;
     :tgt t00341:p1

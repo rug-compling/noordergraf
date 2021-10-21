@@ -41,7 +41,11 @@ t00633:p1
     a :Date ;
     :date "1894-05-27"^^xsd:date
   ] ;
-  :nam "ELIZA MEIHUIZEN" ;
+  :name [
+    a :Name ;
+    :fullname "Eliza Meihuizen" ;
+    :text "TODO: Eliza Meihuizen"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00633:p2
@@ -49,5 +53,9 @@ t00633:p1
 
 t00633:p2
   a :Male ;
-  :nam "ENNO BRONSEMA" .
+  :name [
+    a :Name ;
+    :fullname "Enno Bronsema" ;
+    :text "TODO: Enno Bronsema"
+  ] .
 

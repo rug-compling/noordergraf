@@ -42,7 +42,11 @@ t00185:p1
     a :Date ;
     :date "1938-07-22"^^xsd:date
   ] ;
-  :nam "HENDRIK VELDMAN" .
+  :name [
+    a :Name ;
+    :fullname "Hendrik Veldman" ;
+    :text "TODO: Hendrik Veldman"
+  ] .
 
 t00185:p2
   a :Female ;
@@ -59,7 +63,11 @@ t00185:p2
     a :Date ;
     :date "1966-11-20"^^xsd:date
   ] ;
-  :nam "GEERTJE DOZEMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Geertje Dozeman" ;
+    :text "TODO: Geertje Dozeman"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00185:p3
@@ -80,5 +88,9 @@ t00185:p3
     a :Date ;
     :date "1969-01-01"^^xsd:date
   ] ;
-  :nam "JOHANNES VELDMAN" .
+  :name [
+    a :Name ;
+    :fullname "Johannes Veldman" ;
+    :text "TODO: Johannes Veldman"
+  ] .
 

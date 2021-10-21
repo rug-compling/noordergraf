@@ -35,7 +35,11 @@ t00322:p1
     a :Date ;
     :date "1932-04-20"^^xsd:date
   ] ;
-  :nam "AALTJE ZOMER" ;
+  :name [
+    a :Name ;
+    :fullname "Aaltje Zomer" ;
+    :text "TODO: Aaltje Zomer"
+  ] ;
   :ref [
     a :Quote ;
     :reference [
@@ -47,13 +51,13 @@ t00322:p1
     :text "Ps. 23 v.1."
   ] ;
   :rol [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :tgt t00322:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00322:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00322:p2
@@ -71,7 +75,11 @@ t00322:p2
     a :Date ;
     :date "1936-08-19"^^xsd:date
   ] ;
-  :nam "GERRIT SCHOLTEN" ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit Scholten" ;
+    :text "TODO: Gerrit Scholten"
+  ] ;
   :ref [
     a :Quote ;
     :reference [

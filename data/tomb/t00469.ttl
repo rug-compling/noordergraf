@@ -36,7 +36,11 @@ t00469:p1
     a :Date ;
     :date "1950-08-01"^^xsd:date
   ] ;
-  :nam "ANNE TEKSTRA" ;
+  :name [
+    a :Name ;
+    :fullname "Anne Tekstra" ;
+    :text "TODO: Anne Tekstra"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00469:p2
@@ -57,5 +61,9 @@ t00469:p2
     a :Date ;
     :date "1991-05-20"^^xsd:date
   ] ;
-  :nam "TIETJE HUISMAN" .
+  :name [
+    a :Name ;
+    :fullname "Tietje Huisman" ;
+    :text "TODO: Tietje Huisman"
+  ] .
 

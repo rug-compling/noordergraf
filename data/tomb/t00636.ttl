@@ -14,8 +14,8 @@ tomb:t00636
     ] ;
     :nd "+53.1642+006.7544"^^ll:
   ] ;
-  :subject t00636:p1 ;
   :site site:gr9601KAhoogezand ;
+  :subject t00636:p1 ;
   :sym [
     a :Entity.n.01
   ], [
@@ -26,20 +26,27 @@ tomb:t00636
     a :Ribbon.n.01
   ] .
 
-
 t00636:p1
   a :Persons ;
-  :text "geliefde kinderen" ;
   :rol [
     a :Child.n.02 ;
     :tgt t00636:p2, t00636:p3
-  ] .
+  ] ;
+  :text "geliefde kinderen" .
 
 t00636:p2
   a :Male ;
-  :nam "J.J. BEUKEMA" .
+  :name [
+    a :Name ;
+    :fullname "J.J. Beukema" ;
+    :text "TODO: J.J. Beukema"
+  ] .
 
 t00636:p3
   a :Female ;
-  :nam "E. BEUKEMA-HOOITES" .
+  :name [
+    a :Name ;
+    :fullname "E. Beukema-hooites" ;
+    :text "TODO: E. Beukema-hooites"
+  ] .
 

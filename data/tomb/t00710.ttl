@@ -33,7 +33,11 @@ t00710:p1
     a :Date ;
     :date "1938-12-04"^^xsd:date
   ] ;
-  :nam "JAN HEKMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Hekman" ;
+    :text "TODO: Jan Hekman"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00710:p2
@@ -46,5 +50,9 @@ t00710:p1
 
 t00710:p2
   a :Female ;
-  :nam "E. DE JONGE" .
+  :name [
+    a :Name ;
+    :fullname "E. de Jonge" ;
+    :text "TODO: E. de Jonge"
+  ] .
 

@@ -46,7 +46,11 @@ t00583:p1
     a :Date ;
     :date "1919-03-07"^^xsd:date
   ] ;
-  :nam "JAN PETTINGA" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Pettinga" ;
+    :text "TODO: Jan Pettinga"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00583:p2
@@ -54,7 +58,11 @@ t00583:p1
 
 t00583:p2
   a :Female ;
-  :nam "ANNECIEN SCHOLMA" .
+  :name [
+    a :Name ;
+    :fullname "Annecien Scholma" ;
+    :text "TODO: Annecien Scholma"
+  ] .
 
 t00583:p3
   a :Creator ;

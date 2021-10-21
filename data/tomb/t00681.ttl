@@ -34,7 +34,11 @@ t00681:p1
     a :Date ;
     :date "1942-06-01"^^xsd:date
   ] ;
-  :nam "GRIETJE KUIPER" ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Kuiper" ;
+    :text "TODO: Grietje Kuiper"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00681:p2
@@ -46,7 +50,11 @@ t00681:p1
 
 t00681:p2
   a :Male ;
-  :nam "P. RIJPMA" .
+  :name [
+    a :Name ;
+    :fullname "P. Rijpma" ;
+    :text "TODO: P. Rijpma"
+  ] .
 
 t00681:p3
   a :Family.n.04 ;

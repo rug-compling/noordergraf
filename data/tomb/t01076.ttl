@@ -39,7 +39,11 @@ t01076:p1
     a :Date ;
     :date "1876-11-20"^^xsd:date
   ] ;
-  :nam "ELIZABETH" ;
+  :name [
+    a :Name ;
+    :fullname "Elizabeth" ;
+    :text "TODO: Elizabeth"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t01076:p2, t01076:p3
@@ -47,11 +51,19 @@ t01076:p1
 
 t01076:p2
   a :Person ;
-  :nam "J.E. WESTING" .
+  :name [
+    a :Name ;
+    :fullname "J.E. Westing" ;
+    :text "TODO: J.E. Westing"
+  ] .
 
 t01076:p3
   a :Person ;
-  :nam "A. BALKEMA" .
+  :name [
+    a :Name ;
+    :fullname "A. Balkema" ;
+    :text "TODO: A. Balkema"
+  ] .
 
 t01076:p4
   a :Female ;
@@ -68,5 +80,9 @@ t01076:p4
     a :Date ;
     :date "1890-10-16"^^xsd:date
   ] ;
-  :nam "ZWAANTJE" .
+  :name [
+    a :Name ;
+    :fullname "Zwaantje" ;
+    :text "TODO: Zwaantje"
+  ] .
 

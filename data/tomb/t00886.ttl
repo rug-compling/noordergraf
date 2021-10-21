@@ -38,14 +38,18 @@ t00886:p1
     a :Date ;
     :date "1957-01-16"^^xsd:date
   ] ;
-  :nam "GEERTJE DE HAAN-EMMING" ;
+  :name [
+    a :Name ;
+    :fullname "Geertje de Haan-emming" ;
+    :text "TODO: Geertje de Haan-emming"
+  ] ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
   ], [
     a :Wife.n.01 ;
     :tgt t00886:p2
+  ], [
+    a :Mother.n.01
   ] .
 
 t00886:p2
@@ -63,7 +67,11 @@ t00886:p2
     a :Date ;
     :date "1958-08-01"^^xsd:date
   ] ;
-  :nam "ROELOF DE HAAN" ;
+  :name [
+    a :Name ;
+    :fullname "Roelof de Haan" ;
+    :text "TODO: Roelof de Haan"
+  ] ;
   :rol [
     a :Grandfather.n.01
   ], [

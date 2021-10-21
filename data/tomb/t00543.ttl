@@ -32,8 +32,12 @@ t00543:p1
     a :Date ;
     :date "1882-03-28"^^xsd:date
   ] ;
-  :nam "JAN A. MUNTENDAM" ;
-  :suffix "PZ" .
+  :name [
+    a :Name ;
+    :fullname "Jan A. Muntendam" ;
+    :suffix "Pz" ;
+    :text "TODO: Jan A. Muntendam Pz"
+  ] .
 
 t00543:p2
   a :Female ;
@@ -50,7 +54,11 @@ t00543:p2
     a :Date ;
     :date "1874-07-28"^^xsd:date
   ] ;
-  :nam "MARTHA J. PUISTER" ;
+  :name [
+    a :Name ;
+    :fullname "Martha J. Puister" ;
+    :text "TODO: Martha J. Puister"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00543:p1

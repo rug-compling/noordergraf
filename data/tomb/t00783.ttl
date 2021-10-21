@@ -38,7 +38,11 @@ t00783:p1
     a :Date ;
     :date "1888-12-27"^^xsd:date
   ] ;
-  :nam "HARM CHRISTIAANS" ;
+  :name [
+    a :Name ;
+    :fullname "Harm Christiaans" ;
+    :text "TODO: Harm Christiaans"
+  ] ;
   :rol [
     a :Child.n.02 ;
     :tgt t00783:p3, t00783:p4
@@ -59,7 +63,11 @@ t00783:p2
     a :Date ;
     :date "1888-12-19"^^xsd:date
   ] ;
-  :nam "LUCHIEN CHRISTIAANS" ;
+  :name [
+    a :Name ;
+    :fullname "Luchien Christiaans" ;
+    :text "TODO: Luchien Christiaans"
+  ] ;
   :rol [
     a :Child.n.02 ;
     :tgt t00783:p3, t00783:p4
@@ -67,9 +75,17 @@ t00783:p2
 
 t00783:p3
   a :Male ;
-  :nam "HEIJE CHRISTIAANS" .
+  :name [
+    a :Name ;
+    :fullname "Heije Christiaans" ;
+    :text "TODO: Heije Christiaans"
+  ] .
 
 t00783:p4
   a :Female ;
-  :nam "LAMMECHIEN STRATING" .
+  :name [
+    a :Name ;
+    :fullname "Lammechien Strating" ;
+    :text "TODO: Lammechien Strating"
+  ] .
 

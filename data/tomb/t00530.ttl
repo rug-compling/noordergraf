@@ -35,19 +35,31 @@ t00530:p1
     a :Date ;
     :date "1934-12-06"^^xsd:date
   ] ;
-  :nam "HIERONIMUS HERWIG" ;
+  :name [
+    a :Name ;
+    :fullname "Hieronimus Herwig" ;
+    :suffix "Gzn" ;
+    :text "TODO: Hieronimus Herwig Gzn"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00530:p2, t00530:p3
-  ] ;
-  :suffix "GZN" .
+  ] .
 
 t00530:p2
   a :Male ;
-  :nam "G. HERWIG" ;
-  :suffix "HZN" .
+  :name [
+    a :Name ;
+    :fullname "G. Herwig" ;
+    :suffix "Hzn" ;
+    :text "TODO: G. Herwig Hzn"
+  ] .
 
 t00530:p3
   a :Female ;
-  :nam "ANNA DE BOER" .
+  :name [
+    a :Name ;
+    :fullname "Anna de Boer" ;
+    :text "TODO: Anna de Boer"
+  ] .
 

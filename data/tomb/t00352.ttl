@@ -40,7 +40,12 @@ t00352:p1
     a :Date ;
     :date "1927-10-29"^^xsd:date
   ] ;
-  :nam "HENDRIK NOORD" ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Noord" ;
+    :suffix "Jzn" ;
+    :text "TODO: Hendrik Noord Jzn"
+  ] ;
   :placeOfBirth t00352:c1 ;
   :placeOfDeath t00352:c1 ;
   :rol [
@@ -49,14 +54,21 @@ t00352:p1
   ], [
     a :Widower.n.01 ;
     :tgt t00352:p3
-  ] ;
-  :suffix "JZN" .
+  ] .
 
 t00352:p2
   a :Female ;
-  :nam "B. LAMMERS" .
+  :name [
+    a :Name ;
+    :fullname "B. Lammers" ;
+    :text "TODO: B. Lammers"
+  ] .
 
 t00352:p3
   a :Female ;
-  :nam "J. HOMAN" .
+  :name [
+    a :Name ;
+    :fullname "J. Homan" ;
+    :text "TODO: J. Homan"
+  ] .
 

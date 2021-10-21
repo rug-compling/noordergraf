@@ -14,8 +14,8 @@ tomb:t00160
     ] ;
     :nd "+53.2070+006.5715"^^ll:
   ] ;
-  :subject t00160:p1, t00160:p2 ;
   :site site:gr9725ACgroningen ;
+  :subject t00160:p1, t00160:p2 ;
   :sym [
     a :Butterfly.n.01
   ] .
@@ -36,7 +36,11 @@ t00160:p1
     a :Date ;
     :date "1869-12-14"^^xsd:date
   ] ;
-  :nam "HILLIGIEN WIERINGA" ;
+  :name [
+    a :Name ;
+    :fullname "Hilligien Wieringa" ;
+    :text "TODO: Hilligien Wieringa"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00160:p2
@@ -44,5 +48,9 @@ t00160:p1
 
 t00160:p2
   a :Male ;
-  :nam "J. LIMBORGH" .
+  :name [
+    a :Name ;
+    :fullname "J. Limborgh" ;
+    :text "TODO: J. Limborgh"
+  ] .
 

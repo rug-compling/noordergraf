@@ -36,7 +36,11 @@ t00417:p1
     a :Date ;
     :date "1953-03-13"^^xsd:date
   ] ;
-  :nam "WILLEMTJE ARENDS" ;
+  :name [
+    a :Name ;
+    :fullname "Willemtje Arends" ;
+    :text "TODO: Willemtje Arends"
+  ] ;
   :placeOfBirth [
     a :Town.n.01 ;
     :name "EELDE" ;
@@ -55,11 +59,19 @@ t00417:p1
 
 t00417:p2
   a :Male ;
-  :nam "ALBERT TIMMER" .
+  :name [
+    a :Name ;
+    :fullname "Albert Timmer" ;
+    :text "TODO: Albert Timmer"
+  ] .
 
 t00417:p3
   a :Male ;
-  :nam "PIETER GREVING" .
+  :name [
+    a :Name ;
+    :fullname "Pieter Greving" ;
+    :text "TODO: Pieter Greving"
+  ] .
 
 t00417:r1
   a :Spouse.n.01 ;

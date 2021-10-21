@@ -35,7 +35,11 @@ t00903:p1
     a :Date ;
     :date "1883-09-11"^^xsd:date
   ] ;
-  :nam "JAN PIERS BERGUIS" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Piers Berguis" ;
+    :text "TODO: Jan Piers Berguis"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00903:p2
@@ -43,5 +47,9 @@ t00903:p1
 
 t00903:p2
   a :Female ;
-  :nam "AALTJE G. OOSTERHUIS" .
+  :name [
+    a :Name ;
+    :fullname "Aaltje G. Oosterhuis" ;
+    :text "TODO: Aaltje G. Oosterhuis"
+  ] .
 

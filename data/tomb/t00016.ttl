@@ -40,14 +40,18 @@ t00016:p1
     a :Date ;
     :date "1939-01-17"^^xsd:date
   ] ;
-  :nam "HENDRIKUS JACOBUS DU FLOO" ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikus Jacobus Du Floo" ;
+    :text "TODO: Hendrikus Jacobus Du Floo"
+  ] ;
   :rol [
+    a :Husband.n.01 ;
+    :tgt t00016:p2
+  ], [
     a :Father.n.01
   ], [
     a :Spouse.n.01 ;
-    :tgt t00016:p2
-  ], [
-    a :Husband.n.01 ;
     :tgt t00016:p2
   ] .
 
@@ -66,7 +70,11 @@ t00016:p2
     a :Date ;
     :date "1942-12-30"^^xsd:date
   ] ;
-  :nam "HELENA TENEIJS" ;
+  :name [
+    a :Name ;
+    :fullname "Helena Teneijs" ;
+    :text "TODO: Helena Teneijs"
+  ] ;
   :rol [
     a :Mother.n.01
   ] .

@@ -37,7 +37,11 @@ t00791:p1
     a :Date ;
     :date "1918-07-25"^^xsd:date
   ] ;
-  :nam "HENDRIKJE BOLT" ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikje Bolt" ;
+    :text "TODO: Hendrikje Bolt"
+  ] ;
   :placeOfBirth t00791:c1 ;
   :placeOfDeath t00791:c1 ;
   :rol [
@@ -47,9 +51,17 @@ t00791:p1
 
 t00791:p2
   a :Male ;
-  :nam "J. BOLT" .
+  :name [
+    a :Name ;
+    :fullname "J. Bolt" ;
+    :text "TODO: J. Bolt"
+  ] .
 
 t00791:p3
   a :Female ;
-  :nam "A. BOLT-DOORNBOS" .
+  :name [
+    a :Name ;
+    :fullname "A. Bolt-doornbos" ;
+    :text "TODO: A. Bolt-doornbos"
+  ] .
 

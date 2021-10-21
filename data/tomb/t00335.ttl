@@ -36,7 +36,11 @@ t00335:p1
     a :Date ;
     :date "1915-09-18"^^xsd:date
   ] ;
-  :nam "GEERTJE COMPAGNER" ;
+  :name [
+    a :Name ;
+    :fullname "Geertje Compagner" ;
+    :text "TODO: Geertje Compagner"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "ZUIDWOLDE" ;
@@ -54,8 +58,12 @@ t00335:p1
 
 t00335:p2
   a :Male ;
-  :nam "HENDRIK STEENBERGEN" ;
-  :suffix "KZ" .
+  :name [
+    a :Name ;
+    :fullname "Hendrik Steenbergen" ;
+    :suffix "Kz" ;
+    :text "TODO: Hendrik Steenbergen Kz"
+  ] .
 
 t00335:v1
   a :Quote ;

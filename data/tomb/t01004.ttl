@@ -51,7 +51,11 @@ t01004:p1
     a :Date ;
     :date "1892-02-15"^^xsd:date
   ] ;
-  :nam "STIENTJE WANMAKER" ;
+  :name [
+    a :Name ;
+    :fullname "Stientje Wanmaker" ;
+    :text "TODO: Stientje Wanmaker"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t01004:p2, t01004:p3
@@ -59,9 +63,17 @@ t01004:p1
 
 t01004:p2
   a :Person ;
-  :nam "J. WANMAKER" .
+  :name [
+    a :Name ;
+    :fullname "J. Wanmaker" ;
+    :text "TODO: J. Wanmaker"
+  ] .
 
 t01004:p3
   a :Person ;
-  :nam "F. HEIKENS" .
+  :name [
+    a :Name ;
+    :fullname "F. Heikens" ;
+    :text "TODO: F. Heikens"
+  ] .
 

@@ -32,7 +32,11 @@ t01021:p1
     a :Date ;
     :date "1955-12-11"^^xsd:date
   ] ;
-  :nam "GRIETJE MIDDEL" ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Middel" ;
+    :text "TODO: Grietje Middel"
+  ] ;
   :rol t01021:r1, [
     a :Mother.n.01 ;
     :tgt t01021:p4
@@ -60,7 +64,11 @@ t01021:p2
     a :Date ;
     :date "1960-08-24"^^xsd:date
   ] ;
-  :nam "GEORGE GEUGIEN UYTERWIJK" ;
+  :name [
+    a :Name ;
+    :fullname "George Geugien Uyterwijk" ;
+    :text "TODO: George Geugien Uyterwijk"
+  ] ;
   :rol [
     a :Father.n.01 ;
     :tgt t01021:p4
@@ -71,7 +79,11 @@ t01021:p2
 
 t01021:p3
   a :Male ;
-  :nam "J. VAN SOEST" .
+  :name [
+    a :Name ;
+    :fullname "J. van Soest" ;
+    :text "TODO: J. van Soest"
+  ] .
 
 t01021:r1
   a :Wife.n.01 ;

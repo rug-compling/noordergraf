@@ -41,20 +41,28 @@ t00190:p1
     a :Date ;
     :date "1937-07-19"^^xsd:date
   ] ;
-  :nam "HILKE DIETERMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Hilke Dieterman" ;
+    :text "TODO: Hilke Dieterman"
+  ] ;
   :rol [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :tgt t00190:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00190:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00190:p2
   a :Male ;
-  :nam "K.J. RUNHARDT" .
+  :name [
+    a :Name ;
+    :fullname "K.J. Runhardt" ;
+    :text "TODO: K.J. Runhardt"
+  ] .
 
 t00190:p3
   a :Male ;
@@ -71,7 +79,11 @@ t00190:p3
     a :Date ;
     :date "1955-04-22"^^xsd:date
   ] ;
-  :nam "J.K. RUNHARDT" ;
+  :name [
+    a :Name ;
+    :fullname "J.K. Runhardt" ;
+    :text "TODO: J.K. Runhardt"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00190:p4

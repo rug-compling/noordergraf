@@ -35,17 +35,21 @@ t00084:p1
     a :Date ;
     :date "1964-11-12"^^xsd:date
   ] ;
-  :nam "JAN KORSMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Korsman" ;
+    :text "TODO: Jan Korsman"
+  ] ;
   :rol [
+    a :Father.n.01
+  ], [
+    a :Grandfather.n.01
+  ], [
     a :Husband.n.01 ;
     :tgt t00084:p2
   ], [
     a :Widower.n.01 ;
     :tgt t00084:p3
-  ], [
-    a :Father.n.01
-  ], [
-    a :Grandfather.n.01
   ] .
 
 t00084:p2
@@ -63,7 +67,11 @@ t00084:p2
     a :Date ;
     :date "1986-04-01"^^xsd:date
   ] ;
-  :nam "JOHANNA S.M. FISCHER" ;
+  :name [
+    a :Name ;
+    :fullname "Johanna S.M. Fischer" ;
+    :text "TODO: Johanna S.M. Fischer"
+  ] ;
   :rol [
     a :Grandmother.n.01
   ], [
@@ -72,5 +80,9 @@ t00084:p2
 
 t00084:p3
   a :Female ;
-  :nam "F.P. VRIESE" .
+  :name [
+    a :Name ;
+    :fullname "F.P. Vriese" ;
+    :text "TODO: F.P. Vriese"
+  ] .
 

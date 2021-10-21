@@ -43,7 +43,11 @@ t01053:p1
     a :Date ;
     :date "1920-11-22"^^xsd:date
   ] ;
-  :nam "BRECHTJE LUKAS" ;
+  :name [
+    a :Name ;
+    :fullname "Brechtje Lukas" ;
+    :text "TODO: Brechtje Lukas"
+  ] ;
   :placeOfBirth t01053:c1 ;
   :placeOfDeath t01053:c1 ;
   :rol [
@@ -53,9 +57,17 @@ t01053:p1
 
 t01053:p2
   a :Male ;
-  :nam "KLAAS LUKAS" .
+  :name [
+    a :Name ;
+    :fullname "Klaas Lukas" ;
+    :text "TODO: Klaas Lukas"
+  ] .
 
 t01053:p3
   a :Female ;
-  :nam "GEZINA BULTJES" .
+  :name [
+    a :Name ;
+    :fullname "Gezina Bultjes" ;
+    :text "TODO: Gezina Bultjes"
+  ] .
 

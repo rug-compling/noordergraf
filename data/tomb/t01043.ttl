@@ -31,7 +31,11 @@ t01043:p1
     a :Date ;
     :date "1999-07-23"^^xsd:date
   ] ;
-  :nam "JELTE GEERT HAAKSEMA" ;
+  :name [
+    a :Name ;
+    :fullname "Jelte Geert Haaksema" ;
+    :text "TODO: Jelte Geert Haaksema"
+  ] ;
   :ref t01043:v1 ;
   :rol t01043:r1, [
     a :Spouse.n.01 ;
@@ -41,11 +45,19 @@ t01043:p1
 
 t01043:p2
   a :Female ;
-  :nam "W. BULTEMA" .
+  :name [
+    a :Name ;
+    :fullname "W. Bultema" ;
+    :text "TODO: W. Bultema"
+  ] .
 
 t01043:p3
   a :Female ;
-  :nam "B. DIJKINGA" .
+  :name [
+    a :Name ;
+    :fullname "B. Dijkinga" ;
+    :text "TODO: B. Dijkinga"
+  ] .
 
 t01043:r1
   a :Spouse.n.01 ;

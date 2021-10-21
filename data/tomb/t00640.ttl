@@ -39,7 +39,12 @@ t00640:p1
     a :Date ;
     :date "1929-01-31"^^xsd:date
   ] ;
-  :nam "UBBO ALBERTUS VAN OOSTEN" ;
+  :name [
+    a :Name ;
+    :fullname "Ubbo Albertus van Oosten" ;
+    :prefix "Heer" ;
+    :text "TODO: Heer Ubbo Albertus van Oosten"
+  ] ;
   :occupation [
     a :Principal.n.02 ;
     :hisco hisco:13940 ;
@@ -58,6 +63,5 @@ t00640:p1
     a :Town.n.01 ;
     :name "HAREN" ;
     :place place:Haren2754841
-  ] ;
-  :prefix "HEER" .
+  ] .
 

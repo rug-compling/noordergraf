@@ -40,7 +40,11 @@ t00743:p1
     a :Date ;
     :date "1954-02-20"^^xsd:date
   ] ;
-  :nam "GEERTJE MEIN" ;
+  :name [
+    a :Name ;
+    :fullname "Geertje Mein" ;
+    :text "TODO: Geertje Mein"
+  ] ;
   :placeOfBirth t00743:c1 ;
   :placeOfDeath t00743:c1 ;
   :rol [
@@ -50,5 +54,9 @@ t00743:p1
 
 t00743:p2
   a :Male ;
-  :nam "JAN HORREL" .
+  :name [
+    a :Name ;
+    :fullname "Jan Horrel" ;
+    :text "TODO: Jan Horrel"
+  ] .
 

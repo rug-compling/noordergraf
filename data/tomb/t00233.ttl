@@ -36,7 +36,11 @@ t00233:p1
     a :Date ;
     :date "1876-08-26"^^xsd:date
   ] ;
-  :nam "FENNECHIEN VAN DIJKEN" ;
+  :name [
+    a :Name ;
+    :fullname "Fennechien van Dijken" ;
+    :text "TODO: Fennechien van Dijken"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00233:p2, t00233:p3
@@ -44,12 +48,20 @@ t00233:p1
 
 t00233:p2
   a :Male ;
-  :nam "L.A. VAN DIJKEN" ;
+  :name [
+    a :Name ;
+    :fullname "L.A. van Dijken" ;
+    :text "TODO: L.A. van Dijken"
+  ] ;
   :text "wijlen L.A. van DIJKEN" .
 
 t00233:p3
   a :Female ;
-  :nam "L.P. WIGBOLDUS" .
+  :name [
+    a :Name ;
+    :fullname "L.P. Wigboldus" ;
+    :text "TODO: L.P. Wigboldus"
+  ] .
 
 t00233:s2
   a :OakBranch .

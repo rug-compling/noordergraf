@@ -40,7 +40,11 @@ t00162:p1
     a :Date ;
     :date "1929-10-19"^^xsd:date
   ] ;
-  :nam "JOHANNES JAGER" .
+  :name [
+    a :Name ;
+    :fullname "Johannes Jager" ;
+    :text "TODO: Johannes Jager"
+  ] .
 
 t00162:p2
   a :Male ;
@@ -57,7 +61,11 @@ t00162:p2
     a :Date ;
     :date "1950-05-18"^^xsd:date
   ] ;
-  :nam "JAN JAGER" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Jager" ;
+    :text "TODO: Jan Jager"
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00162:p3
@@ -78,5 +86,9 @@ t00162:p3
     a :Date ;
     :date "1951-02-20"^^xsd:date
   ] ;
-  :nam "ANTJE BULTJE" .
+  :name [
+    a :Name ;
+    :fullname "Antje Bultje" ;
+    :text "TODO: Antje Bultje"
+  ] .
 

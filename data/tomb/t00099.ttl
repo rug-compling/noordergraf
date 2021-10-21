@@ -46,7 +46,12 @@ t00099:p1
     a :Date ;
     :date "1903-12-01"^^xsd:date
   ] ;
-  :nam "GERBRAND WOUTERS" ;
+  :name [
+    a :Name ;
+    :fullname "Gerbrand Wouters" ;
+    :suffix "Jr" ;
+    :text "TODO: Gerbrand Wouters Jr"
+  ] ;
   :occupation [
     a :Alderman.n.01 ;
     :hisco hisco:20110 ;
@@ -59,8 +64,7 @@ t00099:p1
   :rol [
     a :Husband.n.01 ;
     :tgt t00099:p2
-  ] ;
-  :suffix "JR" .
+  ] .
 
 t00099:p2
   a :Female ;
@@ -77,5 +81,9 @@ t00099:p2
     a :Date ;
     :date "1925-07-28"^^xsd:date
   ] ;
-  :nam "ALIDA DIJK" .
+  :name [
+    a :Name ;
+    :fullname "Alida Dijk" ;
+    :text "TODO: Alida Dijk"
+  ] .
 

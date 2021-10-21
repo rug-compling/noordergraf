@@ -40,7 +40,11 @@ t00776:p1
     a :Date ;
     :date "1905-07-15"^^xsd:date
   ] ;
-  :nam "WEMELTJE" ;
+  :name [
+    a :Name ;
+    :fullname "Wemeltje" ;
+    :text "TODO: Wemeltje"
+  ] ;
   :placeOfBirth t00776:c1 ;
   :placeOfDeath t00776:c1 ;
   :rol [
@@ -50,10 +54,18 @@ t00776:p1
 
 t00776:p2
   a :Male ;
-  :nam "H. HUIZING" ;
-  :suffix "HZ" .
+  :name [
+    a :Name ;
+    :fullname "H. Huizing" ;
+    :suffix "Hz" ;
+    :text "TODO: H. Huizing Hz"
+  ] .
 
 t00776:p3
   a :Female ;
-  :nam "A. HORRING" .
+  :name [
+    a :Name ;
+    :fullname "A. Horring" ;
+    :text "TODO: A. Horring"
+  ] .
 

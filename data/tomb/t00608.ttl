@@ -42,7 +42,11 @@ t00608:p1
     a :Date ;
     :date "1890-03-04"^^xsd:date
   ] ;
-  :nam "HENDRIK H. KAMPS" ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik H. Kamps" ;
+    :text "TODO: Hendrik H. Kamps"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00608:p2
@@ -50,7 +54,11 @@ t00608:p1
 
 t00608:p2
   a :Female ;
-  :nam "ALBERDINA NIP" .
+  :name [
+    a :Name ;
+    :fullname "Alberdina Nip" ;
+    :text "TODO: Alberdina Nip"
+  ] .
 
 t00608:p3
   a :Creator ;

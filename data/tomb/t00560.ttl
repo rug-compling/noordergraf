@@ -35,7 +35,12 @@ t00560:p1
     a :Date ;
     :date "1914-03-29"^^xsd:date
   ] ;
-  :nam "J. VAN PETEGEM" ;
+  :name [
+    a :Name ;
+    :fullname "J. van Petegem" ;
+    :prefix "Ds" ;
+    :text "TODO: Ds J. van Petegem"
+  ] ;
   :occupation [
     a :Preacher.n.01 ;
     :hisco hisco:14120 ;
@@ -49,7 +54,6 @@ t00560:p1
       :nam "VRIJE EVANGELISCHE GEMEENTE"
     ]
   ] ;
-  :prefix "DS" ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00560:p2
@@ -57,5 +61,9 @@ t00560:p1
 
 t00560:p2
   a :Female ;
-  :nam "S.M. VAN DER PEIJL" .
+  :name [
+    a :Name ;
+    :fullname "S.M. van der Peijl" ;
+    :text "TODO: S.M. van der Peijl"
+  ] .
 

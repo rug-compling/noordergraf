@@ -37,7 +37,11 @@ t01020:p1
     a :Date ;
     :date "1954-12-09"^^xsd:date
   ] ;
-  :nam "JANTIENES GERDING" ;
+  :name [
+    a :Name ;
+    :fullname "Jantienes Gerding" ;
+    :text "TODO: Jantienes Gerding"
+  ] ;
   :occupation [
     a :Navigator.n.01 ;
     :hisco hisco:04230 ;
@@ -47,12 +51,12 @@ t01020:p1
     ]
   ] ;
   :rol [
-    a :Brother-in-law.n.01
-  ], [
-    a :Uncle.n.01
-  ], [
     a :Son.n.01
   ], [
     a :Brother.n.01
+  ], [
+    a :Brother-in-law.n.01
+  ], [
+    a :Uncle.n.01
   ] .
 

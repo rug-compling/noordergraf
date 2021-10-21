@@ -40,7 +40,11 @@ t00346:p1
     a :Date ;
     :date "1933-01-07"^^xsd:date
   ] ;
-  :nam "ABEL DAVIDS" ;
+  :name [
+    a :Name ;
+    :fullname "Abel Davids" ;
+    :text "TODO: Abel Davids"
+  ] ;
   :placeOfBirth t00346:c1 ;
   :placeOfDeath t00346:c1 ;
   :rol t00346:r1, [
@@ -51,11 +55,19 @@ t00346:p1
 
 t00346:p2
   a :Female ;
-  :nam "TRIJNTJE EBBINGE" .
+  :name [
+    a :Name ;
+    :fullname "Trijntje Ebbinge" ;
+    :text "TODO: Trijntje Ebbinge"
+  ] .
 
 t00346:p3
   a :Female ;
-  :nam "MARCHIEN WESTERHOF" .
+  :name [
+    a :Name ;
+    :fullname "Marchien Westerhof" ;
+    :text "TODO: Marchien Westerhof"
+  ] .
 
 t00346:r1
   a :Widower.n.01 ;

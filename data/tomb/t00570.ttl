@@ -14,8 +14,8 @@ tomb:t00570
     ] ;
     :nd "+53.1047+006.8756"^^ll:
   ] ;
-  :subject t00570:p1, t00570:p2 ;
   :site site:gr9641ANveendam ;
+  :subject t00570:p1, t00570:p2 ;
   :sym [
     a :Butterfly.n.01
   ], [
@@ -42,14 +42,22 @@ t00570:p1
     a :Date ;
     :date "1865-08-29"^^xsd:date
   ] ;
-  :nam "AREND VAN LINGE" ;
+  :name [
+    a :Name ;
+    :fullname "Arend van Linge" ;
+    :suffix "Ez" ;
+    :text "TODO: Arend van Linge Ez"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00570:p2
-  ] ;
-  :suffix "EZ" .
+  ] .
 
 t00570:p2
   a :Female ;
-  :nam "AFIEN R. GIEZEN" .
+  :name [
+    a :Name ;
+    :fullname "Afien R. Giezen" ;
+    :text "TODO: Afien R. Giezen"
+  ] .
 

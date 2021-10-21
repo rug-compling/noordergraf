@@ -35,7 +35,11 @@ t00662:p1
     a :Date ;
     :date "1943-07-27"^^xsd:date
   ] ;
-  :nam "AREND J. FABER" ;
+  :name [
+    a :Name ;
+    :fullname "Arend J. Faber" ;
+    :text "TODO: Arend J. Faber"
+  ] ;
   :rol [
     a :Brother.n.01 ;
     :tgt t00662:p2
@@ -43,5 +47,9 @@ t00662:p1
 
 t00662:p2
   a :Person ;
-  :nam "S. FABER" .
+  :name [
+    a :Name ;
+    :fullname "S. Faber" ;
+    :text "TODO: S. Faber"
+  ] .
 

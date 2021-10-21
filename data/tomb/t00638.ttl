@@ -32,7 +32,11 @@ t00638:p1
     a :Date ;
     :date "1822-05-26"^^xsd:date
   ] ;
-  :nam "JAN REINDERS" .
+  :name [
+    a :Name ;
+    :fullname "Jan Reinders" ;
+    :text "TODO: Jan Reinders"
+  ] .
 
 t00638:p2
   a :Female ;
@@ -49,7 +53,11 @@ t00638:p2
     a :Date ;
     :date "1846-10-13"^^xsd:date
   ] ;
-  :nam "ANIE UKES" ;
+  :name [
+    a :Name ;
+    :fullname "Anie Ukes" ;
+    :text "TODO: Anie Ukes"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00638:p1

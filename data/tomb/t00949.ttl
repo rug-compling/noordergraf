@@ -36,8 +36,12 @@ t00949:p1
     a :Date ;
     :date "1730-08-16"^^xsd:date
   ] ;
-  :nam "GERHARD VAN BERN" ;
-  :prefix "HEER" .
+  :name [
+    a :Name ;
+    :fullname "Gerhard van Bern" ;
+    :prefix "Heer" ;
+    :text "TODO: Heer Gerhard van Bern"
+  ] .
 
 t00949:p2
   a :Female ;
@@ -54,7 +58,11 @@ t00949:p2
     a :Date ;
     :date "1747-03-15"^^xsd:date
   ] ;
-  :nam "ADRIANA MARIA HINSBEEK" ;
+  :name [
+    a :Name ;
+    :fullname "Adriana Maria Hinsbeek" ;
+    :text "TODO: Adriana Maria Hinsbeek"
+  ] ;
   :rol [
     a :Housewife.n.01 ;
     :tgt t00949:p1

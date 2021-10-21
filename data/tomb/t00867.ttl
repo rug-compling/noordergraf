@@ -36,7 +36,11 @@ t00867:p1
     a :Date ;
     :date "1935-05-19"^^xsd:date
   ] ;
-  :nam "BERNARDUS SMULDERS" ;
+  :name [
+    a :Name ;
+    :fullname "Bernardus Smulders" ;
+    :text "TODO: Bernardus Smulders"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00867:p2
@@ -44,5 +48,9 @@ t00867:p1
 
 t00867:p2
   a :Female ;
-  :nam "H. KOENS" .
+  :name [
+    a :Name ;
+    :fullname "H. Koens" ;
+    :text "TODO: H. Koens"
+  ] .
 

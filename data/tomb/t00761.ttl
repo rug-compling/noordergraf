@@ -38,7 +38,11 @@ t00761:p1
     a :Date ;
     :date "1886-04-13"^^xsd:date
   ] ;
-  :nam "P.K. STIKKER" ;
+  :name [
+    a :Name ;
+    :fullname "P.K. Stikker" ;
+    :text "TODO: P.K. Stikker"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00761:p2
@@ -46,5 +50,9 @@ t00761:p1
 
 t00761:p2
   a :Female ;
-  :nam "E.H. NAP" .
+  :name [
+    a :Name ;
+    :fullname "E.H. Nap" ;
+    :text "TODO: E.H. Nap"
+  ] .
 

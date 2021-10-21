@@ -32,7 +32,11 @@ t01000:p1
     a :Date ;
     :date "1887-01-13"^^xsd:date
   ] ;
-  :nam "TRIENTJE H. BOER" ;
+  :name [
+    a :Name ;
+    :fullname "Trientje H. Boer" ;
+    :text "TODO: Trientje H. Boer"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t01000:p2, t01000:p3
@@ -40,9 +44,17 @@ t01000:p1
 
 t01000:p2
   a :Person ;
-  :nam "H.H. BOER" .
+  :name [
+    a :Name ;
+    :fullname "H.H. Boer" ;
+    :text "TODO: H.H. Boer"
+  ] .
 
 t01000:p3
   a :Person ;
-  :nam "A. DE VRIES" .
+  :name [
+    a :Name ;
+    :fullname "A. de Vries" ;
+    :text "TODO: A. de Vries"
+  ] .
 

@@ -37,7 +37,11 @@ t00752:p1
     a :Date ;
     :date "1880-06-09"^^xsd:date
   ] ;
-  :nam "E.C. BEKENKAMP" ;
+  :name [
+    a :Name ;
+    :fullname "E.C. Bekenkamp" ;
+    :text "TODO: E.C. Bekenkamp"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00752:p2
@@ -45,5 +49,9 @@ t00752:p1
 
 t00752:p2
   a :Person ;
-  :nam "A.R. VAN ZANTEN" .
+  :name [
+    a :Name ;
+    :fullname "A.R. van Zanten" ;
+    :text "TODO: A.R. van Zanten"
+  ] .
 

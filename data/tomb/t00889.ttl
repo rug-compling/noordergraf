@@ -32,7 +32,12 @@ t00889:p1
     a :Date ;
     :date "1893-04-02"^^xsd:date
   ] ;
-  :nam "GEERT BUSSCHER SISSINGH" ;
+  :name [
+    a :Name ;
+    :fullname "Geert Busscher Sissingh" ;
+    :prefix "Ds" ;
+    :text "TODO: Ds Geert Busscher Sissingh"
+  ] ;
   :occupation [
     a :Preacher.n.01 ;
     :hisco hisco:14120 ;
@@ -42,7 +47,6 @@ t00889:p1
       :place place:Noordwolde2749806
     ]
   ] ;
-  :prefix "DS" ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00889:p2
@@ -63,7 +67,11 @@ t00889:p2
     a :Date ;
     :date "1926-03-09"^^xsd:date
   ] ;
-  :nam "DIEWERTJE FREDERIKA CORSTIUS" ;
+  :name [
+    a :Name ;
+    :fullname "Diewertje Frederika Corstius" ;
+    :text "TODO: Diewertje Frederika Corstius"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00889:p1

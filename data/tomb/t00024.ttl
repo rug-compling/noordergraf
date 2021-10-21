@@ -32,7 +32,11 @@ t00024:p1
     a :Date ;
     :date "1928-01-09"^^xsd:date
   ] ;
-  :nam "ANNE DE VRIES" .
+  :name [
+    a :Name ;
+    :fullname "Anne de Vries" ;
+    :text "TODO: Anne de Vries"
+  ] .
 
 t00024:p2
   a :Female ;
@@ -49,7 +53,11 @@ t00024:p2
     a :Date ;
     :date "1951-02-25"^^xsd:date
   ] ;
-  :nam "OTTO DOORNBOS" ;
+  :name [
+    a :Name ;
+    :fullname "Otto Doornbos" ;
+    :text "TODO: Otto Doornbos"
+  ] ;
   :ref t00024:v1 .
 
 t00024:v1

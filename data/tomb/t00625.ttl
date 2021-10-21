@@ -41,7 +41,11 @@ t00625:p1
     a :Date ;
     :date "1900-03-02"^^xsd:date
   ] ;
-  :nam "MEERTEN KROESE" ;
+  :name [
+    a :Name ;
+    :fullname "Meerten Kroese" ;
+    :text "TODO: Meerten Kroese"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00625:p2
@@ -49,5 +53,9 @@ t00625:p1
 
 t00625:p2
   a :Female ;
-  :nam "GEESJE SLUIS" .
+  :name [
+    a :Name ;
+    :fullname "Geesje Sluis" ;
+    :text "TODO: Geesje Sluis"
+  ] .
 

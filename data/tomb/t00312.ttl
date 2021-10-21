@@ -35,7 +35,11 @@ t00312:p1
     a :Date ;
     :date "1883-04-15"^^xsd:date
   ] ;
-  :nam "HENDRIKJE HARTSUIKER" .
+  :name [
+    a :Name ;
+    :fullname "Hendrikje Hartsuiker" ;
+    :text "TODO: Hendrikje Hartsuiker"
+  ] .
 
 t00312:p2
   a :Male ;
@@ -52,7 +56,11 @@ t00312:p2
     a :Date ;
     :date "1904-04-10"^^xsd:date
   ] ;
-  :nam "ALBERT SMEMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Albert Smeman" ;
+    :text "TODO: Albert Smeman"
+  ] ;
   :rol t00312:r1, [
     a :Widower.n.01 ;
     :before t00312:r1 ;
@@ -74,7 +82,11 @@ t00312:p3
     a :Date ;
     :date "1904-05-13"^^xsd:date
   ] ;
-  :nam "AALTJE STEENBERGEN" .
+  :name [
+    a :Name ;
+    :fullname "Aaltje Steenbergen" ;
+    :text "TODO: Aaltje Steenbergen"
+  ] .
 
 t00312:r1
   a :Spouse.n.01 ;

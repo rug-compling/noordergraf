@@ -19,22 +19,22 @@ tomb:t00418
   :sym [
     a :Composite.n.01 ;
     :prt [
-      a :Ribbon.n.01
+      a :Nest.n.01
     ], [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ]
-  ], [
-    a :Composite.n.01 ;
-    :prt [
       a :Bird.n.01
     ], [
       a :Flower.n.01
     ], [
       a :Bird.n.01
+    ]
+  ], [
+    a :Composite.n.01 ;
+    :prt [
+      a :Frond.n.01
     ], [
-      a :Nest.n.01
+      a :Frond.n.01
+    ], [
+      a :Ribbon.n.01
     ]
   ] .
 
@@ -53,7 +53,11 @@ t00418:p1
     a :Date ;
     :date "1909-08-22"^^xsd:date
   ] ;
-  :nam "EGBERDINA ZUIDEVELD" ;
+  :name [
+    a :Name ;
+    :fullname "Egberdina Zuideveld" ;
+    :text "TODO: Egberdina Zuideveld"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00418:p2, t00418:p3
@@ -61,9 +65,17 @@ t00418:p1
 
 t00418:p2
   a :Male ;
-  :nam "W. ZUIDEVELD" .
+  :name [
+    a :Name ;
+    :fullname "W. Zuideveld" ;
+    :text "TODO: W. Zuideveld"
+  ] .
 
 t00418:p3
   a :Female ;
-  :nam "J. GERRITS" .
+  :name [
+    a :Name ;
+    :fullname "J. Gerrits" ;
+    :text "TODO: J. Gerrits"
+  ] .
 

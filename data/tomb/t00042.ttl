@@ -43,7 +43,11 @@ t00042:p1
     a :Date ;
     :date "1939-10-05"^^xsd:date
   ] ;
-  :nam "JOHANNES REEDER" ;
+  :name [
+    a :Name ;
+    :fullname "Johannes Reeder" ;
+    :text "TODO: Johannes Reeder"
+  ] ;
   :placeOfBirth [
     a :Town.n.01 ;
     :name "EELDE" ;
@@ -61,5 +65,9 @@ t00042:p1
 
 t00042:p2
   a :Female ;
-  :nam "H. MANNES" .
+  :name [
+    a :Name ;
+    :fullname "H. Mannes" ;
+    :text "TODO: H. Mannes"
+  ] .
 

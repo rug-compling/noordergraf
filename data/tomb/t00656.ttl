@@ -32,7 +32,11 @@ t00656:p1
     a :Date ;
     :date "1892-07-12"^^xsd:date
   ] ;
-  :nam "JAN ARENDS" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Arends" ;
+    :text "TODO: Jan Arends"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00656:p2
@@ -53,7 +57,11 @@ t00656:p2
     a :Date ;
     :date "1929-09-14"^^xsd:date
   ] ;
-  :nam "TRIJNTJE BOELENS" .
+  :name [
+    a :Name ;
+    :fullname "Trijntje Boelens" ;
+    :text "TODO: Trijntje Boelens"
+  ] .
 
 t00656:p3
   a :Male ;
@@ -70,7 +78,11 @@ t00656:p3
     a :Date ;
     :date "1903-04-21"^^xsd:date
   ] ;
-  :nam "JAN" ;
+  :name [
+    a :Name ;
+    :fullname "Jan" ;
+    :text "TODO: Jan"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00656:p1, t00656:p2

@@ -41,16 +41,24 @@ t00767:p1
     a :Date ;
     :date "1922-03-26"^^xsd:date
   ] ;
-  :nam "WILLEM JOLING" ;
+  :name [
+    a :Name ;
+    :fullname "Willem Joling" ;
+    :suffix "Rzn" ;
+    :text "TODO: Willem Joling Rzn"
+  ] ;
   :placeOfBirth t00767:c1 ;
   :placeOfDeath t00767:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00767:p2
-  ] ;
-  :suffix "RZN" .
+  ] .
 
 t00767:p2
   a :Female ;
-  :nam "ROELOFJE PIETERS" .
+  :name [
+    a :Name ;
+    :fullname "Roelofje Pieters" ;
+    :text "TODO: Roelofje Pieters"
+  ] .
 

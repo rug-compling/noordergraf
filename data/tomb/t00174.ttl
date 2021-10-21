@@ -43,7 +43,12 @@ t00174:p1
     a :Date ;
     :date "1927-04-07"^^xsd:date
   ] ;
-  :nam "A. HOF" ;
+  :name [
+    a :Name ;
+    :fullname "A. Hof" ;
+    :prefix "Ds" ;
+    :text "TODO: Ds A. Hof"
+  ] ;
   :occupation [
     a :Pastor.n.01 ;
     :hisco hisco:14120 ;
@@ -56,6 +61,5 @@ t00174:p1
       a :Community.n.02 ;
       :nam "BAPTISTENGEMEENTE"
     ]
-  ] ;
-  :prefix "DS" .
+  ] .
 

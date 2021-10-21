@@ -35,7 +35,11 @@ t00864:p1
     a :Date ;
     :date "1925-08-21"^^xsd:date
   ] ;
-  :nam "FENNEGIEN WOPPENKAMP" ;
+  :name [
+    a :Name ;
+    :fullname "Fennegien Woppenkamp" ;
+    :text "TODO: Fennegien Woppenkamp"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "SMILDE" ;
@@ -47,16 +51,20 @@ t00864:p1
     :place place:Veenoord2745753
   ] ;
   :rol [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :tgt t00864:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00864:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00864:p2
   a :Male ;
-  :nam "JOH. VISSCHER" .
+  :name [
+    a :Name ;
+    :fullname "JOH. Visscher" ;
+    :text "TODO: JOH. Visscher"
+  ] .
 

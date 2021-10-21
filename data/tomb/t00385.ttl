@@ -14,8 +14,8 @@ tomb:t00385
     ] ;
     :nd "+53.2517+006.1455"^^ll:
   ] ;
-  :subject t00385:p1 ;
   :site site:fr9285TCbuitenpost ;
+  :subject t00385:p1 ;
   :sym [
     a :Composite.n.01 ;
     :prt [
@@ -42,7 +42,11 @@ t00385:p1
     a :Date ;
     :date "1929-03-08"^^xsd:date
   ] ;
-  :nam "ANDRIES HAAGSMA" ;
+  :name [
+    a :Name ;
+    :fullname "Andries Haagsma" ;
+    :text "TODO: Andries Haagsma"
+  ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "BUITENPOST" ;
@@ -52,8 +56,8 @@ t00385:p1
     a :Father.n.01, :Grandfather.n.01 ;
     :tgt [
       a :Family.n.04 ;
-      :text "de Fam. Haagsma." ;
-      :nam "HAAGSMA"
+      :nam "HAAGSMA" ;
+      :text "de Fam. Haagsma."
     ]
   ] .
 

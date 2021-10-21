@@ -35,7 +35,11 @@ t00755:p1
     a :Date ;
     :date "1865-10-27"^^xsd:date
   ] ;
-  :nam "KLAAS JANS" ;
+  :name [
+    a :Name ;
+    :fullname "Klaas Jans" ;
+    :text "TODO: Klaas Jans"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00755:p2, t00755:p3
@@ -43,9 +47,17 @@ t00755:p1
 
 t00755:p2
   a :Person ;
-  :nam "J.J. HAKEN" .
+  :name [
+    a :Name ;
+    :fullname "J.J. Haken" ;
+    :text "TODO: J.J. Haken"
+  ] .
 
 t00755:p3
   a :Person ;
-  :nam "T.R. REMTEMA" .
+  :name [
+    a :Name ;
+    :fullname "T.R. Remtema" ;
+    :text "TODO: T.R. Remtema"
+  ] .
 

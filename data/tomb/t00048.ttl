@@ -50,7 +50,11 @@ t00048:p1
     a :Date ;
     :date "1949-06-09"^^xsd:date
   ] ;
-  :nam "IJMKJE WIELINGA" ;
+  :name [
+    a :Name ;
+    :fullname "Ijmkje Wielinga" ;
+    :text "TODO: Ijmkje Wielinga"
+  ] ;
   :rol t00048:r3, [
     a :Wife.n.01 ;
     :tgt t00048:p2
@@ -73,7 +77,11 @@ t00048:p2
     a :Date ;
     :date "1969-05-10"^^xsd:date
   ] ;
-  :nam "FREERK BRUINSMA" ;
+  :name [
+    a :Name ;
+    :fullname "Freerk Bruinsma" ;
+    :text "TODO: Freerk Bruinsma"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :after t00048:r3 ;
@@ -82,7 +90,11 @@ t00048:p2
 
 t00048:p3
   a :Female ;
-  :nam "H.J. RITZEMA" .
+  :name [
+    a :Name ;
+    :fullname "H.J. Ritzema" ;
+    :text "TODO: H.J. Ritzema"
+  ] .
 
 t00048:r3
   a :Spouse.n.01 ;

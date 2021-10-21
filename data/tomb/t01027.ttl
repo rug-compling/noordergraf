@@ -44,7 +44,11 @@ t01027:p1
     a :Date ;
     :date "1878-04-30"^^xsd:date
   ] ;
-  :nam "MARTJE PRINCIPAAL" ;
+  :name [
+    a :Name ;
+    :fullname "Martje Principaal" ;
+    :text "TODO: Martje Principaal"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01027:p2
@@ -52,7 +56,11 @@ t01027:p1
 
 t01027:p2
   a :Male ;
-  :nam "P. DAM" .
+  :name [
+    a :Name ;
+    :fullname "P. Dam" ;
+    :text "TODO: P. Dam"
+  ] .
 
 t01027:p3
   a :Creator ;

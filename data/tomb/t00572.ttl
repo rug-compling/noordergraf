@@ -36,7 +36,11 @@ t00572:p1
     a :Date ;
     :date "1920-04-03"^^xsd:date
   ] ;
-  :nam "JANTINA GEZINA" ;
+  :name [
+    a :Name ;
+    :fullname "Jantina Gezina" ;
+    :text "TODO: Jantina Gezina"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00572:p2
@@ -47,9 +51,17 @@ t00572:p1
 
 t00572:p2
   a :Male ;
-  :nam "R. HEERDT" .
+  :name [
+    a :Name ;
+    :fullname "R. Heerdt" ;
+    :text "TODO: R. Heerdt"
+  ] .
 
 t00572:p3
   a :Female ;
-  :nam "A. BOER" .
+  :name [
+    a :Name ;
+    :fullname "A. Boer" ;
+    :text "TODO: A. Boer"
+  ] .
 

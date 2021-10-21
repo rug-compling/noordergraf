@@ -14,9 +14,9 @@ tomb:t00841
     ] ;
     :nd "+53.2958+005.0655"^^ll:
   ] ;
-  :subject t00841:p1, t00841:p2 ;
   :quo "NAAR JEZUS HEEN"@nld ;
-  :site site:fr8899AWoost_vlieland .
+  :site site:fr8899AWoost_vlieland ;
+  :subject t00841:p1, t00841:p2 .
 
 t00841:p1
   a :Female ;
@@ -24,7 +24,11 @@ t00841:p1
     a :Date ;
     :date "1922-12-18"^^xsd:date
   ] ;
-  :nam "BETZY AKERSLOOT-BERG" ;
+  :name [
+    a :Name ;
+    :fullname "Betzy Akersloot-berg" ;
+    :text "TODO: Betzy Akersloot-berg"
+  ] ;
   :occupation [
     a :Painter.n.01 ;
     :hisco hisco:16130
@@ -36,7 +40,11 @@ t00841:p2
     a :Date ;
     :date "1929-10-16"^^xsd:date
   ] ;
-  :nam "GOOSWINUS GERARDUS AKERSLOOT" ;
+  :name [
+    a :Name ;
+    :fullname "Gooswinus Gerardus Akersloot" ;
+    :text "TODO: Gooswinus Gerardus Akersloot"
+  ] ;
   :occupation [
     a :Consul.n.01 ;
     :hisco hisco:20210 ;

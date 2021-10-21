@@ -41,7 +41,11 @@ t01018:p1
     a :Date ;
     :date "1845-05-25"^^xsd:date
   ] ;
-  :nam "GEERT HARMS KUIPER" ;
+  :name [
+    a :Name ;
+    :fullname "Geert Harms Kuiper" ;
+    :text "TODO: Geert Harms Kuiper"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t01018:p2, t01018:p3
@@ -49,9 +53,17 @@ t01018:p1
 
 t01018:p2
   a :Male ;
-  :nam "HARM ENJES KUIPER" .
+  :name [
+    a :Name ;
+    :fullname "Harm Enjes Kuiper" ;
+    :text "TODO: Harm Enjes Kuiper"
+  ] .
 
 t01018:p3
   a :Female ;
-  :nam "EJA TONKENS VAN DELDEN" .
+  :name [
+    a :Name ;
+    :fullname "Eja Tonkens van Delden" ;
+    :text "TODO: Eja Tonkens van Delden"
+  ] .
 

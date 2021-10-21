@@ -38,7 +38,11 @@ t01138:p1
     a :Date ;
     :date "1870-06-03"^^xsd:date
   ] ;
-  :nam "HEERTJE GAAIKEMA" ;
+  :name [
+    a :Name ;
+    :fullname "Heertje Gaaikema" ;
+    :text "TODO: Heertje Gaaikema"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t01138:p2, t01138:p3
@@ -46,11 +50,19 @@ t01138:p1
 
 t01138:p2
   a :Person ;
-  :nam "H.H. GAAIKEMA" .
+  :name [
+    a :Name ;
+    :fullname "H.H. Gaaikema" ;
+    :text "TODO: H.H. Gaaikema"
+  ] .
 
 t01138:p3
   a :Person ;
-  :nam "J.H. DIJKSTRA" .
+  :name [
+    a :Name ;
+    :fullname "J.H. Dijkstra" ;
+    :text "TODO: J.H. Dijkstra"
+  ] .
 
 t01138:s2
   a :OakBranch .

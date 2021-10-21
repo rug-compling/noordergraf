@@ -43,7 +43,11 @@ t01005:p1
     a :Date ;
     :date "1908-05-23"^^xsd:date
   ] ;
-  :nam "GEESSIEN" ;
+  :name [
+    a :Name ;
+    :fullname "Geessien" ;
+    :text "TODO: Geessien"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t01005:p2, t01005:p3
@@ -51,9 +55,17 @@ t01005:p1
 
 t01005:p2
   a :Person ;
-  :nam "A.S. VONK" .
+  :name [
+    a :Name ;
+    :fullname "A.S. Vonk" ;
+    :text "TODO: A.S. Vonk"
+  ] .
 
 t01005:p3
   a :Person ;
-  :nam "A. MEIJER" .
+  :name [
+    a :Name ;
+    :fullname "A. Meijer" ;
+    :text "TODO: A. Meijer"
+  ] .
 

@@ -40,7 +40,11 @@ t00063:p1
     a :Date ;
     :date "1943-08-01"^^xsd:date
   ] ;
-  :nam "DANIEL JACOB SMIT" ;
+  :name [
+    a :Name ;
+    :fullname "Daniel Jacob Smit" ;
+    :text "TODO: Daniel Jacob Smit"
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00063:p2
@@ -48,5 +52,9 @@ t00063:p1
 
 t00063:p2
   a :Female ;
-  :nam "A. SMIT-KEIMPEMA" .
+  :name [
+    a :Name ;
+    :fullname "A. Smit-keimpema" ;
+    :text "TODO: A. Smit-keimpema"
+  ] .
 

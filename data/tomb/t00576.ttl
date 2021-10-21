@@ -37,7 +37,11 @@ t00576:p1
     a :Date ;
     :date "1847-08-17"^^xsd:date
   ] ;
-  :nam "KLAAS M. TALENS" ;
+  :name [
+    a :Name ;
+    :fullname "Klaas M. Talens" ;
+    :text "TODO: Klaas M. Talens"
+  ] ;
   :placeOfBirth t00576:c1 ;
   :placeOfDeath t00576:c1 ;
   :rol t00576:r2, [
@@ -48,11 +52,19 @@ t00576:p1
 
 t00576:p2
   a :Female ;
-  :nam "ELTJE G. ARENDS" .
+  :name [
+    a :Name ;
+    :fullname "Eltje G. Arends" ;
+    :text "TODO: Eltje G. Arends"
+  ] .
 
 t00576:p3
   a :Female ;
-  :nam "ANJE RIETEMA" .
+  :name [
+    a :Name ;
+    :fullname "Anje Rietema" ;
+    :text "TODO: Anje Rietema"
+  ] .
 
 t00576:r2
   a :Spouse.n.01 ;

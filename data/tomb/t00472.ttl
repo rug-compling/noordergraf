@@ -45,22 +45,30 @@ t00472:p1
     a :Date ;
     :date "1947-01-10"^^xsd:date
   ] ;
-  :nam "AGATHA SCHOFFELMEER" ;
+  :name [
+    a :Name ;
+    :fullname "Agatha Schoffelmeer" ;
+    :text "TODO: Agatha Schoffelmeer"
+  ] ;
   :placeOfBirth t00472:c1 ;
   :placeOfDeath t00472:c1 ;
   :rol [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :tgt t00472:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00472:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00472:p2
   a :Female ;
-  :nam "ANTONIUS PETERS" .
+  :name [
+    a :Name ;
+    :fullname "Antonius Peters" ;
+    :text "TODO: Antonius Peters"
+  ] .
 
 t00472:p3
   a :Female ;
@@ -77,9 +85,17 @@ t00472:p3
     a :Date ;
     :date "1952-04-16"^^xsd:date
   ] ;
-  :nam "ANNA SCHOFFELMEER-DE JONG" .
+  :name [
+    a :Name ;
+    :fullname "Anna Schoffelmeer-de Jong" ;
+    :text "TODO: Anna Schoffelmeer-de Jong"
+  ] .
 
 t00472:p4
   a :Male ;
-  :nam "C. SCHOFFELMEER" .
+  :name [
+    a :Name ;
+    :fullname "C. Schoffelmeer" ;
+    :text "TODO: C. Schoffelmeer"
+  ] .
 

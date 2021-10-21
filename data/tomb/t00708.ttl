@@ -14,9 +14,9 @@ tomb:t00708
     ] ;
     :nd "+52.7809+006.8996"^^ll:
   ] ;
-  :subject t00708:g1, t00708:p1, t00708:p2 ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
+  :subject t00708:g1, t00708:p1, t00708:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -30,9 +30,17 @@ t00708:g1
 
 t00708:p1
   a :Male ;
-  :nam "ALBERT ZWOLS" .
+  :name [
+    a :Name ;
+    :fullname "Albert Zwols" ;
+    :text "TODO: Albert Zwols"
+  ] .
 
 t00708:p2
   a :Female ;
-  :nam "JANTIEN WARRING" .
+  :name [
+    a :Name ;
+    :fullname "Jantien Warring" ;
+    :text "TODO: Jantien Warring"
+  ] .
 

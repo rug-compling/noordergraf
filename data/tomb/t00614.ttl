@@ -38,7 +38,11 @@ t00614:p1
     a :Date ;
     :date "1903-09-02"^^xsd:date
   ] ;
-  :nam "ABRAHAM PANNENBORG" ;
+  :name [
+    a :Name ;
+    :fullname "Abraham Pannenborg" ;
+    :text "TODO: Abraham Pannenborg"
+  ] ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
     :name "KALKWIJK" ;
@@ -56,9 +60,17 @@ t00614:p1
 
 t00614:p2
   a :Male ;
-  :nam "R. PANNENBORG" .
+  :name [
+    a :Name ;
+    :fullname "R. Pannenborg" ;
+    :text "TODO: R. Pannenborg"
+  ] .
 
 t00614:p3
   a :Female ;
-  :nam "A. VOERMAN" .
+  :name [
+    a :Name ;
+    :fullname "A. Voerman" ;
+    :text "TODO: A. Voerman"
+  ] .
 

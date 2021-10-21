@@ -51,19 +51,27 @@ t00426:p1
     a :Date ;
     :date "1954-07-13"^^xsd:date
   ] ;
-  :nam "A.J. VISSER" ;
+  :name [
+    a :Name ;
+    :fullname "A.J. Visser" ;
+    :text "TODO: A.J. Visser"
+  ] ;
   :placeOfBirth t00426:c2 ;
   :placeOfDeath t00426:c2 ;
   :rol [
+    a :Grandmother.n.01
+  ], [
     a :Widow.n.01 ;
     :tgt t00426:p2
   ], [
     a :Mother.n.01
-  ], [
-    a :Grandmother.n.01
   ] .
 
 t00426:p2
   a :Male ;
-  :nam "TH. KLONTJE" .
+  :name [
+    a :Name ;
+    :fullname "TH. Klontje" ;
+    :text "TODO: TH. Klontje"
+  ] .
 

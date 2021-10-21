@@ -35,7 +35,11 @@ t00999:p1
     a :Date ;
     :date "1888-05-29"^^xsd:date
   ] ;
-  :nam "FENNA HOMMES" ;
+  :name [
+    a :Name ;
+    :fullname "Fenna Hommes" ;
+    :text "TODO: Fenna Hommes"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "ZUIDWOLDE" ;
@@ -47,16 +51,20 @@ t00999:p1
     :place place:Noorddijk2749981
   ] ;
   :rol [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :tgt t00999:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00999:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00999:p2
   a :Female ;
-  :nam "LUBBERTUS MULDER" .
+  :name [
+    a :Name ;
+    :fullname "Lubbertus Mulder" ;
+    :text "TODO: Lubbertus Mulder"
+  ] .
 

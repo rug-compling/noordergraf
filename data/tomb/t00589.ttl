@@ -37,16 +37,24 @@ t00589:p1
     a :Date ;
     :date "1965-04-09"^^xsd:date
   ] ;
-  :nam "BRUIN BRUINS" ;
+  :name [
+    a :Name ;
+    :fullname "Bruin Bruins" ;
+    :suffix "B.zoon" ;
+    :text "TODO: Bruin Bruins B.zoon"
+  ] ;
   :placeOfBirth t00589:c1 ;
   :placeOfDeath t00589:c1 ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00589:p2
-  ] ;
-  :suffix "B.ZOON" .
+  ] .
 
 t00589:p2
   a :Female ;
-  :nam "MARTINA PETRONELLA DE BOER" .
+  :name [
+    a :Name ;
+    :fullname "Martina Petronella de Boer" ;
+    :text "TODO: Martina Petronella de Boer"
+  ] .
 

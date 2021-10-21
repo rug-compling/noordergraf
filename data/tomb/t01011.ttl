@@ -35,7 +35,11 @@ t01011:p1
     a :Date ;
     :date "1881-06-18"^^xsd:date
   ] ;
-  :nam "KLAAS KLOOSTER" ;
+  :name [
+    a :Name ;
+    :fullname "Klaas Klooster" ;
+    :text "TODO: Klaas Klooster"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01011:p2
@@ -43,5 +47,9 @@ t01011:p1
 
 t01011:p2
   a :Female ;
-  :nam "HINDERERIKA A. SMIT" .
+  :name [
+    a :Name ;
+    :fullname "Hindererika A. Smit" ;
+    :text "TODO: Hindererika A. Smit"
+  ] .
 

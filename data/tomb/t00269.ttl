@@ -32,7 +32,11 @@ t00269:p1
     a :Date ;
     :date "1970-07-15"^^xsd:date
   ] ;
-  :nam "GRIETJE A.C. EGGENS" ;
+  :name [
+    a :Name ;
+    :fullname "Grietje A.C. Eggens" ;
+    :text "TODO: Grietje A.C. Eggens"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00269:p2
@@ -40,5 +44,9 @@ t00269:p1
 
 t00269:p2
   a :Male ;
-  :nam "H. SPELDE" .
+  :name [
+    a :Name ;
+    :fullname "H. Spelde" ;
+    :text "TODO: H. Spelde"
+  ] .
 

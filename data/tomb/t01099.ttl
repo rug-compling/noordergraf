@@ -40,7 +40,11 @@ t01099:p1
     a :Date ;
     :date "1863-06-11"^^xsd:date
   ] ;
-  :nam "DERK T. KUIPER" ;
+  :name [
+    a :Name ;
+    :fullname "Derk T. Kuiper" ;
+    :text "TODO: Derk T. Kuiper"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01099:p2
@@ -48,7 +52,11 @@ t01099:p1
 
 t01099:p2
   a :Female ;
-  :nam "E.H. VERWER" .
+  :name [
+    a :Name ;
+    :fullname "E.H. Verwer" ;
+    :text "TODO: E.H. Verwer"
+  ] .
 
 t01099:p3
   a :Male ;
@@ -65,7 +73,11 @@ t01099:p3
     a :Date ;
     :date "1863-06-29"^^xsd:date
   ] ;
-  :nam "JAKOB D. KUIPER" ;
+  :name [
+    a :Name ;
+    :fullname "Jakob D. Kuiper" ;
+    :text "TODO: Jakob D. Kuiper"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t01099:p1, t01099:p2

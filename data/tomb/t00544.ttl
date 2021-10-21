@@ -14,8 +14,8 @@ tomb:t00544
     ] ;
     :nd "+53.1046+006.8757"^^ll:
   ] ;
-  :subject t00544:p1, t00544:p2 ;
-  :site site:gr9641ANveendam .
+  :site site:gr9641ANveendam ;
+  :subject t00544:p1, t00544:p2 .
 
 t00544:p1
   a :Female ;
@@ -32,7 +32,11 @@ t00544:p1
     a :Date ;
     :date "1853-12-24"^^xsd:date
   ] ;
-  :nam "JANTJE DEDDES" ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Deddes" ;
+    :text "TODO: Jantje Deddes"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00544:p2
@@ -40,5 +44,9 @@ t00544:p1
 
 t00544:p2
   a :Male ;
-  :nam "K. WILKENS" .
+  :name [
+    a :Name ;
+    :fullname "K. Wilkens" ;
+    :text "TODO: K. Wilkens"
+  ] .
 

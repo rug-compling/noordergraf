@@ -40,7 +40,11 @@ t00373:p1
     a :Date ;
     :date "1933-04-02"^^xsd:date
   ] ;
-  :nam "MARIA HELENA CRAMER VON BAUMGARTEN" ;
+  :name [
+    a :Name ;
+    :fullname "Maria Helena Cramer Von Baumgarten" ;
+    :text "TODO: Maria Helena Cramer Von Baumgarten"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00373:p2
@@ -48,6 +52,10 @@ t00373:p1
 
 t00373:p2
   a :Male ;
-  :nam "W. OKKEN" ;
-  :prefix "DS" .
+  :name [
+    a :Name ;
+    :fullname "W. Okken" ;
+    :prefix "Ds" ;
+    :text "TODO: Ds W. Okken"
+  ] .
 

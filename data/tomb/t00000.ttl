@@ -41,7 +41,11 @@ t00000:p1
     a :Date ;
     :date "1929-01-18"^^xsd:date
   ] ;
-  :nam "JAN WERKMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Werkman" ;
+    :text "TODO: Jan Werkman"
+  ] ;
   :occupation [
     a :Constable.n.03 ;
     :hisco hisco:58220 ;
@@ -87,5 +91,9 @@ t00000:p1
 
 t00000:p2
   a :Female ;
-  :nam "ANJE REKER" .
+  :name [
+    a :Name ;
+    :fullname "Anje Reker" ;
+    :text "TODO: Anje Reker"
+  ] .
 

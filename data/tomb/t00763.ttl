@@ -39,7 +39,11 @@ t00763:p1
     a :Date ;
     :date "1880-08-06"^^xsd:date
   ] ;
-  :nam "REMKO VAN ZANTEN" ;
+  :name [
+    a :Name ;
+    :fullname "Remko van Zanten" ;
+    :text "TODO: Remko van Zanten"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00763:p2, t00763:p3
@@ -47,9 +51,17 @@ t00763:p1
 
 t00763:p2
   a :Male ;
-  :nam "TJAART REMKES VAN ZANTEN" .
+  :name [
+    a :Name ;
+    :fullname "Tjaart Remkes van Zanten" ;
+    :text "TODO: Tjaart Remkes van Zanten"
+  ] .
 
 t00763:p3
   a :Female ;
-  :nam "TRIJNTJE FREERKS STEENHUISEN" .
+  :name [
+    a :Name ;
+    :fullname "Trijntje Freerks Steenhuisen" ;
+    :text "TODO: Trijntje Freerks Steenhuisen"
+  ] .
 

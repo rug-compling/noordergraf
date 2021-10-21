@@ -35,7 +35,11 @@ t00941:p1
     a :Date ;
     :date "1898-04-12"^^xsd:date
   ] ;
-  :nam "GEERT FEKKO" ;
+  :name [
+    a :Name ;
+    :fullname "Geert Fekko" ;
+    :text "TODO: Geert Fekko"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00941:p3, t00941:p4
@@ -56,7 +60,11 @@ t00941:p2
     a :Date ;
     :date "1900-07-25"^^xsd:date
   ] ;
-  :nam "GEERT FEKKO" ;
+  :name [
+    a :Name ;
+    :fullname "Geert Fekko" ;
+    :text "TODO: Geert Fekko"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00941:p3, t00941:p4
@@ -64,9 +72,17 @@ t00941:p2
 
 t00941:p3
   a :Person ;
-  :nam "B. HINDRIKS" .
+  :name [
+    a :Name ;
+    :fullname "B. Hindriks" ;
+    :text "TODO: B. Hindriks"
+  ] .
 
 t00941:p4
   a :Person ;
-  :nam "M. FEKKERS" .
+  :name [
+    a :Name ;
+    :fullname "M. Fekkers" ;
+    :text "TODO: M. Fekkers"
+  ] .
 

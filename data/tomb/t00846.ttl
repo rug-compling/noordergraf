@@ -14,9 +14,9 @@ tomb:t00846
     ] ;
     :nd "+53.2955+005.0653"^^ll:
   ] ;
-  :subject t00846:p1, t00846:p2 ;
   :quo "RUST ZACHT! GELIEFDE DOODEN!"@nld ;
   :site site:fr8899AWoost_vlieland ;
+  :subject t00846:p1, t00846:p2 ;
   :sym [
     a :Sandglass.n.01
   ] .
@@ -36,7 +36,11 @@ t00846:p1
     a :Date ;
     :date "1897-03-22"^^xsd:date
   ] ;
-  :nam "WILLEM SIEBEN" ;
+  :name [
+    a :Name ;
+    :fullname "Willem Sieben" ;
+    :text "TODO: Willem Sieben"
+  ] ;
   :rol [
     a :Parent.n.01 ;
     :tgt t00846:p3
@@ -57,7 +61,11 @@ t00846:p2
     a :Date ;
     :date "1898-12-07"^^xsd:date
   ] ;
-  :nam "MAAIKE BAKKER" ;
+  :name [
+    a :Name ;
+    :fullname "Maaike Bakker" ;
+    :text "TODO: Maaike Bakker"
+  ] ;
   :rol [
     a :Parent.n.01 ;
     :tgt t00846:p3

@@ -37,13 +37,17 @@ t01063:p1
     a :Date ;
     :date "1945-05-10"^^xsd:date
   ] ;
-  :nam "ANNE PIJPKER" ;
+  :name [
+    a :Name ;
+    :fullname "Anne Pijpker" ;
+    :text "TODO: Anne Pijpker"
+  ] ;
   :rol [
-    a :Grandparent.n.01
-  ], [
     a :Great_grandparent.n.01
   ], [
     a :Parent.n.01
+  ], [
+    a :Grandparent.n.01
   ] .
 
 t01063:p2
@@ -61,7 +65,11 @@ t01063:p2
     a :Date ;
     :date "1962-01-03"^^xsd:date
   ] ;
-  :nam "TRIENTJE JAGERSMA" ;
+  :name [
+    a :Name ;
+    :fullname "Trientje Jagersma" ;
+    :text "TODO: Trientje Jagersma"
+  ] ;
   :rol [
     a :Parent.n.01
   ], [

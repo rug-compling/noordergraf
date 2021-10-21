@@ -32,12 +32,16 @@ t00547:p1
     a :Date ;
     :date "1906-04-14"^^xsd:date
   ] ;
-  :nam "JAN MULDER" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Mulder" ;
+    :suffix "Tzn" ;
+    :text "TODO: Jan Mulder Tzn"
+  ] ;
   :rol [
     a :Parent.n.01 ;
     :tgt t00547:p3
-  ] ;
-  :suffix "TZN" .
+  ] .
 
 t00547:p2
   a :Female ;
@@ -54,7 +58,11 @@ t00547:p2
     a :Date ;
     :date "1913-03-30"^^xsd:date
   ] ;
-  :nam "GEESJEN VENEMA" ;
+  :name [
+    a :Name ;
+    :fullname "Geesjen Venema" ;
+    :text "TODO: Geesjen Venema"
+  ] ;
   :rol [
     a :Parent.n.01 ;
     :tgt t00547:p3

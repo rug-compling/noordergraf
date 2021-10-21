@@ -37,13 +37,17 @@ t00290:p1
     a :Date ;
     :date "1926-05-12"^^xsd:date
   ] ;
-  :nam "JAN KAT" ;
+  :name [
+    a :Name ;
+    :fullname "Jan Kat" ;
+    :prefix "Ds" ;
+    :text "TODO: Ds Jan Kat"
+  ] ;
   :occupation [
     a :Preacher.n.01 ;
     :begin "1925-11-15"^^xsd:date ;
     :hisco hisco:14120 ;
     :location t00290:c1
   ] ;
-  :placeOfDeath t00290:c1 ;
-  :prefix "DS" .
+  :placeOfDeath t00290:c1 .
 

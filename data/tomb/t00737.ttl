@@ -32,7 +32,11 @@ t00737:p1
     a :Date ;
     :date "1892-10-25"^^xsd:date
   ] ;
-  :nam "ELIZABETH SMITH" ;
+  :name [
+    a :Name ;
+    :fullname "Elizabeth Smith" ;
+    :text "TODO: Elizabeth Smith"
+  ] ;
   :placeOfBirth [
     a :Village.n.02 ;
     :name "TERMUNTERZIJL" ;
@@ -50,9 +54,17 @@ t00737:p1
 
 t00737:p2
   a :Male ;
-  :nam "P.M. SMITH" .
+  :name [
+    a :Name ;
+    :fullname "P.M. Smith" ;
+    :text "TODO: P.M. Smith"
+  ] .
 
 t00737:p3
   a :Female ;
-  :nam "A.H. GEERTSEMA" .
+  :name [
+    a :Name ;
+    :fullname "A.H. Geertsema" ;
+    :text "TODO: A.H. Geertsema"
+  ] .
 

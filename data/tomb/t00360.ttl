@@ -41,7 +41,11 @@ t00360:p1
     a :Date ;
     :date "1936-02-11"^^xsd:date
   ] ;
-  :nam "GRIETJE JAGER" ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Jager" ;
+    :text "TODO: Grietje Jager"
+  ] ;
   :placeOfBirth t00360:c1 ;
   :placeOfDeath t00360:c1 ;
   :rol [
@@ -56,5 +60,9 @@ t00360:p1
 
 t00360:p2
   a :Male ;
-  :nam "TH. PIETERSEN" .
+  :name [
+    a :Name ;
+    :fullname "TH. Pietersen" ;
+    :text "TODO: TH. Pietersen"
+  ] .
 

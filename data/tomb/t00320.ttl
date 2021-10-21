@@ -36,7 +36,11 @@ t00320:p1
     a :Date ;
     :date "1999-08-20"^^xsd:date
   ] ;
-  :nam "ALBERT MARTENS" ;
+  :name [
+    a :Name ;
+    :fullname "Albert Martens" ;
+    :text "TODO: Albert Martens"
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00320:p2
@@ -61,7 +65,11 @@ t00320:p2
     a :Date ;
     :date "2008-03-17"^^xsd:date
   ] ;
-  :nam "GRIETJE MARTENS-KOSTER" ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Martens-koster" ;
+    :text "TODO: Grietje Martens-koster"
+  ] ;
   :rol [
     a :Great_grandmother.n.01
   ], [

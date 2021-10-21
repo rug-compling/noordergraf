@@ -35,7 +35,12 @@ t00100:p1
     a :Date ;
     :date "1913-01-28"^^xsd:date
   ] ;
-  :nam "JOHAN ADRIAAN FEITH" ;
+  :name [
+    a :Name ;
+    :fullname "Johan Adriaan Feith" ;
+    :prefix "Jhr mr" ;
+    :text "TODO: Jhr mr Johan Adriaan Feith"
+  ] ;
   :occupation [
     a :Archivist.n.01 ;
     :hisco hisco:19130 ;
@@ -48,8 +53,7 @@ t00100:p1
       a :State.n.04 ;
       :nam "NEDERLAND"
     ]
-  ] ;
-  :prefix "JHR MR" .
+  ] .
 
 t00100:p2
   a :Female ;
@@ -66,8 +70,12 @@ t00100:p2
     a :Date ;
     :date "1935-03-06"^^xsd:date
   ] ;
-  :nam "HENRIËTTE PAULINE GOCKINGA" ;
-  :prefix "JNKV" ;
+  :name [
+    a :Name ;
+    :fullname "Henriëtte Pauline Gockinga" ;
+    :prefix "Jnkv" ;
+    :text "TODO: Jnkv Henriëtte Pauline Gockinga"
+  ] ;
   :rol [
     a :Wife.n.01 ;
     :tgt t00100:p1

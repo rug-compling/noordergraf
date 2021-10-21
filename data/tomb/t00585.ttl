@@ -14,8 +14,8 @@ tomb:t00585
     ] ;
     :nd "+53.3353+006.5129"^^ll:
   ] ;
-  :subject t00585:p1, t00585:p2 ;
   :site site:gr9951STwinsum ;
+  :subject t00585:p1, t00585:p2 ;
   :sym [
     a :WeepingWillow
   ] .
@@ -35,7 +35,11 @@ t00585:p1
     a :Date ;
     :date "1918-12-23"^^xsd:date
   ] ;
-  :nam "HENDRIK OOSTINGA" ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Oostinga" ;
+    :text "TODO: Hendrik Oostinga"
+  ] ;
   :occupation [
     a :Constable.n.03 ;
     :hisco hisco:58220 ;
@@ -69,7 +73,11 @@ t00585:p2
     a :Date ;
     :date "1912-01-08"^^xsd:date
   ] ;
-  :nam "JAKOBKE CAZEMIER" ;
+  :name [
+    a :Name ;
+    :fullname "Jakobke Cazemier" ;
+    :text "TODO: Jakobke Cazemier"
+  ] ;
   :placeOfDeath [
     a :Village.n.02 ;
     :name "OBERGUM" ;

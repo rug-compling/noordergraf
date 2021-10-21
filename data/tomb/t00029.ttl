@@ -35,7 +35,11 @@ t00029:p1
     a :Date ;
     :date "1935-05-12"^^xsd:date
   ] ;
-  :nam "MARIA HEIDEVELD" ;
+  :name [
+    a :Name ;
+    :fullname "Maria Heideveld" ;
+    :text "TODO: Maria Heideveld"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00029:p2, t00029:p3
@@ -60,7 +64,11 @@ t00029:p2
     a :Date ;
     :date "1946-04-02"^^xsd:date
   ] ;
-  :nam "ROELOF HEIDEVELD" ;
+  :name [
+    a :Name ;
+    :fullname "Roelof Heideveld" ;
+    :text "TODO: Roelof Heideveld"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00029:p3
@@ -87,7 +95,11 @@ t00029:p3
     a :Date ;
     :date "1958-02-17"^^xsd:date
   ] ;
-  :nam "JOHANNA BOS" ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Bos" ;
+    :text "TODO: Johanna Bos"
+  ] ;
   :rol [
     a :Mother.n.01 ;
     :tgt t00029:p1

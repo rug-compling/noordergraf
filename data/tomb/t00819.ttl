@@ -36,7 +36,11 @@ t00819:p1
     a :Date ;
     :date "1945-02-03"^^xsd:date
   ] ;
-  :nam "HIEKTJE HUIZINGA" ;
+  :name [
+    a :Name ;
+    :fullname "Hiektje Huizinga" ;
+    :text "TODO: Hiektje Huizinga"
+  ] ;
   :rol t00819:r3, [
     a :Wife.n.01 ;
     :tgt t00819:p2
@@ -76,11 +80,19 @@ t00819:p2
 
 t00819:p3
   a :Male ;
-  :nam "T. DREXHAGE" .
+  :name [
+    a :Name ;
+    :fullname "T. Drexhage" ;
+    :text "TODO: T. Drexhage"
+  ] .
 
 t00819:p4
   a :Female ;
-  :nam "S. OOSTERHUIS" .
+  :name [
+    a :Name ;
+    :fullname "S. Oosterhuis" ;
+    :text "TODO: S. Oosterhuis"
+  ] .
 
 t00819:r3
   a :Spouse.n.01 ;

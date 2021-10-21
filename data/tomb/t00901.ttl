@@ -48,7 +48,11 @@ t00901:p1
     a :Date ;
     :date "1917-02-08"^^xsd:date
   ] ;
-  :nam "LIEFKE MEEK" ;
+  :name [
+    a :Name ;
+    :fullname "Liefke Meek" ;
+    :text "TODO: Liefke Meek"
+  ] ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
     :name "DIEPSWAL" ;
@@ -71,7 +75,11 @@ t00901:p2
     :duration "P3D"^^xsd:duration ;
     :text "slechts 3 dagen oud"
   ] ;
-  :nam "ROELFIEN" ;
+  :name [
+    a :Name ;
+    :fullname "Roelfien" ;
+    :text "TODO: Roelfien"
+  ] ;
   :rol [
     a :Lieveling.n.01 ;
     :tgt t00901:p1
@@ -79,5 +87,9 @@ t00901:p2
 
 t00901:p3
   a :Male ;
-  :nam "P. STEENBERGEN" .
+  :name [
+    a :Name ;
+    :fullname "P. Steenbergen" ;
+    :text "TODO: P. Steenbergen"
+  ] .
 

@@ -32,7 +32,11 @@ t00972:p1
     a :Date ;
     :date "1905-03-09"^^xsd:date
   ] ;
-  :nam "AREND AASMAN" .
+  :name [
+    a :Name ;
+    :fullname "Arend Aasman" ;
+    :text "TODO: Arend Aasman"
+  ] .
 
 t00972:p2
   a :Female ;
@@ -49,7 +53,11 @@ t00972:p2
     a :Date ;
     :date "1933-04-30"^^xsd:date
   ] ;
-  :nam "CATRIENA VOS" .
+  :name [
+    a :Name ;
+    :fullname "Catriena Vos" ;
+    :text "TODO: Catriena Vos"
+  ] .
 
 t00972:p3
   a :Male ;
@@ -66,7 +74,11 @@ t00972:p3
     a :Date ;
     :date "1883-12-01"^^xsd:date
   ] ;
-  :nam "AREND AASMAN" ;
+  :name [
+    a :Name ;
+    :fullname "Arend Aasman" ;
+    :text "TODO: Arend Aasman"
+  ] ;
   :rol [
     a :Son.n.01 ;
     :tgt t00972:p1, t00972:p2
@@ -87,7 +99,11 @@ t00972:p4
     a :Date ;
     :date "1894-02-09"^^xsd:date
   ] ;
-  :nam "GERARDUS VOS" ;
+  :name [
+    a :Name ;
+    :fullname "Gerardus Vos" ;
+    :text "TODO: Gerardus Vos"
+  ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t00972:p5
@@ -95,5 +111,9 @@ t00972:p4
 
 t00972:p5
   a :Female ;
-  :nam "AALTIEN KOERS" .
+  :name [
+    a :Name ;
+    :fullname "Aaltien Koers" ;
+    :text "TODO: Aaltien Koers"
+  ] .
 

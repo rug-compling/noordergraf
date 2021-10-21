@@ -32,7 +32,11 @@ t00069:p1
     a :Date ;
     :date "1943-07-08"^^xsd:date
   ] ;
-  :nam "AUKE KORNELIA VEENHUIS" ;
+  :name [
+    a :Name ;
+    :fullname "Auke Kornelia Veenhuis" ;
+    :text "TODO: Auke Kornelia Veenhuis"
+  ] ;
   :rol t00069:r1, [
     a :Mother.n.01
   ], [
@@ -43,11 +47,19 @@ t00069:p1
 
 t00069:p2
   a :Male ;
-  :nam "T. DE BOER" .
+  :name [
+    a :Name ;
+    :fullname "T. de Boer" ;
+    :text "TODO: T. de Boer"
+  ] .
 
 t00069:p3
   a :Male ;
-  :nam "J. KNAPPER" .
+  :name [
+    a :Name ;
+    :fullname "J. Knapper" ;
+    :text "TODO: J. Knapper"
+  ] .
 
 t00069:r1
   a :Wife.n.01 ;
