@@ -32,7 +32,11 @@ t00077:p1
     a :Date ;
     :date "1963-01-01"^^xsd:date
   ] ;
-  :nam "MAGERMANS", "RIE VAN VEEN" ;
+  :name [
+    a :Name ;
+    :fullname "Rie van Veen" ;
+    :text "RIE van VEEN geb. MAGERMANS"
+  ] ;
   :rol [
     a :Mother.n.01 ;
     :tgt t00077:p3
@@ -58,7 +62,7 @@ t00077:p2
   :name [
     a :Name ;
     :fullname "Leo Smit" ;
-    :text "TODO: Leo Smit"
+    :text "LEO SMIT"
   ] ;
   :rol [
     a :Husband.n.01 ;
@@ -76,7 +80,7 @@ t00077:p3
   :name [
     a :Name ;
     :fullname "Jettie van Veen" ;
-    :text "TODO: Jettie van Veen"
+    :text "JETTIE van VEEN"
   ] .
 
 t00077:p4
@@ -84,7 +88,7 @@ t00077:p4
   :name [
     a :Name ;
     :fullname "Barth" ;
-    :text "TODO: Barth"
+    :text "BARTH"
   ] .
 
 t00077:p5
@@ -92,6 +96,6 @@ t00077:p5
   :name [
     a :Name ;
     :fullname "Riekje" ;
-    :text "TODO: Riekje"
+    :text "RIEKJE"
   ] .
 

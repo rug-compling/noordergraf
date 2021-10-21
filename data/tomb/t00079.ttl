@@ -36,7 +36,11 @@ t00079:p1
     a :Date ;
     :date "1987-04-24"^^xsd:date
   ] ;
-  :nam "FREDERIKUS GERHARDUS ANTONIUS WORTELBOER", "FRITS" ;
+  :name [
+    a :Name ;
+    :fullname "Frederikus Gerhardus Antonius Wortelboer" ;
+    :text "frederikus gerhardus antonius wortelboer (frits)"
+  ] ;
   :rol [
     a :Husband.n.01 ;
     :tgt t00079:p2
@@ -64,7 +68,7 @@ t00079:p2
   :name [
     a :Name ;
     :fullname "Leny Fellinger" ;
-    :text "TODO: Leny Fellinger"
+    :text "leny fellinger"
   ] ;
   :rol [
     a :Mother.n.01

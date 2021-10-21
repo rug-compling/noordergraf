@@ -38,7 +38,11 @@ t00438:p1
     a :Date ;
     :date "2008-03-03"^^xsd:date
   ] ;
-  :nam "ABRAHAM WILLEM VAN DEN WORM", "WIM" ;
+  :name [
+    a :Name ;
+    :fullname "Abraham Willem van den Worm" ;
+    :text "ABRAHAM WILLEM (Wim) van den WORM"
+  ] ;
   :placeOfBirth t00438:c1 ;
   :placeOfDeath t00438:c1 .
 
@@ -57,7 +61,11 @@ t00438:p2
     a :Date ;
     :date "2006-08-20"^^xsd:date
   ] ;
-  :nam "ELLA", "PIETERNELLA JACOBA VAN DEN WORM-GOEDBLOED" ;
+  :name [
+    a :Name ;
+    :fullname "Pieternella Jacoba van den Worm-Goedbloed" ;
+    :text "PIETERNELLA JACOBA (Ella) van den WORM-GOEDBLOED"
+  ] ;
   :placeOfBirth [
     a :City.n.01 ;
     :name "GOES" ;

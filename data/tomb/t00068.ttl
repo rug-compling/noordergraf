@@ -37,7 +37,11 @@ t00068:p1
     a :Date ;
     :date "1943-07-20"^^xsd:date
   ] ;
-  :nam "JANTINA", "TINI" ;
+  :name [
+    a :Name ;
+    :fullname "Jantina" ;
+    :text "jantina", "tini"
+  ] ;
   :rol [
     a :Daughter.n.01 ;
     :tgt t00068:p2, t00068:p3
@@ -63,8 +67,8 @@ t00068:p2
   ] ;
   :name [
     a :Name ;
-    :fullname "Cornelia M.DE Jong" ;
-    :text "TODO: Cornelia M.DE Jong"
+    :fullname "Cornelia M. de Jong" ;
+    :text "CORNELIA M.de JONG"
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -97,7 +101,7 @@ t00068:p3
   :name [
     a :Name ;
     :fullname "Jan Mulder" ;
-    :text "TODO: Jan Mulder"
+    :text "JAN MULDER"
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -115,7 +119,7 @@ t00068:p4
   :name [
     a :Name ;
     :fullname "Cornelis" ;
-    :text "TODO: Cornelis"
+    :text "CORNELIS"
   ] .
 
 t00068:p5
@@ -123,6 +127,6 @@ t00068:p5
   :name [
     a :Name ;
     :fullname "Pieter" ;
-    :text "TODO: Pieter"
+    :text "PIETER"
   ] .
 
