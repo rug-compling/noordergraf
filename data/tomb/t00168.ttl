@@ -37,8 +37,14 @@ t00168:p1
     a :Age ;
     :duration "P25Y2M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1920-02-12"^^xsd:date ;
-  :dateOfDeath "1945-05-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-02-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-05-05"^^xsd:date
+  ] ;
   :nam "JAN SIEMEN HERMANNI" ;
   :placeOfBirth t00168:c1 ;
   :placeOfDeath t00168:c1 ;

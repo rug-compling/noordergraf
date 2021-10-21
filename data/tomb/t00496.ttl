@@ -28,8 +28,14 @@ t00496:p1
     a :Age ;
     :duration "P51Y4M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-07-14"^^xsd:date ;
-  :dateOfDeath "1916-12-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-07-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-12-13"^^xsd:date
+  ] ;
   :nam "KLAAS T. POELSTRA" ;
   :occupation [
     a :Notary.n.01 ;

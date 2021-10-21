@@ -33,8 +33,14 @@ t00226:p1
     a :Age ;
     :duration "P79Y3M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1843-10-27"^^xsd:date ;
-  :dateOfDeath "1923-02-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1923-02-07"^^xsd:date
+  ] ;
   :nam "AUKTJE VELTHUIS" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

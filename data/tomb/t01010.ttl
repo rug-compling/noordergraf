@@ -27,7 +27,13 @@ t01010:p1
     a :Age ;
     :duration "P51Y10M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1949-02-01"^^xsd:date ;
-  :dateOfDeath "2000-12-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1949-02-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2000-12-19"^^xsd:date
+  ] ;
   :nam "MARJA ROZEMOND" .
 

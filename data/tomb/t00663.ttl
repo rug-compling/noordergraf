@@ -27,7 +27,13 @@ t00663:p1
     a :Age ;
     :duration "P70Y2M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-02-28"^^xsd:date ;
-  :dateOfDeath "1943-05-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-02-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-05-12"^^xsd:date
+  ] ;
   :nam "SIBELLA MULDER" .
 

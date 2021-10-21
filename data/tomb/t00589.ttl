@@ -28,8 +28,14 @@ t00589:p1
     a :Age ;
     :duration "P81Y1M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-02-26"^^xsd:date ;
-  :dateOfDeath "1965-04-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-02-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-04-09"^^xsd:date
+  ] ;
   :nam "BRUIN BRUINS" ;
   :placeOfBirth t00589:c1 ;
   :placeOfDeath t00589:c1 ;

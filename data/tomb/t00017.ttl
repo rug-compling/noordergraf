@@ -23,8 +23,14 @@ t00017:p1
     a :Age ;
     :duration "P104Y8M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1833-03-09"^^xsd:date ;
-  :dateOfDeath "1937-11-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-03-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-11-10"^^xsd:date
+  ] ;
   :nam "DOUWE DE JONG" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -43,8 +49,14 @@ t00017:p2
     a :Age ;
     :duration "P74Y4M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-01-08"^^xsd:date ;
-  :dateOfDeath "1940-06-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-01-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-06-01"^^xsd:date
+  ] ;
   :nam "HELENA EHLHARDT" ;
   :placeOfBirth [
     a :City.n.01 ;

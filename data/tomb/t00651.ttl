@@ -37,8 +37,14 @@ t00651:p1
     a :Age ;
     :duration "P85Y4M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1785-01-31"^^xsd:date ;
-  :dateOfDeath "1870-06-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1785-01-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-06-01"^^xsd:date
+  ] ;
   :nam "ALBERTJE H. SCHIPPER" ;
   :rol [
     a :Spouse.n.01 ;

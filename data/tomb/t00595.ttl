@@ -29,8 +29,14 @@ t00595:p1
     a :Age ;
     :duration "P50Y2M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1951-06-06"^^xsd:date ;
-  :dateOfDeath "2001-08-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1951-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-08-08"^^xsd:date
+  ] ;
   :nam "MANUEL E. LOPES" ;
   :occupation [
     a :Drummer.n.01 ;

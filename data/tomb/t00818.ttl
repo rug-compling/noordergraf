@@ -30,8 +30,14 @@ t00818:p1
     a :Age ;
     :duration "P33Y4M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1911-09-09"^^xsd:date ;
-  :dateOfDeath "1945-01-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-09-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-01-19"^^xsd:date
+  ] ;
   :nam "JOHANNES RAMAKER" ;
   :rol [
     a :Husband.n.01 ;

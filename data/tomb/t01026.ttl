@@ -33,8 +33,14 @@ t01026:p1
     a :Age ;
     :duration "P5Y9M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-10-17"^^xsd:date ;
-  :dateOfDeath "1864-08-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-10-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1864-08-07"^^xsd:date
+  ] ;
   :nam "FREERK JANS HOFMAN" ;
   :placeOfBirth t01026:c1 ;
   :placeOfDeath t01026:c1 .

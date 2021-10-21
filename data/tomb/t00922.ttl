@@ -29,8 +29,14 @@ t00922:p1
     a :Age ;
     :duration "P82Y6M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1847-08-28"^^xsd:date ;
-  :dateOfDeath "1930-03-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-08-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-03-06"^^xsd:date
+  ] ;
   :nam "AALTIEN HULSHOF" ;
   :placeOfBirth [
     a :Village.n.02 ;

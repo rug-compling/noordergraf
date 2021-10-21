@@ -26,8 +26,14 @@ t00804:p1
     a :Age ;
     :duration "P58Y9M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-09-09"^^xsd:date ;
-  :dateOfDeath "1943-07-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-09-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-07-07"^^xsd:date
+  ] ;
   :nam "RIENO MOEDT" ;
   :rol [
     a :Spouse.n.01 ;
@@ -40,7 +46,13 @@ t00804:p2
     a :Age ;
     :duration "P55Y10M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1889-09-23"^^xsd:date ;
-  :dateOfDeath "1945-08-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-09-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-08-06"^^xsd:date
+  ] ;
   :nam "BERENDJE DE WITT" .
 

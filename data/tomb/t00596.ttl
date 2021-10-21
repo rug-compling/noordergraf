@@ -24,7 +24,13 @@ t00596:p1
     a :Age ;
     :duration "P56Y1M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1948-03-29"^^xsd:date ;
-  :dateOfDeath "2004-05-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1948-03-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2004-05-24"^^xsd:date
+  ] ;
   :nam "ELLEN GOUVERNANTE" .
 

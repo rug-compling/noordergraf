@@ -26,8 +26,14 @@ t00630:p1
     a :Age ;
     :duration "P43Y9M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1846-09-06"^^xsd:date ;
-  :dateOfDeath "1890-06-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-09-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1890-06-29"^^xsd:date
+  ] ;
   :nam "MARCUS DE HAAN" ;
   :placeOfBirth [
     a :City.n.01 ;

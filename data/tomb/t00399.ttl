@@ -29,8 +29,14 @@ t00399:p1
     a :Age ;
     :duration "P66Y1M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1906-01-30"^^xsd:date ;
-  :dateOfDeath "1972-03-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1906-01-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-03-04"^^xsd:date
+  ] ;
   :nam "RUURD DE HAAN" .
 
 t00399:s2

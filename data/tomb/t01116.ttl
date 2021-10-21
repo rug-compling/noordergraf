@@ -33,8 +33,14 @@ t01116:p1
     a :Age ;
     :duration "P91Y11M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1797-11-26"^^xsd:date ;
-  :dateOfDeath "1889-10-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1797-11-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1889-10-29"^^xsd:date
+  ] ;
   :nam "JAN ERNST HENDERIKS MEIJER" ;
   :placeOfBirth [
     a :Village.n.01 ;

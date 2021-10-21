@@ -33,7 +33,13 @@ t00229:p1
     a :Age ;
     :duration "P62Y7M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1822-10-11"^^xsd:date ;
-  :dateOfDeath "1885-05-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1822-10-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1885-05-26"^^xsd:date
+  ] ;
   :nam "FENJE KOOPS BRUININGA" .
 

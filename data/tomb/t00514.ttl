@@ -35,8 +35,14 @@ t00514:p1
     a :Age ;
     :duration "P42Y5M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1961-06-03"^^xsd:date ;
-  :dateOfDeath "2003-11-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1961-06-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2003-11-06"^^xsd:date
+  ] ;
   :nam "JULIANUS ANTON PELAMONIA", "NOES" ;
   :rol [
     a :Husband.n.01

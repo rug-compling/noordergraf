@@ -34,8 +34,14 @@ t00059:p1
     a :Age ;
     :duration "P75Y6M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1919-12-31"^^xsd:date ;
-  :dateOfDeath "1995-07-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-12-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1995-07-05"^^xsd:date
+  ] ;
   :nam "MEINT ZUIDERSMA" ;
   :rol [
     a :Father.n.01
@@ -52,8 +58,14 @@ t00059:p2
     a :Age ;
     :duration "P91Y10M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1919-06-27"^^xsd:date ;
-  :dateOfDeath "2011-05-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-06-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2011-05-07"^^xsd:date
+  ] ;
   :nam "ANNIE AAFKE ZUIDERSMA-STULP" ;
   :rol [
     a :Grandmother.n.01

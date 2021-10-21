@@ -23,8 +23,14 @@ t00543:p1
     a :Age ;
     :duration "P72Y6M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1809-09-03"^^xsd:date ;
-  :dateOfDeath "1882-03-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1809-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-03-28"^^xsd:date
+  ] ;
   :nam "JAN A. MUNTENDAM" ;
   :suffix "PZ" .
 
@@ -34,8 +40,14 @@ t00543:p2
     a :Age ;
     :duration "P52Y8M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1821-11-11"^^xsd:date ;
-  :dateOfDeath "1874-07-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1821-11-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1874-07-28"^^xsd:date
+  ] ;
   :nam "MARTHA J. PUISTER" ;
   :rol [
     a :Spouse.n.01 ;

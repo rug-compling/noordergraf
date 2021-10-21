@@ -23,8 +23,14 @@ t00034:p1
     a :Age ;
     :duration "P75Y10M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1854-02-18"^^xsd:date ;
-  :dateOfDeath "1930-01-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-02-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-01-13"^^xsd:date
+  ] ;
   :nam "H. ARENDS" ;
   :rol [
     a :Widow.n.01 ;

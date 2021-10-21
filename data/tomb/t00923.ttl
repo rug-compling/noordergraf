@@ -34,8 +34,14 @@ t00923:p1
     a :Age ;
     :duration "P74Y4M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1836-07-18"^^xsd:date ;
-  :dateOfDeath "1910-11-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1836-07-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1910-11-23"^^xsd:date
+  ] ;
   :nam "TONNIS OOSTERHUIS" ;
   :placeOfBirth t00923:c1 ;
   :placeOfDeath t00923:c1 ;

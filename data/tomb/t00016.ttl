@@ -31,8 +31,14 @@ t00016:p1
     a :Age ;
     :duration "P79Y4M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-09-06"^^xsd:date ;
-  :dateOfDeath "1939-01-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-01-17"^^xsd:date
+  ] ;
   :nam "HENDRIKUS JACOBUS DU FLOO" ;
   :rol [
     a :Spouse.n.01 ;
@@ -50,8 +56,14 @@ t00016:p2
     a :Age ;
     :duration "P87Y3M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1855-09-06"^^xsd:date ;
-  :dateOfDeath "1942-12-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1855-09-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-12-30"^^xsd:date
+  ] ;
   :nam "HELENA TENEIJS" ;
   :rol [
     a :Mother.n.01

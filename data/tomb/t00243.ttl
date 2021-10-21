@@ -32,8 +32,14 @@ t00243:p1
     a :Age ;
     :duration "P66Y4M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-06-11"^^xsd:date ;
-  :dateOfDeath "1945-10-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-06-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-10-21"^^xsd:date
+  ] ;
   :nam "FRENS VAN GIJSSEL" ;
   :placeOfBirth t00243:c1 ;
   :placeOfDeath t00243:c1 ;

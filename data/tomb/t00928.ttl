@@ -41,8 +41,14 @@ t00928:p1
     a :Age ;
     :duration "P74Y5M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1838-12-28"^^xsd:date ;
-  :dateOfDeath "1913-06-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1838-12-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-06-11"^^xsd:date
+  ] ;
   :nam "JOHANNES HENRICUS LEURINGH" ;
   :placeOfBirth [
     a :Village.n.02 ;

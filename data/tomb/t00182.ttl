@@ -28,8 +28,14 @@ t00182:p1
     a :Age ;
     :duration "P43Y1M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-06-23"^^xsd:date ;
-  :dateOfDeath "1931-08-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-06-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-08-18"^^xsd:date
+  ] ;
   :nam "KAREL DUIKER" ;
   :occupation [
     a :Chairperson.n.01 ;

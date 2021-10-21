@@ -27,7 +27,13 @@ p00001:p1
     a :Age ;
     :duration "P37Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1853"^^xsd:gYear ;
-  :dateOfDeath "1890"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1853"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1890"^^xsd:gYear
+  ] ;
   :nam "Vincent van Gogh" .
 

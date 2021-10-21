@@ -25,8 +25,14 @@ t01030:p1
     a :Age ;
     :duration "P73Y9M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1822-09-22"^^xsd:date ;
-  :dateOfDeath "1896-06-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1822-09-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1896-06-27"^^xsd:date
+  ] ;
   :nam "SUFFRIDA SIBERDINA SLIJPER" ;
   :placeOfBirth [
     a :Village.n.02 ;

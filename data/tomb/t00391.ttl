@@ -27,8 +27,14 @@ t00391:p1
     a :Age ;
     :duration "P97Y9M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1833-04-24"^^xsd:date ;
-  :dateOfDeath "1931-02-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-04-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-02-07"^^xsd:date
+  ] ;
   :nam "SOPHIAS DE VRIES" ;
   :rol [
     a :Parent.n.01
@@ -40,8 +46,14 @@ t00391:p2
     a :Age ;
     :duration "P80Y9M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1831-02-03"^^xsd:date ;
-  :dateOfDeath "1911-12-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1831-02-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-12-01"^^xsd:date
+  ] ;
   :nam "SIJKE A. DIJKSTRA" ;
   :rol [
     a :Parent.n.01

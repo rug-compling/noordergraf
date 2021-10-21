@@ -42,8 +42,14 @@ t00104:p1
     a :Age ;
     :duration "P78Y10M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-12-24"^^xsd:date ;
-  :dateOfDeath "1938-11-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-12-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-11-15"^^xsd:date
+  ] ;
   :nam "JAN POMPER" ;
   :placeOfBirth t00104:c2 ;
   :placeOfDeath t00104:c1 ;
@@ -58,8 +64,14 @@ t00104:p2
     a :Age ;
     :duration "P81Y4M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1867-12-06"^^xsd:date ;
-  :dateOfDeath "1949-04-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-12-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-04-29"^^xsd:date
+  ] ;
   :nam "ALBERDINA VEENEMA" ;
   :placeOfBirth t00104:c2 ;
   :placeOfDeath t00104:c1 .

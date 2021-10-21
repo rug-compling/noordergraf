@@ -16,8 +16,14 @@ t01082:p1
     a :Age ;
     :duration "P74Y10M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1890-06-06"^^xsd:date ;
-  :dateOfDeath "1965-05-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-05-04"^^xsd:date
+  ] ;
   :nam "PIETER WIERENGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

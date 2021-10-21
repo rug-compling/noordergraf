@@ -27,8 +27,14 @@ t00160:p1
     :duration "P36Y"^^xsd:duration ;
     :text "ruim 36 jaar"
   ] ;
-  :dateOfBirth "1833"^^xsd:gYear ;
-  :dateOfDeath "1869-12-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1869-12-14"^^xsd:date
+  ] ;
   :nam "HILLIGIEN WIERINGA" ;
   :rol [
     a :Wife.n.01 ;

@@ -26,8 +26,14 @@ t00010:p1
     a :Age ;
     :duration "P45Y3M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1890-08-30"^^xsd:date ;
-  :dateOfDeath "1935-12-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-08-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-12-14"^^xsd:date
+  ] ;
   :nam "GERKE MIDDEL" .
 
 t00010:p2
@@ -36,8 +42,14 @@ t00010:p2
     a :Age ;
     :duration "P96Y6M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-04-04"^^xsd:date ;
-  :dateOfDeath "1961-10-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-04-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-10-13"^^xsd:date
+  ] ;
   :nam "ROELF MIDDEL" ;
   :rol [
     a :Father.n.01

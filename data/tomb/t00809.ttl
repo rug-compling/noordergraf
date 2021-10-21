@@ -27,8 +27,14 @@ t00809:p1
     a :Age ;
     :duration "P75Y4M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1829-11-15"^^xsd:date ;
-  :dateOfDeath "1905-03-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1829-11-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-03-20"^^xsd:date
+  ] ;
   :nam "JAN PIETERS VINK" ;
   :placeOfBirth [
     a :Village.n.02 ;

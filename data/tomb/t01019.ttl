@@ -28,8 +28,14 @@ t01019:p1
     a :Age ;
     :duration "P61Y1M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-12-29"^^xsd:date ;
-  :dateOfDeath "1938-02-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-12-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-02-16"^^xsd:date
+  ] ;
   :nam "GEERT JAN DRENT" ;
   :placeOfBirth t01019:c1 ;
   :placeOfDeath t01019:c1 ;
@@ -45,8 +51,14 @@ t01019:p2
     a :Age ;
     :duration "P72Y2M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-03-12"^^xsd:date ;
-  :dateOfDeath "1946-06-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-03-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-06-05"^^xsd:date
+  ] ;
   :nam "JOHANNA KLOOSTER" ;
   :placeOfBirth t01019:c1 ;
   :placeOfDeath t01019:c1 ;

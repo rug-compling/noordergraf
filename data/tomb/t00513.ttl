@@ -39,8 +39,14 @@ t00513:p1
     a :Age ;
     :duration "P57Y4M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1926-10-12"^^xsd:date ;
-  :dateOfDeath "1984-02-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1926-10-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1984-02-15"^^xsd:date
+  ] ;
   :nam "JOHANNES SIMON TALARIMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

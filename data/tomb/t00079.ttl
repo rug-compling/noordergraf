@@ -27,8 +27,14 @@ t00079:p1
     a :Age ;
     :duration "P66Y9M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1920-07-19"^^xsd:date ;
-  :dateOfDeath "1987-04-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-07-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1987-04-24"^^xsd:date
+  ] ;
   :nam "FREDERIKUS GERHARDUS ANTONIUS WORTELBOER", "FRITS" ;
   :rol [
     a :Husband.n.01 ;
@@ -45,8 +51,14 @@ t00079:p2
     a :Age ;
     :duration "P87Y1M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1926-06-13"^^xsd:date ;
-  :dateOfDeath "2013-08-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1926-06-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2013-08-02"^^xsd:date
+  ] ;
   :nam "LENY FELLINGER" ;
   :rol [
     a :Mother.n.01

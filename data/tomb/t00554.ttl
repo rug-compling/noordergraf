@@ -36,8 +36,14 @@ t00554:p1
     a :Age ;
     :duration "P60Y4M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1849-01-16"^^xsd:date ;
-  :dateOfDeath "1909-05-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1849-01-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1909-05-27"^^xsd:date
+  ] ;
   :nam "H.J. TOP" ;
   :occupation [
     a :Teacher.n.01 ;

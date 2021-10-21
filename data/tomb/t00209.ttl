@@ -36,8 +36,14 @@ t00209:p1
     a :Age ;
     :duration "P8M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-01-11"^^xsd:date ;
-  :dateOfDeath "1893-10-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-01-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1893-10-10"^^xsd:date
+  ] ;
   :nam "PIETER J. BOLHUIS" ;
   :placeOfBirth t00209:c1 ;
   :placeOfDeath t00209:c1 ;

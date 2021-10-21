@@ -28,8 +28,14 @@ t00798:p1
     a :Age ;
     :duration "P78Y7M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1851-09-12"^^xsd:date ;
-  :dateOfDeath "1930-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1851-09-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-05-01"^^xsd:date
+  ] ;
   :nam "NANNING KAMPHUIS" ;
   :placeOfBirth t00798:c1 ;
   :placeOfDeath t00798:c1 ;

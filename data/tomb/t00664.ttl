@@ -27,8 +27,14 @@ t00664:p1
     a :Age ;
     :duration "P89Y24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-05-11"^^xsd:date ;
-  :dateOfDeath "1962-06-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-05-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-06-04"^^xsd:date
+  ] ;
   :nam "BERNARD JULIUS STOCKMANN" ;
   :placeOfDeath [
     a :City.n.01 ;

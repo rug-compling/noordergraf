@@ -32,8 +32,14 @@ t00855:p1
     a :Age ;
     :duration "P93Y4M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-03-20"^^xsd:date ;
-  :dateOfDeath "1968-08-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-08-11"^^xsd:date
+  ] ;
   :nam "WILLEM KAMPS" ;
   :placeOfBirth t00855:c1 ;
   :placeOfDeath t00855:c1 ;

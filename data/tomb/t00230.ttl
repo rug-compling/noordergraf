@@ -27,8 +27,14 @@ t00230:p1
     a :Age ;
     :duration "P47Y18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1826-04-11"^^xsd:date ;
-  :dateOfDeath "1873-04-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1826-04-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1873-04-29"^^xsd:date
+  ] ;
   :nam "GEERT KOOPS BRUININGA" .
 
 t00230:s2

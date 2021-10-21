@@ -33,8 +33,14 @@ t00519:p1
     a :Age ;
     :duration "P75Y6M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1910-02-27"^^xsd:date ;
-  :dateOfDeath "1985-09-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-02-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1985-09-22"^^xsd:date
+  ] ;
   :nam "TONNIS MULDER" ;
   :rol [
     a :Husband.n.01 ;
@@ -51,8 +57,14 @@ t00519:p2
     a :Age ;
     :duration "P90Y10M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1914-04-03"^^xsd:date ;
-  :dateOfDeath "2005-02-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1914-04-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2005-02-06"^^xsd:date
+  ] ;
   :nam "GEESSIEN GEERTSEMA" ;
   :rol [
     a :Grandmother.n.01

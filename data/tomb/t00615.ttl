@@ -29,8 +29,14 @@ t00615:p1
     a :Age ;
     :duration "P46Y10M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-04-26"^^xsd:date ;
-  :dateOfDeath "1892-02-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-04-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-02-27"^^xsd:date
+  ] ;
   :nam "HARM KRASTER" ;
   :rol [
     a :Parent.n.01 ;
@@ -43,8 +49,14 @@ t00615:p2
     a :Age ;
     :duration "P92Y6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1843-08-30"^^xsd:date ;
-  :dateOfDeath "1935-09-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-08-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-09-05"^^xsd:date
+  ] ;
   :nam "METDINA WILHELMINA VAN DUINEN" ;
   :rol [
     a :Parent.n.01 ;

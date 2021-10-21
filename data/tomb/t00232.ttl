@@ -31,8 +31,14 @@ t00232:p1
     a :Age ;
     :duration "P42Y2M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1851-08-26"^^xsd:date ;
-  :dateOfDeath "1893-11-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1851-08-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1893-11-16"^^xsd:date
+  ] ;
   :nam "P.P. BOLHUIS" ;
   :placeOfBirth t00232:c1 ;
   :placeOfDeath t00232:c1 ;

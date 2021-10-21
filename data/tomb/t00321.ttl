@@ -33,8 +33,14 @@ t00321:p1
     a :Age ;
     :duration "P49Y4M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-12-02"^^xsd:date ;
-  :dateOfDeath "1938-04-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-04-23"^^xsd:date
+  ] ;
   :nam "GEESJE OTTEN" ;
   :rol [
     a :Wife.n.01 ;
@@ -49,8 +55,14 @@ t00321:p2
     a :Age ;
     :duration "P76Y5M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-02-27"^^xsd:date ;
-  :dateOfDeath "1962-07-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-02-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-07-31"^^xsd:date
+  ] ;
   :nam "JOHANNES JONKMAN" ;
   :rol t00321:r5, [
     a :Husband.n.01 ;

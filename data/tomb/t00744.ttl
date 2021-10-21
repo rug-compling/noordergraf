@@ -41,8 +41,14 @@ t00744:p1
     a :Age ;
     :duration "P81Y4M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-09-04"^^xsd:date ;
-  :dateOfDeath "1947-01-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-09-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-01-11"^^xsd:date
+  ] ;
   :nam "JAN HORREL" ;
   :placeOfBirth t00744:c1 ;
   :placeOfDeath t00744:c1 ;

@@ -23,8 +23,14 @@ t00624:p1
     a :Age ;
     :duration "P26Y6M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-02-08"^^xsd:date ;
-  :dateOfDeath "1892-08-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-02-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-08-15"^^xsd:date
+  ] ;
   :nam "PIETER KORNELIS BOON" ;
   :rol [
     a :Spouse.n.01 ;

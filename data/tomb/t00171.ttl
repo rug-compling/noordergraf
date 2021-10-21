@@ -23,8 +23,14 @@ t00171:p1
     a :Age ;
     :duration "P53Y2M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-05-29"^^xsd:date ;
-  :dateOfDeath "1926-08-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-05-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-08-10"^^xsd:date
+  ] ;
   :nam "ERNST HENDRIK SPRENGER" ;
   :occupation [
     a :Manufacturer.n.02 ;

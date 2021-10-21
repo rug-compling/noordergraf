@@ -26,8 +26,14 @@ t00918:p1
     a :Age ;
     :duration "P83Y3M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-12-23"^^xsd:date ;
-  :dateOfDeath "1954-04-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-04-20"^^xsd:date
+  ] ;
   :nam "LUKAS MEELKER" ;
   :rol [
     a :Father.n.01

@@ -23,7 +23,13 @@ t00982:p1
     a :Age ;
     :duration "P83Y3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1929-04-21"^^xsd:date ;
-  :dateOfDeath "2012-04-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1929-04-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-04-24"^^xsd:date
+  ] ;
   :nam "ELS BUSS-BRON" .
 

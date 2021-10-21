@@ -30,8 +30,14 @@ t00896:p1
     a :Age ;
     :duration "P86Y18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1799-03-04"^^xsd:date ;
-  :dateOfDeath "1885-03-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1799-03-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1885-03-22"^^xsd:date
+  ] ;
   :nam "SARA DOEDES POL" ;
   :placeOfBirth [
     a :Village.n.02 ;

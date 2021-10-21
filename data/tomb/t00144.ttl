@@ -28,7 +28,10 @@ tomb:t00144
 
 t00144:p1
   a :Female ;
-  :dateOfDeath "1940"^^xsd:gYear ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940"^^xsd:gYear
+  ] ;
   :nam "ELZINA WILTENS" ;
   :rol [
     a :Mother.n.01
@@ -36,7 +39,10 @@ t00144:p1
 
 t00144:p2
   a :Male ;
-  :dateOfDeath "1949"^^xsd:gYear ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949"^^xsd:gYear
+  ] ;
   :nam "APKO DE GROOT" ;
   :rol [
     a :Father.n.01

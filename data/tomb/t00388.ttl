@@ -27,8 +27,14 @@ t00388:p1
     a :Age ;
     :duration "P63Y2M"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-02-21"^^xsd:date ;
-  :dateOfDeath "1940-04-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-02-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-04-21"^^xsd:date
+  ] ;
   :nam "JAKOB KLOOSTRA" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -50,8 +56,14 @@ t00388:p2
     a :Age ;
     :duration "P59Y4M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-04-12"^^xsd:date ;
-  :dateOfDeath "1939-09-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-04-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-09-03"^^xsd:date
+  ] ;
   :nam "TIETJE WESTERHOF" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -31,8 +31,14 @@ t00957:p1
     a :Age ;
     :duration "P66Y1M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-11-01"^^xsd:date ;
-  :dateOfDeath "1931-12-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-11-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-12-28"^^xsd:date
+  ] ;
   :nam "JANS LUTGERS" ;
   :placeOfBirth t00957:c1 ;
   :placeOfDeath t00957:c1 ;

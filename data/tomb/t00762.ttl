@@ -31,8 +31,14 @@ t00762:p1
     a :Age ;
     :duration "P61Y11M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1826-01-25"^^xsd:date ;
-  :dateOfDeath "1888-01-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1826-01-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-01-08"^^xsd:date
+  ] ;
   :nam "TJAART REMKES VAN ZANTEN" ;
   :placeOfBirth t00762:c1 ;
   :placeOfDeath t00762:c1 ;

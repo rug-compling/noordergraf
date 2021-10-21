@@ -37,8 +37,14 @@ t00573:p1
     a :Age ;
     :duration "P62Y7M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-09-19"^^xsd:date ;
-  :dateOfDeath "1921-05-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-09-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1921-05-15"^^xsd:date
+  ] ;
   :nam "GEERT PIJBES" ;
   :placeOfBirth [
     a :City.n.01 ;

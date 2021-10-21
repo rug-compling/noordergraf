@@ -29,8 +29,14 @@ t00438:p1
     a :Age ;
     :duration "P90Y2M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1917-12-23"^^xsd:date ;
-  :dateOfDeath "2008-03-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-03-03"^^xsd:date
+  ] ;
   :nam "ABRAHAM WILLEM VAN DEN WORM", "WIM" ;
   :placeOfBirth t00438:c1 ;
   :placeOfDeath t00438:c1 .
@@ -41,8 +47,14 @@ t00438:p2
     a :Age ;
     :duration "P86Y1M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1920-07-15"^^xsd:date ;
-  :dateOfDeath "2006-08-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2006-08-20"^^xsd:date
+  ] ;
   :nam "ELLA", "PIETERNELLA JACOBA VAN DEN WORM-GOEDBLOED" ;
   :placeOfBirth [
     a :City.n.01 ;

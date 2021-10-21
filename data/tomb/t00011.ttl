@@ -26,8 +26,14 @@ t00011:p1
     a :Age ;
     :duration "P61Y9M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-03-01"^^xsd:date ;
-  :dateOfDeath "1938-12-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-03-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-12-04"^^xsd:date
+  ] ;
   :nam "LAMMERT LEERTOUWER" ;
   :rol [
     a :Husband.n.01 ;
@@ -40,7 +46,13 @@ t00011:p2
     a :Age ;
     :duration "P85Y6M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-03-08"^^xsd:date ;
-  :dateOfDeath "1961-09-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-03-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-09-28"^^xsd:date
+  ] ;
   :nam "GEESJE KROL" .
 

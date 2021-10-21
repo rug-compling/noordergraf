@@ -25,8 +25,14 @@ t00905:p1
     a :Age ;
     :duration "P54Y4M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-04-29"^^xsd:date ;
-  :dateOfDeath "1954-09-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-04-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-09-12"^^xsd:date
+  ] ;
   :nam "LEFFERT BETHLEHEM" ;
   :rol [
     a :Parent.n.01 ;
@@ -39,8 +45,14 @@ t00905:p2
     a :Age ;
     :duration "P65Y9M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-11-22"^^xsd:date ;
-  :dateOfDeath "1963-08-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-11-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-08-26"^^xsd:date
+  ] ;
   :nam "TITIA VAN DER BOOM" ;
   :rol [
     a :Parent.n.01 ;

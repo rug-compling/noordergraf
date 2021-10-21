@@ -38,8 +38,14 @@ t00551:p1
     a :Age ;
     :duration "P78Y25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1804-12-01"^^xsd:date ;
-  :dateOfDeath "1882-12-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1804-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-12-26"^^xsd:date
+  ] ;
   :nam "PIETER HENDRIKS HAZEWINKEL" ;
   :rol [
     a :Spouse.n.01 ;

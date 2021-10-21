@@ -42,8 +42,14 @@ t00426:p1
     a :Age ;
     :duration "P85Y9M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-09-14"^^xsd:date ;
-  :dateOfDeath "1954-07-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-09-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-07-13"^^xsd:date
+  ] ;
   :nam "A.J. VISSER" ;
   :placeOfBirth t00426:c2 ;
   :placeOfDeath t00426:c2 ;

@@ -31,8 +31,14 @@ t00309:p1
     a :Age ;
     :duration "P47Y5M"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-06-23"^^xsd:date ;
-  :dateOfDeath "1925-11-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-06-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-11-23"^^xsd:date
+  ] ;
   :nam "HENDRIKA VAN DALEN" ;
   :placeOfBirth t00309:c1 ;
   :placeOfDeath t00309:c1 .

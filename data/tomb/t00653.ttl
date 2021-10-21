@@ -42,8 +42,14 @@ t00653:p1
     a :Age ;
     :duration "P55Y8M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-08-31"^^xsd:date ;
-  :dateOfDeath "1920-05-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-05-13"^^xsd:date
+  ] ;
   :nam "ANDRIES BLAAK" ;
   :placeOfBirth t00653:c1 ;
   :placeOfDeath t00653:c1 ;

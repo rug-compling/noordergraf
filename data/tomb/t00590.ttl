@@ -23,8 +23,14 @@ t00590:p1
     a :Age ;
     :duration "P77Y6M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-08-02"^^xsd:date ;
-  :dateOfDeath "1938-02-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-08-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-02-03"^^xsd:date
+  ] ;
   :nam "JAM TIMMER" ;
   :occupation [
     a :Manufacturer.n.02 ;

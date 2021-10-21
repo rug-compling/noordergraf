@@ -33,8 +33,14 @@ t00227:p1
     a :Age ;
     :duration "P70Y5M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1831-12-31"^^xsd:date ;
-  :dateOfDeath "1902-06-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1831-12-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1902-06-15"^^xsd:date
+  ] ;
   :nam "KOOP JANS EMMELKAMP" ;
   :placeOfBirth [
     a :Village.n.02 ;

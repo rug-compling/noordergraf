@@ -24,8 +24,14 @@ t00715:p1
     a :Age ;
     :duration "P88Y7M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1903-01-25"^^xsd:date ;
-  :dateOfDeath "1991-09-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903-01-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1991-09-23"^^xsd:date
+  ] ;
   :nam "GEERTJE DE LANGE" ;
   :rol [
     a :Widow.n.01 ;

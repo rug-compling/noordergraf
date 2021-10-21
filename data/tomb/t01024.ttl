@@ -33,7 +33,13 @@ t01024:p1
     a :Age ;
     :duration "P18Y9M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1841-12-08"^^xsd:date ;
-  :dateOfDeath "1860-10-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1860-10-01"^^xsd:date
+  ] ;
   :nam "HARMIENA MEIJER" .
 

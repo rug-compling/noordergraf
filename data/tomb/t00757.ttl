@@ -26,8 +26,14 @@ t00757:p1
     a :Age ;
     :duration "P41Y7M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1833-01-28"^^xsd:date ;
-  :dateOfDeath "1874-08-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-01-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1874-08-31"^^xsd:date
+  ] ;
   :nam "MARTJE D. KUIPER" ;
   :rol [
     a :Spouse.n.01 ;

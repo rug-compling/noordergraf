@@ -36,8 +36,14 @@ t00308:p1
     a :Age ;
     :duration "P21Y8M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1911-04-18"^^xsd:date ;
-  :dateOfDeath "1933-01-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-04-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-01-10"^^xsd:date
+  ] ;
   :nam "KLAAS ENGBERTS" ;
   :placeOfBirth [
     a :Town.n.01 ;

@@ -27,8 +27,14 @@ t00819:p1
     a :Age ;
     :duration "P56Y7M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-06-18"^^xsd:date ;
-  :dateOfDeath "1945-02-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-06-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-02-03"^^xsd:date
+  ] ;
   :nam "HIEKTJE HUIZINGA" ;
   :rol t00819:r3, [
     a :Wife.n.01 ;
@@ -48,8 +54,14 @@ t00819:p2
     a :Age ;
     :duration "P75Y7M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-01-17"^^xsd:date ;
-  :dateOfDeath "1959-08-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-01-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-08-27"^^xsd:date
+  ] ;
   :nam "P. DIJKHUIS", "PIETER DIJKHUIS" ;
   :rol [
     a :Father.n.01 ;

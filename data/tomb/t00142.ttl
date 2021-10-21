@@ -38,8 +38,14 @@ t00142:p1
     a :Age ;
     :duration "P36Y3M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1908-12-23"^^xsd:date ;
-  :dateOfDeath "1945-04-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-04-15"^^xsd:date
+  ] ;
   :nam "JAN DE VRIES" ;
   :occupation [
     a :Sergeant.n.02 ;

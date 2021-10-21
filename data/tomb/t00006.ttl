@@ -24,8 +24,14 @@ t00006:p1
     a :Age ;
     :duration "P67Y10M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-04-03"^^xsd:date ;
-  :dateOfDeath "1940-02-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-04-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-02-09"^^xsd:date
+  ] ;
   :nam "AALTJE DE VOS" ;
   :rol [
     a :Spouse.n.01 ;
@@ -38,7 +44,13 @@ t00006:p2
     a :Age ;
     :duration "P79Y7M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-08-31"^^xsd:date ;
-  :dateOfDeath "1963-04-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-04-21"^^xsd:date
+  ] ;
   :nam "EGBERT HOORNVELD" .
 

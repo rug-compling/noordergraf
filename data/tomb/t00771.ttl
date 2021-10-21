@@ -31,8 +31,14 @@ t00771:p1
     a :Age ;
     :duration "P53Y11M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1840-03-01"^^xsd:date ;
-  :dateOfDeath "1894-02-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1840-03-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-02-02"^^xsd:date
+  ] ;
   :nam "GEERTJE BOS" ;
   :placeOfBirth t00771:c1 ;
   :placeOfDeath [
@@ -55,8 +61,14 @@ t00771:p3
     a :Age ;
     :duration "P54Y1M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1837-10-27"^^xsd:date ;
-  :dateOfDeath "1891-12-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891-12-23"^^xsd:date
+  ] ;
   :nam "WOLTER BOS" ;
   :placeOfBirth t00771:c1 ;
   :placeOfDeath t00771:c1 .

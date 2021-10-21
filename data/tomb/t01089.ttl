@@ -23,7 +23,13 @@ t01089:p1
     a :Age ;
     :duration "P100Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1911"^^xsd:gYear ;
-  :dateOfDeath "2011"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2011"^^xsd:gYear
+  ] ;
   :nam "C.J.M. VERHOEF-VALK" .
 

@@ -24,8 +24,14 @@ t00722:p1
     a :Age ;
     :duration "P29Y11M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1915-04-05"^^xsd:date ;
-  :dateOfDeath "1945-03-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1915-04-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-03-08"^^xsd:date
+  ] ;
   :nam "HENDRIK HADDERS" ;
   :placeOfBirth [
     a :Village.n.02 ;

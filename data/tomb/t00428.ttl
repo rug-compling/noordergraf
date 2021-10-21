@@ -31,8 +31,14 @@ t00428:p1
     a :Age ;
     :duration "P85Y3M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-04-30"^^xsd:date ;
-  :dateOfDeath "1971-08-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-04-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-08-18"^^xsd:date
+  ] ;
   :nam "GEERTJE JASKI" ;
   :ref t00428:v1 ;
   :rol [

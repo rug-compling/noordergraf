@@ -29,8 +29,14 @@ t00800:p1
     a :Age ;
     :duration "P79Y8M"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-05-02"^^xsd:date ;
-  :dateOfDeath "1922-01-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-05-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-01-02"^^xsd:date
+  ] ;
   :nam "REINDER HARM WERINGA" ;
   :placeOfBirth t00800:c1 ;
   :placeOfDeath t00800:c1 ;

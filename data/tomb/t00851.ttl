@@ -43,8 +43,14 @@ t00851:p1
     a :Age ;
     :duration "P68Y3M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-08-22"^^xsd:date ;
-  :dateOfDeath "1967-12-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-08-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1967-12-15"^^xsd:date
+  ] ;
   :nam "ALBERT WILTING" ;
   :rol [
     a :Husband.n.01 ;

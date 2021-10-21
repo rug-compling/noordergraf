@@ -29,8 +29,14 @@ t00998:p1
     a :Age ;
     :duration "P57Y11M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1832-11-25"^^xsd:date ;
-  :dateOfDeath "1890-11-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1832-11-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1890-11-12"^^xsd:date
+  ] ;
   :nam "DETTJE H. BOER" ;
   :placeOfBirth [
     a :Village.n.02 ;

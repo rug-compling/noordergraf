@@ -31,8 +31,14 @@ t00285:p1
     a :Age ;
     :duration "P67Y9M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1894-12-18"^^xsd:date ;
-  :dateOfDeath "1962-10-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-12-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-10-15"^^xsd:date
+  ] ;
   :nam "LAMBERTA MULDER" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -55,8 +61,14 @@ t00285:p2
     a :Age ;
     :duration "P58Y1M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1882-01-12"^^xsd:date ;
-  :dateOfDeath "1940-03-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-01-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-03-10"^^xsd:date
+  ] ;
   :nam "JACOB STEL" ;
   :placeOfBirth [
     a :Village.n.02 ;

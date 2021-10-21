@@ -28,8 +28,14 @@ t00326:p1
     a :Age ;
     :duration "P20Y5M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1919-12-02"^^xsd:date ;
-  :dateOfDeath "1940-05-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-05-12"^^xsd:date
+  ] ;
   :nam "KORNELIS LOIJENGA" ;
   :occupation [
     a :Soldier.n.01 ;

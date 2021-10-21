@@ -23,8 +23,14 @@ t00003:p1
     a :Age ;
     :duration "P57Y5M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-08-26"^^xsd:date ;
-  :dateOfDeath "1932-02-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-08-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-02-21"^^xsd:date
+  ] ;
   :nam "JACOBA CATHARINA VAN DER MEULEN" ;
   :rol [
     a :Wife.n.01
@@ -41,8 +47,14 @@ t00003:p2
     a :Age ;
     :duration "P73Y6M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-02-26"^^xsd:date ;
-  :dateOfDeath "1948-09-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-02-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-09-17"^^xsd:date
+  ] ;
   :nam "GERRIT DE JAGER" ;
   :rol t00003:r5, [
     a :Father.n.01
@@ -58,8 +70,14 @@ t00003:p3
     a :Age ;
     :duration "P69Y7M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1890-10-05"^^xsd:date ;
-  :dateOfDeath "1960-05-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-10-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-05-30"^^xsd:date
+  ] ;
   :nam "CATHARINA BOER" ;
   :rol [
     a :Wife.n.01 ;

@@ -32,8 +32,14 @@ t00502:p1
     :duration "P33Y"^^xsd:duration ;
     :text "ruim 33 jaar"
   ] ;
-  :dateOfBirth "1875"^^xsd:gYear ;
-  :dateOfDeath "1908-11-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-11-12"^^xsd:date
+  ] ;
   :nam "BARTELE DE KANT" ;
   :placeOfDeath [
     a :City.n.01 ;
@@ -61,8 +67,14 @@ t00502:p3
     a :Age ;
     :duration "P5Y3M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1913-07-08"^^xsd:date ;
-  :dateOfDeath "1918-11-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-07-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-11-04"^^xsd:date
+  ] ;
   :nam "IJPKE SJOUKJE DE VRIES" ;
   :rol [
     a :Daughter.n.01 ;

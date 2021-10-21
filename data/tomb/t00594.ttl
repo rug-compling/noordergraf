@@ -24,7 +24,13 @@ t00594:p1
     a :Age ;
     :duration "P75Y5M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1935-07-17"^^xsd:date ;
-  :dateOfDeath "2011-01-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1935-07-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2011-01-05"^^xsd:date
+  ] ;
   :nam "JACOB E. HOLWERDA" .
 

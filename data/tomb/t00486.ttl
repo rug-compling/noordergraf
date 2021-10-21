@@ -32,8 +32,14 @@ t00486:p1
     a :Age ;
     :duration "P41Y11M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1846-04-26"^^xsd:date ;
-  :dateOfDeath "1888-04-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-04-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-04-06"^^xsd:date
+  ] ;
   :nam "MARIA BLEEKER" ;
   :placeOfBirth [
     a :City.n.01 ;
@@ -52,8 +58,14 @@ t00486:p2
     a :Age ;
     :duration "P68Y9M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1837-08-24"^^xsd:date ;
-  :dateOfDeath "1906-06-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-08-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-06-02"^^xsd:date
+  ] ;
   :nam "FRANCISCUS BARTHOLOMEUS HOFSTEDE" ;
   :placeOfBirth [
     a :City.n.01 ;

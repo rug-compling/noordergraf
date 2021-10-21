@@ -27,8 +27,14 @@ t00565:p1
     a :Age ;
     :duration "P96Y8M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1822-10-07"^^xsd:date ;
-  :dateOfDeath "1919-07-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1822-10-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-07-02"^^xsd:date
+  ] ;
   :nam "EGBERDINA TIMMINGA" ;
   :rol [
     a :Widow.n.01 ;

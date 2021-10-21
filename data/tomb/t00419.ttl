@@ -27,8 +27,14 @@ t00419:p1
     a :Age ;
     :duration "P78Y1M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1853-01-15"^^xsd:date ;
-  :dateOfDeath "1931-03-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1853-01-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-03-09"^^xsd:date
+  ] ;
   :nam "ROELOFJE BROUWER" ;
   :placeOfBirth [
     a :Village.n.02 ;

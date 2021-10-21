@@ -26,8 +26,14 @@ t00358:p1
     a :Age ;
     :duration "P67Y6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-01-09"^^xsd:date ;
-  :dateOfDeath "1944-01-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-01-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-01-15"^^xsd:date
+  ] ;
   :nam "JALKIEN RIJMSMA" ;
   :rol [
     a :Widow.n.01 ;

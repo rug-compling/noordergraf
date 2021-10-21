@@ -26,8 +26,14 @@ t01112:p1
     a :Age ;
     :duration "P83Y6M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1846-06-17"^^xsd:date ;
-  :dateOfDeath "1930-01-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-06-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-01-14"^^xsd:date
+  ] ;
   :nam "HENDRIKJE LENTING" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -27,8 +27,14 @@ t01033:p1
     a :Age ;
     :duration "P78Y1M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1844-11-28"^^xsd:date ;
-  :dateOfDeath "1922-12-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-11-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-12-30"^^xsd:date
+  ] ;
   :nam "GERRIT FERINGA" ;
   :rol [
     a :Spouse.n.01 ;

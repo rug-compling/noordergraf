@@ -24,8 +24,14 @@ t00803:p1
     a :Age ;
     :duration "P82Y3M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1856-02-02"^^xsd:date ;
-  :dateOfDeath "1938-05-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-02-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-05-15"^^xsd:date
+  ] ;
   :nam "JACOBJE LANENGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

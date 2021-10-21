@@ -30,8 +30,14 @@ t00622:p1
     a :Age ;
     :duration "P88Y3M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1815-03-20"^^xsd:date ;
-  :dateOfDeath "1903-07-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1815-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-07-04"^^xsd:date
+  ] ;
   :nam "JANNES MARCUS CREMER" ;
   :placeOfBirth [
     a :Village.n.02 ;

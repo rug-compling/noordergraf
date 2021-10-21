@@ -26,8 +26,14 @@ t00895:p1
     a :Age ;
     :duration "P52Y9M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1820-02-04"^^xsd:date ;
-  :dateOfDeath "1872-11-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1820-02-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1872-11-29"^^xsd:date
+  ] ;
   :nam "HENDERIKA JAKOBS MELESSEN" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

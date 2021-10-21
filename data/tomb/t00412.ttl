@@ -35,8 +35,14 @@ t00412:p1
     a :Age ;
     :duration "P68Y7M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1892-01-24"^^xsd:date ;
-  :dateOfDeath "1960-09-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1892-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-09-03"^^xsd:date
+  ] ;
   :nam "LAURENS JAN REITSMA" ;
   :rol [
     a :Spouse.n.01 ;
@@ -49,7 +55,13 @@ t00412:p2
     a :Age ;
     :duration "P90Y3M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-09-14"^^xsd:date ;
-  :dateOfDeath "1989-12-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-09-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1989-12-17"^^xsd:date
+  ] ;
   :nam "CLARA MARIA ANGELA REITSMA-VAN OOIJEN" .
 

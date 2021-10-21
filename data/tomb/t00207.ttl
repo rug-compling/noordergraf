@@ -35,8 +35,14 @@ t00207:p1
     a :Age ;
     :duration "P73Y10M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1810-03-17"^^xsd:date ;
-  :dateOfDeath "1884-02-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1810-03-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1884-02-03"^^xsd:date
+  ] ;
   :nam "B.J. ZIJLSTRA" ;
   :occupation [
     a :Principal.n.02 ;

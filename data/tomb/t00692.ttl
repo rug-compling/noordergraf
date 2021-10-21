@@ -27,8 +27,14 @@ t00692:p1
     a :Age ;
     :duration "P52Y7M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1918-08-03"^^xsd:date ;
-  :dateOfDeath "1971-03-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1918-08-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-03-27"^^xsd:date
+  ] ;
   :nam "KLAAS BOERSMA" ;
   :rol [
     a :Grandfather.n.01
@@ -42,8 +48,14 @@ t00692:p2
     a :Age ;
     :duration "P48Y4M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1929-09-29"^^xsd:date ;
-  :dateOfDeath "1978-02-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1929-09-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-02-17"^^xsd:date
+  ] ;
   :nam "GRIETJE ANDELA" ;
   :rol [
     a :Grandmother.n.01

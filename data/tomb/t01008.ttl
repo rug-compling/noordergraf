@@ -31,8 +31,14 @@ t01008:p1
     a :Age ;
     :duration "P57Y7M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1817-11-12"^^xsd:date ;
-  :dateOfDeath "1875-06-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1817-11-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1875-06-20"^^xsd:date
+  ] ;
   :nam "THIJS SJABBES DIJKHUIS" ;
   :rol [
     a :Spouse.n.01 ;

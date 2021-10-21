@@ -33,8 +33,14 @@ t01107:p1
     a :Age ;
     :duration "P49Y9M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1910-09-02"^^xsd:date ;
-  :dateOfDeath "1960-06-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-09-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-06-18"^^xsd:date
+  ] ;
   :nam "JANSJE BAKKER" ;
   :rol [
     a :Wife.n.01 ;

@@ -26,8 +26,14 @@ t00194:p1
     a :Age ;
     :duration "P37Y4M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1896-03-07"^^xsd:date ;
-  :dateOfDeath "1933-07-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-03-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-07-27"^^xsd:date
+  ] ;
   :nam "HEINRICH STOLL" ;
   :placeOfBirth [
     a :Town.n.01 ;

@@ -32,8 +32,14 @@ t00357:p1
     a :Age ;
     :duration "P49Y4M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1885-05-09"^^xsd:date ;
-  :dateOfDeath "1934-10-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-05-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-10-05"^^xsd:date
+  ] ;
   :nam "GEERT ABRAHAMS" ;
   :placeOfBirth t00357:c1 ;
   :placeOfDeath t00357:c1 .
@@ -44,8 +50,14 @@ t00357:p2
     a :Age ;
     :duration "P72Y11M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-11-22"^^xsd:date ;
-  :dateOfDeath "1957-11-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-11-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-11-13"^^xsd:date
+  ] ;
   :nam "JANTIEN ENTING" ;
   :placeOfBirth [
     a :Village.n.02 ;

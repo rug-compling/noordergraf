@@ -27,8 +27,14 @@ t00448:p1
     a :Age ;
     :duration "P80Y10M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1831-04-07"^^xsd:date ;
-  :dateOfDeath "1912-02-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1831-04-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-02-23"^^xsd:date
+  ] ;
   :nam "ENGELINA ABRAHAMS ZEILINGA" ;
   :rol [
     a :Widower.n.01 ;

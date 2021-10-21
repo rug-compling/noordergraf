@@ -28,8 +28,14 @@ t00581:p1
     a :Age ;
     :duration "P73Y10M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1817-12-28"^^xsd:date ;
-  :dateOfDeath "1891-11-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1817-12-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891-11-05"^^xsd:date
+  ] ;
   :nam "JANTJE WIEREMA" .
 
 t00581:p2

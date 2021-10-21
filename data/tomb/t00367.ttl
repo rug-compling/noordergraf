@@ -32,8 +32,14 @@ t00367:p1
     a :Age ;
     :duration "P63Y3M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1893-02-22"^^xsd:date ;
-  :dateOfDeath "1956-06-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-02-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-06-13"^^xsd:date
+  ] ;
   :nam "ALBERDINA VENEKAMP" ;
   :placeOfBirth t00367:c1 ;
   :placeOfDeath t00367:c1 ;
@@ -48,8 +54,14 @@ t00367:p2
     a :Age ;
     :duration "P64Y19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1896-02-25"^^xsd:date ;
-  :dateOfDeath "1960-03-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-02-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-03-15"^^xsd:date
+  ] ;
   :nam "ALBERT KLAASSENS" ;
   :placeOfBirth t00367:c1 ;
   :placeOfDeath t00367:c1 .

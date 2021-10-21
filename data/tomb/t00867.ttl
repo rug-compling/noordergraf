@@ -27,8 +27,14 @@ t00867:p1
     a :Age ;
     :duration "P78Y2M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-03-06"^^xsd:date ;
-  :dateOfDeath "1935-05-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-03-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-05-19"^^xsd:date
+  ] ;
   :nam "BERNARDUS SMULDERS" ;
   :rol [
     a :Spouse.n.01 ;

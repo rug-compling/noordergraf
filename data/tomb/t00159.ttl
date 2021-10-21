@@ -24,8 +24,14 @@ t00159:p1
     a :Age ;
     :duration "P66Y16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-04-10"^^xsd:date ;
-  :dateOfDeath "1941-04-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-04-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-04-26"^^xsd:date
+  ] ;
   :nam "WIEBEGIEN BROUWER" ;
   :rol [
     a :Spouse.n.01 ;
@@ -43,7 +49,13 @@ t00159:p2
     a :Age ;
     :duration "P85Y2M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-10-24"^^xsd:date ;
-  :dateOfDeath "1961-12-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-10-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-12-29"^^xsd:date
+  ] ;
   :nam "J. SMIDT" .
 

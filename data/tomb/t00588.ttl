@@ -26,8 +26,14 @@ t00588:p1
     a :Age ;
     :duration "P86Y9M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1924-01-16"^^xsd:date ;
-  :dateOfDeath "2010-10-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1924-01-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2010-10-30"^^xsd:date
+  ] ;
   :nam "BERENDINUS JAN BRUINS" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -31,8 +31,14 @@ t00331:p1
     a :Age ;
     :duration "P30Y5M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-11-18"^^xsd:date ;
-  :dateOfDeath "1929-05-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-11-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-05-13"^^xsd:date
+  ] ;
   :nam "JAN STEENBERGEN" ;
   :placeOfBirth t00331:c1 ;
   :placeOfDeath t00331:c1 ;
@@ -49,8 +55,14 @@ t00331:p2
     a :Age ;
     :duration "P77Y8M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-04-20"^^xsd:date ;
-  :dateOfDeath "1979-01-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1979-01-15"^^xsd:date
+  ] ;
   :nam "AALTJE STEENBERGEN-DEKKER" ;
   :placeOfBirth [
     a :Village.n.02 ;

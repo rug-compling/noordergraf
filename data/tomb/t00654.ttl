@@ -27,8 +27,14 @@ t00654:p1
     a :Age ;
     :duration "P63Y3M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-01-20"^^xsd:date ;
-  :dateOfDeath "1931-05-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-01-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-05-17"^^xsd:date
+  ] ;
   :nam "GRIETJE KLEVERINGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -23,8 +23,14 @@ t00172:p1
     a :Age ;
     :duration "P41Y7M"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-05-19"^^xsd:date ;
-  :dateOfDeath "1924-12-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-05-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-12-19"^^xsd:date
+  ] ;
   :nam "A.C. LOOS" ;
   :occupation [
     a :Director.n.01 ;

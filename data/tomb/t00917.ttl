@@ -31,8 +31,14 @@ t00917:p1
     a :Age ;
     :duration "P58Y2M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-11-16"^^xsd:date ;
-  :dateOfDeath "1938-02-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-11-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-02-11"^^xsd:date
+  ] ;
   :nam "BERENTJE AARDEMA" ;
   :rol [
     a :Parent.n.01
@@ -44,8 +50,14 @@ t00917:p2
     a :Age ;
     :duration "P90Y3M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-06-09"^^xsd:date ;
-  :dateOfDeath "1970-09-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-06-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-09-12"^^xsd:date
+  ] ;
   :nam "JAN SCHERINGA" ;
   :rol [
     a :Parent.n.01

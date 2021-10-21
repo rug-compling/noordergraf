@@ -26,8 +26,14 @@ t00256:p1
     a :Age ;
     :duration "P92Y1M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-07-08"^^xsd:date ;
-  :dateOfDeath "1962-09-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-07-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-09-01"^^xsd:date
+  ] ;
   :nam "HILJE STOLLENGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

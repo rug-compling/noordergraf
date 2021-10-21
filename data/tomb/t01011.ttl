@@ -26,8 +26,14 @@ t01011:p1
     a :Age ;
     :duration "P46Y18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1835-05-31"^^xsd:date ;
-  :dateOfDeath "1881-06-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-05-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1881-06-18"^^xsd:date
+  ] ;
   :nam "KLAAS KLOOSTER" ;
   :rol [
     a :Spouse.n.01 ;

@@ -26,8 +26,14 @@ t00726:p1
     a :Age ;
     :duration "P63Y5M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1830-04-24"^^xsd:date ;
-  :dateOfDeath "1893-10-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1830-04-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1893-10-20"^^xsd:date
+  ] ;
   :nam "JANTIEN WILTING" ;
   :placeOfBirth [
     a :Village.n.02 ;

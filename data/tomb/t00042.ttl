@@ -34,8 +34,14 @@ t00042:p1
     a :Age ;
     :duration "P89Y9M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1849-12-18"^^xsd:date ;
-  :dateOfDeath "1939-10-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1849-12-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-10-05"^^xsd:date
+  ] ;
   :nam "JOHANNES REEDER" ;
   :placeOfBirth [
     a :Town.n.01 ;

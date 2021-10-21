@@ -30,8 +30,14 @@ t01006:p1
     a :Age ;
     :duration "P89Y26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1780-05-12"^^xsd:date ;
-  :dateOfDeath "1869-06-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1780-05-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1869-06-07"^^xsd:date
+  ] ;
   :nam "TRIENTJE JANS KORT" ;
   :placeOfBirth [
     a :Town.n.01 ;

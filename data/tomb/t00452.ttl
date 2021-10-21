@@ -27,7 +27,13 @@ t00452:p1
     a :Age ;
     :duration "P76Y10M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-04-26"^^xsd:date ;
-  :dateOfDeath "1956-03-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-04-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-03-02"^^xsd:date
+  ] ;
   :nam "JOHANNA H. WIEBENGA" .
 

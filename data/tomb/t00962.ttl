@@ -27,8 +27,14 @@ t00962:p1
     a :Age ;
     :duration "P76Y6M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1835-06-23"^^xsd:date ;
-  :dateOfDeath "1912-01-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-06-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-01-12"^^xsd:date
+  ] ;
   :nam "ALBERT DE JONGE" ;
   :placeOfBirth [
     a :City.n.01 ;

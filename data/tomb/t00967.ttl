@@ -31,8 +31,14 @@ t00967:p1
     a :Age ;
     :duration "P71Y6M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-07-07"^^xsd:date ;
-  :dateOfDeath "1936-01-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-07-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-01-25"^^xsd:date
+  ] ;
   :nam "HENDRIK HEKMAN" ;
   :placeOfBirth t00967:c1 ;
   :placeOfDeath t00967:c1 ;

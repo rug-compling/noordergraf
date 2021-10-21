@@ -29,8 +29,14 @@ t00761:p1
     a :Age ;
     :duration "P65Y6M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1820-10-06"^^xsd:date ;
-  :dateOfDeath "1886-04-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1820-10-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1886-04-13"^^xsd:date
+  ] ;
   :nam "P.K. STIKKER" ;
   :rol [
     a :Spouse.n.01 ;

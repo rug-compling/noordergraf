@@ -26,8 +26,14 @@ t00586:p1
     a :Age ;
     :duration "P69Y8M30D"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-05-12"^^xsd:date ;
-  :dateOfDeath "1912-02-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-05-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-02-11"^^xsd:date
+  ] ;
   :nam "JANTJE TEN HOORN" ;
   :rol [
     a :Widow.n.01 ;

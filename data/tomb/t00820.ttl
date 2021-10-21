@@ -23,8 +23,14 @@ t00820:p1
     a :Age ;
     :duration "P73Y7M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1846-03-10"^^xsd:date ;
-  :dateOfDeath "1919-11-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-03-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-11-07"^^xsd:date
+  ] ;
   :nam "ALTJE MULDER" ;
   :occupation [
     a :Preacher.n.01 ;

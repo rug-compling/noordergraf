@@ -34,8 +34,14 @@ t01062:p1
     a :Age ;
     :duration "P81Y9M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1853-07-17"^^xsd:date ;
-  :dateOfDeath "1935-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1853-07-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-05-01"^^xsd:date
+  ] ;
   :nam "WIJKE H. HAARSMA" ;
   :placeOfBirth t01062:c1 ;
   :placeOfDeath t01062:c1 ;

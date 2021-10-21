@@ -24,7 +24,13 @@ t00446:p1
     a :Age ;
     :duration "P93Y7M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1913-06-01"^^xsd:date ;
-  :dateOfDeath "2007-01-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-06-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2007-01-04"^^xsd:date
+  ] ;
   :nam "TEATSCHE TEERDSTRA" .
 

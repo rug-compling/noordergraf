@@ -23,8 +23,14 @@ t00817:p1
     a :Age ;
     :duration "P1Y10M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1942-08-17"^^xsd:date ;
-  :dateOfDeath "1944-07-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1942-08-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-07-06"^^xsd:date
+  ] ;
   :nam "HENKIE" .
 
 t00817:p2

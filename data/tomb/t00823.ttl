@@ -23,8 +23,14 @@ t00823:p1
     a :Age ;
     :duration "P41Y10M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1903-03-08"^^xsd:date ;
-  :dateOfDeath "1945-01-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903-03-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-01-22"^^xsd:date
+  ] ;
   :nam "HEINRICH KROHNE" ;
   :placeOfBirth [
     a :City.n.01 ;

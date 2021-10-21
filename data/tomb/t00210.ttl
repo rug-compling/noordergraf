@@ -31,8 +31,14 @@ t00210:p1
     a :Age ;
     :duration "P86Y18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1840-04-21"^^xsd:date ;
-  :dateOfDeath "1926-05-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1840-04-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-05-09"^^xsd:date
+  ] ;
   :nam "HINDRIK KONING" ;
   :placeOfBirth t00210:c1 ;
   :placeOfDeath t00210:c1 ;
@@ -47,8 +53,14 @@ t00210:p2
     a :Age ;
     :duration "P85Y6M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-05-06"^^xsd:date ;
-  :dateOfDeath "1930-11-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-05-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-11-11"^^xsd:date
+  ] ;
   :nam "ANNECHIEN NIEWOLD" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -67,8 +79,14 @@ t00210:p3
     a :Age ;
     :duration "P16Y16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1891-05-27"^^xsd:date ;
-  :dateOfDeath "1907-06-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-05-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1907-06-12"^^xsd:date
+  ] ;
   :nam "HENDRIK" ;
   :placeOfDeath [
     a :Village.n.02 ;

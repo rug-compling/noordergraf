@@ -31,8 +31,14 @@ t00521:p1
     a :Age ;
     :duration "P90Y5M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1922-06-06"^^xsd:date ;
-  :dateOfDeath "2012-11-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1922-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-11-14"^^xsd:date
+  ] ;
   :nam "AMAT", "KLAAS ELLI ISMAIL" ;
   :rol [
     a :Husband.n.01

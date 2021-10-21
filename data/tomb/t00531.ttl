@@ -27,8 +27,14 @@ t00531:p1
     a :Age ;
     :duration "P80Y8M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1844-12-25"^^xsd:date ;
-  :dateOfDeath "1925-08-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-12-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-08-26"^^xsd:date
+  ] ;
   :nam "GEERT HERWIG" ;
   :rol [
     a :Widow.n.01 ;

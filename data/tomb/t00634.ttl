@@ -37,8 +37,14 @@ t00634:p1
     a :Age ;
     :duration "P69Y5M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1948-02-19"^^xsd:date ;
-  :dateOfDeath "2017-08-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1948-02-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2017-08-13"^^xsd:date
+  ] ;
   :nam "CATY BOEF-DE VRIES" ;
   :placeOfBirth [
     a :Town.n.01 ;

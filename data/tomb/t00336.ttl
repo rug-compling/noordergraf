@@ -36,8 +36,14 @@ t00336:p1
     a :Age ;
     :duration "P82Y9M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-09-18"^^xsd:date ;
-  :dateOfDeath "1961-06-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-09-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-06-23"^^xsd:date
+  ] ;
   :nam "ALBERT BRUINS" ;
   :placeOfBirth t00336:c1 ;
   :placeOfDeath [
@@ -56,8 +62,14 @@ t00336:p2
     a :Age ;
     :duration "P83Y4M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1885-09-05"^^xsd:date ;
-  :dateOfDeath "1969-01-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-09-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-01-13"^^xsd:date
+  ] ;
   :nam "ARENDINA HERMINA VERMEULEN" ;
   :placeOfBirth t00336:c1 ;
   :placeOfDeath t00336:c1 .

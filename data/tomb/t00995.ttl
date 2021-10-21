@@ -27,8 +27,14 @@ t00995:p1
     a :Age ;
     :duration "P64Y2M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1863-03-06"^^xsd:date ;
-  :dateOfDeath "1927-05-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-03-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-05-25"^^xsd:date
+  ] ;
   :nam "NANNO JACOB BONESCHANSKER" ;
   :rol [
     a :Spouse.n.01 ;

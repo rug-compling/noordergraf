@@ -23,8 +23,14 @@ t00348:p1
     a :Age ;
     :duration "P58Y10M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1906-07-02"^^xsd:date ;
-  :dateOfDeath "1965-05-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1906-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-05-05"^^xsd:date
+  ] ;
   :nam "KLAAS KREGEL" ;
   :rol [
     a :Spouse.n.01 ;
@@ -37,7 +43,13 @@ t00348:p2
     a :Age ;
     :duration "P69Y1M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1910-03-18"^^xsd:date ;
-  :dateOfDeath "1979-05-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-03-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1979-05-06"^^xsd:date
+  ] ;
   :nam "REINA STOFFERS" .
 

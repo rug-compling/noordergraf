@@ -27,8 +27,14 @@ t01067:p1
     a :Age ;
     :duration "P84Y28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1849-07-09"^^xsd:date ;
-  :dateOfDeath "1933-08-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1849-07-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-08-06"^^xsd:date
+  ] ;
   :nam "BAUKJE W. VEENSTRA" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

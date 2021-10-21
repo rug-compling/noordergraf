@@ -23,8 +23,14 @@ t00098:p1
     a :Age ;
     :duration "P58Y5M"^^xsd:duration
   ] ;
-  :dateOfBirth "1830-10-22"^^xsd:date ;
-  :dateOfDeath "1889-03-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1830-10-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1889-03-22"^^xsd:date
+  ] ;
   :nam "B.A. POULIE" ;
   :occupation [
     a :Registrar.n.03 ;

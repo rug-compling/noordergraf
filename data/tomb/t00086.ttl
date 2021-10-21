@@ -24,8 +24,14 @@ t00086:p1
     a :Age ;
     :duration "P57Y4M"^^xsd:duration
   ] ;
-  :dateOfBirth "1829-11-28"^^xsd:date ;
-  :dateOfDeath "1887-04-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1829-11-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1887-04-03"^^xsd:date
+  ] ;
   :nam "MARGARETHA MICHAELINA VAN DER WERFF" ;
   :rol [
     a :Husband.n.01 ;

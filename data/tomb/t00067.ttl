@@ -23,8 +23,14 @@ t00067:p1
     a :Age ;
     :duration "P55Y7M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-03-11"^^xsd:date ;
-  :dateOfDeath "1939-11-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-03-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-11-06"^^xsd:date
+  ] ;
   :nam "HINDERIKA KALK" ;
   :placeOfBirth [
     a :Village.n.02 ;

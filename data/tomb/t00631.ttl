@@ -26,8 +26,14 @@ t00631:p1
     a :Age ;
     :duration "P71Y3M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1807-12-05"^^xsd:date ;
-  :dateOfDeath "1879-03-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1807-12-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1879-03-30"^^xsd:date
+  ] ;
   :nam "FOKKE J. POSTEMA" ;
   :rol [
     a :Spouse.n.01 ;

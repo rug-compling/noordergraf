@@ -31,8 +31,14 @@ t00376:p1
     a :Age ;
     :duration "P46Y3M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1907-03-03"^^xsd:date ;
-  :dateOfDeath "1953-06-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-03-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-06-22"^^xsd:date
+  ] ;
   :nam "PIETER BURING" ;
   :placeOfBirth t00376:c1 ;
   :placeOfDeath t00376:c1 ;

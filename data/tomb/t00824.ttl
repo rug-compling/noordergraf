@@ -23,8 +23,14 @@ t00824:p1
     a :Age ;
     :duration "P33Y8M30D"^^xsd:duration
   ] ;
-  :dateOfBirth "1911-04-23"^^xsd:date ;
-  :dateOfDeath "1945-01-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-01-22"^^xsd:date
+  ] ;
   :nam "HERMAN ISRAEL VAN GELDER" ;
   :placeOfBirth [
     a :City.n.01 ;

@@ -27,8 +27,14 @@ t01003:p1
     a :Age ;
     :duration "P89Y4M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-08-12"^^xsd:date ;
-  :dateOfDeath "1946-12-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-08-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-12-18"^^xsd:date
+  ] ;
   :nam "FREDERIK SCHUTTER" ;
   :placeOfBirth [
     a :City.n.01 ;

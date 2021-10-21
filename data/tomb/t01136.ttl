@@ -27,8 +27,14 @@ t01136:p1
     a :Age ;
     :duration "P41Y4M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1830-08-27"^^xsd:date ;
-  :dateOfDeath "1872-01-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1830-08-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1872-01-22"^^xsd:date
+  ] ;
   :nam "GEERTRUIDA BANSEMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

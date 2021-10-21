@@ -23,8 +23,14 @@ t00246:p1
     a :Age ;
     :duration "P68Y11M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-01-15"^^xsd:date ;
-  :dateOfDeath "1968-12-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-01-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-12-21"^^xsd:date
+  ] ;
   :nam "TJAATJE MEIJER" ;
   :placeOfBirth [
     a :Village.n.02 ;

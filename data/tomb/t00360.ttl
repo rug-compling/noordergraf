@@ -32,8 +32,14 @@ t00360:p1
     a :Age ;
     :duration "P65Y10M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-04-06"^^xsd:date ;
-  :dateOfDeath "1936-02-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-04-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-02-11"^^xsd:date
+  ] ;
   :nam "GRIETJE JAGER" ;
   :placeOfBirth t00360:c1 ;
   :placeOfDeath t00360:c1 ;

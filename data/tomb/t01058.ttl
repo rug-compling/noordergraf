@@ -26,8 +26,14 @@ t01058:p1
     a :Age ;
     :duration "P56Y4M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-12-14"^^xsd:date ;
-  :dateOfDeath "1917-04-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-12-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-04-27"^^xsd:date
+  ] ;
   :nam "PIETJE HIEMSTRA" ;
   :placeOfBirth [
     a :Village.n.02 ;

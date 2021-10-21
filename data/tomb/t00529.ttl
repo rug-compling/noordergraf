@@ -27,8 +27,14 @@ t00529:p1
     a :Age ;
     :duration "P64Y8M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1932-08-31"^^xsd:date ;
-  :dateOfDeath "1997-05-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1932-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-05-28"^^xsd:date
+  ] ;
   :nam "LOEK STRAUBE" ;
   :placeOfBirth [
     a :City.n.01 ;

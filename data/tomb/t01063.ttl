@@ -28,8 +28,14 @@ t01063:p1
     a :Age ;
     :duration "P76Y3M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-01-26"^^xsd:date ;
-  :dateOfDeath "1945-05-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-01-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-05-10"^^xsd:date
+  ] ;
   :nam "ANNE PIJPKER" ;
   :rol [
     a :Parent.n.01
@@ -45,8 +51,14 @@ t01063:p2
     a :Age ;
     :duration "P88Y3M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-09-08"^^xsd:date ;
-  :dateOfDeath "1962-01-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-09-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-01-03"^^xsd:date
+  ] ;
   :nam "TRIENTJE JAGERSMA" ;
   :rol [
     a :Parent.n.01

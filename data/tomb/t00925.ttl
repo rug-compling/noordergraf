@@ -27,8 +27,14 @@ t00925:p1
     a :Age ;
     :duration "P55Y8M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1945-09-16"^^xsd:date ;
-  :dateOfDeath "2001-06-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1945-09-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-06-02"^^xsd:date
+  ] ;
   :nam "ALEXANDER AREND ZWIJGERS" ;
   :rol [
     a :Husband.n.01

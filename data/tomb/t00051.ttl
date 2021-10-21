@@ -28,8 +28,14 @@ t00051:p1
     a :Age ;
     :duration "P60Y20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1889-10-04"^^xsd:date ;
-  :dateOfDeath "1949-10-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-10-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-10-24"^^xsd:date
+  ] ;
   :nam "JOHANNA NIEBORG" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -50,8 +56,14 @@ t00051:p2
     a :Age ;
     :duration "P62Y9M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1891-04-20"^^xsd:date ;
-  :dateOfDeath "1954-02-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-02-17"^^xsd:date
+  ] ;
   :nam "GEERT MULDER" ;
   :placeOfBirth t00051:c2 ;
   :placeOfDeath t00051:c2 ;

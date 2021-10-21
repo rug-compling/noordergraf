@@ -37,8 +37,14 @@ t00876:p1
     a :Age ;
     :duration "P65Y11M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-11-24"^^xsd:date ;
-  :dateOfDeath "1937-11-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-11-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-11-20"^^xsd:date
+  ] ;
   :nam "JANTJE VISSER" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -27,7 +27,13 @@ t00512:p1
     a :Age ;
     :duration "P72Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1921"^^xsd:gYear ;
-  :dateOfDeath "1993"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1921"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993"^^xsd:gYear
+  ] ;
   :nam "JOZUA VOS" .
 

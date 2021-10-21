@@ -6,8 +6,14 @@ tomb:t00587
     a :Age ;
     :duration "P44Y4M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-09-20"^^xsd:date ;
-  :dateOfDeath "1919-01-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-09-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-01-26"^^xsd:date
+  ] ;
   :image [
     dc:date "2019-11-30T14:46:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;

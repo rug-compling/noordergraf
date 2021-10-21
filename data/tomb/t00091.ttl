@@ -23,8 +23,14 @@ t00091:p1
     a :Age ;
     :duration "P72Y8M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1895-08-31"^^xsd:date ;
-  :dateOfDeath "1968-05-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-05-15"^^xsd:date
+  ] ;
   :nam "WILHELMINA H.P.M. MAST" ;
   :rol [
     a :Widow.n.01 ;

@@ -30,8 +30,14 @@ t00609:p1
     a :Age ;
     :duration "P10Y11M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1852-09-10"^^xsd:date ;
-  :dateOfDeath "1863-08-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-09-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1863-08-26"^^xsd:date
+  ] ;
   :nam "BEREND" ;
   :rol [
     a :Son.n.01

@@ -28,8 +28,14 @@ t00790:p1
     a :Age ;
     :duration "P62Y2M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-05-04"^^xsd:date ;
-  :dateOfDeath "1934-07-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-07-16"^^xsd:date
+  ] ;
   :nam "EPPÉA HILLEGONDA STEENHUIS" ;
   :placeOfBirth t00790:c1 ;
   :placeOfDeath t00790:c1 ;

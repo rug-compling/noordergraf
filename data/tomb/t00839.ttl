@@ -32,8 +32,14 @@ t00839:p1
     a :Age ;
     :duration "P41Y4M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-10-20"^^xsd:date ;
-  :dateOfDeath "1926-02-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-10-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-02-24"^^xsd:date
+  ] ;
   :nam "K. ANNINGA" ;
   :placeOfBirth t00839:c1 ;
   :placeOfDeath t00839:c1 ;

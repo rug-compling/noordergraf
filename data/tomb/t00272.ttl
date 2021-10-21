@@ -23,8 +23,14 @@ t00272:p1
     a :Age ;
     :duration "P52Y18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1913-01-30"^^xsd:date ;
-  :dateOfDeath "1965-02-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-01-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-02-17"^^xsd:date
+  ] ;
   :nam "RINZE STEL" ;
   :rol [
     a :Husband.n.01 ;

@@ -34,8 +34,14 @@ t00350:p1
     a :Age ;
     :duration "P72Y1M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1895-09-09"^^xsd:date ;
-  :dateOfDeath "1967-11-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-09-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1967-11-04"^^xsd:date
+  ] ;
   :nam "JANSJE JANSSEN" ;
   :rol [
     a :Spouse.n.01 ;
@@ -48,7 +54,13 @@ t00350:p2
     a :Age ;
     :duration "P82Y4M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1895-05-27"^^xsd:date ;
-  :dateOfDeath "1977-10-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-05-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1977-10-16"^^xsd:date
+  ] ;
   :nam "AREND SMIT" .
 

@@ -27,8 +27,14 @@ t00475:p1
     a :Age ;
     :duration "P65Y6M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-09-18"^^xsd:date ;
-  :dateOfDeath "1942-04-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-09-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-04-07"^^xsd:date
+  ] ;
   :nam "ANDRIES D. SIEMANSMA" ;
   :rol [
     a :Spouse.n.01 ;
@@ -41,7 +47,13 @@ t00475:p2
     a :Age ;
     :duration "P75Y9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1885-05-29"^^xsd:date ;
-  :dateOfDeath "1960-06-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-05-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-06-07"^^xsd:date
+  ] ;
   :nam "MARIA J. GERRITSEN" .
 

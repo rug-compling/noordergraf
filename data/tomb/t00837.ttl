@@ -37,8 +37,14 @@ t00837:p1
     a :Age ;
     :duration "P34Y1M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-04-11"^^xsd:date ;
-  :dateOfDeath "1910-06-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-04-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1910-06-09"^^xsd:date
+  ] ;
   :nam "JACOBA HIDDING" ;
   :placeOfBirth [
     a :Village.n.02 ;

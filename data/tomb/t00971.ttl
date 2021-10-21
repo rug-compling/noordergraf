@@ -36,8 +36,14 @@ t00971:p1
     a :Age ;
     :duration "P85Y10M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-09-03"^^xsd:date ;
-  :dateOfDeath "1950-07-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-07-26"^^xsd:date
+  ] ;
   :nam "EGBERTIEN BORGMAN" ;
   :placeOfBirth t00971:c1 ;
   :placeOfDeath t00971:c1 ;

@@ -26,8 +26,14 @@ t00304:p1
     a :Age ;
     :duration "P72Y9M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-04-01"^^xsd:date ;
-  :dateOfDeath "1941-01-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-04-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-01-23"^^xsd:date
+  ] ;
   :nam "JANTJE PRIGGE" ;
   :rol [
     a :Spouse.n.01 ;
@@ -40,7 +46,13 @@ t00304:p2
     a :Age ;
     :duration "P80Y7M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-07-02"^^xsd:date ;
-  :dateOfDeath "1949-02-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-02-26"^^xsd:date
+  ] ;
   :nam "ALBERTUS HAGEN" .
 

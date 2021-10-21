@@ -32,8 +32,14 @@ t00704:p1
     a :Age ;
     :duration "P58Y10M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-03-29"^^xsd:date ;
-  :dateOfDeath "1927-02-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-03-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-02-24"^^xsd:date
+  ] ;
   :nam "WIARDUS WILLEM BAN HAERSMA BUMA" ;
   :occupation [
     a :Judge.n.01 ;

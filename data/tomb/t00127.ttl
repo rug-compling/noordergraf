@@ -38,8 +38,14 @@ t00127:p1
     a :Age ;
     :duration "P73Y11M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1849-03-26"^^xsd:date ;
-  :dateOfDeath "1923-03-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1849-03-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1923-03-05"^^xsd:date
+  ] ;
   :nam "PIETER REINTS" ;
   :placeOfBirth t00127:c1 ;
   :placeOfDeath t00127:c1 ;
@@ -54,7 +60,13 @@ t00127:p2
     a :Age ;
     :duration "P98Y6M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-10-19"^^xsd:date ;
-  :dateOfDeath "1958-04-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-10-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-04-23"^^xsd:date
+  ] ;
   :nam "JURRENDINA MOESKER" .
 

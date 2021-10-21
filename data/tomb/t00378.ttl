@@ -27,8 +27,14 @@ t00378:p1
     a :Age ;
     :duration "P55Y5M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1907-12-17"^^xsd:date ;
-  :dateOfDeath "1963-06-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-12-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-06-01"^^xsd:date
+  ] ;
   :nam "EVELINA VEENDIJK" ;
   :rol [
     a :Spouse.n.01 ;
@@ -43,8 +49,14 @@ t00378:p2
     a :Age ;
     :duration "P89Y6M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-03-11"^^xsd:date ;
-  :dateOfDeath "1990-10-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-03-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1990-10-03"^^xsd:date
+  ] ;
   :nam "ALBERT LAMPE" ;
   :rol [
     a :Parent.n.01

@@ -23,8 +23,14 @@ t00244:p1
     a :Age ;
     :duration "P63Y2M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-06-14"^^xsd:date ;
-  :dateOfDeath "1951-08-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-06-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-08-23"^^xsd:date
+  ] ;
   :nam "FEIKO JACOB BOUMAN" ;
   :occupation [
     a :Luthier.n.01 ;
@@ -41,7 +47,13 @@ t00244:p2
     a :Age ;
     :duration "P87Y2M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-02-22"^^xsd:date ;
-  :dateOfDeath "1987-05-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-02-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1987-05-13"^^xsd:date
+  ] ;
   :nam "NEELTJE VAN DER WIS" .
 

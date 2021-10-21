@@ -27,8 +27,14 @@ t00216:p1
     a :Age ;
     :duration "P21Y2M30D"^^xsd:duration
   ] ;
-  :dateOfBirth "1881-03-05"^^xsd:date ;
-  :dateOfDeath "1902-06-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-03-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1902-06-04"^^xsd:date
+  ] ;
   :nam "ELIESABETH WIERINGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

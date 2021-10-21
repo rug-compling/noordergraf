@@ -23,8 +23,14 @@ t00069:p1
     a :Age ;
     :duration "P75Y7M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1867-11-12"^^xsd:date ;
-  :dateOfDeath "1943-07-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-11-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-07-08"^^xsd:date
+  ] ;
   :nam "AUKE KORNELIA VEENHUIS" ;
   :rol t00069:r1, [
     a :Mother.n.01

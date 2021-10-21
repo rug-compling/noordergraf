@@ -28,8 +28,14 @@ t00799:p1
     a :Age ;
     :duration "P36Y10M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1907-10-31"^^xsd:date ;
-  :dateOfDeath "1944-09-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-10-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-09-22"^^xsd:date
+  ] ;
   :nam "A.K. DIJKEMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

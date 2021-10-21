@@ -26,8 +26,14 @@ t00206:p1
     a :Age ;
     :duration "P77Y9M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1784-03-28"^^xsd:date ;
-  :dateOfDeath "1862-01-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1784-03-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1862-01-12"^^xsd:date
+  ] ;
   :nam "JAN GERRITS RIJKENS" ;
   :occupation [
     a :Teacher.n.01 ;

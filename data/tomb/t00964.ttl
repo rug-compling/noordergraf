@@ -23,7 +23,10 @@ tomb:t00964
 
 t00964:p1
   a :Female ;
-  :dateOfDeath "1916-04-25"^^xsd:date ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-04-25"^^xsd:date
+  ] ;
   :nam "TRIJNJE BOS" ;
   :rol [
     a :Wife.n.01 ;

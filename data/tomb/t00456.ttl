@@ -26,8 +26,14 @@ t00456:p1
     a :Age ;
     :duration "P47Y4M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1929-06-25"^^xsd:date ;
-  :dateOfDeath "1976-11-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1929-06-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-11-20"^^xsd:date
+  ] ;
   :nam "UMBERTO MANDRICARDO" ;
   :rol [
     a :Husband.n.01

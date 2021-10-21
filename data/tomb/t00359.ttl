@@ -27,8 +27,14 @@ t00359:p1
     a :Age ;
     :duration "P33Y11M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-06-25"^^xsd:date ;
-  :dateOfDeath "1935-06-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-06-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-06-02"^^xsd:date
+  ] ;
   :nam "GEERTIEN BATHOORN" ;
   :placeOfBirth [
     a :Village.n.02 ;

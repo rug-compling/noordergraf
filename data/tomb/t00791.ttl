@@ -28,8 +28,14 @@ t00791:p1
     a :Age ;
     :duration "P20Y9M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-10-06"^^xsd:date ;
-  :dateOfDeath "1918-07-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-10-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-07-25"^^xsd:date
+  ] ;
   :nam "HENDRIKJE BOLT" ;
   :placeOfBirth t00791:c1 ;
   :placeOfDeath t00791:c1 ;

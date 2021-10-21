@@ -23,7 +23,10 @@ tomb:t00968
 
 t00968:p1
   a :Male ;
-  :dateOfDeath "1932-10-06"^^xsd:date ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-10-06"^^xsd:date
+  ] ;
   :nam "JACOB VOS" ;
   :rol [
     a :Widower.n.01 ;

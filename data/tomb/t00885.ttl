@@ -27,8 +27,14 @@ t00885:p1
     a :Age ;
     :duration "P78Y8M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-05-08"^^xsd:date ;
-  :dateOfDeath "1957-01-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-05-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-01-16"^^xsd:date
+  ] ;
   :nam "FENNA WITTING" ;
   :rol [
     a :Widow.n.01 ;

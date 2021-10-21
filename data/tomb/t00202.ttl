@@ -36,8 +36,14 @@ t00202:p1
     a :Age ;
     :duration "P77Y3M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-12-19"^^xsd:date ;
-  :dateOfDeath "1940-03-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-12-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-03-21"^^xsd:date
+  ] ;
   :nam "ADOLF LEIJDSMAN" ;
   :placeOfBirth t00202:c1 ;
   :placeOfDeath t00202:c1 ;
@@ -56,8 +62,14 @@ t00202:p2
     a :Age ;
     :duration "P90Y2M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-03-11"^^xsd:date ;
-  :dateOfDeath "1952-05-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-03-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-05-27"^^xsd:date
+  ] ;
   :nam "BERENDINA VRIJDAAL" ;
   :placeOfBirth t00202:c1 ;
   :placeOfDeath t00202:c1 .

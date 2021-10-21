@@ -27,7 +27,13 @@ p00002:p1
     a :Age ;
     :duration "P34Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1857"^^xsd:gYear ;
-  :dateOfDeath "1891"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891"^^xsd:gYear
+  ] ;
   :nam "Théodore van Gogh" .
 

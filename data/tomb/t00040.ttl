@@ -41,8 +41,14 @@ t00040:p1
     a :Age ;
     :duration "P41Y18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-12-08"^^xsd:date ;
-  :dateOfDeath "1909-12-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1909-12-26"^^xsd:date
+  ] ;
   :nam "HARMTJE NIJDAM" ;
   :placeOfBirth t00040:c1 ;
   :placeOfDeath t00040:c1 ;

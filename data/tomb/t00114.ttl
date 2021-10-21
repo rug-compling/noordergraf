@@ -28,8 +28,14 @@ t00114:p1
     a :Age ;
     :duration "P69Y6M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1891-05-30"^^xsd:date ;
-  :dateOfDeath "1960-12-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-05-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-12-15"^^xsd:date
+  ] ;
   :nam "AALTJE OOSTERVELD" ;
   :placeOfBirth t00114:c1 ;
   :placeOfDeath t00114:c1 ;

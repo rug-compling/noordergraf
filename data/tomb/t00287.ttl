@@ -23,8 +23,14 @@ t00287:p1
     a :Age ;
     :duration "P67Y12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1827-12-20"^^xsd:date ;
-  :dateOfDeath "1895-01-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1827-12-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1895-01-01"^^xsd:date
+  ] ;
   :nam "HENDRIK G. OOSTERHUIS" ;
   :placeOfBirth [
     a :Village.n.02 ;

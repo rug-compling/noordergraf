@@ -24,8 +24,14 @@ t00273:p1
     a :Age ;
     :duration "P75Y2M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-02-07"^^xsd:date ;
-  :dateOfDeath "1962-04-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-02-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-04-11"^^xsd:date
+  ] ;
   :nam "GEESSIEN LUBBERS" ;
   :rol [
     a :Parent.n.01
@@ -37,8 +43,14 @@ t00273:p2
     a :Age ;
     :duration "P82Y8M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1882-03-20"^^xsd:date ;
-  :dateOfDeath "1964-12-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-12-12"^^xsd:date
+  ] ;
   :nam "LAMMERT KUIPERS" ;
   :rol [
     a :Parent.n.01

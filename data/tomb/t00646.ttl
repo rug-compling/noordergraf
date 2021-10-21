@@ -23,8 +23,14 @@ t00646:p1
     a :Age ;
     :duration "P20Y8M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-06-21"^^xsd:date ;
-  :dateOfDeath "1919-03-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-06-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-03-10"^^xsd:date
+  ] ;
   :nam "BEREND ZONDERMAN" ;
   :placeOfBirth [
     a :Village.n.02 ;

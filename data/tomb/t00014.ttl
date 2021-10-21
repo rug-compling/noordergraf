@@ -27,8 +27,14 @@ t00014:p1
     a :Age ;
     :duration "P35Y4M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1909-11-23"^^xsd:date ;
-  :dateOfDeath "1945-04-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1909-11-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-04-15"^^xsd:date
+  ] ;
   :nam "JAN RAATJES" ;
   :placeOfBirth [
     a :City.n.01 ;

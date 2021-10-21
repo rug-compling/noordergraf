@@ -23,7 +23,13 @@ t01132:p1
     a :Age ;
     :duration "P87Y10M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-05-28"^^xsd:date ;
-  :dateOfDeath "1954-03-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-05-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-03-31"^^xsd:date
+  ] ;
   :nam "MARTHA VROOM GROENEWOLD" .
 

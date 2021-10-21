@@ -44,8 +44,14 @@ t00218:p1
     a :Age ;
     :duration "P8Y1M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-06-25"^^xsd:date ;
-  :dateOfDeath "1891-08-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-06-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891-08-14"^^xsd:date
+  ] ;
   :nam "KLAAZIENA WIERINGA" ;
   :placeOfBirth t00218:c1 ;
   :placeOfDeath t00218:c2 ;
@@ -63,8 +69,14 @@ t00218:p2
     a :Age ;
     :duration "P16Y4M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-11-29"^^xsd:date ;
-  :dateOfDeath "1895-04-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1895-04-17"^^xsd:date
+  ] ;
   :nam "HINDRIK WIERENGA" ;
   :placeOfBirth t00218:c1 ;
   :placeOfDeath t00218:c2 ;

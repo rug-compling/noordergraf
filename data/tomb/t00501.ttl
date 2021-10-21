@@ -36,8 +36,14 @@ t00501:p1
     a :Age ;
     :duration "P62Y11M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1855-05-24"^^xsd:date ;
-  :dateOfDeath "1918-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1855-05-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-05-01"^^xsd:date
+  ] ;
   :nam "JOHANNES FRANSBERGEN" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -52,8 +58,14 @@ t00501:p2
     a :Age ;
     :duration "P84Y3M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1847-12-10"^^xsd:date ;
-  :dateOfDeath "1932-03-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-12-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-03-25"^^xsd:date
+  ] ;
   :nam "MARIA LOUISA ELDERMANS" ;
   :placeOfBirth [
     a :City.n.01 ;

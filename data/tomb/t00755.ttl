@@ -26,8 +26,14 @@ t00755:p1
     a :Age ;
     :duration "P3Y4M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-06-08"^^xsd:date ;
-  :dateOfDeath "1865-10-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-06-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1865-10-27"^^xsd:date
+  ] ;
   :nam "KLAAS JANS" ;
   :rol [
     a :Son.n.01 ;

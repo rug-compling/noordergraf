@@ -29,8 +29,14 @@ t00508:p1
     a :Age ;
     :duration "P39Y4M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-03-10"^^xsd:date ;
-  :dateOfDeath "1911-07-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-03-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-07-18"^^xsd:date
+  ] ;
   :nam "MARIA H.F. LAMBOOIJ-AHSMANN" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -45,8 +51,14 @@ t00508:p2
     a :Age ;
     :duration "P79Y25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-03-31"^^xsd:date ;
-  :dateOfDeath "1949-04-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-03-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-04-25"^^xsd:date
+  ] ;
   :nam "HERMANUS D. LAMBOOIJ" ;
   :placeOfBirth t00508:c2 ;
   :placeOfDeath t00508:c2 .
@@ -57,7 +69,13 @@ t00508:p3
     a :Age ;
     :duration "P76Y11M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-12-17"^^xsd:date ;
-  :dateOfDeath "1949-12-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-12-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-12-06"^^xsd:date
+  ] ;
   :nam "CAECILIA M. LAMBOOIJ-IJSSELMUIDEN" .
 

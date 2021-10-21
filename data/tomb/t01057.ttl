@@ -26,8 +26,14 @@ t01057:p1
     a :Age ;
     :duration "P76Y2M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1854-12-05"^^xsd:date ;
-  :dateOfDeath "1931-03-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-12-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-03-02"^^xsd:date
+  ] ;
   :nam "KORNELIS DE VRIES" ;
   :placeOfBirth [
     a :Village.n.02 ;

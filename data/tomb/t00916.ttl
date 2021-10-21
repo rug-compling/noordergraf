@@ -33,8 +33,14 @@ t00916:p1
     a :Age ;
     :duration "P79Y1M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-12-08"^^xsd:date ;
-  :dateOfDeath "1942-01-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-01-17"^^xsd:date
+  ] ;
   :nam "HENDRIKJE KONING" ;
   :placeOfBirth t00916:c1 ;
   :placeOfDeath t00916:c2 .
@@ -45,8 +51,14 @@ t00916:p2
     a :Age ;
     :duration "P80Y5M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-12-23"^^xsd:date ;
-  :dateOfDeath "1943-06-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-06-07"^^xsd:date
+  ] ;
   :nam "JANNES SNIP" ;
   :placeOfBirth t00916:c1 ;
   :placeOfDeath t00916:c2 .

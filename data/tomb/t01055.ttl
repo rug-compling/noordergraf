@@ -27,8 +27,14 @@ t01055:p1
     a :Age ;
     :duration "P91Y6M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1835-10-13"^^xsd:date ;
-  :dateOfDeath "1927-04-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-10-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-04-27"^^xsd:date
+  ] ;
   :nam "AALTJE BORGMAN" ;
   :placeOfBirth [
     a :Village.n.02 ;

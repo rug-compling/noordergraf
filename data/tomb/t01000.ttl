@@ -23,8 +23,14 @@ t01000:p1
     a :Age ;
     :duration "P29Y2M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-10-29"^^xsd:date ;
-  :dateOfDeath "1887-01-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-10-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1887-01-13"^^xsd:date
+  ] ;
   :nam "TRIENTJE H. BOER" ;
   :rol [
     a :Daughter.n.01 ;

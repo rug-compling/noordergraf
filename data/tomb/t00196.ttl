@@ -26,8 +26,14 @@ t00196:p1
     a :Age ;
     :duration "P49Y2M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-02-29"^^xsd:date ;
-  :dateOfDeath "1933-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-02-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-05-01"^^xsd:date
+  ] ;
   :nam "TJITSKE DE VRIES" ;
   :rol [
     a :Wife.n.01 ;

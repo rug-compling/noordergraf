@@ -30,8 +30,14 @@ t01086:p1
     a :Age ;
     :duration "P3Y5M"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-07"^^xsd:gYearMonth ;
-  :dateOfDeath "1872-12-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-07"^^xsd:gYearMonth
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1872-12-28"^^xsd:date
+  ] ;
   :nam "KLAAS" ;
   :placeOfDeath [
     a :Village.n.02 ;

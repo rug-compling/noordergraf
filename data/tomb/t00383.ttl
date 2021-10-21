@@ -43,8 +43,14 @@ t00383:p1
     a :Age ;
     :duration "P83Y6M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-06-05"^^xsd:date ;
-  :dateOfDeath "1953-12-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-06-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-12-20"^^xsd:date
+  ] ;
   :nam "WOLTER DIJKSTRA" ;
   :placeOfBirth [
     a :Village.n.02 ;

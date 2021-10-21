@@ -29,8 +29,14 @@ t00887:p1
     a :Age ;
     :duration "P24Y3M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1916-01-11"^^xsd:date ;
-  :dateOfDeath "1940-05-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1916-01-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-05-10"^^xsd:date
+  ] ;
   :nam "HILBERT LOOMULDER" ;
   :occupation [
     a :Soldier.n.01 ;

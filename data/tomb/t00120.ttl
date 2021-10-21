@@ -24,8 +24,14 @@ t00120:p1
     a :Age ;
     :duration "P68Y8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-06-27"^^xsd:date ;
-  :dateOfDeath "1966-07-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-06-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1966-07-05"^^xsd:date
+  ] ;
   :nam "WILLEM BOLT" ;
   :occupation [
     a :Principal.n.02 ;
@@ -53,8 +59,14 @@ t00120:p2
     a :Age ;
     :duration "P72Y10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-01-21"^^xsd:date ;
-  :dateOfDeath "1970-01-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-01-31"^^xsd:date
+  ] ;
   :nam "ROELINA EIKELBOOM" .
 
 t00120:v1

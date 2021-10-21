@@ -28,8 +28,14 @@ t00576:p1
     a :Age ;
     :duration "P33Y2M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1814-06-03"^^xsd:date ;
-  :dateOfDeath "1847-08-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1814-06-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1847-08-17"^^xsd:date
+  ] ;
   :nam "KLAAS M. TALENS" ;
   :placeOfBirth t00576:c1 ;
   :placeOfDeath t00576:c1 ;

@@ -26,8 +26,14 @@ t00351:p1
     a :Age ;
     :duration "P54Y3M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-06-08"^^xsd:date ;
-  :dateOfDeath "1925-10-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-06-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-10-02"^^xsd:date
+  ] ;
   :nam "JANTIEN HOMAN" ;
   :placeOfBirth [
     a :Village.n.02 ;

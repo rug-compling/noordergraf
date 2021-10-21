@@ -24,8 +24,14 @@ t00707:p1
     a :Age ;
     :duration "P44Y3M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-11-30"^^xsd:date ;
-  :dateOfDeath "1920-03-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-11-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-03-02"^^xsd:date
+  ] ;
   :nam "SIJTSE ROMKES" ;
   :rol [
     a :Spouse.n.01 ;

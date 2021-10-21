@@ -23,8 +23,14 @@ t00827:p1
     a :Age ;
     :duration "P58Y9M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-08-01"^^xsd:date ;
-  :dateOfDeath "1945-05-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-08-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-05-06"^^xsd:date
+  ] ;
   :nam "GEERT DASSEL" ;
   :rol [
     a :Spouse.n.01 ;
@@ -37,7 +43,13 @@ t00827:p2
     a :Age ;
     :duration "P64Y10M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1890-10-03"^^xsd:date ;
-  :dateOfDeath "1955-08-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-10-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-08-19"^^xsd:date
+  ] ;
   :nam "ANTINA TER HORST" .
 

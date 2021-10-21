@@ -37,8 +37,14 @@ t01013:p1
     a :Age ;
     :duration "P77Y5M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1786-06-11"^^xsd:date ;
-  :dateOfDeath "1863-12-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1786-06-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1863-12-08"^^xsd:date
+  ] ;
   :nam "HINDERK TJAPKES DE BOER" ;
   :occupation [
     a :Taxman.n.01 ;

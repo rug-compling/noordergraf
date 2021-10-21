@@ -33,8 +33,14 @@ t01059:p1
     a :Age ;
     :duration "P78Y8M"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-04-14"^^xsd:date ;
-  :dateOfDeath "1955-12-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-04-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-12-14"^^xsd:date
+  ] ;
   :nam "ELZO VAN KAMPEN" ;
   :placeOfBirth t01059:c1 ;
   :placeOfDeath t01059:c1 ;

@@ -27,7 +27,13 @@ t01022:p1
     a :Age ;
     :duration "P77Y9M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1917-07-15"^^xsd:date ;
-  :dateOfDeath "1995-04-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1995-04-24"^^xsd:date
+  ] ;
   :nam "MAX GOSSCHALK" .
 

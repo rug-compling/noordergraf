@@ -26,8 +26,14 @@ t00774:p1
     a :Age ;
     :duration "P54Y1M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-11-18"^^xsd:date ;
-  :dateOfDeath "1899-12-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-11-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1899-12-20"^^xsd:date
+  ] ;
   :nam "WILLEM JOLING" ;
   :occupation [
     a :Taxman.n.01 ;

@@ -31,8 +31,14 @@ t01056:p1
     a :Age ;
     :duration "P48Y1M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-11-18"^^xsd:date ;
-  :dateOfDeath "1908-01-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-11-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-01-04"^^xsd:date
+  ] ;
   :nam "JOCHUM TENT" ;
   :placeOfBirth t01056:c1 ;
   :placeOfDeath t01056:c1 ;

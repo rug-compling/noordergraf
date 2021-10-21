@@ -26,8 +26,14 @@ t00212:p1
     a :Age ;
     :duration "P44Y5M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1904-09-03"^^xsd:date ;
-  :dateOfDeath "1949-02-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1904-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-02-24"^^xsd:date
+  ] ;
   :nam "ANTJE OORLOG" ;
   :rol [
     a :Wife.n.01 ;

@@ -36,8 +36,14 @@ t00926:p1
     a :Age ;
     :duration "P22Y11M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-06-10"^^xsd:date ;
-  :dateOfDeath "1896-05-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-06-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1896-05-30"^^xsd:date
+  ] ;
   :nam "GEERT MEEK" ;
   :placeOfBirth t00926:c1 ;
   :placeOfDeath t00926:c1 .

@@ -28,8 +28,14 @@ t01104:p1
     a :Age ;
     :duration "P77Y4M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-04-28"^^xsd:date ;
-  :dateOfDeath "1939-09-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-04-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-09-07"^^xsd:date
+  ] ;
   :nam "SIES BRANDSMA" ;
   :occupation [
     a :Doctor.n.01 ;
@@ -48,8 +54,14 @@ t01104:p2
     a :Age ;
     :duration "P79Y1M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-05-13"^^xsd:date ;
-  :dateOfDeath "1956-07-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-05-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-07-04"^^xsd:date
+  ] ;
   :nam "GRIETJE ALINGH BRANDSMA-ZWART" ;
   :occupation [
     a :Doctor.n.01 ;

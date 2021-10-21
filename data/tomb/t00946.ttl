@@ -35,8 +35,14 @@ t00946:p1
     a :Age ;
     :duration "P77Y5M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1824-07-30"^^xsd:date ;
-  :dateOfDeath "1902-01-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1824-07-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1902-01-07"^^xsd:date
+  ] ;
   :nam "FEIKO PIETERS VAN HEUVELEN" .
 
 t00946:p2

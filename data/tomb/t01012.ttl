@@ -23,8 +23,14 @@ t01012:p1
     a :Age ;
     :duration "P74Y9M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1912-04-06"^^xsd:date ;
-  :dateOfDeath "1987-01-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-04-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1987-01-12"^^xsd:date
+  ] ;
   :nam "JANNES DE BOER" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -52,8 +58,14 @@ t01012:p2
     a :Age ;
     :duration "P83Y9M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1925-02-27"^^xsd:date ;
-  :dateOfDeath "2008-11-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-02-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-11-30"^^xsd:date
+  ] ;
   :nam "MARGARETHA LEUTSCHER" ;
   :placeOfBirth [
     a :Village.n.02 ;

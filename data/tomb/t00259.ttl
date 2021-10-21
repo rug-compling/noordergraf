@@ -31,8 +31,14 @@ t00259:p1
     a :Age ;
     :duration "P68Y5M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-04-23"^^xsd:date ;
-  :dateOfDeath "1927-10-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-10-04"^^xsd:date
+  ] ;
   :nam "BEREND VAN VEEN" ;
   :placeOfBirth [
     a :City.n.01 ;

@@ -30,8 +30,14 @@ t00802:p1
     a :Age ;
     :duration "P62Y4M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-10-04"^^xsd:date ;
-  :dateOfDeath "1931-02-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-10-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-02-27"^^xsd:date
+  ] ;
   :nam "IJPE BOERSMA" ;
   :rol [
     a :Husband.n.01 ;
@@ -49,7 +55,13 @@ t00802:p2
     a :Age ;
     :duration "P87Y2M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1867-09-27"^^xsd:date ;
-  :dateOfDeath "1954-12-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-09-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-12-26"^^xsd:date
+  ] ;
   :nam "HILJE VEENSTRA" .
 

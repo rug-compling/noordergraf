@@ -26,8 +26,14 @@ t00255:p1
     a :Age ;
     :duration "P55Y3M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-07-07"^^xsd:date ;
-  :dateOfDeath "1956-10-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-07-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-10-18"^^xsd:date
+  ] ;
   :nam "MARTINUS EKKO VORENKAMP" ;
   :placeOfBirth [
     a :Village.n.02 ;

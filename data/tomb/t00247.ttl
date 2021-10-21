@@ -28,8 +28,14 @@ t00247:p1
     a :Age ;
     :duration "P74Y11M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-09-09"^^xsd:date ;
-  :dateOfDeath "1933-08-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-09-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-08-23"^^xsd:date
+  ] ;
   :nam "HENDRIKJE BAZUIN" ;
   :placeOfBirth t00247:c1 ;
   :placeOfDeath t00247:c1 .
@@ -40,8 +46,14 @@ t00247:p2
     a :Age ;
     :duration "P62Y5M"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-10-25"^^xsd:date ;
-  :dateOfDeath "1947-03-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-10-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-03-25"^^xsd:date
+  ] ;
   :nam "JAN BERENDS" ;
   :placeOfBirth t00247:c1 ;
   :placeOfDeath t00247:c1 .

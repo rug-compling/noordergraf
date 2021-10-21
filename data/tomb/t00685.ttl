@@ -23,7 +23,13 @@ t00685:p1
     a :Age ;
     :duration "P63Y9M"^^xsd:duration
   ] ;
-  :dateOfBirth "1937-07-13"^^xsd:date ;
-  :dateOfDeath "2001-04-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-07-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-04-13"^^xsd:date
+  ] ;
   :nam "JOHN ZOETENDAL" .
 

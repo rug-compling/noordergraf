@@ -30,8 +30,14 @@ t01079:p1
     a :Age ;
     :duration "P49Y5M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1830-08-30"^^xsd:date ;
-  :dateOfDeath "1880-02-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1830-08-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-02-09"^^xsd:date
+  ] ;
   :nam "KLAAS K. HOFSTEE" ;
   :placeOfBirth [
     a :Village.n.02 ;

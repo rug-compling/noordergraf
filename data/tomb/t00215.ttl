@@ -26,8 +26,14 @@ t00215:p1
     a :Age ;
     :duration "P86Y8M"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-07-17"^^xsd:date ;
-  :dateOfDeath "1963-03-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-07-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-03-17"^^xsd:date
+  ] ;
   :nam "EEUWKE WOLDRING" ;
   :placeOfBirth [
     a :Village.n.02 ;

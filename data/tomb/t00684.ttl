@@ -29,8 +29,14 @@ t00684:p1
     a :Age ;
     :duration "P84Y7M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-09-12"^^xsd:date ;
-  :dateOfDeath "1944-05-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-05-06"^^xsd:date
+  ] ;
   :nam "SJOERD DE WIT" ;
   :rol [
     a :Parent.n.01
@@ -42,8 +48,14 @@ t00684:p2
     a :Age ;
     :duration "P74Y4M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-08-25"^^xsd:date ;
-  :dateOfDeath "1934-01-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-08-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-01-19"^^xsd:date
+  ] ;
   :nam "IJMKJE VAN STRALEN" ;
   :rol [
     a :Parent.n.01

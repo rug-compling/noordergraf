@@ -26,8 +26,14 @@ t00648:p1
     a :Age ;
     :duration "P93Y9M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1787-01-10"^^xsd:date ;
-  :dateOfDeath "1880-10-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1787-01-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-10-30"^^xsd:date
+  ] ;
   :nam "SAMUEL C. DE BOER" ;
   :rol [
     a :Spouse.n.01 ;

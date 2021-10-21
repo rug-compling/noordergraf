@@ -32,8 +32,14 @@ t00775:p1
     a :Age ;
     :duration "P86Y9M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1854-08-01"^^xsd:date ;
-  :dateOfDeath "1941-05-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-08-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-05-18"^^xsd:date
+  ] ;
   :nam "MARCUS JOLING" ;
   :occupation [
     a :Elder.n.03 ;

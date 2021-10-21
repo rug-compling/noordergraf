@@ -23,8 +23,14 @@ t00201:p1
     a :Age ;
     :duration "P57Y8M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-07-14"^^xsd:date ;
-  :dateOfDeath "1933-03-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-07-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-03-21"^^xsd:date
+  ] ;
   :nam "DIRKJE WACHTER" ;
   :rol [
     a :Spouse.n.01 ;
@@ -37,8 +43,14 @@ t00201:p2
     a :Age ;
     :duration "P66Y11M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-02-03"^^xsd:date ;
-  :dateOfDeath "1940-01-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-02-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-01-19"^^xsd:date
+  ] ;
   :nam "RUDOLF VAN DER MOLEN" ;
   :placeOfDeath [
     a :City.n.01 ;

@@ -30,8 +30,14 @@ t00875:p1
     a :Age ;
     :duration "P10M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1939-07-27"^^xsd:date ;
-  :dateOfDeath "1940-06-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1939-07-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-06-22"^^xsd:date
+  ] ;
   :nam "JANNA" ;
   :rol [
     a :Daughter.n.01

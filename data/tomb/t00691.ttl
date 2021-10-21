@@ -26,8 +26,14 @@ t00691:p1
     a :Age ;
     :duration "P89Y4M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1881-03-29"^^xsd:date ;
-  :dateOfDeath "1970-07-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-03-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-07-30"^^xsd:date
+  ] ;
   :nam "JOGCHUM B. KINGMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

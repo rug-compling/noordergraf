@@ -27,7 +27,13 @@ t00874:p1
     a :Age ;
     :duration "P72Y4M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-10-09"^^xsd:date ;
-  :dateOfDeath "1959-02-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-10-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-02-28"^^xsd:date
+  ] ;
   :nam "G. POSTUMA-DE VRIES" .
 

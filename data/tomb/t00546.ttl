@@ -30,8 +30,14 @@ t00546:p1
     a :Age ;
     :duration "P84Y8M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-02-18"^^xsd:date ;
-  :dateOfDeath "1926-11-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-02-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-11-15"^^xsd:date
+  ] ;
   :nam "ANNA KOOL" ;
   :placeOfBirth [
     a :Village.n.02 ;

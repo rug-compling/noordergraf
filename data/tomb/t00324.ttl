@@ -26,8 +26,14 @@ t00324:p1
     a :Age ;
     :duration "P68Y7M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-09-27"^^xsd:date ;
-  :dateOfDeath "1927-04-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-09-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-04-28"^^xsd:date
+  ] ;
   :nam "S. ESHUIS" ;
   :rol [
     a :Husband.n.01 ;
@@ -43,8 +49,14 @@ t00324:p2
     a :Age ;
     :duration "P90Y3M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-04-18"^^xsd:date ;
-  :dateOfDeath "1950-07-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-04-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-07-27"^^xsd:date
+  ] ;
   :nam "M. VAN LEEUWEN" ;
   :rol [
     a :Mother.n.01

@@ -26,7 +26,13 @@ t00457:p1
     a :Age ;
     :duration "P65Y3M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-05-16"^^xsd:date ;
-  :dateOfDeath "1963-09-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-05-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-09-06"^^xsd:date
+  ] ;
   :nam "WILHELMINA CHRISTINA DE BOER" .
 

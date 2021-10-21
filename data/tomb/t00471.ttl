@@ -34,8 +34,14 @@ t00471:p1
     a :Age ;
     :duration "P64Y5M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1882-07-01"^^xsd:date ;
-  :dateOfDeath "1946-12-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-07-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-12-11"^^xsd:date
+  ] ;
   :nam "JOZEPH WEITENBERG" ;
   :rol [
     a :Spouse.n.01 ;
@@ -48,7 +54,13 @@ t00471:p2
     a :Age ;
     :duration "P83Y9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-07-19"^^xsd:date ;
-  :dateOfDeath "1971-07-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-07-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-07-28"^^xsd:date
+  ] ;
   :nam "JELTJE DIKMANS" .
 

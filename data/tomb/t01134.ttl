@@ -33,8 +33,14 @@ t01134:p1
     a :Age ;
     :duration "P77Y7M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-05-30"^^xsd:date ;
-  :dateOfDeath "1953-01-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-05-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-01-11"^^xsd:date
+  ] ;
   :nam "T. NIEUWOLD" ;
   :rol [
     a :Parent.n.01
@@ -46,8 +52,14 @@ t01134:p2
     a :Age ;
     :duration "P60Y6M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-02-22"^^xsd:date ;
-  :dateOfDeath "1957-08-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-02-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-08-24"^^xsd:date
+  ] ;
   :nam "J. ROFFEL" ;
   :rol [
     a :Parent.n.01

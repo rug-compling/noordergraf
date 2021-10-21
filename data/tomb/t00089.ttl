@@ -28,8 +28,14 @@ t00089:p1
     a :Age ;
     :duration "P83Y5M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1863-09-01"^^xsd:date ;
-  :dateOfDeath "1947-02-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-09-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-02-20"^^xsd:date
+  ] ;
   :nam "MARIA WIJTZIA ALTING" ;
   :placeOfBirth t00089:c1 ;
   :placeOfDeath t00089:c1 ;

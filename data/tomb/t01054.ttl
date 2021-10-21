@@ -28,8 +28,14 @@ t01054:p1
     a :Age ;
     :duration "P52Y9M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1894-03-12"^^xsd:date ;
-  :dateOfDeath "1946-12-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-03-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-12-26"^^xsd:date
+  ] ;
   :nam "PIETER ROZEMA" ;
   :placeOfBirth t01054:c1 ;
   :placeOfDeath [
@@ -44,8 +50,14 @@ t01054:p2
     a :Age ;
     :duration "P87Y10M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-06-06"^^xsd:date ;
-  :dateOfDeath "1972-05-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-05-04"^^xsd:date
+  ] ;
   :nam "TRIJNTJE VOS" ;
   :placeOfBirth t01054:c1 ;
   :placeOfDeath [

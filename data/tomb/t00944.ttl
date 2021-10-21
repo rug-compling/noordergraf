@@ -28,8 +28,14 @@ t00944:p1
     a :Age ;
     :duration "P92Y8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1779-03-31"^^xsd:date ;
-  :dateOfDeath "1871-04-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1779-03-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1871-04-08"^^xsd:date
+  ] ;
   :nam "HENDRIK A. WOLTERS" ;
   :rol [
     a :Spouse.n.01 ;

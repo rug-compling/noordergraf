@@ -43,8 +43,14 @@ t00539:p1
     a :Age ;
     :duration "P62Y9M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1817-08-24"^^xsd:date ;
-  :dateOfDeath "1880-06-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1817-08-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-06-19"^^xsd:date
+  ] ;
   :nam "JAN EPPES VAN DER WIJK" ;
   :occupation [
     a :Principal.n.02 ;

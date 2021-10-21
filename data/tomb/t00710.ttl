@@ -24,8 +24,14 @@ t00710:p1
     a :Age ;
     :duration "P36Y6M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1902-05-23"^^xsd:date ;
-  :dateOfDeath "1938-12-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-05-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-12-04"^^xsd:date
+  ] ;
   :nam "JAN HEKMAN" ;
   :rol [
     a :Spouse.n.01 ;

@@ -31,8 +31,14 @@ t01023:p1
     a :Age ;
     :duration "P61Y1M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1787-10-13"^^xsd:date ;
-  :dateOfDeath "1848-11-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1787-10-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1848-11-17"^^xsd:date
+  ] ;
   :nam "MARTJE JANS BRUINENGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

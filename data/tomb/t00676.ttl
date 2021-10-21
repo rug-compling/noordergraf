@@ -31,8 +31,14 @@ t00676:p1
     a :Age ;
     :duration "P60Y8M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1920-12-08"^^xsd:date ;
-  :dateOfDeath "1981-08-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1981-08-30"^^xsd:date
+  ] ;
   :nam "HENDRIK BUWALDA" ;
   :rol [
     a :Parent ;
@@ -48,8 +54,14 @@ t00676:p2
     a :Age ;
     :duration "P75Y2M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1921-11-27"^^xsd:date ;
-  :dateOfDeath "1997-02-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1921-11-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-02-10"^^xsd:date
+  ] ;
   :nam "GRIETJE BUWALDA-VAN DER ZWAAG" ;
   :rol [
     a :Parent ;

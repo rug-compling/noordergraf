@@ -31,8 +31,14 @@ t00342:p1
     a :Age ;
     :duration "P83Y9M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-04-22"^^xsd:date ;
-  :dateOfDeath "1929-02-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-04-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-02-19"^^xsd:date
+  ] ;
   :nam "ROELOFJE BRUNSTING" ;
   :placeOfBirth t00342:c1 ;
   :placeOfDeath [
@@ -55,8 +61,14 @@ t00342:p3
     a :Age ;
     :duration "P77Y10M30D"^^xsd:duration
   ] ;
-  :dateOfBirth "1885-05-06"^^xsd:date ;
-  :dateOfDeath "1963-04-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-05-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-04-05"^^xsd:date
+  ] ;
   :nam "W.A. VOS" ;
   :placeOfBirth [
     a :Town.n.01 ;

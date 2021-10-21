@@ -26,8 +26,14 @@ t00295:p1
     a :Age ;
     :duration "P60Y4M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-04-23"^^xsd:date ;
-  :dateOfDeath "1925-09-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-09-06"^^xsd:date
+  ] ;
   :nam "JOHANNA SEINEN" ;
   :quo "HAAR LEVEN WAS CHRISTUS" ;
   :rol [
@@ -43,8 +49,14 @@ t00295:p2
     a :Age ;
     :duration "P74Y6M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1852-08-26"^^xsd:date ;
-  :dateOfDeath "1927-03-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-08-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-03-13"^^xsd:date
+  ] ;
   :nam "CORNELIS WARMELS" ;
   :ref t00295:v1 .
 

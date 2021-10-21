@@ -28,8 +28,14 @@ t00349:p1
     a :Age ;
     :duration "P73Y3M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1891-10-20"^^xsd:date ;
-  :dateOfDeath "1965-02-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-10-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-02-09"^^xsd:date
+  ] ;
   :nam "JAN NOORD" ;
   :placeOfBirth t00349:c1 ;
   :placeOfDeath t00349:c1 .
@@ -40,8 +46,14 @@ t00349:p2
     a :Age ;
     :duration "P77Y9M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-03-01"^^xsd:date ;
-  :dateOfDeath "1978-12-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-03-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-12-08"^^xsd:date
+  ] ;
   :nam "JEIGIEN ARENDS" ;
   :placeOfBirth t00349:c1 ;
   :placeOfDeath t00349:c1 .

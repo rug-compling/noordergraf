@@ -33,8 +33,14 @@ t00536:p1
     a :Age ;
     :duration "P57Y13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-06-12"^^xsd:date ;
-  :dateOfDeath "1955-06-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-06-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-06-25"^^xsd:date
+  ] ;
   :nam "H.F. MULDER" ;
   :placeOfBirth [
     a :City.n.01 ;

@@ -23,8 +23,14 @@ t00801:p1
     a :Age ;
     :duration "P58Y3M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1949-03-30"^^xsd:date ;
-  :dateOfDeath "2007-07-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1949-03-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2007-07-27"^^xsd:date
+  ] ;
   :nam "JOSEPH MARIA MARTINUS HERMANS" ;
   :placeOfBirth [
     a :City.n.01 ;

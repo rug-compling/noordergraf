@@ -31,8 +31,14 @@ t00769:p1
     a :Age ;
     :duration "P39Y9M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1846-08-04"^^xsd:date ;
-  :dateOfDeath "1886-05-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-08-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1886-05-07"^^xsd:date
+  ] ;
   :nam "HINDRIK JOLING" ;
   :placeOfBirth t00769:c1 ;
   :placeOfDeath t00769:c1 ;

@@ -34,8 +34,14 @@ t00848:p1
     a :Age ;
     :duration "P82Y11M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1854-10-09"^^xsd:date ;
-  :dateOfDeath "1937-10-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-10-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-10-04"^^xsd:date
+  ] ;
   :nam "BREGJE BAKKER" ;
   :rol [
     a :Parent.n.01 ;
@@ -51,8 +57,14 @@ t00848:p2
     a :Age ;
     :duration "P89Y8M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1854-09-07"^^xsd:date ;
-  :dateOfDeath "1944-05-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-09-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-05-19"^^xsd:date
+  ] ;
   :nam "GERRIT KRIJTENBURG" ;
   :rol [
     a :Grandparent.n.01 ;

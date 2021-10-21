@@ -32,8 +32,14 @@ t00741:p1
     a :Age ;
     :duration "P89Y6M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1861-01-29"^^xsd:date ;
-  :dateOfDeath "1950-08-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-01-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-08-13"^^xsd:date
+  ] ;
   :nam "HEIKO BRONS" ;
   :placeOfBirth t00741:c1 ;
   :placeOfDeath t00741:c1 ;

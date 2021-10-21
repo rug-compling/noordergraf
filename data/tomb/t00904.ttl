@@ -24,8 +24,14 @@ t00904:p1
     a :Age ;
     :duration "P91Y9M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-12-02"^^xsd:date ;
-  :dateOfDeath "1975-09-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-09-05"^^xsd:date
+  ] ;
   :nam "JAN MEEK" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

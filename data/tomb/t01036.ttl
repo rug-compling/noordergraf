@@ -31,8 +31,14 @@ t01036:p1
     a :Age ;
     :duration "P78Y9M"^^xsd:duration
   ] ;
-  :dateOfBirth "1847-06-10"^^xsd:date ;
-  :dateOfDeath "1926-03-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-06-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-03-10"^^xsd:date
+  ] ;
   :nam "JANTJE VOS" ;
   :placeOfBirth t01036:c1 ;
   :placeOfDeath t01036:c1 .

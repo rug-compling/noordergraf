@@ -27,8 +27,14 @@ t00459:p1
     a :Age ;
     :duration "P78Y11M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-10-02"^^xsd:date ;
-  :dateOfDeath "1943-09-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-10-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-09-26"^^xsd:date
+  ] ;
   :nam "JACOBUS WALON" ;
   :rol [
     a :Father.n.01
@@ -40,7 +46,13 @@ t00459:p2
     a :Age ;
     :duration "P80Y11M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-06-21"^^xsd:date ;
-  :dateOfDeath "1967-06-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-06-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1967-06-02"^^xsd:date
+  ] ;
   :nam "IDA WALON" .
 

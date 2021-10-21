@@ -23,8 +23,14 @@ t00318:p1
     a :Age ;
     :duration "P76Y10M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1922-10-31"^^xsd:date ;
-  :dateOfDeath "1999-09-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1922-10-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1999-09-19"^^xsd:date
+  ] ;
   :nam "AKKE DOZE" .
 
 t00318:p2
@@ -33,7 +39,13 @@ t00318:p2
     a :Age ;
     :duration "P82Y11M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1928-10-20"^^xsd:date ;
-  :dateOfDeath "2011-10-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1928-10-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2011-10-11"^^xsd:date
+  ] ;
   :nam "HENDRIK DOZE" .
 

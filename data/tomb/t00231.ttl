@@ -33,7 +33,13 @@ t00231:p1
     a :Age ;
     :duration "P48Y6M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1837-02-08"^^xsd:date ;
-  :dateOfDeath "1885-09-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-02-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1885-09-02"^^xsd:date
+  ] ;
   :nam "WIBBECHIEN KOOPS BRUININGA" .
 

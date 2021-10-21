@@ -27,8 +27,14 @@ t00888:p1
     a :Age ;
     :duration "P37Y5M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-05-04"^^xsd:date ;
-  :dateOfDeath "1901-10-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1901-10-17"^^xsd:date
+  ] ;
   :nam "ROBERTA MARGARETHA WOLTJER" ;
   :rol t00888:r2, [
     a :Mother.n.01
@@ -52,8 +58,14 @@ t00888:p4
     a :Age ;
     :duration "P67Y11M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-07-13"^^xsd:date ;
-  :dateOfDeath "1955-06-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-07-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-06-24"^^xsd:date
+  ] ;
   :nam "ROBERT MEIJER" ;
   :rol [
     a :Brother.n.01

@@ -36,8 +36,14 @@ t00478:p1
     a :Age ;
     :duration "P48Y10M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-06-28"^^xsd:date ;
-  :dateOfDeath "1927-05-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-06-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-05-25"^^xsd:date
+  ] ;
   :nam "REIN F. DRAAYER" ;
   :rol [
     a :Husband.n.01
@@ -52,8 +58,14 @@ t00478:p2
     a :Age ;
     :duration "P32Y1M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1919-02-08"^^xsd:date ;
-  :dateOfDeath "1951-04-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-02-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-04-03"^^xsd:date
+  ] ;
   :nam "FOKKE" ;
   :rol [
     a :Son.n.01 ;

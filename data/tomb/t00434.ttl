@@ -23,8 +23,14 @@ t00434:p1
     a :Age ;
     :duration "P77Y2M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1918-12-20"^^xsd:date ;
-  :dateOfDeath "1996-02-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1918-12-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1996-02-28"^^xsd:date
+  ] ;
   :nam "WILHELMINA ANTHONIA MARIA ADRIANA VAN DEN WORM" ;
   :rol [
     a :Spouse.n.01 ;
@@ -37,7 +43,13 @@ t00434:p2
     a :Age ;
     :duration "P92Y11M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1910-09-03"^^xsd:date ;
-  :dateOfDeath "2003-08-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2003-08-17"^^xsd:date
+  ] ;
   :nam "GEORG HENNEMAN" .
 

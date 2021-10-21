@@ -29,8 +29,14 @@ t00525:p1
     a :Age ;
     :duration "P63Y9M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1937-06-29"^^xsd:date ;
-  :dateOfDeath "2001-04-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-06-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-04-11"^^xsd:date
+  ] ;
   :nam "EPPO RUITER" ;
   :rol [
     a :Husband.n.01 ;
@@ -49,8 +55,14 @@ t00525:p2
     a :Age ;
     :duration "P75Y11M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1935-05-01"^^xsd:date ;
-  :dateOfDeath "2011-04-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1935-05-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2011-04-12"^^xsd:date
+  ] ;
   :nam "GEERTJE STAAL" ;
   :rol [
     a :Grandmother.n.01 ;

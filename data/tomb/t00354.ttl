@@ -26,8 +26,14 @@ t00354:p1
     a :Age ;
     :duration "P30Y4M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-09-03"^^xsd:date ;
-  :dateOfDeath "1906-01-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-01-11"^^xsd:date
+  ] ;
   :nam "KLAAS BOETTING" ;
   :placeOfBirth [
     a :Village.n.02 ;

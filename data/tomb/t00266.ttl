@@ -24,8 +24,14 @@ t00266:p1
     a :Age ;
     :duration "P57Y8M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1907-04-10"^^xsd:date ;
-  :dateOfDeath "1965-01-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-04-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-01-01"^^xsd:date
+  ] ;
   :nam "JANNES BLAAUW" ;
   :rol [
     a :Husband.n.01 ;

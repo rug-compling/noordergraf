@@ -33,8 +33,14 @@ t00620:p1
     a :Age ;
     :duration "P90Y1M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1925-02-05"^^xsd:date ;
-  :dateOfDeath "2015-04-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-02-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2015-04-02"^^xsd:date
+  ] ;
   :nam "W.R. MULDER" ;
   :placeOfBirth t00620:c1 ;
   :placeOfDeath t00620:c2 .
@@ -45,8 +51,14 @@ t00620:p2
     a :Age ;
     :duration "P44Y11M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1930-06-06"^^xsd:date ;
-  :dateOfDeath "1975-05-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1930-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-05-11"^^xsd:date
+  ] ;
   :nam "R. HAVINGA" ;
   :placeOfBirth [
     a :City.n.01 ;
@@ -61,8 +73,14 @@ t00620:p3
     a :Age ;
     :duration "P82Y2M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1926-03-20"^^xsd:date ;
-  :dateOfDeath "2008-05-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1926-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-05-25"^^xsd:date
+  ] ;
   :nam "P.J. STRIJBOSCH" ;
   :placeOfBirth [
     a :Village.n.02 ;

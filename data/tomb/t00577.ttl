@@ -23,8 +23,14 @@ t00577:p1
     a :Age ;
     :duration "P25Y10M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1818-04-18"^^xsd:date ;
-  :dateOfDeath "1844-03-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1818-04-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1844-03-09"^^xsd:date
+  ] ;
   :nam "ELTJE G. ARENDS" ;
   :placeOfBirth [
     a :Village.n.02 ;

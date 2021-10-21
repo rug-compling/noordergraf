@@ -43,8 +43,14 @@ t01048:p1
     a :Age ;
     :duration "P79Y10M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1855-10-31"^^xsd:date ;
-  :dateOfDeath "1935-09-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1855-10-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-09-20"^^xsd:date
+  ] ;
   :nam "BONTJE VAN DER VLIET" ;
   :placeOfBirth t01048:c1 ;
   :placeOfDeath t01048:c1 ;

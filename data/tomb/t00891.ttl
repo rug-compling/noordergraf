@@ -23,8 +23,14 @@ t00891:p1
     a :Age ;
     :duration "P71Y11M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-02-04"^^xsd:date ;
-  :dateOfDeath "1940-01-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-02-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-01-29"^^xsd:date
+  ] ;
   :nam "H.J. SISSINGH" ;
   :occupation [
     a :Alderman.n.01 ;
@@ -46,7 +52,13 @@ t00891:p2
     a :Age ;
     :duration "P68Y11M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-03-04"^^xsd:date ;
-  :dateOfDeath "1945-02-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-03-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-02-26"^^xsd:date
+  ] ;
   :nam "F. SISSINGH-BENNEMA" .
 

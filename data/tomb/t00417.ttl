@@ -27,8 +27,14 @@ t00417:p1
     a :Age ;
     :duration "P81Y7M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-07-23"^^xsd:date ;
-  :dateOfDeath "1953-03-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-07-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-03-13"^^xsd:date
+  ] ;
   :nam "WILLEMTJE ARENDS" ;
   :placeOfBirth [
     a :Town.n.01 ;

@@ -28,7 +28,13 @@ t01032:p1
     a :Age ;
     :duration "P46Y5M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1818-08-16"^^xsd:date ;
-  :dateOfDeath "1865-01-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1818-08-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1865-01-26"^^xsd:date
+  ] ;
   :nam "KLAAS J. WIERENGA" .
 

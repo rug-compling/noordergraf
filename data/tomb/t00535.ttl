@@ -27,8 +27,14 @@ t00535:p1
     a :Age ;
     :duration "P69Y7M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-10-03"^^xsd:date ;
-  :dateOfDeath "1915-05-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-10-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-05-14"^^xsd:date
+  ] ;
   :nam "GEERT OLTHOF" ;
   :placeOfBirth [
     a :Village.n.02 ;

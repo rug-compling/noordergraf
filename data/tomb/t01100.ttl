@@ -23,8 +23,14 @@ t01100:p1
     a :Age ;
     :duration "P75Y3M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-01-31"^^xsd:date ;
-  :dateOfDeath "1945-05-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-01-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-05-10"^^xsd:date
+  ] ;
   :nam "DIRK VAN KRIEKEN" ;
   :placeOfBirth [
     a :Village.n.02 ;

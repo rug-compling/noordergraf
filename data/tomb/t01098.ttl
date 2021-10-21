@@ -31,8 +31,14 @@ t01098:p1
     a :Age ;
     :duration "P42Y11M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1830-01-20"^^xsd:date ;
-  :dateOfDeath "1873-01-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1830-01-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1873-01-13"^^xsd:date
+  ] ;
   :nam "J.G.K. IN'T HOLT" ;
   :placeOfBirth [
     a :Village.n.02 ;

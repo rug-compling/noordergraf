@@ -27,8 +27,14 @@ t00503:p1
     a :Age ;
     :duration "P41Y7M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-12-28"^^xsd:date ;
-  :dateOfDeath "1918-07-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-12-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-07-31"^^xsd:date
+  ] ;
   :nam "JENTJE HOOGEVEEN" ;
   :placeOfBirth [
     a :City.n.01 ;

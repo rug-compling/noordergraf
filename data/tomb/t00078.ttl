@@ -28,8 +28,14 @@ t00078:p1
     a :Age ;
     :duration "P79Y9M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1848-03-09"^^xsd:date ;
-  :dateOfDeath "1928-01-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1848-03-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-01-01"^^xsd:date
+  ] ;
   :nam "ANNA MARIA E. ROBBE" ;
   :placeOfBirth [
     a :City.n.01 ;
@@ -53,8 +59,14 @@ t00078:p2
     a :Age ;
     :duration "P79Y11M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1856-01-21"^^xsd:date ;
-  :dateOfDeath "1936-01-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-01-10"^^xsd:date
+  ] ;
   :nam "FREDERIK J. VAN VOORN" ;
   :placeOfBirth [
     a :Village.n.02 ;

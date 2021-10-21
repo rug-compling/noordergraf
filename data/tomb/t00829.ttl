@@ -27,8 +27,14 @@ t00829:p1
     a :Age ;
     :duration "P46Y7M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-04-19"^^xsd:date ;
-  :dateOfDeath "1904-12-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-04-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-12-07"^^xsd:date
+  ] ;
   :nam "CATHARINA GAZENDAM" ;
   :rol [
     a :Spouse.n.01 ;
@@ -41,8 +47,14 @@ t00829:p2
     a :Age ;
     :duration "P83Y10M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1852-04-10"^^xsd:date ;
-  :dateOfDeath "1936-02-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-04-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-02-11"^^xsd:date
+  ] ;
   :nam "JAN SNEIJER" .
 
 t00829:v1

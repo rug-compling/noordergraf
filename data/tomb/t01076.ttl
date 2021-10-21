@@ -30,8 +30,14 @@ t01076:p1
     a :Age ;
     :duration "P5Y6M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-05-01"^^xsd:date ;
-  :dateOfDeath "1876-11-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-05-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1876-11-20"^^xsd:date
+  ] ;
   :nam "ELIZABETH" ;
   :rol [
     a :Daughter.n.01 ;
@@ -52,7 +58,13 @@ t01076:p4
     a :Age ;
     :duration "P6M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1890-04-10"^^xsd:date ;
-  :dateOfDeath "1890-10-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-04-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1890-10-16"^^xsd:date
+  ] ;
   :nam "ZWAANTJE" .
 

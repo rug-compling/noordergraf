@@ -23,7 +23,13 @@ t00045:p1
     a :Age ;
     :duration "P7M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1923-12-12"^^xsd:date ;
-  :dateOfDeath "1924-07-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-12-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-07-20"^^xsd:date
+  ] ;
   :nam "ROELOF LUURD JURRIAAN COOLMAN" .
 

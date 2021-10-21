@@ -27,8 +27,14 @@ t00574:p1
     a :Age ;
     :duration "P75Y10M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-06-15"^^xsd:date ;
-  :dateOfDeath "1921-04-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-06-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1921-04-20"^^xsd:date
+  ] ;
   :nam "TALJE TAKENS" ;
   :placeOfBirth [
     a :Village.n.02 ;

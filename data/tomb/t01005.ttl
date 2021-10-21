@@ -34,8 +34,14 @@ t01005:p1
     a :Age ;
     :duration "P28Y4M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-12-30"^^xsd:date ;
-  :dateOfDeath "1908-05-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-12-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-05-23"^^xsd:date
+  ] ;
   :nam "GEESSIEN" ;
   :rol [
     a :Daughter.n.01 ;

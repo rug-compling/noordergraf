@@ -38,8 +38,14 @@ t01031:p1
     a :Age ;
     :duration "P83Y1M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-07-31"^^xsd:date ;
-  :dateOfDeath "1952-09-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-07-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-09-03"^^xsd:date
+  ] ;
   :nam "ALBERT BOSSCHER" ;
   :placeOfBirth t01031:c1 ;
   :placeOfDeath [
@@ -57,8 +63,14 @@ t01031:p2
     a :Age ;
     :duration "P86Y16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-12-28"^^xsd:date ;
-  :dateOfDeath "1955-01-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-12-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-01-13"^^xsd:date
+  ] ;
   :nam "ANTJE KREMER" ;
   :placeOfBirth t01031:c1 ;
   :placeOfDeath t01031:c1 ;

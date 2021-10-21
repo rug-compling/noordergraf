@@ -35,8 +35,14 @@ t01027:p1
     a :Age ;
     :duration "P36Y9M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1841-07-29"^^xsd:date ;
-  :dateOfDeath "1878-04-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-07-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1878-04-30"^^xsd:date
+  ] ;
   :nam "MARTJE PRINCIPAAL" ;
   :rol [
     a :Spouse.n.01 ;

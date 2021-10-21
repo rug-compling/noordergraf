@@ -23,8 +23,14 @@ t00264:p1
     a :Age ;
     :duration "P32Y5M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1936-02-23"^^xsd:date ;
-  :dateOfDeath "1968-08-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1936-02-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-08-06"^^xsd:date
+  ] ;
   :nam "HANS E. HÖFERS" ;
   :rol [
     a :Spouse.n.01 ;

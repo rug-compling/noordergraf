@@ -26,8 +26,14 @@ t00276:p1
     a :Age ;
     :duration "P46Y9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1903-03-02"^^xsd:date ;
-  :dateOfDeath "1949-03-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903-03-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-03-11"^^xsd:date
+  ] ;
   :nam "ROELOFJE DE JONG" ;
   :rol [
     a :Wife.n.01 ;

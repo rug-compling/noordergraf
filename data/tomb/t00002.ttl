@@ -31,8 +31,14 @@ t00002:p1
     a :Age ;
     :duration "P65Y8M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-12-08"^^xsd:date ;
-  :dateOfDeath "1942-08-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-08-27"^^xsd:date
+  ] ;
   :nam "MARTJE BALKEMA" ;
   :rol [
     a :Widow.n.01 ;

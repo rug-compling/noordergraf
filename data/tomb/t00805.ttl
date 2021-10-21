@@ -32,8 +32,14 @@ t00805:p1
     a :Age ;
     :duration "P76Y4M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1835-05-16"^^xsd:date ;
-  :dateOfDeath "1911-09-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-05-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-09-21"^^xsd:date
+  ] ;
   :nam "ETJE DERKS BOER" ;
   :placeOfBirth t00805:c1 ;
   :placeOfDeath t00805:c1 ;

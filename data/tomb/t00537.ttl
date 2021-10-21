@@ -34,8 +34,14 @@ t00537:p1
     a :Age ;
     :duration "P80Y10M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1832-12-01"^^xsd:date ;
-  :dateOfDeath "1913-10-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1832-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-10-23"^^xsd:date
+  ] ;
   :nam "IDA G. STRATING" ;
   :rol [
     a :Widow.n.01 ;

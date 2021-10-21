@@ -29,8 +29,14 @@ t00700:p1
     a :Age ;
     :duration "P74Y1M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-09-03"^^xsd:date ;
-  :dateOfDeath "1933-10-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-10-20"^^xsd:date
+  ] ;
   :nam "HENDRIK ALBERTS" ;
   :placeOfBirth t00700:c1 ;
   :placeOfDeath t00700:c1 ;
@@ -50,8 +56,14 @@ t00700:p2
     a :Age ;
     :duration "P85Y1M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-09-15"^^xsd:date ;
-  :dateOfDeath "1944-10-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-10-18"^^xsd:date
+  ] ;
   :nam "GEERTIEN BOELEN" ;
   :placeOfBirth t00700:c1 ;
   :placeOfDeath t00700:c1 ;

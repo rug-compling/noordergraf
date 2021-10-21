@@ -36,8 +36,14 @@ t00432:p1
     a :Age ;
     :duration "P61Y1M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1850-06-26"^^xsd:date ;
-  :dateOfDeath "1911-08-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-06-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-08-16"^^xsd:date
+  ] ;
   :nam "JAN LIVIUS VISSER" ;
   :placeOfBirth t00432:c1 ;
   :placeOfDeath t00432:c1 ;
@@ -52,8 +58,14 @@ t00432:p2
     a :Age ;
     :duration "P81Y6M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-07-13"^^xsd:date ;
-  :dateOfDeath "1953-01-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-07-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-01-24"^^xsd:date
+  ] ;
   :nam "TRIJNTJE WIERSMA" ;
   :placeOfBirth t00432:c1 ;
   :placeOfDeath t00432:c1 ;

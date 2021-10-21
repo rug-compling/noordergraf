@@ -28,8 +28,14 @@ t00894:p1
     a :Age ;
     :duration "P76Y9M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1792-12-01"^^xsd:date ;
-  :dateOfDeath "1869-09-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1792-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1869-09-21"^^xsd:date
+  ] ;
   :nam "JAKOB MELES MELESSEN" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -54,8 +60,14 @@ t00894:p2
     a :Age ;
     :duration "P52Y9M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1795-01-23"^^xsd:date ;
-  :dateOfDeath "1847-10-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1795-01-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1847-10-24"^^xsd:date
+  ] ;
   :nam "MARTHA LEURINGH" ;
   :placeOfBirth t00894:c5 ;
   :placeOfDeath t00894:c5 ;

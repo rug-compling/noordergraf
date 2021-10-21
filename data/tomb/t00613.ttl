@@ -27,8 +27,14 @@ t00613:p1
     a :Age ;
     :duration "P14Y2M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-12-18"^^xsd:date ;
-  :dateOfDeath "1898-02-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-12-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1898-02-22"^^xsd:date
+  ] ;
   :nam "HELENA" ;
   :rol [
     a :Daughter.n.01 ;

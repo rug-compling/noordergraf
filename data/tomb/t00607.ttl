@@ -33,8 +33,14 @@ t00607:p1
     a :Age ;
     :duration "P86Y3M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1818-04-10"^^xsd:date ;
-  :dateOfDeath "1904-08-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1818-04-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-08-08"^^xsd:date
+  ] ;
   :nam "EBERHAGEN-KALBITZER" ;
   :placeOfBirth [
     a :Town.n.01 ;

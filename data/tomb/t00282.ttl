@@ -27,8 +27,14 @@ t00282:p1
     a :Age ;
     :duration "P36Y10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-09-12"^^xsd:date ;
-  :dateOfDeath "1933-09-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-09-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-09-22"^^xsd:date
+  ] ;
   :nam "JAAPTJE VAN DAM" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -24,7 +24,13 @@ t00703:p1
     a :Age ;
     :duration "P4Y5M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1927-01-27"^^xsd:date ;
-  :dateOfDeath "1931-07-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1927-01-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-07-09"^^xsd:date
+  ] ;
   :nam "AAFKE LUURS" .
 

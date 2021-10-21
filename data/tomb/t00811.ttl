@@ -23,8 +23,14 @@ t00811:p1
     a :Age ;
     :duration "P23Y6M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1882-10-16"^^xsd:date ;
-  :dateOfDeath "1906-05-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-10-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-05-14"^^xsd:date
+  ] ;
   :nam "ABRAHAM J. GOLD" ;
   :placeOfBirth [
     a :City.n.01 ;

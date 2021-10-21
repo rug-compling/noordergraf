@@ -27,8 +27,14 @@ t00838:p1
     a :Age ;
     :duration "P77Y10M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-02-28"^^xsd:date ;
-  :dateOfDeath "1934-12-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-02-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-12-29"^^xsd:date
+  ] ;
   :nam "HENDRIK SCHUTRUPS" ;
   :placeOfBirth [
     a :Village.n.02 ;

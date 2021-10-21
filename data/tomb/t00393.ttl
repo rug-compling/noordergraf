@@ -33,8 +33,14 @@ t00393:p1
     a :Age ;
     :duration "P62Y3M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1838-03-19"^^xsd:date ;
-  :dateOfDeath "1900-07-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1838-03-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1900-07-12"^^xsd:date
+  ] ;
   :nam "CONRADUS ALBERTUS KUIPERS DIJKEN" ;
   :occupation t00393:o2, [
     a :Doctor.n.01 ;

@@ -23,8 +23,14 @@ t00332:p1
     a :Age ;
     :duration "P66Y7M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1823-03-10"^^xsd:date ;
-  :dateOfDeath "1889-11-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1823-03-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1889-11-03"^^xsd:date
+  ] ;
   :nam "AREND J. SEINEN" ;
   :rol t00332:r2, [
     a :Spouse.n.01 ;
@@ -37,8 +43,14 @@ t00332:p2
     a :Age ;
     :duration "P74Y10M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1831-09-30"^^xsd:date ;
-  :dateOfDeath "1906-08-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1831-09-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-08-08"^^xsd:date
+  ] ;
   :nam "DINA REGINA DE HAAN" .
 
 t00332:r2

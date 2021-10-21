@@ -29,8 +29,14 @@ t00467:p1
     a :Age ;
     :duration "P18Y11M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1937-04-13"^^xsd:date ;
-  :dateOfDeath "1956-04-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-04-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-04-04"^^xsd:date
+  ] ;
   :nam "THEODORUS PETRUS ALBADA JELGERSMA" ;
   :placeOfBirth t00467:c1 ;
   :placeOfDeath t00467:c1 ;

@@ -27,8 +27,14 @@ t00505:p1
     a :Age ;
     :duration "P37Y7M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-10-14"^^xsd:date ;
-  :dateOfDeath "1917-05-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-10-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-05-20"^^xsd:date
+  ] ;
   :nam "HELENA R.M. DIJKHOFF" ;
   :rol [
     a :Spouse.n.01 ;
@@ -42,8 +48,14 @@ t00505:p2
     a :Age ;
     :duration "P72Y9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-10-29"^^xsd:date ;
-  :dateOfDeath "1948-11-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-10-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-11-07"^^xsd:date
+  ] ;
   :nam "THEODORUS M. FISCHER" ;
   :rol t00505:r2 .
 
@@ -53,8 +65,14 @@ t00505:p3
     a :Age ;
     :duration "P72Y4M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1885-05-04"^^xsd:date ;
-  :dateOfDeath "1957-09-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-09-22"^^xsd:date
+  ] ;
   :nam "CATHARINA J.M. HOOGMAN" .
 
 t00505:r2

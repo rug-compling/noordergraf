@@ -31,8 +31,14 @@ t00347:p1
     a :Age ;
     :duration "P29Y10M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1935-10-29"^^xsd:date ;
-  :dateOfDeath "1965-09-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1935-10-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-09-07"^^xsd:date
+  ] ;
   :nam "ALBERTJE PLOEG" ;
   :rol [
     a :Spouse.n.01 ;

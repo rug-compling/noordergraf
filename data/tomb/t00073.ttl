@@ -22,7 +22,10 @@ tomb:t00073
 
 t00073:p1
   a :Male ;
-  :dateOfDeath "1955-09-13"^^xsd:date ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-09-13"^^xsd:date
+  ] ;
   :nam "JOHN SIPKEMA" ;
   :occupation [
     a :Operator.n.03 ;
@@ -34,6 +37,9 @@ t00073:p1
 
 t00073:p2
   a :Female ;
-  :dateOfDeath "1955-09-13"^^xsd:date ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-09-13"^^xsd:date
+  ] ;
   :nam "ABELDINE FOGERTIJ" .
 

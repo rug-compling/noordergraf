@@ -34,8 +34,14 @@ t01029:p1
     a :Age ;
     :duration "P71Y13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1797-02-11"^^xsd:date ;
-  :dateOfDeath "1868-02-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1797-02-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1868-02-24"^^xsd:date
+  ] ;
   :nam "HINDRIKTJE TEWES VAN HUIZEN" ;
   :placeOfBirth [
     a :Village.n.02 ;

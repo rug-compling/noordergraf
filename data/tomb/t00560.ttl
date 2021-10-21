@@ -26,8 +26,14 @@ t00560:p1
     a :Age ;
     :duration "P72Y2M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-01-21"^^xsd:date ;
-  :dateOfDeath "1914-03-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1914-03-29"^^xsd:date
+  ] ;
   :nam "J. VAN PETEGEM" ;
   :occupation [
     a :Preacher.n.01 ;

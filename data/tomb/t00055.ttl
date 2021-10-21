@@ -24,8 +24,14 @@ t00055:p1
     a :Age ;
     :duration "P17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1958-12-08"^^xsd:date ;
-  :dateOfDeath "1958-12-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1958-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-12-25"^^xsd:date
+  ] ;
   :nam "GERARDUS" .
 
 t00055:v1

@@ -28,8 +28,14 @@ t00915:p1
     a :Age ;
     :duration "P89Y8M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1851-01-03"^^xsd:date ;
-  :dateOfDeath "1940-10-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1851-01-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-10-02"^^xsd:date
+  ] ;
   :nam "WILLEM LIEFFERING" ;
   :placeOfBirth [
     a :Village.n.02 ;

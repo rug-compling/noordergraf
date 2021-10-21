@@ -27,8 +27,14 @@ t00730:p1
     a :Age ;
     :duration "P29Y5M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-05-10"^^xsd:date ;
-  :dateOfDeath "1929-11-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-05-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-11-02"^^xsd:date
+  ] ;
   :nam "JANTINA" ;
   :placeOfDeath [
     a :Town.n.01 ;

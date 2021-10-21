@@ -31,8 +31,14 @@ t00911:p1
     a :Age ;
     :duration "P69Y4M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1848-01-10"^^xsd:date ;
-  :dateOfDeath "1917-05-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1848-01-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-05-21"^^xsd:date
+  ] ;
   :nam "MARTHA MELESSEN" ;
   :placeOfBirth t00911:c1 ;
   :placeOfDeath t00911:c1 ;

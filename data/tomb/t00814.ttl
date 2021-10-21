@@ -35,8 +35,14 @@ t00814:p1
     a :Age ;
     :duration "P55Y13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-12-06"^^xsd:date ;
-  :dateOfDeath "1913-12-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-12-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-12-19"^^xsd:date
+  ] ;
   :nam "DERK FREDIK RASKER" ;
   :occupation [
     a :Skipper.n.02 ;

@@ -23,8 +23,14 @@ t00122:p1
     a :Age ;
     :duration "P74Y9M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-07-25"^^xsd:date ;
-  :dateOfDeath "1962-05-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-07-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-05-04"^^xsd:date
+  ] ;
   :nam "JAN HOMMES" ;
   :rol [
     a :Husband.n.01 ;
@@ -37,7 +43,13 @@ t00122:p2
     a :Age ;
     :duration "P85Y6M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-02-19"^^xsd:date ;
-  :dateOfDeath "1971-09-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-02-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-09-08"^^xsd:date
+  ] ;
   :nam "ANNA BUIVENGA" .
 

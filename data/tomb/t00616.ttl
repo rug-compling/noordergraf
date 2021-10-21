@@ -31,8 +31,14 @@ t00616:p1
     a :Age ;
     :duration "P48Y1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1825-06-21"^^xsd:date ;
-  :dateOfDeath "1873-06-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1825-06-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1873-06-22"^^xsd:date
+  ] ;
   :nam "A.H. SUUROVERSTE" ;
   :placeOfBirth t00616:c1 ;
   :placeOfDeath t00616:c1 ;
@@ -48,8 +54,14 @@ t00616:p2
     a :Age ;
     :duration "P75Y2M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1826-04-23"^^xsd:date ;
-  :dateOfDeath "1901-07-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1826-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1901-07-12"^^xsd:date
+  ] ;
   :nam "J. NIJMANDS" ;
   :placeOfBirth t00616:c1 ;
   :placeOfDeath t00616:c1 ;
@@ -64,8 +76,14 @@ t00616:p3
     a :Age ;
     :duration "P67Y4M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1839-01-22"^^xsd:date ;
-  :dateOfDeath "1906-05-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-01-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-05-29"^^xsd:date
+  ] ;
   :nam "T. LANTING" ;
   :placeOfBirth [
     a :City.n.01 ;

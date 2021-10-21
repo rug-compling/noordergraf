@@ -23,8 +23,14 @@ t00638:p1
     a :Age ;
     :duration "P71Y4M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1751-01-24"^^xsd:date ;
-  :dateOfDeath "1822-05-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1751-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1822-05-26"^^xsd:date
+  ] ;
   :nam "JAN REINDERS" .
 
 t00638:p2
@@ -33,8 +39,14 @@ t00638:p2
     a :Age ;
     :duration "P88Y1M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1758-09-11"^^xsd:date ;
-  :dateOfDeath "1846-10-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1758-09-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1846-10-13"^^xsd:date
+  ] ;
   :nam "ANIE UKES" ;
   :rol [
     a :Spouse.n.01 ;

@@ -28,8 +28,14 @@ t00028:p1
     a :Age ;
     :duration "P53Y5M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-02-06"^^xsd:date ;
-  :dateOfDeath "1936-07-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-02-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-07-29"^^xsd:date
+  ] ;
   :nam "TRIENTJE BIERLING" ;
   :placeOfBirth t00028:c1 ;
   :placeOfDeath [
@@ -53,8 +59,14 @@ t00028:p2
     a :Age ;
     :duration "P75Y7M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-06-19"^^xsd:date ;
-  :dateOfDeath "1952-01-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-06-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-01-28"^^xsd:date
+  ] ;
   :nam "MARTINUS ALBERTUS SICCAMA" ;
   :placeOfBirth [
     a :City.n.01 ;

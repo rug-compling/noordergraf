@@ -50,8 +50,14 @@ t00978:p1
     a :Age ;
     :duration "P89Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1822"^^xsd:gYear ;
-  :dateOfDeath "1911"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1822"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911"^^xsd:gYear
+  ] ;
   :nam "LUCAS MULDER" ;
   :placeOfBirth t00978:c1 ;
   :placeOfDeath t00978:c1 .
@@ -62,8 +68,14 @@ t00978:p2
     a :Age ;
     :duration "P75Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1837"^^xsd:gYear ;
-  :dateOfDeath "1912"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912"^^xsd:gYear
+  ] ;
   :nam "JANTIEN VAN DALEN" ;
   :placeOfBirth [
     a :Village.n.02 ;

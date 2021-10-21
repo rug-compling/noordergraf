@@ -31,8 +31,14 @@ t00611:p1
     a :Age ;
     :duration "P50Y1M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-05-04"^^xsd:date ;
-  :dateOfDeath "1892-06-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-06-26"^^xsd:date
+  ] ;
   :nam "ANDRIES FABER" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -56,8 +62,14 @@ t00611:p2
     a :Age ;
     :duration "P80Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-10-18"^^xsd:date ;
-  :dateOfDeath "1925-10-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-10-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-10-18"^^xsd:date
+  ] ;
   :nam "KUNJE REDEKER" ;
   :placeOfBirth [
     a :City.n.01 ;

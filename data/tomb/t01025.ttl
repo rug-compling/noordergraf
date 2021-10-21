@@ -39,8 +39,14 @@ t01025:p1
     a :Age ;
     :duration "P20Y6M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-09-30"^^xsd:date ;
-  :dateOfDeath "1895-04-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-09-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1895-04-03"^^xsd:date
+  ] ;
   :nam "JOSINA HARMINA SMIT" ;
   :placeOfBirth [
     a :Village.n.02 ;

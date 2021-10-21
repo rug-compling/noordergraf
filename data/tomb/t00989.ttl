@@ -23,8 +23,14 @@ t00989:p1
     a :Age ;
     :duration "P64Y6M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1833-05-15"^^xsd:date ;
-  :dateOfDeath "1897-11-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-05-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1897-11-28"^^xsd:date
+  ] ;
   :nam "GEEZIEN J. NIEBOER" ;
   :placeOfBirth [
     a :Town.n.01 ;

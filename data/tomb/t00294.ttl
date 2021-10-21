@@ -26,8 +26,14 @@ t00294:p1
     a :Age ;
     :duration "P74Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1852"^^xsd:gYear ;
-  :dateOfDeath "1926"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926"^^xsd:gYear
+  ] ;
   :nam "AALTJE VELDMAN" ;
   :rol [
     a :Mother.n.01

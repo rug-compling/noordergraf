@@ -31,8 +31,14 @@ t00373:p1
     a :Age ;
     :duration "P76Y3M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1856-12-28"^^xsd:date ;
-  :dateOfDeath "1933-04-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-12-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-04-02"^^xsd:date
+  ] ;
   :nam "MARIA HELENA CRAMER VON BAUMGARTEN" ;
   :rol [
     a :Spouse.n.01 ;

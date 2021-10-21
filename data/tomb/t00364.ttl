@@ -24,8 +24,14 @@ t00364:p1
     a :Age ;
     :duration "P74Y10M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1852-04-05"^^xsd:date ;
-  :dateOfDeath "1927-02-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-04-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-02-21"^^xsd:date
+  ] ;
   :nam "HENDRIK BLAAUW" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -24,8 +24,14 @@ t00145:p1
     a :Age ;
     :duration "P20Y11M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1920-01-08"^^xsd:date ;
-  :dateOfDeath "1940-12-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-01-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-12-11"^^xsd:date
+  ] ;
   :nam "TRUUS ORANJE" .
 
 t00145:p2
@@ -34,7 +40,13 @@ t00145:p2
     a :Age ;
     :duration "P91Y4M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1906-04-09"^^xsd:date ;
-  :dateOfDeath "1997-08-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1906-04-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-08-15"^^xsd:date
+  ] ;
   :nam "JOHANNA BARBERA ORANJE" .
 

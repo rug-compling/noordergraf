@@ -24,7 +24,13 @@ t01037:p1
     a :Age ;
     :duration "P66Y8M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-11-30"^^xsd:date ;
-  :dateOfDeath "1968-08-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-11-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-08-19"^^xsd:date
+  ] ;
   :nam "JAN JONKMAN" .
 

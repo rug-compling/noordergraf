@@ -28,8 +28,14 @@ t00610:p1
     a :Age ;
     :duration "P68Y5M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1850-08-22"^^xsd:date ;
-  :dateOfDeath "1919-02-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-08-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-02-16"^^xsd:date
+  ] ;
   :nam "MAGRITA SCHABELS" ;
   :rol [
     a :Spouse.n.01 ;

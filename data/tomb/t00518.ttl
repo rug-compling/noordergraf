@@ -24,8 +24,14 @@ t00518:p1
     a :Age ;
     :duration "P69Y3M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1911-06-24"^^xsd:date ;
-  :dateOfDeath "1980-09-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-06-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1980-09-26"^^xsd:date
+  ] ;
   :nam "EGBERT HELDER" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -48,8 +54,14 @@ t00518:p2
     a :Age ;
     :duration "P77Y3M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1904-03-13"^^xsd:date ;
-  :dateOfDeath "1981-07-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1904-03-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1981-07-10"^^xsd:date
+  ] ;
   :nam "RENSCHEDINA EISSES" ;
   :placeOfBirth [
     a :Town.n.01 ;

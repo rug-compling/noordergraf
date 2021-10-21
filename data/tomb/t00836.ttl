@@ -32,8 +32,14 @@ t00836:p1
     a :Age ;
     :duration "P54Y6M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1861-06-10"^^xsd:date ;
-  :dateOfDeath "1916-01-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-06-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-01-03"^^xsd:date
+  ] ;
   :nam "RIKA SIKKEN" ;
   :placeOfBirth t00836:c1 ;
   :placeOfDeath t00836:c1 ;

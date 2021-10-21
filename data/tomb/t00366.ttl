@@ -27,8 +27,14 @@ t00366:p1
     a :Age ;
     :duration "P56Y4M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1896-02-10"^^xsd:date ;
-  :dateOfDeath "1952-06-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-02-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-06-13"^^xsd:date
+  ] ;
   :nam "ANNA ARENDS" ;
   :placeOfBirth [
     a :Town.n.01 ;

@@ -23,8 +23,14 @@ t00675:p1
     a :Age ;
     :duration "P68Y2M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1910-11-03"^^xsd:date ;
-  :dateOfDeath "1979-01-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-11-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1979-01-30"^^xsd:date
+  ] ;
   :nam "THEO VAN BERGEN" ;
   :rol [
     a :Grandfather.n.01
@@ -38,8 +44,14 @@ t00675:p2
     a :Age ;
     :duration "P89Y8M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1908-07-02"^^xsd:date ;
-  :dateOfDeath "1998-03-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1998-03-16"^^xsd:date
+  ] ;
   :nam "BOUKJE DE REE" ;
   :rol [
     a :Grandmother.n.01

@@ -26,8 +26,14 @@ t00517:p1
     a :Age ;
     :duration "P53Y3M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1936-08-08"^^xsd:date ;
-  :dateOfDeath "1989-11-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1936-08-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1989-11-30"^^xsd:date
+  ] ;
   :nam "GERRIT OTTO DRENTH" ;
   :rol [
     a :Husband.n.01

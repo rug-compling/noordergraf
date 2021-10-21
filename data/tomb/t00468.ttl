@@ -26,8 +26,14 @@ t00468:p1
     a :Age ;
     :duration "P49Y6M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1894-03-31"^^xsd:date ;
-  :dateOfDeath "1943-10-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-03-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-10-27"^^xsd:date
+  ] ;
   :nam "MARTINUS J. PANNEKOEK" ;
   :rol [
     a :Spouse.n.01 ;
@@ -40,7 +46,13 @@ t00468:p2
     a :Age ;
     :duration "P64Y10M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1892-11-09"^^xsd:date ;
-  :dateOfDeath "1957-10-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1892-11-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-10-05"^^xsd:date
+  ] ;
   :nam "EKE FABER" .
 

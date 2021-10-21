@@ -43,8 +43,14 @@ t00540:p1
     a :Age ;
     :duration "P81Y11M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1807-11-29"^^xsd:date ;
-  :dateOfDeath "1889-11-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1807-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1889-11-26"^^xsd:date
+  ] ;
   :nam "THEODORA H. MULLER" ;
   :placeOfBirth [
     a :City.n.01 ;

@@ -28,8 +28,14 @@ t01094:p1
     a :Age ;
     :duration "P70Y5M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-08-04"^^xsd:date ;
-  :dateOfDeath "1969-01-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-08-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-01-12"^^xsd:date
+  ] ;
   :nam "ELIEZABETH BOS" ;
   :placeOfBirth t01094:c1 ;
   :placeOfDeath t01094:c1 ;
@@ -44,8 +50,14 @@ t01094:p2
     a :Age ;
     :duration "P62Y26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1907-12-26"^^xsd:date ;
-  :dateOfDeath "1970-01-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-12-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-01-21"^^xsd:date
+  ] ;
   :nam "GEERT DE WILDE" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

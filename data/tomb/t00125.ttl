@@ -27,8 +27,14 @@ t00125:p1
     a :Age ;
     :duration "P73Y5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-12-06"^^xsd:date ;
-  :dateOfDeath "1941-12-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-12-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-12-11"^^xsd:date
+  ] ;
   :nam "JANTJE LENTING" ;
   :rol [
     a :Mother.n.01
@@ -45,8 +51,14 @@ t00125:p2
     a :Age ;
     :duration "P101Y9M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-10-12"^^xsd:date ;
-  :dateOfDeath "1968-07-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-10-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-07-24"^^xsd:date
+  ] ;
   :nam "RIENKO TIMMER" ;
   :rol [
     a :Father.n.01

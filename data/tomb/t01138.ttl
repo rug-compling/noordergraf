@@ -29,8 +29,14 @@ t01138:p1
     a :Age ;
     :duration "P2Y15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-05-19"^^xsd:date ;
-  :dateOfDeath "1870-06-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-05-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-06-03"^^xsd:date
+  ] ;
   :nam "HEERTJE GAAIKEMA" ;
   :rol [
     a :Son.n.01 ;

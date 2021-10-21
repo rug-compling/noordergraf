@@ -31,8 +31,14 @@ t00353:p1
     a :Age ;
     :duration "P32Y5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-12-21"^^xsd:date ;
-  :dateOfDeath "1897-12-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-12-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1897-12-26"^^xsd:date
+  ] ;
   :nam "BOELINA LAMMERS" ;
   :placeOfBirth t00353:c1 ;
   :placeOfDeath t00353:c1 ;

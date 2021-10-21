@@ -27,8 +27,14 @@ t00527:p1
     a :Age ;
     :duration "P62Y10M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1905-04-16"^^xsd:date ;
-  :dateOfDeath "1968-03-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-04-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-03-15"^^xsd:date
+  ] ;
   :nam "ROELF SJOERD VAN DIJK" ;
   :rol [
     a :Husband.n.01 ;
@@ -47,8 +53,14 @@ t00527:p2
     a :Age ;
     :duration "P89Y10M"^^xsd:duration
   ] ;
-  :dateOfBirth "1905-01-05"^^xsd:date ;
-  :dateOfDeath "1994-11-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-01-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1994-11-05"^^xsd:date
+  ] ;
   :nam "ALLTJE HUIZING" ;
   :rol [
     a :Mother.n.01 ;

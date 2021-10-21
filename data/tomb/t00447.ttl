@@ -23,8 +23,14 @@ t00447:p1
     a :Age ;
     :duration "P69Y7M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1912-08-04"^^xsd:date ;
-  :dateOfDeath "1982-03-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-08-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1982-03-08"^^xsd:date
+  ] ;
   :nam "JUSTINA WUTSCHER" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -58,8 +64,14 @@ t00447:p2
     a :Age ;
     :duration "P91Y6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1912-01-25"^^xsd:date ;
-  :dateOfDeath "2003-01-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-01-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2003-01-31"^^xsd:date
+  ] ;
   :nam "DOUWE HEK" ;
   :placeOfBirth [
     a :Island.n.01 ;

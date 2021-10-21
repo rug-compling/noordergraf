@@ -36,8 +36,14 @@ t00221:p1
     a :Age ;
     :duration "P60Y4M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-09-11"^^xsd:date ;
-  :dateOfDeath "1903-02-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-09-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-02-08"^^xsd:date
+  ] ;
   :nam "HENDERKIEN ELLES KONING" ;
   :placeOfBirth t00221:c1 ;
   :placeOfDeath t00221:c1 .

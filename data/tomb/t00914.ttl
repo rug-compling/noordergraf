@@ -24,8 +24,14 @@ t00914:p1
     a :Age ;
     :duration "P27Y8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-08-21"^^xsd:date ;
-  :dateOfDeath "1924-08-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-08-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-08-29"^^xsd:date
+  ] ;
   :nam "FROUKJE VAN DER DONK" ;
   :placeOfBirth [
     a :Village.n.02 ;

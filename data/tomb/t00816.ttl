@@ -26,7 +26,13 @@ t00816:p1
     a :Age ;
     :duration "P4Y11M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-12-17"^^xsd:date ;
-  :dateOfDeath "1906-11-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-12-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-11-20"^^xsd:date
+  ] ;
   :nam "TILLY BUININCK" .
 

@@ -24,8 +24,14 @@ t00234:p1
     a :Age ;
     :duration "P37Y6M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1837-10-24"^^xsd:date ;
-  :dateOfDeath "1875-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-10-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1875-05-01"^^xsd:date
+  ] ;
   :nam "LUITJE ABELS VAN DIJKEN" ;
   :rol [
     a :Spouse.n.01 ;

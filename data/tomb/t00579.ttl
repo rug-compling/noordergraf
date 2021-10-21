@@ -30,8 +30,14 @@ t00579:p1
     a :Age ;
     :duration "P25Y10M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1892-07-09"^^xsd:date ;
-  :dateOfDeath "1918-06-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1892-07-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-06-02"^^xsd:date
+  ] ;
   :nam "JAN ROELF OOSTINGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

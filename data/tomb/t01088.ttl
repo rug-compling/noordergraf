@@ -26,7 +26,13 @@ t01088:p1
     a :Age ;
     :duration "P55Y9M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1932-11-11"^^xsd:date ;
-  :dateOfDeath "1988-09-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1932-11-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1988-09-02"^^xsd:date
+  ] ;
   :nam "JAN ALBERT BARKMAN" .
 

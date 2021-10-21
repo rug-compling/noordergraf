@@ -37,8 +37,14 @@ t00099:p1
     a :Age ;
     :duration "P69Y9M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1834-02-09"^^xsd:date ;
-  :dateOfDeath "1903-12-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1834-02-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-12-01"^^xsd:date
+  ] ;
   :nam "GERBRAND WOUTERS" ;
   :occupation [
     a :Alderman.n.01 ;
@@ -61,7 +67,13 @@ t00099:p2
     a :Age ;
     :duration "P90Y5M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1835-02-08"^^xsd:date ;
-  :dateOfDeath "1925-07-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-02-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-07-28"^^xsd:date
+  ] ;
   :nam "ALIDA DIJK" .
 

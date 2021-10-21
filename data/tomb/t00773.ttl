@@ -26,8 +26,14 @@ t00773:p1
     a :Age ;
     :duration "P30Y1M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-08-28"^^xsd:date ;
-  :dateOfDeath "1894-10-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-08-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-10-10"^^xsd:date
+  ] ;
   :nam "HILLIGJE EVERTS" ;
   :placeOfBirth [
     a :Village.n.02 ;

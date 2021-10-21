@@ -29,8 +29,14 @@ t00081:p1
     a :Age ;
     :duration "P71Y2M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1882-09-07"^^xsd:date ;
-  :dateOfDeath "1953-11-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-09-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-11-27"^^xsd:date
+  ] ;
   :nam "GEORGE W. PADBERG" ;
   :placeOfBirth [
     a :City.n.01 ;
@@ -49,8 +55,14 @@ t00081:p2
     a :Age ;
     :duration "P72Y4M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1891-03-25"^^xsd:date ;
-  :dateOfDeath "1963-08-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-03-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-08-23"^^xsd:date
+  ] ;
   :nam "GEERTRUIDA M.M. SCHOLTE" ;
   :placeOfBirth t00081:c1 ;
   :placeOfDeath t00081:c1 .

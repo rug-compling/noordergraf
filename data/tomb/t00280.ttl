@@ -26,8 +26,14 @@ t00280:p1
     a :Age ;
     :duration "P75Y11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1795-01-04"^^xsd:date ;
-  :dateOfDeath "1870-01-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1795-01-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-01-15"^^xsd:date
+  ] ;
   :nam "LUTGERT DOORNBOS" ;
   :rol [
     a :Widow.n.01 ;

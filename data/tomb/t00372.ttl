@@ -32,8 +32,14 @@ t00372:p1
     a :Age ;
     :duration "P67Y5M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1894-11-25"^^xsd:date ;
-  :dateOfDeath "1962-05-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-11-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-05-16"^^xsd:date
+  ] ;
   :nam "THIJS WILKENS" ;
   :placeOfBirth t00372:c1 ;
   :placeOfDeath t00372:c1 ;
@@ -50,8 +56,14 @@ t00372:p2
     a :Age ;
     :duration "P67Y6M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-03-05"^^xsd:date ;
-  :dateOfDeath "1964-09-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-03-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-09-16"^^xsd:date
+  ] ;
   :nam "ALIDA OTTENS" ;
   :placeOfBirth [
     a :Village.n.02 ;

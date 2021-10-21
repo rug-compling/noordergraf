@@ -27,7 +27,13 @@ t00345:p1
     a :Age ;
     :duration "P49Y1M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1958-08-28"^^xsd:date ;
-  :dateOfDeath "2007-10-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1958-08-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2007-10-16"^^xsd:date
+  ] ;
   :nam "IRIS JOLANDA KRAAI" .
 

@@ -30,8 +30,14 @@ t00640:p1
     a :Age ;
     :duration "P87Y6M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1841-07-02"^^xsd:date ;
-  :dateOfDeath "1929-01-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-01-31"^^xsd:date
+  ] ;
   :nam "UBBO ALBERTUS VAN OOSTEN" ;
   :occupation [
     a :Principal.n.02 ;

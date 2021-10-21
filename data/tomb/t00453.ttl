@@ -26,7 +26,13 @@ t00453:p1
     a :Age ;
     :duration "P79Y11M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1889-02-11"^^xsd:date ;
-  :dateOfDeath "1969-02-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-02-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-02-09"^^xsd:date
+  ] ;
   :nam "GERARDUS JACOBUS VAN DER WERFF" .
 

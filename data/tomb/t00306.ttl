@@ -23,8 +23,14 @@ t00306:p1
     a :Age ;
     :duration "P21Y1M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1919-04-04"^^xsd:date ;
-  :dateOfDeath "1940-05-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-04-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-05-12"^^xsd:date
+  ] ;
   :nam "KOOS WARMELS" ;
   :placeOfBirth [
     a :Town.n.01 ;

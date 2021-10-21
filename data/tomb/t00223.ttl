@@ -31,8 +31,14 @@ t00223:p1
     a :Age ;
     :duration "P72Y8M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-08-07"^^xsd:date ;
-  :dateOfDeath "1945-04-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-08-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-04-15"^^xsd:date
+  ] ;
   :nam "FREDERIKA WITKOP" ;
   :placeOfBirth [
     a :City.n.01 ;

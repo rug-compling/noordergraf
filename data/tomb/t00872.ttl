@@ -40,8 +40,14 @@ t00872:p1
     a :Age ;
     :duration "P41Y6M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-08-27"^^xsd:date ;
-  :dateOfDeath "1917-03-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-08-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-03-17"^^xsd:date
+  ] ;
   :nam "JAN DIK" ;
   :placeOfBirth [
     a :Village.n.02 ;

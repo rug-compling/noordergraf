@@ -27,8 +27,14 @@ t00780:p1
     a :Age ;
     :duration "P88Y9M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-06-05"^^xsd:date ;
-  :dateOfDeath "1931-03-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-06-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-03-14"^^xsd:date
+  ] ;
   :nam "GEERT OEVERMANS" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

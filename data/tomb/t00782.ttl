@@ -33,8 +33,14 @@ t00782:p1
     a :Age ;
     :duration "P78Y1M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1852-03-19"^^xsd:date ;
-  :dateOfDeath "1930-04-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-03-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-04-26"^^xsd:date
+  ] ;
   :nam "HEIJE CHRISTIAANS" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

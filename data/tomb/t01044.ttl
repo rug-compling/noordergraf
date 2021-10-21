@@ -23,7 +23,13 @@ t01044:p1
     a :Age ;
     :duration "P75Y6M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1808-08-24"^^xsd:date ;
-  :dateOfDeath "1884-02-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1808-08-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1884-02-26"^^xsd:date
+  ] ;
   :nam "EILKE SIKKES-FOLKERTS" .
 

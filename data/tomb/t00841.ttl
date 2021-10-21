@@ -20,7 +20,10 @@ tomb:t00841
 
 t00841:p1
   a :Female ;
-  :dateOfDeath "1922-12-18"^^xsd:date ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-12-18"^^xsd:date
+  ] ;
   :nam "BETZY AKERSLOOT-BERG" ;
   :occupation [
     a :Painter.n.01 ;
@@ -29,7 +32,10 @@ t00841:p1
 
 t00841:p2
   a :Male ;
-  :dateOfDeath "1929-10-16"^^xsd:date ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-10-16"^^xsd:date
+  ] ;
   :nam "GOOSWINUS GERARDUS AKERSLOOT" ;
   :occupation [
     a :Consul.n.01 ;

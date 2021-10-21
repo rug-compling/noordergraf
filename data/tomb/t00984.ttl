@@ -23,8 +23,14 @@ t00984:p1
     a :Age ;
     :duration "P77Y2M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-02-24"^^xsd:date ;
-  :dateOfDeath "1937-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-02-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-05-01"^^xsd:date
+  ] ;
   :nam "JOHANNES SIEGFRIED KRAUS" ;
   :rol [
     a :Spouse.n.01 ;

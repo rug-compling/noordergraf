@@ -28,8 +28,14 @@ t00666:p1
     a :Age ;
     :duration "P63Y6M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1851-10-19"^^xsd:date ;
-  :dateOfDeath "1915-04-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1851-10-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-04-25"^^xsd:date
+  ] ;
   :nam "TRIJNTJE D. DE JONG" ;
   :rol [
     a :Wife.n.01 ;

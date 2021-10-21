@@ -23,8 +23,14 @@ t00429:p1
     a :Age ;
     :duration "P71Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1903"^^xsd:gYear ;
-  :dateOfDeath "1974"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974"^^xsd:gYear
+  ] ;
   :nam "JAN VISSER" ;
   :rol [
     a :Parent.n.01 ;
@@ -37,8 +43,14 @@ t00429:p2
     a :Age ;
     :duration "P66Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1912"^^xsd:gYear ;
-  :dateOfDeath "1978"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978"^^xsd:gYear
+  ] ;
   :nam "AAFJE YTJE JANSMA" ;
   :rol [
     a :Parent.n.01 ;

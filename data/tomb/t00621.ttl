@@ -27,8 +27,14 @@ t00621:p1
     a :Age ;
     :duration "P70Y21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1804-03-11"^^xsd:date ;
-  :dateOfDeath "1874-04-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1804-03-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1874-04-01"^^xsd:date
+  ] ;
   :nam "ELTJO HARMS TIEDENS" ;
   :rol [
     a :Spouse.n.01 ;

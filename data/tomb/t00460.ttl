@@ -23,7 +23,13 @@ t00460:p1
     a :Age ;
     :duration "P49Y9M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1922-02-15"^^xsd:date ;
-  :dateOfDeath "1971-11-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1922-02-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-11-18"^^xsd:date
+  ] ;
   :nam "GEORG VAN DER PLOEG" .
 

@@ -28,8 +28,14 @@ t01034:p1
     a :Age ;
     :duration "P78Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1858"^^xsd:gYear ;
-  :dateOfDeath "1936"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936"^^xsd:gYear
+  ] ;
   :nam "GERTRUUD DAM" ;
   :rol [
     a :Widow.n.01 ;

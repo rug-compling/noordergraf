@@ -24,8 +24,14 @@ t00112:p1
     a :Age ;
     :duration "P77Y10M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-09-07"^^xsd:date ;
-  :dateOfDeath "1978-07-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-09-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-07-14"^^xsd:date
+  ] ;
   :nam "JACOB NIENHUIS" .
 
 t00112:p2
@@ -34,8 +40,14 @@ t00112:p2
     a :Age ;
     :duration "P84Y8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-08-11"^^xsd:date ;
-  :dateOfDeath "1984-08-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-08-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1984-08-19"^^xsd:date
+  ] ;
   :nam "GRIETJE JANTINA BOOMGAARDT" ;
   :rol [
     a :Wife.n.01 ;
@@ -48,7 +60,13 @@ t00112:p3
     a :Age ;
     :duration "P79Y10M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1908-12-09"^^xsd:date ;
-  :dateOfDeath "1988-10-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-12-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1988-10-31"^^xsd:date
+  ] ;
   :nam "JANTINA JACOBA BOOMGAARDT", "TANTE TINE" .
 

@@ -41,8 +41,14 @@ t00297:p1
     a :Age ;
     :duration "P12Y5M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1912-02-11"^^xsd:date ;
-  :dateOfDeath "1924-07-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-02-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-07-23"^^xsd:date
+  ] ;
   :nam "HENDRIKJE" ;
   :placeOfBirth t00297:c1 ;
   :placeOfDeath t00297:c1 ;

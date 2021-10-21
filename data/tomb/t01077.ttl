@@ -31,8 +31,14 @@ t01077:p1
     a :Age ;
     :duration "P1Y8M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-07-09"^^xsd:date ;
-  :dateOfDeath "1870-03-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-07-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-03-26"^^xsd:date
+  ] ;
   :nam "ALBERT JANS WESTING" ;
   :placeOfBirth [
     a :Village.n.02 ;

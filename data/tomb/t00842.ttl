@@ -23,8 +23,14 @@ t00842:p1
     a :Age ;
     :duration "P82Y3M"^^xsd:duration
   ] ;
-  :dateOfBirth "1914-12-09"^^xsd:date ;
-  :dateOfDeath "1997-03-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1914-12-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-03-09"^^xsd:date
+  ] ;
   :nam "SIENTJE DE BOER" ;
   :occupation [
     a :Biologist.n.01 ;

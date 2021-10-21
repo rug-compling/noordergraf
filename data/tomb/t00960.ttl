@@ -26,8 +26,14 @@ t00960:p1
     a :Age ;
     :duration "P48Y2M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1882-06-10"^^xsd:date ;
-  :dateOfDeath "1930-08-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-06-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-08-29"^^xsd:date
+  ] ;
   :nam "DERK EISSES" ;
   :placeOfBirth [
     a :Town.n.01 ;

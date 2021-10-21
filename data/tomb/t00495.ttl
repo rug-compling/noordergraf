@@ -26,8 +26,14 @@ t00495:p1
     a :Age ;
     :duration "P4Y3M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1911-01-02"^^xsd:date ;
-  :dateOfDeath "1915-04-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-01-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-04-03"^^xsd:date
+  ] ;
   :nam "AEBE WOUDSTRA" .
 
 t00495:p2
@@ -36,8 +42,14 @@ t00495:p2
     a :Age ;
     :duration "P53Y11M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-04-09"^^xsd:date ;
-  :dateOfDeath "1940-04-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-04-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-04-02"^^xsd:date
+  ] ;
   :nam "JOHANNA JAGER" ;
   :rol [
     a :Wife.n.01 ;
@@ -50,7 +62,13 @@ t00495:p3
     a :Age ;
     :duration "P75Y6M"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-02-20"^^xsd:date ;
-  :dateOfDeath "1959-08-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-08-20"^^xsd:date
+  ] ;
   :nam "K. WOUDSTRA" .
 

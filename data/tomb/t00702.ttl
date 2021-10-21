@@ -27,8 +27,14 @@ t00702:p1
     a :Age ;
     :duration "P54Y7M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1893-01-11"^^xsd:date ;
-  :dateOfDeath "1947-08-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-01-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-08-30"^^xsd:date
+  ] ;
   :nam "HENDRIK KLASENS" ;
   :rol [
     a :Spouse.n.01 ;
@@ -41,8 +47,14 @@ t00702:p2
     a :Age ;
     :duration "P79Y6M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-11-22"^^xsd:date ;
-  :dateOfDeath "1977-06-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-11-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1977-06-07"^^xsd:date
+  ] ;
   :nam "JANTJE TIMMERMANS" .
 
 t00702:v1

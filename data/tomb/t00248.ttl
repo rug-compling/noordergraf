@@ -26,8 +26,14 @@ t00248:p1
     a :Age ;
     :duration "P82Y2M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-08-24"^^xsd:date ;
-  :dateOfDeath "1950-11-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-08-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-11-03"^^xsd:date
+  ] ;
   :nam "TRIJNTJE VELDMAN" ;
   :placeOfBirth [
     a :Village.n.02 ;

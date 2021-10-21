@@ -26,8 +26,14 @@ t00987:p1
     a :Age ;
     :duration "P3M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1912-02-05"^^xsd:date ;
-  :dateOfDeath "1912-05-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-02-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-05-13"^^xsd:date
+  ] ;
   :nam "JANTJE SUICHIES" ;
   :placeOfBirth [
     a :Village.n.02 ;

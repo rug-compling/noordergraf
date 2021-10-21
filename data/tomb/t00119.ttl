@@ -23,8 +23,14 @@ t00119:p1
     a :Age ;
     :duration "P76Y1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1885-06-12"^^xsd:date ;
-  :dateOfDeath "1961-06-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-06-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-06-13"^^xsd:date
+  ] ;
   :nam "HENDRIK BODDEVELD" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -49,8 +55,14 @@ t00119:p2
     a :Age ;
     :duration "P80Y11M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-05-10"^^xsd:date ;
-  :dateOfDeath "1969-05-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-05-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-05-08"^^xsd:date
+  ] ;
   :nam "EELKJE POSTMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

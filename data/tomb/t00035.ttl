@@ -38,8 +38,14 @@ t00035:p1
     a :Age ;
     :duration "P52Y3M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1867-04-29"^^xsd:date ;
-  :dateOfDeath "1919-08-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-04-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-08-14"^^xsd:date
+  ] ;
   :nam "ALLERDINA MEIJER" ;
   :placeOfBirth t00035:c1 ;
   :placeOfDeath t00035:c1 ;

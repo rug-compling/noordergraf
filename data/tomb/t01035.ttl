@@ -33,8 +33,14 @@ t01035:p1
     a :Age ;
     :duration "P43Y11M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1893-07-19"^^xsd:date ;
-  :dateOfDeath "1937-06-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-07-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-06-26"^^xsd:date
+  ] ;
   :nam "KLAAS VLEDDER" ;
   :placeOfBirth t01035:c1 ;
   :placeOfDeath t01035:c1 .

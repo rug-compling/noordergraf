@@ -28,8 +28,14 @@ t00751:p1
     a :Age ;
     :duration "P55Y2M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1818-10-27"^^xsd:date ;
-  :dateOfDeath "1874-01-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1818-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1874-01-15"^^xsd:date
+  ] ;
   :nam "A.R. VAN ZANTEN" ;
   :rol [
     a :Spouse.n.01 ;

@@ -27,8 +27,14 @@ t00233:p1
     a :Age ;
     :duration "P4Y9M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-11-11"^^xsd:date ;
-  :dateOfDeath "1876-08-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-11-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1876-08-26"^^xsd:date
+  ] ;
   :nam "FENNECHIEN VAN DIJKEN" ;
   :rol [
     a :Daughter.n.01 ;

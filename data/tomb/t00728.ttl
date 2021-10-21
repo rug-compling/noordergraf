@@ -31,8 +31,14 @@ t00728:p1
     a :Age ;
     :duration "P71Y11M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1826-07-30"^^xsd:date ;
-  :dateOfDeath "1898-07-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1826-07-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1898-07-07"^^xsd:date
+  ] ;
   :nam "JAN LIPMAN" ;
   :placeOfBirth t00728:c1 ;
   :placeOfDeath t00728:c1 ;

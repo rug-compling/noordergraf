@@ -30,8 +30,14 @@ t00763:p1
     a :Age ;
     :duration "P7Y10M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-09-10"^^xsd:date ;
-  :dateOfDeath "1880-08-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-09-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-08-06"^^xsd:date
+  ] ;
   :nam "REMKO VAN ZANTEN" ;
   :rol [
     a :Son.n.01 ;

@@ -26,8 +26,14 @@ t00556:p1
     a :Age ;
     :duration "P49Y1M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-10-15"^^xsd:date ;
-  :dateOfDeath "1909-12-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-10-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1909-12-13"^^xsd:date
+  ] ;
   :nam "ROELOF WINDT" ;
   :rol [
     a :Spouse.n.01 ;

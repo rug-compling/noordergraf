@@ -27,8 +27,14 @@ t00821:p1
     a :Age ;
     :duration "P33Y1M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1912-02-16"^^xsd:date ;
-  :dateOfDeath "1945-03-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-02-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-03-19"^^xsd:date
+  ] ;
   :nam "GERRIT J. BOEKHOVEN" ;
   :rol [
     a :Spouse.n.01 ;

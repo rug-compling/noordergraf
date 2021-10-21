@@ -41,8 +41,14 @@ t00403:p1
     a :Age ;
     :duration "P82Y9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-10-03"^^xsd:date ;
-  :dateOfDeath "1951-10-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-10-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-10-12"^^xsd:date
+  ] ;
   :nam "HENDRIK J. POL" ;
   :placeOfBirth t00403:c1 ;
   :placeOfDeath t00403:c1 ;

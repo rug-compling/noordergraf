@@ -43,8 +43,14 @@ t00305:p1
     a :Age ;
     :duration "P79Y11M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-02-27"^^xsd:date ;
-  :dateOfDeath "1940-02-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-02-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-02-24"^^xsd:date
+  ] ;
   :nam "MARGJE ELEVELD" ;
   :rol [
     a :Widow.n.01 ;

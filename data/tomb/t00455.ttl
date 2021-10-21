@@ -28,8 +28,14 @@ t00455:p1
     a :Age ;
     :duration "P77Y2M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-10-25"^^xsd:date ;
-  :dateOfDeath "1978-12-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-10-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-12-28"^^xsd:date
+  ] ;
   :nam "GERHARD BRENNINKMEIJER" ;
   :placeOfBirth t00455:c1 ;
   :placeOfDeath t00455:c1 .
@@ -40,8 +46,14 @@ t00455:p2
     a :Age ;
     :duration "P88Y11M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-01-27"^^xsd:date ;
-  :dateOfDeath "1987-01-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-01-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1987-01-04"^^xsd:date
+  ] ;
   :nam "CECILIA BRENNINKMEIJER" ;
   :placeOfBirth t00455:c1 ;
   :placeOfDeath t00455:c1 .

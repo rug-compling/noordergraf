@@ -32,8 +32,14 @@ t00242:p1
     a :Age ;
     :duration "P82Y6M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1849-08-18"^^xsd:date ;
-  :dateOfDeath "1932-03-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1849-08-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-03-09"^^xsd:date
+  ] ;
   :nam "HENRIKJE BERENDS" ;
   :placeOfBirth t00242:c1 ;
   :placeOfDeath t00242:c1 ;

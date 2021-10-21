@@ -34,8 +34,14 @@ t00927:p1
     a :Age ;
     :duration "P52Y8M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1846-05-15"^^xsd:date ;
-  :dateOfDeath "1899-02-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-05-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1899-02-04"^^xsd:date
+  ] ;
   :nam "JAN WIERENGA" ;
   :placeOfBirth t00927:c1 ;
   :placeOfDeath t00927:c1 .

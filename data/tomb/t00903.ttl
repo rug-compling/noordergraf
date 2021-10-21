@@ -26,8 +26,14 @@ t00903:p1
     a :Age ;
     :duration "P65Y4M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1818-04-13"^^xsd:date ;
-  :dateOfDeath "1883-09-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1818-04-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1883-09-11"^^xsd:date
+  ] ;
   :nam "JAN PIERS BERGUIS" ;
   :rol [
     a :Spouse.n.01 ;

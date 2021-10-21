@@ -43,8 +43,14 @@ t00394:p1
     a :Age ;
     :duration "P88Y11M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-02-28"^^xsd:date ;
-  :dateOfDeath "1965-02-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-02-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-02-17"^^xsd:date
+  ] ;
   :nam "LIEKELA DIJKSTRA" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -72,8 +78,14 @@ t00394:p2
     a :Age ;
     :duration "P71Y10M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-06-19"^^xsd:date ;
-  :dateOfDeath "1949-05-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-06-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-05-18"^^xsd:date
+  ] ;
   :nam "SEESKE SIEGERSMA" ;
   :placeOfBirth t00394:c2 ;
   :placeOfDeath t00394:c2 ;

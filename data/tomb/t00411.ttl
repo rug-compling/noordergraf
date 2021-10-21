@@ -32,8 +32,14 @@ t00411:p1
     a :Age ;
     :duration "P60Y3M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-06-01"^^xsd:date ;
-  :dateOfDeath "1959-09-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-06-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-09-10"^^xsd:date
+  ] ;
   :nam "JANTJE NIEBOER" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -54,8 +60,14 @@ t00411:p2
     a :Age ;
     :duration "P72Y3M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-10-16"^^xsd:date ;
-  :dateOfDeath "1970-01-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-10-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-01-29"^^xsd:date
+  ] ;
   :nam "MEINT DIJKSTRA" ;
   :placeOfBirth [
     a :Municipality.n.01 ;

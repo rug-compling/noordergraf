@@ -30,8 +30,14 @@ t00665:p1
     :duration "P54Y"^^xsd:duration ;
     :text "bijna 54 jaren"
   ] ;
-  :dateOfBirth "1859-10-22"^^xsd:date ;
-  :dateOfDeath "1913-09-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-10-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-09-11"^^xsd:date
+  ] ;
   :nam "AFKE VAN DER VEER" ;
   :placeOfBirth [
     a :Town.n.01 ;

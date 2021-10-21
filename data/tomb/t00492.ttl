@@ -32,8 +32,14 @@ t00492:p1
     a :Age ;
     :duration "P76Y10M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1847-07-26"^^xsd:date ;
-  :dateOfDeath "1924-05-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-07-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-05-29"^^xsd:date
+  ] ;
   :nam "STEPHANIA BOURGONJE" ;
   :placeOfBirth t00492:c1 ;
   :placeOfDeath t00492:c1 ;

@@ -26,8 +26,14 @@ t00668:p1
     a :Age ;
     :duration "P64Y11M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-02-15"^^xsd:date ;
-  :dateOfDeath "1935-02-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-02-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-02-06"^^xsd:date
+  ] ;
   :nam "B. HEMPENIUS" ;
   :rol [
     a :Parent.n.01
@@ -39,8 +45,14 @@ t00668:p2
     a :Age ;
     :duration "P84Y6M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-01-30"^^xsd:date ;
-  :dateOfDeath "1953-08-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-01-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-08-26"^^xsd:date
+  ] ;
   :nam "T. HEMPENIUS-DE GROOT" ;
   :rol [
     a :Parent.n.01

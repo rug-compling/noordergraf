@@ -32,8 +32,14 @@ t00037:p1
     a :Age ;
     :duration "P12Y9M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-03-19"^^xsd:date ;
-  :dateOfDeath "1890-12-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-03-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1890-12-30"^^xsd:date
+  ] ;
   :nam "TJEERT PIETER BOUWMAN" ;
   :placeOfBirth t00037:c1 ;
   :placeOfDeath t00037:c1 .

@@ -27,8 +27,14 @@ t00225:p1
     a :Age ;
     :duration "P60Y7M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-09-13"^^xsd:date ;
-  :dateOfDeath "1906-05-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-09-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-05-11"^^xsd:date
+  ] ;
   :nam "W. KOLKMAN" ;
   :rol [
     a :Spouse.n.01 ;

@@ -28,8 +28,14 @@ t00316:p1
     a :Age ;
     :duration "P30Y2M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-09-05"^^xsd:date ;
-  :dateOfDeath "1903-11-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-09-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-11-26"^^xsd:date
+  ] ;
   :nam "REMMELT VAN HEES" ;
   :placeOfBirth t00316:c1 ;
   :placeOfDeath t00316:c1 ;

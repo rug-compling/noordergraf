@@ -26,8 +26,14 @@ t01038:p1
     a :Age ;
     :duration "P87Y7M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-04-26"^^xsd:date ;
-  :dateOfDeath "1945-11-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-04-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-11-30"^^xsd:date
+  ] ;
   :nam "GRIETJE DE BOER" ;
   :placeOfBirth [
     a :Village.n.02 ;

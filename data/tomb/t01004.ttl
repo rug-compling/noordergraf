@@ -42,8 +42,14 @@ t01004:p1
     a :Age ;
     :duration "P20Y3M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-10-23"^^xsd:date ;
-  :dateOfDeath "1892-02-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-10-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-02-15"^^xsd:date
+  ] ;
   :nam "STIENTJE WANMAKER" ;
   :rol [
     a :Daughter.n.01 ;

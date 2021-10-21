@@ -27,8 +27,14 @@ t01113:p1
     a :Age ;
     :duration "P61Y1M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1850-09-12"^^xsd:date ;
-  :dateOfDeath "1911-10-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-09-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-10-18"^^xsd:date
+  ] ;
   :nam "HILJE WOLTERS" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -24,8 +24,14 @@ t00844:p1
     a :Age ;
     :duration "P77Y2M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-07-22"^^xsd:date ;
-  :dateOfDeath "1978-10-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-07-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-10-12"^^xsd:date
+  ] ;
   :nam "HIL", "HILTJE WELS" ;
   :rol [
     a :Sister.n.01

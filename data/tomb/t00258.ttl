@@ -23,7 +23,13 @@ t00258:p1
     a :Age ;
     :duration "P72Y10M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1935-05-07"^^xsd:date ;
-  :dateOfDeath "2008-03-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1935-05-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-03-10"^^xsd:date
+  ] ;
   :nam "JEROEN BIJL" .
 

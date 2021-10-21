@@ -38,8 +38,14 @@ t00477:p1
     a :Age ;
     :duration "P74Y5M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-07-02"^^xsd:date ;
-  :dateOfDeath "1950-12-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-12-19"^^xsd:date
+  ] ;
   :nam "FRANCINA MARIA LANGENDIJK" ;
   :placeOfBirth t00477:c1 ;
   :placeOfDeath t00477:c1 ;
@@ -54,8 +60,14 @@ t00477:p2
     a :Age ;
     :duration "P81Y1M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-06-24"^^xsd:date ;
-  :dateOfDeath "1955-08-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-06-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-08-01"^^xsd:date
+  ] ;
   :nam "JOHANNES HOLLENGA" ;
   :placeOfBirth t00477:c1 ;
   :placeOfDeath t00477:c1 .

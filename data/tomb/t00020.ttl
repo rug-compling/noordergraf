@@ -26,8 +26,14 @@ t00020:p1
     a :Age ;
     :duration "P62Y3M"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-12-12"^^xsd:date ;
-  :dateOfDeath "1932-03-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-12-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-03-12"^^xsd:date
+  ] ;
   :nam "GRIETJE VONK" .
 
 t00020:p2
@@ -36,8 +42,14 @@ t00020:p2
     a :Age ;
     :duration "P63Y7M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-04-17"^^xsd:date ;
-  :dateOfDeath "1935-12-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-04-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-12-01"^^xsd:date
+  ] ;
   :nam "EGBERT STEENHUIS" .
 
 t00020:p3
@@ -46,7 +58,13 @@ t00020:p3
     a :Age ;
     :duration "P78Y6M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-02-20"^^xsd:date ;
-  :dateOfDeath "1975-09-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-09-14"^^xsd:date
+  ] ;
   :nam "IDA GEZINA STEENHUIS" .
 

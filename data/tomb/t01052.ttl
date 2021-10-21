@@ -24,8 +24,14 @@ t01052:p1
     a :Age ;
     :duration "P89Y5M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1815-11-15"^^xsd:date ;
-  :dateOfDeath "1905-04-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1815-11-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-04-21"^^xsd:date
+  ] ;
   :nam "WUBBERTUS KRÖEGER" ;
   :placeOfBirth [
     a :Village.n.02 ;

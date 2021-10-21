@@ -44,8 +44,14 @@ t00902:p1
     a :Age ;
     :duration "P49Y2M30D"^^xsd:duration
   ] ;
-  :dateOfBirth "1891-05-05"^^xsd:date ;
-  :dateOfDeath "1940-08-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-05-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-08-04"^^xsd:date
+  ] ;
   :nam "GRIETJE WILLEMINA HOENDERKEN" ;
   :placeOfBirth t00902:c1 ;
   :placeOfDeath [
@@ -60,8 +66,14 @@ t00902:p2
     a :Age ;
     :duration "P50Y1M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1896-11-13"^^xsd:date ;
-  :dateOfDeath "1946-12-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-11-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-12-18"^^xsd:date
+  ] ;
   :nam "REINDER CLUIVING HOENDERKEN" ;
   :placeOfBirth t00902:c1 ;
   :placeOfDeath [

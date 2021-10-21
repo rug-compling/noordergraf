@@ -27,8 +27,14 @@ t00907:p1
     a :Age ;
     :duration "P65Y6M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-11-06"^^xsd:date ;
-  :dateOfDeath "1946-05-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-11-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-05-24"^^xsd:date
+  ] ;
   :nam "RINDERT VAN DER MOLEN" ;
   :rol [
     a :Spouse.n.01 ;

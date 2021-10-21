@@ -23,8 +23,14 @@ t00204:p1
     a :Age ;
     :duration "P37Y1M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-01-11"^^xsd:date ;
-  :dateOfDeath "1934-02-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-01-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-02-20"^^xsd:date
+  ] ;
   :nam "MARIA JOHANNA HENDRIKS" ;
   :occupation [
     a :Pharmacist.n.01 ;

@@ -26,7 +26,13 @@ t00735:p1
     a :Age ;
     :duration "P81Y9M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1766-12-18"^^xsd:date ;
-  :dateOfDeath "1848-09-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1766-12-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1848-09-24"^^xsd:date
+  ] ;
   :nam "H.B. DIDDENS" .
 

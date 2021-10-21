@@ -27,8 +27,14 @@ t00572:p1
     a :Age ;
     :duration "P45Y7M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-08-11"^^xsd:date ;
-  :dateOfDeath "1920-04-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-08-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-04-03"^^xsd:date
+  ] ;
   :nam "JANTINA GEZINA" ;
   :rol [
     a :Daughter.n.01 ;

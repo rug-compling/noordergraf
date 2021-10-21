@@ -25,8 +25,14 @@ t00991:p1
     a :Age ;
     :duration "P66Y6M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-04-22"^^xsd:date ;
-  :dateOfDeath "1928-11-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-04-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-11-03"^^xsd:date
+  ] ;
   :nam "MARTJE SCHUURKE" ;
   :rol [
     a :Parent.n.01 ;
@@ -39,8 +45,14 @@ t00991:p2
     a :Age ;
     :duration "P55Y8M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-01-04"^^xsd:date ;
-  :dateOfDeath "1934-09-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-01-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-09-28"^^xsd:date
+  ] ;
   :nam "FILIPPUS MOERKER" ;
   :rol [
     a :Parent.n.01 ;

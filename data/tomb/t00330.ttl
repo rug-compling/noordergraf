@@ -26,8 +26,14 @@ t00330:p1
     a :Age ;
     :duration "P63Y1M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-03-30"^^xsd:date ;
-  :dateOfDeath "1929-05-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-03-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-05-13"^^xsd:date
+  ] ;
   :nam "DIRK ZOMER" ;
   :rol [
     a :Spouse.n.01 ;
@@ -41,7 +47,13 @@ t00330:p2
     a :Age ;
     :duration "P81Y2M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-02-05"^^xsd:date ;
-  :dateOfDeath "1952-04-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-02-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-04-10"^^xsd:date
+  ] ;
   :nam "ELSJE LIP" .
 

@@ -35,8 +35,14 @@ t00198:p1
     a :Age ;
     :duration "P62Y2M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-12-04"^^xsd:date ;
-  :dateOfDeath "1941-02-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-12-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-02-20"^^xsd:date
+  ] ;
   :nam "JAN VELDSEMA" ;
   :rol [
     a :Spouse.n.01 ;
@@ -49,8 +55,14 @@ t00198:p2
     a :Age ;
     :duration "P87Y5M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-01-14"^^xsd:date ;
-  :dateOfDeath "1966-06-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-01-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1966-06-23"^^xsd:date
+  ] ;
   :nam "MARTJE OLLING" ;
   :rol [
     a :Son.n.01

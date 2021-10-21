@@ -27,8 +27,14 @@ t01061:p1
     a :Age ;
     :duration "P79Y5M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1847-08-16"^^xsd:date ;
-  :dateOfDeath "1927-02-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-08-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-02-12"^^xsd:date
+  ] ;
   :nam "HENDRIK W. NIJHOF" ;
   :placeOfBirth [
     a :Village.n.02 ;

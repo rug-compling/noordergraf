@@ -27,8 +27,14 @@ t00584:p1
     a :Age ;
     :duration "P87Y10M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1824-04-05"^^xsd:date ;
-  :dateOfDeath "1912-02-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1824-04-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-02-11"^^xsd:date
+  ] ;
   :nam "GEERTJE VAN DER SCHANS" ;
   :placeOfBirth [
     a :Village.n.02 ;

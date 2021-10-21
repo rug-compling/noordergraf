@@ -26,8 +26,14 @@ t00532:p1
     a :Age ;
     :duration "P25Y8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1913-03-26"^^xsd:date ;
-  :dateOfDeath "1938-04-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-03-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-04-03"^^xsd:date
+  ] ;
   :nam "ANNIE VENEMA" ;
   :rol [
     a :Spouse.n.01 ;

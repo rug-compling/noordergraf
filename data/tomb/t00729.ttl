@@ -23,8 +23,14 @@ t00729:p1
     a :Age ;
     :duration "P34Y24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1907-04-05"^^xsd:date ;
-  :dateOfDeath "1941-04-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-04-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-04-29"^^xsd:date
+  ] ;
   :nam "HINDRIK HINDRIKS" ;
   :rol [
     a :Husband.n.01 ;

@@ -24,8 +24,14 @@ t00985:p1
     a :Age ;
     :duration "P86Y2M"^^xsd:duration
   ] ;
-  :dateOfBirth "1863-03-20"^^xsd:date ;
-  :dateOfDeath "1949-05-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-05-20"^^xsd:date
+  ] ;
   :nam "WILHELMINA BERENDINA GROENEVELD" ;
   :rol [
     a :Spouse.n.01 ;

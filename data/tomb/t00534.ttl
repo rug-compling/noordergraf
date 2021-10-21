@@ -28,8 +28,14 @@ t00534:p1
     a :Age ;
     :duration "P84Y4M30D"^^xsd:duration
   ] ;
-  :dateOfBirth "1852-04-29"^^xsd:date ;
-  :dateOfDeath "1936-09-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-04-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-09-28"^^xsd:date
+  ] ;
   :nam "KLAASKE GERLOFS" ;
   :placeOfBirth [
     a :Village.n.02 ;

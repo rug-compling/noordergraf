@@ -27,8 +27,14 @@ t00404:p1
     a :Age ;
     :duration "P54Y6M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-03-17"^^xsd:date ;
-  :dateOfDeath "1920-10-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-03-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-10-06"^^xsd:date
+  ] ;
   :nam "JOSINA SIENEMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

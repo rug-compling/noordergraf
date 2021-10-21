@@ -33,8 +33,14 @@ t00628:p1
     a :Age ;
     :duration "P42Y9M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-06-19"^^xsd:date ;
-  :dateOfDeath "1913-03-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-06-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-03-28"^^xsd:date
+  ] ;
   :nam "JAKOBUS BLEEKER" ;
   :placeOfBirth t00628:c1 ;
   :placeOfDeath t00628:c1 ;

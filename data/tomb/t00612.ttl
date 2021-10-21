@@ -29,8 +29,14 @@ t00612:p1
     a :Age ;
     :duration "P75Y29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1809-10-21"^^xsd:date ;
-  :dateOfDeath "1884-11-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1809-10-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1884-11-19"^^xsd:date
+  ] ;
   :nam "TAMME TEN CATE" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
@@ -49,8 +55,14 @@ t00612:p2
     a :Age ;
     :duration "P73Y4M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1819-06-28"^^xsd:date ;
-  :dateOfDeath "1892-11-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1819-06-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-11-09"^^xsd:date
+  ] ;
   :nam "SOETJE KEMPINGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

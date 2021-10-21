@@ -31,8 +31,14 @@ t01099:p1
     a :Age ;
     :duration "P47Y3M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1816-02-23"^^xsd:date ;
-  :dateOfDeath "1863-06-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1816-02-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1863-06-11"^^xsd:date
+  ] ;
   :nam "DERK T. KUIPER" ;
   :rol [
     a :Spouse.n.01 ;
@@ -49,8 +55,14 @@ t01099:p3
     a :Age ;
     :duration "P2Y2M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1861-04-06"^^xsd:date ;
-  :dateOfDeath "1863-06-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-04-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1863-06-29"^^xsd:date
+  ] ;
   :nam "JAKOB D. KUIPER" ;
   :rol [
     a :Son.n.01 ;

@@ -27,8 +27,14 @@ t00506:p1
     a :Age ;
     :duration "P25Y7M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1891-03-14"^^xsd:date ;
-  :dateOfDeath "1916-11-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-03-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-11-09"^^xsd:date
+  ] ;
   :nam "JOHANNES DIJKHOFF" ;
   :placeOfBirth [
     a :City.n.01 ;
@@ -52,7 +58,13 @@ t00506:p2
     a :Age ;
     :duration "P74Y13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-10-05"^^xsd:date ;
-  :dateOfDeath "1962-10-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-10-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-10-18"^^xsd:date
+  ] ;
   :nam "SARA KINDERMANS" .
 

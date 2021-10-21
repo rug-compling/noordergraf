@@ -24,8 +24,14 @@ t01125:p1
     a :Age ;
     :duration "P74Y3M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1908-04-11"^^xsd:date ;
-  :dateOfDeath "1982-07-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-04-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1982-07-31"^^xsd:date
+  ] ;
   :nam "GERRIT VAN 'T RIET" ;
   :occupation [
     a :Pastor.n.01 ;

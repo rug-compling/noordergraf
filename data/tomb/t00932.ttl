@@ -23,8 +23,14 @@ t00932:p1
     a :Age ;
     :duration "P49Y11M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1907-03-19"^^xsd:date ;
-  :dateOfDeath "1957-03-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-03-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-03-11"^^xsd:date
+  ] ;
   :nam "CHRISTIAN NIEMAND" ;
   :rol [
     a :Spouse.n.01 ;
@@ -37,7 +43,13 @@ t00932:p2
     a :Age ;
     :duration "P95Y9M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1902-06-30"^^xsd:date ;
-  :dateOfDeath "1998-04-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-06-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1998-04-28"^^xsd:date
+  ] ;
   :nam "JANTJE ALKEMA" .
 

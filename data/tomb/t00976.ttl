@@ -32,8 +32,14 @@ t00976:p1
     a :Age ;
     :duration "P75Y1M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1801-02-24"^^xsd:date ;
-  :dateOfDeath "1876-04-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1801-02-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1876-04-21"^^xsd:date
+  ] ;
   :nam "GEERT CORNELIS VROOM" ;
   :placeOfBirth [
     a :Village.n.02 ;

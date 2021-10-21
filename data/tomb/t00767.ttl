@@ -32,8 +32,14 @@ t00767:p1
     a :Age ;
     :duration "P69Y10M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1852-05-04"^^xsd:date ;
-  :dateOfDeath "1922-03-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-03-26"^^xsd:date
+  ] ;
   :nam "WILLEM JOLING" ;
   :placeOfBirth t00767:c1 ;
   :placeOfDeath t00767:c1 ;

@@ -35,8 +35,14 @@ t00300:p1
     a :Age ;
     :duration "P65Y4M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-10-03"^^xsd:date ;
-  :dateOfDeath "1937-02-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-10-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-02-23"^^xsd:date
+  ] ;
   :nam "ROELOFJE REMKEN" ;
   :placeOfBirth t00300:c1 ;
   :placeOfDeath t00300:c1 .
@@ -47,8 +53,14 @@ t00300:p2
     a :Age ;
     :duration "P81Y8M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-05-31"^^xsd:date ;
-  :dateOfDeath "1948-02-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-05-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-02-21"^^xsd:date
+  ] ;
   :nam "JAN BORK" ;
   :rol [
     a :Father.n.01

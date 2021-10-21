@@ -33,7 +33,13 @@ t00806:p1
     a :Age ;
     :duration "P76Y1M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1922-04-05"^^xsd:date ;
-  :dateOfDeath "1998-06-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1922-04-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1998-06-03"^^xsd:date
+  ] ;
   :nam "JACOB VINK" .
 

@@ -24,8 +24,14 @@ t00826:p1
     a :Age ;
     :duration "P50Y9M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1894-07-11"^^xsd:date ;
-  :dateOfDeath "1945-04-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-07-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-04-20"^^xsd:date
+  ] ;
   :nam "CORNELIS KLEI" ;
   :placeOfBirth [
     a :City.n.01 ;

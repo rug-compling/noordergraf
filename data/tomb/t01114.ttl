@@ -31,8 +31,14 @@ t01114:p1
     a :Age ;
     :duration "P83Y2M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1833-10-25"^^xsd:date ;
-  :dateOfDeath "1917-01-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-10-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-01-04"^^xsd:date
+  ] ;
   :nam "JAN VRUGT" ;
   :placeOfBirth t01114:c1 ;
   :placeOfDeath t01114:c1 ;

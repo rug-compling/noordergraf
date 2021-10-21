@@ -31,8 +31,14 @@ t00039:p1
     a :Age ;
     :duration "P5Y3M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-07-30"^^xsd:date ;
-  :dateOfDeath "1904-11-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-07-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-11-10"^^xsd:date
+  ] ;
   :nam "PIETERTJE EITENS" ;
   :placeOfBirth t00039:c1 ;
   :placeOfDeath t00039:c1 .

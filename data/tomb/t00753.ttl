@@ -26,8 +26,14 @@ t00753:p1
     a :Age ;
     :duration "P25Y7M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-05-30"^^xsd:date ;
-  :dateOfDeath "1871-01-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-05-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1871-01-22"^^xsd:date
+  ] ;
   :nam "LAMBERTUS" ;
   :rol [
     a :Son.n.01 ;

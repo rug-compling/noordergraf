@@ -27,8 +27,14 @@ t00533:p1
     a :Age ;
     :duration "P20Y10M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1917-05-13"^^xsd:date ;
-  :dateOfDeath "1938-03-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-05-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-03-15"^^xsd:date
+  ] ;
   :nam "HENDRIKA MARIA TONKES" ;
   :rol [
     a :Daughter.n.01

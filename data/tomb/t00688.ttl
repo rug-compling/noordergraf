@@ -26,8 +26,14 @@ t00688:p1
     a :Age ;
     :duration "P67Y2M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-09-15"^^xsd:date ;
-  :dateOfDeath "1942-12-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-09-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-12-08"^^xsd:date
+  ] ;
   :nam "AAFKE VRIESWIJK-VAN DER EEMS" ;
   :placeOfBirth [
     a :Village.n.02 ;

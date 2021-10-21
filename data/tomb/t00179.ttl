@@ -33,7 +33,13 @@ t00179:p1
     a :Age ;
     :duration "P30Y6M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1908-04-01"^^xsd:date ;
-  :dateOfDeath "1938-10-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-04-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-10-09"^^xsd:date
+  ] ;
   :nam "DE NIJS", "PETRONELLA WILHELMINA RIJGERSVEER" .
 

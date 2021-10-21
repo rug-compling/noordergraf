@@ -24,8 +24,14 @@ t00778:p1
     a :Age ;
     :duration "P52Y4M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-08-31"^^xsd:date ;
-  :dateOfDeath "1927-01-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-01-26"^^xsd:date
+  ] ;
   :nam "ROELOF ENSING" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

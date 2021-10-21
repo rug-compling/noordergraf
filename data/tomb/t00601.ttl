@@ -30,8 +30,14 @@ t00601:p1
     a :Age ;
     :duration "P83Y4M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1798-08-29"^^xsd:date ;
-  :dateOfDeath "1882-01-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1798-08-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-01-06"^^xsd:date
+  ] ;
   :nam "JAN WILLEMS KOITER" ;
   :placeOfBirth [
     a :Village.n.02 ;

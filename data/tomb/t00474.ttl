@@ -24,8 +24,14 @@ t00474:p1
     a :Age ;
     :duration "P51Y5M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1882-07-03"^^xsd:date ;
-  :dateOfDeath "1933-12-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-07-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-12-17"^^xsd:date
+  ] ;
   :nam "JOHANNES TERPSTRA" ;
   :placeOfBirth [
     a :City.n.01 ;
@@ -48,8 +54,14 @@ t00474:p2
     a :Age ;
     :duration "P75Y11M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-07-28"^^xsd:date ;
-  :dateOfDeath "1963-07-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-07-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-07-05"^^xsd:date
+  ] ;
   :nam "C. POSTMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

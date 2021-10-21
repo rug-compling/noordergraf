@@ -37,8 +37,14 @@ t01014:p1
     a :Age ;
     :duration "P65Y7M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1816-06-12"^^xsd:date ;
-  :dateOfDeath "1882-01-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1816-06-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-01-28"^^xsd:date
+  ] ;
   :nam "IMKE JANS NIEHOF" ;
   :placeOfBirth [
     a :Village.n.02 ;

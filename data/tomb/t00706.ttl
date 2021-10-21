@@ -26,8 +26,14 @@ t00706:p1
     a :Age ;
     :duration "P77Y4M"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-07-04"^^xsd:date ;
-  :dateOfDeath "1935-11-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-07-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-11-04"^^xsd:date
+  ] ;
   :nam "DIRK MEPPELINK" ;
   :rol [
     a :Brother-in-law.n.01, :Brother.n.01, :Uncle.n.01 ;

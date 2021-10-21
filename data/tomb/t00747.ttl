@@ -26,8 +26,14 @@ t00747:p1
     a :Age ;
     :duration "P80Y1M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1848-12-24"^^xsd:date ;
-  :dateOfDeath "1929-02-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1848-12-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-02-20"^^xsd:date
+  ] ;
   :nam "HARM ANTEMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

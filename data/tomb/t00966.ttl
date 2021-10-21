@@ -26,8 +26,14 @@ t00966:p1
     a :Age ;
     :duration "P72Y3M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1867-11-09"^^xsd:date ;
-  :dateOfDeath "1940-03-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-11-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-03-01"^^xsd:date
+  ] ;
   :nam "GRIETJE SLUURMAN" ;
   :placeOfBirth [
     a :Town.n.01 ;

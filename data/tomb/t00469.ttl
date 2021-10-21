@@ -27,8 +27,14 @@ t00469:p1
     a :Age ;
     :duration "P51Y17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-07-15"^^xsd:date ;
-  :dateOfDeath "1950-08-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-08-01"^^xsd:date
+  ] ;
   :nam "ANNE TEKSTRA" ;
   :rol [
     a :Spouse.n.01 ;
@@ -41,7 +47,13 @@ t00469:p2
     a :Age ;
     :duration "P93Y1M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-03-23"^^xsd:date ;
-  :dateOfDeath "1991-05-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-03-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1991-05-20"^^xsd:date
+  ] ;
   :nam "TIETJE HUISMAN" .
 

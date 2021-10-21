@@ -26,8 +26,14 @@ t00032:p1
     a :Age ;
     :duration "P17Y1M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1919-02-10"^^xsd:date ;
-  :dateOfDeath "1936-03-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-02-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-03-31"^^xsd:date
+  ] ;
   :nam "ADOLF EISSES" ;
   :placeOfBirth [
     a :Village.n.02 ;

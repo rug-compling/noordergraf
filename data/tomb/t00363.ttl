@@ -27,8 +27,14 @@ t00363:p1
     a :Age ;
     :duration "P83Y10M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-04-28"^^xsd:date ;
-  :dateOfDeath "1942-03-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-04-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-03-05"^^xsd:date
+  ] ;
   :nam "JANTJE DARWINKEL" ;
   :placeOfBirth [
     a :Village.n.02 ;

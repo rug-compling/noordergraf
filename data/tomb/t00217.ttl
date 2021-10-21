@@ -27,8 +27,14 @@ t00217:p1
     a :Age ;
     :duration "P19Y11M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-05-25"^^xsd:date ;
-  :dateOfDeath "1896-05-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-05-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1896-05-20"^^xsd:date
+  ] ;
   :nam "GRIETJE WIERINGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

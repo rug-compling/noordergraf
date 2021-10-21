@@ -28,8 +28,14 @@ t00807:p1
     a :Age ;
     :duration "P51Y6M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1942-12-02"^^xsd:date ;
-  :dateOfDeath "1994-06-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1942-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1994-06-08"^^xsd:date
+  ] ;
   :nam "MARIA HUESE-VAN ELK", "RIET" ;
   :placeOfBirth [
     a :Town.n.01 ;

@@ -31,8 +31,14 @@ t00241:p1
     a :Age ;
     :duration "P74Y9M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-01-01"^^xsd:date ;
-  :dateOfDeath "1947-10-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-01-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-10-23"^^xsd:date
+  ] ;
   :nam "HENDRIK VAN DAM" ;
   :placeOfBirth t00241:c1 ;
   :placeOfDeath t00241:c1 ;

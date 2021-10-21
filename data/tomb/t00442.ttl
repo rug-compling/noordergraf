@@ -31,8 +31,14 @@ t00442:p1
     a :Age ;
     :duration "P79Y3M"^^xsd:duration
   ] ;
-  :dateOfBirth "1824-04-18"^^xsd:date ;
-  :dateOfDeath "1903-07-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1824-04-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-07-18"^^xsd:date
+  ] ;
   :nam "J.J. VISSER" ;
   :placeOfBirth [
     a :City.n.01 ;

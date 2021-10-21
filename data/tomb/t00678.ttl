@@ -24,8 +24,14 @@ t00678:p1
     a :Age ;
     :duration "P68Y9M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1905-08-27"^^xsd:date ;
-  :dateOfDeath "1974-06-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-08-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-06-07"^^xsd:date
+  ] ;
   :nam "DATE DIJKSTRA" ;
   :rol [
     a :Husband.n.01 ;
@@ -42,8 +48,14 @@ t00678:p2
     a :Age ;
     :duration "P80Y5M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1908-09-19"^^xsd:date ;
-  :dateOfDeath "1989-03-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-09-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1989-03-15"^^xsd:date
+  ] ;
   :nam "BERBER BROUWER" ;
   :rol [
     a :Mother.n.01

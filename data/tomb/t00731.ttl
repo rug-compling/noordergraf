@@ -24,8 +24,14 @@ t00731:p1
     a :Age ;
     :duration "P86Y2M"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-02-24"^^xsd:date ;
-  :dateOfDeath "1959-04-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-02-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-04-24"^^xsd:date
+  ] ;
   :nam "BEREND HENDRIKS" ;
   :rol [
     a :Parent.n.01 ;
@@ -41,8 +47,14 @@ t00731:p2
     a :Age ;
     :duration "P88Y6M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1882-09-29"^^xsd:date ;
-  :dateOfDeath "1971-04-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-09-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-04-12"^^xsd:date
+  ] ;
   :nam "HENDREKIEN HILBRANDS" ;
   :rol [
     a :Parent.n.01 ;

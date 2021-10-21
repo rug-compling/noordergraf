@@ -26,8 +26,14 @@ t00564:p1
     a :Age ;
     :duration "P96Y2M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1912-08-04"^^xsd:date ;
-  :dateOfDeath "2008-10-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-08-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-10-08"^^xsd:date
+  ] ;
   :nam "ROELFIENE B. HOETJER" ;
   :rol [
     a :Widow.n.01 ;
@@ -40,7 +46,13 @@ t00564:p2
     a :Age ;
     :duration "P79Y12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1914-11-16"^^xsd:date ;
-  :dateOfDeath "1993-11-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1914-11-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993-11-28"^^xsd:date
+  ] ;
   :nam "JAN JACOB EKEMA" .
 

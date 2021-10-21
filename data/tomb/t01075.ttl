@@ -28,8 +28,14 @@ t01075:p1
     a :Age ;
     :duration "P72Y6M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1936-03-09"^^xsd:date ;
-  :dateOfDeath "2008-10-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1936-03-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-10-04"^^xsd:date
+  ] ;
   :nam "ALEX FREERK SCHREUDER" ;
   :rol [
     a :Father.n.01
@@ -43,8 +49,14 @@ t01075:p2
     a :Age ;
     :duration "P73Y11M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1938-11-22"^^xsd:date ;
-  :dateOfDeath "2012-11-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1938-11-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-11-11"^^xsd:date
+  ] ;
   :nam "JANNY SCHREUDER-DE JONG" ;
   :rol [
     a :Mother.n.01

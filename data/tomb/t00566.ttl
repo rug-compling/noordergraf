@@ -28,8 +28,14 @@ t00566:p1
     a :Age ;
     :duration "P81Y8M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1837-09-30"^^xsd:date ;
-  :dateOfDeath "1919-06-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-09-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-06-12"^^xsd:date
+  ] ;
   :nam "HERMAN HESSE" .
 
 t00566:p2
@@ -38,8 +44,14 @@ t00566:p2
     a :Age ;
     :duration "P70Y4M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1834-12-14"^^xsd:date ;
-  :dateOfDeath "1905-04-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1834-12-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-04-26"^^xsd:date
+  ] ;
   :nam "AALTJE BLEEKER" .
 
 t00566:p3
@@ -48,8 +60,14 @@ t00566:p3
     a :Age ;
     :duration "P64Y3M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-10-08"^^xsd:date ;
-  :dateOfDeath "1935-01-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-10-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-01-20"^^xsd:date
+  ] ;
   :nam "ZWAANTJE HESSE" ;
   :rol [
     a :Daughter.n.01 ;

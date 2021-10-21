@@ -26,8 +26,14 @@ t00005:p1
     a :Age ;
     :duration "P5M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1939-06-02"^^xsd:date ;
-  :dateOfDeath "1939-11-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1939-06-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-11-30"^^xsd:date
+  ] ;
   :nam "THIJSSIENA PIETA" ;
   :ref t00005:v1 ;
   :rol [
@@ -49,8 +55,14 @@ t00005:p4
     a :Age ;
     :duration "P69Y3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-03-28"^^xsd:date ;
-  :dateOfDeath "1947-03-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-03-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-03-31"^^xsd:date
+  ] ;
   :nam "MARTEN BRON" ;
   :ref t00005:v2 ;
   :rol [
@@ -64,8 +76,14 @@ t00005:p5
     a :Age ;
     :duration "P81Y2M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-01-14"^^xsd:date ;
-  :dateOfDeath "1958-03-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-01-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-03-31"^^xsd:date
+  ] ;
   :nam "BARBARA WESTERLING" ;
   :ref t00005:v3 .
 

@@ -24,8 +24,14 @@ t00965:p1
     a :Age ;
     :duration "P13Y9M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1946-05-09"^^xsd:date ;
-  :dateOfDeath "1960-02-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1946-05-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-02-29"^^xsd:date
+  ] ;
   :nam "ALEIDA HIDDING" ;
   :rol [
     a :Daughter.n.01 ;

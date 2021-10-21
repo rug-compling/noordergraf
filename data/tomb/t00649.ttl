@@ -26,8 +26,14 @@ t00649:p1
     a :Age ;
     :duration "P60Y11M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1798-11-07"^^xsd:date ;
-  :dateOfDeath "1859-10-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1798-11-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1859-10-24"^^xsd:date
+  ] ;
   :nam "DIEVERTJE REINDERS" ;
   :rol [
     a :Spouse.n.01 ;

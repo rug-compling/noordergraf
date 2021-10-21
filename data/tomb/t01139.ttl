@@ -27,8 +27,14 @@ t01139:p1
     a :Age ;
     :duration "P3Y12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1867-05-24"^^xsd:date ;
-  :dateOfDeath "1870-06-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-05-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-06-05"^^xsd:date
+  ] ;
   :nam "GEERTRUIDA MONKHORST" .
 
 t01139:s2

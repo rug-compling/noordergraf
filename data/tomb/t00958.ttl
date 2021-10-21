@@ -31,8 +31,14 @@ t00958:p1
     a :Age ;
     :duration "P47Y10M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-08-05"^^xsd:date ;
-  :dateOfDeath "1928-06-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-08-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-06-21"^^xsd:date
+  ] ;
   :nam "LAMMECHIEN HOUWING" ;
   :placeOfBirth t00958:c1 ;
   :placeOfDeath t00958:c1 ;

@@ -39,8 +39,14 @@ t01085:p1
     a :Age ;
     :duration "P64Y9M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1815-05-20"^^xsd:date ;
-  :dateOfDeath "1880-02-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1815-05-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-02-22"^^xsd:date
+  ] ;
   :nam "JAKOB GERRITS SCHUTTER" ;
   :occupation "KERKVOOGD DEZER GEMEENTE" ;
   :rol [

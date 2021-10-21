@@ -27,8 +27,14 @@ t00464:p1
     a :Age ;
     :duration "P71Y10M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1895-07-01"^^xsd:date ;
-  :dateOfDeath "1967-05-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-07-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1967-05-03"^^xsd:date
+  ] ;
   :nam "THEODORUS J. HOUKES" ;
   :rol [
     a :Husband.n.01 ;
@@ -48,7 +54,13 @@ t00464:p2
     a :Age ;
     :duration "P99Y2M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-01-01"^^xsd:date ;
-  :dateOfDeath "1998-03-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-01-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1998-03-26"^^xsd:date
+  ] ;
   :nam "TRIJNTJE RADERSMA" .
 

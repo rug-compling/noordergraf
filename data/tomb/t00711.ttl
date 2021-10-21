@@ -36,8 +36,14 @@ t00711:p1
     a :Age ;
     :duration "P72Y8M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-09-15"^^xsd:date ;
-  :dateOfDeath "1941-05-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-09-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-05-18"^^xsd:date
+  ] ;
   :nam "WILLEMTJE KATOEN" ;
   :placeOfBirth [
     a :Village.n.02 ;

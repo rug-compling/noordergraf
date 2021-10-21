@@ -31,8 +31,14 @@ t00569:p1
     a :Age ;
     :duration "P74Y2M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1846-03-22"^^xsd:date ;
-  :dateOfDeath "1920-05-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-03-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-05-26"^^xsd:date
+  ] ;
   :nam "HARM KOOL" ;
   :rol t00569:r3, [
     a :Husband.n.01 ;

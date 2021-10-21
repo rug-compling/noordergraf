@@ -39,8 +39,14 @@ t00397:p1
     a :Age ;
     :duration "P65Y10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1863-03-14"^^xsd:date ;
-  :dateOfDeath "1928-03-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-03-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-03-24"^^xsd:date
+  ] ;
   :nam "JAN WALTJE" ;
   :placeOfBirth t00397:c1 ;
   :placeOfDeath t00397:c1 ;
@@ -55,8 +61,14 @@ t00397:p2
     a :Age ;
     :duration "P68Y10M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-06-04"^^xsd:date ;
-  :dateOfDeath "1927-04-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-06-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-04-05"^^xsd:date
+  ] ;
   :nam "MAAIKE VAN DER VEEN" ;
   :placeOfBirth [
     a :Village.n.02 ;

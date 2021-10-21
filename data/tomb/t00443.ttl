@@ -32,8 +32,14 @@ t00443:p1
     a :Age ;
     :duration "P51Y1M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-04-13"^^xsd:date ;
-  :dateOfDeath "1939-06-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-04-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-06-01"^^xsd:date
+  ] ;
   :nam "RENSCHE TRIEMSTRA" ;
   :placeOfBirth [
     a :Village.n.02 ;

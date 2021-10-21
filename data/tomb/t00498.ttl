@@ -36,8 +36,14 @@ t00498:p1
     a :Age ;
     :duration "P51Y14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1825-03-14"^^xsd:date ;
-  :dateOfDeath "1876-03-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1825-03-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1876-03-28"^^xsd:date
+  ] ;
   :nam "PIETER FOPPES BRUINSMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

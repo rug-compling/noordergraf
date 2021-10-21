@@ -28,7 +28,13 @@ t00593:p1
     a :Age ;
     :duration "P69Y5M"^^xsd:duration
   ] ;
-  :dateOfBirth "1940-05-06"^^xsd:date ;
-  :dateOfDeath "2009-10-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1940-05-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2009-10-06"^^xsd:date
+  ] ;
   :nam "JAN FABER" .
 

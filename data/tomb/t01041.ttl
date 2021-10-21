@@ -31,8 +31,14 @@ t01041:p1
     a :Age ;
     :duration "P82Y22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-02-06"^^xsd:date ;
-  :dateOfDeath "1924-02-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-02-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-02-28"^^xsd:date
+  ] ;
   :nam "GERBEN EPEÜS VLIEG" ;
   :placeOfBirth [
     a :City.n.01 ;

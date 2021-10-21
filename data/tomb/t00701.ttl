@@ -32,8 +32,14 @@ t00701:p1
     a :Age ;
     :duration "P83Y9M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-02-12"^^xsd:date ;
-  :dateOfDeath "1953-11-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-02-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-11-22"^^xsd:date
+  ] ;
   :nam "HINDRIK SCHUTRUPS" ;
   :placeOfBirth t00701:c1 ;
   :placeOfDeath t00701:c1 .

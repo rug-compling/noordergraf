@@ -41,8 +41,14 @@ t00048:p1
     a :Age ;
     :duration "P56Y11M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1892-07-08"^^xsd:date ;
-  :dateOfDeath "1949-06-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1892-07-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-06-09"^^xsd:date
+  ] ;
   :nam "IJMKJE WIELINGA" ;
   :rol t00048:r3, [
     a :Wife.n.01 ;
@@ -57,8 +63,14 @@ t00048:p2
     a :Age ;
     :duration "P77Y2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1892-05-08"^^xsd:date ;
-  :dateOfDeath "1969-05-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1892-05-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-05-10"^^xsd:date
+  ] ;
   :nam "FREERK BRUINSMA" ;
   :rol [
     a :Spouse.n.01 ;

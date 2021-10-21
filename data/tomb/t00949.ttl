@@ -27,8 +27,14 @@ t00949:p1
     a :Age ;
     :duration "P56Y5M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1674-03-09"^^xsd:date ;
-  :dateOfDeath "1730-08-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1674-03-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1730-08-16"^^xsd:date
+  ] ;
   :nam "GERHARD VAN BERN" ;
   :prefix "HEER" .
 
@@ -38,8 +44,14 @@ t00949:p2
     a :Age ;
     :duration "P67Y5M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1679-09-17"^^xsd:date ;
-  :dateOfDeath "1747-03-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1679-09-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1747-03-15"^^xsd:date
+  ] ;
   :nam "ADRIANA MARIA HINSBEEK" ;
   :rol [
     a :Housewife.n.01 ;

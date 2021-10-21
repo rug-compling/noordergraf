@@ -19,7 +19,10 @@ tomb:t00797
 
 t00797:p1
   a :Male ;
-  :dateOfDeath "1945-04-20"^^xsd:date ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-04-20"^^xsd:date
+  ] ;
   :nam "JACOBUS HUBERTES TEEUWEN" ;
   :placeOfBirth [
     a :City.n.01 ;

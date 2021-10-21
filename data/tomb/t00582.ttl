@@ -33,8 +33,14 @@ t00582:p1
     a :Age ;
     :duration "P73Y6M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1843-11-23"^^xsd:date ;
-  :dateOfDeath "1917-05-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-11-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-05-26"^^xsd:date
+  ] ;
   :nam "GEERT BIERLING" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

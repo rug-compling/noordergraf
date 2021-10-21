@@ -26,8 +26,14 @@ t00956:p1
     a :Age ;
     :duration "P38Y9M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1838-08-20"^^xsd:date ;
-  :dateOfDeath "1877-06-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1838-08-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1877-06-18"^^xsd:date
+  ] ;
   :nam "BERENDINA KOERS" ;
   :placeOfBirth [
     a :Village.n.02 ;

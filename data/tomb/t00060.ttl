@@ -24,8 +24,14 @@ t00060:p1
     a :Age ;
     :duration "P61Y10M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1923-11-07"^^xsd:date ;
-  :dateOfDeath "1985-10-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-11-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1985-10-03"^^xsd:date
+  ] ;
   :nam "GRIETJE NICOLAI" ;
   :rol [
     a :Mother.n.01
@@ -37,8 +43,14 @@ t00060:p2
     a :Age ;
     :duration "P72Y4M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1925-09-13"^^xsd:date ;
-  :dateOfDeath "1998-02-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-09-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1998-02-05"^^xsd:date
+  ] ;
   :nam "PIETER DIJKSTRA" ;
   :rol [
     a :Father.n.01

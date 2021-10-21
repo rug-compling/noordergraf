@@ -32,8 +32,14 @@ t00919:p1
     a :Age ;
     :duration "P73Y1M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-10-27"^^xsd:date ;
-  :dateOfDeath "1938-12-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-12-13"^^xsd:date
+  ] ;
   :nam "GEERT HOLMERSMA" ;
   :placeOfBirth t00919:c1 ;
   :placeOfDeath t00919:c1 ;
@@ -48,8 +54,14 @@ t00919:p2
     a :Age ;
     :duration "P76Y10M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-04-18"^^xsd:date ;
-  :dateOfDeath "1947-02-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-04-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-02-26"^^xsd:date
+  ] ;
   :nam "GEESKE HOLMERSMA" ;
   :placeOfBirth t00919:c1 ;
   :placeOfDeath t00919:c1 ;

@@ -32,8 +32,14 @@ t00768:p1
     a :Age ;
     :duration "P1Y10M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1920-06-27"^^xsd:date ;
-  :dateOfDeath "1922-05-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-06-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-05-11"^^xsd:date
+  ] ;
   :nam "WILLEM JOLING" ;
   :placeOfBirth t00768:c1 ;
   :placeOfDeath t00768:c1 ;

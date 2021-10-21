@@ -23,8 +23,14 @@ t00979:p1
     a :Age ;
     :duration "P87Y5M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-06-05"^^xsd:date ;
-  :dateOfDeath "1953-12-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-06-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-12-03"^^xsd:date
+  ] ;
   :nam "JANTIEN KLOOTS" ;
   :placeOfBirth [
     a :Village.n.02 ;

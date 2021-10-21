@@ -23,8 +23,14 @@ t00542:p1
     a :Age ;
     :duration "P56Y8M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1839-11-26"^^xsd:date ;
-  :dateOfDeath "1896-08-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-11-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1896-08-20"^^xsd:date
+  ] ;
   :nam "JAN VAN LINGE" ;
   :suffix "AZ" .
 
@@ -34,8 +40,14 @@ t00542:p2
     a :Age ;
     :duration "P68Y8M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-03-06"^^xsd:date ;
-  :dateOfDeath "1913-11-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-03-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-11-08"^^xsd:date
+  ] ;
   :nam "TJIETSKA VAN DER WAL" ;
   :rol [
     a :Spouse.n.01 ;

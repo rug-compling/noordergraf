@@ -23,8 +23,14 @@ t00149:p1
     a :Age ;
     :duration "P83Y6M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1927-12-07"^^xsd:date ;
-  :dateOfDeath "2011-07-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1927-12-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2011-07-03"^^xsd:date
+  ] ;
   :nam "ANNE MARIE CAROLINA WIJNOLDIJ-DANIËLS" ;
   :rol [
     a :Mother.n.01

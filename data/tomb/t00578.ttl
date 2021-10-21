@@ -31,8 +31,14 @@ t00578:p1
     a :Age ;
     :duration "P61Y2M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1825-09-07"^^xsd:date ;
-  :dateOfDeath "1886-11-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1825-09-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1886-11-28"^^xsd:date
+  ] ;
   :nam "EVERT VAN VEEN" ;
   :placeOfBirth [
     a :City.n.01 ;

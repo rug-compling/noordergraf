@@ -28,8 +28,14 @@ t01123:p1
     a :Age ;
     :duration "P55Y11M"^^xsd:duration
   ] ;
-  :dateOfBirth "1806"^^xsd:gYear ;
-  :dateOfDeath "1861-03-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1806"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1861-03-05"^^xsd:date
+  ] ;
   :nam "DERK PIETERS WIERENGA" ;
   :placeOfDeath [
     a :Village.n.02 ;

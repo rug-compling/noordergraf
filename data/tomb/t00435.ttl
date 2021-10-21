@@ -38,8 +38,14 @@ t00435:p1
     a :Age ;
     :duration "P82Y3M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-07-08"^^xsd:date ;
-  :dateOfDeath "1948-10-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-07-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-10-20"^^xsd:date
+  ] ;
   :nam "THOMAS KLONTJE" ;
   :placeOfBirth t00435:c1 ;
   :placeOfDeath t00435:c1 ;

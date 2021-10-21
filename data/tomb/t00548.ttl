@@ -23,8 +23,14 @@ t00548:p1
     a :Age ;
     :duration "P55Y8M"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-09-10"^^xsd:date ;
-  :dateOfDeath "1921-05-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-09-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1921-05-10"^^xsd:date
+  ] ;
   :nam "UBBO WILKENS" ;
   :occupation [
     a :Mayor.n.01 ;

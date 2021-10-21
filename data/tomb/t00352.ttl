@@ -31,8 +31,14 @@ t00352:p1
     a :Age ;
     :duration "P63Y4M"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-06-29"^^xsd:date ;
-  :dateOfDeath "1927-10-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-06-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-10-29"^^xsd:date
+  ] ;
   :nam "HENDRIK NOORD" ;
   :placeOfBirth t00352:c1 ;
   :placeOfDeath t00352:c1 ;

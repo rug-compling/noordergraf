@@ -31,8 +31,14 @@ t00575:p1
     a :Age ;
     :duration "P47Y10M"^^xsd:duration
   ] ;
-  :dateOfBirth "1945-04-14"^^xsd:date ;
-  :dateOfDeath "1993-02-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1945-04-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993-02-14"^^xsd:date
+  ] ;
   :nam "GEGER FREDERIK RASIDI" ;
   :rol [
     a :Father.n.01

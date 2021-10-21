@@ -26,8 +26,14 @@ t00637:p1
     a :Age ;
     :duration "P66Y6M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1843-08-16"^^xsd:date ;
-  :dateOfDeath "1910-03-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-08-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1910-03-03"^^xsd:date
+  ] ;
   :nam "JACOMIJNA MEURSING" ;
   :placeOfBirth [
     a :Town.n.01 ;

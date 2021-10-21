@@ -23,7 +23,13 @@ t01124:p1
     a :Age ;
     :duration "P76Y4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-06-30"^^xsd:date ;
-  :dateOfDeath "1976-07-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-06-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-07-04"^^xsd:date
+  ] ;
   :nam "HINDRIK LAP" .
 

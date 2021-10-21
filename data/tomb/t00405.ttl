@@ -38,8 +38,14 @@ t00405:p1
     a :Age ;
     :duration "P81Y8M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1847-09-26"^^xsd:date ;
-  :dateOfDeath "1929-06-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-09-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-06-05"^^xsd:date
+  ] ;
   :nam "HENDRIK A. BRUINSMA" ;
   :placeOfBirth t00405:c1 ;
   :placeOfDeath [
@@ -57,8 +63,14 @@ t00405:p2
     a :Age ;
     :duration "P74Y22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-11-23"^^xsd:date ;
-  :dateOfDeath "1931-12-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-11-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-12-15"^^xsd:date
+  ] ;
   :nam "RENSKJE VISSER" ;
   :placeOfBirth [
     a :Village.n.02 ;

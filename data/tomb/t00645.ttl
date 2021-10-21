@@ -26,8 +26,14 @@ t00645:p1
     a :Age ;
     :duration "P28Y1M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1912-03-26"^^xsd:date ;
-  :dateOfDeath "1940-05-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-03-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-05-14"^^xsd:date
+  ] ;
   :nam "PIETER WAYER" ;
   :placeOfDeath [
     a :City.n.01 ;

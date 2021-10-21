@@ -31,8 +31,14 @@ t00563:p1
     a :Age ;
     :duration "P70Y4M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1848-10-21"^^xsd:date ;
-  :dateOfDeath "1919-02-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1848-10-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-02-22"^^xsd:date
+  ] ;
   :nam "JACOB VAN DER BORGH" ;
   :placeOfBirth t00563:c1 ;
   :placeOfDeath t00563:c1 .
@@ -43,8 +49,14 @@ t00563:p2
     a :Age ;
     :duration "P74Y9M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1844-05-05"^^xsd:date ;
-  :dateOfDeath "1919-02-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-05-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-02-20"^^xsd:date
+  ] ;
   :nam "MARGRITA J. KLIPHUIS" ;
   :placeOfBirth [
     a :Village.n.02 ;

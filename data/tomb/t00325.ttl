@@ -32,8 +32,14 @@ t00325:p1
     a :Age ;
     :duration "P69Y17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-09-27"^^xsd:date ;
-  :dateOfDeath "1940-10-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-09-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-10-14"^^xsd:date
+  ] ;
   :nam "WILHELMINA BRUNSTING" ;
   :placeOfBirth t00325:c1 ;
   :placeOfDeath t00325:c1 ;
@@ -48,8 +54,14 @@ t00325:p2
     a :Age ;
     :duration "P82Y4M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-05-13"^^xsd:date ;
-  :dateOfDeath "1941-09-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-05-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-09-20"^^xsd:date
+  ] ;
   :nam "COENRAAD KOSTER" ;
   :placeOfBirth t00325:c1 ;
   :placeOfDeath t00325:c1 ;

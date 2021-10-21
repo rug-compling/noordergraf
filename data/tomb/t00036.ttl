@@ -27,8 +27,14 @@ t00036:p1
     a :Age ;
     :duration "P39Y11M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-06-12"^^xsd:date ;
-  :dateOfDeath "1904-06-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-06-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-06-09"^^xsd:date
+  ] ;
   :nam "ROELOF DOLFIN" ;
   :placeOfBirth [
     a :City.n.01 ;

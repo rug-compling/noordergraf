@@ -30,8 +30,14 @@ t00942:p1
     a :Age ;
     :duration "P84Y7M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-06-24"^^xsd:date ;
-  :dateOfDeath "1949-02-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-06-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-02-10"^^xsd:date
+  ] ;
   :nam "GEERTRUIDA CHRISTINA DIETERMAN" ;
   :placeOfDeath [
     a :Village.n.02 ;

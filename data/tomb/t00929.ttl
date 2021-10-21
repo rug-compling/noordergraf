@@ -28,8 +28,14 @@ t00929:p1
     a :Age ;
     :duration "P60Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1903"^^xsd:gYear ;
-  :dateOfDeath "1963"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963"^^xsd:gYear
+  ] ;
   :nam "JAN NAARDING" ;
   :prefix "DR" .
 

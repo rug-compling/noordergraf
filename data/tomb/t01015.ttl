@@ -32,8 +32,14 @@ t01015:p1
     a :Age ;
     :duration "P20Y9M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-10-01"^^xsd:date ;
-  :dateOfDeath "1893-07-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-10-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1893-07-28"^^xsd:date
+  ] ;
   :nam "GRIETJE WUBBINA" ;
   :rol [
     a :Daughter.n.01 ;

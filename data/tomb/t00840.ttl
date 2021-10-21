@@ -33,8 +33,14 @@ t00840:p1
     a :Age ;
     :duration "P66Y11M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1830-09-27"^^xsd:date ;
-  :dateOfDeath "1897-08-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1830-09-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1897-08-30"^^xsd:date
+  ] ;
   :nam "PIETER ADRIANUS KROON" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -49,8 +55,14 @@ t00840:p2
     a :Age ;
     :duration "P89Y4M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1840-01-01"^^xsd:date ;
-  :dateOfDeath "1929-05-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1840-01-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-05-13"^^xsd:date
+  ] ;
   :nam "ANTJE REE" ;
   :placeOfBirth [
     a :Island.n.01 ;

@@ -34,7 +34,13 @@ t00933:p1
     a :Age ;
     :duration "P11Y7M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1945-01-18"^^xsd:date ;
-  :dateOfDeath "1956-09-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1945-01-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-09-15"^^xsd:date
+  ] ;
   :nam "EMMIE ANTONIDES" .
 

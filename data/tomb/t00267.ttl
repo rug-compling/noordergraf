@@ -26,8 +26,14 @@ t00267:p1
     a :Age ;
     :duration "P84Y4M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1827-08-28"^^xsd:date ;
-  :dateOfDeath "1912-01-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1827-08-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-01-14"^^xsd:date
+  ] ;
   :nam "ALBERT UITHAM" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

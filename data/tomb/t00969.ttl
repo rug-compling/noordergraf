@@ -28,8 +28,14 @@ t00969:p1
     a :Age ;
     :duration "P76Y2M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1796-06-02"^^xsd:date ;
-  :dateOfDeath "1872-08-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1796-06-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1872-08-11"^^xsd:date
+  ] ;
   :nam "OTTO KLOOTS" ;
   :rol [
     a :Spouse.n.01 ;

@@ -26,8 +26,14 @@ t00617:p1
     a :Age ;
     :duration "P58Y8M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1829-10-08"^^xsd:date ;
-  :dateOfDeath "1888-06-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1829-10-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-06-21"^^xsd:date
+  ] ;
   :nam "WIGERT PRINS" .
 
 t00617:p2
@@ -36,8 +42,14 @@ t00617:p2
     a :Age ;
     :duration "P72Y7M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1829-11-29"^^xsd:date ;
-  :dateOfDeath "1902-07-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1829-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1902-07-12"^^xsd:date
+  ] ;
   :nam "JANKE DE JONGE" ;
   :rol [
     a :Spouse.n.01 ;

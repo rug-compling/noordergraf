@@ -24,8 +24,14 @@ t00141:p1
     a :Age ;
     :duration "P68Y3M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-08-23"^^xsd:date ;
-  :dateOfDeath "1954-11-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-08-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-11-25"^^xsd:date
+  ] ;
   :nam "HARM GOOYERT" ;
   :rol [
     a :Father.n.01
@@ -40,8 +46,14 @@ t00141:p2
     a :Age ;
     :duration "P79Y5M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-04-15"^^xsd:date ;
-  :dateOfDeath "1967-09-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-04-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1967-09-16"^^xsd:date
+  ] ;
   :nam "HINDERKJE STEENHUIS" ;
   :rol [
     a :Mother.n.01

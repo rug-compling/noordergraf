@@ -23,8 +23,14 @@ t00677:p1
     a :Age ;
     :duration "P80Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1894"^^xsd:gYear ;
-  :dateOfDeath "1974"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974"^^xsd:gYear
+  ] ;
   :nam "SIBBELTJE VAN DER WERFF-TIMMER" .
 
 t00677:p2
@@ -33,7 +39,13 @@ t00677:p2
     a :Age ;
     :duration "P85Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1894"^^xsd:gYear ;
-  :dateOfDeath "1979"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1979"^^xsd:gYear
+  ] ;
   :nam "WIETZE VAN DER WERFF" .
 

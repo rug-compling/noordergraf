@@ -26,8 +26,14 @@ t00999:p1
     a :Age ;
     :duration "P44Y10M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1843-07-15"^^xsd:date ;
-  :dateOfDeath "1888-05-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-05-29"^^xsd:date
+  ] ;
   :nam "FENNA HOMMES" ;
   :placeOfBirth [
     a :Village.n.02 ;

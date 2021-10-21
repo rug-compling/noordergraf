@@ -23,8 +23,14 @@ t00813:p1
     a :Age ;
     :duration "P78Y10M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1863-03-11"^^xsd:date ;
-  :dateOfDeath "1942-02-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-03-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-02-06"^^xsd:date
+  ] ;
   :nam "WOBBE DE VRIES" ;
   :occupation [
     a :Linguist.n.01 ;
@@ -42,7 +48,13 @@ t00813:p2
     a :Age ;
     :duration "P77Y11M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1867-04-22"^^xsd:date ;
-  :dateOfDeath "1945-04-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-04-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-04-12"^^xsd:date
+  ] ;
   :nam "FROUWKTJE KORNELIA OPTEN" .
 

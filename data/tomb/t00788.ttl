@@ -26,8 +26,14 @@ t00788:p1
     a :Age ;
     :duration "P70Y10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1837-02-08"^^xsd:date ;
-  :dateOfDeath "1907-02-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-02-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1907-02-18"^^xsd:date
+  ] ;
   :nam "HENDRIK NIJHOF" ;
   :placeOfBirth [
     a :Village.n.02 ;

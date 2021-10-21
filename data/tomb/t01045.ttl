@@ -23,8 +23,14 @@ t01045:p1
     a :Age ;
     :duration "P75Y11M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1921-11-04"^^xsd:date ;
-  :dateOfDeath "1997-10-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1921-11-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-10-30"^^xsd:date
+  ] ;
   :nam "JAN JOBING" ;
   :rol [
     a :Husband.n.01

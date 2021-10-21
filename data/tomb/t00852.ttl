@@ -32,8 +32,14 @@ t00852:p1
     a :Age ;
     :duration "P23Y9M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-12-09"^^xsd:date ;
-  :dateOfDeath "1925-09-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-12-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-09-16"^^xsd:date
+  ] ;
   :nam "GERDINA KAMPS" ;
   :placeOfBirth t00852:c1 ;
   :placeOfDeath t00852:c1 ;

@@ -32,8 +32,14 @@ t00764:p1
     a :Age ;
     :duration "P13Y10M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-06-09"^^xsd:date ;
-  :dateOfDeath "1894-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-06-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-05-01"^^xsd:date
+  ] ;
   :nam "HILLEGIEN" ;
   :placeOfBirth t00764:c1 ;
   :placeOfDeath t00764:c1 ;

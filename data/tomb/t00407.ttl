@@ -37,8 +37,14 @@ t00407:p1
     a :Age ;
     :duration "P82Y5M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1820-10-27"^^xsd:date ;
-  :dateOfDeath "1903-04-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1820-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-04-11"^^xsd:date
+  ] ;
   :nam "MINNE W. VEENSTRA" ;
   :placeOfBirth t00407:c1 ;
   :placeOfDeath t00407:c1 ;

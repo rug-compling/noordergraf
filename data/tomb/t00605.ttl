@@ -29,8 +29,14 @@ t00605:p1
     a :Age ;
     :duration "P60Y9M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1837-09-01"^^xsd:date ;
-  :dateOfDeath "1898-06-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-09-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1898-06-20"^^xsd:date
+  ] ;
   :nam "JAN NIJBOER" ;
   :placeOfBirth [
     a :Village.n.02 ;

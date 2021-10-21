@@ -26,8 +26,14 @@ t00941:p1
     a :Age ;
     :duration "P1M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-03-09"^^xsd:date ;
-  :dateOfDeath "1898-04-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-03-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1898-04-12"^^xsd:date
+  ] ;
   :nam "GEERT FEKKO" ;
   :rol [
     a :Son.n.01 ;
@@ -40,8 +46,14 @@ t00941:p2
     a :Age ;
     :duration "P15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-07-10"^^xsd:date ;
-  :dateOfDeath "1900-07-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-07-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1900-07-25"^^xsd:date
+  ] ;
   :nam "GEERT FEKKO" ;
   :rol [
     a :Son.n.01 ;

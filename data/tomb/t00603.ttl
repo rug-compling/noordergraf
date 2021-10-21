@@ -27,8 +27,14 @@ t00603:p1
     a :Age ;
     :duration "P72Y6M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1804-03-15"^^xsd:date ;
-  :dateOfDeath "1876-10-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1804-03-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1876-10-02"^^xsd:date
+  ] ;
   :nam "TIETJE P. STEUR" ;
   :rol [
     a :Mother.n.01 ;

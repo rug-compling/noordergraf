@@ -26,8 +26,14 @@ t00176:p1
     a :Age ;
     :duration "P65Y2M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-01-27"^^xsd:date ;
-  :dateOfDeath "1931-04-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-01-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-04-07"^^xsd:date
+  ] ;
   :nam "HARMKE STREUPER" ;
   :rol [
     a :Spouse.n.01 ;
@@ -40,7 +46,13 @@ t00176:p2
     a :Age ;
     :duration "P92Y7M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-04-12"^^xsd:date ;
-  :dateOfDeath "1952-12-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-04-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-12-01"^^xsd:date
+  ] ;
   :nam "EGBERT SLAGTER" .
 

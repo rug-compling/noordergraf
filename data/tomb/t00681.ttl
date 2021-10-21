@@ -25,8 +25,14 @@ t00681:p1
     a :Age ;
     :duration "P40Y6M30D"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-11-02"^^xsd:date ;
-  :dateOfDeath "1942-06-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-11-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-06-01"^^xsd:date
+  ] ;
   :nam "GRIETJE KUIPER" ;
   :rol [
     a :Wife.n.01 ;

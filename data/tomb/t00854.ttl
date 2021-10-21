@@ -27,8 +27,14 @@ t00854:p1
     a :Age ;
     :duration "P73Y4M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1847-02-27"^^xsd:date ;
-  :dateOfDeath "1920-07-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-02-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-07-14"^^xsd:date
+  ] ;
   :nam "THIJS DIJKS" ;
   :rol [
     a :Spouse.n.01 ;

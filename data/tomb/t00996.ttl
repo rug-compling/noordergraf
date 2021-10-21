@@ -27,8 +27,14 @@ t00996:p1
     a :Age ;
     :duration "P44Y10M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-02-20"^^xsd:date ;
-  :dateOfDeath "1922-01-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-01-13"^^xsd:date
+  ] ;
   :nam "BEREND ANGERMAN" ;
   :rol [
     a :Spouse.n.01 ;

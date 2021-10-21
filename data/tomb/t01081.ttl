@@ -16,8 +16,14 @@ t01081:p1
     a :Age ;
     :duration "P70Y5M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1892-10-08"^^xsd:date ;
-  :dateOfDeath "1963-03-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1892-10-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-03-28"^^xsd:date
+  ] ;
   :nam "JANTJE BRUL" ;
   :placeOfBirth [
     a :Village.n.02 ;

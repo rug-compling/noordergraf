@@ -24,8 +24,14 @@ t00724:p1
     a :Age ;
     :duration "P79Y10M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-11-23"^^xsd:date ;
-  :dateOfDeath "1942-10-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-11-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-10-08"^^xsd:date
+  ] ;
   :nam "NESSIEN SANTS" ;
   :rol [
     a :Grandmother.n.01

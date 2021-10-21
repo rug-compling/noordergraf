@@ -26,8 +26,14 @@ t00736:p1
     a :Age ;
     :duration "P70Y6M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1815-02-06"^^xsd:date ;
-  :dateOfDeath "1885-08-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1815-02-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1885-08-30"^^xsd:date
+  ] ;
   :nam "ALBERTJE JAN MULDER" .
 
 t00736:p2

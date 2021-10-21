@@ -32,8 +32,14 @@ t00000:p1
     a :Age ;
     :duration "P45Y10M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-02-23"^^xsd:date ;
-  :dateOfDeath "1929-01-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-02-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-01-18"^^xsd:date
+  ] ;
   :nam "JAN WERKMAN" ;
   :occupation [
     a :Constable.n.03 ;

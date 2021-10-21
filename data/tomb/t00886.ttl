@@ -29,8 +29,14 @@ t00886:p1
     a :Age ;
     :duration "P75Y11M"^^xsd:duration
   ] ;
-  :dateOfBirth "1881-02-16"^^xsd:date ;
-  :dateOfDeath "1957-01-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-02-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-01-16"^^xsd:date
+  ] ;
   :nam "GEERTJE DE HAAN-EMMING" ;
   :rol [
     a :Wife.n.01 ;
@@ -47,8 +53,14 @@ t00886:p2
     a :Age ;
     :duration "P74Y11M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-08-08"^^xsd:date ;
-  :dateOfDeath "1958-08-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-08-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-08-01"^^xsd:date
+  ] ;
   :nam "ROELOF DE HAAN" ;
   :rol [
     a :Grandfather.n.01

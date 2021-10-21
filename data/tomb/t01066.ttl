@@ -32,8 +32,14 @@ t01066:p1
     a :Age ;
     :duration "P80Y9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1847-03-12"^^xsd:date ;
-  :dateOfDeath "1927-03-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-03-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-03-21"^^xsd:date
+  ] ;
   :nam "W. NIPPERUS" ;
   :occupation [
     a :Director.n.01 ;

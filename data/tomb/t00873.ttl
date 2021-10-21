@@ -27,7 +27,13 @@ t00873:p1
     a :Age ;
     :duration "P77Y3M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1889-06-03"^^xsd:date ;
-  :dateOfDeath "1966-09-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-06-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1966-09-16"^^xsd:date
+  ] ;
   :nam "A. POSTUMA" .
 

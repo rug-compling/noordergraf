@@ -23,8 +23,14 @@ t00269:p1
     a :Age ;
     :duration "P53Y1M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1917-05-31"^^xsd:date ;
-  :dateOfDeath "1970-07-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-05-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-07-15"^^xsd:date
+  ] ;
   :nam "GRIETJE A.C. EGGENS" ;
   :rol [
     a :Spouse.n.01 ;

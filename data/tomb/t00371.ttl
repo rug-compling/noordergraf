@@ -32,8 +32,14 @@ t00371:p1
     a :Age ;
     :duration "P71Y8M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-06-12"^^xsd:date ;
-  :dateOfDeath "1960-02-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-06-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-02-20"^^xsd:date
+  ] ;
   :nam "JAN BOELENS" ;
   :placeOfBirth t00371:c1 ;
   :placeOfDeath t00371:c1 ;

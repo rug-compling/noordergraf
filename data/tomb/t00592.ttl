@@ -29,7 +29,13 @@ t00592:p1
     a :Age ;
     :duration "P66Y6M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1934-07-11"^^xsd:date ;
-  :dateOfDeath "2001-02-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1934-07-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-02-06"^^xsd:date
+  ] ;
   :nam "KORNELIS SIEGERS" .
 

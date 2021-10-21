@@ -26,8 +26,14 @@ t00102:p1
     a :Age ;
     :duration "P73Y1M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-02-11"^^xsd:date ;
-  :dateOfDeath "1930-03-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-02-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-03-24"^^xsd:date
+  ] ;
   :nam "MARGARETHA JANTINA BUTTINGER" ;
   :occupation [
     a :Teacher.n.01 ;

@@ -23,7 +23,13 @@ t00981:p1
     a :Age ;
     :duration "P58Y10M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1925-05-05"^^xsd:date ;
-  :dateOfDeath "1984-03-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-05-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1984-03-13"^^xsd:date
+  ] ;
   :nam "EGBERTUS BERNHAM ELDERHOST" .
 

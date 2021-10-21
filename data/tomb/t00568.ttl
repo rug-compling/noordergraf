@@ -31,8 +31,14 @@ t00568:p1
     a :Age ;
     :duration "P78Y3M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1844-12-05"^^xsd:date ;
-  :dateOfDeath "1923-03-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-12-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1923-03-06"^^xsd:date
+  ] ;
   :nam "TRIJNTJE DE HAAN" ;
   :placeOfBirth [
     a :City.n.01 ;

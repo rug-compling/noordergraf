@@ -35,8 +35,14 @@ t00058:p1
     a :Age ;
     :duration "P72Y3M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1923-09-29"^^xsd:date ;
-  :dateOfDeath "1996-01-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-09-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1996-01-10"^^xsd:date
+  ] ;
   :nam "DOUWE NAUTA" ;
   :rol [
     a :Father.n.01
@@ -53,8 +59,14 @@ t00058:p2
     a :Age ;
     :duration "P86Y5M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1926-03-21"^^xsd:date ;
-  :dateOfDeath "2012-09-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1926-03-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-09-02"^^xsd:date
+  ] ;
   :nam "TJAAKTJE NAUTA-WILPSTRA" ;
   :rol [
     a :Grandmother.n.01

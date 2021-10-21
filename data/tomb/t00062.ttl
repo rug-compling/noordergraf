@@ -24,8 +24,14 @@ t00062:p1
     a :Age ;
     :duration "P74Y1M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1923-04-01"^^xsd:date ;
-  :dateOfDeath "1997-05-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-04-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-05-07"^^xsd:date
+  ] ;
   :nam "SIPCO JOHAN DE GROOT" ;
   :rol [
     a :Husband.n.01 ;

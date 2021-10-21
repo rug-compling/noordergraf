@@ -27,8 +27,14 @@ t00869:p1
     a :Age ;
     :duration "P48Y6M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-12-20"^^xsd:date ;
-  :dateOfDeath "1937-07-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-12-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-07-15"^^xsd:date
+  ] ;
   :nam "HENDRIK V.D. VEEN" ;
   :placeOfBirth [
     a :Village.n.02 ;

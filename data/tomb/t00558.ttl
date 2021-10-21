@@ -36,8 +36,14 @@ t00558:p1
     a :Age ;
     :duration "P88Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1776"^^xsd:gYear ;
-  :dateOfDeath "1864-01-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1776"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1864-01-08"^^xsd:date
+  ] ;
   :nam "EVERT VAN LINGE" ;
   :rol [
     a :Spouse.n.01 ;

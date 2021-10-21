@@ -27,8 +27,14 @@ t00236:p1
     a :Age ;
     :duration "P77Y4M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1810-07-22"^^xsd:date ;
-  :dateOfDeath "1887-12-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1810-07-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1887-12-13"^^xsd:date
+  ] ;
   :nam "GRIETJE KLAASSENS BOUWMAN" ;
   :rol [
     a :Spouse.n.01 ;

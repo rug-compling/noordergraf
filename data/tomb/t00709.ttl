@@ -33,8 +33,14 @@ t00709:p1
     a :Age ;
     :duration "P69Y7M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-04-08"^^xsd:date ;
-  :dateOfDeath "1926-11-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-11-21"^^xsd:date
+  ] ;
   :nam "JAN KATUIN" .
 
 t00709:p2
@@ -43,7 +49,13 @@ t00709:p2
     a :Age ;
     :duration "P72Y3M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1856-10-25"^^xsd:date ;
-  :dateOfDeath "1929-02-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-10-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-02-14"^^xsd:date
+  ] ;
   :nam "HARMINA HOFKAMP" .
 

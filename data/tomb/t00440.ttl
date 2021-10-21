@@ -37,8 +37,14 @@ t00440:p1
     a :Age ;
     :duration "P85Y11M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1930-06-28"^^xsd:date ;
-  :dateOfDeath "2016-06-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1930-06-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2016-06-15"^^xsd:date
+  ] ;
   :nam "TRIJNIE VAN BON" ;
   :placeOfBirth t00440:c1 ;
   :placeOfDeath t00440:c1 .
@@ -49,8 +55,14 @@ t00440:p2
     a :Age ;
     :duration "P66Y4M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1937-06-04"^^xsd:date ;
-  :dateOfDeath "2003-11-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-06-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2003-11-01"^^xsd:date
+  ] ;
   :nam "ANNIE BROWNE-VAN BON" ;
   :placeOfBirth t00440:c1 ;
   :placeOfDeath t00440:c2 .
@@ -61,8 +73,14 @@ t00440:p3
     a :Age ;
     :duration "P78Y5M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1934-01-15"^^xsd:date ;
-  :dateOfDeath "2012-07-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1934-01-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-07-01"^^xsd:date
+  ] ;
   :nam "COLIN HUNTINGTON-BROWNE" ;
   :placeOfBirth [
     a :City.n.01 ;

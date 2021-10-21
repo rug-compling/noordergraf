@@ -26,8 +26,14 @@ t00268:p1
     a :Age ;
     :duration "P34Y7M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1934-03-20"^^xsd:date ;
-  :dateOfDeath "1968-10-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1934-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-10-24"^^xsd:date
+  ] ;
   :nam "GASTON-AUGUST VANFRACHEM" ;
   :placeOfBirth [
     a :Hamlet.n.03 ;

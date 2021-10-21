@@ -34,8 +34,14 @@ t01053:p1
     a :Age ;
     :duration "P33Y10M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-01-05"^^xsd:date ;
-  :dateOfDeath "1920-11-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-01-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-11-22"^^xsd:date
+  ] ;
   :nam "BRECHTJE LUKAS" ;
   :placeOfBirth t01053:c1 ;
   :placeOfDeath t01053:c1 ;

@@ -41,8 +41,14 @@ t00555:p1
     a :Age ;
     :duration "P60Y11M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1850-01-21"^^xsd:date ;
-  :dateOfDeath "1911-01-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-01-03"^^xsd:date
+  ] ;
   :nam "GEUCHIEN R. VOS" ;
   :occupation [
     a :Farmer.n.01 ;

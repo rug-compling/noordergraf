@@ -28,8 +28,14 @@ t00945:p1
     a :Age ;
     :duration "P84Y8M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1810-04-30"^^xsd:date ;
-  :dateOfDeath "1895-01-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1810-04-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1895-01-20"^^xsd:date
+  ] ;
   :nam "ROELFIEN WOLTERS" ;
   :rol [
     a :Widow.n.01 ;

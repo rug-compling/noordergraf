@@ -23,8 +23,14 @@ t00293:p1
     a :Age ;
     :duration "P83Y6M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1841-08-08"^^xsd:date ;
-  :dateOfDeath "1925-02-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-08-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-02-09"^^xsd:date
+  ] ;
   :nam "LAMBERTUS HERMANNUS VAN DER SLEEN" ;
   :rol [
     a :Spouse.n.01 ;
@@ -42,8 +48,14 @@ t00293:p2
     a :Age ;
     :duration "P86Y8M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1842-06-25"^^xsd:date ;
-  :dateOfDeath "1929-03-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-06-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-03-05"^^xsd:date
+  ] ;
   :nam "ROELOFJE NIJMEIJER" ;
   :rol [
     a :Spouse.n.01 ;

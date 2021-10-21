@@ -44,8 +44,14 @@ t00418:p1
     a :Age ;
     :duration "P2Y7M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1907-01-15"^^xsd:date ;
-  :dateOfDeath "1909-08-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-01-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1909-08-22"^^xsd:date
+  ] ;
   :nam "EGBERDINA ZUIDEVELD" ;
   :rol [
     a :Daughter.n.01 ;

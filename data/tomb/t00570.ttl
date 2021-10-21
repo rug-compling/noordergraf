@@ -33,8 +33,14 @@ t00570:p1
     :duration "P62Y"^^xsd:duration ;
     :text "ruim 62 jaren"
   ] ;
-  :dateOfBirth "1803"^^xsd:gYear ;
-  :dateOfDeath "1865-08-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1803"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1865-08-29"^^xsd:date
+  ] ;
   :nam "AREND VAN LINGE" ;
   :rol [
     a :Spouse.n.01 ;

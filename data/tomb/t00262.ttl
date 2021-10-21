@@ -39,8 +39,14 @@ t00262:p1
     a :Age ;
     :duration "P94Y10M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1850-02-06"^^xsd:date ;
-  :dateOfDeath "1944-12-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-02-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-12-30"^^xsd:date
+  ] ;
   :nam "JOHANNES CURDH" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -61,8 +67,14 @@ t00262:p2
     a :Age ;
     :duration "P101Y11M"^^xsd:duration
   ] ;
-  :dateOfBirth "1850-09-29"^^xsd:date ;
-  :dateOfDeath "1952-08-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-09-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-08-29"^^xsd:date
+  ] ;
   :nam "TRIENTJE FLIKKEMA" ;
   :placeOfBirth [
     a :Town.n.01 ;

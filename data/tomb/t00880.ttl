@@ -29,8 +29,14 @@ t00880:p1
     a :Age ;
     :duration "P50Y8M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-01-20"^^xsd:date ;
-  :dateOfDeath "1929-10-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-01-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-10-08"^^xsd:date
+  ] ;
   :nam "ALBERT KOENS" ;
   :placeOfBirth [
     a :Village.n.02 ;

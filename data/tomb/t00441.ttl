@@ -27,8 +27,14 @@ t00441:p1
     a :Age ;
     :duration "P64Y5M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1861-10-21"^^xsd:date ;
-  :dateOfDeath "1926-04-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-10-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-04-07"^^xsd:date
+  ] ;
   :nam "STIJNTJE COERKAMP" ;
   :rol [
     a :Wife.n.01 ;
@@ -44,8 +50,14 @@ t00441:p2
     a :Age ;
     :duration "P84Y4M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1853-05-13"^^xsd:date ;
-  :dateOfDeath "1937-10-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1853-05-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-10-03"^^xsd:date
+  ] ;
   :nam "JAN ZEILINGA" ;
   :rol [
     a :Father.n.01 ;

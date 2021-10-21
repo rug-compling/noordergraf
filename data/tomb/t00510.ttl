@@ -32,8 +32,14 @@ t00510:p1
     a :Age ;
     :duration "P72Y1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1902-09-09"^^xsd:date ;
-  :dateOfDeath "1974-09-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-09-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-09-10"^^xsd:date
+  ] ;
   :nam "EELKE TEN CATE" ;
   :rol [
     a :Mother.n.01

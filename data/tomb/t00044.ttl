@@ -26,8 +26,14 @@ t00044:p1
     a :Age ;
     :duration "P108Y5M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-03-03"^^xsd:date ;
-  :dateOfDeath "1974-08-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-03-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-08-21"^^xsd:date
+  ] ;
   :nam "HENDRIK KWANT" ;
   :rol [
     a :Spouse.n.01 ;

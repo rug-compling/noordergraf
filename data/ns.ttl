@@ -16,11 +16,11 @@
   rdfs:isDefinedBy : .
 
 # TODO: mag dit, externe dingen een subklasse van een eigen klasse maken?
-:Date a rdfs:Class ;
+:DateClass a rdfs:Class ;
   rdfs:isDefinedBy : .
-xsd:date       rdfs:subClassOf :Date .
-xsd:gYearMonth rdfs:subClassOf :Date .
-xsd:gYear      rdfs:subClassOf :Date .
+xsd:date       rdfs:subClassOf :DateClass .
+xsd:gYearMonth rdfs:subClassOf :DateClass .
+xsd:gYear      rdfs:subClassOf :DateClass .
 
 :Class a rdfs:Class ;
   rdfs:comment "The top class for noordergraf."@eng ;

@@ -32,8 +32,14 @@ t00522:p1
     a :Age ;
     :duration "P60Y7M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1945-06-24"^^xsd:date ;
-  :dateOfDeath "2006-02-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1945-06-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2006-02-05"^^xsd:date
+  ] ;
   :nam "HARRY MOHAMED HOESEIN KARIM" ;
   :rol [
     a :Father.n.01

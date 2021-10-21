@@ -24,8 +24,14 @@ t00049:p1
     a :Age ;
     :duration "P59Y2M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1890-08-30"^^xsd:date ;
-  :dateOfDeath "1949-11-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-08-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-11-25"^^xsd:date
+  ] ;
   :nam "GEERT JAN FRANSEN" ;
   :rol [
     a :Husband.n.01 ;
@@ -43,8 +49,14 @@ t00049:p2
     a :Age ;
     :duration "P86Y8M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-10-23"^^xsd:date ;
-  :dateOfDeath "1975-07-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-10-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-07-19"^^xsd:date
+  ] ;
   :nam "JANTINA A. EMMEN" ;
   :rol [
     a :Mother.n.01 ;

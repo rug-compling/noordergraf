@@ -31,8 +31,14 @@ t00222:p1
     a :Age ;
     :duration "P92Y9M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1845-03-19"^^xsd:date ;
-  :dateOfDeath "1938-01-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-03-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-01-15"^^xsd:date
+  ] ;
   :nam "HINDRIK ELLES KONING" ;
   :placeOfBirth t00222:c1 ;
   :placeOfDeath t00222:c1 ;

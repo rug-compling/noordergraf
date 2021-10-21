@@ -23,8 +23,14 @@ t00719:p1
     a :Age ;
     :duration "P82Y1M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1850-02-20"^^xsd:date ;
-  :dateOfDeath "1932-04-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-04-01"^^xsd:date
+  ] ;
   :nam "CATHARINA FREDERIKA HERMAN DE GROOT" ;
   :placeOfBirth [
     a :City.n.01 ;

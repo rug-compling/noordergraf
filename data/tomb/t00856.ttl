@@ -32,8 +32,14 @@ t00856:p1
     a :Age ;
     :duration "P76Y1M"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-01-13"^^xsd:date ;
-  :dateOfDeath "1949-02-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-01-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-02-13"^^xsd:date
+  ] ;
   :nam "AALTIEN KAMPS" ;
   :placeOfBirth t00856:c1 ;
   :placeOfDeath t00856:c1 ;

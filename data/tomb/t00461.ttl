@@ -27,7 +27,13 @@ t00461:p1
     a :Age ;
     :duration "P90Y3M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1895-11-18"^^xsd:date ;
-  :dateOfDeath "1986-02-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-11-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1986-02-27"^^xsd:date
+  ] ;
   :nam "GEERTRUIDA MARIA DOODKORTE" .
 

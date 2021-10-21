@@ -34,8 +34,14 @@ t00931:p1
     a :Age ;
     :duration "P64Y5M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1910-01-25"^^xsd:date ;
-  :dateOfDeath "1974-07-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-01-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-07-02"^^xsd:date
+  ] ;
   :nam "NICOLAAS VISSER" ;
   :rol [
     a :Spouse.n.01 ;
@@ -48,7 +54,13 @@ t00931:p2
     a :Age ;
     :duration "P91Y10M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1913-09-07"^^xsd:date ;
-  :dateOfDeath "2005-07-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-09-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2005-07-18"^^xsd:date
+  ] ;
   :nam "HINDERKIEN DIJKEMA" .
 

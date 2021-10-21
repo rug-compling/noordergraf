@@ -32,8 +32,14 @@ t00219:p1
     :duration "P83Y"^^xsd:duration ;
     :text "ruim 83 jaren"
   ] ;
-  :dateOfBirth "1795"^^xsd:gYear ;
-  :dateOfDeath "1878-03-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1795"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1878-03-20"^^xsd:date
+  ] ;
   :nam "ELLE HENDRIKS KONING" ;
   :occupation [
     a :Elder.n.03 ;

@@ -29,8 +29,14 @@ t00082:p1
     a :Age ;
     :duration "P68Y1M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-04-20"^^xsd:date ;
-  :dateOfDeath "1947-05-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-05-28"^^xsd:date
+  ] ;
   :nam "LUDWIG GOEKEN" ;
   :placeOfBirth [
     a :City.n.01 ;
@@ -49,8 +55,14 @@ t00082:p2
     a :Age ;
     :duration "P73Y7M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-04-24"^^xsd:date ;
-  :dateOfDeath "1950-12-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-04-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-12-12"^^xsd:date
+  ] ;
   :nam "HENDERIKA G. VAN GOOZEN" ;
   :placeOfBirth [
     a :City.n.01 ;

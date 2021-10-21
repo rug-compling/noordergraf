@@ -31,8 +31,14 @@ t00064:p1
     a :Age ;
     :duration "P60Y2M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-07-12"^^xsd:date ;
-  :dateOfDeath "1938-09-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-07-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-09-30"^^xsd:date
+  ] ;
   :nam "AALTJE TOLNER" ;
   :rol [
     a :Wife.n.01 ;
@@ -47,7 +53,13 @@ t00064:p2
     a :Age ;
     :duration "P61Y6M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-03-23"^^xsd:date ;
-  :dateOfDeath "1941-10-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-03-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-10-22"^^xsd:date
+  ] ;
   :nam "JAN MEKKERING" .
 

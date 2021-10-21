@@ -23,8 +23,14 @@ t00626:p1
     a :Age ;
     :duration "P88Y7M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1839-11-03"^^xsd:date ;
-  :dateOfDeath "1928-06-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-11-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-06-14"^^xsd:date
+  ] ;
   :nam "ANNEGIEN MINKES" ;
   :rol [
     a :Widower.n.01 ;

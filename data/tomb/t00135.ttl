@@ -23,8 +23,14 @@ t00135:p1
     a :Age ;
     :duration "P51Y7M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-02-09"^^xsd:date ;
-  :dateOfDeath "1920-10-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-02-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-10-07"^^xsd:date
+  ] ;
   :nam "GERARD DE BOER" .
 
 t00135:p2
@@ -33,7 +39,13 @@ t00135:p2
     a :Age ;
     :duration "P66Y7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-08-01"^^xsd:date ;
-  :dateOfDeath "1935-08-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-08-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-08-08"^^xsd:date
+  ] ;
   :nam "ALBERTJE HUMMEL" .
 

@@ -28,8 +28,14 @@ t01129:p1
     a :Age ;
     :duration "P36Y7M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1839-10-13"^^xsd:date ;
-  :dateOfDeath "1876-05-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-10-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1876-05-29"^^xsd:date
+  ] ;
   :nam "HINDERKTJE HARMS WIGBOLDUS" ;
   :rol [
     a :Spouse.n.01 ;

@@ -26,7 +26,13 @@ t00463:p1
     a :Age ;
     :duration "P44Y6M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1948-03-18"^^xsd:date ;
-  :dateOfDeath "1992-09-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1948-03-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1992-09-21"^^xsd:date
+  ] ;
   :nam "JAN AREND COPINI" .
 

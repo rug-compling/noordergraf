@@ -31,8 +31,14 @@ t00892:p1
     a :Age ;
     :duration "P64Y3M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1793-04-10"^^xsd:date ;
-  :dateOfDeath "1857-07-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1793-04-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1857-07-12"^^xsd:date
+  ] ;
   :nam "JAN M. TEN HOOR" ;
   :occupation [
     a :Teacher.n.01 ;

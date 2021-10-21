@@ -26,8 +26,14 @@ t00275:p1
     a :Age ;
     :duration "P85Y11M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-02-10"^^xsd:date ;
-  :dateOfDeath "1955-01-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-02-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-01-17"^^xsd:date
+  ] ;
   :nam "LOLKE VAN DER WERF" ;
   :placeOfBirth [
     a :Municipality.n.01 ;

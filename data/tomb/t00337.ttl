@@ -36,8 +36,14 @@ t00337:p1
     a :Age ;
     :duration "P60Y3M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1856-01-07"^^xsd:date ;
-  :dateOfDeath "1916-04-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-01-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-04-15"^^xsd:date
+  ] ;
   :nam "JAN VERMEULEN" ;
   :placeOfBirth t00337:c1 ;
   :placeOfDeath t00337:c1 ;
@@ -52,8 +58,14 @@ t00337:p2
     a :Age ;
     :duration "P65Y6M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-01-21"^^xsd:date ;
-  :dateOfDeath "1925-07-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-07-22"^^xsd:date
+  ] ;
   :nam "ANNIGJE WESTENBERG" ;
   :placeOfBirth [
     a :City.n.01 ;

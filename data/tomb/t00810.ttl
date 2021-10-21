@@ -32,8 +32,14 @@ t00810:p1
     a :Age ;
     :duration "P51Y1M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1832-05-02"^^xsd:date ;
-  :dateOfDeath "1883-06-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1832-05-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1883-06-12"^^xsd:date
+  ] ;
   :nam "ANJE DERKS BOER" ;
   :placeOfBirth t00810:c1 ;
   :placeOfDeath t00810:c1 ;

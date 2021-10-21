@@ -32,8 +32,14 @@ t00323:p1
     a :Age ;
     :duration "P61Y3M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-11-14"^^xsd:date ;
-  :dateOfDeath "1935-02-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-11-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-02-26"^^xsd:date
+  ] ;
   :nam "GEERTRUIDA JUT" ;
   :placeOfBirth t00323:c1 ;
   :placeOfDeath t00323:c1 ;
@@ -47,8 +53,14 @@ t00323:p2
     a :Age ;
     :duration "P86Y3M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1870-12-29"^^xsd:date ;
-  :dateOfDeath "1957-04-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-12-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-04-06"^^xsd:date
+  ] ;
   :nam "OTTO METSELAAR" ;
   :placeOfBirth t00323:c1 ;
   :placeOfDeath t00323:c1 ;

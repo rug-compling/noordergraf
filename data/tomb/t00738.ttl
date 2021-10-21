@@ -23,7 +23,13 @@ t00738:p1
     a :Age ;
     :duration "P59Y22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1768-02-17"^^xsd:date ;
-  :dateOfDeath "1827-03-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1768-02-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1827-03-11"^^xsd:date
+  ] ;
   :nam "SIJBRAND JANS NIJHOF" .
 

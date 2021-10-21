@@ -23,8 +23,14 @@ t00024:p1
     a :Age ;
     :duration "P67Y9M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-04-08"^^xsd:date ;
-  :dateOfDeath "1928-01-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-01-09"^^xsd:date
+  ] ;
   :nam "ANNE DE VRIES" .
 
 t00024:p2
@@ -33,8 +39,14 @@ t00024:p2
     a :Age ;
     :duration "P89Y7M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1861-07-21"^^xsd:date ;
-  :dateOfDeath "1951-02-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-07-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-02-25"^^xsd:date
+  ] ;
   :nam "OTTO DOORNBOS" ;
   :ref t00024:v1 .
 

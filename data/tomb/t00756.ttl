@@ -26,8 +26,14 @@ t00756:p1
     a :Age ;
     :duration "P1M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-08-29"^^xsd:date ;
-  :dateOfDeath "1879-10-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-08-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1879-10-03"^^xsd:date
+  ] ;
   :nam "TRIENTJE" ;
   :rol [
     a :Daughter.n.01 ;

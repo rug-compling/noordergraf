@@ -23,8 +23,14 @@ t00879:p1
     a :Age ;
     :duration "P75Y9M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-12-12"^^xsd:date ;
-  :dateOfDeath "1955-10-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-12-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-10-08"^^xsd:date
+  ] ;
   :nam "HENDRIK KOOPS" ;
   :rol [
     a :Spouse.n.01 ;
@@ -37,7 +43,13 @@ t00879:p2
     a :Age ;
     :duration "P75Y3M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-08-27"^^xsd:date ;
-  :dateOfDeath "1962-12-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-08-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-12-25"^^xsd:date
+  ] ;
   :nam "ANNA BUNING" .
 

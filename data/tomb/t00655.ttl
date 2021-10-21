@@ -31,8 +31,14 @@ t00655:p1
     a :Age ;
     :duration "P58Y3M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1852-02-13"^^xsd:date ;
-  :dateOfDeath "1910-05-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-02-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1910-05-16"^^xsd:date
+  ] ;
   :nam "JACOBUS LAHPOR" ;
   :placeOfBirth [
     a :Village.n.02 ;

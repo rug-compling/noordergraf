@@ -20,7 +20,10 @@ tomb:t00659
 
 t00659:p1
   a :Female ;
-  :dateOfDeath "1708-12-05"^^xsd:date ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1708-12-05"^^xsd:date
+  ] ;
   :nam "IMPKE WOLTERS" ;
   :placeOfDeath [
     a :Village.n.02 ;

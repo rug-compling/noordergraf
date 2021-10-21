@@ -36,8 +36,14 @@ t00571:p1
     a :Age ;
     :duration "P66Y5M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-05-01"^^xsd:date ;
-  :dateOfDeath "1924-10-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-05-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-10-29"^^xsd:date
+  ] ;
   :nam "HARMINA VOS" ;
   :placeOfBirth t00571:c1 ;
   :placeOfDeath t00571:c1 ;

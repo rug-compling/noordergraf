@@ -40,8 +40,14 @@ t00693:p1
     a :Age ;
     :duration "P58Y1M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1937-01-05"^^xsd:date ;
-  :dateOfDeath "1995-03-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-01-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1995-03-02"^^xsd:date
+  ] ;
   :nam "JOHANNES FRANCISCUS BRATTINGA" .
 
 t00693:p2

@@ -32,8 +32,14 @@ t00526:p1
     a :Age ;
     :duration "P86Y1M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-11-16"^^xsd:date ;
-  :dateOfDeath "1974-01-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-11-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-01-12"^^xsd:date
+  ] ;
   :nam "CASPER WARDENAAR" ;
   :placeOfBirth [
     a :City.n.01 ;
@@ -67,8 +73,14 @@ t00526:p2
     a :Age ;
     :duration "P81Y3M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1908-12-25"^^xsd:date ;
-  :dateOfDeath "1990-04-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-12-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1990-04-06"^^xsd:date
+  ] ;
   :nam "POPPY WARDENAAR" ;
   :placeOfBirth [
     a :City.n.01 ;

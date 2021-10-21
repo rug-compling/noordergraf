@@ -38,8 +38,14 @@ t01017:p1
     a :Age ;
     :duration "P72Y11M"^^xsd:duration
   ] ;
-  :dateOfBirth "1739-01"^^xsd:gYearMonth ;
-  :dateOfDeath "1811-12-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1739-01"^^xsd:gYearMonth
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1811-12-14"^^xsd:date
+  ] ;
   :nam "JAN KORNELIS MULLER" ;
   :rol [
     a :Spouse.n.01 ;

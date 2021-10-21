@@ -31,8 +31,14 @@ t00732:p1
     a :Age ;
     :duration "P83Y2M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-09-06"^^xsd:date ;
-  :dateOfDeath "1942-12-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-12-02"^^xsd:date
+  ] ;
   :nam "GERRIT JAN VAN LOO" ;
   :placeOfBirth t00732:c1 ;
   :placeOfDeath t00732:c1 ;

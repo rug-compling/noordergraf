@@ -36,8 +36,14 @@ t00026:p1
     a :Age ;
     :duration "P46Y8M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1893-06-14"^^xsd:date ;
-  :dateOfDeath "1940-02-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-06-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-02-27"^^xsd:date
+  ] ;
   :nam "JACOB NIJBOER" ;
   :placeOfBirth t00026:c1 ;
   :placeOfDeath t00026:c1 ;
@@ -54,8 +60,14 @@ t00026:p2
     a :Age ;
     :duration "P86Y5M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1893-05-04"^^xsd:date ;
-  :dateOfDeath "1979-10-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1979-10-24"^^xsd:date
+  ] ;
   :nam "JULIA HELENA MARIA SIMONS" ;
   :placeOfBirth [
     a :City.n.01 ;

@@ -32,8 +32,14 @@ t00362:p1
     a :Age ;
     :duration "P73Y24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1854-09-02"^^xsd:date ;
-  :dateOfDeath "1927-09-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-09-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-09-26"^^xsd:date
+  ] ;
   :nam "JAKOB SMEENGE" ;
   :placeOfBirth t00362:c1 ;
   :placeOfDeath t00362:c1 ;

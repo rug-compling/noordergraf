@@ -23,8 +23,14 @@ t01021:p1
     a :Age ;
     :duration "P91Y10M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-02-02"^^xsd:date ;
-  :dateOfDeath "1955-12-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-02-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-12-11"^^xsd:date
+  ] ;
   :nam "GRIETJE MIDDEL" ;
   :rol t01021:r1, [
     a :Mother.n.01 ;
@@ -44,8 +50,14 @@ t01021:p2
     a :Age ;
     :duration "P85Y8M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-12-15"^^xsd:date ;
-  :dateOfDeath "1960-08-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-12-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-08-24"^^xsd:date
+  ] ;
   :nam "GEORGE GEUGIEN UYTERWIJK" ;
   :rol [
     a :Father.n.01 ;

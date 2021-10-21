@@ -29,8 +29,14 @@ t00993:p1
     a :Age ;
     :duration "P59Y4M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-12-03"^^xsd:date ;
-  :dateOfDeath "1936-04-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-12-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-04-15"^^xsd:date
+  ] ;
   :nam "ENGEL VEGT" .
 
 t00993:p2
@@ -39,7 +45,13 @@ t00993:p2
     a :Age ;
     :duration "P91Y8M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1872-03-17"^^xsd:date ;
-  :dateOfDeath "1963-11-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-03-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-11-28"^^xsd:date
+  ] ;
   :nam "EPKE MULDER" .
 

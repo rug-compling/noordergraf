@@ -27,8 +27,14 @@ t00908:p1
     a :Age ;
     :duration "P86Y6M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-06-10"^^xsd:date ;
-  :dateOfDeath "1955-12-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-06-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-12-30"^^xsd:date
+  ] ;
   :nam "JANTJE H. MEELKER" ;
   :placeOfBirth [
     a :Village.n.02 ;

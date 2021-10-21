@@ -23,8 +23,14 @@ t00718:p1
     a :Age ;
     :duration "P49Y7M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1881-04-11"^^xsd:date ;
-  :dateOfDeath "1930-12-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-04-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-12-08"^^xsd:date
+  ] ;
   :nam "JOHANNES THEDINGA" .
 
 t00718:p2
@@ -33,7 +39,13 @@ t00718:p2
     a :Age ;
     :duration "P66Y4M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-12-28"^^xsd:date ;
-  :dateOfDeath "1954-05-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-12-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-05-11"^^xsd:date
+  ] ;
   :nam "CATHARINA C. BAKKER" .
 

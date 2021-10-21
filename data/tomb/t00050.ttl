@@ -23,7 +23,13 @@ t00050:p1
     a :Age ;
     :duration "P74Y15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-12-14"^^xsd:date ;
-  :dateOfDeath "1949-12-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-12-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-12-29"^^xsd:date
+  ] ;
   :nam "JOHANNA M. RICHTERS" .
 

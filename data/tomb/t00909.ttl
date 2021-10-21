@@ -31,8 +31,14 @@ t00909:p1
     a :Age ;
     :duration "P73Y9M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1868-06-05"^^xsd:date ;
-  :dateOfDeath "1942-03-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-06-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-03-13"^^xsd:date
+  ] ;
   :nam "JANNES KORNELIS OOSTERHUIS" ;
   :placeOfBirth [
     a :Village.n.02 ;

@@ -23,8 +23,14 @@ t01065:p1
     a :Age ;
     :duration "P44Y20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1888-05-31"^^xsd:date ;
-  :dateOfDeath "1932-06-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-05-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-06-20"^^xsd:date
+  ] ;
   :nam "LUBBE DE BRAAK" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -48,8 +54,14 @@ t01065:p2
     a :Age ;
     :duration "P87Y9M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-10-05"^^xsd:date ;
-  :dateOfDeath "1975-07-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-10-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-07-28"^^xsd:date
+  ] ;
   :nam "JANTJE RENKEMA" ;
   :placeOfBirth [
     a :Village.n.02 ;

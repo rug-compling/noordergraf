@@ -29,8 +29,14 @@ t00870:p1
     a :Age ;
     :duration "P73Y11M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1826-06-18"^^xsd:date ;
-  :dateOfDeath "1900-06-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1826-06-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1900-06-05"^^xsd:date
+  ] ;
   :nam "HERMAN ROSING" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -45,8 +51,14 @@ t00870:p2
     a :Age ;
     :duration "P67Y4M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1839-04-17"^^xsd:date ;
-  :dateOfDeath "1906-08-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-04-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-08-28"^^xsd:date
+  ] ;
   :nam "ALIDA EVENHUIS" ;
   :placeOfBirth t00870:c2 ;
   :placeOfDeath t00870:c2 .

@@ -35,8 +35,14 @@ t01105:p1
     a :Age ;
     :duration "P30Y20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1915-05-05"^^xsd:date ;
-  :dateOfDeath "1945-05-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1915-05-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-05-25"^^xsd:date
+  ] ;
   :nam "ANNA WIELENGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

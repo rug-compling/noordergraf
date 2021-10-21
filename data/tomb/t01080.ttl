@@ -20,7 +20,13 @@ t01080:p1
     a :Age ;
     :duration "P76Y5M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1925-09-25"^^xsd:date ;
-  :dateOfDeath "2002-02-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-09-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2002-02-27"^^xsd:date
+  ] ;
   :nam "ANDRE G. DE WILDE" .
 

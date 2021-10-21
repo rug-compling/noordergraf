@@ -32,8 +32,14 @@ t00105:p1
     a :Age ;
     :duration "P37Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1900"^^xsd:gYear ;
-  :dateOfDeath "1937"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937"^^xsd:gYear
+  ] ;
   :nam "H.J. NIEUWENHUIS" ;
   :rol [
     a :Husband.n.01 ;
@@ -46,8 +52,14 @@ t00105:p2
     a :Age ;
     :duration "P47Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1904"^^xsd:gYear ;
-  :dateOfDeath "1951"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1904"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951"^^xsd:gYear
+  ] ;
   :nam "A.C. WIARDI" .
 
 t00105:p3
@@ -56,8 +68,14 @@ t00105:p3
     a :Age ;
     :duration "P74Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1931"^^xsd:gYear ;
-  :dateOfDeath "2005"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1931"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2005"^^xsd:gYear
+  ] ;
   :nam "H. NIEUWENHUIS" ;
   :rol [
     a :Grandfather.n.01

@@ -46,8 +46,14 @@ t00302:p1
     a :Age ;
     :duration "P84Y1M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-09-08"^^xsd:date ;
-  :dateOfDeath "1942-10-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-09-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-10-10"^^xsd:date
+  ] ;
   :nam "ALBERT OETS" ;
   :placeOfBirth t00302:c1 ;
   :placeOfDeath t00302:c1 .
@@ -58,8 +64,14 @@ t00302:p2
     a :Age ;
     :duration "P93Y9M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-03-02"^^xsd:date ;
-  :dateOfDeath "1951-12-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-03-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-12-31"^^xsd:date
+  ] ;
   :nam "ALEIDA ROELINA JENTINA STERKEN" ;
   :placeOfBirth [
     a :Village.n.02 ;

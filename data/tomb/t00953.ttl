@@ -28,8 +28,14 @@ t00953:p1
     a :Age ;
     :duration "P28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1896-01-24"^^xsd:date ;
-  :dateOfDeath "1896-02-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1896-02-21"^^xsd:date
+  ] ;
   :nam "REINA JANTINA" ;
   :placeOfBirth t00953:c1 ;
   :placeOfDeath t00953:c1 ;

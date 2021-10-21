@@ -27,8 +27,14 @@ t00939:p1
     a :Age ;
     :duration "P22Y6M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1933-08-31"^^xsd:date ;
-  :dateOfDeath "1956-03-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1933-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-03-28"^^xsd:date
+  ] ;
   :nam "JAN KNOOP" ;
   :rol [
     a :Spouse.n.01 ;

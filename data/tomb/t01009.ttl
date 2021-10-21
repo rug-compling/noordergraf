@@ -23,8 +23,14 @@ t01009:p1
     a :Age ;
     :duration "P50Y2M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1844-04-08"^^xsd:date ;
-  :dateOfDeath "1894-06-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-06-21"^^xsd:date
+  ] ;
   :nam "GEKE VELDMAN" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -46,8 +52,14 @@ t01009:p3
     a :Age ;
     :duration "P17Y6M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-03-14"^^xsd:date ;
-  :dateOfDeath "1893-10-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-03-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1893-10-09"^^xsd:date
+  ] ;
   :nam "LUTGERDINA BAKKER" ;
   :rol [
     a :Daughter.n.01 ;

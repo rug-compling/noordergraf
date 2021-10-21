@@ -24,8 +24,14 @@ t01106:p1
     a :Age ;
     :duration "P56Y7M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1906-06-14"^^xsd:date ;
-  :dateOfDeath "1963-01-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1906-06-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-01-15"^^xsd:date
+  ] ;
   :nam "BONTJE VEENMAN" ;
   :placeOfBirth [
     a :Village.n.02 ;

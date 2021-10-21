@@ -22,7 +22,13 @@ t01083:p1
     a :Age ;
     :duration "P41Y6M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1975-03-16"^^xsd:date ;
-  :dateOfDeath "2016-09-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1975-03-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2016-09-20"^^xsd:date
+  ] ;
   :nam "JOHAN" .
 

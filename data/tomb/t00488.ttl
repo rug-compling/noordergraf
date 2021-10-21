@@ -26,8 +26,14 @@ t00488:p1
     a :Age ;
     :duration "P75Y8M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1837-09-07"^^xsd:date ;
-  :dateOfDeath "1913-05-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-09-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-05-12"^^xsd:date
+  ] ;
   :nam "BOUKJE ZWART" .
 
 t00488:p2
@@ -36,7 +42,13 @@ t00488:p2
     a :Age ;
     :duration "P81Y4M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1836-03-03"^^xsd:date ;
-  :dateOfDeath "1917-07-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1836-03-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-07-04"^^xsd:date
+  ] ;
   :nam "JACOBUS IJPMA" .
 

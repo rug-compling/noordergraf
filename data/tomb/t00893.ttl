@@ -31,8 +31,14 @@ t00893:p1
     a :Age ;
     :duration "P70Y1M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1792-01-16"^^xsd:date ;
-  :dateOfDeath "1862-02-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1792-01-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1862-02-28"^^xsd:date
+  ] ;
   :nam "HINDERKIEN WILLEMS" ;
   :rol [
     a :Spouse.n.01 ;

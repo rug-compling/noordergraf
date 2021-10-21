@@ -28,8 +28,14 @@ t00245:p1
     a :Age ;
     :duration "P80Y9M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-06-28"^^xsd:date ;
-  :dateOfDeath "1945-04-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-06-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-04-15"^^xsd:date
+  ] ;
   :nam "ANNECHIEN BAZUIN" ;
   :placeOfBirth t00245:c1 ;
   :placeOfDeath t00245:c1 ;
@@ -44,8 +50,14 @@ t00245:p2
     a :Age ;
     :duration "P87Y4M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-11-23"^^xsd:date ;
-  :dateOfDeath "1946-04-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-11-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-04-03"^^xsd:date
+  ] ;
   :nam "ROELF MANNES" ;
   :placeOfBirth t00245:c1 ;
   :placeOfDeath t00245:c1 .

@@ -30,7 +30,13 @@ t01121:p1
     a :Age ;
     :duration "P76Y2M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1795-09-24"^^xsd:date ;
-  :dateOfDeath "1871-12-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1795-09-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1871-12-06"^^xsd:date
+  ] ;
   :nam "H. HEUKERS" .
 

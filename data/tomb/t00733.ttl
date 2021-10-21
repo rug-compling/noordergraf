@@ -36,8 +36,14 @@ t00733:p1
     a :Age ;
     :duration "P77Y7M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1866-11-10"^^xsd:date ;
-  :dateOfDeath "1944-06-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-11-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-06-16"^^xsd:date
+  ] ;
   :nam "WILLEMPTJE WIGGERINK" ;
   :placeOfBirth [
     a :Village.n.02 ;

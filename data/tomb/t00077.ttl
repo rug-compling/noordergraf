@@ -23,8 +23,14 @@ t00077:p1
     a :Age ;
     :duration "P64Y2M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1898-10-30"^^xsd:date ;
-  :dateOfDeath "1963-01-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-10-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-01-01"^^xsd:date
+  ] ;
   :nam "MAGERMANS", "RIE VAN VEEN" ;
   :rol [
     a :Mother.n.01 ;
@@ -39,8 +45,14 @@ t00077:p2
     a :Age ;
     :duration "P64Y16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1922-04-13"^^xsd:date ;
-  :dateOfDeath "1986-04-29"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1922-04-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1986-04-29"^^xsd:date
+  ] ;
   :nam "LEO SMIT" ;
   :rol [
     a :Husband.n.01 ;

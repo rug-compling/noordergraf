@@ -35,8 +35,14 @@ t00344:p1
     a :Age ;
     :duration "P90Y7M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1909-01-24"^^xsd:date ;
-  :dateOfDeath "1999-09-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1909-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1999-09-10"^^xsd:date
+  ] ;
   :nam "HENDRIK VRIJHOF" ;
   :rol [
     a :Husband.n.01 ;
@@ -55,8 +61,14 @@ t00344:p2
     a :Age ;
     :duration "P84Y2M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1917-07-01"^^xsd:date ;
-  :dateOfDeath "2001-09-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-07-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-09-28"^^xsd:date
+  ] ;
   :nam "LAMBERTA VRIJHOF-KUILDER" ;
   :rol [
     a :Grandmother.n.01

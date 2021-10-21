@@ -26,8 +26,14 @@ t01050:p1
     a :Age ;
     :duration "P85Y6M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1835-11-22"^^xsd:date ;
-  :dateOfDeath "1921-06-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-11-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1921-06-14"^^xsd:date
+  ] ;
   :nam "RENJE BOSSCHER" ;
   :rol [
     a :Aunt.n.01

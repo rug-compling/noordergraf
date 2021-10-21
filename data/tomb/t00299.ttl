@@ -33,8 +33,14 @@ t00299:p1
     a :Age ;
     :duration "P16Y7M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1909-07-20"^^xsd:date ;
-  :dateOfDeath "1926-03-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1909-07-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-03-11"^^xsd:date
+  ] ;
   :nam "KOOB SCHELHAAS" ;
   :rol [
     a :Son.n.01 ;

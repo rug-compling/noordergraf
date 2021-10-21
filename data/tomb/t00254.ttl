@@ -27,8 +27,14 @@ t00254:p1
     a :Age ;
     :duration "P46Y5M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-12-26"^^xsd:date ;
-  :dateOfDeath "1909-06-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-12-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1909-06-17"^^xsd:date
+  ] ;
   :nam "NAAMKE LIMBORGH" ;
   :rol [
     a :Sister.n.01

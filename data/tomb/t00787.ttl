@@ -28,8 +28,14 @@ t00787:p1
     a :Age ;
     :duration "P85Y11M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1833-03-30"^^xsd:date ;
-  :dateOfDeath "1919-03-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-03-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-03-12"^^xsd:date
+  ] ;
   :nam "WOLTER GARMING" ;
   :placeOfBirth t00787:c1 ;
   :placeOfDeath t00787:c1 .

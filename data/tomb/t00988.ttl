@@ -26,8 +26,14 @@ t00988:p1
     a :Age ;
     :duration "P69Y11M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1821-06-12"^^xsd:date ;
-  :dateOfDeath "1891-05-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1821-06-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891-05-14"^^xsd:date
+  ] ;
   :nam "JOHANNA WILLEMINA ZWAAN" ;
   :placeOfBirth [
     a :Village.n.02 ;

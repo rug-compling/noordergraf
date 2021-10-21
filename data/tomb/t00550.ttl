@@ -35,8 +35,14 @@ t00550:p1
     a :Age ;
     :duration "P75Y3M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1787-01-10"^^xsd:date ;
-  :dateOfDeath "1862-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1787-01-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1862-05-01"^^xsd:date
+  ] ;
   :nam "JAN ODDING" ;
   :occupation [
     a :Principal.n.02 ;

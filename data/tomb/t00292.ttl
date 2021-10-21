@@ -26,8 +26,14 @@ t00292:p1
     a :Age ;
     :duration "P49Y9M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1874-09-20"^^xsd:date ;
-  :dateOfDeath "1924-07-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-09-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-07-10"^^xsd:date
+  ] ;
   :nam "WILLEMINA ZANDINK" ;
   :placeOfBirth [
     a :Municipality.n.01 ;

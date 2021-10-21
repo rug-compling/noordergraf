@@ -36,8 +36,14 @@ t00490:p1
     a :Age ;
     :duration "P69Y7M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1843-10-15"^^xsd:date ;
-  :dateOfDeath "1913-06-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-10-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-06-05"^^xsd:date
+  ] ;
   :nam "DOUWE HARDER" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -56,8 +62,14 @@ t00490:p2
     a :Age ;
     :duration "P82Y4M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1844-01-04"^^xsd:date ;
-  :dateOfDeath "1926-05-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-01-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-05-08"^^xsd:date
+  ] ;
   :nam "AUKJE JASPER" ;
   :placeOfBirth t00490:c2 ;
   :placeOfDeath t00490:c2 ;

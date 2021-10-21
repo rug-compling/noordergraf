@@ -26,7 +26,13 @@ t00076:p1
     a :Age ;
     :duration "P1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1967-07-14"^^xsd:date ;
-  :dateOfDeath "1967-07-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1967-07-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1967-07-15"^^xsd:date
+  ] ;
   :nam "HERMA SCHAAPHOK" .
 

@@ -27,8 +27,14 @@ t00377:p1
     a :Age ;
     :duration "P71Y9M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-03-29"^^xsd:date ;
-  :dateOfDeath "1950-01-15"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-03-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-01-15"^^xsd:date
+  ] ;
   :nam "ELLEGIEN GELLING" ;
   :rol [
     a :Spouse.n.01 ;

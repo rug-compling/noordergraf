@@ -33,8 +33,14 @@ t00310:p1
     a :Age ;
     :duration "P51Y2M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1890-04-08"^^xsd:date ;
-  :dateOfDeath "1941-06-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-06-09"^^xsd:date
+  ] ;
   :nam "GRIETIEN LESSCHEN" ;
   :rol [
     a :Spouse.n.01 ;
@@ -47,8 +53,14 @@ t00310:p2
     a :Age ;
     :duration "P82Y4M"^^xsd:duration
   ] ;
-  :dateOfBirth "1894-03-03"^^xsd:date ;
-  :dateOfDeath "1976-07-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-03-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-07-03"^^xsd:date
+  ] ;
   :nam "ALBERT SMEMAN" ;
   :rol [
     a :Spouse.n.01 ;

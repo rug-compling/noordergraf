@@ -48,8 +48,14 @@ t00380:p1
     a :Age ;
     :duration "P95Y10M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-03-07"^^xsd:date ;
-  :dateOfDeath "1976-02-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-03-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-02-03"^^xsd:date
+  ] ;
   :nam "TRIJNTJE IJSTRA" ;
   :placeOfBirth t00380:c1 ;
   :placeOfDeath t00380:c1 .

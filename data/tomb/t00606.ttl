@@ -32,8 +32,14 @@ t00606:p1
     a :Age ;
     :duration "P91Y3M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1822-03-02"^^xsd:date ;
-  :dateOfDeath "1913-06-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1822-03-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-06-05"^^xsd:date
+  ] ;
   :nam "JACOB BOERMA HZ" ;
   :placeOfBirth t00606:c1 ;
   :placeOfDeath t00606:c1 .

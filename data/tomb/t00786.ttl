@@ -24,8 +24,14 @@ t00786:p1
     a :Age ;
     :duration "P31Y11M30D"^^xsd:duration
   ] ;
-  :dateOfBirth "1893-09-19"^^xsd:date ;
-  :dateOfDeath "1925-09-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-09-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-09-18"^^xsd:date
+  ] ;
   :nam "HINDERIKUS KOERS" ;
   :placeOfBirth [
     a :Village.n.02 ;

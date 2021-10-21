@@ -42,8 +42,14 @@ t00657:p2
     a :Age ;
     :duration "P73Y6M20D"^^xsd:duration
   ] ;
-  :dateOfBirth "1808-11-10"^^xsd:date ;
-  :dateOfDeath "1882-05-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1808-11-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-05-30"^^xsd:date
+  ] ;
   :nam "JOHANN LUDEWIG JACKÉ" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -63,8 +69,14 @@ t00657:p3
     a :Age ;
     :duration "P40Y6M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1839-04-23"^^xsd:date ;
-  :dateOfDeath "1879-11-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1879-11-06"^^xsd:date
+  ] ;
   :nam "AUGUSTA JACKÉ" ;
   :placeOfBirth t00657:c3 ;
   :placeOfDeath t00657:c3 .
@@ -75,8 +87,14 @@ t00657:p4
     a :Age ;
     :duration "P45Y3M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-01-23"^^xsd:date ;
-  :dateOfDeath "1904-05-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-01-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-05-02"^^xsd:date
+  ] ;
   :nam "AUGUST JACKÉ" ;
   :placeOfBirth t00657:c3 ;
   :placeOfDeath t00657:c3 .

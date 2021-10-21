@@ -24,8 +24,14 @@ t00831:p1
     a :Age ;
     :duration "P68Y11M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1871-12-01"^^xsd:date ;
-  :dateOfDeath "1940-11-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-11-09"^^xsd:date
+  ] ;
   :nam "HENDRIKJE KOK" ;
   :placeOfBirth [
     a :Village.n.02 ;

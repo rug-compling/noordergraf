@@ -23,8 +23,14 @@ t00493:p1
     a :Age ;
     :duration "P62Y6M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1854-07-21"^^xsd:date ;
-  :dateOfDeath "1917-02-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-07-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-02-13"^^xsd:date
+  ] ;
   :nam "HELENA PANHUIS" ;
   :rol [
     a :Wife.n.01 ;
@@ -40,8 +46,14 @@ t00493:p2
     a :Age ;
     :duration "P61Y10M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-07-21"^^xsd:date ;
-  :dateOfDeath "1922-05-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-07-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-05-23"^^xsd:date
+  ] ;
   :nam "PIETER VAN DER ZEE" ;
   :rol [
     a :Father.n.01 ;

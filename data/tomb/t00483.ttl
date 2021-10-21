@@ -30,8 +30,14 @@ t00483:p1
     a :Age ;
     :duration "P94Y9M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1883-11-15"^^xsd:date ;
-  :dateOfDeath "1978-08-28"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-11-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-08-28"^^xsd:date
+  ] ;
   :nam "DOUWE KOOPAL" .
 
 t00483:p3

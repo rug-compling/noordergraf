@@ -24,8 +24,14 @@ t01126:p1
     a :Age ;
     :duration "P72Y2M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1927-05-01"^^xsd:date ;
-  :dateOfDeath "1999-07-23"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1927-05-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1999-07-23"^^xsd:date
+  ] ;
   :nam "JELTE GEERT HAAKSEMA" ;
   :rol t01126:r3, [
     a :Father.n.01

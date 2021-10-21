@@ -23,8 +23,14 @@ t00213:p1
     a :Age ;
     :duration "P58Y2M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1860-08-27"^^xsd:date ;
-  :dateOfDeath "1918-10-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-08-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-10-31"^^xsd:date
+  ] ;
   :nam "ALBERT BAKKER" .
 
 t00213:p2
@@ -33,7 +39,13 @@ t00213:p2
     a :Age ;
     :duration "P101Y2M14D"^^xsd:duration
   ] ;
-  :dateOfBirth "1863-11-18"^^xsd:date ;
-  :dateOfDeath "1965-02-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-11-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-02-01"^^xsd:date
+  ] ;
   :nam "GEERTJE MULDER" .
 

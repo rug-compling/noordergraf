@@ -24,8 +24,14 @@ t00847:p1
     a :Age ;
     :duration "P22Y11M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-04-18"^^xsd:date ;
-  :dateOfDeath "1903-04-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-04-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-04-14"^^xsd:date
+  ] ;
   :nam "RIJK KRIJTENBURG" ;
   :placeOfBirth [
     a :Island.n.01 ;

@@ -23,8 +23,14 @@ t01133:p1
     a :Age ;
     :duration "P53Y1M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-11-22"^^xsd:date ;
-  :dateOfDeath "1953-01-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-11-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-01-07"^^xsd:date
+  ] ;
   :nam "GERRITDINA VREEBURG" ;
   :rol [
     a :Parent.n.01
@@ -36,8 +42,14 @@ t01133:p2
     a :Age ;
     :duration "P82Y2M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-06-28"^^xsd:date ;
-  :dateOfDeath "1979-09-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-06-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1979-09-01"^^xsd:date
+  ] ;
   :nam "BEREND DE JONGE" ;
   :rol [
     a :Parent.n.01

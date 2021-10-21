@@ -34,8 +34,14 @@ t00629:p1
     a :Age ;
     :duration "P72Y11M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1856-07-31"^^xsd:date ;
-  :dateOfDeath "1929-07-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-07-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-07-19"^^xsd:date
+  ] ;
   :nam "HINDERIEKUS WILHELM HENSEL" ;
   :placeOfBirth [
     a :Town.n.01 ;
@@ -53,7 +59,13 @@ t00629:p2
     a :Age ;
     :duration "P72Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-02-20"^^xsd:date ;
-  :dateOfDeath "1934-02-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-02-20"^^xsd:date
+  ] ;
   :nam "HINDERKIEN BOS" .
 

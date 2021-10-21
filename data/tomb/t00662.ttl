@@ -26,8 +26,14 @@ t00662:p1
     a :Age ;
     :duration "P73Y8M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-11-12"^^xsd:date ;
-  :dateOfDeath "1943-07-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-11-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-07-27"^^xsd:date
+  ] ;
   :nam "AREND J. FABER" ;
   :rol [
     a :Brother.n.01 ;

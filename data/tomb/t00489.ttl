@@ -24,8 +24,14 @@ t00489:p1
     a :Age ;
     :duration "P75Y6M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-11-21"^^xsd:date ;
-  :dateOfDeath "1933-06-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-11-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-06-18"^^xsd:date
+  ] ;
   :nam "JOHANNES F. JANSSEN" ;
   :rol [
     a :Spouse.n.01 ;
@@ -38,7 +44,13 @@ t00489:p2
     a :Age ;
     :duration "P78Y8M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-12-16"^^xsd:date ;
-  :dateOfDeath "1937-09-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-12-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-09-13"^^xsd:date
+  ] ;
   :nam "HENDERIKA TROSSEL" .
 

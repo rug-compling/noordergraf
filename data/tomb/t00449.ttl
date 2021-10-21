@@ -23,8 +23,14 @@ t00449:p1
     a :Age ;
     :duration "P72Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1906"^^xsd:gYear ;
-  :dateOfDeath "1978"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1906"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978"^^xsd:gYear
+  ] ;
   :nam "TEEN WILLEM VISSER" ;
   :rol [
     a :Spouse.n.01 ;
@@ -37,7 +43,13 @@ t00449:p2
     a :Age ;
     :duration "P80Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1904"^^xsd:gYear ;
-  :dateOfDeath "1984"^^xsd:gYear ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1904"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1984"^^xsd:gYear
+  ] ;
   :nam "JANS JOLLEMA" .
 

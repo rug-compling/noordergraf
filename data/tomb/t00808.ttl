@@ -27,8 +27,14 @@ t00808:p1
     a :Age ;
     :duration "P38Y7M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-03-05"^^xsd:date ;
-  :dateOfDeath "1935-10-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-03-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-10-31"^^xsd:date
+  ] ;
   :nam "JAN OOSTERHUIS" ;
   :placeOfBirth [
     a :Village.n.02 ;

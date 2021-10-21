@@ -33,8 +33,14 @@ t00608:p1
     a :Age ;
     :duration "P56Y2M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1833-12-30"^^xsd:date ;
-  :dateOfDeath "1890-03-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-12-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1890-03-04"^^xsd:date
+  ] ;
   :nam "HENDRIK H. KAMPS" ;
   :rol [
     a :Spouse.n.01 ;

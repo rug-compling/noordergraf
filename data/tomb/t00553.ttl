@@ -31,8 +31,14 @@ t00553:p1
     a :Age ;
     :duration "P50Y10M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1854-05-20"^^xsd:date ;
-  :dateOfDeath "1905-03-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-05-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-03-21"^^xsd:date
+  ] ;
   :nam "KLAAS VLIEG" ;
   :occupation [
     a :Teacher.n.01 ;

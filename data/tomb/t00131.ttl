@@ -23,8 +23,14 @@ t00131:p1
     a :Age ;
     :duration "P37Y3M2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-10-01"^^xsd:date ;
-  :dateOfDeath "1897-01-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-10-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1897-01-03"^^xsd:date
+  ] ;
   :nam "IJSEBRAND BUTTINGER" ;
   :placeOfBirth [
     a :City.n.01 ;

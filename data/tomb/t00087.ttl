@@ -23,8 +23,14 @@ t00087:p1
     a :Age ;
     :duration "P44Y10M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-02-24"^^xsd:date ;
-  :dateOfDeath "1944-01-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-02-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-01-01"^^xsd:date
+  ] ;
   :nam "P.H.E. VAN DOOREN" ;
   :occupation [
     a :Director.n.01 ;
@@ -42,7 +48,13 @@ t00087:p2
     a :Age ;
     :duration "P84Y7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1899-02-22"^^xsd:date ;
-  :dateOfDeath "1983-03-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-02-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1983-03-01"^^xsd:date
+  ] ;
   :nam "MARIA DEKKER" .
 

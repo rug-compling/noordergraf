@@ -23,8 +23,14 @@ t00148:p1
     a :Age ;
     :duration "P65Y4M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1908-05-13"^^xsd:date ;
-  :dateOfDeath "1973-10-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-05-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1973-10-10"^^xsd:date
+  ] ;
   :nam "ELIZABETH VOGELZANG" ;
   :rol [
     a :Mother.n.01
@@ -41,8 +47,14 @@ t00148:p2
     a :Age ;
     :duration "P80Y8M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1896-10-25"^^xsd:date ;
-  :dateOfDeath "1977-07-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-10-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1977-07-05"^^xsd:date
+  ] ;
   :nam "MENNO BEREND DRAAISMA" ;
   :rol [
     a :Father.n.01

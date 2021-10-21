@@ -30,8 +30,14 @@ t00871:p1
     a :Age ;
     :duration "P67Y4M7D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-09-01"^^xsd:date ;
-  :dateOfDeath "1927-01-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-01-08"^^xsd:date
+  ] ;
   :nam "JANTIEN BRINKS" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -46,8 +52,14 @@ t00871:p2
     a :Age ;
     :duration "P75Y25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1857-02-26"^^xsd:date ;
-  :dateOfDeath "1932-03-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-02-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-03-22"^^xsd:date
+  ] ;
   :nam "J.S. WILTING" ;
   :placeOfBirth t00871:c2 ;
   :placeOfDeath t00871:c2 .

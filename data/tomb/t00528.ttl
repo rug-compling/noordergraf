@@ -27,8 +27,14 @@ t00528:p1
     a :Age ;
     :duration "P61Y7M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1932-03-27"^^xsd:date ;
-  :dateOfDeath "1993-11-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1932-03-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993-11-25"^^xsd:date
+  ] ;
   :nam "JOHANNES VAN DER MEULEN" ;
   :rol [
     a :Husband.n.01 ;

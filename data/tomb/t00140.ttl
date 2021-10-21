@@ -23,8 +23,14 @@ t00140:p1
     a :Age ;
     :duration "P55Y10M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-05-29"^^xsd:date ;
-  :dateOfDeath "1942-04-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-05-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-04-21"^^xsd:date
+  ] ;
   :nam "AALTJE WIJNGAARD" ;
   :rol [
     a :Mother.n.01
@@ -39,8 +45,14 @@ t00140:p2
     a :Age ;
     :duration "P88Y9M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-03-17"^^xsd:date ;
-  :dateOfDeath "1973-01-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-03-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1973-01-05"^^xsd:date
+  ] ;
   :nam "JAN RENGERS" ;
   :rol [
     a :Father.n.01

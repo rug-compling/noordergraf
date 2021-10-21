@@ -39,8 +39,14 @@ t00161:p1
     a :Age ;
     :duration "P67Y7M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1863-02-15"^^xsd:date ;
-  :dateOfDeath "1930-09-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-02-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-09-26"^^xsd:date
+  ] ;
   :nam "JELTJE VEENMAN" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -64,8 +70,14 @@ t00161:p2
     a :Age ;
     :duration "P91Y2M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1861-01-02"^^xsd:date ;
-  :dateOfDeath "1952-03-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-01-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-03-19"^^xsd:date
+  ] ;
   :nam "MARTEN DE WIND" ;
   :placeOfBirth [
     a :Village.n.02 ;

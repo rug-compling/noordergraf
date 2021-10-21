@@ -26,8 +26,14 @@ t00083:p1
     a :Age ;
     :duration "P72Y10M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1891-06-04"^^xsd:date ;
-  :dateOfDeath "1964-05-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-06-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-05-01"^^xsd:date
+  ] ;
   :nam "WILHELMUS FRANCISCUS BERNARDUS SCHNEIDERS" ;
   :rol [
     a :Husband.n.01 ;
@@ -40,7 +46,13 @@ t00083:p2
     a :Age ;
     :duration "P86Y8M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1889-04-20"^^xsd:date ;
-  :dateOfDeath "1976-01-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-01-10"^^xsd:date
+  ] ;
   :nam "GEERTRUIDA VERONICA SCHNEIDERS-BLAAUW" .
 

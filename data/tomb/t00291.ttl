@@ -26,8 +26,14 @@ t00291:p1
     a :Age ;
     :duration "P70Y4M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1855-10-15"^^xsd:date ;
-  :dateOfDeath "1926-03-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1855-10-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-03-09"^^xsd:date
+  ] ;
   :nam "HERMANNUS TROOST" ;
   :rol [
     a :Spouse.n.01 ;
@@ -40,7 +46,13 @@ t00291:p2
     a :Age ;
     :duration "P80Y4M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1856-02-07"^^xsd:date ;
-  :dateOfDeath "1936-07-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-02-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-07-05"^^xsd:date
+  ] ;
   :nam "ANTJE VAN DER PUTTEN" .
 

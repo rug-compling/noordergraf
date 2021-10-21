@@ -23,8 +23,14 @@ t00963:p1
     a :Age ;
     :duration "P30Y4M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1886-11-21"^^xsd:date ;
-  :dateOfDeath "1917-04-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-11-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-04-19"^^xsd:date
+  ] ;
   :nam "WILLEMIENE HENRIETTE JANSEN" ;
   :placeOfBirth [
     a :City.n.01 ;

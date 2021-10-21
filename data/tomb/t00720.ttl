@@ -30,8 +30,14 @@ t00720:p1
     a :Age ;
     :duration "P75Y5M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1855-07-16"^^xsd:date ;
-  :dateOfDeath "1931-01-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1855-07-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-01-13"^^xsd:date
+  ] ;
   :nam "HENDRIK SLIK" ;
   :occupation [
     a :Clerk.n.01 ;
@@ -56,7 +62,13 @@ t00720:p2
     a :Age ;
     :duration "P81Y2M6D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-08-05"^^xsd:date ;
-  :dateOfDeath "1943-10-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-08-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-10-11"^^xsd:date
+  ] ;
   :nam "MARGRIETHA CORNELIA ZIJLMA" .
 

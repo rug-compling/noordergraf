@@ -36,8 +36,14 @@ t00013:p1
     a :Age ;
     :duration "P35Y5M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1895-12-14"^^xsd:date ;
-  :dateOfDeath "1931-06-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-12-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-06-10"^^xsd:date
+  ] ;
   :nam "ANJE SMIT" ;
   :placeOfBirth t00013:c1 ;
   :placeOfDeath t00013:c2 .
@@ -48,8 +54,14 @@ t00013:p2
     a :Age ;
     :duration "P72Y1M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-03-19"^^xsd:date ;
-  :dateOfDeath "1936-05-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-03-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-05-11"^^xsd:date
+  ] ;
   :nam "HELENA REITSMA" ;
   :placeOfBirth t00013:c1 ;
   :placeOfDeath t00013:c2 ;
@@ -64,8 +76,14 @@ t00013:p3
     a :Age ;
     :duration "P85Y2M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1862-11-11"^^xsd:date ;
-  :dateOfDeath "1948-02-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-11-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-02-09"^^xsd:date
+  ] ;
   :nam "BALTUS SMIT" ;
   :placeOfBirth [
     a :Village.n.02 ;

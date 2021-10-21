@@ -42,8 +42,14 @@ t00286:p1
     a :Age ;
     :duration "P46Y11M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-01-24"^^xsd:date ;
-  :dateOfDeath "1920-01-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-01-02"^^xsd:date
+  ] ;
   :nam "PIETER BAKKER" ;
   :quo "RUST ZACHT MOEDER" .
 
@@ -53,8 +59,14 @@ t00286:p2
     a :Age ;
     :duration "P81Y5M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1875-10-07"^^xsd:date ;
-  :dateOfDeath "1957-04-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-10-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-04-05"^^xsd:date
+  ] ;
   :nam "JANTJE ROZEMULLER" ;
   :quo "RUST ZACHT VADER" .
 

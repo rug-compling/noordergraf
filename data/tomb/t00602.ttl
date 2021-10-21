@@ -28,8 +28,14 @@ t00602:p1
     a :Age ;
     :duration "P77Y24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1797-09-12"^^xsd:date ;
-  :dateOfDeath "1874-10-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1797-09-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1874-10-06"^^xsd:date
+  ] ;
   :nam "L.S. NIJHOF" ;
   :placeOfBirth [
     a :Village.n.02 ;

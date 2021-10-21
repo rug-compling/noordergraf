@@ -31,8 +31,14 @@ t00319:p1
     a :Age ;
     :duration "P88Y3M16D"^^xsd:duration
   ] ;
-  :dateOfBirth "1911-06-05"^^xsd:date ;
-  :dateOfDeath "1999-09-21"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-06-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1999-09-21"^^xsd:date
+  ] ;
   :nam "GRIET JANSEN-SLOMP" ;
   :rol t00319:r1, [
     a :Spouse.n.01 ;

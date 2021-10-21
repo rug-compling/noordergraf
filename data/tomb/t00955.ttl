@@ -31,8 +31,14 @@ t00955:p1
     a :Age ;
     :duration "P84Y2D"^^xsd:duration
   ] ;
-  :dateOfBirth "1831-03-20"^^xsd:date ;
-  :dateOfDeath "1915-03-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1831-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-03-22"^^xsd:date
+  ] ;
   :nam "JAN HOUWING" ;
   :placeOfBirth t00955:c1 ;
   :placeOfDeath t00955:c1 ;

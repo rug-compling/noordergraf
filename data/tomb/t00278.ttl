@@ -23,8 +23,14 @@ t00278:p1
     a :Age ;
     :duration "P39Y5M17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1933-05-10"^^xsd:date ;
-  :dateOfDeath "1972-10-27"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1933-05-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-10-27"^^xsd:date
+  ] ;
   :nam "EELJE LIER" ;
   :rol [
     a :Wife.n.01 ;

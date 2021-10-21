@@ -35,8 +35,14 @@ t00695:p1
     a :Age ;
     :duration "P78Y1M26D"^^xsd:duration
   ] ;
-  :dateOfBirth "1846-06-17"^^xsd:date ;
-  :dateOfDeath "1924-08-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-06-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-08-12"^^xsd:date
+  ] ;
   :nam "JAN BETTING" ;
   :placeOfBirth t00695:c1 ;
   :placeOfDeath t00695:c1 ;

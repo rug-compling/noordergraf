@@ -37,8 +37,14 @@ t00727:p1
     a :Age ;
     :duration "P36Y8M19D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-01-11"^^xsd:date ;
-  :dateOfDeath "1916-09-30"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-01-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-09-30"^^xsd:date
+  ] ;
   :nam "JANTJE AIKES" ;
   :rol [
     a :Daughter.n.01 ;

@@ -33,8 +33,14 @@ t00632:p1
     a :Age ;
     :duration "P54Y6M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1823-08-15"^^xsd:date ;
-  :dateOfDeath "1878-02-26"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1823-08-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1878-02-26"^^xsd:date
+  ] ;
   :nam "ENNO BRONSEMA" ;
   :rol [
     a :Spouse.n.01 ;

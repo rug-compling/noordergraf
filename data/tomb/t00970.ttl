@@ -38,8 +38,14 @@ t00970:p1
     a :Age ;
     :duration "P41Y3M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1900-07-19"^^xsd:date ;
-  :dateOfDeath "1941-11-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-07-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-11-11"^^xsd:date
+  ] ;
   :nam "HARMANNUS C.P. VENEMA" ;
   :rol t00970:r2, [
     a :Widower.n.01 ;

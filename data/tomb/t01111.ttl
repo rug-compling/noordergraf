@@ -27,8 +27,14 @@ t01111:p1
     a :Age ;
     :duration "P85Y4M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1843-04-19"^^xsd:date ;
-  :dateOfDeath "1928-09-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-04-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-09-12"^^xsd:date
+  ] ;
   :nam "JANTJE A. NIEHOFF" ;
   :placeOfBirth [
     a :Village.n.02 ;

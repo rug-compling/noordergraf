@@ -26,8 +26,14 @@ t00296:p1
     a :Age ;
     :duration "P46Y10M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-10-10"^^xsd:date ;
-  :dateOfDeath "1926-09-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-10-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-09-04"^^xsd:date
+  ] ;
   :nam "JOHANNES DOLDERSUM" ;
   :rol [
     a :Brother-in-law.n.01 ;
@@ -43,8 +49,14 @@ t00296:p2
     a :Age ;
     :duration "P99Y11M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1885-12-13"^^xsd:date ;
-  :dateOfDeath "1985-12-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-12-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1985-12-12"^^xsd:date
+  ] ;
   :nam "HILLIGJE DOLDERSUM-BRUINS" ;
   :placeOfDeath [
     a :Town.n.01 ;

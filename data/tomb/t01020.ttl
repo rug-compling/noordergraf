@@ -28,8 +28,14 @@ t01020:p1
     a :Age ;
     :duration "P33Y3M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1921-08-18"^^xsd:date ;
-  :dateOfDeath "1954-12-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1921-08-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-12-09"^^xsd:date
+  ] ;
   :nam "JANTIENES GERDING" ;
   :occupation [
     a :Navigator.n.01 ;

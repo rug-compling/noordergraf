@@ -24,8 +24,14 @@ t01039:p1
     a :Age ;
     :duration "P17Y10M"^^xsd:duration
   ] ;
-  :dateOfBirth "1952-11-24"^^xsd:date ;
-  :dateOfDeath "1970-09-24"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1952-11-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-09-24"^^xsd:date
+  ] ;
   :nam "FERDINAND JOHANNES VAN DIJKEN" .
 
 t01039:v1

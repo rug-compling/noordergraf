@@ -41,8 +41,14 @@ t00433:p1
     a :Age ;
     :duration "P56Y5M12D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-05-06"^^xsd:date ;
-  :dateOfDeath "1933-10-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-05-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-10-18"^^xsd:date
+  ] ;
   :nam "TJEERD SCHAAFSMA" ;
   :placeOfBirth t00433:c1 ;
   :placeOfDeath t00433:c2 ;
@@ -57,8 +63,14 @@ t00433:p2
     a :Age ;
     :duration "P74Y6M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-05-26"^^xsd:date ;
-  :dateOfDeath "1951-12-14"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-05-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-12-14"^^xsd:date
+  ] ;
   :nam "HENDERIKA BECHERER" ;
   :placeOfBirth t00433:c2 ;
   :placeOfDeath t00433:c1 ;

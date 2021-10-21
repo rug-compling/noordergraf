@@ -33,7 +33,13 @@ t00208:p1
     a :Age ;
     :duration "P94Y3M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1767-02-20"^^xsd:date ;
-  :dateOfDeath "1861-06-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1767-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1861-06-07"^^xsd:date
+  ] ;
   :nam "HARM KORNELIS KRUIJER" .
 

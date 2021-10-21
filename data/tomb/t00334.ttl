@@ -26,8 +26,14 @@ t00334:p1
     a :Age ;
     :duration "P80Y10M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1851-10-08"^^xsd:date ;
-  :dateOfDeath "1932-08-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1851-10-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-08-09"^^xsd:date
+  ] ;
   :nam "JAN HUIZING" ;
   :rol [
     a :Parent.n.01 ;
@@ -40,8 +46,14 @@ t00334:p2
     a :Age ;
     :duration "P55Y10M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1859-08-19"^^xsd:date ;
-  :dateOfDeath "1915-07-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-08-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-07-12"^^xsd:date
+  ] ;
   :nam "LAMMECHIEN OLDENBURGER" ;
   :rol [
     a :Parent.n.01 ;

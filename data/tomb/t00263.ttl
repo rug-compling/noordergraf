@@ -36,8 +36,14 @@ t00263:p1
     a :Age ;
     :duration "P68Y8M11D"^^xsd:duration
   ] ;
-  :dateOfBirth "1858-10-28"^^xsd:date ;
-  :dateOfDeath "1927-07-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-10-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-07-09"^^xsd:date
+  ] ;
   :nam "C.K. WIERINGA" ;
   :placeOfBirth t00263:c1 ;
   :placeOfDeath t00263:c1 ;
@@ -52,8 +58,14 @@ t00263:p2
     a :Age ;
     :duration "P83Y8M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1876-11-10"^^xsd:date ;
-  :dateOfDeath "1960-07-25"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-11-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-07-25"^^xsd:date
+  ] ;
   :nam "T. SCHOKKENBROEK" ;
   :placeOfBirth [
     a :Town.n.01 ;

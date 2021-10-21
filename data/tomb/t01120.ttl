@@ -34,8 +34,14 @@ t01120:p1
     :duration "P44Y"^^xsd:duration ;
     :text "ruim 44 Jaren"
   ] ;
-  :dateOfBirth "1808-06-06"^^xsd:date ;
-  :dateOfDeath "1870-03-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1808-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-03-06"^^xsd:date
+  ] ;
   :nam "FREDERIKA J. SMITH" ;
   :placeOfBirth [
     a :Village.n.02 ;

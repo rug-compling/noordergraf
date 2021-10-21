@@ -27,7 +27,13 @@ t00541:p1
     a :Age ;
     :duration "P55Y9M21D"^^xsd:duration
   ] ;
-  :dateOfBirth "1825-05-18"^^xsd:date ;
-  :dateOfDeath "1881-03-11"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1825-05-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1881-03-11"^^xsd:date
+  ] ;
   :nam "CATHARINA KRAK" .
 

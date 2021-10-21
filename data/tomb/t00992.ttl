@@ -32,8 +32,14 @@ t00992:p1
     a :Age ;
     :duration "P64Y17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-12-02"^^xsd:date ;
-  :dateOfDeath "1929-12-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-12-19"^^xsd:date
+  ] ;
   :nam "EGBERT KONING" ;
   :placeOfBirth t00992:c1 ;
   :placeOfDeath t00992:c1 ;

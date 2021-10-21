@@ -26,8 +26,14 @@ t00018:p1
     a :Age ;
     :duration "P60Y9M28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-03-08"^^xsd:date ;
-  :dateOfDeath "1934-01-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-03-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-01-05"^^xsd:date
+  ] ;
   :nam "TRIENTJE HUISMAN" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -50,8 +56,14 @@ t00018:p2
     a :Age ;
     :duration "P76Y6M29D"^^xsd:duration
   ] ;
-  :dateOfBirth "1873-06-20"^^xsd:date ;
-  :dateOfDeath "1950-01-18"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-06-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-01-18"^^xsd:date
+  ] ;
   :nam "KRIENO HUIZINGA" ;
   :placeOfBirth [
     a :Village.n.02 ;

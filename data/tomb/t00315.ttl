@@ -23,8 +23,14 @@ t00315:p1
     a :Age ;
     :duration "P69Y17D"^^xsd:duration
   ] ;
-  :dateOfBirth "1834-04-19"^^xsd:date ;
-  :dateOfDeath "1903-05-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1834-04-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-05-06"^^xsd:date
+  ] ;
   :nam "B. VELDKAMP" ;
   :occupation [
     a :Principal.n.02 ;
@@ -37,7 +43,13 @@ t00315:p2
     a :Age ;
     :duration "P90Y9M25D"^^xsd:duration
   ] ;
-  :dateOfBirth "1841-02-24"^^xsd:date ;
-  :dateOfDeath "1931-12-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-02-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-12-19"^^xsd:date
+  ] ;
   :nam "J. VELDKAMP-HALFMOUW" .
 

@@ -24,8 +24,14 @@ t00882:p1
     a :Age ;
     :duration "P34Y28D"^^xsd:duration
   ] ;
-  :dateOfBirth "1911-06-06"^^xsd:date ;
-  :dateOfDeath "1945-07-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-07-04"^^xsd:date
+  ] ;
   :nam "E.W.C. DE VRIES" ;
   :rol [
     a :Spouse.n.01 ;

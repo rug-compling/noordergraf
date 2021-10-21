@@ -24,8 +24,14 @@ t00784:p1
     a :Age ;
     :duration "P68Y8M"^^xsd:duration
   ] ;
-  :dateOfBirth "1901-06-13"^^xsd:date ;
-  :dateOfDeath "1970-02-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-06-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-02-13"^^xsd:date
+  ] ;
   :nam "HENDRIK EVERTS" ;
   :rol [
     a :Brother.n.01

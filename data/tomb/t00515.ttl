@@ -24,7 +24,13 @@ t00515:p1
     a :Age ;
     :duration "P70Y4M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1922-07-24"^^xsd:date ;
-  :dateOfDeath "1992-12-04"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1922-07-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1992-12-04"^^xsd:date
+  ] ;
   :nam "KLAARTJE EGGENS", "KLARIE" .
 

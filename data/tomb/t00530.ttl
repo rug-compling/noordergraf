@@ -26,8 +26,14 @@ t00530:p1
     a :Age ;
     :duration "P57Y6M22D"^^xsd:duration
   ] ;
-  :dateOfBirth "1877-05-14"^^xsd:date ;
-  :dateOfDeath "1934-12-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-05-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-12-06"^^xsd:date
+  ] ;
   :nam "HIERONIMUS HERWIG" ;
   :rol [
     a :Son.n.01 ;

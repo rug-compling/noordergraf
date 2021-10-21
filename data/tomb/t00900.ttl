@@ -29,8 +29,14 @@ t00900:p1
     a :Age ;
     :duration "P67Y11M27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1844-02-04"^^xsd:date ;
-  :dateOfDeath "1912-01-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-02-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-01-31"^^xsd:date
+  ] ;
   :nam "REINDER CLUVING HOENDERKEN" ;
   :placeOfBirth [
     a :Town.n.01 ;

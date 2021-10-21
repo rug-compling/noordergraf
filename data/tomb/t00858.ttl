@@ -31,8 +31,14 @@ t00858:p1
     a :Age ;
     :duration "P71Y8M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1864-06-08"^^xsd:date ;
-  :dateOfDeath "1936-02-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-06-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-02-16"^^xsd:date
+  ] ;
   :nam "ROELOF EVENHUIS" ;
   :placeOfBirth t00858:c1 ;
   :placeOfDeath t00858:c1 .
@@ -43,8 +49,14 @@ t00858:p2
     a :Age ;
     :duration "P52Y8M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1865-11-21"^^xsd:date ;
-  :dateOfDeath "1918-08-08"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-11-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-08-08"^^xsd:date
+  ] ;
   :nam "GEESSIEN VRIELING" ;
   :placeOfBirth t00858:c1 ;
   :placeOfDeath t00858:c1 .

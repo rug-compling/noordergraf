@@ -22,8 +22,14 @@ t00409:p1
     a :Age ;
     :duration "P38Y5M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1949-03-22"^^xsd:date ;
-  :dateOfDeath "1987-08-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1949-03-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1987-08-31"^^xsd:date
+  ] ;
   :nam "EGBERT GEERT JAN BIEMOLD" ;
   :rol [
     a :Husband.n.01 ;

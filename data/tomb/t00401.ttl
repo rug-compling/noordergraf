@@ -31,8 +31,14 @@ t00401:p1
     a :Age ;
     :duration "P84Y3M8D"^^xsd:duration
   ] ;
-  :dateOfBirth "1885-04-23"^^xsd:date ;
-  :dateOfDeath "1969-07-31"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-07-31"^^xsd:date
+  ] ;
   :nam "GRIETJE LAND" ;
   :rol [
     a :Wife.n.01 ;
@@ -47,8 +53,14 @@ t00401:p2
     a :Age ;
     :duration "P90Y3M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1884-12-02"^^xsd:date ;
-  :dateOfDeath "1975-03-17"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-03-17"^^xsd:date
+  ] ;
   :nam "ANNE ELLENS" ;
   :rol [
     a :Father.n.01

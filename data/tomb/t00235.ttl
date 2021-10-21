@@ -34,8 +34,14 @@ t00235:p1
     a :Age ;
     :duration "P61Y1M23D"^^xsd:duration
   ] ;
-  :dateOfBirth "1798-10-16"^^xsd:date ;
-  :dateOfDeath "1859-12-09"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1798-10-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1859-12-09"^^xsd:date
+  ] ;
   :nam "JAN TAMMES EMMELKAMP" ;
   :rol [
     a :Spouse.n.01 ;

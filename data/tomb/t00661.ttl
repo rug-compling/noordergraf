@@ -26,8 +26,14 @@ t00661:p1
     a :Age ;
     :duration "P67Y3M4D"^^xsd:duration
   ] ;
-  :dateOfBirth "1880-07-01"^^xsd:date ;
-  :dateOfDeath "1947-10-05"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-07-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-10-05"^^xsd:date
+  ] ;
   :nam "DIEUWLE LAAGLAND" ;
   :occupation [
     a :Teacher.n.01 ;

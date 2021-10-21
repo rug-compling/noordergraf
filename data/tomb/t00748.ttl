@@ -30,8 +30,14 @@ t00748:p1
     a :Age ;
     :duration "P85Y5M5D"^^xsd:duration
   ] ;
-  :dateOfBirth "1801-11-17"^^xsd:date ;
-  :dateOfDeath "1887-04-22"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1801-11-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1887-04-22"^^xsd:date
+  ] ;
   :nam "PIETER FREERKS REITSEMA" ;
   :rol [
     a :Spouse.n.01 ;

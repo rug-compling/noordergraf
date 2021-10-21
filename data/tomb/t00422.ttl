@@ -27,8 +27,14 @@ t00422:p1
     a :Age ;
     :duration "P84Y10M3D"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-09-04"^^xsd:date ;
-  :dateOfDeath "1972-07-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-09-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-07-07"^^xsd:date
+  ] ;
   :nam "MARTIN VAN WANING" ;
   :occupation [
     a :Painter.n.01 ;

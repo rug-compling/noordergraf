@@ -26,8 +26,14 @@ t00126:p1
     a :Age ;
     :duration "P33Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1871"^^xsd:gYear ;
-  :dateOfDeath "1904-03-01"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-03-01"^^xsd:date
+  ] ;
   :nam "RENSINA CATHARINA SCHUITEMA" ;
   :rol [
     a :Daughter.n.01 ;

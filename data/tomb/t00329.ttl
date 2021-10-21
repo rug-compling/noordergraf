@@ -28,8 +28,14 @@ t00329:p1
     a :Age ;
     :duration "P39Y6M13D"^^xsd:duration
   ] ;
-  :dateOfBirth "1897-12-23"^^xsd:date ;
-  :dateOfDeath "1937-07-06"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-07-06"^^xsd:date
+  ] ;
   :nam "LAMBERTJE HONING" ;
   :placeOfBirth [
     a :Village.n.02 ;
@@ -54,8 +60,14 @@ t00329:p2
     a :Age ;
     :duration "P77Y"^^xsd:duration
   ] ;
-  :dateOfBirth "1887-10-02"^^xsd:date ;
-  :dateOfDeath "1964-10-02"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-10-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-10-02"^^xsd:date
+  ] ;
   :nam "ROELOF POST" ;
   :placeOfBirth t00329:c2 ;
   :placeOfDeath [

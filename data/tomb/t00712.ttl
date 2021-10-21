@@ -24,7 +24,13 @@ t00712:p1
     a :Age ;
     :duration "P64Y5M1D"^^xsd:duration
   ] ;
-  :dateOfBirth "1936-08-12"^^xsd:date ;
-  :dateOfDeath "2001-01-13"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1936-08-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-01-13"^^xsd:date
+  ] ;
   :nam "ALICE BOS" .
 

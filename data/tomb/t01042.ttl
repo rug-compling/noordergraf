@@ -30,8 +30,14 @@ t01042:p1
     a :Age ;
     :duration "P73Y11M15D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-12-01"^^xsd:date ;
-  :dateOfDeath "1953-11-16"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-11-16"^^xsd:date
+  ] ;
   :nam "GEESKE HELMANTEL" ;
   :ref [
     a :Quote ;
@@ -53,8 +59,14 @@ t01042:p2
     a :Age ;
     :duration "P76Y7M9D"^^xsd:duration
   ] ;
-  :dateOfBirth "1879-05-25"^^xsd:date ;
-  :dateOfDeath "1956-01-03"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-05-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-01-03"^^xsd:date
+  ] ;
   :nam "EDZO VAN DER VEEN" ;
   :ref [
     a :Quote ;

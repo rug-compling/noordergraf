@@ -31,8 +31,14 @@ t00220:p1
     a :Age ;
     :duration "P27Y1M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1838-12-02"^^xsd:date ;
-  :dateOfDeath "1866-01-12"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1838-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1866-01-12"^^xsd:date
+  ] ;
   :nam "HARM E. KONING" ;
   :placeOfBirth t00220:c1 ;
   :placeOfDeath t00220:c1 ;

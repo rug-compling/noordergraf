@@ -31,8 +31,14 @@ t00346:p1
     a :Age ;
     :duration "P76Y8M18D"^^xsd:duration
   ] ;
-  :dateOfBirth "1856-04-20"^^xsd:date ;
-  :dateOfDeath "1933-01-07"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-01-07"^^xsd:date
+  ] ;
   :nam "ABEL DAVIDS" ;
   :placeOfBirth t00346:c1 ;
   :placeOfDeath t00346:c1 ;

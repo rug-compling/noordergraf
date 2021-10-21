@@ -28,8 +28,14 @@ t01122:p1
     a :Age ;
     :duration "P62Y3M10D"^^xsd:duration
   ] ;
-  :dateOfBirth "1802"^^xsd:gYear ;
-  :dateOfDeath "1864-04-10"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1802"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1864-04-10"^^xsd:date
+  ] ;
   :nam "TRIENTJE HENDRIKS DIJKSTRA" ;
   :placeOfDeath [
     a :Village.n.02 ;

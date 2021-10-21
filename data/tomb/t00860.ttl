@@ -32,8 +32,14 @@ t00860:p1
     a :Age ;
     :duration "P27Y5M24D"^^xsd:duration
   ] ;
-  :dateOfBirth "1878-06-25"^^xsd:date ;
-  :dateOfDeath "1905-12-19"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-06-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-12-19"^^xsd:date
+  ] ;
   :nam "HENDRIKJE KAMPING" ;
   :placeOfBirth t00860:c1 ;
   :placeOfDeath t00860:c1 ;

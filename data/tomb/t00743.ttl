@@ -31,8 +31,14 @@ t00743:p1
     a :Age ;
     :duration "P85Y27D"^^xsd:duration
   ] ;
-  :dateOfBirth "1869-01-24"^^xsd:date ;
-  :dateOfDeath "1954-02-20"^^xsd:date ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-02-20"^^xsd:date
+  ] ;
   :nam "GEERTJE MEIN" ;
   :placeOfBirth t00743:c1 ;
   :placeOfDeath t00743:c1 ;
