@@ -1,13 +1,15 @@
 #!/bin/bash
 
+. secret.sh
+
 agtool load \
        --overwrite \
        --bulk \
        --duplicates delete \
-       --fti all \
        --automate-nd-datatype-mappings \
        --input trig \
        --optimize \
        --base-uri https://noordergraf.rug.nl/ \
        noordergraf \
-       -
+       - \
+  && python3 mkfti.py
