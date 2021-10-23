@@ -27,6 +27,14 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:comment "De hoogste class voor noordergraf."@nld ;
   rdfs:isDefinedBy : .
 
+:Tomb a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:isDefinedBy : .
+
+:Cross a rdfs:Class ;
+  rdfs:subClassOf :Tomb ;
+  rdfs:isDefinedBy : .
+
 :Geo a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:comment "The class of things with geographical coordinates."@eng ;
