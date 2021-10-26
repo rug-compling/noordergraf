@@ -10,3 +10,5 @@ from franz.openrdf.connect import ag_connect
 conn = ag_connect('noordergraf', create=False, user=AGRAPH_USER, password=AGRAPH_PASSWORD)
 
 conn.createFreeTextIndex("all", predicates=None, indexLiterals=True, indexResources=False, indexFields=["object"], minimumWordSize=2, stopWords=[], wordFilters=["drop-accents"], innerChars=["alphanumeric"], borderChars=None, tokenizer="default")
+
+conn.createFreeTextIndex("fullname", predicates=["<https://noordergraf.rug.nl/ns#fullname>"], indexLiterals=True, indexResources=False, indexFields=["object"], minimumWordSize=2, stopWords=[], wordFilters=["soundex"], innerChars=["alpha"], borderChars=None, tokenizer="default")

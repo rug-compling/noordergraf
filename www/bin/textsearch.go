@@ -44,14 +44,31 @@ Missing query
 		return
 	}
 
-	query := fmt.Sprintf(`
-SELECT DISTINCT ?graph ?o {
-  GRAPH ?graph {
+	var template string
+	switch req.FormValue("t") {
+	case "fullname":
+		template = `
+PREFIX : <https://noordergraf.rug.nl/ns#>
+SELECT ?s ?o {
+  ?s :name ?n .
+  ( ?n ?o ) fti:match ( %q "fullname" ) .
+}
+ORDER BY ?s
+`
+	default:
+		template = `
+PREFIX : <https://noordergraf.rug.nl/ns#>
+SELECT DISTINCT ?s ?o {
+  GRAPH ?s {
     (?s ?o) fti:match %q .
+    ?s :text ?o .
   }
 }
-ORDER BY ?graph ?o
-`, q)
+ORDER BY ?s ?o
+`
+	}
+
+	query := fmt.Sprintf(template, q)
 
 	request := "http://localhost:10035/repositories/noordergraf?limit=1000&query=" + url.QueryEscape(query)
 	resp, err := http.Get(request)
@@ -94,7 +111,7 @@ gevonden: %d
 	for _, result := range sparql.Results {
 		var uri, obj string
 		for _, binding := range result.Bindings {
-			if binding.Name == "graph" {
+			if binding.Name == "s" {
 				uri = binding.URI
 			} else if binding.Name == "o" {
 				obj = binding.Literal

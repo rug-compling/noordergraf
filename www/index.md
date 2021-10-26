@@ -13,7 +13,14 @@ Hier komt iets moois
 <form action="/bin/textsearch">
 <input type="text" name="q">
 <input type="reset" value="wissen" class="button">
-<input type="submit" value="zoeken" class="button">
+<input type="submit" value="zoeken in tekst" class="button">
+</form>
+
+<form action="/bin/textsearch">
+<input type="hidden" name="t" value="fullname">
+<input type="text" name="q">
+<input type="reset" value="wissen" class="button">
+<input type="submit" value="zoeken op naam (soundex)" class="button">
 </form>
 
 Voor experts: [zoek met sparql](https://anonymous@noordergraf.rug.nl:10036/#/repositories/noordergraf)
