@@ -18,19 +18,6 @@ johannes franciscus brattinga
 mea brattinga - venema
 kinderen en kleinkinderen
 """ ;
-  :ent [
-    a :Group.n.01 ;
-    :rol [
-      a :Child.n.02 ;
-      :tgt t00693:p1
-    ]
-  ], [
-    a :Group.n.01 ;
-    :rol [
-      a :Grandchild.n.01 ;
-      :tgt t00693:p1
-    ]
-  ] ;
   :image [
     dc:date "2019-12-14T13:20:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -45,7 +32,7 @@ kinderen en kleinkinderen
   ] ;
   :quo "VEEL FIJNE HERINNERINGEN \\ VERZACHTEN ONZE SMART \\ VOOR GOED UIT ONS MIDDEN \\ MAAR ALTIJD IN ONS HART"@nld ;
   :site site:fr8701DWbolsward ;
-  :subject t00693:p1, t00693:p2 ;
+  :subject t00693:p1 ;
   :sym [
     a :Sailboat.n.01
   ] .
@@ -69,6 +56,13 @@ t00693:p1
     a :Name ;
     :fullname "Johannes Franciscus Brattinga" ;
     :text "TODO: Johannes Franciscus Brattinga"
+  ] ;
+  :rol [
+    a :Parent ;
+    :inferred true
+  ] , [
+    a :Grandparent ;
+    :inferred true
   ] .
 
 t00693:p2
@@ -80,6 +74,13 @@ t00693:p2
   ] ;
   :rol [
     a :Wife.n.01 ;
-    :tgt t00693:p1
+    :tgt t00693:p1 ;
+    :inferred true
+  ] , [
+    a :Parent ;
+    :inferred true
+  ] , [
+    a :Grandparent ;
+    :inferred true
   ] .
 

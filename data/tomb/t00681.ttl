@@ -2,22 +2,21 @@
 
 tomb:t00681
   a :Tomb ;
-  :text """TODO: hier rust
-onze lieve vrouw
-moederen dochter
-grietje kuiper
-geb. 2 nov. 1901,
-overl. 1 juni 1942
+  :text """hier rust
+onze lieve Vrouw,
+Moeder en Dochter
+Grietje Kuiper
+Geb. 2 Nov. 1901,
+Overl. 1 Juni 1942.
 de diepbedroefden
-p. rupma
-en kinderen
-be
-1.
-em
-fam:r. kuiper
-rust in: vrede
+P. Rijpma
+en kinderen.
+
+Fam: R. Kuiper.
+
+Rust in Vrede
 """ ;
-  :ent t00681:p3 ;
+  :commemorator t00681:p3 ;
   :image [
     dc:date "2019-12-14T13:26:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -52,7 +51,7 @@ t00681:p1
   :name [
     a :Name ;
     :fullname "Grietje Kuiper" ;
-    :text "TODO: Grietje Kuiper"
+    :text "Grietje Kuiper"
   ] ;
   :rol [
     a :Wife.n.01 ;
@@ -68,10 +67,12 @@ t00681:p2
   :name [
     a :Name ;
     :fullname "P. Rijpma" ;
-    :text "TODO: P. Rijpma"
+    :text "P. Rijpma"
   ] .
 
 t00681:p3
-  a :Family.n.04 ;
-  :nam "R. KUIPER" .
-
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "R. Kuiper"
+  ] .

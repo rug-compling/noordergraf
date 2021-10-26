@@ -2,17 +2,15 @@
 
 tomb:t00973
   a :Tomb ;
-  :text """TODO: rustplaats
+  :text """rustplaats
 van
 onze geliefde ouders
-siret
 jan flierman
 en
-hbetje schuiling
+betje schuiling
 hunne dankdare kinderen
-when
 """ ;
-  :ent t00973:g1, t00973:g2 ;
+  :commemorator t00973:p3 ;
   :image [
     dc:date "2020-03-25T09:31:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,27 +29,12 @@ when
     a :WeepingWillow
   ] .
 
-t00973:g1
-  a :Group.n.01 ;
-  :mem t00973:p2, t00973:p3 ;
-  :rol [
-    a :Parent.n.01 ;
-    :tgt t00973:g2
-  ] .
-
-t00973:g2
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00973:g1
-  ] .
-
 t00973:p1
   a :Male ;
   :name [
     a :Name ;
     :fullname "Jan Flierman" ;
-    :text "TODO: Jan Flierman"
+    :text "jan flierman"
   ] .
 
 t00973:p2
@@ -59,6 +42,14 @@ t00973:p2
   :name [
     a :Name ;
     :fullname "Betje Schuiling" ;
-    :text "TODO: Betje Schuiling"
+    :text "betje schuiling"
+  ] .
+
+t00973:p3
+  a :Group.n.01 ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00973:p2, t00973:p3 ;
+    :text "hunne dankbare kinderen"
   ] .
 

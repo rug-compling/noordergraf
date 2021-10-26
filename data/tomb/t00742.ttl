@@ -23,15 +23,6 @@ pictgrdana,
 geb.2 jan. 1902
 overl.23dec 590a
 """ ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t00742:p3, t00742:p4 ;
-    :qua 2 ;
-    :rol [
-      a :Child.n.02 ;
-      :tgt t00742:p1, t00742:p2
-    ]
-  ] ;
   :image [
     dc:date "2019-12-29T10:20:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -112,6 +103,10 @@ t00742:p3
     a :Name ;
     :fullname "Wessel Pieter" ;
     :text "TODO: Wessel Pieter"
+  ] ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00742:p1, t00742:p2
   ] .
 
 t00742:p4
@@ -133,5 +128,9 @@ t00742:p4
     a :Name ;
     :fullname "Wesselina Pieterdina" ;
     :text "TODO: Wesselina Pieterdina"
+  ] ;
+  :rol [
+    a :Child.n.02 ;
+    :tgt t00742:p1, t00742:p2
   ] .
 

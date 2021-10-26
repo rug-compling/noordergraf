@@ -2,22 +2,19 @@
 
 tomb:t00875
   a :Tomb ;
-  :text """TODO: www
-rustplaats
+  :text """rustplaats
 van ons
 innig geliefd
 dochtertje
 en zusje
-janna
-* 27-7-1939
-* 22_6-1940
+JANNA
+★ 27_7_1939
+✝ 22_6_1940
+
 fam.
-g.tenvoorde
+G.ten Voorde.
 """ ;
-  :ent [
-    a :Family.n.04 ;
-    :nam "G. TEN VOORDE"
-  ] ;
+  :commemorator t00875:p2 ;
   :image [
     dc:date "2020-02-15T15:09:56"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -57,8 +54,19 @@ t00875:p1
     :text "TODO: Janna"
   ] ;
   :rol [
-    a :Daughter.n.01
+    a :Daughter.n.01 ;
+    :tgt t00875:p2 ;
+    :text "dochtertje"
   ], [
-    a :Sister.n.01
+    a :Sister.n.01 ;
+    :tgt t00875:p2 ;
+    :text "zusje"
   ] .
 
+t00875:p2
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "G. ten Voorde" ;
+    :text "G. ten VOORDE"
+  ] .
