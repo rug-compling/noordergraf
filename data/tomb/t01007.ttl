@@ -2,28 +2,24 @@
 
 tomb:t01007
   a :Tomb ;
-  :text """TODO: her
-rustplaats
+  :text """rustplaats
 van
-pieteryandries
+pieter andries
 hekstra
-geb 16 febristi
-overlzu dec9781
-shekstra
-2017
-eya hekstra
+geb. 16 febr. 1911,
+overl. 23 dec. 1918.
+
+s. hekstra
+a. hekstra-
 bakker
 en kinderen
-pe0378
-sl
-actat
-w
+ps. 103:8.
 """ ;
-  :ent t01007:g1, [
+  :commemorator t01007:p2 , t01007:p3 , [
     a :Group.n.01 ;
     :rol [
       a :Child.n.02 ;
-      :tgt t01007:g1
+      :tgt t01007:p2 , t01007:p3
     ]
   ] ;
   :image [
@@ -39,7 +35,7 @@ w
     :nd "+53.2444+006.6281"^^ll:
   ] ;
   :site site:gr9734ATgroningen ;
-  :subject t01007:p1, t01007:p2, t01007:p3 ;
+  :subject t01007:p1 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -47,10 +43,6 @@ w
   ], [
     a :Ribbon.n.01
   ] .
-
-t01007:g1
-  a :Group.n.01 ;
-  :mem t01007:p2, t01007:p3 .
 
 t01007:p1
   a :Male ;
@@ -69,8 +61,8 @@ t01007:p1
   ] ;
   :name [
     a :Name ;
-    :fullname "Pieter Amdries Hekstra" ;
-    :text "TODO: Pieter Amdries Hekstra"
+    :fullname "Pieter Andries Hekstra" ;
+    :text "pieter andries hekstra"
   ] .
 
 t01007:p2
@@ -78,14 +70,14 @@ t01007:p2
   :name [
     a :Name ;
     :fullname "S. Hekstra" ;
-    :text "TODO: S. Hekstra"
+    :text "s. hekstra"
   ] .
 
 t01007:p3
   a :Female ;
   :name [
     a :Name ;
-    :fullname "S. Hekstra-Bakker" ;
-    :text "TODO: S. Hekstra-Bakker"
+    :fullname "A. Hekstra-Bakker" ;
+    :text "a. hekstra-bakker"
   ] .
 

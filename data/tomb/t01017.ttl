@@ -2,29 +2,22 @@
 
 tomb:t01017
   a :Tomb ;
-  :text """TODO: kustplats
-dan peor
-us
-lahteenoot, var
-tudewe
-hindriks
-overi, 14 dec 1811
+  :text """RUSTPLAATS
+VAN
+JAN KORNELIUS
+MULLER.
+Echtgenoot van
+LUDEWÉ
+HINDRIKS.
+Overl. 14 Dec. 1811,
 in den ouderdom
-van 2 jaren en el
+van 72 Jaren en elf
 maanden
-buders geweest
-diefebetten
-en coreans
-mulla
+Ouders geweest van
+WIEPKE, ETTIEN
+en CORNELIA JANS
+MULLER.
 """ ;
-  :ent t01017:g2, [
-    a :Group.n.01 ;
-    :mem t01017:p1, t01017:p3 ;
-    :rol [
-      a :Parent.n.01 ;
-      :tgt t01017:g2
-    ]
-  ] ;
   :image [
     dc:date "2020-04-04T10:42:20"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -42,10 +35,6 @@ mulla
   :sym [
     a :WeepingWillow
   ] .
-
-t01017:g2
-  a :Group.n.01 ;
-  :mem t01017:p3, t01017:p4, t01017:p5 .
 
 t01017:p1
   a :Male ;
@@ -65,11 +54,14 @@ t01017:p1
   :name [
     a :Name ;
     :fullname "Jan Kornelis Muller" ;
-    :text "TODO: Jan Kornelis Muller"
+    :text "JAN KORNELIS MULLER"
   ] ;
   :rol [
     a :Spouse.n.01 ;
     :tgt t01017:p2
+  ] , [
+    a :Parent ;
+    :tgt t01017:p3 , t01017:p4 , t01017:p5
   ] .
 
 t01017:p2
@@ -77,7 +69,11 @@ t01017:p2
   :name [
     a :Name ;
     :fullname "Ludewé Hindriks" ;
-    :text "TODO: Ludewé Hindriks"
+    :text "LUDEWÉ HINDRIKS"
+  ] ;
+  :rol [
+    a :Parent ;
+    :tgt t01017:p3 , t01017:p4 , t01017:p5
   ] .
 
 t01017:p3
@@ -85,7 +81,7 @@ t01017:p3
   :name [
     a :Name ;
     :fullname "Wiepke Muller" ;
-    :text "TODO: Wiepke Muller"
+    :text "WIEPKE"
   ] .
 
 t01017:p4
@@ -93,7 +89,7 @@ t01017:p4
   :name [
     a :Name ;
     :fullname "Ettien Muller" ;
-    :text "TODO: Ettien Muller"
+    :text "ETTIEN"
   ] .
 
 t01017:p5
@@ -101,6 +97,6 @@ t01017:p5
   :name [
     a :Name ;
     :fullname "Cornelia Jans Muller" ;
-    :text "TODO: Cornelia Jans Muller"
+    :text "CORNELIA JANS MULLER"
   ] .
 

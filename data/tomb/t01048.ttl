@@ -2,31 +2,24 @@
 
 tomb:t01048
   a :Tomb ;
-  :text """TODO: rustplaats
+  :text """RUSTPLAATS
 van
-bont ne xviite
-per, te de will
-34 oct. 1855,
-overlalaa
-20 sept. 1936.
-sedert 7 aut 1998
-wed.
-van
-sub\u00c9 de jong
-r
-do
-et
-insekter
-w
+BONTJE v/d. VLIET
+geb. te de wilp
+31 oct. 1855,
+overl. aldaar
+20 sept. 1935.
+sedert 7 aug. 1918
+wed. van
+SIJBE de JONG
+
+hunne kinderen
 """ ;
-  :ent [
+  :commemorator [
     a :Group.n.01 ;
     :rol [
       a :Child.n.02 ;
-      :tgt [
-        a :Group.n.01 ;
-        :mem t01048:p1, t01048:p2
-      ]
+      :tgt t01048:p1, t01048:p2
     ]
   ] ;
   :image [
@@ -42,7 +35,7 @@ w
     :nd "+53.1229+006.2509"^^ll:
   ] ;
   :site site:gr9367PAde_wilp ;
-  :subject t01048:p1, t01048:p2 ;
+  :subject t01048:p1 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -72,7 +65,7 @@ t01048:p1
   :name [
     a :Name ;
     :fullname "Bontje van der Vliet" ;
-    :text "TODO: Bontje van der Vliet"
+    :text "BONTJE v/d. VLIET"
   ] ;
   :placeOfBirth t01048:c1 ;
   :placeOfDeath t01048:c1 ;
@@ -87,6 +80,6 @@ t01048:p2
   :name [
     a :Name ;
     :fullname "Sijbe de Jong" ;
-    :text "TODO: Sijbe de Jong"
+    :text "SIJBE de JONG"
   ] .
 

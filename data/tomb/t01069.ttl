@@ -2,21 +2,31 @@
 
 tomb:t01069
   a :Tomb ;
-  :text """TODO: rustplaats
-van onze leve man en vader
-taeke venema
-ger. te ureterp overl te groningen
-12 maart 1878 31 jan. 1949.
+  :text """RUSTPLAATS
+van onze lieve man en vader
+TAEKE VENEMA
+
+geb. te ureterp
+12 maart 1878.
+
+overl te groningen
+31 jan. 1949.
+
 en onze lieve moeder
-hendrikje bosma
-ger. te de wilp overl. te orachten
+HENDRIKJE BOSMA
+
+geb. te de wilp
 1 sept. 1881.
+
+overl. te drachten
 20 juli 1972
-de heer is mun herder.mu ontbreekt niets
-de kinderen
-ds 125 one
+
+de heer is mijn herder, mij ontbreekt niets.
+
+de kinderen.
+
+ps. 125 onb.
 """ ;
-  :ent t01069:g1 ;
   :image [
     dc:date "2020-05-01T15:25:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -46,16 +56,6 @@ ds 125 one
     a :Oak.n.01
   ], [
     a :Ribbon.n.01
-  ] .
-
-t01069:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt [
-      a :Group.n.01 ;
-      :mem t01069:p1, t01069:p2
-    ]
   ] .
 
 t01069:p1
@@ -89,8 +89,7 @@ t01069:p1
     :place place:Groningen2755251
   ] ;
   :rol [
-    a :Father.n.01 ;
-    :tgt t01069:g1
+    a :Father.n.01
   ], [
     a :Husband.n.01 ;
     :tgt t01069:p2
@@ -127,7 +126,6 @@ t01069:p2
     :place place:Drachten2756644
   ] ;
   :rol [
-    a :Mother.n.01 ;
-    :tgt t01069:p2
+    a :Mother.n.01
   ] .
 

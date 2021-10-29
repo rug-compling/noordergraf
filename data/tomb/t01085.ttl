@@ -2,29 +2,22 @@
 
 tomb:t01085
   a :Tomb ;
-  :text """TODO: baten)
+  :text """TER GEDACHTENIS
 van
-jakob gerrits
-schutter,
-serkaragd deres gemeent ,
-gob den 20. 8. 1815
-overl.den 22 feb 1880
-raertten 295fpril 1849
+JAKOB GERRITS
+SCHUTTER,
+Kerkvoogd dezer gemeente,
+geb den 20 Mei. 1815,
+overl. den 22 Febr. 1880
+sedert den 29 April 1849
 gehuwd met
-sd van diik
+S D van DIJK,
 en betreurd door haar;
 hunne 5 kinderen
-en am bebured soon.
-um
+en een behuwd zoon.
+
+[[onleesbaar]]
 """ ;
-  :ent [
-    a :People.n.01 ;
-    :mem t01085:p2, [
-      a :Son-in-law.n.01 ;
-      :tgt t01085:g2
-    ] ;
-    :sub t01085:g2
-  ] ;
   :image [
     dc:date "2020-05-20T19:31:59"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -39,14 +32,6 @@ um
   ] ;
   :site site:gr9798PDgarmerwolde ;
   :subject t01085:p1 .
-
-t01085:g2
-  a :People.n.01 ;
-  :qua 5 ;
-  :tgt [
-    a :People.n.01 ;
-    :mem t01085:p1, t01085:p2
-  ] .
 
 t01085:p1
   a :Male ;
@@ -66,7 +51,7 @@ t01085:p1
   :name [
     a :Name ;
     :fullname "Jakob Gerrits Schutter" ;
-    :text "TODO: Jakob Gerrits Schutter"
+    :text "JAKOB GERRITS SCHUTTER"
   ] ;
   :occupation "KERKVOOGD DEZER GEMEENTE" ;
   :rol [
@@ -80,6 +65,6 @@ t01085:p2
   :name [
     a :Name ;
     :fullname "S.D. van Dijk" ;
-    :text "TODO: S.D. van Dijk"
+    :text "S D van DIJK"
   ] .
 

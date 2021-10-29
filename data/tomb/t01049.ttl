@@ -2,30 +2,26 @@
 
 tomb:t01049
   a :Tomb ;
-  :text """TODO: rustplaats
-\u0baa\u0bbe\u0b9f\u0bae\u0bcd
-jan oost
-tej
-tan
-pietje yenema
-ovepl te siegerswoude
-18 juli 1925
-qud buna 18 jaar
-t.venema
-h. yenema bosma
-en kinderen
-ps 103 8.
+  :text """RUSTPLAATS
+van
+PIETJE VENEMA
+overl. te siegerswoude
+18 juli 1925.
+oud bijna 18 jaar.
+
+T. VENEMA,
+H. VENEMA-BOSMA,
+en kinderen.
+
+Ps. 103:8.
 .
 t:
 """ ;
-  :ent [
+  :commemorator t01049:p2, t01049:p3 , [
     a :Group.n.01 ;
     :rol [
       a :Child.n.02 ;
-      :tgt [
-        a :Group.n.01 ;
-        :mem t01049:p2, t01049:p3
-      ]
+      :tgt t01049:p2, t01049:p3
     ]
   ] ;
   :image [
@@ -51,7 +47,7 @@ t:
     :text "Ps. 103:8."@nld
   ] ;
   :site site:gr9367PAde_wilp ;
-  :subject t01049:p1, t01049:p2, t01049:p3 ;
+  :subject t01049:p1 ;
   :sym [
     a :Frond.n.01
   ], [
@@ -77,7 +73,7 @@ t01049:p1
   :name [
     a :Name ;
     :fullname "Pietje Venema" ;
-    :text "TODO: Pietje Venema"
+    :text "PIETJE VENEMA"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
@@ -90,7 +86,7 @@ t01049:p2
   :name [
     a :Name ;
     :fullname "T. Venema" ;
-    :text "TODO: T. Venema"
+    :text "T. VENEMA"
   ] .
 
 t01049:p3
@@ -98,6 +94,6 @@ t01049:p3
   :name [
     a :Name ;
     :fullname "H. Venema-Bosma" ;
-    :text "TODO: H. Venema-Bosma"
+    :text "H. VENEMA-BOSMA"
   ] .
 

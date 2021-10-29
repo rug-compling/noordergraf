@@ -2,30 +2,24 @@
 
 tomb:t00970
   a :Tomb ;
-  :text """TODO: rustplaats
+  :text """rustplaats
 van onze geliefde
 man en vader
-harmannus
-c.p. venema
+HARMANNUS
+C.P. VENEMA
 geb. 19-7-1900
-overl.ii-11-1941
-eerst wedn, yan
-l elema
-e.kolstein
+overl. 11-11-1941
+eerst wedn. van
+L. ELEMA
+
+E. KOLSTEIN
 en kinderen
-sva
-mai
-i te
-de
-tak
-te
 """ ;
   :commemorator [
     a :Class ;
-    :text "e. kolstein en kinderen" ;
+    :text "E. KOLSTEIN en kinderen" ;
     :comment "TODO"
   ] ;
-  :ent t00970:g1 ;
   :image [
     dc:date "2020-03-27T16:58:21"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -48,13 +42,6 @@ te
     a :Ribbon.n.01
   ] .
 
-t00970:g1
-  a :Group.n.01 ;
-  :rol [
-    a :Child.n.02 ;
-    :tgt t00970:p1
-  ] .
-
 t00970:p1
   a :Male ;
   :age [
@@ -73,12 +60,13 @@ t00970:p1
   :name [
     a :Name ;
     :fullname "Harmannus C.P. Venema" ;
-    :text "TODO: Harmannus C.P. Venema"
+    :text "HARMANNUS C.P. VENEMA"
   ] ;
   :rol t00970:r2, [
     a :Widower.n.01 ;
     :before t00970:r2 ;
-    :tgt t00970:p2
+    :tgt t00970:p2 ;
+    :comment "TODO: :before verwijst naar zichzelf"
   ], [
     a :Father.n.01 ;
     :tgt t00970:g1
@@ -89,15 +77,15 @@ t00970:p2
   :name [
     a :Name ;
     :fullname "L. Elema" ;
-    :text "TODO: L. Elema"
+    :text "L. ELEMA"
   ] .
 
 t00970:p3
   a :Female ;
   :name [
     a :Name ;
-    :fullname "E.KOLSTEIN" ;
-    :text "TODO: E.KOLSTEIN"
+    :fullname "E. Kolstein" ;
+    :text "E. KOLSTEIN"
   ] .
 
 t00970:r2
