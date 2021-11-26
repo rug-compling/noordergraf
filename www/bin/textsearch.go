@@ -60,7 +60,7 @@ ORDER BY ?s
 PREFIX : <https://noordergraf.rug.nl/ns#>
 SELECT DISTINCT ?s ?o {
   GRAPH ?s {
-    (?s ?o) fti:match %q .
+    (?s ?o) fti:match ( %q "all" ) .
     ?s :text ?o .
   }
 }
