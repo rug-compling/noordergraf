@@ -18,7 +18,7 @@ type sub struct {
 var (
 	trnsfrm transform.Transformer
 
-	reWord = regexp.MustCompile(`[A-Z][A-Z]+`)
+	reWord = regexp.MustCompile(`(IJ|[A-Z])[A-Z]+`)
 
 	specials = []sub{
 		// verbindings-s
