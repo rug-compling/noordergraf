@@ -11,4 +11,6 @@ require (
 require (
 	github.com/danwakefield/fnmatch v0.0.0-20160403171240-cbb64ac3d964 // indirect
 	github.com/dlclark/regexp2 v1.4.0 // indirect
+	github.com/rug-compling/noordergraf v0.0.0-20211127161233-a369bbb7199c // indirect
+	golang.org/x/text v0.3.7 // indirect
 )

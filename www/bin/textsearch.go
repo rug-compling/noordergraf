@@ -1,6 +1,8 @@
 package main
 
 import (
+	"github.com/rug-compling/noordergraf/go/nlsoundex"
+
 	"bytes"
 	"encoding/xml"
 	"fmt"
@@ -43,6 +45,7 @@ Missing query
 `)
 		return
 	}
+	qq := q
 
 	var template string
 	switch req.FormValue("t") {
@@ -51,10 +54,12 @@ Missing query
 PREFIX : <https://noordergraf.rug.nl/ns#>
 SELECT ?s ?o {
   ?s :name ?n .
-  ( ?n ?o ) fti:match ( %q "fullname" ) .
+  ?n fti:match ( %q "fullname" ) .
+  ?n :fullname ?o .
 }
 ORDER BY ?s
 `
+		qq = nlsoundex.Soundex(q)
 	default:
 		template = `
 PREFIX : <https://noordergraf.rug.nl/ns#>
@@ -68,7 +73,7 @@ ORDER BY ?s ?o
 `
 	}
 
-	query := fmt.Sprintf(template, q)
+	query := fmt.Sprintf(template, qq)
 
 	request := "http://localhost:10035/repositories/noordergraf?limit=1000&query=" + url.QueryEscape(query)
 	resp, err := http.Get(request)

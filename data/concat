@@ -17,7 +17,7 @@ do
     name="`basename $i .ttl`"
     echo "<tomb/$name> {"
     echo "tomb:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
-    fgrep -h -v '@prefix' $i
+    fgrep -h -v '@prefix' $i | ../../tools/name2soundex
     echo "}"
 done
 

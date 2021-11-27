@@ -2,4 +2,4 @@
 % : %.go
 	go build $<
 
-all: jpg2ttl xml2ttl
+all: jpg2ttl name2soundex xml2ttl
