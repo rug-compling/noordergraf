@@ -32,9 +32,9 @@ var (
 			r: regexp.MustCompile(`([^AEIOUYJ]E)[NR](S?$|([^AEIOUY]))`),
 			s: `${1}${3}`,
 		},
-		// slot-s na medeklinker of u
+		// slot-s en -us na medeklinker
 		sub{
-			r: regexp.MustCompile(`([^AEIOYS])S+$`),
+			r: regexp.MustCompile(`([^AEIOUY])U?S+$`),
 			s: `${1}`,
 		},
 	}
