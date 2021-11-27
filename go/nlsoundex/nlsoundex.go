@@ -32,6 +32,11 @@ var (
 			r: regexp.MustCompile(`([^AEIOUYJ]E)[NR](S?$|([^AEIOUY]))`),
 			s: `${1}${3}`,
 		},
+		// slot-s na medeklinker of u
+		sub{
+			r: regexp.MustCompile(`([^AEIOYS])S+$`),
+			s: `${1}`,
+		},
 	}
 
 	reCode *regexp.Regexp
