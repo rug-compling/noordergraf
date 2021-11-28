@@ -13,7 +13,7 @@ import (
 
 var (
 	x  = util.CheckErr
-	re = regexp.MustCompile(`:fullname[ \t]+".*"[ \t]*;[ \t]*$`)
+	re = regexp.MustCompile(`:fullname[ \t]+".*"`)
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 			func(s string) string {
 				p1 := strings.Index(s, `"`) + 1
 				p2 := strings.LastIndex(s, `"`)
-				return fmt.Sprintf(`%s :fullnameSE "%s" ;`, s, nlsoundex.Soundex(s[p1:p2]))
+				return fmt.Sprintf(`%s ; :fullnameSE "%s"`, s, nlsoundex.Soundex(s[p1:p2]))
 			}))
 	}
 	x(scanner.Err())
