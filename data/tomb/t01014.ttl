@@ -16,15 +16,6 @@ gehuwde Dochter, terwijl
 3 haar in de eeuwigheid
 zijn voor gegaan.
 """ ;
-  :ent [
-    a :Group.n.01 ;
-    :mem t01014:p3 ;
-    :qua 4
-  ], [
-    a :Group.n.01 ;
-    :mem t01014:p5 ;
-    :qua 3
-  ] ;
   :image [
     dc:date "2020-04-05T12:18:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -90,6 +81,10 @@ t01014:p2
 
 t01014:p3
   a :Person ;
+  :quantity [
+    a :Quantity ;
+    :number 4
+  ] ;
   :rol [
     a :Child.n.02 ;
     :tgt t01014:p1
@@ -103,8 +98,13 @@ t01014:p4
 
 t01014:p5
   a :Person ;
+  :quantity [
+    a :Quantity ;
+    :number 3
+  ] ;
   :rol [
     a :Child.n.02 ;
-    :tgt t01014:p1
+    :tgt t01014:p1 ;
+    :comment "overleden"
   ] .
 

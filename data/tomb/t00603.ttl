@@ -74,10 +74,14 @@ t00603:p2
 
 t00603:p3
   a :Person ;
-  :qua 6 ;
+  :quantity [
+    a :Quantity ;
+    :number 6
+  ] ;
   :rol [
     a :Child.n.02 ;
-    :tgt t00603:p1
+    :tgt t00603:p1 ;
+    :text "nalatende 6 kinderen" ;
   ] .
 
 t00603:p4

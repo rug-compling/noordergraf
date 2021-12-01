@@ -86,7 +86,10 @@ t00584:p2
 
 t00584:p3
   a :Person ;
-  :qua 3 ;
+  :quantity [
+    a :Quantity ;
+    :number 3
+  ] ;
   :rol [
     a :Child.n.02 ;
     :tgt t00584:p1
@@ -94,7 +97,7 @@ t00584:p3
 
 t00584:p4
   a :Creator ;
-  :loc [
+  :location [
     a :Village.n.02 ;
     :name "EZINGE" ;
     :place place:Ezinge2755938

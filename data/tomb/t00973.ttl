@@ -46,10 +46,13 @@ t00973:p2
   ] .
 
 t00973:p3
-  a :Group.n.01 ;
+  a :Person ;
+  :quantity [
+    a :Quantity
+  ] ;
   :rol [
     a :Child.n.02 ;
-    :tgt t00973:p2, t00973:p3 ;
+    :tgt t00973:p1, t00973:p2 ;
     :text "hunne dankbare kinderen"
   ] .
 

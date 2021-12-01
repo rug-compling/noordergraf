@@ -24,6 +24,7 @@ van onnen en haren.
     ] ;
     :nd "+53.1909+006.5941"^^ll:
   ] ;
+  :commemorator t00021:g1 ;
   :site site:gr9722SNgroningen ;
   :subject t00021:p1 ;
   :sym [
@@ -32,15 +33,7 @@ van onnen en haren.
 
 t00021:g1
   a :Personnel.n.01 ;
-  :loc [
-    a :Village.n.02 ;
-    :name "ONNEN" ;
-    :place place:Onnen2749588
-  ], [
-    a :Town.n.01 ;
-    :name "HAREN" ;
-    :place place:Haren2754841
-  ] .
+  :organisation t00021:o .
 
 t00021:p1
   a :Male ;
@@ -65,13 +58,22 @@ t00021:p1
   :occupation [
     a :Engineer.n.02 ;
     :hisco hisco:98320 ;
-    :organisation [
-      a :Company.n.01 ;
-      :nam "NEDERLANDSE SPOORWEGEN"
-    ]
+    :organisation t00021:o
   ] ;
   :rol [
     a :Friend.n.01 ;
     :tgt t00021:g1
   ] .
 
+t00021:o
+  a :Company.n.01 ;
+  :nam "NEDERLANDSE SPOORWEGEN" ;
+  :location [
+    a :Village.n.02 ;
+    :name "ONNEN" ;
+    :place place:Onnen2749588
+  ], [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] .
