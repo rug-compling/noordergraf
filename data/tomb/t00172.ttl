@@ -2,14 +2,6 @@
 
 tomb:t00172
   a :Tomb ;
-  :text """TODO: a.c.loos
-directeur
-proy clectr.bedrijf
-groningen
-deb. 19 v 1883
-overl.19 xi 1924
-la
-""" ;
   :image [
     dc:date "2019-10-05T10:43:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,7 +15,15 @@ la
     :nd "+53.1904+006.5933"^^ll:
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00172:p1 .
+  :subject t00172:p1 ;
+  :text """TODO: a.c.loos
+directeur
+proy clectr.bedrijf
+groningen
+deb. 19 v 1883
+overl.19 xi 1924
+la
+""" .
 
 t00172:p1
   a :Male ;
@@ -46,7 +46,7 @@ t00172:p1
     :text "TODO: A.C. Loos"
   ] ;
   :occupation [
-    a :Director.n.01 ;
+    a :Occupation ;
     :hisco hisco:21110 ;
     :location [
       a :Province.n.01 ;
@@ -56,6 +56,7 @@ t00172:p1
     :organisation [
       a :Company.n.01 ;
       :nam "PROVINCIAAL ELECTRISCH BEDRIJF GRONINGEN"
-    ]
+    ] ;
+    :wordnet "TODO: Director.n.01"
   ] .
 

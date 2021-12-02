@@ -2,16 +2,6 @@
 
 tomb:t00315
   a :Tomb ;
-  :text """TODO: b.veldkamp
-m leven h.d. sch.
-geb 19 april 1834
-overl. 6 mei 1903.
-en
-j.veldkamp
-halfmouw.
-geb. 24 febr. 1841
-overl. 19 dec. 1931.
-""" ;
   :image [
     dc:date "2019-10-19T14:06:50"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,7 +15,17 @@ overl. 19 dec. 1931.
     :nd "+52.7158+006.4731"^^ll:
   ] ;
   :site site:dr7907CHhoogeveen ;
-  :subject t00315:p1, t00315:p2 .
+  :subject t00315:p1, t00315:p2 ;
+  :text """TODO: b.veldkamp
+m leven h.d. sch.
+geb 19 april 1834
+overl. 6 mei 1903.
+en
+j.veldkamp
+halfmouw.
+geb. 24 febr. 1841
+overl. 19 dec. 1931.
+""" .
 
 t00315:p1
   a :Male ;
@@ -48,8 +48,9 @@ t00315:p1
     :text "TODO: B. Veldkamp"
   ] ;
   :occupation [
-    a :Principal.n.02 ;
-    :hisco hisco:13940
+    a :Occupation ;
+    :hisco hisco:13940 ;
+    :wordnet "TODO: Principal.n.02"
   ] .
 
 t00315:p2

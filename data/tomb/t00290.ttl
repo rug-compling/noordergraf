@@ -2,16 +2,6 @@
 
 tomb:t00290
   a :Tomb ;
-  :text """TODO: 1
-ter nagedachtenis
-aan
-ds. jan kat
-beb. 15 dec. 1985
-intrede te hoogeveen
-15 nov. 1925
-en aldaar overl.
-12 mei 1926
-""" ;
   :image [
     dc:date "2019-10-19T14:45:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,7 +15,17 @@ en aldaar overl.
     :nd "+52.7152+006.4741"^^ll:
   ] ;
   :site site:dr7907CHhoogeveen ;
-  :subject t00290:p1 .
+  :subject t00290:p1 ;
+  :text """TODO: 1
+ter nagedachtenis
+aan
+ds. jan kat
+beb. 15 dec. 1985
+intrede te hoogeveen
+15 nov. 1925
+en aldaar overl.
+12 mei 1926
+""" .
 
 t00290:c1
   a :Town.n.01 ;
@@ -54,10 +54,11 @@ t00290:p1
     :text "TODO: Ds Jan Kat"
   ] ;
   :occupation [
-    a :Preacher.n.01 ;
+    a :Occupation ;
     :begin "1925-11-15"^^xsd:date ;
     :hisco hisco:14120 ;
-    :location t00290:c1
+    :location t00290:c1 ;
+    :wordnet "TODO: Preacher.n.01"
   ] ;
   :placeOfDeath t00290:c1 .
 

@@ -2,22 +2,6 @@
 
 tomb:t00106
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-t. f. thussen
-in leven arts
-geb. 6 maart 1864
-oyerl:16 juni 1937
-gebbina katharina
-thussen
-geb.2 sept. 1876
-overl.3 april 1950
-echt gen. van
-klaas mulder
-geb. 17 nov. 1877
-overl.10 sept. 1959
-.-01
-""" ;
   :image [
     dc:date "2019-09-21T15:56:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -39,7 +23,23 @@ overl.10 sept. 1959
     ], [
       a :Frond.n.01
     ]
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+van
+t. f. thussen
+in leven arts
+geb. 6 maart 1864
+oyerl:16 juni 1937
+gebbina katharina
+thussen
+geb.2 sept. 1876
+overl.3 april 1950
+echt gen. van
+klaas mulder
+geb. 17 nov. 1877
+overl.10 sept. 1959
+.-01
+""" .
 
 t00106:p1
   a :Male ;
@@ -62,8 +62,9 @@ t00106:p1
     :text "TODO: T.F. Thijssen"
   ] ;
   :occupation [
-    a :Doctor.n.01 ;
-    :hisco hisco:06105
+    a :Occupation ;
+    :hisco hisco:06105 ;
+    :wordnet "TODO: Doctor.n.01"
   ] .
 
 t00106:p2

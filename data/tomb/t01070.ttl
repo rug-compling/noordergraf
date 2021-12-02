@@ -2,6 +2,20 @@
 
 tomb:t01070
   a :Tomb ;
+  :image [
+    dc:date "2020-05-15T17:48:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t01070.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1627 ;
+      geo:long 6.6138
+    ] ;
+    :nd "+53.1627+006.6138"^^ll:
+  ] ;
+  :site site:gr9752CMharen ;
+  :subject t01070:p1, t01070:p2, t01070:p3, t01070:p4 ;
   :text """TODO: tammo hoeksema
 tandarts
 10.4. 1837
@@ -18,21 +32,7 @@ paul e. hoeksema
 arts
 26.1. 1926
 7.10. 2008
-""" ;
-  :image [
-    dc:date "2020-05-15T17:48:09"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t01070.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1627 ;
-      geo:long 6.6138
-    ] ;
-    :nd "+53.1627+006.6138"^^ll:
-  ] ;
-  :site site:gr9752CMharen ;
-  :subject t01070:p1, t01070:p2, t01070:p3, t01070:p4 .
+""" .
 
 t01070:p1
   a :Male ;
@@ -55,8 +55,9 @@ t01070:p1
     :text "TODO: Tammo Hoeksema"
   ] ;
   :occupation [
-    a :Dentist.n.01 ;
-    :hisco hisco:06310
+    a :Occupation ;
+    :hisco hisco:06310 ;
+    :wordnet "TODO: Dentist.n.01"
   ] .
 
 t01070:p2
@@ -122,7 +123,8 @@ t01070:p4
     :text "TODO: Paul E. Hoeksema"
   ] ;
   :occupation [
-    a :Doctor.n.01 ;
-    :hisco hisco:06105
+    a :Occupation ;
+    :hisco hisco:06105 ;
+    :wordnet "TODO: Doctor.n.01"
   ] .
 

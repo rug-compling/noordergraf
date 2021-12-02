@@ -2,18 +2,6 @@
 
 tomb:t00251
   a :Tomb ;
-  :text """TODO: deve echt en vader
-eelko jan
-groeneveld
-ass, posterijen
-83.23 dec. 1861
-vel 20 sept 1921
-casimit
-e en kinderen
-een gerroken en tersia
-gen hart zu guogod, niet
-verachten. ps. 51:19
-""" ;
   :image [
     dc:date "2019-10-10T09:45:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -38,7 +26,19 @@ verachten. ps. 51:19
     :text "Ps.51:19B"
   ] ;
   :site site:gr9721AAgroningen ;
-  :subject t00251:p1, t00251:p2 .
+  :subject t00251:p1, t00251:p2 ;
+  :text """TODO: deve echt en vader
+eelko jan
+groeneveld
+ass, posterijen
+83.23 dec. 1861
+vel 20 sept 1921
+casimit
+e en kinderen
+een gerroken en tersia
+gen hart zu guogod, niet
+verachten. ps. 51:19
+""" .
 
 t00251:p1
   a :Male ;
@@ -61,8 +61,9 @@ t00251:p1
     :text "TODO: Eelko Jan Groeneveld"
   ] ;
   :occupation [
-    a :Postal_clerk.n.01 ;
-    :hisco hisco:37020
+    a :Occupation ;
+    :hisco hisco:37020 ;
+    :wordnet "TODO: Postal_clerk.n.01"
   ] ;
   :rol [
     a :Father.n.01

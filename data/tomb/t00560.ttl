@@ -2,15 +2,6 @@
 
 tomb:t00560
   a :Tomb ;
-  :text """TODO: ds.j.van petegem,
-in leven pred der
-vije evanggem.almier
-ge8.21 january 1842
-ovcil. 29 maart 1914
-,
-tecntsenoot vat
-s.m. van der peil
-""" ;
   :image [
     dc:date "2019-11-24T13:48:12"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,7 +18,16 @@ s.m. van der peil
   :subject t00560:p1, t00560:p2 ;
   :sym [
     a :Book.n.02
-  ] .
+  ] ;
+  :text """TODO: ds.j.van petegem,
+in leven pred der
+vije evanggem.almier
+ge8.21 january 1842
+ovcil. 29 maart 1914
+,
+tecntsenoot vat
+s.m. van der peil
+""" .
 
 t00560:p1
   a :Male ;
@@ -51,7 +51,7 @@ t00560:p1
     :text "TODO: Ds J. van Petegem"
   ] ;
   :occupation [
-    a :Preacher.n.01 ;
+    a :Occupation ;
     :hisco hisco:14120 ;
     :location [
       a :City.n.01 ;
@@ -61,7 +61,8 @@ t00560:p1
     :organisation [
       a :Community.n.02 ;
       :nam "VRIJE EVANGELISCHE GEMEENTE"
-    ]
+    ] ;
+    :wordnet "TODO: Preacher.n.01"
   ] ;
   :rol [
     a :Spouse.n.01 ;

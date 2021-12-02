@@ -2,15 +2,6 @@
 
 tomb:t00548
   a :Tomb ;
-  :text """TODO: ubbo
-wilkens
-1865
-10 sept. 10mei
-1921
-burgemeester
-van
-veendam
-""" ;
   :image [
     dc:date "2019-11-24T14:09:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,7 +15,16 @@ veendam
     :nd "+53.1043+006.8755"^^ll:
   ] ;
   :site site:gr9641ANveendam ;
-  :subject t00548:p1 .
+  :subject t00548:p1 ;
+  :text """TODO: ubbo
+wilkens
+1865
+10 sept. 10mei
+1921
+burgemeester
+van
+veendam
+""" .
 
 t00548:p1
   a :Male ;
@@ -47,12 +47,13 @@ t00548:p1
     :text "TODO: Ubbo Wilkens"
   ] ;
   :occupation [
-    a :Mayor.n.01 ;
+    a :Occupation ;
     :hisco hisco:20110 ;
     :location [
       a :City.n.01 ;
       :name "VEENDAM" ;
       :place place:Veendam2745783
-    ]
+    ] ;
+    :wordnet "TODO: Mayor.n.01"
   ] .
 

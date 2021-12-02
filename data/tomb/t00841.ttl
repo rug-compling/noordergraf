@@ -2,6 +2,21 @@
 
 tomb:t00841
   a :Tomb ;
+  :image [
+    dc:date "2020-02-20T14:46:40"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00841.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2958 ;
+      geo:long 5.0655
+    ] ;
+    :nd "+53.2958+005.0655"^^ll:
+  ] ;
+  :quo "NAAR JEZUS HEEN"@nld ;
+  :site site:fr8899AWoost_vlieland ;
+  :subject t00841:p1, t00841:p2 ;
   :text """TODO: naar
 jhaushcen
 olizyakgrsloot
@@ -17,22 +32,7 @@ ridder 25 klasse in
 de se olofs-orde
 van noorwegen
 16 ctober 1929
-""" ;
-  :image [
-    dc:date "2020-02-20T14:46:40"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00841.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2958 ;
-      geo:long 5.0655
-    ] ;
-    :nd "+53.2958+005.0655"^^ll:
-  ] ;
-  :quo "NAAR JEZUS HEEN"@nld ;
-  :site site:fr8899AWoost_vlieland ;
-  :subject t00841:p1, t00841:p2 .
+""" .
 
 t00841:p1
   a :Female ;
@@ -46,8 +46,9 @@ t00841:p1
     :text "TODO: Betzy Akersloot-Berg"
   ] ;
   :occupation [
-    a :Painter.n.01 ;
-    :hisco hisco:16130
+    a :Occupation ;
+    :hisco hisco:16130 ;
+    :wordnet "TODO: Painter.n.01"
   ] .
 
 t00841:p2
@@ -62,15 +63,16 @@ t00841:p2
     :text "TODO: Gooswinus Gerardus Akersloot"
   ] ;
   :occupation [
-    a :Consul.n.01 ;
+    a :Occupation ;
     :hisco hisco:20210 ;
     :thm [
       a :State.n.04 ;
-      :nam "NOORWEGEN"
+      :nam "ZWEDEN"
     ], [
       a :State.n.04 ;
-      :nam "ZWEDEN"
-    ]
+      :nam "NOORWEGEN"
+    ] ;
+    :wordnet "TODO: Consul.n.01"
   ] ;
   :quo "RIDDER TWEEDE KLASSE IN DE ST OLOFS-ORDE VAN NOORWEGEN" .
 

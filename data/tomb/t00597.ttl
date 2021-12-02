@@ -2,17 +2,6 @@
 
 tomb:t00597
   a :Tomb ;
-  :text """TODO: -
-cornelis dirk saal
-* 217 1917 + 9-12 1986
-socioloog rug
-geliefde echtgenoot en leermeester yan
-toos maria zuurveen
-* 2 - 12 - 1934 + 2917-2004
-auteur
-\"amicitia et tolerantia
-icor 13
-""" ;
   :image [
     dc:date "2019-11-30T14:12:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -28,7 +17,18 @@ icor 13
   :quo "AMICITIA ET TOLERANTIA"@nld ;
   :ref t00597:c1 ;
   :site site:gr9951TNwinsum ;
-  :subject t00597:p1, t00597:p2 .
+  :subject t00597:p1, t00597:p2 ;
+  :text """TODO: -
+cornelis dirk saal
+* 217 1917 + 9-12 1986
+socioloog rug
+geliefde echtgenoot en leermeester yan
+toos maria zuurveen
+* 2 - 12 - 1934 + 2917-2004
+auteur
+\"amicitia et tolerantia
+icor 13
+""" .
 
 t00597:c1
   a :Quote ;
@@ -59,12 +59,13 @@ t00597:p1
     :text "TODO: Cornelis Dirk Saal"
   ] ;
   :occupation [
-    a :Sociologist.n.01 ;
+    a :Occupation ;
     :hisco hisco:19220 ;
     :organisation [
       a :University.n.02 ;
       :nam "RIJKSUNIVERSITEIT GRONINGEN"
-    ]
+    ] ;
+    :wordnet "TODO: Sociologist.n.01"
   ] ;
   :rol [
     a :Spouse.n.01 ;
@@ -95,7 +96,8 @@ t00597:p2
     :text "TODO: Toos Maria Zuurveen"
   ] ;
   :occupation [
-    a :Author.n.01 ;
-    :hisco hisco:15120
+    a :Occupation ;
+    :hisco hisco:15120 ;
+    :wordnet "TODO: Author.n.01"
   ] .
 

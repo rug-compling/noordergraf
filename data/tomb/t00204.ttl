@@ -2,15 +2,6 @@
 
 tomb:t00204
   a :Tomb ;
-  :text """TODO: maria johanna
-hendriks
-ka
-apotheker
-gebate amsterdam
-jan.1897
-overl. te groningen
-20 febr. 1934
-""" ;
   :image [
     dc:date "2019-10-05T09:53:08"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,7 +15,16 @@ overl. te groningen
     :nd "+53.1861+006.5963"^^ll:
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00204:p1 .
+  :subject t00204:p1 ;
+  :text """TODO: maria johanna
+hendriks
+ka
+apotheker
+gebate amsterdam
+jan.1897
+overl. te groningen
+20 febr. 1934
+""" .
 
 t00204:p1
   a :Female ;
@@ -47,8 +47,9 @@ t00204:p1
     :text "TODO: Maria Johanna Hendriks"
   ] ;
   :occupation [
-    a :Pharmacist.n.01 ;
-    :hisco hisco:06710
+    a :Occupation ;
+    :hisco hisco:06710 ;
+    :wordnet "TODO: Pharmacist.n.01"
   ] ;
   :placeOfBirth [
     a :City.n.01 ;

@@ -2,18 +2,6 @@
 
 tomb:t00891
   a :Tomb ;
-  :text """TODO: sissinen
-dellier in deorge
-van crane nie
-di wetrodder der gent grunnlen
-geb:4 febretsee
-overl.29 janileco
-\ub144)
-f.sissingh_bennemia
-beba maart 1870
-el 26. febr. 1945
-g
-""" ;
   :image [
     dc:date "2020-02-01T12:16:20"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,7 +15,19 @@ g
     :nd "+53.2299+006.5520"^^ll:
   ] ;
   :site site:gr9741ACgroningen ;
-  :subject t00891:p1, t00891:p2 .
+  :subject t00891:p1, t00891:p2 ;
+  :text """TODO: sissinen
+dellier in deorge
+van crane nie
+di wetrodder der gent grunnlen
+geb:4 febretsee
+overl.29 janileco
+년)
+f.sissingh_bennemia
+beba maart 1870
+el 26. febr. 1945
+g
+""" .
 
 t00891:p1
   a :Male ;
@@ -50,13 +50,14 @@ t00891:p1
     :text "TODO: H.J. Sissingh"
   ] ;
   :occupation [
-    a :Alderman.n.01 ;
+    a :Occupation ;
     :hisco hisco:20110 ;
     :location [
       a :Municipality.n.01 ;
       :name "GRONINGEN" ;
       :place place:Groningen2755251
-    ]
+    ] ;
+    :wordnet "TODO: Alderman.n.01"
   ] ;
   :property [
     a :Decoration ;

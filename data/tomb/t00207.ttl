@@ -2,14 +2,6 @@
 
 tomb:t00207
   a :Tomb ;
-  :text """TODO: peutelut
-ejzulstra
-aem\u00e1r 21840
-bp1334
-$3503
-dona certa
-de boda
-""" ;
   :image [
     dc:date "2019-10-08T14:57:44"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -35,7 +27,15 @@ de boda
     ], [
       a :InvertedTorch
     ]
-  ] .
+  ] ;
+  :text """TODO: peutelut
+ejzulstra
+aemár 21840
+bp1334
+$3503
+dona certa
+de boda
+""" .
 
 t00207:p1
   a :Male ;
@@ -58,7 +58,7 @@ t00207:p1
     :text "TODO: B.J. Zijlstra"
   ] ;
   :occupation [
-    a :Principal.n.02 ;
+    a :Occupation ;
     :begin "1836-11"^^xsd:gYearMonth ;
     :end "1883"^^xsd:gYear ;
     :hisco hisco:13320 ;
@@ -66,6 +66,7 @@ t00207:p1
       a :Village.n.02 ;
       :name "MIDDELBERT" ;
       :place place:Middelbert2750902
-    ]
+    ] ;
+    :wordnet "TODO: Principal.n.02"
   ] .
 

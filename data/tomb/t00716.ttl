@@ -2,13 +2,6 @@
 
 tomb:t00716
   a :Tomb ;
-  :text """TODO: rudolf hermanvanotterloo
-in leven gepens. 0.1. ambtenaar
-geb. 18 dec. 1876_overl.7 nov. 1939.
-en
-elisabeth johanna van otterloo
-geb.i mei 1888_overl. 14 april 1964
-""" ;
   :image [
     dc:date "2019-12-21T13:27:29"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,7 +15,14 @@ geb.i mei 1888_overl. 14 april 1964
     :nd "+52.7815+006.8998"^^ll:
   ] ;
   :site site:dr7811HEemmen ;
-  :subject t00716:p1, t00716:p2 .
+  :subject t00716:p1, t00716:p2 ;
+  :text """TODO: rudolf hermanvanotterloo
+in leven gepens. 0.1. ambtenaar
+geb. 18 dec. 1876_overl.7 nov. 1939.
+en
+elisabeth johanna van otterloo
+geb.i mei 1888_overl. 14 april 1964
+""" .
 
 t00716:p1
   a :Male ;
@@ -45,14 +45,15 @@ t00716:p1
     :text "TODO: Rudolf Herman van Otterloo"
   ] ;
   :occupation [
-    a :Clerk.n.01 ;
+    a :Occupation ;
     :hisco hisco:30000 ;
     :location [
       a :Colony.n.05 ;
       :name "NEDERLANDS-INDIË" ;
       :place place:Indonesie1643084
     ] ;
-    :text "gepens. O.I. ambtenaar"
+    :text "gepens. O.I. ambtenaar" ;
+    :wordnet "TODO: Clerk.n.01"
   ] .
 
 t00716:p2

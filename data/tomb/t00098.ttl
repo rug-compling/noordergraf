@@ -2,19 +2,6 @@
 
 tomb:t00098
   a :Tomb ;
-  :text """TODO: ef
-heb gedachtenis
-aan
-ba: poulie
-in leven hijpotheek
-bewaarder te groningen:
-geb 22. october (8570
-8-10
-overl32 maart 1889
-geliefde echtgenoot
-van.
-huis
-""" ;
   :image [
     dc:date "2019-09-24T15:11:20"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -28,7 +15,20 @@ huis
     :nd "+53.2062+006.5733"^^ll:
   ] ;
   :site site:gr9725ACgroningen ;
-  :subject t00098:p1, t00098:p2 .
+  :subject t00098:p1, t00098:p2 ;
+  :text """TODO: ef
+heb gedachtenis
+aan
+ba: poulie
+in leven hijpotheek
+bewaarder te groningen:
+geb 22. october (8570
+8-10
+overl32 maart 1889
+geliefde echtgenoot
+van.
+huis
+""" .
 
 t00098:p1
   a :Male ;
@@ -51,7 +51,7 @@ t00098:p1
     :text "TODO: B.A. Poulie"
   ] ;
   :occupation [
-    a :Registrar.n.03 ;
+    a :Occupation ;
     :hisco hisco:33990 ;
     :location [
       a :City.n.01 ;
@@ -60,7 +60,8 @@ t00098:p1
     ] ;
     :thm [
       a :Mortgage.n.01
-    ]
+    ] ;
+    :wordnet "TODO: Registrar.n.03"
   ] ;
   :rol [
     a :Husband.n.01 ;

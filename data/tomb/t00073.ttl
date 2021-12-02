@@ -2,11 +2,6 @@
 
 tomb:t00073
   a :Tomb ;
-  :text """TODO: 1 leven kermisexploitant
-john sipkema
-abelding og
-t 13 sept. 1955
-""" ;
   :image [
     dc:date "2019-09-25T11:53:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,7 +18,12 @@ t 13 sept. 1955
   :subject t00073:p1, t00073:p2 ;
   :sym [
     a :Cross.n.03
-  ] .
+  ] ;
+  :text """TODO: 1 leven kermisexploitant
+john sipkema
+abelding og
+t 13 sept. 1955
+""" .
 
 t00073:p1
   a :Male ;
@@ -37,11 +37,12 @@ t00073:p1
     :text "TODO: John Sipkema"
   ] ;
   :occupation [
-    a :Operator.n.03 ;
+    a :Occupation ;
     :hisco hisco:21490 ;
     :organisation [
       a :Funfair.n.01
-    ]
+    ] ;
+    :wordnet "TODO: Operator.n.03"
   ] .
 
 t00073:p2

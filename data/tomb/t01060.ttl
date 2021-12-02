@@ -2,12 +2,6 @@
 
 tomb:t01060
   a :Tomb ;
-  :text """TODO: jjdijkhuis
-+ 11-9-02 + 265 60
-j.dijkhuis
-* 24-6-03 + 21-1-81
-landbouwer op menneweer
-""" ;
   :image [
     dc:date "2020-05-02T15:51:33"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,7 +18,13 @@ landbouwer op menneweer
   :subject t01060:p1, t01060:p2 ;
   :sym [
     a :Pigeon.n.01
-  ] .
+  ] ;
+  :text """TODO: jjdijkhuis
++ 11-9-02 + 265 60
+j.dijkhuis
+* 24-6-03 + 21-1-81
+landbouwer op menneweer
+""" .
 
 t01060:p1
   a :Person ;
@@ -68,12 +68,13 @@ t01060:p2
     :text "TODO: J. Dijkhuis"
   ] ;
   :occupation [
-    a :Farmer.n.01 ;
+    a :Occupation ;
     :hisco hisco:61220 ;
     :location [
       a :Hamlet.n.03 ;
       :name "MENNEWEER" ;
       :place place:Menneweer12253656
-    ]
+    ] ;
+    :wordnet "TODO: Farmer.n.01"
   ] .
 

@@ -2,17 +2,6 @@
 
 tomb:t00422
   a :Tomb ;
-  :text """TODO: martin van waning
-kunstschilder
-en
-beeldhouwer o. a.
-de schiermonnik
-geb.'s-gravenhage
-4 sept. 1687
-gest. schiermonnikoog
-7 juli 1972
-metinventioning
-""" ;
   :image [
     dc:date "2019-11-02T11:30:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -30,7 +19,18 @@ metinventioning
     :thm t00422:p1
   ] ;
   :site site:fr9166NAschiermonnikoog ;
-  :subject t00422:p1 .
+  :subject t00422:p1 ;
+  :text """TODO: martin van waning
+kunstschilder
+en
+beeldhouwer o. a.
+de schiermonnik
+geb.'s-gravenhage
+4 sept. 1687
+gest. schiermonnikoog
+7 juli 1972
+metinventioning
+""" .
 
 t00422:p1
   a :Male ;
@@ -53,15 +53,17 @@ t00422:p1
     :text "TODO: Martin van Waning"
   ] ;
   :occupation [
-    a :Painter.n.01 ;
-    :hisco hisco:16130
+    a :Occupation ;
+    :hisco hisco:16130 ;
+    :wordnet "TODO: Painter.n.01"
   ], [
-    a :Sculptor.n.01 ;
+    a :Occupation ;
     :hisco hisco:16120 ;
     :thm [
       a :Sculpture.n.01 ;
       :nam "DE SCHIERMONNIK"
-    ]
+    ] ;
+    :wordnet "TODO: Sculptor.n.01"
   ] ;
   :placeOfBirth [
     a :City.n.01 ;

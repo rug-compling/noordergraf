@@ -2,20 +2,6 @@
 
 tomb:t00174
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-onzen geliefden
-herder en leeraar
-ds a.hof
-in leven
-predikant der
-baptisten gemeente
-te groningen
-geb. 7 april 1979
-overl-zmaart 1927,
-ook deze was
-met jezus lug-22-5\u20ac
-""" ;
   :image [
     dc:date "2019-10-05T10:42:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -40,7 +26,21 @@ met jezus lug-22-5\u20ac
     :text "luc-22-56"
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00174:p1 .
+  :subject t00174:p1 ;
+  :text """TODO: rustplaats
+van
+onzen geliefden
+herder en leeraar
+ds a.hof
+in leven
+predikant der
+baptisten gemeente
+te groningen
+geb. 7 april 1979
+overl-zmaart 1927,
+ook deze was
+met jezus lug-22-5€
+""" .
 
 t00174:p1
   a :Male ;
@@ -64,7 +64,7 @@ t00174:p1
     :text "TODO: Ds A. Hof"
   ] ;
   :occupation [
-    a :Pastor.n.01 ;
+    a :Occupation ;
     :hisco hisco:14120 ;
     :location [
       a :City.n.01 ;
@@ -74,6 +74,7 @@ t00174:p1
     :organisation [
       a :Community.n.02 ;
       :nam "BAPTISTENGEMEENTE"
-    ]
+    ] ;
+    :wordnet "TODO: Pastor.n.01"
   ] .
 

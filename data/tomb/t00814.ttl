@@ -2,17 +2,6 @@
 
 tomb:t00814
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-pere prodaik
-rasker
-els 913
-1858
-12
-fue gron
-in leven
-sekeepshapitein.
-""" ;
   :image [
     dc:date "2020-02-01T12:47:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -33,7 +22,18 @@ sekeepshapitein.
     a :Frond.n.01
   ], [
     a :Sandglass.n.01
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+van
+pere prodaik
+rasker
+els 913
+1858
+12
+fue gron
+in leven
+sekeepshapitein.
+""" .
 
 t00814:c1
   a :City.n.01 ;
@@ -61,8 +61,9 @@ t00814:p1
     :text "TODO: Derk Fredik Rasker"
   ] ;
   :occupation [
-    a :Skipper.n.02 ;
-    :hisco hisco:04217
+    a :Occupation ;
+    :hisco hisco:04217 ;
+    :wordnet "TODO: Skipper.n.02"
   ] ;
   :placeOfBirth t00814:c1 ;
   :placeOfDeath t00814:c1 .

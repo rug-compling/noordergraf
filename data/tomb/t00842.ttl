@@ -2,11 +2,6 @@
 
 tomb:t00842
   a :Tomb ;
-  :text """TODO: sientje de boer
-biologe
-12 1913
-+923-1997
-""" ;
   :image [
     dc:date "2020-02-20T14:46:20"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -20,7 +15,12 @@ biologe
     :nd "+53.2958+005.0655"^^ll:
   ] ;
   :site site:fr8899AWoost_vlieland ;
-  :subject t00842:p1 .
+  :subject t00842:p1 ;
+  :text """TODO: sientje de boer
+biologe
+12 1913
++923-1997
+""" .
 
 t00842:p1
   a :Female ;
@@ -43,7 +43,8 @@ t00842:p1
     :text "TODO: Sientje de Boer"
   ] ;
   :occupation [
-    a :Biologist.n.01 ;
-    :hisco hisco:05110
+    a :Occupation ;
+    :hisco hisco:05110 ;
+    :wordnet "TODO: Biologist.n.01"
   ] .
 

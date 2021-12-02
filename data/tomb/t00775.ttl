@@ -2,23 +2,6 @@
 
 tomb:t00775
   a :Tomb ;
-  :text """TODO: bre ved boric
-ser nagedachten
-van
-marcus joling
-in leven herkvoogda
-gebte leerdinge
-1 aag. 1854
-overl. aldaar
-18 mei 1941.
-w
-ja
-one
-3.jp
-janna
-rust zacht lieve
-broeder en oom.
-""" ;
   :image [
     dc:date "2019-12-21T13:02:44"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -36,7 +19,24 @@ broeder en oom.
   :subject t00775:p1 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: bre ved boric
+ser nagedachten
+van
+marcus joling
+in leven herkvoogda
+gebte leerdinge
+1 aag. 1854
+overl. aldaar
+18 mei 1941.
+w
+ja
+one
+3.jp
+janna
+rust zacht lieve
+broeder en oom.
+""" .
 
 t00775:c1
   a :Village.n.02 ;
@@ -64,8 +64,9 @@ t00775:p1
     :text "TODO: Marcus Joling"
   ] ;
   :occupation [
-    a :Elder.n.03 ;
-    :hisco hisco:14000
+    a :Occupation ;
+    :hisco hisco:14000 ;
+    :wordnet "TODO: Elder.n.03"
   ] ;
   :placeOfBirth t00775:c1 ;
   :placeOfDeath t00775:c1 ;

@@ -2,13 +2,6 @@
 
 tomb:t00244
   a :Tomb ;
-  :text """TODO: feiko jacob bouman
-v1oolbouwer
-14 = 5= 1888 23 = 8=1951
-geliefde echtgenoot van
-neeltje van der nis
-22= 2 = 1900 13-5=1987
-""" ;
   :image [
     dc:date "2019-10-11T17:31:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,7 +15,14 @@ neeltje van der nis
     :nd "+53.1727+006.6068"^^ll:
   ] ;
   :site site:gr9751BBharen ;
-  :subject t00244:p1, t00244:p2 .
+  :subject t00244:p1, t00244:p2 ;
+  :text """TODO: feiko jacob bouman
+v1oolbouwer
+14 = 5= 1888 23 = 8=1951
+geliefde echtgenoot van
+neeltje van der nis
+22= 2 = 1900 13-5=1987
+""" .
 
 t00244:p1
   a :Male ;
@@ -45,8 +45,9 @@ t00244:p1
     :text "TODO: Feiko Jacob Bouman"
   ] ;
   :occupation [
-    a :Luthier.n.01 ;
-    :hisco hisco:94120
+    a :Occupation ;
+    :hisco hisco:94120 ;
+    :wordnet "TODO: Luthier.n.01"
   ] ;
   :rol [
     a :Spouse.n.01 ;

@@ -2,19 +2,6 @@
 
 tomb:t00120
   a :Tomb ;
-  :text """TODO: pustp_ats a
-willem bolt
-hoofd der chr nat.
-ulischool
-te haren van 1943 1962
-ger27 juni 1898
-overl5 juli 1966
-gel echtgenoot van
-roelina eikelboom
-geb 21 jan 1898
-overl.ii jan 1970
-openb, 14 :3
-""" ;
   :image [
     dc:date "2019-09-20T17:45:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,7 +16,20 @@ openb, 14 :3
   ] ;
   :ref t00120:v1 ;
   :site site:gr9752CMharen ;
-  :subject t00120:p1, t00120:p2 .
+  :subject t00120:p1, t00120:p2 ;
+  :text """TODO: pustp_ats a
+willem bolt
+hoofd der chr nat.
+ulischool
+te haren van 1943 1962
+ger27 juni 1898
+overl5 juli 1966
+gel echtgenoot van
+roelina eikelboom
+geb 21 jan 1898
+overl.ii jan 1970
+openb, 14 :3
+""" .
 
 t00120:p1
   a :Male ;
@@ -52,7 +52,7 @@ t00120:p1
     :text "TODO: Willem Bolt"
   ] ;
   :occupation [
-    a :Principal.n.02 ;
+    a :Occupation ;
     :begin "1943"^^xsd:gYear ;
     :end "1963"^^xsd:gYear ;
     :hisco hisco:13940 ;
@@ -64,7 +64,8 @@ t00120:p1
     :organisation [
       a :School.n.01 ;
       :nam "CHRISTELIJKE NATIONALE ULO SCHOOL"
-    ]
+    ] ;
+    :wordnet "TODO: Principal.n.02"
   ] ;
   :rol [
     a :Husband.n.01 ;

@@ -2,17 +2,6 @@
 
 tomb:t00496
   a :Tomb ;
-  :text """TODO: lasts
--et-
-an
-klaast.poelstra
-in lelen dotaristelicatepe
-les. te sallum
-juli 1cs
-1865
-uverl. te amsterdam
-13 december 1916
-""" ;
   :image [
     dc:date "2019-11-16T14:11:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +15,18 @@ uverl. te amsterdam
     :nd "+53.2091+005.7914"^^ll:
   ] ;
   :site site:fr8917AVleeuwarden ;
-  :subject t00496:p1 .
+  :subject t00496:p1 ;
+  :text """TODO: lasts
+-et-
+an
+klaast.poelstra
+in lelen dotaristelicatepe
+les. te sallum
+juli 1cs
+1865
+uverl. te amsterdam
+13 december 1916
+""" .
 
 t00496:c1
   a :City.n.01 ;
@@ -54,9 +54,10 @@ t00496:p1
     :text "TODO: Klaas T. Poelstra"
   ] ;
   :occupation [
-    a :Notary.n.01 ;
+    a :Occupation ;
     :hisco hisco:12310 ;
-    :location t00496:c1
+    :location t00496:c1 ;
+    :wordnet "TODO: Notary.n.01"
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;

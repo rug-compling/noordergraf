@@ -2,19 +2,6 @@
 
 tomb:t00550
   a :Tomb ;
-  :text """TODO: formulaillina
-wan
-odding
-jan
-gdtornien
-warunuary 1787
-de
-marlante riendas
-mar1 ma 1862
-ruim 10 jarn
-hojdemderniers
-in deze gemeente
-""" ;
   :image [
     dc:date "2019-11-24T14:05:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -40,7 +27,20 @@ in deze gemeente
     ], [
       a :Ribbon.n.01
     ]
-  ] .
+  ] ;
+  :text """TODO: formulaillina
+wan
+odding
+jan
+gdtornien
+warunuary 1787
+de
+marlante riendas
+mar1 ma 1862
+ruim 10 jarn
+hojdemderniers
+in deze gemeente
+""" .
 
 t00550:p1
   a :Male ;
@@ -63,13 +63,14 @@ t00550:p1
     :text "TODO: Jan Odding"
   ] ;
   :occupation [
-    a :Principal.n.02 ;
+    a :Occupation ;
     :hisco hisco:13320 ;
     :location [
       a :Municipality.n.01 ;
       :name "VEENDAM" ;
       :place place:Veendam2745783
-    ]
+    ] ;
+    :wordnet "TODO: Principal.n.02"
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;

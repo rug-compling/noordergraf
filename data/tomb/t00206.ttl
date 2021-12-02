@@ -2,17 +2,6 @@
 
 tomb:t00206
   a :Tomb ;
-  :text """TODO: kathat
-mindennis run
-fan girrits
-rokos
-ben 1803 to 1857
-indrapur dosjeng
-wa
-eur
-yel. 28 arad
-@
-""" ;
   :image [
     dc:date "2019-10-08T14:58:17"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,7 +18,18 @@ yel. 28 arad
   :subject t00206:p1 ;
   :sym [
     a :Book.n.02
-  ] .
+  ] ;
+  :text """TODO: kathat
+mindennis run
+fan girrits
+rokos
+ben 1803 to 1857
+indrapur dosjeng
+wa
+eur
+yel. 28 arad
+@
+""" .
 
 t00206:p1
   a :Male ;
@@ -52,7 +52,7 @@ t00206:p1
     :text "TODO: Jan Gerrits Rijkens"
   ] ;
   :occupation [
-    a :Teacher.n.01 ;
+    a :Occupation ;
     :begin "1803"^^xsd:gYear ;
     :end "1857"^^xsd:gYear ;
     :hisco hisco:13320 ;
@@ -60,6 +60,7 @@ t00206:p1
       a :Village.n.02 ;
       :name "WEHE" ;
       :place place:WeheDenHoorn2744898
-    ]
+    ] ;
+    :wordnet "TODO: Teacher.n.01"
   ] .
 

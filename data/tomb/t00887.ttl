@@ -2,18 +2,6 @@
 
 tomb:t00887
   a :Tomb ;
-  :text """TODO: ter nagedachtenis aan
-den voor het vaderland
-gevallen militair
-van het 4e rv a.
-hilbert
-loomulder
-geboren te groningen
-11 jan 1916
-gesneuvelo te dubbeldam
-10 mei 1940
-huruste in vrede
-""" ;
   :image [
     dc:date "2020-02-15T15:45:32"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -33,7 +21,19 @@ huruste in vrede
     a :Entity.n.01
   ], [
     a :Entity.n.01
-  ] .
+  ] ;
+  :text """TODO: ter nagedachtenis aan
+den voor het vaderland
+gevallen militair
+van het 4e rv a.
+hilbert
+loomulder
+geboren te groningen
+11 jan 1916
+gesneuvelo te dubbeldam
+10 mei 1940
+huruste in vrede
+""" .
 
 t00887:p1
   a :Male ;
@@ -56,8 +56,9 @@ t00887:p1
     :text "TODO: Hilbert Loomulder"
   ] ;
   :occupation [
-    a :Soldier.n.01 ;
-    :hisco hisco:58340
+    a :Occupation ;
+    :hisco hisco:58340 ;
+    :wordnet "TODO: Soldier.n.01"
   ] ;
   :placeOfBirth [
     a :City.n.01 ;

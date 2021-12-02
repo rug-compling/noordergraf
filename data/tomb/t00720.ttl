@@ -2,24 +2,6 @@
 
 tomb:t00720
   a :Tomb ;
-  :text """TODO: hkls hindu
-n-1.7602
-harmina an
-bekkering
-122
-ind
-rustplaats
-van onze lieve ouders
-hendrik slik
-in leven gep. ruksambtenaar-
-drager van de zilveren eremedaille
-(oranje nassau orde)
-16 juli 1855 - 13 jan. 1931
-en
-magrietha cornelia
-zijlma
-5 aug. 1862-11 oct. 1943
-""" ;
   :image [
     dc:date "2019-12-21T13:23:24"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -40,7 +22,25 @@ zijlma
     a :Frond.n.01
   ], [
     a :Ribbon.n.01
-  ] .
+  ] ;
+  :text """TODO: hkls hindu
+n-1.7602
+harmina an
+bekkering
+122
+ind
+rustplaats
+van onze lieve ouders
+hendrik slik
+in leven gep. ruksambtenaar-
+drager van de zilveren eremedaille
+(oranje nassau orde)
+16 juli 1855 - 13 jan. 1931
+en
+magrietha cornelia
+zijlma
+5 aug. 1862-11 oct. 1943
+""" .
 
 t00720:p1
   a :Male ;
@@ -63,13 +63,14 @@ t00720:p1
     :text "TODO: Hendrik Slik"
   ] ;
   :occupation [
-    a :Clerk.n.01 ;
+    a :Occupation ;
     :hisco hisco:30000 ;
     :organisation [
       a :State.n.04 ;
       :nam "NEDERLAND"
     ] ;
-    :text "gep. rijksambtenaar"
+    :text "gep. rijksambtenaar" ;
+    :wordnet "TODO: Clerk.n.01"
   ] ;
   :rol [
     a :Bearer.n.04 ;

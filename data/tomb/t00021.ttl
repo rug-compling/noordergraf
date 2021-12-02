@@ -2,16 +2,7 @@
 
 tomb:t00021
   a :Tomb ;
-  :text """TODO: like
-r
-ter gedachtenis
-aan onzen vriend
-g.postma
-in leven
-machinist bij de ns
-het gezamenlijk personeel
-van onnen en haren.
-""" ;
+  :commemorator t00021:g1 ;
   :image [
     dc:date "2019-09-25T16:27:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,16 +15,38 @@ van onnen en haren.
     ] ;
     :nd "+53.1909+006.5941"^^ll:
   ] ;
-  :commemorator t00021:g1 ;
   :site site:gr9722SNgroningen ;
   :subject t00021:p1 ;
   :sym [
     a :BrokenFrond
-  ] .
+  ] ;
+  :text """TODO: like
+r
+ter gedachtenis
+aan onzen vriend
+g.postma
+in leven
+machinist bij de ns
+het gezamenlijk personeel
+van onnen en haren.
+""" .
 
 t00021:g1
   a :Personnel.n.01 ;
   :organisation t00021:o .
+
+t00021:o
+  a :Company.n.01 ;
+  :location [
+    a :Village.n.02 ;
+    :name "ONNEN" ;
+    :place place:Onnen2749588
+  ], [
+    a :Town.n.01 ;
+    :name "HAREN" ;
+    :place place:Haren2754841
+  ] ;
+  :nam "NEDERLANDSE SPOORWEGEN" .
 
 t00021:p1
   a :Male ;
@@ -56,24 +69,13 @@ t00021:p1
     :text "TODO: G. Postma"
   ] ;
   :occupation [
-    a :Engineer.n.02 ;
+    a :Occupation ;
     :hisco hisco:98320 ;
-    :organisation t00021:o
+    :organisation t00021:o ;
+    :wordnet "TODO: Engineer.n.02"
   ] ;
   :rol [
     a :Friend.n.01 ;
     :tgt t00021:g1
   ] .
 
-t00021:o
-  a :Company.n.01 ;
-  :nam "NEDERLANDSE SPOORWEGEN" ;
-  :location [
-    a :Village.n.02 ;
-    :name "ONNEN" ;
-    :place place:Onnen2749588
-  ], [
-    a :Town.n.01 ;
-    :name "HAREN" ;
-    :place place:Haren2754841
-  ] .

@@ -2,24 +2,6 @@
 
 tomb:t00539
   a :Tomb ;
-  :text """TODO: :19
-audplaats
-van den heer
-van der wij
-an epi
-gepensioneerd
-donderwijs
-in neerlandech nale
-gedte hoogezand
-den 21 augustus
-1817
-werlite veendam
-den 19 juni
-1880:
-echtgenoot van
-theodora henrica
-muller
-""" ;
   :image [
     dc:date "2019-11-24T14:19:33"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -37,6 +19,12 @@ muller
   :sym [
     a :Composite.n.01 ;
     :prt t00539:s7, [
+      a :Frond.n.01
+    ], [
+      a :Bird.n.01
+    ], [
+      a :Butterfly.n.01
+    ], [
       a :Cocoon.n.01
     ], [
       a :InvertedTorch
@@ -46,14 +34,26 @@ muller
       a :Frond.n.01
     ], [
       a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Bird.n.01
-    ], [
-      a :Butterfly.n.01
     ]
-  ] .
+  ] ;
+  :text """TODO: :19
+audplaats
+van den heer
+van der wij
+an epi
+gepensioneerd
+donderwijs
+in neerlandech nale
+gedte hoogezand
+den 21 augustus
+1817
+werlite veendam
+den 19 juni
+1880:
+echtgenoot van
+theodora henrica
+muller
+""" .
 
 t00539:p1
   a :Male ;
@@ -76,14 +76,15 @@ t00539:p1
     :text "TODO: Jan Eppes van der Wijk"
   ] ;
   :occupation [
-    a :Principal.n.02 ;
+    a :Occupation ;
     :hisco hisco:13320 ;
     :location [
       a :Colony.n.05 ;
       :name "NEDERLANDS-INDIË" ;
       :place place:Indonesie1643084
     ] ;
-    :text "gepensioneerd Hoofdonderwijzer"
+    :text "gepensioneerd Hoofdonderwijzer" ;
+    :wordnet "TODO: Principal.n.02"
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;

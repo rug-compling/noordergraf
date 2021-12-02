@@ -2,20 +2,6 @@
 
 tomb:t00661
   a :Tomb ;
-  :text """TODO: rustplaats
-3
-ix
-t
-van
-dieuwke
-laagland
-oud onderwijzeres
-geb t bolsward
-jul 1880
-overf.te deventer
-october 1947
-5
-""" ;
   :image [
     dc:date "2019-12-14T13:58:44"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -32,7 +18,21 @@ october 1947
   :subject t00661:p1 ;
   :sym [
     a :Frond.n.01
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+3
+ix
+t
+van
+dieuwke
+laagland
+oud onderwijzeres
+geb t bolsward
+jul 1880
+overf.te deventer
+october 1947
+5
+""" .
 
 t00661:p1
   a :Female ;
@@ -55,8 +55,9 @@ t00661:p1
     :text "TODO: Dieuwle Laagland"
   ] ;
   :occupation [
-    a :Teacher.n.01 ;
-    :hisco hisco:13320
+    a :Occupation ;
+    :hisco hisco:13320 ;
+    :wordnet "TODO: Teacher.n.01"
   ] ;
   :placeOfBirth [
     a :City.n.01 ;

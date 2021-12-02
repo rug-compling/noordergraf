@@ -2,17 +2,6 @@
 
 tomb:t01093
   a :Tomb ;
-  :text """TODO: \u5143\u3002
-seisd
-13
-\u591a\u3002
-11/10001
-21\u65e518:1
-10
-1000
-4
-\u6c92
-""" ;
   :image [
     dc:date "2020-09-19T15:07:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +15,18 @@ seisd
     :nd "+53.2447+006.8644"^^ll:
   ] ;
   :site site:gr9628TKsiddeburen ;
-  :subject t01093:p1 .
+  :subject t01093:p1 ;
+  :text """TODO: 元。
+seisd
+13
+多。
+11/10001
+21日18:1
+10
+1000
+4
+沒
+""" .
 
 t01093:p1
   a :Male ;
@@ -49,12 +49,13 @@ t01093:p1
     :text "TODO: Hesso Versteegh"
   ] ;
   :occupation [
-    a :Pastor.n.01 ;
+    a :Occupation ;
     :hisco hisco:14120 ;
     :location [
       a :Village.n.02 ;
       :name "SIDDEBUREN" ;
       :place place:Siddeburen2747343
-    ]
+    ] ;
+    :wordnet "TODO: Pastor.n.01"
   ] .
 

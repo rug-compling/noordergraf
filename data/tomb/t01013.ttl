@@ -2,27 +2,6 @@
 
 tomb:t01013
   a :Tomb ;
-  :text """TODO: te
-ta
-st
-fogeda
-chictionidaari
-hinumerkilliste di cindra
-mcents
-wa morocciofil
-home
-a
-dan mal 86
-anno con
-hoda
-&
-tohtonttavan
-etice
-ubeth
-jvendintys tans kitty
-dif hama blics
-swa
-""" ;
   :image [
     dc:date "2020-04-05T12:20:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -45,7 +24,28 @@ swa
     a :Frond.n.01
   ], [
     a :Ribbon.n.01
-  ] .
+  ] ;
+  :text """TODO: te
+ta
+st
+fogeda
+chictionidaari
+hinumerkilliste di cindra
+mcents
+wa morocciofil
+home
+a
+dan mal 86
+anno con
+hoda
+&
+tohtonttavan
+etice
+ubeth
+jvendintys tans kitty
+dif hama blics
+swa
+""" .
 
 t01013:c1
   a :Village.n.02 ;
@@ -73,12 +73,14 @@ t01013:p1
     :text "TODO: Hinderk Tjapkes de Boer"
   ] ;
   :occupation [
-    a :Taxman.n.01 ;
+    a :Occupation ;
     :hisco hisco:31020 ;
-    :location t01013:c1
+    :location t01013:c1 ;
+    :wordnet "TODO: Taxman.n.01"
   ], [
-    a :Notabel.n.01 ;
-    :location t01013:c1
+    a :Occupation ;
+    :location t01013:c1 ;
+    :wordnet "TODO: Notabel.n.01"
   ] ;
   :placeOfBirth t01013:c1 ;
   :rol [

@@ -2,21 +2,6 @@
 
 tomb:t00431
   a :Tomb ;
-  :text """TODO: er
-hier rusten
-tjitske p. teensma
-9. - 2 - 1920
-23 - 2 - 1978
-0
-wijnand paulus de jong
-* 17 - s - 1926 + 15 - 1 - 1999
-en altijd is het zo geweest,
-dat de liefde haar eigen diepte
-niet kent dan op het uur der
-scheiding
-k. gibran
-78
-""" ;
   :image [
     dc:date "2019-11-02T11:46:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,7 +16,22 @@ k. gibran
   ] ;
   :quo t00431:q1 ;
   :site site:fr9166NAschiermonnikoog ;
-  :subject t00431:p1, t00431:p2, t00431:p3 .
+  :subject t00431:p1, t00431:p2, t00431:p3 ;
+  :text """TODO: er
+hier rusten
+tjitske p. teensma
+9. - 2 - 1920
+23 - 2 - 1978
+0
+wijnand paulus de jong
+* 17 - s - 1926 + 15 - 1 - 1999
+en altijd is het zo geweest,
+dat de liefde haar eigen diepte
+niet kent dan op het uur der
+scheiding
+k. gibran
+78
+""" .
 
 t00431:p1
   a :Female ;
@@ -87,9 +87,10 @@ t00431:p3
     :text "TODO: Kahlil Gibran"
   ] ;
   :occupation [
-    a :Author.n.01 ;
+    a :Occupation ;
     :hisco hisco:15120 ;
-    :tgt t00431:q1
+    :tgt t00431:q1 ;
+    :wordnet "TODO: Author.n.01"
   ] .
 
 t00431:q1

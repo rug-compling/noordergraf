@@ -2,21 +2,6 @@
 
 tomb:t00326
   a :Tomb ;
-  :text """TODO: kornelis
-lolenga
-soldaat 1.9 g. 3.\"
-geboren te sneek
-2 december 1919
-en wonende aldaar
-gewond op mei 1940
-2112
-te hardenberg
-en overl te hoogeveen
-op 12 msl 1941
-met
-ter nagedachtenis
-van hem
-""" ;
   :image [
     dc:date "2019-10-19T14:27:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -35,7 +20,22 @@ van hem
   ] ;
   :quo "TER NAGEDACHTENIS VAN HEM" ;
   :site site:dr7907CHhoogeveen ;
-  :subject t00326:p1 .
+  :subject t00326:p1 ;
+  :text """TODO: kornelis
+lolenga
+soldaat 1.9 g. 3.\"
+geboren te sneek
+2 december 1919
+en wonende aldaar
+gewond op mei 1940
+2112
+te hardenberg
+en overl te hoogeveen
+op 12 msl 1941
+met
+ter nagedachtenis
+van hem
+""" .
 
 t00326:p1
   a :Male ;
@@ -58,12 +58,13 @@ t00326:p1
     :text "TODO: Kornelis Loijenga"
   ] ;
   :occupation [
-    a :Soldier.n.01 ;
+    a :Occupation ;
     :hisco hisco:58340 ;
     :organisation [
       a :Battalion.n.01 ;
       :nam "1-9 GRENSBATALJON"
-    ]
+    ] ;
+    :wordnet "TODO: Soldier.n.01"
   ] ;
   :placeOfBirth [
     a :City.n.01 ;

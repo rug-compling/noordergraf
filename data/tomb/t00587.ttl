@@ -2,19 +2,6 @@
 
 tomb:t00587
   a :Tomb ;
-  :text """TODO: ter: cedachtenis
-van
-jantjekladder
-ceborente obergum
-den 20 sept.
-1824
-overl.te groningen.
-het
-den 26 januari1919
-inleyenwjkverpleegster
-te winsun
-wr
-""" ;
   :age [
     a :Age ;
     :duration "P44Y4M6D"^^xsd:duration ;
@@ -41,13 +28,14 @@ wr
     :nd "+53.3354+006.5127"^^ll:
   ] ;
   :occupation [
-    a :Visting_nurse.n.01 ;
+    a :Occupation ;
     :hisco hisco:07130 ;
     :location [
       a :Village.n.02 ;
       :name "WINSUM" ;
       :place place:Winsum2744337
-    ]
+    ] ;
+    :wordnet "TODO: Visting_nurse.n.01"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
@@ -58,7 +46,20 @@ wr
   :subject t00587:p1 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: ter: cedachtenis
+van
+jantjekladder
+ceborente obergum
+den 20 sept.
+1824
+overl.te groningen.
+het
+den 26 januari1919
+inleyenwjkverpleegster
+te winsun
+wr
+""" .
 
 t00587:p1
   a :Female ;

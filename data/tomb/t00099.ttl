@@ -2,17 +2,6 @@
 
 tomb:t00099
   a :Tomb ;
-  :text """TODO: \u0435\u0440
-gerbrand wouters.jn
-wethouder der gem.
-groningen
-oep.9 febr. 1832
-overli dec.1903
-en zijne echtgenoote
-alida duk
-je..8 febr. 1835
-uver 28 jul 1925
-""" ;
   :image [
     dc:date "2019-09-24T15:11:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -40,7 +29,18 @@ uver 28 jul 1925
     ], [
       a :Ribbon.n.01
     ]
-  ] .
+  ] ;
+  :text """TODO: ер
+gerbrand wouters.jn
+wethouder der gem.
+groningen
+oep.9 febr. 1832
+overli dec.1903
+en zijne echtgenoote
+alida duk
+je..8 febr. 1835
+uver 28 jul 1925
+""" .
 
 t00099:p1
   a :Male ;
@@ -64,13 +64,14 @@ t00099:p1
     :text "TODO: Gerbrand Wouters Jr"
   ] ;
   :occupation [
-    a :Alderman.n.01 ;
+    a :Occupation ;
     :hisco hisco:20110 ;
     :location [
       a :Municipality.n.01 ;
       :name "GRONINGEN" ;
       :place place:Groningen2755251
-    ]
+    ] ;
+    :wordnet "TODO: Alderman.n.01"
   ] ;
   :rol [
     a :Husband.n.01 ;

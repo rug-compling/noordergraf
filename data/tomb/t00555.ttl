@@ -2,25 +2,6 @@
 
 tomb:t00555
   a :Tomb ;
-  :text """TODO: rust plaat
-var
-gbuchenrvo
-in leven landbouwen
-gecat
-fro
-way.
-telen
-1
-geb.te borgerc.me
-21 jan. 1850
-en aldaar overl
-3 jan. 1911
-echtgenoot vani
-marchenaeislim
-rust zacht
-geliefde man
-er vader
-""" ;
   :image [
     dc:date "2019-11-24T13:57:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -47,7 +28,26 @@ er vader
     ], [
       a :Curtain.n.01
     ]
-  ] .
+  ] ;
+  :text """TODO: rust plaat
+var
+gbuchenrvo
+in leven landbouwen
+gecat
+fro
+way.
+telen
+1
+geb.te borgerc.me
+21 jan. 1850
+en aldaar overl
+3 jan. 1911
+echtgenoot vani
+marchenaeislim
+rust zacht
+geliefde man
+er vader
+""" .
 
 t00555:c1
   a :Village.n.02 ;
@@ -75,8 +75,9 @@ t00555:p1
     :text "TODO: Geuchien R. Vos"
   ] ;
   :occupation [
-    a :Farmer.n.01 ;
-    :hisco hisco:61220
+    a :Occupation ;
+    :hisco hisco:61220 ;
+    :wordnet "TODO: Farmer.n.01"
   ] ;
   :placeOfBirth t00555:c1 ;
   :placeOfDeath t00555:c1 ;

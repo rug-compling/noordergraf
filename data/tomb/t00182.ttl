@@ -2,20 +2,6 @@
 
 tomb:t00182
   a :Tomb ;
-  :text """TODO: destplaats vat
-parel duiker
-ger 2,5 juin 1882
-cerl18 aug 1031
-te groningena
-=
-geliefde echtgenoot
-van s-bouwman
-tn leven vooraliter van
-het ned.chr-gumelverbotid
-uwarbed zalin ohzen meer
-het del wezelhem zineer
-ner
-""" ;
   :image [
     dc:date "2019-10-05T10:19:15"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -34,7 +20,21 @@ ner
   ] ;
   :quo "UW ARBEID ZAL IN ONZEN HEER NIET IJDEL WEZEN, HEM ZIJ DEER" ;
   :site site:gr9722SNgroningen ;
-  :subject t00182:p1, t00182:p2 .
+  :subject t00182:p1, t00182:p2 ;
+  :text """TODO: destplaats vat
+parel duiker
+ger 2,5 juin 1882
+cerl18 aug 1031
+te groningena
+=
+geliefde echtgenoot
+van s-bouwman
+tn leven vooraliter van
+het ned.chr-gumelverbotid
+uwarbed zalin ohzen meer
+het del wezelhem zineer
+ner
+""" .
 
 t00182:p1
   a :Male ;
@@ -57,11 +57,12 @@ t00182:p1
     :text "TODO: Karel Duiker"
   ] ;
   :occupation [
-    a :Chairperson.n.01 ;
+    a :Occupation ;
     :organisation [
       a :Union.n.07 ;
       :nam "NEDERLANDSE CHRISTELIJKE GIJMNASTIEK VERBOND"
-    ]
+    ] ;
+    :wordnet "TODO: Chairperson.n.01"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;

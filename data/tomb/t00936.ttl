@@ -2,18 +2,6 @@
 
 tomb:t00936
   a :Tomb ;
-  :text """TODO: lambertha c. bos
-in leven sr.maj. l.d.h
-*3-3-1902 # 31-7-1955
-de heer is recht
-in al zijn weg en werk
-geertje
-dijksterhuis \u2013 bos
-*4-10-1898 13-12-1963
-wiebrand
-dijksterhuis
-* 26 -7 -1897 +9+9= 1964
-""" ;
   :image [
     dc:date "2020-03-18T10:19:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -28,7 +16,19 @@ dijksterhuis
   ] ;
   :quo "DE HEER IS RECHT \\ IN AL ZIJN WEG EN WERK"@nld ;
   :site site:gr9741GHgroningen ;
-  :subject t00936:p1, t00936:p2, t00936:p3 .
+  :subject t00936:p1, t00936:p2, t00936:p3 ;
+  :text """TODO: lambertha c. bos
+in leven sr.maj. l.d.h
+*3-3-1902 # 31-7-1955
+de heer is recht
+in al zijn weg en werk
+geertje
+dijksterhuis – bos
+*4-10-1898 13-12-1963
+wiebrand
+dijksterhuis
+* 26 -7 -1897 +9+9= 1964
+""" .
 
 t00936:p1
   a :Female ;
@@ -51,13 +51,14 @@ t00936:p1
     :text "TODO: Lambertha C. Bos"
   ] ;
   :occupation [
-    a :Mercenary.n.01 ;
+    a :Occupation ;
     :hisco hisco:19300 ;
     :organisation [
       a :Organization.n.01 ;
       :nam "LEGER DES HEILS"
     ] ;
-    :ttl "SERGEANT-MAJOOR"
+    :ttl "SERGEANT-MAJOOR" ;
+    :wordnet "TODO: Mercenary.n.01"
   ] .
 
 t00936:p2

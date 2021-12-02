@@ -2,6 +2,40 @@
 
 tomb:t00540
   a :Tomb ;
+  :image [
+    dc:date "2019-11-24T14:19:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00540.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1045 ;
+      geo:long 6.8770
+    ] ;
+    :nd "+53.1045+006.8770"^^ll:
+  ] ;
+  :site site:gr9641ANveendam ;
+  :subject t00540:p1, t00540:p2 ;
+  :sym [
+    a :Composite.n.01 ;
+    :prt t00540:s7, [
+      a :Frond.n.01
+    ], [
+      a :Bird.n.01
+    ], [
+      a :Butterfly.n.01
+    ], [
+      a :Cocoon.n.01
+    ], [
+      a :InvertedTorch
+    ], [
+      a :InvertedTorch
+    ], [
+      a :Frond.n.01
+    ], [
+      a :Frond.n.01
+    ]
+  ] ;
   :text """TODO: rustplaats
 van monroad
 theo
@@ -20,41 +54,7 @@ lepensieerd
 floof danderwijs
 dom
 in monudichelin
-""" ;
-  :image [
-    dc:date "2019-11-24T14:19:08"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00540.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1045 ;
-      geo:long 6.8770
-    ] ;
-    :nd "+53.1045+006.8770"^^ll:
-  ] ;
-  :site site:gr9641ANveendam ;
-  :subject t00540:p1, t00540:p2 ;
-  :sym [
-    a :Composite.n.01 ;
-    :prt t00540:s7, [
-      a :Cocoon.n.01
-    ], [
-      a :InvertedTorch
-    ], [
-      a :InvertedTorch
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Bird.n.01
-    ], [
-      a :Butterfly.n.01
-    ]
-  ] .
+""" .
 
 t00540:p1
   a :Female ;
@@ -99,14 +99,15 @@ t00540:p2
     :text "TODO: Jan Eppes van der Wijk"
   ] ;
   :occupation [
-    a :Principal.n.02 ;
+    a :Occupation ;
     :hisco hisco:13320 ;
     :location [
       a :Colony.n.05 ;
       :name "NEDERLANDS-INDIË" ;
       :place place:Indonesie1643084
     ] ;
-    :text "gepensioneerd Hoofdonderwijzer"
+    :text "gepensioneerd Hoofdonderwijzer" ;
+    :wordnet "TODO: Principal.n.02"
   ] .
 
 t00540:s7

@@ -2,18 +2,6 @@
 
 tomb:t00627
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-jacobus bleeker
-in leven predikant
-te hoogezand
-* 24 oct. 1864
-19 jan. 1899
-en
-frouwina g. evers
-* 17 april 1873
-# 18 april 1959
-""" ;
   :image [
     dc:date "2019-11-23T09:59:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,7 +15,19 @@ frouwina g. evers
     :nd "+53.1642+006.7543"^^ll:
   ] ;
   :site site:gr9601KAhoogezand ;
-  :subject t00627:p1, t00627:p2 .
+  :subject t00627:p1, t00627:p2 ;
+  :text """TODO: rustplaats
+van
+jacobus bleeker
+in leven predikant
+te hoogezand
+* 24 oct. 1864
+19 jan. 1899
+en
+frouwina g. evers
+* 17 april 1873
+# 18 april 1959
+""" .
 
 t00627:p1
   a :Male ;
@@ -50,13 +50,14 @@ t00627:p1
     :text "TODO: Jakobus Bleeker"
   ] ;
   :occupation [
-    a :Preacher.n.01 ;
+    a :Occupation ;
     :hisco hisco:14120 ;
     :location [
       a :Town.n.01 ;
       :name "HOOGEZAND" ;
       :place place:Hoogezand2753706
-    ]
+    ] ;
+    :wordnet "TODO: Preacher.n.01"
   ] .
 
 t00627:p2

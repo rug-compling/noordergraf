@@ -2,13 +2,6 @@
 
 tomb:t00553
   a :Tomb ;
-  :text """TODO: rust plaats van klaas vliec
-geb.te rollum 20 mei 185a.
-overlieveendam 21 maart 1905.
-in leven leeraarll.b.s alhier.
-geliefde echt genoot van
-maria kr\u016eizenga.
-""" ;
   :image [
     dc:date "2019-11-24T14:01:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,7 +18,14 @@ maria kr\u016eizenga.
   :subject t00553:p1, t00553:p2 ;
   :sym [
     a :Book.n.02
-  ] .
+  ] ;
+  :text """TODO: rust plaats van klaas vliec
+geb.te rollum 20 mei 185a.
+overlieveendam 21 maart 1905.
+in leven leeraarll.b.s alhier.
+geliefde echt genoot van
+maria krŮizenga.
+""" .
 
 t00553:c2
   a :City.n.01 ;
@@ -53,13 +53,14 @@ t00553:p1
     :text "TODO: Klaas Vlieg"
   ] ;
   :occupation [
-    a :Teacher.n.01 ;
+    a :Occupation ;
     :hisco hisco:13320 ;
     :location t00553:c2 ;
     :organisation [
       a :School.n.01 ;
       :nam "HOGEREBURGERSCHOOL"
-    ]
+    ] ;
+    :wordnet "TODO: Teacher.n.01"
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;

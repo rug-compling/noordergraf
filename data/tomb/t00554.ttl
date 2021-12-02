@@ -2,20 +2,6 @@
 
 tomb:t00554
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-b.j.top
-h
-nivell
-in leven
-onderwijzer alhjer
-geboren
-16 janb.18 49.
-overleden
-27 mei 1909.
-rust zacht
-geliefde broeder.
-""" ;
   :image [
     dc:date "2019-11-24T13:58:06"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -42,7 +28,21 @@ geliefde broeder.
     ], [
       a :Ribbon.n.01
     ]
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+van
+b.j.top
+h
+nivell
+in leven
+onderwijzer alhjer
+geboren
+16 janb.18 49.
+overleden
+27 mei 1909.
+rust zacht
+geliefde broeder.
+""" .
 
 t00554:p1
   a :Male ;
@@ -65,13 +65,14 @@ t00554:p1
     :text "TODO: H.J. Top"
   ] ;
   :occupation [
-    a :Teacher.n.01 ;
+    a :Occupation ;
     :hisco hisco:13320 ;
     :location [
       a :City.n.01 ;
       :name "VEENDAM" ;
       :place place:Veendam2745783
-    ]
+    ] ;
+    :wordnet "TODO: Teacher.n.01"
   ] ;
   :rol [
     a :Brother.n.01

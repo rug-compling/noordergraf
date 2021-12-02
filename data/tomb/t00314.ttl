@@ -2,13 +2,6 @@
 
 tomb:t00314
   a :Tomb ;
-  :text """TODO: h. smeman. arts
-1856 - 1918
-e smeman_eenkema
-1860 - 1949
-h. c. h. smeman
-1895 1895
-""" ;
   :image [
     dc:date "2019-10-19T14:14:56"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,7 +15,14 @@ h. c. h. smeman
     :nd "+52.7156+006.4733"^^ll:
   ] ;
   :site site:dr7907CHhoogeveen ;
-  :subject t00314:p1, t00314:p2, t00314:p3 .
+  :subject t00314:p1, t00314:p2, t00314:p3 ;
+  :text """TODO: h. smeman. arts
+1856 - 1918
+e smeman_eenkema
+1860 - 1949
+h. c. h. smeman
+1895 1895
+""" .
 
 t00314:p1
   a :Male ;
@@ -45,8 +45,9 @@ t00314:p1
     :text "TODO: H. Smeman"
   ] ;
   :occupation [
-    a :Doctor.n.01 ;
-    :hisco hisco:06105
+    a :Occupation ;
+    :hisco hisco:06105 ;
+    :wordnet "TODO: Doctor.n.01"
   ] .
 
 t00314:p2

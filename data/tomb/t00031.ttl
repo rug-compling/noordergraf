@@ -2,16 +2,6 @@
 
 tomb:t00031
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-geert pieters.
-geb. 4 nov. 18 b1.
-overl.6. oct. 1936 .
-in leven bewaarder
-dezer begraafplaats.
-echtgenoot van
-a. albronda
-""" ;
   :image [
     dc:date "2019-09-27T17:59:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -33,7 +23,17 @@ a. albronda
     ], [
       a :Ribbon.n.01
     ]
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+van
+geert pieters.
+geb. 4 nov. 18 b1.
+overl.6. oct. 1936 .
+in leven bewaarder
+dezer begraafplaats.
+echtgenoot van
+a. albronda
+""" .
 
 t00031:p1
   a :Male ;
@@ -56,14 +56,15 @@ t00031:p1
     :text "TODO: Geert Pieters"
   ] ;
   :occupation [
-    a :Keeper.n.02 ;
+    a :Occupation ;
     :hisco hisco:58940 ;
-    :text "bewaarder dezer begraafplaats" ;
     :location [
       a :Town.n.01 ;
       :name "HAREN" ;
       :place place:Haren2754841
-    ]
+    ] ;
+    :text "bewaarder dezer begraafplaats" ;
+    :wordnet "TODO: Keeper.n.02"
   ] ;
   :rol [
     a :Husband.n.01 ;

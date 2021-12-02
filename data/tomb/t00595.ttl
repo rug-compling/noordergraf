@@ -2,16 +2,6 @@
 
 tomb:t00595
   a :Tomb ;
-  :text """TODO: manuel e. lopes
-( master drummer)
-cos
-6 6 - 1950. 8. 8. - 2001
-8
-aos
-i am
-one
-with god
-""" ;
   :image [
     dc:date "2019-11-30T14:16:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,7 +21,17 @@ with god
     a :Treble_clef.n.01
   ], [
     a :Treble_clef.n.01
-  ] .
+  ] ;
+  :text """TODO: manuel e. lopes
+( master drummer)
+cos
+6 6 - 1950. 8. 8. - 2001
+8
+aos
+i am
+one
+with god
+""" .
 
 t00595:p1
   a :Male ;
@@ -54,7 +54,8 @@ t00595:p1
     :text "TODO: Manuel E. Lopes"
   ] ;
   :occupation [
-    a :Drummer.n.01 ;
-    :hisco hisco:17140
+    a :Occupation ;
+    :hisco hisco:17140 ;
+    :wordnet "TODO: Drummer.n.01"
   ] .
 

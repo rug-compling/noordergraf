@@ -2,16 +2,6 @@
 
 tomb:t00087
   a :Tomb ;
-  :text """TODO: tr. p.h.e. van door en
-directeur middelbare technische
-kunstnijverheids en zeevaartschool
-24 febr. 1899
-+ 1 jan. 1944
-en
-maria dekker
-22 febr. 1899
-+ 1 maart 1983
-""" ;
   :image [
     dc:date "2019-09-24T15:18:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,7 +15,17 @@ maria dekker
     :nd "+53.2068+006.5726"^^ll:
   ] ;
   :site site:gr9725ACgroningen ;
-  :subject t00087:p1, t00087:p2 .
+  :subject t00087:p1, t00087:p2 ;
+  :text """TODO: tr. p.h.e. van door en
+directeur middelbare technische
+kunstnijverheids en zeevaartschool
+24 febr. 1899
++ 1 jan. 1944
+en
+maria dekker
+22 febr. 1899
++ 1 maart 1983
+""" .
 
 t00087:p1
   a :Male ;
@@ -49,12 +49,13 @@ t00087:p1
     :text "TODO: Ir P.H.E. van Dooren"
   ] ;
   :occupation [
-    a :Director.n.01 ;
+    a :Occupation ;
     :hisco hisco:13940 ;
     :organisation [
       a :School.n.01 ;
       :nam "MIDDELBARE TECHNISCHE KUNSTNIJVERHEIDS EN ZEEVAARTSCHOOL"
-    ]
+    ] ;
+    :wordnet "TODO: Director.n.01"
   ] .
 
 t00087:p2

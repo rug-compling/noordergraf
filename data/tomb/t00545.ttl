@@ -2,6 +2,24 @@
 
 tomb:t00545
   a :Tomb ;
+  :image [
+    dc:date "2019-11-24T14:14:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00545.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1042 ;
+      geo:long 6.8756
+    ] ;
+    :nd "+53.1042+006.8756"^^ll:
+  ] ;
+  :quo "HIJ DIE HIER RUST \\ IN DEZE AARDE \\ WAS VOON ONS \\ VAN GROTE WAARDE."@nld ;
+  :site site:gr9641ANveendam ;
+  :subject t00545:p1, t00545:p2 ;
+  :sym [
+    a :WeepingWillow
+  ] ;
   :text """TODO: *
 com
 fernapadraktinis
@@ -22,25 +40,7 @@ in daxe aarde
 dar voor ons
 vingrat mande
 las
-""" ;
-  :image [
-    dc:date "2019-11-24T14:14:37"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00545.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1042 ;
-      geo:long 6.8756
-    ] ;
-    :nd "+53.1042+006.8756"^^ll:
-  ] ;
-  :quo "HIJ DIE HIER RUST \\ IN DEZE AARDE \\ WAS VOON ONS \\ VAN GROTE WAARDE."@nld ;
-  :site site:gr9641ANveendam ;
-  :subject t00545:p1, t00545:p2 ;
-  :sym [
-    a :WeepingWillow
-  ] .
+""" .
 
 t00545:c1
   a :City.n.01 ;
@@ -68,9 +68,10 @@ t00545:p1
     :text "TODO: Jan Fransens Nipperes"
   ] ;
   :occupation [
-    a :Skipper.n.02 ;
+    a :Occupation ;
     :hisco hisco:04217 ;
-    :location t00545:c1
+    :location t00545:c1 ;
+    :wordnet "TODO: Skipper.n.02"
   ] ;
   :placeOfBirth t00545:c1 ;
   :placeOfDeath t00545:c1 ;

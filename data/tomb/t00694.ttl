@@ -2,20 +2,6 @@
 
 tomb:t00694
   a :Tomb ;
-  :text """TODO: ter nagedachtenis
-aan onze lieve ouders
-corneel jan daems
-to
-*
-* 23-12-1910
-sns
-t 29-7-1966
-wilhelmina helena
-daems - visser
-* 21 - 3 - 1908
-\u2020 23 - 11 - 2004
-ta mutatur non tollitur
-""" ;
   :image [
     dc:date "2019-12-14T13:20:21"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,7 +17,21 @@ ta mutatur non tollitur
   :quo "VITA MUTATUR NON TOLLITUR"@nld ;
   :site site:fr8701DWbolsward ;
   :subject t00694:p1, t00694:p2 ;
-  :sym t00694:s1, t00694:s2 .
+  :sym t00694:s1, t00694:s2 ;
+  :text """TODO: ter nagedachtenis
+aan onze lieve ouders
+corneel jan daems
+to
+*
+* 23-12-1910
+sns
+t 29-7-1966
+wilhelmina helena
+daems - visser
+* 21 - 3 - 1908
+† 23 - 11 - 2004
+ta mutatur non tollitur
+""" .
 
 t00694:p1
   a :Male ;
@@ -78,8 +78,9 @@ t00694:p2
 t00694:s1
   a :Male ;
   :occupation [
-    a :Baker.n.02 ;
-    :hisco hisco:77610
+    a :Occupation ;
+    :hisco hisco:77610 ;
+    :wordnet "TODO: Baker.n.02"
   ] .
 
 t00694:s2

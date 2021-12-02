@@ -2,12 +2,6 @@
 
 tomb:t00590
   a :Tomb ;
-  :text """TODO: jan timmer
-steenfarbikant
-cchtgenoot van
-hendrina weg
-2 aug 1860-3 febr. 1938
-""" ;
   :image [
     dc:date "2019-11-30T14:30:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,7 +15,13 @@ hendrina weg
     :nd "+53.3276+006.5119"^^ll:
   ] ;
   :site site:gr9951TNwinsum ;
-  :subject t00590:p1, t00590:p2 .
+  :subject t00590:p1, t00590:p2 ;
+  :text """TODO: jan timmer
+steenfarbikant
+cchtgenoot van
+hendrina weg
+2 aug 1860-3 febr. 1938
+""" .
 
 t00590:p1
   a :Male ;
@@ -44,11 +44,12 @@ t00590:p1
     :text "TODO: Jam Timmer"
   ] ;
   :occupation [
-    a :Manufacturer.n.02 ;
+    a :Occupation ;
     :hisco hisco:89242 ;
     :thm [
       a :Stone.n.02
-    ]
+    ] ;
+    :wordnet "TODO: Manufacturer.n.02"
   ] ;
   :rol [
     a :Spouse.n.01 ;

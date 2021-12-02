@@ -2,16 +2,6 @@
 
 tomb:t00171
   a :Tomb ;
-  :text """TODO: ernst
-hendrik
-sprencer
-in leven
-sttenfabrikant
-10
-gs
-29 april 1876
-dane 1926
-""" ;
   :image [
     dc:date "2019-10-05T10:43:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,7 +15,17 @@ dane 1926
     :nd "+53.1904+006.5934"^^ll:
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00171:p1 .
+  :subject t00171:p1 ;
+  :text """TODO: ernst
+hendrik
+sprencer
+in leven
+sttenfabrikant
+10
+gs
+29 april 1876
+dane 1926
+""" .
 
 t00171:p1
   a :Male ;
@@ -48,7 +48,7 @@ t00171:p1
     :text "TODO: Ernst Hendrik Sprenger"
   ] ;
   :occupation [
-    a :Manufacturer.n.02 ;
+    a :Occupation ;
     :hisco hisco:89242 ;
     :location [
       a :City.n.01 ;
@@ -57,6 +57,7 @@ t00171:p1
     ] ;
     :thm [
       a :Stone.n.02
-    ]
+    ] ;
+    :wordnet "TODO: Manufacturer.n.02"
   ] .
 

@@ -2,16 +2,6 @@
 
 tomb:t00640
   a :Tomb ;
-  :text """TODO: rustplaats
-van den heer
-ubbo albertus
-van oosten
-gud hoofdderschoolteengelbert
-geb.te westerlee
-2 juli 1841
-overl te har\u00c8n
-30 januari 1929
-""" ;
   :image [
     dc:date "2019-12-08T11:22:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -32,7 +22,17 @@ overl te har\u00c8n
     a :Frond.n.01
   ], [
     a :Ribbon.n.03
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+van den heer
+ubbo albertus
+van oosten
+gud hoofdderschoolteengelbert
+geb.te westerlee
+2 juli 1841
+overl te harÈn
+30 januari 1929
+""" .
 
 t00640:p1
   a :Male ;
@@ -56,13 +56,14 @@ t00640:p1
     :text "TODO: Heer Ubbo Albertus van Oosten"
   ] ;
   :occupation [
-    a :Principal.n.02 ;
+    a :Occupation ;
     :hisco hisco:13940 ;
     :location [
       a :Vlllage.n.02 ;
       :name "ENGELBERT" ;
       :place place:Engelbert2756097
-    ]
+    ] ;
+    :wordnet "TODO: Principal.n.02"
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;

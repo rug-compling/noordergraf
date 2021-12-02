@@ -2,16 +2,6 @@
 
 tomb:t00704
   a :Tomb ;
-  :text """TODO: mrwiardus willem
-van haersma buma.
-kantonrechter te
-emmen, lid van den
-voogdijraad te
-assen:
-keboren te sneek qonaatt
-1860 overleden te emmen
-24 februari 19:27
-""" ;
   :image [
     dc:date "2019-12-21T14:01:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,7 +19,17 @@ keboren te sneek qonaatt
     :thm t00704:p1
   ] ;
   :site site:dr7811HEemmen ;
-  :subject t00704:p1 .
+  :subject t00704:p1 ;
+  :text """TODO: mrwiardus willem
+van haersma buma.
+kantonrechter te
+emmen, lid van den
+voogdijraad te
+assen:
+keboren te sneek qonaatt
+1860 overleden te emmen
+24 februari 19:27
+""" .
 
 t00704:c1
   a :Town.n.01 ;
@@ -58,11 +58,12 @@ t00704:p1
     :text "TODO: Mr Wiardus Willem Ban Haersma Buma"
   ] ;
   :occupation [
-    a :Judge.n.01 ;
+    a :Occupation ;
     :hisco hisco:12210 ;
-    :location t00704:c1
+    :location t00704:c1 ;
+    :wordnet "TODO: Judge.n.01"
   ], [
-    a :Member.n.01 ;
+    a :Occupation ;
     :hisco hisco:20110 ;
     :organisation [
       a :Organization.n.01 ;
@@ -72,7 +73,8 @@ t00704:p1
         :place place:Assen2759633
       ] ;
       :nam "VOOGDIJRAAD"
-    ]
+    ] ;
+    :wordnet "TODO: Member.n.01"
   ] ;
   :placeOfBirth [
     a :City.n.01 ;

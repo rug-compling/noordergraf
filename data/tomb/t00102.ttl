@@ -2,18 +2,6 @@
 
 tomb:t00102
   a :Tomb ;
-  :text """TODO: <
-margaretha jantina
-buttinger
-geb. || febr. 1857
-overl. 24 maart 1930
-te groningen
-in leven leerares
-gem. kweekschool
-voor onderwuzeressen
-1882 1922.
-a
-""" ;
   :image [
     dc:date "2019-09-21T16:08:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -30,7 +18,19 @@ a
   :subject t00102:p1 ;
   :sym [
     a :Frond.n.01
-  ] .
+  ] ;
+  :text """TODO: <
+margaretha jantina
+buttinger
+geb. || febr. 1857
+overl. 24 maart 1930
+te groningen
+in leven leerares
+gem. kweekschool
+voor onderwuzeressen
+1882 1922.
+a
+""" .
 
 t00102:p1
   a :Female ;
@@ -53,14 +53,15 @@ t00102:p1
     :text "TODO: Margaretha Jantina Buttinger"
   ] ;
   :occupation [
-    a :Teacher.n.01 ;
+    a :Occupation ;
     :begin "1882"^^xsd:gYear ;
     :end "1922"^^xsd:gYear ;
     :hisco hisco:13320 ;
     :organisation [
       a :School.n.01 ;
       :nam "GEMEENTELIJKE KWEEKSCHOOL VOOR ONDERWIJZERESSEN"
-    ]
+    ] ;
+    :wordnet "TODO: Teacher.n.01"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;

@@ -2,16 +2,6 @@
 
 tomb:t00100
   a :Tomb ;
-  :text """TODO: jer mr. johan adriaan
-peith
-rik arganyaris te groningen
-sw nept.1858, overl.28 tn 1913
-henriette pauline
-gockinga
-corte van wolen jhp mrjateiti
-the crr 1656 dyeri 6 mrn 1939
--
-""" ;
   :image [
     dc:date "2019-09-24T15:10:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -28,7 +18,17 @@ the crr 1656 dyeri 6 mrn 1939
   :subject t00100:p1, t00100:p2 ;
   :sym [
     a :Frond.n.01
-  ] .
+  ] ;
+  :text """TODO: jer mr. johan adriaan
+peith
+rik arganyaris te groningen
+sw nept.1858, overl.28 tn 1913
+henriette pauline
+gockinga
+corte van wolen jhp mrjateiti
+the crr 1656 dyeri 6 mrn 1939
+-
+""" .
 
 t00100:p1
   a :Male ;
@@ -52,7 +52,7 @@ t00100:p1
     :text "TODO: Jhr mr Johan Adriaan Feith"
   ] ;
   :occupation [
-    a :Archivist.n.01 ;
+    a :Occupation ;
     :hisco hisco:19130 ;
     :location [
       a :City.n.01 ;
@@ -62,7 +62,8 @@ t00100:p1
     :organisation [
       a :State.n.04 ;
       :nam "NEDERLAND"
-    ]
+    ] ;
+    :wordnet "TODO: Archivist.n.01"
   ] .
 
 t00100:p2
