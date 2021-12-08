@@ -24,16 +24,9 @@ rust zacht
   ] ;
   :quo "RUST ZACHT"@nld ;
   :site site:dr7811HEemmen ;
-  :subject t00708:g1, t00708:p1, t00708:p2 ;
+  :subject t00708:p1, t00708:p2 ;
   :sym [
     a :WeepingWillow
-  ] .
-
-t00708:g1
-  a :Person ;
-  :mem t00708:p1, t00708:p2 ;
-  :rol [
-    a :Parent.n.01
   ] .
 
 t00708:p1
@@ -42,6 +35,9 @@ t00708:p1
     a :Name ;
     :fullname "Albert Zwols" ;
     :text "TODO: Albert Zwols"
+  ] ;
+  :rol [
+    a :Parent.n.01
   ] .
 
 t00708:p2
@@ -50,5 +46,8 @@ t00708:p2
     a :Name ;
     :fullname "Jantien Warring" ;
     :text "TODO: Jantien Warring"
+  ] ;
+  :rol [
+    a :Parent.n.01
   ] .
 

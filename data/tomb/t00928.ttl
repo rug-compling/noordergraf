@@ -31,10 +31,6 @@ behuizing Rodenburg
 te Tolbert
 11 Juni 1913.""" .
 
-t00928:c2
-  a :Behuizing.n.01 ;
-  :nam "RODENBURG" .
-
 t00928:p1
   a :Male ;
   :age [
@@ -57,9 +53,13 @@ t00928:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :mem t00928:c2 ;
+    :text "Tolbert" ;
     :name "TOLBERT" ;
     :place place:Tolbert2746234
   ] ;
-  :placeOfDeath t00928:c2 .
-
+  :placeOfDeath [
+    a :Village.n.02 ;
+    :text "behuizing Rodenburg te Tolbert" ;
+    :name "TOLBERT" ;
+    :place place:Tolbert2746234
+  ] .
