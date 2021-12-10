@@ -2,18 +2,6 @@
 
 tomb:t00401
   a :Tomb ;
-  :text """TODO: ter gedachtenis
-aan onze gel.
-vrouw en moeder
-grietje land
-* 23 - 4 - 1885
-+ 36 -7 - 1969
-en onze gel vader
-anne ellens
-# 2 - 12 - 1884
-+ 17-3-1976
-de kinderen
-""" ;
   :image [
     dc:date "2019-10-26T14:47:12"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,13 +17,22 @@ de kinderen
   :site site:fr9285TCbuitenpost ;
   :subject t00401:p1, t00401:p2 ;
   :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ]
-  ] .
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ] ;
+  :text """TODO: ter gedachtenis
+aan onze gel.
+vrouw en moeder
+grietje land
+* 23 - 4 - 1885
++ 36 -7 - 1969
+en onze gel vader
+anne ellens
+# 2 - 12 - 1884
++ 17-3-1976
+de kinderen
+""" .
 
 t00401:p1
   a :Female ;
@@ -58,10 +55,10 @@ t00401:p1
     :text "TODO: Grietje Land"
   ] ;
   :rol [
+    a :Mother.n.01
+  ], [
     a :Wife.n.01 ;
     :tgt t00401:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00401:p2

@@ -2,16 +2,6 @@
 
 tomb:t00319
   a :Tomb ;
-  :text """TODO: griet
-jansen - slomp
-* 5 - 3 - 1911
-+ 21-9 - 1999
--
-echtgen. van g. jansen
-eerder gehuwd geweest met
-g. rundervoort
-kinderen en kleinkinderen
-""" ;
   :image [
     dc:date "2019-10-19T13:57:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,13 +17,20 @@ kinderen en kleinkinderen
   :site site:dr7907CHhoogeveen ;
   :subject t00319:p1, t00319:p2, t00319:p3 ;
   :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Frond.n.01
-    ], [
-      a :Ribbon.n.01
-    ]
-  ] .
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] ;
+  :text """TODO: griet
+jansen - slomp
+* 5 - 3 - 1911
++ 21-9 - 1999
+-
+echtgen. van g. jansen
+eerder gehuwd geweest met
+g. rundervoort
+kinderen en kleinkinderen
+""" .
 
 t00319:p1
   a :Female ;
@@ -56,13 +53,13 @@ t00319:p1
     :text "TODO: Griet Jansen-Slomp"
   ] ;
   :rol t00319:r1, [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
   ], [
     a :Spouse.n.01 ;
     :before t00319:r1 ;
     :tgt t00319:p3
+  ], [
+    a :Mother.n.01
   ] .
 
 t00319:p2

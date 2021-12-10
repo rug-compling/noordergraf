@@ -2,14 +2,6 @@
 
 tomb:t00170
   a :Tomb ;
-  :text """TODO: familie
-r bakker
-3
-""" ;
-  :subject [
-    a :Family.n.04 ;
-    :nam "R. BAKKER"
-  ] ;
   :image [
     dc:date "2019-10-05T10:44:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,12 +15,17 @@ r bakker
     :nd "+53.1903+006.5932"^^ll:
   ] ;
   :site site:gr9722SNgroningen ;
+  :subject [
+    a :Family.n.04 ;
+    :nam "R. BAKKER"
+  ] ;
   :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Frond.n.01
-    ], [
-      a :Ribbon.n.01
-    ]
-  ] .
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] ;
+  :text """TODO: familie
+r bakker
+3
+""" .
 

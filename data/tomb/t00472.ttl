@@ -2,6 +2,25 @@
 
 tomb:t00472
   a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:45:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00472.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2073 ;
+      geo:long 5.7687
+    ] ;
+    :nd "+53.2073+005.7687"^^ll:
+  ] ;
+  :site site:fr8915CPleeuwarden ;
+  :subject t00472:p1, t00472:p2, t00472:p3, t00472:p4 ;
+  :sym [
+    a :Cross.n.03
+  ], [
+    a :Chrismon.n.01
+  ] ;
   :text """TODO: bid voor
 onzelieveyrouwta moeder
 agatha schoffelmeer
@@ -20,29 +39,7 @@ anna schoffelmeer geb.de jong
 c.schoffelmeer
 kinderen en kleinkinderen
 ps
-""" ;
-  :image [
-    dc:date "2019-11-09T14:45:41"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00472.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2073 ;
-      geo:long 5.7687
-    ] ;
-    :nd "+53.2073+005.7687"^^ll:
-  ] ;
-  :site site:fr8915CPleeuwarden ;
-  :subject t00472:p1, t00472:p2, t00472:p3, t00472:p4 ;
-  :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Cross.n.03
-    ], [
-      a :Chrismon.n.01
-    ]
-  ] .
+""" .
 
 t00472:c1
   a :City.n.01 ;
@@ -72,13 +69,13 @@ t00472:p1
   :placeOfBirth t00472:c1 ;
   :placeOfDeath t00472:c1 ;
   :rol [
-    a :Mother.n.01
-  ], [
     a :Spouse.n.01 ;
     :tgt t00472:p2
   ], [
     a :Wife.n.01 ;
     :tgt t00472:p2
+  ], [
+    a :Mother.n.01
   ] .
 
 t00472:p2

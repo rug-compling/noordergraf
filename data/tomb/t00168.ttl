@@ -2,17 +2,6 @@
 
 tomb:t00168
   a :Tomb ;
-  :text """TODO: hier rust
-onze lieve zoon en broeder
-jan siemen hermanni
-geb.12 febr.1920
-overl.5 mei 1945
-te groningen
-als liefde eens kon wonderen doen
-en tranen dooden wekken
-dan zou onze geliefde zoon
-nu niet de koele aarde dekken
-""" ;
   :image [
     dc:date "2019-10-02T10:20:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,13 +18,21 @@ nu niet de koele aarde dekken
   :site site:gr9725ACgroningen ;
   :subject t00168:p1 ;
   :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Frond.n.01
-    ], [
-      a :Ribbon.n.01
-    ]
-  ] .
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] ;
+  :text """TODO: hier rust
+onze lieve zoon en broeder
+jan siemen hermanni
+geb.12 febr.1920
+overl.5 mei 1945
+te groningen
+als liefde eens kon wonderen doen
+en tranen dooden wekken
+dan zou onze geliefde zoon
+nu niet de koele aarde dekken
+""" .
 
 t00168:c1
   a :City.n.01 ;
@@ -65,8 +62,8 @@ t00168:p1
   :placeOfBirth t00168:c1 ;
   :placeOfDeath t00168:c1 ;
   :rol [
-    a :Son.n.01
-  ], [
     a :Brother.n.01
+  ], [
+    a :Son.n.01
   ] .
 

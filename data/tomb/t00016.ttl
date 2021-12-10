@@ -2,20 +2,6 @@
 
 tomb:t00016
   a :Tomb ;
-  :text """TODO: hier rust
-onze lieve
-man en vader
-hendrikus jacobus du floo
-geb.6 sept. 1859
-overl. 17 jan. 1939
-echtgenoot van helena teneus
-en
-onze lieve moeder
-helena teneus
-geb. 6 febr.1855
-overl.30 dec. 1942
-i
-""" ;
   :image [
     dc:date "2019-09-25T16:38:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,13 +17,24 @@ i
   :site site:gr9722SNgroningen ;
   :subject t00016:p1, t00016:p2 ;
   :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Frond.n.01
-    ], [
-      a :Ribbon.n.01
-    ]
-  ] .
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] ;
+  :text """TODO: hier rust
+onze lieve
+man en vader
+hendrikus jacobus du floo
+geb.6 sept. 1859
+overl. 17 jan. 1939
+echtgenoot van helena teneus
+en
+onze lieve moeder
+helena teneus
+geb. 6 febr.1855
+overl.30 dec. 1942
+i
+""" .
 
 t00016:p1
   a :Male ;
@@ -60,12 +57,12 @@ t00016:p1
     :text "TODO: Hendrikus Jacobus Du Floo"
   ] ;
   :rol [
-    a :Husband.n.01 ;
-    :tgt t00016:p2
-  ], [
     a :Father.n.01
   ], [
     a :Spouse.n.01 ;
+    :tgt t00016:p2
+  ], [
+    a :Husband.n.01 ;
     :tgt t00016:p2
   ] .
 

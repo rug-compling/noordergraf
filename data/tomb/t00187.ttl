@@ -2,18 +2,6 @@
 
 tomb:t00187
   a :Tomb ;
-  :text """TODO: <
-hier rusten
-onze lieve ouders
-willem schuur
-geb. 26 met 1888
-overl. 17 sept. 1938
-echt g. van
-trijntje
-steenbergen
-geb. 21 dec.1885
-overl.25 sept. 1957
-""" ;
   :image [
     dc:date "2019-10-05T10:07:30"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,13 +17,22 @@ overl.25 sept. 1957
   :site site:gr9722SNgroningen ;
   :subject t00187:p1, t00187:p2 ;
   :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Frond.n.01
-    ], [
-      a :Ribbon.n.01
-    ]
-  ] .
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] ;
+  :text """TODO: <
+hier rusten
+onze lieve ouders
+willem schuur
+geb. 26 met 1888
+overl. 17 sept. 1938
+echt g. van
+trijntje
+steenbergen
+geb. 21 dec.1885
+overl.25 sept. 1957
+""" .
 
 t00187:p1
   a :Male ;
@@ -58,10 +55,10 @@ t00187:p1
     :text "TODO: Willem Schuur"
   ] ;
   :rol [
+    a :Father.n.01
+  ], [
     a :Spouse.n.01 ;
     :tgt t00187:p2
-  ], [
-    a :Father.n.01
   ] .
 
 t00187:p2

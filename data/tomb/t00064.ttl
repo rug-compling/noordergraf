@@ -2,20 +2,6 @@
 
 tomb:t00064
   a :Tomb ;
-  :text """TODO: gre
-hier rust
-onze lieve
-vrouw en moeder
-aaltje tolner
-geb. 2 jul 1878
-over 30. sept.1938
-e to van
-dan mekketing
-geb 23 maart 1880
-,
-oyerl 22 oct 1941
-20
-""" ;
   :image [
     dc:date "2019-09-25T16:14:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,13 +17,24 @@ oyerl 22 oct 1941
   :site site:gr9722SNgroningen ;
   :subject t00064:p1, t00064:p2 ;
   :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Frond.n.01
-    ], [
-      a :Ribbon.n.01
-    ]
-  ] .
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] ;
+  :text """TODO: gre
+hier rust
+onze lieve
+vrouw en moeder
+aaltje tolner
+geb. 2 jul 1878
+over 30. sept.1938
+e to van
+dan mekketing
+geb 23 maart 1880
+,
+oyerl 22 oct 1941
+20
+""" .
 
 t00064:p1
   a :Female ;
@@ -60,10 +57,10 @@ t00064:p1
     :text "TODO: Aaltje Tolner"
   ] ;
   :rol [
+    a :Mother.n.01
+  ], [
     a :Wife.n.01 ;
     :tgt t00064:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00064:p2

@@ -2,6 +2,27 @@
 
 tomb:t00133
   a :Tomb ;
+  :image [
+    dc:date "2019-10-01T09:54:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00133.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2068 ;
+      geo:long 6.5725
+    ] ;
+    :nd "+53.2068+006.5725"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen ;
+  :subject t00133:p1, t00133:p2, t00133:p3 ;
+  :sym [
+    a :Frond.n.01
+  ], [
+    a :Frond.n.01
+  ], [
+    a :Ribbon.n.01
+  ] ;
   :text """TODO: r
 m.g.jeinthoven
 baaripallide
@@ -18,31 +39,7 @@ cinthoven
 mandl 15 fare on
 ved 122x185
 192
-""" ;
-  :image [
-    dc:date "2019-10-01T09:54:26"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00133.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2068 ;
-      geo:long 6.5725
-    ] ;
-    :nd "+53.2068+006.5725"^^ll:
-  ] ;
-  :site site:gr9725ACgroningen ;
-  :subject t00133:p1, t00133:p2, t00133:p3 ;
-  :sym [
-    a :Composite.n.01 ;
-    :prt [
-      a :Frond.n.01
-    ], [
-      a :Frond.n.01
-    ], [
-      a :Ribbon.n.01
-    ]
-  ] .
+""" .
 
 t00133:p1
   a :Female ;
