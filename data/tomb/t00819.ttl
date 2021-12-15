@@ -57,14 +57,14 @@ t00819:p1
   ] ;
   :relation t00819:r3, [
     a :Wife.n.01 ;
-    :tgt t00819:p2
+    :target t00819:p2
   ], [
     a :Mother.n.01 ;
-    :tgt t00819:p5
+    :target t00819:p5
   ], [
     a :Spouse.n.01 ;
     :before t00819:r3 ;
-    :tgt t00819:p3
+    :target t00819:p3
   ] .
 
 t00819:p2
@@ -89,11 +89,11 @@ t00819:p2
   ] ;
   :relation [
     a :Father.n.01 ;
-    :tgt t00819:p5
+    :target t00819:p5
   ], [
     a :Widower.n.01 ;
     :before t00819:r3 ;
-    :tgt t00819:p4
+    :target t00819:p4
   ] .
 
 t00819:p3
@@ -114,7 +114,7 @@ t00819:p4
 
 t00819:r3
   a :Spouse.n.01 ;
-  :tgt t00819:p2 .
+  :target t00819:p2 .
 
 t00819:v1
   a :Quote ;
