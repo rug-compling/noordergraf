@@ -79,21 +79,15 @@ t00431:p2
     :text "TODO: Wijnand Paulus de Jong"
   ] .
 
-t00431:p3
-  a :Male ;
-  :name [
-    a :Name ;
-    :fullname "Kahlil Gibran" ;
-    :text "TODO: Kahlil Gibran"
-  ] ;
-  :occupation [
-    a :Occupation ;
-    :hisco hisco:15120 ;
-    :tgt t00431:q1 ;
-    :wordnet "TODO: Author.n.01"
-  ] .
-
 t00431:q1
   a :Quote.n.02 ;
-  :txt "EN ALTIJD IS HET ZO GEWEEST, \\ DAT DE LIEFDE HAAR EIGEN DIEPTE \\ NIET KENT EN DAN OP HET UUR DER \\ SCHEIDING." .
+  :author "K. Gibran" ;
+  :text "en altijd is het zo geweest,
+dat de liefde haar eigen diepte
+niet kent dan op het uur der
+scheiding." ;
+  :reference [
+    a :Reference ;
+    :author "Kahlil Gibran"
+  ] .
 
