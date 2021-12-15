@@ -66,7 +66,7 @@ t01014:p1
     :name "NOORDDIJK" ;
     :place place:Noorddijk2749981
   ] ;
-  :rol [
+  :relation [
     a :Spouse.n.01 ;
     :tgt t01014:p2
   ] .
@@ -85,14 +85,14 @@ t01014:p3
     a :Quantity ;
     :number 4
   ] ;
-  :rol [
+  :relation [
     a :Child.n.02 ;
     :tgt t01014:p1
   ] .
 
 t01014:p4
   a :Female ;
-  :rol [
+  :relation [
     a :Daughter-in-law.n.01
   ] .
 
@@ -102,7 +102,7 @@ t01014:p5
     a :Quantity ;
     :number 3
   ] ;
-  :rol [
+  :relation [
     a :Child.n.02 ;
     :tgt t01014:p1 ;
     :comment "overleden"
