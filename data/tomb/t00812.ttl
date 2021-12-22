@@ -2,14 +2,6 @@
 
 tomb:t00812
   a :Tomb ;
-  :text """TODO: melvin hugh welker
-geb:5 febr. 1885
-:
-te bloomingtonidahover st
-overl.te groningen
-29 april 1906
-u
-""" ;
   :image [
     dc:date "2020-02-01T12:33:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,7 +15,15 @@ u
     :nd "+53.2304+006.5509"^^ll:
   ] ;
   :site site:gr9741ACgroningen ;
-  :subject t00812:p1 .
+  :subject t00812:p1 ;
+  :text """TODO: melvin hugh welker
+geb:5 febr. 1885
+:
+te bloomingtonidahover st
+overl.te groningen
+29 april 1906
+u
+""" .
 
 t00812:p1
   a :Male ;
@@ -47,22 +47,22 @@ t00812:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "BLOOMINGTON" ;
     :partOf [
       a :State.n.01 ;
-      :name "IDAHO" ;
       :partOf [
         a :Country.n.02 ;
-        :name "VERENIGDE STATEN" ;
-        :place place:VerenigdeStaten6252001
+        :place place:VerenigdeStaten6252001 ;
+        :text "TODO: VERENIGDE STATEN"
       ] ;
-      :place place:Idaho5596512
+      :place place:Idaho5596512 ;
+      :text "TODO: IDAHO"
     ] ;
-    :place place:Bloomington5586244
+    :place place:Bloomington5586244 ;
+    :text "TODO: BLOOMINGTON"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] .
 

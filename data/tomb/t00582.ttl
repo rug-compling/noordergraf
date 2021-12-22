@@ -2,6 +2,35 @@
 
 tomb:t00582
   a :Tomb ;
+  :image [
+    dc:date "2019-11-30T14:48:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00582.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3354 ;
+      geo:long 6.5128
+    ] ;
+    :nd "+53.3354+006.5128"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :target t00582:p1 ;
+    :text "NA EEN GELUKKIGE ECHTVERENIGING VAN 41 JAREN"
+  ] ;
+  :ref [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 118 ;
+      :part :Psalm.n.01 ;
+      :verse "17-20"
+    ] ;
+    :text "ps.118.17.^2 18.^2 19.^2 20"
+  ] ;
+  :site site:gr9951STwinsum ;
+  :subject t00582:p1, t00582:p2, t00582:p3 ;
   :text """TODO: si
 hustplaats van
 geert
@@ -23,36 +52,7 @@ kice echt ver:
 eeniging van
 41 jaren
 ps.118.17 18.319 20
-""" ;
-  :image [
-    dc:date "2019-11-30T14:48:58"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00582.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.3354 ;
-      geo:long 6.5128
-    ] ;
-    :nd "+53.3354+006.5128"^^ll:
-  ] ;
-  :ref [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 118 ;
-      :part :Psalm.n.01 ;
-      :verse "17-20"
-    ] ;
-    :text "ps.118.17.^2 18.^2 19.^2 20"
-  ] ;
-  :quote [
-    a :Quote ;
-    :text "NA EEN GELUKKIGE ECHTVERENIGING VAN 41 JAREN" ;
-    :target t00582:p1
-  ] ;
-  :site site:gr9951STwinsum ;
-  :subject t00582:p1, t00582:p2, t00582:p3 .
+""" .
 
 t00582:p1
   a :Male ;
@@ -76,8 +76,8 @@ t00582:p1
   ] ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
-    :name "KLEIN GARNWERD" ;
-    :place place:KleinGarnwerd2752695
+    :place place:KleinGarnwerd2752695 ;
+    :text "TODO: KLEIN GARNWERD"
   ] ;
   :relation t00582:r2, [
     a :Spouse.n.01 ;

@@ -2,22 +2,6 @@
 
 tomb:t00440
   a :Tomb ;
-  :text """TODO: always sale the sun
-and you wont see
--
-tes staboats
-trine van bon
-schermonnikoog
-28-6-1930 15-6-2016
-anne browne
-stan bon
-schiermonnikoog 46.199
-kaapstad 1-11-2003
-colin huntington
-browne
-glasgow 15-1-1984
-kaapstad -2012
-""" ;
   :image [
     dc:date "2019-11-02T11:39:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -35,17 +19,33 @@ kaapstad -2012
   :subject t00440:p1, t00440:p2, t00440:p3 ;
   :sym [
     a :Tree.n.01
-  ] .
+  ] ;
+  :text """TODO: always sale the sun
+and you wont see
+-
+tes staboats
+trine van bon
+schermonnikoog
+28-6-1930 15-6-2016
+anne browne
+stan bon
+schiermonnikoog 46.199
+kaapstad 1-11-2003
+colin huntington
+browne
+glasgow 15-1-1984
+kaapstad -2012
+""" .
 
 t00440:c1
   a :Island.n.01 ;
-  :name "SCHIERMONNIKOOG" ;
-  :place place:Schiermonnikoog2747591 .
+  :place place:Schiermonnikoog2747591 ;
+  :text "TODO: SCHIERMONNIKOOG" .
 
 t00440:c2
   a :City.n.01 ;
-  :name "KAAPSTAD" ;
-  :place place:Kaapstad3369157 .
+  :place place:Kaapstad3369157 ;
+  :text "TODO: KAAPSTAD" .
 
 t00440:p1
   a :Female ;
@@ -115,8 +115,8 @@ t00440:p3
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "GLASGOW" ;
-    :place place:Glasgow2648579
+    :place place:Glasgow2648579 ;
+    :text "TODO: GLASGOW"
   ] ;
   :placeOfDeath t00440:c2 .
 

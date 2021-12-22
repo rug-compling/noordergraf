@@ -2,12 +2,6 @@
 
 tomb:t00811
   a :Tomb ;
-  :text """TODO: abraham j.gold.
-geb 16 oct. 1882
-te saltlakegity, utahver.st.
-overl te groningen
-14 mei 1906
-""" ;
   :image [
     dc:date "2020-02-01T12:32:48"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,7 +15,13 @@ overl te groningen
     :nd "+53.2305+006.5509"^^ll:
   ] ;
   :site site:gr9741ACgroningen ;
-  :subject t00811:p1 .
+  :subject t00811:p1 ;
+  :text """TODO: abraham j.gold.
+geb 16 oct. 1882
+te saltlakegity, utahver.st.
+overl te groningen
+14 mei 1906
+""" .
 
 t00811:p1
   a :Male ;
@@ -45,22 +45,22 @@ t00811:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "SALT LAKE CITY" ;
     :partOf [
       a :State.n.01 ;
-      :name "UTAH" ;
       :partOf [
         a :Country.n.02 ;
-        :name "VERENIGDE STATEN" ;
-        :place place:VerenigdeStaten6252001
+        :place place:VerenigdeStaten6252001 ;
+        :text "TODO: VERENIGDE STATEN"
       ] ;
-      :place place:Utah5549030
+      :place place:Utah5549030 ;
+      :text "TODO: UTAH"
     ] ;
-    :place place:SaltLakeCity5780993
+    :place place:SaltLakeCity5780993 ;
+    :text "TODO: SALT LAKE CITY"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] .
 

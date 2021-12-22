@@ -2,6 +2,23 @@
 
 tomb:t00686
   a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:17:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00686.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0684 ;
+      geo:long 5.5234
+    ] ;
+    :nd "+53.0684+005.5234"^^ll:
+  ] ;
+  :site site:fr8701DWbolsward ;
+  :subject t00686:p1, t00686:p2 ;
+  :sym [
+    a :Rose.n.01
+  ] ;
   :text """TODO: itsma
 43
 ritsma
@@ -23,29 +40,12 @@ geliefde
 echtgenoot van
 maaiker untema
 te
-""" ;
-  :image [
-    dc:date "2019-12-14T13:17:41"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00686.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.0684 ;
-      geo:long 5.5234
-    ] ;
-    :nd "+53.0684+005.5234"^^ll:
-  ] ;
-  :site site:fr8701DWbolsward ;
-  :subject t00686:p1, t00686:p2 ;
-  :sym [
-    a :Rose.n.01
-  ] .
+""" .
 
 t00686:c1
   a :City.n.01 ;
-  :name "BOLSWARD" ;
-  :place place:Bolsward2758682 .
+  :place place:Bolsward2758682 ;
+  :text "TODO: BOLSWARD" .
 
 t00686:p1
   a :Male ;

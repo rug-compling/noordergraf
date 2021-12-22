@@ -2,17 +2,6 @@
 
 tomb:t00092
   a :Tomb ;
-  :text """TODO: hier rust
-onze lieve man en vader
-heinrich jansen
-geb.5 oct.1891 wahn d
-(
-ovel. 26 juni 947 gron.
-echt genoot van
-joanna m. boelens
-geb. 15 juli 1888
-overl,31 aug. 1967
-""" ;
   :image [
     dc:date "2019-09-25T11:15:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +15,18 @@ overl,31 aug. 1967
     :nd "+53.2031+006.5734"^^ll:
   ] ;
   :site site:gr9721AAgroningen ;
-  :subject t00092:p1, t00092:p2 .
+  :subject t00092:p1, t00092:p2 ;
+  :text """TODO: hier rust
+onze lieve man en vader
+heinrich jansen
+geb.5 oct.1891 wahn d
+(
+ovel. 26 juni 947 gron.
+echt genoot van
+joanna m. boelens
+geb. 15 juli 1888
+overl,31 aug. 1967
+""" .
 
 t00092:p1
   a :Male ;
@@ -50,18 +50,18 @@ t00092:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "WAHN" ;
     :partOf [
       a :Country.n.02 ;
-      :name "DUITSLAND" ;
-      :place place:Duitsland2921044
+      :place place:Duitsland2921044 ;
+      :text "TODO: DUITSLAND"
     ] ;
-    :place place:Wahn3208447
+    :place place:Wahn3208447 ;
+    :text "TODO: WAHN"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation [
     a :Wife.n.01 ;

@@ -2,22 +2,6 @@
 
 tomb:t01030
   a :Tomb ;
-  :text """TODO: r\u00fast
-in
-vredd
-sat.1
-suffrida siberdina
-slijper;
-geboren te onderdendam
-22 september 1822,
-overleden te noordhorn
-27 juni 1896.
-sedert 1853
-weduwe van
-eije j.beukema.
-deukena
-carshuizen
-""" ;
   :creator t01030:p3 ;
   :image [
     dc:date "2020-04-19T12:13:12"^^xsd:dateTime ;
@@ -33,7 +17,23 @@ carshuizen
   ] ;
   :quo "RUST IN VREDE"@nld ;
   :site site:gr9804TEnoordhorn ;
-  :subject t01030:p1, t01030:p2 .
+  :subject t01030:p1, t01030:p2 ;
+  :text """TODO: rúst
+in
+vredd
+sat.1
+suffrida siberdina
+slijper;
+geboren te onderdendam
+22 september 1822,
+overleden te noordhorn
+27 juni 1896.
+sedert 1853
+weduwe van
+eije j.beukema.
+deukena
+carshuizen
+""" .
 
 t01030:p1
   a :Female ;
@@ -57,13 +57,13 @@ t01030:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "ONDERDENDAM" ;
-    :place place:Onderdendam2749601
+    :place place:Onderdendam2749601 ;
+    :text "TODO: ONDERDENDAM"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "NOORDHORN" ;
-    :place place:Noordhorn2749875
+    :place place:Noordhorn2749875 ;
+    :text "TODO: NOORDHORN"
   ] ;
   :relation [
     a :Widow.n.01 ;
@@ -83,8 +83,11 @@ t01030:p3
   a :Creator ;
   :location [
     a :Village.n.02 ;
-    :name "GARSTHUIZEN" ;
-    :place place:Garsthuizen2755720
+    :place place:Garsthuizen2755720 ;
+    :text "TODO: GARSTHUIZEN"
   ] ;
-  :name "BEUKEMA" .
+  :name [
+    a :Name ;
+    :fullname "BEUKEMA"
+  ] .
 

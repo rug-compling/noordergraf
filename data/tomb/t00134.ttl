@@ -2,15 +2,6 @@
 
 tomb:t00134
   a :Tomb ;
-  :text """TODO: ake sikkema
-geb.te warffum 20-11-1881
-overl.te groningen 25-1-1942.
-bentje
-westerbrink
-geb.te grootegast 19-3-1888
-overl.te groningen 25-4-1951
-laatst echtg.van j.doff
-""" ;
   :image [
     dc:date "2019-10-02T10:42:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,12 +15,21 @@ laatst echtg.van j.doff
     :nd "+53.2069+006.5725"^^ll:
   ] ;
   :site site:gr9725ACgroningen ;
-  :subject t00134:p1, t00134:p2, t00134:p3 .
+  :subject t00134:p1, t00134:p2, t00134:p3 ;
+  :text """TODO: ake sikkema
+geb.te warffum 20-11-1881
+overl.te groningen 25-1-1942.
+bentje
+westerbrink
+geb.te grootegast 19-3-1888
+overl.te groningen 25-4-1951
+laatst echtg.van j.doff
+""" .
 
 t00134:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00134:p1
   a :Male ;
@@ -53,8 +53,8 @@ t00134:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "WARFFUM" ;
-    :place place:Warffum2745024
+    :place place:Warffum2745024 ;
+    :text "TODO: WARFFUM"
   ] ;
   :placeOfDeath t00134:c1 .
 
@@ -80,8 +80,8 @@ t00134:p2
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "GROOTEGAST" ;
-    :place place:Grootegast2755204
+    :place place:Grootegast2755204 ;
+    :text "TODO: GROOTEGAST"
   ] ;
   :placeOfDeath t00134:c1 ;
   :relation t00134:r2, [

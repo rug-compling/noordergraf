@@ -2,23 +2,6 @@
 
 tomb:t00605
   a :Tomb ;
-  :text """TODO: forgedachtenis
-9
-van
-.
-er
-an nijbol
-geboren
-te kropswolde
-1 sept.1837
-overleden
-te hoogezand
-29 juni 1898,
-wedunonaarvan
-trijntje visscher
-me
-f/dfwijs
-""" ;
   :creator t00605:p3 ;
   :image [
     dc:date "2019-11-23T10:07:01"^^xsd:dateTime ;
@@ -38,7 +21,24 @@ f/dfwijs
     a :WeepingWillow
   ], [
     a symbol:BrokenColumn
-  ] .
+  ] ;
+  :text """TODO: forgedachtenis
+9
+van
+.
+er
+an nijbol
+geboren
+te kropswolde
+1 sept.1837
+overleden
+te hoogezand
+29 juni 1898,
+wedunonaarvan
+trijntje visscher
+me
+f/dfwijs
+""" .
 
 t00605:p1
   a :Male ;
@@ -62,13 +62,13 @@ t00605:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "KROPSWOLDE" ;
-    :place place:Kropswolde2752217
+    :place place:Kropswolde2752217 ;
+    :text "TODO: KROPSWOLDE"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "HOOGEZAND" ;
-    :place place:Hoogezand2753706
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
   ] ;
   :relation [
     a :Widower.n.01 ;
@@ -85,5 +85,8 @@ t00605:p2
 
 t00605:p3
   a :Creator ;
-  :name "L.F. DE WIJS" .
+  :name [
+    a :Name ;
+    :fullname "L.F. DE WIJS"
+  ] .
 

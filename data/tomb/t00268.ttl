@@ -2,16 +2,6 @@
 
 tomb:t00268
   a :Tomb ;
-  :text """TODO: las
-este
-zockere froggenet.
-gaston august
-v\u00c4nerachen
-201102108
-cuanera,
-m
-ice
-""" ;
   :image [
     dc:date "2019-10-14T11:01:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -28,7 +18,17 @@ ice
   :subject t00268:p1 ;
   :sym [
     a :Cross.n.03
-  ] .
+  ] ;
+  :text """TODO: las
+este
+zockere froggenet.
+gaston august
+vÄnerachen
+201102108
+cuanera,
+m
+ice
+""" .
 
 t00268:p1
   a :Male ;
@@ -52,17 +52,17 @@ t00268:p1
   ] ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
-    :name "LAGELAND" ;
-    :place place:Lageland11746820
+    :place place:Lageland11746820 ;
+    :text "TODO: LAGELAND"
   ] ;
   :relation [
+    a :Brother.n.01 ;
+    :target t00268:p2
+  ], [
     a :Housemate.n.01 ;
     :target t00268:p3
   ], [
     a :Son.n.01 ;
-    :target t00268:p2
-  ], [
-    a :Brother.n.01 ;
     :target t00268:p2
   ] .
 

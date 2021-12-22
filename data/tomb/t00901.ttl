@@ -2,34 +2,6 @@
 
 tomb:t00901
   a :Tomb ;
-  :text """TODO: lats va
-r cluvi
-derken
-e haren
-r. 18414
-ss1
-e tolbe
-rustplaats van
-liefke meek
-echtgenoote van
-p. steenbergen
-geb. te diepswal
-12 mei 1886,
-overl te foxwolde
-8 febr. 1917;
-en haar jongste
-lieveling
-roelfien
-slechts 3 dagen oud
-un: 1912
-noot va
-jong
-jo de dood
-len heer
-zij zijn gelukkig; hun
-heengaan was vrede
-joh.1925-26
-""" ;
   :image [
     dc:date "2020-03-07T14:24:10"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -59,7 +31,35 @@ joh.1925-26
     a :Frond.n.01
   ], [
     a :Frond.n.01
-  ] .
+  ] ;
+  :text """TODO: lats va
+r cluvi
+derken
+e haren
+r. 18414
+ss1
+e tolbe
+rustplaats van
+liefke meek
+echtgenoote van
+p. steenbergen
+geb. te diepswal
+12 mei 1886,
+overl te foxwolde
+8 febr. 1917;
+en haar jongste
+lieveling
+roelfien
+slechts 3 dagen oud
+un: 1912
+noot va
+jong
+jo de dood
+len heer
+zij zijn gelukkig; hun
+heengaan was vrede
+joh.1925-26
+""" .
 
 t00901:p1
   a :Female ;
@@ -83,13 +83,13 @@ t00901:p1
   ] ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
-    :name "DIEPSWAL" ;
-    :place place:Diepswal2756869
+    :place place:Diepswal2756869 ;
+    :text "TODO: DIEPSWAL"
   ] ;
   :placeOfDeath [
     a :Hamlet.n.03 ;
-    :name "FOXWOLDE" ;
-    :place place:Foxwolde2755850
+    :place place:Foxwolde2755850 ;
+    :text "TODO: FOXWOLDE"
   ] ;
   :relation [
     a :Spouse.n.01 ;
@@ -110,8 +110,8 @@ t00901:p2
   ] ;
   :relation [
     a :Child ;
-    :text "lieveling" ;
-    :target t00901:p1
+    :target t00901:p1 ;
+    :text "lieveling"
   ] .
 
 t00901:p3

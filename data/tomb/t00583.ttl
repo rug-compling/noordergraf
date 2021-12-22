@@ -2,21 +2,6 @@
 
 tomb:t00583
   a :Tomb ;
-  :text """TODO: rustplaats
-van onze cel
-man en vader
-jan
-pettinga
-geb.z5 juni 1891
-overl.7 maart 1919
-echtgenoot
-van
-annechien
-scholma
-ps 72:12
-bonjernour
-baflo
-""" ;
   :creator t00583:p3 ;
   :image [
     dc:date "2019-11-30T14:48:37"^^xsd:dateTime ;
@@ -44,7 +29,22 @@ baflo
   :subject t00583:p1, t00583:p2 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+van onze cel
+man en vader
+jan
+pettinga
+geb.z5 juni 1891
+overl.7 maart 1919
+echtgenoot
+van
+annechien
+scholma
+ps 72:12
+bonjernour
+baflo
+""" .
 
 t00583:p1
   a :Male ;
@@ -83,8 +83,11 @@ t00583:p3
   a :Creator ;
   :location [
     a :Village.n.02 ;
-    :name "BAFLO" ;
-    :place place:Baflo2759520
+    :place place:Baflo2759520 ;
+    :text "TODO: BAFLO"
   ] ;
-  :name "BONJERNOUR" .
+  :name [
+    a :Name ;
+    :fullname "BONJERNOUR"
+  ] .
 

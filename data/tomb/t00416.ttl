@@ -2,6 +2,21 @@
 
 tomb:t00416
   a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:03:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00416.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0790 ;
+      geo:long 6.5726
+    ] ;
+    :nd "+53.0790+006.5726"^^ll:
+  ] ;
+  :quo "RUST ZACHT LIEVE OUDERS" ;
+  :site site:dr9481CGvries ;
+  :subject t00416:p1, t00416:p2 ;
   :text """TODO: glentettcute
 rus
 lami
@@ -27,22 +42,7 @@ lp
 vader
 moeder
 rust zacht lieve duders
-""" ;
-  :image [
-    dc:date "2019-10-25T17:03:24"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00416.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.0790 ;
-      geo:long 6.5726
-    ] ;
-    :nd "+53.0790+006.5726"^^ll:
-  ] ;
-  :quo "RUST ZACHT LIEVE OUDERS" ;
-  :site site:dr9481CGvries ;
-  :subject t00416:p1, t00416:p2 .
+""" .
 
 t00416:p1
   a :Male ;
@@ -66,13 +66,13 @@ t00416:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "YDE" ;
-    :place place:Yde2744130
+    :place place:Yde2744130 ;
+    :text "TODO: YDE"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "ROTTERDAM" ;
-    :place place:Rotterdam2747891
+    :place place:Rotterdam2747891 ;
+    :text "TODO: ROTTERDAM"
   ] ;
   :relation t00416:r2, [
     a :Husband.n.01 ;
@@ -104,13 +104,13 @@ t00416:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "ZEIJEN" ;
-    :place place:Zeyen2743985
+    :place place:Zeyen2743985 ;
+    :text "TODO: ZEIJEN"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "VEENDAM" ;
-    :place place:Veendam2745783
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
   ] .
 
 t00416:r2

@@ -2,6 +2,20 @@
 
 tomb:t00137
   a :Tomb ;
+  :image [
+    dc:date "2019-10-02T10:33:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00137.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2062 ;
+      geo:long 6.5701
+    ] ;
+    :nd "+53.2062+006.5701"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen ;
+  :subject t00137:p1, t00137:p2 ;
   :text """TODO: rustplaats
 van
 jan thie
@@ -17,26 +31,12 @@ te peize
 overl 28-12259
 te gron
 term
-""" ;
-  :image [
-    dc:date "2019-10-02T10:33:58"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00137.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2062 ;
-      geo:long 6.5701
-    ] ;
-    :nd "+53.2062+006.5701"^^ll:
-  ] ;
-  :site site:gr9725ACgroningen ;
-  :subject t00137:p1, t00137:p2 .
+""" .
 
 t00137:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00137:p1
   a :Male ;
@@ -60,8 +60,8 @@ t00137:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "RODEN" ;
-    :place place:Roden2748026
+    :place place:Roden2748026 ;
+    :text "TODO: RODEN"
   ] ;
   :placeOfDeath t00137:c1 ;
   :relation [
@@ -91,8 +91,8 @@ t00137:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "PEIZE" ;
-    :place place:Peize2748673
+    :place place:Peize2748673 ;
+    :text "TODO: PEIZE"
   ] ;
   :placeOfDeath t00137:c1 .
 

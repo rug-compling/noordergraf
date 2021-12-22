@@ -2,11 +2,6 @@
 
 tomb:t00306
   a :Tomb ;
-  :text """TODO: kods warmels.
-geb. te hoogeveen 4 april 1919
-gewond te wassenaar 10 mei
-en overl. aldaar 12 mei 1940,
-""" ;
   :image [
     dc:date "2019-10-19T14:26:40"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -20,7 +15,12 @@ en overl. aldaar 12 mei 1940,
     :nd "+52.7159+006.4741"^^ll:
   ] ;
   :site site:dr7907CHhoogeveen ;
-  :subject t00306:p1 .
+  :subject t00306:p1 ;
+  :text """TODO: kods warmels.
+geb. te hoogeveen 4 april 1919
+gewond te wassenaar 10 mei
+en overl. aldaar 12 mei 1940,
+""" .
 
 t00306:p1
   a :Male ;
@@ -44,12 +44,12 @@ t00306:p1
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "HOOGEVEEN" ;
-    :place place:Hoogeveen2753719
+    :place place:Hoogeveen2753719 ;
+    :text "TODO: HOOGEVEEN"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "WASSENAAR" ;
-    :place place:Wassenaar2744991
+    :place place:Wassenaar2744991 ;
+    :text "TODO: WASSENAAR"
   ] .
 

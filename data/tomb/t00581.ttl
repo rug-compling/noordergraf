@@ -2,16 +2,6 @@
 
 tomb:t00581
   a :Tomb ;
-  :text """TODO: feogedachlenia
-ban
-jantje
-wierema
-geboren de 28
-decembej832
-cverleden de 5
-nerembo 3895
-k.mobs
-""" ;
   :creator t00581:p2 ;
   :image [
     dc:date "2019-11-30T14:50:42"^^xsd:dateTime ;
@@ -30,7 +20,17 @@ k.mobs
   :subject t00581:p1 ;
   :sym t00581:s2, t00581:s3, [
     a :Sandglass.n.01
-  ] .
+  ] ;
+  :text """TODO: feogedachlenia
+ban
+jantje
+wierema
+geboren de 28
+decembej832
+cverleden de 5
+nerembo 3895
+k.mobs
+""" .
 
 t00581:p1
   a :Female ;
@@ -57,10 +57,13 @@ t00581:p2
   a :Creator ;
   :location [
     a :Village.n.02 ;
-    :name "EZINGE" ;
-    :place place:Ezinge2755938
+    :place place:Ezinge2755938 ;
+    :text "TODO: EZINGE"
   ] ;
-  :name "K. MOES" .
+  :name [
+    a :Name ;
+    :fullname "K. MOES"
+  ] .
 
 t00581:s2
   a :BatWing .

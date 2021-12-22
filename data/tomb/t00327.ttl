@@ -2,6 +2,23 @@
 
 tomb:t00327
   a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:43:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00327.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7151 ;
+      geo:long 6.4740
+    ] ;
+    :nd "+52.7151+006.4740"^^ll:
+  ] ;
+  :site site:dr7907CHhoogeveen ;
+  :subject t00327:p1, t00327:p2, t00327:p3, t00327:p4 ;
+  :sym [
+    a :WeepingWillow
+  ] ;
   :text """TODO: hier
 rust
 het stoffelijk
@@ -27,29 +44,12 @@ geb.te hoogeveen
 oveal. aldaar
 26 april 1950,
 p5.10 ronb
-""" ;
-  :image [
-    dc:date "2019-10-19T14:43:58"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00327.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 52.7151 ;
-      geo:long 6.4740
-    ] ;
-    :nd "+52.7151+006.4740"^^ll:
-  ] ;
-  :site site:dr7907CHhoogeveen ;
-  :subject t00327:p1, t00327:p2, t00327:p3, t00327:p4 ;
-  :sym [
-    a :WeepingWillow
-  ] .
+""" .
 
 t00327:c1
   a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
 
 t00327:p1
   a :Female ;

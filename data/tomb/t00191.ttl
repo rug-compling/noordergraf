@@ -2,23 +2,6 @@
 
 tomb:t00191
   a :Tomb ;
-  :text """TODO: hier rusten
-mijn lieve ouders
-r. soetendal
-geb. 6-3-98
-te mildam
-overl. 15-4344
-te oudeschoot
-en
-a.vd. schoot
-geb. 10-1-'05
-te oudeschoot
-overl, ie-12-39
-.
-te groningen
-hun 200n hendrik
-hi
-""" ;
   :image [
     dc:date "2019-10-05T09:58:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -35,12 +18,29 @@ hi
   :subject t00191:p1, t00191:p2 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: hier rusten
+mijn lieve ouders
+r. soetendal
+geb. 6-3-98
+te mildam
+overl. 15-4344
+te oudeschoot
+en
+a.vd. schoot
+geb. 10-1-'05
+te oudeschoot
+overl, ie-12-39
+.
+te groningen
+hun 200n hendrik
+hi
+""" .
 
 t00191:c2
   a :Village.n.02 ;
-  :name "OUDESCHOOT" ;
-  :place place:Oudeschoot2749007 .
+  :place place:Oudeschoot2749007 ;
+  :text "TODO: OUDESCHOOT" .
 
 t00191:p1
   a :Person ;
@@ -64,8 +64,8 @@ t00191:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "MILDAM" ;
-    :place place:Mildam2750805
+    :place place:Mildam2750805 ;
+    :text "TODO: MILDAM"
   ] ;
   :placeOfDeath t00191:c2 .
 
@@ -92,8 +92,8 @@ t00191:p2
   :placeOfBirth t00191:c2 ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] .
 
 t00191:p3

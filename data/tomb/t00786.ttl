@@ -2,6 +2,21 @@
 
 tomb:t00786
   a :Tomb ;
+  :image [
+    dc:date "2019-12-21T12:57:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00786.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7816 ;
+      geo:long 6.8972
+    ] ;
+    :nd "+52.7816+006.8972"^^ll:
+  ] ;
+  :quo "RUST ZACHT"@nld ;
+  :site site:dr7811HEemmen ;
+  :subject t00786:p1 ;
   :text """TODO: hier rust
 het stoffelijk
 overschot van
@@ -17,22 +32,7 @@ en
 grietien everts
 het
 rust zacht
-""" ;
-  :image [
-    dc:date "2019-12-21T12:57:24"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00786.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 52.7816 ;
-      geo:long 6.8972
-    ] ;
-    :nd "+52.7816+006.8972"^^ll:
-  ] ;
-  :quo "RUST ZACHT"@nld ;
-  :site site:dr7811HEemmen ;
-  :subject t00786:p1 .
+""" .
 
 t00786:p1
   a :Male ;
@@ -56,13 +56,13 @@ t00786:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "WESTENESCH" ;
-    :place place:Westenesch2744776
+    :place place:Westenesch2744776 ;
+    :text "TODO: WESTENESCH"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "EMMEN" ;
-    :place place:Emmen2756136
+    :place place:Emmen2756136 ;
+    :text "TODO: EMMEN"
   ] ;
   :relation [
     a :Son.n.01 ;

@@ -2,6 +2,29 @@
 
 tomb:t00506
   a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:38:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00506.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2074 ;
+      geo:long 5.7678
+    ] ;
+    :nd "+53.2074+005.7678"^^ll:
+  ] ;
+  :quo "REQUIESCAT IN PACE"@lat ;
+  :quote [
+    a :Quote ;
+    :target t00506:p1 ;
+    :text "NOODLOTTIG OM HET LEVEN GEKOMEN BIJ EEN MILITAIRE OEFENING"
+  ] ;
+  :site site:fr8915CPleeuwarden ;
+  :subject t00506:p1, t00506:p2 ;
+  :sym [
+    a :Cross.n.03
+  ] ;
   :text """TODO: r.i.p.
 vavad
 ac
@@ -21,30 +44,7 @@ sara kindermans
 he
 12
 7
-""" ;
-  :image [
-    dc:date "2019-11-09T14:38:25"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00506.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2074 ;
-      geo:long 5.7678
-    ] ;
-    :nd "+53.2074+005.7678"^^ll:
-  ] ;
-  :quo "REQUIESCAT IN PACE"@lat ;
-  :quote [
-    a :Quote ;
-    :text "NOODLOTTIG OM HET LEVEN GEKOMEN BIJ EEN MILITAIRE OEFENING" ;
-    :target t00506:p1
-  ] ;
-  :site site:fr8915CPleeuwarden ;
-  :subject t00506:p1, t00506:p2 ;
-  :sym [
-    a :Cross.n.03
-  ] .
+""" .
 
 t00506:p1
   a :Male ;
@@ -68,13 +68,13 @@ t00506:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "LEEUWARDEN" ;
-    :place place:Leeuwarden2751792
+    :place place:Leeuwarden2751792 ;
+    :text "TODO: LEEUWARDEN"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "'S GRAVENMOER" ;
-    :place place:sGravenmoer2747371
+    :place place:sGravenmoer2747371 ;
+    :text "TODO: 'S GRAVENMOER"
   ] ;
   :relation [
     a :Spouse.n.01 ;

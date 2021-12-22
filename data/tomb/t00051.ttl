@@ -2,6 +2,20 @@
 
 tomb:t00051
   a :Tomb ;
+  :image [
+    dc:date "2019-09-27T17:42:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00051.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1631 ;
+      geo:long 6.6131
+    ] ;
+    :nd "+53.1631+006.6131"^^ll:
+  ] ;
+  :site site:gr9752CMharen ;
+  :subject t00051:p1, t00051:p2 ;
   :text """TODO: le
 latest
 rustplaats van
@@ -16,26 +30,12 @@ geb. 20 april 1891
 te haren
 overl. 17. febr. 1954
 hello
-""" ;
-  :image [
-    dc:date "2019-09-27T17:42:46"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00051.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1631 ;
-      geo:long 6.6131
-    ] ;
-    :nd "+53.1631+006.6131"^^ll:
-  ] ;
-  :site site:gr9752CMharen ;
-  :subject t00051:p1, t00051:p2 .
+""" .
 
 t00051:c2
   a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
+  :place place:Haren2754841 ;
+  :text "TODO: HAREN" .
 
 t00051:p1
   a :Female ;
@@ -59,8 +59,8 @@ t00051:p1
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "HOOGEZAND" ;
-    :place place:Hoogezand2753706
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
   ] ;
   :placeOfDeath t00051:c2 ;
   :relation [

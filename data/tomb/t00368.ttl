@@ -2,6 +2,21 @@
 
 tomb:t00368
   a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:22:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00368.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0796 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.0796+006.5716"^^ll:
+  ] ;
+  :quo "RUST ZACHT" ;
+  :site site:dr9481CGvries ;
+  :subject t00368:p1, t00368:p2, t00368:p3 ;
   :text """TODO: in dankoare herinnering
 aan
 m
@@ -13,7 +28,7 @@ ftien geesien hilge
 hilgers steunebrink
 geb.te
 onderen
-ger. te donde rent ge\u00cb te
+ger. te donde rent geË te
 geb te eeloe
 2 maart 1904
 6 juli 1871 11 maart 1880
@@ -29,32 +44,17 @@ van
 g. hilgers en
 a sibunebrank g. hilgers a steunebrink
 rust zacht
-""" ;
-  :image [
-    dc:date "2019-10-25T17:22:55"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00368.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.0796 ;
-      geo:long 6.5716
-    ] ;
-    :nd "+53.0796+006.5716"^^ll:
-  ] ;
-  :quo "RUST ZACHT" ;
-  :site site:dr9481CGvries ;
-  :subject t00368:p1, t00368:p2, t00368:p3 .
+""" .
 
 t00368:c1
   a :Village.n.02 ;
-  :name "DONDEREN" ;
-  :place place:Donderen2756731 .
+  :place place:Donderen2756731 ;
+  :text "TODO: DONDEREN" .
 
 t00368:c4
   a :Village.n.02 ;
-  :name "DONDEREN" ;
-  :place place:Donderen2756731 .
+  :place place:Donderen2756731 ;
+  :text "TODO: DONDEREN" .
 
 t00368:p1
   a :Male ;
@@ -105,13 +105,13 @@ t00368:p2
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "EELDE" ;
-    :place place:Eelde2756408
+    :place place:Eelde2756408 ;
+    :text "TODO: EELDE"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "ASSEN" ;
-    :place place:Assen2759633
+    :place place:Assen2759633 ;
+    :text "TODO: ASSEN"
   ] ;
   :relation [
     a :Spouse.n.01 ;

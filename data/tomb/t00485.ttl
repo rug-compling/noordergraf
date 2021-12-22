@@ -2,6 +2,24 @@
 
 tomb:t00485
   a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:35:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00485.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2066 ;
+      geo:long 5.7690
+    ] ;
+    :nd "+53.2066+005.7690"^^ll:
+  ] ;
+  :quo "REQUIESCAT IN PACE"@lat ;
+  :site site:fr8915CPleeuwarden ;
+  :subject t00485:p1, t00485:p2, t00485:p3 ;
+  :sym [
+    a :Cross.n.03
+  ] ;
   :text """TODO: rip
 questpla43
 van
@@ -21,30 +39,12 @@ ger te creonterp
 overl te leeuwarden
 2 mel947
 27
-""" ;
-  :image [
-    dc:date "2019-11-09T14:35:35"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00485.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2066 ;
-      geo:long 5.7690
-    ] ;
-    :nd "+53.2066+005.7690"^^ll:
-  ] ;
-  :quo "REQUIESCAT IN PACE"@lat ;
-  :site site:fr8915CPleeuwarden ;
-  :subject t00485:p1, t00485:p2, t00485:p3 ;
-  :sym [
-    a :Cross.n.03
-  ] .
+""" .
 
 t00485:c2
   a :City.n.01 ;
-  :name "LEEUWARDEN" ;
-  :place place:Leeuwarden2751792 .
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
 
 t00485:p1
   a :Male ;
@@ -68,8 +68,8 @@ t00485:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "LEIDEN" ;
-    :place place:Leiden2751773
+    :place place:Leiden2751773 ;
+    :text "TODO: LEIDEN"
   ] ;
   :placeOfDeath t00485:c2 .
 
@@ -95,8 +95,8 @@ t00485:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "GREONTERP" ;
-    :place place:Greonterp2755343
+    :place place:Greonterp2755343 ;
+    :text "TODO: GREONTERP"
   ] ;
   :placeOfDeath t00485:c2 ;
   :relation [

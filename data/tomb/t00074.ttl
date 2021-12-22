@@ -2,16 +2,6 @@
 
 tomb:t00074
   a :Tomb ;
-  :text """TODO: maria elisabeth
-hillebrand
-*te hagen (0.1) 13 nov.1896
-+ te gron.6 jan, 1951
-echtgen van
-lorenz wilhelm
-fischer
-* te gron.z8 febr. 1896
-+ te gron. 8 maart 1955
-""" ;
   :image [
     dc:date "2019-09-25T11:45:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,12 +15,22 @@ fischer
     :nd "+53.2037+006.5717"^^ll:
   ] ;
   :site site:gr9721AAgroningen ;
-  :subject t00074:p1, t00074:p2 .
+  :subject t00074:p1, t00074:p2 ;
+  :text """TODO: maria elisabeth
+hillebrand
+*te hagen (0.1) 13 nov.1896
++ te gron.6 jan, 1951
+echtgen van
+lorenz wilhelm
+fischer
+* te gron.z8 febr. 1896
++ te gron. 8 maart 1955
+""" .
 
 t00074:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00074:p1
   a :Female ;
@@ -54,13 +54,13 @@ t00074:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "HAGEN" ;
     :partOf [
       a :Country.n.02 ;
-      :name "DUITSLAND" ;
-      :place place:Duitsland2921044
+      :place place:Duitsland2921044 ;
+      :text "TODO: DUITSLAND"
     ] ;
-    :place place:Hagen2912621
+    :place place:Hagen2912621 ;
+    :text "TODO: HAGEN"
   ] ;
   :placeOfDeath t00074:c1 ;
   :relation [

@@ -2,18 +2,6 @@
 
 tomb:t00071
   a :Tomb ;
-  :text """TODO: 0 rustplaats van
-catharina kramer
-geb. 19 mei 1866 te hoorn (lh
-overl. 25 sept. 1939 te groningen
-innig geliefde echtgenoote van
-g
-adolf kuiper
-onze lieve broer en oom
-adolf kuiper
-geb, 3 mei 1838 te emmen
-overl 6 april 1947 te groningen
-""" ;
   :age [
     a :Age ;
     :duration "P108Y11M3D"^^xsd:duration ;
@@ -41,8 +29,8 @@ overl 6 april 1947 te groningen
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "EMMEN" ;
-    :place place:Emmen2756136
+    :place place:Emmen2756136 ;
+    :text "TODO: EMMEN"
   ] ;
   :placeOfDeath t00071:c1 ;
   :relation [
@@ -51,12 +39,24 @@ overl 6 april 1947 te groningen
     a :Uncle.n.01
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00071:p1, t00071:p2 .
+  :subject t00071:p1, t00071:p2 ;
+  :text """TODO: 0 rustplaats van
+catharina kramer
+geb. 19 mei 1866 te hoorn (lh
+overl. 25 sept. 1939 te groningen
+innig geliefde echtgenoote van
+g
+adolf kuiper
+onze lieve broer en oom
+adolf kuiper
+geb, 3 mei 1838 te emmen
+overl 6 april 1947 te groningen
+""" .
 
 t00071:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00071:p1
   a :Female ;
@@ -80,13 +80,13 @@ t00071:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "HOORN" ;
     :partOf [
       a :Province.n.01 ;
-      :name "NOORD-HOLLAND" ;
-      :place place:ProvincieNoordHolland2749879
+      :place place:ProvincieNoordHolland2749879 ;
+      :text "TODO: NOORD-HOLLAND"
     ] ;
-    :place place:Hoorn2753638
+    :place place:Hoorn2753638 ;
+    :text "TODO: HOORN"
   ] ;
   :placeOfDeath t00071:c1 ;
   :relation [

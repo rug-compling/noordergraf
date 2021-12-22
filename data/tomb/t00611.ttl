@@ -2,22 +2,6 @@
 
 tomb:t00611
   a :Tomb ;
-  :text """TODO: hapload
-jan
-andries faber
-gebte hoteles
-4 mei 1842
-he
-berlte hogezand
-26 juni 1892
-erejne echtgenoeld
-kunje redeker
-geb.te kid
-18 oct. 1845
-brerlte cappemeer
-18 co. 1925.
-holsberden
-""" ;
   :creator t00611:p3 ;
   :image [
     dc:date "2019-11-23T10:06:14"^^xsd:dateTime ;
@@ -39,7 +23,23 @@ holsberden
     a :Frond.n.01
   ], [
     a :Ribbon.n.01
-  ] .
+  ] ;
+  :text """TODO: hapload
+jan
+andries faber
+gebte hoteles
+4 mei 1842
+he
+berlte hogezand
+26 juni 1892
+erejne echtgenoeld
+kunje redeker
+geb.te kid
+18 oct. 1845
+brerlte cappemeer
+18 co. 1925.
+holsberden
+""" .
 
 t00611:p1
   a :Male ;
@@ -63,18 +63,18 @@ t00611:p1
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "SLOTEN" ;
     :partOf [
       a :Province.n.01 ;
-      :name "FRIESLAND" ;
-      :place place:ProvincieFriesland2755812
+      :place place:ProvincieFriesland2755812 ;
+      :text "TODO: FRIESLAND"
     ] ;
-    :place place:Sloten2747131
+    :place place:Sloten2747131 ;
+    :text "TODO: SLOTEN"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "HOOGEZAND" ;
-    :place place:Hoogezand2753706
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
   ] .
 
 t00611:p2
@@ -99,13 +99,13 @@ t00611:p2
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "KIEL" ;
-    :place place:Kiel2752863
+    :place place:Kiel2752863 ;
+    :text "TODO: KIEL"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "SAPPEMEER" ;
-    :place place:Sappemeer2747758
+    :place place:Sappemeer2747758 ;
+    :text "TODO: SAPPEMEER"
   ] ;
   :relation [
     a :Spouse.n.01 ;
@@ -114,5 +114,8 @@ t00611:p2
 
 t00611:p3
   a :Creator ;
-  :name "HOLSBERGEN" .
+  :name [
+    a :Name ;
+    :fullname "HOLSBERGEN"
+  ] .
 

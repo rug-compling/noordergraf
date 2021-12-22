@@ -2,16 +2,6 @@
 
 tomb:t00130
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-wesselina drenth
-geb te wildervank
-15 februari 1845
-overl te groningen
-18 februari 1933
-weduwe van
-u buttinger
-""" ;
   :image [
     dc:date "2019-10-01T09:56:48"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,7 +15,17 @@ u buttinger
     :nd "+53.2061+006.5716"^^ll:
   ] ;
   :site site:gr9725ACgroningen ;
-  :subject t00130:p1, t00130:p2 .
+  :subject t00130:p1, t00130:p2 ;
+  :text """TODO: rustplaats
+van
+wesselina drenth
+geb te wildervank
+15 februari 1845
+overl te groningen
+18 februari 1933
+weduwe van
+u buttinger
+""" .
 
 t00130:p1
   a :Female ;
@@ -49,13 +49,13 @@ t00130:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "WILDERVANK" ;
-    :place place:Wildervank2744431
+    :place place:Wildervank2744431 ;
+    :text "TODO: WILDERVANK"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation [
     a :Widow.n.01 ;

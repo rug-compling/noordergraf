@@ -2,6 +2,13 @@
 
 tomb:t01081
   a :Tomb ;
+  :image [
+    dc:date "2020-05-20T19:32:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t01081.jpg
+  ] ;
+  :subject t01081:p1, t01081:p2 ;
   :text """TODO: rustplaats
 van
 jantje brul
@@ -14,14 +21,7 @@ gel.echtgenote
 van
 pieter
 wierenga
-""" ;
-  :image [
-    dc:date "2020-05-20T19:32:56"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t01081.jpg
-  ] ;
-  :subject t01081:p1, t01081:p2 .
+""" .
 
 t01081:p1
   a :Female ;
@@ -45,13 +45,13 @@ t01081:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "BAD NIEUWESCHANS" ;
-    :place place:BadNieuweschans2750250
+    :place place:BadNieuweschans2750250 ;
+    :text "TODO: BAD NIEUWESCHANS"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "VRIES" ;
-    :place place:Vries2745189
+    :place place:Vries2745189 ;
+    :text "TODO: VRIES"
   ] ;
   :relation [
     a :Spouse.n.01 ;

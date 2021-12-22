@@ -2,23 +2,6 @@
 
 tomb:t01031
   a :Tomb ;
-  :text """TODO: tont.
-ten
-telu
-rustplaats
-van onze lieve ouders
-albert bosscher
-gerel juli 1869 te grupskerk
-overle sept. 1952 te noordhorn
-en
-antje kremer
-geb, 28 dec. 1868
-te noordhorn
-overl e jan. 1955
-ps. 42
-11.
-1
-""" ;
   :image [
     dc:date "2020-04-19T12:05:53"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -42,12 +25,29 @@ ps. 42
     :text "Ps. 42"@nld
   ] ;
   :site site:gr9804TEnoordhorn ;
-  :subject t01031:p1, t01031:p2 .
+  :subject t01031:p1, t01031:p2 ;
+  :text """TODO: tont.
+ten
+telu
+rustplaats
+van onze lieve ouders
+albert bosscher
+gerel juli 1869 te grupskerk
+overle sept. 1952 te noordhorn
+en
+antje kremer
+geb, 28 dec. 1868
+te noordhorn
+overl e jan. 1955
+ps. 42
+11.
+1
+""" .
 
 t01031:c1
   a :Village.n.02 ;
-  :name "GRIJPSKERK" ;
-  :place place:Grijpskerk2755317 .
+  :place place:Grijpskerk2755317 ;
+  :text "TODO: GRIJPSKERK" .
 
 t01031:p1
   a :Male ;
@@ -72,8 +72,8 @@ t01031:p1
   :placeOfBirth t01031:c1 ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "NOORDHORN" ;
-    :place place:Noordhorn2749875
+    :place place:Noordhorn2749875 ;
+    :text "TODO: NOORDHORN"
   ] ;
   :relation [
     a :Parent.n.01

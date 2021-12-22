@@ -2,22 +2,6 @@
 
 tomb:t00535
   a :Tomb ;
-  :text """TODO: ter
-redacht ents
-onzer geliefde
-broeder
-geert olthor
-geboren
-te wilderyank
-3 oct. 1845,
-overleden
-in het ziekenhuis
-te rotterdam
-1 mei 1915.
-rust zacht
-dit syras mag niet
-worden opgegraven
-""" ;
   :image [
     dc:date "2019-11-24T14:22:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -35,7 +19,23 @@ worden opgegraven
   :subject t00535:p1 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: ter
+redacht ents
+onzer geliefde
+broeder
+geert olthor
+geboren
+te wilderyank
+3 oct. 1845,
+overleden
+in het ziekenhuis
+te rotterdam
+1 mei 1915.
+rust zacht
+dit syras mag niet
+worden opgegraven
+""" .
 
 t00535:p1
   a :Male ;
@@ -59,12 +59,11 @@ t00535:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "WILDERVANK" ;
-    :place place:Wildervank2744431
+    :place place:Wildervank2744431 ;
+    :text "TODO: WILDERVANK"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "ROTTERDAM" ;
     :place place:Rotterdam2747891 ;
     :text "in het Ziekenhuis te Rotterdam"
   ] ;

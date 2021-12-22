@@ -2,6 +2,24 @@
 
 tomb:t00394
   a :Tomb ;
+  :image [
+    dc:date "2019-10-26T14:59:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00394.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2516 ;
+      geo:long 6.1453
+    ] ;
+    :nd "+53.2516+006.1453"^^ll:
+  ] ;
+  :subject t00394:p1, t00394:p2 ;
+  :sym [
+    a :Branch.n.02
+  ], [
+    a :Boat.n.01
+  ] ;
   :text """TODO: ti
 fa
 rustplaats
@@ -25,30 +43,12 @@ overl. aldaar
 .
 w.dukstra en kinderen,
 p5:43:4
-""" ;
-  :image [
-    dc:date "2019-10-26T14:59:45"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00394.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2516 ;
-      geo:long 6.1453
-    ] ;
-    :nd "+53.2516+006.1453"^^ll:
-  ] ;
-  :subject t00394:p1 , t00394:p2 ;
-  :sym [
-    a :Branch.n.02
-  ], [
-    a :Boat.n.01
-  ] .
+""" .
 
 t00394:c2
   a :Village.n.02 ;
-  :name "BUITENPOST" ;
-  :place place:Buitenpost2758131 .
+  :place place:Buitenpost2758131 ;
+  :text "TODO: BUITENPOST" .
 
 t00394:p1
   a :Male ;
@@ -72,8 +72,8 @@ t00394:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "HARKEMA-OPEINDE" ;
-    :place place:Harkema2754821
+    :place place:Harkema2754821 ;
+    :text "TODO: HARKEMA-OPEINDE"
   ] ;
   :placeOfDeath t00394:c2 ;
   :ref [

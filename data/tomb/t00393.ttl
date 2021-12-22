@@ -2,22 +2,6 @@
 
 tomb:t00393
   a :Tomb ;
-  :text """TODO: sela!
-sun
-initius gbu hos
-cupru duksia
-tv dtsbitdeset
-rs te daniet gense
-iste
-hamn din hulle
-\uc9c0
-sed
-hbdhulp foto
-13 dia art 1925
-dvdrlidbi tuditshoorn
-12 juni 200
-uchtigtenteit
-""" ;
   :image [
     dc:date "2019-10-26T15:01:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,18 +15,34 @@ uchtigtenteit
     :nd "+53.2517+006.1453"^^ll:
   ] ;
   :site site:fr9285TCbuitenpost ;
-  :subject t00393:p1, t00393:p2 .
+  :subject t00393:p1, t00393:p2 ;
+  :text """TODO: sela!
+sun
+initius gbu hos
+cupru duksia
+tv dtsbitdeset
+rs te daniet gense
+iste
+hamn din hulle
+지
+sed
+hbdhulp foto
+13 dia art 1925
+dvdrlidbi tuditshoorn
+12 juni 200
+uchtigtenteit
+""" .
 
 t00393:c2
   a :Village.n.02 ;
-  :name "BEETGUM" ;
-  :place place:Bitgum2759283 .
+  :place place:Bitgum2759283 ;
+  :text "TODO: BEETGUM" .
 
 t00393:o2
   a :Occupation ;
-  :wordnet "TODO: Doctor.n.01" ;
   :hisco hisco:06105 ;
-  :location t00393:c2 .
+  :location t00393:c2 ;
+  :wordnet "TODO: Doctor.n.01" .
 
 t00393:p1
   a :Male ;
@@ -66,19 +66,19 @@ t00393:p1
   ] ;
   :occupation t00393:o2, [
     a :Occupation ;
-    :wordnet "TODO: Doctor.n.01" ;
     :before t00393:o2 ;
     :hisco hisco:06105 ;
     :location [
       a :Village.n.02 ;
-      :name "MINNERTSGA" ;
-      :place place:Minnertsga2750790
-    ]
+      :place place:Minnertsga2750790 ;
+      :text "TODO: MINNERTSGA"
+    ] ;
+    :wordnet "TODO: Doctor.n.01"
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "WEIDUM" ;
-    :place place:Weidum2744891
+    :place place:Weidum2744891 ;
+    :text "TODO: WEIDUM"
   ] ;
   :placeOfDeath t00393:c2 ;
   :relation [

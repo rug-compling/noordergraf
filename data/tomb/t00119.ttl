@@ -2,18 +2,6 @@
 
 tomb:t00119
   a :Tomb ;
-  :text """TODO: rustplaats van
-onze lieve man en vader
-hendrik boddeveld
-geb. 12_6_1885 te eelde
-overl.13_6_1961 te haren
-echtgen, van e. postma
-en onze -lieve moeder
-eelkje postma
-geb. 10_5_1688
-te kollumerzwaag
-overl,8_5_1969 te gron.
-""" ;
   :image [
     dc:date "2019-09-20T17:50:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,7 +15,19 @@ overl,8_5_1969 te gron.
     :nd "+53.1624+006.6151"^^ll:
   ] ;
   :site site:gr9752CMharen ;
-  :subject t00119:p1, t00119:p2 .
+  :subject t00119:p1, t00119:p2 ;
+  :text """TODO: rustplaats van
+onze lieve man en vader
+hendrik boddeveld
+geb. 12_6_1885 te eelde
+overl.13_6_1961 te haren
+echtgen, van e. postma
+en onze -lieve moeder
+eelkje postma
+geb. 10_5_1688
+te kollumerzwaag
+overl,8_5_1969 te gron.
+""" .
 
 t00119:p1
   a :Male ;
@@ -51,13 +51,13 @@ t00119:p1
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "EELDE" ;
-    :place place:Eelde2756408
+    :place place:Eelde2756408 ;
+    :text "TODO: EELDE"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "HAREN" ;
-    :place place:Haren2754841
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
   ] ;
   :relation [
     a :Father.n.01
@@ -88,13 +88,13 @@ t00119:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "KOLLUMERZWAAG" ;
-    :place place:Kollumerzwaag2752520
+    :place place:Kollumerzwaag2752520 ;
+    :text "TODO: KOLLUMERZWAAG"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation [
     a :Mother.n.01

@@ -2,23 +2,6 @@
 
 tomb:t00584
   a :Tomb ;
-  :text """TODO: rustuplaats
-van
-geertje
-v.d.schans.
-geb.te noorddijk
-5 april 1824,
-overl.te obergum
-11 febr. 1912,
-echtgenoote van
-leendert p.bos
-***
-nalatende
--
-& kinderen.
-h.j. moes
-ezinae,
-""" ;
   :creator t00584:p4 ;
   :image [
     dc:date "2019-11-30T14:48:16"^^xsd:dateTime ;
@@ -36,7 +19,24 @@ ezinae,
   :subject t00584:p1, t00584:p2, t00584:p3 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: rustuplaats
+van
+geertje
+v.d.schans.
+geb.te noorddijk
+5 april 1824,
+overl.te obergum
+11 febr. 1912,
+echtgenoote van
+leendert p.bos
+***
+nalatende
+-
+& kinderen.
+h.j. moes
+ezinae,
+""" .
 
 t00584:p1
   a :Female ;
@@ -60,13 +60,13 @@ t00584:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "NOORDDIJK" ;
-    :place place:Noorddijk2749981
+    :place place:Noorddijk2749981 ;
+    :text "TODO: NOORDDIJK"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "OBERGUM" ;
-    :place place:Obergum2749742
+    :place place:Obergum2749742 ;
+    :text "TODO: OBERGUM"
   ] ;
   :relation [
     a :Spouse.n.01 ;
@@ -99,8 +99,11 @@ t00584:p4
   a :Creator ;
   :location [
     a :Village.n.02 ;
-    :name "EZINGE" ;
-    :place place:Ezinge2755938
+    :place place:Ezinge2755938 ;
+    :text "TODO: EZINGE"
   ] ;
-  :name "K.J. MOES" .
+  :name [
+    a :Name ;
+    :fullname "K.J. MOES"
+  ] .
 

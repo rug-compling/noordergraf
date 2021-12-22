@@ -2,12 +2,6 @@
 
 tomb:t00301
   a :Tomb ;
-  :text """TODO: rustplats
-labertus fled derrus
-geb. ee buren (ged), 9 juu 913
-oveel te brestle lia ht4903.
-juli
-""" ;
   :image [
     dc:date "2019-10-19T14:33:45"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,7 +15,13 @@ juli
     :nd "+52.7154+006.4735"^^ll:
   ] ;
   :site site:dr7907CHhoogeveen ;
-  :subject t00301:p1 .
+  :subject t00301:p1 ;
+  :text """TODO: rustplats
+labertus fled derrus
+geb. ee buren (ged), 9 juu 913
+oveel te brestle lia ht4903.
+juli
+""" .
 
 t00301:p1
   a :Male ;
@@ -45,17 +45,17 @@ t00301:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "BUREN" ;
     :partOf [
       a :Province.n.01 ;
-      :name "GELDERLAND" ;
-      :place place:ProvincieGelderland2755634
+      :place place:ProvincieGelderland2755634 ;
+      :text "TODO: GELDERLAND"
     ] ;
-    :place place:Buren2758097
+    :place place:Buren2758097 ;
+    :text "TODO: BUREN"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "BREST" ;
-    :place place:Brest3030300
+    :place place:Brest3030300 ;
+    :text "TODO: BREST"
   ] .
 

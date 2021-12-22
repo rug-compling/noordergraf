@@ -23,8 +23,8 @@ tomb:t01117
 
 t01117:c1
   a :Village.n.02 ;
-  :name "SIDDEBUREN" ;
-  :place place:Siddeburen2747343 .
+  :place place:Siddeburen2747343 ;
+  :text "TODO: SIDDEBUREN" .
 
 t01117:p1
   a :Female ;
@@ -49,12 +49,12 @@ t01117:p1
   :placeOfBirth t01117:c1 ;
   :placeOfDeath t01117:c1 ;
   :relation [
-    a :Widow.n.01 ;
-    :target t01117:p2
-  ], [
     a :Mother-in-law.n.01
   ], [
     a :Grandmother.n.01
+  ], [
+    a :Widow.n.01 ;
+    :target t01117:p2
   ] .
 
 t01117:p2

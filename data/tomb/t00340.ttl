@@ -2,17 +2,6 @@
 
 tomb:t00340
   a :Tomb ;
-  :text """TODO: stplaats van
-if-
-henderikus la cro
-geb.te grorinden 18 sept.1845
-overite horseveen14 tehr 1905
-en van zijn echtgenoote
-anna paulina haak
-geb.te kloosterveen 14 jan.1853
-over\u00ed, te zwolle 13 jan. 19%
-lnt
-""" ;
   :image [
     dc:date "2019-10-19T14:07:41"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +15,18 @@ lnt
     :nd "+52.7157+006.4731"^^ll:
   ] ;
   :site site:dr7907CHhoogeveen ;
-  :subject t00340:p1, t00340:p2 .
+  :subject t00340:p1, t00340:p2 ;
+  :text """TODO: stplaats van
+if-
+henderikus la cro
+geb.te grorinden 18 sept.1845
+overite horseveen14 tehr 1905
+en van zijn echtgenoote
+anna paulina haak
+geb.te kloosterveen 14 jan.1853
+overí, te zwolle 13 jan. 19%
+lnt
+""" .
 
 t00340:p1
   a :Male ;
@@ -50,13 +50,13 @@ t00340:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "HOOGEVEEN" ;
-    :place place:Hoogeveen2753719
+    :place place:Hoogeveen2753719 ;
+    :text "TODO: HOOGEVEEN"
   ] .
 
 t00340:p2
@@ -81,13 +81,13 @@ t00340:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "KLOOSTERVEEN" ;
-    :place place:Kloosterveen2752614
+    :place place:Kloosterveen2752614 ;
+    :text "TODO: KLOOSTERVEEN"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "ZWOLLE" ;
-    :place place:Zwolle2743477
+    :place place:Zwolle2743477 ;
+    :text "TODO: ZWOLLE"
   ] ;
   :relation [
     a :Spouse.n.01 ;

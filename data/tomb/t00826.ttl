@@ -2,16 +2,6 @@
 
 tomb:t00826
   a :Tomb ;
-  :text """TODO: ter gedachtenis aan
-onzen lieyen man en vader
-cornelis kle!
-s
-geb i juli 1894 te groningen
-gevallen voor zijn vaderland
-20 april 1945 te delfzijl
-echtgenoot van
-johanna giliams
-""" ;
   :image [
     dc:date "2020-02-01T12:18:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +16,17 @@ johanna giliams
   ] ;
   :quo "GEVALLEN VOOR ZIJN VADERLAND"@nld ;
   :site site:gr9741ACgroningen ;
-  :subject t00826:p1, t00826:p2 .
+  :subject t00826:p1, t00826:p2 ;
+  :text """TODO: ter gedachtenis aan
+onzen lieyen man en vader
+cornelis kle!
+s
+geb i juli 1894 te groningen
+gevallen voor zijn vaderland
+20 april 1945 te delfzijl
+echtgenoot van
+johanna giliams
+""" .
 
 t00826:p1
   a :Male ;
@@ -50,13 +50,13 @@ t00826:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "DELFZIJL" ;
-    :place place:Delfzijl2757340
+    :place place:Delfzijl2757340 ;
+    :text "TODO: DELFZIJL"
   ] ;
   :relation [
     a :Spouse.n.01 ;

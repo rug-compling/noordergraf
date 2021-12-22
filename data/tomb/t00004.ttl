@@ -2,6 +2,20 @@
 
 tomb:t00004
   a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:56:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00004.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1902 ;
+      geo:long 6.5932
+    ] ;
+    :nd "+53.1902+006.5932"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen ;
+  :subject t00004:p1, t00004:p2, t00004:p3 ;
   :text """TODO: tietje spoelman
 geb, te groningen 27 oct. 1912
 overl. te groningen 28 juli 1933
@@ -19,26 +33,12 @@ geb.te visvliet 17 oct 1876
 overl.tegroningen28 sept 1963
 gels echtgenote van
 johannes spoelman
-""" ;
-  :image [
-    dc:date "2019-09-25T16:56:05"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00004.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1902 ;
-      geo:long 6.5932
-    ] ;
-    :nd "+53.1902+006.5932"^^ll:
-  ] ;
-  :site site:gr9722SNgroningen ;
-  :subject t00004:p1, t00004:p2, t00004:p3 .
+""" .
 
 t00004:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00004:p1
   a :Female ;
@@ -64,8 +64,8 @@ t00004:p1
   :placeOfDeath t00004:c1 ;
   :relation [
     a :Daughter.n.01 ;
-    :text "eenigste dochter" ;
-    :target t00004:p2, t00004:p3
+    :target t00004:p2, t00004:p3 ;
+    :text "eenigste dochter"
   ] .
 
 t00004:p2
@@ -90,8 +90,8 @@ t00004:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "ROHEL" ;
-    :place place:Rohel2747984
+    :place place:Rohel2747984 ;
+    :text "TODO: ROHEL"
   ] ;
   :placeOfDeath t00004:c1 ;
   :relation [
@@ -121,8 +121,8 @@ t00004:p3
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "VISVLIET" ;
-    :place place:Visvliet2745471
+    :place place:Visvliet2745471 ;
+    :text "TODO: VISVLIET"
   ] ;
   :placeOfDeath t00004:c1 ;
   :relation [

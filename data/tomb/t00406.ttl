@@ -2,6 +2,21 @@
 
 tomb:t00406
   a :Tomb ;
+  :image [
+    dc:date "2019-10-26T14:44:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00406.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2518 ;
+      geo:long 6.1448
+    ] ;
+    :nd "+53.2518+006.1448"^^ll:
+  ] ;
+  :quo "HAAR VRIENDLIJK OOGEN ZIJN GESLOTEN, \\ GESTREDEN IS HAAR LAATSTE STRIJD, \\ VOORBIJ AL WAT WIJ ZAAM GENOTEN! \\ HAAR PLAATS IS LEDIG VOOR ALTIJD." ;
+  :site site:fr9285TCbuitenpost ;
+  :subject t00406:p1, t00406:p2 ;
   :text """TODO: tipla
 van
 ats
@@ -22,23 +37,8 @@ voorbij al wat my
 vaamgenote
 haar plaadi's ladi
 vor altyd
-laatste skr\u00fd
-""" ;
-  :image [
-    dc:date "2019-10-26T14:44:31"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00406.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2518 ;
-      geo:long 6.1448
-    ] ;
-    :nd "+53.2518+006.1448"^^ll:
-  ] ;
-  :quo "HAAR VRIENDLIJK OOGEN ZIJN GESLOTEN, \\ GESTREDEN IS HAAR LAATSTE STRIJD, \\ VOORBIJ AL WAT WIJ ZAAM GENOTEN! \\ HAAR PLAATS IS LEDIG VOOR ALTIJD." ;
-  :site site:fr9285TCbuitenpost ;
-  :subject t00406:p1, t00406:p2 .
+laatste skrý
+""" .
 
 t00406:p1
   a :Female ;
@@ -62,13 +62,13 @@ t00406:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "SURHUISTERVEEN" ;
-    :place place:Surhuisterveen2746558
+    :place place:Surhuisterveen2746558 ;
+    :text "TODO: SURHUISTERVEEN"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "BUITENPOST" ;
-    :place place:Buitenpost2758131
+    :place place:Buitenpost2758131 ;
+    :text "TODO: BUITENPOST"
   ] ;
   :relation [
     a :Spouse.n.01 ;

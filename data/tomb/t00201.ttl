@@ -2,16 +2,6 @@
 
 tomb:t00201
   a :Tomb ;
-  :text """TODO: dirkje wachter
-geb.14 juli 1875
-overl, 21 maart 1933
-echtgenoot\u00c9 van
-rudolf v.d. molen
-geb. 3 febr. 1873
-overl. 19 jan. 1940
-te groningen
-\u0434
-""" ;
   :image [
     dc:date "2019-10-06T14:37:52"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,7 +15,17 @@ te groningen
     :nd "+53.1901+006.5946"^^ll:
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00201:p1, t00201:p2 .
+  :subject t00201:p1, t00201:p2 ;
+  :text """TODO: dirkje wachter
+geb.14 juli 1875
+overl, 21 maart 1933
+echtgenootÉ van
+rudolf v.d. molen
+geb. 3 febr. 1873
+overl. 19 jan. 1940
+te groningen
+д
+""" .
 
 t00201:p1
   a :Female ;
@@ -74,7 +74,7 @@ t00201:p2
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] .
 

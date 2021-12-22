@@ -2,20 +2,6 @@
 
 tomb:t00277
   a :Tomb ;
-  :text """TODO: me
-n:.
-rustplaats van
-onze lieve vrouw en moeder
-barbertje bouna
-tk-5190 te godlinze
-87-19 go te oostermieland
-geliefde echtgenote van
-\u0395\u0395
-egbert de vries
-aug 1899 te yozandt
-3221978
-te oosternieland
-""" ;
   :image [
     dc:date "2019-10-16T16:57:12"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -32,12 +18,26 @@ te oosternieland
   :subject t00277:p1, t00277:p2 ;
   :sym [
     a :Frond.n.02
-  ] .
+  ] ;
+  :text """TODO: me
+n:.
+rustplaats van
+onze lieve vrouw en moeder
+barbertje bouna
+tk-5190 te godlinze
+87-19 go te oostermieland
+geliefde echtgenote van
+ΕΕ
+egbert de vries
+aug 1899 te yozandt
+3221978
+te oosternieland
+""" .
 
 t00277:c2
   a :Village.n.02 ;
-  :name "OOSTERNIELAND" ;
-  :place place:Oosternieland2749429 .
+  :place place:Oosternieland2749429 ;
+  :text "TODO: OOSTERNIELAND" .
 
 t00277:p1
   a :Female ;
@@ -61,18 +61,18 @@ t00277:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "GODLINZE" ;
-    :place place:Godlinze2755489
+    :place place:Godlinze2755489 ;
+    :text "TODO: GODLINZE"
   ] ;
   :placeOfDeath t00277:c2 ;
   :relation [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :target t00277:p2
   ], [
     a :Wife.n.01 ;
     :target t00277:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00277:p2
@@ -97,8 +97,8 @@ t00277:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "'T ZANDT" ;
-    :place place:tZandt2746027
+    :place place:tZandt2746027 ;
+    :text "TODO: 'T ZANDT"
   ] ;
   :placeOfDeath t00277:c2 .
 

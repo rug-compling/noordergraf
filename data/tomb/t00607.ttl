@@ -2,19 +2,6 @@
 
 tomb:t00607
   a :Tomb ;
-  :text """TODO: plusonlata van
-de gede
-sr
-ga
-gebel
-ve kalbitzer
-gebote aurich
-10 avril 1818
-overlte heegezni
-8 aug\u00e9, 1904
-2
-l.f.de wijs.
-""" ;
   :creator t00607:p2 ;
   :image [
     dc:date "2019-11-23T10:07:15"^^xsd:dateTime ;
@@ -38,7 +25,20 @@ l.f.de wijs.
     a :Branch.n.02
   ], [
     a :Heart.n.07
-  ] .
+  ] ;
+  :text """TODO: plusonlata van
+de gede
+sr
+ga
+gebel
+ve kalbitzer
+gebote aurich
+10 avril 1818
+overlte heegezni
+8 augé, 1904
+2
+l.f.de wijs.
+""" .
 
 t00607:p1
   a :Female ;
@@ -62,13 +62,13 @@ t00607:p1
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "AURICH" ;
-    :place place:Aurich2954006
+    :place place:Aurich2954006 ;
+    :text "TODO: AURICH"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :name "HOOGEZAND" ;
-    :place place:Hoogezand2753706
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
   ] ;
   :relation [
     a :Widow.n.01
@@ -76,5 +76,8 @@ t00607:p1
 
 t00607:p2
   a :Creator ;
-  :name "L.F. DE WIJS" .
+  :name [
+    a :Name ;
+    :fullname "L.F. DE WIJS"
+  ] .
 

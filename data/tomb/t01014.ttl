@@ -2,20 +2,6 @@
 
 tomb:t01014
   a :Tomb ;
-  :text """TER GEDACHTENIS
-AAN
-IMKE JANS NIEHOF,
-Geb. te Garmerwolde
-den 21 Juni 1816, Overl.
-te Noorddijk den 28 Jan.
-1882 _ betreurd door haar
-echtgenoot HEIKE
-GEERTS WIERENGA
-4 kinderen en een aan-
-gehuwde Dochter, terwijl
-3 haar in de eeuwigheid
-zijn voor gegaan.
-""" ;
   :image [
     dc:date "2020-04-05T12:18:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -34,7 +20,21 @@ zijn voor gegaan.
     a :Frond.n.01
   ], [
     a :Frond.n.01
-  ] .
+  ] ;
+  :text """TER GEDACHTENIS
+AAN
+IMKE JANS NIEHOF,
+Geb. te Garmerwolde
+den 21 Juni 1816, Overl.
+te Noorddijk den 28 Jan.
+1882 _ betreurd door haar
+echtgenoot HEIKE
+GEERTS WIERENGA
+4 kinderen en een aan-
+gehuwde Dochter, terwijl
+3 haar in de eeuwigheid
+zijn voor gegaan.
+""" .
 
 t01014:p1
   a :Female ;
@@ -58,13 +58,13 @@ t01014:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "GARMERWOLDE" ;
-    :place place:Garmerwolde2755728
+    :place place:Garmerwolde2755728 ;
+    :text "TODO: GARMERWOLDE"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "NOORDDIJK" ;
-    :place place:Noorddijk2749981
+    :place place:Noorddijk2749981 ;
+    :text "TODO: NOORDDIJK"
   ] ;
   :relation [
     a :Spouse.n.01 ;
@@ -104,7 +104,7 @@ t01014:p5
   ] ;
   :relation [
     a :Child.n.02 ;
-    :target t01014:p1 ;
-    :comment "overleden"
+    :comment "overleden" ;
+    :target t01014:p1
   ] .
 

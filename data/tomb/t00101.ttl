@@ -2,14 +2,6 @@
 
 tomb:t00101
   a :Tomb ;
-  :text """TODO: hier rust
-cornelis
-van der valk
-oeb le batavia
-14 sept. 1872
-overl.le groningen
-28 april 1922
-""" ;
   :image [
     dc:date "2019-09-21T16:08:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,7 +15,15 @@ overl.le groningen
     :nd "+53.1904+006.5944"^^ll:
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00101:p1 .
+  :subject t00101:p1 ;
+  :text """TODO: hier rust
+cornelis
+van der valk
+oeb le batavia
+14 sept. 1872
+overl.le groningen
+28 april 1922
+""" .
 
 t00101:p1
   a :Male ;
@@ -47,12 +47,12 @@ t00101:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "BATAVIA" ;
-    :place place:Jakarta1642911
+    :place place:Jakarta1642911 ;
+    :text "TODO: BATAVIA"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] .
 

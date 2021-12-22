@@ -2,16 +2,6 @@
 
 tomb:t00606
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-jagob boerma.it
-gebiehoogezand
-2 maart 1822
-ovihrl aldaar
-5 juni 1913
-testerhuis
-sarp
-""" ;
   :creator t00606:p2 ;
   :image [
     dc:date "2019-11-23T10:06:50"^^xsd:dateTime ;
@@ -29,12 +19,22 @@ sarp
   :subject t00606:p1 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+van
+jagob boerma.it
+gebiehoogezand
+2 maart 1822
+ovihrl aldaar
+5 juni 1913
+testerhuis
+sarp
+""" .
 
 t00606:c1
   a :Town.n.01 ;
-  :name "HOOGEZAND" ;
-  :place place:Hoogezand2753706 .
+  :place place:Hoogezand2753706 ;
+  :text "TODO: HOOGEZAND" .
 
 t00606:p1
   a :Male ;
@@ -63,8 +63,11 @@ t00606:p2
   a :Creator ;
   :location [
     a :Village.n.02 ;
-    :name "SAPPEMEER" ;
-    :place place:Sappemeer2747758
+    :place place:Sappemeer2747758 ;
+    :text "TODO: SAPPEMEER"
   ] ;
-  :name "LESTERHUIS" .
+  :name [
+    a :Name ;
+    :fullname "LESTERHUIS"
+  ] .
 

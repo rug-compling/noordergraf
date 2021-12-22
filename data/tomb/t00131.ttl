@@ -2,17 +2,6 @@
 
 tomb:t00131
   a :Tomb ;
-  :text """TODO: at
-rusipla
-van
-usebrand buttinger
-geb. te groningen
-1 october 1859
-overl.te amsterdam
-3 januari 1897
-echtgenoot van
-w.drenth
-""" ;
   :image [
     dc:date "2019-10-01T09:56:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +15,18 @@ w.drenth
     :nd "+53.2061+006.5716"^^ll:
   ] ;
   :site site:gr9725ACgroningen ;
-  :subject t00131:p1, t00131:p2 .
+  :subject t00131:p1, t00131:p2 ;
+  :text """TODO: at
+rusipla
+van
+usebrand buttinger
+geb. te groningen
+1 october 1859
+overl.te amsterdam
+3 januari 1897
+echtgenoot van
+w.drenth
+""" .
 
 t00131:p1
   a :Male ;
@@ -50,13 +50,13 @@ t00131:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "AMSTERDAM" ;
-    :place place:Amsterdam2759794
+    :place place:Amsterdam2759794 ;
+    :text "TODO: AMSTERDAM"
   ] ;
   :relation [
     a :Spouse.n.01 ;

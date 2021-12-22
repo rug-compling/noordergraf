@@ -2,19 +2,6 @@
 
 tomb:t00577
   a :Tomb ;
-  :text """TODO: sleegedachtenis van
-eltje garenus
-yobb bunge der 18 april
-1838, weib. de cornarom
-mero souto
-9
-wohlyemele van
-khas mtalons
-achteraan ki aabends
-21
-de wil smitee
-walaloo kindle
-""" ;
   :image [
     dc:date "2019-11-30T14:56:52"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -28,7 +15,20 @@ walaloo kindle
     :nd "+53.3336+006.5136"^^ll:
   ] ;
   :site site:gr9951STwinsum ;
-  :subject t00577:p1 .
+  :subject t00577:p1 ;
+  :text """TODO: sleegedachtenis van
+eltje garenus
+yobb bunge der 18 april
+1838, weib. de cornarom
+mero souto
+9
+wohlyemele van
+khas mtalons
+achteraan ki aabends
+21
+de wil smitee
+walaloo kindle
+""" .
 
 t00577:p1
   a :Female ;
@@ -52,25 +52,25 @@ t00577:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "EZINGE" ;
-    :place place:Ezinge2755938
+    :place place:Ezinge2755938 ;
+    :text "TODO: EZINGE"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "OBERGUM" ;
-    :place place:Obergum2749742
+    :place place:Obergum2749742 ;
+    :text "TODO: OBERGUM"
   ] ;
   :relation [
+    a :Daughter.n.01 ;
+    :target t00577:p4
+  ], [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :target t00577:p2
   ], [
     a :Daughter.n.01 ;
     :target t00577:p3
-  ], [
-    a :Daughter.n.01 ;
-    :target t00577:p4
-  ], [
-    a :Mother.n.01
   ] .
 
 t00577:p2

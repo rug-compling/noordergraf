@@ -2,6 +2,23 @@
 
 tomb:t00013
   a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:48:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00013.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1901 ;
+      geo:long 6.5927
+    ] ;
+    :nd "+53.1901+006.5927"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen ;
+  :subject t00013:p1, t00013:p2, t00013:p3 ;
+  :sym [
+    a :Frond.n.01
+  ] ;
   :text """TODO: rustplaats
 yan
 anje smit
@@ -22,34 +39,17 @@ te sint annen
 overl. 9 febr. 1948
 te groningen
 e
-""" ;
-  :image [
-    dc:date "2019-09-25T16:48:54"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00013.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1901 ;
-      geo:long 6.5927
-    ] ;
-    :nd "+53.1901+006.5927"^^ll:
-  ] ;
-  :site site:gr9722SNgroningen ;
-  :subject t00013:p1, t00013:p2, t00013:p3 ;
-  :sym [
-    a :Frond.n.01
-  ] .
+""" .
 
 t00013:c1
   a :Village.n.02 ;
-  :name "GARNWERD" ;
-  :place place:Garnwerd2755726 .
+  :place place:Garnwerd2755726 ;
+  :text "TODO: GARNWERD" .
 
 t00013:c2
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00013:p1
   a :Female ;
@@ -123,8 +123,8 @@ t00013:p3
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "SINT-ANNEN" ;
-    :place place:SintAnnen2747294
+    :place place:SintAnnen2747294 ;
+    :text "TODO: SINT-ANNEN"
   ] ;
   :placeOfDeath t00013:c2 .
 

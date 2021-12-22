@@ -2,20 +2,6 @@
 
 tomb:t00861
   a :Tomb ;
-  :text """TODO: rostplaats
-var
-jaloudes
-geb 27 feb 18:52
-te zevenhuizen
-overl: 18 april 1954
-te veenoord
-en
-janna tort
-geb 14 jan 1858
-teste de leek
-overu 19 nov. 1938
-te veenodro
-""" ;
   :image [
     dc:date "2020-02-15T15:14:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,12 +15,26 @@ te veenodro
     :nd "+52.7193+006.8450"^^ll:
   ] ;
   :site site:dr7844TCveenoord ;
-  :subject t00861:p1, t00861:p2 .
+  :subject t00861:p1, t00861:p2 ;
+  :text """TODO: rostplaats
+var
+jaloudes
+geb 27 feb 18:52
+te zevenhuizen
+overl: 18 april 1954
+te veenoord
+en
+janna tort
+geb 14 jan 1858
+teste de leek
+overu 19 nov. 1938
+te veenodro
+""" .
 
 t00861:c2
   a :Village.n.02 ;
-  :name "VEENOORD" ;
-  :place place:Veenoord2745753 .
+  :place place:Veenoord2745753 ;
+  :text "TODO: VEENOORD" .
 
 t00861:p1
   a :Male ;
@@ -58,8 +58,8 @@ t00861:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "ZEVENHUIZEN" ;
-    :place place:Zevenhuizen2743926
+    :place place:Zevenhuizen2743926 ;
+    :text "TODO: ZEVENHUIZEN"
   ] ;
   :placeOfDeath t00861:c2 .
 
@@ -85,8 +85,8 @@ t00861:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "LEEK" ;
-    :place place:Leek2751834
+    :place place:Leek2751834 ;
+    :text "TODO: LEEK"
   ] ;
   :placeOfDeath t00861:c2 .
 

@@ -2,16 +2,6 @@
 
 tomb:t00620
   a :Tomb ;
-  :text """TODO: w. r. mulder
-borger.cie 5.2.1925
-haren 2.4.2015
-r. havinga
-veendam 6.6.1930
-borger. cie 11.5.1975
-p. j. strijbosch
-asten 20.3.1926
-haren 25.6.2008
-""" ;
   :image [
     dc:date "2019-11-23T10:02:44"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,17 +15,27 @@ haren 25.6.2008
     :nd "+53.1643+006.7541"^^ll:
   ] ;
   :site site:gr9601KAhoogezand ;
-  :subject t00620:p1, t00620:p2, t00620:p3 .
+  :subject t00620:p1, t00620:p2, t00620:p3 ;
+  :text """TODO: w. r. mulder
+borger.cie 5.2.1925
+haren 2.4.2015
+r. havinga
+veendam 6.6.1930
+borger. cie 11.5.1975
+p. j. strijbosch
+asten 20.3.1926
+haren 25.6.2008
+""" .
 
 t00620:c1
   a :Village.n.02 ;
-  :name "BORGERCOMPAGNIE" ;
-  :place place:Borgercompagnie2758618 .
+  :place place:Borgercompagnie2758618 ;
+  :text "TODO: BORGERCOMPAGNIE" .
 
 t00620:c2
   a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
+  :place place:Haren2754841 ;
+  :text "TODO: HAREN" .
 
 t00620:p1
   a :Person ;
@@ -82,8 +82,8 @@ t00620:p2
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "VEENDAM" ;
-    :place place:Veendam2745783
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
   ] ;
   :placeOfDeath t00620:c1 .
 
@@ -109,8 +109,8 @@ t00620:p3
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "ASTEN" ;
-    :place place:Asten2759621
+    :place place:Asten2759621 ;
+    :text "TODO: ASTEN"
   ] ;
   :placeOfDeath t00620:c2 .
 

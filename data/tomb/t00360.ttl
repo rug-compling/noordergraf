@@ -2,21 +2,6 @@
 
 tomb:t00360
   a :Tomb ;
-  :text """TODO: ma
-siusfplauti
-grihje jager
-gebele sinaarle
-6 april 1890.
-re
-ouvert daar
-19 febr. 1936
-geliefde
-echtgenocle vie
-van
-th, pigtersen
-rust zacrt
-lieve vrour en moeder
-""" ;
   :image [
     dc:date "2019-10-25T17:31:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -34,12 +19,27 @@ lieve vrour en moeder
   :subject t00360:p1, t00360:p2 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: ma
+siusfplauti
+grihje jager
+gebele sinaarle
+6 april 1890.
+re
+ouvert daar
+19 febr. 1936
+geliefde
+echtgenocle vie
+van
+th, pigtersen
+rust zacrt
+lieve vrour en moeder
+""" .
 
 t00360:c1
   a :Village.n.02 ;
-  :name "TYNAARLO" ;
-  :place place:Tynaarlo2746038 .
+  :place place:Tynaarlo2746038 ;
+  :text "TODO: TYNAARLO" .
 
 t00360:p1
   a :Female ;
@@ -64,13 +64,13 @@ t00360:p1
   :placeOfBirth t00360:c1 ;
   :placeOfDeath t00360:c1 ;
   :relation [
-    a :Spouse.n.01 ;
-    :target t00360:p2
-  ], [
     a :Wife.n.01 ;
     :target t00360:p2
   ], [
     a :Mother.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :target t00360:p2
   ] .
 
 t00360:p2

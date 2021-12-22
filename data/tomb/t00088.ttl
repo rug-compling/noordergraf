@@ -2,13 +2,6 @@
 
 tomb:t00088
   a :Tomb ;
-  :text """TODO: hier rust
-geertje groenewold
-* 25 juni 1862 te solwerd
-13 october 1941 te groningen
-wed. van
-pieter breedland.
-""" ;
   :image [
     dc:date "2019-09-24T15:17:53"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,7 +15,14 @@ pieter breedland.
     :nd "+53.2061+006.5730"^^ll:
   ] ;
   :site site:gr9725ACgroningen ;
-  :subject t00088:p1, t00088:p2 .
+  :subject t00088:p1, t00088:p2 ;
+  :text """TODO: hier rust
+geertje groenewold
+* 25 juni 1862 te solwerd
+13 october 1941 te groningen
+wed. van
+pieter breedland.
+""" .
 
 t00088:p1
   a :Female ;
@@ -46,13 +46,13 @@ t00088:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "SOLWERD" ;
-    :place place:Solwerd2747023
+    :place place:Solwerd2747023 ;
+    :text "TODO: SOLWERD"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation [
     a :Widow.n.01 ;

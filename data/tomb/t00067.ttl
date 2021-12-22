@@ -2,15 +2,6 @@
 
 tomb:t00067
   a :Tomb ;
-  :text """TODO: cheer rust
-onze lieve vrouw en moeder
-hinderika kalk
-*il. 3/84 te sappemeer
-* 6. 11.'39 te groningen
-echtg. van e. koster
-eerder van k. ratsema
-xt
-""" ;
   :image [
     dc:date "2019-09-25T16:11:53"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,7 +15,16 @@ xt
     :nd "+53.1910+006.5948"^^ll:
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00067:p1, t00067:p2, t00067:p3 .
+  :subject t00067:p1, t00067:p2, t00067:p3 ;
+  :text """TODO: cheer rust
+onze lieve vrouw en moeder
+hinderika kalk
+*il. 3/84 te sappemeer
+* 6. 11.'39 te groningen
+echtg. van e. koster
+eerder van k. ratsema
+xt
+""" .
 
 t00067:p1
   a :Female ;
@@ -48,13 +48,13 @@ t00067:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "SAPPEMEER" ;
-    :place place:Sappemeer2747758
+    :place place:Sappemeer2747758 ;
+    :text "TODO: SAPPEMEER"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation t00067:r1, [
     a :Husband.n.01 ;

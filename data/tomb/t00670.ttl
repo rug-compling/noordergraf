@@ -2,7 +2,25 @@
 
 tomb:t00670
   a :Tomb ;
-  :text """TODO: \u548c\u4f60
+  :image [
+    dc:date "2019-12-14T13:43:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00670.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0684 ;
+      geo:long 5.5225
+    ] ;
+    :nd "+53.0684+005.5225"^^ll:
+  ] ;
+  :ref t00670:v2 ;
+  :site site:fr8701DWbolsward ;
+  :subject t00670:p1, t00670:p2 ;
+  :sym [
+    a :WeepingWillow
+  ] ;
+  :text """TODO: 和你
 14
 (rustpimatske
 van onze geliefde
@@ -23,30 +41,12 @@ overl alhier
 10 juli 1941,
 hunne kinderen
 orense 14 v.13
-""" ;
-  :image [
-    dc:date "2019-12-14T13:43:55"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00670.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.0684 ;
-      geo:long 5.5225
-    ] ;
-    :nd "+53.0684+005.5225"^^ll:
-  ] ;
-  :ref t00670:v2 ;
-  :site site:fr8701DWbolsward ;
-  :subject t00670:p1, t00670:p2 ;
-  :sym [
-    a :WeepingWillow
-  ] .
+""" .
 
 t00670:c2
   a :City.n.01 ;
-  :name "BOLSWARD" ;
-  :place place:Bolsward2758682 .
+  :place place:Bolsward2758682 ;
+  :text "TODO: BOLSWARD" .
 
 t00670:p1
   a :Male ;
@@ -70,8 +70,8 @@ t00670:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "OOSTHEM" ;
-    :place place:Oosthem2749372
+    :place place:Oosthem2749372 ;
+    :text "TODO: OOSTHEM"
   ] ;
   :placeOfDeath t00670:c2 ;
   :relation [

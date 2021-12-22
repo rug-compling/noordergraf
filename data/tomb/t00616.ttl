@@ -2,6 +2,23 @@
 
 tomb:t00616
   a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:04:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00616.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1644 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1644+006.7541"^^ll:
+  ] ;
+  :site site:gr9601KAhoogezand ;
+  :subject t00616:p1, t00616:p2, t00616:p3 ;
+  :sym [
+    a :WeepingWillow
+  ] ;
   :text """TODO: 11
 rustplaats
 jan
@@ -25,29 +42,12 @@ bere? 29 mei 1906
 dennenoord
 de gehlgenoote van
 j.nijmand s.
-""" ;
-  :image [
-    dc:date "2019-11-23T10:04:24"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00616.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1644 ;
-      geo:long 6.7541
-    ] ;
-    :nd "+53.1644+006.7541"^^ll:
-  ] ;
-  :site site:gr9601KAhoogezand ;
-  :subject t00616:p1, t00616:p2, t00616:p3 ;
-  :sym [
-    a :WeepingWillow
-  ] .
+""" .
 
 t00616:c1
   a :Town.n.01 ;
-  :name "HOOGEZAND" ;
-  :place place:Hoogezand2753706 .
+  :place place:Hoogezand2753706 ;
+  :text "TODO: HOOGEZAND" .
 
 t00616:p1
   a :Female ;
@@ -126,13 +126,13 @@ t00616:p3
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "DENNENOORD" ;
-    :place place:Dennenoord2757197
+    :place place:Dennenoord2757197 ;
+    :text "TODO: DENNENOORD"
   ] ;
   :relation t00616:r3 .
 

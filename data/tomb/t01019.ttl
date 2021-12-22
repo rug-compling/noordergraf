@@ -2,6 +2,20 @@
 
 tomb:t01019
   a :Tomb ;
+  :image [
+    dc:date "2020-04-03T14:31:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t01019.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1911 ;
+      geo:long 6.5931
+    ] ;
+    :nd "+53.1911+006.5931"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen ;
+  :subject t01019:p1, t01019:p2 ;
   :text """TODO: rustplaats van
 geert jan drent
 geb.29 dec. 1876 te gron.
@@ -16,26 +30,12 @@ overl. 5 juni 1946 te gron.
 weduwe, van
 geert jan drent
 rom.5:1 en 2
-""" ;
-  :image [
-    dc:date "2020-04-03T14:31:14"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t01019.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1911 ;
-      geo:long 6.5931
-    ] ;
-    :nd "+53.1911+006.5931"^^ll:
-  ] ;
-  :site site:gr9722SNgroningen ;
-  :subject t01019:p1, t01019:p2 .
+""" .
 
 t01019:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t01019:p1
   a :Male ;

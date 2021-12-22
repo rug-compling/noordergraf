@@ -2,15 +2,6 @@
 
 tomb:t00479
   a :Tomb ;
-  :text """TODO: rustplaats
-hacopo giusto fazi
-tdh. 15 juni 1844 te cure
-prov. toscana (italie
-overl: te leejinaris:
-21. april 1919
-echtg. yga
-geeste janssen.
-""" ;
   :image [
     dc:date "2019-11-09T14:34:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,7 +18,16 @@ geeste janssen.
   :subject t00479:p1, t00479:p2 ;
   :sym [
     a :Cross.n.03
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+hacopo giusto fazi
+tdh. 15 juni 1844 te cure
+prov. toscana (italie
+overl: te leejinaris:
+21. april 1919
+echtg. yga
+geeste janssen.
+""" .
 
 t00479:p1
   a :Male ;
@@ -51,23 +51,23 @@ t00479:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "CUNE" ;
     :partOf [
       a :Province.n.01 ;
-      :name "TOSCANA" ;
       :partOf [
         a :Country.n.02 ;
-        :name "ITALIË" ;
-        :place place:Italie3175395
+        :place place:Italie3175395 ;
+        :text "TODO: ITALIË"
       ] ;
-      :place place:Toscane3165361
+      :place place:Toscane3165361 ;
+      :text "TODO: TOSCANA"
     ] ;
-    :place place:Cune8953542
+    :place place:Cune8953542 ;
+    :text "TODO: CUNE"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "LEEUWARDEN" ;
-    :place place:Leeuwarden2751792
+    :place place:Leeuwarden2751792 ;
+    :text "TODO: LEEUWARDEN"
   ] ;
   :relation [
     a :Spouse.n.01 ;

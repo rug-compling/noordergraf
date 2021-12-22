@@ -2,21 +2,6 @@
 
 tomb:t00081
   a :Tomb ;
-  :text """TODO: r.i.p.
-george w.padberg
-geb. te enkhuizen
-7 sept. 1882
-overl.te groningen
-27 nov. 1953
-echtgen. van
-geertruida
-m.m. scholte
-geb. te groningen
-25 maart 1891
-overl.aldaar
-23 aug. 1963
-4
-""" ;
   :image [
     dc:date "2019-09-25T11:03:50"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,12 +16,27 @@ overl.aldaar
   ] ;
   :quo "REQUIESCAT IN PACE"@lat ;
   :site site:gr9721AAgroningen ;
-  :subject t00081:p1, t00081:p2 .
+  :subject t00081:p1, t00081:p2 ;
+  :text """TODO: r.i.p.
+george w.padberg
+geb. te enkhuizen
+7 sept. 1882
+overl.te groningen
+27 nov. 1953
+echtgen. van
+geertruida
+m.m. scholte
+geb. te groningen
+25 maart 1891
+overl.aldaar
+23 aug. 1963
+4
+""" .
 
 t00081:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00081:p1
   a :Male ;
@@ -60,8 +60,8 @@ t00081:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "ENKHUIZEN" ;
-    :place place:Enkhuizen2756077
+    :place place:Enkhuizen2756077 ;
+    :text "TODO: ENKHUIZEN"
   ] ;
   :placeOfDeath t00081:c1 ;
   :relation [

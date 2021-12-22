@@ -2,22 +2,6 @@
 
 tomb:t00494
   a :Tomb ;
-  :text """TODO: rustplaats
-ex
-al
-van onze
-geliefde ouders
-gouke boonstra
-geb.te leeuwarden
-4. juli 1834,
-overl. aldaar
-18 april 1923.
-baukje albertsde jong
-geb. te sneek
-28 aus. 1842
-overlte leeuwarden
-9 april 1917
-""" ;
   :image [
     dc:date "2019-11-16T14:07:29"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -34,12 +18,28 @@ overlte leeuwarden
   :subject t00494:p1, t00494:p2 ;
   :sym [
     a :Frond.n.01
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+ex
+al
+van onze
+geliefde ouders
+gouke boonstra
+geb.te leeuwarden
+4. juli 1834,
+overl. aldaar
+18 april 1923.
+baukje albertsde jong
+geb. te sneek
+28 aus. 1842
+overlte leeuwarden
+9 april 1917
+""" .
 
 t00494:c1
   a :City.n.01 ;
-  :name "LEEUWARDEN" ;
-  :place place:Leeuwarden2751792 .
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
 
 t00494:p1
   a :Male ;
@@ -90,8 +90,8 @@ t00494:p2
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "SNEEK" ;
-    :place place:Sneek2747063
+    :place place:Sneek2747063 ;
+    :text "TODO: SNEEK"
   ] ;
   :placeOfDeath t00494:c1 ;
   :relation [

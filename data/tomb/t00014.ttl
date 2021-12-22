@@ -2,15 +2,6 @@
 
 tomb:t00014
   a :Tomb ;
-  :text """TODO: &
-hier rust
-onze lieve vader en zoon
-jan raatjes
-geboren 23.11.1909 te veendam
-gesneuveld 15.4.1945 te groningen
-honie
-hij stierf voor zijn vaderland
-""" ;
   :image [
     dc:date "2019-09-25T16:46:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -28,7 +19,16 @@ hij stierf voor zijn vaderland
   :subject t00014:p1 ;
   :sym [
     a :Frond.n.01
-  ] .
+  ] ;
+  :text """TODO: &
+hier rust
+onze lieve vader en zoon
+jan raatjes
+geboren 23.11.1909 te veendam
+gesneuveld 15.4.1945 te groningen
+honie
+hij stierf voor zijn vaderland
+""" .
 
 t00014:p1
   a :Male ;
@@ -52,13 +52,13 @@ t00014:p1
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "VEENDAM" ;
-    :place place:Veendam2745783
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation [
     a :Father.n.01

@@ -2,20 +2,6 @@
 
 tomb:t00546
   a :Tomb ;
-  :text """TODO: rustplaats van
-anna adol
-geb.te bareveld
-18 februari 1842
-overlte groningen
-15 november 1926.
-weduwe
-van
-martinus
-klugkist
-museet
-ke
-fde wetus
-""" ;
   :creator t00546:p3 ;
   :image [
     dc:date "2019-11-24T14:12:53"^^xsd:dateTime ;
@@ -37,7 +23,21 @@ fde wetus
     a :OliveBranch
   ], [
     a :Butterfly.n.01
-  ] .
+  ] ;
+  :text """TODO: rustplaats van
+anna adol
+geb.te bareveld
+18 februari 1842
+overlte groningen
+15 november 1926.
+weduwe
+van
+martinus
+klugkist
+museet
+ke
+fde wetus
+""" .
 
 t00546:p1
   a :Female ;
@@ -61,13 +61,13 @@ t00546:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "BAREVELD" ;
-    :place place:Bareveld2759424
+    :place place:Bareveld2759424 ;
+    :text "TODO: BAREVELD"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation [
     a :Widow.n.01 ;
@@ -84,5 +84,8 @@ t00546:p2
 
 t00546:p3
   a :Creator ;
-  :name "F. DE WEIJS" .
+  :name [
+    a :Name ;
+    :fullname "F. DE WEIJS"
+  ] .
 

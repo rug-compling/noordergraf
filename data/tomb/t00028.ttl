@@ -2,20 +2,6 @@
 
 tomb:t00028
   a :Tomb ;
-  :text """TODO: rus
-onze lieveve oud en midedere
-itrientje bierling
-6 febr 1883 te thesinge
-t. 29 juli 1936 te gron
-echtgem vamma siccama
-en
-onze lieve vader
-\"
-siccama
-19 juni 1876 teappingedan
-26. jan. 1952 te gron
-martinus albertus
-""" ;
   :image [
     dc:date "2019-09-25T16:18:19"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,12 +15,26 @@ martinus albertus
     :nd "+53.1909+006.5946"^^ll:
   ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00028:p1, t00028:p2 .
+  :subject t00028:p1, t00028:p2 ;
+  :text """TODO: rus
+onze lieveve oud en midedere
+itrientje bierling
+6 febr 1883 te thesinge
+t. 29 juli 1936 te gron
+echtgem vamma siccama
+en
+onze lieve vader
+\"
+siccama
+19 juni 1876 teappingedan
+26. jan. 1952 te gron
+martinus albertus
+""" .
 
 t00028:c1
   a :Village.n.02 ;
-  :name "THESINGE" ;
-  :place place:Thesinge2746361 .
+  :place place:Thesinge2746361 ;
+  :text "TODO: THESINGE" .
 
 t00028:p1
   a :Female ;
@@ -59,16 +59,16 @@ t00028:p1
   :placeOfBirth t00028:c1 ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation [
-    a :Wife.n.01 ;
-    :target t00028:p2
-  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
+    :target t00028:p2
+  ], [
+    a :Wife.n.01 ;
     :target t00028:p2
   ] .
 
@@ -94,8 +94,8 @@ t00028:p2
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "APPINGEDAM" ;
-    :place place:Appingedam2759687
+    :place place:Appingedam2759687 ;
+    :text "TODO: APPINGEDAM"
   ] ;
   :placeOfDeath t00028:c1 ;
   :relation [

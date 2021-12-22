@@ -2,23 +2,6 @@
 
 tomb:t00337
   a :Tomb ;
-  :text """TODO: rustplaats van
-jan vermeulen
-geliefde echt\u00f5enoot van
-a.westenberg
-gebite hoogeveen
-7 jan.1856
-overl.aldaar
-15 april 1916.
-van
-annigje
-westenberg
-geb. te meppel
-21 jan. 1860
-overl.te hoogeveen
-22 juli 1925.
-en
-""" ;
   :image [
     dc:date "2019-10-19T14:10:54"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -35,16 +18,33 @@ en
   :subject t00337:p1, t00337:p2 ;
   :sym [
     a :OakBranch
-  ] , [
+  ], [
     a :Butterfly.n.01
   ], [
     a :Ribbon.n.01
-  ] .
+  ] ;
+  :text """TODO: rustplaats van
+jan vermeulen
+geliefde echtõenoot van
+a.westenberg
+gebite hoogeveen
+7 jan.1856
+overl.aldaar
+15 april 1916.
+van
+annigje
+westenberg
+geb. te meppel
+21 jan. 1860
+overl.te hoogeveen
+22 juli 1925.
+en
+""" .
 
 t00337:c1
   a :Town.n.01 ;
-  :name "HOOGEVEEN" ;
-  :place place:Hoogeveen2753719 .
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
 
 t00337:p1
   a :Male ;
@@ -95,7 +95,8 @@ t00337:p2
   ] ;
   :placeOfBirth [
     a :City.n.01 ;
-    :name "MEPPEL" ;
-    :place place:Meppel2750947
+    :place place:Meppel2750947 ;
+    :text "TODO: MEPPEL"
   ] ;
   :placeOfDeath t00337:c1 .
+

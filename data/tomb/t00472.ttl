@@ -43,8 +43,8 @@ ps
 
 t00472:c1
   a :City.n.01 ;
-  :name "LEEUWARDEN" ;
-  :place place:Leeuwarden2751792 .
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
 
 t00472:p1
   a :Female ;
@@ -69,13 +69,13 @@ t00472:p1
   :placeOfBirth t00472:c1 ;
   :placeOfDeath t00472:c1 ;
   :relation [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :target t00472:p2
   ], [
     a :Wife.n.01 ;
     :target t00472:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00472:p2

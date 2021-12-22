@@ -2,6 +2,20 @@
 
 tomb:t01078
   a :Tomb ;
+  :image [
+    dc:date "2020-04-17T18:25:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t01078.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3808 ;
+      geo:long 6.8588
+    ] ;
+    :nd "+53.3808+006.8588"^^ll:
+  ] ;
+  :site site:gr9906PPbierum ;
+  :subject t01078:p1, t01078:p2 ;
   :text """TODO: rust
 tplaat
 pam
@@ -23,26 +37,12 @@ coetwold den
 ovend te zien
 der 8 oct 1894
 ehigenooten
-""" ;
-  :image [
-    dc:date "2020-04-17T18:25:26"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t01078.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.3808 ;
-      geo:long 6.8588
-    ] ;
-    :nd "+53.3808+006.8588"^^ll:
-  ] ;
-  :site site:gr9906PPbierum ;
-  :subject t01078:p1, t01078:p2 .
+""" .
 
 t01078:c2
   a :Village.n.02 ;
-  :name "BIERUM" ;
-  :place place:Bierum2758983 .
+  :place place:Bierum2758983 ;
+  :text "TODO: BIERUM" .
 
 t01078:p1
   a :Male ;
@@ -66,8 +66,8 @@ t01078:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "ZUIDBROEK" ;
-    :place place:Zuidbroek2743800
+    :place place:Zuidbroek2743800 ;
+    :text "TODO: ZUIDBROEK"
   ] ;
   :placeOfDeath t01078:c2 ;
   :relation [
@@ -97,8 +97,8 @@ t01078:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "OOSTWOLD" ;
-    :place place:Oostwold2749325
+    :place place:Oostwold2749325 ;
+    :text "TODO: OOSTWOLD"
   ] ;
   :placeOfDeath t01078:c2 ;
   :relation [

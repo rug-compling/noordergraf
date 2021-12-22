@@ -2,6 +2,20 @@
 
 tomb:t00132
   a :Tomb ;
+  :image [
+    dc:date "2019-10-01T09:54:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00132.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2062 ;
+      geo:long 6.5729
+    ] ;
+    :nd "+53.2062+006.5729"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen ;
+  :subject t00132:p1, t00132:p2, t00132:p3 ;
   :text """TODO: rustplaats
 van
 douwe hoeksema,
@@ -21,26 +35,12 @@ eerst wedw. van
 t. woldringh
 laatst wedw. van
 d.hoeksema
-""" ;
-  :image [
-    dc:date "2019-10-01T09:54:49"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00132.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2062 ;
-      geo:long 6.5729
-    ] ;
-    :nd "+53.2062+006.5729"^^ll:
-  ] ;
-  :site site:gr9725ACgroningen ;
-  :subject t00132:p1, t00132:p2, t00132:p3 .
+""" .
 
 t00132:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00132:p1
   a :Male ;
@@ -64,8 +64,8 @@ t00132:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "SAUWERD" ;
-    :place place:Sauwerd2747747
+    :place place:Sauwerd2747747 ;
+    :text "TODO: SAUWERD"
   ] ;
   :placeOfDeath t00132:c1 ;
   :relation [

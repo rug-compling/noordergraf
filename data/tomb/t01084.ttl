@@ -2,6 +2,20 @@
 
 tomb:t01084
   a :Tomb ;
+  :image [
+    dc:date "2020-06-09T17:19:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t01084.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1901 ;
+      geo:long 6.5944
+    ] ;
+    :nd "+53.1901+006.5944"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen ;
+  :subject t01084:p1, t01084:p3 ;
   :text """TODO: egbert roelf kleve
 ges, denpekela
 25 aug 1879
@@ -20,21 +34,7 @@ overe, te groningen
 naar 1936
 weduwe van
 everleve
-""" ;
-  :image [
-    dc:date "2020-06-09T17:19:23"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t01084.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1901 ;
-      geo:long 6.5944
-    ] ;
-    :nd "+53.1901+006.5944"^^ll:
-  ] ;
-  :site site:gr9722SNgroningen ;
-  :subject t01084:p1, t01084:p3 .
+""" .
 
 t01084:p1
   a :Male ;
@@ -58,13 +58,13 @@ t01084:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "NIEUWE PEKELA" ;
-    :place place:NieuwePekela2750272
+    :place place:NieuwePekela2750272 ;
+    :text "TODO: NIEUWE PEKELA"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "WARNSVELD" ;
-    :place place:Warnsveld2745003
+    :place place:Warnsveld2745003 ;
+    :text "TODO: WARNSVELD"
   ] ;
   :relation [
     a :Son.n.01 ;
@@ -101,13 +101,13 @@ t01084:p3
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "OUDE PEKELA" ;
-    :place place:OudePekela2749034
+    :place place:OudePekela2749034 ;
+    :text "TODO: OUDE PEKELA"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "GRONINGEN" ;
-    :place place:Groningen2755251
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] ;
   :relation [
     a :Widow.n.01 ;

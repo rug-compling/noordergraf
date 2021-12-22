@@ -2,6 +2,21 @@
 
 tomb:t00700
   a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:53:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00700.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7813 ;
+      geo:long 6.9010
+    ] ;
+    :nd "+52.7813+006.9010"^^ll:
+  ] ;
+  :quo "RUST ZACHT LIEVE MAN EN VADER"@nld, "RUST ZACHT LIEVE MOEDER"@nld ;
+  :site site:dr7811HEemmen ;
+  :subject t00700:p1, t00700:p2 ;
   :text """TODO: pusicais
 w
 hendrikalberts
@@ -28,27 +43,12 @@ tutt
 rust zacht lieve man
 en vader.
 file
-""" ;
-  :image [
-    dc:date "2019-12-21T13:53:13"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00700.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 52.7813 ;
-      geo:long 6.9010
-    ] ;
-    :nd "+52.7813+006.9010"^^ll:
-  ] ;
-  :quo "RUST ZACHT LIEVE MAN EN VADER"@nld, "RUST ZACHT LIEVE MOEDER"@nld ;
-  :site site:dr7811HEemmen ;
-  :subject t00700:p1, t00700:p2 .
+""" .
 
 t00700:c1
   a :Town.n.01 ;
-  :name "EMMEN" ;
-  :place place:Emmen2756136 .
+  :place place:Emmen2756136 ;
+  :text "TODO: EMMEN" .
 
 t00700:p1
   a :Male ;

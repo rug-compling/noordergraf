@@ -2,6 +2,14 @@
 
 tomb:t01090
   a :Tomb ;
+  :image [
+    dc:date "2020-09-11T17:47:02"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t01090.jpg
+  ] ;
+  :ref t01090:v1, "KOL 1"@nld ;
+  :subject t01090:p1, t01090:p2 ;
   :text """TODO: 1korisk
 jitske hay eman
 11.1914*16.8-1993
@@ -14,20 +22,12 @@ lammert knot
 bedum haren
 man van
 j.haveman
-""" ;
-  :image [
-    dc:date "2020-09-11T17:47:02"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t01090.jpg
-  ] ;
-  :ref t01090:v1, "KOL 1"@nld ;
-  :subject t01090:p1, t01090:p2 .
+""" .
 
 t01090:c2
   a :Town.n.01 ;
-  :name "HAREN" ;
-  :place place:Haren2754841 .
+  :place place:Haren2754841 ;
+  :text "TODO: HAREN" .
 
 t01090:p1
   a :Female ;
@@ -51,8 +51,8 @@ t01090:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "SMILDE" ;
-    :place place:Smilde2747076
+    :place place:Smilde2747076 ;
+    :text "TODO: SMILDE"
   ] ;
   :placeOfDeath t01090:c2 ;
   :relation [
@@ -82,8 +82,8 @@ t01090:p2
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "BEDUM" ;
-    :place place:Bedum2759356
+    :place place:Bedum2759356 ;
+    :text "TODO: BEDUM"
   ] ;
   :placeOfDeath t01090:c2 ;
   :relation [

@@ -2,22 +2,6 @@
 
 tomb:t01029
   a :Tomb ;
-  :text """TODO: sergdachtenis
-van hindriktje
-tewesvanhuizen
-geborenden it
-februari 1797
-le uithuinner
-joveruden den
-februarijers
-1808
-to
-birum
-weduwe van
-n.e.wolthuis. .
-wyccr.
-luuni
-""" ;
   :creator t01029:p3 ;
   :image [
     dc:date "2020-04-17T18:27:02"^^xsd:dateTime ;
@@ -37,12 +21,28 @@ luuni
     a :Butterfly.n.01
   ], [
     a :Sandglass.n.01
-  ] .
+  ] ;
+  :text """TODO: sergdachtenis
+van hindriktje
+tewesvanhuizen
+geborenden it
+februari 1797
+le uithuinner
+joveruden den
+februarijers
+1808
+to
+birum
+weduwe van
+n.e.wolthuis. .
+wyccr.
+luuni
+""" .
 
 t01029:c2
   a :Village.n.02 ;
-  :name "BIERUM" ;
-  :place place:Bierum2758983 .
+  :place place:Bierum2758983 ;
+  :text "TODO: BIERUM" .
 
 t01029:p1
   a :Female ;
@@ -66,8 +66,8 @@ t01029:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "UITHUIZEN" ;
-    :place place:Uithuizen2745970
+    :place place:Uithuizen2745970 ;
+    :text "TODO: UITHUIZEN"
   ] ;
   :placeOfDeath t01029:c2 ;
   :relation [
@@ -86,7 +86,10 @@ t01029:p2
 t01029:p3
   a :Creator ;
   :location t01029:c2 ;
-  :name "W. MEIJER" .
+  :name [
+    a :Name ;
+    :fullname "W. MEIJER"
+  ] .
 
 t01029:s3
   a :BirdWing .

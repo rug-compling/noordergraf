@@ -2,12 +2,6 @@
 
 tomb:t00807
   a :Tomb ;
-  :text """TODO: in liefdevolle herinnering aan
-maria huese - van elk
-riet)
-* 02-12-1942 te katwijk
-+ 08-06-2001 te hardenberg
-""" ;
   :image [
     dc:date "2020-01-18T13:00:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +20,13 @@ riet)
     a :Seed.n.02
   ], [
     a :Dandelion.n.01
-  ] .
+  ] ;
+  :text """TODO: in liefdevolle herinnering aan
+maria huese - van elk
+riet)
+* 02-12-1942 te katwijk
++ 08-06-2001 te hardenberg
+""" .
 
 t00807:p1
   a :Female ;
@@ -50,12 +50,12 @@ t00807:p1
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "KATWIJK" ;
-    :place place:KatwijkaandenRijn2753011
+    :place place:KatwijkaandenRijn2753011 ;
+    :text "TODO: KATWIJK"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "HARDENBERG" ;
-    :place place:Hardenberg2754861
+    :place place:Hardenberg2754861 ;
+    :text "TODO: HARDENBERG"
   ] .
 

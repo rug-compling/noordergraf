@@ -2,21 +2,6 @@
 
 tomb:t00364
   a :Tomb ;
-  :text """TODO: rustplaats van
-endrik blaaun
-seg te kropsholde
-5 april
-1852
-. ti
-overl te tinaarzoo z1 febr
-1927
-.
-.
-geliefde eghtgenoot van
-jantje speelman.
-pust zacht lieve man en vader
-21
-""" ;
   :image [
     dc:date "2019-10-25T17:28:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,7 +16,22 @@ pust zacht lieve man en vader
   ] ;
   :quo "RUST ZACHT LIEVE MAN EN VADER" ;
   :site site:dr9481CGvries ;
-  :subject t00364:p1, t00364:p2 .
+  :subject t00364:p1, t00364:p2 ;
+  :text """TODO: rustplaats van
+endrik blaaun
+seg te kropsholde
+5 april
+1852
+. ti
+overl te tinaarzoo z1 febr
+1927
+.
+.
+geliefde eghtgenoot van
+jantje speelman.
+pust zacht lieve man en vader
+21
+""" .
 
 t00364:p1
   a :Male ;
@@ -55,21 +55,21 @@ t00364:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "KROPSWOLDE" ;
-    :place place:Kropswolde2752217
+    :place place:Kropswolde2752217 ;
+    :text "TODO: KROPSWOLDE"
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "TYNAARLOO" ;
-    :place place:Tynaarlo2746038
+    :place place:Tynaarlo2746038 ;
+    :text "TODO: TYNAARLOO"
   ] ;
   :relation [
+    a :Husband.n.01 ;
+    :target t00364:p2
+  ], [
     a :Father.n.01
   ], [
     a :Spouse.n.01 ;
-    :target t00364:p2
-  ], [
-    a :Husband.n.01 ;
     :target t00364:p2
   ] .
 

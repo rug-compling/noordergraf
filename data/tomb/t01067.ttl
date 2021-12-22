@@ -2,19 +2,6 @@
 
 tomb:t01067
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-baukje
-w. veenstra
-geb.9 juli 1849
-te de wilp fr.)
-overl 6 aug 1933
-te de wilp gr
-wed van
-hendrik
-w. nijhof.
-rust zacht.
-""" ;
   :image [
     dc:date "2020-05-01T15:31:27"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -32,7 +19,20 @@ rust zacht.
   :subject t01067:p1, t01067:p2 ;
   :sym [
     a :WeepingWillow
-  ] .
+  ] ;
+  :text """TODO: rustplaats
+van
+baukje
+w. veenstra
+geb.9 juli 1849
+te de wilp fr.)
+overl 6 aug 1933
+te de wilp gr
+wed van
+hendrik
+w. nijhof.
+rust zacht.
+""" .
 
 t01067:p1
   a :Female ;
@@ -56,21 +56,19 @@ t01067:p1
   ] ;
   :placeOfBirth [
     a :Hamlet.n.03 ;
-    :name "De Wilp <Fr.>" ;
     :partOf [
       a :Province.n.01 ;
-      :name "FRIESLAND" ;
-      :place place:ProvincieFriesland2755812
+      :place place:ProvincieFriesland2755812 ;
+      :text "TODO: FRIESLAND"
     ] ;
     :place place:DeFrieseWilp12324227
   ] ;
   :placeOfDeath [
     a :Village.n.02 ;
-    :name "De Wilp <Gr.>" ;
     :partOf [
       a :Province.n.01 ;
-      :name "GRONINGEN" ;
-      :place place:ProvincieGroningen2755249
+      :place place:ProvincieGroningen2755249 ;
+      :text "TODO: GRONINGEN"
     ] ;
     :place place:DeWilp2756932
   ] ;

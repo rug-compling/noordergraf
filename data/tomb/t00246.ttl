@@ -2,17 +2,6 @@
 
 tomb:t00246
   a :Tomb ;
-  :text """TODO: \"17
-literal
-ter gedachtenis aan
-onze lieve zuster
-tante en oud tanie
-taatje meijer
-0711906
-te oudeschans (gra
-21.2.1968
-te apeldoorn gld)
-""" ;
   :image [
     dc:date "2019-10-11T17:24:17"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +15,18 @@ te apeldoorn gld)
     :nd "+53.1723+006.6063"^^ll:
   ] ;
   :site site:gr9751BBharen ;
-  :subject t00246:p1 .
+  :subject t00246:p1 ;
+  :text """TODO: \"17
+literal
+ter gedachtenis aan
+onze lieve zuster
+tante en oud tanie
+taatje meijer
+0711906
+te oudeschans (gra
+21.2.1968
+te apeldoorn gld)
+""" .
 
 t00246:p1
   a :Female ;
@@ -50,23 +50,23 @@ t00246:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "OUDESCHANS" ;
     :partOf [
       a :Province.n.01 ;
-      :name "GRONINGEN" ;
-      :place place:ProvincieGroningen2755249
+      :place place:ProvincieGroningen2755249 ;
+      :text "TODO: GRONINGEN"
     ] ;
-    :place place:Oudeschans2749010
+    :place place:Oudeschans2749010 ;
+    :text "TODO: OUDESCHANS"
   ] ;
   :placeOfDeath [
     a :City.n.01 ;
-    :name "APELDOORN" ;
     :partOf [
       a :Province.n.01 ;
-      :name "GELDERLAND" ;
-      :place place:ProvincieGelderland2755634
+      :place place:ProvincieGelderland2755634 ;
+      :text "TODO: GELDERLAND"
     ] ;
-    :place place:Apeldoorn2759706
+    :place place:Apeldoorn2759706 ;
+    :text "TODO: APELDOORN"
   ] ;
   :relation [
     a :Sister.n.01

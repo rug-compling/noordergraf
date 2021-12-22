@@ -2,18 +2,6 @@
 
 tomb:t00178
   a :Tomb ;
-  :text """TODO: hier rust
-onze lieve vrouw
-moeder en grootmoeder
-sjouktje pama
-geb. te niekerk 31 jan. 1868
-overl. te gron. 20 juli 1936 .
-echtgenoote yan
-lieuwe huizenga
-geb. te opende 17 jan. 1868
-overl. te gron. il. juli 1953
-ws
-""" ;
   :image [
     dc:date "2019-10-05T10:28:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -30,12 +18,24 @@ ws
   :subject t00178:p1, t00178:p2 ;
   :sym [
     a :Frond.n.01
-  ] .
+  ] ;
+  :text """TODO: hier rust
+onze lieve vrouw
+moeder en grootmoeder
+sjouktje pama
+geb. te niekerk 31 jan. 1868
+overl. te gron. 20 juli 1936 .
+echtgenoote yan
+lieuwe huizenga
+geb. te opende 17 jan. 1868
+overl. te gron. il. juli 1953
+ws
+""" .
 
 t00178:c1
   a :City.n.01 ;
-  :name "GRONINGEN" ;
-  :place place:Groningen2755251 .
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
 
 t00178:p1
   a :Female ;
@@ -59,8 +59,8 @@ t00178:p1
   ] ;
   :placeOfBirth [
     a :Village.n.02 ;
-    :name "NIEKERK" ;
-    :place place:Niekerk2750390
+    :place place:Niekerk2750390 ;
+    :text "TODO: NIEKERK"
   ] ;
   :placeOfDeath t00178:c1 ;
   :relation [
@@ -90,8 +90,8 @@ t00178:p2
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :name "OPENDE" ;
-    :place place:Opende2749302
+    :place place:Opende2749302 ;
+    :text "TODO: OPENDE"
   ] ;
   :placeOfDeath t00178:c1 .
 
