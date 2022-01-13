@@ -2,18 +2,6 @@
 
 tomb:t00029
   a :Tomb ;
-  :text """TODO: her rust
-onze tieve dochter zuster en tante
-maria heideveld
-25 dec 1915e 12 mei 1935
-en onze lieve nan en vader
-roelof heideveld
-10 nel 1876 2 appil 1946
-echtgen. van j.bos
-en onze lieve moeder
-johanna bos
-20 juni 1879 + 17 febr.1958
-""" ;
   :image [
     dc:date "2019-09-25T16:17:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -28,9 +16,21 @@ johanna bos
   ] ;
   :site site:gr9722SNgroningen ;
   :subject t00029:p1, t00029:p2, t00029:p3 ;
-  :sym [
-    a :Frond.n.01
-  ] .
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: her rust
+onze tieve dochter zuster en tante
+maria heideveld
+25 dec 1915e 12 mei 1935
+en onze lieve nan en vader
+roelof heideveld
+10 nel 1876 2 appil 1946
+echtgen. van j.bos
+en onze lieve moeder
+johanna bos
+20 juni 1879 + 17 febr.1958
+""" .
 
 t00029:p1
   a :Female ;
@@ -53,12 +53,12 @@ t00029:p1
     :text "TODO: Maria Heideveld"
   ] ;
   :relation [
-    a :Daughter.n.01 ;
-    :target t00029:p2, t00029:p3
-  ], [
     a :Sister.n.01
   ], [
     a :Aunt.n.01
+  ], [
+    a :Daughter.n.01 ;
+    :target t00029:p2, t00029:p3
   ] .
 
 t00029:p2

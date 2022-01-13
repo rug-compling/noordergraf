@@ -2,15 +2,6 @@
 
 tomb:t01063
   a :Tomb ;
-  :text """TODO: rustplaats
-van onze lieve ouders,gr,
-en overgr, ouders
-anne pupker
-geb. 24 jan. 1869 overl.io mel 1945,
-en
-trientje jagersma
-geb. 8 sept. 1873 overl 3 jan. 1962.
-""" ;
   :image [
     dc:date "2020-05-01T15:23:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,11 +16,20 @@ geb. 8 sept. 1873 overl 3 jan. 1962.
   ] ;
   :site site:gr9367PAde_wilp ;
   :subject t01063:p1, t01063:p2 ;
-  :sym [
-    a :Branch.n.02
+  :symbol [
+    a symbol:Branch
   ], [
-    a :Branch.n.02
-  ] .
+    a symbol:Branch
+  ] ;
+  :text """TODO: rustplaats
+van onze lieve ouders,gr,
+en overgr, ouders
+anne pupker
+geb. 24 jan. 1869 overl.io mel 1945,
+en
+trientje jagersma
+geb. 8 sept. 1873 overl 3 jan. 1962.
+""" .
 
 t01063:p1
   a :Male ;
@@ -52,11 +52,11 @@ t01063:p1
     :text "TODO: Anne Pijpker"
   ] ;
   :relation [
+    a :Grandparent.n.01
+  ], [
     a :Great_grandparent.n.01
   ], [
     a :Parent.n.01
-  ], [
-    a :Grandparent.n.01
   ] .
 
 t01063:p2

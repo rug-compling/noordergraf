@@ -2,16 +2,6 @@
 
 tomb:t00276
   a :Tomb ;
-  :text """TODO: rusu plaats var
-onze: lieve vroun
-en moeded
-roelofje de jong
-4.2 mrt. 1903
-1 i mrt. 1949
-je
-geliefde echtgenote
-zudland
-""" ;
   :image [
     dc:date "2019-10-14T10:53:37"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,9 +16,19 @@ zudland
   ] ;
   :site site:gr9723EWgroningen ;
   :subject t00276:p1, t00276:p2 ;
-  :sym [
-    a :Frond.n.01
-  ] .
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rusu plaats var
+onze: lieve vroun
+en moeded
+roelofje de jong
+4.2 mrt. 1903
+1 i mrt. 1949
+je
+geliefde echtgenote
+zudland
+""" .
 
 t00276:p1
   a :Female ;
@@ -51,12 +51,12 @@ t00276:p1
     :text "TODO: Roelofje de Jong"
   ] ;
   :relation [
-    a :Wife.n.01 ;
-    :target t00276:p2
-  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
+    :target t00276:p2
+  ], [
+    a :Wife.n.01 ;
     :target t00276:p2
   ] .
 

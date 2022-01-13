@@ -17,8 +17,8 @@ tomb:t00360
   :quo "RUST ZACHT LIEVE VROUW EN MOEDER" ;
   :site site:dr9481CGvries ;
   :subject t00360:p1, t00360:p2 ;
-  :sym [
-    a :WeepingWillow
+  :symbol [
+    a symbol:WeepingWillow
   ] ;
   :text """TODO: ma
 siusfplauti
@@ -64,12 +64,12 @@ t00360:p1
   :placeOfBirth t00360:c1 ;
   :placeOfDeath t00360:c1 ;
   :relation [
-    a :Wife.n.01 ;
-    :target t00360:p2
-  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
+    :target t00360:p2
+  ], [
+    a :Wife.n.01 ;
     :target t00360:p2
   ] .
 

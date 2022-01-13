@@ -2,20 +2,6 @@
 
 tomb:t00886
   a :Tomb ;
-  :text """TODO: fire
-hier-rust
-onze geliefde vrouw moeder
-en grootmoeder
-geertje de haan-geb smming
-geb 16. febr 1661. overl.ie jan 1957
-en onze geliefde vacer behuwdk
-groot en overgrootvader
--.
-roelof de haan
-geb. 8 aug. 1883 overl. i aug. 1958
-.
-fest zacht neve ouders
-""" ;
   :image [
     dc:date "2020-02-15T15:01:25"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,11 +17,25 @@ fest zacht neve ouders
   :quo "RUST ZACHT LIEVE OUDERS"@nld ;
   :site site:dr7844TCveenoord ;
   :subject t00886:p1, t00886:p2 ;
-  :sym [
-    a :Frond.n.01
+  :symbol [
+    a symbol:Frond
   ], [
-    a :Frond.n.01
-  ] .
+    a symbol:Frond
+  ] ;
+  :text """TODO: fire
+hier-rust
+onze geliefde vrouw moeder
+en grootmoeder
+geertje de haan-geb smming
+geb 16. febr 1661. overl.ie jan 1957
+en onze geliefde vacer behuwdk
+groot en overgrootvader
+-.
+roelof de haan
+geb. 8 aug. 1883 overl. i aug. 1958
+.
+fest zacht neve ouders
+""" .
 
 t00886:p1
   a :Female ;
@@ -58,12 +58,12 @@ t00886:p1
     :text "TODO: Geertje de Haan-Emming"
   ] ;
   :relation [
+    a :Mother.n.01
+  ], [
     a :Grandmother.n.01
   ], [
     a :Wife.n.01 ;
     :target t00886:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00886:p2

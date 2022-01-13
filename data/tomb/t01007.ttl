@@ -2,27 +2,14 @@
 
 tomb:t01007
   a :Tomb ;
-  :text """rustplaats
-van
-pieter andries
-hekstra
-geb. 16 febr. 1911,
-overl. 23 dec. 1918.
-
-s. hekstra
-a. hekstra-
-bakker
-en kinderen
-ps. 103:8.
-""" ;
-  :commemorator t01007:p2 , t01007:p3 , [
+  :commemorator t01007:p2, t01007:p3, [
     a :Person ;
     :quantity [
       a :Quantity
     ] ;
     :relation [
       a :Child.n.02 ;
-      :target t01007:p2 , t01007:p3
+      :target t01007:p2, t01007:p3
     ]
   ] ;
   :image [
@@ -39,13 +26,26 @@ ps. 103:8.
   ] ;
   :site site:gr9734ATgroningen ;
   :subject t01007:p1 ;
-  :sym [
-    a :Frond.n.01
+  :symbol [
+    a symbol:Frond
   ], [
-    a :Frond.n.01
+    a symbol:Frond
   ], [
-    a :Ribbon.n.01
-  ] .
+    a symbol:Ribbon
+  ] ;
+  :text """rustplaats
+van
+pieter andries
+hekstra
+geb. 16 febr. 1911,
+overl. 23 dec. 1918.
+
+s. hekstra
+a. hekstra-
+bakker
+en kinderen
+ps. 103:8.
+""" .
 
 t01007:p1
   a :Male ;

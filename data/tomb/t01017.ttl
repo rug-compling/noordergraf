@@ -2,6 +2,23 @@
 
 tomb:t01017
   a :Tomb ;
+  :image [
+    dc:date "2020-04-04T10:42:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t01017.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1751 ;
+      geo:long 7.0964
+    ] ;
+    :nd "+53.1751+007.0964"^^ll:
+  ] ;
+  :site site:gr9686RSbeerta ;
+  :subject t01017:p1, t01017:p2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
   :text """RUSTPLAATS
 VAN
 JAN KORNELIUS
@@ -17,24 +34,7 @@ Ouders geweest van
 WIEPKE, ETTIEN
 en CORNELIA JANS
 MULLER.
-""" ;
-  :image [
-    dc:date "2020-04-04T10:42:20"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t01017.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1751 ;
-      geo:long 7.0964
-    ] ;
-    :nd "+53.1751+007.0964"^^ll:
-  ] ;
-  :site site:gr9686RSbeerta ;
-  :subject t01017:p1, t01017:p2 ;
-  :sym [
-    a :WeepingWillow
-  ] .
+""" .
 
 t01017:p1
   a :Male ;
@@ -59,9 +59,9 @@ t01017:p1
   :relation [
     a :Spouse.n.01 ;
     :target t01017:p2
-  ] , [
+  ], [
     a :Parent ;
-    :target t01017:p3 , t01017:p4 , t01017:p5
+    :target t01017:p3, t01017:p4, t01017:p5
   ] .
 
 t01017:p2
@@ -73,7 +73,7 @@ t01017:p2
   ] ;
   :relation [
     a :Parent ;
-    :target t01017:p3 , t01017:p4 , t01017:p5
+    :target t01017:p3, t01017:p4, t01017:p5
   ] .
 
 t01017:p3

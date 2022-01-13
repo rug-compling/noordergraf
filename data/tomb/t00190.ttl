@@ -17,10 +17,10 @@ tomb:t00190
   :quo "RUST ZACHT" ;
   :site site:gr9722SNgroningen ;
   :subject t00190:p1, t00190:p2, t00190:p3, t00190:p4 ;
-  :sym [
-    a :Frond.n.01
+  :symbol [
+    a symbol:Frond
   ], [
-    a :Ribbon.n.01
+    a symbol:Ribbon
   ] ;
   :text """TODO: hier rust
 onze lieve vrouw
@@ -63,13 +63,13 @@ t00190:p1
     :text "hilke dieterman"
   ] ;
   :relation [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :target t00190:p2
   ], [
     a :Wife.n.01 ;
     :target t00190:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00190:p2

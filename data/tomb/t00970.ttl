@@ -2,20 +2,7 @@
 
 tomb:t00970
   a :Tomb ;
-  :text """rustplaats
-van onze geliefde
-man en vader
-HARMANNUS
-C.P. VENEMA
-geb. 19-7-1900
-overl. 11-11-1941
-eerst wedn. van
-L. ELEMA
-
-E. KOLSTEIN
-en kinderen
-""" ;
-  :commemorator t00970:p3, [    
+  :commemorator t00970:p3, [
     a :Person ;
     :quantity [
       a :Quantity
@@ -38,13 +25,26 @@ en kinderen
   ] ;
   :site site:gr9752CMharen ;
   :subject t00970:p1 ;
-  :sym [
-    a :Frond.n.01
+  :symbol [
+    a symbol:Frond
   ], [
-    a :Frond.n.01
+    a symbol:Frond
   ], [
-    a :Ribbon.n.01
-  ] .
+    a symbol:Ribbon
+  ] ;
+  :text """rustplaats
+van onze geliefde
+man en vader
+HARMANNUS
+C.P. VENEMA
+geb. 19-7-1900
+overl. 11-11-1941
+eerst wedn. van
+L. ELEMA
+
+E. KOLSTEIN
+en kinderen
+""" .
 
 t00970:p1
   a :Male ;

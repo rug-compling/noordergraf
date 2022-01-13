@@ -16,8 +16,8 @@ tomb:t00277
   ] ;
   :site site:gr9985SCoosternieland ;
   :subject t00277:p1, t00277:p2 ;
-  :sym [
-    a :Frond.n.02
+  :symbol [
+    a symbol:Frond
   ] ;
   :text """TODO: me
 n:.
@@ -66,12 +66,12 @@ t00277:p1
   ] ;
   :placeOfDeath t00277:c2 ;
   :relation [
+    a :Wife.n.01 ;
+    :target t00277:p2
+  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
-    :target t00277:p2
-  ], [
-    a :Wife.n.01 ;
     :target t00277:p2
   ] .
 

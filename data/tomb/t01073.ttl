@@ -2,15 +2,6 @@
 
 tomb:t01073
   a :Tomb ;
-  :text """TODO: rustplaats van
-onze lieve man en vader
-harmannus oorburg
-* 13 \u2013 12 \u2013 1901 + 15 \u2013 2-1961
-echtgen. van h.vegter
-en onze lieve moeder
-hinderkien vegter
-5422535 1911 * 2-4-1993
-""" ;
   :image [
     dc:date "2020-05-15T17:34:33"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,9 +16,18 @@ hinderkien vegter
   ] ;
   :site site:gr9752CMharen ;
   :subject t01073:p1, t01073:p2 ;
-  :sym [
-    a :Anchor.n.01
-  ] .
+  :symbol [
+    a symbol:Anchor
+  ] ;
+  :text """TODO: rustplaats van
+onze lieve man en vader
+harmannus oorburg
+* 13 – 12 – 1901 + 15 – 2-1961
+echtgen. van h.vegter
+en onze lieve moeder
+hinderkien vegter
+5422535 1911 * 2-4-1993
+""" .
 
 t01073:p1
   a :Male ;
@@ -50,12 +50,12 @@ t01073:p1
     :text "TODO: Harmannus Oorburg"
   ] ;
   :relation [
-    a :Husband.n.01 ;
-    :target t01073:p2
-  ], [
     a :Father.n.01
   ], [
     a :Spouse.n.01 ;
+    :target t01073:p2
+  ], [
+    a :Husband.n.01 ;
     :target t01073:p2
   ] .
 

@@ -1,11 +1,12 @@
-Invoer data in AllegroGraph waarbij alle bestaande data wordt gewist:
+Dit kan alleen op machine 'noordergraf' in deze directory
 
-```
-./concat | ./input
-```
 
-Bij melding over fout in regelnummer n:
+Invoer alle data in AllegroGraph (oude data wordt gewist):
 
-```
-./concat | ./show n
-```
+    ./concat | ./input
+
+
+Bij melding over fout in, bijvoorbeeld, regelnummer 12345:
+
+    ./concat | ./show 12345
+

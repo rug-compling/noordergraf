@@ -16,8 +16,8 @@ tomb:t00268
   ] ;
   :site site:gr9723EWgroningen ;
   :subject t00268:p1 ;
-  :sym [
-    a :Cross.n.03
+  :symbol [
+    a symbol:Cross
   ] ;
   :text """TODO: las
 este
@@ -56,14 +56,14 @@ t00268:p1
     :text "TODO: LAGELAND"
   ] ;
   :relation [
+    a :Son.n.01 ;
+    :target t00268:p2
+  ], [
     a :Brother.n.01 ;
     :target t00268:p2
   ], [
     a :Housemate.n.01 ;
     :target t00268:p3
-  ], [
-    a :Son.n.01 ;
-    :target t00268:p2
   ] .
 
 t00268:p2

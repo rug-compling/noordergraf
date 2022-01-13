@@ -2,22 +2,6 @@
 
 tomb:t00300
   a :Tomb ;
-  :text """hier rust
-Roelofje
-Remken.
-Geb. te HOOGEVEEN
-3 Oct. 1871,
-Overl. ALDAAR
-23 Febr. 1937.
-
-en
-onze lieve vader
-Jan Bork
-Geb. 31 Mei 1866,
-Ovl. 21 Febr. 1948.
-
-fam. BORK.
-""" ;
   :commemorator t00300:p3 ;
   :image [
     dc:date "2019-10-19T14:35:31"^^xsd:dateTime ;
@@ -33,9 +17,25 @@ fam. BORK.
   ] ;
   :site site:dr7907CHhoogeveen ;
   :subject t00300:p1, t00300:p2 ;
-  :sym [
-    a :Flower.n.01
-  ] .
+  :symbol [
+    a symbol:Flower
+  ] ;
+  :text """hier rust
+Roelofje
+Remken.
+Geb. te HOOGEVEEN
+3 Oct. 1871,
+Overl. ALDAAR
+23 Febr. 1937.
+
+en
+onze lieve vader
+Jan Bork
+Geb. 31 Mei 1866,
+Ovl. 21 Febr. 1948.
+
+fam. BORK.
+""" .
 
 t00300:p1
   a :Female ;
@@ -59,13 +59,13 @@ t00300:p1
   ] ;
   :placeOfBirth [
     a :Town.n.01 ;
-    :text "HOOGEVEEN" ;
-    :place place:Hoogeveen2753719
+    :place place:Hoogeveen2753719 ;
+    :text "HOOGEVEEN"
   ] ;
   :placeOfDeath [
     a :Town.n.01 ;
-    :text "ALDAAR" ;
-    :place place:Hoogeveen2753719
+    :place place:Hoogeveen2753719 ;
+    :text "ALDAAR"
   ] .
 
 t00300:p2

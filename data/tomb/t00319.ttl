@@ -16,10 +16,10 @@ tomb:t00319
   ] ;
   :site site:dr7907CHhoogeveen ;
   :subject t00319:p1, t00319:p2, t00319:p3 ;
-  :sym [
-    a :Frond.n.01
+  :symbol [
+    a symbol:Frond
   ], [
-    a :Ribbon.n.01
+    a symbol:Ribbon
   ] ;
   :text """TODO: griet
 jansen - slomp
@@ -53,13 +53,13 @@ t00319:p1
     :text "TODO: Griet Jansen-Slomp"
   ] ;
   :relation t00319:r1, [
+    a :Mother.n.01
+  ], [
     a :Grandmother.n.01
   ], [
     a :Spouse.n.01 ;
     :before t00319:r1 ;
     :target t00319:p3
-  ], [
-    a :Mother.n.01
   ] .
 
 t00319:p2

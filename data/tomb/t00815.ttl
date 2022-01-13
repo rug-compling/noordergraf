@@ -2,11 +2,6 @@
 
 tomb:t00815
   a :Tomb ;
-  :text """TODO: kostplaats
-vilka kw
-hdr
-everaris
-""" ;
   :image [
     dc:date "2020-02-01T12:44:49"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,15 +16,20 @@ everaris
   ] ;
   :site site:gr9741ACgroningen ;
   :subject t00815:p1 ;
-  :sym [
-    a :Moth.n.01
+  :symbol [
+    a symbol:Moth
   ], [
-    a :Cocoon.n.01
+    a symbol:Cocoon
   ], [
-    a :Entity.n.01
+    a symbol:Entity
   ], [
-    a :Caterpillar.n.01
-  ] .
+    a symbol:Caterpillar
+  ] ;
+  :text """TODO: kostplaats
+vilka kw
+hdr
+everaris
+""" .
 
 t00815:p1
   a :Male ;

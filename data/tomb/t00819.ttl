@@ -2,20 +2,6 @@
 
 tomb:t00819
   a :Tomb ;
-  :text """TODO: her dust
-onze leve vrouw en moeder
-hiektje huizinga
-geb: 18 sun 1883
-overl. 3 febr. 1945
-echtgeno te van d dekhuis
-eerder van t drehage
-opb 14:13
-en onze lieve vader
-pieter dijkhuis
-geb. 17 jan. 1884
-overl. 27. aug. 1959
-eerder wedn vans. oosterhuis
-""" ;
   :image [
     dc:date "2020-02-01T12:15:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -31,9 +17,23 @@ eerder wedn vans. oosterhuis
   :ref t00819:v1 ;
   :site site:gr9741ACgroningen ;
   :subject t00819:p1, t00819:p2, t00819:p3, t00819:p4 ;
-  :sym [
-    a :Frond.n.01
-  ] .
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: her dust
+onze leve vrouw en moeder
+hiektje huizinga
+geb: 18 sun 1883
+overl. 3 febr. 1945
+echtgeno te van d dekhuis
+eerder van t drehage
+opb 14:13
+en onze lieve vader
+pieter dijkhuis
+geb. 17 jan. 1884
+overl. 27. aug. 1959
+eerder wedn vans. oosterhuis
+""" .
 
 t00819:p1
   a :Female ;
@@ -56,15 +56,15 @@ t00819:p1
     :text "hiektje huizinga"
   ] ;
   :relation t00819:r3, [
-    a :Wife.n.01 ;
-    :target t00819:p2
-  ], [
     a :Mother.n.01 ;
     :target t00819:p5
   ], [
     a :Spouse.n.01 ;
     :before t00819:r3 ;
     :target t00819:p3
+  ], [
+    a :Wife.n.01 ;
+    :target t00819:p2
   ] .
 
 t00819:p2

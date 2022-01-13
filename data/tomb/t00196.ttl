@@ -2,16 +2,6 @@
 
 tomb:t00196
   a :Tomb ;
-  :text """TODO: rust zacht
-lieve vrouw em qeder
-tjitske de vries
-gel 29 febr.
-1884
-avenline933
-echiceroote
-van
-jan huisman
-""" ;
   :image [
     dc:date "2019-10-06T14:40:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,9 +16,19 @@ jan huisman
   ] ;
   :site site:gr9722SNgroningen ;
   :subject t00196:p1, t00196:p2 ;
-  :sym [
-    a :Frond.n.01
-  ] .
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rust zacht
+lieve vrouw em qeder
+tjitske de vries
+gel 29 febr.
+1884
+avenline933
+echiceroote
+van
+jan huisman
+""" .
 
 t00196:p1
   a :Female ;
@@ -51,12 +51,12 @@ t00196:p1
     :text "TODO: Tjitske de Vries"
   ] ;
   :relation [
-    a :Wife.n.01 ;
-    :target t00196:p2
-  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
+    :target t00196:p2
+  ], [
+    a :Wife.n.01 ;
     :target t00196:p2
   ] .
 

@@ -2,22 +2,6 @@
 
 tomb:t00693
   a :Tomb ;
-  :text """TODO: nec
-dare
-16 pay
-sijo
-nga
-veel fijne herinneringen
-verzachten onze smart
-voor goed uit ons midden
-maar altijd in ons hart
-n
-pen
-johannes franciscus brattinga
-* 5 januari 1937 + 2 maart 1995
-mea brattinga - venema
-kinderen en kleinkinderen
-""" ;
   :image [
     dc:date "2019-12-14T13:20:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -33,9 +17,25 @@ kinderen en kleinkinderen
   :quo "VEEL FIJNE HERINNERINGEN \\ VERZACHTEN ONZE SMART \\ VOOR GOED UIT ONS MIDDEN \\ MAAR ALTIJD IN ONS HART"@nld ;
   :site site:fr8701DWbolsward ;
   :subject t00693:p1 ;
-  :sym [
-    a :Sailboat.n.01
-  ] .
+  :symbol [
+    a symbol:Sailboat
+  ] ;
+  :text """TODO: nec
+dare
+16 pay
+sijo
+nga
+veel fijne herinneringen
+verzachten onze smart
+voor goed uit ons midden
+maar altijd in ons hart
+n
+pen
+johannes franciscus brattinga
+* 5 januari 1937 + 2 maart 1995
+mea brattinga - venema
+kinderen en kleinkinderen
+""" .
 
 t00693:p1
   a :Male ;
@@ -60,7 +60,7 @@ t00693:p1
   :relation [
     a :Parent ;
     :inferred true
-  ] , [
+  ], [
     a :Grandparent ;
     :inferred true
   ] .
@@ -74,12 +74,12 @@ t00693:p2
   ] ;
   :relation [
     a :Wife.n.01 ;
-    :target t00693:p1 ;
-    :inferred true
-  ] , [
+    :inferred true ;
+    :target t00693:p1
+  ], [
     a :Parent ;
     :inferred true
-  ] , [
+  ], [
     a :Grandparent ;
     :inferred true
   ] .

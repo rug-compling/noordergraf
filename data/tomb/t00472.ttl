@@ -16,10 +16,10 @@ tomb:t00472
   ] ;
   :site site:fr8915CPleeuwarden ;
   :subject t00472:p1, t00472:p2, t00472:p3, t00472:p4 ;
-  :sym [
-    a :Cross.n.03
+  :symbol [
+    a symbol:Cross
   ], [
-    a :Chrismon.n.01
+    a symbol:Chrismon
   ] ;
   :text """TODO: bid voor
 onzelieveyrouwta moeder
@@ -69,12 +69,12 @@ t00472:p1
   :placeOfBirth t00472:c1 ;
   :placeOfDeath t00472:c1 ;
   :relation [
+    a :Wife.n.01 ;
+    :target t00472:p2
+  ], [
     a :Mother.n.01
   ], [
     a :Spouse.n.01 ;
-    :target t00472:p2
-  ], [
-    a :Wife.n.01 ;
     :target t00472:p2
   ] .
 

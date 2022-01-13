@@ -2,10 +2,27 @@
 
 tomb:t00005
   a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:51:39"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00005.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1898 ;
+      geo:long 6.5930
+    ] ;
+    :nd "+53.1898+006.5930"^^ll:
+  ] ;
+  :site site:gr9722SNgroningen ;
+  :subject t00005:p1, t00005:p2, t00005:p3, t00005:p4, t00005:p5 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
   :text """TODO: hep rusten
 thussiena pieta
 2 juni 1959 jo nov. 1959
-\u039f
+Ο
 geliefd dochtertje van
 j. bron
 t. bron_oosterhuis
@@ -21,24 +38,7 @@ gps-ios 3
 os:145:ts
 ,
 njoh-
-""" ;
-  :image [
-    dc:date "2019-09-25T16:51:39"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00005.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.1898 ;
-      geo:long 6.5930
-    ] ;
-    :nd "+53.1898+006.5930"^^ll:
-  ] ;
-  :site site:gr9722SNgroningen ;
-  :subject t00005:p1, t00005:p2, t00005:p3, t00005:p4, t00005:p5 ;
-  :sym [
-    a :Frond.n.01
-  ] .
+""" .
 
 t00005:p1
   a :Female ;

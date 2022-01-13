@@ -2,15 +2,6 @@
 
 tomb:t00795
   a :Tomb ;
-  :text """TODO: 11.
-harm wienke
-sh
-x 7-7-1931
-\u2020 27-4-1994
-bertha wienke - de bl\u00e9court
-* 12-9-1930
-+ 9-3-2010
-""" ;
   :image [
     dc:date "2020-01-18T13:04:43"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,14 +16,23 @@ bertha wienke - de bl\u00e9court
   ] ;
   :site site:gr9791KEten_boer ;
   :subject t00795:p1, t00795:p2 ;
-  :sym [
-    a :Branch.n.02
-  ] , [
-    a :Pigeon.n.01 ;
+  :symbol [
+    a symbol:Branch
+  ], [
+    a symbol:Pigeon ;
     :comment "duif met tak in bek"
   ], [
-    a :Entity.n.01
-  ] .
+    a symbol:Entity
+  ] ;
+  :text """TODO: 11.
+harm wienke
+sh
+x 7-7-1931
+† 27-4-1994
+bertha wienke - de blécourt
+* 12-9-1930
++ 9-3-2010
+""" .
 
 t00795:p1
   a :Male ;
@@ -75,5 +75,4 @@ t00795:p2
     :fullname "Bertha Wienke-de Blécourt" ;
     :text "TODO: Bertha Wienke-de Blécourt"
   ] .
-
 
