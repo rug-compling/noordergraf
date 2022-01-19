@@ -394,9 +394,14 @@ Last-Modified: %s
       <h1>%s</h1>
 `, lastModified.Format(time.RFC1123), title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, title)
 
-	fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
+	if body != "" || prefix != "" {
+		fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
+	}
 
 	if strings.HasSuffix(uri, "/index") {
+		if strings.HasSuffix(uri, "/symbol/index") {
+			doSymbolIndex()
+		}
 	} else if strings.HasPrefix(uri, "/site/") {
 		fmt.Printf(`
 <div class="footer">
@@ -424,6 +429,28 @@ Bekijk <a href="/bin/place?t=pob&q=%s">geboorteplaatsen</a> |
 </html>
 `)
 
+}
+
+func doSymbolIndex() {
+	entries, err := ioutil.ReadDir("/net/noordergraf/www/sym")
+	if err != nil {
+		fmt.Print(html.EscapeString(err.Error()))
+		return
+	}
+	fmt.Println(`<div class="rows">`)
+	for _, entry := range entries {
+		name := entry.Name()
+		if strings.HasSuffix(name, "png") || strings.HasSuffix(name, "jpg") {
+			basename := html.EscapeString(name[:len(name)-4])
+			name = html.EscapeString(name)
+			fmt.Printf(`<figure>
+  <a href="/symbol/%s"><img src="/sym/%s" alt="%s"></a>
+  <figcaption>%s</figcaption>
+</figure>
+`, basename, name, basename, basename)
+		}
+	}
+	fmt.Println("</div>")
 }
 
 func getLL(s string, n int) string {

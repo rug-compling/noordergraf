@@ -31,6 +31,8 @@ Voor experts: [zoek met sparql](https://anonymous@noordergraf.rug.nl:10036/#/rep
 
 [Kaart met plaatsen van overlijden](mappod.html)
 
+[Overzicht van veelvoorkomende grafsymbolen](symbol/)
+
 Meer informatie: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/sites/noordergraf/)
 
 

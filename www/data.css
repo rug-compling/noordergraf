@@ -93,3 +93,24 @@ div.footer {
     padding-top: .6em;
     border-top: 2px dashed #c0c0c0;
 }
+
+div.rows {
+    display: flex;
+    max-with: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.rows figure {
+    flex-grow: 1;
+}
+
+div.rows img {
+    max-width: 12em;
+    max-height: 12em;
+}
+
+div.rows figcaption {
+    text-align: center;
+    max-width: 12em;
+}

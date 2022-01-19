@@ -9,7 +9,6 @@ case `pwd` in
     ;;
 esac
 
-set -e
 chgrp -chR noordergraf .
 find . -type d | xargs chmod -c g+s
 chmod -cR g=u .
