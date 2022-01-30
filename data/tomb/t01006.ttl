@@ -16,8 +16,9 @@ tomb:t01006
   ] ;
   :site site:gr9734ATgroningen ;
   :subject t01006:p1, t01006:p2 ;
-  :symbol t01006:s2, t01006:s3, [
-    a symbol:WingedHourglass
+  :symbol [
+    a symbol:WingedHourglass ;
+    :comment "vleermuisvleugel"
   ], [
     a symbol:Frond
   ], [
@@ -79,10 +80,3 @@ t01006:p2
     :fullname "Hinderk Tjapkes de Boer" ;
     :text "TODO: Hinderk Tjapkes de Boer"
   ] .
-
-t01006:s2
-  a :BatWing .
-
-t01006:s3
-  a :BirdWing .
-

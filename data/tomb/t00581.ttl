@@ -18,8 +18,9 @@ tomb:t00581
   :ref t00581:v1 ;
   :site site:gr9951STwinsum ;
   :subject t00581:p1 ;
-  :symbol t00581:s2, t00581:s3, [
-    a symbol:WingedHourglass
+  :symbol [
+    a symbol:WingedHourglass ;
+    :comment "vleermuisvleugel"
   ] ;
   :text """TODO: feogedachlenia
 ban
@@ -64,12 +65,6 @@ t00581:p2
     a :Name ;
     :fullname "K. MOES"
   ] .
-
-t00581:s2
-  a :BatWing .
-
-t00581:s3
-  a :BirdWing .
 
 t00581:v1
   a :Quote ;

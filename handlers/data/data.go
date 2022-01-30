@@ -432,7 +432,7 @@ Bekijk <a href="/bin/place?t=pob&q=%s">geboorteplaatsen</a> |
 }
 
 func doSymbolIndex() {
-	entries, err := ioutil.ReadDir("/net/noordergraf/www/sym")
+	entries, err := ioutil.ReadDir("/net/noordergraf/data/symbol")
 	if err != nil {
 		fmt.Print(html.EscapeString(err.Error()))
 		return
@@ -440,14 +440,13 @@ func doSymbolIndex() {
 	fmt.Println(`<div class="rows">`)
 	for _, entry := range entries {
 		name := entry.Name()
-		if strings.HasSuffix(name, "png") || strings.HasSuffix(name, "jpg") {
-			basename := html.EscapeString(name[:len(name)-4])
-			name = html.EscapeString(name)
+		if strings.HasSuffix(name, ".ttl") {
+			name := name[:len(name)-4]
 			fmt.Printf(`<figure>
-  <a href="/symbol/%s"><img src="/sym/%s" alt="%s"></a>
+  <p><a href="/symbol/%s"><img src="/sym/%s100.png" alt="%s" width="100" height="100"></a></p>
   <figcaption>%s</figcaption>
 </figure>
-`, basename, name, basename, basename)
+`, name, name, name, name)
 		}
 	}
 	fmt.Println("</div>")
