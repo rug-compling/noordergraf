@@ -57,3 +57,10 @@ Meer informatie: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/si
 [Gedenk-cultuur](https://gedenk-cultuur.nl/)
 
 [Rijksmonumenten.nl](https://rijksmonumenten.nl/)
+
+
+<address>
+
+Contact: [J. Bos](https://www.rug.nl/staff/johan.bos/)
+
+</address>
