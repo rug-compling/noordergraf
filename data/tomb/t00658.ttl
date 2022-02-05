@@ -2,56 +2,34 @@
 
 tomb:t00658
   a :Tomb ;
-  :subject t00658:p1, t00658:p2 ;
+  :image [
+    a :Photo ;
+    :file img:t00658.jpg ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dc:date "2022-01-30T12:16:15"^^xsd:dateTime ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1625 ;
+      geo:long 6.6144
+    ] ;
+    :nd "+53.1625+006.6144"^^ll:
+  ] ;
+  :site site:gr9752CMharen ;
+  :subject t00658:p1 ;
   :symbol [
-    a symbol:Anchor
-  ], [
-    a symbol:Cross
-  ], [
-    a symbol:Heart
-  ], [
-    a symbol:Sculpture
+    a symbol:Frond
   ] .
 
 t00658:p1
   a :Female ;
-  :age [
-    a :Age ;
-    :duration "P54Y5M28D"^^xsd:duration ;
-    :inferred true
-  ] ;
-  :dateOfBirth [
-    a :Date ;
-    :date "1863-04-16"^^xsd:date
-  ] ;
   :dateOfDeath [
     a :Date ;
-    :date "1917-10-14"^^xsd:date
+    :date "1955-01-25"^^xsd:date
   ] ;
   :name [
     a :Name ;
-    :fullname "Cornelia Maria Lampe-Michel" ;
-    :text "TODO: Cornelia Maria Lampe-Michel"
+    :fullname "H.G. KARSIES" ;
+    :text "TODO: "
   ] .
 
-t00658:p2
-  a :Male ;
-  :age [
-    a :Age ;
-    :duration "P75Y9M18D"^^xsd:duration ;
-    :inferred true
-  ] ;
-  :dateOfBirth [
-    a :Date ;
-    :date "1874-03-24"^^xsd:date
-  ] ;
-  :dateOfDeath [
-    a :Date ;
-    :date "1950-01-11"^^xsd:date
-  ] ;
-  :name [
-    a :Name ;
-    :fullname "Eduard Lampe" ;
-    :text "TODO: Eduard Lampe"
-  ] .
 
