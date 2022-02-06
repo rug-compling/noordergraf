@@ -12,4 +12,5 @@ agtool load \
        --base-uri https://noordergraf.rug.nl/ \
        noordergraf \
        - \
-  && python3 mkfti.py
+  && python3 mkfti.py \
+  && ../tools/mksymidx > ../www/sym/index.body

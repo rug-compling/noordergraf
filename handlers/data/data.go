@@ -400,7 +400,12 @@ Last-Modified: %s
 
 	if strings.HasSuffix(uri, "/index") {
 		if strings.HasSuffix(uri, "/symbol/index") {
-			doSymbolIndex()
+			b, err := ioutil.ReadFile("/net/noordergraf/www/sym/index.body")
+			if err != nil {
+				fmt.Printf("Error: %s\n", html.EscapeString(err.Error()))
+			} else {
+				fmt.Print(string(b))
+			}
 		}
 	} else if strings.HasPrefix(uri, "/site/") {
 		fmt.Printf(`
@@ -429,27 +434,6 @@ Bekijk <a href="/bin/place?t=pob&q=%s">geboorteplaatsen</a> |
 </html>
 `)
 
-}
-
-func doSymbolIndex() {
-	entries, err := ioutil.ReadDir("/net/noordergraf/data/symbol")
-	if err != nil {
-		fmt.Print(html.EscapeString(err.Error()))
-		return
-	}
-	fmt.Println(`<div class="rows">`)
-	for _, entry := range entries {
-		name := entry.Name()
-		if strings.HasSuffix(name, ".ttl") {
-			name := name[:len(name)-4]
-			fmt.Printf(`<figure>
-  <p><a href="/symbol/%s"><img src="/sym/%s100.png" alt="%s" width="100" height="100"></a></p>
-  <figcaption>%s</figcaption>
-</figure>
-`, name, name, name, name)
-		}
-	}
-	fmt.Println("</div>")
 }
 
 func getLL(s string, n int) string {
