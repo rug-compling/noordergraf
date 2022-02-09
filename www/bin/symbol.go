@@ -62,14 +62,12 @@ PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX symbol: <https://noordergraf.rug.nl/symbol/>
 SELECT DISTINCT ?tomb ?name {
   ?tomb :symbol / a symbol:` + symbol + ` .
-  ?tomb :subject ?p .
-  ?p a :Person .
-  ?p :name / :fullname ?name .
+  ?tomb :subject / :name / :fullname ?name .
 }
 ORDER BY ?name ?tomb
 `
 
-	request := "http://localhost:10035/repositories/noordergraf?infer=true&query=" + url.QueryEscape(query)
+	request := "http://localhost:10035/repositories/noordergraf?query=" + url.QueryEscape(query)
 	resp, err := http.Get(request)
 	if x(err, http.StatusInternalServerError) {
 		return
