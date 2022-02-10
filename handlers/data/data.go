@@ -400,7 +400,11 @@ Last-Modified: %s
 
 	if strings.HasSuffix(uri, "/index") {
 		if strings.HasSuffix(uri, "/symbol/index") {
-			b, err := ioutil.ReadFile("/net/noordergraf/www/sym/index.body")
+			lang := "eng"
+			if language == "nl" {
+				lang = "nld"
+			}
+			b, err := ioutil.ReadFile("/net/noordergraf/www/sym/index.body." + lang)
 			if err != nil {
 				fmt.Printf("Error: %s\n", html.EscapeString(err.Error()))
 			} else {

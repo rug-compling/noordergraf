@@ -5,9 +5,11 @@ import (
 
 	"encoding/xml"
 	"fmt"
+	"html"
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"os"
 	"strings"
 )
 
@@ -31,13 +33,20 @@ var (
 
 func main() {
 
+	lang := "eng"
+	if len(os.Args) > 1 && os.Args[1] == "-n" {
+		lang = "nld"
+	}
+
 	query := `
 PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX symbol: <https://noordergraf.rug.nl/symbol/>
-SELECT ?symbool (count(?symbool) as ?aantal) {
+SELECT ?symbool (count(?symbool) as ?aantal) ?text {
   ?a :symbol / a ?symbool .
+  ?symbool rdfs:comment ?text .
+  FILTER ( langMatches(lang(?text), "` + lang + `") )
 }
-GROUP BY ?symbool
+GROUP BY ?symbool ?text
 ORDER BY ?symbool
 `
 
@@ -59,20 +68,22 @@ ORDER BY ?symbool
 	fmt.Println(`<div class="rows">`)
 
 	for _, result := range sparql.Results {
-		var name, count string
+		var name, title, count string
 		for _, binding := range result.Bindings {
 			if binding.Name == "symbool" {
 				name = binding.URI
 				name = name[strings.LastIndex(name, "/")+1:]
 			} else if binding.Name == "aantal" {
 				count = binding.Literal
+			} else if binding.Name == "text" {
+				title = html.EscapeString(binding.Literal)
 			}
 		}
 		fmt.Printf(`<figure>
-  <p><a href="/symbol/%s"><img src="/sym/%s100.png" alt="%s" width="100" height="100"></a></p>
+  <p><a href="/symbol/%s"><img src="/sym/%s100.png" alt="%s" title="%s" width="100" height="100"></a></p>
   <figcaption>%s<br>%s</figcaption>
 </figure>
-`, name, name, name, name, count)
+`, name, name, title, title, name, count)
 	}
 
 	fmt.Println(`</div>`)
