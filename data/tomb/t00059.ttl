@@ -2,19 +2,6 @@
 
 tomb:t00059
   a :Tomb ;
-  :text """TODO: tit
-in christus ontslapen
-mijn innig geliefde man en
-onze zorgzame vader en opa
-meint zuidersma
-181-12-1919 to 5-7-1995
-en onze
-zorgzame moeder en oma
-annie aafke
-zuidersma- stulp
-*127-6-1919 it 7-5-2011
-ps. 121 1 (ob.)
-""" ;
   :image [
     dc:date "2019-09-27T17:38:04"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,7 +14,7 @@ ps. 121 1 (ob.)
     ] ;
     :nd "+53.1634+006.6138"^^ll:
   ] ;
-  :ref [
+  :quote [
     a :Quote ;
     :reference [
       a :BibleReference ;
@@ -39,7 +26,20 @@ ps. 121 1 (ob.)
     :text "ps. 121:1 (o.b.)"
   ] ;
   :site site:gr9752CMharen ;
-  :subject t00059:p1, t00059:p2 .
+  :subject t00059:p1, t00059:p2 ;
+  :text """TODO: tit
+in christus ontslapen
+mijn innig geliefde man en
+onze zorgzame vader en opa
+meint zuidersma
+181-12-1919 to 5-7-1995
+en onze
+zorgzame moeder en oma
+annie aafke
+zuidersma- stulp
+*127-6-1919 it 7-5-2011
+ps. 121 1 (ob.)
+""" .
 
 t00059:p1
   a :Male ;
@@ -62,12 +62,12 @@ t00059:p1
     :text "TODO: Meint Zuidersma"
   ] ;
   :relation [
+    a :Grandfather.n.01
+  ], [
     a :Husband.n.01 ;
     :target t00059:p2
   ], [
     a :Father.n.01
-  ], [
-    a :Grandfather.n.01
   ] .
 
 t00059:p2

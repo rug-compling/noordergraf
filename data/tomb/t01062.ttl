@@ -14,7 +14,10 @@ tomb:t01062
     ] ;
     :nd "+53.1231+006.2513"^^ll:
   ] ;
-  :quo "SLAAP ZACHT LIEVE MOEDER."@nld ;
+  :quote [
+    a :Quote ;
+    :text "SLAAP ZACHT LIEVE MOEDER."@nld
+  ] ;
   :site site:gr9367PAde_wilp ;
   :subject t01062:p1, t01062:p2 ;
   :symbol [
@@ -62,10 +65,10 @@ t01062:p1
   :placeOfBirth t01062:c1 ;
   :placeOfDeath t01062:c1 ;
   :relation [
+    a :Mother.n.01
+  ], [
     a :Widow.n.01 ;
     :target t01062:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t01062:p2

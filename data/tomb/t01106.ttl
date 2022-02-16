@@ -14,7 +14,10 @@ tomb:t01106
     ] ;
     :nd "+53.2627+006.3139"^^ll:
   ] ;
-  :quo "IN JEZUS ONTSLAPEN"@nld ;
+  :quote [
+    a :Quote ;
+    :text "IN JEZUS ONTSLAPEN"@nld
+  ] ;
   :site site:gr9843AGgrijpskerk ;
   :subject t01106:p1 .
 
@@ -49,10 +52,10 @@ t01106:p1
     :text "TODO: GRIJPSKERK"
   ] ;
   :relation [
-    a :Mother.n.01
-  ], [
     a :Widow.n.01 ;
     :target t01106:p2
+  ], [
+    a :Mother.n.01
   ] .
 
 t01106:p2

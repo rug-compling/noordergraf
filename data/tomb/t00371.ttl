@@ -14,7 +14,10 @@ tomb:t00371
     ] ;
     :nd "+53.0792+006.5716"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE BROER EN OOM" ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE BROER EN OOM"
+  ] ;
   :site site:dr9481CGvries ;
   :subject t00371:p1 ;
   :symbol [
@@ -60,8 +63,8 @@ t00371:p1
   :placeOfBirth t00371:c1 ;
   :placeOfDeath t00371:c1 ;
   :relation [
-    a :Brother.n.01
-  ], [
     a :Uncle.n.01
+  ], [
+    a :Brother.n.01
   ] .
 

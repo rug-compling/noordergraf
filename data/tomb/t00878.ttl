@@ -14,7 +14,10 @@ tomb:t00878
     ] ;
     :nd "+52.7195+006.8467"^^ll:
   ] ;
-  :quo "RUST ZACHT"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
   :site site:dr7844TCveenoord ;
   :subject t00878:p1, t00878:p2 ;
   :symbol [
@@ -50,11 +53,11 @@ t00878:p1
     :text "TODO: Jantina Freriks"
   ] ;
   :relation [
-    a :Wife.n.01 ;
-    :target t00878:p2
-  ], [
     a :Mother.n.01 ;
     :target t00878:p3
+  ], [
+    a :Wife.n.01 ;
+    :target t00878:p2
   ] .
 
 t00878:p2

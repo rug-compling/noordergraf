@@ -14,7 +14,10 @@ tomb:t00572
     ] ;
     :nd "+53.1046+006.8741"^^ll:
   ] ;
-  :quo "RUST IN VREDE" ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"
+  ] ;
   :site site:gr9641ANveendam ;
   :subject t00572:p1, t00572:p2, t00572:p3 ;
   :symbol [
@@ -58,10 +61,10 @@ t00572:p1
   ] ;
   :relation [
     a :Daughter.n.01 ;
-    :target t00572:p2
+    :target t00572:p3
   ], [
     a :Daughter.n.01 ;
-    :target t00572:p3
+    :target t00572:p2
   ] .
 
 t00572:p2

@@ -14,7 +14,7 @@ tomb:t00527
     ] ;
     :nd "+53.1650+006.7532"^^ll:
   ] ;
-  :ref t00527:v1 ;
+  :quote t00527:v1 ;
   :site site:gr9601KAhoogezand ;
   :subject t00527:p1, t00527:p2 ;
   :symbol [
@@ -52,14 +52,14 @@ t00527:p1
     :text "TODO: Roelf Sjoerd van Dijk"
   ] ;
   :relation [
-    a :Father.n.01 ;
-    :target t00527:p3
-  ], [
     a :Grandfather.n.01 ;
     :target t00527:p3
   ], [
     a :Husband.n.01 ;
     :target t00527:p2
+  ], [
+    a :Father.n.01 ;
+    :target t00527:p3
   ] .
 
 t00527:p2

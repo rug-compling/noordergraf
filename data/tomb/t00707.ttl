@@ -2,15 +2,6 @@
 
 tomb:t00707
   a :Tomb ;
-  :text """TODO: ter gedachtenis aan
-sutse romkes
-geb. 30 nov. 1875
-ovl. 2 maart 1920
-2
-echtgenoot van
-a. visser
-neem de wereld geef mu jezus
-""" ;
   :image [
     dc:date "2019-12-21T13:48:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,9 +14,21 @@ neem de wereld geef mu jezus
     ] ;
     :nd "+52.7817+006.9009"^^ll:
   ] ;
-  :quo "NEEM DE WERELD GEEF MIJ JEZUS"@nld ;
+  :quote [
+    a :Quote ;
+    :text "NEEM DE WERELD GEEF MIJ JEZUS"@nld
+  ] ;
   :site site:dr7811HEemmen ;
-  :subject t00707:p1, t00707:p2 .
+  :subject t00707:p1, t00707:p2 ;
+  :text """TODO: ter gedachtenis aan
+sutse romkes
+geb. 30 nov. 1875
+ovl. 2 maart 1920
+2
+echtgenoot van
+a. visser
+neem de wereld geef mu jezus
+""" .
 
 t00707:p1
   a :Male ;

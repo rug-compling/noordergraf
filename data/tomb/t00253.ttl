@@ -2,6 +2,20 @@
 
 tomb:t00253
   a :Tomb ;
+  :image [
+    dc:date "2019-10-10T09:41:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:t00253.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2054 ;
+      geo:long 6.5723
+    ] ;
+    :nd "+53.2054+006.5723"^^ll:
+  ] ;
+  :site site:gr9725ACgroningen ;
+  :subject t00253:p1, t00253:p2, t00253:p3, t00253:p4, t00253:p5 ;
   :text """TODO: rustplaats van
 onze
 lieve zuster ouders en-grootouders
@@ -24,21 +38,7 @@ angenietje
 * 26-7.1856 13-5. 1936
 +
 1 joh: 14.2
-""" ;
-  :image [
-    dc:date "2019-10-10T09:41:50"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:t00253.jpg ;
-    :geo [
-      a geo:Point ;
-      geo:lat 53.2054 ;
-      geo:long 6.5723
-    ] ;
-    :nd "+53.2054+006.5723"^^ll:
-  ] ;
-  :site site:gr9725ACgroningen ;
-  :subject t00253:p1, t00253:p2, t00253:p3, t00253:p4, t00253:p5 .
+""" .
 
 t00253:p1
   a :Female ;
@@ -60,7 +60,7 @@ t00253:p1
     :fullname "Angenietje Keizer" ;
     :text "TODO: Angenietje Keizer"
   ] ;
-  :ref [
+  :quote [
     a :Quote ;
     :reference [
       a :BibleReference ;
@@ -94,7 +94,7 @@ t00253:p2
     :fullname "Grietje van der Zweep" ;
     :text "TODO: Grietje van der Zweep"
   ] ;
-  :ref [
+  :quote [
     a :Quote ;
     :reference [
       a :BibleReference ;
@@ -128,7 +128,7 @@ t00253:p3
     :fullname "Hendrik Keizer" ;
     :text "TODO: Hendrik Keizer"
   ] ;
-  :ref [
+  :quote [
     a :Quote ;
     :reference [
       a :BibleReference ;
@@ -161,7 +161,7 @@ t00253:p4
     :fullname "Jacob van der Zweep" ;
     :text "TODO: Jacob van der Zweep"
   ] ;
-  :ref [
+  :quote [
     a :Quote ;
     :reference [
       a :BibleReference ;
@@ -195,7 +195,7 @@ t00253:p5
     :fullname "Angenietje Reichenbach" ;
     :text "TODO: Angenietje Reichenbach"
   ] ;
-  :ref [
+  :quote [
     a :Quote ;
     :reference [
       a :BibleReference ;

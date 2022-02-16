@@ -14,7 +14,10 @@ tomb:t00108
     ] ;
     :nd "+53.1905+006.5925"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE OUDERS" ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
   :site site:gr9722SNgroningen ;
   :subject t00108:p1, t00108:p2 ;
   :symbol [
@@ -71,10 +74,10 @@ t00108:p1
   ] ;
   :placeOfDeath t00108:c1 ;
   :relation [
+    a :Mother.n.01
+  ], [
     a :Wife.n.01 ;
     :target t00108:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00108:p2

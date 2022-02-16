@@ -2,15 +2,6 @@
 
 tomb:t00158
   a :Tomb ;
-  :text """TODO: rus fplaats .
-van onze lieve ouders
-jan schaap
-* 5 juni 1896 + 26 april 1941
-ene
-arendina venema
-23 mei 1862 - 5 sept. 1954
-rust in vrede
-""" ;
   :image [
     dc:date "2019-10-02T10:22:11"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,9 +14,21 @@ rust in vrede
     ] ;
     :nd "+53.2060+006.5699"^^ll:
   ] ;
-  :quo "RUST IN VREDE" ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"
+  ] ;
   :site site:gr9725ACgroningen ;
-  :subject t00158:p1, t00158:p3 .
+  :subject t00158:p1, t00158:p3 ;
+  :text """TODO: rus fplaats .
+van onze lieve ouders
+jan schaap
+* 5 juni 1896 + 26 april 1941
+ene
+arendina venema
+23 mei 1862 - 5 sept. 1954
+rust in vrede
+""" .
 
 t00158:p1
   a :Male ;

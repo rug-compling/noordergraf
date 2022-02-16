@@ -2,15 +2,6 @@
 
 tomb:t00844
   a :Tomb ;
-  :text """TODO: 0
-hier rust
-onze geliefde zuster,
-schoonzuster en tante
-hiltje wels
-21-7-1901
-t 12-10-1978
-rust zacht hil
-""" ;
   :image [
     dc:date "2020-02-20T14:41:46"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -23,9 +14,21 @@ rust zacht hil
     ] ;
     :nd "+53.2955+005.0653"^^ll:
   ] ;
-  :quo "RUST ZACHT HIL"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT HIL"@nld
+  ] ;
   :site site:fr8899AWoost_vlieland ;
-  :subject t00844:p1 .
+  :subject t00844:p1 ;
+  :text """TODO: 0
+hier rust
+onze geliefde zuster,
+schoonzuster en tante
+hiltje wels
+21-7-1901
+t 12-10-1978
+rust zacht hil
+""" .
 
 t00844:p1
   a :Female ;
@@ -48,10 +51,10 @@ t00844:p1
     :text "hil", "hiltje wels"
   ] ;
   :relation [
+    a :Aunt.n.01
+  ], [
     a :Sister.n.01
   ], [
     a :Sister-in-law.n.01
-  ], [
-    a :Aunt.n.01
   ] .
 

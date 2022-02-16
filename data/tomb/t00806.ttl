@@ -2,14 +2,6 @@
 
 tomb:t00806
   a :Tomb ;
-  :text """TODO: ter gedachtenis aan
-jacob vink
-+ 5 april 1922
-+ 3 juni 1998
-wees mij genadig here. want
-tot u roep ik de ganse dag.
-psalm 86
-""" ;
   :image [
     dc:date "2020-01-18T13:01:18"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,8 +14,10 @@ psalm 86
     ] ;
     :nd "+53.2771+006.6942"^^ll:
   ] ;
-  :quo "WEES MIJ GENADIG HERE WANT \\ TOT U ROEP IK DE GANSE DAG"@nld ;
-  :ref [
+  :quote [
+    a :Quote ;
+    :text "WEES MIJ GENADIG HERE WANT \\ TOT U ROEP IK DE GANSE DAG"@nld
+  ], [
     a :Quote ;
     :reference [
       a :BibleReference ;
@@ -33,7 +27,15 @@ psalm 86
     :text "Psalm 86"@nld
   ] ;
   :site site:gr9791KEten_boer ;
-  :subject t00806:p1 .
+  :subject t00806:p1 ;
+  :text """TODO: ter gedachtenis aan
+jacob vink
++ 5 april 1922
++ 3 juni 1998
+wees mij genadig here. want
+tot u roep ik de ganse dag.
+psalm 86
+""" .
 
 t00806:p1
   a :Male ;

@@ -14,7 +14,10 @@ tomb:t00834
     ] ;
     :nd "+52.7763+006.8047"^^ll:
   ] ;
-  :quo "RUST ZACHT GELIEFDE ZOON EN BROEDER"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT GELIEFDE ZOON EN BROEDER"@nld
+  ] ;
   :site site:dr7841CDsleen ;
   :subject t00834:p1 ;
   :symbol [
@@ -65,10 +68,10 @@ t00834:p1
   :placeOfBirth t00834:c1 ;
   :placeOfDeath t00834:c1 ;
   :relation [
+    a :Brother.n.01
+  ], [
     a :Son.n.01 ;
     :target t00834:p2, t00834:p3
-  ], [
-    a :Brother.n.01
   ] .
 
 t00834:p2

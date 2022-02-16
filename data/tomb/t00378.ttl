@@ -14,7 +14,10 @@ tomb:t00378
     ] ;
     :nd "+53.0793+006.5727"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE OUDERS" ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
   :site site:dr9481CGvries ;
   :subject t00378:p1, t00378:p2 ;
   :symbol [
@@ -52,10 +55,10 @@ t00378:p1
     :text "TODO: Evelina Veendijk"
   ] ;
   :relation [
+    a :Parent.n.01
+  ], [
     a :Spouse.n.01 ;
     :target t00378:p2
-  ], [
-    a :Parent.n.01
   ] .
 
 t00378:p2

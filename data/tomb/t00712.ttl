@@ -2,11 +2,6 @@
 
 tomb:t00712
   a :Tomb ;
-  :text """TODO: in loving memory
-12-08-1936
-alice bos
-13-01-2004
-""" ;
   :image [
     dc:date "2019-12-21T13:35:13"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -19,9 +14,17 @@ alice bos
     ] ;
     :nd "+52.7808+006.9005"^^ll:
   ] ;
-  :quo "IN LOVING MEMORY"@eng ;
+  :quote [
+    a :Quote ;
+    :text "IN LOVING MEMORY"@eng
+  ] ;
   :site site:dr7811HEemmen ;
-  :subject t00712:p1 .
+  :subject t00712:p1 ;
+  :text """TODO: in loving memory
+12-08-1936
+alice bos
+13-01-2004
+""" .
 
 t00712:p1
   a :Female ;

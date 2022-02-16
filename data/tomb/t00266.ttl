@@ -2,14 +2,6 @@
 
 tomb:t00266
   a :Tomb ;
-  :text """TODO: rustplaats van
-onze lieve man en vader
-jannes blaauw
-110.4.1907 + l1.1965
-echtgen. van
-jantje wolf
-rust zacht
-""" ;
   :image [
     dc:date "2019-10-14T11:02:10"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,9 +14,20 @@ rust zacht
     ] ;
     :nd "+53.2227+006.6380"^^ll:
   ] ;
-  :quo "RUST ZACHT" ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
   :site site:gr9723EWgroningen ;
-  :subject t00266:p1, t00266:p2 .
+  :subject t00266:p1, t00266:p2 ;
+  :text """TODO: rustplaats van
+onze lieve man en vader
+jannes blaauw
+110.4.1907 + l1.1965
+echtgen. van
+jantje wolf
+rust zacht
+""" .
 
 t00266:p1
   a :Male ;
@@ -47,13 +50,13 @@ t00266:p1
     :text "TODO: Jannes Blaauw"
   ] ;
   :relation [
+    a :Spouse.n.01 ;
+    :target t00266:p2
+  ], [
     a :Husband.n.01 ;
     :target t00266:p2
   ], [
     a :Father.n.01
-  ], [
-    a :Spouse.n.01 ;
-    :target t00266:p2
   ] .
 
 t00266:p2

@@ -14,7 +14,10 @@ tomb:t00852
     ] ;
     :nd "+52.7763+006.8045"^^ll:
   ] ;
-  :quo "RUST ZACHT"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
   :site site:dr7841CDsleen ;
   :subject t00852:p1 ;
   :symbol [
@@ -62,10 +65,10 @@ t00852:p1
   :placeOfBirth t00852:c1 ;
   :placeOfDeath t00852:c1 ;
   :relation [
-    a :Sister.n.01 ;
+    a :Aunt.n.01 ;
     :target t00852:p2
   ], [
-    a :Aunt.n.01 ;
+    a :Sister.n.01 ;
     :target t00852:p2
   ] .
 

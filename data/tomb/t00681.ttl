@@ -2,20 +2,6 @@
 
 tomb:t00681
   a :Tomb ;
-  :text """hier rust
-onze lieve Vrouw,
-Moeder en Dochter
-Grietje Kuiper
-Geb. 2 Nov. 1901,
-Overl. 1 Juni 1942.
-de diepbedroefden
-P. Rijpma
-en kinderen.
-
-Fam: R. Kuiper.
-
-Rust in Vrede
-""" ;
   :commemorator t00681:p3 ;
   :image [
     dc:date "2019-12-14T13:26:24"^^xsd:dateTime ;
@@ -29,9 +15,26 @@ Rust in Vrede
     ] ;
     :nd "+53.0687+005.5222"^^ll:
   ] ;
-  :quo "RUST IN VREDE"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"@nld
+  ] ;
   :site site:fr8701DWbolsward ;
-  :subject t00681:p1 .
+  :subject t00681:p1 ;
+  :text """hier rust
+onze lieve Vrouw,
+Moeder en Dochter
+Grietje Kuiper
+Geb. 2 Nov. 1901,
+Overl. 1 Juni 1942.
+de diepbedroefden
+P. Rijpma
+en kinderen.
+
+Fam: R. Kuiper.
+
+Rust in Vrede
+""" .
 
 t00681:p1
   a :Female ;
@@ -54,12 +57,12 @@ t00681:p1
     :text "Grietje Kuiper"
   ] ;
   :relation [
+    a :Daughter.n.01
+  ], [
     a :Wife.n.01 ;
     :target t00681:p2
   ], [
     a :Mother.n.01
-  ], [
-    a :Daughter.n.01
   ] .
 
 t00681:p2
@@ -76,3 +79,4 @@ t00681:p3
     a :Name ;
     :fullname "R. Kuiper"
   ] .
+

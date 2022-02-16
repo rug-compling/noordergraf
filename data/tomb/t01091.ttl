@@ -2,17 +2,6 @@
 
 tomb:t01091
   a :Tomb ;
-  :text """TODO: in jezus ontslapen mijn lieve
-vrouw, onze moeder en oma
-jantje stoke=neet
-x 3-2-1905
-1 4 9 1983
-in
-onze lieve vader en opa
-jan stokje
-* 10-10-1900
-# 13-11-1993
-""" ;
   :image [
     dc:date "2020-09-11T17:52:35"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,9 +14,23 @@ jan stokje
     ] ;
     :nd "+53.1633+006.6148"^^ll:
   ] ;
-  :quo "IN JEZUS ONTSLAPEN"@nld ;
+  :quote [
+    a :Quote ;
+    :text "IN JEZUS ONTSLAPEN"@nld
+  ] ;
   :site site:gr9752CMharen ;
-  :subject t01091:p1, t01091:p2 .
+  :subject t01091:p1, t01091:p2 ;
+  :text """TODO: in jezus ontslapen mijn lieve
+vrouw, onze moeder en oma
+jantje stoke=neet
+x 3-2-1905
+1 4 9 1983
+in
+onze lieve vader en opa
+jan stokje
+* 10-10-1900
+# 13-11-1993
+""" .
 
 t01091:p1
   a :Female ;

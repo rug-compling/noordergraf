@@ -14,7 +14,10 @@ tomb:t00857
     ] ;
     :nd "+52.7764+006.8042"^^ll:
   ] ;
-  :quo "RUST IN VREDE."@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE."@nld
+  ] ;
   :site site:dr7841CDsleen ;
   :subject t00857:p1, t00857:p2 ;
   :symbol [
@@ -60,10 +63,10 @@ t00857:p1
   ] ;
   :placeOfDeath t00857:c1 ;
   :relation [
-    a :Parent.n.01 ;
+    a :Grandparent.n.01 ;
     :target t00857:p3
   ], [
-    a :Grandparent.n.01 ;
+    a :Parent.n.01 ;
     :target t00857:p3
   ] .
 

@@ -2,17 +2,6 @@
 
 tomb:t00524
   a :Tomb ;
-  :text """TODO: hier rusten
-jan van der wal
-ter
-* 7-5-1929 \u2020 24-6-2006
-en
-geesinus harmannus schuurman
-* 3-5-1940
-\u2020 3-2-2007
-kameraden voor het leven
-hln
-""" ;
   :image [
     dc:date "2019-11-23T10:56:14"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,9 +14,23 @@ hln
     ] ;
     :nd "+53.1670+006.7535"^^ll:
   ] ;
-  :quo "KAMERADEN VOOR HET LEVEN"@nld ;
+  :quote [
+    a :Quote ;
+    :text "KAMERADEN VOOR HET LEVEN"@nld
+  ] ;
   :site site:gr9601KAhoogezand ;
-  :subject t00524:p1, t00524:p2 .
+  :subject t00524:p1, t00524:p2 ;
+  :text """TODO: hier rusten
+jan van der wal
+ter
+* 7-5-1929 † 24-6-2006
+en
+geesinus harmannus schuurman
+* 3-5-1940
+† 3-2-2007
+kameraden voor het leven
+hln
+""" .
 
 t00524:p1
   a :Male ;

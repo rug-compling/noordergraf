@@ -2,21 +2,6 @@
 
 tomb:t00112
   a :Tomb ;
-  :text """TODO: jacob nienhuis
-749 21900 4.7619.78
-zijn vrouw
-grietje jantina
-boomgaardt
-11.3.1900 1973, 1984
-en
-jantina jacoba
-boomoa ardi
-ante tine
-9.12.1908 31.
-10. 1992
-zo blijven d\u00c1n.
-geloof hoop en liefde
-""" ;
   :image [
     dc:date "2019-09-20T18:03:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -29,9 +14,27 @@ geloof hoop en liefde
     ] ;
     :nd "+53.1635+006.6157"^^ll:
   ] ;
-  :quo "ZO BLIJVEN DAN: GELOOF, HOOP EN LIEFDE" ;
+  :quote [
+    a :Quote ;
+    :text "ZO BLIJVEN DAN: GELOOF, HOOP EN LIEFDE"
+  ] ;
   :site site:gr9752CMharen ;
-  :subject t00112:p1, t00112:p2, t00112:p3 .
+  :subject t00112:p1, t00112:p2, t00112:p3 ;
+  :text """TODO: jacob nienhuis
+749 21900 4.7619.78
+zijn vrouw
+grietje jantina
+boomgaardt
+11.3.1900 1973, 1984
+en
+jantina jacoba
+boomoa ardi
+ante tine
+9.12.1908 31.
+10. 1992
+zo blijven dÁn.
+geloof hoop en liefde
+""" .
 
 t00112:p1
   a :Male ;

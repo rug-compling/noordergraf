@@ -2,17 +2,6 @@
 
 tomb:t00169
   a :Tomb ;
-  :text """TODO: familie
-poll
-joh.2.2a
-""" ;
-  :subject [
-    a :Family.n.04 ;
-    :name [
-      a :Name ;
-      :fullname "POLL"
-    ]
-  ] ;
   :image [
     dc:date "2019-10-05T10:45:50"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,14 +14,26 @@ joh.2.2a
     ] ;
     :nd "+53.1901+006.5929"^^ll:
   ] ;
-  :ref t00169:v1 ;
-  :site site:gr9722SNgroningen .
+  :quote t00169:v1 ;
+  :site site:gr9722SNgroningen ;
+  :subject [
+    a :Family.n.04 ;
+    :name [
+      a :Name ;
+      :fullname "POLL"
+    ]
+  ] ;
+  :text """TODO: familie
+poll
+joh.2.2a
+""" .
 
 t00169:v1
   a :Quote ;
   :reference [
     a :BibleReference ;
-    :part :John.n.05 ;
     :chapter 2 ;
+    :part :John.n.05 ;
     :verse "2A"
   ] .
+

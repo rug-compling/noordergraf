@@ -14,7 +14,10 @@ tomb:t01118
     ] ;
     :nd "+53.2437+006.8645"^^ll:
   ] ;
-  :quo "Rust zacht lieve moeder!"@nld ;
+  :quote [
+    a :Quote ;
+    :text "Rust zacht lieve moeder!"@nld
+  ] ;
   :site site:gr9628TKsiddeburen ;
   :subject t01118:p1 ;
   :symbol [
@@ -49,10 +52,10 @@ t01118:p1
   :placeOfBirth t01118:c1 ;
   :placeOfDeath t01118:c1 ;
   :relation [
+    a :Mother.n.01
+  ], [
     a :Widow.n.01 ;
     :target t01118:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t01118:p2

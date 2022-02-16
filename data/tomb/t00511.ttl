@@ -2,11 +2,6 @@
 
 tomb:t00511
   a :Tomb ;
-  :text """TODO: adrie
-40 jaar
-zo'st goud
-zo'st goud
-""" ;
   :image [
     dc:date "2019-11-23T10:25:38"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -19,9 +14,17 @@ zo'st goud
     ] ;
     :nd "+53.1649+006.7538"^^ll:
   ] ;
-  :quo "ZO'ST GOUD ZO'ST GOUD"@gos ;
+  :quote [
+    a :Quote ;
+    :text "ZO'ST GOUD ZO'ST GOUD"@gos
+  ] ;
   :site site:gr9601KAhoogezand ;
-  :subject t00511:p1 .
+  :subject t00511:p1 ;
+  :text """TODO: adrie
+40 jaar
+zo'st goud
+zo'st goud
+""" .
 
 t00511:p1
   a :Male ;

@@ -2,12 +2,6 @@
 
 tomb:t00929
   a :Tomb ;
-  :text """TODO: dr. jan naarding
-1903 1963
-warker veur drenthes
-taol en historie
-een van oes
-""" ;
   :image [
     dc:date "2020-02-15T15:31:26"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,9 +18,18 @@ een van oes
     a :Bust.n.03 ;
     :theme t00929:p1
   ] ;
-  :quo "WARKER VEUR DRENTHE'S \\ TAOL EN HISTORIE \\ EEN VAN OES"@drt ;
+  :quote [
+    a :Quote ;
+    :text "WARKER VEUR DRENTHE'S \\ TAOL EN HISTORIE \\ EEN VAN OES"@drt
+  ] ;
   :site site:dr7841CDsleen ;
-  :subject t00929:p1 .
+  :subject t00929:p1 ;
+  :text """TODO: dr. jan naarding
+1903 1963
+warker veur drenthes
+taol en historie
+een van oes
+""" .
 
 t00929:p1
   a :Male ;

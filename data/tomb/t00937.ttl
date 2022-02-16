@@ -2,19 +2,6 @@
 
 tomb:t00937
   a :Tomb ;
-  :text """TODO: margaretha
-cornelia schaaf
-21-11-1917 7 5 7-1956
-echtgenote van h.j. ruiter
-en eerste kind xen. 25-4-1946
-:
-en
-h. ruiter wildeboer
-* 26 -9.1877 117 12 1974
--
-rom.8:38 - 39
-30
-""" ;
   :image [
     dc:date "2020-03-18T10:25:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,9 +14,22 @@ rom.8:38 - 39
     ] ;
     :nd "+53.2377+006.5551"^^ll:
   ] ;
-  :ref t00937:v1 ;
+  :quote t00937:v1 ;
   :site site:gr9741GHgroningen ;
-  :subject t00937:p1, t00937:p3, t00937:p4 .
+  :subject t00937:p1, t00937:p3, t00937:p4 ;
+  :text """TODO: margaretha
+cornelia schaaf
+21-11-1917 7 5 7-1956
+echtgenote van h.j. ruiter
+en eerste kind xen. 25-4-1946
+:
+en
+h. ruiter wildeboer
+* 26 -9.1877 117 12 1974
+-
+rom.8:38 - 39
+30
+""" .
 
 t00937:p1
   a :Female ;
@@ -81,8 +81,8 @@ t00937:p3
   ] ;
   :relation [
     a :Child.n.02 ;
-    :text "eerste kind" ;
-    :target t00937:p1, t00937:p2
+    :target t00937:p1, t00937:p2 ;
+    :text "eerste kind"
   ] .
 
 t00937:p4

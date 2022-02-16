@@ -14,8 +14,10 @@ tomb:t00850
     ] ;
     :nd "+53.2958+005.0653"^^ll:
   ] ;
-  :quo "DAT ZIJ RUSTEN IN VREDE"@nld ;
-  :ref t00850:v1 ;
+  :quote t00850:v1, [
+    a :Quote ;
+    :text "DAT ZIJ RUSTEN IN VREDE"@nld
+  ] ;
   :site site:fr8899AWoost_vlieland ;
   :subject t00850:p1, t00850:p2, t00850:p3 ;
   :symbol [
@@ -77,13 +79,13 @@ t00850:p1
     :text "TODO: HARLINGEN"
   ] ;
   :relation [
-    a :Wife.n.01 ;
-    :target t00850:p3
-  ], [
     a :Mother.n.01 ;
     :target t00850:p2
   ], [
     a :Spouse.n.01 ;
+    :target t00850:p3
+  ], [
+    a :Wife.n.01 ;
     :target t00850:p3
   ] .
 

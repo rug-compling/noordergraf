@@ -14,7 +14,10 @@ tomb:t00693
     ] ;
     :nd "+53.0687+005.5231"^^ll:
   ] ;
-  :quo "VEEL FIJNE HERINNERINGEN \\ VERZACHTEN ONZE SMART \\ VOOR GOED UIT ONS MIDDEN \\ MAAR ALTIJD IN ONS HART"@nld ;
+  :quote [
+    a :Quote ;
+    :text "VEEL FIJNE HERINNERINGEN \\ VERZACHTEN ONZE SMART \\ VOOR GOED UIT ONS MIDDEN \\ MAAR ALTIJD IN ONS HART"@nld
+  ] ;
   :site site:fr8701DWbolsward ;
   :subject t00693:p1 ;
   :symbol [
@@ -58,10 +61,10 @@ t00693:p1
     :text "TODO: Johannes Franciscus Brattinga"
   ] ;
   :relation [
-    a :Parent ;
+    a :Grandparent ;
     :inferred true
   ], [
-    a :Grandparent ;
+    a :Parent ;
     :inferred true
   ] .
 

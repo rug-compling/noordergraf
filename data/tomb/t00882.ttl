@@ -2,13 +2,6 @@
 
 tomb:t00882
   a :Tomb ;
-  :text """TODO: hier rust
-ew. c. de dis
-geb, 6-6-1914 te groningen
-overl. 4 -7 -1945 te emmen
-echtgen, van g.gommers
-rust zacht lieve man en vader
-""" ;
   :image [
     dc:date "2020-02-15T15:06:31"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -21,9 +14,19 @@ rust zacht lieve man en vader
     ] ;
     :nd "+52.7195+006.8466"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE MAN EN VADER"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MAN EN VADER"@nld
+  ] ;
   :site site:dr7844TCveenoord ;
-  :subject t00882:p1, t00882:p2 .
+  :subject t00882:p1, t00882:p2 ;
+  :text """TODO: hier rust
+ew. c. de dis
+geb, 6-6-1914 te groningen
+overl. 4 -7 -1945 te emmen
+echtgen, van g.gommers
+rust zacht lieve man en vader
+""" .
 
 t00882:p1
   a :Male ;
@@ -46,13 +49,13 @@ t00882:p1
     :text "TODO: E.W.C. de Vries"
   ] ;
   :relation [
+    a :Father.n.01
+  ], [
     a :Spouse.n.01 ;
     :target t00882:p2
   ], [
     a :Husband.n.01 ;
     :target t00882:p2
-  ], [
-    a :Father.n.01
   ] .
 
 t00882:p2

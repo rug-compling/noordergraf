@@ -14,7 +14,13 @@ tomb:t00238
     ] ;
     :nd "+53.2054+006.5723"^^ll:
   ] ;
-  :quo "DE LIEFDE ZOEKT ZICH ZELVE NIET", "RUST ZACHT LIEVE VADER EN OPA" ;
+  :quote [
+    a :Quote ;
+    :text "DE LIEFDE ZOEKT ZICH ZELVE NIET"
+  ], [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE VADER EN OPA"
+  ] ;
   :site site:gr9725ACgroningen ;
   :subject t00238:p1, t00238:p2 ;
   :symbol [
@@ -52,13 +58,13 @@ t00238:p1
     :text "TODO: Alberndina Mesken"
   ] ;
   :relation [
+    a :Spouse.n.01 ;
+    :target t00238:p2
+  ], [
     a :Wife.n.01 ;
     :target t00238:p2
   ], [
     a :Mother.n.01
-  ], [
-    a :Spouse.n.01 ;
-    :target t00238:p2
   ] .
 
 t00238:p2

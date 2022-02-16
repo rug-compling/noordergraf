@@ -14,7 +14,10 @@ tomb:t00142
     ] ;
     :nd "+53.2064+006.5698"^^ll:
   ] ;
-  :quo "GEVALLEN TIJDENS DE BEVRIJDING VAN GRONINGEN BIJ HET UITOEFENEN VAN ZIJN PLICHT" ;
+  :quote [
+    a :Quote ;
+    :text "GEVALLEN TIJDENS DE BEVRIJDING VAN GRONINGEN BIJ HET UITOEFENEN VAN ZIJN PLICHT"
+  ] ;
   :site site:gr9725ACgroningen ;
   :subject t00142:p1, t00142:p2 ;
   :text """rustplaats van
@@ -54,19 +57,19 @@ t00142:p1
   ] ;
   :occupation [
     a :Occupation ;
-    :text "wachtmeester bij de gem brandweer" ;
     :hisco hisco:58110 ;
     :organisation [
       a :Organization.n.01 ;
       :orgname "GEMEENTELIJKE BRANDWEER"
     ] ;
+    :text "wachtmeester bij de gem brandweer" ;
     :wordnet "TODO: Sergeant.n.02"
   ] ;
   :relation [
-    a :Father.n.01
-  ], [
     a :Husband.n.01 ;
     :target t00142:p2
+  ], [
+    a :Father.n.01
   ] .
 
 t00142:p2

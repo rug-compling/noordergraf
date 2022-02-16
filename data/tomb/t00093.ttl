@@ -2,16 +2,6 @@
 
 tomb:t00093
   a :Tomb ;
-  :text """TODO: hier rust
-onze lieve
-man en vader
-fredericus h. halsema
-5-2-1910 + 26-2.1965
-echtg. van
-ilhelmina l. frankena
-27-2-1916 - 1989
-r.i.d
-""" ;
   :image [
     dc:date "2019-09-25T10:56:28"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,9 +14,22 @@ r.i.d
     ] ;
     :nd "+53.2035+006.5731"^^ll:
   ] ;
-  :quo "REQUIESCAT IN PACE"@lat ;
+  :quote [
+    a :Quote ;
+    :text "REQUIESCAT IN PACE"@lat
+  ] ;
   :site site:gr9721AAgroningen ;
-  :subject t00093:p1, t00093:p2 .
+  :subject t00093:p1, t00093:p2 ;
+  :text """TODO: hier rust
+onze lieve
+man en vader
+fredericus h. halsema
+5-2-1910 + 26-2.1965
+echtg. van
+ilhelmina l. frankena
+27-2-1916 - 1989
+r.i.d
+""" .
 
 t00093:p1
   a :Male ;

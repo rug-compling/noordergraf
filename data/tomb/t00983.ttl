@@ -2,12 +2,6 @@
 
 tomb:t00983
   a :Tomb ;
-  :text """TODO: rust zacht lieve mams
-lydia hoek -wlasowa
-geboren 9 april 1926
-overleden 14 juni 1998
-weduwe van joop hoek
-""" ;
   :image [
     dc:date "2020-03-31T12:47:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -20,9 +14,18 @@ weduwe van joop hoek
     ] ;
     :nd "+53.1421+006.5787"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE MAMS"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MAMS"@nld
+  ] ;
   :site site:dr9761ALeelde ;
-  :subject t00983:p1, t00983:p2 .
+  :subject t00983:p1, t00983:p2 ;
+  :text """TODO: rust zacht lieve mams
+lydia hoek -wlasowa
+geboren 9 april 1926
+overleden 14 juni 1998
+weduwe van joop hoek
+""" .
 
 t00983:p1
   a :Female ;

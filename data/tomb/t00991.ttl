@@ -2,18 +2,6 @@
 
 tomb:t00991
   a :Tomb ;
-  :text """TODO: se rue
-austplaats
-van
-serijeschourke
-gee. 22 april 1882
-overl.3 nov. 1928
-filippus moerker
-geb. 4 jan. 1879
-overl.28 sept. 1934
-job. 1:21.
-rust zacht lieye ouders
-""" ;
   :image [
     dc:date "2020-04-04T10:58:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,10 +14,24 @@ rust zacht lieye ouders
     ] ;
     :nd "+53.1758+007.0953"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE OUDERS"@nld ;
-  :ref t00991:v1 ;
+  :quote t00991:v1, [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"@nld
+  ] ;
   :site site:gr9686RSbeerta ;
-  :subject t00991:p1, t00991:p2 .
+  :subject t00991:p1, t00991:p2 ;
+  :text """TODO: se rue
+austplaats
+van
+serijeschourke
+gee. 22 april 1882
+overl.3 nov. 1928
+filippus moerker
+geb. 4 jan. 1879
+overl.28 sept. 1934
+job. 1:21.
+rust zacht lieye ouders
+""" .
 
 t00991:p1
   a :Female ;

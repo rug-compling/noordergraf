@@ -14,7 +14,10 @@ tomb:t00525
     ] ;
     :nd "+53.1659+006.7581"^^ll:
   ] ;
-  :quo "VEILIG IN JEZUS ARMEN"@nld ;
+  :quote [
+    a :Quote ;
+    :text "VEILIG IN JEZUS ARMEN"@nld
+  ] ;
   :site site:gr9601KAhoogezand ;
   :subject t00525:p1, t00525:p2 ;
   :symbol [
@@ -58,14 +61,14 @@ t00525:p1
     :text "TODO: Eppo Ruiter"
   ] ;
   :relation [
-    a :Father.n.01 ;
-    :target t00525:p3
-  ], [
     a :Grandfather.n.01 ;
     :target t00525:p3
   ], [
     a :Husband.n.01 ;
     :target t00525:p2
+  ], [
+    a :Father.n.01 ;
+    :target t00525:p3
   ] .
 
 t00525:p2

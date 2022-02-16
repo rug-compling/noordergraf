@@ -2,12 +2,6 @@
 
 tomb:t00715
   a :Tomb ;
-  :text """TODO: geertje de large
-25-1- 1903-33-9-1991
-wed. van jan arends
-wed: van vl van dijk
-groot is uw tround heer
-""" ;
   :image [
     dc:date "2019-12-21T13:31:10"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -20,9 +14,18 @@ groot is uw tround heer
     ] ;
     :nd "+52.7813+006.9001"^^ll:
   ] ;
-  :quo "GROOT IS UW TROUW O HEER"@nld ;
+  :quote [
+    a :Quote ;
+    :text "GROOT IS UW TROUW O HEER"@nld
+  ] ;
   :site site:dr7811HEemmen ;
-  :subject t00715:p1, t00715:p2, t00715:p3 .
+  :subject t00715:p1, t00715:p2, t00715:p3 ;
+  :text """TODO: geertje de large
+25-1- 1903-33-9-1991
+wed. van jan arends
+wed: van vl van dijk
+groot is uw tround heer
+""" .
 
 t00715:p1
   a :Female ;

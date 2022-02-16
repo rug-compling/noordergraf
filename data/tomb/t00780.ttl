@@ -14,7 +14,10 @@ tomb:t00780
     ] ;
     :nd "+52.7819+006.8978"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE MAN EN VADER"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MAN EN VADER"@nld
+  ] ;
   :site site:dr7811HEemmen ;
   :subject t00780:p1, t00780:p2 ;
   :symbol [
@@ -64,12 +67,12 @@ t00780:p1
   ] ;
   :placeOfDeath t00780:c2 ;
   :relation [
-    a :Spouse.n.01 ;
-    :target t00780:p2
-  ], [
     a :Husband.n.01
   ], [
     a :Father.n.01
+  ], [
+    a :Spouse.n.01 ;
+    :target t00780:p2
   ] .
 
 t00780:p2

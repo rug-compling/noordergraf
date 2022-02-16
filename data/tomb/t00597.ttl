@@ -14,8 +14,10 @@ tomb:t00597
     ] ;
     :nd "+53.3266+006.5115"^^ll:
   ] ;
-  :quo "AMICITIA ET TOLERANTIA"@nld ;
-  :ref t00597:c1 ;
+  :quote t00597:c1, [
+    a :Quote ;
+    :text "AMICITIA ET TOLERANTIA"@nld
+  ] ;
   :site site:gr9951TNwinsum ;
   :subject t00597:p1, t00597:p2 ;
   :text """TODO: -
@@ -32,12 +34,12 @@ icor 13
 
 t00597:c1
   a :Quote ;
-  :text "1 Cor. 13" ;
   :reference [
     a :BibleReference ;
     :chapter 13 ;
     :part :First_Epistle_to_the_Corinthians.n.01
-  ] .
+  ] ;
+  :text "1 Cor. 13" .
 
 t00597:p1
   a :Male ;

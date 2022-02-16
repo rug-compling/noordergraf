@@ -14,7 +14,10 @@ tomb:t00841
     ] ;
     :nd "+53.2958+005.0655"^^ll:
   ] ;
-  :quo "NAAR JEZUS HEEN"@nld ;
+  :quote [
+    a :Quote ;
+    :text "NAAR JEZUS HEEN"@nld
+  ] ;
   :site site:fr8899AWoost_vlieland ;
   :subject t00841:p1, t00841:p2 ;
   :text """TODO: naar
@@ -58,6 +61,10 @@ t00841:p2
     a :Date ;
     :date "1929-10-16"^^xsd:date
   ] ;
+  :decoration [
+    a :Decoration ;
+    :text "RIDDER 2e KLASSE IN DE St OLOFS-ORDE VAN NOORWEGEN"
+  ] ;
   :name [
     a :Name ;
     :fullname "Gooswinus Gerardus Akersloot" ;
@@ -68,9 +75,5 @@ t00841:p2
     :hisco hisco:20210 ;
     :text "oud-vice consul van noorwegen en zweden" ;
     :wordnet "TODO: Consul.n.01"
-  ] ;
-  :decoration [
-    a :Decoration ;
-    :text "RIDDER 2e KLASSE IN DE St OLOFS-ORDE VAN NOORWEGEN"
   ] .
 

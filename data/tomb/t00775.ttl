@@ -14,7 +14,10 @@ tomb:t00775
     ] ;
     :nd "+52.7822+006.8981"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE BROEDER EN OOM"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE BROEDER EN OOM"@nld
+  ] ;
   :site site:dr7811HEemmen ;
   :subject t00775:p1 ;
   :symbol [
@@ -71,8 +74,8 @@ t00775:p1
   :placeOfBirth t00775:c1 ;
   :placeOfDeath t00775:c1 ;
   :relation [
-    a :Brother.n.01
-  ], [
     a :Uncle.n.01
+  ], [
+    a :Brother.n.01
   ] .
 

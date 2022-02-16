@@ -2,19 +2,6 @@
 
 tomb:t00687
   a :Tomb ;
-  :text """TODO: dat ik er zun mocht
-sta te boek als wonder
-willem bosman
-* 7_3_1907 11.7_1980
-e heri
-\" eiz
-* 7.3.1907
-izem
-en
-nb. 21:4
-jetsche vrieswijk
-* il-7_1917 f 15_2_2006
-""" ;
   :image [
     dc:date "2019-12-14T13:16:34"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,9 +14,25 @@ jetsche vrieswijk
     ] ;
     :nd "+53.0673+005.5239"^^ll:
   ] ;
-  :quo "DAT IK ER ZIJN MOCHT \\ STA TE BOEK ALS WONDER"@nld ;
+  :quote [
+    a :Quote ;
+    :text "DAT IK ER ZIJN MOCHT \\ STA TE BOEK ALS WONDER"@nld
+  ] ;
   :site site:fr8701DWbolsward ;
-  :subject t00687:p1, t00687:p2 .
+  :subject t00687:p1, t00687:p2 ;
+  :text """TODO: dat ik er zun mocht
+sta te boek als wonder
+willem bosman
+* 7_3_1907 11.7_1980
+e heri
+\" eiz
+* 7.3.1907
+izem
+en
+nb. 21:4
+jetsche vrieswijk
+* il-7_1917 f 15_2_2006
+""" .
 
 t00687:p1
   a :Male ;

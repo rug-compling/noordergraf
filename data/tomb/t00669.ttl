@@ -14,7 +14,10 @@ tomb:t00669
     ] ;
     :nd "+53.0687+005.5231"^^ll:
   ] ;
-  :quo "RUST ZACHT"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
   :site site:fr8701DWbolsward ;
   :subject t00669:p1, t00669:p2 ;
   :symbol [
@@ -63,9 +66,9 @@ t00669:p1
     :text "TODO: Hendrikje de Jong"
   ] ;
   :relation [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
+  ], [
+    a :Mother.n.01
   ] .
 
 t00669:p2

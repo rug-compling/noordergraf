@@ -2,18 +2,6 @@
 
 tomb:t00905
   a :Tomb ;
-  :text """TODO: rustplaats
-van
-onze lieve ouders
-leffert bethlehem
-* 29 - 4 = 1900 + 12 - 9 \u2013 1954
-- =
-en
-titia v d. boom
-22 - 11897 +268 \u2013 1963
-\u2013
-openb. 1
-""" ;
   :image [
     dc:date "2020-03-07T14:22:39"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,10 +14,24 @@ openb. 1
     ] ;
     :nd "+53.1720+006.3659"^^ll:
   ] ;
-  :quo "RUSTPLAATS VAN ONZE LIEVE OUDERS"@nld ;
-  :ref t00905:v1 ;
+  :quote t00905:v1, [
+    a :Quote ;
+    :text "RUSTPLAATS VAN ONZE LIEVE OUDERS"@nld
+  ] ;
   :site site:gr9351RLtolbert ;
-  :subject t00905:p1, t00905:p2 .
+  :subject t00905:p1, t00905:p2 ;
+  :text """TODO: rustplaats
+van
+onze lieve ouders
+leffert bethlehem
+* 29 - 4 = 1900 + 12 - 9 – 1954
+- =
+en
+titia v d. boom
+22 - 11897 +268 – 1963
+–
+openb. 1
+""" .
 
 t00905:p1
   a :Male ;

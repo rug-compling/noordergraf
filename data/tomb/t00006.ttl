@@ -2,16 +2,6 @@
 
 tomb:t00006
   a :Tomb ;
-  :text """TODO: he
-liewe reit en mem
-us boanis jim lean
-aaltje de vos
-*34-1872 + 92_19.4.0
-echtgenote van
-egbert hoornveid
-8730 211963
-53
-""" ;
   :image [
     dc:date "2019-09-25T16:51:01"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,9 +14,22 @@ egbert hoornveid
     ] ;
     :nd "+53.1898+006.5930"^^ll:
   ] ;
-  :quo "LIEWE HEIT EN MEM US BOAN IS JIM LEAN"@fry ;
+  :quote [
+    a :Quote ;
+    :text "LIEWE HEIT EN MEM US BOAN IS JIM LEAN"@fry
+  ] ;
   :site site:gr9722SNgroningen ;
-  :subject t00006:p1, t00006:p2 .
+  :subject t00006:p1, t00006:p2 ;
+  :text """TODO: he
+liewe reit en mem
+us boanis jim lean
+aaltje de vos
+*34-1872 + 92_19.4.0
+echtgenote van
+egbert hoornveid
+8730 211963
+53
+""" .
 
 t00006:p1
   a :Female ;

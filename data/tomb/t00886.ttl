@@ -14,7 +14,10 @@ tomb:t00886
     ] ;
     :nd "+52.7197+006.8464"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE OUDERS"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"@nld
+  ] ;
   :site site:dr7844TCveenoord ;
   :subject t00886:p1, t00886:p2 ;
   :symbol [
@@ -58,12 +61,12 @@ t00886:p1
     :text "TODO: Geertje de Haan-Emming"
   ] ;
   :relation [
-    a :Mother.n.01
-  ], [
     a :Grandmother.n.01
   ], [
     a :Wife.n.01 ;
     :target t00886:p2
+  ], [
+    a :Mother.n.01
   ] .
 
 t00886:p2

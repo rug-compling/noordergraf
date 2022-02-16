@@ -14,7 +14,10 @@ tomb:t00836
     ] ;
     :nd "+52.7767+006.8041"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE ECHTGENOOT EN MOEDER"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE ECHTGENOOT EN MOEDER"@nld
+  ] ;
   :site site:dr7841CDsleen ;
   :subject t00836:p1, t00836:p2 ;
   :symbol [
@@ -60,10 +63,10 @@ t00836:p1
   :placeOfBirth t00836:c1 ;
   :placeOfDeath t00836:c1 ;
   :relation [
+    a :Mother.n.01
+  ], [
     a :Spouse.n.01 ;
     :target t00836:p2
-  ], [
-    a :Mother.n.01
   ] .
 
 t00836:p2

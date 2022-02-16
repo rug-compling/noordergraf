@@ -2,14 +2,6 @@
 
 tomb:t01037
   a :Tomb ;
-  :text """TODO: spot
-mete
-bussen
-rustplaats
-jan jonkman
-* 20 11901
-rust zacht.
-""" ;
   :image [
     dc:date "2020-04-19T11:52:53"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,9 +14,20 @@ rust zacht.
     ] ;
     :nd "+53.2644+006.3946"^^ll:
   ] ;
-  :quo "RUST ZACHT."@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT."@nld
+  ] ;
   :site site:gr9804TEnoordhorn ;
-  :subject t01037:p1 .
+  :subject t01037:p1 ;
+  :text """TODO: spot
+mete
+bussen
+rustplaats
+jan jonkman
+* 20 11901
+rust zacht.
+""" .
 
 t01037:p1
   a :Male ;

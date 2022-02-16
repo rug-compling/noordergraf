@@ -14,7 +14,10 @@ tomb:t00416
     ] ;
     :nd "+53.0790+006.5726"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE OUDERS" ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
   :site site:dr9481CGvries ;
   :subject t00416:p1, t00416:p2 ;
   :text """TODO: glentettcute
@@ -75,10 +78,10 @@ t00416:p1
     :text "TODO: ROTTERDAM"
   ] ;
   :relation t00416:r2, [
-    a :Husband.n.01 ;
+    a :Spouse.n.01 ;
     :target t00416:p2
   ], [
-    a :Spouse.n.01 ;
+    a :Husband.n.01 ;
     :target t00416:p2
   ] .
 

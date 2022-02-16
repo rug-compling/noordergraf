@@ -14,7 +14,10 @@ tomb:t00168
     ] ;
     :nd "+53.2058+006.5699"^^ll:
   ] ;
-  :quo "ALS LIEFDE EENS KON WONDEREN DOEN \\ EN TRANEN DOODEN WEKKEN \\ DAN ZOU ONZE GELIEFDE ZOON \\ NU NIET DE KOELE AARDE DEKKEN" ;
+  :quote [
+    a :Quote ;
+    :text "ALS LIEFDE EENS KON WONDEREN DOEN \\ EN TRANEN DOODEN WEKKEN \\ DAN ZOU ONZE GELIEFDE ZOON \\ NU NIET DE KOELE AARDE DEKKEN"
+  ] ;
   :site site:gr9725ACgroningen ;
   :subject t00168:p1 ;
   :symbol [
@@ -62,8 +65,8 @@ t00168:p1
   :placeOfBirth t00168:c1 ;
   :placeOfDeath t00168:c1 ;
   :relation [
-    a :Brother.n.01
-  ], [
     a :Son.n.01
+  ], [
+    a :Brother.n.01
   ] .
 

@@ -14,7 +14,10 @@ tomb:t00765
     ] ;
     :nd "+52.7821+006.8977"^^ll:
   ] ;
-  :quo "RUST ZACHT"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
   :site site:dr7811HEemmen ;
   :subject t00765:p1 ;
   :symbol [
@@ -62,10 +65,10 @@ t00765:p1
   :placeOfBirth t00765:c1 ;
   :placeOfDeath t00765:c1 ;
   :relation [
+    a :Sister.n.01
+  ], [
     a :Daughter.n.01 ;
     :target t00765:p2, t00765:p3
-  ], [
-    a :Sister.n.01
   ] .
 
 t00765:p2

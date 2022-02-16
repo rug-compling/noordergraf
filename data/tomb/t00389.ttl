@@ -14,7 +14,10 @@ tomb:t00389
     ] ;
     :nd "+53.2516+006.1447"^^ll:
   ] ;
-  :quo "DE HEAR IS MIJN HOEDER"@fry ;
+  :quote [
+    a :Quote ;
+    :text "DE HEAR IS MIJN HOEDER"@fry
+  ] ;
   :site site:fr9285TCbuitenpost ;
   :subject t00389:p1, t00389:p2 ;
   :symbol [
@@ -61,9 +64,9 @@ t00389:p1
     :text "TODO: Jan Waltje"
   ] ;
   :relation [
-    a :Grandfather.n.01
-  ], [
     a :Father.n.01
+  ], [
+    a :Grandfather.n.01
   ] .
 
 t00389:p2

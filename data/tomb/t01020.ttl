@@ -19,7 +19,10 @@ tomb:t01020
     ] ;
     :nd "+53.1624+006.6144"^^ll:
   ] ;
-  :quo "RUST ZACHT"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
   :site site:gr9752CMharen ;
   :subject t01020:p1 ;
   :text """rustplaats van
@@ -62,12 +65,12 @@ t01020:p1
     :wordnet "TODO: Navigator.n.01"
   ] ;
   :relation [
-    a :Son.n.01
-  ], [
     a :Brother.n.01
   ], [
     a :Brother-in-law.n.01
   ], [
     a :Uncle.n.01
+  ], [
+    a :Son.n.01
   ] .
 

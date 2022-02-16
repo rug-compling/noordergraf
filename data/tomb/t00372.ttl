@@ -14,7 +14,10 @@ tomb:t00372
     ] ;
     :nd "+53.0792+006.5717"^^ll:
   ] ;
-  :quo "RUST ZACHT LIEVE OUDERS" ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
   :site site:dr9481CGvries ;
   :subject t00372:p1, t00372:p2 ;
   :symbol [
@@ -59,10 +62,10 @@ t00372:p1
   :placeOfBirth t00372:c1 ;
   :placeOfDeath t00372:c1 ;
   :relation [
+    a :Parent.n.01
+  ], [
     a :Spouse.n.01 ;
     :target t00372:p2
-  ], [
-    a :Parent.n.01
   ] .
 
 t00372:p2

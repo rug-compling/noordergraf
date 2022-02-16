@@ -14,7 +14,10 @@ tomb:t00855
     ] ;
     :nd "+52.7756+006.8026"^^ll:
   ] ;
-  :quo "RUST ZACHT, LIEVE \\ OOM EN OUD-OOM"@nld ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT, LIEVE \\ OOM EN OUD-OOM"@nld
+  ] ;
   :site site:dr7841CDsleen ;
   :subject t00855:p1 ;
   :symbol [
@@ -65,8 +68,8 @@ t00855:p1
   :placeOfBirth t00855:c1 ;
   :placeOfDeath t00855:c1 ;
   :relation [
-    a :Uncle.n.01
-  ], [
     a :Granduncle.n.01
+  ], [
+    a :Uncle.n.01
   ] .
 
