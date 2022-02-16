@@ -19,6 +19,7 @@ tomb:t00005
   :symbol [
     a symbol:Frond
   ] ;
+  :quote t00005:v1 , t00005:v2 , t00005:v3 ;
   :text """TODO: hep rusten
 thussiena pieta
 2 juni 1959 jo nov. 1959
@@ -60,7 +61,6 @@ t00005:p1
     :fullname "Thijssiena Pieta" ;
     :text "TODO: Thijssiena Pieta"
   ] ;
-  :quote t00005:v1 ;
   :relation [
     a :Daughter.n.01 ;
     :target t00005:p2, t00005:p3
@@ -102,7 +102,6 @@ t00005:p4
     :fullname "Marten Bron" ;
     :text "TODO: Marten Bron"
   ] ;
-  :quote t00005:v2 ;
   :relation [
     a :Spouse.n.01 ;
     :target t00005:p5
@@ -127,11 +126,12 @@ t00005:p5
     a :Name ;
     :fullname "Barbara Westerling" ;
     :text "TODO: Barbara Westerling"
-  ] ;
-  :quote t00005:v3 .
+  ] .
 
 t00005:v1
   a :Quote ;
+  :text "ps. 105:5" ;
+  :target t00005:p1 ;
   :reference [
     a :BibleReference ;
     :chapter 105 ;
@@ -141,6 +141,8 @@ t00005:v1
 
 t00005:v2
   a :Quote ;
+  :text "ps. 145:18" ;
+  target t00005:p4 ;
   :reference [
     a :BibleReference ;
     :chapter 145 ;
@@ -150,10 +152,13 @@ t00005:v2
 
 t00005:v3
   a :Quote ;
+  :text "1 joh. 1:7" ;
+  :target t00005:p5 ;
   :reference [
     a :BibleReference ;
     :chapter 1 ;
-    :part :John.n.05 ;
-    :verse "7"
+    :part :FirstJohn ;
+    :verse "7" ;
+    :scripture <https://www.bible.com/nl/bible/75/1JN.1.7>
   ] .
 

@@ -19,6 +19,27 @@ tomb:t00322
   :symbol [
     a symbol:WeepingWillow
   ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 23 ;
+      :part :Psalm.n.01 ;
+      :verse "1"
+    ] ;
+    :text "Ps. 23 v.1." ;
+    :target t00322:p1
+  ] , [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 84 ;
+      :part :Psalm.n.01 ;
+      :verse "12C"
+    ] ;
+    :text "Ps. 84 v.12c." ;
+    :target t00322:p2
+  ] ;
   :text """TODO: hier rust
 het
 stoffeluk
@@ -59,16 +80,6 @@ t00322:p1
     :fullname "Aaltje Zomer" ;
     :text "TODO: Aaltje Zomer"
   ] ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 23 ;
-      :part :Psalm.n.01 ;
-      :verse "1"
-    ] ;
-    :text "Ps. 23 v.1."
-  ] ;
   :relation [
     a :Mother.n.01
   ], [
@@ -98,16 +109,6 @@ t00322:p2
     a :Name ;
     :fullname "Gerrit Scholten" ;
     :text "TODO: Gerrit Scholten"
-  ] ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 84 ;
-      :part :Psalm.n.01 ;
-      :verse "12C"
-    ] ;
-    :text "Ps. 84 v.12c."
   ] ;
   :relation [
     a :Father.n.01

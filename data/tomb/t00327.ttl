@@ -19,6 +19,18 @@ tomb:t00327
   :symbol [
     a symbol:WeepingWillow
   ] ;
+  :quote t00327:v1 , [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 10 ;
+      :comment "onberijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "14"
+    ] ;
+    :text "ps.10:14 onb." ;
+    :target t00327:p4
+  ] ;
   :text """TODO: hier
 rust
 het stoffelijk
@@ -73,7 +85,6 @@ t00327:p1
   ] ;
   :placeOfBirth t00327:c1 ;
   :placeOfDeath t00327:c1 ;
-  :quote t00327:v1 ;
   :relation t00327:r3, [
     a :Mother.n.01 ;
     :target t00327:p4
@@ -121,17 +132,6 @@ t00327:p4
   ] ;
   :placeOfBirth t00327:c1 ;
   :placeOfDeath t00327:c1 ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 10 ;
-      :comment "onberijmd" ;
-      :part :Psalm.n.01 ;
-      :verse "14"
-    ] ;
-    :text "ps.10:14 onb."
-  ] ;
   :relation [
     a :Daughter.n.01 ;
     :target t00327:p1, t00327:p2
@@ -143,6 +143,7 @@ t00327:r3
 
 t00327:v1
   a :Quote ;
+  :target t00327:p1 ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;

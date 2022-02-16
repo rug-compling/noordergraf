@@ -23,6 +23,23 @@ tomb:t01042
   ], [
     a symbol:Ribbon
   ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 23 ;
+      :part :Psalm.n.01
+    ] ;
+    :text "ps. 23" ;
+    :target t01042:p1
+  ] , [
+    a :Quote ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :text "gez. 29" ;
+    :target t01042:p2
+  ] ;
   :text """TODO: 然
 som
 he
@@ -59,15 +76,6 @@ t01042:p1
     :fullname "Geeske Helmantel" ;
     :text "TODO: Geeske Helmantel"
   ] ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 23 ;
-      :part :Psalm.n.01
-    ] ;
-    :text "ps. 23"
-  ] ;
   :relation [
     a :Spouse.n.01 ;
     :target t01042:p2
@@ -92,13 +100,6 @@ t01042:p2
     a :Name ;
     :fullname "Edzo van der Veen" ;
     :text "TODO: Edzo van der Veen"
-  ] ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :HymnReference
-    ] ;
-    :text "gez. 29"
   ] ;
   :relation [
     a :Widower.n.01 ;

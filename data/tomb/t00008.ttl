@@ -19,6 +19,7 @@ tomb:t00008
   :symbol [
     a symbol:Frond
   ] ;
+  :quote t00008:v1 ;
   :text """TODO: \"
 hier rust
 ons geliefd dochtertje
@@ -54,7 +55,6 @@ t00008:p1
     :fullname "Cornelia Johanna Pieters" ;
     :text "TODO: Cornelia Johanna Pieters"
   ] ;
-  :quote t00008:v1 ;
   :relation [
     a :Daughter.n.01
   ], [
@@ -89,6 +89,8 @@ t00008:p2
 
 t00008:v1
   a :Quote ;
+  :text "mattheüs 19:14" ;
+  :target t00008:p1 ;
   :reference [
     a :BibleReference ;
     :chapter 19 ;

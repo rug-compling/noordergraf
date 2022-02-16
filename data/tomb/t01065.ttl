@@ -16,6 +16,7 @@ tomb:t01065
   ] ;
   :site site:gr9975VRvierhuizen ;
   :subject t01065:p1, t01065:p2 ;
+  :quote t01065:v1 , t01065:v2 ;
   :text """TODO: lubbe de braak
 engwierum 31 - 5 - 1888 *
 groningen 20 - 6 - 1932 1
@@ -60,7 +61,6 @@ t01065:p1
     :place place:Groningen2755251 ;
     :text "TODO: GRONINGEN"
   ] ;
-  :quote t01065:v1 ;
   :relation [
     a :Spouse.n.01 ;
     :target t01065:p2
@@ -96,7 +96,6 @@ t01065:p2
     :place place:Ulrum2745944 ;
     :text "TODO: ULRUM"
   ] ;
-  :quote t01065:v2 ;
   :relation [
     a :Spouse.n.01 ;
     :target t01065:p1
@@ -104,6 +103,8 @@ t01065:p2
 
 t01065:v1
   a :Quote ;
+  :text "openb. 22:20" ;
+  :target t01065:p1 ;
   :reference [
     a :BibleReference ;
     :chapter 22 ;
@@ -113,6 +114,8 @@ t01065:v1
 
 t01065:v2
   a :Quote ;
+  :text "rom. 14:8B" ;
+  :target t01065:p2 ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;

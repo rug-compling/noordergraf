@@ -19,6 +19,17 @@ tomb:t00241
   :symbol [
     a symbol:Frond
   ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 119 ;
+      :comment "berijmd" ;
+      :part :Psalm.n.01 ;
+      :verse "1"
+    ] ;
+    :text "Ps. 119:1 ber."
+  ] ;
   :text """TODO: kb.
 rustplaats
 van
@@ -54,16 +65,4 @@ t00241:p1
     :text "TODO: Hendrik van Dam"
   ] ;
   :placeOfBirth t00241:c1 ;
-  :placeOfDeath t00241:c1 ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 119 ;
-      :comment "berijmd" ;
-      :part :Psalm.n.01 ;
-      :verse "1"
-    ] ;
-    :text "Ps. 119:1 ber."
-  ] .
-
+  :placeOfDeath t00241:c1 .

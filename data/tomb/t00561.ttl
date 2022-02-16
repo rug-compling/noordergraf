@@ -16,6 +16,27 @@ tomb:t00561
   ] ;
   :site site:gr9641ANveendam ;
   :subject t00561:p1, t00561:p2, t00561:p3 ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 6 ;
+      :part :Epistle_to_the_Romans.n.04 ;
+      :verse "23"
+    ] ;
+    :text "rom. 6 : 23." ;
+    :target t00561:p1
+  ] , [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 103 ;
+      :part :Psalm.n.01 ;
+      :verse "15-22"
+    ] ;
+    :text "Ps. 103:15-22." ;
+    :target t00561:p2
+  ] ;
   :text """TODO: ter gedachtenis aan
 onze geliefde ouders
 derk stutvoet
@@ -62,16 +83,6 @@ t00561:p1
     :place place:Schiedam2747596 ;
     :text "TODO: SCHIEDAM"
   ] ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 6 ;
-      :part :Epistle_to_the_Romans.n.04 ;
-      :verse "23"
-    ] ;
-    :text "rom. 6 : 23."
-  ] ;
   :relation t00561:r1, [
     a :Widower.n.01 ;
     :after t00561:r1 ;
@@ -99,17 +110,7 @@ t00561:p2
     :text "TODO: Aaltje Loots"
   ] ;
   :placeOfBirth t00561:c1 ;
-  :placeOfDeath t00561:c1 ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 103 ;
-      :part :Psalm.n.01 ;
-      :verse "15-22"
-    ] ;
-    :text "Ps. 103:15-22."
-  ] .
+  :placeOfDeath t00561:c1 .
 
 t00561:p3
   a :Female ;

@@ -16,6 +16,7 @@ tomb:t00024
   ] ;
   :site site:gr9722SNgroningen ;
   :subject t00024:p1, t00024:p2 ;
+  :quote t00024:v1 ;
   :text """TODO: anna de vries
 * 84–1860
 19_1_1928
@@ -66,11 +67,11 @@ t00024:p2
     a :Name ;
     :fullname "Otto Doornbos" ;
     :text "TODO: Otto Doornbos"
-  ] ;
-  :quote t00024:v1 .
+  ] .
 
 t00024:v1
   a :Quote ;
+  :target t00024:p2 ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;

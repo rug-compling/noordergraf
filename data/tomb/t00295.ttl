@@ -18,7 +18,7 @@ tomb:t00295
     a :Quote ;
     :target t00295:p1 ;
     :text "HAAR LEVEN WAS CHRISTUS"
-  ] ;
+  ] , t00295:v1 ;
   :site site:dr7907CHhoogeveen ;
   :subject t00295:p1, t00295:p2 ;
   :symbol [
@@ -87,11 +87,11 @@ t00295:p2
     a :Name ;
     :fullname "Cornelis Warmels" ;
     :text "TODO: Cornelis Warmels"
-  ] ;
-  :quote t00295:v1 .
+  ] .
 
 t00295:v1
   a :Quote ;
+  :target t00295:p2 ;
   :reference [
     a :BibleReference ;
     :chapter 16 ;
