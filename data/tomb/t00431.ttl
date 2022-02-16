@@ -14,23 +14,20 @@ tomb:t00431
     ] ;
     :nd "+53.4790+006.1608"^^ll:
   ] ;
-  :quo t00431:q1 ;
+  :quote t00431:q1 ;
   :site site:fr9166NAschiermonnikoog ;
   :subject t00431:p1, t00431:p2, t00431:p3 ;
-  :text """TODO: er
+  :text """
 hier rusten
-tjitske p. teensma
-9. - 2 - 1920
-23 - 2 - 1978
-0
-wijnand paulus de jong
-* 17 - s - 1926 + 15 - 1 - 1999
+TJITSKE P. TEENSMA
+★ 9 - 2 - 1920   ✝ 23 - 2 - 1978
+
+WIJNAND PAULUS de JONG
+★ 17 - 5 - 1926   ✝ 15 - 1 - 1999
 en altijd is het zo geweest,
 dat de liefde haar eigen diepte
 niet kent dan op het uur der
-scheiding
-k. gibran
-78
+scheiding.  K. Gibran
 """ .
 
 t00431:p1
@@ -51,7 +48,7 @@ t00431:p1
   :name [
     a :Name ;
     :fullname "Tjitske P. Teensma" ;
-    :text "TODO: Tjitske P. Teensma"
+    :text "TJITSKE P. TEENSMA"
   ] ;
   :relation [
     a :Spouse.n.01 ;
@@ -76,7 +73,7 @@ t00431:p2
   :name [
     a :Name ;
     :fullname "Wijnand Paulus de Jong" ;
-    :text "TODO: Wijnand Paulus de Jong"
+    :text "WIJNAND PAULUS de JONG"
   ] .
 
 t00431:q1
@@ -87,7 +84,9 @@ niet kent dan op het uur der
 scheiding.
 K. Gibran""" ;
   :reference [
-    a :Reference ;
-    :author "Kahlil Gibran"
+    a :BookReference ;
+    :author "Kahlil Gibran" ;
+    :title "De profeet"@nld ;
+    :date "1923"^^xsd:gYear
   ] .
 

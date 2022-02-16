@@ -2,14 +2,13 @@
 
 tomb:t00594
   a :Tomb ;
-  :text """TODO: * het nog nooit, nog nooit zo donker west,
-t
+  :text """t Het nog nooit, nog nooit zo donker west,
 of t wer altied wel weer licht.
-jacob e holwerda
-\u2020 5-1-2011
-* 17-7-1935
-zien leste toentje
-don's
+
+JACOB F. HOLWERDA
+★ 17-7-1935   ✝ 5-1-2011
+
+Zien leste toentje
 """ ;
   :image [
     dc:date "2019-11-30T14:21:42"^^xsd:dateTime ;
@@ -23,7 +22,31 @@ don's
     ] ;
     :nd "+53.3262+006.5125"^^ll:
   ] ;
-  :quo "T HET NOG NOOIT, NOG NOOIT ZO DONKER WEST, \\ OF T WER ALTIED WEL WEER LICHT."@gos, "ZIEN LESTE TOENTJE"@gos ;
+  :quote [
+    :text """t Het nog nooit, nog nooit zo donker west,
+of t wer altied wel weer licht."""@gos ;
+    :reference [
+      a :MusicReference ;
+      :author "Ede Staal" ;
+      :title "t Het nog nooit zo donker west"@gos ;
+      :albumTitle "Mien toentje"@gos ;
+      :albumTrack "A2" ;
+      :date "1984"^^xsd:gYear ;
+      :discogs discogs:850334
+    ]
+  ] , [
+    :text "Zien leste toentje"@gos ;
+    :comment "parafrase" ;
+    :reference [
+      a :MusicReference ;
+      :author "Ede Staal" ;
+      :title "Mien Toentje"@gos ;
+      :albumTitle "Mien toentje"@gos ;
+      :albumTrack "A1" ;
+      :date "1984"^^xsd:gYear ;
+      :discogs discogs:850334
+    ]
+  ] ;
   :site site:gr9951TNwinsum ;
   :subject t00594:p1 .
 
@@ -44,7 +67,7 @@ t00594:p1
   ] ;
   :name [
     a :Name ;
-    :fullname "Jacob E. Holwerda" ;
-    :text "TODO: Jacob E. Holwerda"
+    :fullname "Jacob F. Holwerda" ;
+    :text "JACOB F. HOLWERDA"
   ] .
 
