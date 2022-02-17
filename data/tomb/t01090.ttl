@@ -8,7 +8,14 @@ tomb:t01090
     a :Photo ;
     :file img:t01090.jpg
   ] ;
-  :quote t01090:v1, "KOL 1"@nld ;
+  :quote t01090:v1, [
+    a :Quote ;
+    :text "KOL 1"@nld ;
+    :reference [
+      a :BibleReference ;
+      :comment "TODO"
+    ]
+  ] ;
   :subject t01090:p1, t01090:p2 ;
   :text """TODO: 1korisk
 jitske hay eman
