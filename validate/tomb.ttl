@@ -25,7 +25,11 @@
     sh:nodeKind sh:IRI ;
     sh:maxCount 1
   ] ;
-  sh:property :MaybeSubject ;
+  sh:property [
+    sh:path :subject ;
+    sh:class :Person ;
+    sh:nodeKind sh:IRI
+  ] ;
   sh:property :MaybeQuote ;
   sh:property [
     sh:path :symbol ;
@@ -113,32 +117,4 @@
       [ sh:nodeKind sh:IRI ]
       [ sh:datatype xsd:string ]
     )
-  ] .
-
-  
-:MaybeSubject sh:path :subject ;
-  sh:class :Person ;
-  sh:nodeKind sh:IRI ;
-  sh:property :HasName .
-
-:HasName sh:path :name ;
-  sh:minCount 1 ;
-  sh:maxCount 1 ; 
-  sh:property [
-    sh:class :Name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:property [
-      sh:path :fullname ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-      sh:datatype xsd:string
-    ] ;
-    sh:property [
-      sh:path :text ;
-      sh:or (
-        [ sh:datatype xsd:string ]
-        [ sh:datatype rdf:langString ]
-      )
-    ]
   ] .

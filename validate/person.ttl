@@ -1,0 +1,146 @@
+
+:PersonShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Person ;
+  sh:class :Person ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1; 
+  ] ;
+  sh:property [
+    sh:path :name ;
+    sh:maxCount 1 ;
+    sh:property [
+      sh:class :Name ;
+      sh:maxCount 1 ;
+      sh:property [
+        sh:path :fullname ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string
+      ] ;
+      sh:property [
+        sh:path :text ;
+        sh:minCount 1 ;
+        sh:or (
+          [ sh:datatype xsd:string ]
+          [ sh:datatype rdf:langString ]
+        )
+      ]
+    ]
+  ] ;
+  sh:property [
+    sh:path :placeOfBirth ;
+    sh:maxCount 1 ;
+    sh:property :HasPlace
+  ] ;
+  sh:property [
+    sh:path :placeOfDeath ;
+    sh:maxCount 1 ;
+    sh:property :HasPlace
+  ] ;
+  sh:property [
+    sh:path :dateOfBirth ;
+    sh:maxCount 1 ;
+    sh:property :HasDate
+  ] ;
+  sh:property [
+    sh:path :dateOfDeath ;
+    sh:maxCount 1 ;
+    sh:property :HasDate
+  ] ;
+  sh:property [
+    sh:path :age ;
+    sh:maxCount 1 ;
+    sh:property [
+      sh:class :Age ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:property [
+        sh:path :duration ;
+        sh:datatype xsd:duration ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+      ] ;
+      sh:property [
+        sh:path :inferred ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:boolean
+      ]
+    ]
+  ] ;
+  sh:property [
+    sh:path :relation ;
+    sh:property [
+      sh:class :RelationClass ;
+      sh:property [
+        sh:path :target ;
+	sh:class :Person
+      ]
+    ]
+  ] ;
+  sh:property [
+    sh:path :occupation ;
+    sh:class :Occupation ;
+    sh:property [
+      sh:path :hisco ;
+      sh:nodeKind sh:IRI ;
+      sh:maxCount 1
+    ] ;
+    sh:property [
+      sh:path :location ;
+      sh:maxCount 1 ;
+      sh:property [
+        sh:class :PlaceClass ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+	sh:property [
+          sh:path :text ;
+          sh:or (
+            [ sh:datatype xsd:string ]
+            [ sh:datatype rdf:langString ]
+          )
+        ]
+      ]
+    ] ;
+    sh:property [
+      sh:path :text ;
+        sh:or (
+          [ sh:datatype xsd:string ]
+          [ sh:datatype rdf:langString ]
+        )
+    ]
+  ] .
+
+:HasDate sh:class :Date ;
+  sh:property [
+    sh:path :date ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :inferred ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:boolean
+  ] .
+
+:HasPlace sh:class :PlaceClass ;
+  sh:property [
+    sh:path :place ;
+    sh:class :Place ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :text ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] .

@@ -22,7 +22,8 @@ tomb:t01117
   :subject t01117:p1 ;
   :symbol [
     a symbol:Frond
-  ] .
+  ] ;
+  :text "TODO" .
 
 t01117:c1
   a :Village.n.02 ;
@@ -52,12 +53,12 @@ t01117:p1
   :placeOfBirth t01117:c1 ;
   :placeOfDeath t01117:c1 ;
   :relation [
+    a :Mother-in-law.n.01
+  ], [
     a :Grandmother.n.01
   ], [
     a :Widow.n.01 ;
     :target t01117:p2
-  ], [
-    a :Mother-in-law.n.01
   ] .
 
 t01117:p2
