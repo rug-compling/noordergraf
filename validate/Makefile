@@ -1,11 +1,8 @@
 all: Shapefile Datafile
 
-SRC = ../data/prefix.ttl \
-	*.ttl
+Shapefile: ../data/prefix.ttl *.ttl
+	echo '@prefix sh: <http://www.w3.org/ns/shacl#> .' > $@
+	cat $^ >> $@
 
-Shapefile: $(SRC)
-	@echo '@prefix sh: <http://www.w3.org/ns/shacl#> .' > $@
-	@cat $^ >> $@
-
-Datafile: ../data/prefix.ttl ../data/ns.ttl ../data/*/*.ttl
-	@cat $^ > $@
+Datafile: ../data/*.ttl ../data/*/*.ttl
+	/net/noordergraf/data/concat -n > $@
