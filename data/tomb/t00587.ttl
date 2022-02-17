@@ -2,19 +2,6 @@
 
 tomb:t00587
   a :Tomb ;
-  :age [
-    a :Age ;
-    :duration "P44Y4M6D"^^xsd:duration ;
-    :inferred true
-  ] ;
-  :dateOfBirth [
-    a :Date ;
-    :date "1874-09-20"^^xsd:date
-  ] ;
-  :dateOfDeath [
-    a :Date ;
-    :date "1919-01-26"^^xsd:date
-  ] ;
   :image [
     dc:date "2019-11-30T14:46:00"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,21 +13,6 @@ tomb:t00587
       geo:long 6.5127
     ] ;
     :nd "+53.3354+006.5127"^^ll:
-  ] ;
-  :occupation [
-    a :Occupation ;
-    :hisco hisco:07130 ;
-    :location [
-      a :Village.n.02 ;
-      :place place:Winsum2744337 ;
-      :text "TODO: WINSUM"
-    ] ;
-    :wordnet "TODO: Visting_nurse.n.01"
-  ] ;
-  :placeOfDeath [
-    a :City.n.01 ;
-    :place place:Groningen2755251 ;
-    :text "TODO: GRONINGEN"
   ] ;
   :site site:gr9951STwinsum ;
   :subject t00587:p1 ;
@@ -72,5 +44,33 @@ t00587:p1
     a :Village.n.02 ;
     :place place:Obergum2749742 ;
     :text "TODO: OBERGUM"
+  ] ;
+  :age [
+    a :Age ;
+    :duration "P44Y4M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-09-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-01-26"^^xsd:date
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:07130 ;
+    :location [
+      a :Village.n.02 ;
+      :place place:Winsum2744337 ;
+      :text "TODO: WINSUM"
+    ] ;
+    :wordnet "TODO: Visting_nurse.n.01"
+  ] ;
+  :placeOfDeath [
+    a :City.n.01 ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
   ] .
 

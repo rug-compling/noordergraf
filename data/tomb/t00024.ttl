@@ -14,9 +14,9 @@ tomb:t00024
     ] ;
     :nd "+53.1909+006.5942"^^ll:
   ] ;
+  :quote t00024:v1 ;
   :site site:gr9722SNgroningen ;
   :subject t00024:p1, t00024:p2 ;
-  :quote t00024:v1 ;
   :text """TODO: anna de vries
 * 84–1860
 19_1_1928
@@ -71,11 +71,12 @@ t00024:p2
 
 t00024:v1
   a :Quote ;
-  :target t00024:p2 ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part :Revelation.n.04 ;
     :verse "13"
-  ] .
+  ] ;
+  :target t00024:p2 ;
+  :text "TODO" .
 

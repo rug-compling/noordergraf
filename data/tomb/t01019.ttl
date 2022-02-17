@@ -14,9 +14,9 @@ tomb:t01019
     ] ;
     :nd "+53.1911+006.5931"^^ll:
   ] ;
+  :quote t01019:v1, t01019:v2 ;
   :site site:gr9722SNgroningen ;
   :subject t01019:p1, t01019:p2 ;
-  :quote t01019:v1 , t01019:v2 ;
   :text """TODO: rustplaats van
 geert jan drent
 geb.29 dec. 1876 te gron.
@@ -94,22 +94,23 @@ t01019:p2
 
 t01019:v1
   a :Quote ;
-  :target t01019:p1 ;
   :reference [
     a :BibleReference ;
     :chapter 8 ;
     :part :Epistle_to_the_Romans.n.04 ;
     :verse "38-39"
-  ] .
+  ] ;
+  :target t01019:p1 ;
+  :text "TODO" .
 
 t01019:v2
   a :Quote ;
-  :text "TODO" ;
-  :target t01019:p2 ;
   :reference [
     a :BibleReference ;
     :chapter 5 ;
     :part :Epistle_to_the_Romans.n.04 ;
     :verse "1,2"
-  ] .
+  ] ;
+  :target t01019:p2 ;
+  :text "TODO" .
 

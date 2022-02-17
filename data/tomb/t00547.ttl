@@ -2,17 +2,6 @@
 
 tomb:t00547
   a :Tomb ;
-  :text """TODO: tea
-gedachtenis van
-onze dierbare ouders
-jan mulder tzn.
-geb. 19 sept. 1834
-overl.14 ap atl 1906
-en
-geesjen venema
-geb: 8 april 1834
-oveal 30 maart 1913
-""" ;
   :image [
     dc:date "2019-11-24T14:09:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,7 +15,18 @@ oveal 30 maart 1913
     :nd "+53.1044+006.8755"^^ll:
   ] ;
   :site site:gr9641ANveendam ;
-  :subject t00547:p1, t00547:p2 .
+  :subject t00547:p1, t00547:p2 ;
+  :text """TODO: tea
+gedachtenis van
+onze dierbare ouders
+jan mulder tzn.
+geb. 19 sept. 1834
+overl.14 ap atl 1906
+en
+geesjen venema
+geb: 8 april 1834
+oveal 30 maart 1913
+""" .
 
 t00547:p1
   a :Male ;
@@ -50,8 +50,7 @@ t00547:p1
     :text "TODO: Jan Mulder Tzn"
   ] ;
   :relation [
-    a :Parent.n.01 ;
-    :target t00547:p3
+    a :Parent.n.01
   ] .
 
 t00547:p2
@@ -75,7 +74,6 @@ t00547:p2
     :text "TODO: Geesjen Venema"
   ] ;
   :relation [
-    a :Parent.n.01 ;
-    :target t00547:p3
+    a :Parent.n.01
   ] .
 

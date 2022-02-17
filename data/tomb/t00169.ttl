@@ -16,13 +16,7 @@ tomb:t00169
   ] ;
   :quote t00169:v1 ;
   :site site:gr9722SNgroningen ;
-  :subject [
-    a :Family ;
-    :name [
-      a :Name ;
-      :fullname "POLL"
-    ]
-  ] ;
+  :subject t00169:f ;
   :text """TODO: familie
 poll
 joh.2.2a
@@ -35,5 +29,12 @@ t00169:v1
     :chapter 2 ;
     :part :John.n.05 ;
     :verse "2A"
-  ] .
+  ] ;
+  :text "TODO" .
 
+t00169:f
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "POLL"
+  ] .

@@ -14,11 +14,11 @@ tomb:t00295
     ] ;
     :nd "+52.7150+006.4740"^^ll:
   ] ;
-  :quote [
+  :quote t00295:v1, [
     a :Quote ;
     :target t00295:p1 ;
     :text "HAAR LEVEN WAS CHRISTUS"
-  ] , t00295:v1 ;
+  ] ;
   :site site:dr7907CHhoogeveen ;
   :subject t00295:p1, t00295:p2 ;
   :symbol [
@@ -91,11 +91,12 @@ t00295:p2
 
 t00295:v1
   a :Quote ;
-  :target t00295:p2 ;
   :reference [
     a :BibleReference ;
     :chapter 16 ;
     :part :Epistle_to_the_Romans.n.04 ;
     :verse "27"
-  ] .
+  ] ;
+  :target t00295:p2 ;
+  :text "TODO" .
 

@@ -2,15 +2,6 @@
 
 tomb:t00679
   a :Tomb ;
-  :text """TODO: hier rusten
-mijn geliefde zusters
-geeske v.d. meulen
-* 25-3-1907
-+ 3-11--1932
-griet v.d. meulen
-* 23-12-1904
-1 28-1-7984
-""" ;
   :image [
     dc:date "2019-12-14T13:25:19"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -24,7 +15,16 @@ griet v.d. meulen
     :nd "+53.0675+005.5223"^^ll:
   ] ;
   :site site:fr8701DWbolsward ;
-  :subject t00679:p1, t00679:p2 .
+  :subject t00679:p1, t00679:p2 ;
+  :text """TODO: hier rusten
+mijn geliefde zusters
+geeske v.d. meulen
+* 25-3-1907
++ 3-11--1932
+griet v.d. meulen
+* 23-12-1904
+1 28-1-7984
+""" .
 
 t00679:p1
   a :Female ;
@@ -47,8 +47,7 @@ t00679:p1
     :text "TODO: Geeske van der Meulen"
   ] ;
   :relation [
-    a :Sister.n.01 ;
-    :target t00679:p3
+    a :Sister.n.01
   ] .
 
 t00679:p2
@@ -72,7 +71,6 @@ t00679:p2
     :text "TODO: Griet van der Meulen"
   ] ;
   :relation [
-    a :Sister.n.01 ;
-    :target t00679:p3
+    a :Sister.n.01
   ] .
 

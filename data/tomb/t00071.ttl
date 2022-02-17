@@ -2,19 +2,6 @@
 
 tomb:t00071
   a :Tomb ;
-  :age [
-    a :Age ;
-    :duration "P108Y11M3D"^^xsd:duration ;
-    :inferred true
-  ] ;
-  :dateOfBirth [
-    a :Date ;
-    :date "1838-05-03"^^xsd:date
-  ] ;
-  :dateOfDeath [
-    a :Date ;
-    :date "1947-04-06"^^xsd:date
-  ] ;
   :image [
     dc:date "2019-09-25T16:03:05"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,17 +13,6 @@ tomb:t00071
       geo:long 6.5951
     ] ;
     :nd "+53.1904+006.5951"^^ll:
-  ] ;
-  :placeOfBirth [
-    a :Town.n.01 ;
-    :place place:Emmen2756136 ;
-    :text "TODO: EMMEN"
-  ] ;
-  :placeOfDeath t00071:c1 ;
-  :relation [
-    a :Brother.n.01
-  ], [
-    a :Uncle.n.01
   ] ;
   :site site:gr9722SNgroningen ;
   :subject t00071:p1, t00071:p2 ;
@@ -100,5 +76,28 @@ t00071:p2
     a :Name ;
     :fullname "Adolf Kuiper" ;
     :text "TODO: Adolf Kuiper"
+  ] ;
+  :age [
+    a :Age ;
+    :duration "P108Y11M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1838-05-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-04-06"^^xsd:date
+  ] ;
+  :placeOfBirth [
+    a :Town.n.01 ;
+    :place place:Emmen2756136 ;
+    :text "TODO: EMMEN"
+  ] ;
+  :placeOfDeath t00071:c1 ;
+  :relation [
+    a :Brother.n.01
+  ], [
+    a :Uncle.n.01
   ] .
-

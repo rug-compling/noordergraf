@@ -5,13 +5,7 @@ tomb:t00181
   :text """TODO: familie
 rowaan
 """ ;
-  :subject [
-    a :Family ;
-    :name [
-      a :Name ;
-      :fullname "ROWAAN"
-    ]
-  ] ;
+  :subject t00181:f ;
   :image [
     dc:date "2019-10-05T10:18:02"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -26,3 +20,9 @@ rowaan
   ] ;
   :site site:gr9722SNgroningen .
 
+t00181:f
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "ROWAAN"
+  ] .

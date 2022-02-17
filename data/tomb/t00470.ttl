@@ -6,13 +6,7 @@ tomb:t00470
 familie
 berssenbrugge
 """ ;
-  :subject [
-    a :Family ;
-    :name [
-      a :Name ;
-      :fullname "BERSSENBRUGGE"
-    ]
-  ] ;
+  :subject t00470:f ;
   :image [
     dc:date "2019-11-09T15:03:55"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -27,3 +21,10 @@ berssenbrugge
   ] ;
   :site site:fr8915CPleeuwarden .
 
+t00470:f
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "BERSSENBRUGGE"
+  ] .
+  

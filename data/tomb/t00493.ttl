@@ -2,21 +2,6 @@
 
 tomb:t00493
   a :Tomb ;
-  :text """TODO: tpla
-\u1798
-van
-onze lieve vrouwenmoeder
-\ubc15
-helena panhuis
-lchtgen. van.pvo. zee
-geb. 21 juli 1854,
-overl.13 febr.1017.
-envant
-onze beste vader
-pieter v.d. zee
-geb 21 jul 1850,
-overl. 23 mei 1922.
-""" ;
   :image [
     dc:date "2019-11-16T13:57:23"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -30,7 +15,22 @@ overl. 23 mei 1922.
     :nd "+53.2097+005.7906"^^ll:
   ] ;
   :site site:fr8917AVleeuwarden ;
-  :subject t00493:p1, t00493:p2 .
+  :subject t00493:p1, t00493:p2 ;
+  :text """TODO: tpla
+ម
+van
+onze lieve vrouwenmoeder
+박
+helena panhuis
+lchtgen. van.pvo. zee
+geb. 21 juli 1854,
+overl.13 febr.1017.
+envant
+onze beste vader
+pieter v.d. zee
+geb 21 jul 1850,
+overl. 23 mei 1922.
+""" .
 
 t00493:p1
   a :Female ;
@@ -56,8 +56,7 @@ t00493:p1
     a :Wife.n.01 ;
     :target t00493:p2
   ], [
-    a :Mother.n.01 ;
-    :target t00493:p3
+    a :Mother.n.01
   ] .
 
 t00493:p2
@@ -81,7 +80,6 @@ t00493:p2
     :text "TODO: Pieter van der Zee"
   ] ;
   :relation [
-    a :Father.n.01 ;
-    :target t00493:p3
+    a :Father.n.01
   ] .
 
