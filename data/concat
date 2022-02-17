@@ -1,57 +1,74 @@
 #!/bin/bash
 
+function NOP {
+    echo "#$*"
+}
+
+ECHO=echo
+if [ "$1" = "-n" ]
+then
+    ECHO=NOP
+fi
+
 unset CDPATH
 
 cd `dirname $0`
 
 cat prefix.ttl
+echo
 
-echo '<ns> {'
+$ECHO '<ns> {'
 cat ns.ttl
-echo '}'
+echo
+$ECHO '}'
 
 cd tomb
 fgrep -h '@prefix' *.ttl
+echo
 for i in *.ttl
 do
     name="`basename $i .ttl`"
-    echo "<tomb/$name> {"
+    $ECHO "<tomb/$name> {"
     echo "tomb:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
     fgrep -h -v '@prefix' $i | ../../tools/name2soundex
-    echo "}"
+    echo
+    $ECHO "}"
 done
 
 cd ../site
 for i in *.ttl
 do
     name="`basename $i .ttl`"
-    echo "<site/$name> {"
+    $ECHO "<site/$name> {"
     echo "site:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
     cat $i
-    echo "}"
+    echo
+    $ECHO "}"
 done
 
 cd ../place
 for i in *.ttl
 do
     name="`basename $i .ttl`"
-    echo "<place/$name> {"
+    $ECHO "<place/$name> {"
     echo "place:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
     cat $i
-    echo "}"
+    echo
+    $ECHO "}"
 done
 
 cd ../symbol
 for i in *.ttl
 do
     name="`basename $i .ttl`"
-    echo "<symbol/$name> {"
+    $ECHO "<symbol/$name> {"
     echo "symbol:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
     cat $i
-    echo "}"
+    echo
+    $ECHO "}"
 done
 
-echo "<meta> {"
-echo "  <> dc:modified \"`date -u -Iseconds`\"^^xsd:dateTime ."
-echo "}"
-
+$ECHO "<meta> {"
+echo "  <https://noordergraf.rug.nl/> dc:modified \"`date -u -Iseconds`\"^^xsd:dateTime ."
+$ECHO "}"
+echo
