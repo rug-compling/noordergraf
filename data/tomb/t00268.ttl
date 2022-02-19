@@ -56,27 +56,29 @@ t00268:p1
     :text "TODO: LAGELAND"
   ] ;
   :relation [
+    a :Housemate.n.01 ;
+    :target t00268:p3
+  ], [
     a :Son.n.01 ;
     :target t00268:p2
   ], [
     a :Brother.n.01 ;
     :target t00268:p2
-  ], [
-    a :Housemate.n.01 ;
-    :target t00268:p3
   ] .
 
 t00268:p2
   a :Family ;
   :name [
     a :Name ;
-    :fullname "VANFRACHEM"
+    :fullname "VANFRACHEM" ;
+    :text "TODO"
   ] .
 
 t00268:p3
   a :Family ;
   :name [
     a :Name ;
-    :fullname "STEL"
+    :fullname "STEL" ;
+    :text "TODO"
   ] .
 

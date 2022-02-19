@@ -2,17 +2,6 @@
 
 tomb:t00239
   a :Tomb ;
-  :text """TODO: familie
-niewold
-1
-""" ;
-  :subject [
-    a :Family ;
-    :name [
-      a :Name ;
-      :fullname "NIEWOLD"
-    ]
-  ] ;
   :image [
     dc:date "2019-10-10T09:48:47"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,5 +14,17 @@ niewold
     ] ;
     :nd "+53.2064+006.5720"^^ll:
   ] ;
-  :site site:gr9725ACgroningen .
+  :site site:gr9725ACgroningen ;
+  :subject t00239:f ;
+  :text """TODO: familie
+niewold
+1
+""" .
 
+t00239:f
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "NIEWOLD" ;
+    :text "TODO"
+  ] .

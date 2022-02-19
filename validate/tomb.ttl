@@ -10,14 +10,23 @@
     sh:maxCount 1; 
   ] ;
   sh:property [
-    sh:path :text ;
-    sh:minCount 1;
-    sh:maxCount 1;
-    sh:or (
-      [ sh:datatype xsd:string ]
-      [ sh:datatype rdf:langString ]
-    )
+    sh:path :commemorator ;
+    sh:class :Person
   ] ;
+  sh:property [
+    sh:path :creator ;
+    sh:class :Creator ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :picture ;
+    sh:class :PictureClass ;
+    sh:property [
+      sh:path :theme ;
+      sh:class :Person
+    ]
+  ] ;
+  sh:property :OneText ;
   sh:property :MaybeImage ;
   sh:property [
     sh:path :site ;
@@ -34,18 +43,16 @@
   sh:property [
     sh:path :symbol ;
     sh:class symbol:Symbol ;
-    sh:property [
-      sh:path :comment ;
-      sh:or (
-        [ sh:datatype xsd:string ]
-        [ sh:datatype rdf:langString ]
-      )
-    ]
+    sh:property :AnyComment
   ] ;
   sh:property [
     sh:path :date ;
-    sh:datatype :Date ;
-    sh:maxCount 1
+    sh:maxCount 1 ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    )
   ] ;
   sh:property [
     sh:path dc:modified ;
@@ -55,15 +62,7 @@
 
 :MaybeQuote sh:path :quote ;
   sh:class :Quote ;
-  sh:property [
-    sh:path :text ;
-    sh:minCount 1;
-    sh:maxCount 1;
-    sh:or (
-      [ sh:datatype xsd:string ]
-      [ sh:datatype rdf:langString ]
-    )
-  ] ;
+  sh:property :OneText ;
   sh:property [
     sh:path :reference ;
     sh:class :Reference ;

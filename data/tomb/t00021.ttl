@@ -33,7 +33,10 @@ van onnen en haren.
 
 t00021:g1
   a :Personnel.n.01 ;
-  :organisation t00021:o .
+  :occupation [
+    a :Occupation ;
+    :organisation t00021:o
+  ] .
 
 t00021:o
   a :Company.n.01 ;

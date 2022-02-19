@@ -2,17 +2,6 @@
 
 tomb:t00311
   a :Tomb ;
-  :text """TODO: familiegraf
-van
-m.spikman
-""" ;
-  :subject [
-    a :Family ;
-    :name [
-      a :Name ;
-      :fullname "M. SPIKMAN"
-    ]
-  ] ;
   :image [
     dc:date "2019-10-19T14:15:47"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -25,5 +14,17 @@ m.spikman
     ] ;
     :nd "+52.7156+006.4734"^^ll:
   ] ;
-  :site site:dr7907CHhoogeveen .
+  :site site:dr7907CHhoogeveen ;
+  :subject t00311:f ;
+  :text """TODO: familiegraf
+van
+m.spikman
+""" .
 
+t00311:f
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "M. SPIKMAN" ;
+    :text "TODO"
+  ] .

@@ -21,15 +21,15 @@
         sh:datatype xsd:string
       ] ;
       sh:property [
-        sh:path :text ;
+        sh:path :fullnameSE ;
         sh:minCount 1 ;
-        sh:or (
-          [ sh:datatype xsd:string ]
-          [ sh:datatype rdf:langString ]
-        )
-      ]
+        sh:maxCount 1 ;
+        sh:datatype xsd:string
+      ] ;
+      sh:property :OneOrMoreText
     ]
   ] ;
+  sh:property :AnyText ;
   sh:property [
     sh:path :placeOfBirth ;
     sh:maxCount 1 ;
@@ -91,26 +91,41 @@
     sh:property [
       sh:path :location ;
       sh:maxCount 1 ;
-      sh:property [
-        sh:class :PlaceClass ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-	sh:property [
-          sh:path :text ;
-          sh:or (
-            [ sh:datatype xsd:string ]
-            [ sh:datatype rdf:langString ]
-          )
-        ]
-      ]
+      sh:class :PlaceClass ;
+      sh:property :AnyText
     ] ;
+    sh:property :AnyText
+  ] ;
+  sh:property [
+    sh:path :quantity ;
+    sh:maxCount 1 ;
     sh:property [
-      sh:path :text ;
-        sh:or (
-          [ sh:datatype xsd:string ]
-          [ sh:datatype rdf:langString ]
-        )
+      sh:class :Quantity ;
+      sh:property [
+	sh:path :number ;
+	sh:maxCount 1 ;
+	sh:datatype xsd:integer
+      ]
     ]
+  ] ;
+  sh:property [
+    sh:path :property ;
+    sh:class :Decoration ;
+    sh:property [
+      sh:path :title ;
+      sh:or (
+        [ sh:datatype xsd:string ]
+        [ sh:datatype rdf:langString ]
+      ) ;
+      sh:mincount 1 ;
+      sh:maxcount 1
+    ]
+  ] ;
+  sh:property [
+    sh:path :location ;
+    sh:class :PlaceClass ;
+    sh:maxCount 1 ;
+    sh:property :AnyText
   ] .
 
 :HasDate sh:class :Date ;
@@ -137,10 +152,4 @@
     sh:minCount 1 ;
     sh:maxCount 1
   ] ;
-  sh:property [
-    sh:path :text ;
-    sh:or (
-      [ sh:datatype xsd:string ]
-      [ sh:datatype rdf:langString ]
-    )
-  ] .
+  sh:property :AnyText .

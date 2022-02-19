@@ -2,14 +2,6 @@
 
 tomb:t00822
   a :Tomb ;
-  :text """TODO: jahtje iloda
-cerut
-cortiva
-familie
-dirk nie tule
-fokkema
-""" ;
-  :subject t00822:f ;
   :image [
     dc:date "2020-02-01T13:00:15"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -22,11 +14,21 @@ fokkema
     ] ;
     :nd "+53.2304+006.5513"^^ll:
   ] ;
-  :site site:gr9741ACgroningen .
+  :site site:gr9741ACgroningen ;
+  :subject t00822:f ;
+  :text """TODO: jahtje iloda
+cerut
+cortiva
+familie
+dirk nie tule
+fokkema
+""" .
 
 t00822:f
   a :Family ;
   :name [
     a :Name ;
-    :fullname "FOKKEMA"
+    :fullname "FOKKEMA" ;
+    :text "TODO"
   ] .
+
