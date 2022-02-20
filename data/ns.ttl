@@ -165,24 +165,28 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :Person ;
   rdfs:isDefinedBy : .
 
-:Reference a rdfs:Class ;
+:BaseReference a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:isDefinedBy : .
 
+:Reference a rdfs:Class ;
+  rdfs:subClassOf :BaseReference ;
+  rdfs:isDefinedBy : .
+
 :BibleReference a rdfs:Class ;
-  rdfs:subClassOf :Reference ;
+  rdfs:subClassOf :BaseReference ;
   rdfs:isDefinedBy : .
 
 :HymnReference a rdfs:Class ;
-  rdfs:subClassOf :Reference ;
+  rdfs:subClassOf :BaseReference ;
   rdfs:isDefinedBy : .
 
 :MusicReference a rdfs:Class ;
-  rdfs:subClassOf :Reference ;
+  rdfs:subClassOf :BaseReference ;
   rdfs:isDefinedBy : .
 
 :BookReference a rdfs:Class ;
-  rdfs:subClassOf :Reference ;
+  rdfs:subClassOf :BaseReference ;
   rdfs:isDefinedBy : .
 
 :PlaceClass a rdfs:Class ;

@@ -1,0 +1,151 @@
+:QuoteShape a sh:NodeShape ;
+  sh:targetClass :Quote ;
+  sh:class :Quote ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property :OneText ;
+  sh:property [
+    sh:path :reference ;
+    sh:class :BaseReference ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :target ;
+    sh:class :Person ;
+  ] ;
+  sh:property :AnyComment .
+
+:ReferenceShape a sh:NodeShape ;
+  sh:targetClass :Reference ;
+  sh:class :Reference ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property :AnyComment .
+
+:BibleReferenceShape a sh:NodeShape ;
+  sh:targetClass :BibleReference ;
+  sh:class :BibleReference ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :part ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :chapter ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :verse ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :scripture ;
+    sh:maxCount 1
+  ] ;
+  sh:property :AnyComment .
+
+:BookReferenceShape a sh:NodeShape ;
+  sh:targetClass :BookReference ;
+  sh:class :BookReference ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :author
+  ] ;
+  sh:property [
+    sh:path :title
+  ] ;
+  sh:property [
+    sh:path :date
+  ] ;
+  sh:property :AnyComment .
+
+:HymnReferenceShape a sh:NodeShape ;
+  sh:targetClass :HymnReference ;
+  sh:class :HymnReference ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :title ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path :source ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+  ] ;
+  sh:property :AnyComment .
+
+:MusicReferenceShape a sh:NodeShape ;
+  sh:targetClass :MusicReference ;
+  sh:class :MusicReference ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :artist ;
+    sh:datatype xsd:string
+  ] ;
+  sh:property [
+    sh:path :title ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    ) ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :albumTitle ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    ) ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :albumTrack ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :date ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :discogs ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+  ] ;
+  sh:property :AnyComment .
