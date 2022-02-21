@@ -14,6 +14,22 @@ tomb:t01042
     ] ;
     :nd "+53.2649+006.3939"^^ll:
   ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 23
+    ] ;
+    :target t01042:p1 ;
+    :text "ps. 23"
+  ], [
+    a :Quote ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :target t01042:p2 ;
+    :text "gez. 29"
+  ] ;
   :site site:gr9804TEnoordhorn ;
   :subject t01042:p1, t01042:p2 ;
   :symbol [
@@ -22,23 +38,6 @@ tomb:t01042
     a symbol:Frond
   ], [
     a symbol:Ribbon
-  ] ;
-  :quote [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 23 ;
-      :part :Psalm.n.01
-    ] ;
-    :text "ps. 23" ;
-    :target t01042:p1
-  ] , [
-    a :Quote ;
-    :reference [
-      a :HymnReference
-    ] ;
-    :text "gez. 29" ;
-    :target t01042:p2
   ] ;
   :text """TODO: 然
 som

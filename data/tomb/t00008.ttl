@@ -14,12 +14,12 @@ tomb:t00008
     ] ;
     :nd "+53.1899+006.5929"^^ll:
   ] ;
+  :quote t00008:v1 ;
   :site site:gr9722SNgroningen ;
   :subject t00008:p1, t00008:p2 ;
   :symbol [
     a symbol:Frond
   ] ;
-  :quote t00008:v1 ;
   :text """TODO: \"
 hier rust
 ons geliefd dochtertje
@@ -89,12 +89,11 @@ t00008:p2
 
 t00008:v1
   a :Quote ;
-  :text "mattheüs 19:14" ;
-  :target t00008:p1 ;
   :reference [
-    a :BibleReference ;
+    a :BibleMatthew ;
     :chapter 19 ;
-    :part :Matthew.n.02 ;
     :verse "14"
-  ] .
+  ] ;
+  :target t00008:p1 ;
+  :text "mattheüs 19:14" .
 

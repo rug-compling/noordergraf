@@ -14,12 +14,12 @@ tomb:t00005
     ] ;
     :nd "+53.1898+006.5930"^^ll:
   ] ;
+  :quote t00005:v1, t00005:v2, t00005:v3 ;
   :site site:gr9722SNgroningen ;
   :subject t00005:p1, t00005:p2, t00005:p3, t00005:p4, t00005:p5 ;
   :symbol [
     a symbol:Frond
   ] ;
-  :quote t00005:v1 , t00005:v2 , t00005:v3 ;
   :text """TODO: hep rusten
 thussiena pieta
 2 juni 1959 jo nov. 1959
@@ -130,35 +130,32 @@ t00005:p5
 
 t00005:v1
   a :Quote ;
-  :text "ps. 105:5" ;
-  :target t00005:p1 ;
   :reference [
-    a :BibleReference ;
+    a :BiblePsalms ;
     :chapter 105 ;
-    :part :Psalm.n.01 ;
     :verse "5"
-  ] .
+  ] ;
+  :target t00005:p1 ;
+  :text "ps. 105:5" .
 
 t00005:v2
   a :Quote ;
-  :text "ps. 145:18" ;
-  :target t00005:p4 ;
   :reference [
-    a :BibleReference ;
+    a :BiblePsalms ;
     :chapter 145 ;
-    :part :Psalm.n.01 ;
     :verse "18"
-  ] .
+  ] ;
+  :target t00005:p4 ;
+  :text "ps. 145:18" .
 
 t00005:v3
   a :Quote ;
-  :text "1 joh. 1:7" ;
-  :target t00005:p5 ;
   :reference [
-    a :BibleReference ;
+    a :Bible1John ;
     :chapter 1 ;
-    :part :FirstJohn ;
-    :verse "7" ;
-    :scripture <https://www.bible.com/nl/bible/75/1JN.1.7>
-  ] .
+    :scripture <https://www.bible.com/nl/bible/75/1JN.1.7> ;
+    :verse "7"
+  ] ;
+  :target t00005:p5 ;
+  :text "1 joh. 1:7" .
 

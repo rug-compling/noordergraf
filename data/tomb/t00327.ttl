@@ -14,22 +14,21 @@ tomb:t00327
     ] ;
     :nd "+52.7151+006.4740"^^ll:
   ] ;
+  :quote t00327:v1, [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 10 ;
+      :comment "onberijmd" ;
+      :verse "14"
+    ] ;
+    :target t00327:p4 ;
+    :text "ps.10:14 onb."
+  ] ;
   :site site:dr7907CHhoogeveen ;
   :subject t00327:p1, t00327:p2, t00327:p3, t00327:p4 ;
   :symbol [
     a symbol:WeepingWillow
-  ] ;
-  :quote t00327:v1 , [
-    a :Quote ;
-    :reference [
-      a :BibleReference ;
-      :chapter 10 ;
-      :comment "onberijmd" ;
-      :part :Psalm.n.01 ;
-      :verse "14"
-    ] ;
-    :text "ps.10:14 onb." ;
-    :target t00327:p4
   ] ;
   :text """TODO: hier
 rust
@@ -143,12 +142,11 @@ t00327:r3
 
 t00327:v1
   a :Quote ;
-  :text "TODO" ;
-  :target t00327:p1 ;
   :reference [
-    a :BibleReference ;
+    a :BibleRevelation ;
     :chapter 14 ;
-    :part :Revelation.n.04 ;
     :verse "13B"
-  ] .
+  ] ;
+  :target t00327:p1 ;
+  :text "TODO" .
 
