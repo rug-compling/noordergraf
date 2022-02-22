@@ -1,0 +1,102 @@
+@prefix t00539: <https://noordergraf.rug.nl/tomb/T00539#> .
+
+tomb:T00539
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-24T14:19:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00539.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1042 ;
+      geo:long 6.8758
+    ] ;
+    :nd "+53.1042+006.8758"^^ll:
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00539:P1, t00539:P2 ;
+  :symbol [
+    a symbol:OakBranch
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Butterfly
+  ], [
+    a symbol:Cocoon
+  ], [
+    a symbol:InvertedTorch
+  ] ;
+  :text """TODO: :19
+audplaats
+van den heer
+van der wij
+an epi
+gepensioneerd
+donderwijs
+in neerlandech nale
+gedte hoogezand
+den 21 augustus
+1817
+werlite veendam
+den 19 juni
+1880:
+echtgenoot van
+theodora henrica
+muller
+""" .
+
+t00539:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y9M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1817-08-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-06-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Eppes van der Wijk" ;
+    :text "TODO: Jan Eppes van der Wijk"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:13320 ;
+    :location [
+      a :Colony ;
+      :place place:Indonesie1643084 ;
+      :text "TODO: NEDERLANDS-INDIË"
+    ] ;
+    :text "gepensioneerd Hoofdonderwijzer" ;
+    :wordnet "TODO: Principal.n.02"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00539:P2
+  ] .
+
+t00539:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Theodora Henrica Muller" ;
+    :text "TODO: Theodora Henrica Muller"
+  ] .
+

@@ -1,0 +1,93 @@
+@prefix t01057: <https://noordergraf.rug.nl/tomb/T01057#> .
+
+tomb:T01057
+  a :Tomb ;
+  :image [
+    dc:date "2020-05-02T16:43:47"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01057.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3624 ;
+      geo:long 6.3530
+    ] ;
+    :nd "+53.3624+006.3530"^^ll:
+  ] ;
+  :site site:NLgr9971ebUlrum ;
+  :subject t01057:P1, t01057:P2, t01057:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplastove
+.
+kornelis
+de vries
+gebledernhuizen
+5 dec: 1854
+overlite sekerk
+2 mberart 1931.
+construedununucen
+wdussel
+daarnavan
+p. miemstra
+""" .
+
+t01057:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y2M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-12-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-03-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Kornelis de Vries" ;
+    :text "TODO: Kornelis de Vries"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Hornhuizen2753604 ;
+    :text "TODO: HORNHUIZEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Niekerk2750390 ;
+    :text "TODO: NIEKERK"
+  ] ;
+  :relation t01057:R1, t01057:R2 .
+
+t01057:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "W. Dussel" ;
+    :text "TODO: W. Dussel"
+  ] .
+
+t01057:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "P. Hiemstra" ;
+    :text "TODO: P. Hiemstra"
+  ] .
+
+t01057:R1
+  a :Widower ;
+  :before t01057:R2 ;
+  :target t01057:P2 .
+
+t01057:R2
+  a :Widower ;
+  :after t01057:R1 ;
+  :target t01057:P3 .
+

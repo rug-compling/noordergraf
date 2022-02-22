@@ -1,0 +1,44 @@
+@prefix p00002: <https://noordergraf.rug.nl/tomb/P00002#> .
+
+tomb:P00002
+  a :Tomb ;
+  :image [
+    dc:date "2021-07-01T10:08:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:P00001.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 49.0753 ;
+      geo:long 2.1789
+    ] ;
+    :nd "+49.0753+002.1789"^^ll:
+  ] ;
+  :site site:FR95430AuversSurOise ;
+  :subject p00002:P1 ;
+  :text """ici repose
+Théodore van Gogh
+1857 — 1891
+""" .
+
+p00002:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P34Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Théodore van Gogh" ;
+    :text "TODO: Théodore van Gogh"
+  ] .
+

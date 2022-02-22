@@ -1,0 +1,88 @@
+@prefix t00666: <https://noordergraf.rug.nl/tomb/T00666#> .
+
+tomb:T00666
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:53:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00666.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0688 ;
+      geo:long 5.5239
+    ] ;
+    :nd "+53.0688+005.5239"^^ll:
+  ] ;
+  :quote t00666:V1, [
+    a :Quote ;
+    :text "ZALIG ZIJN ZIJ DIE NIET ZULLEN \\ GEZIEN HEBBEN EN NOCHTANS \\ ZULLEN GELOOFD HEBBEN"@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00666:P1, t00666:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: sq petober 1864,
+coller
+ker rus
+het sleff lijkeve hai
+vran ons
+onzeychelle
+vrouw enmerder
+truntje d.dejong
+geboren den
+verleden den
+28 april 1935
+tj de boer
+mokinderen
+laliberin zilienet zullen
+bezienhebbenen merilans
+ullenerloofthebben
+oh men 20 vers 208
+""" .
+
+t00666:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P63Y6M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1851-10-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-04-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Trijntje D. de Jong" ;
+    :text "TODO: Trijntje D. de Jong"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Wife ;
+    :target t00666:P2
+  ] .
+
+t00666:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "T.IJ. de Boer" ;
+    :text "TODO: T.IJ. de Boer"
+  ] .
+
+t00666:V1
+  a :Quote ;
+  :reference [
+    a :BibleJohn ;
+    :chapter 20 ;
+    :verse "29B"
+  ] ;
+  :text "TODO" .
+

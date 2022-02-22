@@ -1,0 +1,54 @@
+@prefix t00592: <https://noordergraf.rug.nl/tomb/T00592#> .
+
+tomb:T00592
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-30T14:24:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00592.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3267 ;
+      geo:long 6.5120
+    ] ;
+    :nd "+53.3267+006.5120"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "ADIEU MON PÈRE, OPA"@fra
+  ] ;
+  :site site:NLgr9951tnWinsum ;
+  :subject t00592:P1 ;
+  :symbol [
+    a symbol:Mountains
+  ], [
+    a symbol:Stave
+  ] ;
+  :text """TODO: kornelis siegers
+11 - 7 - 1934
+6 - 2 - 2001
+adieu mon père, opa
+""" .
+
+t00592:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y6M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1934-07-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-02-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Kornelis Siegers" ;
+    :text "TODO: Kornelis Siegers"
+  ] .
+

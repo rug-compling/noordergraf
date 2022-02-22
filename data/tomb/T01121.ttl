@@ -1,0 +1,44 @@
+@prefix t01121: <https://noordergraf.rug.nl/tomb/T01121#> .
+
+tomb:T01121
+  a :Tomb ;
+  :image [
+    dc:date "2021-03-27T12:49:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01121.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2259 ;
+      geo:long 6.3531
+    ] ;
+    :nd "+53.2259+006.3531"^^ll:
+  ] ;
+  :site site:NLgr9822akNiekerk ;
+  :subject t01121:P1 ;
+  :symbol [
+    a symbol:SkullAndBones
+  ] ;
+  :text "TODO" .
+
+t01121:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P76Y2M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1795-09-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1871-12-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "H. Heukers" ;
+    :text "TODO: H. Heukers"
+  ] .
+

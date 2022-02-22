@@ -1,0 +1,73 @@
+@prefix t00719: <https://noordergraf.rug.nl/tomb/T00719#> .
+
+tomb:T00719
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:24:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00719.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7815 ;
+      geo:long 6.9001
+    ] ;
+    :nd "+52.7815+006.9001"^^ll:
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00719:P1, t00719:P2 ;
+  :text """TODO: hier rust onze
+geliefde moeder
+catarina frederika
+henmandegroot,
+geboren te gouda
+20 febr. 1850
+querledenteemmen
+1 april 1932 ,
+dedune
+m. luijendijk
+""" .
+
+t00719:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y1M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-04-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Catharina Frederika Herman de Groot" ;
+    :text "TODO: Catharina Frederika Herman de Groot"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Gouda2755420 ;
+    :text "TODO: GOUDA"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Emmen2756136 ;
+    :text "TODO: EMMEN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00719:P2
+  ] .
+
+t00719:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "M. Luijendijk" ;
+    :text "TODO: M. Luijendijk"
+  ] .
+

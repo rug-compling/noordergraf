@@ -1,0 +1,57 @@
+@prefix t00480: <https://noordergraf.rug.nl/tomb/T00480#> .
+
+tomb:T00480
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:38:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00480.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2071 ;
+      geo:long 5.7687
+    ] ;
+    :nd "+53.2071+005.7687"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "REQUIESCAT IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00480:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Cross
+  ] ;
+  :text """TODO: w
+hier rust
+leonardus marie
+van der linden.
+ger. 5 april 1891.
+overl. 28 jan.1915
+r.i.p.
+""" .
+
+t00480:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P23Y9M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-04-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-01-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Leonardus Marie van der Linden" ;
+    :text "TODO: Leonardus Marie van der Linden"
+  ] .
+

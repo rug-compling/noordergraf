@@ -1,0 +1,84 @@
+@prefix t00675: <https://noordergraf.rug.nl/tomb/T00675#> .
+
+tomb:T00675
+  a :Tomb ;
+  :text """TODO: mier rusten
+onze liene
+quders opa en oma
+theo van bergen
+21:1910
+* 30-1-1975
+boukje de ree
++2-7-1999
+f 16-3-1998
++
+kindedex en kl-kinderen
+--hael
+""" ;
+  :image [
+    dc:date "2019-12-14T13:33:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00675.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0685 ;
+      geo:long 5.5219
+    ] ;
+    :nd "+53.0685+005.5219"^^ll:
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00675:P1, t00675:P2 .
+
+t00675:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y2M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-11-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1979-01-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Theo van Bergen" ;
+    :text "TODO: Theo van Bergen"
+  ] ;
+  :relation [
+    a :Grandfather
+  ], [
+    a :Parent
+  ] .
+
+t00675:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y8M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1998-03-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Boukje de Ree" ;
+    :text "TODO: Boukje de Ree"
+  ] ;
+  :relation [
+    a :Grandmother
+  ], [
+    a :Parent
+  ] .
+

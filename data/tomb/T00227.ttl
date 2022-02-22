@@ -1,0 +1,79 @@
+@prefix t00227: <https://noordergraf.rug.nl/tomb/T00227#> .
+
+tomb:T00227
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:40:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00227.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6366
+    ] ;
+    :nd "+53.2225+006.6366"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00227:P1, t00227:P2 ;
+  :symbol [
+    a symbol:Hourglass
+  ], [
+    a symbol:Scythe
+  ], [
+    a symbol:InvertedTorch
+  ] ;
+  :text """TODO: sergedachtenis van
+koop jans
+emmekamp
+geb.te middelheet
+den 31 december 1831
+osiedlite selman
+den 15 juli 1902
+echtgenoot van
+aukije velthuis
+""" .
+
+t00227:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y5M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1831-12-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1902-06-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Koop Jans Emmelkamp" ;
+    :text "TODO: Koop Jans Emmelkamp"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Middelbert2750902 ;
+    :text "TODO: MIDDELBERT"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Helpman2754444 ;
+    :text "TODO: HELPMAN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00227:P2
+  ] .
+
+t00227:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Auktje Velthuis" ;
+    :text "TODO: Auktje Velthuis"
+  ] .
+

@@ -1,0 +1,41 @@
+@prefix t01132: <https://noordergraf.rug.nl/tomb/T01132#> .
+
+tomb:T01132
+  a :Tomb ;
+  :text "TODO" ;
+  :image [
+    dc:date "2021-04-23T11:27:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01132.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1625 ;
+      geo:long 6.6142
+    ] ;
+    :nd "+53.1625+006.6142"^^ll:
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t01132:P1 .
+
+t01132:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y10M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-05-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-03-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Martha Vroom Groenewold" ;
+    :text "TODO: Martha Vroom Groenewold"
+  ] .
+

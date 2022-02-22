@@ -1,0 +1,43 @@
+@prefix t00685: <https://noordergraf.rug.nl/tomb/T00685#> .
+
+tomb:T00685
+  a :Cross ;
+  :text """TODO: john zoetendal
+* 13 juli 1937 \u2020 13 april 2001
+""" ;
+  :image [
+    dc:date "2019-12-14T13:18:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00685.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0684 ;
+      geo:long 5.5234
+    ] ;
+    :nd "+53.0684+005.5234"^^ll:
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00685:P1 .
+
+t00685:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y9M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-07-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-04-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "John Zoetendal" ;
+    :text "TODO: John Zoetendal"
+  ] .
+

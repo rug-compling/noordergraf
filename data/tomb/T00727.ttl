@@ -1,0 +1,93 @@
+@prefix t00727: <https://noordergraf.rug.nl/tomb/T00727#> .
+
+tomb:T00727
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:11:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00727.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7820 ;
+      geo:long 6.8971
+    ] ;
+    :nd "+52.7820+006.8971"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HAAR BEGEERTE WAS OM ONTBONDEN \\ TE WORDEN EN MET CHRISTUS TE ZIJN \\ DAT WAS HAAR VERRE WEG HET BESTE "@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :BiblePhilippians ;
+      :chapter 1 ;
+      :verse "23"
+    ] ;
+    :text "Filip 1:23."@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00727:P1, t00727:P2, t00727:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: nordea
+macie
+e
+hier rust
+het sleflakoverschotwara
+jantje aikes
+geboren defan. 1951
+overleden 31 sept:19:16
+geliefile dochter van
+klaas aikes en
+fennigje huizing
+lt
+haar begeerte was fm cntbonden
+te wor
+christus te zijn
+dat whaar e. be weg het beste
+filip 1:23
+""" .
+
+t00727:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P36Y8M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-01-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-09-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Aikes" ;
+    :text "TODO: Jantje Aikes"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00727:P2, t00727:P3
+  ] .
+
+t00727:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Klaas Aikes" ;
+    :text "TODO: Klaas Aikes"
+  ] .
+
+t00727:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Fennighe Huizing" ;
+    :text "TODO: Fennighe Huizing"
+  ] .
+

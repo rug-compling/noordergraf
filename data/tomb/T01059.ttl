@@ -1,0 +1,94 @@
+@prefix t01059: <https://noordergraf.rug.nl/tomb/T01059#> .
+
+tomb:T01059
+  a :Tomb ;
+  :image [
+    dc:date "2020-05-02T16:42:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01059.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3563 ;
+      geo:long 6.3373
+    ] ;
+    :nd "+53.3563+006.3373"^^ll:
+  ] ;
+  :site site:NLgr9971ebUlrum ;
+  :subject t01059:P1, t01059:P2, t01059:P3 ;
+  :symbol [
+    a symbol:Branch
+  ], [
+    a symbol:Branch
+  ] ;
+  :text """TODO: rutlaat
+dan
+elzo
+van kampen
+gebte ulrum
+po
+23
+0
+22
+34 april 1877
+overl. aldaar
+j4 dec. 3955
+echtgenoot van
+j. bulthuis
+eerder van
+j. wolters
+""" .
+
+t01059:C1
+  a :Village ;
+  :place place:Ulrum2745944 ;
+  :text "TODO: ULRUM" .
+
+t01059:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y8M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-04-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-12-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Elzo van Kampen" ;
+    :text "TODO: Elzo van Kampen"
+  ] ;
+  :placeOfBirth t01059:C1 ;
+  :placeOfDeath t01059:C1 ;
+  :relation t01059:R1, [
+    a :Spouse ;
+    :before t01059:R1 ;
+    :target t01059:P3
+  ] .
+
+t01059:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "J. Bulthuis" ;
+    :text "TODO: J. Bulthuis"
+  ] .
+
+t01059:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "J. Wolters" ;
+    :text "TODO: J. Wolters"
+  ] .
+
+t01059:R1
+  a :Spouse ;
+  :target t01059:P2 .
+

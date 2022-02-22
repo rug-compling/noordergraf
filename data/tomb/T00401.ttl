@@ -1,0 +1,87 @@
+@prefix t00401: <https://noordergraf.rug.nl/tomb/T00401#> .
+
+tomb:T00401
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-26T14:47:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00401.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2518 ;
+      geo:long 6.1447
+    ] ;
+    :nd "+53.2518+006.1447"^^ll:
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00401:P1, t00401:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ] ;
+  :text """TODO: ter gedachtenis
+aan onze gel.
+vrouw en moeder
+grietje land
+* 23 - 4 - 1885
++ 36 -7 - 1969
+en onze gel vader
+anne ellens
+# 2 - 12 - 1884
++ 17-3-1976
+de kinderen
+""" .
+
+t00401:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y3M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-07-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Land" ;
+    :text "TODO: Grietje Land"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Wife ;
+    :target t00401:P2
+  ] .
+
+t00401:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P90Y3M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-03-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Anne Ellens" ;
+    :text "TODO: Anne Ellens"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+

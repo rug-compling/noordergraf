@@ -1,0 +1,82 @@
+@prefix t00550: <https://noordergraf.rug.nl/tomb/T00550#> .
+
+tomb:T00550
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-24T14:05:22"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00550.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1045 ;
+      geo:long 6.8758
+    ] ;
+    :nd "+53.1045+006.8758"^^ll:
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00550:P1 ;
+  :symbol [
+    a symbol:OliveBranch
+  ], [
+    a symbol:Book
+  ], [
+    a symbol:Inkpot
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: formulaillina
+wan
+odding
+jan
+gdtornien
+warunuary 1787
+de
+marlante riendas
+mar1 ma 1862
+ruim 10 jarn
+hojdemderniers
+in deze gemeente
+""" .
+
+t00550:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y3M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1787-01-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1862-05-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Odding" ;
+    :text "TODO: Jan Odding"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:13320 ;
+    :location [
+      a :Municipality ;
+      :place place:Veendam2745783 ;
+      :text "TODO: VEENDAM"
+    ] ;
+    :wordnet "TODO: Principal.n.02"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Norg2749796 ;
+    :text "TODO: NORG"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] .
+

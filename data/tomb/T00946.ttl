@@ -1,0 +1,82 @@
+@prefix t00946: <https://noordergraf.rug.nl/tomb/T00946#> .
+
+tomb:T00946
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-21T13:19:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00946.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1383 ;
+      geo:long 7.1432
+    ] ;
+    :nd "+53.1383+007.1432"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "GESCHONKEN DOOR $p2 EN $p3"@nld
+  ] ;
+  :site site:NLgr9696xgOudeschans ;
+  :subject t00946:P1, t00946:P2, t00946:P3 ;
+  :symbol [
+    a symbol:Tree
+  ], [
+    a symbol:Deer
+  ], [
+    a symbol:OakBranch
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: wustplaats
+peino pietersi
+vanheuvelen
+geb. 30 juli
+1822
+overl. jan.
+1902
+geschonken door
+14.v heutela
+dushes
+""" .
+
+t00946:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y5M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1824-07-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1902-01-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Feiko Pieters van Heuvelen" ;
+    :text "TODO: Feiko Pieters van Heuvelen"
+  ] .
+
+t00946:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "A. van Heuvelen" ;
+    :text "TODO: A. van Heuvelen"
+  ] .
+
+t00946:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "M.D. Hiskes" ;
+    :text "TODO: M.D. Hiskes"
+  ] .
+

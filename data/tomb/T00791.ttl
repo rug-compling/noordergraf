@@ -1,0 +1,75 @@
+@prefix t00791: <https://noordergraf.rug.nl/tomb/T00791#> .
+
+tomb:T00791
+  a :Tomb ;
+  :image [
+    dc:date "2020-01-18T13:10:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00791.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2776 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2776+006.6936"^^ll:
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00791:P1 ;
+  :text """TODO: hlendril je bolt
+geb.6 oct. 97
+ten boer
+overl. 25 juli 1918
+docliter van
+j ball
+a bolt doornbós
+""" .
+
+t00791:C1
+  a :Village ;
+  :place place:TenBoer2746491 ;
+  :text "TODO: TEN BOER" .
+
+t00791:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y9M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-10-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-07-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikje Bolt" ;
+    :text "TODO: Hendrikje Bolt"
+  ] ;
+  :placeOfBirth t00791:C1 ;
+  :placeOfDeath t00791:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00791:P2, t00791:P3
+  ] .
+
+t00791:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "J. Bolt" ;
+    :text "TODO: J. Bolt"
+  ] .
+
+t00791:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "A. Bolt-Doornbos" ;
+    :text "TODO: A. Bolt-Doornbos"
+  ] .
+

@@ -1,0 +1,31 @@
+@prefix t00470: <https://noordergraf.rug.nl/tomb/T00470#> .
+
+tomb:T00470
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T15:03:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00470.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2065 ;
+      geo:long 5.7695
+    ] ;
+    :nd "+53.2065+005.7695"^^ll:
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00470:F ;
+  :text """TODO: us
+familie
+berssenbrugge
+""" .
+
+t00470:F
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "BERSSENBRUGGE" ;
+    :text "TODO"
+  ] .
+

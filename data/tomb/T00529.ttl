@@ -1,0 +1,77 @@
+@prefix t00529: <https://noordergraf.rug.nl/tomb/T00529#> .
+
+tomb:T00529
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:23:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00529.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1648 ;
+      geo:long 6.7537
+    ] ;
+    :nd "+53.1648+006.7537"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "SOMEWHERE I'LL FIND YOU"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00529:P1, t00529:P2 ;
+  :symbol [
+    a symbol:Sailboat
+  ] ;
+  :text """TODO: vis
+somewhere i'll find you
+loek straube
+jombang – 31-8-1932
+hoogezand + 28-5-1997
+echtgenoot van
+mary straube
+""" .
+
+t00529:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y8M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1932-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-05-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Loek Straube" ;
+    :text "TODO: Loek Straube"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Jombang1642414 ;
+    :text "TODO: JOMBANG"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00529:P2
+  ] .
+
+t00529:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Mary Straube" ;
+    :text "TODO: Mary Straube"
+  ] .
+

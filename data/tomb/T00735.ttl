@@ -1,0 +1,50 @@
+@prefix t00735: <https://noordergraf.rug.nl/tomb/T00735#> .
+
+tomb:T00735
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-29T16:18:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00735.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1851 ;
+      geo:long 7.2695
+    ] ;
+    :nd "+53.1851+007.2695"^^ll:
+  ] ;
+  :site site:DE26831Bunde ;
+  :subject t00735:P1 ;
+  :symbol [
+    a symbol:OilLamp
+  ] ;
+  :text """TODO: s
+(r rust
+ib.diddens
+iden
+ipfolen
+wall
+""" .
+
+t00735:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y9M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1766-12-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1848-09-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "H.B. Diddens" ;
+    :text "TODO: H.B. Diddens"
+  ] .
+

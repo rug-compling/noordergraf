@@ -1,0 +1,94 @@
+@prefix t01029: <https://noordergraf.rug.nl/tomb/T01029#> .
+
+tomb:T01029
+  a :Tomb ;
+  :creator t01029:P3 ;
+  :image [
+    dc:date "2020-04-17T18:27:02"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01029.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3808 ;
+      geo:long 6.8589
+    ] ;
+    :nd "+53.3808+006.8589"^^ll:
+  ] ;
+  :site site:NLgr9906ppBierum ;
+  :subject t01029:P1, t01029:P2 ;
+  :symbol [
+    a symbol:Butterfly
+  ], [
+    a symbol:WingedHourglass1
+  ] ;
+  :text """TODO: sergdachtenis
+van hindriktje
+tewesvanhuizen
+geborenden it
+februari 1797
+le uithuinner
+joveruden den
+februarijers
+1808
+to
+birum
+weduwe van
+n.e.wolthuis. .
+wyccr.
+luuni
+""" .
+
+t01029:C2
+  a :Village ;
+  :place place:Bierum2758983 ;
+  :text "TODO: BIERUM" .
+
+t01029:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1797-02-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1868-02-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hindriktje Tewes van Huizen" ;
+    :text "TODO: Hindriktje Tewes van Huizen"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Uithuizen2745970 ;
+    :text "TODO: UITHUIZEN"
+  ] ;
+  :placeOfDeath t01029:C2 ;
+  :relation [
+    a :Widow ;
+    :target t01029:P2
+  ] .
+
+t01029:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "N.E. Wolthuis" ;
+    :text "TODO: N.E. Wolthuis"
+  ] .
+
+t01029:P3
+  a :Creator ;
+  :location t01029:C2 ;
+  :name [
+    a :Name ;
+    :fullname "W. MEIJER" ;
+    :text "TODO"
+  ] .
+

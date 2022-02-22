@@ -1,0 +1,105 @@
+@prefix t00597: <https://noordergraf.rug.nl/tomb/T00597#> .
+
+tomb:T00597
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-30T14:12:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00597.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3266 ;
+      geo:long 6.5115
+    ] ;
+    :nd "+53.3266+006.5115"^^ll:
+  ] ;
+  :quote t00597:C1, [
+    a :Quote ;
+    :text "AMICITIA ET TOLERANTIA"@nld
+  ] ;
+  :site site:NLgr9951tnWinsum ;
+  :subject t00597:P1, t00597:P2 ;
+  :text """TODO: -
+cornelis dirk saal
+* 217 1917 + 9-12 1986
+socioloog rug
+geliefde echtgenoot en leermeester yan
+toos maria zuurveen
+* 2 - 12 - 1934 + 2917-2004
+auteur
+\"amicitia et tolerantia
+icor 13
+""" .
+
+t00597:C1
+  a :Quote ;
+  :reference [
+    a :Bible1Corinthians ;
+    :chapter 13
+  ] ;
+  :text "1 Cor. 13" .
+
+t00597:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y4M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-07-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1986-12-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Cornelis Dirk Saal" ;
+    :text "TODO: Cornelis Dirk Saal"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:19220 ;
+    :organisation [
+      a :University.n.02 ;
+      :orgname "RIJKSUNIVERSITEIT GRONINGEN"
+    ] ;
+    :wordnet "TODO: Sociologist.n.01"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00597:P2
+  ], [
+    a :Leermeester ;
+    :target t00597:P2
+  ] .
+
+t00597:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y7M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1934-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2004-07-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Toos Maria Zuurveen" ;
+    :text "TODO: Toos Maria Zuurveen"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:15120 ;
+    :wordnet "TODO: Author.n.01"
+  ] .
+

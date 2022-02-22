@@ -1,0 +1,97 @@
+@prefix t01004: <https://noordergraf.rug.nl/tomb/T01004#> .
+
+tomb:T01004
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-04T10:50:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01004.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1757 ;
+      geo:long 7.0949
+    ] ;
+    :nd "+53.1757+007.0949"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleAmos ;
+      :chapter 5 ;
+      :scripture <https://www.bible.com/bible/1990/AMO.5.6> ;
+      :verse "6"
+    ] ;
+    :text """zoekt den heer en leeft
+amos 5:6"""@nld
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t01004:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ], [
+    a symbol:Scythe
+  ], [
+    a symbol:Butterfly
+  ] ;
+  :text """TODO: hidr rust
+bet stot
+at
+lok over
+schot van
+stuntit
+wanmakur
+gub 23 oct
+18 1
+tov 3r41 sur
+28 92
+dogator
+van
+twaniak er
+lhpikens .
+zorki donne
+en les
+amos 5:
+""" .
+
+t01004:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y3M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-10-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-02-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Stientje Wanmaker" ;
+    :text "TODO: Stientje Wanmaker"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t01004:P2, t01004:P3
+  ] .
+
+t01004:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "J. Wanmaker" ;
+    :text "TODO: J. Wanmaker"
+  ] .
+
+t01004:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "F. Heikens" ;
+    :text "TODO: F. Heikens"
+  ] .
+

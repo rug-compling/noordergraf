@@ -1,0 +1,81 @@
+@prefix t00024: <https://noordergraf.rug.nl/tomb/T00024#> .
+
+tomb:T00024
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:25:52"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00024.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1909 ;
+      geo:long 6.5942
+    ] ;
+    :nd "+53.1909+006.5942"^^ll:
+  ] ;
+  :quote t00024:V1 ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00024:P1, t00024:P2 ;
+  :text """TODO: anna de vries
+* 84–1860
+19_1_1928
+otto doornbos
+21-7_1861
+f 25_2_1951
+openb, 14 -13
+六于
+""" .
+
+t00024:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y9M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-01-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Anne de Vries" ;
+    :text "TODO: Anne de Vries"
+  ] .
+
+t00024:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y7M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-07-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-02-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Otto Doornbos" ;
+    :text "TODO: Otto Doornbos"
+  ] .
+
+t00024:V1
+  a :Quote ;
+  :reference [
+    a :BibleRevelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :target t00024:P2 ;
+  :text "TODO" .
+

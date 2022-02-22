@@ -1,0 +1,92 @@
+@prefix t00991: <https://noordergraf.rug.nl/tomb/T00991#> .
+
+tomb:T00991
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-04T10:58:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00991.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1758 ;
+      geo:long 7.0953
+    ] ;
+    :nd "+53.1758+007.0953"^^ll:
+  ] ;
+  :quote t00991:V1, [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"@nld
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t00991:P1, t00991:P2 ;
+  :text """TODO: se rue
+austplaats
+van
+serijeschourke
+gee. 22 april 1882
+overl.3 nov. 1928
+filippus moerker
+geb. 4 jan. 1879
+overl.28 sept. 1934
+job. 1:21.
+rust zacht lieye ouders
+""" .
+
+t00991:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y6M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-04-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-11-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Martje Schuurke" ;
+    :text "TODO: Martje Schuurke"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00991:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y8M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-01-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-09-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Filippus Moerker" ;
+    :text "TODO: Filippus Moerker"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00991:V1
+  a :Quote ;
+  :reference [
+    a :BibleJob ;
+    :chapter 1 ;
+    :verse "21"
+  ] ;
+  :text "TODO" .
+

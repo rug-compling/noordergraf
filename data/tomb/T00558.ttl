@@ -1,0 +1,76 @@
+@prefix t00558: <https://noordergraf.rug.nl/tomb/T00558#> .
+
+tomb:T00558
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-24T13:52:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00558.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1047 ;
+      geo:long 6.8756
+    ] ;
+    :nd "+53.1047+006.8756"^^ll:
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00558:P1, t00558:P2 ;
+  :symbol [
+    a symbol:OakBranch
+  ], [
+    a symbol:WingedHourglass2
+  ], [
+    a symbol:Torch
+  ], [
+    a symbol:Sword
+  ], [
+    a symbol:Butterfly
+  ] ;
+  :text """TODO: hudplaats can
+van
+lingd
+wvo
+overleden den
+january 1862
+in den ouderdom
+van 88 aron
+in loon
+uchtgenoet van
+albertje
+eltjes de boer
+""" .
+
+t00558:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y"^^xsd:duration
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1776"^^xsd:gYear ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1864-01-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Evert van Linge" ;
+    :text "TODO: Evert van Linge"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00558:P2
+  ] .
+
+t00558:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Albertje Eltjes de Boer" ;
+    :text "TODO: Albertje Eltjes de Boer"
+  ] .
+

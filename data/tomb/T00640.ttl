@@ -1,0 +1,78 @@
+@prefix t00640: <https://noordergraf.rug.nl/tomb/T00640#> .
+
+tomb:T00640
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-08T11:22:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00640.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2088 ;
+      geo:long 6.6477
+    ] ;
+    :nd "+53.2088+006.6477"^^ll:
+  ] ;
+  :site site:NLgr9723ejGroningen ;
+  :subject t00640:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+van den heer
+ubbo albertus
+van oosten
+gud hoofdderschoolteengelbert
+geb.te westerlee
+2 juli 1841
+overl te harÈn
+30 januari 1929
+""" .
+
+t00640:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P87Y6M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-01-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Ubbo Albertus van Oosten" ;
+    :prefix "Heer" ;
+    :text "TODO: Heer Ubbo Albertus van Oosten"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:13940 ;
+    :location [
+      a :Village ;
+      :place place:Engelbert2756097 ;
+      :text "TODO: ENGELBERT"
+    ] ;
+    :wordnet "TODO: Principal.n.02"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Westerlee2744715 ;
+    :text "TODO: WESTERLEE"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] .
+

@@ -1,0 +1,89 @@
+@prefix t00765: <https://noordergraf.rug.nl/tomb/T00765#> .
+
+tomb:T00765
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:06:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00765.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7821 ;
+      geo:long 6.8977
+    ] ;
+    :nd "+52.7821+006.8977"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00765:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: mo
+hier rust onze
+geliefde dochter
+en zuster
+annegien kroeze
+geb. te emmen
+22 nov. 1887
+overl. aldaar
+26 febr. 1908
+r. kroeze
+g. kroeze grootjans
+rust zacht
+""" .
+
+t00765:C1
+  a :Town ;
+  :place place:Emmen2756136 ;
+  :text "TODO: EMMEN" .
+
+t00765:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y3M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-11-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-02-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Annegien Kroeze" ;
+    :text "TODO: Annegien Kroeze"
+  ] ;
+  :placeOfBirth t00765:C1 ;
+  :placeOfDeath t00765:C1 ;
+  :relation [
+    a :Sister
+  ], [
+    a :Daughter ;
+    :target t00765:P2, t00765:P3
+  ] .
+
+t00765:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "R. Kroeze" ;
+    :text "TODO: R. Kroeze"
+  ] .
+
+t00765:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "G. Kroeze-Grootjans" ;
+    :text "TODO: G. Kroeze-Grootjans"
+  ] .
+

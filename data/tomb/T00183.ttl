@@ -1,0 +1,72 @@
+@prefix t00183: <https://noordergraf.rug.nl/tomb/T00183#> .
+
+tomb:T00183
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-05T10:16:59"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00183.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1913 ;
+      geo:long 6.5940
+    ] ;
+    :nd "+53.1913+006.5940"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00183:P1, t00183:P2 ;
+  :text """TODO: rustplaats
+van
+dina van der schraaff
+geb. 3 oct. 1864
+te wolfaartsdijk
+overl.25 nov. 1937
+te haren
+weduwe van
+jan pieter van ham
+""" .
+
+t00183:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y1M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-10-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-11-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Dina van der Schraaff" ;
+    :text "TODO: Dina van der Schraaff"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Wolphaartsdijk2744199 ;
+    :text "TODO: WOLPHAARTSDIJK"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00183:P2
+  ] .
+
+t00183:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan Peter van Ham" ;
+    :text "TODO: Jan Peter van Ham"
+  ] .
+

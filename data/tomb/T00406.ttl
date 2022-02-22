@@ -1,0 +1,88 @@
+@prefix t00406: <https://noordergraf.rug.nl/tomb/T00406#> .
+
+tomb:T00406
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-26T14:44:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00406.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2518 ;
+      geo:long 6.1448
+    ] ;
+    :nd "+53.2518+006.1448"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HAAR VRIENDLIJK OOGEN ZIJN GESLOTEN, \\ GESTREDEN IS HAAR LAATSTE STRIJD, \\ VOORBIJ AL WAT WIJ ZAAM GENOTEN! \\ HAAR PLAATS IS LEDIG VOOR ALTIJD."
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00406:P1, t00406:P2 ;
+  :text """TODO: tipla
+van
+ats
+liesbeth
+1827
+jans de meer.
+geboren te hurhuister
+preenden funished
+pverledente prudenport
+den 26 betober 1889
+geliefde schtgenoot
+wan
+minne w.veenstra
+jn gelten
+haurvriend likoegen
+certreden is haar
+voorbij al wat my
+vaamgenote
+haar plaadi's ladi
+vor altyd
+laatste skrý
+""" .
+
+t00406:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y4M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1820-06-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1889-10-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Liesbeth Jans de Meer" ;
+    :text "TODO: Liesbeth Jans de Meer"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Surhuisterveen2746558 ;
+    :text "TODO: SURHUISTERVEEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Buitenpost2758131 ;
+    :text "TODO: BUITENPOST"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00406:P2
+  ] .
+
+t00406:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Minne W. Veenstra" ;
+    :text "TODO: Minne W. Veenstra"
+  ] .
+

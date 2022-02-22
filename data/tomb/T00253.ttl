@@ -1,0 +1,207 @@
+@prefix t00253: <https://noordergraf.rug.nl/tomb/T00253#> .
+
+tomb:T00253
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-10T09:41:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00253.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2054 ;
+      geo:long 6.5723
+    ] ;
+    :nd "+53.2054+006.5723"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 116
+    ] ;
+    :target t00253:P3 ;
+    :text "ps. 116"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleRomans ;
+      :chapter 14 ;
+      :verse "8"
+    ] ;
+    :target t00253:P4 ;
+    :text "rom. 14:8"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleJohn ;
+      :chapter 14 ;
+      :verse "2"
+    ] ;
+    :target t00253:P5 ;
+    :text "joh. 14:2"
+  ], [
+    a :Quote ;
+    :reference [
+      a :Bible1Thessalonians ;
+      :chapter 4 ;
+      :verse "14"
+    ] ;
+    :target t00253:P1 ;
+    :text "1 thess. 4:14"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 23 ;
+      :verse "1"
+    ] ;
+    :target t00253:P2 ;
+    :text "ps. 23:1"
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00253:P1, t00253:P2, t00253:P3, t00253:P4, t00253:P5 ;
+  :text """TODO: rustplaats van
+onze
+lieve zuster ouders en-grootouders
+angenietje keizer
+15-4-1903
+3-1921
+1 thess 4:14
+grietje v.d. zweep
+29-11-1878t 19-9-1940
+.
+ps. 23:1
+hendrik keizer
+#1567-1876 + 6-4-1956
+ps. 116
+jacob v.d.zweep
++ 18-10-1854 + 19.11.1931
+rom:14:8
+angenietje
+--reichenbach
+* 26-7.1856 13-5. 1936
++
+1 joh: 14.2
+""" .
+
+t00253:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P17Y10M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903-04-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1921-03-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Angenietje Keizer" ;
+    :text "TODO: Angenietje Keizer"
+  ] ;
+  :relation [
+    a :Sister
+  ] .
+
+t00253:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P61Y9M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-09-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Grietje van der Zweep" ;
+    :text "TODO: Grietje van der Zweep"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00253:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y8M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-04-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Keizer" ;
+    :text "TODO: Hendrik Keizer"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00253:P4
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y1M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-10-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-11-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jacob van der Zweep" ;
+    :text "TODO: Jacob van der Zweep"
+  ] ;
+  :relation [
+    a :Grandparent
+  ] .
+
+t00253:P5
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y9M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-07-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-05-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Angenietje Reichenbach" ;
+    :text "TODO: Angenietje Reichenbach"
+  ] ;
+  :relation [
+    a :Grandparent
+  ] .
+

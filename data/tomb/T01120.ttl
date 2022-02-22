@@ -1,0 +1,71 @@
+@prefix t01120: <https://noordergraf.rug.nl/tomb/T01120#> .
+
+tomb:T01120
+  a :Tomb ;
+  :image [
+    dc:date "2021-03-27T12:50:04"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01120.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2259 ;
+      geo:long 6.3529
+    ] ;
+    :nd "+53.2259+006.3529"^^ll:
+  ] ;
+  :site site:NLgr9822akNiekerk ;
+  :subject t01120:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text "TODO" .
+
+t01120:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P44Y"^^xsd:duration ;
+    :inferred true ;
+    :text "ruim 44 Jaren"
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1808-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-03-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Frederika J. Smith" ;
+    :text "TODO: Frederika J. Smith"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Oldehove2749660 ;
+    :text "TODO: OLDEHOVE"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Niekerk2750390 ;
+    :text "TODO: NIEKERK"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t01120:P2
+  ] .
+
+t01120:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Roelf J. Hiddingh" ;
+    :text "TODO: Roelf J. Hiddingh"
+  ] .
+

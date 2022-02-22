@@ -1,0 +1,98 @@
+@prefix t00051: <https://noordergraf.rug.nl/tomb/T00051#> .
+
+tomb:T00051
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-27T17:42:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00051.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1631 ;
+      geo:long 6.6131
+    ] ;
+    :nd "+53.1631+006.6131"^^ll:
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00051:P1, t00051:P2 ;
+  :text """TODO: le
+latest
+rustplaats van
+onze lieve ouders
+johanna nieborg
+gee, 4 oct. 1829 ve moogezand
+verl 24 oct 1949 te haren
+|
+gel echt gen. van g. mulder
+geert mulder
+geb. 20 april 1891
+te haren
+overl. 17. febr. 1954
+hello
+""" .
+
+t00051:C2
+  a :Town ;
+  :place place:Haren2754841 ;
+  :text "TODO: HAREN" .
+
+t00051:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-10-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-10-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Nieborg" ;
+    :text "TODO: Johanna Nieborg"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] ;
+  :placeOfDeath t00051:C2 ;
+  :relation [
+    a :Wife ;
+    :target t00051:P2
+  ], [
+    a :Parent
+  ] .
+
+t00051:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y9M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-02-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geert Mulder" ;
+    :text "TODO: Geert Mulder"
+  ] ;
+  :placeOfBirth t00051:C2 ;
+  :placeOfDeath t00051:C2 ;
+  :relation [
+    a :Parent
+  ] .
+

@@ -1,0 +1,87 @@
+@prefix t00668: <https://noordergraf.rug.nl/tomb/T00668#> .
+
+tomb:T00668
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:51:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00668.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0688 ;
+      geo:long 5.5237
+    ] ;
+    :nd "+53.0688+005.5237"^^ll:
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00668:P1, t00668:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: fie
+van
+dinga
+achtet)
+rusiplaats
+onze geliefde
+ouders
+b: hempenius
+geb 15 februari 1878
+5
+overl. s februari 1935
+en
+themdenius de groot
+geg 29 januari 1869
+uver 25 august 1953
+$
+""" .
+
+t00668:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y11M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-02-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-02-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "B. Hempenius" ;
+    :text "TODO: B. Hempenius"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00668:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y6M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-01-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-08-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "T. Hempenius-de Groot" ;
+    :text "TODO: T. Hempenius-de Groot"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

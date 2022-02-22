@@ -1,0 +1,102 @@
+@prefix t00676: <https://noordergraf.rug.nl/tomb/T00676#> .
+
+tomb:T00676
+  a :Tomb ;
+  :text """TODO: ik weet
+aan wie ik mij vertrouwe\"
+lied 390:3
+hendrik buwalda
+geb. 8 - 12 = 1920
+overl. 30 8 1981
+-
+grietje buwalda
+van der zwaag
+geb. 27 11 1921
+overl. 10- 2 1997
+kinderen en kleinkinderen
+22
+""" ;
+  :image [
+    dc:date "2019-12-14T13:32:52"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00676.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0685 ;
+      geo:long 5.5219
+    ] ;
+    :nd "+53.0685+005.5219"^^ll:
+  ] ;
+
+  :quote [
+    a :Quote ;
+    :reference [
+      a :HymnReference ;
+      :title "'k Wil U, o God, mijn dank betalen" ;
+      :comment "lied 390, couplet 5, regel 1 in 'Liedboek voor de kerken', 1973" ;
+      :source <https://kerkliedwiki.nl/%27k_Wil_U,_o_God,_mijn_dank_betalen>
+    ] ;
+    :text """ik weet
+aan wie ik mij vertrouwe
+lied 390:3"""@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00676:P1, t00676:P2 .
+
+t00676:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y8M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1981-08-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Buwalda" ;
+    :text "TODO: Hendrik Buwalda"
+  ] ;
+  :relation [
+    a :Parent ;
+    :inferred true
+  ], [
+    a :Grandparent ;
+    :inferred true
+  ] .
+
+t00676:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y2M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1921-11-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-02-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Buwalda-van der Zwaag" ;
+    :text "TODO: Grietje Buwalda-van der Zwaag"
+  ] ;
+  :relation [
+    a :Parent ;
+    :inferred true
+  ], [
+    a :Grandparent ;
+    :inferred true
+  ] .
+

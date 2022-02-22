@@ -1,0 +1,87 @@
+@prefix t01053: <https://noordergraf.rug.nl/tomb/T01053#> .
+
+tomb:T01053
+  a :Tomb ;
+  :image [
+    dc:date "2020-05-02T16:44:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01053.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 103 ;
+      :verse "8-9"
+    ] ;
+    :text "Ps. 103:8_9"
+  ] ;
+  :subject t01053:P1, t01053:P2, t01053:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rufplaats
+van
+brechtje lukas
+geb de ulrum
+5 jan. 1887
+merl
+alhier
+22 nov. 1920
+dedochte
+van
+klaas lukas
+en
+gezina buitjes
+ps 103:8-9
+""" .
+
+t01053:C1
+  a :Village ;
+  :place place:Ulrum2745944 ;
+  :text "TODO: ULRUM" .
+
+t01053:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P33Y10M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-01-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-11-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Brechtje Lukas" ;
+    :text "TODO: Brechtje Lukas"
+  ] ;
+  :placeOfBirth t01053:C1 ;
+  :placeOfDeath t01053:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t01053:P2, t01053:P3
+  ] .
+
+t01053:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Klaas Lukas" ;
+    :text "TODO: Klaas Lukas"
+  ] .
+
+t01053:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Gezina Bultjes" ;
+    :text "TODO: Gezina Bultjes"
+  ] .
+

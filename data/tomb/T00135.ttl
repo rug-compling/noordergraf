@@ -1,0 +1,72 @@
+@prefix t00135: <https://noordergraf.rug.nl/tomb/T00135#> .
+
+tomb:T00135
+  a :Tomb ;
+  :text """TODO: rustplaats
+van
+gerard de boer
+geb.9 febr. 1869
+overlj oct.
+1920
+,
+albertje hummei
+geb. 1 augs 1869
+overl 8 augs 1935
+""" ;
+  :image [
+    dc:date "2019-10-02T10:38:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00135.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2060 ;
+      geo:long 6.5704
+    ] ;
+    :nd "+53.2060+006.5704"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00135:P1, t00135:P2 .
+
+t00135:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P51Y7M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-02-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-10-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerard de Boer" ;
+    :text "TODO: Gerard de Boer"
+  ] .
+
+t00135:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-08-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-08-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Albertje Hummel" ;
+    :text "TODO: Albertje Hummel"
+  ] .
+

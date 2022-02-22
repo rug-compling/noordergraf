@@ -1,0 +1,109 @@
+@prefix t00108: <https://noordergraf.rug.nl/tomb/T00108#> .
+
+tomb:T00108
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-21T15:55:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00108.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1905 ;
+      geo:long 6.5925
+    ] ;
+    :nd "+53.1905+006.5925"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00108:P1, t00108:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: pri
+hier rust
+onze lieve vrouw
+en moeder
+fenna mulder
+geb. te middelbert
+21-3-1878
+overl, te cron
+20-8-1933
+echtg. van
+harm makken.
+geb. te maren
+1-2-1872
+overl. te gron.
+25-6-1956
+rust zacht lieve
+ouders
+""" .
+
+t00108:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00108:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y4M30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-03-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-08-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Fenna Mulder" ;
+    :text "TODO: Fenna Mulder"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Middelbert2750902 ;
+    :text "TODO: MIDDELBERT"
+  ] ;
+  :placeOfDeath t00108:C1 ;
+  :relation [
+    a :Mother
+  ], [
+    a :Wife ;
+    :target t00108:P2
+  ] .
+
+t00108:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y4M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-02-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-06-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harm Makken" ;
+    :text "TODO: Harm Makken"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] ;
+  :placeOfDeath t00108:C1 .
+

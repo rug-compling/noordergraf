@@ -1,0 +1,67 @@
+@prefix t00509: <https://noordergraf.rug.nl/tomb/T00509#> .
+
+tomb:T00509
+  a :Tomb ;
+  :text """TODO: tekele catharina lombool-mulder
+20-09-1898
+# 13-1-1990
+theodorus petrus antanjulambool
+18-05-1901
+""" ;
+  :image [
+    dc:date "2019-11-09T14:33:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00509.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2066 ;
+      geo:long 5.7691
+    ] ;
+    :nd "+53.2066+005.7691"^^ll:
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00509:P1, t00509:P2 .
+
+t00509:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P92Y1M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-09-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1990-11-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tekela Catharina Lambooij-Mulder" ;
+    :text "TODO: Tekela Catharina Lambooij-Mulder"
+  ] .
+
+t00509:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P94Y2M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-02-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1995-05-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Theodirus Petrus Antonius Lambooij" ;
+    :text "TODO: Theodirus Petrus Antonius Lambooij"
+  ] .
+

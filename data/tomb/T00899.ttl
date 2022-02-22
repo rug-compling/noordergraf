@@ -1,0 +1,82 @@
+@prefix t00899: <https://noordergraf.rug.nl/tomb/T00899#> .
+
+tomb:T00899
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-07T14:31:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00899.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1722 ;
+      geo:long 6.3618
+    ] ;
+    :nd "+53.1722+006.3618"^^ll:
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00899:P1, t00899:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: ne
+rusiplaats
+wund
+jantje jans
+cazemier
+gebite folbert
+den 10 dec 1823
+werdlertidoroldo
+ton 23m/1868
+vehtyiwel ras
+hendrik
+hcukors
+""" .
+
+t00899:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P44Y6M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1823-12-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1868-06-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Jans Cazemier" ;
+    :text "TODO: Jantje Jans Cazemier"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Tolbert2746234 ;
+    :text "TODO: TOLBERT"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Midwolde2750830 ;
+    :text "TODO: MIDWOLDE"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00899:P2
+  ] .
+
+t00899:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Heukers" ;
+    :text "TODO: Hendrik Heukers"
+  ] .
+

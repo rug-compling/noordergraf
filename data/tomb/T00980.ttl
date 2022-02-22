@@ -1,0 +1,80 @@
+@prefix t00980: <https://noordergraf.rug.nl/tomb/T00980#> .
+
+tomb:T00980
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-25T09:25:01"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00980.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1204 ;
+      geo:long 6.6591
+    ] ;
+    :nd "+53.1204+006.6591"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DIE IN HUN LEVEN ELKANDER HEBBEN LIEF GEHAD, \\ ZIJN OOK NA HAAR DOOD NIET GESCHEIDEN"@nld
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00980:P1, t00980:P2 ;
+  :text """TODO: 23
+ta
+05
+wan
+udplaats
+hendrik kloots
+geble noved lacon
+den 13 feb. 1820
+overl. 5 dl. 1882
+in den oudernom
+van bijna 62 jacere
+in teven gehtgenootvan
+jantien hamminga
+dwukun leven ellan
+der hebben leef gehad,
+yn ook ra hiar dood
+net gescheiden
+""" .
+
+t00980:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y"^^xsd:duration ;
+    :inferred true ;
+    :text "bijna 62 jaren"
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1820-02-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-02-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Kloots" ;
+    :text "TODO: Hendrik Kloots"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Noordlaren2749857 ;
+    :text "TODO: NOORDLAREN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00980:P2
+  ] .
+
+t00980:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Jantien Hamming" ;
+    :text "TODO: Jantien Hamming"
+  ] .
+

@@ -1,0 +1,77 @@
+@prefix t00571: <https://noordergraf.rug.nl/tomb/T00571#> .
+
+tomb:T00571
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-24T13:39:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00571.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1047 ;
+      geo:long 6.8742
+    ] ;
+    :nd "+53.1047+006.8742"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00571:P1, t00571:P2 ;
+  :symbol [
+    a symbol:FaithHopeLove
+  ] ;
+  :text """TODO: rustplaats
+van
+hart vos
+geb. 1 mei 1858
+te borgercompagnie
+overl. aldaar
+29 october 192%
+weduwe van
+jan drijfholt
+rust zacht
+""" .
+
+t00571:C1
+  a :Village ;
+  :place place:Borgercompagnie2758618 ;
+  :text "TODO: BORGERCOMPAGNIE" .
+
+t00571:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y5M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-05-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-10-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harmina Vos" ;
+    :text "TODO: Harmina Vos"
+  ] ;
+  :placeOfBirth t00571:C1 ;
+  :placeOfDeath t00571:C1 ;
+  :relation [
+    a :Widow ;
+    :target t00571:P2
+  ] .
+
+t00571:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan Drijfholt" ;
+    :text "TODO: Jan Drijfholt"
+  ] .
+

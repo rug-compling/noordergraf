@@ -1,0 +1,70 @@
+@prefix t00276: <https://noordergraf.rug.nl/tomb/T00276#> .
+
+tomb:T00276
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-14T10:53:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00276.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2228 ;
+      geo:long 6.6376
+    ] ;
+    :nd "+53.2228+006.6376"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00276:P1, t00276:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rusu plaats var
+onze: lieve vroun
+en moeded
+roelofje de jong
+4.2 mrt. 1903
+1 i mrt. 1949
+je
+geliefde echtgenote
+zudland
+""" .
+
+t00276:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P46Y9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903-03-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-03-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Roelofje de Jong" ;
+    :text "TODO: Roelofje de Jong"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t00276:P2
+  ], [
+    a :Wife ;
+    :target t00276:P2
+  ] .
+
+t00276:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "W. Zuidland" ;
+    :text "TODO: W. Zuidland"
+  ] .
+

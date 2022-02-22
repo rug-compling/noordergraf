@@ -1,0 +1,96 @@
+@prefix t00749: <https://noordergraf.rug.nl/tomb/T00749#> .
+
+tomb:T00749
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-28T12:48:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00749.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3110 ;
+      geo:long 6.9976
+    ] ;
+    :nd "+53.3110+006.9976"^^ll:
+  ] ;
+  :site site:NLgr9936btFarmsum ;
+  :subject t00749:P1, t00749:P2, t00749:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rusti laat
+win
+hindrik
+paus perdok
+gekete bagen
+bergendiniz
+april 1823
+er heldur
+den2lfar1886
+eerst echtgenoel
+schrenbeck
+728
+,
+later
+g.wolthuis.
+""" .
+
+t00749:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y9M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1823-04-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1886-01-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hindrik Jans Perdok" ;
+    :text "TODO: Hindrik Jans Perdok"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Wagenborgen2745090 ;
+    :text "TODO: WAGENBORGEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Oterdum2749209 ;
+    :text "TODO: OTERDUM"
+  ] ;
+  :relation t00749:R1, t00749:R2 .
+
+t00749:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "K. Schoonbeek" ;
+    :text "TODO: K. Schoonbeek"
+  ] .
+
+t00749:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "G. Wolthuis" ;
+    :text "TODO: G. Wolthuis"
+  ] .
+
+t00749:R1
+  a :Spouse ;
+  :before t00749:R2 ;
+  :target t00749:P2 .
+
+t00749:R2
+  a :Spouse ;
+  :after t00749:R1 ;
+  :target t00749:P3 .
+

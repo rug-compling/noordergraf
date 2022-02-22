@@ -1,0 +1,99 @@
+@prefix t00917: <https://noordergraf.rug.nl/tomb/T00917#> .
+
+tomb:T00917
+  a :Tomb ;
+  :text """TODO: terdafen ghtenie
+aar onze leve
+dudete
+berente aardema
+16-1823
+938
+12
+shte
+an scheinga
+3:3831
+- 12 - 1970
+mezi 15 tsverzoeneno sterven 13 14
+2015
+-
+h.
+""" ;
+  :image [
+    dc:date "2020-03-07T14:04:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00917.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1715 ;
+      geo:long 6.3656
+    ] ;
+    :nd "+53.1715+006.3656"^^ll:
+  ] ;
+
+  :quote [
+    a :Quote ;
+    :reference [
+      a :HymnReference ;
+      :title "Diep, o God, in 't stof gebogen" ;
+      :source <https://kerkliedwiki.nl/Diep,_o_God,_in_%27t_stof_gebogen>
+    ] ;
+    :text "Jezus uw verzoenend sterven"@nld
+  ] , [
+    a :Quote ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :text "Gez. 14."@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00917:P1, t00917:P2 .
+
+t00917:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P58Y2M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-11-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-02-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Berentje Aardema" ;
+    :text "TODO: Berentje Aardema"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00917:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P90Y3M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-06-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-09-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Scheringa" ;
+    :text "TODO: Jan Scheringa"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

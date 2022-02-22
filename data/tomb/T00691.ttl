@@ -1,0 +1,63 @@
+@prefix t00691: <https://noordergraf.rug.nl/tomb/T00691#> .
+
+tomb:T00691
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:55:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00691.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0686 ;
+      geo:long 5.5239
+    ] ;
+    :nd "+53.0686+005.5239"^^ll:
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00691:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: a
+van
+rusiplaats
+jogchumb. kingma
+geboren te hantwerd
+20 daart 18%
+29
+merl. te leenarden
+30 juli 1970
+""" .
+
+t00691:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y4M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-03-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-07-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jogchum B. Kingma" ;
+    :text "TODO: Jogchum B. Kingma"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Hartwerd2754799 ;
+    :text "TODO: HARTWERD"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Leeuwarden2751792 ;
+    :text "TODO: LEEUWARDEN"
+  ] .
+

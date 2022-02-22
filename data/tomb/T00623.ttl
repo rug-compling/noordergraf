@@ -1,0 +1,77 @@
+@prefix t00623: <https://noordergraf.rug.nl/tomb/T00623#> .
+
+tomb:T00623
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:01:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00623.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1643 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1643+006.7541"^^ll:
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00623:P1, t00623:P2 ;
+  :symbol [
+    a symbol:Torch
+  ], [
+    a symbol:OakBranch
+  ], [
+    a symbol:Drape
+  ] ;
+  :text """TODO: rustplaats
+van
+alberdin
+gen
+takens.
+febito cheemda
+30 mo 1818.
+overl. 19 dec
+1875.
+echtgenoote van
+jannes marcus
+cremer
+""" .
+
+t00623:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1818-11-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1875-12-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Alberdina Takens" ;
+    :text "TODO: Alberdina Takens"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Scheemda2747661 ;
+    :text "TODO: SCHEEMDA"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00623:P2
+  ] .
+
+t00623:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jannes Marcus Cremer" ;
+    :text "TODO: Jannes Marcus Cremer"
+  ] .
+

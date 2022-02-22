@@ -1,0 +1,70 @@
+@prefix t00175: <https://noordergraf.rug.nl/tomb/T00175#> .
+
+tomb:T00175
+  a :Tomb ;
+  :text """TODO: 13
+m.j.bosma
+* 9 mei 1850
++ 26 juni 1932
+b.bosma
+haverbult
+* i aug. 1865
++ 26 juli 1940
+""" ;
+  :image [
+    dc:date "2019-10-05T10:39:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00175.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1908 ;
+      geo:long 6.5930
+    ] ;
+    :nd "+53.1908+006.5930"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00175:P1, t00175:P2 .
+
+t00175:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y1M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-05-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-06-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "H.J. Bosma" ;
+    :text "TODO: H.J. Bosma"
+  ] .
+
+t00175:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y10M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-09-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-07-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "B. Bosma-Haverbult" ;
+    :text "TODO: B. Bosma-Haverbult"
+  ] .
+

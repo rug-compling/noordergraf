@@ -1,0 +1,74 @@
+@prefix t00531: <https://noordergraf.rug.nl/tomb/T00531#> .
+
+tomb:T00531
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-24T14:50:47"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00531.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1042 ;
+      geo:long 6.8745
+    ] ;
+    :nd "+53.1042+006.8745"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00531:P1, t00531:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: ter gedachtenis
+aan
+geert
+herwig hzn.
+geboren
+25 december 1844
+overleden
+26 augustus 1925
+weduwnaar van
+anna de boer
+rust zacht.
+derhet
+'tti bicchie
+""" .
+
+t00531:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y8M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-12-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-08-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geert Herwig" ;
+    :suffix "Hzn" ;
+    :text "TODO: Geert Herwig Hzn"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00531:P2
+  ] .
+
+t00531:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Anna de Boer" ;
+    :text "TODO: Anna de Boer"
+  ] .
+

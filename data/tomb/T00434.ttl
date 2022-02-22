@@ -1,0 +1,79 @@
+@prefix t00434: <https://noordergraf.rug.nl/tomb/T00434#> .
+
+tomb:T00434
+  a :Tomb ;
+  :text """TODO: wilhelmina
+anthonia
+maria adriana
+van den worm
+geb. 20 dec. 1918
+overl. 26 febr.1996
+echigenale
+van
+georg
+hennemann
+geb, 3 sept. 1910
+overl. 17 auo 2003
+it
+""" ;
+  :image [
+    dc:date "2019-11-02T11:40:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00434.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4792 ;
+      geo:long 6.1610
+    ] ;
+    :nd "+53.4792+006.1610"^^ll:
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00434:P1, t00434:P2 .
+
+t00434:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y2M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1918-12-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1996-02-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wilhelmina Anthonia Maria Adriana van den Worm" ;
+    :text "TODO: Wilhelmina Anthonia Maria Adriana van den Worm"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00434:P2
+  ] .
+
+t00434:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P92Y11M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2003-08-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Georg Henneman" ;
+    :text "TODO: Georg Henneman"
+  ] .
+

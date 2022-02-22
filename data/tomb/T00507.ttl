@@ -1,0 +1,104 @@
+@prefix t00507: <https://noordergraf.rug.nl/tomb/T00507#> .
+
+tomb:T00507
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:36:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00507.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2067 ;
+      geo:long 5.7690
+    ] ;
+    :nd "+53.2067+005.7690"^^ll:
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00507:P1, t00507:P2, t00507:P3 ;
+  :text """TODO: rustplaats
+an onze grootouders
+gerrit van der meer
+* 13-3-1866
++ 14-12-1925
+johanna hogema
+* 7 - 4 - 1868
++ 31-5-1934
+en
+onze lieve vader
+ijsbrand theodorus
+25-12-1901 † 21 - 1 - 1985
+""" .
+
+t00507:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y9M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-03-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-12-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit van der Meer" ;
+    :text "TODO: Gerrit van der Meer"
+  ] ;
+  :relation [
+    a :Grandparent
+  ] .
+
+t00507:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y1M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-04-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-05-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Hogema" ;
+    :text "TODO: Johanna Hogema"
+  ] ;
+  :relation [
+    a :Grandparent
+  ] .
+
+t00507:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-12-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1985-01-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "IJsbrand Theodorus" ;
+    :text "TODO: IJsbrand Theodorus"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+

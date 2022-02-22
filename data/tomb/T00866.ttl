@@ -1,0 +1,75 @@
+@prefix t00866: <https://noordergraf.rug.nl/tomb/T00866#> .
+
+tomb:T00866
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:12:52"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00866.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7193 ;
+      geo:long 6.8452
+    ] ;
+    :nd "+52.7193+006.8452"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00866:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: to
+ta
+hier rust
+tiziebussy
+trijntje
+koens
+heb zo ferr
+querl ze dec
+1935
+echtgenoote van
+r. sieben.
+rost zaeht
+haarb zusters.
+""" .
+
+t00866:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y10M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-12-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Trijntje Koens" ;
+    :text "TODO: Trijntje Koens"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00866:P2
+  ], [
+    a :Sister
+  ] .
+
+t00866:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "R. Sieben" ;
+    :text "TODO: R. Sieben"
+  ] .
+

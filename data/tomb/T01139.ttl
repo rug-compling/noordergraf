@@ -1,0 +1,46 @@
+@prefix t01139: <https://noordergraf.rug.nl/tomb/T01139#> .
+
+tomb:T01139
+  a :Tomb ;
+  :image [
+    dc:date "2021-04-05T10:26:15"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01139.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2858 ;
+      geo:long 6.3247
+    ] ;
+    :nd "+53.2858+006.3247"^^ll:
+  ] ;
+  :site site:NLgr9881pbKommerzijl ;
+  :subject t01139:P1 ;
+  :symbol [
+    a symbol:OakBranch
+  ], [
+    a symbol:OliveBranch
+  ] ;
+  :text "TODO" .
+
+t01139:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P3Y12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-05-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-06-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geertruida Monkhorst" ;
+    :text "TODO: Geertruida Monkhorst"
+  ] .
+

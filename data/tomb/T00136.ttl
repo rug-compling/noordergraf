@@ -1,0 +1,88 @@
+@prefix t00136: <https://noordergraf.rug.nl/tomb/T00136#> .
+
+tomb:T00136
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-02T10:35:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00136.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2060 ;
+      geo:long 6.5701
+    ] ;
+    :nd "+53.2060+006.5701"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00136:P1, t00136:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Anchor
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "Gez. 223:1" ;
+    :target t00136:P1 ;
+    :reference [
+      a :HymnReference
+    ]
+  ] ;
+  :text """TODO: dede
+totem
+qustplaats
+simon siesling
+@ nov karat 14. 11er 1942
+, kjer
+echtgem, van t de raad
+tallegien de raad
+* 203 deci992 * 12 jan. 1954
+""" .
+
+t00136:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y6M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-11-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-05-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Simon Siesling" ;
+    :text "TODO: Simon Siesling"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00136:P2
+  ] .
+
+t00136:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-12-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-01-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tallegien de Raad" ;
+    :text "TODO: Tallegien de Raad"
+  ] .
+

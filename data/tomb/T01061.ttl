@@ -1,0 +1,82 @@
+@prefix t01061: <https://noordergraf.rug.nl/tomb/T01061#> .
+
+tomb:T01061
+  a :Tomb ;
+  :image [
+    dc:date "2020-05-01T15:31:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01061.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1232 ;
+      geo:long 6.2512
+    ] ;
+    :nd "+53.1232+006.2512"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9367paDeWilp ;
+  :subject t01061:P1, t01061:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+hendrik
+w.nijhot
+geb:16 augs: 1847
+te ureterp
+overl: 12 febr: 1927
+te de wilp
+echtgenoot van
+baukje
+w.veenstra.
+rust zacht
+""" .
+
+t01061:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y5M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-08-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-02-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik W. Nijhof" ;
+    :text "TODO: Hendrik W. Nijhof"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Ureterp2745936 ;
+    :text "TODO: URETERP"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:DeWilp2756932 ;
+    :text "TODO: DE WILP"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t01061:P2
+  ] .
+
+t01061:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Baukje W. Veenstra" ;
+    :text "TODO: Baukje W. Veenstra"
+  ] .
+

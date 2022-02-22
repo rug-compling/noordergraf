@@ -1,0 +1,110 @@
+@prefix t00146: <https://noordergraf.rug.nl/tomb/T00146#> .
+
+tomb:T00146
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-02T10:27:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00146.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2060 ;
+      geo:long 6.5699
+    ] ;
+    :nd "+53.2060+006.5699"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00146:P1, t00146:P2, t00146:P3 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: rustala ats
+het
+van
+jacob huizinga,
+geb. 8_4_1857
+overl. 4_11941.
+gel. echtg. van
+bouwinalubbers
+geb. 5_1_1869
+overl. 4_7_1961
+echtg, van
+jan middel
+ge8.8_9_1880
+overl, 5.3.1962
+""" .
+
+t00146:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y8M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-01-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jacob Huizinga" ;
+    :text "TODO: Jacob Huizinga"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00146:P2
+  ] .
+
+t00146:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y7M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-11-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-07-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Bouwina Lubbers" ;
+    :text "TODO: Bouwina Lubbers"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00146:P3
+  ] .
+
+t00146:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y5M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-09-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-03-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Middel" ;
+    :text "TODO: Jan Middel"
+  ] .
+

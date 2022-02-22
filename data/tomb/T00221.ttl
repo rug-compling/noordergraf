@@ -1,0 +1,62 @@
+@prefix t00221: <https://noordergraf.rug.nl/tomb/T00221#> .
+
+tomb:T00221
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:42:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00221.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6367
+    ] ;
+    :nd "+53.2225+006.6367"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00221:P1 ;
+  :symbol [
+    a symbol:Butterfly
+  ], [
+    a symbol:Butterfly
+  ] ;
+  :text """TODO: relat
+wani
+hend orkton
+hles koning
+gebit september
+1872 te wwwelnunna
+adane sveduten
+den bedumi 1903
+tm
+""" .
+
+t00221:C1
+  a :Hamlet ;
+  :place place:Euvelgunne2755982 ;
+  :text "TODO: EUVELGUNNE" .
+
+t00221:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y4M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-09-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-02-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Henderkien Elles Koning" ;
+    :text "TODO: Henderkien Elles Koning"
+  ] ;
+  :placeOfBirth t00221:C1 ;
+  :placeOfDeath t00221:C1 .
+

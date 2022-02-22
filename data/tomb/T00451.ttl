@@ -1,0 +1,49 @@
+@prefix t00451: <https://noordergraf.rug.nl/tomb/T00451#> .
+
+tomb:T00451
+  a :Tomb ;
+  :text """TODO: in memoriam
+relatikus frederikus
+kus
+van der kater
+havaink
+seb.9.2-0904
+ce
+overl 22.6.1964
+""" ;
+  :image [
+    dc:date "2019-11-09T15:02:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00451.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2066 ;
+      geo:long 5.7696
+    ] ;
+    :nd "+53.2066+005.7696"^^ll:
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00451:P1 .
+
+t00451:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y4M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1904-02-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-06-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikus Frederikus van der Kallen" ;
+    :text "HAVANK", "Hendrikus Frederikus van der Kallen"
+  ] .
+

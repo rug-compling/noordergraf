@@ -1,0 +1,81 @@
+@prefix t00798: <https://noordergraf.rug.nl/tomb/T00798#> .
+
+tomb:T00798
+  a :Tomb ;
+  :image [
+    dc:date "2020-01-18T12:49:59"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00798.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2777 ;
+      geo:long 6.6947
+    ] ;
+    :nd "+53.2777+006.6947"^^ll:
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00798:P1, t00798:P2 ;
+  :text """TODO: rus)
+ats
+to
+ple
+van
+e
+sch
+tun
+ti
+van
+nanning
+kamphuis
+geb-te tenboer
+-
+den12 sept.1851
+overl- aldaar
+den imel 1930
+sinds 1922
+wedn-vant maet
+bc
+""" .
+
+t00798:C1
+  a :Village ;
+  :place place:TenBoer2746491 ;
+  :text "TODO: TEN BOER" .
+
+t00798:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y7M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1851-09-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-05-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Nanning Kamphuis" ;
+    :text "TODO: Nanning Kamphuis"
+  ] ;
+  :placeOfBirth t00798:C1 ;
+  :placeOfDeath t00798:C1 ;
+  :relation [
+    a :Widower ;
+    :begin "1922"^^xsd:gYear ;
+    :target t00798:P2
+  ] .
+
+t00798:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "T. Maat" ;
+    :text "TODO: T. Maat"
+  ] .
+

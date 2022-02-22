@@ -1,0 +1,66 @@
+@prefix t01135: <https://noordergraf.rug.nl/tomb/T01135#> .
+
+tomb:T01135
+  a :Tomb ;
+  :image [
+    dc:date "2021-04-05T10:27:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01135.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2858 ;
+      geo:long 6.3243
+    ] ;
+    :nd "+53.2858+006.3243"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DIE IN MIJ GELOOFD ZAL LEVEN, ALWARE HIJ OOK GESTORVEN. JEZUS."@nld
+  ] ;
+  :site site:NLgr9881pbKommerzijl ;
+  :subject t01135:P1, t01135:P2 ;
+  :text "TODO" .
+
+t01135:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P21Y2M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1825-01-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1846-04-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Egberdina Egbers Zijlstra" ;
+    :text "TODO: Egberdina Egbers Zijlstra"
+  ] .
+
+t01135:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P6Y15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-09-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1843-10-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jannes Hendriks Kremer" ;
+    :text "TODO: Jannes Hendriks Kremer"
+  ] .
+

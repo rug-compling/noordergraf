@@ -1,0 +1,115 @@
+@prefix t00007: <https://noordergraf.rug.nl/tomb/T00007#> .
+
+tomb:T00007
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:50:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00007.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1899 ;
+      geo:long 6.5929
+    ] ;
+    :nd "+53.1899+006.5929"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00007:P1, t00007:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: her nust
+onze geliefde man en vader
+pieter agema
+ger 17 sebt, 812 tekollumerpomp
+qyerl.2 maart 1540 te groningen
+echtgenoot van l.zulstra
+en onze leve moeder
+|
+leentje zulstra
+keb. 1. mu1879 te zwaagerveei.
+e
+del 208
+。
+ripel
+scha
+号
+ui
+""" .
+
+t00007:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y5M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-09-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-03-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Pieter Agema" ;
+    :text "TODO: Pieter Agema"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Kollumerpomp2752522 ;
+    :text "TODO: KOLLUMERPOMP"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Husband
+  ], [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00007:P2
+  ] .
+
+t00007:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P92Y6M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-06-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-01-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Leentje Zijlstra" ;
+    :text "TODO: Leentje Zijlstra"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zwagerveen2743583 ;
+    :text "TODO: ZWAGERVEEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Appelscha2759698 ;
+    :text "TODO: APPELSCHA"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+

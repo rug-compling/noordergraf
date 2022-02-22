@@ -1,0 +1,61 @@
+@prefix t00301: <https://noordergraf.rug.nl/tomb/T00301#> .
+
+tomb:T00301
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:33:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00301.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7154 ;
+      geo:long 6.4735
+    ] ;
+    :nd "+52.7154+006.4735"^^ll:
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00301:P1 ;
+  :text """TODO: rustplats
+labertus fled derrus
+geb. ee buren (ged), 9 juu 913
+oveel te brestle lia ht4903.
+juli
+""" .
+
+t00301:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P19Y8M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1918-07-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-03-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lambertus Fledderus" ;
+    :text "TODO: Lambertus Fledderus"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :partOf [
+      a :Province ;
+      :place place:ProvincieGelderland2755634 ;
+      :text "TODO: GELDERLAND"
+    ] ;
+    :place place:Buren2758097 ;
+    :text "TODO: BUREN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Brest3030300 ;
+    :text "TODO: BREST"
+  ] .
+

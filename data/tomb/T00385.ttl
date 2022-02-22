@@ -1,0 +1,76 @@
+@prefix t00385: <https://noordergraf.rug.nl/tomb/T00385#> .
+
+tomb:T00385
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-26T15:03:04"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00385.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2517 ;
+      geo:long 6.1455
+    ] ;
+    :nd "+53.2517+006.1455"^^ll:
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00385:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+van
+onzen gel vaber
+behuwd en grodtyader
+andries haagsma
+overl. 8 maart 1929
+te buitenpost
+in den ouderdom
+van 82 jaar.
+de fam haagsma
+,
+pares
+""" .
+
+t00385:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y"^^xsd:duration
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847"^^xsd:gYear ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-03-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Andries Haagsma" ;
+    :text "TODO: Andries Haagsma"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Buitenpost2758131 ;
+    :text "TODO: BUITENPOST"
+  ] ;
+  :relation [
+    a :Father, :Grandfather ;
+    :target [
+      a :Family ;
+      :name [
+        a :Name ;
+        :fullname "HAAGSMA" ;
+        :text "de Fam. Haagsma."
+      ]
+    ]
+  ] .
+

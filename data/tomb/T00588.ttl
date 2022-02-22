@@ -1,0 +1,64 @@
+@prefix t00588: <https://noordergraf.rug.nl/tomb/T00588#> .
+
+tomb:T00588
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-30T14:31:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00588.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3277 ;
+      geo:long 6.5120
+    ] ;
+    :nd "+53.3277+006.5120"^^ll:
+  ] ;
+  :site site:NLgr9951tnWinsum ;
+  :subject t00588:P1 ;
+  :symbol [
+    a symbol:Freemason
+  ] ;
+  :text """TODO: lerendinus jan
+bruins b. zn.
+edenen
+semini 1924
+t winum
+overleden
+30 tober 200
+te den bosch
+sc
+""" .
+
+t00588:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y9M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1924-01-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2010-10-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Berendinus Jan Bruins" ;
+    :suffix "B.zoon" ;
+    :text "TODO: Berendinus Jan Bruins B.zoon"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Winsum2744337 ;
+    :text "TODO: WINSUM"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:SHertogenbosch2747351 ;
+    :text "TODO: 'S-HERTOGENBOSCH"
+  ] .
+

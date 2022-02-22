@@ -1,0 +1,110 @@
+@prefix t00740: <https://noordergraf.rug.nl/tomb/T00740#> .
+
+tomb:T00740
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-29T10:20:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00740.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1806 ;
+      geo:long 6.9690
+    ] ;
+    :nd "+53.1806+006.9690"^^ll:
+  ] ;
+  :site site:NLgr9679khScheemda ;
+  :subject t00740:P1, t00740:P2 ;
+  :symbol [
+    a symbol:Butterfly
+  ], [
+    a symbol:WeepingWillow
+  ], [
+    a symbol:Scythe
+  ] ;
+  :text """TODO: on
+hier rust
+azlonvergetelare
+gade en moeder
+elizabeth
+woltjer.
+gebte westerlee
+18 juli 1825
+overlte scheemda
+17 maart 1902
+echt genoote van
+wessel brons
+cebte wagenborgen
+9 juni 1818.
+overlte scheemda
+20 dec.1916.
+""" .
+
+t00740:C2
+  a :Village ;
+  :place place:Scheemda2747661 ;
+  :text "TODO: SCHEEMDA" .
+
+t00740:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y7M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1825-07-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-03-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Elizabeth Woltjer" ;
+    :text "TODO: Elizabeth Woltjer"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Westerlee2744715 ;
+    :text "TODO: WESTERLEE"
+  ] ;
+  :placeOfDeath t00740:C2 ;
+  :relation [
+    a :Wife
+  ], [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t00740:P2
+  ] .
+
+t00740:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P98Y6M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1818-06-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-12-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wessel Brons" ;
+    :text "TODO: Wessel Brons"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Wagenborgen2745090 ;
+    :text "TODO: WAGENBORGEN"
+  ] ;
+  :placeOfDeath t00740:C2 .
+

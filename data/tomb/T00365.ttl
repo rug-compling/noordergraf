@@ -1,0 +1,90 @@
+@prefix t00365: <https://noordergraf.rug.nl/tomb/T00365#> .
+
+tomb:T00365
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:27:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00365.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0799 ;
+      geo:long 6.5712
+    ] ;
+    :nd "+53.0799+006.5712"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE FROUKJE"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00365:P1 ;
+  :symbol [
+    a symbol:Rose
+  ] ;
+  :text """TODO: hier rust
+onze lieve dochter en zuster
+froukje smeengek
+0 2 olt. 1918 te zuidlaren
+1 18 juni 1946 te tinaarlo
+r.smeenge (dverl.)
+en
+e smeenge-van dalen
+tis
+rust zacht lieve froukje
+""" .
+
+t00365:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P27Y8M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1918-10-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-06-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Froukje Smeenge" ;
+    :text "TODO: Froukje Smeenge"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zuidlaren2743680 ;
+    :text "TODO: ZUIDLAREN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Tynaarlo2746038 ;
+    :text "TODO: TYNAARLO"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00365:P2, t00365:P3
+  ], [
+    a :Sister
+  ] .
+
+t00365:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "R. Smeenge" ;
+    :text "TODO: R. Smeenge"
+  ] .
+
+t00365:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "E. Smeenge-van Dalen" ;
+    :text "TODO: E. Smeenge-van Dalen"
+  ] .
+

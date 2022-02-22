@@ -1,0 +1,81 @@
+@prefix t01062: <https://noordergraf.rug.nl/tomb/T01062#> .
+
+tomb:T01062
+  a :Tomb ;
+  :image [
+    dc:date "2020-05-01T15:30:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01062.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1231 ;
+      geo:long 6.2513
+    ] ;
+    :nd "+53.1231+006.2513"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "SLAAP ZACHT LIEVE MOEDER."@nld
+  ] ;
+  :site site:NLgr9367paDeWilp ;
+  :subject t01062:P1, t01062:P2 ;
+  :symbol [
+    a symbol:Branch
+  ], [
+    a symbol:Branch
+  ] ;
+  :text """TODO: rustplaats van
+wokehhaarsma
+gebede will
+12 juli 1853
+overl. aldaar
+1 mei 1935
+weduwe van
+dirk j.heidinga.
+slaap zacht
+lieve moeder.
+""" .
+
+t01062:C1
+  a :Village ;
+  :place place:DeWilp2756932 ;
+  :text "TODO: DE WILP" .
+
+t01062:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y9M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1853-07-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-05-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wijke H. Haarsma" ;
+    :text "TODO: Wijke H. Haarsma"
+  ] ;
+  :placeOfBirth t01062:C1 ;
+  :placeOfDeath t01062:C1 ;
+  :relation [
+    a :Mother
+  ], [
+    a :Widow ;
+    :target t01062:P2
+  ] .
+
+t01062:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Dirk J. Heidinga" ;
+    :text "TODO: Dirk J. Heidinga"
+  ] .
+

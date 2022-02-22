@@ -1,0 +1,64 @@
+@prefix t00590: <https://noordergraf.rug.nl/tomb/T00590#> .
+
+tomb:T00590
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-30T14:30:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00590.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3276 ;
+      geo:long 6.5119
+    ] ;
+    :nd "+53.3276+006.5119"^^ll:
+  ] ;
+  :site site:NLgr9951tnWinsum ;
+  :subject t00590:P1, t00590:P2 ;
+  :text """TODO: jan timmer
+steenfarbikant
+cchtgenoot van
+hendrina weg
+2 aug 1860-3 febr. 1938
+""" .
+
+t00590:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y6M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-08-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-02-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jam Timmer" ;
+    :text "TODO: Jam Timmer"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:89242 ;
+    :text "steenfabrikant" ;
+    :wordnet "TODO: Manufacturer.n.02"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00590:P2
+  ] .
+
+t00590:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Hendrina Weg" ;
+    :text "TODO: Hendrina Weg"
+  ] .
+

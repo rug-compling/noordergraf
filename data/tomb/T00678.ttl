@@ -1,0 +1,96 @@
+@prefix t00678: <https://noordergraf.rug.nl/tomb/T00678#> .
+
+tomb:T00678
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:30:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00678.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0687 ;
+      geo:long 5.5221
+    ] ;
+    :nd "+53.0687+005.5221"^^ll:
+  ] ;
+  :quote t00678:V2 ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00678:P1, t00678:P2 ;
+  :text """TODO: ter
+gedachtenis
+aan onze lieve
+man. vader en opa
+date dijkstra
+* 27-8-1905 + 7-6-1974
+en onze lieve
+moeder en oma
+berber brouwer
+* 19-9-1908 + 15-3-1989
+joh. 11:25
+""" .
+
+t00678:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y9M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-08-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-06-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Date Dijkstra" ;
+    :text "TODO: Date Dijkstra"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00678:P2
+  ], [
+    a :Father
+  ], [
+    a :Grandfather
+  ] .
+
+t00678:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y5M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-09-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1989-03-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Berber Brouwer" ;
+    :text "TODO: Berber Brouwer"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Grandmother
+  ] .
+
+t00678:V2
+  a :Quote ;
+  :reference [
+    a :BibleJohn ;
+    :chapter 25 ;
+    :verse "11"
+  ] ;
+  :text "TODO" .
+

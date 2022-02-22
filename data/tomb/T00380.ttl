@@ -1,0 +1,73 @@
+@prefix t00380: <https://noordergraf.rug.nl/tomb/T00380#> .
+
+tomb:T00380
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-26T15:08:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00380.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2519 ;
+      geo:long 6.1450
+    ] ;
+    :nd "+53.2519+006.1450"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 87 ;
+      :comment "berijmd"
+    ] ;
+    :text "Ps. 87 ber."
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00380:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+van
+trijntje (jstra
+geb.7 maart 1889
+te buitenpost
+overl, aldaar
+3 febr. 1976
+ps. 87 ber
+37
+""" .
+
+t00380:C1
+  a :Village ;
+  :place place:Buitenpost2758131 ;
+  :text "TODO: BUITENPOST" .
+
+t00380:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P95Y10M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-03-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-02-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Trijntje IJstra" ;
+    :text "TODO: Trijntje IJstra"
+  ] ;
+  :placeOfBirth t00380:C1 ;
+  :placeOfDeath t00380:C1 .
+

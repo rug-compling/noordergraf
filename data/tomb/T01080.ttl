@@ -1,0 +1,49 @@
+@prefix t01080: <https://noordergraf.rug.nl/tomb/T01080#> .
+
+tomb:T01080
+  a :Tomb ;
+  :image [
+    dc:date "2020-05-23T10:32:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01080.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "TOUTE LA SAGESSE ET DISCOURS DU MONDE SE RESOULT EN FIN A NE CRAINDRE POINT A MOURIR MONTAIGNE"@fra
+  ] ;
+  :subject t01080:P1 ;
+  :symbol [
+    a symbol:Butterfly
+  ] ;
+  :text """TODO: vandrb c de wilde
+23 27 04.2009
+5
+toute la sagesse
+et discours du monde
+se resoult en gin a ne
+craindre point a mourir
+montaigne
+""" .
+
+t01080:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y5M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-09-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2002-02-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Andre G. de Wilde" ;
+    :text "TODO: Andre G. de Wilde"
+  ] .
+

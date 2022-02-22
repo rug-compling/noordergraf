@@ -1,0 +1,63 @@
+@prefix t00757: <https://noordergraf.rug.nl/tomb/T00757#> .
+
+tomb:T00757
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-28T12:45:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00757.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3111 ;
+      geo:long 6.9972
+    ] ;
+    :nd "+53.3111+006.9972"^^ll:
+  ] ;
+  :site site:NLgr9936btFarmsum ;
+  :subject t00757:P1, t00757:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: அவன்,
+(ene
+insaa 5
+p
+மேலை
+saratidas
+buissour
+""" .
+
+t00757:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P41Y7M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-01-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1874-08-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Martje D. Kuiper" ;
+    :text "TODO: Martje D. Kuiper"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00757:P2
+  ] .
+
+t00757:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Bareld J. Buiskool" ;
+    :text "TODO: Bareld J. Buiskool"
+  ] .
+

@@ -1,0 +1,88 @@
+@prefix t00270: <https://noordergraf.rug.nl/tomb/T00270#> .
+
+tomb:T00270
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-14T10:58:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00270.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2335 ;
+      geo:long 6.6201
+    ] ;
+    :nd "+53.2335+006.6201"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "IN DE HERE ONTSLAPEN"
+  ], [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
+  :subject t00270:P1, t00270:P2 ;
+  :text """TODO: llll
+in degere ontstapen
+onzesenteedbenen tager
+haru banted tos
+teg 910
+bergenootlin
+arette vrieling
+189
+118-3 1962
+rest
+clieve ouders
+""" .
+
+t00270:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y8M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-01-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-09-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harm Barteld Vos" ;
+    :text "TODO: Harm Barteld Vos"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00270:P2
+  ], [
+    a :Husband ;
+    :target t00270:P2
+  ] .
+
+t00270:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y10M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1982-05-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aaltje Vrieling" ;
+    :text "TODO: Aaltje Vrieling"
+  ] .
+

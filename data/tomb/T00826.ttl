@@ -1,0 +1,76 @@
+@prefix t00826: <https://noordergraf.rug.nl/tomb/T00826#> .
+
+tomb:T00826
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-01T12:18:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00826.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2307 ;
+      geo:long 6.5516
+    ] ;
+    :nd "+53.2307+006.5516"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "GEVALLEN VOOR ZIJN VADERLAND"@nld
+  ] ;
+  :site site:NLgr9741acGroningen ;
+  :subject t00826:P1, t00826:P2 ;
+  :text """TODO: ter gedachtenis aan
+onzen lieyen man en vader
+cornelis kle!
+s
+geb i juli 1894 te groningen
+gevallen voor zijn vaderland
+20 april 1945 te delfzijl
+echtgenoot van
+johanna giliams
+""" .
+
+t00826:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y9M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-07-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-04-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Cornelis Klei" ;
+    :text "TODO: Cornelis Klei"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Delfzijl2757340 ;
+    :text "TODO: DELFZIJL"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00826:P2
+  ] .
+
+t00826:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Giliams" ;
+    :text "TODO: Johanna Giliams"
+  ] .
+

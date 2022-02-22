@@ -1,0 +1,79 @@
+@prefix t00716: <https://noordergraf.rug.nl/tomb/T00716#> .
+
+tomb:T00716
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:27:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00716.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7815 ;
+      geo:long 6.8998
+    ] ;
+    :nd "+52.7815+006.8998"^^ll:
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00716:P1, t00716:P2 ;
+  :text """TODO: rudolf hermanvanotterloo
+in leven gepens. 0.1. ambtenaar
+geb. 18 dec. 1876_overl.7 nov. 1939.
+en
+elisabeth johanna van otterloo
+geb.i mei 1888_overl. 14 april 1964
+""" .
+
+t00716:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y10M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-12-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-11-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Rudolf Herman van Otterloo" ;
+    :text "TODO: Rudolf Herman van Otterloo"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:30000 ;
+    :location [
+      a :Colony ;
+      :place place:Indonesie1643084 ;
+      :text "TODO: NEDERLANDS-INDIË"
+    ] ;
+    :text "gepens. O.I. ambtenaar" ;
+    :wordnet "TODO: Clerk.n.01"
+  ] .
+
+t00716:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y11M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-05-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-04-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Elisabeth Johanna van Otterloo" ;
+    :text "TODO: Elisabeth Johanna van Otterloo"
+  ] .
+

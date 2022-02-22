@@ -1,0 +1,58 @@
+@prefix t01119: <https://noordergraf.rug.nl/tomb/T01119#> .
+
+tomb:T01119
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-19T10:48:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01119.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2390 ;
+      geo:long 6.4098
+    ] ;
+    :nd "+53.2390+006.4098"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "O, du lieber Augustin Alles ist hin!"@deu
+  ] ;
+  :site site:NLgr9801caZuidhorn ;
+  :subject t01119:P1 ;
+  :symbol [
+    a symbol:Cow
+  ] ;
+  :text "TODO" .
+
+t01119:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y9M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-08-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2014-06-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Louwrens Louwe Wouda" ;
+    :text "TODO: Louwrens Louwe Wouda"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Hoogemeeden2753738 ;
+    :text "TODO: HOOGEMEEDEN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] .
+

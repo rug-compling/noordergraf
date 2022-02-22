@@ -1,0 +1,103 @@
+@prefix t00612: <https://noordergraf.rug.nl/tomb/T00612#> .
+
+tomb:T00612
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:05:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00612.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1645 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1645+006.7541"^^ll:
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00612:P1, t00612:P2 ;
+  :symbol [
+    a symbol:WingedHourglass1
+  ] ;
+  :text """TODO: wilt laats
+full zielgitus
+c d
+la nuit
+jadeits
+tamme ten cate
+geb. te kleinemeer
+21 oct 1809 .
+overl. le halkwijk
+19 @ fov. 1887
+en
+soetje kempinga
+geb. te kropewelde
+28 juni 1819
+overd te deventer
+9 fev 1892
+.
+az
+""" .
+
+t00612:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1809-10-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1884-11-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tamme ten Cate" ;
+    :text "TODO: Tamme ten Cate"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:Kleinemeer2752727 ;
+    :text "TODO: KLEINEMEER"
+  ] ;
+  :placeOfDeath [
+    a :Hamlet ;
+    :place place:Kalkwijk2753130 ;
+    :text "TODO: KALKWIJK"
+  ] .
+
+t00612:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y4M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1819-06-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-11-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Soetje Kempinga" ;
+    :text "TODO: Soetje Kempinga"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Kropswolde2752217 ;
+    :text "TODO: KROPSWOLDE"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Deventer2756987 ;
+    :text "TODO: DEVENTER"
+  ] .
+

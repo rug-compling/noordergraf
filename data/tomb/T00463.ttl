@@ -1,0 +1,46 @@
+@prefix t00463: <https://noordergraf.rug.nl/tomb/T00463#> .
+
+tomb:T00463
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:53:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00463.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2068 ;
+      geo:long 5.7702
+    ] ;
+    :nd "+53.2068+005.7702"^^ll:
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00463:P1 ;
+  :symbol [
+    a symbol:Eagle
+  ] ;
+  :text """TODO: jan arend copini
+is.3.487 9:52
+""" .
+
+t00463:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P44Y6M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1948-03-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1992-09-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Arend Copini" ;
+    :text "TODO: Jan Arend Copini"
+  ] .
+

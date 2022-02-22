@@ -1,0 +1,101 @@
+@prefix t00660: <https://noordergraf.rug.nl/tomb/T00660#> .
+
+tomb:T00660
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:59:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00660.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0671 ;
+      geo:long 5.5250
+    ] ;
+    :nd "+53.0671+005.5250"^^ll:
+  ] ;
+  :quote t00660:V1, [
+    a :Quote ;
+    :text "JEZUS ANTWOORDDE: \\ IK ZAL U TOT MIJ NEMEN \\ OP DAT OOK GIJ \\ ZIJN MOOGT WAAR IK BEN"@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00660:P1, t00660:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: be
+hier rusten
+onze celiefde ouders
+pieter
+lautenbach
+6 juli 1887
++ 2 feb. 1938
+en
+tjitske
+heslinga
+* 25 juli 1893
+at 2 april 1971
+jezus antwoordee,
+ik zal u tot mij nÉmen
+op dat ook gij
+zijn moogi waar ik ben
+jc4 14 vers 3
+""" .
+
+t00660:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y6M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-07-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-02-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Peiter Lautenbach" ;
+    :text "TODO: Peiter Lautenbach"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00660:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y8M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-07-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-04-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tjitske Heslinga" ;
+    :text "TODO: Tjitske Heslinga"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00660:V1
+  a :Quote ;
+  :reference [
+    a :BibleJohn ;
+    :chapter 14 ;
+    :verse "3"
+  ] ;
+  :text "TODO" .
+

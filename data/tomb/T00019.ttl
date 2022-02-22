@@ -1,0 +1,92 @@
+@prefix t00019: <https://noordergraf.rug.nl/tomb/T00019#> .
+
+tomb:T00019
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:33:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00019.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1919 ;
+      geo:long 6.5928
+    ] ;
+    :nd "+53.1919+006.5928"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :target t00019:P1 ;
+    :text "LIEVE HILLY RUST IN VREDE"
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00019:P1, t00019:P2 ;
+  :text """TODO: }te gron
+hier rust
+mijn lieve vrouw
+hilje hofman
+geb.15 auĢ.1900
+overl.21 aug.1948
+lieve hilly rust in vrede
+gert
+gerrit duiker
+geb. 7 okt. 1889
+te gron
+overl. 29 mei 1971
+""" .
+
+t00019:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00019:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P48Y6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-08-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-08-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hilje Hofman" ;
+    :text "hilje hofman", "hilly"
+  ] ;
+  :placeOfBirth t00019:C1 ;
+  :placeOfDeath t00019:C1 ;
+  :relation [
+    a :Wife ;
+    :target t00019:P2
+  ] .
+
+t00019:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y7M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-10-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-05-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit Duiker" ;
+    :text "gerrit duiker", "gert"
+  ] ;
+  :placeOfBirth t00019:C1 ;
+  :placeOfDeath t00019:C1 .
+

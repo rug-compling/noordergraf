@@ -1,0 +1,114 @@
+@prefix t00322: <https://noordergraf.rug.nl/tomb/T00322#> .
+
+tomb:T00322
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:22:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00322.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4737
+    ] ;
+    :nd "+52.7157+006.4737"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 23 ;
+      :verse "1"
+    ] ;
+    :target t00322:P1 ;
+    :text "Ps. 23 v.1."
+  ], [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 84 ;
+      :verse "12C"
+    ] ;
+    :target t00322:P2 ;
+    :text "Ps. 84 v.12c."
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00322:P1, t00322:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rust
+het
+stoffeluk
+overschot van onze
+gel vrouwenmoeder
+aaltje zomer
+geb. 21 april 1864
+overl.20 april 1932
+echtgente. van
+12
+g. scholten.
+p5.23 v.1.
+en van onze gel. vader
+gerrit scholten
+geb. 31 oct. 1861
+overl 19 aug. 1939
+p5.84 126
+hunne kinoeren
+""" .
+
+t00322:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y11M30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-04-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-04-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aaltje Zomer" ;
+    :text "TODO: Aaltje Zomer"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t00322:P2
+  ], [
+    a :Wife ;
+    :target t00322:P2
+  ] .
+
+t00322:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y9M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-10-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-08-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit Scholten" ;
+    :text "TODO: Gerrit Scholten"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+

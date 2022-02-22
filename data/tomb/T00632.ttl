@@ -1,0 +1,79 @@
+@prefix t00632: <https://noordergraf.rug.nl/tomb/T00632#> .
+
+tomb:T00632
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T09:56:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00632.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1640 ;
+      geo:long 6.7545
+    ] ;
+    :nd "+53.1640+006.7545"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HIER NEVEN RUSTEN \\ DRIE KINDEREN"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00632:P1, t00632:P2 ;
+  :symbol [
+    a symbol:Butterfly
+  ], [
+    a symbol:OakBranch
+  ], [
+    a symbol:OakBranch
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: 5
+rustpiltal
+ro
+m
+3
+pelowe 15
+131
+1823
+overladen 2607
+oktorul van
+st
+uvjemchezon
+haruntina
+""" .
+
+t00632:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y6M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1823-08-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1878-02-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Enno Bronsema" ;
+    :text "TODO: Enno Bronsema"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00632:P2
+  ] .
+
+t00632:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Eliza Meihuizen" ;
+    :text "TODO: Eliza Meihuizen"
+  ] .
+

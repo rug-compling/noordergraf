@@ -1,0 +1,98 @@
+@prefix t00137: <https://noordergraf.rug.nl/tomb/T00137#> .
+
+tomb:T00137
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-02T10:33:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00137.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2062 ;
+      geo:long 6.5701
+    ] ;
+    :nd "+53.2062+006.5701"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00137:P1, t00137:P2 ;
+  :text """TODO: rustplaats
+van
+jan thie
+ger. 7.12270
+te poden
+overl.16_3_42
+te gron
+gel, echtg, van
+annechien
+biemolt
+geb. *3 275
+te peize
+overl 28-12259
+te gron
+term
+""" .
+
+t00137:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00137:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y3M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-12-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-03-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Thie" ;
+    :text "TODO: Jan Thie"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Roden2748026 ;
+    :text "TODO: RODEN"
+  ] ;
+  :placeOfDeath t00137:C1 ;
+  :relation [
+    a :Husband ;
+    :target t00137:P2
+  ] .
+
+t00137:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y9M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-03-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-12-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Annechien Biemolt" ;
+    :text "TODO: Annechien Biemolt"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Peize2748673 ;
+    :text "TODO: PEIZE"
+  ] ;
+  :placeOfDeath t00137:C1 .
+

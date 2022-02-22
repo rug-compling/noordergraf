@@ -1,0 +1,74 @@
+@prefix t00625: <https://noordergraf.rug.nl/tomb/T00625#> .
+
+tomb:T00625
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:00:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00625.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1642 ;
+      geo:long 6.7542
+    ] ;
+    :nd "+53.1642+006.7542"^^ll:
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00625:P1, t00625:P2 ;
+  :symbol [
+    a symbol:Butterfly
+  ], [
+    a symbol:Ouroboros
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:OakBranch
+  ] ;
+  :text """TODO: rustplaatus\"
+van
+seerde
+en
+pia
+kroese
+geb.31 januari
+1819.
+overl.2maart
+1900
+echtgenoot van
+geesje sluis
+""" .
+
+t00625:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1819-01-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1900-03-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Meerten Kroese" ;
+    :text "TODO: Meerten Kroese"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00625:P2
+  ] .
+
+t00625:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Geesje Sluis" ;
+    :text "TODO: Geesje Sluis"
+  ] .
+

@@ -1,0 +1,79 @@
+@prefix t00041: <https://noordergraf.rug.nl/tomb/T00041#> .
+
+tomb:T00041
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-27T17:52:02"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00041.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1630 ;
+      geo:long 6.6122
+    ] ;
+    :nd "+53.1630+006.6122"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00041:P1, t00041:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ], [
+    a symbol:Scythe
+  ], [
+    a symbol:InvertedTorch
+  ] ;
+  :text """TODO: tie
+ge
+ind
+minds
+dari hate
+""" .
+
+t00041:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P52Y3M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-09-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-12-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Henderkien Mannes" ;
+    :text "TODO: Henderkien Mannes"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Onnen2749588 ;
+    :text "TODO: ONNEN"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00041:P2
+  ] .
+
+t00041:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Johannes Reeder" ;
+    :text "TODO: Johannes Reeder"
+  ] .
+

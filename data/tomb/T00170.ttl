@@ -1,0 +1,36 @@
+@prefix t00170: <https://noordergraf.rug.nl/tomb/T00170#> .
+
+tomb:T00170
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-05T10:44:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00170.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1903 ;
+      geo:long 6.5932
+    ] ;
+    :nd "+53.1903+006.5932"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00170:F ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: familie
+r bakker
+3
+""" .
+
+t00170:F
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "R. BAKKER" ;
+    :text "TODO"
+  ] .
+

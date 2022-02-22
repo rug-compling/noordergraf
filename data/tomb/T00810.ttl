@@ -1,0 +1,84 @@
+@prefix t00810: <https://noordergraf.rug.nl/tomb/T00810#> .
+
+tomb:T00810
+  a :Tomb ;
+  :image [
+    dc:date "2020-01-18T13:13:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00810.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2779 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2779+006.6936"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "STA WANDELAAR EN LEES, \\ WIER OVERSCHOT DIT IS. \\ EN DENK DAN OOK DAT LOT \\ TREFT VROEG OF SPA MIJ WIS"@nld
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00810:P1, t00810:P2 ;
+  :symbol [
+    a symbol:Butterfly
+  ] ;
+  :text """TODO: on paletoniram
+insederks boer
+putar belan bera
+alone, 2. eta 1832
+athair werden
+den 12 sam 1893
+hennet.
+eh bolman
+h.
+18
+oh
+stawandelaarinubes.
+wer overschot cites:
+bniek dan ook datlot
+dk
+treet vrieude span wis
+tvnet
+""" .
+
+t00810:C1
+  a :Village ;
+  :place place:TenBoer2746491 ;
+  :text "TODO: TEN BOER" .
+
+t00810:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y1M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1832-05-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1883-06-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Anje Derks Boer" ;
+    :text "TODO: Anje Derks Boer"
+  ] ;
+  :placeOfBirth t00810:C1 ;
+  :placeOfDeath t00810:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00810:P2
+  ] .
+
+t00810:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "J.H. Bolman" ;
+    :text "TODO: J.H. Bolman"
+  ] .
+

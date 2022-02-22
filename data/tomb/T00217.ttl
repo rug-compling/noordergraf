@@ -1,0 +1,92 @@
+@prefix t00217: <https://noordergraf.rug.nl/tomb/T00217#> .
+
+tomb:T00217
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:45:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00217.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6369
+    ] ;
+    :nd "+53.2225+006.6369"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HAAR HEENGAAN WAS VREDE"
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00217:P1 ;
+  :symbol [
+    a symbol:Rose
+  ] ;
+  :text """TODO: tht
+gidiorite
+came
+grietje wiringa
+gelateerder
+den 25a 1876
+oviechte hanksted
+doar 200m 1896
+anaissions
+jan wiringa
+anna bolt
+haar heengaan
+mas tiede
+e
+""" .
+
+t00217:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P19Y11M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-05-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1896-05-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Wieringa" ;
+    :text "TODO: Grietje Wieringa"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Noorddijk2749981 ;
+    :text "TODO: NOORDDIJK"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Harkstede2754819 ;
+    :text "TODO: HARKSTEDE"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00217:P2, t00217:P3
+  ] .
+
+t00217:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan Wieringa" ;
+    :text "TODO: Jan Wieringa"
+  ] .
+
+t00217:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Anna Bolt" ;
+    :text "TODO: Anna Bolt"
+  ] .
+

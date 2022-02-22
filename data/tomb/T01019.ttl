@@ -1,0 +1,114 @@
+@prefix t01019: <https://noordergraf.rug.nl/tomb/T01019#> .
+
+tomb:T01019
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-03T14:31:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01019.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1911 ;
+      geo:long 6.5931
+    ] ;
+    :nd "+53.1911+006.5931"^^ll:
+  ] ;
+  :quote t01019:V1, t01019:V2 ;
+  :site site:NLgr9722snGroningen ;
+  :subject t01019:P1, t01019:P2 ;
+  :text """TODO: rustplaats van
+geert jan drent
+geb.29 dec. 1876 te gron.
+overl.16 febr.1938 te gron.
+echtgenoot van
+johanna kloostra
+rom:8:38_39
+en
+johanna kloostra
+geb.12 maart 1874 te gron.
+overl. 5 juni 1946 te gron.
+weduwe, van
+geert jan drent
+rom.5:1 en 2
+""" .
+
+t01019:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t01019:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y1M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-12-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-02-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geert Jan Drent" ;
+    :text "TODO: Geert Jan Drent"
+  ] ;
+  :placeOfBirth t01019:C1 ;
+  :placeOfDeath t01019:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t01019:P2
+  ] .
+
+t01019:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y2M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-03-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-06-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Klooster" ;
+    :text "TODO: Johanna Klooster"
+  ] ;
+  :placeOfBirth t01019:C1 ;
+  :placeOfDeath t01019:C1 ;
+  :relation [
+    a :Widow ;
+    :target t01019:P1
+  ] .
+
+t01019:V1
+  a :Quote ;
+  :reference [
+    a :BibleRomans ;
+    :chapter 8 ;
+    :verse "38-39"
+  ] ;
+  :target t01019:P1 ;
+  :text "TODO" .
+
+t01019:V2
+  a :Quote ;
+  :reference [
+    a :BibleRomans ;
+    :chapter 5 ;
+    :verse "1,2"
+  ] ;
+  :target t01019:P2 ;
+  :text "TODO" .
+

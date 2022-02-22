@@ -1,0 +1,75 @@
+@prefix t00943: <https://noordergraf.rug.nl/tomb/T00943#> .
+
+tomb:T00943
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-21T13:21:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00943.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1384 ;
+      geo:long 7.1432
+    ] ;
+    :nd "+53.1384+007.1432"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE BERTY"@nld
+  ] ;
+  :site site:NLgr9696xgOudeschans ;
+  :subject t00943:P1 ;
+  :text """TODO: hier rust
+albert harm
+* 14 oct. 1944
+t 25 mei 1945
+geliefd zoontje van
+h. g nomden en
+s. nomden-vos
+26
+rust zacht lieve
+berty
+""" .
+
+t00943:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P7M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1944-10-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-05-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Albert Harm" ;
+    :text "albert harm", "berty"
+  ] ;
+  :relation [
+    a :Son ;
+    :target t00943:P2, t00943:P3
+  ] .
+
+t00943:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "H.G. Nomden" ;
+    :text "h.g. nomden"
+  ] .
+
+t00943:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "S. Nomden-Vos" ;
+    :text "s. nomden-vos"
+  ] .
+

@@ -1,0 +1,62 @@
+@prefix t00595: <https://noordergraf.rug.nl/tomb/T00595#> .
+
+tomb:T00595
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-30T14:16:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00595.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3262 ;
+      geo:long 6.5117
+    ] ;
+    :nd "+53.3262+006.5117"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "I AM ONE WITH GOD"@eng
+  ] ;
+  :site site:NLgr9951tnWinsum ;
+  :subject t00595:P1 ;
+  :symbol [
+    a symbol:GClef
+  ] ;
+  :text """TODO: manuel e. lopes
+( master drummer)
+cos
+6 6 - 1950. 8. 8. - 2001
+8
+aos
+i am
+one
+with god
+""" .
+
+t00595:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y2M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1951-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-08-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Manuel E. Lopes" ;
+    :text "TODO: Manuel E. Lopes"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:17140 ;
+    :wordnet "TODO: Drummer.n.01"
+  ] .
+

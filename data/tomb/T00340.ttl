@@ -1,0 +1,96 @@
+@prefix t00340: <https://noordergraf.rug.nl/tomb/T00340#> .
+
+tomb:T00340
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:07:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00340.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4731
+    ] ;
+    :nd "+52.7157+006.4731"^^ll:
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00340:P1, t00340:P2 ;
+  :text """TODO: stplaats van
+if-
+henderikus la cro
+geb.te grorinden 18 sept.1845
+overite horseveen14 tehr 1905
+en van zijn echtgenoote
+anna paulina haak
+geb.te kloosterveen 14 jan.1853
+overí, te zwolle 13 jan. 19%
+lnt
+""" .
+
+t00340:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y4M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1848-09-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-02-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Henderikus La Gro" ;
+    :text "TODO: Henderikus La Gro"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Hoogeveen2753719 ;
+    :text "TODO: HOOGEVEEN"
+  ] .
+
+t00340:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y11M30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1853-01-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-01-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Pauline Haak" ;
+    :text "TODO: Pauline Haak"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Kloosterveen2752614 ;
+    :text "TODO: KLOOSTERVEEN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Zwolle2743477 ;
+    :text "TODO: ZWOLLE"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00340:P1
+  ] .
+

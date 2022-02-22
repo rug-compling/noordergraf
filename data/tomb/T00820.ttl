@@ -1,0 +1,52 @@
+@prefix t00820: <https://noordergraf.rug.nl/tomb/T00820#> .
+
+tomb:T00820
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-01T12:35:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00820.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2305 ;
+      geo:long 6.5507
+    ] ;
+    :nd "+53.2305+006.5507"^^ll:
+  ] ;
+  :site site:NLgr9741acGroningen ;
+  :subject t00820:P1 ;
+  :text """TODO: cec
+rustplaats van
+alje mulder
+emer.pred
+jeb 10 maart 1846
+overl., nov.1919
+""" .
+
+t00820:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y7M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-03-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-11-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Altje Mulder" ;
+    :text "TODO: Altje Mulder"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:14120 ;
+    :wordnet "TODO: Preacher.n.01"
+  ] .
+

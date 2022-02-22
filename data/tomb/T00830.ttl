@@ -1,0 +1,87 @@
+@prefix t00830: <https://noordergraf.rug.nl/tomb/T00830#> .
+
+tomb:T00830
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-01T12:32:39"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00830.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2305 ;
+      geo:long 6.5509
+    ] ;
+    :nd "+53.2305+006.5509"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "FEMME EPOUSE MERE \\ ELLE FUT LA DROITURE \\ ET LA SINCERITE MEMEMS \\ QU IL SOII PARDONNE \\ CEUZ QUI LONT MECONNUI \\ ET A CEUX AUSSI \\ PAR QUI ELLE A SOUFFERT"@fra
+  ] ;
+  :site site:NLgr9741acGroningen ;
+  :subject t00830:P1, t00830:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Pentagram
+  ] ;
+  :text """TODO: louise-maria-elisabeth
+bo lan van wijngaerde
+|
+18 septemfre 1873-910 mars 1933
+☆
+femmese pouse mere
+elle fut la droiture
+enia sincerite memes
+du soli pardonne
+ceux qui lont meconaui
+et 1 ceux aussi
+par qu elle a souffert
+a
+e
+emile boulan
+3 janvier 1874-25 juillet 1947
+""" .
+
+t00830:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P57Y6M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-09-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-03-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Louise Maria Elisabeth Boulan-van Wijngaerdi" ;
+    :text "TODO: Louise Maria Elisabeth Boulan-van Wijngaerdi"
+  ] .
+
+t00830:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y6M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-01-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-07-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Emile Boulan" ;
+    :text "TODO: Emile Boulan"
+  ] .
+

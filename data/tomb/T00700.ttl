@@ -1,0 +1,119 @@
+@prefix t00700: <https://noordergraf.rug.nl/tomb/T00700#> .
+
+tomb:T00700
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:53:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00700.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7813 ;
+      geo:long 6.9010
+    ] ;
+    :nd "+52.7813+006.9010"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MAN EN VADER"@nld
+  ], [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MOEDER"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00700:P1, t00700:P2 ;
+  :text """TODO: pusicais
+w
+hendrikalberts
+geertten boelen
+hier.ru
+geb.te emmen
+s. sept1859
+overl. aloaar
+20 oct. 1923
+echtgenoot van
+g.boelen.
+gebte emmen
+15 sept. 1859
+overl aldaar
+18 oct 1944
+weduwe van
+h.alberts
+rust zacht lieve
+moeder
+avant
+mul
+mul
+tutt
+rust zacht lieve man
+en vader.
+file
+""" .
+
+t00700:C1
+  a :Town ;
+  :place place:Emmen2756136 ;
+  :text "TODO: EMMEN" .
+
+t00700:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y1M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-10-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Alberts" ;
+    :text "TODO: Hendrik Alberts"
+  ] ;
+  :placeOfBirth t00700:C1 ;
+  :placeOfDeath t00700:C1 ;
+  :relation [
+    a :Husband ;
+    :target t00700:P2
+  ], [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00700:P2
+  ] .
+
+t00700:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y1M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-10-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geertien Boelen" ;
+    :text "TODO: Geertien Boelen"
+  ] ;
+  :placeOfBirth t00700:C1 ;
+  :placeOfDeath t00700:C1 ;
+  :relation [
+    a :Widow ;
+    :target t00700:P1
+  ], [
+    a :Mother
+  ] .
+

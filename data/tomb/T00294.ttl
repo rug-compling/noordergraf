@@ -1,0 +1,69 @@
+@prefix t00294: <https://noordergraf.rug.nl/tomb/T00294#> .
+
+tomb:T00294
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:43:34"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00294.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7151 ;
+      geo:long 6.4740
+    ] ;
+    :nd "+52.7151+006.4740"^^ll:
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00294:P1, t00294:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: ora
+hier rusthet
+stoffelijk
+overschot
+van onze
+lieve moeder
+aaltje
+veldman
+wed van
+harm bork
+1852_1926
+""" .
+
+t00294:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aaltje Veldman" ;
+    :text "TODO: Aaltje Veldman"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Widow ;
+    :target t00294:P2
+  ] .
+
+t00294:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Harm Bork" ;
+    :text "TODO: Harm Bork"
+  ] .
+

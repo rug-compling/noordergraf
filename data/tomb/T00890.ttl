@@ -1,0 +1,47 @@
+@prefix t00890: <https://noordergraf.rug.nl/tomb/T00890#> .
+
+tomb:T00890
+  a :Tomb ;
+  :text """TODO: elizabethi
+dvkstra
+bovsema
+14.12.1870
+561930
+it
+""" ;
+  :image [
+    dc:date "2020-02-29T12:23:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00890.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1903 ;
+      geo:long 6.5917
+    ] ;
+    :nd "+53.1903+006.5917"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00890:P1 .
+
+t00890:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y5M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-12-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-06-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Elizabeth Dykstra Bousema" ;
+    :text "TODO: Elizabeth Dykstra Bousema"
+  ] .
+

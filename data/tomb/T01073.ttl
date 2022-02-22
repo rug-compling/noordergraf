@@ -1,0 +1,85 @@
+@prefix t01073: <https://noordergraf.rug.nl/tomb/T01073#> .
+
+tomb:T01073
+  a :Tomb ;
+  :image [
+    dc:date "2020-05-15T17:34:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01073.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1626 ;
+      geo:long 6.6151
+    ] ;
+    :nd "+53.1626+006.6151"^^ll:
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t01073:P1, t01073:P2 ;
+  :symbol [
+    a symbol:Anchor
+  ] ;
+  :text """TODO: rustplaats van
+onze lieve man en vader
+harmannus oorburg
+* 13 – 12 – 1901 + 15 – 2-1961
+echtgen. van h.vegter
+en onze lieve moeder
+hinderkien vegter
+5422535 1911 * 2-4-1993
+""" .
+
+t01073:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y2M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-12-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-02-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harmannus Oorburg" ;
+    :text "TODO: Harmannus Oorburg"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t01073:P2
+  ], [
+    a :Husband ;
+    :target t01073:P2
+  ] .
+
+t01073:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-03-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993-04-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hinderkien Vegter" ;
+    :text "TODO: Hinderkien Vegter"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+

@@ -1,0 +1,101 @@
+@prefix t00295: <https://noordergraf.rug.nl/tomb/T00295#> .
+
+tomb:T00295
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:42:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00295.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7150 ;
+      geo:long 6.4740
+    ] ;
+    :nd "+52.7150+006.4740"^^ll:
+  ] ;
+  :quote t00295:V1, [
+    a :Quote ;
+    :target t00295:P1 ;
+    :text "HAAR LEVEN WAS CHRISTUS"
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00295:P1, t00295:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rust
+johanna seinen.
+echtgenoote van
+c. warmels.
+geb. 23 april 1865,
+overl. 6 sept. 1925
+haar leven was christus
+en
+cornelius
+warmels
+geb 26 aug. 1862
+다.
+overl. 13 maart 1927.
+rom. 16:27
+lt
+""" .
+
+t00295:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y4M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-09-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Seinen" ;
+    :text "TODO: Johanna Seinen"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t00295:P2
+  ] .
+
+t00295:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y6M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-08-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-03-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Cornelis Warmels" ;
+    :text "TODO: Cornelis Warmels"
+  ] .
+
+t00295:V1
+  a :Quote ;
+  :reference [
+    a :BibleRomans ;
+    :chapter 16 ;
+    :verse "27"
+  ] ;
+  :target t00295:P2 ;
+  :text "TODO" .
+

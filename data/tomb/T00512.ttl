@@ -1,0 +1,59 @@
+@prefix t00512: <https://noordergraf.rug.nl/tomb/T00512#> .
+
+tomb:T00512
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:24:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00512.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1649 ;
+      geo:long 6.7537
+    ] ;
+    :nd "+53.1649+006.7537"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "GONE, BUT NOT FORGOTTEN"@eng
+  ], [
+    a :Quote ;
+    :text "IN LOVING MEMORY OF"@eng
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00512:P1 ;
+  :symbol [
+    a symbol:Cross
+  ] ;
+  :text """TODO: in loving memory of
+it
+jozua vos
+1921
+1993
+gone, but not forgotten\"
+1.99
+9
+""" .
+
+t00512:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1921"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jozua Vos" ;
+    :text "TODO: Jozua Vos"
+  ] .
+

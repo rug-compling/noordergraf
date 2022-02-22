@@ -1,0 +1,85 @@
+@prefix t00469: <https://noordergraf.rug.nl/tomb/T00469#> .
+
+tomb:T00469
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:40:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00469.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2073 ;
+      geo:long 5.7691
+    ] ;
+    :nd "+53.2073+005.7691"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00469:P1, t00469:P2 ;
+  :symbol [
+    a symbol:Cross
+  ] ;
+  :text """TODO: ce
+gleze
+in pace
+anne tekstra
+* is jul 1899
+is
+i aug. 1950
+echtgenoot van
+tietje huisman
+23 maart 1898
++ 20 mei 1991
+4
+""" .
+
+t00469:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P51Y17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-08-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Anne Tekstra" ;
+    :text "TODO: Anne Tekstra"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00469:P2
+  ] .
+
+t00469:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P93Y1M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-03-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1991-05-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tietje Huisman" ;
+    :text "TODO: Tietje Huisman"
+  ] .
+

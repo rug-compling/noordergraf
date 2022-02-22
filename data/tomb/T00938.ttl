@@ -1,0 +1,129 @@
+@prefix t00938: <https://noordergraf.rug.nl/tomb/T00938#> .
+
+tomb:T00938
+  a :Tomb ;
+  :text """TODO: rustplaats
+yan
+onze lieve dochter en zuster
+johanna ellechina
+blikslager
+geb. november 1915
+overl. 1. juni 1960
+en onze lieve vrouw en moeder
+gezina johanna van dijken
+geb. 25 sept. 1887 overl.3 nov. 1974
+geliefde echtgenote van
+hinderikus blikslager
+geb.17 febr. 1891 overl.16 april 1980
+m
+ftp
+\u05d4\u05d5\u05df-\u05e9\u05e8 \u05d4\u05d5
+des en
+tarra
+resim
+""" ;
+  :image [
+    dc:date "2020-03-18T10:27:01"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00938.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2394 ;
+      geo:long 6.5527
+    ] ;
+    :nd "+53.2394+006.5527"^^ll:
+  ] ;
+  :site site:NLgr9741ghGroningen ;
+  :subject t00938:P1, t00938:P3, t00938:P4 ;
+  :quote [
+    a :Quote ;
+    :text "EN ONZE LIEVE VROUW EN MOEDER"@nld
+  ] , [
+    a :Quote ;
+    :text "RUSTPLAATS VAN ONZE LIEVE DOCHTER EN ZUSTER"@nld
+  ] .
+
+t00938:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P44Y7M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1915-11-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-06-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Johanna Ellechina Blikslager" ;
+    :text "TODO: Johanna Ellechina Blikslager"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00938:P3, t00938:P4
+  ], [
+    a :Sister ;
+    :target t00938:P2
+  ] .
+
+t00938:P2
+  a :Female .
+
+t00938:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y1M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-09-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-11-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gezina Johanna van Dijken" ;
+    :text "TODO: Gezina Johanna van Dijken"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00938:P4
+  ], [
+    a :Mother ;
+    :target t00938:P1, t00938:P2
+  ], [
+    a :Spouse ;
+    :target t00938:P4
+  ] .
+
+t00938:P4
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P99Y1M30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-02-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1990-04-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hinderikus Blikslager" ;
+    :text "TODO: Hinderikus Blikslager"
+  ] .
+

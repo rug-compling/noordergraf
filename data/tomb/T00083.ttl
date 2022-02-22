@@ -1,0 +1,78 @@
+@prefix t00083: <https://noordergraf.rug.nl/tomb/T00083#> .
+
+tomb:T00083
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T11:00:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00083.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2035 ;
+      geo:long 6.5731
+    ] ;
+    :nd "+53.2035+006.5731"^^ll:
+  ] ;
+  :site site:NLgr9721aaGroningen ;
+  :subject t00083:P1, t00083:P2 ;
+  :symbol [
+    a symbol:Chrismon
+  ] ;
+  :text """TODO: f
+wilhelmus franciscus
+bernardus schneiders
+geb.4.6.1891. overl.i.5.1964
+echtgenoot van g.v.blaauw
+geertruida veronica
+schneiders_blaauw
+geb. 20_4_1889
+overl. 10_1_1976
+""" .
+
+t00083:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y10M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-06-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-05-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wilhelmus Franciscus Bernardus Schneiders" ;
+    :text "TODO: Wilhelmus Franciscus Bernardus Schneiders"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00083:P2
+  ] .
+
+t00083:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y8M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-01-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geertruida Veronica Schneiders-Blaauw" ;
+    :text "TODO: Geertruida Veronica Schneiders-Blaauw"
+  ] .
+

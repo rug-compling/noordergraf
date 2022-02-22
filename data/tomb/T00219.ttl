@@ -1,0 +1,90 @@
+@prefix t00219: <https://noordergraf.rug.nl/tomb/T00219#> .
+
+tomb:T00219
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:43:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00219.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6367
+    ] ;
+    :nd "+53.2225+006.6367"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00219:P1, t00219:P2 ;
+  :symbol [
+    a symbol:Horse
+  ], [
+    a symbol:Gate
+  ] ;
+  :text """TODO: systis erotic
+fle renuries
+koning.
+@
+melbandenature
+gurdgamoneda
+tersecond te
+delet arorleden
+mae a828
+welcome rezen)
+85 er man
+2
+""" .
+
+t00219:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y"^^xsd:duration ;
+    :text "ruim 83 jaren"
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1795"^^xsd:gYear ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1878-03-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Elle Hendriks Koning" ;
+    :text "TODO: Elle Hendriks Koning"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:14000 ;
+    :location [
+      a :Village ;
+      :place place:Middelbert2750902 ;
+      :text "TODO: MIDDELBERT"
+    ] ;
+    :wordnet "TODO: Elder.n.03"
+  ], [
+    a :Occupation ;
+    :hisco hisco:61220 ;
+    :location [
+      a :Hamlet ;
+      :place place:Euvelgunne2755982 ;
+      :text "TODO: EUVELGUNNE"
+    ] ;
+    :wordnet "TODO: Farmer.n.01"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t00219:P2
+  ] .
+
+t00219:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Kol" ;
+    :text "TODO: Jantje Kol"
+  ] .
+

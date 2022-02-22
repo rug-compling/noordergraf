@@ -1,0 +1,76 @@
+@prefix t00514: <https://noordergraf.rug.nl/tomb/T00514#> .
+
+tomb:T00514
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:54:17"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00514.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1671 ;
+      geo:long 6.7534
+    ] ;
+    :nd "+53.1671+006.7534"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DISINI TEMPAT ISTIRAHAT SUAMI, PAPA, ADIK DAN OOM"@msa
+  ], [
+    a :Quote ;
+    :text "KARENA BAGIKU HIDUP ADALAG KRISTUS \\ DAN MATI ADALAH KEUNTUNGAN"@msa
+  ], [
+    a :Quote ;
+    :reference [
+      a :BiblePhilippians ;
+      :chapter 1 ;
+      :scripture <https://www.bible.com/nl/bible/2975/PHP.1.21> ;
+      :verse "21"
+    ] ;
+    :text "Filipi 1-21"@msa
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00514:P1 ;
+  :text """TODO: oy
+disini tempat istirahat suami,
+papa, adik dan oom
+julianus anton pelamonia
+noes -
+*3-6-1961
+16-11 - 2003
+karena bagiku hidup adalah kristus
+dan mati adalah keuntungan
+filipi 1-21
+""" .
+
+t00514:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P42Y5M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1961-06-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2003-11-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Julianus Anton Pelamonia" ;
+    :text "Julianus Anton Pelamonia", "Noes"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Brother
+  ], [
+    a :Uncle
+  ], [
+    a :Husband
+  ] .
+

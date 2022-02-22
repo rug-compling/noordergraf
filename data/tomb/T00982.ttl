@@ -1,0 +1,45 @@
+@prefix t00982: <https://noordergraf.rug.nl/tomb/T00982#> .
+
+tomb:T00982
+  a :Tomb ;
+  :text """TODO: els buss, bron
+21.4.29
+24.4.12
+front
+""" ;
+  :image [
+    dc:date "2020-03-31T12:44:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00982.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1426 ;
+      geo:long 6.5776
+    ] ;
+    :nd "+53.1426+006.5776"^^ll:
+  ] ;
+  :site site:NLdr9761alEelde ;
+  :subject t00982:P1 .
+
+t00982:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1929-04-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-04-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Els Buss-Bron" ;
+    :text "TODO: Els Buss-Bron"
+  ] .
+

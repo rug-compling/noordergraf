@@ -1,0 +1,102 @@
+@prefix t00410: <https://noordergraf.rug.nl/tomb/T00410#> .
+
+tomb:T00410
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:21:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00410.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0797 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.0797+006.5716"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE PLEEGOUDERS"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00410:P1, t00410:P2 ;
+  :text """TODO: 5
+rustplaats van
+albert van riin
+geb 16 mei 1961 te anldo
+dverl 24 aug. 1935 te vries
+en zin echtgenoote
+anni chien slagted
+geb.12 maart 1854 te vries
+overl 26 maart 1929 alcaar
+.
+il-
+rust zalht lieve pleegolders
+e
+23
+""" .
+
+t00410:C2
+  a :Town ;
+  :place place:Vries2745189 ;
+  :text "TODO: VRIES" .
+
+t00410:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y3M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-05-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-08-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Albert van Rein" ;
+    :text "TODO: Albert van Rein"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Anloo2759746 ;
+    :text "TODO: ANLOO"
+  ] ;
+  :placeOfDeath t00410:C2 ;
+  :relation [
+    a :FosterParent
+  ] .
+
+t00410:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-03-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-03-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Annechien Slagter" ;
+    :text "TODO: Annechien Slagter"
+  ] ;
+  :placeOfBirth t00410:C2 ;
+  :placeOfDeath t00410:C2 ;
+  :relation [
+    a :Spouse ;
+    :target t00410:P1
+  ], [
+    a :FosterParent
+  ] .
+

@@ -1,0 +1,88 @@
+@prefix t00859: <https://noordergraf.rug.nl/tomb/T00859#> .
+
+tomb:T00859
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:36:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00859.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7764 ;
+      geo:long 6.8041
+    ] ;
+    :nd "+52.7764+006.8041"^^ll:
+  ] ;
+  :quote t00859:V1 ;
+  :site site:NLdr7841cdSleen ;
+  :subject t00859:P1, t00859:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rust
+hendrikje
+wiggers
+gedo junt 1863
+te westenesch
+overl. 11 jan. 1952
+te diphoorn
+weduwe van
+j.dening.
+zalig zonde dooden.
+dieinde heepesterven
+files
+""" .
+
+t00859:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y7M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-06-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-01-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikje Wiggers" ;
+    :text "TODO: Hendrikje Wiggers"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Westenesch2744776 ;
+    :text "TODO: WESTENESCH"
+  ] ;
+  :placeOfDeath [
+    a :Hamlet ;
+    :place place:Diphoorn2756789 ;
+    :text "TODO: DIPHOORN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00859:P2
+  ] .
+
+t00859:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "J. Dening" ;
+    :text "TODO: J. Dening"
+  ] .
+
+t00859:V1
+  a :Quote ;
+  :reference [
+    a :BibleRevelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN"@nld .
+

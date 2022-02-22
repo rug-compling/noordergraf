@@ -1,0 +1,95 @@
+@prefix t00504: <https://noordergraf.rug.nl/tomb/T00504#> .
+
+tomb:T00504
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-16T13:52:36"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00504.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2091 ;
+      geo:long 5.7906
+    ] ;
+    :nd "+53.2091+005.7906"^^ll:
+  ] ;
+  :site site:NLfr8917avLeeuwarden ;
+  :subject t00504:P1, t00504:P2 ;
+  :text """TODO: ustplaats
+geliefdeneghta. cavader
+jathawlhelme.
+der te leeuwarden
+18 mei 1850, overl.
+aldaar 7 april 1918.
+envan onze leyemoeder
+hendriettedevrites
+gebte beetsterzwaag
+6 aug. 1848
+overlte leeuwarden
+25 maart, 1930
+.
+""" .
+
+t00504:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y10M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-05-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-04-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan H. Wilhelmij" ;
+    :text "TODO: Jan H. Wilhelmij"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Leeuwarden2751792 ;
+    :text "Leeuwarden"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Leeuwarden2751792 ;
+    :text "aldaar"
+  ] .
+
+t00504:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Hendriëtte de Vries" ;
+    :text "TODO: Hendriëtte de Vries"
+  ] ;
+  :age [
+    a :Age ;
+    :duration "P81Y7M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1848-08-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-03-25"^^xsd:date
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Beetsterzwaag2759275 ;
+    :text "TODO: BEETSTERZWAAG"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Leeuwarden2751792 ;
+    :text "Leeuwarden"
+  ] .
+  

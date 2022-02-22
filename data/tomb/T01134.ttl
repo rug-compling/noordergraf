@@ -1,0 +1,79 @@
+@prefix t01134: <https://noordergraf.rug.nl/tomb/T01134#> .
+
+tomb:T01134
+  a :Tomb ;
+  :image [
+    dc:date "2021-04-23T11:21:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01134.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1625 ;
+      geo:long 6.6142
+    ] ;
+    :nd "+53.1625+006.6142"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "IN JEZUS ONTSLAPEN"@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 23
+    ] ;
+    :text "ps.23"
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t01134:P1, t01134:P2 ;
+  :text "TODO" .
+
+t01134:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P77Y7M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-05-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-01-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "T. Nieuwold" ;
+    :text "TODO: T. Nieuwold"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t01134:P2
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P60Y6M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-02-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-08-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "J. Roffel" ;
+    :text "TODO: J. Roffel"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

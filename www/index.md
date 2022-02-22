@@ -8,7 +8,7 @@ head: <link rel="alternate" href="https://noordergraf.rug.nl/index.rdf" type="ap
 
 Hier komt iets moois
 
-[Voorbeeld](/tomb/t00000)
+[Voorbeeld](/tomb/T00000)
 
 <form action="/bin/textsearch">
 <input type="text" name="q">

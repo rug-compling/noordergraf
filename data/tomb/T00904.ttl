@@ -1,0 +1,66 @@
+@prefix t00904: <https://noordergraf.rug.nl/tomb/T00904#> .
+
+tomb:T00904
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-07T14:23:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00904.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "O DEATH, WHERE IS THY STING? \\ O GRAVE, WHERE IS THY VICTORY? \\ BUT THANKS BE TO GOD, WHICH \\ GIVETH US THE VICTORY THROUGH \\ OUR LORD JESUS CHRIST, THE \\ SAVIOUR OF THE WORLD."@eng
+  ] ;
+  :subject t00904:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Chrismon
+  ], [
+    a symbol:Cross
+  ] ;
+  :text """TODO: tuleht
+a
+f
+22
+16
+jan meek
+diepswal 2 dec. 1883
+overl. 5. sept. 1975
+二是
+o death where is thy stings
+o grave
+where is thy victory?
+but thanks be to god, which
+giveth us the victory through
+our lord jesus christ, the
+saviour of the world.
+""" .
+
+t00904:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y9M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-09-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Meek" ;
+    :text "TODO: Jan Meek"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:Diepswal2756869 ;
+    :text "TODO: DIEPSWAL"
+  ] .
+

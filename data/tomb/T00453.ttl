@@ -1,0 +1,49 @@
+@prefix t00453: <https://noordergraf.rug.nl/tomb/T00453#> .
+
+tomb:T00453
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T15:01:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00453.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2063 ;
+      geo:long 5.7695
+    ] ;
+    :nd "+53.2063+005.7695"^^ll:
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00453:P1 ;
+  :symbol [
+    a symbol:Cross
+  ] ;
+  :text """TODO: t
+rustplaats
+van
+gerardus jacobus van der werf
+* 11 febr. 1889 1 9 febr. 1969
+""" .
+
+t00453:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y11M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-02-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-02-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerardus Jacobus van der Werff" ;
+    :text "TODO: Gerardus Jacobus van der Werff"
+  ] .
+

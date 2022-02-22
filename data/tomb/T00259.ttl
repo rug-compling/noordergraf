@@ -1,0 +1,63 @@
+@prefix t00259: <https://noordergraf.rug.nl/tomb/T00259#> .
+
+tomb:T00259
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-13T14:22:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00259.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1904 ;
+      geo:long 6.5932
+    ] ;
+    :nd "+53.1904+006.5932"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00259:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+van
+berend van veen
+geb. te delfzul
+23 april 1859,
+overl. te groningen
+4 oct. 1927
+""" .
+
+t00259:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y5M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-10-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Berend van Veen" ;
+    :text "TODO: Berend van Veen"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Delfzijl2757340 ;
+    :text "TODO: DELFZIJL"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] .
+

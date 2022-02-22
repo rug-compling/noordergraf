@@ -1,0 +1,99 @@
+@prefix t00286: <https://noordergraf.rug.nl/tomb/T00286#> .
+
+tomb:T00286
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-16T16:49:22"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00286.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4039 ;
+      geo:long 6.7489
+    ] ;
+    :nd "+53.4039+006.7489"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :target t00286:P1 ;
+    :text "RUST ZACHT MOEDER"
+  ], [
+    a :Quote ;
+    :target t00286:P2 ;
+    :text "RUST ZACHT VADER"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 68 ;
+      :comment "berijmd" ;
+      :verse "2"
+    ] ;
+    :text "ps. 68:2 ber."
+  ] ;
+  :site site:NLgr9985scOosternieland ;
+  :subject t00286:P1, t00286:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van
+pieter bakker
+*24 jan. 1875+2 jan. 1920
+en
+jantje rozemuller
+*7 oct 1875 =15 april
+1957
+rusteacht
+eus za
+vades
+ps.88 2 bera
+es БЕР
+beef
+""" .
+
+t00286:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P46Y11M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-01-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Pieter Bakker" ;
+    :text "TODO: Pieter Bakker"
+  ] .
+
+t00286:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y5M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-10-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-04-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Rozemuller" ;
+    :text "TODO: Jantje Rozemuller"
+  ] .
+

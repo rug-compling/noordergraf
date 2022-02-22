@@ -1,0 +1,50 @@
+@prefix t00842: <https://noordergraf.rug.nl/tomb/T00842#> .
+
+tomb:T00842
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-20T14:46:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00842.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2958 ;
+      geo:long 5.0655
+    ] ;
+    :nd "+53.2958+005.0655"^^ll:
+  ] ;
+  :site site:NLfr8899awOostVlieland ;
+  :subject t00842:P1 ;
+  :text """TODO: sientje de boer
+biologe
+12 1913
++923-1997
+""" .
+
+t00842:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y3M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1914-12-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-03-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Sientje de Boer" ;
+    :text "TODO: Sientje de Boer"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:05110 ;
+    :wordnet "TODO: Biologist.n.01"
+  ] .
+

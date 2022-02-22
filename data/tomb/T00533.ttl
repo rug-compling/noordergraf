@@ -1,0 +1,61 @@
+@prefix t00533: <https://noordergraf.rug.nl/tomb/T00533#> .
+
+tomb:T00533
+  a :Tomb ;
+  :text """TODO: rustplaats
+van
+hendrika
+maria tonkes
+* 13.5. 1917
+15. 3. 1938
+rust zacht
+geliefde dochter
+zuster - en verloofde
+""" ;
+  :image [
+    dc:date "2019-11-24T14:33:54"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00533.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1034 ;
+      geo:long 6.8737
+    ] ;
+    :nd "+53.1034+006.8737"^^ll:
+  ] ;
+  :picture [
+    a :Portrait ;
+    :theme t00533:P1
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00533:P1 .
+
+t00533:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y10M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-05-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-03-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrika Maria Tonkes" ;
+    :text "TODO: Hendrika Maria Tonkes"
+  ] ;
+  :relation [
+    a :Daughter
+  ], [
+    a :Sister
+  ], [
+    a :Verloofde
+  ] .
+

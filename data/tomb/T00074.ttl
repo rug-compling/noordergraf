@@ -1,0 +1,93 @@
+@prefix t00074: <https://noordergraf.rug.nl/tomb/T00074#> .
+
+tomb:T00074
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T11:45:22"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00074.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2037 ;
+      geo:long 6.5717
+    ] ;
+    :nd "+53.2037+006.5717"^^ll:
+  ] ;
+  :site site:NLgr9721aaGroningen ;
+  :subject t00074:P1, t00074:P2 ;
+  :text """TODO: maria elisabeth
+hillebrand
+*te hagen (0.1) 13 nov.1896
++ te gron.6 jan, 1951
+echtgen van
+lorenz wilhelm
+fischer
+* te gron.z8 febr. 1896
++ te gron. 8 maart 1955
+""" .
+
+t00074:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00074:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y1M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-11-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-01-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Maria Elisabeth Hillebrand" ;
+    :text "TODO: Maria Elisabeth Hillebrand"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :partOf [
+      a :Country ;
+      :place place:Duitsland2921044 ;
+      :text "TODO: DUITSLAND"
+    ] ;
+    :place place:Hagen2912621 ;
+    :text "TODO: HAGEN"
+  ] ;
+  :placeOfDeath t00074:C1 ;
+  :relation [
+    a :Wife ;
+    :target t00074:P2
+  ] .
+
+t00074:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-02-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-03-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lorenz Wilhelm Fischer" ;
+    :text "TODO: Lorenz Wilhelm Fischer"
+  ] ;
+  :placeOfBirth t00074:C1 ;
+  :placeOfDeath t00074:C1 .
+

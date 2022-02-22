@@ -1,0 +1,137 @@
+@prefix t00218: <https://noordergraf.rug.nl/tomb/T00218#> .
+
+tomb:T00218
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:45:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00218.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6369
+    ] ;
+    :nd "+53.2225+006.6369"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE DOODEN"
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00218:P1, t00218:P2, t00218:P3, t00218:P4 ;
+  :symbol [
+    a symbol:Rose
+  ], [
+    a symbol:Tulip
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: ban
+va
+rustplaats
+kta adulona wieringa
+geb. te noorddük
+25 juni 1883;
+wollte harkstede
+lÀ aigo 8.1
+อ
+hinhekwebringa
+gebte noorddijk
+29 nov. 1878.
+imite harkstede
+11 april 1895. .
+bekede kinderen van
+jan wieringa
+n
+anna bolt
+lust zacht lieve dooden
+st
+""" .
+
+t00218:C1
+  a :Village ;
+  :place place:Noorddijk2749981 ;
+  :text "TODO: NOORDDIJK" .
+
+t00218:C2
+  a :Village ;
+  :place place:Harkstede2754819 ;
+  :text "TODO: HARKSTEDE" .
+
+t00218:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P8Y1M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-06-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891-08-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Klaaziena Wieringa" ;
+    :text "TODO: Klaaziena Wieringa"
+  ] ;
+  :placeOfBirth t00218:C1 ;
+  :placeOfDeath t00218:C2 ;
+  :relation [
+    a :Child ;
+    :target t00218:P3
+  ], [
+    a :Child ;
+    :target t00218:P4
+  ] .
+
+t00218:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P16Y4M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1895-04-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hindrik Wierenga" ;
+    :text "TODO: Hindrik Wierenga"
+  ] ;
+  :placeOfBirth t00218:C1 ;
+  :placeOfDeath t00218:C2 ;
+  :relation [
+    a :Child ;
+    :target t00218:P4
+  ], [
+    a :Child ;
+    :target t00218:P3
+  ] .
+
+t00218:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan Wieringa" ;
+    :text "TODO: Jan Wieringa"
+  ] .
+
+t00218:P4
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Anna Bolt" ;
+    :text "TODO: Anna Bolt"
+  ] .
+

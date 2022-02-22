@@ -1,0 +1,89 @@
+@prefix t00868: <https://noordergraf.rug.nl/tomb/T00868#> .
+
+tomb:T00868
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:11:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00868.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7191 ;
+      geo:long 6.8448
+    ] ;
+    :nd "+52.7191+006.8448"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00868:P1, t00868:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rustene
+adam
+vanhasselt
+geb. za _a 1850
+overl 9a194_
+see
+0
+annig
+je
+zomer
+geb. 1910-1868
+overl: 173. 1937
+rust zacht
+lieve ouders
+""" .
+
+t00868:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P93Y11M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-04-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-04-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Adam van Hasselt" ;
+    :text "TODO: Adam van Hasselt"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00868:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y4M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-10-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-03-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Annigje Zomer" ;
+    :text "TODO: Annigje Zomer"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

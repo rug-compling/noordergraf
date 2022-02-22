@@ -1,0 +1,81 @@
+@prefix t01033: <https://noordergraf.rug.nl/tomb/T01033#> .
+
+tomb:T01033
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-19T12:03:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01033.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2644 ;
+      geo:long 6.3938
+    ] ;
+    :nd "+53.2644+006.3938"^^ll:
+  ] ;
+  :quote t01033:V1 ;
+  :site site:NLgr9804teNoordhorn ;
+  :subject t01033:P1, t01033:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: pustplaute
+san
+gerrit
+feringa
+aeb.28 kor 1844
+cuerl:30 dec 1922
+echta van
+trientje
+scheeringa
+spirit
+zalig
+zijn de doo
+den, die in den hee
+re sterven.
+operb 14:13
+""" .
+
+t01033:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y1M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-11-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-12-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit Feringa" ;
+    :text "TODO: Gerrit Feringa"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t01033:P2
+  ] .
+
+t01033:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Trientje Scheeringa" ;
+    :text "TODO: Trientje Scheeringa"
+  ] .
+
+t01033:V1
+  a :Quote ;
+  :reference [
+    a :BibleRevelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "ZALIG ZIJN DE DOODEN, DIE IN DEN HEERE STERVEN."@nld .
+

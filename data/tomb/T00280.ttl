@@ -1,0 +1,61 @@
+@prefix t00280: <https://noordergraf.rug.nl/tomb/T00280#> .
+
+tomb:T00280
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-16T16:59:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00280.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4042 ;
+      geo:long 6.7496
+    ] ;
+    :nd "+53.4042+006.7496"^^ll:
+  ] ;
+  :site site:NLgr9985scOosternieland ;
+  :subject t00280:P1, t00280:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: tutti
+ana
+us
+jostais
+tea
+""" .
+
+t00280:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1795-01-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-01-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lutgert Doornbos" ;
+    :text "TODO: Lutgert Doornbos"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00280:P2
+  ] .
+
+t00280:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jakob Kuipers" ;
+    :text "TODO: Jakob Kuipers"
+  ] .
+

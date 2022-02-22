@@ -1,0 +1,71 @@
+@prefix t00893: <https://noordergraf.rug.nl/tomb/T00893#> .
+
+tomb:T00893
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-07T14:35:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00893.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1726 ;
+      geo:long 6.3613
+    ] ;
+    :nd "+53.1726+006.3613"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MIJNE HOOP IS \\ OP U, O HEERE!"@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00893:P1, t00893:P2 ;
+  :symbol [
+    a symbol:SkullAndBones
+  ] ;
+  :text """TODO: forgedachtenis
+mindorkien
+willems
+ge: 16 jan/792
+everl28 f 1862
+mlerinahtgenooi
+san min doce
+ayne hoop is
+op
+attend
+u.
+""" .
+
+t00893:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y1M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1792-01-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1862-02-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hinderkien Willems" ;
+    :text "TODO: Hinderkien Willems"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00893:P2
+  ] .
+
+t00893:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan M. ten Hoor" ;
+    :text "TODO: Jan M. ten Hoor"
+  ] .
+

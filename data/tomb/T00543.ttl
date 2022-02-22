@@ -1,0 +1,75 @@
+@prefix t00543: <https://noordergraf.rug.nl/tomb/T00543#> .
+
+tomb:T00543
+  a :Tomb ;
+  :text """TODO: ter gedachtenis aan
+jak a muntendan
+geb.3 sept. 1809,
+overl.28 maart 1882
+en zone echtgenoot e
+martha j.puisteri
+geb. 11 nov.18 21
+over1 28 juli 187%
+""" ;
+  :image [
+    dc:date "2019-11-24T14:17:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00543.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1044 ;
+      geo:long 6.8762
+    ] ;
+    :nd "+53.1044+006.8762"^^ll:
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00543:P1, t00543:P2 .
+
+t00543:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y6M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1809-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-03-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan A. Muntendam" ;
+    :suffix "Pz" ;
+    :text "TODO: Jan A. Muntendam Pz"
+  ] .
+
+t00543:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P52Y8M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1821-11-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1874-07-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Martha J. Puister" ;
+    :text "TODO: Martha J. Puister"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00543:P1
+  ] .
+

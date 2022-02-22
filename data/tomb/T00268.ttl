@@ -1,0 +1,84 @@
+@prefix t00268: <https://noordergraf.rug.nl/tomb/T00268#> .
+
+tomb:T00268
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-14T11:01:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00268.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2228 ;
+      geo:long 6.6379
+    ] ;
+    :nd "+53.2228+006.6379"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00268:P1 ;
+  :symbol [
+    a symbol:Cross
+  ] ;
+  :text """TODO: las
+este
+zockere froggenet.
+gaston august
+vÄnerachen
+201102108
+cuanera,
+m
+ice
+""" .
+
+t00268:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P34Y7M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1934-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-10-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gaston-August Vanfrachem" ;
+    :text "TODO: Gaston-August Vanfrachem"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:Lageland11746820 ;
+    :text "TODO: LAGELAND"
+  ] ;
+  :relation [
+    a :Housemate ;
+    :target t00268:P3
+  ], [
+    a :Son ;
+    :target t00268:P2
+  ], [
+    a :Brother ;
+    :target t00268:P2
+  ] .
+
+t00268:P2
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "VANFRACHEM" ;
+    :text "TODO"
+  ] .
+
+t00268:P3
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "STEL" ;
+    :text "TODO"
+  ] .
+

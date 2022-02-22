@@ -1,0 +1,85 @@
+@prefix t00293: <https://noordergraf.rug.nl/tomb/T00293#> .
+
+tomb:T00293
+  a :Tomb ;
+  :text """TODO: lamb. herm
+van der sleen
+gee 3 aug. jemi
+overl 9 febr. 1925.
+em
+poelofje
+nijmeijer
+geb. 25 juni 1842
+overl.5 maart 1929.
+echtgendoten
+""" ;
+  :image [
+    dc:date "2019-10-19T14:39:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00293.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7154 ;
+      geo:long 6.4735
+    ] ;
+    :nd "+52.7154+006.4735"^^ll:
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00293:P1, t00293:P2 .
+
+t00293:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y6M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-08-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-02-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lambertus Hermannus van der Sleen" ;
+    :text "TODO: Lambertus Hermannus van der Sleen"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00293:P2
+  ], [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t00293:P2
+  ] .
+
+t00293:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y8M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-06-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-03-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Roelofje Nijmeijer" ;
+    :text "TODO: Roelofje Nijmeijer"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00293:P1
+  ] .
+

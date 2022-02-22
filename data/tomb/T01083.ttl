@@ -1,0 +1,44 @@
+@prefix t01083: <https://noordergraf.rug.nl/tomb/T01083#> .
+
+tomb:T01083
+  a :Cross ;
+  :text """TODO: * 16-3-1975
+johan
+an + 20-9-2016
+it
+""" ;
+  :image [
+    dc:date "2020-06-16T21:00:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01083.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2357 ;
+      geo:long 6.3933
+    ] ;
+    :nd "+53.2357+006.3933"^^ll:
+  ] ;
+  :subject t01083:P1 .
+
+t01083:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P41Y6M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1975-03-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2016-09-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Johan" ;
+    :text "TODO: Johan"
+  ] .
+

@@ -1,0 +1,97 @@
+@prefix t01013: <https://noordergraf.rug.nl/tomb/T01013#> .
+
+tomb:T01013
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-05T12:20:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01013.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2443 ;
+      geo:long 6.6273
+    ] ;
+    :nd "+53.2443+006.6273"^^ll:
+  ] ;
+  :site site:NLgr9734atGroningen ;
+  :subject t01013:P1, t01013:P2 ;
+  :symbol [
+    a symbol:WingedHourglass2
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: te
+ta
+st
+fogeda
+chictionidaari
+hinumerkilliste di cindra
+mcents
+wa morocciofil
+home
+a
+dan mal 86
+anno con
+hoda
+&
+tohtonttavan
+etice
+ubeth
+jvendintys tans kitty
+dif hama blics
+swa
+""" .
+
+t01013:C1
+  a :Village ;
+  :place place:Noorddijk2749981 ;
+  :text "TODO: NOORDDIJK" .
+
+t01013:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y5M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1786-06-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1863-12-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hinderk Tjapkes de Boer" ;
+    :text "TODO: Hinderk Tjapkes de Boer"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:31020 ;
+    :location t01013:C1 ;
+    :wordnet "TODO: Taxman.n.01"
+  ], [
+    a :Occupation ;
+    :location t01013:C1 ;
+    :wordnet "TODO: Notabel.n.01"
+  ] ;
+  :placeOfBirth t01013:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t01013:P2
+  ] .
+
+t01013:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Trientje Jans Kort" ;
+    :text "TODO: Trientje Jans Kort"
+  ] .

@@ -1,0 +1,65 @@
+@prefix t00707: <https://noordergraf.rug.nl/tomb/T00707#> .
+
+tomb:T00707
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:48:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00707.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7817 ;
+      geo:long 6.9009
+    ] ;
+    :nd "+52.7817+006.9009"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "NEEM DE WERELD GEEF MIJ JEZUS"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00707:P1, t00707:P2 ;
+  :text """TODO: ter gedachtenis aan
+sutse romkes
+geb. 30 nov. 1875
+ovl. 2 maart 1920
+2
+echtgenoot van
+a. visser
+neem de wereld geef mu jezus
+""" .
+
+t00707:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P44Y3M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-11-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-03-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Sijtse Romkes" ;
+    :text "TODO: Sijtse Romkes"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00707:P2
+  ] .
+
+t00707:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "A. Visser" ;
+    :text "TODO: A. Visser"
+  ] .
+

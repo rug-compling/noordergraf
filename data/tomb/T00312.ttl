@@ -1,0 +1,108 @@
+@prefix t00312: <https://noordergraf.rug.nl/tomb/T00312#> .
+
+tomb:T00312
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:17:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00312.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4735
+    ] ;
+    :nd "+52.7157+006.4735"^^ll:
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00312:P1, t00312:P2, t00312:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats van
+hendrikje hartsuiker
+geb.19.2.1835 ovl.15.4.1883
+shee
+albert smeman
+geb. 12.12.1826 oylio.4.1904
+echtg. van asteenbergen.
+eerder weduwnaar van
+h. hartsuiker.
+sed
+aaltje steenbergen
+geb.21.4.1871 ovl13.5.1904
+i
+""" .
+
+t00312:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P48Y1M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-02-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1883-04-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikje Hartsuiker" ;
+    :text "TODO: Hendrikje Hartsuiker"
+  ] .
+
+t00312:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y3M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1826-12-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-04-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Albert Smeman" ;
+    :text "TODO: Albert Smeman"
+  ] ;
+  :relation t00312:R1, [
+    a :Widower ;
+    :before t00312:R1 ;
+    :target t00312:P1
+  ] .
+
+t00312:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P33Y22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-04-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-05-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aaltje Steenbergen" ;
+    :text "TODO: Aaltje Steenbergen"
+  ] .
+
+t00312:R1
+  a :Spouse ;
+  :target t00312:P3 .
+

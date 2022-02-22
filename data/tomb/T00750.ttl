@@ -1,0 +1,65 @@
+@prefix t00750: <https://noordergraf.rug.nl/tomb/T00750#> .
+
+tomb:T00750
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-28T12:47:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00750.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3109 ;
+      geo:long 6.9976
+    ] ;
+    :nd "+53.3109+006.9976"^^ll:
+  ] ;
+  :site site:NLgr9936btFarmsum ;
+  :subject t00750:P1 ;
+  :symbol [
+    a symbol:Butterfly
+  ] ;
+  :text """TODO: var
+rustplaats
+aldert
+roblfs bos
+geboren
+te
+oterdum
+den14 maart
+18 **.
+en aldaar
+overleden
+СТ
+16 augustus
+1822.
+""" .
+
+t00750:C1
+  a :Village ;
+  :place place:Oterdum2749209 ;
+  :text "TODO: OTERDUM" .
+
+t00750:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P28Y5M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-03-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1872-08-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aldert Roelfs Bos" ;
+    :text "TODO: Aldert Roelfs Bos"
+  ] ;
+  :placeOfBirth t00750:C1 ;
+  :placeOfDeath t00750:C1 .
+

@@ -1,0 +1,59 @@
+@prefix t00309: <https://noordergraf.rug.nl/tomb/T00309#> .
+
+tomb:T00309
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:17:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00309.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7157 ;
+      geo:long 6.4734
+    ] ;
+    :nd "+52.7157+006.4734"^^ll:
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00309:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+hendrika
+van dalen
+geb.te hoogeveen
+23 jumi 1878.
+overl. aldaar
+23 nov. 1925
+""" .
+
+t00309:C1
+  a :Town ;
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
+
+t00309:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P47Y5M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-06-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-11-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrika van Dalen" ;
+    :text "TODO: Hendrika van Dalen"
+  ] ;
+  :placeOfBirth t00309:C1 ;
+  :placeOfDeath t00309:C1 .
+

@@ -1,0 +1,68 @@
+@prefix t00317: <https://noordergraf.rug.nl/tomb/T00317#> .
+
+tomb:T00317
+  a :Tomb ;
+  :text """TODO: harm
+alde tus robaar!
+*1868 15.1932
+en
+geesje smit
+2712_1876 1521-196-
+""" ;
+  :image [
+    dc:date "2019-10-19T14:04:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00317.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7164 ;
+      geo:long 6.4741
+    ] ;
+    :nd "+52.7164+006.4741"^^ll:
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00317:P1, t00317:P2 .
+
+t00317:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-05-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-05-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harm Albertus Robaard" ;
+    :text "TODO: Harm Albertus Robaard"
+  ] .
+
+t00317:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-12-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-01-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geesje Smit" ;
+    :text "TODO: Geesje Smit"
+  ] .
+

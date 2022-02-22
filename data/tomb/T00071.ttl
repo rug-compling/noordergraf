@@ -1,0 +1,103 @@
+@prefix t00071: <https://noordergraf.rug.nl/tomb/T00071#> .
+
+tomb:T00071
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:03:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00071.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1904 ;
+      geo:long 6.5951
+    ] ;
+    :nd "+53.1904+006.5951"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00071:P1, t00071:P2 ;
+  :text """TODO: 0 rustplaats van
+catharina kramer
+geb. 19 mei 1866 te hoorn (lh
+overl. 25 sept. 1939 te groningen
+innig geliefde echtgenoote van
+g
+adolf kuiper
+onze lieve broer en oom
+adolf kuiper
+geb, 3 mei 1838 te emmen
+overl 6 april 1947 te groningen
+""" .
+
+t00071:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00071:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y4M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-05-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-09-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Catharina Kramer" ;
+    :text "TODO: Catharina Kramer"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :partOf [
+      a :Province ;
+      :place place:ProvincieNoordHolland2749879 ;
+      :text "TODO: NOORD-HOLLAND"
+    ] ;
+    :place place:Hoorn2753638 ;
+    :text "TODO: HOORN"
+  ] ;
+  :placeOfDeath t00071:C1 ;
+  :relation [
+    a :Wife ;
+    :target t00071:P2
+  ] .
+
+t00071:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Adolf Kuiper" ;
+    :text "TODO: Adolf Kuiper"
+  ] ;
+  :age [
+    a :Age ;
+    :duration "P108Y11M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1838-05-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-04-06"^^xsd:date
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Emmen2756136 ;
+    :text "TODO: EMMEN"
+  ] ;
+  :placeOfDeath t00071:C1 ;
+  :relation [
+    a :Brother
+  ], [
+    a :Uncle
+  ] .

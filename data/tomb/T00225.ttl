@@ -1,0 +1,74 @@
+@prefix t00225: <https://noordergraf.rug.nl/tomb/T00225#> .
+
+tomb:T00225
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-04T10:57:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00225.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1759 ;
+      geo:long 7.0952
+    ] ;
+    :nd "+53.1759+007.0952"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE VADER"
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t00225:P1, t00225:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+w.kolama
+geb.13 sept
+1845
+overl.11 mei
+1906.
+geliefde
+echtgenoot van
+f. van lang
+rust zacht
+lieve vader.
+""" .
+
+t00225:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y7M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-09-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-05-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "W. Kolkman" ;
+    :text "TODO: W. Kolkman"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00225:P2
+  ] .
+
+t00225:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "F. van Lang" ;
+    :text "TODO: F. van Lang"
+  ] .
+

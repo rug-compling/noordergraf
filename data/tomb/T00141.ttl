@@ -1,0 +1,88 @@
+@prefix t00141: <https://noordergraf.rug.nl/tomb/T00141#> .
+
+tomb:T00141
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-02T10:32:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00141.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2065 ;
+      geo:long 6.5694
+    ] ;
+    :nd "+53.2065+006.5694"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00141:P1, t00141:P2 ;
+  :text """TODO: si
+det
+hjen dust
+on eye mane vader
+harm gooyert
+23 augu1035 +23 7o7. 1952
+tov
+Ε). Την ΤΠ,
+hiederkoje stehuis
+* \\pril
+15. se 1313 16 sept 1007
+. 19
+rust macht lieve oyden
+""" .
+
+t00141:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y3M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-08-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-11-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harm Gooyert" ;
+    :text "TODO: Harm Gooyert"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Husband ;
+    :target t00141:P2
+  ] .
+
+t00141:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y5M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-04-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1967-09-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hinderkje Steenhuis" ;
+    :text "TODO: Hinderkje Steenhuis"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+

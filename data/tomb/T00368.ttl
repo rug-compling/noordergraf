@@ -1,0 +1,150 @@
+@prefix t00368: <https://noordergraf.rug.nl/tomb/T00368#> .
+
+tomb:T00368
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:22:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00368.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0796 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.0796+006.5716"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00368:P1, t00368:P2, t00368:P3 ;
+  :text """TODO: in dankoare herinnering
+aan
+m
+rusoles
+van
+gerrit
+albertien
+ftien geesien hilge
+hilgers steunebrink
+geb.te
+onderen
+ger. te donde rent geË te
+geb te eeloe
+2 maart 1904
+6 juli 1871 11 maart 1880
+overl aldaar
+overl. al daar overl te assen
+nov 1918
+26 oct. 1950 is maart 1944
+gel dochter
+gel. echtg.
+van
+wed: van
+van
+g. hilgers en
+a sibunebrank g. hilgers a steunebrink
+rust zacht
+""" .
+
+t00368:C1
+  a :Village ;
+  :place place:Donderen2756731 ;
+  :text "TODO: DONDEREN" .
+
+t00368:C4
+  a :Village ;
+  :place place:Donderen2756731 ;
+  :text "TODO: DONDEREN" .
+
+t00368:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y3M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-07-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-10-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit Hilgers" ;
+    :text "TODO: Gerrit Hilgers"
+  ] ;
+  :placeOfBirth t00368:C1 ;
+  :placeOfDeath t00368:C1 ;
+  :relation [
+    a :Widower ;
+    :target t00368:P2
+  ] .
+
+t00368:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-03-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-03-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Albertien Steunebrink" ;
+    :text "TODO: Albertien Steunebrink"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Eelde2756408 ;
+    :text "TODO: EELDE"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Assen2759633 ;
+    :text "TODO: ASSEN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00368:P1
+  ] .
+
+t00368:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P14Y8M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1904-03-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-11-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geesien Hilgers" ;
+    :text "TODO: Geesien Hilgers"
+  ] ;
+  :placeOfBirth t00368:C4 ;
+  :placeOfDeath t00368:C4 ;
+  :relation [
+    a :Daughter ;
+    :target t00368:P1, t00368:P2
+  ] .
+

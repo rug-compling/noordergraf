@@ -1,0 +1,156 @@
+@prefix t00850: <https://noordergraf.rug.nl/tomb/T00850#> .
+
+tomb:T00850
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-20T14:40:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00850.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2958 ;
+      geo:long 5.0653
+    ] ;
+    :nd "+53.2958+005.0653"^^ll:
+  ] ;
+  :quote t00850:V1, [
+    a :Quote ;
+    :text "DAT ZIJ RUSTEN IN VREDE"@nld
+  ] ;
+  :site site:NLfr8899awOostVlieland ;
+  :subject t00850:P1, t00850:P2, t00850:P3 ;
+  :symbol [
+    a symbol:FaithHopeLove
+  ] ;
+  :text """TODO: ye
+2
+rustplaats
+ukione
+martur boer
+an pieter korean
+zositibre
+9. 1925
+en 2 1995
+en mor
+pd
+yeh telers
+ninioon
+wd
+2.186
+vec
+dat ze russon ln-vos
+""" .
+
+t00850:C1
+  a :Island ;
+  :place place:Terschelling2746414 ;
+  :text "TODO: TERSCHELLING" .
+
+t00850:C3
+  a :Island ;
+  :place place:Vlieland2745420 ;
+  :text "TODO: VLIELAND" .
+
+t00850:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P63Y5M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-03-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-08-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Martje Boer" ;
+    :text "TODO: Martje Boer"
+  ] ;
+  :placeOfBirth t00850:C1 ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Harlingen2754817 ;
+    :text "TODO: HARLINGEN"
+  ] ;
+  :relation [
+    a :Mother ;
+    :target t00850:P2
+  ], [
+    a :Spouse ;
+    :target t00850:P3
+  ], [
+    a :Wife ;
+    :target t00850:P3
+  ] .
+
+t00850:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P12Y9M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-05-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-03-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Mina" ;
+    :text "TODO: Mina"
+  ] ;
+  :placeOfBirth t00850:C1 ;
+  :placeOfDeath t00850:C3 ;
+  :relation [
+    a :Daughter ;
+    :target t00850:P3
+  ], [
+    a :Sister
+  ] .
+
+t00850:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y9M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-06-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-03-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Pieter Kooijman" ;
+    :text "TODO: Pieter Kooijman"
+  ] ;
+  :placeOfBirth t00850:C1 ;
+  :placeOfDeath t00850:C3 ;
+  :relation [
+    a :Father ;
+    :target t00850:P2
+  ] .
+
+t00850:V1
+  a :Quote ;
+  :reference [
+    a :Bible1Corinthians ;
+    :chapter 13 ;
+    :verse "13"
+  ] ;
+  :text "TODO" .
+

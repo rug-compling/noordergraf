@@ -1,0 +1,60 @@
+@prefix t01127: <https://noordergraf.rug.nl/tomb/T01127#> .
+
+tomb:T01127
+  a :Tomb ;
+  :image [
+    dc:date "2021-03-24T15:27:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01127.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2480 ;
+      geo:long 6.6481
+    ] ;
+    :nd "+53.2480+006.6481"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DIEP BETREURT DOOR ZIJNE 4 KINDEREN, 2 ZIJN HEM IN DE EEUWIGHEID VOORGEGAAN"@nld
+  ] ;
+  :site site:NLgr9798pdGarmerwolde ;
+  :subject t01127:P1 ;
+  :text "TODO" .
+
+t01127:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y2M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1805-06-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-08-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Eeuwke Jans van der Molen" ;
+    :text "TODO: Eeuwke Jans van der Molen"
+  ] ;
+  :relation [
+    a :Widower ;
+    :begin "1877"^^xsd:gYear ;
+    :target t01127:P2
+  ], [
+    a :Father
+  ] .
+
+t01127:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Lutgerdina W. Hofstede" ;
+    :text "TODO: Lutgerdina W. Hofstede"
+  ] .
+

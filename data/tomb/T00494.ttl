@@ -1,0 +1,99 @@
+@prefix t00494: <https://noordergraf.rug.nl/tomb/T00494#> .
+
+tomb:T00494
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-16T14:07:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00494.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2092 ;
+      geo:long 5.7924
+    ] ;
+    :nd "+53.2092+005.7924"^^ll:
+  ] ;
+  :site site:NLfr8917avLeeuwarden ;
+  :subject t00494:P1, t00494:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+ex
+al
+van onze
+geliefde ouders
+gouke boonstra
+geb.te leeuwarden
+4. juli 1834,
+overl. aldaar
+18 april 1923.
+baukje albertsde jong
+geb. te sneek
+28 aus. 1842
+overlte leeuwarden
+9 april 1917
+""" .
+
+t00494:C1
+  a :City ;
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
+
+t00494:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y9M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1834-07-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1923-04-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gouke Boonstra" ;
+    :text "TODO: Gouke Boonstra"
+  ] ;
+  :placeOfBirth t00494:C1 ;
+  :placeOfDeath t00494:C1 ;
+  :relation [
+    a :Parent
+  ] .
+
+t00494:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y7M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-08-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-04-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Baukje Alberts de Jong" ;
+    :text "TODO: Baukje Alberts de Jong"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Sneek2747063 ;
+    :text "TODO: SNEEK"
+  ] ;
+  :placeOfDeath t00494:C1 ;
+  :relation [
+    a :Parent
+  ] .
+

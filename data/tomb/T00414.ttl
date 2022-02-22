@@ -1,0 +1,108 @@
+@prefix t00414: <https://noordergraf.rug.nl/tomb/T00414#> .
+
+tomb:T00414
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:06:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00414.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0794 ;
+      geo:long 6.5720
+    ] ;
+    :nd "+53.0794+006.5720"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00414:P1, t00414:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats van
+geert thus
+geb. te glimmen 8 oct. 1870
+dverl. te groningen 19 maart 1954
+geliefde echtgenoot van
+wicherdina pieters
+ger, te zelen 24 aug. 1979
+dverl. te tinaarlo 14 adg, 1955
+rust zacht lieve duders
+vs-
+""" .
+
+t00414:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y5M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-10-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1954-03-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geert Thijs" ;
+    :text "TODO: Geert Thijs"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Glimmen2755495 ;
+    :text "TODO: GLIMMEN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00414:P2
+  ], [
+    a :Parent
+  ] .
+
+t00414:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y11M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-08-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-08-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wicherdina Pieters" ;
+    :text "TODO: Wicherdina Pieters"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zeyen2743985 ;
+    :text "TODO: ZEIJEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Tynaarlo2746038 ;
+    :text "TODO: TYNAARLO"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

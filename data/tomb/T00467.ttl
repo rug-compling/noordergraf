@@ -1,0 +1,72 @@
+@prefix t00467: <https://noordergraf.rug.nl/tomb/T00467#> .
+
+tomb:T00467
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:47:01"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00467.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2072 ;
+      geo:long 5.7692
+    ] ;
+    :nd "+53.2072+005.7692"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "GEDENK IN UW GEBED"
+  ], [
+    a :Quote ;
+    :text "RUST IN VREDE"
+  ], [
+    a :Quote ;
+    :text "VOORZIEN VAN DE H.H. SACRAMENTEN"
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00467:P1 ;
+  :text """TODO: us
+gedenk in uw geren
+onze lieve zen en birger
+theodoris petrus
+albada jelgersna
+leeuwarden 12-4-37
+* aldaar 4-4-56
+voorzien van de han. sacramenten
+susten vrede
+""" .
+
+t00467:C1
+  a :City ;
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
+
+t00467:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P18Y11M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-04-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-04-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Theodorus Petrus Albada Jelgersma" ;
+    :text "TODO: Theodorus Petrus Albada Jelgersma"
+  ] ;
+  :placeOfBirth t00467:C1 ;
+  :placeOfDeath t00467:C1 ;
+  :relation [
+    a :Son
+  ], [
+    a :Brother
+  ] .
+

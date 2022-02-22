@@ -1,0 +1,83 @@
+@prefix t00220: <https://noordergraf.rug.nl/tomb/T00220#> .
+
+tomb:T00220
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:43:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00220.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2225 ;
+      geo:long 6.6367
+    ] ;
+    :nd "+53.2225+006.6367"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00220:P1 ;
+  :symbol [
+    a symbol:Horse
+  ] ;
+  :text """TODO: van
+tel
+hier mat tt
+corschot
+harmekoning
+cuti loom
+ellpheoning
+ΙΑΝΤΗΚΟΣ.
+cehb benedoara
+am 2 ja 1838
+corlekleurde
+12 jun. 1866
+""" .
+
+t00220:C1
+  a :Hamlet ;
+  :place place:Euvelgunne2755982 ;
+  :text "TODO: EUVELGUNNE" .
+
+t00220:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P27Y1M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1838-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1866-01-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harm E. Koning" ;
+    :text "TODO: Harm E. Koning"
+  ] ;
+  :placeOfBirth t00220:C1 ;
+  :placeOfDeath t00220:C1 ;
+  :relation [
+    a :Son ;
+    :target t00220:P2, t00220:P3
+  ] .
+
+t00220:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Elle H. Koning" ;
+    :text "TODO: Elle H. Koning"
+  ] .
+
+t00220:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Jantje H. Kol" ;
+    :text "TODO: Jantje H. Kol"
+  ] .
+

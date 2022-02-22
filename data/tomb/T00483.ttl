@@ -1,0 +1,60 @@
+@prefix t00483: <https://noordergraf.rug.nl/tomb/T00483#> .
+
+tomb:T00483
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:34:15"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00483.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2064 ;
+      geo:long 5.7691
+    ] ;
+    :nd "+53.2064+005.7691"^^ll:
+  ] ;
+  :picture [
+    a :Portrait ;
+    :theme t00483:P3
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00483:P1 ;
+  :symbol [
+    a symbol:Cross
+  ] ;
+  :text """TODO: douwe
+koopal
+* 15__11. 1883
++ 288__1978
+""" .
+
+t00483:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P94Y9M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-11-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-08-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Douwe Koopal" ;
+    :text "TODO: Douwe Koopal"
+  ] .
+
+t00483:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jezus" ;
+    :text "TODO: Jezus"
+  ] .
+

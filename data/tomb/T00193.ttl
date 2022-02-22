@@ -1,0 +1,35 @@
+@prefix t00193: <https://noordergraf.rug.nl/tomb/T00193#> .
+
+tomb:T00193
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-06T14:44:07"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00193.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1905 ;
+      geo:long 6.5950
+    ] ;
+    :nd "+53.1905+006.5950"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00193:F ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: heit
+dostplants
+familie
+d. zwart
+""" .
+
+t00193:F
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullname "P. ZWART" ;
+    :text "TODO"
+  ] .
+

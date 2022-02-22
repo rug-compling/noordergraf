@@ -1,0 +1,105 @@
+@prefix t00240: <https://noordergraf.rug.nl/tomb/T00240#> .
+
+tomb:T00240
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-11T17:43:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00240.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1725 ;
+      geo:long 6.6065
+    ] ;
+    :nd "+53.1725+006.6065"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 68 ;
+      :verse "10B"
+    ] ;
+    :text "Ps. 68:10B"
+  ] ;
+  :site site:NLgr9751bbHaren ;
+  :subject t00240:P1, t00240:P2, t00240:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustpilaats
+van onze
+lieve vader
+berend heisman
+geb.iqoct. 1869
+te onnen
+overl19
+jug.1951
+at
+sedert 2 nov.is&
+wedn van
+annechien takens
+eerder van
+geertruida
+vandalen
+localice
+""" .
+
+t00240:C1
+  a :Village ;
+  :place place:Onnen2749588 ;
+  :text "TODO: ONNEN" .
+
+t00240:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y10M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-10-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-08-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Berend Hekman" ;
+    :text "TODO: Berend Hekman"
+  ] ;
+  :placeOfBirth t00240:C1 ;
+  :placeOfDeath t00240:C1 ;
+  :relation t00240:R2, [
+    a :Father ;
+    :target t00240:P2
+  ], [
+    a :Widower ;
+    :before t00240:R2 ;
+    :target t00240:P3
+  ] .
+
+t00240:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Annechien Takens" ;
+    :text "TODO: Annechien Takens"
+  ] .
+
+t00240:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Geertruida van Dalen" ;
+    :text "TODO: Geertruida van Dalen"
+  ] .
+
+t00240:R2
+  a :Widower ;
+  :begin "1918-11-02"^^xsd:date ;
+  :target t00240:P2 .
+

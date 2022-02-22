@@ -1,0 +1,72 @@
+@prefix t00852: <https://noordergraf.rug.nl/tomb/T00852#> .
+
+tomb:T00852
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:39:47"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00852.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7763 ;
+      geo:long 6.8045
+    ] ;
+    :nd "+52.7763+006.8045"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7841cdSleen ;
+  :subject t00852:P1 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: duses
+rustrumis
+van onze lieve
+zustepen tante
+gerona vimas
+* us 90
+9
+xhese t1923
+,
+pust zase
+rumi
+nissetsas te=lfe
+""" .
+
+t00852:C1
+  a :Village ;
+  :place place:Sleen2747182 ;
+  :text "TODO: SLEEN" .
+
+t00852:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P23Y9M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-12-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-09-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerdina Kamps" ;
+    :text "TODO: Gerdina Kamps"
+  ] ;
+  :placeOfBirth t00852:C1 ;
+  :placeOfDeath t00852:C1 ;
+  :relation [
+    a :Aunt
+  ], [
+    a :Sister
+  ] .
+

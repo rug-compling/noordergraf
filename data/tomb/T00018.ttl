@@ -1,0 +1,100 @@
+@prefix t00018: <https://noordergraf.rug.nl/tomb/T00018#> .
+
+tomb:T00018
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:33:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00018.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1911 ;
+      geo:long 6.5935
+    ] ;
+    :nd "+53.1911+006.5935"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00018:P1, t00018:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van
+trientje huisman
+gebite middelbert
+8 maart 1873
+overlte gron, 5 jan. 1934
+echtgenoote van
+krieno huizinga
+geb. te middelstum
+20 juli 1873
+overl, te haren 18 jan.1950
+""" .
+
+t00018:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y9M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-03-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-01-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Trientje Huisman" ;
+    :text "TODO: Trientje Huisman"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Middelbert2750902 ;
+    :text "TODO: MIDDELBERT"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00018:P2
+  ] .
+
+t00018:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y6M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-06-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-01-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Krieno Huizinga" ;
+    :text "TODO: Krieno Huizinga"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Middelstum2750868 ;
+    :text "TODO: MIDDELSTUM"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] .
+

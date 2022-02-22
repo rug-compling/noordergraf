@@ -1,0 +1,94 @@
+@prefix t00603: <https://noordergraf.rug.nl/tomb/T00603#> .
+
+tomb:T00603
+  a :Tomb ;
+  :creator t00603:P4 ;
+  :image [
+    dc:date "2019-11-30T14:47:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00603.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3353 ;
+      geo:long 6.5126
+    ] ;
+    :nd "+53.3353+006.5126"^^ll:
+  ] ;
+  :site site:NLgr9951stWinsum ;
+  :subject t00603:P1, t00603:P2, t00603:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: ate van
+ruitplaats
+muzegeliefde moeder
+tietje.p.steur
+geborent5 maart
+1804,
+overleden 2 october
+1826.
+edert 1870 seeds
+van bun talons
+nalatende kinderen
+wed a e verards.
+til
+""" .
+
+t00603:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y6M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1804-03-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1876-10-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tietje P. Steur" ;
+    :text "TODO: Tietje P. Steur"
+  ] ;
+  :relation [
+    a :Mother ;
+    :target t00603:P3
+  ], [
+    a :Widow ;
+    :begin "1870"^^xsd:gYear ;
+    :target t00603:P2
+  ] .
+
+t00603:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Bron Talens" ;
+    :text "TODO: Bron Talens"
+  ] .
+
+t00603:P3
+  a :Person ;
+  :quantity [
+    a :Quantity ;
+    :number 6
+  ] ;
+  :relation [
+    a :Child ;
+    :target t00603:P1 ;
+    :text "nalatende 6 kinderen"
+  ] .
+
+t00603:P4
+  a :Creator ;
+  :name [
+    a :Name ;
+    :fullname "WED. A. EVERARDS" ;
+    :text "TODO"
+  ] .
+

@@ -1,0 +1,77 @@
+@prefix t00305: <https://noordergraf.rug.nl/tomb/T00305#> .
+
+tomb:T00305
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:27:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00305.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7158 ;
+      geo:long 6.4748
+    ] ;
+    :nd "+52.7158+006.4748"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 89 ;
+      :verse "7"
+    ] ;
+    :text "Ps. 89 : 7."
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00305:P1, t00305:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: she
+rustplaats van
+margje eleveld.
+wed. vam 1. j. de jonge
+u .
+geb. 27 febr. 1860 — ovl. 94 febr. 1940.
+ps. 89:7.
+.
+""" .
+
+t00305:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y11M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-02-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-02-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Margje Eleveld" ;
+    :text "TODO: Margje Eleveld"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00305:P2
+  ] .
+
+t00305:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "J.J. de Jonge" ;
+    :text "TODO: J.J. de Jonge"
+  ] .
+

@@ -1,0 +1,80 @@
+@prefix t00011: <https://noordergraf.rug.nl/tomb/T00011#> .
+
+tomb:T00011
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:38:17"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00011.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1910 ;
+      geo:long 6.5930
+    ] ;
+    :nd "+53.1910+006.5930"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00011:P1, t00011:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van
+lammert
+leertouwer
+geb. 1 maart 1877
+overl.4 dec. 1938
+echtgenoot van g.krol
+en
+geesje krol
+geb. 8 maart 1876
+overl. 28 sept. 1961
+""" .
+
+t00011:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y9M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-03-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-12-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lammert Leertouwer" ;
+    :text "TODO: Lammert Leertouwer"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00011:P2
+  ] .
+
+t00011:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y6M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-03-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-09-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geesje Krol" ;
+    :text "TODO: Geesje Krol"
+  ] .
+

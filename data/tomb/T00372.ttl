@@ -1,0 +1,100 @@
+@prefix t00372: <https://noordergraf.rug.nl/tomb/T00372#> .
+
+tomb:T00372
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:12:57"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00372.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0792 ;
+      geo:long 6.5717
+    ] ;
+    :nd "+53.0792+006.5717"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00372:P1, t00372:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats van
+thijs wilkens
+geb. te winde 25 nov. 1894
+overl. aldaar 16 mei 1962
+gelechtgenoot van
+alida ottens
+geb.te peize 5 maart 1897
+overl te winde 16 sept. 1964
+rust zacht lieve ouders
+""" .
+
+t00372:C1
+  a :Village ;
+  :place place:Winde2744363 ;
+  :text "TODO: WINDE" .
+
+t00372:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y5M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-11-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-05-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Thijs Wilkens" ;
+    :text "TODO: Thijs Wilkens"
+  ] ;
+  :placeOfBirth t00372:C1 ;
+  :placeOfDeath t00372:C1 ;
+  :relation [
+    a :Parent
+  ], [
+    a :Spouse ;
+    :target t00372:P2
+  ] .
+
+t00372:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y6M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-03-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-09-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Alida Ottens" ;
+    :text "TODO: Alida Ottens"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Peize2748673 ;
+    :text "TODO: PEIZE"
+  ] ;
+  :placeOfDeath t00372:C1 ;
+  :relation [
+    a :Parent
+  ] .
+

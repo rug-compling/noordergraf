@@ -1,0 +1,55 @@
+@prefix t00663: <https://noordergraf.rug.nl/tomb/T00663#> .
+
+tomb:T00663
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:51:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00663.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0687 ;
+      geo:long 5.5231
+    ] ;
+    :nd "+53.0687+005.5231"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00663:P1 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van
+sibbella
+mulder
+geb. 28 febr. 1873,
+overl.12 mei 1943
+rusto zacht.
+""" .
+
+t00663:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y2M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-02-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-05-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Sibella Mulder" ;
+    :text "TODO: Sibella Mulder"
+  ] .
+

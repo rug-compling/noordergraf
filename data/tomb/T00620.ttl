@@ -1,0 +1,116 @@
+@prefix t00620: <https://noordergraf.rug.nl/tomb/T00620#> .
+
+tomb:T00620
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:02:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00620.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1643 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1643+006.7541"^^ll:
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00620:P1, t00620:P2, t00620:P3 ;
+  :text """TODO: w. r. mulder
+borger.cie 5.2.1925
+haren 2.4.2015
+r. havinga
+veendam 6.6.1930
+borger. cie 11.5.1975
+p. j. strijbosch
+asten 20.3.1926
+haren 25.6.2008
+""" .
+
+t00620:C1
+  a :Village ;
+  :place place:Borgercompagnie2758618 ;
+  :text "TODO: BORGERCOMPAGNIE" .
+
+t00620:C2
+  a :Town ;
+  :place place:Haren2754841 ;
+  :text "TODO: HAREN" .
+
+t00620:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P90Y1M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-02-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2015-04-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "W.R. Mulder" ;
+    :text "TODO: W.R. Mulder"
+  ] ;
+  :placeOfBirth t00620:C1 ;
+  :placeOfDeath t00620:C2 .
+
+t00620:P2
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P44Y11M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1930-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1975-05-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "R. Havinga" ;
+    :text "TODO: R. Havinga"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :placeOfDeath t00620:C1 .
+
+t00620:P3
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P82Y2M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1926-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-05-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "P.J. Strijbosch" ;
+    :text "TODO: P.J. Strijbosch"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Asten2759621 ;
+    :text "TODO: ASTEN"
+  ] ;
+  :placeOfDeath t00620:C2 .
+

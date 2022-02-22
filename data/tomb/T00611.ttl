@@ -1,0 +1,122 @@
+@prefix t00611: <https://noordergraf.rug.nl/tomb/T00611#> .
+
+tomb:T00611
+  a :Tomb ;
+  :creator t00611:P3 ;
+  :image [
+    dc:date "2019-11-23T10:06:14"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00611.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1643 ;
+      geo:long 6.7540
+    ] ;
+    :nd "+53.1643+006.7540"^^ll:
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00611:P1, t00611:P2 ;
+  :symbol [
+    a symbol:OakBranch
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: hapload
+jan
+andries faber
+gebte hoteles
+4 mei 1842
+he
+berlte hogezand
+26 juni 1892
+erejne echtgenoeld
+kunje redeker
+geb.te kid
+18 oct. 1845
+brerlte cappemeer
+18 co. 1925.
+holsberden
+""" .
+
+t00611:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y1M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-06-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Andries Faber" ;
+    :text "TODO: Andries Faber"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :partOf [
+      a :Province ;
+      :place place:ProvincieFriesland2755812 ;
+      :text "TODO: FRIESLAND"
+    ] ;
+    :place place:Sloten2747131 ;
+    :text "TODO: SLOTEN"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] .
+
+t00611:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-10-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-10-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Kunje Redeker" ;
+    :text "TODO: Kunje Redeker"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Kiel2752863 ;
+    :text "TODO: KIEL"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Sappemeer2747758 ;
+    :text "TODO: SAPPEMEER"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00611:P1
+  ] .
+
+t00611:P3
+  a :Creator ;
+  :name [
+    a :Name ;
+    :fullname "HOLSBERGEN" ;
+    :text "TODO"
+  ] .
+

@@ -1,0 +1,43 @@
+@prefix t01087: <https://noordergraf.rug.nl/tomb/T01087#> .
+
+tomb:T01087
+  a :Tomb ;
+  :text """TODO: rustplaats van
+aafje elisabeth
+maroer
+en
+jat de vries pzn
+te
+""" ;
+  :image [
+    dc:date "2020-09-06T15:35:25"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01087.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1900 ;
+      geo:long 6.5935
+    ] ;
+    :nd "+53.1900+006.5935"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t01087:P1, t01087:P2 .
+
+t01087:P1
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Aafje Elisabeth Warner" ;
+    :text "TODO: Aafje Elisabeth Warner"
+  ] .
+
+t01087:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan de Vries" ;
+    :suffix "Jzn" ;
+    :text "TODO: Jan de Vries Jzn"
+  ] .
+

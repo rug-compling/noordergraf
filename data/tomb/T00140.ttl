@@ -1,0 +1,86 @@
+@prefix t00140: <https://noordergraf.rug.nl/tomb/T00140#> .
+
+tomb:T00140
+  a :Tomb ;
+  :text """TODO: brustplaats van
+onzeljeye vrouw zimoeder
+maitje wijnduard
+geb. 29 mei 1836
+dyerl 21 april 1942
+echtfen dote yal
+drengers
+e tonze leve vader en op
+jan rengers
+51. 12 maart 183-
+dveredusnl 1973
+vrata
+vid
+""" ;
+  :image [
+    dc:date "2019-10-02T10:32:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00140.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2062 ;
+      geo:long 6.5701
+    ] ;
+    :nd "+53.2062+006.5701"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00140:P1, t00140:P2 .
+
+t00140:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y10M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-05-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-04-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aaltje Wijngaard" ;
+    :text "TODO: Aaltje Wijngaard"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Wife ;
+    :target t00140:P2
+  ] .
+
+t00140:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y9M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-03-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1973-01-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Rengers" ;
+    :text "TODO: Jan Rengers"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Grandfather
+  ] .
+

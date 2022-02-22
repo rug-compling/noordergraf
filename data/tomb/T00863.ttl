@@ -1,0 +1,80 @@
+@prefix t00863: <https://noordergraf.rug.nl/tomb/T00863#> .
+
+tomb:T00863
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:14:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00863.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7191 ;
+      geo:long 6.8449
+    ] ;
+    :nd "+52.7191+006.8449"^^ll:
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00863:P1, t00863:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: hl
+fustplaats
+ven
+henano
+eising,
+geb. 29 maart
+165
+te sleen
+olerl 5 febr
+1917
+te leenoord
+eentgen van
+juduielde
+57
+""" .
+
+t00863:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P10M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-03-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1854-02-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wienand Eising" ;
+    :text "TODO: Wienand Eising"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Sleen2747182 ;
+    :text "TODO: SLEEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Veenoord2745753 ;
+    :text "TODO: VEENOORD"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00863:P2
+  ] .
+
+t00863:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "J. V.D. Velde" ;
+    :text "TODO: J. V.D. Velde"
+  ] .
+

@@ -1,0 +1,101 @@
+@prefix t00177: <https://noordergraf.rug.nl/tomb/T00177#> .
+
+tomb:T00177
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-05T10:32:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00177.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1909 ;
+      geo:long 6.5941
+    ] ;
+    :nd "+53.1909+006.5941"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00177:P1, t00177:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+van
+jelle stutvoet
+geb. 29 jan. 1870,
+te nw.pekela.
+overl.21 maart 1932,
+te groningen.
+echtg van
+henderika veentjer
+geb.is nov. 1874
+te veendam
+overl.21 febr. 1951
+te groningen
+""" .
+
+t00177:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00177:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y1M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-01-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-03-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jelle Stutvoet" ;
+    :text "TODO: Jelle Stutvoet"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:NieuwePekela2750272 ;
+    :text "TODO: NIEUWE PEKELA"
+  ] ;
+  :placeOfDeath t00177:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00177:P2
+  ] .
+
+t00177:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y3M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-11-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-02-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Henderika Veentjer" ;
+    :text "TODO: Henderika Veentjer"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :placeOfDeath t00177:C1 .
+

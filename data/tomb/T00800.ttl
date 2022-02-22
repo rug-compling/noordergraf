@@ -1,0 +1,91 @@
+@prefix t00800: <https://noordergraf.rug.nl/tomb/T00800#> .
+
+tomb:T00800
+  a :Tomb ;
+  :image [
+    dc:date "2020-01-18T12:44:40"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00800.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2778 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2778+006.6936"^^ll:
+  ] ;
+  :quote t00800:V1 ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00800:P1, t00800:P2, t00800:P3 ;
+  :text """TODO: rustplaats
+van
+reinder harm weringa
+geb 2 mei 1842
+ten boer
+overl. 2 jan. 1922
+wedn van j. e. koopman.
+echtgenoot van
+jacobje laninga
+openb 14 13
+""" .
+
+t00800:C1
+  a :Village ;
+  :place place:TenBoer2746491 ;
+  :text "TODO: TEN BOER" .
+
+t00800:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y8M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-05-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-01-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Reinder Harm Weringa" ;
+    :text "TODO: Reinder Harm Weringa"
+  ] ;
+  :placeOfBirth t00800:C1 ;
+  :placeOfDeath t00800:C1 ;
+  :relation [
+    a :Widower ;
+    :target t00800:P2
+  ], [
+    a :Spouse ;
+    :target t00800:P3
+  ] .
+
+t00800:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "J.E. Koopman" ;
+    :text "TODO: J.E. Koopman"
+  ] .
+
+t00800:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Jacobje Laninga" ;
+    :text "TODO: Jacobje Laninga"
+  ] .
+
+t00800:V1
+  a :Quote ;
+  :reference [
+    a :BibleRevelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "TODO" .
+

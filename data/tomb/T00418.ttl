@@ -1,0 +1,88 @@
+@prefix t00418: <https://noordergraf.rug.nl/tomb/T00418#> .
+
+tomb:T00418
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T16:55:27"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00418.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0797 ;
+      geo:long 6.5731
+    ] ;
+    :nd "+53.0797+006.5731"^^ll:
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00418:P1 ;
+  :symbol [
+    a symbol:DoveOnNest
+  ], [
+    a symbol:Dove
+  ], [
+    a symbol:Flower
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: ang
+jose
+a
+jer
+funn
+mese
+wgr ordena
+zwide veld
+2
+gel 15 jan 1907
+overlizze is 19
+geleyici doel 22.30
+zuleveld.
+beste
+denme
+jgereits
+""" .
+
+t00418:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P2Y7M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-01-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1909-08-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Egberdina Zuideveld" ;
+    :text "TODO: Egberdina Zuideveld"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00418:P2, t00418:P3
+  ] .
+
+t00418:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "W. Zuideveld" ;
+    :text "TODO: W. Zuideveld"
+  ] .
+
+t00418:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "J. Gerrits" ;
+    :text "TODO: J. Gerrits"
+  ] .
+

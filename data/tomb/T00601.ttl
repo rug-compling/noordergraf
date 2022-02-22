@@ -1,0 +1,74 @@
+@prefix t00601: <https://noordergraf.rug.nl/tomb/T00601#> .
+
+tomb:T00601
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-30T14:03:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00601.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3279 ;
+      geo:long 6.5113
+    ] ;
+    :nd "+53.3279+006.5113"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :target t00601:P1 ;
+    :text "SINTS DE STICHTING DER CHR. GER. GEMEENTE ALHIER IN 1843, WAS HIJ EERST DIAKEN, DAARNA OUDERLING DIER GEMEENTE"
+  ] ;
+  :site site:NLgr9951tnWinsum ;
+  :subject t00601:P1 ;
+  :symbol [
+    a symbol:Angel
+  ], [
+    a symbol:Butterfly
+  ], [
+    a symbol:Cross
+  ] ;
+  :text """TODO: fare
+getika
+umowulilovs koitier
+cee-le onderland 29c295
+29adc
+denetewussum aniss2
+vihode stichtingder chr. cet
+goh se212
+mahier 13 was hij echte !
+a dharna udere durch
+110
+""" .
+
+t00601:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y4M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1798-08-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-01-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Willems Koiter" ;
+    :text "TODO: Jan Willems Koiter"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Onderdendam2749601 ;
+    :text "TODO: ONDERDENDAM"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Winsum2744337 ;
+    :text "TODO: WINSUM"
+  ] .
+

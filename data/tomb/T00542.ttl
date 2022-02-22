@@ -1,0 +1,76 @@
+@prefix t00542: <https://noordergraf.rug.nl/tomb/T00542#> .
+
+tomb:T00542
+  a :Tomb ;
+  :text """TODO: ter
+gedachtenis van
+jan van linge az;
+geb. 26 nov.1839,
+overl. 20 aug 1896,
+en zijne echtgenoote
+tjietska van der wal,
+ceb.6 maart 1845,
+overl.8 nov.1913).
+""" ;
+  :image [
+    dc:date "2019-11-24T14:17:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00542.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1043 ;
+      geo:long 6.8760
+    ] ;
+    :nd "+53.1043+006.8760"^^ll:
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00542:P1, t00542:P2 .
+
+t00542:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P56Y8M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-11-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1896-08-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan van Linge" ;
+    :suffix "Az" ;
+    :text "TODO: Jan van Linge Az"
+  ] .
+
+t00542:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y8M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-03-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-11-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tjietska van der Wal" ;
+    :text "TODO: Tjietska van der Wal"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00542:P1
+  ] .
+

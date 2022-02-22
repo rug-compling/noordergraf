@@ -1,0 +1,64 @@
+@prefix t00915: <https://noordergraf.rug.nl/tomb/T00915#> .
+
+tomb:T00915
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-07T14:04:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00915.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1717 ;
+      geo:long 6.3654
+    ] ;
+    :nd "+53.1717+006.3654"^^ll:
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00915:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: «
+pustplaats
+willem
+lieffering
+ceb:3jan 1851
+te zevenhuizen
+oyl.2 oct.1940
+te polbert
+""" .
+
+t00915:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y8M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1851-01-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-10-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Willem Lieffering" ;
+    :text "TODO: Willem Lieffering"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zevenhuizen2743926 ;
+    :text "TODO: ZEVENHUIZEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Tolbert2746234 ;
+    :text "TODO: TOLBERT"
+  ] .
+

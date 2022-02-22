@@ -1,0 +1,93 @@
+@prefix t00441: <https://noordergraf.rug.nl/tomb/T00441#> .
+
+tomb:T00441
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-02T11:37:59"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00441.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4793 ;
+      geo:long 6.1607
+    ] ;
+    :nd "+53.4793+006.1607"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00441:P1, t00441:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: melalamellem
+rustplaats
+van onze lieve
+vrouw en moeder
+tuntjecoerkamp
+geb 21 october 1861,
+everlo elpril-1926.
+en van onze lieve vader
+jan zeilinga
+le mapament de la realitate de matama!
+sarrow
+geb.13 mei 1853
+we
+eerli otober 1937
+rust zacht
+""" .
+
+t00441:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y5M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-10-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-04-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Stijntje Coerkamp" ;
+    :text "TODO: Stijntje Coerkamp"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Wife ;
+    :target t00441:P2
+  ] .
+
+t00441:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y4M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1853-05-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-10-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Zeilinga" ;
+    :text "TODO: Jan Zeilinga"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+

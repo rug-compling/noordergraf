@@ -1,0 +1,97 @@
+@prefix t01095: <https://noordergraf.rug.nl/tomb/T01095#> .
+
+tomb:T01095
+  a :Tomb ;
+  :image [
+    dc:date "2020-09-19T14:54:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01095.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2332 ;
+      geo:long 6.8751
+    ] ;
+    :nd "+53.2332+006.8751"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :subject t01095:P1, t01095:P2, t01095:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: belen
+rustplaats
+van
+talje
+sternberg
+geb.i aug.1891
+te slochteren,
+overl. 24 dec.1972
+te sidoeburen,
+wed. van
+j.folkersma
+eerder van
+e. brdekema
+to
+pelerint :
+rust zacht
+""" .
+
+t01095:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y4M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-08-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-12-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Talje Sternberg" ;
+    :text "TODO: Talje Sternberg"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Slochteren2747143 ;
+    :text "TODO: SLOCHTEREN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Siddeburen2747343 ;
+    :text "TODO: SIDDEBUREN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t01095:P2
+  ], [
+    a :Widow ;
+    :before t01095:P3 ;
+    :target t01095:P3
+  ] .
+
+t01095:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "J. Folkersma" ;
+    :text "TODO: J. Folkersma"
+  ] .
+
+t01095:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "E. Broekema" ;
+    :text "TODO: E. Broekema"
+  ] .
+

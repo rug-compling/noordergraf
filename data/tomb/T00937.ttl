@@ -1,0 +1,117 @@
+@prefix t00937: <https://noordergraf.rug.nl/tomb/T00937#> .
+
+tomb:T00937
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-18T10:25:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00937.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2377 ;
+      geo:long 6.5551
+    ] ;
+    :nd "+53.2377+006.5551"^^ll:
+  ] ;
+  :quote t00937:V1 ;
+  :site site:NLgr9741ghGroningen ;
+  :subject t00937:P1, t00937:P3, t00937:P4 ;
+  :text """TODO: margaretha
+cornelia schaaf
+21-11-1917 7 5 7-1956
+echtgenote van h.j. ruiter
+en eerste kind xen. 25-4-1946
+:
+en
+h. ruiter wildeboer
+* 26 -9.1877 117 12 1974
+-
+rom.8:38 - 39
+30
+""" .
+
+t00937:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P38Y7M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-11-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-07-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Margaretha Cornelia Schaaf" ;
+    :text "TODO: Margaretha Cornelia Schaaf"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00937:P2
+  ] .
+
+t00937:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "H.J. Ruiter" ;
+    :text "TODO: H.J. Ruiter"
+  ] .
+
+t00937:P3
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P0Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1948-04-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-04-25"^^xsd:date
+  ] ;
+  :relation [
+    a :Child ;
+    :target t00937:P1, t00937:P2 ;
+    :text "eerste kind"
+  ] .
+
+t00937:P4
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P97Y2M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-09-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-12-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "H. Ruiter Wildeboer" ;
+    :text "TODO: H. Ruiter Wildeboer"
+  ] .
+
+t00937:V1
+  a :Quote ;
+  :reference [
+    a :BibleRomans ;
+    :chapter 8 ;
+    :verse "38-39"
+  ] ;
+  :text "TODO" .
+

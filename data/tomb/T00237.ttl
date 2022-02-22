@@ -1,0 +1,110 @@
+@prefix t00237: <https://noordergraf.rug.nl/tomb/T00237#> .
+
+tomb:T00237
+  a :Tomb ;
+  :text """TODO: rustplaats
+van
+onze geliefde dochter en zuster
+hinderika lever
+geb.21 nov 1905-overl.8 juli1928
+onze lieve vrouw en moeder
+rolina medok
+geb. 2 jan 1873-overl.16 febr. 1931
+echtgenote van
+arend tonko lever
+geb.30 jan. 867-overl.30 maart 1952
+""" ;
+  :image [
+    dc:date "2019-10-10T09:40:45"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00237.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2054 ;
+      geo:long 6.5724
+    ] ;
+    :nd "+53.2054+006.5724"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00237:P1, t00237:P2, t00237:P3 .
+
+t00237:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P22Y7M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-11-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-07-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Henderika Lever" ;
+    :text "TODO: Henderika Lever"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00237:P2
+  ], [
+    a :Sister
+  ] .
+
+t00237:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P58Y1M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-01-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-02-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Rolina Medok" ;
+    :text "TODO: Rolina Medok"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00237:P3
+  ], [
+    a :Mother ;
+    :target t00237:P1
+  ], [
+    a :Spouse ;
+    :target t00237:P3
+  ] .
+
+t00237:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y2M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-01-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-03-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Arend Tonko Lever" ;
+    :text "TODO: Arend Tonko Lever"
+  ] .
+

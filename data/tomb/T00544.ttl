@@ -1,0 +1,61 @@
+@prefix t00544: <https://noordergraf.rug.nl/tomb/T00544#> .
+
+tomb:T00544
+  a :Tomb ;
+  :text """TODO: pushplaats van
+jantje deddes
+in teven echtgenoot
+van k. wilkens
+overl 2x dec. 1853
+in den ouderdom
+van 5k jaren
+wen
+""" ;
+  :image [
+    dc:date "2019-11-24T14:03:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00544.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1046 ;
+      geo:long 6.8757
+    ] ;
+    :nd "+53.1046+006.8757"^^ll:
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00544:P1, t00544:P2 .
+
+t00544:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y"^^xsd:duration
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1799"^^xsd:gYear ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1853-12-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Deddes" ;
+    :text "TODO: Jantje Deddes"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00544:P2
+  ] .
+
+t00544:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "K. Wilkens" ;
+    :text "TODO: K. Wilkens"
+  ] .
+

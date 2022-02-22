@@ -1,0 +1,80 @@
+@prefix t00776: <https://noordergraf.rug.nl/tomb/T00776#> .
+
+tomb:T00776
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:02:34"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00776.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7822 ;
+      geo:long 6.8982
+    ] ;
+    :nd "+52.7822+006.8982"^^ll:
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00776:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: her rust
+wemeltje
+i gebels cuidbarge
+19 lavender
+verb. aldaas
+15 jul 1905.
+geliefd dochtertje van
+h.huizing ha. horring
+""" .
+
+t00776:C1
+  a :Village ;
+  :place place:Zuidbarge2743809 ;
+  :text "TODO: ZUIDBARGE" .
+
+t00776:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P11Y7M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-11-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-07-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wemeltje" ;
+    :text "TODO: Wemeltje"
+  ] ;
+  :placeOfBirth t00776:C1 ;
+  :placeOfDeath t00776:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00776:P2, t00776:P3
+  ] .
+
+t00776:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "H. Huizing" ;
+    :suffix "Hz" ;
+    :text "TODO: H. Huizing Hz"
+  ] .
+
+t00776:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "A. Horring" ;
+    :text "TODO: A. Horring"
+  ] .
+

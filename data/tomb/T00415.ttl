@@ -1,0 +1,99 @@
+@prefix t00415: <https://noordergraf.rug.nl/tomb/T00415#> .
+
+tomb:T00415
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:04:31"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00415.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0796 ;
+      geo:long 6.5724
+    ] ;
+    :nd "+53.0796+006.5724"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00415:P1, t00415:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats van
+geessien rossing
+geb, te tinaarlo 10 dec. 18bd
+overl. aldaar 12 nov. 1952
+geliefde echtgendte van
+hendrik koops
+ger. te ide 31 maart 1880
++ overl. te haren il juni 1968
+aust zacht lieve quders
+""" .
+
+t00415:C1
+  a :Village ;
+  :place place:Tynaarlo2746038 ;
+  :text "TODO: TYNAARLO" .
+
+t00415:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y11M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-12-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-11-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geessien Rossing" ;
+    :text "TODO: Geessien Rossing"
+  ] ;
+  :placeOfBirth t00415:C1 ;
+  :placeOfDeath t00415:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00415:P2
+  ] .
+
+t00415:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y2M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-03-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-06-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrik Koops" ;
+    :text "TODO: Hendrik Koops"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Yde2744130 ;
+    :text "TODO: YDE"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] .
+

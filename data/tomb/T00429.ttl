@@ -1,0 +1,74 @@
+@prefix t00429: <https://noordergraf.rug.nl/tomb/T00429#> .
+
+tomb:T00429
+  a :Tomb ;
+  :text """TODO: hier rusten
+mun lieve ouders
+jan visser
+geb. 1903 overl. 1974
+aafje ytje jansma
+geb. 1912 overl. 1978
+""" ;
+  :image [
+    dc:date "2019-11-02T11:42:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00429.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4791 ;
+      geo:long 6.1610
+    ] ;
+    :nd "+53.4791+006.1610"^^ll:
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00429:P1, t00429:P2 .
+
+t00429:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Visser" ;
+    :text "TODO: Jan Visser"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00429:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aafje Ytje Jansma" ;
+    :text "TODO: Aafje Ytje Jansma"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

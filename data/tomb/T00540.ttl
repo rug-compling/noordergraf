@@ -1,0 +1,103 @@
+@prefix t00540: <https://noordergraf.rug.nl/tomb/T00540#> .
+
+tomb:T00540
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-24T14:19:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00540.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1045 ;
+      geo:long 6.8770
+    ] ;
+    :nd "+53.1045+006.8770"^^ll:
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00540:P1, t00540:P2 ;
+  :symbol [
+    a symbol:OakBranch
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Butterfly
+  ], [
+    a symbol:Cocoon
+  ], [
+    a symbol:InvertedTorch
+  ] ;
+  :text """TODO: rustplaats
+van monroad
+theo
+bodora
+rah:nullba
+gebte rotterdam
+hen 29 november
+1807
+overlte perendum
+den 26 november
+1889
+wodine vom
+den floor
+janeppes tan der wijk
+lepensieerd
+floof danderwijs
+dom
+in monudichelin
+""" .
+
+t00540:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y11M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1807-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1889-11-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Theodora H. Muller" ;
+    :text "TODO: Theodora H. Muller"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Rotterdam2747891 ;
+    :text "TODO: ROTTERDAM"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00540:P2
+  ] .
+
+t00540:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan Eppes van der Wijk" ;
+    :text "TODO: Jan Eppes van der Wijk"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:13320 ;
+    :location [
+      a :Colony ;
+      :place place:Indonesie1643084 ;
+      :text "TODO: NEDERLANDS-INDIË"
+    ] ;
+    :text "gepensioneerd Hoofdonderwijzer" ;
+    :wordnet "TODO: Principal.n.02"
+  ] .
+

@@ -1,0 +1,96 @@
+@prefix t00538: <https://noordergraf.rug.nl/tomb/T00538#> .
+
+tomb:T00538
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-24T14:20:59"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00538.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1043 ;
+      geo:long 6.8761
+    ] ;
+    :nd "+53.1043+006.8761"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DIT GRAF MAG NIET WORDEN OPGEGRAVEN"@nld
+  ], [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00538:P1, t00538:P2 ;
+  :symbol [
+    a symbol:Flag
+  ], [
+    a symbol:Anchor
+  ], [
+    a symbol:Anchor
+  ] ;
+  :text """TODO: ft
+forgedachteniscan
+vriese
+jan
+brock
+sietat
+la
+de vries
+wrote paalberedt
+kmac 1832,
+overlte pendan
+9 aug 1882 ,
+echtgenoot
+enoot van
+ida g.strating
+rust zacht.
+.
+dit yraf mag niet
+worden opgegraven
+""" .
+
+t00538:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P52Y3M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1832-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1884-08-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Vriese de Vries" ;
+    :text "TODO: Jan Vriese de Vries"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zuidbroek2743800 ;
+    :text "TODO: ZUIDBROEK"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00538:P2
+  ] .
+
+t00538:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Ida G. Strating" ;
+    :text "TODO: Ida G. Strating"
+  ] .
+

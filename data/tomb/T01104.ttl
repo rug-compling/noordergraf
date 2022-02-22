@@ -1,0 +1,89 @@
+@prefix t01104: <https://noordergraf.rug.nl/tomb/T01104#> .
+
+tomb:T01104
+  a :Tomb ;
+  :image [
+    dc:date "2021-03-07T15:44:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01104.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1910 ;
+      geo:long 6.5926
+    ] ;
+    :nd "+53.1910+006.5926"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t01104:P1, t01104:P2 ;
+  :text "TODO" .
+
+t01104:C2
+  a :Village ;
+  :place place:Borculo2758626 ;
+  :text "TODO: BORCULO" .
+
+t01104:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y4M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-04-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-09-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Sies Brandsma" ;
+    :text "TODO: Sies Brandsma"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:06105 ;
+    :wordnet "TODO: Doctor.n.01"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Oranjewoud2749251 ;
+    :text "TODO: ORANJEWOUD"
+  ] ;
+  :placeOfDeath t01104:C2 .
+
+t01104:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y1M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-05-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-07-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Alingh Brandsma-Zwart" ;
+    :text "TODO: Grietje Alingh Brandsma-Zwart"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:06105 ;
+    :wordnet "TODO: Doctor.n.01"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Gorredijk2755429 ;
+    :text "TODO: GORREDIJK"
+  ] ;
+  :placeOfDeath t01104:C2 .
+

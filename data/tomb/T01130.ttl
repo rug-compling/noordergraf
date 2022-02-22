@@ -1,0 +1,76 @@
+@prefix t01130: <https://noordergraf.rug.nl/tomb/T01130#> .
+
+tomb:T01130
+  a :Tomb ;
+  :image [
+    dc:date "2021-05-13T11:42:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01130.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3871 ;
+      geo:long 6.3597
+    ] ;
+    :nd "+53.3871+006.3597"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE LIENA"@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 103 ;
+      :verse "8"
+    ] ;
+    :text "Ps: 103: 8."
+  ] ;
+  :site site:NLgr9978teHornhuizen ;
+  :subject t01130:P1, t01130:P2, t01130:P3 ;
+  :symbol [
+    a symbol:Butterfly
+  ] ;
+  :text "TODO" .
+
+t01130:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P6Y10M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-10-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-08-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Liena Wassenaar" ;
+    :text "TODO: Liena Wassenaar"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t01130:P2, t01130:P3
+  ] .
+
+t01130:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "B. Wassenaar" ;
+    :text "TODO: B. Wassenaar"
+  ] .
+
+t01130:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "T. Fokkens" ;
+    :text "TODO: T. Fokkens"
+  ] .
+

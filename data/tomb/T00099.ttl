@@ -1,0 +1,98 @@
+@prefix t00099: <https://noordergraf.rug.nl/tomb/T00099#> .
+
+tomb:T00099
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-24T15:11:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00099.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2062 ;
+      geo:long 6.5733
+    ] ;
+    :nd "+53.2062+006.5733"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00099:P1, t00099:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:InvertedTorch
+  ], [
+    a symbol:InvertedTorch
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: ер
+gerbrand wouters.jn
+wethouder der gem.
+groningen
+oep.9 febr. 1832
+overli dec.1903
+en zijne echtgenoote
+alida duk
+je..8 febr. 1835
+uver 28 jul 1925
+""" .
+
+t00099:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y9M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1834-02-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-12-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerbrand Wouters" ;
+    :suffix "Jr" ;
+    :text "TODO: Gerbrand Wouters Jr"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:20110 ;
+    :location [
+      a :Municipality ;
+      :place place:Groningen2755251 ;
+      :text "TODO: GRONINGEN"
+    ] ;
+    :wordnet "TODO: Alderman.n.01"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00099:P2
+  ] .
+
+t00099:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y5M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-02-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-07-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Alida Dijk" ;
+    :text "TODO: Alida Dijk"
+  ] .
+

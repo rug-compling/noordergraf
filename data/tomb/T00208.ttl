@@ -1,0 +1,58 @@
+@prefix t00208: <https://noordergraf.rug.nl/tomb/T00208#> .
+
+tomb:T00208
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:55:56"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00208.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2220 ;
+      geo:long 6.6369
+    ] ;
+    :nd "+53.2220+006.6369"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00208:P1 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaat
+12
+harm
+kornelis
+kruijer
+gel 20
+de 1767
+over fun
+1861.
+hn
+""" .
+
+t00208:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P94Y3M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1767-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1861-06-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harm Kornelis Kruijer" ;
+    :text "TODO: Harm Kornelis Kruijer"
+  ] .
+

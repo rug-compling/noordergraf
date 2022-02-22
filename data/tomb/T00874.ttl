@@ -1,0 +1,58 @@
+@prefix t00874: <https://noordergraf.rug.nl/tomb/T00874#> .
+
+tomb:T00874
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:10:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00874.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7193 ;
+      geo:long 6.8454
+    ] ;
+    :nd "+52.7193+006.8454"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00874:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: 퍼
+4
+te
+rustplaats
+van
+g.postuma
+de vries
+* 9.10.1986
+* 29-2-1959.
+rust zaght
+""" .
+
+t00874:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-10-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-02-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "G. Postuma-de Vries" ;
+    :text "TODO: G. Postuma-de Vries"
+  ] .
+

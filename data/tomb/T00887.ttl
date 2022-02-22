@@ -1,0 +1,79 @@
+@prefix t00887: <https://noordergraf.rug.nl/tomb/T00887#> .
+
+tomb:T00887
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:45:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00887.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7767 ;
+      geo:long 6.8047
+    ] ;
+    :nd "+52.7767+006.8047"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HIJ RUSTE IN VREDE"@nld
+  ], [
+    a :Quote ;
+    :text "TER NAGEDACHTENIS AAN \\ DEN VOOR HET VADERLAND \\ GEVALLEN MILITAIR \\ VAN HET VIERDE R.V.A."@nld
+  ] ;
+  :site site:NLdr7841cdSleen ;
+  :subject t00887:P1 ;
+  :symbol [
+    a symbol:Symbol
+  ], [
+    a symbol:Symbol
+  ] ;
+  :text """TODO: ter nagedachtenis aan
+den voor het vaderland
+gevallen militair
+van het 4e rv a.
+hilbert
+loomulder
+geboren te groningen
+11 jan 1916
+gesneuvelo te dubbeldam
+10 mei 1940
+huruste in vrede
+""" .
+
+t00887:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P24Y3M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1916-01-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-05-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hilbert Loomulder" ;
+    :text "TODO: Hilbert Loomulder"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:58340 ;
+    :wordnet "TODO: Soldier.n.01"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Dubbeldam2756537 ;
+    :text "TODO: DUBBELDAM"
+  ] .
+

@@ -1,0 +1,64 @@
+@prefix t00925: <https://noordergraf.rug.nl/tomb/T00925#> .
+
+tomb:T00925
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-07T14:06:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00925.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1718 ;
+      geo:long 6.3655
+    ] ;
+    :nd "+53.1718+006.3655"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HIER RUST MIJN LIEVE MAN EN ONZE ZORGZAME VADER $p1"@nld
+  ], [
+    a :Quote ;
+    :text "JOUW MUZIEK LEEFT IN ONZE HARTEN VOORT"@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00925:P1 ;
+  :symbol [
+    a symbol:Trombone
+  ] ;
+  :text """TODO: jouw muziek leeft in onze
+hartut voort.
+hier rust
+mijn lieve man en onze zorgzame vader
+alexander arend zwijgers
+he
+* 16-9-1945
+† 2-6-2007
+""" .
+
+t00925:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y8M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1945-09-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2001-06-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Alexander Arend Zwijgers" ;
+    :text "TODO: Alexander Arend Zwijgers"
+  ] ;
+  :relation [
+    a :Husband
+  ], [
+    a :Father
+  ] .
+

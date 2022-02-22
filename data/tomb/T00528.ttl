@@ -1,0 +1,78 @@
+@prefix t00528: <https://noordergraf.rug.nl/tomb/T00528#> .
+
+tomb:T00528
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:25:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00528.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1649 ;
+      geo:long 6.7539
+    ] ;
+    :nd "+53.1649+006.7539"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "GOD HEEFT ONS GEEN KALME \\ REIS BELOOFD MAAR WEL \\ EEN BEHOUDEN THUISHAVEN."@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00528:P1, t00528:P2 ;
+  :symbol [
+    a symbol:Anchor
+  ] ;
+  :text """TODO: t
+god heeft ons geen kalme
+reis beloofd maar wel
+een behouden thuishaven
+in dankbare herinnering aan
+onze zorgzame man
+vader en opa
+johannes van der meulen
+273 - 1932. t 25-11-1993
+echtgenoot van
+hiltje timmerman
+""" .
+
+t00528:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P61Y7M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1932-03-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993-11-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Johannes van der Meulen" ;
+    :text "TODO: Johannes van der Meulen"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00528:P2
+  ], [
+    a :Husband ;
+    :target t00528:P2
+  ], [
+    a :Father
+  ], [
+    a :Grandfather
+  ] .
+
+t00528:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Hiltje Timmerman" ;
+    :text "TODO: Hiltje Timmerman"
+  ] .
+

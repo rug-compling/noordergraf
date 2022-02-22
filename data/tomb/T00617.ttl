@@ -1,0 +1,85 @@
+@prefix t00617: <https://noordergraf.rug.nl/tomb/T00617#> .
+
+tomb:T00617
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:04:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00617.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1644 ;
+      geo:long 6.7541
+    ] ;
+    :nd "+53.1644+006.7541"^^ll:
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00617:P1, t00617:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: pustplaats
+vom
+the pa
+wigerttrin
+get a @d:1829
+cct
+omen an4888
+maina
+echtgenoote
+sare de sono
+geh29 nachais
+overdo fal 1902
+anae
+onge
+829
+z
+""" .
+
+t00617:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y8M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1829-10-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-06-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wigert Prins" ;
+    :text "TODO: Wigert Prins"
+  ] .
+
+t00617:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y7M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1829-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1902-07-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Janke de Jonge" ;
+    :text "TODO: Janke de Jonge"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00617:P1
+  ] .
+

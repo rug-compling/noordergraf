@@ -1,0 +1,36 @@
+@prefix t00658: <https://noordergraf.rug.nl/tomb/T00658#> .
+
+tomb:T00658
+  a :Tomb ;
+  :text "TODO" ;
+  :image [
+    a :Photo ;
+    :file img:T00658.jpg ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dc:date "2022-01-30T12:16:15"^^xsd:dateTime ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1625 ;
+      geo:long 6.6144
+    ] ;
+    :nd "+53.1625+006.6144"^^ll:
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00658:P1 ;
+  :symbol [
+    a symbol:Frond
+  ] .
+
+t00658:P1
+  a :Female ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-01-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "H.G. KARSIES" ;
+    :text "TODO: "
+  ] .
+
+

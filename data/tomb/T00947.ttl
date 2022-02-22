@@ -1,0 +1,77 @@
+@prefix t00947: <https://noordergraf.rug.nl/tomb/T00947#> .
+
+tomb:T00947
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-21T13:18:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00947.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1383 ;
+      geo:long 7.1432
+    ] ;
+    :nd "+53.1383+007.1432"^^ll:
+  ] ;
+  :site site:NLgr9696xgOudeschans ;
+  :subject t00947:P1, t00947:P2 ;
+  :symbol [
+    a symbol:Tree
+  ], [
+    a symbol:Deer
+  ], [
+    a symbol:OakBranch
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: lustplaats
+ve
+fumes
+tantje
+weria
+geboren 19 janaa
+1822
+verleden 19december
+895.
+gefiefde teltsengote
+i tilters
+ville
+sas
+""" .
+
+t00947:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y11M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1822-01-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1895-12-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Hiddes Werda" ;
+    :text "TODO: Jantje Hiddes Werda"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00947:P2
+  ] .
+
+t00947:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Feiko Pieters van Heuvelen" ;
+    :text "TODO: Feiko Pieters van Heuvelen"
+  ] .
+

@@ -1,0 +1,85 @@
+@prefix t01003: <https://noordergraf.rug.nl/tomb/T01003#> .
+
+tomb:T01003
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-04T10:52:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01003.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1762 ;
+      geo:long 7.0952
+    ] ;
+    :nd "+53.1762+007.0952"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t01003:P1, t01003:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: 1
+rustplaats
+van
+frederik
+schutter
+gebie augibs7
+te veendam
+overlib dec1946
+te beerta
+sedert i2 feb.1939
+weduwnaarvan
+antke
+klaassens
+rust zacht
+""" .
+
+t01003:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y4M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-08-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-12-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Frederik Schutter" ;
+    :text "TODO: Frederik Schutter"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Beerta2759298 ;
+    :text "TODO: BEERTA"
+  ] ;
+  :relation [
+    a :Widower ;
+    :begin "1939-02-12"^^xsd:date ;
+    :target t01003:P2
+  ] .
+
+t01003:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Antke Klaassens" ;
+    :text "TODO: Antke Klaassens"
+  ] .
+

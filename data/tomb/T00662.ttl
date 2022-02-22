@@ -1,0 +1,64 @@
+@prefix t00662: <https://noordergraf.rug.nl/tomb/T00662#> .
+
+tomb:T00662
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:56:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00662.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0688 ;
+      geo:long 5.5240
+    ] ;
+    :nd "+53.0688+005.5240"^^ll:
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00662:P1, t00662:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: hier rust
+mine
+geliefde broeder
+arend j.
+faber
+geb. 12 nov.1869,
+overl. 27 juli 1943.
+s. faber
+""" .
+
+t00662:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y8M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-11-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-07-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Arend J. Faber" ;
+    :text "TODO: Arend J. Faber"
+  ] ;
+  :relation [
+    a :Brother ;
+    :target t00662:P2
+  ] .
+
+t00662:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "S. Faber" ;
+    :text "TODO: S. Faber"
+  ] .
+

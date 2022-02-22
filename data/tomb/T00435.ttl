@@ -1,0 +1,91 @@
+@prefix t00435: <https://noordergraf.rug.nl/tomb/T00435#> .
+
+tomb:T00435
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-02T11:50:34"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00435.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4789 ;
+      geo:long 6.1605
+    ] ;
+    :nd "+53.4789+006.1605"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :text "gez. 199"
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00435:P1, t00435:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rk
+rustplaats
+van onze gel man
+ΑΝ
+vader en grootvader
+thomas klostue
+geb.te schiermonnikoog
+jul 1966
+overl. aldaar
+20 dcl 1948
+echtgenoot van
+aaltje jansje visser
+mp3
+gez 195
+""" .
+
+t00435:C1
+  a :Island ;
+  :place place:Schiermonnikoog2747591 ;
+  :text "TODO: SCHIERMONNIKOOG" .
+
+t00435:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y3M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-07-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-10-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Thomas Klontje" ;
+    :text "TODO: Thomas Klontje"
+  ] ;
+  :placeOfBirth t00435:C1 ;
+  :placeOfDeath t00435:C1 ;
+  :relation [
+    a :Husband ;
+    :target t00435:P2
+  ], [
+    a :Father
+  ], [
+    a :Grandfather
+  ], [
+    a :Spouse ;
+    :target t00435:P2
+  ] .
+
+t00435:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Aaltje Jansje Visser" ;
+    :text "TODO: Aaltje Jansje Visser"
+  ] .
+

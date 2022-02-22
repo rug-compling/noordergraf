@@ -1,0 +1,106 @@
+@prefix t00653: <https://noordergraf.rug.nl/tomb/T00653#> .
+
+tomb:T00653
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T10:09:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00653.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1636 ;
+      geo:long 6.7546
+    ] ;
+    :nd "+53.1636+006.7546"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MAAR DE RECHTVAARDIGE \\ BETROUWT ZELFS IN \\ ZIJNEN DOOD."@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleProverbs ;
+      :chapter 14 ;
+      :verse "32"
+    ] ;
+    :text "Spr. 14.32"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00653:P1, t00653:P2, t00653:P3 ;
+  :symbol [
+    a symbol:Rose
+  ] ;
+  :text """TODO: 1
+1
+hier rust het
+stofelüt ayer schot
+vo
+andres plaak
+ehet ao 1864.
+catalog
+te kan tok
+tiar
+era bo
+b van
+rent
+அவகேயே
+friedr klevelinga
+der
+1
+maar de rechtvaardige
+betrouwt zelfs in
+zijnen dood
+""" .
+
+t00653:C1
+  a :Hamlet ;
+  :place place:Kalkwijk2753130 ;
+  :text "TODO: KALKWIJK" .
+
+t00653:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y8M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-05-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Andries Blaak" ;
+    :text "TODO: Andries Blaak"
+  ] ;
+  :placeOfBirth t00653:C1 ;
+  :placeOfDeath t00653:C1 ;
+  :relation [
+    a :Widower ;
+    :target t00653:P2
+  ], [
+    a :Spouse ;
+    :target t00653:P3
+  ] .
+
+t00653:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Pietertje Drent" ;
+    :text "TODO: Pietertje Drent"
+  ] .
+
+t00653:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Grietke Kleveringa" ;
+    :text "TODO: Grietke Kleveringa"
+  ] .
+

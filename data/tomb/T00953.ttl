@@ -1,0 +1,79 @@
+@prefix t00953: <https://noordergraf.rug.nl/tomb/T00953#> .
+
+tomb:T00953
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-25T09:28:38"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00953.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1201 ;
+      geo:long 6.6587
+    ] ;
+    :nd "+53.1201+006.6587"^^ll:
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00953:P1 ;
+  :text """TODO: van
+rustplaats.
+reina jantina
+geb te noordlaren
+24 jan. 1896
+over noordlaren
+21. febr. 1896
+dochtertje von
+j. de lange e, m hommes
+1.
+.
+""" .
+
+t00953:C1
+  a :Village ;
+  :place place:Noordlaren2749857 ;
+  :text "TODO: NOORDLAREN" .
+
+t00953:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1896-02-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Reina Jantina" ;
+    :text "TODO: Reina Jantina"
+  ] ;
+  :placeOfBirth t00953:C1 ;
+  :placeOfDeath t00953:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00953:P2, t00953:P3
+  ] .
+
+t00953:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "J. de Lange" ;
+    :text "TODO: J. de Lange"
+  ] .
+
+t00953:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "M. Hommes" ;
+    :text "TODO: M. Hommes"
+  ] .
+

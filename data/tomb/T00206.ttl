@@ -1,0 +1,66 @@
+@prefix t00206: <https://noordergraf.rug.nl/tomb/T00206#> .
+
+tomb:T00206
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:58:17"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00206.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2223 ;
+      geo:long 6.6365
+    ] ;
+    :nd "+53.2223+006.6365"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00206:P1 ;
+  :symbol [
+    a symbol:Book
+  ] ;
+  :text """TODO: kathat
+mindennis run
+fan girrits
+rokos
+ben 1803 to 1857
+indrapur dosjeng
+wa
+eur
+yel. 28 arad
+@
+""" .
+
+t00206:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y9M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1784-03-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1862-01-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Gerrits Rijkens" ;
+    :text "TODO: Jan Gerrits Rijkens"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :begin "1803"^^xsd:gYear ;
+    :end "1857"^^xsd:gYear ;
+    :hisco hisco:13320 ;
+    :location [
+      a :Village ;
+      :place place:WeheDenHoorn2744898 ;
+      :text "TODO: WEHE"
+    ] ;
+    :wordnet "TODO: Teacher.n.01"
+  ] .
+

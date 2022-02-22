@@ -1,0 +1,64 @@
+@prefix t00648: <https://noordergraf.rug.nl/tomb/T00648#> .
+
+tomb:T00648
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-23T09:51:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00648.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1645 ;
+      geo:long 6.7544
+    ] ;
+    :nd "+53.1645+006.7544"^^ll:
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00648:P1, t00648:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+samue,
+de boer
+geb.io jan.1787
+overl.30 oct 1880%
+echtgenoot van
+d.j.reinders
+""" .
+
+t00648:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P93Y9M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1787-01-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-10-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Samuel C. de Boer" ;
+    :text "TODO: Samuel C. de Boer"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00648:P2
+  ] .
+
+t00648:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Dievertje J. Reinders" ;
+    :text "TODO: Dievertje J. Reinders"
+  ] .
+

@@ -1,0 +1,79 @@
+@prefix t00955: <https://noordergraf.rug.nl/tomb/T00955#> .
+
+tomb:T00955
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-25T09:23:17"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00955.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1202 ;
+      geo:long 6.6592
+    ] ;
+    :nd "+53.1202+006.6592"^^ll:
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00955:P1, t00955:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: toitlaat
+poem
+ne
+jan
+houwing
+gekle ilimmen
+gde aurt 1831
+overd, aldar
+a
+122 marta16
+woeder van
+berendina
+koers
+w
+hithree
+וין דיזיין
+""" .
+
+t00955:C1
+  a :Village ;
+  :place place:Glimmen2755495 ;
+  :text "TODO: GLIMMEN" .
+
+t00955:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1831-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-03-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Houwing" ;
+    :text "TODO: Jan Houwing"
+  ] ;
+  :placeOfBirth t00955:C1 ;
+  :placeOfDeath t00955:C1 ;
+  :relation [
+    a :Widower ;
+    :target t00955:P2
+  ] .
+
+t00955:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Berendina Koers" ;
+    :text "TODO: Berendina Koers"
+  ] .
+

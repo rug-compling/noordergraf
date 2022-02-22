@@ -1,0 +1,132 @@
+@prefix t00004: <https://noordergraf.rug.nl/tomb/T00004#> .
+
+tomb:T00004
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-25T16:56:05"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00004.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1902 ;
+      geo:long 6.5932
+    ] ;
+    :nd "+53.1902+006.5932"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00004:P1, t00004:P2, t00004:P3 ;
+  :text """TODO: tietje spoelman
+geb, te groningen 27 oct. 1912
+overl. te groningen 28 juli 1933
+eenigste dochter van
+johs, spoelman
+.
+en f. spoelman_penninga
+johannes spoelman
+geb. te rohel 17 april 1871
+overl.te groningen 14 mei 1935
+gel echtgenoot van
+f. spoelman penninga
+frouktje penninga
+geb.te visvliet 17 oct 1876
+overl.tegroningen28 sept 1963
+gels echtgenote van
+johannes spoelman
+""" .
+
+t00004:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00004:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y9M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-07-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tietje Spoelman" ;
+    :text "TODO: Tietje Spoelman"
+  ] ;
+  :placeOfBirth t00004:C1 ;
+  :placeOfDeath t00004:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00004:P2, t00004:P3 ;
+    :text "eenigste dochter"
+  ] .
+
+t00004:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-04-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-05-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Johannes Spoelman" ;
+    :text "TODO: Johannes Spoelman"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Rohel2747984 ;
+    :text "TODO: ROHEL"
+  ] ;
+  :placeOfDeath t00004:C1 ;
+  :relation [
+    a :Husband ;
+    :target t00004:P3
+  ] .
+
+t00004:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y11M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-10-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-09-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Frouktje Spoelman-Penninga" ;
+    :text "f. spoelman-penninga", "frouktje penninga"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Visvliet2745471 ;
+    :text "TODO: VISVLIET"
+  ] ;
+  :placeOfDeath t00004:C1 ;
+  :relation [
+    a :Wife ;
+    :target t00004:P2
+  ] .
+

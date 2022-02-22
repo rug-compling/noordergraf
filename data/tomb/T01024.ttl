@@ -1,0 +1,69 @@
+@prefix t01024: <https://noordergraf.rug.nl/tomb/T01024#> .
+
+tomb:T01024
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-17T18:27:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01024.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3808 ;
+      geo:long 6.8597
+    ] ;
+    :nd "+53.3808+006.8597"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "'T STOF VAN EEN ZESTAL SPRUITEN RUSTEN HIER IN'T KOELE GRAF, GOD WIL HUN 'S HEMELS POORT ONTSLUITEN GOD, DIE HUN 'T LEVEN GAF."@nld
+  ] ;
+  :site site:NLgr9906ppBierum ;
+  :subject t01024:P1 ;
+  :symbol [
+    a symbol:Butterfly
+  ], [
+    a symbol:Scythe
+  ], [
+    a symbol:Symbol
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: terchdachteni
+van
+harmienameijer
+ceb.den8december
+joaj.overldens
+octoberj860.
+**
+tstof van een zes
+tal spruitenrus
+ten hierin't koel
+craf, cod wil hun
+shemels poort onth
+sluitengod, die hun
+'t leven cap
+at
+""" .
+
+t01024:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P18Y9M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1860-10-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harmiena Meijer" ;
+    :text "TODO: Harmiena Meijer"
+  ] .
+

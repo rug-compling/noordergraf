@@ -1,0 +1,82 @@
+@prefix t00054: <https://noordergraf.rug.nl/tomb/T00054#> .
+
+tomb:T00054
+  a :Tomb ;
+  :text """TODO: hier rusten
+onze lieve vrouw
+en moeder
+annechien bazuin
+* 6-9-1913 t 15-12-1968
+en onze lieve vader
+en grootvader
+gerrit bazuin
+* 14-12-1904 + 21-9.1978
+""" ;
+  :image [
+    dc:date "2019-09-20T17:46:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00054.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1625 ;
+      geo:long 6.6157
+    ] ;
+    :nd "+53.1625+006.6157"^^ll:
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00054:P1, t00054:P2 .
+
+t00054:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y3M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-09-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-12-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Annechien Bazuin" ;
+    :text "TODO: Annechien Bazuin"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00054:P2
+  ], [
+    a :Mother
+  ] .
+
+t00054:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y9M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1904-12-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-09-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit Bazuin" ;
+    :text "TODO: Gerrit Bazuin"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Grandfather
+  ] .
+

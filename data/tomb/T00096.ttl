@@ -1,0 +1,100 @@
+@prefix t00096: <https://noordergraf.rug.nl/tomb/T00096#> .
+
+tomb:T00096
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-24T15:13:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00096.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2057 ;
+      geo:long 6.5732
+    ] ;
+    :nd "+53.2057+006.5732"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "ONTBONDEN TE WORDEN EN MET CHRISTUS TE ZIJN, IS ZEER VERRE HET BESTE."
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00096:P1, t00096:P2 ;
+  :text """TODO: jakob karsten
+* ruinerwold
+20 3 1890
+a groningen
+30 - 12 1944
+echtgenoot van
+hanna alkema
+* harlingen
+29 - 11 - 1896
++ kampen
+28 -10 -1964
+ontbonden te worden en
+met christus te zun, is
+zeer verre het beste
+""" .
+
+t00096:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y9M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-03-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-12-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jakob Karsten" ;
+    :text "TODO: Jakob Karsten"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Ruinerwold2747828 ;
+    :text "TODO: RUINERWOLD"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] .
+
+t00096:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y10M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-10-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hanna Alkema" ;
+    :text "TODO: Hanna Alkema"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Harlingen2754817 ;
+    :text "TODO: HARLINGEN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Kampen2753106 ;
+    :text "TODO: KAMPEN"
+  ] .
+

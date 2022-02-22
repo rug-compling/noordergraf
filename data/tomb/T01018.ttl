@@ -1,0 +1,85 @@
+@prefix t01018: <https://noordergraf.rug.nl/tomb/T01018#> .
+
+tomb:T01018
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-04T10:41:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01018.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1749 ;
+      geo:long 7.0964
+    ] ;
+    :nd "+53.1749+007.0964"^^ll:
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t01018:P1 ;
+  :symbol [
+    a symbol:Butterfly
+  ], [
+    a symbol:Ouroboros
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:OakBranch
+  ] ;
+  :text """TODO: dr coacere
+valle
+geert harms
+kuiper.
+webde 28 mil829
+etter iden25 mei845
+la
+och
+200
+un
+harm dnjes
+kuipdr.
+en
+bja tonkens
+mandelden.
+""" .
+
+t01018:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P15Y10M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1829-06-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1845-05-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geert Harms Kuiper" ;
+    :text "TODO: Geert Harms Kuiper"
+  ] ;
+  :relation [
+    a :Son ;
+    :target t01018:P2, t01018:P3
+  ] .
+
+t01018:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Harm Enjes Kuiper" ;
+    :text "TODO: Harm Enjes Kuiper"
+  ] .
+
+t01018:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Eja Tonkens van Delden" ;
+    :text "TODO: Eja Tonkens van Delden"
+  ] .
+

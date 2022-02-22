@@ -1,0 +1,65 @@
+@prefix t00688: <https://noordergraf.rug.nl/tomb/T00688#> .
+
+tomb:T00688
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:16:26"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00688.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0673 ;
+      geo:long 5.5239
+    ] ;
+    :nd "+53.0673+005.5239"^^ll:
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00688:P1 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van
+aafke
+vrieswjk
+v.d.eems
+geboren te
+wommels
+15 september 1875
+overleden te
+bolsward
+8 december 1942
+""" .
+
+t00688:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y2M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-09-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-12-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aafke Vrieswijk-van der Eems" ;
+    :text "TODO: Aafke Vrieswijk-van der Eems"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Wommels2744191 ;
+    :text "TODO: WOMMELS"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Bolsward2758682 ;
+    :text "TODO: BOLSWARD"
+  ] .
+

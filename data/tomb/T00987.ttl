@@ -1,0 +1,92 @@
+@prefix t00987: <https://noordergraf.rug.nl/tomb/T00987#> .
+
+tomb:T00987
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-25T09:37:35"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00987.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1200 ;
+      geo:long 6.6593
+    ] ;
+    :nd "+53.1200+006.6593"^^ll:
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00987:P1 ;
+  :symbol [
+    a symbol:Rose
+  ] ;
+  :text """TODO: pusklach
+2
+c
+ol
+m
+jantje
+suichies
+geb. hedeland
+bu
+581932
+over enkelt
+ziekenhuuto
+coroningen
+115 1607 1032
+hebbenyre
+vran
+ir suichies.cn
+kv.bergen
+""" .
+
+t00987:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P3M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-02-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-05-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Suichies" ;
+    :text "TODO: Jantje Suichies"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:DePunt2757124 ;
+    :text "TODO: DE PUNT"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "in het ziekenhuis te Groningen"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00987:P2, t00987:P3
+  ] .
+
+t00987:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "R. Suichies" ;
+    :text "TODO: R. Suichies"
+  ] .
+
+t00987:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullname "K. van Bergen" ;
+    :text "TODO: K. van Bergen"
+  ] .
+

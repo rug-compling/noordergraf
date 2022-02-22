@@ -1,0 +1,106 @@
+@prefix t00484: <https://noordergraf.rug.nl/tomb/T00484#> .
+
+tomb:T00484
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:34:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00484.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2064 ;
+      geo:long 5.7691
+    ] ;
+    :nd "+53.2064+005.7691"^^ll:
+  ] ;
+  :picture [
+    a :Portrait ;
+    :theme t00484:P3
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "REQUIESCAT IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00484:P1, t00484:P2 ;
+  :symbol [
+    a symbol:Cross
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ] ;
+  :text """TODO: -11
+rustplaats
+van
+tekela schroor
+geb. 30 juni lass
+overl 24 mei 1927.
+en van
+andries koopal.
+te heerenveen 7 jun 1864
+tteleeuwarden 18 jom 1934
+r:tp
+""" .
+
+t00484:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y10M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1855-06-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-05-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tekela Schroor" ;
+    :text "TODO: Tekela Schroor"
+  ] .
+
+t00484:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-06-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-06-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Andries Koopal" ;
+    :text "TODO: Andries Koopal"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Heerenveen2754669 ;
+    :text "TODO: HEERENVEEN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Leeuwarden2751792 ;
+    :text "TODO: LEEUWARDEN"
+  ] .
+
+t00484:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jezus" ;
+    :text "TODO: Jezus"
+  ] .
+

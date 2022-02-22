@@ -1,0 +1,75 @@
+@prefix t00422: <https://noordergraf.rug.nl/tomb/T00422#> .
+
+tomb:T00422
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-02T11:30:13"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00422.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4790 ;
+      geo:long 6.1602
+    ] ;
+    :nd "+53.4790+006.1602"^^ll:
+  ] ;
+  :picture [
+    a :Portrait ;
+    :theme t00422:P1
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00422:P1 ;
+  :text """TODO: martin van waning
+kunstschilder
+en
+beeldhouwer o. a.
+de schiermonnik
+geb.'s-gravenhage
+4 sept. 1687
+gest. schiermonnikoog
+7 juli 1972
+metinventioning
+""" .
+
+t00422:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y10M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-09-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-07-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Martin van Waning" ;
+    :text "TODO: Martin van Waning"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:16130 ;
+    :wordnet "TODO: Painter.n.01"
+  ], [
+    a :Occupation ;
+    :hisco hisco:16120 ;
+    :text "kunstschilder en beeldhouwer o.a. „de schiermonnik”" ;
+    :wordnet "TODO: Sculptor.n.01"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:DenHaag2747373 ;
+    :text "TODO: DEN HAAG"
+  ] ;
+  :placeOfDeath [
+    a :Island ;
+    :place place:Schiermonnikoog2747591 ;
+    :text "TODO: SCHIERMONNIKOOG"
+  ] .
+

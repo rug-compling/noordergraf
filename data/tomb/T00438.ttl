@@ -1,0 +1,93 @@
+@prefix t00438: <https://noordergraf.rug.nl/tomb/T00438#> .
+
+tomb:T00438
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-02T11:41:09"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00438.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4792 ;
+      geo:long 6.1610
+    ] ;
+    :nd "+53.4792+006.1610"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "VOOR ALTIJD SAMEN MET ELKAARS LIEFDE ALHIER BIJGEZET OP NO. 21"
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00438:P1, t00438:P2 ;
+  :text """TODO: abraham willem (wim)
+van den worm
+geb. te oegstgeest 23 dec.1917
+overl.ſeoegstgeest3 maart 2008
+voor altijd samen met elkaars liefde
+alhier bijgezet op no.21
+pieternella jacoba (ella)
+van den worm-goedbloed
+eb. te goes 15 juli 1920
+overlte warmond 20 aug 2006
+""" .
+
+t00438:C1
+  a :Town ;
+  :place place:Oegstgeest2749723 ;
+  :text "TODO: OEGSTGEEST" .
+
+t00438:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P90Y2M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-03-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Abraham Willem van den Worm" ;
+    :text "ABRAHAM WILLEM (Wim) van den WORM"
+  ] ;
+  :placeOfBirth t00438:C1 ;
+  :placeOfDeath t00438:C1 .
+
+t00438:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y1M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2006-08-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Pieternella Jacoba van den Worm-Goedbloed" ;
+    :text "PIETERNELLA JACOBA (Ella) van den WORM-GOEDBLOED"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Goes2755476 ;
+    :text "TODO: GOES"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Warmond2745012 ;
+    :text "TODO: WARMOND"
+  ] .
+

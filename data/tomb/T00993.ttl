@@ -1,0 +1,80 @@
+@prefix t00993: <https://noordergraf.rug.nl/tomb/T00993#> .
+
+tomb:T00993
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-04T10:51:23"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00993.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1762 ;
+      geo:long 7.0951
+    ] ;
+    :nd "+53.1762+007.0951"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t00993:P1, t00993:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats van
+engel vegt
+geb:3 dec. 1876 overl.16 april 1986
+en
+epke mulder
+geb: 17 maart 1872. overl. 28 nov. 1963
+53
+rust
+zacht
+""" .
+
+t00993:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P59Y4M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-12-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1936-04-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Engel Vegt" ;
+    :text "TODO: Engel Vegt"
+  ] .
+
+t00993:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y8M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-03-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-11-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Epke Mulder" ;
+    :text "TODO: Epke Mulder"
+  ] .
+

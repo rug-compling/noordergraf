@@ -1,0 +1,67 @@
+@prefix t01123: <https://noordergraf.rug.nl/tomb/T01123#> .
+
+tomb:T01123
+  a :Tomb ;
+  :image [
+    dc:date "2021-03-27T12:49:06"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01123.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2258 ;
+      geo:long 6.3532
+    ] ;
+    :nd "+53.2258+006.3532"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "Gij die mijn graf, Voorbij komt treden, Gedenk dan ook aan mij Dat ik eens hier beneden Zoo bent geweest als gij"@nld
+  ] ;
+  :site site:NLgr9822akNiekerk ;
+  :subject t01123:P1 ;
+  :symbol [
+    a symbol:OakBranch
+  ], [
+    a symbol:OliveBranch
+  ] ;
+  :text "TODO" .
+
+t01123:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y11M"^^xsd:duration
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1806"^^xsd:gYear ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1861-03-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Derk Pieters Wierenga" ;
+    :text "TODO: Derk Pieters Wierenga"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Nietap2750380 ;
+    :text "TODO: NIETAP"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t01123:P2
+  ] .
+
+t01123:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Trientje Hindriks Dijkstra" ;
+    :text "TODO: Trientje Hindriks Dijkstra"
+  ] .
+

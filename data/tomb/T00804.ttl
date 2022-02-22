@@ -1,0 +1,75 @@
+@prefix t00804: <https://noordergraf.rug.nl/tomb/T00804#> .
+
+tomb:T00804
+  a :Tomb ;
+  :image [
+    dc:date "2020-01-18T12:47:01"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00804.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2778 ;
+      geo:long 6.6938
+    ] ;
+    :nd "+53.2778+006.6938"^^ll:
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00804:P1, t00804:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats van
+rieno moeot,
+geb.9 sept.1884_overl. 7 juli 1943,
+geliefde echigenoot van
+berendje de witt.
+geb.23 septibb9_overl6 aug. 1945.
+""" .
+
+t00804:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y9M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-09-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-07-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Rieno Moedt" ;
+    :text "TODO: Rieno Moedt"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00804:P2
+  ] .
+
+t00804:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y10M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-09-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-08-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Berendje de Witt" ;
+    :text "TODO: Berendje de Witt"
+  ] .
+

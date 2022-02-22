@@ -1,0 +1,69 @@
+@prefix t00860: <https://noordergraf.rug.nl/tomb/T00860#> .
+
+tomb:T00860
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:34:24"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00860.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7756 ;
+      geo:long 6.8027
+    ] ;
+    :nd "+52.7756+006.8027"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT GELIEFDE ZUSTER"@nld
+  ] ;
+  :site site:NLdr7841cdSleen ;
+  :subject t00860:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: lt
+6.
+19
+hier bust
+hendrikje
+kamping.
+geb. te erm
+25 juni 1878
+overl. alda al
+19 deg. 1905.
+rust zaght gel-zuster
+""" .
+
+t00860:C1
+  a :Village ;
+  :place place:Erm2756040 ;
+  :text "TODO: ERM" .
+
+t00860:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P27Y5M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-06-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-12-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hendrikje Kamping" ;
+    :text "TODO: Hendrikje Kamping"
+  ] ;
+  :placeOfBirth t00860:C1 ;
+  :placeOfDeath t00860:C1 ;
+  :relation [
+    a :Sister
+  ] .
+

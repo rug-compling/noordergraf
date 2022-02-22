@@ -1,0 +1,58 @@
+@prefix t00801: <https://noordergraf.rug.nl/tomb/T00801#> .
+
+tomb:T00801
+  a :Tomb ;
+  :text """TODO: wier rus
+jos
+joseph maria
+mart ivus
+hermins
+11
+30.3.1949
+l00z\u00b7 l: lt
+et
+vaastrichtenaar
+noorderling
+europeaan
+""" ;
+  :image [
+    dc:date "2020-01-19T14:15:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00801.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1930 ;
+      geo:long 6.5936
+    ] ;
+    :nd "+53.1930+006.5936"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00801:P1 .
+
+t00801:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y3M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1949-03-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2007-07-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Joseph Maria Martinus Hermans" ;
+    :text "TODO: Joseph Maria Martinus Hermans"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :text "Maastrichtenaar\nNoorderling\nEuropeaan" ;
+    :place place:Maastricht2751283
+  ] .
+

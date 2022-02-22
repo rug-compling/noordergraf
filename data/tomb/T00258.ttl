@@ -1,0 +1,44 @@
+@prefix t00258: <https://noordergraf.rug.nl/tomb/T00258#> .
+
+tomb:T00258
+  a :Tomb ;
+  :text """TODO: 2
+jeroen bijl
+*7-5-1935 * 10-3-2008
+""" ;
+  :image [
+    dc:date "2019-10-13T14:27:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00258.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1907 ;
+      geo:long 6.5927
+    ] ;
+    :nd "+53.1907+006.5927"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00258:P1 .
+
+t00258:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y10M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1935-05-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2008-03-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jeroen Bijl" ;
+    :text "TODO: Jeroen Bijl"
+  ] .
+

@@ -1,0 +1,106 @@
+@prefix t01009: <https://noordergraf.rug.nl/tomb/T01009#> .
+
+tomb:T01009
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-05T12:12:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01009.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2443 ;
+      geo:long 6.6282
+    ] ;
+    :nd "+53.2443+006.6282"^^ll:
+  ] ;
+  :site site:NLgr9734atGroningen ;
+  :subject t01009:P1, t01009:P3 ;
+  :text """TODO: delous
+12
+pirall
+obke veldman
+fakte nourad
+autoll
+avarie si cela 1994
+der
+relana ரசார் avarthiatiitr
+na
+cite
+ach
+garden
+hotcer ddina bitkun
+takukury
+for maartetg
+Παση ΠΟΤΕ
+&
+octavoir
+h. rabariwtre ovllonin
+ce
+si
+area
+""" .
+
+t01009:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P50Y2M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-06-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geke Veldman" ;
+    :text "TODO: Geke Veldman"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Noorddijk2749981 ;
+    :text "TODO: NOORDDIJK"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t01009:P2
+  ] .
+
+t01009:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "H.R. Bakker" ;
+    :text "TODO: H.R. Bakker"
+  ] .
+
+t01009:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P17Y6M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-03-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1893-10-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lutgerdina Bakker" ;
+    :text "TODO: Lutgerdina Bakker"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t01009:P1, t01009:P2
+  ] .
+

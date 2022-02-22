@@ -1,0 +1,85 @@
+@prefix t00754: <https://noordergraf.rug.nl/tomb/T00754#> .
+
+tomb:T00754
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-28T12:46:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00754.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3110 ;
+      geo:long 6.9975
+    ] ;
+    :nd "+53.3110+006.9975"^^ll:
+  ] ;
+  :site site:NLgr9936btFarmsum ;
+  :subject t00754:P1, t00754:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: muptas
+200
+2
+lambertus
+jans faber
+heeflondermija
+te engelbert
+gopala
+bureten den
+11 maart1867
+62
+in den anderdon
+rur 76 laron
+bachtgenootran
+1.l.yandeken
+""" .
+
+t00754:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y"^^xsd:duration
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1791"^^xsd:gYear ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1867-03-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lambertus Jans Faber" ;
+    :text "TODO: Lambertus Jans Faber"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:13940 ;
+    :location [
+      a :Village ;
+      :place place:Engelbert2756097 ;
+      :text "TODO: ENGELBERT"
+    ] ;
+    :wordnet "TODO: Principal.n.02"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00754:P2
+  ] .
+
+t00754:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "H.L. van Dijken" ;
+    :text "TODO: H.L. van Dijken"
+  ] .
+

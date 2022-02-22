@@ -1,0 +1,66 @@
+@prefix t00690: <https://noordergraf.rug.nl/tomb/T00690#> .
+
+tomb:T00690
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:55:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00690.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0686 ;
+      geo:long 5.5238
+    ] ;
+    :nd "+53.0686+005.5238"^^ll:
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00690:P1 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: 205
+2
+van
+busiplaats
+pieter b. kingma
+geberen te hartiere
+den 22 janifesta
+everleden te horecard
+den 30 janua
+3
+1942
+i
+""" .
+
+t00690:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y7M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-06-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-01-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Pieter B. Kingma" ;
+    :text "TODO: Pieter B. Kingma"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Hartwerd2754799 ;
+    :text "TODO: HARTWERD"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Bolsward2758682 ;
+    :text "TODO: BOLSWARD"
+  ] .
+

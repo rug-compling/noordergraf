@@ -1,0 +1,53 @@
+@prefix t00399: <https://noordergraf.rug.nl/tomb/T00399#> .
+
+tomb:T00399
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-26T14:47:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00399.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2519 ;
+      geo:long 6.1443
+    ] ;
+    :nd "+53.2519+006.1443"^^ll:
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00399:P1 ;
+  :symbol [
+    a symbol:OakBranch
+  ], [
+    a symbol:Branch
+  ] ;
+  :text """TODO: there
+ruuro de haan
+* 30-1-1905
++ 4-3-1972
+†
+pe
+pumili walioshiraatit
+""" .
+
+t00399:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y1M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1906-01-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-03-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Ruurd de Haan" ;
+    :text "TODO: Ruurd de Haan"
+  ] .
+

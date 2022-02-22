@@ -1,0 +1,76 @@
+@prefix t00381: <https://noordergraf.rug.nl/tomb/T00381#> .
+
+tomb:T00381
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-26T15:07:28"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00381.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2519 ;
+      geo:long 6.1451
+    ] ;
+    :nd "+53.2519+006.1451"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DAN GA IK OP TOT GODS ALTAREN"
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00381:P1, t00381:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ] ;
+  :text """TODO: maaike mosselman_piebenga
+* 30-10-1896 t 26-5-1971
+jan mosselman
+* 25-11-1901 — 7-8-1974
+dan ga ik op tot gods altaren.
+""" .
+
+t00381:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y6M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-10-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1971-05-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Maaike Mosselman-Piebenga" ;
+    :text "TODO: Maaike Mosselman-Piebenga"
+  ] .
+
+t00381:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y8M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-11-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-08-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Mosselman" ;
+    :text "TODO: Jan Mosselman"
+  ] .
+

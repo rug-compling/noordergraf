@@ -1,0 +1,98 @@
+@prefix t00894: <https://noordergraf.rug.nl/tomb/T00894#> .
+
+tomb:T00894
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-07T14:34:46"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00894.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1725 ;
+      geo:long 6.3613
+    ] ;
+    :nd "+53.1725+006.3613"^^ll:
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00894:P1, t00894:P2 ;
+  :text """TODO: gedachtener van gedachtenico van
+jakob meles martha
+melessen leur ingh
+weduwnaar van interen chevron
+mathalaning |sk nebefen
+gebender oldekert gele felbert
+dent december 1792 | 23 januari 1995
+moverledenender | maldaarverleden
+midivadoden im 24 october
+21 september1869
+1841
+""" .
+
+t00894:C5
+  a :Village ;
+  :place place:Tolbert2746234 ;
+  :text "TODO: TOLBERT" .
+
+t00894:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y9M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1792-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1869-09-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jakob Meles Melessen" ;
+    :text "TODO: Jakob Meles Melessen"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Oldekerk2749658 ;
+    :text "onder Oldekerk"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Midwolde2750830 ;
+    :text "onder Midwolde"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t00894:P2
+  ] .
+
+t00894:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P52Y9M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1795-01-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1847-10-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Martha Leuringh" ;
+    :text "TODO: Martha Leuringh"
+  ] ;
+  :placeOfBirth t00894:C5 ;
+  :placeOfDeath t00894:C5 ;
+  :relation [
+    a :Wife ;
+    :target t00894:P1
+  ] .
+

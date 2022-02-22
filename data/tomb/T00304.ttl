@@ -1,0 +1,79 @@
+@prefix t00304: <https://noordergraf.rug.nl/tomb/T00304#> .
+
+tomb:T00304
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:30:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00304.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7159 ;
+      geo:long 6.4741
+    ] ;
+    :nd "+52.7159+006.4741"^^ll:
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00304:P1, t00304:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats van
+jantje prigge
+geb. 1 april 1868,
+overl. 28 jan. 1941.
+echtgenoote van
+albertus hagen
+en van
+albertus hagen
+geb. 2 juli 1868,
+overl. 26 febr. 1949.
+""" .
+
+t00304:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y9M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-04-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-01-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Prigge" ;
+    :text "TODO: Jantje Prigge"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00304:P2
+  ] .
+
+t00304:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y7M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-02-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Albertus Hagen" ;
+    :text "TODO: Albertus Hagen"
+  ] .
+

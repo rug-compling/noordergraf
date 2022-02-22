@@ -1,0 +1,125 @@
+@prefix t00901: <https://noordergraf.rug.nl/tomb/T00901#> .
+
+tomb:T00901
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-07T14:24:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00901.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1706 ;
+      geo:long 6.3658
+    ] ;
+    :nd "+53.1706+006.3658"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "ZIJ ZIJN GELUKKIG; HUN \\ HEENGAAN WAS VREDE"@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleJohn ;
+      :chapter 11 ;
+      :verse "25-26"
+    ] ;
+    :text "joh. 11:25-26."@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00901:P1, t00901:P2, t00901:P3 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ] ;
+  :text """TODO: lats va
+r cluvi
+derken
+e haren
+r. 18414
+ss1
+e tolbe
+rustplaats van
+liefke meek
+echtgenoote van
+p. steenbergen
+geb. te diepswal
+12 mei 1886,
+overl te foxwolde
+8 febr. 1917;
+en haar jongste
+lieveling
+roelfien
+slechts 3 dagen oud
+un: 1912
+noot va
+jong
+jo de dood
+len heer
+zij zijn gelukkig; hun
+heengaan was vrede
+joh.1925-26
+""" .
+
+t00901:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P30Y8M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-05-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-02-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Liefke Meek" ;
+    :text "TODO: Liefke Meek"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:Diepswal2756869 ;
+    :text "TODO: DIEPSWAL"
+  ] ;
+  :placeOfDeath [
+    a :Hamlet ;
+    :place place:Foxwolde2755850 ;
+    :text "TODO: FOXWOLDE"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00901:P3
+  ] .
+
+t00901:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P3D"^^xsd:duration ;
+    :text "slechts 3 dagen oud"
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Roelfien" ;
+    :text "TODO: Roelfien"
+  ] ;
+  :relation [
+    a :Child ;
+    :target t00901:P1 ;
+    :text "lieveling"
+  ] .
+
+t00901:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "P. Steenbergen" ;
+    :text "TODO: P. Steenbergen"
+  ] .
+

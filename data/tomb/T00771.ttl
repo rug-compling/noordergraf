@@ -1,0 +1,103 @@
+@prefix t00771: <https://noordergraf.rug.nl/tomb/T00771#> .
+
+tomb:T00771
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:04:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00771.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7821 ;
+      geo:long 6.8970
+    ] ;
+    :nd "+52.7821+006.8970"^^ll:
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00771:P1, t00771:P2, t00771:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: 03
+tergedachtenis van
+geertje wolter
+bos gebbos
+bos. geb
+to waidinte mardin
+gelebilge 270d
+1840overl|1837ouil
+te emmen temmen
+2 feb 1894|23dec
+echtgenoe. 1891 .
+te van h.
+vriend.
+""" .
+
+t00771:C1
+  a :Village ;
+  :place place:Weerdinge2744927 ;
+  :text "TODO: WEERDINGE" .
+
+t00771:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P53Y11M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1840-03-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-02-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geertje Bos" ;
+    :text "TODO: Geertje Bos"
+  ] ;
+  :placeOfBirth t00771:C1 ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Emmen2756136 ;
+    :text "TODO: EMMEN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00771:P2
+  ] .
+
+t00771:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "H. Vriend" ;
+    :text "TODO: H. Vriend"
+  ] .
+
+t00771:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y1M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891-12-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wolter Bos" ;
+    :text "TODO: Wolter Bos"
+  ] ;
+  :placeOfBirth t00771:C1 ;
+  :placeOfDeath t00771:C1 .
+

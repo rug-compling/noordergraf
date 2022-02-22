@@ -1,0 +1,92 @@
+@prefix t00437: <https://noordergraf.rug.nl/tomb/T00437#> .
+
+tomb:T00437
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-02T11:45:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00437.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4790 ;
+      geo:long 6.1608
+    ] ;
+    :nd "+53.4790+006.1608"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "ALS MENS WAS JE UNIEK ZOALS JE WAS \\ WIE JE WAS, DAT BLIJFT \\ WE MISSEN JE HEEL ERG"
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00437:P1, t00437:P2 ;
+  :symbol [
+    a symbol:Car
+  ] ;
+  :text """TODO: the
+in liefde herdenken wij
+mijn lieve man
+en zorgzame vader
+henk drent
+* 22_1_1925 * 7_1_1990
+tab
+en onze lieve zorgzame moeder
+wilhelmina geertruida budde
+x 26-5-1931
+† 17-3-2005
+als mens was je uniek zoals je was
+wie je was, dat blijft
+wij missen je heel erg
+""" .
+
+t00437:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y11M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1925-01-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1990-01-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Henk Drent" ;
+    :text "TODO: Henk Drent"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Husband ;
+    :target t00437:P2
+  ] .
+
+t00437:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y9M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1931-05-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2005-03-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wilhelmina Geertruida Budde" ;
+    :text "TODO: Wilhelmina Geertruida Budde"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+

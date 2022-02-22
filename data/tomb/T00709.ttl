@@ -1,0 +1,87 @@
+@prefix t00709: <https://noordergraf.rug.nl/tomb/T00709#> .
+
+tomb:T00709
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:44:02"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00709.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7813 ;
+      geo:long 6.9007
+    ] ;
+    :nd "+52.7813+006.9007"^^ll:
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00709:P1, t00709:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rusten
+onze lieve
+ouders
+jan
+katuin
+geb. april
+1857
+overl. zandu.
+1926
+en
+harmina
+hofkamp
+geb. 25oct
+1856
+duerl1htfebr
+1929
+""" .
+
+t00709:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y7M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-11-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jan Katuin" ;
+    :text "TODO: Jan Katuin"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00709:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y3M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-10-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-02-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harmina Hofkamp" ;
+    :text "TODO: Harmina Hofkamp"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

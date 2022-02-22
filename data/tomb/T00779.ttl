@@ -1,0 +1,91 @@
+@prefix t00779: <https://noordergraf.rug.nl/tomb/T00779#> .
+
+tomb:T00779
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T12:59:20"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00779.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7819 ;
+      geo:long 6.8978
+    ] ;
+    :nd "+52.7819+006.8978"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MOEDER"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00779:P1, t00779:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: austplaats
+van
+trientje
+blide
+gebtevlagtwedde
+18 sept
+. 1867
+overlteden
+oever
+19 april 1933
+wedune
+van
+geert oevermans.
+t kuik
+1710 45
+nijhof
+21932
+rust zacht
+lieve moeder.
+""" .
+
+t00779:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y7M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-09-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-04-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Trientje Blide" ;
+    :text "TODO: Trientje Blide"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Vlagtwedde2745461 ;
+    :text "TODO: VLAGTWEDDE"
+  ] ;
+  :placeOfDeath [
+    a :Hamlet ;
+    :place place:DenOever2757195 ;
+    :text "TODO: DEN OEVER"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00779:P2
+  ], [
+    a :Mother
+  ] .
+
+t00779:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Geert Oevermans" ;
+    :text "TODO: Geert Oevermans"
+  ] .
+

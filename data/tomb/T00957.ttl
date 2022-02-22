@@ -1,0 +1,72 @@
+@prefix t00957: <https://noordergraf.rug.nl/tomb/T00957#> .
+
+tomb:T00957
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-25T09:23:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00957.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1202 ;
+      geo:long 6.6592
+    ] ;
+    :nd "+53.1202+006.6592"^^ll:
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00957:P1, t00957:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+an
+jans lutgers
+geb.te glimmen
+1. nov. 1865
+overl. aldaar
+28 dec. 1931.
+weduwnaar van
+lammechien houwing
+""" .
+
+t00957:C1
+  a :Village ;
+  :place place:Glimmen2755495 ;
+  :text "TODO: GLIMMEN" .
+
+t00957:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y1M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-11-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-12-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jans Lutgers" ;
+    :text "TODO: Jans Lutgers"
+  ] ;
+  :placeOfBirth t00957:C1 ;
+  :placeOfDeath t00957:C1 ;
+  :relation [
+    a :Widower ;
+    :target t00957:P2
+  ] .
+
+t00957:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Lammechien Houwing" ;
+    :text "TODO: Lammechien Houwing"
+  ] .
+

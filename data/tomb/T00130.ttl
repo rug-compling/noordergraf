@@ -1,0 +1,72 @@
+@prefix t00130: <https://noordergraf.rug.nl/tomb/T00130#> .
+
+tomb:T00130
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-01T09:56:48"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00130.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2061 ;
+      geo:long 6.5716
+    ] ;
+    :nd "+53.2061+006.5716"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00130:P1, t00130:P2 ;
+  :text """TODO: rustplaats
+van
+wesselina drenth
+geb te wildervank
+15 februari 1845
+overl te groningen
+18 februari 1933
+weduwe van
+u buttinger
+""" .
+
+t00130:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-02-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-02-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Wesselina Drenth" ;
+    :text "TODO: Wesselina Drenth"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Wildervank2744431 ;
+    :text "TODO: WILDERVANK"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00130:P2
+  ] .
+
+t00130:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "IJ. Buttinger" ;
+    :text "TODO: IJ. Buttinger"
+  ] .
+

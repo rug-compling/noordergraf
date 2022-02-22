@@ -1,0 +1,62 @@
+@prefix t01026: <https://noordergraf.rug.nl/tomb/T01026#> .
+
+tomb:T01026
+  a :Tomb ;
+  :image [
+    dc:date "2020-04-17T18:29:07"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T01026.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.3809 ;
+      geo:long 6.8595
+    ] ;
+    :nd "+53.3809+006.8595"^^ll:
+  ] ;
+  :site site:NLgr9906ppBierum ;
+  :subject t01026:P1 ;
+  :symbol [
+    a symbol:Butterfly
+  ], [
+    a symbol:WingedHourglass1
+  ] ;
+  :text """TODO: hier rust
+freerk jans
+hofman
+ceboren te
+sverum osn 17
+2
+soctober 1858 over
+leden aldaar
+den 7 augustus
+is04
+""" .
+
+t01026:C1
+  a :Village ;
+  :place place:Bierum2758983 ;
+  :text "TODO: BIERUM" .
+
+t01026:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P5Y9M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-10-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1864-08-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Freerk Jans Hofman" ;
+    :text "TODO: Freerk Jans Hofman"
+  ] ;
+  :placeOfBirth t01026:C1 ;
+  :placeOfDeath t01026:C1 .

@@ -1,0 +1,104 @@
+@prefix t00277: <https://noordergraf.rug.nl/tomb/T00277#> .
+
+tomb:T00277
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-16T16:57:12"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00277.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4038 ;
+      geo:long 6.7491
+    ] ;
+    :nd "+53.4038+006.7491"^^ll:
+  ] ;
+  :site site:NLgr9985scOosternieland ;
+  :subject t00277:P1, t00277:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: me
+n:.
+rustplaats van
+onze lieve vrouw en moeder
+barbertje bouna
+tk-5190 te godlinze
+87-19 go te oostermieland
+geliefde echtgenote van
+ΕΕ
+egbert de vries
+aug 1899 te yozandt
+3221978
+te oosternieland
+""" .
+
+t00277:C2
+  a :Village ;
+  :place place:Oosternieland2749429 ;
+  :text "TODO: OOSTERNIELAND" .
+
+t00277:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P59Y2M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-07-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Barbertje Bouma" ;
+    :text "TODO: Barbertje Bouma"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Godlinze2755489 ;
+    :text "TODO: GODLINZE"
+  ] ;
+  :placeOfDeath t00277:C2 ;
+  :relation [
+    a :Wife ;
+    :target t00277:P2
+  ], [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t00277:P2
+  ] .
+
+t00277:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y4M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-09-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-02-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Egbert de Vries" ;
+    :text "TODO: Egbert de Vries"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:TZandt2746027 ;
+    :text "TODO: 'T ZANDT"
+  ] ;
+  :placeOfDeath t00277:C2 .
+

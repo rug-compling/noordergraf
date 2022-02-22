@@ -1,0 +1,104 @@
+@prefix t00386: <https://noordergraf.rug.nl/tomb/T00386#> .
+
+tomb:T00386
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-26T15:02:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00386.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2517 ;
+      geo:long 6.1453
+    ] ;
+    :nd "+53.2517+006.1453"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 33 ;
+      :verse "12.15"
+    ] ;
+    :text "Ps 33:12.15."
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00386:P1, t00386:P2, t00386:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+steventje a
+sictzema
+even echtgenoot van
+jan w.reitsma,
+en laatst van
+janr.luinstra
+gefta reyonet
+zei
+straari/844,
+fewerlite buitenpt
+bail
+fanuari
+1910.
+ps 33:12.15
+""" .
+
+t00386:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y10M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-02-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1910-01-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Steventje A. Sietzema" ;
+    :text "TODO: Steventje A. Sietzema"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Twijzel2746052 ;
+    :text "TODO: TWIJZEL"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Buitenpost2758131 ;
+    :text "TODO: BUITENPOST"
+  ] ;
+  :relation t00386:R2, [
+    a :Spouse ;
+    :before t00386:R2 ;
+    :target t00386:P2
+  ] .
+
+t00386:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan W. Reitsma" ;
+    :text "TODO: Jan W. Reitsma"
+  ] .
+
+t00386:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Jan R. Luinstra" ;
+    :text "TODO: Jan R. Luinstra"
+  ] .
+
+t00386:R2
+  a :Spouse ;
+  :target t00386:P3 .
+

@@ -1,0 +1,75 @@
+@prefix t00376: <https://noordergraf.rug.nl/tomb/T00376#> .
+
+tomb:T00376
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:06:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00376.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0891 ;
+      geo:long 6.5607
+    ] ;
+    :nd "+53.0891+006.5607"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :subject t00376:P1, t00376:P2 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van
+pieter buring
+geb. 3 maart 207 te bunne
+dverl. 22. juni 1953 aldaar
+geliefde echtgenoot van
+gesiena bouwiena deelsnuder
+lt
+rust zacht
+""" .
+
+t00376:C1
+  a :Village ;
+  :place place:Bunne2758108 ;
+  :text "TODO: BUNNE" .
+
+t00376:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P46Y3M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-03-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-06-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Pieter Buring" ;
+    :text "TODO: Pieter Buring"
+  ] ;
+  :placeOfBirth t00376:C1 ;
+  :placeOfDeath t00376:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00376:P2
+  ] .
+
+t00376:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Gesiena Bouwina Deelsnijder" ;
+    :text "TODO: Gesiena Bouwina Deelsnijder"
+  ] .
+

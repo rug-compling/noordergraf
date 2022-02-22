@@ -1,0 +1,83 @@
+@prefix t00274: <https://noordergraf.rug.nl/tomb/T00274#> .
+
+tomb:T00274
+  a :Tomb ;
+  :text """TODO: rustplats
+van onze liene sian en vider
+tueri nerguet
+26dbis 21431bgd
+echten. iana wolthuis
+en onze ziet empeder
+antolthuis
+19
+921968
+""" ;
+  :image [
+    dc:date "2019-10-14T10:56:03"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00274.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2228 ;
+      geo:long 6.6377
+    ] ;
+    :nd "+53.2228+006.6377"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00274:P1, t00274:P2 .
+
+t00274:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-05-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-06-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tjerk Merguêt" ;
+    :text "TODO: Tjerk Merguêt"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00274:P2
+  ], [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00274:P2
+  ] .
+
+t00274:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y11M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-09-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-09-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Anna Wolthuis" ;
+    :text "TODO: Anna Wolthuis"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+

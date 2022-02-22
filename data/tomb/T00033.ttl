@@ -1,0 +1,61 @@
+@prefix t00033: <https://noordergraf.rug.nl/tomb/T00033#> .
+
+tomb:T00033
+  a :Tomb ;
+  :image [
+    dc:date "2019-09-27T17:57:34"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00033.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1627 ;
+      geo:long 6.6126
+    ] ;
+    :nd "+53.1627+006.6126"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00033:P1 ;
+  :symbol [
+    a symbol:Frond
+  ] ;
+  :text """TODO: aerats
+ntt eve
+年
+2008 b90e0er
+lavas に
+1902
+おかe-2
+soartised
+""" .
+
+t00033:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y2M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-01-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-03-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Klaas Hut" ;
+    :text "TODO: Klaas Hut"
+  ] ;
+  :relation [
+    a :Brother
+  ], [
+    a :Son
+  ] .
+

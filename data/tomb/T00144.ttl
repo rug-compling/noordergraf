@@ -1,0 +1,68 @@
+@prefix t00144: <https://noordergraf.rug.nl/tomb/T00144#> .
+
+tomb:T00144
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-02T10:29:02"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00144.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2062 ;
+      geo:long 6.5698
+    ] ;
+    :nd "+53.2062+006.5698"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HUN HEENGAAN WAS MET HUN HEILAND"
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00144:P1, t00144:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: <
+0
+hier rusten
+onze leve ouders
+elziena wiltens
+x 1940
+apro de groot
+1949
+hun heengaan was met hun heiland
+""" .
+
+t00144:P1
+  a :Female ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Elzina Wiltens" ;
+    :text "TODO: Elzina Wiltens"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+
+t00144:P2
+  a :Male ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Apko de Groot" ;
+    :text "TODO: Apko de Groot"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+

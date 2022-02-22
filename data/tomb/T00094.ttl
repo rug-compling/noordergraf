@@ -1,0 +1,93 @@
+@prefix t00094: <https://noordergraf.rug.nl/tomb/T00094#> .
+
+tomb:T00094
+  a :Tomb ;
+  :text """TODO: martje triezenberg
+angerman
+2416_1873
+21 110 -1941
+klaas triezenberg
+# 7-2 -- 1875
+* 31_12_1956
+hillechien triezenberg
+* 24.121881
+1 18_3_ 1970
+""" ;
+  :image [
+    dc:date "2019-09-24T15:17:42"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00094.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2061 ;
+      geo:long 6.5730
+    ] ;
+    :nd "+53.2061+006.5730"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00094:P1, t00094:P2, t00094:P3 .
+
+t00094:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y3M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-06-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-10-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Martje Triezenberg-Angerman" ;
+    :text "TODO: Martje Triezenberg-Angerman"
+  ] .
+
+t00094:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y10M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-02-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-12-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Klaas Triezenberg" ;
+    :text "TODO: Klaas Triezenberg"
+  ] .
+
+t00094:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y1M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-03-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Hillechien Triezenberg" ;
+    :text "TODO: Hillechien Triezenberg"
+  ] .
+

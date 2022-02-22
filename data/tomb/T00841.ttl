@@ -1,0 +1,79 @@
+@prefix t00841: <https://noordergraf.rug.nl/tomb/T00841#> .
+
+tomb:T00841
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-20T14:46:40"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00841.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2958 ;
+      geo:long 5.0655
+    ] ;
+    :nd "+53.2958+005.0655"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "NAAR JEZUS HEEN"@nld
+  ] ;
+  :site site:NLfr8899awOostVlieland ;
+  :subject t00841:P1, t00841:P2 ;
+  :text """TODO: naar
+jhaushcen
+olizyakgrsloot
+berg
+zeeschilderes
+18 deg: 1922
+in
+gooswinos gerardus
+akersloot
+oud-vige consul
+vannoorwegen enzynown
+ridder 25 klasse in
+de se olofs-orde
+van noorwegen
+16 ctober 1929
+""" .
+
+t00841:P1
+  a :Female ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-12-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Betzy Akersloot-Berg" ;
+    :text "TODO: Betzy Akersloot-Berg"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:16130 ;
+    :text "zeeschilderes" ;
+    :wordnet "TODO: Painter.n.01"
+  ] .
+
+t00841:P2
+  a :Male ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-10-16"^^xsd:date
+  ] ;
+  :property [
+    a :Decoration ;
+    :text "RIDDER 2e KLASSE IN DE St OLOFS-ORDE VAN NOORWEGEN"
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gooswinus Gerardus Akersloot" ;
+    :text "TODO: Gooswinus Gerardus Akersloot"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:20210 ;
+    :text "oud-vice consul van noorwegen en zweden" ;
+    :wordnet "TODO: Consul.n.01"
+  ] .
+

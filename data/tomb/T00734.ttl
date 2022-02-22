@@ -1,0 +1,89 @@
+@prefix t00734: <https://noordergraf.rug.nl/tomb/T00734#> .
+
+tomb:T00734
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:07:08"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00734.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7821 ;
+      geo:long 6.8975
+    ] ;
+    :nd "+52.7821+006.8975"^^ll:
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00734:P1, t00734:P2, t00734:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: with
+es van
+ouders
+endrik
+hilbra
+ct
+hier rust het stofluk
+overschot van
+mannes
+schirring
+geb. 13 dec. 1849
+overl 30 jan. 1935
+eerst echtgen.van
+grietien
+huizing
+en later van
+willemtje
+wiggerink
+""" .
+
+t00734:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y1M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1849-12-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-01-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Mannus Schering" ;
+    :text "TODO: Mannus Schering"
+  ] ;
+  :relation t00734:R1, t00734:R2 .
+
+t00734:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Grietien Huizing" ;
+    :text "TODO: Grietien Huizing"
+  ] .
+
+t00734:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Willemptje Wiggerink" ;
+    :text "TODO: Willemptje Wiggerink"
+  ] .
+
+t00734:R1
+  a :Wife ;
+  :before t00734:R2 ;
+  :target t00734:P2 .
+
+t00734:R2
+  a :Wife ;
+  :after t00734:R1 ;
+  :target t00734:P3 .
+

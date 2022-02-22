@@ -1,0 +1,99 @@
+@prefix t00671: <https://noordergraf.rug.nl/tomb/T00671#> .
+
+tomb:T00671
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:42:29"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00671.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0680 ;
+      geo:long 5.5221
+    ] ;
+    :nd "+53.0680+005.5221"^^ll:
+  ] ;
+  :quote t00671:V1, [
+    a :Quote ;
+    :text "IK BEN DE OPSTANDING EN HET LEVEN"@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00671:P1, t00671:P2 ;
+  :text """TODO: hier rusten
+onze lieve ouders
+en grootouders
+cornelis a de vries
+14-9-1891 t 15-4-1966
+en
+fetje elzinga
+11-6-1894 t 21-12-1958
+kinderen
+en kleinkinderen
+ik ben de opstanding
+en het leven
+joh 1.29
+25
+""" .
+
+t00671:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y7M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-09-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1966-04-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Cornelus A. de Vries" ;
+    :text "TODO: Cornelus A. de Vries"
+  ] ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+
+t00671:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y6M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-06-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-12-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Fetje Elzinga" ;
+    :text "TODO: Fetje Elzinga"
+  ] ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+
+t00671:V1
+  a :Quote ;
+  :reference [
+    a :BibleJohn ;
+    :chapter 25 ;
+    :verse "11"
+  ] ;
+  :text "TODO" .
+

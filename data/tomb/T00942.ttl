@@ -1,0 +1,78 @@
+@prefix t00942: <https://noordergraf.rug.nl/tomb/T00942#> .
+
+tomb:T00942
+  a :Tomb ;
+  :image [
+    dc:date "2020-03-21T13:22:33"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00942.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1385 ;
+      geo:long 7.1430
+    ] ;
+    :nd "+53.1385+007.1430"^^ll:
+  ] ;
+  :site site:NLgr9696xgOudeschans ;
+  :subject t00942:P1, t00942:P2 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:OakBranch
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: gustplaats
+l
+yan
+geertruida
+christina
+dieterman
+geb 24 juni1864
+overliu febr. 1945
+te oude schins
+reliefde
+gen ve ve
+berend
+jager
+""" .
+
+t00942:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y7M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-06-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-02-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geertruida Christina Dieterman" ;
+    :text "TODO: Geertruida Christina Dieterman"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Oudeschans2749010 ;
+    :text "TODO: OUDESCHANS"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00942:P2
+  ] .
+
+t00942:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Berend Jager" ;
+    :text "TODO: Berend Jager"
+  ] .
+

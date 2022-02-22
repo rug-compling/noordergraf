@@ -1,0 +1,53 @@
+@prefix t00345: <https://noordergraf.rug.nl/tomb/T00345#> .
+
+tomb:T00345
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-25T17:44:21"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00345.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0801 ;
+      geo:long 6.5726
+    ] ;
+    :nd "+53.0801+006.5726"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "INGRID HEEFT VOLUIT GELEEFD, ALS JONATHAN DE ZEEMEEUW"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00345:P1 ;
+  :symbol [
+    a symbol:Crow
+  ] ;
+  :text """TODO: ingrid jolanda kraai
+28-08-1958
+16-10-2007
+ingrid heeft voluit geleefd,
+als jonathan de zeemeeuw!
+""" .
+
+t00345:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P49Y1M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1958-08-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2007-10-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Iris Jolanda Kraai" ;
+    :text "TODO: Iris Jolanda Kraai"
+  ] .
+

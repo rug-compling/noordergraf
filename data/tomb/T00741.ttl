@@ -1,0 +1,79 @@
+@prefix t00741: <https://noordergraf.rug.nl/tomb/T00741#> .
+
+tomb:T00741
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-29T10:20:41"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00741.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1806 ;
+      geo:long 6.9690
+    ] ;
+    :nd "+53.1806+006.9690"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MIJ GENADE IS U GENOEG"@nld
+  ] ;
+  :site site:NLgr9679khScheemda ;
+  :subject t00741:P1, t00741:P2 ;
+  :symbol [
+    a symbol:Symbol
+  ] ;
+  :text """TODO: hier rust
+heiko
+brons
+gel to chaanda
+29 yan. 1861
+overl. adaar
+. 13 aug. 1950
+plude
+echtymcot van
+truntje smit
+mijne genade is
+u genoeg\"
+""" .
+
+t00741:C1
+  a :Village ;
+  :place place:Scheemda2747661 ;
+  :text "TODO: SCHEEMDA" .
+
+t00741:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y6M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-01-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-08-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Heiko Brons" ;
+    :text "TODO: Heiko Brons"
+  ] ;
+  :placeOfBirth t00741:C1 ;
+  :placeOfDeath t00741:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00741:P2
+  ] .
+
+t00741:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Trijntje Smit" ;
+    :text "TODO: Trijntje Smit"
+  ] .
+

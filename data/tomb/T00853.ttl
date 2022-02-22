@@ -1,0 +1,77 @@
+@prefix t00853: <https://noordergraf.rug.nl/tomb/T00853#> .
+
+tomb:T00853
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-15T15:38:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00853.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7757 ;
+      geo:long 6.8028
+    ] ;
+    :nd "+52.7757+006.8028"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "AL IS OP AARDE HET LEVEN \\ SCHOON \\ EENS ROEPT DE VADER \\ ONS ALLEN TOT ZIJN TROON"@nld
+  ], [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7841cdSleen ;
+  :subject t00853:P1, t00853:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: roereplaas
+splaats van
+roelfien
+oldenbeuving
+overl. te erm
+den 13 februari mare
+1919
+von
+echtgenote ve
+thijs dijks
+-
+qe aarde het leven
+a is
+al
+schoon
+eens rogut de reeder
+ons allen het zijn hoon
+rust zacht
+""" .
+
+t00853:P1
+  a :Female ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-02-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Roelfien Oldenbeuving" ;
+    :text "TODO: Roelfien Oldenbeuving"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Erm2756040 ;
+    :text "TODO: ERM"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00853:P2
+  ] .
+
+t00853:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Thijs Dijks" ;
+    :text "TODO: Thijs Dijks"
+  ] .
+

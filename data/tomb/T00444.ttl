@@ -1,0 +1,82 @@
+@prefix t00444: <https://noordergraf.rug.nl/tomb/T00444#> .
+
+tomb:T00444
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-02T11:31:44"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00444.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.4792 ;
+      geo:long 6.1601
+    ] ;
+    :nd "+53.4792+006.1601"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 103 ;
+      :verse "8"
+    ] ;
+    :text "Ps. 103:8"
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00444:P1, t00444:P2, t00444:P3 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: et
+hier rusten
+onze schoolmakkers
+boukeenjacob
+teerdstra.
+onsdroef ontvallen
+op 22 aug 28
+9.103:2
+de kinderen der
+sha. school
+""" .
+
+t00444:P1
+  a :Male ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-08-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Bouke Teerdstra" ;
+    :text "TODO: Bouke Teerdstra"
+  ] ;
+  :relation [
+    a :Schoolmakker ;
+    :target t00444:P3
+  ] .
+
+t00444:P2
+  a :Male ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-08-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jacob Teerdstra" ;
+    :text "TODO: Jacob Teerdstra"
+  ] ;
+  :relation [
+    a :Schoolmakker ;
+    :target t00444:P3
+  ] .
+
+t00444:P3
+  a :Person ;
+  :text "de Kinderen der Chr. School." .
+

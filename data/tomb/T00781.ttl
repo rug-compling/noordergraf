@@ -1,0 +1,93 @@
+@prefix t00781: <https://noordergraf.rug.nl/tomb/T00781#> .
+
+tomb:T00781
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T12:58:50"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00781.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7819 ;
+      geo:long 6.8978
+    ] ;
+    :nd "+52.7819+006.8978"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE VROUW"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00781:P1, t00781:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ], [
+    a symbol:Scythe
+  ], [
+    a symbol:Frond
+  ], [
+    a symbol:Frond
+  ] ;
+  :text """TODO: m
+van
+rustplaats
+amhechien
+strating
+geb.15 van 1859
+te noordbarge
+overl.25 sept.1918
+tedalen
+geliefde
+echtgenoote van
+h.christiaans
+rust zacht
+lieve uroun
+""" .
+
+t00781:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P59Y8M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-01-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-09-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lammechien Strating" ;
+    :text "TODO: Lammechien Strating"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Noordbarge2749996 ;
+    :text "TODO: NOORDBARGE"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Dalen2757857 ;
+    :text "TODO: DALEN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00781:P2
+  ], [
+    a :Wife ;
+    :target t00781:P2
+  ] .
+
+t00781:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Heije Christiaans" ;
+    :text "TODO: Heije Christiaans"
+  ] .
+

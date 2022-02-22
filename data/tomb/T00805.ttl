@@ -1,0 +1,82 @@
+@prefix t00805: <https://noordergraf.rug.nl/tomb/T00805#> .
+
+tomb:T00805
+  a :Tomb ;
+  :image [
+    dc:date "2020-01-18T13:13:18"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00805.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2779 ;
+      geo:long 6.6936
+    ] ;
+    :nd "+53.2779+006.6936"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HIER LIGT HAAR STOFFE \\ LIJK OVERSCHOT INT KILLE \\ GRAF TER NEDER. MOCHT \\ TOCH HAAR ZIELE ZIJN BIJ \\ GOD DAN WAS HAAR \\ HEENGAAN VREDE!"@nld
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00805:P1, t00805:P2 ;
+  :symbol [
+    a symbol:Butterfly
+  ] ;
+  :text """TODO: percubobed mom
+htje: derks boer
+gehounket loor
+den 16 aube 1835
+adala tronden
+den 21. 1911
+wertanne van
+j.p. vink.
+hierlichaarstoffe
+lok overschot intrille
+crafter nedepsmocht
+toch haar ziele zijn bu
+cod dan was haar
+weencaan vrede!
+we
+""" .
+
+t00805:C1
+  a :Village ;
+  :place place:TenBoer2746491 ;
+  :text "TODO: TEN BOER" .
+
+t00805:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y4M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-05-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-09-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Etje Derks Boer" ;
+    :text "TODO: Etje Derks Boer"
+  ] ;
+  :placeOfBirth t00805:C1 ;
+  :placeOfDeath t00805:C1 ;
+  :relation [
+    a :Widow ;
+    :target t00805:P2
+  ] .
+
+t00805:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "J.P. Vink" ;
+    :text "TODO: J.P. Vink"
+  ] .
+

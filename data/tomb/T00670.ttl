@@ -1,0 +1,119 @@
+@prefix t00670: <https://noordergraf.rug.nl/tomb/T00670#> .
+
+tomb:T00670
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-14T13:43:55"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00670.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.0684 ;
+      geo:long 5.5225
+    ] ;
+    :nd "+53.0684+005.5225"^^ll:
+  ] ;
+  :quote t00670:V2 ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00670:P1, t00670:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: 和你
+14
+(rustpimatske
+van onze geliefde
+ouders
+st
+en gr-ouders
+rinze vanwieren
+geb.te oosthem
+r juli 186)
+overl alhier
+23 febr. 1928
+en van
+grietje
+molenmaker
+geb. te polsward
+15 sept. 1868
+overl alhier
+10 juli 1941,
+hunne kinderen
+orense 14 v.13
+""" .
+
+t00670:C2
+  a :City ;
+  :place place:Bolsward2758682 ;
+  :text "TODO: BOLSWARD" .
+
+t00670:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y7M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-07-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-02-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Rinze van Wieren" ;
+    :text "TODO: Rinze van Wieren"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Oosthem2749372 ;
+    :text "TODO: OOSTHEM"
+  ] ;
+  :placeOfDeath t00670:C2 ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+
+t00670:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y9M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-09-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-07-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Grietje Molenmaker" ;
+    :text "TODO: Grietje Molenmaker"
+  ] ;
+  :placeOfBirth t00670:C2 ;
+  :placeOfDeath t00670:C2 ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+
+t00670:V2
+  a :Quote ;
+  :reference [
+    a :BibleRevelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "TODO" .
+

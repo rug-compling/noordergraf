@@ -1,0 +1,152 @@
+@prefix t00327: <https://noordergraf.rug.nl/tomb/T00327#> .
+
+tomb:T00327
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:43:58"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00327.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7151 ;
+      geo:long 6.4740
+    ] ;
+    :nd "+52.7151+006.4740"^^ll:
+  ] ;
+  :quote t00327:V1, [
+    a :Quote ;
+    :reference [
+      a :BiblePsalms ;
+      :chapter 10 ;
+      :comment "onberijmd" ;
+      :verse "14"
+    ] ;
+    :target t00327:P4 ;
+    :text "ps.10:14 onb."
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00327:P1, t00327:P2, t00327:P3, t00327:P4 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier
+rust
+het stoffelijk
+overschot vaimijn
+geliefde moeder
+lucia
+erdt.
+geb.tehoogeveen
+30 juli 1844
+overl. aldaar
+19 jan. 1926.
+wed. van
+harm faas
+later van
+j. hutten.
+openb. 14:13b
+aaltje faas
+en van
+hun dochter
+aaltje faas
+geb.te hoogeveen
+25 aug. 1882
+oveal. aldaar
+26 april 1950,
+p5.10 ronb
+""" .
+
+t00327:C1
+  a :Town ;
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
+
+t00327:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y5M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-07-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-01-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Lucia Erdt" ;
+    :text "TODO: Lucia Erdt"
+  ] ;
+  :placeOfBirth t00327:C1 ;
+  :placeOfDeath t00327:C1 ;
+  :relation t00327:R3, [
+    a :Mother ;
+    :target t00327:P4
+  ], [
+    a :Widow ;
+    :before t00327:R3 ;
+    :target t00327:P2
+  ] .
+
+t00327:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Harm Faas" ;
+    :text "TODO: Harm Faas"
+  ] .
+
+t00327:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "J. Hutten" ;
+    :text "TODO: J. Hutten"
+  ] .
+
+t00327:P4
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y8M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-08-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-04-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aaltje Faas" ;
+    :text "TODO: Aaltje Faas"
+  ] ;
+  :placeOfBirth t00327:C1 ;
+  :placeOfDeath t00327:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00327:P1, t00327:P2
+  ] .
+
+t00327:R3
+  a :Widow ;
+  :target t00327:P3 .
+
+t00327:V1
+  a :Quote ;
+  :reference [
+    a :BibleRevelation ;
+    :chapter 14 ;
+    :verse "13B"
+  ] ;
+  :target t00327:P1 ;
+  :text "TODO" .
+

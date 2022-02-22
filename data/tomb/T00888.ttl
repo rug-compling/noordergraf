@@ -1,0 +1,128 @@
+@prefix t00888: <https://noordergraf.rug.nl/tomb/T00888#> .
+
+tomb:T00888
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-01T12:41:16"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00888.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2296 ;
+      geo:long 6.5504
+    ] ;
+    :nd "+53.2296+006.5504"^^ll:
+  ] ;
+  :quote t00888:V1 ;
+  :site site:NLgr9741acGroningen ;
+  :subject t00888:P1, t00888:P2, t00888:P3, t00888:P4 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rusten
+onze lieve moeder
+roberta
+margaretha
+woltjer
+* 4 mei 1864
+17 oct 1901
+geliefde echtgenot
+van sc siman
+eerder wed. van
+p.j. meijer
+en onze lieve
+broer en oom-
+robert meijer
+* 15 julie 1867
+* 24. juni 1953
+in het huis mijns
+vaders zijn vele
+woningen
+joh.14:2
+dubscl
+""" .
+
+t00888:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P37Y5M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1901-10-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Roberta Margaretha Woltjer" ;
+    :text "TODO: Roberta Margaretha Woltjer"
+  ] ;
+  :relation t00888:R2, [
+    a :Mother
+  ], [
+    a :Widow ;
+    :before t00888:R2 ;
+    :target t00888:P3
+  ] .
+
+t00888:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "S.C. Siman" ;
+    :text "TODO: S.C. Siman"
+  ] .
+
+t00888:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "P.J. Meijer" ;
+    :text "TODO: P.J. Meijer"
+  ] .
+
+t00888:P4
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y11M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-07-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-06-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Robert Meijer" ;
+    :text "TODO: Robert Meijer"
+  ] ;
+  :relation [
+    a :Brother
+  ], [
+    a :Uncle
+  ] .
+
+t00888:R2
+  a :Spouse ;
+  :target t00888:P2 .
+
+t00888:V1
+  a :Quote ;
+  :reference [
+    a :BibleJohn ;
+    :chapter 14 ;
+    :verse "2"
+  ] ;
+  :text "IN HET HUIS MIJNS VADERS ZIJN VELE WONINGEN"@nld .
+

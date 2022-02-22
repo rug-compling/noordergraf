@@ -1,0 +1,112 @@
+@prefix t00783: <https://noordergraf.rug.nl/tomb/T00783#> .
+
+tomb:T00783
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T12:58:19"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00783.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7818 ;
+      geo:long 6.8976
+    ] ;
+    :nd "+52.7818+006.8976"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DAT ZIJ MOGEN RUSTEN IN VREDE"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00783:P1, t00783:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ], [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: sulpladsen van
+harm
+luchien
+christiaans cerintaals
+ised
+cebula cobaly
+obat
+18
+oliba gvatele
+coral
+1881
+one.
+cele chordra van
+h.christiaans en l strating.
+dat zij mogen werden
+ut med
+flee
+""" .
+
+t00783:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P2Y8M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-04-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-12-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Harm Christiaans" ;
+    :text "TODO: Harm Christiaans"
+  ] ;
+  :relation [
+    a :Child ;
+    :target t00783:P3, t00783:P4
+  ] .
+
+t00783:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P4M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-08-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-12-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Luchien Christiaans" ;
+    :text "TODO: Luchien Christiaans"
+  ] ;
+  :relation [
+    a :Child ;
+    :target t00783:P3, t00783:P4
+  ] .
+
+t00783:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Heije Christiaans" ;
+    :text "TODO: Heije Christiaans"
+  ] .
+
+t00783:P4
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Lammechien Strating" ;
+    :text "TODO: Lammechien Strating"
+  ] .
+

@@ -1,0 +1,85 @@
+@prefix t00455: <https://noordergraf.rug.nl/tomb/T00455#> .
+
+tomb:T00455
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:57:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00455.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2066 ;
+      geo:long 5.7698
+    ] ;
+    :nd "+53.2066+005.7698"^^ll:
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00455:P1, t00455:P2 ;
+  :text """TODO: full
+gerhard
+brenninkmewer
+te leeuwarden
+25 oktober 1901
++ alda ar
+28 december 1978
+cecilia
+brenninkmeler
++te leeuwarden
+27 januari 1898
++ aldaar
+4. januari 1987
+entre
+""" .
+
+t00455:C1
+  a :City ;
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
+
+t00455:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y2M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-10-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-12-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerhard Brenninkmeijer" ;
+    :text "TODO: Gerhard Brenninkmeijer"
+  ] ;
+  :placeOfBirth t00455:C1 ;
+  :placeOfDeath t00455:C1 .
+
+t00455:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y11M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-01-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1987-01-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Cecilia Brenninkmeijer" ;
+    :text "TODO: Cecilia Brenninkmeijer"
+  ] ;
+  :placeOfBirth t00455:C1 ;
+  :placeOfDeath t00455:C1 .
+

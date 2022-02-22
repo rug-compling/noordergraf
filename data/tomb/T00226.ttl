@@ -1,0 +1,84 @@
+@prefix t00226: <https://noordergraf.rug.nl/tomb/T00226#> .
+
+tomb:T00226
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-08T14:41:10"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00226.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2229 ;
+      geo:long 6.6364
+    ] ;
+    :nd "+53.2229+006.6364"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00226:P1, t00226:P2 ;
+  :symbol [
+    a symbol:Hourglass
+  ], [
+    a symbol:Scythe
+  ], [
+    a symbol:InvertedTorch
+  ] ;
+  :text """TODO: 2
+sergednchtenisvan
+auktje velthuis
+geb. te guvelmanne
+den 27 october 1843
+oveel.te lisoningen
+den beri 1923 ,
+sedert 15 juli 1902
+.
+Ꭴ
+wedure van
+koop jans
+emmelkamp
+""" .
+
+t00226:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y3M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1923-02-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Auktje Velthuis" ;
+    :text "TODO: Auktje Velthuis"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:Euvelgunne2755982 ;
+    :text "TODO: EUVELGUNNE"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :begin "1902-07-15"^^xsd:date ;
+    :target t00226:P2
+  ] .
+
+t00226:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "Koop Jans Emmelkamp" ;
+    :text "TODO: Koop Jans Emmelkamp"
+  ] .
+

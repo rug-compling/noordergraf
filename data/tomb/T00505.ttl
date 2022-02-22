@@ -1,0 +1,113 @@
+@prefix t00505: <https://noordergraf.rug.nl/tomb/T00505#> .
+
+tomb:T00505
+  a :Tomb ;
+  :image [
+    dc:date "2019-11-09T14:39:30"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00505.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2070 ;
+      geo:long 5.7690
+    ] ;
+    :nd "+53.2070+005.7690"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "GEDENK IN UW GEBEDEN"
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00505:P1, t00505:P2, t00505:P3 ;
+  :symbol [
+    a symbol:Cross
+  ] ;
+  :text """TODO: awat
+gedenk in uwe gebeden
+helena r.m.dukhoff
+echtg van tam.fischer
+*14 oct. 1879 + 20 mei 1912
+en
+theodorus m.fischer
+laatst echtg van
+c.j.m.moogman
+29 oct. 1876 17 noy.1948
+en
+cathapinas.mhougman
+4 mei 1885 - 22 sept 1957
+""" .
+
+t00505:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P37Y7M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-10-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1917-05-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Helena R.M. Dijkhoff" ;
+    :text "TODO: Helena R.M. Dijkhoff"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :before t00505:R2 ;
+    :target t00505:P2
+  ] .
+
+t00505:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-10-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-11-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Theodorus M. Fischer" ;
+    :text "TODO: Theodorus M. Fischer"
+  ] ;
+  :relation t00505:R2 .
+
+t00505:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-05-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-09-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Catharina J.M. Hoogman" ;
+    :text "TODO: Catharina J.M. Hoogman"
+  ] .
+
+t00505:R2
+  a :Spouse ;
+  :target t00505:P3 .
+

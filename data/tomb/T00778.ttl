@@ -1,0 +1,62 @@
+@prefix t00778: <https://noordergraf.rug.nl/tomb/T00778#> .
+
+tomb:T00778
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-21T13:00:37"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00778.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7818 ;
+      geo:long 6.8970
+    ] ;
+    :nd "+52.7818+006.8970"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00778:P1 ;
+  :text """TODO: hier rust
+roelof ensing
+geb. te emmerhout
+31 aug. 1874
+overl. te groningen
+26 jan. 1927
+rust zacht.
+""" .
+
+t00778:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P52Y4M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-01-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Roelof Ensing" ;
+    :text "TODO: Roelof Ensing"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:Emmerhout2756128 ;
+    :text "TODO: EMMERHOUT"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] .
+

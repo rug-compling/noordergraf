@@ -1,0 +1,104 @@
+@prefix t00134: <https://noordergraf.rug.nl/tomb/T00134#> .
+
+tomb:T00134
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-02T10:42:11"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00134.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2069 ;
+      geo:long 6.5725
+    ] ;
+    :nd "+53.2069+006.5725"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00134:P1, t00134:P2, t00134:P3 ;
+  :text """TODO: ake sikkema
+geb.te warffum 20-11-1881
+overl.te groningen 25-1-1942.
+bentje
+westerbrink
+geb.te grootegast 19-3-1888
+overl.te groningen 25-4-1951
+laatst echtg.van j.doff
+""" .
+
+t00134:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00134:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y2M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-11-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-01-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Ake Sikkema" ;
+    :text "TODO: Ake Sikkema"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Warffum2745024 ;
+    :text "TODO: WARFFUM"
+  ] ;
+  :placeOfDeath t00134:C1 .
+
+t00134:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P63Y1M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-03-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-04-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Bentje Westerbrink" ;
+    :text "TODO: Bentje Westerbrink"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Grootegast2755204 ;
+    :text "TODO: GROOTEGAST"
+  ] ;
+  :placeOfDeath t00134:C1 ;
+  :relation t00134:R2, [
+    a :Wife ;
+    :before t00134:R2 ;
+    :target t00134:P1
+  ] .
+
+t00134:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullname "J. Doff" ;
+    :text "TODO: J. Doff"
+  ] .
+
+t00134:R2
+  a :Wife ;
+  :target t00134:P3 .
+

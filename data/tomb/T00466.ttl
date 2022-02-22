@@ -1,0 +1,72 @@
+@prefix t00466: <https://noordergraf.rug.nl/tomb/T00466#> .
+
+tomb:T00466
+  a :Tomb ;
+  :text """TODO: come
+cornelia atena de vries
+stegos 110-25196
+gerardus j. adema
+26-2-1893
+sil
+""" ;
+  :image [
+    dc:date "2019-11-09T14:48:49"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00466.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2072 ;
+      geo:long 5.7695
+    ] ;
+    :nd "+53.2072+005.7695"^^ll:
+  ] ;
+  :picture [
+    a :Portrait ;
+    :theme t00466:P1
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00466:P1, t00466:P2 .
+
+t00466:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P60Y7M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1903-06-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-02-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Cornelia Adema de Vries" ;
+    :text "TODO: Cornelia Adema de Vries"
+  ] .
+
+t00466:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P11M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1998-12-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1981-12-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerhardus J. Adema" ;
+    :text "TODO: Gerhardus J. Adema"
+  ] .
+

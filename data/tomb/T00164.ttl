@@ -1,0 +1,106 @@
+@prefix t00164: <https://noordergraf.rug.nl/tomb/T00164#> .
+
+tomb:T00164
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-04T10:57:53"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00164.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2054 ;
+      geo:long 6.5705
+    ] ;
+    :nd "+53.2054+006.5705"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00164:P1, t00164:P2, t00164:P3 ;
+  :symbol [
+    a symbol:Frond
+  ], [
+    a symbol:Ribbon
+  ] ;
+  :text """TODO: mier rusten
+frederik menno
+edens
+geb:2 juli 1898
+overl 3 jan. 1910
+tammo edens
+ger-22 febr.1871
+overl:2 aug. 1935
+-
+jeltje pare
+geb. 20 febr.1873
+overl.2 maart 1955
+weduire van
+tammo edens
+""" .
+
+t00164:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P11Y6M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-07-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1910-01-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Frederik Menno Edens" ;
+    :text "TODO: Frederik Menno Edens"
+  ] .
+
+t00164:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y5M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1871-02-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-08-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Tammo Edens" ;
+    :text "TODO: Tammo Edens"
+  ] .
+
+t00164:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-02-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-03-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Jeltje Paré" ;
+    :text "TODO: Jeltje Paré"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00164:P2
+  ] .
+

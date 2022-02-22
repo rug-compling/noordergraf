@@ -1,0 +1,99 @@
+@prefix t00310: <https://noordergraf.rug.nl/tomb/T00310#> .
+
+tomb:T00310
+  a :Tomb ;
+  :image [
+    dc:date "2019-10-19T14:17:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00310.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 52.7156 ;
+      geo:long 6.4735
+    ] ;
+    :nd "+52.7156+006.4735"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :text "gezang 178:1 en 3."
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00310:P1, t00310:P2, t00310:P3 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats van
+grietien lesschen
+geb.8.4.1890 ovl.9.6.1941
+echtg. van
+albert smeman
+en van
+albert smeman
+geb.3.3.1894 dvl.3.7.1976
+echtg. van ge luinge.
+gezang 18: en 3.
+:1
+""" .
+
+t00310:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y2M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-04-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-06-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Grietien Lesschen" ;
+    :text "TODO: Grietien Lesschen"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00310:P2
+  ] .
+
+t00310:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y4M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-03-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-07-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Albert Smeman" ;
+    :text "TODO: Albert Smeman"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00310:P3
+  ] .
+
+t00310:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullname "Gé Luinge" ;
+    :text "TODO: Gé Luinge"
+  ] .
+

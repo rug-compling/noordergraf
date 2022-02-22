@@ -1,0 +1,97 @@
+@prefix t00889: <https://noordergraf.rug.nl/tomb/T00889#> .
+
+tomb:T00889
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-01T12:15:32"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00889.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2305 ;
+      geo:long 6.5519
+    ] ;
+    :nd "+53.2305+006.5519"^^ll:
+  ] ;
+  :site site:NLgr9741acGroningen ;
+  :subject t00889:P1, t00889:P2 ;
+  :text """TODO: Խ
+predikon ccestrus
+telsscher diewer je
+issingherederik
+toatst predikant
+noordwolde
+beb 13 mer 1839
+15.
+5 10 js33
+poveri. 9. meart 1326
+19
+over | 2 april 1893
+schoenopten rechte van
+van
+de dorstius
+ds g. b sissingh.
+""" .
+
+t00889:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y10M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-05-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1893-04-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Geert Busscher Sissingh" ;
+    :prefix "Ds" ;
+    :text "TODO: Ds Geert Busscher Sissingh"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:14120 ;
+    :location [
+      a :Village ;
+      :place place:Noordwolde2749806 ;
+      :text "TODO: NOORDWOLDE"
+    ] ;
+    :wordnet "TODO: Preacher.n.01"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00889:P2
+  ] .
+
+t00889:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y9M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-05-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-03-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Diewertje Frederika Corstius" ;
+    :text "TODO: Diewertje Frederika Corstius"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00889:P1
+  ] .
+

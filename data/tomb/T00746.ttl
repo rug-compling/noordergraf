@@ -1,0 +1,89 @@
+@prefix t00746: <https://noordergraf.rug.nl/tomb/T00746#> .
+
+tomb:T00746
+  a :Tomb ;
+  :image [
+    dc:date "2019-12-29T10:18:43"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00746.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.1807 ;
+      geo:long 6.9687
+    ] ;
+    :nd "+53.1807+006.9687"^^ll:
+  ] ;
+  :site site:NLgr9679khScheemda ;
+  :subject t00746:P1, t00746:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+aeilko
+mulier
+ger. te eexta
+20 april 1864
+overl. tescheemda
+5 juli 1943
+echtgenoot van
+ukje
+twiest
+geb.tewoldendorp
+de
+12 nov. 1858
+""" .
+
+t00746:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y2M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-07-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Aeilko Mulder" ;
+    :text "TODO: Aeilko Mulder"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Eexta2756316 ;
+    :text "TODO: EEXTA"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Scheemda2747661 ;
+    :text "TODO: SCHEEMDA"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00746:P2
+  ] .
+
+t00746:P2
+  a :Female ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-11-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "IJkje Twiest" ;
+    :text "TODO: IJkje Twiest"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Woldendorp2744228 ;
+    :text "TODO: WOLDENDORP"
+  ] .
+

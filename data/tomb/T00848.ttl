@@ -1,0 +1,113 @@
+@prefix t00848: <https://noordergraf.rug.nl/tomb/T00848#> .
+
+tomb:T00848
+  a :Tomb ;
+  :image [
+    dc:date "2020-02-20T14:41:00"^^xsd:dateTime ;
+    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    a :Photo ;
+    :file img:T00848.jpg ;
+    :geo [
+      a geo:Point ;
+      geo:lat 53.2955 ;
+      geo:long 5.0653
+    ] ;
+    :nd "+53.2955+005.0653"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text """Dat zij rusten mogen in den
+Heere den Heiland."""@nld ;
+  ] , [
+    a :Quote ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :text "Gez. 263 vers 4"@nld
+  ] ;
+  :site site:NLfr8899awOostVlieland ;
+  :subject t00848:P1, t00848:P2 ;
+  :symbol [
+    a symbol:WeepingWillow
+  ] ;
+  :text """TODO: toted
+engel
+cop!
+winert
+i. ovim.c
+an
+si vex nl
+on
+exik je.
+see
+en te vlie
+orillo
+del teu
+ant
+hier rusten
+onze geliefde ouders
+en grootouders
+bregje bakker,
+geb. 9 oct. 1854,
+overl. 4 oct. 1937.
+en
+gerrit krijtenburg
+geb. 7 sept. 1854,
+overl. 19 mei 1944.
+dat zi rusten magen in den
+heere den heiland.
+gez. 263 vers 4
+""" .
+
+t00848:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y11M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-10-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-10-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Bregje Bakker" ;
+    :text "TODO: Bregje Bakker"
+  ] ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+
+t00848:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y8M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1854-09-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-05-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullname "Gerrit Krijtenburg" ;
+    :text "TODO: Gerrit Krijtenburg"
+  ] ;
+  :relation [
+    a :Grandparent
+  ], [
+    a :Parent
+  ] .
+
