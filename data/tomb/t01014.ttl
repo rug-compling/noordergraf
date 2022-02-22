@@ -57,17 +57,17 @@ t01014:p1
     :text "IMKE JANS NIEHOF"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Garmerwolde2755728 ;
     :text "TODO: GARMERWOLDE"
   ] ;
   :placeOfDeath [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Noorddijk2749981 ;
     :text "TODO: NOORDDIJK"
   ] ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t01014:p2
   ] .
 
@@ -86,14 +86,14 @@ t01014:p3
     :number 4
   ] ;
   :relation [
-    a :Child.n.02 ;
+    a :Child ;
     :target t01014:p1
   ] .
 
 t01014:p4
   a :Female ;
   :relation [
-    a :Daughter-in-law.n.01
+    a :DaughterInLaw
   ] .
 
 t01014:p5
@@ -103,7 +103,7 @@ t01014:p5
     :number 3
   ] ;
   :relation [
-    a :Child.n.02 ;
+    a :Child ;
     :comment "overleden" ;
     :target t01014:p1
   ] .

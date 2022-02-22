@@ -32,7 +32,7 @@ van onnen en haren.
 """ .
 
 t00021:g1
-  a :Personnel.n.01 ;
+  a :Personnel ;
   :occupation [
     a :Occupation ;
     :organisation t00021:o
@@ -41,11 +41,11 @@ t00021:g1
 t00021:o
   a :Company.n.01 ;
   :location [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Onnen2749588 ;
     :text "TODO: ONNEN"
   ], [
-    a :Town.n.01 ;
+    a :Town ;
     :place place:Haren2754841 ;
     :text "TODO: HAREN"
   ] ;
@@ -70,7 +70,7 @@ t00021:p1
     :wordnet "TODO: Engineer.n.02"
   ] ;
   :relation [
-    a :Friend.n.01 ;
+    a :Friend ;
     :target t00021:g1
   ] .
 

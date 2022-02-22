@@ -66,10 +66,10 @@ t00048:p1
     :text "TODO: IJmkje Wielinga"
   ] ;
   :relation t00048:r3, [
-    a :Wife.n.01 ;
+    a :Wife ;
     :target t00048:p2
   ], [
-    a :Mother.n.01
+    a :Mother
   ] .
 
 t00048:p2
@@ -93,7 +93,7 @@ t00048:p2
     :text "TODO: Freerk Bruinsma"
   ] ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :after t00048:r3 ;
     :target t00048:p3
   ] .
@@ -107,6 +107,6 @@ t00048:p3
   ] .
 
 t00048:r3
-  a :Spouse.n.01 ;
+  a :Spouse ;
   :target t00048:p2 .
 

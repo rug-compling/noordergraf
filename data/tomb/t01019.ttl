@@ -34,7 +34,7 @@ rom.5:1 en 2
 """ .
 
 t01019:c1
-  a :City.n.01 ;
+  a :City ;
   :place place:Groningen2755251 ;
   :text "TODO: GRONINGEN" .
 
@@ -61,7 +61,7 @@ t01019:p1
   :placeOfBirth t01019:c1 ;
   :placeOfDeath t01019:c1 ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t01019:p2
   ] .
 
@@ -88,7 +88,7 @@ t01019:p2
   :placeOfBirth t01019:c1 ;
   :placeOfDeath t01019:c1 ;
   :relation [
-    a :Widow.n.01 ;
+    a :Widow ;
     :target t01019:p1
   ] .
 

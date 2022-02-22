@@ -33,7 +33,7 @@ overl. te groningen i7 febr. 1960
 """ .
 
 t00022:c1
-  a :City.n.01 ;
+  a :City ;
   :place place:Groningen2755251 ;
   :text "TODO: GRONINGEN" .
 
@@ -58,18 +58,18 @@ t00022:p1
     :text "TODO: Christina Meijer"
   ] ;
   :placeOfBirth [
-    a :City.n.01 ;
+    a :City ;
     :place place:Stadskanaal2746860 ;
     :text "TODO: STADSKANAAL"
   ] ;
   :placeOfDeath t00022:c1 ;
   :relation [
-    a :Wife.n.01 ;
+    a :Wife ;
     :target t00022:p2
   ], [
-    a :Mother.n.01
+    a :Mother
   ], [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00022:p2
   ] .
 

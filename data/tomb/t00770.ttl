@@ -48,7 +48,7 @@ mera
 """ .
 
 t00770:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Weerdinge2744927 ;
   :text "TODO: WEERDINGE" .
 
@@ -75,7 +75,7 @@ t00770:p1
   :placeOfBirth t00770:c1 ;
   :placeOfDeath t00770:c1 ;
   :relation [
-    a :Widower.n.01 ;
+    a :Widower ;
     :target t00770:p2
   ] .
 
@@ -102,7 +102,7 @@ t00770:p2
   :placeOfBirth t00770:c1 ;
   :placeOfDeath t00770:c1 ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00770:p1
   ] .
 
@@ -129,7 +129,7 @@ t00770:p3
   :placeOfBirth t00770:c1 ;
   :placeOfDeath t00770:c1 ;
   :relation [
-    a :Son.n.01 ;
+    a :Son ;
     :target t00770:p1, t00770:p2
   ] .
 

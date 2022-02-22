@@ -50,12 +50,12 @@ rust zacht
 """ .
 
 t00368:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Donderen2756731 ;
   :text "TODO: DONDEREN" .
 
 t00368:c4
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Donderen2756731 ;
   :text "TODO: DONDEREN" .
 
@@ -82,7 +82,7 @@ t00368:p1
   :placeOfBirth t00368:c1 ;
   :placeOfDeath t00368:c1 ;
   :relation [
-    a :Widower.n.01 ;
+    a :Widower ;
     :target t00368:p2
   ] .
 
@@ -107,17 +107,17 @@ t00368:p2
     :text "TODO: Albertien Steunebrink"
   ] ;
   :placeOfBirth [
-    a :Town.n.01 ;
+    a :Town ;
     :place place:Eelde2756408 ;
     :text "TODO: EELDE"
   ] ;
   :placeOfDeath [
-    a :City.n.01 ;
+    a :City ;
     :place place:Assen2759633 ;
     :text "TODO: ASSEN"
   ] ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00368:p1
   ] .
 
@@ -144,7 +144,7 @@ t00368:p3
   :placeOfBirth t00368:c4 ;
   :placeOfDeath t00368:c4 ;
   :relation [
-    a :Daughter.n.01 ;
+    a :Daughter ;
     :target t00368:p1, t00368:p2
   ] .
 

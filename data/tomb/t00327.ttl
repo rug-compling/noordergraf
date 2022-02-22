@@ -58,7 +58,7 @@ p5.10 ronb
 """ .
 
 t00327:c1
-  a :Town.n.01 ;
+  a :Town ;
   :place place:Hoogeveen2753719 ;
   :text "TODO: HOOGEVEEN" .
 
@@ -85,10 +85,10 @@ t00327:p1
   :placeOfBirth t00327:c1 ;
   :placeOfDeath t00327:c1 ;
   :relation t00327:r3, [
-    a :Mother.n.01 ;
+    a :Mother ;
     :target t00327:p4
   ], [
-    a :Widow.n.01 ;
+    a :Widow ;
     :before t00327:r3 ;
     :target t00327:p2
   ] .
@@ -132,12 +132,12 @@ t00327:p4
   :placeOfBirth t00327:c1 ;
   :placeOfDeath t00327:c1 ;
   :relation [
-    a :Daughter.n.01 ;
+    a :Daughter ;
     :target t00327:p1, t00327:p2
   ] .
 
 t00327:r3
-  a :Widow.n.01 ;
+  a :Widow ;
   :target t00327:p3 .
 
 t00327:v1

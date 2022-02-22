@@ -36,7 +36,7 @@ tch igerat en moeder.
 """ .
 
 t00836:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:NoordSleen2749830 ;
   :text "TODO: NOORD-SLEEN" .
 
@@ -63,9 +63,9 @@ t00836:p1
   :placeOfBirth t00836:c1 ;
   :placeOfDeath t00836:c1 ;
   :relation [
-    a :Mother.n.01
+    a :Mother
   ], [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00836:p2
   ] .
 
@@ -77,7 +77,7 @@ t00836:p2
     :text "TODO: A. Langius"
   ] ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00836:p1
   ] .
 

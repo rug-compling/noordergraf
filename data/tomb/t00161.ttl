@@ -42,7 +42,7 @@ overl. te gron.19 maart1952
 """ .
 
 t00161:c1
-  a :City.n.01 ;
+  a :City ;
   :place place:Groningen2755251 ;
   :text "TODO: GRONINGEN" .
 
@@ -67,19 +67,19 @@ t00161:p1
     :text "TODO: Jeltje Veenman"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Sleen2747182 ;
     :text "TODO: SLEEN"
   ] ;
   :placeOfDeath t00161:c1 ;
   :relation [
-    a :Wife.n.01 ;
+    a :Wife ;
     :target t00161:p2
   ], [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00161:p2
   ], [
-    a :Mother.n.01
+    a :Mother
   ] .
 
 t00161:p2
@@ -103,7 +103,7 @@ t00161:p2
     :text "TODO: Marten de Wind"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Grou2755052 ;
     :text "TODO: GROUW"
   ] ;

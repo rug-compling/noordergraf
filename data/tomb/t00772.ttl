@@ -39,7 +39,7 @@ drikbos
 """ .
 
 t00772:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Weerdinge2744927 ;
   :text "TODO: WEERDINGE" .
 
@@ -65,12 +65,12 @@ t00772:p1
   ] ;
   :placeOfBirth t00772:c1 ;
   :placeOfDeath [
-    a :Town.n.01 ;
+    a :Town ;
     :place place:Emmen2756136 ;
     :text "TODO: EMMEN"
   ] ;
   :relation t00772:r1, [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :before t00772:r1 ;
     :target t00772:p3
   ] .
@@ -96,13 +96,13 @@ t00772:p2
     :text "TODO: Hiske Waarsing"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Roswinkel2747903 ;
     :text "TODO: ROSWINKEL"
   ] ;
   :placeOfDeath t00772:c1 ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00772:p1
   ] .
 
@@ -115,6 +115,6 @@ t00772:p3
   ] .
 
 t00772:r1
-  a :Spouse.n.01 ;
+  a :Spouse ;
   :target t00772:p2 .
 

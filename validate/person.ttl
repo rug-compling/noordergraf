@@ -146,10 +146,41 @@
   ] .
 
 :HasPlace sh:class :PlaceClass ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1; 
+  ] ;
   sh:property [
     sh:path :place ;
     sh:class :Place ;
     sh:minCount 1 ;
     sh:maxCount 1
   ] ;
-  sh:property :AnyText .
+  sh:property :AnyText ;
+  sh:property [
+    sh:path :partOf ;
+    sh:property :MaybePlace
+  ] .
+
+:MaybePlace sh:class :PlaceClass ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1; 
+  ] ;
+  sh:property [
+    sh:path :place ;
+    sh:class :Place ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property :AnyText ;
+  sh:property [
+    sh:path :partOf ;
+    sh:property :MaybePlace
+  ] .
+
+

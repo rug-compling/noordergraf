@@ -29,12 +29,12 @@ eurs
 """ .
 
 t00211:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Engelbert2756097 ;
   :text "TODO: ENGELBERT" .
 
 t00211:c2
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Middelbert2750902 ;
   :text "TODO: MIDDELBERT" .
 
@@ -61,7 +61,7 @@ t00211:p1
   :placeOfBirth t00211:c1 ;
   :placeOfDeath t00211:c2 ;
   :relation [
-    a :Parent.n.01 ;
+    a :Parent ;
     :target t00211:p3
   ] .
 
@@ -86,13 +86,13 @@ t00211:p2
     :text "TODO: Imke van Delden"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Noorddijk2749981 ;
     :text "TODO: NOORDDIJK"
   ] ;
   :placeOfDeath t00211:c2 ;
   :relation [
-    a :Parent.n.01 ;
+    a :Parent ;
     :target t00211:p3
   ] .
 
@@ -119,6 +119,6 @@ t00211:p3
   :placeOfBirth t00211:c1 ;
   :placeOfDeath t00211:c2 ;
   :relation [
-    a :Brother.n.01
+    a :Brother
   ] .
 

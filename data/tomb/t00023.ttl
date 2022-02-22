@@ -36,7 +36,7 @@ eildert m jstrengholt
 """ .
 
 t00023:c1
-  a :City.n.01 ;
+  a :City ;
   :place place:Groningen2755251 ;
   :text "TODO: GRONINGEN" .
 
@@ -61,13 +61,13 @@ t00023:p1
     :text "TODO: Lambertus M. Strengholt"
   ] ;
   :placeOfBirth [
-    a :City.n.01 ;
+    a :City ;
     :place place:Veendam2745783 ;
     :text "TODO: VEENDAM"
   ] ;
   :placeOfDeath t00023:c1 ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00023:p2
   ] .
 
@@ -115,7 +115,7 @@ t00023:p3
   :placeOfBirth t00023:c1 ;
   :placeOfDeath t00023:c1 ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00023:p4
   ] .
 

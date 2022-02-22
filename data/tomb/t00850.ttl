@@ -43,12 +43,12 @@ dat ze russon ln-vos
 """ .
 
 t00850:c1
-  a :Island.n.01 ;
+  a :Island ;
   :place place:Terschelling2746414 ;
   :text "TODO: TERSCHELLING" .
 
 t00850:c3
-  a :Island.n.01 ;
+  a :Island ;
   :place place:Vlieland2745420 ;
   :text "TODO: VLIELAND" .
 
@@ -74,18 +74,18 @@ t00850:p1
   ] ;
   :placeOfBirth t00850:c1 ;
   :placeOfDeath [
-    a :City.n.01 ;
+    a :City ;
     :place place:Harlingen2754817 ;
     :text "TODO: HARLINGEN"
   ] ;
   :relation [
-    a :Mother.n.01 ;
+    a :Mother ;
     :target t00850:p2
   ], [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00850:p3
   ], [
-    a :Wife.n.01 ;
+    a :Wife ;
     :target t00850:p3
   ] .
 
@@ -112,10 +112,10 @@ t00850:p2
   :placeOfBirth t00850:c1 ;
   :placeOfDeath t00850:c3 ;
   :relation [
-    a :Daughter.n.01 ;
+    a :Daughter ;
     :target t00850:p3
   ], [
-    a :Sister.n.01
+    a :Sister
   ] .
 
 t00850:p3
@@ -141,7 +141,7 @@ t00850:p3
   :placeOfBirth t00850:c1 ;
   :placeOfDeath t00850:c3 ;
   :relation [
-    a :Father.n.01 ;
+    a :Father ;
     :target t00850:p2
   ] .
 

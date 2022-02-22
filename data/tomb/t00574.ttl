@@ -62,21 +62,21 @@ t00574:p1
     :text "TODO: Talje Takens"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Noordbroek2749989 ;
     :text "TODO: NOORDBROEK"
   ] ;
   :placeOfDeath [
-    a :City.n.01 ;
+    a :City ;
     :place place:Veendam2745783 ;
     :text "TODO: VEENDAM"
   ] ;
   :relation t00574:r1, [
-    a :Widow.n.01 ;
+    a :Widow ;
     :before t00574:r1 ;
     :target t00574:p3
   ], [
-    a :Mother.n.01
+    a :Mother
   ] .
 
 t00574:p2
@@ -96,6 +96,6 @@ t00574:p3
   ] .
 
 t00574:r1
-  a :Widow.n.01 ;
+  a :Widow ;
   :target t00574:p2 .
 

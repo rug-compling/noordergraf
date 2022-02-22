@@ -38,7 +38,7 @@ d.hoeksema
 """ .
 
 t00132:c1
-  a :City.n.01 ;
+  a :City ;
   :place place:Groningen2755251 ;
   :text "TODO: GRONINGEN" .
 
@@ -63,13 +63,13 @@ t00132:p1
     :text "TODO: Douwe Hoeksema"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Sauwerd2747747 ;
     :text "TODO: SAUWERD"
   ] ;
   :placeOfDeath t00132:c1 ;
   :relation [
-    a :Husband.n.01 ;
+    a :Husband ;
     :target t00132:p2
   ] .
 
@@ -96,7 +96,7 @@ t00132:p2
   :placeOfBirth t00132:c1 ;
   :placeOfDeath t00132:c1 ;
   :relation t00132:r3, [
-    a :Widow.n.01 ;
+    a :Widow ;
     :before t00132:r3 ;
     :target t00132:p3
   ] .
@@ -110,6 +110,6 @@ t00132:p3
   ] .
 
 t00132:r3
-  a :Widow.n.01 ;
+  a :Widow ;
   :target t00132:p1 .
 

@@ -50,17 +50,17 @@ t00989:p1
     :text "TODO: Geezien J. Nieboer"
   ] ;
   :placeOfBirth [
-    a :Town.n.01 ;
+    a :Town ;
     :place place:Zuidwolde2743636 ;
     :text "TODO: ZUIDWOLDE"
   ] ;
   :placeOfDeath [
-    a :Town.n.01 ;
+    a :Town ;
     :place place:Noorddijk2749981 ;
     :text "TODO: NOORDDIJK"
   ] ;
   :relation t00989:r2, [
-    a :Widow.n.01 ;
+    a :Widow ;
     :before t00989:r2 ;
     :target t00989:p2
   ] .
@@ -82,7 +82,7 @@ t00989:p3
   ] .
 
 t00989:r2
-  a :Widow.n.01 ;
+  a :Widow ;
   :begin "1889"^^xsd:gYear ;
   :target t00989:p3 .
 

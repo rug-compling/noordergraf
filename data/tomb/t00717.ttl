@@ -28,12 +28,12 @@ overl.te emmen 13 sept. 1980
 """ .
 
 t00717:c1
-  a :City.n.01 ;
+  a :City ;
   :place place:Terneuzen2746420 ;
   :text "TODO: TERNEUZEN" .
 
 t00717:c2
-  a :Town.n.01 ;
+  a :Town ;
   :place place:Emmen2756136 ;
   :text "TODO: EMMEN" .
 
@@ -60,7 +60,7 @@ t00717:p1
   :placeOfBirth t00717:c1 ;
   :placeOfDeath t00717:c2 ;
   :relation t00717:r1, [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :after t00717:r1 ;
     :target t00717:p3
   ] .
@@ -97,6 +97,6 @@ t00717:p3
   :placeOfDeath t00717:c2 .
 
 t00717:r1
-  a :Widower.n.01 ;
+  a :Widower ;
   :target t00717:p2 .
 

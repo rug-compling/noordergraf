@@ -38,7 +38,7 @@ cornelis pieter.
 """ .
 
 t00068:c1
-  a :City.n.01 ;
+  a :City ;
   :place place:Groningen2755251 ;
   :text "TODO: GRONINGEN" .
 
@@ -63,10 +63,10 @@ t00068:p1
     :text "jantina", "tini"
   ] ;
   :relation [
-    a :Daughter.n.01 ;
+    a :Daughter ;
     :target t00068:p2, t00068:p3
   ], [
-    a :Sister.n.01 ;
+    a :Sister ;
     :target t00068:p4, t00068:p5
   ] .
 
@@ -91,16 +91,16 @@ t00068:p2
     :text "CORNELIA M.de JONG"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Steenwijkerwold2746761 ;
     :text "TODO: STEENWIJKERWOLD"
   ] ;
   :placeOfDeath t00068:c1 ;
   :relation [
-    a :Wife.n.01 ;
+    a :Wife ;
     :target t00068:p3
   ], [
-    a :Mother.n.01
+    a :Mother
   ] .
 
 t00068:p3
@@ -124,13 +124,13 @@ t00068:p3
     :text "JAN MULDER"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Nijeveen2750075 ;
     :text "TODO: NIJEVEEN"
   ] ;
   :placeOfDeath t00068:c1 ;
   :relation [
-    a :Father.n.01 ;
+    a :Father ;
     :target t00068:p4, t00068:p5
   ] .
 

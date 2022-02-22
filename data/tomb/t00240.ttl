@@ -47,7 +47,7 @@ localice
 """ .
 
 t00240:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Onnen2749588 ;
   :text "TODO: ONNEN" .
 
@@ -74,10 +74,10 @@ t00240:p1
   :placeOfBirth t00240:c1 ;
   :placeOfDeath t00240:c1 ;
   :relation t00240:r2, [
-    a :Father.n.01 ;
+    a :Father ;
     :target t00240:p2
   ], [
-    a :Widower.n.01 ;
+    a :Widower ;
     :before t00240:r2 ;
     :target t00240:p3
   ] .
@@ -99,7 +99,7 @@ t00240:p3
   ] .
 
 t00240:r2
-  a :Widower.n.01 ;
+  a :Widower ;
   :begin "1918-11-02"^^xsd:date ;
   :target t00240:p2 .
 

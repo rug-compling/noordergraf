@@ -51,7 +51,7 @@ ps. 103:15-22.
 """ .
 
 t00561:c1
-  a :City.n.01 ;
+  a :City ;
   :place place:Veendam2745783 ;
   :text "TODO: VEENDAM" .
 
@@ -77,12 +77,12 @@ t00561:p1
   ] ;
   :placeOfBirth t00561:c1 ;
   :placeOfDeath [
-    a :City.n.01 ;
+    a :City ;
     :place place:Schiedam2747596 ;
     :text "TODO: SCHIEDAM"
   ] ;
   :relation t00561:r1, [
-    a :Widower.n.01 ;
+    a :Widower ;
     :after t00561:r1 ;
     :target t00561:p3
   ] .
@@ -119,6 +119,6 @@ t00561:p3
   ] .
 
 t00561:r1
-  a :Widower.n.01 ;
+  a :Widower ;
   :target t00561:p2 .
 

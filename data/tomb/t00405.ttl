@@ -40,7 +40,7 @@ kinderen
 """ .
 
 t00405:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Buitenpost2758131 ;
   :text "TODO: BUITENPOST" .
 
@@ -66,12 +66,12 @@ t00405:p1
   ] ;
   :placeOfBirth t00405:c1 ;
   :placeOfDeath [
-    a :City.n.01 ;
+    a :City ;
     :place place:Franeker2755845 ;
     :text "TODO: FRANEKER"
   ] ;
   :relation [
-    a :Parent.n.01
+    a :Parent
   ] .
 
 t00405:p2
@@ -95,9 +95,9 @@ t00405:p2
     :text "TODO: Renskje Visser"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :partOf [
-      a :Province.n.01 ;
+      a :Province ;
       :place place:ProvincieFriesland2755812 ;
       :text "TODO: FRIESLAND"
     ] ;
@@ -106,6 +106,6 @@ t00405:p2
   ] ;
   :placeOfDeath t00405:c1 ;
   :relation [
-    a :Parent.n.01
+    a :Parent
   ] .
 

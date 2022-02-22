@@ -31,7 +31,7 @@ floria
 """ .
 
 t00576:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Obergum2749742 ;
   :text "TODO: OBERGUM" .
 
@@ -58,7 +58,7 @@ t00576:p1
   :placeOfBirth t00576:c1 ;
   :placeOfDeath t00576:c1 ;
   :relation t00576:r2, [
-    a :Widower.n.01 ;
+    a :Widower ;
     :before t00576:r2 ;
     :target t00576:p2
   ] .
@@ -80,6 +80,6 @@ t00576:p3
   ] .
 
 t00576:r2
-  a :Spouse.n.01 ;
+  a :Spouse ;
   :target t00576:p3 .
 

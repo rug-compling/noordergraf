@@ -159,11 +159,11 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :Person ;
   rdfs:isDefinedBy : .
 
-:Persons a rdfs:Class ;
+:People a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:isDefinedBy : .
 
-:Personnel.n.01 a rdfs:Class ;
+:Personnel a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:isDefinedBy : .
 
@@ -173,51 +173,55 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :Class ;
   rdfs:isDefinedBy : .
 
-:Building.n.01 a rdfs:Class ;
+:Building a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:City.n.01 a rdfs:Class ;
+:City a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Colony.n.05 a rdfs:Class ;
+:Colony a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Country.n.02 a rdfs:Class ;
+:Country a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Hamlet.n.03 a rdfs:Class ;
+:Hamlet a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Island.n.01 a rdfs:Class ;
+:Island a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Municipality.n.01 a rdfs:Class ;
+:Municipality a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Ocean.n.01 a rdfs:Class ;
+:Ocean a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Province.n.01 a rdfs:Class ;
+:Province a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Town.n.01 a rdfs:Class ;
+:Region a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Village.n.01 a rdfs:Class ;
+:State a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
-:Village.n.02 a rdfs:Class ;
+:Town a rdfs:Class ;
+  rdfs:subClassOf :PlaceClass ;
+  rdfs:isDefinedBy : .
+
+:Village a rdfs:Class ;
   rdfs:subClassOf :PlaceClass ;
   rdfs:isDefinedBy : .
 
@@ -227,15 +231,15 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :Class ;
   rdfs:isDefinedBy : .
 
-:Aunt.n.01 a rdfs:Class ;
+:Aunt a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Brother-in-law.n.01 a rdfs:Class ;
+:BrotherInLaw a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Brother.n.01 a rdfs:Class ;
+:Brother a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
@@ -243,19 +247,19 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Child.n.02 a rdfs:Class ;
+:Child a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Dad.n.01 a rdfs:Class ;
+:Dad a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Daughter-in-law.n.01 a rdfs:Class ;
+:DaughterInLaw a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Daughter.n.01 a rdfs:Class ;
+:Daughter a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
@@ -267,31 +271,31 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Father.n.01 a rdfs:Class ;
+:Father a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Foster-parent.n.01 a rdfs:Class ;
+:FosterParent a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Friend.n.01 a rdfs:Class ;
+:Friend a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Grandaunt.n.01 a rdfs:Class ;
+:Grandaunt a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Grandchild.n.01 a rdfs:Class ;
+:Grandchild a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Grandfather.n.01 a rdfs:Class ;
+:Grandfather a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Grandmother.n.01 a rdfs:Class ;
+:Grandmother a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
@@ -299,11 +303,11 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Grandparent.n.01 a rdfs:Class ;
+:Grandparent a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Granduncle.n.01 a rdfs:Class ;
+:Granduncle a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
@@ -319,31 +323,31 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Housemate.n.01 a rdfs:Class ;
+:Housemate a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Housewife.n.01 a rdfs:Class ;
+:Housewife a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Husband.n.01 a rdfs:Class ;
+:Husband a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Leermeester.n.01 a rdfs:Class ;
+:Leermeester a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Mother-in-law.n.01 a rdfs:Class ;
+:MotherInLaw a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Mother.n.01 a rdfs:Class ;
+:Mother a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Niece.n.01 a rdfs:Class ;
+:Niece a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
@@ -351,55 +355,55 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Parent.n.01 a rdfs:Class ;
+:Parent a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Pupil.n.01 a rdfs:Class ;
+:Pupil a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Schoolmakker.n.01 a rdfs:Class ;
+:Schoolmakker a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Sister-in-law.n.01 a rdfs:Class ;
+:SisterInLaw a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Sister.n.01 a rdfs:Class ;
+:Sister a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Son.n.01 a rdfs:Class ;
+:Son a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Spouse.n.01 a rdfs:Class ;
+:Spouse a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Twin.n.01 a rdfs:Class ;
+:Twin a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Uncle.n.01 a rdfs:Class ;
+:Uncle a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Verloofde.n.01 a rdfs:Class ;
+:Verloofde a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Widow.n.01 a rdfs:Class ;
+:Widow a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Widower.n.01 a rdfs:Class ;
+:Widower a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
-:Wife.n.01 a rdfs:Class ;
+:Wife a rdfs:Class ;
   rdfs:subClassOf :RelationClass ;
   rdfs:isDefinedBy : .
 
@@ -407,15 +411,15 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:subClassOf :Class ;
   rdfs:isDefinedBy : .
 
-:Bust.n.03 a rdfs:Class ;
+:Bust a rdfs:Class ;
   rdfs:subClassOf :PictureClass ;
   rdfs:isDefinedBy : .
 
-:Portrait.n.02 a rdfs:Class ;
+:Portrait a rdfs:Class ;
   rdfs:subClassOf :PictureClass ;
   rdfs:isDefinedBy : .
 
-:Statue.n.01 a rdfs:Class ;
+:Statue a rdfs:Class ;
   rdfs:subClassOf :PictureClass ;
   rdfs:isDefinedBy : .
 

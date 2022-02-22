@@ -55,17 +55,17 @@ t00275:p1
     :text "TODO: Lolke van der Werf"
   ] ;
   :placeOfBirth [
-    a :Municipality.n.01 ;
+    a :Municipality ;
     :place place:GemeenteDantumadiel2757834 ;
     :text "TODO: DANTUMADEEL"
   ] ;
   :placeOfDeath [
-    a :City.n.01 ;
+    a :City ;
     :place place:Groningen2755251 ;
     :text "TODO: GRONINGEN"
   ] ;
   :relation t00275:r1, [
-    a :Widower.n.01 ;
+    a :Widower ;
     :before t00275:r1 ;
     :target t00275:p3
   ] .
@@ -87,6 +87,6 @@ t00275:p3
   ] .
 
 t00275:r1
-  a :Widower.n.01 ;
+  a :Widower ;
   :target t00275:p2 .
 

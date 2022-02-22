@@ -56,13 +56,13 @@ t00819:p1
     :text "hiektje huizinga"
   ] ;
   :relation t00819:r3, [
-    a :Mother.n.01
+    a :Mother
   ], [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :before t00819:r3 ;
     :target t00819:p3
   ], [
-    a :Wife.n.01 ;
+    a :Wife ;
     :target t00819:p2
   ] .
 
@@ -87,9 +87,9 @@ t00819:p2
     :text "p. dijkhuis", "pieter dijkhuis"
   ] ;
   :relation [
-    a :Father.n.01
+    a :Father
   ], [
-    a :Widower.n.01 ;
+    a :Widower ;
     :before t00819:r3 ;
     :target t00819:p4
   ] .
@@ -111,7 +111,7 @@ t00819:p4
   ] .
 
 t00819:r3
-  a :Spouse.n.01 ;
+  a :Spouse ;
   :target t00819:p2 .
 
 t00819:v1

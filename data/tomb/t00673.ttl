@@ -43,7 +43,7 @@ rred.12.1.8
 """ .
 
 t00673:c2
-  a :City.n.01 ;
+  a :City ;
   :place place:Bolsward2758682 ;
   :text "TODO: BOLSWARD" .
 
@@ -68,16 +68,16 @@ t00673:p1
     :text "TODO: Tjerk Reitsma"
   ] ;
   :placeOfBirth [
-    a :City.n.01 ;
+    a :City ;
     :place place:Harlingen2754817 ;
     :text "TODO: HARLINGEN"
   ] ;
   :placeOfDeath t00673:c2 ;
   :relation [
-    a :Spouse.n.01 ;
+    a :Spouse ;
     :target t00673:p2
   ], [
-    a :Parent.n.01
+    a :Parent
   ] .
 
 t00673:p2
@@ -101,12 +101,12 @@ t00673:p2
     :text "TODO: Grietje Kramer"
   ] ;
   :placeOfBirth [
-    a :Town.n.01 ;
+    a :Town ;
     :place place:Aalzum2760121 ;
     :text "TODO: AALSUM"
   ] ;
   :placeOfDeath t00673:c2 ;
   :relation [
-    a :Parent.n.01
+    a :Parent
   ] .
 

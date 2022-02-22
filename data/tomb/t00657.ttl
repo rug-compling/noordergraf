@@ -35,7 +35,7 @@ overl: 2 mel 1904 leeuwarden
 """ .
 
 t00657:c3
-  a :City.n.01 ;
+  a :City ;
   :place place:Leeuwarden2751792 ;
   :text "TODO: LEEUWARDEN" .
 
@@ -51,9 +51,9 @@ t00657:p1
     :text "TODO: G. Looijgenga"
   ] ;
   :relation [
-    a :Mother.n.01
+    a :Mother
   ], [
-    a :Widow.n.01 ;
+    a :Widow ;
     :target t00657:p2
   ] .
 
@@ -78,9 +78,9 @@ t00657:p2
     :text "TODO: Johann Ludewig Jacké"
   ] ;
   :placeOfBirth [
-    a :Town.n.01 ;
+    a :Town ;
     :partOf [
-      a :Country.n.02 ;
+      a :Country ;
       :place place:Duitsland2921044 ;
       :text "TODO: DUITSLAND"
     ] ;

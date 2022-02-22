@@ -46,7 +46,7 @@ ps. 42
 """ .
 
 t01031:c1
-  a :Village.n.02 ;
+  a :Village ;
   :place place:Grijpskerk2755317 ;
   :text "TODO: GRIJPSKERK" .
 
@@ -72,12 +72,12 @@ t01031:p1
   ] ;
   :placeOfBirth t01031:c1 ;
   :placeOfDeath [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Noordhorn2749875 ;
     :text "TODO: NOORDHORN"
   ] ;
   :relation [
-    a :Parent.n.01
+    a :Parent
   ] .
 
 t01031:p2
@@ -103,10 +103,10 @@ t01031:p2
   :placeOfBirth t01031:c1 ;
   :placeOfDeath t01031:c1 ;
   :relation [
-    a :Widow.n.01 ;
+    a :Widow ;
     :begin "1853"^^xsd:gYear ;
     :target t01031:p2
   ], [
-    a :Parent.n.01
+    a :Parent
   ] .
 

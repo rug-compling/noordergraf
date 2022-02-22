@@ -33,7 +33,7 @@ hello
 """ .
 
 t00051:c2
-  a :Town.n.01 ;
+  a :Town ;
   :place place:Haren2754841 ;
   :text "TODO: HAREN" .
 
@@ -58,16 +58,16 @@ t00051:p1
     :text "TODO: Johanna Nieborg"
   ] ;
   :placeOfBirth [
-    a :Town.n.01 ;
+    a :Town ;
     :place place:Hoogezand2753706 ;
     :text "TODO: HOOGEZAND"
   ] ;
   :placeOfDeath t00051:c2 ;
   :relation [
-    a :Wife.n.01 ;
+    a :Wife ;
     :target t00051:p2
   ], [
-    a :Parent.n.01
+    a :Parent
   ] .
 
 t00051:p2
@@ -93,6 +93,6 @@ t00051:p2
   :placeOfBirth t00051:c2 ;
   :placeOfDeath t00051:c2 ;
   :relation [
-    a :Parent.n.01
+    a :Parent
   ] .
 

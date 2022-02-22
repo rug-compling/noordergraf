@@ -46,7 +46,7 @@ psalm 68. vers :7 ber
 """ .
 
 t00683:c2
-  a :City.n.01 ;
+  a :City ;
   :place place:Bolsward2758682 ;
   :text "TODO: BOLSWARD" .
 
@@ -71,13 +71,13 @@ t00683:p1
     :text "TODO: Tjitsche Alkema"
   ] ;
   :placeOfBirth [
-    a :Village.n.02 ;
+    a :Village ;
     :place place:Gaast2755789 ;
     :text "TODO: GAAST"
   ] ;
   :placeOfDeath t00683:c2 ;
   :relation [
-    a :Parent.n.01 ;
+    a :Parent ;
     :target t00683:p3
   ] .
 
@@ -102,13 +102,13 @@ t00683:p2
     :text "TODO: Albert Kooistra"
   ] ;
   :placeOfBirth [
-    a :Town.n.01 ;
+    a :Town ;
     :place place:Ferwoude2755913 ;
     :text "TODO: FERWOUDE"
   ] ;
   :placeOfDeath t00683:c2 ;
   :relation [
-    a :Parent.n.01 ;
+    a :Parent ;
     :target t00683:p3
   ] .
 
@@ -133,7 +133,7 @@ t00683:p3
     :text "TODO: Dorte Kooistra"
   ] ;
   :relation [
-    a :Daughter.n.01 ;
+    a :Daughter ;
     :target t00683:p1, t00683:p2
   ] .
 
