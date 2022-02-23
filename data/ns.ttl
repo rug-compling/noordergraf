@@ -169,6 +169,48 @@ xsd:gYear      rdfs:subClassOf :DateClass .
 
 ################################################################
 
+:Organisation a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:isDefinedBy : .
+
+:Company.n.01 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+:Funfair.n.01 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+:School.n.01 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+:Organization.n.01 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+:Community.n.02 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+:Union.n.07 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+:Battalion.n.01 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+:University.n.02 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+:State.n.04 a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
 :PlaceClass a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:isDefinedBy : .

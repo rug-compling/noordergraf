@@ -6,7 +6,7 @@
   sh:property [
     sh:path rdf:type ;
     sh:minCount 1;
-    sh:maxCount 1; 
+    sh:maxCount 1;
   ] ;
   sh:property [
     sh:path :name ;
@@ -32,13 +32,13 @@
   sh:property :AnyText ;
   sh:property [
     sh:path :placeOfBirth ;
-    sh:maxCount 1 ;
-    sh:property :HasPlace
+    sh:class :PlaceClass ;
+    sh:maxCount 1
   ] ;
   sh:property [
     sh:path :placeOfDeath ;
-    sh:maxCount 1 ;
-    sh:property :HasPlace
+    sh:class :PlaceClass ;
+    sh:maxCount 1
   ] ;
   sh:property [
     sh:path :dateOfBirth ;
@@ -76,25 +76,13 @@
       sh:class :RelationClass ;
       sh:property [
         sh:path :target ;
-	sh:class :Person
+        sh:class :Person
       ]
     ]
   ] ;
   sh:property [
     sh:path :occupation ;
-    sh:class :Occupation ;
-    sh:property [
-      sh:path :hisco ;
-      sh:nodeKind sh:IRI ;
-      sh:maxCount 1
-    ] ;
-    sh:property [
-      sh:path :location ;
-      sh:maxCount 1 ;
-      sh:class :PlaceClass ;
-      sh:property :AnyText
-    ] ;
-    sh:property :AnyText
+    sh:class :Occupation
   ] ;
   sh:property [
     sh:path :quantity ;
@@ -102,9 +90,9 @@
     sh:property [
       sh:class :Quantity ;
       sh:property [
-	sh:path :number ;
-	sh:maxCount 1 ;
-	sh:datatype xsd:integer
+        sh:path :number ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:integer
       ]
     ]
   ] ;
@@ -145,12 +133,14 @@
     sh:datatype xsd:boolean
   ] .
 
-:HasPlace sh:class :PlaceClass ;
+:PlaceShape a sh:NodeShape ;
   sh:closed true ;
+  sh:targetClass :PlaceClass ;
+  sh:class :PlaceClass ;
   sh:property [
     sh:path rdf:type ;
     sh:minCount 1;
-    sh:maxCount 1; 
+    sh:maxCount 1;
   ] ;
   sh:property [
     sh:path :place ;
@@ -161,26 +151,102 @@
   sh:property :AnyText ;
   sh:property [
     sh:path :partOf ;
-    sh:property :MaybePlace
+    sh:class :PlaceClass
   ] .
 
-:MaybePlace sh:class :PlaceClass ;
+:OccupationShape a sh:NodeShape ;
   sh:closed true ;
+  sh:targetClass :Occupation ;
+  sh:class :Occupation ;
   sh:property [
     sh:path rdf:type ;
     sh:minCount 1;
-    sh:maxCount 1; 
-  ] ;
-  sh:property [
-    sh:path :place ;
-    sh:class :Place ;
-    sh:minCount 1 ;
     sh:maxCount 1
   ] ;
-  sh:property :AnyText ;
   sh:property [
-    sh:path :partOf ;
-    sh:property :MaybePlace
+    sh:path :hisco ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :organisation ;
+    sh:class :Organisation ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :location ;
+    sh:class :PlaceClass ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :begin ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :end ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :period ;
+    sh:class :Period ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :before ;
+    sh:class :Occupation
+  ] ;
+  sh:property :AnyText ;
+  sh:property :AnyComment ;
+  sh:property [
+    sh:path :wordnet ;
+    sh:maxCount 1
+    ## TODO
   ] .
 
+:OrganisationShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Organisation ;
+  sh:class :Organisation ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path :orgname ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    ) ;
+  ] ;
+  sh:property [
+    sh:path :location ;
+    sh:class :PlaceClass
+  ] .
 
+:PeriodShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Period ;
+  sh:class :Period ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :duration ;
+    sh:datatype xsd:duration ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  sh:property :AnyText .
