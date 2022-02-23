@@ -190,7 +190,7 @@ func main() {
 		}
 		lastModified = fi.ModTime().UTC()
 		u := strings.Replace(uri[1:], "/", ":", 1)
-		if u == "ns" {
+		if u == "ns" || u == "bible" {
 			u = "\n:"
 		}
 		data += u + " dc:modified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
@@ -272,7 +272,7 @@ func doHTML() {
 
 	noindex := ""
 
-	if uri == "/ns" || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/tomb/") {
+	if uri == "/ns" || uri == "/bible" || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/tomb/") {
 
 		if strings.HasPrefix(uri, "/tomb/") {
 			year := time.Now().Year()
@@ -322,14 +322,15 @@ func doHTML() {
 		body = strings.Join(tokens, "")
 	}
 
-	if uri == "/ns" {
+	if uri == "/ns" || uri == "/bible" {
 		lines := strings.Split(body, "\n")
 		for i, line := range lines {
-			if !strings.HasPrefix(line, ":") || strings.HasPrefix(line, ": ") {
+			if (!strings.HasPrefix(line, ":") && !strings.HasPrefix(line, "bible:")) || strings.HasPrefix(line, ": ") {
 				continue
 			}
 			a := strings.SplitN(line, " ", 2)
-			a[0] = fmt.Sprintf("<span id=%q class=\"hash\">%s</span>", a[0][1:], a[0])
+			ii := strings.Index(a[0], ":") + 1
+			a[0] = fmt.Sprintf("<span id=%q class=\"hash\">%s</span>", a[0][ii:], a[0])
 			lines[i] = strings.Join(a, " ")
 		}
 		body = strings.Join(lines, "\n")
@@ -343,6 +344,10 @@ func doHTML() {
 	class := ""
 	if title == "ns" {
 		title = "ns#"
+		class = "ns"
+	}
+	if title == "bible" {
+		title = "bible#"
 		class = "ns"
 	}
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
@@ -577,6 +582,9 @@ func trim(s string) string {
 	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/ns#") {
 		return ":" + s[31:len(s)-1]
 	}
+	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/bible#") {
+		return ":" + s[31:len(s)-1]
+	}
 	if s[0] == '<' {
 		s = s[1 : len(s)-1]
 	}
@@ -623,6 +631,9 @@ func arg(s string) string {
 		return s[:i+1]
 	}
 	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/ns#") {
+		return s[31 : len(s)-1]
+	}
+	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/bible#") {
 		return s[31 : len(s)-1]
 	}
 	if strings.HasPrefix(s, "<http") {

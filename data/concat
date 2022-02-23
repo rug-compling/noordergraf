@@ -22,6 +22,11 @@ cat ns.ttl
 echo
 $ECHO '}'
 
+$ECHO '<bible> {'
+cat bible.ttl
+echo
+$ECHO '}'
+
 cd tomb
 fgrep -h '@prefix' *.ttl
 echo

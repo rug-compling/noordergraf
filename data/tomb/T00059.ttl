@@ -17,9 +17,10 @@ tomb:T00059
   :quote [
     a :Quote ;
     :reference [
-      a :BiblePsalms ;
+      a :BibleReference ;
       :chapter 121 ;
       :comment "onberijmd" ;
+      :part bible:Psalms ;
       :verse "1"
     ] ;
     :text "ps. 121:1 (o.b.)"
@@ -61,12 +62,12 @@ t00059:P1
     :text "TODO: Meint Zuidersma"
   ] ;
   :relation [
+    a :Husband ;
+    :target t00059:P2
+  ], [
     a :Father
   ], [
     a :Grandfather
-  ], [
-    a :Husband ;
-    :target t00059:P2
   ] .
 
 t00059:P2

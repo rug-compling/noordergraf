@@ -17,25 +17,9 @@ tomb:T00253
   :quote [
     a :Quote ;
     :reference [
-      a :BiblePsalms ;
-      :chapter 116
-    ] ;
-    :target t00253:P3 ;
-    :text "ps. 116"
-  ], [
-    a :Quote ;
-    :reference [
-      a :BibleRomans ;
+      a :BibleReference ;
       :chapter 14 ;
-      :verse "8"
-    ] ;
-    :target t00253:P4 ;
-    :text "rom. 14:8"
-  ], [
-    a :Quote ;
-    :reference [
-      a :BibleJohn ;
-      :chapter 14 ;
+      :part bible:John ;
       :verse "2"
     ] ;
     :target t00253:P5 ;
@@ -43,8 +27,9 @@ tomb:T00253
   ], [
     a :Quote ;
     :reference [
-      a :Bible1Thessalonians ;
+      a :BibleReference ;
       :chapter 4 ;
+      :part bible:1Thessalonians ;
       :verse "14"
     ] ;
     :target t00253:P1 ;
@@ -52,12 +37,32 @@ tomb:T00253
   ], [
     a :Quote ;
     :reference [
-      a :BiblePsalms ;
+      a :BibleReference ;
       :chapter 23 ;
+      :part bible:Psalms ;
       :verse "1"
     ] ;
     :target t00253:P2 ;
     :text "ps. 23:1"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 116 ;
+      :part bible:Psalms
+    ] ;
+    :target t00253:P3 ;
+    :text "ps. 116"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :chapter 14 ;
+      :part bible:Romans ;
+      :verse "8"
+    ] ;
+    :target t00253:P4 ;
+    :text "rom. 14:8"
   ] ;
   :site site:NLgr9725acGroningen ;
   :subject t00253:P1, t00253:P2, t00253:P3, t00253:P4, t00253:P5 ;

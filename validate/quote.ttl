@@ -10,7 +10,7 @@
   sh:property :OneText ;
   sh:property [
     sh:path :reference ;
-    sh:class :BaseReference ;
+    sh:class :ReferenceClass ;
     sh:maxCount 1
   ] ;
   sh:property [
@@ -37,6 +37,11 @@
   sh:property [
     sh:path rdf:type ;
     sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :part ;
+    sh:class :BiblePart ;
     sh:maxCount 1
   ] ;
   sh:property [
