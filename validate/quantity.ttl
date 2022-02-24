@@ -1,0 +1,15 @@
+
+:QuantityShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Quantity ;
+  sh:class :Quantity ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path :number ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:integer
+  ] .

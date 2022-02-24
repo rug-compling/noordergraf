@@ -47,28 +47,12 @@
   ] ;
   sh:property [
     sh:path :quantity ;
+    sh:class :Quantity ;
     sh:maxCount 1 ;
-    sh:property [
-      sh:class :Quantity ;
-      sh:property [
-        sh:path :number ;
-        sh:maxCount 1 ;
-        sh:datatype xsd:integer
-      ]
-    ]
   ] ;
   sh:property [
     sh:path :property ;
     sh:class :Decoration ;
-    sh:property [
-      sh:path :title ;
-      sh:or (
-        [ sh:datatype xsd:string ]
-        [ sh:datatype rdf:langString ]
-      ) ;
-      sh:mincount 1 ;
-      sh:maxcount 1
-    ]
   ] ;
   sh:property [
     sh:path :location ;

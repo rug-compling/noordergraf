@@ -1,0 +1,44 @@
+
+:DecorationShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Decoration ;
+  sh:class :Decoration ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path :title ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    ) ;
+    sh:mincount 1 ;
+    sh:maxcount 1
+  ] ;
+  sh:property [
+    sh:path :begin ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :end ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :text ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] .
