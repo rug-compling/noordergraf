@@ -1,29 +1,22 @@
-:QuoteShape a sh:NodeShape ;
-  sh:targetClass :Quote ;
-  sh:class :Quote ;
+
+:PlaceClassShape a sh:NodeShape ;
   sh:closed true ;
+  sh:targetClass :PlaceClass ;
+  sh:class :PlaceClass ;
   sh:property [
     sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path :place ;
+    sh:class :Place ;
     sh:minCount 1 ;
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path :text ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:or (
-      [ sh:datatype xsd:string ]
-      [ sh:datatype rdf:langString ]
-    )
-  ] ;
-  sh:property [
-    sh:path :reference ;
-    sh:class :ReferenceClass ;
-    sh:maxCount 1
-  ] ;
-  sh:property [
-    sh:path :target ;
-    sh:class :Person ;
+    sh:path :partOf ;
+    sh:class :PlaceClass
   ] ;
   sh:property [
     sh:path :text ;
@@ -39,3 +32,4 @@
       [ sh:datatype rdf:langString ]
     )
   ] .
+

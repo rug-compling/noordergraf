@@ -10,6 +10,22 @@
     sh:maxCount 1; 
   ] ;
   sh:property [
+    sh:path :text ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path :comment ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
     sh:path :commemorator ;
     sh:class :Person
   ] ;
@@ -20,18 +36,15 @@
   ] ;
   sh:property [
     sh:path :picture ;
-    sh:class :PictureClass ;
-    sh:property [
-      sh:path :theme ;
-      sh:class :Person
-    ]
+    sh:class :PictureClass
   ] ;
-  sh:property :OneText ;
-  sh:property :MaybeImage ;
+  sh:property [
+    sh:path :image ;
+    sh:class :Photo
+  ] ;
   sh:property [
     sh:path :site ;
     sh:class :Site ;
-    sh:nodeKind sh:IRI ;
     sh:maxCount 1
   ] ;
   sh:property [
@@ -39,11 +52,13 @@
     sh:class :Person ;
     sh:nodeKind sh:IRI
   ] ;
-  sh:property :MaybeQuote ;
+  sh:property [
+    sh:path :quote ;
+    sh:class :Quote
+  ] ;
   sh:property [
     sh:path :symbol ;
     sh:class symbol:Symbol ;
-    sh:property :AnyComment
   ] ;
   sh:property [
     sh:path :date ;
@@ -58,62 +73,4 @@
     sh:path dc:modified ;
     sh:maxCount 1 ;
     sh:datatype xsd:dateTime
-  ] .
-
-:MaybeQuote sh:path :quote ;
-  sh:class :Quote ;
-  sh:property :OneText ;
-  sh:property [
-    sh:path :reference ;
-    sh:class :ReferenceClass ;
-    sh:maxCount 1
-  ] ;
-  sh:property [
-    sh:path :target ;
-    sh:maxCount 1 ;
-    sh:class :Person
-  ] .
-
-:MaybeImage sh:path :image ;
-  sh:class :Photo ;
-  sh:property [
-    sh:path :file ;
-    sh:nodeKind sh:IRI ;
-    sh:minCount 1;
-    sh:maxCount 1
-  ] ;
-  sh:property [
-    sh:path :geo ;
-    sh:class geo:Point ;
-    sh:maxCount 1 ;
-    sh:property [
-      sh:path geo:lat ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-      sh:datatype xsd:decimal
-    ] ;
-    sh:property [
-      sh:path geo:long ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-      sh:datatype xsd:decimal
-    ]
-  ] ;
-  sh:property [
-    sh:path :nd ;
-    sh:maxCount 1 ;
-    sh:datatype ll:
-  ] ;
-  sh:property [
-    sh:path dc:date ;
-    sh:maxCount 1 ;
-    sh:datatype xsd:dateTime
-  ] ;
-  sh:propert [
-    sh:path dc:license ;
-    sh:maxCount 1 ;
-    sh:or (
-      [ sh:nodeKind sh:IRI ]
-      [ sh:datatype xsd:string ]
-    )
   ] .

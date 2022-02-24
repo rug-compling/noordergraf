@@ -1,0 +1,22 @@
+
+:OrganisationShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Organisation ;
+  sh:class :Organisation ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path :orgname ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    ) ;
+  ] ;
+  sh:property [
+    sh:path :location ;
+    sh:class :PlaceClass
+  ] .
+

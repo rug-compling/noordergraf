@@ -1,0 +1,71 @@
+
+:OccupationShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Occupation ;
+  sh:class :Occupation ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :hisco ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :organisation ;
+    sh:class :Organisation ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :location ;
+    sh:class :PlaceClass ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :begin ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :end ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :period ;
+    sh:class :Period ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :before ;
+    sh:class :Occupation
+  ] ;
+  sh:property [
+    sh:path :text ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path :comment ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path :wordnet ;
+    sh:maxCount 1
+    ## TODO
+  ] .

@@ -1,0 +1,64 @@
+
+:RelationShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :RelationClass ;
+  sh:class :RelationClass ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1
+    # TODO:
+    # sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :target ;
+    sh:class :Person
+  ] ;
+  sh:property [
+    sh:path :after ;
+    sh:class :RelationClass
+  ] ;
+  sh:property [
+    sh:path :before ;
+    sh:class :RelationClass
+  ] ;
+  sh:property [
+    sh:path :period ;
+    sh:class :Period
+  ] ;
+  sh:property [
+    sh:path :begin ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :end ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :inferred ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:boolean
+  ] ;
+  sh:property [
+    sh:path :text ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path :comment ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] .

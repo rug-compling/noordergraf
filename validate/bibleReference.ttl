@@ -1,0 +1,36 @@
+
+:BibleReferenceShape a sh:NodeShape ;
+  sh:targetClass :BibleReference ;
+  sh:class :BibleReference ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :part ;
+    sh:class :BiblePart ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :chapter ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :verse ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :scripture ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :comment ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] .
+
+

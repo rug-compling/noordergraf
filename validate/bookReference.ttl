@@ -1,0 +1,27 @@
+:BookReferenceShape a sh:NodeShape ;
+  sh:targetClass :BookReference ;
+  sh:class :BookReference ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :author
+  ] ;
+  sh:property [
+    sh:path :title
+  ] ;
+  sh:property [
+    sh:path :date
+  ] ;
+  sh:property [
+    sh:path :comment ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] .
+
+

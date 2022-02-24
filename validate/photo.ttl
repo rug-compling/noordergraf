@@ -1,0 +1,74 @@
+
+:PhotoShape a sh:NodeShape ;
+  sh:targetClass :Photo ;
+  sh:class :Photo ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path :file ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :geo ;
+    sh:class geo:Point ;
+    sh:maxCount 1 ;
+    sh:property [
+      sh:path geo:lat ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:decimal
+    ] ;
+    sh:property [
+      sh:path geo:long ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:decimal
+    ]
+  ] ;
+  sh:property [
+    sh:path :nd ;
+    sh:maxCount 1 ;
+    sh:datatype ll:
+  ] ;
+  sh:property [
+    sh:path dc:date ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:dateTime
+  ] ;
+  sh:property [
+    sh:path dc:license ;
+    sh:maxCount 1 ;
+    sh:or (
+      [ sh:nodeKind sh:IRI ]
+      [ sh:datatype xsd:string ]
+    )
+  ] ;
+  sh:property [
+    sh:path dc:source ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI
+  ] ;
+  sh:property [
+    sh:path dc:creator ;
+    sh:or (
+      [ sh:nodeKind sh:IRI ]
+      [ sh:datatype xsd:string ]
+    )
+  ] ;
+  sh:property [
+    sh:path dc:title ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    # TODO: REMOVE
+    sh:path :parts
+  ] .

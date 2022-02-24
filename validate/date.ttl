@@ -1,0 +1,25 @@
+
+:DateShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Date ;
+  sh:class :Date ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path :date ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :inferred ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:boolean
+  ] .

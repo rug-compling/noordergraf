@@ -70,14 +70,16 @@ t01095:P1
     :place place:Siddeburen2747343 ;
     :text "TODO: SIDDEBUREN"
   ] ;
-  :relation [
-    a :Widow ;
-    :target t01095:P2
-  ], [
-    a :Widow ;
-    :before t01095:P3 ;
-    :target t01095:P3
-  ] .
+  :relation t01095:R2 , t01095:R3 .
+
+t01095:R2
+  a :Widow ;
+  :target t01095:P2 .
+
+t01095:R3
+  a :Widow ;
+  :target t01095:P3 ;
+  :before t01095:R2 .
 
 t01095:P2
   a :Male ;
