@@ -1,5 +1,4 @@
-symbol:Freemason a rdfs:Class ;
-  rdfs:subClassOf symbol:Symbol ;
+symbol:Freemason a :SymbolClass ;
   rdfs:comment "Symbol of the Freemasons"@eng ,
                "Symbool van de vrijmetselarij"@nld ;
   rdfs:seeAlso <https://www.dodenakkers.nl/naslag/symboliek/201-passer-met-winkelhaak.html> ;
@@ -11,17 +10,4 @@ symbol:Freemason a rdfs:Class ;
     dc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dc:source <https://thenounproject.com/icon/freemason-1766735/> ;
     dc:title "freemason by Olena Panasovska from the Noun Project"
-  ] ;
-  :part [
-    a rdfs:Class ;
-    rdfs:subClassOf :SymbolPart ;
-    rdfs:comment "drafting instrument used for drawing circles"@eng ;
-    rdfs:comment "passer"@nld ;
-    :wordnet pwnid:03084637-n
-  ] , [
-    a rdfs:Class ;
-    rdfs:subClassOf :SymbolPart ;
-    rdfs:comment "a hand tool consisting of two straight arms at right angles; used to construct or test right angles"@eng ;
-    rdfs:comment "winkelhaak"@nld ;
-    :wordnet pwnid:04298380-n
   ] .

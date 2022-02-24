@@ -1,5 +1,4 @@
-symbol:Ouroboros a rdfs:Class ;
-  rdfs:subClassOf symbol:Symbol ;
+symbol:Ouroboros a :SymbolClass ;
   rdfs:comment "The ouroboros or uroboros is an ancient symbol depicting a serpent or dragon eating its own tail."@eng ,
                "Ouroboros is een afbeelding van een slang of een draak die in zijn eigen staart bijt (deze opeet) en op die manier een eeuwige cirkel vormt."@nld ;
   :image [
@@ -11,5 +10,5 @@ symbol:Ouroboros a rdfs:Class ;
     dc:source <https://thenounproject.com/icon/ouroboros-37463/> ;
     dc:title "Ouroboros by Straw Dog Design from the Noun Project"
   ] ;
-  :wikidata wikidata:Q237970 ;
-  :uwn <http://www.lexvo.org/uwn/entity/e/Ouroboros> .
+  rdfs:seeAlso wikidata:Q237970 ,
+               <http://www.lexvo.org/uwn/entity/e/Ouroboros> .

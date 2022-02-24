@@ -1,0 +1,74 @@
+
+:SiteShape a sh:NodeShape ;
+  sh:targetClass :Site ;
+  sh:class :Site ;
+  sh:closed true ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :sitename ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :address ;
+    sh:class schema:PostalAddress ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :geo ;
+    sh:class geo:Point ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :nd ;
+    sh:datatype ll: ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :osm ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+    # TODO: REMOVE ???
+  ] ;    
+  sh:property [
+    sh:path :wikidata ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+  ] ;    
+  sh:property [
+    sh:path :wikipedia ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+    # TODO: REMOVE
+  ] ;    
+  sh:property [
+    # TODO: REMOVE ??
+    sh:path :geoCode ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    # TODO: REMOVE ??
+    sh:path :geoMap ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    # TODO: REMOVE ??
+    sh:path :geoFeature ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path dc:modified ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:dateTime
+  ] .

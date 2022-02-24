@@ -42,7 +42,7 @@ func main() {
 PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX symbol: <https://noordergraf.rug.nl/symbol/>
 SELECT ?symbool (count(?symbool) as ?aantal) ?text {
-  ?a :symbol / a ?symbool .
+  ?a :symbol / :sym ?symbool .
   ?symbool rdfs:comment ?text .
   FILTER ( langMatches(lang(?text), "` + lang + `") )
 }

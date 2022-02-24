@@ -1,0 +1,21 @@
+
+:SymbolShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Symbol ;
+  sh:class :Symbol ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :sym ;
+    sh:class :SymbolClass
+  ] ;
+  sh:property [
+    sh:path :comment ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] .
