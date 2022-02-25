@@ -22,7 +22,8 @@
   sh:property [
     sh:path :nd ;
     sh:maxCount 1 ;
-    sh:datatype ll:
+    sh:datatype ll: ;
+    sh:pattern "^[-+][0-9]{2}\\.[0-9]{4}[-+][0-9]{3}\\.[0-9]{4}$"
   ] ;
   sh:property [
     sh:path dc:date ;
