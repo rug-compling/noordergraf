@@ -13,5 +13,6 @@ agtool load \
        noordergraf \
        - \
   && python3 mkfti.py \
+  && ../tools/chkll \
   && ../tools/mksymidx > ../www/sym/index.body.eng \
   && ../tools/mksymidx -n > ../www/sym/index.body.nld
