@@ -1,0 +1,30 @@
+# TODO: DELETE ??
+
+
+:PartShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Part ;
+  sh:class :Part ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path dc:title ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path dc:creator ;
+    sh:or (
+      [ sh:nodeKind sh:IRI ]
+      [ sh:datatype xsd:string ]
+    )
+  ] ;
+  sh:property [
+    sh:path dc:source ;
+    sh:nodeKind sh:IRI
+  ] .
