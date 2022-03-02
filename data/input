@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 . secret.sh
 
 agtool load \
@@ -11,8 +13,15 @@ agtool load \
        --optimize \
        --base-uri https://noordergraf.rug.nl/ \
        noordergraf \
-       - \
-  && python3 mkfti.py \
-  && ../tools/chkll \
-  && ../tools/mksymidx > ../www/sym/index.body.eng \
-  && ../tools/mksymidx -n > ../www/sym/index.body.nld
+       -
+
+echo
+
+python3 mkfti.py
+../tools/chkll
+../tools/chktags
+../tools/mksymidx > ../www/sym/index.body.eng
+../tools/mksymidx -n > ../www/sym/index.body.nld
+
+echo OK
+echo

@@ -2,7 +2,7 @@
 % : %.go
 	go build $<
 
-all: chkll jpg2ttl mksymidx name2soundex soundex-test xml2ttl
+all: chkll chktags jpg2ttl mksymidx name2soundex soundex-test xml2ttl
 
 name2soundex: name2soundex.go ../go/nlsoundex/nlsoundex.go
 
