@@ -67,12 +67,15 @@ t00721:P1
     a :Town ;
     :place place:Emmen2756136 ;
     :text "het diac. huis te emmen" ;
-    :geo [
-      a geo:Point ;
-      geo:lat 52.7818 ;
-      geo:long 6.9076
-    ] ;
-    :nd "+52.7818+006.9076"^^ll:
+    :coordinates [
+      a :Coordinates ;
+      :geo [
+        a geo:Point ;
+        geo:lat 52.7818 ;
+        geo:long 6.9076
+      ] ;
+      :nd "+52.7818+006.9076"^^ll:
+    ]
   ] ;
   :relation [
     a :Spouse ;
