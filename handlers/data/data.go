@@ -353,6 +353,7 @@ func doHTML() {
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 Last-Modified: %s
 
+<!DOCTYPE html>
 <html lang="nl">
   <head>
     <title>Noordergraf -- %s</title>

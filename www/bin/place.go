@@ -107,6 +107,7 @@ ORDER BY ?name ?p
 
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 
+<!DOCTYPE html>
 <html lang="nl">
   <head>
     <title>Noordergraf -- %s in %s</title>
