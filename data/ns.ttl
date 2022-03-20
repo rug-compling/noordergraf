@@ -8,13 +8,6 @@
   dc:description "Ontology for Noordergraf" ;
   dc:subject <https://noordergraf.rug.nl/> .
 
-# TODO: klassen: verwijzen naar entry op wordnet
-# Klopt dit?
-:wordnet a rdf:Property ;
-  rdfs:domain :Class ;
-  rdfs:range ontolex:LexicalConcept ;
-  rdfs:isDefinedBy : .
-
 # TODO: mag dit, externe dingen een subklasse van een eigen klasse maken?
 :DateClass a rdfs:Class ;
   rdfs:isDefinedBy : .

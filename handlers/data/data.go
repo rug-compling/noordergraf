@@ -19,6 +19,7 @@ import (
 	"go.local/go/httputil"
 
 	"bytes"
+	"encoding/json"
 	"fmt"
 	"html"
 	"io"
@@ -48,6 +49,7 @@ const (
 )
 
 var (
+	globerr      error
 	format       = NONE
 	language     = "en"
 	uri          string
@@ -62,6 +64,7 @@ var (
 		RDF:    ".rdf",
 		PENMAN: ".penman",
 	}
+	classes  = make(map[string]map[string][]string)
 	reTokens = regexp.MustCompile(strings.Join([]string{
 		"[ \t\n\r\f]+",
 		"(&(#34|quot);){3}(.|\n)*?(&(#34|quot);){3}[^ \t\n\r\f]*",
@@ -268,6 +271,14 @@ func convert(output string) string {
 }
 
 func doHTML() {
+
+	if uri == "/ns" {
+		b, err := ioutil.ReadFile("/net/noordergraf/data/ns.json")
+		if err == nil {
+			globerr = json.Unmarshal(b, &classes)
+		}
+	}
+
 	body := html.EscapeString(strings.TrimSpace(reComment.ReplaceAllLiteralString(data, "")))
 
 	noindex := ""
@@ -324,12 +335,23 @@ func doHTML() {
 
 	if uri == "/ns" || uri == "/bible" {
 		lines := strings.Split(body, "\n")
+		inClass := false
+		class := ""
 		for i, line := range lines {
+			if inClass && strings.TrimSpace(line) == "" {
+				lines[i] = getProps(class)
+				inClass = false
+				continue
+			}
 			if (!strings.HasPrefix(line, ":") && !strings.HasPrefix(line, "bible:")) || strings.HasPrefix(line, ": ") {
 				continue
 			}
 			a := strings.SplitN(line, " ", 2)
 			ii := strings.Index(a[0], ":") + 1
+			if uri == "/ns" && strings.Contains(line, "rdfs:Class") {
+				inClass = true
+				class = a[0][ii:]
+			}
 			a[0] = fmt.Sprintf("<span id=%q class=\"hash\">%s</span>", a[0][ii:], a[0])
 			lines[i] = strings.Join(a, " ")
 		}
@@ -641,4 +663,42 @@ func arg(s string) string {
 		return `"` + s[1:len(s)-1] + `"`
 	}
 	return s
+}
+
+func getProps(class string) string {
+	attr, ok := classes["https://noordergraf.rug.nl/ns#"+class]
+	if !ok {
+		return ""
+	}
+	lines := make([]string, 0)
+	lines = append(lines, "</pre>\n<div class=\"props\">")
+	subs := attr["sub"]
+	if len(subs) > 0 {
+		if len(subs) == 1 {
+			lines = append(lines, "subClass:")
+		} else {
+			lines = append(lines, "subClasses:")
+		}
+		for _, sub := range subs {
+			i := strings.Index(sub, "#") + 1
+			lines = append(lines, fmt.Sprintf(`<a href="%s">%s</a>`, sub, sub[i:]))
+		}
+	}
+	props := attr["prop"]
+	if len(props) > 0 {
+		if len(subs) > 0 {
+			lines = append(lines, "<br>")
+		}
+		if len(props) == 1 {
+			lines = append(lines, "property:")
+		} else {
+			lines = append(lines, "properties:")
+		}
+		for _, prop := range props {
+			i := strings.Index(prop, "#") + 1
+			lines = append(lines, fmt.Sprintf(`<a href="%s">%s</a>`, prop, prop[i:]))
+		}
+	}
+	lines = append(lines, "</div>\n<pre>\n")
+	return strings.Join(lines, "\n")
 }
