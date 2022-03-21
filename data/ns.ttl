@@ -1,6 +1,9 @@
 # namen van klassen (rdfs:Class) beginnen met een hoofdletter
 # namen van eigenschappen (rdfs:Property) beginnen met een kleine letter
 
+# Een rdf:Property kan maar één waarde voor rdfs:domain hebben!
+# Kan een rdf:Property meerdere waardes hebben voor rdfs:range?
+
 # TODO: eigenschappen: oorspronkelijke afkorting
 
 : a owl:Ontology ;
@@ -8,42 +11,53 @@
   dc:description "Ontology for Noordergraf" ;
   dc:subject <https://noordergraf.rug.nl/> .
 
-# TODO: mag dit, externe dingen een subklasse van een eigen klasse maken?
-:DateClass a rdfs:Class ;
-  rdfs:isDefinedBy : .
-xsd:date       rdfs:subClassOf :DateClass .
-xsd:gYearMonth rdfs:subClassOf :DateClass .
-xsd:gYear      rdfs:subClassOf :DateClass .
+## TODO: mag dit, externe dingen een subklasse van een eigen klasse maken?
+#:DateClass a rdfs:Class ;
+#  rdfs:isDefinedBy : .
+#xsd:date       rdfs:subClassOf :DateClass .
+#xsd:gYearMonth rdfs:subClassOf :DateClass .
+#xsd:gYear      rdfs:subClassOf :DateClass .
 
 :Class a rdfs:Class ;
+  rdfs:label "Class" ;
   rdfs:comment "The top class for noordergraf."@eng ;
   rdfs:comment "De hoogste class voor noordergraf."@nld ;
   rdfs:isDefinedBy : .
 
-:Tomb a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+:comment a rdf:Property ;
+  rdfs:label "comment" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :Class ;
+  rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
-:Cross a rdfs:Class ;
-  rdfs:subClassOf :Tomb ;
+:WithText a rdfs:Class ;
+  rdfs:label "WithText" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:SymbolClass a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+:text a rdf:Property ;
+  rdfs:label "text" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :WithText ;
+  rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
-:Geo a rdfs:Class ;
-  rdfs:subClassOf :Class ;
-  rdfs:comment "The class of things with geographical coordinates."@eng ;
-  rdfs:comment "De class van dingen met geografische coördinaten."@nld ;
+:WithGeo a rdfs:Class ;
+  rdfs:label "WithGeo" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :geo a rdf:Property ;
   rdfs:label "geo" ;
   rdfs:comment "Geographical coordinates."@eng ;
   rdfs:comment "Geografische coördinaten."@nld ;
-  rdfs:domain :Geo ;
-  rdfs:range geo:SpatialThing ;
+  rdfs:domain :WithGeo ;
+  rdfs:range geo:Point ;
   rdfs:isDefinedBy : .
 
 :nd a rdf:Property ;
@@ -51,8 +65,125 @@ xsd:gYear      rdfs:subClassOf :DateClass .
   rdfs:comment "Used by AllegroGraph for geodesic calculations."@eng ;
   rdfs:comment "Door AllegroGraph gebruikt voor geodetische berekeningen."@nld ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/ISO_6709#String_expression_(Annex_H)> ;
-  rdfs:domain :Geo ;
+  rdfs:domain :WithGeo ;
   rdfs:range ll: ;
+  rdfs:isDefinedBy : .
+
+:WithDate a rdfs:Class ;
+  rdfs:label "WithDate" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:date a rdf:Property ;
+  rdfs:label "date" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDate ;
+  rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
+  rdfs:isDefinedBy : .
+
+# :WithModified a rdfs:Class ;
+#   rdfs:label "WithModified" ;
+#   rdfs:comment "TODO."@eng ;
+#   rdfs:comment "TODO."@nld ;
+#   rdfs:isDefinedBy : .
+#
+# # TODO: mag dit?
+# dc:modified a rdf:Property ;
+#   rdfs:label "modified" ;
+#   rdfs:comment "TODO."@eng ;
+#   rdfs:comment "TODO."@nld ;
+#   rdfs:domain :WithModified ;
+#   rdfs:range xsd:date ;
+#   rdfs:isDefinedBy : .
+
+################################################################
+
+:Tomb a rdfs:Class ;
+  rdfs:subClassOf :Class , :WithText , :WithDate ;
+  rdfs:label "Tomb" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:commemorator a rdf:Property ;
+  rdfs:label "commemorator" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :Person ;
+  rdfs:isDefinedBy : .
+
+:creator a rdf:Property ;
+  rdfs:label "creator" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :Creator ;
+  rdfs:isDefinedBy : .
+
+:picture a rdf:Property ;
+  rdfs:label "picture" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :PictureClass ;
+  rdfs:isDefinedBy : .
+
+:image a rdf:Property ;
+  rdfs:label "image" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :Photo ;
+  rdfs:isDefinedBy : .
+
+:site a rdf:Property ;
+  rdfs:label "site" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :Site ;
+  rdfs:isDefinedBy : .
+
+:subject a rdf:Property ;
+  rdfs:label "subject" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :Person ;
+  rdfs:isDefinedBy : .
+
+:quote a rdf:Property ;
+  rdfs:label "quote" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :Quote ;
+  rdfs:isDefinedBy : .
+
+:symbol a rdf:Property ;
+  rdfs:label "symbol" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :Symbol ;
+  rdfs:isDefinedBy : .
+
+:Cross a rdfs:Class ;
+  rdfs:subClassOf :Tomb ;
+  rdfs:label "Cross" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
+
+
+:SymbolClass a rdfs:Class ;
+  rdfs:subClassOf :Class ;
   rdfs:isDefinedBy : .
 
 :Photo a rdfs:Class ;
@@ -132,7 +263,7 @@ xsd:gYear      rdfs:subClassOf :DateClass .
 ################################################################
 
 :Person a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+  rdfs:subClassOf :Class , :WithText ;
   rdfs:comment "A person mentioned by name on a tomb stone."@eng ;
   rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld ;
   :wordnet pwnid:00007846-n ;
@@ -205,7 +336,7 @@ xsd:gYear      rdfs:subClassOf :DateClass .
 ################################################################
 
 :PlaceClass a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+  rdfs:subClassOf :Class , :WithText ;
   rdfs:isDefinedBy : .
 
 :Building a rdfs:Class ;
@@ -263,7 +394,7 @@ xsd:gYear      rdfs:subClassOf :DateClass .
 ################################################################
 
 :RelationClass a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+  rdfs:subClassOf :Class , :WithText ;
   rdfs:isDefinedBy : .
 
 :Aunt a rdfs:Class ;
@@ -433,6 +564,8 @@ xsd:gYear      rdfs:subClassOf :DateClass .
 :PictureClass a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:isDefinedBy : .
+
+################################################################
 
 :Bust a rdfs:Class ;
   rdfs:subClassOf :PictureClass ;
