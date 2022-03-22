@@ -8,13 +8,27 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path :author
+    sh:path :author ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
   ] ;
   sh:property [
-    sh:path :title
+    sh:path :title ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
   ] ;
   sh:property [
-    sh:path :date
+    sh:path :date ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    ) ;
+    sh:maxCount 1
   ] ;
   sh:property [
     sh:path :comment ;

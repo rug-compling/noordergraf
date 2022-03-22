@@ -83,25 +83,131 @@
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
   rdfs:isDefinedBy : .
 
-# :WithModified a rdfs:Class ;
-#   rdfs:label "WithModified" ;
-#   rdfs:comment "TODO."@eng ;
-#   rdfs:comment "TODO."@nld ;
-#   rdfs:isDefinedBy : .
+:WithImage a rdfs:Class ;
+  rdfs:label "WithImage" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:image a rdf:Property ;
+  rdfs:label "image" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithImage ;
+  rdfs:range :Photo ;
+  rdfs:isDefinedBy : .
+
+# TODO
+# WithTemporalRelation ?
+# WithTemporalOccupation ?
+
+:WithTemporal a rdfs:Class ;
+  rdfs:label "WithTemporal" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:before a rdf:Property ;
+  rdfs:label "before" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithTemporal ;
+  rdfs:range :WithTemporal ;
+  rdfs:isDefinedBy : .
+
+:after a rdf:Property ;
+  rdfs:label "after" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithTemporal; ;
+  rdfs:range :WithTemporal ;
+  rdfs:isDefinedBy : .
+
+:begin a rdf:Property ;
+  rdfs:label "begin" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithTemporal ;
+  rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
+  rdfs:isDefinedBy : .
+
+:end a rdf:Property ;
+  rdfs:label "end" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithTemporal; ;
+  rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
+  rdfs:isDefinedBy : .
+
+:period a rdf:Property ;
+  rdfs:label "period" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithTemporal; ;
+  rdfs:range :Period ;
+  rdfs:isDefinedBy : .
+
+:WithInferred a rdfs:Class ;
+  rdfs:label "WithInferred" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:inferred a rdf:Property ;
+  rdfs:label "inferred" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithInferred ;
+  rdfs:range xsd:boolean ;
+  rdfs:isDefinedBy : .
+
+:WithLocation a rdfs:Class ;
+  rdfs:label "WithLocation" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:location a rdf:Property ;
+  rdfs:label "location" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithLocation ;
+  rdfs:range :PlaceClass ;
+  rdfs:isDefinedBy : .
+
+:WithName a rdfs:Class ;
+  rdfs:label "WithName" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:name a rdf:Property ;
+  rdfs:label "name" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithName ;
+  rdfs:range :Name ;
+  rdfs:isDefinedBy : .
+
+#:With a rdfs:Class ;
+#  rdfs:label "With" ;
+#  rdfs:comment "TODO."@eng ;
+#  rdfs:comment "TODO."@nld ;
+#  rdfs:isDefinedBy : .
 #
-# # TODO: mag dit?
-# dc:modified a rdf:Property ;
-#   rdfs:label "modified" ;
-#   rdfs:comment "TODO."@eng ;
-#   rdfs:comment "TODO."@nld ;
-#   rdfs:domain :WithModified ;
-#   rdfs:range xsd:date ;
-#   rdfs:isDefinedBy : .
+#: a rdf:Property ;
+#  rdfs:label "" ;
+#  rdfs:comment "TODO."@eng ;
+#  rdfs:comment "TODO."@nld ;
+#  rdfs:domain :With ;
+#  rdfs:range : ;
+#  rdfs:isDefinedBy : .
+
 
 ################################################################
 
 :Tomb a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText , :WithDate ;
+  rdfs:subClassOf :Class , :WithText , :WithDate , :WithImage ;
   rdfs:label "Tomb" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -178,9 +284,12 @@
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
+
 ################################################################
 
 
+
+################################################################
 
 :SymbolClass a rdfs:Class ;
   rdfs:subClassOf :Class ;
@@ -244,29 +353,85 @@
   rdfs:range schema:PostalAddress ;
   rdfs:isDefinedBy : .
 
-:dob a rdf:Property ;
-  rdfs:label "dob" ;
+################################################################
+
+:Person a rdfs:Class ;
+  rdfs:subClassOf :Class , :WithText , :WithName , :WithLocation ;
+  rdfs:comment "A person mentioned by name on a tomb stone."@eng ;
+  rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld ;
+  :wordnet pwnid:00007846-n ;
+  rdfs:isDefinedBy : .
+
+:dateOfBirth a rdf:Property ;
+  rdfs:label "dateOfBirth" ;
   rdfs:comment "Date of birth."@eng ;
   rdfs:comment "Geboortedatum."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Date ;
   rdfs:isDefinedBy : .
 
-:dod a rdf:Property ;
-  rdfs:label "dod" ;
+:dateOfDeath a rdf:Property ;
+  rdfs:label "dateOfDeath" ;
   rdfs:comment "Date of death."@eng ;
   rdfs:comment "Datum van overlijden."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Date ;
   rdfs:isDefinedBy : .
 
-################################################################
+:placeOfBirth a rdf:Property ;
+  rdfs:label "placeOfBirth" ;
+  rdfs:comment "Place of birth."@eng ;
+  rdfs:comment "Geboorteplaats."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range :PlaceClass ;
+  rdfs:isDefinedBy : .
 
-:Person a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText ;
-  rdfs:comment "A person mentioned by name on a tomb stone."@eng ;
-  rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld ;
-  :wordnet pwnid:00007846-n ;
+:placeOfDeath a rdf:Property ;
+  rdfs:label "placeOfDeath" ;
+  rdfs:comment "Place of death."@eng ;
+  rdfs:comment "Plaats van overlijden."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range :PlaceClass ;
+  rdfs:isDefinedBy : .
+
+:age a rdf:Property ;
+  rdfs:label "age" ;
+  rdfs:comment "Age at death."@eng ;
+  rdfs:comment "Leeftijd bij overlijden."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range :Age ;
+  rdfs:isDefinedBy : .
+
+:relation a rdf:Property ;
+  rdfs:label "relation" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range :RelationClass ;
+  rdfs:isDefinedBy : .
+
+:occupation a rdf:Property ;
+  rdfs:label "occupation" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range :Occupation ;
+  rdfs:isDefinedBy : .
+
+:quantity a rdf:Property ;
+  rdfs:label "quantity" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range :Quantity ;
+  rdfs:isDefinedBy : .
+
+:property a rdf:Property ;
+  rdfs:label "property" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Person ;
+  rdfs:range :Decoration ;
   rdfs:isDefinedBy : .
 
 :Male a rdfs:Class ;
