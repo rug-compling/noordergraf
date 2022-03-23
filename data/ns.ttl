@@ -46,6 +46,34 @@
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
+:WithTitle a rdfs:Class ;
+  rdfs:label "WithTitle" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:title a rdf:Property ;
+  rdfs:label "title" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :WithTitle ;
+  rdfs:range xsd:string , rdf:langString ;
+  rdfs:isDefinedBy : .
+
+:WithTarget a rdfs:Class ;
+  rdfs:label "WithTarget" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:target a rdf:Property ;
+  rdfs:label "target" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :WithTarget ;
+  rdfs:range :Person ;
+  rdfs:isDefinedBy : .
+
 :WithGeo a rdfs:Class ;
   rdfs:label "WithGeo" ;
   rdfs:comment "TODO."@eng ;
@@ -287,7 +315,27 @@
 
 ################################################################
 
+:Period a rdfs:Class ;
+  rdfs:subClassOf :Class , :WithText ;
+  rdfs:label "Tomb" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
 
+:duration a rdf:Property ;
+  rdfs:label "duration" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Period ;
+  rdfs:range xsd:duration ;
+  rdfs:isDefinedBy : .
+
+:Age a rdfs:Class ;
+  rdfs:subClassOf :Period , :WithInferred ;
+  rdfs:label "Age" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
 
 ################################################################
 
@@ -747,27 +795,78 @@
 ################################################################
 
 :ReferenceClass a rdfs:Class ;
+  rdfs:label "" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
   rdfs:subClassOf :Class ;
   rdfs:isDefinedBy : .
 
 :Reference a rdfs:Class ;
   rdfs:subClassOf :ReferenceClass ;
+  rdfs:label "" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
   rdfs:isDefinedBy : .
 
 :BibleReference a rdfs:Class ;
   rdfs:subClassOf :ReferenceClass ;
+  rdfs:label "" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
   rdfs:isDefinedBy : .
+
+:part a rdf:Property ;
+  rdfs:label "part" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :BibleReference ;
+  rdfs:range :BiblePart ;
+  rdfs:isDefinedBy : .
+
+:chapter a rdf:Property ;
+  rdfs:label "chapter" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :BibleReference ;
+  rdfs:range xsd:positiveInteger ;
+  rdfs:isDefinedBy : .
+
+:verse a rdf:Property ;
+  rdfs:label "verse" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :BibleReference ;
+  rdfs:range xsd:string , rdf:langString ;
+  rdfs:isDefinedBy : .
+
+:scripture a rdf:Property ;
+  rdfs:label "scripture" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :BibleReference ;
+  rdfs:range rdfs:Resource ;
+  rdfs:isDefinedBy : .
+
 
 :HymnReference a rdfs:Class ;
   rdfs:subClassOf :ReferenceClass ;
+  rdfs:label "" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
   rdfs:isDefinedBy : .
 
 :MusicReference a rdfs:Class ;
   rdfs:subClassOf :ReferenceClass ;
+  rdfs:label "" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
   rdfs:isDefinedBy : .
 
 :BookReference a rdfs:Class ;
   rdfs:subClassOf :ReferenceClass ;
+  rdfs:label "" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
   rdfs:isDefinedBy : .
 
 ################################

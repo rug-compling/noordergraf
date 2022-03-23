@@ -15,14 +15,21 @@
   ] ;
   sh:property [
     sh:path :chapter ;
+    sh:datatype xsd:integer ;
+    sh:minInclusive 1 ;
     sh:maxCount 1
   ] ;
   sh:property [
     sh:path :verse ;
-    sh:maxCount 1
+    sh:maxCount 1 ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
   ] ;
   sh:property [
     sh:path :scripture ;
+    sh:nodeKind sh:IRI ;
     sh:maxCount 1
   ] ;
   sh:property [

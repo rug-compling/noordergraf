@@ -1,7 +1,8 @@
 
 :PeriodShape a sh:NodeShape ;
   sh:closed true ;
-  sh:targetClass :Period ;
+  # je kunt hier geen sh:targetClass gebruiken, omdat die ook matcht met subclasses van Period
+  sh:targetObjectsOf :period ;
   sh:class :Period ;
   sh:property [
     sh:path rdf:type ;
