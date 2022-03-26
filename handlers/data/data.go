@@ -56,6 +56,7 @@ var (
 	data         string
 	prefix       string
 	pretab       = make(map[string]string)
+	pretaball    = make(map[string]string)
 	lastModified time.Time
 	exts         = map[int]string{
 		HTML:   "",
@@ -518,6 +519,7 @@ func trimPrefix(prefix, data string) string {
 			if key != "rdf" && key != "rdfs" && key != "xsd" {
 				pretab[key] = a[2][1 : len(a[2])-1]
 			}
+			pretaball[key] = a[2][1 : len(a[2])-1]
 		}
 	}
 	return strings.Join(lines, "")
@@ -605,11 +607,14 @@ func trim(s string) string {
 	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/ns#") {
 		return ":" + s[31:len(s)-1]
 	}
-	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/bible#") {
-		return ":" + s[31:len(s)-1]
-	}
 	if s[0] == '<' {
 		s = s[1 : len(s)-1]
+	}
+	for key, val := range pretaball {
+		if strings.HasPrefix(s, val) {
+			n := len(val)
+			return ":" + key + "." + s[n:]
+		}
 	}
 	if strings.HasPrefix(s, "http://") {
 		s = s[7:]
@@ -654,9 +659,6 @@ func arg(s string) string {
 		return s[:i+1]
 	}
 	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/ns#") {
-		return s[31 : len(s)-1]
-	}
-	if strings.HasPrefix(s, "<https://noordergraf.rug.nl/bible#") {
 		return s[31 : len(s)-1]
 	}
 	if strings.HasPrefix(s, "<http") {
