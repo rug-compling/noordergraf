@@ -85,8 +85,13 @@ scheiding.
 K. Gibran""" ;
   :reference [
     a :BookReference ;
-    :author "Kahlil Gibran" ;
-    :title "De profeet"@nld ;
-    :date "1923"^^xsd:gYear
+    :author [
+      a :Person ;
+      :fullname "Kahlil Gibran" ;
+      schema:sameAs wikidata:Q47737
+    ] ;
+    :bookTitle "De profeet"@nld ;
+    :date "1923"^^xsd:gYear ;
+    schema:sameAs wikidata:Q1196302
   ] .
 
