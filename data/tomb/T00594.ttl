@@ -28,8 +28,12 @@ Zien leste toentje
 of t wer altied wel weer licht."""@gos ;
     :reference [
       a :MusicReference ;
-      :artist "Ede Staal" ;
-      :title "t Het nog nooit zo donker west"@gos ;
+      :artist [
+        a :SingerSongwriter ;
+	:artistName "Ede Staal" ;
+	schema:sameAs wikidata:Q1810851
+      ] ;
+      :songTitle "t Het nog nooit zo donker west"@gos ;
       :albumTitle "Mien toentje"@gos ;
       :albumTrack "A2" ;
       :date "1984"^^xsd:gYear ;
@@ -41,8 +45,12 @@ of t wer altied wel weer licht."""@gos ;
     :comment "parafrase" ;
     :reference [
       a :MusicReference ;
-      :artist "Ede Staal" ;
-      :title "Mien Toentje"@gos ;
+      :artist [
+        a :SingerSongwriter ;
+	:artistName "Ede Staal" ;
+	schema:sameAs wikidata:Q1810851
+      ] ;
+      :songTitle "Mien Toentje"@gos ;
       :albumTitle "Mien toentje"@gos ;
       :albumTrack "A1" ;
       :date "1984"^^xsd:gYear ;
