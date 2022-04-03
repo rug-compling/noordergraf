@@ -44,6 +44,8 @@ Meer informatie: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/si
 
 [Online Begraafplaatsen](https://www.online-begraafplaatsen.nl/)
 
+[Begraafplaatsen in Nederland](https://www.denhollandsche.nl/over-den-hollandsche/begraafplaats-vergunning-grafmonument/)
+
 [Stichting Dodenakkers.nl](https://www.dodenakkers.nl/)
 
 [BillionGraves](https://billiongraves.nl/)

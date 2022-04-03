@@ -15,24 +15,6 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path :geoCode ;
-    sh:nodeKind sh:IRI ;
-    sh:minCount 1 ;
-    sh:maxCount 1
-  ] ;
-  sh:property [
-    sh:path :geoMap ;
-    sh:nodeKind sh:IRI ;
-    sh:minCount 1 ;
-    sh:maxCount 1
-  ] ;
-  sh:property [
-    sh:path :geoFeature ;
-    sh:nodeKind sh:IRI ;
-    sh:minCount 1 ;
-    sh:maxCount 1
-  ] ;
-  sh:property [
     sh:path :geo ;
     sh:class geo:Point ;
     sh:minCount 1 ;
@@ -46,27 +28,8 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path :pluscode ;
-    sh:datatype xsd:string ;
-    sh:maxCount 1
-    # TODO
-  ] ;
-  sh:property [
-    sh:path :osm ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
-    # TODO: REMOVE ???
-  ] ;    
-  sh:property [
-    sh:path :wikidata ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
-  ] ;    
-  sh:property [
-    sh:path :wikipedia ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
-    # TODO: REMOVE
+    sh:path shema:sameAs ;
+    sh:nodeKind sh:IRI
   ] ;    
   sh:property [
     sh:path dc:modified ;

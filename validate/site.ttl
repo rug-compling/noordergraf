@@ -34,39 +34,8 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path :osm ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
-    # TODO: REMOVE ???
-  ] ;    
-  sh:property [
-    sh:path :wikidata ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
-  ] ;    
-  sh:property [
-    sh:path :wikipedia ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
-    # TODO: REMOVE
-  ] ;    
-  sh:property [
-    # TODO: REMOVE ??
-    sh:path :geoCode ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
-  ] ;
-  sh:property [
-    # TODO: REMOVE ??
-    sh:path :geoMap ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
-  ] ;
-  sh:property [
-    # TODO: REMOVE ??
-    sh:path :geoFeature ;
-    sh:nodeKind sh:IRI ;
-    sh:maxCount 1
+    sh:path schema:sameAs ;
+    sh:nodeKind sh:IRI
   ] ;
   sh:property [
     sh:path dc:modified ;
