@@ -1,0 +1,22 @@
+
+:AuthorShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :Author ;
+  sh:class :Author ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :authorName ;
+    sh:minCount 1;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path schema:sameAs ;
+    sh:nodeKind sh:IRI
+  ] .

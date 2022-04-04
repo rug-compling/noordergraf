@@ -9,13 +9,10 @@
   ] ;
   sh:property [
     sh:path :author ;
-    sh:or (
-      [ sh:datatype xsd:string ]
-      [ sh:datatype rdf:langString ]
-    )
+    sh:class :Author
   ] ;
   sh:property [
-    sh:path :title ;
+    sh:path :bookTitle ;
     sh:or (
       [ sh:datatype xsd:string ]
       [ sh:datatype rdf:langString ]
@@ -36,6 +33,10 @@
       [ sh:datatype xsd:string ]
       [ sh:datatype rdf:langString ]
     )
+  ] ;
+  sh:property [
+    sh:path schema:sameAs ;
+    sh:nodeKind sh:IRI
   ] .
 
 

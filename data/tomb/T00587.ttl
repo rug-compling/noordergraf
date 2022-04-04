@@ -36,16 +36,6 @@ wr
 
 t00587:P1
   a :Female ;
-  :name [
-    a :Name ;
-    :fullname "Jantje Kladder" ;
-    :text "TODO: Jantje Kladder"
-  ] ;
-  :placeOfBirth [
-    a :Village ;
-    :place place:Obergum2749742 ;
-    :text "TODO: OBERGUM"
-  ] ;
   :age [
     a :Age ;
     :duration "P44Y4M6D"^^xsd:duration ;
@@ -59,6 +49,11 @@ t00587:P1
     a :Date ;
     :date "1919-01-26"^^xsd:date
   ] ;
+  :name [
+    a :Name ;
+    :fullname "Jantje Kladder" ;
+    :text "TODO: Jantje Kladder"
+  ] ;
   :occupation [
     a :Occupation ;
     :hisco hisco:07130 ;
@@ -66,8 +61,12 @@ t00587:P1
       a :Village ;
       :place place:Winsum2744337 ;
       :text "TODO: WINSUM"
-    ] ;
-    :wordnet "TODO: Visting_nurse"
+    ]
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Obergum2749742 ;
+    :text "TODO: OBERGUM"
   ] ;
   :placeOfDeath [
     a :City ;

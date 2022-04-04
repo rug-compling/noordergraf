@@ -41,20 +41,6 @@
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
-:WithTitle a rdfs:Class ;
-  rdfs:label "WithTitle" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:title a rdf:Property ;
-  rdfs:label "title" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
-  rdfs:domain :WithTitle ;
-  rdfs:range xsd:string , rdf:langString ;
-  rdfs:isDefinedBy : .
-
 :WithTarget a rdfs:Class ;
   rdfs:label "WithTarget" ;
   rdfs:comment "TODO."@eng ;
@@ -226,18 +212,28 @@
   rdfs:range <http://wikiba.se/ontology#Item> ;
   rdfs:isDefinedBy : .
 
-:WithWordnet a rdfs:Class ;
-  rdfs:label "WithWordnet" ;
+################################################################
+
+:Artist a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:label "Artist" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:wordnet a rdf:Property ;
-  rdfs:label "wordnet" ;
+:artistName a rdf:Property ;
+  rdfs:label "artistName" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :WithWordnet ;
-  rdfs:range rdfs:Resource ;
+  rdfs:domain :Artist ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : .
+
+:SingerSongwriter a rdfs:Class ;
+  rdfs:subClassOf :Artist ;
+  rdfs:label "SingerSongwriter" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -279,10 +275,18 @@
 ################################################################
 
 :Decoration a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithTitle , :WithText , :WithTemporal ;
+  rdfs:subClassOf :Class , :WithText , :WithTemporal ;
   rdfs:label "Decoration" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:title a rdf:Property ;
+  rdfs:label "title" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :Decoration ;
+  rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -329,7 +333,7 @@
 ################################################################
 
 :Occupation a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText , :WithLocation , :WithTemporal , :WithWordnet ;
+  rdfs:subClassOf :Class , :WithText , :WithLocation , :WithTemporal ;
   rdfs:label "Occupation" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -821,10 +825,18 @@
 
 
 :HymnReference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass , :WithTitle;
+  rdfs:subClassOf :ReferenceClass ;
   rdfs:label "" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
+  rdfs:isDefinedBy : .
+
+:hymnTitle a rdf:Property ;
+  rdfs:label "hymnTitle" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :HymnReference ;
+  rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
 :source a rdf:Property ;
@@ -836,7 +848,7 @@
   rdfs:isDefinedBy : .
 
 :MusicReference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass , :WithTitle , :WithDate ;
+  rdfs:subClassOf :ReferenceClass , :WithDate ;
   rdfs:label "" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -848,6 +860,14 @@
   rdfs:comment "TODO"@nld ;
   rdfs:domain :MusicReference ;
   rdfs:range xsd:string ;
+  rdfs:isDefinedBy : .
+
+:trackTitle a rdf:Property ;
+  rdfs:label "trackTitle" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :MusicReference ;
+  rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
 :albumTitle a rdf:Property ;
@@ -875,7 +895,7 @@
   rdfs:isDefinedBy : .
 
 :BookReference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass , :WithTitle , :WithDate ;
+  rdfs:subClassOf :ReferenceClass , :WithDate ;
   rdfs:label "" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -888,6 +908,15 @@
   rdfs:domain :BookReference ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
+
+:bookTitle a rdf:Property ;
+  rdfs:label "bookTitle" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :BookReference ;
+  rdfs:range xsd:string , rdf:langString ;
+  rdfs:isDefinedBy : .
+
 
 ################################################################
 
