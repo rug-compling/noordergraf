@@ -47,7 +47,7 @@ PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT DISTINCT ?url ?name ?lat ?lon {
   ?url a :Place .
   ?p :placeOfBirth / :place ?url .
-  ?url :placename ?name .
+  ?url :placeName ?name .
   ?url :geo / geo:lat ?lat .
   ?url :geo / geo:long ?lon .
 }
@@ -59,7 +59,7 @@ PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT DISTINCT ?url ?name ?lat ?lon {
   ?url a :Place .
   ?p :placeOfDeath / :place ?url .
-  ?url :placename ?name .
+  ?url :placeName ?name .
   ?url :geo / geo:lat ?lat .
   ?url :geo / geo:long ?lon .
 }
