@@ -61,7 +61,7 @@ Invalid query
 PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX symbol: <https://noordergraf.rug.nl/symbol/>
 SELECT DISTINCT ?tomb ?name {
-  ?tomb :symbol / :sym symbol:` + symbol + ` .
+  ?tomb :symbol / :symbolType symbol:` + symbol + ` .
   ?tomb :subject / :name / :fullName ?name .
 }
 ORDER BY ?name ?tomb
