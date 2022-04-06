@@ -5,7 +5,7 @@ tomb:T00295
   :image [
     dc:date "2019-10-19T14:42:03"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
+    a :Image ;
     :file img:T00295.jpg ;
     :geo [
       a geo:Point ;
@@ -16,14 +16,14 @@ tomb:T00295
   ] ;
   :quote t00295:V1, [
     a :Quote ;
-    :target t00295:P1 ;
+    :quoteSubject t00295:P1 ;
     :text "HAAR LEVEN WAS CHRISTUS"
   ] ;
   :site site:NLdr7907chHoogeveen ;
   :subject t00295:P1, t00295:P2 ;
   :symbol [
     a :Symbol ;
-    :sym symbol:WeepingWillow
+    :symbolType symbol:WeepingWillow
   ] ;
   :text """TODO: hier rust
 johanna seinen.
@@ -59,7 +59,7 @@ t00295:P1
   ] ;
   :name [
     a :Name ;
-    :fullname "Johanna Seinen" ;
+    :fullName "Johanna Seinen" ;
     :text "TODO: Johanna Seinen"
   ] ;
   :relation [
@@ -86,7 +86,7 @@ t00295:P2
   ] ;
   :name [
     a :Name ;
-    :fullname "Cornelis Warmels" ;
+    :fullName "Cornelis Warmels" ;
     :text "TODO: Cornelis Warmels"
   ] .
 
@@ -98,6 +98,6 @@ t00295:V1
     :part bible:Romans ;
     :verse "27"
   ] ;
-  :target t00295:P2 ;
+  :quoteSubject t00295:P2 ;
   :text "TODO" .
 

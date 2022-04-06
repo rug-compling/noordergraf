@@ -70,7 +70,7 @@ PREFIX :    <https://noordergraf.rug.nl/ns#>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT ?url ?name ?lat ?lon {
   ?url a :Site .
-  ?url :sitename ?name .
+  ?url :siteName ?name .
   ?url :geo / geo:lat ?lat .
   ?url :geo / geo:long ?lon .
 }

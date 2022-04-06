@@ -5,7 +5,7 @@ tomb:T00136
   :image [
     dc:date "2019-10-02T10:35:09"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
+    a :Image ;
     :file img:T00136.jpg ;
     :geo [
       a geo:Point ;
@@ -18,15 +18,15 @@ tomb:T00136
   :subject t00136:P1, t00136:P2 ;
   :symbol [
     a :Symbol ;
-    :sym symbol:Frond
+    :symbolType symbol:Frond
   ], [
     a :Symbol ;
-    :sym symbol:Anchor
+    :symbolType symbol:Anchor
   ] ;
   :quote [
     a :Quote ;
     :text "Gez. 223:1" ;
-    :target t00136:P1 ;
+    :quoteSubject t00136:P1 ;
     :reference [
       a :HymnReference
     ]
@@ -59,7 +59,7 @@ t00136:P1
   ] ;
   :name [
     a :Name ;
-    :fullname "Simon Siesling" ;
+    :fullName "Simon Siesling" ;
     :text "TODO: Simon Siesling"
   ] ;
   :relation [
@@ -84,7 +84,7 @@ t00136:P2
   ] ;
   :name [
     a :Name ;
-    :fullname "Tallegien de Raad" ;
+    :fullName "Tallegien de Raad" ;
     :text "TODO: Tallegien de Raad"
   ] .
 

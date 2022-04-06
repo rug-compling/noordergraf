@@ -5,7 +5,7 @@ tomb:T00394
   :image [
     dc:date "2019-10-26T14:59:45"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
+    a :Image ;
     :file img:T00394.jpg ;
     :geo [
       a geo:Point ;
@@ -22,7 +22,7 @@ tomb:T00394
       :part bible:Hebrews ;
       :verse "27-28"
     ] ;
-    :target t00394:P1 ;
+    :quoteSubject t00394:P1 ;
     :text "hebr. 9:27 en 28."
   ], [
     a :Quote ;
@@ -32,16 +32,16 @@ tomb:T00394
       :part bible:Psalms ;
       :verse "4"
     ] ;
-    :target t00394:P2 ;
+    :quoteSubject t00394:P2 ;
     :text "ps. 43:4."
   ] ;
   :subject t00394:P1, t00394:P2 ;
   :symbol [
     a :Symbol ;
-    :sym symbol:Branch
+    :symbolType symbol:Branch
   ], [
     a :Symbol ;
-    :sym symbol:DutchBarge
+    :symbolType symbol:DutchBarge
   ] ;
   :text """TODO: ti
 fa
@@ -90,7 +90,7 @@ t00394:P1
   ] ;
   :name [
     a :Name ;
-    :fullname "Liekela Dijkstra" ;
+    :fullName "Liekela Dijkstra" ;
     :text "TODO: Liekela Dijkstra"
   ] ;
   :placeOfBirth [
@@ -120,7 +120,7 @@ t00394:P2
   ] ;
   :name [
     a :Name ;
-    :fullname "Seeske Siegersma" ;
+    :fullName "Seeske Siegersma" ;
     :text "TODO: Seeske Siegersma"
   ] ;
   :placeOfBirth t00394:C2 ;

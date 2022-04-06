@@ -79,7 +79,7 @@ PREFIX place:  <https://noordergraf.rug.nl/place/>
 SELECT ?p ?name {
   ?p :` + what + ` / :place place:` + place + ` .
   ?p a :Person .
-  ?p :name / :fullname ?name .
+  ?p :name / :fullName ?name .
 }
 ORDER BY ?name ?p
 `

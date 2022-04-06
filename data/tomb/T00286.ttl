@@ -5,7 +5,7 @@ tomb:T00286
   :image [
     dc:date "2019-10-16T16:49:22"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
+    a :Image ;
     :file img:T00286.jpg ;
     :geo [
       a geo:Point ;
@@ -16,11 +16,11 @@ tomb:T00286
   ] ;
   :quote [
     a :Quote ;
-    :target t00286:P1 ;
+    :quoteSubject t00286:P1 ;
     :text "RUST ZACHT MOEDER"
   ], [
     a :Quote ;
-    :target t00286:P2 ;
+    :quoteSubject t00286:P2 ;
     :text "RUST ZACHT VADER"
   ], [
     a :Quote ;
@@ -37,10 +37,10 @@ tomb:T00286
   :subject t00286:P1, t00286:P2 ;
   :symbol [
     a :Symbol ;
-    :sym symbol:Frond
+    :symbolType symbol:Frond
   ], [
     a :Symbol ;
-    :sym symbol:Frond
+    :symbolType symbol:Frond
   ] ;
   :text """TODO: rustplaats
 van
@@ -75,7 +75,7 @@ t00286:P1
   ] ;
   :name [
     a :Name ;
-    :fullname "Pieter Bakker" ;
+    :fullName "Pieter Bakker" ;
     :text "TODO: Pieter Bakker"
   ] .
 
@@ -96,7 +96,7 @@ t00286:P2
   ] ;
   :name [
     a :Name ;
-    :fullname "Jantje Rozemuller" ;
+    :fullName "Jantje Rozemuller" ;
     :text "TODO: Jantje Rozemuller"
   ] .
 

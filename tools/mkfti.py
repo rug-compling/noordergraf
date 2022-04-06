@@ -11,4 +11,4 @@ conn = ag_connect('noordergraf', create=False, user=AGRAPH_USER, password=AGRAPH
 
 conn.createFreeTextIndex("all", predicates=None, indexLiterals=True, indexResources=False, indexFields=["object"], minimumWordSize=2, stopWords=[], wordFilters=["drop-accents"], innerChars=["alphanumeric"], borderChars=None, tokenizer="default")
 
-conn.createFreeTextIndex("fullname", predicates=["<https://noordergraf.rug.nl/ns#fullnameSE>"], indexLiterals=True, indexResources=False, indexFields=["object"], minimumWordSize=1, stopWords=[], wordFilters=[], innerChars=["alphanumeric"], borderChars=None, tokenizer="default")
+conn.createFreeTextIndex("fullname", predicates=["<https://noordergraf.rug.nl/ns#fullNameSE>"], indexLiterals=True, indexResources=False, indexFields=["object"], minimumWordSize=1, stopWords=[], wordFilters=[], innerChars=["alphanumeric"], borderChars=None, tokenizer="default")

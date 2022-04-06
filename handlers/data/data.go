@@ -194,7 +194,7 @@ func main() {
 		}
 		lastModified = fi.ModTime().UTC()
 		u := strings.Replace(uri[1:], "/", ":", 1)
-		if u == "ns" || u == "bible" {
+		if u == "ns" {
 			u = "\n:"
 		}
 		data += u + " dc:modified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
@@ -284,7 +284,7 @@ func doHTML() {
 
 	noindex := ""
 
-	if uri == "/ns" || uri == "/bible" || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/tomb/") {
+	if uri == "/ns" || strings.HasPrefix(uri, "/bible/") || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/tomb/") {
 
 		if strings.HasPrefix(uri, "/tomb/") {
 			year := time.Now().Year()
@@ -334,7 +334,7 @@ func doHTML() {
 		body = strings.Join(tokens, "")
 	}
 
-	if uri == "/ns" || uri == "/bible" {
+	if uri == "/ns" {
 		lines := strings.Split(body, "\n")
 		inClass := false
 		class := ""
@@ -344,7 +344,7 @@ func doHTML() {
 				inClass = false
 				continue
 			}
-			if (!strings.HasPrefix(line, ":") && !strings.HasPrefix(line, "bible:")) || strings.HasPrefix(line, ": ") {
+			if !strings.HasPrefix(line, ":") || strings.HasPrefix(line, ": ") {
 				continue
 			}
 			a := strings.SplitN(line, " ", 2)
@@ -367,10 +367,6 @@ func doHTML() {
 	class := ""
 	if title == "ns" {
 		title = "ns#"
-		class = "ns"
-	}
-	if title == "bible" {
-		title = "bible#"
 		class = "ns"
 	}
 	fmt.Printf(`Content-type: text/html; charset=UTF-8

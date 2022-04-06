@@ -64,7 +64,7 @@ SELECT DISTINCT ?tomb ?name {
   ?tomb :site site:` + site + ` .
   ?tomb :subject ?p .
   ?p a :Person .
-  ?p :name / :fullname ?name .
+  ?p :name / :fullName ?name .
 }
 ORDER BY ?name ?tomb
 `

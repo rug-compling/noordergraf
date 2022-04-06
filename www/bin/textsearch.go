@@ -55,7 +55,7 @@ PREFIX : <https://noordergraf.rug.nl/ns#>
 SELECT ?s ?o {
   ?s :name ?n .
   ?n fti:match ( %q "fullname" ) .
-  ?n :fullname ?o .
+  ?n :fullName ?o .
 }
 ORDER BY ?s
 `
@@ -76,6 +76,7 @@ ORDER BY ?s ?o
 	query := fmt.Sprintf(template, qq)
 
 	request := "http://localhost:10035/repositories/noordergraf?limit=1000&query=" + url.QueryEscape(query)
+	fmt.Println(request)
 	resp, err := http.Get(request)
 	if x(err, http.StatusInternalServerError) {
 		return

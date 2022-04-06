@@ -5,7 +5,7 @@ tomb:T00327
   :image [
     dc:date "2019-10-19T14:43:58"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
+    a :Image ;
     :file img:T00327.jpg ;
     :geo [
       a geo:Point ;
@@ -23,14 +23,14 @@ tomb:T00327
       :part bible:Psalms ;
       :verse "14"
     ] ;
-    :target t00327:P4 ;
+    :quoteSubject t00327:P4 ;
     :text "ps.10:14 onb."
   ] ;
   :site site:NLdr7907chHoogeveen ;
   :subject t00327:P1, t00327:P2, t00327:P3, t00327:P4 ;
   :symbol [
     a :Symbol ;
-    :sym symbol:WeepingWillow
+    :symbolType symbol:WeepingWillow
   ] ;
   :text """TODO: hier
 rust
@@ -81,7 +81,7 @@ t00327:P1
   ] ;
   :name [
     a :Name ;
-    :fullname "Lucia Erdt" ;
+    :fullName "Lucia Erdt" ;
     :text "TODO: Lucia Erdt"
   ] ;
   :placeOfBirth t00327:C1 ;
@@ -99,7 +99,7 @@ t00327:P2
   a :Male ;
   :name [
     a :Name ;
-    :fullname "Harm Faas" ;
+    :fullName "Harm Faas" ;
     :text "TODO: Harm Faas"
   ] .
 
@@ -107,7 +107,7 @@ t00327:P3
   a :Male ;
   :name [
     a :Name ;
-    :fullname "J. Hutten" ;
+    :fullName "J. Hutten" ;
     :text "TODO: J. Hutten"
   ] .
 
@@ -128,7 +128,7 @@ t00327:P4
   ] ;
   :name [
     a :Name ;
-    :fullname "Aaltje Faas" ;
+    :fullName "Aaltje Faas" ;
     :text "TODO: Aaltje Faas"
   ] ;
   :placeOfBirth t00327:C1 ;
@@ -150,6 +150,6 @@ t00327:V1
     :part bible:Revelation ;
     :verse "13B"
   ] ;
-  :target t00327:P1 ;
+  :quoteSubject t00327:P1 ;
   :text "TODO" .
 

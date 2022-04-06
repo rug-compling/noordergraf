@@ -1,8 +1,8 @@
 
-:SymbolClassShape a sh:NodeShape ;
+:SymbolTypeShape a sh:NodeShape ;
   sh:closed true ;
-  sh:targetClass :SymbolClass ;
-  sh:class :SymbolClass ;
+  sh:targetClass :SymbolType ;
+  sh:class :SymbolType ;
   sh:property [
     sh:path rdf:type ;
     sh:minCount 1;
@@ -23,7 +23,7 @@
   ] ;
   sh:property [
     sh:path :image ;
-    sh:class :Photo ;
+    sh:class :Image ;
     sh:maxCount 1
   ] ;
   sh:property [

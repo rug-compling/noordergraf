@@ -22,11 +22,6 @@ cat ns.ttl
 echo
 $ECHO '}'
 
-$ECHO '<bible> {'
-cat bible.ttl
-echo
-$ECHO '}'
-
 cd tomb
 fgrep -h '@prefix' *.ttl
 echo
@@ -36,6 +31,17 @@ do
     $ECHO "<tomb/$name> {"
     echo "tomb:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
     fgrep -h -v '@prefix' $i | ../../tools/name2soundex
+    echo
+    $ECHO "}"
+done
+
+cd ../bible
+for i in *.ttl
+do
+    name="`basename $i .ttl`"
+    $ECHO "<bible/$name> {"
+    echo "bible:$name dc:modified \"`date -u -Iseconds -r$i`\"^^xsd:dateTime ."
+    cat $i
     echo
     $ECHO "}"
 done

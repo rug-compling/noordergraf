@@ -5,7 +5,7 @@ tomb:T00322
   :image [
     dc:date "2019-10-19T14:22:32"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
+    a :Image ;
     :file img:T00322.jpg ;
     :geo [
       a geo:Point ;
@@ -22,7 +22,7 @@ tomb:T00322
       :part bible:Psalms ;
       :verse "1"
     ] ;
-    :target t00322:P1 ;
+    :quoteSubject t00322:P1 ;
     :text "Ps. 23 v.1."
   ], [
     a :Quote ;
@@ -32,14 +32,14 @@ tomb:T00322
       :part bible:Psalms ;
       :verse "12C"
     ] ;
-    :target t00322:P2 ;
+    :quoteSubject t00322:P2 ;
     :text "Ps. 84 v.12c."
   ] ;
   :site site:NLdr7907chHoogeveen ;
   :subject t00322:P1, t00322:P2 ;
   :symbol [
     a :Symbol ;
-    :sym symbol:WeepingWillow
+    :symbolType symbol:WeepingWillow
   ] ;
   :text """TODO: hier rust
 het
@@ -78,7 +78,7 @@ t00322:P1
   ] ;
   :name [
     a :Name ;
-    :fullname "Aaltje Zomer" ;
+    :fullName "Aaltje Zomer" ;
     :text "TODO: Aaltje Zomer"
   ] ;
   :relation [
@@ -108,7 +108,7 @@ t00322:P2
   ] ;
   :name [
     a :Name ;
-    :fullname "Gerrit Scholten" ;
+    :fullName "Gerrit Scholten" ;
     :text "TODO: Gerrit Scholten"
   ] ;
   :relation [

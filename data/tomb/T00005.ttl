@@ -5,7 +5,7 @@ tomb:T00005
   :image [
     dc:date "2019-09-25T16:51:39"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
+    a :Image ;
     :file img:T00005.jpg ;
     :geo [
       a geo:Point ;
@@ -19,7 +19,7 @@ tomb:T00005
   :subject t00005:P1, t00005:P2, t00005:P3, t00005:P4, t00005:P5 ;
   :symbol [
     a :Symbol ;
-    :sym symbol:Frond
+    :symbolType symbol:Frond
   ] ;
   :text """hier rusten
 THIJSSIENA PIETA
@@ -56,7 +56,7 @@ t00005:P1
   ] ;
   :name [
     a :Name ;
-    :fullname "Thijssiena Pieta" ;
+    :fullName "Thijssiena Pieta" ;
     :text "THIJSSIENA PIETA"
   ] ;
   :relation [
@@ -68,7 +68,7 @@ t00005:P2
   a :Male ;
   :name [
     a :Name ;
-    :fullname "J. Bron" ;
+    :fullName "J. Bron" ;
     :text "J. BRON"
   ] .
 
@@ -76,7 +76,7 @@ t00005:P3
   a :Female ;
   :name [
     a :Name ;
-    :fullname "T. Bron-Oosterhuis" ;
+    :fullName "T. Bron-Oosterhuis" ;
     :text "T. BRON_OOSTERHUIS"
   ] .
 
@@ -97,7 +97,7 @@ t00005:P4
   ] ;
   :name [
     a :Name ;
-    :fullname "Marten Bron" ;
+    :fullName "Marten Bron" ;
     :text "MARTEN BRON"
   ] ;
   :relation [
@@ -122,7 +122,7 @@ t00005:P5
   ] ;
   :name [
     a :Name ;
-    :fullname "Barbara Westerling" ;
+    :fullName "Barbara Westerling" ;
     :text "B. WESTERLING", "BARBARA WESTERLING"
   ] .
 
@@ -134,7 +134,7 @@ t00005:V1
     :part bible:Psalms ;
     :verse "5"
   ] ;
-  :target t00005:P1 ;
+  :quoteSubject t00005:P1 ;
   :text "ps. 105:5" .
 
 t00005:V2
@@ -145,7 +145,7 @@ t00005:V2
     :part bible:Psalms ;
     :verse "18"
   ] ;
-  :target t00005:P4 ;
+  :quoteSubject t00005:P4 ;
   :text "ps. 145:18" .
 
 t00005:V3
@@ -157,6 +157,6 @@ t00005:V3
     :bibleSource <https://www.bible.com/nl/bible/75/1JN.1.7> ;
     :verse "7"
   ] ;
-  :target t00005:P5 ;
+  :quoteSubject t00005:P5 ;
   :text "1 joh. 1:7" .
 

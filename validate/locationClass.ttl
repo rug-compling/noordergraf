@@ -1,8 +1,8 @@
 
-:PlaceClassShape a sh:NodeShape ;
+:LocationClassShape a sh:NodeShape ;
   sh:closed true ;
-  sh:targetClass :PlaceClass ;
-  sh:class :PlaceClass ;
+  sh:targetClass :LocationClass ;
+  sh:class :LocationClass ;
   sh:property [
     sh:path rdf:type ;
     sh:minCount 1;
@@ -20,7 +20,7 @@
   ] ;
   sh:property [
     sh:path :partOf ;
-    sh:class :PlaceClass
+    sh:class :LocationClass
   ] ;
   sh:property [
     sh:path :text ;

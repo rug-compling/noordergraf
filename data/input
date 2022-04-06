@@ -17,13 +17,18 @@ agtool load \
 
 echo
 
-python3 mkfti.py
+python3 ../tools/mkfti.py
 ../tools/chkll
 ../tools/chkplace
 ../tools/chktags
 ../tools/mkprops > ns.json
 ../tools/mksymidx > ../www/sym/index.body.eng
 ../tools/mksymidx -n > ../www/sym/index.body.nld
+
+../tools/prefix2allegro.py > /home/p209327/opt/agraph/data/settings/default-namespaces
+mkdir -p /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces
+../tools/prefix2allegro.py > /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous
+../tools/prefix2allegro.py > /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/peter
 
 echo OK
 echo
