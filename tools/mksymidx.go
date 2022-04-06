@@ -1,5 +1,13 @@
 package main
 
+/*
+
+Dit programma maakt de body van de html-weergave van de lijst met symbolen
+
+Dit programma wordt aangeroepen vanuit /net/noordergraf/data/input
+
+*/
+
 import (
 	"github.com/pebbe/util"
 
@@ -42,7 +50,7 @@ func main() {
 PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX symbol: <https://noordergraf.rug.nl/symbol/>
 SELECT ?symbool (count(?symbool) as ?aantal) ?text {
-  ?a :symbol / :sym ?symbool .
+  ?a :symbol / :symbolType ?symbool .
   ?symbool rdfs:comment ?text .
   FILTER ( langMatches(lang(?text), "` + lang + `") )
 }

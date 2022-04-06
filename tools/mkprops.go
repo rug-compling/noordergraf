@@ -1,5 +1,16 @@
 package main
 
+/*
+
+Dit programma maakt een lijst van property's en subklassen voor alle klassen
+
+De lijst wordt opgeslagen in /net/noordergraf/data/ns.json en
+gebruikt voor de html-weergave van ns.ttl
+
+Dit programma wordt aangeroepen vanuit /net/noordergraf/data/input
+
+*/
+
 import (
 	"github.com/pebbe/util"
 

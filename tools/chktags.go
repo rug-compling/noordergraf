@@ -1,5 +1,16 @@
 package main
 
+/*
+
+Dit programma controleert op het gebruik van geldige language tags
+
+Geldige language tags staan in bestand chktags.tags
+
+Dit programma wordt aangeroepen vanuit /net/noordergraf/data/input
+
+*/
+
+
 import (
 	"github.com/pebbe/util"
 

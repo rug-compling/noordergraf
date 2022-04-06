@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+# Dit programma set /net/noordergraf/data/prefix.ttl om in het formaat
+# gebruikt door de server van AllegroGraph
+#
+# Dit programma wordt aangeroepen vanuit /net/noordergraf/data/input
+
 import sys
 
 lines = []

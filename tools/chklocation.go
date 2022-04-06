@@ -1,5 +1,14 @@
 package main
 
+/*
+
+Dit programma controleert dat :LocationClass de predicaten :place en/of :coordinates heeft
+
+
+Dit programma wordt aangeroepen vanuit /net/noordergraf/data/input
+
+*/
+
 import (
 	"github.com/pebbe/util"
 
@@ -35,7 +44,7 @@ func main() {
 	// inference werkt niet binnen een GRAPH blok
 	query := `
 SELECT ?g ?p ?text {
-  ?a a :PlaceClass .
+  ?a a :LocationClass .
   GRAPH ?g {
     ?s ?p ?a .
   }

@@ -1,5 +1,14 @@
 package main
 
+/*
+
+Dit programma voegt :fullNameSE toe voor elke :fullName, een ad hoc
+versie van soundex voor Nederlandse namen
+
+Dit programma wordt aangeroepen vanuit /net/noordergraf/data/concat
+
+*/
+
 import (
 	"github.com/pebbe/util"
 	"github.com/rug-compling/noordergraf/go/nlsoundex"

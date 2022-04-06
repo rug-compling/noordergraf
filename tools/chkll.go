@@ -1,5 +1,14 @@
 package main
 
+/*
+
+Dit programma controleert dat de predicaten :geo en :nd altijd samen worden gebruikt
+en dat de waardes met elkaar overeen komen.
+
+Dit programma wordt aangeroepen vanuit /net/noordergraf/data/input
+
+*/
+
 import (
 	"github.com/pebbe/util"
 
