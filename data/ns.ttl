@@ -59,7 +59,8 @@
   rdfs:label "nd" ;
   rdfs:comment "Used by AllegroGraph for geodesic calculations."@eng ;
   rdfs:comment "Door AllegroGraph gebruikt voor geodetische berekeningen."@nld ;
-  rdfs:seeAlso <https://en.wikipedia.org/wiki/ISO_6709#String_expression_(Annex_H)> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/ISO_6709#String_expression_(Annex_H)> ,
+               <https://franz.com/agraph/support/documentation/current/geospatial-nd.html#The-datatype-has-spherical-ordinates> ;
   rdfs:domain :WithGeo ;
   rdfs:range ll: ;
   rdfs:isDefinedBy : .
@@ -296,7 +297,7 @@
   rdfs:isDefinedBy : .
 
 :place a rdf:Property ;
-  rdfs:label "placename" ;
+  rdfs:label "place" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :LocationClass ;
@@ -418,16 +419,16 @@
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:fullname a rdf:Property ;
-  rdfs:label "fullname" ;
+:fullName a rdf:Property ;
+  rdfs:label "fullName" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Name ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
 
-:fullnameSE a rdf:Property ;
-  rdfs:label "fullnameSE" ;
+:fullNameSE a rdf:Property ;
+  rdfs:label "fullNameSE" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Name ;
@@ -1266,8 +1267,8 @@
   rdfs:range schema:PostalAddress ;
   rdfs:isDefinedBy : .
 
-:sitename a rdf:Property ;
-  rdfs:label "sitename" ;
+:siteName a rdf:Property ;
+  rdfs:label "siteName" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Site ;
