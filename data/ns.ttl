@@ -27,18 +27,46 @@
 
 ################################################################
 
-:WithText a rdfs:Class ;
-  rdfs:label "WithText" ;
+:WithDate a rdfs:Class ;
+  rdfs:label "WithDate" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:text a rdf:Property ;
-  rdfs:label "text" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
-  rdfs:domain :WithText ;
-  rdfs:range xsd:string , rdf:langString ;
+:date a rdf:Property ;
+  rdfs:label "date" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDate ;
+  rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
+  rdfs:isDefinedBy : .
+
+:WithDuration a rdfs:Class ;
+  rdfs:label "WithDuration" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:duration a rdf:Property ;
+  rdfs:label "duration" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDuration ;
+  rdfs:range xsd:duration ;
+  rdfs:isDefinedBy : .
+
+:WithFile a rdfs:Class ;
+  rdfs:label "WithFile" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:file a rdf:Property ;
+  rdfs:label "file" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithFile ;
+  rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : .
 
 :WithGeography a rdfs:Class ;
@@ -65,32 +93,46 @@
   rdfs:range ll: ;
   rdfs:isDefinedBy : .
 
-:WithDate a rdfs:Class ;
-  rdfs:label "WithDate" ;
+:WithInferred a rdfs:Class ;
+  rdfs:label "WithInferred" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:date a rdf:Property ;
-  rdfs:label "date" ;
+:inferred a rdf:Property ;
+  rdfs:label "inferred" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :WithDate ;
-  rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
+  rdfs:domain :WithInferred ;
+  rdfs:range xsd:boolean ;
   rdfs:isDefinedBy : .
 
-:WithImage a rdfs:Class ;
-  rdfs:label "WithImage" ;
+:WithLocation a rdfs:Class ;
+  rdfs:label "WithLocation" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:image a rdf:Property ;
-  rdfs:label "image" ;
+:location a rdf:Property ;
+  rdfs:label "location" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :WithImage ;
-  rdfs:range :Image ;
+  rdfs:domain :WithLocation ;
+  rdfs:range :LocationClass ;
+  rdfs:isDefinedBy : .
+
+:WithName a rdfs:Class ;
+  rdfs:label "WithName" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:name a rdf:Property ;
+  rdfs:label "name" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithName ;
+  rdfs:range :Name ;
   rdfs:isDefinedBy : .
 
 # TODO:
@@ -143,60 +185,18 @@
   rdfs:range :Period ;
   rdfs:isDefinedBy : .
 
-:WithInferred a rdfs:Class ;
-  rdfs:label "WithInferred" ;
+:WithText a rdfs:Class ;
+  rdfs:label "WithText" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:inferred a rdf:Property ;
-  rdfs:label "inferred" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :WithInferred ;
-  rdfs:range xsd:boolean ;
-  rdfs:isDefinedBy : .
-
-:WithLocation a rdfs:Class ;
-  rdfs:label "WithLocation" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:location a rdf:Property ;
-  rdfs:label "location" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :WithLocation ;
-  rdfs:range :LocationClass ;
-  rdfs:isDefinedBy : .
-
-:WithName a rdfs:Class ;
-  rdfs:label "WithName" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:name a rdf:Property ;
-  rdfs:label "name" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :WithName ;
-  rdfs:range :Name ;
-  rdfs:isDefinedBy : .
-
-:WithDuration a rdfs:Class ;
-  rdfs:label "WithDuration" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:duration a rdf:Property ;
-  rdfs:label "duration" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :WithDuration ;
-  rdfs:range xsd:duration ;
+:text a rdf:Property ;
+  rdfs:label "text" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :WithText ;
+  rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -206,6 +206,31 @@
   rdfs:label "Age" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
+:Album a rdfs:Class ;
+  rdfs:subClassOf :Class , :WithDate ;
+  rdfs:label "Album" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:isDefinedBy : .
+
+:albumTitle a rdf:Property ;
+  rdfs:label "albumTitle" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :Album ;
+  rdfs:range xsd:string , rdf:langString ;
+  rdfs:isDefinedBy : .
+
+:discogs a rdf:Property ;
+  rdfs:label "discogs" ;
+  rdfs:comment "TODO"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :Album ;
+  rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -319,40 +344,6 @@
 :Statue a rdfs:Class ;
   rdfs:subClassOf :FigureClass ;
   rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-################################################################
-
-:Image a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithGeography ;
-  rdfs:label "Image" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:file a rdf:Property ;
-  rdfs:label "file" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Image ;
-  rdfs:range rdfs:Resource ;
-  rdfs:isDefinedBy : .
-
-:imagesParts a rdf:Property ;
-  rdfs:label "imageParts" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Image ;
-  rdfs:range :ImagePart ;
-  rdfs:isDefinedBy : .
-
-################################################################
-
-:ImagePart a rdfs:Class ;
-  rdfs:subClassOf :Class ;
-  rdfs:label "ImagePart" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -563,6 +554,20 @@
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
+:Battalion a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:Community a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
 :Company a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
@@ -584,7 +589,7 @@
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:Community a rdfs:Class ;
+:StateAsOrganisation  a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
@@ -598,21 +603,7 @@
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:Battalion a rdfs:Class ;
-  rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
 :University a rdfs:Class ;
-  rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:StateAsOrganisation  a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
@@ -741,6 +732,41 @@
 :Personnel a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
+:Photo a rdfs:Class ;
+  rdfs:subClassOf :Class , :WithFile , :WithGeography ;
+  rdfs:label "Photo" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
+:Pictogram a rdfs:Class ;
+  rdfs:subClassOf :Class , :WithFile ;
+  rdfs:label "Pictogram" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:pictogramParts a rdf:Property ;
+  rdfs:label "pictogramParts" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Pictogram ;
+  rdfs:range :PictogramPart ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
+:PictogramPart a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:label "PictogramPart" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -884,7 +910,7 @@
   rdfs:isDefinedBy : .
 
 :MusicReference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass , :WithDate ;
+  rdfs:subClassOf :ReferenceClass ;
   rdfs:label "MusicReference" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -895,19 +921,11 @@
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
   rdfs:domain :MusicReference ;
-  rdfs:range xsd:string ;
+  rdfs:range :Artist ;
   rdfs:isDefinedBy : .
 
 :trackTitle a rdf:Property ;
   rdfs:label "trackTitle" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
-  rdfs:domain :MusicReference ;
-  rdfs:range xsd:string , rdf:langString ;
-  rdfs:isDefinedBy : .
-
-:albumTitle a rdf:Property ;
-  rdfs:label "albumTitle" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
   rdfs:domain :MusicReference ;
@@ -922,12 +940,12 @@
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
 
-:discogs a rdf:Property ;
-  rdfs:label "discogs" ;
+:album a rdf:Property ;
+  rdfs:label "album" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
   rdfs:domain :MusicReference ;
-  rdfs:range rdfs:Resource ;
+  rdfs:range :Album ;
   rdfs:isDefinedBy : .
 
 :BookReference a rdfs:Class ;
@@ -1305,19 +1323,35 @@
 ################################################################
 
 :SymbolType a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithImage ;
+  rdfs:subClassOf :Class ;
   rdfs:label "SymbolType" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
+:pictogram a rdf:Property ;
+  rdfs:label "pictogram" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :SymbolType ;
+  rdfs:range :Pictogram ;
+  rdfs:isDefinedBy : .
+
 ###############################################################
 
 :Tomb a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText , :WithDate , :WithImage ;
+  rdfs:subClassOf :Class , :WithText , :WithDate ;
   rdfs:label "Tomb" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:photo a rdf:Property ;
+  rdfs:label "photo" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Tomb ;
+  rdfs:range :Photo ;
   rdfs:isDefinedBy : .
 
 :commemorator a rdf:Property ;

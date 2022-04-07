@@ -10,10 +10,10 @@ JACOB F. HOLWERDA
 
 Zien leste toentje
 """ ;
-  :image [
+  :photo [
     dc:date "2019-11-30T14:21:42"^^xsd:dateTime ;
     dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Image ;
+    a :Photo ;
     :file img:T00594.jpg ;
     :geo [
       a geo:Point ;
@@ -28,16 +28,10 @@ Zien leste toentje
 of t wer altied wel weer licht."""@gos ;
     :reference [
       a :MusicReference ;
-      :artist [
-        a :SingerSongwriter ;
-	:artistName "Ede Staal" ;
-	schema:sameAs wikidata:Q1810851
-      ] ;
+      :artist t00594:P2 ;
       :trackTitle "t Het nog nooit zo donker west"@gos ;
-      :albumTitle "Mien toentje"@gos ;
       :albumTrack "A2" ;
-      :date "1984"^^xsd:gYear ;
-      :discogs discogs:850334
+      :album t00594:A1
     ]
   ] , [
     a :Quote ;
@@ -45,16 +39,10 @@ of t wer altied wel weer licht."""@gos ;
     :comment "parafrase" ;
     :reference [
       a :MusicReference ;
-      :artist [
-        a :SingerSongwriter ;
-	:artistName "Ede Staal" ;
-	schema:sameAs wikidata:Q1810851
-      ] ;
+      :artist t00594:P2 ;
       :trackTitle "Mien Toentje"@gos ;
-      :albumTitle "Mien toentje"@gos ;
       :albumTrack "A1" ;
-      :date "1984"^^xsd:gYear ;
-      :discogs discogs:850334
+      :album t00594:A1
     ]
   ] ;
   :site site:NLgr9951tnWinsum ;
@@ -81,3 +69,13 @@ t00594:P1
     :text "JACOB F. HOLWERDA"
   ] .
 
+t00594:P2
+  a :SingerSongwriter ;
+  :artistName "Ede Staal" ;
+  schema:sameAs wikidata:Q1810851 .
+
+t00594:A1
+  a :Album ;
+  :albumTitle "Mien toentje"@gos ;
+  :date "1984"^^xsd:gYear ;
+  :discogs discogs:850334 .

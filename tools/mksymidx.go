@@ -88,7 +88,7 @@ ORDER BY ?symbool
 			}
 		}
 		fmt.Printf(`<figure>
-  <p><a href="/symbol/%s"><img src="/sym/%s100.png" alt="%s" title="%s" width="100" height="100"></a></p>
+  <p><a href="/symbol/%s"><img src="/picto/%s100.png" alt="%s" title="%s" width="100" height="100"></a></p>
   <figcaption>%s<br>%s</figcaption>
 </figure>
 `, name, name, title, title, name, count)

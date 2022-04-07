@@ -429,7 +429,7 @@ Last-Modified: %s
 			if language == "nl" {
 				lang = "nld"
 			}
-			b, err := ioutil.ReadFile("/net/noordergraf/www/sym/index.body." + lang)
+			b, err := ioutil.ReadFile("/net/noordergraf/www/picto/index.body." + lang)
 			if err != nil {
 				fmt.Printf("Error: %s\n", html.EscapeString(err.Error()))
 			} else {

@@ -20,30 +20,13 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path :albumTitle ;
-    sh:or (
-      [ sh:datatype xsd:string ]
-      [ sh:datatype rdf:langString ]
-    ) ;
-    sh:maxCount 1
-  ] ;
-  sh:property [
     sh:path :albumTrack ;
     sh:datatype xsd:string ;
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path :date ;
-    sh:or (
-      [ sh:datatype xsd:date ]
-      [ sh:datatype xsd:gYearMonth ]
-      [ sh:datatype xsd:gYear ]
-    ) ;
-    sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path :discogs ;
-    sh:nodeKind sh:IRI ;
+    sh:path :album ;
+    sh:class :Album ;
     sh:maxCount 1
   ] ;
   sh:property [
