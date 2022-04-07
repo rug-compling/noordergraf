@@ -41,8 +41,8 @@
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
-:WithGeo a rdfs:Class ;
-  rdfs:label "WithGeo" ;
+:WithGeography a rdfs:Class ;
+  rdfs:label "WithGeography" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -51,7 +51,7 @@
   rdfs:label "geo" ;
   rdfs:comment "Geographical coordinates."@eng ;
   rdfs:comment "Geografische coördinaten."@nld ;
-  rdfs:domain :WithGeo ;
+  rdfs:domain :WithGeography ;
   rdfs:range geo:Point ;
   rdfs:isDefinedBy : .
 
@@ -61,7 +61,7 @@
   rdfs:comment "Door AllegroGraph gebruikt voor geodetische berekeningen."@nld ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/ISO_6709#String_expression_(Annex_H)> ,
                <https://franz.com/agraph/support/documentation/current/geospatial-nd.html#The-datatype-has-spherical-ordinates> ;
-  rdfs:domain :WithGeo ;
+  rdfs:domain :WithGeography ;
   rdfs:range ll: ;
   rdfs:isDefinedBy : .
 
@@ -185,6 +185,29 @@
   rdfs:range :Name ;
   rdfs:isDefinedBy : .
 
+:WithDuration a rdfs:Class ;
+  rdfs:label "WithDuration" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:duration a rdf:Property ;
+  rdfs:label "duration" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDuration ;
+  rdfs:range xsd:duration ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
+:Age a rdfs:Class ;
+  rdfs:subClassOf  :Class , :WithDuration , :WithText , :WithInferred ;
+  rdfs:label "Age" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
 ################################################################
 
 :Artist a rdfs:Class ;
@@ -221,7 +244,7 @@
 ################################################################
 
 :Coordinates a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithGeo ;
+  rdfs:subClassOf :Class , :WithGeography ;
   rdfs:label "Coordinates" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -264,8 +287,46 @@
 
 ################################################################
 
+:FigureClass a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:label "FigureClass" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:theme a rdf:Property ;
+  rdfs:label "theme" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :FigureClass ;
+  rdfs:range :Person ;
+  rdfs:isDefinedBy : .
+
+:Bust a rdfs:Class ;
+  rdfs:subClassOf :FigureClass ;
+  rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:Portrait a rdfs:Class ;
+  rdfs:subClassOf :FigureClass ;
+  rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:Statue a rdfs:Class ;
+  rdfs:subClassOf :FigureClass ;
+  rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
 :Image a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithGeo ;
+  rdfs:subClassOf :Class , :WithGeography ;
   rdfs:label "Image" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -279,12 +340,21 @@
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : .
 
-:parts a rdf:Property ;
-  rdfs:label "parts" ;
+:imagesParts a rdf:Property ;
+  rdfs:label "imageParts" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Image ;
-  rdfs:range :Part ;
+  rdfs:range :ImagePart ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
+:ImagePart a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:label "ImagePart" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -551,33 +621,9 @@
 
 ################################################################
 
-:Part a rdfs:Class ;
-  rdfs:subClassOf :Class ;
-  rdfs:label "Part" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-################################################################
-
 :Period a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText ;
+  rdfs:subClassOf :Class , :WithDuration , :WithText ;
   rdfs:label "Tomb" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:duration a rdf:Property ;
-  rdfs:label "duration" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Period ;
-  rdfs:range xsd:duration ;
-  rdfs:isDefinedBy : .
-
-:Age a rdfs:Class ;
-  rdfs:subClassOf :Period , :WithInferred ;
-  rdfs:label "Age" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -701,46 +747,8 @@
 
 ################################################################
 
-:PictureClass a rdfs:Class ;
-  rdfs:subClassOf :Class ;
-  rdfs:label "PictureClass" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:theme a rdf:Property ;
-  rdfs:label "theme" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :PictureClass ;
-  rdfs:range :Person ;
-  rdfs:isDefinedBy : .
-
-:Bust a rdfs:Class ;
-  rdfs:subClassOf :PictureClass ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:Portrait a rdfs:Class ;
-  rdfs:subClassOf :PictureClass ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:Statue a rdfs:Class ;
-  rdfs:subClassOf :PictureClass ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-################################################################
-
 :Place a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithGeo ;
+  rdfs:subClassOf :Class , :WithGeography ;
   rdfs:label "Place" ;
   rdfs:comment "Any place, such as place of birth or place of death, from hospital to country."@eng ;
   rdfs:comment "Een plek, zoals geboorteplaats of plaats van overlijden, van ziekenhuis tot land."@nld ;
@@ -1253,14 +1261,14 @@
 ###############################################################
 
 :Site a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithGeo ;
+  rdfs:subClassOf :Class , :WithGeography ;
   rdfs:label "Site" ;
   rdfs:comment "The site of a tomb, usually a cemetary."@eng ;
   rdfs:comment "De plek van een graf, gewoonlijk een kerkhof of begraafplaats."@nld ;
   rdfs:isDefinedBy : .
 
-:address a rdf:Property ;
-  rdfs:label "address" ;
+:siteAddress a rdf:Property ;
+  rdfs:label "siteAddress" ;
   rdfs:comment "Postal Address."@eng ;
   rdfs:comment "Adres, huisadres."@nld ;
   rdfs:domain :Site ;
@@ -1328,12 +1336,12 @@
   rdfs:range :Creator ;
   rdfs:isDefinedBy : .
 
-:picture a rdf:Property ;
-  rdfs:label "picture" ;
+:figure a rdf:Property ;
+  rdfs:label "figure" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Tomb ;
-  rdfs:range :PictureClass ;
+  rdfs:range :FigureClass ;
   rdfs:isDefinedBy : .
 
 :site a rdf:Property ;
