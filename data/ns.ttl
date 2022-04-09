@@ -118,7 +118,7 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithLocation ;
-  rdfs:range :LocationClass ;
+  rdfs:range :Location ;
   rdfs:isDefinedBy : .
 
 :WithName a rdfs:Class ;
@@ -312,9 +312,9 @@
 
 ################################################################
 
-:FigureClass a rdfs:Class ;
+:Figure a rdfs:Class ;
   rdfs:subClassOf :Class ;
-  rdfs:label "FigureClass" ;
+  rdfs:label "Figure" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -323,26 +323,26 @@
   rdfs:label "theme" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :FigureClass ;
+  rdfs:domain :Figure ;
   rdfs:range :Person ;
   rdfs:isDefinedBy : .
 
 :Bust a rdfs:Class ;
-  rdfs:subClassOf :FigureClass ;
+  rdfs:subClassOf :Figure ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Portrait a rdfs:Class ;
-  rdfs:subClassOf :FigureClass ;
+  rdfs:subClassOf :Figure ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Statue a rdfs:Class ;
-  rdfs:subClassOf :FigureClass ;
+  rdfs:subClassOf :Figure ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -350,9 +350,9 @@
 
 ################################################################
 
-:LocationClass a rdfs:Class ;
+:Location a rdfs:Class ;
   rdfs:subClassOf :Class , :WithText ;
-  rdfs:label "LocationClass" ;
+  rdfs:label "Location" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -361,7 +361,7 @@
   rdfs:label "place" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :LocationClass ;
+  rdfs:domain :Location ;
   rdfs:range :Place ;
   rdfs:isDefinedBy : .
 
@@ -369,7 +369,7 @@
   rdfs:label "coordinates" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :LocationClass ;
+  rdfs:domain :Location ;
   rdfs:range :Coordinates ;
   rdfs:isDefinedBy : .
 
@@ -377,96 +377,96 @@
   rdfs:label "partOf" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :LocationClass ;
-  rdfs:range :LocationClass ;
+  rdfs:domain :Location ;
+  rdfs:range :Location ;
   rdfs:isDefinedBy : .
 
 :Building a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :City a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Colony a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Country a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Hamlet a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Island a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Municipality a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Ocean a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Province a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Region a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :State a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Town a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Village a rdfs:Class ;
-  rdfs:subClassOf :LocationClass ;
+  rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -650,7 +650,7 @@
   rdfs:comment "Place of birth."@eng ;
   rdfs:comment "Geboorteplaats."@nld ;
   rdfs:domain :Person ;
-  rdfs:range :LocationClass ;
+  rdfs:range :Location ;
   rdfs:isDefinedBy : .
 
 :placeOfDeath a rdf:Property ;
@@ -658,7 +658,7 @@
   rdfs:comment "Place of death."@eng ;
   rdfs:comment "Plaats van overlijden."@nld ;
   rdfs:domain :Person ;
-  rdfs:range :LocationClass ;
+  rdfs:range :Location ;
   rdfs:isDefinedBy : .
 
 :age a rdf:Property ;
@@ -674,7 +674,7 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
-  rdfs:range :RelationClass ;
+  rdfs:range :Relation ;
   rdfs:isDefinedBy : .
 
 :occupation a rdf:Property ;
@@ -789,6 +789,94 @@
   rdfs:isDefinedBy : .
 
 ################################################################
+###############################################################
+
+:Plot a rdfs:Class ;
+  rdfs:subClassOf :Class , :WithText , :WithDate ;
+  rdfs:label "Plot" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:photo a rdf:Property ;
+  rdfs:label "photo" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Plot ;
+  rdfs:range :Photo ;
+  rdfs:isDefinedBy : .
+
+:commemorator a rdf:Property ;
+  rdfs:label "commemorator" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Plot ;
+  rdfs:range :Person ;
+  rdfs:isDefinedBy : .
+
+:creator a rdf:Property ;
+  rdfs:label "creator" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Plot ;
+  rdfs:range :Creator ;
+  rdfs:isDefinedBy : .
+
+:figure a rdf:Property ;
+  rdfs:label "figure" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Plot ;
+  rdfs:range :Figure ;
+  rdfs:isDefinedBy : .
+
+:site a rdf:Property ;
+  rdfs:label "site" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Plot ;
+  rdfs:range :Site ;
+  rdfs:isDefinedBy : .
+
+:subject a rdf:Property ;
+  rdfs:label "subject" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Plot ;
+  rdfs:range :Person ;
+  rdfs:isDefinedBy : .
+
+:quote a rdf:Property ;
+  rdfs:label "quote" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Plot ;
+  rdfs:range :Quote ;
+  rdfs:isDefinedBy : .
+
+:symbol a rdf:Property ;
+  rdfs:label "symbol" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Plot ;
+  rdfs:range :Symbol ;
+  rdfs:isDefinedBy : .
+
+:Cross a rdfs:Class ;
+  rdfs:subClassOf :Plot ;
+  rdfs:label "Cross" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:Tomb a rdfs:Class ;
+  rdfs:subClassOf :Plot ;
+  rdfs:label "Cross" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+################################################################
 
 :Quantity a rdfs:Class ;
   rdfs:subClassOf :Class ;
@@ -819,7 +907,7 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Quote ;
-  rdfs:range :ReferenceClass ;
+  rdfs:range :Reference ;
   rdfs:isDefinedBy : .
 
 :quoteSubject a rdf:Property ;
@@ -833,22 +921,15 @@
 
 ################################################################
 
-:ReferenceClass a rdfs:Class ;
-  rdfs:subClassOf :Class ;
-  rdfs:label "ReferenceClass" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
-  rdfs:isDefinedBy : .
-
 :Reference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass ;
+  rdfs:subClassOf :Class ;
   rdfs:label "Reference" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
   rdfs:isDefinedBy : .
 
 :BibleReference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass ;
+  rdfs:subClassOf :Reference ;
   rdfs:label "BibleReference" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -887,7 +968,7 @@
   rdfs:isDefinedBy : .
 
 :HymnReference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass ;
+  rdfs:subClassOf :Reference ;
   rdfs:label "HymnReference" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -910,7 +991,7 @@
   rdfs:isDefinedBy : .
 
 :MusicReference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass ;
+  rdfs:subClassOf :Reference ;
   rdfs:label "MusicReference" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -949,7 +1030,7 @@
   rdfs:isDefinedBy : .
 
 :BookReference a rdfs:Class ;
-  rdfs:subClassOf :ReferenceClass , :WithDate ;
+  rdfs:subClassOf :Reference , :WithDate ;
   rdfs:label "BookReference" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -974,7 +1055,7 @@
 
 ################################################################
 
-:RelationClass a rdfs:Class ;
+:Relation a rdfs:Class ;
   rdfs:subClassOf :Class , :WithText , :WithTemporal , :WithInferred ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
@@ -985,292 +1066,292 @@
   rdfs:label "target" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
-  rdfs:domain :RelationClass ;
+  rdfs:domain :Relation ;
   rdfs:range :Person ;
   rdfs:isDefinedBy : .
 
 :Aunt a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :BrotherInLaw a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Brother a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Child a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Dad a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :DaughterInLaw a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Daughter a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Descendant a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :FatherInLaw a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Father a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :FosterParent a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Friend a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Grandaunt a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Grandchild a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Grandfather a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Grandmother a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Grandparent a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Granduncle a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :GreatGrandfather a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :GreatGrandmother a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :GreatGrandparent a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Housemate a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Housewife a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Husband a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Leermeester a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :MotherInLaw a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Mother a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Niece a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Parent a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Pupil a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Schoolmakker a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :SisterInLaw a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Sister a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Son a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Spouse a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Twin a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Uncle a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Verloofde a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Widow a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Widower a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Wife a rdfs:Class ;
-  rdfs:subClassOf :RelationClass ;
+  rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -1335,86 +1416,6 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :SymbolType ;
   rdfs:range :Pictogram ;
-  rdfs:isDefinedBy : .
-
-###############################################################
-
-:Tomb a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText , :WithDate ;
-  rdfs:label "Tomb" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:photo a rdf:Property ;
-  rdfs:label "photo" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Tomb ;
-  rdfs:range :Photo ;
-  rdfs:isDefinedBy : .
-
-:commemorator a rdf:Property ;
-  rdfs:label "commemorator" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Tomb ;
-  rdfs:range :Person ;
-  rdfs:isDefinedBy : .
-
-:creator a rdf:Property ;
-  rdfs:label "creator" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Tomb ;
-  rdfs:range :Creator ;
-  rdfs:isDefinedBy : .
-
-:figure a rdf:Property ;
-  rdfs:label "figure" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Tomb ;
-  rdfs:range :FigureClass ;
-  rdfs:isDefinedBy : .
-
-:site a rdf:Property ;
-  rdfs:label "site" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Tomb ;
-  rdfs:range :Site ;
-  rdfs:isDefinedBy : .
-
-:subject a rdf:Property ;
-  rdfs:label "subject" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Tomb ;
-  rdfs:range :Person ;
-  rdfs:isDefinedBy : .
-
-:quote a rdf:Property ;
-  rdfs:label "quote" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Tomb ;
-  rdfs:range :Quote ;
-  rdfs:isDefinedBy : .
-
-:symbol a rdf:Property ;
-  rdfs:label "symbol" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Tomb ;
-  rdfs:range :Symbol ;
-  rdfs:isDefinedBy : .
-
-:Cross a rdfs:Class ;
-  rdfs:subClassOf :Tomb ;
-  rdfs:label "Cross" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 ################################################################

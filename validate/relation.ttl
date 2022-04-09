@@ -1,8 +1,8 @@
 
 :RelationShape a sh:NodeShape ;
   sh:closed true ;
-  sh:targetClass :RelationClass ;
-  sh:class :RelationClass ;
+  sh:targetClass :Relation ;
+  sh:class :Relation ;
   sh:property [
     sh:path rdf:type ;
     sh:minCount 1
@@ -13,11 +13,11 @@
   ] ;
   sh:property [
     sh:path :after ;
-    sh:class :RelationClass
+    sh:class :Relation
   ] ;
   sh:property [
     sh:path :before ;
-    sh:class :RelationClass
+    sh:class :Relation
   ] ;
   sh:property [
     sh:path :period ;
