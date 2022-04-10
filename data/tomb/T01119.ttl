@@ -16,7 +16,13 @@ tomb:T01119
   ] ;
   :quote [
     a :Quote ;
-    :text "O, du lieber Augustin Alles ist hin!"@deu
+    :text """O, du lieber Augustin
+Alles ist hin!"""@deu ;
+    :reference [
+      a :FolkReference ;
+      schema:sameAs wikidata:Q45311 ;
+      rdfs:seeAlso <https://de.wikipedia.org/wiki/Marx_Augustin#O_du_lieber_Augustin>
+    ]
   ] ;
   :site site:NLgr9801caZuidhorn ;
   :subject t01119:P1 ;
@@ -24,7 +30,15 @@ tomb:T01119
     a :Symbol ;
     :symbolType symbol:Cow
   ] ;
-  :text "TODO" .
+  :text """Louwrens
+Louwe
+Wouda
+
+Hoogemeden 19 - 8 - 1925
+Groningen 6 - 6 - 2014
+
+O, du lieber Augustin
+Alles ist hin!""" .
 
 t01119:P1
   a :Male ;

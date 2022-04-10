@@ -121,7 +121,7 @@ gevonden: %d
 			if binding.Name == "s" {
 				uri = binding.URI
 			} else if binding.Name == "o" {
-				obj = binding.Literal
+				obj = strings.TrimSpace(binding.Literal)
 			}
 		}
 		uri = strings.Replace(uri, "https://noordergraf.rug.nl/", "", 1)
