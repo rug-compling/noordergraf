@@ -54,6 +54,7 @@
   rdfs:domain :WithDcCreator ;
   rdfs:range rdfs:Resource , xsd:string ;
   rdfs:isDefinedBy : ;
+  owl:sameAs dc:creator ;
   schema:sameAs dc:creator .
 
 :WithDcDate a rdfs:Class ;
@@ -69,6 +70,7 @@
   rdfs:domain :WithDcDate ;
   rdfs:range xsd:dateTime ;
   rdfs:isDefinedBy : ;
+  owl:sameAs dc:date ;
   schema:sameAs dc:date .
 
 :WithDcLicense a rdfs:Class ;
@@ -84,6 +86,7 @@
   rdfs:domain :WithDcLicense ;
   rdfs:range rdfs:Resource , xsd:string ;
   rdfs:isDefinedBy : ;
+  owl:sameAs dc:license ;
   schema:sameAs dc:license .
 
 :WithDcModified a rdfs:Class ;
@@ -99,6 +102,7 @@
   rdfs:domain :WithDcModified ;
   rdfs:range xsd:dateTime ;
   rdfs:isDefinedBy : ;
+  owl:sameAs dc:modified ;
   schema:sameAs dc:modified .
 
 :WithDcSource a rdfs:Class ;
@@ -114,6 +118,7 @@
   rdfs:domain :WithDcSource ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
+  owl:sameAs dc:source ;
   schema:sameAs dc:source .
 
 :WithDcTitle a rdfs:Class ;
@@ -129,6 +134,7 @@
   rdfs:domain :WithDcTitle ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : ;
+  owl:sameAs dc:title ;
   schema:sameAs dc:title .
 
 :WithDuration a rdfs:Class ;
@@ -238,6 +244,9 @@
   rdfs:domain :WithSameAs ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
+  owl:sameAs owl:sameAs ;
+  owl:sameAs schema:sameAs ;
+  schema:sameAs owl:sameAs ;
   schema:sameAs schema:sameAs .
 
 :WithSeeAlso a rdfs:Class ;
@@ -253,6 +262,7 @@
   rdfs:domain :WithSeeAlso ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
+  owl:sameAs rdfs:seeAlso ;
   schema:sameAs rdfs:seeAlso .
 
 # TODO: WithTemporalRelation ?
@@ -500,6 +510,7 @@
   rdfs:comment "A point, typically described using a coordinate system relative to Earth, such as WGS84."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : ;
+  owl:sameAs geo:Point ;
   schema:sameAs geo:Point .
 
 :geoLat a rdf:Property ;
@@ -509,6 +520,7 @@
   rdfs:domain :GeoPoint ;
   rdfs:range xsd:decimal ;
   rdfs:isDefinedBy : ;
+  owl:sameAs geo:lat ;
   schema:sameAs geo:lat .
 
 :geoLong a rdf:Property ;
@@ -518,6 +530,7 @@
   rdfs:domain :GeoPoint ;
   rdfs:range xsd:decimal ;
   rdfs:isDefinedBy : ;
+  owl:sameAs geo:long ;
   schema:sameAs geo:long .
 
 ################################################################
@@ -1052,6 +1065,7 @@
   rdfs:comment "The mailing address."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : ;
+  owl:sameAs schema:PostalAddress ;
   schema:sameAs schema:PostalAddress .
 
 :addressCountry a rdf:Property ;
@@ -1061,6 +1075,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
+  owl:sameAs schema:addressCountry ;
   schema:sameAs schema:addressCountry .
 
 :addressLocality a rdf:Property ;
@@ -1070,6 +1085,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
+  owl:sameAs schema:addressLocality ;
   schema:sameAs schema:addressLocality .
 
 :addressRegion a rdf:Property ;
@@ -1079,6 +1095,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
+  owl:sameAs schema:addressRegion ;
   schema:sameAs schema:addressRegion .
 
 :postalCode a rdf:Property ;
@@ -1088,6 +1105,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
+  owl:sameAs schema:postalCode ;
   schema:sameAs schema:postalCode .
 
 :streetAddress a rdf:Property ;
@@ -1097,6 +1115,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
+  owl:sameAs schema:streetAddress ;
   schema:sameAs schema:streetAddress .
 
 ################################################################
