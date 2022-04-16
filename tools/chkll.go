@@ -48,12 +48,11 @@ func main() {
 
 	query := `
 PREFIX :    <https://noordergraf.rug.nl/ns#>
-PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT ?g ?ll ?lat ?lon {
   GRAPH ?g {
     ?s :geo ?geo .
-    ?geo geo:lat ?lat .
-    ?geo geo:long ?lon .
+    ?geo :geoLat ?lat .
+    ?geo :geoLong ?lon .
     ?s :nd ?ll .
   }
 } ORDER BY ?g
@@ -105,12 +104,11 @@ SELECT ?g ?ll ?lat ?lon {
 
 	query = `
 PREFIX :    <https://noordergraf.rug.nl/ns#>
-PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT ?g ?lat ?lon {
   GRAPH ?g {
     ?s :geo ?geo .
-    ?geo geo:lat ?lat .
-    ?geo geo:long ?lon .
+    ?geo :geoLat ?lat .
+    ?geo :geoLong ?lon .
     FILTER NOT EXISTS { ?s :nd ?ll }
   }
 } ORDER BY ?g

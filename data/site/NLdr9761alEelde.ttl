@@ -1,17 +1,17 @@
 site:NLdr9761alEelde a :Site ;
   :siteName "De Duinen, Eelde" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Vosbergerlaan" ;
-    schema:addressLocality "Eelde" ;
-    schema:addressRegion "Drenthe" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9761 AL"
+    a :PostalAddress ;
+    :streetAddress "Vosbergerlaan" ;
+    :addressLocality "Eelde" ;
+    :addressRegion "Drenthe" ;
+    :addressCountry "NL" ;
+    :postalCode "9761 AL"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1425 ;
-    geo:long 6.5782
+    a :GeoPoint ;
+    :geoLat 53.1425 ;
+    :geoLong 6.5782
   ] ;
   :nd "+53.1425+006.5782"^^ll:  .
 

@@ -15,12 +15,7 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path dc:date ;
-    sh:maxCount 1 ;
-    sh:datatype xsd:dateTime
-  ] ;
-  sh:property [
-    sh:path dc:license ;
+    sh:path :dcLicense ;
     sh:maxCount 1 ;
     sh:or (
       [ sh:nodeKind sh:IRI ]
@@ -28,19 +23,19 @@
     )
   ] ;
   sh:property [
-    sh:path dc:source ;
+    sh:path :dcSource ;
     sh:maxCount 1 ;
     sh:nodeKind sh:IRI
   ] ;
   sh:property [
-    sh:path dc:creator ;
+    sh:path :dcCreator ;
     sh:or (
       [ sh:nodeKind sh:IRI ]
       [ sh:datatype xsd:string ]
     )
   ] ;
   sh:property [
-    sh:path dc:title ;
+    sh:path :dcTitle ;
     sh:or (
       [ sh:datatype xsd:string ]
       [ sh:datatype rdf:langString ]

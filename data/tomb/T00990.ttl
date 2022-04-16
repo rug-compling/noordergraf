@@ -3,14 +3,14 @@
 tomb:T00990
   a :Tomb ;
   :photo [
-    dc:date "2020-04-05T12:18:10"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :dcDate "2020-04-05T12:18:10"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:T00990.jpg ;
     :geo [
-      a geo:Point ;
-      geo:lat 53.2432 ;
-      geo:long 6.6280
+      a :GeoPoint ;
+      :geoLat 53.2432 ;
+      :geoLong 6.6280
     ] ;
     :nd "+53.2432+006.6280"^^ll:
   ] ;
@@ -57,9 +57,9 @@ t00990:P1
     :coordinates [
       a :Coordinates ;
       :geo [
-        a geo:Point ;
-        geo:lat 53.2306 ;
-        geo:long 6.5976
+        a :GeoPoint ;
+        :geoLat 53.2306 ;
+        :geoLong 6.5976
       ] ;
       :nd "+53.2306+006.5976"^^ll:
     ]

@@ -1,17 +1,17 @@
 site:NLgr9479tnNoordlaren a :Site ;
   :siteName "Pollseweg, Noordlaren" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Pollseweg" ;
-    schema:addressLocality "Noordlaren" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9479 TN"
+    a :PostalAddress ;
+    :streetAddress "Pollseweg" ;
+    :addressLocality "Noordlaren" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9479 TN"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1201 ;
-    geo:long 6.6587
+    a :GeoPoint ;
+    :geoLat 53.1201 ;
+    :geoLong 6.6587
   ] ;
   :nd "+53.1201+006.6587"^^ll: .
 

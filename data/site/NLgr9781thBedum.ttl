@@ -1,17 +1,17 @@
 site:NLgr9781thBedum a :Site ;
   :siteName "Klokkentoren Westerdijkshorn" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Westerdijkshorn" ;
-    schema:addressLocality "Bedum" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9781 TH"
+    a :PostalAddress ;
+    :streetAddress "Westerdijkshorn" ;
+    :addressLocality "Bedum" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9781 TH"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.3085 ;
-    geo:long 6.5756
+    a :GeoPoint ;
+    :geoLat 53.3085 ;
+    :geoLong 6.5756
   ] ;
   :nd "+53.3085+006.5756"^^ll: .
 

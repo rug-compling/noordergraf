@@ -1,17 +1,17 @@
 site:NLfr8917avLeeuwarden a :Site ;
   :siteName "Joodse Begraafplaats, Leeuwarden" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Spanjaardslaan 76" ;
-    schema:addressLocality "Leeuwarden" ;
-    schema:addressRegion "Friesland" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "8917 AV"
+    a :PostalAddress ;
+    :streetAddress "Spanjaardslaan 76" ;
+    :addressLocality "Leeuwarden" ;
+    :addressRegion "Friesland" ;
+    :addressCountry "NL" ;
+    :postalCode "8917 AV"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2096 ;
-    geo:long 5.7909
+    a :GeoPoint ;
+    :geoLat 53.2096 ;
+    :geoLong 5.7909
   ] ;
   :nd "+53.2096+005.7909"^^ll: .
 

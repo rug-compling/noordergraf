@@ -1,17 +1,17 @@
 site:NLgr9741ghGroningen a :Site ;
   :siteName "Selwerderhof, Groningen" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Iepenlaan 204" ;
-    schema:addressLocality "Groningen" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9741 GH"
+    a :PostalAddress ;
+    :streetAddress "Iepenlaan 204" ;
+    :addressLocality "Groningen" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9741 GH"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2404 ;
-    geo:long 6.5495
+    a :GeoPoint ;
+    :geoLat 53.2404 ;
+    :geoLong 6.5495
   ] ;
   :nd "+53.2404+006.5495"^^ll: .
 

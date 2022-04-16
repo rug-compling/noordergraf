@@ -1,17 +1,17 @@
 site:NLgr9367paDeWilp a :Site ;
   :siteName "Nennstiehlweg, De Wilp" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Meester Nennstiehlweg" ;
-    schema:addressLocality "De Wilp" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9367 PA"
+    a :PostalAddress ;
+    :streetAddress "Meester Nennstiehlweg" ;
+    :addressLocality "De Wilp" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9367 PA"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1229 ;
-    geo:long 6.2503
+    a :GeoPoint ;
+    :geoLat 53.1229 ;
+    :geoLong 6.2503
   ] ;
   :nd "+53.1229+006.2503"^^ll: .
 

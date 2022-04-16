@@ -1,17 +1,17 @@
 site:NLfr8899awOostVlieland a :Site ;
   :siteName "Kerkplein, Vlieland" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Kerkplein 7" ;
-    schema:addressLocality "Oost-Vlieland" ;
-    schema:addressRegion "Friesland" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "8899 AW"
+    a :PostalAddress ;
+    :streetAddress "Kerkplein 7" ;
+    :addressLocality "Oost-Vlieland" ;
+    :addressRegion "Friesland" ;
+    :addressCountry "NL" ;
+    :postalCode "8899 AW"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2960 ;
-    geo:long 5.0655
+    a :GeoPoint ;
+    :geoLat 53.2960 ;
+    :geoLong 5.0655
   ] ;
   :nd "+53.2960+005.0655"^^ll: .
 

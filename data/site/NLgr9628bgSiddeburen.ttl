@@ -1,17 +1,17 @@
 site:NLgr9628bgSiddeburen a :Site ;
   :siteName "Gereformeerde Begraafplaats, Siddeburen" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Verlengde Molenlaan" ;
-    schema:addressLocality "Siddeburen" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9628 BG"
+    a :PostalAddress ;
+    :streetAddress "Verlengde Molenlaan" ;
+    :addressLocality "Siddeburen" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9628 BG"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2515 ;
-    geo:long 6.8702
+    a :GeoPoint ;
+    :geoLat 53.2515 ;
+    :geoLong 6.8702
   ] ;
   :nd "+53.2515+006.8702"^^ll: .
 

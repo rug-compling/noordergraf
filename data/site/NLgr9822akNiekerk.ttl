@@ -1,17 +1,17 @@
 site:NLgr9822akNiekerk a :Site ;
   :siteName "Liudgerkerk, Niekerk" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Zandumerweg 1" ;
-    schema:addressLocality "Niekerk Grootegast" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9822 AK"
+    a :PostalAddress ;
+    :streetAddress "Zandumerweg 1" ;
+    :addressLocality "Niekerk Grootegast" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9822 AK"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2259 ;
-    geo:long 6.3529
+    a :GeoPoint ;
+    :geoLat 53.2259 ;
+    :geoLong 6.3529
   ] ;
   :nd "+53.2259+006.3529"^^ll: .
 

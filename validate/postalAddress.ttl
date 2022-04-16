@@ -1,7 +1,7 @@
 
-:schemaPostalAddressgeoPointShape a sh:NodeShape ;
-  sh:targetClass schema:PostalAddress ;
-  sh:class schema:PostalAddress ;
+:postalAddressShape a sh:NodeShape ;
+  sh:targetClass :PostalAddress ;
+  sh:class :PostalAddress ;
   sh:closed true ;
   sh:property [
     sh:path rdf:type ;
@@ -9,27 +9,27 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path schema:streetAddress ;
+    sh:path :streetAddress ;
     sh:datatype xsd:string ;
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path schema:addressLocality ;
+    sh:path :addressLocality ;
     sh:datatype xsd:string ;
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path schema:addressRegion ;
+    sh:path :addressRegion ;
     sh:datatype xsd:string ;
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path schema:addressCountry ;
+    sh:path :addressCountry ;
     sh:datatype xsd:string ;
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path schema:postalCode ;
+    sh:path :postalCode ;
     sh:datatype xsd:string ;
     sh:maxCount 1
   ] .

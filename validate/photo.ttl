@@ -16,7 +16,7 @@
   ] ;
   sh:property [
     sh:path :geo ;
-    sh:class geo:Point ;
+    sh:class :GeoPoint ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
@@ -26,12 +26,12 @@
     sh:pattern "^[-+][0-9]{2}\\.[0-9]{4}[-+][0-9]{3}\\.[0-9]{4}$"
   ] ;
   sh:property [
-    sh:path dc:date ;
+    sh:path :dcDate ;
     sh:maxCount 1 ;
     sh:datatype xsd:dateTime
   ] ;
   sh:property [
-    sh:path dc:license ;
+    sh:path :dcLicense ;
     sh:maxCount 1 ;
     sh:or (
       [ sh:nodeKind sh:IRI ]
@@ -39,21 +39,9 @@
     )
   ] ;
   sh:property [
-    sh:path dc:source ;
-    sh:maxCount 1 ;
-    sh:nodeKind sh:IRI
-  ] ;
-  sh:property [
-    sh:path dc:creator ;
+    sh:path :dcCreator ;
     sh:or (
       [ sh:nodeKind sh:IRI ]
       [ sh:datatype xsd:string ]
-    )
-  ] ;
-  sh:property [
-    sh:path dc:title ;
-    sh:or (
-      [ sh:datatype xsd:string ]
-      [ sh:datatype rdf:langString ]
     )
   ] .

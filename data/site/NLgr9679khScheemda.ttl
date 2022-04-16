@@ -1,17 +1,17 @@
 site:NLgr9679khScheemda a :Site ;
   :siteName "Hoflaan, Scheemda" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Hoflaan" ;
-    schema:addressLocality "Scheemda" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9679 KH"
+    a :PostalAddress ;
+    :streetAddress "Hoflaan" ;
+    :addressLocality "Scheemda" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9679 KH"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1810 ;
-    geo:long 6.9688
+    a :GeoPoint ;
+    :geoLat 53.1810 ;
+    :geoLong 6.9688
   ] ;
   :nd "+53.1810+006.9688"^^ll: .
 

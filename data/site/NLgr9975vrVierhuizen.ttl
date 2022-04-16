@@ -1,17 +1,17 @@
 site:NLgr9975vrVierhuizen a :Site ;
   :siteName "Hoofdstraat, Vierhuizen" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Hoofdstraat" ;
-    schema:addressLocality "Vierhuizen" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9975 VR"
+    a :PostalAddress ;
+    :streetAddress "Hoofdstraat" ;
+    :addressLocality "Vierhuizen" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9975 VR"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.3608 ;
-    geo:long 6.2932
+    a :GeoPoint ;
+    :geoLat 53.3608 ;
+    :geoLong 6.2932
   ] ;
   :nd "+53.3608+006.2932"^^ll: .
 

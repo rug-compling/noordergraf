@@ -155,7 +155,7 @@ func main() {
 		if format != HTML {
 			var buffer bytes.Buffer
 			pre := path.Base(uri)
-			fmt.Fprintf(&buffer, "%s: a skos:Collection ;\n  dc:modified %q^^xsd:dateTime ;\n  skos:member", pre, lastModified.Format(time.RFC3339))
+			fmt.Fprintf(&buffer, "%s: a skos:Collection ;\n  :dcModified %q^^xsd:dateTime ;\n  skos:member", pre, lastModified.Format(time.RFC3339))
 
 			names := make([]string, 0)
 			files, err := ioutil.ReadDir(filename)
@@ -197,7 +197,7 @@ func main() {
 		if u == "ns" {
 			u = "\n:"
 		}
-		data += u + " dc:modified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
+		data += u + " :dcModified \"" + lastModified.Format(time.RFC3339) + "\"^^xsd:dateTime .\n"
 	}
 
 	b, _ := ioutil.ReadFile("/net/noordergraf/data/prefix.ttl")

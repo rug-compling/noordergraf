@@ -3,14 +3,14 @@
 tomb:T00625
   a :Tomb ;
   :photo [
-    dc:date "2019-11-23T10:00:25"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :dcDate "2019-11-23T10:00:25"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:T00625.jpg ;
     :geo [
-      a geo:Point ;
-      geo:lat 53.1642 ;
-      geo:long 6.7542
+      a :GeoPoint ;
+      :geoLat 53.1642 ;
+      :geoLong 6.7542
     ] ;
     :nd "+53.1642+006.7542"^^ll:
   ] ;

@@ -1,17 +1,17 @@
 site:NLgr9751bbHaren a :Site ;
   :siteName "Kerkstraat, Haren" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Kerkstraat" ;
-    schema:addressLocality "Haren" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9751 BB"
+    a :PostalAddress ;
+    :streetAddress "Kerkstraat" ;
+    :addressLocality "Haren" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9751 BB"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1727 ;
-    geo:long 6.6069
+    a :GeoPoint ;
+    :geoLat 53.1727 ;
+    :geoLong 6.6069
   ] ;
   :nd "+53.1727+006.6069"^^ll: .
 

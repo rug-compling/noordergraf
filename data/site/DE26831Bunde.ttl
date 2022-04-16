@@ -1,17 +1,17 @@
 site:DE26831Bunde a :Site ;
   :siteName "Kirchring, Bunde" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Kirchring 2A" ;
-    schema:addressLocality "Bunde" ;
-    schema:addressRegion "Ostfriesland" ;
-    schema:addressCountry "DE" ;
-    schema:postalCode "26831"
+    a :PostalAddress ;
+    :streetAddress "Kirchring 2A" ;
+    :addressLocality "Bunde" ;
+    :addressRegion "Ostfriesland" ;
+    :addressCountry "DE" ;
+    :postalCode "26831"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1849 ;
-    geo:long 7.2691
+    a :GeoPoint ;
+    :geoLat 53.1849 ;
+    :geoLong 7.2691
   ] ;
   :nd "+53.1849+007.2691"^^ll: .
 

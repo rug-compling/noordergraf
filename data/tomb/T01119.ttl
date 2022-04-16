@@ -3,14 +3,14 @@
 tomb:T01119
   a :Tomb ;
   :photo [
-    dc:date "2020-04-19T10:48:25"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :dcDate "2020-04-19T10:48:25"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:T01119.jpg ;
     :geo [
-      a geo:Point ;
-      geo:lat 53.2390 ;
-      geo:long 6.4098
+      a :GeoPoint ;
+      :geoLat 53.2390 ;
+      :geoLong 6.4098
     ] ;
     :nd "+53.2390+006.4098"^^ll:
   ] ;
@@ -20,8 +20,8 @@ tomb:T01119
 Alles ist hin!"""@deu ;
     :reference [
       a :FolkReference ;
-      schema:sameAs wikidata:Q45311 ;
-      rdfs:seeAlso <https://de.wikipedia.org/wiki/Marx_Augustin#O_du_lieber_Augustin>
+      :sameAs wikidata:Q45311 ;
+      :seeAlso <https://de.wikipedia.org/wiki/Marx_Augustin#O_du_lieber_Augustin>
     ]
   ] ;
   :site site:NLgr9801caZuidhorn ;

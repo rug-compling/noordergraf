@@ -1,17 +1,17 @@
 site:NLgr9734atGroningen a :Site ;
   :siteName "Stefanuskerk, Groningen" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Noorddijkerweg 16" ;
-    schema:addressLocality "Groningen" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9734 AT"
+    a :PostalAddress ;
+    :streetAddress "Noorddijkerweg 16" ;
+    :addressLocality "Groningen" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9734 AT"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2443 ;
-    geo:long 6.6279
+    a :GeoPoint ;
+    :geoLat 53.2443 ;
+    :geoLong 6.6279
   ] ;
   :nd "+53.2443+006.6279"^^ll: .
 

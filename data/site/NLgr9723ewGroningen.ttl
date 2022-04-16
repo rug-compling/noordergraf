@@ -1,17 +1,17 @@
 site:NLgr9723ewGroningen a :Site ;
   :siteName "Middelberterweg, Groningen" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Middelberterweg 42" ;
-    schema:addressLocality "Groningen" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9723 EW"
+    a :PostalAddress ;
+    :streetAddress "Middelberterweg 42" ;
+    :addressLocality "Groningen" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9723 EW"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2226 ;
-    geo:long 6.6371
+    a :GeoPoint ;
+    :geoLat 53.2226 ;
+    :geoLong 6.6371
   ] ;
   :nd "+53.2226+006.6371"^^ll: .
 

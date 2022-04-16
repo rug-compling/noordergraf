@@ -1,17 +1,17 @@
 site:NLgr9723ejGroningen a :Site ;
   :siteName "Engelberterweg, Groningen" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Engelberterweg 39" ;
-    schema:addressLocality "Groningen" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9723 EJ"
+    a :PostalAddress ;
+    :streetAddress "Engelberterweg 39" ;
+    :addressLocality "Groningen" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9723 EJ"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2088 ;
-    geo:long 6.6475
+    a :GeoPoint ;
+    :geoLat 53.2088 ;
+    :geoLong 6.6475
   ] ;
   :nd "+53.2088+006.6475"^^ll: .
 

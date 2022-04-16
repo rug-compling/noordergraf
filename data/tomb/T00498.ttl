@@ -4,14 +4,14 @@ tomb:T00498
   a :Tomb ;
   :date "1996-03-14"^^xsd:date ;
   :photo [
-    dc:date "2019-11-16T14:06:08"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :dcDate "2019-11-16T14:06:08"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:T00498.jpg ;
     :geo [
-      a geo:Point ;
-      geo:lat 53.2129 ;
-      geo:long 5.7957
+      a :GeoPoint ;
+      :geoLat 53.2129 ;
+      :geoLong 5.7957
     ] ;
     :nd "+53.2129+005.7957"^^ll:
   ] ;

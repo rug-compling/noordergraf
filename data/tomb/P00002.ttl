@@ -3,14 +3,14 @@
 tomb:P00002
   a :Tomb ;
   :photo [
-    dc:date "2021-07-01T10:08:19"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :dcDate "2021-07-01T10:08:19"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:P00001.jpg ;
     :geo [
-      a geo:Point ;
-      geo:lat 49.0753 ;
-      geo:long 2.1789
+      a :GeoPoint ;
+      :geoLat 49.0753 ;
+      :geoLong 2.1789
     ] ;
     :nd "+49.0753+002.1789"^^ll:
   ] ;
@@ -23,7 +23,7 @@ Théodore van Gogh
 
 p00002:P1
   a :Male ;
-  schema:sameAs wikidata:Q317188 ;
+  :sameAs wikidata:Q317188 ;
   :age [
     a :Age ;
     :duration "P34Y"^^xsd:duration ;

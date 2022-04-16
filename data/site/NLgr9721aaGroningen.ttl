@@ -1,17 +1,17 @@
 site:NLgr9721aaGroningen a :Site ;
   :siteName "R.K. Begraafplaats, Groningen" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Hereweg 89" ;
-    schema:addressLocality "Groningen" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9721 AA"
+    a :PostalAddress ;
+    :streetAddress "Hereweg 89" ;
+    :addressLocality "Groningen" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9721 AA"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2038 ;
-    geo:long 6.5724
+    a :GeoPoint ;
+    :geoLat 53.2038 ;
+    :geoLong 6.5724
   ] ;
   :nd "+53.2038+006.5724"^^ll:  .
 

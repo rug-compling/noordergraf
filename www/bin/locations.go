@@ -42,37 +42,34 @@ func main() {
 		return
 	case "pob":
 		query = `
-PREFIX :    <https://noordergraf.rug.nl/ns#>
-PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX : <https://noordergraf.rug.nl/ns#>
 SELECT DISTINCT ?url ?name ?lat ?lon {
   ?url a :Place .
   ?p :placeOfBirth / :place ?url .
   ?url :placeName ?name .
-  ?url :geo / geo:lat ?lat .
-  ?url :geo / geo:long ?lon .
+  ?url :geo / :geoLat ?lat .
+  ?url :geo / :geoLong ?lon .
 }
 `
 	case "pod":
 		query = `
-PREFIX :    <https://noordergraf.rug.nl/ns#>
-PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX : <https://noordergraf.rug.nl/ns#>
 SELECT DISTINCT ?url ?name ?lat ?lon {
   ?url a :Place .
   ?p :placeOfDeath / :place ?url .
   ?url :placeName ?name .
-  ?url :geo / geo:lat ?lat .
-  ?url :geo / geo:long ?lon .
+  ?url :geo / :geoLat ?lat .
+  ?url :geo / :geoLong ?lon .
 }
 `
 	case "site":
 		query = `
-PREFIX :    <https://noordergraf.rug.nl/ns#>
-PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX : <https://noordergraf.rug.nl/ns#>
 SELECT ?url ?name ?lat ?lon {
   ?url a :Site .
   ?url :siteName ?name .
-  ?url :geo / geo:lat ?lat .
-  ?url :geo / geo:long ?lon .
+  ?url :geo / :geoLat ?lat .
+  ?url :geo / :geoLong ?lon .
 }
 `
 	}

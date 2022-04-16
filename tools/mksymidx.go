@@ -51,7 +51,7 @@ PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX symbol: <https://noordergraf.rug.nl/symbol/>
 SELECT ?symbool (count(?symbool) as ?aantal) ?text {
   ?a :symbol / :symbolType ?symbool .
-  ?symbool rdfs:comment ?text .
+  ?symbool :symbolDescription ?text .
   FILTER ( langMatches(lang(?text), "` + lang + `") )
 }
 GROUP BY ?symbool ?text

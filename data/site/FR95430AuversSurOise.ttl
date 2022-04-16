@@ -1,17 +1,17 @@
 site:FR95430AuversSurOise a :Site ;
   :siteName "Cimetière d'Auvers-sur-Oise" ;
-  schema:seeAlso <https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_d%27Auvers-sur-Oise> ;
+  :sameAs wikidata:Q62596187 ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Avenue du Cimetière" ;
-    schema:addressLocality "Auvers-sur-Oise" ;
-    schema:addressRegion "Île-de-France" ;
-    schema:addressCountry "FR" ;
-    schema:postalCode "95430"
+    a :PostalAddress ;
+    :streetAddress "Avenue du Cimetière" ;
+    :addressLocality "Auvers-sur-Oise" ;
+    :addressRegion "Île-de-France" ;
+    :addressCountry "FR" ;
+    :postalCode "95430"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 49.0745 ;
-    geo:long 2.1784
+    a :GeoPoint ;
+    :geoLat 49.0745 ;
+    :geoLong 2.1784
   ] ;
   :nd "+49.0745+002.1784"^^ll: .

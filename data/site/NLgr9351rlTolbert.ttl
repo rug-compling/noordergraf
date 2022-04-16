@@ -1,17 +1,17 @@
 site:NLgr9351rlTolbert a :Site ;
   :siteName "Oldebertweg, Tolbert" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Oldebertweg" ;
-    schema:addressLocality "Tolbert" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9351 RL"
+    a :PostalAddress ;
+    :streetAddress "Oldebertweg" ;
+    :addressLocality "Tolbert" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9351 RL"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1721 ;
-    geo:long 6.3657
+    a :GeoPoint ;
+    :geoLat 53.1721 ;
+    :geoLong 6.3657
   ] ;
   :nd "+53.1721+006.3657"^^ll: .
 

@@ -3,14 +3,14 @@
 tomb:T01015
   a :Tomb ;
   :photo [
-    dc:date "2020-04-04T10:45:30"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :dcDate "2020-04-04T10:45:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:T01015.jpg ;
     :geo [
-      a geo:Point ;
-      geo:lat 53.1754 ;
-      geo:long 7.0954
+      a :GeoPoint ;
+      :geoLat 53.1754 ;
+      :geoLong 7.0954
     ] ;
     :nd "+53.1754+007.0954"^^ll:
   ] ;

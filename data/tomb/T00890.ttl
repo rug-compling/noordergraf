@@ -10,14 +10,14 @@ bovsema
 it
 """ ;
   :photo [
-    dc:date "2020-02-29T12:23:36"^^xsd:dateTime ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :dcDate "2020-02-29T12:23:36"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
     a :Photo ;
     :file img:T00890.jpg ;
     :geo [
-      a geo:Point ;
-      geo:lat 53.1903 ;
-      geo:long 6.5917
+      a :GeoPoint ;
+      :geoLat 53.1903 ;
+      :geoLong 6.5917
     ] ;
     :nd "+53.1903+006.5917"^^ll:
   ] ;

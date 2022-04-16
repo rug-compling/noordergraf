@@ -1,5 +1,5 @@
-# namen van klassen (rdfs:Class) beginnen met een hoofdletter
-# namen van eigenschappen (rdfs:Property) beginnen met een kleine letter
+# Namen van klassen (rdfs:Class) beginnen met een hoofdletter.
+# Namen van eigenschappen (rdf:Property) beginnen met een kleine letter.
 
 # Een rdf:Property kan maar één waarde voor rdfs:domain hebben!
 # Kan een rdf:Property meerdere waardes hebben voor rdfs:range?
@@ -41,6 +41,96 @@
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
   rdfs:isDefinedBy : .
 
+:WithDcCreator a rdfs:Class ;
+  rdfs:label "WithDcCreator" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:dcCreator a rdf:Property ;
+  rdfs:label "dc Creator" ;
+  rdfs:comment "An entity responsible for making the resource."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDcCreator ;
+  rdfs:range rdfs:Resource , xsd:string ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs dc:creator .
+
+:WithDcDate a rdfs:Class ;
+  rdfs:label "WithDcDate" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:dcDate a rdf:Property ;
+  rdfs:label "dc Date" ;
+  rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDcDate ;
+  rdfs:range xsd:dateTime ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs dc:date .
+
+:WithDcLicense a rdfs:Class ;
+  rdfs:label "WithDcLicense" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:dcLicense a rdf:Property ;
+  rdfs:label "dc License" ;
+  rdfs:comment "A legal document giving official permission to do something with the resource."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDcLicense ;
+  rdfs:range rdfs:Resource , xsd:string ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs dc:license .
+
+:WithDcModified a rdfs:Class ;
+  rdfs:label "WithDcModified" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:dcModified a rdf:Property ;
+  rdfs:label "dc Date Modified" ;
+  rdfs:comment "Date on which the resource was changed."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDcModified ;
+  rdfs:range xsd:dateTime ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs dc:modified .
+
+:WithDcSource a rdfs:Class ;
+  rdfs:label "WithDcSource" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:dcSource a rdf:Property ;
+  rdfs:label "dc Source" ;
+  rdfs:comment "A related resource from which the described resource is derived."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDcSource ;
+  rdfs:range rdfs:Resource ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs dc:source .
+
+:WithDcTitle a rdfs:Class ;
+  rdfs:label "WithDcTitle" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:dcTitle a rdf:Property ;
+  rdfs:label "dc Title" ;
+  rdfs:comment "A name given to the resource."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithDcTitle ;
+  rdfs:range xsd:string , rdf:langString ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs dc:title .
+
 :WithDuration a rdfs:Class ;
   rdfs:label "WithDuration" ;
   rdfs:comment "TODO."@eng ;
@@ -80,7 +170,7 @@
   rdfs:comment "Geographical coordinates."@eng ;
   rdfs:comment "Geografische coördinaten."@nld ;
   rdfs:domain :WithGeography ;
-  rdfs:range geo:Point ;
+  rdfs:range :GeoPoint ;
   rdfs:isDefinedBy : .
 
 :nd a rdf:Property ;
@@ -135,9 +225,38 @@
   rdfs:range :Name ;
   rdfs:isDefinedBy : .
 
-# TODO:
-# WithTemporalRelation ?
-# WithTemporalOccupation ?
+:WithSameAs a rdfs:Class ;
+  rdfs:label "WithSameAs" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:sameAs a rdf:Property ;
+  rdfs:label "sameAs" ;
+  rdfs:comment "URL of a reference Web page that unambiguously indicates the item's identity."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithSameAs ;
+  rdfs:range rdfs:Resource ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs schema:sameAs .
+
+:WithSeeAlso a rdfs:Class ;
+  rdfs:label "WithSeeAlso" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:seeAlso a rdf:Property ;
+  rdfs:label "seeAlso" ;
+  rdfs:comment "Further information about the subject resource."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :WithSeeAlso ;
+  rdfs:range rdfs:Resource ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs rdfs:seeAlso .
+
+# TODO: WithTemporalRelation ?
+# TODO: WithTemporalOccupation ?
 
 :WithTemporal a rdfs:Class ;
   rdfs:label "WithTemporal" ;
@@ -236,7 +355,7 @@
 ################################################################
 
 :Artist a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+  rdfs:subClassOf :Class , :WithSameAs ;
   rdfs:label "Artist" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -259,11 +378,36 @@
 
 ################################################################
 
+:Author a rdfs:Class ;
+  rdfs:subClassOf :Class , :WithSameAs ;
+  rdfs:label "author" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:authorName a rdf:Property ;
+  rdfs:label "authorName" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Author ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
 :BiblePart a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+  rdfs:subClassOf :Class , :WithSameAs , :WithDcModified ;
   rdfs:label "BiblePart" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:biblePartName a rdf:Property ;
+  rdfs:label "biblePartName" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :BiblePart ;
+  rdfs:range rdf:langString ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -296,7 +440,7 @@
 ################################################################
 
 :Decoration a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText , :WithTemporal ;
+  rdfs:subClassOf :Property , :WithText , :WithTemporal ;
   rdfs:label "Decoration" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -347,6 +491,34 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
+
+################################################################
+
+:GeoPoint a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:label "geo Point" ;
+  rdfs:comment "A point, typically described using a coordinate system relative to Earth, such as WGS84."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs geo:Point .
+
+:geoLat a rdf:Property ;
+  rdfs:label "geo latitude" ;
+  rdfs:comment "The WGS84 latitude of a SpatialThing (decimal degrees)"@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :GeoPoint ;
+  rdfs:range xsd:decimal ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs geo:lat .
+
+:geoLong a rdf:Property ;
+  rdfs:label "geo longitude" ;
+  rdfs:comment "The WGS84 longitude of a SpatialThing (decimal degrees)."@eng ;
+  rdfs:comment "TODO"@nld ;
+  rdfs:domain :GeoPoint ;
+  rdfs:range xsd:decimal ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs geo:long .
 
 ################################################################
 
@@ -622,11 +794,10 @@
 ################################################################
 
 :Person a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText , :WithName , :WithLocation ;
+  rdfs:subClassOf :Class , :WithText , :WithName , :WithLocation , :WithSameAs ;
   rdfs:label "TODO" ;
   rdfs:comment "A person mentioned by name on a tomb stone."@eng ;
   rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld ;
-  schema:sameAs pwnid:00007846-n ;
   rdfs:isDefinedBy : .
 
 :dateOfBirth a rdf:Property ;
@@ -698,21 +869,19 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
-  rdfs:range :Decoration ;
+  rdfs:range :Property ;
   rdfs:isDefinedBy : .
 
 :Male a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:comment "A male person"@eng ;
   rdfs:comment "Een mannelijk persoon"@nld ;
-  schema:sameAs pwnid:09647338-n ;
   rdfs:isDefinedBy : .
 
 :Female a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:comment "A female person"@eng ;
   rdfs:comment "Een vrouwelijk persoon"@nld ;
-  schema:sameAs pwnid:09642198-n ;
   rdfs:isDefinedBy : .
 
 :Family a rdfs:Class ;
@@ -739,7 +908,7 @@
 ################################################################
 
 :Photo a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithFile , :WithGeography ;
+  rdfs:subClassOf :Class , :WithFile , :WithGeography , :WithDcCreator , :WithDcDate , :WithDcLicense;
   rdfs:label "Photo" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -748,7 +917,7 @@
 ################################################################
 
 :Pictogram a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithFile ;
+  rdfs:subClassOf :Class , :WithFile , :WithDcCreator , :WithDcLicense , :WithDcSource , :WithDcTitle ;
   rdfs:label "Pictogram" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -765,7 +934,7 @@
 ################################################################
 
 :PictogramPart a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+  rdfs:subClassOf :Class , :WithDcCreator , :WithDcSource , :WithDcTitle ;
   rdfs:label "PictogramPart" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -774,7 +943,7 @@
 ################################################################
 
 :Place a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithGeography ;
+  rdfs:subClassOf :Class , :WithGeography , :WithDcModified , :WithSameAs ;
   rdfs:label "Place" ;
   rdfs:comment "Any place, such as place of birth or place of death, from hospital to country."@eng ;
   rdfs:comment "Een plek, zoals geboorteplaats of plaats van overlijden, van ziekenhuis tot land."@nld ;
@@ -788,11 +957,10 @@
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
 
-################################################################
 ###############################################################
 
 :Plot a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithText , :WithDate ;
+  rdfs:subClassOf :Class , :WithText , :WithDate , :WithDcModified ;
   rdfs:label "Plot" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -872,6 +1040,70 @@
 :Tomb a rdfs:Class ;
   rdfs:subClassOf :Plot ;
   rdfs:label "Cross" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+################################################################
+
+:PostalAddress a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:label "PostalAddress" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs schema:PostalAddress .
+
+:addressCountry a rdf:Property ;
+  rdfs:label "addressCountry" ;
+  rdfs:comment "The country."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :PostalAddress ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs schema:addressCountry .
+
+:addressLocality a rdf:Property ;
+  rdfs:label "addresslocality" ;
+  rdfs:comment "The locality in which the street address is, and which is in the region."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :PostalAddress ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs schema:addressLocality .
+
+:addressRegion a rdf:Property ;
+  rdfs:label "addressRegion" ;
+  rdfs:comment "The region in which the locality is, and which is in the country."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :PostalAddress ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs schema:addressRegion .
+
+:postalCode a rdf:Property ;
+  rdfs:label "postalCode" ;
+  rdfs:comment "The postal code."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :PostalAddress ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs schema:postalCode .
+
+:streetAddress a rdf:Property ;
+  rdfs:label "streetAddress" ;
+  rdfs:comment "The street address."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :PostalAddress ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : ;
+  schema:sameAs schema:streetAddress .
+
+################################################################
+
+:Property a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:label "Property" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -968,7 +1200,7 @@
   rdfs:isDefinedBy : .
 
 :FolkReference a rdfs:Class ;
-  rdfs:subClassOf :Reference ;
+  rdfs:subClassOf :Reference , :WithSeeAlso , :WithSameAs ;
   rdfs:label "FolkReference" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -1037,7 +1269,7 @@
   rdfs:isDefinedBy : .
 
 :BookReference a rdfs:Class ;
-  rdfs:subClassOf :Reference , :WithDate ;
+  rdfs:subClassOf :Reference , :WithDate , :WithSameAs ;
   rdfs:label "BookReference" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
@@ -1048,7 +1280,7 @@
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
   rdfs:domain :BookReference ;
-  rdfs:range xsd:string , rdf:langString ;
+  rdfs:range :Author ;
   rdfs:isDefinedBy : .
 
 :bookTitle a rdf:Property ;
@@ -1367,7 +1599,7 @@
 ###############################################################
 
 :Site a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithGeography ;
+  rdfs:subClassOf :Class , :WithGeography , :WithDcModified , :WithSameAs , :WithSeeAlso ;
   rdfs:label "Site" ;
   rdfs:comment "The site of a tomb, usually a cemetary."@eng ;
   rdfs:comment "De plek van een graf, gewoonlijk een kerkhof of begraafplaats."@nld ;
@@ -1378,7 +1610,7 @@
   rdfs:comment "Postal Address."@eng ;
   rdfs:comment "Adres, huisadres."@nld ;
   rdfs:domain :Site ;
-  rdfs:range schema:PostalAddress ;
+  rdfs:range :PostalAddress ;
   rdfs:isDefinedBy : .
 
 :siteName a rdf:Property ;
@@ -1388,8 +1620,6 @@
   rdfs:domain :Site ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
-
-# TODO: osm wikipedia geoCode geoMap geoFeature ?
 
 ################################################################
 
@@ -1411,7 +1641,7 @@
 ################################################################
 
 :SymbolType a rdfs:Class ;
-  rdfs:subClassOf :Class ;
+  rdfs:subClassOf :Class , :WithDcModified , :WithSameAs , :WithSeeAlso ;
   rdfs:label "SymbolType" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;

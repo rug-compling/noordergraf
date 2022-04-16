@@ -79,22 +79,22 @@ func main() {
 	fmt.Printf(`  :image [
     a :Photo ;
     :file img:%s ;
-    # dc:creator "J. Doe" ;
-    dc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-    # dc:license <https://creativecommons.org/licenses/by-sa/4.0/>`, filepath.Base(os.Args[1]))
+    # :dcCreator "J. Doe" ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    # :dcLicense <https://creativecommons.org/licenses/by/4.0/> ;
+    # :dcLicense <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    # :dcLicense <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    # :dcLicense <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    # :dcLicense <https://creativecommons.org/licenses/by-sa/4.0/>`, filepath.Base(os.Args[1]))
 	if datetime != "" {
-		fmt.Printf(" ;\n    dc:date \"%s\"^^xsd:dateTime", datetime)
+		fmt.Printf(" ;\n    :dcDate \"%s\"^^xsd:dateTime", datetime)
 	}
 	if lat != 0 && lon != 0 {
 		fmt.Printf(` ;
     :geo [
-      a geo:Point ;
-      geo:lat %.4f ;
-      geo:long %.4f
+      a :GeoPoint ;
+      :geoLat %.4f ;
+      :geoLong %.4f
     ] ;
     :nd "%+08.4f%+09.4f"^^ll:`,
 			lat*latv,

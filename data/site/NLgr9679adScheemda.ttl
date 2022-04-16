@@ -1,17 +1,17 @@
 site:NLgr9679adScheemda a :Site ;
   :siteName "Kerklaan, Scheemda" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Kerklaan" ;
-    schema:addressLocality "Scheemda" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9679 AD"
+    a :PostalAddress ;
+    :streetAddress "Kerklaan" ;
+    :addressLocality "Scheemda" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9679 AD"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1748 ;
-    geo:long 6.9624
+    a :GeoPoint ;
+    :geoLat 53.1748 ;
+    :geoLong 6.9624
   ] ;
   :nd "+53.1748+006.9624"^^ll: .
 

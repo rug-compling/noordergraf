@@ -1,18 +1,18 @@
 site:NLgr9628csSiddeburen a :Site ;
   :siteName "Hervormde Kerk, Siddeburen" ;
-  schema:seeAlso <https://nl.wikipedia.org/wiki/Kerk_van_Siddeburen> ;
+  :sameAs wikidata:Q2799426 ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Hoofdweg 124" ;
-    schema:addressLocality "Siddeburen" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9628 CS"
+    a :PostalAddress ;
+    :streetAddress "Hoofdweg 124" ;
+    :addressLocality "Siddeburen" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9628 CS"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.2476 ;
-    geo:long 6.8645
+    a :GeoPoint ;
+    :geoLat 53.2476 ;
+    :geoLong 6.8645
   ] ;
   :nd "+53.2476+006.8645"^^ll: .
 

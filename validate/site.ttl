@@ -16,13 +16,13 @@
   ] ;
   sh:property [
     sh:path :siteAddress ;
-    sh:class schema:PostalAddress ;
+    sh:class :PostalAddress ;
     sh:minCount 1 ;
     sh:maxCount 1
   ] ;
   sh:property [
     sh:path :geo ;
-    sh:class geo:Point ;
+    sh:class :GeoPoint ;
     sh:minCount 1 ;
     sh:maxCount 1
   ] ;
@@ -34,15 +34,15 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path schema:sameAs ;
+    sh:path :sameAs ;
     sh:nodeKind sh:IRI
   ] ;
   sh:property [
-    sh:path schema:seeAlso ;
+    sh:path :seeAlso ;
     sh:nodeKind sh:IRI
   ] ;
   sh:property [
-    sh:path dc:modified ;
+    sh:path :dcModified ;
     sh:maxCount 1 ;
     sh:datatype xsd:dateTime
   ] .

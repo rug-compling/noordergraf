@@ -1,17 +1,17 @@
 site:NLgr9686rsBeerta a :Site ;
   :siteName "Kerkstraat, Beerta" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Kerkstraat" ;
-    schema:addressLocality "Beerta" ;
-    schema:addressRegion "Groningen" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "9686 RS"
+    a :PostalAddress ;
+    :streetAddress "Kerkstraat" ;
+    :addressLocality "Beerta" ;
+    :addressRegion "Groningen" ;
+    :addressCountry "NL" ;
+    :postalCode "9686 RS"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 53.1755 ;
-    geo:long 7.0959
+    a :GeoPoint ;
+    :geoLat 53.1755 ;
+    :geoLong 7.0959
   ] ;
   :nd "+53.1755+007.0959"^^ll: .
 

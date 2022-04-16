@@ -9,7 +9,7 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path rdfs:comment ;
+    sh:path :symbolDescription ;
     sh:datatype rdf:langString ;
     sh:uniqueLang true ;
     # Let op: validator kijkt alleen naar eerste twee letters
@@ -18,11 +18,11 @@
     sh:maxCount 2 
   ] ;
   sh:property [
-    sh:path rdfs:seeAlso ;
+    sh:path :seeAlso ;
     sh:nodeKind sh:IRI
   ] ;
   sh:property [
-    sh:path schema:sameAs ;
+    sh:path :sameAs ;
     sh:nodeKind sh:IRI
   ] ;
   sh:property [
@@ -31,7 +31,7 @@
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path dc:modified ;
+    sh:path :dcModified ;
     sh:maxCount 1 ;
     sh:datatype xsd:dateTime
   ] .

@@ -2,17 +2,17 @@
 site:NLdr7811heEmmen a :Site ;
   :siteName "Kerkhoflaan, Emmen" ;
   :siteAddress [
-    a schema:PostalAddress ;
-    schema:streetAddress "Kerkhoflaan 8A" ;
-    schema:addressLocality "Emmen" ;
-    schema:addressRegion "Drenthe" ;
-    schema:addressCountry "NL" ;
-    schema:postalCode "7811 HE"
+    a :PostalAddress ;
+    :streetAddress "Kerkhoflaan 8A" ;
+    :addressLocality "Emmen" ;
+    :addressRegion "Drenthe" ;
+    :addressCountry "NL" ;
+    :postalCode "7811 HE"
   ] ;
   :geo [
-    a geo:Point ;
-    geo:lat 52.7816 ;
-    geo:long 6.9004
+    a :GeoPoint ;
+    :geoLat 52.7816 ;
+    :geoLong 6.9004
   ] ;
   :nd "+52.7816+006.9004"^^ll: .
 
