@@ -155,6 +155,7 @@ Example: [bible:Genesis](bible/Genesis)
 
 - **<a name="BiblePart">BiblePart</a>**
     - biblePartName → `rdf:langString`
+    - order → `xsd:integer`
     - sameAs → wikidata:...
     - dcModified → `xsd:dateTime`
 

@@ -436,6 +436,12 @@ Last-Modified: %s
 				fmt.Print(string(b))
 			}
 		}
+	} else if strings.HasPrefix(uri, "/bible/") {
+		fmt.Printf(`
+<div class="footer">
+Bekijk <a href="/bin/bible?q=%s">graven met een verwijzing naar dit bijbelboek</a>
+</div>
+`, uri[7:])
 	} else if strings.HasPrefix(uri, "/site/") {
 		fmt.Printf(`
 <div class="footer">
