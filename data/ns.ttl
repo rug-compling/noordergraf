@@ -7,9 +7,9 @@
 # TODO: eigenschappen: oorspronkelijke afkorting
 
 : a owl:Ontology ;
-  dc:title "Noordergraf" ;
-  dc:description "Ontology for Noordergraf" ;
-  dc:subject <https://noordergraf.rug.nl/> .
+  dcterms:title "Noordergraf" ;
+  dcterms:description "Ontology for Noordergraf" ;
+  dcterms:subject <https://noordergraf.rug.nl/> .
 
 :Class a rdfs:Class ;
   rdfs:label "Class" ;
@@ -54,8 +54,8 @@
   rdfs:domain :WithDcCreator ;
   rdfs:range rdfs:Resource , xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dc:creator ;
-  schema:sameAs dc:creator .
+  owl:sameAs dcterms:creator ;
+  schema:sameAs dcterms:creator .
 
 :WithDcDate a rdfs:Class ;
   rdfs:label "WithDcDate" ;
@@ -70,8 +70,8 @@
   rdfs:domain :WithDcDate ;
   rdfs:range xsd:dateTime ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dc:date ;
-  schema:sameAs dc:date .
+  owl:sameAs dcterms:date ;
+  schema:sameAs dcterms:date .
 
 :WithDcLicense a rdfs:Class ;
   rdfs:label "WithDcLicense" ;
@@ -86,8 +86,8 @@
   rdfs:domain :WithDcLicense ;
   rdfs:range rdfs:Resource , xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dc:license ;
-  schema:sameAs dc:license .
+  owl:sameAs dcterms:license ;
+  schema:sameAs dcterms:license .
 
 :WithDcModified a rdfs:Class ;
   rdfs:label "WithDcModified" ;
@@ -102,8 +102,8 @@
   rdfs:domain :WithDcModified ;
   rdfs:range xsd:dateTime ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dc:modified ;
-  schema:sameAs dc:modified .
+  owl:sameAs dcterms:modified ;
+  schema:sameAs dcterms:modified .
 
 :WithDcSource a rdfs:Class ;
   rdfs:label "WithDcSource" ;
@@ -118,8 +118,8 @@
   rdfs:domain :WithDcSource ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dc:source ;
-  schema:sameAs dc:source .
+  owl:sameAs dcterms:source ;
+  schema:sameAs dcterms:source .
 
 :WithDcTitle a rdfs:Class ;
   rdfs:label "WithDcTitle" ;
@@ -134,8 +134,8 @@
   rdfs:domain :WithDcTitle ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dc:title ;
-  schema:sameAs dc:title .
+  owl:sameAs dcterms:title ;
+  schema:sameAs dcterms:title .
 
 :WithDuration a rdfs:Class ;
   rdfs:label "WithDuration" ;
