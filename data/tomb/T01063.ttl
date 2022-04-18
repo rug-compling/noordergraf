@@ -3,9 +3,9 @@
 tomb:T01063
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2020-05-01T15:23:38"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T01063.jpg ;
     :geo [
       a :GeoPoint ;
@@ -54,11 +54,11 @@ t01063:P1
     :text "TODO: Anne Pijpker"
   ] ;
   :relation [
+    a :Parent
+  ], [
     a :Grandparent
   ], [
     a :GreatGrandparent
-  ], [
-    a :Parent
   ] .
 
 t01063:P2

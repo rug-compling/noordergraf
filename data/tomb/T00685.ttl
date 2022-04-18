@@ -2,13 +2,10 @@
 
 tomb:T00685
   a :Cross ;
-  :text """TODO: john zoetendal
-* 13 juli 1937 \u2020 13 april 2001
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-12-14T13:18:08"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00685.jpg ;
     :geo [
       a :GeoPoint ;
@@ -18,7 +15,10 @@ tomb:T00685
     :nd "+53.0684+005.5234"^^ll:
   ] ;
   :site site:NLfr8701dwBolsward ;
-  :subject t00685:P1 .
+  :subject t00685:P1 ;
+  :text """TODO: john zoetendal
+* 13 juli 1937 † 13 april 2001
+""" .
 
 t00685:P1
   a :Male ;

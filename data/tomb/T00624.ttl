@@ -2,18 +2,10 @@
 
 tomb:T00624
   a :Tomb ;
-  :text """TODO: ter nagedachtenis
-aan
-pieterkornelisboon
-echtgenoot van
-louiseemmabucaille
-geboren8 februari 1866
-overleden15 augustus 1892
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-23T10:00:45"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00624.jpg ;
     :geo [
       a :GeoPoint ;
@@ -23,7 +15,15 @@ overleden15 augustus 1892
     :nd "+53.1642+006.7541"^^ll:
   ] ;
   :site site:NLgr9601kaHoogezand ;
-  :subject t00624:P1, t00624:P2 .
+  :subject t00624:P1, t00624:P2 ;
+  :text """TODO: ter nagedachtenis
+aan
+pieterkornelisboon
+echtgenoot van
+louiseemmabucaille
+geboren8 februari 1866
+overleden15 augustus 1892
+""" .
 
 t00624:P1
   a :Male ;

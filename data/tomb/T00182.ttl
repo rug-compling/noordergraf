@@ -2,10 +2,14 @@
 
 tomb:T00182
   a :Tomb ;
+  :figure [
+    a :Portrait ;
+    :theme t00182:P1
+  ] ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-05T10:19:15"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00182.jpg ;
     :geo [
       a :GeoPoint ;
@@ -13,10 +17,6 @@ tomb:T00182
       :geoLong 6.5934
     ] ;
     :nd "+53.1911+006.5934"^^ll:
-  ] ;
-  :figure [
-    a :Portrait ;
-    :theme t00182:P1
   ] ;
   :quote [
     a :Quote ;

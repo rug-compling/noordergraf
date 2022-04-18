@@ -2,6 +2,20 @@
 
 tomb:T00140
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-02T10:32:45"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00140.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2062 ;
+      :geoLong 6.5701
+    ] ;
+    :nd "+53.2062+006.5701"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00140:P1, t00140:P2 ;
   :text """TODO: brustplaats van
 onzeljeye vrouw zimoeder
 maitje wijnduard
@@ -15,21 +29,7 @@ jan rengers
 dveredusnl 1973
 vrata
 vid
-""" ;
-  :photo [
-    :dcDate "2019-10-02T10:32:45"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00140.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2062 ;
-      :geoLong 6.5701
-    ] ;
-    :nd "+53.2062+006.5701"^^ll:
-  ] ;
-  :site site:NLgr9725acGroningen ;
-  :subject t00140:P1, t00140:P2 .
+""" .
 
 t00140:P1
   a :Female ;

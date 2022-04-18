@@ -2,23 +2,10 @@
 
 tomb:T00801
   a :Tomb ;
-  :text """TODO: wier rus
-jos
-joseph maria
-mart ivus
-hermins
-11
-30.3.1949
-l00z\u00b7 l: lt
-et
-vaastrichtenaar
-noorderling
-europeaan
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2020-01-19T14:15:28"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00801.jpg ;
     :geo [
       a :GeoPoint ;
@@ -28,7 +15,20 @@ europeaan
     :nd "+53.1930+006.5936"^^ll:
   ] ;
   :site site:NLgr9722snGroningen ;
-  :subject t00801:P1 .
+  :subject t00801:P1 ;
+  :text """TODO: wier rus
+jos
+joseph maria
+mart ivus
+hermins
+11
+30.3.1949
+l00z· l: lt
+et
+vaastrichtenaar
+noorderling
+europeaan
+""" .
 
 t00801:P1
   a :Male ;
@@ -52,7 +52,9 @@ t00801:P1
   ] ;
   :placeOfBirth [
     a :City ;
-    :text "Maastrichtenaar\nNoorderling\nEuropeaan" ;
-    :place place:Maastricht2751283
+    :place place:Maastricht2751283 ;
+    :text """Maastrichtenaar
+Noorderling
+Europeaan"""
   ] .
 

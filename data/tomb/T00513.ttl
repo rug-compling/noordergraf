@@ -2,10 +2,14 @@
 
 tomb:T00513
   a :Tomb ;
+  :figure [
+    a :Portrait ;
+    :theme t00513:P1
+  ] ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-23T10:38:22"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00513.jpg ;
     :geo [
       a :GeoPoint ;
@@ -14,10 +18,6 @@ tomb:T00513
     ] ;
     :nd "+53.1647+006.7523"^^ll:
   ] ;
-  :figure [
-    a :Portrait ;
-    :theme t00513:P1
-  ] ;
   :quote [
     a :Quote ;
     :text "DISINI KUBERHENTILAH \\ TA'LAGI SAKIT DAN LELAH \\ KU TINGGALKANLAH SEMUA \\ DAN PULANG KERUMAN HUA"@msa
@@ -25,9 +25,9 @@ tomb:T00513
     a :Quote ;
     :reference [
       a :BibleReference ;
+      :bibleSource <https://www.bible.com/bible/2975/REV.1.17-18> ;
       :chapter 1 ;
       :part bible:Revelation ;
-      :bibleSource <https://www.bible.com/bible/2975/REV.1.17-18> ;
       :verse "17-18"
     ] ;
     :text "wahju 1:17,18"@msa

@@ -2,17 +2,10 @@
 
 tomb:T00213
   a :Tomb ;
-  :text """TODO: fl-ih
-riseplaats vans
-albert bakker
-2781 1860
-18
-geertje hulder
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-08T14:48:56"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00213.jpg ;
     :geo [
       a :GeoPoint ;
@@ -22,7 +15,14 @@ geertje hulder
     :nd "+53.2226+006.6372"^^ll:
   ] ;
   :site site:NLgr9723ewGroningen ;
-  :subject t00213:P1, t00213:P2 .
+  :subject t00213:P1, t00213:P2 ;
+  :text """TODO: fl-ih
+riseplaats vans
+albert bakker
+2781 1860
+18
+geertje hulder
+""" .
 
 t00213:P1
   a :Female ;

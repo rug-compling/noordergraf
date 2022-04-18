@@ -3,9 +3,9 @@
 tomb:T00645
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-12-08T11:20:47"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00645.jpg ;
     :geo [
       a :GeoPoint ;
@@ -57,13 +57,13 @@ t00645:P1
     :text "TODO: DELFT"
   ] ;
   :relation [
+    a :Spouse ;
+    :target t00645:P2
+  ], [
     a :Husband ;
     :target t00645:P2
   ], [
     a :Father
-  ], [
-    a :Spouse ;
-    :target t00645:P2
   ] .
 
 t00645:P2

@@ -2,16 +2,10 @@
 
 tomb:T00122
   a :Tomb ;
-  :text """TODO: jan hommes
-* 25 -7- 1887 14-5-1962
-gel. echtgen. van
-anna buivenga
-* 19-2-1886 1 8-9\u20131971
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-20T17:49:20"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00122.jpg ;
     :geo [
       a :GeoPoint ;
@@ -21,7 +15,13 @@ anna buivenga
     :nd "+53.1627+006.6153"^^ll:
   ] ;
   :site site:NLgr9752cmHaren ;
-  :subject t00122:P1, t00122:P2 .
+  :subject t00122:P1, t00122:P2 ;
+  :text """TODO: jan hommes
+* 25 -7- 1887 14-5-1962
+gel. echtgen. van
+anna buivenga
+* 19-2-1886 1 8-9–1971
+""" .
 
 t00122:P1
   a :Male ;

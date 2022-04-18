@@ -2,6 +2,35 @@
 
 tomb:T00917
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:04:14"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00917.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.1715 ;
+      :geoLong 6.3656
+    ] ;
+    :nd "+53.1715+006.3656"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :HymnReference ;
+      :hymnSource <https://kerkliedwiki.nl/Diep,_o_God,_in_%27t_stof_gebogen> ;
+      :hymnTitle "Diep, o God, in 't stof gebogen"
+    ] ;
+    :text "Jezus uw verzoenend sterven"@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :text "Gez. 14."@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00917:P1, t00917:P2 ;
   :text """TODO: terdafen ghtenie
 aar onze leve
 dudete
@@ -17,37 +46,7 @@ mezi 15 tsverzoeneno sterven 13 14
 2015
 -
 h.
-""" ;
-  :photo [
-    :dcDate "2020-03-07T14:04:14"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00917.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1715 ;
-      :geoLong 6.3656
-    ] ;
-    :nd "+53.1715+006.3656"^^ll:
-  ] ;
-
-  :quote [
-    a :Quote ;
-    :reference [
-      a :HymnReference ;
-      :hymnTitle "Diep, o God, in 't stof gebogen" ;
-      :hymnSource <https://kerkliedwiki.nl/Diep,_o_God,_in_%27t_stof_gebogen>
-    ] ;
-    :text "Jezus uw verzoenend sterven"@nld
-  ] , [
-    a :Quote ;
-    :reference [
-      a :HymnReference
-    ] ;
-    :text "Gez. 14."@nld
-  ] ;
-  :site site:NLgr9351rlTolbert ;
-  :subject t00917:P1, t00917:P2 .
+""" .
 
 t00917:P1
   a :Female ;

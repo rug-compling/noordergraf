@@ -2,18 +2,10 @@
 
 tomb:T01045
   a :Tomb ;
-  :text """TODO: be in liefde
-gedenken wij
-mijn man
-onze vader en opa
-jan jobing
-4 11 \u2013 1921
-7.30 \u2013 10 \u2013 1997
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2020-04-30T07:36:56"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T01045.jpg ;
     :geo [
       a :GeoPoint ;
@@ -23,7 +15,15 @@ jan jobing
     :nd "+53.1597+006.6208"^^ll:
   ] ;
   :site site:NLgr9751xcHaren ;
-  :subject t01045:P1 .
+  :subject t01045:P1 ;
+  :text """TODO: be in liefde
+gedenken wij
+mijn man
+onze vader en opa
+jan jobing
+4 11 – 1921
+7.30 – 10 – 1997
+""" .
 
 t01045:P1
   a :Male ;

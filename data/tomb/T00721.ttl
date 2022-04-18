@@ -3,9 +3,9 @@
 tomb:T00721
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-12-21T13:22:09"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00721.jpg ;
     :geo [
       a :GeoPoint ;
@@ -65,8 +65,6 @@ t00721:P1
   ] ;
   :placeOfDeath [
     a :Town ;
-    :place place:Emmen2756136 ;
-    :text "het diac. huis te emmen" ;
     :coordinates [
       a :Coordinates ;
       :geo [
@@ -75,7 +73,9 @@ t00721:P1
         :geoLong 6.9076
       ] ;
       :nd "+52.7818+006.9076"^^ll:
-    ]
+    ] ;
+    :place place:Emmen2756136 ;
+    :text "het diac. huis te emmen"
   ] ;
   :relation [
     a :Spouse ;

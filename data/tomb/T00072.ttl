@@ -2,6 +2,20 @@
 
 tomb:T00072
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T15:58:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00072.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.1904 ;
+      :geoLong 6.5948
+    ] ;
+    :nd "+53.1904+006.5948"^^ll:
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00072:P1, t00072:P2 ;
   :text """TODO: rustplaats
 vam
 onze licve man en vader
@@ -14,21 +28,7 @@ en onze lieve moeder
 truntje leutscher
 geb.23 aug. 1884
 overl-29 juli 1962
-""" ;
-  :photo [
-    :dcDate "2019-09-25T15:58:43"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00072.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1904 ;
-      :geoLong 6.5948
-    ] ;
-    :nd "+53.1904+006.5948"^^ll:
-  ] ;
-  :site site:NLgr9722snGroningen ;
-  :subject t00072:P1, t00072:P2 .
+""" .
 
 t00072:P1
   a :Male ;

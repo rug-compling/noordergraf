@@ -3,9 +3,9 @@
 tomb:T01012
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2020-04-11T10:35:21"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T01012.jpg ;
     :geo [
       a :GeoPoint ;
@@ -59,12 +59,12 @@ t01012:P1
     :text "TODO: WESTERDIJKSHORN"
   ] ;
   :relation [
+    a :Husband ;
+    :target t01012:P2
+  ], [
     a :Father
   ], [
     a :Spouse ;
-    :target t01012:P2
-  ], [
-    a :Husband ;
     :target t01012:P2
   ] .
 

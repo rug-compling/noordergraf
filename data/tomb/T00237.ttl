@@ -2,6 +2,20 @@
 
 tomb:T00237
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-10T09:40:45"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00237.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2054 ;
+      :geoLong 6.5724
+    ] ;
+    :nd "+53.2054+006.5724"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00237:P1, t00237:P2, t00237:P3 ;
   :text """TODO: rustplaats
 van
 onze geliefde dochter en zuster
@@ -13,21 +27,7 @@ geb. 2 jan 1873-overl.16 febr. 1931
 echtgenote van
 arend tonko lever
 geb.30 jan. 867-overl.30 maart 1952
-""" ;
-  :photo [
-    :dcDate "2019-10-10T09:40:45"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00237.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2054 ;
-      :geoLong 6.5724
-    ] ;
-    :nd "+53.2054+006.5724"^^ll:
-  ] ;
-  :site site:NLgr9725acGroningen ;
-  :subject t00237:P1, t00237:P2, t00237:P3 .
+""" .
 
 t00237:P1
   a :Female ;

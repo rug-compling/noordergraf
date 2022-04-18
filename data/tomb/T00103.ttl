@@ -2,16 +2,10 @@
 
 tomb:T00103
   a :Tomb ;
-  :text """TODO: elizabeth coolman
-* 13 aug 1874
-+ 27 aug, 1936
-weduwe van
-a. van dam
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-21T16:06:42"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00103.jpg ;
     :geo [
       a :GeoPoint ;
@@ -21,7 +15,13 @@ a. van dam
     :nd "+53.1906+006.5945"^^ll:
   ] ;
   :site site:NLgr9722snGroningen ;
-  :subject t00103:P1, t00103:P2 .
+  :subject t00103:P1, t00103:P2 ;
+  :text """TODO: elizabeth coolman
+* 13 aug 1874
++ 27 aug, 1936
+weduwe van
+a. van dam
+""" .
 
 t00103:P1
   a :Female ;

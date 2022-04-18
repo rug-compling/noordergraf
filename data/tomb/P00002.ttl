@@ -3,9 +3,9 @@
 tomb:P00002
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2021-07-01T10:08:19"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:P00001.jpg ;
     :geo [
       a :GeoPoint ;
@@ -23,7 +23,6 @@ Théodore van Gogh
 
 p00002:P1
   a :Male ;
-  :sameAs wikidata:Q317188 ;
   :age [
     a :Age ;
     :duration "P34Y"^^xsd:duration ;
@@ -41,5 +40,6 @@ p00002:P1
     a :Name ;
     :fullName "Théodore van Gogh" ;
     :text "Théodore van Gogh"
-  ] .
+  ] ;
+  :sameAs wikidata:Q317188 .
 

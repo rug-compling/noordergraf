@@ -3,9 +3,9 @@
 tomb:T00071
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-25T16:03:05"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00071.jpg ;
     :geo [
       a :GeoPoint ;
@@ -72,11 +72,6 @@ t00071:P1
 
 t00071:P2
   a :Male ;
-  :name [
-    a :Name ;
-    :fullName "Adolf Kuiper" ;
-    :text "TODO: Adolf Kuiper"
-  ] ;
   :age [
     a :Age ;
     :duration "P108Y11M3D"^^xsd:duration ;
@@ -90,6 +85,11 @@ t00071:P2
     a :Date ;
     :date "1947-04-06"^^xsd:date
   ] ;
+  :name [
+    a :Name ;
+    :fullName "Adolf Kuiper" ;
+    :text "TODO: Adolf Kuiper"
+  ] ;
   :placeOfBirth [
     a :Town ;
     :place place:Emmen2756136 ;
@@ -101,3 +101,4 @@ t00071:P2
   ], [
     a :Uncle
   ] .
+

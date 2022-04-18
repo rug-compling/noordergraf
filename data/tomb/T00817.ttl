@@ -2,6 +2,20 @@
 
 tomb:T00817
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-01T12:20:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00817.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2307 ;
+      :geoLong 6.5514
+    ] ;
+    :nd "+53.2307+006.5514"^^ll:
+  ] ;
+  :site site:NLgr9741acGroningen ;
+  :subject t00817:P1, t00817:P2, t00817:P3 ;
   :text """TODO: mer rust
 onze lieve
 henkie
@@ -17,21 +31,7 @@ an
 van
 05
 in
-""" ;
-  :photo [
-    :dcDate "2020-02-01T12:20:43"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00817.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2307 ;
-      :geoLong 6.5514
-    ] ;
-    :nd "+53.2307+006.5514"^^ll:
-  ] ;
-  :site site:NLgr9741acGroningen ;
-  :subject t00817:P1, t00817:P2, t00817:P3 .
+""" .
 
 t00817:P1
   a :Male ;

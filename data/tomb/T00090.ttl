@@ -3,9 +3,9 @@
 tomb:T00090
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-25T11:28:19"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00090.jpg ;
     :geo [
       a :GeoPoint ;
@@ -54,12 +54,12 @@ t00090:P1
     :text "TODO: Gerhardus Johannes Roeszing"
   ] ;
   :relation [
-    a :Father
-  ], [
     a :Grandfather
   ], [
     a :Husband ;
     :target t00090:P2
+  ], [
+    a :Father
   ] .
 
 t00090:P2

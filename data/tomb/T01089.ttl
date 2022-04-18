@@ -2,12 +2,10 @@
 
 tomb:T01089
   a :Tomb ;
-  :text """TODO: verhoef valk 2011
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2020-09-11T17:50:43"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T01089.jpg ;
     :geo [
       a :GeoPoint ;
@@ -17,7 +15,9 @@ tomb:T01089
     :nd "+53.1636+006.6146"^^ll:
   ] ;
   :site site:NLgr9752cmHaren ;
-  :subject t01089:P1 .
+  :subject t01089:P1 ;
+  :text """TODO: verhoef valk 2011
+""" .
 
 t01089:P1
   a :Female ;

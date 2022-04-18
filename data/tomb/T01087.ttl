@@ -2,17 +2,10 @@
 
 tomb:T01087
   a :Tomb ;
-  :text """TODO: rustplaats van
-aafje elisabeth
-maroer
-en
-jat de vries pzn
-te
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2020-09-06T15:35:25"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T01087.jpg ;
     :geo [
       a :GeoPoint ;
@@ -22,7 +15,14 @@ te
     :nd "+53.1900+006.5935"^^ll:
   ] ;
   :site site:NLgr9722snGroningen ;
-  :subject t01087:P1, t01087:P2 .
+  :subject t01087:P1, t01087:P2 ;
+  :text """TODO: rustplaats van
+aafje elisabeth
+maroer
+en
+jat de vries pzn
+te
+""" .
 
 t01087:P1
   a :Female ;

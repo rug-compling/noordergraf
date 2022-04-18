@@ -3,9 +3,9 @@
 tomb:T00884
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2020-02-15T15:00:41"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00884.jpg ;
     :geo [
       a :GeoPoint ;
@@ -51,13 +51,13 @@ t00884:P1
     :text "TODO: Gerrit ten Voorde"
   ] ;
   :relation [
-    a :Husband ;
-    :target t00884:P2
-  ], [
     a :Father ;
     :target t00884:P3
   ], [
     a :Widow ;
+    :target t00884:P2
+  ], [
+    a :Husband ;
     :target t00884:P2
   ] .
 

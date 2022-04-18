@@ -3,9 +3,9 @@
 tomb:T00277
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-16T16:57:12"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00277.jpg ;
     :geo [
       a :GeoPoint ;
@@ -67,13 +67,13 @@ t00277:P1
   ] ;
   :placeOfDeath t00277:C2 ;
   :relation [
+    a :Spouse ;
+    :target t00277:P2
+  ], [
     a :Wife ;
     :target t00277:P2
   ], [
     a :Mother
-  ], [
-    a :Spouse ;
-    :target t00277:P2
   ] .
 
 t00277:P2

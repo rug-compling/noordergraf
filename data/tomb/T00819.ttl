@@ -3,9 +3,9 @@
 tomb:T00819
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2020-02-01T12:15:55"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00819.jpg ;
     :geo [
       a :GeoPoint ;
@@ -57,14 +57,14 @@ t00819:P1
     :text "hiektje huizinga"
   ] ;
   :relation t00819:R3, [
-    a :Spouse ;
-    :before t00819:R3 ;
-    :target t00819:P3
-  ], [
     a :Wife ;
     :target t00819:P2
   ], [
     a :Mother
+  ], [
+    a :Spouse ;
+    :before t00819:R3 ;
+    :target t00819:P3
   ] .
 
 t00819:P2

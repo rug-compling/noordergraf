@@ -3,9 +3,9 @@
 tomb:T01065
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2020-05-02T15:53:46"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T01065.jpg ;
     :geo [
       a :GeoPoint ;
@@ -103,23 +103,23 @@ t01065:P2
 
 t01065:V1
   a :Quote ;
+  :quoteSubject t01065:P1 ;
   :reference [
     a :BibleReference ;
     :chapter 22 ;
     :part bible:Revelation ;
     :verse "20"
   ] ;
-  :quoteSubject t01065:P1 ;
   :text "openb. 22:20" .
 
 t01065:V2
   a :Quote ;
+  :quoteSubject t01065:P2 ;
   :reference [
     a :BibleReference ;
     :chapter 14 ;
     :part bible:Romans ;
     :verse "8B"
   ] ;
-  :quoteSubject t01065:P2 ;
   :text "rom. 14:8B" .
 

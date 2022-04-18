@@ -2,20 +2,10 @@
 
 tomb:T00054
   a :Tomb ;
-  :text """TODO: hier rusten
-onze lieve vrouw
-en moeder
-annechien bazuin
-* 6-9-1913 t 15-12-1968
-en onze lieve vader
-en grootvader
-gerrit bazuin
-* 14-12-1904 + 21-9.1978
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-20T17:46:43"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00054.jpg ;
     :geo [
       a :GeoPoint ;
@@ -25,7 +15,17 @@ gerrit bazuin
     :nd "+53.1625+006.6157"^^ll:
   ] ;
   :site site:NLgr9752cmHaren ;
-  :subject t00054:P1, t00054:P2 .
+  :subject t00054:P1, t00054:P2 ;
+  :text """TODO: hier rusten
+onze lieve vrouw
+en moeder
+annechien bazuin
+* 6-9-1913 t 15-12-1968
+en onze lieve vader
+en grootvader
+gerrit bazuin
+* 14-12-1904 + 21-9.1978
+""" .
 
 t00054:P1
   a :Female ;

@@ -3,9 +3,9 @@
 tomb:T00196
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-06T14:40:03"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00196.jpg ;
     :geo [
       a :GeoPoint ;
@@ -52,13 +52,13 @@ t00196:P1
     :text "TODO: Tjitske de Vries"
   ] ;
   :relation [
-    a :Mother
-  ], [
     a :Spouse ;
     :target t00196:P2
   ], [
     a :Wife ;
     :target t00196:P2
+  ], [
+    a :Mother
   ] .
 
 t00196:P2

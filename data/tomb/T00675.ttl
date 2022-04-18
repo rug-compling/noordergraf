@@ -2,6 +2,20 @@
 
 tomb:T00675
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-14T13:33:24"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00675.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.0685 ;
+      :geoLong 5.5219
+    ] ;
+    :nd "+53.0685+005.5219"^^ll:
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00675:P1, t00675:P2 ;
   :text """TODO: mier rusten
 onze liene
 quders opa en oma
@@ -14,21 +28,7 @@ f 16-3-1998
 +
 kindedex en kl-kinderen
 --hael
-""" ;
-  :photo [
-    :dcDate "2019-12-14T13:33:24"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00675.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.0685 ;
-      :geoLong 5.5219
-    ] ;
-    :nd "+53.0685+005.5219"^^ll:
-  ] ;
-  :site site:NLfr8701dwBolsward ;
-  :subject t00675:P1, t00675:P2 .
+""" .
 
 t00675:P1
   a :Male ;

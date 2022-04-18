@@ -2,20 +2,10 @@
 
 tomb:T00085
   a :Tomb ;
-  :text """TODO: mier rusten
-onze lieve ouders
-gerhardus hunderman
-13-141899
-en
-trijntje huygens
-t20_2_1902
-beiden overleden
-26951964
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-25T10:57:40"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00085.jpg ;
     :geo [
       a :GeoPoint ;
@@ -25,7 +15,17 @@ beiden overleden
     :nd "+53.2035+006.5731"^^ll:
   ] ;
   :site site:NLgr9721aaGroningen ;
-  :subject t00085:P1, t00085:P2 .
+  :subject t00085:P1, t00085:P2 ;
+  :text """TODO: mier rusten
+onze lieve ouders
+gerhardus hunderman
+13-141899
+en
+trijntje huygens
+t20_2_1902
+beiden overleden
+26951964
+""" .
 
 t00085:P1
   a :Male ;

@@ -3,9 +3,9 @@
 tomb:T00995
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2020-04-04T10:46:07"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00995.jpg ;
     :geo [
       a :GeoPoint ;
@@ -61,13 +61,13 @@ t00995:P1
     :text "TODO: Nanno Jacob Boneschansker"
   ] ;
   :relation [
+    a :Spouse ;
+    :target t00995:P2
+  ], [
     a :Husband ;
     :target t00995:P2
   ], [
     a :Father
-  ], [
-    a :Spouse ;
-    :target t00995:P2
   ] .
 
 t00995:P2

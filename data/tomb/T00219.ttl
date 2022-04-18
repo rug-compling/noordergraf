@@ -3,9 +3,9 @@
 tomb:T00219
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-08T14:43:56"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00219.jpg ;
     :geo [
       a :GeoPoint ;
@@ -60,19 +60,19 @@ t00219:P1
   ] ;
   :occupation [
     a :Occupation ;
-    :hisco hisco:61220 ;
-    :location [
-      a :Hamlet ;
-      :place place:Euvelgunne2755982 ;
-      :text "TODO: EUVELGUNNE"
-    ]
-  ], [
-    a :Occupation ;
     :hisco hisco:14000 ;
     :location [
       a :Village ;
       :place place:Middelbert2750902 ;
       :text "TODO: MIDDELBERT"
+    ]
+  ], [
+    a :Occupation ;
+    :hisco hisco:61220 ;
+    :location [
+      a :Hamlet ;
+      :place place:Euvelgunne2755982 ;
+      :text "TODO: EUVELGUNNE"
     ]
   ] ;
   :relation [

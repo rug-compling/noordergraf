@@ -3,9 +3,9 @@
 tomb:P00001
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2021-07-01T10:08:19"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:P00001.jpg ;
     :geo [
       a :GeoPoint ;
@@ -23,7 +23,6 @@ Vincent van Gogh
 
 p00001:P1
   a :Male ;
-  :sameAs wikidata:Q5582 ;
   :age [
     a :Age ;
     :duration "P37Y"^^xsd:duration ;
@@ -41,5 +40,6 @@ p00001:P1
     a :Name ;
     :fullName "Vincent van Gogh" ;
     :text "Vincent van Gogh"
-  ] .
+  ] ;
+  :sameAs wikidata:Q5582 .
 

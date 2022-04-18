@@ -2,18 +2,10 @@
 
 tomb:T00265
   a :Tomb ;
-  :text """TODO: alida
-martina willemina
-boeser
-* 177 \u2013 1927
-+ 111 - 2000
-weduwe van
-a alderikus de vries
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-14T10:59:58"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00265.jpg ;
     :geo [
       a :GeoPoint ;
@@ -23,7 +15,15 @@ a alderikus de vries
     :nd "+53.2228+006.6379"^^ll:
   ] ;
   :site site:NLgr9723ewGroningen ;
-  :subject t00265:P1, t00265:P2 .
+  :subject t00265:P1, t00265:P2 ;
+  :text """TODO: alida
+martina willemina
+boeser
+* 177 – 1927
++ 111 - 2000
+weduwe van
+a alderikus de vries
+""" .
 
 t00265:P1
   a :Female ;

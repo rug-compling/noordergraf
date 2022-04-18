@@ -3,9 +3,9 @@
 tomb:T00276
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-14T10:53:37"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00276.jpg ;
     :geo [
       a :GeoPoint ;
@@ -52,13 +52,13 @@ t00276:P1
     :text "TODO: Roelofje de Jong"
   ] ;
   :relation [
-    a :Mother
-  ], [
     a :Spouse ;
     :target t00276:P2
   ], [
     a :Wife ;
     :target t00276:P2
+  ], [
+    a :Mother
   ] .
 
 t00276:P2

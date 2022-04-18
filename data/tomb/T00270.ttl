@@ -3,9 +3,9 @@
 tomb:T00270
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-14T10:58:49"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00270.jpg ;
     :geo [
       a :GeoPoint ;
@@ -56,12 +56,12 @@ t00270:P1
     :text "TODO: Harm Barteld Vos"
   ] ;
   :relation [
+    a :Husband ;
+    :target t00270:P2
+  ], [
     a :Father
   ], [
     a :Spouse ;
-    :target t00270:P2
-  ], [
-    a :Husband ;
     :target t00270:P2
   ] .
 

@@ -2,6 +2,27 @@
 
 tomb:T00938
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-18T10:27:01"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00938.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2394 ;
+      :geoLong 6.5527
+    ] ;
+    :nd "+53.2394+006.5527"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "EN ONZE LIEVE VROUW EN MOEDER"@nld
+  ], [
+    a :Quote ;
+    :text "RUSTPLAATS VAN ONZE LIEVE DOCHTER EN ZUSTER"@nld
+  ] ;
+  :site site:NLgr9741ghGroningen ;
+  :subject t00938:P1, t00938:P3, t00938:P4 ;
   :text """TODO: rustplaats
 yan
 onze lieve dochter en zuster
@@ -17,32 +38,11 @@ hinderikus blikslager
 geb.17 febr. 1891 overl.16 april 1980
 m
 ftp
-\u05d4\u05d5\u05df-\u05e9\u05e8 \u05d4\u05d5
+הון-שר הו
 des en
 tarra
 resim
-""" ;
-  :photo [
-    :dcDate "2020-03-18T10:27:01"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00938.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2394 ;
-      :geoLong 6.5527
-    ] ;
-    :nd "+53.2394+006.5527"^^ll:
-  ] ;
-  :site site:NLgr9741ghGroningen ;
-  :subject t00938:P1, t00938:P3, t00938:P4 ;
-  :quote [
-    a :Quote ;
-    :text "EN ONZE LIEVE VROUW EN MOEDER"@nld
-  ] , [
-    a :Quote ;
-    :text "RUSTPLAATS VAN ONZE LIEVE DOCHTER EN ZUSTER"@nld
-  ] .
+""" .
 
 t00938:P1
   a :Female ;

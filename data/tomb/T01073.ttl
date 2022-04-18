@@ -3,9 +3,9 @@
 tomb:T01073
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2020-05-15T17:34:33"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T01073.jpg ;
     :geo [
       a :GeoPoint ;
@@ -51,13 +51,13 @@ t01073:P1
     :text "TODO: Harmannus Oorburg"
   ] ;
   :relation [
-    a :Father
-  ], [
     a :Spouse ;
     :target t01073:P2
   ], [
     a :Husband ;
     :target t01073:P2
+  ], [
+    a :Father
   ] .
 
 t01073:P2

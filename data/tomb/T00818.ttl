@@ -2,19 +2,10 @@
 
 tomb:T00818
   a :Tomb ;
-  :text """TODO: rustplaats van
-mijn lieve man
-johannes damaker
-9 sept. 1900
-19 jan. 1945
-geliefde echtgenoot van
-m.e.jansen
-gez. 201
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2020-02-01T12:16:44"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00818.jpg ;
     :geo [
       a :GeoPoint ;
@@ -31,7 +22,16 @@ gez. 201
     :text "gez. 201."@nld
   ] ;
   :site site:NLgr9741acGroningen ;
-  :subject t00818:P1, t00818:P2 .
+  :subject t00818:P1, t00818:P2 ;
+  :text """TODO: rustplaats van
+mijn lieve man
+johannes damaker
+9 sept. 1900
+19 jan. 1945
+geliefde echtgenoot van
+m.e.jansen
+gez. 201
+""" .
 
 t00818:P1
   a :Male ;

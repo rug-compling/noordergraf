@@ -2,6 +2,20 @@
 
 tomb:T00094
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-24T15:17:42"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00094.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2061 ;
+      :geoLong 6.5730
+    ] ;
+    :nd "+53.2061+006.5730"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00094:P1, t00094:P2, t00094:P3 ;
   :text """TODO: martje triezenberg
 angerman
 2416_1873
@@ -12,21 +26,7 @@ klaas triezenberg
 hillechien triezenberg
 * 24.121881
 1 18_3_ 1970
-""" ;
-  :photo [
-    :dcDate "2019-09-24T15:17:42"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00094.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2061 ;
-      :geoLong 6.5730
-    ] ;
-    :nd "+53.2061+006.5730"^^ll:
-  ] ;
-  :site site:NLgr9725acGroningen ;
-  :subject t00094:P1, t00094:P2, t00094:P3 .
+""" .
 
 t00094:P1
   a :Female ;

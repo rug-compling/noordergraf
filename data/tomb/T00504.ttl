@@ -3,9 +3,9 @@
 tomb:T00504
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-16T13:52:36"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00504.jpg ;
     :geo [
       a :GeoPoint ;
@@ -64,11 +64,6 @@ t00504:P1
 
 t00504:P2
   a :Female ;
-  :name [
-    a :Name ;
-    :fullName "Hendriëtte de Vries" ;
-    :text "TODO: Hendriëtte de Vries"
-  ] ;
   :age [
     a :Age ;
     :duration "P81Y7M19D"^^xsd:duration ;
@@ -82,6 +77,11 @@ t00504:P2
     a :Date ;
     :date "1930-03-25"^^xsd:date
   ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendriëtte de Vries" ;
+    :text "TODO: Hendriëtte de Vries"
+  ] ;
   :placeOfBirth [
     a :Village ;
     :place place:Beetsterzwaag2759275 ;
@@ -92,4 +92,4 @@ t00504:P2
     :place place:Leeuwarden2751792 ;
     :text "Leeuwarden"
   ] .
-  
+

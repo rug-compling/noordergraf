@@ -3,9 +3,9 @@
 tomb:T00005
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-25T16:51:39"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00005.jpg ;
     :geo [
       a :GeoPoint ;
@@ -128,35 +128,35 @@ t00005:P5
 
 t00005:V1
   a :Quote ;
+  :quoteSubject t00005:P1 ;
   :reference [
     a :BibleReference ;
     :chapter 105 ;
     :part bible:Psalms ;
     :verse "5"
   ] ;
-  :quoteSubject t00005:P1 ;
   :text "ps. 105:5" .
 
 t00005:V2
   a :Quote ;
+  :quoteSubject t00005:P4 ;
   :reference [
     a :BibleReference ;
     :chapter 145 ;
     :part bible:Psalms ;
     :verse "18"
   ] ;
-  :quoteSubject t00005:P4 ;
   :text "ps. 145:18" .
 
 t00005:V3
   a :Quote ;
+  :quoteSubject t00005:P5 ;
   :reference [
     a :BibleReference ;
+    :bibleSource <https://www.bible.com/nl/bible/75/1JN.1.7> ;
     :chapter 1 ;
     :part bible:1John ;
-    :bibleSource <https://www.bible.com/nl/bible/75/1JN.1.7> ;
     :verse "7"
   ] ;
-  :quoteSubject t00005:P5 ;
   :text "1 joh. 1:7" .
 

@@ -2,11 +2,10 @@
 
 tomb:T01101
   a :Tomb ;
-  :text "TODO" ;
   :photo [
+    a :Photo ;
     :dcDate "2021-03-06T09:07:40"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T01101.jpg ;
     :geo [
       a :GeoPoint ;
@@ -16,7 +15,8 @@ tomb:T01101
     :nd "+53.2627+006.3125"^^ll:
   ] ;
   :site site:NLgr9843agGrijpskerk ;
-  :subject t01101:P1 .
+  :subject t01101:P1 ;
+  :text "TODO" .
 
 t01101:P1
   a :Female ;

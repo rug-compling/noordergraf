@@ -2,6 +2,20 @@
 
 tomb:T00135
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-02T10:38:20"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00135.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2060 ;
+      :geoLong 6.5704
+    ] ;
+    :nd "+53.2060+006.5704"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00135:P1, t00135:P2 ;
   :text """TODO: rustplaats
 van
 gerard de boer
@@ -12,21 +26,7 @@ overlj oct.
 albertje hummei
 geb. 1 augs 1869
 overl 8 augs 1935
-""" ;
-  :photo [
-    :dcDate "2019-10-02T10:38:20"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00135.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2060 ;
-      :geoLong 6.5704
-    ] ;
-    :nd "+53.2060+006.5704"^^ll:
-  ] ;
-  :site site:NLgr9725acGroningen ;
-  :subject t00135:P1, t00135:P2 .
+""" .
 
 t00135:P1
   a :Male ;

@@ -3,9 +3,9 @@
 tomb:T00710
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-12-21T13:41:00"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00710.jpg ;
     :geo [
       a :GeoPoint ;
@@ -53,13 +53,13 @@ t00710:P1
     :text "TODO: Jan Hekman"
   ] ;
   :relation [
-    a :Father
-  ], [
     a :Spouse ;
     :target t00710:P2
   ], [
     a :Husband ;
     :target t00710:P2
+  ], [
+    a :Father
   ] .
 
 t00710:P2

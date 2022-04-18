@@ -2,18 +2,10 @@
 
 tomb:T00594
   a :Tomb ;
-  :text """t Het nog nooit, nog nooit zo donker west,
-of t wer altied wel weer licht.
-
-JACOB F. HOLWERDA
-★ 17-7-1935   ✝ 5-1-2011
-
-Zien leste toentje
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-30T14:21:42"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00594.jpg ;
     :geo [
       a :GeoPoint ;
@@ -24,29 +16,43 @@ Zien leste toentje
   ] ;
   :quote [
     a :Quote ;
-    :text """t Het nog nooit, nog nooit zo donker west,
-of t wer altied wel weer licht."""@gos ;
     :reference [
       a :MusicReference ;
-      :artist t00594:P2 ;
-      :trackTitle "t Het nog nooit zo donker west"@gos ;
+      :album t00594:A1 ;
       :albumTrack "A2" ;
-      :album t00594:A1
-    ]
-  ] , [
+      :artist t00594:P2 ;
+      :trackTitle "t Het nog nooit zo donker west"@gos
+    ] ;
+    :text """t Het nog nooit, nog nooit zo donker west,
+of t wer altied wel weer licht."""@gos
+  ], [
     a :Quote ;
-    :text "Zien leste toentje"@gos ;
     :comment "parafrase" ;
     :reference [
       a :MusicReference ;
-      :artist t00594:P2 ;
-      :trackTitle "Mien Toentje"@gos ;
+      :album t00594:A1 ;
       :albumTrack "A1" ;
-      :album t00594:A1
-    ]
+      :artist t00594:P2 ;
+      :trackTitle "Mien Toentje"@gos
+    ] ;
+    :text "Zien leste toentje"@gos
   ] ;
   :site site:NLgr9951tnWinsum ;
-  :subject t00594:P1 .
+  :subject t00594:P1 ;
+  :text """t Het nog nooit, nog nooit zo donker west,
+of t wer altied wel weer licht.
+
+JACOB F. HOLWERDA
+★ 17-7-1935   ✝ 5-1-2011
+
+Zien leste toentje
+""" .
+
+t00594:A1
+  a :Album ;
+  :albumTitle "Mien toentje"@gos ;
+  :date "1984"^^xsd:gYear ;
+  :discogs discogs:850334 .
 
 t00594:P1
   a :Male ;
@@ -74,8 +80,3 @@ t00594:P2
   :artistName "Ede Staal" ;
   :sameAs wikidata:Q1810851 .
 
-t00594:A1
-  a :Album ;
-  :albumTitle "Mien toentje"@gos ;
-  :date "1984"^^xsd:gYear ;
-  :discogs discogs:850334 .

@@ -3,9 +3,9 @@
 tomb:T00322
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-19T14:22:32"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00322.jpg ;
     :geo [
       a :GeoPoint ;
@@ -16,23 +16,23 @@ tomb:T00322
   ] ;
   :quote [
     a :Quote ;
+    :quoteSubject t00322:P1 ;
     :reference [
       a :BibleReference ;
       :chapter 23 ;
       :part bible:Psalms ;
       :verse "1"
     ] ;
-    :quoteSubject t00322:P1 ;
     :text "Ps. 23 v.1."
   ], [
     a :Quote ;
+    :quoteSubject t00322:P2 ;
     :reference [
       a :BibleReference ;
       :chapter 84 ;
       :part bible:Psalms ;
       :verse "12C"
     ] ;
-    :quoteSubject t00322:P2 ;
     :text "Ps. 84 v.12c."
   ] ;
   :site site:NLdr7907chHoogeveen ;

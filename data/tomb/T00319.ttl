@@ -3,9 +3,9 @@
 tomb:T00319
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-19T13:57:14"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00319.jpg ;
     :geo [
       a :GeoPoint ;
@@ -55,13 +55,13 @@ t00319:P1
     :text "TODO: Griet Jansen-Slomp"
   ] ;
   :relation t00319:R1, [
-    a :Mother
-  ], [
-    a :Grandmother
-  ], [
     a :Spouse ;
     :before t00319:R1 ;
     :target t00319:P3
+  ], [
+    a :Mother
+  ], [
+    a :Grandmother
   ] .
 
 t00319:P2

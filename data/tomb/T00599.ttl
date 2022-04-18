@@ -2,20 +2,10 @@
 
 tomb:T00599
   a :Tomb ;
-  :text """TODO: rustplaats
-van onze lieve vrouw en moeder
-geessien bos
-ged,19 sep 1872 overl.5 aug. 1961
-echtg. van
-willem reker
-geb.6 oct. 1880 overl 19 mei 1967
-gez 27:2
-e
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-30T14:06:55"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00599.jpg ;
     :geo [
       a :GeoPoint ;
@@ -32,7 +22,17 @@ e
     :text "gez.27:2"@nld
   ] ;
   :site site:NLgr9951tnWinsum ;
-  :subject t00599:P1, t00599:P2 .
+  :subject t00599:P1, t00599:P2 ;
+  :text """TODO: rustplaats
+van onze lieve vrouw en moeder
+geessien bos
+ged,19 sep 1872 overl.5 aug. 1961
+echtg. van
+willem reker
+geb.6 oct. 1880 overl 19 mei 1967
+gez 27:2
+e
+""" .
 
 t00599:P1
   a :Female ;
@@ -55,13 +55,13 @@ t00599:P1
     :text "TODO: Geessien Bos"
   ] ;
   :relation [
+    a :Mother
+  ], [
     a :Spouse ;
     :target t00599:P2
   ], [
     a :Wife ;
     :target t00599:P2
-  ], [
-    a :Mother
   ] .
 
 t00599:P2

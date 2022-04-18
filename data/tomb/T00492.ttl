@@ -3,9 +3,9 @@
 tomb:T00492
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-16T13:58:09"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00492.jpg ;
     :geo [
       a :GeoPoint ;
@@ -64,13 +64,13 @@ t00492:P1
   :placeOfBirth t00492:C1 ;
   :placeOfDeath t00492:C1 ;
   :relation [
+    a :Father
+  ], [
     a :Widow ;
     :target t00492:P2
   ], [
     a :Husband ;
     :target t00492:P2
-  ], [
-    a :Father
   ] .
 
 t00492:P2

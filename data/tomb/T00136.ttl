@@ -3,9 +3,9 @@
 tomb:T00136
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-02T10:35:09"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00136.jpg ;
     :geo [
       a :GeoPoint ;
@@ -13,6 +13,14 @@ tomb:T00136
       :geoLong 6.5701
     ] ;
     :nd "+53.2060+006.5701"^^ll:
+  ] ;
+  :quote [
+    a :Quote ;
+    :quoteSubject t00136:P1 ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :text "Gez. 223:1"
   ] ;
   :site site:NLgr9725acGroningen ;
   :subject t00136:P1, t00136:P2 ;
@@ -22,14 +30,6 @@ tomb:T00136
   ], [
     a :Symbol ;
     :symbolType symbol:Anchor
-  ] ;
-  :quote [
-    a :Quote ;
-    :text "Gez. 223:1" ;
-    :quoteSubject t00136:P1 ;
-    :reference [
-      a :HymnReference
-    ]
   ] ;
   :text """TODO: dede
 totem

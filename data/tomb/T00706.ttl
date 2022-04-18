@@ -3,9 +3,9 @@
 tomb:T00706
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-12-21T13:48:45"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00706.jpg ;
     :geo [
       a :GeoPoint ;
@@ -55,7 +55,7 @@ t00706:P1
     :text "TODO: Dirk Meppelink"
   ] ;
   :relation [
-    a :BrotherInLaw, :Brother, :Uncle ;
+    a :Brother, :BrotherInLaw, :Uncle ;
     :target [
       a :Family ;
       :location [

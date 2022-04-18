@@ -2,16 +2,10 @@
 
 tomb:T00509
   a :Tomb ;
-  :text """TODO: tekele catharina lombool-mulder
-20-09-1898
-# 13-1-1990
-theodorus petrus antanjulambool
-18-05-1901
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-09T14:33:14"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00509.jpg ;
     :geo [
       a :GeoPoint ;
@@ -21,7 +15,13 @@ theodorus petrus antanjulambool
     :nd "+53.2066+005.7691"^^ll:
   ] ;
   :site site:NLfr8915cpLeeuwarden ;
-  :subject t00509:P1, t00509:P2 .
+  :subject t00509:P1, t00509:P2 ;
+  :text """TODO: tekele catharina lombool-mulder
+20-09-1898
+# 13-1-1990
+theodorus petrus antanjulambool
+18-05-1901
+""" .
 
 t00509:P1
   a :Female ;

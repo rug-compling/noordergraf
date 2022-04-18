@@ -2,10 +2,14 @@
 
 tomb:T00575
   a :Tomb ;
+  :figure [
+    a :Portrait ;
+    :theme t00575:P1
+  ] ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-23T10:23:00"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00575.jpg ;
     :geo [
       a :GeoPoint ;
@@ -13,10 +17,6 @@ tomb:T00575
       :geoLong 6.7536
     ] ;
     :nd "+53.1648+006.7536"^^ll:
-  ] ;
-  :figure [
-    a :Portrait ;
-    :theme t00575:P1
   ] ;
   :quote [
     a :Quote ;

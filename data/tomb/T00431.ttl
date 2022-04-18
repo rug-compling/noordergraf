@@ -3,9 +3,9 @@
 tomb:T00431
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-02T11:46:03"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00431.jpg ;
     :geo [
       a :GeoPoint ;
@@ -78,11 +78,6 @@ t00431:P2
 
 t00431:Q1
   a :Quote ;
-  :text """en altijd is het zo geweest,
-dat de liefde haar eigen diepte
-niet kent dan op het uur der
-scheiding.
-K. Gibran""" ;
   :reference [
     a :BookReference ;
     :author [
@@ -93,5 +88,10 @@ K. Gibran""" ;
     :bookTitle "De profeet"@nld ;
     :date "1923"^^xsd:gYear ;
     :sameAs wikidata:Q1196302
-  ] .
+  ] ;
+  :text """en altijd is het zo geweest,
+dat de liefde haar eigen diepte
+niet kent dan op het uur der
+scheiding.
+K. Gibran""" .
 

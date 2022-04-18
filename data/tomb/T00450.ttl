@@ -2,6 +2,20 @@
 
 tomb:T00450
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T15:04:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00450.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2063 ;
+      :geoLong 5.7695
+    ] ;
+    :nd "+53.2063+005.7695"^^ll:
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00450:P1, t00450:P2 ;
   :text """TODO: 1
 rustplaats van
 jacobus
@@ -13,21 +27,7 @@ en van zijn echtgenoote
 petronella faas,
 * 21 jan. 1863
 +1 aug. 1944
-""" ;
-  :photo [
-    :dcDate "2019-11-09T15:04:30"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00450.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2063 ;
-      :geoLong 5.7695
-    ] ;
-    :nd "+53.2063+005.7695"^^ll:
-  ] ;
-  :site site:NLfr8915cpLeeuwarden ;
-  :subject t00450:P1, t00450:P2 .
+""" .
 
 t00450:P1
   a :Male ;

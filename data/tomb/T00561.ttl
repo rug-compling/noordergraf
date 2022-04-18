@@ -3,9 +3,9 @@
 tomb:T00561
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-24T13:45:54"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00561.jpg ;
     :geo [
       a :GeoPoint ;
@@ -16,23 +16,23 @@ tomb:T00561
   ] ;
   :quote [
     a :Quote ;
+    :quoteSubject t00561:P1 ;
     :reference [
       a :BibleReference ;
       :chapter 6 ;
       :part bible:Romans ;
       :verse "23"
     ] ;
-    :quoteSubject t00561:P1 ;
     :text "rom. 6 : 23."
   ], [
     a :Quote ;
+    :quoteSubject t00561:P2 ;
     :reference [
       a :BibleReference ;
       :chapter 103 ;
       :part bible:Psalms ;
       :verse "15-22"
     ] ;
-    :quoteSubject t00561:P2 ;
     :text "Ps. 103:15-22."
   ] ;
   :site site:NLgr9641anVeendam ;

@@ -3,9 +3,9 @@
 tomb:T00824
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2020-02-01T12:19:25"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00824.jpg ;
     :geo [
       a :GeoPoint ;
@@ -59,12 +59,12 @@ t00824:P1
     :text "TODO: DOKKUM"
   ] ;
   :relation [
+    a :Husband ;
+    :target t00824:P2
+  ], [
     a :Father
   ], [
     a :Spouse ;
-    :target t00824:P2
-  ], [
-    a :Husband ;
     :target t00824:P2
   ] .
 

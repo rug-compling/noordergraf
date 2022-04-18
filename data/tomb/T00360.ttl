@@ -3,9 +3,9 @@
 tomb:T00360
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-25T17:31:18"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00360.jpg ;
     :geo [
       a :GeoPoint ;
@@ -68,12 +68,12 @@ t00360:P1
   :placeOfBirth t00360:C1 ;
   :placeOfDeath t00360:C1 ;
   :relation [
+    a :Wife ;
+    :target t00360:P2
+  ], [
     a :Mother
   ], [
     a :Spouse ;
-    :target t00360:P2
-  ], [
-    a :Wife ;
     :target t00360:P2
   ] .
 

@@ -2,18 +2,10 @@
 
 tomb:T00600
   a :Tomb ;
-  :text """TODO: mier rust
-onze lieve man en vader
-jan jonkman
-* 15.3.1937 + 5.2.1964
-geliefde echtg.van tijsinga
-==
-121
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-30T14:04:12"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00600.jpg ;
     :geo [
       a :GeoPoint ;
@@ -23,7 +15,15 @@ geliefde echtg.van tijsinga
     :nd "+53.3277+006.5111"^^ll:
   ] ;
   :site site:NLgr9951tnWinsum ;
-  :subject t00600:P1, t00600:P2 .
+  :subject t00600:P1, t00600:P2 ;
+  :text """TODO: mier rust
+onze lieve man en vader
+jan jonkman
+* 15.3.1937 + 5.2.1964
+geliefde echtg.van tijsinga
+==
+121
+""" .
 
 t00600:P1
   a :Male ;

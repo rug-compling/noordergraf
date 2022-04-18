@@ -2,6 +2,20 @@
 
 tomb:T00562
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:42:58"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00562.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.1047 ;
+      :geoLong 6.8745
+    ] ;
+    :nd "+53.1047+006.8745"^^ll:
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00562:P1, t00562:P2, t00562:P3, t00562:P4, t00562:P5, t00562:P6 ;
   :text """TODO: hier rusten
 dientje
 ged, 21 dec. 1911,
@@ -23,21 +37,7 @@ r van der borgh
 m.
 rust zacht naar gods wil:
 zijn troost make ons stil
-""" ;
-  :photo [
-    :dcDate "2019-11-24T13:42:58"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00562.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1047 ;
-      :geoLong 6.8745
-    ] ;
-    :nd "+53.1047+006.8745"^^ll:
-  ] ;
-  :site site:NLgr9641anVeendam ;
-  :subject t00562:P1, t00562:P2, t00562:P3, t00562:P4, t00562:P5, t00562:P6 .
+""" .
 
 t00562:P1
   a :Female ;

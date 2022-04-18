@@ -2,19 +2,10 @@
 
 tomb:T00409
   a :Tomb ;
-  :text """TODO: rustplaats
-van mijn lieve man en vader
-egbert geert jan
-biemold
-* 22_3_1949 + 318_1987
-echtgenoot van
-anneke detz
-vader van harm
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-25T17:11:44"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00409.jpg ;
     :geo [
       a :GeoPoint ;
@@ -23,7 +14,16 @@ vader van harm
     ] ;
     :nd "+53.0891+006.5607"^^ll:
   ] ;
-  :subject t00409:P1, t00409:P2, t00409:P3 .
+  :subject t00409:P1, t00409:P2, t00409:P3 ;
+  :text """TODO: rustplaats
+van mijn lieve man en vader
+egbert geert jan
+biemold
+* 22_3_1949 + 318_1987
+echtgenoot van
+anneke detz
+vader van harm
+""" .
 
 t00409:P1
   a :Male ;

@@ -2,6 +2,20 @@
 
 tomb:T00095
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-24T15:17:17"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00095.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2061 ;
+      :geoLong 6.5730
+    ] ;
+    :nd "+53.2061+006.5730"^^ll:
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00095:P1, t00095:P2, t00095:P3, t00095:P4 ;
   :text """TODO: izebrand van weering
 * 2-6-1883
 + 15-12-1941
@@ -12,21 +26,7 @@ martha van weering
 + 20-5-1992
 janny van weering
 * 9-4-1927 + 14-2-2017
-""" ;
-  :photo [
-    :dcDate "2019-09-24T15:17:17"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00095.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2061 ;
-      :geoLong 6.5730
-    ] ;
-    :nd "+53.2061+006.5730"^^ll:
-  ] ;
-  :site site:NLgr9725acGroningen ;
-  :subject t00095:P1, t00095:P2, t00095:P3, t00095:P4 .
+""" .
 
 t00095:P1
   a :Male ;

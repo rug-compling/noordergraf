@@ -2,13 +2,10 @@
 
 tomb:T00123
   a :Tomb ;
-  :text """TODO: ng
-\u4e0d\u80fd
-""" ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-20T17:48:44"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00123.jpg ;
     :geo [
       a :GeoPoint ;
@@ -18,7 +15,10 @@ tomb:T00123
     :nd "+53.1625+006.6154"^^ll:
   ] ;
   :site site:NLgr9752cmHaren ;
-  :subject t00123:P1, t00123:P2 .
+  :subject t00123:P1, t00123:P2 ;
+  :text """TODO: ng
+不能
+""" .
 
 t00123:P1
   a :Male ;

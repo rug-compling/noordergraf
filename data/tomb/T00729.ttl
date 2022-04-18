@@ -2,6 +2,20 @@
 
 tomb:T00729
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:10:46"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00729.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 52.7824 ;
+      :geoLong 6.8975
+    ] ;
+    :nd "+52.7824+006.8975"^^ll:
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00729:P1, t00729:P2 ;
   :text """TODO: hier rust
 minlieve man
 en vader
@@ -20,22 +34,8 @@ echtg van
 k trip
 enectuel dude
 * 5-4-1907
-\u2020 29.4.1941
-""" ;
-  :photo [
-    :dcDate "2019-12-21T13:10:46"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00729.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 52.7824 ;
-      :geoLong 6.8975
-    ] ;
-    :nd "+52.7824+006.8975"^^ll:
-  ] ;
-  :site site:NLdr7811heEmmen ;
-  :subject t00729:P1, t00729:P2 .
+† 29.4.1941
+""" .
 
 t00729:P1
   a :Male ;

@@ -2,10 +2,14 @@
 
 tomb:T00483
   a :Tomb ;
+  :figure [
+    a :Portrait ;
+    :theme t00483:P3
+  ] ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-09T14:34:15"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00483.jpg ;
     :geo [
       a :GeoPoint ;
@@ -13,10 +17,6 @@ tomb:T00483
       :geoLong 5.7691
     ] ;
     :nd "+53.2064+005.7691"^^ll:
-  ] ;
-  :figure [
-    a :Portrait ;
-    :theme t00483:P3
   ] ;
   :site site:NLfr8915cpLeeuwarden ;
   :subject t00483:P1 ;

@@ -3,9 +3,9 @@
 tomb:T00075
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-09-25T11:42:40"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00075.jpg ;
     :geo [
       a :GeoPoint ;
@@ -55,12 +55,12 @@ t00075:P1
     :text "TODO: H. Mast"
   ] ;
   :relation [
-    a :Grandfather
-  ], [
     a :Husband ;
     :target t00075:P2
   ], [
     a :Father
+  ], [
+    a :Grandfather
   ] .
 
 t00075:P2

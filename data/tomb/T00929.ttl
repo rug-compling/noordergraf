@@ -2,10 +2,14 @@
 
 tomb:T00929
   a :Tomb ;
+  :figure [
+    a :Bust ;
+    :theme t00929:P1
+  ] ;
   :photo [
+    a :Photo ;
     :dcDate "2020-02-15T15:31:26"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00929.jpg ;
     :geo [
       a :GeoPoint ;
@@ -13,10 +17,6 @@ tomb:T00929
       :geoLong 6.8023
     ] ;
     :nd "+52.7757+006.8023"^^ll:
-  ] ;
-  :figure [
-    a :Bust ;
-    :theme t00929:P1
   ] ;
   :quote [
     a :Quote ;

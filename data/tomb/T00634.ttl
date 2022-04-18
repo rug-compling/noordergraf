@@ -2,10 +2,13 @@
 
 tomb:T00634
   a :Tomb ;
+  :figure [
+    a :Statue
+  ] ;
   :photo [
+    a :Photo ;
     :dcDate "2019-11-23T09:55:56"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00634.jpg ;
     :geo [
       a :GeoPoint ;
@@ -13,9 +16,6 @@ tomb:T00634
       :geoLong 6.7545
     ] ;
     :nd "+53.1641+006.7545"^^ll:
-  ] ;
-  :figure [
-    a :Statue
   ] ;
   :quote [
     a :Quote ;

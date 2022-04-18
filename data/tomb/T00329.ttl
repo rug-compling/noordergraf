@@ -3,9 +3,9 @@
 tomb:T00329
   a :Tomb ;
   :photo [
+    a :Photo ;
     :dcDate "2019-10-19T14:23:42"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
     :file img:T00329.jpg ;
     :geo [
       a :GeoPoint ;
@@ -65,13 +65,13 @@ t00329:P1
   :placeOfDeath t00329:C2 ;
   :relation [
     a :Mother ;
-    :target t00329:P3
-  ], [
-    a :Mother ;
     :target t00329:P4
   ], [
     a :Wife ;
     :target t00329:P2
+  ], [
+    a :Mother ;
+    :target t00329:P3
   ] .
 
 t00329:P2

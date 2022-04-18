@@ -2,6 +2,20 @@
 
 tomb:T00271
   a :Tomb ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-14T10:58:23"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00271.jpg ;
+    :geo [
+      a :GeoPoint ;
+      :geoLat 53.2228 ;
+      :geoLong 6.6378
+    ] ;
+    :nd "+53.2228+006.6378"^^ll:
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00271:P1, t00271:P2 ;
   :text """TODO: rustplaats
 van
 onze lieve man vader en opa
@@ -12,21 +26,7 @@ en onze lieve moeder en om
 mietje poopt
 19_ni__1305
 1972
-""" ;
-  :photo [
-    :dcDate "2019-10-14T10:58:23"^^xsd:dateTime ;
-    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    a :Photo ;
-    :file img:T00271.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2228 ;
-      :geoLong 6.6378
-    ] ;
-    :nd "+53.2228+006.6378"^^ll:
-  ] ;
-  :site site:NLgr9723ewGroningen ;
-  :subject t00271:P1, t00271:P2 .
+""" .
 
 t00271:P1
   a :Male ;
@@ -49,15 +49,15 @@ t00271:P1
     :text "TODO: Jan Nieborg"
   ] ;
   :relation [
-    a :Husband ;
-    :target t00271:P2
-  ], [
-    a :Father
-  ], [
     a :Grandfather
   ], [
     a :Spouse ;
     :target t00271:P2
+  ], [
+    a :Husband ;
+    :target t00271:P2
+  ], [
+    a :Father
   ] .
 
 t00271:P2
