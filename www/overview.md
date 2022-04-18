@@ -1,4 +1,4 @@
-title: Noordergraf - Overzicht
+title: Noordergraf -- Overzicht
 ////
 
 # Overzicht
@@ -157,7 +157,7 @@ Example: [tomb:T00000](tomb/T00000)
 
 ## BiblePart
 
-Example: [bible:Genesis](bible/Genesis)
+Example: [bible:Matthew](bible/Matthew)
 
 - **<a name="BiblePart">BiblePart</a>**
     - biblePartName → `rdf:langString`

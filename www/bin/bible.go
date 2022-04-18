@@ -92,7 +92,7 @@ SELECT DISTINCT ?tomb ?name {
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <title>Noordergraf -- Graven met verwijzingen naar %s</title>
+    <title>Noordergraf -- Graven met verwijzingen naar bijbelboek %s</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" type="image/ico">
@@ -100,7 +100,7 @@ SELECT DISTINCT ?tomb ?name {
   </head>
   <body class="textsearch">
     <div id="container">
-<h1>Graven met verwijzingen naar %s</h1>
+<h1>Graven met verwijzingen naar bijbelboek %s</h1>
 gevonden: %d
 <table>
 `, part, part, len(sparql.Results))

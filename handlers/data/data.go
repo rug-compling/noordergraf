@@ -428,7 +428,18 @@ Last-Modified: %s
 	}
 
 	if strings.HasSuffix(uri, "/index") {
-		if strings.HasSuffix(uri, "/symbol/index") {
+		if strings.HasSuffix(uri, "/bible/index") {
+			lang := "eng"
+			if language == "nl" {
+				lang = "nld"
+			}
+			b, err := ioutil.ReadFile("/net/noordergraf/data/bible/index.body." + lang)
+			if err != nil {
+				fmt.Printf("Error: %s\n", html.EscapeString(err.Error()))
+			} else {
+				fmt.Print(string(b))
+			}
+		} else if strings.HasSuffix(uri, "/symbol/index") {
 			lang := "eng"
 			if language == "nl" {
 				lang = "nld"

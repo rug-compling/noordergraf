@@ -34,6 +34,8 @@ Voor experts: [zoek met sparql](https://anonymous@noordergraf.rug.nl:10036/#/rep
 
 [Overzicht van veelvoorkomende grafsymbolen](symbol/)
 
+[Overzicht van verwijzingen naar bijbelboeken](bible/)
+
 Meer informatie: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/sites/noordergraf/)
 
 
