@@ -419,6 +419,10 @@ Last-Modified: %s
       <h1>%s</h1>
 `, lastModified.Format(time.RFC1123), title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, title)
 
+	if uri == "/ns" {
+		fmt.Println(`<div class="props top">see also: <a href="overview">overview</a></div>`)
+	}
+
 	if body != "" || prefix != "" {
 		fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
 	}
