@@ -2,17 +2,17 @@
 
 tomb:T00266
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2227 ;
+    :geoLong 6.6380
+  ] ;
+  :nd "+53.2227+006.6380"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-10-14T11:02:10"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00266.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2227 ;
-      :geoLong 6.6380
-    ] ;
-    :nd "+53.2227+006.6380"^^ll:
+    :file img:T00266.jpg
   ] ;
   :quote [
     a :Quote ;
@@ -50,12 +50,12 @@ t00266:P1
     :text "TODO: Jannes Blaauw"
   ] ;
   :relation [
-    a :Husband ;
-    :target t00266:P2
-  ], [
     a :Father
   ], [
     a :Spouse ;
+    :target t00266:P2
+  ], [
+    a :Husband ;
     :target t00266:P2
   ] .
 

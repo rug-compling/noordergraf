@@ -2,17 +2,17 @@
 
 tomb:T00219
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2225 ;
+    :geoLong 6.6367
+  ] ;
+  :nd "+53.2225+006.6367"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-10-08T14:43:56"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00219.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2225 ;
-      :geoLong 6.6367
-    ] ;
-    :nd "+53.2225+006.6367"^^ll:
+    :file img:T00219.jpg
   ] ;
   :site site:NLgr9723ewGroningen ;
   :subject t00219:P1, t00219:P2 ;
@@ -60,19 +60,19 @@ t00219:P1
   ] ;
   :occupation [
     a :Occupation ;
-    :hisco hisco:14000 ;
-    :location [
-      a :Village ;
-      :place place:Middelbert2750902 ;
-      :text "TODO: MIDDELBERT"
-    ]
-  ], [
-    a :Occupation ;
     :hisco hisco:61220 ;
     :location [
       a :Hamlet ;
       :place place:Euvelgunne2755982 ;
       :text "TODO: EUVELGUNNE"
+    ]
+  ], [
+    a :Occupation ;
+    :hisco hisco:14000 ;
+    :location [
+      a :Village ;
+      :place place:Middelbert2750902 ;
+      :text "TODO: MIDDELBERT"
     ]
   ] ;
   :relation [

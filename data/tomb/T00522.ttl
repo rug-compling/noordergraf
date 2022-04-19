@@ -2,17 +2,17 @@
 
 tomb:T00522
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1671 ;
+    :geoLong 6.7534
+  ] ;
+  :nd "+53.1671+006.7534"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-11-23T10:58:03"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00522.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1671 ;
-      :geoLong 6.7534
-    ] ;
-    :nd "+53.1671+006.7534"^^ll:
+    :file img:T00522.jpg
   ] ;
   :quote [
     a :Quote ;
@@ -56,12 +56,12 @@ t00522:P1
     :text "TODO: Harry Mohamed Hoesein Karim"
   ] ;
   :relation [
-    a :Father
-  ], [
-    a :Brother
-  ], [
     a :Grandfather
   ], [
     a :Husband
+  ], [
+    a :Father
+  ], [
+    a :Brother
   ] .
 

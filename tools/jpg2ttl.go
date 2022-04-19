@@ -76,7 +76,20 @@ func main() {
 	} else if strings.HasSuffix(lower, ".jpeg") {
 		name = name[:len(name)-5]
 	}
-	fmt.Printf(`  :image [
+	if lat != 0 && lon != 0 {
+		fmt.Printf(`  :geo [
+    a :GeoPoint ;
+    :geoLat %.4f ;
+    :geoLong %.4f
+  ] ;
+  :nd "%+08.4f%+09.4f"^^ll: ;
+`,
+			lat*latv,
+			lon*lonv,
+			lat*latv,
+			lon*lonv)
+	}
+	fmt.Printf(`  :photo [
     a :Photo ;
     :file img:%s ;
     # :dcCreator "J. Doe" ;
@@ -89,20 +102,6 @@ func main() {
 	if datetime != "" {
 		fmt.Printf(" ;\n    :dcDate \"%s\"^^xsd:dateTime", datetime)
 	}
-	if lat != 0 && lon != 0 {
-		fmt.Printf(` ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat %.4f ;
-      :geoLong %.4f
-    ] ;
-    :nd "%+08.4f%+09.4f"^^ll:`,
-			lat*latv,
-			lon*lonv,
-			lat*latv,
-			lon*lonv)
-	}
-
 	fmt.Print("\n  ] ;\n")
 
 }

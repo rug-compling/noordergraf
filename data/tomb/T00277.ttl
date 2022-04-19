@@ -2,17 +2,17 @@
 
 tomb:T00277
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4038 ;
+    :geoLong 6.7491
+  ] ;
+  :nd "+53.4038+006.7491"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-10-16T16:57:12"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00277.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.4038 ;
-      :geoLong 6.7491
-    ] ;
-    :nd "+53.4038+006.7491"^^ll:
+    :file img:T00277.jpg
   ] ;
   :site site:NLgr9985scOosternieland ;
   :subject t00277:P1, t00277:P2 ;
@@ -67,13 +67,13 @@ t00277:P1
   ] ;
   :placeOfDeath t00277:C2 ;
   :relation [
+    a :Mother
+  ], [
     a :Spouse ;
     :target t00277:P2
   ], [
     a :Wife ;
     :target t00277:P2
-  ], [
-    a :Mother
   ] .
 
 t00277:P2

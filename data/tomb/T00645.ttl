@@ -2,17 +2,17 @@
 
 tomb:T00645
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2089 ;
+    :geoLong 6.6479
+  ] ;
+  :nd "+53.2089+006.6479"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-12-08T11:20:47"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00645.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2089 ;
-      :geoLong 6.6479
-    ] ;
-    :nd "+53.2089+006.6479"^^ll:
+    :file img:T00645.jpg
   ] ;
   :site site:NLgr9723ejGroningen ;
   :subject t00645:P1, t00645:P2 ;
@@ -57,13 +57,13 @@ t00645:P1
     :text "TODO: DELFT"
   ] ;
   :relation [
+    a :Father
+  ], [
     a :Spouse ;
     :target t00645:P2
   ], [
     a :Husband ;
     :target t00645:P2
-  ], [
-    a :Father
   ] .
 
 t00645:P2

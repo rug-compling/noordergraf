@@ -2,17 +2,17 @@
 
 tomb:T00472
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2073 ;
+    :geoLong 5.7687
+  ] ;
+  :nd "+53.2073+005.7687"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-11-09T14:45:41"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00472.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2073 ;
-      :geoLong 5.7687
-    ] ;
-    :nd "+53.2073+005.7687"^^ll:
+    :file img:T00472.jpg
   ] ;
   :site site:NLfr8915cpLeeuwarden ;
   :subject t00472:P1, t00472:P2, t00472:P3, t00472:P4 ;
@@ -71,13 +71,13 @@ t00472:P1
   :placeOfBirth t00472:C1 ;
   :placeOfDeath t00472:C1 ;
   :relation [
+    a :Mother
+  ], [
     a :Spouse ;
     :target t00472:P2
   ], [
     a :Wife ;
     :target t00472:P2
-  ], [
-    a :Mother
   ] .
 
 t00472:P2

@@ -2,17 +2,17 @@
 
 tomb:T00527
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1650 ;
+    :geoLong 6.7532
+  ] ;
+  :nd "+53.1650+006.7532"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-11-23T10:29:15"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00527.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1650 ;
-      :geoLong 6.7532
-    ] ;
-    :nd "+53.1650+006.7532"^^ll:
+    :file img:T00527.jpg
   ] ;
   :quote t00527:V1 ;
   :site site:NLgr9601kaHoogezand ;
@@ -53,12 +53,12 @@ t00527:P1
     :text "TODO: Roelf Sjoerd van Dijk"
   ] ;
   :relation [
-    a :Husband ;
-    :target t00527:P2
-  ], [
     a :Father
   ], [
     a :Grandfather
+  ], [
+    a :Husband ;
+    :target t00527:P2
   ] .
 
 t00527:P2

@@ -2,17 +2,17 @@
 
 tomb:T00528
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1649 ;
+    :geoLong 6.7539
+  ] ;
+  :nd "+53.1649+006.7539"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-11-23T10:25:00"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00528.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1649 ;
-      :geoLong 6.7539
-    ] ;
-    :nd "+53.1649+006.7539"^^ll:
+    :file img:T00528.jpg
   ] ;
   :quote [
     a :Quote ;
@@ -58,15 +58,15 @@ t00528:P1
     :text "TODO: Johannes van der Meulen"
   ] ;
   :relation [
-    a :Father
-  ], [
-    a :Grandfather
-  ], [
     a :Spouse ;
     :target t00528:P2
   ], [
     a :Husband ;
     :target t00528:P2
+  ], [
+    a :Father
+  ], [
+    a :Grandfather
   ] .
 
 t00528:P2

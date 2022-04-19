@@ -2,17 +2,17 @@
 
 tomb:T01073
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1626 ;
+    :geoLong 6.6151
+  ] ;
+  :nd "+53.1626+006.6151"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2020-05-15T17:34:33"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T01073.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1626 ;
-      :geoLong 6.6151
-    ] ;
-    :nd "+53.1626+006.6151"^^ll:
+    :file img:T01073.jpg
   ] ;
   :site site:NLgr9752cmHaren ;
   :subject t01073:P1, t01073:P2 ;
@@ -51,13 +51,13 @@ t01073:P1
     :text "TODO: Harmannus Oorburg"
   ] ;
   :relation [
-    a :Spouse ;
-    :target t01073:P2
-  ], [
     a :Husband ;
     :target t01073:P2
   ], [
     a :Father
+  ], [
+    a :Spouse ;
+    :target t01073:P2
   ] .
 
 t01073:P2

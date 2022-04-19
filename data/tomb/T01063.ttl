@@ -2,17 +2,17 @@
 
 tomb:T01063
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1228 ;
+    :geoLong 6.2504
+  ] ;
+  :nd "+53.1228+006.2504"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2020-05-01T15:23:38"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T01063.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1228 ;
-      :geoLong 6.2504
-    ] ;
-    :nd "+53.1228+006.2504"^^ll:
+    :file img:T01063.jpg
   ] ;
   :site site:NLgr9367paDeWilp ;
   :subject t01063:P1, t01063:P2 ;
@@ -54,11 +54,11 @@ t01063:P1
     :text "TODO: Anne Pijpker"
   ] ;
   :relation [
+    a :GreatGrandparent
+  ], [
     a :Parent
   ], [
     a :Grandparent
-  ], [
-    a :GreatGrandparent
   ] .
 
 t01063:P2

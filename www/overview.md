@@ -21,17 +21,17 @@ Example: [tomb:T00000](tomb/T00000)
     - figure
         - **Figure** --- **Bust** | **Portrait** | **Statue**
             - theme → **[Person](#Person)**
+    - geo
+        - **<a name="GeoPoint">GeoPoint</a>**
+            - geoLat → `xsd:decimal`
+            - geoLong → `xsd:decimal`
+    - nd → `ll:`
     - photo
         - **Photo**
             - dcCreator → `rdfs:Resource` | `xsd:string`
             - dcDate → `xsd:dateTime`
             - dcLicense → `rdfs:Resource` | `xsd:string`
             - file → img:...
-            - geo
-                - **<a name="GeoPoint">GeoPoint</a>**
-                    - geoLat → `xsd:decimal`
-                    - geoLong → `xsd:decimal`
-            - nd → `ll:`
     - quote
         - **Quote**
             - comment → `xsd:string` | `rdf:langString`

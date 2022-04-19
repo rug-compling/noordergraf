@@ -2,17 +2,17 @@
 
 tomb:T00276
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2228 ;
+    :geoLong 6.6376
+  ] ;
+  :nd "+53.2228+006.6376"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-10-14T10:53:37"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00276.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.2228 ;
-      :geoLong 6.6376
-    ] ;
-    :nd "+53.2228+006.6376"^^ll:
+    :file img:T00276.jpg
   ] ;
   :site site:NLgr9723ewGroningen ;
   :subject t00276:P1, t00276:P2 ;
@@ -52,13 +52,13 @@ t00276:P1
     :text "TODO: Roelofje de Jong"
   ] ;
   :relation [
-    a :Spouse ;
-    :target t00276:P2
-  ], [
     a :Wife ;
     :target t00276:P2
   ], [
     a :Mother
+  ], [
+    a :Spouse ;
+    :target t00276:P2
   ] .
 
 t00276:P2

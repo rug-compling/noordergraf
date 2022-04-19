@@ -2,17 +2,17 @@
 
 tomb:T00519
   a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1652 ;
+    :geoLong 6.7538
+  ] ;
+  :nd "+53.1652+006.7538"^^ll: ;
   :photo [
     a :Photo ;
     :dcDate "2019-11-23T10:17:34"^^xsd:dateTime ;
     :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    :file img:T00519.jpg ;
-    :geo [
-      a :GeoPoint ;
-      :geoLat 53.1652 ;
-      :geoLong 6.7538
-    ] ;
-    :nd "+53.1652+006.7538"^^ll:
+    :file img:T00519.jpg
   ] ;
   :quote t00519:V1, [
     a :Quote ;
@@ -60,12 +60,12 @@ t00519:P1
     :text "TODO: Tonnis Mulder"
   ] ;
   :relation [
+    a :Father
+  ], [
     a :Grandfather
   ], [
     a :Husband ;
     :target t00519:P2
-  ], [
-    a :Father
   ] .
 
 t00519:P2
