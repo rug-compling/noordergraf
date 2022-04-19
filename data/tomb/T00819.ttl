@@ -57,14 +57,14 @@ t00819:P1
     :text "hiektje huizinga"
   ] ;
   :relation t00819:R3, [
-    a :Mother
-  ], [
     a :Spouse ;
     :before t00819:R3 ;
     :target t00819:P3
   ], [
     a :Wife ;
     :target t00819:P2
+  ], [
+    a :Mother
   ] .
 
 t00819:P2
@@ -119,8 +119,8 @@ t00819:V1
   a :Quote ;
   :reference [
     a :BibleReference ;
+    :book bible:Revelation ;
     :chapter 14 ;
-    :part bible:Revelation ;
     :verse "13"
   ] ;
   :text "TODO" .

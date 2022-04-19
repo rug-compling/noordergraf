@@ -29,7 +29,7 @@ type BindingT struct {
 }
 
 var (
-	rePart = regexp.MustCompile(`^[a-zA-Z0-9_]+$`)
+	reBook = regexp.MustCompile(`^[a-zA-Z0-9_]+$`)
 )
 
 func main() {
@@ -40,8 +40,8 @@ func main() {
 	if x(req.ParseForm(), http.StatusInternalServerError) {
 		return
 	}
-	part := req.FormValue("q")
-	if part == "" {
+	book := req.FormValue("q")
+	if book == "" {
 		fmt.Print(`Status: 400
 
 Missing query
@@ -49,7 +49,7 @@ Missing query
 		return
 	}
 
-	if !rePart.MatchString(part) {
+	if !reBook.MatchString(book) {
 		fmt.Print(`Status: 400
 
 Invalid query
@@ -61,7 +61,7 @@ Invalid query
 PREFIX :      <https://noordergraf.rug.nl/ns#>
 PREFIX bible: <https://noordergraf.rug.nl/bible/>
 SELECT DISTINCT ?tomb ?name {
-  ?tomb :quote / :reference / :part bible:` + part + ` .
+  ?tomb :quote / :reference / :book bible:` + book + ` .
   ?tomb :subject / :name / :fullName ?name .
 } ORDER BY ?name ?tomb
 `
@@ -103,7 +103,7 @@ SELECT DISTINCT ?tomb ?name {
 <h1>Graven met verwijzingen naar bijbelboek %s</h1>
 gevonden: %d
 <table>
-`, part, part, len(sparql.Results))
+`, book, book, len(sparql.Results))
 
 	for _, result := range sparql.Results {
 		var uri, name string

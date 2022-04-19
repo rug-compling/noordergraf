@@ -53,12 +53,12 @@ t00527:P1
     :text "TODO: Roelf Sjoerd van Dijk"
   ] ;
   :relation [
-    a :Father
-  ], [
     a :Grandfather
   ], [
     a :Husband ;
     :target t00527:P2
+  ], [
+    a :Father
   ] .
 
 t00527:P2
@@ -91,8 +91,8 @@ t00527:V1
   a :Quote ;
   :reference [
     a :BibleReference ;
+    :book bible:Revelation ;
     :chapter 14 ;
-    :part bible:Revelation ;
     :verse "13"
   ] ;
   :text "TODO" .

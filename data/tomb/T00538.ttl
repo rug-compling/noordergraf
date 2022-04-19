@@ -1,3 +1,4 @@
+@prefix t00537: <https://noordergraf.rug.nl/tomb/T00537#> .
 @prefix t00538: <https://noordergraf.rug.nl/tomb/T00538#> .
 
 tomb:T00538
@@ -22,7 +23,7 @@ tomb:T00538
     :text "RUST ZACHT"@nld
   ] ;
   :site site:NLgr9641anVeendam ;
-  :subject t00538:P1, t00538:P2 ;
+  :subject t00538:P1 ;
   :symbol [
     a :Symbol ;
     :symbolType symbol:Flag
@@ -56,6 +57,7 @@ worden opgegraven
 
 t00538:P1
   a :Male ;
+  :sameAs t00537:P2 ;
   :age [
     a :Age ;
     :duration "P52Y3M5D"^^xsd:duration ;
@@ -91,6 +93,7 @@ t00538:P1
 
 t00538:P2
   a :Female ;
+  :sameAs t00537:P1 ;
   :name [
     a :Name ;
     :fullName "Ida G. Strating" ;

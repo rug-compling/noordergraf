@@ -405,18 +405,18 @@
 
 ################################################################
 
-:BiblePart a rdfs:Class ;
+:BibleBook a rdfs:Class ;
   rdfs:subClassOf :Class , :WithSameAs , :WithDcModified ;
-  rdfs:label "BiblePart" ;
+  rdfs:label "BibleBook" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:biblePartName a rdf:Property ;
-  rdfs:label "biblePartName" ;
+:bibleBookName a rdf:Property ;
+  rdfs:label "bibleBookName" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :BiblePart ;
+  rdfs:domain :BibleBook ;
   rdfs:range rdf:langString ;
   rdfs:isDefinedBy : .
 
@@ -424,7 +424,7 @@
   rdfs:label "order" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :BiblePart ;
+  rdfs:domain :BibleBook ;
   rdfs:range xsd:integer ;
   rdfs:isDefinedBy : .
 
@@ -1194,12 +1194,12 @@
   rdfs:comment "TODO"@nld ;
   rdfs:isDefinedBy : .
 
-:part a rdf:Property ;
-  rdfs:label "part" ;
+:book a rdf:Property ;
+  rdfs:label "book" ;
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
   rdfs:domain :BibleReference ;
-  rdfs:range :BiblePart ;
+  rdfs:range :BibleBook ;
   rdfs:isDefinedBy : .
 
 :chapter a rdf:Property ;

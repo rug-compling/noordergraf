@@ -40,9 +40,9 @@ Example: [tomb:T00000](tomb/T00000)
                 - **Reference**
                     - --- **BibleReference**
                         - bibleSource → https:\/\/www\.bible\.com\/bible\/...
+                        - book → **[BibleBook](#BibleBook)**
                         - chapter → `xsd:integer`
                         - comment → `xsd:string` | `rdf:langString`
-                        - part → **[BiblePart](#BiblePart)**
                         - verse → `xsd:string` | `rdf:langString`
                     - --- **BookReference**
                         - sameAs → wikidata:...
@@ -155,12 +155,12 @@ Example: [tomb:T00000](tomb/T00000)
                     - text → `xsd:string` | `rdf:langString`
             - text → `xsd:string` | `rdf:langString`
 
-## BiblePart
+## BibleBook
 
 Example: [bible:Matthew](bible/Matthew)
 
-- **<a name="BiblePart">BiblePart</a>**
-    - biblePartName → `rdf:langString`
+- **<a name="BibleBook">BibleBook</a>**
+    - bibleBookName → `rdf:langString`
     - order → `xsd:integer`
     - sameAs → wikidata:...
     - dcModified → `xsd:dateTime`

@@ -58,13 +58,13 @@ func main() {
 
 	query := `
 PREFIX : <https://noordergraf.rug.nl/ns#>
-SELECT ?part ?name ?order (count(?name) as ?cnt)  {
-  ?a :part ?part .
-  ?part :biblePartName ?name .
-  ?part :order ?order .
+SELECT ?book ?name ?order (count(?name) as ?cnt)  {
+  ?a :book ?book .
+  ?book :bibleBookName ?name .
+  ?book :order ?order .
   FILTER ( langMatches(lang(?name), "` + lang + `") )
 }
-GROUP BY ?part ?name ?order
+GROUP BY ?book ?name ?order
 ORDER BY ?order
 `
 
@@ -91,11 +91,11 @@ ORDER BY ?order
 	}
 	p := byte('0')
 	for _, result := range sparql.Results {
-		var part, name, order, cnt string
+		var book, name, order, cnt string
 		for _, binding := range result.Bindings {
-			if binding.Name == "part" {
-				part = binding.URI
-				part = part[strings.LastIndex(part, "/")+1:]
+			if binding.Name == "book" {
+				book = binding.URI
+				book = book[strings.LastIndex(book, "/")+1:]
 			} else if binding.Name == "name" {
 				name = binding.Literal
 			} else if binding.Name == "order" {
@@ -108,7 +108,7 @@ ORDER BY ?order
 			p = order[0]
 			fmt.Println(`<tr><th colspan="2">`, major[p][lang], "</tr>")
 		}
-		fmt.Printf("<tr><td class=\"right\">%s<td><a href=\"/bible/%s\">%s</a></tr>\n", cnt, part, name)
+		fmt.Printf("<tr><td class=\"right\">%s<td><a href=\"/bible/%s\">%s</a></tr>\n", cnt, book, name)
 	}
 	fmt.Println("</table>")
 }

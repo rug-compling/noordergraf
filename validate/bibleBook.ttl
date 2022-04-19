@@ -1,15 +1,15 @@
 
-:BiblePartShape a sh:NodeShape ;
+:BibleBookShape a sh:NodeShape ;
   sh:closed true ;
-  sh:targetClass :BiblePart ;
-  sh:class :BiblePart ;
+  sh:targetClass :BibleBook ;
+  sh:class :BibleBook ;
   sh:property [
     sh:path rdf:type ;
     sh:minCount 1;
     sh:maxCount 1
   ] ;
   sh:property [
-    sh:path :biblePartName ;
+    sh:path :bibleBookName ;
     sh:datatype rdf:langString ;
     sh:uniqueLang true ;
     # Let op: validator kijkt alleen naar eerste twee letters

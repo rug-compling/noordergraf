@@ -60,12 +60,12 @@ t00519:P1
     :text "TODO: Tonnis Mulder"
   ] ;
   :relation [
+    a :Husband ;
+    :target t00519:P2
+  ], [
     a :Father
   ], [
     a :Grandfather
-  ], [
-    a :Husband ;
-    :target t00519:P2
   ] .
 
 t00519:P2
@@ -98,8 +98,8 @@ t00519:V1
   a :Quote ;
   :reference [
     a :BibleReference ;
+    :book bible:2Corinthians ;
     :chapter 5 ;
-    :part bible:2Corinthians ;
     :verse "1"
   ] ;
   :text "TODO" .

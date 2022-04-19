@@ -1,4 +1,5 @@
 @prefix t00537: <https://noordergraf.rug.nl/tomb/T00537#> .
+@prefix t00538: <https://noordergraf.rug.nl/tomb/T00538#> .
 
 tomb:T00537
   a :Tomb ;
@@ -19,7 +20,7 @@ tomb:T00537
     :text "RUST ZACHT"@nld
   ] ;
   :site site:NLgr9641anVeendam ;
-  :subject t00537:P1, t00537:P2 ;
+  :subject t00537:P1 ;
   :symbol [
     a :Symbol ;
     :symbolType symbol:Flag
@@ -46,6 +47,7 @@ rust zacht.
 
 t00537:P1
   a :Female ;
+  :sameAs t00538:P2 ;
   :age [
     a :Age ;
     :duration "P80Y10M22D"^^xsd:duration ;
@@ -71,6 +73,7 @@ t00537:P1
 
 t00537:P2
   a :Male ;
+  :sameAs t00538:P1 ;
   :name [
     a :Name ;
     :fullName "Jan Vrieze de Vries" ;

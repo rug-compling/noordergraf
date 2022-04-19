@@ -32,6 +32,10 @@ Voor experts: [zoek met sparql](https://anonymous@noordergraf.rug.nl:10036/#/rep
 
 [Kaart met plaatsen van overlijden](mappod.html)
 
+[Beroemde mensen](bin/itemsearch?q=famous)
+
+[Mensen genoemd op meerdere graven](bin/itemsearch?q=multi)
+
 [Overzicht van veelvoorkomende grafsymbolen](symbol/)
 
 [Overzicht van verwijzingen naar bijbelboeken](bible/)

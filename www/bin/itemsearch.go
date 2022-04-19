@@ -1,8 +1,6 @@
 package main
 
 import (
-	"github.com/rug-compling/noordergraf/go/nlsoundex"
-
 	"bytes"
 	"encoding/xml"
 	"fmt"
@@ -38,42 +36,37 @@ func main() {
 		return
 	}
 	q := req.FormValue("q")
-	if q == "" {
+
+	var query, title string
+
+	switch q {
+	default:
 		fmt.Print(`Status: 400
 
 Missing query
 `)
 		return
-	}
-	qq := q
-
-	var template string
-	switch req.FormValue("t") {
-	case "fullname":
-		template = `
-PREFIX : <https://noordergraf.rug.nl/ns#>
-SELECT ?s ?o {
-  ?s :name ?n .
-  ?n fti:match ( %q "fullname" ) .
-  ?n :fullName ?o .
-}
-ORDER BY ?s
+	case "famous":
+		title = "beroemde mensen"
+		query = `
+SELECT ?plot ?name ?sameas {
+  ?person :sameAs ?sameas .
+  ?person :name / :fullName ?name .
+  ?plot :subject ?person .
+  FILTER fn:not(STRSTARTS(xsd:string(?sameas), "https://noordergraf"))
+} ORDER BY ?name
 `
-		qq = nlsoundex.Soundex(q)
-	default:
-		template = `
-PREFIX : <https://noordergraf.rug.nl/ns#>
-SELECT DISTINCT ?s ?o {
-  GRAPH ?s {
-    (?s ?o) fti:match ( %q "all" ) .
-    ?s :text ?o .
-  }
-}
-ORDER BY ?s ?o
+	case "multi":
+		title = "genoemd op meerdere graven"
+		query = `
+SELECT ?plot ?name ?sameas {
+  ?person :sameAs ?sameas .
+  ?person :name / :fullName ?name .
+  ?plot :subject ?person .
+  FILTER STRSTARTS(xsd:string(?sameas), "https://noordergraf")
+} ORDER BY ?name
 `
 	}
-
-	query := fmt.Sprintf(template, qq)
 
 	request := "http://localhost:10035/repositories/noordergraf?limit=1000&query=" + url.QueryEscape(query)
 	fmt.Println(request)
@@ -102,7 +95,7 @@ ORDER BY ?s ?o
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <title>Noordergraf -- zoeken</title>
+    <title>Noordergraf -- %s</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" type="image/ico">
@@ -113,19 +106,38 @@ ORDER BY ?s ?o
 <h1>%s</h1>
 gevonden: %d
 <table>
-`, html.EscapeString(q), len(sparql.Results))
+`, title, title, len(sparql.Results))
 
 	for _, result := range sparql.Results {
-		var uri, obj string
-		for _, binding := range result.Bindings {
-			if binding.Name == "s" {
-				uri = binding.URI
-			} else if binding.Name == "o" {
-				obj = strings.TrimSpace(binding.Literal)
+		switch q {
+		case "famous":
+			var plot, name, sameas string
+			for _, binding := range result.Bindings {
+				if binding.Name == "plot" {
+					plot = binding.URI
+				} else if binding.Name == "name" {
+					name = binding.Literal
+				} else if binding.Name == "sameas" {
+					sameas = binding.URI
+				}
 			}
+			plot = strings.Replace(plot, "https://noordergraf.rug.nl/", "", 1)
+			fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td><a href=\"%s\">%s</a></td></tr>\n", plot, plot, sameas, html.EscapeString(name))
+		case "multi":
+			var plot, name, sameas string
+			for _, binding := range result.Bindings {
+				if binding.Name == "plot" {
+					plot = binding.URI
+				} else if binding.Name == "name" {
+					name = binding.Literal
+				} else if binding.Name == "sameas" {
+					sameas = binding.URI
+				}
+			}
+			plot = strings.Replace(plot, "https://noordergraf.rug.nl/", "", 1)
+			sameas = strings.Replace(sameas, "https://noordergraf.rug.nl/", "", 1)
+			fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td>%s &rarr; <a href=\"/%s\">%s</a></td></tr>\n", plot, plot, html.EscapeString(name), sameas, sameas)
 		}
-		uri = strings.Replace(uri, "https://noordergraf.rug.nl/", "", 1)
-		fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td>%s</td></tr>\n", uri, uri, strings.Replace(html.EscapeString(obj), "\n", "<br>", -1))
 	}
 
 	fmt.Print(`

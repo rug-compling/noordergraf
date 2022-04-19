@@ -16,31 +16,11 @@ tomb:T00253
   ] ;
   :quote [
     a :Quote ;
-    :quoteSubject t00253:P4 ;
-    :reference [
-      a :BibleReference ;
-      :chapter 14 ;
-      :part bible:Romans ;
-      :verse "8"
-    ] ;
-    :text "rom. 14:8"
-  ], [
-    a :Quote ;
-    :quoteSubject t00253:P5 ;
-    :reference [
-      a :BibleReference ;
-      :chapter 14 ;
-      :part bible:John ;
-      :verse "2"
-    ] ;
-    :text "joh. 14:2"
-  ], [
-    a :Quote ;
     :quoteSubject t00253:P1 ;
     :reference [
       a :BibleReference ;
+      :book bible:1Thessalonians ;
       :chapter 4 ;
-      :part bible:1Thessalonians ;
       :verse "14"
     ] ;
     :text "1 thess. 4:14"
@@ -49,8 +29,8 @@ tomb:T00253
     :quoteSubject t00253:P2 ;
     :reference [
       a :BibleReference ;
+      :book bible:Psalms ;
       :chapter 23 ;
-      :part bible:Psalms ;
       :verse "1"
     ] ;
     :text "ps. 23:1"
@@ -59,10 +39,30 @@ tomb:T00253
     :quoteSubject t00253:P3 ;
     :reference [
       a :BibleReference ;
-      :chapter 116 ;
-      :part bible:Psalms
+      :book bible:Psalms ;
+      :chapter 116
     ] ;
     :text "ps. 116"
+  ], [
+    a :Quote ;
+    :quoteSubject t00253:P4 ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Romans ;
+      :chapter 14 ;
+      :verse "8"
+    ] ;
+    :text "rom. 14:8"
+  ], [
+    a :Quote ;
+    :quoteSubject t00253:P5 ;
+    :reference [
+      a :BibleReference ;
+      :book bible:John ;
+      :chapter 14 ;
+      :verse "2"
+    ] ;
+    :text "joh. 14:2"
   ] ;
   :site site:NLgr9725acGroningen ;
   :subject t00253:P1, t00253:P2, t00253:P3, t00253:P4, t00253:P5 ;
