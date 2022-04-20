@@ -1,4 +1,5 @@
 title: Noordergraf -- Overzicht
+class: pad
 ////
 
 # Overzicht
@@ -215,59 +216,3 @@ Example: [symbol:Anchor](symbol/Anchor)
                     - dc:creator → `xsd:string` | `rdfs:Resource`
                     - dc:source → `rdfs:Resource`
                     - dc:title → `xsd:string` | `rdf:langString`
-
-
-<pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</pre>

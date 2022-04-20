@@ -357,6 +357,23 @@ func doHTML() {
 			lines[i] = strings.Join(a, " ")
 		}
 		body = strings.Join(lines, "\n")
+	} else if strings.HasPrefix(uri, "/tomb") {
+		lines := strings.Split(body, "\n")
+		for i, line := range lines {
+			if strings.TrimRight(line, " \t\r\n") == "" {
+				continue
+			}
+			if line[0] == ' ' || line[0] == '\t' || strings.HasPrefix(line, "tomb:") {
+				continue
+			}
+			a := strings.Fields(line)
+			j := strings.Index(a[0], ":")
+			if j > 0 {
+				a[0] = fmt.Sprintf("<a name=\"%s\">%s</a>", a[0][j+1:], a[0])
+				lines[i] = strings.Join(a, " ")
+			}
+		}
+		body = strings.Join(lines, "\n")
 	}
 
 	body = strings.Replace(body, `href="http://purl.org`, `href="https://purl.org`, -1)
@@ -367,7 +384,9 @@ func doHTML() {
 	class := ""
 	if title == "ns" {
 		title = "ns#"
-		class = "ns"
+		class = "pad"
+	} else if strings.HasPrefix(title, "tomb") {
+		class = "pad"
 	}
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 Last-Modified: %s
