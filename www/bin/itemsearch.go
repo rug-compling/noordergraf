@@ -49,17 +49,16 @@ Missing query
 	case "famous":
 		title = "beroemde mensen"
 		query = `
-SELECT ?plot ?name ?sameas {
+SELECT ?person ?name ?sameas {
   ?person :sameAs ?sameas .
   ?person :name / :fullName ?name .
-  ?plot :subject ?person .
   FILTER fn:not(STRSTARTS(xsd:string(?sameas), "https://noordergraf"))
 } ORDER BY ?name
 `
 	case "multi":
 		title = "genoemd op meerdere graven"
 		query = `
-SELECT ?plot ?name ?sameas {
+SELECT ?person ?name ?sameas {
   ?person :sameAs ?sameas .
   ?person :name / :fullName ?name .
   ?plot :subject ?person .
@@ -111,32 +110,34 @@ gevonden: %d
 	for _, result := range sparql.Results {
 		switch q {
 		case "famous":
-			var plot, name, sameas string
+			var person, name, sameas string
 			for _, binding := range result.Bindings {
-				if binding.Name == "plot" {
-					plot = binding.URI
+				if binding.Name == "person" {
+					person = binding.URI
 				} else if binding.Name == "name" {
 					name = binding.Literal
 				} else if binding.Name == "sameas" {
 					sameas = binding.URI
 				}
 			}
-			plot = strings.Replace(plot, "https://noordergraf.rug.nl/", "", 1)
-			fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td><a href=\"%s\">%s</a></td></tr>\n", plot, plot, sameas, html.EscapeString(name))
+			person = strings.Replace(person, "https://noordergraf.rug.nl/", "", 1)
+			i := strings.LastIndex(sameas, "/")
+			fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td><a href=\"%s\">%s</a></td><td>%s</td></tr>\n",
+				person, person, sameas, sameas[i+1:], html.EscapeString(name))
 		case "multi":
-			var plot, name, sameas string
+			var person, name, sameas string
 			for _, binding := range result.Bindings {
-				if binding.Name == "plot" {
-					plot = binding.URI
+				if binding.Name == "person" {
+					person = binding.URI
 				} else if binding.Name == "name" {
 					name = binding.Literal
 				} else if binding.Name == "sameas" {
 					sameas = binding.URI
 				}
 			}
-			plot = strings.Replace(plot, "https://noordergraf.rug.nl/", "", 1)
+			person = strings.Replace(person, "https://noordergraf.rug.nl/", "", 1)
 			sameas = strings.Replace(sameas, "https://noordergraf.rug.nl/", "", 1)
-			fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td>%s &rarr; <a href=\"/%s\">%s</a></td></tr>\n", plot, plot, html.EscapeString(name), sameas, sameas)
+			fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td><a href=\"/%s\">%s</a></td><td>%s</tr>\n", person, person, sameas, sameas, html.EscapeString(name))
 		}
 	}
 
