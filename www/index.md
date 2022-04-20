@@ -42,6 +42,12 @@ Voor experts: [zoek met sparql](https://anonymous@noordergraf.rug.nl:10036/#/rep
 
 Meer informatie: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/sites/noordergraf/)
 
+## Hulpmiddelen
+
+[Overzicht van datastructuur](overview)
+
+[Github](https://github.com/rug-compling/noordergraf)
+
 
 ## Soortgelijke websites
 

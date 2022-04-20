@@ -202,8 +202,9 @@ Example: [symbol:Anchor](symbol/Anchor)
 
 - **<a name="SymbolType">SymbolType</a>**
     - dcModified → `xsd:dateTime`
-    - seeAlso → https:\/\/www\.dodenakkers\.nl\/naslag\/symboliek\/...
     - sameAs → wikidata:...
+    - seeAlso → https:\/\/www\.dodenakkers\.nl\/naslag\/symboliek\/...
+    - symbolDescription → `rdf:langString`
     - pictogram
         - **Pictogram**
             - dcCreator → `xsd:string` | `rdfs:Resource`
@@ -211,8 +212,3 @@ Example: [symbol:Anchor](symbol/Anchor)
             - dcSource → `rdfs:Resource`
             - dcTitle → `xsd:string` | `rdf:langString`
             - file → picto:...
-            - pictogramParts WEG ??
-                - **PictogramPart**
-                    - dc:creator → `xsd:string` | `rdfs:Resource`
-                    - dc:source → `rdfs:Resource`
-                    - dc:title → `xsd:string` | `rdf:langString`

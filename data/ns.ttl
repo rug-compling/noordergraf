@@ -944,23 +944,6 @@
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:pictogramParts a rdf:Property ;
-  rdfs:label "pictogramParts" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:domain :Pictogram ;
-  rdfs:range :PictogramPart ;
-  rdfs:isDefinedBy : .
-
-################################################################
-
-:PictogramPart a rdfs:Class ;
-  rdfs:subClassOf :Class , :WithDcCreator , :WithDcSource , :WithDcTitle ;
-  rdfs:label "PictogramPart" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
 ################################################################
 
 :Place a rdfs:Class ;
@@ -1672,6 +1655,14 @@
   rdfs:label "SymbolType" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:symbolDescription a rdf:Property ;
+  rdfs:label "symbolDescription" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :SymbolType ;
+  rdfs:range rdf:langString ;
   rdfs:isDefinedBy : .
 
 :pictogram a rdf:Property ;
