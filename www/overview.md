@@ -6,19 +6,27 @@ class: pad
 
 Zie ook: [details](ns)
 
+## Class
+
+Alles (elke instance van een class) kan een 'comment' hebben
+
+- **Class** --- **Plot** | **Place** | **Site** | ...[etc](ns#Class)
+    - comment → `xsd:string` | `rdf:langString`
+
+Bij alles wat volgt is 'comment' steeds weggelaten.
+
 ## Plot
 
 Example: [tomb:T00000](tomb/T00000)
 
 - **Plot** --- **Cross** | **Tomb**
-    - dcModified → `xsd:dateTime`
     - commemorator → **[Person](#Person)**
-    - comment → `xsd:string` | `rdf:langString`
     - creator
         - **Creator**
             - location → **[Location](#Location)**
             - name → **[Name](#Name)**
     - date → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear`
+    - dcModified → `xsd:dateTime`
     - figure
         - **Figure** --- **Bust** | **Portrait** | **Statue**
             - theme → **[Person](#Person)**
@@ -35,56 +43,48 @@ Example: [tomb:T00000](tomb/T00000)
             - file → img:...
     - quote
         - **Quote**
-            - comment → `xsd:string` | `rdf:langString`
             - quoteSubject → **[Person](#Person)**
+            - text → `xsd:string` | `rdf:langString`
             - reference
                 - **Reference**
                     - --- **BibleReference**
                         - bibleSource → https:\/\/www\.bible\.com\/bible\/...
                         - book → **[BibleBook](#BibleBook)**
                         - chapter → `xsd:integer`
-                        - comment → `xsd:string` | `rdf:langString`
                         - verse → `xsd:string` | `rdf:langString`
                     - --- **BookReference**
-                        - sameAs → wikidata:...
                         - author
                             - **Author**
-                                - sameAs → wikidata:...
                                 - authorName → `xsd:string` | `rdf:langString`
+                                - sameAs → wikidata:...
                         - bookTitle → `xsd:string` | `rdf:langString`
-                        - comment → `xsd:string` | `rdf:langString`
                         - date → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear`
+                        - sameAs → wikidata:...
                     - --- **FolkReference**
                         - seeAlso → `rdfs:Resource`
                         - sameAs → wikidata:...
                     - --- **HymnReference**
-                        - comment → `xsd:string` | `rdf:langString`
                         - hymnSource → `rdfs:Resource`
                         - hymnTitle → `xsd:string` | `rdf:langString`
                     - --- **MusicReference**
                         - album
                             - **Album**
                                 - albumTitle → `xsd:string` | `rdf:langString`
-                                - comment → `xsd:string` | `rdf:langString`
                                 - date → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear`
                                 - discogs → discogs:...
                         - albumTrack → `xsd:string`
                         - artist
                             - **Artist**
-                                - sameAs → wikidata:...
                                 - artistName → `xsd:string` | `rdf:langString`
-                        - comment → `xsd:string` | `rdf:langString`
+                                - sameAs → wikidata:...
                         - trackTitle → `xsd:string` | `rdf:langString`
-            - text → `xsd:string` | `rdf:langString`
     - site → **[Site](#Site)**
     - symbol
         - **Symbol**
-            - comment → `xsd:string` | `rdf:langString`
             - symbolType  → **[SymbolType](#SymbolType)**
     - text → `xsd:string` | `rdf:langString`
     - subject
         - **<a name="Person">Person</a>** --- **Female** | **Male** | ...[meer](ns#Person)
-            - sameAs → wikidata:...
             - age
                 - **Age**
                     - duration → `xsd:duration`
@@ -97,7 +97,6 @@ Example: [tomb:T00000](tomb/T00000)
             - dateOfDeath → **[Date](#Date)**
             - location
                 - **<a name="Location">Location</a>** --- **Building** | **City** | **Colony** | ...[meer](ns#Location)
-                    - comment → `xsd:string` | `rdf:langString`
                     - coordinates
                         - **Coordinates**
                             - geo → **[GeoPoint](#GeoPoint)**
@@ -114,10 +113,9 @@ Example: [tomb:T00000](tomb/T00000)
                     - text → `xsd:string` | `rdf:langString`
             - occupation
                 - **<a name="Occupation">Occupation</a>**
-                    - after → **[Occupation](#Occupation)** | **[Relation](#Relation)**
-                    - before → **[Occupation](#Occupation)** | **[Relation](#Relation)**
+                    - after → **[Occupation](#Occupation)** | **[Decoration](#Decoration)** | **[Relation](#Relation)**
+                    - before → **[Occupation](#Occupation)** | **[Decoration](#Decoration)** | **[Relation](#Relation)**
                     - begin → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear`
-                    - comment → `xsd:string` | `rdf:langString`
                     - end → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear`
                     - hisco → hisco:...
                     - location → **[Location](#Location)**
@@ -127,7 +125,6 @@ Example: [tomb:T00000](tomb/T00000)
                             - organisationName → `xsd:string` | `rdf:langString`
                     - period
                         - **<a name="Period">Period</a>**
-                            - comment → `xsd:string` | `rdf:langString`
                             - duration → `xsd:duration`
                             - text → `xsd:string` | `rdf:langString`
                     - text → `xsd:string` | `rdf:langString`
@@ -137,23 +134,23 @@ Example: [tomb:T00000](tomb/T00000)
                 - **Property**
                     - --- **Decoration**
                         - begin → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear`
-                        - decorationTitle → `xsd:string` | `rdf:langString`
                         - end → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear` WEG ??
+                        - decorationTitle → `xsd:string` | `rdf:langString`
                         - text → `xsd:string` | `rdf:langString`
             - quantity
                 - **Quantity**
                     - number → `xsd:integer`
             - relation
                 - **<a name="Relation">Relation</a>** --- **Aunt** | **Brother** | **BrotherInLaw** | ...[meer](ns#Relation)
-                    - after → **[Relation](#Relation)** | **[Occupation](#Occupation)**
-                    - before → **[Relation](#Relation)** | **[Occupation](#Occupation)**
+                    - after → **[Relation](#Relation)** | **[Decoration](#Decoration)** | **[Occupation](#Occupation)**
+                    - before → **[Relation](#Relation)** | **[Decoration](#Decoration)** | **[Occupation](#Occupation)**
                     - begin → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear`
-                    - comment → `xsd:string` | `rdf:langString`
                     - end → `xsd:date` | `xsd:gYearMonth` | `xsd:gYear`
                     - inferred → `xsd:boolean`
                     - period → **[Period](#Period)**
                     - target → **[Person](#Person)**
                     - text → `xsd:string` | `rdf:langString`
+            - sameAs → wikidata:...
             - text → `xsd:string` | `rdf:langString`
 
 ## BibleBook
@@ -162,9 +159,9 @@ Example: [bible:Matthew](bible/Matthew)
 
 - **<a name="BibleBook">BibleBook</a>**
     - bibleBookName → `rdf:langString`
+    - dcModified → `xsd:dateTime`
     - order → `xsd:integer`
     - sameAs → wikidata:...
-    - dcModified → `xsd:dateTime`
 
 ## Place
 
@@ -172,10 +169,10 @@ Example: [place:Aalden2760142](place/Aalden2760142)
 
 - **<a name="Place">Place</a>**
     - dcModified → `xsd:dateTime`
-    - sameAs → wikidata:... | https:\/\/sws\.geonames\.org\/...
     - geo → **[GeoPoint](#GeoPoint)**
     - nd → `ll:`
     - placeName → `xsd:string`
+    - sameAs → wikidata:... | https:\/\/sws\.geonames\.org\/...
 
 ## Site
 
@@ -183,17 +180,17 @@ Example: [site:NLdr7811heEmmen](site/NLdr7811heEmmen)
 
 - **<a name="Site">Site</a>**
     - dcModified → `xsd:dateTime`
-    - seeAlso → `rdfs:Resource`
-    - sameAs → wikidata:... | https:\/\/sws\.geonames\.org\/...
     - geo → **[GeoPoint](#GeoPoint)**
     - nd → `ll:`
+    - sameAs → wikidata:... | https:\/\/sws\.geonames\.org\/...
+    - seeAlso → `rdfs:Resource`
     - siteAddress
         - **PostalAddress**
-            - addressCountry → `xsd:string`
+            - streetAddress → `xsd:string`
             - addressLocality → `xsd:string`
             - addressRegion → `xsd:string`
+            - addressCountry → `xsd:string`
             - postalCode → `xsd:string`
-            - streetAddress → `xsd:string`
     - siteName → `xsd:string`
 
 ## SymbolType
@@ -202,9 +199,6 @@ Example: [symbol:Anchor](symbol/Anchor)
 
 - **<a name="SymbolType">SymbolType</a>**
     - dcModified → `xsd:dateTime`
-    - sameAs → wikidata:...
-    - seeAlso → https:\/\/www\.dodenakkers\.nl\/naslag\/symboliek\/...
-    - symbolDescription → `rdf:langString`
     - pictogram
         - **Pictogram**
             - dcCreator → `xsd:string` | `rdfs:Resource`
@@ -212,3 +206,6 @@ Example: [symbol:Anchor](symbol/Anchor)
             - dcSource → `rdfs:Resource`
             - dcTitle → `xsd:string` | `rdf:langString`
             - file → picto:...
+    - sameAs → wikidata:...
+    - seeAlso → dodenakkers:...
+    - symbolDescription → `rdf:langString`

@@ -8,7 +8,8 @@
 
 : a owl:Ontology ;
   dcterms:title "Noordergraf" ;
-  dcterms:description "Ontology for Noordergraf" ;
+  dcterms:description "TODO: Ontology for Noordergraf"@eng ;
+  dcterms:description "TODO: Ontologie voor Noordergraf"@nld ;
   dcterms:subject <https://noordergraf.rug.nl/> .
 
 :Class a rdfs:Class ;
@@ -27,7 +28,15 @@
 
 ################################################################
 
+:Mixin a rdfs:Class ;
+  rdfs:label "Mixin" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Mixin> .
+
 :WithDate a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithDate" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -42,6 +51,7 @@
   rdfs:isDefinedBy : .
 
 :WithDcCreator a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcCreator" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -58,6 +68,7 @@
   schema:sameAs dcterms:creator .
 
 :WithDcDate a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcDate" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -74,6 +85,7 @@
   schema:sameAs dcterms:date .
 
 :WithDcLicense a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcLicense" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -90,6 +102,7 @@
   schema:sameAs dcterms:license .
 
 :WithDcModified a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcModified" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -106,6 +119,7 @@
   schema:sameAs dcterms:modified .
 
 :WithDcSource a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcSource" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -122,6 +136,7 @@
   schema:sameAs dcterms:source .
 
 :WithDcTitle a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcTitle" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -138,6 +153,7 @@
   schema:sameAs dcterms:title .
 
 :WithDuration a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithDuration" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -152,6 +168,7 @@
   rdfs:isDefinedBy : .
 
 :WithFile a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithFile" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -166,6 +183,7 @@
   rdfs:isDefinedBy : .
 
 :WithGeography a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithGeography" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -190,6 +208,7 @@
   rdfs:isDefinedBy : .
 
 :WithInferred a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithInferred" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -204,6 +223,7 @@
   rdfs:isDefinedBy : .
 
 :WithLocation a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithLocation" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -218,6 +238,7 @@
   rdfs:isDefinedBy : .
 
 :WithName a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithName" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -232,6 +253,7 @@
   rdfs:isDefinedBy : .
 
 :WithSameAs a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithSameAs" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -250,6 +272,7 @@
   schema:sameAs schema:sameAs .
 
 :WithSeeAlso a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithSeeAlso" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -269,6 +292,7 @@
 # TODO: WithTemporalOccupation ?
 
 :WithTemporal a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithTemporal" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -315,6 +339,7 @@
   rdfs:isDefinedBy : .
 
 :WithText a rdfs:Class ;
+  rdfs:subClassOf :Mixin ;
   rdfs:label "WithText" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
@@ -400,7 +425,7 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Author ;
-  rdfs:range xsd:string ;
+  rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -895,12 +920,14 @@
 
 :Male a rdfs:Class ;
   rdfs:subClassOf :Person ;
+  rdfs:label "Male" ;
   rdfs:comment "A male person"@eng ;
   rdfs:comment "Een mannelijk persoon"@nld ;
   rdfs:isDefinedBy : .
 
 :Female a rdfs:Class ;
   rdfs:subClassOf :Person ;
+  rdfs:label "Female" ;
   rdfs:comment "A female person"@eng ;
   rdfs:comment "Een vrouwelijk persoon"@nld ;
   rdfs:isDefinedBy : .
@@ -1190,7 +1217,7 @@
   rdfs:comment "TODO"@eng ;
   rdfs:comment "TODO"@nld ;
   rdfs:domain :BibleReference ;
-  rdfs:range xsd:positiveInteger ;
+  rdfs:range xsd:integer ;
   rdfs:isDefinedBy : .
 
 :verse a rdf:Property ;

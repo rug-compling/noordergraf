@@ -1,0 +1,48 @@
+
+:RdfsClassShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass rdfs:Class ;
+  sh:class rdfs:Class ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path rdfs:comment ;
+    sh:datatype rdf:langString ;
+    sh:uniqueLang true ;
+    # Let op: validator kijkt alleen naar eerste twee letters
+    sh:languageIn ("eng" "nld") ;
+    sh:minCount 2 ;
+    sh:maxCount 2 
+  ] ;
+  sh:property [
+    sh:path rdfs:label ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 
+  ] ;
+  sh:property [
+    sh:path rdfs:isDefinedBy ;
+    sh:nodeKind sh:IRI ;
+    sh:hasValue : ;
+    sh:minCount 1 ;
+    sh:maxCount 1 
+  ] ;
+  sh:property [
+    sh:path rdfs:subClassOf ;
+    sh:nodeKind sh:IRI
+  ] ;
+  sh:property [
+    sh:path rdfs:seeAlso ;
+    sh:nodeKind sh:IRI
+  ] ;
+  sh:property [
+    sh:path owl:sameAs ;
+    sh:nodeKind sh:IRI
+  ] ;
+  sh:property [
+    sh:path schema:sameAs ;
+    sh:nodeKind sh:IRI
+  ] .

@@ -38,6 +38,7 @@ func main() {
 	q := req.FormValue("q")
 
 	var query, title string
+	infer := "false"
 
 	switch q {
 	default:
@@ -65,9 +66,19 @@ SELECT ?person ?name ?sameas {
   FILTER STRSTARTS(xsd:string(?sameas), "https://noordergraf")
 } ORDER BY ?name
 `
+	case "nosite":
+		infer = "true"
+		title = "personen niet op een begraafplaats begraven"
+		query = `SELECT ?person ?name {
+  ?plot a :Plot .
+  ?plot :subject ?person .
+  ?person :name / :fullName ?name .
+  FILTER NOT EXISTS { ?plot :site ?site . }
+} ORDER BY ?name ?person
+`
 	}
 
-	request := "http://localhost:10035/repositories/noordergraf?limit=1000&query=" + url.QueryEscape(query)
+	request := "http://localhost:10035/repositories/noordergraf?limit=1000&infer=" + infer + "&query=" + url.QueryEscape(query)
 	fmt.Println(request)
 	resp, err := http.Get(request)
 	if x(err, http.StatusInternalServerError) {
@@ -138,7 +149,20 @@ gevonden: %d
 			person = strings.Replace(person, "https://noordergraf.rug.nl/", "", 1)
 			sameas = strings.Replace(sameas, "https://noordergraf.rug.nl/", "", 1)
 			fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td><a href=\"/%s\">%s</a></td><td>%s</tr>\n", person, person, sameas, sameas, html.EscapeString(name))
+
+		case "nosite":
+			var person, name string
+			for _, binding := range result.Bindings {
+				if binding.Name == "person" {
+					person = binding.URI
+				} else if binding.Name == "name" {
+					name = binding.Literal
+				}
+			}
+			person = strings.Replace(person, "https://noordergraf.rug.nl/", "", 1)
+			fmt.Printf("<tr><td><a href=\"/%s\">%s</a></td><td>%s</tr>\n", person, person, html.EscapeString(name))
 		}
+
 	}
 
 	fmt.Print(`
