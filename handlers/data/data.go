@@ -349,7 +349,7 @@ func doHTML() {
 			}
 			a := strings.SplitN(line, " ", 2)
 			ii := strings.Index(a[0], ":") + 1
-			if uri == "/ns" && strings.Contains(line, "rdfs:Class") {
+			if strings.Contains(line, "rdfs:Class") {
 				inClass = true
 				class = a[0][ii:]
 			}

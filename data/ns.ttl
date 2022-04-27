@@ -33,7 +33,8 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : ;
-  rdfs:seeAlso <https://en.wikipedia.org/wiki/Mixin> .
+  owl:sameAs    wikidata:Q775794 ;
+  schema:sameAs wikidata:Q775794 .
 
 :WithDate a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -48,7 +49,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithDate ;
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q205892 ;
+  schema:sameAs wikidata:Q205892 .
 
 :WithDcCreator a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -64,7 +67,7 @@
   rdfs:domain :WithDcCreator ;
   rdfs:range rdfs:Resource , xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dcterms:creator ;
+  owl:sameAs    dcterms:creator ;
   schema:sameAs dcterms:creator .
 
 :WithDcDate a rdfs:Class ;
@@ -81,7 +84,7 @@
   rdfs:domain :WithDcDate ;
   rdfs:range xsd:dateTime ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dcterms:date ;
+  owl:sameAs    dcterms:date ;
   schema:sameAs dcterms:date .
 
 :WithDcLicense a rdfs:Class ;
@@ -98,7 +101,7 @@
   rdfs:domain :WithDcLicense ;
   rdfs:range rdfs:Resource , xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dcterms:license ;
+  owl:sameAs    dcterms:license ;
   schema:sameAs dcterms:license .
 
 :WithDcModified a rdfs:Class ;
@@ -115,7 +118,7 @@
   rdfs:domain :WithDcModified ;
   rdfs:range xsd:dateTime ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dcterms:modified ;
+  owl:sameAs    dcterms:modified ;
   schema:sameAs dcterms:modified .
 
 :WithDcSource a rdfs:Class ;
@@ -132,7 +135,7 @@
   rdfs:domain :WithDcSource ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dcterms:source ;
+  owl:sameAs    dcterms:source ;
   schema:sameAs dcterms:source .
 
 :WithDcTitle a rdfs:Class ;
@@ -149,7 +152,7 @@
   rdfs:domain :WithDcTitle ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : ;
-  owl:sameAs dcterms:title ;
+  owl:sameAs    dcterms:title ;
   schema:sameAs dcterms:title .
 
 :WithDuration a rdfs:Class ;
@@ -165,7 +168,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithDuration ;
   rdfs:range xsd:duration ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2199864 ;
+  schema:sameAs wikidata:Q2199864 .
 
 :WithFile a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -180,7 +185,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithFile ;
   rdfs:range rdfs:Resource ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q82753 ;
+  schema:sameAs wikidata:Q82753 .
 
 :WithGeography a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -195,7 +202,9 @@
   rdfs:comment "Geografische coördinaten."@nld ;
   rdfs:domain :WithGeography ;
   rdfs:range :GeoPoint ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2221906 ;
+  schema:sameAs wikidata:Q2221906 .
 
 :nd a rdf:Property ;
   rdfs:label "nd" ;
@@ -266,8 +275,8 @@
   rdfs:domain :WithSameAs ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
-  owl:sameAs owl:sameAs ;
-  owl:sameAs schema:sameAs ;
+  owl:sameAs    owl:sameAs ;
+  owl:sameAs    schema:sameAs ;
   schema:sameAs owl:sameAs ;
   schema:sameAs schema:sameAs .
 
@@ -285,7 +294,7 @@
   rdfs:domain :WithSeeAlso ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
-  owl:sameAs rdfs:seeAlso ;
+  owl:sameAs    rdfs:seeAlso ;
   schema:sameAs rdfs:seeAlso .
 
 # TODO: WithTemporalRelation ?
@@ -304,7 +313,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithTemporal ;
   rdfs:range :WithTemporal ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q79030196 ;
+  schema:sameAs wikidata:Q79030196 .
 
 :after a rdf:Property ;
   rdfs:label "after" ;
@@ -312,7 +323,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithTemporal; ;
   rdfs:range :WithTemporal ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q79030284 ;
+  schema:sameAs wikidata:Q79030284 .
 
 :begin a rdf:Property ;
   rdfs:label "begin" ;
@@ -320,7 +333,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithTemporal ;
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q529711 ;
+  schema:sameAs wikidata:Q529711 .
 
 :end a rdf:Property ;
   rdfs:label "end" ;
@@ -328,7 +343,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithTemporal; ;
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q12769393 ;
+  schema:sameAs wikidata:Q12769393 .
 
 :period a rdf:Property ;
   rdfs:label "period" ;
@@ -336,7 +353,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :WithTemporal; ;
   rdfs:range :Period ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q186081 ;
+  schema:sameAs wikidata:Q186081 .
 
 :WithText a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -351,7 +370,9 @@
   rdfs:comment "TODO"@nld ;
   rdfs:domain :WithText ;
   rdfs:range xsd:string , rdf:langString ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q234460 ;
+  schema:sameAs wikidata:Q234460 .
 
 ################################################################
 
@@ -543,7 +564,7 @@
   rdfs:comment "A point, typically described using a coordinate system relative to Earth, such as WGS84."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : ;
-  owl:sameAs geo:Point ;
+  owl:sameAs    geo:Point ;
   schema:sameAs geo:Point .
 
 :geoLat a rdf:Property ;
@@ -553,7 +574,7 @@
   rdfs:domain :GeoPoint ;
   rdfs:range xsd:decimal ;
   rdfs:isDefinedBy : ;
-  owl:sameAs geo:lat ;
+  owl:sameAs    geo:lat ;
   schema:sameAs geo:lat .
 
 :geoLong a rdf:Property ;
@@ -563,7 +584,7 @@
   rdfs:domain :GeoPoint ;
   rdfs:range xsd:decimal ;
   rdfs:isDefinedBy : ;
-  owl:sameAs geo:long ;
+  owl:sameAs    geo:long ;
   schema:sameAs geo:long .
 
 ################################################################
@@ -689,6 +710,7 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
+
 ################################################################
 
 :Name a rdfs:Class ;
@@ -844,7 +866,9 @@
   rdfs:label "TODO" ;
   rdfs:comment "A person mentioned by name on a tomb stone."@eng ;
   rdfs:comment "Iemand bij naam genoemd op een grafsteen."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q215627 ;
+  schema:sameAs wikidata:Q215627 .
 
 :dateOfBirth a rdf:Property ;
   rdfs:label "dateOfBirth" ;
@@ -852,7 +876,9 @@
   rdfs:comment "Geboortedatum."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Date ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2389905 , schema:birthDate ;
+  schema:sameAs wikidata:Q2389905 , schema:birthDate .
 
 :dateOfDeath a rdf:Property ;
   rdfs:label "dateOfDeath" ;
@@ -860,7 +886,9 @@
   rdfs:comment "Datum van overlijden."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Date ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q18748141 , schema:deathDate ;
+  schema:sameAs wikidata:Q18748141 , schema:deathDate .
 
 :placeOfBirth a rdf:Property ;
   rdfs:label "placeOfBirth" ;
@@ -868,7 +896,9 @@
   rdfs:comment "Geboorteplaats."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Location ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q1322263 , schema:birthPlace ;
+  schema:sameAs wikidata:Q1322263 , schema:birthPlace .
 
 :placeOfDeath a rdf:Property ;
   rdfs:label "placeOfDeath" ;
@@ -876,7 +906,9 @@
   rdfs:comment "Plaats van overlijden."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Location ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q18658526 , schema:deathPlace ;
+  schema:sameAs wikidata:Q18658526 , schema:deathPlace .
 
 :age a rdf:Property ;
   rdfs:label "age" ;
@@ -884,7 +916,9 @@
   rdfs:comment "Leeftijd bij overlijden."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Age ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q185836 ;
+  schema:sameAs wikidata:Q185836 .
 
 :relation a rdf:Property ;
   rdfs:label "relation" ;
@@ -892,7 +926,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Relation ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q930933 ;
+  schema:sameAs wikidata:Q930933 .
 
 :occupation a rdf:Property ;
   rdfs:label "occupation" ;
@@ -900,7 +936,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Occupation ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q192581 ;
+  schema:sameAs wikidata:Q192581 .
 
 :quantity a rdf:Property ;
   rdfs:label "quantity" ;
@@ -908,7 +946,9 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Quantity ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q309314 ;
+  schema:sameAs wikidata:Q309314 .
 
 :property a rdf:Property ;
   rdfs:label "property" ;
@@ -916,42 +956,54 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Property ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q937228 ;
+  schema:sameAs wikidata:Q937228 .
 
 :Male a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "Male" ;
   rdfs:comment "A male person"@eng ;
   rdfs:comment "Een mannelijk persoon"@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q6581097 ;
+  schema:sameAs wikidata:Q6581097 .
 
 :Female a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "Female" ;
   rdfs:comment "A female person"@eng ;
   rdfs:comment "Een vrouwelijk persoon"@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q6581072 ;
+  schema:sameAs wikidata:Q6581072 .
 
 :Family a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q8436 ;
+  schema:sameAs wikidata:Q8436 .
 
 :People a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q5 ;
+  schema:sameAs wikidata:Q5 .
 
 :Personnel a rdfs:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q105764136 ;
+  schema:sameAs wikidata:Q105764136 .
 
 ################################################################
 
@@ -1083,7 +1135,7 @@
   rdfs:comment "The mailing address."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : ;
-  owl:sameAs schema:PostalAddress ;
+  owl:sameAs    schema:PostalAddress ;
   schema:sameAs schema:PostalAddress .
 
 :addressCountry a rdf:Property ;
@@ -1093,7 +1145,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs schema:addressCountry ;
+  owl:sameAs    schema:addressCountry ;
   schema:sameAs schema:addressCountry .
 
 :addressLocality a rdf:Property ;
@@ -1103,7 +1155,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs schema:addressLocality ;
+  owl:sameAs    schema:addressLocality ;
   schema:sameAs schema:addressLocality .
 
 :addressRegion a rdf:Property ;
@@ -1113,7 +1165,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs schema:addressRegion ;
+  owl:sameAs    schema:addressRegion ;
   schema:sameAs schema:addressRegion .
 
 :postalCode a rdf:Property ;
@@ -1123,7 +1175,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs schema:postalCode ;
+  owl:sameAs    schema:postalCode ;
   schema:sameAs schema:postalCode .
 
 :streetAddress a rdf:Property ;
@@ -1133,7 +1185,7 @@
   rdfs:domain :PostalAddress ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : ;
-  owl:sameAs schema:streetAddress ;
+  owl:sameAs    schema:streetAddress ;
   schema:sameAs schema:streetAddress .
 
 ################################################################
