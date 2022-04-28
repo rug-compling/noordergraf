@@ -523,9 +523,11 @@
 :Figure a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:label "Figure" ;
-  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO.human figure"@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q5937779 ;
+  schema:sameAs wikidata:Q5937779 .
 
 :theme a rdf:Property ;
   rdfs:label "theme" ;
@@ -540,21 +542,36 @@
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q17489160 ;
+  schema:sameAs wikidata:Q17489160 .
+
+:Photograph a rdfs:Class ;
+  rdfs:subClassOf :Figure ;
+  rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q125191 ;
+  schema:sameAs wikidata:Q125191 .
 
 :Portrait a rdfs:Class ;
   rdfs:subClassOf :Figure ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q134307 ;
+  schema:sameAs wikidata:Q134307 .
 
 :Statue a rdfs:Class ;
   rdfs:subClassOf :Figure ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q179700 ;
+  schema:sameAs wikidata:Q179700 .
 
 ################################################################
 
@@ -625,91 +642,117 @@
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q41176 ;
+  schema:sameAs wikidata:Q41176 .
 
 :City a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q515 ;
+  schema:sameAs wikidata:Q515 .
 
 :Colony a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q133156 ;
+  schema:sameAs wikidata:Q133156 .
 
 :Country a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q6256 ;
+  schema:sameAs wikidata:Q6256 .
 
 :Hamlet a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q5084 ;
+  schema:sameAs wikidata:Q5084 .
 
 :Island a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q23442 ;
+  schema:sameAs wikidata:Q23442 .
 
 :Municipality a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q15284 ;
+  schema:sameAs wikidata:Q15284 .
 
 :Ocean a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q9430 ;
+  schema:sameAs wikidata:Q9430 .
 
 :Province a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q34876 ;
+  schema:sameAs wikidata:Q34876 .
 
 :Region a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:State a rdfs:Class ;
-  rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q82794 ;
+  schema:sameAs wikidata:Q82794 .
 
 :Town a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q3957 ;
+  schema:sameAs wikidata:Q3957 .
+
+:USState a rdfs:Class ;
+  rdfs:subClassOf :Location ;
+  rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q35657 ;
+  schema:sameAs wikidata:Q35657 .
 
 :Village a rdfs:Class ;
   rdfs:subClassOf :Location ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q532 ;
+  schema:sameAs wikidata:Q532 .
 
 ################################################################
 
@@ -784,7 +827,9 @@
   rdfs:label "Organisation" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q43229 ;
+  schema:sameAs wikidata:Q43229 .
 
 :organisationName a rdf:Property ;
   rdfs:label "organisationName" ;
@@ -799,56 +844,72 @@
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:Community a rdfs:Class ;
-  rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q6382533 ;
+  schema:sameAs wikidata:Q6382533 .
 
 :Company a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO. business: entity involved in commercial, industrial, or professional activities"@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q4830453 ;
+  schema:sameAs wikidata:Q4830453 .
+
+:Congregation a rdfs:Class ;
+  rdfs:subClassOf :Organisation ;
+  rdfs:label "TODO" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO. kerkgemeente"@nld ;
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2135977 ;
+  schema:sameAs wikidata:Q2135977 .
 
 :Funfair a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q194195 ;
+  schema:sameAs wikidata:Q194195 .
 
 :School a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q3914 ;
+  schema:sameAs wikidata:Q3914 .
 
-:StateAsOrganisation  a rdfs:Class ;
+:SportsFederation a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2485448 ;
+  schema:sameAs wikidata:Q2485448 .
 
-:Union a rdfs:Class ;
+:State a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q7275 ;
+  schema:sameAs wikidata:Q7275 .
 
 :University a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q3918 ;
+  schema:sameAs wikidata:Q3918 .
 
 ################################################################
 
@@ -1388,7 +1449,9 @@
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q930933 ;
+  schema:sameAs wikidata:Q930933 .
 
 :target a rdf:Property ;
   rdfs:label "target" ;
@@ -1403,287 +1466,351 @@
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q76507 ;
+  schema:sameAs wikidata:Q76507 .
 
 :BrotherInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2914212 ;
+  schema:sameAs wikidata:Q2914212 .
 
 :Brother a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q10861465 ;
+  schema:sameAs wikidata:Q10861465 .
 
 :Child a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:Dad a rdfs:Class ;
-  rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q29514218 ;
+  schema:sameAs wikidata:Q29514218 .
 
 :DaughterInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q18489480 ;
+  schema:sameAs wikidata:Q18489480 .
 
 :Daughter a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q308194 ;
+  schema:sameAs wikidata:Q308194 .
 
 :Descendant a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q183905 ;
+  schema:sameAs wikidata:Q183905 .
 
 :FatherInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q13204680 ;
+  schema:sameAs wikidata:Q13204680 .
 
 :Father a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q7565 ;
+  schema:sameAs wikidata:Q7565 .
 
 :FosterParent a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2427941 ;
+  schema:sameAs wikidata:Q2427941 .
 
 :Friend a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q17297777 ;
+  schema:sameAs wikidata:Q17297777 .
 
 :Grandaunt a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q11972456 ;
+  schema:sameAs wikidata:Q11972456 .
 
 :Grandchild a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q3603531 ;
+  schema:sameAs wikidata:Q3603531 .
 
 :Grandfather a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q9238344 ;
+  schema:sameAs wikidata:Q9238344 .
 
 :Grandmother a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q9235758 ;
+  schema:sameAs wikidata:Q9235758 .
 
 :Grandparent a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q167918 ;
+  schema:sameAs wikidata:Q167918 .
 
 :Granduncle a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q3813877 ;
+  schema:sameAs wikidata:Q3813877 .
 
 :GreatGrandfather a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2500621 ;
+  schema:sameAs wikidata:Q2500621 .
 
 :GreatGrandmother a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2500620 ;
+  schema:sameAs wikidata:Q2500620 .
 
 :GreatGrandparent a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2500619 ;
+  schema:sameAs wikidata:Q2500619 .
 
 :Housemate a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q14754454 ;
+  schema:sameAs wikidata:Q14754454 .
 
 :Housewife a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q38126150 ;
+  schema:sameAs wikidata:Q38126150 .
 
 :Husband a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q212878 ;
+  schema:sameAs wikidata:Q212878 .
 
 :Leermeester a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO: university teacher"@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q1622272 ;
+  schema:sameAs wikidata:Q1622272 .
 
 :MotherInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q723868 ;
+  schema:sameAs wikidata:Q723868 .
 
 :Mother a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q7560 ;
+  schema:sameAs wikidata:Q7560 .
 
 :Niece a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q3403377 ;
+  schema:sameAs wikidata:Q3403377 .
 
 :Parent a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:Pupil a rdfs:Class ;
-  rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q7566 ;
+  schema:sameAs wikidata:Q7566 .
 
 :Schoolmakker a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q28008283 ;
+  schema:sameAs wikidata:Q28008283 .
 
 :SisterInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q3238556 ;
+  schema:sameAs wikidata:Q3238556 .
 
 :Sister a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q595094 ;
+  schema:sameAs wikidata:Q595094 .
 
 :Son a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q177232 ;
+  schema:sameAs wikidata:Q177232 .
 
 :Spouse a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q1196129 ;
+  schema:sameAs wikidata:Q1196129 .
 
 :Twin a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q159979 ;
+  schema:sameAs wikidata:Q159979 .
 
 :Uncle a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q76557 ;
+  schema:sameAs wikidata:Q76557 .
 
 :Verloofde a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q98688601 ;
+  schema:sameAs wikidata:Q98688601 .
 
 :Widow a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q179115 ;
+  schema:sameAs wikidata:Q179115 .
 
 :Widower a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q18646998 ;
+  schema:sameAs wikidata:Q18646998 .
 
 :Wife a rdfs:Class ;
   rdfs:subClassOf :Relation ;
   rdfs:label "TODO" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q188830 ;
+  schema:sameAs wikidata:Q188830 .
 
 ###############################################################
 
