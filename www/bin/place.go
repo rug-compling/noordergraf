@@ -9,8 +9,10 @@ import (
 	"net/http"
 	"net/http/cgi"
 	"net/url"
+	"os"
 	"regexp"
 	"runtime"
+	"strconv"
 	"strings"
 )
 
@@ -30,9 +32,12 @@ type BindingT struct {
 
 var (
 	rePlace = regexp.MustCompile(`^[a-zA-Z0-9_]+$`)
+	lang    = 1
 )
 
 func main() {
+	getLanguage()
+
 	req, err := cgi.Request()
 	if x(err, http.StatusInternalServerError) {
 		return
@@ -60,10 +65,10 @@ Invalid query
 	var title string
 	what := req.FormValue("t")
 	if what == "pob" {
-		title = "Geboren"
+		title = []string{"Geboren", "Born"}[lang]
 		what = "placeOfBirth"
 	} else if what == "pod" {
-		title = "Overleden"
+		title = []string{"Overleden", "Died"}[lang]
 		what = "placeOfDeath"
 	} else {
 		fmt.Print(`Status: 400
@@ -105,10 +110,13 @@ ORDER BY ?name ?p
 		return
 	}
 
+	langtag := []string{"nl", "en"}[lang]
+	found := []string{"gevonden", "found"}[lang]
+
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="%s">
   <head>
     <title>Noordergraf -- %s in %s</title>
     <meta charset="utf-8">
@@ -119,9 +127,9 @@ ORDER BY ?name ?p
   <body class="textsearch">
     <div id="container">
 <h1>%s in %s</h1>
-gevonden: %d
+%s: %d
 <table>
-`, title, place, title, place, len(sparql.Results))
+`, langtag, title, place, title, place, found, len(sparql.Results))
 
 	for _, result := range sparql.Results {
 		var uri, name string
@@ -168,4 +176,33 @@ func x(err error, status int, msg ...interface{}) bool {
 `, status, b.String())
 
 	return true
+}
+
+func getLanguage() {
+	// HTTP_ACCEPT_LANGUAGE=nl-NL,nl;q=0.9,en;q=0.8
+
+	langs := make(map[string]float64)
+	maxval := 0.0
+	for _, lang := range strings.Split(os.Getenv("HTTP_ACCEPT_LANGUAGE"), ",") {
+		v := 1.0
+		aa := strings.Split(lang, ";")
+		for _, a := range aa[1:] {
+			bb := strings.Split(a, "=")
+			if len(bb) == 2 && strings.TrimSpace(bb[0]) == "q" {
+				v1, err := strconv.ParseFloat(bb[1], 64)
+				if err == nil {
+					v = v1
+				}
+			}
+		}
+		if v <= maxval {
+			continue
+		}
+		lang1 := strings.ToLower(strings.Split(aa[0], "-")[0])
+		langs[lang1] = v
+		maxval = v
+	}
+	if langs["nl"] > langs["en"] {
+		lang = 0
+	}
 }

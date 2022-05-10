@@ -7,49 +7,49 @@ head: <link rel="alternate" href="https://noordergraf.rug.nl/index.penman" type=
 
 # Noordergraf
 
-Hier komt iets moois
+{{Hier komt iets moois|Under construction}}
 
-[Voorbeeld](/tomb/T00000)
+[{{Voorbeeld|Example}}](/tomb/T00000)
 
 <form action="/bin/textsearch">
 <input type="text" name="q">
-<input type="reset" value="wissen" class="button">
-<input type="submit" value="zoeken in tekst" class="button">
+<input type="reset" value="{{wissen|clear}}" class="button">
+<input type="submit" value="{{zoeken in tekst|search for text}}" class="button">
 </form>
 
 <form action="/bin/textsearch">
 <input type="hidden" name="t" value="fullname">
 <input type="text" name="q">
-<input type="reset" value="wissen" class="button">
-<input type="submit" value="zoeken op naam (soundex)" class="button">
+<input type="reset" value="{{wissen|clear}}" class="button">
+<input type="submit" value="{{zoeken op naam|search for name}} (soundex)" class="button">
 </form>
 
-Voor experts: [zoek met sparql](https://anonymous@noordergraf.rug.nl:10036/#/repositories/noordergraf)
+{{Voor|For}} experts: [{{zoek met|search with}} sparql](https://anonymous@noordergraf.rug.nl:10036/#/repositories/noordergraf)
 
-[Kaart met begraafplaatsen](mapsites.html)
+[{{Kaart met begraafplaatsen|Map of burial sites}}](mapsites.html)
 
-[Kaart met geboorteplaatsen](mappob.html)
+[{{Kaart met geboorteplaatsen|Map of places of birth}}](mappob.html)
 
-[Kaart met plaatsen van overlijden](mappod.html)
+[{{Kaart met plaatsen van overlijden|Map of places of death}}](mappod.html)
 
-[Beroemde mensen](bin/itemsearch?q=famous)
+[{{Beroemde mensen|Famous people}}](bin/itemsearch?q=famous)
 
-[Mensen genoemd op meerdere graven](bin/itemsearch?q=multi)
+[{{Mensen genoemd op meerdere graven|People mentioned on multiple graves}}](bin/itemsearch?q=multi)
 
-[Overzicht van veelvoorkomende grafsymbolen](symbol/)
+[{{Overzicht van veelvoorkomende grafsymbolen|Overview of common tomb symbols}}](symbol/)
 
-[Overzicht van verwijzingen naar bijbelboeken](bible/)
+[{{Overzicht van verwijzingen naar bijbelboeken|Overview of references to bible books}}](bible/)
 
-Meer informatie: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/sites/noordergraf/)
+{{Meer informatie|More information}}: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/sites/noordergraf/)
 
-## Hulpmiddelen
+## {{Hulpmiddelen|Utilities}}
 
-[Overzicht van datastructuur](overview)
+[{{Overzicht van datastructuur|Overview of data structure}}](overview)
 
 [Github](https://github.com/rug-compling/noordergraf)
 
 
-## Soortgelijke websites
+## {{Soortgelijke websites|Similar sites}}
 
 [Graftombe.nl](https://www.graftombe.nl/)
 
@@ -63,7 +63,7 @@ Meer informatie: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/si
 
 [BillionGraves](https://billiongraves.nl/)
 
-## Ook interessant
+## {{Ook interessant|Also of interest}}
 
 [Alle Groningers](https://www.allegroningers.nl/)
 

@@ -13,13 +13,15 @@ import (
 	"io/ioutil"
 	"os"
 	"regexp"
+	"strconv"
 	"strings"
 )
 
 var (
 	linenumbers = false
 
-	reLi = regexp.MustCompile(`<li>(\.[^ ]*|\[[ xX]?\]) `)
+	reLi   = regexp.MustCompile(`<li>(\.[^ ]*|\[[ xX]?\]) `)
+	reLang = regexp.MustCompile(`{{(.*?)\|(.*?)}}`)
 
 	li = map[string]string{
 		`<li>[] `:    `<li class="todo">`,
@@ -80,6 +82,8 @@ func main() {
 		fmt.Print("Status: 500\nContent-type: text/plain\n\n", err, "\n")
 		return
 	}
+
+	b = selectLanguage(b)
 
 	parts := bytes.SplitN(b, []byte("////"), 2)
 	if len(parts) == 2 {
@@ -174,4 +178,45 @@ func main() {
 			"<!--HEAD-->", head, 1),
 		bs,
 		footer)
+}
+
+func selectLanguage(b []byte) []byte {
+	switch getLanguage() {
+	case "nl":
+		b = reLang.ReplaceAll(b, []byte("$1"))
+	default:
+		b = reLang.ReplaceAll(b, []byte("$2"))
+	}
+	return b
+}
+
+func getLanguage() string {
+	// HTTP_ACCEPT_LANGUAGE=nl-NL,nl;q=0.9,en;q=0.8
+
+	language := "en"
+	langs := make(map[string]float64)
+	maxval := 0.0
+	for _, lang := range strings.Split(os.Getenv("HTTP_ACCEPT_LANGUAGE"), ",") {
+		v := 1.0
+		aa := strings.Split(lang, ";")
+		for _, a := range aa[1:] {
+			bb := strings.Split(a, "=")
+			if len(bb) == 2 && strings.TrimSpace(bb[0]) == "q" {
+				v1, err := strconv.ParseFloat(bb[1], 64)
+				if err == nil {
+					v = v1
+				}
+			}
+		}
+		if v <= maxval {
+			continue
+		}
+		lang1 := strings.ToLower(strings.Split(aa[0], "-")[0])
+		langs[lang1] = v
+		maxval = v
+	}
+	if langs["nl"] > langs["en"] {
+		language = "nl"
+	}
+	return language
 }

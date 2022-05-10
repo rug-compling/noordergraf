@@ -1,23 +1,25 @@
-title: Noordergraf -- Overzicht
+title: Noordergraf -- {{Overzicht|Overview}}
 class: pad
 ////
 
-# Overzicht
+# {{Overzicht|Overview}}
 
-Zie ook: [details](ns)
+{{Zie ook|See also}}: [details](ns)
 
 ## Class
 
-Alles (elke instance van een class) kan een 'comment' hebben:
+{{Alles (elke instance van een class) kan een 'comment' hebben:|}}
+{{|Everything (each class instance) can have a 'comment':}}
 
 - **Class** --- **Plot** | **Place** | **Site** | ...[etc](ns#Class)
     - comment → xsd:string | rdf:langString
 
-Bij alles wat volgt is 'comment' steeds weggelaten.
+{{Bij alles wat volgt is 'comment' steeds weggelaten.|}}
+{{|In everything that folows, 'comment' is omitted.}}
 
 ## Plot
 
-Example: [tomb:T00000](tomb/T00000)
+{{Voorbeeld|Example}}: [tomb:T00000](tomb/T00000)
 
 - **Plot** --- **Cross** | **Tomb**
     - commemorator → **[Person](#Person)**
@@ -155,7 +157,7 @@ Example: [tomb:T00000](tomb/T00000)
 
 ## BibleBook
 
-Example: [bible:Matthew](bible/Matthew)
+{{Voorbeeld|Example}}: [bible:Matthew](bible/Matthew)
 
 - **<a name="BibleBook">BibleBook</a>**
     - bibleBookName → rdf:langString
@@ -165,7 +167,7 @@ Example: [bible:Matthew](bible/Matthew)
 
 ## Place
 
-Example: [place:Aalden2760142](place/Aalden2760142)
+{{Voorbeeld|Example}}: [place:Aalden2760142](place/Aalden2760142)
 
 - **<a name="Place">Place</a>**
     - dcModified → xsd:dateTime
@@ -176,7 +178,7 @@ Example: [place:Aalden2760142](place/Aalden2760142)
 
 ## Site
 
-Example: [site:NLdr7811heEmmen](site/NLdr7811heEmmen)
+{{Voorbeeld|Example}}: [site:NLdr7811heEmmen](site/NLdr7811heEmmen)
 
 - **<a name="Site">Site</a>**
     - dcModified → xsd:dateTime
@@ -195,7 +197,7 @@ Example: [site:NLdr7811heEmmen](site/NLdr7811heEmmen)
 
 ## SymbolType
 
-Example: [symbol:Anchor](symbol/Anchor)
+{{Voorbeeld|Example}}: [symbol:Anchor](symbol/Anchor)
 
 - **<a name="SymbolType">SymbolType</a>**
     - dcModified → xsd:dateTime

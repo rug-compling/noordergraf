@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="{{nl|en}}">
 
 <head>
-  <title>Noordergraf -- Begraafplaatsen</title>
+  <title>Noordergraf -- {{Plaatsen van overlijden|Places of death}}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.ico" type="image/ico">
@@ -121,8 +121,8 @@
       });
 
       var baseMaps = {
-        "Standaard": map1,
-        "Fietskaart": map2
+        "{{Standaard|Standard map}}": map1,
+        "{{Fietskaart|Bicycle map}}": map2
       };
       L.control.layers(baseMaps).addTo(q0);
 
@@ -130,7 +130,7 @@
 
 
       $.ajax({
-        url: '/bin/locations?q=site',
+        url: '/bin/locations?q=pod',
         dataType: 'json'
       }).done(function (resp) {
         data = resp;
@@ -148,7 +148,7 @@
 </head>
 
 <body>
-  <div id="map">hier zou een kaart moeten staan</div>
+  <div id="map">{{hier zou een kaart moeten staan|there should be a map here}}</div>
 </body>
 
 </html>

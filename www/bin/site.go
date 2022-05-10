@@ -9,8 +9,10 @@ import (
 	"net/http"
 	"net/http/cgi"
 	"net/url"
+	"os"
 	"regexp"
 	"runtime"
+	"strconv"
 	"strings"
 )
 
@@ -30,9 +32,12 @@ type BindingT struct {
 
 var (
 	reSite = regexp.MustCompile(`^[a-zA-Z0-9_]+$`)
+	lang   = 1
 )
 
 func main() {
+	getLanguage()
+
 	req, err := cgi.Request()
 	if x(err, http.StatusInternalServerError) {
 		return
@@ -90,12 +95,16 @@ ORDER BY ?name ?tomb
 		return
 	}
 
+	langtag := []string{"nl", "en"}[lang]
+	title := []string{"Graven op", "Graves at"}[lang]
+	found := []string{"gevonden", "found"}[lang]
+
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="%s">
   <head>
-    <title>Noordergraf -- Graven op %s</title>
+    <title>Noordergraf -- %s op %s</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" type="image/ico">
@@ -103,10 +112,10 @@ ORDER BY ?name ?tomb
   </head>
   <body class="textsearch">
     <div id="container">
-<h1>Graven op %s</h1>
-gevonden: %d
+<h1>%s %s</h1>
+%s: %d
 <table>
-`, site, site, len(sparql.Results))
+`, langtag, title, site, title, site, found, len(sparql.Results))
 
 	for _, result := range sparql.Results {
 		var uri, name string
@@ -153,4 +162,33 @@ func x(err error, status int, msg ...interface{}) bool {
 `, status, b.String())
 
 	return true
+}
+
+func getLanguage() {
+	// HTTP_ACCEPT_LANGUAGE=nl-NL,nl;q=0.9,en;q=0.8
+
+	langs := make(map[string]float64)
+	maxval := 0.0
+	for _, lang := range strings.Split(os.Getenv("HTTP_ACCEPT_LANGUAGE"), ",") {
+		v := 1.0
+		aa := strings.Split(lang, ";")
+		for _, a := range aa[1:] {
+			bb := strings.Split(a, "=")
+			if len(bb) == 2 && strings.TrimSpace(bb[0]) == "q" {
+				v1, err := strconv.ParseFloat(bb[1], 64)
+				if err == nil {
+					v = v1
+				}
+			}
+		}
+		if v <= maxval {
+			continue
+		}
+		lang1 := strings.ToLower(strings.Split(aa[0], "-")[0])
+		langs[lang1] = v
+		maxval = v
+	}
+	if langs["nl"] > langs["en"] {
+		lang = 0
+	}
 }

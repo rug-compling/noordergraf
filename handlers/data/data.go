@@ -48,10 +48,15 @@ const (
 	PENMAN
 )
 
+const (
+	NL = 0
+	EN = 1
+)
+
 var (
 	globerr      error
 	format       = NONE
-	language     = "en"
+	language     = EN
 	uri          string
 	data         string
 	prefix       string
@@ -247,7 +252,7 @@ func getLanguage() {
 		maxval = v
 	}
 	if langs["nl"] > langs["en"] {
-		language = "nl"
+		language = NL
 	}
 }
 
@@ -388,11 +393,12 @@ func doHTML() {
 	} else if strings.HasPrefix(title, "tomb") {
 		class = "pad"
 	}
+	langtag := []string{"nl", "en"}[language]
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 Last-Modified: %s
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="%s">
   <head>
     <title>Noordergraf -- %s</title>
     <meta charset="utf-8">
@@ -436,11 +442,11 @@ Last-Modified: %s
     </span></div>
     <div id="container">
       <h1>%s</h1>
-`, lastModified.Format(time.RFC1123), title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, title)
+`, lastModified.Format(time.RFC1123), langtag, title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, title)
 
-	if uri == "/ns" {
-		fmt.Println(`<div class="props top">see also: <a href="overview">overview</a></div>`)
-	}
+	//if uri == "/ns" {
+	//	fmt.Println(`<div class="props top">see also: <a href="overview">overview</a></div>`)
+	//}
 
 	if body != "" || prefix != "" {
 		fmt.Printf("<pre>\n%s\n\n%s\n</pre>\n", html.EscapeString(strings.TrimSpace(prefix)), body)
@@ -449,7 +455,7 @@ Last-Modified: %s
 	if strings.HasSuffix(uri, "/index") {
 		if strings.HasSuffix(uri, "/bible/index") {
 			lang := "eng"
-			if language == "nl" {
+			if language == NL {
 				lang = "nld"
 			}
 			b, err := ioutil.ReadFile("/net/noordergraf/data/bible/index.body." + lang)
@@ -460,7 +466,7 @@ Last-Modified: %s
 			}
 		} else if strings.HasSuffix(uri, "/symbol/index") {
 			lang := "eng"
-			if language == "nl" {
+			if language == NL {
 				lang = "nld"
 			}
 			b, err := ioutil.ReadFile("/net/noordergraf/www/picto/index.body." + lang)
@@ -471,30 +477,67 @@ Last-Modified: %s
 			}
 		}
 	} else if strings.HasPrefix(uri, "/bible/") {
-		fmt.Printf(`
+		switch language {
+		case NL:
+			fmt.Printf(`
 <div class="footer">
 Bekijk <a href="/bin/bible?q=%s">graven met een verwijzing naar dit bijbelboek</a>
 </div>
 `, uri[7:])
+		default:
+			fmt.Printf(`
+<div class="footer">
+See <a href="/bin/bible?q=%s">graves with references to this bible book</a>
+</div>
+`, uri[7:])
+		}
 	} else if strings.HasPrefix(uri, "/site/") {
-		fmt.Printf(`
+		switch language {
+		case NL:
+			fmt.Printf(`
 <div class="footer">
 Bekijk <a href="/bin/site?q=%s">graven op deze site</a>
 </div>
 `, uri[6:])
+		default:
+			fmt.Printf(`
+<div class="footer">
+See <a href="/bin/site?q=%s">graves at this site</a>
+</div>
+`, uri[6:])
+		}
 	} else if strings.HasPrefix(uri, "/symbol/") {
-		fmt.Printf(`
+		switch language {
+		case NL:
+			fmt.Printf(`
 <div class="footer">
 Bekijk <a href="/bin/symbol?q=%s">graven met dit symbool</a>
 </div>
 `, uri[8:])
+		default:
+			fmt.Printf(`
+<div class="footer">
+See <a href="/bin/symbol?q=%s">graves with this symbol</a>
+</div>
+`, uri[8:])
+		}
 	} else if strings.HasPrefix(uri, "/place/") {
-		fmt.Printf(`
+		switch language {
+		case NL:
+			fmt.Printf(`
 <div class="footer">
 Bekijk <a href="/bin/place?t=pob&q=%s">geboorteplaatsen</a> |
 <a href="/bin/place?t=pod&q=%s">plaatsen van overlijden</a>
 </div>
 `, uri[7:], uri[7:])
+		default:
+			fmt.Printf(`
+<div class="footer">
+See <a href="/bin/place?t=pob&q=%s">places of birth</a> |
+<a href="/bin/place?t=pod&q=%s">places of death</a>
+</div>
+`, uri[7:], uri[7:])
+		}
 	}
 
 	fmt.Print(`
