@@ -18,6 +18,7 @@ import (
 )
 
 var (
+	language    = "en"
 	linenumbers = false
 
 	reLi   = regexp.MustCompile(`<li>(\.[^ ]*|\[[ xX]?\]) `)
@@ -47,7 +48,7 @@ var (
 Cache-Control: public, max-age=86400
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="LANGTAG">
   <head>
     <title>TITLE</title>
     <meta charset="utf-8">
@@ -67,6 +68,8 @@ Cache-Control: public, max-age=86400
 )
 
 func main() {
+
+	getLanguage()
 
 	//	parts := bytes.Split(
 
@@ -172,7 +175,9 @@ func main() {
 		strings.Replace(
 			strings.Replace(
 				strings.Replace(
-					strings.Replace(header, "TITLE", title, 1),
+					strings.Replace(
+						strings.Replace(header, "LANGTAG", language, 1),
+						"TITLE", title, 1),
 					"STYLE", style, 1),
 				"CLASS", class, 1),
 			"<!--HEAD-->", head, 1),
@@ -181,7 +186,7 @@ func main() {
 }
 
 func selectLanguage(b []byte) []byte {
-	switch getLanguage() {
+	switch language {
 	case "nl":
 		b = reLang.ReplaceAll(b, []byte("$1"))
 	default:
@@ -190,10 +195,9 @@ func selectLanguage(b []byte) []byte {
 	return b
 }
 
-func getLanguage() string {
+func getLanguage() {
 	// HTTP_ACCEPT_LANGUAGE=nl-NL,nl;q=0.9,en;q=0.8
 
-	language := "en"
 	langs := make(map[string]float64)
 	maxval := 0.0
 	for _, lang := range strings.Split(os.Getenv("HTTP_ACCEPT_LANGUAGE"), ",") {
@@ -218,5 +222,4 @@ func getLanguage() string {
 	if langs["nl"] > langs["en"] {
 		language = "nl"
 	}
-	return language
 }
