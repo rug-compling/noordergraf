@@ -23,6 +23,7 @@
   </style>
   <script type="text/javascript" src="/jquery.js"></script>
   <script src="/leaflet/leaflet.js"></script>
+  <script src="/leaflet/leaflet.browser.print.min.js"></script>
   <script>
     var q0;
     var map1;
@@ -128,6 +129,13 @@
 
       L.control.scale({ imperial: false }).addTo(q0);
 
+      L.control.browserPrint({title: "{{Afdrukken|Print}}",
+                              printModes: [
+			              L.BrowserPrint.Mode.Portrait (null, {title: "{{Staand|Portrait}}"  }),
+			              L.BrowserPrint.Mode.Landscape(null, {title: "{{Liggend|Landscape}}"}),
+			              L.BrowserPrint.Mode.Custom   (null, {title: "{{Kies rechthoek|Select rectangle}}" })
+			          ]
+			     }).addTo(q0);
 
       $.ajax({
         url: '/bin/locations?q=pob',
