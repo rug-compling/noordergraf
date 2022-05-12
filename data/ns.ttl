@@ -34,8 +34,7 @@
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q775794 ;
-  schema:sameAs wikidata:Q775794 .
+  rdfs:seeAlso wikidata:Q775794 .
 
 :WithDate a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -51,8 +50,7 @@
   rdfs:domain :WithDate ;
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q205892 ;
-  schema:sameAs wikidata:Q205892 .
+  rdfs:seeAlso wikidata:Q205892 .
 
 :WithDcCreator a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -170,8 +168,7 @@
   rdfs:domain :WithDuration ;
   rdfs:range xsd:duration ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q2199864 ;
-  schema:sameAs wikidata:Q2199864 .
+  rdfs:seeAlso wikidata:Q2199864 .
 
 :WithFile a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -187,8 +184,7 @@
   rdfs:domain :WithFile ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q82753 ;
-  schema:sameAs wikidata:Q82753 .
+  rdfs:seeAlso wikidata:Q82753 .
 
 :WithGeography a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -204,8 +200,7 @@
   rdfs:domain :WithGeography ;
   rdfs:range :GeoPoint ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q2221906 ;
-  schema:sameAs wikidata:Q2221906 .
+  rdfs:seeAlso wikidata:Q2221906 .
 
 :nd a rdf:Property ;
   rdfs:label "nd" ;
@@ -355,8 +350,7 @@
   rdfs:domain :WithTemporal; ;
   rdfs:range :Period ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q186081 ;
-  schema:sameAs wikidata:Q186081 .
+  rdfs:seeAlso wikidata:Q186081 .
 
 :WithText a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
@@ -372,8 +366,8 @@
   rdfs:domain :WithText ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q234460 ;
-  schema:sameAs wikidata:Q234460 .
+  owl:sameAs    wikidata:Q2449326 ;
+  schema:sameAs wikidata:Q2449326 .
 
 ################################################################
 
@@ -803,7 +797,9 @@
   rdfs:label "Occupation" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q192581 ;
+  schema:sameAs wikidata:Q192581 .
 
 :hisco a rdf:Property ;
   rdfs:label "hisco" ;
@@ -939,8 +935,8 @@
   rdfs:domain :Person ;
   rdfs:range :Date ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q2389905 , schema:birthDate ;
-  schema:sameAs wikidata:Q2389905 , schema:birthDate .
+  owl:sameAs    schema:birthDate , wikidata:Q2389905 ;
+  schema:sameAs schema:birthDate , wikidata:Q2389905 .
 
 :dateOfDeath a rdf:Property ;
   rdfs:label "dateOfDeath" ;
@@ -949,8 +945,8 @@
   rdfs:domain :Person ;
   rdfs:range :Date ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q18748141 , schema:deathDate ;
-  schema:sameAs wikidata:Q18748141 , schema:deathDate .
+  owl:sameAs    schema:deathDate , wikidata:Q18748141 ;
+  schema:sameAs schema:deathDate , wikidata:Q18748141 .
 
 :placeOfBirth a rdf:Property ;
   rdfs:label "placeOfBirth" ;
@@ -959,8 +955,8 @@
   rdfs:domain :Person ;
   rdfs:range :Location ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q1322263 , schema:birthPlace ;
-  schema:sameAs wikidata:Q1322263 , schema:birthPlace .
+  owl:sameAs    schema:birthPlace , wikidata:Q1322263 ;
+  schema:sameAs schema:birthPlace , wikidata:Q1322263 .
 
 :placeOfDeath a rdf:Property ;
   rdfs:label "placeOfDeath" ;
@@ -969,8 +965,8 @@
   rdfs:domain :Person ;
   rdfs:range :Location ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q18658526 , schema:deathPlace ;
-  schema:sameAs wikidata:Q18658526 , schema:deathPlace .
+  owl:sameAs    schema:deathPlace , wikidata:Q18658526 ;
+  schema:sameAs schema:deathPlace , wikidata:Q18658526 .
 
 :age a rdf:Property ;
   rdfs:label "age" ;
@@ -979,8 +975,7 @@
   rdfs:domain :Person ;
   rdfs:range :Age ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q185836 ;
-  schema:sameAs wikidata:Q185836 .
+  rdfs:seeAlso wikidata:Q185836 .
 
 :relation a rdf:Property ;
   rdfs:label "relation" ;
@@ -988,9 +983,7 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Relation ;
-  rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q930933 ;
-  schema:sameAs wikidata:Q930933 .
+  rdfs:isDefinedBy : .
 
 :occupation a rdf:Property ;
   rdfs:label "occupation" ;
@@ -999,8 +992,9 @@
   rdfs:domain :Person ;
   rdfs:range :Occupation ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q192581 ;
-  schema:sameAs wikidata:Q192581 .
+  owl:sameAs    schema:hasOccupation ;
+  schema:sameAs schema:hasOccupation ;
+  rdfs:seeAlso wikidata:Q192581 .
 
 :quantity a rdf:Property ;
   rdfs:label "quantity" ;
@@ -1008,9 +1002,7 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Quantity ;
-  rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q309314 ;
-  schema:sameAs wikidata:Q309314 .
+  rdfs:isDefinedBy : .
 
 :property a rdf:Property ;
   rdfs:label "property" ;
@@ -1018,9 +1010,7 @@
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Person ;
   rdfs:range :Property ;
-  rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q937228 ;
-  schema:sameAs wikidata:Q937228 .
+  rdfs:isDefinedBy : .
 
 :Male a rdfs:Class ;
   rdfs:subClassOf :Person ;
@@ -1257,7 +1247,9 @@
   rdfs:label "Property" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q937228 ;
+  schema:sameAs wikidata:Q937228 .
 
 ################################################################
 
