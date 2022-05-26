@@ -1,0 +1,106 @@
+@prefix t00128: <https://noordergraf.rug.nl/item/T00128#> .
+
+item:T00128
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2059 ;
+    :geoLong 6.5714
+  ] ;
+  :nd "+53.2059+006.5714"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-01T09:57:48"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00128.jpg
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00128:P1, t00128:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: k
+mustplaats
+van onze lieve ouders
+heine heininga
+deb 13 oct ibg2
+te muntendam
+overl. i sept. 1945 alhier
+en van
+siepke ten hoor
+geb.17 jurs 1865 te tolbert
+overl 28 se, 1915 alher
+""" .
+
+t00128:C2
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00128:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y10M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-10-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-09-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Heine Heininga" ;
+    :text "TODO: Heine Heininga"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Muntendam2750535 ;
+    :text "TODO: MUNTENDAM"
+  ] ;
+  :placeOfDeath t00128:C2 ;
+  :relation [
+    a :Father
+  ] .
+
+t00128:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P50Y2M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-07-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-09-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Siepke ten Hoor" ;
+    :text "TODO: Siepke ten Hoor"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Tolbert2746234 ;
+    :text "TODO: TOLBERT"
+  ] ;
+  :placeOfDeath t00128:C2 ;
+  :relation [
+    a :Mother
+  ] .
+

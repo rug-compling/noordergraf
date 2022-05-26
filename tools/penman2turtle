@@ -12,7 +12,7 @@ import installeren:
 # PREFIXEN:
 #
 
-Item      = 'tomb'
+Item      = 'item'
 Predicate = ''
 Type      = 't'
 
@@ -25,7 +25,7 @@ from penman import constant
 def process(txt):
     base = txt.split(maxsplit=1)[0][1:]
     sys.stdout.write('###\n### ' + base + '\n###\n\n')
-    sys.stdout.write('@prefix ' + base + ': <https://noordergraf.rug.nl/tomb/' + base + '#> .\n\n')
+    sys.stdout.write('@prefix ' + base + ': <https://noordergraf.rug.nl/item/' + base + '#> .\n\n')
 
     g = penman.decode(txt)
 

@@ -1,0 +1,90 @@
+@prefix t00464: <https://noordergraf.rug.nl/item/T00464#> .
+
+item:T00464
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2072 ;
+    :geoLong 5.7698
+  ] ;
+  :nd "+53.2072+005.7698"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:51:21"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00464.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "REQUIESCAT IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00464:P1, t00464:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: rustrlaats
+| van onze onvergetelijke
+man, vader en dpa
+theodorus j.mcukes
+1-7_1895 ★ 3:5-1957
+echtgenoot van
+truintje radersma
+★ l11899 † 26.2.1998
+----
+""" .
+
+t00464:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y10M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-07-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1967-05-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Theodorus J. Houkes" ;
+    :text "TODO: Theodorus J. Houkes"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Grandfather
+  ], [
+    a :Spouse ;
+    :target t00464:P2
+  ], [
+    a :Husband ;
+    :target t00464:P2
+  ] .
+
+t00464:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P99Y2M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-01-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1998-03-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trijntje Radersma" ;
+    :text "TODO: Trijntje Radersma"
+  ] .
+

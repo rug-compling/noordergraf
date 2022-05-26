@@ -1,0 +1,92 @@
+@prefix t00629: <https://noordergraf.rug.nl/item/T00629#> .
+
+item:T00629
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1640 ;
+    :geoLong 6.7543
+  ] ;
+  :nd "+53.1640+006.7543"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T09:57:35"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00629.jpg
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00629:P1, t00629:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:FaithHopeLove
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+wilhels
+anderenus ma
+hensel
+geb.31 jult 1856
+te hoogezano
+overl. 19 juli 192
+echtgenoot van
+hinderkien bos
+geb. 20 febr. 1862
+overl. 20 febr. 1934
+""" .
+
+t00629:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y11M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-07-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-07-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hinderiekus Wilhelm Hensel" ;
+    :text "TODO: Hinderiekus Wilhelm Hensel"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00629:P2
+  ] .
+
+t00629:P2
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P72Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-02-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-02-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hinderkien Bos" ;
+    :text "TODO: Hinderkien Bos"
+  ] .
+

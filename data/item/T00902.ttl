@@ -1,0 +1,128 @@
+@prefix t00902: <https://noordergraf.rug.nl/item/T00902#> .
+
+item:T00902
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1718 ;
+    :geoLong 6.3658
+  ] ;
+  :nd "+53.1718+006.3658"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:23:56"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00902.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "IN MEMORIAN"@nld
+  ], [
+    a :Quote ;
+    :text "REQUIEM AETERNAM \\ DONE EIS \\ DOMINE"@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Ecclesiastes ;
+      :chapter 12 ;
+      :verse "7"
+    ] ;
+    :text "Pred 12:7"@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00902:P1, t00902:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: thi
+rustpi
+יז
+oveil
+in memoriam
+resort
+grietje willemina
+line
+hoenderken
+horn
+ger
+1 diepswal 5 april 1891
+rotterdam 4 aug. 1940
+pred 12:7
+reinder cluiving
+hoenderken
+diepswal 13 nov. 1896
+enschede 18 dec. 1946
+31 j
+euhtg
+zalig 2
+die in
+stervei
+requiem aeternam
+dona eis
+domine
+""" .
+
+t00902:C1
+  a :Hamlet ;
+  :place place:Diepswal2756869 ;
+  :text "TODO: DIEPSWAL" .
+
+t00902:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P49Y2M30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-05-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-08-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Grietje Willemina Hoenderken" ;
+    :text "TODO: Grietje Willemina Hoenderken"
+  ] ;
+  :placeOfBirth t00902:C1 ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Rotterdam2747891 ;
+    :text "TODO: ROTTERDAM"
+  ] .
+
+t00902:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y1M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-11-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-12-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Reinder Cluiving Hoenderken" ;
+    :text "TODO: Reinder Cluiving Hoenderken"
+  ] ;
+  :placeOfBirth t00902:C1 ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Enschede2756071 ;
+    :text "TODO: ENSCHEDE"
+  ] .
+

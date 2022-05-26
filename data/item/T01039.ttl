@@ -1,0 +1,57 @@
+@prefix t01039: <https://noordergraf.rug.nl/item/T01039#> .
+
+item:T01039
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2398 ;
+    :geoLong 6.4101
+  ] ;
+  :nd "+53.2398+006.4101"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-19T10:41:54"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01039.jpg
+  ] ;
+  :quote t01039:V1 ;
+  :site site:NLgr9801caZuidhorn ;
+  :subject t01039:P1 ;
+  :text """TODO: ferdinand johannes
+van duken
+★ 24-11 -1952
+t 249_1970
+openb 2012
+""" .
+
+t01039:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P17Y10M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1952-11-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-09-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Ferdinand Johannes van Dijken" ;
+    :text "TODO: Ferdinand Johannes van Dijken"
+  ] .
+
+t01039:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Revelation ;
+    :chapter 20 ;
+    :verse "12"
+  ] ;
+  :text "TODO" .
+

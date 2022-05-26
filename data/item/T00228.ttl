@@ -1,0 +1,80 @@
+@prefix t00228: <https://noordergraf.rug.nl/item/T00228#> .
+
+item:T00228
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2225 ;
+    :geoLong 6.6366
+  ] ;
+  :nd "+53.2225+006.6366"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-08T14:40:04"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00228.jpg
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00228:P1, t00228:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OliveBranch
+  ] ;
+  :text """TODO: buspluats
+trijntje gdidris
+boerma
+cuisvrour
+ram
+koop hendriks
+bruininga
+ya da 6 anal 1799
+m €
+meelden? alaadd1870
+facenda elinde
+nun 52% facere
+""" .
+
+t00228:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y10M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1799-04-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-03-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trijntje Geerts Boerma" ;
+    :text "TODO: Trijntje Geerts Boerma"
+  ] ;
+  :relation [
+    a :Housewife ;
+    :target t00228:P2
+  ], [
+    a :Spouse ;
+    :period [
+      a :Period ;
+      :duration "P52Y6M"^^xsd:duration ;
+      :text "52½ Jaren"
+    ] ;
+    :target t00228:P2
+  ] .
+
+t00228:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Koop Hendriks Bruininga" ;
+    :text "TODO: Koop Hendriks Bruininga"
+  ] .
+

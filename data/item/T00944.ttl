@@ -1,0 +1,71 @@
+@prefix t00944: <https://noordergraf.rug.nl/item/T00944#> .
+
+item:T00944
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1390 ;
+    :geoLong 7.1411
+  ] ;
+  :nd "+53.1390+007.1411"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-21T13:20:31"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00944.jpg
+  ] ;
+  :site site:NLgr9696xgOudeschans ;
+  :subject t00944:P1, t00944:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:BrokenColumn
+  ] ;
+  :text """TODO: rustplaats
+van
+hendrik
+4
+wolters.
+gol 31 maart
+1179
+ovdrl & april
+1871
+echt genoot van
+terwd rover
+""" .
+
+t00944:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P92Y8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1779-03-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1871-04-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik A. Wolters" ;
+    :text "TODO: Hendrik A. Wolters"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00944:P2
+  ] .
+
+t00944:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Tjarwe Roelfs" ;
+    :text "TODO: Tjarwe Roelfs"
+  ] .
+

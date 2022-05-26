@@ -1,0 +1,91 @@
+@prefix t01055: <https://noordergraf.rug.nl/item/T01055#> .
+
+item:T01055
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3603 ;
+    :geoLong 6.3435
+  ] ;
+  :nd "+53.3603+006.3435"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-05-02T16:49:57"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01055.jpg
+  ] ;
+  :quote t01055:V1 ;
+  :site site:NLgr9971ebUlrum ;
+  :subject t01055:P1, t01055:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: z
+rustplaats
+van
+onze lieve moeder
+aaltje
+borgman
+geb.te hornhuizen
+13 oct. 1835
+oyerl.te ulrum
+27 april 1927
+weduwe van
+menno jansen.
+mattheus 5:3.
+""" .
+
+t01055:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y6M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1835-10-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-04-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aaltje Borgman" ;
+    :text "TODO: Aaltje Borgman"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Hornhuizen2753604 ;
+    :text "TODO: HORNHUIZEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Ulrum2745944 ;
+    :text "TODO: ULRUM"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t01055:P2
+  ] .
+
+t01055:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Menno Jansen" ;
+    :text "TODO: Menno Jansen"
+  ] .
+
+t01055:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Matthew ;
+    :chapter 5 ;
+    :verse "3"
+  ] ;
+  :text "TODO" .
+

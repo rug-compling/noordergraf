@@ -1,0 +1,55 @@
+@prefix t00703: <https://noordergraf.rug.nl/item/T00703#> .
+
+item:T00703
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7817 ;
+    :geoLong 6.9012
+  ] ;
+  :nd "+52.7817+006.9012"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:50:31"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00703.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE AAFKE"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00703:P1 ;
+  :text """TODO: rier rusy
+ade
+van
+rustplaats
+aafke
+luurs
+geb 27 jan. 1927
+overl: 9 juli 1931 132
+rust zacht lieve
+aaf ke
+""" .
+
+t00703:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P4Y5M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1927-01-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-07-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aafke Luurs" ;
+    :text "TODO: Aafke Luurs"
+  ] .
+

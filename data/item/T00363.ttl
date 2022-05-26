@@ -1,0 +1,83 @@
+@prefix t00363: <https://noordergraf.rug.nl/item/T00363#> .
+
+item:T00363
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0799 ;
+    :geoLong 6.5714
+  ] ;
+  :nd "+53.0799+006.5714"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-25T17:29:20"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00363.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00363:P1, t00363:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+jantje
+darwinkel
+geb.te westerbork
+28 april 1858
+overl. te tinaarlo
+5 maart 1942
+weduwe van
+jakob
+smeenge
+rust zalht
+""" .
+
+t00363:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y10M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-04-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-03-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantje Darwinkel" ;
+    :text "TODO: Jantje Darwinkel"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Westerbork2744769 ;
+    :text "TODO: WESTERBORK"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Tynaarlo2746038 ;
+    :text "TODO: TYNAARLO"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00363:P2
+  ] .
+
+t00363:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Jakob Smeenge" ;
+    :text "TODO: Jakob Smeenge"
+  ] .
+

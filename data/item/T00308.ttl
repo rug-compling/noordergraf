@@ -1,0 +1,74 @@
+@prefix t00308: <https://noordergraf.rug.nl/item/T00308#> .
+
+item:T00308
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7158 ;
+    :geoLong 6.4738
+  ] ;
+  :nd "+52.7158+006.4738"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:21:04"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00308.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 90 ;
+      :verse "4-6"
+    ] ;
+    :text "Ps. 90 vs. 4,5,6."
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00308:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:BrokenFrond
+  ] ;
+  :text """TODO: hier rust
+onze lieve zoon
+en broeder
+klaas
+engberts
+geb.te hoogeveen
+18 april 1911
+overl.10 jan.1933
+ps. 90 vs. 4,5,6.
+""" .
+
+t00308:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P21Y8M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-04-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-01-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Klaas Engberts" ;
+    :text "TODO: Klaas Engberts"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Hoogeveen2753719 ;
+    :text "TODO: HOOGEVEEN"
+  ] ;
+  :relation [
+    a :Son
+  ], [
+    a :Brother
+  ] .
+

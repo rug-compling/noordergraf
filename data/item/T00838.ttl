@@ -1,0 +1,88 @@
+@prefix t00838: <https://noordergraf.rug.nl/item/T00838#> .
+
+item:T00838
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7769 ;
+    :geoLong 6.8044
+  ] ;
+  :nd "+52.7769+006.8044"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:50:06"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00838.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT GELIEFDE VADER"@nld
+  ] ;
+  :site site:NLdr7841cdSleen ;
+  :subject t00838:P1, t00838:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: lbe
+hier rist
+hendrik
+schutrups
+geb. te zd.barge
+28 febr. 1857
+20-1 overl te ne sleen a
+29 dec. 1934
+weduwnaar van
+r. wiggers
+rust zacht
+geliefde vader
+jant
+26.
+rus
+""" .
+
+t00838:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y10M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-02-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-12-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Schutrups" ;
+    :text "TODO: Hendrik Schutrups"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zuidbarge2743809 ;
+    :text "TODO: ZUIDBARGE"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Sleen2747182 ;
+    :text "TODO: SLEEN"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t00838:P2
+  ], [
+    a :Father
+  ] .
+
+t00838:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "R. Wiggers" ;
+    :text "TODO: R. Wiggers"
+  ] .
+

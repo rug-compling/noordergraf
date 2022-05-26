@@ -1,0 +1,79 @@
+@prefix t00573: <https://noordergraf.rug.nl/item/T00573#> .
+
+item:T00573
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1048 ;
+    :geoLong 6.8741
+  ] ;
+  :nd "+53.1048+006.8741"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:38:00"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00573.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00573:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:FaithHopeLove
+  ], [
+    a :Symbol
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ] ;
+  :text """TODO: condo
+ter gedachtenis
+van
+geert fijbes,
+geboren
+te veendam
+19 sept. 1858.
+overleden
+te groningen
+15 mei 1921
+rust zacht.
+12
+""" .
+
+t00573:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y7M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-09-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1921-05-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geert Pijbes" ;
+    :text "TODO: Geert Pijbes"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] .
+

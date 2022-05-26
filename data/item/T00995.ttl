@@ -1,0 +1,80 @@
+@prefix t00995: <https://noordergraf.rug.nl/item/T00995#> .
+
+item:T00995
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1754 ;
+    :geoLong 7.0959
+  ] ;
+  :nd "+53.1754+007.0959"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-04T10:46:07"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00995.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MAN EN VADER"@nld
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t00995:P1, t00995:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: 10
+rustplaats
+van
+anno jacorn
+boneschansker
+geb. 6 maart
+1863.
+overl. 25 mei
+1927
+geliefde
+echtgenoot van
+jantje de vries
+rust zacht ueve
+man en vader
+""" .
+
+t00995:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y2M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-03-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-05-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Nanno Jacob Boneschansker" ;
+    :text "TODO: Nanno Jacob Boneschansker"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00995:P2
+  ], [
+    a :Husband ;
+    :target t00995:P2
+  ] .
+
+t00995:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Jantje de Vries" ;
+    :text "TODO: Jantje de Vries"
+  ] .
+

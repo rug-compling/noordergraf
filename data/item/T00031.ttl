@@ -1,0 +1,79 @@
+@prefix t00031: <https://noordergraf.rug.nl/item/T00031#> .
+
+item:T00031
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1627 ;
+    :geoLong 6.6127
+  ] ;
+  :nd "+53.1627+006.6127"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:59:00"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00031.jpg
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00031:P1, t00031:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+van
+geert pieters.
+geb. 4 nov. 18 b1.
+overl.6. oct. 1936 .
+in leven bewaarder
+dezer begraafplaats.
+echtgenoot van
+a. albronda
+""" .
+
+t00031:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P56Y11M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-11-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-10-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geert Pieters" ;
+    :text "TODO: Geert Pieters"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:58940 ;
+    :location [
+      a :Town ;
+      :place place:Haren2754841 ;
+      :text "TODO: HAREN"
+    ] ;
+    :text "bewaarder dezer begraafplaats"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00031:P2
+  ] .
+
+t00031:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "A. Albronda" ;
+    :text "TODO: A. Albronda"
+  ] .
+

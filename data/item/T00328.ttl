@@ -1,0 +1,129 @@
+@prefix t00328: <https://noordergraf.rug.nl/item/T00328#> .
+
+item:T00328
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7150 ;
+    :geoLong 6.4739
+  ] ;
+  :nd "+52.7150+006.4739"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:41:15"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00328.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 90 ;
+      :verse "2"
+    ] ;
+    :text "Ps. 90:2."
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 97 ;
+      :verse "6-7"
+    ] ;
+    :text "Ps. 97:6 en 7."
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00328:P1, t00328:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rust-zacht
+hier rusten
+onze geliefde ouders
+en grootouders
+hendrikklooster
+geb. te ruinen
+29 sept. 1852
+overl. te hoogeveen
+27 april 1927
+en
+hillegonda blokzijl
+geb. te hoogeveen
+24 juni 1860
+overl. aldaar
+22 oct. 1943
+namens hunne kinderen
+behuwd en kleinkinderen,
+ps. 90:2 ps.97:6 en 7.
+""" .
+
+t00328:C2
+  a :Town ;
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
+
+t00328:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y6M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-09-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-04-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Klooster" ;
+    :text "TODO: Hendrik Klooster"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Ruinen2747835 ;
+    :text "TODO: RUINEN"
+  ] ;
+  :placeOfDeath t00328:C2 ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+
+t00328:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y3M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-06-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-10-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hillegonda Blokzijl" ;
+    :text "TODO: Hillegonda Blokzijl"
+  ] ;
+  :placeOfBirth t00328:C2 ;
+  :placeOfDeath t00328:C2 ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+

@@ -1,0 +1,58 @@
+@prefix t00548: <https://noordergraf.rug.nl/item/T00548#> .
+
+item:T00548
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1043 ;
+    :geoLong 6.8755
+  ] ;
+  :nd "+53.1043+006.8755"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T14:09:38"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00548.jpg
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00548:P1 ;
+  :text """TODO: ubbo
+wilkens
+1865
+10 sept. 10mei
+1921
+burgemeester
+van
+veendam
+""" .
+
+t00548:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y8M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-09-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1921-05-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Ubbo Wilkens" ;
+    :text "TODO: Ubbo Wilkens"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:20110 ;
+    :location [
+      a :City ;
+      :place place:Veendam2745783 ;
+      :text "TODO: VEENDAM"
+    ]
+  ] .
+

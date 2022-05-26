@@ -70,7 +70,7 @@ SELECT ?person ?name ?sameas {
 SELECT ?person ?name ?sameas {
   ?person :sameAs ?sameas .
   ?person :name / :fullName ?name .
-  ?plot :subject ?person .
+  ?item :subject ?person .
   FILTER STRSTARTS(xsd:string(?sameas), "https://noordergraf")
 } ORDER BY ?name
 `
@@ -78,10 +78,10 @@ SELECT ?person ?name ?sameas {
 		infer = "true"
 		title = []string{"personen niet op een begraafplaats begraven", "people not buried on a graveyard"}[lang]
 		query = `SELECT ?person ?name {
-  ?plot a :Plot .
-  ?plot :subject ?person .
+  ?item a :Item .
+  ?item :subject ?person .
   ?person :name / :fullName ?name .
-  FILTER NOT EXISTS { ?plot :site ?site . }
+  FILTER NOT EXISTS { ?item :site ?site . }
 } ORDER BY ?name ?person
 `
 	}

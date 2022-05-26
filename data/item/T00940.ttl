@@ -1,0 +1,80 @@
+@prefix t00940: <https://noordergraf.rug.nl/item/T00940#> .
+
+item:T00940
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1384 ;
+    :geoLong 7.1430
+  ] ;
+  :nd "+53.1384+007.1430"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-21T13:24:54"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00940.jpg
+  ] ;
+  :site site:NLgr9696xgOudeschans ;
+  :subject t00940:P1, t00940:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Ouroboros
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Scythe
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Torch
+  ] ;
+  :text """TODO: ter gedachtenis
+van
+ari
+h.r.
+achtgenoote van
+11.oosterybod
+fel... 22. se
+1776,
+everk123e apri
+1860.
+phol leagen
+""" .
+
+t00940:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y5M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1776-11-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1860-04-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "H.R. van Mark" ;
+    :text "TODO: H.R. van Mark"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00940:P2
+  ] .
+
+t00940:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "H. Oosterveld" ;
+    :text "TODO: H. Oosterveld"
+  ] .
+

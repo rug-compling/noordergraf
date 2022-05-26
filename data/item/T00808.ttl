@@ -1,0 +1,90 @@
+@prefix t00808: <https://noordergraf.rug.nl/item/T00808#> .
+
+item:T00808
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2777 ;
+    :geoLong 6.6939
+  ] ;
+  :nd "+53.2777+006.6939"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-01-18T12:48:41"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00808.jpg
+  ] ;
+  :quote t00808:V1 ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00808:P1, t00808:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: re
+rustplaats
+jah oosterhuis
+gees maart 1897
+te zeerup
+dyerl.3i @ct.i935
+te ten boer.
+gel.echtgenoot van
+geertruida omia
+2 corso
+us
+.
+""" .
+
+t00808:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P38Y7M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-03-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-10-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Oosterhuis" ;
+    :text "TODO: Jan Oosterhuis"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zeerijp2744003 ;
+    :text "TODO: ZEERIJP"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:TenBoer2746491 ;
+    :text "TODO: TEN BOER"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00808:P2
+  ] .
+
+t00808:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Geertruida Omta" ;
+    :text "TODO: Geertruida Omta"
+  ] .
+
+t00808:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:2Corinthians ;
+    :chapter 5 ;
+    :verse "1"
+  ] ;
+  :text "TODO" .
+

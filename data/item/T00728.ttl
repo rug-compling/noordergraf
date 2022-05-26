@@ -1,0 +1,74 @@
+@prefix t00728: <https://noordergraf.rug.nl/item/T00728#> .
+
+item:T00728
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7823 ;
+    :geoLong 6.8981
+  ] ;
+  :nd "+52.7823+006.8981"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:13:26"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00728.jpg
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00728:P1, t00728:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rust
+jan lipman hz
+geb. le weerdinge
+den 30 juli 1826
+overb aldaar
+den 7 juli 1898
+,
+weduwnaar van
+jantien wilting
+""" .
+
+t00728:C1
+  a :Village ;
+  :place place:Weerdinge2744927 ;
+  :text "TODO: WEERDINGE" .
+
+t00728:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y11M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1826-07-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1898-07-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Lipman" ;
+    :suffix "Hzn" ;
+    :text "TODO: Jan Lipman Hzn"
+  ] ;
+  :placeOfBirth t00728:C1 ;
+  :placeOfDeath t00728:C1 ;
+  :relation [
+    a :Widower ;
+    :target t00728:P2
+  ] .
+
+t00728:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Jantien Wilting" ;
+    :text "TODO: Jantien Wilting"
+  ] .
+

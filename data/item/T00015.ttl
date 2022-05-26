@@ -1,0 +1,77 @@
+@prefix t00015: <https://noordergraf.rug.nl/item/T00015#> .
+
+item:T00015
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1807 ;
+    :geoLong 6.5963
+  ] ;
+  :nd "+53.1807+006.5963"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T16:40:55"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00015.jpg
+  ] ;
+  :subject t00015:P1 ;
+  :text """Rustplaats
+van onze lieve
+Vrouw en Moeder
+Maria Buining
+★ 1 Dec. 1888
+✝ 12 Juni 1933
+echtgenoote van
+TODO: Johˢ Klaver
+★ 30 Sept. 1885
+✝ 21 Dec. 1956
+""" .
+
+t00015:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P44Y6M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-06-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Maria Buining" ;
+    :text "Maria Buining"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00015:P2
+  ], [
+    a :Mother
+  ] .
+
+t00015:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y2M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-09-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-12-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johannes Klaver" ;
+    :text "TODO: Johˢ Klaver"
+  ] .
+

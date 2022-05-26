@@ -1,0 +1,72 @@
+@prefix t00710: <https://noordergraf.rug.nl/item/T00710#> .
+
+item:T00710
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7810 ;
+    :geoLong 6.9010
+  ] ;
+  :nd "+52.7810+006.9010"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:41:00"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00710.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MAN EN VADER"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00710:P1, t00710:P2 ;
+  :text """TODO: i
+hiefrust
+jan hekman
+geb 23 mei 1902
+overl, #dec.1938
+geliefde echtgendot van
+e. de honge.
+ust zacht lieve
+manen vader.
+te
+""" .
+
+t00710:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P36Y6M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-05-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-12-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Hekman" ;
+    :text "TODO: Jan Hekman"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00710:P2
+  ], [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00710:P2
+  ] .
+
+t00710:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "E. de Jonge" ;
+    :text "TODO: E. de Jonge"
+  ] .
+

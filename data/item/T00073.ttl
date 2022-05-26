@@ -1,0 +1,59 @@
+@prefix t00073: <https://noordergraf.rug.nl/item/T00073#> .
+
+item:T00073
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2040 ;
+    :geoLong 6.5727
+  ] ;
+  :nd "+53.2040+006.5727"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T11:53:23"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00073.jpg
+  ] ;
+  :site site:NLgr9721aaGroningen ;
+  :subject t00073:P1, t00073:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: 1 leven kermisexploitant
+john sipkema
+abelding og
+t 13 sept. 1955
+""" .
+
+t00073:P1
+  a :Male ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-09-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "John Sipkema" ;
+    :text "TODO: John Sipkema"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:21490 ;
+    :organisation [
+      a :Funfair
+    ]
+  ] .
+
+t00073:P2
+  a :Female ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-09-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Abeldine Fogertij" ;
+    :text "TODO: Abeldine Fogertij"
+  ] .
+

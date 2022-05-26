@@ -1,0 +1,97 @@
+@prefix t00431: <https://noordergraf.rug.nl/item/T00431#> .
+
+item:T00431
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4790 ;
+    :geoLong 6.1608
+  ] ;
+  :nd "+53.4790+006.1608"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-02T11:46:03"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00431.jpg
+  ] ;
+  :quote t00431:Q1 ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00431:P1, t00431:P2 ;
+  :text """
+hier rusten
+TJITSKE P. TEENSMA
+★ 9 - 2 - 1920   ✝ 23 - 2 - 1978
+
+WIJNAND PAULUS de JONG
+★ 17 - 5 - 1926   ✝ 15 - 1 - 1999
+en altijd is het zo geweest,
+dat de liefde haar eigen diepte
+niet kent dan op het uur der
+scheiding.  K. Gibran
+""" .
+
+t00431:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P58Y14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-02-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-02-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Tjitske P. Teensma" ;
+    :text "TJITSKE P. TEENSMA"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00431:P2
+  ] .
+
+t00431:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y7M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1926-05-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1999-01-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Wijnand Paulus de Jong" ;
+    :text "WIJNAND PAULUS de JONG"
+  ] .
+
+t00431:Q1
+  a :Quote ;
+  :reference [
+    a :BookReference ;
+    :author [
+      a :Author ;
+      :authorName "Kahlil Gibran" ;
+      :sameAs wikidata:Q47737
+    ] ;
+    :bookTitle "De profeet"@nld ;
+    :date "1923"^^xsd:gYear ;
+    :sameAs wikidata:Q1196302
+  ] ;
+  :text """en altijd is het zo geweest,
+dat de liefde haar eigen diepte
+niet kent dan op het uur der
+scheiding.
+K. Gibran""" .
+

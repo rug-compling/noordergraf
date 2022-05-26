@@ -1,0 +1,70 @@
+@prefix t00730: <https://noordergraf.rug.nl/item/T00730#> .
+
+item:T00730
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7818 ;
+    :geoLong 6.8969
+  ] ;
+  :nd "+52.7818+006.8969"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:08:42"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00730.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "JEZUS BRACHT HAAR ZIELE THUIS"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00730:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: eee
+hier rust
+het stof van
+dnze lieve zuster
+jantina,
+geb. 10
+me
+1900
+querl, 2 nov
+1929
+te emmen.
+jezus bracht
+haar ziele thois.
+""" .
+
+t00730:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P29Y5M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-05-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-11-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantina" ;
+    :text "TODO: Jantina"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Emmen2756136 ;
+    :text "TODO: EMMEN"
+  ] ;
+  :relation [
+    a :Sister
+  ] .
+

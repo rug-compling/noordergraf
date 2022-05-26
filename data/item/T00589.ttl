@@ -1,0 +1,71 @@
+@prefix t00589: <https://noordergraf.rug.nl/item/T00589#> .
+
+item:T00589
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3277 ;
+    :geoLong 6.5121
+  ] ;
+  :nd "+53.3277+006.5121"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-30T14:31:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00589.jpg
+  ] ;
+  :site site:NLgr9951tnWinsum ;
+  :subject t00589:P1, t00589:P2 ;
+  :text """TODO: brun
+bruins b.
+soren roberts
+te winsun
+leder a9 aprillos
+te winnin
+wimum
+echtgenoot warm
+М. Р. РЕВОКА
+in tutuczocht
+""" .
+
+t00589:C1
+  a :Village ;
+  :place place:Winsum2744337 ;
+  :text "TODO: WINSUM" .
+
+t00589:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y1M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-02-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-04-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Bruin Bruins" ;
+    :suffix "B.zoon" ;
+    :text "TODO: Bruin Bruins B.zoon"
+  ] ;
+  :placeOfBirth t00589:C1 ;
+  :placeOfDeath t00589:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00589:P2
+  ] .
+
+t00589:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Martina Petronella de Boer" ;
+    :text "TODO: Martina Petronella de Boer"
+  ] .
+

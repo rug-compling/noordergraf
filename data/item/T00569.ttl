@@ -1,0 +1,103 @@
+@prefix t00569: <https://noordergraf.rug.nl/item/T00569#> .
+
+item:T00569
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1049 ;
+    :geoLong 6.8746
+  ] ;
+  :nd "+53.1049+006.8746"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:37:06"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00569.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00569:P1, t00569:P2, t00569:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ] ;
+  :text """TODO: re
+liker
+ter herinnering
+aan onze lieve
+echt genoot en vader
+harm kool
+geboren
+22 maart 18x6
+overleden
+26 mei 1920,
+echtgenoot
+van
+t. de haan ,
+eerder
+weduwnaar van
+j. jonker.
+rust zacht.
+fiets
+""" .
+
+t00569:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y2M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-03-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-05-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Harm Kool" ;
+    :text "TODO: Harm Kool"
+  ] ;
+  :relation t00569:R3, [
+    a :Father
+  ], [
+    a :Widower ;
+    :before t00569:R3 ;
+    :target t00569:P3
+  ], [
+    a :Husband ;
+    :target t00569:P2
+  ] .
+
+t00569:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Trijntje de Haan" ;
+    :text "TODO: Trijntje de Haan"
+  ] .
+
+t00569:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "J. Jonker" ;
+    :text "TODO: J. Jonker"
+  ] .
+
+t00569:R3
+  a :Spouse ;
+  :target t00569:P2 .
+

@@ -1,0 +1,86 @@
+@prefix t01056: <https://noordergraf.rug.nl/item/T01056#> .
+
+item:T01056
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3596 ;
+    :geoLong 6.3364
+  ] ;
+  :nd "+53.3596+006.3364"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-05-02T16:45:11"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01056.jpg
+  ] ;
+  :site site:NLgr9971ebUlrum ;
+  :subject t01056:P1, t01056:P2, t01056:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+jochum
+tent
+geb.te ulrum
+18 nov. 1859
+overl. aldaar
+4 jan.1908
+echtgen. van
+feikjedina
+hoek stra
+nalatende een
+zoon.
+11
+14h
+""" .
+
+t01056:C1
+  a :Village ;
+  :place place:Ulrum2745944 ;
+  :text "TODO: ULRUM" .
+
+t01056:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y1M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-11-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-01-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jochum Tent" ;
+    :text "TODO: Jochum Tent"
+  ] ;
+  :placeOfBirth t01056:C1 ;
+  :placeOfDeath t01056:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t01056:P2
+  ] .
+
+t01056:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Feikjedina Hoekstra" ;
+    :text "TODO: Feikjedina Hoekstra"
+  ] .
+
+t01056:P3
+  a :Male ;
+  :relation [
+    a :Son ;
+    :target t01056:P1
+  ] .
+

@@ -1,0 +1,68 @@
+@prefix t01035: <https://noordergraf.rug.nl/item/T01035#> .
+
+item:T01035
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2644 ;
+    :geoLong 6.3937
+  ] ;
+  :nd "+53.2644+006.3937"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-19T12:02:39"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01035.jpg
+  ] ;
+  :site site:NLgr9804teNoordhorn ;
+  :subject t01035:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: ustpla
+a
+van
+ats
+klaas
+vledder,
+geb.te noordhorn
+19 juli 1893
+overl. aldaar
+26 juni 1937
+ni
+internation
+dita
+""" .
+
+t01035:C1
+  a :Village ;
+  :place place:Noordhorn2749875 ;
+  :text "TODO: NOORDHORN" .
+
+t01035:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P43Y11M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-07-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-06-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Klaas Vledder" ;
+    :text "TODO: Klaas Vledder"
+  ] ;
+  :placeOfBirth t01035:C1 ;
+  :placeOfDeath t01035:C1 .
+

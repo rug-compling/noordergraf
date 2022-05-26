@@ -1,0 +1,114 @@
+@prefix t00783: <https://noordergraf.rug.nl/item/T00783#> .
+
+item:T00783
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7818 ;
+    :geoLong 6.8976
+  ] ;
+  :nd "+52.7818+006.8976"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T12:58:19"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00783.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DAT ZIJ MOGEN RUSTEN IN VREDE"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00783:P1, t00783:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: sulpladsen van
+harm
+luchien
+christiaans cerintaals
+ised
+cebula cobaly
+obat
+18
+oliba gvatele
+coral
+1881
+one.
+cele chordra van
+h.christiaans en l strating.
+dat zij mogen werden
+ut med
+flee
+""" .
+
+t00783:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P2Y8M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-04-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-12-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Harm Christiaans" ;
+    :text "TODO: Harm Christiaans"
+  ] ;
+  :relation [
+    a :Child ;
+    :target t00783:P3, t00783:P4
+  ] .
+
+t00783:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P4M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-08-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1888-12-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Luchien Christiaans" ;
+    :text "TODO: Luchien Christiaans"
+  ] ;
+  :relation [
+    a :Child ;
+    :target t00783:P3, t00783:P4
+  ] .
+
+t00783:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Heije Christiaans" ;
+    :text "TODO: Heije Christiaans"
+  ] .
+
+t00783:P4
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Lammechien Strating" ;
+    :text "TODO: Lammechien Strating"
+  ] .
+

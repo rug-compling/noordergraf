@@ -1,0 +1,90 @@
+@prefix t01054: <https://noordergraf.rug.nl/item/T01054#> .
+
+item:T01054
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3605 ;
+    :geoLong 6.2928
+  ] ;
+  :nd "+53.3605+006.2928"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-05-02T15:55:36"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01054.jpg
+  ] ;
+  :site site:NLgr9975vrVierhuizen ;
+  :subject t01054:P1, t01054:P2 ;
+  :text """TODO: 13
+rustplaats van
+pieter rozena
+geb 12 maart ig34 te ulrum
+,
+overl 26 december 1946 te verhuizen
+-
+en
+truntje vos
+geb. 6. juni 1634 te ulrum
+overl.4 mei 1972 te opende
+""" .
+
+t01054:C1
+  a :Village ;
+  :place place:Ulrum2745944 ;
+  :text "TODO: ULRUM" .
+
+t01054:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P52Y9M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1894-03-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-12-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Pieter Rozema" ;
+    :text "TODO: Pieter Rozema"
+  ] ;
+  :placeOfBirth t01054:C1 ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Vierhuizen2745553 ;
+    :text "TODO: VIERHUIZEN"
+  ] .
+
+t01054:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y10M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-05-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trijntje Vos" ;
+    :text "TODO: Trijntje Vos"
+  ] ;
+  :placeOfBirth t01054:C1 ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Opende2749302 ;
+    :text "TODO: OPENDE"
+  ] .
+

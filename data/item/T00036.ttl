@@ -1,0 +1,86 @@
+@prefix t00036: <https://noordergraf.rug.nl/item/T00036#> .
+
+item:T00036
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1630 ;
+    :geoLong 6.6121
+  ] ;
+  :nd "+53.1630+006.6121"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:54:02"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00036.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HIJ WAS EEN TROUW EN IJVERIG HOOFD VAN ZIJN GEZIN"
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00036:P1, t00036:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: ruapluata
+ua
+vam
+boelof dolpin
+gebote groningen
+12 juri 1862
+ceerlite scaren
+9 luni 1902
+echtgenoot van
+margrieta
+van bergen
+1
+hij was een trouw
+en toverig noofd
+van zijn gezin.
+""" .
+
+t00036:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P39Y11M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-06-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-06-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelof Dolfin" ;
+    :text "TODO: Roelof Dolfin"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00036:P2
+  ] .
+
+t00036:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Margrieta van Bergen" ;
+    :text "TODO: Margrieta van Bergen"
+  ] .
+

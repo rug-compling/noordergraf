@@ -1,0 +1,71 @@
+@prefix t00898: <https://noordergraf.rug.nl/item/T00898#> .
+
+item:T00898
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1722 ;
+    :geoLong 6.3617
+  ] ;
+  :nd "+53.1722+006.3617"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:32:24"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00898.jpg
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00898:P1, t00898:P2 ;
+  :text """TODO: rustplaats
+van
+sutze van der leest
+geb. 9 nov. 1864
+te gerkesklooster
+overl, 6 jan. 1953
+te sappemeer
+wedn, van a. bentum
+""" .
+
+t00898:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y1M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-11-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-01-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Sijtze van der Leest" ;
+    :text "TODO: Sijtze van der Leest"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Gerkesklooster2755574 ;
+    :text "TODO: GERKESKLOOSTER"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Sappemeer2747758 ;
+    :text "TODO: SAPPEMEER"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t00898:P2
+  ] .
+
+t00898:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "A. Bentum" ;
+    :text "TODO: A. Bentum"
+  ] .
+

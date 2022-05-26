@@ -1,0 +1,59 @@
+@prefix t00973: <https://noordergraf.rug.nl/item/T00973#> .
+
+item:T00973
+  a :Tomb ;
+  :commemorator t00973:P3 ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1200 ;
+    :geoLong 6.6582
+  ] ;
+  :nd "+53.1200+006.6582"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-25T09:31:26"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00973.jpg
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00973:P1, t00973:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """rustplaats
+van
+onze geliefde ouders
+jan flierman
+en
+betje schuiling
+hunne dankdare kinderen
+""" .
+
+t00973:P1
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Jan Flierman" ;
+    :text "jan flierman"
+  ] .
+
+t00973:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Betje Schuiling" ;
+    :text "betje schuiling"
+  ] .
+
+t00973:P3
+  a :Person ;
+  :quantity [
+    a :Quantity
+  ] ;
+  :relation [
+    a :Child ;
+    :target t00973:P1, t00973:P2 ;
+    :text "hunne dankbare kinderen"
+  ] .
+

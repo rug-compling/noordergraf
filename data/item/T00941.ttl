@@ -1,0 +1,104 @@
+@prefix t00941: <https://noordergraf.rug.nl/item/T00941#> .
+
+item:T00941
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1383 ;
+    :geoLong 7.1431
+  ] ;
+  :nd "+53.1383+007.1431"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-21T13:24:06"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00941.jpg
+  ] ;
+  :site site:NLgr9696xgOudeschans ;
+  :subject t00941:P1, t00941:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: postplot
+geert fekkd
+geb: 9 maartigos
+ovedl12 apr. 1898
+ten van
+geert fekko
+geb10lt 1900
+overl 25 juli 1900
+200ntjes van
+5
+bhindriks
+mfekkers
+del
+v. xhsx
+""" .
+
+t00941:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-03-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1898-04-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geert Fekko" ;
+    :text "TODO: Geert Fekko"
+  ] ;
+  :relation [
+    a :Son ;
+    :target t00941:P3, t00941:P4
+  ] .
+
+t00941:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-07-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1900-07-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geert Fekko" ;
+    :text "TODO: Geert Fekko"
+  ] ;
+  :relation [
+    a :Son ;
+    :target t00941:P3, t00941:P4
+  ] .
+
+t00941:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "B. Hindriks" ;
+    :text "TODO: B. Hindriks"
+  ] .
+
+t00941:P4
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "M. Fekkers" ;
+    :text "TODO: M. Fekkers"
+  ] .
+

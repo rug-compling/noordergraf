@@ -1,0 +1,87 @@
+@prefix t00922: <https://noordergraf.rug.nl/item/T00922#> .
+
+item:T00922
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1719 ;
+    :geoLong 6.3656
+  ] ;
+  :nd "+53.1719+006.3656"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:10:29"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00922.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUSTPLAATS VAN"@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00922:P1, t00922:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: f
+3
+rustplaatoran
+aaltien hulshof
+gel-le loangelee
+28 aug, 1847
+overhtelbert
+6 maart 1930
+feder231oc
+1910 wedure van
+tonnis oosterhuis
+it.
+""" .
+
+t00922:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y6M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-08-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-03-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aaltien Hulshof" ;
+    :text "TODO: Aaltien Hulshof"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Langelo2751943 ;
+    :text "TODO: LANGELO"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Tolbert2746234 ;
+    :text "TODO: TOLBERT"
+  ] ;
+  :relation [
+    a :Widow ;
+    :begin "1910-11-23"^^xsd:date ;
+    :target t00922:P2
+  ] .
+
+t00922:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Tonnis Oosterhuis" ;
+    :text "TODO: Tonnis Oosterhuis"
+  ] .
+

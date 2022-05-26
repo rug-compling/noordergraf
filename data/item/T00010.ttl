@@ -1,0 +1,82 @@
+@prefix t00010: <https://noordergraf.rug.nl/item/T00010#> .
+
+item:T00010
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1902 ;
+    :geoLong 6.5927
+  ] ;
+  :nd "+53.1902+006.5927"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T16:48:36"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00010.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00010:P1, t00010:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: rustplaats van
+gerke middel
+geb.30 aug.1890
+overl.14 dec1935
+en onze lieve vader
+en grootvader
+roelf middel
+geb.4 april 1865
+overlij okt. 1961
+lmt
+re
+""" .
+
+t00010:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P45Y3M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-08-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-12-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Gerke Middel" ;
+    :text "TODO: Gerke Middel"
+  ] .
+
+t00010:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P96Y6M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-04-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-10-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelf Middel" ;
+    :text "TODO: Roelf Middel"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Grandfather
+  ] .
+

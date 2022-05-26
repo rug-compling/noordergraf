@@ -1,0 +1,74 @@
+@prefix t00723: <https://noordergraf.rug.nl/item/T00723#> .
+
+item:T00723
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7825 ;
+    :geoLong 6.8990
+  ] ;
+  :nd "+52.7825+006.8990"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:17:21"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00723.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 91
+    ] ;
+    :text "psalm 91."@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00723:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rust
+onze
+geliefde oom
+feet
+geert
+hendriks
+geb 16 me!
+1869
+everl 26 mei
+1925
+te vestenesch
+psalm 9
+""" .
+
+t00723:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P56Y10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-05-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1925-05-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geert Hendriks" ;
+    :text "TODO: Geert Hendriks"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Westenesch2744776 ;
+    :text "TODO: WESTENESCH"
+  ] ;
+  :relation [
+    a :Uncle
+  ] .
+

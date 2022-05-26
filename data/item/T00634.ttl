@@ -1,0 +1,74 @@
+@prefix t00634: <https://noordergraf.rug.nl/item/T00634#> .
+
+item:T00634
+  a :Tomb ;
+  :figure [
+    a :Statue
+  ] ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1641 ;
+    :geoLong 6.7545
+  ] ;
+  :nd "+53.1641+006.7545"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T09:55:56"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00634.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "KLEURRIJK, MENSENMENS, LEVENSGENIETER"@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Ecclesiastes ;
+      :chapter 3 ;
+      :verse "1"
+    ] ;
+    :text "Prediker 3:1"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00634:P1 ;
+  :text """TODO: prediker 3:1
+kleurrijk, mensenmens, levensgenieter
+caty boef de vries
+19_2_1948
+13_8_2017
+haren
+groningen
+""" .
+
+t00634:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y5M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1948-02-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2017-08-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Caty Boef-de Vries" ;
+    :text "TODO: Caty Boef-de Vries"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] .
+

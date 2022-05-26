@@ -1,0 +1,108 @@
+@prefix t00705: <https://noordergraf.rug.nl/item/T00705#> .
+
+item:T00705
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7817 ;
+    :geoLong 6.9011
+  ] ;
+  :nd "+52.7817+006.9011"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:50:03"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00705.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00705:P1, t00705:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: te
+vig
+bre
+foods
+hier rust
+het stoffeluk overschot van
+johannes koopmani carolina harms
+geb.16 april 1856 geb. 3 mei 1863
+overl.23 juli 1937 overl.22 april 1951
+te angelsloo
+te angelsloo
+echtgen. van
+weduwe van
+charms
+j. koopman
+rue
+yay
+pass
+e
+rust zacht
+""" .
+
+t00705:C1
+  a :Hamlet ;
+  :place place:Angelslo2759766 ;
+  :text "TODO: ANGELSLO" .
+
+t00705:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P81Y3M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-04-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-07-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johannes Koopman" ;
+    :text "TODO: Johannes Koopman"
+  ] ;
+  :placeOfDeath t00705:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00705:P2
+  ] .
+
+t00705:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y11M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-05-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-04-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Carolina Harms" ;
+    :text "TODO: Carolina Harms"
+  ] ;
+  :placeOfDeath t00705:C1 ;
+  :relation [
+    a :Widow ;
+    :target t00705:P1
+  ] .
+

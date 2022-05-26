@@ -1,0 +1,93 @@
+@prefix t00794: <https://noordergraf.rug.nl/item/T00794#> .
+
+item:T00794
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2773 ;
+    :geoLong 6.6936
+  ] ;
+  :nd "+53.2773+006.6936"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-01-18T13:05:32"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00794.jpg
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00794:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: eht
+rustplaats
+van
+trientje
+kalkwiek
+geb 5 dec, 1281
+te iten boer
+overl: 10 febr. 1944
+te zuidlaren
+dochter van
+e, kalkwiek en
+aloosterhuis
+""" .
+
+t00794:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y2M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-12-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-02-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trientje Kalkwiek" ;
+    :text "TODO: Trientje Kalkwiek"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:TenBoer2746491 ;
+    :text "TODO: TEN BOER"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Zuidlaren2743680 ;
+    :text "TODO: ZUIDLAREN"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00794:P2, t00794:P3
+  ] .
+
+t00794:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "E. Kalkwiek" ;
+    :text "TODO: E. Kalkwiek"
+  ] .
+
+t00794:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "A. Oosterhuis" ;
+    :text "TODO: A. Oosterhuis"
+  ] .
+

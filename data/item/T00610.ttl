@@ -1,0 +1,75 @@
+@prefix t00610: <https://noordergraf.rug.nl/item/T00610#> .
+
+item:T00610
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1640 ;
+    :geoLong 6.7541
+  ] ;
+  :nd "+53.1640+006.7541"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T10:08:27"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00610.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "TOT WEDERZIENS"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00610:P1, t00610:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Hands
+  ] ;
+  :text """TODO: wederziensten
+tot
+rustplaats
+magkita
+sghabels
+geboren
+den 22aug
+1850
+overledin
+16 februari
+191
+echiceroote
+van
+igbenes
+""" .
+
+t00610:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P68Y5M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-08-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-02-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Magrita Schabels" ;
+    :text "TODO: Magrita Schabels"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00610:P2
+  ] .
+
+t00610:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J.G. Benes" ;
+    :text "TODO: J.G. Benes"
+  ] .
+

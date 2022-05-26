@@ -1,0 +1,58 @@
+@prefix t00103: <https://noordergraf.rug.nl/item/T00103#> .
+
+item:T00103
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1906 ;
+    :geoLong 6.5945
+  ] ;
+  :nd "+53.1906+006.5945"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-21T16:06:42"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00103.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00103:P1, t00103:P2 ;
+  :text """TODO: elizabeth coolman
+★ 13 aug 1874
+✝ 27 aug, 1936
+weduwe van
+a. van dam
+""" .
+
+t00103:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P56Y14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-08-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-08-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Elizabeth Coolman" ;
+    :text "TODO: Elizabeth Coolman"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00103:P2
+  ] .
+
+t00103:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "A. van Dam" ;
+    :text "TODO: A. van Dam"
+  ] .
+

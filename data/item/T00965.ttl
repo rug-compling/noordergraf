@@ -1,0 +1,79 @@
+@prefix t00965: <https://noordergraf.rug.nl/item/T00965#> .
+
+item:T00965
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1626 ;
+    :geoLong 6.6145
+  ] ;
+  :nd "+53.1626+006.6145"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-27T17:03:51"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00965.jpg
+  ] ;
+  :quote t00965:V1 ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00965:P1 ;
+  :text """TODO: aleida hidding
+geb.93_1946
+overl. 29_2_1960
+geliefde dochter van
+j. hidding en
+a. hidding-ballast
+galaten 3:27
+""" .
+
+t00965:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P13Y9M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1946-05-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-02-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aleida Hidding" ;
+    :text "TODO: Aleida Hidding"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00965:P2, t00965:P3
+  ] .
+
+t00965:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J. Hidding" ;
+    :text "TODO: J. Hidding"
+  ] .
+
+t00965:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "A. Hidding-Ballast" ;
+    :text "TODO: A. Hidding-Ballast"
+  ] .
+
+t00965:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Galatians ;
+    :chapter 3 ;
+    :verse "27"
+  ] ;
+  :text "TODO" .
+

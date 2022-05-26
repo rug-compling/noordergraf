@@ -1,0 +1,126 @@
+@prefix t00561: <https://noordergraf.rug.nl/item/T00561#> .
+
+item:T00561
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1044 ;
+    :geoLong 6.8744
+  ] ;
+  :nd "+53.1044+006.8744"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:45:54"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00561.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :quoteSubject t00561:P1 ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Romans ;
+      :chapter 6 ;
+      :verse "23"
+    ] ;
+    :text "rom. 6 : 23."
+  ], [
+    a :Quote ;
+    :quoteSubject t00561:P2 ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 103 ;
+      :verse "15-22"
+    ] ;
+    :text "Ps. 103:15-22."
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00561:P1, t00561:P2, t00561:P3 ;
+  :text """TODO: ter gedachtenis aan
+onze geliefde ouders
+derk stutvoet
+geb. te veendam # jan. 1856
+overl. te schiedam 30 jan. 1933
+eerst weduwnaar van a.loots
+daarna van a. heuving
+rom. 6:23.
+en
+aaltje loots
+geb. te veendam 1 dec. 1858
+overl. te veendam 16 dec. 1916.
+ps. 103:15-22.
+""" .
+
+t00561:C1
+  a :City ;
+  :place place:Veendam2745783 ;
+  :text "TODO: VEENDAM" .
+
+t00561:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-01-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-01-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Derk Stutvoet" ;
+    :text "TODO: Derk Stutvoet"
+  ] ;
+  :placeOfBirth t00561:C1 ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Schiedam2747596 ;
+    :text "TODO: SCHIEDAM"
+  ] ;
+  :relation t00561:R1, [
+    a :Widower ;
+    :after t00561:R1 ;
+    :target t00561:P3
+  ] .
+
+t00561:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P58Y15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-12-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aaltje Loots" ;
+    :text "TODO: Aaltje Loots"
+  ] ;
+  :placeOfBirth t00561:C1 ;
+  :placeOfDeath t00561:C1 .
+
+t00561:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "A. Heuving" ;
+    :text "TODO: A. Heuving"
+  ] .
+
+t00561:R1
+  a :Widower ;
+  :target t00561:P2 .
+

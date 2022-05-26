@@ -1,0 +1,171 @@
+@prefix t00329: <https://noordergraf.rug.nl/item/T00329#> .
+
+item:T00329
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7158 ;
+    :geoLong 6.4739
+  ] ;
+  :nd "+52.7158+006.4739"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:23:42"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00329.jpg
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00329:P1, t00329:P2, t00329:P3, t00329:P4, t00329:P5, t00329:P6, t00329:P7 ;
+  :text """TODO: hier rust
+onze geliefde vrouw en moeder-
+lambertje honing.
+geb. te huizen, 28 dec. 1897,
+overl.te moogeveen, 6 jul 1937.
+.
+en onze lieve
+szorszame vader
+roelof post
+geb.te hoogeveen 2 igt. 1887
+overlte dedemsvaart 2 ogt: 1964
+aaltje deliaantje andre
+roel, inge en roy (kleink.)
+nes
+""" .
+
+t00329:C2
+  a :Town ;
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
+
+t00329:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P39Y6M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-07-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Lambertje Honing" ;
+    :text "TODO: Lambertje Honing"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Huizen2753468 ;
+    :text "TODO: HUIZEN"
+  ] ;
+  :placeOfDeath t00329:C2 ;
+  :relation [
+    a :Wife ;
+    :target t00329:P2
+  ], [
+    a :Mother ;
+    :target t00329:P3
+  ], [
+    a :Mother ;
+    :target t00329:P4
+  ] .
+
+t00329:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1887-10-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-10-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelof Post" ;
+    :text "TODO: Roelof Post"
+  ] ;
+  :placeOfBirth t00329:C2 ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Dedemsvaart2757698 ;
+    :text "TODO: DEDEMSVAART"
+  ] ;
+  :relation [
+    a :Father ;
+    :target t00329:P4
+  ], [
+    a :Father ;
+    :target t00329:P3
+  ] .
+
+t00329:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Aaltje Deliaantje" ;
+    :text "TODO: Aaltje Deliaantje"
+  ] .
+
+t00329:P4
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Andre" ;
+    :text "TODO: Andre"
+  ] .
+
+t00329:P5
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Roel" ;
+    :text "TODO: Roel"
+  ] ;
+  :relation [
+    a :Grandchild ;
+    :target t00329:P1
+  ], [
+    a :Grandchild ;
+    :target t00329:P2
+  ] .
+
+t00329:P6
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Inge" ;
+    :text "TODO: Inge"
+  ] ;
+  :relation [
+    a :Grandchild ;
+    :target t00329:P1
+  ], [
+    a :Grandchild ;
+    :target t00329:P2
+  ] .
+
+t00329:P7
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Roy" ;
+    :text "TODO: Roy"
+  ] ;
+  :relation [
+    a :Grandchild ;
+    :target t00329:P1
+  ], [
+    a :Grandchild ;
+    :target t00329:P2
+  ] .
+

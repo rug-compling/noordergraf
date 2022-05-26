@@ -1,0 +1,65 @@
+@prefix t00044: <https://noordergraf.rug.nl/item/T00044#> .
+
+item:T00044
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1631 ;
+    :geoLong 6.6126
+  ] ;
+  :nd "+53.1631+006.6126"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:48:11"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00044.jpg
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00044:P1, t00044:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: pustplaats
+endrik kwanz
+geb: 3 maart
+overl25 sent toos
+1905
+99&1 lundi 1995
+אחריות אין
+bene
+""" .
+
+t00044:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P108Y5M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-03-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-08-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Kwant" ;
+    :text "TODO: Hendrik Kwant"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00044:P2
+  ] .
+
+t00044:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Pietertje Broekema" ;
+    :text "TODO: Pietertje Broekema"
+  ] .
+

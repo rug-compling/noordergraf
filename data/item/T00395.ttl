@@ -1,0 +1,122 @@
+@prefix t00395: <https://noordergraf.rug.nl/item/T00395#> .
+
+item:T00395
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2517 ;
+    :geoLong 6.1451
+  ] ;
+  :nd "+53.2517+006.1451"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-26T14:55:31"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00395.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 43 ;
+      :verse "3"
+    ] ;
+    :text "psalm 43:3."
+  ], [
+    a :Quote ;
+    :reference [
+      a :HymnReference
+    ] ;
+    :text "gezang 178:7."
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00395:P1, t00395:P2 ;
+  :text """TODO: rustplaats
+ell
+hall
+van onze
+onvergetelike ouders en grootouders
+ludolf feenstra
+oud inspecteur van's ruks belastingem
+ridder in de orde van oranje-nassau
+h31
+geb. il november 1876. te oldeboorn
+overl. 2 june 1947 te amsterdam
+willemke feenstra
+geb. s december 1879 te metslawier
+overl. 23 april 1953 te amsterdam
+kinderen en kleinzoon
+psalm 43: 3.
+gezang 178 : 7.
+""" .
+
+t00395:C2
+  a :City ;
+  :place place:Amsterdam2759794 ;
+  :text "TODO: AMSTERDAM" .
+
+t00395:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y6M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-11-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-06-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Ludolf Feenstra" ;
+    :text "TODO: Ludolf Feenstra"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Aldeboarn2749669 ;
+    :text "TODO: OLDEBOORN"
+  ] ;
+  :placeOfDeath t00395:C2 ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+
+t00395:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y4M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-12-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-04-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Willemke Feenstra" ;
+    :text "TODO: Willemke Feenstra"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Metslawier2750919 ;
+    :text "TODO: METSLAWIER"
+  ] ;
+  :placeOfDeath t00395:C2 ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+

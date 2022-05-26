@@ -1,0 +1,92 @@
+@prefix t00138: <https://noordergraf.rug.nl/item/T00138#> .
+
+item:T00138
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2060 ;
+    :geoLong 6.5702
+  ] ;
+  :nd "+53.2060+006.5702"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-02T10:34:53"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00138.jpg
+  ] ;
+  :quote t00138:V1 ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00138:P1, t00138:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: pustplaats van
+pietje wondaal
+geb.15 oct. 1856
+te kollum
+e
+overl.25 mrt. 1942
+dvep
+.
+te groningen
+gel.echtgenoote van
+jan veldman
+rom.114:0
+ex
+deal
+""" .
+
+t00138:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y5M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-10-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-03-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Pietje Wondaal" ;
+    :text "TODO: Pietje Wondaal"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Kollum2752524 ;
+    :text "TODO: KOLLUM"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00138:P2
+  ] .
+
+t00138:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Jan Veldman" ;
+    :text "TODO: Jan Veldman"
+  ] .
+
+t00138:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Romans ;
+    :chapter 14 ;
+    :verse "8"
+  ] ;
+  :text "TODO" .
+

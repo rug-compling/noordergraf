@@ -1,0 +1,87 @@
+@prefix t00352: <https://noordergraf.rug.nl/item/T00352#> .
+
+item:T00352
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0800 ;
+    :geoLong 6.5730
+  ] ;
+  :nd "+53.0800+006.5730"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-25T17:48:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00352.jpg
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00352:P1, t00352:P2, t00352:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: w
+d
+rustplaats
+hendrik noord.
+gel.de jejjen
+29 juni 1964.
+overlalduar
+29 cel. 1927.
+wedmenaar van
+b. lammers
+en j. homan
+""" .
+
+t00352:C1
+  a :Village ;
+  :place place:Zeyen2743985 ;
+  :text "TODO: ZEIJEN" .
+
+t00352:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y4M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-06-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-10-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Noord" ;
+    :suffix "Jzn" ;
+    :text "TODO: Hendrik Noord Jzn"
+  ] ;
+  :placeOfBirth t00352:C1 ;
+  :placeOfDeath t00352:C1 ;
+  :relation [
+    a :Widower ;
+    :target t00352:P2
+  ], [
+    a :Widower ;
+    :target t00352:P3
+  ] .
+
+t00352:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "B. Lammers" ;
+    :text "TODO: B. Lammers"
+  ] .
+
+t00352:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "J. Homan" ;
+    :text "TODO: J. Homan"
+  ] .
+

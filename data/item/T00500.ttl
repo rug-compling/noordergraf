@@ -1,0 +1,57 @@
+@prefix t00500: <https://noordergraf.rug.nl/item/T00500#> .
+
+item:T00500
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2091 ;
+    :geoLong 5.7906
+  ] ;
+  :nd "+53.2091+005.7906"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-16T13:53:09"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00500.jpg
+  ] ;
+  :site site:NLfr8917avLeeuwarden ;
+  :subject t00500:P1 ;
+  :text """TODO: tuslell,
+van
+radne di
+e, te stiens i ces 1838
+cverlurole il der 1918.
+fhout,
+""" .
+
+t00500:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P30Y11M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-10-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-10-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "IJpe Rauwerda" ;
+    :text "TODO: IJpe Rauwerda"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Stiens2746705 ;
+    :text "TODO: STIENS"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Grou2755052 ;
+    :text "TODO: GROUW"
+  ] .
+

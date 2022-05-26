@@ -1,0 +1,85 @@
+@prefix t00931: <https://noordergraf.rug.nl/item/T00931#> .
+
+item:T00931
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2404 ;
+    :geoLong 6.5476
+  ] ;
+  :nd "+53.2404+006.5476"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-18T09:10:53"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00931.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 89 ;
+      :comment "berijmd" ;
+      :verse "1"
+    ] ;
+    :text "psalm 89:1 ber."@nld
+  ] ;
+  :site site:NLgr9741ghGroningen ;
+  :subject t00931:P1, t00931:P2 ;
+  :text """TODO: ---
+psalm 89:1 ber.
+.....
+nicolaas visser
+★ 25_1_1910 ✝ 2_7_1974
+echtgenoot van
+hinderkien dijkema
+★ 7_9-1913 ✝ 18-7-2005
+""" .
+
+t00931:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y5M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-01-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-07-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Nicolaas Visser" ;
+    :text "TODO: Nicolaas Visser"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00931:P2
+  ] .
+
+t00931:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y10M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-09-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2005-07-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hinderkien Dijkema" ;
+    :text "TODO: Hinderkien Dijkema"
+  ] .
+

@@ -1,0 +1,103 @@
+@prefix t00614: <https://noordergraf.rug.nl/item/T00614#> .
+
+item:T00614
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1644 ;
+    :geoLong 6.7541
+  ] ;
+  :nd "+53.1644+006.7541"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T10:04:55"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00614.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "ONZE BROER WERD ONVERWACHT \\ VAN'T LEVEN TOT \\ DEN DOOD GEBRACHT \\ MOCHTEN W' ALLEN \\ ZIJN BEREID \\ IN'T ROEPINGSUUR \\ VOOR D'EEUWIGHEID"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00614:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:BrokenColumn
+  ] ;
+  :text """TODO: edit:
+alma
+im
+rustplaats van
+abraham
+pannenborg
+gebte kalkwijk
+23 jan. 1873,
+overlte sappemeer
+2 sept. 1903
+zoon van wülen
+r.pannenborg
+en a.voerman
+onze broer
+werd onverwacht
+van't leven tot
+den dood gebracht
+mochten wallen
+zýn bereid
+in't roepingsttur
+voor deeuwigheid
+""" .
+
+t00614:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P30Y7M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-01-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-09-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Abraham Pannenborg" ;
+    :text "TODO: Abraham Pannenborg"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:Kalkwijk2753130 ;
+    :text "TODO: KALKWIJK"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Sappemeer2747758 ;
+    :text "TODO: SAPPEMEER"
+  ] ;
+  :relation [
+    a :Son ;
+    :target t00614:P1, t00614:P2
+  ] .
+
+t00614:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "R. Pannenborg" ;
+    :text "TODO: R. Pannenborg"
+  ] .
+
+t00614:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "A. Voerman" ;
+    :text "TODO: A. Voerman"
+  ] .
+

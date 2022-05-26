@@ -1,0 +1,94 @@
+@prefix t00615: <https://noordergraf.rug.nl/item/T00615#> .
+
+item:T00615
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1644 ;
+    :geoLong 6.7540
+  ] ;
+  :nd "+53.1644+006.7540"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T10:04:33"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00615.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00615:P1, t00615:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+te
+he
+van
+onze geliefde quoers
+harm kraster
+geb.26. april 1845
+overl. 27 febr.1892
+en van
+metdina
+wilhelmina
+van duinen
+ge8.30 aug.1843
+overl.5 sept 1935
+rust in vrede
+""" .
+
+t00615:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P46Y10M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-04-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-02-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Harm Kraster" ;
+    :text "TODO: Harm Kraster"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00615:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P92Y6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-08-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-09-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Metdina Wilhelmina van Duinen" ;
+    :text "TODO: Metdina Wilhelmina van Duinen"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

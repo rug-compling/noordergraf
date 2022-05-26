@@ -1,0 +1,99 @@
+@prefix t00970: <https://noordergraf.rug.nl/item/T00970#> .
+
+item:T00970
+  a :Tomb ;
+  :commemorator t00970:P3, [
+    a :Person ;
+    :quantity [
+      a :Quantity
+    ] ;
+    :relation [
+      a :Child
+    ]
+  ] ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1623 ;
+    :geoLong 6.6135
+  ] ;
+  :nd "+53.1623+006.6135"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-27T16:58:21"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00970.jpg
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00970:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """rustplaats
+van onze geliefde
+man en vader
+HARMANNUS
+C.P. VENEMA
+geb. 19-7-1900
+overl. 11-11-1941
+eerst wedn. van
+L. ELEMA
+
+E. KOLSTEIN
+en kinderen
+""" .
+
+t00970:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P41Y3M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-07-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-11-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Harmannus C.P. Venema" ;
+    :text "HARMANNUS C.P. VENEMA"
+  ] ;
+  :relation t00970:R2, [
+    a :Widower ;
+    :before t00970:R2 ;
+    :target t00970:P2
+  ], [
+    a :Father
+  ] .
+
+t00970:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "L. Elema" ;
+    :text "L. ELEMA"
+  ] .
+
+t00970:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "E. Kolstein" ;
+    :text "E. KOLSTEIN"
+  ] .
+
+t00970:R2
+  a :Husband ;
+  :target t00970:P3 .
+

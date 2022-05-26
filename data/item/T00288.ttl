@@ -1,0 +1,76 @@
+@prefix t00288: <https://noordergraf.rug.nl/item/T00288#> .
+
+item:T00288
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4040 ;
+    :geoLong 6.7489
+  ] ;
+  :nd "+53.4040+006.7489"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-16T16:48:52"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00288.jpg
+  ] ;
+  :site site:NLgr9985scOosternieland ;
+  :subject t00288:P1, t00288:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: ter gedachtenis
+aan
+j.bekema
+gekle therapie
+as -
+molt llamados
+e 1821
+weduwe van
+s. zuidema
+""" .
+
+t00288:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y3M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-10-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-02-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "J. Bekema" ;
+    :text "TODO: J. Bekema"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Westernieland2744707 ;
+    :text "TODO: WESTERNIELAND"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Uithuizermeeden2745968 ;
+    :text "TODO: UITHUIZERMEEDEN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00288:P2
+  ] .
+
+t00288:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "S. Zuidema" ;
+    :text "TODO: S. Zuidema"
+  ] .
+

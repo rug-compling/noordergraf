@@ -1,0 +1,82 @@
+@prefix t00520: <https://noordergraf.rug.nl/item/T00520#> .
+
+item:T00520
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1666 ;
+    :geoLong 6.7535
+  ] ;
+  :nd "+53.1666+006.7535"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T11:04:01"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00520.jpg
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00520:P1, t00520:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: hier rusten
+onze lieve pleeg ouders
+jurrien nagenoun
+x 3 mei 1859:16 sept.1941
+en
+harmanna closse
+iz sept:1860. t 21 april 1955
+""" .
+
+t00520:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y4M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-05-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-09-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jurrien Hagenouw" ;
+    :text "TODO: Jurrien Hagenouw"
+  ] ;
+  :relation [
+    a :FosterParent
+  ] .
+
+t00520:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P95Y6M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-09-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-04-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Harmanna Closse" ;
+    :text "TODO: Harmanna Closse"
+  ] ;
+  :relation [
+    a :FosterParent
+  ] .
+

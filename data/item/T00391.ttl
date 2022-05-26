@@ -1,0 +1,106 @@
+@prefix t00391: <https://noordergraf.rug.nl/item/T00391#> .
+
+item:T00391
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2519 ;
+    :geoLong 6.1453
+  ] ;
+  :nd "+53.2519+006.1453"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-26T15:04:11"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00391.jpg
+  ] ;
+  :quote t00391:V1, t00391:V2 ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00391:P1, t00391:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Flower
+  ] ;
+  :text """TODO: -
+rustplaats
+ven
+onze gelduders
+sophiasdevries
+geb.24 april 1833
+overl. 7 febr. 1931
+en van
+sukea.oukstra
+geb. 3 febr. 1831
+overl.1 dec. 1911.
+luk.2:30_1cor.2:9
+de kinderen
+""" .
+
+t00391:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P97Y9M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-04-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-02-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Sophias de Vries" ;
+    :text "TODO: Sophias de Vries"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00391:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y9M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1831-02-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-12-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Sijke A. Dijkstra" ;
+    :text "TODO: Sijke A. Dijkstra"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00391:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Luke ;
+    :chapter 2 ;
+    :verse "30"
+  ] ;
+  :text "TODO" .
+
+t00391:V2
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:1Corinthians ;
+    :chapter 2 ;
+    :verse "19"
+  ] ;
+  :text "TODO" .
+

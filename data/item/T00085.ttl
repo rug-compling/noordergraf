@@ -1,0 +1,77 @@
+@prefix t00085: <https://noordergraf.rug.nl/item/T00085#> .
+
+item:T00085
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2035 ;
+    :geoLong 6.5731
+  ] ;
+  :nd "+53.2035+006.5731"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T10:57:40"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00085.jpg
+  ] ;
+  :site site:NLgr9721aaGroningen ;
+  :subject t00085:P1, t00085:P2 ;
+  :text """TODO: mier rusten
+onze lieve ouders
+gerhardus hunderman
+13-141899
+en
+trijntje huygens
+t20_2_1902
+beiden overleden
+26951964
+""" .
+
+t00085:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y8M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-01-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-09-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Gerhardus Hunderman" ;
+    :text "TODO: Gerhardus Hunderman"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+
+t00085:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y6M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-02-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1964-09-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trijntje Huygens" ;
+    :text "TODO: Trijntje Huygens"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+

@@ -1,0 +1,67 @@
+@prefix t00532: <https://noordergraf.rug.nl/item/T00532#> .
+
+item:T00532
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1028 ;
+    :geoLong 6.8726
+  ] ;
+  :nd "+53.1028+006.8726"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T14:34:12"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00532.jpg
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00532:P1, t00532:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Rose
+  ] ;
+  :text """TODO: uns
+rustplaats
+van
+anne
+vi nema
+geb. 26 maart 1913
+overl:3 april 1938
+geliefde
+echtgenoote van
+roelf smid
+""" .
+
+t00532:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P25Y8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-03-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-04-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Annie Venema" ;
+    :text "TODO: Annie Venema"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00532:P2
+  ] .
+
+t00532:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Roelf Smid" ;
+    :text "TODO: Roelf Smid"
+  ] .
+

@@ -1,0 +1,115 @@
+@prefix t00341: <https://noordergraf.rug.nl/item/T00341#> .
+
+item:T00341
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7157 ;
+    :geoLong 6.4731
+  ] ;
+  :nd "+52.7157+006.4731"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:07:08"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00341.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 103 ;
+      :verse "8"
+    ] ;
+    :text "ps. 103:8."
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00341:P1, t00341:P2, t00341:P3, t00341:P4 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: hier rust
+evert b000
+ges.212.1881 gt3
+nargaretha boon
+geb.0.71890 ol. 29-4. 1905
+hun bedroefde ouders
+h.a.boon
+h.boou veldman
+ps103-8
+""" .
+
+t00341:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P21Y3M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-12-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-03-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Evert Booij" ;
+    :text "TODO: Evert Booij"
+  ] .
+
+t00341:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P14Y9M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-07-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-04-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Magaretha Booij" ;
+    :text "TODO: Magaretha Booij"
+  ] .
+
+t00341:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "H.A. Booij" ;
+    :text "TODO: H.A. Booij"
+  ] ;
+  :relation [
+    a :Parent ;
+    :target t00341:P1
+  ], [
+    a :Parent ;
+    :target t00341:P2
+  ] .
+
+t00341:P4
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "H.A. Booij-Veldman" ;
+    :text "TODO: H.A. Booij-Veldman"
+  ] ;
+  :relation [
+    a :Parent ;
+    :target t00341:P1
+  ], [
+    a :Parent ;
+    :target t00341:P2
+  ] .
+

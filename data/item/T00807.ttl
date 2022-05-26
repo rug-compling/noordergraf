@@ -1,0 +1,60 @@
+@prefix t00807: <https://noordergraf.rug.nl/item/T00807#> .
+
+item:T00807
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2772 ;
+    :geoLong 6.6943
+  ] ;
+  :nd "+53.2772+006.6943"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-01-18T13:00:49"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00807.jpg
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00807:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Dandelion
+  ] ;
+  :text """TODO: in liefdevolle herinnering aan
+maria huese - van elk
+riet)
+★ 02-12-1942 te katwijk
+✝ 08-06-2001 te hardenberg
+""" .
+
+t00807:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y6M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1942-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1994-06-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Maria Huese-van Elk" ;
+    :text "Maria Huese-van Elk (Riet)"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:KatwijkaandenRijn2753011 ;
+    :text "TODO: KATWIJK"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Hardenberg2754861 ;
+    :text "TODO: HARDENBERG"
+  ] .
+

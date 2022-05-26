@@ -1,0 +1,43 @@
+@prefix t01044: <https://noordergraf.rug.nl/item/T01044#> .
+
+item:T01044
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1756 ;
+    :geoLong 7.0956
+  ] ;
+  :nd "+53.1756+007.0956"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-04T10:59:39"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01044.jpg
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t01044:P1 ;
+  :text """TODO: bilik sewa
+301 24, sms
+""" .
+
+t01044:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y6M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1808-08-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1884-02-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Eilke Sikkes-Folkerts" ;
+    :text "TODO: Eilke Sikkes-Folkerts"
+  ] .
+

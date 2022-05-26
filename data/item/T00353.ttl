@@ -1,0 +1,76 @@
+@prefix t00353: <https://noordergraf.rug.nl/item/T00353#> .
+
+item:T00353
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0800 ;
+    :geoLong 6.5730
+  ] ;
+  :nd "+53.0800+006.5730"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-25T17:47:48"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00353.jpg
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00353:P1, t00353:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: dom
+rustplads
+bodlina lammers
+geile leijen
+21 dec.7865,
+everb. aldaar
+.
+geliefde
+gehtgenoote van
+h.noord.jzn.
+26 dec. 1897
+""" .
+
+t00353:C1
+  a :Village ;
+  :place place:Zeyen2743985 ;
+  :text "TODO: ZEIJEN" .
+
+t00353:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P32Y5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-12-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1897-12-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Boelina Lammers" ;
+    :text "TODO: Boelina Lammers"
+  ] ;
+  :placeOfBirth t00353:C1 ;
+  :placeOfDeath t00353:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00353:P2
+  ] .
+
+t00353:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "H. Noord" ;
+    :suffix "Jzn" ;
+    :text "TODO: H. Noord Jzn"
+  ] .
+

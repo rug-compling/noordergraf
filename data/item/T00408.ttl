@@ -1,0 +1,101 @@
+@prefix t00408: <https://noordergraf.rug.nl/item/T00408#> .
+
+item:T00408
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2519 ;
+    :geoLong 6.1448
+  ] ;
+  :nd "+53.2519+006.1448"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-26T14:43:23"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00408.jpg
+  ] ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00408:P1, t00408:P2 ;
+  :text """TODO: sipla
+Р
+esny
+astpl
+van
+sts
+van
+nts
+.
+beertje a. (johst wouda
+kootstra, geb.js ser:18:10
+geb. 15 apr.1841ľ te stroobor
+te buitenpod, overl. 16 juni
+werl 25 de
+1872
+teji aldaar. ite builomoord
+6
+in leven echtelieden
+""" .
+
+t00408:C1
+  a :Village ;
+  :place place:Buitenpost2758131 ;
+  :text "TODO: BUITENPOST" .
+
+t00408:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y1M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1811-04-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891-05-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Beertje A. Kootstra" ;
+    :text "TODO: Beertje A. Kootstra"
+  ] ;
+  :placeOfBirth t00408:C1 ;
+  :placeOfDeath t00408:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00408:P2
+  ] .
+
+t00408:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y4M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1810-02-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1892-06-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johannes T. Wouda" ;
+    :text "TODO: Johannes T. Wouda"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Stroobos2746589 ;
+    :text "TODO: STROOBOS"
+  ] ;
+  :placeOfDeath t00408:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00408:P1
+  ] .
+

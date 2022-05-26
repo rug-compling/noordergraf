@@ -1,0 +1,85 @@
+@prefix t01091: <https://noordergraf.rug.nl/item/T01091#> .
+
+item:T01091
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1633 ;
+    :geoLong 6.6148
+  ] ;
+  :nd "+53.1633+006.6148"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-09-11T17:52:35"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01091.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "IN JEZUS ONTSLAPEN"@nld
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t01091:P1, t01091:P2 ;
+  :text """TODO: in jezus ontslapen mijn lieve
+vrouw, onze moeder en oma
+jantje stoke=neet
+x 3-2-1905
+1 4 9 1983
+in
+onze lieve vader en opa
+jan stokje
+★ 10-10-1900
+# 13-11-1993
+""" .
+
+t01091:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y7M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-02-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1983-09-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantje Stokje-Neef" ;
+    :text "TODO: Jantje Stokje-Neef"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t01091:P2
+  ], [
+    a :Grandmother, :Mother
+  ] .
+
+t01091:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P93Y1M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-10-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993-11-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Stokje" ;
+    :text "TODO: Jan Stokje"
+  ] ;
+  :relation [
+    a :Father, :Grandfather
+  ] .
+

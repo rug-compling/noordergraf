@@ -1,0 +1,66 @@
+@prefix t00752: <https://noordergraf.rug.nl/item/T00752#> .
+
+item:T00752
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3110 ;
+    :geoLong 6.9975
+  ] ;
+  :nd "+53.3110+006.9975"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-28T12:47:16"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00752.jpg
+  ] ;
+  :site site:NLgr9936btFarmsum ;
+  :subject t00752:P1, t00752:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:SkullAndBones
+  ] ;
+  :text """TODO: neb
+agedichtenis
+prevenkamp
+geboren den 23
+september 1812
+ovirem den 9.
+ami 1880
+bleumattean
+tantantin
+""" .
+
+t00752:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P67Y8M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1812-09-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1880-06-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "E.C. Bekenkamp" ;
+    :text "TODO: E.C. Bekenkamp"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00752:P2
+  ] .
+
+t00752:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "A.R. van Zanten" ;
+    :text "TODO: A.R. van Zanten"
+  ] .
+

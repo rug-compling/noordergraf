@@ -1,0 +1,90 @@
+@prefix t00216: <https://noordergraf.rug.nl/item/T00216#> .
+
+item:T00216
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2225 ;
+    :geoLong 6.6369
+  ] ;
+  :nd "+53.2225+006.6369"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-08T14:45:57"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00216.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00216:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Rose
+  ] ;
+  :text """TODO: geslachtopic
+pladsabeth
+wu ringa ,
+yhteelledelih
+dense mac 1881
+elle stagestode
+denk kari 1903
+dochter van
+jan wisringa
+anna bolt
+rost zacht.
+""" .
+
+t00216:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P21Y2M30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-03-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1902-06-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Eliesabeth Wieringa" ;
+    :text "TODO: Eliesabeth Wieringa"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Noorddijk2749981 ;
+    :text "TODO: NOORDDIJK"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Harkstede2754819 ;
+    :text "TODO: HARKSTEDE"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00216:P2, t00216:P3
+  ] .
+
+t00216:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Jan Wieringa" ;
+    :text "TODO: Jan Wieringa"
+  ] .
+
+t00216:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Anna Bolt" ;
+    :text "TODO: Anna Bolt"
+  ] .
+

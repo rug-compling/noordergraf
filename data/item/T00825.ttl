@@ -1,0 +1,72 @@
+@prefix t00825: <https://noordergraf.rug.nl/item/T00825#> .
+
+item:T00825
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2307 ;
+    :geoLong 6.5516
+  ] ;
+  :nd "+53.2307+006.5516"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-01T12:19:13"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00825.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "VIEL VOOR ZIJN IDEAAL"@nld
+  ] ;
+  :site site:NLgr9741acGroningen ;
+  :subject t00825:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Man
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Torch
+  ] ;
+  :text """TODO: viel
+moon
+daa
+12 doktor
+22an
+1945
+onze lizue zoon en broer
+vindrik lominert
+gea, 25 maart 1923
+geb.
+""" .
+
+t00825:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P21Y9M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-03-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-01-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hindrik Lommert" ;
+    :text "TODO: Hindrik Lommert"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Dokkum2756759 ;
+    :text "TODO: DOKKUM"
+  ] ;
+  :relation [
+    a :Son
+  ], [
+    a :Brother
+  ] .
+

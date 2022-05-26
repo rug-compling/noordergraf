@@ -1,0 +1,109 @@
+@prefix t00974: <https://noordergraf.rug.nl/item/T00974#> .
+
+item:T00974
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1201 ;
+    :geoLong 6.6589
+  ] ;
+  :nd "+53.1201+006.6589"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-25T09:27:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00974.jpg
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00974:P1, t00974:P2, t00974:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+van
+melle ceert
+vroom
+geb.te hoogezand
+13 juni 1829
+overlte scheemda
+23 maart 1913
+eerst weduwnaarvai
+tjetje leenders
+sedert 1892
+weduwnaar van
+annechien
+kncubel
+pro
+henvio
+ta
+ka
+we
+""" .
+
+t00974:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y9M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1829-06-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-03-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Melle Geert Vroom" ;
+    :text "TODO: Melle Geert Vroom"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Scheemda2747661 ;
+    :text "TODO: SCHEEMDA"
+  ] ;
+  :relation t00974:R2, [
+    a :Widower ;
+    :before t00974:R2 ;
+    :target t00974:P2
+  ] .
+
+t00974:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Tietje Leenders" ;
+    :text "TODO: Tietje Leenders"
+  ] .
+
+t00974:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Annechien Kneubel" ;
+    :text "TODO: Annechien Kneubel"
+  ] .
+
+t00974:R2
+  a :Widower ;
+  :begin "1892"^^xsd:gYear ;
+  :target t00974:P3 .
+

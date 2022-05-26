@@ -11,17 +11,17 @@ class: pad
 {{Alles (elke instance van een class) kan een 'comment' hebben:|}}
 {{|Everything (each class instance) can have a 'comment':}}
 
-- **Class** --- **Plot** | **Place** | **Site** | ...[etc](ns#Class)
+- **Class** --- **Item** | **Place** | **Site** | ...[etc](ns#Class)
     - comment → xsd:string | rdf:langString
 
 {{Bij alles wat volgt is 'comment' steeds weggelaten.|}}
 {{|In everything that folows, 'comment' is omitted.}}
 
-## Plot
+## Item
 
-{{Voorbeeld|Example}}: [tomb:T00000](tomb/T00000)
+{{Voorbeeld|Example}}: [item:T00000](item/T00000)
 
-- **Plot** --- **Cross** | **Tomb**
+- **Item** --- **Cross** | **Tomb**
     - commemorator → **[Person](#Person)**
     - creator
         - **Creator**

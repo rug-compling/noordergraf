@@ -1,0 +1,59 @@
+@prefix t00873: <https://noordergraf.rug.nl/item/T00873#> .
+
+item:T00873
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7193 ;
+    :geoLong 6.8454
+  ] ;
+  :nd "+52.7193+006.8454"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:10:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00873.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00873:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+bt
+mont-
+in!
+kamp
+a.postuma
+★ 3.5-ib89
+★ 16_9_1956.
+rust zacht.
+""" .
+
+t00873:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y3M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1889-06-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1966-09-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "A. Postuma" ;
+    :text "TODO: A. Postuma"
+  ] .
+

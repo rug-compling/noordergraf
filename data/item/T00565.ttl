@@ -1,0 +1,74 @@
+@prefix t00565: <https://noordergraf.rug.nl/item/T00565#> .
+
+item:T00565
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1046 ;
+    :geoLong 6.8742
+  ] ;
+  :nd "+53.1046+006.8742"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:41:17"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00565.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00565:P1, t00565:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+egberdina
+timminga
+geboren
+7 oct. 1822,
+overleden
+2 juli 1919.
+sedert 1883
+weduwe van
+p. van dam
+aust zacht
+""" .
+
+t00565:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P96Y8M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1822-10-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-07-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Egberdina Timminga" ;
+    :text "TODO: Egberdina Timminga"
+  ] ;
+  :relation [
+    a :Widow ;
+    :begin "1883"^^xsd:gYear ;
+    :target t00565:P2
+  ] .
+
+t00565:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "P. van Dam" ;
+    :text "TODO: P. van Dam"
+  ] .
+

@@ -1,0 +1,63 @@
+@prefix t00626: <https://noordergraf.rug.nl/item/T00626#> .
+
+item:T00626
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1642 ;
+    :geoLong 6.7543
+  ] ;
+  :nd "+53.1642+006.7543"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T09:59:19"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00626.jpg
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00626:P1, t00626:P2 ;
+  :text """TODO: russes
+vein
+annegien
+minkes
+ger 3 maart 1839
+hert
+dverl. 14 juni 1928
+wedn van
+e. broekema
+riist zacht
+""" .
+
+t00626:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y7M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-11-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1928-06-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Annegien Minkes" ;
+    :text "TODO: Annegien Minkes"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t00626:P2
+  ] .
+
+t00626:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "E. Broekema" ;
+    :text "TODO: E. Broekema"
+  ] .
+

@@ -1,0 +1,42 @@
+@prefix t00169: <https://noordergraf.rug.nl/item/T00169#> .
+
+item:T00169
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1901 ;
+    :geoLong 6.5929
+  ] ;
+  :nd "+53.1901+006.5929"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-05T10:45:50"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00169.jpg
+  ] ;
+  :quote t00169:V1 ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00169:F ;
+  :text """TODO: familie
+poll
+joh.2.2a
+""" .
+
+t00169:F
+  a :Family ;
+  :name [
+    a :Name ;
+    :fullName "POLL" ;
+    :text "TODO"
+  ] .
+
+t00169:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:John ;
+    :chapter 2 ;
+    :verse "2A"
+  ] ;
+  :text "TODO" .
+

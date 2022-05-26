@@ -1,0 +1,98 @@
+@prefix t00840: <https://noordergraf.rug.nl/item/T00840#> .
+
+item:T00840
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2961 ;
+    :geoLong 5.0650
+  ] ;
+  :nd "+53.2961+005.0650"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-20T14:47:29"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00840.jpg
+  ] ;
+  :site site:NLfr8899awOostVlieland ;
+  :subject t00840:P1, t00840:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ] ;
+  :text """TODO: rustaats
+pieter adrianus kroon
+gebtesliedrecht 27sept1830.
+dveretevimlard 30 aue.1897
+en zijn echtgenoote
+antje ree
+gebteter chelling 1 jan. 1840
+overlievueland 13 me:1929
+""" .
+
+t00840:C2
+  a :Island ;
+  :place place:Vlieland2745420 ;
+  :text "TODO: VLIELAND" .
+
+t00840:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y11M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1830-09-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1897-08-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Pieter Adrianus Kroon" ;
+    :text "TODO: Pieter Adrianus Kroon"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Sliedrecht2747169 ;
+    :text "TODO: SLIEDRECHT"
+  ] ;
+  :placeOfDeath t00840:C2 .
+
+t00840:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y4M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1840-01-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-05-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Antje Ree" ;
+    :text "TODO: Antje Ree"
+  ] ;
+  :placeOfBirth [
+    a :Island ;
+    :place place:Terschelling2746414 ;
+    :text "TODO: TERSCHELLING"
+  ] ;
+  :placeOfDeath t00840:C2 ;
+  :relation [
+    a :Spouse ;
+    :target t00840:P1
+  ] .
+

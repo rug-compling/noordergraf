@@ -1,0 +1,118 @@
+@prefix t00485: <https://noordergraf.rug.nl/item/T00485#> .
+
+item:T00485
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2066 ;
+    :geoLong 5.7690
+  ] ;
+  :nd "+53.2066+005.7690"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:35:35"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00485.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "REQUIESCAT IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00485:P1, t00485:P2, t00485:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: rip
+questpla43
+van
+adrianus willem
+nicolaas hofstede
+geb: te leiden
+6 degi882
+overl: te leeuwarden
+25 juni 1906
+en van
+catharina flapper
+eduwe van
+e b hofstede
+ger te creonterp
+24 sept. 1859
+7
+overl te leeuwarden
+2 mel947
+27
+""" .
+
+t00485:C2
+  a :City ;
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
+
+t00485:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P21Y6M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-12-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-06-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Adrianus Willem Nicolaas Hofstede" ;
+    :text "TODO: Adrianus Willem Nicolaas Hofstede"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Leiden2751773 ;
+    :text "TODO: LEIDEN"
+  ] ;
+  :placeOfDeath t00485:C2 .
+
+t00485:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y7M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-09-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1914-05-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Catharina Flapper" ;
+    :text "TODO: Catharina Flapper"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Greonterp2755343 ;
+    :text "TODO: GREONTERP"
+  ] ;
+  :placeOfDeath t00485:C2 ;
+  :relation [
+    a :Widow ;
+    :target t00485:P3
+  ] .
+
+t00485:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "F.B. Hofstede" ;
+    :text "TODO: F.B. Hofstede"
+  ] .
+

@@ -1,0 +1,79 @@
+@prefix t00570: <https://noordergraf.rug.nl/item/T00570#> .
+
+item:T00570
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1047 ;
+    :geoLong 6.8756
+  ] ;
+  :nd "+53.1047+006.8756"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:52:07"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00570.jpg
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00570:P1, t00570:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Scythe
+  ] ;
+  :text """TODO: gbez
+rusplaats van
+bidvanli
+merleden den
+29 augustus 865
+i den oud mom
+exin raim 62 farm
+in teven
+achigenoet van
+alien
+link chee
+""" .
+
+t00570:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y"^^xsd:duration ;
+    :text "ruim 62 jaren"
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1803"^^xsd:gYear ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1865-08-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Arend van Linge" ;
+    :suffix "Ez" ;
+    :text "TODO: Arend van Linge Ez"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00570:P2
+  ] .
+
+t00570:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Afien R. Giezen" ;
+    :text "TODO: Afien R. Giezen"
+  ] .
+

@@ -1,0 +1,68 @@
+@prefix t00194: <https://noordergraf.rug.nl/item/T00194#> .
+
+item:T00194
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1906 ;
+    :geoLong 6.5948
+  ] ;
+  :nd "+53.1906+006.5948"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-06T14:42:16"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00194.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00194:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Plane
+  ] ;
+  :text """TODO: er de
+bezs line vaser
+heuresti
+rastati 37 start 1335
+gagen 7 jubi se
+""" .
+
+t00194:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P37Y4M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-03-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-07-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Heinrich Stoll" ;
+    :text "TODO: Heinrich Stoll"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :partOf [
+      a :Country ;
+      :place place:Duitsland2921044 ;
+      :text "TODO: DUITSLAND"
+    ] ;
+    :place place:Rastatt2850257 ;
+    :text "TODO: RASTATT"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+

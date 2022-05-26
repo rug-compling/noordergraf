@@ -1,0 +1,56 @@
+@prefix t00461: <https://noordergraf.rug.nl/item/T00461#> .
+
+item:T00461
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2067 ;
+    :geoLong 5.7698
+  ] ;
+  :nd "+53.2067+005.7698"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:56:49"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00461.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "PAX IN MEMORIAN"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00461:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: pax
+in memoriam
+geertruida
+maria
+doodkorte
+# 18-11-1895 ✝ 27-2-1986
+★
+""" .
+
+t00461:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y3M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-11-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1986-02-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geertruida Maria Doodkorte" ;
+    :text "TODO: Geertruida Maria Doodkorte"
+  ] .
+

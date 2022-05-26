@@ -1,0 +1,80 @@
+@prefix t00865: <https://noordergraf.rug.nl/item/T00865#> .
+
+item:T00865
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7193 ;
+    :geoLong 6.8451
+  ] ;
+  :nd "+52.7193+006.8451"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:13:23"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00865.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT."@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00865:P1, t00865:P2, t00865:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van onzeljevenangrader
+jakop koens
+geb. 24-5-1878 ovl, 30_1_1926
+k. koens_bezema en kind.
+.
+rust zacht
+.
+al
+""" .
+
+t00865:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P47Y10M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-05-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-03-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jakop Koens" ;
+    :text "TODO: Jakop Koens"
+  ] ;
+  :relation [
+    a :Father ;
+    :target t00865:P3
+  ], [
+    a :Husband ;
+    :target t00865:P2
+  ] .
+
+t00865:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "K. Koens-Bezema" ;
+    :text "TODO: K. Koens-Bezema"
+  ] .
+
+t00865:P3
+  a :Person ;
+  :relation [
+    a :Child ;
+    :target t00865:P2
+  ] .
+

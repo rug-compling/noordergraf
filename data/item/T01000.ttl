@@ -1,0 +1,77 @@
+@prefix t01000: <https://noordergraf.rug.nl/item/T01000#> .
+
+item:T01000
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2443 ;
+    :geoLong 6.6280
+  ] ;
+  :nd "+53.2443+006.6280"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-05T12:11:18"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01000.jpg
+  ] ;
+  :site site:NLgr9734atGroningen ;
+  :subject t01000:P1 ;
+  :text """TODO: pla
+pl
+bus
+van
+2
+irrentje i boer.
+au de 20 oat
+1857. overd to
+fanna
+oudste dechter
+. pan
+ft.
+ti boef
+de vrues
+ut
+langal
+""" .
+
+t01000:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P29Y2M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-10-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1887-01-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trientje H. Boer" ;
+    :text "TODO: Trientje H. Boer"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t01000:P2, t01000:P3
+  ] .
+
+t01000:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "H.H. Boer" ;
+    :text "TODO: H.H. Boer"
+  ] .
+
+t01000:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "A. de Vries" ;
+    :text "TODO: A. de Vries"
+  ] .
+

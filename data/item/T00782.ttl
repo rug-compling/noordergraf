@@ -1,0 +1,95 @@
+@prefix t00782: <https://noordergraf.rug.nl/item/T00782#> .
+
+item:T00782
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7819 ;
+    :geoLong 6.8978
+  ] ;
+  :nd "+52.7819+006.8978"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T12:58:41"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00782.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE VADER"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00782:P1, t00782:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Scythe
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: van
+rustplaats
+hbije
+christiaans
+geh 19 maart 1852
+te maten
+overl26april1930
+te groningen
+echtóenoot
+van
+l.strating.
+rugt zacht
+lieve mader
+""" .
+
+t00782:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y1M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1852-03-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-04-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Heije Christiaans" ;
+    :text "TODO: Heije Christiaans"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:DeMaten2751097 ;
+    :text "TODO: DE MATEN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00782:P2
+  ], [
+    a :Father
+  ] .
+
+t00782:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Lammechien Strating" ;
+    :text "TODO: Lammechien Strating"
+  ] .
+

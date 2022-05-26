@@ -1,0 +1,73 @@
+@prefix t00098: <https://noordergraf.rug.nl/item/T00098#> .
+
+item:T00098
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2062 ;
+    :geoLong 6.5733
+  ] ;
+  :nd "+53.2062+006.5733"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-24T15:11:20"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00098.jpg
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00098:P1, t00098:P2 ;
+  :text """ter gedachtenis
+aan
+B. A. POULIE.
+in leven hijpotheek
+bewaarder te groningen.
+geb. 22 october 1830.
+overl. 22 maart 1889.
+geliefde echtgenoot
+van
+H. H. J. RUIJS.
+""" .
+
+t00098:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y5M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1830-10-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1889-03-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "B.A. Poulie" ;
+    :text "B. A. POULIE"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:33990 ;
+    :location [
+      a :City ;
+      :place place:Groningen2755251 ;
+      :text "groningen"
+    ] ;
+    :text "hijpotheek bewaarder"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00098:P2
+  ] .
+
+t00098:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "H.H.J. Ruijs" ;
+    :text "H. H. J. RUIJS"
+  ] .
+

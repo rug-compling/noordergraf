@@ -1,0 +1,84 @@
+@prefix t00375: <https://noordergraf.rug.nl/item/T00375#> .
+
+item:T00375
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1913 ;
+    :geoLong 6.5942
+  ] ;
+  :nd "+53.1913+006.5942"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-27T10:36:21"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00375.jpg
+  ] ;
+  :quote t00375:V1 ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00375:P1, t00375:P2 ;
+  :text """TODO: hier dust
+tot den dag der opstanding
+onze innig geliefde moeder
+berendina boekelo
+geb.18. jan. 1855 te uith. meeden
+overl, 6 april2939 te groningen
+wed, van h. de graaf
+jesaja bida
+""" .
+
+t00375:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y2M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-01-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-04-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Berendina Boekelo" ;
+    :text "TODO: Berendina Boekelo"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Uithuizermeeden2745968 ;
+    :text "TODO: UITHUIZERMEEDEN"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Widow ;
+    :target t00375:P2
+  ] .
+
+t00375:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "H. de Graaf" ;
+    :text "TODO: H. de Graaf"
+  ] .
+
+t00375:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Isaiah ;
+    :chapter 51 ;
+    :verse "10A"
+  ] ;
+  :text "TODO" .
+

@@ -1,0 +1,73 @@
+@prefix t00885: <https://noordergraf.rug.nl/item/T00885#> .
+
+item:T00885
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7195 ;
+    :geoLong 6.8459
+  ] ;
+  :nd "+52.7195+006.8459"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T14:58:23"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00885.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MOEDER"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00885:P1, t00885:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: fustellats
+yan
+fenntatting
+bir
+501952
+de van
+2 elman
+23
+bust zach
+lieve mesin
+""" .
+
+t00885:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P78Y8M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-05-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-01-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Fenna Witting" ;
+    :text "TODO: Fenna Witting"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Widow ;
+    :target t00885:P2
+  ] .
+
+t00885:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Z. Koelman" ;
+    :text "TODO: Z. Koelman"
+  ] .
+

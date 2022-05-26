@@ -1,0 +1,99 @@
+@prefix t00104: <https://noordergraf.rug.nl/item/T00104#> .
+
+item:T00104
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1908 ;
+    :geoLong 6.5924
+  ] ;
+  :nd "+53.1908+006.5924"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-21T15:58:04"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00104.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00104:P1, t00104:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: jan pomper
+geb.24 dec. 1859 te veendam
+oyerl 15 nov. 1938 te gron,
+geliefde echtg. van
+alberdina veenema
+geb.6 dec. 1867 te veendam
+overl, 29 april 1949 te gron
+rust zacht lieve ouders
+""" .
+
+t00104:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00104:C2
+  a :City ;
+  :place place:Veendam2745783 ;
+  :text "TODO: VEENDAM" .
+
+t00104:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y10M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-12-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-11-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Pomper" ;
+    :text "TODO: Jan Pomper"
+  ] ;
+  :placeOfBirth t00104:C2 ;
+  :placeOfDeath t00104:C1 ;
+  :relation [
+    a :Husband ;
+    :target t00104:P2
+  ] .
+
+t00104:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y4M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1867-12-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-04-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Alberdina Veenema" ;
+    :text "TODO: Alberdina Veenema"
+  ] ;
+  :placeOfBirth t00104:C2 ;
+  :placeOfDeath t00104:C1 .
+

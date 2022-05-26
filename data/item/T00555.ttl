@@ -1,0 +1,97 @@
+@prefix t00555: <https://noordergraf.rug.nl/item/T00555#> .
+
+item:T00555
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1043 ;
+    :geoLong 6.8748
+  ] ;
+  :nd "+53.1043+006.8748"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:57:35"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00555.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT \\ GELIEFDE MAN \\ EN VADER"@nld
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00555:P1, t00555:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:FaithHopeLove
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Drape
+  ] ;
+  :text """TODO: rust plaat
+var
+gbuchenrvo
+in leven landbouwer
+gecat
+fro
+way.
+telen
+1
+geb.te borgerc.me
+21 jan. 1850
+en aldaar overl
+3 jan. 1911
+echtgenoot vani
+marchenaeislim
+rust zacht
+geliefde man
+er vader
+""" .
+
+t00555:C1
+  a :Village ;
+  :place place:Borgercompagnie2758618 ;
+  :text "TODO: BORGERCOMPAGNIE" .
+
+t00555:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y11M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-01-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geuchien R. Vos" ;
+    :text "TODO: Geuchien R. Vos"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:61220
+  ] ;
+  :placeOfBirth t00555:C1 ;
+  :placeOfDeath t00555:C1 ;
+  :relation [
+    a :Husband
+  ], [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00555:P2
+  ] .
+
+t00555:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Marchiena F. Slim" ;
+    :text "TODO: Marchiena F. Slim"
+  ] .
+

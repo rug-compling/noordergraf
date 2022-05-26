@@ -1,0 +1,93 @@
+@prefix t00549: <https://noordergraf.rug.nl/item/T00549#> .
+
+item:T00549
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1046 ;
+    :geoLong 6.8720
+  ] ;
+  :nd "+53.1046+006.8720"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T14:06:12"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00549.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HOE RAS MOEST ZIJ, DIE HIER IN \\ 'T GRAF BEGRAVEN LIGT, HAAR \\ MOEDER VOLGEN, DE ZEIS DES \\ DOODS MAAIT TAL TER NEDER, \\ 'T ZIJ JONG OF OUD, 'T ZIJ ZWAK OF \\ TEEDER; ELK WORDT HET LEVEN \\ EENS ONTZEID, IN'T BLOEIEN VAN \\ DEN LEVENSTIJD! MEN ZIET AAN \\ 'T LOT VAN DEZE HEIDEN HOE \\ HAAST MEN KAN UIT \\ 'T LEVEN SCHEIDEN."@nld
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00549:P1, t00549:P2, t00549:P3 ;
+  :symbol [
+    a :Symbol
+  ] ;
+  :text """TODO: anagedachtenista
+margina ghortruida
+wondeles venema,
+geliefde dochter van
+windelt obbes venema
+en wijlen harmanna
+magaretha abrahams
+venema.geb.mulari
+geboren 5 april 1860
+overleden 6 sept. 1886.
+hoeras
+moest zij die hier in
+tgraf begraven ligt haar
+moedervolgen. dezeisdes
+deodsmaaittalter neder
+thijjong of audit zij waka
+feeder tik wurdt het leven
+fenkontzeid teeien you
+jenleven tijdmenziet aan
+tlot van deze heilen toe
+irast men kunt
+love scene
+""" .
+
+t00549:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P26Y5M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-04-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1886-09-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Margina Geertruida Wijndelts Venema" ;
+    :text "TODO: Margina Geertruida Wijndelts Venema"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00549:P3
+  ], [
+    a :Daughter ;
+    :target t00549:P2
+  ] .
+
+t00549:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Wijndelt Obbes Venema" ;
+    :text "TODO: Wijndelt Obbes Venema"
+  ] .
+
+t00549:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Harmanna Magaretha Abrahams Venema-Mulder" ;
+    :text "TODO: Harmanna Magaretha Abrahams Venema-Mulder"
+  ] .
+

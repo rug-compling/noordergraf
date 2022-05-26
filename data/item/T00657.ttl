@@ -1,0 +1,137 @@
+@prefix t00657: <https://noordergraf.rug.nl/item/T00657#> .
+
+item:T00657
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2107 ;
+    :geoLong 5.7894
+  ] ;
+  :nd "+53.2107+005.7894"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-16T14:01:21"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00657.jpg
+  ] ;
+  :site site:NLfr8917avLeeuwarden ;
+  :subject t00657:P1, t00657:P2, t00657:P3, t00657:P4 ;
+  :text """TODO: ke
+is
+onze geledes
+g loddenga
+· wedan jl jacke
+uveel in den cuderol,
+haars
+johann ludewig jacké
+geb: 10 nov. 1808 einbeck (d)
+overt: 30 mei 1882 leeuwarden
+augusta jacké
+geb: 23 april 1839 leeuwarden
+overl. 6. nov. 1879 leeuwarden
+august jacké
+geb: 23 jan 1859 leeuwarden
+overl: 2 mel 1904 leeuwarden
+""" .
+
+t00657:C3
+  a :City ;
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
+
+t00657:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y"^^xsd:duration
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "G. Looijgenga" ;
+    :text "TODO: G. Looijgenga"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Widow ;
+    :target t00657:P2
+  ] .
+
+t00657:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y6M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1808-11-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-05-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johann Ludewig Jacké" ;
+    :text "TODO: Johann Ludewig Jacké"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :partOf [
+      a :Country ;
+      :place place:Duitsland2921044 ;
+      :text "TODO: DUITSLAND"
+    ] ;
+    :place place:Einbeck2931804 ;
+    :text "TODO: EINBECK"
+  ] ;
+  :placeOfDeath t00657:C3 .
+
+t00657:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P40Y6M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1839-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1879-11-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Augusta Jacké" ;
+    :text "TODO: Augusta Jacké"
+  ] ;
+  :placeOfBirth t00657:C3 ;
+  :placeOfDeath t00657:C3 .
+
+t00657:P4
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P45Y3M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-01-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-05-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "August Jacké" ;
+    :text "TODO: August Jacké"
+  ] ;
+  :placeOfBirth t00657:C3 ;
+  :placeOfDeath t00657:C3 .
+

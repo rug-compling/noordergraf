@@ -1,0 +1,130 @@
+@prefix t00023: <https://noordergraf.rug.nl/item/T00023#> .
+
+item:T00023
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1909 ;
+    :geoLong 6.5943
+  ] ;
+  :nd "+53.1909+006.5943"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T16:26:28"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00023.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00023:P1, t00023:P2, t00023:P3, t00023:P4 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WingedHourglass2
+  ] ;
+  :text """TODO: hf
+lambertus
+m.strengholt
+geb.teveendam25 aug 864
+oyerl tЕgron:6 jan. 1930.
+echtgenoot van
+zwaantje mulder
+geb. 29 nov. 1865
+overl.7 mrt. 1949
+hendrika.n.g kummer
+feb te gron 9 juni 1908
+dverltegron.25 febr.1945
+gel echtgenoote van
+eildert m jstrengholt
+""" .
+
+t00023:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00023:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y3M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-09-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-01-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Lambertus M. Strengholt" ;
+    :text "TODO: Lambertus M. Strengholt"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :placeOfDeath t00023:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00023:P2
+  ] .
+
+t00023:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y3M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1865-11-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-03-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Zwaantje Mulder" ;
+    :text "TODO: Zwaantje Mulder"
+  ] .
+
+t00023:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P36Y8M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-06-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-02-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrika M.G. Kummer" ;
+    :text "TODO: Hendrika M.G. Kummer"
+  ] ;
+  :placeOfBirth t00023:C1 ;
+  :placeOfDeath t00023:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00023:P4
+  ] .
+
+t00023:P4
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Eildert M.J. Strengholt" ;
+    :text "TODO: Eildert M.J. Strengholt"
+  ] .
+

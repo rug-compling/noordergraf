@@ -1,0 +1,65 @@
+@prefix t01038: <https://noordergraf.rug.nl/item/T01038#> .
+
+item:T01038
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2649 ;
+    :geoLong 6.3944
+  ] ;
+  :nd "+53.2649+006.3944"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-19T11:51:26"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01038.jpg
+  ] ;
+  :site site:NLgr9804teNoordhorn ;
+  :subject t01038:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: van
+rustplaats
+grietje
+de boer
+erekrupa
+geb.te hoogkerk
+26_4_1858
+overl.te amsterdam
+30_11_1945
+pan
+""" .
+
+t01038:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y7M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-04-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-11-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Grietje de Boer" ;
+    :text "TODO: Grietje de Boer"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Hoogkerk2753688 ;
+    :text "TODO: HOOGKERK"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Amsterdam2759794 ;
+    :text "TODO: AMSTERDAM"
+  ] .
+

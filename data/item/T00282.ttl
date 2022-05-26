@@ -1,0 +1,82 @@
+@prefix t00282: <https://noordergraf.rug.nl/item/T00282#> .
+
+item:T00282
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4038 ;
+    :geoLong 6.7490
+  ] ;
+  :nd "+53.4038+006.7490"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-16T16:56:37"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00282.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE DOCHTER EN ZUSTER"
+  ] ;
+  :site site:NLgr9985scOosternieland ;
+  :subject t00282:P1, t00282:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:BrokenFlower
+  ] ;
+  :text """TODO: rustplaats van
+jaartje van dam
+usg1 sept.1897
+te uith meeden
+overl zz seru:1933
+te dos ternieland
+elhi gen van
+10.00s ting
+rust zacht lieve.
+cochter en zoster
+""" .
+
+t00282:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P36Y10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-09-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-09-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jaaptje van Dam" ;
+    :text "TODO: Jaaptje van Dam"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Uithuizermeeden2745968 ;
+    :text "TODO: UITHUIZERMEEDEN"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Oosternieland2749429 ;
+    :text "TODO: OOSTERNIELAND"
+  ] ;
+  :relation [
+    a :Daughter
+  ], [
+    a :Sister
+  ] .
+
+t00282:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J.D. Oosting" ;
+    :text "TODO: J.D. Oosting"
+  ] .
+

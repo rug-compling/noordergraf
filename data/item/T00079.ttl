@@ -1,0 +1,96 @@
+@prefix t00079: <https://noordergraf.rug.nl/item/T00079#> .
+
+item:T00079
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2038 ;
+    :geoLong 6.5701
+  ] ;
+  :nd "+53.2038+006.5701"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T11:26:41"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00079.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "HIJ GING ZIJN WEG MET BLIJDSCHAP"
+  ] ;
+  :site site:NLgr9721aaGroningen ;
+  :subject t00079:P1, t00079:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: 23
+ter gedachtenis aan
+mijn lieve man, onze
+zorgzame vader en opa
+frederikus gerhardus
+antonius wortelboer
+(frits)
+9_7_1920 ★ 24_4_1987
+en
+onze geliefde moeder en oma
+leny fellinger
+★ 13_6_1926 ✝ 2_8 2013
+hij ging zijn weg met blijdschap
+""" .
+
+t00079:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y9M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-07-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1987-04-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Frederikus Gerhardus Antonius Wortelboer" ;
+    :text "frederikus gerhardus antonius wortelboer (frits)"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Grandfather
+  ], [
+    a :Husband ;
+    :target t00079:P2
+  ] .
+
+t00079:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y1M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1926-06-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2013-08-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Leny Fellinger" ;
+    :text "leny fellinger"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Grandmother
+  ] .
+

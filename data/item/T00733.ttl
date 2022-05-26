@@ -1,0 +1,90 @@
+@prefix t00733: <https://noordergraf.rug.nl/item/T00733#> .
+
+item:T00733
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7821 ;
+    :geoLong 6.8975
+  ] ;
+  :nd "+52.7821+006.8975"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:07:20"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00733.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 68 ;
+      :verse "2"
+    ] ;
+    :text "ps.68 vers 2"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00733:P1, t00733:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rust
+het stoffelijk
+overschot van
+willemptje
+wiggerink
+weduwe van
+mannus
+schirring
+geb.te westerbork
+10 nov. 1866
+overl. te erica
+16 juni 1944
+ps.68 vers 2
+""" .
+
+t00733:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y7M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-11-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-06-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Willemptje Wiggerink" ;
+    :text "TODO: Willemptje Wiggerink"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Westerbork2744769 ;
+    :text "TODO: WESTERBORK"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Erica2756046 ;
+    :text "TODO: ERICA"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00733:P2
+  ] .
+
+t00733:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Mannus Schering" ;
+    :text "TODO: Mannus Schering"
+  ] .
+

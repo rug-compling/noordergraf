@@ -1,0 +1,91 @@
+@prefix t01063: <https://noordergraf.rug.nl/item/T01063#> .
+
+item:T01063
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1228 ;
+    :geoLong 6.2504
+  ] ;
+  :nd "+53.1228+006.2504"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-05-01T15:23:38"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01063.jpg
+  ] ;
+  :site site:NLgr9367paDeWilp ;
+  :subject t01063:P1, t01063:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ] ;
+  :text """TODO: rustplaats
+van onze lieve ouders,gr,
+en overgr, ouders
+anne pupker
+geb. 24 jan. 1869 overl.io mel 1945,
+en
+trientje jagersma
+geb. 8 sept. 1873 overl 3 jan. 1962.
+""" .
+
+t01063:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P76Y3M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-01-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-05-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Anne Pijpker" ;
+    :text "TODO: Anne Pijpker"
+  ] ;
+  :relation [
+    a :GreatGrandparent
+  ], [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+
+t01063:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y3M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-09-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1962-01-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trientje Jagersma" ;
+    :text "TODO: Trientje Jagersma"
+  ] ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ], [
+    a :GreatGrandparent
+  ] .
+

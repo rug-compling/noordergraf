@@ -1,0 +1,141 @@
+@prefix t00109: <https://noordergraf.rug.nl/item/T00109#> .
+
+item:T00109
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1902 ;
+    :geoLong 6.5933
+  ] ;
+  :nd "+53.1902+006.5933"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-21T15:51:03"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00109.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00109:P1, t00109:P2, t00109:P3, t00109:P4 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: fis
+rustplaats van
+maria suzanna
+lergner
+★ te oostburg 27 dec. 1857
+✝ te groningen 3i mrt. 1931
+wed. van d. de nijs
+en
+willem de nijs
+★ te oostburg 4 aug. 1881
+✝ te groningen 6 sept. 1948
+geliefde echtgenoot van
+hermina weiland
+te terwispel 25 jan. 1878
+✝te groningen 8 jan.1969
+""" .
+
+t00109:C2
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00109:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y3M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-12-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-03-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Maria Suzanna Lergner" ;
+    :text "TODO: Maria Suzanna Lergner"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Oostburg2749541 ;
+    :text "TODO: OOSTBURG"
+  ] ;
+  :placeOfDeath t00109:C2 ;
+  :relation [
+    a :Widow ;
+    :target t00109:P2
+  ] .
+
+t00109:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "D. de Nijs" ;
+    :text "TODO: D. de Nijs"
+  ] .
+
+t00109:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P67Y1M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-08-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1948-09-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Willem de Nijs" ;
+    :text "TODO: Willem de Nijs"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Oostburg2749541 ;
+    :text "TODO: OOSTBURG"
+  ] ;
+  :placeOfDeath t00109:C2 ;
+  :relation [
+    a :Husband ;
+    :target t00109:P4
+  ] .
+
+t00109:P4
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P80Y11M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-01-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-01-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hermina Weiland" ;
+    :text "TODO: Hermina Weiland"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Terwispel2746398 ;
+    :text "TODO: TERWISPEL"
+  ] ;
+  :placeOfDeath t00109:C2 .
+

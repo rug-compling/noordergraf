@@ -1,0 +1,79 @@
+@prefix t00442: <https://noordergraf.rug.nl/item/T00442#> .
+
+item:T00442
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4792 ;
+    :geoLong 6.1604
+  ] ;
+  :nd "+53.4792+006.1604"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-02T11:34:04"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00442.jpg
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00442:P1, t00442:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: 1
+rusiplaass
+j.j. visser,
+geb, te pokkuni
+18 april 2
+opal schiermomeo
+18 juli 1903
+e crap genomt van
+a.e.2u walsa
+""" .
+
+t00442:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y3M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1824-04-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-07-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "J.J. Visser" ;
+    :text "TODO: J.J. Visser"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Dokkum2756759 ;
+    :text "TODO: DOKKUM"
+  ] ;
+  :placeOfDeath [
+    a :Island ;
+    :place place:Schiermonnikoog2747591 ;
+    :text "TODO: SCHIERMONNIKOOG"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00442:P2
+  ] .
+
+t00442:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "A.E. Buwalda" ;
+    :text "TODO: A.E. Buwalda"
+  ] .
+

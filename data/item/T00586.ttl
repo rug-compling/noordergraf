@@ -1,0 +1,65 @@
+@prefix t00586: <https://noordergraf.rug.nl/item/T00586#> .
+
+item:T00586
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3353 ;
+    :geoLong 6.5127
+  ] ;
+  :nd "+53.3353+006.5127"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-30T14:47:24"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00586.jpg
+  ] ;
+  :site site:NLgr9951stWinsum ;
+  :subject t00586:P1, t00586:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van
+jantje ten hoorn
+geb.12 mei 1842
+overl.12 juni 1929
+sedert 1909 wed.van
+j. timmer.
+""" .
+
+t00586:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y8M30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-05-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912-02-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantje ten Hoorn" ;
+    :text "TODO: Jantje ten Hoorn"
+  ] ;
+  :relation [
+    a :Widow ;
+    :begin "1929-06-12"^^xsd:date ;
+    :target t00586:P2
+  ] .
+
+t00586:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J. Timmer" ;
+    :text "TODO: J. Timmer"
+  ] .
+

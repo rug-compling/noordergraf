@@ -1,0 +1,97 @@
+@prefix t00297: <https://noordergraf.rug.nl/item/T00297#> .
+
+item:T00297
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7151 ;
+    :geoLong 6.4739
+  ] ;
+  :nd "+52.7151+006.4739"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:40:06"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00297.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DE LEVENSDRAAD QWORDT SCHIELIJK AFGESNEEN"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 90
+    ] ;
+    :text "Ps. 90."
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00297:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: ps.90
+de levensdraad
+wordt schielijk
+afgesneen
+ter nagedachtenis
+aan ons geliefd
+dochtertje
+hendrikje
+geb.te hoogeveen
+11 febr. 1912
+overl. aldaar
+23 juli 1924
+g.strijker en
+echtgenoote
+""" .
+
+t00297:C1
+  a :Town ;
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
+
+t00297:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P12Y5M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1912-02-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-07-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrikje" ;
+    :text "TODO: Hendrikje"
+  ] ;
+  :placeOfBirth t00297:C1 ;
+  :placeOfDeath t00297:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00297:P2, t00297:P3
+  ] .
+
+t00297:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "G. Strijker" ;
+    :text "TODO: G. Strijker"
+  ] .
+
+t00297:P3
+  a :Female ;
+  :relation [
+    a :Wife ;
+    :target t00297:P2
+  ] .
+

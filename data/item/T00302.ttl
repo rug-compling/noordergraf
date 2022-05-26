@@ -1,0 +1,100 @@
+@prefix t00302: <https://noordergraf.rug.nl/item/T00302#> .
+
+item:T00302
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7159 ;
+    :geoLong 6.4742
+  ] ;
+  :nd "+52.7159+006.4742"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:32:16"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00302.jpg
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00302:P1, t00302:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """hier rusten onze lieve ouders
+en grootouders
+Alb. Oets.
+Geb. te Hoogeveen. 8 Sept. 1858,
+Overl. aldaar, 10 Oct. 1942.
+en
+Aleida
+Roelina Jentina Sterken
+Geb. te Dwingeloo 2 Maart 1858,
+Overl. te Hengelo (O) 31 Dec. 1951.""" .
+
+t00302:C1
+  a :Town ;
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
+
+t00302:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P84Y1M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-09-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-10-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Albert Oets" ;
+    :text "TODO: Albert Oets"
+  ] ;
+  :placeOfBirth t00302:C1 ;
+  :placeOfDeath t00302:C1 .
+
+t00302:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P93Y9M29D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-03-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-12-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aleida Roelina Jentina Sterken" ;
+    :text "TODO: Aleida Roelina Jentina Sterken"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Dwingeloo2756451 ;
+    :text "TODO: DWINGELOO"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :partOf [
+      a :Province ;
+      :place place:ProvincieOverijssel2748838 ;
+      :text "TODO: OVERIJSSEL"
+    ] ;
+    :place place:Hengelo2754394 ;
+    :text "TODO: HENGELO"
+  ] .
+

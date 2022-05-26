@@ -1,0 +1,91 @@
+@prefix t00100: <https://noordergraf.rug.nl/item/T00100#> .
+
+item:T00100
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2062 ;
+    :geoLong 6.5733
+  ] ;
+  :nd "+53.2062+006.5733"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-24T15:10:46"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00100.jpg
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00100:P1, t00100:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: jer mr. johan adriaan
+peith
+rik arganyaris te groningen
+sw nept.1858, overl.28 tn 1913
+henriette pauline
+gockinga
+corte van wolen jhp mrjateiti
+the crr 1656 dyeri 6 mrn 1939
+-
+""" .
+
+t00100:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y4M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-09-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-01-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johan Adriaan Feith" ;
+    :prefix "Jhr mr" ;
+    :text "TODO: Jhr mr Johan Adriaan Feith"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:19130 ;
+    :location [
+      a :City ;
+      :place place:Groningen2755251 ;
+      :text "TODO: GRONINGEN"
+    ] ;
+    :text "RIJKSARCHIVARIS in GRONINGEN"
+  ] .
+
+t00100:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y1M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856-02-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-03-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Henriëtte Pauline Gockinga" ;
+    :prefix "Jnkv" ;
+    :text "TODO: Jnkv Henriëtte Pauline Gockinga"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00100:P1
+  ] .
+

@@ -1,0 +1,78 @@
+@prefix t00878: <https://noordergraf.rug.nl/item/T00878#> .
+
+item:T00878
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7195 ;
+    :geoLong 6.8467
+  ] ;
+  :nd "+52.7195+006.8467"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:05:17"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00878.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00878:P1, t00878:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van mun lieve vrouw
+en onze lieve moeder
+jantina freriks
+geb. 14-6-1909 ovl:17-4-1901
+j. bos en kinderen
+rust zacht
+""" .
+
+t00878:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y10M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1909-06-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-04-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantina Freriks" ;
+    :text "TODO: Jantina Freriks"
+  ] ;
+  :relation [
+    a :Mother ;
+    :target t00878:P3
+  ], [
+    a :Wife ;
+    :target t00878:P2
+  ] .
+
+t00878:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J. Bos" ;
+    :text "TODO: J. Bos"
+  ] .
+
+t00878:P3
+  a :Person ;
+  :relation [
+    a :Child ;
+    :target t00878:P1
+  ] .
+

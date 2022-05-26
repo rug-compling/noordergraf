@@ -1,0 +1,98 @@
+@prefix t00651: <https://noordergraf.rug.nl/item/T00651#> .
+
+item:T00651
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1055 ;
+    :geoLong 6.8768
+  ] ;
+  :nd "+53.1055+006.8768"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:52:56"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00651.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "AL LEEFT de MENSCH \\ DOOR ALLE LEVENSTIJDEN \\ IN VREDE EN RUST, \\ OF ONDER SMART \\ IN STRIJDEN, \\ 'T ZOIJ ZWAK OF STERK \\ TZIJ KORT OF LANG VAN DUUR. \\ IN'T EIND ONTVALT \\ TOCH IEDER 'TLEVENS UUR."@nld
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00651:P1, t00651:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Hourglass
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Scythe
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ouroboros
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: ★
+1
+tergedachtenina
+w.scipper
+geboren den
+albert
+31 januarij 1785.
+murlain den
+1 funij 1870
+uhtgenoote van
+abraham c hazewinkel
+sutteft de minnh
+door alle tevenslijden
+oh medeen rust
+i ender man
+in strijden
+tohoij zwart of sterk
+.
+kad kartoflengrandeur
+itind mtvalt
+took iuortimens un
+,
+""" .
+
+t00651:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y4M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1785-01-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-06-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Albertje H. Schipper" ;
+    :text "TODO: Albertje H. Schipper"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00651:P2
+  ] .
+
+t00651:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Abraham C. Hazewinkel" ;
+    :text "TODO: Abraham C. Hazewinkel"
+  ] .
+

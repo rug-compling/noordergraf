@@ -1,0 +1,94 @@
+@prefix t00654: <https://noordergraf.rug.nl/item/T00654#> .
+
+item:T00654
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1637 ;
+    :geoLong 6.7548
+  ] ;
+  :nd "+53.1637+006.7548"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T10:08:56"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00654.jpg
+  ] ;
+  :quote t00654:V1 ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00654:P1, t00654:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Rose
+  ] ;
+  :text """TODO: hier intet het
+stoffeli koverschot
+e tennize
+geliefde moeder
+uptstje leveringa
+peb 28 jan 1868
+te llornhuizen
+over 17 mei 1931
+te hoogezand
+weduwe van
+andnins blaay
+zalis žom de dooden
+die in de beere
+s
+petih 14:13
+suortell
+""" .
+
+t00654:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P63Y3M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-01-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-05-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Grietje Kleveringa" ;
+    :text "TODO: Grietje Kleveringa"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Hornhuizen2753604 ;
+    :text "TODO: HORNHUIZEN"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00654:P2
+  ] .
+
+t00654:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Andries Blaak" ;
+    :text "TODO: Andries Blaak"
+  ] .
+
+t00654:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Revelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "ZALIG ZIJN DE DOODEN DIE IN DE HEERE STERVEN."@nld .
+

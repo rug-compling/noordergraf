@@ -1,0 +1,61 @@
+@prefix t00055: <https://noordergraf.rug.nl/item/T00055#> .
+
+item:T00055
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1630 ;
+    :geoLong 6.6132
+  ] ;
+  :nd "+53.1630+006.6132"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:41:53"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00055.jpg
+  ] ;
+  :quote t00055:V1 ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00055:P1 ;
+  :text """TODO: ter gedach
+penis
+aan
+Α
+gerardus
+8 dec
+1958
+25 dec.
+30b 1-2-3
+""" .
+
+t00055:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1958-12-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-12-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Gerardus" ;
+    :text "TODO: Gerardus"
+  ] .
+
+t00055:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Job ;
+    :chapter 1 ;
+    :verse "21B"
+  ] ;
+  :text "TODO" .
+

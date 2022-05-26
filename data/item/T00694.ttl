@@ -1,0 +1,86 @@
+@prefix t00694: <https://noordergraf.rug.nl/item/T00694#> .
+
+item:T00694
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0687 ;
+    :geoLong 5.5231
+  ] ;
+  :nd "+53.0687+005.5231"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-14T13:20:21"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00694.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "VITA MUTATUR NON TOLLITUR"@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00694:P1, t00694:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Baker
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Woman
+  ] ;
+  :text """TODO: ter nagedachtenis
+aan onze lieve ouders
+corneel jan daems
+to
+★
+★ 23-12-1910
+sns
+t 29-7-1966
+wilhelmina helena
+daems - visser
+★ 21 - 3 - 1908
+† 23 - 11 - 2004
+ta mutatur non tollitur
+""" .
+
+t00694:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y7M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1966-07-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Corneel Jan Daems" ;
+    :text "TODO: Corneel Jan Daems"
+  ] .
+
+t00694:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P96Y8M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-03-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2004-11-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Wilhelmina Helena Daems-Visser" ;
+    :text "TODO: Wilhelmina Helena Daems-Visser"
+  ] .
+

@@ -1,0 +1,83 @@
+@prefix t00554: <https://noordergraf.rug.nl/item/T00554#> .
+
+item:T00554
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1045 ;
+    :geoLong 6.8751
+  ] ;
+  :nd "+53.1045+006.8751"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:58:06"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00554.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT, \\ GELIEFDE BROEDER."@nld
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00554:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Book
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: rustplaats
+van
+b.j.top
+h
+nivell
+in leven
+onderwijzer alhjer
+geboren
+16 janb.18 49.
+overleden
+27 mei 1909.
+rust zacht
+geliefde broeder.
+""" .
+
+t00554:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P60Y4M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1849-01-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1909-05-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "H.J. Top" ;
+    :text "TODO: H.J. Top"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:13320 ;
+    :location [
+      a :City ;
+      :place place:Veendam2745783 ;
+      :text "TODO: VEENDAM"
+    ]
+  ] ;
+  :relation [
+    a :Brother
+  ] .
+

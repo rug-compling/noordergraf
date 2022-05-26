@@ -1,0 +1,90 @@
+@prefix t00335: <https://noordergraf.rug.nl/item/T00335#> .
+
+item:T00335
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7153 ;
+    :geoLong 6.4732
+  ] ;
+  :nd "+52.7153+006.4732"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:12:44"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00335.jpg
+  ] ;
+  :quote t00335:V1 ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00335:P1, t00335:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rust
+clerud compagnir
+cep te zudwolde
+22 sept. 1881
+ovl te hoogeveen
+18 sept. 1915
+echtgenoqte van
+hendrik
+steenbergen kz
+2 gor.5 vs1
+verse
+""" .
+
+t00335:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P33Y11M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-09-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1915-09-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geertje Compagner" ;
+    :text "TODO: Geertje Compagner"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zuidwolde2743637 ;
+    :text "TODO: ZUIDWOLDE"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Hoogeveen2753719 ;
+    :text "TODO: HOOGEVEEN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00335:P2
+  ] .
+
+t00335:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Steenbergen" ;
+    :suffix "Kz" ;
+    :text "TODO: Hendrik Steenbergen Kz"
+  ] .
+
+t00335:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:2Corinthians ;
+    :chapter 5 ;
+    :verse "1"
+  ] ;
+  :text "TODO" .
+

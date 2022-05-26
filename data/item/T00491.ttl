@@ -1,0 +1,89 @@
+@prefix t00491: <https://noordergraf.rug.nl/item/T00491#> .
+
+item:T00491
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2097 ;
+    :geoLong 5.7907
+  ] ;
+  :nd "+53.2097+005.7907"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-16T13:58:21"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00491.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLfr8917avLeeuwarden ;
+  :subject t00491:P1, t00491:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: >
+rustplaats
+van onzen
+liliefben maken vader
+louwezonwema
+gep. te makkum
+14
+27 oct. 1878
+overl te scravenmade.
+5 april 1919
+wedjbonnema de jong
+en kinderen
+""" .
+
+t00491:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P40Y5M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-10-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-04-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Douwe Bonnema" ;
+    :text "TODO: Douwe Bonnema"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Makkum2751254 ;
+    :text "TODO: MAKKUM"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:DenHaag2747373 ;
+    :text "TODO: DEN HAAG"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00491:P2
+  ], [
+    a :Father
+  ] .
+
+t00491:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "J. Bonnema de Jong" ;
+    :text "TODO: J. Bonnema de Jong"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00491:P1
+  ] .
+

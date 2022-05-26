@@ -1,0 +1,64 @@
+@prefix t00701: <https://noordergraf.rug.nl/item/T00701#> .
+
+item:T00701
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7813 ;
+    :geoLong 6.9011
+  ] ;
+  :nd "+52.7813+006.9011"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:51:57"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00701.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00701:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats van
+hindrik
+schutrups
+geb./2 febr.1870
+te noordbarge
+overl.22 nov.1953
+aldaar
+rust zacht
+""" .
+
+t00701:C1
+  a :Village ;
+  :place place:Noordbarge2749996 ;
+  :text "TODO: NOORDBARGE" .
+
+t00701:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y9M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-02-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-11-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hindrik Schutrups" ;
+    :text "TODO: Hindrik Schutrups"
+  ] ;
+  :placeOfBirth t00701:C1 ;
+  :placeOfDeath t00701:C1 .
+

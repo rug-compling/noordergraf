@@ -1,0 +1,88 @@
+
+:ItemShape a sh:NodeShape ;
+  sh:targetClass :Item ;
+  sh:class :Item ;
+  sh:closed true ;
+  sh:nodeKind sh:IRI ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1; 
+  ] ;
+  sh:property [
+    sh:path :geo ;
+    sh:class :GeoPoint ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :nd ;
+    sh:maxCount 1 ;
+    sh:datatype ll: ;
+    sh:pattern "^[-+][0-9]{2}\\.[0-9]{4}[-+][0-9]{3}\\.[0-9]{4}$"
+  ] ;
+  sh:property [
+    sh:path :text ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path :comment ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:datatype rdf:langString ]
+    )
+  ] ;
+  sh:property [
+    sh:path :commemorator ;
+    sh:class :Person
+  ] ;
+  sh:property [
+    sh:path :creator ;
+    sh:class :Creator ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :figure ;
+    sh:class :Figure
+  ] ;
+  sh:property [
+    sh:path :photo ;
+    sh:class :Photo ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path :site ;
+    sh:class :Site ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path :subject ;
+    sh:class :Person ;
+    sh:nodeKind sh:IRI
+  ] ;
+  sh:property [
+    sh:path :quote ;
+    sh:class :Quote
+  ] ;
+  sh:property [
+    sh:path :symbol ;
+    sh:class :Symbol
+  ] ;
+  sh:property [
+    sh:path :date ;
+    sh:maxCount 1 ;
+    sh:or (
+      [ sh:datatype xsd:date ]
+      [ sh:datatype xsd:gYearMonth ]
+      [ sh:datatype xsd:gYear ]
+    )
+  ] ;
+  sh:property [
+    sh:path :dcModified ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:dateTime
+  ] .

@@ -1,0 +1,99 @@
+@prefix t00978: <https://noordergraf.rug.nl/item/T00978#> .
+
+item:T00978
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1202 ;
+    :geoLong 6.6588
+  ] ;
+  :nd "+53.1202+006.6588"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-25T09:26:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00978.jpg
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00978:P1, t00978:P2 ;
+  :symbol [
+    a :Symbol
+  ], [
+    a :Symbol ;
+    :symbolType symbol:TwoRings
+  ] ;
+  :text """in memoriam
+LUCAS MULDER
+★ glimmen 1822
+✝ glimmen 1911
+[[dubbelring]]
+JANTIEN
+van DALEN
+★ yde 1837
+✝ glimmen 1912
+
+ouders
+van 9 kinderen
+""" .
+
+t00978:C1
+  a :Village ;
+  :place place:Glimmen2755495 ;
+  :text "TODO: GLIMMEN" .
+
+t00978:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1822"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Lucas Mulder" ;
+    :text "TODO: Lucas Mulder"
+  ] ;
+  :placeOfBirth t00978:C1 ;
+  :placeOfDeath t00978:C1 ;
+  :relation t00978:R1 .
+
+t00978:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1912"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantien van Dalen" ;
+    :text "TODO: Jantien van Dalen"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Yde2744130 ;
+    :text "TODO: YDE"
+  ] ;
+  :placeOfDeath t00978:C1 ;
+  :relation t00978:R1 .
+
+t00978:R1
+  a :Parent ;
+  :text "ouders van 9 kinderen" .
+

@@ -1,0 +1,113 @@
+@prefix t00502: <https://noordergraf.rug.nl/item/T00502#> .
+
+item:T00502
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2094 ;
+    :geoLong 5.7905
+  ] ;
+  :nd "+53.2094+005.7905"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-16T13:55:16"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00502.jpg
+  ] ;
+  :site site:NLfr8917avLeeuwarden ;
+  :subject t00502:P1, t00502:P2, t00502:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: rustraat
+onzergeliefde
+echtgenoot en vader
+bartele.
+kant
+overl. te lee den
+12 nov. 1908
+in den cuccordon on tum
+rama:
+welderant dekstra
+en van ons gelges sochterte
+了
+upkjes
+sukjedevries
+gebe a je 1983
+werd sir..913
+""" .
+
+t00502:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P33Y"^^xsd:duration ;
+    :text "ruim 33 jaar"
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875"^^xsd:gYear ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-11-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Bartele de Kant" ;
+    :text "TODO: Bartele de Kant"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Leeuwarden2751792 ;
+    :text "TODO: LEEUWARDEN"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00502:P2
+  ], [
+    a :Father
+  ] .
+
+t00502:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "B. de Kant Dijkstra" ;
+    :text "TODO: B. de Kant Dijkstra"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00502:P1
+  ] .
+
+t00502:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P5Y3M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-07-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-11-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "IJpke Sjoukje de Vries" ;
+    :text "TODO: IJpke Sjoukje de Vries"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00502:P2
+  ] .
+

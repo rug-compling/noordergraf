@@ -1,0 +1,60 @@
+@prefix t00171: <https://noordergraf.rug.nl/item/T00171#> .
+
+item:T00171
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1904 ;
+    :geoLong 6.5934
+  ] ;
+  :nd "+53.1904+006.5934"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-05T10:43:34"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00171.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00171:P1 ;
+  :text """TODO: ernst
+hendrik
+sprencer
+in leven
+sttenfabrikant
+10
+gs
+29 april 1876
+dane 1926
+""" .
+
+t00171:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P53Y2M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-05-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-08-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Ernst Hendrik Sprenger" ;
+    :text "TODO: Ernst Hendrik Sprenger"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:89242 ;
+    :location [
+      a :City ;
+      :place place:Groningen2755251 ;
+      :text "TODO: GRONINGEN"
+    ] ;
+    :text "steenfabrikant"
+  ] .
+

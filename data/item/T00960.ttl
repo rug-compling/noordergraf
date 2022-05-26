@@ -1,0 +1,78 @@
+@prefix t00960: <https://noordergraf.rug.nl/item/T00960#> .
+
+item:T00960
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1199 ;
+    :geoLong 6.6593
+  ] ;
+  :nd "+53.1199+006.6593"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-25T09:37:13"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00960.jpg
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00960:P1, t00960:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: pusland
+auto
+derk eisses
+gebb haren
+10 funi 1882
+coerlite nelaren
+29slug 1950
+achtgenoot van
+roelfien tinge
+ex
+igde
+""" .
+
+t00960:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y2M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1882-06-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-08-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Derk Eisses" ;
+    :text "TODO: Derk Eisses"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Noordlaren2749857 ;
+    :text "TODO: NOORDLAREN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00960:P2
+  ] .
+
+t00960:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Roelfien Tinge" ;
+    :text "TODO: Roelfien Tinge"
+  ] .
+

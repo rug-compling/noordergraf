@@ -1,0 +1,101 @@
+@prefix t00886: <https://noordergraf.rug.nl/item/T00886#> .
+
+item:T00886
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7197 ;
+    :geoLong 6.8464
+  ] ;
+  :nd "+52.7197+006.8464"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:01:25"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00886.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00886:P1, t00886:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: fire
+hier-rust
+onze geliefde vrouw moeder
+en grootmoeder
+geertje de haan-geb smming
+geb 16. febr 1661. overl.ie jan 1957
+en onze geliefde vacer behuwdk
+groot en overgrootvader
+-.
+roelof de haan
+geb. 8 aug. 1883 overl. i aug. 1958
+.
+fest zacht neve ouders
+""" .
+
+t00886:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y11M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1881-02-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-01-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geertje de Haan-Emming" ;
+    :text "TODO: Geertje de Haan-Emming"
+  ] ;
+  :relation [
+    a :Grandmother
+  ], [
+    a :Wife ;
+    :target t00886:P2
+  ], [
+    a :Mother
+  ] .
+
+t00886:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y11M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-08-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-08-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelof de Haan" ;
+    :text "TODO: Roelof de Haan"
+  ] ;
+  :relation [
+    a :Grandfather
+  ], [
+    a :GreatGrandfather
+  ], [
+    a :Father
+  ] .
+

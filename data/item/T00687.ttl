@@ -1,0 +1,78 @@
+@prefix t00687: <https://noordergraf.rug.nl/item/T00687#> .
+
+item:T00687
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0673 ;
+    :geoLong 5.5239
+  ] ;
+  :nd "+53.0673+005.5239"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-14T13:16:34"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00687.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DAT IK ER ZIJN MOCHT \\ STA TE BOEK ALS WONDER"@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00687:P1, t00687:P2 ;
+  :text """TODO: dat ik er zun mocht
+sta te boek als wonder
+willem bosman
+★ 7_3_1907 11.7_1980
+e heri
+\" eiz
+★ 7.3.1907
+izem
+en
+nb. 21:4
+jetsche vrieswijk
+★ il-7_1917 f 15_2_2006
+""" .
+
+t00687:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y3M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-03-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1980-07-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Willem Bosman" ;
+    :text "TODO: Willem Bosman"
+  ] .
+
+t00687:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P88Y7M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-07-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2006-02-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jetsche Vrieswijk" ;
+    :text "TODO: Jetsche Vrieswijk"
+  ] .
+

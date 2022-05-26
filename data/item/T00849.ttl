@@ -1,0 +1,109 @@
+@prefix t00849: <https://noordergraf.rug.nl/item/T00849#> .
+
+item:T00849
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2959 ;
+    :geoLong 5.0650
+  ] ;
+  :nd "+53.2959+005.0650"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-20T14:39:27"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00849.jpg
+  ] ;
+  :site site:NLfr8899awOostVlieland ;
+  :subject t00849:P1, t00849:P2, t00849:P3 ;
+  :text """TODO: her eggen begras
+2e are gebroeders
+ollegenoemd focke
+skaper de eerſlic
+geb-om 14 aug
+j738 over den
+17 16:1740
+den fweede geb
+@enr7apn3743
+owroon 5 meu
+1744 den derde
+geb.den 5 feb.
+j745 over den
+25 nov. j746
+""" .
+
+t00849:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1Y6M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1738-08-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1740-02-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Focke Stapert" ;
+    :text "TODO: Focke Stapert"
+  ] ;
+  :relation [
+    a :Brother ;
+    :target t00849:P2
+  ] .
+
+t00849:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1Y18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1743-04-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1744-05-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Focke Stapert" ;
+    :text "TODO: Focke Stapert"
+  ] ;
+  :relation [
+    a :Brother ;
+    :target t00849:P3
+  ] .
+
+t00849:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P1Y9M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1745-02-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1746-11-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Focke Stapert" ;
+    :text "TODO: Focke Stapert"
+  ] ;
+  :relation [
+    a :Brother ;
+    :target t00849:P1
+  ] .
+

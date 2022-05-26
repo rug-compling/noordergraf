@@ -1,0 +1,119 @@
+@prefix t00342: <https://noordergraf.rug.nl/item/T00342#> .
+
+item:T00342
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7158 ;
+    :geoLong 6.4731
+  ] ;
+  :nd "+52.7158+006.4731"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:06:37"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00342.jpg
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00342:P1, t00342:P2, t00342:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: man
+hier rust
+tot den dag der
+opstanding, het
+stoffelijk overschot
+van
+roelofje
+brunsting.
+gee. te hoogeveen
+22 april 1845.
+overl-te dalen
+19 febr-1929
+weduwe van
+egbert vos
+en haar dochter
+w.a.vos
+geb. te weesp
+6 met 1885
+overltehoogeveen
+5 april 1963
+""" .
+
+t00342:C1
+  a :Town ;
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
+
+t00342:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y9M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-04-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-02-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelofje Brunsting" ;
+    :text "TODO: Roelofje Brunsting"
+  ] ;
+  :placeOfBirth t00342:C1 ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Dalen2757857 ;
+    :text "TODO: DALEN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00342:P2
+  ] .
+
+t00342:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Egbert Vos" ;
+    :text "TODO: Egbert Vos"
+  ] .
+
+t00342:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y10M30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-05-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-04-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "W.A. Vos" ;
+    :text "TODO: W.A. Vos"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Weesp2744904 ;
+    :text "TODO: WEESP"
+  ] ;
+  :placeOfDeath t00342:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00342:P1
+  ] .
+

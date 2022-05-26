@@ -1,0 +1,141 @@
+@prefix t00147: <https://noordergraf.rug.nl/item/T00147#> .
+
+item:T00147
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2059 ;
+    :geoLong 6.5700
+  ] ;
+  :nd "+53.2059+006.5700"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-02T10:27:09"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00147.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00147:P1, t00147:P2, t00147:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: fe
+mustplaats van
+roeleje meertens
+geb.te anl00
+15 mei 1921
+overl. te gror.
+s jan. 194
+ekonzelieveman envader
+hendrik meertens
+geb.te wiedervank
+30.jan.
+1897
+ovenste gron.
+13 april 1952
+echtgen, vann steenhuis
+er onze lieve moeder
+nella steenhuis
+geb tÉ wildervank
+juli 1996
+overlte gron.
+25 mei 1992
+""" .
+
+t00147:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00147:C3
+  a :Village ;
+  :place place:Wildervank2744431 ;
+  :text "TODO: WILDERVANK" .
+
+t00147:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P19Y8M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1921-05-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-01-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelfje Meertens" ;
+    :text "TODO: Roelfje Meertens"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Anloo2759746 ;
+    :text "TODO: ANLOO"
+  ] ;
+  :placeOfDeath t00147:C1 .
+
+t00147:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y2M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-01-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-04-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Meertens" ;
+    :text "TODO: Hendrik Meertens"
+  ] ;
+  :placeOfBirth t00147:C3 ;
+  :placeOfDeath t00147:C1 ;
+  :relation [
+    a :Father
+  ], [
+    a :Husband ;
+    :target t00147:P3
+  ] .
+
+t00147:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P95Y10M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1896-07-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1992-05-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Nella Steenhuis" ;
+    :text "TODO: Nella Steenhuis"
+  ] ;
+  :placeOfBirth t00147:C3 ;
+  :placeOfDeath t00147:C1 ;
+  :relation [
+    a :Mother
+  ] .
+

@@ -1,0 +1,72 @@
+@prefix t00984: <https://noordergraf.rug.nl/item/T00984#> .
+
+item:T00984
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1349 ;
+    :geoLong 6.5765
+  ] ;
+  :nd "+53.1349+006.5765"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-31T12:31:24"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00984.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "EN NU BLIJVEN GELOOF, HOOP EN LIEFDE, DEZE DRIE, DOCH DE MEESTE VAN DEZE IS DE LIEFDE, DIE IN DE LIEFDE BLIJFT BLIJFT IN GOD EN GOD IN HEM. GOD IS LIEFDE"@nld
+  ] ;
+  :subject t00984:P1, t00984:P2 ;
+  :text """TODO: v.
+hier
+rust
+johannes siegfried kraus
+gze februari 1860_pverla mÉm1937
+&ehund i november 1896 met
+wilfelmina bere una sroeneveld.
+en nu bluven. geloof
+|
+roop emdesde deze drie
+och de meeste van deze ts
+de liefde
+die in de liefde buuri
+sert god gornhem
+lierde
+""" .
+
+t00984:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y2M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-02-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-05-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johannes Siegfried Kraus" ;
+    :text "TODO: Johannes Siegfried Kraus"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :begin "1896-11-04"^^xsd:date ;
+    :target t00984:P2
+  ] .
+
+t00984:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Wilhelmina Berendina Groeneveld" ;
+    :text "TODO: Wilhelmina Berendina Groeneveld"
+  ] .
+

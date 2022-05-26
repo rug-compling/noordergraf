@@ -1,0 +1,78 @@
+@prefix t00354: <https://noordergraf.rug.nl/item/T00354#> .
+
+item:T00354
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0802 ;
+    :geoLong 6.5727
+  ] ;
+  :nd "+53.0802+006.5727"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-25T17:45:55"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00354.jpg
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00354:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WingedHourglass1
+  ] ;
+  :text """TODO: rustplaat
+dood
+no tin
+klaas boetting
+9de3 sept. 1875
+te gees gem
+certechetreler
+werd 11 fan.1906
+te de punt
+k
+inc
+em. dries
+.
+""" .
+
+t00354:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P30Y4M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1875-09-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1906-01-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Klaas Boetting" ;
+    :text "TODO: Klaas Boetting"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :partOf [
+      a :Municipality ;
+      :place place:Oosterhesselen2749461 ;
+      :text "Oosterhesselen"
+    ] ;
+    :place place:Gees2755664 ;
+    :text "Gees"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :partOf [
+      a :Municipality ;
+      :place place:Vries2745189 ;
+      :text "Vries"
+    ] ;
+    :place place:DePunt2757124 ;
+    :text "de Punt"
+  ] .
+

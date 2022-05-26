@@ -1,0 +1,102 @@
+@prefix t00058: <https://noordergraf.rug.nl/item/T00058#> .
+
+item:T00058
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1633 ;
+    :geoLong 6.6133
+  ] ;
+  :nd "+53.1633+006.6133"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:40:03"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00058.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 23
+    ] ;
+    :text "Ps. 23"
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00058:P1, t00058:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Wheat
+  ] ;
+  :text """TODO: hier rust
+mijn lieve man
+onze vader en opa
+douwe nauta
+★ 29_9_1923 ★ 10 l1996
+en
+onze moeder. oma en over - oma
+tjaaktje nauta - wilpstra
+★ 21_3_1926 1 2_9_2012
+표
+ps. 23
+2
+""" .
+
+t00058:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y3M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-09-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1996-01-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Douwe Nauta" ;
+    :text "TODO: Douwe Nauta"
+  ] ;
+  :relation [
+    a :Grandfather
+  ], [
+    a :Husband ;
+    :target t00058:P2
+  ], [
+    a :Father
+  ] .
+
+t00058:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y5M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1926-03-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-09-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Tjaaktje Nauta-Wilpstra" ;
+    :text "TODO: Tjaaktje Nauta-Wilpstra"
+  ] ;
+  :relation [
+    a :Grandmother
+  ], [
+    a :GreatGrandmother
+  ], [
+    a :Mother
+  ] .
+

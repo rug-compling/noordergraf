@@ -1,0 +1,99 @@
+@prefix t00490: <https://noordergraf.rug.nl/item/T00490#> .
+
+item:T00490
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2100 ;
+    :geoLong 5.7909
+  ] ;
+  :nd "+53.2100+005.7909"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-16T14:00:57"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00490.jpg
+  ] ;
+  :site site:NLfr8917avLeeuwarden ;
+  :subject t00490:P1, t00490:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: rustplaats
+van onze
+geliefde ouders
+wk
+doune harder aukje jasper
+geboren te geboren te
+noordwoldeleeuwarden
+15 oct 1843 4 jan. 1844
+overleden te overleden
+leeuwarden aldaar
+5 juni 1913. 8 mei 1926
+""" .
+
+t00490:C2
+  a :City ;
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
+
+t00490:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y7M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1843-10-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-06-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Douwe Harder" ;
+    :text "TODO: Douwe Harder"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Noordwolde2749807 ;
+    :text "TODO: NOORDWOLDE"
+  ] ;
+  :placeOfDeath t00490:C2 ;
+  :relation [
+    a :Parent
+  ] .
+
+t00490:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y4M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-01-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-05-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aukje Jasper" ;
+    :text "TODO: Aukje Jasper"
+  ] ;
+  :placeOfBirth t00490:C2 ;
+  :placeOfDeath t00490:C2 ;
+  :relation [
+    a :Parent
+  ] .
+

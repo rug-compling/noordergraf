@@ -1,0 +1,93 @@
+@prefix t00314: <https://noordergraf.rug.nl/item/T00314#> .
+
+item:T00314
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7156 ;
+    :geoLong 6.4733
+  ] ;
+  :nd "+52.7156+006.4733"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:14:56"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00314.jpg
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00314:P1, t00314:P2, t00314:P3 ;
+  :text """TODO: h. smeman. arts
+1856 - 1918
+e smeman_eenkema
+1860 - 1949
+h. c. h. smeman
+1895 1895
+""" .
+
+t00314:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "H. Smeman" ;
+    :text "TODO: H. Smeman"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:06105
+  ] .
+
+t00314:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1856"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "E. Smeman-Eenkema" ;
+    :text "TODO: E. Smeman-Eenkema"
+  ] .
+
+t00314:P3
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P0Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895"^^xsd:gYear
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1895"^^xsd:gYear
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "H.C.H. Smeman" ;
+    :text "TODO: H.C.H. Smeman"
+  ] .
+

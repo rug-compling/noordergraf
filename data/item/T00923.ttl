@@ -1,0 +1,94 @@
+@prefix t00923: <https://noordergraf.rug.nl/item/T00923#> .
+
+item:T00923
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1719 ;
+    :geoLong 6.3656
+  ] ;
+  :nd "+53.1719+006.3656"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:10:19"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00923.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUSTPLAATS VAN"@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00923:P1, t00923:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: fisir
+ratpecsam
+tonnis misterhite
+geh te setbeat
+18
+sede 1836
+en daarmedenleh
+23 jecember 1950
+echtgenodt veen
+aaltien hulshof.
+la /
+aerthlida mesi
+461
+★ ★
+r!
+5ikat ja
+tms
+deut
+ba
+bu 2456
+talie
+jthit!
+zul
+""" .
+
+t00923:C1
+  a :Village ;
+  :place place:Tolbert2746234 ;
+  :text "TODO: TOLBERT" .
+
+t00923:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y4M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1836-07-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1910-11-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Tonnis Oosterhuis" ;
+    :text "TODO: Tonnis Oosterhuis"
+  ] ;
+  :placeOfBirth t00923:C1 ;
+  :placeOfDeath t00923:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00923:P2
+  ] .
+
+t00923:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Aaltien Hulshof" ;
+    :text "TODO: Aaltien Hulshof"
+  ] .
+

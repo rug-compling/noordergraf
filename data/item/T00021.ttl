@@ -1,0 +1,76 @@
+@prefix t00021: <https://noordergraf.rug.nl/item/T00021#> .
+
+item:T00021
+  a :Tomb ;
+  :commemorator t00021:G1 ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1909 ;
+    :geoLong 6.5941
+  ] ;
+  :nd "+53.1909+006.5941"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T16:27:58"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00021.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00021:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:BrokenBranch
+  ] ;
+  :text """TODO: like
+r
+ter gedachtenis
+aan onzen vriend
+g.postma
+in leven
+machinist bij de ns
+het gezamenlijk personeel
+van onnen en haren.
+""" .
+
+t00021:G1
+  a :Personnel ;
+  :occupation [
+    a :Occupation ;
+    :organisation t00021:O
+  ] .
+
+t00021:O
+  a :Company ;
+  :location [
+    a :Village ;
+    :place place:Onnen2749588 ;
+    :text "TODO: ONNEN"
+  ], [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] ;
+  :organisationName "Nederlandse Spoorwegen" .
+
+t00021:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y3M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "G. Postma" ;
+    :text "TODO: G. Postma"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:98320 ;
+    :organisation t00021:O
+  ] ;
+  :relation [
+    a :Friend ;
+    :target t00021:G1
+  ] .
+

@@ -1,0 +1,95 @@
+@prefix t00263: <https://noordergraf.rug.nl/item/T00263#> .
+
+item:T00263
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1901 ;
+    :geoLong 6.5938
+  ] ;
+  :nd "+53.1901+006.5938"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-13T14:15:53"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00263.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00263:P1, t00263:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: <
+rustplaats
+ckneringa
+ser.gr del 1046 te gron
+theredj1227 te grom.
+echtgenoot van
+t. schokmenbroek
+ger. so noy, 1878 te rolgezani
+overl 25 jul 1860 te gror
+""" .
+
+t00263:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00263:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y8M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-10-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-07-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "C.K. Wieringa" ;
+    :text "TODO: C.K. Wieringa"
+  ] ;
+  :placeOfBirth t00263:C1 ;
+  :placeOfDeath t00263:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00263:P2
+  ] .
+
+t00263:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P83Y8M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-11-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-07-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "T. Schokkenbroek" ;
+    :text "TODO: T. Schokkenbroek"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] ;
+  :placeOfDeath t00263:C1 .
+

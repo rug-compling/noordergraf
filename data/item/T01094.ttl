@@ -1,0 +1,92 @@
+@prefix t01094: <https://noordergraf.rug.nl/item/T01094#> .
+
+item:T01094
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2437 ;
+    :geoLong 6.8640
+  ] ;
+  :nd "+53.2437+006.8640"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-09-19T15:00:11"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01094.jpg
+  ] ;
+  :site site:NLgr9628tkSiddeburen ;
+  :subject t01094:P1, t01094:P2 ;
+  :text """TODO: rustplaats van
+elie zabeth bos
+4,8 1898
+te siddeburen
+12-1-1939
+sechtgenote van
+geert de wilde
+26212 1207 ste milderhof
+201970ete delazul
+""" .
+
+t01094:C1
+  a :Village ;
+  :place place:Siddeburen2747343 ;
+  :text "TODO: SIDDEBUREN" .
+
+t01094:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y5M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-08-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-01-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Eliezabeth Bos" ;
+    :text "TODO: Eliezabeth Bos"
+  ] ;
+  :placeOfBirth t01094:C1 ;
+  :placeOfDeath t01094:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t01094:P2
+  ] .
+
+t01094:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-12-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-01-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geert de Wilde" ;
+    :text "TODO: Geert de Wilde"
+  ] ;
+  :placeOfBirth [
+    a :Hamlet ;
+    :place place:Wilderhof2744436 ;
+    :text "TODO: WILDERHOF"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Delfzijl2757340 ;
+    :text "TODO: DELFZIJL"
+  ] .
+

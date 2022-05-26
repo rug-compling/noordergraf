@@ -1,0 +1,59 @@
+@prefix t01022: <https://noordergraf.rug.nl/item/T01022#> .
+
+item:T01022
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1629 ;
+    :geoLong 6.6141
+  ] ;
+  :nd "+53.1629+006.6141"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-12T17:16:29"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01022.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "SHALOM LE OLAM"
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t01022:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:StarOfDavid
+  ] ;
+  :text """TODO: kem
+长
+xx
+ter gedachtenis
+aan
+max gosschalk
+15 – 7 – 1917
+✝ 24–4–1995
+shalom le
+ler olam
+""" .
+
+t01022:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y9M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1917-07-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1995-04-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Max Gosschalk" ;
+    :text "TODO: Max Gosschalk"
+  ] .
+

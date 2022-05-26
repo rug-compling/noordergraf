@@ -1,0 +1,46 @@
+@prefix t00796: <https://noordergraf.rug.nl/item/T00796#> .
+
+item:T00796
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2773 ;
+    :geoLong 6.6938
+  ] ;
+  :nd "+53.2773+006.6938"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-01-18T13:04:09"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00796.jpg
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00796:P1 ;
+  :text """TODO: і
+rozema
+СКА
+32, 135 13. mys
+2.
+""" .
+
+t00796:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P49Y11M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1943-01-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1993-01-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Dick Rozema" ;
+    :text "TODO: Dick Rozema"
+  ] .
+

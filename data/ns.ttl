@@ -1094,9 +1094,9 @@
 
 ###############################################################
 
-:Plot a rdfs:Class ;
+:Item a rdfs:Class ;
   rdfs:subClassOf :Class , :WithGeography , :WithText , :WithDate , :WithDcModified ;
-  rdfs:label "Plot" ;
+  rdfs:label "Item" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -1105,7 +1105,7 @@
   rdfs:label "photo" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :Plot ;
+  rdfs:domain :Item ;
   rdfs:range :Photo ;
   rdfs:isDefinedBy : .
 
@@ -1113,7 +1113,7 @@
   rdfs:label "commemorator" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :Plot ;
+  rdfs:domain :Item ;
   rdfs:range :Person ;
   rdfs:isDefinedBy : .
 
@@ -1121,7 +1121,7 @@
   rdfs:label "creator" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :Plot ;
+  rdfs:domain :Item ;
   rdfs:range :Creator ;
   rdfs:isDefinedBy : .
 
@@ -1129,7 +1129,7 @@
   rdfs:label "figure" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :Plot ;
+  rdfs:domain :Item ;
   rdfs:range :Figure ;
   rdfs:isDefinedBy : .
 
@@ -1137,7 +1137,7 @@
   rdfs:label "site" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :Plot ;
+  rdfs:domain :Item ;
   rdfs:range :Site ;
   rdfs:isDefinedBy : .
 
@@ -1145,7 +1145,7 @@
   rdfs:label "subject" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :Plot ;
+  rdfs:domain :Item ;
   rdfs:range :Person ;
   rdfs:isDefinedBy : .
 
@@ -1153,7 +1153,7 @@
   rdfs:label "quote" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :Plot ;
+  rdfs:domain :Item ;
   rdfs:range :Quote ;
   rdfs:isDefinedBy : .
 
@@ -1161,19 +1161,19 @@
   rdfs:label "symbol" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
-  rdfs:domain :Plot ;
+  rdfs:domain :Item ;
   rdfs:range :Symbol ;
   rdfs:isDefinedBy : .
 
 :Cross a rdfs:Class ;
-  rdfs:subClassOf :Plot ;
+  rdfs:subClassOf :Item ;
   rdfs:label "Cross" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
 :Tomb a rdfs:Class ;
-  rdfs:subClassOf :Plot ;
+  rdfs:subClassOf :Item ;
   rdfs:label "Cross" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;

@@ -1,0 +1,87 @@
+@prefix t01071: <https://noordergraf.rug.nl/item/T01071#> .
+
+item:T01071
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1624 ;
+    :geoLong 6.6143
+  ] ;
+  :nd "+53.1624+006.6143"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-05-15T17:46:03"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01071.jpg
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t01071:P1, t01071:P2 ;
+  :text """TODO: es unders
+041823 te vlastwelde
+tv 1951 te haren
+★25_17_1885 te finsterwolde
+stio-1-1970 te abpingepan
+""" .
+
+t01071:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P68Y5M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-04-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-10-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "B. Sanders" ;
+    :text "TODO: B. Sanders"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Vlagtwedde2745461 ;
+    :text "TODO: VLAGTWEDDE"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] .
+
+t01071:P2
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P84Y1M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-11-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-01-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "F.T. Sap" ;
+    :text "TODO: F.T. Sap"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Finsterwolde2755905 ;
+    :text "TODO: FINSTERWOLDE"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Appingedam2759687 ;
+    :text "TODO: APPINGEDAM"
+  ] .
+

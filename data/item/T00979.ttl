@@ -1,0 +1,72 @@
+@prefix t00979: <https://noordergraf.rug.nl/item/T00979#> .
+
+item:T00979
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1203 ;
+    :geoLong 6.6591
+  ] ;
+  :nd "+53.1203+006.6591"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-25T09:25:22"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00979.jpg
+  ] ;
+  :site site:NLgr9479tnNoordlaren ;
+  :subject t00979:P1, t00979:P2 ;
+  :text """TODO: rustplaats van
+onze lieve moeder
+ar
+jantien kloots
+geb.5 juni 1866 te eexst
+overl. 3 dec.1953 te noordlaren
+weduwe van
+harmannus havinga
+-1-
+""" .
+
+t00979:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y5M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-06-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1953-12-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantien Kloots" ;
+    :text "TODO: Jantien Kloots"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Eext2756317 ;
+    :text "TODO: EEXT"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Noordlaren2749857 ;
+    :text "TODO: NOORDLAREN"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00979:P2
+  ] .
+
+t00979:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Harmannus Havinga" ;
+    :text "TODO: Harmannus Havinga"
+  ] .
+

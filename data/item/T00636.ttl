@@ -1,0 +1,66 @@
+@prefix t00636: <https://noordergraf.rug.nl/item/T00636#> .
+
+item:T00636
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1642 ;
+    :geoLong 6.7544
+  ] ;
+  :nd "+53.1642+006.7544"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T09:54:23"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00636.jpg
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00636:P1 ;
+  :symbol [
+    a :Symbol
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: hun
+rustila
+der
+tustulan
+geliefde kinderen
+van
+j.j.bcukoma.
+en
+e.beukema.nooitos
+h.
+""" .
+
+t00636:P1
+  a :People ;
+  :relation [
+    a :Child ;
+    :target t00636:P2, t00636:P3
+  ] ;
+  :text "geliefde kinderen" .
+
+t00636:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J.J. Beukema" ;
+    :text "TODO: J.J. Beukema"
+  ] .
+
+t00636:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "E. Beukema-Hooites" ;
+    :text "TODO: E. Beukema-Hooites"
+  ] .
+

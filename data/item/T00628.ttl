@@ -1,0 +1,89 @@
+@prefix t00628: <https://noordergraf.rug.nl/item/T00628#> .
+
+item:T00628
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1641 ;
+    :geoLong 6.7543
+  ] ;
+  :nd "+53.1641+006.7543"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T09:58:00"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00628.jpg
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00628:P1, t00628:P2, t00628:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Axe
+  ] ;
+  :text """TODO: van
+tergedichten
+onze gelifile ouetes
+grietje
+gebote hoogerund
+19 juni 1870
+oorl. aldar
+28 maart 1913
+e
+c.bodeker
+w.g. bodeker.
+""" .
+
+t00628:C1
+  a :Town ;
+  :place place:Hoogezand2753706 ;
+  :text "TODO: HOOGEZAND" .
+
+t00628:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P42Y9M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-06-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-03-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jakobus Bleeker" ;
+    :text "TODO: Jakobus Bleeker"
+  ] ;
+  :placeOfBirth t00628:C1 ;
+  :placeOfDeath t00628:C1 ;
+  :relation [
+    a :Sister ;
+    :target t00628:P2
+  ], [
+    a :Sister ;
+    :target t00628:P3
+  ] .
+
+t00628:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "C. Bödeker" ;
+    :text "TODO: C. Bödeker"
+  ] .
+
+t00628:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "W.G. Bödeker" ;
+    :text "TODO: W.G. Bödeker"
+  ] .
+

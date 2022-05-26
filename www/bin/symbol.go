@@ -65,11 +65,11 @@ Invalid query
 	query := `
 PREFIX :       <https://noordergraf.rug.nl/ns#>
 PREFIX symbol: <https://noordergraf.rug.nl/symbol/>
-SELECT DISTINCT ?tomb ?name {
-  ?tomb :symbol / :symbolType symbol:` + symbol + ` .
-  ?tomb :subject / :name / :fullName ?name .
+SELECT DISTINCT ?item ?name {
+  ?item :symbol / :symbolType symbol:` + symbol + ` .
+  ?item :subject / :name / :fullName ?name .
 }
-ORDER BY ?name ?tomb
+ORDER BY ?name ?item
 `
 
 	request := "http://localhost:10035/repositories/noordergraf?query=" + url.QueryEscape(query)
@@ -118,7 +118,7 @@ ORDER BY ?name ?tomb
 	for _, result := range sparql.Results {
 		var uri, name string
 		for _, binding := range result.Bindings {
-			if binding.Name == "tomb" {
+			if binding.Name == "item" {
 				uri = binding.URI
 			} else if binding.Name == "name" {
 				name = binding.Literal

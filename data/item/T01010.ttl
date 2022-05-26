@@ -1,0 +1,56 @@
+@prefix t01010: <https://noordergraf.rug.nl/item/T01010#> .
+
+item:T01010
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3085 ;
+    :geoLong 6.5754
+  ] ;
+  :nd "+53.3085+006.5754"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-11T10:32:13"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01010.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "LIFE IS SHORT \\ DEATH IS NOUGHT \\ LOVE IS ALL"@eng
+  ] ;
+  :site site:NLgr9781thBedum ;
+  :subject t01010:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: marja rozemon
+ދިޔައީ 1 ޖެހި ރ
+9
+މިއަހަރވެ މަ އަކަށް
+ހަ ށް ފަ ކީ ދީނީ
+އަކީ ފަ މި އިދި
+ob s novy
+""" .
+
+t01010:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y10M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1949-02-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2000-12-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Marja Rozemond" ;
+    :text "TODO: Marja Rozemond"
+  ] .
+

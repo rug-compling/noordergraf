@@ -1,0 +1,112 @@
+@prefix t00508: <https://noordergraf.rug.nl/item/T00508#> .
+
+item:T00508
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2066 ;
+    :geoLong 5.7691
+  ] ;
+  :nd "+53.2066+005.7691"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:33:14"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00508.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MEMORIA EORUM ERIT IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00508:P1, t00508:P2, t00508:P3 ;
+  :text """TODO: gora tordi main
+maria h. f.
+lambodul_ahsmann
+110.32187 2 te stoppelduik
+118-7-1911 te leeuwardem
+hermanus d.lamboon
+313_1870 te leeuwarden
+25_1949 teleeuwardem
+caeciliam lamboon
+usselmuiden
+★v-12_1872 16_2_1979
+lirik
+""" .
+
+t00508:C2
+  a :City ;
+  :place place:Leeuwarden2751792 ;
+  :text "TODO: LEEUWARDEN" .
+
+t00508:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P39Y4M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-03-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1911-07-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Maria H.F. Lambooij-Ahsmann" ;
+    :text "TODO: Maria H.F. Lambooij-Ahsmann"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Stoppeldijk12253641 ;
+    :text "TODO: STOPPELDIJK"
+  ] ;
+  :placeOfDeath t00508:C2 .
+
+t00508:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-03-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-04-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hermanus D. Lambooij" ;
+    :text "TODO: Hermanus D. Lambooij"
+  ] ;
+  :placeOfBirth t00508:C2 ;
+  :placeOfDeath t00508:C2 .
+
+t00508:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y11M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-12-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-12-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Caecilia M. Lambooij-IJsselmuiden" ;
+    :text "TODO: Caecilia M. Lambooij-IJsselmuiden"
+  ] .
+

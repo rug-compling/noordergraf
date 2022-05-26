@@ -1,0 +1,46 @@
+@prefix t00045: <https://noordergraf.rug.nl/item/T00045#> .
+
+item:T00045
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1631 ;
+    :geoLong 6.6128
+  ] ;
+  :nd "+53.1631+006.6128"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:45:39"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00045.jpg
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00045:P1 ;
+  :text """TODO: roflof
+luurd jurriaan
+coolman
+5.dec 1923
+o juli 1924
+""" .
+
+t00045:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P7M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-12-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-07-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelof Luurd Jurriaan Coolman" ;
+    :text "TODO: Roelof Luurd Jurriaan Coolman"
+  ] .
+

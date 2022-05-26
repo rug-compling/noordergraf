@@ -1,0 +1,53 @@
+@prefix t00452: <https://noordergraf.rug.nl/item/T00452#> .
+
+item:T00452
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2065 ;
+    :geoLong 5.7695
+  ] ;
+  :nd "+53.2065+005.7695"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T15:02:27"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00452.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "PAX"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00452:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: ya
+fiebenga
+ale
+se
+""" .
+
+t00452:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P76Y10M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-04-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-03-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johanna H. Wiebenga" ;
+    :text "TODO: Johanna H. Wiebenga"
+  ] .
+

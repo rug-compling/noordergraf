@@ -9,7 +9,7 @@ head: <link rel="alternate" href="https://noordergraf.rug.nl/index.penman" type=
 
 {{Hier komt iets moois|Under construction}}
 
-[{{Voorbeeld|Example}}](/tomb/T00000)
+[{{Voorbeeld|Example}}](/item/T00000)
 
 <form action="/bin/textsearch">
 <input type="text" name="q">

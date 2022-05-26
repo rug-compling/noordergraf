@@ -1,0 +1,82 @@
+@prefix t00788: <https://noordergraf.rug.nl/item/T00788#> .
+
+item:T00788
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7816 ;
+    :geoLong 6.8968
+  ] ;
+  :nd "+52.7816+006.8968"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T12:56:18"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00788.jpg
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00788:P1, t00788:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: heer rust
+hotelgijk werecho
+dream
+thendrik nijhof
+geltee
+ardellang
+como
+s s.
+i. 1837.
+1917
+overbitemagerm
+& seb. 196
+echtgenoot van
+18
+hendrikje huizing
+""" .
+
+t00788:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P70Y10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1837-02-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1907-02-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Nijhof" ;
+    :text "TODO: Hendrik Nijhof"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Noordbarge2749996 ;
+    :text "TODO: NOORDBARGE"
+  ] ;
+  :placeOfDeath [
+    a :Hamlet ;
+    :place place:Bargermeer12253657 ;
+    :text "TODO: BARGERMEER"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00788:P2
+  ] .
+
+t00788:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Hendrikje Huizing" ;
+    :text "TODO: Hendrikje Huizing"
+  ] .
+

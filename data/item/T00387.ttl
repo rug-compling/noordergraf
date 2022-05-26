@@ -1,0 +1,99 @@
+@prefix t00387: <https://noordergraf.rug.nl/item/T00387#> .
+
+item:T00387
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2517 ;
+    :geoLong 6.1452
+  ] ;
+  :nd "+53.2517+006.1452"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-26T14:58:00"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00387.jpg
+  ] ;
+  :quote t00387:V1 ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00387:P1, t00387:P2, t00387:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ] ;
+  :text """TODO: begraafplaats
+betskej
+spoelman
+geb 13 sept. 1838
+te butjewoude
+evert. esthei 1908
+te buitenpost
+geliefde echtgen.van
+a.gheidema
+opene 1✝.13
+""" .
+
+t00387:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y7M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1838-09-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-05-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Betske J. Spoelman" ;
+    :text "TODO: Betske J. Spoelman"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:AugsbuurtLutjewoude2759614 ;
+    :text "TODO: LUTJEWOUDE"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Buitenpost2758131 ;
+    :text "TODO: BUITENPOST"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00387:P2
+  ] .
+
+t00387:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "A.G. Heidema" ;
+    :text "TODO: A.G. Heidema"
+  ] .
+
+t00387:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Jan R. Luinstra" ;
+    :text "TODO: Jan R. Luinstra"
+  ] .
+
+t00387:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Revelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "TODO" .
+

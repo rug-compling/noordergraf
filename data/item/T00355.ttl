@@ -1,0 +1,78 @@
+@prefix t00355: <https://noordergraf.rug.nl/item/T00355#> .
+
+item:T00355
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0841 ;
+    :geoLong 6.5726
+  ] ;
+  :nd "+53.0841+006.5726"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-25T17:36:18"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00355.jpg
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00355:P1, t00355:P2 ;
+  :text """TODO: rustplaats van
+onze lieve vader
+jan hessels
+★ 2–1-1947
+✝ 27-10-2005
+en zijn oom
+hendrik hessels
+★ 23-1-1916
+✝ 1-12-1930
+""" .
+
+t00355:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y9M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1947-01-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2005-10-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Hessels" ;
+    :text "TODO: Jan Hessels"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+
+t00355:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P14Y10M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1916-01-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-12-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Hessels" ;
+    :text "TODO: Hendrik Hessels"
+  ] ;
+  :relation [
+    a :Uncle ;
+    :target t00355:P1
+  ] .
+

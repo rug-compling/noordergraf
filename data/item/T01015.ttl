@@ -1,0 +1,86 @@
+@prefix t01015: <https://noordergraf.rug.nl/item/T01015#> .
+
+item:T01015
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1754 ;
+    :geoLong 7.0954
+  ] ;
+  :nd "+53.1754+007.0954"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-04T10:45:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01015.jpg
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t01015:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ouroboros
+  ] ;
+  :text """TODO: rustplaans
+van
+grietje wubbina
+geboren 1 oct.
+1872
+overleden 28 juli
+1893
+golicadd
+dochter van
+a.meijer
+en wijlen
+j. smit
+""" .
+
+t01015:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y9M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-10-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1893-07-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Grietje Wubbina" ;
+    :text "TODO: Grietje Wubbina"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t01015:P2, t01015:P3
+  ] .
+
+t01015:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "A. Meijer" ;
+    :text "TODO: A. Meijer"
+  ] .
+
+t01015:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "J. Smit" ;
+    :text "TODO: J. Smit"
+  ] .
+

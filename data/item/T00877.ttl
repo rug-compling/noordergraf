@@ -1,0 +1,49 @@
+@prefix t00877: <https://noordergraf.rug.nl/item/T00877#> .
+
+item:T00877
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7195 ;
+    :geoLong 6.8466
+  ] ;
+  :nd "+52.7195+006.8466"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:05:58"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00877.jpg
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00877:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: frederik
+toxopeus
+24-3-890
+★ 16-11-1925
+""" .
+
+t00877:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P55Y7M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-03-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-11-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Frederik Toxopëus" ;
+    :text "TODO: Frederik Toxopëus"
+  ] .
+

@@ -1,0 +1,91 @@
+@prefix t00465: <https://noordergraf.rug.nl/item/T00465#> .
+
+item:T00465
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2073 ;
+    :geoLong 5.7697
+  ] ;
+  :nd "+53.2073+005.7697"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:50:48"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00465.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "PAX"@lat
+  ], [
+    a :Quote ;
+    :text "REQUIESCAT IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00465:P1, t00465:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: e ouders
+p. a x
+Α Σ
+jacobus maria stek
+27-2-1892
+✝ 23-2-1966
+en
+wilhelmina dumope
+★ 25-1-1891
+2
+1 19-6-1976
+r. i. p
+""" .
+
+t00465:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y11M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1892-02-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1966-02-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jacobus Maria Stek" ;
+    :text "TODO: Jacobus Maria Stek"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00465:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y4M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1891-01-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1976-06-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Wilhelmina Dumope" ;
+    :text "TODO: Wilhelmina Dumope"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

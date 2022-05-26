@@ -1,0 +1,52 @@
+@prefix t00457: <https://noordergraf.rug.nl/item/T00457#> .
+
+item:T00457
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2071 ;
+    :geoLong 5.7697
+  ] ;
+  :nd "+53.2071+005.7697"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:51:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00457.jpg
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00457:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: hier rust
+wilhelmina
+christina
+de boer
+★
+16 mei 1898
+✝ 6 sept. 1963
+""" .
+
+t00457:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P65Y3M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-05-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-09-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Wilhelmina Christina de Boer" ;
+    :text "TODO: Wilhelmina Christina de Boer"
+  ] .
+

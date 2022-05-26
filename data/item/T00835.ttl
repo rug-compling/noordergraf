@@ -1,0 +1,114 @@
+@prefix t00835: <https://noordergraf.rug.nl/item/T00835#> .
+
+item:T00835
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7766 ;
+    :geoLong 6.8038
+  ] ;
+  :nd "+52.7766+006.8038"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:52:34"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00835.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7841cdSleen ;
+  :subject t00835:P1, t00835:P2, t00835:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: .
+5
+hier rusten onze lieve ouders
+geert sieders
+1261-1869
+5-10-19
+en
+tienna ijdens
+1.6 1877 at 237 12 56
+en onze lieve qon
+geerhart sieders
+11=9. 1877
+31 5.10 15
+rust zacht
+""" .
+
+t00835:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y10M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1869-11-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-10-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geert Sieders" ;
+    :text "TODO: Geert Sieders"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00835:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y6M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-06-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1956-12-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Tienna IJdens" ;
+    :text "TODO: Tienna IJdens"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00835:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y8M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-09-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-05-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geerhart Sieders" ;
+    :text "TODO: Geerhart Sieders"
+  ] ;
+  :relation [
+    a :Uncle
+  ] .
+

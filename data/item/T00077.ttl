@@ -1,0 +1,115 @@
+@prefix t00077: <https://noordergraf.rug.nl/item/T00077#> .
+
+item:T00077
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2038 ;
+    :geoLong 6.5701
+  ] ;
+  :nd "+53.2038+006.5701"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T11:39:08"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00077.jpg
+  ] ;
+  :site site:NLgr9721aaGroningen ;
+  :subject t00077:P1, t00077:P2, t00077:P3, t00077:P4, t00077:P5 ;
+  :text """TODO: ter gedachtenis
+aan
+onze lieve vrouwen moeder
+rie van veen
+geb, magermans
+★ 30-10-1898
+i_1963
+en mijn lieve man
+onze zorgzame par
+led smit
+6.4.1922 ここ lises
+echtgenoot van
+jettie van veen
+barth
+riekje
+""" .
+
+t00077:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P64Y2M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-10-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-01-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Rie van Veen" ;
+    :text "RIE van VEEN geb. MAGERMANS"
+  ] ;
+  :relation [
+    a :Mother ;
+    :target t00077:P3
+  ], [
+    a :Wife
+  ] .
+
+t00077:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1922-04-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1986-04-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Leo Smit" ;
+    :text "LEO SMIT"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00077:P3
+  ], [
+    a :Father ;
+    :target t00077:P4, t00077:P5 ;
+    :text "pap"
+  ] .
+
+t00077:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Jettie van Veen" ;
+    :text "JETTIE van VEEN"
+  ] .
+
+t00077:P4
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Barth" ;
+    :text "BARTH"
+  ] .
+
+t00077:P5
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Riekje" ;
+    :text "RIEKJE"
+  ] .
+

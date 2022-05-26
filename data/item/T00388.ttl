@@ -1,0 +1,117 @@
+@prefix t00388: <https://noordergraf.rug.nl/item/T00388#> .
+
+item:T00388
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2516 ;
+    :geoLong 6.1450
+  ] ;
+  :nd "+53.2516+006.1450"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-26T14:52:24"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00388.jpg
+  ] ;
+  :quote t00388:V1 ;
+  :site site:NLfr9285tcBuitenpost ;
+  :subject t00388:P1, t00388:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats
+van
+onze gel, ouders
+jakob kloostra
+ger, te twuzel
+21 febr: 1877
+overl te doezum
+21 april 1940.
+entietjewesterhof
+geb.te dantumawoude
+12 april 1880.
+overl te Žvagerveen
+3 sept 1939.
+openb, 14- 13
+""" .
+
+t00388:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y2M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1877-02-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-04-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jakob Kloostra" ;
+    :text "TODO: Jakob Kloostra"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Twijzel2746052 ;
+    :text "TODO: TWIJZEL"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Doezum2756763 ;
+    :text "TODO: DOEZUM"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00388:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P59Y4M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-04-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-09-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Tietje Westerhof" ;
+    :text "TODO: Tietje Westerhof"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Dantumawoude2757833 ;
+    :text "TODO: DANTUMAWOUDE"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Zwagerveen2743583 ;
+    :text "TODO: ZWAGERVEEN"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00388:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Revelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "TODO" .
+

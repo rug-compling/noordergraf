@@ -1,0 +1,51 @@
+@prefix t00591: <https://noordergraf.rug.nl/item/T00591#> .
+
+item:T00591
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3267 ;
+    :geoLong 6.5121
+  ] ;
+  :nd "+53.3267+006.5121"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-30T14:24:13"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00591.jpg
+  ] ;
+  :site site:NLgr9951tnWinsum ;
+  :subject t00591:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Book
+  ] ;
+  :text """TODO: hier rust
+hendrik
+harm s m a
+✝6_8 – 1940
+t ✝ 2 _3 - 2012
+★★
+""" .
+
+t00591:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y6M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1940-08-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-03-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Harmsma" ;
+    :text "TODO: Hendrik Harmsma"
+  ] .
+

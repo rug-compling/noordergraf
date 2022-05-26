@@ -1,0 +1,68 @@
+@prefix t00882: <https://noordergraf.rug.nl/item/T00882#> .
+
+item:T00882
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7195 ;
+    :geoLong 6.8466
+  ] ;
+  :nd "+52.7195+006.8466"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:06:31"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00882.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MAN EN VADER"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00882:P1, t00882:P2 ;
+  :text """TODO: hier rust
+ew. c. de dis
+geb, 6-6-1914 te groningen
+overl. 4 -7 -1945 te emmen
+echtgen, van g.gommers
+rust zacht lieve man en vader
+""" .
+
+t00882:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P34Y28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-06-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-07-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "E.W.C. de Vries" ;
+    :text "TODO: E.W.C. de Vries"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00882:P2
+  ], [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00882:P2
+  ] .
+
+t00882:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "G. Gommers" ;
+    :text "TODO: G. Gommers"
+  ] .
+

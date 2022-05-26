@@ -1,0 +1,100 @@
+@prefix t01041: <https://noordergraf.rug.nl/item/T01041#> .
+
+item:T01041
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2647 ;
+    :geoLong 6.3943
+  ] ;
+  :nd "+53.2647+006.3943"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-19T12:15:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01041.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DE HEILNAD HOORDE NAAR MIJN STEM, ALS ZONDAAR TROK HIJ MIJ TOT HEM, IK VOND GENA IN HEM ALLEEN, EN GA ALZO IN VREDE HEEN."@nld
+  ] ;
+  :site site:NLgr9804teNoordhorn ;
+  :subject t01041:P1, t01041:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:InvertedTorch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Scythe
+  ] ;
+  :text """TODO: an
+.
+15
+wa
+6
+tee
+hiremathelbeffelijk
+merrehován
+cerpen epeÜs
+vliec
+gebounkminddagen
+6 februmi 1842
+everleden tehuidheon
+28fderuari 1924
+wedinnaar van
+js sunsha.
+p
+heilandtwerde naar
+anjinton blendar
+bekhij mijhel hem,
+kuendiena in when
+alkon, enga akoin
+viedekun.
+""" .
+
+t01041:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P82Y22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1842-02-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1924-02-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Gerben Epeüs Vlieg" ;
+    :text "TODO: Gerben Epeüs Vlieg"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Hindeloopen2754059 ;
+    :text "TODO: HINDELOOPEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Zuidhorn2743694 ;
+    :text "TODO: ZUIDHORN"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t01041:P2
+  ] .
+
+t01041:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "J.P. Veenstra" ;
+    :text "TODO: J.P. Veenstra"
+  ] .
+

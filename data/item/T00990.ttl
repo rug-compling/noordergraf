@@ -1,0 +1,84 @@
+@prefix t00990: <https://noordergraf.rug.nl/item/T00990#> .
+
+item:T00990
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2432 ;
+    :geoLong 6.6280
+  ] ;
+  :nd "+53.2432+006.6280"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-05T12:18:10"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00990.jpg
+  ] ;
+  :site site:NLgr9734atGroningen ;
+  :subject t00990:P1, t00990:P2 ;
+  :text """Ter gedachtenis van
+TRIENTJE KORNELIS
+NIEBOER
+geboren te Harkstede
+den 13 September 1791
+overleden op Leeuwenburg
+den 25 Junij 1865
+ruim 51 jaar vrouw
+van H.G. Boer.""" .
+
+t00990:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P73Y9M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1791-09-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1865-06-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trientje Kornelis Nieboer" ;
+    :text "TODO: Trientje Kornelis Nieboer"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Harkstede2754819 ;
+    :text "TODO: HARKSTEDE"
+  ] ;
+  :placeOfDeath [
+    a :Building ;
+    :coordinates [
+      a :Coordinates ;
+      :geo [
+        a :GeoPoint ;
+        :geoLat 53.2306 ;
+        :geoLong 6.5976
+      ] ;
+      :nd "+53.2306+006.5976"^^ll:
+    ] ;
+    :text "Leeuwenburg"
+  ] ;
+  :relation [
+    a :Wife ;
+    :period [
+      a :Period ;
+      :duration "P51Y"^^xsd:duration ;
+      :text "ruim 51 jaar"
+    ] ;
+    :target t00990:P2
+  ] .
+
+t00990:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "H.G. Boer" ;
+    :text "TODO: H.G. Boer"
+  ] .
+

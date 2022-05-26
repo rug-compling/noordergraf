@@ -1,0 +1,90 @@
+@prefix t00785: <https://noordergraf.rug.nl/item/T00785#> .
+
+item:T00785
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7820 ;
+    :geoLong 6.8976
+  ] ;
+  :nd "+52.7820+006.8976"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T12:57:36"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00785.jpg
+  ] ;
+  :quote t00785:V1, [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00785:P1, t00785:P2 ;
+  :text """TODO: hier rust
+het stoffelijk
+overschot van
+jans
+koers
+geb. te westenesch
+5 november 1857
+overl. te emmen
+29 december 1943
+weduwnaar van
+grietien everts
+matt. 5:7
+rust zacht
+""" .
+
+t00785:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y1M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1857-11-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1943-12-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jans Koers" ;
+    :text "TODO: Jans Koers"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Westenesch2744776 ;
+    :text "TODO: WESTENESCH"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Emmen2756136 ;
+    :text "TODO: EMMEN"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t00785:P2
+  ] .
+
+t00785:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Grietien Everts" ;
+    :text "TODO: Grietien Everts"
+  ] .
+
+t00785:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Matthew ;
+    :chapter 5 ;
+    :verse "7"
+  ] ;
+  :text "TODO" .
+

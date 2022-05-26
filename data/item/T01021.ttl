@@ -1,0 +1,100 @@
+@prefix t01021: <https://noordergraf.rug.nl/item/T01021#> .
+
+item:T01021
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1617 ;
+    :geoLong 6.6143
+  ] ;
+  :nd "+53.1617+006.6143"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-12T17:28:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01021.jpg
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t01021:P1, t01021:P2, t01021:P3 ;
+  :text """TODO: onze lieve vrouwen moeder
+grietje middel
+22 1864 ✝ 1-12 1955
+echt genote van
+g. g.uyterwijk
+eerder van j. van zoest
+en onze lieve vader
+george geugien uyterwijk
+★ 15 12 -1874 24 - 8 -1960
+weduwnaar van g. middel
+""" .
+
+t01021:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y10M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1864-02-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-12-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Grietje Middel" ;
+    :text "TODO: Grietje Middel"
+  ] ;
+  :relation t01021:R1, [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t01021:P2
+  ], [
+    a :Spouse ;
+    :before t01021:R1 ;
+    :target t01021:P3
+  ] .
+
+t01021:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y8M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-12-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1960-08-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "George Geugien Uyterwijk" ;
+    :text "TODO: George Geugien Uyterwijk"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Widower ;
+    :target t01021:P1
+  ] .
+
+t01021:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J. van Soest" ;
+    :text "TODO: J. van Soest"
+  ] .
+
+t01021:R1
+  a :Wife ;
+  :target t01021:P2 .
+

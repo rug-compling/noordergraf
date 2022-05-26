@@ -1,0 +1,112 @@
+@prefix t01046: <https://noordergraf.rug.nl/item/T01046#> .
+
+item:T01046
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1232 ;
+    :geoLong 6.2512
+  ] ;
+  :nd "+53.1232+006.2512"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-05-01T15:30:44"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01046.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9367paDeWilp ;
+  :subject t01046:P1, t01046:P2, t01046:P3, t01046:P4 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ] ;
+  :text """TODO: pustplaats
+van
+trientje de haan
+geb, 28 sept. 1873
+overl. 22 maart 1955
+wed.van s. huizinga
+eerder van w. nuhof
+en hun dochtertje
+martje nuhof
+geb. 23 mei 1902
+overl. 22 juni 1903
+rust zacht
+pati
+""" .
+
+t01046:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y5M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1873-09-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-03-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trientje de Haan" ;
+    :text "TODO: Trientje de Haan"
+  ] ;
+  :relation t01046:R1, [
+    a :Widow ;
+    :before t01046:R1 ;
+    :target t01046:P3
+  ] .
+
+t01046:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "S. Huizinga" ;
+    :text "TODO: S. Huizinga"
+  ] .
+
+t01046:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "W. Nijhof" ;
+    :text "TODO: W. Nijhof"
+  ] .
+
+t01046:P4
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P1Y30D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-05-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-06-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Martje Nijhof" ;
+    :text "TODO: Martje Nijhof"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t01046:P1, t01046:P3
+  ] .
+
+t01046:R1
+  a :Widow ;
+  :target t01046:P2 .
+

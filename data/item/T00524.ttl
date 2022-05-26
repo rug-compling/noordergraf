@@ -1,0 +1,76 @@
+@prefix t00524: <https://noordergraf.rug.nl/item/T00524#> .
+
+item:T00524
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1670 ;
+    :geoLong 6.7535
+  ] ;
+  :nd "+53.1670+006.7535"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T10:56:14"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00524.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "KAMERADEN VOOR HET LEVEN"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00524:P1, t00524:P2 ;
+  :text """TODO: hier rusten
+jan van der wal
+ter
+★ 7-5-1929 † 24-6-2006
+en
+geesinus harmannus schuurman
+★ 3-5-1940
+† 3-2-2007
+kameraden voor het leven
+hln
+""" .
+
+t00524:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y1M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1929-05-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2006-06-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan van der Wal" ;
+    :text "TODO: Jan van der Wal"
+  ] .
+
+t00524:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y9M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1940-05-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2007-02-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geesinus Harmannus Schuurman" ;
+    :text "TODO: Geesinus Harmannus Schuurman"
+  ] .
+

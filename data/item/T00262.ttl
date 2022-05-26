@@ -1,0 +1,101 @@
+@prefix t00262: <https://noordergraf.rug.nl/item/T00262#> .
+
+item:T00262
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1902 ;
+    :geoLong 6.5932
+  ] ;
+  :nd "+53.1902+006.5932"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-13T14:19:28"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00262.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00262:P1, t00262:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ] ;
+  :text """TODO: rustplaats van
+onze lieve man en vader
+johannes curdh
+★ 6.2__1850 te o. pekela
+f 30-12-1944 te gron.
+en onze lieve moeder
+trientje flikkema
+★ 29.9_1850 te holwierde
+t 29.8.1952 te gron.
+""" .
+
+t00262:C2
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00262:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P94Y10M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-02-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-12-30"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johannes Curdh" ;
+    :text "TODO: Johannes Curdh"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:OudePekela2749034 ;
+    :text "TODO: OUDE PEKELA"
+  ] ;
+  :placeOfDeath t00262:C2 ;
+  :relation [
+    a :Husband ;
+    :target t00262:P2
+  ], [
+    a :Father
+  ] .
+
+t00262:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P101Y11M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1850-09-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-08-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trientje Flikkema" ;
+    :text "TODO: Trientje Flikkema"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:Holwierde2753846 ;
+    :text "TODO: HOLWIERDE"
+  ] ;
+  :placeOfDeath t00262:C2 .
+

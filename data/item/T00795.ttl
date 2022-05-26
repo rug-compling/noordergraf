@@ -1,0 +1,80 @@
+@prefix t00795: <https://noordergraf.rug.nl/item/T00795#> .
+
+item:T00795
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2776 ;
+    :geoLong 6.6945
+  ] ;
+  :nd "+53.2776+006.6945"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-01-18T13:04:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00795.jpg
+  ] ;
+  :site site:NLgr9791keTenBoer ;
+  :subject t00795:P1, t00795:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ], [
+    a :Symbol ;
+    :comment "duif met tak in bek" ;
+    :symbolType symbol:DoveWithBranch
+  ], [
+    a :Symbol
+  ] ;
+  :text """TODO: 11.
+harm wienke
+sh
+x 7-7-1931
+† 27-4-1994
+bertha wienke - de blécourt
+★ 12-9-1930
+✝ 9-3-2010
+""" .
+
+t00795:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y9M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1931-07-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1994-04-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Harm Wienke" ;
+    :text "TODO: Harm Wienke"
+  ] .
+
+t00795:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y5M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1930-09-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2010-03-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Bertha Wienke-de Blécourt" ;
+    :text "TODO: Bertha Wienke-de Blécourt"
+  ] .
+

@@ -1,0 +1,66 @@
+@prefix t00523: <https://noordergraf.rug.nl/item/T00523#> .
+
+item:T00523
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1671 ;
+    :geoLong 6.7535
+  ] ;
+  :nd "+53.1671+006.7535"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T10:58:54"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00523.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00523:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Crescent
+  ] ;
+  :text """TODO: c
+hier rust
+ibu soerani
+soebkie - wakit
+★ suriname 3-12-1915
+† hoogezand 4-9-2012
+rust zacht
+""" .
+
+t00523:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P96Y9M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1915-12-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-09-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Ibu Soerani Soebke-Wakit" ;
+    :text "TODO: Ibu Soerani Soebke-Wakit"
+  ] ;
+  :placeOfBirth [
+    a :Country ;
+    :place place:Suriname3382998 ;
+    :text "TODO: SURINAME"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Hoogezand2753706 ;
+    :text "TODO: HOOGEZAND"
+  ] .
+

@@ -1,0 +1,94 @@
+@prefix t00697: <https://noordergraf.rug.nl/item/T00697#> .
+
+item:T00697
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7815 ;
+    :geoLong 6.9005
+  ] ;
+  :nd "+52.7815+006.9005"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:55:39"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00697.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Psalms ;
+      :chapter 4 ;
+      :verse "9"
+    ] ;
+    :text "Ps 4.9"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00697:P1, t00697:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: pust zacht
+rustplaats
+van
+henderkiendenen
+geb. te sleen
+21 jan. 1859
+overlte noordba.ge
+1.sept. 1941
+weduwe van
+j.betting.
+ps 4.8
+""" .
+
+t00697:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P82Y7M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-09-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Henderkien Denen" ;
+    :text "TODO: Henderkien Denen"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Sleen2747182 ;
+    :text "TODO: SLEEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Noordbarge2749996 ;
+    :text "TODO: NOORDBARGE"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00697:P2
+  ] .
+
+t00697:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J. Betting" ;
+    :text "TODO: J. Betting"
+  ] .
+

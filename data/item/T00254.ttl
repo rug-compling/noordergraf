@@ -1,0 +1,62 @@
+@prefix t00254: <https://noordergraf.rug.nl/item/T00254#> .
+
+item:T00254
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2066 ;
+    :geoLong 6.5718
+  ] ;
+  :nd "+53.2066+006.5718"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-10T09:49:49"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00254.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "ZIJ RUST IN VREDE"
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00254:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:BrokenColumn
+  ] ;
+  :text """TODO: ruspolaatvan
+enregelinfelt zustis
+naamke damborgh
+geb:26 dec 1862
+ovel-ni june1903
+ujulin vrede
+mo
+3 k
+ner
+dobbeing
+""" .
+
+t00254:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P46Y5M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-12-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1909-06-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Naamke Limborgh" ;
+    :text "TODO: Naamke Limborgh"
+  ] ;
+  :relation [
+    a :Sister
+  ] .
+

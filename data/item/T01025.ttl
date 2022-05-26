@@ -1,0 +1,94 @@
+@prefix t01025: <https://noordergraf.rug.nl/item/T01025#> .
+
+item:T01025
+  a :Tomb ;
+  :creator t01025:P2 ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3809 ;
+    :geoLong 6.8597
+  ] ;
+  :nd "+53.3809+006.8597"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-17T18:27:22"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01025.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "JONG VAN JAREN LIGT HAAR NIETIG STOF HIERNEER, 'T WAS UW WIL EN WELBEHAGEN WIJZE GOEDE HEMELHEER."@nld
+  ] ;
+  :site site:NLgr9906ppBierum ;
+  :subject t01025:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Scythe
+  ], [
+    a :Symbol
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: rustpla
+van
+josina harmina
+smit
+ere lelosdorp30
+september 387a
+overl.le bierum
+3 aprilj895,
+jongvan jarenlict
+maar nietig stop
+hierneer:twasuw
+wil en welbehagen
+wize goede
+hemelheer.
+iv. mei'ei:
+bierum
+""" .
+
+t01025:C2
+  a :Village ;
+  :place place:Bierum2758983 ;
+  :text "TODO: BIERUM" .
+
+t01025:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y6M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-09-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1895-04-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Josina Harmina Smit" ;
+    :text "TODO: Josina Harmina Smit"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Losdorp2751426 ;
+    :text "TODO: LOSDORP"
+  ] ;
+  :placeOfDeath t01025:C2 .
+
+t01025:P2
+  a :Creator ;
+  :location t01025:C2 ;
+  :name [
+    a :Name ;
+    :fullName "W. MEIJER" ;
+    :text "TODO"
+  ] .
+

@@ -1,0 +1,93 @@
+@prefix t00000: <https://noordergraf.rug.nl/item/T00000#> .
+
+item:T00000
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1900 ;
+    :geoLong 6.5938
+  ] ;
+  :nd "+53.1900+006.5938"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T17:01:41"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00000.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00000:P1 ;
+  :text """Hier rust
+onze lieve Man en Vader
+Jan Werkman
+Brig. tit. Rijksveldw. Sebaldeburen
+geb. 23 Febr. 1883 te Oostwold (O)
+overl. 18 Jan. 1929 te Doezum Gem. Grootegast
+echtgenoot van
+Anje Reker
+""" .
+
+t00000:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P45Y10M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1883-02-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-01-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Werkman" ;
+    :text "Jan Werkman"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:58220 ;
+    :location [
+      a :Village ;
+      :place place:Sebaldeburen2747409 ;
+      :text "Sebaldeburen"
+    ] ;
+    :text "Brig. tit. Rijksveldw."
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :partOf [
+      a :Region ;
+      :place place:OldAmbt2749672
+    ] ;
+    :place place:Oostwold2749325 ;
+    :text "Oostwold (o)"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :partOf [
+      a :Municipality ;
+      :place place:GemeenteGrootegast2755203
+    ] ;
+    :place place:Doezum2756763 ;
+    :text "Doezum Gem. Grootegast"
+  ] ;
+  :relation [
+    a :Husband
+  ], [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00000:P2
+  ] .
+
+t00000:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Anje Reker" ;
+    :text "Anje Reker"
+  ] .
+

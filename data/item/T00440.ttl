@@ -1,0 +1,126 @@
+@prefix t00440: <https://noordergraf.rug.nl/item/T00440#> .
+
+item:T00440
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4793 ;
+    :geoLong 6.1609
+  ] ;
+  :nd "+53.4793+006.1609"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-02T11:39:28"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00440.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "ALWAYS FACE THE SUN AND YOU WON'T SEE THE SHADOWS"
+  ] ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00440:P1, t00440:P2, t00440:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Tree
+  ] ;
+  :text """TODO: always sale the sun
+and you wont see
+-
+tes staboats
+trine van bon
+schermonnikoog
+28-6-1930 15-6-2016
+anne browne
+stan bon
+schiermonnikoog 46.199
+kaapstad 1-11-2003
+colin huntington
+browne
+glasgow 15-1-1984
+kaapstad -2012
+""" .
+
+t00440:C1
+  a :Island ;
+  :place place:Schiermonnikoog2747591 ;
+  :text "TODO: SCHIERMONNIKOOG" .
+
+t00440:C2
+  a :City ;
+  :place place:Kaapstad3369157 ;
+  :text "TODO: KAAPSTAD" .
+
+t00440:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P85Y11M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1930-06-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2016-06-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trijnie van Bon" ;
+    :text "TODO: Trijnie van Bon"
+  ] ;
+  :placeOfBirth t00440:C1 ;
+  :placeOfDeath t00440:C1 .
+
+t00440:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y4M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-06-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2003-11-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Annie Browne-van Bon" ;
+    :text "TODO: Annie Browne-van Bon"
+  ] ;
+  :placeOfBirth t00440:C1 ;
+  :placeOfDeath t00440:C2 .
+
+t00440:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y5M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1934-01-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2012-07-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Colin Huntington-Browne" ;
+    :text "TODO: Colin Huntington-Browne"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Glasgow2648579 ;
+    :text "TODO: GLASGOW"
+  ] ;
+  :placeOfDeath t00440:C2 .
+

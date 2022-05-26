@@ -1,0 +1,111 @@
+@prefix t00191: <https://noordergraf.rug.nl/item/T00191#> .
+
+item:T00191
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1899 ;
+    :geoLong 6.5930
+  ] ;
+  :nd "+53.1899+006.5930"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-05T09:58:27"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00191.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00191:P1, t00191:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rusten
+mijn lieve ouders
+r. soetendal
+geb. 6-3-98
+te mildam
+overl. 15-4344
+te oudeschoot
+en
+a.vd. schoot
+geb. 10-1-'05
+te oudeschoot
+overl, ie-12-39
+.
+te groningen
+hun 200n hendrik
+hi
+""" .
+
+t00191:C2
+  a :Village ;
+  :place place:Oudeschoot2749007 ;
+  :text "TODO: OUDESCHOOT" .
+
+t00191:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P46Y1M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-03-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-04-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "R. Soetendal" ;
+    :text "TODO: R. Soetendal"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Mildam2750805 ;
+    :text "TODO: MILDAM"
+  ] ;
+  :placeOfDeath t00191:C2 .
+
+t00191:P2
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P34Y11M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-01-10"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-12-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "A. van der Schoot" ;
+    :text "TODO: A. van der Schoot"
+  ] ;
+  :placeOfBirth t00191:C2 ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] .
+
+t00191:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik" ;
+    :text "TODO: Hendrik"
+  ] ;
+  :relation [
+    a :Son ;
+    :target t00191:P1, t00191:P2
+  ] .
+

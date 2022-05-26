@@ -1,0 +1,60 @@
+@prefix t00179: <https://noordergraf.rug.nl/item/T00179#> .
+
+item:T00179
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1861 ;
+    :geoLong 6.5963
+  ] ;
+  :nd "+53.1861+006.5963"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-05T10:24:44"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00179.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00179:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: dustplaats
+van
+ws
+petronella wilhelmina
+rijgersveer
+geb.de nijs
+★1 april 1908 ✝ 9 october 1938
+ses
+ele
+""" .
+
+t00179:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P30Y6M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1908-04-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-10-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Petronella Wilhelmina Rijgersveer" ;
+    :text "petronella wilhelmina RIJGERSVEER geb. DE NIJS"
+  ] .
+

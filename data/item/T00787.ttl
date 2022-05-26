@@ -1,0 +1,52 @@
+@prefix t00787: <https://noordergraf.rug.nl/item/T00787#> .
+
+item:T00787
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7816 ;
+    :geoLong 6.8968
+  ] ;
+  :nd "+52.7816+006.8968"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T12:56:56"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00787.jpg
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00787:P1 ;
+  :text """TODO: ter gedachtenis aan
+wolter garming
+★ 30 - 3 - 1833 noordbarge
+✝ 12 - 3 = 1919 noordbarge
+""" .
+
+t00787:C1
+  a :Village ;
+  :place place:Noordbarge2749996 ;
+  :text "TODO: NOORDBARGE" .
+
+t00787:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P85Y11M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1833-03-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1919-03-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Wolter Garming" ;
+    :text "TODO: Wolter Garming"
+  ] ;
+  :placeOfBirth t00787:C1 ;
+  :placeOfDeath t00787:C1 .
+

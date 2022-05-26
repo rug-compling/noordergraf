@@ -1,0 +1,63 @@
+@prefix t00091: <https://noordergraf.rug.nl/item/T00091#> .
+
+item:T00091
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2033 ;
+    :geoLong 6.5725
+  ] ;
+  :nd "+53.2033+006.5725"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T11:20:39"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00091.jpg
+  ] ;
+  :site site:NLgr9721aaGroningen ;
+  :subject t00091:P1, t00091:P2 ;
+  :text """TODO: rustplaats van
+mun lieve moeder
+wilhelmina h. p. m.
+mast
+★ 31 aug. 1895 t 15 mei 1968
+sinds 7 dec. 1932 wed. van
+adrianus n. witloks
+""" .
+
+t00091:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y8M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1895-08-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-05-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Wilhelmina H.P.M. Mast" ;
+    :text "TODO: Wilhelmina H.P.M. Mast"
+  ] ;
+  :relation [
+    a :Widow ;
+    :begin "1932-12-07"^^xsd:date ;
+    :target t00091:P2
+  ], [
+    a :Mother
+  ] .
+
+t00091:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Adrianus N. Witloks" ;
+    :text "TODO: Adrianus N. Witloks"
+  ] .
+

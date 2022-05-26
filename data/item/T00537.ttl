@@ -1,0 +1,82 @@
+@prefix t00537: <https://noordergraf.rug.nl/item/T00537#> .
+@prefix t00538: <https://noordergraf.rug.nl/item/T00538#> .
+
+item:T00537
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1043 ;
+    :geoLong 6.8761
+  ] ;
+  :nd "+53.1043+006.8761"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T14:21:09"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00537.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00537:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Flag
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Anchor
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Anchor
+  ] ;
+  :text """TODO: x
+tergedachtenisan
+idac
+strating
+geboren
+1 dec. 1832
+overleden
+23 cdt. 1913
+wedumve van
+jan vrieze
+de vries
+rust zacht.
+""" .
+
+t00537:P1
+  a :Female ;
+  :sameAs t00538:P2 ;
+  :age [
+    a :Age ;
+    :duration "P80Y10M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1832-12-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-10-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Ida G. Strating" ;
+    :text "TODO: Ida G. Strating"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00537:P2
+  ] .
+
+t00537:P2
+  a :Male ;
+  :sameAs t00538:P1 ;
+  :name [
+    a :Name ;
+    :fullName "Jan Vrieze de Vries" ;
+    :text "TODO: Jan Vrieze de Vries"
+  ] .
+

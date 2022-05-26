@@ -4,14 +4,14 @@ package main
 
 TODO:
 
-Voor alle directory's, bijvoorbeeld /tomb :
+Voor alle directory's, bijvoorbeeld /item :
 
-    /tomb/
-    /tomb/index      -> html-bestand met links naar alle bestanden
+    /item/
+    /item/index      -> html-bestand met links naar alle bestanden
 
-    /tomb/index.ttl
-    /tomb/index.rdf
-    /tomb/index.nt   -> alle bestanden samengevoegd
+    /item/index.ttl
+    /item/index.rdf
+    /item/index.nt   -> alle bestanden samengevoegd
 
 */
 
@@ -289,9 +289,9 @@ func doHTML() {
 
 	noindex := ""
 
-	if uri == "/ns" || strings.HasPrefix(uri, "/bible/") || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/tomb/") {
+	if uri == "/ns" || strings.HasPrefix(uri, "/bible/") || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/item/") {
 
-		if strings.HasPrefix(uri, "/tomb/") {
+		if strings.HasPrefix(uri, "/item/") {
 			year := time.Now().Year()
 			mm := reYear.FindAllStringSubmatch(data, -1)
 			for _, m := range mm {
@@ -362,13 +362,13 @@ func doHTML() {
 			lines[i] = strings.Join(a, " ")
 		}
 		body = strings.Join(lines, "\n")
-	} else if strings.HasPrefix(uri, "/tomb") {
+	} else if strings.HasPrefix(uri, "/item") {
 		lines := strings.Split(body, "\n")
 		for i, line := range lines {
 			if strings.TrimRight(line, " \t\r\n") == "" {
 				continue
 			}
-			if line[0] == ' ' || line[0] == '\t' || strings.HasPrefix(line, "tomb:") {
+			if line[0] == ' ' || line[0] == '\t' || strings.HasPrefix(line, "item:") {
 				continue
 			}
 			a := strings.Fields(line)
@@ -390,7 +390,7 @@ func doHTML() {
 	if title == "ns" {
 		title = "ns#"
 		class = "pad"
-	} else if strings.HasPrefix(title, "tomb") {
+	} else if strings.HasPrefix(title, "item") {
 		class = "pad"
 	}
 	langtag := []string{"nl", "en"}[language]

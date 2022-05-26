@@ -1,0 +1,89 @@
+@prefix t00187: <https://noordergraf.rug.nl/item/T00187#> .
+
+item:T00187
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1909 ;
+    :geoLong 6.5923
+  ] ;
+  :nd "+53.1909+006.5923"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-05T10:07:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00187.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00187:P1, t00187:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: <
+hier rusten
+onze lieve ouders
+willem schuur
+geb. 26 met 1888
+overl. 17 sept. 1938
+echt g. van
+trijntje
+steenbergen
+geb. 21 dec.1885
+overl.25 sept. 1957
+""" .
+
+t00187:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P50Y3M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-05-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1938-09-17"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Willem Schuur" ;
+    :text "TODO: Willem Schuur"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00187:P2
+  ] .
+
+t00187:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P71Y9M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-12-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1957-09-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trijntje Steenbergen" ;
+    :text "TODO: Trijntje Steenbergen"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+

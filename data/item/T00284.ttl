@@ -1,0 +1,109 @@
+@prefix t00284: <https://noordergraf.rug.nl/item/T00284#> .
+
+item:T00284
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4036 ;
+    :geoLong 6.7489
+  ] ;
+  :nd "+53.4036+006.7489"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-16T16:53:05"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00284.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :quoteSubject t00284:P1 ;
+    :text "ZALIG ZIJN ZIJ, DIE ONTSLAPEN VROMEN, VOOR ONS TE VROEG AAN DE AARD ONTNOMEN."
+  ], [
+    a :Quote ;
+    :quoteSubject t00284:P2 ;
+    :text "ZIJN VERLANGEN WAS, DAT HIJ NAAR JEZUS GING"
+  ] ;
+  :site site:NLgr9985scOosternieland ;
+  :subject t00284:P1, t00284:P2 ;
+  :text """TODO: rustplaats
+van onze lieve oudeas
+anna ruploeg teppe wierenga
+geb.24 jam.1874 geb:7 maart 1872
+te zilouk
+te oostermieland
+overl.25 dct.1944 overl.aldaar
+te uithuizen
+3 juli is 41
+ร
+zalig zumd ontslapem zun verlangen was
+vagnen, voor ons te dat ho naar jezus
+Η
+vroeg aamd'aand ont ging
+nomen
+""" .
+
+t00284:C3
+  a :Village ;
+  :place place:Oosternieland2749429 ;
+  :text "TODO: OOSTERNIELAND" .
+
+t00284:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P70Y9M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-01-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-10-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Anna Rijploeg" ;
+    :text "TODO: Anna Rijploeg"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zijldijk2743893 ;
+    :text "TODO: ZIJLDIJK"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Uithuizen2745970 ;
+    :text "TODO: UITHUIZEN"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00284:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y3M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1872-03-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1941-07-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Eppe Wierenga" ;
+    :text "TODO: Eppe Wierenga"
+  ] ;
+  :placeOfBirth t00284:C3 ;
+  :placeOfDeath t00284:C3 ;
+  :relation [
+    a :Parent
+  ] .
+

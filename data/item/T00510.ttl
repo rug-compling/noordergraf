@@ -1,0 +1,63 @@
+@prefix t00510: <https://noordergraf.rug.nl/item/T00510#> .
+
+item:T00510
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1648 ;
+    :geoLong 6.7527
+  ] ;
+  :nd "+53.1648+006.7527"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T10:34:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00510.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00510:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: hier rust
+onze develmoeder en oma
+eelke ten cate
+0_0 11902 10 9 1974
+li
+rust zacht
+""" .
+
+t00510:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P72Y1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-09-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1974-09-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Eelke ten Cate" ;
+    :text "TODO: Eelke ten Cate"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Grandmother
+  ] .
+

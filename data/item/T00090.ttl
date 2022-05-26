@@ -1,0 +1,92 @@
+@prefix t00090: <https://noordergraf.rug.nl/item/T00090#> .
+
+item:T00090
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2032 ;
+    :geoLong 6.5720
+  ] ;
+  :nd "+53.2032+006.5720"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-25T11:28:19"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00090.jpg
+  ] ;
+  :site site:NLgr9721aaGroningen ;
+  :subject t00090:P1, t00090:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: enerale
+rustplaats van
+mijn lieve man, onze vader en opa
+gerhardus johannes
+roes zing
+★ 25_3_1910
+13-6-1983
+en onze lieve moeder, oma en omaatje
+,
+flsien brugge
+31-5-1915 14_12_1996
+""" .
+
+t00090:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y2M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1910-03-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1983-06-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Gerhardus Johannes Roeszing" ;
+    :text "TODO: Gerhardus Johannes Roeszing"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Grandfather
+  ], [
+    a :Husband ;
+    :target t00090:P2
+  ] .
+
+t00090:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y6M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1915-05-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1996-12-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Elsien Brugge" ;
+    :text "TODO: Elsien Brugge"
+  ] ;
+  :relation [
+    a :GreatGrandmother
+  ], [
+    a :Mother
+  ], [
+    a :Grandmother
+  ] .
+

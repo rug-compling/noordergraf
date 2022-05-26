@@ -1,0 +1,65 @@
+@prefix t00964: <https://noordergraf.rug.nl/item/T00964#> .
+
+item:T00964
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1628 ;
+    :geoLong 6.6123
+  ] ;
+  :nd "+53.1628+006.6123"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-27T17:12:18"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00964.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "GELIJK HET GRAS IS ONS \\ KORTSTONDIG LEVEN"@nld
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00964:P1, t00964:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: hier rust
+onze lieve
+vrouw en moeder
+trunje bos
+echt. van j.vos
+overl.25april 1916
+geluknet gras is ons
+kortstondig leven
+""" .
+
+t00964:P1
+  a :Female ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1916-04-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Trijnje Bos" ;
+    :text "TODO: Trijnje Bos"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t00964:P2
+  ], [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t00964:P2
+  ] .
+
+t00964:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "J. Vos" ;
+    :text "TODO: J. Vos"
+  ] .
+

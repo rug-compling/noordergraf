@@ -1,0 +1,48 @@
+@prefix t00910: <https://noordergraf.rug.nl/item/T00910#> .
+
+item:T00910
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1719 ;
+    :geoLong 6.3656
+  ] ;
+  :nd "+53.1719+006.3656"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:10:53"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00910.jpg
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00910:P1, t00910:P2 ;
+  :text """TODO: 1
+rustplaats
+van
+kornelis waterboek
+ito
+en
+zun echtgenoote
+grietje vos.
+""" .
+
+t00910:P1
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Kornelis Waterboek" ;
+    :text "TODO: Kornelis Waterboek"
+  ] .
+
+t00910:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Grietje Vos" ;
+    :text "TODO: Grietje Vos"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00910:P1
+  ] .
+

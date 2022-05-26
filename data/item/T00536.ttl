@@ -1,0 +1,68 @@
+@prefix t00536: <https://noordergraf.rug.nl/item/T00536#> .
+
+item:T00536
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1045 ;
+    :geoLong 6.8764
+  ] ;
+  :nd "+53.1045+006.8764"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T14:21:59"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00536.jpg
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00536:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Obelisk
+  ] ;
+  :text """TODO: ciclismo
+u
+ter gedachtenis
+van
+je
+muldea
+geble veendan
+12 juni 1894
+overt, le wildervank
+25 juni 1955
+""" .
+
+t00536:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P57Y13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-06-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1955-06-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "H.F. Mulder" ;
+    :text "TODO: H.F. Mulder"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Wildervank2744431 ;
+    :text "TODO: WILDERVANK"
+  ] .
+

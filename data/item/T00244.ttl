@@ -1,0 +1,76 @@
+@prefix t00244: <https://noordergraf.rug.nl/item/T00244#> .
+
+item:T00244
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1727 ;
+    :geoLong 6.6068
+  ] ;
+  :nd "+53.1727+006.6068"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-11T17:31:46"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00244.jpg
+  ] ;
+  :site site:NLgr9751bbHaren ;
+  :subject t00244:P1, t00244:P2 ;
+  :text """TODO: feiko jacob bouman
+v1oolbouwer
+14 = 5= 1888 23 = 8=1951
+geliefde echtgenoot van
+neeltje van der nis
+22= 2 = 1900 13-5=1987
+""" .
+
+t00244:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P63Y2M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-06-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1951-08-23"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Feiko Jacob Bouman" ;
+    :text "TODO: Feiko Jacob Bouman"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:94120
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00244:P2
+  ] .
+
+t00244:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y2M21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1900-02-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1987-05-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Neeltje van der Wis" ;
+    :text "TODO: Neeltje van der Wis"
+  ] .
+

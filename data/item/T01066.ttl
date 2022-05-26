@@ -1,0 +1,109 @@
+@prefix t01066: <https://noordergraf.rug.nl/item/T01066#> .
+
+item:T01066
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3604 ;
+    :geoLong 6.3435
+  ] ;
+  :nd "+53.3604+006.3435"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-05-02T16:49:07"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01066.jpg
+  ] ;
+  :quote t01066:V1 ;
+  :site site:NLgr9971ebUlrum ;
+  :subject t01066:P1, t01066:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ] ;
+  :text """TODO: ter gebachtenis aan
+w.nipperus
+leven hooeg ger ger. school
+te ulrum
+geb 13 maart 1842 te veendam
+overl.21 maart 1527 te olrum
+zun beortefe huisgenoote
+d.jansen
+je
+zaligon heilig is in die
+my
+deel meeft in de eerste opstamine
+over deze heeft de
+tweede dood geen macht.
+clet
+bre, 2016
+༨ ༩ ཅ་ཀྱིས་ཟེར་བ་ལ་ང ར ཅང་
+we areas
+02
+w
+""" .
+
+t01066:C1
+  a :Village ;
+  :place place:Ulrum2745944 ;
+  :text "TODO: ULRUM" .
+
+t01066:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P80Y9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-03-12"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-03-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "W. Nipperus" ;
+    :text "TODO: W. Nipperus"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:13940 ;
+    :location t01066:C1 ;
+    :organisation [
+      a :School ;
+      :organisationName "gereformeerde school"
+    ] ;
+    :text "hoofd der ger. school te Ulrum"
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :placeOfDeath t01066:C1 ;
+  :relation [
+    a :Housemate ;
+    :target t01066:P2
+  ] .
+
+t01066:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "E. Jansen" ;
+    :text "TODO: E. Jansen"
+  ] .
+
+t01066:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Revelation ;
+    :chapter 20 ;
+    :verse "6"
+  ] ;
+  :text "ZALIG EN HEILIG IS HIJ, DIE DEEL HEEFT IN DE EERSTE OPSTANDING. OVER DEZE HEEFT DE TWEEDE DOOD GEEN MACHT."@nld .
+

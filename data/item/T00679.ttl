@@ -1,0 +1,76 @@
+@prefix t00679: <https://noordergraf.rug.nl/item/T00679#> .
+
+item:T00679
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0675 ;
+    :geoLong 5.5223
+  ] ;
+  :nd "+53.0675+005.5223"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-14T13:25:19"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00679.jpg
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00679:P1, t00679:P2 ;
+  :text """TODO: hier rusten
+mijn geliefde zusters
+geeske v.d. meulen
+★ 25-3-1907
+✝ 3-11--1932
+griet v.d. meulen
+★ 23-12-1904
+1 28-1-7984
+""" .
+
+t00679:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P25Y7M9D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-03-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1932-11-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geeske van der Meulen" ;
+    :text "TODO: Geeske van der Meulen"
+  ] ;
+  :relation [
+    a :Sister
+  ] .
+
+t00679:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P79Y1M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1904-12-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1984-01-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Griet van der Meulen" ;
+    :text "TODO: Griet van der Meulen"
+  ] ;
+  :relation [
+    a :Sister
+  ] .
+

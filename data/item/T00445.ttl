@@ -1,0 +1,67 @@
+@prefix t00445: <https://noordergraf.rug.nl/item/T00445#> .
+
+item:T00445
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4792 ;
+    :geoLong 6.1601
+  ] ;
+  :nd "+53.4792+006.1601"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-02T11:31:28"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00445.jpg
+  ] ;
+  :quote t00445:V1 ;
+  :site site:NLfr9166naSchiermonnikoog ;
+  :subject t00445:P1 ;
+  :text """TODO: ΟΙ -
+ΟΣ
+- .
+ΙΕΣ -
+ΕΤΑ
+α ktober 197
+ΕΤΟΕΤΕ ΤΟ
+ron
+""" .
+
+t00445:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y1M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1911-10-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-11-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Yje Teerdstra" ;
+    :text "TODO: Yje Teerdstra"
+  ] ;
+  :relation [
+    a :Brother
+  ], [
+    a :BrotherInLaw
+  ], [
+    a :Uncle
+  ] .
+
+t00445:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Romans ;
+    :chapter 6 ;
+    :verse "8"
+  ] ;
+  :text "TODO" .
+

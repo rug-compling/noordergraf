@@ -1,0 +1,99 @@
+@prefix t00527: <https://noordergraf.rug.nl/item/T00527#> .
+
+item:T00527
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1650 ;
+    :geoLong 6.7532
+  ] ;
+  :nd "+53.1650+006.7532"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T10:29:15"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00527.jpg
+  ] ;
+  :quote t00527:V1 ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00527:P1, t00527:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Tuba
+  ] ;
+  :text """TODO: ter gedachtenis aan
+onze lieve man, vader en opa
+roelf sjoerd van dijk
+★ 16 -4-1905 t 15_3-1968
+✝
+en onze lieve moeder en oma
+aaltje huizing
+★5_1_1905 t 5_11_1994
+openb. 14:13
+""" .
+
+t00527:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P62Y10M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-04-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-03-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelf Sjoerd van Dijk" ;
+    :text "TODO: Roelf Sjoerd van Dijk"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00527:P2
+  ], [
+    a :Father
+  ], [
+    a :Grandfather
+  ] .
+
+t00527:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y10M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1905-01-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1994-11-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Alltje Huizing" ;
+    :text "TODO: Alltje Huizing"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Grandmother
+  ] .
+
+t00527:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Revelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "TODO" .
+

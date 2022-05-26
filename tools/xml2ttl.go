@@ -44,7 +44,7 @@ func main() {
 		}
 		if strings.HasPrefix(line, "@prefix") {
 			aa := strings.Fields(line)
-			if strings.HasPrefix(aa[2], "<tomb/") && aa[1] != "tomb:" {
+			if strings.HasPrefix(aa[2], "<item/") && aa[1] != "item:" {
 				line = strings.Replace(line, "<", "<"+base, 1)
 				fmt.Print(line)
 			} else {

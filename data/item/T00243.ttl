@@ -1,0 +1,86 @@
+@prefix t00243: <https://noordergraf.rug.nl/item/T00243#> .
+
+item:T00243
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1730 ;
+    :geoLong 6.6071
+  ] ;
+  :nd "+53.1730+006.6071"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-11T17:35:49"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00243.jpg
+  ] ;
+  :quote t00243:V1 ;
+  :site site:NLgr9751bbHaren ;
+  :subject t00243:P1, t00243:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: sute
+ter
+gedachtenis aan
+frensvangussel
+geb te onnen
+i juni 1879
+overl aldaar
+21 oct. 1945
+echtgenoot van
+sietske de vries
+ng0 g.
+""" .
+
+t00243:C1
+  a :Village ;
+  :place place:Onnen2749588 ;
+  :text "TODO: ONNEN" .
+
+t00243:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P66Y4M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-06-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-10-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Frens van Gijssel" ;
+    :text "TODO: Frens van Gijssel"
+  ] ;
+  :placeOfBirth t00243:C1 ;
+  :placeOfDeath t00243:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00243:P2
+  ] .
+
+t00243:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Sietske de Vries" ;
+    :text "TODO: Sietske de Vries"
+  ] .
+
+t00243:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:2Timothy ;
+    :chapter 4 ;
+    :verse "7-8"
+  ] ;
+  :text "TODO" .
+

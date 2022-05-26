@@ -1,0 +1,102 @@
+@prefix t00574: <https://noordergraf.rug.nl/item/T00574#> .
+
+item:T00574
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1059 ;
+    :geoLong 6.8752
+  ] ;
+  :nd "+53.1059+006.8752"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:37:40"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00574.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MOEDER"
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00574:P1, t00574:P2, t00574:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: ta
+ter gedachtenis
+van
+takens
+talje
+mir inte
+geb.te noordbroek
+15 juni 1845
+oyerl. te veendam
+20 april 1921,
+weduwe van
+harko bakker
+eerder van
+hendrik boekweg
+rust zacht
+lieve moeder.
+""" .
+
+t00574:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P75Y10M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-06-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1921-04-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Talje Takens" ;
+    :text "TODO: Talje Takens"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Noordbroek2749989 ;
+    :text "TODO: NOORDBROEK"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Veendam2745783 ;
+    :text "TODO: VEENDAM"
+  ] ;
+  :relation t00574:R1, [
+    a :Widow ;
+    :before t00574:R1 ;
+    :target t00574:P3
+  ], [
+    a :Mother
+  ] .
+
+t00574:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Harko Bakker" ;
+    :text "TODO: Harko Bakker"
+  ] .
+
+t00574:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Boekweg" ;
+    :text "TODO: Hendrik Boekweg"
+  ] .
+
+t00574:R1
+  a :Widow ;
+  :target t00574:P2 .
+

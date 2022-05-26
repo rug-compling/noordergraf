@@ -1,0 +1,98 @@
+@prefix t00862: <https://noordergraf.rug.nl/item/T00862#> .
+
+item:T00862
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7193 ;
+    :geoLong 6.8450
+  ] ;
+  :nd "+52.7193+006.8450"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:14:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00862.jpg
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00862:P1, t00862:P2 ;
+  :text """TODO: rustplaats
+van onze lieve ouders
+willem bonnen
+geb.9 mei 1847 te aalden
+overl.10 juli 1926 te veenoord
+en
+everdina bos
+geb.25 jan. 1845 te hijken
+overl.1 nov.1926 te m amsterdam
+be
+""" .
+
+t00862:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P79Y2M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1847-05-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-07-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Willem Bonnen" ;
+    :text "TODO: Willem Bonnen"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Aalden2760142 ;
+    :text "TODO: AALDEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Veenoord2745753 ;
+    :text "TODO: VEENOORD"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00862:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y9M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-01-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-11-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Everdina Bos" ;
+    :text "TODO: Everdina Bos"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Hijken2754092 ;
+    :text "TODO: HIJKEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:NieuwAmsterdam2750375 ;
+    :text "TODO: NIEUW-AMSTERDAM"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

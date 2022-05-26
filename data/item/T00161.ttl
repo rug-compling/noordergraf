@@ -1,0 +1,112 @@
+@prefix t00161: <https://noordergraf.rug.nl/item/T00161#> .
+
+item:T00161
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2058 ;
+    :geoLong 6.5704
+  ] ;
+  :nd "+53.2058+006.5704"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-04T10:59:37"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00161.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "ZOEKT DE DINGEN DIE BOVEN ZIJN"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Colossians ;
+      :chapter 3 ;
+      :verse "1"
+    ] ;
+    :text "COLOSSENZEN 3:1"
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00161:P1, t00161:P2 ;
+  :text """TODO: zoekt de dingen
+die boven zijn col:2:1
+hier rust onze lieve
+vrouw en moeder
+jeltje veenman
+ger. te sleen 15 febr. 1863
+overlte gron.25 sept.1930
+echtgenoote van
+marten de wind
+geb. te grouw 2 jan.1861
+overl. te gron.19 maart1952
+""" .
+
+t00161:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00161:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P67Y7M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-02-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1930-09-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jeltje Veenman" ;
+    :text "TODO: Jeltje Veenman"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Sleen2747182 ;
+    :text "TODO: SLEEN"
+  ] ;
+  :placeOfDeath t00161:C1 ;
+  :relation [
+    a :Wife ;
+    :target t00161:P2
+  ], [
+    a :Spouse ;
+    :target t00161:P2
+  ], [
+    a :Mother
+  ] .
+
+t00161:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P91Y2M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1861-01-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1952-03-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Marten de Wind" ;
+    :text "TODO: Marten de Wind"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Grou2755052 ;
+    :text "TODO: GROUW"
+  ] ;
+  :placeOfDeath t00161:C1 .
+

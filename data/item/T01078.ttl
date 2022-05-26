@@ -1,0 +1,108 @@
+@prefix t01078: <https://noordergraf.rug.nl/item/T01078#> .
+
+item:T01078
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3808 ;
+    :geoLong 6.8588
+  ] ;
+  :nd "+53.3808+006.8588"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-17T18:25:26"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01078.jpg
+  ] ;
+  :site site:NLgr9906ppBierum ;
+  :subject t01078:P1, t01078:P2 ;
+  :text """TODO: rust
+tplaat
+pam
+ssen
+melle engels
+geb. te lared
+epoca den 2i get
+3805 en verlite
+pierem den39
+r
+jelt 3870.
+ro
+0
+er van maria
+bos goed te
+to
+coetwold den
+26 manent 1802
+ovend te zien
+der 8 oct 1894
+ehigenooten
+""" .
+
+t01078:C2
+  a :Village ;
+  :place place:Bierum2758983 ;
+  :text "TODO: BIERUM" .
+
+t01078:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P64Y8M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1805-10-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-07-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Melle Engels" ;
+    :text "TODO: Melle Engels"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zuidbroek2743800 ;
+    :text "TODO: ZUIDBROEK"
+  ] ;
+  :placeOfDeath t01078:C2 ;
+  :relation [
+    a :Spouse ;
+    :target t01078:P2
+  ] .
+
+t01078:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y6M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1804-03-26"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-10-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Maria Bos" ;
+    :text "TODO: Maria Bos"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Oostwold2749325 ;
+    :text "TODO: OOSTWOLD"
+  ] ;
+  :placeOfDeath t01078:C2 ;
+  :relation [
+    a :Spouse ;
+    :target t01078:P1
+  ] .
+

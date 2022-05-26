@@ -1,0 +1,92 @@
+@prefix t00721: <https://noordergraf.rug.nl/item/T00721#> .
+
+item:T00721
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7812 ;
+    :geoLong 6.8992
+  ] ;
+  :nd "+52.7812+006.8992"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:22:09"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00721.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00721:P1, t00721:P2 ;
+  :symbol [
+    a :Symbol
+  ] ;
+  :text """hier rust
+onze lieve
+man en vader
+jannes
+joling
+geb. te weerdinge
+27 juni 1890
+overl. in het diac.
+huis te emmen
+30 jan. 1939
+echtgenoot van
+roelfien hardenberg
+
+rust zacht""" .
+
+t00721:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y6M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-06-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1939-01-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jannes Joling" ;
+    :text "TODO: Jannes Joling"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Weerdinge2744927 ;
+    :text "TODO: WEERDINGE"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :coordinates [
+      a :Coordinates ;
+      :geo [
+        a :GeoPoint ;
+        :geoLat 52.7818 ;
+        :geoLong 6.9076
+      ] ;
+      :nd "+52.7818+006.9076"^^ll:
+    ] ;
+    :place place:Emmen2756136 ;
+    :text "het diac. huis te emmen"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00721:P2
+  ] .
+
+t00721:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Roelfien Hardenberg" ;
+    :text "TODO: Roelfien Hardenberg"
+  ] .
+

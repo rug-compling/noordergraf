@@ -1,0 +1,87 @@
+@prefix t00881: <https://noordergraf.rug.nl/item/T00881#> .
+
+item:T00881
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7193 ;
+    :geoLong 6.8453
+  ] ;
+  :nd "+52.7193+006.8453"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:10:54"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00881.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00881:P1, t00881:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: 19
+hier roster onze web ouders
+jacob sieben
+31-12-74 13.3261.
+en
+roelofje kortwijk
+25-30 25-3261
+rust zacht
+""" .
+
+t00881:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P86Y5M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-12-31"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-06-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jacob Sieben" ;
+    :text "TODO: Jacob Sieben"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00881:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y1M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-07-25"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1961-08-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Roelofje Kortwijk" ;
+    :text "TODO: Roelofje Kortwijk"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

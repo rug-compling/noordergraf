@@ -1,0 +1,113 @@
+@prefix t00331: <https://noordergraf.rug.nl/item/T00331#> .
+
+item:T00331
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7158 ;
+    :geoLong 6.4738
+  ] ;
+  :nd "+52.7158+006.4738"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:21:35"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00331.jpg
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00331:P1, t00331:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: 1
+hier rust
+onze geliefde man
+en vader
+jan steenbergen
+geb.te hoogeveen
+18 nov. 1898,
+overl. aldaar
+12 sept. 1932.
+en onze moeder
+en oma
+aaltje
+steenbergen
+dekker
+ged. te zuidwolde
+20 april 190l
+ovle te leeuwarden
+15 jan. 1979.
+siet
+""" .
+
+t00331:C1
+  a :Town ;
+  :place place:Hoogeveen2753719 ;
+  :text "TODO: HOOGEVEEN" .
+
+t00331:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P30Y5M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1898-11-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1929-05-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Steenbergen" ;
+    :text "TODO: Jan Steenbergen"
+  ] ;
+  :placeOfBirth t00331:C1 ;
+  :placeOfDeath t00331:C1 ;
+  :relation [
+    a :Husband ;
+    :target t00331:P2
+  ], [
+    a :Father
+  ] .
+
+t00331:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y8M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-04-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1979-01-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aaltje Steenbergen-Dekker" ;
+    :text "TODO: Aaltje Steenbergen-Dekker"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zuidwolde2743637 ;
+    :text "TODO: ZUIDWOLDE"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Leeuwarden2751792 ;
+    :text "TODO: LEEUWARDEN"
+  ] ;
+  :relation [
+    a :Grandmother
+  ], [
+    a :Mother
+  ] .
+

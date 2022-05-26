@@ -1,0 +1,74 @@
+@prefix t00249: <https://noordergraf.rug.nl/item/T00249#> .
+
+item:T00249
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1725 ;
+    :geoLong 6.6063
+  ] ;
+  :nd "+53.1725+006.6063"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-11T17:20:07"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00249.jpg
+  ] ;
+  :site site:NLgr9751bbHaren ;
+  :subject t00249:P1, t00249:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:BrokenFlower
+  ] ;
+  :text """TODO: fistularia
+lcourt
+johentale
+e helemaan
+vi alders
+faun 1930
+214s
+ů .
+bottednu give
+histoilunga
+""" .
+
+t00249:C1
+  a :Village ;
+  :place place:Helpman2754444 ;
+  :text "TODO: HELPMAN" .
+
+t00249:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y7M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1866-05-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1950-01-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Egbert Vorenkamp" ;
+    :text "TODO: Egbert Vorenkamp"
+  ] ;
+  :placeOfBirth t00249:C1 ;
+  :placeOfDeath t00249:C1 ;
+  :relation [
+    a :Spouse ;
+    :target t00249:P2
+  ] .
+
+t00249:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "H. Stollenga" ;
+    :text "TODO: H. Stollenga"
+  ] .
+

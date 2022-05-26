@@ -1,0 +1,86 @@
+@prefix t00725: <https://noordergraf.rug.nl/item/T00725#> .
+
+item:T00725
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7823 ;
+    :geoLong 6.8981
+  ] ;
+  :nd "+52.7823+006.8981"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:13:57"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00725.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00725:P1, t00725:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: rustplaats van
+onze lieve ouders
+johannes haasken
+geb. 22 maart 1860 - overl. 27 juni 1933
+en
+margina w. honning
+geb. i juli 1862
+overl 14 febr. 1949.
+rust
+zacht
+""" .
+
+t00725:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y3M5D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-03-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1933-06-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johannes Haasken" ;
+    :text "TODO: Johannes Haasken"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00725:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y7M13D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1862-07-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-02-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Margina W. Honning" ;
+    :text "TODO: Margina W. Honning"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

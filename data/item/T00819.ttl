@@ -1,0 +1,127 @@
+@prefix t00819: <https://noordergraf.rug.nl/item/T00819#> .
+
+item:T00819
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2304 ;
+    :geoLong 6.5518
+  ] ;
+  :nd "+53.2304+006.5518"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-01T12:15:55"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00819.jpg
+  ] ;
+  :quote t00819:V1 ;
+  :site site:NLgr9741acGroningen ;
+  :subject t00819:P1, t00819:P2, t00819:P3, t00819:P4 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: her dust
+onze leve vrouw en moeder
+hiektje huizinga
+geb: 18 sun 1883
+overl. 3 febr. 1945
+echtgeno te van d dekhuis
+eerder van t drehage
+opb 14:13
+en onze lieve vader
+pieter dijkhuis
+geb. 17 jan. 1884
+overl. 27. aug. 1959
+eerder wedn vans. oosterhuis
+""" .
+
+t00819:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P56Y7M16D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-06-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-02-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hiektje Huizinga" ;
+    :text "hiektje huizinga"
+  ] ;
+  :relation t00819:R3, [
+    a :Spouse ;
+    :before t00819:R3 ;
+    :target t00819:P3
+  ], [
+    a :Wife ;
+    :target t00819:P2
+  ], [
+    a :Mother
+  ] .
+
+t00819:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P75Y7M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1884-01-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-08-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Pieter Dijkhuis" ;
+    :text "p. dijkhuis", "pieter dijkhuis"
+  ] ;
+  :relation [
+    a :Father
+  ], [
+    a :Widower ;
+    :before t00819:R3 ;
+    :target t00819:P4
+  ] .
+
+t00819:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "T. Drexhage" ;
+    :text "t. drexhage"
+  ] .
+
+t00819:P4
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "S. Oosterhuis" ;
+    :text "s. oosterhuis"
+  ] .
+
+t00819:R3
+  a :Spouse ;
+  :target t00819:P2 .
+
+t00819:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Revelation ;
+    :chapter 14 ;
+    :verse "13"
+  ] ;
+  :text "TODO" .
+

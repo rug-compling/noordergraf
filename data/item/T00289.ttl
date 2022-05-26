@@ -1,0 +1,109 @@
+@prefix t00289: <https://noordergraf.rug.nl/item/T00289#> .
+
+item:T00289
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4042 ;
+    :geoLong 6.7489
+  ] ;
+  :nd "+53.4042+006.7489"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-16T16:47:34"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00289.jpg
+  ] ;
+  :quote t00289:V1 ;
+  :site site:NLgr9985scOosternieland ;
+  :subject t00289:P1, t00289:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: ter sedachtenis aan
+kornelis buurma
+peb.tesplik 9 sep iro7
+jverlieposteri lieland
+lian irs thtgenooit
+yaneseka
+atapem qubep
+her chriber pemeente
+lar
+te lath meeden. us, 522
+""" .
+
+t00289:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y4M12D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1807-09-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1891-01-31"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Kornelis J. Buurma" ;
+    :text "TODO: Kornelis J. Buurma"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:14000 ;
+    :location [
+      a :Village ;
+      :place place:Uithuizermeeden2745968 ;
+      :text "TODO: UITHUIZERMEEDEN"
+    ] ;
+    :organisation [
+      a :Congregation ;
+      :organisationName "CHRISTELIJKE GEREFORMEERDE GEMEENTE"
+    ] ;
+    :period [
+      a :Period ;
+      :duration "P40Y"^^xsd:duration ;
+      :text "ruim 40 jaren"
+    ]
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Spijk2746935 ;
+    :text "TODO: SPIJK"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Oosternieland2749429 ;
+    :text "TODO: OOSTERNIELAND"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00289:P2
+  ] .
+
+t00289:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "D.W. Jensema" ;
+    :text "TODO: D.W. Jensema"
+  ] .
+
+t00289:V1
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Isaiah ;
+    :chapter 57 ;
+    :verse "2"
+  ] ;
+  :text "TODO" .
+

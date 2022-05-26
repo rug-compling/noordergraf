@@ -1,0 +1,135 @@
+@prefix t00252: <https://noordergraf.rug.nl/item/T00252#> .
+
+item:T00252
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2055 ;
+    :geoLong 6.5722
+  ] ;
+  :nd "+53.2055+006.5722"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-10T09:43:21"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00252.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MARANATHA"
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00252:P1, t00252:P2, t00252:P3, t00252:P4 ;
+  :text """TODO: maranatha
+in jezus ontslapen
+onze lieve man en vader
+jan schut
+x3_01_1390 ★ 29_1_1958
+en
+onze lieve moeder en oma
+aaltje ankum
+23_4_1895 16-6-1982
+_
+hendrik jan schut
+11-12-1923 ✝ 13-8-2002
+jan hendrik schut
+3-2-1946 ✝ 21-2-1946
+""" .
+
+t00252:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P68Y21D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1890-11-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1958-11-29"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Schut" ;
+    :text "TODO: Jan Schut"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00252:P2
+  ], [
+    a :Father ;
+    :target t00252:P3
+  ] .
+
+t00252:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P89Y1M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-04-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1982-06-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aaltje Ankum" ;
+    :text "TODO: Aaltje Ankum"
+  ] ;
+  :relation [
+    a :Mother ;
+    :target t00252:P3
+  ], [
+    a :Grandmother
+  ] .
+
+t00252:P3
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P78Y8M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-12-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2002-08-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik Jan Schut" ;
+    :text "TODO: Hendrik Jan Schut"
+  ] .
+
+t00252:P4
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1946-02-03"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1946-02-21"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Hendrik Schut" ;
+    :text "TODO: Jan Hendrik Schut"
+  ] .
+

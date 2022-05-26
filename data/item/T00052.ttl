@@ -1,0 +1,86 @@
+@prefix t00052: <https://noordergraf.rug.nl/item/T00052#> .
+
+item:T00052
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1630 ;
+    :geoLong 6.6131
+  ] ;
+  :nd "+53.1630+006.6131"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:42:26"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00052.jpg
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00052:P1, t00052:P2 ;
+  :text """TODO: geen bodde roller
+anuar 187
+2groningen
+25-juliolote hare
+mutje, mesir
+januariscos ladere
+senuntute groningen
+""" .
+
+t00052:C1
+  a :City ;
+  :place place:Groningen2755251 ;
+  :text "TODO: GRONINGEN" .
+
+t00052:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P71Y6M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-01-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-07-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Geert Bodde Folmer" ;
+    :text "TODO: Geert Bodde Folmer"
+  ] ;
+  :placeOfBirth t00052:C1 ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Haren2754841 ;
+    :text "TODO: HAREN"
+  ] .
+
+t00052:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P110Y6M1D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-01-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1970-07-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Antje Zijlstra" ;
+    :text "TODO: Antje Zijlstra"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Oldehove2749660 ;
+    :text "TODO: OLDEHOVE"
+  ] ;
+  :placeOfDeath t00052:C1 .
+

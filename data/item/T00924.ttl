@@ -1,0 +1,89 @@
+@prefix t00924: <https://noordergraf.rug.nl/item/T00924#> .
+
+item:T00924
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1719 ;
+    :geoLong 6.3656
+  ] ;
+  :nd "+53.1719+006.3656"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:10:06"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00924.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUSTPLAATS VAN"@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00924:P1 ;
+  :symbol [
+    a :Symbol
+  ] ;
+  :text """TODO: rurfplaats
+daar
+aaltien
+de boer
+gebla pollert
+22 mei 1902.
+werd, daar
+22 maart 1905.
+dochterte van
+j.de boer
+em
+1. oosterhuis
+we
+tict pnp
+""" .
+
+t00924:C1
+  a :Village ;
+  :place place:Tolbert2746234 ;
+  :text "TODO: TOLBERT" .
+
+t00924:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P2Y10M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1902-05-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1905-03-22"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Aaltien de Boer" ;
+    :text "TODO: Aaltien de Boer"
+  ] ;
+  :placeOfBirth t00924:C1 ;
+  :placeOfDeath t00924:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00924:P2, t00924:P3
+  ] .
+
+t00924:P2
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "J. de Boer" ;
+    :text "TODO: J. de Boer"
+  ] .
+
+t00924:P3
+  a :Person ;
+  :name [
+    a :Name ;
+    :fullName "J. Oosterhuis" ;
+    :text "TODO: J. Oosterhuis"
+  ] .
+

@@ -1,0 +1,82 @@
+@prefix t00635: <https://noordergraf.rug.nl/item/T00635#> .
+
+item:T00635
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1641 ;
+    :geoLong 6.7544
+  ] ;
+  :nd "+53.1641+006.7544"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T09:55:05"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00635.jpg
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00635:P1, t00635:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Branch
+  ] ;
+  :text """TODO: van lessen
+gebore dens
+samutript787
+medledenden 28
+02
+polober 1841
+marui corts
+botje
+gebogen dm22
+\"april 1781
+vedtedan den
+erlaarl1870
+ebogen
+""" .
+
+t00635:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y9M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1787-01-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1841-10-28"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Sara Derks van Lessen" ;
+    :text "TODO: Sara Derks van Lessen"
+  ] .
+
+t00635:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P88Y11M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1781-04-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1870-03-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Harm Geerts Botje" ;
+    :text "TODO: Harm Geerts Botje"
+  ] .
+

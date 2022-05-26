@@ -1,0 +1,89 @@
+@prefix t00326: <https://noordergraf.rug.nl/item/T00326#> .
+
+item:T00326
+  a :Tomb ;
+  :figure [
+    a :Photograph ;
+    :theme t00326:P1
+  ] ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7159 ;
+    :geoLong 6.4740
+  ] ;
+  :nd "+52.7159+006.4740"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:27:23"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00326.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :quoteSubject t00326:P1 ;
+    :text "GEWOND OP 10-05-1940"
+  ], [
+    a :Quote ;
+    :quoteSubject t00326:P1 ;
+    :text "WONENDEN ALDAAR"
+  ], [
+    a :Quote ;
+    :text "TER NAGEDACHTENIS VAN HEM"
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00326:P1 ;
+  :text """TODO: kornelis
+lolenga
+soldaat 1.9 g. 3.\"
+geboren te sneek
+2 december 1919
+en wonende aldaar
+gewond op mei 1940
+2112
+te hardenberg
+en overl te hoogeveen
+op 12 msl 1941
+met
+ter nagedachtenis
+van hem
+""" .
+
+t00326:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P20Y5M10D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-12-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-05-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Kornelis Loijenga" ;
+    :text "TODO: Kornelis Loijenga"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:58340 ;
+    :organisation [
+      a :Battalion ;
+      :organisationName "1-9 GRENSBATALJON"
+    ]
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Sneek2747063 ;
+    :text "TODO: SNEEK"
+  ] ;
+  :placeOfDeath [
+    a :Town ;
+    :place place:Hoogeveen2753719 ;
+    :text "TODO: HOOGEVEEN"
+  ] .
+

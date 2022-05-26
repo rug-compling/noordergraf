@@ -1,0 +1,68 @@
+@prefix t00039: <https://noordergraf.rug.nl/item/T00039#> .
+
+item:T00039
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1629 ;
+    :geoLong 6.6122
+  ] ;
+  :nd "+53.1629+006.6122"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:52:43"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00039.jpg
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00039:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: ier uistine
+treffelijk overschot
+oan ons alles
+lupeling
+pievrijebitens
+gebite kelpman
+den 30
+ful/1699
+ceerd dan
+10 190
+y
+is
+zalig a het
+kinderen lez
+jong gestecer
+mroeg bij grad
+""" .
+
+t00039:C1
+  a :Village ;
+  :place place:Helpman2754444 ;
+  :text "TODO: HELPMAN" .
+
+t00039:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P5Y3M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1899-07-30"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1904-11-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Pietertje Eitens" ;
+    :text "TODO: Pietertje Eitens"
+  ] ;
+  :placeOfBirth t00039:C1 ;
+  :placeOfDeath t00039:C1 .
+

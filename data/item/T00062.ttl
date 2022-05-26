@@ -1,0 +1,62 @@
+@prefix t00062: <https://noordergraf.rug.nl/item/T00062#> .
+
+item:T00062
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1635 ;
+    :geoLong 6.6159
+  ] ;
+  :nd "+53.1635+006.6159"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-27T17:25:38"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00062.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "IN CHRISTUS BIJ GOD GEBORGEN"
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00062:P1, t00062:P2 ;
+  :text """TODO: in christus bij god geborgen
+sipco johan de groot
+★ 1 - 4 – 1923 † 7 - 5 – 1997
+echtgenoot van
+agathe knoop
+""" .
+
+t00062:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P74Y1M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1923-04-01"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-05-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Sipco Johan de Groot" ;
+    :text "TODO: Sipco Johan de Groot"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00062:P2
+  ] .
+
+t00062:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Agathe Knoop" ;
+    :text "TODO: Agathe Knoop"
+  ] .
+

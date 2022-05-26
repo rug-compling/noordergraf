@@ -1,0 +1,81 @@
+@prefix t00462: <https://noordergraf.rug.nl/item/T00462#> .
+
+item:T00462
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2065 ;
+    :geoLong 5.7699
+  ] ;
+  :nd "+53.2065+005.7699"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:55:55"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00462.jpg
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00462:P1, t00462:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Flower
+  ] ;
+  :text """TODO: اور دارند
+rustplaats
+van
+✝ 8-9-1914
+110411-1968
+j.h.th. rothengatter
+★
+en
+p.j. rothengatter
+schuitmaker
+★ 6-3-1919
+t 4-3-2004
+""" .
+
+t00462:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P54Y2M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1914-09-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1968-11-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "J.H.TH. Rothengatter" ;
+    :text "TODO: J.H.TH. Rothengatter"
+  ] .
+
+t00462:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P84Y11M27D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1919-03-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2004-03-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "P.J. Rothengatter-Schuitmaker" ;
+    :text "TODO: P.J. Rothengatter-Schuitmaker"
+  ] .
+

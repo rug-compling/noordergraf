@@ -1,0 +1,72 @@
+@prefix t00207: <https://noordergraf.rug.nl/item/T00207#> .
+
+item:T00207
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2223 ;
+    :geoLong 6.6365
+  ] ;
+  :nd "+53.2223+006.6365"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-08T14:57:44"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00207.jpg
+  ] ;
+  :site site:NLgr9723ewGroningen ;
+  :subject t00207:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Wreath
+  ], [
+    a :Symbol ;
+    :symbolType symbol:InvertedTorch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:InvertedTorch
+  ] ;
+  :text """TODO: peutelut
+bjzijlstra
+aemár 21840
+bp1334
+1883
+dona certa
+de boda
+""" .
+
+t00207:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y10M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1810-03-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1884-02-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "B.J. Zijlstra" ;
+    :text "TODO: B.J. Zijlstra"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :begin "1836-11"^^xsd:gYearMonth ;
+    :end "1883"^^xsd:gYear ;
+    :hisco hisco:13320 ;
+    :location [
+      a :Village ;
+      :place place:Middelbert2750902 ;
+      :text "TODO: MIDDELBERT"
+    ]
+  ] .
+

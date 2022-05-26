@@ -1,0 +1,75 @@
+@prefix t00985: <https://noordergraf.rug.nl/item/T00985#> .
+
+item:T00985
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1399 ;
+    :geoLong 6.5821
+  ] ;
+  :nd "+53.1399+006.5821"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-31T12:31:00"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00985.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUWE STORMEN MOGEN WOEDEN, ALLES OM MIJ HEEN ZIJ NACHT. GOD, MIJN GOD ZAL MIJ BEHOEDEN, HIJ HOUDT VOOR MIJN HEIL DE WACHT. MOEST IK LANG ZJN HULP VERBEIDEN, ZIJNE LIEFDE ZAL MIJ LEIDEN; DOOR EEN NACHT, HOE SWART, HOE DICHT VOERT HIJ MIJ NAAR 'T EEUWIG LICHT."@nld
+  ] ;
+  :site site:NLdr9761alEelde ;
+  :subject t00985:P1, t00985:P2 ;
+  :text """TODO: hier rust
+1
+wilhelmina berendina groeneveld.
+geb 20 maart 18:3 - overl.20 mei 1929
+in innig gelukkig huwelijk
+vereenigd geweest met
+johannes siegfried kraus
+ruwe stormen mogen woeden
+alles om mj een ali nĄcete
+god, mijn god zal u behoeden.
+hij houdt voor muneet. de valet
+in
+moest ik lang zijn er verrelden
+zune liefde zal md leden
+door een naceze var med. der
+voert er mij naast eegue lice
+fir
+1991
+""" .
+
+t00985:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P86Y2M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1949-05-20"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Wilhelmina Berendina Groeneveld" ;
+    :text "TODO: Wilhelmina Berendina Groeneveld"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00985:P2
+  ] .
+
+t00985:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Johannes Siegfried Kraus" ;
+    :text "TODO: Johannes Siegfried Kraus"
+  ] .
+

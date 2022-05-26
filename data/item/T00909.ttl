@@ -1,0 +1,91 @@
+@prefix t00909: <https://noordergraf.rug.nl/item/T00909#> .
+
+item:T00909
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1716 ;
+    :geoLong 6.3655
+  ] ;
+  :nd "+53.1716+006.3655"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:15:55"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00909.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00909:P1, t00909:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: they
+o
+gd
+rustplaats
+van
+jannes kornelis
+oosterhuis
+geb. te doezum
+5 juni 1868
+overl. te tolbert
+13 maart 1942
+weduwnaar van
+antje hazenberg
+rust zacht
+""" .
+
+t00909:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P73Y9M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-06-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1942-03-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jannes Kornelis Oosterhuis" ;
+    :text "TODO: Jannes Kornelis Oosterhuis"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Doezum2756763 ;
+    :text "TODO: DOEZUM"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Tolbert2746234 ;
+    :text "TODO: TOLBERT"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t00909:P2
+  ] .
+
+t00909:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Antje Hazenberg" ;
+    :text "TODO: Antje Hazenberg"
+  ] .
+

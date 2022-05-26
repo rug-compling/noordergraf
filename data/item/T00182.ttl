@@ -1,0 +1,86 @@
+@prefix t00182: <https://noordergraf.rug.nl/item/T00182#> .
+
+item:T00182
+  a :Tomb ;
+  :figure [
+    a :Portrait ;
+    :theme t00182:P1
+  ] ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1911 ;
+    :geoLong 6.5934
+  ] ;
+  :nd "+53.1911+006.5934"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-05T10:19:15"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00182.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "UW ARBEID ZAL IN ONZEN HEER NIET IJDEL WEZEN, HEM ZIJ DEER"
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00182:P1, t00182:P2 ;
+  :text """TODO: destplaats vat
+parel duiker
+ger 2,5 juin 1882
+cerl18 aug 1031
+te groningena
+=
+geliefde echtgenoot
+van s-bouwman
+tn leven vooraliter van
+het ned.chr-gumelverbotid
+uwarbed zalin ohzen meer
+het del wezelhem zineer
+ner
+""" .
+
+t00182:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P43Y1M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-06-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-08-18"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Karel Duiker" ;
+    :text "TODO: Karel Duiker"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :organisation [
+      a :SportsFederation ;
+      :organisationName "NEDERLANDSE CHRISTELIJKE GIJMNASTIEK VERBOND"
+    ]
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00182:P2
+  ] .
+
+t00182:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "S. Bouwman" ;
+    :text "TODO: S. Bouwman"
+  ] .
+

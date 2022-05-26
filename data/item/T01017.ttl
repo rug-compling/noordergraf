@@ -1,0 +1,103 @@
+@prefix t01017: <https://noordergraf.rug.nl/item/T01017#> .
+
+item:T01017
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1751 ;
+    :geoLong 7.0964
+  ] ;
+  :nd "+53.1751+007.0964"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-04-04T10:42:20"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01017.jpg
+  ] ;
+  :site site:NLgr9686rsBeerta ;
+  :subject t01017:P1, t01017:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """RUSTPLAATS
+VAN
+JAN KORNELIUS
+MULLER.
+Echtgenoot van
+LUDEWÉ
+HINDRIKS.
+Overl. 14 Dec. 1811,
+in den ouderdom
+van 72 Jaren en elf
+maanden
+Ouders geweest van
+WIEPKE, ETTIEN
+en CORNELIA JANS
+MULLER.
+""" .
+
+t01017:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y11M"^^xsd:duration
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1739-01"^^xsd:gYearMonth ;
+    :inferred true
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1811-12-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Kornelis Muller" ;
+    :text "JAN KORNELIS MULLER"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t01017:P2
+  ], [
+    a :Parent ;
+    :target t01017:P3, t01017:P4, t01017:P5
+  ] .
+
+t01017:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Ludewé Hindriks" ;
+    :text "LUDEWÉ HINDRIKS"
+  ] ;
+  :relation [
+    a :Parent ;
+    :target t01017:P3, t01017:P4, t01017:P5
+  ] .
+
+t01017:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Wiepke Muller" ;
+    :text "WIEPKE"
+  ] .
+
+t01017:P4
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Ettien Muller" ;
+    :text "ETTIEN"
+  ] .
+
+t01017:P5
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Cornelia Jans Muller" ;
+    :text "CORNELIA JANS MULLER"
+  ] .
+

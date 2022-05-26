@@ -1,0 +1,72 @@
+@prefix t01110: <https://noordergraf.rug.nl/item/T01110#> .
+
+item:T01110
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1905 ;
+    :geoLong 6.5949
+  ] ;
+  :nd "+53.1905+006.5949"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-10-25T11:00:24"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01110.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t01110:P1, t01110:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text "TODO" .
+
+t01110:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y5M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1876-02-13"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1934-08-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Numa Edouard Fatton" ;
+    :text "TODO: Numa Edouard Fatton"
+  ] .
+
+t01110:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P69Y2M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-03-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1947-05-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "D.J. Fatton-van Amerongen" ;
+    :text "TODO: D.J. Fatton-van Amerongen"
+  ] .
+

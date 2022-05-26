@@ -1,0 +1,98 @@
+@prefix t00857: <https://noordergraf.rug.nl/item/T00857#> .
+
+item:T00857
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7764 ;
+    :geoLong 6.8042
+  ] ;
+  :nd "+52.7764+006.8042"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:37:10"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00857.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE."@nld
+  ] ;
+  :site site:NLdr7841cdSleen ;
+  :subject t00857:P1, t00857:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rasplanto van
+onze lieve ouders
+en grodlouders
+khadderseng.zwers
+ceh 20 en z haurt
+21 m
+1845 en jolla
+werbbens oats
+le / sleen
+rust in vrede.
+pel
+""" .
+
+t00857:C1
+  a :Village ;
+  :place place:NoordSleen2749830 ;
+  :text "TODO: NOORD-SLEEN" .
+
+t00857:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P63Y6M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1845-03-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-10-05"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "K. Hadders" ;
+    :text "TODO: K. Hadders"
+  ] ;
+  :placeOfDeath t00857:C1 ;
+  :relation [
+    a :Grandparent
+  ], [
+    a :Parent
+  ] .
+
+t00857:P2
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P64Y7M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1844-03-02"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1908-10-08"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "G. Zwiers" ;
+    :text "TODO: G. Zwiers"
+  ] ;
+  :placeOfDeath t00857:C1 ;
+  :relation [
+    a :Parent
+  ], [
+    a :Grandparent
+  ] .
+

@@ -1,0 +1,51 @@
+@prefix t01102: <https://noordergraf.rug.nl/item/T01102#> .
+
+item:T01102
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2629 ;
+    :geoLong 6.3126
+  ] ;
+  :nd "+53.2629+006.3126"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2021-03-06T09:07:27"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01102.jpg
+  ] ;
+  :site site:NLgr9843agGrijpskerk ;
+  :subject t01102:P1 ;
+  :text "TODO" .
+
+t01102:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P4Y10M14D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1940-01-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-12-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrikes FR. Mulders" ;
+    :text "TODO: Hendrikes FR. Mulders"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Millingen2750798 ;
+    :text "TODO: MILLINGEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Grijpskerk2755317 ;
+    :text "TODO: GRIJPSKERK"
+  ] .
+

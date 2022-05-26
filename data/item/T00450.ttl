@@ -1,0 +1,73 @@
+@prefix t00450: <https://noordergraf.rug.nl/item/T00450#> .
+
+item:T00450
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2063 ;
+    :geoLong 5.7695
+  ] ;
+  :nd "+53.2063+005.7695"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T15:04:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00450.jpg
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00450:P1, t00450:P2 ;
+  :text """TODO: 1
+rustplaats van
+jacobus
+josephus
+van der werff,
+#11 juni 1853
+✝ 9 december 1922.
+en van zijn echtgenoote
+petronella faas,
+★ 21 jan. 1863
+✝1 aug. 1944
+""" .
+
+t00450:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y5M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1853-06-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1922-12-09"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jacobus Josephus van der Werff" ;
+    :text "TODO: Jacobus Josephus van der Werff"
+  ] .
+
+t00450:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P81Y6M11D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1863-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1944-08-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Petronella Faas" ;
+    :text "TODO: Petronella Faas"
+  ] .
+

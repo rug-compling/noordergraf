@@ -1,0 +1,67 @@
+@prefix t01096: <https://noordergraf.rug.nl/item/T01096#> .
+
+item:T01096
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2474 ;
+    :geoLong 6.8651
+  ] ;
+  :nd "+53.2474+006.8651"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-09-19T13:03:48"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01096.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "DAT GIJ NU ZIJT WAS IK VOOR DEZEN DAT IK NU BEN ZULT GIJ HAAST WEZEN"@nld
+  ] ;
+  :site site:NLgr9628tkSiddeburen ;
+  :subject t01096:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:SkullAndBones
+  ] ;
+  :text """TODO: je
+embroidik
+sem
+maidot
+1952
+lets debe
+121 livello
+finished
+އަށް
+wedbant
+martina
+ppliana taiping the
+tin
+""" .
+
+t01096:P1
+  a :Person ;
+  :age [
+    a :Age ;
+    :duration "P87Y5M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1767-05-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1854-11-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "J.H. Brondijk" ;
+    :text "TODO: J.H. Brondijk"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Siddeburen2747343 ;
+    :text "TODO: SIDDEBUREN"
+  ] .
+

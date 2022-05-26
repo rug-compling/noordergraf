@@ -1,0 +1,98 @@
+@prefix t00487: <https://noordergraf.rug.nl/item/T00487#> .
+
+item:T00487
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2065 ;
+    :geoLong 5.7691
+  ] ;
+  :nd "+53.2065+005.7691"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:33:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00487.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "REQUIESCAT IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00487:P1, t00487:P2, t00487:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: r
+p
+rustplaats
+van onze lieve moeder
+tekela maria ruurda
+ved. van frederik wiemers
+geb. 28 oct. 1870
+overl.14 feb. 1945
+en haar dochter
+christina wiemers
+geb. 18 aug 1897
+overl. 26 oct. 1959
+""" .
+
+t00487:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P74Y3M17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1870-10-28"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-02-14"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Tekela Maria Ruurda" ;
+    :text "TODO: Tekela Maria Ruurda"
+  ] ;
+  :relation [
+    a :Widow ;
+    :target t00487:P2
+  ] .
+
+t00487:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Frederik Wiemers" ;
+    :text "TODO: Frederik Wiemers"
+  ] .
+
+t00487:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P62Y2M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1897-08-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1959-10-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Christina Wiemers" ;
+    :text "TODO: Christina Wiemers"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00487:P1
+  ] .
+

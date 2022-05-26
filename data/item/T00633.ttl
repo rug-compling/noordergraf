@@ -1,0 +1,83 @@
+@prefix t00633: <https://noordergraf.rug.nl/item/T00633#> .
+
+item:T00633
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1640 ;
+    :geoLong 6.7544
+  ] ;
+  :nd "+53.1640+006.7544"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-23T09:56:06"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00633.jpg
+  ] ;
+  :site site:NLgr9601kaHoogezand ;
+  :subject t00633:P1, t00633:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: m
+procurilacets
+ho
+blast
+quer
+u
+20on
+wat
+cena 29.
+1832
+download
+22
+1892
+sektgeneele
+3
+12
+gnno bronsema
+""" .
+
+t00633:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P61Y11M28D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1832-05-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-05-27"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Eliza Meihuizen" ;
+    :text "TODO: Eliza Meihuizen"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00633:P2
+  ] .
+
+t00633:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Enno Bronsema" ;
+    :text "TODO: Enno Bronsema"
+  ] .
+

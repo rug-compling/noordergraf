@@ -1,0 +1,90 @@
+@prefix t00693: <https://noordergraf.rug.nl/item/T00693#> .
+
+item:T00693
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0687 ;
+    :geoLong 5.5231
+  ] ;
+  :nd "+53.0687+005.5231"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-14T13:20:55"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00693.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "VEEL FIJNE HERINNERINGEN \\ VERZACHTEN ONZE SMART \\ VOOR GOED UIT ONS MIDDEN \\ MAAR ALTIJD IN ONS HART"@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00693:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Sailboat
+  ] ;
+  :text """TODO: nec
+dare
+16 pay
+sijo
+nga
+veel fijne herinneringen
+verzachten onze smart
+voor goed uit ons midden
+maar altijd in ons hart
+n
+pen
+johannes franciscus brattinga
+★ 5 januari 1937 ✝ 2 maart 1995
+mea brattinga - venema
+kinderen en kleinkinderen
+""" .
+
+t00693:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y1M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1937-01-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1995-03-02"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johannes Franciscus Brattinga" ;
+    :text "TODO: Johannes Franciscus Brattinga"
+  ] ;
+  :relation [
+    a :Grandparent ;
+    :inferred true
+  ], [
+    a :Parent ;
+    :inferred true
+  ] .
+
+t00693:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Mea Brattinga-Venema" ;
+    :text "TODO: Mea Brattinga-Venema"
+  ] ;
+  :relation [
+    a :Wife ;
+    :inferred true ;
+    :target t00693:P1
+  ], [
+    a :Parent ;
+    :inferred true
+  ], [
+    a :Grandparent ;
+    :inferred true
+  ] .
+

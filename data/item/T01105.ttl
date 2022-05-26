@@ -1,0 +1,96 @@
+@prefix t01105: <https://noordergraf.rug.nl/item/T01105#> .
+
+item:T01105
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2630 ;
+    :geoLong 6.3142
+  ] ;
+  :nd "+53.2630+006.3142"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2021-03-06T08:53:38"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T01105.jpg
+  ] ;
+  :quote t01105:C3 ;
+  :site site:NLgr9843agGrijpskerk ;
+  :subject t01105:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text "TODO" .
+
+t01105:C3
+  a :Quote ;
+  :reference [
+    a :BibleReference ;
+    :book bible:Isaiah ;
+    :chapter 40
+  ] ;
+  :text "TODO" .
+
+t01105:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P30Y20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1915-05-05"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1945-05-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Anna Wielenga" ;
+    :text "TODO: Anna Wielenga"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Burgum2759103 ;
+    :text "TODO: BERGUM"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Grijpskerk2755317 ;
+    :text "TODO: GRIJPSKERK"
+  ] ;
+  :relation [
+    a :Wife ;
+    :target t01105:P2
+  ], [
+    a :Mother ;
+    :target t01105:P3, t01105:P4
+  ] .
+
+t01105:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "S. Veenstra" ;
+    :text "TODO: S. Veenstra"
+  ] .
+
+t01105:P3
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Fokke" ;
+    :text "TODO: Fokke"
+  ] .
+
+t01105:P4
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Pietje" ;
+    :text "TODO: Pietje"
+  ] .
+

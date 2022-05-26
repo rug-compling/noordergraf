@@ -1,0 +1,60 @@
+@prefix t00844: <https://noordergraf.rug.nl/item/T00844#> .
+
+item:T00844
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2955 ;
+    :geoLong 5.0653
+  ] ;
+  :nd "+53.2955+005.0653"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-20T14:41:46"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00844.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT HIL"@nld
+  ] ;
+  :site site:NLfr8899awOostVlieland ;
+  :subject t00844:P1 ;
+  :text """TODO: 0
+hier rust
+onze geliefde zuster,
+schoonzuster en tante
+hiltje wels
+21-7-1901
+t 12-10-1978
+rust zacht hil
+""" .
+
+t00844:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P77Y2M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-07-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1978-10-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hiltje Wels" ;
+    :text "hil", "hiltje wels"
+  ] ;
+  :relation [
+    a :SisterInLaw
+  ], [
+    a :Aunt
+  ], [
+    a :Sister
+  ] .
+

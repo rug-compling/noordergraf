@@ -1,0 +1,75 @@
+@prefix t00927: <https://noordergraf.rug.nl/item/T00927#> .
+
+item:T00927
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1718 ;
+    :geoLong 6.3655
+  ] ;
+  :nd "+53.1718+006.3655"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-03-07T14:13:45"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00927.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUSTPLAATS VAN"@nld
+  ] ;
+  :site site:NLgr9351rlTolbert ;
+  :subject t00927:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:OakBranch
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: ptwipšacts
+para
+jan wierenga
+gebozente felbert
+15 mei 1846
+en daaroveeleden
+4 februari
+c
+m
+ne
+lal
+la
+1
+ve
+1899.
+oll
+""" .
+
+t00927:C1
+  a :Village ;
+  :place place:Tolbert2746234 ;
+  :text "TODO: TOLBERT" .
+
+t00927:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P52Y8M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1846-05-15"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1899-02-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Wierenga" ;
+    :text "TODO: Jan Wierenga"
+  ] ;
+  :placeOfBirth t00927:C1 ;
+  :placeOfDeath t00927:C1 .
+

@@ -1,0 +1,112 @@
+@prefix t00369: <https://noordergraf.rug.nl/item/T00369#> .
+
+item:T00369
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0891 ;
+    :geoLong 6.5607
+  ] ;
+  :nd "+53.0891+006.5607"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-25T17:22:37"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00369.jpg
+  ] ;
+  :subject t00369:P1, t00369:P2, t00369:P3 ;
+  :text """TODO: jan
+hindriks
+rustplaats van
+jantje jantje
+horst hindriks
+22 -2 -1859
+26-5-1931
+x 211-1860
+1-3-1926
+echtgen. van
+14-11-1893
+13-11-1918
+gel, dochter van
+wedn. van
+j. horst
+j. hindriks j. hindriks
+en
+j. horst
+""" .
+
+t00369:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P72Y3M4D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-02-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-05-26"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jan Hindriks" ;
+    :text "TODO: Jan Hindriks"
+  ] ;
+  :relation [
+    a :Widower ;
+    :target t00369:P2
+  ] .
+
+t00369:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P66Y1M8D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1860-01-21"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1926-03-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantje Horst" ;
+    :text "TODO: Jantje Horst"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00369:P1
+  ] .
+
+t00369:P3
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P24Y11M20D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1893-11-14"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1918-11-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantje Hindriks" ;
+    :text "TODO: Jantje Hindriks"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00369:P1, t00369:P2
+  ] .
+

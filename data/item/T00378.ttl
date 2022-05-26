@@ -1,0 +1,88 @@
+@prefix t00378: <https://noordergraf.rug.nl/item/T00378#> .
+
+item:T00378
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0793 ;
+    :geoLong 6.5727
+  ] ;
+  :nd "+53.0793+006.5727"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-25T16:59:48"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00378.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE OUDERS"
+  ] ;
+  :site site:NLdr9481cgVries ;
+  :subject t00378:P1, t00378:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:BrokenFlower
+  ] ;
+  :text """TODO: rustplaats van
+evelina veendijk
+★ 17_12_1907
+t \\_6_1963
+geliefde echtgenoti van
+albert lampe
+★i_3_1901
+✝3_10_1990
+fus zachteteve jeunes
+""" .
+
+t00378:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y5M15D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1907-12-17"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1963-06-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Evelina Veendijk" ;
+    :text "TODO: Evelina Veendijk"
+  ] ;
+  :relation [
+    a :Parent
+  ], [
+    a :Spouse ;
+    :target t00378:P2
+  ] .
+
+t00378:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P89Y6M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1901-03-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1990-10-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Albert Lampe" ;
+    :text "TODO: Albert Lampe"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

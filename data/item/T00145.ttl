@@ -1,0 +1,76 @@
+@prefix t00145: <https://noordergraf.rug.nl/item/T00145#> .
+
+item:T00145
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2061 ;
+    :geoLong 6.5699
+  ] ;
+  :nd "+53.2061+006.5699"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-02T10:28:25"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00145.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MAAR NU, CHRISTUS IS OPGEWEKT UIT DE DOODEN, EN IS DE EERSTELING GEWORDEN DERGENEN, DIE ONTSLAPEN ZIJN"
+  ] ;
+  :site site:NLgr9725acGroningen ;
+  :subject t00145:P1, t00145:P2 ;
+  :text """TODO: truus oranje
+81_20
+10_12_120
+johanna barbera
+oranje
+9.4.06 15 8_97
+maar
+nu, christus is opgewekt uit de
+dooden. en is de eersteling geworden
+degenen, die ontslapen zijn
+""" .
+
+t00145:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P20Y11M3D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1920-01-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-12-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Truus Oranje" ;
+    :text "TODO: Truus Oranje"
+  ] .
+
+t00145:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P91Y4M6D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1906-04-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1997-08-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johanna Barbera Oranje" ;
+    :text "TODO: Johanna Barbera Oranje"
+  ] .
+

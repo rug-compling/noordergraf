@@ -1,0 +1,89 @@
+@prefix t00869: <https://noordergraf.rug.nl/item/T00869#> .
+
+item:T00869
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7192 ;
+    :geoLong 6.8452
+  ] ;
+  :nd "+52.7192+006.8452"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2020-02-15T15:11:20"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00869.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT LIEVE MAN EN VADER"@nld
+  ] ;
+  :site site:NLdr7844tcVeenoord ;
+  :subject t00869:P1, t00869:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: rustplaats van
+hendrik
+v.d. veen
+geb. 20 dec.1886
+te veenoord
+dverl.15 juli 1937
+te groningen
+echtgenoot
+van
+hendrikje
+mensing
+rust zalmt lieve
+han en vader
+""" .
+
+t00869:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y6M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-12-20"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1937-07-15"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hendrik V.D. Veen" ;
+    :text "TODO: Hendrik V.D. Veen"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Veenoord2745753 ;
+    :text "TODO: VEENOORD"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Groningen2755251 ;
+    :text "TODO: GRONINGEN"
+  ] ;
+  :relation [
+    a :Husband ;
+    :target t00869:P2
+  ], [
+    a :Father
+  ], [
+    a :Spouse ;
+    :target t00869:P2
+  ] .
+
+t00869:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Hendrikje Mensing" ;
+    :text "TODO: Hendrikje Mensing"
+  ] .
+

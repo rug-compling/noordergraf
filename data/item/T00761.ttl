@@ -1,0 +1,72 @@
+@prefix t00761: <https://noordergraf.rug.nl/item/T00761#> .
+
+item:T00761
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.3060 ;
+    :geoLong 6.9858
+  ] ;
+  :nd "+53.3060+006.9858"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-28T12:44:28"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00761.jpg
+  ] ;
+  :subject t00761:P1, t00761:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Ribbon
+  ] ;
+  :text """TODO: rudplaats
+van
+pestikker
+get den 6 oct
+od
+1820 overleden
+13 april 1886
+echtzmont
+van
+ehnap.
+""" .
+
+t00761:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P65Y6M7D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1820-10-06"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1886-04-13"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "P.K. Stikker" ;
+    :text "TODO: P.K. Stikker"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00761:P2
+  ] .
+
+t00761:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "E.H. Nap" ;
+    :text "TODO: E.H. Nap"
+  ] .
+

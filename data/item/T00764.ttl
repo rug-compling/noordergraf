@@ -1,0 +1,82 @@
+@prefix t00764: <https://noordergraf.rug.nl/item/T00764#> .
+
+item:T00764
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7821 ;
+    :geoLong 6.8975
+  ] ;
+  :nd "+52.7821+006.8975"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:07:00"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00764.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MOEDER, KLEINE ZUS EN IK \\ ZIJN U SLECHTS VOORGEGAAN: \\ BLIJFT HIER IN GODS WEGEN WANDLEN \\ ZALIG KOMT OOK GIJ DAN AAN."@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00764:P1, t00764:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rust
+het stelijk overschel
+van
+2
+hillegien
+gekleémenganimira
+leverbaldaar selang
+geliefde en eenige
+dochter van
+mans schirring
+moeder, kleine zus en ik
+zijnu slechts voorgegaan
+blijft hier in godswegen wandlen
+zalių komt ook gij dan wan
+""" .
+
+t00764:C1
+  a :Town ;
+  :place place:Emmen2756136 ;
+  :text "TODO: EMMEN" .
+
+t00764:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P13Y10M22D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1880-06-09"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1894-05-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Hillegien" ;
+    :text "TODO: Hillegien"
+  ] ;
+  :placeOfBirth t00764:C1 ;
+  :placeOfDeath t00764:C1 ;
+  :relation [
+    a :Daughter ;
+    :target t00764:P2
+  ] .
+
+t00764:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Mans Schirring" ;
+    :text "TODO: Mans Schirring"
+  ] .
+

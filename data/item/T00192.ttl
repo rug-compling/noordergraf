@@ -1,0 +1,109 @@
+@prefix t00192: <https://noordergraf.rug.nl/item/T00192#> .
+
+item:T00192
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1899 ;
+    :geoLong 6.5932
+  ] ;
+  :nd "+53.1899+006.5932"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-05T09:56:11"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00192.jpg
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00192:P1, t00192:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: hier rust
+onze lieve
+vrouw en moeder
+baukje spits
+geb. te terschelling 23 aug. 1888
+overl, te leeuwarden 25 febr. 1940
+echtg. van e. vegtep
+en onze lieve vader
+eliza vegter
+geb.te garsthuizen 18 maart 1886
+overl, te wolvega 6 mei 1969
+""" .
+
+t00192:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P51Y6M2D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1888-08-23"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-02-25"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Baukje Spits" ;
+    :text "TODO: Baukje Spits"
+  ] ;
+  :placeOfBirth [
+    a :Island ;
+    :place place:Terschelling2746414 ;
+    :text "TODO: TERSCHELLING"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Leeuwarden2751792 ;
+    :text "TODO: LEEUWARDEN"
+  ] ;
+  :relation [
+    a :Mother
+  ], [
+    a :Spouse ;
+    :target t00192:P2
+  ], [
+    a :Wife ;
+    :target t00192:P1
+  ] .
+
+t00192:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P83Y1M18D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1886-03-18"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1969-05-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Eliza Vegter" ;
+    :text "TODO: Eliza Vegter"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Garsthuizen2755720 ;
+    :text "TODO: GARSTHUIZEN"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Wolvega2744194 ;
+    :text "TODO: WOLVEGA"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+

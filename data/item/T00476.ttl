@@ -1,0 +1,90 @@
+@prefix t00476: <https://noordergraf.rug.nl/item/T00476#> .
+
+item:T00476
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.2073 ;
+    :geoLong 5.7690
+  ] ;
+  :nd "+53.2073+005.7690"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-09T14:42:13"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00476.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MIJN JEZUS BARMHARTIGHEID"@nld
+  ], [
+    a :Quote ;
+    :text "REQUIESCAT IN PACE"@lat
+  ] ;
+  :site site:NLfr8915cpLeeuwarden ;
+  :subject t00476:P1, t00476:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Cross
+  ] ;
+  :text """TODO: thecla dominica
+kamstra
+i
+★ 16 april 1885
+✝ 10 dec. 1940
+echtg. van
+f
+sjoerd bijl
+★ 8 aug. 1878
+✝ i dec. 1955
+.
+r.i.p.
+mun jezus barmhartigheid
+""" .
+
+t00476:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P55Y7M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1885-04-16"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1940-12-10"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Thecla Dominica Kamstra" ;
+    :text "TODO: Thecla Dominica Kamstra"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00476:P2
+  ] .
+
+t00476:P2
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P87Y3M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1878-08-08"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1965-12-01"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Sjoerd Bijl" ;
+    :text "TODO: Sjoerd Bijl"
+  ] .
+

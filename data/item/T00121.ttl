@@ -1,0 +1,81 @@
+@prefix t00121: <https://noordergraf.rug.nl/item/T00121#> .
+
+item:T00121
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1628 ;
+    :geoLong 6.6162
+  ] ;
+  :nd "+53.1628+006.6162"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-09-20T17:44:31"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00121.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "MAAR IK EN MIJN HUIS, WIJ ZULLEN DEN HERE DIENEN!"
+  ] ;
+  :site site:NLgr9752cmHaren ;
+  :subject t00121:P1, t00121:P2 ;
+  :text """TODO: rustplaats van
+onze lieve ouders
+imeginus a. vos
+★ 19-5-1913 ✝ 19-11-1972
+en
+johanna van gijssel
+★ 27-3-1918 t 16-12-2005
+maar ik en mijn huis,
+wij zullen den here dienen!
+""" .
+
+t00121:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P59Y6M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1913-05-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1972-11-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Imeginus A. Vos" ;
+    :text "TODO: Imeginus A. Vos"
+  ] ;
+  :relation [
+    a :Father
+  ] .
+
+t00121:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P87Y8M19D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1918-03-27"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "2005-12-16"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Johanna van Gijssel" ;
+    :text "TODO: Johanna van Gijssel"
+  ] ;
+  :relation [
+    a :Mother
+  ] .
+

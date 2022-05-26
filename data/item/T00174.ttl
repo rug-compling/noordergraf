@@ -1,0 +1,81 @@
+@prefix t00174: <https://noordergraf.rug.nl/item/T00174#> .
+
+item:T00174
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1904 ;
+    :geoLong 6.5932
+  ] ;
+  :nd "+53.1904+006.5932"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-05T10:42:11"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00174.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "OOK DEZE WAS MET JEZUS"
+  ], [
+    a :Quote ;
+    :reference [
+      a :BibleReference ;
+      :book bible:Luke ;
+      :chapter 22 ;
+      :verse "56"
+    ] ;
+    :text "luc-22-56"
+  ] ;
+  :site site:NLgr9722snGroningen ;
+  :subject t00174:P1 ;
+  :text """TODO: rustplaats
+van
+onzen geliefden
+herder en leeraar
+ds a.hof
+in leven
+predikant der
+baptisten gemeente
+te groningen
+geb. 7 april 1979
+overl-zmaart 1927,
+ook deze was
+met jezus lug-22-5€
+""" .
+
+t00174:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P48Y"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1879-04-07"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-04-07"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "A. Hof" ;
+    :prefix "Ds" ;
+    :text "TODO: Ds A. Hof"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:14120 ;
+    :location [
+      a :City ;
+      :place place:Groningen2755251 ;
+      :text "TODO: GRONINGEN"
+    ] ;
+    :organisation [
+      a :Congregation ;
+      :organisationName "BAPTISTENGEMEENTE"
+    ]
+  ] .
+

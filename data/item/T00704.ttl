@@ -1,0 +1,83 @@
+@prefix t00704: <https://noordergraf.rug.nl/item/T00704#> .
+
+item:T00704
+  a :Tomb ;
+  :figure [
+    a :Bust ;
+    :theme t00704:P1
+  ] ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7836 ;
+    :geoLong 6.8966
+  ] ;
+  :nd "+52.7836+006.8966"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T14:01:41"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00704.jpg
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00704:P1 ;
+  :text """TODO: mrwiardus willem
+van haersma buma.
+kantonrechter te
+emmen, lid van den
+voogdijraad te
+assen:
+keboren te sneek qonaatt
+1860 overleden te emmen
+24 februari 19:27
+""" .
+
+t00704:C1
+  a :Town ;
+  :place place:Emmen2756136 ;
+  :text "TODO: EMMEN" .
+
+t00704:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y10M26D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1868-03-29"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1927-02-24"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Wiardus Willem Ban Haersma Buma" ;
+    :prefix "Mr" ;
+    :text "TODO: Mr Wiardus Willem Ban Haersma Buma"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:12210 ;
+    :location t00704:C1
+  ], [
+    a :Occupation ;
+    :hisco hisco:20110 ;
+    :organisation [
+      a :Organisation ;
+      :location [
+        a :City ;
+        :place place:Assen2759633 ;
+        :text "TODO: ASSEN"
+      ] ;
+      :organisationName "VOOGDIJRAAD"
+    ]
+  ] ;
+  :placeOfBirth [
+    a :City ;
+    :place place:Sneek2747063 ;
+    :text "TODO: SNEEK"
+  ] ;
+  :placeOfDeath t00704:C1 .
+

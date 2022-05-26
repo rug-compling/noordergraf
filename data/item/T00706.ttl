@@ -1,0 +1,73 @@
+@prefix t00706: <https://noordergraf.rug.nl/item/T00706#> .
+
+item:T00706
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7817 ;
+    :geoLong 6.9010
+  ] ;
+  :nd "+52.7817+006.9010"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:48:45"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00706.jpg
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00706:P1 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: hier rust onze
+lieve broeder
+behuwdbroeder
+en oom
+dirk
+meppelink
+geb.4 juli 1858
+overl.4 nov.1935
+ss
+het
+fan.l.meppelink
+zuid barge
+""" .
+
+t00706:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P77Y4M"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1858-07-04"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1935-11-04"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Dirk Meppelink" ;
+    :text "TODO: Dirk Meppelink"
+  ] ;
+  :relation [
+    a :Brother, :BrotherInLaw, :Uncle ;
+    :target [
+      a :Family ;
+      :location [
+        a :Village ;
+        :place place:Zuidbarge2743809 ;
+        :text "TODO: ZUIDBARGE"
+      ] ;
+      :name [
+        a :Name ;
+        :fullName "L. MEPPELINK" ;
+        :text "TODO"
+      ]
+    ]
+  ] .
+

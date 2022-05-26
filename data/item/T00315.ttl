@@ -1,0 +1,75 @@
+@prefix t00315: <https://noordergraf.rug.nl/item/T00315#> .
+
+item:T00315
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7158 ;
+    :geoLong 6.4731
+  ] ;
+  :nd "+52.7158+006.4731"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-19T14:06:50"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00315.jpg
+  ] ;
+  :site site:NLdr7907chHoogeveen ;
+  :subject t00315:P1, t00315:P2 ;
+  :text """TODO: b.veldkamp
+m leven h.d. sch.
+geb 19 april 1834
+overl. 6 mei 1903.
+en
+j.veldkamp
+halfmouw.
+geb. 24 febr. 1841
+overl. 19 dec. 1931.
+""" .
+
+t00315:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P69Y17D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1834-04-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1903-05-06"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "B. Veldkamp" ;
+    :text "TODO: B. Veldkamp"
+  ] ;
+  :occupation [
+    a :Occupation ;
+    :hisco hisco:13940
+  ] .
+
+t00315:P2
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P90Y9M25D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1841-02-24"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1931-12-19"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "J. Veldkamp-Halfmouw" ;
+    :text "TODO: J. Veldkamp-Halfmouw"
+  ] .
+

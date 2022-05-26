@@ -1,0 +1,57 @@
+@prefix t00708: <https://noordergraf.rug.nl/item/T00708#> .
+
+item:T00708
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 52.7809 ;
+    :geoLong 6.8996
+  ] ;
+  :nd "+52.7809+006.8996"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-21T13:44:12"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00708.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST ZACHT"@nld
+  ] ;
+  :site site:NLdr7811heEmmen ;
+  :subject t00708:P1, t00708:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: ✝
+hier rusten onze
+lieve ouders
+albert zwols
+en
+jantien warring
+rust zacht
+""" .
+
+t00708:P1
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Albert Zwols" ;
+    :text "TODO: Albert Zwols"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+
+t00708:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "Jantien Warring" ;
+    :text "TODO: Jantien Warring"
+  ] ;
+  :relation [
+    a :Parent
+  ] .
+

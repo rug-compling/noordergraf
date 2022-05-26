@@ -1,0 +1,86 @@
+@prefix t00572: <https://noordergraf.rug.nl/item/T00572#> .
+
+item:T00572
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.1046 ;
+    :geoLong 6.8741
+  ] ;
+  :nd "+53.1046+006.8741"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-11-24T13:38:31"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00572.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"
+  ] ;
+  :site site:NLgr9641anVeendam ;
+  :subject t00572:P1, t00572:P2, t00572:P3 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ] ;
+  :text """TODO: met
+vam
+pustplaats
+antina gezina
+aug. 1874
+overleden
+3 april 1920
+geboren
+11
+,
+geliefde dochter
+van
+rheerdten a boer
+rust in vrede.
+""" .
+
+t00572:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P45Y7M23D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1874-08-11"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1920-04-03"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Jantina Gezina" ;
+    :text "TODO: Jantina Gezina"
+  ] ;
+  :relation [
+    a :Daughter ;
+    :target t00572:P3
+  ], [
+    a :Daughter ;
+    :target t00572:P2
+  ] .
+
+t00572:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "R. Heerdt" ;
+    :text "TODO: R. Heerdt"
+  ] .
+
+t00572:P3
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "A. Boer" ;
+    :text "TODO: A. Boer"
+  ] .
+

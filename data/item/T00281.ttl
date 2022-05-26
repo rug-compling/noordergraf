@@ -1,0 +1,77 @@
+@prefix t00281: <https://noordergraf.rug.nl/item/T00281#> .
+
+item:T00281
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.4040 ;
+    :geoLong 6.7491
+  ] ;
+  :nd "+53.4040+006.7491"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-10-16T16:58:30"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00281.jpg
+  ] ;
+  :site site:NLgr9985scOosternieland ;
+  :subject t00281:P1, t00281:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:Butterfly
+  ] ;
+  :text """TODO: restplatsen
+pieter jakobs
+ups
+مار کرے اور
+18223
+valt
+oostericana
+1207473322
+aligerators
+varessa
+""" .
+
+t00281:P1
+  a :Male ;
+  :age [
+    a :Age ;
+    :duration "P58Y8M24D"^^xsd:duration ;
+    :inferred true
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1823-05-19"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1882-02-12"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Pieter Jakobs Kuipers" ;
+    :text "TODO: Pieter Jakobs Kuipers"
+  ] ;
+  :placeOfBirth [
+    a :Village ;
+    :place place:Zijldijk2743893 ;
+    :text "TODO: ZIJLDIJK"
+  ] ;
+  :placeOfDeath [
+    a :Village ;
+    :place place:Oosternieland2749429 ;
+    :text "TODO: OOSTERNIELAND"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00281:P2
+  ] .
+
+t00281:P2
+  a :Female ;
+  :name [
+    a :Name ;
+    :fullName "W.R. Bussema" ;
+    :text "TODO: W.R. Bussema"
+  ] .
+

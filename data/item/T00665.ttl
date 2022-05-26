@@ -1,0 +1,90 @@
+@prefix t00665: <https://noordergraf.rug.nl/item/T00665#> .
+
+item:T00665
+  a :Tomb ;
+  :geo [
+    a :GeoPoint ;
+    :geoLat 53.0694 ;
+    :geoLong 5.5243
+  ] ;
+  :nd "+53.0694+005.5243"^^ll: ;
+  :photo [
+    a :Photo ;
+    :dcDate "2019-12-14T13:57:45"^^xsd:dateTime ;
+    :dcLicense <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    :file img:T00665.jpg
+  ] ;
+  :quote [
+    a :Quote ;
+    :text "RUST IN VREDE"@nld
+  ] ;
+  :site site:NLfr8701dwBolsward ;
+  :subject t00665:P1, t00665:P2 ;
+  :symbol [
+    a :Symbol ;
+    :symbolType symbol:WeepingWillow
+  ], [
+    a :Symbol ;
+    :symbolType symbol:Frond
+  ] ;
+  :text """TODO: kustplaato
+ni
+afke v.d. veer
+gelt barnknip
+220ch 1851\"
+snoerlle beleuand
+werlite
+arotta
+imdenouderdom van
+byna taron
+ichtgenote van
+simon oudeboon
+bino
+02
+rust in yrede
+""" .
+
+t00665:P1
+  a :Female ;
+  :age [
+    a :Age ;
+    :duration "P54Y"^^xsd:duration ;
+    :inferred true ;
+    :text "bijna 54 jaren"
+  ] ;
+  :dateOfBirth [
+    a :Date ;
+    :date "1859-10-22"^^xsd:date
+  ] ;
+  :dateOfDeath [
+    a :Date ;
+    :date "1913-09-11"^^xsd:date
+  ] ;
+  :name [
+    a :Name ;
+    :fullName "Afke van der Veer" ;
+    :text "TODO: Afke van der Veer"
+  ] ;
+  :placeOfBirth [
+    a :Town ;
+    :place place:DeKnipe6697854 ;
+    :text "TODO: DE KNIPE"
+  ] ;
+  :placeOfDeath [
+    a :City ;
+    :place place:Bolsward2758682 ;
+    :text "TODO: BOLSWARD"
+  ] ;
+  :relation [
+    a :Spouse ;
+    :target t00665:P2
+  ] .
+
+t00665:P2
+  a :Male ;
+  :name [
+    a :Name ;
+    :fullName "Simon Oudeboon" ;
+    :text "TODO: Simon Oudeboon"
+  ] .
+
