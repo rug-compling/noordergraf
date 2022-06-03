@@ -42,8 +42,7 @@ func main() {
                         qid     INTEGER PRIMARY KEY AUTOINCREMENT,
                         label   TEXT UNIQUE,
                         image   TEXT,
-                        persons TEXT,
-                        names   TEXT
+                        persons TEXT
                       );`)
 	if err != nil {
 		log.Fatal(err)
@@ -74,13 +73,12 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		// CONFIG question: image persons names
+		// CONFIG question: image persons
 		// NOTE: number of question marks must match number of fields and arguments
-		_, err = tx.Exec("INSERT INTO questions(label, image, persons, names) VALUES (?, ?, ?, ?);",
+		_, err = tx.Exec("INSERT INTO questions(label, image, persons) VALUES (?, ?, ?);",
 			record[0], // label (required)
 			record[1], // image
-			record[2], // persons
-			record[3]) // names
+			record[2]) // persons
 		if err != nil {
 			log.Fatal(err)
 		}

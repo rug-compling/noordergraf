@@ -4,10 +4,9 @@ type questionType struct {
 
 	// All fields must start with an uppercase letter
 
-	// CONFIG question: Image Persons Names
+	// CONFIG question: Image Persons
 	Image   string
 	Persons string
-	Names   string
 
 	Qid     int
 	Done    int

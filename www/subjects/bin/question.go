@@ -38,12 +38,11 @@ func question() {
 		return
 	}
 
-	// CONFIG question: image persons names
+	// CONFIG question: image persons
 	rows, err := gDB.Query(fmt.Sprintf(`
 			SELECT qid,
 				image,
-                persons,
-				names
+                persons
 			FROM questions
 			WHERE qid NOT IN ( SELECT qid FROM answers WHERE uid = %d )
 			ORDER BY RANDOM()
@@ -53,11 +52,11 @@ func question() {
 		return
 	}
 	var qid int
-	// CONFIG question: image persons names
-	var image, persons, names string
+	// CONFIG question: image persons
+	var image, persons string
 	for rows.Next() {
-		// CONFIG question: item image persons names
-		if xx(rows.Scan(&qid, &image, &persons, &names)) {
+		// CONFIG question: item image persons
+		if xx(rows.Scan(&qid, &image, &persons)) {
 			return
 		}
 		ok = true
@@ -82,10 +81,9 @@ func question() {
 		Todo:    total - done - skipped,
 		Qid:     qid,
 
-		// CONFIG question: image persons names
+		// CONFIG question: image persons
 		Image:   image,
 		Persons: persons,
-		Names:   names,
 	}))
 }
 
