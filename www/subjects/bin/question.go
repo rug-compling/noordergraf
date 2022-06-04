@@ -1,10 +1,13 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
-	"html/template"
+	"html"
 	"io/ioutil"
 	"os"
+	"strings"
+	"text/template"
 )
 
 func question() {
@@ -65,6 +68,32 @@ func question() {
 		xx(fmt.Errorf("Missing row"))
 	}
 
+	var plist string
+	if strings.TrimSpace(persons) == "" {
+		plist = "<input type=\"hidden\" name=\"subjects\" value=\"--NONE--\">\n"
+	} else {
+		var buf bytes.Buffer
+		buf.WriteString("<p>\nWie is/zijn hier begraven?<br>\n")
+
+		pp := strings.Split(persons, "|")
+		for i, p := range pp {
+			aa := strings.SplitN(p, "#", 2)
+			id := html.EscapeString(aa[0])
+			name := html.EscapeString(aa[1])
+			checked := ""
+			if i == 0 && len(pp) == 1 {
+				checked = " checked"
+			}
+			fmt.Fprintf(&buf, `
+<input type="checkbox" id="p%d" name="subjects" value="%s"%s>
+<label for="p%d">%s</label><br>
+`, i, id, checked, i, name)
+		}
+
+		buf.WriteString("</p>\n<hr>\n")
+		plist = buf.String()
+	}
+
 	b, err := ioutil.ReadFile("../templates/question.html")
 	if xx(err) {
 		return
@@ -82,8 +111,8 @@ func question() {
 		Qid:     qid,
 
 		// CONFIG question: image persons
-		Image:   image,
-		Persons: persons,
+		Image:   html.EscapeString(image),
+		Persons: plist,
 	}))
 }
 

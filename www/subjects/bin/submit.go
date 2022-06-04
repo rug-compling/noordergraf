@@ -24,16 +24,22 @@ func submit() {
 		// BEGIN CONFIG answer: what, subjects
 
 		what = strings.TrimSpace(gReq.FormValue("what"))
-		subjects = strings.TrimSpace(gReq.FormValue("subjects"))
+		subjects = strings.Join(gReq.Form["subjects"], "|")
 
-		// TODO: tests
+		if what == "" {
+			x(fmt.Errorf("Geen antwoord voor: Wat is dit?"))
+			return
+		}
 
-		/*
-			if animal == "" {
-				x(fmt.Errorf("Missing answer for animal"))
-				return
-			}
-		*/
+		if subjects == "" {
+			x(fmt.Errorf("Geen antwoord voor: Wie is/zijn hier begraven?"))
+			return
+		}
+
+		if subjects == "--NONE--" {
+			subjects = ""
+		}
+
 		// END CONFIG answer: what subjects
 
 	}

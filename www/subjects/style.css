@@ -48,3 +48,143 @@ a.btn:hover {
   text-decoration: none;
   background-color: #00ACDA;
 }
+
+
+
+
+
+
+div.columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-gap: 20px;
+  -webkit-column-width: 400px;
+  -moz-column-width: 400px;
+  column-width: 400px;
+  padding: 1em 0px;
+}
+div.block {
+  /* break-inside: avoid-column; */
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+div.block img {
+    max-width: 100%;
+}
+
+div.lnbrk {
+    white-space: pre-line;
+    padding: 1em;
+    border: 1px solid grey;
+}
+
+.site, .person {
+    padding: 1em;
+    border: 1px solid grey;
+}
+
+div.subject {
+    border: 2px solid black;
+}
+
+button.current {
+    color: white;
+    background-color: black;
+}
+
+
+/***************************************************************/
+
+
+div.block img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: black;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 1200px;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+figure {
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    border: 1px solid grey;
+}
+
+figure img {
+    padding: 4px 4px 0px 4px;
+    max-height: 800px;
+}
+
+@media screen and (max-width: 1240px) {
+    #container {
+       padding: 0px 20px;
+    }
+}

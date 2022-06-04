@@ -38,7 +38,7 @@ func xerr(withLineno bool, err error, msg ...interface{}) bool {
 	headers()
 	fmt.Printf(`<html>
 <head>
-<title>Error</title>
+<title>Fout</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../favicon.ico" type="image/ico">
@@ -49,11 +49,11 @@ func xerr(withLineno bool, err error, msg ...interface{}) bool {
 &nbsp;
 </div>
 <div id="main">
-<h1>Error</h2>
+<h1>Fout</h2>
 %s
 </div>
 <div id="footer">
-<a href=".">Continue</a>
+<a href=".">Doorgaan</a>
 </body>
 </html>
 `, html.EscapeString(b.String()))

@@ -4,28 +4,33 @@
     <title>Questionnaire</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../favicon.ico" type="image/ico">
+    <link rel="icon" href="/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="../style.css" type="text/css">
   </head>
   <body class="user">
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
     <div id="header">
-      Done: {{.Done}} | Skipped: {{.Skipped}} | To do: {{.Todo}}
+      Gedaan: {{.Done}} | Overgeslagen: {{.Skipped}} | Nog te doen: {{.Todo}}
     </div>
     <div id="main">
 
-      <h1>Questionnaire</h1>
+<!--      <h1>Questionnaire</h1> -->
 
-      <div id="question">
-        <p>
-          <!-- CONFIG question: .Image .Persons -->
-          <img src="../../img/{{.Image}}" alt="{{.Persons}}">
-        </p>
-        <p>
-          <!-- CONFIG question: .Persons -->
-          This is {{.Persons}}
-        </p>
-      </div>
+      <div class="columns">
 
+<div class="block">
+    <figure>
+    <img src="../../img/{{.Image}}" id="myImg">
+    </figure>
+</div>
+
+	<div class="block">
       <form action="."  method="post" accept-charset="utf-8">
         <input type="hidden" name="action" value="submit">
         <input type="hidden" name="qid" value="{{.Qid}}">
@@ -39,20 +44,45 @@
           <input type="radio" id="kruis" name="what" value="kruis">
           <label for="kruis">Kruis</label><br>
           <input type="radio" id="anders" name="what" value="anders">
-          <label for="anders">iets andersSmall</label><br>
+          <label for="anders">iets anders</label><br>
         </p>
         <hr>
+	{{.Persons}}
         <p>
           <input type="checkbox" id="skip" name="skip" value="1">
           <label for="skip">Vraag overslaan, het is te moelijk</label>
         </p>
         <input type="submit">
       </form>
+      </div>
 
+    </div>
     </div>
 
     <div id="footer">
-      <a href="..">Home</a>
+      <a href="..">Terug naar begin</a>
     </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
   </body>
 </html>

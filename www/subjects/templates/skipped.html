@@ -9,16 +9,14 @@
   </head>
   <body class="user">
     <div id="header">
-      Done: {{.Done}} | Skipped: {{.Skipped}} | To do: {{.Todo}}
+      Gedaan: {{.Done}} | Overgeslagen: {{.Skipped}} | Nog te doen: {{.Todo}}
     </div>
     <div id="main">
 
-      <h1>Questionnaire</h1>
-
       <div id="question">
-        You have skipped {{.Skipped}} {{if eq .Skipped 1}} item {{else}} items {{end}}
+        Je hebt {{.Skipped}} {{if eq .Skipped 1}} vraag {{else}} vragen {{end}} overgeslagen
         <p>
-        Would you like to try {{if eq .Skipped 1}} this item {{else}} these items {{end}} again?
+        Wil je deze {{if eq .Skipped 1}} vraag {{else}} vragen {{end}} nog eens proberen?
       </div>
 
       <form action="."  method="post">
@@ -26,9 +24,9 @@
         <hr>
         <p>
           <input type="radio" id="yes" name="unskip" value="yes" autofocus>
-          <label for="yes">Yes, try again</label><br>
+          <label for="yes">Ja, vooruit</label><br>
           <input type="radio" id="no" name="unskip" value="no">
-          <label for="no">No, thanks</label><br>
+          <label for="no">Nee, laat maar</label><br>
         </p>
         <hr>
         <input type="submit">
@@ -37,7 +35,7 @@
     </div>
 
     <div id="footer">
-      <a href="..">Home</a>
+      <a href="..">Terug naar begin</a>
     </div>
     </body>
 </html>

@@ -32,12 +32,12 @@ func loginRequest() {
 	email := strings.TrimSpace(gReq.FormValue("email"))
 
 	if email == "" {
-		x(fmt.Errorf("Missing e-mail address"))
+		x(fmt.Errorf("E-mailadres ontbreekt"))
 		return
 	}
 
 	if !strings.Contains(email, "@") {
-		x(fmt.Errorf("Invalid e-mail address"))
+		x(fmt.Errorf("Ongeldig e-mailadres"))
 		return
 	}
 
@@ -80,7 +80,7 @@ func loginRequest() {
 		email,
 		"Log in",
 		fmt.Sprintf(
-			"Go to this URL to log in: %sbin/?action=login&pw=%s\n\nNOTE: This URL will be valid for one hour\n",
+			"Ga naar deze URL om in te loggen: %sbin/?action=login&pw=%s\n\nLET OP: Deze URL is één uur geldig\n",
 			cBaseUrl, url.QueryEscape(auth)))
 	if xx(err) {
 		return
