@@ -11,8 +11,7 @@
 
 
 <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
+  <img class="modal-content" id="img01" src="../../img/{{.Image}}">
 </div>
 
     <div id="header">
@@ -25,7 +24,7 @@
       <div class="columns">
 
 <div class="block">
-    <figure>
+    <figure class="yscroll">
     <img src="../../img/{{.Image}}" id="myImg">
     </figure>
 </div>
@@ -35,22 +34,22 @@
         <input type="hidden" name="action" value="submit">
         <input type="hidden" name="qid" value="{{.Qid}}">
         <hr>
-        <p>
-          Wat is dit?<br>
+        <p>Wat is dit?</p>
+	<p>
           <input type="radio" id="graf" name="what" value="graf">
           <label for="graf">Grafsteen</label><br>
-          <input type="radio" id="memo" name="what" value="memo">
-          <label for="memo">Gedenksteen / Gedenkmonument</label><br>
           <input type="radio" id="kruis" name="what" value="kruis">
           <label for="kruis">Kruis</label><br>
+          <input type="radio" id="memo" name="what" value="memo">
+          <label for="memo">Gedenkteken, niet op/bij een graf</label><br>
           <input type="radio" id="anders" name="what" value="anders">
-          <label for="anders">iets anders</label><br>
+          <label for="anders">Iets anders</label><br>
         </p>
         <hr>
 	{{.Persons}}
         <p>
           <input type="checkbox" id="skip" name="skip" value="1">
-          <label for="skip">Vraag overslaan, het is te moelijk</label>
+          <label for="skip">Vraag overslaan, ik weet het niet</label>
         </p>
         <input type="submit">
       </form>
@@ -65,21 +64,16 @@
 
 <script>
 // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal
 var img = document.getElementById("myImg");
+var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
 img.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = this.src;
 }
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+modalImg.onclick = function() {
+  modal.style.display = "none";
+}
+modal.onclick = function() {
   modal.style.display = "none";
 }
 </script>

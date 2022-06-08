@@ -73,7 +73,7 @@ func question() {
 		plist = "<input type=\"hidden\" name=\"subjects\" value=\"--NONE--\">\n"
 	} else {
 		var buf bytes.Buffer
-		buf.WriteString("<p>\nWie is/zijn hier begraven?<br>\n")
+		buf.WriteString("<p>\nWie is/zijn hier begraven?<br> (Of, bij gedenkteken: wie wordt hier herdacht?)</p>\n<p>\n")
 
 		pp := strings.Split(persons, "|")
 		for i, p := range pp {

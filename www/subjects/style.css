@@ -105,7 +105,7 @@ button.current {
 
 
 div.block img:hover {
-    opacity: 0.7;
+    opacity: 0.9;
     cursor: pointer;
 }
 
@@ -114,7 +114,7 @@ div.block img:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 30px; /* Location of the box */
+  padding-top: 0px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -125,12 +125,12 @@ div.block img:hover {
 
 /* Modal Content (image) */
 .modal-content {
-  margin: auto;
+  margin: 0px auto;
   display: block;
-  max-width: 1200px;
+  max-width: 100%;
 }
 
-.modal-content, #caption {  
+.modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -138,31 +138,13 @@ div.block img:hover {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
+  from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
+  from {transform:scale(0)}
   to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -176,11 +158,16 @@ figure {
     padding: 0px;
     margin: 0px 0px 20px 0px;
     border: 1px solid grey;
+    max-height: 800px;
+}
+
+.yscroll {
+    overflow-y: auto;
 }
 
 figure img {
     padding: 4px 4px 0px 4px;
-    max-height: 800px;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 1240px) {

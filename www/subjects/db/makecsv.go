@@ -44,6 +44,7 @@ SELECT ?item ?photo ?person ?name {
     ?person :name / :fullName ?name .
     ?y :file ?photo .
   }
+  FILTER NOT EXISTS { ?z :creator ?person }
 }
 ORDER BY ?item ?person
 `
