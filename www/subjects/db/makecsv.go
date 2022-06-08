@@ -39,10 +39,12 @@ func main() {
 	w = csv.NewWriter(fp)
 
 	query := `
-SELECT ?item ?photo ?person ?name {
+SELECT DISTINCT ?item ?photo ?person ?name {
   GRAPH ?item {
     ?person :name / :fullName ?name .
     ?y :file ?photo .
+    ?item :todo ?todo .
+    VALUES ?todo { :TodoItemType :TodoSubjects } .
   }
   FILTER NOT EXISTS { ?z :creator ?person }
 }

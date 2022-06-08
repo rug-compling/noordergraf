@@ -1165,6 +1165,14 @@
   rdfs:range :Symbol ;
   rdfs:isDefinedBy : .
 
+:todo a rdf:Property ;
+  rdfs:label "toto" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:domain :Item ;
+  rdfs:range :Todo ;
+  rdfs:isDefinedBy : .
+
 :Cross a rdfs:Class ;
   rdfs:subClassOf :Item ;
   rdfs:label "Cross" ;
@@ -1873,3 +1881,32 @@
   rdfs:isDefinedBy : .
 
 ################################################################
+
+:Todo a rdfs:Class ;
+  rdfs:subClassOf :Class ;
+  rdfs:label "Todo" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:TodoItemType a rdfs:Class ;
+  rdfs:subClassOf :Todo ;
+  rdfs:label "TodoItemType" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:TodoSubjects a rdfs:Class ;
+  rdfs:subClassOf :Todo ;
+  rdfs:label "TodoSubjects" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
+:TodoText a rdfs:Class ;
+  rdfs:subClassOf :Todo ;
+  rdfs:label "TodoText" ;
+  rdfs:comment "TODO."@eng ;
+  rdfs:comment "TODO."@nld ;
+  rdfs:isDefinedBy : .
+
