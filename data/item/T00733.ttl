@@ -1,4 +1,5 @@
 @prefix t00733: <https://noordergraf.rug.nl/item/T00733#> .
+@prefix t00734: <https://noordergraf.rug.nl/item/T00734#> .
 
 item:T00733
   a :Tomb ;
@@ -25,7 +26,7 @@ item:T00733
     :text "ps.68 vers 2"@nld
   ] ;
   :site site:NLdr7811heEmmen ;
-  :subject t00733:P1, t00733:P2 ;
+  :subject t00733:P1 ;
   :symbol [
     a :Symbol ;
     :symbolType symbol:WeepingWillow
@@ -78,13 +79,15 @@ t00733:P1
   :relation [
     a :Widow ;
     :target t00733:P2
-  ] .
+  ] ;
+  :sameAs t00734:P3 .
 
 t00733:P2
   a :Male ;
   :name [
     a :Name ;
-    :fullName "Mannus Schering" ;
-    :text "TODO: Mannus Schering"
-  ] .
+    :fullName "Mannus Schirring" ;
+    :text "Mannus Schirring"
+  ] ;
+  :sameAs t00734:P1 .
 

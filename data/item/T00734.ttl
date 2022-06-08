@@ -1,4 +1,5 @@
 @prefix t00734: <https://noordergraf.rug.nl/item/T00734#> .
+@prefix t00733: <https://noordergraf.rug.nl/item/T00733#> .
 
 item:T00734
   a :Tomb ;
@@ -15,7 +16,7 @@ item:T00734
     :file img:T00734.jpg
   ] ;
   :site site:NLdr7811heEmmen ;
-  :subject t00734:P1, t00734:P2, t00734:P3 ;
+  :subject t00734:P1 ;
   :symbol [
     a :Symbol ;
     :symbolType symbol:WeepingWillow
@@ -57,10 +58,11 @@ t00734:P1
   ] ;
   :name [
     a :Name ;
-    :fullName "Mannus Schering" ;
-    :text "TODO: Mannus Schering"
+    :fullName "Mannes Schirring" ;
+    :text "Mannes Schirring"
   ] ;
-  :relation t00734:R1, t00734:R2 .
+  :relation t00734:R1, t00734:R2 ;
+  :sameAs t00733:P2 .
 
 t00734:P2
   a :Female ;
@@ -76,7 +78,8 @@ t00734:P3
     a :Name ;
     :fullName "Willemptje Wiggerink" ;
     :text "TODO: Willemptje Wiggerink"
-  ] .
+  ] ;
+  :sameAs t00733:P1 .
 
 t00734:R1
   a :Wife ;
