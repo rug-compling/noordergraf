@@ -207,6 +207,12 @@ func main() {
 
 	b, _ := ioutil.ReadFile("/net/noordergraf/data/prefix.ttl")
 	prefix = trimPrefix(string(b), data)
+	for _, line := range strings.SplitAfter(data, "\n") {
+		line := strings.TrimSpace(line)
+		if strings.HasPrefix(line, "@prefix") {
+			addPretab(line)
+		}
+	}
 
 	switch format {
 	case HTML:
@@ -602,6 +608,17 @@ func trimPrefix(prefix, data string) string {
 		}
 	}
 	return strings.Join(lines, "")
+}
+
+func addPretab(line string) {
+	a := strings.Fields(line)
+	if len(a) > 2 {
+		key := a[1][:len(a[1])-1]
+		if key != "rdf" && key != "rdfs" && key != "xsd" {
+			pretab[key] = a[2][1 : len(a[2])-1]
+		}
+		pretaball[key] = a[2][1 : len(a[2])-1]
+	}
 }
 
 func penman(text string) string {
