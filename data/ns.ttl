@@ -1166,11 +1166,11 @@
   rdfs:isDefinedBy : .
 
 :todo a rdf:Property ;
-  rdfs:label "toto" ;
+  rdfs:label "todo" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:domain :Item ;
-  rdfs:range :Todo ;
+  rdfs:range :ToDo ;
   rdfs:isDefinedBy : .
 
 :Cross a rdfs:Class ;
@@ -1882,31 +1882,20 @@
 
 ################################################################
 
-:Todo a rdfs:Class ;
+:ToDo a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:label "Todo" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
 
-:TodoItemType a rdfs:Class ;
-  rdfs:subClassOf :Todo ;
-  rdfs:label "TodoItemType" ;
+:task a rdf:Property ;
+  rdfs:label "task" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
+  rdfs:domain :ToDo ;
+  rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
-:TodoSubjects a rdfs:Class ;
-  rdfs:subClassOf :Todo ;
-  rdfs:label "TodoSubjects" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
-
-:TodoText a rdfs:Class ;
-  rdfs:subClassOf :Todo ;
-  rdfs:label "TodoText" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+################################################################
 

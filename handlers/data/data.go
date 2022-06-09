@@ -295,7 +295,7 @@ func doHTML() {
 
 	noindex := ""
 
-	if uri == "/ns" || strings.HasPrefix(uri, "/bible/") || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/item/") {
+	if uri == "/ns" || strings.HasPrefix(uri, "/bible/") || strings.HasPrefix(uri, "/item/") || strings.HasPrefix(uri, "/place/") || strings.HasPrefix(uri, "/site/") || strings.HasPrefix(uri, "/symbol/") || strings.HasPrefix(uri, "/todo/") {
 
 		if strings.HasPrefix(uri, "/item/") {
 			year := time.Now().Year()

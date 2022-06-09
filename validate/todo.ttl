@@ -1,0 +1,24 @@
+
+:TodoShape a sh:NodeShape ;
+  sh:closed true ;
+  sh:targetClass :ToDo ;
+  sh:class :ToDo ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ] ;
+  sh:property [
+    sh:path :task ;
+    sh:datatype rdf:langString ;
+    sh:uniqueLang true ;
+    # Let op: validator kijkt alleen naar eerste twee letters
+    sh:languageIn ("eng" "nld") ;
+    sh:minCount 2 ;
+    sh:maxCount 2 
+  ] ;
+  sh:property [
+    sh:path :dcModified ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:dateTime
+  ] .
