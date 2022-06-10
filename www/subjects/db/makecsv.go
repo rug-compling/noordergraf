@@ -44,7 +44,7 @@ SELECT DISTINCT ?item ?photo ?person ?name {
     ?person :name / :fullName ?name .
     ?y :file ?photo .
     ?item :todo ?todo .
-    VALUES ?todo { :TodoItemType :TodoSubjects } .
+    VALUES ?todo { todo:ItemType todo:Subjects } .
   }
   FILTER NOT EXISTS { ?z :creator ?person }
 }
