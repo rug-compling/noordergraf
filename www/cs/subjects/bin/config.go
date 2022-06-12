@@ -18,7 +18,7 @@ const (
 	// BEGIN CONFIG: configurable global variables
 
 	// URL of the application, including trailing slash
-	cBaseUrl = "https://noordergraf.rug.nl/subjects/"
+	cBaseUrl = "https://noordergraf.rug.nl/cs/subjects/"
 
 	// For sending mail to the participant: name and mail address of sender
 	cMailName = "Noordergraf Subjects Survey"
@@ -33,7 +33,7 @@ const (
 	cSmtpServ = "smtp.rug.nl:25"
 
 	// To prevent name clashes with other cookies on the same site
-	cCookiePrefix = "subjectcrowd"
+	cCookiePrefix = "ngcs"
 
 	// Used for encryption
 	cSecret = "change this bla bla boo bah"

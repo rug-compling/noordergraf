@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <script>
+      function insert(text) {
+        var ta = document.getElementById('mytext');
+        ta.focus();
+      	if (ta.selectionStart || ta.selectionStart == '0') {
+          var startPos = ta.selectionStart;
+          var endPos = ta.selectionEnd;
+          ta.value = ta.value.substring(0, startPos)
+            + text
+            + ta.value.substring(endPos, ta.value.length);
+      	  ta.setSelectionRange(endPos + text.length, endPos + text.length);
+        } else {
+          ta.value += text;
+        }
+      }
+    </script>
+  </head>
+  <body class="user">
+
+
+<div id="myModal" class="modal">
+  <img class="modal-content" id="img01" src="../../../img/{{.Image}}">
+</div>
+
+    <div id="header">
+      Gedaan: {{.Done}} | Overgeslagen: {{.Skipped}} | Nog te doen: {{.Todo}}
+    </div>
+    <div id="main">
+
+<!--      <h1>Questionnaire</h1> -->
+
+      <div class="columns">
+
+<div class="block">
+    <figure class="yscroll">
+    <img src="../../../img/{{.Image}}" id="myImg">
+    </figure>
+</div>
+
+    <div class="block">
+      <hr>
+      <button onclick="insert('★')">★</button>
+      <button onclick="insert('✝')">✝</button> &nbsp;
+      <button onclick="insert('Α')">Α</button>
+      <button onclick="insert('Ω')">Ω</button> &nbsp;
+      <button onclick="insert('✡')">✡</button><br><br>
+      <button onclick="insert('ᵃ')">ᵃ</button>
+      <button onclick="insert('ᵇ')">ᵇ</button>
+      <button onclick="insert('ᶜ')">ᶜ</button>
+      <button onclick="insert('ᵈ')">ᵈ</button>
+      <button onclick="insert('ᵉ')">ᵉ</button>
+      <button onclick="insert('ᶠ')">ᶠ</button>
+      <button onclick="insert('ᵍ')">ᵍ</button>
+      <button onclick="insert('ʰ')">ʰ</button>
+      <button onclick="insert('ⁱ')">ⁱ</button>
+      <button onclick="insert('ʲ')">ʲ</button>
+      <button onclick="insert('ᵏ')">ᵏ</button>
+      <button onclick="insert('ˡ')">ˡ</button>
+      <button onclick="insert('ᵐ')">ᵐ</button>
+      <button onclick="insert('ⁿ')">ⁿ</button>
+      <button onclick="insert('ᵒ')">ᵒ</button>
+      <button onclick="insert('ᵖ')">ᵖ</button>
+      <button onclick="insert('ʳ')">ʳ</button>
+      <button onclick="insert('ˢ')">ˢ</button>
+      <button onclick="insert('ᵗ')">ᵗ</button>
+      <button onclick="insert('ᵘ')">ᵘ</button>
+      <button onclick="insert('ᵛ')">ᵛ</button>
+      <button onclick="insert('ʷ')">ʷ</button>
+      <button onclick="insert('ˣ')">ˣ</button>
+      <button onclick="insert('ʸ')">ʸ</button>
+      <button onclick="insert('ᶻ')">ᶻ</button>
+      <button onclick="insert('ꟹ')">ꟹ</button><br><br>
+      <button onclick="insert('ᴬ')">ᴬ</button>
+      <button onclick="insert('ᴮ')">ᴮ</button>
+      <button onclick="insert('ᴰ')">ᴰ</button>
+      <button onclick="insert('ᴱ')">ᴱ</button>
+      <button onclick="insert('ᴳ')">ᴳ</button>
+      <button onclick="insert('ᴴ')">ᴴ</button>
+      <button onclick="insert('ᴵ')">ᴵ</button>
+      <button onclick="insert('ᴶ')">ᴶ</button>
+      <button onclick="insert('ᴷ')">ᴷ</button>
+      <button onclick="insert('ᴸ')">ᴸ</button>
+      <button onclick="insert('ᴹ')">ᴹ</button>
+      <button onclick="insert('ᴺ')">ᴺ</button>
+      <button onclick="insert('ᴼ')">ᴼ</button>
+      <button onclick="insert('ᴾ')">ᴾ</button>
+      <button onclick="insert('ᴿ')">ᴿ</button>
+      <button onclick="insert('ᵀ')">ᵀ</button>
+      <button onclick="insert('ᵁ')">ᵁ</button>
+      <button onclick="insert('ⱽ')">ⱽ</button>
+      <button onclick="insert('ᵂ')">ᵂ</button>
+      <button onclick="insert('ᴭ')">ᴭ</button>
+      <form action="."  method="post" accept-charset="utf-8">
+        <input type="hidden" name="action" value="submit">
+        <input type="hidden" name="qid" value="{{.Qid}}">
+        <p>Wat staat er letterlijk op dit monument?</p>
+	<p>
+          <textarea id="mytext" name="atext" rows="20">{{.Qtext}}</textarea>
+        </p>
+        <p>
+          <input type="checkbox" id="skip" name="skip" value="1">
+          <label for="skip">Vraag overslaan, ik kan het niet goed lezen</label>
+        </p>
+        <input type="submit">
+      </form>
+      </div>
+
+    </div>
+    </div>
+
+    <div id="footer">
+      <a href="..">Terug naar begin</a>
+    </div>
+
+<script>
+// Get the modal
+var img = document.getElementById("myImg");
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+}
+modalImg.onclick = function() {
+  modal.style.display = "none";
+}
+modal.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+  </body>
+</html>

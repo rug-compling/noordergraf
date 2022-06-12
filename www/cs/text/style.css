@@ -1,0 +1,181 @@
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+#header {
+    margin: 0px 0px 1em 0px;
+    padding: .5em 2em;
+    text-align: right;
+    background-color: #008CBA;
+    color: white;
+}
+
+#main {
+  margin: 2em;
+}
+
+#footer {
+  border-top: 1px solid #c0c0c0;
+  padding: .5em 2em 1em 2em;
+}
+
+#question {
+  text-align: center;
+}
+
+a.btn {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+a.btn:hover {
+  text-decoration: none;
+  background-color: #00ACDA;
+}
+
+
+
+
+
+
+div.columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-gap: 20px;
+  -webkit-column-width: 400px;
+  -moz-column-width: 400px;
+  column-width: 400px;
+  padding: 1em 0px;
+}
+div.block {
+  /* break-inside: avoid-column; */
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+div.block img {
+    max-width: 100%;
+}
+
+div.lnbrk {
+    white-space: pre-line;
+    padding: 1em;
+    border: 1px solid grey;
+}
+
+.site, .person {
+    padding: 1em;
+    border: 1px solid grey;
+}
+
+div.subject {
+    border: 2px solid black;
+}
+
+button.current {
+    color: white;
+    background-color: black;
+}
+
+
+/***************************************************************/
+
+
+div.block img:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: black;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: 0px auto;
+  display: block;
+  max-width: 100%;
+}
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+figure {
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    border: 1px solid grey;
+    max-height: 800px;
+}
+
+.yscroll {
+    overflow-y: auto;
+}
+
+figure img {
+    padding: 4px 4px 0px 4px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+    #container {
+       padding: 0px 20px;
+    }
+}
+
+textarea {
+    width: 100%;
+}

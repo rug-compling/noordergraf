@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questionnaire items</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+  </head>
+  <body class="user">
+    <div id="header">
+      Gedaan: {{.Done}} | Overgeslagen: {{.Skipped}} | Nog te doen: {{.Todo}}
+    </div>
+    <div id="main">
+
+      <div id="question">
+        Je hebt {{.Skipped}} {{if eq .Skipped 1}} vraag {{else}} vragen {{end}} overgeslagen
+        <p>
+        Wil je deze {{if eq .Skipped 1}} vraag {{else}} vragen {{end}} nog eens proberen?
+      </div>
+
+      <form action="."  method="post">
+        <input type="hidden" name="action" value="unskip">
+        <hr>
+        <p>
+          <input type="radio" id="yes" name="unskip" value="yes" autofocus>
+          <label for="yes">Ja, vooruit</label><br>
+          <input type="radio" id="no" name="unskip" value="no">
+          <label for="no">Nee, laat maar</label><br>
+        </p>
+        <hr>
+        <input type="submit">
+      </form>
+
+    </div>
+
+    <div id="footer">
+      <a href="..">Terug naar begin</a>
+    </div>
+    </body>
+</html>
