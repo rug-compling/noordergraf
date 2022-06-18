@@ -10,15 +10,33 @@
       function insert(text) {
         var ta = document.getElementById('mytext');
         ta.focus();
-      	if (ta.selectionStart || ta.selectionStart == '0') {
+        if (ta.selectionStart || ta.selectionStart == '0') {
           var startPos = ta.selectionStart;
           var endPos = ta.selectionEnd;
           ta.value = ta.value.substring(0, startPos)
             + text
             + ta.value.substring(endPos, ta.value.length);
-      	  ta.setSelectionRange(endPos + text.length, endPos + text.length);
+          ta.setSelectionRange(endPos + text.length, endPos + text.length);
         } else {
           ta.value += text;
+        }
+      }
+      function upper(up) {
+        var ta = document.getElementById('mytext');
+        ta.focus();
+        if (ta.selectionStart || ta.selectionStart == '0') {
+          var startPos = ta.selectionStart;
+          var endPos = ta.selectionEnd;
+          var nwtxt = ta.value.substring(startPos, endPos);
+          if (up) {
+            nwtxt = nwtxt.toUpperCase();
+          } else {
+            nwtxt = nwtxt.toLowerCase();
+          }
+          ta.value = ta.value.substring(0, startPos)
+            + nwtxt
+            + ta.value.substring(endPos, ta.value.length);
+          ta.setSelectionRange(endPos, endPos);
         }
       }
     </script>
@@ -97,12 +115,14 @@
       <button onclick="insert('ᵁ')">ᵁ</button>
       <button onclick="insert('ⱽ')">ⱽ</button>
       <button onclick="insert('ᵂ')">ᵂ</button>
-      <button onclick="insert('ᴭ')">ᴭ</button>
+      <button onclick="insert('ᴭ')">ᴭ</button><br><br>
+      <button onclick="upper(true)">GROOT</button>
+      <button onclick="upper(false)">klein</button>
       <form action="."  method="post" accept-charset="utf-8">
         <input type="hidden" name="action" value="submit">
         <input type="hidden" name="qid" value="{{.Qid}}">
         <p>Wat staat er letterlijk op dit monument?</p>
-	<p>
+        <p>
           <textarea id="mytext" name="atext" rows="20">{{.Qtext}}</textarea>
         </p>
         <p>
