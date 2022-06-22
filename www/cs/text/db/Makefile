@@ -1,17 +1,17 @@
 
 all:
 	@echo
-	@echo Gebruik: make new
-	@echo
-	@echo WAARSCHUWING: dit zal alle al verzamelde data wissen
+	@echo Gebruik:
+	@echo '    make new'
+	@echo '    make update'
 	@echo
 
-new: data.sqlite
-
-data.sqlite: makedb.go questions.csv
-	rm -f $@
-	go run -v $<
+new:
+	go run makecsv.go
+	go run makedb.go
 	chmod 664 $@
 
-questions.csv: makecsv.go
-	go run $<
+update:
+	go run makecsv.go
+	go run updatedb.go
+

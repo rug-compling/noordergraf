@@ -14,7 +14,17 @@ func main() {
 
 	////////////////////////////////////////////////////////////////
 	//
-	// Open database
+	// Check if database exists
+	//
+
+	_, err := os.Stat("data.sqlite")
+	if err == nil {
+		log.Fatal("Database exists")
+	}
+
+	////////////////////////////////////////////////////////////////
+	//
+	// Create database
 	//
 
 	db, err := sql.Open("sqlite3", "data.sqlite")
