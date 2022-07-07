@@ -16,7 +16,4 @@ case `basename $0` in
         ;;
 esac
 
-(
-    cat /net/noordergraf/data/prefix.ttl
-    cat "$@"
-) |  rapper -i turtle -o $f -I https://noordergraf.rug.nl/ -q -
+cat /net/noordergraf/data/prefix.ttl "$@" |  rapper -i turtle -o $f -I https://noordergraf.rug.nl/ -q -
