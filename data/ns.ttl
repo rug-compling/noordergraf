@@ -4,12 +4,10 @@
 # Een rdf:Property kan maar één waarde voor rdfs:domain hebben!
 # Kan een rdf:Property meerdere waardes hebben voor rdfs:range?
 
-# TODO: eigenschappen: oorspronkelijke afkorting
-
 : a owl:Ontology ;
   dcterms:title "Noordergraf" ;
-  dcterms:description "TODO: Ontology for Noordergraf"@eng ;
-  dcterms:description "TODO: Ontologie voor Noordergraf"@nld ;
+  dcterms:description "Ontology for Noordergraf"@eng ;
+  dcterms:description "Ontologie voor Noordergraf"@nld ;
   dcterms:subject <https://noordergraf.rug.nl/> ;
   rdfs:seeAlso <https://noordergraf.rug.nl/overview> .
 
@@ -21,8 +19,8 @@
 
 :comment a rdf:Property ;
   rdfs:label "comment" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "A comment"@eng ;
+  rdfs:comment "Een toelichting"@nld ;
   rdfs:domain :Class ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
@@ -31,22 +29,22 @@
 
 :Mixin a rdfs:Class ;
   rdfs:label "Mixin" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A class with properties to include in other classes."@eng ;
+  rdfs:comment "Een klasse met eigenschappen om toe te voegen aan andere klassen."@nld ;
   rdfs:isDefinedBy : ;
   rdfs:seeAlso wikidata:Q775794 .
 
 :WithDate a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithDate" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'date' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'date' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :date a rdf:Property ;
   rdfs:label "date" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The 'date' property."@eng ;
+  rdfs:comment "De eigenschap 'date'."@nld ;
   rdfs:domain :WithDate ;
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
   rdfs:isDefinedBy : ;
@@ -55,14 +53,14 @@
 :WithDcCreator a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcCreator" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'dcCreator' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'dcCreator' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :dcCreator a rdf:Property ;
   rdfs:label "dc Creator" ;
-  rdfs:comment "An entity responsible for making the resource."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Dublin Core property: An entity responsible for making the resource."@eng ;
+  rdfs:comment "Eigenschap uit Dublin Core: De maker van de hulpbron."@nld ;
   rdfs:domain :WithDcCreator ;
   rdfs:range rdfs:Resource , xsd:string ;
   rdfs:isDefinedBy : ;
@@ -72,14 +70,14 @@
 :WithDcDate a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcDate" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'dcDate' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'dcDate' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :dcDate a rdf:Property ;
   rdfs:label "dc Date" ;
-  rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Dublin Core property: A point or period of time associated with an event in the lifecycle of the resource. But we don't use it for periods of time."@eng ;
+  rdfs:comment "Eigenschap uit Dublin Core, gebruikt voor het aangeven van een datum, een maand en jaar, of alleen een jaar."@nld ;
   rdfs:domain :WithDcDate ;
   rdfs:range xsd:dateTime ;
   rdfs:isDefinedBy : ;
@@ -89,14 +87,14 @@
 :WithDcLicense a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcLicense" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'dcLicense' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'dcLicense' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :dcLicense a rdf:Property ;
   rdfs:label "dc License" ;
-  rdfs:comment "A legal document giving official permission to do something with the resource."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Dublin Core property: A legal document giving official permission to do something with the resource."@eng ;
+  rdfs:comment "Eigenschap uit Dublin Core: Een licentie die aangeeft hoe je een hulpbron mag gebruiken."@nld ;
   rdfs:domain :WithDcLicense ;
   rdfs:range rdfs:Resource , xsd:string ;
   rdfs:isDefinedBy : ;
@@ -106,14 +104,14 @@
 :WithDcModified a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcModified" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'dcModified' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'dcModified' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :dcModified a rdf:Property ;
   rdfs:label "dc Date Modified" ;
-  rdfs:comment "Date on which the resource was changed."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Dublin Core property: Date on which the resource was changed."@eng ;
+  rdfs:comment "Eigenschap uit Dublin Core: Datum waarop een hulpbron is veranderd."@nld ;
   rdfs:domain :WithDcModified ;
   rdfs:range xsd:dateTime ;
   rdfs:isDefinedBy : ;
@@ -123,14 +121,14 @@
 :WithDcSource a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcSource" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'dcSource' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'dcSource' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :dcSource a rdf:Property ;
   rdfs:label "dc Source" ;
-  rdfs:comment "A related resource from which the described resource is derived."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Dublin Core property: A related resource from which the described resource is derived."@eng ;
+  rdfs:comment "Eigenschap uit Dublin Core: Een andere hulpbron waarvan de huidige hulpbron is afgeleid."@nld ;
   rdfs:domain :WithDcSource ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
@@ -140,14 +138,14 @@
 :WithDcTitle a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithDcTitle" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'dcTitle' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'dcTitle' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :dcTitle a rdf:Property ;
   rdfs:label "dc Title" ;
-  rdfs:comment "A name given to the resource."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Dublin Core property: A name given to the resource."@eng ;
+  rdfs:comment "Eigenschap uit Dublin Core: De gegeven naam van de hulpbron."@nld ;
   rdfs:domain :WithDcTitle ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : ;
@@ -157,14 +155,14 @@
 :WithDuration a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithDuration" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'duration' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'duration' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :duration a rdf:Property ;
   rdfs:label "duration" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Physical quantity for describing the temporal distance between events."@eng ;
+  rdfs:comment "Natuurkundige grootheid die de afstand in tijd tussen twee gebeurtenissen aangeeft."@nld ;
   rdfs:domain :WithDuration ;
   rdfs:range xsd:duration ;
   rdfs:isDefinedBy : ;
@@ -173,14 +171,14 @@
 :WithFile a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithFile" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'file' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'file' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :file a rdf:Property ;
   rdfs:label "file" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The URL of a picture file."@eng ;
+  rdfs:comment "De URL van een afbeelding."@nld ;
   rdfs:domain :WithFile ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
@@ -189,8 +187,8 @@
 :WithGeography a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithGeography" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add properties related to geographical coordinates to another class."@eng ;
+  rdfs:comment "Een mixin om eigenschappen gerelateerd aan geografische coördinaten toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :geo a rdf:Property ;
@@ -215,14 +213,14 @@
 :WithInferred a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithInferred" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'inferred' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'inferred' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :inferred a rdf:Property ;
   rdfs:label "inferred" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "An boolean if true indicates that a value was inferred from values of other properties."@eng ;
+  rdfs:comment "Een boolean die aangeeft dat een waarde was afgeleid van waardes voor andere eigenschappen."@nld ;
   rdfs:domain :WithInferred ;
   rdfs:range xsd:boolean ;
   rdfs:isDefinedBy : .
@@ -230,14 +228,14 @@
 :WithLocation a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithLocation" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'location' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'location' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :location a rdf:Property ;
   rdfs:label "location" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The location of something."@eng ;
+  rdfs:comment "De locatie van iets."@nld ;
   rdfs:domain :WithLocation ;
   rdfs:range :Location ;
   rdfs:isDefinedBy : .
@@ -245,14 +243,14 @@
 :WithName a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithName" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'name' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'name' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :name a rdf:Property ;
   rdfs:label "name" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The name of a person or family."@eng ;
+  rdfs:comment "De naam van een persoon of familie."@nld ;
   rdfs:domain :WithName ;
   rdfs:range :Name ;
   rdfs:isDefinedBy : .
@@ -260,14 +258,14 @@
 :WithSameAs a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithSameAs" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'sameAs' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'sameAs' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :sameAs a rdf:Property ;
   rdfs:label "sameAs" ;
   rdfs:comment "URL of a reference Web page that unambiguously indicates the item's identity."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "URL van een referentie op een webpagina die de identiteit van een item aangeeft."@nld ;
   rdfs:domain :WithSameAs ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
@@ -279,34 +277,31 @@
 :WithSeeAlso a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithSeeAlso" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'seeAlso' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'seeAlso' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :seeAlso a rdf:Property ;
   rdfs:label "seeAlso" ;
   rdfs:comment "Further information about the subject resource."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Verdere informatie over het onderwerp."@nld ;
   rdfs:domain :WithSeeAlso ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : ;
   owl:sameAs    rdfs:seeAlso ;
   schema:sameAs rdfs:seeAlso .
 
-# TODO: WithTemporalRelation ?
-# TODO: WithTemporalOccupation ?
-
 :WithTemporal a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithTemporal" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add properties related to chronology to another class."@eng ;
+  rdfs:comment "Een mixin om eigenschappen gerelateerd aan chronologie toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :before a rdf:Property ;
   rdfs:label "before" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The subject event took place before the object event."@eng ;
+  rdfs:comment "Het subject geschiedde voor het object."@nld ;
   rdfs:domain :WithTemporal ;
   rdfs:range :WithTemporal ;
   rdfs:isDefinedBy : ;
@@ -315,8 +310,8 @@
 
 :after a rdf:Property ;
   rdfs:label "after" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The subject event took place after the object event."@eng ;
+  rdfs:comment "Het subject na het object."@nld ;
   rdfs:domain :WithTemporal; ;
   rdfs:range :WithTemporal ;
   rdfs:isDefinedBy : ;
@@ -325,8 +320,8 @@
 
 :begin a rdf:Property ;
   rdfs:label "begin" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The date something started."@eng ;
+  rdfs:comment "De datum waarop iets begon."@nld ;
   rdfs:domain :WithTemporal ;
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
   rdfs:isDefinedBy : ;
@@ -335,8 +330,8 @@
 
 :end a rdf:Property ;
   rdfs:label "end" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The date something ended."@eng ;
+  rdfs:comment "The dattum waarop iets eindigde."@nld ;
   rdfs:domain :WithTemporal; ;
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
   rdfs:isDefinedBy : ;
@@ -355,8 +350,8 @@
 :WithText a rdfs:Class ;
   rdfs:subClassOf :Mixin ;
   rdfs:label "WithText" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A mixin to add the 'text' property to another class."@eng ;
+  rdfs:comment "Een mixin om de eigenschap 'text' toe te voegen aan een andere klasse."@nld ;
   rdfs:isDefinedBy : .
 
 :text a rdf:Property ;
@@ -374,8 +369,8 @@
 :Age a rdfs:Class ;
   rdfs:subClassOf  :Class , :WithDuration , :WithText , :WithInferred ;
   rdfs:label "Age" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The age of a person at the time of death."@eng ;
+  rdfs:comment "De leeftijd van een persoon bij overlijden."@nld ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -383,21 +378,23 @@
 :Album a rdfs:Class ;
   rdfs:subClassOf :Class , :WithDate ;
   rdfs:label "Album" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:comment "A collection of audio recordings."@eng ;
+  rdfs:comment "Een geluidsdrager met muzikaal werk erop."@nld ;
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q482994 ;
+  schema:sameAs wikidata:Q482994 .
 
 :albumTitle a rdf:Property ;
   rdfs:label "albumTitle" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "The title of an album"@eng ;
+  rdfs:comment "De titel van een album"@nld ;
   rdfs:domain :Album ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
 :discogs a rdf:Property ;
   rdfs:label "discogs" ;
-  rdfs:comment "TODO"@eng ;
+  rdfs:comment "An album entry on the Discogs website"@eng ;
   rdfs:comment "TODO"@nld ;
   rdfs:domain :Album ;
   rdfs:range rdfs:Resource ;
@@ -604,8 +601,8 @@
 :Location a rdfs:Class ;
   rdfs:subClassOf :Class , :WithText ;
   rdfs:label "Location" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Some physical location on earth."@eng ;
+  rdfs:comment "Een plek ergens op aarde."@nld ;
   rdfs:isDefinedBy : .
 
 :place a rdf:Property ;
@@ -760,8 +757,8 @@
 
 :fullName a rdf:Property ;
   rdfs:label "fullName" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The name of a person, as complete as possible."@eng ;
+  rdfs:comment "De zo compleet mogelijke persoonsnaam, met voornamen en achternaam."@nld ;
   rdfs:domain :Name ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
