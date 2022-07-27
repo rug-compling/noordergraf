@@ -400,6 +400,12 @@ func doHTML() {
 		class = "pad"
 	}
 	langtag := []string{"nl", "en"}[language]
+
+	dot := ""
+	if uri != "/ns" {
+		dot = fmt.Sprintf(` &middot; <a href="https://noordergraf.rug.nl/bin/ttl2svg?t=%s">diagram</a>`, strings.Replace(uri[1:], "/", ":", -1))
+	}
+
 	fmt.Printf(`Content-type: text/html; charset=UTF-8
 Last-Modified: %s
 
@@ -443,12 +449,14 @@ Last-Modified: %s
     <div id="menu"><span id="closed"><button onclick="javascript:mOpen()">&gt;</button></span><span id="opened" class="hidden"><button onclick="javascript:mClose()">&lt;</button>
       download: <a href="https://noordergraf.rug.nl%s.nt">n-triples</a>
       &middot; <a href="https://noordergraf.rug.nl%s.rdf">rdf+xml</a>
-      &middot; <a href="https://noordergraf.rug.nl%s.ttl">turtle</a>&nbsp;
-      &middot; <a href="https://noordergraf.rug.nl%s.penman">penman</a>&nbsp;
+      &middot; <a href="https://noordergraf.rug.nl%s.ttl">turtle</a>
+      &middot; <a href="https://noordergraf.rug.nl%s.penman">penman</a>
+      | go to:
+      <a href="https://github.com/rug-compling/noordergraf/blob/master/data%s.ttl">github</a>%s&nbsp;
     </span></div>
     <div id="container">
       <h1>%s</h1>
-`, lastModified.Format(time.RFC1123), langtag, title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, title)
+`, lastModified.Format(time.RFC1123), langtag, title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, uri, dot, title)
 
 	//if uri == "/ns" {
 	//	fmt.Println(`<div class="props top">see also: <a href="overview">overview</a></div>`)

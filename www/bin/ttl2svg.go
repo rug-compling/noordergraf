@@ -307,6 +307,8 @@ Content-Disposition: attachment; filename=%s.dot
     </style>
   </head>
   <body>
+    &rarr; <a href="/%s">%s</a>
+    <p>
     <form name="myform" action="https://noordergraf.rug.nl/bin/ttl2svg" onsubmit="return doForm()" method="get">
       <input type="hidden" name="t" value="%s">
       <input type="hidden" name="f1" value="%s">
@@ -331,7 +333,7 @@ Klik op tekst in nodes om te selecteren en klik →
     </script>
   </body>
 </html>
-`, html.EscapeString(tfile), strings.Join(skipobj, ",\n"), tfile, format, dotDisabled, fdpDisabled, sfdpDisabled, svg)
+`, html.EscapeString(tfile), strings.Join(skipobj, ",\n"), strings.Replace(tfile, ":", "/", -1), html.EscapeString(tfile), tfile, format, dotDisabled, fdpDisabled, sfdpDisabled, svg)
 
 }
 
