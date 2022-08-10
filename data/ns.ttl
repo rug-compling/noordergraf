@@ -331,7 +331,7 @@
 :end a rdf:Property ;
   rdfs:label "end" ;
   rdfs:comment "The date something ended."@eng ;
-  rdfs:comment "The dattum waarop iets eindigde."@nld ;
+  rdfs:comment "The datum waarop iets eindigde."@nld ;
   rdfs:domain :WithTemporal; ;
   rdfs:range xsd:date , xsd:gYearMonth , xsd:gYear ;
   rdfs:isDefinedBy : ;
@@ -340,8 +340,8 @@
 
 :period a rdf:Property ;
   rdfs:label "period" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A temporal property having a beginning, an end and a duration."@eng ;
+  rdfs:comment "De periode of tijdsduur van iets."@nld ;
   rdfs:domain :WithTemporal; ;
   rdfs:range :Period ;
   rdfs:isDefinedBy : ;
@@ -356,8 +356,8 @@
 
 :text a rdf:Property ;
   rdfs:label "text" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "Literal transcription of (part of) the text found on a monument."@eng ;
+  rdfs:comment "De letterlijke transcriptie van (een deel van) de tekst op een monument."@nld ;
   rdfs:domain :WithText ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : ;
@@ -394,8 +394,8 @@
 
 :discogs a rdf:Property ;
   rdfs:label "discogs" ;
-  rdfs:comment "An album entry on the Discogs website"@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "The URL of an album entry on the Discogs website."@eng ;
+  rdfs:comment "De URL van een album op de website van Discogs."@nld ;
   rdfs:domain :Album ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : .
@@ -405,14 +405,14 @@
 :Artist a rdfs:Class ;
   rdfs:subClassOf :Class , :WithSameAs ;
   rdfs:label "Artist" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A performing musician or singer."@eng ;
+  rdfs:comment "Een uitvoerend muzikant of zanger."@nld ;
   rdfs:isDefinedBy : .
 
 :artistName a rdf:Property ;
   rdfs:label "artistName" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The name of an artist."@eng ;
+  rdfs:comment "De naam van een artiest."@nld ;
   rdfs:domain :Artist ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
@@ -420,8 +420,8 @@
 :SingerSongwriter a rdfs:Class ;
   rdfs:subClassOf :Artist ;
   rdfs:label "SingerSongwriter" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A singer performing his or her own songs."@eng ;
+  rdfs:comment "Een zanger die zijn of haar eigen liederen zingt."@nld ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -429,14 +429,14 @@
 :Author a rdfs:Class ;
   rdfs:subClassOf :Class , :WithSameAs ;
   rdfs:label "author" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A person who writes a book."@eng ;
+  rdfs:comment "De schrijver van een boek."@nld ;
   rdfs:isDefinedBy : .
 
 :authorName a rdf:Property ;
   rdfs:label "authorName" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The name of an author."@eng ;
+  rdfs:comment "De naam van een schrijver."@nld ;
   rdfs:domain :Author ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
@@ -446,22 +446,24 @@
 :BibleBook a rdfs:Class ;
   rdfs:subClassOf :Class , :WithSameAs , :WithDcModified ;
   rdfs:label "BibleBook" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:comment "Book which is part of the Bible (or is considered to be by some)."@eng ;
+  rdfs:comment "Een boek dat deel uitmaakt van de Bijbel (of wordt verondersteld door sommigen)."@nld ;
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q29154430 ;
+  schema:sameAs wikidata:Q29154430 .
 
 :bibleBookName a rdf:Property ;
   rdfs:label "bibleBookName" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Name of a Bible book."@eng ;
+  rdfs:comment "Naam van een boek uit de Bijbel."@nld ;
   rdfs:domain :BibleBook ;
   rdfs:range rdf:langString ;
   rdfs:isDefinedBy : .
 
 :order a rdf:Property ;
   rdfs:label "order" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A certain numeric value used to sort Bible books in canonical order."@eng ;
+  rdfs:comment "Een numerieke waarde die gebruikt wordt voor het sorteren van Bijbelboeken in canonieke volgorde."@nld ;
   rdfs:domain :BibleBook ;
   rdfs:range xsd:integer ;
   rdfs:isDefinedBy : .
@@ -471,17 +473,19 @@
 :Coordinates a rdfs:Class ;
   rdfs:subClassOf :Class , :WithGeography ;
   rdfs:label "Coordinates" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
-  rdfs:isDefinedBy : .
+  rdfs:comment "A coordinates of a geographic location."@eng ;
+  rdfs:comment "The coördinaten van een geografische locatie."@nld ;
+  rdfs:isDefinedBy : ;
+  owl:sameAs    wikidata:Q2221906 ;
+  schema:sameAs wikidata:Q2221906 .
 
 ################################################################
 
 :Creator a rdfs:Class ;
   rdfs:subClassOf :Class , :WithName , :WithLocation ;
   rdfs:label "Creator" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "An entity responsible for making the resource."@eng ;
+  rdfs:comment "De maker van de hulpbron."@nld ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -489,8 +493,8 @@
 :Date a rdfs:Class ;
   rdfs:subClassOf :Class , :WithDate , :WithInferred ;
   rdfs:label "Date" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Calendar date."@eng ;
+  rdfs:comment "Datum."@nld ;
   rdfs:isDefinedBy : .
 
 ################################################################
@@ -498,14 +502,14 @@
 :Decoration a rdfs:Class ;
   rdfs:subClassOf :Property , :WithText , :WithTemporal ;
   rdfs:label "Decoration" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "An award or dictinction given in recognition of achievement. An honorary title."@eng ;
+  rdfs:comment "Een eretitel."@nld ;
   rdfs:isDefinedBy : .
 
 :decorationTitle a rdf:Property ;
   rdfs:label "decorationTitle" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "Title of a decoration."@eng ;
+  rdfs:comment "De titel van een onderscheiding, eretitel."@nld ;
   rdfs:domain :Decoration ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
@@ -515,52 +519,52 @@
 :Figure a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:label "Figure" ;
-  rdfs:comment "TODO.human figure"@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "An image that resembles a human; may or may not actually be or represent a person."@eng ;
+  rdfs:comment "De afbeelding van een mens, al dan niet een specifieke persoon."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q5937779 ;
   schema:sameAs wikidata:Q5937779 .
 
 :theme a rdf:Property ;
   rdfs:label "theme" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The person a figure represent."@eng ;
+  rdfs:comment "De persoon die door een figuur wordt afgebeeld."@nld ;
   rdfs:domain :Figure ;
   rdfs:range :Person ;
   rdfs:isDefinedBy : .
 
 :Bust a rdfs:Class ;
   rdfs:subClassOf :Figure ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Bust" ;
+  rdfs:comment "A sculpture of a person's head, neck, and a variable portion of chest and shoulders."@eng ;
+  rdfs:comment "Een beeldhouwwerk dat enkel het hoofd, de borst en de schouders toont."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q17489160 ;
   schema:sameAs wikidata:Q17489160 .
 
 :Photograph a rdfs:Class ;
   rdfs:subClassOf :Figure ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Photograph" ;
+  rdfs:comment "A portrait photograph."@eng ;
+  rdfs:comment "Een portretfoto."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q125191 ;
   schema:sameAs wikidata:Q125191 .
 
 :Portrait a rdfs:Class ;
   rdfs:subClassOf :Figure ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Portrait" ;
+  rdfs:comment "An artistic representation of one or more persons."@eng ;
+  rdfs:comment "Een voorstelling van één of meer personen."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q134307 ;
   schema:sameAs wikidata:Q134307 .
 
 :Statue a rdfs:Class ;
   rdfs:subClassOf :Figure ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Statue" ;
+  rdfs:comment "Sculpture primarily conceived as a representational figure."@eng ;
+  rdfs:comment "Een vrijstaand sculptuur, die een persoon of dier voorstelt."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q179700 ;
   schema:sameAs wikidata:Q179700 .
@@ -571,7 +575,7 @@
   rdfs:subClassOf :Class ;
   rdfs:label "geo Point" ;
   rdfs:comment "A point, typically described using a coordinate system relative to Earth, such as WGS84."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "Een punt, meestal beschreven met behulp van een coördinatensysteem ten opzichte van de aarde, zoals WGS84."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    geo:Point ;
   schema:sameAs geo:Point .
@@ -579,7 +583,7 @@
 :geoLat a rdf:Property ;
   rdfs:label "geo latitude" ;
   rdfs:comment "The WGS84 latitude of a SpatialThing (decimal degrees)"@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "De breedtegraad in graden volgens WGS84."@nld ;
   rdfs:domain :GeoPoint ;
   rdfs:range xsd:decimal ;
   rdfs:isDefinedBy : ;
@@ -589,7 +593,7 @@
 :geoLong a rdf:Property ;
   rdfs:label "geo longitude" ;
   rdfs:comment "The WGS84 longitude of a SpatialThing (decimal degrees)."@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "De lengtegraad in graden volgens WGS84."@nld ;
   rdfs:domain :GeoPoint ;
   rdfs:range xsd:decimal ;
   rdfs:isDefinedBy : ;
@@ -909,7 +913,7 @@
 
 :Period a rdfs:Class ;
   rdfs:subClassOf :Class , :WithDuration , :WithText ;
-  rdfs:label "Tomb" ;
+  rdfs:label "Period" ;
   rdfs:comment "TODO."@eng ;
   rdfs:comment "TODO."@nld ;
   rdfs:isDefinedBy : .
@@ -1425,8 +1429,8 @@
 
 :author a rdf:Property ;
   rdfs:label "author" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "The author of a book"@eng ;
+  rdfs:comment "De schrijver van een boek"@nld ;
   rdfs:domain :BookReference ;
   rdfs:range :Author ;
   rdfs:isDefinedBy : .

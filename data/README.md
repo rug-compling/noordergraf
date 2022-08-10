@@ -10,3 +10,6 @@ Bij melding over fout in, bijvoorbeeld, regelnummer 12345:
 
     ./concat | ./show 12345
 
+
+
+TODO: Een script waarmee je een enkel turtle-bestand in de database kunt bijwerken.
