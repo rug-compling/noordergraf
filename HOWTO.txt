@@ -14,9 +14,9 @@ ervoor zorgt de Apache dezelfde lees- en schrijfrechten heeft als de
 gebruikers in groep 'noordergraf'.
 
 In /etc/apache2/mods-available/dir.conf wordt als enige waarde voor
-DirectoryIndex het bestand 'index' gedefinieerd. Omdat er een handler
-gedefinieerd is voor *.md (zie onder) betekent dat ook het bestand
-'index.md' als bestandsnaam voor DirectoryIndex geldt.
+DirectoryIndex het bestand 'index' gedefinieerd. Omdat er Multiviews
+gebruikt worden (zie beneden) wordt door Apache automatisch het
+index-bestand met de juiste extensie gekozen.
 
 In /etc/apache2/mods-available/ssl.conf is SSLProtocol TLSv1.2
 gedefinieerd. Geen idee waarom.
@@ -72,6 +72,11 @@ invoert), door aanroepen van het script
 standaard en AllegroSpecifieke namespace samen met de namespaces voor
 Noordergraf die gedefinieerd zijn in /net/noordergraf/data/prefix.ttl .
 
+De poort 10036 is van buiten af bereikbaar, en wordt gebruikt voor
+zowel de web-interface als de API. Dit gaat over https.
+
+Op de machine noordergraf zelf kun je ook poort 10035 gebruiken. Dit
+gebruikt plain http.
 
 Hulpmiddelen voor de invoer van data
 ====================================
@@ -148,6 +153,20 @@ Invoer in AllegroGraph
 
 Zie /net/noordergraf/data/README.md
 
+TODO:
+
+Nieuwe data wordt ingevoerd door eerst alles in AllegroGraph te
+wissen, en daarna alle data opnieuw in te voeren. Dit gaat nog
+redelijk snel, maar is niet erg efficiënt, zeker niet als er veel meer
+data is dan nu.
+
+Er zou een script moeten komen waarmee je één Turtle-bestanden kunt
+bijwerken of toevoegen. Dat kan omdat de inhoud van Turtle-bestanden
+niet als triples maar als quadruples worden ingevoerd. De vierde
+waarde is de naam van het bestand, zonder extensie. Je kunt hierop
+filteren, en dus alleen de data uit één bestand wissen uit
+AllegroGraph voordat je dit ene bestand (opnieuw) invoert.
+
 
 Backup van data in git
 ======================
@@ -183,7 +202,8 @@ Website
 =======
 
 De statische deel van de website staat in /net/noordergraf/www . De
-startpagina is index.md .
+startpagina is index.md voor webbrowsers, of een van de andere
+index-bestanden, afhankelijk van waar een applicatie om vraagt.
 
 TODO: overige pagina's beschrijven
 
