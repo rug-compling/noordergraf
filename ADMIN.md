@@ -42,7 +42,7 @@ gezet. In het bijzonder de volgende dingen:
    markdown-bestanden om in HTML. \
    TODO: Dit is makkelijk, maar niet het meest efficiënt. Iedere keer
    dat een markdown-bestand wordt opgevraagd wordt het opnieuw omgezet
-   naar HTML, terwijl het markdown-bestand zelden veranderd. Dus
+   naar HTML, terwijl het markdown-bestand zelden verandert. Dus
    misschien moet dit veranderd worden. \
    Het is wel handig als we de wiki van github lokaal willen hosten,
    omdat die helemaal uit markdown bestaat.
