@@ -68,7 +68,7 @@ namespaces te definiëren in je query.
 De namespaces worden bijgewerkt vanuit het script
 /net/noordergraf/data/input (dat de data in AllegroGraph opnieuw
 invoert), door aanroepen van het script
-/net/noordergraf/tools/prefix2allegro.py . Dit laatste script voegt de
+/net/noordergraf/data/_bin/prefix2allegro.py . Dit laatste script voegt de
 standaard en AllegroSpecifieke namespace samen met de namespaces voor
 Noordergraf die gedefinieerd zijn in /net/noordergraf/data/prefix.ttl .
 
@@ -81,34 +81,25 @@ gebruikt plain http.
 Hulpmiddelen voor de invoer van data
 ====================================
 
-In /net/noordergraf/tools staan een aantal tools die gebruikt worden
-bij het invoeren van data in AllegroGraph door
-/net/noordergraf/data/input . Sommige van deze tools voeren controles
-uit, andere doen voorbewerkingen zoals het maken van lijsten met
-gegevens die gebruikt worden door de handler van de webserver. Bovenin
-de broncode van elke tool staat waar het voor dient.
+In /net/noordergraf/tools staan een aantal programma's die van pas
+komen bij het bewerken van data.
 
-Er zijn een aantal tools voor ander gebruik.
 TODO: documenteren in /net/noordergraf/tools .
 
  - jpg2ttl zet (exif-data in) een jpeg-bestand om naar een
    Turtle-fragment, dat je kunt opnemen in een Turtle-bestand voor een
    grafsteen.
  - penman2turtle zet een Penman-bestand om in een Turtle-bestand.
- - ttl2json, ttl2jsont, ttl2rdf, ttl2tri, ttl2xml zijn script die
+ - ttl2json, ttl2jsont, ttl2rdf, ttl2tri, ttl2xml zijn scripts die
    bestanden in Turtle-formaat omzetten in diverse andere formaten.
  - xml2ttl zet bestanden in het formaat rdfxml-abbrev om naar Turtle.
 
-Het is lastig om automatisch bulkberwerkingen uit te voeren op
+Het is lastig om automatisch bulkbewerkingen uit te voeren op
 Turtle-bestanden. De aanpak is dan:
 
  1. Omzetten van Turtle naar rdfxml-abbrev met ttl2xml .
- 2. Bewerking van XML-bestanden met behulp XPath.
+ 2. Bewerking van XML-bestanden met behulp van XPath.
  3. Terug omzetten naar Turtle met xml2ttl .
-
-TODO: twee directory's in plaats van één, eentje voor de scripts die
-gebruikt worden voor de controles en voorbewerkingen, en eentje met
-hulpmiddelen voor "handmatig" gebruiken (jpg2ttl, penman2turtle, etc.)
 
 
 Corrigeren van bulk data
@@ -152,6 +143,13 @@ Invoer in AllegroGraph
 ======================
 
 Zie /net/noordergraf/data/README.md
+
+In /net/noordergraf/data/_bin staan een aantal hulpprogramma's die
+gebruikt worden bij het invoeren van data in AllegroGraph door
+/net/noordergraf/data/input . Sommige van deze tools voeren controles
+uit, andere doen voorbewerkingen zoals het maken van lijsten met
+gegevens die gebruikt worden door de handler van de webserver. Bovenin
+de broncode van elke tool staat waar het voor dient.
 
 TODO:
 

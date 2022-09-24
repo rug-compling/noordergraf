@@ -85,7 +85,7 @@ class: pad
         - **Symbol**
             - symbolType  → **[SymbolType](#SymbolType)**
     - text → xsd:string | rdf:langString
-    - todo → **[Todo](#Todo)**
+    - todo → **[ToDo](#ToDo)**
     - subject
         - **<a name="Person">Person</a>** --- **Female** | **Male** | ...[meer](ns#Person)
             - age

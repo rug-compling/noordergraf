@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# Dit script maakt de indexen voor 'free text search' aan in AllegroGraph
+#
+# Dit script wordt aangeroepen vanuit /net/noordergraf/data/input
+
 import os
 
 AGRAPH_USER     = os.environ.get('AGRAPH_USER')

@@ -43,7 +43,7 @@ var (
 func main() {
 
 	tags := make(map[string]bool)
-	b, err := ioutil.ReadFile("/net/noordergraf/tools/chktags.tags")
+	b, err := ioutil.ReadFile("/net/noordergraf/data/_bin/chktags.tags")
 	x(err)
 	for _, s := range strings.Fields(string(b)) {
 		tags[s] = true

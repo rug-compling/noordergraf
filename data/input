@@ -17,20 +17,20 @@ agtool load \
 
 echo
 
-python3 ../tools/mkfti.py
-../tools/chkll
-../tools/chklocation
-../tools/chktags
-../tools/mkprops > ns.json
-../tools/mkbibidx > bible/index.body.eng
-../tools/mkbibidx -n > bible/index.body.nld
-../tools/mksymidx > ../www/picto/index.body.eng
-../tools/mksymidx -n > ../www/picto/index.body.nld
+python3 _bin/mkfti.py
+_bin/chkll
+_bin/chklocation
+_bin/chktags
+_bin/mkprops > ns.json
+_bin/mkbibidx > bible/index.body.eng
+_bin/mkbibidx -n > bible/index.body.nld
+_bin/mksymidx > ../www/picto/index.body.eng
+_bin/mksymidx -n > ../www/picto/index.body.nld
 
-../tools/prefix2allegro.py > /home/p209327/opt/agraph/data/settings/default-namespaces
+_bin/prefix2allegro.py > /home/p209327/opt/agraph/data/settings/default-namespaces
 mkdir -p /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces
-../tools/prefix2allegro.py > /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous
-../tools/prefix2allegro.py > /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/peter
+_bin/prefix2allegro.py > /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous
+_bin/prefix2allegro.py > /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/peter
 
 echo OK
 echo
