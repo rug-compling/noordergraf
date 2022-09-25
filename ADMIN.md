@@ -159,7 +159,7 @@ data is dan nu.
 
 Er zou een script moeten komen waarmee je één Turtle-bestanden kunt
 bijwerken of toevoegen. Dat kan omdat de inhoud van Turtle-bestanden
-niet als triples maar als quadruples worden ingevoerd. De vierde
+niet als triples maar als quads worden ingevoerd. De vierde
 waarde is de naam van het bestand, zonder extensie. Je kunt hierop
 filteren, en dus alleen de data uit één bestand wissen uit
 AllegroGraph voordat je dit ene bestand (opnieuw) invoert.

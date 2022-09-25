@@ -2,20 +2,32 @@
 
 set -e
 
-. secret.sh
+. /opt/etc/agraph/secret.sh
 
-agtool load \
-       --overwrite \
-       --bulk \
-       --duplicates delete \
-       --automate-nd-datatype-mappings \
-       --input trig \
-       --optimize \
-       --base-uri https://noordergraf.rug.nl/ \
-       noordergraf \
-       -
+cat > /tmp/input.tmp
+
+sudo -u agraph /opt/agraph/bin/agtool load -v \
+    --overwrite \
+    --bulk \
+    --duplicates delete \
+    --automate-nd-datatype-mappings \
+    --input trig \
+    --optimize \
+    --base-uri https://noordergraf.rug.nl/ \
+    noordergraf \
+    /tmp/input.tmp
+
+rm /tmp/input.tmp
 
 echo
+
+_bin/prefix2allegro.py > /tmp/namespaces
+sudo -u agraph cp /tmp/namespaces /opt/agraph/data/settings/default-namespaces
+# De volgende 3 regels zijn alleen voor AllegroGraph versie 7.1.0, verwijder ze voor 7.3.0
+sudo -u agraph mkdir -p /opt/agraph/data/rootcatalog/noordergraf/namespaces
+sudo -u agraph cp /tmp/namespaces /opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous
+sudo -u agraph cp /tmp/namespaces /opt/agraph/data/rootcatalog/noordergraf/namespaces/peter
+rm /tmp/namespaces
 
 python3 _bin/mkfti.py
 _bin/chkll
@@ -26,11 +38,6 @@ _bin/mkbibidx > bible/index.body.eng
 _bin/mkbibidx -n > bible/index.body.nld
 _bin/mksymidx > ../www/picto/index.body.eng
 _bin/mksymidx -n > ../www/picto/index.body.nld
-
-_bin/prefix2allegro.py > /home/p209327/opt/agraph/data/settings/default-namespaces
-mkdir -p /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces
-_bin/prefix2allegro.py > /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous
-_bin/prefix2allegro.py > /home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/peter
 
 echo OK
 echo
