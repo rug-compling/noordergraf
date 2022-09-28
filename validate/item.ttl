@@ -50,6 +50,11 @@
     sh:class :Figure
   ] ;
   sh:property [
+    sh:path :lot ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string
+  ] ;
+  sh:property [
     sh:path :photo ;
     sh:class :Photo ;
     sh:minCount 1

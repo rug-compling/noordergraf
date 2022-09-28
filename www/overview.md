@@ -36,6 +36,7 @@ class: pad
         - **<a name="GeoPoint">GeoPoint</a>**
             - geoLat → xsd:decimal
             - geoLong → xsd:decimal
+    - lot → xsd:string
     - nd → ll:
     - photo
         - **Photo**

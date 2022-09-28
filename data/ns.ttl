@@ -1134,6 +1134,14 @@
   rdfs:range :Figure ;
   rdfs:isDefinedBy : .
 
+:lot a rdf:Property ;
+  rdfs:label "lot" ;
+  rdfs:comment "lot ID of a grave, for example `row G, grave 6`."@eng ;
+  rdfs:comment "ID van de plek van een graf, bijvoorbeeld `rij G, graf 6`."@nld ;
+  rdfs:domain :Item ;
+  rdfs:range xsd:string ;
+  rdfs:isDefinedBy : .
+
 :site a rdf:Property ;
   rdfs:label "site" ;
   rdfs:comment "TODO."@eng ;
