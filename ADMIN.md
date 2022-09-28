@@ -50,19 +50,27 @@ gezet. In het bijzonder de volgende dingen:
 
 ## Configuratie van AllegroGraph
 
-TODO: Momenteel draait AllegroGraph vanuit `/home/p209327/opt/agraph/`,
-en gestart vanuit `/home/p209327/systemd/agraph.service` (gesymlinkt
-naar `/etc/systemd/system/`). Dat moet nog verplaatst worden, naar
-`/opt/agraph/` of zo.
+De sources voor [AllegroGraph](https://allegrograph.com/) zijn geïnstalleerd in
+`/opt/agraph-7.1.0/`. (Er staat ook een versie 7.3.0, maar die werkt
+niet goed met Google Chrome.) AllegroGraph draait vanuit
+`/opt/agraph/`. Installatie van AllegroGraph gaat met `install-agraph
+/opt/agraph` vanuit `/opt/agraph-7.1.0/`. Dit moet als gebruiker
+`agraph`. Het `agraph`-account is aangemaakt als een systeem-account
+(laag UID), maar wel met een home-directory en een login-shell,
+anders werkt `agtool` niet, om een duistere reden.
 
-De configuratie voor AllegroGraph staat in
-`/home/p209327/opt/agraph/lib/agraph.cfg` .
+Bij de installatie wordt het configuratiebestand
+`/opt/agraph/lib/agraph.cfg` aangemaakt, dat later met de hand is
+aangepast. Let daar op als je een nieuwere versie van AllegroGraph
+installeert.
 
 Namespaces zijn op drie plaatsen (identiek) gedefinieerd:
 
- - `/home/p209327/opt/agraph/data/settings/default-namespaces`
- - `/home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous`
- - `/home/p209327/opt/agraph/data/rootcatalog/noordergraf/namespaces/peter`
+ - `/opt/agraph/data/settings/default-namespaces`
+ - `/opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous`
+ - `/opt/agraph/data/rootcatalog/noordergraf/namespaces/peter`
+
+(Vanaf AllegroGraph 7.3,0 hoeft het alleen op de eerste plaats.)
 
 Dit zijn de standaard namespaces, een aantal specifiek voor de
 werking van AllegroGraph, en namespaces gedefinieerd voor Noordergraf.
@@ -71,9 +79,9 @@ namespaces te definiëren in je query.
 
 De namespaces worden bijgewerkt vanuit het script
 `/net/noordergraf/data/input` (dat de data in AllegroGraph opnieuw
-invoert), door aanroepen van het script
+invoert), door aanroep van het script
 `/net/noordergraf/data/_bin/prefix2allegro.py`. Dit laatste script voegt de
-standaard en Allegro-specifieke namespace samen met de namespaces voor
+standaard en Allegro-specifieke namespaces samen met de namespaces voor
 Noordergraf die gedefinieerd zijn in `/net/noordergraf/data/prefix.ttl`.
 
 De poort 10036 is van buiten af bereikbaar, en wordt gebruikt voor
@@ -81,6 +89,19 @@ zowel de web-interface als de API. Dit gaat over https.
 
 Op de machine noordergraf zelf kun je ook poort 10035 gebruiken. Dit
 gebruikt plain http.
+
+AllegroGraph wordt na het booten automatisch gestart mbv
+`/etc/systemd/system/agraph.service`, dat een symlink is naar
+`/opt/etc/systemd/agraph.service`.
+
+`/opt/etc/agraph/secret.sh` bevat de login-gegevens van het
+admin-account in AllegroGraph.
+
+`/opt/etc/ssl/agraph.pem` bevat de certificaten die nodig zijn voor
+het gebruik van https door AllegroGraph. Dit moet bijgwerkt worden als
+het certificaat voor de website is bijgewerkt. Zie:
+`/etc/ssl/private/key-noordergraf.rug.nl.README`
+
 
 ## Hulpmiddelen voor de invoer van data
 
@@ -104,6 +125,14 @@ Turtle-bestanden. De aanpak is dan:
  2. Bewerking van XML-bestanden met behulp van XPath.
  3. Terug omzetten naar Turtle met `xml2ttl`.
 
+## Meer hulpmiddelen
+
+Het programma [penman](https://penman.readthedocs.io/) staat in `/usr/local/bin/`.
+
+De
+[AllegroGraph Python client](https://franz.com/agraph/support/documentation/current/python/)
+voor Python 3 is geïnstalleerd.
+
 
 ## Corrigeren van bulk data
 
@@ -120,10 +149,14 @@ zal per situatie verschillen.
 
 ## Controle van data
 
-Wanneer je nieuwe data hebt ingevoerd, of oude data bewerkt, het is
+Wanneer je nieuwe data hebt ingevoerd, of oude data bewerkt, is het
 goed te controlleren of de data voldoet aan het formaat dat we hebben
 vastgelegd voor Noordergraf. Dat kan door in de directory
-`/net/noordergraf/validate/` het script `Validate.sh` te draaien. 
+`/net/noordergraf/validate/` het script `Validate.sh` te draaien.
+
+Dit maakt gebruik van de
+[TopBraid SHACL API](https://github.com/TopQuadrant/shacl) die
+geïnstalleerd is onder `/opt/shacl`.
 
 TODO: Het script controleert alle data, en is dus niet heel snel. Er
 moet een script komen dat je gebruikt om één of enkele
@@ -135,13 +168,13 @@ nog andere controles uitgevoerd.
 
 ## Formatteren van data
 
-TODO: Automatisch fomratteren van Turtle zou kunnen door vertaling
+TODO: Automatisch formatteren van Turtle zou kunnen door vertaling
 naar `rdfxml-abbrev` met `ttl2xml` en terug naar Turtle met `xml2ttl`.
 
 
-## Invoer in AllegroGraph
+## Invoer van data in AllegroGraph
 
-Zie `/net/noordergraf/data/README.md`
+Zie voor procedure: `/net/noordergraf/data/README.md`
 
 In `/net/noordergraf/data/_bin/` staan een aantal hulpprogramma's die
 gebruikt worden bij het invoeren van data in AllegroGraph door
@@ -152,12 +185,19 @@ de broncode van elke tool staat waar het voor dient.
 
 TODO:
 
+Een van de twee scripts, `concat`, die gebruikt worden voor het invoeren van data,
+zal niet functioneren als er veel data bij komt, omdat er dan te lange
+command lines in het script worden gebruikt. Dat script zal dus
+vervangen moeten worden door iets anders.
+
+TODO:
+
 Nieuwe data wordt ingevoerd door eerst alles in AllegroGraph te
 wissen, en daarna alle data opnieuw in te voeren. Dit gaat nog
 redelijk snel, maar is niet erg efficiënt, zeker niet als er veel meer
 data is dan nu.
 
-Er zou een script moeten komen waarmee je één Turtle-bestanden kunt
+Er zou een script moeten komen waarmee je één Turtle-bestand kunt
 bijwerken of toevoegen. Dat kan omdat de inhoud van Turtle-bestanden
 niet als triples maar als quads worden ingevoerd. De vierde
 waarde is de naam van het bestand, zonder extensie. Je kunt hierop
@@ -176,7 +216,7 @@ om de data zoals ze op dat moment zijn vast te leggen in git. Zo hou
 je een overzicht van wat er is veranderd, en kunnen fouten later
 hersteld worden.
 
-De data in git wordt weer geback-upt naar github door *git push*. 
+De data in git wordt weer geback-upt naar github door *git push*.
 
 Voor het browsen van veranderingen in de data kun je het best op
 github kijken, al zijn er ook grafische tools om zoiets lokaal te
@@ -185,7 +225,8 @@ doen.
 
 ## Wiki op github
 
-Er is een lokale kloon van de wiki op github in
+Er is een lokale kloon van de
+[wiki op github](https://github.com/rug-compling/noordergraf/wiki) in
 `/net/noordergraf/wiki/`.
 Deze kun je bijwerken door in die directory *git pull* te doen.
 
@@ -211,7 +252,12 @@ zie ook Multiviews in `/net/noordergraf/www/.htaccess` .
 
 ## Onze versie van soundex
 
-TODO
+In `/net/noordergraf/go/nlsoundex/`
+
+
+TODO: beschrijving van algoritme
+
+TODO: hoe kunnen mensen dit gebruiken in hun query's?
 
 
 ## Bestandsrechten
