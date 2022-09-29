@@ -24,9 +24,9 @@ echo
 _bin/prefix2allegro.py > /tmp/namespaces
 sudo -u agraph cp /tmp/namespaces /opt/agraph/data/settings/default-namespaces
 # De volgende 3 regels zijn alleen voor AllegroGraph versie 7.1.0, verwijder ze voor 7.3.0
-sudo -u agraph mkdir -p /opt/agraph/data/rootcatalog/noordergraf/namespaces
-sudo -u agraph cp /tmp/namespaces /opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous
-sudo -u agraph cp /tmp/namespaces /opt/agraph/data/rootcatalog/noordergraf/namespaces/peter
+#sudo -u agraph mkdir -p /opt/agraph/data/rootcatalog/noordergraf/namespaces
+#sudo -u agraph cp /tmp/namespaces /opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous
+#sudo -u agraph cp /tmp/namespaces /opt/agraph/data/rootcatalog/noordergraf/namespaces/peter
 rm /tmp/namespaces
 
 python3 _bin/mkfti.py

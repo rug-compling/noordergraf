@@ -51,10 +51,9 @@ gezet. In het bijzonder de volgende dingen:
 ## Configuratie van AllegroGraph
 
 De sources voor [AllegroGraph](https://allegrograph.com/) zijn geïnstalleerd in
-`/opt/agraph-7.1.0/`. (Er staat ook een versie 7.3.0, maar die werkt
-niet goed met Google Chrome.) AllegroGraph draait vanuit
+`/opt/agraph-7.3.0/`. AllegroGraph draait vanuit
 `/opt/agraph/`. Installatie van AllegroGraph gaat met `install-agraph
-/opt/agraph` vanuit `/opt/agraph-7.1.0/`. Dit moet als gebruiker
+/opt/agraph` vanuit `/opt/agraph-7.3.0/`. Dit moet als gebruiker
 `agraph`. Het `agraph`-account is aangemaakt als een systeem-account
 (laag UID), maar wel met een home-directory en een login-shell,
 anders werkt `agtool` niet, om een duistere reden.
@@ -64,13 +63,9 @@ Bij de installatie wordt het configuratiebestand
 aangepast. Let daar op als je een nieuwere versie van AllegroGraph
 installeert.
 
-Namespaces zijn op drie plaatsen (identiek) gedefinieerd:
+Namespaces zijn hier gedefinieerd:
 
  - `/opt/agraph/data/settings/default-namespaces`
- - `/opt/agraph/data/rootcatalog/noordergraf/namespaces/anonymous`
- - `/opt/agraph/data/rootcatalog/noordergraf/namespaces/peter`
-
-(Vanaf AllegroGraph 7.3,0 hoeft het alleen op de eerste plaats.)
 
 Dit zijn de standaard namespaces, een aantal specifiek voor de
 werking van AllegroGraph, en namespaces gedefinieerd voor Noordergraf.
