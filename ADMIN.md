@@ -36,9 +36,11 @@ gezet. In het bijzonder de volgende dingen:
    deze bestanden worden dus niet direct door Apache2 zelf
    afgehandeld, maar eerst verwerkt door de handler. Komen er
    directory's bij met Turtle-bestanden, dan moet `noordergraf.conf` (in
-   `conf-available/`) aangepast worden, en mogelijk ook de handler zelf.
+   `conf-available/`) aangepast worden, en mogelijk ook de handler
+   zelf. Ook moeten dan de bestanden `index.nt`, `index.penman`,
+   `index.rdf` en `index.ttl` in `/net/noordergraf/www/` worden aangepast.
  - Voor bestanden met de extensie `.md` wordt de handler `/bin/markdown`
-   in de DocumentRoot gedefinieert. Deze handler zet
+   in de DocumentRoot gedefinieerd. Deze handler zet
    markdown-bestanden om in HTML. \
    TODO: Dit is makkelijk, maar niet het meest efficiënt. Iedere keer
    dat een markdown-bestand wordt opgevraagd wordt het opnieuw omgezet
@@ -100,25 +102,7 @@ het certificaat voor de website is bijgewerkt. Zie:
 
 ## Hulpmiddelen voor de invoer van data
 
-In `/net/noordergraf/tools/` staan een aantal programma's die van pas
-komen bij het bewerken van data.
-
-TODO: documenteren in `/net/noordergraf/tools/` .
-
- - `jpg2ttl` zet (exif-data in) een jpeg-bestand om naar een
-   Turtle-fragment, dat je kunt opnemen in een Turtle-bestand voor een
-   grafsteen.
- - `penman2turtle` zet een Penman-bestand om in een Turtle-bestand.
- - `ttl2json`, `ttl2jsont`, `ttl2rdf`, `ttl2tri`, `ttl2xml` zijn scripts die
-   bestanden in Turtle-formaat omzetten in diverse andere formaten.
- - `xml2ttl` zet bestanden in het formaat `rdfxml-abbrev` om naar Turtle.
-
-Het is lastig om automatisch bulkbewerkingen uit te voeren op
-Turtle-bestanden. De aanpak is dan:
-
- 1. Omzetten van Turtle naar `rdfxml-abbrev` met `ttl2xml`.
- 2. Bewerking van XML-bestanden met behulp van XPath.
- 3. Terug omzetten naar Turtle met `xml2ttl`.
+Zie [/net/noordergraf/tools/README.md](tools/README.md)
 
 ## Meer hulpmiddelen
 
@@ -145,7 +129,7 @@ zal per situatie verschillen.
 ## Controle van data
 
 Wanneer je nieuwe data hebt ingevoerd, of oude data bewerkt, is het
-goed te controlleren of de data voldoet aan het formaat dat we hebben
+goed te controleren of de data voldoet aan het formaat dat we hebben
 vastgelegd voor Noordergraf. Dat kan door in de directory
 `/net/noordergraf/validate/` het script `Validate.sh` te draaien.
 
@@ -155,7 +139,7 @@ geïnstalleerd is onder `/opt/shacl`.
 
 TODO: Het script controleert alle data, en is dus niet heel snel. Er
 moet een script komen dat je gebruikt om één of enkele
-Turtle-bestanden te controlleren.
+Turtle-bestanden te controleren.
 
 Wanneer de data wordt ingevoerd in AllegroGraph (zie beneden) worden
 nog andere controles uitgevoerd.
@@ -236,25 +220,80 @@ De statische deel van de website staat in `/net/noordergraf/www/`. De
 startpagina is `index.md` voor webbrowsers, of een van de andere
 index-bestanden, afhankelijk van waar een applicatie om vraagt.
 
-TODO: overige pagina's beschrijven
+In `/net/noordergraf/www/bin/` programma's voor de afhandeling van
+cgi-verzoeken. En hier staat `markdown`, het programma dat verzoeken
+voor een Markdown-bestand dat bestand omzet naar html.
 
-TODO: tweetaligheid
+In `/net/noordergraf/www/cs/` staan toepassingen voor het corrigeren
+van bulkdata door vrijwilligers.
 
-TODO: de handler voor de verwerking van turle-bestanden: uitvoer
-afhankelijk van gevraagde content-type (html, rdf (default), etc.),
-zie ook Multiviews in `/net/noordergraf/www/.htaccess` .
+In `/net/noordergraf/www/img/` staan afbeeldingen van grafstenen en
+zo.
 
+In `/net/noordergraf/www/leaflet/` staat de JavaScript-library voor het
+tonen van kaarten.
+
+In `/net/noordergraf/www/picto/` staan afbeeldingen van symbolen die
+te vinden zijn op grafstenen.
+
+In `/net/noordergraf/www/tmp/` staan tijdelijk spul, zoals experimenten.
+
+### meertaligheid
+
+Webpagina's zijn voor zover mogelijk beschikbaar in het Engels en het
+Nederlands. Voor html-pagina's zijn dit twee aparte bestanden,
+bijvoorbeeld `test.html.en` en `test.html.nl`, die automatische
+gegenereerd worden uit het bronbestand `test.html.IN`. Wanneer de
+gebruiker om `test.html` vraagt krijgt hij de variant naar voorkeur,
+met Engels als default.
+
+In markdown-pagina's worden de taalvarianten weergeven in het
+markdown-bestand zelf, bijvoorbeeld `{{voorbeeld|example}}`, en de
+handler voor verzoeken om een Markdown-bestand verwerkt dit bij de
+omzetting naar HTML.
+
+### multiviews
+
+Het bovenbeschreven mechanisme met twee verschillende taal-extensies
+voor html-bestanden werkt dankzij de Apache-optie `Multiviews` die is
+ingeschakeld in het bestand `/net/noordergraf/www/.htaccess`. In dat
+bestand zijn ook verschillende bestandstypes gedefinieerd, niet op
+basis van taal, naar op basis van content-type, en die types zijn
+gekoppeld aan bestandsextensies. Dit werkt zo:
+
+Wanneer webbrowser de rootdirectory van Noordergraf opvraagt,
+https://noordergraf.rug.nl/ , dan wordt dat eerst vertaald naar
+`/net/noordergraf/www/index` omdat dat gedefinieerd is in
+`/etc/apache2/mods-available/dir.conf` wanneer een directory wordt
+opgevraagd.
+
+Dat bestand `index` bestaat niet, maar wel `index.md`, `index.rdf`, en
+nog een paar. Dankzij de optie `Multiviews` bepaalt Apache2 welk van
+die bestanden gebruikt wordt, gebaseerd op de Accept-header die de
+browser meestuurt.
+
+Overigens is het mogelijk elke gewenste versie van `index` op te vragen
+door naam en extensie expliciet te gebruiken, bijvoorbeeld
+https://noordergraf.rug.nl/index.ttl .
+
+Hetzelfde mechanisme wordt toegepast door de handler voor
+Turtle-bestanden, zoals bij het opvragen van
+https://noordergraf.rug.nl/item/T00000 .
 
 ## Onze versie van soundex
 
 In `/net/noordergraf/go/nlsoundex/`
 
+TODO: beschrijving van het algoritme
 
-TODO: beschrijving van algoritme
-
-TODO: hoe kunnen mensen dit gebruiken in hun query's?
+TODO: hoe zouden mensen dit kunnen gebruiken in hun eigen query's?
 
 
 ## Bestandsrechten
 
-TODO: `/net/noordergraf/setall.sh`
+Het is noodzakelijk dat alle bestanden in `/net/noordergraf/` lees- en
+schrijfbaar zijn voor groep `noordergraf`. Je kunt bestanden en
+directory's die je zelf hebt aangemaakt, die misschien niet de juiste
+rechten hebben, daarvan die rechten aanpassen door het script
+`/net/noordergraf/setall.sh` te draaien in directory
+`/net/noordergraf/` of een van de subdirectory's.
