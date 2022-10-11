@@ -611,141 +611,141 @@
 
 :place a rdf:Property ;
   rdfs:label "place" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The place of a location."@eng ;
+  rdfs:comment "De plaats van een locatie."@nld ;
   rdfs:domain :Location ;
   rdfs:range :Place ;
   rdfs:isDefinedBy : .
 
 :coordinates a rdf:Property ;
   rdfs:label "coordinates" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The coordinates of a location."@eng ;
+  rdfs:comment "De coördinaten van een locatie."@nld ;
   rdfs:domain :Location ;
   rdfs:range :Coordinates ;
   rdfs:isDefinedBy : .
 
 :partOf a rdf:Property ;
   rdfs:label "partOf" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The location a location is part of."@eng ;
+  rdfs:comment "De locatie weer een locatie een deel van is."@nld ;
   rdfs:domain :Location ;
   rdfs:range :Location ;
   rdfs:isDefinedBy : .
 
 :Building a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Building" ;
+  rdfs:comment "A building."@eng ;
+  rdfs:comment "Een gebouw."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q41176 ;
   schema:sameAs wikidata:Q41176 .
 
 :City a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "City" ;
+  rdfs:comment "A city."@eng ;
+  rdfs:comment "Een grote stad."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q515 ;
   schema:sameAs wikidata:Q515 .
 
 :Colony a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Colony" ;
+  rdfs:comment "A colony (polity)."@eng ;
+  rdfs:comment "Een kolonie (staatkundig)."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q133156 ;
   schema:sameAs wikidata:Q133156 .
 
 :Country a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Country" ;
+  rdfs:comment "A country."@eng ;
+  rdfs:comment "Een land."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q6256 ;
   schema:sameAs wikidata:Q6256 .
 
 :Hamlet a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Hamlet" ;
+  rdfs:comment "A hamlet."@eng ;
+  rdfs:comment "Een gehucht."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q5084 ;
   schema:sameAs wikidata:Q5084 .
 
 :Island a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Island" ;
+  rdfs:comment "A island."@eng ;
+  rdfs:comment "Een eiland."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q23442 ;
   schema:sameAs wikidata:Q23442 .
 
 :Municipality a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Municipality" ;
+  rdfs:comment "A municipality."@eng ;
+  rdfs:comment "Een gemeente (staatkundig)."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q15284 ;
   schema:sameAs wikidata:Q15284 .
 
 :Ocean a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Ocean" ;
+  rdfs:comment "A ocean."@eng ;
+  rdfs:comment "Een oceaan."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q9430 ;
   schema:sameAs wikidata:Q9430 .
 
 :Province a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Province" ;
+  rdfs:comment "A province."@eng ;
+  rdfs:comment "Een provincie."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q34876 ;
   schema:sameAs wikidata:Q34876 .
 
 :Region a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Region" ;
+  rdfs:comment "A region (geography)."@eng ;
+  rdfs:comment "Een regio (geografie)."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q82794 ;
   schema:sameAs wikidata:Q82794 .
 
 :Town a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Town" ;
+  rdfs:comment "A town."@eng ;
+  rdfs:comment "Een stadje."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q3957 ;
   schema:sameAs wikidata:Q3957 .
 
 :USState a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "US State" ;
+  rdfs:comment "A state of the USA."@eng ;
+  rdfs:comment "Een staat van de VS."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q35657 ;
   schema:sameAs wikidata:Q35657 .
 
 :Village a rdfs:Class ;
   rdfs:subClassOf :Location ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Village" ;
+  rdfs:comment "A village."@eng ;
+  rdfs:comment "Een dorp."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q532 ;
   schema:sameAs wikidata:Q532 .
@@ -755,8 +755,8 @@
 :Name a rdfs:Class ;
   rdfs:subClassOf :Class , :WithText;
   rdfs:label "Name" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A name object of a person."@eng ;
+  rdfs:comment "Het naamobject van een persoon."@nld ;
   rdfs:isDefinedBy : .
 
 :fullName a rdf:Property ;
@@ -769,24 +769,24 @@
 
 :fullNameSE a rdf:Property ;
   rdfs:label "fullNameSE" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A soundex-like representation of fullName."@eng ;
+  rdfs:comment "Een soundex-achtige representatie van fullName."@nld ;
   rdfs:domain :Name ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
 
 :prefix a rdf:Property ;
   rdfs:label "prefix" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A name prefix, such as 'Mr', 'Dr'."@eng ;
+  rdfs:comment "Een titel voor de naam, zoals 'Mr', 'Dr'."@nld ;
   rdfs:domain :Name ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
 
 :suffix a rdf:Property ;
   rdfs:label "suffix" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A name suffix, such as 'Jr'."@eng ;
+  rdfs:comment "Een titel achter de naam, zoals 'Jr'."@nld ;
   rdfs:domain :Name ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
@@ -796,24 +796,24 @@
 :Occupation a rdfs:Class ;
   rdfs:subClassOf :Class , :WithText , :WithLocation , :WithTemporal ;
   rdfs:label "Occupation" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A occupation."@eng ;
+  rdfs:comment "Een beroep, vak."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q192581 ;
   schema:sameAs wikidata:Q192581 .
 
 :hisco a rdf:Property ;
   rdfs:label "hisco" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A record in the HISCO database."@eng ;
+  rdfs:comment "Een item in de HISCO databank."@nld ;
   rdfs:domain :Occupation ;
   rdfs:range rdfs:Resource ;
   rdfs:isDefinedBy : .
 
 :organisation a rdf:Property ;
   rdfs:label "organisation" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "An organisation, institution, school, company... where someone is/was occupied"@eng ;
+  rdfs:comment "Een organisatie, instelling, school, bedrijf... waar iemand werkzaam is/was"@nld ;
   rdfs:domain :Occupation ;
   rdfs:range :Organisation ;
   rdfs:isDefinedBy : .
@@ -823,88 +823,88 @@
 :Organisation a rdfs:Class ;
   rdfs:subClassOf :Class , :WithLocation ;
   rdfs:label "Organisation" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "An organisation, institution, school, company..."@eng ;
+  rdfs:comment "Een organisatie, instelling, school, bedrijf..."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q43229 ;
   schema:sameAs wikidata:Q43229 .
 
 :organisationName a rdf:Property ;
   rdfs:label "organisationName" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The name of an organisation, institution, school, company..."@eng ;
+  rdfs:comment "De naam van een organisatie, instelling, school, bedrijf..."@nld ;
   rdfs:domain :Organisation ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
 
 :Battalion a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Battalion" ;
+  rdfs:comment "A battalion."@eng ;
+  rdfs:comment "Een bataljon."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q6382533 ;
   schema:sameAs wikidata:Q6382533 .
 
 :Company a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO. business: entity involved in commercial, industrial, or professional activities"@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Company" ;
+  rdfs:comment "A company: entity involved in commercial, industrial, or professional activities"@eng ;
+  rdfs:comment "Een bedrijf: entiteit actief in commerciële, industriële of professionele doeleinden."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q4830453 ;
   schema:sameAs wikidata:Q4830453 .
 
 :Congregation a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO. kerkgemeente"@nld ;
+  rdfs:label "Congregation" ;
+  rdfs:comment "A congregation, a group of people regularly attending a particular place of worship."@eng ;
+  rdfs:comment "Een kerkgemeente, plaatselijke geloofsgemeenschap"@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q2135977 ;
   schema:sameAs wikidata:Q2135977 .
 
-:Funfair a rdfs:Class ;
+:TravelingCarnival a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Traveling Carnival" ;
+  rdfs:comment "A traveling carnival."@eng ;
+  rdfs:comment "Een kermis."@nld ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q194195 ;
-  schema:sameAs wikidata:Q194195 .
+  owl:sameAs    wikidata:Q259037 ;
+  schema:sameAs wikidata:Q259037 .
 
 :School a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "School" ;
+  rdfs:comment "A school, institution for the education of students by teachers."@eng ;
+  rdfs:comment "Een school, onderwijsinstelling."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q3914 ;
   schema:sameAs wikidata:Q3914 .
 
 :SportsFederation a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Sports Federation" ;
+  rdfs:comment "A sports governing body."@eng ;
+  rdfs:comment "Een sportbond."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q2485448 ;
   schema:sameAs wikidata:Q2485448 .
 
 :State a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "State" ;
+  rdfs:comment "A state (polity)."@eng ;
+  rdfs:comment "Een staat (politiek)."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q7275 ;
   schema:sameAs wikidata:Q7275 .
 
 :University a rdfs:Class ;
   rdfs:subClassOf :Organisation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "University" ;
+  rdfs:comment "A university (academic institution)."@eng ;
+  rdfs:comment "Een universiteit (onderwijsinstelling)."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q3918 ;
   schema:sameAs wikidata:Q3918 .
