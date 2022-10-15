@@ -1346,7 +1346,7 @@
 :verse a rdf:Property ;
   rdfs:label "verse" ;
   rdfs:comment "A verse in a chapter in a book of the bible."@eng ;
-  rdfs:comment "Een vers in een hoofdstuk in een boek van de bijbel.TODO"@nld ;
+  rdfs:comment "Een vers in een hoofdstuk in een boek van de bijbel."@nld ;
   rdfs:domain :BibleReference ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
@@ -1457,367 +1457,367 @@
 :Relation a rdfs:Class ;
   rdfs:subClassOf :Class , :WithText , :WithTemporal , :WithInferred ;
   rdfs:label "Relation" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A relation between people."@eng ;
+  rdfs:comment "Een raltie tussen mensen."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q930933 ;
   schema:sameAs wikidata:Q930933 .
 
 :target a rdf:Property ;
   rdfs:label "target" ;
-  rdfs:comment "TODO"@eng ;
-  rdfs:comment "TODO"@nld ;
+  rdfs:comment "The person who is the target of the relation."@eng ;
+  rdfs:comment "De persoon tot wie de relatie is."@nld ;
   rdfs:domain :Relation ;
   rdfs:range :Person ;
   rdfs:isDefinedBy : .
 
 :Aunt a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Aunt" ;
+  rdfs:comment "An aunt."@eng ;
+  rdfs:comment "Een tante."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q76507 ;
   schema:sameAs wikidata:Q76507 .
 
 :BrotherInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Brother-in-law" ;
+  rdfs:comment "A brother-in-law."@eng ;
+  rdfs:comment "Een zwager."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q2914212 ;
   schema:sameAs wikidata:Q2914212 .
 
 :Brother a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Brother" ;
+  rdfs:comment "A brother."@eng ;
+  rdfs:comment "Een broer."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q10861465 ;
   schema:sameAs wikidata:Q10861465 .
 
 :Child a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Child" ;
+  rdfs:comment "A child (of someone)."@eng ;
+  rdfs:comment "Een kind (van iemand)."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q29514218 ;
   schema:sameAs wikidata:Q29514218 .
 
 :DaughterInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Daughter-in-law" ;
+  rdfs:comment "A daugther in law."@eng ;
+  rdfs:comment "Een schoondochter."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q18489480 ;
   schema:sameAs wikidata:Q18489480 .
 
 :Daughter a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Daughter" ;
+  rdfs:comment "A daughter."@eng ;
+  rdfs:comment "Een dochter."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q308194 ;
   schema:sameAs wikidata:Q308194 .
 
 :Descendant a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Descendent" ;
+  rdfs:comment "A descendant."@eng ;
+  rdfs:comment "Een nakomeling, afstammeling."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q183905 ;
   schema:sameAs wikidata:Q183905 .
 
 :FatherInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Father-in-law" ;
+  rdfs:comment "A father-in-law."@eng ;
+  rdfs:comment "Een schoonvader."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q13204680 ;
   schema:sameAs wikidata:Q13204680 .
 
 :Father a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Father" ;
+  rdfs:comment "A father (parent)."@eng ;
+  rdfs:comment "Een vader."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q7565 ;
   schema:sameAs wikidata:Q7565 .
 
 :FosterParent a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Foster parent" ;
+  rdfs:comment "A foster parent."@eng ;
+  rdfs:comment "Een pleegouder."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q2427941 ;
   schema:sameAs wikidata:Q2427941 .
 
 :Friend a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Friend" ;
+  rdfs:comment "A friend (of someone)."@eng ;
+  rdfs:comment "Een vriend (van iemand)."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q17297777 ;
   schema:sameAs wikidata:Q17297777 .
 
 :Grandaunt a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Grandaunt" ;
+  rdfs:comment "A grandaunt."@eng ;
+  rdfs:comment "Een oudtante."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q11972456 ;
   schema:sameAs wikidata:Q11972456 .
 
 :Grandchild a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Grandchild" ;
+  rdfs:comment "A grandchild."@eng ;
+  rdfs:comment "Een kleinkind."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q3603531 ;
   schema:sameAs wikidata:Q3603531 .
 
 :Grandfather a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Grandfather" ;
+  rdfs:comment "A grandfather."@eng ;
+  rdfs:comment "Een grootvader."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q9238344 ;
   schema:sameAs wikidata:Q9238344 .
 
 :Grandmother a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Grandmother" ;
+  rdfs:comment "A grandmother."@eng ;
+  rdfs:comment "Een grootmoeder."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q9235758 ;
   schema:sameAs wikidata:Q9235758 .
 
 :Grandparent a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Grandparent" ;
+  rdfs:comment "A grandparent."@eng ;
+  rdfs:comment "Een grootouder."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q167918 ;
   schema:sameAs wikidata:Q167918 .
 
 :Granduncle a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Granduncle" ;
+  rdfs:comment "A granduncle."@eng ;
+  rdfs:comment "Een oudoom."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q3813877 ;
   schema:sameAs wikidata:Q3813877 .
 
 :GreatGrandfather a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Great-grandfather" ;
+  rdfs:comment "A great-grandvader."@eng ;
+  rdfs:comment "Een overgrootvader."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q2500621 ;
   schema:sameAs wikidata:Q2500621 .
 
 :GreatGrandmother a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Great-grandmother" ;
+  rdfs:comment "A great-grandmother."@eng ;
+  rdfs:comment "Een overgrootmoeder."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q2500620 ;
   schema:sameAs wikidata:Q2500620 .
 
 :GreatGrandparent a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Great-grandparent" ;
+  rdfs:comment "A great-grandparent."@eng ;
+  rdfs:comment "Een overgrootouder."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q2500619 ;
   schema:sameAs wikidata:Q2500619 .
 
 :Housemate a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Housemate" ;
+  rdfs:comment "A housemate."@eng ;
+  rdfs:comment "Een huisgenoot."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q14754454 ;
   schema:sameAs wikidata:Q14754454 .
 
 :Housewife a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Housewife" ;
+  rdfs:comment "A houswife."@eng ;
+  rdfs:comment "Een huisvrouw."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q38126150 ;
   schema:sameAs wikidata:Q38126150 .
 
 :Husband a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Husband" ;
+  rdfs:comment "A husband."@eng ;
+  rdfs:comment "Een echtgenoot."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q212878 ;
   schema:sameAs wikidata:Q212878 .
 
 :Leermeester a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO: university teacher"@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Leermeester" ;
+  rdfs:comment "A tutor"@eng ;
+  rdfs:comment "Een leermeester."@nld ;
   rdfs:isDefinedBy : ;
-  owl:sameAs    wikidata:Q1622272 ;
-  schema:sameAs wikidata:Q1622272 .
+  owl:sameAs    wikidata:Q3001320 ;
+  schema:sameAs wikidata:Q3001320 .
 
 :MotherInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Mother-in-law" ;
+  rdfs:comment "A mother-in-law."@eng ;
+  rdfs:comment "Een schoonmoeder."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q723868 ;
   schema:sameAs wikidata:Q723868 .
 
 :Mother a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Mother" ;
+  rdfs:comment "A mother."@eng ;
+  rdfs:comment "Een moeder."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q7560 ;
   schema:sameAs wikidata:Q7560 .
 
 :Niece a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Niece" ;
+  rdfs:comment "A niece."@eng ;
+  rdfs:comment "Een dochter van een broer of zus."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q3403377 ;
   schema:sameAs wikidata:Q3403377 .
 
 :Parent a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Parent" ;
+  rdfs:comment "A parent."@eng ;
+  rdfs:comment "Een ouder."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q7566 ;
   schema:sameAs wikidata:Q7566 .
 
 :Schoolmakker a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Schoolmakker" ;
+  rdfs:comment "A schoolmate."@eng ;
+  rdfs:comment "Een schoolvriend."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q28008283 ;
   schema:sameAs wikidata:Q28008283 .
 
 :SisterInLaw a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Sister-in-law" ;
+  rdfs:comment "A sister-in-law."@eng ;
+  rdfs:comment "Een schoonzus."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q3238556 ;
   schema:sameAs wikidata:Q3238556 .
 
 :Sister a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Sister" ;
+  rdfs:comment "A sister."@eng ;
+  rdfs:comment "Een zus."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q595094 ;
   schema:sameAs wikidata:Q595094 .
 
 :Son a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Son" ;
+  rdfs:comment "A son."@eng ;
+  rdfs:comment "Een zoon."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q177232 ;
   schema:sameAs wikidata:Q177232 .
 
 :Spouse a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Spouse" ;
+  rdfs:comment "A spouse."@eng ;
+  rdfs:comment "Een echtgenoot of echtgenote."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q1196129 ;
   schema:sameAs wikidata:Q1196129 .
 
 :Twin a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Twin" ;
+  rdfs:comment "A twin."@eng ;
+  rdfs:comment "Een tweeling."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q159979 ;
   schema:sameAs wikidata:Q159979 .
 
 :Uncle a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Uncle" ;
+  rdfs:comment "An uncle."@eng ;
+  rdfs:comment "Een oom."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q76557 ;
   schema:sameAs wikidata:Q76557 .
 
 :Verloofde a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Verloofde" ;
+  rdfs:comment "A fiancé(e)."@eng ;
+  rdfs:comment "Een verloofde."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q98688601 ;
   schema:sameAs wikidata:Q98688601 .
 
 :Widow a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Widow" ;
+  rdfs:comment "A widow."@eng ;
+  rdfs:comment "Een weduwe."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q179115 ;
   schema:sameAs wikidata:Q179115 .
 
 :Widower a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Widower" ;
+  rdfs:comment "A widower."@eng ;
+  rdfs:comment "Een weduwnaar."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q18646998 ;
   schema:sameAs wikidata:Q18646998 .
 
 :Wife a rdfs:Class ;
   rdfs:subClassOf :Relation ;
-  rdfs:label "TODO" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "Wife" ;
+  rdfs:comment "A wife."@eng ;
+  rdfs:comment "Een echtgenote."@nld ;
   rdfs:isDefinedBy : ;
   owl:sameAs    wikidata:Q188830 ;
   schema:sameAs wikidata:Q188830 .
@@ -1833,16 +1833,16 @@
 
 :siteAddress a rdf:Property ;
   rdfs:label "siteAddress" ;
-  rdfs:comment "Postal Address."@eng ;
-  rdfs:comment "Adres, huisadres."@nld ;
+  rdfs:comment "Postal Address of a cemetary, etc."@eng ;
+  rdfs:comment "Adres, huisadres van een begraafplaats, enz."@nld ;
   rdfs:domain :Site ;
   rdfs:range :PostalAddress ;
   rdfs:isDefinedBy : .
 
 :siteName a rdf:Property ;
   rdfs:label "siteName" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "The name of a cemetary, etc."@eng ;
+  rdfs:comment "De naam van een begraafplaats, enz."@nld ;
   rdfs:domain :Site ;
   rdfs:range xsd:string ;
   rdfs:isDefinedBy : .
@@ -1852,14 +1852,14 @@
 :Symbol a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:label "Symbol" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A symbol."@eng ;
+  rdfs:comment "Een symbool."@nld ;
   rdfs:isDefinedBy : .
 
 :symbolType a rdf:Property ;
-  rdfs:label "sym" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:label "symbolType" ;
+  rdfs:comment "The type of a symbol."@eng ;
+  rdfs:comment "Het type van een symbool."@nld ;
   rdfs:domain :Symbol ;
   rdfs:range :SymbolType ;
   rdfs:isDefinedBy : .
@@ -1869,22 +1869,22 @@
 :SymbolType a rdfs:Class ;
   rdfs:subClassOf :Class , :WithDcModified , :WithSameAs , :WithSeeAlso ;
   rdfs:label "SymbolType" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A symbol type."@eng ;
+  rdfs:comment "Een sybooltype."@nld ;
   rdfs:isDefinedBy : .
 
 :symbolDescription a rdf:Property ;
   rdfs:label "symbolDescription" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A description of a symbol."@eng ;
+  rdfs:comment "Een beschrijving van een symbool."@nld ;
   rdfs:domain :SymbolType ;
   rdfs:range rdf:langString ;
   rdfs:isDefinedBy : .
 
 :pictogram a rdf:Property ;
   rdfs:label "pictogram" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A pictogram of a symbol."@eng ;
+  rdfs:comment "Een pictogram van een symbool."@nld ;
   rdfs:domain :SymbolType ;
   rdfs:range :Pictogram ;
   rdfs:isDefinedBy : .
@@ -1894,14 +1894,14 @@
 :ToDo a rdfs:Class ;
   rdfs:subClassOf :Class ;
   rdfs:label "Todo" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A TO DO."@eng ;
+  rdfs:comment "Een TE DOEN."@nld ;
   rdfs:isDefinedBy : .
 
 :task a rdf:Property ;
   rdfs:label "task" ;
-  rdfs:comment "TODO."@eng ;
-  rdfs:comment "TODO."@nld ;
+  rdfs:comment "A task description of a TO DO."@eng ;
+  rdfs:comment "De taakomschrijving van een TE DOEN."@nld ;
   rdfs:domain :ToDo ;
   rdfs:range xsd:string , rdf:langString ;
   rdfs:isDefinedBy : .
