@@ -162,12 +162,6 @@ uit, andere doen voorbewerkingen zoals het maken van lijsten met
 gegevens die gebruikt worden door de handler van de webserver. Bovenin
 de broncode van elke tool staat waar het voor dient.
 
-TODO:
-
-Een van de twee scripts, `concat`, die gebruikt worden voor het invoeren van data,
-zal niet functioneren als er veel data bij komt, omdat er dan te lange
-command lines in het script worden gebruikt. Dat script zal dus
-vervangen moeten worden door iets anders.
 
 TODO:
 
