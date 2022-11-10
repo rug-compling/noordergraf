@@ -58,6 +58,7 @@ var (
 	format       = NONE
 	language     = EN
 	uri          string
+	gituri       string
 	data         string
 	prefix       string
 	pretab       = make(map[string]string)
@@ -83,6 +84,7 @@ var (
 	reND      = regexp.MustCompile(`:nd +&(#34|quot);([-+][.0-9]+)([-+][.0-9]+)&(#34|quot);\^\^ll:`)
 	reYear    = regexp.MustCompile(`"([0-9]{4})(-[0-9]{2}-[0-9]{2}"\^\^xsd:date|-[0-9]{2}"\^\^xsd:gYearMonth|"\^\^xsd:gYear)`)
 	reSUB     = regexp.MustCompile(`[()/:~%]`)
+	reSUBDIR  = regexp.MustCompile(`^[0-9][0-9][0-9]$`)
 )
 
 func main() {
@@ -172,6 +174,16 @@ func main() {
 				name := file.Name()
 				if strings.HasSuffix(name, ".ttl") {
 					names = append(names, name[:len(name)-4])
+				} else if reSUBDIR.MatchString(name) {
+					files2, err := ioutil.ReadDir(filename + "/" + name)
+					if err == nil {
+						for _, file2 := range files2 {
+							name2 := file2.Name()
+							if strings.HasSuffix(name2, ".ttl") {
+								names = append(names, name2[:len(name2)-4])
+							}
+						}
+					}
 				}
 			}
 			sort.Strings(names)
@@ -184,7 +196,15 @@ func main() {
 			data = buffer.String()
 		}
 		uri += "/index"
+		gituri = uri
 	} else {
+		gituri = uri
+		if strings.Contains(filename, "/item/") {
+			i := strings.LastIndex(filename, "/")
+			filename = filename[:i+1] + filename[len(filename)-3:] + filename[i:]
+			i = strings.LastIndex(uri, "/")
+			gituri = uri[:i+1] + uri[len(uri)-3:] + uri[i:]
+		}
 		filename += ".ttl"
 		b, err := ioutil.ReadFile(filename)
 		if err != nil {
@@ -456,7 +476,7 @@ Last-Modified: %s
     </span></div>
     <div id="container">
       <h1>%s</h1>
-`, lastModified.Format(time.RFC1123), langtag, title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, uri, dot, title)
+`, lastModified.Format(time.RFC1123), langtag, title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, gituri, dot, title)
 
 	//if uri == "/ns" {
 	//	fmt.Println(`<div class="props top">see also: <a href="overview">overview</a></div>`)

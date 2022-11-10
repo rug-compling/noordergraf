@@ -129,7 +129,12 @@ Missing query
 	}
 	fp.Close()
 
-	filename := "/net/noordergraf/data/" + strings.Replace(tfile, ":", "/", 1) + ".ttl"
+	filename := "/net/noordergraf/data/" + strings.Replace(tfile, ":", "/", 1)
+	if strings.Contains(filename, "/item/") {
+		i := strings.LastIndex(filename, "/")
+		filename = filename[:i+1] + filename[len(filename)-3:] + filename[i:]
+	}
+	filename += ".ttl"
 
 	b, err := ioutil.ReadFile(filename)
 	if x(err, 404) {
