@@ -30,6 +30,7 @@ sudo -u agraph cp /tmp/namespaces /opt/agraph/data/settings/default-namespaces
 rm /tmp/namespaces
 
 python3 _bin/mkfti.py
+_bin/chkdirs
 _bin/chkll
 _bin/chklocation
 _bin/chktags

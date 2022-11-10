@@ -161,8 +161,6 @@ func main() {
 	if isDir {
 		if format != HTML {
 			var buffer bytes.Buffer
-			pre := path.Base(uri)
-			fmt.Fprintf(&buffer, "%s: a skos:Collection ;\n  :dcModified %q^^xsd:dateTime ;\n  skos:member", pre, lastModified.Format(time.RFC3339))
 
 			names := make([]string, 0)
 			files, err := ioutil.ReadDir(filename)
@@ -175,6 +173,9 @@ func main() {
 				if strings.HasSuffix(name, ".ttl") {
 					names = append(names, name[:len(name)-4])
 				} else if reSUBDIR.MatchString(name) {
+					if lm := file.ModTime().UTC(); lm.After(lastModified) {
+						lastModified = lm
+					}
 					files2, err := ioutil.ReadDir(filename + "/" + name)
 					if err == nil {
 						for _, file2 := range files2 {
@@ -186,6 +187,10 @@ func main() {
 					}
 				}
 			}
+
+			pre := path.Base(uri)
+			fmt.Fprintf(&buffer, "%s: a skos:Collection ;\n  :dcModified %q^^xsd:dateTime ;\n  skos:member", pre, lastModified.Format(time.RFC3339))
+
 			sort.Strings(names)
 			p := ""
 			for _, name := range names {

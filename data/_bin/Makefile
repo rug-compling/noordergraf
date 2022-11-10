@@ -2,7 +2,7 @@
 % : %.go
 	go build $<
 
-all: chkll chklocation chktags mkbibidx mkprops mksymidx name2soundex soundex-test
+all: chkdirs chkll chklocation chktags mkbibidx mkprops mksymidx name2soundex soundex-test
 
 name2soundex: name2soundex.go ../../go/nlsoundex/nlsoundex.go
 

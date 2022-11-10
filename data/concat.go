@@ -16,9 +16,11 @@ import (
 )
 
 var (
-	opt_n = flag.Bool("n", false, "omit graph names")
-	re    = regexp.MustCompile(`:fullName[ \t]+".*"`)
-	x     = util.CheckErr
+	opt_n    = flag.Bool("n", false, "omit graph names")
+	re       = regexp.MustCompile(`:fullName[ \t]+".*"`)
+	reSUBDIR = regexp.MustCompile(`^[0-9][0-9][0-9]$`)
+	reSUBPAT = regexp.MustCompile(`/[0-9][0-9][0-9]/`)
+	x        = util.CheckErr
 )
 
 func main() {
@@ -54,7 +56,12 @@ func doDir(dir string) {
 	files, err := ioutil.ReadDir(dir)
 	x(err)
 	for _, file := range files {
-		doFile(dir + "/" + file.Name())
+		name := file.Name()
+		if reSUBDIR.MatchString(name) {
+			doDir(dir + "/" + name)
+		} else {
+			doFile(dir + "/" + name)
+		}
 	}
 }
 
@@ -65,7 +72,8 @@ func doFile(filename string) {
 
 	prefix := ":"
 	if filename != "ns.ttl" {
-		prefix = strings.Replace(filename[:len(filename)-4], "/", ":", -1)
+		f := fix(filename)
+		prefix = strings.Replace(f[:len(f)-4], "/", ":", -1)
 	}
 
 	inGraph := false
@@ -88,7 +96,8 @@ func doFile(filename string) {
 		} else {
 			if !inGraph {
 				if !*opt_n {
-					fmt.Printf("<%s> {\n", filename[:len(filename)-4])
+					f := fix(filename)
+					fmt.Printf("<%s> {\n", fix(f[:len(f)-4]))
 					inGraph = true
 				}
 			}
@@ -113,4 +122,8 @@ func doFile(filename string) {
 	}
 	fmt.Println()
 
+}
+
+func fix(s string) string {
+	return reSUBPAT.ReplaceAllLiteralString(s, "/")
 }
