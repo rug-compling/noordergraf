@@ -241,7 +241,7 @@ func main() {
 
 	switch format {
 	case HTML:
-		doHTML()
+		doHTML(isDir)
 	case TURTLE:
 		fmt.Print("Content-type: text/turtle; charset=UTF-8\nLast-Modified: " + lastModified.Format(time.RFC1123) + "\n\n")
 		fmt.Println(prefix)
@@ -307,7 +307,7 @@ func convert(output string) string {
 	return string(out)
 }
 
-func doHTML() {
+func doHTML(isDir bool) {
 
 	if uri == "/ns" {
 		b, err := ioutil.ReadFile("/net/noordergraf/data/ns.json")
@@ -475,13 +475,20 @@ Last-Modified: %s
       download: <a href="https://noordergraf.rug.nl%s.nt">n-triples</a>
       &middot; <a href="https://noordergraf.rug.nl%s.rdf">rdf+xml</a>
       &middot; <a href="https://noordergraf.rug.nl%s.ttl">turtle</a>
-      &middot; <a href="https://noordergraf.rug.nl%s.penman">penman</a>
+      &middot; <a href="https://noordergraf.rug.nl%s.penman">penman</a>`,
+		lastModified.Format(time.RFC1123), langtag, title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri)
+
+	if !isDir {
+		fmt.Printf(`
       | go to:
-      <a href="https://github.com/rug-compling/noordergraf/blob/master/data%s.ttl">github</a>%s&nbsp;
+      <a href="https://github.com/rug-compling/noordergraf/blob/master/data%s.ttl">github</a>%s
+			`, gituri, dot)
+	}
+	fmt.Printf(`&nbsp;
     </span></div>
     <div id="container">
       <h1>%s</h1>
-`, lastModified.Format(time.RFC1123), langtag, title, noindex, uri, uri, uri, uri, class, uri, uri, uri, uri, gituri, dot, title)
+`, title)
 
 	//if uri == "/ns" {
 	//	fmt.Println(`<div class="props top">see also: <a href="overview">overview</a></div>`)
