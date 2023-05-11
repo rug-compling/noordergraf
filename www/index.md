@@ -26,6 +26,8 @@ head: <link rel="alternate" href="https://noordergraf.rug.nl/index.penman" type=
 
 {{Voor|For}} experts: [{{zoek met|search with}} sparql](https://anonymous@noordergraf.rug.nl:10036/#/repositories/noordergraf)
 
+{{Voor|For}} experts, {{zie ook|see also}}: [Jupyter Notebook {{voorbeelden|examples}}](notebook/)
+
 [{{Kaart met begraafplaatsen|Map of burial sites}}](mapsites.html)
 
 [{{Kaart met geboorteplaatsen|Map of places of birth}}](mappob.html)
