@@ -24,10 +24,6 @@ head: <link rel="alternate" href="https://noordergraf.rug.nl/index.penman" type=
 <input type="submit" value="{{zoeken op naam|search for name}} (soundex)" class="button">
 </form>
 
-{{Voor|For}} experts: [{{zoek met|search with}} sparql](https://anonymous@noordergraf.rug.nl:10036/#/repositories/noordergraf)
-
-{{Voor|For}} experts, {{zie ook|see also}}: [Jupyter Notebook {{voorbeelden|examples}}](notebook/)
-
 [{{Kaart met begraafplaatsen|Map of burial sites}}](mapsites.html)
 
 [{{Kaart met geboorteplaatsen|Map of places of birth}}](mappob.html)
@@ -44,12 +40,19 @@ head: <link rel="alternate" href="https://noordergraf.rug.nl/index.penman" type=
 
 {{Meer informatie|More information}}: [Erfgoedpartners — Noordergraf](https://erfgoedpartners.nl/sites/noordergraf/)
 
+## {{Voor|For}} experts
+
+SPARQL endpoint: `https://noordergraf.rug.nl:10036/repositories/noordergraf`
+
+[SPARQL WebView](https://anonymous@noordergraf.rug.nl:10036/#/repositories/noordergraf)
+
+[SPARQL in Jupyter Notebook: {{Voorbeelden|Examples}}](notebook/)
+
 ## {{Hulpmiddelen|Utilities}}
 
 [{{Overzicht van datastructuur|Overview of data structure}}](overview)
 
 [Github](https://github.com/rug-compling/noordergraf)
-
 
 ## {{Soortgelijke websites|Similar sites}}
 
