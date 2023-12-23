@@ -52,13 +52,14 @@ gezet. In het bijzonder de volgende dingen:
 
 ## Configuratie van AllegroGraph
 
-De sources voor [AllegroGraph](https://allegrograph.com/) zijn geïnstalleerd in
-`/opt/agraph-7.3.0/`. AllegroGraph draait vanuit
-`/opt/agraph/`. Installatie van AllegroGraph gaat met `install-agraph
-/opt/agraph` vanuit `/opt/agraph-7.3.0/`. Dit moet als gebruiker
-`agraph`. Het `agraph`-account is aangemaakt als een systeem-account
-(laag UID), maar wel met een home-directory en een login-shell,
-anders werkt `agtool` niet, om een duistere reden.
+De sources voor [AllegroGraph](https://allegrograph.com/) staan in
+agraph-8.0.0-linuxamd64.64.tar.gz . 
+AllegroGraph draait vanuit `/opt/agraph800/`.
+Installatie van AllegroGraph gaat met `install-agraph /opt/agraph800`
+vanuit de directory die ontstaat als je het tar.gz-bestand uitpakt.
+Dit moet als gebruiker `agraph`. Het `agraph`-account is aangemaakt
+als een systeem-account (laag UID), maar wel met een home-directory
+en een login-shell, anders werkt `agtool` niet, om een duistere reden.
 
 Bij de installatie wordt het configuratiebestand
 `/opt/agraph/lib/agraph.cfg` aangemaakt, dat later met de hand is
