@@ -52,8 +52,8 @@ func loginRequest() {
 	sec := rand16()
 	expires := time.Now().Add(time.Hour).Format(expireFormat)
 
-	result, err := gDB.Exec(fmt.Sprintf("UPDATE `users` SET `sec` = %q, `pw` = %q, `expires` = %q WHERE `email` = %q",
-		sec, auth, expires, ehash))
+	result, err := gDB.Exec("UPDATE `users` SET `sec` = ?, `pw` = ?, `expires` = ? WHERE `email` = ?",
+		sec, auth, expires, ehash)
 	if xx(err) {
 		tx.Rollback()
 		return
@@ -112,7 +112,7 @@ func login() {
 		pw = "none" // Or someone without a password could log in
 	}
 
-	rows, err := gDB.Query(fmt.Sprintf("SELECT `email`,`uid`,`sec` FROM `users` WHERE `pw` = %q", pw))
+	rows, err := gDB.Query("SELECT `email`,`uid`,`sec` FROM `users` WHERE `pw` = ?", pw)
 	if xx(err) {
 		return
 	}
@@ -122,7 +122,7 @@ func login() {
 		if xx(err) {
 			return
 		}
-		_, err = gDB.Exec(fmt.Sprintf("UPDATE `users` SET `pw` = '', `expires` = '9999' WHERE `email` = %q", gUserHash))
+		_, err = gDB.Exec("UPDATE `users` SET `pw` = '', `expires` = '9999' WHERE `email` = ?", gUserHash)
 		if xx(err) {
 			return
 		}
@@ -149,14 +149,14 @@ func expire() (ok bool) {
 	}
 
 	// Only remove users that haven't submitted any data yet
-	_, err = gDB.Exec(fmt.Sprintf("DELETE FROM users WHERE `expires` < %q AND `uid` NOT IN ( SELECT `uid` FROM answers )", now))
+	_, err = gDB.Exec("DELETE FROM users WHERE `expires` < ? AND `uid` NOT IN ( SELECT `uid` FROM answers )", now)
 	if xx(err) {
 		tx.Rollback()
 		return
 	}
 
 	// These have already submitted data, don't remove user, only clear log-in tokens
-	_, err = gDB.Exec(fmt.Sprintf("UPDATE `users` SET `sec` = \"\", `pw` = \"\", `expires` = \"\" WHERE `expires` < %q", now))
+	_, err = gDB.Exec("UPDATE `users` SET `sec` = \"\", `pw` = \"\", `expires` = \"\" WHERE `expires` < ?", now)
 	if xx(err) {
 		tx.Rollback()
 		return
@@ -179,7 +179,7 @@ func getLogin() (ok bool) {
 	if len(s) == 2 {
 		gUserSec = s[0]
 		gUserHash = s[1]
-		rows, err := gDB.Query(fmt.Sprintf("SELECT `uid`,`sec` FROM `users` WHERE `email` = %q", gUserHash))
+		rows, err := gDB.Query("SELECT `uid`,`sec` FROM `users` WHERE `email` = ?", gUserHash)
 		if xx(err) {
 			return
 		}
