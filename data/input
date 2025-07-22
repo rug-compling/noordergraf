@@ -29,7 +29,9 @@ sudo -u agraph cp /tmp/namespaces /opt/agraph/data/settings/default-namespaces
 #sudo -u agraph cp /tmp/namespaces /opt/agraph/data/rootcatalog/noordergraf/namespaces/peter
 rm /tmp/namespaces
 
+. /net/noordergraf/python/bin/activate
 python3 _bin/mkfti.py
+
 _bin/chkdirs
 _bin/chkll
 _bin/chklocation
