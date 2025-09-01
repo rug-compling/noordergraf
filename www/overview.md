@@ -15,7 +15,7 @@ class: pad
     - comment → xsd:string | rdf:langString
 
 {{Bij alles wat volgt is 'comment' steeds weggelaten.|}}
-{{|In everything that folows, 'comment' is omitted.}}
+{{|In everything that follows, 'comment' is omitted.}}
 
 ## Item
 
