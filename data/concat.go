@@ -27,6 +27,8 @@ func main() {
 
 	flag.Parse()
 
+	os.Stdout.WriteString("@base <https://noordergraf.rug.nl/> .\n\n")
+
 	x(os.Chdir("/net/noordergraf/data"))
 
 	fp, err := os.Open("prefix.ttl")
