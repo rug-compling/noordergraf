@@ -10,15 +10,13 @@ echo "REAL:      `id -rnu`:`id -rng`"
 echo  EFFECTIVE: `id`
 echo
 
-PATH=/opt/agraph/bin:$PATH
-
 cat /etc/os-release 2>&1
 echo
 uname -a
 echo
 
 echo PATH:
-echo $PATH | perl -p -e 's!:!\n!g'
+echo -e ${PATH//:/\\n}
 echo
 
 echo HOSTNAME:
@@ -38,11 +36,13 @@ echo LDD:
 ldd --version 2>&1
 echo
 
+PATH=/opt/agraph/bin:$PATH
+
 for i in \
     agraph \
     go
 do
-    echo "$i : `which $i 2>&1`"
+    type -a $i 2>&1
 done
 echo
 
