@@ -1,6 +1,6 @@
 
 % : %.go
-	go build $<
+	/net/noordergraf/opt/go/bin/go build $<
 
 all: chkdirs chkll chklocation chktags mkbibidx mkprops mksymidx name2soundex soundex-test
 

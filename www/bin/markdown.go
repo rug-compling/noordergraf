@@ -7,6 +7,7 @@ import (
 	"github.com/yuin/goldmark/extension"
 	"github.com/yuin/goldmark/parser"
 	mdhtml "github.com/yuin/goldmark/renderer/html"
+	"go.yaml.in/yaml/v3"
 
 	"bytes"
 	"fmt"
@@ -16,6 +17,13 @@ import (
 	"strconv"
 	"strings"
 )
+
+type Front struct {
+	Title string `yaml:"title"`
+	Style string `yaml:"style"`
+	Class string `yaml:"class"`
+	Head  string `yaml:"head"`
+}
 
 var (
 	language    = "en"
@@ -88,9 +96,13 @@ func main() {
 
 	b = selectLanguage(b)
 
-	parts := bytes.SplitN(b, []byte("////"), 2)
-	if len(parts) == 2 {
-		b = parts[1]
+	voorwerk := []byte{}
+	if bytes.HasPrefix(b, []byte("---\n")) {
+		i := bytes.Index(b, []byte("\n---\n"))
+		if i >= 0 {
+			voorwerk = b[4:i]
+			b = b[i+5:]
+		}
 	}
 
 	md := goldmark.New(
@@ -146,29 +158,15 @@ func main() {
 	bs = strings.Replace(bs, "<table>", `<div class="overflow mytable"><table>`, -1)
 	bs = strings.Replace(bs, "</table>", `</table></div>`, -1)
 
-	title := os.Getenv("SCRIPT_URI")
-	head := ""
-	style := "md.css"
-	class := ""
-	if len(parts) > 1 {
-		for _, line := range strings.Split(string(parts[0]), "\n") {
-			aa := strings.SplitN(line, ":", 2)
-			if len(aa) == 2 {
-				value := strings.TrimSpace(aa[1])
-				if value != "" {
-					switch strings.TrimSpace(aa[0]) {
-					case "title":
-						title = value
-					case "style":
-						style = value
-					case "class":
-						class = value
-					case "head":
-						head += "    " + value + "\n"
-					}
-				}
-			}
-		}
+	var front Front
+	if len(voorwerk) > 0 {
+		yaml.Unmarshal(voorwerk, &front)
+	}
+	if front.Title == "" {
+		front.Title = os.Getenv("SCRIPT_URI")
+	}
+	if front.Style == "" {
+		front.Style = "md.css"
 	}
 
 	fmt.Print(
@@ -177,10 +175,10 @@ func main() {
 				strings.Replace(
 					strings.Replace(
 						strings.Replace(header, "LANGTAG", language, 1),
-						"TITLE", title, 1),
-					"STYLE", style, 1),
-				"CLASS", class, 1),
-			"<!--HEAD-->", head, 1),
+						"TITLE", front.Title, 1),
+					"STYLE", front.Style, 1),
+				"CLASS", front.Class, 1),
+			"<!--HEAD-->", front.Head, 1),
 		bs,
 		footer)
 }

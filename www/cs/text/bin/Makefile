@@ -1,3 +1,3 @@
 
 index: *.go
-	go build -o index .
+	/net/noordergraf/opt/go/bin/go build -o index .

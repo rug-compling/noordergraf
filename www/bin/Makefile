@@ -1,6 +1,6 @@
 
 % : %.go
-	go build $<
+	/net/noordergraf/opt/go/bin/go build $<
 
 all: bible itemsearch markdown locations place site symbol textsearch ttl2svg
 

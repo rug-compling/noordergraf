@@ -2,4 +2,4 @@
 all: data
 
 data: *.go
-	go build -o data .
+	/net/noordergraf/opt/go/bin/go build -o data .

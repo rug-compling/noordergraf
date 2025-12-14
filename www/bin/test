@@ -1,0 +1,65 @@
+#!/bin/bash
+
+echo Content-type: text/plain
+echo
+
+echo Dit is `pwd`/`basename $0`
+echo
+
+echo "REAL:      `id -rnu`:`id -rng`"
+echo  EFFECTIVE: `id`
+echo
+
+echo 'GETENT (2 regels):'
+getent passwd p106777      # johan bos
+getent passwd p209327
+echo
+echo 'ID (2 regels)':
+id -nG p106777       # johan bos
+id -nG p209327
+echo
+
+cat /etc/os-release 2>&1
+echo
+uname -a
+echo
+
+echo PATH:
+echo -e ${PATH//:/\\n}
+echo
+
+echo HOSTNAME:
+hostname -f
+hostname -I
+echo
+
+echo LOCALE:
+locale
+echo
+
+echo LOCALE -a:
+locale -a
+echo
+
+echo LDD:
+ldd --version 2>&1
+echo
+
+echo /net:
+ls -l /net
+echo
+
+for i in \
+    curl \
+    go \
+    python3 \
+do
+    type -a $i 2>&1
+done
+echo
+
+python3 -V 2>&1
+echo
+
+go version 2>&1
+echo
