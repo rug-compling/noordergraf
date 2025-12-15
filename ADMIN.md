@@ -5,6 +5,13 @@ de website Noordergraf.
 
 Voor een lijst van directory's en bestanden, zie `MANIFEST.txt`
 
+Problemen? Probeer:
+
+    sudo dpkg-reconfigure locales    # nl_NL.UTF-8 toevoegen
+    sudo systemctl restart apache2
+    sudo systemctl restart agraph
+
+
 ## Configuratie van Apache2
 
 
