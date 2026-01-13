@@ -1,0 +1,124 @@
+{
+  "@context": [
+    "https://schema.org"
+  ],
+  "@id": "https://www.let.rug.nl/alfa/rdf/noordergraf",
+  "@type": "DataSet",
+  "name": "Noordergraf",
+  "description": "Graven in (voornamelijk) het noorden van Nederland",
+  "url": "https://noordergraf.rug.nl/",
+  "distibution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": {
+        "@id": "https://noordergraf.rug.nl/index.ttl"
+      },
+      "encodingFormat": "text/turtle"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": {
+        "@id": "https://noordergraf.rug.nl/index.nt"
+      },
+      "encodingFormat": "application/n-triples"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": {
+        "@id": "https://noordergraf.rug.nl/index.rdf"
+      },
+      "encodingFormat": "application/rdf+xml"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": {
+        "@id": "https://noordergraf.rug.nl/index.penman"
+      },
+      "encodingFormat": "text/x.penman"
+    }
+  ],
+  "producer": {
+    "@id": "_:cl",
+    "@type": "Organization",
+    "name": [
+      {
+        "@value": "Computationele Taalkunde, Faculteit der Letteren, Rijksuniversiteit Groningen",
+        "@language": "nl"
+      },
+      {
+        "@value": "Computational Linguistics, Faculty of Arts, Groningen University",
+        "@language": "en"
+      }
+    ],
+    "url": "https://www.rug.nl/research/clcg/research/cl/",
+    "parentOrganization": {
+      "@id": "_:rug",
+      "@type": "Organization",
+      "name": [
+        {
+          "@value": "Rijksuniversiteit Groningen",
+          "@language": "nl"
+        },
+        {
+          "@value": "Groningen University",
+          "@language": "en"
+        }
+      ],
+      "url": "https://www.rug.nl/",
+      "sameAs": "http://www.wikidata.org/entity/Q850730",
+      "location": {
+        "@id": "_:groningen",
+        "@type": "Place",
+        "name": "Groningen",
+        "address": {
+          "@id": "_:grnNL",
+          "@type": "PostalAddress",
+          "addressLocality": "Groningen",
+          "addressRegion": "Groningen",
+          "addressCountry": "NL"
+        },
+        "sameAs": [
+          "http://www.wikidata.org/entity/Q749",
+          "https://sws.geonames.org/2755251/"
+        ]
+      }
+    }
+  },
+  "creator": [
+    {
+      "@id": "_:jbos",
+      "@type": "Person",
+      "sameAs": "https://orcid.org/0000-0002-9079-5438",
+      "givenName": "Johan",
+      "familyName": "Bos",
+      "email": "mailto:johan.bos@rug.nl",
+      "affiliation": {
+        "@id": "_:cl"
+      }
+    },
+    {
+      "@id": "_:pkleiweg",
+      "@type": "Person",
+      "sameAs": "https://orcid.org/0000-0001-8364-3201",
+      "givenName": "Peter",
+      "familyName": "Kleiweg",
+      "email": "mailto:p.c.j.kleiweg@rug.nl",
+      "affiliation": {
+        "@id": "_:cl"
+      }
+    }
+  ],
+  "editor": [
+    {
+      "@id": "_:jbos"
+    }
+  ],
+  "maintainer": [
+    {
+      "@id": "_:jbos"
+    },
+    {
+      "@id": "_:pkleiweg"
+    }
+  ]
+}
