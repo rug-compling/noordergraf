@@ -9,6 +9,7 @@ Problemen? Probeer:
 
     sudo dpkg-reconfigure locales    # nl_NL.UTF-8 toevoegen
     sudo systemctl restart apache2
+    sudo systemctl enable agraph     # kan na update uitgezet zijn?
     sudo systemctl restart agraph
 
 
@@ -104,8 +105,9 @@ admin-account in AllegroGraph.
 
 `/opt/etc/ssl/agraph.pem` bevat de certificaten die nodig zijn voor
 het gebruik van https door AllegroGraph. Dit moet bijgwerkt worden als
-het certificaat voor de website is bijgewerkt. Zie:
-`/etc/ssl/private/key-noordergraf.rug.nl.README`
+het certificaat voor de website is bijgewerkt. Die zou automatisch
+moeten gaan door script: `/etc/letsencrypt/renewal-hooks/post/10-agraph-cert`
+Zie: `/etc/ssl/private/key-noordergraf.rug.nl.README`
 
 
 ## Hulpmiddelen voor de invoer van data
